@@ -1,18 +1,21 @@
 "use strict";
 
 const { SAFE_BOTTOM, CONTENT_TOP } = require("../core/layout");
+const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
 
 /**
  * Factory that returns literacy-specific slide builders bound to a given
- * palette, fonts, and element helpers.
+ * palette, fonts, element helpers, and grade-band sizing table S.
  *
  * @param {object} C       Semantic palette colours (PRIMARY, SECONDARY, ACCENT, ALERT, SUCCESS, BG_DARK, BG_LIGHT, BG_CARD, WHITE, CHARCOAL, MUTED, TEXT_ON_DARK, SUBTITLE, DECOR_1, DECOR_2)
  * @param {string} FONT_H  Heading font name
  * @param {string} FONT_B  Body font name
  * @param {object} el       Bound element helpers: addTopBar, addBadge, addTitle, addCard, addFooter, addIconCircle, addTextOnShape
+ * @param {object} [S]     Grade-band sizing table (from getGradeSizes)
  * @returns {object}        { vocabSlide, quoteSlide, modellingSlide, pairShareSlide }
  */
-function createLiteracyBuilders(C, FONT_H, FONT_B, el) {
+function createLiteracyBuilders(C, FONT_H, FONT_B, el, S) {
+  const sz = S || DEFAULT_SIZES;
 
   /* ------------------------------------------------------------------ */
   /*  vocabSlide                                                         */
@@ -36,49 +39,60 @@ function createLiteracyBuilders(C, FONT_H, FONT_B, el) {
     el.addBadge(s, "Vocabulary", { color: C.SECONDARY });
     el.addTitle(s, "Word Study");
 
-    // Word banner
-    el.addCard(s, 0.5, CONTENT_TOP, 9, 1.1, { fill: C.PRIMARY });
+    // Word banner — taller for F/Y12 to fit the larger hero size.
+    const bannerH = byBand(sz, 1.35, 1.20, 1.1);
+    el.addCard(s, 0.5, CONTENT_TOP, 9, bannerH, { fill: C.PRIMARY });
     s.addText(word, {
-      x: 0.7, y: CONTENT_TOP + 0.10, w: 6.5, h: 0.65,
-      fontSize: 34, fontFace: FONT_H, color: C.WHITE, bold: true, margin: 0,
+      x: 0.7, y: CONTENT_TOP + 0.10, w: 6.5, h: bannerH - 0.20,
+      fontSize: byBand(sz, 48, 42, 34),
+      fontFace: FONT_H, color: C.WHITE, bold: true, margin: 0,
+      fit: "shrink", shrinkText: true,
     });
 
     // Part-of-speech pill
     if (partOfSpeech) {
+      const pillH = byBand(sz, 0.46, 0.42, 0.38);
+      const pillW = byBand(sz, 1.7, 1.6, 1.5);
+      const pillY = CONTENT_TOP + (bannerH - pillH) / 2;
       s.addShape("roundRect", {
-        x: 7.8, y: CONTENT_TOP + 0.28, w: 1.5, h: 0.38, rectRadius: 0.08,
+        x: 9.3 - pillW, y: pillY, w: pillW, h: pillH, rectRadius: 0.08,
         fill: { color: C.ACCENT },
       });
       s.addText(partOfSpeech, {
-        x: 7.8, y: CONTENT_TOP + 0.28, w: 1.5, h: 0.38,
-        fontSize: 11, fontFace: FONT_B, color: C.PRIMARY, bold: true,
+        x: 9.3 - pillW, y: pillY, w: pillW, h: pillH,
+        fontSize: sz.chip, fontFace: FONT_B, color: C.PRIMARY, bold: true,
         align: "center", valign: "middle", margin: 0,
       });
     }
 
     // Definition card
-    el.addCard(s, 0.5, CONTENT_TOP + 1.22, 9, 1.5, { strip: C.SECONDARY, fill: C.WHITE });
+    const defY = CONTENT_TOP + bannerH + 0.14;
+    const defHdrH = byBand(sz, 0.40, 0.36, 0.32);
+    const defH = byBand(sz, 1.65, 1.55, 1.5);
+    el.addCard(s, 0.5, defY, 9, defH, { strip: C.SECONDARY, fill: C.WHITE });
     s.addText("Definition", {
-      x: 0.75, y: CONTENT_TOP + 1.30, w: 3, h: 0.30,
-      fontSize: 11, fontFace: FONT_B, color: C.SECONDARY, bold: true, margin: 0,
+      x: 0.75, y: defY + 0.08, w: 4, h: defHdrH - 0.04,
+      fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.SECONDARY, bold: true, margin: 0,
     });
     s.addText(definition, {
-      x: 0.75, y: CONTENT_TOP + 1.66, w: 8.4, h: 1.0,
-      fontSize: 15, fontFace: FONT_B, color: C.CHARCOAL, margin: 0,
+      x: 0.75, y: defY + defHdrH, w: 8.4, h: defH - defHdrH - 0.10,
+      fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, margin: 0,
+      fit: "shrink", shrinkText: true,
     });
 
     // Example sentence card (uses remaining space)
-    const exY = CONTENT_TOP + 1.22 + 1.5 + 0.14;
+    const exY = defY + defH + 0.14;
     const exH = SAFE_BOTTOM - exY;
     if (exH > 0.3) {
       el.addCard(s, 0.5, exY, 9, exH, { strip: C.ACCENT, fill: C.BG_CARD });
       s.addText("Example", {
-        x: 0.75, y: exY + 0.08, w: 3, h: 0.28,
-        fontSize: 11, fontFace: FONT_B, color: C.CHARCOAL, bold: true, margin: 0,
+        x: 0.75, y: exY + 0.08, w: 4, h: 0.32,
+        fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.CHARCOAL, bold: true, margin: 0,
       });
-      s.addText("\u201C" + exampleSentence + "\u201D", {
-        x: 0.75, y: exY + 0.38, w: 8.4, h: exH - 0.50,
-        fontSize: 14, fontFace: FONT_H, color: C.CHARCOAL, italic: true, margin: 0,
+      s.addText("“" + exampleSentence + "”", {
+        x: 0.75, y: exY + 0.42, w: 8.4, h: exH - 0.54,
+        fontSize: sz.quote, fontFace: FONT_H, color: C.CHARCOAL, italic: true, margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     }
 
@@ -110,35 +124,40 @@ function createLiteracyBuilders(C, FONT_H, FONT_B, el) {
     el.addBadge(s, badgeText || "Read Aloud", { color: C.PRIMARY });
     el.addTitle(s, chapter || "Chapter");
 
-    // Quote card (dark background)
-    el.addCard(s, 0.5, CONTENT_TOP, 9, 2.1, { fill: C.PRIMARY });
-    s.addText("\u201C", {
-      x: 0.6, y: CONTENT_TOP + 0.05, w: 0.6, h: 0.7,
-      fontSize: 52, fontFace: FONT_H, color: C.ACCENT, margin: 0,
+    // Quote card (dark background) — taller for F/Y12 to fit larger quote text.
+    const quoteCardH = byBand(sz, 2.55, 2.35, 2.1);
+    el.addCard(s, 0.5, CONTENT_TOP, 9, quoteCardH, { fill: C.PRIMARY });
+    s.addText("“", {
+      x: 0.6, y: CONTENT_TOP + 0.05, w: 0.7, h: 0.85,
+      fontSize: byBand(sz, 64, 58, 52),
+      fontFace: FONT_H, color: C.ACCENT, margin: 0,
     });
     s.addText(quote, {
-      x: 1.1, y: CONTENT_TOP + 0.18, w: 7.6, h: 1.7,
-      fontSize: 16, fontFace: FONT_H, color: C.WHITE, italic: true, margin: 0,
+      x: 1.2, y: CONTENT_TOP + 0.20, w: 7.6, h: quoteCardH - 0.40,
+      fontSize: sz.quote, fontFace: FONT_H, color: C.WHITE, italic: true, margin: 0,
+      fit: "shrink", shrinkText: true,
     });
     if (pageRef) {
       s.addText(pageRef, {
-        x: 8.5, y: CONTENT_TOP + 1.75, w: 0.9, h: 0.24,
-        fontSize: 10, fontFace: FONT_B, color: C.MUTED, align: "right", margin: 0,
+        x: 8.4, y: CONTENT_TOP + quoteCardH - 0.35, w: 1.0, h: 0.26,
+        fontSize: sz.caption, fontFace: FONT_B, color: C.MUTED, align: "right", margin: 0,
       });
     }
 
     // Discussion card (uses remaining space)
-    const discY = CONTENT_TOP + 2.1 + 0.14;
+    const discY = CONTENT_TOP + quoteCardH + 0.14;
     const discH = SAFE_BOTTOM - discY;
+    const discHdrH = byBand(sz, 0.36, 0.32, 0.28);
     if (question && discH > 0.3) {
       el.addCard(s, 0.5, discY, 9, discH, { strip: C.ACCENT, fill: C.WHITE });
       s.addText("Discussion", {
-        x: 0.75, y: discY + 0.08, w: 3, h: 0.28,
-        fontSize: 11, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
+        x: 0.75, y: discY + 0.08, w: 4, h: discHdrH,
+        fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
       });
       s.addText(question, {
-        x: 0.75, y: discY + 0.40, w: 8.5, h: discH - 0.52,
-        fontSize: 14, fontFace: FONT_B, color: C.CHARCOAL, margin: 0,
+        x: 0.75, y: discY + discHdrH + 0.10, w: 8.5, h: discH - discHdrH - 0.20,
+        fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     }
 
@@ -174,25 +193,28 @@ function createLiteracyBuilders(C, FONT_H, FONT_B, el) {
     const cardH = SAFE_BOTTOM - CONTENT_TOP;
 
     if (leftContent && rightContent) {
-      // Two-column layout
+      // Two-column layout — narrow column gets bodyDense; right column same.
       el.addCard(s, 0.5, CONTENT_TOP, 4.3, cardH, { strip: C.PRIMARY, fill: C.WHITE });
       s.addText(leftContent, {
-        x: 0.75, y: CONTENT_TOP + 0.12, w: 3.8, h: cardH - 0.20,
-        fontSize: 13, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+        x: 0.75, y: CONTENT_TOP + 0.14, w: 3.8, h: cardH - 0.24,
+        fontSize: sz.bodyDense, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
 
       el.addCard(s, 5.0, CONTENT_TOP, 4.5, cardH, { strip: C.ACCENT, fill: C.BG_CARD });
       s.addText(rightContent, {
-        x: 5.2, y: CONTENT_TOP + 0.12, w: 4.1, h: cardH - 0.20,
-        fontSize: 13, fontFace: FONT_H, color: C.CHARCOAL, valign: "top", italic: true, margin: 0,
+        x: 5.2, y: CONTENT_TOP + 0.14, w: 4.1, h: cardH - 0.24,
+        fontSize: sz.bodyDense, fontFace: FONT_H, color: C.CHARCOAL, valign: "top", italic: true, margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     } else {
       // Single full-width card
       const content = leftContent || rightContent || "";
       el.addCard(s, 0.5, CONTENT_TOP, 9, cardH, { strip: C.PRIMARY, fill: C.WHITE });
       s.addText(content, {
-        x: 0.75, y: CONTENT_TOP + 0.12, w: 8.5, h: cardH - 0.20,
-        fontSize: 14, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+        x: 0.75, y: CONTENT_TOP + 0.14, w: 8.5, h: cardH - 0.24,
+        fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     }
 
@@ -221,17 +243,23 @@ function createLiteracyBuilders(C, FONT_H, FONT_B, el) {
     el.addBadge(s, "Pair-Share", { color: C.SECONDARY });
     el.addTitle(s, title || "Discuss with Your Partner");
 
+    // F/Y12 caps the displayed question count to honour the megaprompt's
+    // "1 question per slide" rule for younger students.
+    const _qs = questions || [];
+    const cappedQuestions = _qs.slice(0, sz.maxQuestions || _qs.length);
     const availH = SAFE_BOTTOM - CONTENT_TOP;
-    const qH = Math.min(0.95, (availH - 0.1) / Math.max(questions.length, 1));
-    const fontSize = questions.length > 4 ? 13 : 15;
+    const qHMax = byBand(sz, 2.6, 1.8, 0.95);
+    const qH = Math.min(qHMax, (availH - 0.1) / Math.max(cappedQuestions.length, 1));
+    const fontSize = cappedQuestions.length > (sz.maxQuestions || 3) ? sz.bodyDense : sz.body + 1;
 
-    questions.forEach((q, i) => {
+    cappedQuestions.forEach((q, i) => {
       const y = CONTENT_TOP + i * (qH + 0.10);
       if (y + qH > SAFE_BOTTOM) return;
       el.addCard(s, 0.5, y, 9, qH, { strip: i % 2 === 0 ? C.PRIMARY : C.SECONDARY, fill: C.WHITE });
       s.addText(q, {
-        x: 0.75, y: y + 0.08, w: 8.5, h: qH - 0.16,
+        x: 0.75, y: y + 0.10, w: 8.5, h: qH - 0.20,
         fontSize, fontFace: FONT_B, color: C.CHARCOAL, valign: "middle", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     });
 

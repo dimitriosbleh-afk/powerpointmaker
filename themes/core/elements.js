@@ -2,18 +2,24 @@
 
 const { SLIDE_W, SAFE_BOTTOM, validateBounds } = require("./layout");
 const { validateContrast } = require("./contrast");
+const { DEFAULT_SIZES, byBand } = require("./gradeBand");
 
 /**
- * Create element helpers bound to a specific palette.
- * All returned functions close over C, FONT_H, FONT_B, and cardShadowFn.
+ * Create element helpers bound to a specific palette and grade band.
+ * All returned functions close over C, FONT_H, FONT_B, cardShadowFn, and the
+ * grade-band sizing table S.
  *
  * @param {object}   C             - palette colours object (semantic keys)
  * @param {string}   FONT_H        - heading font name
  * @param {string}   FONT_B        - body font name
  * @param {Function} cardShadowFn  - zero-arg factory that returns a fresh card shadow object
+ * @param {object}   [S]           - grade-band sizing table (from getGradeSizes); falls back to Y36 sizes when omitted for back-compat
  * @returns {object} { addTopBar, addBadge, addTitle, addCard, addInstructionCard, addFooter, addIconCircle, addTextOnShape }
  */
-function createElements(C, FONT_H, FONT_B, cardShadowFn) {
+function createElements(C, FONT_H, FONT_B, cardShadowFn, S) {
+  // Back-compat: callers built before grade-aware sizing supply only 4 args.
+  // Default to the upper-primary table — that matches the historical hard-coded values.
+  const sz = S || DEFAULT_SIZES;
 
   function addTopBar(slide, color) {
     slide.background = { color: C.BG_LIGHT };
@@ -25,29 +31,34 @@ function createElements(C, FONT_H, FONT_B, cardShadowFn) {
 
   function addBadge(slide, text, opts) {
     const o = opts || {};
+    const bandH = byBand(sz, 0.42, 0.40, 0.36);
     const x     = o.x != null ? o.x : 0.5;
     const y     = o.y != null ? o.y : 0.20;
-    const w     = o.w || 1.8;
+    const w     = o.w || (byBand(sz, 2.1, 1.95, 1.8));
+    const h     = o.h || bandH;
     const color = o.color || C.PRIMARY;
     slide.addShape("roundRect", {
-      x, y, w, h: 0.36, rectRadius: 0.08,
+      x, y, w, h, rectRadius: 0.08,
       fill: { color },
     });
     slide.addText(text, {
-      x, y, w, h: 0.36,
-      fontSize: o.fontSize || 10, fontFace: FONT_B, color: C.WHITE,
+      x, y, w, h,
+      fontSize: o.fontSize || sz.badge,
+      fontFace: FONT_B, color: C.WHITE,
       align: "center", valign: "middle", bold: true, margin: 0,
     });
   }
 
   function addTitle(slide, title, opts) {
     const o = opts || {};
+    const bandH = byBand(sz, 0.74, 0.68, 0.62);
+    const bandY = byBand(sz, 0.72, 0.68, 0.65);
     slide.addText(title, {
       x: o.x || 0.5,
-      y: o.y || 0.65,
+      y: o.y != null ? o.y : bandY,
       w: o.w || 9.0,
-      h: o.h || 0.62,
-      fontSize: o.fontSize || 26,
+      h: o.h || bandH,
+      fontSize: o.fontSize || sz.titleH1,
       fontFace: FONT_H,
       color: o.color || C.PRIMARY,
       bold: true,
@@ -87,14 +98,18 @@ function createElements(C, FONT_H, FONT_B, cardShadowFn) {
 
     let bodyFontSize = o.bodyFontSize;
     if (!bodyFontSize) {
-      if (bodyCount <= 3 && longestBody <= 40) bodyFontSize = 15;
-      else if (bodyCount <= 4 && longestBody <= 48) bodyFontSize = 14.5;
-      else if (bodyCount <= 5 && longestBody <= 56) bodyFontSize = 14;
-      else bodyFontSize = 13.5;
+      const baseBody = sz.body || 16.5;
+      const denseBody = sz.bodyDense || 14.5;
+      if (bodyCount <= 3 && longestBody <= 40) bodyFontSize = baseBody;
+      else if (bodyCount <= 4 && longestBody <= 48) bodyFontSize = (baseBody + denseBody) / 2;
+      else if (bodyCount <= 5 && longestBody <= 56) bodyFontSize = denseBody;
+      else bodyFontSize = denseBody * 0.95;
     }
 
-    const headerFontSize = o.headerFontSize || Math.min(bodyFontSize + 2.5, 17.5);
-    const emphasisFontSize = o.emphasisFontSize || Math.min(bodyFontSize + 1, 15.5);
+    const headerCap   = byBand(sz, 24, 20, 17.5);
+    const emphasisCap = byBand(sz, 22, 18, 15.5);
+    const headerFontSize = o.headerFontSize || Math.min(bodyFontSize + 3.5, headerCap);
+    const emphasisFontSize = o.emphasisFontSize || Math.min(bodyFontSize + 1.5, emphasisCap);
 
     addCard(slide, x, y, w, h, {
       strip: o.strip,
@@ -143,7 +158,8 @@ function createElements(C, FONT_H, FONT_B, cardShadowFn) {
   function addFooter(slide, text) {
     slide.addText(text, {
       x: 0.5, y: 5.32, w: 9, h: 0.20,
-      fontSize: 9, fontFace: FONT_B, color: C.MUTED, margin: 0,
+      fontSize: sz.footer || 9,
+      fontFace: FONT_B, color: C.MUTED, margin: 0,
     });
   }
 

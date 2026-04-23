@@ -9,19 +9,30 @@ const {
 } = require("../core/mockups");
 const { normalizeLessonTargets } = require("../core/notes");
 const { runSlideDiagnostics } = require("../core/diagnostics");
+const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
 
 /**
- * Create the 5 universal slide builders bound to a specific palette.
- * Every subject gets these. They close over C, FONT_H, FONT_B, el, and shadowFn.
+ * Create the 7 universal slide builders bound to a specific palette and
+ * grade band. Every subject gets these. They close over C, FONT_H, FONT_B,
+ * el, shadowFn and the grade-aware sizing table S.
  *
  * @param {object}   C         - palette colours (semantic keys)
  * @param {string}   FONT_H    - heading font
  * @param {string}   FONT_B    - body font
  * @param {object}   el        - bound element helpers from createElements()
  * @param {Function} shadowFn  - zero-arg shadow factory
+ * @param {object}   [S]       - grade-band sizing table; falls back to upper-primary defaults if omitted
  * @returns {object} { titleSlide, liSlide, contentSlide, cfuSlide, closingSlide, annotatedModelSlide, compareVisualSlide }
  */
-function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
+function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
+  const sz = S || DEFAULT_SIZES;
+
+  const DENSITY = byBand(sz,
+    { roomyBulletCount: 3, roomyTotalLines: 5, narrowChars: 28, wideChars: 42 },
+    { roomyBulletCount: 4, roomyTotalLines: 6, narrowChars: 32, wideChars: 50 },
+    { roomyBulletCount: 4, roomyTotalLines: 7, narrowChars: 36, wideChars: 56 },
+  );
+
   function estimateWrappedLines(text, charsPerLine) {
     const raw = String(text || "");
     const segments = raw.split("\n");
@@ -35,34 +46,47 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
   function getBulletCardMetrics(items, opts) {
     const o = opts || {};
     const narrow = Boolean(o.narrow);
-    const charsPerLine = narrow ? 36 : 56;
+    const charsPerLine = narrow ? DENSITY.narrowChars : DENSITY.wideChars;
     const totalLines = (items || []).reduce((sum, item) => sum + estimateWrappedLines(item, charsPerLine), 0);
     const bulletCount = Math.max((items || []).length, 1);
-    const roomy = bulletCount <= 4 && totalLines <= 7;
-    const fontSize = roomy ? (narrow ? 15 : 16.5) : totalLines <= 10 ? 14.5 : 13;
-    const lineHeight = roomy ? 0.29 : fontSize >= 14.5 ? 0.25 : 0.22;
-    const cardPadding = roomy ? 0.42 : 0.34;
-    const interBulletGap = roomy ? 0.06 : 0.04;
-    const bodyH = Math.max(0.78, totalLines * lineHeight + Math.max(0, bulletCount - 1) * interBulletGap);
+    const roomy = bulletCount <= DENSITY.roomyBulletCount && totalLines <= DENSITY.roomyTotalLines;
+
+    const baseRoomy = narrow ? Math.max(sz.bodyDense, sz.body * 0.92) : sz.body;
+    const baseDense = narrow ? Math.max(sz.bodyDense * 0.95, sz.body * 0.85) : sz.bodyDense;
+    const baseTight = baseDense * sz._shrink;
+
+    const fontSize = roomy
+      ? baseRoomy
+      : totalLines <= (DENSITY.roomyTotalLines + 3)
+        ? baseDense
+        : baseTight;
+
+    const lineHeight = Math.max(0.20, fontSize * 0.018 + 0.06);
+    const cardPadding = roomy ? 0.46 : 0.36;
+    const interBulletGap = roomy ? 0.07 : 0.04;
+    const bodyH = Math.max(0.82, totalLines * lineHeight + Math.max(0, bulletCount - 1) * interBulletGap);
     const cardH = Math.min(
       SAFE_BOTTOM - CONTENT_TOP,
       bodyH + cardPadding
     );
     return {
       fontSize,
-      cardH: Math.max(cardH, roomy ? 1.65 : 1.45),
+      cardH: Math.max(cardH, roomy ? 1.75 : 1.5),
       bodyH,
-      topInset: roomy ? 0.18 : 0.14,
+      topInset: roomy ? 0.20 : 0.15,
     };
   }
 
   function getQuestionCardMetrics(questionText) {
-    const totalLines = estimateWrappedLines(questionText, 54);
-    const fontSize = totalLines <= 4 ? 20 : totalLines <= 7 ? 18 : 16;
-    const lineHeight = fontSize >= 20 ? 0.30 : fontSize >= 18 ? 0.27 : 0.24;
+    const totalLines = estimateWrappedLines(questionText, byBand(sz, 36, 44, 54));
+    const heroSize = sz.heroQuestion;
+    const stepDown = heroSize * sz._shrink;
+    const tight = stepDown * sz._shrink;
+    const fontSize = totalLines <= 3 ? heroSize : totalLines <= 6 ? stepDown : tight;
+    const lineHeight = Math.max(0.24, fontSize * 0.020 + 0.06);
     const cardH = Math.min(
       SAFE_BOTTOM - (CONTENT_TOP + 0.56),
-      Math.max(1.35, totalLines * lineHeight + 0.44)
+      Math.max(1.45, totalLines * lineHeight + 0.50)
     );
     return { fontSize, cardH };
   }
@@ -100,7 +124,7 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
       y,
       w,
       h,
-      fontSize: o.fontSize || 10.5,
+      fontSize: o.fontSize || (sz.mockupText + 1),
       fontFace: o.fontFace || FONT_B,
       color: o.color || C.CHARCOAL,
       bold: Boolean(o.bold),
@@ -347,8 +371,8 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
       x: x + 0.12,
       y: y + 0.1,
       w: Math.min(1.04, Math.max(0.84, w * 0.38)),
-      h: 0.2,
-      fontSize: 9.6,
+      h: 0.22,
+      fontSize: sz.featureLabel,
       fontFace: FONT_B,
       color: C.WHITE,
       bold: true,
@@ -362,7 +386,7 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
       y: y + 0.38,
       w: w - 0.2,
       h: h - 0.46,
-      fontSize: 9.4,
+      fontSize: sz.featureDetail,
       fontFace: FONT_B,
       color: C.CHARCOAL,
       margin: 0,
@@ -620,25 +644,29 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
       fill: { color: C.DECOR_2, transparency: 80 },
     });
 
-    // Title
+    const heroH = byBand(sz, 1.6, 1.45, 1.3);
     s.addText(title, {
-      x: 0.7, y: 0.9, w: 8.0, h: 1.3,
-      fontSize: 40, fontFace: FONT_H, color: C.WHITE, bold: true, margin: 0,
+      x: 0.7, y: 0.9, w: 8.0, h: heroH,
+      fontSize: sz.titleHero, fontFace: FONT_H, color: C.WHITE, bold: true, margin: 0,
+      fit: "shrink", shrinkText: true,
     });
 
     // Subtitle
     if (subtitle) {
+      const subY = 0.9 + heroH + 0.05;
       s.addText(subtitle, {
-        x: 0.7, y: 2.25, w: 8.0, h: 0.7,
-        fontSize: 22, fontFace: FONT_B, color: subtitleOnDark, margin: 0,
+        x: 0.7, y: subY, w: 8.0, h: 0.8,
+        fontSize: sz.subtitleHero, fontFace: FONT_B, color: subtitleOnDark, margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     }
 
     // Meta line
     if (meta) {
+      const metaY = subtitle ? (0.9 + heroH + 0.05 + 0.85) : (0.9 + heroH + 0.1);
       s.addText(meta, {
-        x: 0.7, y: 3.05, w: 8.0, h: 0.4,
-        fontSize: 13, fontFace: FONT_B, color: metaOnDark, margin: 0,
+        x: 0.7, y: metaY, w: 8.0, h: 0.42,
+        fontSize: sz.metaHero, fontFace: FONT_B, color: metaOnDark, margin: 0,
       });
     }
 
@@ -662,27 +690,29 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
     liItems = normalizedTargets.liItems;
     scItems = normalizedTargets.scItems;
 
-    const GAP      = 0.14;
-    const LI_HDR_H = 0.44;
-    const SC_HDR_H = 0.40;
-    const PAD      = 0.12;
+    const GAP      = 0.16;
+    const LI_HDR_H = byBand(sz, 0.54, 0.50, 0.44);
+    const SC_HDR_H = byBand(sz, 0.50, 0.46, 0.40);
+    const PAD      = 0.14;
     const totalItems = liItems.length + scItems.length;
     const available  = SAFE_BOTTOM - CONTENT_TOP - GAP - LI_HDR_H - SC_HDR_H - PAD * 2;
-    const perItem    = Math.min(0.32, available / Math.max(totalItems, 1));
+    const perItemMax = byBand(sz, 0.50, 0.42, 0.32);
+    const perItem    = Math.min(perItemMax, available / Math.max(totalItems, 1));
     const dense      = totalItems > 8;
-    const fontSize   = dense ? 11 : 13;
+    const fontSize   = dense ? Math.max(sz.liBody * sz._shrink, 10) : sz.liBody;
 
     // LI card
-    const liBodyH = Math.max(liItems.length * perItem, 0.48);
+    const liBodyH = Math.max(liItems.length * perItem, 0.52);
     const liH     = LI_HDR_H + liBodyH + PAD;
     el.addCard(s, 0.5, CONTENT_TOP, 9, liH, { strip: C.PRIMARY });
     s.addText("Learning Intention", {
-      x: 0.75, y: CONTENT_TOP + 0.07, w: 5, h: 0.30,
-      fontSize: 13, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
+      x: 0.75, y: CONTENT_TOP + 0.08, w: 5, h: LI_HDR_H - 0.10,
+      fontSize: sz.liHeader, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
     });
     s.addText(liItems[0] || "", {
       x: 0.75, y: CONTENT_TOP + LI_HDR_H, w: 8.5, h: liBodyH,
       fontFace: FONT_B, fontSize, color: C.CHARCOAL, margin: 0, valign: "middle",
+      fit: "shrink", shrinkText: true,
     });
 
     // SC card
@@ -690,9 +720,9 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
     const scBodyH = scItems.length * perItem;
     const scH     = SC_HDR_H + scBodyH + PAD;
     el.addCard(s, 0.5, scY, 9, scH, { strip: C.ACCENT });
-    s.addText("Success Criteria \u2014 I can\u2026", {
-      x: 0.75, y: scY + 0.07, w: 5, h: 0.28,
-      fontSize: 13, fontFace: FONT_B, color: C.CHARCOAL, bold: true, margin: 0,
+    s.addText("Success Criteria — I can…", {
+      x: 0.75, y: scY + 0.08, w: 5, h: SC_HDR_H - 0.10,
+      fontSize: sz.liHeader, fontFace: FONT_B, color: C.CHARCOAL, bold: true, margin: 0,
     });
     s.addText(scItems.map((t, i) => ({
       text: t,
@@ -700,6 +730,7 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
     })), {
       x: 0.75, y: scY + SC_HDR_H, w: 8.5, h: scBodyH,
       fontFace: FONT_B, margin: 0,
+      fit: "shrink", shrinkText: true,
     });
 
     if (footer) el.addFooter(s, footer);
@@ -772,25 +803,27 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
     el.addBadge(s, "CFU", { color: C.ALERT });
     el.addTitle(s, title || "Check for Understanding", { color: C.ALERT });
 
-    // Technique pill
+    const pillH = byBand(sz, 0.50, 0.46, 0.40);
+    const pillW = byBand(sz, 3.4, 3.1, 2.8);
     s.addShape("roundRect", {
-      x: 0.5, y: CONTENT_TOP, w: 2.8, h: 0.40, rectRadius: 0.08,
+      x: 0.5, y: CONTENT_TOP, w: pillW, h: pillH, rectRadius: 0.08,
       fill: { color: C.ALERT },
     });
     s.addText(technique || "Show Me Boards", {
-      x: 0.5, y: CONTENT_TOP, w: 2.8, h: 0.40,
-      fontSize: 12, fontFace: FONT_B, color: C.WHITE, bold: true,
+      x: 0.5, y: CONTENT_TOP, w: pillW, h: pillH,
+      fontSize: sz.chip + 1, fontFace: FONT_B, color: C.WHITE, bold: true,
       align: "center", valign: "middle", margin: 0,
     });
 
-    // Question card
-    const qY = CONTENT_TOP + 0.56;
+    const qY = CONTENT_TOP + pillH + 0.16;
     const questionMetrics = getQuestionCardMetrics(questionText || "");
-    const qH = questionMetrics.cardH;
+    const qH = Math.min(questionMetrics.cardH, SAFE_BOTTOM - qY);
     el.addCard(s, 0.5, qY, 9, qH, { strip: C.ALERT, fill: C.WHITE });
     s.addText(questionText || "", {
-      x: 0.75, y: qY + 0.16, w: 8.5, h: qH - 0.30,
-      fontSize: questionMetrics.fontSize, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+      x: 0.75, y: qY + 0.20, w: 8.5, h: qH - 0.36,
+      fontSize: questionMetrics.fontSize, fontFace: FONT_B, color: C.CHARCOAL,
+      valign: "middle", margin: 0,
+      fit: "shrink", shrinkText: true,
     });
 
     if (footer) el.addFooter(s, footer);
@@ -819,29 +852,34 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
     });
 
     s.addText("Review & Reflect", {
-      x: 0.7, y: 0.45, w: 8, h: 0.8,
-      fontSize: 36, fontFace: FONT_H, color: C.WHITE, bold: true, margin: 0,
+      x: 0.7, y: 0.45, w: 8, h: 0.9,
+      fontSize: sz.closingHero, fontFace: FONT_H, color: C.WHITE, bold: true, margin: 0,
+      fit: "shrink", shrinkText: true,
     });
     s.addText("Turn & Talk", {
-      x: 0.7, y: 1.35, w: 2.5, h: 0.38,
-      fontSize: 15, fontFace: FONT_B, color: accentOnDark, bold: true, margin: 0,
+      x: 0.7, y: 1.45, w: 3.0, h: 0.42,
+      fontSize: sz.sectionLabel + 2, fontFace: FONT_B, color: accentOnDark, bold: true, margin: 0,
     });
     s.addText(reflectionPrompt, {
-      x: 0.7, y: 1.82, w: 8.5, h: 1.2,
-      fontSize: 18, fontFace: FONT_B, color: subtitleOnDark, italic: true, margin: 0,
+      x: 0.7, y: 1.96, w: 8.5, h: 1.2,
+      fontSize: sz.closingPrompt, fontFace: FONT_B, color: subtitleOnDark, italic: true, margin: 0,
+      fit: "shrink", shrinkText: true,
     });
 
     if (takeaways && takeaways.length) {
+      const rowPitch = byBand(sz, 0.44, 0.40, 0.34);
+      const takeawayY0 = sz._band === "F" ? 3.30 : 3.20;
       s.addText("Key Takeaways", {
-        x: 0.7, y: 3.15, w: 4, h: 0.38,
-        fontSize: 14, fontFace: FONT_B, color: accentOnDark, bold: true, margin: 0,
+        x: 0.7, y: takeawayY0, w: 5, h: 0.42,
+        fontSize: sz.sectionLabel + 2, fontFace: FONT_B, color: accentOnDark, bold: true, margin: 0,
       });
       takeaways.forEach((t, i) => {
-        const y = 3.62 + i * 0.34;
-        if (y + 0.28 > SAFE_BOTTOM) return;
-        s.addText("\u2022  " + t, {
-          x: 0.9, y, w: 8.0, h: 0.28,
-          fontSize: 13, fontFace: FONT_B, color: C.TEXT_ON_DARK, margin: 0,
+        const y = takeawayY0 + 0.50 + i * rowPitch;
+        if (y + (rowPitch - 0.06) > SAFE_BOTTOM) return;
+        s.addText("•  " + t, {
+          x: 0.9, y, w: 8.0, h: rowPitch - 0.06,
+          fontSize: sz.takeaway, fontFace: FONT_B, color: C.TEXT_ON_DARK, margin: 0,
+          fit: "shrink", shrinkText: true,
         });
       });
     }
@@ -906,23 +944,24 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
     const sourceType = o.sourceType ? String(o.sourceType) : "";
     if (sourceType) {
       s.addText(sourceType, {
-        x: rightX + 0.2, y: CONTENT_TOP + 0.08, w: rightW - 0.4, h: 0.2,
-        fontSize: 10.5, fontFace: FONT_B, color: C.MUTED, bold: true, margin: 0,
+        x: rightX + 0.2, y: CONTENT_TOP + 0.08, w: rightW - 0.4, h: 0.22,
+        fontSize: sz.caption + 0.5, fontFace: FONT_B, color: C.MUTED, bold: true, margin: 0,
       });
     }
 
     s.addText(String(modelTitle || "Model"), {
-      x: rightX + 0.2, y: CONTENT_TOP + (sourceType ? 0.26 : 0.12), w: rightW - 0.4, h: 0.34,
-      fontSize: 18, fontFace: FONT_H, color: C.PRIMARY, bold: true, margin: 0,
-      fit: "shrink",
+      x: rightX + 0.2, y: CONTENT_TOP + (sourceType ? 0.28 : 0.12), w: rightW - 0.4, h: 0.36,
+      fontSize: byBand(sz, 21, 19, 17),
+      fontFace: FONT_H, color: C.PRIMARY, bold: true, margin: 0,
+      fit: "shrink", shrinkText: true,
     });
 
     const subtitle = o.modelSubtitle ? String(o.modelSubtitle) : "";
     if (subtitle) {
       s.addText(subtitle, {
-        x: rightX + 0.2, y: CONTENT_TOP + 0.48, w: rightW - 0.4, h: 0.24,
-        fontSize: 10.5, fontFace: FONT_B, color: C.CHARCOAL, margin: 0,
-        fit: "shrink",
+        x: rightX + 0.2, y: CONTENT_TOP + 0.50, w: rightW - 0.4, h: 0.26,
+        fontSize: sz.caption + 1, fontFace: FONT_B, color: C.CHARCOAL, margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     }
 
@@ -999,30 +1038,30 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
         x: x + 0.25,
         y: cardY + 0.08,
         w: w - 0.5,
-        h: 0.22,
-        fontSize: 14,
+        h: 0.24,
+        fontSize: sz.sectionLabel + 3,
         fontFace: FONT_H,
         color: stripColor,
         bold: true,
         margin: 0,
-        fit: "shrink",
+        fit: "shrink", shrinkText: true,
       });
       if (model.title) {
         s.addText(String(model.title), {
           x: x + 0.25,
-          y: cardY + 0.32,
+          y: cardY + 0.34,
           w: w - 0.5,
-          h: 0.22,
-          fontSize: 11.8,
+          h: 0.24,
+          fontSize: sz.sectionLabel + 1,
           fontFace: FONT_H,
           color: C.CHARCOAL,
           bold: true,
           margin: 0,
-          fit: "shrink",
+          fit: "shrink", shrinkText: true,
         });
       }
 
-      const previewY = cardY + 0.56;
+      const previewY = cardY + 0.60;
       const previewH = model.previewH || 1.26;
       drawMockupPreview(s, x + 0.22, previewY, w - 0.44, previewH, model.previewSpec || model.previewBlocks, {
         accent: model.previewAccent || stripColor,
@@ -1036,16 +1075,17 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn) {
     drawCompareCard(leftX, leftW, left, left.strip || C.SECONDARY);
     drawCompareCard(rightX, rightW, right, right.strip || C.PRIMARY);
 
+    const promptH = byBand(sz, 0.62, 0.56, 0.48);
     const promptY = cardY + cardH + 0.15;
     el.addTextOnShape(s, String(promptText || ""), {
       x: 0.5,
       y: promptY,
       w: 9,
-      h: 0.48,
+      h: promptH,
       rectRadius: 0.08,
       fill: { color: o.promptFill || C.ALERT },
     }, {
-      fontSize: o.promptFontSize || 12.5,
+      fontSize: o.promptFontSize || (byBand(sz, 18, 15.5, 12.5)),
       fontFace: FONT_B,
       color: C.WHITE,
       bold: true,

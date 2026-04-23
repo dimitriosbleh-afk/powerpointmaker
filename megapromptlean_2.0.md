@@ -468,6 +468,57 @@ Years 5 to 6:
 Instructions must be smaller than the main task.
 The question or learning stimulus must dominate the slide.
 
+## 16a. GRADE-AWARE TEMPLATES (BUILD PIPELINE)
+
+The build pipeline picks slide-template sizing automatically from the grade
+the user provides. Pass the right `yearLevel` to `createTheme()` and every
+shared builder (`titleSlide`, `liSlide`, `contentSlide`, `cfuSlide`,
+`closingSlide`, `annotatedModelSlide`, `compareVisualSlide`, plus the subject
+builders) renders with the correct font sizes, card heights, badge sizes,
+question caps, and bullet caps for that band. You do not need to hand-tune
+font sizes per slide for the grade — the templates already do it.
+
+Three grade bands, mapped from the `Grade` input:
+
+- `F`   = Foundation -> `yearLevel: "foundation"`
+  - Largest hero text, biggest titles, fewest items per slide
+  - Default caps: 1 question, 3 bullets, 2 instruction prompts
+  - Use the same builders as upper primary; the band changes sizing
+- `Y12` = Year 1 / Year 2 -> `yearLevel: "grade1"` or `"grade2"`
+  - Very large text, generous spacing
+  - Default caps: 1 question, 4 bullets, 3 instruction prompts
+- `Y36` = Year 3 / Year 4 / Year 5 / Year 6 -> `yearLevel: "grade34"` or `"grade56"`
+  - Standard upper-primary sizing with moderate density
+  - Default caps: 3 questions max (1-2 preferred), 6 bullets, 5 instruction prompts
+
+Where the templates live (do not write parallel "kid versions" — extend the
+shared builders if you genuinely need new behaviour):
+
+- `themes/core/gradeBand.js` — the source-of-truth size table per band
+- `themes/core/elements.js` — shared `addBadge`, `addTitle`, `addFooter` etc.
+- `themes/builders/base.js` — universal slides (title, LI, content, CFU, closing, annotatedModel, compareVisual)
+- `themes/builders/<subject>.js` — subject-specific slides
+
+When you write a build script, pass the user's grade through verbatim:
+
+```js
+const { createTheme, weekToVariant } = require("../themes/factory");
+const T = createTheme("literacy", "foundation", weekToVariant(week));   // F band
+const T = createTheme("literacy", "grade2",     weekToVariant(week));   // Y12 band
+const T = createTheme("literacy", "grade56",    weekToVariant(week));   // Y36 band
+T.S       // frozen sizing table for this band, exposed if a custom slide needs it
+T._gradeBand  // "F" | "Y12" | "Y36"
+```
+
+The builders also enforce the question count rule for that band (extra
+questions beyond the cap are silently dropped at render-time), so do not rely
+on the builder to display more than the band's cap. If the lesson legitimately
+needs more questions, split them across slides rather than stuffing one card.
+
+The teacher-facing rules in section 16 (font sizes) and section 17 (question
+counts) describe the *intent* — the grade-aware templates are how that intent
+is enforced for any deck built through `createTheme()`.
+
 # 17. QUESTION COUNT RULE
 
 Do not crowd slides with question lists.
@@ -2006,10 +2057,10 @@ The finished lesson should feel:
 Deconstructed problems are manageable problems.
 
 User: Generate a slide deck for the following:
-Subject: “ Inquiry ”
-Grade: “ 5/6 ”
-Content: “ Chimney sweep boys in 1780s london ”
-Slide Decks: “ 1 ”
+Subject: “ XYZ ”
+Grade: “ XYZ ”
+Content: “ Grade: “ XYZ ”
+Slide Decks: “ XYZ ”
 Additional Notes: “ XYZ ”
 Number Fluency Focus: “ XYZ “
 Daily Review Focus: “ XYZ ”

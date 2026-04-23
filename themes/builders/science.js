@@ -1,6 +1,7 @@
 "use strict";
 
 const { SAFE_BOTTOM, CONTENT_TOP } = require("../core/layout");
+const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
 
 /**
  * Factory that returns science-specific slide builders bound to a given
@@ -12,7 +13,8 @@ const { SAFE_BOTTOM, CONTENT_TOP } = require("../core/layout");
  * @param {object} el      Bound element helpers: addTopBar, addBadge, addTitle, addCard, addFooter, addIconCircle, addTextOnShape
  * @returns {object}        { experimentSlide, observationSlide, conclusionSlide, processFlowSlide, cycleDiagramSlide }
  */
-function createScienceBuilders(C, FONT_H, FONT_B, el) {
+function createScienceBuilders(C, FONT_H, FONT_B, el, S) {
+  const sz = S || DEFAULT_SIZES;
   function drawArrowSegment(slide, x1, y1, x2, y2, color) {
     slide.addShape("line", {
       x: x1, y: y1, w: x2 - x1, h: y2 - y1,
@@ -55,27 +57,28 @@ function createScienceBuilders(C, FONT_H, FONT_B, el) {
 
     // Hypothesis section
     s.addText("Hypothesis", {
-      x: 0.75, y: CONTENT_TOP + 0.08, w: LEFT_W - 0.50, h: 0.26,
-      fontSize: 11, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
+      x: 0.75, y: CONTENT_TOP + 0.08, w: LEFT_W - 0.50, h: 0.28,
+      fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
     });
 
     const hypoH = Math.min(1.2, cardH * 0.35);
     s.addText(hypothesis || "", {
       x: 0.75, y: CONTENT_TOP + HDR_PAD, w: LEFT_W - 0.50, h: hypoH,
-      fontSize: 13, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+      fontSize: sz.bodyDense, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+      fit: "shrink", shrinkText: true,
     });
 
     // Materials section
     const matY = CONTENT_TOP + HDR_PAD + hypoH + 0.12;
     s.addText("Materials", {
-      x: 0.75, y: matY, w: LEFT_W - 0.50, h: 0.26,
-      fontSize: 11, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
+      x: 0.75, y: matY, w: LEFT_W - 0.50, h: 0.28,
+      fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
     });
 
     if (materials && materials.length) {
-      const matBodyY = matY + 0.28;
+      const matBodyY = matY + 0.30;
       const matBodyH = CONTENT_TOP + cardH - matBodyY - 0.08;
-      const fs = materials.length > 8 ? 11 : 12;
+      const fs = materials.length > 8 ? Math.max(sz.bodyDense * sz._shrink, 10) : sz.bodyDense;
       s.addText(materials.map((m, i) => ({
         text: m,
         options: {
@@ -87,6 +90,7 @@ function createScienceBuilders(C, FONT_H, FONT_B, el) {
       })), {
         x: 0.75, y: matBodyY, w: LEFT_W - 0.50, h: matBodyH,
         fontFace: FONT_B, valign: "top", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     }
 
@@ -94,13 +98,13 @@ function createScienceBuilders(C, FONT_H, FONT_B, el) {
     el.addCard(s, RIGHT_X, CONTENT_TOP, RIGHT_W, cardH, { strip: C.SECONDARY, fill: C.WHITE });
 
     s.addText("Method", {
-      x: RIGHT_X + 0.20, y: CONTENT_TOP + 0.08, w: RIGHT_W - 0.45, h: 0.26,
-      fontSize: 11, fontFace: FONT_B, color: C.SECONDARY, bold: true, margin: 0,
+      x: RIGHT_X + 0.20, y: CONTENT_TOP + 0.08, w: RIGHT_W - 0.45, h: 0.28,
+      fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.SECONDARY, bold: true, margin: 0,
     });
 
     if (method && method.length) {
       const methBodyH = cardH - HDR_PAD - 0.08;
-      const fs = method.length > 8 ? 11 : 13;
+      const fs = method.length > 8 ? Math.max(sz.bodyDense * sz._shrink, 10) : sz.bodyDense + 0.5;
       s.addText(method.map((step, i) => ({
         text: (i + 1) + ".  " + step,
         options: {
@@ -111,6 +115,7 @@ function createScienceBuilders(C, FONT_H, FONT_B, el) {
       })), {
         x: RIGHT_X + 0.20, y: CONTENT_TOP + HDR_PAD, w: RIGHT_W - 0.45, h: methBodyH,
         fontFace: FONT_B, valign: "top", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     }
 
@@ -144,7 +149,10 @@ function createScienceBuilders(C, FONT_H, FONT_B, el) {
     const availH = SAFE_BOTTOM - CONTENT_TOP;
     const gap = 0.10;
     const pCount = Math.max(prompts.length, 1);
-    const cardH = Math.min(0.95, (availH - gap * (pCount - 1)) / pCount);
+    const cardHMax = byBand(sz, 1.6, 1.2, 0.95);
+    const cardH = Math.min(cardHMax, (availH - gap * (pCount - 1)) / pCount);
+    const promptFontSize = sz.body;
+    const numFontSize = sz.body + 1;
 
     prompts.forEach((p, i) => {
       const y = CONTENT_TOP + i * (cardH + gap);
@@ -158,11 +166,12 @@ function createScienceBuilders(C, FONT_H, FONT_B, el) {
       // Number prefix + prompt text
       const numStr = String(i + 1) + ".  ";
       s.addText([
-        { text: numStr, options: { bold: true, fontSize: 14, color: C.PRIMARY } },
-        { text: p, options: { fontSize: 14, color: C.CHARCOAL } },
+        { text: numStr, options: { bold: true, fontSize: numFontSize, color: C.PRIMARY } },
+        { text: p, options: { fontSize: promptFontSize, color: C.CHARCOAL } },
       ], {
-        x: 0.75, y: y + 0.08, w: 8.5, h: cardH - 0.16,
+        x: 0.75, y: y + 0.10, w: 8.5, h: cardH - 0.20,
         fontFace: FONT_B, valign: "middle", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     });
 
@@ -209,25 +218,26 @@ function createScienceBuilders(C, FONT_H, FONT_B, el) {
     // Question card
     el.addCard(s, 0.5, curY, 9, qH, { strip: C.PRIMARY, fill: C.WHITE });
     s.addText("Our Question", {
-      x: 0.75, y: curY + 0.08, w: 5, h: 0.26,
-      fontSize: 11, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
+      x: 0.75, y: curY + 0.08, w: 5, h: 0.28,
+      fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
     });
     s.addText(question || "", {
       x: 0.75, y: curY + HDR_PAD, w: 8.5, h: qH - HDR_PAD - 0.06,
-      fontSize: 14, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+      fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+      fit: "shrink", shrinkText: true,
     });
     curY += qH + GAP;
 
     // Evidence card (auto-sized to fill)
     el.addCard(s, 0.5, curY, 9, evidH, { strip: C.SECONDARY, fill: C.WHITE });
     s.addText("Evidence", {
-      x: 0.75, y: curY + 0.08, w: 5, h: 0.26,
-      fontSize: 11, fontFace: FONT_B, color: C.SECONDARY, bold: true, margin: 0,
+      x: 0.75, y: curY + 0.08, w: 5, h: 0.28,
+      fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.SECONDARY, bold: true, margin: 0,
     });
 
     if (evidence && evidence.length) {
       const evidBodyH = evidH - HDR_PAD - 0.06;
-      const fs = evidence.length > 6 ? 11 : 13;
+      const fs = evidence.length > 6 ? Math.max(sz.bodyDense * sz._shrink, 10) : sz.bodyDense;
       s.addText(evidence.map((e, i) => ({
         text: e,
         options: {
@@ -239,6 +249,7 @@ function createScienceBuilders(C, FONT_H, FONT_B, el) {
       })), {
         x: 0.75, y: curY + HDR_PAD, w: 8.5, h: evidBodyH,
         fontFace: FONT_B, valign: "top", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     }
     curY += evidH + GAP;
@@ -246,12 +257,13 @@ function createScienceBuilders(C, FONT_H, FONT_B, el) {
     // Conclusion card
     el.addCard(s, 0.5, curY, 9, concH, { strip: C.ACCENT, fill: C.WHITE });
     s.addText("Conclusion", {
-      x: 0.75, y: curY + 0.08, w: 5, h: 0.26,
-      fontSize: 11, fontFace: FONT_B, color: C.ACCENT, bold: true, margin: 0,
+      x: 0.75, y: curY + 0.08, w: 5, h: 0.28,
+      fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.ACCENT, bold: true, margin: 0,
     });
     s.addText(conclusion || "", {
       x: 0.75, y: curY + HDR_PAD, w: 8.5, h: concH - HDR_PAD - 0.06,
-      fontSize: 14, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+      fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+      fit: "shrink", shrinkText: true,
     });
 
     if (footer) el.addFooter(s, footer);
@@ -305,8 +317,8 @@ function createScienceBuilders(C, FONT_H, FONT_B, el) {
     const flowH = 3.55;
     el.addCard(s, flowX, flowY, flowW, flowH, { strip: C.PRIMARY, fill: C.WHITE });
     s.addText("Process flow", {
-      x: flowX + 0.22, y: flowY + 0.08, w: 2.4, h: 0.24,
-      fontSize: 12, fontFace: FONT_H, color: C.PRIMARY, bold: true, margin: 0,
+      x: flowX + 0.22, y: flowY + 0.08, w: 2.6, h: 0.26,
+      fontSize: sz.sectionLabel + 1, fontFace: FONT_H, color: C.PRIMARY, bold: true, margin: 0,
     });
 
     const safeSteps = (steps || []).slice(0, 6);
@@ -318,14 +330,14 @@ function createScienceBuilders(C, FONT_H, FONT_B, el) {
       const rowY = flowY + 0.42 + index * (rowH + rowGap);
       const chipColor = step && step.color ? step.color : chipPalette[index];
       el.addTextOnShape(s, `${index + 1}. ${String((step && step.label) || "")}`, {
-        x: flowX + 0.20, y: rowY, w: 1.75, h: 0.34, rectRadius: 0.06,
+        x: flowX + 0.20, y: rowY, w: 1.75, h: 0.36, rectRadius: 0.06,
         fill: { color: chipColor },
       }, {
-        fontSize: 10, fontFace: FONT_B, color: C.WHITE, bold: true,
+        fontSize: sz.chip - 0.5, fontFace: FONT_B, color: C.WHITE, bold: true,
       });
       s.addText(String((step && step.detail) || ""), {
-        x: flowX + 2.05, y: rowY - 0.01, w: 2.18, h: 0.38,
-        fontSize: 10.5, fontFace: FONT_B, color: C.CHARCOAL,
+        x: flowX + 2.05, y: rowY - 0.01, w: 2.18, h: 0.40,
+        fontSize: sz.caption + 1, fontFace: FONT_B, color: C.CHARCOAL,
         margin: 0, valign: "middle", fit: "shrink", shrinkText: true,
       });
       if (index < safeSteps.length - 1) {
@@ -402,21 +414,21 @@ function createScienceBuilders(C, FONT_H, FONT_B, el) {
     ];
 
     el.addTextOnShape(s, centerLabel || "Cycle", {
-      x: cx - 0.62, y: cy - 0.32, w: 1.24, h: 0.64, rectRadius: 0.12,
+      x: cx - 0.7, y: cy - 0.34, w: 1.4, h: 0.68, rectRadius: 0.12,
       fill: { color: C.BG_LIGHT },
       line: { color: C.PRIMARY, width: 1.2 },
     }, {
-      fontSize: 13, fontFace: FONT_H, color: C.PRIMARY, bold: true,
+      fontSize: sz.sectionLabel + 2, fontFace: FONT_H, color: C.PRIMARY, bold: true,
     });
 
     safeSteps.forEach((step, index) => {
       const pos = positions[index];
       const color = step && step.color ? step.color : palette[index];
       el.addTextOnShape(s, `${index + 1}. ${String((step && step.label) || "")}`, {
-        x: pos.x - 0.7, y: pos.y - 0.18, w: 1.4, h: 0.36, rectRadius: 0.08,
+        x: pos.x - 0.75, y: pos.y - 0.20, w: 1.5, h: 0.40, rectRadius: 0.08,
         fill: { color },
       }, {
-        fontSize: 10.2, fontFace: FONT_B, color: C.WHITE, bold: true,
+        fontSize: sz.chip, fontFace: FONT_B, color: C.WHITE, bold: true,
       });
     });
 
@@ -445,7 +457,7 @@ function createScienceBuilders(C, FONT_H, FONT_B, el) {
       });
       s.addText(String((step && step.detail) || ""), {
         x: lx + 0.08, y: ly + 0.07, w: legendW - 0.16, h: legendH - 0.14,
-        fontSize: 9.4, fontFace: FONT_B, color: C.CHARCOAL,
+        fontSize: sz.caption, fontFace: FONT_B, color: C.CHARCOAL,
         margin: 0, align: "center", fit: "shrink", shrinkText: true,
       });
     });

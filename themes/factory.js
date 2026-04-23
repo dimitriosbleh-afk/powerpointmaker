@@ -12,6 +12,7 @@ const { createElements }           = require("./core/elements");
 const { withReveal }               = require("./core/withReveal");
 const { createImageHelpers }       = require("./core/images");
 const { warnIfSlideHasOverlaps, warnIfSlideElementsOutOfBounds, runSlideDiagnostics } = require("./core/diagnostics");
+const { getGradeBand, getGradeSizes } = require("./core/gradeBand");
 
 // ── Builder factories ──
 const { createBaseBuilders }       = require("./builders/base");
@@ -102,23 +103,30 @@ function createTheme(subject, yearLevel, variant) {
   const FONT_H = palette.FONT_H;
   const FONT_B = palette.FONT_B;
 
+  // Resolve grade-band sizing table from yearLevel.
+  // Drives every slide builder's font sizes and density caps so that the
+  // same builder API renders age-appropriate output without callers
+  // passing sizes explicitly.
+  const gradeBand = getGradeBand(levelLower);
+  const S = getGradeSizes(gradeBand);
+
   // Build shadow factories
   const shadowFn     = makeShadow(palette);
   const cardShadowFn = makeCardShadow(palette);
 
   // Build bound element helpers
-  const el = createElements(C, FONT_H, FONT_B, cardShadowFn);
+  const el = createElements(C, FONT_H, FONT_B, cardShadowFn, S);
   const img = createImageHelpers(C, FONT_H, FONT_B, el, cardShadowFn);
 
   // Build bound getContrastColor (needs palette's WHITE/CHARCOAL)
   const boundGetContrastColor = (bgHex) => getContrastColor(bgHex, C.WHITE, C.CHARCOAL);
 
   // Build base slide builders (all subjects get these)
-  const base = createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn);
+  const base = createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S);
 
   // Build subject-specific slide builders
   const subjectFactory = SUBJECT_BUILDER_FACTORIES[subjectLower];
-  const subjectBuilders = subjectFactory(C, FONT_H, FONT_B, el);
+  const subjectBuilders = subjectFactory(C, FONT_H, FONT_B, el, S);
 
   // Compose and return
   return {
@@ -168,6 +176,11 @@ function createTheme(subject, yearLevel, variant) {
     // Subject-specific slide builders (may override base if name collides)
     ...subjectBuilders,
 
+    // Grade-band sizing (frozen) — exposed so manual/custom slides
+    // can use the same age-appropriate sizes as the builders.
+    S,
+    _gradeBand: gradeBand,
+
     // Metadata
     _subject:     subjectLower,
     _yearLevel:   levelLower,
@@ -194,4 +207,6 @@ module.exports = {
   normalizeLessonTargets,
   sanitizeTeacherNotes,
   appendSourcesToNotes,
+  getGradeBand,
+  getGradeSizes,
 };

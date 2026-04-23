@@ -1,6 +1,7 @@
 "use strict";
 
 const { SAFE_BOTTOM, CONTENT_TOP } = require("../core/layout");
+const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
 
 /**
  * Factory that returns inquiry-specific slide builders bound to a given
@@ -12,7 +13,8 @@ const { SAFE_BOTTOM, CONTENT_TOP } = require("../core/layout");
  * @param {object} el      Bound element helpers: addTopBar, addBadge, addTitle, addCard, addFooter, addIconCircle, addTextOnShape
  * @returns {object}        { investigationSlide, findingsSlide, pairShareSlide }
  */
-function createInquiryBuilders(C, FONT_H, FONT_B, el) {
+function createInquiryBuilders(C, FONT_H, FONT_B, el, S) {
+  const sz = S || DEFAULT_SIZES;
 
   /* ------------------------------------------------------------------ */
   /*  investigationSlide                                                 */
@@ -74,11 +76,12 @@ function createInquiryBuilders(C, FONT_H, FONT_B, el) {
     el.addCard(s, 0.5, curY, 9, qH, { strip: C.PRIMARY, fill: C.WHITE });
     s.addText("Inquiry Question", {
       x: 0.75, y: curY + 0.08, w: 5, h: 0.26,
-      fontSize: 11, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
+      fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
     });
     s.addText(question, {
       x: 0.75, y: curY + HDR_PAD, w: 8.5, h: qH - HDR_PAD - 0.08,
-      fontSize: 16, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+      fontSize: sz.body + 1, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+      fit: "shrink", shrinkText: true,
     });
     curY += qH + GAP;
 
@@ -89,11 +92,12 @@ function createInquiryBuilders(C, FONT_H, FONT_B, el) {
       el.addCard(s, 0.5, curY, 9, hypoH, { strip: C.ACCENT, fill: C.WHITE });
       s.addText("Our Hypothesis", {
         x: 0.75, y: curY + 0.08, w: 5, h: 0.26,
-        fontSize: 11, fontFace: FONT_B, color: C.ACCENT, bold: true, margin: 0,
+        fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.ACCENT, bold: true, margin: 0,
       });
       s.addText(hypothesis, {
         x: 0.75, y: curY + HDR_PAD, w: 8.5, h: hypoH - HDR_PAD - 0.08,
-        fontSize: 14, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+        fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
       curY += hypoH + GAP;
     }
@@ -105,20 +109,22 @@ function createInquiryBuilders(C, FONT_H, FONT_B, el) {
       el.addCard(s, 0.5, curY, 9, stepsH, { strip: C.SECONDARY, fill: C.WHITE });
       s.addText("Investigation Steps", {
         x: 0.75, y: curY + 0.08, w: 5, h: 0.26,
-        fontSize: 11, fontFace: FONT_B, color: C.SECONDARY, bold: true, margin: 0,
+        fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.SECONDARY, bold: true, margin: 0,
       });
 
       const stepsBodyH = stepsH - HDR_PAD - 0.08;
+      const fs = steps.length > 6 ? Math.max(sz.bodyDense * sz._shrink, 10) : sz.bodyDense;
       s.addText(steps.map((step, i) => ({
         text: (i + 1) + ".  " + step,
         options: {
           breakLine: i < steps.length - 1,
-          fontSize: 13,
+          fontSize: fs,
           color: C.CHARCOAL,
         },
       })), {
         x: 0.75, y: curY + HDR_PAD, w: 8.5, h: stepsBodyH,
         fontFace: FONT_B, valign: "top", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     }
 
@@ -167,12 +173,12 @@ function createInquiryBuilders(C, FONT_H, FONT_B, el) {
     el.addCard(s, 0.5, CONTENT_TOP, 9, findH, { strip: C.SECONDARY, fill: C.WHITE });
     s.addText("What We Found", {
       x: 0.75, y: CONTENT_TOP + 0.08, w: 5, h: 0.26,
-      fontSize: 11, fontFace: FONT_B, color: C.SECONDARY, bold: true, margin: 0,
+      fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.SECONDARY, bold: true, margin: 0,
     });
 
     if (findings && findings.length) {
       const bodyH = findH - HDR_PAD - 0.08;
-      const fs = findings.length > 6 ? 12 : 14;
+      const fs = findings.length > 6 ? Math.max(sz.bodyDense * sz._shrink, 10) : sz.body;
       s.addText(findings.map((f, i) => ({
         text: f,
         options: {
@@ -184,6 +190,7 @@ function createInquiryBuilders(C, FONT_H, FONT_B, el) {
       })), {
         x: 0.75, y: CONTENT_TOP + HDR_PAD, w: 8.5, h: bodyH,
         fontFace: FONT_B, valign: "top", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     }
 
@@ -193,11 +200,12 @@ function createInquiryBuilders(C, FONT_H, FONT_B, el) {
       el.addCard(s, 0.5, concY, 9, concH, { strip: C.ACCENT, fill: C.WHITE });
       s.addText("Our Conclusion", {
         x: 0.75, y: concY + 0.08, w: 5, h: 0.26,
-        fontSize: 11, fontFace: FONT_B, color: C.ACCENT, bold: true, margin: 0,
+        fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.ACCENT, bold: true, margin: 0,
       });
       s.addText(conclusion, {
         x: 0.75, y: concY + HDR_PAD, w: 8.5, h: concH - HDR_PAD - 0.08,
-        fontSize: 14, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+        fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     }
 
@@ -227,13 +235,16 @@ function createInquiryBuilders(C, FONT_H, FONT_B, el) {
     el.addBadge(s, "Pair-Share", { color: C.SECONDARY });
     el.addTitle(s, title || "Discuss with Your Partner");
 
+    const _qs = questions || [];
+    const cappedQs = _qs.slice(0, sz.maxQuestions || _qs.length);
     const availH = SAFE_BOTTOM - CONTENT_TOP;
     const gap = 0.10;
-    const qCount = Math.max(questions.length, 1);
-    const qH = Math.min(0.95, (availH - gap * (qCount - 1)) / qCount);
-    const fontSize = questions.length >= 5 ? 13 : 15;
+    const qCount = Math.max(cappedQs.length, 1);
+    const qHMax = byBand(sz, 2.6, 1.8, 0.95);
+    const qH = Math.min(qHMax, (availH - gap * (qCount - 1)) / qCount);
+    const fontSize = cappedQs.length >= 5 ? sz.bodyDense : sz.body + 1;
 
-    questions.forEach((q, i) => {
+    cappedQs.forEach((q, i) => {
       const y = CONTENT_TOP + i * (qH + gap);
       if (y + qH > SAFE_BOTTOM) return;
       el.addCard(s, 0.5, y, 9, qH, {
@@ -241,8 +252,9 @@ function createInquiryBuilders(C, FONT_H, FONT_B, el) {
         fill: C.WHITE,
       });
       s.addText(q, {
-        x: 0.75, y: y + 0.08, w: 8.5, h: qH - 0.16,
+        x: 0.75, y: y + 0.10, w: 8.5, h: qH - 0.20,
         fontSize, fontFace: FONT_B, color: C.CHARCOAL, valign: "middle", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     });
 

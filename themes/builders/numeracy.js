@@ -2,6 +2,7 @@
 
 const { SAFE_BOTTOM, CONTENT_TOP, SLIDE_W, validateBounds } = require("../core/layout");
 const { runSlideDiagnostics } = require("../core/diagnostics");
+const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
 
 /**
  * Factory that returns numeracy-specific slide builders and maths visual
@@ -13,7 +14,8 @@ const { runSlideDiagnostics } = require("../core/diagnostics");
  * @param {object} el       Bound element helpers: addTopBar, addBadge, addTitle, addCard, addFooter, addIconCircle, addTextOnShape
  * @returns {object}        { STAGE_COLORS, addStageBadge, workedExSlide, exitTicketSlide, addPlaceValueChart, addTenthsStrip, addAreaModel, addNumberLine, addDecimalDot }
  */
-function createNumeracyBuilders(C, FONT_H, FONT_B, el) {
+function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
+  const sz = S || DEFAULT_SIZES;
 
   /* ------------------------------------------------------------------ */
   /*  STAGE_COLORS                                                       */
@@ -49,14 +51,17 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el) {
   function addStageBadge(slide, stageNum, label) {
     const resolvedLabel = label || STAGE_LABELS[String(stageNum)] || "Stage " + stageNum;
     const color = STAGE_COLORS[String(stageNum)] || C.PRIMARY;
-    const w = resolvedLabel.length > 20 ? 3.2 : 2.4;
+    // Wider/taller badge for F/Y12 to fit larger badge text without clipping.
+    const baseW = resolvedLabel.length > 20 ? 3.2 : 2.4;
+    const w = byBand(sz, baseW + 0.7, baseW + 0.4, baseW);
+    const h = byBand(sz, 0.42, 0.40, 0.36);
     slide.addShape("roundRect", {
-      x: 0.5, y: 0.2, w, h: 0.36, rectRadius: 0.08,
+      x: 0.5, y: 0.2, w, h, rectRadius: 0.08,
       fill: { color },
     });
     slide.addText("Stage " + stageNum + "  |  " + resolvedLabel, {
-      x: 0.5, y: 0.2, w, h: 0.36,
-      fontSize: 10, fontFace: FONT_B, color: C.WHITE,
+      x: 0.5, y: 0.2, w, h,
+      fontSize: sz.badge, fontFace: FONT_B, color: C.WHITE,
       align: "center", valign: "middle", bold: true, margin: 0,
     });
   }
@@ -84,7 +89,9 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el) {
     const stageColor = STAGE_COLORS[String(stageNum)] || C.PRIMARY;
     el.addTopBar(s, stageColor);
     addStageBadge(s, stageNum, stageLabel);
-    el.addTitle(s, title, { y: 0.65, fontSize: 22, color: stageColor });
+    // Slightly smaller than the slide H1 so the stage badge above it stays
+    // visually dominant; still scales by band.
+    el.addTitle(s, title, { fontSize: sz.titleH1 - 2, color: stageColor });
 
     const cardW = drawRight ? 4.5 : 9;
     const contentY = CONTENT_TOP;
@@ -104,13 +111,17 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el) {
 
     el.addCard(s, 0.5, contentY, cardW, SAFE_BOTTOM - contentY, { strip: stageColor });
 
+    // Step text size scales with band; narrow column drops one step.
+    const stepFontSize = drawRight ? sz.bodyDense : sz.body;
     const stepTexts = steps.map((step, i) => ({
       text: step,
-      options: { bullet: true, breakLine: i < steps.length - 1, fontSize: 13, color: C.CHARCOAL },
+      options: { bullet: true, breakLine: i < steps.length - 1, fontSize: stepFontSize, color: C.CHARCOAL },
     }));
     s.addText(stepTexts, {
-      x: 0.75, y: contentY + 0.12, w: cardW - 0.4, h: SAFE_BOTTOM - contentY - 0.2,
+      x: 0.75, y: contentY + 0.14, w: cardW - 0.4, h: SAFE_BOTTOM - contentY - 0.24,
       fontFace: FONT_B, margin: 0, valign: "top",
+      paraSpaceAfter: stepFontSize >= 16 ? 5 : 3,
+      fit: "shrink", shrinkText: true,
     });
 
     if (drawRight) drawRight(s, layoutGuide);
@@ -142,31 +153,43 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el) {
     // Top accent bar
     s.addShape("rect", { x: 0, y: 0, w: 10, h: 0.06, fill: { color: assessColor } });
 
-    // Badge
+    // Badge — sized per band.
+    const badgeH = byBand(sz, 0.42, 0.40, 0.36);
+    const badgeW = byBand(sz, 2.1, 1.95, 1.8);
     s.addShape("roundRect", {
-      x: 0.5, y: 0.2, w: 1.8, h: 0.36, rectRadius: 0.08,
+      x: 0.5, y: 0.2, w: badgeW, h: badgeH, rectRadius: 0.08,
       fill: { color: assessColor },
     });
     s.addText("Exit Ticket", {
-      x: 0.5, y: 0.2, w: 1.8, h: 0.36,
-      fontSize: 11, fontFace: FONT_B, color: C.WHITE,
+      x: 0.5, y: 0.2, w: badgeW, h: badgeH,
+      fontSize: sz.badge, fontFace: FONT_B, color: C.WHITE,
       align: "center", valign: "middle", bold: true, margin: 0,
     });
 
     // Title
+    const titleY = byBand(sz, 0.72, 0.68, 0.65);
+    const titleH = byBand(sz, 0.74, 0.68, 0.62);
     s.addText("Stage 5  |  Show What You Know", {
-      x: 0.5, y: 0.65, w: 9, h: 0.52,
-      fontSize: 22, fontFace: FONT_H, color: assessColor, bold: true, margin: 0,
+      x: 0.5, y: titleY, w: 9, h: titleH,
+      fontSize: sz.titleH1 - 2, fontFace: FONT_H, color: assessColor, bold: true, margin: 0,
+      fit: "shrink", shrinkText: true,
     });
 
-    // Question cards
-    const perH = Math.min(1.2, (SAFE_BOTTOM - 1.3) / questions.length - 0.12);
-    questions.forEach((q, i) => {
-      const qY = 1.3 + i * (perH + 0.12);
+    // Question cards — capped to the band's max question count.
+    const _qs = questions || [];
+    const cappedQs = _qs.slice(0, sz.maxQuestions || _qs.length);
+    const startY = titleY + titleH + 0.18;
+    const perH = Math.min(
+      byBand(sz, 2.1, 1.5, 1.2),
+      (SAFE_BOTTOM - startY) / Math.max(cappedQs.length, 1) - 0.12,
+    );
+    cappedQs.forEach((q, i) => {
+      const qY = startY + i * (perH + 0.12);
       el.addCard(s, 0.5, qY, 9, perH, { strip: assessColor });
       s.addText((i + 1) + ".  " + q, {
-        x: 0.75, y: qY + 0.06, w: 8.5, h: perH - 0.08,
-        fontSize: 15, fontFace: FONT_B, color: C.CHARCOAL, margin: 0, valign: "middle",
+        x: 0.75, y: qY + 0.08, w: 8.5, h: perH - 0.16,
+        fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, margin: 0, valign: "middle",
+        fit: "shrink", shrinkText: true,
       });
     });
 

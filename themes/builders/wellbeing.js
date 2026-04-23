@@ -1,6 +1,7 @@
 "use strict";
 
 const { SAFE_BOTTOM, CONTENT_TOP } = require("../core/layout");
+const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
 
 /**
  * Factory that returns wellbeing-specific slide builders bound to a given
@@ -12,7 +13,8 @@ const { SAFE_BOTTOM, CONTENT_TOP } = require("../core/layout");
  * @param {object} el      Bound element helpers: addTopBar, addBadge, addTitle, addCard, addFooter, addIconCircle, addTextOnShape
  * @returns {object}        { pairShareSlide, scenarioSlide, reflectionSlide }
  */
-function createWellbeingBuilders(C, FONT_H, FONT_B, el) {
+function createWellbeingBuilders(C, FONT_H, FONT_B, el, S) {
+  const sz = S || DEFAULT_SIZES;
 
   /* ------------------------------------------------------------------ */
   /*  pairShareSlide                                                     */
@@ -34,13 +36,16 @@ function createWellbeingBuilders(C, FONT_H, FONT_B, el) {
     el.addBadge(s, "Pair-Share", { color: C.SECONDARY });
     el.addTitle(s, title || "Discuss with Your Partner");
 
+    const _qs = questions || [];
+    const cappedQs = _qs.slice(0, sz.maxQuestions || _qs.length);
     const availH = SAFE_BOTTOM - CONTENT_TOP;
     const gap = 0.10;
-    const qCount = Math.max(questions.length, 1);
-    const qH = Math.min(0.95, (availH - gap * (qCount - 1)) / qCount);
-    const fontSize = questions.length >= 5 ? 13 : 15;
+    const qCount = Math.max(cappedQs.length, 1);
+    const qHMax = byBand(sz, 2.6, 1.8, 0.95);
+    const qH = Math.min(qHMax, (availH - gap * (qCount - 1)) / qCount);
+    const fontSize = cappedQs.length >= 5 ? sz.bodyDense : sz.body + 1;
 
-    questions.forEach((q, i) => {
+    cappedQs.forEach((q, i) => {
       const y = CONTENT_TOP + i * (qH + gap);
       if (y + qH > SAFE_BOTTOM) return;
       el.addCard(s, 0.5, y, 9, qH, {
@@ -48,8 +53,9 @@ function createWellbeingBuilders(C, FONT_H, FONT_B, el) {
         fill: C.WHITE,
       });
       s.addText(q, {
-        x: 0.75, y: y + 0.08, w: 8.5, h: qH - 0.16,
+        x: 0.75, y: y + 0.10, w: 8.5, h: qH - 0.20,
         fontSize, fontFace: FONT_B, color: C.CHARCOAL, valign: "middle", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     });
 
@@ -81,28 +87,33 @@ function createWellbeingBuilders(C, FONT_H, FONT_B, el) {
     el.addBadge(s, badgeText || "Scenario", { color: C.PRIMARY });
     el.addTitle(s, title);
 
-    // Scenario card — full width, fixed height
-    const scenH = 1.6;
+    // Scenario card — taller for F/Y12 to fit larger body text.
+    const scenH = byBand(sz, 1.95, 1.75, 1.6);
     el.addCard(s, 0.5, CONTENT_TOP, 9, scenH, { strip: C.PRIMARY, fill: C.WHITE });
     s.addText(scenario, {
-      x: 0.75, y: CONTENT_TOP + 0.10, w: 8.5, h: scenH - 0.20,
-      fontSize: 14, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+      x: 0.75, y: CONTENT_TOP + 0.12, w: 8.5, h: scenH - 0.24,
+      fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, valign: "top", margin: 0,
+      fit: "shrink", shrinkText: true,
     });
 
-    // Question cards — fill remaining space
+    // Question cards — capped to band's maxQuestions.
+    const _qs = questions || [];
+    const cappedScenQs = _qs.slice(0, sz.maxQuestions || _qs.length);
     const qStartY = CONTENT_TOP + scenH + 0.12;
     const qAvail = SAFE_BOTTOM - qStartY;
-    const qCount = Math.max(questions.length, 1);
+    const qCount = Math.max(cappedScenQs.length, 1);
     const gap = 0.10;
-    const qH = Math.min(0.95, (qAvail - gap * (qCount - 1)) / qCount);
+    const qHMax = byBand(sz, 1.6, 1.2, 0.95);
+    const qH = Math.min(qHMax, (qAvail - gap * (qCount - 1)) / qCount);
 
-    questions.forEach((q, i) => {
+    cappedScenQs.forEach((q, i) => {
       const y = qStartY + i * (qH + gap);
       if (y + qH > SAFE_BOTTOM) return;
       el.addCard(s, 0.5, y, 9, qH, { strip: C.ACCENT, fill: C.WHITE });
       s.addText(q, {
-        x: 0.75, y: y + 0.08, w: 8.5, h: qH - 0.16,
-        fontSize: 13, fontFace: FONT_B, color: C.CHARCOAL, valign: "middle", margin: 0,
+        x: 0.75, y: y + 0.10, w: 8.5, h: qH - 0.20,
+        fontSize: sz.bodyDense, fontFace: FONT_B, color: C.CHARCOAL, valign: "middle", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     });
 
@@ -134,8 +145,10 @@ function createWellbeingBuilders(C, FONT_H, FONT_B, el) {
     const availH = SAFE_BOTTOM - CONTENT_TOP;
     const gap = 0.10;
     const pCount = Math.max(prompts.length, 1);
-    const cardH = Math.min(0.95, (availH - gap * (pCount - 1)) / pCount);
-    const numBoxW = 1.0;
+    const cardHMax = byBand(sz, 1.5, 1.15, 0.95);
+    const cardH = Math.min(cardHMax, (availH - gap * (pCount - 1)) / pCount);
+    const numBoxW = byBand(sz, 1.2, 1.1, 1.0);
+    const numFontSize = byBand(sz, 32, 28, 22);
 
     prompts.forEach((p, i) => {
       const y = CONTENT_TOP + i * (cardH + gap);
@@ -151,14 +164,15 @@ function createWellbeingBuilders(C, FONT_H, FONT_B, el) {
       });
       s.addText(String(i + 1), {
         x: 0.5, y: y, w: numBoxW, h: cardH,
-        fontSize: 22, fontFace: FONT_H, color: C.WHITE,
+        fontSize: numFontSize, fontFace: FONT_H, color: C.WHITE,
         bold: true, align: "center", valign: "middle", margin: 0,
       });
 
       // Prompt text
       s.addText(p, {
-        x: 0.5 + numBoxW + 0.15, y: y + 0.08, w: 9 - numBoxW - 0.40, h: cardH - 0.16,
-        fontSize: 14, fontFace: FONT_B, color: C.CHARCOAL, valign: "middle", margin: 0,
+        x: 0.5 + numBoxW + 0.15, y: y + 0.10, w: 9 - numBoxW - 0.40, h: cardH - 0.20,
+        fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, valign: "middle", margin: 0,
+        fit: "shrink", shrinkText: true,
       });
     });
 
