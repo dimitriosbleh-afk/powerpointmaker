@@ -2059,7 +2059,7 @@ Deconstructed problems are manageable problems.
 User: Generate a slide deck for the following:
 Subject: “ XYZ ”
 Grade: “ XYZ ”
-Content: “ Grade: “ XYZ ”
+Content: “ XYZ ”
 Slide Decks: “ XYZ ”
 Additional Notes: “ XYZ ”
 Number Fluency Focus: “ XYZ “
