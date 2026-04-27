@@ -3413,7 +3413,7 @@ Grade: “ XYZ ”
 Content: “ XYZ ”
 Slide Decks: “ XYZ ”
 Additional Notes: “ XYZ ”
-Number Fluency Focus: “ XYZ “
+Number Fluency Focus: “ XYZ ”
 Daily Review Focus: “ XYZ ”
 
 Do not enter plan mode, proceed with the lesson creation in bypass permissions. Ensure you remain active while the lessons are being created and continue to be until they are fully complete, please. 
