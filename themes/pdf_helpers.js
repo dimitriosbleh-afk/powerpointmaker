@@ -1055,7 +1055,158 @@ function addPosterPairPdf(doc, y, leftPoster, rightPoster, opts) {
   return y + totalH + 10;
 }
 
+/**
+ * Render the §44 structured Teacher Resources slide. Accepts a config
+ * object describing all classroom material types (PDFs, manipulatives,
+ * board setup, videos, supplied URLs, OCHRE refs) and renders them in
+ * a two-column layout.
+ */
+function addRichResourceSlide(pres, config, theme, footer, notes) {
+  const { C: TC, FONT_H: FH, FONT_B: FB } = theme;
+  const s = pres.addSlide();
+  const cfg = config || {};
+  const resources = Array.isArray(cfg.resources) ? cfg.resources : [];
+  const groups = [
+    { label: "Manipulatives", items: cfg.manipulatives },
+    { label: "Mini-whiteboards & student tools", items: cfg.studentTools },
+    { label: "Routine icons used", items: cfg.routineIcons },
+    { label: "Teacher board setup", items: cfg.boardSetup },
+    { label: "Videos & media", items: cfg.videos },
+    { label: "Supplied URLs", items: cfg.urls },
+    { label: "OCHRE / source materials", items: cfg.ochre },
+  ].filter((g) => Array.isArray(g.items) && g.items.length > 0);
+
+  s.background = { color: TC.CREAM || TC.BG_LIGHT || "F4F7FF" };
+  s.addShape("rect", {
+    x: 0, y: 0, w: 10, h: 0.06,
+    fill: { color: TC.NAVY || TC.PRIMARY || "1B3A6B" },
+  });
+
+  const badgeColor = TC.TEAL || TC.SECONDARY || "0F7F8C";
+  s.addShape("roundRect", {
+    x: 0.5, y: 0.2, w: 2.8, h: 0.36, rectRadius: 0.08,
+    fill: { color: badgeColor },
+  });
+  s.addText("Teacher Resources", {
+    x: 0.5, y: 0.2, w: 2.8, h: 0.36,
+    fontSize: 11, fontFace: FB, color: TC.WHITE || "FFFFFF",
+    align: "center", valign: "middle", bold: true, margin: 0,
+  });
+
+  s.addText("Materials & references", {
+    x: 0.5, y: 0.65, w: 9, h: 0.55,
+    fontSize: 24, fontFace: FH, color: TC.NAVY || TC.PRIMARY || "1B3A6B",
+    bold: true, margin: 0,
+  });
+
+  if (resources.length === 0) {
+    s.addText("No printed student resources required.", {
+      x: 0.5, y: 1.25, w: 9, h: 0.3,
+      fontSize: 12, fontFace: FB, color: TC.MUTED || "6B7280",
+      italic: true, margin: 0,
+    });
+  } else {
+    s.addText("Click any resource to open. Print before the lesson.", {
+      x: 0.5, y: 1.25, w: 9, h: 0.3,
+      fontSize: 12, fontFace: FB, color: TC.MUTED || "6B7280",
+      italic: true, margin: 0,
+    });
+  }
+
+  const colTop = 1.6;
+  const colH = 5.05 - colTop;
+  const useTwoCols = resources.length > 0 && groups.length > 0;
+  const leftW = useTwoCols ? 4.7 : 9;
+  const leftX = 0.5;
+  const rightX = leftX + leftW + 0.2;
+  const rightW = 9.5 - rightX;
+
+  if (resources.length > 0) {
+    const cardH = Math.min(0.62, (colH - 0.18 * (resources.length - 1)) / Math.max(resources.length, 1));
+    const gap = 0.16;
+    resources.forEach((res, i) => {
+      const displayName = cleanResourceLabel(res.name) || resourceNameFromFileName(res.fileName);
+      const cy = colTop + i * (cardH + gap);
+      s.addShape("roundRect", {
+        x: leftX, y: cy, w: leftW, h: cardH, rectRadius: 0.08,
+        fill: { color: TC.WHITE || "FFFFFF" },
+        shadow: { type: "outer", blur: 4, offset: 1, color: "000000", opacity: 0.10, angle: 135 },
+      });
+      s.addShape("rect", {
+        x: leftX, y: cy, w: 0.06, h: cardH,
+        fill: { color: badgeColor },
+      });
+      const ICON_D = 0.40;
+      s.addShape("roundRect", {
+        x: leftX + 0.20, y: cy + (cardH - ICON_D) / 2, w: ICON_D, h: ICON_D, rectRadius: ICON_D / 2,
+        fill: { color: TC.CORAL || TC.ALERT || "C94030" },
+      });
+      s.addText("PDF", {
+        x: leftX + 0.20, y: cy + (cardH - ICON_D) / 2, w: ICON_D, h: ICON_D,
+        fontSize: 9, fontFace: FB, color: TC.WHITE || "FFFFFF",
+        align: "center", valign: "middle", bold: true, margin: 0,
+      });
+      s.addText(String(displayName), {
+        x: leftX + 0.70, y: cy + 0.06, w: leftW - 0.85, h: 0.28,
+        fontSize: 13, fontFace: FH, color: TC.NAVY || TC.PRIMARY || "1B3A6B",
+        bold: true, margin: 0,
+        hyperlink: { url: res.fileName, tooltip: "Open " + displayName },
+      });
+      if (res.description) {
+        s.addText(String(res.description), {
+          x: leftX + 0.70, y: cy + 0.34, w: leftW - 0.85, h: cardH - 0.40,
+          fontSize: 10, fontFace: FB, color: TC.MUTED || "6B7280",
+          margin: 0, fit: "shrink", shrinkText: true,
+        });
+      }
+    });
+  }
+
+  if (groups.length > 0) {
+    const groupX = useTwoCols ? rightX : leftX;
+    const groupW = useTwoCols ? rightW : leftW;
+    const totalGroups = groups.length;
+    const groupH = colH / Math.max(totalGroups, 1);
+    groups.forEach((g, i) => {
+      const gy = colTop + i * groupH;
+      s.addText(g.label, {
+        x: groupX, y: gy, w: groupW, h: 0.28,
+        fontSize: 12, fontFace: FB, color: badgeColor,
+        bold: true, margin: 0,
+      });
+      const items = g.items.map((entry) => String(entry == null ? "" : entry).trim()).filter(Boolean);
+      const bodyH = Math.max(0.4, groupH - 0.36);
+      s.addText(items.map((entry, idx) => ({
+        text: entry,
+        options: {
+          bullet: true, breakLine: idx < items.length - 1,
+          fontSize: 11, color: TC.CHARCOAL || "1F2937",
+        },
+      })), {
+        x: groupX + 0.06, y: gy + 0.30, w: groupW - 0.06, h: bodyH,
+        fontFace: FB, valign: "top", margin: 0,
+        fit: "shrink", shrinkText: true,
+      });
+    });
+  }
+
+  if (footer) {
+    s.addText(footer, {
+      x: 0.5, y: 5.3, w: 9, h: 0.2,
+      fontSize: 9, fontFace: FB, color: TC.MUTED || "6B7280", margin: 0,
+    });
+  }
+  if (notes) s.addNotes(notes);
+  return s;
+}
+
 function addResourceSlide(pres, resources, theme, footer, notes) {
+  // Structured §44 config object (manipulatives, board setup, videos, URLs,
+  // OCHRE) routes to the rich slide; a flat array uses the legacy renderer.
+  if (resources && !Array.isArray(resources) && typeof resources === "object") {
+    return addRichResourceSlide(pres, resources, theme, footer, notes);
+  }
+
   const { C: TC, FONT_H: FH, FONT_B: FB } = theme;
   const s = pres.addSlide();
 
@@ -1174,4 +1325,5 @@ module.exports = {
   addLinedArea, addTwoColumnOrganiser, addCycleDiagramPdf, addPosterMockupPdf, addPosterPairPdf,
   // PPTX integration
   addResourceSlide,
+  addRichResourceSlide,
 };

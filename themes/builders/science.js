@@ -129,8 +129,13 @@ function createScienceBuilders(C, FONT_H, FONT_B, el, S) {
   /* ------------------------------------------------------------------ */
 
   /**
-   * Recording observations slide — numbered prompt cards with alternating
+   * Recording observations slide — prompt cards with alternating
    * strip colours.
+   *
+   * Question numbers are OFF by default (megaprompt §15d forbids numbered
+   * Q1/Q2/Q3 on student-facing teaching slides). Pass
+   * `opts.numbered: true` only when the slide is acting as a formal
+   * assessment item.
    *
    * @param {object}   pres       PptxGenJS presentation instance
    * @param {string}   badgeText  Badge label (customisable)
@@ -138,10 +143,12 @@ function createScienceBuilders(C, FONT_H, FONT_B, el, S) {
    * @param {string[]} prompts    Array of observation prompt strings
    * @param {string}   notes      Teacher notes
    * @param {string}   footer     Footer text
+   * @param {object}   [opts]     { numbered }
    * @returns {object}            The slide object
    */
-  function observationSlide(pres, badgeText, title, prompts, notes, footer) {
+  function observationSlide(pres, badgeText, title, prompts, notes, footer, opts) {
     const s = pres.addSlide();
+    const o = opts || {};
     el.addTopBar(s, C.SECONDARY);
     el.addBadge(s, badgeText || "Observe", { color: C.SECONDARY });
     el.addTitle(s, title || "What Did You Observe?");
@@ -153,6 +160,7 @@ function createScienceBuilders(C, FONT_H, FONT_B, el, S) {
     const cardH = Math.min(cardHMax, (availH - gap * (pCount - 1)) / pCount);
     const promptFontSize = sz.body;
     const numFontSize = sz.body + 1;
+    const numbered = Boolean(o.numbered);
 
     prompts.forEach((p, i) => {
       const y = CONTENT_TOP + i * (cardH + gap);
@@ -163,16 +171,24 @@ function createScienceBuilders(C, FONT_H, FONT_B, el, S) {
         fill: C.WHITE,
       });
 
-      // Number prefix + prompt text
-      const numStr = String(i + 1) + ".  ";
-      s.addText([
-        { text: numStr, options: { bold: true, fontSize: numFontSize, color: C.PRIMARY } },
-        { text: p, options: { fontSize: promptFontSize, color: C.CHARCOAL } },
-      ], {
-        x: 0.75, y: y + 0.10, w: 8.5, h: cardH - 0.20,
-        fontFace: FONT_B, valign: "middle", margin: 0,
-        fit: "shrink", shrinkText: true,
-      });
+      if (numbered) {
+        const numStr = String(i + 1) + ".  ";
+        s.addText([
+          { text: numStr, options: { bold: true, fontSize: numFontSize, color: C.PRIMARY } },
+          { text: String(p), options: { fontSize: promptFontSize, color: C.CHARCOAL } },
+        ], {
+          x: 0.75, y: y + 0.10, w: 8.5, h: cardH - 0.20,
+          fontFace: FONT_B, valign: "middle", margin: 0,
+          fit: "shrink", shrinkText: true,
+        });
+      } else {
+        s.addText(String(p), {
+          x: 0.75, y: y + 0.10, w: 8.5, h: cardH - 0.20,
+          fontSize: promptFontSize, fontFace: FONT_B, color: C.CHARCOAL,
+          valign: "middle", margin: 0,
+          fit: "shrink", shrinkText: true,
+        });
+      }
     });
 
     if (footer) el.addFooter(s, footer);

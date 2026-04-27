@@ -24,17 +24,31 @@ function createLiteracyBuilders(C, FONT_H, FONT_B, el, S) {
   /**
    * Vocabulary focus slide — word, part of speech badge, definition, example sentence.
    *
+   * Megaprompt §29 requires "one large word, one meaningful graphic, a
+   * short student-friendly meaning, a quick oral or physical practice
+   * routine". Pass `opts.image` (local file path or data URI) to add the
+   * graphic; without an image the slide falls back to the legacy three-
+   * card text layout for back-compat.
+   *
    * @param {object} pres              PptxGenJS presentation instance
    * @param {string} word              The vocabulary word
-   * @param {string} partOfSpeech      Part of speech label (e.g. "noun") — shown as pill badge
+   * @param {string} partOfSpeech      Part of speech label (e.g. "noun")
    * @param {string} definition        Definition text
    * @param {string} exampleSentence   Example sentence (displayed in quotes)
    * @param {string} notes             Teacher notes
    * @param {string} footer            Footer text
+   * @param {object} [opts]            { image, routine, sourceLink }
+   *   - image: path or data URI to an instructional image
+   *   - routine: short student-facing routine cue (eg. "Say it together. Use it in a sentence.")
+   *   - sourceLink: object { sentence, source } — only set when the source text is supplied
    * @returns {object}                 The slide object
    */
-  function vocabSlide(pres, word, partOfSpeech, definition, exampleSentence, notes, footer) {
+  function vocabSlide(pres, word, partOfSpeech, definition, exampleSentence, notes, footer, opts) {
     const s = pres.addSlide();
+    const o = opts || {};
+    const hasImage = Boolean(o.image);
+    const routine = o.routine ? String(o.routine) : "";
+
     el.addTopBar(s, C.SECONDARY);
     el.addBadge(s, "Vocabulary", { color: C.SECONDARY });
     el.addTitle(s, "Word Study");
@@ -65,35 +79,100 @@ function createLiteracyBuilders(C, FONT_H, FONT_B, el, S) {
       });
     }
 
-    // Definition card
-    const defY = CONTENT_TOP + bannerH + 0.14;
-    const defHdrH = byBand(sz, 0.40, 0.36, 0.32);
-    const defH = byBand(sz, 1.65, 1.55, 1.5);
-    el.addCard(s, 0.5, defY, 9, defH, { strip: C.SECONDARY, fill: C.WHITE });
-    s.addText("Definition", {
-      x: 0.75, y: defY + 0.08, w: 4, h: defHdrH - 0.04,
-      fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.SECONDARY, bold: true, margin: 0,
-    });
-    s.addText(definition, {
-      x: 0.75, y: defY + defHdrH, w: 8.4, h: defH - defHdrH - 0.10,
-      fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, margin: 0,
-      fit: "shrink", shrinkText: true,
-    });
+    if (hasImage) {
+      const colY = CONTENT_TOP + bannerH + 0.14;
+      const colH = SAFE_BOTTOM - colY;
+      const imgW = 4.2;
+      const imgX = 0.5;
+      const textX = imgX + imgW + 0.2;
+      const textW = 9.5 - textX;
 
-    // Example sentence card (uses remaining space)
-    const exY = defY + defH + 0.14;
-    const exH = SAFE_BOTTOM - exY;
-    if (exH > 0.3) {
-      el.addCard(s, 0.5, exY, 9, exH, { strip: C.ACCENT, fill: C.BG_CARD });
-      s.addText("Example", {
-        x: 0.75, y: exY + 0.08, w: 4, h: 0.32,
-        fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.CHARCOAL, bold: true, margin: 0,
+      // Image container card with light border
+      s.addShape("roundRect", {
+        x: imgX, y: colY, w: imgW, h: colH, rectRadius: 0.08,
+        fill: { color: C.BG_CARD },
+        line: { color: C.MUTED, width: 0.6 },
       });
-      s.addText("“" + exampleSentence + "”", {
-        x: 0.75, y: exY + 0.42, w: 8.4, h: exH - 0.54,
-        fontSize: sz.quote, fontFace: FONT_H, color: C.CHARCOAL, italic: true, margin: 0,
+      // PptxGenJS resolves image paths at writeFile time, not addImage time,
+      // so a sync try/catch here would never catch a missing-file error.
+      // Let writeFile fail loudly if the supplied path is bad.
+      s.addImage({
+        path: o.image,
+        x: imgX + 0.08, y: colY + 0.08,
+        w: imgW - 0.16, h: colH - 0.16,
+        sizing: { type: "contain", w: imgW - 0.16, h: colH - 0.16 },
+      });
+
+      // Right column: Definition (top), Example (mid), Routine (bottom)
+      const routineH = routine ? byBand(sz, 0.6, 0.55, 0.46) : 0;
+      const remainingH = colH - routineH - (routine ? 0.10 : 0);
+      const defH = remainingH * 0.50;
+      const exH = remainingH * 0.50 - 0.10;
+      const defHdrH = byBand(sz, 0.36, 0.32, 0.28);
+
+      el.addCard(s, textX, colY, textW, defH, { strip: C.SECONDARY, fill: C.WHITE });
+      s.addText("Definition", {
+        x: textX + 0.18, y: colY + 0.06, w: textW - 0.4, h: defHdrH,
+        fontSize: sz.sectionLabel - 1, fontFace: FONT_B, color: C.SECONDARY, bold: true, margin: 0,
+      });
+      s.addText(String(definition || ""), {
+        x: textX + 0.18, y: colY + defHdrH + 0.04, w: textW - 0.36, h: defH - defHdrH - 0.10,
+        fontSize: sz.body - 2, fontFace: FONT_B, color: C.CHARCOAL, margin: 0,
+        valign: "top", fit: "shrink", shrinkText: true,
+      });
+
+      const exY = colY + defH + 0.10;
+      el.addCard(s, textX, exY, textW, exH, { strip: C.ACCENT, fill: C.BG_CARD });
+      s.addText("Example", {
+        x: textX + 0.18, y: exY + 0.06, w: textW - 0.4, h: defHdrH,
+        fontSize: sz.sectionLabel - 1, fontFace: FONT_B, color: C.CHARCOAL, bold: true, margin: 0,
+      });
+      s.addText("“" + String(exampleSentence || "") + "”", {
+        x: textX + 0.18, y: exY + defHdrH + 0.04, w: textW - 0.36, h: exH - defHdrH - 0.10,
+        fontSize: sz.quote - 2, fontFace: FONT_H, color: C.CHARCOAL, italic: true, margin: 0,
+        valign: "top", fit: "shrink", shrinkText: true,
+      });
+
+      if (routine) {
+        const routineY = exY + exH + 0.10;
+        el.addTextOnShape(s, routine, {
+          x: textX, y: routineY, w: textW, h: routineH, rectRadius: 0.06,
+          fill: { color: C.SECONDARY },
+        }, {
+          fontSize: sz.sectionLabel - 1, fontFace: FONT_B, color: C.WHITE, bold: true,
+          align: "center", valign: "middle", margin: 0.1,
+        });
+      }
+    } else {
+      const defY = CONTENT_TOP + bannerH + 0.14;
+      const defHdrH = byBand(sz, 0.40, 0.36, 0.32);
+      const defH = byBand(sz, 1.65, 1.55, 1.5);
+      el.addCard(s, 0.5, defY, 9, defH, { strip: C.SECONDARY, fill: C.WHITE });
+      s.addText("Definition", {
+        x: 0.75, y: defY + 0.08, w: 4, h: defHdrH - 0.04,
+        fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.SECONDARY, bold: true, margin: 0,
+      });
+      s.addText(definition, {
+        x: 0.75, y: defY + defHdrH, w: 8.4, h: defH - defHdrH - 0.10,
+        fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, margin: 0,
         fit: "shrink", shrinkText: true,
       });
+
+      // Example sentence card (uses remaining space)
+      const exY = defY + defH + 0.14;
+      const exH = SAFE_BOTTOM - exY;
+      if (exH > 0.3) {
+        el.addCard(s, 0.5, exY, 9, exH, { strip: C.ACCENT, fill: C.BG_CARD });
+        s.addText("Example", {
+          x: 0.75, y: exY + 0.08, w: 4, h: 0.32,
+          fontSize: sz.sectionLabel, fontFace: FONT_B, color: C.CHARCOAL, bold: true, margin: 0,
+        });
+        s.addText("“" + exampleSentence + "”", {
+          x: 0.75, y: exY + 0.42, w: 8.4, h: exH - 0.54,
+          fontSize: sz.quote, fontFace: FONT_H, color: C.CHARCOAL, italic: true, margin: 0,
+          fit: "shrink", shrinkText: true,
+        });
+      }
     }
 
     if (footer) el.addFooter(s, footer);

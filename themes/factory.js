@@ -13,6 +13,9 @@ const { withReveal }               = require("./core/withReveal");
 const { createImageHelpers }       = require("./core/images");
 const { warnIfSlideHasOverlaps, warnIfSlideElementsOutOfBounds, runSlideDiagnostics } = require("./core/diagnostics");
 const { getGradeBand, getGradeSizes } = require("./core/gradeBand");
+const { createRoutineHelpers, ROUTINES, ROUTINE_LABELS } = require("./core/routineIcons");
+const { createPlaceholderHelpers } = require("./core/placeholders");
+const { composeNotes } = require("./core/composeNotes");
 
 // ── Builder factories ──
 const { createBaseBuilders }       = require("./builders/base");
@@ -128,6 +131,9 @@ function createTheme(subject, yearLevel, variant) {
   const subjectFactory = SUBJECT_BUILDER_FACTORIES[subjectLower];
   const subjectBuilders = subjectFactory(C, FONT_H, FONT_B, el, S);
 
+  const routine = createRoutineHelpers(C, FONT_B, el);
+  const placeholders = createPlaceholderHelpers(C, FONT_H, FONT_B, el);
+
   // Compose and return
   return {
     // Palette
@@ -176,6 +182,12 @@ function createTheme(subject, yearLevel, variant) {
     // Subject-specific slide builders (may override base if name collides)
     ...subjectBuilders,
 
+    ...routine,
+    ROUTINES,
+    ROUTINE_LABELS,
+    ...placeholders,
+    composeNotes,
+
     // Grade-band sizing (frozen) — exposed so manual/custom slides
     // can use the same age-appropriate sizes as the builders.
     S,
@@ -207,6 +219,9 @@ module.exports = {
   normalizeLessonTargets,
   sanitizeTeacherNotes,
   appendSourcesToNotes,
+  composeNotes,
   getGradeBand,
   getGradeSizes,
+  ROUTINES,
+  ROUTINE_LABELS,
 };

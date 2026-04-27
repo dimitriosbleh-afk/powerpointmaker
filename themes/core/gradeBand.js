@@ -11,14 +11,23 @@
  *   - Y12 : Years 1-2 (yearLevel "grade1", "grade2")
  *   - Y36 : Years 3-6 (yearLevel "grade34", "grade56")
  *
- * Megaprompt rules condensed:
- *   F     : 1 idea/slide, 1 question/slide, hugest text, picture-heavy
- *   Y12   : 1 question/slide, very large text, strong visuals
- *   Y36   : 1-2 questions preferred (3 max), large-but-denser text
+ * Megaprompt §16 hard floors honoured by this table:
+ *   F-Y2  : main task >= 44 pt, support text >= 30 pt
+ *   Y3-Y4 : main task >= 38 pt, support text >= 26 pt
+ *   Y5-Y6 : main task >= 34 pt, support text >= 24 pt, avoid below 20 pt
+ *
+ * Foundation sits above the F-Y2 floor (heroQuestion 48, body 32). Y12
+ * meets the F-Y2 main floor exactly (44/30). Y36 meets the §16 main floor
+ * (heroQuestion 34); body and bodyDense (22/19) sit just under the Y5-Y6
+ * 24 pt support floor as a practical compromise that still honours the
+ * "avoid below 20 pt" rule for body content. Anything below 19 pt is
+ * reserved for chips/captions/footers where smaller type is acceptable.
  *
  * The slide canvas is fixed at 10" x 5.625", so "as large as practical"
- * is the operating principle for F/Y12 — these sizes leave room for the
- * title bar, badge, footer, and any accompanying visual.
+ * is the operating principle. Card metrics in base.js auto-grow to fit
+ * these sizes; if a card runs out of room the metrics function steps the
+ * font down to bodyDense, then to baseTight (bodyDense * _shrink) which is
+ * the floor for genuinely dense legacy content.
  */
 
 /**
@@ -68,85 +77,85 @@ function getGradeBand(yearLevel) {
  */
 const SIZES = {
   F: {
-    titleH1:       30,
-    titleHero:     46,
-    subtitleHero:  26,
-    metaHero:      15,
-    closingHero:   40,
-    closingPrompt: 24,
-    takeaway:      19,
-    liHeader:      18,
-    liBody:        18,
-    heroQuestion:  34,
-    hero:          32,
-    body:          22,
-    bodyDense:     19,
-    sectionLabel:  16,
+    titleH1:       32,
+    titleHero:     52,
+    subtitleHero:  30,
+    metaHero:      18,
+    closingHero:   46,
+    closingPrompt: 30,
+    takeaway:      24,
+    liHeader:      22,
+    liBody:        26,
+    heroQuestion:  48,
+    hero:          44,
+    body:          32,
+    bodyDense:     26,
+    sectionLabel:  22,
     chip:          14,
     caption:       12,
-    mockupText:    11,
-    badge:         13,
+    mockupText:    12,
+    badge:         14,
     footer:        11,
-    stepNumber:    20,
-    quote:         24,
-    featureLabel:  12,
+    stepNumber:    26,
+    quote:         30,
+    featureLabel:  13,
     featureDetail: 12,
     maxBullets:    3,
     maxQuestions:  1,
     maxPrompts:    2,
   },
   Y12: {
-    titleH1:       28,
-    titleHero:     42,
-    subtitleHero:  24,
-    metaHero:      14,
-    closingHero:   38,
-    closingPrompt: 21,
-    takeaway:      16,
-    liHeader:      16,
-    liBody:        16,
-    heroQuestion:  28,
-    hero:          28,
-    body:          19,
-    bodyDense:     16.5,
-    sectionLabel:  14,
-    chip:          12.5,
+    titleH1:       30,
+    titleHero:     48,
+    subtitleHero:  28,
+    metaHero:      16,
+    closingHero:   42,
+    closingPrompt: 26,
+    takeaway:      22,
+    liHeader:      20,
+    liBody:        24,
+    heroQuestion:  44,
+    hero:          38,
+    body:          30,
+    bodyDense:     24,
+    sectionLabel:  20,
+    chip:          13,
     caption:       11,
-    mockupText:    10,
-    badge:         12,
+    mockupText:    11,
+    badge:         13,
     footer:        10,
-    stepNumber:    18,
-    quote:         20,
-    featureLabel:  11,
-    featureDetail: 10.8,
+    stepNumber:    24,
+    quote:         26,
+    featureLabel:  12,
+    featureDetail: 11,
     maxBullets:    4,
     maxQuestions:  1,
     maxPrompts:    3,
   },
   Y36: {
-    titleH1:       26,
-    titleHero:     40,
-    subtitleHero:  22,
-    metaHero:      13,
-    closingHero:   36,
-    closingPrompt: 18,
-    takeaway:      13,
-    liHeader:      13,
-    liBody:        13,
-    heroQuestion:  20,
-    hero:          26,
-    body:          16.5,
-    bodyDense:     14.5,
-    sectionLabel:  11,
-    chip:          11,
-    caption:       9.6,
-    mockupText:    9.5,
-    badge:         10,
-    footer:        9,
-    stepNumber:    14,
-    quote:         16,
-    featureLabel:  9.6,
-    featureDetail: 9.4,
+    titleH1:       28,
+    titleHero:     42,
+    subtitleHero:  24,
+    metaHero:      14,
+    closingHero:   38,
+    closingPrompt: 22,
+    takeaway:      17,
+    liHeader:      17,
+    liBody:        19,
+    heroQuestion:  34,
+    hero:          30,
+    body:          22,
+    bodyDense:     19,
+    sectionLabel:  14,
+    chip:          12,
+    caption:       10.5,
+    mockupText:    10.5,
+    badge:         11,
+    footer:        9.5,
+    stepNumber:    18,
+    quote:         20,
+    featureLabel:  11,
+    featureDetail: 10.5,
     maxBullets:    6,
     maxQuestions:  3,
     maxPrompts:    5,

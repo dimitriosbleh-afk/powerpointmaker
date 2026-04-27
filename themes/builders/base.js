@@ -24,6 +24,8 @@ const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
  * @param {object}   [S]       - grade-band sizing table; falls back to upper-primary defaults if omitted
  * @returns {object} { titleSlide, liSlide, contentSlide, cfuSlide, closingSlide, annotatedModelSlide, compareVisualSlide }
  */
+const SC_TIER_LABELS = ["Everyone", "Most", "Stretch"];
+
 function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
   const sz = S || DEFAULT_SIZES;
 
@@ -625,6 +627,79 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
   }
 
   /**
+   * addRevealAnswerBar - Large answer overlay sized for back-of-room
+   * visibility. Used inside withReveal()'s revealFn for Daily Review,
+   * Fluency, We Do, and CFU answer reveals (megaprompt §22 / §23).
+   *
+   * Renders a coloured bar at the supplied y-position with the answer
+   * text large and bold. Optionally adds a small "Tick & fix" cue so the
+   * routine is visible to students.
+   *
+   * @param {object}        slide    PptxGenJS slide object
+   * @param {string|string[]} answers  One answer or array of answers (joined)
+   * @param {object}        [opts]   { x, y, w, h, color, textColor, label, showTickAndFix, fontSize }
+   */
+  function addRevealAnswerBar(slide, answers, opts) {
+    const o = opts || {};
+    const list = Array.isArray(answers) ? answers : [answers];
+    const cleaned = list
+      .map((entry) => String(entry == null ? "" : entry).trim())
+      .filter(Boolean);
+    const text = cleaned.join("    ");
+
+    const x = o.x != null ? o.x : 0.5;
+    const w = o.w != null ? o.w : 9;
+    const h = o.h != null ? o.h : byBand(sz, 1.05, 0.95, 0.8);
+    const y = o.y != null ? o.y : (SAFE_BOTTOM - h);
+    const fillColor = o.color || C.SUCCESS || C.ACCENT;
+    const textColor = o.textColor || C.WHITE;
+    const label = o.label != null ? o.label : "Answer";
+    const showTick = o.showTickAndFix !== false;
+    const fontSize = o.fontSize || byBand(sz, 36, 30, 24);
+
+    slide.addShape("roundRect", {
+      x, y, w, h, rectRadius: 0.1,
+      fill: { color: fillColor },
+    });
+
+    if (label) {
+      const tagW = byBand(sz, 1.6, 1.4, 1.2);
+      const tagH = byBand(sz, 0.42, 0.38, 0.32);
+      el.addTextOnShape(slide, String(label), {
+        x: x + 0.18, y: y + 0.16, w: tagW, h: tagH, rectRadius: 0.06,
+        fill: { color: C.WHITE },
+      }, {
+        fontSize: byBand(sz, 16, 14, 12),
+        fontFace: FONT_B, color: fillColor,
+        bold: true, align: "center", valign: "middle", margin: 0,
+      });
+    }
+
+    const labelOffset = label ? byBand(sz, 1.85, 1.65, 1.45) : 0.2;
+    slide.addText(String(text), {
+      x: x + labelOffset, y: y + 0.12,
+      w: w - labelOffset - 0.18,
+      h: h - 0.24,
+      fontSize, fontFace: FONT_H,
+      color: textColor, bold: true,
+      align: "left", valign: "middle", margin: 0,
+      fit: "shrink", shrinkText: true,
+    });
+
+    if (showTick) {
+      const cueY = y + h - byBand(sz, 0.32, 0.28, 0.24);
+      const cueW = byBand(sz, 1.8, 1.6, 1.4);
+      slide.addText("Tick & fix", {
+        x: x + w - cueW - 0.18, y: cueY,
+        w: cueW, h: byBand(sz, 0.24, 0.22, 0.20),
+        fontSize: byBand(sz, 12, 11, 10),
+        fontFace: FONT_B, color: textColor, italic: true,
+        align: "right", valign: "middle", margin: 0,
+      });
+    }
+  }
+
+  /**
    * titleSlide - Dark full-bleed title for lesson start.
    */
   function titleSlide(pres, title, subtitle, meta, notes) {
@@ -676,9 +751,23 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
 
   /**
    * liSlide - Learning Intention + Success Criteria.
+   *
+   * Renders SC1/SC2/SC3 with the megaprompt §14 progression visible at a
+   * glance: SC1 is the foundation (everyone with support), SC2 is the
+   * core target (most students; exit-ticket aligned), SC3 is depth/stretch.
+   * Each row gets a small chip prefix and a colour-graded strip. Pass
+   * `opts.tieredSc: false` to fall back to a plain bulleted list.
+   *
+   * @param {object}            pres
+   * @param {string|string[]}   liItems
+   * @param {string[]}          scItems
+   * @param {string}            notes
+   * @param {string}            footer
+   * @param {object}            [opts]   { tieredSc, scLabels, scColors }
    */
-  function liSlide(pres, liItems, scItems, notes, footer) {
+  function liSlide(pres, liItems, scItems, notes, footer, opts) {
     const s = pres.addSlide();
+    const o = opts || {};
     el.addTopBar(s, C.PRIMARY);
     el.addBadge(s, "Learning Intention");
     el.addTitle(s, "Learning Intention & Success Criteria");
@@ -690,13 +779,21 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
     liItems = normalizedTargets.liItems;
     scItems = normalizedTargets.scItems;
 
+    const tiered = o.tieredSc !== false;
+    const scLabels = Array.isArray(o.scLabels) && o.scLabels.length === 3
+      ? o.scLabels
+      : SC_TIER_LABELS;
+    const scColors = Array.isArray(o.scColors) && o.scColors.length === 3
+      ? o.scColors
+      : [C.SUCCESS || C.SECONDARY, C.PRIMARY, C.ACCENT];
+
     const GAP      = 0.16;
     const LI_HDR_H = byBand(sz, 0.54, 0.50, 0.44);
     const SC_HDR_H = byBand(sz, 0.50, 0.46, 0.40);
     const PAD      = 0.14;
     const totalItems = liItems.length + scItems.length;
     const available  = SAFE_BOTTOM - CONTENT_TOP - GAP - LI_HDR_H - SC_HDR_H - PAD * 2;
-    const perItemMax = byBand(sz, 0.50, 0.42, 0.32);
+    const perItemMax = byBand(sz, 0.62, 0.54, 0.42);
     const perItem    = Math.min(perItemMax, available / Math.max(totalItems, 1));
     const dense      = totalItems > 8;
     const fontSize   = dense ? Math.max(sz.liBody * sz._shrink, 10) : sz.liBody;
@@ -724,18 +821,62 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
       x: 0.75, y: scY + 0.08, w: 5, h: SC_HDR_H - 0.10,
       fontSize: sz.liHeader, fontFace: FONT_B, color: C.CHARCOAL, bold: true, margin: 0,
     });
-    s.addText(scItems.map((t, i) => ({
-      text: t,
-      options: { bullet: true, breakLine: i < scItems.length - 1, fontSize, color: C.CHARCOAL },
-    })), {
-      x: 0.75, y: scY + SC_HDR_H, w: 8.5, h: scBodyH,
-      fontFace: FONT_B, margin: 0,
-      fit: "shrink", shrinkText: true,
-    });
+
+    if (tiered) {
+      const rowGap = byBand(sz, 0.10, 0.08, 0.06);
+      const rowH = Math.max(0.34, (scBodyH - rowGap * Math.max(scItems.length - 1, 0)) / Math.max(scItems.length, 1));
+      const chipW = byBand(sz, 1.45, 1.30, 1.10);
+      const chipH = Math.min(rowH - 0.04, byBand(sz, 0.48, 0.42, 0.32));
+      const chipFontSize = byBand(sz, 14, 12, 10);
+      scItems.forEach((text, i) => {
+        const rowY = scY + SC_HDR_H + i * (rowH + rowGap);
+        const chipColor = scColors[i] || C.PRIMARY;
+        const chipLabel = scLabels[i] || "";
+        // Chip
+        slideAddChipRow(s, {
+          x: 0.75, y: rowY,
+          chipW, chipH, chipColor, chipLabel,
+          chipFontSize,
+          textX: 0.75 + chipW + 0.18,
+          textY: rowY,
+          textW: 8.5 - chipW - 0.18,
+          textH: rowH,
+          text,
+          fontSize,
+        });
+      });
+    } else {
+      s.addText(scItems.map((t, i) => ({
+        text: t,
+        options: { bullet: true, breakLine: i < scItems.length - 1, fontSize, color: C.CHARCOAL },
+      })), {
+        x: 0.75, y: scY + SC_HDR_H, w: 8.5, h: scBodyH,
+        fontFace: FONT_B, margin: 0,
+        fit: "shrink", shrinkText: true,
+      });
+    }
 
     if (footer) el.addFooter(s, footer);
     if (notes) s.addNotes(notes);
     return s;
+  }
+
+  function slideAddChipRow(slide, p) {
+    const chipY = p.y + (p.textH - p.chipH) / 2;
+    el.addTextOnShape(slide, String(p.chipLabel || ""), {
+      x: p.x, y: chipY, w: p.chipW, h: p.chipH, rectRadius: 0.06,
+      fill: { color: p.chipColor },
+    }, {
+      fontSize: p.chipFontSize, fontFace: FONT_B, color: C.WHITE,
+      bold: true, align: "center", valign: "middle", margin: 0,
+    });
+    slide.addText(String(p.text || ""), {
+      x: p.textX, y: p.textY,
+      w: p.textW, h: p.textH,
+      fontSize: p.fontSize, fontFace: FONT_B, color: C.CHARCOAL,
+      valign: "middle", margin: 0,
+      fit: "shrink", shrinkText: true,
+    });
   }
 
   /**
@@ -796,12 +937,52 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
 
   /**
    * cfuSlide - Check for Understanding slide.
+   *
+   * Two call shapes are supported:
+   *
+   *   Legacy positional: cfuSlide(pres, badgeText, title, technique, questionText, notes, footer)
+   *   Structured config: cfuSlide(pres, badgeText, title, { technique, question, ... }, notes, footer)
+   *
+   * The structured form lets callers pass the full §38 CFU pivot object
+   * (technique, question, script, scanFor, proceed, pivot) to a single
+   * place. This builder uses .technique and .question for the slide face;
+   * the remaining fields are intended to be fed to composeNotes() by the
+   * build script.
+   *
+   * A "CHECK" wordmark renders top-right beside the title so the slide's
+   * intent is signalled by label as well as by colour (megaprompt §18a:
+   * "Do not rely on colour alone").
    */
-  function cfuSlide(pres, badgeText, title, technique, questionText, notes, footer) {
+  function cfuSlide(pres, badgeText, title, cfuOrTechnique, questionTextOrNotes, notesOrFooter, footerOrUndef) {
+    let technique, questionText, notes, footer;
+    if (cfuOrTechnique && typeof cfuOrTechnique === "object") {
+      technique = cfuOrTechnique.technique;
+      questionText = cfuOrTechnique.question != null ? cfuOrTechnique.question : cfuOrTechnique.questionText;
+      notes = questionTextOrNotes;
+      footer = notesOrFooter;
+    } else {
+      technique = cfuOrTechnique;
+      questionText = questionTextOrNotes;
+      notes = notesOrFooter;
+      footer = footerOrUndef;
+    }
+
     const s = pres.addSlide();
     el.addTopBar(s, C.ALERT);
-    el.addBadge(s, "CFU", { color: C.ALERT });
+    el.addBadge(s, badgeText || "CFU", { color: C.ALERT });
     el.addTitle(s, title || "Check for Understanding", { color: C.ALERT });
+
+    // CHECK wordmark (top-right) — §18a accessible signal beyond colour.
+    const stampH = byBand(sz, 0.42, 0.38, 0.32);
+    const stampW = byBand(sz, 1.7, 1.5, 1.3);
+    el.addTextOnShape(s, "✓  CHECK", {
+      x: 9.5 - stampW, y: 0.20, w: stampW, h: stampH, rectRadius: 0.08,
+      fill: { color: C.WHITE },
+      line: { color: C.ALERT, width: 1.5 },
+    }, {
+      fontSize: byBand(sz, 14, 13, 11), fontFace: FONT_B, color: C.ALERT,
+      bold: true, align: "center", valign: "middle", margin: 0,
+    });
 
     const pillH = byBand(sz, 0.50, 0.46, 0.40);
     const pillW = byBand(sz, 3.4, 3.1, 2.8);
@@ -833,8 +1014,41 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
 
   /**
    * closingSlide - Dark reflection/review slide for lesson close.
+   *
+   * Two call shapes:
+   *
+   *   Legacy positional: closingSlide(pres, reflectionPrompt, takeaways, notes)
+   *   Structured config: closingSlide(pres, { reflectionPrompt, scItems, selfAssessment, takeaways }, notes)
+   *
+   * Megaprompt §52 requires the closing slide to (a) show the three success
+   * criteria, (b) include a self-assessment routine, (c) include a short
+   * reflection prompt, and (d) acknowledge progress. The structured form
+   * delivers all four. The legacy form keeps existing builds rendering
+   * unchanged.
+   *
+   * `selfAssessment` accepts a string ("Thumbs up / sideways / down") or
+   * an object { prompt, options: [..] } for richer routines (traffic light
+   * etc.). When omitted, no self-assessment row renders (legacy path).
    */
-  function closingSlide(pres, reflectionPrompt, takeaways, notes) {
+  function closingSlide(pres, configOrPrompt, takeawaysOrNotes, notesOrUndef) {
+    let reflectionPrompt = "";
+    let takeaways = null;
+    let scItems = null;
+    let selfAssessment = null;
+    let notes = "";
+
+    if (configOrPrompt && typeof configOrPrompt === "object" && !Array.isArray(configOrPrompt)) {
+      reflectionPrompt = configOrPrompt.reflectionPrompt || "";
+      takeaways = configOrPrompt.takeaways || null;
+      scItems = Array.isArray(configOrPrompt.scItems) ? configOrPrompt.scItems.slice(0, 3) : null;
+      selfAssessment = configOrPrompt.selfAssessment || null;
+      notes = takeawaysOrNotes || "";
+    } else {
+      reflectionPrompt = configOrPrompt || "";
+      takeaways = takeawaysOrNotes;
+      notes = notesOrUndef || "";
+    }
+
     const s = pres.addSlide();
     s.background = { color: C.BG_DARK };
 
@@ -856,32 +1070,132 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
       fontSize: sz.closingHero, fontFace: FONT_H, color: C.WHITE, bold: true, margin: 0,
       fit: "shrink", shrinkText: true,
     });
-    s.addText("Turn & Talk", {
-      x: 0.7, y: 1.45, w: 3.0, h: 0.42,
-      fontSize: sz.sectionLabel + 2, fontFace: FONT_B, color: accentOnDark, bold: true, margin: 0,
-    });
-    s.addText(reflectionPrompt, {
-      x: 0.7, y: 1.96, w: 8.5, h: 1.2,
-      fontSize: sz.closingPrompt, fontFace: FONT_B, color: subtitleOnDark, italic: true, margin: 0,
-      fit: "shrink", shrinkText: true,
-    });
+
+    let cursorY = 1.40;
+    if (scItems && scItems.length) {
+      s.addText("Show what you can do", {
+        x: 0.7, y: cursorY, w: 8.0, h: 0.36,
+        fontSize: sz.sectionLabel + 2, fontFace: FONT_B, color: accentOnDark, bold: true, margin: 0,
+      });
+      cursorY += 0.42;
+
+      // Closing slide is dark — pick three distinct saturated accents that
+      // contrast with BG_DARK (which is usually PRIMARY).
+      const scColors = [
+        C.SUCCESS || C.SECONDARY,
+        C.ACCENT,
+        C.ALERT || C.SECONDARY,
+      ];
+      const rowH = byBand(sz, 0.46, 0.42, 0.34);
+      const chipW = byBand(sz, 1.45, 1.30, 1.10);
+      const chipH = Math.min(rowH - 0.04, byBand(sz, 0.40, 0.36, 0.28));
+      const chipFontSize = byBand(sz, 13, 12, 10);
+      const rowFontSize = sz.takeaway;
+
+      scItems.forEach((text, i) => {
+        const rowY = cursorY + i * (rowH + 0.06);
+        slideAddChipRow(s, {
+          x: 0.7, y: rowY,
+          chipW, chipH, chipColor: scColors[i] || C.PRIMARY,
+          chipLabel: SC_TIER_LABELS[i],
+          chipFontSize,
+          textX: 0.7 + chipW + 0.18,
+          textY: rowY,
+          textW: 9.0 - 0.7 - chipW - 0.18 - 0.2,
+          textH: rowH,
+          text,
+          fontSize: rowFontSize,
+        });
+      });
+
+      cursorY += scItems.length * (rowH + 0.06) + 0.08;
+    } else {
+      // Legacy "Turn & Talk" header preserved for back-compat decks.
+      s.addText("Turn & Talk", {
+        x: 0.7, y: 1.45, w: 3.0, h: 0.42,
+        fontSize: sz.sectionLabel + 2, fontFace: FONT_B, color: accentOnDark, bold: true, margin: 0,
+      });
+      cursorY = 1.96;
+    }
+
+    if (reflectionPrompt) {
+      const promptH = scItems ? 0.7 : 1.2;
+      s.addText(reflectionPrompt, {
+        x: 0.7, y: cursorY, w: 8.5, h: promptH,
+        fontSize: sz.closingPrompt, fontFace: FONT_B, color: subtitleOnDark, italic: true, margin: 0,
+        fit: "shrink", shrinkText: true,
+      });
+      cursorY += promptH + 0.08;
+    }
+
+    if (selfAssessment) {
+      const selfPromptText = typeof selfAssessment === "string"
+        ? selfAssessment
+        : (selfAssessment.prompt || "Self-assess: thumbs up, sideways, or down.");
+      const optionList = (selfAssessment && Array.isArray(selfAssessment.options) && selfAssessment.options.length)
+        ? selfAssessment.options
+        : ["Got it", "Getting there", "Need more practice"];
+      const rowH = byBand(sz, 0.5, 0.46, 0.38);
+      if (cursorY + rowH <= SAFE_BOTTOM) {
+        const tagW = byBand(sz, 1.7, 1.55, 1.35);
+        el.addTextOnShape(s, "Self-check", {
+          x: 0.7, y: cursorY, w: tagW, h: rowH, rectRadius: 0.08,
+          fill: { color: C.ACCENT },
+        }, {
+          fontSize: byBand(sz, 14, 13, 11), fontFace: FONT_B, color: C.WHITE,
+          bold: true, align: "center", valign: "middle", margin: 0,
+        });
+        const optionsX = 0.7 + tagW + 0.18;
+        const optionsW = 9.0 - optionsX - 0.2;
+        const optionGap = 0.18;
+        const perOptW = Math.max(1.4, (optionsW - optionGap * (optionList.length - 1)) / optionList.length);
+        // Option pills use a transparent fill so the dark BG shows through;
+        // addTextOnShape's contrast check would false-warn on the unblended
+        // FFFFFF fill, so use raw addShape + addText here.
+        optionList.slice(0, 4).forEach((opt, i) => {
+          const ox = optionsX + i * (perOptW + optionGap);
+          s.addShape("roundRect", {
+            x: ox, y: cursorY, w: perOptW, h: rowH, rectRadius: 0.08,
+            fill: { color: C.WHITE, transparency: 80 },
+            line: { color: accentOnDark, width: 0.6 },
+          });
+          s.addText(String(opt), {
+            x: ox, y: cursorY, w: perOptW, h: rowH,
+            fontSize: byBand(sz, 13, 12, 10), fontFace: FONT_B, color: C.TEXT_ON_DARK,
+            bold: true, align: "center", valign: "middle", margin: 0,
+            fit: "shrink", shrinkText: true,
+          });
+        });
+        if (selfPromptText && cursorY + rowH + 0.30 <= SAFE_BOTTOM && !scItems) {
+          s.addText(String(selfPromptText), {
+            x: 0.7, y: cursorY + rowH + 0.04, w: 8.5, h: 0.26,
+            fontSize: byBand(sz, 13, 12, 10), fontFace: FONT_B, color: subtitleOnDark, italic: true, margin: 0,
+          });
+        }
+        cursorY += rowH + 0.10;
+      }
+    }
 
     if (takeaways && takeaways.length) {
       const rowPitch = byBand(sz, 0.44, 0.40, 0.34);
-      const takeawayY0 = sz._band === "F" ? 3.30 : 3.20;
-      s.addText("Key Takeaways", {
-        x: 0.7, y: takeawayY0, w: 5, h: 0.42,
-        fontSize: sz.sectionLabel + 2, fontFace: FONT_B, color: accentOnDark, bold: true, margin: 0,
-      });
-      takeaways.forEach((t, i) => {
-        const y = takeawayY0 + 0.50 + i * rowPitch;
-        if (y + (rowPitch - 0.06) > SAFE_BOTTOM) return;
-        s.addText("•  " + t, {
-          x: 0.9, y, w: 8.0, h: rowPitch - 0.06,
-          fontSize: sz.takeaway, fontFace: FONT_B, color: C.TEXT_ON_DARK, margin: 0,
-          fit: "shrink", shrinkText: true,
+      const takeawayY0 = scItems
+        ? cursorY
+        : (sz._band === "F" ? 3.30 : 3.20);
+      if (takeawayY0 + 0.42 <= SAFE_BOTTOM) {
+        s.addText("Key Takeaways", {
+          x: 0.7, y: takeawayY0, w: 5, h: 0.36,
+          fontSize: sz.sectionLabel + 2, fontFace: FONT_B, color: accentOnDark, bold: true, margin: 0,
         });
-      });
+        takeaways.forEach((t, i) => {
+          const y = takeawayY0 + 0.42 + i * rowPitch;
+          if (y + (rowPitch - 0.06) > SAFE_BOTTOM) return;
+          s.addText("•  " + t, {
+            x: 0.9, y, w: 8.0, h: rowPitch - 0.06,
+            fontSize: sz.takeaway, fontFace: FONT_B, color: C.TEXT_ON_DARK, margin: 0,
+            fit: "shrink", shrinkText: true,
+          });
+        });
+      }
     }
 
     if (notes) s.addNotes(notes);
@@ -1099,7 +1413,176 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
     return s;
   }
 
-  return { titleSlide, liSlide, contentSlide, cfuSlide, closingSlide, annotatedModelSlide, compareVisualSlide };
+  /**
+   * boardBuildSlide - megaprompt §19 "Build this together" canvas.
+   *
+   * A short title, an optional visual prompt, and a deliberately blank
+   * (or partially blank) build space the teacher fills in live with the
+   * class. Use for: number lines, area models, anchor charts, vocabulary
+   * webs, sentence construction, sorting examples, misconception fixes.
+   *
+   * Teacher notes carry the script for what to write/draw. The slide
+   * face deliberately stays sparse so attention stays on the live build.
+   *
+   * @param {object}   pres
+   * @param {string}   badgeText      Defaults to "Build Together"
+   * @param {string}   title          Slide title (eg. "Build the number line")
+   * @param {string}   directive      Short student-facing direction (eg. "Build this together")
+   * @param {string}   notes          Teacher notes
+   * @param {string}   footer         Footer text
+   * @param {object}   [opts]         { promptText, prefilledHints, badgeColor, canvasFill }
+   *
+   * opts.prefilledHints (string[]) — small grey markers placed inside the
+   * canvas so the build has a starting point without giving away the
+   * answer (eg. ["0", "?", "10"]).
+   */
+  function boardBuildSlide(pres, badgeText, title, directive, notes, footer, opts) {
+    const s = pres.addSlide();
+    const o = opts || {};
+    const stripColor = o.badgeColor || C.SECONDARY;
+    el.addTopBar(s, stripColor);
+    el.addBadge(s, badgeText || "Build Together", { color: stripColor, w: byBand(sz, 2.6, 2.4, 2.2) });
+    el.addTitle(s, title);
+
+    const directiveH = byBand(sz, 0.74, 0.66, 0.56);
+    const directiveY = CONTENT_TOP;
+    el.addTextOnShape(s, String(directive || "Build this together"), {
+      x: 0.5, y: directiveY, w: 9, h: directiveH, rectRadius: 0.08,
+      fill: { color: stripColor },
+    }, {
+      fontSize: byBand(sz, 26, 22, 18),
+      fontFace: FONT_H, color: C.WHITE, bold: true,
+      align: "left", valign: "middle", margin: 0.16,
+    });
+
+    const canvasY = directiveY + directiveH + 0.16;
+    const canvasH = SAFE_BOTTOM - canvasY;
+    s.addShape("roundRect", {
+      x: 0.5, y: canvasY, w: 9, h: canvasH, rectRadius: 0.08,
+      fill: { color: o.canvasFill || C.WHITE },
+      line: { color: C.MUTED, width: 1.2, dashType: "dash" },
+    });
+
+    // Optional prompt (small) inside the canvas top-left.
+    if (o.promptText) {
+      s.addText(String(o.promptText), {
+        x: 0.7, y: canvasY + 0.16, w: 8.6, h: 0.36,
+        fontSize: byBand(sz, 16, 14, 12),
+        fontFace: FONT_B, color: C.MUTED, italic: true,
+        align: "left", valign: "top", margin: 0,
+      });
+    }
+
+    // Optional pre-filled hints — small grey anchors.
+    const hints = Array.isArray(o.prefilledHints) ? o.prefilledHints : [];
+    if (hints.length) {
+      const hintsY = canvasY + canvasH - byBand(sz, 0.7, 0.6, 0.5);
+      const hintW = 9 / Math.max(hints.length, 1);
+      hints.forEach((hint, i) => {
+        const hx = 0.5 + i * hintW + hintW / 2 - 0.4;
+        s.addText(String(hint), {
+          x: hx, y: hintsY, w: 0.8, h: byBand(sz, 0.5, 0.45, 0.36),
+          fontSize: byBand(sz, 22, 19, 16),
+          fontFace: FONT_H, color: C.MUTED, bold: true,
+          align: "center", valign: "middle", margin: 0,
+        });
+      });
+    }
+
+    if (footer) el.addFooter(s, footer);
+    if (notes) s.addNotes(notes);
+    return s;
+  }
+
+  /**
+   * exitTicketSlide (universal) - megaprompt §53 evidence-of-learning slide.
+   *
+   * Renders 1-3 prompt cards aligned to a Success Criterion (typically SC2).
+   * Question numbering is OFF by default — exit tickets are formal
+   * assessment items per §15d, so callers may opt into numbering with
+   * `opts.numbered: true` when collecting handed-in tickets requires it.
+   *
+   * @param {object}   pres
+   * @param {string|string[]} prompts  one or more exit-ticket prompts
+   * @param {string}   notes
+   * @param {string}   footer
+   * @param {object}   [opts]   { numbered, assessesSc, badgeColor, title }
+   */
+  function exitTicketSlide(pres, prompts, notes, footer, opts) {
+    const s = pres.addSlide();
+    const o = opts || {};
+    const promptList = Array.isArray(prompts) ? prompts : [prompts];
+    const cleaned = promptList
+      .map((p) => String(p == null ? "" : p).trim())
+      .filter(Boolean)
+      .slice(0, sz.maxQuestions || 3);
+
+    const stripColor = o.badgeColor || C.ASSESS || C.ALERT;
+
+    s.background = { color: C.BG_CARD };
+    s.addShape("rect", { x: 0, y: 0, w: 10, h: 0.06, fill: { color: stripColor } });
+
+    const badgeH = byBand(sz, 0.42, 0.40, 0.36);
+    const badgeW = byBand(sz, 2.1, 1.95, 1.8);
+    el.addBadge(s, "Exit Ticket", { color: stripColor, x: 0.5, y: 0.2, w: badgeW, h: badgeH });
+
+    if (o.assessesSc) {
+      const scTagW = byBand(sz, 1.6, 1.5, 1.3);
+      el.addTextOnShape(s, `Assesses SC${o.assessesSc}`, {
+        x: 0.5 + badgeW + 0.16, y: 0.2, w: scTagW, h: badgeH, rectRadius: 0.08,
+        fill: { color: C.WHITE },
+        line: { color: stripColor, width: 1.2 },
+      }, {
+        fontSize: byBand(sz, 12, 11, 10),
+        fontFace: FONT_B, color: stripColor,
+        align: "center", valign: "middle", bold: true, margin: 0,
+      });
+    }
+
+    const titleY = byBand(sz, 0.72, 0.68, 0.65);
+    const titleH = byBand(sz, 0.74, 0.68, 0.62);
+    s.addText(o.title || "Show what you know", {
+      x: 0.5, y: titleY, w: 9, h: titleH,
+      fontSize: sz.titleH1 - 2, fontFace: FONT_H, color: stripColor, bold: true, margin: 0,
+      fit: "shrink", shrinkText: true,
+    });
+
+    const startY = titleY + titleH + 0.18;
+    if (cleaned.length === 0) return s;
+    const perH = Math.min(
+      byBand(sz, 2.1, 1.5, 1.2),
+      (SAFE_BOTTOM - startY) / Math.max(cleaned.length, 1) - 0.12,
+    );
+    const numbered = Boolean(o.numbered);
+
+    cleaned.forEach((q, i) => {
+      const qY = startY + i * (perH + 0.12);
+      el.addCard(s, 0.5, qY, 9, perH, { strip: stripColor });
+      const display = numbered ? `${i + 1}.  ${q}` : q;
+      s.addText(display, {
+        x: 0.75, y: qY + 0.08, w: 8.5, h: perH - 0.16,
+        fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, margin: 0, valign: "middle",
+        fit: "shrink", shrinkText: true,
+      });
+    });
+
+    if (footer) el.addFooter(s, footer);
+    if (notes) s.addNotes(notes);
+    return s;
+  }
+
+  return {
+    titleSlide,
+    liSlide,
+    contentSlide,
+    cfuSlide,
+    closingSlide,
+    annotatedModelSlide,
+    compareVisualSlide,
+    boardBuildSlide,
+    exitTicketSlide,
+    addRevealAnswerBar,
+  };
 }
 
 module.exports = { createBaseBuilders };

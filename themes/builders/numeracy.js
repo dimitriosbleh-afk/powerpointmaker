@@ -3,6 +3,7 @@
 const { SAFE_BOTTOM, CONTENT_TOP, SLIDE_W, validateBounds } = require("../core/layout");
 const { runSlideDiagnostics } = require("../core/diagnostics");
 const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
+const { createManipulatives } = require("../core/manipulatives");
 
 /**
  * Factory that returns numeracy-specific slide builders and maths visual
@@ -16,6 +17,7 @@ const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
  */
 function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
   const sz = S || DEFAULT_SIZES;
+  const manipulatives = createManipulatives(C, FONT_B);
 
   /* ------------------------------------------------------------------ */
   /*  STAGE_COLORS                                                       */
@@ -138,14 +140,20 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
   /**
    * Assessment / exit ticket slide with question cards on a light background.
    *
+   * Question numbers are OFF by default to honour megaprompt §15d. Pass
+   * `opts.numbered: true` to enable numeric prefixes when the exit ticket
+   * is being printed and collected as a formal assessment record.
+   *
    * @param {object}   pres       PptxGenJS presentation instance
    * @param {string[]} questions  Array of question strings
    * @param {string}   notes      Teacher notes
    * @param {string}   footer     Footer text
+   * @param {object}   [opts]     { numbered, assessesSc, title }
    * @returns {object}            The slide object
    */
-  function exitTicketSlide(pres, questions, notes, footer) {
+  function exitTicketSlide(pres, questions, notes, footer, opts) {
     const s = pres.addSlide();
+    const o = opts || {};
     const assessColor = C.ASSESS || C.ALERT;
 
     s.background = { color: C.BG_CARD };
@@ -169,7 +177,7 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
     // Title
     const titleY = byBand(sz, 0.72, 0.68, 0.65);
     const titleH = byBand(sz, 0.74, 0.68, 0.62);
-    s.addText("Stage 5  |  Show What You Know", {
+    s.addText(o.title || "Stage 5  |  Show What You Know", {
       x: 0.5, y: titleY, w: 9, h: titleH,
       fontSize: sz.titleH1 - 2, fontFace: FONT_H, color: assessColor, bold: true, margin: 0,
       fit: "shrink", shrinkText: true,
@@ -183,10 +191,12 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
       byBand(sz, 2.1, 1.5, 1.2),
       (SAFE_BOTTOM - startY) / Math.max(cappedQs.length, 1) - 0.12,
     );
+    const numbered = Boolean(o.numbered);
     cappedQs.forEach((q, i) => {
       const qY = startY + i * (perH + 0.12);
       el.addCard(s, 0.5, qY, 9, perH, { strip: assessColor });
-      s.addText((i + 1) + ".  " + q, {
+      const display = numbered ? `${i + 1}.  ${q}` : String(q);
+      s.addText(display, {
         x: 0.75, y: qY + 0.08, w: 8.5, h: perH - 0.16,
         fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, margin: 0, valign: "middle",
         fit: "shrink", shrinkText: true,
@@ -482,6 +492,132 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
   }
 
   /* ------------------------------------------------------------------ */
+  /*  dailyReviewSlide                                                    */
+  /* ------------------------------------------------------------------ */
+
+  /**
+   * Daily Review slide. Reviews PRIOR learning only — must not teach
+   * today's new content. Honour the user-provided Daily Review focus
+   * exactly. Use 1-3 prompts (capped by band). No question numbers.
+   *
+   * Pair with withReveal() + addRevealAnswerBar() for the answer-reveal
+   * slide that follows.
+   *
+   * @param {object}            pres
+   * @param {string}            title       eg. "Daily Review: Coordinates & area"
+   * @param {string|string[]}   prompts     1-3 prompts (capped by band)
+   * @param {string}            notes
+   * @param {string}            footer
+   * @param {Function}          [drawRight] Optional callback(slide, layoutGuide) for a right-column representation (grid, table, number line, etc.)
+   * @returns {object}                       The slide object
+   */
+  function dailyReviewSlide(pres, title, prompts, notes, footer, drawRight) {
+    const s = pres.addSlide();
+    el.addTopBar(s, C.ACCENT);
+    addStageBadge(s, 1, "Daily Review");
+    el.addTitle(s, title || "Daily Review", { color: C.ACCENT });
+
+    const list = Array.isArray(prompts) ? prompts : [prompts];
+    const cleaned = list
+      .map((p) => String(p == null ? "" : p).trim())
+      .filter(Boolean)
+      .slice(0, sz.maxQuestions || 3);
+
+    const startY = CONTENT_TOP;
+    const cardsAvailH = SAFE_BOTTOM - startY - byBand(sz, 1.1, 1.0, 0.9);
+    const promptCount = Math.max(cleaned.length, 1);
+    const cardW = drawRight ? 4.5 : 9;
+    const cardH = Math.max(0.6, (cardsAvailH - 0.10 * (promptCount - 1)) / promptCount);
+    const fontSize = byBand(sz, 28, 24, 20);
+
+    cleaned.forEach((q, i) => {
+      const y = startY + i * (cardH + 0.10);
+      el.addCard(s, 0.5, y, cardW, cardH, { strip: C.ACCENT, fill: C.WHITE });
+      s.addText(String(q), {
+        x: 0.7, y: y + 0.08, w: cardW - 0.4, h: cardH - 0.16,
+        fontSize, fontFace: FONT_H, color: C.CHARCOAL,
+        bold: true, valign: "middle", margin: 0,
+        fit: "shrink", shrinkText: true,
+      });
+    });
+
+    if (drawRight) {
+      const layoutGuide = {
+        leftCardX: 0.5, leftCardY: startY,
+        leftCardW: cardW, leftCardH: cardsAvailH,
+        rightX: 5.2, rightW: 4.3,
+        panelTop: startY, panelTopPadded: startY + 0.08,
+        safeBottom: SAFE_BOTTOM,
+      };
+      drawRight(s, layoutGuide);
+    }
+
+    if (footer) el.addFooter(s, footer);
+    if (notes) s.addNotes(notes);
+    return s;
+  }
+
+  /* ------------------------------------------------------------------ */
+  /*  fluencySlide                                                        */
+  /* ------------------------------------------------------------------ */
+
+  /**
+   * Fluency slide — brisk Number-and-Algebra automaticity routine.
+   * Sits between Daily Review and LI/SC. Honour the user-provided Number
+   * Fluency Focus exactly. Use very large numerals; no instructions.
+   *
+   * Multiple prompts render as side-by-side cards (1-3, capped by band).
+   *
+   * @param {object}            pres
+   * @param {string}            title       eg. "Fluency: Division facts"
+   * @param {string|string[]}   prompts     1-3 short prompts (eg. "72 / 8", "56 / 7")
+   * @param {string}            notes
+   * @param {string}            footer
+   * @returns {object}                       The slide object
+   */
+  function fluencySlide(pres, title, prompts, notes, footer) {
+    const s = pres.addSlide();
+    el.addTopBar(s, C.ACCENT);
+    addStageBadge(s, 1, "Fluency");
+    el.addTitle(s, title || "Fluency", { color: C.ACCENT });
+
+    const list = Array.isArray(prompts) ? prompts : [prompts];
+    const cleaned = list
+      .map((p) => String(p == null ? "" : p).trim())
+      .filter(Boolean)
+      .slice(0, sz.maxQuestions || 3);
+
+    if (cleaned.length === 0) {
+      if (footer) el.addFooter(s, footer);
+      if (notes) s.addNotes(notes);
+      return s;
+    }
+
+    // Side-by-side cards. Each card is dominated by the prompt itself.
+    const startY = CONTENT_TOP;
+    const cardH = SAFE_BOTTOM - startY - byBand(sz, 0.7, 0.6, 0.5);
+    const cardGap = 0.18;
+    const totalW = 9;
+    const cardW = (totalW - cardGap * (cleaned.length - 1)) / cleaned.length;
+    const promptFontSize = byBand(sz, 60, 52, 42);
+
+    cleaned.forEach((q, i) => {
+      const x = 0.5 + i * (cardW + cardGap);
+      el.addCard(s, x, startY, cardW, cardH, { strip: C.ACCENT, fill: C.WHITE });
+      s.addText(String(q), {
+        x: x + 0.16, y: startY + 0.16, w: cardW - 0.32, h: cardH - 0.32,
+        fontSize: promptFontSize, fontFace: FONT_H, color: C.CHARCOAL,
+        bold: true, align: "center", valign: "middle", margin: 0,
+        fit: "shrink", shrinkText: true,
+      });
+    });
+
+    if (footer) el.addFooter(s, footer);
+    if (notes) s.addNotes(notes);
+    return s;
+  }
+
+  /* ------------------------------------------------------------------ */
   /*  Return all builders and helpers                                    */
   /* ------------------------------------------------------------------ */
 
@@ -491,11 +627,14 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
     addStageBadge,
     workedExSlide,
     exitTicketSlide,
+    dailyReviewSlide,
+    fluencySlide,
     addPlaceValueChart,
     addTenthsStrip,
     addAreaModel,
     addNumberLine,
     addDecimalDot,
+    ...manipulatives,
   };
 }
 
