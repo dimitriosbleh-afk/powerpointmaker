@@ -752,11 +752,13 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
   /**
    * liSlide - Learning Intention + Success Criteria.
    *
-   * Renders SC1/SC2/SC3 with the megaprompt §14 progression visible at a
-   * glance: SC1 is the foundation (everyone with support), SC2 is the
-   * core target (most students; exit-ticket aligned), SC3 is depth/stretch.
-   * Each row gets a small chip prefix and a colour-graded strip. Pass
-   * `opts.tieredSc: false` to fall back to a plain bulleted list.
+   * Default: plain unlabelled "I can..." bullet list (megaprompt §0a item 17 /
+   * §14 / §52 — tier labels must NEVER appear on student-facing slides).
+   * The internal SC1/SC2/SC3 progression (foundation / core / depth) still
+   * drives lesson design but never reaches the slide face.
+   *
+   * Opt-in tiered preview for non-student-facing review: `opts.tieredSc: true`.
+   * `opts.scLabels` and `opts.scColors` are honoured only on that opt-in path.
    *
    * @param {object}            pres
    * @param {string|string[]}   liItems
@@ -779,7 +781,11 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
     liItems = normalizedTargets.liItems;
     scItems = normalizedTargets.scItems;
 
-    const tiered = o.tieredSc !== false;
+    // Megaprompt §0a item 17 / §14 / §52: tier labels (Everyone/Most/Stretch)
+    // are an internal design tool only and must NEVER appear on student-facing
+    // slides. Default to a plain unlabelled "I can..." list. Callers can opt
+    // back in with `opts.tieredSc: true` for non-student-facing previews.
+    const tiered = o.tieredSc === true;
     const scLabels = Array.isArray(o.scLabels) && o.scLabels.length === 3
       ? o.scLabels
       : SC_TIER_LABELS;
@@ -1079,32 +1085,30 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
       });
       cursorY += 0.42;
 
-      // Closing slide is dark — pick three distinct saturated accents that
-      // contrast with BG_DARK (which is usually PRIMARY).
-      const scColors = [
-        C.SUCCESS || C.SECONDARY,
-        C.ACCENT,
-        C.ALERT || C.SECONDARY,
-      ];
+      // Megaprompt §0a item 17 / §52: tier labels (Everyone/Most/Stretch) must
+      // NEVER appear on the closing slide. Render the success criteria as a
+      // plain unlabelled "I can..." list, sized for the year band.
       const rowH = byBand(sz, 0.46, 0.42, 0.34);
-      const chipW = byBand(sz, 1.45, 1.30, 1.10);
-      const chipH = Math.min(rowH - 0.04, byBand(sz, 0.40, 0.36, 0.28));
-      const chipFontSize = byBand(sz, 13, 12, 10);
       const rowFontSize = sz.takeaway;
+      const dotR = byBand(sz, 0.10, 0.09, 0.07);
+      const textX = 0.7 + dotR * 2 + 0.20;
+      const textW = 9.0 - textX - 0.2;
 
       scItems.forEach((text, i) => {
         const rowY = cursorY + i * (rowH + 0.06);
-        slideAddChipRow(s, {
-          x: 0.7, y: rowY,
-          chipW, chipH, chipColor: scColors[i] || C.PRIMARY,
-          chipLabel: SC_TIER_LABELS[i],
-          chipFontSize,
-          textX: 0.7 + chipW + 0.18,
-          textY: rowY,
-          textW: 9.0 - 0.7 - chipW - 0.18 - 0.2,
-          textH: rowH,
-          text,
-          fontSize: rowFontSize,
+        const dotY = rowY + (rowH / 2) - dotR;
+        s.addShape("roundRect", {
+          x: 0.7, y: dotY,
+          w: dotR * 2, h: dotR * 2,
+          rectRadius: dotR,
+          fill: { color: accentOnDark },
+        });
+        s.addText(String(text || ""), {
+          x: textX, y: rowY,
+          w: textW, h: rowH,
+          fontSize: rowFontSize, fontFace: FONT_B, color: C.TEXT_ON_DARK || C.WHITE,
+          valign: "middle", margin: 0,
+          fit: "shrink", shrinkText: true,
         });
       });
 

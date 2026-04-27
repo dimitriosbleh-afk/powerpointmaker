@@ -139,6 +139,32 @@ If any item fails, revise before delivering.
     - Use changed numbers, changed words, changed images or faded steps for the student task.
     - The scaffold should be a slight enabler, not a full replacement for thinking.
 
+17. Success Criteria tier labels are internal only.
+    - SC1, SC2 and SC3 and the framing words "Foundation", "Core", "Depth", "Everyone", "Most" and "Stretch" are a design tool for you, not labels for students.
+    - Student-facing slides, closing slides and worksheets must show the three success criteria as a plain unlabelled list of "I can..." statements.
+    - Do not display "Everyone", "Most", "Stretch", "SC1", "SC2", "SC3", "Foundation", "Core" or "Depth" beside the criteria on any student-facing surface, including the closing or review and reflect slide.
+    - Internal tiering still drives which criterion the exit ticket targets and how enabling and extending move, but students see one clean list.
+
+18. Visual-only teaching slides must stay visual-only.
+    - When a slide's instructional purpose is the manipulative, model, representation, image, mat, frame or diagram itself, the visual is the lesson.
+    - Do not add student-facing instruction sentences such as "Move your cubes around", "The whole stays the same", "The parts can change", "Look at the tens frame" or other prose the teacher will say from notes anyway.
+    - Foundation to Year 2 students do not read these prompts. The text adds clutter, not learning.
+    - Keep at most a short label of the representation if labelling the model itself is part of the teaching, for example "Tens frame" or "Part-Part-Whole Mat". Otherwise leave the slide visual-only.
+    - All teacher cueing for these slides lives in presenter notes, never on the slide face.
+
+19. Rendered text must fit its container.
+    - Inspect the actual rendered slide, not just the planned text.
+    - Titles must not overflow the title bar, descend behind the LI and SC card or any content card, or push other elements out of place.
+    - Body text must not run past the edge of the card or shape that holds it.
+    - If a title or body string is too long for the box at the band's default size, shorten the wording first, then reduce the size only as a last resort, and verify by re-rendering.
+    - The teacher must not have to manually shrink, resize or reposition rendered text to make a slide usable.
+
+20. Contrast must be checked on every text element on every slide.
+    - White or near-white text on dark fills. Dark, near-black text on light fills.
+    - Foundation slides on dark hero panels must use white text. Foundation slides on light backgrounds must use dark text.
+    - Never use the same colour, or a colour close in luminance, for text and its background.
+    - Do not assume the rest of the slide being light makes a single dark element readable. Every text element is checked against the surface directly behind it.
+
 # 1. FOUNDATION TO YEAR 6 FIRST
 
 This system is for Foundation to Year 6.
@@ -665,21 +691,29 @@ Success Criteria:
 - assessable
 - progressive
 
-SC1:
+The three criteria use an internal tier framework so the lesson scales across mixed readiness. The tiers are a planning tool only. They never appear on student-facing slides, closing slides or worksheets.
 
-- Foundation success.
+Internal tier framework, never shown to students:
+
+SC1 (internal: foundation success):
+
 - All students can reach this with support.
 
-SC2:
+SC2 (internal: core target):
 
-- Core target.
 - Most students should reach this.
 - The exit ticket must assess this.
 
-SC3:
+SC3 (internal: depth):
 
-- Depth.
 - Students who are ready explain, apply, connect or transfer.
+
+How Success Criteria appear on slides and worksheets:
+
+- A simple unlabelled list of three "I can..." statements.
+- No tier labels. Do not write "Everyone", "Most", "Stretch", "SC1", "SC2", "SC3", "Foundation", "Core" or "Depth" next to the criteria.
+- No coloured tier badges that act as labels.
+- The same three criteria appear on the LI and SC slide and on the closing or review and reflect slide, in the same order, as one clean list.
 
 Quality tests:
 
@@ -782,6 +816,15 @@ Slide faces should avoid:
 - tiny labels
 - adult-style wording
 
+Visual-only teaching slides:
+
+- When the slide's purpose is the manipulative, model, representation, mat, frame, image or diagram itself, leave the slide visual-only.
+- Do not add student-facing instruction sentences that the teacher will say from notes anyway, such as "Move your cubes around", "The whole stays the same", "The parts can change", "Look at the tens frame", "Build it together", "Show me on your fingers".
+- Foundation to Year 2 students cannot read these sentences quickly enough to use them. The instruction adds clutter, not learning, and adds nothing the teacher needs because it is already in presenter notes.
+- A short label naming the representation is allowed if labelling supports learning, for example "Tens frame" or "Part-Part-Whole Mat".
+- Everything else, including the teacher's prompts, think-aloud and "what to do" cues, lives in presenter notes.
+- This rule applies up the year levels too. If a Year 5 or Year 6 slide is built around an image, source, diagram or model, do not pad the slide face with explanatory prose that students will not read.
+
 ## 15d. No Question Number Rule
 
 Do not use question numbers on student-facing slides.
@@ -867,6 +910,14 @@ Check that:
 - no object overlaps important content
 - no object looks stretched, squashed or randomly placed
 
+Title and text overflow check (always run on the rendered output):
+
+- The title must fit inside its title bar at the band's default size and not descend into the LI and SC card, content card or any element below it.
+- No descender, ascender or wrap line of the title may touch or sit behind another element.
+- Body text must fit inside the card or shape that holds it, with no overflow under or beside the card.
+- If a title or body string is too long, shorten the wording first. Only reduce the size as a last resort, and re-render to confirm.
+- A teacher should never have to manually shrink, resize or reposition rendered text to make a slide usable.
+
 If there is empty space, use it to improve readability.
 
 Preferred fixes:
@@ -916,11 +967,17 @@ Hard limits:
 - 1 idea per slide
 - 1 question or prompt per slide
 - no question numbers
-- 6 to 10 student-facing words where possible
+- 6 to 10 student-facing words where possible, fewer when the slide is visual-led
 - main task text 44 pt or larger
 - support text 30 pt or larger
 - visual anchor on every teaching slide
 - use concrete classroom language
+
+When the slide is a visual-only teaching slide:
+
+- The visual is the prompt. The slide should contain the visual and at most a short label naming the model.
+- Do not add prose instructions such as "Move your cubes around", "The whole stays the same" or "The parts can change". Foundation students do not read these in time to use them, and the teacher already has the cue in presenter notes.
+- Resist the urge to fill the slide. White space around a clean tens frame, mat or model is correct, not a problem to fix.
 
 Preferred wording:
 
@@ -938,6 +995,7 @@ Avoid:
 - multi-step written instructions
 - advanced terminology
 - tiny worksheet-style slides
+- prose instruction sentences on visual-only slides
 
 ## Years 3 to 4
 
@@ -1039,6 +1097,8 @@ The builders also enforce the question count rule for that band. Extra questions
 If the lesson legitimately needs more questions, split them across slides rather than stuffing one card.
 
 The teacher-facing rules in section 16 and section 17 describe the intent. The grade-aware templates are how that intent is enforced for decks built through `createTheme()`.
+
+Template default sizes must be conservative enough that titles and body text fit their containers at the band's default size. If a rendered title or body element overflows its container at default sizing, treat it as a template defect, not a per-slide tweak. Shorten the wording first; if the wording is already minimal, fix the template default rather than asking the teacher to resize text by hand. Apply the rendered text-fit rule from section 0a item 19 and the layout fit test from section 15h to every rendered slide.
 
 # 17. QUESTION COUNT RULE
 
@@ -1415,6 +1475,14 @@ For Foundation to Year 2, prefer:
 - picture cards
 - cut-and-paste items
 - movement and oral response
+
+Foundation visual clarity rule:
+
+- Counters, dots, cubes and markers must sit in an organised, predictable arrangement. Use a frame, a line, a labelled group, an array, a row of equal cells or a numbered track.
+- Do not scatter counters or dots randomly across the slide. Random placements look confusing for Foundation students and force the teacher to redraw or move pieces before teaching.
+- If counters represent a quantity, the arrangement must read at a glance as that quantity. Use ten frames, five frames, dice patterns, neat rows or a clearly grouped pile.
+- If counters represent parts of a whole, place each part in its own clearly labelled cell or zone of the mat.
+- Visuals should look the way a teacher would set them up on the floor or board, not the way an algorithm has flung shapes onto the canvas.
 
 For fractions, use:
 
@@ -1949,14 +2017,18 @@ If extension introduces a new concept not taught in the lesson:
 
 # 40. RESOURCE DECISION GATE
 
-Do not create resources by default.
+Decide resources agentically, lesson by lesson.
 
-Default resource position:
+The goal is not zero resources. The goal is the right resources for this lesson.
 
-- zero printed resources unless needed
-- one student resource maximum unless the user requests more
-- use manipulatives, mini-whiteboards, board work and workbooks first
-- differentiation usually happens through the same task, not three separate worksheets
+Default position:
+
+- Avoid producing three worksheets by reflex.
+- Avoid producing one worksheet just because a lesson exists.
+- Equally, do not refuse to produce resources when the lesson genuinely benefits from a structured recording sheet, a cut-and-paste activity, an enabling scaffold or an extension task.
+- Use manipulatives, mini-whiteboards, board work and workbooks where they are clearly enough.
+- Use a printed or editable resource where it clearly improves recording, scaffolding, accessibility, evidence collection or extension.
+- Differentiation often happens inside the same task, but a separate enabling scaffold or extension is appropriate when it adds something the core task cannot.
 
 Before generating any student resource, ask:
 
@@ -1967,8 +2039,12 @@ Before generating any student resource, ask:
 - Could the teacher build this on the board?
 - Could this be a quick oral or partner routine?
 - Would a worksheet improve learning or just add workload?
+- Would an enabling scaffold help students who need a different entry point?
+- Would an extension task push students who finish early into deeper thinking on the same concept?
 
 Generate a resource only when it supports learning.
+
+State the decision plainly in the lesson overview, including when no resource is needed and when an enabling or extension resource is included.
 
 Resources are needed when:
 
@@ -2048,7 +2124,7 @@ Do not use harder wording as extension.
 
 ## Foundation to Year 2 worksheets
 
-Foundation to Year 2 worksheets must be highly visual and low word.
+Foundation to Year 2 worksheets must be highly visual and low word, and must be sized for young hands and developing handwriting.
 
 Use:
 
@@ -2067,6 +2143,22 @@ Use:
 - large boxes
 - one task type per section
 - generous white space
+
+Handwriting space rule:
+
+- Foundation and Year 1 students cannot write small. Year 2 students still need generous space.
+- Single-digit answer boxes for Foundation should be at least 2.5 cm wide and 2.5 cm tall.
+- Number sentence boxes for Foundation should be at least 4 cm tall.
+- Writing lines for Foundation and Year 1 should be at least 1.8 cm between rules. For Year 2, at least 1.4 cm.
+- Drawing boxes should be large enough to draw counters, parts of a whole or a tens frame freehand without crowding.
+- If a worksheet leaves boxes or lines too small for a Foundation student to use, redesign the worksheet rather than asking the teacher to do it.
+
+Bottom-of-page white space:
+
+- White space at the bottom of a Foundation or Year 1 page is acceptable when the lines, boxes and visuals above are already at the right size.
+- Acceptable bottom white space lets a teacher print two pages to a sheet to save paper.
+- Do not fill the bottom of the page with extra questions just to remove white space, especially when the existing tasks could be made bigger and clearer instead.
+- Prefer enlarging the visual, the answer box or the writing line over cramming more questions onto the page.
 
 Avoid:
 
@@ -2228,15 +2320,26 @@ Years 5 to 6:
 Before finalising any DOCX or PDF:
 
 - check that no task is split awkwardly across pages
-- check that there are no large accidental gaps
+- check that there are no large accidental gaps mid-page
 - check that headings are not stranded at the bottom of a page
-- check that answer boxes are not tiny
+- check that answer boxes are big enough for the year level (see Handwriting space rule)
+- check that writing lines are tall enough for the year level
+- check that drawing boxes are large enough to actually draw the model
 - check that cut-and-paste pieces fit cleanly
 - check that worked examples do not give away the independent answer
 - check that template boxes align with the text and visuals
 - check that the PDF copy, if generated, matches the DOCX layout
 
-Large blank areas are only acceptable when they are intentional student working, drawing, cutting or gluing space.
+Large blank areas are acceptable when:
+
+- they are intentional student working, drawing, cutting or gluing space
+- they are bottom-of-page white space on a Foundation or Year 1 sheet that is already correctly sized, so a teacher can print two pages to a sheet to save paper
+
+Large blank areas are not acceptable when:
+
+- they appear because the visuals or boxes above are too small and could have been enlarged
+- they appear mid-page between sections, breaking the flow of the task
+- the worksheet feels under-built rather than intentionally spacious
 
 # 43. RESOURCE NAMING
 
@@ -2587,16 +2690,32 @@ Rules:
 - Use alt-style descriptions in teacher notes when useful.
 - Do not rely on colour alone for meaning.
 
+Contrast rule, applied per text element:
+
+- White or near-white text on dark fills.
+- Dark, near-black text on light fills.
+- Check every text element against the surface directly behind it, not against the rest of the slide.
+- Do not assume that because most of a slide is light, a single dark hero panel can also use dark text. Switch the text colour to suit the panel behind it.
+- Foundation slides are most often affected. Foundation hero panels and title bars are usually dark, so the title and panel text on those slides should be white. Foundation body cards are usually light, so body text on those cards should be dark.
+- Never use the same colour, or a colour close in luminance, for text and its background.
+
 # 52. CLOSING SLIDE
 
 Every lesson has a closing slide.
 
 The closing slide must:
 
-- show the three success criteria
+- show the three success criteria as a plain unlabelled list of "I can..." statements
 - include a student self-assessment routine
 - include a short reflection prompt
 - acknowledge progress
+
+The closing slide must not:
+
+- label the criteria with tier words such as "Everyone", "Most", "Stretch", "Foundation", "Core" or "Depth"
+- show "SC1", "SC2" or "SC3"
+- use coloured tier badges that act as labels
+- reorder or reword the criteria from the LI and SC slide
 
 Self-assessment options:
 
@@ -3019,6 +3138,9 @@ Before finalising, inspect the rendered deck, not only the written plan.
 Fail and revise if:
 
 - the font is too small
+- the title overflows its title bar or descends behind the LI and SC card or any element below it
+- a body text element overflows the card or shape that holds it
+- a teacher would need to manually shrink, resize or reposition rendered text to make the slide usable
 - the question is not the largest item
 - instructions dominate the slide
 - there are question numbers
@@ -3037,6 +3159,9 @@ Fail and revise if:
 - background boxes, cards or placeholders look misaligned
 - labels float too far from the object they label
 - the slide looks unfinished because spacing is uneven
+- text colour and background colour have low contrast, including white text on a light fill or dark text on a dark fill
+- success criteria carry tier labels such as "Everyone", "Most", "Stretch", "SC1", "SC2", "SC3", "Foundation", "Core" or "Depth" on the LI and SC slide or the closing slide
+- a visual-only teaching slide carries prose instruction text that the teacher would say from notes anyway
 
 For Foundation to Year 2, also fail if:
 
@@ -3044,6 +3169,7 @@ For Foundation to Year 2, also fail if:
 - the slide has more than one prompt
 - there is no classroom routine icon where an action is expected
 - the language sounds too old
+- counters, dots, cubes or markers are scattered randomly instead of arranged in a frame, line, group or labelled zone
 
 # 60b. TECHNICAL DECK QA
 
@@ -3055,6 +3181,8 @@ Fail and revise if:
 - transitions are distracting or inconsistent
 - click-to-reveal answers are too small
 - a slide object overlaps important content
+- a title or body text element renders too large for its container, including a title that descends into the LI and SC card
+- text and background fail the contrast rule (white on dark, dark on light)
 - teacher notes are missing from any slide
 - the Teacher Resources slide lists a resource that is not included
 - the deck does not use the correct grade-aware template
@@ -3338,6 +3466,12 @@ A lesson is incomplete if:
 - template boxes, cards or placeholders are misaligned
 - a worksheet worked example gives students the exact answer to copy
 - a worksheet has no slight enabler where one is needed to help students start
+- success criteria appear on a slide or worksheet with tier labels such as "Everyone", "Most", "Stretch", "SC1", "SC2", "SC3", "Foundation", "Core" or "Depth"
+- a visual-only teaching slide carries prose instruction text that the teacher will say from notes anyway
+- a rendered title or body element overflows its container or overlaps another element
+- text and background colours fail the contrast rule
+- Foundation visuals scatter counters, dots, cubes or markers randomly rather than arranging them in a frame, line, group or labelled zone
+- Foundation or Year 1 worksheets use writing lines, answer boxes or drawing boxes that are too small for young hands
 
 # 65. RESPONSE STYLE
 

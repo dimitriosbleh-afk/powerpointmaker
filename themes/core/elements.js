@@ -51,8 +51,10 @@ function createElements(C, FONT_H, FONT_B, cardShadowFn, S) {
 
   function addTitle(slide, title, opts) {
     const o = opts || {};
-    const bandH = byBand(sz, 0.74, 0.68, 0.62);
-    const bandY = byBand(sz, 0.72, 0.68, 0.65);
+    // Title box bottom must clear CONTENT_TOP (1.30") by >= 0.07" so the
+    // descender of "g"/"y" cannot bleed into the LI/SC or content card.
+    const bandH = 0.58;
+    const bandY = byBand(sz, 0.65, 0.62, 0.62);
     slide.addText(title, {
       x: o.x || 0.5,
       y: o.y != null ? o.y : bandY,
