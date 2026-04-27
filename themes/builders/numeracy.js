@@ -4,6 +4,7 @@ const { SAFE_BOTTOM, CONTENT_TOP, SLIDE_W, validateBounds } = require("../core/l
 const { runSlideDiagnostics } = require("../core/diagnostics");
 const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
 const { createManipulatives } = require("../core/manipulatives");
+const { prepareBullets, fitBulletFontSize } = require("../core/bulletFit");
 
 /**
  * Factory that returns numeracy-specific slide builders and maths visual
@@ -113,17 +114,34 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
 
     el.addCard(s, 0.5, contentY, cardW, SAFE_BOTTOM - contentY, { strip: stageColor });
 
-    // Step text size scales with band; narrow column drops one step.
-    const stepFontSize = drawRight ? sz.bodyDense : sz.body;
-    const stepTexts = steps.map((step, i) => ({
-      text: step,
-      options: { bullet: true, breakLine: i < steps.length - 1, fontSize: stepFontSize, color: C.CHARCOAL },
+    // Filter empty-string spacers from build-script step lists; they
+    // become paraSpaceAfter boosts on the preceding bullet so the slide
+    // gets clean grouping instead of empty bullet markers.
+    const prepared = prepareBullets(steps);
+    // Available text-frame height inside the step card.
+    const textY = contentY + 0.14;
+    const textH = SAFE_BOTTOM - contentY - 0.24;
+    // Ideal step font size; narrow column drops one step. fitBulletFontSize
+    // shrinks deterministically when content would overflow the card —
+    // PptxGenJS shrinkText on bullet lists is unreliable, so we pre-compute.
+    const idealStepFontSize = drawRight ? sz.bodyDense : sz.body;
+    const fontFloor = byBand(sz, 14, 13, 11);
+    const charsPerLine = drawRight ? byBand(sz, 28, 32, 36) : byBand(sz, 42, 50, 56);
+    const stepFontSize = fitBulletFontSize(prepared, textH, charsPerLine, idealStepFontSize, fontFloor);
+    const baseSpacePt = stepFontSize >= 16 ? 5 : 3;
+    const stepTexts = prepared.map((item, i) => ({
+      text: item.text,
+      options: {
+        bullet: true,
+        breakLine: i < prepared.length - 1,
+        fontSize: stepFontSize,
+        color: C.CHARCOAL,
+        paraSpaceAfter: baseSpacePt + (item.extraSpaceAfter || 0) * stepFontSize * 0.9,
+      },
     }));
     s.addText(stepTexts, {
-      x: 0.75, y: contentY + 0.14, w: cardW - 0.4, h: SAFE_BOTTOM - contentY - 0.24,
+      x: 0.75, y: textY, w: cardW - 0.4, h: textH,
       fontFace: FONT_B, margin: 0, valign: "top",
-      paraSpaceAfter: stepFontSize >= 16 ? 5 : 3,
-      fit: "shrink", shrinkText: true,
     });
 
     if (drawRight) drawRight(s, layoutGuide);

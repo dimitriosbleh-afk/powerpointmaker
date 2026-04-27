@@ -10,6 +10,12 @@ const {
 const { normalizeLessonTargets } = require("../core/notes");
 const { runSlideDiagnostics } = require("../core/diagnostics");
 const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
+const {
+  prepareBullets,
+  estimateBulletHeight,
+  fitBulletFontSize,
+  fitTextFontSize,
+} = require("../core/bulletFit");
 
 /**
  * Create the 7 universal slide builders bound to a specific palette and
@@ -49,45 +55,65 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
     const o = opts || {};
     const narrow = Boolean(o.narrow);
     const charsPerLine = narrow ? DENSITY.narrowChars : DENSITY.wideChars;
-    const totalLines = (items || []).reduce((sum, item) => sum + estimateWrappedLines(item, charsPerLine), 0);
-    const bulletCount = Math.max((items || []).length, 1);
+    const prepared = prepareBullets(items);
+    const totalLines = prepared.reduce(
+      (sum, item) => sum + estimateWrappedLines(item.text, charsPerLine),
+      0
+    );
+    const bulletCount = Math.max(prepared.length, 1);
     const roomy = bulletCount <= DENSITY.roomyBulletCount && totalLines <= DENSITY.roomyTotalLines;
 
     const baseRoomy = narrow ? Math.max(sz.bodyDense, sz.body * 0.92) : sz.body;
     const baseDense = narrow ? Math.max(sz.bodyDense * 0.95, sz.body * 0.85) : sz.bodyDense;
     const baseTight = baseDense * sz._shrink;
+    // Floor: never shrink below 14pt for F, 13pt for Y12, 11pt for Y36.
+    // Below those, content really should be split across slides instead.
+    const fontFloor = byBand(sz, 14, 13, 11);
 
-    const fontSize = roomy
+    const idealFontSize = roomy
       ? baseRoomy
       : totalLines <= (DENSITY.roomyTotalLines + 3)
         ? baseDense
         : baseTight;
 
-    const lineHeight = Math.max(0.20, fontSize * 0.018 + 0.06);
     const cardPadding = roomy ? 0.46 : 0.36;
-    const interBulletGap = roomy ? 0.07 : 0.04;
-    const bodyH = Math.max(0.82, totalLines * lineHeight + Math.max(0, bulletCount - 1) * interBulletGap);
-    const cardH = Math.min(
-      SAFE_BOTTOM - CONTENT_TOP,
-      bodyH + cardPadding
-    );
+    const topInset = roomy ? 0.20 : 0.15;
+    // Available text-box height inside the card (the bullet text frame is
+    // inset by topInset top and bottom).
+    const maxCardH = SAFE_BOTTOM - CONTENT_TOP;
+    const maxTextH = maxCardH - topInset * 2;
+    // Pre-compute the largest fontSize at which prepared content fits.
+    // PptxGenJS autofit on bullet lists is unreliable — this guarantees fit.
+    const fontSize = fitBulletFontSize(prepared, maxTextH, charsPerLine, idealFontSize, fontFloor);
+    const bodyH = estimateBulletHeight(prepared, fontSize, charsPerLine);
+    const cardH = Math.min(maxCardH, bodyH + cardPadding);
     return {
       fontSize,
       cardH: Math.max(cardH, roomy ? 1.75 : 1.5),
       bodyH,
-      topInset: roomy ? 0.20 : 0.15,
+      topInset,
+      prepared,
     };
   }
 
   function getQuestionCardMetrics(questionText) {
-    const totalLines = estimateWrappedLines(questionText, byBand(sz, 36, 44, 54));
+    const charsPerLine = byBand(sz, 36, 44, 54);
+    const totalLines = estimateWrappedLines(questionText, charsPerLine);
     const heroSize = sz.heroQuestion;
     const stepDown = heroSize * sz._shrink;
     const tight = stepDown * sz._shrink;
-    const fontSize = totalLines <= 3 ? heroSize : totalLines <= 6 ? stepDown : tight;
+    const idealFontSize = totalLines <= 3 ? heroSize : totalLines <= 6 ? stepDown : tight;
+    // Hard cap on card height — the pill above takes 0.56" of vertical space.
+    const maxCardH = SAFE_BOTTOM - (CONTENT_TOP + 0.56);
+    // 0.36 padding (0.20 top + 0.16 bottom) inside the card for the text box.
+    const maxTextH = maxCardH - 0.36;
+    const fontFloor = byBand(sz, 22, 20, 18);
+    // Pre-compute fontSize that guarantees questionText fits maxTextH —
+    // PptxGenJS shrinkText is unreliable on multi-line CFU questions.
+    const fontSize = fitTextFontSize(questionText, maxTextH, charsPerLine, idealFontSize, fontFloor);
     const lineHeight = Math.max(0.24, fontSize * 0.020 + 0.06);
     const cardH = Math.min(
-      SAFE_BOTTOM - (CONTENT_TOP + 0.56),
+      maxCardH,
       Math.max(1.45, totalLines * lineHeight + 0.50)
     );
     return { fontSize, cardH };
@@ -919,18 +945,23 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
     });
 
     if (bullets && bullets.length) {
-      s.addText(bullets.map((t, i) => ({
-        text: t,
+      const prepared = metrics.prepared || prepareBullets(bullets);
+      const baseSpacePt = metrics.fontSize >= 16 ? 5 : 3;
+      s.addText(prepared.map((item, i) => ({
+        text: item.text,
         options: {
           bullet: true,
-          breakLine: i < bullets.length - 1,
+          breakLine: i < prepared.length - 1,
           fontSize: metrics.fontSize,
           color: C.CHARCOAL,
+          // Per-paragraph space-after grows when the build script used an
+          // empty-string spacer between bullets. Avoids ugly empty bullet
+          // markers while preserving visual grouping.
+          paraSpaceAfter: baseSpacePt + (item.extraSpaceAfter || 0) * metrics.fontSize * 0.9,
         },
       })), {
         x: 0.75, y: contentY + metrics.topInset, w: cardW - 0.5, h: cardH - metrics.topInset * 2,
         fontFace: FONT_B, valign: "top", margin: 0,
-        paraSpaceAfter: metrics.fontSize >= 16 ? 5 : 3,
       });
     }
 
@@ -1006,10 +1037,14 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
     const questionMetrics = getQuestionCardMetrics(questionText || "");
     const qH = Math.min(questionMetrics.cardH, SAFE_BOTTOM - qY);
     el.addCard(s, 0.5, qY, 9, qH, { strip: C.ALERT, fill: C.WHITE });
+    // valign:top so any residual overflow goes downward (never upward into
+    // the technique pill above). fontSize is pre-computed to fit qH - 0.36
+    // via fitTextFontSize, so overflow shouldn't happen, but valign:top is
+    // the safer default for multi-line CFU questions.
     s.addText(questionText || "", {
       x: 0.75, y: qY + 0.20, w: 8.5, h: qH - 0.36,
       fontSize: questionMetrics.fontSize, fontFace: FONT_B, color: C.CHARCOAL,
-      valign: "middle", margin: 0,
+      valign: "top", margin: 0,
       fit: "shrink", shrinkText: true,
     });
 
