@@ -282,7 +282,9 @@ function rewriteNotesSlideXml(noteXml, notes) {
     throw new Error("Unable to locate notes placeholder body while rewriting notes XML.");
   }
 
-  return noteXml.replace(pattern, `$1${replacementBody}$2`);
+  // Function-form replacement: avoids `$N` inside replacementBody being
+  // parsed as a backreference (corrupts notes that contain "$25" etc.).
+  return noteXml.replace(pattern, (_match, p1, p2) => `${p1}${replacementBody}${p2}`);
 }
 
 async function rewriteSpeakerNotesInFile(pptxPath, slides) {
