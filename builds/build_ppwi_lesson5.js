@@ -1,7 +1,7 @@
 "use strict";
 
 // Part, Part, Whole Introduction Unit — Lesson 5: Friends of 10
-// Foundation Numeracy | Lesson 5 of 5 | Variant 0
+// Foundation Numeracy | Lesson 5 of 10 | Variant 0
 // VC2MFN04
 // Daily Review: Teen Numbers - name 16-20 from tens frames
 // Fluency: Counting to 20 from various starting points
@@ -21,7 +21,7 @@ const T = createTheme("numeracy", "foundation", weekToVariant(1));
 const {
   C, FONT_H, FONT_B,
   SAFE_BOTTOM, CONTENT_TOP,
-  titleSlide, liSlide, cfuSlide, closingSlide,
+  titleSlide, liSlide, cfuSlide, closingSlide, contentSlide,
   workedExSlide, exitTicketSlide, addStageBadge,
   addTextOnShape, addCard, addFooter, addTopBar, addTitle, addBadge,
   withReveal,
@@ -30,7 +30,7 @@ const {
 } = T;
 
 const SESSION = 5;
-const TOTAL = 5;
+const TOTAL = 10;
 const UNIT_TITLE = "Part, Part, Whole";
 const FOOTER = `Part, Part, Whole | Lesson ${SESSION} of ${TOTAL} | Foundation Numeracy`;
 const OUT_DIR = "output/PPWi_Lesson5_Friends_of_10";
@@ -420,6 +420,27 @@ End-of-unit recording sheet. Students record the friend pairs they find.
 
 [General: Resources]`;
 
+const NOTES_LAUNCH = `SAY:
+- Yesterday we made 8 and 9 on the ten frame.
+- Look at this ten frame. It has 9 counters. The whole is 9. One cell is empty.
+- Today our whole is 10. The ten frame is full.
+- Friends of 10 are two parts that fill the whole ten frame.
+
+DO:
+- Display a ten frame with 9 counters.
+- Point to the 9 filled cells, then to the 1 empty cell.
+- Add the 10th counter on the camera or with finger trace.
+- Say "10. The whole is 10. The ten frame is full."
+
+TEACHER NOTES:
+The launch bridges from yesterday (9) to today (10) and names the special idea: friends of 10. Keep it under 90 seconds. Today is the final lesson of the unit, so the bridge is also a celebration of progress.
+
+WATCH FOR:
+- Students who say "1 more makes 10" - the friend-pair language is forming.
+- Students who count all 10 - that is fine, gently echo "the whole is 10".
+
+[General: Launch | VTLM 2.0: Activate Prior Knowledge]`;
+
 // ─── Build ──────────────────────────────────────────────────────────────────
 
 async function build() {
@@ -429,6 +450,29 @@ async function build() {
   // Slide 1: Title
   titleSlide(pres, UNIT_TITLE, "Lesson 5: Friends of 10",
     `Foundation Numeracy | Lesson ${SESSION} of ${TOTAL}`, NOTES_TITLE);
+
+  // Slide 2: Teacher Resources
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
+  // Slide 3: Launch — bridge from yesterday's 9 to today's whole 10
+  contentSlide(pres, "Launch", C.SUCCESS, "From 9 to 10",
+    [
+      "Yesterday: we made 8 and 9.",
+      "This ten frame shows 9. One cell is empty.",
+      "Today our whole is 10. The ten frame is full.",
+    ],
+    NOTES_LAUNCH, FOOTER,
+    (slide, lg) => {
+      // Ten frame with 9 counters — visible empty cell signals the bridge to 10
+      addTensFrame(slide, lg.rightX + 0.10, lg.panelTopPadded + 0.55,
+        lg.rightW - 0.20, 9, { fillColor: "D64545" });
+      slide.addText("Whole = 9", {
+        x: lg.rightX, y: lg.panelTopPadded + 2.50, w: lg.rightW, h: 0.42,
+        fontSize: 22, fontFace: FONT_H, color: C.SUCCESS, bold: true,
+        align: "center", valign: "middle", margin: 0,
+      });
+    }
+  );
 
   // Slides 2-3: Daily Review with reveal — Teen number from ten frame (17)
   withReveal(
@@ -470,8 +514,8 @@ async function build() {
       }
 
       s.addText("Show me on your fingers.", {
-        x: 0.7, y: CONTENT_TOP + 2.80, w: 8.6, h: 0.50,
-        fontSize: 26, fontFace: FONT_H, color: C.ACCENT, bold: true,
+        x: 0.7, y: CONTENT_TOP + 2.50, w: 8.6, h: 0.40,
+        fontSize: 22, fontFace: FONT_H, color: C.ACCENT, bold: true,
         align: "center", valign: "middle", margin: 0,
       });
 
@@ -598,8 +642,8 @@ async function build() {
       drawTwoColourTensFrame(s, 2.5, CONTENT_TOP + 0.35, 5.0, 6, 0);
 
       s.addText("Show me on your fingers.", {
-        x: 0.7, y: CONTENT_TOP + 2.80, w: 8.6, h: 0.55,
-        fontSize: 28, fontFace: FONT_H, color: C.ALERT, bold: true,
+        x: 0.7, y: CONTENT_TOP + 2.40, w: 8.6, h: 0.45,
+        fontSize: 24, fontFace: FONT_H, color: C.ALERT, bold: true,
         align: "center", valign: "middle", margin: 0,
       });
 
@@ -727,9 +771,6 @@ async function build() {
       selfAssessment: "Thumbs up / sideways / down",
     },
     NOTES_CLOSING);
-
-  // Slide 17: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const pptxPath = path.join(OUT_DIR, "PPWi_Lesson5_Friends_of_10.pptx");

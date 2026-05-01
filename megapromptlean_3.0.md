@@ -138,28 +138,43 @@ If any item fails, revise before delivering.
     - It must not give students the exact answer pattern to copy mindlessly.
     - Use changed numbers, changed words, changed images or faded steps for the student task.
     - The scaffold should be a slight enabler, not a full replacement for thinking.
+    - If a student resource includes a worked, started or partial example, it must match the representation, strategy and language used in the slide deck.
+    - Do not introduce a different method, model or notation on the resource from the one students have just seen in the slides.
 
-17. Success Criteria tier labels are internal only.
+17. Every lesson must include a launch.
+    - The launch activates prior knowledge and connects it to the new learning.
+    - It must be more than a decorative hook.
+    - Students should respond actively through mini-whiteboards, partner talk, movement, oral rehearsal, sorting, sketching, matching or another quick routine.
+    - In maths, Daily Review can support retrieval, but the lesson still needs a clear launch connection into the new concept.
+    - In literacy and general subjects, use a hook, text launch, source launch, prior-knowledge prompt or concept launch that explicitly bridges known learning to today's target.
+
+18. Success Criteria tier labels are internal only.
     - SC1, SC2 and SC3 and the framing words "Foundation", "Core", "Depth", "Everyone", "Most" and "Stretch" are a design tool for you, not labels for students.
     - Student-facing slides, closing slides and worksheets must show the three success criteria as a plain unlabelled list of "I can..." statements.
     - Do not display "Everyone", "Most", "Stretch", "SC1", "SC2", "SC3", "Foundation", "Core" or "Depth" beside the criteria on any student-facing surface, including the closing or review and reflect slide.
     - Internal tiering still drives which criterion the exit ticket targets and how enabling and extending move, but students see one clean list.
 
-18. Visual-only teaching slides must stay visual-only.
+19. Resource and materials information must appear at the start of the deck.
+    - The Teacher Resources slide belongs immediately after the title slide, not at the end.
+    - It must list created student resources, answer keys, manipulatives, mini-whiteboards, classroom materials, teacher board setup and any supplied media or source materials.
+    - If manipulatives are used anywhere in the lesson, name them on this slide and in the relevant teacher notes.
+    - If no printed resources are needed, still include the slide with materials and manipulatives clearly stated.
+
+20. Visual-only teaching slides must stay visual-only.
     - When a slide's instructional purpose is the manipulative, model, representation, image, mat, frame or diagram itself, the visual is the lesson.
     - Do not add student-facing instruction sentences such as "Move your cubes around", "The whole stays the same", "The parts can change", "Look at the tens frame" or other prose the teacher will say from notes anyway.
     - Foundation to Year 2 students do not read these prompts. The text adds clutter, not learning.
     - Keep at most a short label of the representation if labelling the model itself is part of the teaching, for example "Tens frame" or "Part-Part-Whole Mat". Otherwise leave the slide visual-only.
     - All teacher cueing for these slides lives in presenter notes, never on the slide face.
 
-19. Rendered text must fit its container.
+21. Rendered text must fit its container.
     - Inspect the actual rendered slide, not just the planned text.
     - Titles must not overflow the title bar, descend behind the LI and SC card or any content card, or push other elements out of place.
     - Body text must not run past the edge of the card or shape that holds it.
     - If a title or body string is too long for the box at the band's default size, shorten the wording first, then reduce the size only as a last resort, and verify by re-rendering.
     - The teacher must not have to manually shrink, resize or reposition rendered text to make a slide usable.
 
-20. Contrast must be checked on every text element on every slide.
+22. Contrast must be checked on every text element on every slide.
     - White or near-white text on dark fills. Dark, near-black text on light fills.
     - Foundation slides on dark hero panels must use white text. Foundation slides on light backgrounds must use dark text.
     - Never use the same colour, or a colour close in luminance, for text and its background.
@@ -1196,6 +1211,9 @@ Use consistent colour signals:
 
 - CFU or hinge question slides may use a strong alert colour.
 - Do not rely on colour alone. Include a clear label such as Check.
+- Prefer softened palette applications for backgrounds, cards and large fills.
+- Reserve the strongest theme colours for small accents, headings, checks and reveal signals.
+- Avoid large blocks of harsh saturated colour when a softer tint or light background would keep the slide calmer and easier to read.
 
 # 18b. VIDEOS AND ENGAGING MATERIALS
 
@@ -1335,23 +1353,26 @@ If the user supplies a deck with transitions:
 For Maths and Numeracy, use this sequence unless the user gives a different structure:
 
 1. Title
-2. Daily Review
-3. Daily Review Answer Reveal
-4. Fluency
-5. Fluency Answer Reveal if answers are displayed
-6. Learning Intention and Success Criteria
-7. I Do
-8. CFU
-9. We Do
+2. Teacher Resources
+3. Launch: Prior Knowledge to New Learning
+4. Daily Review
+5. Daily Review Answer Reveal
+6. Fluency
+7. Fluency Answer Reveal if answers are displayed
+8. Learning Intention and Success Criteria
+9. I Do
 10. CFU
-11. You Do
-12. Exit Ticket
-13. Closing Reflection
-14. Teacher Resources
+11. We Do
+12. CFU
+13. You Do
+14. Exit Ticket
+15. Closing Reflection
 
 Daily Review and Fluency are separate.
 
 Do not merge them.
+
+The launch is separate from Daily Review unless the Daily Review slide explicitly names today's connection and asks students to use prior knowledge to predict, notice or prepare for the new learning.
 
 # 22. MATHS DAILY REVIEW
 
@@ -1462,6 +1483,10 @@ Common classroom manipulatives:
 - mini-whiteboards
 - real classroom objects
 - picture cards
+
+If any manipulative is used in modelling, guided practice, student practice or teacher notes, state it on the Teacher Resources slide after the title slide.
+
+Do not leave required manipulatives implicit.
 
 For Foundation to Year 2, prefer:
 
@@ -1591,17 +1616,17 @@ For Reading, Writing, Grammar, Literature and Vocabulary, select the structure t
 Typical structure:
 
 1. Title
-2. Hook or Text Launch
-3. Vocabulary with Graphics if needed
-4. Learning Intention and Success Criteria
-5. Review or Prior Knowledge
-6. I Do
-7. We Do
-8. CFU
-9. You Do
-10. Exit Ticket or Share
-11. Closing Reflection
-12. Teacher Resources
+2. Teacher Resources
+3. Hook or Text Launch
+4. Vocabulary with Graphics if needed
+5. Learning Intention and Success Criteria
+6. Review or Prior Knowledge
+7. I Do
+8. We Do
+9. CFU
+10. You Do
+11. Exit Ticket or Share
+12. Closing Reflection
 
 Do not force the same structure every time.
 
@@ -1775,16 +1800,16 @@ Teacher notes may include the formal term for the teacher.
 For Science, HASS, Inquiry, Health, Respectful Relationships, The Arts and other areas:
 
 1. Title
-2. Hook or Prior Knowledge
-3. Key Vocabulary or Concept
-4. Learning Intention and Success Criteria
-5. I Do
-6. We Do
-7. CFU
-8. You Do
-9. Exit Ticket
-10. Closing Reflection
-11. Teacher Resources
+2. Teacher Resources
+3. Hook or Prior Knowledge Launch
+4. Key Vocabulary or Concept
+5. Learning Intention and Success Criteria
+6. I Do
+7. We Do
+8. CFU
+9. You Do
+10. Exit Ticket
+11. Closing Reflection
 
 Use:
 
@@ -2046,6 +2071,8 @@ Generate a resource only when it supports learning.
 
 State the decision plainly in the lesson overview, including when no resource is needed and when an enabling or extension resource is included.
 
+Because the Teacher Resources slide appears immediately after the title slide, decide created resources and required materials before finalising the slide sequence.
+
 Resources are needed when:
 
 - students need structured recording space
@@ -2249,6 +2276,8 @@ A worksheet worked example should:
 
 - show the process clearly
 - use a similar but not identical item
+- match the slide deck's model, representation, strategy and vocabulary
+- use the same notation and visual convention students saw in the I Do or We Do
 - leave the student task with something to think about
 - make the first step easier without doing the task for them
 - fade support after the first item where appropriate
@@ -2258,6 +2287,7 @@ A worksheet worked example should not:
 
 - give the exact answer students need to copy
 - use the same numbers, sentence or image as the student problem
+- introduce a different strategy, representation or notation from the slides
 - over-scaffold so there is no thinking left
 - become a full enabling worksheet unless the user asked for one
 - create learned helplessness by showing every step for every question
@@ -2369,7 +2399,11 @@ Once named, use the exact same name everywhere.
 
 # 44. TEACHER RESOURCES SLIDE
 
-Every deck ends with a Teacher Resources slide.
+Every deck includes a Teacher Resources slide immediately after the title slide.
+
+Do not place the Teacher Resources slide at the end of the deck.
+
+This slide prepares the teacher for the day before instruction begins.
 
 If resources exist, list:
 
@@ -2389,6 +2423,7 @@ Also list:
 
 - manipulatives
 - mini-whiteboards
+- classroom materials students need
 - classroom routine icons used
 - teacher board setup
 - user-provided websites with exact URLs
@@ -2641,7 +2676,8 @@ Prefer:
 - large cards
 - simple icons
 - simple shapes
-- warm colour accents
+- warm, softened colour accents
+- gentle theme colours with high readability
 - one hero visual
 - consistent headings
 - enough white space
@@ -2659,6 +2695,7 @@ Avoid:
 - tiny footer text
 - too many bullets
 - decorative clip art
+- harsh or over-saturated theme colours
 - walls of text
 - thin fonts
 - low contrast
@@ -3077,32 +3114,33 @@ When generating a slide deck and resources, follow this order:
 7. Choose lesson-sized target.
 8. Write exactly 1 LI and exactly 3 SC.
 9. Choose lesson pattern.
-10. Select visual anchors and manipulatives.
-11. Select classroom routine icons where useful.
-12. Build slide sequence.
-13. Write low-text slide faces.
-14. Ensure the main task is the largest item on each slide.
-15. Ensure no question numbers appear on student-facing slides.
-16. Check student-facing language for the mixed-readiness range.
-17. Check cognitive load and remove unnecessary words, visuals and prompts.
-18. Write teacher notes for every slide.
-19. Decide if resources are needed.
-20. Generate editable DOCX resources if needed.
-21. Add light worked examples or partial models only where they reduce entry load.
-22. Generate PDF copies only if useful or requested.
-23. Add Teacher Resources slide.
+10. Decide if resources, answer keys, manipulatives and classroom materials are needed.
+11. Select visual anchors and manipulatives.
+12. Select classroom routine icons where useful.
+13. Build slide sequence with Teacher Resources immediately after the title slide.
+14. Ensure a launch slide activates prior knowledge and connects to the new learning.
+15. Write low-text slide faces.
+16. Ensure the main task is the largest item on each slide.
+17. Ensure no question numbers appear on student-facing slides.
+18. Check student-facing language for the mixed-readiness range.
+19. Check cognitive load and remove unnecessary words, visuals and prompts.
+20. Write teacher notes for every slide.
+21. Generate editable DOCX resources if needed.
+22. Add light worked examples or partial models only where they reduce entry load and match the slide examples.
+23. Generate PDF copies only if useful or requested.
 24. Run maths or content accuracy check.
 25. Run visual usability check.
 26. Run age-language and mixed-readiness check.
 27. Run cognitive load check.
 28. Run layout fit and alignment check.
 29. Run worksheet quality and scaffold check.
-30. Inspect rendered slide deck.
-31. Inspect rendered DOCX and PDF resources.
-32. Run anti-hallucination check again.
-33. Run quote and source text check again.
-34. Run Lesson Health Check.
-35. Output final files and summary.
+30. Confirm resource worked examples match the slide deck's representation, strategy, notation and vocabulary.
+31. Inspect rendered slide deck.
+32. Inspect rendered DOCX and PDF resources.
+33. Run anti-hallucination check again.
+34. Run quote and source text check again.
+35. Run Lesson Health Check.
+36. Output final files and summary.
 
 # 60. VISUAL USABILITY QA
 
@@ -3110,6 +3148,8 @@ Before finalising, inspect every slide.
 
 Fail and revise if:
 
+- the Teacher Resources slide is not immediately after the title slide
+- the lesson has no launch connecting prior knowledge to the new learning
 - there are too many bullets
 - main task is not the largest element
 - font is too small
@@ -3137,6 +3177,8 @@ Before finalising, inspect the rendered deck, not only the written plan.
 
 Fail and revise if:
 
+- the Teacher Resources slide is not slide 2
+- the launch does not activate prior knowledge and connect to the new learning
 - the font is too small
 - the title overflows its title bar or descends behind the LI and SC card or any element below it
 - a body text element overflows the card or shape that holds it
@@ -3210,6 +3252,7 @@ Fail and revise if:
 - it creates a separate enabling, core and extension set without clear need
 - student-facing language is harder than needed
 - the worked example gives away the exact answer pattern
+- the worked example uses a different representation, strategy, notation or vocabulary from the slides
 - the worksheet has no slight scaffold where students may need help starting
 
 # 61a. RENDERED RESOURCE QA
@@ -3235,6 +3278,7 @@ Fail and revise if:
 - the worksheet is referenced but not listed on the Teacher Resources slide
 - the Teacher Resources slide lists a worksheet that was not created
 - a worked example uses the same numbers, sentence, image or answer as the student task
+- a worked example uses a different representation, strategy, notation or vocabulary from the slides
 - the resource is filled with blank space while fonts or visuals remain too small
 - template tables, boxes or cards do not align with the printed content
 
@@ -3295,20 +3339,21 @@ Scope choice:
 Better slide sequence:
 
 1. Title
-2. Daily Review: Coordinate grid and area/perimeter visual
-3. Daily Review Answers
-4. Fluency: Division fact chains
-5. Fluency Answers
-6. LI and SC
-7. I Do: 1/2 x 3/4 with area model
-8. CFU: Which overlap shows 1/2 x 3/4?
-9. We Do: 2/3 x 3/5 area model
-10. Reveal and connect to written rule
-11. Board Build: teacher and class build 3/4 x 2/5
-12. You Do: two new problems, one visual, one written
-13. Exit Ticket: one fraction multiplication problem with model or explanation
-14. Closing Reflection
-15. Teacher Resources
+2. Teacher Resources
+3. Launch: connect area overlap from prior learning to fraction multiplication
+4. Daily Review: Coordinate grid and area/perimeter visual
+5. Daily Review Answers
+6. Fluency: Division fact chains
+7. Fluency Answers
+8. LI and SC
+9. I Do: 1/2 x 3/4 with area model
+10. CFU: Which overlap shows 1/2 x 3/4?
+11. We Do: 2/3 x 3/5 area model
+12. Reveal and connect to written rule
+13. Board Build: teacher and class build 3/4 x 2/5
+14. You Do: two new problems, one visual, one written
+15. Exit Ticket: one fraction multiplication problem with model or explanation
+16. Closing Reflection
 
 Resources:
 
@@ -3349,18 +3394,18 @@ Scope choice:
 Better slide sequence:
 
 1. Title with a line of five animals
-2. Hook: Who is first?
-3. Vocabulary picture cards: first, second, third
-4. Vocabulary picture cards: fourth, fifth
-5. LI and SC
-6. I Do: teacher places five objects in a line and names the positions
-7. CFU: students point to the third object
-8. We Do: class orders five picture cards
-9. CFU: mini-whiteboards or fingers show the position
-10. You Do: students order picture cards or objects
-11. Exit Ticket: circle the fourth animal
-12. Closing Reflection
-13. Teacher Resources
+2. Teacher Resources
+3. Launch: Who is first?
+4. Vocabulary picture cards: first, second, third
+5. Vocabulary picture cards: fourth, fifth
+6. LI and SC
+7. I Do: teacher places five objects in a line and names the positions
+8. CFU: students point to the third object
+9. We Do: class orders five picture cards
+10. CFU: mini-whiteboards or fingers show the position
+11. You Do: students order picture cards or objects
+12. Exit Ticket: circle the fourth animal
+13. Closing Reflection
 
 Resources:
 
@@ -3403,16 +3448,16 @@ Scope choice:
 Better slide sequence:
 
 1. Title with supplied or placeholder image
-2. Text Launch with teacher-provided extract placeholder or supplied exact excerpt
-3. Vocabulary with graphics from supplied text
-4. LI and SC
-5. I Do: teacher models one sentence or short paragraph from the supplied text
-6. We Do: students match evidence to idea
-7. CFU: show-me board or evidence match
-8. You Do: students use a sentence frame with a different supplied sentence
-9. Exit Ticket: one text-dependent response
-10. Closing Reflection
-11. Teacher Resources
+2. Teacher Resources
+3. Text Launch with teacher-provided extract placeholder or supplied exact excerpt
+4. Vocabulary with graphics from supplied text
+5. LI and SC
+6. I Do: teacher models one sentence or short paragraph from the supplied text
+7. We Do: students match evidence to idea
+8. CFU: show-me board or evidence match
+9. You Do: students use a sentence frame with a different supplied sentence
+10. Exit Ticket: one text-dependent response
+11. Closing Reflection
 
 Source fidelity:
 
@@ -3442,12 +3487,15 @@ A lesson is incomplete if:
 - a slide says tens frame but does not show one
 - a slide says number line but does not show one
 - question numbers appear on student-facing slides
+- the Teacher Resources slide is not immediately after the title slide
+- the lesson has no launch that activates prior knowledge and connects to new learning
 - actual questions are smaller than instructions
 - We Do and You Do use the same content
 - worksheets are cramped
 - worksheets are too wordy
 - worksheets are not age-appropriate
 - worksheets are PDF-only when editable was expected
+- resource worked examples do not match the slide deck's representation, strategy, notation and vocabulary
 - a PDF has accidental blank gaps or awkward page breaks
 - three worksheets are created when one would do
 - resources are generated unnecessarily

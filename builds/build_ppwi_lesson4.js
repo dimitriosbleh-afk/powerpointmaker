@@ -1,7 +1,7 @@
 "use strict";
 
 // Part, Part, Whole Introduction Unit — Lesson 4: Make 8 and 9 (Ten Frame)
-// Foundation Numeracy | Lesson 4 of 5 | Variant 0
+// Foundation Numeracy | Lesson 4 of 10 | Variant 0
 // VC2MFN04
 // Daily Review: Teen Numbers - name 11-15 from tens frames
 // Fluency: What number comes before and after
@@ -21,7 +21,7 @@ const T = createTheme("numeracy", "foundation", weekToVariant(1));
 const {
   C, FONT_H, FONT_B,
   SAFE_BOTTOM, CONTENT_TOP,
-  titleSlide, liSlide, cfuSlide, closingSlide,
+  titleSlide, liSlide, cfuSlide, closingSlide, contentSlide,
   workedExSlide, exitTicketSlide, addStageBadge,
   addTextOnShape, addCard, addFooter, addTopBar, addTitle, addBadge,
   withReveal,
@@ -30,7 +30,7 @@ const {
 } = T;
 
 const SESSION = 4;
-const TOTAL = 5;
+const TOTAL = 10;
 const UNIT_TITLE = "Part, Part, Whole";
 const FOOTER = `Part, Part, Whole | Lesson ${SESSION} of ${TOTAL} | Foundation Numeracy`;
 const OUT_DIR = "output/PPWi_Lesson4_Make_8_and_9";
@@ -422,6 +422,27 @@ One core student resource today.
 
 [General: Resources]`;
 
+const NOTES_LAUNCH = `SAY:
+- Yesterday we made 6 and 7. We used the PPW mat.
+- Today we have a new tool: a ten frame.
+- Look at this ten frame. How many counters?
+- Whisper to your partner.
+
+DO:
+- Display a ten frame with 7 counters in standard order.
+- Allow 10 seconds for whisper.
+- Cold call: "How many?" Expect "7".
+- Say: "Today we will make 8 and 9 on a ten frame."
+
+TEACHER NOTES:
+The launch introduces the ten frame as a new tool. Many students will recognise it from Daily Review. Keep it brisk - 60 seconds. Today the ten frame replaces the PPW mat for visual clarity with bigger numbers.
+
+WATCH FOR:
+- Quick "7" responses - subitising on the ten frame is forming.
+- Slow counting - prompt: "Top row first - that's 5. How many more?"
+
+[General: Launch | VTLM 2.0: Activate Prior Knowledge]`;
+
 // ─── Build ──────────────────────────────────────────────────────────────────
 
 async function build() {
@@ -432,7 +453,30 @@ async function build() {
   titleSlide(pres, UNIT_TITLE, "Lesson 4: Make 8 and 9",
     `Foundation Numeracy | Lesson ${SESSION} of ${TOTAL}`, NOTES_TITLE);
 
-  // Slides 2-3: Daily Review with reveal — Teen number from ten frame
+  // Slide 2: Teacher Resources
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
+  // Slide 3: Launch — introduce today's new tool, the ten frame
+  contentSlide(pres, "Launch", C.SUCCESS, "A New Tool: Ten Frame",
+    [
+      "Yesterday we made 6 and 7.",
+      "Today we use a new tool.",
+      "How many counters on this ten frame?",
+    ],
+    NOTES_LAUNCH, FOOTER,
+    (slide, lg) => {
+      // Ten frame with 7 counters — preview today's new tool
+      addTensFrame(slide, lg.rightX + 0.10, lg.panelTopPadded + 0.55,
+        lg.rightW - 0.20, 7, { fillColor: "D64545" });
+      slide.addText("How many?", {
+        x: lg.rightX, y: lg.panelTopPadded + 2.50, w: lg.rightW, h: 0.42,
+        fontSize: 22, fontFace: FONT_H, color: C.SUCCESS, bold: true,
+        align: "center", valign: "middle", margin: 0,
+      });
+    }
+  );
+
+  // Slides 4-5: Daily Review with reveal — Teen number from ten frame
   withReveal(
     () => {
       const s = pres.addSlide();
@@ -461,8 +505,8 @@ async function build() {
       }
 
       s.addText("Show me on your fingers.", {
-        x: 0.7, y: CONTENT_TOP + 2.80, w: 8.6, h: 0.50,
-        fontSize: 26, fontFace: FONT_H, color: C.ACCENT, bold: true,
+        x: 0.7, y: CONTENT_TOP + 2.50, w: 8.6, h: 0.40,
+        fontSize: 22, fontFace: FONT_H, color: C.ACCENT, bold: true,
         align: "center", valign: "middle", margin: 0,
       });
 
@@ -620,8 +664,8 @@ async function build() {
       drawTwoColourTensFrame(s, 2.5, CONTENT_TOP + 0.35, 5.0, 5, 3);
 
       s.addText("Show me on your fingers.", {
-        x: 0.7, y: CONTENT_TOP + 2.80, w: 8.6, h: 0.55,
-        fontSize: 28, fontFace: FONT_H, color: C.ALERT, bold: true,
+        x: 0.7, y: CONTENT_TOP + 2.40, w: 8.6, h: 0.45,
+        fontSize: 24, fontFace: FONT_H, color: C.ALERT, bold: true,
         align: "center", valign: "middle", margin: 0,
       });
 
@@ -748,9 +792,6 @@ async function build() {
       selfAssessment: "Thumbs up / sideways / down",
     },
     NOTES_CLOSING);
-
-  // Slide 17: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const pptxPath = path.join(OUT_DIR, "PPWi_Lesson4_Make_8_and_9.pptx");

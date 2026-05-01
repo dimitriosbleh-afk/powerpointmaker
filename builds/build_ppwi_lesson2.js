@@ -1,7 +1,7 @@
 "use strict";
 
 // Part, Part, Whole Introduction Unit — Lesson 2: Make 5
-// Foundation Numeracy | Lesson 2 of 5 | Variant 0
+// Foundation Numeracy | Lesson 2 of 10 | Variant 0
 // VC2MFN04 - partition and combine collections up to 10 using PPW + subitising
 // Daily Review: Counting up to 20 fluently by 1s
 // Fluency: Backwards counting from 20
@@ -21,7 +21,7 @@ const T = createTheme("numeracy", "foundation", weekToVariant(1));
 const {
   C, FONT_H, FONT_B,
   SAFE_BOTTOM, CONTENT_TOP,
-  titleSlide, liSlide, cfuSlide, closingSlide,
+  titleSlide, liSlide, cfuSlide, closingSlide, contentSlide,
   workedExSlide, exitTicketSlide, addStageBadge,
   addTextOnShape, addCard, addFooter, addTopBar, addTitle, addBadge,
   withReveal,
@@ -30,7 +30,7 @@ const {
 } = T;
 
 const SESSION = 2;
-const TOTAL = 5;
+const TOTAL = 10;
 const UNIT_TITLE = "Part, Part, Whole";
 const FOOTER = `Part, Part, Whole | Lesson ${SESSION} of ${TOTAL} | Foundation Numeracy`;
 const OUT_DIR = "output/PPWi_Lesson2_Make_5";
@@ -438,6 +438,27 @@ One core student resource today. The answer key is for the teacher.
 
 [General: Resources]`;
 
+const NOTES_LAUNCH = `SAY:
+- Yesterday we learned new words: whole and parts.
+- Look at this mat. Here is the whole.
+- Here are the parts.
+- Whisper to your partner: what is the whole? What are the parts?
+
+DO:
+- Display the PPW mat showing whole 4, parts 2 and 2 from yesterday.
+- Allow 15 seconds for partner whisper.
+- Cold call 1 student to say the language pattern aloud.
+- Say: "Today we will make a bigger whole - the whole is 5."
+
+TEACHER NOTES:
+Quick recall of yesterday's language. Keep it short - 60 seconds. The aim is to lock in "whole" and "parts" before the I Do extends to 5.
+
+WATCH FOR:
+- Pairs who use the words whole and parts - secure.
+- Pairs who count instead of using the words - prompt: "What is the big number called?"
+
+[General: Launch | VTLM 2.0: Activate Prior Knowledge]`;
+
 // ─── Build ──────────────────────────────────────────────────────────────────
 
 async function build() {
@@ -448,7 +469,29 @@ async function build() {
   titleSlide(pres, UNIT_TITLE, "Lesson 2: Make 5",
     `Foundation Numeracy | Lesson ${SESSION} of ${TOTAL}`, NOTES_TITLE);
 
-  // Slides 2-3: Daily Review with reveal — Counting fluency
+  // Slide 2: Teacher Resources
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
+  // Slide 3: Launch — recall whole/parts from yesterday and connect to today
+  contentSlide(pres, "Launch", C.SUCCESS, "Whole and Parts: Recall",
+    [
+      "Yesterday we learned: whole and parts.",
+      "What is the whole? What are the parts?",
+      "Today's whole is bigger - we will make 5.",
+    ],
+    NOTES_LAUNCH, FOOTER,
+    (slide, lg) => {
+      // PPW mat from yesterday: whole 4, parts 2 and 2
+      drawPpwMat(slide, lg.rightX, lg.panelTopPadded + 0.10, lg.rightW, 3.55, {
+        wholeNumber: 4,
+        partA: 2, partB: 2,
+        partAColor: "D64545",
+        partBColor: "F4C430",
+      });
+    }
+  );
+
+  // Slides 4-5: Daily Review with reveal — Counting fluency
   withReveal(
     () => {
       const s = pres.addSlide();
@@ -461,10 +504,10 @@ async function build() {
       addNumberTrack(s, 0.5, trackY, 9.0, 1, 10, [], { cellH: 0.85, fontSize: 32 });
       addNumberTrack(s, 0.5, trackY + 1.05, 9.0, 11, 20, [13], { cellH: 0.85, fontSize: 32 });
 
-      addCard(s, 1.5, trackY + 2.20, 7.0, 0.85, { strip: C.PRIMARY });
+      addCard(s, 1.5, trackY + 2.05, 7.0, 0.55, { strip: C.PRIMARY });
       s.addText("Whisper count 1 to 20. What comes after 13?", {
-        x: 1.7, y: trackY + 2.22, w: 6.6, h: 0.80,
-        fontSize: 22, fontFace: FONT_H, color: C.PRIMARY, bold: true,
+        x: 1.7, y: trackY + 2.07, w: 6.6, h: 0.50,
+        fontSize: 18, fontFace: FONT_H, color: C.PRIMARY, bold: true,
         align: "center", valign: "middle", margin: 0,
       });
 
@@ -709,9 +752,6 @@ async function build() {
       selfAssessment: "Thumbs up / sideways / down",
     },
     NOTES_CLOSING);
-
-  // Slide 17: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
 
   // Write PPTX
   fs.mkdirSync(OUT_DIR, { recursive: true });

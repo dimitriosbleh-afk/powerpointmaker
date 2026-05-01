@@ -3,3 +3,5 @@ slidetemp/
 output/
 .DS_Store
 slide-*.jpg
+__pycache__/
+*.pyc

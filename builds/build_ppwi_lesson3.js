@@ -1,7 +1,7 @@
 "use strict";
 
 // Part, Part, Whole Introduction Unit — Lesson 3: Make 6 and 7
-// Foundation Numeracy | Lesson 3 of 5 | Variant 0
+// Foundation Numeracy | Lesson 3 of 10 | Variant 0
 // VC2MFN04
 // Daily Review: Subitising 0-10
 // Fluency: Teen Numbers - order numbers to 20
@@ -21,7 +21,7 @@ const T = createTheme("numeracy", "foundation", weekToVariant(1));
 const {
   C, FONT_H, FONT_B,
   SAFE_BOTTOM, CONTENT_TOP,
-  titleSlide, liSlide, cfuSlide, closingSlide,
+  titleSlide, liSlide, cfuSlide, closingSlide, contentSlide,
   workedExSlide, exitTicketSlide, addStageBadge,
   addTextOnShape, addCard, addFooter, addTopBar, addTitle, addBadge,
   withReveal,
@@ -30,7 +30,7 @@ const {
 } = T;
 
 const SESSION = 3;
-const TOTAL = 5;
+const TOTAL = 10;
 const UNIT_TITLE = "Part, Part, Whole";
 const FOOTER = `Part, Part, Whole | Lesson ${SESSION} of ${TOTAL} | Foundation Numeracy`;
 const OUT_DIR = "output/PPWi_Lesson3_Make_6_and_7";
@@ -438,6 +438,27 @@ One core student resource today.
 
 [General: Resources]`;
 
+const NOTES_LAUNCH = `SAY:
+- Yesterday we found ways to make 5.
+- Look at this mat. The whole is 5. The parts are 3 and 2.
+- Whisper to your partner: what is the whole? What are the parts?
+- Today our wholes are bigger - 6 and 7.
+
+DO:
+- Display the PPW mat showing whole 5, parts 3 and 2.
+- Allow 15 seconds for partner whisper.
+- Cold call 1 student.
+- Hold up 6 counters and say "Today we will make 6, then 7."
+
+TEACHER NOTES:
+Quick recall of yesterday's "Make 5" plus a clear bridge to today's bigger wholes. Keep it under 90 seconds.
+
+WATCH FOR:
+- Pairs who use whole and parts language confidently - secure.
+- Pairs who only point - prompt: "What is the big number called?"
+
+[General: Launch | VTLM 2.0: Activate Prior Knowledge]`;
+
 // ─── Build ──────────────────────────────────────────────────────────────────
 
 async function build() {
@@ -448,6 +469,27 @@ async function build() {
   titleSlide(pres, UNIT_TITLE, "Lesson 3: Make 6 and 7",
     `Foundation Numeracy | Lesson ${SESSION} of ${TOTAL}`, NOTES_TITLE);
 
+  // Slide 2: Teacher Resources
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
+  // Slide 3: Launch — recall make 5 and connect to today's bigger wholes
+  contentSlide(pres, "Launch", C.SUCCESS, "Yesterday: Make 5",
+    [
+      "Yesterday we made 5 in lots of ways.",
+      "What is the whole? What are the parts?",
+      "Today our wholes are 6 and 7.",
+    ],
+    NOTES_LAUNCH, FOOTER,
+    (slide, lg) => {
+      drawPpwMat(slide, lg.rightX, lg.panelTopPadded + 0.10, lg.rightW, 3.55, {
+        wholeNumber: 5,
+        partA: 3, partB: 2,
+        partAColor: "D64545",
+        partBColor: "F4C430",
+      });
+    }
+  );
+
   // Slides 2-3: Daily Review with reveal — Subitising
   withReveal(
     () => {
@@ -456,18 +498,19 @@ async function build() {
       addStageBadge(s, 1, "Daily Review");
       addTitle(s, "How Many Dots?", { color: C.ACCENT });
 
-      addCard(s, 0.5, CONTENT_TOP, 9.0, SAFE_BOTTOM - CONTENT_TOP, { strip: C.ACCENT });
+      addCard(s, 0.5, CONTENT_TOP, 9.0, 3.0, { strip: C.ACCENT });
 
-      // One large dot card showing 5
-      addDotCard(s, 3.5, CONTENT_TOP + 0.30, 3.0, 5, {
+      // One large dot card showing 5 (sized to leave clear gap above reveal bar at y=4.45)
+      addDotCard(s, 3.95, CONTENT_TOP + 0.10, 2.1, 5, {
         dotColor: C.PRIMARY,
         cardFill: C.WHITE,
         borderColor: C.CHARCOAL,
       });
 
+      // Subitise routine cue (kept compact above reveal bar)
       s.addText("Say it. Don't count.", {
-        x: 0.7, y: CONTENT_TOP + 3.50, w: 8.6, h: 0.50,
-        fontSize: 26, fontFace: FONT_H, color: C.ACCENT, bold: true,
+        x: 0.7, y: CONTENT_TOP + 2.65, w: 8.6, h: 0.30,
+        fontSize: 18, fontFace: FONT_H, color: C.ACCENT, bold: true,
         align: "center", valign: "middle", margin: 0,
       });
 
@@ -621,31 +664,31 @@ async function build() {
       addStageBadge(s, 3, "We Do");
       addTitle(s, "Find the Parts of 7", { color: STAGE_COLORS["3"] });
 
-      addCard(s, 0.5, CONTENT_TOP, 4.5, SAFE_BOTTOM - CONTENT_TOP, { strip: STAGE_COLORS["3"] });
+      addCard(s, 0.5, CONTENT_TOP, 4.5, 3.0, { strip: STAGE_COLORS["3"] });
 
-      // 7 counters: 3 red, 4 yellow (4-3 layout for clarity)
-      drawCounterRow(s, 0.75, CONTENT_TOP + 0.55, 4, 3, { size: 0.62, gap: 0.10 });
-      drawCounterRow(s, 0.75 + 0.62 + 0.10, CONTENT_TOP + 0.55 + 0.62 + 0.10, 3, 0, { size: 0.62, gap: 0.10 });
+      // 7 counters in a single clean row: 3 red + 4 yellow
+      // 7 * 0.50 + 6 * 0.10 = 4.10 wide; centred in 4.5" card from x=0.5
+      drawCounterRow(s, 0.70, CONTENT_TOP + 0.55, 7, 3, { size: 0.50, gap: 0.10 });
 
       s.addText("Whole = 7", {
-        x: 0.6, y: CONTENT_TOP + 2.10, w: 4.3, h: 0.50,
+        x: 0.6, y: CONTENT_TOP + 1.40, w: 4.3, h: 0.50,
         fontSize: 26, fontFace: FONT_H, color: STAGE_COLORS["3"], bold: true,
         align: "center", valign: "middle", margin: 0,
       });
 
       s.addText("How many RED? How many YELLOW?", {
-        x: 0.6, y: CONTENT_TOP + 2.70, w: 4.3, h: 0.50,
+        x: 0.6, y: CONTENT_TOP + 2.00, w: 4.3, h: 0.50,
         fontSize: 15, fontFace: FONT_B, color: C.CHARCOAL,
         align: "center", valign: "middle", margin: 0,
       });
 
-      addCard(s, 5.2, CONTENT_TOP, 4.3, SAFE_BOTTOM - CONTENT_TOP, { strip: C.SECONDARY });
+      addCard(s, 5.2, CONTENT_TOP, 4.3, 3.0, { strip: C.SECONDARY });
       s.addText([
         { text: "On your whiteboard:", options: { fontSize: 22, bold: true, color: C.PRIMARY, breakLine: true } },
         { text: "", options: { fontSize: 10, breakLine: true } },
         { text: "7 = ____ and ____", options: { fontSize: 28, bold: true, color: C.CHARCOAL } },
       ], {
-        x: 5.4, y: CONTENT_TOP + 0.35, w: 3.9, h: SAFE_BOTTOM - CONTENT_TOP - 0.55,
+        x: 5.4, y: CONTENT_TOP + 0.35, w: 3.9, h: 2.55,
         fontFace: FONT_B, margin: 0, valign: "top",
       });
 
@@ -728,9 +771,6 @@ async function build() {
       selfAssessment: "Thumbs up / sideways / down",
     },
     NOTES_CLOSING);
-
-  // Slide 17: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const pptxPath = path.join(OUT_DIR, "PPWi_Lesson3_Make_6_and_7.pptx");

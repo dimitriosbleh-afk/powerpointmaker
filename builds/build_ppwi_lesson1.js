@@ -21,7 +21,7 @@ const T = createTheme("numeracy", "foundation", weekToVariant(1));
 const {
   C, FONT_H, FONT_B,
   SAFE_BOTTOM, CONTENT_TOP,
-  titleSlide, liSlide, cfuSlide, closingSlide,
+  titleSlide, liSlide, cfuSlide, closingSlide, contentSlide,
   workedExSlide, exitTicketSlide, addStageBadge,
   addTextOnShape, addCard, addFooter, addTopBar, addTitle, addBadge,
   withReveal, runSlideDiagnostics,
@@ -30,7 +30,7 @@ const {
 } = T;
 
 const SESSION = 1;
-const TOTAL = 5;
+const TOTAL = 10;
 const UNIT_TITLE = "Part, Part, Whole";
 const FOOTER = `Part, Part, Whole | Lesson ${SESSION} of ${TOTAL} | Foundation Numeracy`;
 const OUT_DIR = "output/PPWi_Lesson1_Parts_and_Whole";
@@ -468,6 +468,28 @@ Only one printed student resource for this lesson. Most of the work happens with
 
 [General: Resources]`;
 
+const NOTES_LAUNCH = `SAY:
+- Look at this. I have 4 counters.
+- See them all together? They are one big group.
+- Now I move them. Some here. Some here.
+- Same 4 counters. Two little groups now.
+- Today we learn the names for these little groups.
+
+DO:
+- Hold up 4 two-sided counters in a small cup.
+- Tip them out together on the floor mat or document camera.
+- Slide them into 2 groups (2 and 2).
+- Point to the whole each time and say "still 4".
+
+TEACHER NOTES:
+This launch hooks students into the idea that one number can be shown in different groups. It sets up the part-part-whole language in I Do without naming it yet. Keep it short - 60 to 90 seconds.
+
+WATCH FOR:
+- Students who say "still 4" - they noticed the whole stays the same.
+- Students who recount - that is fine for now.
+
+[General: Launch | VTLM 2.0: Activate Prior Knowledge]`;
+
 // ─── Build ──────────────────────────────────────────────────────────────────
 
 async function build() {
@@ -478,7 +500,60 @@ async function build() {
   titleSlide(pres, UNIT_TITLE, "Lesson 1: What is a Part? What is a Whole?",
     `Foundation Numeracy | Lesson ${SESSION} of ${TOTAL}`, NOTES_TITLE);
 
-  // Slides 2-3: Daily Review with reveal — Digit formation: 13
+  // Slide 2: Teacher Resources (immediately after title per megaprompt §19)
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
+  // Slide 3: Launch — connect prior knowledge to today's new learning
+  contentSlide(pres, "Launch", C.SUCCESS, "Same Number, Different Groups",
+    [
+      "I have 4 counters.",
+      "All together: one big group.",
+      "Now I move them: two little groups.",
+    ],
+    NOTES_LAUNCH, FOOTER,
+    (slide, lg) => {
+      // Visual: 4 counters all together (top), 4 split 2 + 2 (bottom)
+      const visualX = lg.rightX + 0.10;
+      const visualY = lg.panelTopPadded + 0.15;
+
+      // Label A
+      slide.addText("All together", {
+        x: visualX, y: visualY, w: lg.rightW - 0.20, h: 0.36,
+        fontSize: 16, fontFace: FONT_H, color: C.PRIMARY, bold: true,
+        align: "center", valign: "middle", margin: 0,
+      });
+      // 4 counters all in one row, all red
+      drawCounterRow(slide, visualX + 0.55, visualY + 0.45, 4, 4,
+        { size: 0.55, gap: 0.12 });
+
+      // Divider
+      slide.addShape("line", {
+        x: visualX + 0.20, y: visualY + 1.30, w: lg.rightW - 0.60, h: 0,
+        line: { color: C.MUTED || C.CHARCOAL, width: 1, dashType: "dash" },
+      });
+
+      // Label B
+      slide.addText("Two little groups", {
+        x: visualX, y: visualY + 1.45, w: lg.rightW - 0.20, h: 0.36,
+        fontSize: 16, fontFace: FONT_H, color: C.PRIMARY, bold: true,
+        align: "center", valign: "middle", margin: 0,
+      });
+      // 4 counters split 2 (red) | gap | 2 (yellow)
+      drawCounterRow(slide, visualX + 0.30, visualY + 1.95, 2, 2,
+        { size: 0.55, gap: 0.12, colorA: "D64545" });
+      drawCounterRow(slide, visualX + 1.95, visualY + 1.95, 2, 0,
+        { size: 0.55, gap: 0.12, colorB: "F4C430" });
+
+      // "Still 4" callout
+      slide.addText("Still 4!", {
+        x: visualX, y: visualY + 2.75, w: lg.rightW - 0.20, h: 0.42,
+        fontSize: 22, fontFace: FONT_H, color: C.SUCCESS, bold: true,
+        align: "center", valign: "middle", margin: 0,
+      });
+    }
+  );
+
+  // Slides 4-5: Daily Review with reveal — Digit formation: 13
   withReveal(
     () => {
       const s = pres.addSlide();
@@ -704,11 +779,47 @@ async function build() {
     }
   );
 
-  // Slides 12-13: CFU Hinge with reveal — Is this right?
+  // Slides 12-13: CFU Hinge with reveal — Is this right? (custom slide showing counters)
   withReveal(
-    () => cfuSlide(pres, "CFU", "Is This Right?", "Thumbs Up or Thumbs Down",
-      "Look at the counters.\n\nWhole is 5.\nParts are 2 and 1.\n\nIs that right?",
-      NOTES_CFU2, FOOTER),
+    () => {
+      const s = pres.addSlide();
+      addTopBar(s, C.ALERT);
+      addBadge(s, "CFU", { color: C.ALERT });
+      addTitle(s, "Is This Right?", { color: C.ALERT });
+
+      addTextOnShape(s, "✓ CHECK", {
+        x: 7.7, y: 0.20, w: 1.7, h: 0.42, rectRadius: 0.08,
+        fill: { color: C.WHITE },
+        line: { color: C.ALERT, width: 1.5 },
+      }, { fontSize: 14, fontFace: FONT_B, color: C.ALERT, bold: true });
+
+      // Left card: 3 counters (2 red, 1 yellow)
+      addCard(s, 0.5, CONTENT_TOP, 4.5, 3.0, { strip: C.ALERT });
+      drawCounterRow(s, 1.05, CONTENT_TOP + 0.55, 3, 2, { size: 0.85, gap: 0.20 });
+      s.addText("These counters", {
+        x: 0.6, y: CONTENT_TOP + 1.85, w: 4.3, h: 0.40,
+        fontSize: 18, fontFace: FONT_B, color: C.CHARCOAL,
+        align: "center", valign: "middle", margin: 0,
+      });
+
+      // Right card: false claim
+      addCard(s, 5.2, CONTENT_TOP, 4.3, 3.0, { strip: C.ALERT });
+      s.addText([
+        { text: "I say:", options: { fontSize: 22, bold: true, color: C.PRIMARY, breakLine: true } },
+        { text: "", options: { fontSize: 8, breakLine: true } },
+        { text: "Whole is 5.", options: { fontSize: 26, bold: true, color: C.CHARCOAL, breakLine: true } },
+        { text: "Parts are 2 and 1.", options: { fontSize: 26, bold: true, color: C.CHARCOAL, breakLine: true } },
+        { text: "", options: { fontSize: 8, breakLine: true } },
+        { text: "Is that right?", options: { fontSize: 22, italic: true, color: C.ALERT } },
+      ], {
+        x: 5.4, y: CONTENT_TOP + 0.30, w: 3.9, h: 2.55,
+        fontFace: FONT_B, margin: 0, valign: "top",
+      });
+
+      addFooter(s, FOOTER);
+      s.addNotes(NOTES_CFU2);
+      return s;
+    },
     (slide) => {
       addTextOnShape(slide, "Thumbs DOWN!  The whole is 3, not 5.", {
         x: 1.0, y: 4.45, w: 8.0, h: 0.55, rectRadius: 0.10,
@@ -772,9 +883,6 @@ async function build() {
       selfAssessment: "Thumbs up / sideways / down",
     },
     NOTES_CLOSING);
-
-  // Slide 17: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
 
   // Write PPTX
   fs.mkdirSync(OUT_DIR, { recursive: true });
