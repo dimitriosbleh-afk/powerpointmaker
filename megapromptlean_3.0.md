@@ -1533,6 +1533,7 @@ Check:
 - diagrams match the equation
 - examples and problem pairs have the same deep structure
 - division signs are not accidentally written as addition
+- the division symbol on slides and in resources is the proper division glyph "÷", not a forward slash "/". Use "÷" in equations, worked examples, answer keys, fluency prompts, scaffolds and any other student-facing or teacher-facing maths text. The forward slash "/" is reserved for fractions written inline (for example "1/2") and must not be used as a division operator.
 - area models show the correct overlap
 - fraction strips show equal parts
 - denominators match the drawn model
@@ -3599,3 +3600,5 @@ Number Fluency Focus: “ XYZ ”
 Daily Review Focus: “ XYZ ”
 
 Do not enter plan mode, proceed with the lesson creation in bypass permissions. Ensure you remain active while the lessons are being created and continue to be until they are fully complete, please. 
+
+Please put all the powerpoints into the one folder, just copy within that, dont worry about links breaking. Use this: 
