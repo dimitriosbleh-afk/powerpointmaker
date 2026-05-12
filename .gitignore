@@ -5,3 +5,4 @@ output/
 slide-*.jpg
 __pycache__/
 *.pyc
+.claude/
