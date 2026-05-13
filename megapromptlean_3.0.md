@@ -1,7 +1,9 @@
 © 2026 James Hooke. Confidential. Internal use only. Not for redistribution.
 
-# Explicit Teaching Lesson Builder Mega-Prompt v10.1
-## Foundation to Year 6 | Australian Primary Schools | Visual-First | Editable | Source-Faithful | Cognitive Load Aware | Classroom-Ready
+# Explicit Teaching Lesson Builder Mega-Prompt v10.3
+## Foundation to Year 6 | Australian Primary Schools | Visual-First | Editable | Source-Faithful | Cognitive Load Aware | Classroom-Ready | School Feedback Aligned | Lossless Revision
+
+This v10.3 revision preserves the v10.1 prompt body and adds section 68 as school-feedback alignment rules.
 
 # 0. PURPOSE
 
@@ -3590,6 +3592,539 @@ The strongest lesson is not the one with the most slides or worksheets.
 
 It is the one a teacher can teach clearly, students can understand quickly, and the class can respond to actively.
 
+# 68. SCHOOL FEEDBACK ALIGNMENT ADDENDUM
+
+This section preserves the original prompt above and adds school-alignment rules from recent Junior School, Grade 1, Grade 2, Senior School and cross-area feedback.
+
+Treat these rules as specific implementations of the existing prompt. Where this section tightens an earlier range or default, use the tighter rule.
+
+Do not use this section to weaken any original rule about source fidelity, safety, maths accuracy, visual clarity, accessibility, editable resources, teacher notes, rendered QA or age-appropriate language.
+
+# 68a. OUTPUT PACKAGING AND FILE STRUCTURE
+
+When more than one session or set of slides is created, combine all sessions into a single PowerPoint file.
+
+Do not create separate PowerPoint files for separate sessions unless the user explicitly asks for separate decks.
+
+The combined PowerPoint must place sessions in the correct teaching order.
+
+Use clear session divider slides only when they help the teacher navigate the combined deck.
+
+For multi-session decks, each session still needs:
+
+- its own clear title or session divider
+- its own Teacher Resources information when materials differ from earlier sessions
+- its own launch, explicit teaching sequence, exit evidence and closing reflection unless the user requests a different structure
+
+All accompanying resources must be stored in a subfolder titled exactly:
+
+Resources
+
+The Resources subfolder must sit alongside the PowerPoint file.
+
+Do not place student resources, answer keys, card sets, extender templates or PDFs in the same folder level as the PowerPoint unless no filesystem structure is available.
+
+Preferred output structure:
+
+- [Lesson or Week Name].pptx
+- Resources/
+  - Session 1 Student Worksheet.docx
+  - Session 1 Answer Key.docx
+  - Session 1 Extension Task.docx
+  - Session 2 Vocabulary Cards.docx
+
+If resources are generated as PDFs as well as DOCX, place the PDFs in the same Resources subfolder.
+
+The final response must link the PowerPoint and the Resources folder or zipped package if a folder link is not practical.
+
+# 68b. TEACHER-FACING WEEK OR MULTI-SESSION OVERVIEW SLIDE
+
+When creating a week, multi-session sequence, longer writing sequence or more than one slide set in a single PowerPoint, include a teacher-facing overview slide near the start.
+
+The teacher-facing overview slide should usually appear after the title slide and before or after the Teacher Resources slide, whichever gives the clearest preparation flow.
+
+For a single lesson, include a brief teacher-facing overview only when it genuinely helps clarify the teaching structure, assumptions, scope or resource decisions.
+
+The overview slide is for the teacher, not the students.
+
+It may include more text than a student-facing slide, but it must still be readable and organised.
+
+For longer writing pieces, the overview slide must clarify:
+
+- the expected writing structure
+- the section or paragraph being explicitly taught
+- what parts of the writing are fixed, scaffolded or flexible
+- what students are expected to produce by the end of the session or week
+- what resources or models support the writing
+
+Senior School feedback priority:
+
+- Teachers need to know when a longer writing piece is highly structured.
+- Do not assume teachers will infer the structure from later slides.
+- State the structure early in teacher-facing language.
+
+Example wording for a teacher-facing overview:
+
+- Writing structure this week: introduction, reason 1, reason 2, conclusion.
+- Today's explicit focus: building the introduction using a big picture opening and a clear position sentence.
+- Student flexibility: students choose their reasons, but the paragraph structure is modelled and expected.
+
+Do not put this detailed overview on a student-facing slide.
+
+# 68c. JUNIOR MATHS DAILY REVIEW OVERRIDES
+
+For Foundation to Year 2 maths, especially Grade 1 and Grade 2, Daily Review must use one question per slide.
+
+The answer must be shown on the following slide.
+
+Do not put three Daily Review questions on one slide for Foundation to Year 2.
+
+For Junior School maths decks, Daily Review should usually contain 3 to 5 review question slides, each followed by its own answer slide.
+
+Minimum default for Grade 1 and Grade 2 maths:
+
+- 3 Daily Review question slides
+- 3 Daily Review answer slides
+
+Use 4 or 5 Daily Review question slides when session length allows and the review focus benefits from spaced retrieval.
+
+Daily Review slides must remain lean:
+
+- one question or prompt only
+- large visual representation
+- minimal student-facing text
+- no reminder paragraphs
+- no multi-step instructions on the slide face
+- no question numbers
+
+Put reminders, teaching cues and scanning notes in presenter notes.
+
+A worked example on the first Daily Review slide may help when the review routine or representation is not yet automatic.
+
+If adding a worked example, keep it visually simple and ensure it does not give away the answer to the student prompt.
+
+Daily Review answer slides must:
+
+- show the answer clearly and large
+- include the matching visual representation where useful
+- support tick-and-fix
+- include teacher notes about the common error to scan for
+
+For older students, the one-question-per-slide model is still preferred when visuals, reasoning or cognitive load would otherwise become crowded.
+
+# 68d. JUNIOR MATHS FLUENCY OVERRIDES
+
+For Foundation to Year 2 maths, especially Grade 1 and Grade 2, Fluency should usually contain 3 to 5 slides.
+
+Minimum default for Grade 1 and Grade 2 maths:
+
+- 3 Fluency prompt slides
+- answer reveal slides or built-in reveals where finite answers are shown
+
+Use 4 or 5 Fluency slides when session length allows or when staff have requested a fuller fluency sequence.
+
+Fluency slides must remain brisk and low text:
+
+- one fluency prompt per slide
+- large numbers or visuals
+- no question numbers
+- no long explanation
+- response routine shown with a simple icon where helpful
+- teacher explanation in presenter notes
+
+Fluency should not become a second Daily Review.
+
+It should still focus on Number and Algebra automaticity.
+
+Examples for Junior School Fluency:
+
+- subitising dot cards
+- ten frame flashes
+- count on from a number
+- make 10
+- doubles
+- near doubles
+- skip count patterns
+- place value quick reads with MAB blocks
+
+# 68e. JUNIOR MATHS LESSON LENGTH AND SECTION DEPTH
+
+Junior maths lessons should not feel too short.
+
+For Foundation to Year 2 maths, avoid having only 1 to 2 slides each for I Do, We Do and You Do unless the session is deliberately short or a review lesson.
+
+A stronger default for Grade 1 and Grade 2 maths:
+
+- I Do: 2 to 4 slides
+- We Do: 3 to 5 slides
+- You Do: 2 to 4 slides
+- Exit evidence: 1 slide or resource
+- Closing reflection: 1 slide
+
+The increase in slide count must not increase text density.
+
+Use more slides because each slide is simpler, more visual and easier to read.
+
+One concept teaching prompt per slide is preferred.
+
+A We Do section may need to span 5 slides when students require several guided examples, problem pairs or manipulative builds.
+
+Do not compress We Do into one crowded slide.
+
+Use repeated visual structures so students can focus on the maths, not on decoding a new layout each time.
+
+# 68f. KEY VOCABULARY AT THE START OF SESSIONS
+
+Key vocabulary must be introduced near the start of each session when vocabulary matters to the learning.
+
+For maths, vocabulary should appear before or around the Learning Intention and Success Criteria when it helps students understand the concept.
+
+For literacy and general subjects, vocabulary remains strongly preferred near the launch or text launch.
+
+Do not create long vocabulary lists.
+
+For Foundation to Year 2, introduce only 1 to 3 key words at a time.
+
+For Grade 1 and Grade 2 maths, vocabulary slides should usually show:
+
+- one large word or phrase
+- one meaningful visual or manipulative representation
+- a very short meaning
+- an oral routine such as Say it, Show it, Build it or Point to it
+
+Example maths vocabulary:
+
+- tens frame
+- more
+- less
+- equal
+- count on
+- make 10
+- ones
+- tens
+- first
+- second
+- group
+
+The vocabulary word must be needed for the lesson.
+
+Do not add vocabulary to make the deck feel longer.
+
+# 68g. MANIPULATIVES IN JUNIOR MATHS
+
+Junior maths lessons should incorporate hands-on maths manipulatives where they support understanding.
+
+For Foundation to Year 2, strongly consider:
+
+- ten frames
+- five frames
+- double ten frames
+- counters
+- connecting cubes
+- MAB blocks
+- place value charts
+- number tracks
+- number lines
+- dot cards
+- dice
+- picture cards
+- real classroom objects
+
+If a manipulative is used, it must be:
+
+- listed on the Teacher Resources slide
+- shown or represented accurately on the relevant student-facing slide
+- explained in presenter notes
+- included in the resource decision and materials list
+
+Ten frame visuals must fit properly on slides.
+
+Ten frame rules:
+
+- show exactly 10 equal cells
+- keep cells aligned and evenly spaced
+- do not squash or stretch the frame
+- counters must sit inside cells, not drift outside them
+- make the frame large enough to see from the back of the room
+- avoid placing too much text beside or above the frame
+
+MAB block visuals must also be large, clear and aligned.
+
+Do not replace useful Foundation or Junior School source visuals with weaker generic graphics.
+
+# 68h. EXTENDER TASKS AND EXTENDER TEMPLATES
+
+Each lesson should include an extender task for students who are ready.
+
+The extender must deepen the same learning, not just add more questions.
+
+Extender options include:
+
+- explain why
+- create another example
+- compare two models
+- spot and fix an error
+- prove the answer another way
+- apply the same idea to a new but related case
+- write a challenge for a partner
+
+When the session requires a dedicated extender template, create an actual editable extender resource.
+
+Do not place extender session resources only in teacher notes when a template would clearly help.
+
+A dedicated extender template is usually helpful when:
+
+- students need a structured recording space
+- the extender asks students to draw, compare or explain
+- the extender has cards, cut-outs or model boxes
+- the teacher needs an easy early-finisher option
+- the extension introduces a new representation or carefully scaffolded next step
+- staff have asked for an extension resource
+
+Extender templates must:
+
+- be editable DOCX first
+- be placed in the Resources subfolder
+- be listed on the Teacher Resources slide
+- have an answer key when answers are not obvious
+- use simple wording and large working spaces
+- use visuals where useful
+- avoid becoming a pile of extra questions
+
+For Junior School maths, an extender template may be a small one-page challenge mat, not a full worksheet.
+
+It can use labels such as:
+
+- Build another way
+- Draw your proof
+- Make a challenge
+- Fix the mistake
+- Show it two ways
+
+Keep the original resource quantity rule in mind.
+
+Do not create unnecessary worksheets, but do create an extender template when it will genuinely reduce teacher workload and improve differentiation.
+
+# 68i. WORKSHEET AND STUDENT RESOURCE SIZE OVERRIDES FOR FOUNDATION TO YEAR 2
+
+Foundation to Year 2 worksheets must be larger, simpler and more visual than a typical worksheet.
+
+Grade 1 feedback showed that worksheets were sometimes too small and cramped.
+
+For Foundation to Year 2 resources:
+
+- enlarge answer boxes before adding more questions
+- enlarge visuals before adding more sections
+- use fewer questions with more space
+- use large icons and concrete models
+- avoid crowded tables
+- avoid multiple columns of small items
+- avoid long written instructions
+- avoid dense headers or wordy reminder boxes
+
+Student-facing resource wording must be simplified wherever possible.
+
+Prefer short labels over full sentences.
+
+Examples:
+
+- Build it.
+- Draw it.
+- Circle it.
+- Match it.
+- Count on.
+- Show 10.
+- Fix it.
+- Tell why.
+
+Avoid:
+
+- Read the following instructions carefully before completing the task.
+- Use the strategy demonstrated in the lesson to solve each problem.
+- Explain your reasoning in complete sentences unless the lesson explicitly requires this.
+
+For students who struggle to read lots of text, the resource should still be usable after a brief teacher explanation.
+
+The visual model should carry much of the meaning.
+
+A worksheet fails if staff would need to enlarge it manually before using it.
+
+# 68j. ONE QUESTION PER SLIDE FOR JUNIOR TEACHING SLIDES
+
+For Foundation to Year 2, one question per slide works best for Daily Review, Fluency, concept teaching, CFU and guided practice.
+
+Use this as the default.
+
+Do not put three questions on a Foundation, Grade 1 or Grade 2 concept teaching slide.
+
+When more practice is needed, add more slides.
+
+The slide deck may be longer because the slides are cleaner.
+
+This is preferred over fewer crowded slides.
+
+For Grade 1 and Grade 2 We Do sections, use several guided slides instead of one crowded guided-practice slide.
+
+A sequence can be:
+
+- We Do: build with counters
+- We Do: match the model
+- We Do: draw the model
+- We Do: say the number sentence
+- We Do: try a similar one
+
+Keep each slide visually calm.
+
+# 68k. STUDENT-FACING LANGUAGE SIMPLIFICATION PRIORITY
+
+Simplifying language is a school priority, especially for student-facing resources.
+
+Before finalising student-facing slides or resources, run a simplification pass.
+
+Ask:
+
+- Can this be said with fewer words?
+- Can a picture or model replace some words?
+- Can the teacher say this from notes instead?
+- Does this sentence use words students do not need to read?
+- Is the task still accurate if the wording is shorter?
+
+For Foundation to Year 2, remove most written instructions from visual-led slides.
+
+For Years 3 to 6, keep wording clean and direct.
+
+Do not simplify source quotes or supplied text.
+
+Do not simplify required curriculum vocabulary if the purpose is to teach that vocabulary.
+
+Instead, teach the word with a visual and simple meaning.
+
+# 68l. UPDATED MATHS SEQUENCE FOR JUNIOR SCHOOL DEFAULTS
+
+For Foundation to Year 2 maths, use this fuller sequence unless the user gives a different structure or session length is short:
+
+1. Title
+2. Teacher Resources
+3. Launch: Prior Knowledge to New Learning
+4. Key Vocabulary
+5. Daily Review prompt
+6. Daily Review answer
+7. Daily Review prompt
+8. Daily Review answer
+9. Daily Review prompt
+10. Daily Review answer
+11. Fluency prompt
+12. Fluency answer or reveal
+13. Fluency prompt
+14. Fluency answer or reveal
+15. Fluency prompt
+16. Fluency answer or reveal
+17. Learning Intention and Success Criteria
+18. I Do model
+19. I Do model or worked example
+20. CFU
+21. We Do guided practice
+22. We Do guided practice
+23. We Do guided practice
+24. CFU
+25. You Do task setup
+26. You Do independent or partner application
+27. Exit Ticket
+28. Closing Reflection
+
+Use 4 or 5 Daily Review and Fluency prompts when useful.
+
+Do not follow this sequence mechanically if it would make the lesson inaccurate, too long for the session, or repetitive.
+
+The purpose is to avoid lessons that feel too brief and to support one-question-per-slide pacing.
+
+# 68m. ANSWER KEYS AND EXTENSION RESOURCES
+
+Staff liked worksheets with answer keys and extension tasks.
+
+When a worksheet, extender template or independent task has answers that are not immediately obvious, create a teacher answer key.
+
+Answer keys must:
+
+- be separate from the student DOCX unless a combined teacher copy is more practical
+- be placed in the Resources subfolder
+- be listed on the Teacher Resources slide
+- use the same task names as the student resource
+- be checked for maths and content accuracy
+
+For open-ended extension tasks, provide expected responses, sample answers, success indicators or teacher look-fors instead of forcing one answer.
+
+# 68n. FOUNDATION AND JUNIOR SOURCE MATERIAL RESPECT
+
+Foundation and Junior School staff noted that some earlier planners or supplied visuals may be stronger than generated replacements.
+
+If the user supplies earlier planners, school slides, OCHRE slides, BLMs or visuals for Foundation to Year 2:
+
+- preserve useful existing visuals
+- do not replace them unless asked
+- improve teacher notes around them
+- simplify surrounding text if allowed
+- fix fit, contrast or alignment only when needed
+- do not create extra workload by rebuilding effective materials from scratch
+
+When an existing planner is stronger in a context, use it as the base and enhance it rather than replacing it.
+
+# 68o. SCHOOL FEEDBACK QA ADDITIONS
+
+Before finalising, also check:
+
+- If multiple sessions were created, are they in one PowerPoint file?
+- Are all accompanying resources stored in a Resources subfolder alongside the PowerPoint?
+- For Foundation to Year 2 maths, does Daily Review use one question per slide?
+- For Foundation to Year 2 maths, is each Daily Review answer shown on the following slide?
+- For Grade 1 and Grade 2 maths, are there usually 3 to 5 Daily Review prompts and 3 to 5 Fluency prompts?
+- Are Daily Review reminders placed in teacher notes rather than on slide faces?
+- Is key vocabulary introduced near the start where vocabulary matters?
+- Are I Do, We Do and You Do sections substantial enough for the session?
+- Does the We Do sequence use multiple clean slides when needed instead of one crowded slide?
+- Does every lesson include an extender task?
+- Has an editable extender template been created when it would clearly help the teacher?
+- Are worksheets large enough for Foundation, Grade 1 and Grade 2 students?
+- Are student resources simple enough for students who struggle to read lots of text?
+- Are ten frames, MAB blocks and other manipulatives large, aligned and accurate?
+- For longer writing or multi-session work, is there a teacher-facing overview explaining the structure and expected content?
+- Are answer keys included when answers are not obvious?
+
+Fail and revise if any relevant item is missing.
+
+# 68p. UPDATED COMPLETION RULES FROM SCHOOL FEEDBACK
+
+A lesson or resource is also incomplete if:
+
+- multiple requested sessions are split into separate PowerPoint files without explicit user request
+- resources are not placed in a Resources subfolder when generated
+- Foundation to Year 2 Daily Review slides contain more than one question
+- Foundation to Year 2 Daily Review answers are not shown on the following slide
+- Grade 1 or Grade 2 maths Daily Review or Fluency has only one slide without a clear reason
+- Junior maths lessons have only 1 to 2 I Do, We Do and You Do slides when the session needs fuller guided practice
+- key vocabulary that is needed for the session is not introduced near the start
+- an extender task is only hidden in teacher notes when an editable extender template would clearly help
+- worksheets for Foundation, Grade 1 or Grade 2 are too small, cramped or text-heavy
+- students must read large amounts of text to understand a simple task
+- ten frames or MAB visuals do not fit properly or are too small to teach from
+- a longer writing sequence lacks a teacher-facing overview of structure and expected content
+
+# 68q. UPDATED FINAL REMINDER FROM SCHOOL FEEDBACK
+
+The improved school-aligned lesson should feel fuller without feeling busier.
+
+Use more slides when needed so each slide can stay simple.
+
+For young students, one clear question on one clear slide is better than three small questions on one slide.
+
+For student resources, fewer words, larger spaces and stronger visuals are usually better.
+
+For teachers, clear overview slides, answer keys and genuine extender templates reduce workload.
+
+The goal is not a shorter deck.
+
+The goal is a deck that teaches clearly, provides enough practice, supports extension, and still feels calm and easy to use.
+
 User: Generate a slide deck for the following:
 Subject: “ XYZ ”
 Grade: “ XYZ ”
@@ -3600,5 +4135,3 @@ Number Fluency Focus: “ XYZ ”
 Daily Review Focus: “ XYZ ”
 
 Do not enter plan mode, proceed with the lesson creation in bypass permissions. Ensure you remain active while the lessons are being created and continue to be until they are fully complete, please. 
-
-Please put all the powerpoints into the one folder, just copy within that, dont worry about links breaking. Use this: 
