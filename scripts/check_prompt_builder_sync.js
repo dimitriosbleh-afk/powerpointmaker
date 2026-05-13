@@ -19,7 +19,7 @@ function main() {
 
   if (current !== expected) {
     throw new Error(
-      "prompt_builder_data.js is out of sync with CLAUDE.md or megapromptlean.md. Run `node scripts/generate_prompt_builder_data.js`."
+      "prompt_builder_data.js is out of sync with CLAUDE.md or megapromptlean_3.0.md. Run `node scripts/generate_prompt_builder_data.js`."
     );
   }
 

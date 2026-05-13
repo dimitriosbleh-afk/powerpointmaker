@@ -1,0 +1,36 @@
+{
+  "unit_folder": "Decimals_and_Fractions_Unit",
+  "unit_pptx_name": "Decimals and Fractions Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_decfrac_lesson1.js",
+      "folder": "DecFrac_Lesson1_Place_Value_With_Decimals",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_decfrac_lesson2.js",
+      "folder": "DecFrac_Lesson2_Estimation_And_Rounding",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_decfrac_lesson3.js",
+      "folder": "DecFrac_Lesson3_Adding_Decimals",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_decfrac_lesson4.js",
+      "folder": "DecFrac_Lesson4_Subtracting_Decimals",
+      "session": 4
+    },
+    {
+      "build_script": "builds/build_decfrac_lesson5.js",
+      "folder": "DecFrac_Lesson5_Adding_Fractions",
+      "session": 5
+    },
+    {
+      "build_script": "builds/build_decfrac_lesson6.js",
+      "folder": "DecFrac_Lesson6_Subtracting_Fractions_LCD",
+      "session": 6
+    }
+  ]
+}

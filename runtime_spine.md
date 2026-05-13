@@ -65,3 +65,9 @@ When using `contentSlide(..., drawRight)` or numeracy `workedExSlide(..., drawRi
 - Resource slide links must use relative paths with the `resources-sessionN/` prefix.
 - Teacher-facing PDF names must stay human-readable and session-first.
 - For visual-analysis scaffold PDFs, include the visual object on paper too. Text that describes a visual is not a visual scaffold.
+
+## Multi-session delivery
+
+- Multi-session requests (unit, week, "lessons 1 to N") are not "done" until one combined PPTX and one flat `Resources/` folder exist at `output/<unit_folder>/`.
+- Workflow: per-lesson build scripts in `builds/` → manifest at `builds/manifests/<unit>.json` → `python scripts/build_unit.py builds/manifests/<unit>.json`. The wrapper runs `build_and_check.js` per lesson then merges. Use `--skip-build` to re-merge after fixing one lesson.
+- Single-session requests do not need the merge. The per-lesson folder is the deliverable.

@@ -200,3 +200,78 @@ hyperlink: {
 ```
 
 This keeps the PPTX and its companion PDFs portable inside the same lesson folder.
+
+## Multi-Session Unit Output
+
+The per-lesson folder structure above is the **build step**. The **delivery step** for any multi-session request (a unit, a week, "lessons 1 to N") is one combined PowerPoint and one flat `Resources/` folder. See CLAUDE.md "Multi-Session Unit Delivery" for the hard rule.
+
+### Workflow
+
+1. Write one per-lesson build script per session in `builds/` as usual. Each produces its own `output/<LessonFolder>/<LessonFolder>.pptx` + `resources-session{N}/`.
+2. Write a manifest at `builds/manifests/<unit>.json`.
+3. Run `python scripts/build_unit.py builds/manifests/<unit>.json`. This:
+   - runs `node scripts/build_and_check.js` against each lesson's build script in manifest order (aborts on any gate failure);
+   - merges every per-lesson PPTX into one combined deck;
+   - copies every PDF from every `resources-session{N}/` into one flat `Resources/` folder;
+   - writes both into `output/<unit_folder>/`.
+4. The merged deck preserves slide order (manifest order), shapes, backgrounds, embedded images, and speaker notes.
+5. Resource filenames must be unique across the unit — the merge will abort with a clear error if two sessions ship a PDF with the same name. The `Session N` prefix that `formatSessionResourceName()` enforces handles this automatically.
+
+### Manifest format
+
+```json
+{
+  "unit_folder": "Decimals_and_Fractions_Unit",
+  "unit_pptx_name": "Decimals and Fractions Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_decfrac_lesson1.js",
+      "folder": "DecFrac_Lesson1_Place_Value_With_Decimals",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_decfrac_lesson2.js",
+      "folder": "DecFrac_Lesson2_Estimation_And_Rounding",
+      "session": 2
+    }
+  ]
+}
+```
+
+Fields:
+
+- `unit_folder` — name of the unit output folder under `output/`. Use underscores, no spaces.
+- `unit_pptx_name` — filename for the combined PPTX (spaces allowed). Teacher-facing.
+- `lessons[].build_script` — path from repo root to the lesson's build script.
+- `lessons[].folder` — name of the per-lesson output folder under `output/` (matches the script's `OUT_DIR`).
+- `lessons[].session` — integer session number used to locate `resources-session{N}/`.
+
+### Delivered structure
+
+```text
+output/Decimals_and_Fractions_Unit/
+  Decimals and Fractions Unit.pptx
+  Resources/
+    Session 1 Place Value Practice.pdf
+    Session 1 Answer Key.pdf
+    Session 2 Rounding and Estimation Practice.pdf
+    Session 2 Answer Key.pdf
+    ...
+```
+
+### Re-merging after a single-lesson fix
+
+If you fix one lesson later, rebuild just that lesson:
+
+```bash
+node scripts/build_and_check.js builds/build_decfrac_lesson3.js
+python scripts/build_unit.py builds/manifests/decfrac.json --skip-build
+```
+
+`--skip-build` skips the per-lesson gate for every lesson and re-runs only the merge step.
+
+### Resource hyperlinks in the merged deck
+
+Per-lesson PPTX files emit hyperlinks pointing at `resources-session{N}/<file>.pdf` (relative to the per-lesson folder). The merge step rewrites every such hyperlink target to `Resources/<file>.pdf` so the in-slide links resolve correctly from the unit folder. The rewrite runs as a post-save pass over the merged deck's slide relationship files (`scripts/merge_unit.py:rewrite_resource_hyperlinks`) and reports the number of targets rewritten. Hyperlinks with any other target (external URLs, slide-internal links, unrelated relative paths) are preserved as-is.
+
+For lessons still being delivered as a single session, the per-lesson hyperlinks work as before — the rewrite only runs as part of the unit merge.

@@ -238,12 +238,28 @@ Console warnings during build = layout bugs. Fix before shipping.
 - Science cycle topics should prefer the dedicated `cycleDiagramSlide(...)` builder over manual text-plus-arrow layouts.
 - `withReveal(buildFn, revealFn)` creates duplicate slide pairs for click-to-reveal. Use for CFU answers, We Do solutions, hinge questions. Do NOT use for I Do, exit tickets, or titles.
 - Every lesson with companion PDFs gets a resource slide via `addResourceSlide()` from `pdf_helpers.js`.
-- Output goes to `output/<LessonFolder>/` - PPTX at the root, companion PDFs in a `resources-session{N}/` subfolder where `N` is the session number within that week's sequence.
+- Per-lesson build output goes to `output/<LessonFolder>/` - PPTX at the root, companion PDFs in a `resources-session{N}/` subfolder where `N` is the session number within that week's sequence. This is the build step, not the delivery step.
 - PptxGenJS hyperlinks use relative paths - include the subfolder prefix (e.g., `resources-session3/Session 3 Worksheet.pdf`).
 - Resource names must be teacher-friendly and session-first: `Session 1 Worksheet`, `Session 1 Answer Key`, `Session 2 Enabling Scaffold`.
 - Use the same human-readable name on the resource slide and in the PDF filename stem. Avoid codes like `WH4_L16`, `SR1`, `GO1`, `ET_Lesson5`, or similar.
 - Do not use day names in resource filenames. Teachers run sessions on different days.
 - Do not use underscores in teacher-facing PDF filenames. Use spaces.
+
+## Multi-Session Unit Delivery (Required)
+
+When the user requests more than one session in a single ask (a unit, a week, a multi-day sequence, "lessons 1 to N"), the delivered output MUST be one combined PowerPoint and one flat `Resources/` subfolder. Per-lesson folders are a build-step intermediate, not the deliverable.
+
+**Workflow (do not skip the merge):**
+
+1. Write one per-lesson build script per session in `builds/` as usual.
+2. Write a manifest at `builds/manifests/<unit>.json` listing each lesson's `build_script`, `folder`, and `session` in teaching order, plus `unit_folder` and `unit_pptx_name`. Manifest format is documented in `scripts/merge_unit.py` and `docs/resource-system.md`.
+3. Run `python scripts/build_unit.py builds/manifests/<unit>.json`. This builds every lesson through `build_and_check.js` (aborting on any gate failure), then merges the decks and resources into `output/<unit_folder>/<unit_pptx_name>` + `output/<unit_folder>/Resources/<flat PDFs>`.
+4. The task is not "done" for a multi-session request until the combined unit folder exists. Do not claim completion after building per-lesson folders only.
+5. For a single-session request, the per-lesson folder IS the deliverable — no merge needed.
+
+If you fix one lesson later, rebuild just that lesson with `build_and_check.js`, then re-run `build_unit.py ... --skip-build` to re-merge without rebuilding the rest.
+
+Resource filenames must be unique across the unit (the merge flattens all PDFs into one folder). The `Session N` prefix that `pdf_helpers.js` enforces handles this automatically — do not strip it.
 
 For resource generation details and PDF helper API: read `docs/resource-system.md`.
 For ad-hoc (non-themed) presentation design guidance: read `docs/design-guide.md`.

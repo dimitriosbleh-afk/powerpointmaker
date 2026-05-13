@@ -786,7 +786,7 @@
                 return {
                     generatedAt: new Date().toISOString(),
                     claude: readText("CLAUDE.md"),
-                    megaprompt: readText("megapromptlean.md"),
+                    megaprompt: readText("megapromptlean_3.0.md"),
                     runtimeSpine: readText("runtime_spine.md")
                 };
             }
@@ -802,7 +802,7 @@
 
                 var parts = await Promise.all([
                     readText("CLAUDE.md"),
-                    readText("megapromptlean.md"),
+                    readText("megapromptlean_3.0.md"),
                     readText("runtime_spine.md")
                 ]);
 
@@ -1139,7 +1139,7 @@
 
             if (!data || !data.megaprompt || !data.claude || !data.runtimeSpine) {
                 missingDataEl.style.display = "block";
-                missingDataEl.textContent = "Missing prompt data. Keep `CLAUDE.md`, `megapromptlean.md`, and `runtime_spine.md` beside this HTML file, or regenerate `prompt_builder_data.js` from the project root.";
+                missingDataEl.textContent = "Missing prompt data. Keep `CLAUDE.md`, `megapromptlean_3.0.md`, and `runtime_spine.md` beside this HTML file, or regenerate `prompt_builder_data.js` from the project root.";
                 showToast("bad", "Prompt data not loaded.");
                 return;
             }

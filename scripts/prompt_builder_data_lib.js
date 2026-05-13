@@ -7,7 +7,7 @@ const crypto = require("crypto");
 const ROOT = path.resolve(__dirname, "..");
 const SOURCE_FILES = [
   "CLAUDE.md",
-  "megapromptlean.md",
+  "megapromptlean_3.0.md",
   "runtime_spine.md",
 ];
 
@@ -39,7 +39,7 @@ function buildPayload(nowIso) {
     generatedAt: nowIso || new Date().toISOString(),
     sources: SOURCE_FILES.map(buildSourceMeta),
     claude: readSourceFile("CLAUDE.md"),
-    megaprompt: readSourceFile("megapromptlean.md"),
+    megaprompt: readSourceFile("megapromptlean_3.0.md"),
     runtimeSpine: readSourceFile("runtime_spine.md"),
   };
 }
