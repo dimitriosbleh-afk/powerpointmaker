@@ -1,0 +1,31 @@
+{
+  "unit_folder": "Sentence_Combining_Year56_T2W5",
+  "unit_pptx_name": "Sentence Combining Year 5-6 Term 2 Week 5.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_sc_t2w5_lesson1.js",
+      "folder": "SC_T2W5_Lesson1_Mon_BECAUSE",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_sc_t2w5_lesson2.js",
+      "folder": "SC_T2W5_Lesson2_Tue_WHEN",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_sc_t2w5_lesson3.js",
+      "folder": "SC_T2W5_Lesson3_Wed_IF",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_sc_t2w5_lesson4.js",
+      "folder": "SC_T2W5_Lesson4_Thu_MIX",
+      "session": 4
+    },
+    {
+      "build_script": "builds/build_sc_t2w5_lesson5.js",
+      "folder": "SC_T2W5_Lesson5_Fri_MIX_COORD_SUBORD",
+      "session": 5
+    }
+  ]
+}
