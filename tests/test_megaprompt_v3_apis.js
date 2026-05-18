@@ -10,7 +10,7 @@ const PptxGenJS = require("pptxgenjs");
 const path = require("path");
 const fs = require("fs");
 
-const { createTheme, weekToVariant, composeNotes } = require("./themes/factory");
+const { createTheme, weekToVariant, composeNotes } = require("../themes/factory");
 
 function ensureDir(p) {
   fs.mkdirSync(path.dirname(p), { recursive: true });

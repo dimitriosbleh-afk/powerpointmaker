@@ -4,12 +4,10 @@
   "main": "build_presentation.js",
   "scripts": {
     "build:4proc": "node scripts/build_unit.js 4proc",
-    "sync:prompt-builder": "node scripts/generate_prompt_builder_data.js",
-    "check:prompt-builder-sync": "node scripts/check_prompt_builder_sync.js",
     "lint:teacher-notes": "node scripts/lint_teacher_notes.js",
     "qa:4proc": "node scripts/qa_unit.js 4proc",
     "qa:notes-regression": "node scripts/qa_notes_regression.js",
-    "qa:all": "npm run check:prompt-builder-sync && npm run qa:4proc && npm run qa:notes-regression",
+    "qa:all": "npm run qa:4proc && npm run qa:notes-regression",
     "test": "npm run qa:all"
   },
   "keywords": [],

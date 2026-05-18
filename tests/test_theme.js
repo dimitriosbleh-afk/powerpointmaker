@@ -4,19 +4,19 @@
  * Test harness — generates a sample PPTX for any (subject, yearLevel, variant) combo.
  *
  * Usage:
- *   node test_theme.js <subject> <yearLevel> [variant]
+ *   node tests/test_theme.js <subject> <yearLevel> [variant]
  *
  * Examples:
- *   node test_theme.js literacy grade56 0
- *   node test_theme.js numeracy grade34 2
- *   node test_theme.js science foundation
+ *   node tests/test_theme.js literacy grade56 0
+ *   node tests/test_theme.js numeracy grade34 2
+ *   node tests/test_theme.js science foundation
  *
  * Generates: output/test_<subject>_<yearLevel>_v<variant>.pptx
  */
 
 const pptxgen = require("pptxgenjs");
 const fs      = require("fs");
-const { createTheme, weekToVariant } = require("./themes/factory");
+const { createTheme, weekToVariant } = require("../themes/factory");
 
 const subject   = process.argv[2] || "literacy";
 const yearLevel = process.argv[3] || "grade34";

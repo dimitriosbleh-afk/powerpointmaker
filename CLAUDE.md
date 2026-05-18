@@ -73,7 +73,7 @@ Node.js project using PptxGenJS to generate explicit teaching slide decks with c
 ```bash
 node scripts/build_and_check.js builds/build_<unit>_lesson<n>.js  # Build + enforce QA gates (diagnostics + markitdown)
 node builds/build_<unit>_lesson<n>.js          # Build only (no automated checks)
-node test_theme.js <subject> <level> [variant] # Test a theme combo
+node tests/test_theme.js <subject> <level> [variant] # Test a theme combo
 python -m markitdown output/<file>.pptx        # Content QA - check text, order, typos (manual)
 python scripts/check_lesson_quality.py output/<file>.pptx --profile literacy-60  # Lesson density/language QA
 python scripts/pptx_to_images.py output/<file>.pptx  # Optional local preview - slides to slidetemp/*.jpg
