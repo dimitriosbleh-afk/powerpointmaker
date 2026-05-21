@@ -1,0 +1,31 @@
+{
+  "unit_folder": "Adding_and_Subtracting_Decimals_Unit",
+  "unit_pptx_name": "Adding and Subtracting Decimals Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_decadd_lesson1.js",
+      "folder": "DecAdd_Lesson1_Understanding_Decimals",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_decadd_lesson2.js",
+      "folder": "DecAdd_Lesson2_Adding_Decimals_Same_Length",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_decadd_lesson3.js",
+      "folder": "DecAdd_Lesson3_Adding_Decimals_Different_Lengths",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_decadd_lesson4.js",
+      "folder": "DecAdd_Lesson4_Subtracting_Decimals",
+      "session": 4
+    },
+    {
+      "build_script": "builds/build_decadd_lesson5.js",
+      "folder": "DecAdd_Lesson5_Decimal_Word_Problems",
+      "session": 5
+    }
+  ]
+}

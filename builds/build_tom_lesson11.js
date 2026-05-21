@@ -44,9 +44,21 @@ const ANSWER_KEY_RESOURCE = makeSessionResource(
   "Conjunctions Answer Key",
   "Teacher reference: model answers for the conjunctions practice."
 );
-const RESOURCE_ITEMS = [PRACTICE_RESOURCE, ANSWER_KEY_RESOURCE];
+// School-supplied resource: pre-existing sentence expansion practice (samples Ch36-39).
+// Used here as an optional sentence-expansion follow-up to the because/but/so work.
+// The technique (expanding a kernel with adverbials) is the same family of moves as
+// the conjunction work; chapter content references later chapters so it is staged as
+// an early-finisher / extension page rather than a whole-class task.
+const SENTENCE_EXPANSION_RESOURCE = makeSessionResource(
+  SESSION_NUMBER,
+  "Sentence Expansion Practice (school resource)",
+  "School-supplied resource (reused): expand kernel sentences with when, where, how, why. Use as an optional follow-up to the because/but/so work."
+);
+const RESOURCE_ITEMS = [PRACTICE_RESOURCE, ANSWER_KEY_RESOURCE, SENTENCE_EXPANSION_RESOURCE];
 const PRACTICE_PDF_PATH = path.join(OUT_DIR, PRACTICE_RESOURCE.fileName);
 const ANSWER_KEY_PDF_PATH = path.join(OUT_DIR, ANSWER_KEY_RESOURCE.fileName);
+const SENTENCE_EXPANSION_PDF_PATH = path.join(OUT_DIR, SENTENCE_EXPANSION_RESOURCE.fileName);
+const SENTENCE_EXPANSION_SOURCE_PATH = "C:/Users/09560329/Downloads/Session 18 Sentence Expansion Practice.pdf";
 fs.mkdirSync(RES_DIR, { recursive: true });
 
 // ---------------------------------------------------------------------------
@@ -276,9 +288,10 @@ ENABLING PROMPT:
 
 EXTENDING PROMPT:
 - Task: After completing the worksheet, write 3 of your own comprehension question + answer pairs about Chapters 22-24. Each answer must use a different conjunction (because, but, so). Show how the meaning changes with each choice
+- Alternative: hand the student the school Sentence Expansion Practice sheet (Section 1: Identify the Expansions, then Section 2). Frame it as "same family as because/but/so -- both add information to a thin sentence." Note that the sample sentences look ahead to Chapters 36-39
 
 TEACHER NOTES:
-The 10-minute write is the application of the conjunction work. Students should be discriminating between the three based on the meaning of their answer.
+The 10-minute write is the application of the conjunction work. Students should be discriminating between the three based on the meaning of their answer. Fast finishers can move to the school Sentence Expansion Practice sheet -- same skill family (growing a sentence) with adverbial prompts (when/where/how/why) instead of conjunctions.
 
 WATCH FOR:
 - Students who write run-on sentences -- model the comma rule
@@ -306,16 +319,24 @@ WATCH FOR:
 [General: Closing | VTLM 2.0: Review and Reflect]`;
 
 const NOTES_RESOURCES = `SAY:
-- Two resources today
+- Three resources for this session
 - The ${PRACTICE_RESOURCE.name} is for completing comprehension answers using because, but and so
 - The ${ANSWER_KEY_RESOURCE.name} is for teacher reference
+- The ${SENTENCE_EXPANSION_RESOURCE.name} is a school resource we have used before. Use it as an early-finisher or follow-up
 
 DO:
 - Print the practice worksheet (one per student)
 - Print the answer key (teacher copy only)
+- Have the school sentence expansion sheet ready for fast finishers
 
 TEACHER NOTES:
 Students keep their completed worksheet for their writing portfolio. The answer key shows model answers; accept reasonable variations as long as the conjunction matches the meaning.
+
+About the school sentence expansion sheet: this is a pre-existing school resource the team has used previously. The technique it practises -- expanding a kernel sentence by answering when, where, how and why -- is the same family of moves as adding a because, but or so clause. Both teach students to grow a thin sentence into a richer one. Use it as follows:
+- After the You Do conjunctions worksheet is complete, offer the sentence expansion sheet to students who finish early or who would benefit from extra writing reps
+- The example sentences on the sheet come from Chapters 36-39, which students have not yet read. Tell students this directly: "These sentences look ahead to chapters we will read later. The skill is the same -- adding when, where, how, why to make a sentence richer. Do not worry about the chapter details; focus on the expansion technique"
+- Sections 1-2 (identify and expand with prompts) work as an independent follow-up
+- Section 3 (expand without prompts) and the Finish task can be set as a take-home or whole-class wrap-up if there is time
 
 [General: Resources | VTLM 2.0: Student Resources]`;
 
@@ -612,6 +633,12 @@ async function build() {
 
   addPdfFooter(ak, "Lesson 11 | Answer Key -- TEACHER COPY");
 
+  // Copy the school-supplied sentence expansion PDF into the lesson resources folder.
+  if (!fs.existsSync(SENTENCE_EXPANSION_SOURCE_PATH)) {
+    throw new Error("Missing school-supplied PDF: " + SENTENCE_EXPANSION_SOURCE_PATH);
+  }
+  fs.copyFileSync(SENTENCE_EXPANSION_SOURCE_PATH, SENTENCE_EXPANSION_PDF_PATH);
+
   // Write all
   await Promise.all([
     pres.writeFile({ fileName: `${OUT_DIR}/Tom_Lesson11.pptx` }),
@@ -622,6 +649,7 @@ async function build() {
   console.log("PPTX written to " + `${OUT_DIR}/Tom_Lesson11.pptx`);
   console.log("Done: " + PRACTICE_RESOURCE.name);
   console.log("Done: " + ANSWER_KEY_RESOURCE.name);
+  console.log("Done (copied): " + SENTENCE_EXPANSION_RESOURCE.name);
 }
 
 build().catch(console.error);

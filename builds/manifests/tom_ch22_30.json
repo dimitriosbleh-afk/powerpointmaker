@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Tom_Sessions11to14_Combined",
+  "unit_pptx_name": "Tom Appleby Sessions 11 to 14.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_tom_lesson11.js",
+      "folder": "Tom_Lesson11_Across_the_Sea",
+      "session": 11
+    },
+    {
+      "build_script": "builds/build_tom_lesson12.js",
+      "folder": "Tom_Lesson12_Cape_to_Port_Jackson",
+      "session": 12
+    },
+    {
+      "build_script": "builds/build_tom_lesson13.js",
+      "folder": "Tom_Lesson13_New_Land",
+      "session": 13
+    },
+    {
+      "build_script": "builds/build_tom_lesson14plus15.js",
+      "folder": "Tom_Session4_Free_and_Write_Report",
+      "session": 14
+    }
+  ]
+}
