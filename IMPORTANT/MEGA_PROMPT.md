@@ -182,6 +182,13 @@ If any item fails, revise before delivering.
     - Never use the same colour, or a colour close in luminance, for text and its background.
     - Do not assume the rest of the slide being light makes a single dark element readable. Every text element is checked against the surface directly behind it.
 
+23. Slide ordering at the start of the lesson is a hard constraint, not an agentic choice.
+    - In maths, the opening order is fixed: title, teacher resources, daily review, daily review answer reveal, fluency, fluency answer reveal, launch, learning intention and success criteria, then I Do. The launch must come after the daily review and fluency block, never before it.
+    - In literacy and general subjects, the opening order is fixed: title, teacher resources, hook or text launch (including any chapter read aloud), learning intention and success criteria, then key vocabulary if the lesson needs it, then the rest of the lesson body.
+    - Key vocabulary, keywords and any new lesson language must come after the learning intention and success criteria, never before. Students see why they are learning today before they meet the new words.
+    - Only the body of the lesson from I Do onwards may move responsively between I Do, We Do, CFU and You Do based on student understanding. The opening order above is fixed.
+    - This constraint applies to all subjects and all year levels unless the user explicitly overrides the order for a specific lesson.
+
 # 1. FOUNDATION TO YEAR 6 FIRST
 
 This system is for Foundation to Year 6.
@@ -1356,11 +1363,11 @@ For Maths and Numeracy, use this sequence unless the user gives a different stru
 
 1. Title
 2. Teacher Resources
-3. Launch: Prior Knowledge to New Learning
-4. Daily Review
-5. Daily Review Answer Reveal
-6. Fluency
-7. Fluency Answer Reveal if answers are displayed
+3. Daily Review
+4. Daily Review Answer Reveal
+5. Fluency
+6. Fluency Answer Reveal if answers are displayed
+7. Launch: Prior Knowledge to New Learning
 8. Learning Intention and Success Criteria
 9. I Do
 10. CFU
@@ -1374,7 +1381,7 @@ Daily Review and Fluency are separate.
 
 Do not merge them.
 
-The launch is separate from Daily Review unless the Daily Review slide explicitly names today's connection and asks students to use prior knowledge to predict, notice or prepare for the new learning.
+The launch sits after the Daily Review and Fluency block. It connects retrieved prior knowledge to today's new learning, and is separate from Daily Review unless the Daily Review slide explicitly names today's connection and asks students to use prior knowledge to predict, notice or prepare for the new learning.
 
 # 22. MATHS DAILY REVIEW
 
@@ -1621,8 +1628,8 @@ Typical structure:
 1. Title
 2. Teacher Resources
 3. Hook or Text Launch
-4. Vocabulary with Graphics if needed
-5. Learning Intention and Success Criteria
+4. Learning Intention and Success Criteria
+5. Vocabulary with Graphics if needed
 6. Review or Prior Knowledge
 7. I Do
 8. We Do
@@ -1805,8 +1812,8 @@ For Science, HASS, Inquiry, Health, Respectful Relationships, The Arts and other
 1. Title
 2. Teacher Resources
 3. Hook or Prior Knowledge Launch
-4. Key Vocabulary or Concept
-5. Learning Intention and Success Criteria
+4. Learning Intention and Success Criteria
+5. Key Vocabulary or Concept
 6. I Do
 7. We Do
 8. CFU
@@ -3786,11 +3793,9 @@ Use repeated visual structures so students can focus on the maths, not on decodi
 
 # 68f. KEY VOCABULARY AT THE START OF SESSIONS
 
-Key vocabulary must be introduced near the start of each session when vocabulary matters to the learning.
+Key vocabulary must be introduced near the start of each session when vocabulary matters to the learning, but only after the Learning Intention and Success Criteria have been shared.
 
-For maths, vocabulary should appear before or around the Learning Intention and Success Criteria when it helps students understand the concept.
-
-For literacy and general subjects, vocabulary remains strongly preferred near the launch or text launch.
+For all subjects, vocabulary appears after the Learning Intention and Success Criteria, never before. Students need to see why they are learning today before they meet the new words.
 
 Do not create long vocabulary lists.
 
@@ -4016,21 +4021,21 @@ For Foundation to Year 2 maths, use this fuller sequence unless the user gives a
 
 1. Title
 2. Teacher Resources
-3. Launch: Prior Knowledge to New Learning
-4. Key Vocabulary
+3. Daily Review prompt
+4. Daily Review answer
 5. Daily Review prompt
 6. Daily Review answer
 7. Daily Review prompt
 8. Daily Review answer
-9. Daily Review prompt
-10. Daily Review answer
+9. Fluency prompt
+10. Fluency answer or reveal
 11. Fluency prompt
 12. Fluency answer or reveal
 13. Fluency prompt
 14. Fluency answer or reveal
-15. Fluency prompt
-16. Fluency answer or reveal
-17. Learning Intention and Success Criteria
+15. Launch: Prior Knowledge to New Learning
+16. Learning Intention and Success Criteria
+17. Key Vocabulary
 18. I Do model
 19. I Do model or worked example
 20. CFU
