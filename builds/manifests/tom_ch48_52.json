@@ -1,0 +1,21 @@
+{
+  "unit_folder": "Tom_Sessions23to25_Final_Combined",
+  "unit_pptx_name": "Tom Appleby Sessions 23 to 25.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_tom_lesson23.js",
+      "folder": "Tom_Lesson23_Emma_Marines_Leave_KPAS",
+      "session": 23
+    },
+    {
+      "build_script": "builds/build_tom_lesson24.js",
+      "folder": "Tom_Lesson24_Final_Chapter_Body_Paragraph_4",
+      "session": 24
+    },
+    {
+      "build_script": "builds/build_tom_lesson25.js",
+      "folder": "Tom_Lesson25_Conclusion_Publish_Celebrate",
+      "session": 25
+    }
+  ]
+}

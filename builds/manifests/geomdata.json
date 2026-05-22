@@ -1,0 +1,46 @@
+{
+  "unit_folder": "Geometry_and_Data_Unit",
+  "unit_pptx_name": "Geometry and Data Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_gd_lesson1.js",
+      "folder": "GD_Lesson1_Transformations",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_gd_lesson2.js",
+      "folder": "GD_Lesson2_Symmetry_and_Nets",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_gd_lesson3.js",
+      "folder": "GD_Lesson3_Tessellation_Exploration",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_gd_lesson4.js",
+      "folder": "GD_Lesson4_Tessellation_Art",
+      "session": 4
+    },
+    {
+      "build_script": "builds/build_gd_lesson5.js",
+      "folder": "GD_Lesson5_Data_Collection_Plan",
+      "session": 5
+    },
+    {
+      "build_script": "builds/build_gd_lesson6.js",
+      "folder": "GD_Lesson6_Column_Graph",
+      "session": 6
+    },
+    {
+      "build_script": "builds/build_gd_lesson7.js",
+      "folder": "GD_Lesson7_Line_Graphs",
+      "session": 7
+    },
+    {
+      "build_script": "builds/build_gd_lesson8.js",
+      "folder": "GD_Lesson8_Critiquing_Media_Data",
+      "session": 8
+    }
+  ]
+}

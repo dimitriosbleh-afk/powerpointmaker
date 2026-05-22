@@ -1,0 +1,41 @@
+{
+  "unit_folder": "Measurement_Units_Time_Timetables_Unit",
+  "unit_pptx_name": "Measurement Units Time and Timetables Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_meas_lesson1.js",
+      "folder": "Meas_Lesson1_Choosing_Metric_Units_Length",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_meas_lesson2.js",
+      "folder": "Meas_Lesson2_Choosing_Units_Mass_Capacity",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_meas_lesson3.js",
+      "folder": "Meas_Lesson3_Converting_Length_Units",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_meas_lesson4.js",
+      "folder": "Meas_Lesson4_Converting_Mass_Capacity",
+      "session": 4
+    },
+    {
+      "build_script": "builds/build_meas_lesson5.js",
+      "folder": "Meas_Lesson5_12_and_24_Hour_Time",
+      "session": 5
+    },
+    {
+      "build_script": "builds/build_meas_lesson6.js",
+      "folder": "Meas_Lesson6_Elapsed_Time",
+      "session": 6
+    },
+    {
+      "build_script": "builds/build_meas_lesson7.js",
+      "folder": "Meas_Lesson7_Timetables_and_Trips",
+      "session": 7
+    }
+  ]
+}
