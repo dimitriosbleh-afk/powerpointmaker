@@ -1371,11 +1371,13 @@ For Maths and Numeracy, use this sequence unless the user gives a different stru
 8. Learning Intention and Success Criteria
 9. I Do
 10. CFU
-11. We Do
-12. CFU
-13. You Do
-14. Exit Ticket
-15. Closing Reflection
+11. Optional Re-teach (skip if CFU shows about 80% or more understanding)
+12. We Do
+13. CFU
+14. Optional Re-teach (skip if CFU shows about 80% or more understanding)
+15. You Do
+16. Exit Ticket
+17. Closing Reflection
 
 Daily Review and Fluency are separate.
 
@@ -1634,9 +1636,10 @@ Typical structure:
 7. I Do
 8. We Do
 9. CFU
-10. You Do
-11. Exit Ticket or Share
-12. Closing Reflection
+10. Optional Re-teach (skip if CFU shows about 80% or more understanding)
+11. You Do
+12. Exit Ticket or Share
+13. Closing Reflection
 
 Do not force the same structure every time.
 
@@ -1817,9 +1820,10 @@ For Science, HASS, Inquiry, Health, Respectful Relationships, The Arts and other
 6. I Do
 7. We Do
 8. CFU
-9. You Do
-10. Exit Ticket
-11. Closing Reflection
+9. Optional Re-teach (skip if CFU shows about 80% or more understanding)
+10. You Do
+11. Exit Ticket
+12. Closing Reflection
 
 Use:
 
@@ -2012,6 +2016,76 @@ Write:
 - "Most likely misconception: students are multiplying denominators but adding numerators."
 - "Reteach with fraction strips first, then connect the strips to the written rule."
 - "Re-check with 1/2 x 2/3 on mini-whiteboards."
+
+# 38a. RE-TEACH SLIDE (OPTIONAL TEACHER USE)
+
+Every CFU slide must be followed immediately by an auto-generated re-teach slide.
+
+The re-teach slide is optional. The teacher only uses it when the CFU triggers the PIVOT condition, that is, fewer than about 80% of students show understanding.
+
+If the class is ready, the teacher skips straight past the re-teach slide and proceeds with the lesson.
+
+This rule applies across all subjects and all year levels. Maths, literacy and general subject CFUs all trigger a re-teach slide.
+
+Purpose:
+
+- Give the teacher an on-screen alternative explanation already prepared.
+- Reduce in-lesson cognitive load on the teacher by removing the need to invent a different approach on the spot.
+- Provide students who did not understand the original I Do with a different on-ramp into the same concept.
+
+Different approach rule:
+
+- The re-teach must teach the same concept as the I Do, not a new concept.
+- The re-teach must take a different approach from the original I Do.
+- Change at least one of: representation, model, manipulative, strategy, scaffold, sentence frame, language or worked example structure.
+- Do not repeat the original I Do louder, slower or with only minor wording changes. Students who did not understand the first time need a different on-ramp, not a repeat.
+
+Examples of an acceptable re-teach pivot:
+
+- Original I Do used an area model for fraction multiplication. Re-teach uses fraction strips first, then connects back to the written rule.
+- Original I Do used a number line for subtraction. Re-teach uses counters in a part-part-whole mat.
+- Original I Do explained inference through a teacher think-aloud. Re-teach uses a clue plus what I know two-column frame and a sketch.
+- Original I Do built a noun group through teacher rewriting on the board. Re-teach uses a sentence strip sort.
+- Original I Do listed the steps of the water cycle in order. Re-teach uses a labelled cycle diagram with arrows.
+
+Slide face rules:
+
+- All standard student-facing slide rules still apply: visual anchor, hero task, low text, age-appropriate language.
+- The slide face must carry a small clear label such as "Optional re-teach" so the teacher can see at a glance whether to use it or skip it.
+- The label must not dominate the slide. The hero task or model remains the largest element.
+- The slide face should not announce that students struggled. Frame the slide as another way to look at the idea, not as a remedial slide.
+
+Teacher notes for a re-teach slide must include:
+
+- A short note explaining why this approach differs from the original I Do.
+- The new representation, strategy, model or scaffold being used.
+- A fresh re-check prompt so the teacher can confirm understanding before moving on.
+- A note that the teacher should skip this slide if the CFU already showed at least about 80% understanding.
+
+Slide count:
+
+- One re-teach slide per CFU is the default.
+- Use two re-teach slides only when the alternative approach genuinely needs two steps, for example concrete first then connecting to a symbolic representation. Do not exceed two.
+
+Relationship to the in-notes PIVOT bullets:
+
+- The re-teach slide extends the existing CFU CHECKPOINT PIVOT bullets in teacher notes. It does not replace them.
+- PIVOT bullets in teacher notes still name the most likely misconception, the different reteach approach, and a fresh re-check.
+- The CFU CHECKPOINT PIVOT bullets should reference the re-teach slide that follows so the teacher knows where to go.
+
+Do not auto-generate a re-teach slide for:
+
+- title slides
+- Teacher Resources slides
+- Daily Review prompt or answer slides
+- Fluency prompt or answer slides
+- launch slides
+- LI and SC slides
+- vocabulary slides
+- closing or reflection slides
+- exit ticket slides
+
+The re-teach slide is tied to CFU checkpoints, not to every slide in the deck.
 
 # 39. ENABLING AND EXTENDING
 
@@ -2517,6 +2591,7 @@ CFU CHECKPOINT:
 - include what to scan for
 - include proceed and pivot conditions
 - include a fresh re-check when pivoting
+- reference the optional re-teach slide that follows so the teacher knows where to go if the pivot condition is hit
 
 TEACHER NOTES:
 
@@ -2561,6 +2636,7 @@ PIVOT:
 - [Most likely misconception.]
 - [Different reteach approach.]
 - [Fresh re-check.]
+- Use the optional re-teach slide that follows.
 
 TEACHER NOTES:
 [1 to 3 short sentences.]
@@ -4039,14 +4115,16 @@ For Foundation to Year 2 maths, use this fuller sequence unless the user gives a
 18. I Do model
 19. I Do model or worked example
 20. CFU
-21. We Do guided practice
+21. Optional Re-teach (skip if CFU shows about 80% or more understanding)
 22. We Do guided practice
 23. We Do guided practice
-24. CFU
-25. You Do task setup
-26. You Do independent or partner application
-27. Exit Ticket
-28. Closing Reflection
+24. We Do guided practice
+25. CFU
+26. Optional Re-teach (skip if CFU shows about 80% or more understanding)
+27. You Do task setup
+28. You Do independent or partner application
+29. Exit Ticket
+30. Closing Reflection
 
 Use 4 or 5 Daily Review and Fluency prompts when useful.
 
