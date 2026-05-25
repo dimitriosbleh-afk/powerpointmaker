@@ -135,8 +135,65 @@ function normalizeStructuredMockup(spec) {
   };
 }
 
+function createStructuredMockupPlan(spec, frame, opts) {
+  const normalized = normalizeStructuredMockup(spec);
+  const o = opts || {};
+  const x = Number(frame && frame.x) || 0;
+  const y = Number(frame && frame.y) || 0;
+  const w = Number(frame && frame.w) || 0;
+  const h = Number(frame && frame.h) || 0;
+  const innerPad = normalized.innerPad != null
+    ? normalized.innerPad
+    : (o.innerPad != null ? o.innerPad : 0);
+  const gap = normalized.gap != null
+    ? normalized.gap
+    : (o.gap != null ? o.gap : 0);
+  const components = normalized.components || [];
+  const innerX = x + innerPad;
+  const innerY = y + innerPad;
+  const innerW = w - innerPad * 2;
+  const availableH = h - innerPad * 2 - gap * Math.max(components.length - 1, 0);
+  const minBlockH = o.minBlockH != null ? o.minBlockH : 0;
+  const totalScale = components.reduce((sum, component) => sum + component.scale, 0) || 1;
+  let cursorY = innerY;
+
+  const blocks = components.map((component, index) => {
+    const blockH = Math.max(minBlockH, availableH * (component.scale / totalScale));
+    const block = {
+      component,
+      index,
+      normalized,
+      x: innerX,
+      y: cursorY,
+      w: innerW,
+      h: blockH,
+    };
+    cursorY += blockH + gap;
+    return block;
+  });
+
+  return {
+    normalized,
+    blocks,
+    innerPad,
+    gap,
+    innerX,
+    innerY,
+    innerW,
+    endY: cursorY - (blocks.length ? gap : 0),
+  };
+}
+
+function forEachStructuredMockupBlock(spec, frame, opts, visitor) {
+  const plan = createStructuredMockupPlan(spec, frame, opts);
+  plan.blocks.forEach((block) => visitor(block, plan));
+  return plan;
+}
+
 module.exports = {
+  createStructuredMockupPlan,
   darkenHex,
+  forEachStructuredMockupBlock,
   isStructuredMockupSpec,
   lightenHex,
   mixHex,

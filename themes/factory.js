@@ -125,7 +125,9 @@ function createTheme(subject, yearLevel, variant) {
   const boundGetContrastColor = (bgHex) => getContrastColor(bgHex, C.WHITE, C.CHARCOAL);
 
   // Build base slide builders (all subjects get these)
-  const base = createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S);
+  const base = createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, {
+    exitTicketTitle: subjectLower === "numeracy" ? "Stage 5  |  Show What You Know" : undefined,
+  });
 
   // Build subject-specific slide builders
   const subjectFactory = SUBJECT_BUILDER_FACTORIES[subjectLower];

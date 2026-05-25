@@ -3,9 +3,9 @@
 const { contrastRatio } = require("../core/contrast");
 const { SLIDE_H, SAFE_BOTTOM, CONTENT_TOP } = require("../core/layout");
 const {
+  createStructuredMockupPlan,
   isStructuredMockupSpec,
   lightenHex,
-  normalizeStructuredMockup,
 } = require("../core/mockups");
 const { normalizeLessonTargets } = require("../core/notes");
 const { runSlideDiagnostics } = require("../core/diagnostics");
@@ -28,12 +28,14 @@ const {
  * @param {object}   el        - bound element helpers from createElements()
  * @param {Function} shadowFn  - zero-arg shadow factory
  * @param {object}   [S]       - grade-band sizing table; falls back to upper-primary defaults if omitted
+ * @param {object}   [defaults] - subject-aware defaults supplied by the factory
  * @returns {object} { titleSlide, liSlide, contentSlide, cfuSlide, closingSlide, annotatedModelSlide, compareVisualSlide }
  */
 const SC_TIER_LABELS = ["Everyone", "Most", "Stretch"];
 
-function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
+function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
   const sz = S || DEFAULT_SIZES;
+  const builderDefaults = defaults || {};
 
   const DENSITY = byBand(sz,
     { roomyBulletCount: 3, roomyTotalLines: 5, narrowChars: 28, wideChars: 42 },
@@ -456,7 +458,12 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
 
   function drawStructuredMockup(slide, x, y, w, h, spec, opts) {
     const o = opts || {};
-    const normalized = normalizeStructuredMockup(spec);
+    const plan = createStructuredMockupPlan(spec, { x, y, w, h }, {
+      innerPad: o.innerPad != null ? o.innerPad : 0.08,
+      gap: o.gap != null ? o.gap : 0.04,
+      minBlockH: 0.12,
+    });
+    const normalized = plan.normalized;
     slide.addShape("roundRect", {
       x,
       y,
@@ -467,18 +474,7 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
       line: { color: normalized.pageBorder || o.border || C.MUTED, width: 0.6 },
     });
 
-    const innerPad = normalized.innerPad != null ? normalized.innerPad : (o.innerPad != null ? o.innerPad : 0.08);
-    const gap = normalized.gap != null ? normalized.gap : (o.gap != null ? o.gap : 0.04);
-    const innerX = x + innerPad;
-    const innerY = y + innerPad;
-    const innerW = w - innerPad * 2;
-    const components = normalized.components || [];
-    const availableH = h - innerPad * 2 - gap * Math.max(components.length - 1, 0);
-    const totalScale = components.reduce((sum, component) => sum + component.scale, 0) || 1;
-    let cursorY = innerY;
-
-    components.forEach((component) => {
-      const blockH = Math.max(0.12, availableH * (component.scale / totalScale));
+    plan.blocks.forEach(({ component, x: innerX, y: cursorY, w: innerW, h: blockH }) => {
       const baseTextColor = component.textColor || normalized.textColor || C.CHARCOAL;
 
       if (component.kind === "masthead") {
@@ -581,7 +577,6 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
         });
       }
 
-      cursorY += blockH + gap;
     });
   }
 
@@ -1580,7 +1575,7 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S) {
 
     const titleY = byBand(sz, 0.72, 0.68, 0.65);
     const titleH = byBand(sz, 0.74, 0.68, 0.62);
-    s.addText(o.title || "Show what you know", {
+    s.addText(o.title || builderDefaults.exitTicketTitle || "Show what you know", {
       x: 0.5, y: titleY, w: 9, h: titleH,
       fontSize: sz.titleH1 - 2, fontFace: FONT_H, color: stripColor, bold: true, margin: 0,
       fit: "shrink", shrinkText: true,

@@ -4,44 +4,42 @@ const path = require("path");
 const {
   ROOT,
   runCommand,
-  lintTeacherNotesInFile,
   extractText,
   scanTextForForbiddenOutput,
   validateNotesXml,
 } = require("./qa_lib");
 
+const DEFAULT_SMOKE_OUTPUTS = [
+  "output/_smoke_test_foundation_numeracy/smoke_test.pptx",
+  "output/_smoke_test_y56_literacy/smoke_test.pptx",
+];
+
+async function validatePptx(pptxPath, issues) {
+  const text = extractText(pptxPath);
+  issues.push(...scanTextForForbiddenOutput(text, path.basename(pptxPath)));
+  issues.push(...await validateNotesXml(pptxPath));
+}
+
 async function main() {
-  const buildScript = "builds/build_wh4_lesson17.js";
-  const pptxPath = path.join(ROOT, "output/WH4_Lesson17_Friedrich_And_Topthorn/WH4_Lesson17.pptx");
+  const [buildScript, pptxPath] = process.argv.slice(2);
   const issues = [];
 
-  issues.push(...lintTeacherNotesInFile(buildScript, {
-    checkMarkdownHeaders: true,
-    checkUnicodeBullets: false,
-    checkSmartPunctuation: false,
-    checkAscii: false,
-    checkSectionStructure: true,
-    maxLines: 50,
-    maxChars: 4700,
-    maxSayBullets: 16,
-    maxDoBullets: 8,
-    maxWatchForBullets: 5,
-    maxTeacherNotesLines: 10,
-    maxTeacherNotesChars: 1400,
-  }));
-
-  console.log("Building literacy notes regression deck...");
-  const buildOutput = runCommand("node", [buildScript], { timeout: 180000 });
-  process.stdout.write(buildOutput);
-
-  if (/\[bounds\]/.test(buildOutput)) {
-    issues.push("Literacy regression deck emitted bounds warnings");
+  if (buildScript || pptxPath) {
+    if (!buildScript || !pptxPath) {
+      throw new Error("Usage: node scripts/qa_notes_regression.js [build-script pptx-path]");
+    }
+    console.log(`Building notes regression target ${buildScript}...`);
+    const output = runCommand("node", [buildScript], { timeout: 180000 });
+    process.stdout.write(output);
+    await validatePptx(path.resolve(ROOT, pptxPath), issues);
+  } else {
+    console.log("Building shared notes smoke decks...");
+    const output = runCommand("node", ["tests/test_megaprompt_v3_apis.js"], { timeout: 180000 });
+    process.stdout.write(output);
+    for (const relativePath of DEFAULT_SMOKE_OUTPUTS) {
+      await validatePptx(path.join(ROOT, relativePath), issues);
+    }
   }
-
-  console.log("Validating PPTX text and notes XML for literacy regression deck...");
-  const pptxText = extractText(pptxPath);
-  issues.push(...scanTextForForbiddenOutput(pptxText, path.basename(pptxPath)));
-  issues.push(...await validateNotesXml(pptxPath));
 
   if (issues.length > 0) {
     console.error("Notes regression QA failed:");
@@ -54,8 +52,6 @@ async function main() {
 
 main().catch((error) => {
   console.error(error.message || error);
-  if (error.output) {
-    process.stderr.write(error.output);
-  }
+  if (error.output) process.stderr.write(error.output);
   process.exit(1);
 });

@@ -1,0 +1,61 @@
+{
+  "unit_folder": "Holes_Unit_Complete",
+  "unit_pptx_name": "Holes Unit -- Year 5-6 Narrative + Persuasive + Publish.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_holes_lesson1.js",
+      "folder": "Holes_Lesson1_Setting_Camp_Green_Lake",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_holes_lesson2.js",
+      "folder": "Holes_Lesson2_Character_Stanley",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_holes_lesson3.js",
+      "folder": "Holes_Lesson3_Tension_Lizards",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_holes_lesson4.js",
+      "folder": "Holes_Lesson4_Persuasive_Structure",
+      "session": 4
+    },
+    {
+      "build_script": "builds/build_holes_lesson5.js",
+      "folder": "Holes_Lesson5_Arguments_Evidence",
+      "session": 5
+    },
+    {
+      "build_script": "builds/build_holes_lesson6.js",
+      "folder": "Holes_Lesson6_Emotive_Rhetorical",
+      "session": 6
+    },
+    {
+      "build_script": "builds/build_holes_lesson7.js",
+      "folder": "Holes_Lesson7_Counter_Conclusion",
+      "session": 7
+    },
+    {
+      "build_script": "builds/build_holes_lesson8.js",
+      "folder": "Holes_Lesson8_Plan_Publish",
+      "session": 8
+    },
+    {
+      "build_script": "builds/build_holes_lesson9.js",
+      "folder": "Holes_Lesson9_Draft",
+      "session": 9
+    },
+    {
+      "build_script": "builds/build_holes_lesson10.js",
+      "folder": "Holes_Lesson10_Edit_Revise",
+      "session": 10
+    },
+    {
+      "build_script": "builds/build_holes_lesson11.js",
+      "folder": "Holes_Lesson11_Publish_Celebrate",
+      "session": 11
+    }
+  ]
+}

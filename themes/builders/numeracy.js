@@ -14,7 +14,7 @@ const { prepareBullets, fitBulletFontSize } = require("../core/bulletFit");
  * @param {string} FONT_H  Heading font name
  * @param {string} FONT_B  Body font name
  * @param {object} el       Bound element helpers: addTopBar, addBadge, addTitle, addCard, addFooter, addIconCircle, addTextOnShape
- * @returns {object}        { STAGE_COLORS, addStageBadge, workedExSlide, exitTicketSlide, addPlaceValueChart, addTenthsStrip, addAreaModel, addNumberLine, addDecimalDot }
+ * @returns {object}        { STAGE_COLORS, addStageBadge, workedExSlide, dailyReviewSlide, fluencySlide, addPlaceValueChart, addTenthsStrip, addAreaModel, addNumberLine, addDecimalDot }
  */
 function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
   const sz = S || DEFAULT_SIZES;
@@ -148,81 +148,6 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
     if (footer) el.addFooter(s, footer);
     if (notes) s.addNotes(notes);
     if (drawRight) runSlideDiagnostics(s, pres, { respectSafeBottom: false });
-    return s;
-  }
-
-  /* ------------------------------------------------------------------ */
-  /*  exitTicketSlide                                                    */
-  /* ------------------------------------------------------------------ */
-
-  /**
-   * Assessment / exit ticket slide with question cards on a light background.
-   *
-   * Question numbers are OFF by default to honour megaprompt §15d. Pass
-   * `opts.numbered: true` to enable numeric prefixes when the exit ticket
-   * is being printed and collected as a formal assessment record.
-   *
-   * @param {object}   pres       PptxGenJS presentation instance
-   * @param {string[]} questions  Array of question strings
-   * @param {string}   notes      Teacher notes
-   * @param {string}   footer     Footer text
-   * @param {object}   [opts]     { numbered, assessesSc, title }
-   * @returns {object}            The slide object
-   */
-  function exitTicketSlide(pres, questions, notes, footer, opts) {
-    const s = pres.addSlide();
-    const o = opts || {};
-    const assessColor = C.ASSESS || C.ALERT;
-
-    s.background = { color: C.BG_CARD };
-
-    // Top accent bar
-    s.addShape("rect", { x: 0, y: 0, w: 10, h: 0.06, fill: { color: assessColor } });
-
-    // Badge — sized per band.
-    const badgeH = byBand(sz, 0.42, 0.40, 0.36);
-    const badgeW = byBand(sz, 2.1, 1.95, 1.8);
-    s.addShape("roundRect", {
-      x: 0.5, y: 0.2, w: badgeW, h: badgeH, rectRadius: 0.08,
-      fill: { color: assessColor },
-    });
-    s.addText("Exit Ticket", {
-      x: 0.5, y: 0.2, w: badgeW, h: badgeH,
-      fontSize: sz.badge, fontFace: FONT_B, color: C.WHITE,
-      align: "center", valign: "middle", bold: true, margin: 0,
-    });
-
-    // Title
-    const titleY = byBand(sz, 0.72, 0.68, 0.65);
-    const titleH = byBand(sz, 0.74, 0.68, 0.62);
-    s.addText(o.title || "Stage 5  |  Show What You Know", {
-      x: 0.5, y: titleY, w: 9, h: titleH,
-      fontSize: sz.titleH1 - 2, fontFace: FONT_H, color: assessColor, bold: true, margin: 0,
-      fit: "shrink", shrinkText: true,
-    });
-
-    // Question cards — capped to the band's max question count.
-    const _qs = questions || [];
-    const cappedQs = _qs.slice(0, sz.maxQuestions || _qs.length);
-    const startY = titleY + titleH + 0.18;
-    const perH = Math.min(
-      byBand(sz, 2.1, 1.5, 1.2),
-      (SAFE_BOTTOM - startY) / Math.max(cappedQs.length, 1) - 0.12,
-    );
-    const numbered = Boolean(o.numbered);
-    cappedQs.forEach((q, i) => {
-      const qY = startY + i * (perH + 0.12);
-      el.addCard(s, 0.5, qY, 9, perH, { strip: assessColor });
-      const display = numbered ? `${i + 1}.  ${q}` : String(q);
-      s.addText(display, {
-        x: 0.75, y: qY + 0.08, w: 8.5, h: perH - 0.16,
-        fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, margin: 0, valign: "middle",
-        fit: "shrink", shrinkText: true,
-      });
-    });
-
-    if (footer) el.addFooter(s, footer);
-    if (notes) s.addNotes(notes);
     return s;
   }
 
@@ -644,7 +569,6 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
     STAGE_LABELS,
     addStageBadge,
     workedExSlide,
-    exitTicketSlide,
     dailyReviewSlide,
     fluencySlide,
     addPlaceValueChart,

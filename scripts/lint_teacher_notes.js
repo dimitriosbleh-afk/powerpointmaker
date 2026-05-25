@@ -1,15 +1,14 @@
 "use strict";
 
 const path = require("path");
+const fs = require("fs");
 const { lintTeacherNotesInFile } = require("./qa_lib");
 
-const DEFAULT_FILES = [
-  "builds/build_4proc_lesson1.js",
-  "builds/build_4proc_lesson2.js",
-  "builds/build_4proc_lesson3.js",
-  "builds/build_4proc_lesson4.js",
-  "builds/build_wh4_lesson17.js",
-];
+const BUILDS_DIR = path.resolve(__dirname, "..", "builds");
+const DEFAULT_FILES = fs.readdirSync(BUILDS_DIR)
+  .filter((name) => name.startsWith("build_") && name.endsWith(".js"))
+  .sort()
+  .map((name) => path.join("builds", name));
 
 const files = process.argv.slice(2);
 const targets = files.length > 0 ? files : DEFAULT_FILES;

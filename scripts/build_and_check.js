@@ -20,8 +20,10 @@ const fs = require("fs");
 
 /* ── Patterns ──────────────────────────────────────────────────────────────── */
 
-// Matches diagnostics output from themes/core/diagnostics.js and layout.js
-const DIAG_LINE_RE = /^(ERROR|WARN) /;
+// Matches diagnostics output from themes/core/diagnostics.js and layout.js.
+// Layout helpers historically emit "[bounds]" warnings, so include those in
+// the same hard gate instead of letting unsafe layouts pass.
+const DIAG_LINE_RE = /^(ERROR|WARN) |\[bounds\]/;
 
 /* ── Helpers ───────────────────────────────────────────────────────────────── */
 
@@ -76,7 +78,7 @@ function main() {
   const stderrLines = (build.stderr || "").split(/\r?\n/);
   const diagLines = stderrLines.filter(l => DIAG_LINE_RE.test(l));
   const errors = diagLines.filter(l => l.startsWith("ERROR")).length;
-  const warns = diagLines.filter(l => l.startsWith("WARN")).length;
+  const warns = diagLines.filter(l => l.startsWith("WARN") || l.includes("[bounds]")).length;
 
   if (diagLines.length === 0) {
     console.log("PASS — 0 errors, 0 warnings");

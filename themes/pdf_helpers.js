@@ -12,9 +12,9 @@ const PDFDocument = require("pdfkit");
 const fs = require("fs");
 const path = require("path");
 const {
+  createStructuredMockupPlan,
   isStructuredMockupSpec,
   lightenHex,
-  normalizeStructuredMockup,
 } = require("./core/mockups");
 
 function normaliseSessionNumber(sessionNumber) {
@@ -897,26 +897,20 @@ function addPosterMockupPdf(doc, x, y, w, h, spec, opts) {
   const o = opts || {};
   if (!isStructuredMockupSpec(spec)) return y + h;
 
-  const normalized = normalizeStructuredMockup(spec);
+  const plan = createStructuredMockupPlan(spec, { x, y, w, h }, {
+    innerPad: o.innerPad != null ? o.innerPad : 6,
+    gap: o.gap != null ? o.gap : 4,
+    minBlockH: 12,
+  });
+  const normalized = plan.normalized;
   const pageFill = hex(normalized.pageFill || o.pageFill || "FFFFFF");
   const pageBorder = hex(normalized.pageBorder || o.pageBorder || "9CA3AF");
-  const innerPad = normalized.innerPad != null ? normalized.innerPad : 6;
-  const gap = normalized.gap != null ? normalized.gap : 4;
 
   doc.save();
   doc.roundedRect(x, y, w, h, 8).lineWidth(1).strokeColor(pageBorder).fillAndStroke(pageFill, pageBorder);
   doc.restore();
 
-  const innerX = x + innerPad;
-  const innerY = y + innerPad;
-  const innerW = w - innerPad * 2;
-  const components = normalized.components || [];
-  const availableH = h - innerPad * 2 - gap * Math.max(components.length - 1, 0);
-  const totalScale = components.reduce((sum, component) => sum + component.scale, 0) || 1;
-  let cursorY = innerY;
-
-  components.forEach((component) => {
-    const blockH = Math.max(12, availableH * (component.scale / totalScale));
+  plan.blocks.forEach(({ component, x: innerX, y: cursorY, w: innerW, h: blockH }) => {
     const textColor = hex(component.textColor || normalized.textColor || "243142");
 
     if (component.kind === "masthead") {
@@ -1025,7 +1019,6 @@ function addPosterMockupPdf(doc, x, y, w, h, spec, opts) {
       });
     }
 
-    cursorY += blockH + gap;
   });
 
   return y + h;

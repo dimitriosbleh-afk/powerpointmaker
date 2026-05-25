@@ -158,8 +158,6 @@ def rewrite_resource_hyperlinks(pptx_path: Path) -> int:
     shutil.move(str(tmp_path), str(pptx_path))
     return rewrites
 
-    return dst_slide
-
 
 def merge_decks(manifest: dict, unit_dir: Path) -> Path:
     lessons = manifest["lessons"]
@@ -218,13 +216,24 @@ def gather_resources(manifest: dict, resources_dir: Path) -> int:
     return copied
 
 
+def prepare_unit_output(unit_dir: Path, resources_dir: Path) -> None:
+    """Prepare a clean delivery folder without touching per-lesson outputs."""
+    unit_dir.mkdir(parents=True, exist_ok=True)
+
+    for pptx in unit_dir.glob("*.pptx"):
+        pptx.unlink()
+
+    if resources_dir.exists():
+        shutil.rmtree(resources_dir)
+    resources_dir.mkdir(parents=True, exist_ok=True)
+
+
 def merge_unit(manifest_path: Path) -> Path:
     manifest = load_manifest(manifest_path)
     unit_dir = OUTPUT_ROOT / manifest["unit_folder"]
     resources_dir = unit_dir / "Resources"
 
-    unit_dir.mkdir(parents=True, exist_ok=True)
-    resources_dir.mkdir(parents=True, exist_ok=True)
+    prepare_unit_output(unit_dir, resources_dir)
 
     merge_decks(manifest, unit_dir)
     print()
