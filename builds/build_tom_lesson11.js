@@ -44,21 +44,15 @@ const ANSWER_KEY_RESOURCE = makeSessionResource(
   "Conjunctions Answer Key",
   "Teacher reference: model answers for the conjunctions practice."
 );
-// School-supplied resource: pre-existing sentence expansion practice (samples Ch36-39).
-// Used here as an optional sentence-expansion follow-up to the because/but/so work.
-// The technique (expanding a kernel with adverbials) is the same family of moves as
-// the conjunction work; chapter content references later chapters so it is staged as
-// an early-finisher / extension page rather than a whole-class task.
 const SENTENCE_EXPANSION_RESOURCE = makeSessionResource(
   SESSION_NUMBER,
-  "Sentence Expansion Practice (school resource)",
-  "School-supplied resource (reused): expand kernel sentences with when, where, how, why. Use as an optional follow-up to the because/but/so work."
+  "Sentence Expansion Extension",
+  "Optional follow-up: expand kernel sentences with when, where, how and why after the because/but/so work."
 );
 const RESOURCE_ITEMS = [PRACTICE_RESOURCE, ANSWER_KEY_RESOURCE, SENTENCE_EXPANSION_RESOURCE];
 const PRACTICE_PDF_PATH = path.join(OUT_DIR, PRACTICE_RESOURCE.fileName);
 const ANSWER_KEY_PDF_PATH = path.join(OUT_DIR, ANSWER_KEY_RESOURCE.fileName);
 const SENTENCE_EXPANSION_PDF_PATH = path.join(OUT_DIR, SENTENCE_EXPANSION_RESOURCE.fileName);
-const SENTENCE_EXPANSION_SOURCE_PATH = "C:/Users/09560329/Downloads/Session 18 Sentence Expansion Practice.pdf";
 fs.mkdirSync(RES_DIR, { recursive: true });
 
 // ---------------------------------------------------------------------------
@@ -322,21 +316,20 @@ const NOTES_RESOURCES = `SAY:
 - Three resources for this session
 - The ${PRACTICE_RESOURCE.name} is for completing comprehension answers using because, but and so
 - The ${ANSWER_KEY_RESOURCE.name} is for teacher reference
-- The ${SENTENCE_EXPANSION_RESOURCE.name} is a school resource we have used before. Use it as an early-finisher or follow-up
+- The ${SENTENCE_EXPANSION_RESOURCE.name} is an early-finisher or follow-up sheet
 
 DO:
 - Print the practice worksheet (one per student)
 - Print the answer key (teacher copy only)
-- Have the school sentence expansion sheet ready for fast finishers
+- Have the extension sheet ready for fast finishers
 
 TEACHER NOTES:
 Students keep their completed worksheet for their writing portfolio. The answer key shows model answers; accept reasonable variations as long as the conjunction matches the meaning.
 
-About the school sentence expansion sheet: this is a pre-existing school resource the team has used previously. The technique it practises -- expanding a kernel sentence by answering when, where, how and why -- is the same family of moves as adding a because, but or so clause. Both teach students to grow a thin sentence into a richer one. Use it as follows:
+About the sentence expansion extension: the technique it practises -- expanding a kernel sentence by answering when, where, how and why -- is the same family of moves as adding a because, but or so clause. Both teach students to grow a thin sentence into a richer one. Use it as follows:
 - After the You Do conjunctions worksheet is complete, offer the sentence expansion sheet to students who finish early or who would benefit from extra writing reps
-- The example sentences on the sheet come from Chapters 36-39, which students have not yet read. Tell students this directly: "These sentences look ahead to chapters we will read later. The skill is the same -- adding when, where, how, why to make a sentence richer. Do not worry about the chapter details; focus on the expansion technique"
-- Sections 1-2 (identify and expand with prompts) work as an independent follow-up
-- Section 3 (expand without prompts) and the Finish task can be set as a take-home or whole-class wrap-up if there is time
+- The examples stay within today's voyage context so students can practise the writing move without needing later chapter knowledge
+- Section 1 gives prompts; Section 2 asks students to choose their own details
 
 [General: Resources | VTLM 2.0: Student Resources]`;
 
@@ -633,23 +626,52 @@ async function build() {
 
   addPdfFooter(ak, "Lesson 11 | Answer Key -- TEACHER COPY");
 
-  // Copy the school-supplied sentence expansion PDF into the lesson resources folder.
-  if (!fs.existsSync(SENTENCE_EXPANSION_SOURCE_PATH)) {
-    throw new Error("Missing school-supplied PDF: " + SENTENCE_EXPANSION_SOURCE_PATH);
-  }
-  fs.copyFileSync(SENTENCE_EXPANSION_SOURCE_PATH, SENTENCE_EXPANSION_PDF_PATH);
+  // Sentence expansion extension
+  const ext = createPdf({ title: SENTENCE_EXPANSION_RESOURCE.name });
+  let extY = addPdfHeader(ext, "Sentence Expansion Extension", {
+    color: C.SECONDARY,
+    subtitle: "Grow a thin sentence with when, where, how and why details",
+    lessonInfo: "Lesson 11 | Year 5/6 Literacy",
+    showNameDate: true,
+  });
+
+  extY = addTipBox(ext, "Start with the kernel sentence. Add one or two details that answer when, where, how or why. Keep the sentence clear.", extY, { color: C.SECONDARY });
+  extY = addBodyText(ext, "Example: Tom waited. -> After the funeral, Tom waited quietly by the rail because he wanted to speak to Rob.", extY, { fontSize: 10, italic: true });
+  extY += 6;
+
+  [
+    ["Tom called across the deck.", "Add where and why."],
+    ["Rob turned away.", "Add how and why."],
+    ["The ship drifted.", "Add when and where."],
+  ].forEach(([kernel, prompt], index) => {
+    extY = addSectionHeading(ext, `Part 1.${index + 1}: ${kernel}`, extY, { color: C.PRIMARY });
+    extY = addBodyText(ext, prompt, extY, { fontSize: 10, italic: true });
+    extY = addLinedArea(ext, extY, 2, { lineSpacing: 24 });
+    extY += 6;
+  });
+
+  extY = addSectionHeading(ext, "Part 2: Choose your own details", extY, { color: C.ACCENT });
+  extY = addBodyText(ext, "Kernel sentence: Sam coughed.", extY, { fontSize: 11 });
+  extY = addBodyText(ext, "Write one expanded sentence. Include at least two useful details.", extY, { fontSize: 10, italic: true });
+  extY = addLinedArea(ext, extY, 3, { lineSpacing: 24 });
+  extY += 8;
+  extY = addSectionHeading(ext, "Self-check", extY, { color: C.ALERT });
+  extY = addBodyText(ext, "- Did I add details that answer when, where, how or why?", extY, { fontSize: 10 });
+  extY = addBodyText(ext, "- Does the expanded sentence still make sense?", extY, { fontSize: 10 });
+  addPdfFooter(ext, "Lesson 11 | Sentence Expansion Extension");
 
   // Write all
   await Promise.all([
     pres.writeFile({ fileName: `${OUT_DIR}/Tom_Lesson11.pptx` }),
     writePdf(ws, PRACTICE_PDF_PATH),
     writePdf(ak, ANSWER_KEY_PDF_PATH),
+    writePdf(ext, SENTENCE_EXPANSION_PDF_PATH),
   ]);
 
   console.log("PPTX written to " + `${OUT_DIR}/Tom_Lesson11.pptx`);
   console.log("Done: " + PRACTICE_RESOURCE.name);
   console.log("Done: " + ANSWER_KEY_RESOURCE.name);
-  console.log("Done (copied): " + SENTENCE_EXPANSION_RESOURCE.name);
+  console.log("Done: " + SENTENCE_EXPANSION_RESOURCE.name);
 }
 
 build().catch(console.error);
