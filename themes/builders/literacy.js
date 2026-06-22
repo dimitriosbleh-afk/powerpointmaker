@@ -2,6 +2,7 @@
 
 const { SAFE_BOTTOM, CONTENT_TOP } = require("../core/layout");
 const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
+const { contrastRatio } = require("../core/contrast");
 
 /**
  * Factory that returns literacy-specific slide builders bound to a given
@@ -16,6 +17,9 @@ const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
  */
 function createLiteracyBuilders(C, FONT_H, FONT_B, el, S) {
   const sz = S || DEFAULT_SIZES;
+  const readableOn = (fill) => (
+    contrastRatio(C.WHITE, fill) >= contrastRatio(C.CHARCOAL, fill) ? C.WHITE : C.CHARCOAL
+  );
 
   /* ------------------------------------------------------------------ */
   /*  vocabSlide                                                         */
@@ -68,13 +72,14 @@ function createLiteracyBuilders(C, FONT_H, FONT_B, el, S) {
       const pillH = byBand(sz, 0.46, 0.42, 0.38);
       const pillW = byBand(sz, 1.7, 1.6, 1.5);
       const pillY = CONTENT_TOP + (bannerH - pillH) / 2;
+      const pillFill = C.ACCENT;
       s.addShape("roundRect", {
         x: 9.3 - pillW, y: pillY, w: pillW, h: pillH, rectRadius: 0.08,
-        fill: { color: C.ACCENT },
+        fill: { color: pillFill },
       });
       s.addText(partOfSpeech, {
         x: 9.3 - pillW, y: pillY, w: pillW, h: pillH,
-        fontSize: sz.chip, fontFace: FONT_B, color: C.PRIMARY, bold: true,
+        fontSize: sz.chip, fontFace: FONT_B, color: readableOn(pillFill), bold: true,
         align: "center", valign: "middle", margin: 0,
       });
     }
@@ -219,7 +224,7 @@ function createLiteracyBuilders(C, FONT_H, FONT_B, el, S) {
     if (pageRef) {
       s.addText(pageRef, {
         x: 8.4, y: CONTENT_TOP + quoteCardH - 0.35, w: 1.0, h: 0.26,
-        fontSize: sz.caption, fontFace: FONT_B, color: C.MUTED, align: "right", margin: 0,
+        fontSize: sz.caption, fontFace: FONT_B, color: readableOn(C.PRIMARY), align: "right", margin: 0,
       });
     }
 

@@ -54,11 +54,20 @@ def load_manifest(manifest_path: Path) -> dict:
     if not manifest["lessons"]:
         raise SystemExit("Manifest has no lessons.")
 
+    seen_sessions = {}
     for i, lesson in enumerate(manifest["lessons"]):
         if "folder" not in lesson or "session" not in lesson:
             raise SystemExit(
                 f"Lesson {i} missing 'folder' or 'session': {lesson}"
             )
+        session = lesson["session"]
+        if session in seen_sessions:
+            raise SystemExit(
+                f"Duplicate session number in manifest: session {session} "
+                f"appears in lessons {seen_sessions[session]} and {i}. "
+                "Session numbers must be unique so resource folders cannot collide."
+            )
+        seen_sessions[session] = i
 
     return manifest
 
@@ -159,6 +168,17 @@ def rewrite_resource_hyperlinks(pptx_path: Path) -> int:
     return rewrites
 
 
+def validate_no_duplicate_zip_members(pptx_path: Path) -> None:
+    with zipfile.ZipFile(pptx_path, "r") as zf:
+        names = zf.namelist()
+    duplicates = sorted({name for name in names if names.count(name) > 1})
+    if duplicates:
+        raise SystemExit(
+            f"Merged PPTX contains duplicate zip entries: {duplicates[:10]}. "
+            "This usually means a relationship or media part was copied unsafely."
+        )
+
+
 def merge_decks(manifest: dict, unit_dir: Path) -> Path:
     lessons = manifest["lessons"]
     out_pptx = unit_dir / manifest["unit_pptx_name"]
@@ -188,6 +208,7 @@ def merge_decks(manifest: dict, unit_dir: Path) -> Path:
             f"Rewrote {rewrites} hyperlink target(s) "
             f"from resources-session{{N}}/ to Resources/"
         )
+    validate_no_duplicate_zip_members(out_pptx)
 
     return out_pptx
 

@@ -15,10 +15,27 @@ const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
  */
 function createScienceBuilders(C, FONT_H, FONT_B, el, S) {
   const sz = S || DEFAULT_SIZES;
-  function drawArrowSegment(slide, x1, y1, x2, y2, color) {
+  function drawHorizontalArrow(slide, x, y, w, color, direction) {
     slide.addShape("line", {
-      x: x1, y: y1, w: x2 - x1, h: y2 - y1,
-      line: { color, width: 1.4, beginArrowType: "none", endArrowType: "triangle" },
+      x, y, w: Math.max(0.05, w), h: 0,
+      line: {
+        color,
+        width: 1.4,
+        beginArrowType: direction === "left" ? "triangle" : "none",
+        endArrowType: direction === "right" ? "triangle" : "none",
+      },
+    });
+  }
+
+  function drawVerticalArrow(slide, x, y, h, color, direction) {
+    slide.addShape("line", {
+      x, y, w: 0, h: Math.max(0.05, h),
+      line: {
+        color,
+        width: 1.4,
+        beginArrowType: direction === "up" ? "triangle" : "none",
+        endArrowType: direction === "down" ? "triangle" : "none",
+      },
     });
   }
 
@@ -449,10 +466,10 @@ function createScienceBuilders(C, FONT_H, FONT_B, el, S) {
     });
 
     if (safeSteps.length >= 4) {
-      drawArrowSegment(s, cx - 0.25, cy - orbitY + 0.1, cx + orbitX - 0.75, cy - 0.08, C.MUTED);
-      drawArrowSegment(s, cx + orbitX - 0.18, cy + 0.28, cx + 0.28, cy + orbitY + 0.18, C.MUTED);
-      drawArrowSegment(s, cx - 0.22, cy + orbitY + 0.25, cx - orbitX + 0.7, cy + 0.12, C.MUTED);
-      drawArrowSegment(s, cx - orbitX + 0.1, cy - 0.28, cx - 0.25, cy - orbitY + 0.02, C.MUTED);
+      drawHorizontalArrow(s, cx + 0.35, cy - orbitY - 0.06, orbitX - 0.75, C.MUTED, "right");
+      drawVerticalArrow(s, cx + orbitX + 0.05, cy + 0.25, orbitY - 0.35, C.MUTED, "down");
+      drawHorizontalArrow(s, cx - orbitX + 0.45, cy + orbitY + 0.02, orbitX - 0.8, C.MUTED, "left");
+      drawVerticalArrow(s, cx - orbitX - 0.05, cy - orbitY + 0.2, orbitY - 0.45, C.MUTED, "up");
     }
 
     const legendY = cardY + 2.72;

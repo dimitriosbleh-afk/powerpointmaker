@@ -17,13 +17,15 @@ const NOTE_SECTION_HEADERS = [
 ];
 
 const ASCII_REPLACEMENTS = [
+  [/\u00C3\u0192\u00E2\u20AC\u201D/g, "x"],
+  [/\u00C3\u0192\u00C2\u00B7/g, " divided by "],
   [/â€¢/g, "-"],
   [/â€“|â€”/g, "-"],
   [/â€˜|â€™/g, "'"],
   [/â€œ|â€�/g, '"'],
   [/â€¦/g, "..."],
   [/Ã—/g, "x"],
-  [/Ã·/g, "/"],
+  [/Ã·/g, " divided by "],
   [/Â/g, ""],
   [/[\u2018\u2019\u201A\u201B\u2032]/g, "'"],
   [/[\u201C\u201D\u201E\u201F\u2033]/g, '"'],
@@ -38,7 +40,7 @@ const ASCII_REPLACEMENTS = [
   [/\u2264/g, "<="],
   [/\u2260/g, "!="],
   [/\u00D7/g, "x"],
-  [/\u00F7/g, "/"],
+  [/\u00F7/g, " divided by "],
   [/\u00A0/g, " "],
   [/[\u200B-\u200D\uFEFF]/g, ""],
 ];
@@ -83,7 +85,8 @@ function toAscii(value) {
   return next
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^\x09\x0A\x0D\x20-\x7E]/g, "");
+    .replace(/[^\x09\x0A\x0D\x20-\x7E]/g, "")
+    .replace(/[ \t]+divided by[ \t]+/g, " divided by ");
 }
 
 function normalizeHeader(line) {
@@ -243,12 +246,12 @@ function getTeacherNotesSourceIssues(notes, opts) {
 function getSlideNotesText(slide) {
   if (!slide || !Array.isArray(slide._slideObjects)) return "";
 
-  const notesObject = slide._slideObjects.find((obj) => obj && obj._type === "notes");
-  if (!notesObject || !Array.isArray(notesObject.text) || !notesObject.text[0]) {
-    return "";
-  }
-
-  return notesObject.text[0].text || "";
+  return slide._slideObjects
+    .filter((obj) => obj && obj._type === "notes" && Array.isArray(obj.text))
+    .flatMap((obj) => obj.text)
+    .map((entry) => entry && entry.text ? String(entry.text).trim() : "")
+    .filter(Boolean)
+    .join("\n\n");
 }
 
 function buildNotesParagraphsXml(notes) {

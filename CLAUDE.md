@@ -90,9 +90,9 @@ themes/builders/           # Slide builders by subject (base, literacy, numeracy
 themes/palettes/           # Pure colour data (30 palettes per subject)
 themes/pdf_helpers.js      # PDF resource generation (pdfkit)
 builds/                    # One build script per lesson - writes to output/<LessonFolder>/
-builds_archive/            # Archived lesson scripts - historical only, not active exemplars
+_archive/                  # Archived lesson scripts - historical only, not active exemplars
 output/                    # Per-lesson folders (PPTX + companion PDFs)
-megapromptlean.md          # Pedagogical framework - paste into conversation when planning lessons
+IMPORTANT/MEGA_PROMPT.md   # Pedagogical framework - paste into conversation when planning lessons
 docs/                      # Deep reference docs (read when needed, not every session)
 ```
 
@@ -163,7 +163,7 @@ For builder signatures, palette schema, and full API: read `docs/theme-system.md
 - Default future generations to `mixed readiness`, not assumed mastery. Avoid student-facing or `SAY:` phrasing such as `you already know`, `students know the routine`, `not new to you`, `we've done this`, or `by Week X students know` unless the user explicitly asked for a revision/review lesson.
 - Beginner-safe prior-knowledge language is allowed: `Some of you may remember...`, `If this feels new, that's okay`, `We'll build this together`.
 - Default a 60-minute literacy lesson to one reading/comprehension or craft focus plus one writing/language focus only.
-- Default literacy lesson shape: title, LI/SC, 0-2 explicit vocab slides, reading launch, up to 2 pause points, 1 craft/analysis slide, 1 CFU, 1 I Do, 1 We Do, 1 You Do, closing, resources.
+- Default literacy lesson shape: title, Teacher Resources, hook or text launch, LI/SC, 0-2 explicit vocab slides if needed, up to 2 pause points, 1 craft/analysis slide, 1 CFU, 1 I Do, 1 We Do, 1 You Do, closing.
 - Default budget for a 60-minute literacy deck is 10-14 unique slides. Above 14 means the lesson is probably too crowded. Above 16 requires an explicit reason from the user.
 - Default reveal budget is 0-2 reveal pairs. Use reveals only when hiding the answer materially improves thinking. Do not use reveal pairs by default for every vocabulary, CFU, or We Do slide.
 - Incidental vocabulary list slides are off by default. Only include them when the source text genuinely demands them or the user explicitly asks for them.
@@ -230,7 +230,7 @@ Console warnings during build = layout bugs. Fix before shipping.
 - When using `contentSlide(..., drawRight)` or numeracy `workedExSlide(..., drawRight)`, use the callback's second `layoutGuide` argument for custom right-column positions. Do not hardcode custom panels flush to `CONTENT_TOP` when the slide also has a long title; start from `layoutGuide.panelTopPadded` unless you have visually verified a tighter layout.
 - Theme diagnostics are available for manual/custom slides: `runSlideDiagnostics(slide, pres)` plus the narrower `warnIfSlideHasOverlaps(...)` and `warnIfSlideElementsOutOfBounds(...)`. Use them before shipping any custom layout.
 - `contentSlide` and `workedExSlide` now auto-run diagnostics when a `drawRight` callback is provided. Any ERROR or WARN in build output is a layout bug — fix it before shipping.
-- If diagnostics only flag the footer zone on a custom slide, keep diagnostics enabled and call `runSlideDiagnostics(slide, pres, { respectSafeBottom: false })` rather than removing diagnostics altogether.
+- Standard footer text is ignored by diagnostics. If a custom footer-like element is falsely flagged, keep diagnostics enabled and use a narrow `ignoreIndices` override rather than disabling safe-bottom checks for the whole slide.
 - Theme image helpers are available for local assets: `addImageWithCaption(...)` and `addInstructionalImageCard(...)`.
 - `annotatedModelSlide(...)` is available on every theme object for labelled source features, poster/article structure, and "notice this part" teaching. Do not swap subjects just to reach it.
 - `compareVisualSlide(...)` is available on every theme object for We Do comparison of two posters, layouts, advertisements, or similar designed visuals.
@@ -253,11 +253,11 @@ When the user requests more than one session in a single ask (a unit, a week, a 
 
 1. Write one per-lesson build script per session in `builds/` as usual.
 2. Write a manifest at `builds/manifests/<unit>.json` listing each lesson's `build_script`, `folder`, and `session` in teaching order, plus `unit_folder` and `unit_pptx_name`. Manifest format is documented in `scripts/merge_unit.py` and `docs/resource-system.md`.
-3. Run `python scripts/build_unit.py builds/manifests/<unit>.json`. This builds every lesson through `build_and_check.js` (aborting on any gate failure), then merges the decks and resources into `output/<unit_folder>/<unit_pptx_name>` + `output/<unit_folder>/Resources/<flat PDFs>`.
+3. Run `python scripts/build_unit.py builds/manifests/<unit>.json`. This builds every lesson through `build_and_check.js` (aborting on any gate failure), merges the decks and resources into `output/<unit_folder>/<unit_pptx_name>` + `output/<unit_folder>/Resources/<flat PDFs>`, then runs merged unit QA via `qa_unit.js --skip-build --skip-merge`.
 4. The task is not "done" for a multi-session request until the combined unit folder exists. Do not claim completion after building per-lesson folders only.
 5. For a single-session request, the per-lesson folder IS the deliverable — no merge needed.
 
-If you fix one lesson later, rebuild just that lesson with `build_and_check.js`, then re-run `build_unit.py ... --skip-build` to re-merge without rebuilding the rest.
+If you fix one lesson later, rebuild just that lesson with `build_and_check.js`, then re-run `build_unit.py ... --skip-build` to re-merge and re-run merged unit QA without rebuilding the rest.
 
 Resource filenames must be unique across the unit (the merge flattens all PDFs into one folder). The `Session N` prefix that `pdf_helpers.js` enforces handles this automatically — do not strip it.
 
@@ -279,7 +279,7 @@ For ad-hoc (non-themed) presentation design guidance: read `docs/design-guide.md
 
 **Use the tested theme builders** (`titleSlide`, `liSlide`, `contentSlide`, `cfuSlide`, `workedExSlide`, `exitTicketSlide`, `closingSlide`) for every slide that fits their signature. Only go manual for truly novel layouts, and test those individually.
 
-**Archived scripts are not active exemplars.** Do not scan `builds_archive/` for nearby scripts to update or imitate by default. Treat that folder as historical reference only. If `builds/` is empty, build from the shared theme system, current docs, and the user brief rather than reviving archived lesson files.
+**Archived scripts are not active exemplars.** Do not scan `_archive/` for nearby scripts to update or imitate by default. Treat that folder as historical reference only. If `builds/` is empty, build from the shared theme system, current docs, and the user brief rather than reviving archived lesson files.
 
 Agents ARE useful for: research, reading reference files, visual QA inspection of rendered slide images, and content review. Just not for writing the build scripts themselves.
 

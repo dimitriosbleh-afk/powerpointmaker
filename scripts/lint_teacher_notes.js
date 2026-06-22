@@ -17,16 +17,16 @@ const issues = [];
 targets.forEach((filePath) => {
   issues.push(...lintTeacherNotesInFile(filePath, {
     checkMarkdownHeaders: true,
-    checkUnicodeBullets: false,
-    checkSmartPunctuation: false,
-    checkAscii: false,
+    checkUnicodeBullets: true,
+    checkSmartPunctuation: true,
+    checkAscii: true,
     checkSectionStructure: true,
-    maxLines: 50,
-    maxChars: 4700,
-    maxSayBullets: 16,
+    maxLines: 40,
+    maxChars: 2600,
+    maxSayBullets: 8,
     maxDoBullets: 8,
     maxWatchForBullets: 5,
-    maxTeacherNotesLines: 10,
+    maxTeacherNotesLines: 8,
     maxTeacherNotesChars: 1400,
   }));
 });

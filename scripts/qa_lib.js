@@ -7,6 +7,7 @@ const JSZip = require("jszip");
 const { getTeacherNotesSourceIssues } = require("../themes/core/notes");
 
 const ROOT = path.resolve(__dirname, "..");
+const PYTHON_ENV = { ...process.env, PYTHONUTF8: "1" };
 
 const FORBIDDEN_OUTPUT_PATTERNS = [
   { regex: /\bTODO\b/i, label: "TODO marker" },
@@ -21,6 +22,7 @@ function runCommand(command, args, opts) {
   const result = spawnSync(command, args, {
     cwd: ROOT,
     encoding: "utf8",
+    env: command === "python" ? PYTHON_ENV : process.env,
     ...opts,
   });
 

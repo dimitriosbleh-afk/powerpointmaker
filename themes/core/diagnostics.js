@@ -55,6 +55,12 @@ function getElementBounds(obj) {
   };
 }
 
+function isFooterElement(obj) {
+  const bounds = getElementBounds(obj);
+  if (!bounds || inferElementType(obj) !== "text") return false;
+  return bounds.y >= SAFE_BOTTOM + 0.15 && bounds.h <= 0.35 && bounds.w >= 7.5;
+}
+
 function describeElement(obj, index) {
   const bounds = getElementBounds(obj);
   const type = inferElementType(obj);
@@ -72,6 +78,7 @@ function shouldIgnoreIndex(index, obj, opts) {
   if ((o.ignoreIndices || []).includes(index)) return true;
   if (!obj) return true;
   if (inferElementType(obj) === "line") return true;
+  if (o.ignoreFooter !== false && isFooterElement(obj)) return true;
   if (obj._type === "notes") return true;
   return false;
 }

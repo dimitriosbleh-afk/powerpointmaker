@@ -147,7 +147,7 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
     if (drawRight) drawRight(s, layoutGuide);
     if (footer) el.addFooter(s, footer);
     if (notes) s.addNotes(notes);
-    if (drawRight) runSlideDiagnostics(s, pres, { respectSafeBottom: false });
+    if (drawRight) runSlideDiagnostics(s, pres);
     return s;
   }
 

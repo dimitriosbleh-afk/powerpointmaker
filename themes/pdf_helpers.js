@@ -1193,6 +1193,86 @@ function addRichResourceSlide(pres, config, theme, footer, notes) {
   return s;
 }
 
+function computeResourceCardLayout(resourceCount) {
+  const startY = 1.7;
+  const safeBottom = 5.1;
+  const columns = resourceCount > 4 ? 2 : 1;
+  const rows = Math.max(1, Math.ceil(resourceCount / columns));
+  const gap = columns === 2 ? 0.12 : 0.15;
+  const colGap = 0.3;
+  const colW = columns === 2 ? (9 - colGap) / 2 : 9;
+  const rawCardH = (safeBottom - startY - gap * Math.max(rows - 1, 0)) / rows;
+  const cardH = Math.min(0.7, Math.max(0.36, rawCardH));
+
+  return {
+    startY,
+    columns,
+    rows,
+    gap,
+    colGap,
+    colW,
+    cardH,
+    isTooDense: resourceCount > 0 && rawCardH < 0.45,
+  };
+}
+
+function getResourceCardFrame(layout, index) {
+  const col = layout.columns === 2 ? index % 2 : 0;
+  const row = layout.columns === 2 ? Math.floor(index / 2) : index;
+  return {
+    x: 0.5 + col * (layout.colW + layout.colGap),
+    y: layout.startY + row * (layout.cardH + layout.gap),
+    w: layout.colW,
+    h: layout.cardH,
+  };
+}
+
+function drawLegacyResourceCard(slide, res, index, layout, themeParts) {
+  const { TC, FH, FB, badgeColor } = themeParts;
+  const frame = getResourceCardFrame(layout, index);
+  const resourceFile = res.fileName || "";
+  const displayName = cleanResourceLabel(res.name) || resourceNameFromFileName(resourceFile);
+
+  slide.addShape("roundRect", {
+    x: frame.x, y: frame.y, w: frame.w, h: frame.h, rectRadius: 0.08,
+    fill: { color: TC.WHITE || "FFFFFF" },
+    shadow: { type: "outer", blur: 4, offset: 1, color: "000000", opacity: 0.10, angle: 135 },
+  });
+
+  slide.addShape("rect", {
+    x: frame.x, y: frame.y, w: 0.06, h: frame.h,
+    fill: { color: badgeColor },
+  });
+
+  const iconD = Math.min(0.46, Math.max(0.34, frame.h - 0.24));
+  const iconY = frame.y + (frame.h - iconD) / 2;
+  slide.addShape("roundRect", {
+    x: frame.x + 0.25, y: iconY, w: iconD, h: iconD, rectRadius: iconD / 2,
+    fill: { color: TC.CORAL || "C94030" },
+  });
+  slide.addText("PDF", {
+    x: frame.x + 0.25, y: iconY, w: iconD, h: iconD,
+    fontSize: layout.columns === 2 ? 8 : 9, fontFace: FB, color: TC.WHITE || "FFFFFF",
+    align: "center", valign: "middle", bold: true, margin: 0,
+  });
+
+  slide.addText(displayName, {
+    x: frame.x + 0.86, y: frame.y + 0.08, w: frame.w - 1.06, h: Math.min(0.3, frame.h - 0.16),
+    fontSize: layout.columns === 2 ? 12 : 14, fontFace: FH, color: TC.NAVY || "1B3A6B",
+    bold: true, margin: 0,
+    fit: "shrink", shrinkText: true,
+    hyperlink: { url: resourceFile, tooltip: "Open " + displayName },
+  });
+
+  if (res.description && frame.h >= 0.55) {
+    slide.addText(res.description, {
+      x: frame.x + 0.86, y: frame.y + 0.38, w: frame.w - 1.06, h: frame.h - 0.44,
+      fontSize: layout.columns === 2 ? 8.5 : 10, fontFace: FB, color: TC.MUTED || "6B7280",
+      margin: 0, fit: "shrink", shrinkText: true,
+    });
+  }
+}
+
 function addResourceSlide(pres, resources, theme, footer, notes) {
   // Structured §44 config object (manipulatives, board setup, videos, URLs,
   // OCHRE) routes to the rich slide; a flat array uses the legacy renderer.
@@ -1237,55 +1317,14 @@ function addResourceSlide(pres, resources, theme, footer, notes) {
   });
 
   // Resource cards
-  const cardH = 0.7;
-  const gap = 0.15;
-  const startY = 1.7;
+  const resourceList = Array.isArray(resources) ? resources : [];
+  const cardLayout = computeResourceCardLayout(resourceList.length);
+  if (cardLayout.isTooDense) {
+    console.warn("[addResourceSlide] resource list is too long for one slide; card text may shrink.");
+  }
 
-  resources.forEach((res, i) => {
-    const displayName = cleanResourceLabel(res.name) || resourceNameFromFileName(res.fileName);
-    const cy = startY + i * (cardH + gap);
-
-    // Card background
-    s.addShape("roundRect", {
-      x: 0.5, y: cy, w: 9, h: cardH, rectRadius: 0.08,
-      fill: { color: TC.WHITE || "FFFFFF" },
-      shadow: { type: "outer", blur: 4, offset: 1, color: "000000", opacity: 0.10, angle: 135 },
-    });
-
-    // Left accent strip
-    s.addShape("rect", {
-      x: 0.5, y: cy, w: 0.06, h: cardH,
-      fill: { color: badgeColor },
-    });
-
-    // PDF icon circle
-    const ICON_D = 0.46;
-    s.addShape("roundRect", {
-      x: 0.75, y: cy + 0.12, w: ICON_D, h: ICON_D, rectRadius: ICON_D / 2,
-      fill: { color: TC.CORAL || "C94030" },
-    });
-    s.addText("PDF", {
-      x: 0.75, y: cy + 0.12, w: ICON_D, h: ICON_D,
-      fontSize: 9, fontFace: FB, color: TC.WHITE || "FFFFFF",
-      align: "center", valign: "middle", bold: true, margin: 0,
-    });
-
-    // Resource name (clickable)
-    s.addText(displayName, {
-      x: 1.4, y: cy + 0.08, w: 7.5, h: 0.3,
-      fontSize: 14, fontFace: FH, color: TC.NAVY || "1B3A6B",
-      bold: true, margin: 0,
-      hyperlink: { url: res.fileName, tooltip: "Open " + displayName },
-    });
-
-    // Description
-    if (res.description) {
-      s.addText(res.description, {
-        x: 1.4, y: cy + 0.38, w: 7.5, h: 0.25,
-        fontSize: 10, fontFace: FB, color: TC.MUTED || "6B7280",
-        margin: 0,
-      });
-    }
+  resourceList.forEach((res, i) => {
+    drawLegacyResourceCard(s, res, i, cardLayout, { TC, FH, FB, badgeColor });
   });
 
   if (footer) {

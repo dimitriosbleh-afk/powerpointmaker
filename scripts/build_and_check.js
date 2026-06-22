@@ -20,10 +20,18 @@ const fs = require("fs");
 
 /* ── Patterns ──────────────────────────────────────────────────────────────── */
 
-// Matches diagnostics output from themes/core/diagnostics.js and layout.js.
-// Layout helpers historically emit "[bounds]" warnings, so include those in
-// the same hard gate instead of letting unsafe layouts pass.
-const DIAG_LINE_RE = /^(ERROR|WARN) |\[bounds\]/;
+// Several helpers emit tagged warnings rather than "WARN ..." prefixes.
+// Keep safety-related tags in the hard gate instead of letting unsafe decks pass.
+const DIAG_PREFIX_RE = /^(ERROR|WARN)\b/;
+const SAFETY_WARNING_TAGS = new Set([
+  "addresourceslide",
+  "bounds",
+  "contrast",
+  "exitticketslide",
+  "lislide",
+]);
+const SAFETY_WARNING_TEXT_RE = /\bskipping element\b/i;
+const PYTHON_ENV = { ...process.env, PYTHONUTF8: "1" };
 
 /* ── Helpers ───────────────────────────────────────────────────────────────── */
 
@@ -35,6 +43,16 @@ function findPptx(dir) {
 
 function pluralise(n, word) {
   return n + " " + word + (n === 1 ? "" : "s");
+}
+
+function hasSafetyWarningTag(line) {
+  return Array.from(line.matchAll(/\[([^\]]+)\]/g)).some((match) =>
+    SAFETY_WARNING_TAGS.has(String(match[1]).toLowerCase())
+  );
+}
+
+function isDiagnosticLine(line) {
+  return DIAG_PREFIX_RE.test(line) || hasSafetyWarningTag(line) || SAFETY_WARNING_TEXT_RE.test(line);
 }
 
 /* ── Main ──────────────────────────────────────────────────────────────────── */
@@ -61,6 +79,7 @@ function main() {
   const build = spawnSync("node", [script], {
     encoding: "utf8",
     stdio: ["inherit", "pipe", "pipe"],
+    env: PYTHON_ENV,
   });
 
   // Always show stdout (PPTX path, resource confirmations)
@@ -76,9 +95,9 @@ function main() {
 
   console.log("\n── Diagnostics ───────────────────────────────────────");
   const stderrLines = (build.stderr || "").split(/\r?\n/);
-  const diagLines = stderrLines.filter(l => DIAG_LINE_RE.test(l));
-  const errors = diagLines.filter(l => l.startsWith("ERROR")).length;
-  const warns = diagLines.filter(l => l.startsWith("WARN") || l.includes("[bounds]")).length;
+  const diagLines = stderrLines.filter(isDiagnosticLine);
+  const errors = diagLines.filter(l => /^ERROR\b/.test(l)).length;
+  const warns = diagLines.length - errors;
 
   if (diagLines.length === 0) {
     console.log("PASS — 0 errors, 0 warnings");
@@ -110,6 +129,7 @@ function main() {
     const md = spawnSync("python", ["-m", "markitdown", pptxFile], {
       encoding: "utf8",
       stdio: ["inherit", "pipe", "pipe"],
+      env: PYTHON_ENV,
     });
 
     if (md.status !== 0) {

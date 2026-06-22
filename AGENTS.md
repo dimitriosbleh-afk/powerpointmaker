@@ -23,9 +23,9 @@ themes/builders/           # Slide builders by subject (base, literacy, numeracy
 themes/palettes/           # Pure colour data (30 palettes per subject)
 themes/pdf_helpers.js      # PDF resource generation (pdfkit)
 builds/                    # One build script per lesson - writes to output/<LessonFolder>/
-builds_archive/            # Archived lesson scripts - historical only, not active exemplars
+_archive/                  # Archived lesson scripts - historical only, not active exemplars
 output/                    # Per-lesson folders (PPTX + companion PDFs)
-megapromptlean.md          # Pedagogical framework - paste into conversation when planning lessons
+IMPORTANT/MEGA_PROMPT.md   # Pedagogical framework - paste into conversation when planning lessons
 docs/                      # Deep reference docs (read when needed, not every session)
 ```
 
@@ -66,6 +66,34 @@ For builder signatures, palette schema, and full API: read `docs/theme-system.md
 - Each presentation needs a fresh `new pptxgen()` instance.
 - Write files with `await pres.writeFile({ fileName })`, never the deprecated `writeFile("path.pptx")` form.
 - Always set `pres.layout = "LAYOUT_16x9"`. NEVER use `"LAYOUT_WIDE"` (wrong dimensions).
+
+## Teacher Notes Rules
+
+- Speaker notes are plain text in PptxGenJS/PowerPoint. NEVER use markdown in teacher notes. Do not use `**bold**`, `_italics_`, backticks, markdown headings, or markdown lists.
+- Teacher notes must be ASCII-safe for PowerPoint, PowerPoint for iPad, and exported notes views. Use straight quotes `' "`, hyphen bullets `-`, `...`, `->`, `>=`, `<=`, and `x`. Avoid smart quotes, em dashes, unicode bullets, unicode arrows, and other decorative symbols in notes.
+- Keep teacher notes scannable. Prefer short bullets, not dense paragraphs. `SAY` should usually be 2-4 short bullets, `DO` 2-4 short bullets, `TEACHER NOTES` no more than 2 short sentences, and `WATCH FOR` 1-2 bullets.
+- `SAY:` is teacher cue language, not script prose. Each bullet should sound like something a teacher could say immediately in class with little or no rewriting.
+- Section headers in notes should be plain uppercase text like `SAY:` and `DO:`. Do not try to force bold with markdown.
+- Separate note sections with a blank line. PowerPoint on iPad reads paragraph breaks more reliably than dense text blocks.
+- Do not add a `PACING OVERVIEW` block to speaker notes by default. If timing guidance is genuinely needed, keep it to one short sentence in `TEACHER NOTES`.
+- Use a plain-text `SOURCES:` section whenever a slide includes an external image or a non-trivial externally sourced factual claim.
+
+## Cognitive Load Defaults
+
+- `Lean` means fewer, better-taught moves, not less learning. Apply this across all sessions, not just literacy.
+- Protect the high-yield parts of instruction: clear modelling, repeated practice, retrieval, CFU, guided practice, and independent application.
+- If a lesson feels overcrowded, cut low-yield extras first: duplicate explanations, oversized vocab banks, unnecessary reveal pairs, long note essays, decorative transitions, and multiple competing objectives.
+- Default future generations to `mixed readiness`, not assumed mastery. Avoid student-facing or `SAY:` phrasing such as `you already know`, `students know the routine`, `not new to you`, `we've done this`, or `by Week X students know` unless the user explicitly asked for a revision/review lesson.
+- Beginner-safe prior-knowledge language is allowed: `Some of you may remember...`, `If this feels new, that's okay`, `We'll build this together`.
+
+## Lean Literacy Defaults
+
+- Default a 60-minute literacy lesson to one reading/comprehension or craft focus plus one writing/language focus only.
+- Default literacy lesson shape: title, Teacher Resources, hook or text launch, LI/SC, 0-2 explicit vocab slides if needed, up to 2 pause points, 1 craft/analysis slide, 1 CFU, 1 I Do, 1 We Do, 1 You Do, closing.
+- Default budget for a 60-minute literacy deck is 10-14 unique slides. Above 14 means the lesson is probably too crowded. Above 16 requires an explicit reason from the user.
+- Default reveal budget is 0-2 reveal pairs. Use reveals only when hiding the answer materially improves thinking. Do not use reveal pairs by default for every vocabulary, CFU, or We Do slide.
+- Incidental vocabulary list slides are off by default. Only include them when the source text genuinely demands them or the user explicitly asks for them.
+- Slide-face text should stay lean. Do not preload large definition banks, long explanation blocks, or multiple abstract objectives onto one lesson by default.
 
 For full PptxGenJS API reference: read `docs/pptxgenjs-reference.md`.
 
@@ -128,7 +156,7 @@ Console warnings during build = layout bugs. Fix before shipping.
 - When using `contentSlide(..., drawRight)` or numeracy `workedExSlide(..., drawRight)`, use the callback's second `layoutGuide` argument for custom right-column positions. Do not hardcode custom panels flush to `CONTENT_TOP` when the slide also has a long title; start from `layoutGuide.panelTopPadded` unless you have visually verified a tighter layout.
 - Theme diagnostics are available for manual/custom slides: `runSlideDiagnostics(slide, pres)` plus the narrower `warnIfSlideHasOverlaps(...)` and `warnIfSlideElementsOutOfBounds(...)`. Use them before shipping any custom layout.
 - `contentSlide` and `workedExSlide` now auto-run diagnostics when a `drawRight` callback is provided. Any ERROR or WARN in build output is a layout bug — fix it before shipping.
-- If diagnostics only flag the footer zone on a custom slide, keep diagnostics enabled and call `runSlideDiagnostics(slide, pres, { respectSafeBottom: false })` rather than removing diagnostics altogether.
+- Standard footer text is ignored by diagnostics. If a custom footer-like element is falsely flagged, keep diagnostics enabled and use a narrow `ignoreIndices` override rather than disabling safe-bottom checks for the whole slide.
 - Theme image helpers are available for local assets: `addImageWithCaption(...)` and `addInstructionalImageCard(...)`.
 - `annotatedModelSlide(...)` is available on every theme object for labelled source features, poster/article structure, and "notice this part" teaching. Do not swap subjects just to reach it.
 - `compareVisualSlide(...)` is available on every theme object for We Do comparison of two posters, layouts, advertisements, or similar designed visuals.
@@ -139,7 +167,7 @@ Console warnings during build = layout bugs. Fix before shipping.
 - Per-lesson build output goes to `output/<LessonFolder>/` - PPTX at the root, companion PDFs in a `resources-session{N}/` subfolder (N = the session number for that lesson). This is the build step, not the delivery step for multi-session requests.
 - PptxGenJS hyperlinks use relative paths - include the subfolder prefix and session-first filename (e.g., `resources-session3/Session 3 Worksheet.pdf`).
 - Use the session resource helpers in `themes/pdf_helpers.js` (`getSessionResourceFolder`, `formatSessionResourceFileName`, `makeSessionResource`) instead of hardcoding resource folder names or teacher-facing PDF labels.
-- **Multi-session delivery is required.** When the user asks for more than one session in a single request (a unit, a week, "lessons 1 to N"), the delivered output MUST be one combined PowerPoint and one flat `Resources/` folder. Write a manifest at `builds/manifests/<unit>.json` and run `python scripts/build_unit.py builds/manifests/<unit>.json`. This builds every lesson through `build_and_check.js` and merges decks plus PDFs into `output/<unit_folder>/<unit_pptx_name>` + `output/<unit_folder>/Resources/`. Do not claim completion until the combined unit folder exists. See CLAUDE.md "Multi-Session Unit Delivery" and `docs/resource-system.md` for manifest format.
+- **Multi-session delivery is required.** When the user asks for more than one session in a single request (a unit, a week, "lessons 1 to N"), the delivered output MUST be one combined PowerPoint and one flat `Resources/` folder. Write a manifest at `builds/manifests/<unit>.json` and run `python scripts/build_unit.py builds/manifests/<unit>.json`. This builds every lesson through `build_and_check.js`, merges decks plus PDFs into `output/<unit_folder>/<unit_pptx_name>` + `output/<unit_folder>/Resources/`, and runs merged unit QA. Do not claim completion until the combined unit folder exists. See CLAUDE.md "Multi-Session Unit Delivery" and `docs/resource-system.md` for manifest format.
 - `liSlide()` must receive exactly 1 Learning Intention item and exactly 3 Success Criteria items. Distil curriculum descriptors into one destination statement before writing the slide; extra LI items are truncated by the helper and make the deck misleading.
 - `SAY:` notes are teacher cue bullets, not formal narration. Write 2-4 short, directly speakable bullets that sound natural in class, use light conversational glue only when it helps flow, and avoid slang, polished briefing tone, or mini-lecture prose the teacher would have to mentally rewrite.
 - Use a plain-text `SOURCES:` section whenever a slide includes an external image or a non-trivial externally sourced factual claim.
@@ -147,7 +175,7 @@ Console warnings during build = layout bugs. Fix before shipping.
 For resource generation details and PDF helper API: read `docs/resource-system.md`.
 For ad-hoc (non-themed) presentation design guidance: read `docs/design-guide.md`.
 
-**Scaffold quality:** An enabling scaffold must change the FORM of the task, not just the wording. It must draw a visual model, pre-fill intermediate steps, or provide a structural framework. If you claim "the model is drawn for you," draw the model with PDFKit primitives. Text that describes a visual is not a visual. Read `docs/resource-system.md` section "Scaffold Quality Rules" before writing any SR2.
+**Scaffold quality:** An enabling scaffold must change the FORM of the task, not just the wording. It must draw a visual model, pre-fill intermediate steps, or provide a structural framework. If you claim "the model is drawn for you," draw the model with PDFKit primitives. Text that describes a visual is not a visual. Read `docs/resource-system.md` section "Scaffold Quality Rules" before writing an enabling scaffold PDF.
 - For visual-analysis scaffold PDFs, include the visual object on paper as well. If students are comparing posters, advertisements, maps, or layouts, the PDF must show schematic or real versions of those visuals; prose descriptions are not an acceptable substitute.
 
 ## Build Script Authoring (Critical)
@@ -162,7 +190,7 @@ For ad-hoc (non-themed) presentation design guidance: read `docs/design-guide.md
 
 **Use the tested theme builders** (`titleSlide`, `liSlide`, `contentSlide`, `cfuSlide`, `workedExSlide`, `exitTicketSlide`, `closingSlide`) for every slide that fits their signature. Only go manual for truly novel layouts, and test those individually.
 
-**Archived scripts are not active exemplars.** Do not scan `builds_archive/` for nearby scripts to update or imitate by default. Treat that folder as historical reference only. If `builds/` is empty, build from the shared theme system, current docs, and the user brief rather than reviving archived lesson files.
+**Archived scripts are not active exemplars.** Do not scan `_archive/` for nearby scripts to update or imitate by default. Treat that folder as historical reference only. If `builds/` is empty, build from the shared theme system, current docs, and the user brief rather than reviving archived lesson files.
 
 Agents ARE useful for: research, reading reference files, visual QA inspection of rendered slide images, and content review. Just not for writing the build scripts themselves.
 

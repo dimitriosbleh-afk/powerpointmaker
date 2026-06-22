@@ -218,9 +218,10 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
       x: innerX + 0.12, y: innerY + 0.14, w: innerW - 0.24, h: innerH - 0.28,
       line: { color: spec.mutedLine, width: 0.9 },
     });
-    slide.addShape("line", {
-      x: innerX + 0.12, y: innerY + innerH - 0.14, w: innerW - 0.24, h: -(innerH - 0.28),
-      line: { color: spec.mutedLine, width: 0.9 },
+    slide.addShape("roundRect", {
+      x: innerX + 0.12, y: innerY + innerH - 0.24, w: Math.max(0.28, innerW - 0.24), h: 0.08, rectRadius: 0.02,
+      fill: { color: spec.mutedLine, transparency: 20 },
+      line: { color: spec.mutedLine, width: 0.2 },
     });
   }
 
@@ -296,8 +297,9 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     });
     points.forEach((point, index) => {
       const fill = index === 1 ? spec.accent : lightenHex(spec.accent, 0.45);
-      slide.addShape("ellipse", {
+      slide.addShape("roundRect", {
         x: x + w * point.cx - 0.08, y: y + h * point.cy - 0.08, w: 0.16, h: 0.16,
+        rectRadius: 0.08,
         fill: { color: fill },
         line: { color: fill, width: 0.2 },
       });
@@ -312,8 +314,9 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
       line: { color: spec.softBorder, width: 0.2 },
     });
     [0.1, 0.17, 0.24].forEach((cx) => {
-      slide.addShape("ellipse", {
+      slide.addShape("roundRect", {
         x: x + w * cx, y: y + 0.09, w: 0.05, h: 0.05,
+        rectRadius: 0.025,
         fill: { color: lightenHex(spec.accent, 0.5) },
         line: { color: lightenHex(spec.accent, 0.5), width: 0.2 },
       });
@@ -554,8 +557,9 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
         const count = Math.max(3, Number(component.count) || 4);
         const gapW = innerW / (count + 1);
         for (let index = 0; index < count; index += 1) {
-          slide.addShape("ellipse", {
+          slide.addShape("roundRect", {
             x: innerX + gapW * (index + 0.65), y: cursorY + blockH * 0.18, w: 0.14, h: 0.14,
+            rectRadius: 0.07,
             fill: { color: index === 0 ? normalized.accent : lightenHex(normalized.accent, 0.45) },
             line: { color: index === 0 ? normalized.accent : lightenHex(normalized.accent, 0.45), width: 0.2 },
           });
@@ -963,7 +967,7 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     if (drawRight) drawRight(s, layoutGuide);
     if (footer) el.addFooter(s, footer);
     if (notes) s.addNotes(notes);
-    if (drawRight) runSlideDiagnostics(s, pres, { respectSafeBottom: false });
+    if (drawRight) runSlideDiagnostics(s, pres);
     return s;
   }
 
@@ -1582,7 +1586,12 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     });
 
     const startY = titleY + titleH + 0.18;
-    if (cleaned.length === 0) return s;
+    if (cleaned.length === 0) {
+      console.warn("[exitTicketSlide] no prompts provided; rendered title, footer, and notes only.");
+      if (footer) el.addFooter(s, footer);
+      if (notes) s.addNotes(notes);
+      return s;
+    }
     const perH = Math.min(
       byBand(sz, 2.1, 1.5, 1.2),
       (SAFE_BOTTOM - startY) / Math.max(cleaned.length, 1) - 0.12,

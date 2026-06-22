@@ -67,7 +67,7 @@ PPTX integration:
 
 ## Resource Slide
 
-Every lesson with companion PDFs should include a resource slide after the last content slide.
+Every lesson with companion PDFs should include a Teacher Resources slide immediately after the title slide. Do not place resource links at the end of the deck.
 
 ```javascript
 const { addResourceSlide, makeSessionResource } = require("../themes/pdf_helpers");
@@ -213,9 +213,12 @@ The per-lesson folder structure above is the **build step**. The **delivery step
    - runs `node scripts/build_and_check.js` against each lesson's build script in manifest order (aborts on any gate failure);
    - merges every per-lesson PPTX into one combined deck;
    - copies every PDF from every `resources-session{N}/` into one flat `Resources/` folder;
-   - writes both into `output/<unit_folder>/`.
-4. The merged deck preserves slide order (manifest order), shapes, backgrounds, embedded images, and speaker notes.
+   - writes both into `output/<unit_folder>/`;
+   - runs merged unit QA with `node scripts/qa_unit.js <manifest> --skip-build --skip-merge`.
+4. The merged deck preserves slide order (manifest order), shapes, backgrounds, embedded images, and speaker notes. The merge aborts if the resulting PPTX package contains duplicate zip entries.
 5. Resource filenames must be unique across the unit — the merge will abort with a clear error if two sessions ship a PDF with the same name. The `Session N` prefix that `formatSessionResourceName()` enforces handles this automatically.
+
+6. Session numbers must also be unique. Reusing a session number is invalid because it can collide with per-session resource folders during merge.
 
 ### Manifest format
 
@@ -268,7 +271,7 @@ node scripts/build_and_check.js builds/build_decfrac_lesson3.js
 python scripts/build_unit.py builds/manifests/decfrac.json --skip-build
 ```
 
-`--skip-build` skips the per-lesson gate for every lesson and re-runs only the merge step.
+`--skip-build` skips the per-lesson gate for every lesson, then re-runs the merge and merged-unit QA. Use `--skip-qa` only for local merge debugging, not delivery.
 
 ### Resource hyperlinks in the merged deck
 

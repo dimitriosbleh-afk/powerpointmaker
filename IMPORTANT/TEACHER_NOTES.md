@@ -156,12 +156,7 @@ DO:
 TEACHER NOTES:
 WATCH FOR:
 
-Conditional sections appear only when needed, after DO and before TEACHER NOTES, in this order:
-
-CFU CHECKPOINT:
-ENABLING & EXTENDING:
-MISCONCEPTIONS:
-SENSITIVITY ADVISORY:
+Conditional sections appear only when needed. `CFU CHECKPOINT:` appears after `DO:` and before `TEACHER NOTES:`. `ENABLING & EXTENDING:`, `MISCONCEPTIONS:` and `SENSITIVITY ADVISORY:` appear after `TEACHER NOTES:` in the full order below.
 
 If an external source, dictionary, handbook, article, supplied document, publisher note or existing attribution is directly used, add SOURCES: above SAY:.
 
@@ -1259,7 +1254,7 @@ Fluidity:
 - Routine slides remain consistent but content-specific.
 - Notes help the teacher improve the teaching of what is already there.
 
-If there are exsisting links that exsist in previous teacher notes, ensure these are carried across if for example they link to a task being completed on that slide. E.g. it could be a link to a worksheet that needs to be printed and distributed. 
+If previous teacher notes contain links that support a slide task, carry those links forward when revising the notes. This includes links to worksheets, task pages, source documents, or resources that must be printed or distributed for that slide.
 
 # 33. FINAL RESPONSE STYLE
 
@@ -1283,4 +1278,4 @@ Absorb the slide. Preserve the deck. Write notes that are specific, faithful, ac
 
 A strong notes-enhanced deck lets the teacher open the file, understand the teaching move, use the slide's visuals properly, check every student, pivot when needed and keep the lesson flowing.
 
-User: 
+User:

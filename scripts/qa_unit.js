@@ -12,7 +12,7 @@ const {
 } = require("./qa_lib");
 
 function usage() {
-  console.error("Usage: node scripts/qa_unit.js <manifest-or-name> [--skip-build]");
+  console.error("Usage: node scripts/qa_unit.js <manifest-or-name> [--skip-build] [--skip-merge]");
   console.error("  e.g. node scripts/qa_unit.js builds/manifests/holes.json");
   console.error("  e.g. node scripts/qa_unit.js holes --skip-build");
 }
@@ -75,6 +75,7 @@ async function main() {
   const args = process.argv.slice(2);
   const manifestArg = args.find((arg) => !arg.startsWith("-"));
   const skipBuild = args.includes("--skip-build");
+  const skipMerge = args.includes("--skip-merge");
   const manifestPath = resolveManifest(manifestArg);
 
   if (!manifestPath) {
@@ -109,11 +110,15 @@ async function main() {
     expectedResourceCount += validatePdfFolder(resourceDir, issues);
   }
 
-  console.log("\nMerging unit...");
-  const mergeOutput = runCommand("python", ["scripts/merge_unit.py", path.relative(ROOT, manifestPath)], {
-    timeout: 180000,
-  });
-  process.stdout.write(mergeOutput);
+  if (skipMerge) {
+    console.log("\nSkipping merge; validating existing merged unit output...");
+  } else {
+    console.log("\nMerging unit...");
+    const mergeOutput = runCommand("python", ["scripts/merge_unit.py", path.relative(ROOT, manifestPath)], {
+      timeout: 180000,
+    });
+    process.stdout.write(mergeOutput);
+  }
 
   const unitDir = path.join(ROOT, "output", manifest.unit_folder);
   const unitPptx = path.join(unitDir, manifest.unit_pptx_name);

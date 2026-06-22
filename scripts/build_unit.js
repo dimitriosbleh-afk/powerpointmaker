@@ -24,7 +24,7 @@ function resolveManifest(arg) {
 }
 
 function usage() {
-  console.error("Usage: node scripts/build_unit.js <manifest-or-name> [--skip-build]");
+  console.error("Usage: node scripts/build_unit.js <manifest-or-name> [--skip-build] [--skip-qa]");
   console.error("  e.g. node scripts/build_unit.js builds/manifests/holes.json");
   console.error("  e.g. node scripts/build_unit.js holes --skip-build");
   const manifests = listManifests();
@@ -47,6 +47,7 @@ function main() {
 
   const pyArgs = [PY_BUILD_UNIT, path.relative(ROOT, manifest)];
   if (args.includes("--skip-build")) pyArgs.push("--skip-build");
+  if (args.includes("--skip-qa")) pyArgs.push("--skip-qa");
 
   const result = spawnSync("python", pyArgs, {
     cwd: ROOT,

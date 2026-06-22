@@ -1,0 +1,21 @@
+{
+  "unit_folder": "Holes_Persuasive_Unit_3_Sessions",
+  "unit_pptx_name": "Holes Persuasive Writing -- Year 5-6 (3 Sessions).pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_holes_persuasive_s1.js",
+      "folder": "Holes_Persuasive_S1_Introduction",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_holes_persuasive_s2.js",
+      "folder": "Holes_Persuasive_S2_Body_Evidence_Emotive",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_holes_persuasive_s3.js",
+      "folder": "Holes_Persuasive_S3_Counter_Conclusion",
+      "session": 3
+    }
+  ]
+}
