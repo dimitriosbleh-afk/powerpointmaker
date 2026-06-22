@@ -156,6 +156,7 @@ If any item fails, revise before delivering.
     - SC1, SC2 and SC3 and the framing words "Foundation", "Core", "Depth", "Everyone", "Most" and "Stretch" are a design tool for you, not labels for students.
     - Student-facing slides, closing slides and worksheets must show the three success criteria as a plain unlabelled list of "I can..." statements.
     - Do not display "Everyone", "Most", "Stretch", "SC1", "SC2", "SC3", "Foundation", "Core" or "Depth" beside the criteria on any student-facing surface, including the closing or review and reflect slide.
+    - Do not display an "Assesses SC2" tag, an "SC2" badge or any SC number on the exit ticket face or any other student-facing slide. The exit ticket's SC target is recorded in the teacher notes only. If the build pipeline offers an assesses-SC tag, leave it off for student-facing decks.
     - Internal tiering still drives which criterion the exit ticket targets and how enabling and extending move, but students see one clean list.
 
 19. Resource and materials information must appear at the start of the deck.
@@ -556,7 +557,7 @@ Use:
 - Some of you may remember...
 - If this feels new, that is okay.
 - Let us build it together.
-- Watch this first.
+- Let us look at this one together first.
 - Let us remind ourselves.
 - We will practise this step together.
 
@@ -1877,12 +1878,12 @@ Think-alouds should show:
 - how to check
 - how the model links to the success criteria
 
-Use natural teacher language:
+Script the think-aloud as natural, connected teacher talk the teacher can read straight off the notes. Write what a real teacher says, not clipped cues like "Watch me" or "Watch this first."
 
-- "Watch this first."
-- "I need to decide what the question is asking."
-- "I am going to check the visual matches the equation."
-- "This is the trap. It looks like addition, but the symbol tells me division."
+- "Let us work through this one together. Watch how I decide what the question is actually asking before I write anything."
+- "The first thing I always check is whether my drawing matches the numbers. Three counters here, four there, so my picture matches the problem."
+- "Here is the trap I want you to watch for. It looks like an addition because the numbers sit close together, but the symbol tells me to divide, so I have to share, not combine."
+- "Now I will say my thinking out loud so you can hear exactly how I got there."
 
 # 34. WE DO DESIGN
 
@@ -2579,10 +2580,12 @@ Keep the slide face lean and put teaching detail in the notes.
 
 SAY:
 
-- 2 to 5 short bullets
-- directly speakable
-- natural classroom language
-- include key questions and expected answers when useful
+- 2 to 5 cues, each a complete sentence or two of natural classroom talk the teacher can read aloud and teach from directly.
+- Write what a real teacher would actually say to the class, in a warm classroom voice. Avoid clipped robotic fragments such as "Watch me" or "Watch this first." Open the modelling naturally, for example "Let us look at this one together. Watch how I..." or "I am going to show you how I work this out, then you will try one."
+- On modelling slides, script the think-aloud as connected teacher talk: name what you notice, the choice you are making and why, in plain words a student would hear.
+- Include the key question and the expected answer where useful, using the Ask/Expected pattern.
+- Give enough detail that a teacher who has not pre-read the lesson can pick up the slide and teach it confidently from SAY alone.
+- Keep it speakable and scannable. Detailed means complete, natural spoken cues, not a dense paragraph and not a presenter announcement.
 
 DO:
 
@@ -2622,9 +2625,9 @@ Do not place teacher guidance on the student slide.
 Use this template:
 
 SAY:
-- [Speakable teacher cue.]
-- [Speakable teacher cue.]
-- Ask: [question] [expected response]
+- [Natural teacher talk the teacher can read aloud, one or two full sentences in a real classroom voice.]
+- [Think-aloud or explanation in plain teacher words, not a clipped label or a presenter announcement.]
+- Ask: [question] Expected: [expected response]
 
 DO:
 - [Concrete teacher action.]
@@ -2877,6 +2880,8 @@ The exit ticket may be:
 Generate a printed exit ticket only if collection is important.
 
 The exit ticket must assess SC2 directly and may touch SC1 or SC3.
+
+The exit ticket targets SC2 internally, but the slide face must not show this. Do not print "Assesses SC2", an "SC2" badge or any SC number on the exit ticket slide. Record the SC target in the teacher notes instead. SC numbering is an internal planning tool per section 0a item 18, and students see a clean prompt.
 
 If the exit ticket is printed, it counts as one resource unless it is a very small slip attached to the main worksheet.
 
@@ -4224,15 +4229,20 @@ The goal is not a shorter deck.
 
 The goal is a deck that teaches clearly, provides enough practice, supports extension, and still feels calm and easy to use.
 
-# 69. TEACHER-FACING REQUEST TEMPLATE
+# 69. USER REQUEST
 
-Use this as a template for collecting lesson details. It is not a live instruction.
+The lesson brief goes in the fields below. The user usually sends this entire prompt in one message with these fields filled in. When they are filled in, this section is the live request.
+
+How to read this section:
+
+- If the fields below contain real lesson details, treat them as the live request and build the lesson now, following the build workflow in section 59. Do not enter plan mode and do not ask whether to build. The filled-in fields are the instruction to proceed. Per section 66, only ask a follow-up question if the lesson genuinely cannot be created without missing information.
+- If the fields below still show the placeholder "XYZ" values, this is an empty template and no request has been made yet. Wait for the user's brief rather than building from placeholders.
 
 User: Generate a slide deck for the following:
-Subject: “ XYZ ”
-Grade: “ XYZ ”
-Content: “ XYZ ”
-Slide Decks: “ XYZ ”
-Additional Notes: “ XYZ ”
-Number Fluency Focus: “ XYZ ”
-Daily Review Focus: “ XYZ ”
+Subject: " XYZ "
+Grade: " XYZ "
+Content: " XYZ "
+Slide Decks: " XYZ "
+Additional Notes: " XYZ "
+Number Fluency Focus: " XYZ "
+Daily Review Focus: " XYZ "

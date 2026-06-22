@@ -56,7 +56,7 @@ const ROUTINE_LABELS = {
   miniWhiteboard: "Mini-whiteboard",
   partnerTalk:    "Partner talk",
   listen:         "Listen",
-  teacherModel:   "Watch me",
+  teacherModel:   "Teacher model",
   turnAndTell:    "Turn & tell",
   workbook:       "Workbook",
   scissorsAndGlue: "Cut & paste",

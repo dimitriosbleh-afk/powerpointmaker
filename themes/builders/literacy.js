@@ -260,7 +260,7 @@ function createLiteracyBuilders(C, FONT_H, FONT_B, el, S) {
    * When only one is provided, renders as a single full-width card.
    *
    * @param {object} pres          PptxGenJS presentation instance
-   * @param {string} badgeText     Badge label (defaults to "I Do \u2014 Watch Me")
+   * @param {string} badgeText     Badge label (defaults to "I Do")
    * @param {string} title         Slide title
    * @param {string} leftContent   Left column text (or single-panel text)
    * @param {string} rightContent  Right column text (optional)
@@ -271,7 +271,7 @@ function createLiteracyBuilders(C, FONT_H, FONT_B, el, S) {
   function modellingSlide(pres, badgeText, title, leftContent, rightContent, notes, footer) {
     const s = pres.addSlide();
     el.addTopBar(s, C.PRIMARY);
-    el.addBadge(s, badgeText || "I Do \u2014 Watch Me", { color: C.PRIMARY, w: 2.2 });
+    el.addBadge(s, badgeText || "I Do", { color: C.PRIMARY, w: 2.2 });
     el.addTitle(s, title);
 
     const cardH = SAFE_BOTTOM - CONTENT_TOP;

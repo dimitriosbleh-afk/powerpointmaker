@@ -1540,11 +1540,18 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
    * assessment items per §15d, so callers may opt into numbering with
    * `opts.numbered: true` when collecting handed-in tickets requires it.
    *
+   * `opts.assessesSc` records which Success Criterion the ticket targets, but
+   * the visible "Assesses SC{n}" chip is OFF by default. Megaprompt §0a item
+   * 18 / §53: SC1/SC2/SC3 numbering is an internal planning tool and must not
+   * appear on any student-facing surface. The SC target belongs in the teacher
+   * notes. Render the chip only for a teacher-facing review export by passing
+   * `opts.showAssessesTag: true`.
+   *
    * @param {object}   pres
    * @param {string|string[]} prompts  one or more exit-ticket prompts
    * @param {string}   notes
    * @param {string}   footer
-   * @param {object}   [opts]   { numbered, assessesSc, badgeColor, title }
+   * @param {object}   [opts]   { numbered, assessesSc, showAssessesTag, badgeColor, title }
    */
   function exitTicketSlide(pres, prompts, notes, footer, opts) {
     const s = pres.addSlide();
@@ -1564,7 +1571,10 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     const badgeW = byBand(sz, 2.1, 1.95, 1.8);
     el.addBadge(s, "Exit Ticket", { color: stripColor, x: 0.5, y: 0.2, w: badgeW, h: badgeH });
 
-    if (o.assessesSc) {
+    // §0a item 18 / §53: keep internal SC numbering off the student-facing
+    // exit ticket. Only render the chip for an explicit teacher-facing review
+    // export (opts.showAssessesTag); the SC target still lives in the notes.
+    if (o.assessesSc && o.showAssessesTag) {
       const scTagW = byBand(sz, 1.6, 1.5, 1.3);
       el.addTextOnShape(s, `Assesses SC${o.assessesSc}`, {
         x: 0.5 + badgeW + 0.16, y: 0.2, w: scTagW, h: badgeH, rectRadius: 0.08,

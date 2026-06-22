@@ -180,11 +180,12 @@ Do not leave notes blank on a slide unless the user explicitly asks you to skip 
 
 SAY:
 
-- 2 to 5 short, speakable teacher cues.
-- Use classroom-natural language.
-- Include the key question and expected answer where useful.
-- Use the Ask/Expected pattern for known-answer questions.
-- Include visible think-aloud language on I Do modelling slides.
+- 2 to 5 cues, each a complete sentence or two of natural classroom talk the teacher can read aloud and teach from directly.
+- Write what a real teacher would actually say to the class, in a warm classroom voice. Avoid clipped robotic fragments such as "Watch me" or "Watch this first." Open modelling naturally, for example "Let us look at this one together. Watch how I...".
+- On I Do modelling slides, script the think-aloud as connected teacher talk: name what you notice, the choice you are making and why, in plain words a student would hear.
+- Include the key question and expected answer where useful, using the Ask/Expected pattern.
+- Give enough detail that a teacher who has not pre-read the deck can pick up the slide and teach it confidently from SAY alone.
+- Keep it speakable and scannable: complete natural spoken cues, not a dense paragraph and not a presenter announcement.
 - Do not simply read the slide face back to the teacher.
 - Do not use banned presenter openers such as "Today we are going to...", "Now we are going to...", "You will be..." or "In this lesson...".
 
@@ -518,26 +519,28 @@ Use sparingly when needed:
 
 - "Some of you may remember..."
 - "If this feels new, that's okay."
-- "Watch this first."
+- "Let's look at this one together first."
 - "Let's build it together."
 - "Let's remind ourselves."
 
 # 17. SAY STYLE
 
-SAY lines are speakable classroom cues. They are not presenter copy.
+SAY lines are natural teacher talk the teacher can read aloud and teach from. They are not clipped robotic fragments, and they are not presenter copy. A teacher who has not pre-read the deck should be able to pick up the slide and teach it confidently from SAY alone.
+
+Write what a real teacher actually says. Short cues are fine for quick routine moments, but modelling and explanation should be scripted as complete, natural sentences with the think-aloud included.
 
 Good SAY lines:
 
-- "Watch this first."
-- "Show me on your board."
-- "Read the sentence with me."
+- "Let us look at this one together. Watch how I add detail before and after the noun to make the picture clearer."
+- "I am going to read the whole sentence first, then decide which word is doing the describing."
+- "Show me on your board. I will give you ten seconds of quiet thinking first."
+- "Read the sentence with me, then tell your partner which word paints the clearest picture."
 - "Ask: which model shows two equal parts? Expected: the rectangle split into two same-size parts."
-- "I need to check the whole before I name the parts."
-- "Point to the clue that helped you."
-- "Say the word with me: habitat."
+- "Say the word with me: habitat. A habitat is the place where an animal lives, like a burrow for a rabbit."
 
-Avoid:
+Avoid clipped fragments and presenter copy:
 
+- "Watch me." or "Watch this first." (too clipped - open the modelling naturally instead)
 - "Today we are going to..."
 - "Now we are moving on to..."
 - "This slide is designed to..."
@@ -726,6 +729,8 @@ General subject notes should help the teacher:
 
 Use these patterns as starting points. Adapt them to the actual slide.
 
+The SAY lines in these patterns are skeletons. Voice them as full, natural teacher talk per section 17, not as the clipped cues shown here. The teacher should be able to read the finished SAY aloud and teach the slide confidently.
+
 ## Title slide
 
 Use TEACHER NOTES only unless the slide has a routine or setup.
@@ -871,9 +876,9 @@ WATCH FOR:
 ## I Do modelling slide
 
 SAY:
-- "Watch this first."
-- "I need to notice [key feature on slide]."
-- "I am going to [teacher thinking move]."
+- "Let us work through this one together. Watch how I [teacher thinking move on this slide]."
+- "The first thing I notice is [key feature on slide], and that tells me [what it means]."
+- "Here is the choice I am making and why: [decision and reason in plain words]."
 - "Ask: how can I check this? Expected: [check linked to slide]."
 
 DO:

@@ -8,6 +8,10 @@ const { contrastRatio } = require("../themes/core/contrast");
 const { getSlideNotesText, sanitizeTeacherNotes } = require("../themes/core/notes");
 const { addResourceSlide } = require("../themes/pdf_helpers");
 
+function slideHasText(slide, needle) {
+  return slide._slideObjects.some((obj) => textValue(obj).includes(needle));
+}
+
 function textValue(obj) {
   if (!obj) return "";
   if (typeof obj.text === "string") return obj.text;
@@ -145,10 +149,37 @@ function testResourceSlideDenseCardsStayPositive() {
   );
 }
 
+function testExitTicketHidesInternalScTag() {
+  // Megaprompt §0a item 18 / §53: internal SC numbering must never appear on a
+  // student-facing surface. Passing assessesSc records the target but must NOT
+  // render an "Assesses SC{n}" chip unless an explicit teacher-facing review
+  // export opts in via showAssessesTag.
+  const T = createTheme("literacy", "grade56", 0);
+  const PROMPT = "Expand \"the house\" into an expanded noun group.";
+  const NOTES = "SAY:\n- Show what you can do.";
+
+  const studentPres = new pptxgen();
+  studentPres.layout = "LAYOUT_16x9";
+  const studentFacing = T.exitTicketSlide(studentPres, PROMPT, NOTES, "Footer", { assessesSc: 2 });
+  assert(
+    !slideHasText(studentFacing, "Assesses SC"),
+    "exit ticket leaked internal SC numbering onto the student-facing slide"
+  );
+
+  const reviewPres = new pptxgen();
+  reviewPres.layout = "LAYOUT_16x9";
+  const teacherReview = T.exitTicketSlide(reviewPres, PROMPT, NOTES, "Footer", { assessesSc: 2, showAssessesTag: true });
+  assert(
+    slideHasText(teacherReview, "Assesses SC2"),
+    "teacher-facing review export should still render the SC tag when opted in"
+  );
+}
+
 testNotesAggregation();
 testDivisionSanitizer();
 testLiteracyContrast();
 testResourceSlideFiveCardsStayInBounds();
 testResourceSlideDenseCardsStayPositive();
+testExitTicketHidesInternalScTag();
 
 console.log("Review regression tests passed.");
