@@ -4229,20 +4229,13 @@ The goal is not a shorter deck.
 
 The goal is a deck that teaches clearly, provides enough practice, supports extension, and still feels calm and easy to use.
 
-# 69. USER REQUEST
-
-The lesson brief goes in the fields below. The user usually sends this entire prompt in one message with these fields filled in. When they are filled in, this section is the live request.
-
-How to read this section:
-
-- If the fields below contain real lesson details, treat them as the live request and build the lesson now, following the build workflow in section 59. Do not enter plan mode and do not ask whether to build. The filled-in fields are the instruction to proceed. Per section 66, only ask a follow-up question if the lesson genuinely cannot be created without missing information.
-- If the fields below still show the placeholder "XYZ" values, this is an empty template and no request has been made yet. Wait for the user's brief rather than building from placeholders.
-
 User: Generate a slide deck for the following:
-Subject: " XYZ "
-Grade: " XYZ "
-Content: " XYZ "
-Slide Decks: " XYZ "
-Additional Notes: " XYZ "
-Number Fluency Focus: " XYZ "
-Daily Review Focus: " XYZ "
+Subject: “ XYZ ”
+Grade: “ XYZ ”
+Content: “ XYZ ”
+Slide Decks: “ XYZ ”
+Additional Notes: “ XYZ ”
+Number Fluency Focus: “ XYZ ”
+Daily Review Focus: “ XYZ ”
+
+Do not enter plan mode, proceed with the lesson creation in bypass permissions. Ensure you remain active while the lessons are being created and continue to be until they are fully complete, please.
