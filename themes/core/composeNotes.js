@@ -3,7 +3,11 @@
 const { sanitizeTeacherNotes, appendSourcesToNotes } = require("./notes");
 
 /**
- * Compose teacher notes in the megaprompt §45 mandated section order.
+ * LEGACY (pre-v11.0 sectioned format). New lessons use the Glance Format via
+ * composeGlanceNotes() below. composeNotes() is kept so existing build
+ * scripts still rebuild byte-identically.
+ *
+ * Compose teacher notes in the megaprompt pre-v11 mandated section order.
  *
  * Section order (omitting any sections that are empty):
  *   SAY -> DO -> CFU CHECKPOINT -> TEACHER NOTES -> ENABLING & EXTENDING
@@ -146,4 +150,65 @@ function composeNotes(input, opts) {
   return sanitizeTeacherNotes(joined);
 }
 
-module.exports = { composeNotes };
+/**
+ * Compose Glance Format notes (megaprompt v11.0 sections 45-47).
+ *
+ * Live zone (max 8 lines): ANSWER, numbered beats, TRAP, STRETCH/HELP, CARE.
+ * Prep zone (max 3 lines) below a "---" divider: purpose line(s) + tag,
+ * then optional SOURCES.
+ *
+ * @param {object} input
+ * @param {string}          [input.answer]  ANSWER: content (omit when the slide asks nothing)
+ * @param {string[]}        [input.beats]   2-5 beats in teaching order; numbering is applied
+ * @param {string|string[]} [input.trap]    "error. Fix: move, student redoes" (TRAP: prefixed)
+ * @param {string}          [input.stretch] STRETCH content (core teaching slides)
+ * @param {string}          [input.help]    HELP content (core teaching slides)
+ * @param {string}          [input.care]    CARE: content (sensitive content only)
+ * @param {string|string[]} [input.prep]    prep-zone purpose line(s)
+ * @param {string|string[]} [input.sources] prep-zone SOURCES entries
+ * @param {string}          [input.tag]     "[Stage | VTLM element | SC | HITS n]"
+ * @returns {string} composed, sanitized notes block
+ */
+function composeGlanceNotes(input) {
+  const i = input || {};
+  const list = (value) => (value == null ? [] : Array.isArray(value) ? value : [value])
+    .map((entry) => String(entry).trim())
+    .filter(Boolean);
+
+  const lines = [];
+  if (i.answer) lines.push(`ANSWER: ${String(i.answer).trim()}`);
+  list(i.beats).forEach((beat, idx) => {
+    lines.push(/^\d+[.)]\s/.test(beat) ? beat : `${idx + 1}. ${beat}`);
+  });
+  list(i.trap).forEach((trap) => {
+    lines.push(/^TRAP:/i.test(trap) ? trap : `TRAP: ${trap}`);
+  });
+  const stretch = i.stretch ? `STRETCH: ${String(i.stretch).trim()}` : "";
+  const help = i.help ? `HELP: ${String(i.help).trim()}` : "";
+  if (stretch || help) lines.push([stretch, help].filter(Boolean).join(" "));
+  if (i.care) {
+    const care = String(i.care).trim();
+    lines.push(/^CARE:/i.test(care) ? care : `CARE: ${care}`);
+  }
+
+  if (lines.length > 8) {
+    console.warn(`[composeGlanceNotes] live zone has ${lines.length} lines; megaprompt section 46 caps it at 8.`);
+  }
+
+  const prep = list(i.prep);
+  const tag = i.tag ? String(i.tag).trim() : "";
+  const sources = list(i.sources);
+  if (prep.length || tag || sources.length) {
+    lines.push("---");
+    prep.forEach((line, idx) => {
+      const isLast = idx === prep.length - 1;
+      lines.push(isLast && tag ? `${line} ${tag}` : line);
+    });
+    if (!prep.length && tag) lines.push(tag);
+    if (sources.length) lines.push(`SOURCES: ${sources.join("; ")}`);
+  }
+
+  return sanitizeTeacherNotes(lines.join("\n"));
+}
+
+module.exports = { composeNotes, composeGlanceNotes };

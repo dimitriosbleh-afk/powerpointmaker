@@ -17,6 +17,7 @@
 const { spawnSync } = require("child_process");
 const path = require("path");
 const fs = require("fs");
+const { scanTextForForbiddenOutput } = require("./qa_lib");
 
 /* ── Patterns ──────────────────────────────────────────────────────────────── */
 
@@ -139,7 +140,106 @@ function main() {
       console.error("FAIL — markitdown exit code " + md.status);
       gatesFailed++;
     } else {
-      console.log("PASS");
+      // Forbidden output scan on the extracted text (TODO/TBD/FIXME markers,
+      // legacy resource codes) — previously only enforced for merged units.
+      const forbidden = scanTextForForbiddenOutput(md.stdout || "", path.basename(pptxFile));
+      if (forbidden.length) {
+        forbidden.forEach(l => console.error("  ERROR " + l));
+        console.error("FAIL — " + forbidden.length + " forbidden output pattern(s)");
+        gatesFailed++;
+      } else {
+        console.log("PASS");
+      }
+    }
+  }
+
+  /* ── Gate 3: slide-face text hygiene ───────────────────────────────────── */
+  // Em/en dashes, smart quotes, ellipsis chars and double hyphens are banned
+  // on slide faces (the theme's installSlideTextPatch auto-converts them, so
+  // any hit here means text bypassed the theme layer). Runs of 3+ spaces are
+  // layout-by-spaces hacks: they render as accidental-looking gaps, so they
+  // WARN and should be fixed with real layout (chips, columns, breakLine).
+
+  console.log("\n── Slide text hygiene ─────────────────────────────────");
+
+  if (!pptxFile) {
+    console.error("SKIP — no PPTX located");
+  } else {
+    const unzip = spawnSync("unzip", ["-p", pptxFile, "ppt/slides/slide*.xml"], {
+      encoding: "utf8",
+      maxBuffer: 64 * 1024 * 1024,
+    });
+    if (unzip.status !== 0 || !unzip.stdout) {
+      console.error("FAIL — could not read slide XML (unzip exit " + unzip.status + ")");
+      gatesFailed++;
+    } else {
+      const hygieneErrors = [];
+      const hygieneWarns = [];
+      const runRe = /<a:t>([^<]*)<\/a:t>/g;
+      let m;
+      while ((m = runRe.exec(unzip.stdout))) {
+        const text = m[1];
+        const snippet = JSON.stringify(text.length > 60 ? text.slice(0, 60) + "..." : text);
+        if (/[‐-―…‘’“”]/.test(text)) {
+          hygieneErrors.push("banned character (dash family, ellipsis or smart quote) in " + snippet);
+        }
+        if (/(^|[^-])--(?!-)/.test(text)) {
+          hygieneErrors.push("double hyphen '--' in " + snippet);
+        }
+        if (/ {3,}/.test(text)) {
+          hygieneWarns.push("3+ consecutive spaces (fix with layout, not spaces) in " + snippet);
+        }
+      }
+      if (hygieneErrors.length === 0 && hygieneWarns.length === 0) {
+        console.log("PASS");
+      } else {
+        hygieneErrors.forEach(l => console.error("  ERROR " + l));
+        hygieneWarns.forEach(l => console.error("  WARN  " + l));
+        if (hygieneErrors.length > 0) {
+          console.error("FAIL — " + hygieneErrors.length + " banned-character issue(s)");
+          gatesFailed++;
+        } else {
+          console.log("PASS with " + hygieneWarns.length + " spacing warning(s) — fix before shipping");
+        }
+      }
+    }
+  }
+
+  /* ── Gate 4: hyperlink integrity ───────────────────────────────────────── */
+  // Every relative hyperlink in the deck (resource-slide links) must resolve
+  // to a file that actually exists next to the PPTX. Catches renamed PDFs,
+  // wrong subfolders, and typos that would ship as dead links.
+
+  console.log("\n── Hyperlink integrity ────────────────────────────────");
+
+  if (!pptxFile) {
+    console.error("SKIP — no PPTX located");
+  } else {
+    const rels = spawnSync("bash", ["-c",
+      `unzip -p ${JSON.stringify(pptxFile)} 'ppt/slides/_rels/*.rels' 2>/dev/null || true`],
+      { encoding: "utf8", maxBuffer: 16 * 1024 * 1024 });
+    const relXml = rels.stdout || "";
+    const deckDir = path.dirname(pptxFile);
+    const linkIssues = [];
+    let externalLinks = 0;
+    const targetRe = /Target="([^"]+)"[^>]*TargetMode="External"|TargetMode="External"[^>]*Target="([^"]+)"/g;
+    let lm;
+    while ((lm = targetRe.exec(relXml))) {
+      const target = lm[1] || lm[2];
+      if (!target) continue;
+      externalLinks++;
+      if (/^[a-z][a-z0-9+.-]*:/i.test(target)) continue; // http:, https:, mailto: etc.
+      const decoded = decodeURIComponent(target.split("#")[0]);
+      if (!fs.existsSync(path.join(deckDir, decoded))) {
+        linkIssues.push(`link target does not exist: "${decoded}" (relative to ${deckDir})`);
+      }
+    }
+    if (linkIssues.length) {
+      linkIssues.forEach(l => console.error("  ERROR " + l));
+      console.error("FAIL — " + linkIssues.length + " broken link(s)");
+      gatesFailed++;
+    } else {
+      console.log("PASS (" + externalLinks + " external link(s) checked)");
     }
   }
 

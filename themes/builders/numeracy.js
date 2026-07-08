@@ -18,7 +18,7 @@ const { prepareBullets, fitBulletFontSize } = require("../core/bulletFit");
  */
 function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
   const sz = S || DEFAULT_SIZES;
-  const manipulatives = createManipulatives(C, FONT_B);
+  const manipulatives = createManipulatives(C, FONT_B, sz);
 
   /* ------------------------------------------------------------------ */
   /*  STAGE_COLORS                                                       */
@@ -355,7 +355,7 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
     const baseLabelW = 0.7;
     const labelW = Math.min(baseLabelW, intervalW * 1.4);
     const maxLabelLen = Math.max(...labels.filter(l => l !== "").map(l => l.length), 1);
-    const baseFontSize = o.labelFontSize || 12;
+    const baseFontSize = o.labelFontSize || byBand(sz, 18, 15, 12);
     let labelFontSize = baseFontSize;
     if (intervalW < 0.5 && maxLabelLen > 3) {
       labelFontSize = Math.max(8, Math.round(baseFontSize * (intervalW / 0.5)));
@@ -363,12 +363,12 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
 
     validateBounds("addNumberLine", x - 0.15, y - tickH, w + 0.3, tickH + 0.4);
 
-    // Main line
-    slide.addShape("line", { x, y, w, h: 0, line: { color: C.CHARCOAL, width: 2.5 } });
-
-    // Arrow tips
-    slide.addShape("line", { x: x - 0.15, y: y - 0.1, w: 0.15, h: 0.1, line: { color: C.CHARCOAL, width: 2 } });
-    slide.addShape("line", { x: x + w, y: y - 0.1, w: 0.15, h: 0.1, line: { color: C.CHARCOAL, width: 2 } });
+    // Main line with proper arrowheads (hand-drawn diagonal stubs render as
+    // broken slashes in PowerPoint and LibreOffice).
+    slide.addShape("line", {
+      x: x - 0.12, y, w: w + 0.24, h: 0,
+      line: { color: C.CHARCOAL, width: 2.5, beginArrowType: "arrow", endArrowType: "arrow" },
+    });
 
     // Ticks and labels
     labels.forEach((lbl, i) => {

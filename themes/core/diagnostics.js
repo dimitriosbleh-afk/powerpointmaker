@@ -1,6 +1,6 @@
 "use strict";
 
-const { SLIDE_W, SLIDE_H, SAFE_BOTTOM } = require("./layout");
+const { SLIDE_W, SLIDE_H, SAFE_BOTTOM, CONTENT_TOP } = require("./layout");
 
 const EMU_PER_INCH = 914400;
 
@@ -197,17 +197,54 @@ function warnIfSlideElementsOutOfBounds(slide, pres, opts) {
   return warnings;
 }
 
+function warnIfSlideUnderfilled(slide, pres, opts) {
+  const o = opts || {};
+  if (o.ignoreUnderfill) return [];
+  const objects = Array.isArray(slide && slide._slideObjects) ? slide._slideObjects : [];
+  const warnings = [];
+
+  let maxBottom = null;
+  let contentCount = 0;
+  objects.forEach((obj, index) => {
+    if (shouldIgnoreIndex(index, obj, o)) return;
+    const bounds = getElementBounds(obj);
+    if (!bounds) return;
+    const bottom = bounds.y + bounds.h;
+    // Ignore chrome above the content area (top bar, badge, title)
+    if (bottom <= CONTENT_TOP + 0.05) return;
+    contentCount += 1;
+    if (maxBottom === null || bottom > maxBottom) maxBottom = bottom;
+  });
+
+  if (contentCount === 0 || maxBottom === null) return warnings;
+
+  const areaH = SAFE_BOTTOM - CONTENT_TOP;
+  const threshold = CONTENT_TOP + areaH * 0.5;
+  if (maxBottom < threshold) {
+    const emptyPct = Math.round(((SAFE_BOTTOM - maxBottom) / areaH) * 100);
+    const message = `WARN Slide ${slide && slide._slideNum ? slide._slideNum : "?"}: underfilled - content ends at y=${maxBottom.toFixed(2)}", leaving the bottom ${emptyPct}% of the content area empty. Enlarge the hero task/visual or centre the layout (megaprompt 15h). Pass { ignoreUnderfill: true } only for deliberate visual-only white space.`;
+    warnings.push(message);
+    console.warn(message);
+  }
+
+  return warnings;
+}
+
 function runSlideDiagnostics(slide, pres, opts) {
   return {
     overlaps: warnIfSlideHasOverlaps(slide, pres, opts),
     outOfBounds: warnIfSlideElementsOutOfBounds(slide, pres, opts),
+    underfilled: warnIfSlideUnderfilled(slide, pres, opts),
   };
 }
 
 module.exports = {
   inferElementType,
+  getElementBounds,
+  getOverlap,
   getSlideDimensions,
   warnIfSlideHasOverlaps,
   warnIfSlideElementsOutOfBounds,
+  warnIfSlideUnderfilled,
   runSlideDiagnostics,
 };

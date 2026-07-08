@@ -1139,11 +1139,19 @@ function addRichResourceSlide(pres, config, theme, footer, notes) {
         fontSize: 9, fontFace: FB, color: TC.WHITE || "FFFFFF",
         align: "center", valign: "middle", bold: true, margin: 0,
       });
-      s.addText(String(displayName), {
+      // Hyperlink lives in run options, NOT the addText options level:
+      // options-level hyperlink makes PptxGenJS also link the whole text box
+      // (shape-level hlinkClick), so clicking anywhere in the card follows it.
+      s.addText([{
+        text: String(displayName),
+        options: {
+          hyperlink: { url: res.fileName, tooltip: "Open " + displayName },
+          color: TC.NAVY || TC.PRIMARY || "1B3A6B",
+        },
+      }], {
         x: leftX + 0.70, y: cy + 0.06, w: leftW - 0.85, h: 0.28,
         fontSize: 13, fontFace: FH, color: TC.NAVY || TC.PRIMARY || "1B3A6B",
         bold: true, margin: 0,
-        hyperlink: { url: res.fileName, tooltip: "Open " + displayName },
       });
       if (res.description) {
         s.addText(String(res.description), {
@@ -1256,12 +1264,18 @@ function drawLegacyResourceCard(slide, res, index, layout, themeParts) {
     align: "center", valign: "middle", bold: true, margin: 0,
   });
 
-  slide.addText(displayName, {
+  // Hyperlink in run options only (options-level would also link the box).
+  slide.addText([{
+    text: String(displayName),
+    options: {
+      hyperlink: { url: resourceFile, tooltip: "Open " + displayName },
+      color: TC.NAVY || "1B3A6B",
+    },
+  }], {
     x: frame.x + 0.86, y: frame.y + 0.08, w: frame.w - 1.06, h: Math.min(0.3, frame.h - 0.16),
     fontSize: layout.columns === 2 ? 12 : 14, fontFace: FH, color: TC.NAVY || "1B3A6B",
     bold: true, margin: 0,
     fit: "shrink", shrinkText: true,
-    hyperlink: { url: resourceFile, tooltip: "Open " + displayName },
   });
 
   if (res.description && frame.h >= 0.55) {
@@ -1338,6 +1352,144 @@ function addResourceSlide(pres, resources, theme, footer, notes) {
   return s;
 }
 
+/* ────────────────────────────────────────────────────────────────────────
+ * PDF manipulative twins
+ *
+ * Paper versions of the slide visual-anchor helpers, so worksheets and
+ * enabling scaffolds show the SAME representation students saw on screen
+ * (megaprompt section 0a item 16). Never hand-draw these with raw
+ * doc.rect/doc.moveTo in a build script - use or extend these.
+ * All return the next usable y.
+ * ──────────────────────────────────────────────────────────────────────── */
+
+/**
+ * Tens frame: 2 rows of 5 cells, first `filled` cells get a counter.
+ * opts: { cellSize=32, fillColor, borderColor }
+ */
+function addTenFramePdf(doc, x, y, filled, opts) {
+  const o = opts || {};
+  const cell = o.cellSize || 32;
+  const fillColor = o.fillColor || "#1B3A6B";
+  const borderColor = o.borderColor || "#000000";
+  const count = Math.max(0, Math.min(10, Math.floor(filled || 0)));
+  doc.save();
+  for (let row = 0; row < 2; row += 1) {
+    for (let col = 0; col < 5; col += 1) {
+      const cx = x + col * cell;
+      const cy = y + row * cell;
+      doc.lineWidth(1.2).strokeColor(borderColor).rect(cx, cy, cell, cell).stroke();
+      if (row * 5 + col < count) {
+        doc.circle(cx + cell / 2, cy + cell / 2, cell * 0.32).fillColor(fillColor).fill();
+      }
+    }
+  }
+  doc.restore();
+  return y + cell * 2 + 10;
+}
+
+/**
+ * `count` separate whole strips, each split into `parts` equal cells
+ * (parts <= 1 leaves the whole blank for the student to partition).
+ * Strips keep a visible gap so separate wholes read as separate wholes.
+ * opts: { x=55, stripW=380, stripH=26, gap=12, label="1 whole" }
+ */
+function addFractionStripsPdf(doc, y, count, parts, opts) {
+  const o = opts || {};
+  const x = o.x || 55;
+  const w = o.stripW || 380;
+  const h = o.stripH || 26;
+  const gap = o.gap != null ? o.gap : 12;
+  const label = o.label != null ? o.label : "1 whole";
+  for (let s = 0; s < count; s += 1) {
+    const sy = y + s * (h + gap);
+    doc.save();
+    doc.lineWidth(1.2).strokeColor("#000000").rect(x, sy, w, h).stroke();
+    if (parts > 1) {
+      const cw = w / parts;
+      for (let i = 1; i < parts; i += 1) {
+        doc.moveTo(x + i * cw, sy).lineTo(x + i * cw, sy + h).stroke();
+      }
+    }
+    doc.restore();
+    if (label) {
+      doc.fontSize(10).font("Sans").fillColor("#6B7280");
+      doc.text(label, x + w + 10, sy + h / 2 - 6, { lineBreak: false });
+    }
+  }
+  return y + count * (h + gap) + 6;
+}
+
+/**
+ * Number line 0..end with arrowheads. tickDenom = ticks per whole
+ * (1 = whole-number ticks only so students mark the parts themselves).
+ * opts: { x=65, width=430, labelWholes=true }
+ */
+function addNumberLinePdf(doc, y, end, tickDenom, opts) {
+  const o = opts || {};
+  const x = o.x || 65;
+  const w = o.width || 430;
+  const denom = Math.max(1, tickDenom || 1);
+  const totalTicks = end * denom;
+  const stepW = w / totalTicks;
+  doc.save();
+  doc.lineWidth(1.4).strokeColor("#000000");
+  doc.moveTo(x, y).lineTo(x + w, y).stroke();
+  // Arrowheads
+  doc.polygon([x - 10, y], [x - 2, y - 4], [x - 2, y + 4]).fillColor("#000000").fill();
+  doc.polygon([x + w + 10, y], [x + w + 2, y - 4], [x + w + 2, y + 4]).fill();
+  doc.strokeColor("#000000");
+  for (let i = 0; i <= totalTicks; i += 1) {
+    const tx = x + i * stepW;
+    const whole = i % denom === 0;
+    const th = whole ? 9 : 6;
+    doc.lineWidth(whole ? 1.4 : 1).moveTo(tx, y - th).lineTo(tx, y + th).stroke();
+    if (whole && o.labelWholes !== false) {
+      doc.fontSize(11).font("Sans-Bold").fillColor("#000000");
+      doc.text(String(i / denom), tx - 8, y + 13, { width: 16, align: "center", lineBreak: false });
+    }
+  }
+  doc.restore();
+  return y + 36;
+}
+
+/**
+ * Part-part-whole mat: whole box on top, two part boxes below, connectors.
+ * Pass null for any value to leave the box blank for the student.
+ * opts: { x=55, width=300, boxH=44, whole, partA, partB }
+ */
+function addPpwMatPdf(doc, y, opts) {
+  const o = opts || {};
+  const x = o.x || 55;
+  const w = o.width || 300;
+  const boxH = o.boxH || 44;
+  const wholeW = w * 0.5;
+  const partW = w * 0.46;
+  const partY = y + boxH + 26;
+
+  function box(bx, by, bw, caption, value) {
+    doc.save();
+    doc.lineWidth(1.4).strokeColor("#000000").rect(bx, by, bw, boxH).stroke();
+    doc.fontSize(9).font("Sans").fillColor("#6B7280");
+    doc.text(caption, bx + 5, by + 4, { lineBreak: false });
+    if (value != null && value !== "") {
+      doc.fontSize(20).font("Sans-Bold").fillColor("#000000");
+      doc.text(String(value), bx, by + boxH / 2 - 10, { width: bw, align: "center", lineBreak: false });
+    }
+    doc.restore();
+  }
+
+  doc.save();
+  doc.lineWidth(1.2).strokeColor("#000000");
+  doc.moveTo(x + w / 2, y + boxH).lineTo(x + partW / 2, partY).stroke();
+  doc.moveTo(x + w / 2, y + boxH).lineTo(x + w - partW / 2, partY).stroke();
+  doc.restore();
+
+  box(x + (w - wholeW) / 2, y, wholeW, "Whole", o.whole);
+  box(x, partY, partW, "Part", o.partA);
+  box(x + w - partW, partY, partW, "Part", o.partB);
+  return partY + boxH + 12;
+}
+
 module.exports = {
   // Constants
   PAGE,
@@ -1355,6 +1507,8 @@ module.exports = {
   addPvChartPdf, addWriteLine, addProblem,
   addStepInstructions, addTipBox, addPdfFooter,
   addLinedArea, addTwoColumnOrganiser, addCycleDiagramPdf, addPosterMockupPdf, addPosterPairPdf,
+  // Manipulative twins (paper versions of the slide visual anchors)
+  addTenFramePdf, addFractionStripsPdf, addNumberLinePdf, addPpwMatPdf,
   // PPTX integration
   addResourceSlide,
   addRichResourceSlide,

@@ -35,15 +35,44 @@ Theme selection should follow the explicit `Subject:` field from the lesson prom
 
 ## Subjects and Their Builders
 
-All subjects get 7 **base builders**: `titleSlide`, `liSlide`, `contentSlide`, `cfuSlide`, `closingSlide`, `annotatedModelSlide`, `compareVisualSlide`.
+All subjects get the **base builders**: `titleSlide`, `liSlide`, `contentSlide`, `cfuSlide`, `closingSlide`, `keyWordSlide`, `exitTicketSlide`, `boardBuildSlide`, `annotatedModelSlide`, `compareVisualSlide`, plus `addRevealAnswerBar`. `keyWordSlide(pres, { word, meaning, example }, notes, footer)` is the vocabulary word card - one word per slide, never definition bullet lists. `cfuSlide` and `exitTicketSlide` are density-aware (short prompts render hero-sized and centred).
 
 | Subject | Extra Builders | Purpose |
 |---------|---------------|---------|
 | **Literacy** | `vocabSlide`, `quoteSlide`, `modellingSlide`, `pairShareSlide` | Text study, vocabulary, modelled writing |
-| **Numeracy** | `workedExSlide`, `exitTicketSlide`, `addPlaceValueChart`, `addNumberLine`, `addAreaModel`, `addTenthsStrip`, `addDecimalDot`, `addStageBadge` | Worked examples, maths visuals |
+| **Numeracy** | `workedExSlide`, `dailyReviewSlide`, `fluencySlide`, `addPlaceValueChart`, `addNumberLine`, `addAreaModel`, `addTenthsStrip`, `addDecimalDot`, `addStageBadge` | Worked examples, maths visuals |
 | **Inquiry** | `investigationSlide`, `findingsSlide`, `pairShareSlide` | Question-driven, evidence gathering |
 | **Wellbeing** | `scenarioSlide`, `reflectionSlide`, `pairShareSlide` | Social scenarios, discussion, reflection |
 | **Science** | `experimentSlide`, `observationSlide`, `conclusionSlide`, `processFlowSlide`, `cycleDiagramSlide` | Scientific method structure, ordered processes, systems, cycles |
+
+## Visual Anchor Helpers (ALL subjects, MANDATORY for their representation)
+
+Every theme object carries these manipulative/visual helpers, sized by grade band.
+**Never hand-draw a representation this table covers** — if a lesson needs a variant
+the helper cannot draw, extend the helper in `themes/core/manipulatives.js` first.
+Rendered reference: build `builds/build_visual_catalogue.js` and preview
+`output/Visual_Catalogue/`.
+
+| Representation | Helper | Signature |
+|---|---|---|
+| Tens frame | `addTensFrame` | `(slide, x, y, w, filled, opts)` |
+| Five frame | `addFiveFrame` | `(slide, x, y, w, filled, opts)` |
+| Dot card (subitising) | `addDotCard` | `(slide, x, y, size, count, opts)` |
+| Number track | `addNumberTrack` | `(slide, x, y, w, start, end, highlight[], opts)` |
+| Number line | `addNumberLine` | `(slide, x, y, w, labels[], markedPositions[], opts)` — use `""` for unlabelled ticks |
+| Fraction strips (separate wholes) | `addFractionStripSet` | `(slide, x, y, w, h, [{denom, shaded, label, color}], opts)` |
+| Array (rows x cols dots) | `addArray` | `(slide, x, y, rows, cols, opts)` |
+| MAB / base-10 blocks | `addBaseTenBlocks` | `(slide, x, y, hundreds, tens, ones, opts)` |
+| Choice chips (fractions, numbers, words) | `addChipRow` | `(slide, x, y, w, items[], opts)` — never inline text spaced with runs of spaces |
+| Grouped counters ("groups of") | `addGroupedCounters` | `(slide, x, y, groups, per, opts)` |
+| Part-part-whole mat | `addPartPartWholeMat` | `(slide, x, y, w, h, {whole, partA, partB}, opts)` — pass `null` for blank boxes |
+| Answer reveal bar | `addRevealAnswerBar` | `(slide, answers, {y, h, fontSize, ...})` — use inside `withReveal` revealFn |
+
+PDF twins in `themes/pdf_helpers.js` so worksheets and scaffolds show the SAME
+representation on paper: `addTenFramePdf(doc, x, y, filled, opts)`,
+`addFractionStripsPdf(doc, y, count, parts, opts)`, `addNumberLinePdf(doc, y, end, tickDenom, opts)`,
+`addPpwMatPdf(doc, y, opts)`. Never hand-draw these with raw `doc.rect`/`doc.moveTo`
+in a build script.
 
 ## Base Builder Signatures
 

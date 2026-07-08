@@ -130,24 +130,29 @@ For builder signatures, palette schema, and full API: read `docs/theme-system.md
 - `rectRadius` only works with `ROUNDED_RECTANGLE`, not `RECTANGLE`.
 - Avoid `lineSpacing` with bullets - causes excessive gaps; use `paraSpaceAfter` instead.
 - Shadow `offset` must be non-negative - negative values corrupt the file.
+- Hyperlinks must be passed in RUN options (`addText([{ text, options: { hyperlink } }], boxOpts)`), never at the `addText` options level. An options-level `hyperlink` makes PptxGenJS emit a shape-level `hlinkClick` as well as the run-level one, so the whole text box becomes clickable, not just the text. Include `color` in the same run options so the link keeps the theme colour.
+- NEVER use em dashes, en dashes, smart quotes, ellipsis characters, or `--` anywhere in generated output: slide faces, notes, and PDFs. Use `-`, straight quotes, and `...`. The theme auto-converts these on `addText` (installSlideTextPatch) and `build_and_check.js` Gate 3 fails the build if any survive, but write clean strings at the source, especially for PDFs, which are not auto-sanitised.
+- NEVER lay out slide text with runs of spaces (e.g. `"1/5    3/4    1/8"` or `"42        12        40"`). Gate 3 flags 3+ consecutive spaces. Use separate text elements, chips (`addTextOnShape` per item), `breakLine` runs, or `addRevealAnswerBar` with an array of answers (it joins with a visible `|` separator).
 - Each presentation needs a fresh `new pptxgen()` instance.
 - Write files with `await pres.writeFile({ fileName })`, never the deprecated `writeFile("path.pptx")` form.
 - Always set `pres.layout = "LAYOUT_16x9"`. NEVER use `"LAYOUT_WIDE"` (wrong dimensions).
 
-## Teacher Notes Rules
+## Teacher Notes Rules (Glance Format)
 
-- Speaker notes are plain text in PptxGenJS/PowerPoint. NEVER use markdown in teacher notes. Do not use `**bold**`, `_italics_`, backticks, markdown headings, or markdown lists.
-- Teacher notes must be ASCII-safe for PowerPoint, PowerPoint for iPad, and exported notes views. Use straight quotes `' "`, hyphen bullets `-`, `...`, `->`, `>=`, `<=`, and `x`. Avoid smart quotes, em dashes, unicode bullets, unicode arrows, and other decorative symbols in notes.
-- Keep teacher notes scannable, not dense paragraphs. `SAY` is usually 2-5 cues, each a complete sentence or two the teacher can read aloud; `DO` 2-4 short bullets; `TEACHER NOTES` no more than 2 short sentences; and `WATCH FOR` 1-2 bullets.
-- `SAY:` is natural teacher talk the teacher can read aloud and teach from, not clipped robotic fragments and not presenter prose. Give enough detail that a teacher who has not pre-read the deck can pick up the slide and teach it confidently from `SAY` alone.
-- Use a warm classroom voice in `SAY:`. On modelling slides, script the think-aloud as connected teacher talk: name what you notice, the choice you are making and why, in plain words a student would hear. Short cues are fine for quick routine moments; modelling and explanation should be fuller, complete sentences.
-- Avoid clipped robotic fragments (`Watch me`, `Watch this first`), slang, lesson-announcer phrasing (`Today we are going to...`), polished or abstract briefing exposition, and over-explained transitions in `SAY:`. Open modelling naturally instead, for example `Let us look at this one together. Watch how I...`. If a bullet sounds more like presenter copy than classroom talk, rewrite it.
-- Section headers in notes should be plain uppercase text like `SAY:` and `DO:`. Do not try to force bold with markdown.
-- Separate note sections with a blank line. PowerPoint on iPad reads paragraph breaks more reliably than dense text blocks.
+Teacher notes are a live teleprompter and heads-up display: ~98% of the time the teacher reads them on an iPad mid-lesson, at a glance when confident, read aloud when not. Every teaching slide's notes use the Glance Format: a LIVE ZONE (max 8 lines), a `---` divider on its own line, then a PREP ZONE (max 3 lines). Full spec and worked examples: `IMPORTANT/MEGA_PROMPT.md` sections 45-47.
+
+- Live zone, fixed order: `ANSWER:` line first whenever the slide asks anything (the most-glanced fact, always in the same place), then 2-5 numbered beats in teaching order, then `TRAP:`, then `STRETCH: ... HELP: ...` on core I Do / We Do / You Do slides, then `CARE:` for sensitive content only.
+- Beats fuse action and talk with CAPS anchors so a glance finds the current moment: `POINT`, `SHOW`, `MODEL`, `DRAW`, `COVER`, `REVEAL`, `TIME`, `COLLECT`, `CIRCULATE`, plus `SAY:` and `ASK:`. Example: `2. ASK: How many equal parts? 10 sec, boards up. EXPECT: eight.`
+- `SCAN` is the decision beat, exactly one line, only at genuine decision points: `SCAN boards, back row first. 80%+ -> next slide. Less -> rebuild one with strips, re-ask.` The pivot must use a different representation and end with a fresh re-ask.
+- `TRAP:` is one line: observable error + `Fix:` ending with the student redoing the step. `TRAP: counting only shaded parts. Fix: hand on whole strip, count all, student recounts.`
+- SAY voice is unchanged from what teachers trust: warm natural classroom talk, up to ~20 words per beat (one breath), never clipped fragments (`Watch me`), never presenter copy (`Today we are going to...`). On modelling beats script the think-aloud as connected teacher talk. Action segments are verb-first, <=10 words.
+- Student-impact micro rules: every `ASK:` carries think time and ONE all-student response routine (boards, choral, fingers, turn and tell - never volunteer hands); `EXPECT:` is student voice, with `ACCEPT:` where a partial answer counts; explain prompts include a sentence stem (`I know it is ... because ...`); scripted feedback names the strategy, never bare `good job`; `REVEAL` segments state their protection (`REVEAL after boards scanned`).
+- `STRETCH` must deepen or transfer the same concept and be startable without teacher help; `HELP` must change the task form (manipulative, partial model, first step done, frame) and name the gap it targets. "Do more" is not stretch; "do fewer" is not help.
+- Prep zone: one purpose/flow line (why the slide exists, assumption flags, internal SC focus) plus the single tag `[Stage | VTLM element | SC | HITS n]`, an optional `SOURCES:` line whenever a slide uses an external image or externally sourced claim, and an optional one-line `WHY:` misconception background. Nothing mid-lesson-critical goes below the divider.
+- Formatting: plain text, ASCII-safe (straight quotes, `->`, `>=`, `x`; no smart quotes, em dashes, unicode bullets or arrows). No markdown. No bullet formatting - the typed numbers and CAPS anchors carry the structure. No blank lines inside the live zone.
+- Non-teaching slides (title, credits, pure dividers) get one plain line of notes, no zones.
 - If a slide uses `liSlide()`, the Learning Intention must be a single plain sentence and the Success Criteria must be exactly 3 simple `I can...` bullets. The first success criterion must be ultra-achievable for almost every student.
-- Do not add a `PACING OVERVIEW` block to speaker notes by default. If timing guidance is genuinely needed, keep it to one short sentence in `TEACHER NOTES`.
-- End notes with at most one short framework/meta tag line. Do not stack multiple checklist tags.
-- Use a plain-text `SOURCES:` section whenever a slide includes an external image or a non-trivial externally sourced factual claim.
+- Do not add a `PACING OVERVIEW` block. If timing genuinely matters, fold one short clause into the prep-zone purpose line.
 
 ## Cognitive Load Defaults
 
@@ -196,6 +201,7 @@ Console warnings during build = layout bugs. Fix before shipping.
 
 ### Reveal Bar Clearance
 
+- `withReveal` now automatically checks the reveal layer against the base slide's RENDERED text and emits a gate-failing WARN if a reveal element covers it. Fix by shortening the question, raising its box, or moving the bar — never by deleting the check.
 - When using `withReveal` and adding a reveal element (e.g. an answer bar) in the `revealFn`, ensure all content on the slide stops at least 0.15" ABOVE the reveal element's top edge.
 - If the reveal bar is at y 4.25, the tallest content text box must end by y 4.1 at most.
 - For factor-pair lists, prompts, or other variable-length content above a reveal bar, reduce the text box `h` to enforce this ceiling rather than letting it extend to `SAFE_BOTTOM`.
@@ -205,6 +211,29 @@ Console warnings during build = layout bugs. Fix before shipping.
 - Long titles that wrap to 2+ lines push content down. When a title exceeds ~45 characters, verify that the content below still fits without overlapping the footer zone.
 - For custom slides, use `layoutGuide.panelTopPadded` (available from `contentSlide` and `workedExSlide` callbacks) as the starting y for right-column content when the title is long.
 - Prefer concise titles (under 40 chars) for slides with dense two-column layouts.
+
+## Shared Visual Helpers (Mandatory)
+
+Every theme object (all subjects) carries grade-band-aware visual anchor helpers. **NEVER hand-draw a representation this table covers with raw addShape/addText** — hand-rolled versions are where fused grids, broken arrowheads and spacing hacks come from. If a lesson needs a variant a helper cannot draw, extend the helper in `themes/core/manipulatives.js` first, then use it.
+
+| Need | Use |
+|---|---|
+| Tens frame / five frame | `addTensFrame(slide, x, y, w, filled)` / `addFiveFrame(...)` |
+| Dot card (subitising) | `addDotCard(slide, x, y, size, count)` |
+| Number track | `addNumberTrack(slide, x, y, w, start, end, [highlights])` |
+| Number line | `addNumberLine(slide, x, y, w, labels[], marked[])` (`""` = unlabelled tick) |
+| Fraction strips (separate wholes) | `addFractionStripSet(slide, x, y, w, h, [{denom, shaded, label, color}])` |
+| Array of dots | `addArray(slide, x, y, rows, cols)` |
+| MAB / base-10 | `addBaseTenBlocks(slide, x, y, hundreds, tens, ones)` |
+| Row of choice chips | `addChipRow(slide, x, y, w, ["1/5", "3/4", ...])` — never space-separated inline text |
+| "Groups of" counters | `addGroupedCounters(slide, x, y, groups, per)` |
+| Part-part-whole mat | `addPartPartWholeMat(slide, x, y, w, h, {whole, partA, partB})` (`null` = blank box) |
+| Answer reveal | `addRevealAnswerBar(slide, [answers], {y, h, fontSize})` inside `withReveal` revealFn — never a hand-placed success bar |
+| Vocabulary word card | `keyWordSlide(pres, { word, meaning, example }, notes, footer)` — ONE word per slide. NEVER render vocabulary as a definition bullet list; call once per word (F-2: 1-3 words, Y3-4: 2-4, Y5-6: 2-5) |
+
+PDF twins for worksheets/scaffolds (in `themes/pdf_helpers.js`): `addTenFramePdf`, `addFractionStripsPdf`, `addNumberLinePdf`, `addPpwMatPdf`, plus `addCycleDiagramPdf` (cycles/loops — never hand-draw cycle arrows with doc.moveTo, they come out tangled) and `addPosterMockupPdf`/`addPosterPairPdf` (designed visuals on paper). Same rule: never hand-draw these with raw pdfkit primitives.
+
+Visual reference deck: `node scripts/build_and_check.js builds/build_visual_catalogue.js` renders every helper per grade band to `output/Visual_Catalogue/`. Rebuild and re-inspect it after ANY change to the theme's visual helpers.
 
 ## Key Conventions
 
@@ -230,6 +259,8 @@ Console warnings during build = layout bugs. Fix before shipping.
 - When using `contentSlide(..., drawRight)` or numeracy `workedExSlide(..., drawRight)`, use the callback's second `layoutGuide` argument for custom right-column positions. Do not hardcode custom panels flush to `CONTENT_TOP` when the slide also has a long title; start from `layoutGuide.panelTopPadded` unless you have visually verified a tighter layout.
 - Theme diagnostics are available for manual/custom slides: `runSlideDiagnostics(slide, pres)` plus the narrower `warnIfSlideHasOverlaps(...)` and `warnIfSlideElementsOutOfBounds(...)`. Use them before shipping any custom layout.
 - `contentSlide` and `workedExSlide` now auto-run diagnostics when a `drawRight` callback is provided. Any ERROR or WARN in build output is a layout bug — fix it before shipping.
+- Diagnostics also flag UNDERFILLED slides: if content stops in the top half of the content area, you get a WARN telling you to enlarge the hero task/visual or centre the layout. Do not shrink the check away — make the hero bigger (that is the fix the mega-prompt wants). `{ ignoreUnderfill: true }` is allowed only for deliberate visual-only white space (e.g. a lone Foundation ten frame).
+- `cfuSlide` and `exitTicketSlide` are density-aware: short questions render hero-sized and vertically centred automatically. Prefer them over hand-built question slides.
 - Standard footer text is ignored by diagnostics. If a custom footer-like element is falsely flagged, keep diagnostics enabled and use a narrow `ignoreIndices` override rather than disabling safe-bottom checks for the whole slide.
 - Theme image helpers are available for local assets: `addImageWithCaption(...)` and `addInstructionalImageCard(...)`.
 - `annotatedModelSlide(...)` is available on every theme object for labelled source features, poster/article structure, and "notice this part" teaching. Do not swap subjects just to reach it.

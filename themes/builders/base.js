@@ -197,6 +197,9 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
   }
 
   function drawPhotoPlaceholder(slide, x, y, w, h, component, spec) {
+    // Must READ as a picture at a glance (sun + mountains), not as grey
+    // bars - students are told "the image shows X" and need to see an
+    // image region, even in a wireframe.
     const bg = component.fill || lightenHex(spec.accent, 0.9);
     const border = component.border || spec.softBorder || C.MUTED;
     addSceneRect(slide, x, y, w, h, bg, border, 0.05);
@@ -209,19 +212,28 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
       fill: { color: lightenHex(bg, 0.04) },
       line: { color: border, width: 0.25 },
     });
-    slide.addShape("roundRect", {
-      x: innerX + 0.06, y: innerY + 0.06, w: Math.max(0.24, innerW * 0.2), h: 0.08, rectRadius: 0.02,
+
+    // Sun (top-right)
+    const sunD = Math.max(0.1, Math.min(innerW * 0.16, innerH * 0.3));
+    slide.addShape("ellipse", {
+      x: innerX + innerW * 0.74, y: innerY + innerH * 0.12, w: sunD, h: sunD,
       fill: { color: lightenHex(spec.accent, 0.25) },
       line: { color: lightenHex(spec.accent, 0.25), width: 0.2 },
     });
-    slide.addShape("line", {
-      x: innerX + 0.12, y: innerY + 0.14, w: innerW - 0.24, h: innerH - 0.28,
-      line: { color: spec.mutedLine, width: 0.9 },
+
+    // Two overlapping mountains rising from the base
+    const baseY = innerY + innerH - 0.03;
+    const m1H = innerH * 0.55;
+    const m2H = innerH * 0.42;
+    slide.addShape("triangle", {
+      x: innerX + innerW * 0.06, y: baseY - m1H, w: innerW * 0.52, h: m1H,
+      fill: { color: lightenHex(spec.accent, 0.45) },
+      line: { color: lightenHex(spec.accent, 0.3), width: 0.4 },
     });
-    slide.addShape("roundRect", {
-      x: innerX + 0.12, y: innerY + innerH - 0.24, w: Math.max(0.28, innerW - 0.24), h: 0.08, rectRadius: 0.02,
-      fill: { color: spec.mutedLine, transparency: 20 },
-      line: { color: spec.mutedLine, width: 0.2 },
+    slide.addShape("triangle", {
+      x: innerX + innerW * 0.42, y: baseY - m2H, w: innerW * 0.52, h: m2H,
+      fill: { color: lightenHex(spec.accent, 0.3) },
+      line: { color: lightenHex(spec.accent, 0.2), width: 0.4 },
     });
   }
 
@@ -571,6 +583,8 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
         }
       } else if (component.kind === "sidebar") {
         drawSidebarRegion(slide, innerX, cursorY, innerW, blockH, component, normalized);
+      } else if (component.kind === "photo" || component.kind === "image") {
+        drawPhotoPlaceholder(slide, innerX, cursorY, innerW, blockH, component, normalized);
       } else {
         const fill = component.fill || normalized.softFill;
         addSceneRect(slide, innerX, cursorY, innerW, blockH, fill, component.border || normalized.softBorder, 0.03);
@@ -670,7 +684,9 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     const cleaned = list
       .map((entry) => String(entry == null ? "" : entry).trim())
       .filter(Boolean);
-    const text = cleaned.join("    ");
+    // Join with a visible separator, never runs of spaces (they render as
+    // accidental-looking gaps and are flagged by the slide-text hygiene gate).
+    const text = cleaned.join("  |  ");
 
     const x = o.x != null ? o.x : 0.5;
     const w = o.w != null ? o.w : 9;
@@ -701,9 +717,11 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     }
 
     const labelOffset = label ? byBand(sz, 1.85, 1.65, 1.45) : 0.2;
+    const tickCueW = byBand(sz, 1.8, 1.6, 1.4);
     slide.addText(String(text), {
       x: x + labelOffset, y: y + 0.12,
-      w: w - labelOffset - 0.18,
+      // Stop before the Tick & fix cue so the two text boxes never overlap
+      w: w - labelOffset - (showTick ? tickCueW + 0.32 : 0.18),
       h: h - 0.24,
       fontSize, fontFace: FONT_H,
       color: textColor, bold: true,
@@ -713,7 +731,7 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
 
     if (showTick) {
       const cueY = y + h - byBand(sz, 0.32, 0.28, 0.24);
-      const cueW = byBand(sz, 1.8, 1.6, 1.4);
+      const cueW = tickCueW;
       slide.addText("Tick & fix", {
         x: x + w - cueW - 0.18, y: cueY,
         w: cueW, h: byBand(sz, 0.24, 0.22, 0.20),
@@ -848,7 +866,7 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     const scBodyH = scItems.length * perItem;
     const scH     = SC_HDR_H + scBodyH + PAD;
     el.addCard(s, 0.5, scY, 9, scH, { strip: C.ACCENT });
-    s.addText("Success Criteria — I can…", {
+    s.addText("Success Criteria", {
       x: 0.75, y: scY + 0.08, w: 5, h: SC_HDR_H - 0.10,
       fontSize: sz.liHeader, fontFace: FONT_B, color: C.CHARCOAL, bold: true, margin: 0,
     });
@@ -1022,28 +1040,56 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
 
     const pillH = byBand(sz, 0.50, 0.46, 0.40);
     const pillW = byBand(sz, 3.4, 3.1, 2.8);
+
+    // Density-aware sizing: a short question must not sit in a small
+    // top-anchored card with the bottom half of the slide empty
+    // (megaprompt 15h - the hero fills the space). Compute the content
+    // block first, enlarge sparse questions, then centre the block.
+    const availForCard = SAFE_BOTTOM - (CONTENT_TOP + pillH + 0.16);
+    const questionMetrics = getQuestionCardMetrics(questionText || "");
+    let qFontSize = questionMetrics.fontSize;
+    let qH = Math.min(questionMetrics.cardH, availForCard);
+    const leftover = availForCard - qH;
+    const isSparse = leftover > 0.9;
+    if (isSparse) {
+      // Grow the hero, but keep the grown card clear of a withReveal answer
+      // bar (0.8" bar + 0.15" clearance + margin) whenever possible - CFU
+      // slides are the most common reveal-pair base.
+      const targetH = Math.min(
+        Math.max(availForCard - 1.1, qH),
+        Math.max(qH, availForCard * 0.72)
+      );
+      const growth = targetH / Math.max(qH, 0.1);
+      qFontSize = Math.min(
+        Math.round(qFontSize * Math.min(growth, 1.4)),
+        byBand(sz, 44, 40, 34)
+      );
+      qH = targetH;
+    }
+
+    const blockH = pillH + 0.16 + qH;
+    const yOffset = Math.max(0, (SAFE_BOTTOM - CONTENT_TOP - blockH) * 0.4);
+    const pillY = CONTENT_TOP + yOffset;
+
     s.addShape("roundRect", {
-      x: 0.5, y: CONTENT_TOP, w: pillW, h: pillH, rectRadius: 0.08,
+      x: 0.5, y: pillY, w: pillW, h: pillH, rectRadius: 0.08,
       fill: { color: C.ALERT },
     });
     s.addText(technique || "Show Me Boards", {
-      x: 0.5, y: CONTENT_TOP, w: pillW, h: pillH,
+      x: 0.5, y: pillY, w: pillW, h: pillH,
       fontSize: sz.chip + 1, fontFace: FONT_B, color: C.WHITE, bold: true,
       align: "center", valign: "middle", margin: 0,
     });
 
-    const qY = CONTENT_TOP + pillH + 0.16;
-    const questionMetrics = getQuestionCardMetrics(questionText || "");
-    const qH = Math.min(questionMetrics.cardH, SAFE_BOTTOM - qY);
+    const qY = pillY + pillH + 0.16;
     el.addCard(s, 0.5, qY, 9, qH, { strip: C.ALERT, fill: C.WHITE });
-    // valign:top so any residual overflow goes downward (never upward into
-    // the technique pill above). fontSize is pre-computed to fit qH - 0.36
-    // via fitTextFontSize, so overflow shouldn't happen, but valign:top is
-    // the safer default for multi-line CFU questions.
+    // Sparse questions centre vertically at hero size; longer questions keep
+    // valign:top so residual overflow goes downward (never up into the pill).
+    // fontSize is pre-computed to fit via fitTextFontSize.
     s.addText(questionText || "", {
       x: 0.75, y: qY + 0.20, w: 8.5, h: qH - 0.36,
-      fontSize: questionMetrics.fontSize, fontFace: FONT_B, color: C.CHARCOAL,
-      valign: "top", margin: 0,
+      fontSize: qFontSize, fontFace: FONT_B, color: C.CHARCOAL,
+      valign: isSparse ? "middle" : "top", margin: 0,
       fit: "shrink", shrinkText: true,
     });
 
@@ -1323,7 +1369,9 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     const featureRows = featureCount > 0 ? Math.ceil(featureCount / featureCols) : 0;
     const featureGapX = 0.12;
     const featureGapY = 0.08;
-    const featureGridH = featureRows === 0 ? 0 : (featureRows === 1 ? 0.62 : 1.24);
+    // Sized for the raised featureLabel/featureDetail floors - annotation
+    // text students read must be legible from the back of the room.
+    const featureGridH = featureRows === 0 ? 0 : (featureRows === 1 ? 0.74 : 1.5);
     const previewH = Math.max(1.18, Math.min(1.42, cardH - (previewY - CONTENT_TOP) - featureGridH - (featureCount > 0 ? 0.26 : 0.14)));
     drawMockupPreview(s, rightX + 0.2, previewY, rightW - 0.4, previewH, o.previewSpec || o.previewBlocks, {
       fill: o.previewFill,
@@ -1602,19 +1650,26 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
       if (notes) s.addNotes(notes);
       return s;
     }
+    // Density-aware: with 1-2 prompts, grow the cards and the prompt font
+    // (the exit task is the hero), and centre the block vertically so the
+    // slide never ends with a dead bottom third (megaprompt 15h).
+    const availH = SAFE_BOTTOM - startY;
     const perH = Math.min(
-      byBand(sz, 2.1, 1.5, 1.2),
-      (SAFE_BOTTOM - startY) / Math.max(cleaned.length, 1) - 0.12,
+      byBand(sz, 2.1, 1.8, cleaned.length <= 2 ? 1.55 : 1.2),
+      availH / Math.max(cleaned.length, 1) - 0.12,
     );
+    const promptFont = cleaned.length <= 2 ? byBand(sz, 30, 26, 22) : sz.body;
+    const blockH = cleaned.length * perH + (cleaned.length - 1) * 0.12;
+    const blockOffset = Math.max(0, (availH - blockH) * 0.35);
     const numbered = Boolean(o.numbered);
 
     cleaned.forEach((q, i) => {
-      const qY = startY + i * (perH + 0.12);
+      const qY = startY + blockOffset + i * (perH + 0.12);
       el.addCard(s, 0.5, qY, 9, perH, { strip: stripColor });
       const display = numbered ? `${i + 1}.  ${q}` : q;
       s.addText(display, {
         x: 0.75, y: qY + 0.08, w: 8.5, h: perH - 0.16,
-        fontSize: sz.body, fontFace: FONT_B, color: C.CHARCOAL, margin: 0, valign: "middle",
+        fontSize: promptFont, fontFace: FONT_B, color: C.CHARCOAL, margin: 0, valign: "middle",
         fit: "shrink", shrinkText: true,
       });
     });
@@ -1624,12 +1679,122 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     return s;
   }
 
+  /**
+   * keyWordSlide - universal visual word card (megaprompt section 29).
+   *
+   * ONE key word per slide: hero word panel (the word is the largest thing
+   * on the slide), a student-friendly meaning, an optional example, and an
+   * oral routine chip row. Use one call per word - never render vocabulary
+   * as a definition bullet list.
+   *
+   *   keyWordSlide(pres, { word, meaning, example, routine, color, badgeText, title }, notes, footer)
+   *
+   * - word     the key word (required)
+   * - meaning  student-friendly meaning (required)
+   * - example  optional example sentence or "hear it" line
+   * - routine  optional array of routine chips (default ["Say it", "Act it", "Use it"])
+   */
+  function keyWordSlide(pres, config, notes, footer) {
+    const cfg = (config && typeof config === "object") ? config : { word: String(config || "") };
+    const word = String(cfg.word || "").trim();
+    const meaning = String(cfg.meaning || "").trim();
+    const example = cfg.example ? String(cfg.example).trim() : "";
+    const routineItems = (Array.isArray(cfg.routine) ? cfg.routine : ["Say it", "Act it", "Use it"])
+      .map((r) => String(r).trim()).filter(Boolean).slice(0, 4);
+    const accent = cfg.color || C.PRIMARY;
+
+    const s = pres.addSlide();
+    el.addTopBar(s, accent);
+    el.addBadge(s, cfg.badgeText || "Key Word", { color: accent, w: byBand(sz, 2.0, 1.85, 1.7) });
+    el.addTitle(s, cfg.title || "Words for today");
+
+    // Left: hero word panel - the word is the hero
+    const panelW = 4.2;
+    const panelH = SAFE_BOTTOM - CONTENT_TOP;
+    s.addShape("roundRect", {
+      x: 0.5, y: CONTENT_TOP, w: panelW, h: panelH, rectRadius: 0.1,
+      fill: { color: accent },
+    });
+    // Pre-compute a font size that keeps the word on ONE line - shrink-fit
+    // does not prevent ugly mid-word wrapping for long words.
+    const wordFont = Math.max(20, Math.min(
+      byBand(sz, 54, 48, 40),
+      Math.floor((panelW - 0.3) / (Math.max(word.length, 4) * 0.0118))
+    ));
+    s.addText(word, {
+      x: 0.6, y: CONTENT_TOP + 0.15, w: panelW - 0.2, h: panelH - 1.05,
+      fontSize: wordFont, fontFace: FONT_H, color: C.WHITE, bold: true,
+      align: "center", valign: "middle", margin: 0,
+    });
+    const sayW = byBand(sz, 2.5, 2.3, 2.1);
+    const sayH = byBand(sz, 0.5, 0.46, 0.42);
+    el.addTextOnShape(s, "Say it with me", {
+      x: 0.5 + (panelW - sayW) / 2, y: CONTENT_TOP + panelH - sayH - 0.18,
+      w: sayW, h: sayH, rectRadius: 0.08,
+      fill: { color: C.WHITE },
+    }, {
+      fontSize: byBand(sz, 16, 15, 13), fontFace: FONT_B, color: accent,
+      bold: true, align: "center", valign: "middle", margin: 0,
+    });
+
+    // Right: meaning, optional example, routine chips
+    const rx = 5.0;
+    const rw = 4.5;
+    const chipRowH = byBand(sz, 0.58, 0.52, 0.48);
+    const chipRowY = SAFE_BOTTOM - chipRowH;
+    const meaningH = example
+      ? (chipRowY - CONTENT_TOP - 0.2) * 0.62
+      : chipRowY - CONTENT_TOP - 0.2;
+
+    el.addCard(s, rx, CONTENT_TOP, rw, meaningH, { strip: accent, fill: C.WHITE });
+    s.addText("It means", {
+      x: rx + 0.22, y: CONTENT_TOP + 0.1, w: rw - 0.44, h: 0.26,
+      fontSize: byBand(sz, 14, 13, 12), fontFace: FONT_B, color: accent, bold: true, margin: 0,
+    });
+    s.addText(meaning, {
+      x: rx + 0.22, y: CONTENT_TOP + 0.4, w: rw - 0.44, h: meaningH - 0.55,
+      fontSize: byBand(sz, 26, 23, 20), fontFace: FONT_B, color: C.CHARCOAL,
+      valign: "middle", margin: 0, fit: "shrink", shrinkText: true,
+    });
+
+    if (example) {
+      const exY = CONTENT_TOP + meaningH + 0.14;
+      const exH = chipRowY - exY - 0.14;
+      el.addCard(s, rx, exY, rw, exH, { strip: C.SECONDARY, fill: C.WHITE });
+      s.addText(example, {
+        x: rx + 0.22, y: exY + 0.08, w: rw - 0.44, h: exH - 0.16,
+        fontSize: byBand(sz, 18, 16, 14.5), fontFace: FONT_B, color: C.CHARCOAL,
+        italic: true, valign: "middle", margin: 0, fit: "shrink", shrinkText: true,
+      });
+    }
+
+    if (routineItems.length) {
+      const chipGap = 0.12;
+      const chipW = (rw - chipGap * (routineItems.length - 1)) / routineItems.length;
+      routineItems.forEach((label, i) => {
+        el.addTextOnShape(s, label, {
+          x: rx + i * (chipW + chipGap), y: chipRowY, w: chipW, h: chipRowH,
+          rectRadius: 0.08, fill: { color: C.WHITE }, line: { color: accent, width: 1.3 },
+        }, {
+          fontSize: byBand(sz, 15, 14, 12.5), fontFace: FONT_B, color: accent,
+          bold: true, align: "center", valign: "middle", margin: 0,
+        });
+      });
+    }
+
+    if (footer) el.addFooter(s, footer);
+    if (notes) s.addNotes(notes);
+    runSlideDiagnostics(s, pres);
+    return s;
+  }
+
   return {
     titleSlide,
     liSlide,
     contentSlide,
     cfuSlide,
     closingSlide,
+    keyWordSlide,
     annotatedModelSlide,
     compareVisualSlide,
     boardBuildSlide,

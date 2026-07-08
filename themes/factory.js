@@ -6,7 +6,7 @@ const PptxGenJS = require("pptxgenjs");
 const { SLIDE_W, SLIDE_H, SAFE_RIGHT, SAFE_BOTTOM, CONTENT_TOP, validateBounds } = require("./core/layout");
 const { hexToRgb, luminance, contrastRatio, getContrastColor, validateContrast } = require("./core/contrast");
 const { iconToBase64Png }          = require("./core/icons");
-const { normalizeLessonTargets, sanitizeTeacherNotes, appendSourcesToNotes, installNotesPatch } = require("./core/notes");
+const { normalizeLessonTargets, sanitizeTeacherNotes, appendSourcesToNotes, installNotesPatch, installSlideTextPatch } = require("./core/notes");
 const { makeShadow, makeCardShadow } = require("./core/shadows");
 const { createElements }           = require("./core/elements");
 const { withReveal }               = require("./core/withReveal");
@@ -15,7 +15,8 @@ const { warnIfSlideHasOverlaps, warnIfSlideElementsOutOfBounds, runSlideDiagnost
 const { getGradeBand, getGradeSizes } = require("./core/gradeBand");
 const { createRoutineHelpers, ROUTINES, ROUTINE_LABELS } = require("./core/routineIcons");
 const { createPlaceholderHelpers } = require("./core/placeholders");
-const { composeNotes } = require("./core/composeNotes");
+const { createManipulatives }      = require("./core/manipulatives");
+const { composeNotes, composeGlanceNotes } = require("./core/composeNotes");
 
 // ── Builder factories ──
 const { createBaseBuilders }       = require("./builders/base");
@@ -53,6 +54,7 @@ const VALID_YEAR_LEVELS = ["foundation", "grade1", "grade2", "grade34", "grade56
 const VARIANTS_PER_LEVEL = 6;
 
 installNotesPatch(PptxGenJS);
+installSlideTextPatch(PptxGenJS);
 
 /**
  * Create a fully-bound theme object.
@@ -135,6 +137,9 @@ function createTheme(subject, yearLevel, variant) {
 
   const routine = createRoutineHelpers(C, FONT_B, el);
   const placeholders = createPlaceholderHelpers(C, FONT_H, FONT_B, el);
+  // Visual-anchor manipulative helpers on EVERY theme (a literacy or science
+  // lesson may still need a number line, chips or grouped counters).
+  const manips = createManipulatives(C, FONT_B, S);
 
   // Compose and return
   return {
@@ -178,6 +183,9 @@ function createTheme(subject, yearLevel, variant) {
     warnIfSlideElementsOutOfBounds,
     runSlideDiagnostics,
 
+    // Manipulative / visual-anchor helpers (all subjects)
+    ...manips,
+
     // Base slide builders (all subjects)
     ...base,
 
@@ -189,6 +197,7 @@ function createTheme(subject, yearLevel, variant) {
     ROUTINE_LABELS,
     ...placeholders,
     composeNotes,
+    composeGlanceNotes,
 
     // Grade-band sizing (frozen) — exposed so manual/custom slides
     // can use the same age-appropriate sizes as the builders.

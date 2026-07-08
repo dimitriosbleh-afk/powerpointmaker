@@ -1,0 +1,21 @@
+{
+  "unit_folder": "Dividing_With_Fractions_Unit",
+  "unit_pptx_name": "Dividing With Fractions Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_fracdiv_lesson1.js",
+      "folder": "FracDiv_Lesson1_Divide_Whole_By_Unit_Fraction",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_fracdiv_lesson2.js",
+      "folder": "FracDiv_Lesson2_Divide_Unit_Fraction_By_Whole",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_fracdiv_lesson3.js",
+      "folder": "FracDiv_Lesson3_Choosing_And_Solving",
+      "session": 3
+    }
+  ]
+}

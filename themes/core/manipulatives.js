@@ -1,6 +1,7 @@
 "use strict";
 
 const { validateBounds } = require("./layout");
+const { byBand, DEFAULT_SIZES } = require("./gradeBand");
 
 /**
  * Concrete-representation manipulative helpers required by the megaprompt's
@@ -15,9 +16,12 @@ const { validateBounds } = require("./layout");
  *
  * @param {object} C       Palette colours (semantic keys)
  * @param {string} FONT_B  Body font name (used for number-track digits)
+ * @param {object} [S]     Grade-band size table (from gradeBand) so labels
+ *                         and chips scale with the year level
  * @returns {object} factory bag of manipulative helpers
  */
-function createManipulatives(C, FONT_B) {
+function createManipulatives(C, FONT_B, S) {
+  const sz = S || DEFAULT_SIZES;
 
   /* ------------------------------------------------------------------ */
   /*  Tens frame (2 rows of 5)                                          */
@@ -250,7 +254,11 @@ function createManipulatives(C, FONT_B) {
     const labelW = o.labelW != null ? o.labelW : 0.8;
     const showLabels = o.showLabels !== false && labelW > 0;
     const stripW = showLabels ? Math.max(0.5, w - labelW - 0.08) : w;
-    const stripH = h / items.length;
+    // Separate wholes must LOOK separate: without a gap, stacked strips fuse
+    // into one grid and "3 wholes in quarters" reads as one rectangle cut
+    // into 12. Gap defaults on for multi-strip sets.
+    const stripGap = o.gap != null ? o.gap : (items.length > 1 ? 0.12 : 0);
+    const stripH = (h - stripGap * (items.length - 1)) / items.length;
     const borderColor = o.borderColor || C.CHARCOAL;
     const lineW = o.lineWidth || 1.0;
     const labelFontSize = o.labelFontSize || Math.max(10, Math.min(16, Math.round(stripH * 24)));
@@ -262,7 +270,7 @@ function createManipulatives(C, FONT_B) {
       const shaded = Math.max(0, Math.min(denom, Math.floor((item && item.shaded) || 0)));
       const stripFill = (item && item.color) || palette[idx % palette.length];
       const cellW = stripW / denom;
-      const stripY = y + idx * stripH;
+      const stripY = y + idx * (stripH + stripGap);
 
       for (let i = 0; i < denom; i += 1) {
         const cellX = x + i * cellW;
@@ -407,6 +415,170 @@ function createManipulatives(C, FONT_B) {
     validateBounds("addBaseTenBlocks", x, y, cursorX - x, flatSize);
   }
 
+  /* ------------------------------------------------------------------ */
+  /*  Chip row (evenly spaced choice chips)                              */
+  /* ------------------------------------------------------------------ */
+
+  /**
+   * Row of evenly spaced chips (rounded rect + centred label). Use for
+   * fraction choices, number choices, word options - NEVER lay these out
+   * as one string with runs of spaces.
+   *
+   * @param {number}            w      Total row width (inches)
+   * @param {(string|number)[]} items  Chip labels
+   * @param {object}            [opts] { gap, chipH, fontSize, fillColor, borderColor, textColor }
+   * @returns {object} { chipW, chipH }
+   */
+  function addChipRow(slide, x, y, w, items, opts) {
+    const o = opts || {};
+    const list = (Array.isArray(items) ? items : [items]).map((v) => String(v));
+    if (!list.length) return { chipW: 0, chipH: 0 };
+    const gap = o.gap != null ? o.gap : 0.14;
+    const chipH = o.chipH || byBand(sz, 0.8, 0.68, 0.56);
+    const chipW = (w - gap * (list.length - 1)) / list.length;
+    const fontSize = o.fontSize || byBand(sz, 30, 24, 20);
+    const fillColor = o.fillColor || C.WHITE;
+    const borderColor = o.borderColor || C.PRIMARY;
+    const textColor = o.textColor || C.PRIMARY;
+    validateBounds("addChipRow", x, y, w, chipH);
+
+    list.forEach((label, i) => {
+      const cx = x + i * (chipW + gap);
+      slide.addShape("roundRect", {
+        x: cx, y, w: chipW, h: chipH, rectRadius: 0.08,
+        fill: { color: fillColor },
+        line: { color: borderColor, width: 1.4 },
+      });
+      slide.addText(label, {
+        x: cx, y, w: chipW, h: chipH,
+        fontSize, fontFace: FONT_B, color: textColor, bold: true,
+        align: "center", valign: "middle", margin: 0,
+        fit: "shrink", shrinkText: true,
+      });
+    });
+    return { chipW, chipH };
+  }
+
+  /* ------------------------------------------------------------------ */
+  /*  Grouped counters ("groups of" division / multiplication)           */
+  /* ------------------------------------------------------------------ */
+
+  /**
+   * `groups` framed groups of `per` counters each, laid out left to right.
+   * The framing makes the grouping readable at a glance (megaprompt
+   * Foundation visual clarity rule: organised, never scattered).
+   *
+   * @param {number} groups  Number of groups
+   * @param {number} per     Counters per group
+   * @param {object} [opts]  { dot, gap, groupGap, dotColor, frameColor }
+   * @returns {object} { totalW, groupW }
+   */
+  function addGroupedCounters(slide, x, y, groups, per, opts) {
+    const o = opts || {};
+    const dot = o.dot || byBand(sz, 0.34, 0.3, 0.26);
+    const gap = o.gap != null ? o.gap : 0.12;
+    const framePad = 0.10;
+    const groupW = per * dot + (per - 1) * gap + framePad * 2;
+    const groupGap = o.groupGap != null ? o.groupGap : 0.24;
+    const dotColor = o.dotColor || C.ACCENT;
+    const frameColor = o.frameColor || C.SECONDARY;
+    const totalW = groups * groupW + (groups - 1) * groupGap;
+    validateBounds("addGroupedCounters", x, y - framePad, totalW, dot + framePad * 2);
+
+    for (let g = 0; g < groups; g += 1) {
+      const gx = x + g * (groupW + groupGap);
+      slide.addShape("roundRect", {
+        x: gx, y: y - framePad, w: groupW, h: dot + framePad * 2, rectRadius: 0.06,
+        fill: { color: C.BG_LIGHT || C.WHITE },
+        line: { color: frameColor, width: 1.2 },
+      });
+      for (let i = 0; i < per; i += 1) {
+        const cx = gx + framePad + i * (dot + gap);
+        slide.addShape("roundRect", {
+          x: cx, y, w: dot, h: dot, rectRadius: dot / 2,
+          fill: { color: dotColor },
+          line: { color: dotColor, width: 0.2 },
+        });
+      }
+    }
+    return { totalW, groupW };
+  }
+
+  /* ------------------------------------------------------------------ */
+  /*  Part-Part-Whole mat                                                */
+  /* ------------------------------------------------------------------ */
+
+  /**
+   * Classic PPW mat: whole box on top, two part boxes below, connectors.
+   * Pass null/undefined for any value to leave that box blank (board
+   * build / student fills it in).
+   *
+   * @param {number} w       Mat width (inches)
+   * @param {number} h       Mat height (inches)
+   * @param {object} values  { whole, partA, partB } (any may be null for blank)
+   * @param {object} [opts]  { captionFontSize, valueFontSize, borderColor, wholeColor, partColor }
+   */
+  function addPartPartWholeMat(slide, x, y, w, h, values, opts) {
+    const v = values || {};
+    const o = opts || {};
+    // Captions are tiny identifiers; the VALUE is the hero of each box
+    const captionFontSize = o.captionFontSize || 11;
+    const valueFontSize = o.valueFontSize || byBand(sz, 30, 26, 22);
+    const borderColor = o.borderColor || C.CHARCOAL;
+    const wholeColor = o.wholeColor || C.PRIMARY;
+    const partColor = o.partColor || C.SECONDARY;
+    validateBounds("addPartPartWholeMat", x, y, w, h);
+
+    const boxH = h * 0.42;
+    const wholeW = w * 0.5;
+    const wholeX = x + (w - wholeW) / 2;
+    const partW = w * 0.46;
+    const partY = y + h - boxH;
+
+    function drawBox(bx, by, bw, caption, value, stripColor) {
+      const capH = 0.2;
+      slide.addShape("roundRect", {
+        x: bx, y: by, w: bw, h: boxH, rectRadius: 0.06,
+        fill: { color: C.WHITE },
+        line: { color: borderColor, width: 1.4 },
+      });
+      slide.addShape("rect", {
+        x: bx, y: by, w: 0.06, h: boxH,
+        fill: { color: stripColor },
+      });
+      slide.addText(caption, {
+        x: bx + 0.12, y: by + 0.03, w: bw - 0.2, h: capH,
+        fontSize: captionFontSize, fontFace: FONT_B, color: stripColor, bold: true, margin: 0,
+      });
+      if (value != null && value !== "") {
+        // Value sits BELOW the caption row so the two text boxes never overlap
+        const valueY = by + capH + 0.05;
+        slide.addText(String(value), {
+          x: bx, y: valueY, w: bw, h: Math.max(0.2, by + boxH - valueY - 0.05),
+          fontSize: valueFontSize, fontFace: FONT_B, color: C.CHARCOAL, bold: true,
+          align: "center", valign: "middle", margin: 0,
+          fit: "shrink", shrinkText: true,
+        });
+      }
+    }
+
+    // Connectors first so boxes sit on top (flipH for the leftward line;
+    // negative shape widths corrupt PPTX files)
+    slide.addShape("line", {
+      x: x + partW / 2, y: y + boxH, w: w / 2 - partW / 2, h: partY - y - boxH,
+      flipH: true,
+      line: { color: borderColor, width: 1.6 },
+    });
+    slide.addShape("line", {
+      x: x + w / 2, y: y + boxH, w: w / 2 - partW / 2, h: partY - y - boxH,
+      line: { color: borderColor, width: 1.6 },
+    });
+
+    drawBox(wholeX, y, wholeW, "Whole", v.whole, wholeColor);
+    drawBox(x, partY, partW, "Part", v.partA, partColor);
+    drawBox(x + w - partW, partY, partW, "Part", v.partB, partColor);
+  }
+
   return {
     addTensFrame,
     addFiveFrame,
@@ -415,6 +587,9 @@ function createManipulatives(C, FONT_B) {
     addFractionStripSet,
     addArray,
     addBaseTenBlocks,
+    addChipRow,
+    addGroupedCounters,
+    addPartPartWholeMat,
   };
 }
 

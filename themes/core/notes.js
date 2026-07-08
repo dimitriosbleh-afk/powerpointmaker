@@ -96,9 +96,24 @@ function normalizeHeader(line) {
 }
 
 function normalizeBullet(line) {
-  const bulletMatch = line.match(/^\s*(?:[-*]|\d+[.)])\s+(.*)$/);
+  // Glance Format beats are numbered ("1. POINT..."); the number IS the
+  // structure, so numbered lines are preserved (normalising "1)" to "1.").
+  const beatMatch = line.match(/^\s*(\d+)[.)]\s+(.*)$/);
+  if (beatMatch) return `${beatMatch[1]}. ${beatMatch[2].trimEnd()}`;
+  const bulletMatch = line.match(/^\s*[-*]\s+(.*)$/);
   if (!bulletMatch) return line.trimEnd();
   return `- ${bulletMatch[1].trimEnd()}`;
+}
+
+// Glance Format detection: a "---" divider line, an ANSWER: first line, or
+// numbered beats opening with a CAPS anchor ("1. POINT ...", "2. ASK: ...").
+function isGlanceFormatNotes(rawText) {
+  const lines = String(rawText || "").replace(/\r\n?/g, "\n").split("\n");
+  const nonBlank = lines.map((line) => line.trim()).filter(Boolean);
+  if (nonBlank.length === 0) return false;
+  if (nonBlank.some((line) => line === "---")) return true;
+  if (/^ANSWER:/.test(nonBlank[0])) return true;
+  return nonBlank.some((line) => /^\d+\.\s+[A-Z]{2,}/.test(line));
 }
 
 function sanitizeTeacherNotes(notes) {
@@ -198,6 +213,34 @@ function getTeacherNotesSourceIssues(notes, opts) {
   }
   if (sanitized && sanitized.length > maxChars) {
     issues.push(`note block exceeds ${maxChars} characters after sanitizing`);
+  }
+
+  if (o.checkSectionStructure && isGlanceFormatNotes(raw)) {
+    // Glance Format (v3.0): live zone above a "---" divider, prep zone below.
+    const allLines = sanitized ? sanitized.split("\n") : [];
+    const dividerIndex = allLines.findIndex((line) => line.trim() === "---");
+    const liveLines = (dividerIndex === -1 ? allLines : allLines.slice(0, dividerIndex))
+      .filter((line) => line.trim());
+    const prepLines = (dividerIndex === -1 ? [] : allLines.slice(dividerIndex + 1))
+      .filter((line) => line.trim() && line.trim() !== "---");
+
+    const maxLiveZoneLines = o.maxLiveZoneLines || 8;
+    const maxPrepZoneLines = o.maxPrepZoneLines || 4;
+
+    if (dividerIndex === -1 && liveLines.length > 2) {
+      issues.push("glance notes missing --- divider (only 1-2 line non-teaching notes may omit it)");
+    }
+    if (liveLines.length > maxLiveZoneLines) {
+      issues.push(`glance live zone exceeds ${maxLiveZoneLines} lines (${liveLines.length})`);
+    }
+    if (prepLines.length > maxPrepZoneLines) {
+      issues.push(`glance prep zone exceeds ${maxPrepZoneLines} lines (${prepLines.length})`);
+    }
+    if (liveLines.some((line) => /^(ASK:|\d+\.\s+ASK:)/.test(line.trim()) || /EXPECT:/.test(line)) &&
+        liveLines.length > 0 && !/^ANSWER:/.test(liveLines[0].trim())) {
+      issues.push("glance notes with an ASK must open with an ANSWER: line");
+    }
+    return issues;
   }
 
   if (o.checkSectionStructure) {
@@ -400,6 +443,63 @@ function normalizeLessonTargets(liItems, scItems) {
   };
 }
 
+// Targeted slide-face text hygiene. Unlike notes (full ASCII), slide faces
+// legitimately use maths glyphs (x, divided-by, ticks), so only the banned
+// characters are converted: dash family -> "-", smart quotes -> straight,
+// ellipsis -> "...", double hyphens -> single.
+const SLIDE_TEXT_REPLACEMENTS = [
+  [/[‘’‚‛′]/g, "'"],
+  [/[“”„‟″]/g, '"'],
+  [/…/g, "..."],
+  [/\s*[‐‑‒–—―]\s*/g, " - "],
+  [/(^|[^-])--(?!-)([^-]|$)/g, "$1 - $2"],
+  [/ {2,}- {2,}/g, " - "],
+];
+
+function sanitizeSlideText(value) {
+  if (typeof value !== "string" || value === "") return value;
+  let next = value;
+  for (const [pattern, replacement] of SLIDE_TEXT_REPLACEMENTS) {
+    next = next.replace(pattern, replacement);
+  }
+  return next;
+}
+
+let slideTextPatchInstalled = false;
+
+function installSlideTextPatch(PptxGenJS) {
+  if (slideTextPatchInstalled || typeof PptxGenJS !== "function") return;
+
+  const probe = new PptxGenJS();
+  const slide = probe.addSlide();
+  const proto = Object.getPrototypeOf(slide);
+  const originalAddText = proto && proto.addText;
+
+  if (typeof originalAddText !== "function" || originalAddText.__slideTextPatched) {
+    slideTextPatchInstalled = true;
+    return;
+  }
+
+  function patchedAddText(text, options) {
+    let cleanText = text;
+    if (typeof text === "string") {
+      cleanText = sanitizeSlideText(text);
+    } else if (Array.isArray(text)) {
+      cleanText = text.map((run) => {
+        if (run && typeof run === "object" && typeof run.text === "string") {
+          return { ...run, text: sanitizeSlideText(run.text) };
+        }
+        return run;
+      });
+    }
+    return originalAddText.call(this, cleanText, options);
+  }
+
+  patchedAddText.__slideTextPatched = true;
+  proto.addText = patchedAddText;
+  slideTextPatchInstalled = true;
+}
+
 function installNotesPatch(PptxGenJS) {
   if (notesPatchInstalled || typeof PptxGenJS !== "function") return;
 
@@ -438,6 +538,9 @@ function installNotesPatch(PptxGenJS) {
 
 module.exports = {
   NOTE_SECTION_HEADERS,
+  isGlanceFormatNotes,
+  sanitizeSlideText,
+  installSlideTextPatch,
   sanitizeTeacherNotes,
   parseNotesSections,
   getTeacherNotesSourceIssues,
