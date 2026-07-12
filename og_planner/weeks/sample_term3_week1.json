@@ -3,75 +3,322 @@
   "week": 1,
   "cohort": "Enrichment",
   "unit_folder": "OG_Term3_Week1_SAMPLE",
-  "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
   "overview": {
-    "Monday":    { "morphology": ["New Morphology", "ord/ordin"], "grammar": "Colons before a list", "learned_words": ["Review learned words", "constitution, heritage"] },
-    "Tuesday":   { "morphology": ["Review Morphology", "ord/ordin"], "grammar": "Colons before a list", "learned_words": ["New learned word", "indigenous"] },
-    "Wednesday": { "morphology": ["New Morphology", "-ible"], "grammar": "Colons before a list", "learned_words": ["Review learned words", "heritage, indigenous"] },
-    "Thursday":  { "morphology": ["Review Morphology", "-ible"], "grammar": "Colons before a list", "learned_words": ["New learned word", "ceremony"] },
-    "Friday":    { "morphology": ["Week Review", "ord/ordin, -ible"], "grammar": "Week Review", "learned_words": ["Week Review", "indigenous, ceremony"] }
+    "Monday": {
+      "morphology": [
+        "New Morphology",
+        "ord/ordin"
+      ],
+      "grammar": "Colons before a list",
+      "learned_words": [
+        "Review learned words",
+        "constitution, heritage"
+      ]
+    },
+    "Tuesday": {
+      "morphology": [
+        "Review Morphology",
+        "ord/ordin"
+      ],
+      "grammar": "Colons before a list",
+      "learned_words": [
+        "New learned word",
+        "indigenous"
+      ]
+    },
+    "Wednesday": {
+      "morphology": [
+        "New Morphology",
+        "-ible"
+      ],
+      "grammar": "Colons before a list",
+      "learned_words": [
+        "Review learned words",
+        "heritage, indigenous"
+      ]
+    },
+    "Thursday": {
+      "morphology": [
+        "Review Morphology",
+        "-ible"
+      ],
+      "grammar": "Colons before a list",
+      "learned_words": [
+        "New learned word",
+        "ceremony"
+      ]
+    },
+    "Friday": {
+      "morphology": [
+        "Week Review",
+        "ord/ordin, -ible"
+      ],
+      "grammar": "Week Review",
+      "learned_words": [
+        "Week Review",
+        "indigenous, ceremony"
+      ]
+    }
   },
   "sessions": [
     {
       "day": "Monday",
       "type": "new",
       "morphology_review": [
-        { "morph": "flect / flex", "type": "root", "keyword": "flexible", "meaning": "bend", "derivative_ask": "who has a flect/flex word? EXPECT: flexible, deflect, reflection." },
-        { "morph": "-cy", "type": "suffix", "keyword": "infancy", "meaning": "state or quality" },
-        { "morph": "sub-", "type": "prefix", "keyword": "submarine", "meaning": "under, below", "derivative_ask": "who has a sub- word? EXPECT: submerge, subheading, submarine." },
-        { "morph": "capt / capit", "type": "root", "keyword": "captain", "meaning": "head, leader" },
-        { "morph": "counter-", "type": "prefix", "keyword": "counterattack", "meaning": "against, opposite" },
-        { "morph": "-ist", "type": "suffix", "keyword": "artist", "meaning": "one who", "derivative_ask": "who is an -ist? EXPECT: artist, cyclist, pianist." },
-        { "morph": "rect / reg", "type": "root", "keyword": "rectangle", "meaning": "straight, rule" },
-        { "morph": "inter-", "type": "prefix", "keyword": "international", "meaning": "between, among" },
-        { "morph": "ped / pod", "type": "root", "keyword": "pedestrian", "meaning": "foot" },
-        { "morph": "mit / miss", "type": "root", "keyword": "missile", "meaning": "send" }
+        {
+          "morph": "flect / flex",
+          "type": "root",
+          "keyword": "reflex",
+          "meaning": "bend",
+          "derivative_ask": "who has a flect/flex word? EXPECT: flexible, deflect, reflection."
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix",
+          "keyword": "infancy",
+          "meaning": "state or quality (as in infancy, privacy, agency)"
+        },
+        {
+          "morph": "sub-",
+          "type": "prefix",
+          "keyword": "submarine",
+          "meaning": "below, under",
+          "derivative_ask": "who has a sub- word? EXPECT: submerge, subheading, submarine."
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root",
+          "keyword": "capture / captain",
+          "meaning": "hold, take OR leader, head"
+        },
+        {
+          "morph": "counter-",
+          "type": "prefix",
+          "keyword": "counterattack",
+          "meaning": "against, opposite"
+        },
+        {
+          "morph": "-ist",
+          "type": "suffix",
+          "keyword": "artist",
+          "meaning": "one who",
+          "derivative_ask": "who is an -ist? EXPECT: artist, cyclist, pianist."
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root",
+          "keyword": "correct",
+          "meaning": "straight, rule"
+        },
+        {
+          "morph": "inter-",
+          "type": "prefix",
+          "keyword": "international",
+          "meaning": "between, among"
+        },
+        {
+          "morph": "ped / pod",
+          "type": "root",
+          "keyword": "pedal",
+          "meaning": "foot"
+        },
+        {
+          "morph": "mit / miss",
+          "type": "root",
+          "keyword": "missile",
+          "meaning": "send"
+        }
       ],
       "words_to_read_review": {
-        "words": ["flexible", "literacy", "submerge", "captain", "counterattack", "cyclist", "regulate", "interject", "pedestrian", "transmit", "deflect", "agency", "subheading", "rectangle", "podium"],
+        "words": [
+          "flexible",
+          "literacy",
+          "submerge",
+          "captain",
+          "counterattack",
+          "cyclist",
+          "regulate",
+          "interject",
+          "pedestrian",
+          "transmit",
+          "deflect",
+          "agency",
+          "subheading",
+          "rectangle",
+          "podium"
+        ],
         "notes": "READ all rows together first. Today's split:\nGrade 5s - row 1\nGrade 6s - row 2\nWinter birthdays - row 3\nWearing runners - row 4\nEveryone - row 5\nPush speed on the second read - repetition builds orthographic mapping.\nASK: Which words have the root flect/flex (bend)? Name a student to find them. EXPECT: flexible (bends easily without breaking), deflect (to bend something away).\nASK: Which words carry the suffix -cy (state or quality)? EXPECT: literacy (the state of being able to read and write), agency (the state of being able to act for yourself).\nASK: Which two words share the root ped/pod (foot)? EXPECT: pedestrian (a person on foot), podium (the platform your feet stand on).\nCHORAL to finish, whole class answers together: How do we make cyclist plural? EXPECT: just add -s. Which word means to bend away? EXPECT: deflect. Synonym for flexible? EXPECT: bendy, stretchy. Antonym of submerge? EXPECT: surface."
       },
       "sound_bank": [
-        { "morph": "ord / ordin", "type": "root" },
-        { "morph": "flect / flex", "type": "root" },
-        { "morph": "mit / miss", "type": "root" },
-        { "morph": "sub-", "type": "prefix" },
-        { "morph": "counter-", "type": "prefix" },
-        { "morph": "inter-", "type": "prefix" },
-        { "morph": "-cy", "type": "suffix" },
-        { "morph": "-ist", "type": "suffix" },
-        { "morph": "-ible", "type": "suffix" }
+        {
+          "morph": "ord / ordin",
+          "type": "root"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root"
+        },
+        {
+          "morph": "mit / miss",
+          "type": "root"
+        },
+        {
+          "morph": "sub-",
+          "type": "prefix"
+        },
+        {
+          "morph": "counter-",
+          "type": "prefix"
+        },
+        {
+          "morph": "inter-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ist",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ible",
+          "type": "suffix"
+        }
       ],
       "words_to_spell_review": [
-        { "word": "reflect", "sentence": "The mirror will reflect the light back across the room.", "prompt": "Which part of the word means bend, and what is bending here?", "answer": "flect means bend - the light bends back off the mirror." },
-        { "word": "privacy", "sentence": "Please respect my privacy and knock before entering.", "prompt": "What does the -cy ending turn private into?", "answer": "-cy makes it a state: the state of being private." },
-        { "word": "submit", "sentence": "You must submit your project by Friday.", "prompt": "Sub means under and mit means send - why does submit mean hand in?", "answer": "you send your work under someone's judgement - you hand it in." },
-        { "word": "counterpart", "sentence": "The school captain met her counterpart from the other campus.", "prompt": "What does counter- tell you about where the matching person stands?", "answer": "counter- means opposite: the matching person on the other side." },
-        { "word": "interstate", "sentence": "My cousins travelled interstate for the holidays.", "prompt": "Which part of the word tells you the travel is between states?", "answer": "inter- means between: travel between states." },
-        { "word": "infancy", "sentence": "The puppy is still in its infancy.", "prompt": "What state of life does the -cy point to?", "answer": "-cy makes it a state: the state of being an infant, the very beginning." },
-        { "word": "artist", "sentence": "The artist signed the corner of her painting.", "prompt": "What does -ist tell you about the person?", "answer": "-ist means one who: one who makes art." },
-        { "word": "rectify", "sentence": "Please rectify the mistake before we print the newsletter.", "prompt": "Rect means straight - how does that give us the meaning fix?", "answer": "to rectify is to make the crooked thing straight again - to fix it." },
-        { "word": "missile", "sentence": "The missile was launched far out to sea.", "prompt": "Which root is hiding in missile, and what does it mean?", "answer": "miss means send - a missile is something sent flying." },
-        { "word": "podiatrist", "sentence": "The podiatrist checked the runner's sore feet.", "prompt": "Two morphemes to find: which part means foot and which part means one who?", "answer": "pod means foot, -ist means one who: one who treats feet." }
+        {
+          "word": "reflect",
+          "sentence": "The mirror will reflect the light back across the room.",
+          "prompt": "Which part of the word means bend, and what is bending here?",
+          "answer": "flect means bend - the light bends back off the mirror."
+        },
+        {
+          "word": "privacy",
+          "sentence": "Please respect my privacy and knock before entering.",
+          "prompt": "What does the -cy ending turn private into?",
+          "answer": "-cy makes it a state: the state of being private."
+        },
+        {
+          "word": "submit",
+          "sentence": "You must submit your project by Friday.",
+          "prompt": "Sub means under and mit means send - why does submit mean hand in?",
+          "answer": "you send your work under someone's judgement - you hand it in."
+        },
+        {
+          "word": "counterpart",
+          "sentence": "The school captain met her counterpart from the other campus.",
+          "prompt": "What does counter- tell you about where the matching person stands?",
+          "answer": "counter- means opposite: the matching person on the other side."
+        },
+        {
+          "word": "interstate",
+          "sentence": "My cousins travelled interstate for the holidays.",
+          "prompt": "Which part of the word tells you the travel is between states?",
+          "answer": "inter- means between: travel between states."
+        },
+        {
+          "word": "infancy",
+          "sentence": "The puppy is still in its infancy.",
+          "prompt": "What state of life does the -cy point to?",
+          "answer": "-cy makes it a state: the state of being an infant, the very beginning."
+        },
+        {
+          "word": "artist",
+          "sentence": "The artist signed the corner of her painting.",
+          "prompt": "What does -ist tell you about the person?",
+          "answer": "-ist means one who: one who makes art."
+        },
+        {
+          "word": "rectify",
+          "sentence": "Please rectify the mistake before we print the newsletter.",
+          "prompt": "Rect means straight - how does that give us the meaning fix?",
+          "answer": "to rectify is to make the crooked thing straight again - to fix it."
+        },
+        {
+          "word": "missile",
+          "sentence": "The missile was launched far out to sea.",
+          "prompt": "Which root is hiding in missile, and what does it mean?",
+          "answer": "miss means send - a missile is something sent flying."
+        },
+        {
+          "word": "podiatrist",
+          "sentence": "The podiatrist checked the runner's sore feet.",
+          "prompt": "Two morphemes to find: which part means foot and which part means one who?",
+          "answer": "pod means foot, -ist means one who: one who treats feet."
+        }
       ],
-      "new_morphology": { "morph": "ord / ordin", "type": "root", "keyword": "coordinate", "meaning": "order" },
+      "new_morphology": {
+        "morph": "ord / ordin",
+        "type": "root",
+        "keyword": "coordinate",
+        "meaning": "order"
+      },
       "words_to_read_new": [
-        { "word": "order", "meaning": "ord means order - the way things are arranged, one after another" },
-        { "word": "orderly", "meaning": "add -ly: doing things in a neat order" },
-        { "word": "disorder", "meaning": "dis means apart, so disorder is order that has come apart - a mess" },
-        { "word": "reorder", "meaning": "re means again: to put things back in order again" },
-        { "word": "ordinary", "meaning": "in the usual order of things, so it means normal" },
-        { "word": "ordinal", "meaning": "the numbers that tell order: 1st, 2nd, 3rd" },
-        { "word": "coordinate", "meaning": "co means together: to put plans in order together" },
-        { "word": "subordinate", "meaning": "sub means under: placed under someone in the order" },
-        { "word": "extraordinary", "meaning": "extra means beyond: beyond the usual order - amazing" },
-        { "word": "ordain", "meaning": "to officially put someone into their place in the order; to appoint" },
-        { "word": "ordinance", "meaning": "an official rule that keeps everything in order" },
-        { "word": "insubordinate", "meaning": "in- means not: not accepting your place under the order" }
+        {
+          "word": "order",
+          "meaning": "ord means order - the way things are arranged, one after another"
+        },
+        {
+          "word": "orderly",
+          "meaning": "add -ly: doing things in a neat order"
+        },
+        {
+          "word": "disorder",
+          "meaning": "dis means apart, so disorder is order that has come apart - a mess"
+        },
+        {
+          "word": "reorder",
+          "meaning": "re means again: to put things back in order again"
+        },
+        {
+          "word": "ordinary",
+          "meaning": "in the usual order of things, so it means normal"
+        },
+        {
+          "word": "ordinal",
+          "meaning": "the numbers that tell order: 1st, 2nd, 3rd"
+        },
+        {
+          "word": "coordinate",
+          "meaning": "co means together: to put plans in order together"
+        },
+        {
+          "word": "subordinate",
+          "meaning": "sub means under: placed under someone in the order"
+        },
+        {
+          "word": "extraordinary",
+          "meaning": "extra means beyond: beyond the usual order - amazing"
+        },
+        {
+          "word": "ordain",
+          "meaning": "to officially put someone into their place in the order; to appoint"
+        },
+        {
+          "word": "ordinance",
+          "meaning": "an official rule that keeps everything in order"
+        },
+        {
+          "word": "insubordinate",
+          "meaning": "in- means not: not accepting your place under the order"
+        }
       ],
-      "wtr_new_notes": "Teacher script - read each line aloud as the word appears. Name every part, then fuse the parts into the meaning, the way sub (beneath) + marine (water) fuses into a vessel beneath the water.\n**order** - ord is the root on its own, order: things arranged in their places, one after another.\n**orderly** - ord means order + -ly means in that way: doing things in an ordered way. Neat.\n**disorder** - dis- means apart + ord means order: the order pulled apart. A mess!\n**reorder** - re- means again + ord means order: to put things back into order again.\n**ordinary** - ordin means order + -ary means relating to: relating to the usual order of things. Normal, nothing special.\n**ordinal** - ordin means order + -al means to do with: the numbers to do with order - 1st, 2nd, 3rd.\n**coordinate** - co- means together + ordin means order + -ate means to do it: to bring people or plans into order together.\n**subordinate** - sub- means under + ordin means order + -ate describes the person: someone placed under another in the order.\n**extraordinary** - extra- means beyond + ordin means order + -ary means relating to: beyond the usual order. Amazing.\n**ordain** - ord means order: to officially place someone into the order. To appoint them.\n**ordinance** - ordin means order + -ance turns it into a thing: a rule made to keep order.\n**insubordinate** - in- means not + sub- means under + ordin means order: refusing to sit under your place in the order.\n**Memory hook:** every ord word is about things lined up in their place. Hear ORD, think \"Off to my place in the line.\" Students say the hook with you, then whisper it to a partner."
-      ,
-      "words_to_spell_new": ["order", "orderly", "disorder", "ordinary"],
+      "wtr_new_notes": "Teacher script - read each line aloud as the word appears. Name every part, then fuse the parts into the meaning, the way sub (beneath) + marine (water) fuses into a vessel beneath the water.\n**order** - ord is the root on its own, order: things arranged in their places, one after another.\n**orderly** - ord means order + -ly means in that way: doing things in an ordered way. Neat.\n**disorder** - dis- means apart + ord means order: the order pulled apart. A mess!\n**reorder** - re- means again + ord means order: to put things back into order again.\n**ordinary** - ordin means order + -ary means relating to: relating to the usual order of things. Normal, nothing special.\n**ordinal** - ordin means order + -al means to do with: the numbers to do with order - 1st, 2nd, 3rd.\n**coordinate** - co- means together + ordin means order + -ate means to do it: to bring people or plans into order together.\n**subordinate** - sub- means under + ordin means order + -ate describes the person: someone placed under another in the order.\n**extraordinary** - extra- means beyond + ordin means order + -ary means relating to: beyond the usual order. Amazing.\n**ordain** - ord means order: to officially place someone into the order. To appoint them.\n**ordinance** - ordin means order + -ance turns it into a thing: a rule made to keep order.\n**insubordinate** - in- means not + sub- means under + ordin means order: refusing to sit under your place in the order.\n**Memory hook:** every ord word is about things lined up in their place. Hear ORD, think \"Off to my place in the line.\" Students say the hook with you, then whisper it to a partner.",
+      "words_to_spell_new": [
+        "order",
+        "orderly",
+        "disorder",
+        "ordinary"
+      ],
       "extension": "Once finished, write one sentence using two ord words joined by a subordinating clause. Reminder: a subordinating clause starts with a joining word like because, although or while, and cannot stand alone. Stretch: open your sentence with the subordinating clause and follow it with a comma.",
       "new_morph_activity": {
         "title": "Build an ord word",
@@ -87,20 +334,64 @@
       },
       "learned_words": {
         "review": [
-          { "word": "constitution", "unfair": "tit", "notes": "**Why learned:** the middle syllable collapses to a schwa - you cannot hear the i clearly, and -tion says /shun/.\n**Say it:** con-sti-TU-tion in robot voice, then at natural speed.\n**Link:** our class rules are our constitution - the rules that keep our class in order (tie to today's root ord!)." },
-          { "word": "heritage", "unfair": "age", "notes": "**Why learned:** the final syllable says /ij/, not /ayj/ as the spelling suggests.\n**Say it:** HE-ri-tij. The -age ending hides as /ij/ in village, cottage, luggage too - collect them as a family.\n**Link:** heritage is what is handed down in order from the past (inquiry unit)." }
+          {
+            "word": "constitution",
+            "unfair": "tit",
+            "notes": "**Why learned:** the middle syllable collapses to a schwa - you cannot hear the i clearly, and -tion says /shun/.\n**Say it:** con-sti-TU-tion in robot voice, then at natural speed.\n**Link:** our class rules are our constitution - the rules that keep our class in order (tie to today's root ord!)."
+          },
+          {
+            "word": "heritage",
+            "unfair": "age",
+            "notes": "**Why learned:** the final syllable says /ij/, not /ayj/ as the spelling suggests.\n**Say it:** HE-ri-tij. The -age ending hides as /ij/ in village, cottage, luggage too - collect them as a family.\n**Link:** heritage is what is handed down in order from the past (inquiry unit)."
+          }
         ],
-        "new": { "word": "indigenous", "unfair": "e", "notes": "**Why learned:** the second syllable is a schwa - in-DIJ-e-nus runs together and the e is unclear. The g goes soft before the i as well.\n**Say it:** in-DIJ-e-nus, four syllables, tap them out.\n**Watch:** capital I when naming Indigenous peoples.\n**Link:** inquiry unit on First Nations heritage." }
+        "new": {
+          "word": "indigenous",
+          "unfair": "e",
+          "notes": "**Why learned:** the second syllable is a schwa - in-DIJ-e-nus runs together and the e is unclear. The g goes soft before the i as well.\n**Say it:** in-DIJ-e-nus, four syllables, tap them out.\n**Watch:** capital I when naming Indigenous peoples.\n**Link:** inquiry unit on First Nations heritage."
+        }
       },
       "dictation": [
-        { "sentence": "We followed the ordinary order, and then we began our work.",
-          "targets": ["ordinary", "order"],
-          "cups": { "capitals": ["We"], "punctuation": ["comma before and", "full stop"] },
-          "focus": "comma before and in a compound sentence" },
-        { "sentence": "The captain gave a clear order: \"Keep every record in an orderly way, and check it twice.\"",
-          "targets": ["captain", "order", "orderly", "record"],
-          "cups": { "capitals": ["The", "Keep"], "punctuation": ["colon", "opening quotation mark", "comma", "closing quotation mark", "full stop inside the quote"] },
-          "focus": "colon, quotation marks, comma in a compound sentence" }
+        {
+          "sentence": "We followed the ordinary order, and then we began our work.",
+          "targets": [
+            "ordinary",
+            "order"
+          ],
+          "cups": {
+            "capitals": [
+              "We"
+            ],
+            "punctuation": [
+              "comma before and",
+              "full stop"
+            ]
+          },
+          "focus": "comma before and in a compound sentence"
+        },
+        {
+          "sentence": "The captain gave a clear order: \"Keep every record in an orderly way, and check it twice.\"",
+          "targets": [
+            "captain",
+            "order",
+            "orderly",
+            "record"
+          ],
+          "cups": {
+            "capitals": [
+              "The",
+              "Keep"
+            ],
+            "punctuation": [
+              "colon",
+              "opening quotation mark",
+              "comma",
+              "closing quotation mark",
+              "full stop inside the quote"
+            ]
+          },
+          "focus": "colon, quotation marks, comma in a compound sentence"
+        }
       ],
       "grammar": {
         "header_notes": "Five-minute finisher. Colons before a list - day 1 of the weekly sequence. Whiteboards out before the I do.",
@@ -145,59 +436,241 @@
       "day": "Tuesday",
       "type": "review",
       "morphology_review": [
-        { "morph": "inter-", "type": "prefix", "keyword": "international", "meaning": "between, among", "derivative_ask": "who has an inter- word? EXPECT: interject, intercept, interval." },
-        { "morph": "capt / capit", "type": "root", "keyword": "captain", "meaning": "head, leader" },
-        { "morph": "-ist", "type": "suffix", "keyword": "artist", "meaning": "one who" },
-        { "morph": "flect / flex", "type": "root", "keyword": "flexible", "meaning": "bend" },
-        { "morph": "ord / ordin", "type": "root", "keyword": "coordinate", "meaning": "order", "derivative_ask": "who remembers a word from yesterday's new root? EXPECT: order, ordinary, coordinate, subordinate." },
-        { "morph": "counter-", "type": "prefix", "keyword": "counterattack", "meaning": "against, opposite", "derivative_ask": "who has a counter- word? EXPECT: counterattack, counterpoint, counterclockwise." },
-        { "morph": "rect / reg", "type": "root", "keyword": "rectangle", "meaning": "straight, rule" },
-        { "morph": "-cy", "type": "suffix", "keyword": "infancy", "meaning": "state or quality" },
-        { "morph": "ped / pod", "type": "root", "keyword": "pedestrian", "meaning": "foot" },
-        { "morph": "sub-", "type": "prefix", "keyword": "submarine", "meaning": "under, below" }
+        {
+          "morph": "inter-",
+          "type": "prefix",
+          "keyword": "international",
+          "meaning": "between, among",
+          "derivative_ask": "who has an inter- word? EXPECT: interject, intercept, interval."
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root",
+          "keyword": "capture / captain",
+          "meaning": "hold, take OR leader, head"
+        },
+        {
+          "morph": "-ist",
+          "type": "suffix",
+          "keyword": "artist",
+          "meaning": "one who"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root",
+          "keyword": "reflex",
+          "meaning": "bend"
+        },
+        {
+          "morph": "ord / ordin",
+          "type": "root",
+          "keyword": "coordinate",
+          "meaning": "order",
+          "derivative_ask": "who remembers a word from yesterday's new root? EXPECT: order, ordinary, coordinate, subordinate."
+        },
+        {
+          "morph": "counter-",
+          "type": "prefix",
+          "keyword": "counterattack",
+          "meaning": "against, opposite",
+          "derivative_ask": "who has a counter- word? EXPECT: counterattack, counterpoint, counterclockwise."
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root",
+          "keyword": "correct",
+          "meaning": "straight, rule"
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix",
+          "keyword": "infancy",
+          "meaning": "state or quality (as in infancy, privacy, agency)"
+        },
+        {
+          "morph": "ped / pod",
+          "type": "root",
+          "keyword": "pedal",
+          "meaning": "foot"
+        },
+        {
+          "morph": "sub-",
+          "type": "prefix",
+          "keyword": "submarine",
+          "meaning": "below, under"
+        }
       ],
       "words_to_read_review": {
-        "words": ["ordinal", "flexibly", "pharmacy", "subordinate", "counterclockwise", "pianist", "rectify", "interval", "podiatrist", "reorder", "reflection", "captive", "dismiss", "extraordinary", "pedal"],
+        "words": [
+          "ordinal",
+          "flexibly",
+          "pharmacy",
+          "subordinate",
+          "counterclockwise",
+          "pianist",
+          "rectify",
+          "interval",
+          "podiatrist",
+          "reorder",
+          "reflection",
+          "captive",
+          "dismiss",
+          "extraordinary",
+          "pedal"
+        ],
         "notes": "READ all rows together first. Today's split:\nLeft-handers - row 1\nBorn January to June - row 2\nRight-handers - row 3\nBorn July to December - row 4\nEveryone, at speed - row 5\nPush speed on the second read - repetition builds orthographic mapping.\nASK: Which words carry yesterday's root ord/ordin (order)? Name a student to find them. EXPECT: ordinal (the order numbers - 1st, 2nd, 3rd), subordinate (placed under someone in the order), reorder (put back in order again), extraordinary (beyond the usual order).\nASK: Which word had a spelling change before its suffix? EXPECT: pianist - piano drops its o before -ist.\nASK: Which word is a -cy state word? EXPECT: pharmacy (the practice of preparing medicines).\nCHORAL to finish, whole class answers together: Antonym of counterclockwise? EXPECT: clockwise. The -ly on flexibly means in that way - so flexibly means? EXPECT: in a bending way. Which two words might you hear at a clinic? EXPECT: podiatrist, pharmacy. How do we make reflection plural? EXPECT: just add -s."
       },
       "sound_bank": [
-        { "morph": "ord / ordin", "type": "root" },
-        { "morph": "rect / reg", "type": "root" },
-        { "morph": "ped / pod", "type": "root" },
-        { "morph": "sub-", "type": "prefix" },
-        { "morph": "inter-", "type": "prefix" },
-        { "morph": "counter-", "type": "prefix" },
-        { "morph": "-cy", "type": "suffix" },
-        { "morph": "-ist", "type": "suffix" },
-        { "morph": "-ly", "type": "suffix" }
+        {
+          "morph": "ord / ordin",
+          "type": "root"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root"
+        },
+        {
+          "morph": "ped / pod",
+          "type": "root"
+        },
+        {
+          "morph": "sub-",
+          "type": "prefix"
+        },
+        {
+          "morph": "inter-",
+          "type": "prefix"
+        },
+        {
+          "morph": "counter-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ist",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ly",
+          "type": "suffix"
+        }
       ],
       "words_to_spell_review": [
-        { "word": "regulate", "sentence": "New rules will regulate how loudly we can play music.", "prompt": "Reg means rule - say how regulate means control by rules.", "answer": "to regulate is to control something by making rules for it." },
-        { "word": "cyclist", "sentence": "The cyclist checked her helmet before the race.", "prompt": "What does -ist tell you about the person on the bike?", "answer": "-ist means one who: one who rides a cycle." },
-        { "word": "intercept", "sentence": "He jumped to intercept the pass before it reached the wing.", "prompt": "Inter- means between - between what and what did he jump?", "answer": "between the passer and the receiver - he caught it in between." },
-        { "word": "pedestal", "sentence": "The statue stood on a stone pedestal near the entry.", "prompt": "Which root is hiding here, and why does a pedestal relate to feet?", "answer": "ped means foot: the block where the statue's feet stand." },
-        { "word": "counterpoint", "sentence": "Her calm answer was the perfect counterpoint to his shouting.", "prompt": "What does counter- tell you her answer did to his shouting?", "answer": "counter- means against or opposite: her answer stood against his shouting." },
-        { "word": "transmit", "sentence": "The tower will transmit the signal across the valley.", "prompt": "Trans means across and mit means send - say the whole meaning.", "answer": "to send the signal across the valley." },
-        { "word": "submerge", "sentence": "Slowly submerge the beaker in the tank.", "prompt": "Which part of the word means under?", "answer": "sub- means under: put it under the water." },
-        { "word": "flexible", "sentence": "Gymnasts stay flexible by stretching every day.", "prompt": "Flex means bend - what does the -ible ending add?", "answer": "-ible means able to: able to bend." },
-        { "word": "literacy", "sentence": "Our literacy block runs for an hour each morning.", "prompt": "What state or quality does the -cy point to?", "answer": "-cy makes it a state: the state of being able to read and write." },
-        { "word": "interject", "sentence": "Please do not interject while your partner is speaking.", "prompt": "Inter- means between and ject means throw - what are you throwing between?", "answer": "your words - you throw them between someone else's words." }
+        {
+          "word": "regulate",
+          "sentence": "New rules will regulate how loudly we can play music.",
+          "prompt": "Reg means rule - say how regulate means control by rules.",
+          "answer": "to regulate is to control something by making rules for it."
+        },
+        {
+          "word": "cyclist",
+          "sentence": "The cyclist checked her helmet before the race.",
+          "prompt": "What does -ist tell you about the person on the bike?",
+          "answer": "-ist means one who: one who rides a cycle."
+        },
+        {
+          "word": "intercept",
+          "sentence": "He jumped to intercept the pass before it reached the wing.",
+          "prompt": "Inter- means between - between what and what did he jump?",
+          "answer": "between the passer and the receiver - he caught it in between."
+        },
+        {
+          "word": "pedestal",
+          "sentence": "The statue stood on a stone pedestal near the entry.",
+          "prompt": "Which root is hiding here, and why does a pedestal relate to feet?",
+          "answer": "ped means foot: the block where the statue's feet stand."
+        },
+        {
+          "word": "counterpoint",
+          "sentence": "Her calm answer was the perfect counterpoint to his shouting.",
+          "prompt": "What does counter- tell you her answer did to his shouting?",
+          "answer": "counter- means against or opposite: her answer stood against his shouting."
+        },
+        {
+          "word": "transmit",
+          "sentence": "The tower will transmit the signal across the valley.",
+          "prompt": "Trans means across and mit means send - say the whole meaning.",
+          "answer": "to send the signal across the valley."
+        },
+        {
+          "word": "submerge",
+          "sentence": "Slowly submerge the beaker in the tank.",
+          "prompt": "Which part of the word means under?",
+          "answer": "sub- means under: put it under the water."
+        },
+        {
+          "word": "flexible",
+          "sentence": "Gymnasts stay flexible by stretching every day.",
+          "prompt": "Flex means bend - what does the -ible ending add?",
+          "answer": "-ible means able to: able to bend."
+        },
+        {
+          "word": "literacy",
+          "sentence": "Our literacy block runs for an hour each morning.",
+          "prompt": "What state or quality does the -cy point to?",
+          "answer": "-cy makes it a state: the state of being able to read and write."
+        },
+        {
+          "word": "interject",
+          "sentence": "Please do not interject while your partner is speaking.",
+          "prompt": "Inter- means between and ject means throw - what are you throwing between?",
+          "answer": "your words - you throw them between someone else's words."
+        }
       ],
-      "new_morphology": { "morph": "ord / ordin", "type": "root", "keyword": "coordinate", "meaning": "order" },
+      "new_morphology": {
+        "morph": "ord / ordin",
+        "type": "root",
+        "keyword": "coordinate",
+        "meaning": "order"
+      },
       "words_to_read_new": [
-        { "word": "orderly", "meaning": "doing things in a neat order" },
-        { "word": "ordination", "meaning": "the ceremony of officially putting someone into their place in the order" },
-        { "word": "coordinate", "meaning": "co means together: to bring plans into order together" },
-        { "word": "coordination", "meaning": "-tion turns the verb into a thing: parts working in order together" },
-        { "word": "disorderly", "meaning": "dis means apart: behaving with the order gone" },
-        { "word": "subordination", "meaning": "being placed under someone in the order" },
-        { "word": "preordain", "meaning": "pre means before: to set the order before it happens" },
-        { "word": "extraordinarily", "meaning": "-ly makes it how you do it: in a way beyond the usual order" },
-        { "word": "insubordination", "meaning": "in- means not: refusing your place under the order" }
+        {
+          "word": "orderly",
+          "meaning": "doing things in a neat order"
+        },
+        {
+          "word": "ordination",
+          "meaning": "the ceremony of officially putting someone into their place in the order"
+        },
+        {
+          "word": "coordinate",
+          "meaning": "co means together: to bring plans into order together"
+        },
+        {
+          "word": "coordination",
+          "meaning": "-tion turns the verb into a thing: parts working in order together"
+        },
+        {
+          "word": "disorderly",
+          "meaning": "dis means apart: behaving with the order gone"
+        },
+        {
+          "word": "subordination",
+          "meaning": "being placed under someone in the order"
+        },
+        {
+          "word": "preordain",
+          "meaning": "pre means before: to set the order before it happens"
+        },
+        {
+          "word": "extraordinarily",
+          "meaning": "-ly makes it how you do it: in a way beyond the usual order"
+        },
+        {
+          "word": "insubordination",
+          "meaning": "in- means not: refusing your place under the order"
+        }
       ],
-      "wtr_new_notes": "Teacher script - yesterday's root, bigger words. Name every part, then fuse the parts into the meaning, like sub (beneath) + marine (water) = a vessel beneath the water.\n**orderly** - ord means order + -ly means in that way: doing things in an ordered way.\n**ordination** - ordin means order + -ation makes it an event: the ceremony of officially placing someone into the order.\n**coordinate** - co- means together + ordin means order + -ate means to do it: to bring plans into order together.\n**coordination** - co- together + ordin order + -ation makes it a thing: parts working together in order. Your PE coordination!\n**disorderly** - dis- means apart + ord means order + -ly means in that way: behaving with the order pulled apart.\n**subordination** - sub- means under + ordin means order + -ation makes it a thing: being placed under someone in the order.\n**preordain** - pre- means before + ord means order: to set the order before it even happens.\n**extraordinarily** - extra- beyond + ordin order + -ary relating to + -ly in that way: in a way beyond the usual order.\n**insubordination** - in- not + sub- under + ordin order + -ation a thing: refusing your place under the order. Four parts stacked!\n**Memory hook:** same as yesterday - hear ORD, think \"Off to my place in the line.\" Ask: who can build the LONGEST ord word from memory? EXPECT: insubordination - in + sub + ordin + ation."
-      ,
-      "words_to_spell_new": ["coordinate", "ordinal", "extraordinary", "subordinate"],
+      "wtr_new_notes": "Teacher script - yesterday's root, bigger words. Name every part, then fuse the parts into the meaning, like sub (beneath) + marine (water) = a vessel beneath the water.\n**orderly** - ord means order + -ly means in that way: doing things in an ordered way.\n**ordination** - ordin means order + -ation makes it an event: the ceremony of officially placing someone into the order.\n**coordinate** - co- means together + ordin means order + -ate means to do it: to bring plans into order together.\n**coordination** - co- together + ordin order + -ation makes it a thing: parts working together in order. Your PE coordination!\n**disorderly** - dis- means apart + ord means order + -ly means in that way: behaving with the order pulled apart.\n**subordination** - sub- means under + ordin means order + -ation makes it a thing: being placed under someone in the order.\n**preordain** - pre- means before + ord means order: to set the order before it even happens.\n**extraordinarily** - extra- beyond + ordin order + -ary relating to + -ly in that way: in a way beyond the usual order.\n**insubordination** - in- not + sub- under + ordin order + -ation a thing: refusing your place under the order. Four parts stacked!\n**Memory hook:** same as yesterday - hear ORD, think \"Off to my place in the line.\" Ask: who can build the LONGEST ord word from memory? EXPECT: insubordination - in + sub + ordin + ation.",
+      "words_to_spell_new": [
+        "coordinate",
+        "ordinal",
+        "extraordinary",
+        "subordinate"
+      ],
       "extension": "Once finished, write the meaning of subordinate in your own words using the meanings of sub- (under) and ord (order). Stretch: do the same for insubordination - it has three morphemes to unpack.",
       "new_morph_activity": {
         "title": "Morpheme sums",
@@ -213,20 +686,63 @@
       },
       "learned_words": {
         "review": [
-          { "word": "heritage", "unfair": "age", "notes": "**Why learned:** the final syllable says /ij/, not /ayj/.\n**Say it:** HE-ri-tij. Same family as village and cottage.\n**Quick link:** heritage is what is handed down in order from the past." },
-          { "word": "constitution", "unfair": "tit", "notes": "**Why learned:** middle syllable collapses to schwa and -tion says /shun/.\n**Say it:** robot voice con-sti-TU-tion, then natural speed, then write from memory." }
+          {
+            "word": "heritage",
+            "unfair": "age",
+            "notes": "**Why learned:** the final syllable says /ij/, not /ayj/.\n**Say it:** HE-ri-tij. Same family as village and cottage.\n**Quick link:** heritage is what is handed down in order from the past."
+          },
+          {
+            "word": "constitution",
+            "unfair": "tit",
+            "notes": "**Why learned:** middle syllable collapses to schwa and -tion says /shun/.\n**Say it:** robot voice con-sti-TU-tion, then natural speed, then write from memory."
+          }
         ],
-        "new": { "word": "indigenous", "unfair": "e", "notes": "**Why learned:** the second syllable is a schwa - you cannot hear the e clearly, and the g goes soft.\n**Say it:** in-DIJ-e-nus, tap the four syllables.\n**Watch:** capital I when naming Indigenous peoples.\n**Link:** inquiry unit on First Nations heritage." }
+        "new": {
+          "word": "indigenous",
+          "unfair": "e",
+          "notes": "**Why learned:** the second syllable is a schwa - you cannot hear the e clearly, and the g goes soft.\n**Say it:** in-DIJ-e-nus, tap the four syllables.\n**Watch:** capital I when naming Indigenous peoples.\n**Link:** inquiry unit on First Nations heritage."
+        }
       },
       "dictation": [
-        { "sentence": "The insubordinate soldier ignored a direct order from his captain.",
-          "targets": ["insubordinate", "order", "captain"],
-          "cups": { "capitals": ["The"], "punctuation": ["full stop"] },
-          "focus": "single clause accuracy; three review targets" },
-        { "sentence": "Before the ceremony, the elders said: \"Heritage joins the past and the present in order.\"",
-          "targets": ["ceremony", "heritage", "order"],
-          "cups": { "capitals": ["Before", "Heritage"], "punctuation": ["comma after opening phrase", "colon", "opening quotation mark", "closing quotation mark", "full stop inside the quote"] },
-          "focus": "comma after opening phrase, colon, quotation marks" }
+        {
+          "sentence": "The insubordinate soldier ignored a direct order from his captain.",
+          "targets": [
+            "insubordinate",
+            "order",
+            "captain"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "single clause accuracy; three review targets"
+        },
+        {
+          "sentence": "Before the ceremony, the elders said: \"Heritage joins the past and the present in order.\"",
+          "targets": [
+            "ceremony",
+            "heritage",
+            "order"
+          ],
+          "cups": {
+            "capitals": [
+              "Before",
+              "Heritage"
+            ],
+            "punctuation": [
+              "comma after opening phrase",
+              "colon",
+              "opening quotation mark",
+              "closing quotation mark",
+              "full stop inside the quote"
+            ]
+          },
+          "focus": "comma after opening phrase, colon, quotation marks"
+        }
       ],
       "grammar": {
         "header_notes": "Five-minute finisher. Colons before a list - day 2. Rule restated in the I do so anyone away yesterday still succeeds.",
@@ -271,59 +787,247 @@
       "day": "Friday",
       "type": "week_review",
       "morphology_review": [
-        { "morph": "-ible", "type": "suffix", "keyword": "reversible", "meaning": "able to be", "derivative_ask": "who has an -ible word from this week? EXPECT: reversible, convertible, sensible." },
-        { "morph": "ord / ordin", "type": "root", "keyword": "coordinate", "meaning": "order", "derivative_ask": "who has an ord word from this week? EXPECT: order, coordinate, extraordinary, subordinate." },
-        { "morph": "counter-", "type": "prefix", "keyword": "counterattack", "meaning": "against, opposite" },
-        { "morph": "flect / flex", "type": "root", "keyword": "flexible", "meaning": "bend" },
-        { "morph": "-cy", "type": "suffix", "keyword": "infancy", "meaning": "state or quality", "derivative_ask": "who has a -cy word? EXPECT: infancy, literacy, privacy." },
-        { "morph": "sub-", "type": "prefix", "keyword": "submarine", "meaning": "under, below" },
-        { "morph": "rect / reg", "type": "root", "keyword": "rectangle", "meaning": "straight, rule" },
-        { "morph": "-ist", "type": "suffix", "keyword": "artist", "meaning": "one who" },
-        { "morph": "inter-", "type": "prefix", "keyword": "international", "meaning": "between, among" },
-        { "morph": "capt / capit", "type": "root", "keyword": "captain", "meaning": "head, leader" }
+        {
+          "morph": "-ible",
+          "type": "suffix",
+          "keyword": "reversible",
+          "meaning": "able to (used instead of -able when there is a -sion/-tion relative)",
+          "derivative_ask": "who has an -ible word from this week? EXPECT: reversible, convertible, sensible."
+        },
+        {
+          "morph": "ord / ordin",
+          "type": "root",
+          "keyword": "coordinate",
+          "meaning": "order",
+          "derivative_ask": "who has an ord word from this week? EXPECT: order, coordinate, extraordinary, subordinate."
+        },
+        {
+          "morph": "counter-",
+          "type": "prefix",
+          "keyword": "counterattack",
+          "meaning": "against, opposite"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root",
+          "keyword": "reflex",
+          "meaning": "bend"
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix",
+          "keyword": "infancy",
+          "meaning": "state or quality (as in infancy, privacy, agency)",
+          "derivative_ask": "who has a -cy word? EXPECT: infancy, literacy, privacy."
+        },
+        {
+          "morph": "sub-",
+          "type": "prefix",
+          "keyword": "submarine",
+          "meaning": "below, under"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root",
+          "keyword": "correct",
+          "meaning": "straight, rule"
+        },
+        {
+          "morph": "-ist",
+          "type": "suffix",
+          "keyword": "artist",
+          "meaning": "one who"
+        },
+        {
+          "morph": "inter-",
+          "type": "prefix",
+          "keyword": "international",
+          "meaning": "between, among"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root",
+          "keyword": "capture / captain",
+          "meaning": "hold, take OR leader, head"
+        }
       ],
       "words_to_read_review": {
-        "words": ["coordination", "reversible", "ordinary", "flexible", "subordinate", "convertible", "literacy", "counterbalance", "ordinance", "interior", "captivate", "sensible", "disorder", "rectitude", "ordain"],
+        "words": [
+          "coordination",
+          "reversible",
+          "ordinary",
+          "flexible",
+          "subordinate",
+          "convertible",
+          "literacy",
+          "counterbalance",
+          "ordinance",
+          "interior",
+          "captivate",
+          "sensible",
+          "disorder",
+          "rectitude",
+          "ordain"
+        ],
         "notes": "READ all rows together first. Friday split:\nName has a double letter - row 1\nWalked or rode to school - row 2\nBoys - row 3\nGirls - row 4\nEveryone, race it - row 5\nFinal read of the week: smooth, fast, confident. Repetition = orthographic mapping.\nASK: Which words carry this week's root ord/ordin (order)? Name a student to find them. EXPECT: coordination (parts working in order together), ordinary (in the usual order), subordinate (under someone in the order), ordinance (a rule that keeps order), disorder (order come apart), ordain (officially put into the order).\nASK: Which words carry this week's suffix -ible (able to be)? EXPECT: reversible (able to be turned back), convertible (able to be changed), sensible (able to be sensed - showing good judgement).\nASK: Which -ible word could describe a raincoat? EXPECT: reversible - you can wear it both ways.\nCHORAL to finish, whole class answers together: How do we make ordinance plural? EXPECT: just add -s. Add -ly to sensible so it tells how something is done? EXPECT: sensibly - drop the -le, add -ly. Antonym of disorder? EXPECT: order. Which word is something a magician does to an audience? EXPECT: captivate."
       },
       "sound_bank": [
-        { "morph": "ord / ordin", "type": "root" },
-        { "morph": "flect / flex", "type": "root" },
-        { "morph": "capt / capit", "type": "root" },
-        { "morph": "sub-", "type": "prefix" },
-        { "morph": "counter-", "type": "prefix" },
-        { "morph": "inter-", "type": "prefix" },
-        { "morph": "-ible", "type": "suffix" },
-        { "morph": "-cy", "type": "suffix" },
-        { "morph": "-ist", "type": "suffix" }
+        {
+          "morph": "ord / ordin",
+          "type": "root"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root"
+        },
+        {
+          "morph": "sub-",
+          "type": "prefix"
+        },
+        {
+          "morph": "counter-",
+          "type": "prefix"
+        },
+        {
+          "morph": "inter-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ible",
+          "type": "suffix"
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ist",
+          "type": "suffix"
+        }
       ],
       "words_to_spell_review": [
-        { "word": "extraordinary", "sentence": "Her extraordinary catch won the final.", "prompt": "Extra means beyond - beyond what?", "answer": "ordin means order: beyond the usual order of things - amazing." },
-        { "word": "reversible", "sentence": "My jacket is reversible, so it has two looks.", "prompt": "What does -ible let the jacket do?", "answer": "-ible means able to be: able to be reversed, turned back the other way." },
-        { "word": "coordinate", "sentence": "We must coordinate our plans before camp.", "prompt": "Co means together - what are we putting in order together?", "answer": "ordin means order: our plans - bringing them into order together." },
-        { "word": "subheading", "sentence": "Add a subheading under the main title.", "prompt": "Which part of the word already told you where it goes?", "answer": "sub- means under: it goes under the main heading." },
-        { "word": "convertible", "sentence": "The sofa is convertible into a bed for guests.", "prompt": "What does -ible let the sofa do?", "answer": "-ible means able to be: able to be converted into something else." },
-        { "word": "orderly", "sentence": "Leave the lab in an orderly state.", "prompt": "Say how ord gives this word its meaning.", "answer": "ord means order: everything in its neat order." },
-        { "word": "counterattack", "sentence": "The knights launched a swift counterattack at dawn.", "prompt": "What does counter- tell you about the direction of this attack?", "answer": "counter- means against: an attack sent back against the first attack." },
-        { "word": "pedestrian", "sentence": "A pedestrian waited at the crossing.", "prompt": "Which root tells you how this person is travelling?", "answer": "ped means foot: travelling on foot." },
-        { "word": "infancy", "sentence": "The project is still in its infancy.", "prompt": "What does -cy turn infant into?", "answer": "-cy makes it a state: the state of being an infant - the very beginning." },
-        { "word": "deflect", "sentence": "The goalie managed to deflect the shot.", "prompt": "Flect means bend - what got bent away here?", "answer": "the shot - the goalie bent its path away from the goal." }
+        {
+          "word": "extraordinary",
+          "sentence": "Her extraordinary catch won the final.",
+          "prompt": "Extra means beyond - beyond what?",
+          "answer": "ordin means order: beyond the usual order of things - amazing."
+        },
+        {
+          "word": "reversible",
+          "sentence": "My jacket is reversible, so it has two looks.",
+          "prompt": "What does -ible let the jacket do?",
+          "answer": "-ible means able to be: able to be reversed, turned back the other way."
+        },
+        {
+          "word": "coordinate",
+          "sentence": "We must coordinate our plans before camp.",
+          "prompt": "Co means together - what are we putting in order together?",
+          "answer": "ordin means order: our plans - bringing them into order together."
+        },
+        {
+          "word": "subheading",
+          "sentence": "Add a subheading under the main title.",
+          "prompt": "Which part of the word already told you where it goes?",
+          "answer": "sub- means under: it goes under the main heading."
+        },
+        {
+          "word": "convertible",
+          "sentence": "The sofa is convertible into a bed for guests.",
+          "prompt": "What does -ible let the sofa do?",
+          "answer": "-ible means able to be: able to be converted into something else."
+        },
+        {
+          "word": "orderly",
+          "sentence": "Leave the lab in an orderly state.",
+          "prompt": "Say how ord gives this word its meaning.",
+          "answer": "ord means order: everything in its neat order."
+        },
+        {
+          "word": "counterattack",
+          "sentence": "The knights launched a swift counterattack at dawn.",
+          "prompt": "What does counter- tell you about the direction of this attack?",
+          "answer": "counter- means against: an attack sent back against the first attack."
+        },
+        {
+          "word": "pedestrian",
+          "sentence": "A pedestrian waited at the crossing.",
+          "prompt": "Which root tells you how this person is travelling?",
+          "answer": "ped means foot: travelling on foot."
+        },
+        {
+          "word": "infancy",
+          "sentence": "The project is still in its infancy.",
+          "prompt": "What does -cy turn infant into?",
+          "answer": "-cy makes it a state: the state of being an infant - the very beginning."
+        },
+        {
+          "word": "deflect",
+          "sentence": "The goalie managed to deflect the shot.",
+          "prompt": "Flect means bend - what got bent away here?",
+          "answer": "the shot - the goalie bent its path away from the goal."
+        }
       ],
       "learned_words": {
         "review": [
-          { "word": "indigenous", "unfair": "e", "notes": "**Why learned:** the second syllable is a schwa.\n**Say it:** in-DIJ-e-nus, tap the syllables, then write from memory after air-writing.\n**Watch:** capital I when naming Indigenous peoples." },
-          { "word": "ceremony", "unfair": "mon", "notes": "**Why learned:** the third syllable hides as a schwa - cer-e-MO-ny buries the o sound.\n**Say it:** SE-re-mo-nee, four syllables.\n**Link:** we wrote this word in Monday's dictation - who remembers the sentence?" }
+          {
+            "word": "indigenous",
+            "unfair": "e",
+            "notes": "**Why learned:** the second syllable is a schwa.\n**Say it:** in-DIJ-e-nus, tap the syllables, then write from memory after air-writing.\n**Watch:** capital I when naming Indigenous peoples."
+          },
+          {
+            "word": "ceremony",
+            "unfair": "mon",
+            "notes": "**Why learned:** the third syllable hides as a schwa - cer-e-MO-ny buries the o sound.\n**Say it:** SE-re-mo-nee, four syllables.\n**Link:** we wrote this word in Monday's dictation - who remembers the sentence?"
+          }
         ]
       },
       "dictation": [
-        { "sentence": "An ordinary pedestrian cannot ignore a flexible cyclist.",
-          "targets": ["ordinary", "pedestrian", "flexible", "cyclist"],
-          "cups": { "capitals": ["An"], "punctuation": ["full stop"] },
-          "focus": "single clause; every target from this week's review" },
-        { "sentence": "The captain repeated the order: \"Stay orderly, stay sensible, and look after our heritage.\"",
-          "targets": ["captain", "order", "orderly", "sensible", "heritage"],
-          "cups": { "capitals": ["The", "Stay"], "punctuation": ["colon", "opening quotation mark", "comma x2", "closing quotation mark", "full stop inside the quote"] },
-          "focus": "colon, quotation marks, commas in a list" }
+        {
+          "sentence": "An ordinary pedestrian cannot ignore a flexible cyclist.",
+          "targets": [
+            "ordinary",
+            "pedestrian",
+            "flexible",
+            "cyclist"
+          ],
+          "cups": {
+            "capitals": [
+              "An"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "single clause; every target from this week's review"
+        },
+        {
+          "sentence": "The captain repeated the order: \"Stay orderly, stay sensible, and look after our heritage.\"",
+          "targets": [
+            "captain",
+            "order",
+            "orderly",
+            "sensible",
+            "heritage"
+          ],
+          "cups": {
+            "capitals": [
+              "The",
+              "Stay"
+            ],
+            "punctuation": [
+              "colon",
+              "opening quotation mark",
+              "comma x2",
+              "closing quotation mark",
+              "full stop inside the quote"
+            ]
+          },
+          "focus": "colon, quotation marks, commas in a list"
+        }
       ],
       "grammar": {
         "header_notes": "Week review finisher. Colons before a list - day 5: whole week in one fast round, exit ticket evidence for Monday's regroup.",

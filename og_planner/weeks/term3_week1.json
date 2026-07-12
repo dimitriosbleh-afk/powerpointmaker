@@ -3,74 +3,316 @@
   "week": 1,
   "cohort": "5/6 Composite",
   "unit_folder": "OG_Term3_Week1",
-  "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
   "overview": {
-    "Monday":    { "morphology": ["New Morphology", "mal-"], "grammar": "Prepositions and prepositional phrases", "learned_words": ["New learned word", "muscle"] },
-    "Tuesday":   { "morphology": ["New Morphology", "-ery"], "grammar": "Prepositions and prepositional phrases", "learned_words": ["New learned word", "tongue"] },
-    "Wednesday": { "morphology": ["New Morphology", "-ice"], "grammar": "Prepositions and prepositional phrases", "learned_words": ["Review learned words", "muscle, tongue"] },
-    "Thursday":  { "morphology": ["Week Review", "mal-, -ery, -ice"], "grammar": "Week Review", "learned_words": ["Review learned words", "muscle, tongue"] },
-    "Friday":    { "morphology": "No session this week", "grammar": "No session", "learned_words": "No session" }
+    "Monday": {
+      "morphology": [
+        "New Morphology",
+        "mal-"
+      ],
+      "grammar": "Prepositions and prepositional phrases",
+      "learned_words": [
+        "New learned word",
+        "muscle"
+      ]
+    },
+    "Tuesday": {
+      "morphology": [
+        "New Morphology",
+        "-ery"
+      ],
+      "grammar": "Prepositions and prepositional phrases",
+      "learned_words": [
+        "New learned word",
+        "tongue"
+      ]
+    },
+    "Wednesday": {
+      "morphology": [
+        "New Morphology",
+        "-ice"
+      ],
+      "grammar": "Prepositions and prepositional phrases",
+      "learned_words": [
+        "Review learned words",
+        "muscle, tongue"
+      ]
+    },
+    "Thursday": {
+      "morphology": [
+        "Week Review",
+        "mal-, -ery, -ice"
+      ],
+      "grammar": "Week Review",
+      "learned_words": [
+        "Review learned words",
+        "muscle, tongue"
+      ]
+    },
+    "Friday": {
+      "morphology": "No session this week",
+      "grammar": "No session",
+      "learned_words": "No session"
+    }
   },
   "sessions": [
     {
       "day": "Monday",
       "type": "new",
       "morphology_review": [
-        { "morph": "rect / reg", "type": "root", "keyword": "rectangle", "meaning": "straight, rule" },
-        { "morph": "-cy", "type": "suffix", "keyword": "infancy", "meaning": "state or quality", "derivative_ask": "who has a -cy word? EXPECT: infancy, literacy, privacy, agency." },
-        { "morph": "ped / pod", "type": "root", "keyword": "pedestrian", "meaning": "foot", "derivative_ask": "who has a ped/pod word? EXPECT: pedal, pedestrian, podium, tripod." },
-        { "morph": "-ar", "type": "suffix", "keyword": "solar", "meaning": "pertaining to" },
-        { "morph": "flect / flex", "type": "root", "keyword": "flexible", "meaning": "bend" },
-        { "morph": "-ine", "type": "suffix", "keyword": "medicine", "meaning": "unstressed ending that says /in/ or /uhn/" },
-        { "morph": "ord / ordin", "type": "root", "keyword": "coordinate", "meaning": "order", "derivative_ask": "who has an ord/ordin word? EXPECT: order, ordinary, coordinate, subordinate." },
-        { "morph": "clud(e) / clus(e)", "type": "root", "keyword": "include", "meaning": "close, shut" },
-        { "morph": "-ciate / -tiate", "type": "suffix", "keyword": "appreciate", "meaning": "ending that says /sh-ee-ate/ (the -ate part means to make or do)" },
-        { "morph": "capt / capit", "type": "root", "keyword": "captain", "meaning": "head, leader" }
+        {
+          "morph": "rect / reg",
+          "type": "root",
+          "keyword": "correct",
+          "meaning": "straight, rule"
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix",
+          "keyword": "infancy",
+          "meaning": "state or quality (as in infancy, privacy, agency)",
+          "derivative_ask": "who has a -cy word? EXPECT: infancy, literacy, privacy, agency."
+        },
+        {
+          "morph": "ped / pod",
+          "type": "root",
+          "keyword": "pedal",
+          "meaning": "foot",
+          "derivative_ask": "who has a ped/pod word? EXPECT: pedal, pedestrian, podium, tripod."
+        },
+        {
+          "morph": "-ar",
+          "type": "suffix",
+          "keyword": "solar",
+          "meaning": "pertaining to"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root",
+          "keyword": "reflex",
+          "meaning": "bend"
+        },
+        {
+          "morph": "-ine",
+          "type": "suffix",
+          "keyword": "medicine",
+          "meaning": "unstressed ending that says /in/ or /uhn/ (spelling pattern)"
+        },
+        {
+          "morph": "ord / ordin",
+          "type": "root",
+          "keyword": "coordinate",
+          "meaning": "order",
+          "derivative_ask": "who has an ord/ordin word? EXPECT: order, ordinary, coordinate, subordinate."
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root",
+          "keyword": "include",
+          "meaning": "close, shut"
+        },
+        {
+          "morph": "-ciate / -tiate",
+          "type": "suffix",
+          "keyword": "appreciate",
+          "meaning": "ending that says /sh-ee-ate/ (the -ate part means to make or do)"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root",
+          "keyword": "capture / captain",
+          "meaning": "hold, take OR leader, head"
+        }
       ],
       "words_to_read_review": {
-        "words": ["order", "include", "captain", "solar", "conclude", "reflect", "ordinary", "exclude", "pedestrian", "literacy", "coordinate", "rectangle", "recluse", "disorder", "captive"],
+        "words": [
+          "order",
+          "include",
+          "captain",
+          "solar",
+          "conclude",
+          "reflect",
+          "ordinary",
+          "exclude",
+          "pedestrian",
+          "literacy",
+          "coordinate",
+          "rectangle",
+          "recluse",
+          "disorder",
+          "captive"
+        ],
         "notes": "READ all rows together first. Today's split:\nGrade 5s - row 1\nGrade 6s - row 2\nWinter birthdays - row 3\nWearing runners - row 4\nEveryone - row 5\nPush speed on the second read - repetition builds orthographic mapping.\nASK: Which words carry the root ord/ordin (order)? Name a student to find them. EXPECT: order (things in their places), ordinary (in the usual order - normal), coordinate (to put in order together), disorder (order pulled apart - a mess).\nASK: Which words carry the root clud/clus (close, shut)? EXPECT: include (to shut in), exclude (to shut out), conclude (to close or end), recluse (someone shut away from others).\nASK: captain and captive share a root - what does capt/capit mean, and how do you see it? EXPECT: head or leader - a captain is the head person, a captive is one whose freedom has been captured.\nCHORAL to finish, whole class answers together: Antonym of include? EXPECT: exclude. Which word is a shape with four straight sides? EXPECT: rectangle. solar ends in -ar (pertaining to) - solar pertains to what? EXPECT: the sun. How do we make pedestrian plural? EXPECT: just add -s, pedestrians."
       },
       "sound_bank": [
-        { "morph": "ord / ordin", "type": "root" },
-        { "morph": "clud(e) / clus(e)", "type": "root" },
-        { "morph": "capt / capit", "type": "root" },
-        { "morph": "flect / flex", "type": "root" },
-        { "morph": "rect / reg", "type": "root" },
-        { "morph": "mal-", "type": "prefix" },
-        { "morph": "-cy", "type": "suffix" },
-        { "morph": "-ion", "type": "suffix" },
-        { "morph": "-ive", "type": "suffix" }
+        {
+          "morph": "ord / ordin",
+          "type": "root"
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-tion / -sion",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        }
       ],
       "words_to_spell_review": [
-        { "word": "reorder", "sentence": "Please reorder the books that fell off the shelf.", "prompt": "Two parts to name: what does re- do to the root ord?", "answer": "re- means again and ord means order: to put back into order again." },
-        { "word": "subordinate", "sentence": "A sergeant is subordinate to the captain.", "prompt": "sub- means under and ord means order - so where does a subordinate sit?", "answer": "under someone else in the order - lower in rank." },
-        { "word": "ordinance", "sentence": "The council passed a new ordinance about noise.", "prompt": "Which part of the word tells you it is about keeping order?", "answer": "ord means order: an ordinance is an official rule made to keep order." },
-        { "word": "seclude", "sentence": "The monks seclude themselves from the busy world.", "prompt": "clud means shut - so to seclude yourself is to do what?", "answer": "to shut yourself away from others." },
-        { "word": "exclusive", "sentence": "The club is exclusive, so not everyone can join.", "prompt": "Which root is hiding here, and what does it mean?", "answer": "clus means shut: exclusive means shutting others out - only some are let in." },
-        { "word": "conclusion", "sentence": "Write a strong conclusion at the end of your report.", "prompt": "con- means together and clus means close - what does a conclusion do?", "answer": "it closes the writing together at the end - the finish." },
-        { "word": "capital", "sentence": "Canberra is the capital city of Australia.", "prompt": "capit means head - why is a capital city like a head?", "answer": "it is the head city, where the country is led from." },
-        { "word": "deflect", "sentence": "The goalkeeper managed to deflect the shot.", "prompt": "flect means bend - what got bent away here?", "answer": "the ball - its path was bent away from the goal." },
-        { "word": "regulate", "sentence": "Traffic lights regulate the flow of cars.", "prompt": "reg means rule - so to regulate is to do what?", "answer": "to control something by rules." },
-        { "word": "privacy", "sentence": "Everyone deserves some privacy at home.", "prompt": "What state does the -cy ending name here?", "answer": "-cy makes it a state: the state of being private." }
+        {
+          "word": "reorder",
+          "sentence": "Please reorder the books that fell off the shelf.",
+          "prompt": "Two parts to name: what does re- do to the root ord?",
+          "answer": "re- means again and ord means order: to put back into order again."
+        },
+        {
+          "word": "subordinate",
+          "sentence": "A sergeant is subordinate to the captain.",
+          "prompt": "sub- means under and ord means order - so where does a subordinate sit?",
+          "answer": "under someone else in the order - lower in rank."
+        },
+        {
+          "word": "ordinance",
+          "sentence": "The council passed a new ordinance about noise.",
+          "prompt": "Which part of the word tells you it is about keeping order?",
+          "answer": "ord means order: an ordinance is an official rule made to keep order."
+        },
+        {
+          "word": "seclude",
+          "sentence": "The monks seclude themselves from the busy world.",
+          "prompt": "clud means shut - so to seclude yourself is to do what?",
+          "answer": "to shut yourself away from others."
+        },
+        {
+          "word": "exclusive",
+          "sentence": "The club is exclusive, so not everyone can join.",
+          "prompt": "Which root is hiding here, and what does it mean?",
+          "answer": "clus means shut: exclusive means shutting others out - only some are let in."
+        },
+        {
+          "word": "conclusion",
+          "sentence": "Write a strong conclusion at the end of your report.",
+          "prompt": "con- means together and clus means close - what does a conclusion do?",
+          "answer": "it closes the writing together at the end - the finish."
+        },
+        {
+          "word": "capital",
+          "sentence": "Canberra is the capital city of Australia.",
+          "prompt": "capit means head - why is a capital city like a head?",
+          "answer": "it is the head city, where the country is led from."
+        },
+        {
+          "word": "deflect",
+          "sentence": "The goalkeeper managed to deflect the shot.",
+          "prompt": "flect means bend - what got bent away here?",
+          "answer": "the ball - its path was bent away from the goal."
+        },
+        {
+          "word": "regulate",
+          "sentence": "Traffic lights regulate the flow of cars.",
+          "prompt": "reg means rule - so to regulate is to do what?",
+          "answer": "to control something by rules."
+        },
+        {
+          "word": "privacy",
+          "sentence": "Everyone deserves some privacy at home.",
+          "prompt": "What state does the -cy ending name here?",
+          "answer": "-cy makes it a state: the state of being private."
+        }
       ],
-      "new_morphology": { "morph": "mal-", "type": "prefix", "keyword": "malfunction", "meaning": "bad, wrong, poorly" },
+      "new_morphology": {
+        "morph": "mal-",
+        "type": "prefix",
+        "keyword": "malfunction",
+        "meaning": "bad, wrong, poorly"
+      },
       "words_to_read_new": [
-        { "word": "malfunction", "meaning": "mal- means bad + function means to work: to work badly" },
-        { "word": "malnutrition", "meaning": "mal- means bad + nutrition means feeding: bad or poor feeding" },
-        { "word": "malformed", "meaning": "mal- means badly + formed means shaped: badly shaped" },
-        { "word": "malpractice", "meaning": "mal- means bad or wrong + practice: bad or wrong professional work" },
-        { "word": "maltreat", "meaning": "mal- means badly + treat: to treat someone badly" },
-        { "word": "malnourished", "meaning": "mal- means poorly + nourished means fed: poorly fed" },
-        { "word": "malevolence", "meaning": "mal- means bad + -volence means wishing: bad feelings, wishing harm" },
-        { "word": "maladjusted", "meaning": "mal- means badly + adjusted means fitted in: badly fitted in" },
-        { "word": "malice", "meaning": "mal- means bad + -ice means the state of: the state of wanting to do bad" },
-        { "word": "malcontent", "meaning": "mal- means badly + content means satisfied: a person who is never satisfied" },
-        { "word": "maladroit", "meaning": "mal- means poorly + adroit means skilful: not skilful, clumsy" },
-        { "word": "malware", "meaning": "mal- means bad + ware means software: bad software that harms a computer" }
+        {
+          "word": "malfunction",
+          "meaning": "mal- means bad + function means to work: to work badly"
+        },
+        {
+          "word": "malnutrition",
+          "meaning": "mal- means bad + nutrition means feeding: bad or poor feeding"
+        },
+        {
+          "word": "malformed",
+          "meaning": "mal- means badly + formed means shaped: badly shaped"
+        },
+        {
+          "word": "malpractice",
+          "meaning": "mal- means bad or wrong + practice: bad or wrong professional work"
+        },
+        {
+          "word": "maltreat",
+          "meaning": "mal- means badly + treat: to treat someone badly"
+        },
+        {
+          "word": "malnourished",
+          "meaning": "mal- means poorly + nourished means fed: poorly fed"
+        },
+        {
+          "word": "malevolence",
+          "meaning": "mal- means bad + -volence means wishing: bad feelings, wishing harm"
+        },
+        {
+          "word": "maladjusted",
+          "meaning": "mal- means badly + adjusted means fitted in: badly fitted in"
+        },
+        {
+          "word": "malice",
+          "meaning": "mal- means bad + -ice means the state of: the state of wanting to do bad"
+        },
+        {
+          "word": "malcontent",
+          "meaning": "mal- means badly + content means satisfied: a person who is never satisfied"
+        },
+        {
+          "word": "maladroit",
+          "meaning": "mal- means poorly + adroit means skilful: not skilful, clumsy"
+        },
+        {
+          "word": "malware",
+          "meaning": "mal- means bad + ware means software: bad software that harms a computer"
+        }
       ],
       "wtr_new_notes": "Teacher script - read each line aloud as the word appears. Name every part, then fuse the parts into the meaning, the way sub (beneath) + marine (water) fuses into a vessel beneath the water.\n**malfunction** - mal- means bad + function means to work: something that works badly. A breakdown!\n**malnutrition** - mal- means bad + nutrition means feeding: bad or poor feeding, not enough good food.\n**malformed** - mal- means badly + formed means shaped: shaped badly, not the way it should be.\n**malpractice** - mal- means wrong + practice means professional work: wrong or careless work by a doctor or lawyer.\n**maltreat** - mal- means badly + treat: to treat a person or animal badly.\n**malnourished** - mal- means poorly + nourished means fed: poorly fed, not getting the food the body needs.\n**malevolence** - mal- means bad + -volence means wishing: bad will, wishing harm on someone.\n**maladjusted** - mal- means badly + adjusted means fitted in: badly fitted in, struggling to cope.\n**malice** - mal- means bad + -ice means the state of: the state of wanting to do harm. Ill will. (You will meet -ice again on Wednesday!)\n**malcontent** - mal- means badly + content means satisfied: someone who is badly satisfied, never happy.\n**maladroit** - mal- means poorly + adroit means skilful: not skilful at all, clumsy.\n**malware** - mal- means bad + ware means software: bad software made to harm your computer.\n**Memory hook:** hear MAL, think BAD NEWS. Every mal word is something gone bad - a malfunction is a bad function, malnutrition is bad feeding. Students say MAL means bad, then whisper it to a partner.",
-      "words_to_spell_new": ["maltreat", "malformed", "malfunction", "malcontent"],
+      "words_to_spell_new": [
+        "maltreat",
+        "malformed",
+        "malfunction",
+        "malcontent"
+      ],
       "extension": "Once finished, add a suffix you know to one of your spelling words to make it longer, then explain the new meaning (malfunction -> malfunctioning). Stretch: use two different mal- words in one sentence that shows both bad meanings.",
       "new_morph_activity": {
         "title": "Morpheme sums for mal-",
@@ -86,20 +328,61 @@
       },
       "learned_words": {
         "review": [
-          { "word": "colonial", "unfair": "o", "notes": "**Why learned:** the first o is a schwa - it says /uh/ not /o/ (cuh-LOH-nee-uhl), and the -ial ending says /ee-uhl/.\n**Say it:** cuh-LOH-nee-uhl, four beats, tap them out.\n**Link:** from our First Nations inquiry - colonial times and the effects of colonisation." },
-          { "word": "commemorate", "unfair": "mm", "notes": "**Why learned:** two m's sit together and are easy to drop one, and the vowels blur to schwa (cuh-MEM-uh-rayt).\n**Say it:** cuh-MEM-oh-rate, four beats, tap the double m.\n**Link:** we commemorate events from our inquiry - to remember them together." }
+          {
+            "word": "colonial",
+            "unfair": "o",
+            "notes": "**Why learned:** the first o is a schwa - it says /uh/ not /o/ (cuh-LOH-nee-uhl), and the -ial ending says /ee-uhl/.\n**Say it:** cuh-LOH-nee-uhl, four beats, tap them out.\n**Link:** from our First Nations inquiry - colonial times and the effects of colonisation."
+          },
+          {
+            "word": "commemorate",
+            "unfair": "mm",
+            "notes": "**Why learned:** two m's sit together and are easy to drop one, and the vowels blur to schwa (cuh-MEM-uh-rayt).\n**Say it:** cuh-MEM-oh-rate, four beats, tap the double m.\n**Link:** we commemorate events from our inquiry - to remember them together."
+          }
         ],
-        "new": { "word": "muscle", "unfair": "c", "notes": "**Why learned:** the c is silent. Muscle sounds like MUS-uhl, so the s and c together just spell /s/ and the c hides - that breaks the patterns we have learned.\n**Say it:** MUS-uhl, two beats. Same silent c in scissors and scene.\n**Link:** a body word you will use in science and health when we talk about how the body moves." }
+        "new": {
+          "word": "muscle",
+          "unfair": "c",
+          "notes": "**Why learned:** the c is silent. Muscle sounds like MUS-uhl, so the s and c together just spell /s/ and the c hides - that breaks the patterns we have learned.\n**Say it:** MUS-uhl, two beats. Same silent c in scissors and scene.\n**Link:** a body word you will use in science and health when we talk about how the body moves."
+        }
       },
       "dictation": [
-        { "sentence": "The captain gave a calm order before the long march.",
-          "targets": ["captain", "order"],
-          "cups": { "capitals": ["The"], "punctuation": ["full stop"] },
-          "focus": "one preposition (before) opening a phrase; two review targets" },
-        { "sentence": "Before the final game, the coach gave one clear order: \"Protect that injured muscle!\"",
-          "targets": ["order", "muscle"],
-          "cups": { "capitals": ["Before", "Protect"], "punctuation": ["comma after opening phrase", "colon", "opening quotation mark", "closing quotation mark", "exclamation mark"] },
-          "focus": "comma after an opening prepositional phrase, colon, quoted command" }
+        {
+          "sentence": "The captain gave a calm order before the long march.",
+          "targets": [
+            "captain",
+            "order"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "one preposition (before) opening a phrase; two review targets"
+        },
+        {
+          "sentence": "Before the final game, the coach gave one clear order: \"Protect that injured muscle!\"",
+          "targets": [
+            "order",
+            "muscle"
+          ],
+          "cups": {
+            "capitals": [
+              "Before",
+              "Protect"
+            ],
+            "punctuation": [
+              "comma after opening phrase",
+              "colon",
+              "opening quotation mark",
+              "closing quotation mark",
+              "exclamation mark"
+            ]
+          },
+          "focus": "comma after an opening prepositional phrase, colon, quoted command"
+        }
       ],
       "grammar": {
         "header_notes": "Five-minute finisher. Prepositions and prepositional phrases - day 1: what a preposition is. Whiteboards out before the I do.",
@@ -144,61 +427,253 @@
       "day": "Tuesday",
       "type": "new",
       "morphology_review": [
-        { "morph": "clud(e) / clus(e)", "type": "root", "keyword": "include", "meaning": "close, shut" },
-        { "morph": "mal-", "type": "prefix", "keyword": "malfunction", "meaning": "bad, wrong, poorly", "derivative_ask": "who remembers a word from yesterday's new prefix mal-? EXPECT: malfunction, malformed, maltreat, malware." },
-        { "morph": "-ciate / -tiate", "type": "suffix", "keyword": "appreciate", "meaning": "ending that says /sh-ee-ate/ (the -ate part means to make or do)" },
-        { "morph": "capt / capit", "type": "root", "keyword": "captain", "meaning": "head, leader", "derivative_ask": "who has a capt/capit word? EXPECT: captain, capital, capture, caption." },
-        { "morph": "-cy", "type": "suffix", "keyword": "infancy", "meaning": "state or quality" },
-        { "morph": "rect / reg", "type": "root", "keyword": "rectangle", "meaning": "straight, rule" },
-        { "morph": "-ine", "type": "suffix", "keyword": "medicine", "meaning": "unstressed ending that says /in/ or /uhn/" },
-        { "morph": "flect / flex", "type": "root", "keyword": "flexible", "meaning": "bend", "derivative_ask": "who has a flect/flex word? EXPECT: reflect, deflect, flexible, reflection." },
-        { "morph": "ord / ordin", "type": "root", "keyword": "coordinate", "meaning": "order" },
-        { "morph": "ped / pod", "type": "root", "keyword": "pedestrian", "meaning": "foot" }
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root",
+          "keyword": "include",
+          "meaning": "close, shut"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, poorly",
+          "derivative_ask": "who remembers a word from yesterday's new prefix mal-? EXPECT: malfunction, malformed, maltreat, malware."
+        },
+        {
+          "morph": "-ciate / -tiate",
+          "type": "suffix",
+          "keyword": "appreciate",
+          "meaning": "ending that says /sh-ee-ate/ (the -ate part means to make or do)"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root",
+          "keyword": "capture / captain",
+          "meaning": "hold, take OR leader, head",
+          "derivative_ask": "who has a capt/capit word? EXPECT: captain, capital, capture, caption."
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix",
+          "keyword": "infancy",
+          "meaning": "state or quality (as in infancy, privacy, agency)"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root",
+          "keyword": "correct",
+          "meaning": "straight, rule"
+        },
+        {
+          "morph": "-ine",
+          "type": "suffix",
+          "keyword": "medicine",
+          "meaning": "unstressed ending that says /in/ or /uhn/ (spelling pattern)"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root",
+          "keyword": "reflex",
+          "meaning": "bend",
+          "derivative_ask": "who has a flect/flex word? EXPECT: reflect, deflect, flexible, reflection."
+        },
+        {
+          "morph": "ord / ordin",
+          "type": "root",
+          "keyword": "coordinate",
+          "meaning": "order"
+        },
+        {
+          "morph": "ped / pod",
+          "type": "root",
+          "keyword": "pedal",
+          "meaning": "foot"
+        }
       ],
       "words_to_read_review": {
-        "words": ["malpractice", "preclude", "caption", "popular", "extraordinary", "reflection", "seclusion", "podium", "ordain", "agency", "inclusive", "direction", "recapture", "coordination", "malware"],
+        "words": [
+          "malpractice",
+          "preclude",
+          "caption",
+          "popular",
+          "extraordinary",
+          "reflection",
+          "seclusion",
+          "podium",
+          "ordain",
+          "agency",
+          "inclusive",
+          "direction",
+          "recapture",
+          "coordination",
+          "malware"
+        ],
         "notes": "READ all rows together first. Today's split:\nLeft-handers - row 1\nBorn January to June - row 2\nRight-handers - row 3\nBorn July to December - row 4\nEveryone, at speed - row 5\nPush speed on the second read - repetition builds orthographic mapping.\nASK: Which words carry the root ord/ordin (order)? Name a student to find them. EXPECT: extraordinary (beyond the usual order - amazing), ordain (to place someone officially into the order), coordination (parts working in order together).\nASK: Which words carry yesterday's prefix mal- (bad)? EXPECT: malpractice (wrong or careless professional work), malware (bad software that harms a computer).\nASK: Which words carry the root clud/clus (close, shut)? EXPECT: preclude (to shut out beforehand - to prevent), seclusion (the state of being shut away), inclusive (shutting everyone in - including all).\nCHORAL to finish, whole class answers together: Antonym of inclusive? EXPECT: exclusive. popular ends in -ar (pertaining to) - popular means liked by? EXPECT: many people. Which word might a photographer write under a photo? EXPECT: caption. How do we make podium plural? EXPECT: just add -s, podiums."
       },
       "sound_bank": [
-        { "morph": "ord / ordin", "type": "root" },
-        { "morph": "clud(e) / clus(e)", "type": "root" },
-        { "morph": "capt / capit", "type": "root" },
-        { "morph": "flect / flex", "type": "root" },
-        { "morph": "rect / reg", "type": "root" },
-        { "morph": "mal-", "type": "prefix" },
-        { "morph": "-ery", "type": "suffix" },
-        { "morph": "-cy", "type": "suffix" },
-        { "morph": "-ion", "type": "suffix" }
+        {
+          "morph": "ord / ordin",
+          "type": "root"
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-tion / -sion",
+          "type": "suffix"
+        }
       ],
       "words_to_spell_review": [
-        { "word": "ordinal", "sentence": "First, second and third are ordinal numbers.", "prompt": "Which part of the word tells you it is about order?", "answer": "ordin means order: ordinal numbers show the order - 1st, 2nd, 3rd." },
-        { "word": "insubordinate", "sentence": "The insubordinate soldier refused a direct command.", "prompt": "Three parts: in- not, sub- under, ord order - put them together.", "answer": "refusing to sit under your place in the order - disobedient." },
-        { "word": "exclusion", "sentence": "His exclusion from the team upset him.", "prompt": "clus means shut - what does exclusion mean?", "answer": "being shut out or left out." },
-        { "word": "inclusion", "sentence": "Our school values the inclusion of every student.", "prompt": "in- means in and clus means shut - so inclusion is?", "answer": "shutting everyone in - making sure all are part of it." },
-        { "word": "captor", "sentence": "The captor demanded a ransom.", "prompt": "capt means seize or take - who is a captor?", "answer": "the one who has captured or taken someone." },
-        { "word": "flexible", "sentence": "Gymnasts stay flexible by stretching daily.", "prompt": "flex means bend - what does -ible add?", "answer": "-ible means able to: able to bend." },
-        { "word": "rectify", "sentence": "Please rectify the mistake before we print.", "prompt": "rect means straight - how does that give us the meaning fix?", "answer": "to rectify is to make the crooked thing straight again - to fix it." },
-        { "word": "fluency", "sentence": "Daily reading builds fluency.", "prompt": "What state does the -cy ending name?", "answer": "-cy makes it a state: the state of being fluent - smooth and easy." },
-        { "word": "malnutrition", "sentence": "Poor diets can lead to malnutrition.", "prompt": "Which part of the word tells you the feeding is bad?", "answer": "mal- means bad: bad or poor feeding." },
-        { "word": "maladjusted", "sentence": "The new dog seemed maladjusted and anxious.", "prompt": "mal- means badly - adjusted to what?", "answer": "badly adjusted, struggling to fit in or cope." }
+        {
+          "word": "ordinal",
+          "sentence": "First, second and third are ordinal numbers.",
+          "prompt": "Which part of the word tells you it is about order?",
+          "answer": "ordin means order: ordinal numbers show the order - 1st, 2nd, 3rd."
+        },
+        {
+          "word": "insubordinate",
+          "sentence": "The insubordinate soldier refused a direct command.",
+          "prompt": "Three parts: in- not, sub- under, ord order - put them together.",
+          "answer": "refusing to sit under your place in the order - disobedient."
+        },
+        {
+          "word": "exclusion",
+          "sentence": "His exclusion from the team upset him.",
+          "prompt": "clus means shut - what does exclusion mean?",
+          "answer": "being shut out or left out."
+        },
+        {
+          "word": "inclusion",
+          "sentence": "Our school values the inclusion of every student.",
+          "prompt": "in- means in and clus means shut - so inclusion is?",
+          "answer": "shutting everyone in - making sure all are part of it."
+        },
+        {
+          "word": "captor",
+          "sentence": "The captor demanded a ransom.",
+          "prompt": "capt means seize or take - who is a captor?",
+          "answer": "the one who has captured or taken someone."
+        },
+        {
+          "word": "flexible",
+          "sentence": "Gymnasts stay flexible by stretching daily.",
+          "prompt": "flex means bend - what does -ible add?",
+          "answer": "-ible means able to: able to bend."
+        },
+        {
+          "word": "rectify",
+          "sentence": "Please rectify the mistake before we print.",
+          "prompt": "rect means straight - how does that give us the meaning fix?",
+          "answer": "to rectify is to make the crooked thing straight again - to fix it."
+        },
+        {
+          "word": "fluency",
+          "sentence": "Daily reading builds fluency.",
+          "prompt": "What state does the -cy ending name?",
+          "answer": "-cy makes it a state: the state of being fluent - smooth and easy."
+        },
+        {
+          "word": "malnutrition",
+          "sentence": "Poor diets can lead to malnutrition.",
+          "prompt": "Which part of the word tells you the feeding is bad?",
+          "answer": "mal- means bad: bad or poor feeding."
+        },
+        {
+          "word": "maladjusted",
+          "sentence": "The new dog seemed maladjusted and anxious.",
+          "prompt": "mal- means badly - adjusted to what?",
+          "answer": "badly adjusted, struggling to fit in or cope."
+        }
       ],
-      "new_morphology": { "morph": "-ery", "type": "suffix", "keyword": "bravery", "meaning": "the state, quality, or act of (makes nouns)" },
+      "new_morphology": {
+        "morph": "-ery",
+        "type": "suffix",
+        "keyword": "bravery",
+        "meaning": "the state, quality, or act of (makes nouns)"
+      },
       "words_to_read_new": [
-        { "word": "bravery", "meaning": "brave + -ery means the state of: the state of being brave - courage" },
-        { "word": "robbery", "meaning": "rob + -ery means the act of: the act of robbing" },
-        { "word": "mockery", "meaning": "mock + -ery means the act of: the act of mocking - making fun" },
-        { "word": "treachery", "meaning": "treach + -ery means the act of: the act of betraying trust" },
-        { "word": "flattery", "meaning": "flatter + -ery means the act of: insincere praise to please someone" },
-        { "word": "forgery", "meaning": "forge + -ery means the act of: making a fake copy" },
-        { "word": "bribery", "meaning": "bribe + -ery means the act of: paying someone to do wrong" },
-        { "word": "drudgery", "meaning": "drudge + -ery means the state of: dull, hard, boring work" },
-        { "word": "slavery", "meaning": "slave + -ery means the state of: the state of being a slave" },
-        { "word": "scenery", "meaning": "scene + -ery means a collection of: all the views around you" },
-        { "word": "machinery", "meaning": "machine + -ery means a collection of: a group of machines working together" },
-        { "word": "refinery", "meaning": "refine + -ery means a place for: a place where things are refined" }
+        {
+          "word": "bravery",
+          "meaning": "brave + -ery means the state of: the state of being brave - courage"
+        },
+        {
+          "word": "robbery",
+          "meaning": "rob + -ery means the act of: the act of robbing"
+        },
+        {
+          "word": "mockery",
+          "meaning": "mock + -ery means the act of: the act of mocking - making fun"
+        },
+        {
+          "word": "treachery",
+          "meaning": "treach + -ery means the act of: the act of betraying trust"
+        },
+        {
+          "word": "flattery",
+          "meaning": "flatter + -ery means the act of: insincere praise to please someone"
+        },
+        {
+          "word": "forgery",
+          "meaning": "forge + -ery means the act of: making a fake copy"
+        },
+        {
+          "word": "bribery",
+          "meaning": "bribe + -ery means the act of: paying someone to do wrong"
+        },
+        {
+          "word": "drudgery",
+          "meaning": "drudge + -ery means the state of: dull, hard, boring work"
+        },
+        {
+          "word": "slavery",
+          "meaning": "slave + -ery means the state of: the state of being a slave"
+        },
+        {
+          "word": "scenery",
+          "meaning": "scene + -ery means a collection of: all the views around you"
+        },
+        {
+          "word": "machinery",
+          "meaning": "machine + -ery means a collection of: a group of machines working together"
+        },
+        {
+          "word": "refinery",
+          "meaning": "refine + -ery means a place for: a place where things are refined"
+        }
       ],
       "wtr_new_notes": "Teacher script - read each line aloud as the word appears. Name every part, then fuse the parts into the meaning, the way sub (beneath) + marine (water) fuses into a vessel beneath the water. -ery turns an action or a quality into a thing you can name.\n**bravery** - brave + -ery means the state of: the state of being brave. Courage!\n**robbery** - rob + -ery means the act of: the act of robbing someone.\n**mockery** - mock + -ery means the act of: the act of mocking, making fun of someone.\n**treachery** - treach + -ery means the act of: the act of betraying someone who trusted you.\n**flattery** - flatter + -ery means the act of: praising someone too much just to please them.\n**forgery** - forge + -ery means the act of: making a fake copy to trick people.\n**bribery** - bribe + -ery means the act of: paying someone to do something wrong.\n**drudgery** - drudge + -ery means the state of: dull, hard, boring work that never ends.\n**slavery** - slave + -ery means the state of: the cruel state of being owned as a slave.\n**scenery** - scene + -ery means a collection of: all the scenes and views around you.\n**machinery** - machine + -ery means a collection of: many machines working together.\n**refinery** - refine + -ery means a place for: a place where oil or metal is refined.\n**Memory hook:** -ery turns an action or a quality into a thing you can name. Brave becomes bravery, rob becomes robbery. Chant with me: add -ery, name the quality. Students say it, then whisper it to a partner.",
-      "words_to_spell_new": ["bravery", "robbery", "bribery", "forgery"],
+      "words_to_spell_new": [
+        "bravery",
+        "robbery",
+        "bribery",
+        "forgery"
+      ],
       "extension": "Once finished, turn one -ery word into a sentence that SHOWS its meaning, not just uses it. Reminder: showing the meaning means a reader could guess the word from your sentence. Stretch: join two ideas with a subordinate clause - one that starts with because, although or while and cannot stand alone.",
       "new_morph_activity": {
         "title": "Build an -ery word",
@@ -214,20 +689,61 @@
       },
       "learned_words": {
         "review": [
-          { "word": "muscle", "unfair": "c", "notes": "**Why learned:** the c is silent - MUS-uhl. The s and c together just spell /s/ and the c hides.\n**Say it:** MUS-uhl, two beats, remember the hidden c.\n**Quick link:** body word for our science and health talk." },
-          { "word": "colonial", "unfair": "o", "notes": "**Why learned:** the first o is a schwa (/uh/) and -ial says /ee-uhl/.\n**Say it:** cuh-LOH-nee-uhl, four beats.\n**Quick link:** colonial times, from our First Nations inquiry." }
+          {
+            "word": "muscle",
+            "unfair": "c",
+            "notes": "**Why learned:** the c is silent - MUS-uhl. The s and c together just spell /s/ and the c hides.\n**Say it:** MUS-uhl, two beats, remember the hidden c.\n**Quick link:** body word for our science and health talk."
+          },
+          {
+            "word": "colonial",
+            "unfair": "o",
+            "notes": "**Why learned:** the first o is a schwa (/uh/) and -ial says /ee-uhl/.\n**Say it:** cuh-LOH-nee-uhl, four beats.\n**Quick link:** colonial times, from our First Nations inquiry."
+          }
         ],
-        "new": { "word": "tongue", "unfair": "ongue", "notes": "**Why learned:** two tricks in one - the o says /u/ (like tung), and the -ue at the end is silent, so -gue just says /g/.\n**Say it:** TUNG, one beat. Picture it as t + ongue. Same silent -ue in league and vague.\n**Link:** another body word for our science and health talk - the muscle you taste and talk with." }
+        "new": {
+          "word": "tongue",
+          "unfair": "ongue",
+          "notes": "**Why learned:** two tricks in one - the o says /u/ (like tung), and the -ue at the end is silent, so -gue just says /g/.\n**Say it:** TUNG, one beat. Picture it as t + ongue. Same silent -ue in league and vague.\n**Link:** another body word for our science and health talk - the muscle you taste and talk with."
+        }
       },
       "dictation": [
-        { "sentence": "Her quiet bravery during the robbery amazed the whole town.",
-          "targets": ["bravery", "robbery"],
-          "cups": { "capitals": ["Her"], "punctuation": ["full stop"] },
-          "focus": "a preposition (during) opening a phrase; two -ery targets" },
-        { "sentence": "Before the vote, the elder gave one warning: \"Hold your tongue and show real bravery.\"",
-          "targets": ["tongue", "bravery"],
-          "cups": { "capitals": ["Before", "Hold"], "punctuation": ["comma after opening phrase", "colon", "opening quotation mark", "closing quotation mark", "full stop inside the quote"] },
-          "focus": "comma after an opening prepositional phrase, colon, quoted speech" }
+        {
+          "sentence": "Her quiet bravery during the robbery amazed the whole town.",
+          "targets": [
+            "bravery",
+            "robbery"
+          ],
+          "cups": {
+            "capitals": [
+              "Her"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "a preposition (during) opening a phrase; two -ery targets"
+        },
+        {
+          "sentence": "Before the vote, the elder gave one warning: \"Hold your tongue and show real bravery.\"",
+          "targets": [
+            "tongue",
+            "bravery"
+          ],
+          "cups": {
+            "capitals": [
+              "Before",
+              "Hold"
+            ],
+            "punctuation": [
+              "comma after opening phrase",
+              "colon",
+              "opening quotation mark",
+              "closing quotation mark",
+              "full stop inside the quote"
+            ]
+          },
+          "focus": "comma after an opening prepositional phrase, colon, quoted speech"
+        }
       ],
       "grammar": {
         "header_notes": "Five-minute finisher. Prepositions and prepositional phrases - day 2: the whole phrase. Rule restated in the I do so anyone away yesterday still succeeds.",
@@ -272,61 +788,253 @@
       "day": "Wednesday",
       "type": "new",
       "morphology_review": [
-        { "morph": "-ine", "type": "suffix", "keyword": "medicine", "meaning": "unstressed ending that says /in/ or /uhn/" },
-        { "morph": "-ery", "type": "suffix", "keyword": "bravery", "meaning": "the state, quality, or act of", "derivative_ask": "who remembers a word from yesterday's new suffix -ery? EXPECT: bravery, robbery, mockery, scenery." },
-        { "morph": "clud(e) / clus(e)", "type": "root", "keyword": "include", "meaning": "close, shut" },
-        { "morph": "-cy", "type": "suffix", "keyword": "infancy", "meaning": "state or quality" },
-        { "morph": "ped / pod", "type": "root", "keyword": "pedestrian", "meaning": "foot" },
-        { "morph": "capt / capit", "type": "root", "keyword": "captain", "meaning": "head, leader", "derivative_ask": "who has a capt/capit word? EXPECT: captain, capture, captive, caption." },
-        { "morph": "mal-", "type": "prefix", "keyword": "malfunction", "meaning": "bad, wrong, poorly" },
-        { "morph": "ord / ordin", "type": "root", "keyword": "coordinate", "meaning": "order" },
-        { "morph": "rect / reg", "type": "root", "keyword": "rectangle", "meaning": "straight, rule", "derivative_ask": "who has a rect/reg word? EXPECT: correct, direct, rectangle, regular." },
-        { "morph": "flect / flex", "type": "root", "keyword": "flexible", "meaning": "bend" }
+        {
+          "morph": "-ine",
+          "type": "suffix",
+          "keyword": "medicine",
+          "meaning": "unstressed ending that says /in/ or /uhn/ (spelling pattern)"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "bravery",
+          "meaning": "the state, quality, or act of (makes nouns)",
+          "derivative_ask": "who remembers a word from yesterday's new suffix -ery? EXPECT: bravery, robbery, mockery, scenery."
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root",
+          "keyword": "include",
+          "meaning": "close, shut"
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix",
+          "keyword": "infancy",
+          "meaning": "state or quality (as in infancy, privacy, agency)"
+        },
+        {
+          "morph": "ped / pod",
+          "type": "root",
+          "keyword": "pedal",
+          "meaning": "foot"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root",
+          "keyword": "capture / captain",
+          "meaning": "hold, take OR leader, head",
+          "derivative_ask": "who has a capt/capit word? EXPECT: captain, capture, captive, caption."
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, poorly"
+        },
+        {
+          "morph": "ord / ordin",
+          "type": "root",
+          "keyword": "coordinate",
+          "meaning": "order"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root",
+          "keyword": "correct",
+          "meaning": "straight, rule",
+          "derivative_ask": "who has a rect/reg word? EXPECT: correct, direct, rectangle, regular."
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root",
+          "keyword": "reflex",
+          "meaning": "bend"
+        }
       ],
       "words_to_read_review": {
-        "words": ["pedal", "malcontent", "include", "vacancy", "capture", "orderly", "scenery", "correct", "reclusive", "coordinate", "inflexible", "disorder", "counteract", "conclude", "captive"],
+        "words": [
+          "pedal",
+          "malcontent",
+          "include",
+          "vacancy",
+          "capture",
+          "orderly",
+          "scenery",
+          "correct",
+          "reclusive",
+          "coordinate",
+          "inflexible",
+          "disorder",
+          "counteract",
+          "conclude",
+          "captive"
+        ],
         "notes": "READ all rows together first. Today's split:\nName has a double letter - row 1\nWalked or rode to school - row 2\nHas a pet - row 3\nPlays a winter sport - row 4\nEveryone, at speed - row 5\nPush speed on the second read - repetition builds orthographic mapping.\nASK: Which words carry the root clud/clus (close, shut)? Name a student to find them. EXPECT: include (to shut in), conclude (to close or end), reclusive (living shut away from others).\nASK: Which word carries yesterday's suffix -ery, and what does it name? EXPECT: scenery - scene + -ery collects all the views around you into one noun.\nASK: Which word carries this week's prefix mal- (bad), and what kind of person is it? EXPECT: malcontent - a person who is badly satisfied, never happy.\nCHORAL to finish, whole class answers together: Antonym of include? EXPECT: exclude. correct starts with rect (straight) - to correct is to make it? EXPECT: straight or right again. counteract has counter- (against) - so to counteract is to act? EXPECT: against something. How do we make pedal plural? EXPECT: just add -s, pedals."
       },
       "sound_bank": [
-        { "morph": "ord / ordin", "type": "root" },
-        { "morph": "clud(e) / clus(e)", "type": "root" },
-        { "morph": "capt / capit", "type": "root" },
-        { "morph": "flect / flex", "type": "root" },
-        { "morph": "ped / pod", "type": "root" },
-        { "morph": "mal-", "type": "prefix" },
-        { "morph": "-cy", "type": "suffix" },
-        { "morph": "-ery", "type": "suffix" },
-        { "morph": "-ice", "type": "suffix" }
+        {
+          "morph": "ord / ordin",
+          "type": "root"
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root"
+        },
+        {
+          "morph": "ped / pod",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix"
+        }
       ],
       "words_to_spell_review": [
-        { "word": "reorder", "sentence": "We had to reorder the mixed-up pages.", "prompt": "re- means again and ord means order - so reorder is?", "answer": "to put back into order again." },
-        { "word": "ordinance", "sentence": "A new ordinance banned skating in the mall.", "prompt": "Which part of the word tells you it keeps order?", "answer": "ord means order: an official rule made to keep order." },
-        { "word": "seclude", "sentence": "Tall trees seclude the cabin from the road.", "prompt": "clud means shut - what does seclude do?", "answer": "it shuts the cabin away, hidden from view." },
-        { "word": "exclusive", "sentence": "The offer is exclusive to members.", "prompt": "clus means shut - who does exclusive shut out?", "answer": "everyone who is not a member - only some are let in." },
-        { "word": "capital", "sentence": "Every sentence starts with a capital letter.", "prompt": "capit means head - why is a capital letter well named?", "answer": "it stands at the head, the start of the sentence." },
-        { "word": "deflect", "sentence": "A shield can deflect an arrow.", "prompt": "flect means bend - what happens to the arrow?", "answer": "its path is bent away." },
-        { "word": "pedestal", "sentence": "The trophy sat on a tall pedestal.", "prompt": "Which root is hiding, and why does a pedestal relate to feet?", "answer": "ped means foot: the base where the statue's feet stand." },
-        { "word": "urgency", "sentence": "She spoke with real urgency.", "prompt": "What state does the -cy ending name?", "answer": "-cy makes it a state: the state of being urgent." },
-        { "word": "malnourished", "sentence": "The rescued puppy was thin and malnourished.", "prompt": "Which part tells you the feeding was poor?", "answer": "mal- means poorly: poorly fed." },
-        { "word": "mockery", "sentence": "His weak excuse made a mockery of the rules.", "prompt": "Which suffix names the act here, and what does it name?", "answer": "-ery names the act of mocking - making fun of something." }
+        {
+          "word": "reorder",
+          "sentence": "We had to reorder the mixed-up pages.",
+          "prompt": "re- means again and ord means order - so reorder is?",
+          "answer": "to put back into order again."
+        },
+        {
+          "word": "ordinance",
+          "sentence": "A new ordinance banned skating in the mall.",
+          "prompt": "Which part of the word tells you it keeps order?",
+          "answer": "ord means order: an official rule made to keep order."
+        },
+        {
+          "word": "seclude",
+          "sentence": "Tall trees seclude the cabin from the road.",
+          "prompt": "clud means shut - what does seclude do?",
+          "answer": "it shuts the cabin away, hidden from view."
+        },
+        {
+          "word": "exclusive",
+          "sentence": "The offer is exclusive to members.",
+          "prompt": "clus means shut - who does exclusive shut out?",
+          "answer": "everyone who is not a member - only some are let in."
+        },
+        {
+          "word": "capital",
+          "sentence": "Every sentence starts with a capital letter.",
+          "prompt": "capit means head - why is a capital letter well named?",
+          "answer": "it stands at the head, the start of the sentence."
+        },
+        {
+          "word": "deflect",
+          "sentence": "A shield can deflect an arrow.",
+          "prompt": "flect means bend - what happens to the arrow?",
+          "answer": "its path is bent away."
+        },
+        {
+          "word": "pedestal",
+          "sentence": "The trophy sat on a tall pedestal.",
+          "prompt": "Which root is hiding, and why does a pedestal relate to feet?",
+          "answer": "ped means foot: the base where the statue's feet stand."
+        },
+        {
+          "word": "urgency",
+          "sentence": "She spoke with real urgency.",
+          "prompt": "What state does the -cy ending name?",
+          "answer": "-cy makes it a state: the state of being urgent."
+        },
+        {
+          "word": "malnourished",
+          "sentence": "The rescued puppy was thin and malnourished.",
+          "prompt": "Which part tells you the feeding was poor?",
+          "answer": "mal- means poorly: poorly fed."
+        },
+        {
+          "word": "mockery",
+          "sentence": "His weak excuse made a mockery of the rules.",
+          "prompt": "Which suffix names the act here, and what does it name?",
+          "answer": "-ery names the act of mocking - making fun of something."
+        }
       ],
-      "new_morphology": { "morph": "-ice", "type": "suffix", "keyword": "justice", "meaning": "state or quality of" },
+      "new_morphology": {
+        "morph": "-ice",
+        "type": "suffix",
+        "keyword": "justice",
+        "meaning": "state or quality of"
+      },
       "words_to_read_new": [
-        { "word": "justice", "meaning": "just means fair + -ice means the state of: the state of being fair" },
-        { "word": "service", "meaning": "serv means to serve + -ice means the act of: the act of serving" },
-        { "word": "malice", "meaning": "mal- means bad + -ice means the state of: the state of wanting to do bad" },
-        { "word": "novice", "meaning": "nov means new + -ice means the state of: someone in the state of being new - a beginner" },
-        { "word": "cowardice", "meaning": "coward + -ice means the quality of: the quality of being a coward" },
-        { "word": "notice", "meaning": "not means to know + -ice: a sign that makes something known" },
-        { "word": "practice", "meaning": "-ice makes a noun: the doing of something again and again" },
-        { "word": "apprentice", "meaning": "-ice makes a noun: a learner in the state of being trained" },
-        { "word": "crevice", "meaning": "-ice makes a noun: a narrow crack" },
-        { "word": "hospice", "meaning": "-ice makes a noun: a place of care and rest" },
-        { "word": "precipice", "meaning": "-ice makes a noun: the edge of a steep cliff" },
-        { "word": "office", "meaning": "-ice makes a noun: a place where work is done" }
+        {
+          "word": "justice",
+          "meaning": "just means fair + -ice means the state of: the state of being fair"
+        },
+        {
+          "word": "service",
+          "meaning": "serv means to serve + -ice means the act of: the act of serving"
+        },
+        {
+          "word": "malice",
+          "meaning": "mal- means bad + -ice means the state of: the state of wanting to do bad"
+        },
+        {
+          "word": "novice",
+          "meaning": "nov means new + -ice means the state of: someone in the state of being new - a beginner"
+        },
+        {
+          "word": "cowardice",
+          "meaning": "coward + -ice means the quality of: the quality of being a coward"
+        },
+        {
+          "word": "notice",
+          "meaning": "not means to know + -ice: a sign that makes something known"
+        },
+        {
+          "word": "practice",
+          "meaning": "-ice makes a noun: the doing of something again and again"
+        },
+        {
+          "word": "apprentice",
+          "meaning": "-ice makes a noun: a learner in the state of being trained"
+        },
+        {
+          "word": "crevice",
+          "meaning": "-ice makes a noun: a narrow crack"
+        },
+        {
+          "word": "hospice",
+          "meaning": "-ice makes a noun: a place of care and rest"
+        },
+        {
+          "word": "precipice",
+          "meaning": "-ice makes a noun: the edge of a steep cliff"
+        },
+        {
+          "word": "office",
+          "meaning": "-ice makes a noun: a place where work is done"
+        }
       ],
       "wtr_new_notes": "Teacher script - read each line aloud as the word appears. Name every part, then fuse the parts into the meaning, the way sub (beneath) + marine (water) fuses into a vessel beneath the water. Watch the ending - -ice here says /iss/, not ice cream.\n**justice** - just means fair + -ice means the state of: the state of being fair and right.\n**service** - serv means to serve + -ice means the act of: the act or state of serving others.\n**malice** - mal- means bad + -ice means the state of: the state of wanting to do harm. Ill will. (There is Monday's mal- again!)\n**novice** - nov means new + -ice means the state of: someone in the state of being new. A beginner.\n**cowardice** - coward + -ice means the quality of: the quality of being a coward, having no courage.\n**notice** - not means to know + -ice: a sign that makes something known so people notice it.\n**practice** - -ice makes it a noun: the doing of a skill over and over.\n**apprentice** - -ice makes it a noun: a young learner in the state of being trained.\n**crevice** - -ice makes it a noun: a narrow crack in rock or a wall.\n**hospice** - -ice makes it a noun: a place that gives gentle care and rest.\n**precipice** - -ice makes it a noun: the edge of a steep and dangerous cliff.\n**office** - -ice makes it a noun: a place where work is done.\n**Memory hook:** hear -ice at the end saying /iss/ (not ice cream), think the state or quality of. Just becomes justice, coward becomes cowardice. Whisper the frame: the state of being ___.",
-      "words_to_spell_new": ["justice", "service", "notice", "novice"],
+      "words_to_spell_new": [
+        "justice",
+        "service",
+        "notice",
+        "novice"
+      ],
       "extension": "Once finished, find and record an antonym for one -ice word (justice -> injustice). Stretch: add a prefix to flip the meaning, then use both words in one sentence that makes the difference clear.",
       "new_morph_activity": {
         "title": "Show the meaning of -ice",
@@ -342,19 +1050,57 @@
       },
       "learned_words": {
         "review": [
-          { "word": "tongue", "unfair": "ongue", "notes": "**Why learned:** the o says /u/ (tung) and the -ue is silent, so -gue just says /g/.\n**Say it:** TUNG, one beat, t + ongue.\n**Quick link:** the muscle you taste and talk with - a science and health word." },
-          { "word": "muscle", "unfair": "c", "notes": "**Why learned:** silent c - MUS-uhl. The c hides between the s and the l.\n**Say it:** MUS-uhl, two beats.\n**Quick link:** a body word for our science and health talk." }
+          {
+            "word": "tongue",
+            "unfair": "ongue",
+            "notes": "**Why learned:** the o says /u/ (tung) and the -ue is silent, so -gue just says /g/.\n**Say it:** TUNG, one beat, t + ongue.\n**Quick link:** the muscle you taste and talk with - a science and health word."
+          },
+          {
+            "word": "muscle",
+            "unfair": "c",
+            "notes": "**Why learned:** silent c - MUS-uhl. The c hides between the s and the l.\n**Say it:** MUS-uhl, two beats.\n**Quick link:** a body word for our science and health talk."
+          }
         ]
       },
       "dictation": [
-        { "sentence": "The new novice showed great service during the busy match.",
-          "targets": ["novice", "service"],
-          "cups": { "capitals": ["The"], "punctuation": ["full stop"] },
-          "focus": "a preposition (during) opening a phrase; two -ice targets" },
-        { "sentence": "Before the final, the doctor gave one notice: \"Rest that torn muscle and hold your tongue.\"",
-          "targets": ["notice", "muscle", "tongue"],
-          "cups": { "capitals": ["Before", "Rest"], "punctuation": ["comma after opening phrase", "colon", "opening quotation mark", "closing quotation mark", "full stop inside the quote"] },
-          "focus": "comma after an opening prepositional phrase, colon, quoted speech; both learned words" }
+        {
+          "sentence": "The new novice showed great service during the busy match.",
+          "targets": [
+            "novice",
+            "service"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "a preposition (during) opening a phrase; two -ice targets"
+        },
+        {
+          "sentence": "Before the final, the doctor gave one notice: \"Rest that torn muscle and hold your tongue.\"",
+          "targets": [
+            "notice",
+            "muscle",
+            "tongue"
+          ],
+          "cups": {
+            "capitals": [
+              "Before",
+              "Rest"
+            ],
+            "punctuation": [
+              "comma after opening phrase",
+              "colon",
+              "opening quotation mark",
+              "closing quotation mark",
+              "full stop inside the quote"
+            ]
+          },
+          "focus": "comma after an opening prepositional phrase, colon, quoted speech; both learned words"
+        }
       ],
       "grammar": {
         "header_notes": "Five-minute finisher. Prepositions and prepositional phrases - day 3: more than one phrase. Rule restated in the I do so anyone away still succeeds.",
@@ -399,59 +1145,245 @@
       "day": "Thursday",
       "type": "week_review",
       "morphology_review": [
-        { "morph": "capt / capit", "type": "root", "keyword": "captain", "meaning": "head, leader" },
-        { "morph": "rect / reg", "type": "root", "keyword": "rectangle", "meaning": "straight, rule" },
-        { "morph": "-ery", "type": "suffix", "keyword": "bravery", "meaning": "the state, quality, or act of", "derivative_ask": "who has an -ery word from this week? EXPECT: bravery, robbery, mockery, treachery." },
-        { "morph": "ord / ordin", "type": "root", "keyword": "coordinate", "meaning": "order" },
-        { "morph": "-ine", "type": "suffix", "keyword": "medicine", "meaning": "unstressed ending that says /in/ or /uhn/" },
-        { "morph": "clud(e) / clus(e)", "type": "root", "keyword": "include", "meaning": "close, shut" },
-        { "morph": "-ice", "type": "suffix", "keyword": "justice", "meaning": "state or quality of", "derivative_ask": "who has an -ice word from this week? EXPECT: justice, service, malice, novice." },
-        { "morph": "ped / pod", "type": "root", "keyword": "pedestrian", "meaning": "foot" },
-        { "morph": "flect / flex", "type": "root", "keyword": "flexible", "meaning": "bend" },
-        { "morph": "mal-", "type": "prefix", "keyword": "malfunction", "meaning": "bad, wrong, poorly", "derivative_ask": "who has a mal- word from this week? EXPECT: malfunction, malformed, malice, malware." }
+        {
+          "morph": "capt / capit",
+          "type": "root",
+          "keyword": "capture / captain",
+          "meaning": "hold, take OR leader, head"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root",
+          "keyword": "correct",
+          "meaning": "straight, rule"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "bravery",
+          "meaning": "the state, quality, or act of (makes nouns)",
+          "derivative_ask": "who has an -ery word from this week? EXPECT: bravery, robbery, mockery, treachery."
+        },
+        {
+          "morph": "ord / ordin",
+          "type": "root",
+          "keyword": "coordinate",
+          "meaning": "order"
+        },
+        {
+          "morph": "-ine",
+          "type": "suffix",
+          "keyword": "medicine",
+          "meaning": "unstressed ending that says /in/ or /uhn/ (spelling pattern)"
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root",
+          "keyword": "include",
+          "meaning": "close, shut"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "justice",
+          "meaning": "state or quality of",
+          "derivative_ask": "who has an -ice word from this week? EXPECT: justice, service, malice, novice."
+        },
+        {
+          "morph": "ped / pod",
+          "type": "root",
+          "keyword": "pedal",
+          "meaning": "foot"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root",
+          "keyword": "reflex",
+          "meaning": "bend"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, poorly",
+          "derivative_ask": "who has a mal- word from this week? EXPECT: malfunction, malformed, malice, malware."
+        }
       ],
       "words_to_read_review": {
-        "words": ["captain", "malice", "ordinary", "treachery", "exclude", "singular", "bravery", "pedestrian", "conclusion", "malevolence", "frequency", "subordinate", "reflection", "cowardice", "regulate"],
+        "words": [
+          "captain",
+          "malice",
+          "ordinary",
+          "treachery",
+          "exclude",
+          "singular",
+          "bravery",
+          "pedestrian",
+          "conclusion",
+          "malevolence",
+          "frequency",
+          "subordinate",
+          "reflection",
+          "cowardice",
+          "regulate"
+        ],
         "notes": "READ all rows together first. Friday-style split for our week review:\nName contains the letter a - row 1\nBirthday in the last two months - row 2\nBoys - row 3\nGirls - row 4\nEveryone, race it - row 5\nFinal read of the week: smooth, fast, confident. Repetition builds orthographic mapping.\nASK: Which words carry this week's suffix -ery (a state or quality)? Name a student to find them. EXPECT: treachery (the act of betraying trust), bravery (the state of being brave).\nASK: Which words carry this week's suffix -ice (a state or quality of)? EXPECT: malice (the state of wanting to do bad), cowardice (the quality of being a coward).\nASK: Which word carries BOTH this week's prefix mal- and suffix -ice? EXPECT: malice - mal- (bad) + -ice (state of) - the state of wanting to do bad. malevolence also carries mal- (bad will).\nCHORAL to finish, whole class answers together: Antonym of bravery? EXPECT: cowardice. Antonym of exclude? EXPECT: include. singular ends in -ar (pertaining to) - singular means pertaining to? EXPECT: one, just one. How do we make pedestrian plural? EXPECT: just add -s, pedestrians."
       },
       "sound_bank": [
-        { "morph": "ord / ordin", "type": "root" },
-        { "morph": "clud(e) / clus(e)", "type": "root" },
-        { "morph": "flect / flex", "type": "root" },
-        { "morph": "rect / reg", "type": "root" },
-        { "morph": "mal-", "type": "prefix" },
-        { "morph": "-ery", "type": "suffix" },
-        { "morph": "-ice", "type": "suffix" },
-        { "morph": "-cy", "type": "suffix" },
-        { "morph": "-ar", "type": "suffix" }
+        {
+          "morph": "ord / ordin",
+          "type": "root"
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix"
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ar",
+          "type": "suffix"
+        }
       ],
       "words_to_spell_review": [
-        { "word": "maladroit", "sentence": "His maladroit catch dropped the ball again.", "prompt": "mal- means poorly - poorly what?", "answer": "poorly skilful, clumsy - not good with the hands." },
-        { "word": "drudgery", "sentence": "Washing every pot felt like endless drudgery.", "prompt": "Which suffix names this dull work, and what does it name?", "answer": "-ery names the state of dull, hard, boring work." },
-        { "word": "practice", "sentence": "Daily practice made her a strong reader.", "prompt": "Which ending makes practice a noun here?", "answer": "-ice makes the noun - the doing of a skill over and over." },
-        { "word": "apprentice", "sentence": "The apprentice learned from the master builder.", "prompt": "What state does the -ice ending point to?", "answer": "-ice makes a noun: a learner in the state of being trained." },
-        { "word": "ordain", "sentence": "The elders will ordain the new leader tomorrow.", "prompt": "Which root is hiding, and what does it mean?", "answer": "ord means order: to place someone officially into the order - to appoint." },
-        { "word": "inclusion", "sentence": "Our team's inclusion of everyone made it stronger.", "prompt": "in- means in and clus means shut - so inclusion is?", "answer": "shutting everyone in - making sure all are part of it." },
-        { "word": "flexible", "sentence": "A good plan stays flexible if things change.", "prompt": "flex means bend - what does -ible add?", "answer": "-ible means able to: able to bend or change." },
-        { "word": "rectify", "sentence": "We must rectify the error on the report.", "prompt": "rect means straight - how does that give us fix?", "answer": "to make the crooked thing straight again - to fix it." },
-        { "word": "agency", "sentence": "The travel agency booked our flights.", "prompt": "What does the -cy ending name here?", "answer": "-cy makes a noun: a business or state that acts for you." },
-        { "word": "scholar", "sentence": "The scholar read every book in the library.", "prompt": "-ar can mean one who - so a scholar is?", "answer": "one who studies deeply - a learned person." }
+        {
+          "word": "maladroit",
+          "sentence": "His maladroit catch dropped the ball again.",
+          "prompt": "mal- means poorly - poorly what?",
+          "answer": "poorly skilful, clumsy - not good with the hands."
+        },
+        {
+          "word": "drudgery",
+          "sentence": "Washing every pot felt like endless drudgery.",
+          "prompt": "Which suffix names this dull work, and what does it name?",
+          "answer": "-ery names the state of dull, hard, boring work."
+        },
+        {
+          "word": "practice",
+          "sentence": "Daily practice made her a strong reader.",
+          "prompt": "Which ending makes practice a noun here?",
+          "answer": "-ice makes the noun - the doing of a skill over and over."
+        },
+        {
+          "word": "apprentice",
+          "sentence": "The apprentice learned from the master builder.",
+          "prompt": "What state does the -ice ending point to?",
+          "answer": "-ice makes a noun: a learner in the state of being trained."
+        },
+        {
+          "word": "ordain",
+          "sentence": "The elders will ordain the new leader tomorrow.",
+          "prompt": "Which root is hiding, and what does it mean?",
+          "answer": "ord means order: to place someone officially into the order - to appoint."
+        },
+        {
+          "word": "inclusion",
+          "sentence": "Our team's inclusion of everyone made it stronger.",
+          "prompt": "in- means in and clus means shut - so inclusion is?",
+          "answer": "shutting everyone in - making sure all are part of it."
+        },
+        {
+          "word": "flexible",
+          "sentence": "A good plan stays flexible if things change.",
+          "prompt": "flex means bend - what does -ible add?",
+          "answer": "-ible means able to: able to bend or change."
+        },
+        {
+          "word": "rectify",
+          "sentence": "We must rectify the error on the report.",
+          "prompt": "rect means straight - how does that give us fix?",
+          "answer": "to make the crooked thing straight again - to fix it."
+        },
+        {
+          "word": "agency",
+          "sentence": "The travel agency booked our flights.",
+          "prompt": "What does the -cy ending name here?",
+          "answer": "-cy makes a noun: a business or state that acts for you."
+        },
+        {
+          "word": "scholar",
+          "sentence": "The scholar read every book in the library.",
+          "prompt": "-ar can mean one who - so a scholar is?",
+          "answer": "one who studies deeply - a learned person."
+        }
       ],
       "learned_words": {
         "review": [
-          { "word": "muscle", "unfair": "c", "notes": "**Why learned:** silent c - MUS-uhl. The c hides between the s and the l.\n**Say it:** MUS-uhl, two beats, then air-write and write from memory.\n**Quick link:** a body word for our science and health talk." },
-          { "word": "tongue", "unfair": "ongue", "notes": "**Why learned:** the o says /u/ (tung) and the -ue is silent, so -gue just says /g/.\n**Say it:** TUNG, one beat, t + ongue, then write from memory.\n**Quick link:** the muscle you taste and talk with - who remembers Wednesday's dictation?" }
+          {
+            "word": "muscle",
+            "unfair": "c",
+            "notes": "**Why learned:** silent c - MUS-uhl. The c hides between the s and the l.\n**Say it:** MUS-uhl, two beats, then air-write and write from memory.\n**Quick link:** a body word for our science and health talk."
+          },
+          {
+            "word": "tongue",
+            "unfair": "ongue",
+            "notes": "**Why learned:** the o says /u/ (tung) and the -ue is silent, so -gue just says /g/.\n**Say it:** TUNG, one beat, t + ongue, then write from memory.\n**Quick link:** the muscle you taste and talk with - who remembers Wednesday's dictation?"
+          }
         ]
       },
       "dictation": [
-        { "sentence": "The nervous novice showed no malice during the whole game.",
-          "targets": ["novice", "malice"],
-          "cups": { "capitals": ["The"], "punctuation": ["full stop"] },
-          "focus": "a preposition (during) opening a phrase; two of this week's targets" },
-        { "sentence": "After the ceremony, the captain praised their bravery: \"Show justice, and never act with malice.\"",
-          "targets": ["captain", "bravery", "justice", "malice"],
-          "cups": { "capitals": ["After", "Show"], "punctuation": ["comma after opening phrase", "colon", "opening quotation mark", "comma", "closing quotation mark", "full stop inside the quote"] },
-          "focus": "comma after an opening prepositional phrase, colon, comma in a compound command, quoted speech; every week morpheme" }
+        {
+          "sentence": "The nervous novice showed no malice during the whole game.",
+          "targets": [
+            "novice",
+            "malice"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "a preposition (during) opening a phrase; two of this week's targets"
+        },
+        {
+          "sentence": "After the ceremony, the captain praised their bravery: \"Show justice, and never act with malice.\"",
+          "targets": [
+            "captain",
+            "bravery",
+            "justice",
+            "malice"
+          ],
+          "cups": {
+            "capitals": [
+              "After",
+              "Show"
+            ],
+            "punctuation": [
+              "comma after opening phrase",
+              "colon",
+              "opening quotation mark",
+              "comma",
+              "closing quotation mark",
+              "full stop inside the quote"
+            ]
+          },
+          "focus": "comma after an opening prepositional phrase, colon, comma in a compound command, quoted speech; every week morpheme"
+        }
       ],
       "grammar": {
         "header_notes": "Week review finisher. Prepositions and prepositional phrases - day 4: whole week in one fast round, exit-ticket evidence for next week's regroup.",

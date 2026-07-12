@@ -116,6 +116,47 @@ def warn(msg):
     print(f"  WARN: {msg}")
 
 
+_BANK = None
+
+
+def bank():
+    """morph -> entry dict from the append-only canon."""
+    global _BANK
+    if _BANK is None:
+        data = json.loads((ROOT_DIR / "morpheme_bank.json").read_text())
+        _BANK = {m["morph"]: m for m in data["morphemes"]}
+    return _BANK
+
+
+def check_banked(day, where, morph):
+    if morph not in bank():
+        warn(f"{day}: {where} morph {morph!r} is not in morpheme_bank.json - "
+             "use the banked label verbatim (students know the card), or bank it first")
+
+
+def resolve_card(day, where, card):
+    """Canonical keyword/meaning for a card. The bank ALWAYS wins over the spec -
+    a card's keyword and meaning must be identical every time it appears, all year."""
+    entry = bank().get(card["morph"])
+    kw = card.get("keyword", "")
+    mean = card.get("meaning", "")
+    if entry:
+        if entry.get("keyword"):
+            if kw and kw != entry["keyword"]:
+                warn(f"{day}: {where} {card['morph']!r} spec keyword {kw!r} differs "
+                     f"from bank {entry['keyword']!r} - bank value used")
+            kw = entry["keyword"]
+        elif kw:
+            # advisory, not a build defect: surface for teacher confirmation
+            print(f"  NOTE: {day}: {where} {card['morph']!r} keyword {kw!r} is not "
+                  "locked in the bank - confirm against the physical card set, then lock it")
+        if mean and mean != entry["meaning"]:
+            warn(f"{day}: {where} {card['morph']!r} spec meaning differs from bank - "
+                 "bank value used")
+        mean = entry["meaning"]
+    return kw, mean
+
+
 # ---------------------------------------------------------------- text helpers
 def fit_font(text, width_in, base_pt, min_pt=20, char_em=0.62):
     """Largest size <= base_pt at which `text` fits on one line in width_in."""
@@ -721,15 +762,22 @@ def build_session(pkg, week, session, out_path):
 
     # --- review cards x10
     for card in session["morphology_review"]:
+        check_banked(day, "review card", card["morph"])
+    for item in session.get("sound_bank", []):
+        check_banked(day, "sound bank", item["morph"])
+    if session.get("new_morphology"):
+        check_banked(day, "new morphology", session["new_morphology"]["morph"])
+    for card in session["morphology_review"]:
         tidx = CARD_REVIEW[card["type"]]
 
         def fill_card(root, card=card, tidx=tidx):
             sp = find_sp(root, SHAPE["card_review_word"][tidx])
             set_text(sp, card["morph"],
                      size_pt=fit_font(card["morph"], 5.75, 56))
+        kw, mean = resolve_card(day, "review card", card)
         card_note = (f"**{card['type'].capitalize()}:** {card['morph']}\n"
-                     f"**Keyword:** {card.get('keyword', '')}\n"
-                     f"**Meaning:** {card['meaning']}")
+                     f"**Keyword:** {kw}\n"
+                     f"**Meaning:** {mean}")
         if card.get("derivative_ask"):
             card_note += f"\n**Derivative ask:** {card['derivative_ask']}"
         d.add(tidx, fill_card, notes=card_note)
@@ -809,10 +857,11 @@ def build_session(pkg, week, session, out_path):
         def fill_nm_card(root, tidx=tidx):
             sp = find_sp(root, SHAPE["card_new_word"][tidx])
             set_text(sp, nm["morph"], size_pt=fit_font(nm["morph"], 5.75, 56))
+        nm_kw, nm_mean = resolve_card(day, "new morphology", nm)
         d.add(tidx, fill_nm_card,
               notes=(f"**{nm['type'].capitalize()}:** {nm['morph']}\n"
-                     f"**Keyword:** {nm.get('keyword', '')}\n"
-                     f"**Meaning:** {nm['meaning']}"))
+                     f"**Keyword:** {nm_kw}\n"
+                     f"**Meaning:** {nm_mean}"))
 
         def fill_wtr_new_hdr(root):
             sp = find_sp(root, SHAPE["hdr_wtr_new_txt"])

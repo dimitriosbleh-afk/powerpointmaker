@@ -102,6 +102,12 @@ weight shifted to auditory/spelling work - same morpheme, mostly fresh words.
   2-3 cards' notes append a `**Derivative ask:**` line with 1-2 example answers
   (`**Derivative ask:** who has a flect/flex word? EXPECT: flexible, deflect,
   reflection.`) - rotate which cards get it.
+- PATTERN MORPHEMES: some bank entries are pronunciation/spelling patterns, not
+  meaning morphemes (their `meaning` field says so - e.g. `-ine` "says /in/ or
+  /uhn/", `-ciate / -tiate` "says /sh-ee-ate/"). Drill these for SOUND only: the
+  card prompt is "what does it say?", never "what does it mean?". Never use a
+  pattern morpheme in a meaning-hunt ASK, a derivative-meaning question, or a
+  submarine-model script line - it has no meaning to route through.
 
 ## 2b. Words to Read Review (15 words)
 
@@ -187,6 +193,11 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
     you want that idea without the label, ask it through the morpheme instead: "-ly
     means in that way - so flexibly means?" rather than "what part of speech is
     flexibly?".
+  - EXCEPTION - inside the grammar lesson itself: when the user's chosen grammar
+    focus requires a building-block term (prepositional phrases need "noun"), the
+    grammar slides may use it, but the I do glosses it in passing on first use
+    ("the noun after it - the naming word"). The gate still applies everywhere
+    OUTSIDE the grammar section.
   - Same gate applies to the Extension Wheel's Nouns/Verbs/Adjectives category - skip
     or substitute that sector until parts of speech have been taught.
 
@@ -199,6 +210,12 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
 - GROUP BY TYPE: order the 9 entries so each type sits together as a row (or column) -
   roots together, prefixes together, suffixes together. A 3/3/3 split filling row 1 /
   row 2 / row 3 is the ideal; when counts are uneven, keep each type contiguous.
+- BANKED LABELS ONLY: every sound bank entry (and review card) must use a morpheme
+  label exactly as it appears in `og_planner/morpheme_bank.json` - that label matches
+  the physical card students drill with. If a spelling word needs a variant ending,
+  roll it up to the taught card (conclusion needs `-tion / -sion`, never a made-up
+  `-ion` card). The builder warns on any unbanked label - treat that warning as a
+  content bug.
 
 ## 2d. Words to Spell Review (10 words, one reveal slide each)
 
@@ -326,9 +343,27 @@ new/review session lacks one.
 
 `og_planner/morpheme_bank.json` is append-only. For every morpheme in a deck:
 
+0. KEYWORD SOURCE OF TRUTH: the school owns a physical card set from the Yoshimoto
+   course - morpheme on the front; meaning AND keyword on the back. That card set is
+   the canon for every already-taught morpheme's keyword. It is NOT in the scanned
+   `OG/` library (Yoshimoto's books give meanings and pronunciations only; his method
+   has each class anchor its own keyword) and no free copy exists on the web - only
+   commercial derivatives. So keywords enter the bank from exactly two places: the
+   teacher reading the physical card, or your choice for a morpheme that is new this
+   week. Confirmed card readings so far: rect/reg = correct, capt/capit =
+   capture/captain (meaning: hold, take OR leader, head), flect/flex = reflex,
+   ord/ordin = coordinate.
 1. Look it up in the bank. Found and `verified: true` -> use keyword + meaning verbatim.
-2. `keyword: null` -> the anchor keyword is unconfirmed. Ask the user, or propose one
-   drawn from the words-to-read family, flag it in your summary, and LOCK it in the bank.
+2. Missing keyword? ONE keyword per morpheme, forever - and who sets it depends on
+   whether the class has met the morpheme before:
+   - Morpheme is NEW THIS WEEK (in the user's Morphology focus): you choose the
+     keyword - the most familiar derivative that carries the meaning transparently -
+     and it becomes canon from its first teaching. Lock it; no confirmation needed.
+   - Morpheme was TAUGHT IN A PAST WEEK/TERM (it appears in the review history): the
+     class already anchors to a keyword from when it was taught. Do NOT guess - ask
+     the user what keyword was on the card, then lock that. If you must build before
+     an answer arrives, say so loudly in your summary: a wrong review keyword breaks
+     the anchor students already hold.
 3. Not in the bank -> consult the `OG/` reference library, navigated via
    `og_planner/OG_LIBRARY_INDEX.md` (read that index BEFORE hunting - it maps every
    subfolder and says which document governs which deck section). The PDFs are scans
@@ -532,6 +567,12 @@ One JSON per week in `og_planner/weeks/`. Exemplar: `og_planner/weeks/sample_ter
 ```
 
 Notes:
+- Card `keyword`/`meaning` fields must mirror the bank exactly. The builder enforces
+  this: when a morph is banked, the BANK's keyword and meaning are what render, and
+  any differing spec value raises a WARN. A spec keyword for a bank entry whose
+  keyword is still null prints a NOTE (advisory): the deck builds with the spec value,
+  and you must list every NOTE in your summary so the teacher can confirm it against
+  the physical card set and lock it.
 - `unfair` must be an exact substring of the word (builder warns if not found).
 - `**bold**` markup works in every notes field and in nothing on the slide faces.
 - Keep single display words <= ~14 characters where you have a choice; the builder
@@ -543,14 +584,18 @@ Notes:
 # 10. BUILD AND QA (required, in order)
 
 ```bash
-# deps live in miniconda python (NOT homebrew python3): lxml, python-pptx, pymupdf
+# EVERY python command in this pipeline uses miniconda `python` (NOT homebrew
+# python3): lxml, python-pptx and pymupdf live there. That includes the builder,
+# scripts/pptx_to_images.py, and any PDF page rendering.
 python og_planner/build_og_week.py og_planner/weeks/<spec>.json          # all sessions
 python og_planner/build_og_week.py og_planner/weeks/<spec>.json --only Tuesday
 ```
 
 1. The builder's gate must pass (exit 0): file reopens cleanly, no `XYZ` left anywhere.
    Read every WARN - word-count and overflow warnings are content bugs to fix in the
-   spec, not noise.
+   spec, not noise. NOTE lines are advisory (unconfirmed keywords awaiting the
+   teacher's physical card set) - do not block on them, but list every NOTE in your
+   summary.
 2. Visual QA every session deck: `python scripts/pptx_to_images.py "output/<folder>/<deck>.pptx"`,
    then INSPECT the images: title subtitle on one line; overview table cells complete;
    10 card slides in the jumbled order you specified; 15-word table filled; sound bank
@@ -618,6 +663,10 @@ your spec against every line before building)
 - An extension that names a concept without a one-line reminder of it, or with no
   Stretch step. (3c)
 - A morpheme keyword/meaning that differs from the bank, or an invented one. (4)
+- A sound-bank or review-card label that is not in the bank verbatim (e.g. a made-up
+  `-ion` card when the taught card is `-tion / -sion`) - the builder warns on this. (2c)
+- A meaning-hunt or submarine script line on a PATTERN morpheme (-ine, -ciate/-tiate) -
+  those are drilled for sound, they have no meaning to route through. (2a)
 - A learned word highlight on the wrong letters, or a why-note without the
   Australian pronunciation breakdown. (5)
 - A dictation without a cups block, with an uncounted red mark/capital/target, or
@@ -644,9 +693,19 @@ When the user pastes a term block (section 12):
    morpheme-integrity or decodability reasons, and any learned word that looked fully
    decodable.
 
-If the user gives fewer than 5 sessions/week, compress: keep the Mon/Wed `new` pattern
-first (e.g. 4 sessions = new, review, new, review; 3 = new, review, new), and fold week
-review into the last session's review sections.
+Mapping morphemes to sessions (pick the row that matches; ask only if none fits):
+
+| Morphemes | Sessions | Pattern |
+|---|---|---|
+| 2 | 5 | new, review, new, review, week_review (the default) |
+| 3 | 5 | new, review, new, review, new - the team's historic pattern: `1a, 1b, 2a, 2b, 3.` with the third morpheme taught Friday, consolidated next week |
+| 3 | 4 | new, new, new, week_review (no per-morpheme review day; the week review carries consolidation - flag this trade-off in your summary) |
+| 2 | 4 | new, review, new, review (fold week-review weighting into Thursday's review sections) |
+| 1 | any | new, then review days; last session week_review |
+| 2-3 | 3 | new, new(, new) - flag that review days are lost and weight the following week's history hard toward these morphemes |
+
+Days with no session: keep them in `days`/`overview` with a "No session this week"
+cell so the weekly overview table stays truthful.
 
 ---
 
