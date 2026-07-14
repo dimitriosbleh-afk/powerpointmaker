@@ -323,8 +323,8 @@ When the user requests more than one session in a single ask (a unit, a week, a 
 **Workflow (do not skip the merge):**
 
 1. Write one per-lesson build script per session in `builds/` as usual.
-2. Write a manifest at `builds/manifests/<unit>.json` listing each lesson's `build_script`, `folder`, and `session` in teaching order, plus `unit_folder` and `unit_pptx_name`. Manifest format is documented in `scripts/merge_unit.py` and `docs/resource-system.md`.
-3. Run `python scripts/build_unit.py builds/manifests/<unit>.json`. This builds every lesson through `build_and_check.js` (aborting on any gate failure), merges the decks and resources into `output/<unit_folder>/<unit_pptx_name>` + `output/<unit_folder>/Resources/<flat PDFs>`, then runs merged unit QA via `qa_unit.js --skip-build --skip-merge`.
+2. Write a manifest at `builds/manifests/<unit>.json` listing each lesson's `build_script`, `folder`, and `session` in teaching order, plus `unit_folder`, `unit_pptx_name`, and the required `teacher_brief` object for every newly generated themed unit. Manifest format is documented in `scripts/merge_unit.py`, `docs/resource-system.md`, and `docs/teacher-week-brief.md`.
+3. Run `python scripts/build_unit.py builds/manifests/<unit>.json`. This builds every lesson through `build_and_check.js` (aborting on any gate failure), merges the decks and resources into `output/<unit_folder>/<unit_pptx_name>` + `output/<unit_folder>/Resources/<flat PDFs>`, generates the one-page `Teacher Week Brief.pdf`, then runs merged unit QA via `qa_unit.js --skip-build --skip-merge`.
 4. The task is not "done" for a multi-session request until the combined unit folder exists. Do not claim completion after building per-lesson folders only.
 5. For a single-session request, the per-lesson folder IS the deliverable — no merge needed.
 

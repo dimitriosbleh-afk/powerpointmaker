@@ -178,6 +178,54 @@ function parseNotesSections(notes) {
   return sections;
 }
 
+const RESPONSE_ROUTINE_RE = /\b(?:boards?(?:\s+up)?|mini[- ]whiteboards?|choral(?:\s+(?:response|read))?|everyone\s+(?:points?|shows?|writes?|reads?|acts?)|fingers?|thumbs?|turn\s+and\s+tell|pair(?:\s+(?:share|check))?|partner(?:\s+(?:talk|check|share))?|cold\s+call|stand\s+if|hold\s+up|quick\s+(?:write|sketch)|sort|match|act\s+it\s+out|read\s+aloud)\b/i;
+const THINK_TIME_RE = /\b\d+(?:\.\d+)?\s*(?:sec|secs|second|seconds)\b/i;
+
+function getResponsiveGlanceIssues(liveLines) {
+  const issues = [];
+  const askLines = liveLines.filter((line) => /\bASK:/.test(line));
+  const scanLines = liveLines.filter((line) => /^(?:\d+\.\s+)?SCAN\b/i.test(line.trim()));
+  const revealLines = liveLines.filter((line) => /^(?:\d+\.\s+)?REVEAL\b/i.test(line.trim()));
+
+  askLines.forEach((line, index) => {
+    if (!/\bEXPECT:/i.test(line)) {
+      issues.push(`ASK beat ${index + 1} is missing EXPECT: on the same line`);
+    }
+    if (!THINK_TIME_RE.test(line)) {
+      issues.push(`ASK beat ${index + 1} is missing explicit think time in seconds`);
+    }
+    if (!RESPONSE_ROUTINE_RE.test(line)) {
+      issues.push(`ASK beat ${index + 1} is missing one named response routine`);
+    }
+    if (/\b(?:hands?\s+up|volunteers?)\b/i.test(line)) {
+      issues.push(`ASK beat ${index + 1} defaults to volunteer hands instead of whole-class thinking`);
+    }
+  });
+
+  scanLines.forEach((line, index) => {
+    if (askLines.length === 0) {
+      issues.push(`SCAN beat ${index + 1} has no ASK beat to generate evidence`);
+    }
+    if (!/80%\+[^.\n]*->/i.test(line)) {
+      issues.push(`SCAN beat ${index + 1} is missing the 80%+ proceed branch`);
+    }
+    if (!/Less\s*->/i.test(line)) {
+      issues.push(`SCAN beat ${index + 1} is missing the Less -> pivot branch`);
+    }
+    if (!/re[- ]?(?:ask|check)/i.test(line)) {
+      issues.push(`SCAN beat ${index + 1} is missing a fresh re-ask or re-check`);
+    }
+  });
+
+  revealLines.forEach((line, index) => {
+    if (!/\bafter\b/i.test(line)) {
+      issues.push(`REVEAL beat ${index + 1} does not protect thinking with an 'after' condition`);
+    }
+  });
+
+  return issues;
+}
+
 function getTeacherNotesSourceIssues(notes, opts) {
   if (notes == null || notes === "") return [];
 
@@ -225,7 +273,7 @@ function getTeacherNotesSourceIssues(notes, opts) {
       .filter((line) => line.trim() && line.trim() !== "---");
 
     const maxLiveZoneLines = o.maxLiveZoneLines || 8;
-    const maxPrepZoneLines = o.maxPrepZoneLines || 4;
+    const maxPrepZoneLines = o.maxPrepZoneLines || 3;
 
     if (dividerIndex === -1 && liveLines.length > 2) {
       issues.push("glance notes missing --- divider (only 1-2 line non-teaching notes may omit it)");
@@ -239,6 +287,9 @@ function getTeacherNotesSourceIssues(notes, opts) {
     if (liveLines.some((line) => /^(ASK:|\d+\.\s+ASK:)/.test(line.trim()) || /EXPECT:/.test(line)) &&
         liveLines.length > 0 && !/^ANSWER:/.test(liveLines[0].trim())) {
       issues.push("glance notes with an ASK must open with an ANSWER: line");
+    }
+    if (o.checkResponsiveGlance !== false) {
+      issues.push(...getResponsiveGlanceIssues(liveLines));
     }
     return issues;
   }
@@ -544,6 +595,7 @@ module.exports = {
   sanitizeTeacherNotes,
   parseNotesSections,
   getTeacherNotesSourceIssues,
+  getResponsiveGlanceIssues,
   getSlideNotesText,
   buildNotesParagraphsXml,
   rewriteNotesSlideXml,

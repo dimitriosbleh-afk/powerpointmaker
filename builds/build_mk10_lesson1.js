@@ -107,7 +107,7 @@ const NOTES_FL1 = composeGlanceNotes({
   beats: [
     "FLASH the dot card. SAY: Fluency. Quick eyes - do not count one by one.",
     "ASK: How many dots? 3 sec, show me on your fingers. EXPECT: 4. ACCEPT: I saw two and two.",
-    "SCAN fingers, back row first. 80%+ -> reveal. Less -> name the pattern, re-flash.",
+    "SCAN fingers, back row first. 80%+ -> reveal. Less -> name the pattern, re-flash and re-ask.",
   ],
   trap: "counting each dot slowly. Fix: SAY the pattern - two and two is four, child says it back.",
   prep: "Subitising - see the amount at a glance without counting (Number automaticity).",
@@ -119,7 +119,7 @@ const NOTES_FL2 = composeGlanceNotes({
   beats: [
     "FLASH the dot card. SAY: Next one. Quick eyes.",
     "ASK: How many dots? 3 sec, show me on your fingers. EXPECT: 6. ACCEPT: three and three.",
-    "SCAN fingers. 80%+ -> reveal. Less -> cover one column, name three and three, re-flash.",
+    "SCAN fingers. 80%+ -> reveal. Less -> cover one column, name three and three, re-flash and re-ask.",
   ],
   trap: "guessing a number near six. Fix: SAY three and three is six, child rebuilds on fingers.",
   prep: "Subitising the dice-six pattern. Builds instant recognition of small amounts.",
@@ -131,7 +131,7 @@ const NOTES_FL3 = composeGlanceNotes({
   beats: [
     "FLASH the dot card. SAY: Last one. Quick eyes.",
     "ASK: How many dots? 3 sec, show me on your fingers. EXPECT: 5. ACCEPT: four and one.",
-    "SCAN fingers. 80%+ -> reveal. Less -> point to the four corners and the middle, re-flash.",
+    "SCAN fingers. 80%+ -> reveal. Less -> point to the four corners and the middle, re-flash and re-ask.",
   ],
   trap: "showing four (missing the middle dot). Fix: point to the centre dot, child re-shows five.",
   prep: "Subitising five - the anchor amount for one full row of the ten frame.",
@@ -165,7 +165,7 @@ const NOTES_VOCAB = composeGlanceNotes({
   beats: [
     "POINT to the frame. SAY: New maths words - friends of 10.",
     "SAY: The top row is 5. The empty row is 5 more. 5 and 5 make 10 - they are friends of 10.",
-    "ASK: Say it with me - 5 and 5 make 10. Choral. EXPECT: 5 and 5 make 10.",
+    "ASK: Say it with me - 5 and 5 make 10. 5 sec, choral on my signal. EXPECT: 5 and 5 make 10.",
   ],
   prep: "Key language for the unit. One clean symmetric pair (5 and 5) before the I Do uses other pairs.",
   tag: "[Vocabulary | Knowledge and memory | HITS 3]",

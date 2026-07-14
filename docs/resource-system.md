@@ -162,6 +162,7 @@ Generate resources based on what the lesson references.
 | Vocabulary cards | When key terms need to be cut out, displayed, or sorted |
 | Extending investigation | When EXTENDING introduces a concept not taught in the lesson |
 | Teacher resource checklist | Optional one-page prep list |
+| Teacher Week Brief | Required for new multi-session themed units; generated once from manifest data |
 
 ## Scaffold Quality Rules
 
@@ -226,6 +227,29 @@ The per-lesson folder structure above is the **build step**. The **delivery step
 {
   "unit_folder": "Decimals_and_Fractions_Unit",
   "unit_pptx_name": "Decimals and Fractions Unit.pptx",
+  "teacher_brief": {
+    "title": "Teacher Week Brief",
+    "unit": "Decimals and fractions",
+    "grade": "Year 5",
+    "subject": "Mathematics",
+    "curriculum": "Mathematics 2.0, Number",
+    "throughline": "One sentence describing how learning builds across the week.",
+    "high_leverage_moves": ["Move 1", "Move 2", "Move 3"],
+    "sessions": [
+      {
+        "session": 1,
+        "focus": "Lesson-sized focus",
+        "students": "What students will produce or do",
+        "check": "The visible evidence the teacher scans",
+        "respond": "The prepared move if the evidence is not secure"
+      }
+    ],
+    "essential_knowledge": ["Teacher content anchor"],
+    "misconceptions": ["Most likely observable misconception"],
+    "response_rule": "How secure, mixed and common-error evidence changes the next move.",
+    "rehearse": ["The short explanation, model or question to practise aloud"],
+    "materials": ["Materials that must be ready"]
+  },
   "lessons": [
     {
       "build_script": "builds/build_decfrac_lesson1.js",
@@ -248,6 +272,7 @@ Fields:
 - `lessons[].build_script` — path from repo root to the lesson's build script.
 - `lessons[].folder` — name of the per-lesson output folder under `output/` (matches the script's `OUT_DIR`).
 - `lessons[].session` — integer session number used to locate `resources-session{N}/`.
+- `teacher_brief` - optional for legacy manifests, required by `MEGA_PROMPT.md` for newly generated multi-session themed units. It produces one `Teacher Week Brief.pdf` in the final flat `Resources/` folder. See `docs/teacher-week-brief.md` for the full schema and content rules.
 
 ### Delivered structure
 
@@ -255,6 +280,7 @@ Fields:
 output/Decimals_and_Fractions_Unit/
   Decimals and Fractions Unit.pptx
   Resources/
+    Teacher Week Brief.pdf
     Session 1 Place Value Practice.pdf
     Session 1 Answer Key.pdf
     Session 2 Rounding and Estimation Practice.pdf

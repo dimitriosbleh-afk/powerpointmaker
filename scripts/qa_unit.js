@@ -109,6 +109,7 @@ async function main() {
     const resourceDir = path.join(lessonDir, `resources-session${lesson.session}`);
     expectedResourceCount += validatePdfFolder(resourceDir, issues);
   }
+  if (manifest.teacher_brief) expectedResourceCount += 1;
 
   if (skipMerge) {
     console.log("\nSkipping merge; validating existing merged unit output...");
@@ -130,7 +131,16 @@ async function main() {
     await validatePptx(unitPptx, issues);
   }
 
-  const deliveredResourceCount = fs.existsSync(resourcesDir) ? listPdfFiles(resourcesDir).length : 0;
+  const deliveredResourceCount = fs.existsSync(resourcesDir)
+    ? validatePdfFolder(resourcesDir, issues)
+    : 0;
+  if (manifest.teacher_brief) {
+    const briefName = manifest.teacher_brief.file_name || "Teacher Week Brief.pdf";
+    const briefPath = path.join(resourcesDir, briefName);
+    if (!fs.existsSync(briefPath)) {
+      issues.push(`Missing teacher brief: ${briefPath}`);
+    }
+  }
   if (deliveredResourceCount !== expectedResourceCount) {
     issues.push(
       `Merged Resources count mismatch: expected ${expectedResourceCount}, found ${deliveredResourceCount}.`

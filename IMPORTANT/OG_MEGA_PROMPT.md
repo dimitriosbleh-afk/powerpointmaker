@@ -1,4 +1,4 @@
-# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.0
+# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.1
 ## Grade 5/6 Enrichment | Diamond Creek East PS | Yoshimoto OG | Template-Locked | Term-Scale Input
 
 ---
@@ -17,6 +17,10 @@ philosophy is the OPPOSITE of the general lesson builder:
   GREEN = root, YELLOW = prefix, RED = suffix. This applies to review-card
   backgrounds, new/review morpheme-card backgrounds and Sound Bank boxes. Never
   reverse, repurpose or infer a different mapping from an older template slide.
+
+The v1.1 refinement tightens response quality and responsive pacing inside the locked
+Yoshimoto sequence. It does not change the five-day shape, required review counts,
+morphology sequence, dictation, grammar finisher, master template or output naming.
 
 The pipeline: user pastes a term's content -> you plan each week -> you author a week
 spec JSON -> `og_planner/build_og_week.py` clones the master template and fills it ->
@@ -237,6 +241,24 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
 - The builder centres every word at the same position with reveal-on-click and a blank
   screen between words (one slide per word) - this fixes the alignment/reveal feedback
   from the team email; you only supply words, sentences and prompts.
+
+## 2e. Responsive pacing inside the locked sequence
+
+- The sequence and required item counts do not change. Responsive pacing means changing
+  the time, correction and amount of rehearsal within a block, not deleting the block or
+  inventing a different OG routine.
+- Pre-cue the response, give think time, name one routine and collect the complete response.
+  Choral response means every voice. Boards up means every board. A cold call comes after
+  the whole group has thought.
+- Do not treat a few confident voices as evidence that the group is secure. If responses are
+  incomplete, reset the routine and collect them again.
+- Move briskly through secure review only after the complete response shows accuracy and
+  fluency. If a common error appears, slow down for the smallest Yoshimoto-aligned correction,
+  then require the student or group to redo the corrected response immediately.
+- Do not replace the canonical keyword, meaning, visual card drill, sound bank or spelling
+  routine with a generic reteach model. Responsiveness stays inside the prescriptive method.
+- Every scripted decision point states what the teacher scans or listens for, the secure move,
+  the correction move and the fresh re-check. This is evidence-led pacing, not slide-led pacing.
 
 ---
 
@@ -589,6 +611,10 @@ master template's old dense procedure blocks. All authored notes must follow
   filler such as "Okay kids, next we have..." and do not write clipped production
   notes. Each question includes think time, one response routine, and `EXPECT:` or
   `Answer:` in student-friendly language.
+- Response routines are completed. Notes never imply that partial choral participation,
+  missing boards or volunteer call-outs are sufficient evidence. The teacher resets the
+  routine, checks the complete response and then decides whether to keep the brisk pace or
+  give the smallest prescribed correction.
 - Data notes use one labelled value per line. For a sound-pattern card, do not cram a
   pseudo-meaning into one line: render `Sound: /sh-ee-ate/` and `Meaning of -ate: to
   make or do` separately.
@@ -765,6 +791,10 @@ your spec against every line before building)
 - Renaming output files away from the team convention (`1a. Monday (morph).pptx`). (1)
 - A scripted question without its answer (`EXPECT:` / `Answer:`) anywhere in any
   notes. (2b, 2d, 7)
+- A review block labelled as a check when the notes do not say what the teacher scans or
+  hears, or when the pace changes without complete response evidence. (2e, 8)
+- Skipping a required review exposure because a few confident students answered correctly.
+  Responsive pacing changes time and correction inside the OG sequence, not the sequence. (2e)
 - Fewer than 10 Words to Spell Review, or spelling words that duplicate the same
   day's Words to Read Review. (2d)
 - A grid script line that does not name the focus morpheme in caps (writing

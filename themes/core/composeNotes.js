@@ -1,6 +1,10 @@
 "use strict";
 
-const { sanitizeTeacherNotes, appendSourcesToNotes } = require("./notes");
+const {
+  sanitizeTeacherNotes,
+  appendSourcesToNotes,
+  getTeacherNotesSourceIssues,
+} = require("./notes");
 
 /**
  * LEGACY (pre-v11.0 sectioned format). New lessons use the Glance Format via
@@ -169,8 +173,9 @@ function composeNotes(input, opts) {
  * @param {string}          [input.tag]     "[Stage | VTLM element | SC | HITS n]"
  * @returns {string} composed, sanitized notes block
  */
-function composeGlanceNotes(input) {
+function composeGlanceNotes(input, opts) {
   const i = input || {};
+  const o = opts || {};
   const list = (value) => (value == null ? [] : Array.isArray(value) ? value : [value])
     .map((entry) => String(entry).trim())
     .filter(Boolean);
@@ -208,7 +213,21 @@ function composeGlanceNotes(input) {
     if (sources.length) lines.push(`SOURCES: ${sources.join("; ")}`);
   }
 
-  return sanitizeTeacherNotes(lines.join("\n"));
+  const composed = sanitizeTeacherNotes(lines.join("\n"));
+  if (o.validate !== false) {
+    const issues = getTeacherNotesSourceIssues(composed, {
+      checkSectionStructure: true,
+      checkResponsiveGlance: true,
+      maxLines: 14,
+      maxChars: 1800,
+      maxLiveZoneLines: 8,
+      maxPrepZoneLines: 3,
+    });
+    if (issues.length) {
+      throw new Error(`[composeGlanceNotes] ${issues.join("; ")}`);
+    }
+  }
+  return composed;
 }
 
 module.exports = { composeNotes, composeGlanceNotes };

@@ -5,7 +5,12 @@ const pptxgen = require("pptxgenjs");
 
 const { createTheme } = require("../themes/factory");
 const { contrastRatio } = require("../themes/core/contrast");
-const { getSlideNotesText, sanitizeTeacherNotes } = require("../themes/core/notes");
+const {
+  getSlideNotesText,
+  sanitizeTeacherNotes,
+  getTeacherNotesSourceIssues,
+} = require("../themes/core/notes");
+const { composeGlanceNotes } = require("../themes/core/composeNotes");
 const { addResourceSlide } = require("../themes/pdf_helpers");
 
 function slideHasText(slide, needle) {
@@ -57,6 +62,39 @@ function testDivisionSanitizer() {
   const legacy = sanitizeTeacherNotes("Expected: 12 \u00C3\u0192\u00C2\u00B7 3 = 4");
   assert(legacy.includes("12 divided by 3"), legacy);
   assert(!legacy.includes("12 / 3"), legacy);
+}
+
+function testResponsiveGlanceNotesGate() {
+  const valid = composeGlanceNotes({
+    answer: "four",
+    beats: [
+      "ASK: How many parts? 10 sec, boards up. EXPECT: four.",
+      "SCAN every board. 80%+ -> continue. Less -> rebuild with counters, re-ask with three parts.",
+      "REVEAL after every board is visible. SAY: Tick or fix.",
+    ],
+    trap: "counting spaces. Fix: touch each part, student recounts.",
+    prep: "Decision-grade check before guided practice.",
+    tag: "[CFU | Supported application | HITS 7, 8]",
+  });
+  assert.strictEqual(
+    getTeacherNotesSourceIssues(valid, {
+      checkSectionStructure: true,
+      checkResponsiveGlance: true,
+    }).length,
+    0
+  );
+
+  assert.throws(
+    () => composeGlanceNotes({
+      answer: "four",
+      beats: [
+        "ASK: Who knows how many parts? Hands up. EXPECT: four.",
+        "SCAN a few students. Less -> explain it again.",
+      ],
+      prep: "Invalid response routine fixture.",
+    }),
+    /think time|volunteer hands|80%\+|re-ask/
+  );
 }
 
 function testLiteracyContrast() {
@@ -177,6 +215,7 @@ function testExitTicketHidesInternalScTag() {
 
 testNotesAggregation();
 testDivisionSanitizer();
+testResponsiveGlanceNotesGate();
 testLiteracyContrast();
 testResourceSlideFiveCardsStayInBounds();
 testResourceSlideDenseCardsStayPositive();

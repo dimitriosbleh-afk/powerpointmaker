@@ -373,7 +373,7 @@ async function main() {
         "MODEL with a think-aloud. SAY: Watch me. I feel a big feeling coming, so first I STOP and freeze my body.",
         "MODEL the breath. SAY: Next I BREATHE. I take three slow breaths to help my body settle down.",
         "SAY: Then, if it is still hard, I ASK FOR HELP. I tell a grown-up how I feel. Stop, breathe, ask for help.",
-        "ASK: Say the three steps with me. Choral response. EXPECT: Stop, breathe, ask for help.",
+        "ASK: Say the three steps with me. 5 sec, choral on my signal. EXPECT: Stop, breathe, ask for help.",
       ],
       trap: "jumping straight to shouting or asking without stopping first. Fix: point to step 1 - we always Stop first, child says step 1.",
       stretch: "tell a partner one place they could use the calm steps today.",
@@ -628,8 +628,8 @@ async function main() {
     composeGlanceNotes({
       answer: "any one of: stop, breathe, ask for help",
       beats: [
-        "SAY: Last job before we finish. On your whiteboard, name one calm step you can use when you have a big feeling.",
-        "SCAN whiteboards. Jot who still needs support so you can pick them up next session.",
+        "ASK: On your whiteboard, name one calm step you can use when you have a big feeling. 30 sec, boards up. EXPECT: stop, breathe or ask for help.",
+        "SCAN every board. 80%+ -> note secure for next session. Less -> flag the calm-step choice for review and re-check it first next session.",
       ],
       trap: "leaving it blank. Fix: these children need the poster in reach - note them and revisit the steps with them.",
       prep: "Checks SC2 (choose a calm step). The SC target stays in these notes only, not on the slide.",
@@ -654,9 +654,10 @@ async function main() {
       },
     },
     composeGlanceNotes({
+      answer: "open - one calm step and a fitting moment to use it.",
       beats: [
         "SAY: Let us look back at what we set out to do today.",
-        "ASK: Tell your partner one calm step you will use, and when. EXPECT: a step plus a moment, like when I feel angry.",
+        "ASK: Tell your partner one calm step you will use, and when. 20 sec, turn and tell. EXPECT: a step plus a moment, like when I feel angry.",
         "SAY: Now show me a thumb - up, sideways or down - for how ready you feel.",
       ],
       care: "keep sharing optional; a child can tell you privately or use the calm corner instead.",

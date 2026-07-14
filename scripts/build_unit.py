@@ -3,7 +3,8 @@
 
 Reads a JSON manifest, runs `node scripts/build_and_check.js` for each lesson
 build script (aborting on the first failure), runs `merge_unit.py` to produce
-a single combined PPTX and a flat Resources/ folder, then runs merged unit QA.
+a single combined PPTX and a flat Resources/ folder, generates the optional
+one-page Teacher Week Brief from manifest data, then runs merged unit QA.
 
 Manifest format (extends merge_unit.py's manifest with a `build_script`
 field on each lesson):
@@ -11,6 +12,7 @@ field on each lesson):
     {
       "unit_folder": "Decimals_and_Fractions_Unit",
       "unit_pptx_name": "Decimals and Fractions Unit.pptx",
+      "teacher_brief": {"...": "see docs/resource-system.md"},
       "lessons": [
         {
           "build_script": "builds/build_decfrac_lesson1.js",

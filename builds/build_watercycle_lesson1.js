@@ -203,11 +203,12 @@ contentSlide(
     "collection - water gathers in oceans, rivers and lakes, ready to start again",
   ],
   composeGlanceNotes({
+    answer: "evaporation.",
     beats: [
       "SHOW each word. SAY: Four new science words today. Say each one with me.",
       "SAY: Evaporation is water rising as an invisible gas. Condensation is that gas cooling and coming together into cloud.",
       "SAY: Precipitation is water falling as rain or snow. Collection is water gathering, ready to start again.",
-      "ASK: Which word means water rising into the air? Choral response. EXPECT: evaporation.",
+      "ASK: Which word means water rising into the air? 5 sec, choral on my signal. EXPECT: evaporation.",
     ],
     trap: "mixing up evaporation and condensation. Fix: evaporation goes UP as gas, condensation comes together into cloud - students say each with a hand action.",
     prep: "Brisk. These words are tools for the cycle diagram next, not a spelling list.",
@@ -325,7 +326,7 @@ cycleDiagramSlide(
   composeGlanceNotes({
     answer: "1 evaporation, 2 condensation, 3 precipitation, 4 collection",
     beats: [
-      "REVEAL each name in order, pointing to its clue. SAY: Part 1 evaporation, part 2 condensation, part 3 precipitation, part 4 collection.",
+      "REVEAL after every student has committed to all four names, pointing to each clue. SAY: Part 1 evaporation, part 2 condensation, part 3 precipitation, part 4 collection.",
       "SAY: Tick your whiteboard if you matched each clue. If you swapped two, fix them now.",
     ],
     trap: "confusing precipitation and collection. Fix: precipitation FALLS, collection GATHERS - re-link each clue, student fixes.",
@@ -413,8 +414,8 @@ contentSlide(
   composeGlanceNotes({
     answer: "evaporation, condensation, precipitation, collection",
     beats: [
-      "SAY: Last job before you go. On your whiteboard, write the four parts of the water cycle in order, starting with evaporation.",
-      "SCAN whiteboards for the correct order. Jot who still needs support so you can pick them up next session.",
+      "ASK: On your whiteboard, write the four parts of the water cycle in order, starting with evaporation. 60 sec, boards up. EXPECT: evaporation, condensation, precipitation, collection.",
+      "SCAN every board for the correct order. 80%+ -> note secure for next session. Less -> flag the sequence for review and re-check it first next session.",
     ],
     trap: "right words, wrong order. Fix: note these students - they have naming (SC1) but not yet the sequence (SC2).",
     prep: "Checks SC2 (order and movement). The SC target stays in these notes only, not on the slide.",
@@ -438,9 +439,10 @@ closingSlide(
     },
   },
   composeGlanceNotes({
+    answer: "evaporation, condensation, precipitation, collection.",
     beats: [
       "SAY: Let us look back at what we set out to do today.",
-      "ASK: Tell your partner the four parts in order, from memory. EXPECT: evaporation, condensation, precipitation, collection.",
+      "ASK: Tell your partner the four parts in order, from memory. 20 sec, turn and tell. EXPECT: evaporation, condensation, precipitation, collection.",
       "SAY: Now show me a thumb - up, sideways or down - for how sure you are of the order.",
     ],
     prep: "Read the three I can statements and have students self-check. Use the thumbs data to plan who to revisit. Acknowledge progress - most can now name and order the cycle.",
