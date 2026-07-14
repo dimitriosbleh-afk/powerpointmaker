@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Understanding_and_Operating_with_Fractions_Week_8",
+  "unit_pptx_name": "Understanding and Operating with Fractions Week 8.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_fracuo_w8s1.js",
+      "folder": "FracUO_W8S1_Compare_Same_Unit",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_fracuo_w8s2.js",
+      "folder": "FracUO_W8S2_Compare_Related",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_fracuo_w8s3.js",
+      "folder": "FracUO_W8S3_Add_Subtract",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_fracuo_w8s4.js",
+      "folder": "FracUO_W8S4_Word_Problems",
+      "session": 4
+    }
+  ]
+}

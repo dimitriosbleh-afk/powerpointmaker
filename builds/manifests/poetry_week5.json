@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Poetry_Week5_Verse_and_Booklet",
+  "unit_pptx_name": "Poetry Week 5 -- Verse and Poetry Booklet (Year 6).pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_poetry_w5s1.js",
+      "folder": "Poetry_W5S1_Reading_Verse",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_poetry_w5s2.js",
+      "folder": "Poetry_W5S2_Draft_Verse",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_poetry_w5s3.js",
+      "folder": "Poetry_W5S3_CatchUp_Workshop",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_poetry_w5s4.js",
+      "folder": "Poetry_W5S4_Booklet",
+      "session": 4
+    }
+  ]
+}

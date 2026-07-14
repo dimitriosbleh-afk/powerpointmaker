@@ -1,0 +1,21 @@
+{
+  "unit_folder": "Poetry_Week2_Cinquain_and_Colour",
+  "unit_pptx_name": "Poetry Week 2 -- Cinquain and Colour Poems (Year 6).pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_poetry_w2s1.js",
+      "folder": "Poetry_W2S1_Cinquain",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_poetry_w2s2.js",
+      "folder": "Poetry_W2S2_ColourPoem",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_poetry_w2s3.js",
+      "folder": "Poetry_W2S3_Publish",
+      "session": 3
+    }
+  ]
+}

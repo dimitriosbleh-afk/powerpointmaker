@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Decimal_Operations_And_Place_Value_Unit",
+  "unit_pptx_name": "Decimal Operations and Place Value Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_decpow_lesson1.js",
+      "folder": "DecPow_Lesson1_Multiply_By_Powers_Of_10",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_decpow_lesson2.js",
+      "folder": "DecPow_Lesson2_Divide_By_Powers_Of_10",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_decpow_lesson3.js",
+      "folder": "DecPow_Lesson3_Multiples_Of_Powers_Of_10",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_decpow_lesson4.js",
+      "folder": "DecPow_Lesson4_Estimation_Strategies",
+      "session": 4
+    }
+  ]
+}

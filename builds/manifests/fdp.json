@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Mastering_Fractions_Decimals_And_Percentages_Unit",
+  "unit_pptx_name": "Mastering Fractions Decimals and Percentages Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_fdp_lesson1.js",
+      "folder": "FDP_Lesson1_Fractions_Of_A_Quantity",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_fdp_lesson2.js",
+      "folder": "FDP_Lesson2_Connecting_FDP",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_fdp_lesson3.js",
+      "folder": "FDP_Lesson3_Percentage_Discounts",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_fdp_lesson4.js",
+      "folder": "FDP_Lesson4_Estimating_With_FDP",
+      "session": 4
+    }
+  ]
+}

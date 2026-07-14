@@ -1,0 +1,6982 @@
+{
+  "description": "Photographed Yoshimoto OG cards, Australian-English lesson catalogue",
+  "authority_order": [
+    "photographed card transcription",
+    "legacy morpheme bank",
+    "unconfirmed reference meaning catalogue"
+  ],
+  "card_count": 277,
+  "cards": [
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-tious",
+      "meaning": "full of, having",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "contentious",
+      "associated_words": [
+        "contentious",
+        "flirtatious",
+        "nutritious",
+        "conscientious",
+        "expeditious",
+        "surreptitious",
+        "infectious",
+        "sententious",
+        "ostentatious",
+        "ambitious",
+        "fictitious",
+        "vexatious",
+        "propitious",
+        "superstitious"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ty",
+      "meaning": "state of, quality of, tens",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "certainty",
+      "associated_words": [
+        "certainty",
+        "plenty",
+        "royalty",
+        "amnesty",
+        "property",
+        "majesty",
+        "safety",
+        "loyalty",
+        "fifty",
+        "sixty",
+        "anxiety",
+        "thirty",
+        "liberty",
+        "poverty"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-tiate",
+      "meaning": "make, cause",
+      "part_of_speech": [
+        "verb"
+      ],
+      "keyword": "satiate",
+      "associated_words": [
+        "satiate",
+        "differentiate",
+        "ingratiate",
+        "substantiate",
+        "propitiate",
+        "negotiate",
+        "vitiate",
+        "initiate",
+        "licentiate"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-y",
+      "meaning": "tend to, quality of, small",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "keyword": "puppy",
+      "associated_words": [
+        "puppy",
+        "rosy",
+        "salty",
+        "funny",
+        "juicy",
+        "sandy",
+        "cheery",
+        "crafty",
+        "wary",
+        "misty",
+        "sunny",
+        "windy",
+        "cloudy",
+        "dirty",
+        "arty",
+        "sleepy",
+        "dusty",
+        "draughty",
+        "nasty",
+        "watery",
+        "hairy"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-tion",
+      "meaning": "act of, state of, result of",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "nation",
+      "associated_words": [
+        "nation",
+        "section",
+        "motion",
+        "portion",
+        "mention",
+        "faction",
+        "action",
+        "station",
+        "lotion",
+        "traction",
+        "promotion",
+        "fiction",
+        "intention",
+        "duration",
+        "notation",
+        "location",
+        "reflection",
+        "reaction",
+        "devotion",
+        "injection",
+        "ovation"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-tude",
+      "meaning": "condition of, quality",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "attitude",
+      "associated_words": [
+        "attitude",
+        "gratitude",
+        "longitude",
+        "multitude",
+        "aptitude",
+        "solitude",
+        "altitude",
+        "latitude",
+        "fortitude",
+        "rectitude",
+        "servitude"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-tial",
+      "meaning": "relating to",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "preferential",
+      "associated_words": [
+        "preferential",
+        "experiential",
+        "partial",
+        "initial",
+        "residential",
+        "potential",
+        "presidential",
+        "essential",
+        "martial",
+        "confidential",
+        "substantial",
+        "consequential",
+        "credential",
+        "prudential",
+        "influential",
+        "providential",
+        "circumstantial"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ward",
+      "meaning": "direction of",
+      "part_of_speech": [
+        "adjective",
+        "adverb"
+      ],
+      "keyword": "skyward",
+      "associated_words": [
+        "skyward",
+        "northward",
+        "upward",
+        "forward",
+        "seaward",
+        "afterward",
+        "homeward",
+        "backward",
+        "southward",
+        "downward",
+        "toward",
+        "leeward",
+        "onward",
+        "inward"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ster",
+      "meaning": "person who",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "youngster",
+      "associated_words": [
+        "youngster",
+        "teamster",
+        "monster",
+        "spinster",
+        "prankster",
+        "oldster",
+        "songster",
+        "gangster",
+        "mobster"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-tuate",
+      "meaning": "not stated on card",
+      "part_of_speech": [
+        "verb"
+      ],
+      "keyword": "punctuate",
+      "associated_words": [
+        "punctuate",
+        "saturate",
+        "fluctuate",
+        "infatuate",
+        "situate"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG",
+      "notes": "The card prints only the part of speech beneath the heading."
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-th",
+      "meaning": "ordinal number, state, quality",
+      "part_of_speech": [
+        "noun",
+        "adjective"
+      ],
+      "keyword": "fifth",
+      "associated_words": [
+        "fifth",
+        "sixth",
+        "tenth",
+        "breadth",
+        "width",
+        "depth",
+        "wealth",
+        "truth",
+        "growth",
+        "strength",
+        "length"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ure",
+      "meaning": "state of, result of",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "keyword": "figure",
+      "associated_words": [
+        "figure",
+        "tenure",
+        "failure",
+        "fissure",
+        "composure",
+        "measure",
+        "treasure",
+        "pressure",
+        "erasure",
+        "pleasure",
+        "procedure"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-some",
+      "meaning": "tending to, group",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "keyword": "venturesome",
+      "associated_words": [
+        "venturesome",
+        "twosome",
+        "handsome",
+        "lonesome",
+        "wholesome",
+        "tiresome",
+        "burdensome",
+        "fearsome",
+        "bothersome"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-tual",
+      "meaning": "not stated on card",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "keyword": "punctual",
+      "associated_words": [
+        "punctual",
+        "factual",
+        "perpetual",
+        "mutual",
+        "ritual",
+        "spiritual",
+        "intellectual",
+        "habitual",
+        "effectual",
+        "eventual",
+        "actual"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG",
+      "notes": "The card prints only the part of speech beneath the heading."
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ture",
+      "meaning": "state of, result of",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "keyword": "future",
+      "associated_words": [
+        "future",
+        "picture",
+        "moisture",
+        "capture",
+        "creature",
+        "rupture",
+        "vulture",
+        "temperature",
+        "departure",
+        "manufacture",
+        "furniture",
+        "feature",
+        "lecture",
+        "pasture",
+        "gesture",
+        "nature",
+        "mixture",
+        "structure",
+        "rapture",
+        "culture",
+        "sculpture",
+        "fixture",
+        "fracture"
+      ],
+      "excluded_words": [
+        {
+          "word": "torture",
+          "reason": "violent; not selected automatically for student-facing lessons"
+        }
+      ],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ule",
+      "meaning": "small",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "keyword": "nodule",
+      "associated_words": [
+        "nodule",
+        "capsule",
+        "granule",
+        "molecule",
+        "module",
+        "ridicule",
+        "schedule",
+        "minuscule"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7659.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-sion",
+      "meaning": "state of, act of, result of",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "suspension",
+      "associated_words": [
+        "suspension",
+        "permission",
+        "invasion",
+        "procession",
+        "progression",
+        "confusion",
+        "expansion",
+        "television",
+        "fusion",
+        "impression",
+        "division",
+        "recession",
+        "depression",
+        "evasion",
+        "pension",
+        "vision",
+        "mansion",
+        "session"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-s",
+      "meaning": "plural",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "cats",
+      "associated_words": [],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG",
+      "notes": "No associated words are printed on this card. The keyword cats is an editor-supplied school-friendly example, not a printed card word."
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ory",
+      "meaning": "place where, relating, quality",
+      "part_of_speech": [
+        "noun",
+        "adjective"
+      ],
+      "keyword": "memory",
+      "associated_words": [
+        "memory",
+        "dormitory",
+        "depository",
+        "compulsory",
+        "reformatory",
+        "directory",
+        "factory",
+        "victory",
+        "sensory",
+        "category",
+        "history",
+        "mandatory"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ship",
+      "meaning": "quality, state, office",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "hardship",
+      "associated_words": [
+        "hardship",
+        "fellowship",
+        "friendship",
+        "dictatorship",
+        "sportsmanship",
+        "authorship",
+        "championship",
+        "kingship",
+        "township",
+        "lordship",
+        "courtship"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-osity",
+      "meaning": "quality of",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "verbosity",
+      "associated_words": [
+        "verbosity",
+        "generosity",
+        "curiosity",
+        "luminosity"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ous",
+      "meaning": "having, full of",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "dangerous",
+      "associated_words": [
+        "dangerous",
+        "tremendous",
+        "covetous",
+        "courageous",
+        "nervous",
+        "prosperous",
+        "strenuous",
+        "rigorous",
+        "numerous",
+        "ruinous",
+        "generous",
+        "thunderous",
+        "joyous",
+        "humorous",
+        "glamorous"
+      ],
+      "excluded_words": [
+        {
+          "word": "murderous",
+          "reason": "violent default example"
+        }
+      ],
+      "source_image": "IMG_7660.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-or",
+      "meaning": "one who, that which",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "operator",
+      "associated_words": [
+        "valour",
+        "operator",
+        "error",
+        "educator",
+        "professor",
+        "tutor",
+        "equator",
+        "labour",
+        "ancestor",
+        "tractor",
+        "terror",
+        "incubator",
+        "dictator",
+        "conductor",
+        "actor",
+        "honour",
+        "doctor",
+        "victor",
+        "colour",
+        "favour"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG",
+      "notes": "Australian spellings replace valor, labor, honor, color and favor."
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ness",
+      "meaning": "state of",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "greatness",
+      "associated_words": [
+        "greatness",
+        "happiness",
+        "sharpness",
+        "ripeness",
+        "goodness",
+        "business",
+        "coarseness",
+        "restlessness",
+        "shyness",
+        "sameness",
+        "fitness",
+        "weakness",
+        "kindness",
+        "slimness",
+        "thickness",
+        "conciseness",
+        "lifelessness"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-mony",
+      "meaning": "result of, action",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "testimony",
+      "associated_words": [
+        "testimony",
+        "matrimony",
+        "ceremony",
+        "harmony",
+        "acrimony",
+        "alimony"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-most",
+      "meaning": "most",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "topmost",
+      "associated_words": [
+        "topmost",
+        "foremost",
+        "uppermost",
+        "utmost",
+        "outmost",
+        "innermost"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ment",
+      "meaning": "act of, state of, result of",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "appointment",
+      "associated_words": [
+        "appointment",
+        "employment",
+        "testament",
+        "statement",
+        "attainment",
+        "contentment",
+        "instrument",
+        "confinement",
+        "compliment",
+        "nourishment",
+        "apartment",
+        "alignment"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ling",
+      "meaning": "very small",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "yearling",
+      "associated_words": [
+        "yearling",
+        "duckling",
+        "fledgling",
+        "foundling",
+        "seedling",
+        "nestling",
+        "underling",
+        "gosling",
+        "darling"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-let",
+      "meaning": "small",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "booklet",
+      "associated_words": [
+        "booklet",
+        "hamlet",
+        "doublet",
+        "pamphlet",
+        "tablet",
+        "leaflet",
+        "outlet",
+        "piglet",
+        "inlet",
+        "gauntlet"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ly",
+      "meaning": "like, manner of",
+      "part_of_speech": [
+        "adverb",
+        "adjective"
+      ],
+      "keyword": "narrowly",
+      "associated_words": [
+        "narrowly",
+        "kindly",
+        "sharply",
+        "madly",
+        "nicely",
+        "recently",
+        "widely",
+        "bravely",
+        "finely",
+        "partly",
+        "sadly",
+        "lovely",
+        "brotherly",
+        "mildly",
+        "slowly",
+        "largely",
+        "gently",
+        "closely",
+        "likely",
+        "completely"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-less",
+      "meaning": "without",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "pointless",
+      "associated_words": [
+        "shameless",
+        "pointless",
+        "noiseless",
+        "painless",
+        "sleepless",
+        "thoughtless",
+        "smokeless",
+        "hopeless",
+        "bookless",
+        "blameless",
+        "harmless",
+        "countless",
+        "joyless",
+        "restless",
+        "careless"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7660.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ian",
+      "meaning": "related to",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "guardian",
+      "associated_words": [
+        "guardian",
+        "librarian",
+        "pedestrian",
+        "comedian",
+        "ruffian",
+        "historian",
+        "custodian",
+        "amphibian"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ial",
+      "meaning": "related to",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "jovial",
+      "associated_words": [
+        "jovial",
+        "trivial",
+        "colonial",
+        "industrial",
+        "remedial",
+        "custodial",
+        "denial",
+        "material",
+        "janitorial"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ia",
+      "meaning": "related to",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "criteria",
+      "associated_words": [
+        "criteria",
+        "gardenia",
+        "dysgraphia",
+        "insomnia",
+        "malaria",
+        "amnesia",
+        "anaemia",
+        "petunia"
+      ],
+      "excluded_words": [
+        {
+          "word": "bulimia",
+          "reason": "sensitive eating-disorder term"
+        },
+        {
+          "word": "hysteria",
+          "reason": "potentially stigmatising historical usage"
+        }
+      ],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ium",
+      "meaning": "chemical element, obscure",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "helium",
+      "associated_words": [
+        "helium",
+        "plutonium",
+        "magnesium",
+        "condominium",
+        "auditorium",
+        "emporium",
+        "equilibrium",
+        "radium",
+        "sodium",
+        "potassium",
+        "premium",
+        "delirium",
+        "stadium"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ite",
+      "meaning": "native of, quality, mineral",
+      "part_of_speech": [
+        "noun",
+        "adjective"
+      ],
+      "keyword": "graphite",
+      "associated_words": [
+        "graphite",
+        "pyrite",
+        "appetite",
+        "favourite",
+        "definite",
+        "dynamite",
+        "exquisite",
+        "granite",
+        "composite",
+        "suburbanite",
+        "hypocrite",
+        "infinite"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ior",
+      "meaning": "resembling, origin",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "keyword": "warrior",
+      "associated_words": [
+        "warrior",
+        "inferior",
+        "junior",
+        "saviour",
+        "exterior",
+        "behaviour",
+        "superior",
+        "senior",
+        "posterior",
+        "interior"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ion",
+      "meaning": "act of, state of",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "rebellion",
+      "associated_words": [
+        "rebellion",
+        "champion",
+        "companion",
+        "scorpion",
+        "cushion",
+        "opinion",
+        "oblivion",
+        "communion",
+        "stallion",
+        "dominion",
+        "religion",
+        "fashion",
+        "trillion",
+        "bunion",
+        "onion",
+        "million",
+        "union",
+        "legion",
+        "carrion"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ine",
+      "meaning": "relating to, of, like, chemical substance",
+      "part_of_speech": [
+        "noun",
+        "adjective"
+      ],
+      "keyword": "genuine",
+      "associated_words": [
+        "genuine",
+        "routine",
+        "discipline",
+        "engine",
+        "feminine",
+        "turpentine",
+        "heroine",
+        "imagine",
+        "marine",
+        "ravine",
+        "famine",
+        "medicine",
+        "doctrine",
+        "examine",
+        "sardine",
+        "masculine"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ile",
+      "meaning": "capable of, resembling",
+      "part_of_speech": [
+        "noun",
+        "adjective"
+      ],
+      "keyword": "agile",
+      "associated_words": [
+        "agile",
+        "hostile",
+        "virile",
+        "missile",
+        "fertile",
+        "futile",
+        "mobile",
+        "fragile",
+        "textile",
+        "reptile",
+        "facile",
+        "infantile"
+      ],
+      "excluded_words": [
+        {
+          "word": "imbecile",
+          "reason": "outdated ableist slur"
+        },
+        {
+          "word": "senile",
+          "reason": "potentially ageist description"
+        }
+      ],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-id",
+      "meaning": "state or condition",
+      "part_of_speech": [
+        "noun",
+        "adjective"
+      ],
+      "keyword": "timid",
+      "associated_words": [
+        "timid",
+        "rigid",
+        "rapid",
+        "vivid",
+        "tepid",
+        "putrid",
+        "morbid",
+        "livid",
+        "horrid",
+        "lucid",
+        "turbid",
+        "frigid",
+        "sordid",
+        "pyramid",
+        "insipid",
+        "invalid",
+        "intrepid",
+        "orchid",
+        "aphid",
+        "valid"
+      ],
+      "excluded_words": [
+        {
+          "word": "stupid",
+          "reason": "insulting default example"
+        }
+      ],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ice",
+      "meaning": "state or quality",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "service",
+      "associated_words": [
+        "service",
+        "notice",
+        "justice",
+        "precipice",
+        "apprentice",
+        "cowardice",
+        "novice",
+        "crevice",
+        "prejudice",
+        "hospice",
+        "avarice",
+        "artifice",
+        "jaundice",
+        "accomplice",
+        "pumice",
+        "lattice"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ic",
+      "meaning": "nature of, like, chemical terms",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "keyword": "magic",
+      "associated_words": [
+        "magic",
+        "artistic",
+        "heroic",
+        "drastic",
+        "domestic",
+        "poetic",
+        "tragic",
+        "rustic",
+        "acidic",
+        "gigantic",
+        "electric",
+        "allergic",
+        "music",
+        "civic",
+        "sonic",
+        "tonic",
+        "chronic",
+        "ferric"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ize",
+      "meaning": "make",
+      "part_of_speech": [
+        "verb"
+      ],
+      "keyword": "categorise",
+      "associated_words": [
+        "categorise",
+        "memorise",
+        "mesmerise",
+        "verbalise",
+        "civilise",
+        "baptise",
+        "itemise",
+        "idolise",
+        "realise",
+        "authorise",
+        "emphasise",
+        "centralise",
+        "modernise",
+        "neutralise",
+        "vocalise"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7661.JPG",
+      "notes": "The physical heading is -ize. Australian school forms generally use -ise; both -ise and -ize occur in Australian English."
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ive",
+      "meaning": "relating to, like",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "active",
+      "associated_words": [
+        "active",
+        "primitive",
+        "sensitive",
+        "explosive",
+        "negative",
+        "fugitive",
+        "restrictive",
+        "inquisitive",
+        "expensive",
+        "native",
+        "excessive",
+        "abusive",
+        "assertive",
+        "massive",
+        "exhaustive",
+        "positive",
+        "successive",
+        "aggressive",
+        "affirmative",
+        "cooperative"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ity",
+      "meaning": "state, quality",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "gravity",
+      "associated_words": [
+        "gravity",
+        "dignity",
+        "activity",
+        "fraternity",
+        "clarity",
+        "minority",
+        "curiosity",
+        "sincerity",
+        "humidity",
+        "rapidity",
+        "necessity",
+        "authority",
+        "majority",
+        "captivity",
+        "eternity",
+        "festivity",
+        "amenity",
+        "security",
+        "personality",
+        "reality"
+      ],
+      "excluded_words": [
+        {
+          "word": "insanity",
+          "reason": "potentially stigmatising mental-health term"
+        }
+      ],
+      "source_image": "IMG_7661.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ent",
+      "meaning": "state, quality, one who",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "keyword": "precedent",
+      "associated_words": [
+        "precedent",
+        "prominent",
+        "detergent",
+        "inherent",
+        "negligent",
+        "confident",
+        "intelligent",
+        "cogent",
+        "permanent",
+        "evident",
+        "expedient",
+        "current",
+        "consistent",
+        "resident",
+        "president",
+        "coherent"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-et",
+      "meaning": "small",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "trinket",
+      "associated_words": [
+        "trinket",
+        "pocket",
+        "tablet",
+        "jacket",
+        "bucket",
+        "blanket",
+        "picket",
+        "basket",
+        "hatchet",
+        "owlet"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ery",
+      "meaning": "relating to, place where",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "machinery",
+      "associated_words": [
+        "machinery",
+        "delivery",
+        "treachery",
+        "imagery",
+        "grocery",
+        "cutlery",
+        "misery",
+        "discovery",
+        "surgery",
+        "archery",
+        "mockery",
+        "pottery",
+        "drapery",
+        "bravery",
+        "robbery",
+        "slavery",
+        "winery",
+        "celery",
+        "forgery"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ency",
+      "meaning": "state, quality",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "regency",
+      "associated_words": [
+        "regency",
+        "pungency",
+        "frequency",
+        "emergency",
+        "decency",
+        "tendency",
+        "urgency",
+        "contingency",
+        "ascendency",
+        "potency",
+        "cogency"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ence",
+      "meaning": "state, quality",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "existence",
+      "associated_words": [
+        "existence",
+        "presence",
+        "influence",
+        "transference",
+        "consequence",
+        "dependence",
+        "magnificence",
+        "independence",
+        "competence",
+        "convenience",
+        "difference",
+        "conference"
+      ],
+      "excluded_words": [
+        {
+          "word": "innocence",
+          "reason": "usable but less transparent for morphology instruction"
+        },
+        {
+          "word": "violence",
+          "reason": "violent default example"
+        }
+      ],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-hood",
+      "meaning": "state, condition",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "knighthood",
+      "associated_words": [
+        "knighthood",
+        "brotherhood",
+        "motherhood",
+        "livelihood",
+        "childhood",
+        "statehood",
+        "boyhood",
+        "manhood",
+        "sainthood",
+        "sisterhood"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-fy",
+      "meaning": "to make",
+      "part_of_speech": [
+        "verb"
+      ],
+      "keyword": "amplify",
+      "associated_words": [
+        "amplify",
+        "qualify",
+        "calcify",
+        "ratify",
+        "diversify",
+        "unify",
+        "purify",
+        "fortify",
+        "signify",
+        "specify",
+        "verify",
+        "simplify",
+        "identify",
+        "testify"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ful",
+      "meaning": "full of, having",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "successful",
+      "associated_words": [
+        "successful",
+        "hopeful",
+        "careful",
+        "forceful",
+        "pitiful",
+        "powerful",
+        "grateful",
+        "restful",
+        "tearful",
+        "deceitful",
+        "doubtful",
+        "cheerful",
+        "cupful",
+        "shameful",
+        "beautiful",
+        "vengeful"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ee",
+      "meaning": "one who",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "devotee",
+      "associated_words": [
+        "devotee",
+        "refugee",
+        "absentee",
+        "payee",
+        "nominee",
+        "appointee",
+        "addressee",
+        "deportee",
+        "trustee",
+        "employee",
+        "referee",
+        "divorcee",
+        "mortgagee"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-eous",
+      "meaning": "having, full of",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "erroneous",
+      "associated_words": [
+        "erroneous",
+        "gaseous",
+        "hideous",
+        "igneous",
+        "courteous",
+        "heterogeneous",
+        "bounteous",
+        "gorgeous"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ist",
+      "meaning": "person who",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "scientist",
+      "associated_words": [
+        "scientist",
+        "sociologist",
+        "optometrist",
+        "violinist",
+        "humorist",
+        "florist",
+        "geologist",
+        "naturalist",
+        "biologist",
+        "journalist",
+        "botanist",
+        "chemist",
+        "cellist",
+        "typist",
+        "artist",
+        "dentist",
+        "psychologist"
+      ],
+      "excluded_words": [
+        {
+          "word": "racist",
+          "reason": "not a suitable default keyword/example"
+        }
+      ],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ism",
+      "meaning": "belief, doctrine, condition",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "mannerism",
+      "associated_words": [
+        "mannerism",
+        "despotism",
+        "hypnotism",
+        "capitalism",
+        "metabolism",
+        "optimism",
+        "organism",
+        "heroism",
+        "realism",
+        "jingoism",
+        "stoicism",
+        "nationalism",
+        "communism",
+        "pessimism",
+        "plagiarism"
+      ],
+      "excluded_words": [
+        {
+          "word": "Nazism",
+          "reason": "sensitive historical ideology; use only in an appropriate history context"
+        },
+        {
+          "word": "alcoholism",
+          "reason": "sensitive health term; not a default morphology example"
+        }
+      ],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ish",
+      "meaning": "resembling, origin",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "foolish",
+      "associated_words": [
+        "foolish",
+        "childish",
+        "Danish",
+        "sheepish",
+        "brutish",
+        "greyish",
+        "outlandish",
+        "clownish",
+        "greenish",
+        "Swedish",
+        "vanish",
+        "selfish",
+        "publish",
+        "boyish",
+        "feverish",
+        "Irish",
+        "banish",
+        "famish"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ing",
+      "meaning": "action - present tense",
+      "part_of_speech": [
+        "verb"
+      ],
+      "keyword": "spending",
+      "associated_words": [
+        "spending",
+        "hunting",
+        "renting",
+        "mending",
+        "sanding",
+        "fishing",
+        "drinking",
+        "singing",
+        "masking",
+        "lunching",
+        "raining",
+        "failing",
+        "sailing",
+        "saying",
+        "joining",
+        "sleeping",
+        "feeding",
+        "speaking",
+        "growing",
+        "feeling",
+        "dealing"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ible",
+      "meaning": "able",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "sensible",
+      "associated_words": [
+        "sensible",
+        "forcible",
+        "terrible",
+        "accessible",
+        "collectible",
+        "permissible",
+        "legible",
+        "possible",
+        "credible",
+        "conducible",
+        "convertible",
+        "flexible"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7662.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-en",
+      "meaning": "made of",
+      "part_of_speech": [
+        "adjective",
+        "verb"
+      ],
+      "keyword": "frighten",
+      "associated_words": [
+        "frighten",
+        "frozen",
+        "soften",
+        "tighten",
+        "molten",
+        "sicken",
+        "happen",
+        "lengthen",
+        "whiten",
+        "toughen",
+        "woollen",
+        "brazen",
+        "sharpen",
+        "wooden",
+        "golden",
+        "broaden"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-eer",
+      "meaning": "one who",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "keyword": "engineer",
+      "associated_words": [
+        "engineer",
+        "pioneer",
+        "volunteer",
+        "profiteer"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-cious",
+      "meaning": "full of, having",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "officious",
+      "associated_words": [
+        "officious",
+        "delicious",
+        "pernicious",
+        "judicious",
+        "malicious",
+        "mendacious",
+        "conscious",
+        "suspicious",
+        "pugnacious",
+        "auspicious",
+        "audacious",
+        "precocious",
+        "fallacious",
+        "spacious",
+        "vicious",
+        "precious"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ary",
+      "meaning": "relating to; place",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "keyword": "arbitrary",
+      "associated_words": [
+        "arbitrary",
+        "documentary",
+        "dictionary",
+        "commentary",
+        "momentary",
+        "vocabulary",
+        "stationary",
+        "boundary",
+        "library",
+        "ordinary",
+        "visionary",
+        "summary",
+        "temporary",
+        "voluntary",
+        "diary",
+        "military",
+        "primary",
+        "salary",
+        "necessary",
+        "secretary"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-est",
+      "meaning": "superlative",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "biggest",
+      "associated_words": [
+        "biggest",
+        "lowest",
+        "darkest",
+        "proudest",
+        "strongest",
+        "youngest",
+        "tallest",
+        "highest",
+        "deepest",
+        "wildest",
+        "sharpest",
+        "fastest",
+        "smallest",
+        "largest",
+        "weakest",
+        "cheapest",
+        "oldest",
+        "warmest"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ed",
+      "meaning": "past tense",
+      "part_of_speech": [
+        "verb"
+      ],
+      "keyword": "helped",
+      "associated_words": [
+        "helped",
+        "smelled",
+        "mended",
+        "stamped",
+        "refrained",
+        "dripped",
+        "blocked",
+        "roamed",
+        "loaned",
+        "rented",
+        "granted",
+        "bumped",
+        "cooked",
+        "handed",
+        "graded",
+        "sneered",
+        "hunted",
+        "lifted",
+        "reached",
+        "stopped",
+        "landed"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-cient",
+      "meaning": "quality or state of",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "proficient",
+      "associated_words": [
+        "proficient",
+        "omniscient",
+        "deficient",
+        "sufficient",
+        "efficient",
+        "ancient"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ard",
+      "meaning": "obscure",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "wizard",
+      "associated_words": [
+        "wizard",
+        "mustard",
+        "custard",
+        "haggard",
+        "standard",
+        "orchard",
+        "hazard",
+        "gizzard",
+        "placard"
+      ],
+      "excluded_words": [
+        {
+          "word": "coward",
+          "reason": "potentially insulting default example"
+        }
+      ],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-es",
+      "meaning": "plural",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "matches",
+      "associated_words": [
+        "matches",
+        "lunches",
+        "branches",
+        "patches",
+        "inches",
+        "wishes",
+        "dishes",
+        "brushes",
+        "crosses",
+        "classes",
+        "dresses",
+        "bosses",
+        "taxes",
+        "boxes",
+        "foxes",
+        "flies",
+        "pennies",
+        "puppies",
+        "candies"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-dom",
+      "meaning": "state, quality",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "freedom",
+      "associated_words": [
+        "freedom",
+        "boredom",
+        "random",
+        "earldom",
+        "serfdom",
+        "stardom",
+        "kingdom",
+        "wisdom",
+        "martyrdom"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ciate",
+      "meaning": "to make",
+      "part_of_speech": [
+        "verb"
+      ],
+      "keyword": "officiate",
+      "associated_words": [
+        "officiate",
+        "emaciate",
+        "depreciate",
+        "excruciate",
+        "dissociate",
+        "glaciate",
+        "appreciate",
+        "enunciate",
+        "associate",
+        "denunciate"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ar",
+      "meaning": "relating to",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "keyword": "angular",
+      "associated_words": [
+        "angular",
+        "cellar",
+        "muscular",
+        "solar",
+        "lunar",
+        "beggar",
+        "collar",
+        "regular",
+        "sugar",
+        "liar",
+        "burglar",
+        "calendar",
+        "stellar",
+        "grammar",
+        "nectar"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ess",
+      "meaning": "feminine",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "countess",
+      "associated_words": [
+        "countess",
+        "lioness",
+        "goddess",
+        "baroness",
+        "governess",
+        "duchess",
+        "hostess",
+        "seamstress",
+        "priestess",
+        "stewardess",
+        "poetess",
+        "waitress",
+        "heiress",
+        "princess"
+      ],
+      "excluded_words": [
+        {
+          "word": "mistress",
+          "reason": "ambiguous adult meaning; not a default school example"
+        }
+      ],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-cial",
+      "meaning": "related to",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "facial",
+      "associated_words": [
+        "facial",
+        "special",
+        "crucial",
+        "judicial",
+        "glacial",
+        "sacrificial",
+        "provincial",
+        "financial",
+        "racial",
+        "commercial",
+        "beneficial",
+        "artificial"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-cian",
+      "meaning": "person who",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "tactician",
+      "associated_words": [
+        "tactician",
+        "physician",
+        "musician",
+        "beautician",
+        "diagnostician",
+        "mathematician",
+        "optician",
+        "magician",
+        "technician",
+        "politician",
+        "mortician"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ant",
+      "meaning": "one who or that which",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "keyword": "accountant",
+      "associated_words": [
+        "accountant",
+        "occupant",
+        "dominant",
+        "hesitant",
+        "significant",
+        "descendant",
+        "applicant",
+        "vacant",
+        "servant",
+        "contestant",
+        "merchant",
+        "tyrant",
+        "tenant",
+        "pliant",
+        "important",
+        "emigrant",
+        "truant"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-er",
+      "meaning": "person, thing, comparing",
+      "part_of_speech": [
+        "noun",
+        "adjective"
+      ],
+      "keyword": "teacher",
+      "associated_words": [
+        "teacher",
+        "importer",
+        "painter",
+        "broiler",
+        "harder",
+        "slower",
+        "reporter",
+        "shoulder",
+        "sleeper",
+        "roaster",
+        "longer",
+        "faster",
+        "weather",
+        "speller",
+        "singer",
+        "renter",
+        "darker",
+        "softer",
+        "smaller"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-cy",
+      "meaning": "quality, state",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "infancy",
+      "associated_words": [
+        "infancy",
+        "normalcy",
+        "bankruptcy",
+        "policy",
+        "secrecy",
+        "prophecy"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ate",
+      "meaning": "relating to, to make, one who/that which",
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "keyword": "graduate",
+      "associated_words": [
+        "graduate",
+        "emanate",
+        "deviate",
+        "moderate",
+        "emancipate",
+        "private",
+        "decorate",
+        "educate",
+        "dictate",
+        "dedicate",
+        "integrate",
+        "climate",
+        "advocate",
+        "fascinate",
+        "enumerate",
+        "segregate",
+        "senate"
+      ],
+      "excluded_words": [
+        {
+          "word": "intimate",
+          "reason": "context-sensitive; not selected automatically for student-facing lessons"
+        }
+      ],
+      "source_image": "IMG_7663.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ade",
+      "meaning": "action, fruit drink",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "lemonade",
+      "associated_words": [
+        "stockade",
+        "blockade",
+        "brocade",
+        "serenade",
+        "lemonade",
+        "accolade",
+        "cavalcade",
+        "parade",
+        "renegade",
+        "masquerade"
+      ],
+      "excluded_words": [
+        {
+          "word": "grenade",
+          "reason": "weapon-related; not selected automatically for student-facing lessons"
+        }
+      ],
+      "source_image": "IMG_7664.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ancy",
+      "meaning": "quality, state of",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "vacancy",
+      "associated_words": [
+        "vacancy",
+        "discrepancy",
+        "hesitancy",
+        "occupancy",
+        "flagrancy",
+        "infancy",
+        "expectancy",
+        "truancy",
+        "constancy"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7664.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ac",
+      "meaning": "related to",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "keyword": "cardiac",
+      "associated_words": [
+        "cardiac",
+        "almanac",
+        "haemophiliac",
+        "zodiac"
+      ],
+      "excluded_words": [
+        {
+          "word": "maniac",
+          "reason": "potentially stigmatising label; avoid as a default keyword"
+        }
+      ],
+      "source_image": "IMG_7664.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-an",
+      "meaning": "relating to, person",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "keyword": "Mexican",
+      "associated_words": [
+        "Cuban",
+        "Mexican",
+        "Alaskan",
+        "partisan",
+        "American",
+        "Roman",
+        "African",
+        "urban"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7664.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ance",
+      "meaning": "state of, quality of",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "substance",
+      "associated_words": [
+        "substance",
+        "alliance",
+        "accordance",
+        "entrance",
+        "clearance",
+        "endurance",
+        "avoidance",
+        "continuance",
+        "annoyance",
+        "performance",
+        "arrogance",
+        "assistance",
+        "elegance"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7664.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-al",
+      "meaning": "relating to",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "animal",
+      "associated_words": [
+        "animal",
+        "cerebral",
+        "vocal",
+        "infernal",
+        "normal",
+        "aural",
+        "formal",
+        "tidal",
+        "mental",
+        "referral",
+        "frontal",
+        "usual",
+        "sensual",
+        "natural",
+        "legal",
+        "optional",
+        "phenomenal"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7664.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-ation",
+      "meaning": "state of, result of",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "adaptation",
+      "associated_words": [
+        "adaptation",
+        "appreciation",
+        "duration",
+        "communication",
+        "commendation",
+        "valuation",
+        "operation",
+        "taxation",
+        "variation",
+        "probation",
+        "plantation",
+        "organisation",
+        "examination",
+        "exportation",
+        "negotiation",
+        "imagination",
+        "combination"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7664.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-age",
+      "meaning": "relating to, state of, result of",
+      "part_of_speech": [
+        "noun"
+      ],
+      "keyword": "damage",
+      "associated_words": [
+        "damage",
+        "courage",
+        "message",
+        "pillage",
+        "language",
+        "forage",
+        "advantage",
+        "carriage",
+        "bandage",
+        "salvage",
+        "visage",
+        "cottage",
+        "average",
+        "cabbage",
+        "image",
+        "voyage",
+        "storage",
+        "village",
+        "passage",
+        "breakage"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7664.JPG"
+    },
+    {
+      "type": "suffix",
+      "catalogue_file": "yoshimoto_cards_suffixes.json",
+      "morpheme": "-able",
+      "meaning": "able to",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "keyword": "fixable",
+      "associated_words": [
+        "fixable",
+        "bendable",
+        "usable",
+        "trainable",
+        "readable",
+        "suitable",
+        "portable",
+        "adaptable",
+        "workable",
+        "payable",
+        "movable",
+        "touchable",
+        "expendable",
+        "remarkable",
+        "dependable"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7664.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "with-",
+      "meaning": "against, away, back",
+      "keyword": "withdraw",
+      "associated_words": [
+        "withdraw",
+        "withhold",
+        "without",
+        "withstand"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "tri-",
+      "meaning": "three",
+      "origin": "Latin and Greek",
+      "keyword": "triad",
+      "associated_words": [
+        "triad",
+        "triathlon",
+        "triceps",
+        "tricentennial",
+        "trident",
+        "triceratops",
+        "trifocal",
+        "tricolour",
+        "triennial",
+        "trilogy",
+        "trimester",
+        "triple",
+        "triplet",
+        "triplicate",
+        "tripod",
+        "triumvirate",
+        "trisect"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "syn-",
+      "meaning": "with, together",
+      "origin": "Greek",
+      "keyword": "synagogue",
+      "associated_words": [
+        "synagogue",
+        "synchronise",
+        "syncopate",
+        "synthesis",
+        "synapse",
+        "synopsis",
+        "syndicate",
+        "syntax",
+        "synonym",
+        "syndrome",
+        "synergism"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "sum-",
+      "meaning": "below, under",
+      "keyword": "summit",
+      "associated_words": [
+        "summit",
+        "summon",
+        "summitry"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG",
+      "notes": "Card labels sum- as a chameleon form of sub-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "uni-",
+      "meaning": "one",
+      "origin": "Latin",
+      "keyword": "unicameral",
+      "associated_words": [
+        "unicameral",
+        "unicycle",
+        "unisex",
+        "unify",
+        "unit",
+        "unite",
+        "unicorn",
+        "unison",
+        "univalve",
+        "universe",
+        "university",
+        "unilateral",
+        "uniform",
+        "unity"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "tetra-",
+      "meaning": "four",
+      "origin": "Greek",
+      "keyword": "tetrahedron",
+      "associated_words": [
+        "tetrahedron"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "sys-",
+      "meaning": "with, together",
+      "origin": "Greek",
+      "keyword": "system",
+      "associated_words": [
+        "system",
+        "systematic",
+        "systolic"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG",
+      "notes": "Card labels sys- as a chameleon form of syn-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "sug-",
+      "meaning": "below, under",
+      "keyword": "suggestion",
+      "associated_words": [
+        "suggestion",
+        "suggest",
+        "suggestive",
+        "suggestible"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG",
+      "notes": "Card labels sug- as a chameleon form of sub-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "un-",
+      "meaning": "not, without",
+      "keyword": "unarmed",
+      "associated_words": [
+        "unarmed",
+        "unbutton",
+        "uncover",
+        "uncertain",
+        "uncharted",
+        "unpopular",
+        "unstructured",
+        "unravel",
+        "unbend",
+        "unwise",
+        "unload",
+        "untidy",
+        "undress",
+        "unemployed",
+        "unfortunate",
+        "uncomfortable",
+        "unbroken",
+        "unlucky",
+        "unknown",
+        "unequal"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "super-",
+      "meaning": "above, beyond, greater than",
+      "keyword": "superabundant",
+      "associated_words": [
+        "superabundant",
+        "superintendent",
+        "superimpose",
+        "supermarket",
+        "superficial",
+        "superlative",
+        "supercargo",
+        "superhuman",
+        "supersonic",
+        "supervise",
+        "superfluous",
+        "supercharge"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "sex-",
+      "meaning": "six",
+      "origin": "Latin",
+      "keyword": "semester",
+      "associated_words": [
+        "semester",
+        "sextant",
+        "sextet"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG",
+      "notes": "The card explicitly glosses semester as 6 months and sextant as a sixth part of a circle."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "sept-/septem-/sep-",
+      "meaning": "seven",
+      "origin": "Latin",
+      "keyword": "September",
+      "associated_words": [
+        "September"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "ultra-",
+      "meaning": "beyond, excessively",
+      "keyword": "ultraconservative",
+      "associated_words": [
+        "ultraconservative",
+        "ultrasound",
+        "ultraviolet",
+        "ultrasonic"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "syl-",
+      "meaning": "with, together",
+      "origin": "Greek",
+      "keyword": "syllable",
+      "associated_words": [
+        "syllable",
+        "syllabus",
+        "syllogism",
+        "syllabicate"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG",
+      "notes": "Card labels syl- as a chameleon form of syn-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "sur-",
+      "meaning": "below, under; beyond, over",
+      "keyword": "surrogate",
+      "associated_words": [
+        "surrogate",
+        "surreptitious",
+        "surprise",
+        "surface",
+        "surpass",
+        "surfeit",
+        "surplus",
+        "surround",
+        "survey",
+        "surmount",
+        "survive"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG",
+      "notes": "Card labels sur- as a chameleon form of sub- and also prints the separate sense beyond, over."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "suf-",
+      "meaning": "below, under",
+      "keyword": "suffice",
+      "associated_words": [
+        "suffice",
+        "suffer",
+        "suffix",
+        "sufficient",
+        "suffuse",
+        "suffrage"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG",
+      "notes": "Card labels suf- as a chameleon form of sub-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "trans-",
+      "meaning": "across, over, through",
+      "keyword": "transaction",
+      "associated_words": [
+        "transaction",
+        "transcribe",
+        "transform",
+        "transgress",
+        "translucent",
+        "transmit",
+        "transpire",
+        "transverse",
+        "transcend",
+        "transfer",
+        "transfuse",
+        "transistor",
+        "transmission",
+        "transparent",
+        "transport",
+        "transcription"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "sym-",
+      "meaning": "with, together",
+      "origin": "Greek",
+      "keyword": "symbol",
+      "associated_words": [
+        "symbol",
+        "sympathy",
+        "symptom",
+        "symmetry",
+        "symphony",
+        "symposium"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG",
+      "notes": "Card labels sym- as a chameleon form of syn-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "sup-",
+      "meaning": "below, under",
+      "keyword": "supplant",
+      "associated_words": [
+        "supplant",
+        "supplicate",
+        "supportive",
+        "suppress",
+        "supposition",
+        "supply",
+        "support",
+        "suppose",
+        "suppression"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG",
+      "notes": "Card labels sup- as a chameleon form of sub-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "suc-",
+      "meaning": "below, under",
+      "keyword": "succumb",
+      "associated_words": [
+        "succumb",
+        "succinct",
+        "success",
+        "succour",
+        "successful",
+        "succession",
+        "successor"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7670.JPG",
+      "notes": "Card labels suc- as a chameleon form of sub-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "sub-",
+      "meaning": "below, under",
+      "keyword": "subsist",
+      "associated_words": [
+        "subsist",
+        "sublet",
+        "subject",
+        "subway",
+        "subdue",
+        "subsidise",
+        "submit",
+        "submerge",
+        "subtract",
+        "subhuman",
+        "subnormal",
+        "subarctic",
+        "subsistence",
+        "submarine",
+        "submission",
+        "substandard",
+        "substitute"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "quar-/quad-",
+      "meaning": "four",
+      "origin": "Latin",
+      "keyword": "quadrangle",
+      "associated_words": [
+        "quadrangle",
+        "quadraphonic",
+        "quadrilateral",
+        "quadruped",
+        "quadruplet",
+        "quart",
+        "quarterly",
+        "quadrant",
+        "quadrennial",
+        "quadrille",
+        "quadruple",
+        "quadruplicate",
+        "quarter",
+        "quartet"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "per-",
+      "meaning": "through, by means of",
+      "keyword": "perceive",
+      "associated_words": [
+        "perceive",
+        "perennial",
+        "permeate",
+        "perplex",
+        "persist",
+        "perfect",
+        "perhaps",
+        "perspire",
+        "persecute",
+        "permit",
+        "persevere",
+        "pervade",
+        "perambulate",
+        "perception",
+        "permission",
+        "perfunctory"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "out-",
+      "meaning": "at, from, forth, better",
+      "keyword": "outback",
+      "associated_words": [
+        "outback",
+        "outcast",
+        "outcry",
+        "outfield",
+        "outline",
+        "outmoded",
+        "outreach",
+        "outbid",
+        "outclass",
+        "outfit",
+        "outlive",
+        "outwit",
+        "outcome",
+        "outlaw",
+        "outdoor",
+        "outpatient",
+        "outnumber",
+        "outspoken",
+        "outward",
+        "outstanding",
+        "outdated"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "semi-",
+      "meaning": "half",
+      "origin": "Latin",
+      "keyword": "semiannual",
+      "associated_words": [
+        "semiannual",
+        "semicircle",
+        "semicolon",
+        "semiconductor",
+        "semiskilled",
+        "semifinal",
+        "semimonthly",
+        "semiprecious",
+        "semiprivate",
+        "semiweekly",
+        "semitropical",
+        "semitrailer",
+        "semitransparent"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "quar-/quad-",
+      "meaning": "four",
+      "origin": "Latin",
+      "keyword": "quadrangle",
+      "associated_words": [
+        "quadrangle",
+        "quadraphonic",
+        "quadrilateral",
+        "quadruped",
+        "quadruplet",
+        "quart",
+        "quarterly",
+        "quadrant",
+        "quadrennial",
+        "quadrille",
+        "quadruple",
+        "quadruplicate",
+        "quarter",
+        "quartet"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG",
+      "notes": "A duplicate physical teaching card appears in the photograph."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "post-",
+      "meaning": "after",
+      "keyword": "postdate",
+      "associated_words": [
+        "postdate",
+        "posterior",
+        "postnatal",
+        "postpone",
+        "postponement",
+        "postmeridian",
+        "postmortem",
+        "postscript",
+        "postpone"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "over-",
+      "meaning": "above, beyond, too much",
+      "keyword": "overactive",
+      "associated_words": [
+        "overactive",
+        "overcast",
+        "overeat",
+        "overrun",
+        "overthrow",
+        "overload",
+        "oversize",
+        "overcook",
+        "overlook",
+        "overtake",
+        "overambitious",
+        "overconfident",
+        "overanxious",
+        "overabundant"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "self-",
+      "meaning": "to or by oneself",
+      "keyword": "self-addressed",
+      "associated_words": [
+        "self-addressed",
+        "self-contained",
+        "self-appointed",
+        "self-interest",
+        "self-centred",
+        "self-control",
+        "self-esteem",
+        "self-starter",
+        "self-defence"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "quin-",
+      "meaning": "five",
+      "origin": "Latin",
+      "keyword": "quintet",
+      "associated_words": [
+        "quintet",
+        "quintuplet"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "poly-",
+      "meaning": "many",
+      "origin": "Greek",
+      "keyword": "polyclinic",
+      "associated_words": [
+        "polyclinic",
+        "polygamy",
+        "polyglot",
+        "polygon",
+        "polygraph",
+        "polymer",
+        "Polynesia",
+        "polyp",
+        "polyphony",
+        "polytechnic",
+        "polysyllable",
+        "polytheism"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "oct-/octa-/octo-",
+      "meaning": "eight",
+      "origin": "Latin",
+      "keyword": "octagon",
+      "associated_words": [
+        "octagon",
+        "octave",
+        "octet",
+        "October",
+        "octogenarian",
+        "octopus",
+        "octavo"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "retro-",
+      "meaning": "back, backward, behind",
+      "keyword": "retroactive",
+      "associated_words": [
+        "retroactive",
+        "retrogress",
+        "retrofire",
+        "retrospect",
+        "retrograde"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "pro-",
+      "meaning": "before, forward, for",
+      "keyword": "proceed",
+      "associated_words": [
+        "proceed",
+        "proficient",
+        "pronounce",
+        "protect",
+        "propitiate",
+        "propulsion",
+        "progress",
+        "procrastinate",
+        "procedure",
+        "profane",
+        "profess",
+        "prohibit",
+        "propose",
+        "procure",
+        "profound",
+        "prologue",
+        "produce",
+        "program",
+        "procure",
+        "promote",
+        "prospect",
+        "propel",
+        "proclaim",
+        "profuse"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "penta-",
+      "meaning": "five",
+      "origin": "Greek",
+      "keyword": "pentacle",
+      "associated_words": [
+        "pentacle",
+        "pentagon",
+        "pentameter",
+        "pentathlon"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "octo-",
+      "meaning": "eight",
+      "origin": "Greek",
+      "keyword": "octopus",
+      "associated_words": [],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG",
+      "notes": "The Greek octo- card prints no associated words. The keyword octopus is an editor-supplied school-friendly example, not a printed card word."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "re-",
+      "meaning": "again, back",
+      "keyword": "rebuild",
+      "associated_words": [
+        "rebuild",
+        "recur",
+        "reflect",
+        "refresh",
+        "regress",
+        "repel",
+        "report",
+        "resource",
+        "recharge",
+        "recycle",
+        "reform",
+        "refund",
+        "rejection",
+        "resettle",
+        "retire",
+        "relieve",
+        "reappoint",
+        "reappear",
+        "recommend",
+        "reconvene",
+        "remember",
+        "replenish",
+        "reside",
+        "remain"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "pre-",
+      "meaning": "before",
+      "keyword": "preamble",
+      "associated_words": [
+        "preamble",
+        "precept",
+        "precipice",
+        "precursor",
+        "preface",
+        "preliminary",
+        "preposition",
+        "preposterous",
+        "prearrange",
+        "precaution",
+        "precognition",
+        "predict",
+        "prefer",
+        "preconceive",
+        "preserve",
+        "prescribe",
+        "precede",
+        "precise",
+        "precinct",
+        "prefix",
+        "prepare",
+        "pretend",
+        "prewar",
+        "prevail"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "omni-",
+      "meaning": "all",
+      "keyword": "omnibus",
+      "associated_words": [
+        "omnibus",
+        "omniscient",
+        "omnipotent",
+        "omnivorous",
+        "omnipresent"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "ob-",
+      "meaning": "to, toward, against",
+      "keyword": "obdurate",
+      "associated_words": [
+        "obdurate",
+        "obfuscate",
+        "obstruct",
+        "observe",
+        "obscure",
+        "objective",
+        "object"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7671.JPG",
+      "notes": "Card labels ob- as a chameleon prefix."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "oc-",
+      "meaning": "to, toward, against",
+      "keyword": "occurrence",
+      "associated_words": [
+        "occurrence",
+        "occur",
+        "occlude",
+        "occasion",
+        "occasionally"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG",
+      "notes": "Card labels oc- as a chameleon form of ob-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "mono-",
+      "meaning": "one",
+      "origin": "Greek",
+      "keyword": "monocle",
+      "associated_words": [
+        "monocle",
+        "monogram",
+        "monolingual",
+        "monologue",
+        "monophonic",
+        "monorail",
+        "monosyllable",
+        "monotonous",
+        "monogamy",
+        "monograph",
+        "monolith",
+        "monomania",
+        "monopoly",
+        "monotheism",
+        "monotone",
+        "monoxide"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "multi-",
+      "meaning": "many",
+      "origin": "Latin",
+      "keyword": "multifarious",
+      "associated_words": [
+        "multifarious",
+        "multimillionaire",
+        "multinational",
+        "multiple",
+        "multiplex",
+        "multiplication",
+        "multiplier",
+        "multitudinous",
+        "multistate",
+        "multitude",
+        "multiplicand"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "in-",
+      "meaning": "in, into, not",
+      "keyword": "incorrect",
+      "associated_words": [
+        "incorrect",
+        "inattention",
+        "inbred",
+        "incision",
+        "indecisive",
+        "insert",
+        "inflect",
+        "infertile",
+        "inborn",
+        "incite",
+        "incubate",
+        "inedible",
+        "intent",
+        "intend",
+        "inactive",
+        "inbound",
+        "incidence",
+        "inform",
+        "injustice",
+        "invent",
+        "invest"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG",
+      "notes": "Card labels in- as a chameleon prefix."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "of-",
+      "meaning": "to, toward, against",
+      "keyword": "offensive",
+      "associated_words": [
+        "offensive",
+        "offend",
+        "offer",
+        "offering"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG",
+      "notes": "Card labels of- as a chameleon form of ob-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "mal-",
+      "meaning": "bad, wrong, ill",
+      "keyword": "malfunction",
+      "associated_words": [
+        "maladjusted",
+        "malcontent",
+        "malfunction",
+        "maladroit",
+        "malediction",
+        "malnutrition",
+        "malformation",
+        "maltreatment",
+        "malaise"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "mega-",
+      "meaning": "million",
+      "origin": "Greek",
+      "keyword": "megahertz",
+      "associated_words": [
+        "megahertz",
+        "megaton",
+        "megaunit",
+        "megawatt"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "il-",
+      "meaning": "in, into, not",
+      "keyword": "illegible",
+      "associated_words": [
+        "illegible",
+        "illegitimate",
+        "illustrate",
+        "illusion",
+        "illogical",
+        "illiterate",
+        "illuminate",
+        "illustration"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG",
+      "notes": "Card labels il- as a chameleon form of in-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "op-",
+      "meaning": "to, toward, against",
+      "keyword": "opposition",
+      "associated_words": [
+        "opposition",
+        "oppress",
+        "oppression",
+        "opposite",
+        "opponent",
+        "opportunity"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG",
+      "notes": "Card labels op- as a chameleon form of ob-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "mid-",
+      "meaning": "middle",
+      "keyword": "midair",
+      "associated_words": [
+        "midair",
+        "midland",
+        "midstream",
+        "midtown",
+        "midbrain",
+        "midnight",
+        "midday",
+        "midpoint",
+        "midsummer",
+        "midway",
+        "midterm",
+        "midweek",
+        "Midwest",
+        "midyear"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "milli-",
+      "meaning": "thousand",
+      "origin": "Latin",
+      "keyword": "millennium",
+      "associated_words": [
+        "millennium",
+        "milligram",
+        "millimetre",
+        "millipede",
+        "million"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG",
+      "notes": "The card glosses million as 1000 thousands."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "im-",
+      "meaning": "in, into, not",
+      "keyword": "imbalance",
+      "associated_words": [
+        "imbalance",
+        "imbibe",
+        "immaculate",
+        "immerse",
+        "immigrate",
+        "immovable",
+        "imminent",
+        "immutable",
+        "immortal",
+        "immunise",
+        "immense",
+        "immature",
+        "impale",
+        "impart",
+        "impact",
+        "impel",
+        "impeach",
+        "imperfect",
+        "implement",
+        "impartial",
+        "imply"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG",
+      "notes": "Card labels im- as a chameleon form of in-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "novem-",
+      "meaning": "nine",
+      "origin": "Latin",
+      "keyword": "November",
+      "associated_words": [
+        "November",
+        "novena"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG",
+      "notes": "The card glosses novena as a special prayer for 9 days."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "mini-",
+      "meaning": "small",
+      "keyword": "minibus",
+      "associated_words": [
+        "minibus",
+        "minicar",
+        "minicam",
+        "miniskirt",
+        "miniseries"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "kilo-",
+      "meaning": "thousand",
+      "origin": "Greek",
+      "keyword": "kilogram",
+      "associated_words": [
+        "kilogram",
+        "kilocycle",
+        "kilometre",
+        "kilowatt",
+        "kilohertz"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "ir-",
+      "meaning": "in, into, not",
+      "keyword": "irresponsible",
+      "associated_words": [
+        "irresponsible",
+        "irrelevant",
+        "irrational",
+        "irreverent",
+        "irreparable",
+        "irresolute",
+        "irreligious",
+        "irregular",
+        "irrevocable",
+        "irrespective",
+        "irreclaimable",
+        "irresistible"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG",
+      "notes": "Card labels ir- as a chameleon form of in-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "non-",
+      "meaning": "not",
+      "keyword": "nonactive",
+      "associated_words": [
+        "nonactive",
+        "nonbeliever",
+        "nonsmoker",
+        "nonsupport",
+        "nonprofit",
+        "nonexplosive",
+        "nonfiction",
+        "nonexistent",
+        "nonaggression",
+        "nontoxic",
+        "nontaxable",
+        "nonpayment",
+        "nonfatal",
+        "nondeductible"
+      ],
+      "excluded_words": [
+        {
+          "word": "nondrinker",
+          "reason": "alcohol-related default example"
+        },
+        {
+          "word": "nonalcoholic",
+          "reason": "alcohol-related default example"
+        }
+      ],
+      "source_image": "IMG_7672.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "mis-",
+      "meaning": "wrong, bad",
+      "keyword": "misapply",
+      "associated_words": [
+        "misapply",
+        "misdeal",
+        "misjudge",
+        "misplace",
+        "misprint",
+        "misbehave",
+        "mispronounce",
+        "miscalculate",
+        "miscast",
+        "misdeed",
+        "misread",
+        "mistreat",
+        "misquote",
+        "misadventure",
+        "misconceive",
+        "misfortune",
+        "mischief",
+        "miscount",
+        "misspell",
+        "mistrust",
+        "misdirect"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "infra-",
+      "meaning": "below",
+      "keyword": "infrared",
+      "associated_words": [
+        "infrared",
+        "infrasonic",
+        "infrastructure"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "inter-",
+      "meaning": "between, among",
+      "keyword": "interbreed",
+      "associated_words": [
+        "interbreed",
+        "interchange",
+        "interject",
+        "intermission",
+        "intersect",
+        "interdependence",
+        "intermediate",
+        "intercede",
+        "intercom",
+        "interlude",
+        "interrupt",
+        "intervene",
+        "intermittent",
+        "interconnect",
+        "interest",
+        "interval",
+        "interfere"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7672.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "intra-",
+      "meaning": "within, inside",
+      "keyword": "intramural",
+      "associated_words": [
+        "intramural",
+        "intrinsic",
+        "intrauterine",
+        "intravenous"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "for-",
+      "meaning": "away, apart, off",
+      "keyword": "forbear",
+      "associated_words": [
+        "forbear",
+        "forgive",
+        "forbid",
+        "forget",
+        "forsake"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "e-",
+      "meaning": "out of, from",
+      "keyword": "event",
+      "associated_words": [
+        "event",
+        "emerge",
+        "evaporate",
+        "eloquent",
+        "emissary",
+        "egress",
+        "emigrate",
+        "emancipate",
+        "editor",
+        "elusive",
+        "ejection",
+        "educate",
+        "education",
+        "emaciate",
+        "erosion",
+        "eruption",
+        "emission",
+        "elapse",
+        "erasure"
+      ],
+      "excluded_words": [
+        {
+          "word": "emasculate",
+          "reason": "age-sensitive; not selected automatically for student-facing lessons"
+        }
+      ],
+      "source_image": "IMG_7673.JPG",
+      "notes": "Card labels e- as a chameleon form of ex-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "di-",
+      "meaning": "away, apart, not",
+      "keyword": "digress",
+      "associated_words": [
+        "digress",
+        "dimension",
+        "diverge",
+        "diverse",
+        "diminish",
+        "dilute",
+        "direct",
+        "divulge",
+        "dilate",
+        "directive"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG",
+      "notes": "Card labels di- as a chameleon form of dis-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "intro-",
+      "meaning": "within, in",
+      "keyword": "introduce",
+      "associated_words": [
+        "introduce",
+        "introspective",
+        "introvert",
+        "introduction",
+        "introspection"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "fore-",
+      "meaning": "front part, before",
+      "keyword": "forearm",
+      "associated_words": [
+        "forearm",
+        "foreclose",
+        "forehead",
+        "foremost",
+        "foretell",
+        "forecast",
+        "forego",
+        "foreman",
+        "forerunner",
+        "forewarn"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "ef-",
+      "meaning": "out of, from",
+      "keyword": "effective",
+      "associated_words": [
+        "effective",
+        "efficient",
+        "effort",
+        "efface",
+        "effigy",
+        "effrontery",
+        "efficacious",
+        "effluent",
+        "effusion"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG",
+      "notes": "Card labels ef- as a chameleon form of ex-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "dif-",
+      "meaning": "away, apart, not",
+      "keyword": "differ",
+      "associated_words": [
+        "differ",
+        "difficult",
+        "diffraction",
+        "different",
+        "diffident",
+        "diffusion"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG",
+      "notes": "Card labels dif- as a chameleon form of dis-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "hexa-",
+      "meaning": "six",
+      "origin": "Greek",
+      "keyword": "hexagon",
+      "associated_words": [
+        "hexagon",
+        "hexameter"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "em-",
+      "meaning": "in, into, make",
+      "keyword": "embattle",
+      "associated_words": [
+        "embattle",
+        "embrace",
+        "employ",
+        "empathy",
+        "embezzle",
+        "embroider",
+        "empower",
+        "emblem",
+        "embankment"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG",
+      "notes": "Card labels em- as a chameleon form of en-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "extra-",
+      "meaning": "beyond, more than",
+      "keyword": "extracurricular",
+      "associated_words": [
+        "extracurricular",
+        "extrapolate",
+        "extravagant",
+        "extralegal",
+        "extraordinary",
+        "extraterrestrial",
+        "extrasensory",
+        "extrovert"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "di-",
+      "meaning": "two",
+      "origin": "Greek",
+      "keyword": "diatom",
+      "associated_words": [
+        "diatom",
+        "dichotomy",
+        "digraph",
+        "dioxide",
+        "dicotyledon"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "hepta-",
+      "meaning": "seven",
+      "origin": "Greek",
+      "keyword": "heptagon",
+      "associated_words": [],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG",
+      "notes": "The card prints no associated words. The keyword heptagon is an editor-supplied school-friendly example, not a printed card word."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "en-",
+      "meaning": "in, into, make",
+      "keyword": "enable",
+      "associated_words": [
+        "enable",
+        "encamp",
+        "enact",
+        "encage",
+        "engage",
+        "enlarge",
+        "enthusiasm",
+        "encircle",
+        "encode",
+        "endorse",
+        "endure",
+        "enhance",
+        "enlighten",
+        "enclose",
+        "encompass",
+        "encounter",
+        "enfold",
+        "enjoy",
+        "entwine",
+        "entrench"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG",
+      "notes": "Card labels en- as a chameleon prefix."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "de-",
+      "meaning": "down, away, opposite of",
+      "keyword": "deactivate",
+      "associated_words": [
+        "deactivate",
+        "deflate",
+        "decrease",
+        "debark",
+        "descend",
+        "destruct",
+        "devoid",
+        "determine",
+        "decamp",
+        "decease",
+        "debate",
+        "decide",
+        "decline",
+        "defend",
+        "derive",
+        "deceive",
+        "deduct",
+        "depress",
+        "describe",
+        "detain",
+        "devote",
+        "deserve",
+        "dehydrate"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "decem-/dec-",
+      "meaning": "ten",
+      "origin": "Latin",
+      "keyword": "decade",
+      "associated_words": [
+        "decade",
+        "decathlon",
+        "December",
+        "decibel",
+        "decimal"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "hemi-",
+      "meaning": "half",
+      "origin": "Greek",
+      "keyword": "hemisphere",
+      "associated_words": [
+        "hemisphere"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "ex-",
+      "meaning": "out of, from",
+      "keyword": "exceed",
+      "associated_words": [
+        "exceed",
+        "exchange",
+        "exclaim",
+        "excursion",
+        "exempt",
+        "exhibit",
+        "explain",
+        "excel",
+        "excise",
+        "exclude",
+        "excuse",
+        "exhale",
+        "exist",
+        "explore",
+        "except",
+        "excite",
+        "express",
+        "execute",
+        "exhaust",
+        "expel",
+        "export"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG",
+      "notes": "Card labels ex- as a chameleon prefix."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "dis-",
+      "meaning": "away, apart, not",
+      "keyword": "disallow",
+      "associated_words": [
+        "disallow",
+        "disapprove",
+        "discern",
+        "disclose",
+        "discourage",
+        "dishonest",
+        "disposal",
+        "disappear",
+        "disarm",
+        "discharge",
+        "disconnect",
+        "discuss",
+        "dismiss",
+        "dispute",
+        "disappoint",
+        "disavow",
+        "disclaim",
+        "disgust",
+        "disorder",
+        "dissolve",
+        "distribute"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG",
+      "notes": "Card labels dis- as a chameleon prefix."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "co-",
+      "meaning": "with, together",
+      "keyword": "coherence",
+      "associated_words": [
+        "coherence",
+        "cohesive",
+        "cooperate",
+        "co-exist",
+        "coincidental",
+        "coherent",
+        "coincide",
+        "co-ordination",
+        "coincidence",
+        "cooperative"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7673.JPG",
+      "notes": "Card labels co- as a chameleon form of con-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "contra-",
+      "meaning": "against",
+      "keyword": "contradict",
+      "associated_words": [
+        "contraband",
+        "contradict",
+        "contraindicate",
+        "contravene",
+        "contradiction"
+      ],
+      "excluded_words": [
+        {
+          "word": "contraception",
+          "reason": "age-sensitive default example"
+        }
+      ],
+      "source_image": "IMG_7674.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "cor-",
+      "meaning": "with, together",
+      "keyword": "correct",
+      "associated_words": [
+        "correct",
+        "correspond",
+        "corrode",
+        "corridor",
+        "correction",
+        "corrosive",
+        "corrupt",
+        "corroborate",
+        "corrosion",
+        "corruption",
+        "correlation",
+        "correctible"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels cor- as a chameleon form of con-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "ac-",
+      "meaning": "to, toward",
+      "keyword": "acclaim",
+      "associated_words": [
+        "acclaim",
+        "accost",
+        "accord",
+        "accomplish",
+        "accrue",
+        "acquit",
+        "accent",
+        "accept",
+        "accede",
+        "accident",
+        "accurate"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels ac- as a chameleon form of ad-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "ap-",
+      "meaning": "to, toward",
+      "keyword": "apparel",
+      "associated_words": [
+        "apparel",
+        "appear",
+        "appease",
+        "applaud",
+        "appendix",
+        "appraise",
+        "appeal",
+        "apprehend",
+        "append",
+        "appliance",
+        "approve",
+        "appreciate",
+        "application",
+        "apparatus",
+        "apparition",
+        "applicator"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels ap- as a chameleon form of ad-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "con-",
+      "meaning": "with, together",
+      "keyword": "connect",
+      "associated_words": [
+        "connect",
+        "content",
+        "convoy",
+        "constant",
+        "concrete",
+        "converse",
+        "convince",
+        "connection",
+        "contraption",
+        "concern",
+        "contrive",
+        "contempt",
+        "context",
+        "contain",
+        "congress",
+        "contour",
+        "contrast",
+        "consider",
+        "consist",
+        "convert"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels con- as a chameleon prefix."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "centi-/cent-",
+      "meaning": "hundred",
+      "origin": "Latin",
+      "keyword": "centigram",
+      "associated_words": [
+        "centigram",
+        "century",
+        "centipede",
+        "centigrade",
+        "centurion",
+        "centimetre"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "The card glosses centurion as leader of 100 men."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "ag-",
+      "meaning": "to, toward",
+      "keyword": "aggrandise",
+      "associated_words": [
+        "aggrandise",
+        "agglomerate",
+        "agglutinate",
+        "aggression",
+        "aggressive"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels ag- as a chameleon form of ad-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "ab-",
+      "meaning": "from, away",
+      "keyword": "abbreviate",
+      "associated_words": [
+        "abbreviate",
+        "abnormal",
+        "abject",
+        "absolve",
+        "abhor",
+        "abrupt",
+        "absolute",
+        "absorb"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels ab- as a chameleon prefix."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "counter-",
+      "meaning": "against",
+      "keyword": "counteract",
+      "associated_words": [
+        "counteract",
+        "counterattack",
+        "counterbalance",
+        "counterfeit",
+        "countermand",
+        "counterclockwise",
+        "counterpart",
+        "counterpoint"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "be-",
+      "meaning": "by, around, about, away",
+      "keyword": "behind",
+      "associated_words": [
+        "behind",
+        "beloved",
+        "beneath",
+        "beset",
+        "beyond",
+        "belittle",
+        "below",
+        "beseech",
+        "between"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "al-",
+      "meaning": "to, toward",
+      "keyword": "allow",
+      "associated_words": [
+        "allow",
+        "allege",
+        "allied",
+        "alloy",
+        "allocate",
+        "allegiance",
+        "allowance",
+        "alleviate",
+        "allusion",
+        "allude",
+        "alliance"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels al- as a chameleon form of ad-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "as-",
+      "meaning": "to, toward",
+      "keyword": "assail",
+      "associated_words": [
+        "assail",
+        "assert",
+        "assemble",
+        "assist",
+        "assure",
+        "associate",
+        "assess",
+        "assiduous",
+        "assign",
+        "assault",
+        "assent",
+        "assume",
+        "assistance"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels as- as a chameleon form of ad-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "col-",
+      "meaning": "with, together",
+      "keyword": "collect",
+      "associated_words": [
+        "collect",
+        "collide",
+        "collude",
+        "college",
+        "colleague",
+        "collate",
+        "collision",
+        "collusion",
+        "collector",
+        "collinear"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels col- as a chameleon form of con-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "bi-",
+      "meaning": "two",
+      "origin": "Latin",
+      "keyword": "biannual",
+      "associated_words": [
+        "biannual",
+        "biathlon",
+        "biceps",
+        "biennial",
+        "bilateral",
+        "bimonthly",
+        "bisect",
+        "bipartisan",
+        "bicentennial",
+        "bicameral",
+        "biconvex",
+        "bifocal",
+        "bilingual",
+        "binary",
+        "bivalve",
+        "binocular"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "an-",
+      "meaning": "to, toward",
+      "keyword": "announce",
+      "associated_words": [
+        "announce",
+        "annex",
+        "announcement",
+        "annuity",
+        "annul"
+      ],
+      "excluded_words": [
+        {
+          "word": "annihilate",
+          "reason": "violent meaning; not selected automatically for student-facing lessons"
+        }
+      ],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels an- as a chameleon form of ad-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "abs-",
+      "meaning": "from, away",
+      "keyword": "abstract",
+      "associated_words": [
+        "abscess",
+        "abstention",
+        "abscond",
+        "abstract"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels abs- as a chameleon form of ab-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "com-",
+      "meaning": "with, together",
+      "keyword": "combustion",
+      "associated_words": [
+        "combustion",
+        "combine",
+        "commit",
+        "commerce",
+        "commence",
+        "comment",
+        "committee",
+        "command",
+        "complete",
+        "compost",
+        "complain",
+        "compliment",
+        "component",
+        "compound"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels com- as a chameleon form of con-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "ad-",
+      "meaning": "to, toward",
+      "keyword": "adventure",
+      "associated_words": [
+        "adventure",
+        "admonish",
+        "advice",
+        "admit",
+        "admire",
+        "adjunct",
+        "addendum",
+        "administer",
+        "adhere",
+        "advocate",
+        "adjoin",
+        "advance"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels ad- as a chameleon prefix."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "a-",
+      "meaning": "in, on, into, at",
+      "keyword": "aback",
+      "associated_words": [
+        "aback",
+        "abloom",
+        "adrift",
+        "amid",
+        "amuse",
+        "avail",
+        "abed",
+        "aboard",
+        "above",
+        "amiss",
+        "asleep",
+        "among",
+        "alive",
+        "ashore"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "ar-",
+      "meaning": "to, toward",
+      "keyword": "arrive",
+      "associated_words": [
+        "arrive",
+        "arrange",
+        "arrest",
+        "arrival",
+        "array",
+        "arrears"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7674.JPG",
+      "notes": "Card labels ar- as a chameleon form of ad-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "at-",
+      "meaning": "to, toward",
+      "keyword": "attention",
+      "associated_words": [
+        "attention",
+        "attainment",
+        "attest",
+        "attractive",
+        "attune",
+        "attribution",
+        "attendance",
+        "attain",
+        "attempt",
+        "attenuate",
+        "attribute",
+        "attract"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7675.JPG",
+      "notes": "Card labels at- as a chameleon form of ad-."
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "ambi-",
+      "meaning": "both, around",
+      "keyword": "ambidextrous",
+      "associated_words": [
+        "ambidextrous",
+        "ambiguous",
+        "ambitious",
+        "ambivalent",
+        "ambiguity",
+        "ambition",
+        "ambivalence",
+        "ambient"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7675.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "anti-",
+      "meaning": "against",
+      "keyword": "antidote",
+      "associated_words": [
+        "antidote",
+        "antipathy",
+        "antithesis",
+        "antiseptic",
+        "antigen",
+        "antibody",
+        "antisocial"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7675.JPG"
+    },
+    {
+      "type": "prefix",
+      "catalogue_file": "yoshimoto_cards_prefixes.json",
+      "morpheme": "ante-",
+      "meaning": "before",
+      "keyword": "antebellum",
+      "associated_words": [
+        "antebellum",
+        "antechamber",
+        "anteroom",
+        "anterior",
+        "antecedent",
+        "antedate",
+        "antediluvian"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7675.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "act",
+      "meaning": "do",
+      "keyword": "action",
+      "associated_words": [
+        "action",
+        "active",
+        "activate",
+        "actuation",
+        "overactive",
+        "reaction",
+        "counteract",
+        "hyperactive",
+        "activist",
+        "actuary",
+        "enact",
+        "actual",
+        "transact",
+        "transaction",
+        "actor",
+        "actress",
+        "deactivate"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "vest",
+      "meaning": "dress, clothe",
+      "keyword": "divest",
+      "associated_words": [
+        "divest",
+        "invest",
+        "vest",
+        "vestment"
+      ],
+      "excluded_words": [
+        {
+          "word": "transvestite",
+          "reason": "dated identity-related term; not selected automatically for student-facing lessons"
+        }
+      ],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "tract",
+      "meaning": "drag, pull",
+      "keyword": "detract",
+      "associated_words": [
+        "detract",
+        "contract",
+        "extract",
+        "protract",
+        "attraction",
+        "contraction",
+        "extraction",
+        "retraction",
+        "protraction",
+        "distraction",
+        "subtraction",
+        "tractor",
+        "traction",
+        "tractable"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "sum(e)/sumpt",
+      "meaning": "take, use",
+      "keyword": "assume",
+      "associated_words": [
+        "assume",
+        "consume",
+        "presume",
+        "resume",
+        "assumption",
+        "consumption",
+        "presumption",
+        "resumption",
+        "presumptuous",
+        "consumer",
+        "assuming"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "voc/vok",
+      "meaning": "voice, call",
+      "keyword": "vocal",
+      "associated_words": [
+        "vocal",
+        "advocate",
+        "avocation",
+        "convocation",
+        "equivocate",
+        "invocation",
+        "provocative",
+        "revocable",
+        "evocation",
+        "provoke",
+        "evoke",
+        "invoke",
+        "revoke",
+        "convoke",
+        "vocalise",
+        "vociferous",
+        "vociferate"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "ven/vent",
+      "meaning": "come",
+      "keyword": "convene",
+      "associated_words": [
+        "convene",
+        "convention",
+        "invent",
+        "invention",
+        "event",
+        "prevent",
+        "prevention",
+        "adventure",
+        "intervene",
+        "intervention",
+        "circumvent",
+        "circumvention",
+        "convenience",
+        "convenient",
+        "Advent",
+        "eventful"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "test",
+      "meaning": "witness",
+      "keyword": "testimony",
+      "associated_words": [
+        "testimony",
+        "testament",
+        "testify",
+        "contest",
+        "contestant",
+        "protest",
+        "protestation",
+        "attest",
+        "attestation",
+        "intestate"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "struct",
+      "meaning": "build",
+      "keyword": "construct",
+      "associated_words": [
+        "construct",
+        "destruct",
+        "obstruct",
+        "instruct",
+        "structure",
+        "structural",
+        "restructure",
+        "reconstruct",
+        "construction",
+        "destruction",
+        "obstruction",
+        "instruction",
+        "instructor",
+        "destroy",
+        "constructor"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "vis(e)/vid(e)",
+      "meaning": "see",
+      "keyword": "advise",
+      "associated_words": [
+        "advise",
+        "revise",
+        "revision",
+        "supervise",
+        "supervision",
+        "video",
+        "vision",
+        "visible",
+        "visit",
+        "visitation",
+        "visa",
+        "visage",
+        "visor",
+        "visualise",
+        "videotape",
+        "videocassette",
+        "visionary",
+        "provide",
+        "provision",
+        "provident",
+        "evident",
+        "evidence"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "tort",
+      "meaning": "twist",
+      "keyword": "contort",
+      "associated_words": [
+        "contort",
+        "distort",
+        "extort",
+        "tortuous",
+        "retort",
+        "contortion",
+        "distortion",
+        "extortion",
+        "tort",
+        "torsion",
+        "contortionist"
+      ],
+      "excluded_words": [
+        {
+          "word": "torture",
+          "reason": "violent default example"
+        }
+      ],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "tend/tens/tent",
+      "meaning": "stretch, strain",
+      "keyword": "attend",
+      "associated_words": [
+        "attend",
+        "contend",
+        "extend",
+        "intend",
+        "tend",
+        "pretend",
+        "distend",
+        "attention",
+        "contention",
+        "pretentious",
+        "intention",
+        "intent",
+        "pretension",
+        "distention",
+        "tension",
+        "intense",
+        "tense",
+        "pretense",
+        "intensify"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "strict/string/strain",
+      "meaning": "bind, tighten",
+      "keyword": "restrict",
+      "associated_words": [
+        "restrict",
+        "district",
+        "strict",
+        "stricture",
+        "restrictive",
+        "restriction",
+        "constrict",
+        "strain",
+        "constrain",
+        "constraint",
+        "restrain",
+        "restraint",
+        "stringent"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "vict/vinc",
+      "meaning": "conquer",
+      "keyword": "convict",
+      "associated_words": [
+        "convict",
+        "evict",
+        "victor",
+        "victory",
+        "province",
+        "conviction",
+        "eviction",
+        "provincial",
+        "convince",
+        "invincible"
+      ],
+      "excluded_words": [
+        {
+          "word": "victimise",
+          "reason": "sensitive default example"
+        },
+        {
+          "word": "victim",
+          "reason": "sensitive default example"
+        }
+      ],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "trud(e)/trus",
+      "meaning": "push, thrust",
+      "keyword": "intrude",
+      "associated_words": [
+        "intrude",
+        "protrude",
+        "obtrude",
+        "extrude",
+        "intrusion",
+        "protrusion",
+        "obtrusion",
+        "extrusive"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "tact/tang",
+      "meaning": "touch",
+      "keyword": "contact",
+      "associated_words": [
+        "contact",
+        "intact",
+        "tactile",
+        "tact",
+        "tactician",
+        "tactics",
+        "tactful",
+        "tangent",
+        "tangential",
+        "tangible",
+        "intangible"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "stitu",
+      "meaning": "put, place",
+      "keyword": "institute",
+      "associated_words": [
+        "institute",
+        "constitute",
+        "substitute",
+        "restitute",
+        "destitute",
+        "institution",
+        "constitution",
+        "substitution",
+        "restitution",
+        "destitution",
+        "constituent",
+        "institutionalise"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "vert/vers(e)",
+      "meaning": "turn",
+      "keyword": "invert",
+      "associated_words": [
+        "invert",
+        "revert",
+        "advert",
+        "avert",
+        "divert",
+        "convert",
+        "subvert",
+        "inversion",
+        "reversion",
+        "advertise",
+        "aversion",
+        "diversion",
+        "conversion",
+        "subversion",
+        "introvert",
+        "extrovert",
+        "vertebrate",
+        "verify",
+        "reverse",
+        "versatile",
+        "diversify",
+        "inverse"
+      ],
+      "excluded_words": [
+        {
+          "word": "pervert",
+          "reason": "adult/pejorative default usage"
+        },
+        {
+          "word": "perversion",
+          "reason": "adult/pejorative default usage"
+        }
+      ],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "trib",
+      "meaning": "give",
+      "keyword": "tribute",
+      "associated_words": [
+        "tribute",
+        "attribute",
+        "attribution",
+        "contribute",
+        "contribution",
+        "contributor",
+        "distribute",
+        "distribution",
+        "tributary",
+        "retribution",
+        "redistribute"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "tain/ten/tent/tin",
+      "meaning": "hold",
+      "keyword": "detain",
+      "associated_words": [
+        "detain",
+        "contain",
+        "obtain",
+        "pertain",
+        "tenacious",
+        "retention",
+        "content",
+        "pertinence",
+        "sustain",
+        "tenant",
+        "tenure",
+        "retain",
+        "entertain",
+        "tenet",
+        "maintain",
+        "tenement",
+        "detainment",
+        "obtainable",
+        "sustenance",
+        "tenacity",
+        "tenable"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "stant/stanc",
+      "meaning": "stand",
+      "keyword": "instant",
+      "associated_words": [
+        "instant",
+        "constant",
+        "distant",
+        "distantly",
+        "instantly",
+        "instance",
+        "constancy",
+        "distance",
+        "substance",
+        "substantial",
+        "substantive",
+        "instantaneous"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7665.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "spond/spons",
+      "meaning": "answer, pledge",
+      "keyword": "correspond",
+      "associated_words": [
+        "correspond",
+        "correspondence",
+        "correspondent",
+        "respond",
+        "response",
+        "responsible",
+        "irresponsible",
+        "despondent",
+        "sponsor",
+        "sponsorship"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "sist",
+      "meaning": "stand",
+      "keyword": "assist",
+      "associated_words": [
+        "assist",
+        "consist",
+        "insist",
+        "resist",
+        "assistance",
+        "consistent",
+        "insistent",
+        "resistance"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "sect",
+      "meaning": "cut, divide",
+      "keyword": "bisect",
+      "associated_words": [
+        "bisect",
+        "dissect",
+        "intersect",
+        "section",
+        "bisector",
+        "dissection",
+        "intersection",
+        "insecticide",
+        "sectionalism",
+        "vivisection"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "put(e)",
+      "meaning": "think",
+      "keyword": "compute",
+      "associated_words": [
+        "compute",
+        "computer",
+        "depute",
+        "deputy",
+        "deputise",
+        "impute",
+        "repute",
+        "reputation",
+        "dispute",
+        "reputable",
+        "putative"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "spir(e)",
+      "meaning": "breathe",
+      "keyword": "conspire",
+      "associated_words": [
+        "conspire",
+        "inspire",
+        "expire",
+        "perspire",
+        "respire",
+        "transpire",
+        "spiracle",
+        "respirator",
+        "spirit",
+        "conspiracy",
+        "inspiration",
+        "expiration",
+        "perspiration",
+        "respiration",
+        "transpiration",
+        "spiritual"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "sid(e)",
+      "meaning": "sit",
+      "keyword": "reside",
+      "associated_words": [
+        "reside",
+        "resident",
+        "residency",
+        "residential",
+        "preside",
+        "president",
+        "dissidence"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG",
+      "notes": "A separate physical card from sed/sid(e); part of the heading and family sit beneath strong sleeve glare."
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "sed/sid(e)",
+      "meaning": "sit",
+      "keyword": "preside",
+      "associated_words": [
+        "preside",
+        "reside",
+        "dissidence",
+        "sediment",
+        "subside",
+        "president",
+        "resident",
+        "residence",
+        "sedentary",
+        "sedate"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "scop(e)",
+      "meaning": "look at",
+      "keyword": "horoscope",
+      "associated_words": [
+        "horoscope",
+        "microscope",
+        "photoscope",
+        "telescope",
+        "kaleidoscope",
+        "periscope",
+        "stethoscope",
+        "oscilloscope",
+        "microscopic"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "quir(e)/quis/quest",
+      "meaning": "seek, ask",
+      "keyword": "acquire",
+      "associated_words": [
+        "acquire",
+        "inquire",
+        "require",
+        "inquiry",
+        "query",
+        "requirement",
+        "querulous",
+        "quest",
+        "question",
+        "inquisitor",
+        "request",
+        "inquest",
+        "inquisitive",
+        "prerequisite",
+        "exquisite",
+        "acquisitive",
+        "requisite"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "spect/spec/spic",
+      "meaning": "see, look",
+      "keyword": "inspect",
+      "associated_words": [
+        "inspect",
+        "respect",
+        "expect",
+        "prospect",
+        "spectator",
+        "spectrum",
+        "suspect",
+        "spectacle",
+        "inspection",
+        "respectable",
+        "expectation",
+        "prospective",
+        "spectacular",
+        "perspective",
+        "conspicuous",
+        "despicable",
+        "suspicious",
+        "special",
+        "specious",
+        "specimen",
+        "speculate",
+        "perspicacious"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "serv(e)",
+      "meaning": "keep",
+      "keyword": "preserve",
+      "associated_words": [
+        "preserve",
+        "conserve",
+        "reserve",
+        "preservation",
+        "conservation",
+        "reservation",
+        "conservative",
+        "preservative"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "scrib/script",
+      "meaning": "write",
+      "keyword": "scribe",
+      "associated_words": [
+        "scribe",
+        "scribble",
+        "describe",
+        "inscribe",
+        "prescribe",
+        "subscribe",
+        "transcribe",
+        "circumscribe",
+        "script",
+        "scripture",
+        "description",
+        "inscription",
+        "prescription",
+        "subscription",
+        "transcription"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "pos(e)/posit",
+      "meaning": "put, place",
+      "keyword": "depose",
+      "associated_words": [
+        "depose",
+        "compose",
+        "repose",
+        "expose",
+        "propose",
+        "suppose",
+        "impose",
+        "oppose",
+        "deposition",
+        "composition",
+        "composer",
+        "exposition",
+        "proposition",
+        "supposition",
+        "imposition",
+        "opposition",
+        "positive",
+        "position",
+        "imposter",
+        "deposit",
+        "composure",
+        "composite",
+        "preposition",
+        "proposal"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "son",
+      "meaning": "sound",
+      "keyword": "consonant",
+      "associated_words": [
+        "consonant",
+        "sonic",
+        "sonar",
+        "supersonic",
+        "resonate",
+        "resonance",
+        "assonant",
+        "assonance",
+        "consonance",
+        "dissonant",
+        "dissonance"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "sent/sens",
+      "meaning": "feel",
+      "keyword": "consent",
+      "associated_words": [
+        "consent",
+        "dissent",
+        "resent",
+        "sense",
+        "senseless",
+        "sensor",
+        "sensory",
+        "sensational",
+        "consensus",
+        "dissension",
+        "sentimental",
+        "extrasensory",
+        "sentinel",
+        "desensitise",
+        "insensitive",
+        "dissenter"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "rupt",
+      "meaning": "break",
+      "keyword": "abrupt",
+      "associated_words": [
+        "abrupt",
+        "erupt",
+        "corrupt",
+        "rupture",
+        "interrupt",
+        "disrupt",
+        "incorruptible",
+        "eruption",
+        "corruption",
+        "interruption",
+        "disruption"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "port",
+      "meaning": "bring, carry",
+      "keyword": "export",
+      "associated_words": [
+        "export",
+        "import",
+        "transport",
+        "report",
+        "deport",
+        "support",
+        "comport",
+        "portable",
+        "exportation",
+        "importation",
+        "transportation",
+        "reporter",
+        "deportation",
+        "supportive",
+        "portfolio",
+        "important"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "solv(e)/solut",
+      "meaning": "loosen",
+      "keyword": "absolve",
+      "associated_words": [
+        "absolve",
+        "dissolve",
+        "resolve",
+        "solve",
+        "solvent",
+        "insolvent",
+        "solvency",
+        "insolvable",
+        "absolute",
+        "dissolute",
+        "resolution",
+        "soluble",
+        "insoluble",
+        "solution"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "rect/reg",
+      "meaning": "right, straight, lead",
+      "keyword": "correct",
+      "associated_words": [
+        "correct",
+        "rectitude",
+        "rectify",
+        "rectangle",
+        "erect",
+        "direct",
+        "director",
+        "directive",
+        "region",
+        "regulate",
+        "regular",
+        "regulator",
+        "regent",
+        "irregular",
+        "regal"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "pon/pound",
+      "meaning": "place, part",
+      "keyword": "ponder",
+      "associated_words": [
+        "ponder",
+        "ponderous",
+        "exponent",
+        "proponent",
+        "opponent",
+        "exponential",
+        "component",
+        "compound",
+        "expound"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7666.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "ply/plic",
+      "meaning": "fill, fold",
+      "keyword": "apply",
+      "associated_words": [
+        "apply",
+        "applicable",
+        "comply",
+        "complicate",
+        "complete",
+        "compliant",
+        "multiply",
+        "supply",
+        "explicate",
+        "pliant",
+        "reply",
+        "pliable",
+        "multiple",
+        "replication",
+        "supplicate",
+        "explicit",
+        "implicit",
+        "implicate"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "ord/ordin",
+      "meaning": "order",
+      "keyword": "ordain",
+      "associated_words": [
+        "ordain",
+        "ordinance",
+        "ordination",
+        "order",
+        "disorder",
+        "orderly",
+        "ordinal",
+        "ordinary",
+        "inordinately",
+        "preordained",
+        "coordinate",
+        "extraordinary",
+        "subordinate",
+        "ordinarily"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "mit/miss",
+      "meaning": "send",
+      "keyword": "admit",
+      "associated_words": [
+        "admit",
+        "commit",
+        "permit",
+        "remit",
+        "submit",
+        "transmit",
+        "omit",
+        "emit",
+        "admission",
+        "commission",
+        "permission",
+        "remission",
+        "submission",
+        "transmission",
+        "omission",
+        "intermission",
+        "mission",
+        "missile",
+        "dismiss",
+        "emissary",
+        "promissory",
+        "demise",
+        "promise"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "jur/jud/just",
+      "meaning": "right, law",
+      "keyword": "adjure",
+      "associated_words": [
+        "adjure",
+        "injury",
+        "injurious",
+        "jury",
+        "jurist",
+        "abjure",
+        "jurisdiction",
+        "jurisprudence",
+        "adjudge",
+        "judge",
+        "judiciary",
+        "judicious",
+        "adjudicate",
+        "judgemental",
+        "prejudice",
+        "justice",
+        "injustice",
+        "justify"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "pend/pens",
+      "meaning": "hang; pay",
+      "keyword": "appendage",
+      "associated_words": [
+        "appendage",
+        "depend",
+        "pendant",
+        "impend",
+        "suspend",
+        "propensity",
+        "independence",
+        "suspense",
+        "penchant",
+        "appendix",
+        "append",
+        "pendulum",
+        "suspension",
+        "compensate",
+        "expend",
+        "expense",
+        "dispense",
+        "expenditure",
+        "dispensable",
+        "expensive"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "numer",
+      "meaning": "number",
+      "keyword": "numeral",
+      "associated_words": [
+        "numeral",
+        "numerator",
+        "numerous",
+        "numerate",
+        "outnumber"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "mem",
+      "meaning": "remember",
+      "keyword": "memory",
+      "associated_words": [
+        "memory",
+        "memorandum",
+        "commemoration",
+        "memorable",
+        "memorise",
+        "memorial",
+        "memorabilia"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "junct/join/joint",
+      "meaning": "join",
+      "keyword": "join",
+      "associated_words": [
+        "join",
+        "joint",
+        "enjoin",
+        "conjoin",
+        "disjointed",
+        "rejoinder",
+        "jointly",
+        "juncture",
+        "conjunction",
+        "injunction",
+        "junction",
+        "adjunctive",
+        "disjunctive",
+        "conjunctive"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "pel/puls(e)",
+      "meaning": "drive, push",
+      "keyword": "compel",
+      "associated_words": [
+        "compel",
+        "expel",
+        "repel",
+        "propel",
+        "impel",
+        "propellant",
+        "repellent",
+        "compulsive",
+        "expulsion",
+        "repulsive",
+        "propulsion",
+        "impulsive",
+        "impulse",
+        "compulsory"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "nov",
+      "meaning": "new, recent",
+      "keyword": "nova",
+      "associated_words": [
+        "nova",
+        "novel",
+        "novelty",
+        "novice",
+        "innovate",
+        "renovate",
+        "innovation",
+        "renovation"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "mand/mend",
+      "meaning": "order, entrust",
+      "keyword": "command",
+      "associated_words": [
+        "command",
+        "demand",
+        "remand",
+        "mandate",
+        "commandment",
+        "mandatory",
+        "commend",
+        "commendation",
+        "commendable"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "ject",
+      "meaning": "throw",
+      "keyword": "abject",
+      "associated_words": [
+        "abject",
+        "eject",
+        "object",
+        "reject",
+        "subject",
+        "project",
+        "inject",
+        "interject",
+        "abjection",
+        "ejection",
+        "objection",
+        "rejection",
+        "subjection",
+        "projection",
+        "injection",
+        "interjection",
+        "conjecture",
+        "trajectory",
+        "objective",
+        "adjective",
+        "subjective",
+        "projectile"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "ped/pod",
+      "meaning": "foot",
+      "keyword": "pedal",
+      "associated_words": [
+        "pedal",
+        "tripod",
+        "pedicab",
+        "pedicure",
+        "podiatrist",
+        "pedestrian",
+        "expedition",
+        "impede",
+        "impediment",
+        "pedestal",
+        "quadruped",
+        "pedometer",
+        "expedient",
+        "podium"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "nat",
+      "meaning": "born",
+      "keyword": "innate",
+      "associated_words": [
+        "innate",
+        "nation",
+        "nationality",
+        "nativity",
+        "nature",
+        "naturalist",
+        "national",
+        "natal",
+        "prenatal",
+        "supernatural",
+        "native",
+        "natural",
+        "international",
+        "transnational"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "leg",
+      "meaning": "law, bind",
+      "keyword": "legacy",
+      "associated_words": [
+        "legacy",
+        "legal",
+        "legalise",
+        "illegal",
+        "legate",
+        "legation",
+        "legitimate",
+        "legislate",
+        "legislature",
+        "legislation",
+        "legislator",
+        "illegitimate",
+        "legitimise"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "gress/grad",
+      "meaning": "step, walk",
+      "keyword": "regress",
+      "associated_words": [
+        "regress",
+        "progress",
+        "digress",
+        "egress",
+        "transgress",
+        "congress",
+        "ingress",
+        "digression",
+        "progression",
+        "regression",
+        "transgression",
+        "graduation",
+        "graduate",
+        "gradual",
+        "grade",
+        "degrade"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "pass",
+      "meaning": "step, feel",
+      "keyword": "compassion",
+      "associated_words": [
+        "compassion",
+        "impassion",
+        "passive",
+        "compass",
+        "passage",
+        "trespass",
+        "pass",
+        "surpass",
+        "passable",
+        "impassable"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "mot/mob/mov",
+      "meaning": "move",
+      "keyword": "mobile",
+      "associated_words": [
+        "mobile",
+        "mobilise",
+        "immobile",
+        "demobilise",
+        "automobile",
+        "promote",
+        "motor",
+        "remote",
+        "motion",
+        "demote",
+        "emote",
+        "emotion",
+        "motility",
+        "demotion",
+        "motivate",
+        "move",
+        "movable",
+        "remove",
+        "promotion",
+        "commotion"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "lect/leg/lig",
+      "meaning": "choose; read",
+      "keyword": "collect",
+      "associated_words": [
+        "collect",
+        "elect",
+        "neglect",
+        "select",
+        "legion",
+        "collection",
+        "selection",
+        "election",
+        "electorate",
+        "negligible",
+        "collective",
+        "legible",
+        "eligible",
+        "legend",
+        "lecture",
+        "illegible",
+        "lectern"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "gest",
+      "meaning": "bring, carry, bear",
+      "keyword": "congest",
+      "associated_words": [
+        "congest",
+        "digest",
+        "ingest",
+        "suggest",
+        "gestate",
+        "gesticulate",
+        "digestible",
+        "congestion",
+        "digestion",
+        "ingestion",
+        "suggestion",
+        "gestation",
+        "gesture"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7667.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "gen",
+      "meaning": "origin, birth, race",
+      "keyword": "gene",
+      "associated_words": [
+        "gene",
+        "genetics",
+        "gender",
+        "progeny",
+        "genus",
+        "generic",
+        "indigenous",
+        "generalise",
+        "general",
+        "genealogy",
+        "genesis",
+        "generate",
+        "genuine",
+        "genius",
+        "photogenic"
+      ],
+      "excluded_words": [
+        {
+          "word": "genocide",
+          "reason": "violent and sensitive default example"
+        }
+      ],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "flect/flex",
+      "meaning": "bend",
+      "keyword": "deflect",
+      "associated_words": [
+        "deflect",
+        "deflection",
+        "inflect",
+        "inflection",
+        "reflect",
+        "reflection",
+        "reflex",
+        "flex",
+        "flexible",
+        "flexibility"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "fer",
+      "meaning": "to bear",
+      "keyword": "confer",
+      "associated_words": [
+        "confer",
+        "defer",
+        "infer",
+        "prefer",
+        "suffer",
+        "differ",
+        "transfer",
+        "refer",
+        "conference",
+        "deference",
+        "inference",
+        "preference",
+        "sufferance",
+        "different",
+        "transference",
+        "reference"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "claim/clam",
+      "meaning": "declare",
+      "keyword": "acclaim",
+      "associated_words": [
+        "acclaim",
+        "exclaim",
+        "proclaim",
+        "reclaim",
+        "disclaim",
+        "claim",
+        "acclamation",
+        "exclamation",
+        "proclamation",
+        "declamatory",
+        "clamour",
+        "clamorous"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "fus(e)",
+      "meaning": "pour",
+      "keyword": "confuse",
+      "associated_words": [
+        "confuse",
+        "effuse",
+        "refuse",
+        "profuse",
+        "diffuse",
+        "suffuse",
+        "transfuse",
+        "infuse",
+        "confusion",
+        "transfusion",
+        "infusion",
+        "diffusion",
+        "refusal",
+        "suffusion",
+        "profusion"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "fix",
+      "meaning": "not printed clearly; family indicates fasten or attach",
+      "keyword": "affix",
+      "associated_words": [
+        "affix",
+        "suffix",
+        "fixture",
+        "affixation",
+        "prefix",
+        "transfix",
+        "fixate"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG",
+      "notes": "The photographed card heading/meaning is partly obscured by glare; verify the meaning from the physical card before treating it as verbatim."
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "fac/fact",
+      "meaning": "do, make",
+      "keyword": "fact",
+      "associated_words": [
+        "fact",
+        "factory",
+        "factual",
+        "factor",
+        "faculty",
+        "manufacture",
+        "facile",
+        "factitious",
+        "factious",
+        "satisfaction",
+        "facility",
+        "facilitate"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "cid(e)/cis(e)",
+      "meaning": "cut, kill",
+      "keyword": "decide",
+      "associated_words": [
+        "decide",
+        "concisely",
+        "precise",
+        "precision",
+        "decision",
+        "excise"
+      ],
+      "excluded_words": [
+        {
+          "word": "circumcise",
+          "reason": "age- and context-sensitive; not selected automatically for student-facing lessons"
+        },
+        {
+          "word": "genocide",
+          "reason": "violent and sensitive default example"
+        },
+        {
+          "word": "homicide",
+          "reason": "violent and sensitive default example"
+        },
+        {
+          "word": "patricide",
+          "reason": "violent and sensitive default example"
+        },
+        {
+          "word": "matricide",
+          "reason": "violent and sensitive default example"
+        },
+        {
+          "word": "infanticide",
+          "reason": "violent and sensitive default example"
+        },
+        {
+          "word": "suicide",
+          "reason": "self-harm term; never use as an incidental lesson example"
+        }
+      ],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "form",
+      "meaning": "form",
+      "keyword": "conform",
+      "associated_words": [
+        "conform",
+        "deform",
+        "form",
+        "inform",
+        "informal",
+        "reform",
+        "transform",
+        "formal",
+        "conformity",
+        "deformity",
+        "formula",
+        "formulate",
+        "information",
+        "reformation",
+        "transformation",
+        "formalise"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "firm",
+      "meaning": "support",
+      "keyword": "firmly",
+      "associated_words": [
+        "firmly",
+        "infirmity",
+        "affirmative",
+        "reaffirm",
+        "infirm",
+        "affirm",
+        "confirm",
+        "confirmation"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "duct/duc(e)",
+      "meaning": "lead",
+      "keyword": "conduct",
+      "associated_words": [
+        "conduct",
+        "deduct",
+        "product",
+        "aqueduct",
+        "reduction",
+        "induct",
+        "conductor",
+        "educate",
+        "conducive",
+        "induce",
+        "produce",
+        "introduce",
+        "deduce",
+        "reduce"
+      ],
+      "excluded_words": [
+        {
+          "word": "abduct",
+          "reason": "crime-related default example"
+        },
+        {
+          "word": "seduce",
+          "reason": "adult default meaning"
+        },
+        {
+          "word": "seductive",
+          "reason": "adult default meaning"
+        }
+      ],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "ced(e)/ceed/cess",
+      "meaning": "go",
+      "keyword": "exceed",
+      "associated_words": [
+        "exceed",
+        "succeed",
+        "proceed",
+        "recede",
+        "precede",
+        "concede",
+        "intercede",
+        "cede",
+        "antecedent",
+        "precedent",
+        "accede",
+        "access",
+        "recess",
+        "success",
+        "process",
+        "excess"
+      ],
+      "excluded_words": [
+        {
+          "word": "abscess",
+          "reason": "medical/pus-related example; use only when context requires it"
+        }
+      ],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "flu",
+      "meaning": "flow",
+      "keyword": "fluid",
+      "associated_words": [
+        "fluid",
+        "flush",
+        "fluent",
+        "flux",
+        "influx",
+        "influence",
+        "affluent",
+        "confluent",
+        "effluent",
+        "fluctuate",
+        "superfluous",
+        "influential",
+        "confluence"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "fin(e)/finit(e)",
+      "meaning": "limit, end",
+      "keyword": "define",
+      "associated_words": [
+        "define",
+        "fine",
+        "confine",
+        "final",
+        "finalise",
+        "finalist",
+        "finish",
+        "finance",
+        "definite",
+        "definitive",
+        "infinite",
+        "infinitive",
+        "infinity",
+        "affinity",
+        "finale",
+        "confinement"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "dic/dict",
+      "meaning": "speak",
+      "keyword": "abdicate",
+      "associated_words": [
+        "abdicate",
+        "indicator",
+        "indication",
+        "indicate",
+        "indicative",
+        "vindicate",
+        "predicate",
+        "dedicate",
+        "contraindicate",
+        "dictator",
+        "dictation",
+        "contradict",
+        "dictionary",
+        "edict",
+        "malediction",
+        "predict",
+        "valedictory",
+        "dictate",
+        "indict",
+        "dictum"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "cur",
+      "meaning": "run",
+      "keyword": "incur",
+      "associated_words": [
+        "incur",
+        "occur",
+        "recur",
+        "concur",
+        "current",
+        "currency",
+        "concurrent",
+        "cursory",
+        "excursion",
+        "incursion",
+        "discursive",
+        "cursive"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "flict",
+      "meaning": "strike",
+      "keyword": "afflict",
+      "associated_words": [
+        "afflict",
+        "affliction",
+        "conflict",
+        "inflict",
+        "infliction"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "fect/fic/fict",
+      "meaning": "do, make",
+      "keyword": "affect",
+      "associated_words": [
+        "affect",
+        "defect",
+        "infect",
+        "effect",
+        "perfect",
+        "affection",
+        "defective",
+        "infection",
+        "effective",
+        "infectious",
+        "confection",
+        "defector",
+        "perfection",
+        "imperfect",
+        "disinfect",
+        "affectionate",
+        "proficient",
+        "sufficient",
+        "suffice",
+        "efficient",
+        "deficient",
+        "efficacy",
+        "magnificent",
+        "deification"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "clud(e)/clus(e)",
+      "meaning": "shut",
+      "keyword": "exclude",
+      "associated_words": [
+        "exclude",
+        "include",
+        "preclude",
+        "conclude",
+        "seclude",
+        "occlude",
+        "exclusion",
+        "inclusion",
+        "preclusion",
+        "conclusion",
+        "seclusion",
+        "conclusive",
+        "exclusive",
+        "recluse"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "cred",
+      "meaning": "believe",
+      "keyword": "credit",
+      "associated_words": [
+        "credit",
+        "credible",
+        "incredible",
+        "credence",
+        "credential",
+        "credo",
+        "accredit",
+        "credibility",
+        "credulous",
+        "creditor",
+        "creed",
+        "incredulous"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7668.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "caus-/cus(e)",
+      "meaning": "cause",
+      "keyword": "accuse",
+      "associated_words": [
+        "accuse",
+        "cause",
+        "causation",
+        "because",
+        "excuse",
+        "accusatory",
+        "accuser",
+        "causality",
+        "inexcusable",
+        "excusable"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7669.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "capt/capit",
+      "meaning": "hold, take OR leader, head",
+      "keyword": "capable",
+      "associated_words": [
+        "capable",
+        "captor",
+        "capacity",
+        "captivate",
+        "caption",
+        "capture",
+        "captive",
+        "capacious",
+        "capital",
+        "captain",
+        "capitate",
+        "capitulate",
+        "capitalise",
+        "cape"
+      ],
+      "excluded_words": [
+        {
+          "word": "decapitate",
+          "reason": "graphic violence; not selected automatically for student-facing lessons"
+        }
+      ],
+      "source_image": "IMG_7669.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "cept/ceiv(e)/ceit",
+      "meaning": "take, receive",
+      "keyword": "accept",
+      "associated_words": [
+        "accept",
+        "concept",
+        "except",
+        "reception",
+        "deception",
+        "intercept",
+        "perceptive",
+        "exceptional",
+        "receive",
+        "perceive",
+        "deceive",
+        "conceive",
+        "misconceive",
+        "deceit",
+        "conceit",
+        "receipt"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7669.JPG"
+    },
+    {
+      "type": "root",
+      "catalogue_file": "yoshimoto_cards_latin_roots.json",
+      "morpheme": "aud",
+      "meaning": "hear",
+      "keyword": "audible",
+      "associated_words": [
+        "audible",
+        "audience",
+        "audiometer",
+        "audiogram",
+        "audit",
+        "audiology",
+        "auditory",
+        "audio",
+        "audition",
+        "audiovisual",
+        "auditorium",
+        "auditor"
+      ],
+      "excluded_words": [],
+      "source_image": "IMG_7669.JPG"
+    }
+  ]
+}

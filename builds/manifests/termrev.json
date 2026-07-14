@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Term_3_Maths_Review_Unit",
+  "unit_pptx_name": "Term 3 Maths Review Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_termrev_lesson1.js",
+      "folder": "TermRev_Lesson1_Decimals_And_Integers",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_termrev_lesson2.js",
+      "folder": "TermRev_Lesson2_Fractions",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_termrev_lesson3.js",
+      "folder": "TermRev_Lesson3_Fractions_Decimals_Percentages",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_termrev_lesson4.js",
+      "folder": "TermRev_Lesson4_Problem_Solving_And_Measurement",
+      "session": 4
+    }
+  ]
+}

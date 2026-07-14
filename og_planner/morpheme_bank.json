@@ -1,19 +1,16 @@
 {
   "_readme": [
-    "Canonical morpheme reference for OG deck generation. APPEND-ONLY: once an entry",
-    "is verified it must never be changed - card keywords and meanings must stay",
-    "identical across the whole year so students always hear the same anchor.",
+    "Legacy verified-card reference for OG deck generation. APPEND-ONLY: once an",
+    "entry is verified, preserve its provenance. The complete meaning-only reference",
+    "is og_planner/morpheme_meanings.json and meanings take priority in planning.",
     "Sources: Ron Yoshimoto OG materials in OG/ (scanned PDFs - render pages with",
     "PyMuPDF and read them visually to verify), plus school decks. If a morpheme is",
     "missing here, look it up in OG/ (Morphology.pdf, MorphologyPart2.pdf, Latin",
     "Scrolls, Greek Combining Forms - one worksheet per morpheme with a definition",
     "box), add it with source + verified:true, and only then use it in a deck.",
-    "ONE keyword per morpheme, forever. keyword:null = not yet set. Setting it:",
-    "morpheme NEW this week -> choose the clearest familiar derivative, lock it,",
-    "it becomes canon at first teaching. Morpheme ALREADY TAUGHT in a past week ->",
-    "the class already anchors to a keyword; ASK the teacher what was on the card,",
-    "never guess.",
-    "type: root -> yellow card, prefix -> green card, suffix -> red card."
+    "Keywords are optional legacy metadata. keyword:null is valid: do not research,",
+    "invent or request a missing keyword, and never let it block lesson generation.",
+    "type colour key: root -> green card, prefix -> yellow card, suffix -> red card."
   ],
   "morphemes": [
     {
@@ -203,9 +200,65 @@
     {
       "morph": "-able",
       "type": "suffix",
+      "keyword": "fixable",
+      "meaning": "able to",
+      "source": "Teacher transcription of physical Ron Yoshimoto morphology card set, 2026-07-13; exact primary-source match in OG/Morphology USB files/Morphology - SuffixMatching_Sorting.pdf p2 (Ronald Yoshimoto, 2011); exact attributed public match in Quizlet 'OG Morphology Suffixes, Set 1--Ron Yoshimoto' (set 180659900)",
+      "verified": true
+    },
+    {
+      "morph": "-al",
+      "type": "suffix",
+      "keyword": "animal",
+      "meaning": "relating to",
+      "source": "Teacher transcription of physical Ron Yoshimoto morphology card set, 2026-07-13; pre-2007 source-family match: Michael J. Sheehan, Word Parts Dictionary (2000), -al entry 'belonging to; like; of'",
+      "verified": true
+    },
+    {
+      "morph": "-age",
+      "type": "suffix",
+      "keyword": "damage",
+      "meaning": "relating to, state of, result of",
+      "source": "Teacher transcription of physical Ron Yoshimoto morphology card set, 2026-07-13; near-exact pre-2007 source-family reconstruction: Michael J. Sheehan, Word Parts Dictionary (2000), -age entry 'act; condition; result of' plus reverse Finder categories 'relating to' and 'result (of)'",
+      "verified": true
+    },
+    {
+      "morph": "-ation",
+      "type": "suffix",
+      "keyword": "adaptation",
+      "meaning": "state of, result of",
+      "source": "Teacher transcription of physical Ron Yoshimoto morphology card set, 2026-07-13; exact semantic pre-2007 source-family reconstruction: Michael J. Sheehan, Word Parts Dictionary (2000) reverse Finder indexes -ation under 'condition' and 'result (of)'",
+      "verified": true
+    },
+    {
+      "morph": "-an",
+      "type": "suffix",
+      "keyword": "Mexican",
+      "meaning": "relating to, person",
+      "source": "Teacher transcription of physical Ron Yoshimoto morphology card set, 2026-07-13; strong pre-2007 source-family match: Michael J. Sheehan, Word Parts Dictionary (2000), -an senses 'belonging to; of; characteristic of' and 'born in; living in'",
+      "verified": true
+    },
+    {
+      "morph": "-ancy",
+      "type": "suffix",
       "keyword": null,
-      "meaning": "capable of, able to",
-      "source": "OG/Morphology POST Training Materials/Morph Root Words.pdf",
+      "meaning": "quality, state of",
+      "source": "Teacher transcription of physical Ron Yoshimoto morphology card set, 2026-07-13; exact core pre-2007 source-family match: Michael J. Sheehan, Word Parts Dictionary (2000), -ance/-ancy 'quality or state of being'",
+      "verified": true
+    },
+    {
+      "morph": "-ac",
+      "type": "suffix",
+      "keyword": null,
+      "meaning": "related to",
+      "source": "Teacher transcription of physical Ron Yoshimoto morphology card set, 2026-07-13; pre-2007 source-family match: Michael J. Sheehan, Word Parts Dictionary (2000), -ac 'of; pertaining to'",
+      "verified": true
+    },
+    {
+      "morph": "-ade",
+      "type": "suffix",
+      "keyword": null,
+      "meaning": "action, fruit drink",
+      "source": "Teacher transcription of physical Ron Yoshimoto morphology card set, 2026-07-13; strong pre-2007 source-family match: Michael J. Sheehan, Word Parts Dictionary (2000), -ade senses 'the act of' and 'drink made from'",
       "verified": true
     },
     {

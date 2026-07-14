@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Fractions_and_Decimals_Week_6",
+  "unit_pptx_name": "Fractions and Decimals Week 6.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_fracdec_w6s1.js",
+      "folder": "FracDec_W6S1_Percentages_Whole",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_fracdec_w6s2.js",
+      "folder": "FracDec_W6S2_Compare_Order",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_fracdec_w6s3.js",
+      "folder": "FracDec_W6S3_Add_Subtract_Decimals",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_fracdec_w6s4.js",
+      "folder": "FracDec_W6S4_FDP_Together",
+      "session": 4
+    }
+  ]
+}

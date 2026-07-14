@@ -5,6 +5,10 @@ materials, which this school's OG program is built on. Deck content must agree w
 these documents. Almost every PDF is a SCAN with no text layer - to read one, render
 pages to images with PyMuPDF (miniconda `python`) and view the images:
 
+For the evidence trail separating teacher-verified physical-card wording from
+exact attributed matches and general reference meanings, see
+`og_planner/YOSHIMOTO_CARD_SOURCE_RESEARCH.md`.
+
 ```python
 import fitz
 doc = fitz.open("OG/<path>.pdf")
@@ -58,13 +62,21 @@ doc[PAGE].get_pixmap(dpi=110).save("scratch/page.png")   # then Read the image
 
 ## Standing rules
 
-- When a morpheme's keyword/meaning is needed and `og_planner/morpheme_bank.json`
-  lacks it, find the morpheme's worksheet page in the books above, read the definition
-  box, append it to the bank with the source, and only then use it (OG_MEGA_PROMPT.md
-  section 4).
-- Keywords are memory anchors. In Yoshimoto's own plan students select the keyword;
-  in this school's decks the keyword is fixed per morpheme so every exposure matches.
-  Once locked in the bank it never changes.
+- The direct photo transcriptions are the first authority for the captured physical
+  set: `yoshimoto_cards_suffixes.json` (89), `yoshimoto_cards_prefixes.json` (104),
+  and `yoshimoto_cards_latin_roots.json` (84). The readable combined listing is
+  `YOSHIMOTO_CARD_CATALOGUE.md`; the three category JSONs, not the generated combined
+  view, are the editable source of truth.
+- Use each photographed card's exact heading, printed meaning, selected keyword,
+  printed part of speech where present, and `associated_words`. Never silently override
+  captured metadata, invent a part of speech, or automatically place an
+  `excluded_words` item in a lesson. Associated words have been normalised to
+  Australian English. See `IMPORTANT/OG_MEGA_PROMPT.md` section 4 for the mandatory
+  exception and pre-build audit rules.
+- If a card is not captured, consult `morpheme_bank.json`, then
+  `morpheme_meanings.json`. Unconfirmed reference entries must not be described as
+  exact card wording. Verify genuinely new entries against the relevant worksheet and
+  record the source.
 - The activity masters (Tachistoscope, Word Building, Prefix Memory, Extension Wheel)
   are legitimate sources when a teacher asks for OG games or homework - point to them
   rather than inventing new formats.

@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Decimals_and_Integers_Unit",
+  "unit_pptx_name": "Decimals and Integers Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_decint_lesson1.js",
+      "folder": "DecInt_Lesson1_Decimal_Place_Value",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_decint_lesson2.js",
+      "folder": "DecInt_Lesson2_Comparing_Ordering_Decimals",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_decint_lesson3.js",
+      "folder": "DecInt_Lesson3_Integers_On_Number_Lines",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_decint_lesson4.js",
+      "folder": "DecInt_Lesson4_Integers_In_Context",
+      "session": 4
+    }
+  ]
+}

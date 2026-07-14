@@ -1,0 +1,31 @@
+{
+  "unit_folder": "Metric_Measurement_and_Unit_Conversion_Unit",
+  "unit_pptx_name": "Metric Measurement and Unit Conversion.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_mmc_lesson1.js",
+      "folder": "MMC_Session1_Choosing_Metric_Units",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_mmc_lesson2.js",
+      "folder": "MMC_Session2_Converting_Length",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_mmc_lesson3.js",
+      "folder": "MMC_Session3_Converting_Mass",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_mmc_lesson4.js",
+      "folder": "MMC_Session4_Converting_Capacity",
+      "session": 4
+    },
+    {
+      "build_script": "builds/build_mmc_lesson5.js",
+      "folder": "MMC_Session5_Choose_Convert_Compare",
+      "session": 5
+    }
+  ]
+}

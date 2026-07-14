@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Poetry_Week3_Rhyming_and_Tanka",
+  "unit_pptx_name": "Poetry Week 3 -- Rhyming Poems and Tanka (Year 6).pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_poetry_w3s1.js",
+      "folder": "Poetry_W3S1_Reading_Rhyme_Tanka",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_poetry_w3s2.js",
+      "folder": "Poetry_W3S2_Draft_Rhyming",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_poetry_w3s3.js",
+      "folder": "Poetry_W3S3_Draft_Tanka",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_poetry_w3s4.js",
+      "folder": "Poetry_W3S4_Publish",
+      "session": 4
+    }
+  ]
+}

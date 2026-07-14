@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Fractions_and_Decimals_Week_5",
+  "unit_pptx_name": "Fractions and Decimals Week 5.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_fracdec_w5s1.js",
+      "folder": "FracDec_W5S1_Equivalent_Fractions",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_fracdec_w5s2.js",
+      "folder": "FracDec_W5S2_Mixed_And_Improper",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_fracdec_w5s3.js",
+      "folder": "FracDec_W5S3_Add_Subtract_Related",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_fracdec_w5s4.js",
+      "folder": "FracDec_W5S4_LCD_Problems",
+      "session": 4
+    }
+  ]
+}

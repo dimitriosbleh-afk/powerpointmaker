@@ -1,0 +1,21 @@
+{
+  "unit_folder": "Practical_Problem_Solving_and_Financial_Reasoning_Unit",
+  "unit_pptx_name": "Practical Problem Solving and Financial Reasoning.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_finrea_lesson1.js",
+      "folder": "FinRea_Session1_Estimate_To_Check",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_finrea_lesson2.js",
+      "folder": "FinRea_Session2_Bar_Models",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_finrea_lesson3.js",
+      "folder": "FinRea_Session3_Fundraiser_Budget",
+      "session": 3
+    }
+  ]
+}

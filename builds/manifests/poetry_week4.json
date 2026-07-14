@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Poetry_Week4_Clerihew_and_Limerick",
+  "unit_pptx_name": "Poetry Week 4 -- Clerihews and Limericks (Year 6).pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_poetry_w4s1.js",
+      "folder": "Poetry_W4S1_Reading_Funny",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_poetry_w4s2.js",
+      "folder": "Poetry_W4S2_Draft_Clerihew",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_poetry_w4s3.js",
+      "folder": "Poetry_W4S3_Draft_Limerick",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_poetry_w4s4.js",
+      "folder": "Poetry_W4S4_Publish",
+      "session": 4
+    }
+  ]
+}

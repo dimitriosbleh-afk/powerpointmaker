@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Poetry_Week1_ThreeLine_and_Haiku",
+  "unit_pptx_name": "Poetry Week 1 -- Three-Line Poems and Haiku (Year 6).pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_poetry_w1s1.js",
+      "folder": "Poetry_W1S1_Reading_Poems",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_poetry_w1s2.js",
+      "folder": "Poetry_W1S2_Draft_ThreeLine",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_poetry_w1s3.js",
+      "folder": "Poetry_W1S3_Draft_Haiku",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_poetry_w1s4.js",
+      "folder": "Poetry_W1S4_Publish",
+      "session": 4
+    }
+  ]
+}

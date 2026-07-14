@@ -1,6 +1,8 @@
 node_modules/
 slidetemp/
 output/
+outputs/
+tmp/
 .vscode/
 .DS_Store
 slide-*.jpg
@@ -29,6 +31,10 @@ secrets.json
 service-account*.json
 *service-account*.json
 google-credentials*.json
+google_oauth_client*.json
+client_secret*.json
+token*.json
+.google/
 
 # Generated extraction/debug artifacts
 tmp_*.txt

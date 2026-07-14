@@ -14,57 +14,51 @@
     "Monday": {
       "morphology": [
         "New Morphology",
-        "ord/ordin"
+        "mal-"
       ],
-      "grammar": "Colons before a list",
+      "grammar": "Prepositions and prepositional phrases",
       "learned_words": [
-        "Review learned words",
-        "constitution, heritage"
+        "New learned word",
+        "muscle"
       ]
     },
     "Tuesday": {
       "morphology": [
-        "Review Morphology",
-        "ord/ordin"
+        "New Morphology",
+        "-ery"
       ],
-      "grammar": "Colons before a list",
+      "grammar": "Prepositions and prepositional phrases",
       "learned_words": [
         "New learned word",
-        "indigenous"
+        "tongue"
       ]
     },
     "Wednesday": {
       "morphology": [
         "New Morphology",
-        "-ible"
+        "-ice"
       ],
-      "grammar": "Colons before a list",
+      "grammar": "Prepositions and prepositional phrases",
       "learned_words": [
         "Review learned words",
-        "heritage, indigenous"
+        "muscle, tongue"
       ]
     },
     "Thursday": {
       "morphology": [
-        "Review Morphology",
-        "-ible"
-      ],
-      "grammar": "Colons before a list",
-      "learned_words": [
-        "New learned word",
-        "ceremony"
-      ]
-    },
-    "Friday": {
-      "morphology": [
         "Week Review",
-        "ord/ordin, -ible"
+        "mal-, -ery, -ice"
       ],
       "grammar": "Week Review",
       "learned_words": [
-        "Week Review",
-        "indigenous, ceremony"
+        "Review learned words",
+        "muscle, tongue"
       ]
+    },
+    "Friday": {
+      "morphology": "No session this week",
+      "grammar": "No session",
+      "learned_words": "No session"
     }
   },
   "sessions": [
@@ -73,452 +67,112 @@
       "type": "new",
       "morphology_review": [
         {
-          "morph": "flect / flex",
+          "morph": "rect / reg",
           "type": "root",
-          "keyword": "reflex",
-          "meaning": "bend",
-          "derivative_ask": "who has a flect/flex word? EXPECT: flexible, deflect, reflection."
+          "keyword": "correct",
+          "meaning": "right, straight, lead"
         },
         {
           "morph": "-cy",
           "type": "suffix",
           "keyword": "infancy",
-          "meaning": "state or quality (as in infancy, privacy, agency)"
-        },
-        {
-          "morph": "sub-",
-          "type": "prefix",
-          "keyword": "submarine",
-          "meaning": "below, under",
-          "derivative_ask": "who has a sub- word? EXPECT: submerge, subheading, submarine."
-        },
-        {
-          "morph": "capt / capit",
-          "type": "root",
-          "keyword": "capture / captain",
-          "meaning": "hold, take OR leader, head"
-        },
-        {
-          "morph": "counter-",
-          "type": "prefix",
-          "keyword": "counterattack",
-          "meaning": "against, opposite"
-        },
-        {
-          "morph": "-ist",
-          "type": "suffix",
-          "keyword": "artist",
-          "meaning": "one who",
-          "derivative_ask": "who is an -ist? EXPECT: artist, cyclist, pianist."
-        },
-        {
-          "morph": "rect / reg",
-          "type": "root",
-          "keyword": "correct",
-          "meaning": "straight, rule"
-        },
-        {
-          "morph": "inter-",
-          "type": "prefix",
-          "keyword": "international",
-          "meaning": "between, among"
+          "meaning": "quality, state",
+          "extra_task": {
+            "prompt": "Give me one word that ends in -cy.",
+            "answers": [
+              "infancy",
+              "normalcy",
+              "bankruptcy",
+              "secrecy"
+            ]
+          }
         },
         {
           "morph": "ped / pod",
           "type": "root",
           "keyword": "pedal",
-          "meaning": "foot"
-        },
-        {
-          "morph": "mit / miss",
-          "type": "root",
-          "keyword": "missile",
-          "meaning": "send"
-        }
-      ],
-      "words_to_read_review": {
-        "words": [
-          "flexible",
-          "literacy",
-          "submerge",
-          "captain",
-          "counterattack",
-          "cyclist",
-          "regulate",
-          "interject",
-          "pedestrian",
-          "transmit",
-          "deflect",
-          "agency",
-          "subheading",
-          "rectangle",
-          "podium"
-        ],
-        "notes": "READ all rows together first. Today's split:\nGrade 5s - row 1\nGrade 6s - row 2\nWinter birthdays - row 3\nWearing runners - row 4\nEveryone - row 5\nPush speed on the second read - repetition builds orthographic mapping.\nASK: Which words have the root flect/flex (bend)? Name a student to find them. EXPECT: flexible (bends easily without breaking), deflect (to bend something away).\nASK: Which words carry the suffix -cy (state or quality)? EXPECT: literacy (the state of being able to read and write), agency (the state of being able to act for yourself).\nASK: Which two words share the root ped/pod (foot)? EXPECT: pedestrian (a person on foot), podium (the platform your feet stand on).\nCHORAL to finish, whole class answers together: How do we make cyclist plural? EXPECT: just add -s. Which word means to bend away? EXPECT: deflect. Synonym for flexible? EXPECT: bendy, stretchy. Antonym of submerge? EXPECT: surface."
-      },
-      "sound_bank": [
-        {
-          "morph": "ord / ordin",
-          "type": "root"
-        },
-        {
-          "morph": "flect / flex",
-          "type": "root"
-        },
-        {
-          "morph": "mit / miss",
-          "type": "root"
-        },
-        {
-          "morph": "sub-",
-          "type": "prefix"
-        },
-        {
-          "morph": "counter-",
-          "type": "prefix"
-        },
-        {
-          "morph": "inter-",
-          "type": "prefix"
-        },
-        {
-          "morph": "-cy",
-          "type": "suffix"
-        },
-        {
-          "morph": "-ist",
-          "type": "suffix"
-        },
-        {
-          "morph": "-ible",
-          "type": "suffix"
-        }
-      ],
-      "words_to_spell_review": [
-        {
-          "word": "reflect",
-          "sentence": "The mirror will reflect the light back across the room.",
-          "prompt": "Which part of the word means bend, and what is bending here?",
-          "answer": "flect means bend - the light bends back off the mirror."
-        },
-        {
-          "word": "privacy",
-          "sentence": "Please respect my privacy and knock before entering.",
-          "prompt": "What does the -cy ending turn private into?",
-          "answer": "-cy makes it a state: the state of being private."
-        },
-        {
-          "word": "submit",
-          "sentence": "You must submit your project by Friday.",
-          "prompt": "Sub means under and mit means send - why does submit mean hand in?",
-          "answer": "you send your work under someone's judgement - you hand it in."
-        },
-        {
-          "word": "counterpart",
-          "sentence": "The school captain met her counterpart from the other campus.",
-          "prompt": "What does counter- tell you about where the matching person stands?",
-          "answer": "counter- means opposite: the matching person on the other side."
-        },
-        {
-          "word": "interstate",
-          "sentence": "My cousins travelled interstate for the holidays.",
-          "prompt": "Which part of the word tells you the travel is between states?",
-          "answer": "inter- means between: travel between states."
-        },
-        {
-          "word": "infancy",
-          "sentence": "The puppy is still in its infancy.",
-          "prompt": "What state of life does the -cy point to?",
-          "answer": "-cy makes it a state: the state of being an infant, the very beginning."
-        },
-        {
-          "word": "artist",
-          "sentence": "The artist signed the corner of her painting.",
-          "prompt": "What does -ist tell you about the person?",
-          "answer": "-ist means one who: one who makes art."
-        },
-        {
-          "word": "rectify",
-          "sentence": "Please rectify the mistake before we print the newsletter.",
-          "prompt": "Rect means straight - how does that give us the meaning fix?",
-          "answer": "to rectify is to make the crooked thing straight again - to fix it."
-        },
-        {
-          "word": "missile",
-          "sentence": "The missile was launched far out to sea.",
-          "prompt": "Which root is hiding in missile, and what does it mean?",
-          "answer": "miss means send - a missile is something sent flying."
-        },
-        {
-          "word": "podiatrist",
-          "sentence": "The podiatrist checked the runner's sore feet.",
-          "prompt": "Two morphemes to find: which part means foot and which part means one who?",
-          "answer": "pod means foot, -ist means one who: one who treats feet."
-        }
-      ],
-      "new_morphology": {
-        "morph": "ord / ordin",
-        "type": "root",
-        "keyword": "coordinate",
-        "meaning": "order"
-      },
-      "words_to_read_new": [
-        {
-          "word": "order",
-          "meaning": "ord means order - the way things are arranged, one after another"
-        },
-        {
-          "word": "orderly",
-          "meaning": "add -ly: doing things in a neat order"
-        },
-        {
-          "word": "disorder",
-          "meaning": "dis means apart, so disorder is order that has come apart - a mess"
-        },
-        {
-          "word": "reorder",
-          "meaning": "re means again: to put things back in order again"
-        },
-        {
-          "word": "ordinary",
-          "meaning": "in the usual order of things, so it means normal"
-        },
-        {
-          "word": "ordinal",
-          "meaning": "the numbers that tell order: 1st, 2nd, 3rd"
-        },
-        {
-          "word": "coordinate",
-          "meaning": "co means together: to put plans in order together"
-        },
-        {
-          "word": "subordinate",
-          "meaning": "sub means under: placed under someone in the order"
-        },
-        {
-          "word": "extraordinary",
-          "meaning": "extra means beyond: beyond the usual order - amazing"
-        },
-        {
-          "word": "ordain",
-          "meaning": "to officially put someone into their place in the order; to appoint"
-        },
-        {
-          "word": "ordinance",
-          "meaning": "an official rule that keeps everything in order"
-        },
-        {
-          "word": "insubordinate",
-          "meaning": "in- means not: not accepting your place under the order"
-        }
-      ],
-      "wtr_new_notes": "Teacher script - read each line aloud as the word appears. Name every part, then fuse the parts into the meaning, the way sub (beneath) + marine (water) fuses into a vessel beneath the water.\n**order** - ord is the root on its own, order: things arranged in their places, one after another.\n**orderly** - ord means order + -ly means in that way: doing things in an ordered way. Neat.\n**disorder** - dis- means apart + ord means order: the order pulled apart. A mess!\n**reorder** - re- means again + ord means order: to put things back into order again.\n**ordinary** - ordin means order + -ary means relating to: relating to the usual order of things. Normal, nothing special.\n**ordinal** - ordin means order + -al means to do with: the numbers to do with order - 1st, 2nd, 3rd.\n**coordinate** - co- means together + ordin means order + -ate means to do it: to bring people or plans into order together.\n**subordinate** - sub- means under + ordin means order + -ate describes the person: someone placed under another in the order.\n**extraordinary** - extra- means beyond + ordin means order + -ary means relating to: beyond the usual order. Amazing.\n**ordain** - ord means order: to officially place someone into the order. To appoint them.\n**ordinance** - ordin means order + -ance turns it into a thing: a rule made to keep order.\n**insubordinate** - in- means not + sub- means under + ordin means order: refusing to sit under your place in the order.\n**Memory hook:** every ord word is about things lined up in their place. Hear ORD, think \"Off to my place in the line.\" Students say the hook with you, then whisper it to a partner.",
-      "words_to_spell_new": [
-        "order",
-        "orderly",
-        "disorder",
-        "ordinary"
-      ],
-      "extension": "Once finished, write one sentence using two ord words joined by a subordinating clause. Reminder: a subordinating clause starts with a joining word like because, although or while, and cannot stand alone. Stretch: open your sentence with the subordinating clause and follow it with a comma.",
-      "new_morph_activity": {
-        "title": "Build an ord word",
-        "rule": "Word building: take the root ord/ordin and add morphemes you know.",
-        "example": "dis + ord + er        re + ord + er        ordin + ary        co + ordin + ate",
-        "items": [
-          "Build three REAL ord words on your whiteboard.",
-          "Then write one sentence with your best word that shows its meaning."
-        ],
-        "routine": "Whiteboards - 3 minutes - boards up",
-        "footer": "Stretch: build a 4-morpheme word",
-        "notes": "1. SAY: The root is the engine. Add prefixes and suffixes you know and build me three real ord words. TIME: 2 minutes building, 1 minute for the sentence. CIRCULATE: check the morphemes are real, not invented. SCAN boards up together, pick two students to read their sentence aloud. TRAP: bolting on morphemes that make non-words, like ordful. Fix: say the word aloud - if we never say it, we do not build it; student swaps the suffix and rebuilds. STRETCH: build a 4-morpheme word (insubordinate, coordination). HELP: start from order and add ONE prefix (dis-, re-).\n---\nPurpose: Yoshimoto word building - students own the morphemes before spelling from them. [You Do | Word building | Morphology]"
-      },
-      "learned_words": {
-        "review": [
-          {
-            "word": "constitution",
-            "unfair": "tit",
-            "notes": "**Why learned:** the middle syllable collapses to a schwa - you cannot hear the i clearly, and -tion says /shun/.\n**Say it:** con-sti-TU-tion in robot voice, then at natural speed.\n**Link:** our class rules are our constitution - the rules that keep our class in order (tie to today's root ord!)."
-          },
-          {
-            "word": "heritage",
-            "unfair": "age",
-            "notes": "**Why learned:** the final syllable says /ij/, not /ayj/ as the spelling suggests.\n**Say it:** HE-ri-tij. The -age ending hides as /ij/ in village, cottage, luggage too - collect them as a family.\n**Link:** heritage is what is handed down in order from the past (inquiry unit)."
+          "meaning": "foot",
+          "extra_task": {
+            "prompt": "Give me one word built from ped or pod, meaning foot.",
+            "answers": [
+              "pedal",
+              "pedestrian",
+              "podium",
+              "tripod"
+            ]
           }
-        ],
-        "new": {
-          "word": "indigenous",
-          "unfair": "e",
-          "notes": "**Why learned:** the second syllable is a schwa - in-DIJ-e-nus runs together and the e is unclear. The g goes soft before the i as well.\n**Say it:** in-DIJ-e-nus, four syllables, tap them out.\n**Watch:** capital I when naming Indigenous peoples.\n**Link:** inquiry unit on First Nations heritage."
-        }
-      },
-      "dictation": [
-        {
-          "sentence": "We followed the ordinary order, and then we began our work.",
-          "targets": [
-            "ordinary",
-            "order"
-          ],
-          "cups": {
-            "capitals": [
-              "We"
-            ],
-            "punctuation": [
-              "comma before and",
-              "full stop"
-            ]
-          },
-          "focus": "comma before and in a compound sentence"
         },
         {
-          "sentence": "The captain gave a clear order: \"Keep every record in an orderly way, and check it twice.\"",
-          "targets": [
-            "captain",
-            "order",
-            "orderly",
-            "record"
-          ],
-          "cups": {
-            "capitals": [
-              "The",
-              "Keep"
-            ],
-            "punctuation": [
-              "colon",
-              "opening quotation mark",
-              "comma",
-              "closing quotation mark",
-              "full stop inside the quote"
-            ]
-          },
-          "focus": "colon, quotation marks, comma in a compound sentence"
-        }
-      ],
-      "grammar": {
-        "header_notes": "Five-minute finisher. Colons before a list - day 1 of the weekly sequence. Whiteboards out before the I do.",
-        "i_do": {
-          "title": "Colons introduce a list",
-          "rule": "A colon says: here comes the list I promised. It may only follow a complete sentence.",
-          "example": "Pack your bag: a hat, your lunch, a water bottle.",
-          "items": [
-            "Cover the list with your hand. 'Pack your bag' can stand alone - so the colon is legal.",
-            "Two dots, full sentence first, list after."
-          ],
-          "routine": "Eyes on me - watch the test",
-          "footer": "Tomorrow: colon or no colon?",
-          "notes": "1. SAY: A colon is a signpost. It tells the reader a list is coming right now. 2. MODEL: point at the example. Think aloud: 'Pack your bag' is a full sentence, so I am allowed the colon. 3. COVER the list with your hand, read the first half aloud, SAY: it stands alone, colon legal. TRAP: colon after a fragment like 'You need:'. Fix: cover the colon, student reads what is left aloud, says whether it stands alone, rewrites.\n---\nPurpose: first exposure this week; anchor the rule 'complete sentence before the colon'. [I Do | Explicit modelling | Grammar | HITS 3]"
-        },
-        "we_do": {
-          "title": "Fix it together",
-          "rule": "Add the colon where it belongs. Check: is there a complete sentence before it?",
-          "example": "Every athlete needs three things courage, practice and rest.",
-          "items": [
-            "Write the sentence, place the colon, boards up together.",
-            "Prove it: read the words before your colon out loud."
-          ],
-          "routine": "Whiteboards ready - boards up together",
-          "footer": "Stem: The colon belongs there because ...",
-          "notes": "ANSWER: Every athlete needs three things: courage, practice and rest. 1. SAY: Write the sentence and place the colon where it belongs. 20 sec, boards up together. 2. SCAN boards, back row first. 80%+ correct -> You do. Less -> cover the list together, read the first half aloud, re-ask with boards. 3. ASK: How do you know the colon is legal there? EXPECT: the first part is a complete sentence. Stem: The colon belongs there because ...\n---\nPurpose: guided placement with the stand-alone test. [We Do | Guided practice | Grammar | HITS 7]"
-        },
-        "you_do": {
-          "title": "Your turn",
-          "example": "Write one sentence about our classroom that uses a colon before a list.",
-          "items": [
-            "Challenge: make one list item a pair, like 'a sharp, grey pencil'.",
-            "If stuck: start with 'Our classroom needs three things'."
-          ],
-          "routine": "90 seconds - boards up when done",
-          "footer": "Prove your colon with the cover test",
-          "notes": "1. SAY: One sentence, one colon, a list of at least three things about our classroom. TIME: 90 seconds. CIRCULATE: check the words before each colon make a full sentence. STRETCH: add a describing pair inside one list item, like 'a sharp, grey pencil'. HELP: give the starter 'Our classroom needs three things' and the student adds only the list.\n---\nPurpose: independent application; tomorrow revisits with legal/illegal judgements. [You Do | Independent practice | Grammar | HITS 5]"
-        }
-      }
-    },
-    {
-      "day": "Tuesday",
-      "type": "review",
-      "morphology_review": [
-        {
-          "morph": "inter-",
-          "type": "prefix",
-          "keyword": "international",
-          "meaning": "between, among",
-          "derivative_ask": "who has an inter- word? EXPECT: interject, intercept, interval."
-        },
-        {
-          "morph": "capt / capit",
-          "type": "root",
-          "keyword": "capture / captain",
-          "meaning": "hold, take OR leader, head"
-        },
-        {
-          "morph": "-ist",
+          "morph": "-ar",
           "type": "suffix",
-          "keyword": "artist",
-          "meaning": "one who"
+          "keyword": "angular",
+          "meaning": "relating to"
         },
         {
           "morph": "flect / flex",
           "type": "root",
-          "keyword": "reflex",
+          "keyword": "deflect",
           "meaning": "bend"
         },
         {
+          "morph": "-ine",
+          "type": "suffix",
+          "keyword": "genuine",
+          "meaning": "relating to, of, like, chemical substance"
+        },
+        {
           "morph": "ord / ordin",
           "type": "root",
-          "keyword": "coordinate",
+          "keyword": "ordain",
           "meaning": "order",
-          "derivative_ask": "who remembers a word from yesterday's new root? EXPECT: order, ordinary, coordinate, subordinate."
+          "extra_task": {
+            "prompt": "Give me one word built from ord or ordin, meaning order.",
+            "answers": [
+              "order",
+              "ordinary",
+              "coordinate",
+              "subordinate"
+            ]
+          }
         },
         {
-          "morph": "counter-",
-          "type": "prefix",
-          "keyword": "counterattack",
-          "meaning": "against, opposite",
-          "derivative_ask": "who has a counter- word? EXPECT: counterattack, counterpoint, counterclockwise."
-        },
-        {
-          "morph": "rect / reg",
+          "morph": "clud(e) / clus(e)",
           "type": "root",
-          "keyword": "correct",
-          "meaning": "straight, rule"
+          "keyword": "exclude",
+          "meaning": "shut"
         },
         {
-          "morph": "-cy",
+          "morph": "-ciate / -tiate",
           "type": "suffix",
-          "keyword": "infancy",
-          "meaning": "state or quality (as in infancy, privacy, agency)"
+          "keyword": "appreciate",
+          "meaning": "ending that says /sh-ee-ate/ (the -ate part means to make or do)"
         },
         {
-          "morph": "ped / pod",
+          "morph": "capt / capit",
           "type": "root",
-          "keyword": "pedal",
-          "meaning": "foot"
-        },
-        {
-          "morph": "sub-",
-          "type": "prefix",
-          "keyword": "submarine",
-          "meaning": "below, under"
+          "keyword": "capable",
+          "meaning": "hold, take OR leader, head"
         }
       ],
       "words_to_read_review": {
         "words": [
-          "ordinal",
-          "flexibly",
-          "pharmacy",
-          "subordinate",
-          "counterclockwise",
-          "pianist",
-          "rectify",
-          "interval",
-          "podiatrist",
-          "reorder",
-          "reflection",
-          "captive",
-          "dismiss",
-          "extraordinary",
-          "pedal"
+          "order",
+          "include",
+          "captain",
+          "solar",
+          "conclude",
+          "reflect",
+          "ordinary",
+          "exclude",
+          "pedestrian",
+          "secrecy",
+          "coordinate",
+          "rectangle",
+          "recluse",
+          "disorder",
+          "captive"
         ],
-        "notes": "READ all rows together first. Today's split:\nLeft-handers - row 1\nBorn January to June - row 2\nRight-handers - row 3\nBorn July to December - row 4\nEveryone, at speed - row 5\nPush speed on the second read - repetition builds orthographic mapping.\nASK: Which words carry yesterday's root ord/ordin (order)? Name a student to find them. EXPECT: ordinal (the order numbers - 1st, 2nd, 3rd), subordinate (placed under someone in the order), reorder (put back in order again), extraordinary (beyond the usual order).\nASK: Which word had a spelling change before its suffix? EXPECT: pianist - piano drops its o before -ist.\nASK: Which word is a -cy state word? EXPECT: pharmacy (the practice of preparing medicines).\nCHORAL to finish, whole class answers together: Antonym of counterclockwise? EXPECT: clockwise. The -ly on flexibly means in that way - so flexibly means? EXPECT: in a bending way. Which two words might you hear at a clinic? EXPECT: podiatrist, pharmacy. How do we make reflection plural? EXPECT: just add -s."
+        "notes": "1. READ: \"Read all five rows with me. Keep your eyes moving; the next round will be faster.\"\n2. READ: \"Birthday-season groups: summer birthdays read row 1; autumn row 2; winter row 3; spring row 4.\"\n3. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round. Try to beat our first pace.\"\n4. ASK: \"Which words use ord or ordin, meaning order?\" 5 sec, choral response. EXPECT: order, ordinary, coordinate, disorder.\n5. ASK: \"Which words use clud or clus, meaning shut?\" 5 sec, choral response. EXPECT: include, exclude, conclude, recluse.\n6. ASK: \"Captain and captive show two meanings of capt or capit. What does each mean?\" 5 sec, turn and tell. EXPECT: capit means leader or head in captain; capt means hold or take in captive.\n7. ASK: \"What is the opposite of include?\" 3 sec, choral response. EXPECT: exclude.\n8. ASK: \"Which word names a four-sided shape with right, straight sides?\" 3 sec, choral response. EXPECT: rectangle.\n9. ASK: \"Solar means relating to what?\" 3 sec, choral response. EXPECT: the sun.\n10. ASK: \"Make pedestrian plural.\" 3 sec, choral response. EXPECT: pedestrians."
       },
       "sound_bank": [
         {
@@ -526,23 +180,23 @@
           "type": "root"
         },
         {
+          "morph": "clud(e) / clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root"
+        },
+        {
           "morph": "rect / reg",
           "type": "root"
         },
         {
-          "morph": "ped / pod",
-          "type": "root"
-        },
-        {
-          "morph": "sub-",
-          "type": "prefix"
-        },
-        {
-          "morph": "inter-",
-          "type": "prefix"
-        },
-        {
-          "morph": "counter-",
+          "morph": "mal-",
           "type": "prefix"
         },
         {
@@ -550,166 +204,179 @@
           "type": "suffix"
         },
         {
-          "morph": "-ist",
+          "morph": "-tion / -sion",
           "type": "suffix"
         },
         {
-          "morph": "-ly",
+          "morph": "-ive",
           "type": "suffix"
         }
       ],
       "words_to_spell_review": [
         {
+          "word": "ordinance",
+          "sentence": "The council passed an ordinance about road safety.",
+          "prompt": "Which root tells you this official rule is about order?",
+          "answer": "ord means order: an ordinance is an official rule used to keep order."
+        },
+        {
+          "word": "subordinate",
+          "sentence": "The assistant was subordinate to the team leader.",
+          "prompt": "sub- means under and ord means order - where does a subordinate sit?",
+          "answer": "under another person in the order or rank."
+        },
+        {
+          "word": "ordinal",
+          "sentence": "First, second and third are ordinal numbers.",
+          "prompt": "Which root tells you these numbers show order?",
+          "answer": "ord means order: ordinal numbers show position in an order."
+        },
+        {
+          "word": "seclude",
+          "sentence": "Tall trees seclude the cabin from the road.",
+          "prompt": "clud means shut - what does seclude do?",
+          "answer": "it shuts the cabin away or hides it from view."
+        },
+        {
+          "word": "exclusive",
+          "sentence": "The offer was exclusive to library members.",
+          "prompt": "clus means shut - who is shut out of an exclusive offer?",
+          "answer": "people who are not members are shut out."
+        },
+        {
+          "word": "conclusion",
+          "sentence": "Write a clear conclusion at the end of your report.",
+          "prompt": "clus means shut - what does a conclusion do?",
+          "answer": "it closes or finishes the writing."
+        },
+        {
+          "word": "capital",
+          "sentence": "Canberra is the capital city of Australia.",
+          "prompt": "capit can mean leader or head - why is a capital city like a head?",
+          "answer": "it is the leading city where the country is governed."
+        },
+        {
+          "word": "deflect",
+          "sentence": "The goalkeeper managed to deflect the shot.",
+          "prompt": "flect means bend - what was bent away?",
+          "answer": "the path of the ball was bent away from the goal."
+        },
+        {
           "word": "regulate",
-          "sentence": "New rules will regulate how loudly we can play music.",
-          "prompt": "Reg means rule - say how regulate means control by rules.",
-          "answer": "to regulate is to control something by making rules for it."
+          "sentence": "Traffic lights regulate the flow of cars.",
+          "prompt": "reg can mean lead - what does regulate mean here?",
+          "answer": "to direct or control the flow according to rules."
         },
         {
-          "word": "cyclist",
-          "sentence": "The cyclist checked her helmet before the race.",
-          "prompt": "What does -ist tell you about the person on the bike?",
-          "answer": "-ist means one who: one who rides a cycle."
-        },
-        {
-          "word": "intercept",
-          "sentence": "He jumped to intercept the pass before it reached the wing.",
-          "prompt": "Inter- means between - between what and what did he jump?",
-          "answer": "between the passer and the receiver - he caught it in between."
-        },
-        {
-          "word": "pedestal",
-          "sentence": "The statue stood on a stone pedestal near the entry.",
-          "prompt": "Which root is hiding here, and why does a pedestal relate to feet?",
-          "answer": "ped means foot: the block where the statue's feet stand."
-        },
-        {
-          "word": "counterpoint",
-          "sentence": "Her calm answer was the perfect counterpoint to his shouting.",
-          "prompt": "What does counter- tell you her answer did to his shouting?",
-          "answer": "counter- means against or opposite: her answer stood against his shouting."
-        },
-        {
-          "word": "transmit",
-          "sentence": "The tower will transmit the signal across the valley.",
-          "prompt": "Trans means across and mit means send - say the whole meaning.",
-          "answer": "to send the signal across the valley."
-        },
-        {
-          "word": "submerge",
-          "sentence": "Slowly submerge the beaker in the tank.",
-          "prompt": "Which part of the word means under?",
-          "answer": "sub- means under: put it under the water."
-        },
-        {
-          "word": "flexible",
-          "sentence": "Gymnasts stay flexible by stretching every day.",
-          "prompt": "Flex means bend - what does the -ible ending add?",
-          "answer": "-ible means able to: able to bend."
-        },
-        {
-          "word": "literacy",
-          "sentence": "Our literacy block runs for an hour each morning.",
-          "prompt": "What state or quality does the -cy point to?",
-          "answer": "-cy makes it a state: the state of being able to read and write."
-        },
-        {
-          "word": "interject",
-          "sentence": "Please do not interject while your partner is speaking.",
-          "prompt": "Inter- means between and ject means throw - what are you throwing between?",
-          "answer": "your words - you throw them between someone else's words."
+          "word": "infancy",
+          "sentence": "In its infancy, the project was only a rough sketch.",
+          "prompt": "What state does -cy name here?",
+          "answer": "-cy means state or quality: infancy is the state of being very new or young."
         }
       ],
       "new_morphology": {
-        "morph": "ord / ordin",
-        "type": "root",
-        "keyword": "coordinate",
-        "meaning": "order"
+        "morph": "mal-",
+        "type": "prefix",
+        "keyword": "malfunction",
+        "meaning": "bad, wrong, ill"
       },
       "words_to_read_new": [
         {
-          "word": "orderly",
-          "meaning": "doing things in a neat order"
+          "word": "malfunction",
+          "meaning": "mal- means bad or wrong + function: a failure to work correctly"
         },
         {
-          "word": "ordination",
-          "meaning": "the ceremony of officially putting someone into their place in the order"
+          "word": "malnutrition",
+          "meaning": "mal- means bad or ill + nutrition: poor nutrition that harms health"
         },
         {
-          "word": "coordinate",
-          "meaning": "co means together: to bring plans into order together"
+          "word": "malformation",
+          "meaning": "mal- means wrong + formation: a form or structure that developed incorrectly"
         },
         {
-          "word": "coordination",
-          "meaning": "-tion turns the verb into a thing: parts working in order together"
+          "word": "maltreatment",
+          "meaning": "mal- means bad + treatment: cruel, harmful or neglectful treatment"
         },
         {
-          "word": "disorderly",
-          "meaning": "dis means apart: behaving with the order gone"
+          "word": "maladjusted",
+          "meaning": "mal- means wrong + adjusted: adjusted badly or not fitted correctly"
         },
         {
-          "word": "subordination",
-          "meaning": "being placed under someone in the order"
+          "word": "malcontent",
+          "meaning": "mal- means bad + content: a dissatisfied person"
         },
         {
-          "word": "preordain",
-          "meaning": "pre means before: to set the order before it happens"
+          "word": "maladroit",
+          "meaning": "mal- means bad + adroit (skilful): awkward or unskilful"
         },
         {
-          "word": "extraordinarily",
-          "meaning": "-ly makes it how you do it: in a way beyond the usual order"
+          "word": "malediction",
+          "meaning": "mal- means ill + diction (speaking): harmful words or a curse"
         },
         {
-          "word": "insubordination",
-          "meaning": "in- means not: refusing your place under the order"
+          "word": "malaise",
+          "meaning": "mal- means ill: a general feeling of being unwell"
         }
       ],
-      "wtr_new_notes": "Teacher script - yesterday's root, bigger words. Name every part, then fuse the parts into the meaning, like sub (beneath) + marine (water) = a vessel beneath the water.\n**orderly** - ord means order + -ly means in that way: doing things in an ordered way.\n**ordination** - ordin means order + -ation makes it an event: the ceremony of officially placing someone into the order.\n**coordinate** - co- means together + ordin means order + -ate means to do it: to bring plans into order together.\n**coordination** - co- together + ordin order + -ation makes it a thing: parts working together in order. Your PE coordination!\n**disorderly** - dis- means apart + ord means order + -ly means in that way: behaving with the order pulled apart.\n**subordination** - sub- means under + ordin means order + -ation makes it a thing: being placed under someone in the order.\n**preordain** - pre- means before + ord means order: to set the order before it even happens.\n**extraordinarily** - extra- beyond + ordin order + -ary relating to + -ly in that way: in a way beyond the usual order.\n**insubordination** - in- not + sub- under + ordin order + -ation a thing: refusing your place under the order. Four parts stacked!\n**Memory hook:** same as yesterday - hear ORD, think \"Off to my place in the line.\" Ask: who can build the LONGEST ord word from memory? EXPECT: insubordination - in + sub + ordin + ation.",
+      "wtr_new_notes": "READ each word as it appears, then connect mal- to the card meaning: bad, wrong, ill.\nmalfunction - mal- means bad or wrong + function: a failure to work correctly.\nmalnutrition - mal- means bad or ill + nutrition: poor nutrition that harms health.\nmalformation - mal- means wrong + formation: a form or structure that developed incorrectly.\nmaltreatment - mal- means bad + treatment: cruel, harmful or neglectful treatment.\nmaladjusted - mal- means wrong + adjusted: adjusted badly or not fitted correctly.\nmalcontent - mal- means bad + content: a dissatisfied person.\nmaladroit - mal- means bad + adroit (skilful): awkward or unskilful.\nmalediction - mal- means ill + diction (speaking): harmful words or a curse.\nmalaise - mal- means ill: a general feeling of being unwell.\nMemory hook: MAL signals BAD, WRONG or ILL. Say the three meanings together, then explain malfunction and malaise to a partner.",
       "words_to_spell_new": [
-        "coordinate",
-        "ordinal",
-        "extraordinary",
-        "subordinate"
+        "malfunction",
+        "malnutrition",
+        "malformation",
+        "maltreatment"
       ],
-      "extension": "Once finished, write the meaning of subordinate in your own words using the meanings of sub- (under) and ord (order). Stretch: do the same for insubordination - it has three morphemes to unpack.",
+      "extension": "1. SAY: \"When you finish, add a suffix to one spelling word and explain the new meaning.\"\n2. CHECK: malfunction can become malfunctioning; the meaning must still be clear.\nSTRETCH: Use two different mal- words in one sentence and make both meanings clear.",
       "new_morph_activity": {
-        "title": "Morpheme sums",
-        "rule": "I say the meaning sum, you build the ord word in your OG workbook.",
-        "example": "together + order + to do = ?      not + under + order = ?      before + order = ?",
+        "title": "Morpheme sums for mal-",
+        "rule": "Use bad, wrong or ill to build each mal- word.",
         "items": [
-          "Write the word AND its morpheme sum beside it.",
-          "Swap workbooks with your partner: do the parts match the meaning?"
+          "bad function = ?",
+          "poor nutrition = ?",
+          "wrongly formed = ?",
+          "feeling ill = ?"
         ],
-        "routine": "OG workbooks - 3 minutes",
-        "footer": "Stretch: write your own sum for a partner",
-        "notes": "ANSWER: coordinate, insubordination (accept insubordinate), preordain. 1. SAY: I give you the meaning sum, you build the ord word and write the sum beside it. TIME: 3 minutes in workbooks. 2. Read each sum aloud twice while students build. CIRCULATE: the sum must sit beside the word - the sum is the thinking. 3. Partners swap and check the parts against the meanings. TRAP: writing the word without its sum. Fix: student says the sum aloud, then writes it beside the word. STRETCH: invent a new ord sum for a partner to solve. HELP: word bank in the board corner - coordinate, preordain, insubordination.\n---\nPurpose: tachistoscope-style building from meanings; day-2 consolidation of ord/ordin. [You Do | Morpheme sums | Morphology]"
+        "item_size": 22,
+        "routine": "Whiteboards - 3 minutes - boards up",
+        "footer": "Stretch: explain which mal- meaning fits best",
+        "notes": "ANSWER: malfunction, malnutrition, malformation, malaise.\n1. SAY: \"Build one real mal- word for each meaning. Then label mal- as bad, wrong or ill.\"\n2. TIME: 3 minutes. Work alone on whiteboards.\n3. CIRCULATE: check that each word is real and its mal- meaning fits.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build malfunction together, then re-ask.\nTRAP: using bad for every word. Fix: reread the whole word, choose bad, wrong or ill, then rewrite it.\nSTRETCH: Explain why malaise matches ill more closely than wrong.\nHELP: Give the four-word bank; students match each word to a meaning instead of building it.\n---\nPurpose: connect all three printed meanings to genuine card words. [You Do | Morpheme sums | Morphology]",
+        "check_title": "Tick it or fix it - Morpheme sums for mal-",
+        "check_rule": "Tick each correct word. Fix any word that does not match.",
+        "check_items": [
+          "bad function = malfunction",
+          "poor nutrition = malnutrition",
+          "wrongly formed = malformation",
+          "feeling ill = malaise"
+        ],
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Which mal- meaning fits each word?",
+        "check_notes": "ANSWER: malfunction, malnutrition, malformation, malaise.\n1. REVEAL after every board has been scanned. SAY: \"Tick each correct word. Fix any word that is different.\"\n2. ASK: \"Which meaning of mal- fits each word?\" 10 sec, turn and tell. EXPECT: bad or wrong for malfunction; ill for malnutrition and malaise; wrong for malformation.\n3. SCAN corrections. 80%+ -> continue. Less -> point to one meaning at a time and have students match the word again.\nTRAP: ticking a correct spelling with the wrong meaning. Fix: say the whole-word meaning, choose the card meaning, then relabel.\nSTRETCH: Explain why one word could reasonably connect to two mal- meanings.\nHELP: read the green answer first, then match bad, wrong or ill.\n---\nPurpose: protected answer reveal for immediate tick-and-fix feedback. [You Do | Feedback | Morphology]"
       },
       "learned_words": {
         "review": [
           {
-            "word": "heritage",
-            "unfair": "age",
-            "notes": "**Why learned:** the final syllable says /ij/, not /ayj/.\n**Say it:** HE-ri-tij. Same family as village and cottage.\n**Quick link:** heritage is what is handed down in order from the past."
+            "word": "colonial",
+            "unfair": "o",
+            "notes": "Why learned: the first o is a schwa - it says /uh/ not /o/ (cuh-LOH-nee-uhl), and the -ial ending says /ee-uhl/.\nSay it: cuh-LOH-nee-uhl, four beats; tap them out.\nLink: from our First Nations inquiry - colonial times and the effects of colonisation."
           },
           {
-            "word": "constitution",
-            "unfair": "tit",
-            "notes": "**Why learned:** middle syllable collapses to schwa and -tion says /shun/.\n**Say it:** robot voice con-sti-TU-tion, then natural speed, then write from memory."
+            "word": "commemorate",
+            "unfair": "mm",
+            "notes": "Why learned: two m's sit together and are easy to reduce to one; unstressed vowels also become schwa.\nSay it: kuh-MEM-uh-rayt, four beats; tap the double m.\nLink: we commemorate inquiry events by remembering them together."
           }
         ],
         "new": {
-          "word": "indigenous",
-          "unfair": "e",
-          "notes": "**Why learned:** the second syllable is a schwa - you cannot hear the e clearly, and the g goes soft.\n**Say it:** in-DIJ-e-nus, tap the four syllables.\n**Watch:** capital I when naming Indigenous peoples.\n**Link:** inquiry unit on First Nations heritage."
+          "word": "muscle",
+          "unfair": "c",
+          "notes": "Why learned: the c is silent in muscle, so the written sc represents /s/.\nSay it: MUS-uhl, two beats. Link it to muscular, where the hidden c is heard as /k/.\nLink: a body word used in science and health when explaining movement."
         }
       },
       "dictation": [
         {
-          "sentence": "The insubordinate soldier ignored a direct order from his captain.",
+          "meter": "green",
+          "sentence": "The captain gave a calm order before the long march.",
           "targets": [
-            "insubordinate",
-            "order",
-            "captain"
+            "captain",
+            "order"
           ],
           "cups": {
             "capitals": [
@@ -719,19 +386,399 @@
               "full stop"
             ]
           },
-          "focus": "single clause accuracy; three review targets"
+          "focus": "one preposition (before) opening a phrase; two review targets"
         },
         {
-          "sentence": "Before the ceremony, the elders said: \"Heritage joins the past and the present in order.\"",
+          "meter": "yellow",
+          "sentence": "Before the final game, the coach gave one clear order: \"Protect that injured muscle!\"",
           "targets": [
-            "ceremony",
-            "heritage",
-            "order"
+            "order",
+            "muscle"
           ],
           "cups": {
             "capitals": [
               "Before",
-              "Heritage"
+              "Protect"
+            ],
+            "punctuation": [
+              "comma after opening phrase",
+              "colon",
+              "opening quotation mark",
+              "closing quotation mark",
+              "exclamation mark"
+            ]
+          },
+          "focus": "comma after an opening prepositional phrase, colon, quoted command"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Introduce the where, when or direction test for prepositions.\nPREP: Have whiteboards ready before the I do.",
+        "i_do": {
+          "title": "What is a preposition?",
+          "rule": "A preposition tells where, when or direction.",
+          "example": "The cat slept under the old table.",
+          "items": [
+            "Examples: in, on, under, before, after, across.",
+            "Under tells us where the cat slept."
+          ],
+          "routine": "Eyes on me - watch the test",
+          "footer": "Tomorrow: the whole prepositional phrase",
+          "notes": "ANSWER: under - it tells where the cat slept.\n1. SAY: \"A preposition tells us where, when or in what direction. Listen for that job.\"\n2. MODEL: Point to under. SAY: \"Under tells where the cat slept, so under is the preposition.\"\n3. ASK: \"What does under tell us here?\" 5 sec, choral response. EXPECT: where.\n4. CHECK: Ask, \"Does table tell where, when or direction?\" EXPECT: no.\nTRAP: choosing the noun table. Fix: run the where, when or direction test, then point to under.\n---\nPurpose: first exposure this week; anchor the where, when or direction test. [I Do | Explicit modelling | Grammar | HITS 3]"
+        },
+        "we_do": {
+          "title": "Find the preposition",
+          "rule": "A preposition tells where, when or direction.",
+          "example": "We walked across the wooden bridge.",
+          "items": [
+            "Write the preposition on your board, boards up together.",
+            "Prove it: does it tell where, when or which way?"
+          ],
+          "routine": "Whiteboards ready - boards up together",
+          "footer": "Stem: It is a preposition because it tells ...",
+          "notes": "ANSWER: across - it tells the direction we walked.\n1. SAY: \"Write the one word that tells where, when or which way.\"\n2. TIME: 15 seconds, then boards up together.\n3. SCAN the back row first. 80%+ -> ask for the reason. Less -> model with \"Walk through the door\", then re-ask.\n4. ASK: \"How do you know across is the preposition?\" 5 sec, choral response. EXPECT: it tells the direction.\nTRAP: choosing bridge because it is a place. Fix: run the job test, then replace the answer with across.\n---\nPurpose: guided identification with the where, when or direction test. [We Do | Guided practice | Grammar | HITS 7]"
+        },
+        "you_do": {
+          "title": "Your turn",
+          "example": "Write one sentence about our classroom and circle the preposition.",
+          "items": [
+            "Challenge: choose a preposition that tells WHEN, like before or after.",
+            "If stuck: start with 'The pencil is ___ my desk' and choose on, in or under."
+          ],
+          "routine": "90 seconds - boards up when done",
+          "footer": "Prove your preposition with the test",
+          "notes": "ANSWER: open - a complete classroom sentence with one correctly circled preposition.\n1. SAY: \"Write one sentence about our classroom and circle the preposition.\"\n2. TIME: 90 seconds. Work independently.\n3. CIRCULATE: check that the circled word tells where, when or direction.\n4. SCAN four boards. 80%+ -> share two examples. Less -> use the sentence frame, then re-check.\nTRAP: circling a place noun. Fix: run the job test and circle the word before the noun.\nSTRETCH: Use a preposition that tells when.\nHELP: complete \"The pencil is ___ my desk\" using on, in or under.\n---\nPurpose: independent application; tomorrow builds the whole phrase. [You Do | Independent practice | Grammar | HITS 5]",
+          "rule": "A preposition tells where, when or direction."
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root",
+          "keyword": "exclude",
+          "meaning": "shut"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill",
+          "extra_task": {
+            "prompt": "Who remembers a word from mal-?",
+            "answers": [
+              "malfunction",
+              "malnutrition",
+              "malformation",
+              "malaise"
+            ]
+          }
+        },
+        {
+          "morph": "-ciate / -tiate",
+          "type": "suffix",
+          "keyword": "appreciate",
+          "meaning": "ending that says /sh-ee-ate/ (the -ate part means to make or do)"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root",
+          "keyword": "capable",
+          "meaning": "hold, take OR leader, head",
+          "extra_task": {
+            "prompt": "Who has a capt/capit word?",
+            "answers": [
+              "captain",
+              "capital",
+              "capture",
+              "caption"
+            ]
+          }
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix",
+          "keyword": "infancy",
+          "meaning": "quality, state"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root",
+          "keyword": "correct",
+          "meaning": "right, straight, lead"
+        },
+        {
+          "morph": "-ine",
+          "type": "suffix",
+          "keyword": "genuine",
+          "meaning": "relating to, of, like, chemical substance"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root",
+          "keyword": "deflect",
+          "meaning": "bend",
+          "extra_task": {
+            "prompt": "Who has a flect/flex word?",
+            "answers": [
+              "reflect",
+              "deflect",
+              "flexible",
+              "reflection"
+            ]
+          }
+        },
+        {
+          "morph": "ord / ordin",
+          "type": "root",
+          "keyword": "ordain",
+          "meaning": "order"
+        },
+        {
+          "morph": "ped / pod",
+          "type": "root",
+          "keyword": "pedal",
+          "meaning": "foot"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "malformation",
+          "preclude",
+          "caption",
+          "regular",
+          "extraordinary",
+          "reflection",
+          "seclusion",
+          "podium",
+          "ordain",
+          "normalcy",
+          "conclusive",
+          "director",
+          "capacity",
+          "ordination",
+          "malaise"
+        ],
+        "notes": "1. READ: \"Read all five rows with me. Keep your eyes moving; the next round will be faster.\"\n2. READ: \"Left-handers read row 1; right-handers row 3. Choose either if you use both. January-to-June birthdays read row 2; July-to-December row 4.\"\n3. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round. Read with a strong, steady voice.\"\n4. ASK: \"Which words use ord or ordin, meaning order?\" 5 sec, choral response. EXPECT: extraordinary, ordain, ordination.\n5. ASK: \"Which words use mal-, meaning bad, wrong or ill?\" 5 sec, choral response. EXPECT: malformation and malaise.\n6. ASK: \"Which words use clud or clus, meaning shut?\" 5 sec, turn and tell. EXPECT: preclude, seclusion, conclusive.\n7. ASK: \"What is the opposite of conclusive?\" 3 sec, choral response. EXPECT: inconclusive.\n8. ASK: \"In regular, which meaning of rect or reg fits?\" 3 sec, choral response. EXPECT: right or straight.\n9. ASK: \"Which word names a person who leads or directs?\" 3 sec, choral response. EXPECT: director.\n10. ASK: \"Make podium plural.\" 3 sec, choral response. EXPECT: podiums."
+      },
+      "sound_bank": [
+        {
+          "morph": "ord / ordin",
+          "type": "root"
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        },
+        {
+          "morph": "-cy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-tion / -sion",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "preordained",
+          "sentence": "The ending seemed preordained from the first chapter.",
+          "prompt": "pre- means before and ord means order - what does preordained suggest?",
+          "answer": "ordered or decided beforehand."
+        },
+        {
+          "word": "orderly",
+          "sentence": "The books stood in an orderly row.",
+          "prompt": "Which root tells you the row has things in their places?",
+          "answer": "ord means order: orderly means arranged in good order."
+        },
+        {
+          "word": "exclusion",
+          "sentence": "Her exclusion from the group felt unfair.",
+          "prompt": "clus means shut - what does exclusion mean?",
+          "answer": "the state of being shut out or left out."
+        },
+        {
+          "word": "inclusion",
+          "sentence": "Our school values the inclusion of every student.",
+          "prompt": "in- means in and clus means shut - what is inclusion?",
+          "answer": "bringing everyone in so all are part of the group."
+        },
+        {
+          "word": "captor",
+          "sentence": "The tagged bird quickly escaped its captor.",
+          "prompt": "capt means hold or take - who is a captor?",
+          "answer": "someone who has caught and is holding another being."
+        },
+        {
+          "word": "flexible",
+          "sentence": "Gymnasts stay flexible by stretching safely.",
+          "prompt": "flex means bend - what does -ible add?",
+          "answer": "-ible means able to: able to bend."
+        },
+        {
+          "word": "rectify",
+          "sentence": "Please rectify the mistake before printing.",
+          "prompt": "rect means right or straight - how does that lead to fix?",
+          "answer": "to make something right or straight again; to correct it."
+        },
+        {
+          "word": "secrecy",
+          "sentence": "The surprise depended on complete secrecy.",
+          "prompt": "What state does -cy name?",
+          "answer": "-cy means state or quality: secrecy is the state of being secret."
+        },
+        {
+          "word": "malnutrition",
+          "sentence": "A balanced diet helps prevent malnutrition.",
+          "prompt": "Which prefix tells you the nutrition is bad or harmful?",
+          "answer": "mal- means bad, wrong or ill: malnutrition is poor nutrition."
+        },
+        {
+          "word": "maladjusted",
+          "sentence": "The maladjusted bicycle brakes rubbed against the wheel.",
+          "prompt": "Which prefix tells you the brakes were adjusted wrongly?",
+          "answer": "mal- means wrong: maladjusted means adjusted badly or incorrectly."
+        }
+      ],
+      "new_morphology": {
+        "morph": "-ery",
+        "type": "suffix",
+        "keyword": "machinery",
+        "meaning": "relating to, place where"
+      },
+      "words_to_read_new": [
+        {
+          "word": "machinery",
+          "meaning": "machine + -ery: equipment relating to machines as a group"
+        },
+        {
+          "word": "imagery",
+          "meaning": "image + -ery: language or pictures relating to images"
+        },
+        {
+          "word": "cutlery",
+          "meaning": "eating tools historically relating to cutting; treat cutlery as a whole card-family word"
+        },
+        {
+          "word": "surgery",
+          "meaning": "-ery can name a place: in Australian English, a doctor or dentist consultation room"
+        },
+        {
+          "word": "archery",
+          "meaning": "an activity relating to bows and arrows; do not force an arch + -ery split"
+        },
+        {
+          "word": "pottery",
+          "meaning": "-ery can name a place: a workshop where pots are made; it can also name the pots"
+        },
+        {
+          "word": "drapery",
+          "meaning": "drape + -ery: cloth and curtains relating to draping"
+        },
+        {
+          "word": "winery",
+          "meaning": "wine + -ery: a place where wine is made"
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears. Use the printed card meaning: -ery means relating to or place where.\nmachinery - equipment relating to machines as a group.\nimagery - language or pictures relating to images.\ncutlery - eating tools historically relating to cutting; treat it as a whole card-family word.\nsurgery - in Australian English, a doctor or dentist consultation room: a place where patients are seen.\narchery - an activity relating to bows and arrows; do not force an arch + -ery split.\npottery - a place where pots are made; the word can also name the pots.\ndrapery - cloth and curtains relating to draping.\nwinery - a place where wine is made.\nMemory hook: -ery has two card jobs: RELATED TO or A PLACE WHERE. Sort each word by the job that is clearest; pottery can do both.",
+      "words_to_spell_new": [
+        "machinery",
+        "archery",
+        "pottery",
+        "winery"
+      ],
+      "extension": "1. SAY: \"When you finish, sort the eight -ery words into relating to and place where.\"\n2. CHECK: Some words may fit both groups; use the whole-word meaning.\nSTRETCH: Justify one difficult choice.",
+      "new_morph_activity": {
+        "title": "Two jobs for -ery",
+        "rule": "Sort each card word by the printed meaning: relating to or place where.",
+        "example": "imagery        archery        pottery        winery",
+        "items": [
+          "Write R for relating to or P for place where.",
+          "If both meanings work, write R/P and explain why."
+        ],
+        "routine": "Whiteboards - 3 minutes - boards up",
+        "footer": "Stretch: defend the double-job word",
+        "notes": "ANSWER: imagery - R; archery - R; winery - P; pottery - P or R/P.\n1. SAY: \"Use only the two printed card meanings: relating to or place where.\"\n2. TIME: 3 minutes. Work independently on whiteboards.\n3. CIRCULATE: ask students to justify each label with the whole-word meaning.\n4. SCAN boards. 80%+ -> reveal. Less -> sort imagery and winery together, then re-ask.\nTRAP: calling -ery state or act. Fix: reread the card meaning, then relabel.\nSTRETCH: Explain why pottery can have two meanings. HELP: ask whether the word is connected to something or names a place.\n---\nPurpose: use the photographed card meaning accurately. [You Do | Meaning sort | Morphology]",
+        "check_title": "Tick it or fix it - Two jobs for -ery",
+        "check_items": [
+          "imagery = R (relating to)",
+          "archery = R (relating to)",
+          "winery = P (place where)",
+          "pottery = P or R/P"
+        ],
+        "check_notes": "ANSWER: imagery - R; archery - R; winery - P; pottery - P or R/P.\n1. REVEAL after boards are scanned. SAY: \"Tick each correct label. Fix any label that is different.\"\n2. ASK: \"Why can pottery fit two jobs?\" 10 sec, turn and tell. EXPECT: it can name the workshop or the pots.\n3. SCAN corrections. 80%+ -> continue. Less -> compare winery and pottery, then re-ask.\nTRAP: choosing from the ending alone. Fix: define the whole word, then relabel.\n---\nPurpose: immediate feedback on the two printed meanings. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "muscle",
+            "unfair": "c",
+            "notes": "Why learned: the c is silent - MUS-uhl. The s and c together just spell /s/ and the c hides.\nSay it: MUS-uhl, two beats, remember the hidden c.\nQuick link: body word for our science and health talk."
+          },
+          {
+            "word": "colonial",
+            "unfair": "o",
+            "notes": "Why learned: the first o is a schwa (/uh/) and -ial says /ee-uhl/.\nSay it: cuh-LOH-nee-uhl, four beats.\nQuick link: colonial times, from our First Nations inquiry."
+          }
+        ],
+        "new": {
+          "word": "tongue",
+          "unfair": "ongue",
+          "notes": "Why learned: two tricks in one - the o says /u/ (like tung), and the -ue at the end is silent, so -gue just says /g/.\nSay it: TUNG, one beat. Picture it as t + ongue. Same silent -ue in league and vague.\nLink: another body word for our science and health talk - the muscle you taste and talk with."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The old machinery worked smoothly inside the busy pottery today.",
+          "targets": [
+            "machinery",
+            "pottery"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "a prepositional phrase (inside the busy pottery); two -ery targets"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Before the tour, the guide gave one warning: \"Keep your tongue quiet near the machinery.\"",
+          "targets": [
+            "tongue",
+            "machinery"
+          ],
+          "cups": {
+            "capitals": [
+              "Before",
+              "Keep"
             ],
             "punctuation": [
               "comma after opening phrase",
@@ -741,135 +788,160 @@
               "full stop inside the quote"
             ]
           },
-          "focus": "comma after opening phrase, colon, quotation marks"
+          "focus": "comma after an opening prepositional phrase, colon and quoted command"
         }
       ],
       "grammar": {
-        "header_notes": "Five-minute finisher. Colons before a list - day 2. Rule restated in the I do so anyone away yesterday still succeeds.",
+        "header_notes": "Five-minute finisher. Prepositions and prepositional phrases - day 2: the whole phrase. Rule restated in the I do so anyone away yesterday still succeeds.",
         "i_do": {
-          "title": "Colon or no colon?",
-          "rule": "The rule again: a colon may only follow a COMPLETE sentence.",
-          "example": "Legal: She packed three tools: a saw, a level and a pencil.   Illegal: The tools are: a saw, a level and a pencil.",
+          "title": "The whole prepositional phrase",
+          "rule": "A prepositional phrase begins with a preposition and includes its whole noun group.",
+          "example": "The keys are under the blue mat.",
           "items": [
-            "Cover the list. 'She packed three tools' stands alone - legal.",
-            "'The tools are' hangs in the air - illegal."
+            "under is the preposition; under the blue mat is the whole phrase.",
+            "The phrase includes every word in the noun group: the blue mat."
           ],
-          "routine": "Watch both tests",
-          "footer": "Your verdicts are next",
-          "notes": "1. SAY: Yesterday's rule - a colon may only follow a complete sentence. Today we judge tricky cases. 2. MODEL both sentences. COVER the list each time and read the first half aloud. SAY: 'She packed three tools' stands alone - legal. 'The tools are' hangs in the air - illegal. TRAP: students think any list needs a colon. Fix: student reads the pre-colon words alone and gives the verdict themselves.\n---\nPurpose: contrast case to stop over-generalising the colon. [I Do | Worked example pair | Grammar | HITS 3]"
+          "routine": "Watch where the phrase ends",
+          "footer": "Your turn to box the phrase",
+          "notes": "1. SAY: Yesterday we found the preposition. Today we grab the whole phrase - the preposition plus its complete noun group.\n2. MODEL: point at under, then slide your finger across the blue mat. Think aloud: under the blue mat all tells me WHERE the keys are, so that whole group is the prepositional phrase.\nTRAP: students grab only under. Fix: student reads from the preposition through the complete noun group.\n---\nPurpose: extend from one preposition to the whole phrase; rule restated for absentees. [I Do | Explicit modelling | Grammar | HITS 3]"
         },
         "we_do": {
-          "title": "Legal or illegal?",
-          "rule": "Thumbs up = legal colon. Thumbs down = illegal. Prove it out loud.",
-          "example": "1. My bag holds: books, pens and lunch.   2. Remember three dates: Monday, Wednesday and Friday.",
+          "title": "Underline the whole phrase",
+          "rule": "A prepositional phrase begins with a preposition and includes its whole noun group.",
+          "example": "The dog slept beside the warm fire.",
           "items": [
-            "Verdict sentence 1, then sentence 2 - all thumbs together.",
-            "Rewrite the illegal one on your whiteboard so its colon becomes legal."
+            "Underline the whole phrase on your board, boards up together.",
+            "Check: does your phrase end at a noun?"
           ],
-          "routine": "Thumbs first, then whiteboards",
-          "footer": "Stem: The colon is legal/illegal because ...",
-          "notes": "ANSWER: 1 illegal ('My bag holds' is incomplete), 2 legal. Fix: My bag holds three things: books, pens and lunch. 1. SAY: Read sentence one silently. Thumbs up if the colon is legal. 5 sec, all thumbs together. 2. Repeat for sentence two. 3. SAY: Rewrite the illegal one so the colon becomes legal. 30 sec, boards up. SCAN boards, back row first. 80%+ -> You do. Less -> run the cover test together, re-ask.\n---\nPurpose: fast judgement practice with an all-student response. [We Do | CFU | Grammar | HITS 7]"
+          "routine": "Whiteboards ready - boards up together",
+          "footer": "Stem: The phrase is ... because it tells where",
+          "notes": "ANSWER: beside the warm fire.\n1. SAY: \"Underline the whole prepositional phrase, including the complete noun group.\"\n2. TIME: 20 seconds, then boards up together.\n3. SCAN: Check that every underline begins at beside and ends at fire.\n4. ASK: \"Which words make the complete noun group?\" EXPECT: the warm fire.\nTRAP: underlining beside only. Fix: read from beside through the complete noun group.\n---\nPurpose: guided phrase identification with a complete noun group. [We Do | Guided practice | Grammar | HITS 7]"
         },
         "you_do": {
-          "title": "Write one legal, one illegal",
-          "example": "Write two sentences about sport: one with a LEGAL colon, one with a deliberately ILLEGAL colon.",
+          "title": "Box the phrase",
+          "example": "Write one sentence about a pet and box the whole prepositional phrase.",
           "items": [
-            "Swap boards with a partner. Hunt down their illegal colon.",
-            "Prove it: read the words before the colon out loud."
+            "Challenge: make your phrase tell WHEN, like after the storm.",
+            "If stuck: start with 'The cat hid ___ the ___' and fill the phrase."
           ],
-          "routine": "2 minutes, then swap boards",
-          "footer": "Sneakiest illegal colon wins",
-          "notes": "1. SAY: Two sentences about sport - one legal colon, one deliberately illegal. TIME: 2 minutes. 2. Partners swap and hunt the illegal colon, proving it with the stand-alone test. CIRCULATE: listen for the proof, not just the answer. STRETCH: make the illegal one so sneaky it nearly passes the test. HELP: give the frame 'Our team needs three things' and the student writes both versions from it.\n---\nPurpose: production plus error-spotting; tomorrow adds the colon-vs-comma contrast. [You Do | Independent practice | Grammar | HITS 5]"
+          "routine": "90 seconds - boards up when done",
+          "footer": "Prove you included the whole noun group",
+          "notes": "ANSWER: open - a complete sentence about a pet with the whole prepositional phrase boxed.\n1. SAY: \"Write one sentence about a pet and box the whole prepositional phrase.\"\n2. TIME: 90 seconds.\n3. CIRCULATE: Check that each box includes the preposition and complete noun group.\nSTRETCH: Make the phrase tell when, such as after the storm.\nHELP: Use the frame 'The cat hid ___ the ___'.\n---\nPurpose: independent phrase production; tomorrow adds more than one phrase. [You Do | Independent practice | Grammar | HITS 5]",
+          "rule": "Build a complete prepositional phrase: preposition + whole noun group."
         }
       }
     },
     {
-      "day": "Friday",
-      "type": "week_review",
+      "day": "Wednesday",
+      "type": "new",
       "morphology_review": [
         {
-          "morph": "-ible",
+          "morph": "-ine",
           "type": "suffix",
-          "keyword": "reversible",
-          "meaning": "able to (used instead of -able when there is a -sion/-tion relative)",
-          "derivative_ask": "who has an -ible word from this week? EXPECT: reversible, convertible, sensible."
+          "keyword": "genuine",
+          "meaning": "relating to, of, like, chemical substance"
         },
         {
-          "morph": "ord / ordin",
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where",
+          "extra_task": {
+            "prompt": "Who remembers an -ery card word?",
+            "answers": [
+              "machinery",
+              "imagery",
+              "surgery",
+              "winery"
+            ]
+          }
+        },
+        {
+          "morph": "clud(e) / clus(e)",
           "type": "root",
-          "keyword": "coordinate",
-          "meaning": "order",
-          "derivative_ask": "who has an ord word from this week? EXPECT: order, coordinate, extraordinary, subordinate."
-        },
-        {
-          "morph": "counter-",
-          "type": "prefix",
-          "keyword": "counterattack",
-          "meaning": "against, opposite"
-        },
-        {
-          "morph": "flect / flex",
-          "type": "root",
-          "keyword": "reflex",
-          "meaning": "bend"
+          "keyword": "exclude",
+          "meaning": "shut"
         },
         {
           "morph": "-cy",
           "type": "suffix",
           "keyword": "infancy",
-          "meaning": "state or quality (as in infancy, privacy, agency)",
-          "derivative_ask": "who has a -cy word? EXPECT: infancy, literacy, privacy."
+          "meaning": "quality, state"
         },
         {
-          "morph": "sub-",
+          "morph": "ped / pod",
+          "type": "root",
+          "keyword": "pedal",
+          "meaning": "foot"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root",
+          "keyword": "capable",
+          "meaning": "hold, take OR leader, head",
+          "extra_task": {
+            "prompt": "Who has a capt/capit word?",
+            "answers": [
+              "captain",
+              "capture",
+              "captive",
+              "caption"
+            ]
+          }
+        },
+        {
+          "morph": "mal-",
           "type": "prefix",
-          "keyword": "submarine",
-          "meaning": "below, under"
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill"
+        },
+        {
+          "morph": "ord / ordin",
+          "type": "root",
+          "keyword": "ordain",
+          "meaning": "order"
         },
         {
           "morph": "rect / reg",
           "type": "root",
           "keyword": "correct",
-          "meaning": "straight, rule"
+          "meaning": "right, straight, lead",
+          "extra_task": {
+            "prompt": "Who has a rect/reg word?",
+            "answers": [
+              "correct",
+              "direct",
+              "rectangle",
+              "regular"
+            ]
+          }
         },
         {
-          "morph": "-ist",
-          "type": "suffix",
-          "keyword": "artist",
-          "meaning": "one who"
-        },
-        {
-          "morph": "inter-",
-          "type": "prefix",
-          "keyword": "international",
-          "meaning": "between, among"
-        },
-        {
-          "morph": "capt / capit",
+          "morph": "flect / flex",
           "type": "root",
-          "keyword": "capture / captain",
-          "meaning": "hold, take OR leader, head"
+          "keyword": "deflect",
+          "meaning": "bend"
         }
       ],
       "words_to_read_review": {
         "words": [
-          "coordination",
-          "reversible",
-          "ordinary",
-          "flexible",
-          "subordinate",
-          "convertible",
-          "literacy",
-          "counterbalance",
-          "ordinance",
-          "interior",
-          "captivate",
-          "sensible",
+          "pedal",
+          "malcontent",
+          "include",
+          "policy",
+          "capture",
+          "orderly",
+          "imagery",
+          "correct",
+          "recluse",
+          "coordinate",
+          "flexibility",
           "disorder",
-          "rectitude",
-          "ordain"
+          "directive",
+          "conclude",
+          "captive"
         ],
-        "notes": "READ all rows together first. Friday split:\nName has a double letter - row 1\nWalked or rode to school - row 2\nBoys - row 3\nGirls - row 4\nEveryone, race it - row 5\nFinal read of the week: smooth, fast, confident. Repetition = orthographic mapping.\nASK: Which words carry this week's root ord/ordin (order)? Name a student to find them. EXPECT: coordination (parts working in order together), ordinary (in the usual order), subordinate (under someone in the order), ordinance (a rule that keeps order), disorder (order come apart), ordain (officially put into the order).\nASK: Which words carry this week's suffix -ible (able to be)? EXPECT: reversible (able to be turned back), convertible (able to be changed), sensible (able to be sensed - showing good judgement).\nASK: Which -ible word could describe a raincoat? EXPECT: reversible - you can wear it both ways.\nCHORAL to finish, whole class answers together: How do we make ordinance plural? EXPECT: just add -s. Add -ly to sensible so it tells how something is done? EXPECT: sensibly - drop the -le, add -ly. Antonym of disorder? EXPECT: order. Which word is something a magician does to an audience? EXPECT: captivate."
+        "notes": "1. READ: \"Read all five rows with me. Keep your eyes moving; the next round will be faster.\"\n2. READ: \"First-name groups: A to F read row 1; G to L row 2; M to R row 3; S to Z row 4.\"\n3. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round. Make the final row our smoothest.\"\n4. ASK: \"Which words use clud or clus, meaning shut?\" 5 sec, choral response. EXPECT: include, conclude, recluse.\n5. ASK: \"Which word uses -ery, and which card meaning fits?\" 5 sec, choral response. EXPECT: imagery - relating to images.\n6. ASK: \"Which word uses mal-?\" 5 sec, turn and tell. EXPECT: malcontent - a dissatisfied person; mal- signals bad or wrong.\n7. ASK: \"What is the opposite of include?\" 3 sec, choral response. EXPECT: exclude.\n8. ASK: \"In correct and directive, which meaning of rect or reg fits each word?\" 5 sec, turn and tell. EXPECT: correct = right; directive = lead or direct.\n9. ASK: \"Make pedal plural.\" 3 sec, choral response. EXPECT: pedals."
       },
       "sound_bank": [
         {
@@ -877,7 +949,7 @@
           "type": "root"
         },
         {
-          "morph": "flect / flex",
+          "morph": "clud(e) / clus(e)",
           "type": "root"
         },
         {
@@ -885,19 +957,403 @@
           "type": "root"
         },
         {
-          "morph": "sub-",
+          "morph": "flect / flex",
+          "type": "root"
+        },
+        {
+          "morph": "ped / pod",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
           "type": "prefix"
         },
         {
-          "morph": "counter-",
+          "morph": "-cy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "ordination",
+          "sentence": "The community celebrated the leader's ordination.",
+          "prompt": "Which root tells you someone was placed into an official order?",
+          "answer": "ordin means order: ordination is the act of placing someone into an official order or role."
+        },
+        {
+          "word": "ordinance",
+          "sentence": "The local ordinance limits noise after dark.",
+          "prompt": "Which root tells you this rule keeps order?",
+          "answer": "ord means order: an ordinance is an official rule."
+        },
+        {
+          "word": "seclude",
+          "sentence": "Tall trees seclude the cabin from the road.",
+          "prompt": "clud means shut - what does seclude do?",
+          "answer": "it shuts the cabin away or hides it."
+        },
+        {
+          "word": "exclusive",
+          "sentence": "The offer was exclusive to team members.",
+          "prompt": "clus means shut - who is shut out?",
+          "answer": "people outside the team are shut out."
+        },
+        {
+          "word": "capital",
+          "sentence": "Every sentence begins with a capital letter.",
+          "prompt": "capit can mean leader or head - why is a capital letter well named?",
+          "answer": "it stands at the head or beginning of the sentence."
+        },
+        {
+          "word": "deflection",
+          "sentence": "The ball changed direction after a sharp deflection.",
+          "prompt": "flect means bend - what bent?",
+          "answer": "the path of the ball bent away from its original direction."
+        },
+        {
+          "word": "pedestal",
+          "sentence": "The trophy stood on a stone pedestal.",
+          "prompt": "Why does pedestal connect to the root meaning foot?",
+          "answer": "ped means foot: a pedestal is the base at the foot of an object."
+        },
+        {
+          "word": "infancy",
+          "sentence": "In its infancy, the club had only four members.",
+          "prompt": "What state does -cy name?",
+          "answer": "-cy means state or quality: infancy is the state of being new or young."
+        },
+        {
+          "word": "malfunction",
+          "sentence": "A sensor malfunction stopped the machine.",
+          "prompt": "Which prefix tells you the function went wrong?",
+          "answer": "mal- means bad or wrong: a malfunction is a failure to work correctly."
+        },
+        {
+          "word": "pottery",
+          "sentence": "The class visited a pottery to watch bowls being made.",
+          "prompt": "Which -ery meaning fits this sentence?",
+          "answer": "-ery can mean place where: a pottery is a place where pots are made."
+        }
+      ],
+      "new_morphology": {
+        "morph": "-ice",
+        "type": "suffix",
+        "keyword": "service",
+        "meaning": "state or quality"
+      },
+      "words_to_read_new": [
+        {
+          "word": "service",
+          "meaning": "the work or state of serving; the card groups this noun with -ice"
+        },
+        {
+          "word": "notice",
+          "meaning": "information that makes something known; learn the whole word rather than forcing a split"
+        },
+        {
+          "word": "justice",
+          "meaning": "just + -ice: the state or quality of being fair and right"
+        },
+        {
+          "word": "apprentice",
+          "meaning": "a learner training under a skilled worker; the whole word carries the meaning"
+        },
+        {
+          "word": "cowardice",
+          "meaning": "coward + -ice: the quality of lacking courage"
+        },
+        {
+          "word": "novice",
+          "meaning": "a beginner; the whole word carries the meaning"
+        },
+        {
+          "word": "prejudice",
+          "meaning": "an unfair judgement formed before knowing the facts; treat it as a whole-word card family member"
+        },
+        {
+          "word": "avarice",
+          "meaning": "the state or quality of extreme greed"
+        },
+        {
+          "word": "artifice",
+          "meaning": "a clever trick or device; the whole word carries the meaning"
+        },
+        {
+          "word": "jaundice",
+          "meaning": "a medical state that can make skin or eyes look yellow"
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears. The printed card meaning is state or quality, but not every card word splits transparently.\nservice - the work or state of serving; the card groups this noun with -ice.\nnotice - information that makes something known. Do not invent a base split.\njustice - just + -ice: the state or quality of being fair and right.\napprentice - a learner training under a skilled worker. Learn the whole word meaning.\ncowardice - coward + -ice: the quality of lacking courage. Discuss the quality, not a label for a classmate.\nnovice - a beginner. Learn the whole word meaning.\nprejudice - an unfair judgement formed before knowing the facts. Learn the whole word meaning.\navarice - the state or quality of extreme greed.\nartifice - a clever trick or device. Learn the whole word meaning.\njaundice - a medical state that can make skin or eyes look yellow.\nMemory hook: -ice can name a STATE or QUALITY, as in justice and avarice. When the split is not clear, define the whole card word instead of inventing a morpheme sum.",
+      "words_to_spell_new": [
+        "justice",
+        "service",
+        "notice",
+        "novice"
+      ],
+      "extension": "1. SAY: \"When you finish, find an opposite for one -ice word.\"\n2. CHECK: justice can become injustice when in- changes the meaning.\nSTRETCH: Use both words in one sentence that makes the difference clear.",
+      "new_morph_activity": {
+        "title": "Clear split or whole word?",
+        "rule": "Use state or quality when the meaning is clear; otherwise learn the whole card word.",
+        "example": "justice        avarice        novice        apprentice",
+        "items": [
+          "Write S/Q if the state-or-quality meaning is clear.",
+          "Write W if the whole word must carry the meaning."
+        ],
+        "routine": "Whiteboards - 4 minutes - boards up",
+        "footer": "Stretch: explain why forcing a split can mislead",
+        "notes": "ANSWER: justice - S/Q; avarice - S/Q; novice - W; apprentice - W.\n1. SAY: \"Use S/Q only when state or quality clearly helps. Otherwise write W for whole word.\"\n2. TIME: 4 minutes. Work independently on whiteboards.\n3. CIRCULATE: ask students to define the whole word before assigning a label.\n4. SCAN boards. 80%+ -> reveal. Less -> compare justice and novice, then re-ask.\nTRAP: inventing nov + -ice. Fix: say novice means beginner, then relabel it W.\nSTRETCH: Explain how a false split could teach a false meaning. HELP: sort justice and avarice first.\n---\nPurpose: retain the card meaning without teaching false etymological splits. [You Do | Meaning audit | Morphology]",
+        "check_title": "Tick it or fix it - Clear split or whole word?",
+        "check_items": [
+          "justice = S/Q",
+          "avarice = S/Q",
+          "novice = W",
+          "apprentice = W"
+        ],
+        "check_notes": "ANSWER: justice - S/Q; avarice - S/Q; novice - W; apprentice - W.\n1. REVEAL after boards are scanned. SAY: \"Tick each correct label. Fix any label that is different.\"\n2. ASK: \"Why are novice and apprentice whole words here?\" 10 sec, turn and tell. EXPECT: the card meaning does not create a clear, honest split.\n3. SCAN corrections. 80%+ -> continue. Less -> define novice and justice aloud, then re-ask.\nTRAP: treating every ending as a transparent sum. Fix: define the whole word, then relabel.\n---\nPurpose: immediate feedback without forcing false morpheme sums. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "tongue",
+            "unfair": "ongue",
+            "notes": "Why learned: the o says /u/ (tung) and the -ue is silent, so -gue just says /g/.\nSay it: TUNG, one beat, t + ongue.\nQuick link: the muscle you taste and talk with - a science and health word."
+          },
+          {
+            "word": "muscle",
+            "unfair": "c",
+            "notes": "Why learned: silent c - MUS-uhl. The c hides between the s and the l.\nSay it: MUS-uhl, two beats.\nQuick link: a body word for our science and health talk."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The new novice showed great service during the busy match.",
+          "targets": [
+            "novice",
+            "service"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "a preposition (during) opening a phrase; two -ice targets"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Before the final, the doctor gave one notice: \"Rest that torn muscle and hold your tongue.\"",
+          "targets": [
+            "notice",
+            "muscle",
+            "tongue"
+          ],
+          "cups": {
+            "capitals": [
+              "Before",
+              "Rest"
+            ],
+            "punctuation": [
+              "comma after opening phrase",
+              "colon",
+              "opening quotation mark",
+              "closing quotation mark",
+              "full stop inside the quote"
+            ]
+          },
+          "focus": "comma after an opening prepositional phrase, colon, quoted speech; both learned words"
+        }
+      ],
+      "grammar": {
+        "header_notes": "Five-minute finisher. Prepositions and prepositional phrases - day 3: more than one phrase. Rule restated in the I do so anyone away still succeeds.",
+        "i_do": {
+          "title": "More than one phrase",
+          "rule": "A prepositional phrase begins with a preposition and includes its noun group. A sentence can have more than one.",
+          "example": "Before lunch, we ran around the oval.",
+          "items": [
+            "Before lunch tells WHEN; around the oval tells WHERE.",
+            "Two phrases, two jobs, in one sentence."
+          ],
+          "routine": "Count the phrases with me",
+          "footer": "You will hunt both phrases next",
+          "notes": "1. SAY: A prepositional phrase begins with a preposition and includes its noun group. A sentence can have more than one.\n2. MODEL: point at Before lunch - that tells WHEN. Slide to around the oval - that tells WHERE or direction. Two complete phrases in one sentence.\nTRAP: students find one and stop. Fix: reread and ask, Is there another where, when or direction clue? EXPECT: yes, around the oval.\n---\nPurpose: build to multiple complete phrases; rule restated for absentees. [I Do | Explicit modelling | Grammar | HITS 3]"
+        },
+        "we_do": {
+          "title": "Find both phrases",
+          "rule": "Find every prepositional phrase: each begins with a preposition and includes its noun group.",
+          "example": "After the storm, leaves floated on the water.",
+          "items": [
+            "Underline both phrases, boards up together.",
+            "Label each: does it tell when or where?"
+          ],
+          "routine": "Whiteboards ready - boards up together",
+          "footer": "Stem: This phrase tells ... ",
+          "notes": "ANSWER: After the storm - when; on the water - where.\n1. SAY: \"Find and underline both prepositional phrases, then label each one when or where.\"\n2. TIME: 25 seconds, then boards up together.\n3. SCAN: Check for two complete underlines, not one.\n4. ASK: \"What does each phrase tell us?\" EXPECT: After the storm tells when; on the water tells where.\nTRAP: finding the first phrase and stopping. Fix: reread and ask, 'Is there another?'\n---\nPurpose: guided hunt for multiple phrases with labelling. [We Do | Guided practice | Grammar | HITS 7]"
+        },
+        "you_do": {
+          "title": "Two phrases",
+          "example": "Write one sentence with TWO prepositional phrases and underline both.",
+          "items": [
+            "Challenge: make one phrase tell WHEN and one tell WHERE.",
+            "If stuck: start with 'After school, I play ___ the ___'."
+          ],
+          "routine": "2 minutes - boards up when done",
+          "footer": "Label each phrase when or where",
+          "notes": "ANSWER: open - one complete sentence with two complete prepositional phrases underlined.\n1. SAY: \"Write one sentence with two prepositional phrases and underline both.\"\n2. TIME: 2 minutes.\n3. CIRCULATE: Check that each underline runs from the preposition through its complete noun group.\nSTRETCH: Make one phrase tell when and one tell where.\nHELP: Use the frame 'After school, I play ___ the ___'.\n---\nPurpose: independent production of two phrases; Thursday reviews the whole week. [You Do | Independent practice | Grammar | HITS 5]",
+          "rule": "Write two complete prepositional phrases, each with its noun group."
+        }
+      }
+    },
+    {
+      "day": "Thursday",
+      "type": "week_review",
+      "morphology_review": [
+        {
+          "morph": "capt / capit",
+          "type": "root",
+          "keyword": "capable",
+          "meaning": "hold, take OR leader, head"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root",
+          "keyword": "correct",
+          "meaning": "right, straight, lead"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where",
+          "extra_task": {
+            "prompt": "Who has an -ery word from this week?",
+            "answers": [
+              "machinery",
+              "imagery",
+              "pottery",
+              "winery"
+            ]
+          }
+        },
+        {
+          "morph": "ord / ordin",
+          "type": "root",
+          "keyword": "ordain",
+          "meaning": "order"
+        },
+        {
+          "morph": "-ine",
+          "type": "suffix",
+          "keyword": "genuine",
+          "meaning": "relating to, of, like, chemical substance"
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root",
+          "keyword": "exclude",
+          "meaning": "shut"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality",
+          "extra_task": {
+            "prompt": "Who has an -ice word from this week?",
+            "answers": [
+              "service",
+              "notice",
+              "justice",
+              "novice"
+            ]
+          }
+        },
+        {
+          "morph": "ped / pod",
+          "type": "root",
+          "keyword": "pedal",
+          "meaning": "foot"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root",
+          "keyword": "deflect",
+          "meaning": "bend"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill",
+          "extra_task": {
+            "prompt": "Who has a mal- word from this week?",
+            "answers": [
+              "malfunction",
+              "malnutrition",
+              "malformation",
+              "malaise"
+            ]
+          }
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "captain",
+          "malaise",
+          "ordinary",
+          "winery",
+          "exclude",
+          "stellar",
+          "imagery",
+          "pedestrian",
+          "conclusion",
+          "malformation",
+          "secrecy",
+          "subordinate",
+          "reflection",
+          "justice",
+          "regulate"
+        ],
+        "notes": "1. READ: \"Read all five rows with me. Keep your eyes moving; the group round will be smooth, fast and confident.\"\n2. READ: \"Choose your favourite: reading or writing reads row 1; maths or science row 2; sport or outdoors row 3; art or music row 4.\"\n3. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round. Finish with your strongest voice.\"\n4. ASK: \"Which words use -ery, and which card meaning fits each word?\" 5 sec, turn and tell. EXPECT: winery - place; imagery - relating to.\n5. ASK: \"Which word shows -ice meaning state or quality?\" 3 sec, choral response. EXPECT: justice.\n6. ASK: \"Which words use mal-, meaning bad, wrong or ill?\" 5 sec, choral response. EXPECT: malaise and malformation.\n7. ASK: \"What is the opposite of exclude?\" 3 sec, choral response. EXPECT: include.\n8. ASK: \"Stellar means relating to what?\" 3 sec, choral response. EXPECT: stars.\n9. ASK: \"Which word uses rect or reg meaning lead?\" 3 sec, choral response. EXPECT: regulate.\n10. ASK: \"Make pedestrian plural.\" 3 sec, choral response. EXPECT: pedestrians."
+      },
+      "sound_bank": [
+        {
+          "morph": "ord / ordin",
+          "type": "root"
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
           "type": "prefix"
         },
         {
-          "morph": "inter-",
-          "type": "prefix"
+          "morph": "-ery",
+          "type": "suffix"
         },
         {
-          "morph": "-ible",
+          "morph": "-ice",
           "type": "suffix"
         },
         {
@@ -905,164 +1361,166 @@
           "type": "suffix"
         },
         {
-          "morph": "-ist",
+          "morph": "-ar",
           "type": "suffix"
         }
       ],
       "words_to_spell_review": [
         {
-          "word": "extraordinary",
-          "sentence": "Her extraordinary catch won the final.",
-          "prompt": "Extra means beyond - beyond what?",
-          "answer": "ordin means order: beyond the usual order of things - amazing."
+          "word": "maladroit",
+          "sentence": "His maladroit catch dropped the ball again.",
+          "prompt": "mal- means bad or wrong - what does maladroit describe?",
+          "answer": "awkward or unskilful; not adroit or skilful."
         },
         {
-          "word": "reversible",
-          "sentence": "My jacket is reversible, so it has two looks.",
-          "prompt": "What does -ible let the jacket do?",
-          "answer": "-ible means able to be: able to be reversed, turned back the other way."
+          "word": "machinery",
+          "sentence": "The farm machinery stayed inside the shed.",
+          "prompt": "Which printed -ery meaning fits machinery?",
+          "answer": "-ery means relating to: machinery is equipment relating to machines."
         },
         {
-          "word": "coordinate",
-          "sentence": "We must coordinate our plans before camp.",
-          "prompt": "Co means together - what are we putting in order together?",
-          "answer": "ordin means order: our plans - bringing them into order together."
+          "word": "service",
+          "sentence": "The volunteers provided excellent service.",
+          "prompt": "What does service mean as an -ice card word?",
+          "answer": "the work or state of serving others."
         },
         {
-          "word": "subheading",
-          "sentence": "Add a subheading under the main title.",
-          "prompt": "Which part of the word already told you where it goes?",
-          "answer": "sub- means under: it goes under the main heading."
+          "word": "apprentice",
+          "sentence": "The apprentice learned from a skilled carpenter.",
+          "prompt": "Does apprentice split cleanly into a state-or-quality sum?",
+          "answer": "no; it is a whole-word card family member meaning a learner training under a skilled worker."
         },
         {
-          "word": "convertible",
-          "sentence": "The sofa is convertible into a bed for guests.",
-          "prompt": "What does -ible let the sofa do?",
-          "answer": "-ible means able to be: able to be converted into something else."
+          "word": "ordain",
+          "sentence": "The group will ordain its new leader tomorrow.",
+          "prompt": "Which root is hiding, and what does it mean?",
+          "answer": "ord means order: to ordain is to place someone officially into an order or role."
         },
         {
-          "word": "orderly",
-          "sentence": "Leave the lab in an orderly state.",
-          "prompt": "Say how ord gives this word its meaning.",
-          "answer": "ord means order: everything in its neat order."
+          "word": "inclusion",
+          "sentence": "The team practised the inclusion of every player.",
+          "prompt": "in- means in and clus means shut - what is inclusion?",
+          "answer": "bringing everyone in so all are part of the group."
         },
         {
-          "word": "counterattack",
-          "sentence": "The knights launched a swift counterattack at dawn.",
-          "prompt": "What does counter- tell you about the direction of this attack?",
-          "answer": "counter- means against: an attack sent back against the first attack."
+          "word": "flexible",
+          "sentence": "A good plan stays flexible when conditions change.",
+          "prompt": "flex means bend - what does -ible add?",
+          "answer": "-ible means able to: able to bend or change."
         },
         {
-          "word": "pedestrian",
-          "sentence": "A pedestrian waited at the crossing.",
-          "prompt": "Which root tells you how this person is travelling?",
-          "answer": "ped means foot: travelling on foot."
+          "word": "rectify",
+          "sentence": "We must rectify the error before publishing.",
+          "prompt": "rect means right or straight - how does that lead to fix?",
+          "answer": "to make something right or straight again; to correct it."
         },
         {
-          "word": "infancy",
-          "sentence": "The project is still in its infancy.",
-          "prompt": "What does -cy turn infant into?",
-          "answer": "-cy makes it a state: the state of being an infant - the very beginning."
+          "word": "bankruptcy",
+          "sentence": "Careful planning helped the company avoid bankruptcy.",
+          "prompt": "What state does -cy name?",
+          "answer": "-cy means state or quality: bankruptcy is the state of being bankrupt."
         },
         {
-          "word": "deflect",
-          "sentence": "The goalie managed to deflect the shot.",
-          "prompt": "Flect means bend - what got bent away here?",
-          "answer": "the shot - the goalie bent its path away from the goal."
+          "word": "angular",
+          "sentence": "The angular rock had several sharp corners.",
+          "prompt": "Which -ar meaning fits angular?",
+          "answer": "-ar means relating to: angular means relating to angles."
         }
       ],
       "learned_words": {
         "review": [
           {
-            "word": "indigenous",
-            "unfair": "e",
-            "notes": "**Why learned:** the second syllable is a schwa.\n**Say it:** in-DIJ-e-nus, tap the syllables, then write from memory after air-writing.\n**Watch:** capital I when naming Indigenous peoples."
+            "word": "muscle",
+            "unfair": "c",
+            "notes": "Why learned: silent c - MUS-uhl. The c hides between the s and the l.\nSay it: MUS-uhl, two beats, then air-write and write from memory.\nQuick link: a body word for our science and health talk."
           },
           {
-            "word": "ceremony",
-            "unfair": "mon",
-            "notes": "**Why learned:** the third syllable hides as a schwa - cer-e-MO-ny buries the o sound.\n**Say it:** SE-re-mo-nee, four syllables.\n**Link:** we wrote this word in Monday's dictation - who remembers the sentence?"
+            "word": "tongue",
+            "unfair": "ongue",
+            "notes": "Why learned: the o says /u/ (tung) and the -ue is silent, so -gue just says /g/.\nSay it: TUNG, one beat, t + ongue, then write from memory.\nQuick link: the muscle used for tasting and speaking; it was a target in Wednesday's dictation."
           }
         ]
       },
       "dictation": [
         {
-          "sentence": "An ordinary pedestrian cannot ignore a flexible cyclist.",
+          "meter": "green",
+          "sentence": "The novice offered excellent service during the busy school event.",
           "targets": [
-            "ordinary",
-            "pedestrian",
-            "flexible",
-            "cyclist"
+            "novice",
+            "service"
           ],
           "cups": {
             "capitals": [
-              "An"
+              "The"
             ],
             "punctuation": [
               "full stop"
             ]
           },
-          "focus": "single clause; every target from this week's review"
+          "focus": "a prepositional phrase (during the busy school event); two -ice targets"
         },
         {
-          "sentence": "The captain repeated the order: \"Stay orderly, stay sensible, and look after our heritage.\"",
+          "meter": "yellow",
+          "sentence": "After the tour, the novice warned us: \"Protect the machinery, and report any malfunction.\"",
           "targets": [
-            "captain",
-            "order",
-            "orderly",
-            "sensible",
-            "heritage"
+            "novice",
+            "machinery",
+            "malfunction"
           ],
           "cups": {
             "capitals": [
-              "The",
-              "Stay"
+              "After",
+              "Protect"
             ],
             "punctuation": [
+              "comma after opening phrase",
               "colon",
               "opening quotation mark",
-              "comma x2",
+              "comma",
               "closing quotation mark",
               "full stop inside the quote"
             ]
           },
-          "focus": "colon, quotation marks, commas in a list"
+          "focus": "comma after an opening phrase, colon, quoted compound command; all three week morphemes"
         }
       ],
       "grammar": {
-        "header_notes": "Week review finisher. Colons before a list - day 5: whole week in one fast round, exit ticket evidence for Monday's regroup.",
+        "header_notes": "Week review finisher. Prepositions and prepositional phrases - day 4: whole week in one fast round, exit-ticket evidence for next week's regroup.",
         "i_do": {
           "title": "The week in one minute",
-          "rule": "A colon may only follow a complete sentence. Test it: cover the list, read the first half alone.",
-          "example": "Camp needs three helpers: cooks, drivers and guides.",
+          "rule": "A prepositional phrase begins with a preposition and includes its whole noun group.",
+          "example": "The fox crept through the tall grass at midnight.",
           "items": [
-            "Cover the list. 'Camp needs three helpers' stands alone - legal."
+            "through the tall grass tells WHERE; at midnight tells WHEN.",
+            "Test each phrase: does it tell where, when or direction?"
           ],
-          "routine": "One minute - watch the last test",
+          "routine": "One minute - watch both phrases",
           "footer": "Then you catch MY mistakes",
-          "notes": "1. SAY: One minute, whole rule. A colon promises a list, and only a complete sentence may make that promise. 2. MODEL the cover-the-list test one final time on the camp sentence. TRAP: students who missed a day default to 'every list gets a colon'. Fix: they run the cover test aloud before writing anything.\n---\nPurpose: compressed restatement so absentees still access the You do. [I Do | Review | Grammar | HITS 2]"
+          "notes": "1. SAY: \"A preposition tells where, when or direction. The complete phrase includes the preposition and its whole noun group.\"\n2. MODEL: \"Through the tall grass tells where or direction.\"\n3. MODEL: \"At midnight tells when.\"\nTRAP: selecting only the preposition. Fix: read from the preposition through the complete noun group.\n---\nPurpose: compressed restatement so absentees still access the You Do. [I Do | Review | Grammar | HITS 2]"
         },
         "we_do": {
           "title": "Beat the teacher",
-          "rule": "I write three colon sentences. One is illegal. Catch me and PROVE it.",
-          "example": "Thumbs verdict after each sentence - then one prover reads the words before the colon out loud.",
+          "rule": "A complete prepositional phrase includes the preposition and its whole noun group.",
+          "example": "I underline just 'through' in 'The fox crept through the tall grass.' Thumbs down - I stopped early!",
           "items": [
-            "Round 1, round 2, round 3 - different prover each time."
+            "Thumbs verdict each round, then one prover reads the full phrase.",
+            "Round 1, round 2, round 3 - a different prover each time."
           ],
           "routine": "Thumbs verdicts - all together",
-          "footer": "Stem: The colon is legal/illegal because ...",
-          "notes": "ANSWER: write two legal sentences and one illegal ('For camp you will need:'). 1. SAY: I will write three colon sentences. Thumbs verdict after each, then one student proves it aloud. 2. SCAN thumbs each round, call on different provers. EXPECT: 'For camp you will need' cannot stand alone, so the colon is illegal. Stem: The colon is legal/illegal because ...\n---\nPurpose: playful whole-class CFU; the error is made by the teacher, not a student. [We Do | CFU game | Grammar | HITS 7]"
+          "footer": "Stem: The full phrase is ...",
+          "notes": "ANSWER: the complete phrase is through the tall grass; the incorrect underline stops at through.\n1. SAY: \"I will underline a phrase. Show thumbs down if I stop before the whole noun group.\"\n2. SCAN: Check every response before selecting a student.\n3. ASK: \"What is the complete phrase?\" EXPECT: through the tall grass.\n4. SAY: \"Prove it with this stem: The full phrase is ...\"\n---\nPurpose: playful whole-class CFU; the error is made by the teacher, not a student. [We Do | CFU game | Grammar | HITS 7]"
         },
         "you_do": {
           "title": "Exit sentence",
-          "example": "Write one sentence about your week with a LEGAL colon. Underline the part that stands alone.",
+          "example": "Write one sentence with a prepositional phrase and underline the whole phrase.",
           "items": [
-            "Stretch: fit one of this week's ord words into your list.",
-            "If stuck: start with 'This week taught me three things'."
+            "Stretch: use two phrases - one for when, one for where.",
+            "If stuck: start with 'At recess, we played ___ the ___'."
           ],
           "routine": "90 seconds - board up as your exit ticket",
-          "footer": "Monday's warm-up group comes from these boards",
-          "notes": "1. SAY: One legal colon sentence about your week, underline the part that stands alone. TIME: 90 seconds, boards up as exit tickets. COLLECT the verdicts mentally: who still colons after fragments -> Monday warm-up group. STRETCH: include one of this week's ord words in the list. HELP: starter 'This week taught me three things'.\n---\nPurpose: exit-ticket evidence for next week's regroup. [You Do | Exit ticket | Grammar | HITS 5]"
+          "footer": "Next week's warm-up group comes from these boards",
+          "notes": "ANSWER: open - one complete sentence with the whole prepositional phrase underlined.\n1. SAY: \"Write one sentence with a prepositional phrase and underline the whole phrase.\"\n2. TIME: 90 seconds, then boards up as exit tickets.\n3. SCAN: Note who underlines only the preposition for next week's warm-up group.\nSTRETCH: Use two phrases, one telling when and one telling where.\nHELP: Use the starter 'At recess, we played ___ the ___'.\n---\nPurpose: exit-ticket evidence for next week's regroup. [You Do | Exit ticket | Grammar | HITS 5]",
+          "rule": "Write a complete prepositional phrase with its whole noun group."
         }
       }
     }

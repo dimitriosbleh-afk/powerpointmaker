@@ -1,0 +1,31 @@
+{
+  "unit_folder": "Four_Processes_Unit",
+  "unit_pptx_name": "Four Processes Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_fourp_lesson1.js",
+      "folder": "FourP_Lesson1_Multiplication_Division_Links",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_fourp_lesson2.js",
+      "folder": "FourP_Lesson2_Properties_Of_Operations",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_fourp_lesson3.js",
+      "folder": "FourP_Lesson3_Decimal_Operations",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_fourp_lesson4.js",
+      "folder": "FourP_Lesson4_Fractions_Percentages_Of_Quantity",
+      "session": 4
+    },
+    {
+      "build_script": "builds/build_fourp_lesson5.js",
+      "folder": "FourP_Lesson5_Modelling_And_Budgets",
+      "session": 5
+    }
+  ]
+}
