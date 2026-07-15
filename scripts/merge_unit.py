@@ -30,7 +30,6 @@ import copy
 import json
 import re
 import shutil
-import subprocess
 import sys
 import zipfile
 from pathlib import Path
@@ -39,7 +38,6 @@ from pptx import Presentation
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_ROOT = ROOT / "output"
-TEACHER_BRIEF_SCRIPT = ROOT / "scripts" / "build_teacher_brief.js"
 
 HYPERLINK_RELTYPE_SUFFIX = "/hyperlink"
 
@@ -55,9 +53,6 @@ def load_manifest(manifest_path: Path) -> dict:
 
     if not manifest["lessons"]:
         raise SystemExit("Manifest has no lessons.")
-
-    if "teacher_brief" in manifest and not isinstance(manifest["teacher_brief"], dict):
-        raise SystemExit("Manifest 'teacher_brief' must be an object when supplied.")
 
     seen_sessions = {}
     for i, lesson in enumerate(manifest["lessons"]):
@@ -75,30 +70,6 @@ def load_manifest(manifest_path: Path) -> dict:
         seen_sessions[session] = i
 
     return manifest
-
-
-def build_teacher_brief(manifest_path: Path, manifest: dict) -> int:
-    """Generate the optional one-page weekly teacher preparation brief."""
-    if "teacher_brief" not in manifest:
-        return 0
-
-    try:
-        manifest_arg = str(manifest_path.resolve().relative_to(ROOT))
-    except ValueError:
-        manifest_arg = str(manifest_path.resolve())
-
-    result = subprocess.run(
-        ["node", str(TEACHER_BRIEF_SCRIPT), manifest_arg],
-        cwd=str(ROOT),
-        capture_output=True,
-        text=True,
-    )
-    if result.stdout:
-        print(result.stdout.rstrip())
-    if result.returncode != 0:
-        detail = result.stderr.strip() or result.stdout.strip()
-        raise SystemExit(f"Teacher brief generation failed: {detail}")
-    return 1
 
 
 def find_lesson_pptx(lesson_dir: Path) -> Path:
@@ -288,7 +259,6 @@ def merge_unit(manifest_path: Path) -> Path:
     merge_decks(manifest, unit_dir)
     print()
     copied = gather_resources(manifest, resources_dir)
-    copied += build_teacher_brief(manifest_path, manifest)
     print(f"\nCopied {copied} PDF(s) into {resources_dir}")
     print(f"\nUnit folder: {unit_dir}")
     return unit_dir

@@ -5,7 +5,7 @@
   "scripts": {
     "build:unit": "node scripts/build_unit.js",
     "lint:teacher-notes": "node scripts/lint_teacher_notes.js",
-    "qa:theme": "node tests/test_no_stale_builder_overrides.js && node tests/test_base_builder_smoke.js && node tests/test_megaprompt_v3_apis.js && node tests/test_previewspec_consistency.js && node tests/test_review_regressions.js && node tests/test_teacher_brief.js",
+    "qa:theme": "node tests/test_no_stale_builder_overrides.js && node tests/test_base_builder_smoke.js && node tests/test_megaprompt_v3_apis.js && node tests/test_previewspec_consistency.js && node tests/test_review_regressions.js",
     "qa:unit": "node scripts/qa_unit.js",
     "qa:notes-regression": "node scripts/qa_notes_regression.js",
     "qa:all": "npm run qa:theme && npm run qa:notes-regression",
