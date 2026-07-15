@@ -108,17 +108,36 @@ function warnIfRevealCoversBaseText(slide, preCount) {
  * The reveal layer is automatically checked against the base slide's
  * rendered text (see warnIfRevealCoversBaseText).
  *
+ * The reveal slide must NOT carry a byte-copy of the base slide's notes -
+ * mid-lesson, the teacher clicks to the answer and the notes must advance
+ * with the slide. Pass opts.revealNotes (usually composeRevealNotes(...))
+ * and it replaces the reveal slide's notes with the post-reveal script.
+ * build_and_check.js Gate 5 fails the build when consecutive slides carry
+ * identical notes, so omitting revealNotes is a build error for new decks.
+ *
  * @param {Function} buildFn  - zero-arg function that calls a slide builder
  *                               and returns the slide (e.g. () => cfuSlide(...))
  * @param {Function} revealFn - callback(slide) that adds answer/reveal content
+ * @param {object}   [opts]
+ * @param {string}   [opts.revealNotes] - replacement notes for the reveal slide
  * @returns {object} the answer slide (second slide)
  */
-function withReveal(buildFn, revealFn) {
+function withReveal(buildFn, revealFn, opts) {
+  const o = opts || {};
   buildFn();              // Slide 1: question only
   const s = buildFn();    // Slide 2: identical base
   const preCount = s && Array.isArray(s._slideObjects) ? s._slideObjects.length : 0;
   revealFn(s);            // Add reveal content to slide 2
   if (s) warnIfRevealCoversBaseText(s, preCount);
+  if (o.revealNotes && s && Array.isArray(s._slideObjects)) {
+    // Remove the notes copied in by the second buildFn call, then attach the
+    // post-reveal notes. Mutate in place: _slideObjects may be a getter.
+    for (let i = s._slideObjects.length - 1; i >= 0; i -= 1) {
+      const obj = s._slideObjects[i];
+      if (obj && obj._type === "notes") s._slideObjects.splice(i, 1);
+    }
+    s.addNotes(String(o.revealNotes));
+  }
   return s;
 }
 

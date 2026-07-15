@@ -10,7 +10,9 @@ const {
   sanitizeTeacherNotes,
   getTeacherNotesSourceIssues,
 } = require("../themes/core/notes");
-const { composeGlanceNotes } = require("../themes/core/composeNotes");
+const { composeGlanceNotes, composeRevealNotes } = require("../themes/core/composeNotes");
+const { buildNotesParagraphsXml } = require("../themes/core/notes");
+const { withReveal } = require("../themes/core/withReveal");
 const { addResourceSlide } = require("../themes/pdf_helpers");
 
 function slideHasText(slide, needle) {
@@ -95,6 +97,102 @@ function testResponsiveGlanceNotesGate() {
     }),
     /think time|volunteer hands|80%\+|re-ask/
   );
+}
+
+function testAiryGlanceFormat() {
+  // v12.3: a beat may be an array of short lines - numbered first line,
+  // indented continuations - and blocks separate with one blank line.
+  const notes = composeGlanceNotes({
+    answer: "B - 1000 times. 3 more zeros, each zero = x10.",
+    beats: [
+      ["SAY: A million... a billion. The question is not", "which is bigger. It is how MUCH bigger."],
+      ["ASK: How many times bigger is 10^9 than 10^6?",
+        "30 sec. Cue: Write A, B or C... chin it... show me.",
+        "EXPECT: B"],
+      ["SCAN back row first.",
+        "80%+ -> cold call one B: How do you know? -> reveal",
+        "Less -> stack the two numbers, ring 3 zeros, re-ask"],
+    ],
+    trap: ["\"A, 3 times\" = subtracted the little numbers.", "Fix: ring zeros -> student re-says: x10, x10, x10."],
+    prep: "The decision point of the lesson.",
+    tag: "[CFU hinge | Supported application | SC2 | HITS 7, 8]",
+  });
+  assert(notes.includes("2. ASK: How many times bigger is 10^9 than 10^6?"), notes);
+  assert(notes.includes("   EXPECT: B"), "continuation lines should be indented:\n" + notes);
+  assert(/\n\n1\. SAY:/.test(notes), "blocks should separate with a blank line:\n" + notes);
+  assert(notes.includes("TRAP: \"A, 3 times\""), notes);
+
+  // Rendered budgets are hard errors: a 40-word single-line beat must throw.
+  assert.throws(
+    () => composeGlanceNotes({
+      answer: "six",
+      beats: [
+        "ASK: How many? 10 sec, boards up. EXPECT: six.",
+        "SAY: " + Array.from({ length: 40 }, (_, n) => `word${n}`).join(" "),
+      ],
+      prep: "Over-budget fixture.",
+    }),
+    /exceeds 16 words/
+  );
+
+  // A live zone over 120 words must throw even when every line is short.
+  assert.throws(
+    () => composeGlanceNotes({
+      answer: "six",
+      beats: Array.from({ length: 5 }, () => [
+        "ASK: How many parts are there now? 10 sec, boards up.",
+        "EXPECT: six equal parts on every single board today.",
+        "SAY: That is the whole idea we are using.",
+      ]),
+      prep: "Over-budget fixture.",
+    }),
+    /exceeds 120 words/
+  );
+}
+
+function testComposeRevealNotes() {
+  const notes = composeRevealNotes({
+    answer: "B - 1000 times (3 more zeros)",
+    beats: [
+      "SAY: Tick it or fix it. If you wrote A, ring the extra zeros now.",
+      "Cold call one fixed board: What did the 3 actually count?",
+    ],
+    prep: "Do not release to You Do until this is secure.",
+  });
+  assert(notes.startsWith("REVEALED: B - 1000 times"), notes);
+  assert(notes.includes("---"), notes);
+  assert.throws(() => composeRevealNotes({}), /answer is required/);
+}
+
+function testWithRevealNotesReplacement() {
+  const pres = new pptxgen();
+  pres.layout = "LAYOUT_16x9";
+  const baseNotes = "ANSWER: four\n\n1. ASK: How many? 10 sec, boards up.\n   EXPECT: four\n---\nBase slide.";
+  const revealNotes = composeRevealNotes({ answer: "four" });
+  const revealSlide = withReveal(
+    () => {
+      const s = pres.addSlide();
+      s.addNotes(baseNotes);
+      return s;
+    },
+    () => {},
+    { revealNotes }
+  );
+  const text = getSlideNotesText(revealSlide);
+  assert(text.includes("REVEALED: four"), text);
+  assert(!text.includes("ANSWER: four"), "reveal slide should not keep the base notes: " + text);
+}
+
+function testNotesXmlBoldsGlanceAnchors() {
+  const xml = buildNotesParagraphsXml(
+    "ANSWER: four\n\n1. ASK: How many? 10 sec, boards up.\n   EXPECT: four\n\nTRAP: counting spaces. Fix: touch each part."
+  );
+  assert(xml.includes('<a:rPr lang="en-US" b="1" dirty="0"/><a:t>ANSWER:</a:t>'), xml);
+  assert(xml.includes('<a:rPr lang="en-US" b="1" dirty="0"/><a:t>EXPECT:</a:t>'), xml);
+  assert(xml.includes('<a:rPr lang="en-US" b="1" dirty="0"/><a:t>Fix:</a:t>'), xml);
+  assert(xml.includes('<a:rPr lang="en-US" b="1" dirty="0"/><a:t>1.</a:t>'), xml);
+  // Speech stays plain: lowercase words must never match the CAPS anchors.
+  assert(!xml.includes('b="1" dirty="0"/><a:t>How many?'), xml);
 }
 
 function testLiteracyContrast() {
@@ -216,6 +314,10 @@ function testExitTicketHidesInternalScTag() {
 testNotesAggregation();
 testDivisionSanitizer();
 testResponsiveGlanceNotesGate();
+testAiryGlanceFormat();
+testComposeRevealNotes();
+testWithRevealNotesReplacement();
+testNotesXmlBoldsGlanceAnchors();
 testLiteracyContrast();
 testResourceSlideFiveCardsStayInBounds();
 testResourceSlideDenseCardsStayPositive();

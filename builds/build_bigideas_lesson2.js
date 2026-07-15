@@ -43,7 +43,7 @@ const {
   addTextOnShape, addCard, addFooter, addTopBar, addTitle, addBadge,
   addInstructionCard, addInstructionalImageCard,
   withReveal, runSlideDiagnostics, addRevealAnswerBar,
-  composeGlanceNotes,
+  composeGlanceNotes, composeRevealNotes,
 } = T;
 
 const SESSION = 2;
@@ -180,10 +180,11 @@ function drawPowerTower(slide, xLeft, yBottom, levels, opts) {
 const NOTES_TITLE = "Session 2 of 2. Enrichment on student interest. The hook is Graham's number; the learning is powers of 10. Independent of Session 1.";
 
 const NOTES_RESOURCES = composeGlanceNotes({
-  answer: "open - teacher preparation slide, not taught",
   beats: [
-    "SHOW while students settle. SAY: Whiteboards out. One sheet today, and it comes out at the You Do.",
-    "CHECK before the lesson: you can say 7,625,597,484,987 out loud (seven point six trillion) without stumbling.",
+    ["SHOW while students settle.",
+      "SAY: Whiteboards out. One sheet today - it comes out at the You Do."],
+    ["CHECK before the lesson: you can say 7,625,597,484,987 out loud",
+      "(seven point six trillion) without stumbling."],
   ],
   prep: "Materials: mini-whiteboards, the worksheet. No manipulatives needed. Independent of Session 1, so a student who missed it loses nothing.",
   tag: "[Setup | Planning | HITS 2]",
@@ -192,194 +193,301 @@ const NOTES_RESOURCES = composeGlanceNotes({
 const NOTES_DR = composeGlanceNotes({
   answer: "600. And 4 zeros, which makes 10 000.",
   beats: [
-    "POINT to the chart. SAY: Every step left is ten times bigger. That is the whole idea we need today.",
-    "ASK: What are the two answers? 40 sec. Write it... chin it... show me, boards up. EXPECT: 600, and 4 zeros.",
-    "SCAN boards, back row first. 80%+ -> reveal. Less -> build 6 x 100 on the chart, move the 6 two columns left, re-ask with 6 x 10.",
+    ["POINT to the chart.",
+      "SAY: Every step left is ten times bigger. That is the whole idea today."],
+    ["ASK: What are the two answers?",
+      "40 sec. Cue: Write it... chin it... show me.",
+      "EXPECT: 600, and 4 zeros."],
+    ["SCAN boards, back row first.",
+      "80%+ -> reveal.",
+      "Less -> build 6 x 100 on the chart, move it two columns left,",
+      "re-ask with 6 x 10."],
   ],
-  trap: "counting the zeros in the question instead of the answer. Fix: point at the answer on the chart, student recounts the zeros there.",
+  trap: ["counting the zeros in the question instead of the answer.",
+    "Fix: point at the answer on the chart, student recounts the zeros."],
   prep: "Prior learning: place value and multiplying by 10. Assumption flagged: Year 5s may be newer to this than Year 6s, so the chart stays on screen. Everything today rests on one more zero means ten times more.",
   tag: "[Stage 1 | Daily Review | Retention and recall | HITS 6]",
+});
+
+const NOTES_DR_REVEAL = composeRevealNotes({
+  answer: "600, and 4 zeros = 10 000",
+  beats: [
+    "SAY: Tick it or fix it. Recount the zeros if you missed one.",
+  ],
+  prep: "Fluency next - keep the pace.",
 });
 
 const NOTES_FLUENCY = composeGlanceNotes({
   answer: "80, 800, 8000.",
   beats: [
-    "SAY: Fluency. Each one has one more ten in it than the last. Watch the zeros grow.",
-    "ASK: What are the answers? 30 sec, boards up on cue. EXPECT: 80, 800, 8000.",
-    "SCAN boards. 80%+ -> reveal and move on. Less -> say the chain out loud together, eight tens, eight hundreds, eight thousands, re-ask.",
+    ["SAY: Let us warm up. Each one has one more ten than the last."],
+    ["ASK: What are the answers?",
+      "30 sec. Boards up on cue.",
+      "EXPECT: 80, 800, 8000."],
+    ["SCAN boards.",
+      "80%+ -> reveal and move on.",
+      "Less -> say the chain together: eight tens, eight hundreds, eight thousands, re-ask."],
   ],
-  trap: "adding a zero as a rule with no meaning. Fix: say ten times bigger every time, student restates one as a times-ten.",
+  trap: ["adding a zero as a rule with no meaning.",
+    "Fix: say ten times bigger each time, student restates one as times-ten."],
   prep: "Brisk automaticity (Number). Feeds straight into counting zeros in a power. Whole block under 4 minutes.",
   tag: "[Stage 1 | Fluency | Mastery and application | HITS 6]",
 });
 
-const NOTES_LAUNCH = composeGlanceNotes({
-  answer: "open - any guess is welcome; the real answer is about 10 with 19 zeros after it",
+const NOTES_FLUENCY_REVEAL = composeRevealNotes({
+  answer: "80, 800, 8000",
   beats: [
-    "SHOW the grain. SAY: One grain of sand on a fingertip. You could count that. Easy.",
-    "ASK: How many grains of sand on every beach on Earth? Have a guess. 30 sec, boards up on cue. EXPECT: anything. ACCEPT: a million, a billion, too many to count.",
-    "COLLECT the range without judging. SAY: I can see guesses from a thousand to a squillion, and not one of us can write the real one down easily. That is our problem today.",
+    "SAY: Tick it or fix it. Say each one as ten times bigger.",
   ],
-  trap: "refusing to guess because it feels unknowable. Fix: SAY: a rough guess is a real maths move, student commits to any number.",
+  prep: "Launch next.",
+});
+
+const NOTES_LAUNCH = composeGlanceNotes({
+  answer: "open - any guess is welcome; the real answer is about 10^19",
+  beats: [
+    ["SHOW the grain.",
+      "SAY: One grain of sand on a fingertip. You could count that. Easy."],
+    ["ASK: How many grains of sand on every beach on Earth? Guess.",
+      "30 sec. Boards up on cue.",
+      "EXPECT: anything. ACCEPT: a million, a billion, too many to count."],
+    ["COLLECT the range without judging.",
+      "SAY: Guesses from a thousand to a squillion - and none of us",
+      "can easily write the real one. That is our problem today."],
+  ],
+  trap: ["refusing to guess because it feels unknowable.",
+    "Fix: say a rough guess is a real maths move - student commits."],
   prep: "Low-coupling launch: guessing needs no prior knowledge, so every student enters. It creates the need for the tool before the tool arrives. Keep to 4 minutes.",
   tag: "[Launch | Attention, focus and regulation | HITS 3]",
   sources: [SUPPLIED],
 });
 
 const NOTES_LI = composeGlanceNotes({
-  answer: "open - students read the criteria, no response collected",
   beats: [
-    "SAY: By the end you will read numbers so big there is not enough stuff in the universe to write them.",
-    "POINT to criterion one. SAY: Everyone gets this one. It is one small number doing one job.",
+    ["SAY: By the end you will read numbers so big there is not",
+      "enough stuff in the universe to write them out."],
+    ["POINT to criterion one.",
+      "SAY: Everyone gets this one. It is one small number doing one job."],
   ],
   prep: "SC1 is the anchor and is reachable by every student. SC2 is the exit ticket. SC3 is the Graham's number story.",
   tag: "[LI and SC | Planning | HITS 1]",
 });
 
 const NOTES_VOCAB = composeGlanceNotes({
-  answer: "the little raised number counts how many tens are multiplied, which is how many zeros you write",
+  answer: "the little raised number counts the tens multiplied - that is the zeros",
   beats: [
-    "POINT to the raised 6. SAY: This little number is the whole trick. It counts the tens being multiplied together.",
-    "SAY: Six tens multiplied gives you six zeros. So it also counts the zeros. That is the shortcut we will use all lesson.",
-    "SAY: Say it with me. Everyone, together, on three. One, two, three... the little number counts the zeros.",
+    ["POINT to the raised 6.",
+      "SAY: This little number is the whole trick. It counts the tens",
+      "being multiplied together."],
+    ["SAY: Six tens multiplied gives you six zeros. So it also counts",
+      "the zeros. That is the shortcut we will use all lesson."],
+    ["SAY: Say it with me. Everyone, together, on three.",
+      "One, two, three... the little number counts the zeros."],
   ],
-  trap: "reading 10 to the 6 as 10 x 6 = 60. Fix: write both, 10 x 6 = 60 and 10 to the 6 = 1 000 000, student says which is which.",
+  trap: ["reading 10^6 as 10 x 6 = 60.",
+    "Fix: write both, 10 x 6 = 60 and 10^6 = 1 000 000,",
+    "student says which is which."],
   prep: "One word, and it is the anchor for the session. The 10 x 6 = 60 error is the single most common one; name it here, before it costs anyone the exit ticket.",
   tag: "[Vocabulary | Knowledge and memory | SC1 | HITS 6]",
 });
 
 const NOTES_IDO_ZEROS = composeGlanceNotes({
-  answer: "10 to the 6 is 1 000 000: six tens multiplied, so six zeros",
+  answer: "10^6 = a 1 with six zeros",
   beats: [
-    "POINT to the top row. SAY: One ten, one zero. Watch what happens as I go down.",
-    "MODEL each row. SAY: Two tens, two zeros. Three tens, three zeros. Every single time, the little number tells me exactly how many zeros to write.",
-    "POINT to the last row. SAY: So six tens multiplied. I do not have to work it out. I just write a 1 and count six zeros after it.",
-    "ASK: How many zeros in 10 to the 9? 15 sec, boards up on cue. EXPECT: 9.",
-    "SCAN boards. 80%+ -> next slide. Less -> add the 10 to the 4 row to the ladder together, count the tens aloud, re-ask 10 to the 9.",
+    ["MODEL down the ladder.",
+      "SAY: One ten, one zero. Two tens, two zeros.",
+      "The little number counts the zeros. Every time."],
+    ["POINT to 10^6.",
+      "SAY: Six tens. I just write a 1 and six zeros."],
+    ["ASK: How many zeros in 10^9?",
+      "15 sec. Boards up on cue.",
+      "EXPECT: 9"],
+    ["SCAN boards.",
+      "80%+ -> next slide.",
+      "Less -> add the 10^4 row together, count the tens aloud, re-ask 10^9."],
   ],
-  trap: "writing 10 to the 6 as 100 000 by counting the 1 as a zero. Fix: circle the 1, count only what follows, student recounts.",
-  stretch: "work out how many zeros in 10 to the 6 times 10 to the 3, and explain why.",
-  help: "write the tens out as 10 x 10 x 10 and count them with a finger before writing zeros.",
+  trap: ["writing 10^6 as 100 000 - counting the 1.",
+    "Fix: circle the 1, count what follows, student recounts."],
+  stretch: "zeros in 10^6 x 10^3? Explain why.",
+  help: "write the tens as 10 x 10 x 10, count them.",
   prep: "The anchor made visible: the ladder lets students SEE the rule rather than be told it. The jump from 3 to 6 is deliberate, so they use the rule instead of pattern-matching row to row.",
   tag: "[I Do | Explicit teaching | SC1 | HITS 3, 4]",
 });
 
 const NOTES_IDO_LADDER = composeGlanceNotes({
-  answer: "there are more stars in the universe than grains of sand on Earth, and more atoms in a bottle cap of water than stars",
+  answer: "more stars than sand; more atoms in a cap than stars",
   beats: [
-    "POINT to the bag. SAY: A million grains of sand, sold as a one million piece jigsaw. Expert level. A million is a bag you can hold.",
-    "POINT along. SAY: All the sand on every beach and under every ocean is 19 zeros. Stars in the whole universe, 24 zeros. So there are more stars than there are grains of sand. That is real.",
-    "POINT to the last rung. SAY: Now fill a bottle cap with water. The atoms in that are 26 zeros. More atoms in a bottle cap than stars in the universe.",
-    "ASK: Is 24 to 26 a small step or a huge one? 20 sec, turn and tell. EXPECT: huge, it is a hundred times. ACCEPT: huge, because each zero is ten times.",
+    ["POINT up the ladder.",
+      "SAY: A million grains fills a bag. Earth's sand: 19 zeros.",
+      "All the stars, 24."],
+    ["POINT to the last rung.",
+      "SAY: The atoms in a bottle cap of water: 26 zeros.",
+      "More than the stars."],
+    ["ASK: Is 24 up to 26 small or huge?",
+      "20 sec, turn and tell.",
+      "EXPECT: huge, a hundred times. ACCEPT: each zero is ten times."],
   ],
-  trap: "reading 19 to 24 as only five bigger. Fix: five more zeros means ten times, five times over, student says how many times.",
-  stretch: "the atoms in the whole Earth are 50 zeros. How many times bigger than a bottle cap?",
-  help: "cover the pictures and just read the little numbers in order: 6, 19, 24, 26.",
+  trap: ["reading 19 to 24 as five bigger.",
+    "Fix: five zeros = x10 five times, student says how many times."],
+  stretch: "Earth's atoms: 50 zeros. How many times a cap?",
+  help: "read only the little numbers: 6, 19, 24, 26.",
   prep: "The wow, but the teaching move is that the exponent alone ranks them. Students should be able to order these without understanding astronomy.",
   tag: "[I Do | Explicit teaching | SC2 | HITS 4, 6]",
   sources: [SUPPLIED],
 });
 
 const NOTES_CFU = composeGlanceNotes({
-  answer: "B - 1000 times bigger, because there are 3 more zeros and each zero means ten times",
+  answer: "B - 1000 times. 3 more zeros, each zero = x10.",
   beats: [
-    "SAY: 10 to the 6 is a million. 10 to the 9 is a billion. This is the one that matters: not which is bigger, but how MUCH bigger.",
-    "ASK: How many times bigger is 10 to the 9 than 10 to the 6? 30 sec think. Write A, B or C, chin it, boards up. EXPECT: B.",
-    "SCAN boards, back row first. 80%+ -> cold call one B board: How do you know? Then reveal and move on. Less -> write 1 000 000 and 1 000 000 000 under each other, ring the 3 extra zeros, re-ask.",
-    "REVEAL after every board is up. SAY: Three more zeros. Ten, times ten, times ten. A thousand times.",
+    ["SAY: A million... a billion. The question is not",
+      "which is bigger. It is how MUCH bigger."],
+    ["ASK: How many times bigger is 10^9 than 10^6?",
+      "30 sec. Cue: Write A, B or C... chin it... show me.",
+      "EXPECT: B"],
+    ["SCAN back row first.",
+      "80%+ -> cold call one B: How do you know? -> reveal",
+      "Less -> stack 1 000 000 under 1 000 000 000,",
+      "ring the 3 extra zeros, re-ask"],
   ],
-  trap: "choosing A, 3 times bigger, by subtracting the little numbers. Fix: the 3 is how many EXTRA TENS, not how many times, student re-states with the zeros ringed.",
-  prep: "The decision point of the lesson and the exact structure of the exit ticket. A is the subtract-the-exponents error, C is a guess. Do not release to the You Do until this is secure.",
+  trap: ["choosing A, 3 times, by subtracting the little numbers.",
+    "Fix: the 3 counts EXTRA TENS - student re-says it: x10, x10, x10."],
+  prep: "The decision point of the lesson and the exact structure of the exit ticket. A is the subtract-the-exponents error, C is a guess.",
   tag: "[CFU hinge | Supported application | SC2 | HITS 7, 8]",
 });
 
-const NOTES_GOOGOL = composeGlanceNotes({
-  answer: "a googol is 10 with 100 zeros, and it is bigger than the number of atoms in the universe",
+const NOTES_CFU_REVEAL = composeRevealNotes({
+  answer: "B - 1000 times (3 more zeros)",
   beats: [
-    "SAY: In 1937 a mathematician asked his nine year old nephew to name a really big number. The boy said googol. That is the actual story, and it is why the search engine is called what it is.",
-    "SAY: A googol is 10 with 100 zeros. You could write it on a page in about a minute.",
-    "POINT. SAY: But the atoms in the whole universe are only 82 zeros. So if you drew a dot for every atom in existence, you would still not reach a googol dots. You would run out of universe.",
-    "ASK: A googol is how many times bigger than the atoms in the universe? 25 sec, turn and tell. EXPECT: 18 more zeros, so huge. ACCEPT: way bigger, because 100 beats 82.",
+    ["SAY: Tick it or fix it.",
+      "If you wrote A, ring the three extra zeros now."],
+    "Cold call one fixed board: What did the 3 actually count?",
   ],
-  trap: "thinking a googol is unwriteable. Fix: it is easy to write, it is the AMOUNT that is impossible, student says the difference.",
-  stretch: "how many zeros between a googol and the atoms in the universe? Say it as times bigger.",
-  help: "just compare the two little numbers: 100 and 82. Which is bigger?",
-  prep: "The turn: the number is still easy to WRITE but impossible to HAVE. Sets up the moment when writing itself breaks. The nine-year-old is a real fact and it lands hard with this age group.",
+  prep: "Do not move on until this is secure - the exit ticket has this exact structure.",
+});
+
+const NOTES_GOOGOL = composeGlanceNotes({
+  answer: "a googol: 10 with 100 zeros, beating all atoms",
+  beats: [
+    ["SAY: A mathematician's nine year old nephew named this in 1937.",
+      "A googol: 10 with 100 zeros."],
+    ["POINT to the atoms rung.",
+      "SAY: All the atoms in the universe: 82 zeros.",
+      "A dot per atom cannot reach a googol."],
+    ["ASK: A googol is how many times bigger than the atoms?",
+      "25 sec, turn and tell.",
+      "EXPECT: 18 more zeros. ACCEPT: 100 beats 82."],
+  ],
+  trap: ["thinking a googol is unwriteable.",
+    "Fix: easy to WRITE, impossible to HAVE - student says which."],
+  stretch: "say the googol-to-atoms gap as times bigger.",
+  help: "compare just the two little numbers: 100 and 82.",
+  prep: "The turn: still easy to WRITE, impossible to HAVE. Sets up the moment writing itself breaks. The Google naming story is real - it lands with this age group.",
   tag: "[We Do | Supported application | SC3 | HITS 6, 7]",
   sources: ["Googol named by Milton Sirotta, aged 9, nephew of mathematician Edward Kasner", SUPPLIED],
 });
 
 const NOTES_TOWER = composeGlanceNotes({
-  answer: "a googolplex is 10 with a googol zeros, and there are not enough atoms in the universe to write the zeros down",
+  answer: "a googolplex: 10 with a googol zeros. Nobody can write that.",
   beats: [
-    "SAY: The same boy named a second number. A googolplex. It is 10 with a GOOGOL zeros after it.",
-    "POINT to the tower. SAY: Look what happened to our writing. The little number got so big it needed its own little number. The power grew a power.",
-    "SAY: Here is the killer. You cannot write a googolplex out. Not because you would get bored. Because there are not enough atoms in the universe to hold the zeros.",
-    "ASK: So why did we need a new way to write? 25 sec, turn and tell. EXPECT: the zeros do not fit, so we stack the powers instead. ACCEPT: because there were too many zeros.",
+    ["SAY: The same boy named a googolplex: 10 with a GOOGOL zeros.",
+      "There are not enough atoms in the universe to hold them."],
+    ["POINT to the tower.",
+      "SAY: The little number grew its own little number."],
+    ["ASK: Why did we need a new way to write?",
+      "25 sec, turn and tell.",
+      "EXPECT: the zeros do not fit, so we stack. ACCEPT: too many."],
   ],
-  trap: "hearing googolplex as googol plus a bit. Fix: googol is 100 zeros, googolplex is a googol of them, student says which is the number of zeros.",
-  stretch: "explain to your partner why a googolplex is not just a googol times a googol.",
-  help: "read the tower bottom to top: ten, to the ten, to the hundred.",
+  trap: ["hearing googolplex as googol plus a bit.",
+    "Fix: 100 zeros vs a googol of zeros - student says which."],
+  stretch: "why is a googolplex not googol x googol?",
+  help: "read the tower up: ten, to the ten, to the hundred.",
   prep: "The first notation break. This is the SC3 idea in one slide: when the number outgrows the writing, mathematicians invent new writing.",
   tag: "[We Do | Supported application | SC3 | HITS 4, 9]",
   sources: [SUPPLIED],
 });
 
 const NOTES_PATTERN = composeGlanceNotes({
-  answer: "doing powers again and again, which mathematicians write with arrows: 3 arrow arrow 4",
+  answer: "powers again and again - written with arrows: 3 arrow arrow 4",
   beats: [
-    "POINT to row one. SAY: Adding the same number again and again has a shortcut. We call it multiplying.",
-    "POINT to row two. SAY: Multiplying the same number again and again has a shortcut too. We call it a power.",
-    "ASK: So what is doing POWERS again and again? There must be a next one. 40 sec, turn and tell, then boards up. EXPECT: another shortcut, a new symbol. ACCEPT: powers of powers.",
-    "SCAN boards. 80%+ -> reveal, then cold call one board: Why did there have to be a next row? Less -> re-read rows one and two, ask what changed each time, re-ask.",
-    "REVEAL after boards scanned. SAY: Arrows. And every arrow you add is a whole new level, not a bit more.",
+    ["POINT to the rows.",
+      "SAY: Adding again and again became multiplying.",
+      "Multiplying again and again became a power."],
+    ["ASK: What is doing POWERS again and again?",
+      "40 sec, turn and tell, then boards up.",
+      "EXPECT: a new shortcut, a new symbol."],
+    ["SCAN boards.",
+      "80%+ -> reveal, cold call one: Why must a next row exist?",
+      "Less -> re-read rows one and two, what changed? Re-ask."],
   ],
-  trap: "expecting the next row to be a slightly bigger number. Fix: point at the jump from row one to row two, it changed the OPERATION, student names what row three changes.",
-  stretch: "work out 3 arrow 3 without a calculator, then predict whether 3 arrow arrow 3 has more or fewer than 10 digits.",
-  help: "just read rows one and two aloud and say what the shortcut was called each time.",
+  trap: ["expecting just a bigger number next.",
+    "Fix: each row changes the OPERATION - student names row three's change."],
+  stretch: "work out 3 arrow 3. Predict 3 arrow arrow 3.",
+  help: "read rows one and two, name each shortcut.",
   prep: "The best thinking moment in the lesson: students predict that a next level must exist before they are told. Real mathematics (hyperoperations), reachable from what they know.",
   tag: "[We Do | Supported application | SC3 | HITS 7, 9]",
 });
 
-const NOTES_GRAHAM = composeGlanceNotes({
-  answer: "Graham's number is g64: you build g1 with four arrows, then repeat the process 64 times",
+const NOTES_PATTERN_REVEAL = composeRevealNotes({
+  answer: "arrows: 3 arrow arrow 4 - every arrow is a whole new level",
   beats: [
-    "POINT to the arrows. SAY: Three arrows already gives a tower of threes that is seven trillion levels tall. Four arrows is g one. That is just the FIRST step.",
-    "SAY: Then you do it again. And again. Sixty four times. That last one is Graham's number, and Ronald Graham was a real person who needed it as an answer to a real maths problem.",
-    "SHOW the brain. SAY: If you tried to hold every digit of it in your head, scientists say there is a limit to how much can fit in a space that size. Your head would collapse into a black hole first.",
-    "SAY: And the strangest part. We know how it ENDS. It ends in a 7. Nobody knows what it starts with.",
-    "ASK: Why could nobody just write it out? 30 sec, turn and tell. EXPECT: the zeros will not fit, the tower will not fit, there is not enough universe. ACCEPT: it is too big to write.",
+    "SAY: Arrows. Every arrow you add is a whole new level, not a bit more.",
+    "Cold call one board: Why did there have to be a next row?",
   ],
-  trap: "thinking Graham's number is infinity. Fix: it is a definite whole number with a last digit, infinity has no last digit, student says which one ends in 7.",
-  stretch: "if we know the last digits but not the first, what does that tell you about how it was worked out?",
-  help: "count the arrows on the screen, 1, 2, 3, 4, and say what each one does.",
-  prep: "The payoff. Every claim here is checked: Guinness 1980 (title later retired), ends in 7 with first digits unknown, and the black hole line is a real consequence of a limit on information in a given space.",
+  prep: "Graham's number is next - it uses exactly these arrows.",
+});
+
+const NOTES_GRAHAM = composeGlanceNotes({
+  answer: "g64 - build g1 with four arrows, repeat 64 times",
+  beats: [
+    ["POINT to the arrows.",
+      "SAY: Three arrows: a tower seven trillion levels tall.",
+      "Four arrows: g1. Just the FIRST step."],
+    ["SAY: Repeat that 64 times: Graham's number. Ronald Graham",
+      "needed it for a real proof."],
+    ["SHOW the brain.",
+      "SAY: Hold every digit and your head becomes a black hole."],
+    ["ASK: Why can nobody write it out?",
+      "30 sec, turn and tell.",
+      "EXPECT: it cannot fit in the universe."],
+  ],
+  trap: ["thinking Graham's number is infinity.",
+    "Fix: it ends in 7; infinity never ends - student says which."],
+  stretch: "it ends in 7, start unknown - why?",
+  help: "count the four arrows, say what each adds.",
+  prep: "The payoff, every claim checked: Guinness 1980 (later retired), ends in 7 with the start unknown, and the black hole line is a real information-density limit.",
   tag: "[I Do | Mastery and application | SC3 | HITS 3, 6]",
   sources: ["Graham's number: 1980 Guinness Book of World Records, largest number used in a maths proof; last digits known, ends in 7", SUPPLIED],
 });
 
 const NOTES_YOUDO = composeGlanceNotes({
-  answer: "open - the ordering is 10 to the 6, 19, 24, 26, 82, 100",
+  answer: "open - the order is 10^6, 10^19, 10^24, 10^26, 10^82, 10^100",
   beats: [
-    "SAY: Sheet out. Section one warms up the counting, then you order the real ones.",
-    "SAY: The only tool you need is the little number. Ignore what the things are.",
-    "TIME: 12 minutes. CIRCULATE and read section 3 first, the how-many-times question, it is the one the exit ticket needs.",
+    ["SAY: Sheet out. Section one warms up the counting, then",
+      "you order the real ones."],
+    ["SAY: Your only tool is the little number. Ignore what the things are."],
+    ["TIME: 12 minutes.",
+      "CIRCULATE: read section 3 first - the how-many-times question",
+      "feeds the exit ticket."],
   ],
-  trap: "ordering by how impressive the object sounds instead of by the power. Fix: cover the words with a thumb, read only the little numbers, student re-orders.",
-  stretch: "worksheet challenge: write your own scale fact using a power of 10.",
-  help: "section 1 rebuilds it: write out the zeros first, then compare the lengths.",
+  trap: ["ordering by how impressive the object sounds.",
+    "Fix: thumb over the words, student reads only the powers, re-orders."],
+  stretch: "worksheet challenge: write your own scale fact with a power of 10.",
+  help: "section 1 rebuilds it - write the zeros out, compare lengths.",
   prep: "Different content from the We Do: they now order and compare independently rather than following a walked ladder. Section 1 re-grounds anyone who needs it.",
   tag: "[You Do | Mastery and application | SC2 | HITS 4, 10]",
 });
 
 const NOTES_EXIT = composeGlanceNotes({
-  answer: "10 to the 26 is bigger. It is 100 times bigger, because it has 2 more zeros and each zero is ten times.",
+  answer: "10^26 is bigger - 100 times, because 2 more zeros and each zero = x10",
   beats: [
-    "SAY: One question. Four minutes. The how many times part is the bit I am reading for.",
-    "COLLECT in books or on a slip. SAY: I want a reason, not just a number.",
-    "SORT as you collect. Anyone who wrote 2 times bigger goes in a pile: that is the subtract-the-exponents error from the check.",
+    ["SAY: One question, four minutes. The how many times part is",
+      "the bit I am reading for."],
+    ["COLLECT in books or on a slip.",
+      "SAY: I want a reason, not just a number."],
+    ["SORT as you collect: anyone who wrote 2 times bigger goes",
+      "in a pile - the subtract-the-exponents error from the check."],
   ],
-  trap: "answering 2 times bigger. Fix: the 2 is extra zeros, not times, ring the zeros, student recounts as ten times ten.",
+  trap: ["answering 2 times bigger.",
+    "Fix: the 2 counts extra zeros - student recounts as ten times ten."],
   prep: "Assesses SC2. Do not show the SC number to students. This is the same structure as the hinge with new numbers, so it is a fair test, not a new task.",
   tag: "[Exit Ticket | Mastery and application | SC2 | HITS 8]",
 });
@@ -387,9 +495,15 @@ const NOTES_EXIT = composeGlanceNotes({
 const NOTES_CLOSING = composeGlanceNotes({
   answer: "open - self-assessment against the three criteria",
   beats: [
-    "POINT to criterion one. ASK: Can you say what the little number tells you? 10 sec, thumbs only, voices off. EXPECT: mostly thumbs up.",
-    "READ the thumbs across the room. SAY back what you saw, naming the strategy, not the person.",
-    "ASK: What is the biggest number you can now write in five seconds? 20 sec, turn and tell. EXPECT: a power with a huge little number.",
+    ["POINT to criterion one.",
+      "ASK: Can you say what the little number tells you?",
+      "10 sec, thumbs only, voices off.",
+      "EXPECT: mostly thumbs up."],
+    ["READ the thumbs across the room.",
+      "SAY back what you saw, naming the strategy, not the person."],
+    ["ASK: What is the biggest number you can write in five seconds?",
+      "20 sec, turn and tell.",
+      "EXPECT: a power with a huge little number."],
   ],
   prep: "Ties back to the launch: their sand guess is now writeable. Note any thumbs-down on criterion two, that is the exit-ticket skill.",
   tag: "[Closing | Retention and recall | HITS 1, 9]",
@@ -589,7 +703,8 @@ async function build() {
       }),
     (s) => {
       addRevealAnswerBar(s, ["600", "4 zeros = 10 000"], { y: 4.30, h: 0.56, fontSize: 18 });
-    }
+    },
+    { revealNotes: NOTES_DR_REVEAL }
   );
 
   /* 5-6. Fluency + reveal */
@@ -599,7 +714,8 @@ async function build() {
       NOTES_FLUENCY, FOOTER),
     (s) => {
       addRevealAnswerBar(s, ["80", "800", "8000"], { y: 4.30, h: 0.56, fontSize: 20 });
-    }
+    },
+    { revealNotes: NOTES_FLUENCY_REVEAL }
   );
 
   /* 7. Launch */
@@ -765,7 +881,8 @@ async function build() {
       NOTES_CFU, FOOTER),
     (s) => {
       addRevealAnswerBar(s, ["B: 1000 times (3 more zeros)"], { y: 4.30, h: 0.56, fontSize: 18 });
-    }
+    },
+    { revealNotes: NOTES_CFU_REVEAL }
   );
 
   /* 14. We Do: googol */
@@ -910,7 +1027,8 @@ async function build() {
     (s) => {
       addRevealAnswerBar(s, ["3 ↑↑ 4", "every arrow is a whole new level"],
         { y: 4.30, h: 0.56, fontSize: 17 });
-    }
+    },
+    { revealNotes: NOTES_PATTERN_REVEAL }
   );
 
   /* 18. Graham's number */

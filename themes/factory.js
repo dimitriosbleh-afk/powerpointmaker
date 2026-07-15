@@ -16,7 +16,7 @@ const { getGradeBand, getGradeSizes } = require("./core/gradeBand");
 const { createRoutineHelpers, ROUTINES, ROUTINE_LABELS } = require("./core/routineIcons");
 const { createPlaceholderHelpers } = require("./core/placeholders");
 const { createManipulatives }      = require("./core/manipulatives");
-const { composeNotes, composeGlanceNotes } = require("./core/composeNotes");
+const { composeNotes, composeGlanceNotes, composeRevealNotes } = require("./core/composeNotes");
 
 // ── Builder factories ──
 const { createBaseBuilders }       = require("./builders/base");
@@ -198,6 +198,7 @@ function createTheme(subject, yearLevel, variant) {
     ...placeholders,
     composeNotes,
     composeGlanceNotes,
+    composeRevealNotes,
 
     // Grade-band sizing (frozen) — exposed so manual/custom slides
     // can use the same age-appropriate sizes as the builders.

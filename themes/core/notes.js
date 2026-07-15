@@ -178,47 +178,80 @@ function parseNotesSections(notes) {
   return sections;
 }
 
-const RESPONSE_ROUTINE_RE = /\b(?:boards?(?:\s+up)?|mini[- ]whiteboards?|choral(?:\s+(?:response|read))?|everyone\s+(?:points?|shows?|writes?|reads?|acts?)|fingers?|thumbs?|turn\s+and\s+tell|pair(?:\s+(?:share|check))?|partner(?:\s+(?:talk|check|share))?|cold\s+call|stand\s+if|hold\s+up|quick\s+(?:write|sketch)|sort|match|act\s+it\s+out|read\s+aloud)\b/i;
+const RESPONSE_ROUTINE_RE = /\b(?:boards?(?:\s+up)?|mini[- ]whiteboards?|choral(?:\s+(?:response|read))?|everyone\s+(?:points?|shows?|writes?|reads?|acts?)|fingers?|thumbs?|turn\s+and\s+tell|pair(?:\s+(?:share|check))?|partner(?:\s+(?:talk|check|share))?|cold\s+call|stand\s+if|hold\s+up|quick\s+(?:write|sketch)|sort|match|act\s+it\s+out|read\s+aloud|show\s+me|chin\s+it|write\s+it)\b/i;
 const THINK_TIME_RE = /\b\d+(?:\.\d+)?\s*(?:sec|secs|second|seconds)\b/i;
+
+// A live-zone logical unit starts with ANSWER:, a beat number, or a labelled
+// anchor line. Any other physical line (indented continuation, cue line,
+// EXPECT: line, pivot branch) attaches to the unit above it. This is what
+// lets the airy v12.3 format split one beat across several short lines while
+// validation still reasons about whole beats.
+const UNIT_START_RE = /^(?:ANSWER:|REVEALED[.:]|\d+[.)]\s|TRAP:|STRETCH:|HELP:|CARE:|SCAN\b|REVEAL\b)/;
+
+function groupGlanceUnits(liveLines) {
+  const units = [];
+  let current = null;
+  liveLines.forEach((line) => {
+    const trimmed = line.trim();
+    if (!trimmed) return;
+    if (UNIT_START_RE.test(trimmed) || !current) {
+      current = { lines: [trimmed] };
+      units.push(current);
+    } else {
+      current.lines.push(trimmed);
+    }
+  });
+  units.forEach((unit) => {
+    unit.text = unit.lines.join(" ");
+    unit.first = unit.lines[0];
+  });
+  return units;
+}
+
+function countWords(text) {
+  const trimmed = String(text || "").trim();
+  return trimmed ? trimmed.split(/\s+/).length : 0;
+}
 
 function getResponsiveGlanceIssues(liveLines) {
   const issues = [];
-  const askLines = liveLines.filter((line) => /\bASK:/.test(line));
-  const scanLines = liveLines.filter((line) => /^(?:\d+\.\s+)?SCAN\b/i.test(line.trim()));
-  const revealLines = liveLines.filter((line) => /^(?:\d+\.\s+)?REVEAL\b/i.test(line.trim()));
+  const units = groupGlanceUnits(liveLines);
+  const askUnits = units.filter((unit) => /\bASK:/.test(unit.text));
+  const scanUnits = units.filter((unit) => /^(?:\d+[.)]\s+)?SCAN\b/i.test(unit.first));
+  const revealUnits = units.filter((unit) => /^(?:\d+[.)]\s+)?REVEAL\b/i.test(unit.first));
 
-  askLines.forEach((line, index) => {
-    if (!/\bEXPECT:/i.test(line)) {
-      issues.push(`ASK beat ${index + 1} is missing EXPECT: on the same line`);
+  askUnits.forEach((unit, index) => {
+    if (!/\bEXPECT:/i.test(unit.text)) {
+      issues.push(`ASK beat ${index + 1} is missing EXPECT: inside the beat`);
     }
-    if (!THINK_TIME_RE.test(line)) {
+    if (!THINK_TIME_RE.test(unit.text)) {
       issues.push(`ASK beat ${index + 1} is missing explicit think time in seconds`);
     }
-    if (!RESPONSE_ROUTINE_RE.test(line)) {
+    if (!RESPONSE_ROUTINE_RE.test(unit.text)) {
       issues.push(`ASK beat ${index + 1} is missing one named response routine`);
     }
-    if (/\b(?:hands?\s+up|volunteers?)\b/i.test(line)) {
+    if (/\b(?:hands?\s+up|volunteers?)\b/i.test(unit.text)) {
       issues.push(`ASK beat ${index + 1} defaults to volunteer hands instead of whole-class thinking`);
     }
   });
 
-  scanLines.forEach((line, index) => {
-    if (askLines.length === 0) {
+  scanUnits.forEach((unit, index) => {
+    if (askUnits.length === 0) {
       issues.push(`SCAN beat ${index + 1} has no ASK beat to generate evidence`);
     }
-    if (!/80%\+[^.\n]*->/i.test(line)) {
+    if (!/80%\+[^.\n]*->/i.test(unit.text)) {
       issues.push(`SCAN beat ${index + 1} is missing the 80%+ proceed branch`);
     }
-    if (!/Less\s*->/i.test(line)) {
+    if (!/Less\s*->/i.test(unit.text)) {
       issues.push(`SCAN beat ${index + 1} is missing the Less -> pivot branch`);
     }
-    if (!/re[- ]?(?:ask|check)/i.test(line)) {
+    if (!/re[- ]?(?:ask|check)/i.test(unit.text)) {
       issues.push(`SCAN beat ${index + 1} is missing a fresh re-ask or re-check`);
     }
   });
 
-  revealLines.forEach((line, index) => {
-    if (!/\bafter\b/i.test(line)) {
+  revealUnits.forEach((unit, index) => {
+    if (!/\bafter\b/i.test(unit.text)) {
       issues.push(`REVEAL beat ${index + 1} does not protect thinking with an 'after' condition`);
     }
   });
@@ -264,7 +297,11 @@ function getTeacherNotesSourceIssues(notes, opts) {
   }
 
   if (o.checkSectionStructure && isGlanceFormatNotes(raw)) {
-    // Glance Format (v3.0): live zone above a "---" divider, prep zone below.
+    // Glance Format (v12.3): live zone above a "---" divider, prep zone below.
+    // Budgets are RENDERED budgets: logical units (ANSWER, beats, TRAP,
+    // STRETCH/HELP, CARE) stay capped at 8, but the wall-of-text failure mode
+    // is prevented by word caps - a live zone over ~120 words or any physical
+    // line over ~16 words wraps into an unglanceable block on an iPad.
     const allLines = sanitized ? sanitized.split("\n") : [];
     const dividerIndex = allLines.findIndex((line) => line.trim() === "---");
     const liveLines = (dividerIndex === -1 ? allLines : allLines.slice(0, dividerIndex))
@@ -272,20 +309,42 @@ function getTeacherNotesSourceIssues(notes, opts) {
     const prepLines = (dividerIndex === -1 ? [] : allLines.slice(dividerIndex + 1))
       .filter((line) => line.trim() && line.trim() !== "---");
 
-    const maxLiveZoneLines = o.maxLiveZoneLines || 8;
+    const maxLiveZoneUnits = o.maxLiveZoneUnits || o.maxLiveZoneLines || 8;
+    const maxLiveZonePhysicalLines = o.maxLiveZonePhysicalLines || 18;
+    const maxLiveZoneWords = o.maxLiveZoneWords || 120;
+    const maxLineWords = o.maxLineWords || 16;
     const maxPrepZoneLines = o.maxPrepZoneLines || 3;
 
     if (dividerIndex === -1 && liveLines.length > 2) {
       issues.push("glance notes missing --- divider (only 1-2 line non-teaching notes may omit it)");
     }
-    if (liveLines.length > maxLiveZoneLines) {
-      issues.push(`glance live zone exceeds ${maxLiveZoneLines} lines (${liveLines.length})`);
+
+    const units = groupGlanceUnits(liveLines);
+    // STRETCH and HELP sit on separate physical lines but count as one unit.
+    const unitCount = units.length - units.filter((unit, idx) =>
+      /^HELP:/.test(unit.first) && idx > 0 && /^STRETCH:/.test(units[idx - 1].first)
+    ).length;
+    if (unitCount > maxLiveZoneUnits) {
+      issues.push(`glance live zone exceeds ${maxLiveZoneUnits} logical units (${unitCount})`);
     }
+    if (liveLines.length > maxLiveZonePhysicalLines) {
+      issues.push(`glance live zone exceeds ${maxLiveZonePhysicalLines} physical lines (${liveLines.length})`);
+    }
+    const liveWords = countWords(liveLines.join(" "));
+    if (liveWords > maxLiveZoneWords) {
+      issues.push(`glance live zone exceeds ${maxLiveZoneWords} words (${liveWords}) - cut rationale, split the slide, or move detail to the prep zone`);
+    }
+    liveLines.forEach((line) => {
+      const words = countWords(line);
+      if (words > maxLineWords) {
+        issues.push(`glance live line exceeds ${maxLineWords} words (${words}): "${line.trim().slice(0, 48)}..." - break it into short indented lines`);
+      }
+    });
     if (prepLines.length > maxPrepZoneLines) {
       issues.push(`glance prep zone exceeds ${maxPrepZoneLines} lines (${prepLines.length})`);
     }
-    if (liveLines.some((line) => /^(ASK:|\d+\.\s+ASK:)/.test(line.trim()) || /EXPECT:/.test(line)) &&
-        liveLines.length > 0 && !/^ANSWER:/.test(liveLines[0].trim())) {
+    if (liveLines.some((line) => /\bASK:/.test(line) || /EXPECT:/.test(line)) &&
+        liveLines.length > 0 && !/^(?:ANSWER:|REVEALED[.:])/.test(liveLines[0].trim())) {
       issues.push("glance notes with an ASK must open with an ANSWER: line");
     }
     if (o.checkResponsiveGlance !== false) {
@@ -348,6 +407,26 @@ function getSlideNotesText(slide) {
     .join("\n\n");
 }
 
+// Recognised Glance Format anchors get a real bold run in the notes XML so
+// they survive into PowerPoint and Google Slides presenter view (mirrors the
+// OG builder, which has always bolded its note labels). Case-sensitive on
+// purpose: "show" inside SAY speech must not match SHOW.
+const NOTE_BOLD_TOKEN_RE = /(\d+[.)](?=\s)|ANSWER:|REVEALED[.:]|SAY:|ASK:|EXPECT:|ACCEPT:|SCAN\b|TRAP:|Fix:|Cue:|STRETCH:|HELP:|CARE:|REVEAL\b|MODEL\b|POINT\b|SHOW\b|DRAW\b|BUILD\b|COVER\b|COLLECT\b|CIRCULATE\b|TIME:|SOURCES:|WHY:)/g;
+
+function noteLineToRunsXml(line) {
+  // split() with a single capture group alternates plain (even index) and
+  // captured (odd index) segments; empty plain segments keep their slot.
+  const parts = String(line).split(NOTE_BOLD_TOKEN_RE);
+  return parts
+    .map((part, index) => {
+      if (!part) return "";
+      const isBold = index % 2 === 1;
+      const rPr = isBold ? '<a:rPr lang="en-US" b="1" dirty="0"/>' : '<a:rPr lang="en-US" dirty="0"/>';
+      return `<a:r>${rPr}<a:t>${escapeXml(part)}</a:t></a:r>`;
+    })
+    .join("");
+}
+
 function buildNotesParagraphsXml(notes) {
   const sanitized = sanitizeTeacherNotes(notes || "");
   const lines = sanitized ? sanitized.split("\n") : [""];
@@ -360,7 +439,7 @@ function buildNotesParagraphsXml(notes) {
     }
 
     paragraphs.push(
-      `<a:p><a:r><a:rPr lang="en-US" dirty="0"/><a:t>${escapeXml(line)}</a:t></a:r><a:endParaRPr lang="en-US" dirty="0"/></a:p>`
+      `<a:p>${noteLineToRunsXml(line)}<a:endParaRPr lang="en-US" dirty="0"/></a:p>`
     );
   });
 

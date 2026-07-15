@@ -154,23 +154,44 @@ function composeNotes(input, opts) {
   return sanitizeTeacherNotes(joined);
 }
 
+const GLANCE_VALIDATION_OPTS = {
+  checkSectionStructure: true,
+  checkResponsiveGlance: true,
+  maxLines: 34,
+  maxChars: 1800,
+  maxLiveZoneUnits: 8,
+  maxLiveZonePhysicalLines: 18,
+  maxLiveZoneWords: 120,
+  maxLineWords: 16,
+  maxPrepZoneLines: 3,
+};
+
+const CONTINUATION_INDENT = "   ";
+
 /**
- * Compose Glance Format notes (megaprompt v11.0 sections 45-47).
+ * Compose Glance Format notes (megaprompt v12.3 sections 45-47).
  *
- * Live zone (max 8 lines): ANSWER, numbered beats, TRAP, STRETCH/HELP, CARE.
+ * Live zone: ANSWER, numbered beats, TRAP, STRETCH/HELP, CARE - max 8 logical
+ * units, one blank line between units, and RENDERED budgets: 120 words for
+ * the whole live zone, 16 words per physical line. A beat may be an array of
+ * short lines; the first line is numbered and the rest render indented, so
+ * speech (SAY), think time, cue script and EXPECT each sit on their own line.
  * Prep zone (max 3 lines) below a "---" divider: purpose line(s) + tag,
  * then optional SOURCES.
  *
  * @param {object} input
- * @param {string}          [input.answer]  ANSWER: content (omit when the slide asks nothing)
- * @param {string[]}        [input.beats]   2-5 beats in teaching order; numbering is applied
- * @param {string|string[]} [input.trap]    "error. Fix: move, student redoes" (TRAP: prefixed)
- * @param {string}          [input.stretch] STRETCH content (core teaching slides)
- * @param {string}          [input.help]    HELP content (core teaching slides)
- * @param {string}          [input.care]    CARE: content (sensitive content only)
- * @param {string|string[]} [input.prep]    prep-zone purpose line(s)
- * @param {string|string[]} [input.sources] prep-zone SOURCES entries
- * @param {string}          [input.tag]     "[Stage | VTLM element | SC | HITS n]"
+ * @param {string}                    [input.answer]  ANSWER: content (omit when the slide asks nothing)
+ * @param {Array<string|string[]>}    [input.beats]   2-5 beats in teaching order; numbering is applied.
+ *                                                    A string[] beat renders as numbered first line +
+ *                                                    indented continuation lines.
+ * @param {string|string[]}           [input.trap]    "error. Fix: move, student redoes" (TRAP: prefixed;
+ *                                                    an array renders as continuation lines)
+ * @param {string}                    [input.stretch] STRETCH content (core teaching slides)
+ * @param {string}                    [input.help]    HELP content (core teaching slides)
+ * @param {string}                    [input.care]    CARE: content (sensitive content only)
+ * @param {string|string[]}           [input.prep]    prep-zone purpose line(s)
+ * @param {string|string[]}           [input.sources] prep-zone SOURCES entries
+ * @param {string}                    [input.tag]     "[Stage | VTLM element | SC | HITS n]"
  * @returns {string} composed, sanitized notes block
  */
 function composeGlanceNotes(input, opts) {
@@ -179,26 +200,47 @@ function composeGlanceNotes(input, opts) {
   const list = (value) => (value == null ? [] : Array.isArray(value) ? value : [value])
     .map((entry) => String(entry).trim())
     .filter(Boolean);
+  const toBeatLines = (value) => (Array.isArray(value) ? value : [value])
+    .map((entry) => String(entry).trim())
+    .filter(Boolean);
 
-  const lines = [];
-  if (i.answer) lines.push(`ANSWER: ${String(i.answer).trim()}`);
-  list(i.beats).forEach((beat, idx) => {
-    lines.push(/^\d+[.)]\s/.test(beat) ? beat : `${idx + 1}. ${beat}`);
+  // Each block is one logical unit; blocks join with a blank line between
+  // them so the live zone reads as separated moments, not a wall.
+  const blocks = [];
+  if (i.answer) blocks.push([`ANSWER: ${String(i.answer).trim()}`]);
+
+  (i.beats == null ? [] : i.beats).forEach((beat, idx) => {
+    const lines = toBeatLines(beat);
+    if (!lines.length) return;
+    const first = /^\d+[.)]\s/.test(lines[0]) ? lines[0] : `${idx + 1}. ${lines[0]}`;
+    blocks.push([first, ...lines.slice(1).map((line) => `${CONTINUATION_INDENT}${line}`)]);
   });
-  list(i.trap).forEach((trap) => {
-    lines.push(/^TRAP:/i.test(trap) ? trap : `TRAP: ${trap}`);
-  });
-  const stretch = i.stretch ? `STRETCH: ${String(i.stretch).trim()}` : "";
-  const help = i.help ? `HELP: ${String(i.help).trim()}` : "";
-  if (stretch || help) lines.push([stretch, help].filter(Boolean).join(" "));
+
+  const trapLines = toBeatLines(i.trap == null ? [] : i.trap);
+  if (trapLines.length) {
+    const first = /^TRAP:/i.test(trapLines[0]) ? trapLines[0] : `TRAP: ${trapLines[0]}`;
+    blocks.push([first, ...trapLines.slice(1).map((line) => `${CONTINUATION_INDENT}${line}`)]);
+  }
+
+  const stretchHelp = [];
+  if (i.stretch) stretchHelp.push(`STRETCH: ${String(i.stretch).trim()}`);
+  if (i.help) stretchHelp.push(`HELP: ${String(i.help).trim()}`);
+  if (stretchHelp.length) blocks.push(stretchHelp);
+
   if (i.care) {
     const care = String(i.care).trim();
-    lines.push(/^CARE:/i.test(care) ? care : `CARE: ${care}`);
+    blocks.push([/^CARE:/i.test(care) ? care : `CARE: ${care}`]);
   }
 
-  if (lines.length > 8) {
-    console.warn(`[composeGlanceNotes] live zone has ${lines.length} lines; megaprompt section 46 caps it at 8.`);
+  if (blocks.length > 8) {
+    console.warn(`[composeGlanceNotes] live zone has ${blocks.length} logical units; megaprompt section 46 caps it at 8.`);
   }
+
+  const lines = [];
+  blocks.forEach((block, idx) => {
+    if (idx > 0) lines.push("");
+    lines.push(...block);
+  });
 
   const prep = list(i.prep);
   const tag = i.tag ? String(i.tag).trim() : "";
@@ -215,14 +257,7 @@ function composeGlanceNotes(input, opts) {
 
   const composed = sanitizeTeacherNotes(lines.join("\n"));
   if (o.validate !== false) {
-    const issues = getTeacherNotesSourceIssues(composed, {
-      checkSectionStructure: true,
-      checkResponsiveGlance: true,
-      maxLines: 14,
-      maxChars: 1800,
-      maxLiveZoneLines: 8,
-      maxPrepZoneLines: 3,
-    });
+    const issues = getTeacherNotesSourceIssues(composed, GLANCE_VALIDATION_OPTS);
     if (issues.length) {
       throw new Error(`[composeGlanceNotes] ${issues.join("; ")}`);
     }
@@ -230,4 +265,57 @@ function composeGlanceNotes(input, opts) {
   return composed;
 }
 
-module.exports = { composeNotes, composeGlanceNotes };
+/**
+ * Compose reveal-slide notes (megaprompt v12.3 section 47). A reveal slide
+ * must NEVER duplicate its base slide's notes: when the teacher clicks to the
+ * answer, the notes advance with the slide. The live zone is the post-reveal
+ * script only - the answer restated, the tick-and-fix move, and at most one
+ * follow-up.
+ *
+ * @param {object} input
+ * @param {string}                 input.answer   what is now on screen, student voice
+ * @param {Array<string|string[]>} [input.beats]  1-3 post-reveal beats (tick and fix,
+ *                                                cold-call follow-up, transition)
+ * @param {string|string[]}        [input.prep]   prep-zone line(s); defaults to "Reveal slide."
+ * @param {string}                 [input.tag]    optional prep-zone tag
+ * @returns {string} composed, sanitized notes block
+ */
+function composeRevealNotes(input, opts) {
+  const i = input || {};
+  const o = opts || {};
+  if (!i.answer) {
+    throw new Error("[composeRevealNotes] answer is required - the reveal slide restates what is now on screen");
+  }
+  const toBeatLines = (value) => (Array.isArray(value) ? value : [value])
+    .map((entry) => String(entry).trim())
+    .filter(Boolean);
+
+  const lines = [`REVEALED: ${String(i.answer).trim()}`];
+  (i.beats == null ? [] : i.beats).forEach((beat, idx) => {
+    const beatLines = toBeatLines(beat);
+    if (!beatLines.length) return;
+    lines.push("");
+    const first = /^\d+[.)]\s/.test(beatLines[0]) ? beatLines[0] : `${idx + 1}. ${beatLines[0]}`;
+    lines.push(first, ...beatLines.slice(1).map((line) => `${CONTINUATION_INDENT}${line}`));
+  });
+
+  lines.push("---");
+  const prep = (i.prep == null || (Array.isArray(i.prep) && !i.prep.length)) ? ["Reveal slide."] :
+    (Array.isArray(i.prep) ? i.prep : [i.prep]).map((entry) => String(entry).trim()).filter(Boolean);
+  const tag = i.tag ? String(i.tag).trim() : "";
+  prep.forEach((line, idx) => {
+    const isLast = idx === prep.length - 1;
+    lines.push(isLast && tag ? `${line} ${tag}` : line);
+  });
+
+  const composed = sanitizeTeacherNotes(lines.join("\n"));
+  if (o.validate !== false) {
+    const issues = getTeacherNotesSourceIssues(composed, GLANCE_VALIDATION_OPTS);
+    if (issues.length) {
+      throw new Error(`[composeRevealNotes] ${issues.join("; ")}`);
+    }
+  }
+  return composed;
+}
+
+module.exports = { composeNotes, composeGlanceNotes, composeRevealNotes };

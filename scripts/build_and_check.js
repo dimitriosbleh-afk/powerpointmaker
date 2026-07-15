@@ -17,7 +17,7 @@
 const { spawnSync } = require("child_process");
 const path = require("path");
 const fs = require("fs");
-const { scanTextForForbiddenOutput } = require("./qa_lib");
+const { scanTextForForbiddenOutput, validateNotesFormat } = require("./qa_lib");
 
 /* ── Patterns ──────────────────────────────────────────────────────────────── */
 
@@ -58,7 +58,7 @@ function isDiagnosticLine(line) {
 
 /* ── Main ──────────────────────────────────────────────────────────────────── */
 
-function main() {
+async function main() {
   const script = process.argv[2];
 
   if (!script) {
@@ -205,7 +205,34 @@ function main() {
     }
   }
 
-  /* ── Gate 4: hyperlink integrity ───────────────────────────────────────── */
+  /* ── Gate 4: teacher notes format ──────────────────────────────────────── */
+  // Megaprompt v12.3 sections 45-47: reveal slides must carry their own
+  // post-reveal notes (never a byte-copy of the base slide's), and Glance
+  // Format live zones must respect the rendered budgets (120 words / 16 words
+  // per line / 18 physical lines) so they stay glanceable on an iPad.
+
+  console.log("\n── Teacher notes format ───────────────────────────────");
+
+  if (!pptxFile) {
+    console.error("SKIP — no PPTX located");
+  } else {
+    try {
+      const noteIssues = await validateNotesFormat(pptxFile);
+      if (noteIssues.length) {
+        noteIssues.forEach(l => console.error("  ERROR " + l));
+        console.error("FAIL — " + pluralise(noteIssues.length, "notes format issue"));
+        gatesFailed++;
+      } else {
+        console.log("PASS");
+      }
+    } catch (err) {
+      console.error("  ERROR " + err.message);
+      console.error("FAIL — could not validate notes format");
+      gatesFailed++;
+    }
+  }
+
+  /* ── Gate 5: hyperlink integrity ───────────────────────────────────────── */
   // Every relative hyperlink in the deck (resource-slide links) must resolve
   // to a file that actually exists next to the PPTX. Catches renamed PDFs,
   // wrong subfolders, and typos that would ship as dead links.
@@ -255,4 +282,7 @@ function main() {
   }
 }
 
-main();
+main().catch((err) => {
+  console.error("BUILD CHECK CRASHED — " + (err && err.stack ? err.stack : err));
+  process.exit(1);
+});
