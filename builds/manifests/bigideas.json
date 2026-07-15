@@ -1,0 +1,16 @@
+{
+  "unit_folder": "Big_Ideas_Unit",
+  "unit_pptx_name": "Big Ideas - Solstice and Grahams Number.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_bigideas_lesson1.js",
+      "folder": "BigIdeas_Session1_Solstice",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_bigideas_lesson2.js",
+      "folder": "BigIdeas_Session2_GrahamsNumber",
+      "session": 2
+    }
+  ]
+}
