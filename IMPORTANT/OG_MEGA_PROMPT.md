@@ -250,6 +250,14 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
 - Pre-cue the response, give think time, name one routine and collect the complete response.
   Choral response means every voice. Boards up means every board. A cold call comes after
   the whole group has thought.
+- Routines run on the school-standard cue scripts shared with the general lesson builder:
+  boards "Write it... Chin it... Show me.", non-verbal signals "voices off", choral
+  "Everyone, together, on three". The first use in a deck scripts the full cue; later beats
+  may shorten it. When call-outs replace a signal, the reset is one calm scripted line,
+  then the response is re-collected.
+- Hands up is never the sampling method in any OG segment. After a complete choral or board
+  response, an occasional targeted cold-call follow-up ("How do you know?" / "Convince us")
+  deepens retrieval without breaking pace - a few times per session, never on every card.
 - Do not treat a few confident voices as evidence that the group is secure. If responses are
   incomplete, reset the routine and collect them again.
 - Move briskly through secure review only after the complete response shows accuracy and
@@ -354,15 +362,41 @@ new/review session lacks one.
     speech only once PoS has been taught - taught-only rule, 2b).
   - Sentence that SHOWS the meaning (not just uses the word).
 - Every activity involves writing; every activity is startable without teacher help.
+- ACHIEVABILITY BAR (non-negotiable - the school has rejected You Dos that failed it):
+  - The task description on the slide is EXPLICIT: it says exactly what to write and
+    where, in words a mixed-readiness 10-12yo can follow with no teacher explanation.
+    A terse label (`Write R or P`) is not a task description.
+  - The slide carries ONE COMPLETED WORKED EXAMPLE of the very task type, marked
+    `One done for you: ...`, before students start. Use the hero card for it. A You Do
+    whose first exposure to the task shape is the task itself is a defect.
+  - ONE CLEAR ANSWER PER ITEM. Every item must have a single correct answer a student
+    can reach from that day's teaching and verify on the check slide. An item with two
+    defensible answers (`pottery = P or R/P`) or a judgement call about etymological
+    transparency is teacher-led We Do discussion material, never independent work.
+  - Prefer CONCRETE BUILD/USE tasks (build the word from a meaning sum, write the sum
+    beside a derivative, show the meaning in a sentence) over abstract classification
+    or meaning-audit tasks. If a sort is used, the two categories must be plainly
+    distinguishable by a 10-12yo using only the printed card meanings.
 - Notes are Glance Format You Do style: numbered beats with SAY/TIME/CIRCULATE/SCAN,
   ANSWER first when the task has answers, TRAP with Fix, STRETCH and HELP, then `---`
   and one prep line.
+- PROMPT LADDER (required): the CIRCULATE beat scripts what the teacher says to a
+  stuck student - a first prompt that points at the worked example or the morpheme's
+  meaning, then a second step that starts the first item together. HELP still changes
+  the task form (word bank, match instead of build, first item done). A bare
+  `CIRCULATE: check work` gives the teacher nothing to say and is a defect.
 - A fixed-answer activity MUST be followed immediately by a duplicate answer slide
   titled `Tick it or fix it - ...`. Supply `check_items` (the completed prompt/answer
   lines) plus `check_notes`. Never use the old `Check and fix` title. The first slide
   protects independent thinking; the next slide shows answers in green and tells
   students to tick correct work and fix errors. The builder blocks a
   fixed-answer activity whose notes start with `ANSWER:` but which lacks `check_items`.
+- THE ANSWER SLIDE MUST TEACH, not just display. Bare labels (`winery = P`) reteach
+  nothing. Each answer carries its one-line reasoning - the morpheme sum or the rule
+  applied - either inside the item or as its own short green line directly beneath
+  (`winery = P` / `win + -ery = the place where wine is made`). `check_notes` open by
+  MODELLING the reasoning for the first item aloud before students tick, so a student
+  who got it wrong hears HOW the answer is built, not just WHAT it was.
 
 ---
 
@@ -572,6 +606,21 @@ students find boring, so it must earn its five minutes.
   volunteer-hands-only. Never a worksheet.
 - You do produces visible evidence (board up, exit ticket) the teacher can scan to
   regroup tomorrow.
+- The You do obeys the same achievability bar as the morphology You Do (3d):
+  - The hero card shows a COMPLETED WORKED EXAMPLE of the task (`One done for you:
+    The keys are under the blue mat. Whole phrase: under the blue mat`), never the
+    bare task instruction. Put the instruction in the rule banner or the first item
+    (`Your turn: ...`), then give the material items.
+  - The notes CIRCULATE beat scripts the prompt ladder for stuck students (first
+    prompt, then start one item together); HELP changes the task form.
+  - Prefer a fixed-answer core (find/complete/fix given sentences) with production as
+    the STRETCH when the group is still consolidating - open production with no model
+    is the hardest form of the task, not the default exit ticket.
+- A fixed-answer You do MUST be followed by the same green `Tick it or fix it - ...`
+  answer slide as the morphology You Do: supply `check_title`, `check_rule`,
+  `check_items`, `check_routine`, `check_footer`, `check_notes` on the `you_do` block.
+  The answer slide must teach (3d): each answer carries its one-line reasoning, and
+  `check_notes` MODEL the reasoning for the first item before students tick.
 - Teacher notes use the Glance Format from `MEGA_PROMPT.md` sections 45-47: LIVE ZONE
   (ANSWER first if the slide asks anything; 2-5 numbered beats fusing action + talk with
   CAPS anchors - SAY/ASK/MODEL/SCAN/TIME/CIRCULATE; TRAP with Fix; STRETCH/HELP), then
@@ -676,7 +725,10 @@ One JSON per week in `og_planner/weeks/`. Exemplar: `og_planner/weeks/sample_ter
                      "focus" } x2 ],
     "grammar": { "header_notes",
                  "i_do":  { "title", "rule", "example", "items": [<=2], "routine", "footer", "notes" },
-                 "we_do": { ... }, "you_do": { ... } }
+                 "we_do": { ... },
+                 "you_do": { ...,                       // fixed-answer You do: same
+                             "check_title"?, "check_rule"?, "check_items"?,  // check
+                             "check_routine"?, "check_footer"?, "check_notes"? } } // slide as 3d
   } ]
 }
 ```
@@ -716,7 +768,8 @@ python tests/test_og_builder_regressions.py                               # buil
    is no more than eight lines, Words to Read Review includes all three required READ
    beats and guarantees every student at least two rows, review questions are not piled
    into one paragraph, every review/new card and Sound Bank box uses green root / yellow
-   prefix / red suffix, fixed answers have an immediate green `Tick it or fix it` slide,
+   prefix / red suffix, fixed answers have an immediate green `Tick it or fix it` slide
+   (morphology You Do AND any fixed-answer grammar You do),
    new-word grids are at least 27 pt, grammar examples are at least 20 pt, and the first
    dictation uses the green meter while the second/trickier dictation uses yellow.
    Read every WARN - word-count, catalogue mismatch, excluded-word, unbanked-label and
@@ -806,6 +859,17 @@ your spec against every line before building)
   Stretch step. (3c)
 - A fixed-answer morphology task without the immediately following green answer-check
   slide titled `Tick it or fix it - ...`, or using the old `Check and fix` wording. (3d)
+- A You Do task slide with no completed worked example (`One done for you: ...`), or
+  whose description a student cannot follow without the teacher re-explaining it. (3d, 7)
+- A You Do item with more than one defensible answer (`pottery = P or R/P`), or an
+  abstract classification/meaning-audit task set as independent work - ambiguity
+  belongs in the teacher-led We Do, never the You Do. (3d)
+- An answer/check slide showing bare labels without the one-line reasoning, or
+  `check_notes` that do not MODEL the reasoning for the first item before students
+  tick. (3d, 7)
+- A fixed-answer grammar You do without its `Tick it or fix it - ...` answer slide. (7)
+- A You Do CIRCULATE beat with no scripted prompt for stuck students (a prompt ladder
+  is required; `CIRCULATE: check work` is a defect). (3d, 7)
 - Notes containing raw markdown, multiple thoughts/numbered beats on one source line,
   an overlong iPad paragraph, non-left-aligned paragraphs, or more than eight live-zone
   lines outside the explicit Words to Read Review exception. (8)

@@ -1511,16 +1511,27 @@
           "notes": "ANSWER: the complete phrase is through the tall grass; the incorrect underline stops at through.\n1. SAY: \"I will underline a phrase. Show thumbs down if I stop before the whole noun group.\"\n2. SCAN: Check every response before selecting a student.\n3. ASK: \"What is the complete phrase?\" EXPECT: through the tall grass.\n4. SAY: \"Prove it with this stem: The full phrase is ...\"\n---\nPurpose: playful whole-class CFU; the error is made by the teacher, not a student. [We Do | CFU game | Grammar | HITS 7]"
         },
         "you_do": {
-          "title": "Exit sentence",
-          "example": "Write one sentence with a prepositional phrase and underline the whole phrase.",
+          "title": "Exit ticket - the whole phrase",
+          "example": "One done for you: The keys are under the blue mat. Whole phrase: under the blue mat",
           "items": [
-            "Stretch: use two phrases - one for when, one for where.",
-            "If stuck: start with 'At recess, we played ___ the ___'."
+            "Your turn: write just the whole phrase from A and B.",
+            "A) We ate lunch before the big game.",
+            "B) A possum hid in the old gum tree."
           ],
-          "routine": "90 seconds - board up as your exit ticket",
-          "footer": "Next week's warm-up group comes from these boards",
-          "notes": "ANSWER: open - one complete sentence with the whole prepositional phrase underlined.\n1. SAY: \"Write one sentence with a prepositional phrase and underline the whole phrase.\"\n2. TIME: 90 seconds, then boards up as exit tickets.\n3. SCAN: Note who underlines only the preposition for next week's warm-up group.\nSTRETCH: Use two phrases, one telling when and one telling where.\nHELP: Use the starter 'At recess, we played ___ the ___'.\n---\nPurpose: exit-ticket evidence for next week's regroup. [You Do | Exit ticket | Grammar | HITS 5]",
-          "rule": "Write a complete prepositional phrase with its whole noun group."
+          "routine": "Whiteboards - 90 seconds - boards up",
+          "footer": "Check: start at the preposition, end at the noun",
+          "notes": "ANSWER: A - before the big game. B - in the old gum tree.\n1. SAY: \"Look at the example first. Then write just the whole phrase from A and B, nothing else.\"\n2. TIME: 90 seconds, then boards up as exit tickets.\n3. CIRCULATE: prompt stuck students with \"Which word tells where or when?\" then ask for the words that belong with it.\n4. SCAN: note who wrote only before or in for next week's warm-up group.\nTRAP: writing only the preposition. Fix: student reads from the preposition to the noun, then rewrites the whole phrase.\nSTRETCH: Write your own sentence with two phrases, one telling when and one telling where.\nHELP: point to the example board, ask where the phrase starts and stops, then find phrase A together.\n---\nPurpose: achievable exit ticket with the worked example kept on screen. [You Do | Exit ticket | Grammar | HITS 5]",
+          "check_title": "Tick it or fix it - the whole phrase",
+          "check_rule": "Tick your phrase if it matches. Fix it if words are missing or extra.",
+          "check_items": [
+            "A) before the big game",
+            "before = when. Noun group: the big game",
+            "B) in the old gum tree",
+            "in = where. Noun group: the old gum tree"
+          ],
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Start at the preposition, end at the noun",
+          "check_notes": "ANSWER: A - before the big game; B - in the old gum tree.\n1. REVEAL after boards are scanned. SAY: \"Tick your phrase if it matches exactly. Fix it if words are missing or extra.\"\n2. MODEL: \"In A, before tells when. Its noun group is the big game, so the whole phrase is before the big game.\"\n3. ASK: \"Why is 'in the old' not the whole phrase in B?\" 5 sec, turn and tell. EXPECT: it stops too early; the noun group is the old gum tree.\n4. SCAN corrections, then collect boards as exit tickets.\nTRAP: ticking a phrase with missing words. Fix: student reads the phrase aloud to the noun, then adds the missing words.\n---\nPurpose: the answer slide reteaches how each phrase is built, not just what it was. [You Do | Feedback | Grammar | HITS 5]"
         }
       }
     }

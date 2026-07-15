@@ -1,9 +1,11 @@
 © 2026 James Hooke. Confidential. Internal use only. Not for redistribution.
 
-# Explicit Teaching Lesson Builder Mega-Prompt v12.0
+# Explicit Teaching Lesson Builder Mega-Prompt v12.1
 ## Foundation to Year 6 | Australian Primary Schools | Visual-First | Editable | Source-Faithful | Cognitive Load Aware | Classroom-Ready | School Feedback Aligned
 
-This v12.0 revision turns classroom response and teacher preparation into explicit system requirements. It adds high-quality opportunities to respond, decision-grade checks for understanding, curriculum-aware retrieval, prepared response branches and a one-page Teacher Week Brief for every new multi-session themed unit. The Glance Format from v11.0 remains, now with source validation for think time, one named response routine, complete response, proceed and pivot branches, fresh re-checks and protected reveals. OG remains template-locked and receives only the compatible response-quality and pacing refinements named in `OG_MEGA_PROMPT.md`.
+This v12.0 revision turns classroom response and teacher preparation into explicit system requirements. It adds high-quality opportunities to respond, decision-grade checks for understanding, curriculum-aware retrieval and prepared response branches. The Glance Format from v11.0 remains, now with source validation for think time, one named response routine, complete response, proceed and pivot branches, fresh re-checks and protected reveals. OG remains template-locked and receives only the compatible response-quality and pacing refinements named in `OG_MEGA_PROMPT.md`.
+
+The v12.1 revision deepens the response to the Diamond Creek East classroom tour with Ryan Dunn, 14 July 2026. It adds school-standard response routine cue scripts with voices rules and scripted resets (section 75a), makes no hands up the default sampling norm, scripts targeted cold-call follow-ups that raise the think ratio (section 75), requires a named CFU decision-point map per lesson (section 76), and sets brisk evidence-led pacing as the default with time-budget clauses on review blocks. Observed strengths are locked in: calm classrooms, consistent resources and varied opportunities to respond stay the floor; routine tightness and thinking depth become the next ceiling.
 
 # 0. PURPOSE
 
@@ -26,7 +28,6 @@ A completed lesson must be:
 - designed with cognitive load, student engagement and student understanding at the forefront
 - designed to keep every student thinking, not only the student who is called on
 - designed so checks for understanding change the next teaching move
-- accompanied by a three-minute Teacher Week Brief when the request contains multiple sessions
 - supported by editable resources only when resources are genuinely needed
 
 The lesson must feel like it was designed by someone who understands a primary classroom.
@@ -199,6 +200,9 @@ If any item fails, revise before delivering.
     - Pre-cue the response expectation before a cold call or whole-class check.
     - Give think time before naming an individual.
     - Use one clear response routine and require the complete class response.
+    - Run every routine on its school-standard cue script (section 75a). Non-verbal routines are silent; a called-out answer is a broken routine that triggers the scripted reset, not bonus participation.
+    - Hands up is never the sampling method. Hands are for student questions; answers come through the named routine or cold call after think time.
+    - At genuine depth points, follow the all-student response with one targeted cold-call follow-up that extends thinking (section 75).
     - Treat non-response as information. Reset and collect the response rather than accepting 70% to 80% participation.
     - Scan or listen to the response before teaching moves on.
 
@@ -209,12 +213,11 @@ If any item fails, revise before delivering.
     - About 80% is a starting heuristic, not permission to ignore non-responders or a systematic error.
     - Low variance means a shared learning goal, check and response logic. It does not mean every class must advance through the same slide at the same time.
 
-26. Every new themed multi-session unit must include one Teacher Week Brief PDF.
-    - Generate it from `teacher_brief` data in the unit manifest.
-    - Keep it to one page and about a three-minute read.
-    - Include the week throughline, three highest-leverage moves, one row per session, decision-grade checks, prepared responses, essential content, misconceptions, rehearsal and materials.
-    - Write it into the delivered flat `Resources/` folder as `Teacher Week Brief.pdf` unless the manifest supplies another plain PDF filename.
-    - Do not replace it with a long PowerPoint, research summary or generic teaching advice.
+26. Do NOT generate a Teacher Week Brief, weekly summary PDF or any similar teacher-facing overview document.
+    - School leadership has directed that teachers prepare by reading the deck and the teacher notes themselves, not by relying on a one-page summary.
+    - Never add a `teacher_brief` object to a unit manifest.
+    - Never write a `Teacher Week Brief.pdf`, unit overview PDF or session summary PDF into `Resources/`.
+    - Teacher preparation lives in the teacher notes (Glance Format prep zones) and the teacher-facing overview slide inside the deck.
 
 # 1. FOUNDATION TO YEAR 6 FIRST
 
@@ -270,6 +273,10 @@ Use these evidence-informed foundations silently:
 - Diamond Creek East Primary School classroom-tour feedback with Ryan Dunn, 14 July 2026, especially thinking ratio, complete participation, evidence-led pacing, responsive low variance and teacher discernment
 - Ryan Dunn's VTLM 2.0 planning for effective retrieval professional learning, especially spacing, active recall, recognition versus recall, strategy selection and curriculum memory
 - Evidence to Action Spotlight Collection guidance from Dylan Wiliam, Oliver Lovell, Sonia Loudon, Mailie Ross, Bron Ryrie Jones, Dr Ryan Dunn and Paul A. Kirschner on hinge questions, rehearsal, intellectual preparation, curriculum sequencing, opportunities to respond, worked examples and responsive scaffolding
+- Doug Lemov's participation-ratio and think-ratio techniques from Teach Like a Champion: cold call, no opt out, wait time, stretch it
+- Dylan Wiliam's no-hands-up and hinge-question guidance, and the Wiliam and Thompson "tight but loose" framework: tight on the shared learning goal, checks and response logic, loose on the pace and pathway each class takes through them
+- Anita Archer and Charles Hughes' explicit instruction guidance on brisk pacing and high response rates, with the opportunities-to-respond research base (MacSuga-Gage and Simonsen)
+- Mary Budd Rowe's wait-time research: protected think time of three seconds or more lengthens and deepens student responses
 
 Translate evidence into classroom moves.
 
@@ -2027,6 +2034,8 @@ Every decision-grade CFU must pass the evidence test:
 
 Do not count a question as CFU when the teacher hears only one volunteer, accepts call-outs, does not inspect boards or moves on regardless of the result.
 
+Over-the-shoulder marking and one-to-one dialogic exchanges while circulating are valuable monitoring, but they are not decision-grade CFU. They inform support for individual students between decision points; they never replace the planned whole-class check at a release point. Each lesson names its decision points per the CFU decision-point map in section 76.
+
 Do not give the teacher a menu of CFU choices.
 
 Choose the best one.
@@ -2078,7 +2087,7 @@ The 80% rule is a starting heuristic, not a magic threshold.
 - Small subgroup gap: the class is ready but a few students share a prerequisite gap -> proceed with the class and activate the exact HELP or small-group scaffold named in notes.
 - Non-response: students have answers but do not show them -> reset the routine and collect the response before interpreting the data.
 
-The Glance note keeps this concise through its 80%+ and Less -> branches. The fuller mixed, common-error and subgroup response map belongs in the Teacher Week Brief when the lesson is part of a multi-session unit.
+The Glance note keeps this concise through its 80%+ and Less -> branches. Where a fuller mixed, common-error or subgroup response matters, fold the key move into the CFU slide's notes rather than a separate document.
 
 # 38a. RE-TEACH SUPPORT
 
@@ -2688,6 +2697,10 @@ Teacher notes are read by the teacher, but their quality is measured in what stu
 
 9. The teacher visibly values the response before moving. SCAN first, then give precise feedback or announce the evidence-based move: "Most of us kept the intervals equal, so we can fade the strip" or "I can see one shared error, so we will rebuild it another way." This makes CFU feedback on the teaching, not a compliance ritual.
 
+10. Response routines run on the school-standard cue scripts in section 75a. The first routine beat of a deck carries the full cue ("Write it... Chin it... Show me."); later beats may shorten it ("boards up on cue"). Non-verbal routines state "voices off" on first use. When call-outs replace a signal, the reset is one calm scripted line, then the response is re-collected before the evidence is read.
+
+11. On We Do, CFU and hinge slides, one ASK carries a targeted follow-up after the all-student response: probe ("How do you know?"), bounce ("Do you agree with that board? Add one thing"), stretch (a correct answer earns a harder question on the same idea) or clarify ("Say it again using the word denominator"). Fold it into the ASK beat or the SCAN proceed clause, for example "80%+ -> cold call one strong board and one shaky board: Convince us. Then move on." Brisk routine slides carry no follow-up.
+
 # 47. TEACHER NOTES TEMPLATE
 
 Teaching slide template:
@@ -2706,8 +2719,8 @@ Worked example, Years 3 to 4 We Do:
 
 ANSWER: eight equal parts, three shaded, so 3/8
 1. POINT to the strip. SAY: Your turn with support. Check the parts are equal before you count anything.
-2. ASK: How many equal parts? 10 sec, boards up. EXPECT: eight.
-3. SCAN back row first. 80%+ -> reveal. Less -> count every part on the strip together, re-ask with 6 parts.
+2. ASK: How many equal parts? Write it... chin it... show me. 10 sec. EXPECT: eight.
+3. SCAN back row first. 80%+ -> cold call one board: How do you know they are equal? Then reveal. Less -> count every part on the strip together, re-ask with 6 parts.
 4. REVEAL after boards scanned. SAY: Tick yours. Fix one thing if you need to.
 TRAP: counting only shaded parts. Fix: hand on the whole strip, count all, student recounts.
 STRETCH: draw a strip showing 5/8. HELP: strip with parts pre-drawn, student shades.
@@ -2977,6 +2990,8 @@ QA table:
 | Cognitive load and engagement | Met / Partial / Missing | ... |
 | CFU | Met / Partial / Missing | ... |
 | Thinking ratio and complete response | Met / Partial / Missing | ... |
+| Routine tightness: cue scripts, voices rules, resets | Met / Partial / Missing | ... |
+| Pacing: brisk defaults, named decision points, time budgets | Met / Partial / Missing | ... |
 | Prepared proceed, guided, re-model and subgroup responses | Met / Partial / Missing | ... |
 | Retrieval trace and spacing | Met / Partial / Missing / Not applicable | ... |
 | Differentiation | Met / Partial / Missing | ... |
@@ -2986,7 +3001,6 @@ QA table:
 | Quote and source fidelity | Met / Partial / Missing | ... |
 | Rendered resource layout | Met / Partial / Missing | ... |
 | Foundation suitability, if relevant | Met / Partial / Missing / Not applicable | ... |
-| Teacher Week Brief, if multi-session | Met / Partial / Missing / Not applicable | ... |
 
 Single most important fix:
 [One action]
@@ -3796,7 +3810,6 @@ Delivered output structure for a multi-session unit:
 
 - output/<UnitFolder>/<Unit PowerPoint Name>.pptx
 - output/<UnitFolder>/Resources/
-  - Teacher Week Brief.pdf
   - Session 1 Worksheet.pdf
   - Session 1 Answer Key.pdf
   - Session 2 Worksheet.pdf
@@ -3807,8 +3820,8 @@ Resource files in this codebase are PDFs (generated by themes/pdf_helpers.js), n
 How to produce this output:
 
 1. Write one per-lesson build script per session in builds/ as usual.
-2. Write a manifest at builds/manifests/<unit>.json listing each lesson's build_script, folder and session in teaching order, plus unit_folder, unit_pptx_name and the required `teacher_brief` object for every newly generated multi-session themed unit. Manifest format is documented in docs/resource-system.md and docs/teacher-week-brief.md.
-3. Run python scripts/build_unit.py builds/manifests/<unit>.json. This builds every lesson through build_and_check.js (aborts on any gate failure), merges the decks and PDFs into the unit folder, generates the one-page Teacher Week Brief, and runs merged unit QA.
+2. Write a manifest at builds/manifests/<unit>.json listing each lesson's build_script, folder and session in teaching order, plus unit_folder and unit_pptx_name. Manifest format is documented in docs/resource-system.md. Never add a `teacher_brief` object.
+3. Run python scripts/build_unit.py builds/manifests/<unit>.json. This builds every lesson through build_and_check.js (aborts on any gate failure), merges the decks and PDFs into the unit folder, and runs merged unit QA.
 4. The task is not complete for a multi-session request until the combined unit folder exists. Do not report completion after building per-lesson folders only.
 
 For a single-session request, no merge is required. The per-lesson folder is the deliverable.
@@ -3827,7 +3840,7 @@ For a single lesson, include a brief teacher-facing overview only when it genuin
 
 The overview slide is for the teacher, not the students.
 
-The overview slide is a navigation surface inside the deck. It does not replace the Teacher Week Brief in `Resources/`. The brief holds the intellectual preparation, essential content, rehearsal, misconceptions and response map that would make the overview slide too dense.
+The overview slide is a navigation surface inside the deck. Intellectual preparation, essential content, rehearsal, misconceptions and response moves live in the per-slide teacher notes, not on the overview slide and not in a separate summary document.
 
 It may include more text than a student-facing slide, but it must still be readable and organised.
 
@@ -4569,18 +4582,61 @@ Cold-call quality:
 - Target challenge without humiliating students.
 - Build from one student's answer to another so students listen to peers.
 - Do not let cold call become instant nomination with no protected thinking time.
+- Spread cold calls across the room over the lesson. Quiet students and students who have not yet spoken are deliberately reached, not accidentally skipped.
 
-Hands-up quality:
+Targeted follow-up repertoire (the think ratio multiplier):
 
-- Hands up may be used for genuine student questions or occasional contribution.
-- It must not be the predominant way the teacher samples understanding.
-- Do not let a rich discussion become a conversation with the confident few at the expense of the class.
+The strongest observed practice pairs an all-student response with one deliberate follow-up that deepens thinking. An OTR that stops at a scanned correct answer confirms participation; the follow-up is where the thinking deepens. Script it in the notes; do not leave it to improvisation.
+
+- Probe: "Why?", "How do you know?", "Convince us."
+- Bounce: "Do you agree with [that board]? Add one thing to it."
+- Stretch: a correct answer earns a harder question on the same idea: "And if the denominator were 10?"
+- Clarify: "Say it again using the word denominator."
+- Chain: build from one student's answer to a second student, so the class listens to peers, not only to the teacher.
+
+Match the follow-up to the student: a secure answer gets stretch, a partial answer gets probe or clarify, a wrong answer gets the TRAP fix ending with the student redoing the step. The class experiences the selection as open; the teacher selects deliberately.
+
+Use one scripted follow-up on We Do, CFU and hinge slides where depth matters. Do not append a follow-up to every ASK. Brisk routine slides stay brisk.
+
+No hands up (default norm):
+
+- Hands up is for asking a question, not for answering one. Defaulting to raised hands samples the confident few and lowers the thinking ratio for everyone else.
+- Never write "take some answers", "ask for volunteers", "choose a student with their hand up" or similar in teacher notes. Name the routine or the cold call instead.
+- Occasional open contribution is fine in genuine discussion moments, but it must never be how the teacher samples understanding.
 
 Pacing quality:
 
 - Fast pace means high cognitive participation with no dead time, not hurried teacher speech.
-- Slow down at a decision-grade CFU long enough to inspect and value the evidence.
-- Move rapidly through secure review only after complete evidence shows students are ready.
+- Default pace is brisk. Lessons more often fail slow than fast: re-explaining an answer most of the room already showed, narrating instructions the slide already carries, letting a secure Daily Review drift long, padding transitions.
+- When a SCAN shows 80%+ secure, the proceed move happens now. Give one line of strategy-naming feedback and move; do not re-teach what the evidence says is known.
+- Compression cuts repeated explanation, never the response collection. A brisk routine still reaches every student; use the scripted reset, not silent waiting, to complete it.
+- Slow down at a decision-grade CFU long enough to inspect and value the evidence. The named decision points are where the lesson deliberately spends time; everything between them moves.
+- Brisk blocks (Daily Review, Fluency, launch) carry their time budget as a short clause in the prep-zone purpose line, for example "Whole block under 5 minutes.", and TIME anchors in beats keep the block honest.
+
+# 75a. TIGHT ROUTINES: STANDARD CUE SCRIPTS, VOICES RULES AND RESETS
+
+A response routine only collects evidence when every student knows exactly how to respond, when to respond and what their voice does. Loose routines produce called-out answers over non-verbal signals, half-raised boards and invisible students. Tight routines are taught once and then cued identically in every lesson and every classroom, so the routine itself costs no working memory.
+
+Every routine has four parts: a name, a cue script, a voices rule and a reset move.
+
+School-standard cue scripts. Use these exact cue phrases in SAY and ASK beats so every deck reinforces the same routines:
+
+- Mini-whiteboards: "Write it... Chin it... Show me." Students write privately, hold boards to their chest, show together on the cue, hold until "Boards down."
+- Thumbs or any non-verbal signal: "Thumbs only, voices off. Show me... now." A non-verbal routine means silent. A called-out "yes" is a broken routine, not bonus participation.
+- Choral response: "Everyone, together, on three... one, two, three." The class answers as one voice. A few voices is not choral; re-cue until it is everyone.
+- Fingers: "Fingers at your chest... show me."
+- Point to: "Point... now. Hold your point."
+- Turn and tell: "Partner A first. You have 20 seconds. Go." End with a return signal: "Eyes back in 3, 2, 1."
+- Cold call pre-cue: "Everyone thinks. I will choose someone after the thinking time."
+
+Rules:
+
+- The first use of a routine in a deck carries the full cue script in the beat. Later beats may shorten to "boards up on cue" or "thumbs, voices off".
+- Do not invent new cue wording per lesson. Identical cues across every deck build routine muscle memory across the school; a student who changes classrooms already knows the routine.
+- The first response routine of each lesson names the voices rule explicitly. After that, the shorthand carries it.
+- The reset move is scripted, calm and short: "That was voices. This routine is thumbs only. Think again... show me." Reset once, immediately, without negotiation, then re-collect before interpreting the evidence.
+- Routine icons and slide chips may show the routine, but the cue script lives in the notes beats where the teacher's eyes are mid-lesson.
+- Tight is not slow. A tight routine is what makes a brisk pace possible, because the teacher never waits for stragglers or re-explains how to respond.
 
 # 76. DECISION-GRADE CFU AND RESPONSIVE LOW VARIANCE
 
@@ -4597,6 +4653,14 @@ The school-wide invariant is:
 The variable is the next teaching move after evidence is collected.
 
 Two classes may be on different slides because the same high-quality check produced different evidence. That is defensible low variance. Two classes doing different activities with no evidence or shared goal is not.
+
+CFU decision-point map:
+
+- Every lesson names its two or three decision-grade CFU points in the teacher-facing overview, in one line, for example "Decision points: hinge after I Do, boards check after We Do, exit ticket."
+- The defaults are: one check before releasing into guided practice, one before releasing into independent work, and the exit ticket. Adjust to the lesson shape, not by habit.
+- These named points are where the lesson deliberately slows for structured whole-class evidence with a SCAN line and prepared branches. Everything between them stays brisk.
+- Over-the-shoulder marking and dialogic exchanges while circulating support individual students between decision points. They are never the release evidence and never a substitute for the planned whole-class check.
+- Do not exceed three or four decision points in one lesson. A lesson that checkpoints every slide loses pace; a lesson with none teaches blind.
 
 Plan response permutations before delivery:
 
@@ -4619,7 +4683,6 @@ Prepared pivots should be easy to access:
 - optional re-teach slides immediately after the CFU where useful
 - hidden or clearly labelled teacher-only alternatives where the platform supports it
 - HELP and STRETCH instructions in notes
-- the full week response map in the Teacher Week Brief
 
 # 77. RETRIEVAL, SPACING AND CURRICULUM MEMORY
 
@@ -4659,37 +4722,13 @@ Unit planning rules:
 
 - Map later-session retrieval of earlier-session learning deliberately.
 - Keep the form varied while the knowledge remains traceable.
-- Use the Teacher Week Brief throughline and session rows to make the memory path visible to teachers.
+- Use the teacher-facing overview slide and prep-zone notes to make the memory path visible to teachers.
 
-# 78. INTELLECTUAL PREPARATION AND THE TEACHER WEEK BRIEF
+# 78. INTELLECTUAL PREPARATION
 
 Shared resources change the teacher's planning job from creating materials to preparing to teach them well.
 
-For every new multi-session themed unit, create one `Teacher Week Brief.pdf` from the unit manifest using `scripts/build_teacher_brief.js`. The manifest schema and field limits are in `docs/teacher-week-brief.md`.
-
-The brief must answer, in plain language:
-
-- What is the throughline across the week?
-- What are the three highest-leverage teaching moves, the 20% to nail?
-- What will students do in each session?
-- What visible or audible evidence matters in each session?
-- What should the teacher do for secure, mixed or misconception-heavy evidence?
-- What content must the teacher understand deeply enough to explain without reading the slide?
-- What are the most likely misconceptions?
-- Which short explanation, model or hinge question should be rehearsed aloud?
-- What materials and board setup must be ready?
-
-Brief quality rules:
-
-- One page only.
-- About a three-minute read.
-- Exactly three high-leverage moves.
-- One row for every session in the manifest.
-- Every check describes evidence, not merely the response tool.
-- Every response names the actual next teaching move.
-- Content-specific, not generic reminders that could fit any unit.
-- Simple teacher language, with no research essay and no unexplained acronyms.
-- Generated after the lesson sequence is designed, so it reflects the final deck rather than an early plan.
+Teachers prepare by reading the deck and the teacher notes themselves. Do NOT generate a Teacher Week Brief, weekly summary PDF, unit overview PDF or any similar standalone teacher-preparation document; school leadership has ruled these out because they encourage over-reliance on a summary instead of genuine familiarity with the lessons. All intellectual preparation content belongs inside the deck: prep-zone note lines, the teacher-facing overview slide and the Teacher Resources slide.
 
 Preparation rules for the lesson itself:
 
@@ -4700,7 +4739,7 @@ Preparation rules for the lesson itself:
 - Decide what can be compressed when review is secure and what must not be skipped.
 - Ensure the teacher can move to a whiteboard, manipulative or different representation without feeling that departing from the next slide is failure.
 
-The brief supports teacher expertise. It does not remove professional judgement, replace lesson familiarisation or encourage cognitive offloading without critique.
+These preparation habits support teacher expertise. Nothing generated should remove professional judgement, replace lesson familiarisation or encourage cognitive offloading.
 
 User: Generate a slide deck for the following:
 Subject: “ XYZ ”

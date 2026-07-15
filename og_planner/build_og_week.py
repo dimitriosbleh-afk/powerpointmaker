@@ -777,8 +777,9 @@ def prepare_notes_text(text):
     text = sanitize(str(text or "")).replace("\r\n", "\n").replace("\r", "\n")
     text = text.replace("\x0b", "\n")
     # Older specs sometimes placed every numbered beat and live action on one line.
+    # (?<!\d) keeps the break out of the middle of a two-digit beat number ("10. ASK").
     text = re.sub(
-        r"(?<!\n)(?<!^)(?=\d+\.\s+(?:SAY|ASK|SCAN|MODEL|POINT|SHOW|READ|"
+        r"(?<!\n)(?<!^)(?<!\d)(?=\d+\.\s+(?:SAY|ASK|SCAN|MODEL|POINT|SHOW|READ|"
         r"REVEAL|CIRCULATE|TIME|WRITE|BUILD|TICK):)",
         "\n",
         text,
@@ -809,6 +810,9 @@ def validate_notes_source(template_idx, original_text, prepared_text):
         if len(line) > 220:
             warn(f"template slide {template_idx}: notes line {line_no} is "
                  f"{len(line)} characters; split each new thought onto its own line")
+        if re.fullmatch(r"\d+", line.strip()):
+            warn(f"template slide {template_idx}: notes line {line_no} is a bare "
+                 "number - a numbered beat has been split mid-line")
         numbered_beats = re.findall(
             r"\b\d+\.\s+(?:SAY|ASK|SCAN|MODEL|POINT|SHOW|READ|REVEAL|"
             r"CIRCULATE|TIME|WRITE|BUILD|TICK|CHECK|WAIT|REPEAT|CLARIFY)\b",
@@ -1139,6 +1143,58 @@ def draw_structured_slide(root, blk, accent, tint, ctx):
     if blk.get("footer"):
         add_textbox(root, sid, 4.55, 4.66, 4.95, 0.44, [blk["footer"]], 14,
                     align="r", italic=True, color="595959")
+
+
+def has_fixed_answer_notes(blk):
+    """True when a task's notes open with a definite ANSWER (not 'ANSWER: open')."""
+    lines = prepare_notes_text(blk.get("notes", "")).splitlines()
+    return bool(
+        lines
+        and lines[0].upper().startswith("ANSWER:")
+        and not lines[0].lower().startswith("answer: open")
+    )
+
+
+def add_answer_check_slide(d, blk, tidx, accent, tint, ctx,
+                           default_footer="Explain which card meaning fits each word"):
+    """Emit the green 'Tick it or fix it' answer slide for a fixed-answer task.
+
+    Shared by the new-morphology You Do and the grammar You Do. Returns True
+    when the block supplied check_items and a slide was added.
+    """
+    check_items = blk.get("check_items", [])
+    if not check_items:
+        return False
+    check_blk = {
+        "rule": blk.get(
+            "check_rule",
+            "Tick each correct answer. Fix any answer that does not match.",
+        ),
+        "items": check_items,
+        "item_color": ANSWER_GREEN,
+        "items_bold": True,
+        "item_size": blk.get("check_item_size", 22),
+        "routine": blk.get("check_routine", "Tick - fix - explain"),
+        "footer": blk.get("check_footer", default_footer),
+    }
+
+    def fill_check(root, check_blk=check_blk, blk=blk, tidx=tidx):
+        tsp = find_sp(root, SHAPE["gr_title"][tidx])
+        check_title = blk.get(
+            "check_title",
+            "Tick it or fix it - " + blk.get("title", ""),
+        )
+        set_text(
+            tsp,
+            check_title,
+            size_pt=fit_font(check_title, 7.22, 28, min_pt=20, char_em=0.5),
+        )
+        bsp = find_sp(root, SHAPE["gr_body"][tidx])
+        set_runs(bsp, [[]])
+        draw_structured_slide(root, check_blk, accent, tint, ctx)
+
+    d.add(tidx, fill_check, notes=blk.get("check_notes", ""))
+    return True
 
 
 def sanitize(s):
@@ -1477,63 +1533,12 @@ def build_session(pkg, week, session, out_path):
                                       f"{day} new_morph_activity")
             d.add(act_tidx, fill_act, notes=act.get("notes", ""))
 
-            check_items = act.get("check_items", [])
-            answer_first = prepare_notes_text(act.get("notes", "")).splitlines()
-            has_fixed_answer = bool(
-                answer_first
-                and answer_first[0].upper().startswith("ANSWER:")
-                and not answer_first[0].lower().startswith("answer: open")
-            )
-            if has_fixed_answer and not check_items:
+            added_check = add_answer_check_slide(
+                d, act, act_tidx, MORPH_MAGENTA, MORPH_TINT,
+                f"{day} new_morph_activity answer check")
+            if has_fixed_answer_notes(act) and not added_check:
                 warn(f"{day}: fixed-answer new_morph_activity needs a duplicate "
                      "check_items answer slide")
-            if check_items:
-                check_blk = {
-                    "rule": act.get(
-                        "check_rule",
-                        "Tick each correct answer. Fix any answer that does not match.",
-                    ),
-                    "items": check_items,
-                    "item_color": ANSWER_GREEN,
-                    "items_bold": True,
-                    "item_size": act.get("check_item_size", 22),
-                    "routine": act.get("check_routine", "Tick - fix - explain"),
-                    "footer": act.get(
-                        "check_footer",
-                        "Explain which card meaning fits each word",
-                    ),
-                }
-
-                def fill_act_check(root, check_blk=check_blk, act=act,
-                                   act_tidx=act_tidx):
-                    tsp = find_sp(root, SHAPE["gr_title"][act_tidx])
-                    check_title = act.get(
-                        "check_title",
-                        "Tick it or fix it - " + act.get("title", ""),
-                    )
-                    set_text(
-                        tsp,
-                        check_title,
-                        size_pt=fit_font(
-                            check_title,
-                            7.22,
-                            28,
-                            min_pt=20,
-                            char_em=0.5,
-                        ),
-                    )
-                    bsp = find_sp(root, SHAPE["gr_body"][act_tidx])
-                    set_runs(bsp, [[]])
-                    draw_structured_slide(
-                        root,
-                        check_blk,
-                        MORPH_MAGENTA,
-                        MORPH_TINT,
-                        f"{day} new_morph_activity answer check",
-                    )
-
-                d.add(act_tidx, fill_act_check,
-                      notes=act.get("check_notes", ""))
 
     # --- learned words
     lw = session["learned_words"]
@@ -1626,6 +1631,14 @@ def build_session(pkg, week, session, out_path):
             draw_structured_slide(root, blk, GRAMMAR_PURPLE, GRAMMAR_TINT,
                                   f"{day} grammar {key}")
         d.add(tidx, fill_gr, notes=blk.get("notes", ""))
+        if key == "you_do":
+            added_check = add_answer_check_slide(
+                d, blk, tidx, GRAMMAR_PURPLE, GRAMMAR_TINT,
+                f"{day} grammar you_do answer check",
+                default_footer="Check your work against each green answer")
+            if has_fixed_answer_notes(blk) and not added_check:
+                warn(f"{day}: fixed-answer grammar you_do needs a duplicate "
+                     "check_items answer slide")
 
     d.write(out_path)
     return len(d.slides)
@@ -1865,9 +1878,11 @@ def qa_deck(path, session=None):
                         )
 
             # Fixed-answer activities require an immediate green check-and-fix slide.
-            activity = session.get("new_morph_activity", {})
-            check_items = activity.get("check_items", [])
-            if check_items:
+            for activity in (session.get("new_morph_activity", {}),
+                             session.get("grammar", {}).get("you_do", {})):
+                check_items = activity.get("check_items", [])
+                if not check_items:
+                    continue
                 answer_idx = next(
                     (idx for idx, slide in enumerate(pres.slides)
                      if all(item in slide_text(slide) for item in check_items)),

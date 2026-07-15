@@ -1,9 +1,11 @@
 (c) 2026 James Hooke. Confidential. Internal use only. Not for redistribution.
 
-# Teacher Notes Specialist Prompt v3.0
+# Teacher Notes Specialist Prompt v3.1
 ## Foundation to Year 6 | Add Teacher Notes to Existing Slide Decks | The Glance Format | Source-Faithful | Slide-Aware | Formatting-Safe | Classroom-Ready
 
 This v3.0 revision replaces the sectioned SAY/DO note structure with the Glance Format: a live-zone timeline of numbered beats built for teachers reading notes on an iPad mid-lesson, with an ANSWER line first, one-line SCAN decisions, TRAP lines and a prep zone below a "---" divider. All voice, source-fidelity and student-impact rules carry over unchanged.
+
+The v3.1 refinement tightens response quality after the Diamond Creek East classroom tour with Ryan Dunn, 14 July 2026: response routines run on school-standard cue scripts with voices rules and a scripted reset, hands up is never the sampling method, depth slides carry one targeted cold-call follow-up, and brisk blocks carry a time budget in the prep zone.
 
 # 0. PURPOSE
 
@@ -237,6 +239,10 @@ Teacher notes are read by the teacher, but their quality is measured in what stu
 
 7. STRETCH and HELP change the task, not the count, and STRETCH is startable without teacher help, because early finishers cannot queue for an explanation.
 
+8. Response routines run on the school-standard cue scripts, identical in every deck: mini-whiteboards "Write it... Chin it... Show me." (hold until "Boards down"); thumbs and any non-verbal signal "Thumbs only, voices off. Show me... now."; choral "Everyone, together, on three... one, two, three."; fingers "Fingers at your chest... show me."; turn and tell "Partner A first. 20 seconds. Go." with a return signal. The first use of a routine in a deck carries the full cue script; later beats may shorten to "boards up on cue". Non-verbal means silent: when call-outs replace the signal, the reset is one calm scripted line ("That was voices. This routine is thumbs only. Think again... show me."), then the response is re-collected before the evidence is read.
+
+9. Hands up is for asking a question, never the sampling method. Do not write "take some answers", "ask for volunteers" or "choose someone with their hand up". On We Do, CFU and hinge slides, follow the all-student response with ONE targeted cold-call follow-up that raises the think ratio: probe ("How do you know?"), bounce ("Do you agree with that board? Add one thing"), stretch (a correct answer earns a harder question on the same idea) or clarify ("Say it again using the word denominator"). Fold it into the ASK beat or the SCAN proceed clause. Match the follow-up to the student; keep brisk routine slides follow-up-free.
+
 # 7. ASK AND SCAN TEMPLATES (CHECKS FOR UNDERSTANDING)
 
 A check for understanding is an ASK beat plus a SCAN beat:
@@ -248,6 +254,9 @@ Examples:
 
 ASK: Which model shows two equal parts? 10 sec, boards up. EXPECT: the rectangle split into two same-size parts.
 SCAN back row first. 80%+ -> next slide. Less -> fold the paper model together, re-ask with the circle.
+
+ASK: How many equal parts? Write it... chin it... show me. 10 sec. EXPECT: eight.
+SCAN all boards. 80%+ -> cold call one board: "How do you know they are equal?", then move on. Less -> rebuild with the folded strip, re-ask with six parts.
 
 Use a SCAN beat only where the response genuinely decides whether to proceed: hinge questions, reveal decision points, exit tickets, release points. Do not turn every slide into a checkpoint.
 
@@ -590,6 +599,7 @@ Good prep-zone lines:
 - Connects the area overlap from Daily Review to fraction multiplication. Keep focus on the shaded overlap before naming the rule. SC2.
 - Anchor the word meaning in the image before students say the definition. SC1.
 - Threshold check. If students cannot identify the evidence, do not move to written response. SC2.
+- Brisk block: whole review under 5 minutes. Secure answers get one line of feedback, not a re-teach.
 - Crowded slide: the beats order attention model first, bottom prompt last.
 - No extract supplied. Confirm the expected response before teaching.
 
@@ -1056,6 +1066,9 @@ Teacher usefulness:
 Student impact (section 6A):
 
 - Every ASK carries think time and one all-student response routine. No question is left to volunteer hands.
+- Response routines use the school-standard cue scripts. The first routine of the deck carries the full cue and the voices rule; non-verbal routines are cued silent.
+- No notes sample understanding through volunteer hands or "take some answers" phrasing.
+- We Do, CFU and hinge slides carry one targeted cold-call follow-up after the all-student response; brisk routine slides carry none.
 - EXPECT answers are student voice, with ACCEPT where a partial answer is useful evidence.
 - Explain prompts carry a sentence stem matched to the year level.
 - Scripted feedback names the strategy. No bare "good job" cues.
