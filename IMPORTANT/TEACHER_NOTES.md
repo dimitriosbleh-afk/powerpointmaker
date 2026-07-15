@@ -1,11 +1,13 @@
 (c) 2026 James Hooke. Confidential. Internal use only. Not for redistribution.
 
-# Teacher Notes Specialist Prompt v3.1
+# Teacher Notes Specialist Prompt v3.2
 ## Foundation to Year 6 | Add Teacher Notes to Existing Slide Decks | The Glance Format | Source-Faithful | Slide-Aware | Formatting-Safe | Classroom-Ready
 
 This v3.0 revision replaces the sectioned SAY/DO note structure with the Glance Format: a live-zone timeline of numbered beats built for teachers reading notes on an iPad mid-lesson, with an ANSWER line first, one-line SCAN decisions, TRAP lines and a prep zone below a "---" divider. All voice, source-fidelity and student-impact rules carry over unchanged.
 
 The v3.1 refinement tightens response quality after the Diamond Creek East classroom tour with Ryan Dunn, 14 July 2026: response routines run on school-standard cue scripts with voices rules and a scripted reset, hands up is never the sampling method, depth slides carry one targeted cold-call follow-up, and brisk blocks carry a time budget in the prep zone.
+
+The v3.2 refinement adds the multi-session CATCH-UP line: each session's Teacher Resources notes name the fastest re-entry path for a student who missed one or two sessions, built only from what is visible in the deck or supplied materials.
 
 # 0. PURPOSE
 
@@ -752,6 +754,15 @@ ANSWER: none - setup slide
 2. CONFIRM manipulatives, printed sheets and board setup before the first active response.
 ---
 Teacher setup check. Do not spend lesson time on logistics.
+CATCH-UP: [fastest re-entry path for a student who missed one or two sessions].
+
+CATCH-UP line rules (multi-session decks only):
+
+- One prep-zone line per session naming the fastest re-entry path: which visual to show, which anchor phrase to say, which item to hand the student first.
+- Example: "CATCH-UP: missed last session? Show the fraction wall, say the anchor phrase, start at the first worksheet item."
+- Build it only from what is visible in the deck or supplied materials. Never invent a resource, a prior lesson's content or an anchor phrase the deck does not show.
+- If the session has no Teacher Resources slide, put the line in the prep zone of the session's first teaching slide.
+- Omit the line entirely for a single-session deck.
 
 ## Launch slide
 
@@ -1051,6 +1062,7 @@ Coverage:
 - No teaching slide is blank.
 - Title, divider and admin slides are not overloaded.
 - Every session has a visible Learning Intention and Success Criteria slide. If one was missing it was inserted per Section 3A, styled to match the deck, with one learning intention sentence and exactly three "I can..." criteria. If no learning intention or success criteria was available for a session, the absence was flagged rather than invented.
+- In a multi-session deck, each session's Teacher Resources notes (or the first teaching slide when no resources slide exists) carry one CATCH-UP line naming the re-entry path, built only from visible deck content.
 
 Teacher usefulness:
 
