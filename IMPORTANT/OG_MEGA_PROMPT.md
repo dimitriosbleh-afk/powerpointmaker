@@ -941,6 +941,21 @@ WEEK block for every week of the term. Everything not in this block (derivative
 words, review lists, sound banks, spelling words, dictation sentences, grammar
 scripts, teacher notes) is YOUR job to generate under the recipes above.
 
+Interpreting the block:
+- `Morphology focus` lists the week's new morphemes with their type, e.g.
+  `ord/ordin (root), -ible (suffix)`. Two per week is the default (taught Mon + Wed).
+  One is fine (taught Mon; every other day reviews it).
+- `Learned words` is the week's list in teaching order; deal one new word per session
+  Mon-Thu, review-only Friday (section 5).
+- `Sessions per week` under 5 compresses per section 11.
+- `Additional notes` may carry inquiry links, assessment weeks, short weeks, or a report
+  that a catalogue transcription is wrong. It may not silently override a captured
+  card's keyword or meaning. Verify any reported correction against the physical card,
+  update the relevant category JSON and generated views first, then use the corrected
+  canon. If `Additional notes` is empty, proceed with defaults - do not ask.
+- If `Recently taught morphemes` is empty and the bank/history gives you nothing,
+  ask for it - week 1's review deck cannot be invented.
+
 ```
 User: Generate OG session decks for the following:
 Term: " XYZ "
@@ -967,18 +982,3 @@ Do not enter plan mode, proceed with the deck creation in bypass permissions. En
 you remain active while the decks are being created and continue to be until they are
 fully complete, please.
 ```
-
-Interpreting the block:
-- `Morphology focus` lists the week's new morphemes with their type, e.g.
-  `ord/ordin (root), -ible (suffix)`. Two per week is the default (taught Mon + Wed).
-  One is fine (taught Mon; every other day reviews it).
-- `Learned words` is the week's list in teaching order; deal one new word per session
-  Mon-Thu, review-only Friday (section 5).
-- `Sessions per week` under 5 compresses per section 11.
-- `Additional notes` may carry inquiry links, assessment weeks, short weeks, or a report
-  that a catalogue transcription is wrong. It may not silently override a captured
-  card's keyword or meaning. Verify any reported correction against the physical card,
-  update the relevant category JSON and generated views first, then use the corrected
-  canon. If `Additional notes` is empty, proceed with defaults - do not ask.
-- If `Recently taught morphemes` is empty and the bank/history gives you nothing,
-  ask for it - week 1's review deck cannot be invented.

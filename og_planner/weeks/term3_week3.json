@@ -1,0 +1,1620 @@
+{
+  "term": 3,
+  "week": 3,
+  "cohort": "5/6 Composite",
+  "unit_folder": "OG_Term3_Week3",
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "overview": {
+    "Monday": {
+      "morphology": [
+        "New Morphology",
+        "-acy"
+      ],
+      "grammar": "Add adverbials to sentences",
+      "learned_words": [
+        "New learned word",
+        "circuit"
+      ]
+    },
+    "Tuesday": {
+      "morphology": [
+        "New Morphology",
+        "-ule"
+      ],
+      "grammar": "Add adverbials to sentences",
+      "learned_words": [
+        "New learned word",
+        "tsunami"
+      ]
+    },
+    "Wednesday": {
+      "morphology": [
+        "New Morphology",
+        "mega-"
+      ],
+      "grammar": "Add adverbials to sentences",
+      "learned_words": [
+        "Review learned words",
+        "circuit, tsunami"
+      ]
+    },
+    "Thursday": {
+      "morphology": "Bees Not Bullies Day - no OG session",
+      "grammar": "No session",
+      "learned_words": "No session"
+    },
+    "Friday": {
+      "morphology": [
+        "Week Review",
+        "-acy, -ule, mega-"
+      ],
+      "grammar": "Week review: add and position adverbials",
+      "learned_words": [
+        "Review learned words",
+        "circuit, tsunami"
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "day": "Monday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "clud(e)/clus(e)",
+          "type": "root",
+          "keyword": "exclude",
+          "meaning": "shut",
+          "extra_task": {
+            "prompt": "Give me one clud or clus word, meaning shut.",
+            "answers": [
+              "include",
+              "exclude",
+              "conclusion",
+              "seclusion"
+            ]
+          }
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like",
+          "extra_task": {
+            "prompt": "Give me one -ive word and explain what it is relating to.",
+            "answers": [
+              "active - relating to doing",
+              "sensitive - relating to feeling",
+              "explosive - relating to bursting"
+            ]
+          }
+        },
+        {
+          "morph": "capt/capit",
+          "type": "root",
+          "keyword": "capable",
+          "meaning": "hold, take OR leader, head"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where"
+        },
+        {
+          "morph": "ord/ordin",
+          "type": "root",
+          "keyword": "ordain",
+          "meaning": "order"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality"
+        },
+        {
+          "morph": "flect/flex",
+          "type": "root",
+          "keyword": "deflect",
+          "meaning": "bend"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral",
+          "extra_task": {
+            "prompt": "Give me one -ite mineral word from last week.",
+            "answers": [
+              "graphite",
+              "pyrite",
+              "granite"
+            ]
+          }
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill"
+        },
+        {
+          "morph": "ped/pod",
+          "type": "root",
+          "keyword": "pedal",
+          "meaning": "foot"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "graphite",
+          "malfunction",
+          "cooperative",
+          "orderly",
+          "sensitive",
+          "justice",
+          "captain",
+          "definite",
+          "imagery",
+          "inclusion",
+          "active",
+          "granite",
+          "pedestrian",
+          "assertive",
+          "infinite"
+        ],
+        "notes": "1. READ: \"Read all five rows with me. Keep every voice together and every eye on the board.\"\n2. READ: \"Birthday-season groups: summer reads row 1; autumn row 2; winter row 3; spring row 4.\"\n3. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round. Make row 5 our smoothest.\"\n4. ASK: \"Which words end in -ite, meaning mineral or quality?\" 5 sec, choral response. EXPECT: graphite, definite, granite, infinite.\n5. ASK: \"Which words end in -ive, meaning relating to or like?\" 5 sec, choral response. EXPECT: cooperative, sensitive, active, assertive.\n6. ASK: \"Which word uses mal-, meaning bad, wrong or ill?\" 3 sec, choral response. EXPECT: malfunction.\n7. ASK: \"What is the opposite of infinite?\" 3 sec, choral response. EXPECT: finite.\n8. ASK: \"Which word means arranged in a good order?\" 3 sec, choral response. EXPECT: orderly.\n9. ASK: \"Which word means bringing everyone in?\" 3 sec, choral response. EXPECT: inclusion.\n10. ASK: \"Make pedestrian plural.\" 3 sec, choral response. EXPECT: pedestrians."
+      },
+      "sound_bank": [
+        {
+          "morph": "flect/flex",
+          "type": "root"
+        },
+        {
+          "morph": "clud(e)/clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "in-",
+          "type": "prefix"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        },
+        {
+          "morph": "-tion/-sion",
+          "type": "suffix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "negative",
+          "sentence": "The test result was negative, so the scientist checked again.",
+          "prompt": "neg means no and -ive means relating to - what does negative signal?",
+          "answer": "it signals no, not, or the opposite of positive."
+        },
+        {
+          "word": "inquisitive",
+          "sentence": "The inquisitive student asked how the circuit worked.",
+          "prompt": "quis means seek and -ive means relating to - what is an inquisitive person doing?",
+          "answer": "seeking answers and wanting to know more."
+        },
+        {
+          "word": "restrictive",
+          "sentence": "The restrictive rule limited access to the science lab.",
+          "prompt": "strict means draw tight and -ive means relating to - what does a restrictive rule do?",
+          "answer": "it holds choices or movement back tightly."
+        },
+        {
+          "word": "pyrite",
+          "sentence": "The glittering pyrite looked like gold in the rock sample.",
+          "prompt": "Which printed -ite meaning fits pyrite?",
+          "answer": "-ite means mineral: pyrite is a mineral often called fool's gold."
+        },
+        {
+          "word": "composite",
+          "sentence": "The helmet used a strong composite made from several materials.",
+          "prompt": "com- means together and pos means put - what is a composite?",
+          "answer": "something put together from different parts or materials."
+        },
+        {
+          "word": "favourite",
+          "sentence": "Science is her favourite subject this term.",
+          "prompt": "What does favourite mean as a quality word?",
+          "answer": "the one liked more than the others."
+        },
+        {
+          "word": "malnutrition",
+          "sentence": "A balanced diet helps prevent malnutrition.",
+          "prompt": "Which prefix tells you the nutrition is bad or harmful?",
+          "answer": "mal- means bad or ill: malnutrition is poor nutrition that harms health."
+        },
+        {
+          "word": "bravery",
+          "sentence": "Her bravery helped the team stay calm during the drill.",
+          "prompt": "Which quality does bravery name?",
+          "answer": "the quality of being brave or showing courage."
+        },
+        {
+          "word": "exclusion",
+          "sentence": "The exclusion of one player made the game unfair.",
+          "prompt": "clus means shut - what does exclusion mean?",
+          "answer": "the state of being shut out or left out."
+        },
+        {
+          "word": "reflection",
+          "sentence": "We saw the tree's reflection bending across the water.",
+          "prompt": "flect means bend - what bends back in a reflection?",
+          "answer": "light bends back from a surface to form the image."
+        }
+      ],
+      "new_morphology": {
+        "morph": "-acy",
+        "type": "suffix",
+        "keyword": "accuracy",
+        "meaning": "quality, state"
+      },
+      "words_to_read_new": [
+        {
+          "word": "accuracy",
+          "meaning": "accurate means correct and exact + -acy means quality or state: the quality of being correct and exact"
+        },
+        {
+          "word": "adequacy",
+          "meaning": "adequate means enough for a need + -acy means quality or state: the state of being enough for the need"
+        },
+        {
+          "word": "candidacy",
+          "meaning": "candidate means a person seeking selection + -acy means state: the state of being a candidate"
+        },
+        {
+          "word": "delicacy",
+          "meaning": "delicate means fine or fragile + -acy means quality: the quality of being delicate"
+        },
+        {
+          "word": "literacy",
+          "meaning": "literate means able to read and write + -acy means state: the state of being literate"
+        },
+        {
+          "word": "privacy",
+          "meaning": "private means away from public attention + -acy means state: the state of being private"
+        },
+        {
+          "word": "supremacy",
+          "meaning": "supreme means highest in rank or power + -acy means state: the state of being highest in rank or power"
+        },
+        {
+          "word": "immediacy",
+          "meaning": "immediate means happening with no delay + -acy means quality or state: the quality of feeling close and immediate"
+        }
+      ],
+      "associated_word_exceptions": [
+        {
+          "word": "accuracy",
+          "reason": "The teacher confirmed -acy as the Week 3 suffix; accuracy visibly carries -acy and names a quality.",
+          "source": "https://www.merriam-webster.com/dictionary/accuracy"
+        },
+        {
+          "word": "adequacy",
+          "reason": "The teacher confirmed -acy as the Week 3 suffix; adequacy visibly carries -acy and names a quality or state.",
+          "source": "https://www.merriam-webster.com/dictionary/adequacy"
+        },
+        {
+          "word": "candidacy",
+          "reason": "The teacher confirmed -acy as the Week 3 suffix; candidacy visibly carries -acy and names a state.",
+          "source": "https://www.merriam-webster.com/dictionary/candidacy"
+        },
+        {
+          "word": "delicacy",
+          "reason": "The teacher confirmed -acy as the Week 3 suffix; delicacy visibly carries -acy and names a quality.",
+          "source": "https://www.merriam-webster.com/dictionary/delicacy"
+        },
+        {
+          "word": "literacy",
+          "reason": "The teacher confirmed -acy as the Week 3 suffix; literacy visibly carries -acy and names a state or ability.",
+          "source": "https://www.merriam-webster.com/dictionary/literacy"
+        },
+        {
+          "word": "privacy",
+          "reason": "The teacher confirmed -acy as the Week 3 suffix; privacy visibly carries -acy and names a state.",
+          "source": "https://www.merriam-webster.com/dictionary/privacy"
+        },
+        {
+          "word": "supremacy",
+          "reason": "The teacher confirmed -acy as the Week 3 suffix; supremacy visibly carries -acy and names a state.",
+          "source": "https://www.merriam-webster.com/dictionary/supremacy"
+        },
+        {
+          "word": "immediacy",
+          "reason": "The teacher confirmed -acy as the Week 3 suffix; immediacy visibly carries -acy and names a quality or state.",
+          "source": "https://www.merriam-webster.com/dictionary/immediacy"
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears. -ACY means quality, state.\naccuracy - accurate means correct and exact + -ACY means quality or state: the quality of being correct and exact.\nadequacy - adequate means enough for a need + -ACY means quality or state: the state of being enough for the need.\ncandidacy - candidate means a person seeking selection + -ACY means state: the state of being a candidate.\ndelicacy - delicate means fine or fragile + -ACY means quality: the quality of being delicate.\nliteracy - literate means able to read and write + -ACY means state: the state of being literate.\nprivacy - private means away from public attention + -ACY means state: the state of being private.\nsupremacy - supreme means highest in rank or power + -ACY means state: the state of being highest in rank or power.\nimmediacy - immediate means happening with no delay + -ACY means quality or state: the quality of feeling close and immediate.\nMemory hook: -ACY names a QUALITY or STATE. Ask: what is it like, or what state is it in?\nSOURCES:\nhttps://www.merriam-webster.com/dictionary/accuracy\nhttps://www.merriam-webster.com/dictionary/adequacy\nhttps://www.merriam-webster.com/dictionary/candidacy\nhttps://www.merriam-webster.com/dictionary/delicacy\nhttps://www.merriam-webster.com/dictionary/literacy\nhttps://www.merriam-webster.com/dictionary/privacy\nhttps://www.merriam-webster.com/dictionary/supremacy\nhttps://www.merriam-webster.com/dictionary/immediacy",
+      "words_to_spell_new": [
+        "accuracy",
+        "privacy",
+        "literacy",
+        "adequacy"
+      ],
+      "extension": "1. SAY: \"When you finish, add in- to accuracy and explain the new meaning.\"\n2. CHECK: inaccuracy names the quality or state of not being accurate.\nSTRETCH: Unpack inaccuracy as a three-part meaning: in- means not + accurate means correct + -acy means quality or state.",
+      "new_morph_activity": {
+        "title": "Show the literal meaning of -acy",
+        "rule": "Write each word, its base, and the quality or state it names.",
+        "example": "One done for you: accuracy = accurate + -acy = the quality of being correct",
+        "items": [
+          "1. privacy = private + -acy = ?",
+          "2. adequacy = adequate + -acy = ?"
+        ],
+        "item_size": 18,
+        "routine": "OG workbooks - 3 minutes",
+        "footer": "Name the base, then name the state",
+        "notes": "ANSWER: 1. the state of being private. 2. the state of being adequate or enough.\n1. SAY: \"Copy each word and sum, then finish the meaning after the equals sign.\"\n2. TIME: 3 minutes. Work independently in your OG workbook.\n3. CIRCULATE: if a student is stuck, SAY: \"Point to the worked example. What does -acy name?\" Then start number 1 together: private means away from public attention.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> finish number 1 together, then re-check number 2.\nTRAP: defining only the base. Fix: begin the answer with the quality of or the state of, then finish it.\nSTRETCH: Add in- to accuracy and explain how the meaning changes.\nHELP: Give the two finished meanings as a word bank; students match instead of generating.\n---\nPurpose: connect -acy directly to its quality or state meaning. [You Do | Literal meanings | Morphology]",
+        "check_title": "Tick it or fix it - Literal meanings with -acy",
+        "check_rule": "Tick the base and state if both match. Fix any missing meaning.",
+        "check_items": [
+          "1. privacy = private + -acy",
+          "the state of being private",
+          "2. adequacy = adequate + -acy",
+          "the state of being adequate or enough"
+        ],
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "-acy turns the base into a quality or state",
+        "check_notes": "ANSWER: 1. the state of being private. 2. the state of being adequate or enough.\n1. REVEAL after every book has been scanned. MODEL: SAY: \"Private names the base idea. -acy names its state, so privacy is the state of being private.\"\n2. SAY: \"Tick both parts if they match. Fix any missing base or state meaning.\"\n3. ASK: \"What job does -acy do in both answers?\" 5 sec, choral response. EXPECT: it names a quality or state.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild adequacy aloud from adequate + -acy.\nTRAP: ticking a definition that never names the state. Fix: add the words the state of.\nHELP: read the green base first, then complete the phrase the state of being.\n---\nPurpose: model the reasoning before students tick and fix. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "buoyancy",
+            "unfair": "uoy",
+            "notes": "Why learned: uoy says /oy/, and English rarely puts those three letters in that order.\nSay it: BOY-uhn-see, three beats. Hear buoy at the front, then -ancy naming a quality or state.\nLink: a science word for the upward push that helps an object float."
+          },
+          {
+            "word": "drought",
+            "unfair": "ough",
+            "notes": "Why learned: ough says /ow/ here, unlike enough, though or bought.\nSay it: DROWT, one beat. It rhymes with out and shout.\nLink: an Australian geography word for a long stretch with far too little rain."
+          }
+        ],
+        "new": {
+          "word": "circuit",
+          "unfair": "u",
+          "notes": "Why learned: the u in -cuit is silent, so the final part sounds like kit, not kwit.\nSay it: SUR-kit, two beats; listen for kit at the end while remembering the silent u.\nLink: a science word for a complete path through which electric current can flow."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The circuit worked with great accuracy during the afternoon test.",
+          "targets": [
+            "circuit",
+            "accuracy"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "the new learned word circuit, -acy spelling, and adverbials telling how and when"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "After the careful check, Mia said, \"This circuit shows excellent accuracy; record every result.\"",
+          "targets": [
+            "circuit",
+            "accuracy"
+          ],
+          "cups": {
+            "capitals": [
+              "After",
+              "Mia",
+              "This"
+            ],
+            "punctuation": [
+              "comma after the fronted adverbial",
+              "comma after the reporting clause",
+              "opening quotation mark",
+              "semicolon",
+              "full stop inside the quotation",
+              "closing quotation mark"
+            ]
+          },
+          "focus": "fronted adverbial, quoted speech and semicolon; circuit and accuracy"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Extend last week's adverbial work by adding a given adverbial to a plain sentence.\nPREP: Have whiteboards ready before the I do.",
+        "i_do": {
+          "title": "Add useful detail",
+          "rule": "An adverbial adds when, where, how or why. Put it at the front or end; use a comma after a fronted adverbial.",
+          "example": "The circuit worked. + during the test -> During the test, the circuit worked.",
+          "items": [
+            "During the test tells WHEN.",
+            "It moved to the front, so it takes a comma."
+          ],
+          "routine": "Eyes on me - watch the addition",
+          "footer": "Add the detail, then check the comma",
+          "notes": "ANSWER: During the test, the circuit worked.\n1. SAY: \"An adverbial tells when, where, how or why. I can add it to make a plain sentence more precise.\"\n2. MODEL: Move during the test to the front. SAY: \"It tells when, so I add a comma behind it.\"\n3. ASK: \"What does during the test tell us?\" 5 sec, choral response. EXPECT: when.\n4. ASK: \"Why is there a comma?\" 5 sec, choral response. EXPECT: the adverbial is at the front.\nTRAP: adding the words but missing the comma. Fix: reread the opening detail, hear the pause, then add the comma.\n---\nPurpose: restate the rule and model adding a given adverbial. [I Do | Explicit modelling | Grammar]"
+        },
+        "we_do": {
+          "title": "Add it at the end",
+          "rule": "Add the given adverbial where it makes sense. An adverbial at the end usually needs no comma.",
+          "example": "The class listened. + in silence",
+          "items": [
+            "Write the complete new sentence.",
+            "Decide whether a comma is needed."
+          ],
+          "routine": "Whiteboards ready - boards up together",
+          "footer": "Stem: In silence tells us how",
+          "notes": "ANSWER: The class listened in silence. No comma is needed.\n1. SAY: \"Add in silence to the sentence, then decide whether you need a comma. Write it... chin it... show me.\"\n2. TIME: 20 seconds, then boards up together.\n3. SCAN every board. 80%+ -> ask for the reason. Less -> say the sentence together, then re-collect all boards.\n4. ASK: \"What does in silence tell us?\" 5 sec, choral response. EXPECT: how the class listened.\nTRAP: placing a comma before an end adverbial. Fix: read the sentence smoothly, remove the unnecessary comma, then show again.\n---\nPurpose: guided addition at the end with complete-response evidence. [We Do | Guided practice | Grammar]"
+        },
+        "you_do": {
+          "title": "Add the given adverbial",
+          "rule": "Rewrite each sentence with the given adverbial. Use a comma only when the adverbial is at the front.",
+          "example": "One done for you: We waited. + after lunch -> After lunch, we waited.",
+          "items": [
+            "A) The circuit worked. + during the test",
+            "B) The class listened. + in silence"
+          ],
+          "routine": "Whiteboards - 90 seconds - boards up",
+          "footer": "Front = comma. End = usually no comma.",
+          "notes": "ANSWER: A - During the test, the circuit worked. B - The class listened in silence.\n1. SAY: \"Use the worked example. Rewrite A with the detail at the front and B with the detail at the end.\"\n2. TIME: 90 seconds. Work independently on whiteboards.\n3. CIRCULATE: if a student is stuck, SAY: \"Point to where after lunch moved in the example. Now find the when detail in A.\" Then start A together: During the test...\n4. SCAN all boards. 80%+ -> reveal. Less -> complete A together, erase it, then re-ask A.\nTRAP: forgetting the comma in A or adding one in B. Fix: name the position, then repair the punctuation.\nSTRETCH: Move B's adverbial to the front and explain the punctuation change.\nHELP: Give both sentence openings; students finish them from the printed words.\n---\nPurpose: fixed-answer practice adding adverbials in both positions. [You Do | Independent practice | Grammar]",
+          "check_title": "Tick it or fix it - Add the adverbial",
+          "check_rule": "Tick each complete sentence. Fix the position or comma if it differs.",
+          "check_items": [
+            "A) During the test, the circuit worked.",
+            "Fronted when detail: add a comma.",
+            "B) The class listened in silence.",
+            "End how detail: no comma needed."
+          ],
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Name the job and position before the comma",
+          "check_notes": "ANSWER: A - During the test, the circuit worked. B - The class listened in silence.\n1. REVEAL after all boards are scanned. MODEL: SAY: \"During the test tells when and sits at the front, so I place a comma after it.\"\n2. SAY: \"Tick each complete sentence. Fix any position or comma that differs.\"\n3. ASK: \"Why does B have no comma?\" 5 sec, choral response. EXPECT: the adverbial is at the end.\n4. SCAN corrections. 80%+ -> continue. Less -> compare each answer with the worked example, then re-check.\nTRAP: ticking correct words with incorrect punctuation. Fix: point to the adverbial's position, then repair the comma.\nHELP: read the green reason line before checking the punctuation.\n---\nPurpose: model the position-and-comma reasoning before feedback. [You Do | Feedback | Grammar]"
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state",
+          "extra_task": {
+            "prompt": "Give me one -acy word that names a quality or state.",
+            "answers": [
+              "accuracy",
+              "privacy",
+              "adequacy",
+              "privacy"
+            ]
+          }
+        },
+        {
+          "morph": "ord/ordin",
+          "type": "root",
+          "keyword": "ordain",
+          "meaning": "order",
+          "extra_task": {
+            "prompt": "Give me one ord or ordin word, meaning order.",
+            "answers": [
+              "order",
+              "ordinary",
+              "coordinate",
+              "subordinate"
+            ]
+          }
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like"
+        },
+        {
+          "morph": "clud(e)/clus(e)",
+          "type": "root",
+          "keyword": "exclude",
+          "meaning": "shut"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        },
+        {
+          "morph": "capt/capit",
+          "type": "root",
+          "keyword": "capable",
+          "meaning": "hold, take OR leader, head"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where",
+          "extra_task": {
+            "prompt": "Give me one -ery word and match it to relating to or place where.",
+            "answers": [
+              "imagery - relating to images",
+              "winery - place where wine is made",
+              "pottery - place where pots are made"
+            ]
+          }
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill"
+        },
+        {
+          "morph": "flect/flex",
+          "type": "root",
+          "keyword": "deflect",
+          "meaning": "bend"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "accuracy",
+          "explosive",
+          "surgery",
+          "subordinate",
+          "favourite",
+          "candidacy",
+          "captive",
+          "pyrite",
+          "maltreatment",
+          "conclusion",
+          "positive",
+          "tripod",
+          "composite",
+          "novice",
+          "exhaustive"
+        ],
+        "notes": "1. READ: \"Read all five rows with me. Keep the pace brisk but make every ending clear.\"\n2. READ: \"First-name groups: A to F read row 1; G to L row 2; M to R row 3; S to Z row 4.\"\n3. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round. Finish together.\"\n4. ASK: \"Which words end in -ive, meaning relating to or like?\" 5 sec, choral response. EXPECT: explosive, positive, exhaustive.\n5. ASK: \"Which words end in -ite?\" 5 sec, choral response. EXPECT: favourite, pyrite, composite.\n6. ASK: \"Which words use -acy to name a quality or state?\" 5 sec, choral response. EXPECT: accuracy, candidacy.\n7. ASK: \"What is the opposite of positive?\" 3 sec, choral response. EXPECT: negative.\n8. ASK: \"Which word means placed under another in an order?\" 3 sec, choral response. EXPECT: subordinate.\n9. ASK: \"Which word names a stand with three feet?\" 3 sec, choral response. EXPECT: tripod.\n10. ASK: \"Which word closes or finishes an explanation?\" 3 sec, choral response. EXPECT: conclusion."
+      },
+      "sound_bank": [
+        {
+          "morph": "ord/ordin",
+          "type": "root"
+        },
+        {
+          "morph": "flect/flex",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        },
+        {
+          "morph": "-tion / -sion",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "privacy",
+          "sentence": "The curtains gave the family privacy from the busy street.",
+          "prompt": "private is the base and -acy names a state - what is privacy?",
+          "answer": "the state of being private or away from public attention."
+        },
+        {
+          "word": "adequacy",
+          "sentence": "The teacher checked the adequacy of every safety measure.",
+          "prompt": "adequate is the base and -acy names a quality or state - what is adequacy?",
+          "answer": "the state of being adequate or enough for the need."
+        },
+        {
+          "word": "affirmative",
+          "sentence": "The captain gave an affirmative answer and joined the plan.",
+          "prompt": "-ive means relating to or like - what does affirmative signal?",
+          "answer": "it relates to saying yes or agreeing firmly."
+        },
+        {
+          "word": "massive",
+          "sentence": "A massive boulder blocked the narrow walking track.",
+          "prompt": "mass means a large body and -ive means relating to - what does massive mean?",
+          "answer": "having a very large mass or size."
+        },
+        {
+          "word": "dynamite",
+          "sentence": "The old mine stored dynamite in a locked building.",
+          "prompt": "dynam means power - what idea does dynamite carry?",
+          "answer": "a substance packed with explosive power."
+        },
+        {
+          "word": "exquisite",
+          "sentence": "The museum displayed an exquisite carving under glass.",
+          "prompt": "What quality does exquisite describe?",
+          "answer": "a quality of being exceptionally beautiful, fine or carefully made."
+        },
+        {
+          "word": "maladjusted",
+          "sentence": "The maladjusted bicycle brakes rubbed against the wheel.",
+          "prompt": "Which prefix tells you the brakes were adjusted wrongly?",
+          "answer": "mal- means wrong: maladjusted means adjusted badly or incorrectly."
+        },
+        {
+          "word": "winery",
+          "sentence": "The winery stored grape juice in large tanks.",
+          "prompt": "Which printed -ery meaning fits winery?",
+          "answer": "-ery means place where: a winery is a place where wine is made."
+        },
+        {
+          "word": "ordination",
+          "sentence": "The community celebrated the leader's ordination.",
+          "prompt": "Which root tells you someone was placed into an official order?",
+          "answer": "ordin means order: ordination is the act of placing someone into an official order or role."
+        },
+        {
+          "word": "deflection",
+          "sentence": "The ball changed direction after a sharp deflection.",
+          "prompt": "flect means bend - what bent?",
+          "answer": "the path of the ball bent away from its original direction."
+        }
+      ],
+      "new_morphology": {
+        "morph": "-ule",
+        "type": "suffix",
+        "keyword": "nodule",
+        "meaning": "small"
+      },
+      "words_to_read_new": [
+        {
+          "word": "nodule",
+          "meaning": "nod means knot + -ule means small: a small rounded knot or lump"
+        },
+        {
+          "word": "capsule",
+          "meaning": "caps means container or cover + -ule means small: a small case or container"
+        },
+        {
+          "word": "granule",
+          "meaning": "gran means grain + -ule means small: a small grain or particle"
+        },
+        {
+          "word": "molecule",
+          "meaning": "mole names a mass unit + -ule carries the small idea: a tiny unit of matter"
+        },
+        {
+          "word": "module",
+          "meaning": "mod means measure + -ule means small: a small self-contained unit in a larger system"
+        },
+        {
+          "word": "minuscule",
+          "meaning": "minus means less + -ule means small: extremely small"
+        },
+        {
+          "word": "globule",
+          "meaning": "glob means ball + -ule means small: a small round ball or drop"
+        },
+        {
+          "word": "venule",
+          "meaning": "ven means vein + -ule means small: a small vein"
+        }
+      ],
+      "associated_word_exceptions": [
+        {
+          "word": "globule",
+          "reason": "The photographed family has only six transparent age-suitable derivatives; globule transparently shows the small meaning and replaces an opaque card-family word.",
+          "source": "https://www.merriam-webster.com/dictionary/globule"
+        },
+        {
+          "word": "venule",
+          "reason": "The photographed family has only six transparent age-suitable derivatives; venule transparently means a small vein and replaces an opaque card-family word.",
+          "source": "https://www.merriam-webster.com/dictionary/venule"
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears, then connect -ULE to the photographed card meaning: small.\nnodule - nod means knot + -ULE means small: a small rounded knot or lump.\ncapsule - caps means container or cover + -ULE means small: a small case or container.\ngranule - gran means grain + -ULE means small: a small grain or particle.\nmolecule - mole names a mass unit + -ULE carries the small idea: a tiny unit of matter; do not force a false modern split.\nmodule - mod means measure + -ULE means small: a small self-contained unit inside a larger course, machine or system.\nminuscule - minus means less + -ULE means small: extremely small.\nglobule - glob means ball + -ULE means small: a small round ball or drop.\nvenule - ven means vein + -ULE means small: a small vein that joins capillaries to larger veins.\nMemory hook: Hear -ULE, think LITTLE UNIT. Pinch your fingers close together and say, \"Small part inside something bigger.\"\nSOURCES:\nhttps://www.merriam-webster.com/dictionary/globule\nhttps://www.merriam-webster.com/dictionary/venule",
+      "words_to_spell_new": [
+        "nodule",
+        "capsule",
+        "granule",
+        "module"
+      ],
+      "extension": "1. SAY: \"When you finish, write an antonym for minuscule.\"\n2. CHECK: an antonym is a word with the opposite meaning; enormous or gigantic works.\nSTRETCH: Use minuscule and enormous in one sentence that makes the contrast clear.",
+      "new_morph_activity": {
+        "title": "Build small things with -ule",
+        "rule": "Read each meaning sum and write the one -ule word it builds.",
+        "example": "One done for you: small grain = granule",
+        "items": [
+          "1. small round ball or drop = ?",
+          "2. small vein = ?"
+        ],
+        "item_size": 18,
+        "routine": "Whiteboards - 3 minutes - boards up",
+        "footer": "Use the base clue, then add -ule",
+        "notes": "ANSWER: 1. globule. 2. venule.\n1. SAY: \"Use each base clue and the meaning small to build one real -ule word.\"\n2. TIME: 3 minutes. Work independently on whiteboards. Write it... chin it... show me.\n3. CIRCULATE: if a student is stuck, SAY: \"Look at the worked example - grain became granule. Which part of number 1 means ball?\" Then start glob + -ule together.\n4. SCAN all boards. 80%+ -> reveal. Less -> build globule together, erase it, then re-ask number 1.\nTRAP: writing globe without the suffix. Fix: point to -ule on the card, add it, then reread the small meaning.\nSTRETCH: Build minuscule from the clue extremely small and explain the whole meaning.\nHELP: Give globule and venule as a word bank; students match each word to its clue.\n---\nPurpose: concrete word building from two single-answer meaning sums. [You Do | Word building | Morphology]",
+        "check_title": "Tick it or fix it - Build with -ule",
+        "check_rule": "Tick each complete -ule word. Fix the base or suffix if it differs.",
+        "check_items": [
+          "1. glob + -ule = globule",
+          "a small round ball or drop",
+          "2. ven + -ule = venule",
+          "a small vein"
+        ],
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "The base names it; -ule makes it small",
+        "check_notes": "ANSWER: 1. globule. 2. venule.\n1. REVEAL after every board has been scanned. MODEL: SAY: \"Glob means ball and -ule means small, so globule means a small ball or drop.\"\n2. SAY: \"Tick each complete word. Fix any base or suffix that differs.\"\n3. ASK: \"How does venule show the card meaning?\" 5 sec, choral response. EXPECT: ven means vein and -ule makes it small.\n4. SCAN corrections. 80%+ -> continue. Less -> say each sum together and rebuild both words.\nTRAP: ticking a word without knowing the sum. Fix: say the base meaning, then the suffix meaning.\nHELP: read the green meaning line, then match it to the word above.\n---\nPurpose: model the morpheme sum before students tick and fix. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "circuit",
+            "unfair": "u",
+            "notes": "Why learned: the u in -cuit is silent, so the final part sounds like kit.\nSay it: SUR-kit, two beats; listen for kit while remembering the silent u.\nLink: a science word for a complete path through which electric current can flow."
+          },
+          {
+            "word": "buoyancy",
+            "unfair": "uoy",
+            "notes": "Why learned: uoy says /oy/, and English rarely puts those letters in that order.\nSay it: BOY-uhn-see, three beats; hear buoy at the front.\nLink: a science word for the upward push that helps an object float."
+          }
+        ],
+        "new": {
+          "word": "tsunami",
+          "unfair": "t",
+          "notes": "Why learned: the opening t is usually silent in Australian English, so the word begins with the /s/ sound even though it starts ts.\nSay it: soo-NAH-mee, three beats; remember the silent t before the s.\nLink: a geography word for a series of powerful sea waves caused by sudden movement under the ocean."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The tiny capsule held one granule during the careful science test.",
+          "targets": [
+            "capsule",
+            "granule"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "two -ule words and an adverbial telling when"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Before the tsunami drill, the scientist said, \"Seal the capsule carefully; protect each molecule.\"",
+          "targets": [
+            "tsunami",
+            "capsule",
+            "molecule"
+          ],
+          "cups": {
+            "capitals": [
+              "Before",
+              "Seal"
+            ],
+            "punctuation": [
+              "comma after the fronted adverbial",
+              "comma after the reporting clause",
+              "opening quotation mark",
+              "semicolon",
+              "full stop inside the quotation",
+              "closing quotation mark"
+            ]
+          },
+          "focus": "fronted adverbial, quoted command and semicolon; tsunami and -ule targets"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Add adverbials that tell how or why, building on Monday's when and where details.\nPREP: Have whiteboards ready before the I do.",
+        "i_do": {
+          "title": "Add how or why",
+          "rule": "An adverbial tells when, where, how or why. Add the detail that answers the question your reader still has.",
+          "example": "The capsule opened. -> The capsule opened with a soft click.",
+          "items": [
+            "With a soft click tells HOW it opened.",
+            "The detail belongs at the end, so no comma is needed."
+          ],
+          "routine": "Eyes on me - ask the missing question",
+          "footer": "What does your reader still need to know?",
+          "notes": "ANSWER: with a soft click - it tells how the capsule opened.\n1. SAY: \"An adverbial can tell how or why. I ask what detail my reader still needs.\"\n2. MODEL: Add with a soft click. SAY: \"This answers how, so the action is easier to picture.\"\n3. ASK: \"Which question does the new detail answer?\" 5 sec, choral response. EXPECT: how.\n4. ASK: \"Does this end adverbial need a comma?\" 5 sec, choral response. EXPECT: no.\nTRAP: adding an interesting detail that does not answer how or why. Fix: ask the question first, then choose the detail.\n---\nPurpose: restate the rule and extend the choice of adverbial job. [I Do | Explicit modelling | Grammar]"
+        },
+        "we_do": {
+          "title": "Add the reason",
+          "rule": "A why adverbial explains the reason for the action.",
+          "example": "Mia paused. + because the sample moved",
+          "items": [
+            "Write the complete sentence with the reason at the end.",
+            "Check that the reason answers WHY."
+          ],
+          "routine": "Whiteboards ready - boards up together",
+          "footer": "Stem: The reason is ...",
+          "notes": "ANSWER: Mia paused because the sample moved.\n1. SAY: \"Add the given reason at the end and write the complete sentence. Write it... chin it... show me.\"\n2. TIME: 25 seconds, then boards up together.\n3. SCAN every board. 80%+ -> ask for the job. Less -> ask why Mia paused, then re-collect all boards.\n4. ASK: \"What question does because the sample moved answer?\" 5 sec, choral response. EXPECT: why Mia paused.\nTRAP: writing the reason as a sentence fragment. Fix: attach it to the main sentence, then reread the whole idea.\n---\nPurpose: guided addition of a reason with complete-response evidence. [We Do | Guided practice | Grammar]"
+        },
+        "you_do": {
+          "title": "Add how and why",
+          "rule": "Rewrite each sentence with the given adverbial. Keep the whole sentence complete.",
+          "example": "One done for you: The door closed. + with a bang -> The door closed with a bang.",
+          "items": [
+            "A) The capsule opened. + with a soft click",
+            "B) Mia paused. + because the sample moved"
+          ],
+          "routine": "OG workbooks - 90 seconds",
+          "footer": "A tells how. B tells why.",
+          "notes": "ANSWER: A - The capsule opened with a soft click. B - Mia paused because the sample moved.\n1. SAY: \"Use the worked example. Add the how detail to A and the reason to B.\"\n2. TIME: 90 seconds. Work independently in your OG workbook.\n3. CIRCULATE: if a student is stuck, SAY: \"Point to what was added in the example. Which words answer how in A?\" Then attach with a soft click together.\n4. SCAN four books. 80%+ -> reveal. Less -> complete A together, cover it, then re-ask A.\nTRAP: copying only the adverbial. Fix: begin with the printed main sentence, then attach the detail.\nSTRETCH: Move because the sample moved to the front and punctuate the new sentence.\nHELP: Give each complete sentence cut into two chunks; students copy the chunks in order.\n---\nPurpose: fixed-answer practice adding how and why details. [You Do | Independent practice | Grammar]",
+          "check_title": "Tick it or fix it - Add how and why",
+          "check_rule": "Tick each complete sentence. Fix any missing main sentence or adverbial.",
+          "check_items": [
+            "A) The capsule opened with a soft click.",
+            "with a soft click tells how",
+            "B) Mia paused because the sample moved.",
+            "because the sample moved tells why"
+          ],
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Name the question each detail answers",
+          "check_notes": "ANSWER: A - The capsule opened with a soft click. B - Mia paused because the sample moved.\n1. REVEAL after books are scanned. MODEL: SAY: \"With a soft click answers how the capsule opened, so I attach it to the action.\"\n2. SAY: \"Tick each complete sentence. Fix any missing main sentence or detail.\"\n3. ASK: \"Which words answer why in B?\" 5 sec, choral response. EXPECT: because the sample moved.\n4. SCAN corrections. 80%+ -> continue. Less -> underline the main sentence and adverbial in different passes.\nTRAP: ticking a fragment. Fix: read from the capital to the full stop and add the missing clause.\nHELP: read the green job line, then point to the matching words above.\n---\nPurpose: model the how/why reasoning before feedback. [You Do | Feedback | Grammar]"
+        }
+      }
+    },
+    {
+      "day": "Wednesday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small",
+          "extra_task": {
+            "prompt": "Give me one -ule word and show how it carries the meaning small.",
+            "answers": [
+              "granule - a small grain",
+              "globule - a small ball",
+              "venule - a small vein"
+            ]
+          }
+        },
+        {
+          "morph": "clud(e)/clus(e)",
+          "type": "root",
+          "keyword": "exclude",
+          "meaning": "shut"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state"
+        },
+        {
+          "morph": "ord/ordin",
+          "type": "root",
+          "keyword": "ordain",
+          "meaning": "order"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill",
+          "extra_task": {
+            "prompt": "Give me one mal- word and match bad, wrong or ill to it.",
+            "answers": [
+              "malfunction - wrong",
+              "malnutrition - bad or ill",
+              "malaise - ill"
+            ]
+          }
+        },
+        {
+          "morph": "capt/capit",
+          "type": "root",
+          "keyword": "capable",
+          "meaning": "hold, take OR leader, head",
+          "extra_task": {
+            "prompt": "Give me one capt or capit word, meaning hold, take, leader or head.",
+            "answers": [
+              "capture",
+              "captive",
+              "captain",
+              "capital"
+            ]
+          }
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "capsule",
+          "aggressive",
+          "malaise",
+          "extraordinary",
+          "appetite",
+          "literacy",
+          "capacity",
+          "archery",
+          "successive",
+          "seclusion",
+          "native",
+          "pedometer",
+          "exquisite",
+          "service",
+          "dynamite"
+        ],
+        "notes": "1. READ: \"Read all five rows with me. Keep the middle of long words smooth and the endings crisp.\"\n2. READ: \"Choose your stronger preference: reading or writing reads row 1; maths or science row 2; sport or outdoors row 3; art or music row 4.\"\n3. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round. Finish with one steady voice.\"\n4. ASK: \"Which words end in -ite?\" 5 sec, choral response. EXPECT: appetite, exquisite, dynamite.\n5. ASK: \"Which words end in -ive, meaning relating to or like?\" 5 sec, choral response. EXPECT: aggressive, successive, native.\n6. ASK: \"Which word uses -ule, meaning small?\" 3 sec, choral response. EXPECT: capsule.\n7. ASK: \"Which word uses mal-, meaning ill?\" 3 sec, choral response. EXPECT: malaise.\n8. ASK: \"What is the opposite of seclusion?\" 3 sec, choral response. EXPECT: inclusion.\n9. ASK: \"Which word measures how far someone travels on foot?\" 3 sec, choral response. EXPECT: pedometer.\n10. ASK: \"Which word means beyond ordinary?\" 3 sec, choral response. EXPECT: extraordinary."
+      },
+      "sound_bank": [
+        {
+          "morph": "ord/ordin",
+          "type": "root"
+        },
+        {
+          "morph": "capt/capit",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix"
+        },
+        {
+          "morph": "-tion / -sion",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "accuracy",
+          "sentence": "The class checked the accuracy of every measurement.",
+          "prompt": "accurate is the base and -acy names a quality - what is accuracy?",
+          "answer": "the quality of being correct and exact."
+        },
+        {
+          "word": "granule",
+          "sentence": "One granule of salt remained on the dark paper.",
+          "prompt": "gran means grain and -ule means small - what is a granule?",
+          "answer": "a small grain or particle."
+        },
+        {
+          "word": "restrictive",
+          "sentence": "The restrictive gate allowed only one person through.",
+          "prompt": "strict means draw tight and -ive means relating to - what does restrictive mean?",
+          "answer": "relating to holding choices or movement back tightly."
+        },
+        {
+          "word": "sensitive",
+          "sentence": "The sensitive sensor detected a tiny change in heat.",
+          "prompt": "sens means feel and -ive means relating to - what does sensitive mean?",
+          "answer": "able to feel or detect small changes quickly."
+        },
+        {
+          "word": "graphite",
+          "sentence": "The graphite inside the pencil left a grey line.",
+          "prompt": "Which printed -ite meaning fits graphite?",
+          "answer": "-ite means mineral: graphite is the mineral used inside pencils."
+        },
+        {
+          "word": "infinite",
+          "sentence": "The pattern seemed infinite because it never ended.",
+          "prompt": "in- means not and fin means end - what does infinite mean?",
+          "answer": "not ending; without an end."
+        },
+        {
+          "word": "malformation",
+          "sentence": "The scan showed a malformation in the model's structure.",
+          "prompt": "Which prefix tells you the formation developed wrongly?",
+          "answer": "mal- means wrong: a malformation is a form or structure that developed incorrectly."
+        },
+        {
+          "word": "malediction",
+          "sentence": "The villain whispered a malediction before leaving the stage.",
+          "prompt": "mal- means ill and diction means speaking - what is a malediction?",
+          "answer": "ill speaking: harmful words or a curse."
+        },
+        {
+          "word": "preordained",
+          "sentence": "The result felt preordained before the contest began.",
+          "prompt": "pre- means before and ord means order - what does preordained suggest?",
+          "answer": "ordered or decided beforehand."
+        },
+        {
+          "word": "capture",
+          "sentence": "The camera can capture a clear image of the moving wheel.",
+          "prompt": "capt means hold or take - what does the camera capture?",
+          "answer": "it takes and holds the image."
+        }
+      ],
+      "new_morphology": {
+        "morph": "mega-",
+        "type": "prefix",
+        "keyword": "megahertz",
+        "meaning": "million"
+      },
+      "words_to_read_new": [
+        {
+          "word": "megahertz",
+          "meaning": "mega- means million + hertz means cycles per second: one million cycles per second"
+        },
+        {
+          "word": "megaton",
+          "meaning": "mega- means million + ton means a unit of mass: one million tons"
+        },
+        {
+          "word": "megaunit",
+          "meaning": "mega- means million + unit means one amount: one million units"
+        },
+        {
+          "word": "megawatt",
+          "meaning": "mega- means million + watt means a unit of power: one million watts"
+        },
+        {
+          "word": "megabyte",
+          "meaning": "mega- means million + byte means a digital storage unit: one million bytes in decimal measurement"
+        },
+        {
+          "word": "megajoule",
+          "meaning": "mega- means million + joule means a unit of energy: one million joules"
+        },
+        {
+          "word": "megapascal",
+          "meaning": "mega- means million + pascal means a unit of pressure: one million pascals"
+        },
+        {
+          "word": "megavolt",
+          "meaning": "mega- means million + volt means a unit of electric potential: one million volts"
+        }
+      ],
+      "associated_word_exceptions": [
+        {
+          "word": "megabyte",
+          "reason": "The photographed mega- family has only four entries; megabyte is a transparent, age-relevant million-unit derivative.",
+          "source": "https://www.merriam-webster.com/dictionary/megabyte"
+        },
+        {
+          "word": "megajoule",
+          "reason": "The photographed mega- family has only four entries; megajoule transparently applies the SI prefix mega to joule.",
+          "source": "https://www.bipm.org/en/publications/si-brochure"
+        },
+        {
+          "word": "megapascal",
+          "reason": "The photographed mega- family has only four entries; megapascal transparently applies the SI prefix mega to pascal.",
+          "source": "https://www.bipm.org/en/publications/si-brochure"
+        },
+        {
+          "word": "megavolt",
+          "reason": "The photographed mega- family has only four entries; megavolt transparently applies the SI prefix mega to volt.",
+          "source": "https://www.bipm.org/en/publications/si-brochure"
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears, then connect MEGA- to the photographed card meaning: million.\nmegahertz - MEGA- means million + hertz means cycles per second: one million cycles per second.\nmegaton - MEGA- means million + ton means a unit of mass: one million tons.\nmegaunit - MEGA- means million + unit means one amount: one million units.\nmegawatt - MEGA- means million + watt means a unit of power: one million watts.\nmegabyte - MEGA- means million + byte means a digital storage unit: one million bytes in decimal measurement.\nmegajoule - MEGA- means million + joule means a unit of energy: one million joules.\nmegapascal - MEGA- means million + pascal means a unit of pressure: one million pascals.\nmegavolt - MEGA- means million + volt means a unit of electric potential: one million volts.\nMemory hook: MEGA on a measurement means ONE MILLION. Say the base unit, then add six zeros.\nSOURCES:\nhttps://www.merriam-webster.com/dictionary/megabyte\nhttps://www.bipm.org/en/publications/si-brochure",
+      "words_to_spell_new": [
+        "megahertz",
+        "megawatt",
+        "megabyte",
+        "megajoule"
+      ],
+      "extension": "1. SAY: \"When you finish, turn one mega- fact into a question and add a question mark.\"\n2. CHECK: a question asks for information and ends with a question mark.\nSTRETCH: Write a question that compares two mega- units and answer it in a complete sentence.",
+      "new_morph_activity": {
+        "title": "Make mega- show one million",
+        "rule": "Write one sentence for each word. Your sentence must show that mega- means exactly one million.",
+        "example": "One done for you: The transmitter runs at one megahertz, or one million hertz.",
+        "items": [
+          "1. Write a sentence with megawatt that shows one million watts.",
+          "2. Write a sentence with megabyte that shows one million bytes."
+        ],
+        "item_size": 18,
+        "routine": "OG workbooks - 4 minutes",
+        "footer": "The number must prove the prefix meaning",
+        "notes": "1. SAY: \"Write two complete sentences. Each one must use the target word and the exact words one million.\"\n2. TIME: 4 minutes. Work independently in your OG workbook.\n3. CIRCULATE: if a student is stuck, SAY: \"Point to the worked example. Which two equal amounts does it name?\" Then start number 1 together: One megawatt equals...\n4. SCAN four books. Accurate million link -> share two. Missing link -> add the frame, then re-check a fresh sentence.\nTRAP: using mega to mean only very big. Fix: replace big with one million and name the base unit.\nSTRETCH: Add a third sentence for megajoule and explain what a joule measures.\nHELP: Give the frames \"One megawatt equals one million ___.\" and \"One megabyte equals one million ___.\"\n---\nPurpose: show the exact photographed meaning inside complete sentences. [You Do | Meaning in a sentence | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "tsunami",
+            "unfair": "t",
+            "notes": "Why learned: the opening t is usually silent in Australian English, so the word begins with /s/.\nSay it: soo-NAH-mee, three beats; remember the silent t before the s.\nLink: a geography word for a series of powerful sea waves caused by sudden movement under the ocean."
+          },
+          {
+            "word": "circuit",
+            "unfair": "u",
+            "notes": "Why learned: the u in -cuit is silent, so the final part sounds like kit.\nSay it: SUR-kit, two beats; listen for kit while remembering the silent u.\nLink: a science word for a complete path through which electric current can flow."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The megawatt circuit ran smoothly during the final safety test.",
+          "targets": [
+            "megawatt",
+            "circuit"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "mega- meaning million, circuit, and adverbials telling how and when"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "After the warning, the team measured one megajoule carefully; the circuit remained stable throughout.",
+          "targets": [
+            "megajoule",
+            "circuit"
+          ],
+          "cups": {
+            "capitals": [
+              "After"
+            ],
+            "punctuation": [
+              "comma after the fronted adverbial",
+              "semicolon",
+              "full stop"
+            ]
+          },
+          "focus": "two adverbials, a semicolon joining related ideas, and mega-/circuit targets"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Add two precise adverbials to one sentence without losing the main idea.\nPREP: Have whiteboards ready before the I do.",
+        "i_do": {
+          "title": "Add two details",
+          "rule": "A sentence can carry more than one adverbial. Each detail must answer when, where, how or why.",
+          "example": "The team tested the circuit. -> Before sunrise, the team tested the circuit carefully.",
+          "items": [
+            "Before sunrise tells WHEN; carefully tells HOW.",
+            "Only the fronted detail takes a comma."
+          ],
+          "routine": "Count the two jobs with me",
+          "footer": "Two details, one clear main action",
+          "notes": "ANSWER: Before sunrise tells when; carefully tells how.\n1. SAY: \"An adverbial tells when, where, how or why. A sentence can carry two if both add useful detail.\"\n2. MODEL: Add before sunrise at the front and carefully at the end. Name each job aloud.\n3. ASK: \"Which detail takes the comma, and why?\" 5 sec, choral response. EXPECT: before sunrise because it is at the front.\n4. CHECK: Ask, \"What is still the main action?\" EXPECT: the team tested the circuit.\nTRAP: losing the main sentence while adding details. Fix: say the main action first, then attach each adverbial.\n---\nPurpose: restate the rule and model two controlled additions. [I Do | Explicit modelling | Grammar]"
+        },
+        "we_do": {
+          "title": "Place both details",
+          "rule": "Place the when or where detail first and the how detail near the action it describes.",
+          "example": "The generator started. + after the repair + smoothly",
+          "items": [
+            "Write one complete sentence using both details.",
+            "Add the comma required by the fronted detail."
+          ],
+          "routine": "Whiteboards ready - boards up together",
+          "footer": "Stem: After the repair, ... smoothly.",
+          "notes": "ANSWER: After the repair, the generator started smoothly.\n1. SAY: \"Use both details once. Put after the repair at the front and smoothly near the action.\"\n2. TIME: 30 seconds, then boards up together.\n3. SCAN every board for both details and one comma. 80%+ -> ask for both jobs. Less -> use the footer stem, then re-collect.\n4. ASK: \"What does each detail tell us?\" 5 sec, choral response. EXPECT: after the repair tells when; smoothly tells how.\nTRAP: adding only one detail. Fix: tick when and how separately, then add the missing one.\n---\nPurpose: guided construction with two required details. [We Do | Guided practice | Grammar]"
+        },
+        "you_do": {
+          "title": "Two adverbials",
+          "rule": "Rewrite each sentence with both given details. Put the first detail at the front and punctuate it.",
+          "example": "One done for you: The team worked. + before lunch + quietly -> Before lunch, the team worked quietly.",
+          "items": [
+            "A) The generator started. + after the repair + smoothly",
+            "B) We recorded the result. + in the science lab + with great accuracy"
+          ],
+          "routine": "Whiteboards - 2 minutes - boards up",
+          "footer": "Check both jobs before you show",
+          "notes": "ANSWER: A - After the repair, the generator started smoothly. B - In the science lab, we recorded the result with great accuracy.\n1. SAY: \"Use the example. Add both printed details to each main sentence, with the first one at the front.\"\n2. TIME: 2 minutes. Work independently on whiteboards.\n3. CIRCULATE: if a student is stuck, SAY: \"Point to the two added details in the example. Which detail starts A?\" Then begin A together: After the repair,...\n4. SCAN all boards for both details and the front comma. 80%+ -> reveal. Less -> rebuild A, erase it, then re-ask A.\nTRAP: placing a comma before the end detail. Fix: name which detail is fronted, keep its comma, and remove the other.\nSTRETCH: Move B's front adverbial to the end and repunctuate the sentence.\nHELP: Give the two sentence frames with the first adverbial and comma already written.\n---\nPurpose: fixed-answer construction with two distinct adverbial jobs. [You Do | Independent practice | Grammar]",
+          "check_title": "Tick it or fix it - Two adverbials",
+          "check_rule": "Tick both details and the comma. Fix anything missing or misplaced.",
+          "check_items": [
+            "A) After the repair, the generator started smoothly.",
+            "when at the front + how at the end",
+            "B) In the science lab, we recorded the result with great accuracy.",
+            "where at the front + how at the end"
+          ],
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Two jobs; only the fronted detail takes a comma",
+          "check_notes": "ANSWER: A - After the repair, the generator started smoothly. B - In the science lab, we recorded the result with great accuracy.\n1. REVEAL after all boards are scanned. MODEL: SAY: \"After the repair tells when and sits at the front, so it takes a comma; smoothly tells how at the end.\"\n2. SAY: \"Tick both details and the comma. Fix anything missing or misplaced.\"\n3. ASK: \"Which two jobs appear in B?\" 5 sec, choral response. EXPECT: where and how.\n4. SCAN corrections. 80%+ -> continue. Less -> colour-code the two details verbally and re-check.\nTRAP: ticking a sentence with only one detail. Fix: match each printed addition to words in the answer.\nHELP: read the green job line, then point to both matching details.\n---\nPurpose: model two-detail reasoning before feedback. [You Do | Feedback | Grammar]"
+        }
+      }
+    },
+    {
+      "day": "Friday",
+      "type": "week_review",
+      "morphology_review": [
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state",
+          "extra_task": {
+            "prompt": "Give me one -acy word and name its quality or state.",
+            "answers": [
+              "accuracy - quality of being accurate",
+              "privacy - state of being private",
+              "adequacy - state of being adequate or enough"
+            ]
+          }
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million",
+          "extra_task": {
+            "prompt": "Complete the fact: one megawatt equals how many watts?",
+            "answers": [
+              "one million watts"
+            ]
+          }
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where"
+        },
+        {
+          "morph": "clud(e)/clus(e)",
+          "type": "root",
+          "keyword": "exclude",
+          "meaning": "shut"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        },
+        {
+          "morph": "ord/ordin",
+          "type": "root",
+          "keyword": "ordain",
+          "meaning": "order"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small",
+          "extra_task": {
+            "prompt": "Give me one -ule word and show its small meaning.",
+            "answers": [
+              "granule - a small grain",
+              "globule - a small ball",
+              "venule - a small vein"
+            ]
+          }
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "megabyte",
+          "supremacy",
+          "cooperative",
+          "order",
+          "globule",
+          "negative",
+          "malnutrition",
+          "exclude",
+          "granite",
+          "imagery",
+          "reflection",
+          "favourite",
+          "quadruped",
+          "definite",
+          "explosive"
+        ],
+        "notes": "1. READ: \"Read all five rows with me. Make every morpheme clear without slowing the whole line.\"\n2. READ: \"Choose your birthday half: January to June reads rows 1 and 3; July to December reads rows 2 and 4.\"\n3. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round. Finish with our strongest pace.\"\n4. ASK: \"Which word uses mega-, meaning million?\" 3 sec, choral response. EXPECT: megabyte.\n5. ASK: \"Which word uses -ule, meaning small?\" 3 sec, choral response. EXPECT: globule.\n6. ASK: \"Which word uses -acy to name a state of being highest in rank or power?\" 5 sec, choral response. EXPECT: supremacy.\n7. ASK: \"Which words end in -ive, meaning relating to or like?\" 5 sec, choral response. EXPECT: cooperative, negative, explosive.\n8. ASK: \"Which word names an animal with four feet?\" 3 sec, choral response. EXPECT: quadruped.\n9. ASK: \"Which word uses mal-, meaning bad or ill?\" 3 sec, choral response. EXPECT: malnutrition.\n10. ASK: \"Which word means certain, fixed or clearly limited?\" 3 sec, choral response. EXPECT: definite."
+      },
+      "sound_bank": [
+        {
+          "morph": "ord/ordin",
+          "type": "root"
+        },
+        {
+          "morph": "capt/capit",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "privacy",
+          "sentence": "The screens gave the testing team privacy during their work.",
+          "prompt": "private is the base and -acy names a state - what is privacy?",
+          "answer": "the state of being private or away from public attention."
+        },
+        {
+          "word": "capsule",
+          "sentence": "The sealed capsule protected the delicate sample.",
+          "prompt": "-ule means small - what is a capsule?",
+          "answer": "a small case or container that holds something."
+        },
+        {
+          "word": "assertive",
+          "sentence": "She used an assertive voice without becoming unkind.",
+          "prompt": "-ive means relating to or like - what does assertive describe?",
+          "answer": "relating to stating a view firmly and clearly."
+        },
+        {
+          "word": "exhaustive",
+          "sentence": "The class completed an exhaustive search of every shelf.",
+          "prompt": "haust means draw out and -ive means relating to - what does exhaustive mean?",
+          "answer": "so thorough that every last part is drawn out or checked."
+        },
+        {
+          "word": "pyrite",
+          "sentence": "The pyrite sparkled beside the dull grey stone.",
+          "prompt": "Which printed -ite meaning fits pyrite?",
+          "answer": "-ite means mineral: pyrite is a mineral."
+        },
+        {
+          "word": "composite",
+          "sentence": "The bridge used a composite made from several materials.",
+          "prompt": "com- means together and pos means put - what is a composite?",
+          "answer": "something put together from different parts or materials."
+        },
+        {
+          "word": "maltreatment",
+          "sentence": "The shelter reported the maltreatment of the injured animal.",
+          "prompt": "Which prefix tells you the treatment was bad?",
+          "answer": "mal- means bad: maltreatment is cruel or harmful treatment."
+        },
+        {
+          "word": "bravery",
+          "sentence": "The student's bravery helped others stay calm.",
+          "prompt": "Which quality does bravery name?",
+          "answer": "the quality of being brave or showing courage."
+        },
+        {
+          "word": "ordinance",
+          "sentence": "The council passed an ordinance about road safety.",
+          "prompt": "Which root tells you this official rule is about order?",
+          "answer": "ord means order: an ordinance is an official rule used to keep order."
+        },
+        {
+          "word": "captivate",
+          "sentence": "The storyteller can captivate the whole class in seconds.",
+          "prompt": "capt means hold or take - what does captivate hold?",
+          "answer": "it takes and holds a person's attention."
+        }
+      ],
+      "learned_words": {
+        "review": [
+          {
+            "word": "tsunami",
+            "unfair": "t",
+            "notes": "Why learned: the opening t is usually silent in Australian English, so the word begins with /s/.\nSay it: soo-NAH-mee, three beats; remember the silent t before the s.\nLink: a geography word for a series of powerful sea waves caused by sudden movement under the ocean."
+          },
+          {
+            "word": "circuit",
+            "unfair": "u",
+            "notes": "Why learned: the u in -cuit is silent, so the final part sounds like kit.\nSay it: SUR-kit, two beats; listen for kit while remembering the silent u.\nLink: a science word for a complete path through which electric current can flow."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The circuit recorded each megabyte with excellent accuracy during testing.",
+          "targets": [
+            "circuit",
+            "megabyte",
+            "accuracy"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "both learned and morphology targets, plus adverbials telling how and when"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "During the tsunami drill, the team checked every capsule carefully; the circuit recorded one megabyte.",
+          "targets": [
+            "tsunami",
+            "capsule",
+            "circuit",
+            "megabyte"
+          ],
+          "cups": {
+            "capitals": [
+              "During"
+            ],
+            "punctuation": [
+              "comma after the fronted adverbial",
+              "semicolon",
+              "full stop"
+            ]
+          },
+          "focus": "week review: fronted and end adverbials, semicolon, both learned words and current morphemes"
+        }
+      ],
+      "grammar": {
+        "header_notes": "Week review finisher. Add and position adverbials that tell when, where, how or why; collect exit-ticket evidence for next week.",
+        "i_do": {
+          "title": "Build the whole sentence",
+          "rule": "Add adverbials to tell when, where, how or why. A fronted adverbial takes a comma; an end adverbial usually does not.",
+          "example": "The boat moved. -> During the drill, the boat moved carefully.",
+          "items": [
+            "During the drill tells WHEN; carefully tells HOW.",
+            "The main action stays clear: the boat moved."
+          ],
+          "routine": "One minute - name both jobs",
+          "footer": "Then catch the teacher's punctuation",
+          "notes": "ANSWER: during the drill tells when; carefully tells how.\n1. SAY: \"An adverbial tells when, where, how or why. I can add two details while keeping the main action clear.\"\n2. MODEL: Add during the drill at the front, place the comma, then add carefully at the end.\n3. ASK: \"Which detail needs the comma?\" 5 sec, choral response. EXPECT: during the drill because it is at the front.\n4. CHECK: Ask, \"What is the main action?\" EXPECT: the boat moved.\nTRAP: treating the details as separate sentences. Fix: attach both to the complete main sentence.\n---\nPurpose: compressed restatement so absentees can access the exit ticket. [I Do | Review | Grammar]"
+        },
+        "we_do": {
+          "title": "Beat the teacher",
+          "rule": "A fronted adverbial takes a comma. An adverbial at the end usually does not.",
+          "example": "I wrote: During the drill the boat moved, carefully. Thumbs down - both comma decisions are wrong!",
+          "items": [
+            "Fix the two comma decisions on your board.",
+            "Then name the when detail and the how detail."
+          ],
+          "routine": "Thumbs verdict, then whiteboards",
+          "footer": "Stem: The first comma belongs because ...",
+          "notes": "ANSWER: During the drill, the boat moved carefully.\n1. SAY: \"Show thumbs down if my commas are wrong, then write the corrected sentence.\"\n2. TIME: 25 seconds, then boards up together.\n3. SCAN every board. 80%+ -> ask for both reasons. Less -> mark the front and end positions aloud, then re-collect.\n4. ASK: \"Why does the first comma stay and the second go?\" 5 sec, choral response. EXPECT: the when detail is fronted; the how detail is at the end.\nTRAP: fixing only one comma. Fix: check the front position and end position separately, then show again.\n---\nPurpose: playful whole-class punctuation check with a complete re-response. [We Do | CFU game | Grammar]"
+        },
+        "you_do": {
+          "title": "Exit ticket - add the details",
+          "rule": "Rewrite each sentence with both printed adverbials. Put the first at the front and the second at the end.",
+          "example": "One done for you: The boat moved. + after lunch + slowly -> After lunch, the boat moved slowly.",
+          "items": [
+            "A) The team checked the capsule. + during the drill + carefully",
+            "B) The circuit flashed. + after the switch closed + brightly"
+          ],
+          "routine": "Whiteboards - 2 minutes - boards up",
+          "footer": "Exit check: both details and one comma",
+          "notes": "ANSWER: A - During the drill, the team checked the capsule carefully. B - After the switch closed, the circuit flashed brightly.\n1. SAY: \"Use the worked example. Put the first detail at the front, the second at the end, and write each complete sentence.\"\n2. TIME: 2 minutes. Work independently on whiteboards.\n3. CIRCULATE: if a student is stuck, SAY: \"Point to the front detail and comma in the example. Which words must begin A?\" Then start A together: During the drill,...\n4. SCAN all boards and note missing details or commas for next week's warm-up group.\nTRAP: adding only one adverbial. Fix: tick each printed addition separately, then add the missing detail.\nSTRETCH: Move the front adverbial in B to the end and repunctuate the sentence.\nHELP: Provide each opening adverbial and comma; students complete the main sentence and end detail.\n---\nPurpose: fixed-answer exit ticket showing who can add and position two adverbials. [You Do | Exit ticket | Grammar]",
+          "check_title": "Tick it or fix it - Add the details",
+          "check_rule": "Tick both adverbials and the comma. Fix any missing or misplaced part.",
+          "check_items": [
+            "A) During the drill, the team checked the capsule carefully.",
+            "when at the front + how at the end",
+            "B) After the switch closed, the circuit flashed brightly.",
+            "when at the front + how at the end"
+          ],
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Two details; one front comma",
+          "check_notes": "ANSWER: A - During the drill, the team checked the capsule carefully. B - After the switch closed, the circuit flashed brightly.\n1. REVEAL after every board is scanned. MODEL: SAY: \"During the drill tells when and sits at the front, so it takes a comma; carefully tells how at the end.\"\n2. SAY: \"Tick both adverbials and the comma. Fix any missing or misplaced part.\"\n3. ASK: \"How is B built in the same way?\" 5 sec, turn and tell. EXPECT: when detail at the front, comma, main action, how detail at the end.\n4. SCAN corrections, then collect boards as exit tickets.\nTRAP: ticking correct words with a missing comma. Fix: point to the front detail, then add its boundary comma.\nHELP: read the green job line and match each job to words in the sentence.\n---\nPurpose: model the construction reasoning before students tick and fix. [You Do | Feedback | Grammar]"
+        }
+      }
+    }
+  ]
+}

@@ -556,6 +556,14 @@
       "meaning": "close, shut",
       "source": "OG scope and sequence (lower level roots continue) + OG/Morphology USB files/Lower Level Latin Scrolls.pdf (clud/clus scroll); family include, exclude, conclude, seclude, recluse, inclusion, exclusive; keyword teacher-confirmed against Term 2 decks 2026-07-12",
       "verified": true
+    },
+    {
+      "morph": "-acy",
+      "type": "suffix",
+      "keyword": "accuracy",
+      "meaning": "quality, state",
+      "source": "Teacher-confirmed Week 3 focus and meaning, 2026-07-20; accuracy derivative verified against Merriam-Webster",
+      "verified": true
     }
   ],
   "scope_sequence": {

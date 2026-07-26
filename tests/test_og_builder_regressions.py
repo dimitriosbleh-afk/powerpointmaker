@@ -5,11 +5,17 @@ Run from the repository root:
 """
 
 import importlib.util
+import json
 import subprocess
 import sys
 import tempfile
 import unittest
+import zipfile
+from io import BytesIO
 from pathlib import Path
+
+from lxml import etree
+from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -58,6 +64,65 @@ class OgBuilderRegressionTests(unittest.TestCase):
             sample = self.build_spec(SAMPLE_SPEC, temp_root / "sample")
             self.assertEqual(len(current), 4)
             self.assertEqual(len(sample), 4)
+            self.assert_deck_structure(CURRENT_SPEC, current)
+            self.assert_deck_structure(SAMPLE_SPEC, sample)
+
+    def assert_deck_structure(self, spec_path, decks):
+        week = json.loads(spec_path.read_text(encoding="utf-8"))
+        self.assertEqual(len(week["sessions"]), len(decks))
+        for session, deck in zip(week["sessions"], decks):
+            with zipfile.ZipFile(deck) as archive:
+                slide_names = sorted(
+                    (name for name in archive.namelist()
+                     if name.startswith("ppt/slides/slide")
+                     and name.endswith(".xml")),
+                    key=lambda name: int(Path(name).stem.removeprefix("slide")),
+                )
+                roots = [etree.fromstring(archive.read(name))
+                         for name in slide_names]
+
+            for dictation in session["dictation"]:
+                sentence_root = next(
+                    root for root in roots
+                    if dictation["sentence"] in "".join(
+                        text.text or "" for text in root.iter(OG.q("a:t"))
+                    )
+                )
+                timing = sentence_root.find(OG.q("p:timing"))
+                self.assertIsNotNone(timing)
+                self.assertTrue(timing.findall(".//" + OG.q("p:spTgt")))
+                sentence_shape = next(
+                    shape for shape in sentence_root.iter(OG.q("p:sp"))
+                    if dictation["sentence"] in "".join(
+                        text.text or "" for text in shape.iter(OG.q("a:t"))
+                    )
+                )
+                bodypr = sentence_shape.find(
+                    OG.q("p:txBody") + "/" + OG.q("a:bodyPr")
+                )
+                self.assertEqual(bodypr.get("anchor"), "t")
+                sizes = [
+                    int(run.get("sz"))
+                    for run in sentence_shape.iter(OG.q("a:rPr"))
+                    if run.get("sz")
+                ]
+                self.assertTrue(sizes)
+                self.assertLessEqual(max(sizes), 3200)
+
+            new_morph = session.get("new_morphology")
+            if not new_morph:
+                continue
+            self.assertGreater(len(roots), 30)
+            detail_root = roots[30]
+            detail_text = "\n".join(
+                text.text or "" for text in detail_root.iter(OG.q("a:t"))
+            )
+            self.assertIn(
+                f"{new_morph['type'].capitalize()}: ", detail_text
+            )
+            self.assertIn(new_morph["morph"], detail_text)
+            self.assertIn("Keyword: ", detail_text)
+            self.assertIsNone(detail_root.find(OG.q("p:timing")))
 
     def test_sound_and_component_meaning_are_split(self):
         note = OG.card_meaning_note(
@@ -72,6 +137,16 @@ class OgBuilderRegressionTests(unittest.TestCase):
         self.assertEqual(
             OG.MORPH_FILL,
             {"root": "ABEA90", "prefix": "FFF2CC", "suffix": "E06666"},
+        )
+
+    def test_yellow_dictation_meter_uses_compatible_asset(self):
+        package = OG.Package(OG.MASTER)
+        yellow = Image.open(BytesIO(package.parts["ppt/media/image12.png"]))
+        green = Image.open(BytesIO(package.parts["ppt/media/image13.png"]))
+        self.assertEqual(yellow.size, green.size)
+        self.assertTrue(
+            any(red > 240 and green_channel > 160 and blue < 40 and alpha
+                for red, green_channel, blue, alpha in yellow.convert("RGBA").getdata())
         )
 
     def test_markdown_and_question_piles_are_rejected(self):

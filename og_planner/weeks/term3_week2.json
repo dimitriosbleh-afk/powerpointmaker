@@ -1,0 +1,880 @@
+{
+  "term": 3,
+  "week": 2,
+  "cohort": "5/6 Composite",
+  "unit_folder": "OG_Term3_Week2",
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "overview": {
+    "Monday": {
+      "morphology": [
+        "New Morphology",
+        "-ive"
+      ],
+      "grammar": "Adverbials: identify and move",
+      "learned_words": [
+        "New learned word",
+        "drought"
+      ]
+    },
+    "Tuesday": {
+      "morphology": [
+        "New Morphology",
+        "-ite"
+      ],
+      "grammar": "Adverbials: identify and move",
+      "learned_words": [
+        "New learned word",
+        "buoyancy"
+      ]
+    },
+    "Wednesday": {
+      "morphology": "No session this week",
+      "grammar": "No session",
+      "learned_words": "No session"
+    },
+    "Thursday": {
+      "morphology": "No session this week",
+      "grammar": "No session",
+      "learned_words": "No session"
+    },
+    "Friday": {
+      "morphology": "No session this week",
+      "grammar": "No session",
+      "learned_words": "No session"
+    }
+  },
+  "sessions": [
+    {
+      "day": "Monday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "ped / pod",
+          "type": "root",
+          "keyword": "pedal",
+          "meaning": "foot"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality",
+          "extra_task": {
+            "prompt": "Give me one -ice word, meaning state or quality.",
+            "answers": [
+              "service",
+              "notice",
+              "justice",
+              "cowardice"
+            ]
+          }
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root",
+          "keyword": "exclude",
+          "meaning": "shut"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root",
+          "keyword": "deflect",
+          "meaning": "bend"
+        },
+        {
+          "morph": "-ine",
+          "type": "suffix",
+          "keyword": "genuine",
+          "meaning": "relating to, of, like, chemical substance"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root",
+          "keyword": "correct",
+          "meaning": "right, straight, lead",
+          "extra_task": {
+            "prompt": "Give me one word built from rect or reg, meaning right, straight or lead.",
+            "answers": [
+              "correct",
+              "direct",
+              "regular",
+              "rectangle"
+            ]
+          }
+        },
+        {
+          "morph": "ord / ordin",
+          "type": "root",
+          "keyword": "ordain",
+          "meaning": "order"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where",
+          "extra_task": {
+            "prompt": "Give me one -ery word, meaning relating to or place where.",
+            "answers": [
+              "machinery",
+              "bravery",
+              "archery",
+              "surgery"
+            ]
+          }
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root",
+          "keyword": "capable",
+          "meaning": "hold, take OR leader, head"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "treachery",
+          "disorder",
+          "cowardice",
+          "captor",
+          "malnutrition",
+          "engineer",
+          "bravery",
+          "preclude",
+          "maladjusted",
+          "flexibility",
+          "prejudice",
+          "extraordinary",
+          "delivery",
+          "rectangle",
+          "malcontent"
+        ],
+        "notes": "1. READ: \"Read all five rows with me. Keep your eyes moving; the next round will be faster.\"\n2. READ: \"First-name initial groups: A to F read row 1; G to L row 2; M to R row 3; S to Z row 4.\"\n3. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round. Try to beat our first pace.\"\n4. ASK: \"Which words use mal-, meaning bad, wrong or ill?\" 5 sec, choral response. EXPECT: malnutrition, maladjusted, malcontent.\n5. ASK: \"Which words use -ery, meaning relating to or place where?\" 5 sec, choral response. EXPECT: treachery, bravery, delivery.\n6. ASK: \"Disorder and extraordinary both use ord. What does ord mean?\" 5 sec, turn and tell. EXPECT: order.\n7. ASK: \"What is the opposite of cowardice?\" 3 sec, choral response. EXPECT: bravery.\n8. ASK: \"Which word names a person trained to design engines and machines?\" 3 sec, choral response. EXPECT: engineer.\n9. ASK: \"Preclude uses clud, meaning shut. What does preclude do?\" 5 sec, turn and tell. EXPECT: it shuts something out before it can happen.\n10. ASK: \"Make rectangle plural.\" 3 sec, choral response. EXPECT: rectangles."
+      },
+      "sound_bank": [
+        {
+          "morph": "ord / ordin",
+          "type": "root"
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ar",
+          "type": "suffix"
+        },
+        {
+          "morph": "-tion / -sion",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "malediction",
+          "sentence": "The villain muttered a malediction as he left the stage.",
+          "prompt": "mal- means ill and diction means speaking - what is a malediction?",
+          "answer": "ill speaking: harmful words, or a curse."
+        },
+        {
+          "word": "maltreatment",
+          "sentence": "The rescue centre reported the maltreatment of the stray dogs.",
+          "prompt": "Which prefix tells you the treatment was bad?",
+          "answer": "mal- means bad: maltreatment is cruel or harmful treatment."
+        },
+        {
+          "word": "surgery",
+          "sentence": "The vet performed surgery on the injured wing.",
+          "prompt": "-ery can name a place where - what happens in a surgery?",
+          "answer": "-ery means relating to or place where: it is the place where operations happen."
+        },
+        {
+          "word": "forgery",
+          "sentence": "The signature on the letter turned out to be a forgery.",
+          "prompt": "What does -ery name here?",
+          "answer": "-ery means relating to: a forgery is something relating to forging, or faking, a copy."
+        },
+        {
+          "word": "notice",
+          "sentence": "Please read the notice on the classroom door.",
+          "prompt": "-ice means state or quality - what state does notice name?",
+          "answer": "the state of noting something, so it is a message that makes you note it."
+        },
+        {
+          "word": "artifice",
+          "sentence": "The magician used clever artifice to hide the coin.",
+          "prompt": "art means skill and -ice means state or quality - what is artifice?",
+          "answer": "the quality of using skill to trick someone."
+        },
+        {
+          "word": "coordinate",
+          "sentence": "The captains coordinate the teams before each game.",
+          "prompt": "co- means together and ord means order - what does coordinate mean?",
+          "answer": "to put things into order together."
+        },
+        {
+          "word": "seclusion",
+          "sentence": "The author wrote her novel in complete seclusion.",
+          "prompt": "clus means shut - what does seclusion describe?",
+          "answer": "being shut away from other people."
+        },
+        {
+          "word": "captivate",
+          "sentence": "The storyteller can captivate the whole class in seconds.",
+          "prompt": "capt means hold or take - what does captivate take?",
+          "answer": "it takes and holds your attention."
+        },
+        {
+          "word": "muscular",
+          "sentence": "Swimming builds muscular strength in your shoulders.",
+          "prompt": "-ar means relating to - what is muscular strength?",
+          "answer": "strength relating to the muscles. Listen for the hidden c saying /k/."
+        }
+      ],
+      "new_morphology": {
+        "morph": "-ive",
+        "type": "suffix",
+        "keyword": "active",
+        "meaning": "relating to, like"
+      },
+      "words_to_read_new": [
+        {
+          "word": "active",
+          "meaning": "act means to do + -ive means relating to: relating to doing things"
+        },
+        {
+          "word": "cooperative",
+          "meaning": "co- means together + oper means work + -ative means relating to: relating to working together"
+        },
+        {
+          "word": "affirmative",
+          "meaning": "af- means to + firm means strong + -ative means relating to: relating to saying yes firmly"
+        },
+        {
+          "word": "negative",
+          "meaning": "neg means no or deny + -ative means relating to: relating to saying no"
+        },
+        {
+          "word": "inquisitive",
+          "meaning": "in- means into + quis means seek + -ive means relating to: relating to seeking into everything"
+        },
+        {
+          "word": "sensitive",
+          "meaning": "sens means feel + -ive means relating to: relating to feeling things quickly"
+        },
+        {
+          "word": "explosive",
+          "meaning": "ex- means out + plos means burst + -ive means relating to: relating to bursting out"
+        },
+        {
+          "word": "primitive",
+          "meaning": "prim means first + -ive means relating to: relating to the earliest times"
+        },
+        {
+          "word": "assertive",
+          "meaning": "as- means to + sert means put + -ive means relating to: relating to putting your view firmly"
+        },
+        {
+          "word": "restrictive",
+          "meaning": "re- means back + strict means draw tight + -ive means relating to: relating to holding back tightly"
+        },
+        {
+          "word": "exhaustive",
+          "meaning": "ex- means out + haust means drain + -ive means relating to: relating to drawing out every last bit"
+        },
+        {
+          "word": "successive",
+          "meaning": "suc- means after + cess means go + -ive means relating to: relating to going one after another"
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears, then connect -ive to the card meaning: relating to, like.\nactive - act means to do + -ive means relating to: relating to doing things. Always busy!\ncooperative - co- means together + oper means work + -ative means relating to: relating to working together. A helpful team player!\naffirmative - af- means to + firm means strong + -ative means relating to: relating to saying yes firmly. The opposite of a no!\nnegative - neg means no or deny + -ative means relating to: relating to saying no. A minus, not a plus!\ninquisitive - in- means into + quis means seek + -ive means relating to: relating to seeking into everything. Very curious!\nsensitive - sens means feel + -ive means relating to: relating to feeling things quickly.\nexplosive - ex- means out + plos means burst + -ive means relating to: relating to bursting out.\nprimitive - prim means first + -ive means relating to: relating to the earliest times.\nassertive - as- means to + sert means put + -ive means relating to: relating to putting your view firmly.\nrestrictive - re- means back + strict means draw tight + -ive means relating to: relating to holding something back tightly.\nexhaustive - ex- means out + haust means drain + -ive means relating to: relating to drawing out every last bit. Nothing left out!\nsuccessive - suc- means after + cess means go + -ive means relating to: relating to going one after another.\nPOINT OUT: after a base ending in -ate, the ending you see and hear is -ative. Cooperate becomes cooperative; negate becomes negative.\nMemory hook: -IVE means it is like that, it does that. Chant the pairs: act - active, sense - sensitive, cooperate - cooperative.",
+      "words_to_spell_new": [
+        "active",
+        "negative",
+        "sensitive",
+        "cooperative"
+      ],
+      "extension": "1. SAY: \"When you finish, write an antonym beside two of your spelling words.\"\n2. CHECK: an antonym is a word with the opposite meaning - negative and positive, active and inactive.\nSTRETCH: Write one sentence that uses a word and its antonym, and keep both meanings clear.",
+      "new_morph_activity": {
+        "title": "Build a word with -ive",
+        "rule": "Add -ive to build a word meaning relating to or like. Drop a silent e first.",
+        "example": "One done for you: restrict + -ive = restrictive (relating to holding back)",
+        "items": [
+          "1. assert + -ive = ?",
+          "2. cooperate + -ive = ?"
+        ],
+        "item_size": 18,
+        "routine": "Whiteboards - 3 minutes - boards up",
+        "footer": "Watch the silent e on number 2",
+        "notes": "ANSWER: 1. assertive. 2. cooperative.\n1. SAY: \"Add -ive to each base word and write the real word. Number 2 ends in a silent e, so use the silent-e rule.\"\n2. TIME: 3 minutes. Work alone on whiteboards. Write it... chin it... show me.\n3. CIRCULATE: if a student is stuck, SAY: \"Look at the worked example - restrict plus -ive made restrictive. Now say assert plus -ive aloud.\" Then build number 1 together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number 1 together, then re-ask.\nTRAP: writing cooperateive. Fix: name the silent-e rule, drop the e, then rewrite the word.\nSTRETCH: Add -ive to exhaust and to act, and check both are real words.\nHELP: Give the two answers jumbled; students match each to its base instead of building it.\n---\nPurpose: build the suffix from taught bases and apply the silent-e rule. [You Do | Word building | Morphology]",
+        "check_title": "Tick it or fix it - Build a word with -ive",
+        "check_rule": "Tick each correct word. Fix any word that does not match.",
+        "check_items": [
+          "1. assert + -ive = assertive",
+          "relating to putting your view firmly",
+          "2. cooperate + -ive = cooperative",
+          "drop the silent e: working together"
+        ],
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Cooperate loses its e before -ive",
+        "check_notes": "ANSWER: 1. assertive. 2. cooperative.\n1. REVEAL after every board has been scanned. MODEL: SAY: \"Number 1: assert means to put your view, I add -ive meaning relating to, so assertive means relating to putting your view firmly.\"\n2. SAY: \"Tick each correct word. Fix any word that is different.\"\n3. ASK: \"Why did cooperate lose its e?\" 10 sec, choral response. EXPECT: -ive begins with a vowel, so the silent-e rule drops the e.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number 2 letter by letter together.\nTRAP: ticking a word that is spelled correctly but cannot say its meaning. Fix: say the base, add relating to, then say the whole meaning.\nSTRETCH: Explain why exhaustive and exhausted do not mean the same thing.\nHELP: read the green answer first, then say the base word underneath it.\n---\nPurpose: protected answer reveal for immediate tick-and-fix feedback. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "tongue",
+            "unfair": "ue",
+            "notes": "Why learned: the gue ending says /g/, so the ue does no work you can hear; nothing in the spelling shows the /u/ sound.\nSay it: TUNG, one beat. It rhymes with lung, but it does not look like it.\nLink: a body word we use in science and health when explaining taste and speech."
+          },
+          {
+            "word": "muscle",
+            "unfair": "c",
+            "notes": "Why learned: the c is silent in muscle, so the written sc represents /s/.\nSay it: MUS-uhl, two beats. Link it to muscular, where the hidden c is heard as /k/.\nLink: a body word used in science and health when explaining movement."
+          }
+        ],
+        "new": {
+          "word": "drought",
+          "unfair": "ough",
+          "notes": "Why learned: ough says /ow/ here, but the same four letters say /uff/ in enough, /oh/ in though and /or/ in bought. You cannot sound it out; you have to know it.\nSay it: DROWT, one beat. It rhymes with out and shout, so listen for out hiding at the end.\nLink: an Australian geography word - a long stretch with far too little rain. First Nations peoples have read the signs of drought on Country for tens of thousands of years."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The active team made a cooperative plan before the long drought.",
+          "targets": [
+            "active",
+            "cooperative",
+            "drought"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "today's -ive words and the new learned word drought; before the long drought is an adverbial telling when"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "After the drought broke, the farmer said: \"Every cooperative neighbour helped; not one was negative.\"",
+          "targets": [
+            "drought",
+            "cooperative",
+            "negative"
+          ],
+          "cups": {
+            "capitals": [
+              "After",
+              "Every"
+            ],
+            "punctuation": [
+              "comma after the fronted adverbial",
+              "colon",
+              "opening quotation mark",
+              "semicolon",
+              "full stop inside the quotation",
+              "closing quotation mark"
+            ]
+          },
+          "focus": "comma after a fronted adverbial (this week's grammar), colon before speech, semicolon joining two related ideas"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Introduce adverbials - the part that tells when, where, how or why.\nPREP: Have whiteboards ready before the I do.",
+        "i_do": {
+          "title": "What is an adverbial?",
+          "rule": "An adverbial tells when, where, how or why something happens.",
+          "example": "We built the shelter after the storm.",
+          "items": [
+            "After the storm tells us WHEN we built it.",
+            "An adverbial can be one word or a group of words."
+          ],
+          "routine": "Eyes on me - watch the test",
+          "footer": "Tomorrow: move the adverbial to the front",
+          "notes": "ANSWER: after the storm - it tells when we built the shelter.\n1. SAY: \"An adverbial is the part of a sentence that tells when, where, how or why. Some of you may remember prepositional phrases from last week; most adverbials are built the same way.\"\n2. MODEL: Point to after the storm. SAY: \"I ask myself, when did we build it? The answer is after the storm, so that group of words is the adverbial.\"\n3. ASK: \"What does after the storm tell us?\" 5 sec, choral response. EXPECT: when.\n4. CHECK: Ask, \"Does the shelter tell when, where, how or why?\" EXPECT: no.\nTRAP: choosing the shelter because it is a thing in the sentence. Fix: run the when, where, how or why test, then point to after the storm.\n---\nPurpose: first exposure this week; bridge from last week's prepositional phrases. [I Do | Explicit modelling | Grammar | HITS 3]"
+        },
+        "we_do": {
+          "title": "Find the adverbial",
+          "rule": "An adverbial tells when, where, how or why something happens.",
+          "example": "The possum crept along the fence.",
+          "items": [
+            "Write the adverbial on your board, boards up together.",
+            "Prove it: does it tell when, where, how or why?"
+          ],
+          "routine": "Whiteboards ready - boards up together",
+          "footer": "Stem: It is an adverbial because it tells ...",
+          "notes": "ANSWER: along the fence - it tells where the possum crept.\n1. SAY: \"Write the group of words that tells when, where, how or why. Write it... chin it... show me.\"\n2. TIME: 15 seconds, then boards up together.\n3. SCAN the back row first. 80%+ -> ask for the reason. Less -> model with \"She sang beautifully\", then re-ask.\n4. ASK: \"How do you know along the fence is the adverbial?\" 5 sec, choral response. EXPECT: it tells where the possum crept.\nTRAP: writing only the word fence. Fix: ask the where question again, then take the whole group of words.\n---\nPurpose: guided identification with the when, where, how or why test. [We Do | Guided practice | Grammar | HITS 7]"
+        },
+        "you_do": {
+          "title": "Your turn",
+          "rule": "Write the adverbial from each sentence, then write its job: when, where, how or why.",
+          "example": "One done for you: We ate lunch under the gum tree. Adverbial: under the gum tree (where)",
+          "items": [
+            "1. The kookaburra laughed at dawn.",
+            "2. Mia finished her project without any help."
+          ],
+          "routine": "Whiteboards - 90 seconds - boards up when done",
+          "footer": "The whole group of words, not just one word",
+          "notes": "ANSWER: 1. at dawn (when). 2. without any help (how).\n1. SAY: \"Write the adverbial from each sentence, then write its job: when, where, how or why.\"\n2. TIME: 90 seconds. Work independently on whiteboards.\n3. CIRCULATE: if a student is stuck, SAY: \"Look at the worked example - under the gum tree tells where. Now ask your sentence, when did the kookaburra laugh?\" Then write number 1 together.\n4. SCAN four boards. 80%+ -> reveal the check slide. Less -> run the job test aloud on number 1, then re-check.\nTRAP: writing only dawn. Fix: ask the when question again, then take the whole group of words.\nSTRETCH: Write your own sentence with an adverbial that tells why.\nHELP: Give when, where, how, why as a word bank; students match a job to each underlined adverbial.\n---\nPurpose: independent identification before tomorrow's position switch. [You Do | Independent practice | Grammar | HITS 5]",
+          "check_title": "Tick it or fix it - Your turn",
+          "check_rule": "Tick each correct adverbial. Fix any that is wrong.",
+          "check_items": [
+            "1. at dawn = when",
+            "it tells when the kookaburra laughed",
+            "2. without any help = how",
+            "it tells how Mia finished her project"
+          ],
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "The whole group of words, not just one word",
+          "check_notes": "ANSWER: 1. at dawn (when). 2. without any help (how).\n1. REVEAL after every board has been scanned. MODEL: SAY: \"Number 1: I ask when did the kookaburra laugh? At dawn. So the adverbial is at dawn and its job is when.\"\n2. SAY: \"Tick each correct answer. Fix any that is different.\"\n3. ASK: \"Why is dawn on its own not enough?\" 10 sec, turn and tell. EXPECT: at dawn is the whole group of words that answers when.\n4. SCAN corrections. 80%+ -> continue. Less -> run the job test aloud on number 2 together.\nTRAP: ticking a one-word answer. Fix: reread the whole group of words, then correct it.\nSTRETCH: Explain why without any help tells how and not why.\nHELP: read the green answer first, then match the job word to it.\n---\nPurpose: protected answer reveal for immediate tick-and-fix feedback. [You Do | Feedback | Grammar]"
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where"
+        },
+        {
+          "morph": "capt / capit",
+          "type": "root",
+          "keyword": "capable",
+          "meaning": "hold, take OR leader, head"
+        },
+        {
+          "morph": "ord / ordin",
+          "type": "root",
+          "keyword": "ordain",
+          "meaning": "order",
+          "extra_task": {
+            "prompt": "Give me one word built from ord or ordin, meaning order.",
+            "answers": [
+              "order",
+              "ordinary",
+              "disorder",
+              "coordinate"
+            ]
+          }
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like",
+          "extra_task": {
+            "prompt": "Give me one -ive word, meaning relating to or like.",
+            "answers": [
+              "active",
+              "negative",
+              "sensitive",
+              "cooperative"
+            ]
+          }
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality"
+        },
+        {
+          "morph": "ped / pod",
+          "type": "root",
+          "keyword": "pedal",
+          "meaning": "foot",
+          "extra_task": {
+            "prompt": "Give me one word built from ped or pod, meaning foot.",
+            "answers": [
+              "pedal",
+              "podium",
+              "pedestrian",
+              "tripod"
+            ]
+          }
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill"
+        },
+        {
+          "morph": "rect / reg",
+          "type": "root",
+          "keyword": "correct",
+          "meaning": "right, straight, lead"
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root",
+          "keyword": "exclude",
+          "meaning": "shut"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root",
+          "keyword": "deflect",
+          "meaning": "bend"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "ordinary",
+          "affirmative",
+          "robbery",
+          "captive",
+          "justice",
+          "podium",
+          "malfunction",
+          "inclusion",
+          "mockery",
+          "explosive",
+          "conclusive",
+          "malformation",
+          "secrecy",
+          "novice",
+          "reflection"
+        ],
+        "notes": "1. READ: \"Read all five rows with me. Keep your eyes moving; the next round will be faster.\"\n2. READ: \"Birth-month groups: January to March read row 1; April to June row 2; July to September row 3; October to December row 4.\"\n3. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round. Try to beat our first pace.\"\n4. ASK: \"Which words use -ery, meaning relating to or place where?\" 5 sec, choral response. EXPECT: robbery, mockery.\n5. ASK: \"Which words use -ice, meaning state or quality?\" 5 sec, choral response. EXPECT: justice, novice.\n6. ASK: \"Malfunction and malformation both use mal-. What does mal- mean?\" 5 sec, turn and tell. EXPECT: bad, wrong or ill.\n7. ASK: \"What is the opposite of exclusion?\" 3 sec, choral response. EXPECT: inclusion.\n8. ASK: \"Which word names the raised platform a winner stands on?\" 3 sec, choral response. EXPECT: podium.\n9. ASK: \"Affirmative and explosive both end in -ive. What does -ive mean?\" 5 sec, choral response. EXPECT: relating to, or like.\n10. ASK: \"Make captive plural.\" 3 sec, choral response. EXPECT: captives."
+      },
+      "sound_bank": [
+        {
+          "morph": "ord / ordin",
+          "type": "root"
+        },
+        {
+          "morph": "clud(e) / clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "flect / flex",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix"
+        },
+        {
+          "morph": "-eer",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "malaise",
+          "sentence": "A general malaise spread through the team after the loss.",
+          "prompt": "Which prefix tells you this feeling is an unwell one?",
+          "answer": "mal- means ill: malaise is a general feeling of being unwell."
+        },
+        {
+          "word": "archery",
+          "sentence": "She won a medal for archery at the school carnival.",
+          "prompt": "-ery means relating to - what is archery about?",
+          "answer": "everything relating to the arch, or bow: the sport of shooting arrows."
+        },
+        {
+          "word": "cutlery",
+          "sentence": "Please set the cutlery beside each plate.",
+          "prompt": "What does -ery name here?",
+          "answer": "-ery means relating to: cutlery is the set of things relating to cutting and eating."
+        },
+        {
+          "word": "apprentice",
+          "sentence": "The young apprentice learned to shape metal.",
+          "prompt": "-ice means state or quality - what state is an apprentice in?",
+          "answer": "the state of still learning a trade from an expert."
+        },
+        {
+          "word": "orderly",
+          "sentence": "The students left the hall in an orderly line.",
+          "prompt": "Which root tells you the line was neat?",
+          "answer": "ord means order: orderly means arranged in a good order."
+        },
+        {
+          "word": "exclusive",
+          "sentence": "The club made the offer exclusive to members.",
+          "prompt": "clus means shut - who is shut out of an exclusive offer?",
+          "answer": "everyone who is not a member is shut out."
+        },
+        {
+          "word": "inflection",
+          "sentence": "Her voice rose with a questioning inflection.",
+          "prompt": "flect means bend - what is bending here?",
+          "answer": "the sound of her voice bends up or down."
+        },
+        {
+          "word": "pioneer",
+          "sentence": "She was a pioneer of solar power in Australia.",
+          "prompt": "-eer means one who - what does a pioneer do?",
+          "answer": "one who goes first and opens the way for others."
+        },
+        {
+          "word": "inquisitive",
+          "sentence": "The inquisitive puppy pushed its nose into every bag.",
+          "prompt": "quis means seek and -ive means relating to - what is an inquisitive puppy doing?",
+          "answer": "seeking into everything: it is very curious."
+        },
+        {
+          "word": "restrictive",
+          "sentence": "The new rule felt restrictive to the older students.",
+          "prompt": "strict means draw tight and -ive means relating to - what does a restrictive rule do?",
+          "answer": "it holds you back tightly."
+        }
+      ],
+      "new_morphology": {
+        "morph": "-ite",
+        "type": "suffix",
+        "keyword": "graphite",
+        "meaning": "native of, quality, mineral"
+      },
+      "words_to_read_new": [
+        {
+          "word": "graphite",
+          "meaning": "graph means write or draw + -ite means mineral: the mineral you write with"
+        },
+        {
+          "word": "pyrite",
+          "meaning": "pyr means fire + -ite means mineral: the mineral that sparks like fire"
+        },
+        {
+          "word": "granite",
+          "meaning": "gran means grain + -ite means mineral: the rock with hard grains through it"
+        },
+        {
+          "word": "dynamite",
+          "meaning": "dynam means power + -ite means mineral or substance: the substance packed with power"
+        },
+        {
+          "word": "composite",
+          "meaning": "com- means together + pos means put + -ite means having the quality of: put together from parts"
+        },
+        {
+          "word": "definite",
+          "meaning": "de- means completely + fin means end or limit + -ite means having the quality of: fixed and certain"
+        },
+        {
+          "word": "infinite",
+          "meaning": "in- means not + fin means end + -ite means having the quality of: never ending"
+        },
+        {
+          "word": "exquisite",
+          "meaning": "ex- means out + quis means seek + -ite means having the quality of: sought out because it is rare"
+        },
+        {
+          "word": "favourite",
+          "meaning": "favour means liking + -ite means having the quality of: the one liked most"
+        },
+        {
+          "word": "appetite",
+          "meaning": "ap- means towards + pet means seek + -ite means having the quality of: seeking food"
+        },
+        {
+          "word": "suburbanite",
+          "meaning": "sub- means near + urban means city + -ite means native of: a person who lives near the city"
+        },
+        {
+          "word": "hypocrite",
+          "meaning": "hypo- means under + crit means judge + -ite means one who: one who judges from behind a mask"
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears, then connect -ite to the card meaning: native of, quality, mineral.\ngraphite - graph means write or draw + -ite means mineral: the mineral you write with. It is the grey stuff inside a pencil!\npyrite - pyr means fire + -ite means mineral: the mineral that sparks like fire. Fool's gold!\ngranite - gran means grain + -ite means mineral: the rock with hard grains packed through it.\ndynamite - dynam means power + -ite means mineral or substance: the substance packed with power.\ncomposite - com- means together + pos means put + -ite means having the quality of: having the quality of being put together from parts.\ndefinite - de- means completely + fin means end or limit + -ite means having the quality of: having a fixed limit. No doubt at all!\ninfinite - in- means not + fin means end + -ite means having the quality of: having no end at all.\nexquisite - ex- means out + quis means seek + -ite means having the quality of: worth seeking out. Beautiful and rare!\nfavourite - favour means liking + -ite means having the quality of: the one you like most.\nappetite - ap- means towards + pet means seek + -ite means having the quality of: seeking food. Hunger!\nsuburbanite - sub- means near + urban means city + -ite means native of: a person who lives near the city.\nhypocrite - hypo- means under + crit means judge + -ite means one who: one who judges others from behind a mask. They say one thing and do another!\nMemory hook: -ITE has three jobs - a MINERAL like graphite, a PERSON like suburbanite, or a QUALITY like definite. Chant it: rock, person, quality.",
+      "words_to_spell_new": [
+        "graphite",
+        "granite",
+        "definite",
+        "composite"
+      ],
+      "extension": "1. SAY: \"When you finish, write one sentence using two spelling words, and open it with a subordinate clause.\"\n2. CHECK: a subordinate clause cannot stand alone - it starts with a word like although, because, when or since.\nSTRETCH: Put a comma after the opening clause, then explain to a partner why the comma is needed.",
+      "new_morph_activity": {
+        "title": "Sort the -ite words",
+        "rule": "-ite has three jobs: a mineral, a person (native of), or a quality. Write the job beside each word.",
+        "example": "One done for you: granite = mineral (a hard rock with grains through it)",
+        "items": [
+          "1. suburbanite = ?",
+          "2. definite = ?"
+        ],
+        "item_size": 18,
+        "routine": "OG workbooks - 3 minutes",
+        "footer": "Ask: is it a rock, a person, or a quality?",
+        "notes": "ANSWER: 1. person (native of). 2. quality.\n1. SAY: \"Write each word in your workbook, then write its job beside it: mineral, person or quality.\"\n2. TIME: 3 minutes. Work independently in your OG workbook.\n3. CIRCULATE: if a student is stuck, SAY: \"Look at the worked example - granite is a rock, so its job is mineral. Now ask number 1, is a suburbanite a rock, a person or a quality?\" Then do number 1 together.\n4. SCAN four workbooks. 80%+ -> reveal the check slide. Less -> sort number 1 aloud together, then re-check.\nTRAP: calling definite a person because it starts like a name. Fix: ask if you could hold it or meet it, then relabel it quality.\nSTRETCH: Add one more word to each of the three groups.\nHELP: Give the three job words as a word bank; students match instead of writing.\n---\nPurpose: separate the card's three printed meanings using genuine card words. [You Do | Sorting | Morphology]",
+        "check_title": "Tick it or fix it - Sort the -ite words",
+        "check_rule": "Tick each correct job. Fix any that does not match.",
+        "check_items": [
+          "1. suburbanite = person (native of)",
+          "sub near + urban city: lives near the city",
+          "2. definite = quality",
+          "de completely + fin end: a fixed limit"
+        ],
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Rock, person, or quality?",
+        "check_notes": "ANSWER: 1. person (native of). 2. quality.\n1. REVEAL after every workbook has been scanned. MODEL: SAY: \"Number 1: sub means near and urban means city, so a suburbanite is a person who lives near the city. Its job is native of, a person.\"\n2. SAY: \"Tick each correct job. Fix any that is different.\"\n3. ASK: \"Which job does graphite take, and how do you know?\" 10 sec, turn and tell. EXPECT: mineral - it is the grey mineral you write with, like granite.\n4. SCAN corrections. 80%+ -> continue. Less -> reread number 2 and name the fin root together.\nTRAP: ticking the right job but not being able to say why. Fix: name the first morpheme, then say the whole meaning.\nSTRETCH: Explain why infinite and definite share a root but mean opposite things.\nHELP: read the green answer first, then find the job word inside it.\n---\nPurpose: protected answer reveal for immediate tick-and-fix feedback. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "drought",
+            "unfair": "ough",
+            "notes": "Why learned: ough says /ow/ here, but the same four letters say /uff/ in enough and /oh/ in though. You cannot sound it out; you have to know it.\nSay it: DROWT, one beat. It rhymes with out and shout.\nLink: an Australian geography word - a long stretch with far too little rain."
+          },
+          {
+            "word": "tongue",
+            "unfair": "ue",
+            "notes": "Why learned: the gue ending says /g/, so the ue does no work you can hear; nothing in the spelling shows the /u/ sound.\nSay it: TUNG, one beat. It rhymes with lung, but it does not look like it.\nLink: a body word we use in science and health when explaining taste and speech."
+          }
+        ],
+        "new": {
+          "word": "buoyancy",
+          "unfair": "uoy",
+          "notes": "Why learned: uoy says /oy/, and English almost never puts those three letters in that order. Most students write boyancy or bouyancy.\nSay it: BOY-uhn-see, three beats. Hear the buoy at the front, then the -ancy ending, which names a quality or state, like infancy and vacancy.\nLink: a science word - buoyancy is the state of floating, the upward push of water on a boat or a body."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Our favourite rock is granite, and it has no buoyancy.",
+          "targets": [
+            "favourite",
+            "granite",
+            "buoyancy"
+          ],
+          "cups": {
+            "capitals": [
+              "Our"
+            ],
+            "punctuation": [
+              "comma before and",
+              "full stop"
+            ]
+          },
+          "focus": "today's -ite words and the new learned word buoyancy; a comma joining two ideas"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "In the science lab, we tested buoyancy carefully; the graphite sank, but the composite floated.",
+          "targets": [
+            "buoyancy",
+            "graphite",
+            "composite"
+          ],
+          "cups": {
+            "capitals": [
+              "In"
+            ],
+            "punctuation": [
+              "comma after the fronted adverbial",
+              "semicolon",
+              "comma before but",
+              "full stop"
+            ]
+          },
+          "focus": "comma after a fronted adverbial (this week's grammar), semicolon joining two related ideas"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Move an adverbial to the front and back again, and punctuate it.\nPREP: Have whiteboards ready before the I do.",
+        "i_do": {
+          "title": "Move the adverbial",
+          "rule": "An adverbial tells when, where, how or why. It can move to the front of the sentence.",
+          "example": "We built the shelter after the storm. -> After the storm, we built the shelter.",
+          "items": [
+            "Move it to the front and add a comma.",
+            "The meaning stays the same; the emphasis changes."
+          ],
+          "routine": "Eyes on me - watch the move",
+          "footer": "Next: you move them both ways",
+          "notes": "ANSWER: After the storm, we built the shelter.\n1. SAY: \"An adverbial tells when, where, how or why. Today we learn that it can move. If this feels new, that's okay - we'll build it together.\"\n2. MODEL: Point to after the storm. SAY: \"I lift the adverbial off the end, put it at the front, and drop a comma in behind it.\"\n3. ASK: \"What did I add after the fronted adverbial?\" 5 sec, choral response. EXPECT: a comma.\n4. CHECK: Ask, \"Did the meaning change?\" EXPECT: no - only what the reader notices first.\nTRAP: forgetting the comma after a fronted adverbial. Fix: read it aloud, hear the pause, then add the comma.\n---\nPurpose: restate the adverbial rule, then extend it to position. [I Do | Explicit modelling | Grammar | HITS 3]"
+        },
+        "we_do": {
+          "title": "Front it or end it",
+          "rule": "An adverbial can sit at the front or at the end. A fronted adverbial takes a comma.",
+          "example": "In the science lab, we tested the graphite.",
+          "items": [
+            "Move the adverbial to the end and write the new sentence.",
+            "Decide: does it still need the comma?"
+          ],
+          "routine": "Whiteboards ready - boards up together",
+          "footer": "Stem: The comma goes because ...",
+          "notes": "ANSWER: We tested the graphite in the science lab. No comma is needed.\n1. SAY: \"Move the adverbial to the end, write the whole new sentence, then decide about the comma. Write it... chin it... show me.\"\n2. TIME: 30 seconds, then boards up together.\n3. SCAN the back row first. 80%+ -> ask for the reason. Less -> move it together aloud, then re-ask.\n4. ASK: \"Why does the comma disappear?\" 5 sec, choral response. EXPECT: the adverbial is no longer at the front.\nTRAP: keeping the comma at the end. Fix: read it aloud, hear that the pause is gone, then delete the comma.\n---\nPurpose: guided practice moving an adverbial both ways. [We Do | Guided practice | Grammar | HITS 7]"
+        },
+        "you_do": {
+          "title": "Your turn",
+          "rule": "Rewrite each sentence with the adverbial in the other position. Front it, or end it.",
+          "example": "One done for you: The wombat dug all night. -> All night, the wombat dug.",
+          "items": [
+            "1. Before the bell, we packed our books.",
+            "2. The class cheered after the goal."
+          ],
+          "routine": "OG workbooks - 2 minutes",
+          "footer": "Watch the comma when you front it",
+          "notes": "ANSWER: 1. We packed our books before the bell. 2. After the goal, the class cheered.\n1. SAY: \"Rewrite each sentence with the adverbial in the other position. Watch what happens to the comma.\"\n2. TIME: 2 minutes. Work independently in your OG workbook.\n3. CIRCULATE: if a student is stuck, SAY: \"Look at the worked example - all night moved to the front and took a comma. Now find the adverbial in number 1.\" Then move number 1 together.\n4. SCAN four workbooks. 80%+ -> reveal the check slide. Less -> move number 1 aloud together, then re-check.\nTRAP: leaving the comma in when the adverbial moves to the end. Fix: read it aloud, hear the pause is gone, then delete the comma.\nSTRETCH: Write one sentence where fronting the adverbial changes what the reader notices first.\nHELP: Give the adverbial already underlined; students only move it and fix the comma.\n---\nPurpose: independent practice switching position both ways. [You Do | Independent practice | Grammar | HITS 5]",
+          "check_title": "Tick it or fix it - Your turn",
+          "check_rule": "Tick each correct sentence. Fix the comma if it is wrong.",
+          "check_items": [
+            "1. We packed our books before the bell.",
+            "No comma: the adverbial is at the end.",
+            "2. After the goal, the class cheered.",
+            "Comma: the adverbial is at the front."
+          ],
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Front = comma. End = no comma.",
+          "check_notes": "ANSWER: 1. We packed our books before the bell. 2. After the goal, the class cheered.\n1. REVEAL after every workbook has been scanned. MODEL: SAY: \"Number 1: before the bell was at the front with a comma. I move it to the end, so the comma goes.\"\n2. SAY: \"Tick each correct sentence. Fix any comma that is different.\"\n3. ASK: \"What is the rule for a fronted adverbial?\" 10 sec, choral response. EXPECT: it takes a comma after it.\n4. SCAN corrections. 80%+ -> continue. Less -> read number 2 aloud and place the comma together.\nTRAP: fixing the words but leaving the old comma behind. Fix: reread the new sentence aloud, then move the comma.\nSTRETCH: Explain why a fronted adverbial needs a comma but an end one does not.\nHELP: read the green answer first, then check only the comma.\n---\nPurpose: protected answer reveal for immediate tick-and-fix feedback. [You Do | Feedback | Grammar]"
+        }
+      }
+    }
+  ]
+}

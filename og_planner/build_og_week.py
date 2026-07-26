@@ -20,10 +20,12 @@ import re
 import shutil
 import sys
 import zipfile
+from io import BytesIO
 from pathlib import Path
 from xml.sax.saxutils import escape
 
 from lxml import etree
+from PIL import Image
 
 NS = {
     "p": "http://schemas.openxmlformats.org/presentationml/2006/main",
@@ -37,6 +39,25 @@ NS = {
 def q(tag):
     pfx, local = tag.split(":")
     return "{%s}%s" % (NS[pfx], local)
+
+
+def make_compatible_yellow_meter(green_png):
+    """Recolour the known-good green gauge without the broken yellow asset.
+
+    The master's original broad yellow PNG makes LibreOffice shift/clamp other
+    slide elements during PDF export. Recolouring the compatible green gauge
+    preserves the meter artwork and yellow difficulty cue without that defect.
+    """
+    image = Image.open(BytesIO(green_png)).convert("RGBA")
+    pixels = image.load()
+    for y in range(image.height):
+        for x in range(image.width):
+            red, green, blue, alpha = pixels[x, y]
+            if alpha and green > red * 1.2 and green > blue * 1.2:
+                pixels[x, y] = (255, 193, 7, alpha)
+    output = BytesIO()
+    image.save(output, format="PNG", dpi=(150, 150))
+    return output.getvalue()
 
 
 ROOT_DIR = Path(__file__).resolve().parent
@@ -371,12 +392,17 @@ def resolve_card(day, where, card):
 
 def card_pos_note(card):
     """Teacher-note line for part of speech printed on the physical card."""
-    entry = resolved_photo_card(card["morph"], card.get("type"),
-                                card.get("meaning"))
-    parts = entry.get("part_of_speech", []) if entry else []
+    parts = card_parts_of_speech(card)
     if not parts:
         return ""
     return f"\nPart of speech: {', '.join(parts)}"
+
+
+def card_parts_of_speech(card):
+    """Part-of-speech labels printed on the photographed physical card."""
+    entry = resolved_photo_card(card["morph"], card.get("type"),
+                                card.get("meaning"))
+    return entry.get("part_of_speech", []) if entry else []
 
 
 def card_meaning_note(meaning):
@@ -755,6 +781,13 @@ def regen_timing(root, targets):
                 bp.set("build", "p")
 
 
+def remove_timing(root):
+    """Make an instructional follow-up slide visible immediately."""
+    timing = root.find(q("p:timing"))
+    if timing is not None:
+        root.remove(timing)
+
+
 # ---------------------------------------------------------------- notes
 NOTE_ANCHOR_RE = re.compile(
     r"(?:\d+\.\s+)?(?:ANSWER|SAY|ASK|EXPECT|ACCEPT|SCAN|TRAP|FIX|STRETCH|HELP|"
@@ -949,6 +982,11 @@ class Package:
     def __init__(self, path):
         with zipfile.ZipFile(path) as z:
             self.parts = {n: z.read(n) for n in z.namelist()}
+        if ("ppt/media/image12.png" in self.parts
+                and "ppt/media/image13.png" in self.parts):
+            self.parts["ppt/media/image12.png"] = make_compatible_yellow_meter(
+                self.parts["ppt/media/image13.png"]
+            )
         self.pres = etree.fromstring(self.parts["ppt/presentation.xml"])
         self.pres_rels = etree.fromstring(self.parts["ppt/_rels/presentation.xml.rels"])
         # ordered template slide part names
@@ -988,7 +1026,7 @@ class DeckBuilder:
         self.pkg = pkg
         self.slides = []  # (slide_xml_root, rels_root, notes_root_or_None)
 
-    def add(self, template_idx, fill=None, notes=None):
+    def add(self, template_idx, fill=None, notes=None, fill_rels=None):
         """Clone template slide `template_idx`; apply fill(root) mutations."""
         root = etree.fromstring(self.pkg.slide_xml(template_idx))
         rels_bytes = self.pkg.slide_rels(template_idx)
@@ -1007,6 +1045,8 @@ class DeckBuilder:
             notes_rels = None
         if fill:
             fill(root)
+        if fill_rels:
+            fill_rels(rels)
         if notes is not None and notes_root is not None:
             prepared_notes = prepare_notes_text(str(notes))
             validate_notes_source(template_idx, str(notes), prepared_notes)
@@ -1432,6 +1472,59 @@ def build_session(pkg, week, session, out_path):
                      f"{card_meaning_note(nm_mean)}"
                      f"{card_pos_note(nm)}"))
 
+        # Immediately follow the delivered morpheme card with a stable,
+        # non-animated reference students can copy into their books.
+        def fill_nm_copy(root, tidx=tidx, nm=nm, nm_kw=nm_kw,
+                         nm_mean=nm_mean):
+            set_slide_background(root, MORPH_FILL[nm["type"]])
+            sp = find_sp(root, SHAPE["card_new_word"][tidx])
+            meaning_lines = card_meaning_note(nm_mean).splitlines()
+            fields = [(nm["type"].capitalize(), nm["morph"]),
+                      ("Keyword", nm_kw)]
+            for line in meaning_lines:
+                label, _, value = line.partition(":")
+                fields.append((label, value.strip()))
+            parts = card_parts_of_speech(nm)
+            if parts:
+                fields.append(("Part of speech", ", ".join(parts)))
+            display_text = "\n".join(
+                f"{label}: {value}" for label, value in fields
+            )
+            sz = fit_font_block(display_text, 6.2, 3.0, 32,
+                                min_pt=24, char_em=0.55)
+            set_runs(
+                sp,
+                [[(f"{label}: ", None, True, None),
+                  (value, None, False, None)]
+                 for label, value in fields],
+                size_pt=sz,
+            )
+            xfrm = sp.find(q("p:spPr") + "/" + q("a:xfrm"))
+            xfrm.find(q("a:off")).set("x", str(int(1.7 * 914400)))
+            xfrm.find(q("a:off")).set("y", str(int(1.35 * 914400)))
+            xfrm.find(q("a:ext")).set("cx", str(int(6.6 * 914400)))
+            xfrm.find(q("a:ext")).set("cy", str(int(3.1 * 914400)))
+            bodypr = sp.find(q("p:txBody") + "/" + q("a:bodyPr"))
+            if bodypr is not None:
+                bodypr.set("anchor", "ctr")
+            for p_el in sp.findall(q("p:txBody") + "/" + q("a:p")):
+                ppr = p_el.find(q("a:pPr"))
+                if ppr is not None:
+                    ppr.set("algn", "l")
+            remove_timing(root)
+
+        copy_note_fields = "morpheme, keyword and meaning"
+        if card_parts_of_speech(nm):
+            copy_note_fields += ", including the part of speech"
+        d.add(
+            tidx,
+            fill_nm_copy,
+            notes=(
+                "1. SAY: \"Copy this morpheme card into your book exactly as shown.\"\n"
+                f"2. CHECK: Scan the {copy_note_fields} before moving on."
+            ),
+        )
+
         def fill_wtr_new_hdr(root):
             sp = find_sp(root, SHAPE["hdr_wtr_new_txt"])
             replace_run_text(sp, "New Morphology", section)
@@ -1574,6 +1667,13 @@ def build_session(pkg, week, session, out_path):
                  "'green' or 'yellow'")
             meter = "green" if dictation_index == 0 else "yellow"
         dictation_tidx = T["dictation"][meter]
+        # The locked yellow slide has no native animation. Clone the green
+        # animated slide for both meters, then restore a compatible yellow
+        # meter image. This preserves a true appear effect without the
+        # LibreOffice/Google Slides position shift caused by transplanting a
+        # timing block into the yellow slide.
+        clone_tidx = T["dictation"]["green"]
+        sentence_spid = SHAPE["dictation_sentence"][clone_tidx]
         cups = dt.get("cups")
         targets = dt.get("targets", [])
         score = dt.get("score")
@@ -1583,13 +1683,40 @@ def build_session(pkg, week, session, out_path):
         if not cups:
             warn(f"{day}: dictation '{dt['sentence'][:30]}...' has no cups marking block")
 
-        def fill_dict(root, dt=dt, score=score, dictation_tidx=dictation_tidx):
-            sp = find_sp(root, SHAPE["dictation_sentence"][dictation_tidx])
-            sz = fit_font_block(dt["sentence"], 9.0, 2.6, 48, min_pt=28)
+        def fill_dict(root, dt=dt, score=score,
+                      sentence_spid=sentence_spid):
+            sp = find_sp(root, sentence_spid)
+            # LibreOffice and Google Slides use slightly taller Lexend metrics
+            # than PowerPoint. Keep long 14-16 word reveals inside the locked
+            # sentence box so they cannot expand upward over the title.
+            sz = fit_font_block(
+                dt["sentence"], 9.0, 2.45, 32, min_pt=28,
+                char_em=0.62, line_factor=1.5,
+            )
             set_runs(sp, dictation_runs(dt["sentence"], dt.get("targets", [])), size_pt=sz)
+            bodypr = sp.find(q("p:txBody") + "/" + q("a:bodyPr"))
+            if bodypr is not None:
+                bodypr.set("anchor", "t")
+            regen_timing(root, [(sentence_spid, None)])
             if score:
                 add_textbox(root, 90001, 6.8, 4.55, 2.7, 0.45,
                             [f"Score: ___ /{score}"], 20, align="r", anchor="ctr")
+
+        def fill_dict_rels(rels, meter=meter):
+            if meter != "yellow":
+                return
+            yellow_rels = etree.fromstring(
+                pkg.slide_rels(T["dictation"]["yellow"])
+            )
+            yellow_image_rel = next(
+                rel for rel in yellow_rels.findall(q("rel:Relationship"))
+                if rel.get("Id") == "rId3"
+            )
+            current_image_rel = next(
+                rel for rel in rels.findall(q("rel:Relationship"))
+                if rel.get("Id") == "rId3"
+            )
+            current_image_rel.set("Target", yellow_image_rel.get("Target"))
         lines = [dt["sentence"], ""]
         if cups:
             caps = cups.get("capitals", [])
@@ -1604,7 +1731,8 @@ def build_session(pkg, week, session, out_path):
             lines.append(f"Targets: {', '.join(targets)}")
         if dt.get("focus"):
             lines.append(f"Focus: {dt['focus']}")
-        d.add(dictation_tidx, fill_dict, notes="\n".join(lines))
+        d.add(clone_tidx, fill_dict, notes="\n".join(lines),
+              fill_rels=fill_dict_rels)
 
     # --- grammar
     gr = session["grammar"]
@@ -1653,6 +1781,24 @@ def qa_deck(path, session=None):
         from pptx.enum.dml import MSO_COLOR_TYPE
 
         pres = Presentation(path)
+
+        with zipfile.ZipFile(path) as zf:
+            slide_names = sorted(
+                (name for name in zf.namelist()
+                 if re.fullmatch(r"ppt/slides/slide\d+\.xml", name)),
+                key=lambda name: int(re.search(r"slide(\d+)", name).group(1)),
+            )
+            raw_slide_roots = [
+                etree.fromstring(zf.read(name)) for name in slide_names
+            ]
+            raw_slide_rels = []
+            for name in slide_names:
+                slide_file = name.rsplit("/", 1)[1]
+                rel_name = f"ppt/slides/_rels/{slide_file}.rels"
+                raw_slide_rels.append(
+                    etree.fromstring(zf.read(rel_name))
+                    if rel_name in zf.namelist() else None
+                )
 
         def slide_text(slide):
             return "\n".join(
@@ -1843,6 +1989,53 @@ def qa_deck(path, session=None):
                             f"{new_morph['type']}"
                         )
 
+                if len(pres.slides) <= 30:
+                    problems.append("new morphology copy-card slide is missing")
+                else:
+                    copy_slide = pres.slides[30]
+                    copy_text = slide_text(copy_slide)
+                    entry = verified_card_entry(
+                        new_morph["morph"], new_morph.get("type"),
+                        new_morph.get("meaning"),
+                    )
+                    expected_keyword = (
+                        entry.get("keyword", "") if entry
+                        else new_morph.get("keyword", "")
+                    )
+                    expected_meaning = (
+                        entry.get("meaning", "") if entry
+                        else catalogue_meaning(
+                            new_morph["morph"], new_morph.get("type")
+                        ) or new_morph.get("meaning", "")
+                    )
+                    expected_lines = [
+                        f"{new_morph['type'].capitalize()}: {new_morph['morph']}",
+                        f"Keyword: {expected_keyword}",
+                        *card_meaning_note(expected_meaning).splitlines(),
+                    ]
+                    parts = card_parts_of_speech(new_morph)
+                    if parts:
+                        expected_lines.append(
+                            f"Part of speech: {', '.join(parts)}"
+                        )
+                    for line in expected_lines:
+                        if line not in copy_text:
+                            problems.append(
+                                f"new morphology copy-card slide is missing {line!r}"
+                            )
+                    actual = fill_rgb(copy_slide.background.fill)
+                    expected = MORPH_FILL[new_morph["type"]]
+                    if actual != expected:
+                        problems.append(
+                            "new morphology copy-card slide does not retain the "
+                            f"{new_morph['type']} card colour"
+                        )
+                    if raw_slide_roots[30].find(q("p:timing")) is not None:
+                        problems.append(
+                            "new morphology copy-card slide should be visible "
+                            "immediately, without a reveal animation"
+                        )
+
             # New-morphology grids must stay large enough for classroom reading.
             new_words = [
                 item["word"] if isinstance(item, dict) else str(item)
@@ -1921,11 +2114,13 @@ def qa_deck(path, session=None):
                 sentence = item["sentence"]
                 target_shape = None
                 target_slide = None
-                for slide in pres.slides:
+                target_slide_index = None
+                for slide_index, slide in enumerate(pres.slides):
                     for shape in slide.shapes:
                         if shape.has_text_frame and shape.text.strip() == sentence:
                             target_shape = shape
                             target_slide = slide
+                            target_slide_index = slide_index
                             break
                     if target_shape is not None:
                         break
@@ -1933,14 +2128,46 @@ def qa_deck(path, session=None):
                     problems.append(f"dictation sentence not found: {sentence[:32]}")
                     continue
                 expected_meter = item.get("meter")
-                meter_template = T["dictation"].get(expected_meter)
-                meter_shape_id = SHAPE["dictation_meter"].get(meter_template)
+                meter_shape_id = SHAPE["dictation_meter"][T["dictation"]["green"]]
                 if (meter_shape_id is None
                         or meter_shape_id not in {
                             shape.shape_id for shape in target_slide.shapes
                         }):
                     problems.append(
                         f"dictation does not use the requested {expected_meter} meter"
+                    )
+                meter_pic = next(
+                    (pic for pic in raw_slide_roots[target_slide_index].iter(q("p:pic"))
+                     if pic.find(q("p:nvPicPr") + "/" + q("p:cNvPr")).get("id")
+                     == str(meter_shape_id)),
+                    None,
+                )
+                if meter_pic is not None:
+                    blip = meter_pic.find(q("p:blipFill") + "/" + q("a:blip"))
+                    rel_id = blip.get(q("r:embed")) if blip is not None else None
+                    rels = raw_slide_rels[target_slide_index]
+                    image_target = next(
+                        (rel.get("Target") for rel in rels.findall(q("rel:Relationship"))
+                         if rel.get("Id") == rel_id),
+                        "",
+                    ) if rels is not None else ""
+                    expected_image = (
+                        "image13.png" if expected_meter == "green"
+                        else "image12.png"
+                    )
+                    if not image_target.endswith(expected_image):
+                        problems.append(
+                            f"dictation does not use the requested {expected_meter} meter image"
+                        )
+                timing = raw_slide_roots[target_slide_index].find(q("p:timing"))
+                timed_shapes = {
+                    target.get("spid")
+                    for target in timing.findall(".//" + q("p:spTgt"))
+                } if timing is not None else set()
+                if str(target_shape.shape_id) not in timed_shapes:
+                    problems.append(
+                        f"{expected_meter} dictation sentence has no click-to-reveal "
+                        "animation"
                     )
                 chars = []
                 for paragraph in target_shape.text_frame.paragraphs:
