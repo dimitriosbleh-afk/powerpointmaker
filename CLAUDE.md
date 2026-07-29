@@ -71,7 +71,7 @@ Node.js project using PptxGenJS to generate explicit teaching slide decks with c
 ## Commands
 
 ```bash
-node scripts/build_and_check.js builds/build_<unit>_lesson<n>.js  # Build + enforce QA gates (diagnostics + markitdown)
+node scripts/build_and_check.js builds/build_<unit>_lesson<n>.js  # Build + enforce 7 QA gates (see MEGA_PROMPT 59a)
 node builds/build_<unit>_lesson<n>.js          # Build only (no automated checks)
 node tests/test_theme.js <subject> <level> [variant] # Test a theme combo
 python -m markitdown output/<file>.pptx        # Content QA - check text, order, typos (manual)
@@ -148,6 +148,9 @@ Teacher notes are a live teleprompter and heads-up display: ~98% of the time the
 - `SCAN` is the decision beat, three short lines, only at genuine decision points: where to look / `80%+ -> [proceed]` / `Less -> [pivot with a different representation], re-ask`. Never one compound sentence.
 - `TRAP:` is the error + `Fix:` ending with the student redoing the step, over one or two short lines. `TRAP: counting only shaded parts. Fix: hand on whole strip, count all, student recounts.`
 - Reveal slides NEVER copy the base slide's notes. Pass `withReveal(buildFn, revealFn, { revealNotes: composeRevealNotes({ answer, beats, prep }) })` - a short post-reveal script (REVEALED: line, tick-and-fix beat, optional cold-call follow-up). Gate 4 fails the build on consecutive identical notes.
+  - **Legacy fallback (do not rely on it):** when `revealNotes` is omitted, `withReveal` DERIVES post-reveal notes from the base slide's notes. It exists only so the 250+ decks written before the rule still build, and it prints an `ADVISORY`. A deck you write from scratch must always pass authored `revealNotes`.
+- **Long note lines are wrapped, not rejected.** `composeGlanceNotes` splits any physical line over 16 words into indented continuations and prints an `ADVISORY`. The rendered guarantee is unchanged; only the failure mode is. The 120-word live-zone budget still throws, because that is a content problem - the slide is doing too much - and no rewrapping fixes it. Cut a beat or split the slide.
+- **`ADVISORY` lines in build output are work not yet done.** They are non-failing on purpose (legacy decks depend on the fallbacks), but a new lesson should produce **zero**. If you see one, author the thing the pipeline just guessed at.
 - Exponents in notes use the ASCII caret (`10^6`), never "10 to the 6" spelled out. Division stays in words (`12 divided by 3`).
 - SAY voice is unchanged from what teachers trust: warm natural classroom talk, up to ~20 words per beat (one breath), never clipped fragments (`Watch me`), never presenter copy (`Today we are going to...`). On modelling beats script the think-aloud as connected teacher talk. Action segments are verb-first, <=10 words.
 - Student-impact micro rules: every `ASK:` carries think time and ONE all-student response routine (boards, choral, fingers, turn and tell - never volunteer hands); `EXPECT:` is student voice, with `ACCEPT:` where a partial answer counts; explain prompts include a sentence stem (`I know it is ... because ...`); scripted feedback names the strategy, never bare `good job`; `REVEAL` segments state their protection (`REVEAL after boards scanned`).
@@ -273,7 +276,16 @@ Visual reference deck: `node scripts/build_and_check.js builds/build_visual_cata
 - `compareVisualSlide(...)` is available on every theme object for We Do comparison of two posters, layouts, advertisements, or similar designed visuals.
 - Science process/system topics can also use the dedicated `processFlowSlide(...)` builder for ordered journeys, cycles, and body systems.
 - Science cycle topics should prefer the dedicated `cycleDiagramSlide(...)` builder over manual text-plus-arrow layouts.
-- `withReveal(buildFn, revealFn)` creates duplicate slide pairs for click-to-reveal. Use for CFU answers, We Do solutions, hinge questions. Do NOT use for I Do, exit tickets, or titles.
+- **`clickBuild(slide, [step, step, ...])` is the preferred reveal mechanism** (MEGA_PROMPT §20b). Each step is a function adding the elements that appear on that click; anything added outside a step is visible from the start. It writes real PowerPoint entrance animations into the finished file, so one slide carries the whole build. Use it for I Do models built step by step, We Do answers, CFU reveals and Daily Review answers.
+  ```js
+  const s = contentSlide(pres, "12 divided by 3", [...], notes, footer);
+  clickBuild(s, [
+    () => { s.addText("3 groups", {...}); },
+    () => { addRevealAnswerBar(s, ["4"], { y: 4.25 }); },
+  ]);
+  ```
+  Shape ids are derived from `_slideObjects` position, so call `clickBuild` AFTER the base slide is built and do not remove elements afterwards — the build fails loudly if a step targets a missing element.
+- `withReveal(buildFn, revealFn, { revealNotes })` duplicates the whole slide and is now the FALLBACK, for when the answer slide needs a genuinely different layout rather than extra elements on top. It doubles the slide count and forces separate reveal notes. Do NOT use for I Do (it breaks the model in half), exit tickets, or titles.
 - Every lesson with companion PDFs gets a resource slide via `addResourceSlide()` from `pdf_helpers.js`.
 - Per-lesson build output goes to `output/<LessonFolder>/` - PPTX at the root, companion PDFs in a `resources-session{N}/` subfolder where `N` is the session number within that week's sequence. This is the build step, not the delivery step.
 - PptxGenJS hyperlinks use relative paths - include the subfolder prefix (e.g., `resources-session3/Session 3 Worksheet.pdf`).
@@ -365,7 +377,7 @@ Agents ARE useful for: research, reading reference files, visual QA inspection o
 ## QA (Required)
 
 First render is almost never correct. After every build:
-0. **Use `node scripts/build_and_check.js builds/build_<unit>_lesson<n>.js` as the default build command.** It runs the build, checks for diagnostics errors/warnings, and runs markitdown. If it exits non-zero, the build has failed — fix the issue before proceeding. Do NOT skip this step or ignore its output. **The gate script is the minimum automated bar, not a substitute for visual inspection.** Passing it means the build is structurally sound — it does NOT mean the slides look correct.
+0. **Use `node scripts/build_and_check.js builds/build_<unit>_lesson<n>.js` as the default build command.** It runs seven gates: build, diagnostics, markitdown + forbidden markers, slide text hygiene, teacher notes format, hyperlink integrity, and lesson structure (resources placement, opening order, We Do vs You Do). If it exits non-zero, the build has failed — fix the issue before proceeding. Do NOT skip this step or ignore its output. **The gate script is the minimum automated bar, not a substitute for visual inspection.** Passing it means the build is structurally sound — it does NOT mean the slides look correct.
 1. **Smoke build early.** If the script contains any manual/custom slide work, new helper usage, or new resource generation, run `build_and_check.js` after writing the PPTX-generating code but BEFORE writing companion PDFs. Do not write the entire script (slides + PDFs) in one pass and only build at the end. Catch API/signature errors while the change set is small and the fix is obvious.
 2. The gate script covers markitdown automatically. If it reports FAIL on the markitdown gate, that is a blocker — do not dismiss it as "intermittent" or "environmental" without concrete evidence (e.g. markitdown works on other PPTX files in the same session).
 3. **Visual QA is required after the gate passes.** Run `pptx_to_images.py` to generate slide previews, then inspect them directly. Look for: overlaps, text overflow, low contrast, uneven spacing, missing elements, text cut off, reveal mistakes, broken links, or elements below 5.1". The gate script cannot catch single-text-box overflow, reveal bar overlap, or visual imbalance — only eyes can.
