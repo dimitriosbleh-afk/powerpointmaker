@@ -1,0 +1,26 @@
+{
+  "unit_folder": "RR_Positive_Coping_Unit",
+  "unit_pptx_name": "Positive Coping Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_rr3_s1.js",
+      "folder": "RR3_Session1_Notice_Your_Self_Talk",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_rr3_s2.js",
+      "folder": "RR3_Session2_Argue_Back",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_rr3_s3.js",
+      "folder": "RR3_Session3_Your_Coping_Profile",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_rr3_s4.js",
+      "folder": "RR3_Session4_Sharing_Coping_Strategies",
+      "session": 4
+    }
+  ]
+}
