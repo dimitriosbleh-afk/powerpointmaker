@@ -14,11 +14,6 @@ from pathlib import Path
 
 REL_NS = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
 NOTES_REL_SUFFIX = "/notesSlide"
-NOTE_HEADER_RE = re.compile(
-    r"^(SAY|DO|PACING OVERVIEW|CFU CHECKPOINT|TEACHER NOTES|ENABLING & EXTENDING|"
-    r"MISCONCEPTIONS|SENSITIVITY ADVISORY|WATCH FOR|SOURCES):?$",
-    re.IGNORECASE,
-)
 MARKDOWN_PATTERNS = [
     re.compile(r"\*\*[^*]+\*\*"),
     re.compile(r"_[^_\n]+_"),
@@ -54,16 +49,17 @@ LI_NOTE_MISMATCH_PATTERNS = [
     re.compile(r"\bchoral read lis?\b", re.IGNORECASE),
 ]
 
+# Note: per-section note budgets (SAY / DO / TEACHER NOTES / WATCH FOR bullet
+# caps) used to live here. They matched the pre-v11 sectioned note format and
+# became dead the moment decks moved to the Glance Format, which has no such
+# headers. Glance live-zone budgets are now enforced as hard errors by
+# build_and_check.js Gate 4, so they are not duplicated here.
 PROFILES = {
     "literacy-60": {
         "max_unique_warn": 14,
         "max_unique_error": 16,
         "max_reveal_pairs": 2,
         "max_explicit_vocab": 2,
-        "max_say_bullets": 4,
-        "max_do_bullets": 4,
-        "max_teacher_sentences": 2,
-        "max_watch_for_bullets": 2,
     }
 }
 
@@ -184,37 +180,6 @@ def is_reveal_pair(left: SlideData, right: SlideData) -> bool:
     same_first_line = bool(left.text_lines and right.text_lines and left.text_lines[0].strip().lower() == right.text_lines[0].strip().lower())
     reveal_hint = "reveal" in left.notes_text.lower() or "reveal" in right.notes_text.lower()
     return len(right_tokens) >= len(left_tokens) and overlap >= 0.82 and (same_first_line or reveal_hint)
-
-
-def split_note_sections(notes_lines: list[str]) -> dict[str, list[str]]:
-    sections: dict[str, list[str]] = {}
-    current: str | None = None
-
-    for raw_line in notes_lines:
-        line = raw_line.strip()
-        if not line:
-            continue
-        match = NOTE_HEADER_RE.match(line)
-        if match:
-            current = match.group(1).upper()
-            sections.setdefault(current, [])
-            continue
-        if current:
-            sections.setdefault(current, []).append(line)
-
-    return sections
-
-
-def bullet_count(lines: list[str]) -> int:
-    return sum(1 for line in lines if re.match(r"^\s*[-•]", line))
-
-
-def sentence_count(text: str) -> int:
-    stripped = text.strip()
-    if not stripped:
-        return 0
-    parts = re.split(r"(?<=[.!?])\s+", stripped)
-    return sum(1 for part in parts if part.strip())
 
 
 def likely_footer(line: str) -> bool:
@@ -351,7 +316,6 @@ def analyze(slides: list[SlideData], profile_name: str) -> tuple[list[Issue], di
         explicit_vocab_count += int(explicit_vocab)
         incidental_vocab_count += int(incidental_vocab)
 
-        note_sections = split_note_sections(slide.notes_lines)
         notes_text = slide.notes_text
 
         for hit in scan_assumption_phrases(slide.slide_text):
@@ -366,20 +330,6 @@ def analyze(slides: list[SlideData], profile_name: str) -> tuple[list[Issue], di
                 issues.append(Issue("warning", f"slide {slide.index} notes", "Notes contain non-ASCII characters; PowerPoint notes should stay ASCII-safe."))
             if "PACING OVERVIEW" in notes_text.upper():
                 issues.append(Issue("warning", f"slide {slide.index} notes", "Notes contain a PACING OVERVIEW block; lean notes should avoid it."))
-
-        say_count = bullet_count(note_sections.get("SAY", []))
-        do_count = bullet_count(note_sections.get("DO", []))
-        teacher_notes_sentences = sentence_count(" ".join(note_sections.get("TEACHER NOTES", [])))
-        watch_for_count = bullet_count(note_sections.get("WATCH FOR", []))
-
-        if say_count > profile["max_say_bullets"]:
-            issues.append(Issue("warning", f"slide {slide.index} notes", f"SAY has {say_count} bullets; profile max is {profile['max_say_bullets']}."))
-        if do_count > profile["max_do_bullets"]:
-            issues.append(Issue("warning", f"slide {slide.index} notes", f"DO has {do_count} bullets; profile max is {profile['max_do_bullets']}."))
-        if teacher_notes_sentences > profile["max_teacher_sentences"]:
-            issues.append(Issue("warning", f"slide {slide.index} notes", f"TEACHER NOTES has {teacher_notes_sentences} sentences; profile max is {profile['max_teacher_sentences']}."))
-        if watch_for_count > profile["max_watch_for_bullets"]:
-            issues.append(Issue("warning", f"slide {slide.index} notes", f"WATCH FOR has {watch_for_count} bullets; profile max is {profile['max_watch_for_bullets']}."))
 
         issues.extend(li_sc_issues(slide))
         issues.extend(resource_slide_issues(slide))

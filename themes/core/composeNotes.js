@@ -167,6 +167,71 @@ const GLANCE_VALIDATION_OPTS = {
 };
 
 const CONTINUATION_INDENT = "   ";
+const MAX_LINE_WORDS = 16;
+
+// A continuation line must never begin with a token that groupGlanceUnits
+// treats as the start of a new logical unit, or one beat would be read as two.
+const UNIT_START_TOKEN = /^(?:ANSWER:|REVEALED[.:]|\d+[.)]\s|TRAP:|STRETCH:|HELP:|CARE:|SCAN\b|REVEAL\b)/;
+
+/**
+ * Break a physical line that exceeds the rendered word budget into a first
+ * line plus indented continuations (megaprompt section 46).
+ *
+ * The budget exists because a line that wraps on an iPad is unglanceable. A
+ * line the author wrote long is still better served by being split at a
+ * sensible boundary than by failing the build, so prefer sentence ends, then
+ * clause boundaries, then a plain word wrap.
+ */
+function wrapGlanceLine(line) {
+  const words = String(line).trim().split(/\s+/);
+  if (words.length <= MAX_LINE_WORDS) return [line];
+
+  // Advisory on stdout, not stderr: wrapping keeps the rendered guarantee, so
+  // it must not fail the build, but the machine breaks the line where the
+  // arithmetic lands, not where the idea does. Section 46 wants one idea per
+  // physical line, which only the author can judge.
+  console.log(
+    `ADVISORY note line auto-wrapped at ${MAX_LINE_WORDS} words - split it yourself ` +
+    `at the idea boundary: "${String(line).trim().slice(0, 52)}..."`
+  );
+
+  const out = [];
+  let rest = String(line).trim();
+  let isFirst = true;
+
+  while (rest.split(/\s+/).length > MAX_LINE_WORDS) {
+    const words2 = rest.split(/\s+/);
+    const window = words2.slice(0, MAX_LINE_WORDS).join(" ");
+
+    // Prefer a sentence end, then a clause boundary, inside the window.
+    let cut = -1;
+    const sentence = window.lastIndexOf(". ");
+    const clause = Math.max(window.lastIndexOf(", "), window.lastIndexOf(" - "));
+    if (sentence > window.length * 0.35) cut = sentence + 1;
+    else if (clause > window.length * 0.35) cut = clause + 1;
+    else cut = window.lastIndexOf(" ");
+
+    let head = rest.slice(0, cut).trim();
+    let tail = rest.slice(cut).trim();
+    if (!head || !tail) break;
+
+    // Never let a continuation open with a unit-start token.
+    if (UNIT_START_TOKEN.test(tail)) {
+      const back = head.lastIndexOf(" ");
+      if (back > 0) {
+        tail = `${head.slice(back + 1)} ${tail}`.trim();
+        head = head.slice(0, back).trim();
+      }
+    }
+
+    out.push(isFirst ? head : CONTINUATION_INDENT + head);
+    isFirst = false;
+    rest = tail;
+  }
+
+  if (rest) out.push(isFirst ? rest : CONTINUATION_INDENT + rest);
+  return out;
+}
 
 /**
  * Compose Glance Format notes (megaprompt v12.3 sections 45-47).
@@ -239,7 +304,9 @@ function composeGlanceNotes(input, opts) {
   const lines = [];
   blocks.forEach((block, idx) => {
     if (idx > 0) lines.push("");
-    lines.push(...block);
+    // Wrap before validating: a long line the author wrote is split at a
+    // sensible boundary rather than failing the build.
+    block.forEach((line) => lines.push(...wrapGlanceLine(line)));
   });
 
   const prep = list(i.prep);

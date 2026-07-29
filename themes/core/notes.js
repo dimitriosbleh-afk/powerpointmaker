@@ -653,10 +653,19 @@ function installNotesPatch(PptxGenJS) {
   patchedAddNotes.__teacherNotesPatched = true;
   proto.addNotes = patchedAddNotes;
 
+  // The single post-write pass. PptxGenJS has finished the file at this point,
+  // so anything the library cannot express itself (structured notes XML, click
+  // build timing trees) is written here.
   async function patchedWriteFile(props) {
     const filePath = await originalWriteFile.call(this, props);
     if (typeof filePath === "string") {
-      await rewriteSpeakerNotesInFile(filePath, this.slides || []);
+      const slides = this.slides || [];
+      await rewriteSpeakerNotesInFile(filePath, slides);
+      // Lazy require: animations.js needs nothing from this module, so there
+      // is no cycle, but keeping it lazy means decks that never call
+      // clickBuild() do not pay for loading it.
+      const { injectClickBuildsInFile } = require("./animations");
+      await injectClickBuildsInFile(filePath, slides);
     }
     return filePath;
   }

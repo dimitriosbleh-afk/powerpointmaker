@@ -1,9 +1,14 @@
 "use strict";
 
 /**
- * Build gate script — runs a lesson build and enforces two hard checks:
+ * Build gate script — runs a lesson build and enforces seven hard checks:
+ *   0. The build itself completes
  *   1. Zero diagnostics errors/warnings in build output
- *   2. markitdown parses the output PPTX without failure
+ *   2. markitdown parses the PPTX, and no forbidden output markers survive
+ *   3. Slide-face text hygiene (banned characters, layout-by-spaces)
+ *   4. Teacher notes format (Glance Format budgets, reveal notes not duplicated)
+ *   5. Hyperlink integrity (relative targets resolve)
+ *   6. Lesson structure (resources placement, opening order, We Do vs You Do)
  *
  * Usage:
  *   node scripts/build_and_check.js builds/build_foo_lesson1.js
@@ -17,7 +22,7 @@
 const { spawnSync } = require("child_process");
 const path = require("path");
 const fs = require("fs");
-const { scanTextForForbiddenOutput, validateNotesFormat } = require("./qa_lib");
+const { scanTextForForbiddenOutput, validateNotesFormat, validateLessonStructure } = require("./qa_lib");
 
 /* ── Patterns ──────────────────────────────────────────────────────────────── */
 
@@ -256,7 +261,16 @@ async function main() {
       if (!target) continue;
       externalLinks++;
       if (/^[a-z][a-z0-9+.-]*:/i.test(target)) continue; // http:, https:, mailto: etc.
-      const decoded = decodeURIComponent(target.split("#")[0]);
+      // The target lives in XML, so an apostrophe in a resource name arrives
+      // as &apos;. Unescape before touching the filesystem, or a perfectly
+      // good link reads as broken.
+      const unescaped = target
+        .replace(/&apos;/g, "'")
+        .replace(/&quot;/g, '"')
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">")
+        .replace(/&amp;/g, "&");
+      const decoded = decodeURIComponent(unescaped.split("#")[0]);
       if (!fs.existsSync(path.join(deckDir, decoded))) {
         linkIssues.push(`link target does not exist: "${decoded}" (relative to ${deckDir})`);
       }
@@ -267,6 +281,34 @@ async function main() {
       gatesFailed++;
     } else {
       console.log("PASS (" + externalLinks + " external link(s) checked)");
+    }
+  }
+
+  /* ── Gate 6: lesson structure ──────────────────────────────────────────── */
+  // Rules that were honour-system until now: Teacher Resources near the front
+  // (section 0a item 19), the fixed opening order (section 0a item 23), maths
+  // decks carrying Fluency (section 23), and You Do not reusing We Do content
+  // (section 35). Skipped entirely for decks with no LI slide, so catalogues
+  // and smoke tests never trip it.
+
+  console.log("\n── Lesson structure ───────────────────────────────────");
+
+  if (!pptxFile) {
+    console.error("SKIP — no PPTX located");
+  } else {
+    try {
+      const structureIssues = await validateLessonStructure(pptxFile);
+      if (structureIssues.length) {
+        structureIssues.forEach(l => console.error("  ERROR " + l));
+        console.error("FAIL — " + pluralise(structureIssues.length, "structure issue"));
+        gatesFailed++;
+      } else {
+        console.log("PASS");
+      }
+    } catch (err) {
+      console.error("  ERROR " + err.message);
+      console.error("FAIL — could not validate lesson structure");
+      gatesFailed++;
     }
   }
 

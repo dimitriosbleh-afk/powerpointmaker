@@ -122,17 +122,29 @@ function testAiryGlanceFormat() {
   assert(/\n\n1\. SAY:/.test(notes), "blocks should separate with a blank line:\n" + notes);
   assert(notes.includes("TRAP: \"A, 3 times\""), notes);
 
-  // Rendered budgets are hard errors: a 40-word single-line beat must throw.
-  assert.throws(
-    () => composeGlanceNotes({
-      answer: "six",
-      beats: [
-        "ASK: How many? 10 sec, boards up. EXPECT: six.",
-        "SAY: " + Array.from({ length: 40 }, (_, n) => `word${n}`).join(" "),
-      ],
-      prep: "Over-budget fixture.",
-    }),
-    /exceeds 16 words/
+  // Line length is a FORMATTING budget, so an over-long beat is wrapped into
+  // indented continuations rather than rejected. What matters is the
+  // guarantee on the output: no rendered line exceeds 16 words. (The 120-word
+  // live-zone budget below is a CONTENT budget and still throws, because no
+  // amount of rewrapping can cut a slide that is doing too much.)
+  const wrapped = composeGlanceNotes({
+    answer: "six",
+    beats: [
+      "ASK: How many? 10 sec, boards up. EXPECT: six.",
+      "SAY: " + Array.from({ length: 40 }, (_, n) => `word${n}`).join(" "),
+    ],
+    prep: "Over-budget fixture.",
+  });
+  const liveLines = wrapped.split("\n---")[0].split("\n").filter((l) => l.trim());
+  liveLines.forEach((line) => {
+    assert(
+      line.trim().split(/\s+/).length <= 16,
+      `wrapped line still over 16 words: "${line}"`
+    );
+  });
+  assert(
+    liveLines.some((l) => l.startsWith("   ")),
+    "an over-long beat should produce indented continuation lines:\n" + wrapped
   );
 
   // A live zone over 120 words must throw even when every line is short.

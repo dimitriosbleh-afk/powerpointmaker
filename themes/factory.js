@@ -10,6 +10,7 @@ const { normalizeLessonTargets, sanitizeTeacherNotes, appendSourcesToNotes, inst
 const { makeShadow, makeCardShadow } = require("./core/shadows");
 const { createElements }           = require("./core/elements");
 const { withReveal }               = require("./core/withReveal");
+const { clickBuild }               = require("./core/animations");
 const { createImageHelpers }       = require("./core/images");
 const { warnIfSlideHasOverlaps, warnIfSlideElementsOutOfBounds, runSlideDiagnostics } = require("./core/diagnostics");
 const { getGradeBand, getGradeSizes } = require("./core/gradeBand");
@@ -175,7 +176,10 @@ function createTheme(subject, yearLevel, variant) {
     ...el,
     ...img,
 
-    // Click-to-reveal
+    // Click-to-reveal. clickBuild is the preferred mechanism (one slide, one
+    // element per click); withReveal duplicates the slide and is the fallback
+    // for cases a click build cannot express. Megaprompt section 20b.
+    clickBuild,
     withReveal,
 
     // Diagnostics
