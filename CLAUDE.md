@@ -336,6 +336,32 @@ grids, missing/non-green answer checks, undersized grammar examples, or incorrec
 dictation cue formatting. Run `python tests/test_og_builder_regressions.py` before
 changing the OG builder, its sample specification, or its note rules.
 
+## Auslan Decks - Two-Step Pipeline
+
+Auslan units use two prompts in `IMPORTANT/`, numbered by step:
+`AUSLAN_1_UNIT_PROMPT.md` (run in a chat, produces the unit planning document)
+then `AUSLAN_2_SLIDES_PROMPT.md` (run in this repo with that document pasted,
+builds the session decks + PDFs through the normal theme pipeline, literacy
+theme). Hard rules that override everything else for Auslan builds: never draw,
+generate, or mirror a sign image - images come only from the shared bank at
+`assets/auslan_signs/`, populated by `python scripts/fetch_auslan_signs.py
+--glosses ...` (Signbank frame-sequence strips, `<GLOSS>.jpg` plus `_2`/`_3`
+variants; see the bank README for licensing), with a lookup-card fallback
+linking `https://auslan.org.au/dictionary/search/?query=<word>` (never a guessed
+Signbank entry URL); never compose multi-sign gloss strings on any slide or PDF
+- students read plain English, the teacher models the Auslan. Every Auslan build
+script prints a SIGN ASSETS report (found/missing glosses) which goes in the
+final summary. `assets/auslan_signs/manifest.json` records the Signbank entry
+and dictionary definition behind every image - check a sign's recorded sense
+matches the lesson before shipping, because a plausible image of the wrong sense
+is invisible in a rendered slide.
+**The sign images, and the manifest, are gitignored on purpose**: they are
+licensed for internal school teaching only and this repo has a public remote.
+Only the recipe is tracked (README, `core_glosses.txt`, the fetcher). If the
+bank is empty on a fresh clone, rebuild it with
+`python scripts/fetch_auslan_signs.py --from-file assets/auslan_signs/core_glosses.txt`
+(about 2 minutes). Never commit sign images and never publish a built Auslan deck.
+
 ## Multi-Session Unit Delivery (Required)
 
 When the user requests more than one session in a single ask (a unit, a week, a multi-day sequence, "lessons 1 to N"), the delivered output MUST be one combined PowerPoint and one flat `Resources/` subfolder. Per-lesson folders are a build-step intermediate, not the deliverable.

@@ -49,3 +49,14 @@ scripts/notes*.json
 scripts/_l_extracts/
 scripts/_ochre_dump/
 _archive/*_dump.txt
+
+# Auslan sign images (Signbank-derived, internal school teaching use only).
+# NEVER commit these - this repo has a public remote and publishing them would
+# be redistribution outside both the CC BY-NC-ND licence and the schools
+# statutory educational licence. They are rebuilt in minutes by
+# scripts/fetch_auslan_signs.py; manifest.json records exactly what to rebuild.
+assets/auslan_signs/*.jpg
+assets/auslan_signs/*.png
+# manifest.json embeds Signbank's dictionary definitions; it regenerates with
+# the images, so it stays local too.
+assets/auslan_signs/manifest.json

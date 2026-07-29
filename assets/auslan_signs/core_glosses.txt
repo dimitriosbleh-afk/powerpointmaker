@@ -1,0 +1,272 @@
+# Core Auslan gloss list - high-frequency signs across F-6 primary units.
+#
+# Fetch the lot once per machine:
+#   python scripts/fetch_auslan_signs.py --from-file assets/auslan_signs/core_glosses.txt
+#
+# Glosses already in the bank are skipped without a request, so re-running this
+# after adding a unit's vocabulary costs nothing. Lines starting with # are
+# ignored. Anything Signbank does not carry is reported MISSING - that is
+# information, not a failure: it usually means the concept is a depicting sign
+# or a phrase rather than a single lexical sign.
+
+# Greetings and social
+HELLO
+GOODBYE
+PLEASE
+THANK-YOU
+SORRY
+WELCOME
+MEET
+FRIEND
+NAME
+YES
+NO
+
+# Question signs
+WHAT
+WHO
+WHERE
+WHEN
+WHY
+HOW
+WHICH
+
+# Repair, response and classroom management
+AGAIN
+UNDERSTAND
+KNOW
+WAIT
+FINISH
+MORE
+HELP
+WANT
+LIKE
+FAVOURITE
+MAYBE
+READY
+STOP
+START
+
+# Pronouns and people
+I
+YOU
+WE
+THEY
+PERSON
+PEOPLE
+
+# Family
+MOTHER
+FATHER
+SISTER
+BROTHER
+FAMILY
+GRANDMOTHER
+GRANDFATHER
+BABY
+
+# School
+SCHOOL
+TEACHER
+STUDENT
+CLASS
+LEARN
+READ
+WRITE
+BOOK
+PEN
+PENCIL
+PAPER
+COMPUTER
+LIBRARY
+TOILET
+PLAYGROUND
+LUNCH
+QUESTION
+ANSWER
+# HOMEWORK has no Signbank entry - it is fingerspelled or compounded.
+
+# Time
+TODAY
+TOMORROW
+YESTERDAY
+NOW
+LATER
+SOON
+BEFORE
+AFTER
+NEXT
+THEN
+PAST
+FUTURE
+MORNING
+AFTERNOON
+NIGHT
+WEEK
+MONTH
+YEAR
+DAY
+TIME
+EARLY
+LATE
+
+# Days of the week
+MONDAY
+TUESDAY
+WEDNESDAY
+THURSDAY
+FRIDAY
+SATURDAY
+SUNDAY
+
+# Numbers and quantity
+ONE
+TWO
+THREE
+FOUR
+FIVE
+SIX
+SEVEN
+EIGHT
+NINE
+TEN
+HUNDRED
+NUMBER
+MANY
+FEW
+# Numbers above ten are a productive system rather than separate dictionary
+# words, so TWENTY, THIRTY and so on return nothing here. Teach them from
+# Signbank's Number Signs page: https://auslan.org.au/dictionary/numbersigns/
+
+# Colours
+RED
+BLUE
+GREEN
+YELLOW
+BLACK
+WHITE
+ORANGE
+PURPLE
+PINK
+BROWN
+
+# Feelings
+HAPPY
+SAD
+ANGRY
+TIRED
+SCARED
+EXCITED
+WORRIED
+PROUD
+NERVOUS
+BORED
+SICK
+LOVE
+
+# Food and drink
+FOOD
+DRINK
+WATER
+MILK
+BREAD
+FRUIT
+APPLE
+BANANA
+BREAKFAST
+DINNER
+HUNGRY
+THIRSTY
+EAT
+
+# Animals
+DOG
+CAT
+BIRD
+FISH
+HORSE
+COW
+SHEEP
+KANGAROO
+SNAKE
+SPIDER
+
+# Deaf community and language
+DEAF
+HEARING
+AUSLAN
+SIGN
+INTERPRETER
+COMMUNITY
+CULTURE
+LANGUAGE
+
+# Sport and recreation
+SPORT
+PLAY
+RUN
+SWIM
+FOOTBALL
+CRICKET
+BASKETBALL
+TENNIS
+DANCE
+MUSIC
+GAME
+WIN
+LOSE
+TEAM
+CLUB
+
+# Common verbs
+GO
+COME
+SEE
+LOOK
+WATCH
+SLEEP
+WORK
+MAKE
+GIVE
+TAKE
+HAVE
+NEED
+THINK
+REMEMBER
+FORGET
+TELL
+ASK
+SHOW
+
+# Common describing words
+BIG
+SMALL
+GOOD
+BAD
+HOT
+COLD
+NEW
+OLD
+FAST
+SLOW
+EASY
+HARD
+IMPORTANT
+DIFFERENT
+SAME
+
+# Places and travel
+HOME
+HOUSE
+SHOP
+PARK
+BEACH
+CITY
+COUNTRY
+AUSTRALIA
+HOSPITAL
+BUS
+CAR
+TRAIN
+FARM
+ZOO
