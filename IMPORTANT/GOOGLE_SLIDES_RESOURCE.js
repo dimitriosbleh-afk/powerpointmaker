@@ -2,9 +2,13 @@
  * Google Apps Script — Resource Link Updater
  *
  * HOW TO USE:
- * 1. Upload your PPTX to Google Drive (it converts to Google Slides automatically)
+ * 1. Upload your PPTX to Google Drive
  * 2. Upload the companion PDFs to a folder on Google Drive
- * 3. Open the Google Slides presentation
+ * 3. Open the presentation, then use File > Save as Google Slides and work in
+ *    the converted copy. Uploading a PPTX does NOT convert it automatically
+ *    unless "Convert uploads" is enabled in Drive settings. While the filename
+ *    still shows a .PPTX badge, Google hides the Extensions menu entirely and
+ *    Apps Script cannot be opened.
  * 4. Go to Extensions > Apps Script
  * 5. Paste this entire script into the editor (replace any existing code)
  * 6. Click Save, then Run > linkResources
