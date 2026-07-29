@@ -380,6 +380,14 @@ async function build() {
     NOTES_TITLE
   );
 
+  addResourceSlide(
+    pres,
+    RESOURCE_ITEMS,
+    T,
+    FOOTER,
+    NOTES_RESOURCES
+  );
+
   // SLIDE 2 -- LI / SC
   liSlide(
     pres,
@@ -550,7 +558,7 @@ async function build() {
   withReveal(
     buildCfuBase,
     (slide) => {
-      const revealY = 4.90;
+      const revealY = 4.68;
       addCard(slide, 0.5, revealY, 9, 0.42, { fill: C.SUCCESS });
       slide.addText("Correct: B  --  non-essential clause needs commas", {
         x: 0.5, y: revealY, w: 9, h: 0.42,
@@ -612,13 +620,7 @@ async function build() {
   );
 
   // SLIDE 14 -- Resources
-  addResourceSlide(
-    pres,
-    RESOURCE_ITEMS,
-    T,
-    FOOTER,
-    NOTES_RESOURCES
-  );
+
 
   // ---- PDF: Relative Clauses Practice -------------------------------------
   const ws = createPdf({ title: RC_RESOURCE.name });

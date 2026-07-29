@@ -452,6 +452,8 @@ async function build() {
   titleSlide(pres, UNIT_TITLE, "Lesson 5: Two-Digit Take Away with Money",
     `Year 2 Numeracy | Lesson ${SESSION} of ${TOTAL}`, NOTES_TITLE);
 
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
   // Slides 2-3: Daily Review with reveal — importance of zero
   withReveal(
     () => {
@@ -754,7 +756,7 @@ async function build() {
     NOTES_CLOSING);
 
   // Slide 16: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
 
   // Write PPTX
   fs.mkdirSync(OUT_DIR, { recursive: true });

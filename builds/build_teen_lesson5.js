@@ -440,6 +440,8 @@ async function build() {
   titleSlide(pres, UNIT_TITLE, "Session 5: Representing Teen Numbers",
     "Foundation Numeracy | Session 5 of 5 | Term 2 Week 1", NOTES_TITLE);
 
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
   // DR (withReveal) — Data: sorting objects
   withReveal(
     () => {
@@ -755,7 +757,7 @@ async function build() {
     NOTES_CLOSING);
 
   // Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
 
   // Write PPTX
   fs.mkdirSync(OUT_DIR, { recursive: true });

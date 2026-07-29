@@ -359,6 +359,14 @@ async function build() {
     NOTES_TITLE
   );
 
+  addResourceSlide(
+    pres,
+    RESOURCE_ITEMS,
+    T,
+    FOOTER,
+    NOTES_RESOURCES
+  );
+
   // Slide 2 -- LI/SC
   liSlide(
     pres,
@@ -548,13 +556,7 @@ async function build() {
   );
 
   // Slide 13 -- Resources
-  addResourceSlide(
-    pres,
-    RESOURCE_ITEMS,
-    T,
-    FOOTER,
-    NOTES_RESOURCES
-  );
+
 
   // -----------------------------------------------------------------------
   // Companion PDFs

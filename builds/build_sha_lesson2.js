@@ -359,6 +359,8 @@ async function build() {
   titleSlide(pres, UNIT_TITLE, "Lesson 2: Straight and Curved Sides",
     `Year 2 Numeracy | Lesson ${SESSION} of ${TOTAL}`, NOTES_TITLE);
 
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
   // Slides 2-3: Daily Review with reveal — Order three pencils
   withReveal(
     () => {
@@ -438,7 +440,7 @@ async function build() {
   });
 
   // Below: whisper-then-say cue
-  addCard(sFluency, 1.5, cardY + cardH + 0.20, 7.0, 0.55, { strip: C.PRIMARY });
+  addCard(sFluency, 1.5, cardY + cardH + 0.15, 7.0, 0.55, { strip: C.PRIMARY });
   sFluency.addText("Whisper the answer. Then say it loud.", {
     x: 1.7, y: cardY + cardH + 0.22, w: 6.6, h: 0.50,
     fontSize: 20, fontFace: FONT_H, color: C.PRIMARY, bold: true,
@@ -725,7 +727,7 @@ async function build() {
     NOTES_CLOSING);
 
   // Slide 14: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
 
   // Write PPTX
   fs.mkdirSync(OUT_DIR, { recursive: true });

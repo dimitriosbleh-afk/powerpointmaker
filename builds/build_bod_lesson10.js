@@ -248,6 +248,8 @@ async function build() {
     "Session 10 of 10  |  Year 5/6 Numeracy",
     NOTES_TITLE);
 
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
   // Slide 2-3: Daily Review (one big challenge)
   withReveal(
     () => {
@@ -513,7 +515,7 @@ async function build() {
   }, NOTES_CLOSING);
 
   // Slide 11: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const pptxPath = path.join(OUT_DIR, "BOD_Session10_Final_And_Games.pptx");

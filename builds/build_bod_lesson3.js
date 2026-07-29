@@ -394,6 +394,8 @@ async function build() {
     "Session 3 of 10  |  Year 5/6 Numeracy",
     NOTES_TITLE);
 
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
   // Slide 2-3: Daily Review
   withReveal(
     () => {
@@ -751,7 +753,7 @@ async function build() {
   }, NOTES_CLOSING);
 
   // Slide 19: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const pptxPath = path.join(OUT_DIR, "BOD_Session3_Multiplication_Division.pptx");

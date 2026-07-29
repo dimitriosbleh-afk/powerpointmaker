@@ -354,6 +354,8 @@ async function build() {
 
   titleSlide(pres, "Algebra: Finding Unknown Values", "Session 6: Order of Operations & Brackets", "Grade 5/6 Numeracy | Session 6 of 10 | Week 2", NOTES_TITLE);
 
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
   // DR
   withReveal(
     () => {
@@ -591,7 +593,7 @@ async function build() {
     ],
     NOTES_CLOSING);
 
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const pptxPath = path.join(OUT_DIR, "ALG_Session6_Order_of_Operations.pptx");

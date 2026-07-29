@@ -174,14 +174,14 @@ const NOTES_VOCAB = composeGlanceNotes({
 const NOTES_IDO1 = composeGlanceNotes({
   answer: "4 more. 6 and 4 make 10.",
   beats: [
-    "SHOW the frame with 6 counters. SAY: Watch me. First I count how many are here - 6.",
-    "MODEL counting the empty boxes. SAY: Now I count the empty boxes - 1, 2, 3, 4. Four more make 10.",
-    "SAY: So 6 and 4 make 10. Six and four are friends of 10.",
+    "SHOW the frame. SAY: Watch me. I count what is here - 6.",
+    "MODEL the gaps. SAY: Now the empty boxes - 1, 2, 3, 4. Four more make 10.",
+    "SAY: So 6 and 4 make 10. They are friends of 10.",
     "ASK: How many empty boxes? 5 sec, choral. EXPECT: four.",
   ],
-  trap: "counting the filled boxes instead of the empty ones. Fix: hand over the counters, count only the gaps, child recounts.",
-  stretch: "cover the frame - can you say the friend of 10 for 6 without looking?",
-  help: "give the child their own frame and 6 counters, they fill it and count the empties.",
+  trap: "counting filled boxes, not empty. Fix: count only the gaps, child recounts.",
+  stretch: "cover the frame - say the friend of 10 for 6 without looking.",
+  help: "own frame and 6 counters, child fills it and counts the empties.",
   prep: "First model - meaning before symbols. Count the empty boxes to find how many more make 10.",
   tag: "[Stage 2 | I Do | Explicit teaching | HITS 3, 4]",
 });
@@ -246,14 +246,14 @@ const NOTES_WEDO2 = composeGlanceNotes({
 const NOTES_WEDO3 = composeGlanceNotes({
   answer: "7 more. 3 and 7 make 10.",
   beats: [
-    "SAY: Now you build it. Put 3 counters in the top of your own ten frame.",
-    "SAY: Fill the rest of your frame to make 10. Count the counters you add.",
-    "ASK: How many more did you add? 15 sec, boards up. EXPECT: 7. ACCEPT: 3 and 7 make 10.",
-    "SCAN boards and frames. 80%+ -> reveal. Less -> build it together on the board frame, re-ask.",
+    "SAY: Now you build it. Put 3 counters in your own frame.",
+    "SAY: Fill the rest to make 10. Count what you add.",
+    "ASK: How many more did you add? 15 sec, boards up. EXPECT: 7.",
+    "SCAN boards and frames. 80%+ -> reveal. Less -> build it together, re-ask.",
   ],
-  trap: "leaving a gap or overfilling past 10. Fix: count all boxes to 10, no more, child fixes their frame.",
-  stretch: "build 10 a different way and say your new friends of 10.",
-  help: "hand the child a frame with 3 counters already placed, they fill the rest.",
+  trap: "leaving a gap or going past 10. Fix: count all boxes to 10, child fixes their frame.",
+  stretch: "build 10 another way and say those friends of 10.",
+  help: "frame with 3 counters already placed, child fills the rest.",
   prep: "Students use their own frame and counters (kinaesthetic build). Same skill, now hands-on.",
   tag: "[Stage 3 | We Do | Supported application | HITS 4, 5]",
 });

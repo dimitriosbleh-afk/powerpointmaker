@@ -371,6 +371,15 @@ async function build() {
     NOTES_TITLE
   );
 
+  const theme = { C, FONT_H, FONT_B, addTopBar, addTitle, addFooter, addCard };
+  addResourceSlide(
+    pres,
+    RESOURCE_ITEMS,
+    theme,
+    FOOTER,
+    NOTES_RESOURCES
+  );
+
   // =========================================================================
   // SLIDE 2 -- LI/SC
   // =========================================================================
@@ -557,14 +566,6 @@ async function build() {
   // =========================================================================
   // SLIDE 13 -- Resources
   // =========================================================================
-  const theme = { C, FONT_H, FONT_B, addTopBar, addTitle, addFooter, addCard };
-  addResourceSlide(
-    pres,
-    RESOURCE_ITEMS,
-    theme,
-    FOOTER,
-    NOTES_RESOURCES
-  );
 
   // =========================================================================
   // Generate companion PDFs

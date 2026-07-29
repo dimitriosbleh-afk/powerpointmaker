@@ -446,6 +446,14 @@ async function build() {
     NOTES_TITLE
   );
 
+  addResourceSlide(
+    pres,
+    RESOURCE_ITEMS,
+    T,
+    FOOTER,
+    NOTES_RESOURCES
+  );
+
   // =========================================================================
   // SLIDE 2 -- Learning Intention & Success Criteria
   // =========================================================================
@@ -710,13 +718,7 @@ async function build() {
   // =========================================================================
   // SLIDE 17 -- Resources
   // =========================================================================
-  addResourceSlide(
-    pres,
-    RESOURCE_ITEMS,
-    T,
-    FOOTER,
-    NOTES_RESOURCES
-  );
+
 
   // =========================================================================
   // Generate companion PDFs

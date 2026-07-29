@@ -86,15 +86,15 @@ const NOTES_FLUENCY = composeGlanceNotes({
 });
 
 const NOTES_LAUNCH = composeGlanceNotes({
-  answer: "open - listen for a link between 'how many 2s fit in 6' and 'how many quarters fit in 3'; estimates above 3.",
+  answer: "open - listen for a link to 'how many 2s fit in 6'; estimates above 3.",
   beats: [
-    "POINT to the six counters in groups of two. SAY: We can ask how many 2s fit into 6. Here that is three groups.",
+    "POINT to the counters in twos. SAY: How many 2s fit into 6? Here, three groups.",
     "ASK: How many 2s fit into 6? 10 sec, choral. EXPECT: three.",
-    "SHOW the new question. SAY: Today we ask the same kind of question - how many quarters fit into 3 wholes?",
-    "ASK: Estimate - more than 3 or fewer? 15 sec, boards up. EXPECT: more than 3. ACCEPT: a quarter is small so many fit.",
-    "SCAN boards. 80%+ -> next slide. Less -> fold one strip into quarters, count 4 in one whole, re-ask.",
+    "SHOW the new question. SAY: Same kind of question - how many quarters fit into 3?",
+    "ASK: Estimate - more than 3 or fewer? 15 sec, boards up. EXPECT: more than 3.",
+    "SCAN boards. 80%+ -> next slide. Less -> fold a strip into quarters, count 4, re-ask.",
   ],
-  trap: "estimating fewer than 3 because dividing 'makes it smaller'. Fix: fold one whole into 4, count 4 in ONE whole, student re-estimates.",
+  trap: "estimating fewer than 3 because dividing makes it smaller. Fix: fold one whole into 4, count them, re-estimate.",
   prep: "Launch bridges whole-number grouping division to fitting unit fractions. New concept - assume no prior fraction division.",
   tag: "[Launch | Attention and knowledge | HITS 2, 7]",
 });
@@ -112,14 +112,14 @@ const NOTES_LI_SC = composeGlanceNotes({
 const NOTES_IDO = composeGlanceNotes({
   answer: "12 - twelve quarters fit into 3 wholes, so 3 divided by 1/4 = 12.",
   beats: [
-    "SHOW three whole strips. SAY: Let us work this out together. Watch how I split each whole into quarters.",
-    "MODEL splitting and counting. SAY: One whole holds four quarters. I count 4, 8, 12 - twelve quarters in all.",
-    "SAY: So three divided by one quarter is twelve. I am asking how many quarters fit, not sharing into groups.",
+    "SHOW three strips. SAY: Watch how I split each whole into quarters.",
+    "MODEL splitting. SAY: One whole holds four quarters. I count 4, 8, 12.",
+    "SAY: So 3 divided by one quarter is twelve. How many fit, not sharing into groups.",
     "ASK: How many quarters in ONE whole? 10 sec, choral. EXPECT: four.",
   ],
-  trap: "thinking the answer must be smaller than 3. Fix: point to the 12 quarters on the strips, student says 'more parts fit'.",
+  trap: "thinking the answer must be smaller than 3. Fix: point to the 12 quarters, student says more parts fit.",
   stretch: "how many quarters fit into 5? Start it on paper.",
-  help: "hand the pre-split strip scaffold, student counts the quarters aloud.",
+  help: "pre-split strip scaffold, student counts the quarters aloud.",
   prep: "First model - meaning before any rule. Quotitive division: how many 1/4 fit. Strips are the anchor.",
   tag: "[Stage 2 | I Do | Explicit teaching | HITS 3, 4]",
 });
@@ -139,29 +139,29 @@ const NOTES_CFU = composeGlanceNotes({
 });
 
 const NOTES_WEDO = composeGlanceNotes({
-  answer: "6 - six thirds fit into 2 wholes, so 2 divided by 1/3 = 6.",
+  answer: "6 - six thirds fit into 2 wholes.",
   beats: [
-    "POINT to 0 on the line. SAY: Your turn with support. We jump one third at a time and count the jumps.",
+    "POINT to 0. SAY: Your turn. We jump one third at a time and count.",
     "MODEL the first jump. SAY: Zero to one third is jump one. Keep going with your partner.",
-    "ASK: How many thirds fit into 2? 45 sec, boards up. EXPECT: 6. ACCEPT: three in each whole, two wholes.",
-    "SCAN boards, back row first. 80%+ -> reveal. Less -> count thirds in ONE whole on the line, then the second, re-ask.",
+    "ASK: How many thirds fit into 2? 45 sec, boards up. EXPECT: 6.",
+    "SCAN boards. 80%+ -> reveal. Less -> count thirds in ONE whole, then the second, re-ask.",
   ],
-  trap: "counting the tick marks (7) instead of the jumps. Fix: count the spaces between marks, student recounts jumps.",
+  trap: "counting tick marks (7) not jumps. Fix: count the spaces, student recounts.",
   stretch: "how many thirds fit into 4? Use the line.",
-  help: "number-line scaffold with thirds pre-ticked, student counts the jumps.",
+  help: "number line with thirds pre-ticked, student counts the jumps.",
   prep: "Second representation - the number line. Guided count of unit-fraction jumps, faded from the I Do strips.",
   tag: "[Stage 3 | We Do | Supported application | HITS 4, 5]",
 });
 
 const NOTES_CONNECT = composeGlanceNotes({
-  answer: "whole number x the bottom number (denominator) = how many unit fractions fit.",
+  answer: "whole number x the bottom number = how many unit fractions fit.",
   beats: [
-    "POINT to the three answers. SAY: Look for a pattern. Each whole splits into 'bottom number' parts.",
-    "ASK: 3 divided by 1/4 - what is 3 x 4? 10 sec, choral. EXPECT: 12, the same as we counted.",
-    "SAY: So we can multiply the whole by the bottom number. The picture still shows why it works.",
-    "ASK: Try 4 divided by 1/5. 20 sec, boards up. EXPECT: 20 (4 x 5).",
+    "POINT to the three answers. SAY: Look for a pattern. Each whole splits into bottom-number parts.",
+    "ASK: 3 divided by 1/4 - what is 3 x 4? 10 sec, choral. EXPECT: 12, as we counted.",
+    "SAY: So multiply the whole by the bottom number. The picture shows why.",
+    "ASK: Try 4 divided by 1/5. 20 sec, boards up. EXPECT: 20.",
   ],
-  trap: "multiplying by the top number instead of the bottom. Fix: point to the denominator = size of each part, student redoes 4 x 5.",
+  trap: "multiplying by the top number. Fix: denominator = size of each part, student redoes 4 x 5.",
   stretch: "write the rule in your own words.",
   help: "keep the strip picture beside the numbers while you multiply.",
   prep: "Generalises AFTER meaning (section 25). Rule sits on top of the strip and line, never replaces them.",

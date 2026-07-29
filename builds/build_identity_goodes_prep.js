@@ -387,6 +387,14 @@ async function build() {
     NOTES_TITLE
   );
 
+  addResourceSlide(
+    pres,
+    RESOURCE_ITEMS,
+    { C, FONT_H, FONT_B },
+    FOOTER,
+    NOTES_RESOURCES
+  );
+
   // ================================================================
   // SLIDE 2: LI / SC
   // ================================================================
@@ -764,13 +772,7 @@ async function build() {
   // ================================================================
   // SLIDE 12: Resources
   // ================================================================
-  addResourceSlide(
-    pres,
-    RESOURCE_ITEMS,
-    { C, FONT_H, FONT_B },
-    FOOTER,
-    NOTES_RESOURCES
-  );
+
 
   // ── Write PPTX ──
   const pptxPath = path.join(LESSON_FOLDER, PPTX_NAME);

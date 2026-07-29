@@ -497,6 +497,8 @@ async function build() {
   // ── Slide 1: Title ──
   titleSlide(pres, UNIT_TITLE, "Session 3: The Distributive Property", "Breaking Apart Multiplications to Find Unknowns | Session 3 of 6 | Year 5/6", NOTES_TITLE);
 
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
   // ── Slides 2-3: Daily Review (withReveal) — LCM and HCF ──
   withReveal(
     () => {
@@ -955,7 +957,7 @@ async function build() {
     NOTES_CLOSING);
 
   // ── Slide 21: Resources ──
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
 
   // ── Write PPTX ──
   fs.mkdirSync(OUT_DIR, { recursive: true });

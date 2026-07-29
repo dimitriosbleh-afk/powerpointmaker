@@ -458,6 +458,8 @@ async function build() {
   titleSlide(pres, UNIT_TITLE, "Session 1: Shake and Spill",
     "Foundation Numeracy | Session 1 of 4 | Term 2 Week 4", NOTES_TITLE);
 
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
   // Slide 2-3: Daily Review (withReveal) — PPW 1-5 with 2-sided counters
   withReveal(
     () => {
@@ -809,7 +811,7 @@ async function build() {
     NOTES_CLOSING);
 
   // Slide 17: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
 
   // Write PPTX
   fs.mkdirSync(OUT_DIR, { recursive: true });

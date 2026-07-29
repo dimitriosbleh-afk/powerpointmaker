@@ -217,14 +217,14 @@ async function main() {
 
     addFooter(s, FOOTER);
     s.addNotes(composeGlanceNotes({
-      answer: "open - every feeling is okay; listen for children naming a real big feeling",
+      answer: "open - every feeling is okay; listen for a real big feeling named",
       beats: [
-        "POINT to each face. SAY: Everyone has feelings. Some feel small, and some feel really big.",
-        "ASK: Point to how you might feel when something goes wrong. 5 sec, everyone points. EXPECT: a point to any face.",
-        "ASK: Turn and tell your partner about a time you had a big feeling. 30 sec, turn and tell. EXPECT: a short real example. ACCEPT: a one-word feeling.",
+        "POINT to each face. SAY: Everyone has feelings. Some feel small, some feel really big.",
+        "ASK: Point to how you feel when something goes wrong. 5 sec, everyone points. EXPECT: a point to any face.",
+        "ASK: Tell your partner about a big feeling you had. 30 sec, turn and tell. EXPECT: a short real example.",
       ],
-      trap: "a child saying feelings are bad or naughty. Fix: name that all feelings are okay, it is what we do next that matters, child re-says one feeling is okay.",
-      care: "some children may name an upsetting event. Keep it light, thank them, and follow up privately later if needed.",
+      trap: "saying feelings are bad or naughty. Fix: all feelings are okay, what we do next matters, child re-says it.",
+      care: "a child may name an upsetting event. Keep it light, thank them, follow up privately.",
       prep: "Bridges everyday feelings to today's target: noticing a big feeling and choosing a calm step. First lesson on the topic.",
       tag: "[Launch | Retention and recall | HITS 2, 6]",
     }));
@@ -316,16 +316,16 @@ async function main() {
 
     addFooter(s, FOOTER);
     s.addNotes(composeGlanceNotes({
-      answer: "open - a feeling can be small, getting bigger, or big; we notice the clues in our body",
+      answer: "open - small, getting bigger, or big; we notice the clues in our body",
       beats: [
-        "POINT along the three cards. SAY: Feelings can be small and calm, or start to bubble up, or grow really big.",
-        "MODEL the body clues. SAY: When mine gets big I notice a hot face and tight fists. That is my body telling me.",
-        "ASK: Put a hand on your tummy. Where do you feel a big feeling in your body? 10 sec, turn and tell. EXPECT: a body part like tummy, chest, face, hands.",
+        "POINT along the three cards. SAY: Feelings can be small, or bubble up, or grow really big.",
+        "MODEL body clues. SAY: When mine gets big I notice a hot face and tight fists.",
+        "ASK: Where do you feel a big feeling? 10 sec, turn and tell. EXPECT: tummy, chest, face or hands.",
       ],
-      trap: "waiting until the feeling is already huge. Fix: point to the middle card - we can notice it bubbling up early, child names one early clue.",
+      trap: "waiting until the feeling is huge. Fix: point to the middle card, child names one early clue.",
       stretch: "name a feeling that fits each of the three sizes.",
-      help: "give the child the three faces to point to as you name each size.",
-      prep: "This scale is the recognising half of the LI. Noticing early makes the calm steps easier. Keep it visual - narrate, do not read the slide to them.",
+      help: "child points to the three faces as you name each size.",
+      prep: "This scale is the recognising half of the LI. Noticing early makes the calm steps easier. Narrate it, do not read the slide.",
       tag: "[Notice | Attention and regulation | HITS 3, 9]",
     }));
     runSlideDiagnostics(s, pres);
@@ -368,17 +368,17 @@ async function main() {
 
     addFooter(s, FOOTER);
     s.addNotes(composeGlanceNotes({
-      answer: "the three calm steps in order: 1 Stop, 2 Breathe, 3 Ask for help",
+      answer: "in order: 1 Stop, 2 Breathe, 3 Ask for help",
       beats: [
-        "MODEL with a think-aloud. SAY: Watch me. I feel a big feeling coming, so first I STOP and freeze my body.",
-        "MODEL the breath. SAY: Next I BREATHE. I take three slow breaths to help my body settle down.",
-        "SAY: Then, if it is still hard, I ASK FOR HELP. I tell a grown-up how I feel. Stop, breathe, ask for help.",
-        "ASK: Say the three steps with me. 5 sec, choral on my signal. EXPECT: Stop, breathe, ask for help.",
+        "MODEL a think-aloud. SAY: Watch me. A big feeling comes, so first I STOP and freeze.",
+        "MODEL the breath. SAY: Next I BREATHE. Three slow breaths to settle my body.",
+        "SAY: If it is still hard, I ASK FOR HELP. Stop, breathe, ask for help.",
+        "ASK: Say the three steps with me. 5 sec, choral. EXPECT: Stop, breathe, ask for help.",
       ],
-      trap: "jumping straight to shouting or asking without stopping first. Fix: point to step 1 - we always Stop first, child says step 1.",
+      trap: "asking or shouting without stopping first. Fix: point to step 1, child says step 1.",
       stretch: "tell a partner one place they could use the calm steps today.",
-      help: "give the Calm Steps Poster to hold and point to as you name each step.",
-      prep: "This is the model - the poster IS the lesson. Narrate the steps, do not ask students to read the slide. Flip back to it during practice.",
+      help: "child holds the Calm Steps Poster and points as you name each step.",
+      prep: "This is the model - the poster IS the lesson. Narrate the steps, do not read the slide. Flip back during practice.",
       tag: "[I Do | Explicit teaching | HITS 3, 4]",
     }));
     runSlideDiagnostics(s, pres);
@@ -519,16 +519,16 @@ async function main() {
     "You are on the playground. You cannot find your friend. Your tummy feels tight and you feel worried.",
     ["Talk with your partner. Which calm step would you try?"],
     composeGlanceNotes({
-      answer: "open - any calm step with a reason; listen for stop and breathe, then ask a grown-up",
+      answer: "open - any calm step with a reason; listen for stop and breathe first",
       beats: [
-        "READ the scenario. SAY: A tight tummy is a clue this feeling is bubbling up. Now it is your turn with a partner.",
-        "ASK: Which calm step would you try, and why? 40 sec, turn and tell. EXPECT: a step plus a reason. ACCEPT: a step named with help.",
-        "CIRCULATE and listen. COLLECT two pairs to share. SAY: Tell us your calm step using because.",
+        "READ the scenario. SAY: A tight tummy is a clue. Now your turn with a partner.",
+        "ASK: Which calm step would you try, and why? 40 sec, turn and tell. EXPECT: a step plus a reason.",
+        "CIRCULATE. COLLECT two pairs. SAY: Tell us your calm step using because.",
       ],
-      trap: "picking a step but not saying why. Fix: give the stem I would ... because ..., child finishes it with their partner.",
+      trap: "picking a step but not saying why. Fix: give the stem I would ... because ..., child finishes it.",
       stretch: "plan two steps in order for this worry.",
       help: "offer a choice of two steps for the pair to pick from.",
-      prep: "Support fades from whole-class to partners. Use the sentence stem I would ... because ... so every pair gives a reason.",
+      prep: "Support fades from whole-class to partners. Use the stem I would ... because ... so every pair gives a reason.",
       tag: "[We Do | Supported application | HITS 5, 9]",
     }),
     FOOTER
@@ -548,14 +548,14 @@ async function main() {
       composeGlanceNotes({
         answer: "3 - Ask for help. Tell a grown-up.",
         beats: [
-          "POINT to the poster steps 1, 2, 3. ASK: Kai stopped and breathed but still feels upset. What next? 10 sec, hold up 1, 2 or 3 fingers. EXPECT: 3, ask for help.",
-          "SCAN fingers. 80%+ -> reveal and move to You Do. Less -> point to step 3 on the poster, say when we ask for help, re-ask.",
-          "REVEAL after fingers are up. SAY: When a calm step is not enough, it is brave to ask for help.",
+          "POINT to poster steps 1, 2, 3. ASK: What next for Kai? 10 sec, hold up 1, 2 or 3 fingers. EXPECT: 3, ask for help.",
+          "SCAN fingers. 80%+ -> reveal, move to You Do. Less -> point to step 3, re-ask.",
+          "REVEAL after fingers are up. SAY: When a calm step is not enough, it is brave to ask.",
         ],
-        trap: "holding up 1 or 2 because they think you only get one step. Fix: show that steps can be used together, and asking is the next one, child re-votes.",
+        trap: "voting 1 or 2, thinking you only get one step. Fix: steps work together, child re-votes.",
         stretch: "name one grown-up at school they could ask.",
-        help: "remind the child of the three steps on the poster before they vote.",
-        prep: "Hinge checks that students know asking for help is a real calm step, not a last resort. Finger voting, one to three.",
+        help: "remind the child of the three poster steps before they vote.",
+        prep: "Hinge checks that asking for help is a real calm step, not a last resort. Finger voting, one to three.",
         tag: "[CFU | Supported application | HITS 7, 9]",
       }),
       FOOTER
@@ -583,15 +583,15 @@ async function main() {
       "Then: draw yourself feeling calm.",
     ],
     composeGlanceNotes({
-      answer: "open - a named big feeling, one circled calm step, and a picture of feeling calm",
+      answer: "open - a named big feeling, one circled calm step, a picture of feeling calm",
       beats: [
-        "SAY: Now it is just you. On your My Calm Plan, draw a big feeling you sometimes have.",
-        "SAY: Circle the calm step you will try, then draw yourself feeling calm afterwards.",
-        "CIRCULATE. If a child is stuck, point to the poster, not the answer. Note who can say when they would use their step.",
+        "SAY: Now just you. On your My Calm Plan, draw a big feeling you have.",
+        "SAY: Circle the calm step you will try, then draw yourself feeling calm.",
+        "CIRCULATE. If stuck, point to the poster, not the answer. Note who can say when.",
       ],
-      trap: "circling every step or none. Fix: prompt them to pick the one they would try first, child circles just one.",
+      trap: "circling every step or none. Fix: pick the one you would try first, child circles one.",
       stretch: "write or say when they would use their calm step.",
-      help: "give the poster to copy a step from, and scribe the feeling word for them.",
+      help: "poster to copy a step from, and scribe the feeling word.",
       prep: "Independent recording on the My Calm Plan sheet, a different form from the We Do talk. The three steps on the right are the choices. Note strong plans to share at the close.",
       tag: "[You Do | Mastery and application | HITS 4, 10]",
     }),

@@ -254,6 +254,8 @@ async function build() {
     "Session 8 of 10  |  Year 5/6 Numeracy  |  Project Day 2",
     NOTES_TITLE);
 
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
   // Slide 2-3: Daily Review (short)
   withReveal(
     () => {
@@ -470,7 +472,7 @@ async function build() {
   }, NOTES_CLOSING);
 
   // Slide 12: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const pptxPath = path.join(OUT_DIR, "BOD_Session8_Calendar_Two_Ops.pptx");

@@ -392,6 +392,8 @@ async function build() {
   // Slide 1: Title
   titleSlide(pres, UNIT_TITLE, "Session 5: Putting It All Together", "Foundation Numeracy | Session 5 of 5 | Term 2 Week 1", NOTES_TITLE);
 
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
   // Slide 2-3: Daily Review (withReveal) — Order 0-20, fill gaps
   withReveal(
     () => {
@@ -737,7 +739,7 @@ async function build() {
     NOTES_CLOSING);
 
   // Slide 16: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
 
   // Write PPTX
   fs.mkdirSync(OUT_DIR, { recursive: true });

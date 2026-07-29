@@ -368,6 +368,14 @@ async function build() {
     NOTES_TITLE
   );
 
+  addResourceSlide(
+    pres,
+    RESOURCE_ITEMS,
+    T,
+    FOOTER,
+    NOTES_RESOURCES
+  );
+
   // =========================================================================
   // SLIDE 2 -- LI / SC
   // =========================================================================
@@ -549,7 +557,7 @@ async function build() {
   withReveal(
     buildCfuBase,
     (slide) => {
-      const revealY = 4.90;
+      const revealY = 4.68;
       addCard(slide, 0.5, revealY, 9, 0.42, { fill: C.SUCCESS });
       slide.addText("Appositive:  \"a boy with no family of his own\"", {
         x: 0.5, y: revealY, w: 9, h: 0.42,
@@ -617,13 +625,7 @@ async function build() {
   // =========================================================================
   // SLIDE 14 -- Resources
   // =========================================================================
-  addResourceSlide(
-    pres,
-    RESOURCE_ITEMS,
-    T,
-    FOOTER,
-    NOTES_RESOURCES
-  );
+
 
   // =========================================================================
   // Generate companion PDFs

@@ -383,6 +383,15 @@ async function build() {
     NOTES_TITLE
   );
 
+  const theme = { C, FONT_H, FONT_B, addTopBar, addTitle, addFooter, addCard };
+  addResourceSlide(
+    pres,
+    RESOURCE_ITEMS,
+    theme,
+    FOOTER,
+    NOTES_RESOURCES
+  );
+
   // =========================================================================
   // SLIDE 2 -- Learning Intention & Success Criteria
   // =========================================================================
@@ -691,14 +700,6 @@ async function build() {
   // =========================================================================
   // SLIDE 14 -- Resources
   // =========================================================================
-  const theme = { C, FONT_H, FONT_B, addTopBar, addTitle, addFooter, addCard };
-  addResourceSlide(
-    pres,
-    RESOURCE_ITEMS,
-    theme,
-    FOOTER,
-    NOTES_RESOURCES
-  );
 
   // =========================================================================
   // Generate companion PDFs

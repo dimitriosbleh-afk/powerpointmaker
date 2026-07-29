@@ -894,7 +894,8 @@ async function build() {
     ],
     NOTES_YOUDO, FOOTER,
     (slide, lg) => {
-      addCard(slide, lg.rightX, lg.panelTopPadded, lg.rightW, 2.5, { strip: C.ALERT });
+      addCard(slide, lg.rightX, lg.panelTopPadded, lg.rightW,
+        Math.min(2.5, SAFE_BOTTOM - lg.panelTopPadded), { strip: C.ALERT });
       slide.addText("Remember", {
         x: lg.rightX + 0.2, y: lg.panelTopPadded + 0.1, w: lg.rightW - 0.4, h: 0.35,
         fontSize: 18, fontFace: FONT_H, color: C.ALERT, bold: true, margin: 0,

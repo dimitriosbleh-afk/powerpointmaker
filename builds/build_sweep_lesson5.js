@@ -161,6 +161,35 @@ WATCH FOR:
 
 [General: I Do -- Writing Introduction | VTLM 2.0: Explicit Modelling]`;
 
+// The CFU carries its own notes. It previously reused NOTES_WEDO, which left
+// two consecutive slides with byte-identical notes - the teacher clicks on and
+// the notes never change.
+const NOTES_CFU_G = `SAY:
+- Two General statements on the board. One is much stronger than the other
+- Read both to yourself. Decide which one does the job better
+- Everyone votes. Show me 1 finger or 2 fingers on my signal
+
+DO:
+- Give 15 seconds of silent thinking before the vote
+- "Fingers at your chest... show me." Scan the room before revealing
+- Expect 2. Cold call one student: "What makes Statement 2 stronger?"
+- Reveal the answer bar only after every hand is up
+
+CFU CHECKPOINT:
+Technique: Finger Voting
+
+Script:
+- "Show me: 1 or 2" [Expect 2]
+- "Why is Statement 2 stronger?" [specific time period, precise vocabulary, noun groups, context]
+
+PROCEED:
+- 80%+ voting 2 -> move to independent writing
+
+PIVOT:
+- Most likely misconception: thinking longer automatically means stronger
+- Reteach: underline the precise words in Statement 2, not its length
+- Re-check: read a third short-but-precise statement and re-vote`;
+
 const NOTES_WEDO = `SAY:
 - Let's work on your General statements together before you write independently
 - Take out your planning sheet from last lesson. Look at your G statement
@@ -290,6 +319,14 @@ async function build() {
     NOTES_TITLE
   );
 
+  addResourceSlide(
+    pres,
+    RESOURCE_ITEMS,
+    T,
+    FOOTER,
+    NOTES_RESOURCES
+  );
+
   // =========================================================================
   // SLIDE 2 -- LI/SC
   // =========================================================================
@@ -386,7 +423,7 @@ async function build() {
       "Which General Statement Is Stronger?",
       "Finger Voting -- Show 1 or 2",
       "Statement 1:\n\"In the old days, Britain had lots of convicts.\"\n\nStatement 2:\n\"In the late 18th century, Britain faced a dire crisis as its overcrowded prisons could no longer contain the growing number of convicted criminals.\"",
-      NOTES_WEDO,
+      NOTES_CFU_G,
       FOOTER
     ),
     (slide) => {
@@ -400,7 +437,7 @@ async function build() {
         x: 0.7, y: ansY + 0.06, w: 8.6, h: 0.60,
         fontSize: 13, fontFace: FONT_B, color: C.WHITE, valign: "middle", margin: 0,
       });
-      slide.addNotes(NOTES_WEDO);
+      slide.addNotes(NOTES_CFU_G);
     }
   );
 
@@ -457,13 +494,7 @@ async function build() {
   // =========================================================================
   // SLIDE 10 -- Resources
   // =========================================================================
-  addResourceSlide(
-    pres,
-    RESOURCE_ITEMS,
-    T,
-    FOOTER,
-    NOTES_RESOURCES
-  );
+
 
   // =========================================================================
   // Generate companion PDFs

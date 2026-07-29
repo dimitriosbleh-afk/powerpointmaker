@@ -444,6 +444,8 @@ async function build() {
     "Session 1 of 10  |  Year 5/6 Numeracy  |  VC2M6A02",
     NOTES_TITLE);
 
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
   // Slide 2: Daily Review
   withReveal(
     () => {
@@ -812,7 +814,7 @@ async function build() {
   }, NOTES_CLOSING);
 
   // Slide 19: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
 
   // Write PPTX
   fs.mkdirSync(OUT_DIR, { recursive: true });

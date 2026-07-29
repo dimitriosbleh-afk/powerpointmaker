@@ -523,7 +523,7 @@ async function build() {
   withReveal(
     buildCfuBase,
     (slide) => {
-      const revealY = 4.90;
+      const revealY = 4.68;
       addCard(slide, 0.5, revealY, 9, 0.42, { fill: C.SUCCESS });
       slide.addText("Stronger introduction: B  --  has HOOK (question), POSITION (\"should be limited\") and SIGNPOST (three reasons)", {
         x: 0.5, y: revealY, w: 9, h: 0.42,

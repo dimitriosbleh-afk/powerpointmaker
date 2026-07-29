@@ -378,6 +378,8 @@ async function build() {
   // Slide 1: Title
   titleSlide(pres, "Algebra: Finding Unknown Values", "Session 2: Commutative & Associative Properties", "Grade 5/6 Numeracy | Session 2 of 10 | Week 1", NOTES_TITLE);
 
+  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
   // Slide 2-3: Daily Review (withReveal)
   withReveal(
     () => {
@@ -717,7 +719,7 @@ async function build() {
     NOTES_CLOSING);
 
   // Slide 17: Resources
-  addResourceSlide(pres, RESOURCE_ITEMS, { C, FONT_H, FONT_B }, FOOTER, NOTES_RESOURCES);
+
 
   // Write PPTX
   fs.mkdirSync(OUT_DIR, { recursive: true });
