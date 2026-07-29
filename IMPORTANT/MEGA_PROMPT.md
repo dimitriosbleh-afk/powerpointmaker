@@ -5029,6 +5029,8 @@ Coupling rules:
 - Do not lower SC2 for returning students. Change the entry point and the scaffold, never the goal.
 - For a single-session request, this section does not apply beyond the standard launch rules.
 
+# ===== END OF MEGA-PROMPT. SHIFT CLICK HERE. =====
+
 User: Generate a slide deck for the following:
 Subject: "XYZ"
 Grade: "XYZ"

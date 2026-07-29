@@ -96,6 +96,8 @@ IMPORTANT/MEGA_PROMPT.md   # Pedagogical framework - paste into conversation whe
 docs/                      # Deep reference docs (read when needed, not every session)
 ```
 
+**Never append below the `===== END OF MEGA-PROMPT. SHIFT CLICK HERE. =====` marker in `IMPORTANT/MEGA_PROMPT.md`.** Teachers select from the top of the file to that marker to copy the prompt. New sections go ABOVE it; the marker and the USER REQUEST block stay last.
+
 ## Theme API
 
 ```javascript
