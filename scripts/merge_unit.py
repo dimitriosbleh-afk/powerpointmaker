@@ -130,6 +130,36 @@ def copy_slide(src_slide, dst_prs):
         if notes_text.strip():
             dst_slide.notes_slide.notes_text_frame.text = notes_text
 
+    copy_timing(src_slide, dst_slide)
+
+
+TIMING_TAG = "{http://schemas.openxmlformats.org/presentationml/2006/main}timing"
+EXT_LST_TAG = "{http://schemas.openxmlformats.org/presentationml/2006/main}extLst"
+
+
+def copy_timing(src_slide, dst_slide) -> None:
+    """Carry the source slide's <p:timing> tree across.
+
+    clickBuild() writes entrance animations as a timing tree that targets
+    shapes by their `<p:cNvPr id>`. copy_slide() deep-copies the whole spTree,
+    so those ids survive unchanged and a deep-copied timing tree still points
+    at real shapes. Without this the merged unit deck keeps every click-reveal
+    slide but none of the clicks, and nothing in the file looks wrong."""
+    src_timing = src_slide._element.find(TIMING_TAG)
+    if src_timing is None:
+        return
+
+    dst_root = dst_slide._element
+    if dst_root.find(TIMING_TAG) is not None:
+        return
+
+    # CT_Slide child order is cSld, clrMapOvr, transition, timing, extLst.
+    ext_lst = dst_root.find(EXT_LST_TAG)
+    if ext_lst is not None:
+        ext_lst.addprevious(copy.deepcopy(src_timing))
+    else:
+        dst_root.append(copy.deepcopy(src_timing))
+
 
 # Matches `Target="resources-sessionN/<file>"` inside slide rels XML.
 # Quoting can be `"` or `'`; we capture the quote so we can reproduce it.
