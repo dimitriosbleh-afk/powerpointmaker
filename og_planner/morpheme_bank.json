@@ -564,6 +564,30 @@
       "meaning": "quality, state",
       "source": "Teacher-confirmed Week 3 focus and meaning, 2026-07-20; accuracy derivative verified against Merriam-Webster",
       "verified": true
+    },
+    {
+      "morph": "micro",
+      "type": "root",
+      "keyword": "microscope",
+      "meaning": "small",
+      "source": "OG/Morphology USB files/Greek Combining Forms.pdf pp153-154 (worksheet heading 'micro (small)'; family microbe, microbiology, microchip, microcosm, microfilm, micron, microscope, microwave, microorganism, Micronesia, micrometer, microphone, microgram, microprocessor). Greek combining forms are mapped to root/green by morpheme_meanings.json; keyword selected from the printed family, 2026-08-02",
+      "verified": true
+    },
+    {
+      "morph": "pict/picto",
+      "type": "root",
+      "keyword": "picture",
+      "meaning": "paint",
+      "source": "OG/Morphology USB files/Upper Level Latin Scrolls.pdf p279 (Upper Level Latin Roots master table, page 9: 'pict picto (paint)'; derivatives depict, depiction, pictograph, pictorial, picture, pictorially, picturesque). Keyword selected from the printed family, 2026-08-02",
+      "verified": true
+    },
+    {
+      "morph": "vore",
+      "type": "root",
+      "keyword": "carnivore",
+      "meaning": "eating",
+      "source": "OG/Morphology USB files/Upper Level Latin Scrolls.pdf p284 (Upper Level Latin Roots master table, page 14: 'vore (eating)'; derivatives omnivore, herbivore, carnivore, voracious, devour*). Keyword selected from the printed family, 2026-08-02",
+      "verified": true
     }
   ],
   "scope_sequence": {

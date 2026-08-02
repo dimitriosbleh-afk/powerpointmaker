@@ -41,22 +41,26 @@ def q(tag):
     return "{%s}%s" % (NS[pfx], local)
 
 
-def make_compatible_yellow_meter(green_png):
-    """Recolour the known-good green gauge without the broken yellow asset.
+def make_compatible_yellow_meter(green_png, yellow_png):
+    """Normalise the master's real yellow gauge to the green gauge's geometry.
 
-    The master's original broad yellow PNG makes LibreOffice shift/clamp other
-    slide elements during PDF export. Recolouring the compatible green gauge
-    preserves the meter artwork and yellow difficulty cue without that defect.
+    The difficulty cue is the NEEDLE POSITION, not just the colour: the green
+    gauge sits near the start, the yellow one sweeps about two thirds around
+    with everything before the needle filled. An earlier fix recoloured the
+    green gauge instead, which silently threw that away and left every harder
+    dictation showing an easy meter.
+
+    The real defect was a one-pixel height mismatch (170x89 vs 170x88) against
+    the shape extent, which made LibreOffice shift/clamp other slide elements
+    during PDF export. Resizing the genuine yellow artwork to the green gauge's
+    exact size and re-encoding it keeps the correct needle and drops the defect.
     """
-    image = Image.open(BytesIO(green_png)).convert("RGBA")
-    pixels = image.load()
-    for y in range(image.height):
-        for x in range(image.width):
-            red, green, blue, alpha = pixels[x, y]
-            if alpha and green > red * 1.2 and green > blue * 1.2:
-                pixels[x, y] = (255, 193, 7, alpha)
+    yellow = Image.open(BytesIO(yellow_png)).convert("RGBA")
+    green = Image.open(BytesIO(green_png)).convert("RGBA")
+    if yellow.size != green.size:
+        yellow = yellow.resize(green.size, Image.LANCZOS)
     output = BytesIO()
-    image.save(output, format="PNG", dpi=(150, 150))
+    yellow.save(output, format="PNG", dpi=(150, 150))
     return output.getvalue()
 
 
@@ -790,7 +794,8 @@ def remove_timing(root):
 
 # ---------------------------------------------------------------- notes
 NOTE_ANCHOR_RE = re.compile(
-    r"(?:\d+\.\s+)?(?:ANSWER|SAY|ASK|EXPECT|ACCEPT|SCAN|TRAP|FIX|STRETCH|HELP|"
+    r"(?:\d+\.\s+)?(?:ANSWER|ANSWERS|SAY|ASK|EXPECT|ACCEPT|SCAN|TRAP|FIX|"
+    r"EXTENSION|MEMORY HOOK|STRETCH|HELP|"
     r"CARE|TIME|CIRCULATE|CHECK|PREP|POINT|SHOW|MODEL|DRAW|BUILD|COVER|REVEAL|COLLECT|"
     r"READ|ASSIGN|CHORAL|WAIT|REPEAT|CLARIFY|WRITE|TICK|PROCEDURE|CORRECTION|"
     r"Extra task|Possible answers|Root|Prefix|Suffix|Keyword|Meaning|Sound|"
@@ -818,7 +823,8 @@ def prepare_notes_text(text):
         text,
     )
     text = re.sub(
-        r"(?<!\n)(?<!\d\. )(?=(?:TIME|CIRCULATE|CHECK|SCAN|TRAP|STRETCH|HELP|CARE):)",
+        r"(?<!\n)(?<!\d\. )(?=(?:TIME|CIRCULATE|CHECK|SCAN|TRAP|EXTENSION|"
+        r"STRETCH|HELP|CARE|ANSWERS|MEMORY HOOK):)",
         "\n",
         text,
     )
@@ -985,7 +991,8 @@ class Package:
         if ("ppt/media/image12.png" in self.parts
                 and "ppt/media/image13.png" in self.parts):
             self.parts["ppt/media/image12.png"] = make_compatible_yellow_meter(
-                self.parts["ppt/media/image13.png"]
+                self.parts["ppt/media/image13.png"],
+                self.parts["ppt/media/image12.png"],
             )
         self.pres = etree.fromstring(self.parts["ppt/presentation.xml"])
         self.pres_rels = etree.fromstring(self.parts["ppt/_rels/presentation.xml.rels"])
@@ -1158,9 +1165,14 @@ def draw_structured_slide(root, blk, accent, tint, ctx):
         y += 0.76
     if blk.get("example"):
         ex_h = 1.65 if blk.get("items") else 2.45
-        sz = fit_font_block(blk["example"], 7.7, ex_h - 0.25, 30, min_pt=20,
-                            char_em=0.58)
-        add_textbox(root, sid, 0.9, y, 8.2, ex_h, [blk["example"]], sz,
+        # A newline in the hero is an authored line break (an equation belongs
+        # on its own line). Emit real paragraphs - a raw \n inside one run
+        # loses the first line's centring and renders visibly off-axis.
+        ex_lines = [ln.strip() for ln in blk["example"].split("\n") if ln.strip()]
+        longest = max(ex_lines, key=len)
+        sz = fit_font_block(longest, 7.7, (ex_h - 0.25) / max(1, len(ex_lines)),
+                            30, min_pt=20, char_em=0.58)
+        add_textbox(root, sid, 0.9, y, 8.2, ex_h, ex_lines, sz,
                     fill=tint, rounded=True)
         sid += 1
         y += ex_h + 0.12
@@ -1170,7 +1182,7 @@ def draw_structured_slide(root, blk, accent, tint, ctx):
     for it in blk.get("items", [])[:4]:
         add_textbox(root, sid, 0.9, y, 8.2, item_h, [it], item_size,
                     color=blk.get("item_color", CHARCOAL),
-                    bold=bool(blk.get("items_bold")), align="l")
+                    bold=bool(blk.get("items_bold")), align="ctr")
         sid += 1
         y += item_step
     if y > 4.60:
@@ -1389,8 +1401,8 @@ def build_session(pkg, week, session, out_path):
         warn(f"{day}: words_to_read_review has {len(wtr['words'])} words (template holds 15)")
     review_notes = prepare_notes_text(wtr.get("notes", ""))
     if len(re.findall(r"^\d+\. READ:", review_notes, flags=re.MULTILINE)) < 3:
-        warn(f"{day}: Words to Read Review needs an all-class read, a fun "
-             "group-row allocation, and an everyone row")
+        warn(f"{day}: Words to Read Review needs one numbered READ line per "
+             "group plus the everyone-reads-row-5 line")
     if "Every student reads at least two rows" not in review_notes:
         warn(f"{day}: Words to Read Review must state that every student "
              "reads at least two rows in the group round")
@@ -1418,14 +1430,36 @@ def build_session(pkg, week, session, out_path):
             sp = find_sp(root, spid)
             if i < len(sb):
                 item = sb[i]
-                set_text(sp, item["morph"],
-                         size_pt=fit_font(item["morph"], 2.33, 45, min_pt=24))
+                label = str(item["morph"]).strip()
+                # A 2.33" x 1.04" box cannot hold a variant label such as
+                # clud(e)/clus(e) on one line without shrinking it to an
+                # unreadable size, and left alone it breaks mid-bracket. Split
+                # it after the slash so each half renders whole and large.
+                one_line = fit_font(label, 2.33, 45, min_pt=24)
+                if "/" in label and one_line <= 28:
+                    head, _, tail = label.partition("/")
+                    parts = [head.strip() + "/", tail.strip()]
+                    # two lines must still clear the 1.04" box, so drop the
+                    # body insets and cap at the height-derived maximum
+                    sz = min(28,
+                             fit_font(max(parts, key=len), 2.33, 29, min_pt=22))
+                    set_runs(sp, [[(part, None, None, None)] for part in parts],
+                             size_pt=sz)
+                    bodypr = sp.find(q("p:txBody") + "/" + q("a:bodyPr"))
+                    if bodypr is not None:
+                        for inset in ("tIns", "bIns"):
+                            bodypr.set(inset, "0")
+                else:
+                    set_text(sp, label, size_pt=one_line)
                 set_solid_fill(sp, MORPH_FILL[item["type"]])
             else:
                 set_text(sp, "")
                 set_solid_fill(sp, "FFFFFF")
     d.add(T["sound_bank"], fill_sound_bank,
-          notes="Students copy sounds into books before spelling words. Box colour = card type: green root, yellow prefix, red suffix.")
+          notes=("Students copy these into their books before the spelling words.\n"
+                 "green = root\n"
+                 "yellow = prefix\n"
+                 "red = suffix"))
 
     # --- words to spell review (one reveal slide per word)
     d.add(T["hdr_wts_review"], notes=HEADER_NOTES["wts_review"])
@@ -1490,7 +1524,7 @@ def build_session(pkg, week, session, out_path):
             display_text = "\n".join(
                 f"{label}: {value}" for label, value in fields
             )
-            sz = fit_font_block(display_text, 6.2, 3.0, 32,
+            sz = fit_font_block(display_text, 6.2, 3.0, 35,
                                 min_pt=24, char_em=0.55)
             set_runs(
                 sp,
@@ -1516,14 +1550,22 @@ def build_session(pkg, week, session, out_path):
         copy_note_fields = "morpheme, keyword and meaning"
         if card_parts_of_speech(nm):
             copy_note_fields += ", including the part of speech"
-        d.add(
-            tidx,
-            fill_nm_copy,
-            notes=(
-                "1. SAY: \"Copy this morpheme card into your book exactly as shown.\"\n"
-                f"2. CHECK: Scan the {copy_note_fields} before moving on."
-            ),
+        copy_notes = (
+            "1. SAY: \"Copy this morpheme card into your book exactly as shown.\"\n"
+            f"2. CHECK: Scan the {copy_note_fields} before moving on."
         )
+        # The memory hook is the retention device for the whole week, so the
+        # teacher needs it here, on the anchor card, not only at the end of the
+        # word-grid script.
+        hook = next(
+            (line.partition(":")[2].strip()
+             for line in session.get("wtr_new_notes", "").splitlines()
+             if line.strip().lower().startswith("memory hook:")),
+            "",
+        )
+        if hook:
+            copy_notes += f"\nMEMORY HOOK: {hook}"
+        d.add(tidx, fill_nm_copy, notes=copy_notes)
 
         def fill_wtr_new_hdr(root):
             sp = find_sp(root, SHAPE["hdr_wtr_new_txt"])
@@ -1721,11 +1763,15 @@ def build_session(pkg, week, session, out_path):
         if cups:
             caps = cups.get("capitals", [])
             punct = cups.get("punctuation", [])
+            # Each punctuation mark now carries a plain-English reminder, so the
+            # joined list is far too long for one paragraph. One mark per line
+            # also gives the teacher a genuine tick-off checklist.
             lines += ["Mark with CUPS, tick each line:",
                       f"C - Capitals, shown green: {', '.join(caps)} ({len(caps)})",
                       "U - Understanding: words written in the dictated order (1)",
-                      f"P - Punctuation, shown red: {', '.join(punct)} ({len(punct)})",
-                      f"S - Spelling targets, underlined: {', '.join(targets)} ({len(targets)})",
+                      f"P - Punctuation, shown red ({len(punct)}):"]
+            lines += [f"   {mark}" for mark in punct]
+            lines += [f"S - Spelling targets, underlined: {', '.join(targets)} ({len(targets)})",
                       f"Score: /{score}"]
         elif targets:
             lines.append(f"Targets: {', '.join(targets)}")

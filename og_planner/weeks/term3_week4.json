@@ -1,0 +1,2065 @@
+{
+  "term": 3,
+  "week": 4,
+  "cohort": "Enrichment",
+  "unit_folder": "OG_Term3_Week4",
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "overview": {
+    "Monday": {
+      "morphology": [
+        "New Morphology",
+        "micro"
+      ],
+      "grammar": "Phrases and clauses",
+      "learned_words": [
+        "New learned word",
+        "camouflage"
+      ]
+    },
+    "Tuesday": {
+      "morphology": [
+        "Review Morphology",
+        "micro"
+      ],
+      "grammar": "Phrases and clauses",
+      "learned_words": [
+        "New learned word",
+        "seismograph"
+      ]
+    },
+    "Wednesday": {
+      "morphology": [
+        "New Morphology",
+        "pict/picto"
+      ],
+      "grammar": "Phrases and clauses",
+      "learned_words": [
+        "Review learned words",
+        "camouflage, seismograph"
+      ]
+    },
+    "Thursday": {
+      "morphology": [
+        "Review Morphology",
+        "pict/picto"
+      ],
+      "grammar": "Phrases and clauses",
+      "learned_words": [
+        "Review learned words",
+        "camouflage, seismograph"
+      ]
+    },
+    "Friday": {
+      "morphology": [
+        "New Morphology",
+        "vore"
+      ],
+      "grammar": "Phrases and clauses - review",
+      "learned_words": [
+        "Review learned words",
+        "camouflage, seismograph"
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "day": "Monday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        },
+        {
+          "morph": "ord/ordin",
+          "type": "root",
+          "keyword": "ordain",
+          "meaning": "order",
+          "extra_task": {
+            "prompt": "Give me one word built from ord or ordin, meaning order.",
+            "answers": [
+              "order",
+              "ordinary",
+              "coordinate",
+              "subordinate"
+            ]
+          }
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million"
+        },
+        {
+          "morph": "clud(e)/clus(e)",
+          "type": "root",
+          "keyword": "exclude",
+          "meaning": "shut"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state",
+          "extra_task": {
+            "prompt": "Give me one word that ends in -acy.",
+            "answers": [
+              "accuracy",
+              "literacy",
+              "privacy",
+              "supremacy"
+            ]
+          }
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill",
+          "extra_task": {
+            "prompt": "Give me one mal- word, meaning bad, wrong or ill.",
+            "answers": [
+              "malfunction",
+              "malnutrition",
+              "malaise",
+              "maltreatment"
+            ]
+          }
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "molecule",
+          "malcontent",
+          "accuracy",
+          "megahertz",
+          "explosive",
+          "capsule",
+          "extraordinary",
+          "privacy",
+          "graphite",
+          "machinery",
+          "nodule",
+          "megawatt",
+          "native",
+          "immediacy",
+          "captivate"
+        ],
+        "notes": "1. READ: \"Summer birthdays, read row 1.\"\n2. READ: \"Autumn birthdays, read row 2.\"\n3. READ: \"Winter birthdays, read row 3.\"\n4. READ: \"Spring birthdays, read row 4.\"\n5. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round.\"\n6. ASK: \"Which words use -acy, meaning quality or state?\" 5 sec, choral response. EXPECT: accuracy, privacy, immediacy.\n7. ASK: \"Which words use -ule, meaning small?\" 5 sec, choral response. EXPECT: molecule, capsule, nodule.\n8. ASK: \"mega- means million, so which two words carry it?\" 5 sec, turn and tell. EXPECT: megahertz and megawatt.\n9. ASK: \"Which word means the opposite of ordinary?\" 3 sec, choral response. EXPECT: extraordinary.\n10. ASK: \"Which word names the tiny part that a substance is built from?\" 3 sec, choral response. EXPECT: molecule.\n11. ASK: \"Make capsule plural.\" 3 sec, choral response. EXPECT: capsules.\n12. ASK: \"Which word names a person who is never satisfied?\" 3 sec, choral response. EXPECT: malcontent."
+      },
+      "sound_bank": [
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "clud(e)/clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix"
+        },
+        {
+          "morph": "-tion",
+          "type": "suffix"
+        },
+        {
+          "morph": "-sion",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "literacy",
+          "sentence": "Our school celebrates literacy week every August.",
+          "prompt": "Which part of literacy tells you it names a state, not an action?",
+          "answer": "The -acy ending. Literacy is the state of being able to read and write."
+        },
+        {
+          "word": "delicacy",
+          "sentence": "At the food festival our class tried a local delicacy.",
+          "prompt": "What does the -acy ending do to the word delicate?",
+          "answer": "It turns it into a thing. A delicacy is something specially fine, usually to eat."
+        },
+        {
+          "word": "supremacy",
+          "sentence": "Our netball team held supremacy in the league all season.",
+          "prompt": "What state is a team in when it has supremacy?",
+          "answer": "The state of being above everyone else. The -acy ending names that state."
+        },
+        {
+          "word": "candidacy",
+          "sentence": "She announced her candidacy for school captain at assembly.",
+          "prompt": "Which part of candidacy turns candidate into a state you can be in?",
+          "answer": "The -acy ending. Candidacy is the state of being a candidate."
+        },
+        {
+          "word": "granule",
+          "sentence": "One granule of salt was left on the science bench.",
+          "prompt": "How big is a granule?",
+          "answer": "Very small. The -ule ending means small, so a granule is a small grain."
+        },
+        {
+          "word": "module",
+          "sentence": "We finished the first module of our science unit today.",
+          "prompt": "Which part of module tells you it is only a small piece?",
+          "answer": "The -ule ending. A module is one small part of a much bigger course."
+        },
+        {
+          "word": "cooperative",
+          "sentence": "Our class was cooperative during the whole fire drill.",
+          "prompt": "What does the -ive ending tell you about a cooperative class?",
+          "answer": "It describes what they are like. A cooperative class works together."
+        },
+        {
+          "word": "definite",
+          "sentence": "Mr Lee needs a definite answer about camp before Friday.",
+          "prompt": "What does definite mean here?",
+          "answer": "Fixed and certain. Nothing about it can change now."
+        },
+        {
+          "word": "malformation",
+          "sentence": "The x-ray showed a small malformation in the bird's wing.",
+          "prompt": "Which part of malformation tells you something went wrong?",
+          "answer": "The mal- prefix. It means bad or wrong, so the wing formed incorrectly."
+        },
+        {
+          "word": "seclusion",
+          "sentence": "The old cabin sits in complete seclusion behind our camp.",
+          "prompt": "What does seclusion tell you about the cabin?",
+          "answer": "It is shut away from everything else. The clus part means shut."
+        }
+      ],
+      "new_morphology": {
+        "morph": "micro",
+        "type": "root",
+        "keyword": "microscope",
+        "meaning": "small"
+      },
+      "words_to_read_new": [
+        {
+          "word": "microscope",
+          "meaning": "micro means small + scope means look at: a tool for looking at very small things"
+        },
+        {
+          "word": "microphone",
+          "meaning": "micro means small + phone means sound: it picks up small sounds and makes them louder"
+        },
+        {
+          "word": "microwave",
+          "meaning": "micro means small + wave: an oven that cooks with very small, fast waves"
+        },
+        {
+          "word": "microchip",
+          "meaning": "micro means small + chip: a tiny chip that holds a whole circuit"
+        },
+        {
+          "word": "microbe",
+          "meaning": "micro means small + be from bios meaning life: a small living thing"
+        },
+        {
+          "word": "microcosm",
+          "meaning": "micro means small + cosm means world: a small world that stands for a much bigger one"
+        },
+        {
+          "word": "microfilm",
+          "meaning": "micro means small + film: film that stores whole pages shrunk to a tiny size"
+        },
+        {
+          "word": "micron",
+          "meaning": "micro means small + -on names the unit: a small unit of length, one millionth of a metre"
+        },
+        {
+          "word": "micrometer",
+          "meaning": "micro means small + meter means measure: a tool that measures very small distances"
+        },
+        {
+          "word": "microgram",
+          "meaning": "micro means small + gram: one millionth of a gram"
+        },
+        {
+          "word": "microbiology",
+          "meaning": "micro means small + bio means life + -ology means the study of: the study of small life"
+        },
+        {
+          "word": "microscopic",
+          "meaning": "micro means small + scope means look at + -ic means having the nature of: only a microscope shows it"
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears, then connect micro to the card meaning: small.\nmicroscope - micro means small + scope means look at: a tool for looking at very small things.\nmicrophone - micro means small + phone means sound: it picks up small sounds and makes them louder.\nmicrowave - micro means small + wave: an oven that cooks with very small, fast waves.\nmicrochip - micro means small + chip: a tiny chip that holds a whole circuit.\nmicrobe - micro means small + be from bios meaning life: a small living thing, too small for your eyes alone.\nmicrocosm - micro means small + cosm means world: a small world that stands for a much bigger one.\nmicrofilm - micro means small + film: film that stores whole pages shrunk to a tiny size.\nmicron - micro means small + -on names the unit: a small unit of length, one millionth of a metre.\nmicrometer - micro means small + meter means measure: a tool that measures very small distances.\nmicrogram - micro means small + gram: one millionth of a gram.\nmicrobiology - micro means small + bio means life + -ology means the study of: the study of small life, the kind only a microscope shows.\nmicroscopic - micro means small + scope means look at + -ic means having the nature of: having the nature of something you need to look at small, so only a microscope shows it.\nMemory hook: micro is the microscope lens - whatever follows it has been shrunk past what your eyes can catch. Challenge: collect five micro words from the science room and predict each meaning first.",
+      "words_to_spell_new": [
+        "microscope",
+        "microphone",
+        "microwave",
+        "microchip"
+      ],
+      "extension": "1. SAY: \"When you finish, add a suffix to one spelling word and explain the new meaning.\"\n2. CHECK: microscope can become microscopic; the small meaning must still be clear.\nEXTENSION: Write one sentence using two micro words, opening with a subordinate clause (a group with a verb that cannot stand alone).\nThen rewrite it with that clause at the end and repunctuate it.",
+      "new_morph_activity": {
+        "title": "Morpheme sums for micro",
+        "rule": "micro means small. Build the real word from each sum.",
+        "example": "One done for you:\nsmall + sound = microphone",
+        "items": [
+          "1. small + look at = ?      2. small + wave = ?",
+          "3. small + chip = ?      4. small + life + study of = ?"
+        ],
+        "item_size": 17,
+        "routine": "Whiteboards - 3 min - boards up",
+        "footer": "Extension: build a four-part micro word",
+        "notes": "ANSWER: 1 microscope, 2 microwave, 3 microchip, 4 microbiology.\n1. SAY: \"Look at the finished sum first. Then build one real micro word for each number and write it on your board.\"\n2. TIME: 3 minutes. Work alone on whiteboards.\n3. CIRCULATE: to a stuck student say, \"scope is the part that means look at - so what do you look THROUGH in science?\" Then build number one together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number two together, then re-ask.\nTRAP: writing microscopic for number one. Fix: reread look at, choose microscope, and the student rewrites it.\nEXTENSION: Build the four-part word for a person who studies tiny life, then write its full sum.\nHELP: Give the word bank microscope, microwave, microchip, microbiology; students match each word to its sum.\n---\nPurpose: day one of micro builds words straight from the card meaning. [You Do | Morpheme sums | Morphology]\nANSWERS:\n1. small + look at = microscope\n2. small + wave = microwave\n3. small + chip = microchip\n4. small + life + study of = microbiology\nEXTENSION: microbiologist = micro + bio + -ology + -ist, a person who studies tiny life.",
+        "check_title": "Tick it or fix it - Morpheme sums for micro",
+        "check_rule": "Tick each correct word. Fix any word that does not match.",
+        "check_items": [
+          "1. small + look at = microscope (looks at tiny things)",
+          "2. small + wave = microwave (very small, fast waves)",
+          "3. small + chip = microchip (a tiny chip, whole circuit)",
+          "4. small + life + study of = microbiology (study of tiny life)"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Every answer begins with micro = small",
+        "check_notes": "ANSWER: 1 microscope, 2 microwave, 3 microchip, 4 microbiology.\n1. MODEL: \"Number one says small plus look at. Micro means small and scope means look at, so the word is microscope.\"\n2. SAY: \"Now tick each word that matches. Fix any word that is different.\"\n3. ASK: \"Which part of every answer means small?\" 10 sec, choral response. EXPECT: micro.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number four together, then re-check.\nTRAP: ticking a word that is spelled wrong. Fix: read the green word chunk by chunk, then rewrite it.\nEXTENSION: Predict what microclimate will mean before we meet it tomorrow.\nHELP: read the green answer first, then match it back to the sum.\n---\nPurpose: protected reveal so every student hears how the word is built. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "tsunami",
+            "unfair": "ts",
+            "notes": "Why learned: ts says /s/ at the start, because the word kept its Japanese spelling when English borrowed it.\nSay it: soo-NAH-mee, three beats. The t stays silent and the stress lands on NAH.\nQuick link: the huge sea wave an undersea earthquake pushes ashore."
+          },
+          {
+            "word": "circuit",
+            "unfair": "ui",
+            "notes": "Why learned: after the c, ui says short i, so the ending sounds like kit, not kwit.\nSay it: SER-kit, two beats. Say kit at the end and remember the u is doing nothing.\nQuick link: the complete loop an electric current travels around."
+          }
+        ],
+        "new": {
+          "word": "camouflage",
+          "unfair": "ou",
+          "notes": "Why learned: the ou says /uh/, a plain schwa, and the French -age ending says /ahzh/ instead of the /ij/ of village.\nSay it: KAM-uh-flahzh, three beats. Tap them, then write cam - ou - flage in three chunks.\nLink: the science word for the colours and patterns that help an animal blend into its habitat."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Our science class studied camouflage under the new microscope.",
+          "targets": [
+            "camouflage",
+            "microscope"
+          ],
+          "cups": {
+            "capitals": [
+              "Our"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "one clause holding a phrase with no verb; the new learned word camouflage"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Before the class began, Mia whispered, \"That microchip is smaller than my camouflage badge.\"",
+          "targets": [
+            "microchip",
+            "camouflage"
+          ],
+          "cups": {
+            "capitals": [
+              "Before",
+              "Mia",
+              "That"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the because/when/although part that cannot stand alone - the comma shows where it ends)",
+              "comma before the speech (it separates who said it from what they said)",
+              "opening quotation mark (speech starts here, so the first word takes a capital)",
+              "closing quotation mark (the speech ends here)",
+              "full stop inside the quotation (it belongs to the spoken words)"
+            ]
+          },
+          "focus": "an opening subordinate clause and reported speech; camouflage and microchip"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Introduce the verb test that separates a phrase from a clause.\nPREP: Whiteboards out before the I do.",
+        "i_do": {
+          "title": "Phrase or clause?",
+          "rule": "A clause has its own verb. A phrase does not.",
+          "example": "under the old bridge = phrase (no verb)\nThe boat sank = clause (verb: sank)",
+          "items": [
+            "A verb is the doing or being word: sank, ran, is, was.",
+            "Test: hunt for a verb. No verb, no clause."
+          ],
+          "routine": "Eyes on me - watch the verb test",
+          "footer": "Tomorrow: sort a mixed set",
+          "notes": "ANSWER: under the old bridge is a phrase; the boat sank is a clause.\n1. SAY: \"A clause has its own verb - the doing or being word. A phrase does not have one.\"\n2. MODEL: point at under the old bridge. SAY: \"Under, old, bridge - not one of these is a doing or being word, so this is a phrase.\"\n3. MODEL: point at the boat sank. SAY: \"Sank is the doing word, so this group has a verb and it is a clause.\"\n4. ASK: \"What is the one test we use today?\" 5 sec, choral response. EXPECT: find a verb.\nTRAP: calling any long group a clause. Fix: point at each word, ask if it is a doing or being word, then relabel.\n---\nPurpose: first exposure this week; the verb test carries the whole sequence. [I Do | Explicit modelling | Grammar | HITS 3]"
+        },
+        "we_do": {
+          "title": "Find the verb, name it",
+          "rule": "A clause has its own verb. A phrase does not.",
+          "example": "A) after the storm  B) frogs sang",
+          "items": [
+            "Write phrase or clause for A, then for B.",
+            "Prove it: name the verb, or say there is none."
+          ],
+          "routine": "OG books - write it, then pens down",
+          "footer": "Stem: It is a clause because the verb is ...",
+          "notes": "ANSWER: A - phrase, no verb. B - clause, the verb is sang.\n1. SAY: \"Decide A, then B. Write phrase or clause on your board.\"\n2. TIME: 20 seconds, then pens down and books up.\n3. SCAN the back row's books first. 80%+ -> ask for the reason. Less -> hunt the verb in A together, then re-ask.\n4. ASK: \"How do you know B is a clause?\" 5 sec, cold call two students. EXPECT: sang is the verb.\nTRAP: calling A a clause because it names a time. Fix: name each word aloud, find no verb, then rewrite phrase.\n---\nPurpose: guided use of the verb test on a matched pair. [We Do | Guided practice | Grammar | HITS 7]"
+        },
+        "you_do": {
+          "title": "Phrase or clause - your turn",
+          "rule": "Your turn: write phrase or clause beside each one.",
+          "example": "One done for you:\nin the dark cupboard = phrase (no verb)",
+          "items": [
+            "A) the cat sneezed      B) beside the tall gum tree",
+            "C) we waited"
+          ],
+          "item_size": 17,
+          "routine": "OG books - 90 sec - pens down",
+          "footer": "Check: did you find a doing word?",
+          "notes": "ANSWER: A - clause, verb sneezed. B - phrase, no verb. C - clause, verb waited.\n1. SAY: \"Look at the finished one first. Then write phrase or clause for A, B and C.\"\n2. TIME: 90 seconds in your OG book. Work independently.\n3. CIRCULATE: to a stuck student say, \"cover the first word with your thumb. Is anything left that someone or something is DOING?\" Then label A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> label B together, then re-check.\nTRAP: labelling C a phrase because it is short. Fix: find waited, name it as the verb, then relabel.\nEXTENSION: Join A and C into one sentence using a subordinate clause, then move that clause to the end and repunctuate it.\nHELP: Give the three answers sneezed, none and waited; students match them to A, B and C first.\n---\nPurpose: independent use of the verb test; tomorrow sorts a mixed set. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) the cat sneezed = clause (verb: sneezed)\nB) beside the tall gum tree = phrase (no verb)\nC) we waited = clause (verb: waited)\nEXTENSION: Because the cat sneezed, we waited beside the tall gum tree. Moved: We waited beside the tall gum tree because the cat sneezed.",
+          "check_title": "Tick it or fix it - Phrase or clause",
+          "check_rule": "Tick each correct label. Fix any label that is different.",
+          "check_items": [
+            "A) the cat sneezed = clause (verb: sneezed)",
+            "B) beside the tall gum tree = phrase (no verb)",
+            "C) we waited = clause (verb: waited)"
+          ],
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Every clause has its own verb",
+          "check_notes": "ANSWER: A - clause, verb sneezed. B - phrase, no verb. C - clause, verb waited.\n1. MODEL: \"In A I hunt for a doing word. Sneezed is the verb, so A is a clause.\"\n2. SAY: \"Tick each label that matches. Fix any label that is different.\"\n3. ASK: \"Why is B a phrase even though it is the longest one?\" 10 sec, turn and tell. EXPECT: it has no verb.\n4. SCAN corrections. 80%+ -> continue. Less -> hunt the verb in C together, then re-check.\nTRAP: ticking a label without naming the verb. Fix: say the verb aloud, then tick.\n---\nPurpose: the answer slide shows how each label is decided. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "type": "review",
+      "morphology_review": [
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like",
+          "extra_task": {
+            "prompt": "Give me one -ive word, meaning relating to or like.",
+            "answers": [
+              "active",
+              "positive",
+              "sensitive",
+              "expensive"
+            ]
+          }
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where",
+          "extra_task": {
+            "prompt": "Give me one -ery word.",
+            "answers": [
+              "machinery",
+              "bravery",
+              "discovery",
+              "pottery"
+            ]
+          }
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        },
+        {
+          "morph": "clud(e)/clus(e)",
+          "type": "root",
+          "keyword": "exclude",
+          "meaning": "shut",
+          "extra_task": {
+            "prompt": "Give me one word built from clud or clus, meaning shut.",
+            "answers": [
+              "include",
+              "exclude",
+              "conclude",
+              "seclusion"
+            ]
+          }
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "numeracy",
+          "reflection",
+          "ridicule",
+          "malaise",
+          "megaton",
+          "microfilm",
+          "sensitive",
+          "advocacy",
+          "justice",
+          "include",
+          "appetite",
+          "minuscule",
+          "microcosm",
+          "fugitive",
+          "diplomacy"
+        ],
+        "notes": "1. READ: \"First names starting A to F, read row 1.\"\n2. READ: \"First names starting G to L, read row 2.\"\n3. READ: \"First names starting M to R, read row 3.\"\n4. READ: \"First names starting S to Z, read row 4.\"\n5. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round.\"\n6. ASK: \"Which words use micro, meaning small?\" 5 sec, choral response. EXPECT: microfilm, microcosm.\n7. ASK: \"Which words use -acy, meaning quality or state?\" 5 sec, choral response. EXPECT: numeracy, advocacy, diplomacy.\n8. ASK: \"Which words use -ule, meaning small?\" 5 sec, turn and tell. EXPECT: ridicule, minuscule.\n9. ASK: \"Which word means the opposite of exclude?\" 3 sec, choral response. EXPECT: include.\n10. ASK: \"Which word names a strong wish for food?\" 3 sec, choral response. EXPECT: appetite.\n11. ASK: \"Make megaton plural.\" 3 sec, choral response. EXPECT: megatons.\n12. ASK: \"Which word names fairness under the law?\" 3 sec, choral response. EXPECT: justice."
+      },
+      "sound_bank": [
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "ord/ordin",
+          "type": "root"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ic",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "adequacy",
+          "sentence": "The coach checked the adequacy of our safety gear before the game.",
+          "prompt": "What is the coach actually checking?",
+          "answer": "Whether there is enough, and whether it is good enough. The -acy ending names that state."
+        },
+        {
+          "word": "conspiracy",
+          "sentence": "In our class novel the plot turns on a secret conspiracy.",
+          "prompt": "What does the -acy ending name in conspiracy?",
+          "answer": "A state. A conspiracy is the state of secretly planning together."
+        },
+        {
+          "word": "schedule",
+          "sentence": "Check the bus schedule before you pack your bag tonight.",
+          "prompt": "Does schedule split into a smaller meaning the way nodule does?",
+          "answer": "No. Schedule is a whole word from that card family, so learn the ending by heart."
+        },
+        {
+          "word": "megaunit",
+          "sentence": "The engineer wrote our school's power use as a single megaunit.",
+          "prompt": "How many units are in a megaunit?",
+          "answer": "A million. The mega- prefix means million."
+        },
+        {
+          "word": "primitive",
+          "sentence": "The museum showed us a primitive stone tool from this valley.",
+          "prompt": "What does primitive tell you about the tool?",
+          "answer": "It comes from the earliest, simplest time. The -ive ending describes what it is like."
+        },
+        {
+          "word": "exquisite",
+          "sentence": "The exquisite carving in our foyer took months to finish.",
+          "prompt": "What does exquisite tell you about the carving?",
+          "answer": "That it is extremely fine and beautiful."
+        },
+        {
+          "word": "discovery",
+          "sentence": "The discovery of a fossil near the creek made the local news.",
+          "prompt": "Which -ery meaning fits discovery?",
+          "answer": "Relating to. A discovery is what comes out of discovering something."
+        },
+        {
+          "word": "ordinance",
+          "sentence": "The council passed an ordinance about noise near our school.",
+          "prompt": "Which part of ordinance tells you it is about keeping order?",
+          "answer": "The ord part. An ordinance is an official rule that keeps order."
+        },
+        {
+          "word": "micron",
+          "sentence": "A micron is far too small for us to see in the classroom.",
+          "prompt": "How small is a micron?",
+          "answer": "One millionth of a metre. The micro part means small."
+        },
+        {
+          "word": "microgram",
+          "sentence": "The science scales measured one microgram of powder.",
+          "prompt": "How much is a microgram?",
+          "answer": "One millionth of a gram. Micro means small."
+        }
+      ],
+      "new_morphology": {
+        "morph": "micro",
+        "type": "root",
+        "keyword": "microscope",
+        "meaning": "small"
+      },
+      "words_to_read_new": [
+        {
+          "word": "microbial",
+          "meaning": "micro means small + bio means life + -al means relating to: relating to living things too small to see"
+        },
+        {
+          "word": "microclimate",
+          "meaning": "micro means small + climate: the climate of one small area, like a shaded gully"
+        },
+        {
+          "word": "microsecond",
+          "meaning": "micro means small + second: one millionth of a second"
+        },
+        {
+          "word": "microplastic",
+          "meaning": "micro means small + plastic: a piece of plastic small enough to enter the food chain"
+        },
+        {
+          "word": "microsurgery",
+          "meaning": "micro means small + surgery: surgery on very small parts, done using a microscope"
+        },
+        {
+          "word": "microhabitat",
+          "meaning": "micro means small + habitat: a very small home area, such as under one log"
+        },
+        {
+          "word": "microscope",
+          "meaning": "micro means small + scope means look at: yesterday's word, the tool for looking at tiny things"
+        },
+        {
+          "word": "microphone",
+          "meaning": "micro means small + phone means sound: yesterday's word, it picks up small sounds"
+        },
+        {
+          "word": "microbe",
+          "meaning": "micro means small + be from bios meaning life: yesterday's word, a living thing far too small to see"
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears. Same card, new words: micro still means small.\nmicrobial - micro means small + bio means life + -al means relating to: relating to living things too small to see.\nmicroclimate - micro means small + climate: the climate of one small area, like a shaded gully.\nmicrosecond - micro means small + second: one millionth of a second.\nmicroplastic - micro means small + plastic: a piece of plastic small enough to enter the food chain.\nmicrosurgery - micro means small + surgery: surgery on very small parts, done using a microscope.\nmicrohabitat - micro means small + habitat: a very small home area, such as under one log.\nmicroscope - micro means small + scope means look at: yesterday's word, the tool for looking at tiny things.\nmicrophone - micro means small + phone means sound: yesterday's word, it picks up small sounds.\nmicrobe - micro means small + be from bios meaning life: yesterday's word, a living thing far too small to see.\nMemory hook: micro is the microscope lens - whatever follows it has been shrunk past what your eyes can catch. Challenge: collect five micro words from the science room and predict each meaning first.",
+      "words_to_spell_new": [
+        "microbial",
+        "microsecond",
+        "microclimate",
+        "microhabitat"
+      ],
+      "extension": "1. SAY: \"When you finish, write one sentence that uses two micro words.\"\n2. CHECK: both words must still carry the small meaning.\nEXTENSION: Open with a subordinate clause (a group with a verb that cannot stand alone, such as 'When the sample was ready'), then rewrite the same sentence with that clause at the end.",
+      "new_morph_activity": {
+        "title": "Write the micro sum",
+        "rule": "Write each morpheme sum, then the meaning in your words.",
+        "example": "One done for you:\nmicroplastic = micro + plastic\n= plastic small enough to swallow",
+        "items": [
+          "1. microclimate =      2. microbial =",
+          "3. microsecond =      4. microhabitat ="
+        ],
+        "item_size": 17,
+        "routine": "OG workbooks - 4 min - pens down",
+        "footer": "Every sum begins with micro, meaning small",
+        "notes": "ANSWER: 1 micro + climate, 2 micro + bio + -al, 3 micro + second, 4 micro + habitat.\n1. SAY: \"Copy the finished line first. Then write each sum in your workbook and end with the meaning in your own words.\"\n2. TIME: 4 minutes. Work alone in OG workbooks.\n3. CIRCULATE: to a stuck student say, \"cover micro with your finger. The word left over is one you already know - now shrink it.\" Then write number one together.\n4. SCAN books at the front table. 80%+ -> reveal the check slide. Less -> unpack number three together, then re-check.\nTRAP: leaving micro out of the sum. Fix: underline micro in the printed word, then rewrite the sum.\nEXTENSION: Take microfinance, a word we have not met, predict its meaning from the parts alone, then say how you would check it.\nHELP: Give the second parts climate, bio + -al, second and habitat; students add micro.\n---\nPurpose: day two moves from building words to unpacking them. [You Do | Literal meanings | Morphology]\nANSWERS:\n1. microclimate = micro + climate = the climate of one small area\n2. microbial = micro + bio + -al = relating to tiny life\n3. microsecond = micro + second = one millionth of a second\n4. microhabitat = micro + habitat = a very small home area\nEXTENSION: microfinance = micro + finance, very small loans; check it in a dictionary.",
+        "check_title": "Tick it or fix it - Write the micro sum",
+        "check_rule": "Tick each sum. Fix any sum that is missing a part.",
+        "check_items": [
+          "1. microclimate = micro + climate = climate of one small area",
+          "2. microbial = micro + bio + -al = relating to tiny life",
+          "3. microsecond = micro + second = one millionth of a second",
+          "4. microhabitat = micro + habitat = a very small home area"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "micro shrinks every word it joins",
+        "check_notes": "ANSWER: 1 micro + climate, 2 micro + bio + -al, 3 micro + second, 4 micro + habitat.\n1. MODEL: \"Number one splits into micro and climate. Micro means small, so a microclimate is the climate of one small area.\"\n2. SAY: \"Tick each sum that matches. Fix any sum that is missing a part.\"\n3. ASK: \"Which part appears in every single sum?\" 10 sec, choral response. EXPECT: micro.\n4. SCAN corrections. 80%+ -> continue. Less -> unpack number two together, then re-check.\nTRAP: splitting microbial as micro + bial. Fix: name bio and -al separately, then rewrite the sum.\nEXTENSION: Write the four-part sum for microbiologist.\nHELP: read the green sum first, then copy it and add your own meaning.\n---\nPurpose: immediate feedback on unpacking, not just recognising. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "camouflage",
+            "unfair": "ou",
+            "notes": "Why learned: the ou says /uh/, and the -age ending says /ahzh/, not /ij/.\nSay it: KAM-uh-flahzh, three beats, then write it from memory.\nQuick link: the science word for blending into a habitat."
+          },
+          {
+            "word": "tsunami",
+            "unfair": "ts",
+            "notes": "Why learned: ts says /s/ at the start, because the word kept its Japanese spelling when English borrowed it.\nSay it: soo-NAH-mee, three beats. The t stays silent and the stress lands on NAH.\nQuick link: the huge sea wave an undersea earthquake pushes ashore."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Our camouflage project used one microscope and a microsecond timer.",
+          "targets": [
+            "camouflage",
+            "microscope",
+            "microsecond"
+          ],
+          "cups": {
+            "capitals": [
+              "Our"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "one clause, three targets; camouflage from yesterday"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "When the bell rang, Sam whispered, \"That microbe looks huge under our microscope.\"",
+          "targets": [
+            "microbe",
+            "microscope"
+          ],
+          "cups": {
+            "capitals": [
+              "When",
+              "Sam",
+              "That"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the because/when/although part that cannot stand alone - the comma shows where it ends)",
+              "comma before the speech (it separates who said it from what they said)",
+              "opening quotation mark (speech starts here, so the first word takes a capital)",
+              "closing quotation mark (the speech ends here)",
+              "full stop inside the quotation (it belongs to the spoken words)"
+            ]
+          },
+          "focus": "an opening subordinate clause and reported speech; two micro targets"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Sort a mixed pair and link phrases back to the Week 1 preposition work.\nPREP: Whiteboards out; the rule is restated in the I do for anyone away yesterday.",
+        "i_do": {
+          "title": "Most phrases open with a preposition",
+          "rule": "A clause has its own verb. A phrase does not, and it often opens with a preposition.",
+          "example": "in the leaking shed = phrase (no verb)\nThe dog barked = clause (verb: barked)",
+          "items": [
+            "Prepositions you know: in, on, under, before, after, across.",
+            "A verb is the doing or being word."
+          ],
+          "routine": "Watch where the verb hides",
+          "footer": "You will sort a pair next",
+          "notes": "ANSWER: in the leaking shed is a phrase; the dog barked is a clause.\n1. SAY: \"A clause has its own verb - the doing or being word. A phrase does not, and it often opens with a preposition.\"\n2. MODEL: point at in the leaking shed. SAY: \"In is a preposition, and nobody is doing or being anything, so this is a phrase.\"\n3. MODEL: point at the dog barked. SAY: \"Barked is the doing word, so this one is a clause.\"\n4. ASK: \"Which word opens the phrase?\" 5 sec, choral response. EXPECT: in.\nTRAP: treating leaking as the verb of the group. Fix: ask who is doing it, find no one, then relabel it a phrase.\n---\nPurpose: connect the verb test to Week 1 prepositions; rule restated for absentees. [I Do | Explicit modelling | Grammar | HITS 3]"
+        },
+        "we_do": {
+          "title": "Sort the pair",
+          "rule": "A clause has its own verb. A phrase does not.",
+          "example": "A) across the oval  B) rain fell",
+          "items": [
+            "Write phrase or clause for A, then for B.",
+            "Prove it: name the verb, or name the preposition."
+          ],
+          "routine": "OG books - write it, then pens down",
+          "footer": "Stem: It is a phrase because ...",
+          "notes": "ANSWER: A - phrase, opens with across and has no verb. B - clause, the verb is fell.\n1. SAY: \"Sort both. Write phrase or clause on your board.\"\n2. TIME: 20 seconds, then pens down and books up.\n3. SCAN the back row's books first. 80%+ -> ask for the reason. Less -> hunt the verb in A together, then re-ask.\n4. ASK: \"Do you agree that A is a phrase? Add one thing.\" 5 sec, cold call one student. EXPECT: it has no verb and it opens with across.\nTRAP: calling B a phrase because it is short. Fix: name fell as the verb, then rewrite clause.\n---\nPurpose: guided sorting with the preposition clue added. [We Do | Guided practice | Grammar | HITS 7]"
+        },
+        "you_do": {
+          "title": "Sort all three",
+          "rule": "Your turn: write phrase or clause beside each one.",
+          "example": "One done for you:\nafter the long assembly = phrase (no verb)",
+          "items": [
+            "A) the bell rang      B) on the top shelf",
+            "C) she smiled"
+          ],
+          "item_size": 17,
+          "routine": "OG books - 90 sec - pens down",
+          "footer": "Check: did you find a doing word?",
+          "notes": "ANSWER: A - clause, verb rang. B - phrase, no verb. C - clause, verb smiled.\n1. SAY: \"Look at the finished one first. Then write phrase or clause for A, B and C.\"\n2. TIME: 90 seconds in your OG book. Work independently.\n3. CIRCULATE: to a stuck student say, \"say it out loud as if it were the whole answer to a question. Does it finish?\" Then label A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> label B together, then re-check.\nTRAP: labelling B a clause because shelf feels like a thing happening. Fix: hunt for a doing word, find none, then relabel.\nEXTENSION: Rewrite A so the phrase from B opens it, then punctuate the new sentence correctly.\nHELP: Give the three answers rang, none and smiled; students match them to A, B and C first.\n---\nPurpose: independent sorting; tomorrow adds the stand-alone test. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) the bell rang = clause (verb: rang)\nB) on the top shelf = phrase (no verb)\nC) she smiled = clause (verb: smiled)\nEXTENSION: On the top shelf, the bell rang and she smiled. The phrase now opens the sentence and takes a comma.",
+          "check_title": "Tick it or fix it - Sort all three",
+          "check_rule": "Tick each correct label. Fix any label that is different.",
+          "check_items": [
+            "A) the bell rang = clause (verb: rang)",
+            "B) on the top shelf = phrase (no verb)",
+            "C) she smiled = clause (verb: smiled)"
+          ],
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "No verb means it can only be a phrase",
+          "check_notes": "ANSWER: A - clause, verb rang. B - phrase, no verb. C - clause, verb smiled.\n1. MODEL: \"In A the doing word is rang, so A is a clause.\"\n2. SAY: \"Tick each label that matches. Fix any label that is different.\"\n3. ASK: \"Which word opens B, and what does that tell you?\" 10 sec, turn and tell. EXPECT: on, a preposition, which usually opens a phrase.\n4. SCAN corrections. 80%+ -> continue. Less -> hunt the verb in C together, then re-check.\nTRAP: ticking B because it sounds complete. Fix: read it aloud alone, hear that it is unfinished, then relabel.\n---\nPurpose: the answer slide reteaches the verb test and the preposition clue. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Wednesday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small",
+          "extra_task": {
+            "prompt": "Give me one -ule word, meaning small.",
+            "answers": [
+              "nodule",
+              "capsule",
+              "granule",
+              "molecule"
+            ]
+          }
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million",
+          "extra_task": {
+            "prompt": "Give me one mega- word, meaning million.",
+            "answers": [
+              "megahertz",
+              "megawatt",
+              "megaton",
+              "megaunit"
+            ]
+          }
+        },
+        {
+          "morph": "clud(e)/clus(e)",
+          "type": "root",
+          "keyword": "exclude",
+          "meaning": "shut"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small",
+          "extra_task": {
+            "prompt": "Give me one micro word, meaning small.",
+            "answers": [
+              "microscope",
+              "microphone",
+              "microwave",
+              "microchip"
+            ]
+          }
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "granule",
+          "positive",
+          "megahertz",
+          "microbiology",
+          "disorder",
+          "accuracy",
+          "dynamite",
+          "module",
+          "novice",
+          "capture",
+          "privacy",
+          "pottery",
+          "nodule",
+          "micrometer",
+          "expensive"
+        ],
+        "notes": "1. READ: \"If sport is your favourite subject, read row 1.\"\n2. READ: \"If art or music is your favourite, read row 2.\"\n3. READ: \"If reading or writing is your favourite, read row 3.\"\n4. READ: \"If maths or science is your favourite, read row 4. Pick the closest if none fits.\"\n5. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round.\"\n6. ASK: \"Which words use micro, meaning small?\" 5 sec, choral response. EXPECT: microbiology, micrometer.\n7. ASK: \"Which words use -ule, meaning small?\" 5 sec, choral response. EXPECT: granule, module, nodule.\n8. ASK: \"Extension Wheel, synonym for 3 points: give a synonym for accuracy.\" 5 sec, turn and tell. EXPECT: exactness or precision.\n9. ASK: \"Extension Wheel, antonym for 3 points: give an antonym for expensive.\" 3 sec, choral response. EXPECT: cheap or inexpensive.\n10. ASK: \"Extension Wheel, meaning for 2 points: what does novice mean?\" 3 sec, choral response. EXPECT: a beginner.\n11. ASK: \"Extension Wheel, analogy for 5 points: order is to disorder as tidy is to what?\" 5 sec, choral response. EXPECT: untidy or messy.\n12. ASK: \"Which word uses mega-, meaning million?\" 3 sec, choral response. EXPECT: megahertz."
+      },
+      "sound_bank": [
+        {
+          "morph": "pict/picto",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "clud(e)/clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "candidacy",
+          "sentence": "His candidacy for team captain surprised the whole squad.",
+          "prompt": "What state is he in once he has a candidacy?",
+          "answer": "The state of being a candidate. The -acy ending names it."
+        },
+        {
+          "word": "capsule",
+          "sentence": "The capsule of medicine dissolved in warm water.",
+          "prompt": "Which part of capsule tells you it is small?",
+          "answer": "The -ule ending. A capsule is a small case that holds something."
+        },
+        {
+          "word": "molecule",
+          "sentence": "Every water molecule holds two hydrogen atoms.",
+          "prompt": "How big is a molecule?",
+          "answer": "Tiny. The -ule ending means small, and a molecule is the smallest unit of a substance."
+        },
+        {
+          "word": "megawatt",
+          "sentence": "The wind farm near the highway made one megawatt of power.",
+          "prompt": "How many watts are in a megawatt?",
+          "answer": "A million. Mega- means million."
+        },
+        {
+          "word": "inquisitive",
+          "sentence": "One inquisitive student asked six questions in a row.",
+          "prompt": "What does inquisitive tell you about that student?",
+          "answer": "That they keep asking and inquiring. The -ive ending describes what they are like."
+        },
+        {
+          "word": "composite",
+          "sentence": "The new skate ramp used a strong composite material.",
+          "prompt": "What makes something a composite?",
+          "answer": "It is made by putting different parts together."
+        },
+        {
+          "word": "malnutrition",
+          "sentence": "Clean water and good food help prevent malnutrition.",
+          "prompt": "Which part of malnutrition tells you the nutrition is poor?",
+          "answer": "The mal- prefix. It means bad or ill, so the body is not fed properly."
+        },
+        {
+          "word": "conclusion",
+          "sentence": "Write a clear conclusion at the end of your report.",
+          "prompt": "What job does a conclusion do?",
+          "answer": "It shuts the writing. The clus part means shut."
+        },
+        {
+          "word": "microwave",
+          "sentence": "We warmed our soup in the staffroom microwave.",
+          "prompt": "What is small about a microwave?",
+          "answer": "The waves. Micro means small, and a microwave cooks with very small, fast waves."
+        },
+        {
+          "word": "microchip",
+          "sentence": "A single microchip controls the whole robot.",
+          "prompt": "What does the micro part tell you about the chip?",
+          "answer": "That it is tiny. A microchip holds a whole circuit."
+        }
+      ],
+      "new_morphology": {
+        "morph": "pict/picto",
+        "type": "root",
+        "keyword": "picture",
+        "meaning": "paint"
+      },
+      "words_to_read_new": [
+        {
+          "word": "picture",
+          "meaning": "pict means paint: something painted, drawn or photographed so you can see it"
+        },
+        {
+          "word": "pictorial",
+          "meaning": "pict means paint + -al means relating to: relating to pictures rather than words"
+        },
+        {
+          "word": "pictograph",
+          "meaning": "picto means paint + graph means write: a picture used as writing"
+        },
+        {
+          "word": "pictogram",
+          "meaning": "picto means paint + gram means something written: a small picture standing for a word or an amount"
+        },
+        {
+          "word": "depict",
+          "meaning": "de- means down + pict means paint: to set something down in a picture or in words"
+        },
+        {
+          "word": "depiction",
+          "meaning": "depict + -tion means the act of: the act of showing something in a picture or in words"
+        },
+        {
+          "word": "picturesque",
+          "meaning": "picture + -esque means in the style of: so pretty it looks like a painting"
+        },
+        {
+          "word": "pictography",
+          "meaning": "picto means paint + graph means write + -y names the system: the system of writing with pictures"
+        },
+        {
+          "word": "pictorially",
+          "meaning": "pictorial + -ly means in that way: shown in the manner of pictures"
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears, then connect pict or picto to the card meaning: paint.\npicture - pict means paint: something painted, drawn or photographed so you can see it.\npictorial - pict means paint + -al means relating to: relating to pictures rather than words.\npictograph - picto means paint + graph means write: a picture used as writing.\npictogram - picto means paint + gram means something written: a small picture standing for a word or an amount.\ndepict - de- means down + pict means paint: to set something down in a picture or in words.\ndepiction - depict + -tion means the act of: the act of showing something in a picture or in words.\npicturesque - picture + -esque means in the style of: so pretty it looks like a painting.\npictography - picto means paint + graph means write + -y names the system: the system of writing with pictures.\npictorially - pictorial + -ly means in that way: shown in the manner of pictures.\nMemory hook: if you could DRAW it instead of writing it, PICT is in the word - test every new one that way. Challenge: find a pict word on a sign or screen outside school and draw what it shows.",
+      "words_to_spell_new": [
+        "picture",
+        "depict",
+        "pictorial",
+        "pictograph"
+      ],
+      "extension": "1. SAY: \"When you finish, write one sentence that uses two pict words.\"\n2. CHECK: both words must keep the paint or picture meaning.\nEXTENSION: Open with a phrase that has no verb, such as 'On the cave wall', then rewrite the sentence so it opens with a subordinate clause instead and punctuate both versions.",
+      "new_morph_activity": {
+        "title": "Build the pict word",
+        "rule": "pict and picto mean paint. Build each word.",
+        "example": "One done for you:\npaint + write = pictograph",
+        "items": [
+          "1. picture + relating to = ?      2. down + paint = ?",
+          "3. depict + act of = ?      4. picture + in the style of = ?"
+        ],
+        "item_size": 17,
+        "routine": "Whiteboards - 3 min - boards up",
+        "footer": "Every answer keeps pict, meaning paint",
+        "notes": "ANSWER: 1 pictorial, 2 depict, 3 depiction, 4 picturesque.\n1. SAY: \"Look at the finished build first. Then build one real word for each number and write it on your board.\"\n2. TIME: 3 minutes. Work alone on whiteboards.\n3. CIRCULATE: to a stuck student say, \"de- means down. If you set a scene DOWN in paint, what have you just done to it?\" Then build number one together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number three together, then re-ask.\nTRAP: writing picture for number one. Fix: reread relating to, choose pictorial, and the student rewrites it.\nEXTENSION: Predict the meaning of pictorialise, a word we have not met, then say how you would check it.\nHELP: Give the word bank pictorial, depict, depiction, picturesque; students match each word to its build.\n---\nPurpose: day one of pict/picto builds words from the card meaning. [You Do | Word building | Morphology]\nANSWERS:\n1. picture + relating to = pictorial\n2. down + paint = depict\n3. depict + the act of = depiction\n4. picture + in the style of = picturesque\nEXTENSION: pictorialise = pict + -al + -ise, to turn something into pictures.",
+        "check_title": "Tick it or fix it - Build the pict word",
+        "check_rule": "Tick each correct word. Fix any word that does not match.",
+        "check_items": [
+          "1. picture + relating to = pictorial (relating to pictures)",
+          "2. down + paint = depict (to set it down in a picture)",
+          "3. depict + the act of = depiction (the act of depicting)",
+          "4. picture + in the style of = picturesque (like a painting)"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Every answer keeps pict, meaning paint",
+        "check_notes": "ANSWER: 1 pictorial, 2 depict, 3 depiction, 4 picturesque.\n1. MODEL: \"Number one is picture plus relating to. Pict means paint and -al means relating to, so the word is pictorial.\"\n2. SAY: \"Tick each word that matches. Fix any word that is different.\"\n3. ASK: \"Which part of every answer means paint?\" 10 sec, choral response. EXPECT: pict.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number four together, then re-check.\nTRAP: writing depict for number three. Fix: reread the act of, add -tion, then rewrite depiction.\nEXTENSION: Write the four-part sum for pictographic.\nHELP: read the green word first, then match it back to the build.\n---\nPurpose: protected reveal that reteaches how each word is built. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "camouflage",
+            "unfair": "ou",
+            "notes": "Why learned: the ou says /uh/, and the -age ending says /ahzh/, not /ij/.\nSay it: KAM-uh-flahzh, three beats, then write it from memory.\nQuick link: the science word for blending into a habitat."
+          },
+          {
+            "word": "tsunami",
+            "unfair": "ts",
+            "notes": "Why learned: ts says /s/ at the start, because the word kept its Japanese spelling when English borrowed it.\nSay it: soo-NAH-mee, three beats. The t stays silent and the stress lands on NAH.\nQuick link: the huge sea wave an undersea earthquake pushes ashore."
+          }
+        ],
+        "new": {
+          "word": "seismograph",
+          "unfair": "ei",
+          "notes": "Why learned: ei says long i here, so seis sounds like size, and the second s says /z/.\nSay it: SIZE-muh-grahf, three beats. Say size, then muh, then grahf.\nLink: the earth science instrument that records earthquake waves - the same waves that can push up a tsunami."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Each pictograph in our picture book showed one clear idea.",
+          "targets": [
+            "pictograph",
+            "picture"
+          ],
+          "cups": {
+            "capitals": [
+              "Each"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "one clause holding a phrase with no verb; two pict targets"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Although the camouflage worked, our artist said, \"I will depict the seismograph.\"",
+          "targets": [
+            "camouflage",
+            "depict",
+            "seismograph"
+          ],
+          "cups": {
+            "capitals": [
+              "Although",
+              "I"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the because/when/although part that cannot stand alone - the comma shows where it ends)",
+              "comma before the speech (it separates who said it from what they said)",
+              "opening quotation mark (speech starts here, so the first word takes a capital)",
+              "closing quotation mark (the speech ends here)",
+              "full stop inside the quotation (it belongs to the spoken words)"
+            ]
+          },
+          "focus": "an opening subordinate clause and reported speech; the new learned word seismograph"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Add the stand-alone test - a main clause can be a sentence on its own.\nPREP: Whiteboards out; the rule is restated in the I do for anyone away.",
+        "i_do": {
+          "title": "A main clause stands alone",
+          "rule": "A clause has its own verb. A main clause can stand alone as a sentence; a phrase cannot.",
+          "example": "The boat sank = main clause, it stands alone\nUnder the old bridge = phrase, it cannot",
+          "items": [
+            "A verb is the doing or being word.",
+            "Test 1: find a verb. Test 2: can it stand alone?"
+          ],
+          "routine": "Listen for the finished sentence",
+          "footer": "You will label three of them",
+          "notes": "ANSWER: The boat sank is a main clause; Under the old bridge is a phrase.\n1. SAY: \"A clause has its own verb. A main clause can stand alone as a whole sentence, and a phrase cannot.\"\n2. MODEL: read The boat sank aloud. SAY: \"That finishes. It has the verb sank and it stands alone, so it is a main clause.\"\n3. MODEL: read Under the old bridge aloud. SAY: \"That leaves me waiting. No verb, cannot stand alone, so it is a phrase.\"\n4. ASK: \"Which one leaves you waiting for more?\" 5 sec, choral response. EXPECT: under the old bridge.\nTRAP: judging by length instead of the tests. Fix: read it aloud alone, then run both tests and relabel.\n---\nPurpose: add the stand-alone test on top of the verb test; rule restated for absentees. [I Do | Explicit modelling | Grammar | HITS 3]"
+        },
+        "we_do": {
+          "title": "Does it stand alone?",
+          "rule": "A main clause has a verb and stands alone. A phrase has no verb.",
+          "example": "A) The tide turned.  B) At dusk.",
+          "items": [
+            "Write main clause or phrase for A, then for B.",
+            "Prove it: read it aloud alone and listen."
+          ],
+          "routine": "OG books - write it, then pens down",
+          "footer": "Stem: It stands alone because ...",
+          "notes": "ANSWER: A - main clause, verb turned. B - phrase, no verb.\n1. SAY: \"Label A, then B. Write main clause or phrase on your board.\"\n2. TIME: 20 seconds, then pens down and books up.\n3. SCAN the middle row's books first. 80%+ -> ask for the reason. Less -> read B aloud alone together, then re-ask.\n4. ASK: \"How do you know A stands alone?\" 5 sec, cold call two students. EXPECT: turned is the verb and the idea finishes.\nTRAP: calling B a clause because it names a time. Fix: hunt for a doing word, find none, then rewrite phrase.\n---\nPurpose: guided use of both tests together. [We Do | Guided practice | Grammar | HITS 7]"
+        },
+        "you_do": {
+          "title": "Label all three",
+          "rule": "Your turn: write main clause or phrase beside each one.",
+          "example": "One done for you:\nafter the last bell = phrase (no verb)",
+          "items": [
+            "A) The lights flickered.      B) In the empty carpark.",
+            "C) Nobody moved."
+          ],
+          "item_size": 17,
+          "routine": "OG books - 90 sec - pens down",
+          "footer": "Check: does it finish on its own?",
+          "notes": "ANSWER: A - main clause, verb flickered. B - phrase, no verb. C - main clause, verb moved.\n1. SAY: \"Look at the finished one first. Then label A, B and C.\"\n2. TIME: 90 seconds in your OG book. Work independently.\n3. CIRCULATE: to a stuck student say, \"put a full stop on the end and read it. Would you send that as a text message on its own?\" Then label A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> label B together, then re-check.\nTRAP: labelling C a phrase because it is only two words. Fix: find moved, name it as the verb, then relabel.\nEXTENSION: Turn B into a subordinate clause, join it to C, then move it to the end and repunctuate.\nHELP: Give the three verbs flickered, none and moved; students match them to A, B and C first.\n---\nPurpose: independent use of both tests; tomorrow adds the subordinate clause. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) The lights flickered. = main clause (verb: flickered)\nB) In the empty carpark. = phrase (no verb)\nC) Nobody moved. = main clause (verb: moved)\nEXTENSION: While the lights flickered in the empty carpark, nobody moved. Moved: Nobody moved while the lights flickered.",
+          "check_title": "Tick it or fix it - Label all three",
+          "check_rule": "Tick each correct label. Fix any label that is different.",
+          "check_items": [
+            "A) The lights flickered. = main clause (verb: flickered)",
+            "B) In the empty carpark. = phrase (no verb)",
+            "C) Nobody moved. = main clause (verb: moved)"
+          ],
+          "check_item_size": 18,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "A main clause finishes on its own",
+          "check_notes": "ANSWER: A - main clause, verb flickered. B - phrase, no verb. C - main clause, verb moved.\n1. MODEL: \"In A the verb is flickered, and The lights flickered finishes on its own, so it is a main clause.\"\n2. SAY: \"Tick each label that matches. Fix any label that is different.\"\n3. ASK: \"Why does B leave you waiting?\" 10 sec, turn and tell. EXPECT: it has no verb, so nothing happens in it.\n4. SCAN corrections. 80%+ -> continue. Less -> read C aloud alone together, then re-check.\nTRAP: ticking C as a phrase because it is short. Fix: name moved as the verb, then relabel.\n---\nPurpose: the answer slide shows both tests being applied. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Thursday",
+      "type": "review",
+      "morphology_review": [
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality",
+          "extra_task": {
+            "prompt": "Give me one -ice word, meaning state or quality.",
+            "answers": [
+              "service",
+              "justice",
+              "notice",
+              "novice"
+            ]
+          }
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint",
+          "extra_task": {
+            "prompt": "Give me one word built from pict or picto, meaning paint.",
+            "answers": [
+              "picture",
+              "depict",
+              "pictograph",
+              "pictorial"
+            ]
+          }
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small",
+          "extra_task": {
+            "prompt": "Give me one -ule word, meaning small.",
+            "answers": [
+              "nodule",
+              "capsule",
+              "granule",
+              "molecule"
+            ]
+          }
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "literacy",
+          "maladroit",
+          "ridicule",
+          "notice",
+          "massive",
+          "megaton",
+          "pictograph",
+          "delicacy",
+          "exclude",
+          "minuscule",
+          "favourite",
+          "microscopic",
+          "regulate",
+          "negative",
+          "supremacy"
+        ],
+        "notes": "1. READ: \"Left-handers, read row 1.\"\n2. READ: \"Right-handers, read row 2. Use either one if you write with both hands.\"\n3. READ: \"January to June birthdays, read row 3.\"\n4. READ: \"July to December birthdays, read row 4.\"\n5. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round.\"\n6. ASK: \"Which word uses pict or picto, meaning paint?\" 3 sec, choral response. EXPECT: pictograph.\n7. ASK: \"Which word uses micro, meaning small?\" 3 sec, choral response. EXPECT: microscopic.\n8. ASK: \"Which words use -acy, meaning quality or state?\" 5 sec, turn and tell. EXPECT: literacy, delicacy, supremacy.\n9. ASK: \"What is the opposite of include?\" 3 sec, choral response. EXPECT: exclude.\n10. ASK: \"Which word means extremely small?\" 3 sec, choral response. EXPECT: minuscule.\n11. ASK: \"Make favourite plural.\" 3 sec, choral response. EXPECT: favourites.\n12. ASK: \"Which word means clumsy or unskilful?\" 3 sec, choral response. EXPECT: maladroit."
+      },
+      "sound_bank": [
+        {
+          "morph": "pict/picto",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "ord/ordin",
+          "type": "root"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "adequacy",
+          "sentence": "Our teacher checked the adequacy of the safety ropes before we climbed.",
+          "prompt": "What is being checked here?",
+          "answer": "Whether there is enough of it and it is good enough. The -acy ending names that state."
+        },
+        {
+          "word": "numeracy",
+          "sentence": "Numeracy and reading are taught every morning in our class.",
+          "prompt": "What state does numeracy name?",
+          "answer": "Being able to work with numbers. The -acy ending turns it into a state."
+        },
+        {
+          "word": "schedule",
+          "sentence": "Our bus schedule changed on Monday morning.",
+          "prompt": "Does schedule break into a small meaning?",
+          "answer": "No. Learn schedule as a whole word from that card family."
+        },
+        {
+          "word": "megaunit",
+          "sentence": "The scientist recorded the reading as one megaunit.",
+          "prompt": "How many units is that?",
+          "answer": "A million. Mega- means million."
+        },
+        {
+          "word": "assertive",
+          "sentence": "She gave an assertive answer when the umpire asked.",
+          "prompt": "What does assertive tell you about the answer?",
+          "answer": "That it was clear and confident. The -ive ending describes what it was like."
+        },
+        {
+          "word": "granite",
+          "sentence": "Our school steps were cut from grey granite.",
+          "prompt": "What kind of thing is granite?",
+          "answer": "A mineral. The -ite ending often marks a mineral, and granite is a hard building rock."
+        },
+        {
+          "word": "imagery",
+          "sentence": "The poem we read used strong imagery of the sea.",
+          "prompt": "Which -ery meaning fits imagery?",
+          "answer": "Relating to. Imagery is language relating to pictures in your head."
+        },
+        {
+          "word": "subordinate",
+          "sentence": "In the fire drill every officer was subordinate to the captain.",
+          "prompt": "Where does a subordinate sit in the order?",
+          "answer": "Underneath. The sub part means under and the ord part means order."
+        },
+        {
+          "word": "microcosm",
+          "sentence": "Our playground is a microcosm of the whole school.",
+          "prompt": "What does calling it a microcosm mean?",
+          "answer": "It is a small world that shows what the big one is like."
+        },
+        {
+          "word": "pictography",
+          "sentence": "Early pictography used simple drawings instead of letters.",
+          "prompt": "What is pictography?",
+          "answer": "Writing with pictures. The picto part means paint or picture."
+        }
+      ],
+      "new_morphology": {
+        "morph": "pict/picto",
+        "type": "root",
+        "keyword": "picture",
+        "meaning": "paint"
+      },
+      "words_to_read_new": [
+        {
+          "word": "pictographic",
+          "meaning": "picto means paint + graph means write + -ic means nature of: having the nature of picture writing"
+        },
+        {
+          "word": "depicting",
+          "meaning": "de- means down + pict means paint + -ing shows it happening: setting something down in a picture right now"
+        },
+        {
+          "word": "depicted",
+          "meaning": "de- means down + pict means paint + -ed shows it happened: it was set down in a picture"
+        },
+        {
+          "word": "pictured",
+          "meaning": "picture + -ed shows it happened: it was shown in a picture, or imagined like one"
+        },
+        {
+          "word": "picturing",
+          "meaning": "picture + -ing shows it happening: forming a picture of it in your mind right now"
+        },
+        {
+          "word": "depicts",
+          "meaning": "de- means down + pict means paint + -s: he or she sets it down in a picture"
+        },
+        {
+          "word": "picture",
+          "meaning": "pict means paint: yesterday's word, something drawn or shown so you can see it"
+        },
+        {
+          "word": "pictogram",
+          "meaning": "picto means paint + gram means something written: yesterday's word, a small picture standing for a word"
+        },
+        {
+          "word": "depict",
+          "meaning": "de- means down + pict means paint: yesterday's word, to set something down in a picture"
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears. Same card, new words: pict and picto still mean paint.\npictographic - picto means paint + graph means write + -ic means nature of: having the nature of picture writing.\ndepicting - de- means down + pict means paint + -ing shows it happening: setting something down in a picture right now.\ndepicted - de- means down + pict means paint + -ed shows it happened: it was set down in a picture.\npictured - picture + -ed shows it happened: it was shown in a picture, or imagined like one.\npicturing - picture + -ing shows it happening: forming a picture of it in your mind right now.\ndepicts - de- means down + pict means paint + -s: he or she sets it down in a picture.\npicture - pict means paint: yesterday's word, something drawn or shown so you can see it.\npictogram - picto means paint + gram means something written: yesterday's word, a small picture standing for a word.\ndepict - de- means down + pict means paint: yesterday's word, to set something down in a picture.\nMemory hook: if you could DRAW it instead of writing it, PICT is in the word - test every new one that way. Challenge: find a pict word on a sign or screen outside school and draw what it shows.",
+      "words_to_spell_new": [
+        "depicted",
+        "pictured",
+        "depicting",
+        "pictographic"
+      ],
+      "extension": "1. SAY: \"When you finish, turn one spelling word into a question.\"\n2. CHECK: the question must still use the paint or picture meaning.\nEXTENSION: Write a second question opening with a subordinate clause (a group with a verb that cannot stand alone, such as 'When the artist finished'), then turn it into a statement.",
+      "new_morph_activity": {
+        "title": "pict or picto?",
+        "rule": "Write P for pict or PO for picto.",
+        "example": "One done for you:\npictograph = PO (picto joins graph)",
+        "items": [
+          "1. pictured =      2. pictographic =",
+          "3. depicting =      4. pictogram ="
+        ],
+        "item_size": 17,
+        "routine": "OG workbooks - 3 min - pens down",
+        "footer": "Look at the letter straight after pict",
+        "notes": "ANSWER: 1 P, 2 PO, 3 P, 4 PO.\n1. SAY: \"Copy the finished line first. Then write P or PO beside each numbered word in your workbook.\"\n2. TIME: 3 minutes. Work alone in OG workbooks.\n3. CIRCULATE: to a stuck student say, \"picto only turns up in front of a Greek partner like graph or gram. Can you hear one in this word?\" Then label number one together.\n4. SCAN books at the front table. 80%+ -> reveal the check slide. Less -> label number two together, then re-check.\nTRAP: seeing picto inside pictured. Fix: read p-i-c-t-u aloud, hear the u, then relabel it P.\nEXTENSION: Work out the rule that decides the spelling, write it in one sentence, then test it on pictography.\nHELP: Highlight p-i-c-t-o in the two picto words first, then label the other two.\n---\nPurpose: the card carries two spellings, and picto joins graph and gram. [You Do | Sort | Morphology]\nANSWERS:\n1. pictured = P\n2. pictographic = PO\n3. depicting = P\n4. pictogram = PO\nEXTENSION: picto is used before a Greek partner such as graph or gram; pict everywhere else. pictography = PO.",
+        "check_title": "Tick it or fix it - pict or picto?",
+        "check_rule": "Tick each correct label. Fix any label that is different.",
+        "check_items": [
+          "1. pictured = P (pict + -ed, no o)",
+          "2. pictographic = PO (picto + graph + -ic)",
+          "3. depicting = P (de- + pict + -ing)",
+          "4. pictogram = PO (picto + gram)"
+        ],
+        "check_item_size": 20,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "picto is used before graph and gram",
+        "check_notes": "ANSWER: 1 P, 2 PO, 3 P, 4 PO.\n1. MODEL: \"Number one is pictured. After p-i-c-t comes u, not o, so it is pict and I write P.\"\n2. SAY: \"Tick each label that matches. Fix any label that is different.\"\n3. ASK: \"What follows picto in both PO words?\" 10 sec, turn and tell. EXPECT: graph and gram.\n4. SCAN corrections. 80%+ -> continue. Less -> relabel number three together, then re-check.\nTRAP: labelling every long word PO. Fix: point at the letter after pict, then relabel.\nEXTENSION: Find one more picto word outside the grid and prove the rule holds.\nHELP: read the green label first, then check the letter after pict.\n---\nPurpose: immediate feedback on the two card spellings. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "camouflage",
+            "unfair": "ou",
+            "notes": "Why learned: the ou says /uh/, and the -age ending says /ahzh/, not /ij/.\nSay it: KAM-uh-flahzh, three beats, then write it from memory.\nQuick link: the science word for blending into a habitat."
+          },
+          {
+            "word": "seismograph",
+            "unfair": "ei",
+            "notes": "Why learned: ei says long i, so seis sounds like size, and the second s says /z/.\nSay it: SIZE-muh-grahf, three beats, then write it from memory.\nQuick link: the instrument that records earthquake waves."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The artist pictured a picturesque valley behind our school.",
+          "targets": [
+            "pictured",
+            "picturesque"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "one clause plus a phrase with no verb; two pict targets"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "When the alarm rang, our guide shouted, \"Check the seismograph and the camouflage net!\"",
+          "targets": [
+            "seismograph",
+            "camouflage"
+          ],
+          "cups": {
+            "capitals": [
+              "When",
+              "Check"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the because/when/although part that cannot stand alone - the comma shows where it ends)",
+              "comma before the speech (it separates who said it from what they said)",
+              "opening quotation mark (speech starts here, so the first word takes a capital)",
+              "exclamation mark (the words are shouted, so it replaces the full stop)",
+              "closing quotation mark (the speech ends here)"
+            ]
+          },
+          "focus": "an opening subordinate clause, reported speech and a shouted ending"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Add the subordinate clause - it has a verb but still cannot stand alone.\nPREP: Whiteboards out; both earlier rules are restated in the I do.",
+        "i_do": {
+          "title": "The clause that cannot stand alone",
+          "rule": "A main clause has a verb and stands alone. A subordinate clause has a verb but cannot.",
+          "example": "Because the river rose - rose is the verb, but it cannot stand alone, so it is a subordinate clause.",
+          "items": [
+            "Subordinate openers: because, when, although, if, while.",
+            "A verb is the doing or being word. A phrase has none at all."
+          ],
+          "routine": "Listen: which never finishes?",
+          "footer": "You will label three of them",
+          "notes": "ANSWER: Because the river rose is a subordinate clause; the verb is rose.\n1. SAY: \"A clause has its own verb. A main clause stands alone, and a subordinate clause has a verb but still cannot.\"\n2. MODEL: point at rose. SAY: \"Rose is the doing word, so this group is a clause, not a phrase.\"\n3. MODEL: read it aloud alone. SAY: \"Because the river rose - that leaves me waiting, so it is subordinate, not main.\"\n4. ASK: \"Which word makes it need more?\" 5 sec, choral response. EXPECT: because.\nTRAP: calling it a phrase because it feels unfinished. Fix: find rose, name it as the verb, then label it a clause.\n---\nPurpose: separate the two kinds of clause; earlier rules restated for absentees. [I Do | Explicit modelling | Grammar | HITS 3]"
+        },
+        "we_do": {
+          "title": "Verb, but no full stop yet",
+          "rule": "Phrase: no verb. Main clause: verb, stands alone. Subordinate clause: verb, cannot stand alone.",
+          "example": "A) When the siren rang  B) at dusk",
+          "items": [
+            "Label A, then B, on your board.",
+            "Prove it: name the verb, or say there is none."
+          ],
+          "routine": "OG books - write it, then pens down",
+          "footer": "Stem: It is subordinate because ...",
+          "notes": "ANSWER: A - subordinate clause, verb rang. B - phrase, no verb.\n1. SAY: \"Label A, then B. Use phrase, main clause or subordinate clause.\"\n2. TIME: 25 seconds, then pens down and books up.\n3. SCAN the back row's books first. 80%+ -> ask for the reason. Less -> find the verb in A together, then re-ask.\n4. ASK: \"Do you agree A is subordinate? Add one thing.\" 5 sec, cold call one student. EXPECT: it has the verb rang but when leaves it unfinished.\nTRAP: labelling A a main clause. Fix: read it aloud alone, hear it is unfinished, then relabel.\n---\nPurpose: guided sorting across all three labels. [We Do | Guided practice | Grammar | HITS 7]"
+        },
+        "you_do": {
+          "title": "Three labels, three answers",
+          "rule": "Your turn: write phrase, main clause or subordinate clause.",
+          "example": "One done for you:\nwhile the kettle boiled = subordinate clause",
+          "items": [
+            "A) although the sky cleared",
+            "B) under the wooden seat      C) the crowd cheered"
+          ],
+          "item_size": 17,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: verb found? Now does it finish?",
+          "notes": "ANSWER: A - subordinate clause, verb cleared. B - phrase, no verb. C - main clause, verb cheered.\n1. SAY: \"Look at the finished one first. Then label A, B and C.\"\n2. TIME: 2 minutes in your OG book. Work independently.\n3. CIRCULATE: to a stuck student say, \"cover the first word. If what is left could be a whole sentence, the first word is what makes it wait.\" Then label A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> label B together, then re-check.\nTRAP: labelling A a phrase because it is unfinished. Fix: find cleared, name it as the verb, then relabel it subordinate.\nEXTENSION: Join A and C, then rewrite it with the subordinate clause at the end and repunctuate it.\nHELP: Give the three verbs cleared, none and cheered; students match them first.\n---\nPurpose: independent sorting across all three labels; tomorrow reviews the week. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) although the sky cleared = subordinate clause (verb: cleared)\nB) under the wooden seat = phrase (no verb)\nC) the crowd cheered = main clause (verb: cheered)\nEXTENSION: Although the sky cleared, the crowd cheered. Moved: The crowd cheered although the sky cleared.",
+          "check_title": "Tick it or fix it - Three labels, three answers",
+          "check_rule": "Tick each correct label. Fix any label that is different.",
+          "check_items": [
+            "A) although the sky cleared = subordinate clause (verb: cleared)",
+            "B) under the wooden seat = phrase (no verb)",
+            "C) the crowd cheered = main clause (verb: cheered)"
+          ],
+          "check_item_size": 16,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Same verb test, then ask if it stands alone",
+          "check_notes": "ANSWER: A - subordinate clause, verb cleared. B - phrase, no verb. C - main clause, verb cheered.\n1. MODEL: \"In A the verb is cleared, so it is a clause. Although leaves it unfinished, so it is subordinate.\"\n2. SAY: \"Tick each label that matches. Fix any label that is different.\"\n3. ASK: \"What makes B different from A and C?\" 10 sec, turn and tell. EXPECT: B has no verb at all.\n4. SCAN corrections. 80%+ -> continue. Less -> read C aloud alone together, then re-check.\nTRAP: ticking A as main because it has a verb. Fix: read it aloud alone, then relabel it subordinate.\n---\nPurpose: the answer slide separates the two clause types. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Friday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small",
+          "extra_task": {
+            "prompt": "Give me one micro word, meaning small.",
+            "answers": [
+              "microscope",
+              "microphone",
+              "microwave",
+              "microchip"
+            ]
+          }
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where",
+          "extra_task": {
+            "prompt": "Give me one -ery word.",
+            "answers": [
+              "machinery",
+              "bravery",
+              "discovery",
+              "pottery"
+            ]
+          }
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint",
+          "extra_task": {
+            "prompt": "Give me one word built from pict or picto, meaning paint.",
+            "answers": [
+              "picture",
+              "depict",
+              "pictograph",
+              "pictorial"
+            ]
+          }
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "capsule",
+          "bravery",
+          "conspiracy",
+          "megahertz",
+          "picturesque",
+          "restrictive",
+          "molecule",
+          "inclusion",
+          "infinite",
+          "microfilm",
+          "granule",
+          "apprentice",
+          "immediacy",
+          "exhaustive",
+          "pedestrian"
+        ],
+        "notes": "1. READ: \"Dog owners, read row 1.\"\n2. READ: \"Cat owners, read row 2.\"\n3. READ: \"Any other pet, read row 3.\"\n4. READ: \"No pet at home, read row 4. Pick either if you have more than one kind.\"\n5. READ: \"Everyone reads row 5. Every student reads at least two rows in the group round.\"\n6. ASK: \"Which word uses pict or picto, meaning paint?\" 3 sec, choral response. EXPECT: picturesque.\n7. ASK: \"Which word uses micro, meaning small?\" 3 sec, choral response. EXPECT: microfilm.\n8. ASK: \"Which words use -ule, meaning small?\" 5 sec, choral response. EXPECT: capsule, molecule, granule.\n9. ASK: \"What is the opposite of exclusion?\" 3 sec, choral response. EXPECT: inclusion.\n10. ASK: \"Which word names a person learning a trade from a skilled worker?\" 3 sec, choral response. EXPECT: apprentice.\n11. ASK: \"Make pedestrian plural.\" 3 sec, choral response. EXPECT: pedestrians.\n12. ASK: \"Which word means never-ending?\" 3 sec, choral response. EXPECT: infinite."
+      },
+      "sound_bank": [
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "advocacy",
+          "sentence": "Her advocacy got our club new equipment this term.",
+          "prompt": "What does the -acy ending name here?",
+          "answer": "The work of speaking up for something."
+        },
+        {
+          "word": "nodule",
+          "sentence": "A small nodule grew on the root of our bean plant.",
+          "prompt": "How big is a nodule?",
+          "answer": "Small. The -ule ending means small, so a nodule is a small round lump."
+        },
+        {
+          "word": "module",
+          "sentence": "The last module of our science unit covered forces.",
+          "prompt": "Which part tells you a module is only one piece?",
+          "answer": "The -ule ending. It is one small part of a bigger course."
+        },
+        {
+          "word": "megawatt",
+          "sentence": "The solar panels on our roof reached one megawatt at noon.",
+          "prompt": "How much power is that?",
+          "answer": "A million watts. Mega- means million."
+        },
+        {
+          "word": "cooperative",
+          "sentence": "The two schools ran a cooperative science day together.",
+          "prompt": "What does cooperative tell you about the day?",
+          "answer": "That both schools worked on it together."
+        },
+        {
+          "word": "pyrite",
+          "sentence": "The gold-coloured pyrite in the display case fooled the miners.",
+          "prompt": "What kind of thing is pyrite?",
+          "answer": "A mineral. It is often called fool's gold."
+        },
+        {
+          "word": "maltreatment",
+          "sentence": "The law protects animals from maltreatment.",
+          "prompt": "Which part of maltreatment tells you the treatment is cruel?",
+          "answer": "The mal- prefix. It means bad."
+        },
+        {
+          "word": "capacity",
+          "sentence": "Our hall has a capacity of three hundred people.",
+          "prompt": "What does capacity measure?",
+          "answer": "How much a space can hold. The capit part means hold."
+        },
+        {
+          "word": "microclimate",
+          "sentence": "The shaded gully behind school has its own cool microclimate.",
+          "prompt": "What makes it a microclimate and not just a climate?",
+          "answer": "It only covers one small area. Micro means small."
+        },
+        {
+          "word": "pictorially",
+          "sentence": "Our survey results were shown pictorially on a big chart.",
+          "prompt": "What does pictorially tell you about the chart?",
+          "answer": "It showed the results as pictures. The pict part means picture."
+        }
+      ],
+      "new_morphology": {
+        "morph": "vore",
+        "type": "root",
+        "keyword": "carnivore",
+        "meaning": "eating"
+      },
+      "words_to_read_new": [
+        {
+          "word": "carnivore",
+          "meaning": "carn means flesh + vore means eating: an animal that eats meat"
+        },
+        {
+          "word": "herbivore",
+          "meaning": "herb means plant + vore means eating: an animal that eats plants"
+        },
+        {
+          "word": "omnivore",
+          "meaning": "omni- means all, the prefix we learned in Term 2 + vore means eating: an all-eater, so plants and meat"
+        },
+        {
+          "word": "insectivore",
+          "meaning": "insect + vore means eating: an animal that eats insects"
+        },
+        {
+          "word": "carnivorous",
+          "meaning": "carn means flesh + vor means eating + -ous means having: having the habit of eating meat"
+        },
+        {
+          "word": "herbivorous",
+          "meaning": "herb means plant + vor means eating + -ous means having: having the habit of eating plants"
+        },
+        {
+          "word": "omnivorous",
+          "meaning": "omni- means all + vor means eating + -ous means having: having the habit of all-eating"
+        },
+        {
+          "word": "voracious",
+          "meaning": "vor means eating + -acious means full of: full of eating, so very hungry or greedy"
+        },
+        {
+          "word": "devour",
+          "meaning": "de- means down + vour means eating: to eat something down quickly and completely"
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears, then connect vore to the card meaning: eating.\ncarnivore - carn means flesh + vore means eating: an animal that eats meat.\nherbivore - herb means plant + vore means eating: an animal that eats plants.\nomnivore - omni- means all, our Term 2 prefix + vore means eating: an all-eater, so it takes plants and meat.\ninsectivore - insect + vore means eating: an animal that eats insects.\ncarnivorous - carn means flesh + vor means eating + -ous means having: having the habit of eating meat.\nherbivorous - herb means plant + vor means eating + -ous means having: having the habit of eating plants.\nomnivorous - omni- means all + vor means eating + -ous means having: having the habit of all-eating.\nvoracious - vor means eating + -acious means full of: full of eating, so very hungry or greedy.\ndevour - de- means down + vour means eating: to eat something down quickly and completely.\nMemory hook: -vore is the dinner plate and the part in front is the food - carni is flesh, herbi is plants, omni is everything. Challenge: invent a correct -vore word for an animal we have not named.",
+      "words_to_spell_new": [
+        "carnivore",
+        "herbivore",
+        "omnivore",
+        "devour"
+      ],
+      "extension": "1. SAY: \"When you finish, name an Australian animal and write which kind of eater it is.\"\n2. CHECK: the sentence must say what the animal eats, not just the label.\nEXTENSION: Add a subordinate clause (a group with a verb that cannot stand alone) such as 'because it only eats leaves', then move it to the front and repunctuate the sentence.",
+      "new_morph_activity": {
+        "title": "Show what vore means",
+        "rule": "Write a sentence that SHOWS the meaning.",
+        "example": "One done for you:\nA kangaroo is a herbivore, so it eats grass and leaves, never meat.",
+        "items": [
+          "1. Write a showing sentence for carnivore, then omnivore.",
+          "2. Underline the words that show what it eats."
+        ],
+        "item_size": 17,
+        "routine": "OG workbooks - 4 min - pens down",
+        "footer": "Show the eating; do not just name it",
+        "notes": "ANSWER: open - each sentence must state what the animal actually eats.\n1. SAY: \"Read the finished sentence first. It names the animal and then shows exactly what it eats. Now write yours.\"\n2. TIME: 4 minutes. Work alone in OG workbooks.\n3. CIRCULATE: to a stuck student say, \"carni means flesh. Picture the animal at dinner - what is actually on the plate?\" Then write sentence one together.\n4. SCAN books at the front table. 80%+ -> read two aloud. Less -> build one showing sentence together, then re-check.\nTRAP: writing 'A lion is a carnivore' and stopping. Fix: add so it eats, name the food, then the student rereads it.\nEXTENSION: Write one sentence contrasting an omnivore with an insectivore that shows both diets, joined by a subordinate clause.\nHELP: Use the frame 'A ___ is a ___, so it eats ___.'\n---\nPurpose: the week's last new morpheme is shown in use, not just labelled. [You Do | Showing sentence | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "seismograph",
+            "unfair": "ei",
+            "notes": "Why learned: ei says long i, so seis sounds like size, and the second s says /z/.\nSay it: SIZE-muh-grahf, three beats, then write it from memory.\nQuick link: the instrument that records earthquake waves."
+          },
+          {
+            "word": "camouflage",
+            "unfair": "ou",
+            "notes": "Why learned: the ou says /uh/, and the -age ending says /ahzh/, not /ij/.\nSay it: KAM-uh-flahzh, three beats, then write it from memory.\nQuick link: the science word for blending into a habitat."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "A hungry carnivore hunts, but a herbivore eats only plants.",
+          "targets": [
+            "carnivore",
+            "herbivore"
+          ],
+          "cups": {
+            "capitals": [
+              "A"
+            ],
+            "punctuation": [
+              "comma before but (it joins two complete sentences)",
+              "full stop"
+            ]
+          },
+          "focus": "two complete clauses joined by but; two vore targets"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Because the omnivore eats both, our ranger wrote, \"Camouflage helps this animal hide.\"",
+          "targets": [
+            "omnivore",
+            "camouflage"
+          ],
+          "cups": {
+            "capitals": [
+              "Because",
+              "Camouflage"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the because/when/although part that cannot stand alone - the comma shows where it ends)",
+              "comma before the speech (it separates who said it from what they said)",
+              "opening quotation mark (speech starts here, so the first word takes a capital)",
+              "closing quotation mark (the speech ends here)",
+              "full stop inside the quotation (it belongs to the spoken words)"
+            ]
+          },
+          "focus": "an opening subordinate clause and reported speech; omnivore and camouflage"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Week review - phrase, main clause and subordinate clause in one fast round.\nPREP: Whiteboards out; collect the You Do boards as exit tickets.",
+        "i_do": {
+          "title": "The week in one minute",
+          "rule": "Phrase: no verb. Main clause: verb, stands alone. Subordinate clause: verb, cannot stand alone.",
+          "example": "behind the shed = phrase\nThe gate creaked = main clause\nAlthough the gate creaked = subordinate",
+          "items": [
+            "A verb is the doing or being word.",
+            "Test 1: find a verb. Test 2: can it stand alone?"
+          ],
+          "routine": "One minute - watch all three",
+          "footer": "Then you catch MY mistakes",
+          "notes": "ANSWER: behind the shed is a phrase; The gate creaked is a main clause; Although the gate creaked is subordinate.\n1. SAY: \"Three labels this week. No verb means phrase. A verb that stands alone means main clause.\"\n2. MODEL: point at Although the gate creaked. SAY: \"Creaked is the verb, so it is a clause, but although leaves it unfinished.\"\n3. ASK: \"Which one has no verb at all?\" 5 sec, choral response. EXPECT: behind the shed.\nTRAP: skipping the verb hunt. Fix: point at each word, name the verb or say there is none, then label.\n---\nPurpose: compressed restatement so absentees can still access the You Do. [I Do | Review | Grammar | HITS 2]"
+        },
+        "we_do": {
+          "title": "Beat the teacher",
+          "rule": "Catch me: I will label one wrongly each round.",
+          "example": "I say: 'under the bright lights' is a main clause. Thumbs down - there is no verb!",
+          "items": [
+            "Thumbs verdict every round, then one prover names the verb.",
+            "Round 1, round 2, round 3 - a different prover each time."
+          ],
+          "routine": "Thumbs verdicts - voices off",
+          "footer": "Stem: It cannot be a clause because ...",
+          "notes": "ANSWER: under the bright lights is a phrase - there is no verb.\n1. SAY: \"I will label each one. Thumbs down, voices off, if I am wrong.\"\n2. SCAN every thumb before choosing a prover.\n3. ASK: \"Which word would have to be there for it to be a clause?\" 5 sec, cold call one student. EXPECT: a verb, a doing or being word.\n4. TIME: three quick rounds, one prover each.\nTRAP: thumbs following the loudest neighbour. Fix: voices off, everyone recommits, then the round is replayed.\n---\nPurpose: playful whole-class CFU; the error is made by the teacher, not a student. [We Do | CFU game | Grammar | HITS 7]"
+        },
+        "you_do": {
+          "title": "Exit ticket - all three labels",
+          "rule": "Your turn: write phrase, main clause or subordinate clause.",
+          "example": "One done for you:\nsince the tide turned = subordinate clause",
+          "items": [
+            "A) the seagulls scattered      B) across the wet sand",
+            "C) when the wind dropped"
+          ],
+          "item_size": 17,
+          "routine": "OG books - 2 min - books up",
+          "footer": "Check: verb found? Now does it finish?",
+          "notes": "ANSWER: A - main clause, verb scattered. B - phrase, no verb. C - subordinate clause, verb dropped.\n1. SAY: \"Look at the finished one first. Then label A, B and C, nothing else.\"\n2. TIME: 2 minutes, then books up as exit tickets.\n3. CIRCULATE: to a stuck student say, \"cover the first word. If what is left could be a whole sentence, the first word is what makes it wait.\" Then label A together.\n4. SCAN: note who missed C for next week's warm-up group.\nTRAP: labelling C a main clause because it has a verb. Fix: read it aloud alone, hear it is unfinished, then relabel.\nEXTENSION: Join C and A, then rewrite it with the subordinate clause at the end and repunctuate it.\nHELP: Give the three verbs scattered, none and dropped; students match them first.\n---\nPurpose: achievable exit ticket with the worked example left on screen. [You Do | Exit ticket | Grammar | HITS 5]\nANSWERS:\nA) the seagulls scattered = main clause (verb: scattered)\nB) across the wet sand = phrase (no verb)\nC) when the wind dropped = subordinate clause (verb: dropped)\nEXTENSION: When the wind dropped, the seagulls scattered across the wet sand.",
+          "check_title": "Tick it or fix it - all three labels",
+          "check_rule": "Tick each correct label. Fix any label that is different.",
+          "check_items": [
+            "A) the seagulls scattered = main clause (verb: scattered)",
+            "B) across the wet sand = phrase (no verb)",
+            "C) when the wind dropped = subordinate clause (verb: dropped)"
+          ],
+          "check_item_size": 16,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "No verb: phrase. Waiting verb: subordinate.",
+          "check_notes": "ANSWER: A - main clause, verb scattered. B - phrase, no verb. C - subordinate clause, verb dropped.\n1. MODEL: \"In C the verb is dropped, so it is a clause. When leaves it unfinished, so it is subordinate.\"\n2. SAY: \"Tick each label that matches. Fix any label that is different.\"\n3. ASK: \"Why is B the only phrase here?\" 10 sec, turn and tell. EXPECT: it has no verb at all.\n4. SCAN corrections, then collect the books as exit tickets.\nTRAP: ticking C as main because it has a verb. Fix: read it aloud alone, then relabel.\n---\nPurpose: the answer slide reteaches all three labels before the boards are collected. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    }
+  ]
+}

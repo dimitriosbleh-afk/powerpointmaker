@@ -61,11 +61,14 @@ Default week (adjust to the user's "sessions per week"):
 
 | Day | type in spec | Morphology | Learned words | Grammar |
 |---|---|---|---|---|
-| Monday | `new` | NEW morpheme 1 taught | review 2 + new 1 | day 1 of weekly focus |
-| Tuesday | `review` | morpheme 1 revisited (Yoshimoto day-2) | review 2 + new 1 | day 2 |
-| Wednesday | `new` | NEW morpheme 2 taught | review 2 + new 1 | day 3 |
-| Thursday | `review` | morpheme 2 revisited | review 2 + new 1 | day 4 |
-| Friday | `week_review` | no new/review section - all-review spine | review 2, NO new | week review |
+| Monday | `new` | NEW morpheme 1 taught | review 2 + NEW word 1 | day 1 of weekly focus |
+| Tuesday | `review` | morpheme 1 revisited (Yoshimoto day-2) | review 2 only | day 2 |
+| Wednesday | `new` | NEW morpheme 2 taught | review 2 + NEW word 2 | day 3 |
+| Thursday | `review` | morpheme 2 revisited | review 2 only | day 4 |
+| Friday | `week_review` | no new/review section - all-review spine | review 2 only | week review |
+
+New learned words land in sessions 1 and 3 only - never back to back. Full schedule
+for shorter weeks in section 5.
 
 Every session, regardless of type, contains: title, weekly overview, morphology review
 (10 cards), words to read review (15), sound bank (9), words to spell review (4-6 reveal
@@ -154,19 +157,25 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   line, no bullets and no dense multi-question paragraph. This slide is an explicit
   exception to the general eight-line Glance Format limit because the playful reading
   routine and retrieval questions must remain separate and easy to scan:
-  1. `1. READ:` gives the exact whole-class read-aloud cue. Reading all five rows
-     together comes first.
-  2. `2. READ:` gives a fun, exhaustive group allocation for rows 1-4. Use categories
-     such as birthday season, first-name initial, handedness/month, or favourite
-     activity. Every student must belong to a group; include a self-choice fallback
-     where a category could be ambiguous. State exactly which group reads which row.
-  3. `3. READ:` makes everyone read row 5, then states: `Every student reads at least
+  1-4. ONE NUMBERED `READ:` LINE PER GROUP - never a single line listing all four
+     allocations. The whole-class warm-up read is NOT scripted: it wastes a line and
+     teachers skip it anyway. Go straight to the groups. Use categories such as
+     birthday season, first-name initial, handedness/month, or favourite activity;
+     every student must belong to a group, and include a self-choice fallback where a
+     category could be ambiguous. Write them exactly like this, one per line:
+     ```
+     1. READ: "Summer birthdays, read row 1."
+     2. READ: "Autumn birthdays, read row 2."
+     3. READ: "Winter birthdays, read row 3."
+     4. READ: "Spring birthdays, read row 4."
+     ```
+  5. `5. READ:` makes everyone read row 5, then states: `Every student reads at least
      two rows in the group round.` The allocation must genuinely make that true.
-  4-6. Three `ASK:` beats tied to morphemes on the board. Phrase each as words the
+  6-8. Three `ASK:` beats tied to morphemes on the board. Phrase each as words the
      teacher can read aloud immediately, then include think time, one response routine,
      and `EXPECT:` on the same line. Example: `4. ASK: "Which words use flect or flex,
      meaning bend?" 5 sec, choral response. EXPECT: flexible, deflect.`
-  7-10. Up to four quick checks, each on its OWN numbered line with its own answer. Never
+  9-12. Up to four quick checks, each on its OWN numbered line with its own answer. Never
      write one `CHORAL` line containing four unrelated questions. Example:
      `5. ASK: "What is the opposite of include?" 3 sec, choral response. EXPECT:
      exclude.` Draw from: parts
@@ -179,6 +188,12 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
      Analogy (5) - answers still scripted with EXPECT, next student picks, keep score.
 - Every EXPECT answer must be checked against the actual word list on the slide - a
   scripted answer that is not on the board is a build-stopping content bug.
+- THIS SEGMENT IS REVIEW, SO EVERY QUESTION MUST BE ANSWERABLE FROM WHAT HAS ALREADY
+  BEEN TAUGHT. It is not the place to introduce a new meaning, a new morpheme, a new
+  word-part split or a new label. If answering needs anything the group has not met,
+  the question is a defect - rewrite it around the taught morphemes, the taught
+  meanings, and everyday vocabulary. The taught-only rule below is the hard version of
+  this for metalanguage; this line covers content as well.
 - TAUGHT-ONLY QUESTION RULE (applies to every question you script anywhere in a deck:
   ASK beats, CHORAL, after-checking prompts, extensions, dictation focuses). A
   question may only rely on knowledge the students have actually been taught:
@@ -207,6 +222,15 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   words). Students copy them into the top of their page before spelling.
 - Box colour is set by type automatically: green root, yellow prefix, red suffix.
   Give the spec exactly 9 entries. Any other mapping is a build-stopping defect.
+- The slide's teacher note states the key as three plain lines and nothing else -
+  `green = root`, `yellow = prefix`, `red = suffix`. Do not restore wording like
+  "box colour = card type"; the teacher needs the key, not a description of it.
+- LABELS MUST RENDER WHOLE. A 2.33" x 1.04" box cannot hold a variant label such as
+  `clud(e)/clus(e)` on one line, and left alone it breaks mid-bracket
+  (`clud(e)/clus(` then `e)`). The builder now splits any variant label after the
+  slash onto a second line at about 28 pt, so it reads `clud(e)/` above `clus(e)`.
+  Never work around this by inventing a shortened label - the label must stay
+  verbatim from the catalogue.
 - GROUP BY TYPE: order the 9 entries so each type sits together as a row (or column) -
   roots together, prefixes together, suffixes together. A 3/3/3 split filling row 1 /
   row 2 / row 3 is the ideal; when counts are uneven, keep each type contiguous.
@@ -230,14 +254,37 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   against what the group has been taught (OG sequence). When in doubt, choose the more
   decodable word.
 - Every word's notes carry THREE things, all required (the builder warns on gaps):
-  1. `Sentence:` - context sentence (teacher says word -> sentence -> word;
-     confusables like intranet/internet MUST have a disambiguating sentence).
+  1. `Sentence:` - context sentence, and it must do TWO jobs.
+     - CONNECT TO THE STUDENTS. Put the word in a Grade 5/6 world they actually live
+       in: their school, their yard, their sport, their science unit, their city.
+       `Our school celebrates literacy week every August.` is the standard. A neutral
+       dictionary frame (`The report questioned the adequacy of the bridge.`) teaches
+       nothing about the word and is the thing the school keeps flagging.
+     - DISAMBIGUATE BY EAR. The sentence is HEARD, not seen. Whenever the word has a
+       homophone or a near-twin (intranet/internet, past/passed, their/there,
+       ordinance/ordnance), the sentence must make the intended word unmistakable
+       from the surrounding meaning - WITHOUT defining it. Never rely on the teacher
+       spelling it out.
   2. `After checking:` - one morpheme-aimed question the teacher asks once the
      word is revealed (`Which part of the word tells you the travel is between states?`).
   3. `Answer:` - the answer to that question, in the same 10-12yo language the
      teacher can read verbatim (`inter- means between: travel between states.`).
      Teachers do not memorise thirty morpheme breakdowns - a prompt without its answer
      is a defect, not a nice-to-have.
+- READ-ALOUD TEST (apply to every `After checking:` / `Answer:` pair). These are read
+  VERBATIM by teachers who may not know the morphology. Say the pair out loud. If a
+  competent adult would sound stilted or foolish reading it, rewrite it.
+  - Do NOT feed the answer into the question and then repeat it back. Defect:
+    `After checking: -ule means small, so what is a module?` /
+    `Answer: -ule means small: a module is a small separate part of a bigger whole.`
+    The teacher has just said the answer, then says it again.
+  - Ask the question the way a teacher actually asks it, then answer it in one natural
+    sentence: `After checking: Which part of module tells you it is only a small
+    piece?` / `Answer: The -ule ending. A module is one small part of a much bigger
+    course.`
+  - No classroom-management filler either (`Alright boys and girls, who can tell
+    me...`). Scripted, natural, and immediately sayable - that is the bar.
+  - Keep the whole set consistent: every word on the day uses the same voice.
 - The builder centres every word at the same position with reveal-on-click and a blank
   screen between words (one slide per word) - this fixes the alignment/reveal feedback
   from the team email; you only supply words, sentences and prompts.
@@ -281,11 +328,28 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   meaning from the canonical card source, verbatim, every time. Sound-pattern cards use
   separate `Sound:` and component-meaning lines instead of cramming both jobs into a
   misleading `Meaning:` sentence. This is the anchor slide; never omit it.
+- The card is followed by a copy-into-your-book reference slide showing
+  `Type / Keyword / Meaning`. It renders at about 35 pt so it carries the room; do
+  not shrink it back.
+- THE MEMORY HOOK BELONGS ON THAT COPY SLIDE TOO. The builder lifts the `Memory hook:`
+  line out of `wtr_new_notes` and appends it to the copy-card notes as a bold
+  `MEMORY HOOK:` line, so the teacher delivers it while the anchor card is on screen
+  and again at the end of the grid. Author the hook once, in `wtr_new_notes`.
 
 ## 3b. Words to Read (grid, reveal one word per click)
 
-- AIM FOR 12. Floor is about 8 for a genuinely niche morpheme - reduce deliberately,
-  never pad with fake derivatives.
+- GRID SIZE MUST BE 9 OR 12 - divisible by 3. The template's three columns centre
+  independently, so 8, 10 or 11 words leave a short third column floating out of
+  alignment at a different size. "Aim for 12, floor about 8" is about morpheme
+  integrity, not layout; the layout constraint is absolute.
+- MORPHEME STACKING IS THE FIRST SELECTION RULE. Where the family gives you a choice,
+  ALWAYS prefer the derivative that also carries a previously taught prefix, root or
+  suffix, weighted to the most recently taught. `microscopic` beats `microchip` once
+  `-ic` is on the cards; `malnutrition` beats `malaise` once `-tion` is taught. Two
+  taught morphemes in one word is worth more than a slightly neater single-morpheme
+  word: it is retrieval practice and it teaches students that words are built, not
+  memorised. This rule applies to the new grid, the new spelling four, and every
+  review reading and spelling list.
 - Layout is automatic and ALWAYS the template's 3-column grid (never reshape it to two
   columns - the school wants the 3-column look preserved). The builder widens all three
   columns, removes hidden text insets and centres the block; 10-12 words also stretches
@@ -303,7 +367,15 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   to sit under your place in the order.`
   For the bare root itself: `order - ord is the root on its own, order: things
   arranged in their places, one after another.`
-  Two defects to avoid: a line that defines the word without naming its parts
+  THE FUSED MEANING MUST MIRROR THE PARTS YOU JUST NAMED. If the line says
+  `micro means small + bio means life + -ology means the study of`, the meaning after
+  the colon is `the study of small life` - assembled from those exact words. Do not
+  name the parts and then paraphrase past them (`the study of life too small to see`
+  is a dictionary gloss; the student cannot see how the parts made it). Many of these
+  words are new to the class, so the whole point is that they hear the parts click
+  together. Only depart from the literal fusion when the modern meaning genuinely is
+  not the sum of its parts, and then say so in the same line.
+  Two further defects to avoid: a line that defines the word without naming its parts
   (`disorder - a mess`), and a circular line that only restates the root
   (`order - ORD means order: the way things are arranged` explains nothing - the
   parts must be seen DOING something to each other). Include the suffixes too (-ary,
@@ -314,7 +386,17 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   can rehearse and reuse in their writing: a hearable slogan (`hear ORD, think "Off to
   my place in the line"`), an action, a family-collection challenge, or a
   build-the-longest-word game. Every new/review morphology session has one; reuse the
-  same hook all week so it sticks.
+  same hook all week so it sticks. The builder also surfaces it on the copy-card slide
+  (3a).
+- HOOK QUALITY BAR: a hook that only restates the meaning in a slogan voice
+  (`hear MICRO, think 'shrink it down' - if micro is at the front, the thing is TINY`)
+  is not a memory device, it is the definition wearing a hat. A good hook gives the
+  student something to DO or something concrete to picture that survives the week:
+  an image that is hard to unsee (`micro is the microscope lens - everything through
+  it is too small for your eyes`), a physical action, a countable challenge (`collect
+  five micro words from the science room by Friday`), or a rule of thumb they can
+  apply to an unseen word. Test it: could a student use this hook next term on a word
+  they have never met? If not, rewrite it.
 - Grade 5/6 register: choose words that stretch 10-12 year olds (insubordinate,
   ordinance), not infant-level fillers. Same for the example sentences.
 - On `review` days: same morpheme as the previous session, mostly NEW derivatives
@@ -325,15 +407,16 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
 
 - Exactly 4, and all 4 MUST come from today's Words to Read grid (this is the one place
   read/spell overlap is required - students spell what they just decoded).
+- Apply the morpheme-stacking rule from 3b: of the eligible grid words, choose the four
+  that also carry recently taught prefixes/suffixes wherever the family allows it.
 - Rotate the early-finisher extension in the notes; never the same one two days running.
   Menu: use two target words in one sentence with a subordinate clause; write the meaning
   in your own words using the root; find and record an antonym; turn the word into a
   question; add a prefix/suffix and explain the new meaning.
 - Extensions must be SELF-CONTAINED: if the task names a concept (subordinating clause,
   adverbial phrase), include a one-line reminder of what it is right in the note, so no
-  student stalls waiting for the teacher. Then add a `Stretch:` step roughly two year
-  levels harder for the students who eat the first task (e.g. open with the subordinate
-  clause and punctuate it; unpack a 3-morpheme word).
+  student stalls waiting for the teacher. Then add an `EXTENSION:` step meeting the
+  standard in 3e.
 
 ## 3d. New Morphology You Do activity (required on every new/review day)
 
@@ -369,6 +452,13 @@ new/review session lacks one.
   - The slide carries ONE COMPLETED WORKED EXAMPLE of the very task type, marked
     `One done for you: ...`, before students start. Use the hero card for it. A You Do
     whose first exposure to the task shape is the task itself is a defect.
+  - PUT THE WORKED EQUATION ON ITS OWN LINE. Write the hero as
+    `One done for you:\nsmall + sound = microphone` - the label on line 1, the
+    equation alone on line 2. The builder emits each authored line as its own centred
+    paragraph, so an equation reads as an equation instead of trailing off the end of
+    a sentence. The same applies to any `word = label` model on a grammar slide.
+  - The numbered prompt lines under the hero are centre-aligned by the builder so the
+    block reads as a set. Keep each line short enough not to wrap (see 10c).
   - ONE CLEAR ANSWER PER ITEM. Every item must have a single correct answer a student
     can reach from that day's teaching and verify on the check slide. An item with two
     defensible answers (`pottery = P or R/P`) or a judgement call about etymological
@@ -378,13 +468,43 @@ new/review session lacks one.
     or meaning-audit tasks. If a sort is used, the two categories must be plainly
     distinguishable by a 10-12yo using only the printed card meanings.
 - Notes are Glance Format You Do style: numbered beats with SAY/TIME/CIRCULATE/SCAN,
-  ANSWER first when the task has answers, TRAP with Fix, STRETCH and HELP, then `---`
-  and one prep line.
+  ANSWER first when the task has answers, TRAP with Fix, EXTENSION and HELP, then `---`
+  and the prep zone.
+- FULL `ANSWERS:` BLOCK AT THE VERY BOTTOM (required on every fixed-answer You Do).
+  Below the `---` divider, after the purpose line, write `ANSWERS:` and then one line
+  per item restating the QUESTION and its ANSWER, plus the extension answer:
+  ```
+  ---
+  Purpose: ... [You Do | Morpheme sums | Morphology]
+  ANSWERS:
+  1. small + look at = microscope
+  2. small + wave = microwave
+  3. small + chip = microchip
+  4. small + life + study of = microbiology
+  EXTENSION: e.g. microbiologist = micro + bio + -ology + -ist, a person who studies
+  tiny life.
+  ```
+  The one-line `ANSWER:` at the top of the live zone stays - that is the glance fact.
+  This block is the fallback for a teacher who gets stuck mid-circulation, so it
+  repeats the question rather than assuming they can see the board. The prep zone's
+  usual three-line limit does not apply to this block.
 - PROMPT LADDER (required): the CIRCULATE beat scripts what the teacher says to a
-  stuck student - a first prompt that points at the worked example or the morpheme's
-  meaning, then a second step that starts the first item together. HELP still changes
-  the task form (word bank, match instead of build, first item done). A bare
-  `CIRCULATE: check work` gives the teacher nothing to say and is a defect.
+  stuck student. It must ADD something the board does not already say. Pointing back
+  at the worked example and re-reading the rule is what the teacher has just finished
+  doing out loud - a student still stuck after that needs a different way in, not a
+  louder repeat. Give the ONE piece of knowledge that unlocks the most students:
+  the meaning of the unfamiliar second morpheme, a concrete object to picture, a
+  spoken version of the sum, or a question that narrows the field
+  (`CIRCULATE: to a stuck student say, "scope is the part that means look at - so what
+  do you look through in science?"`). Then a second step that starts item one
+  together. HELP still changes the task form (word bank, match instead of build,
+  first item done). A bare `CIRCULATE: check work`, or one that only restates the
+  slide, is a defect.
+- The check slide's `ASK:` must be a genuine thinking question, not a spot-the-obvious
+  (`Which part of every answer means small?` when every answer visibly starts with
+  micro). Ask something that makes them USE the pattern: which of these two words
+  changes meaning if you drop the prefix, why does this word need three parts, which
+  answer would still make sense with a different root.
 - A fixed-answer activity MUST be followed immediately by a duplicate answer slide
   titled `Tick it or fix it - ...`. Supply `check_items` (the completed prompt/answer
   lines) plus `check_notes`. Never use the old `Check and fix` title. The first slide
@@ -397,6 +517,31 @@ new/review session lacks one.
   (`winery = P` / `win + -ery = the place where wine is made`). `check_notes` open by
   MODELLING the reasoning for the first item aloud before students tick, so a student
   who got it wrong hears HOW the answer is built, not just WHAT it was.
+
+## 3e. EXTENSION (the word is EXTENSION, never STRETCH)
+
+Applies to every early-finisher note, every morphology You Do and every grammar You do.
+
+- The label is `EXTENSION:`. `STRETCH:` is retired everywhere in OG decks; the builder
+  bolds and line-breaks both, but new specs must use `EXTENSION:`.
+- AIM ABOUT 18 MONTHS AHEAD: end of Year 7 / start of Year 8. This cohort is an
+  enrichment group and the old "one notch harder" extensions were finished in seconds.
+- IT MUST BE THE SAME CONCEPT, PUSHED - not a different task. The test: a student
+  doing the extension is still doing today's learning, just at a level that would
+  normally sit a year and a half later. If you have to explain a new idea to start
+  it, it is a new task, not an extension.
+  - Model to hold in mind: if the core task is a Year 1 class counting 1 to 20, the
+    extension is counting backwards from 50 - same concept, bigger number, reversed.
+  - Morphology examples: core builds `microscope` from a two-part sum, extension
+    builds a four-morpheme word and writes the full sum
+    (`microbiologist = micro + bio + -ology + -ist`); core writes the sum beside a
+    derivative, extension takes an UNSEEN word from the same family and predicts its
+    meaning from the parts alone, then checks it.
+  - Grammar examples: core labels phrase or clause, extension combines a subordinate
+    clause and a main clause into one correctly punctuated sentence and then moves the
+    subordinate clause to the end and repunctuates it.
+- It must be STARTABLE WITHOUT THE TEACHER, and its answer goes in the `ANSWERS:`
+  block so a teacher can confirm it.
 
 ---
 
@@ -516,8 +661,22 @@ slides.
 
 # 5. LEARNED WORDS (red words)
 
-- Every session: REVIEW the two most recently taught learned words, then teach ONE new
-  learned word (Friday: review only, no new).
+- Every session REVIEWS the two most recently taught learned words. New learned words
+  are dealt on a FIXED SCHEDULE, not one per day until they run out.
+- SCHEDULE (the second new word is always taught in SESSION 3, never back to back with
+  the first):
+
+  | Sessions in the week | New learned word 1 | New learned word 2 |
+  |---|---|---|
+  | 5 | session 1 | session 3 |
+  | 4 | session 1 | session 3 |
+  | 3 | session 1 | session 3 |
+  | 2 | session 1 | session 2 |
+
+  Every other session is review-only. Two new red words on consecutive days is the
+  defect this replaces - it gives the first word no spacing before the second lands.
+  With three or more new words in a week (rare), keep the same principle: never two
+  new words on consecutive sessions.
 - The word renders white on the dark red slide with the UNFAIR PART highlighted yellow
   (`unfair` field = the exact letters). The unfair part is the piece that breaks the
   spelling patterns students have been taught in Australian English - be precise
@@ -530,6 +689,11 @@ slides.
   one usable teaching line. Where natural, link the word to the current inquiry unit
   (e.g. constitution, heritage -> First Nations inquiry) - a short spiel making the
   crossover explicit.
+- If a learned word happens to CONTAIN a morpheme the group has been taught, say so in
+  the notes and use it: `seismograph ends with graph, meaning write or record - the
+  same graph as pictograph. Only the seis part is unfair.` It shrinks the amount that
+  has to be memorised and reinforces the morphology. Do not force it where the part is
+  not genuinely the taught morpheme.
 - The builder replaces the template's old dense section-note blocks with concise,
   line-separated procedure notes. Never restore the inherited paragraph walls or
   control characters from the master notes.
@@ -538,9 +702,17 @@ slides.
 
 # 6. DICTATION (two sentences, both with reveal)
 
-- Sentence 1 EASIER: about 10-12 words. Sentence 2 HARDER: about 14-16 words with
-  richer punctuation. Never exceed ~16 words; the slide auto-shrinks but readability
-  and working memory both suffer past that.
+- MEASURE LENGTH IN CHARACTERS, NOT WORDS. A word count lies: fourteen words made of
+  camouflage, seismograph and microprocessor is far harder to hold and write back than
+  fourteen short ones, and the group has struggled on exactly that. Count characters
+  including spaces and punctuation.
+  - Sentence 1 EASIER: **55-75 characters**.
+  - Sentence 2 HARDER: **80-100 characters**, richer punctuation. Hard ceiling 105.
+  - The reference is the model harder sentence at 92 characters:
+    `Before the class began, Mia whispered, "That microchip is smaller than my
+    camouflage badge."`
+  - Word count is now only a sanity check (roughly 10-12 then 14-16); if the character
+    count and the word count disagree, the CHARACTER count wins and you cut words.
 - Content sourcing, in priority order:
   1. Today's new learned word and/or this week's learned words.
   2. Today's (or yesterday's) morphology words.
@@ -565,6 +737,36 @@ slides.
   - writes a tick-off CUPS checklist in the notes with each category's items and count.
   Sanity-check N against the sentence before shipping - every red mark, underline and
   capital on the slide must be counted once.
+- NAME EACH PUNCTUATION MARK IN LANGUAGE THE TEACHER AND THE STUDENTS BOTH HAVE.
+  `comma after the reporting clause` is unusable: a ten-year veteran cannot explain it
+  if a student asks, so they skip it and the mark is never taught. Every entry in
+  `punctuation` carries a plain-English reminder in brackets, and the reason the mark
+  is there:
+  - `comma after the opening subordinate clause (the because/when/although part that
+    cannot stand alone - the comma shows where it ends)`
+  - `comma before the speech (it separates who said it from what they said)`
+  - `opening quotation mark (speech starts here, so the first word takes a capital)`
+  - `colon (it introduces the list or the words that follow)`
+  - `semicolon (it joins two complete sentences that belong together)`
+  - `apostrophe for the missing letter in "didn't"`
+  Assume NEITHER the teacher nor the student knows the grammatical label. If a mark
+  cannot be explained in one bracketed clause, choose a different sentence.
+- ALWAYS state the capital-after-speech-marks rule when the sentence quotes anyone -
+  it is the most-missed capital in this cohort's dictation.
+- COLON vs COMMA vs SEMICOLON, decided once and applied consistently:
+  - Speech introduced by a reporting clause takes a **comma**:
+    `Mia whispered, "That microchip is tiny."` Never a colon.
+  - A colon introduces a list, an explanation, or an instruction that is not reported
+    speech: `The captain gave one order: keep every record.`
+  - A semicolon joins two complete, closely related sentences with no conjunction.
+  Earlier weeks put a colon before reported speech and students copied it; that is the
+  error being corrected. When a deck uses a colon or semicolon, the `punctuation`
+  entry must say which of these jobs it is doing.
+- METER: sentence 1 uses the green gauge (needle near the start), sentence 2 the yellow
+  one (needle about two thirds around, everything before it filled). The builder now
+  ships the master's real yellow artwork, so the needle genuinely moves - if a harder
+  dictation renders with the needle still at the start, that is a build defect, not a
+  design choice.
 - Model pair (from the team email):
   - Easier: We followed the ordinary order, and then we began our work. (targets:
     ordinary, order)
@@ -592,30 +794,51 @@ students find boring, so it must earn its five minutes.
   bottom-right. Author to that shape:
   - `rule` - the restated rule, one breath (the absent-student line).
   - `example` - ONE hero: the worked sentence, the judgement pair, or the task itself.
-    This is what students look at; make it concrete, never meta.
+    This is what students look at; make it concrete, never meta. EACH `word = label`
+    EQUATION GETS ITS OWN LINE - author `under the old bridge = phrase (no verb)` and
+    `The boat sank = clause (verb: sank)` as two authored lines, not one run-on
+    sentence. The builder renders each authored line as its own centred paragraph and
+    sizes the block to the longest line, so every equation stays whole on one line.
+    An `A) ... B) ...` judgement pair must fit ONE line (about 36 characters at 30 pt)
+    or it breaks mid-item; if it will not fit, shorten both halves.
   - `items` - max 2 short support lines (the test, the challenge, the if-stuck starter).
-  - `routine` - the all-student response move as a chip: `Whiteboards ready - boards up
-    together`, `Thumbs first, then whiteboards`, `90 seconds - boards up when done`.
-  - `footer` - tease or stem: `Tomorrow: colon or no colon?`, `Stem: The colon belongs
-    there because ...`.
+    Centre-aligned by the builder.
+  - `routine` - the all-student response move as a chip. GRAMMAR IS DONE IN THE OG
+    BOOK: `OG books - 90 sec - pens down`, `Thumbs verdicts - voices off`,
+    `OG books - 2 min - books up`. See the whiteboard rule below.
+  - `footer` - tease or stem, and it must MEAN something to a student reading only the
+    screen. `Name the verb, or say there is none` is instruction-shaped noise - the
+    student does not know whether that is the task, a hint or a check. Write
+    `Tomorrow: colon or no colon?`, `Stem: The colon belongs there because ...`, or
+    `Check: did you find a doing word?` - a tease, a sentence stem, or a single
+    self-check phrased as a question.
   Never fall back to the legacy `lines` array for new decks - it produces the bland
   text-only slides the school rejected.
-- Engagement is mandatory, not optional. Rotate all-student-response moves: mini
-  whiteboards, thumbs verdicts, choral answers, beat-the-teacher (teacher makes the
-  error, students catch it), partner swap-and-check, exit-ticket boards. Never
-  volunteer-hands-only. Never a worksheet.
-- You do produces visible evidence (board up, exit ticket) the teacher can scan to
+- WHITEBOARDS ARE FOR THE MORPHOLOGY YOU DO ONLY. Every grammar block - I do, We do and
+  You do - is worked in the student's OG book, so the evidence stays in the book the
+  teacher already marks. Do not write `whiteboards`, `boards up` or `Write it... Chin
+  it... Show me.` into a grammar routine chip or a grammar note. The non-written
+  all-student moves (thumbs verdicts, choral, beat-the-teacher) are still available and
+  still preferred for the We do.
+- Engagement is mandatory, not optional. Rotate all-student-response moves: thumbs
+  verdicts, choral answers, beat-the-teacher (teacher makes the error, students catch
+  it), partner swap-and-check, books-up exit tickets. Never volunteer-hands-only.
+  Never a worksheet.
+- You do produces visible evidence (books up, exit ticket) the teacher can scan to
   regroup tomorrow.
 - The You do obeys the same achievability bar as the morphology You Do (3d):
   - The hero card shows a COMPLETED WORKED EXAMPLE of the task (`One done for you:
     The keys are under the blue mat. Whole phrase: under the blue mat`), never the
     bare task instruction. Put the instruction in the rule banner or the first item
     (`Your turn: ...`), then give the material items.
-  - The notes CIRCULATE beat scripts the prompt ladder for stuck students (first
-    prompt, then start one item together); HELP changes the task form.
+  - The notes CIRCULATE beat scripts the prompt ladder for stuck students, and it must
+    ADD something the board does not already say (3d); HELP changes the task form.
   - Prefer a fixed-answer core (find/complete/fix given sentences) with production as
-    the STRETCH when the group is still consolidating - open production with no model
+    the EXTENSION when the group is still consolidating - open production with no model
     is the hardest form of the task, not the default exit ticket.
+  - The grammar You do carries an `EXTENSION:` meeting the 3e standard (about 18 months
+    ahead, same concept pushed) and an `ANSWERS:` block at the very bottom of the notes
+    listing each item's question and answer plus the extension answer.
 - A fixed-answer You do MUST be followed by the same green `Tick it or fix it - ...`
   answer slide as the morphology You Do: supply `check_title`, `check_rule`,
   `check_items`, `check_routine`, `check_footer`, `check_notes` on the `you_do` block.
@@ -623,12 +846,14 @@ students find boring, so it must earn its five minutes.
   `check_notes` MODEL the reasoning for the first item before students tick.
 - Teacher notes use the Glance Format from `MEGA_PROMPT.md` sections 45-47: LIVE ZONE
   (ANSWER first if the slide asks anything; 2-5 numbered beats fusing action + talk with
-  CAPS anchors - SAY/ASK/MODEL/SCAN/TIME/CIRCULATE; TRAP with Fix; STRETCH/HELP), then
-  `---`, then a one-line prep zone with the `[Stage | element | focus]` tag. SAY lines
-  are warm, natural classroom talk, one breath (~20 words), never clipped fragments.
+  CAPS anchors - SAY/ASK/MODEL/SCAN/TIME/CIRCULATE; TRAP with Fix; EXTENSION/HELP), then
+  `---`, then a one-line prep zone with the `[Stage | element | focus]` tag, then the
+  `ANSWERS:` block on fixed-answer You dos. SAY lines are warm, natural classroom talk,
+  one breath (~20 words), never clipped fragments.
 - Every new thought starts a new source line. Never place `ANSWER`, multiple numbered
-  beats, `TIME`, `CIRCULATE`, `SCAN`, `TRAP`, `STRETCH` and `HELP` in one paragraph.
-  The live zone is eight lines maximum; the prep zone is three lines maximum.
+  beats, `TIME`, `CIRCULATE`, `SCAN`, `TRAP`, `EXTENSION` and `HELP` in one paragraph.
+  The live zone is eight lines maximum; the prep zone is three lines plus the
+  `ANSWERS:` block.
 - Content agenda: Victorian Curriculum English level 5/6 language strand - clause types,
   cohesion, punctuation for effect, complex sentences, quoted speech, apostrophes,
   modality - sequenced across the term by the user's grammar focus list.
@@ -673,15 +898,15 @@ master template's old dense procedure blocks. All authored notes must follow
 | Slide | Notes content (verbatim template) |
 |---|---|
 | Morph review card | `Type:` / `Keyword:` / `Meaning:` (catalogue verbatim) / `Part of speech:` where printed / optional `Extra task:` + `SAY:` + `Possible answers:` |
-| Words to Read Review table | three separate `READ:` beats (whole class, exhaustive fun groups, everyone row 5 with each student reading at least two rows), then one direct question and its `EXPECT:` answer per numbered line |
-| Sound bank | fixed line (builder default) |
+| Words to Read Review table | one numbered `READ:` line per group (no whole-class warm-up beat), then the everyone-row-5 line stating each student reads at least two rows, then one direct question and its `EXPECT:` answer per numbered line |
+| Sound bank | `green = root` / `yellow = prefix` / `red = suffix`, one per line (builder default) |
 | Spell the word (each) | `Word to spell:` / `Sentence:` / reveal line / `After checking:` / `Answer:` (all required); builder renders labels bold and underlines the target word where it appears inside the `Sentence:` line |
-| New morph card | `Type:` / `Keyword:` / `Meaning:` or separate `Sound:` lines |
+| New morph card | `Type:` / `Keyword:` / `Meaning:` or separate `Sound:` lines; the copy slide adds `MEMORY HOOK:` automatically |
 | Words to Read grid | one scripted line per word + `Memory hook:` last |
-| Words to Spell grid | line-separated early-finisher cue + `STRETCH:` |
+| Words to Spell grid | line-separated early-finisher cue + `EXTENSION:` (3e) |
 | Learned word (each) | `Why learned:` / `Say it:` AU pronunciation / `Link:` |
 | Dictation (each) | sentence + line-separated CUPS checklist + `Score:` + `Focus:` |
-| Grammar I/We/You do | Glance Format live zone, `---`, one prep line (section 7) |
+| Grammar I/We/You do | Glance Format live zone, `---`, prep line, then `ANSWERS:` on a fixed-answer You do (section 7) |
 
 ---
 
@@ -711,7 +936,7 @@ One JSON per week in `og_planner/weeks/`. Exemplar: `og_planner/weeks/sample_ter
     "associated_word_exceptions"?: [ { "word", "reason", "source" } ], // rare; section 4c
     "wtr_new_notes": "verbatim line-separated teacher script + Memory hook: (3b)",
     "words_to_spell_new": [4 words, all from words_to_read_new],   // omit on week_review
-    "extension": "self-contained early-finisher + Stretch:",       // omit on week_review
+    "extension": "self-contained early-finisher + EXTENSION: (3e)", // omit on week_review
     "new_morph_activity": { "title", "rule", "example"?, "items": [<=4],
                             "routine", "footer", "time"?, "notes",
                             "check_title"?: "Tick it or fix it - ...",
@@ -898,6 +1123,68 @@ your spec against every line before building)
   items / routine / footer. (7)
 - An I do that does not restate the rule (absent-student rule). (7)
 - Smart quotes, em dashes, or ellipsis characters anywhere in the spec. (0a)
+- A scripted whole-class "read all five rows" warm-up beat, or all four group
+  allocations crammed onto one `READ:` line instead of one numbered line each. (2b)
+- A review question that cannot be answered from what has already been taught. (2b)
+- A sound bank note that describes the colour key instead of stating it, or a variant
+  label allowed to break mid-bracket. (2c)
+- A spelling-review sentence that could be from a dictionary rather than the students'
+  own school/science/sport world, or one that leaves a homophone ambiguous by ear. (2d)
+- An `After checking:` / `Answer:` pair that feeds the answer into the question and
+  repeats it back, or that a non-confident teacher cannot read aloud without sounding
+  foolish. (2d read-aloud test)
+- A word grid whose size is not 9 or 12. (3b)
+- Choosing a derivative with no taught morphemes when the family offered one that
+  stacks a recently taught prefix, root or suffix. (3b morpheme stacking)
+- A submarine line whose fused meaning does not mirror the parts just named
+  (`micro small + bio life + -ology the study of` then `the study of life too small to
+  see` instead of `the study of small life`). (3b)
+- A memory hook that only restates the meaning in a slogan voice, or a hook missing
+  from the copy-card notes. (3a, 3b)
+- A worked example written as one run-on line instead of putting the equation on its
+  own authored line. (3d, 7)
+- The word `STRETCH` anywhere in a new deck, or an "extension" that is one notch harder
+  rather than about 18 months ahead. (3e)
+- A fixed-answer You Do with no `ANSWERS:` block at the very bottom of the notes. (3d, 7)
+- A `CIRCULATE:` prompt that only repeats the rule or points back at the worked example
+  the teacher has just read aloud. (3d)
+- A check-slide `ASK:` whose answer is visible without thinking. (3d)
+- Two new learned words on consecutive sessions instead of sessions 1 and 3. (5)
+- A dictation sized by word count alone, outside 55-75 / 80-100 characters. (6)
+- A `punctuation` entry naming a grammatical construct with no plain-English reminder
+  in brackets, or a colon used before reported speech where a comma belongs. (6)
+- A harder dictation rendering with the needle still near the start. (6)
+- Whiteboards, `boards up`, or the boards cue script anywhere in a grammar block. (7)
+- A grammar footer that is instruction-shaped noise rather than a tease, stem or
+  self-check question. (7)
+
+# 10c. STRUCTURED-SLIDE SPACE BUDGET (grammar blocks and the morphology You Do)
+
+`draw_structured_slide` stacks rule banner -> hero example -> item lines from y=1.15
+and the build FAILS once content passes y=4.60, where the routine chip sits. Nothing
+auto-shrinks except the hero, and nothing clips - an oversized item line silently
+overlaps the one below it. Work the budget out BEFORE writing the spec:
+
+| Element | Vertical cost |
+|---|---|
+| rule banner | 0.76 |
+| hero example (with items below) | 1.77 |
+| hero example (no items) | 2.57 |
+| each item line, `item_size` < 20 | 0.46 |
+| each item line, `item_size` >= 20 | 0.58 |
+
+- rule + hero + items therefore allows **2 item lines**. Pack four numbered prompts
+  onto two lines (`"1. ... = ?      2. ... = ?"`) rather than dropping the rule banner
+  or the worked example - both are required.
+- Item lines must stay under `8.2 * 72 / (item_size * 0.55)` characters or they wrap
+  into the next line. At 17 pt that is about 63 characters.
+- Check slides (rule + up to 4 green answers, no hero) fit comfortably, but the same
+  character limit applies at `check_item_size` (default 22 -> about 49 characters).
+- Routine chips stay on one line under about 30 characters; footers under about 45.
+- Hero text drops to 20 pt minimum, and the gate rejects a grammar example below that -
+  keep heroes under roughly 180 characters.
+
+---
 
 # 11. PLANNING A TERM FROM THE USER'S INPUT
 
