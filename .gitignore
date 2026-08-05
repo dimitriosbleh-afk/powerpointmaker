@@ -66,3 +66,9 @@ assets/auslan_signs/manifest.json
 # under the schools statutory educational licence, which covers internal
 # teaching and NOT publishing to a public remote. Never commit these.
 reference/
+
+# The Auslan game bank reproduces mechanics adapted from those references, with
+# page-level citations, so it inherits the same licence: internal school
+# teaching only, never redistributed. Its own licensing section says so. It
+# stays local and is pasted into a chat from disk, never tracked here.
+IMPORTANT/AUSLAN_GAME_BANK.md

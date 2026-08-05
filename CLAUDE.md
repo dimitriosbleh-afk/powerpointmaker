@@ -350,9 +350,12 @@ theme). `AUSLAN_GAME_BANK.md` is an optional companion pasted alongside step 1:
 a growing repository of voice-off games, teacher-supplied ones reproduced
 faithfully and published mechanics rebuilt for a signing room. Add to it when a
 game has been run and worked; do not reconstruct its entries from memory when it
-is not pasted. Its published source sits in the gitignored `reference/` folder
-(purchased copy, schools statutory educational licence, internal use only, never
-committed). Hard rules that override everything else for Auslan builds: never draw,
+is not pasted. The bank itself is gitignored, as is its published source in the
+`reference/` folder (purchased copy, schools statutory educational licence,
+internal use only, never committed) - the bank carries page-level citations to
+that source, so pushing it to this public remote would be redistribution. It
+lives on disk only, so on a fresh clone it will be absent and must be pasted
+from the teacher's own copy. Hard rules that override everything else for Auslan builds: never draw,
 generate, or mirror a sign image - images come only from the shared bank at
 `assets/auslan_signs/`, populated by `python scripts/fetch_auslan_signs.py
 --glosses ...` (Signbank frame-sequence strips, `<GLOSS>.jpg` plus `_2`/`_3`
