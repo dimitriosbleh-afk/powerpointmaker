@@ -1268,7 +1268,30 @@ def deep_sanitize(obj):
     return obj
 
 
-DICTATION_CUE_RE = re.compile(r"([A-Z]|[,.;:!?\"'-]+)")
+DICTATION_CUE_RE = re.compile(r"([A-Z]|[,.;:!?\"'“”-]+)")
+
+
+def smart_dictation_quotes(sentence):
+    """Directional speech marks for the dictation slide face only.
+
+    The locked sentence box renders in Lexend, whose ASCII double-quote glyph
+    slants like a CLOSING quote, so a straight opening quote looks backwards
+    on screen (school feedback). Specs and notes stay ASCII; this converts
+    paired straight quotes at render time: first of each pair opens, second
+    closes.
+    """
+    if sentence.count('"') % 2:
+        warn(f"dictation sentence has an unpaired quotation mark: {sentence[:40]}")
+        return sentence
+    out = []
+    opening = True
+    for ch in sentence:
+        if ch == '"':
+            out.append("“" if opening else "”")
+            opening = not opening
+        else:
+            out.append(ch)
+    return "".join(out)
 
 
 def cue_runs(text, bold=None, underline=None):
@@ -1279,7 +1302,7 @@ def cue_runs(text, bold=None, underline=None):
             continue
         if re.fullmatch(r"[A-Z]", seg):
             color = CAPITAL_GREEN
-        elif re.fullmatch(r"[,.;:!?\"'-]+", seg):
+        elif re.fullmatch(r"[,.;:!?\"'“”-]+", seg):
             color = PUNCT_RED
         else:
             color = None
@@ -1731,11 +1754,12 @@ def build_session(pkg, week, session, out_path):
             # LibreOffice and Google Slides use slightly taller Lexend metrics
             # than PowerPoint. Keep long 14-16 word reveals inside the locked
             # sentence box so they cannot expand upward over the title.
+            display_sentence = smart_dictation_quotes(dt["sentence"])
             sz = fit_font_block(
-                dt["sentence"], 9.0, 2.45, 32, min_pt=28,
+                display_sentence, 9.0, 2.45, 32, min_pt=28,
                 char_em=0.62, line_factor=1.5,
             )
-            set_runs(sp, dictation_runs(dt["sentence"], dt.get("targets", [])), size_pt=sz)
+            set_runs(sp, dictation_runs(display_sentence, dt.get("targets", [])), size_pt=sz)
             bodypr = sp.find(q("p:txBody") + "/" + q("a:bodyPr"))
             if bodypr is not None:
                 bodypr.set("anchor", "t")
@@ -2155,9 +2179,10 @@ def qa_deck(path, session=None):
                         )
 
             # Dictation slides use colour/format as CUPS information, so verify it.
-            punctuation = set(",.;:!?\"'-")
+            punctuation = set(",.;:!?\"'“”-")
             for item in session.get("dictation", []):
-                sentence = item["sentence"]
+                # The slide face carries directional speech marks; the spec is ASCII.
+                sentence = smart_dictation_quotes(item["sentence"])
                 target_shape = None
                 target_slide = None
                 target_slide_index = None

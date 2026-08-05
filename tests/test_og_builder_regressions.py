@@ -82,9 +82,11 @@ class OgBuilderRegressionTests(unittest.TestCase):
                          for name in slide_names]
 
             for dictation in session["dictation"]:
+                # The slide face carries directional speech marks; specs stay ASCII.
+                display_sentence = OG.smart_dictation_quotes(dictation["sentence"])
                 sentence_root = next(
                     root for root in roots
-                    if dictation["sentence"] in "".join(
+                    if display_sentence in "".join(
                         text.text or "" for text in root.iter(OG.q("a:t"))
                     )
                 )
@@ -93,7 +95,7 @@ class OgBuilderRegressionTests(unittest.TestCase):
                 self.assertTrue(timing.findall(".//" + OG.q("p:spTgt")))
                 sentence_shape = next(
                     shape for shape in sentence_root.iter(OG.q("p:sp"))
-                    if dictation["sentence"] in "".join(
+                    if display_sentence in "".join(
                         text.text or "" for text in shape.iter(OG.q("a:t"))
                     )
                 )

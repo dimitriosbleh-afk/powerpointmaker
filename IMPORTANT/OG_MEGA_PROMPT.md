@@ -51,7 +51,10 @@ you QA the rendered decks. One PPTX per session (day), grouped in a week folder.
    visual render inspection before you may call it done. Google Slides import is the
    final compatibility bar - if you cannot run it, say so explicitly.
 6. ASCII-safe text everywhere: straight quotes, `-` not em dash, `...` not ellipsis.
-   The builder sanitises, but write clean strings at the source.
+   The builder sanitises, but write clean strings at the source. Sole exception,
+   applied by the builder itself: paired straight quotes render as directional
+   speech marks on the dictation slide face (section 6) - never type curly quotes
+   into a spec.
 
 ---
 
@@ -220,6 +223,15 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
 
 - The 9 morphemes students will need for TODAY'S spelling work (review + new spelling
   words). Students copy them into the top of their page before spelling.
+- REVIEW DAYS EXCLUDE THE FOCUS MORPHEME. On a `review` day the sound bank must NOT
+  contain the day's focus morpheme (the one the Review Morphology section revisits
+  from the previous session). Day 2 shifts the weight to auditory/spelling work -
+  students spell that morpheme from memory, and handing it to them in the bank defeats
+  the retrieval. Give its slot to another review prefix/suffix/root instead: prefer a
+  morpheme one of the day's review spelling words actually uses that is missing from
+  the bank; otherwise the most recently taught review morpheme of the same type, so
+  the type grouping stays intact. On `new` days the new morpheme DOES belong in the
+  bank - it is being taught that day, not retrieved.
 - Box colour is set by type automatically: green root, yellow prefix, red suffix.
   Give the spec exactly 9 entries. Any other mapping is a build-stopping defect.
 - The slide's teacher note states the key as three plain lines and nothing else -
@@ -335,6 +347,13 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   line out of `wtr_new_notes` and appends it to the copy-card notes as a bold
   `MEMORY HOOK:` line, so the teacher delivers it while the anchor card is on screen
   and again at the end of the grid. Author the hook once, in `wtr_new_notes`.
+- WHY LINE ON DAY 1: when a morpheme is first taught, the card/copy-slide notes carry
+  one SAY line naming what the morpheme BUYS the student - `Learn micro once and you
+  can read and spell a whole family of science words without sounding them out.` One
+  line, student-felt payoff (reading big words, spelling word families, guessing an
+  unseen word's meaning), same standard as the grammar WHY-AND-HOW rule in section 7.
+  Never a curriculum reason, never repeated on the review day - the review day's
+  payoff is the retrieval itself.
 
 ## 3b. Words to Read (grid, reveal one word per click)
 
@@ -689,6 +708,10 @@ slides.
   one usable teaching line. Where natural, link the word to the current inquiry unit
   (e.g. constitution, heritage -> First Nations inquiry) - a short spiel making the
   crossover explicit.
+- On the day a NEW learned word lands, add one line of payoff naming where the student
+  will actually write it (`You will write this word in every science report this
+  term.`) - the section 7 WHY standard: a reason the writer feels, because these are
+  exactly the words that stall a draft when they have to be guessed.
 - If a learned word happens to CONTAIN a morpheme the group has been taught, say so in
   the notes and use it: `seismograph ends with graph, meaning write or record - the
   same graph as pictograph. Only the seis part is unfair.` It shrinks the amount that
@@ -718,6 +741,18 @@ slides.
   2. Today's (or yesterday's) morphology words.
   3. The 2b weighting recipe for older morphemes - dictation IS revision.
   Every content word must be spellable from taught material; scope-check phonograms.
+- EVERY DICTATION SENTENCE MUST MAKE SENSE. Two checks, both mandatory, run on every
+  sentence before shipping:
+  1. REAL WORDS ONLY: every word must be a real English word, spelled exactly. Never
+     invent, blend, or misremember a word to force a morpheme in - the school rejected
+     `"I will depict the deisomograph."` (not a word; the instrument is a seismograph).
+     If a target will not fit, choose a different derivative or a different target.
+  2. THE SCENE MUST BE PLAUSIBLE: read the sentence aloud - a 10-12yo must be able to
+     picture who is speaking, where, and why in one go. Stringing targets together
+     grammatically is not enough (`Although the camouflage worked, our artist said,
+     "I will depict the seismograph."` parses but describes no scene anyone can
+     picture). If two targets cannot share one sensible moment, split them across the
+     two sentences - the targets serve the sentence, never the reverse.
 - Grade 5/6 punctuation agenda (Victorian Curriculum level 5/6): beyond commas and full
   stops - colons, semicolons, quotation marks with correct comma placement, exclamation
   marks, hyphens, apostrophes, capitals for proper nouns. Weave the week's grammar focus
@@ -737,6 +772,11 @@ slides.
   - writes a tick-off CUPS checklist in the notes with each category's items and count.
   Sanity-check N against the sentence before shipping - every red mark, underline and
   capital on the slide must be counted once.
+- CUPS IS THE BRIDGE TO THEIR OWN WRITING. Once or twice a week (not every session),
+  one scripted line at the check step tells students the transfer: `CUPS is not just
+  for dictation - run the same four checks on your own draft before anyone else reads
+  it.` The section 7 HOW standard: dictation is where the class rehearses the editing
+  routine they will use on everything they write.
 - NAME EACH PUNCTUATION MARK IN LANGUAGE THE TEACHER AND THE STUDENTS BOTH HAVE.
   `comma after the reporting clause` is unusable: a ten-year veteran cannot explain it
   if a student asks, so they skip it and the mark is never taught. Every entry in
@@ -753,6 +793,12 @@ slides.
   cannot be explained in one bracketed clause, choose a different sentence.
 - ALWAYS state the capital-after-speech-marks rule when the sentence quotes anyone -
   it is the most-missed capital in this cohort's dictation.
+- SPEECH MARKS: write straight ASCII quotes in the spec as always. The builder
+  converts each straight pair to directional marks on the dictation slide face only
+  (`"..."` renders as one opening and one closing curly quote), because the locked
+  Lexend sentence box draws the ASCII quote glyph slanted like a CLOSING quote, so
+  opening quotes looked backwards on screen - school feedback. Quotes must come in
+  pairs; an unpaired quote is a spec defect (the builder warns and leaves it straight).
 - COLON vs COMMA vs SEMICOLON, decided once and applied consistently:
   - Speech introduced by a reporting clause takes a **comma**:
     `Mia whispered, "That microchip is tiny."` Never a colon.
@@ -787,6 +833,31 @@ students find boring, so it must earn its five minutes.
   or two lines before extending it. A student who missed yesterday must be able to
   succeed today with only what is on screen. Five minutes is too short to re-teach, so
   the restatement IS the re-teach.
+- WHY-AND-HOW RULE (non-negotiable, school feedback): labelling is never the point -
+  writing is. Every grammar day must answer the two questions a student could fairly
+  ask: WHY are we learning this, and HOW do I use it in my own writing?
+  - WHY, once per day, in the I do: one line naming the writer's payoff in 10-12yo
+    terms, delivered with the rule restatement (fold it into beat 1's SAY, or give it
+    its own beat when the live zone has room). It must be a reason a young writer
+    FEELS, not a curriculum reason: `Every sentence you write must stand alone - this
+    test is how you catch a half-finished sentence before your reader does.` is the
+    standard; `Today we are learning about clauses.` and `So you can label clauses.`
+    are defects - the label is the tool, never the payoff.
+  - HOW, once per day, at the close (the You do or its Tick it or fix it slide): one
+    scripted transfer line that sends the concept into the students' own writing -
+    when to reach for it and what to do: `When you edit your next draft, read each
+    sentence alone; if it leaves you waiting, it needs its verb.` Name writing the
+    students actually do (their narrative, their science report, their dictation
+    sentences), never writing in the abstract. The footer/check_footer slot is ideal
+    on the slide face (`Editing move: read it alone before you hand it in.`).
+  - The WEEK states its payoff once: the grammar `header_notes` (or the day-1 purpose
+    line) names the writing problem this week's focus solves - fragments, run-ons,
+    every sentence opening the same way, speech the reader cannot follow - and each
+    day's WHY line is a variation of that payoff, not a new claim each day.
+  - BUDGET-NEUTRAL: WHY and HOW are one line each inside existing beats and slots -
+    never a new activity, never an extra slide, never a note-budget blowout. If the
+    live zone is full, the WHY rides inside beat 1's SAY and the HOW inside the final
+    SAY or the footer.
 - DESIGNED SLIDES, NOT TEXT DUMPS. Grammar blocks use the structured spec and the
   builder lays them out (this is the one OG section with visual design): a purple rule
   banner across the top, a big soft-tinted HERO CARD carrying the example or task, up
@@ -1037,7 +1108,8 @@ the per-session PPTX in the week folder IS the deliverable (unlike themed lesson
    `og_planner/morpheme_bank.json`. Stop and verify anything unconfirmed BEFORE writing
    the spec.
 3. For each session, in slide order, generate: review-10 (jumbled per 2a), 15 review
-   words + verbal script (2b), sound bank 9 grouped by type (2c), 10 spelling words
+   words + verbal script (2b), sound bank 9 grouped by type, no focus morpheme on
+   review days (2c), 10 spelling words
    with sentence + prompt + answer (2d), morpheme card + words to read + script +
    memory hook + 4 spelling words + extension (3a-3c, skip on Friday), learned words
    2 review + 1 new (5), 2 dictations with cups (6), grammar structured blocks (7).
@@ -1119,15 +1191,27 @@ your spec against every line before building)
   red mark/capital/target, or with the wrong meter (first = green; second/trickier =
   yellow), or
   with sentence lengths outside 10-12 / 14-16 words. (6)
+- A dictation sentence containing an invented or misremembered word (`deisomograph`),
+  or one that strings targets into a scene no student can picture when it is read
+  aloud. (6)
+- An unpaired quotation mark in a dictation sentence, or curly quotes typed into the
+  spec - the spec stays straight ASCII and the builder renders the directional marks. (6)
 - Grammar authored as `lines` (the bland rejected layout) instead of rule / example /
   items / routine / footer. (7)
 - An I do that does not restate the rule (absent-student rule). (7)
+- A grammar day that never tells students WHY the focus matters to their own writing,
+  or never scripts the HOW transfer line at the close - labelling practised for its
+  own sake. (7)
+- A new morpheme taught without its one-line day-1 WHY (what the morpheme buys the
+  student as a reader and speller). (3a)
 - Smart quotes, em dashes, or ellipsis characters anywhere in the spec. (0a)
 - A scripted whole-class "read all five rows" warm-up beat, or all four group
   allocations crammed onto one `READ:` line instead of one numbered line each. (2b)
 - A review question that cannot be answered from what has already been taught. (2b)
 - A sound bank note that describes the colour key instead of stating it, or a variant
   label allowed to break mid-bracket. (2c)
+- A review-day sound bank containing the day's focus morpheme - that slot belongs to
+  another review prefix/suffix/root. (2c)
 - A spelling-review sentence that could be from a dictionary rather than the students'
   own school/science/sport world, or one that leaves a homophone ambiguous by ear. (2d)
 - An `After checking:` / `Answer:` pair that feeds the answer into the question and
