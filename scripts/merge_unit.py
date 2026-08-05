@@ -27,6 +27,7 @@ exactly one `*.pptx` file. Resources are picked up from
 
 import argparse
 import copy
+import io
 import json
 import re
 import shutil
@@ -35,6 +36,7 @@ import zipfile
 from pathlib import Path
 
 from pptx import Presentation
+from pptx.oxml.ns import qn
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_ROOT = ROOT / "output"
@@ -92,9 +94,15 @@ def copy_slide(src_slide, dst_prs):
     dst_layout = dst_prs.slide_layouts[0]
     dst_slide = dst_prs.slides.add_slide(dst_layout)
 
-    src_sp_tree = src_slide.shapes._spTree
-    dst_sp_tree = dst_slide.shapes._spTree
-    dst_sp_tree.getparent().replace(dst_sp_tree, copy.deepcopy(src_sp_tree))
+    # Work off the live XML, not slide.shapes._spTree. That is a lazyproperty
+    # whose element is not the one hanging off the slide's cSld here, so
+    # replacing it grafts the shapes in but leaves any later edit writing to a
+    # tree that is never serialised. The symptom is a merged slide that keeps
+    # its shapes and silently loses its images.
+    src_cSld = src_slide._element.find(qn("p:cSld"))
+    dst_cSld = dst_slide._element.find(qn("p:cSld"))
+    new_sp_tree = copy.deepcopy(src_cSld.find(qn("p:spTree")))
+    dst_cSld.replace(dst_cSld.find(qn("p:spTree")), new_sp_tree)
 
     src_bg = src_slide.background._element
     dst_bg = dst_slide.background._element
@@ -103,7 +111,15 @@ def copy_slide(src_slide, dst_prs):
     rid_map = {}
     for r_id, rel in list(src_slide.part.rels.items()):
         if "image" in rel.reltype:
-            new_r_id = dst_slide.part.relate_to(rel.target_part, rel.reltype)
+            # Relating straight to the source ImagePart carries its partname
+            # across, so two source decks that both have /ppt/media/image-3-1.jpg
+            # collide and the saved zip gets duplicate members. Re-adding the
+            # blob routes through the destination package's image collection,
+            # which assigns a fresh partname and dedupes by hash, so a sign used
+            # in several sessions is stored once.
+            _, new_r_id = dst_slide.part.get_or_add_image_part(
+                io.BytesIO(rel.target_part.blob)
+            )
             rid_map[r_id] = new_r_id
         elif rel.reltype.endswith(HYPERLINK_RELTYPE_SUFFIX):
             new_r_id = dst_slide.part.relate_to(
@@ -117,13 +133,20 @@ def copy_slide(src_slide, dst_prs):
             "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}embed",
             "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id",
         )
-        for old_r_id, new_r_id in rid_map.items():
-            if old_r_id == new_r_id:
-                continue
-            for elem in dst_slide.shapes._spTree.iter():
-                for attr_name in attr_names:
-                    if elem.get(attr_name) == old_r_id:
-                        elem.set(attr_name, new_r_id)
+        # Walk the LIVE slide element. Handles kept from before the graft
+        # (new_sp_tree, or slide.shapes._spTree) do not reliably address the
+        # nodes that get serialised, so edits through them vanish on save and
+        # the merged slide keeps its shapes but loses its images.
+        #
+        # One pass, mapping each id from its ORIGINAL value. Iterating the
+        # mappings instead re-remaps elements already updated: with
+        # {rId2->rId3, rId3->rId4} the rId2 shapes become rId3 and are then
+        # caught again and pushed to rId4.
+        for elem in dst_slide._element.iter():
+            for attr_name in attr_names:
+                current = elem.get(attr_name)
+                if current is not None and current in rid_map:
+                    elem.set(attr_name, rid_map[current])
 
     if src_slide.has_notes_slide:
         notes_text = src_slide.notes_slide.notes_text_frame.text
