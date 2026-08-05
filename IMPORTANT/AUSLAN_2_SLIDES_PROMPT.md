@@ -1,6 +1,6 @@
 (c) 2026 James Hooke. Confidential. Internal use only. Not for redistribution.
 
-# Auslan Session Deck Builder Prompt v1.0
+# Auslan Session Deck Builder Prompt v1.1
 ## Step 2 of the Auslan pipeline | Turns the unit document from AUSLAN_1_UNIT_PROMPT.md into decks and printed resources | Runs inside the PPTX lesson generator repo
 
 # 0. Position in the pipeline
@@ -25,13 +25,15 @@ This prompt states only the Auslan deltas. Everything it does not override follo
 
 Paste with this prompt:
 
-- The unit document, whole, or at minimum: unit header (anchor, care blocks), band map, the vocabulary bank rows for every sign in scope, and the full weekly plan of each lesson being built
+- The unit document, whole, or at minimum: unit header (anchor, care blocks), band map, the vocabulary bank rows for every sign in scope, the section 10 entries for every game in scope, and the full weekly plan of each lesson being built
 - Which lessons to build (for example: Lessons 1 to 3, or the whole unit)
 - Term and week numbers the lessons run in
 - Class size if it differs from the unit document
 - Anything the Auslan teacher changed since the document was generated
 
 If the unit document was produced by a different or older prompt, build from what it gives and flag gaps rather than inventing the missing parts.
+
+**Strip the unit document's visual layer on the way in.** From v1.9 the unit document carries phase icons, `\newpage` markers and numbered level-two headings. Those exist to make a hundred-page Word document navigable and they have no place in a deck: no icon reaches a slide face, a notes zone or a PDF, and no page-break marker or heading number is carried across. Slide text and teacher notes stay ASCII per CLAUDE.md, and build gate 3 is the backstop, not the plan.
 
 # 2. Theme and file layout
 
@@ -87,7 +89,7 @@ The unit builder's language rules bind this step too:
 
 - A gloss is a label for looking a sign up, not Auslan and not a sentence. **Never compose a multi-sign gloss string** on any slide or PDF: no `WHEN YOU START?`, no gloss dialogues, no gloss word orders you assembled yourself.
 - Where students read a question or answer, print it in plain English. The signs involved appear as separate sign cards or a listed sign set. The teacher models the Auslan form from the school reference.
-- The one exception: a modelled structure the unit document or the school reference itself supplies, reproduced exactly, never extended. If the unit document tagged it CHECK GRAMMAR, the deck keeps that flag in the teacher notes prep zone.
+- The one exception: a fixed form the unit document, the teacher or the school reference supplies, for example `WHAT MEAN?` for what do you mean, or a game's own signed prompt. Reproduce it exactly, never extend it, and never build another string by analogy with it. If the unit document tagged it CHECK GRAMMAR, the deck keeps that flag in the teacher notes prep zone.
 - `[CHECK SIGNBANK]` and `[CHECK GRAMMAR]` tags never appear on a student-facing slide face or printable. They live in teacher notes prep zones, worded as the pre-lesson job they are.
 - Sequence displays (for example yesterday / today / tomorrow across the slide) are sign cards side by side, each with its own English label. That is a vocabulary set laid out in time order, not a composed sentence, and it is allowed.
 
@@ -100,7 +102,7 @@ The unit document's lesson skeleton (Do Now, LI and SC, I Do, We Do, You Do, Exi
 3. **Do Now: retrieval slides (1-2).** Previously taught signs shown as bank images with the labels hidden, revealed on click (`clickBuild`), so the class signs back or names the meaning before the answer lands. Signs without bank images are retrieved live by the teacher instead; do not build a retrieval slide around lookup cards. Finish with the bridge line from the unit document in the notes.
 4. **LI and SC slide** (`liSlide`): the lesson's single learning intention and exactly the three I can statements from the unit document, verbatim.
 5. **I Do: new sign slides (1-3).** The lesson's 3-4 production signs, hero-sized, one to four sign cards per slide. The first I Do slide carries the unit anchor restatement as a visible strip in the anchor's exact wording. The six-repetitions routine, the deliberate error and its Say: lines run live from the notes; do not put stage directions on the slide face. Variation slides (section 6) sit here when the lesson teaches one.
-6. **We Do: game slide(s) (1-2).** The game named by the unit document, run with the teacher. An instruction card (`addInstructionCard`) carries the student-facing steps; the restated content the plan says the teacher must not leave the page for (the eight questions, the six fact cards) goes on the slide or its notes exactly as restated in the plan. Answer checks that reveal a gloss or meaning use `clickBuild`.
+6. **We Do: game slide(s) (1-2).** The game named by the unit document, run with the teacher. An instruction card (`addInstructionCard`) carries the student-facing steps; the restated content the plan says the teacher must not leave the page for (the eight questions, the six fact cards) goes on the slide or its notes exactly as restated in the plan. Answer checks that reveal a gloss or meaning use `clickBuild`. Name the game on the slide by its appendix number and title, as the unit document does, so a teacher who wants the full rules knows where to look. The game's Voice off adaptation and its safety rules go in the notes; a game whose rules include no running or no avoidance carries those on the slide face too, because students need them.
 7. **Primary decision point slide.** The check as its own slide: the cue and what students do, student-facing. What the teacher watches for, the 80 percent proceed move and the full pivot live in the notes, taken from the unit document without compression.
 8. **You Do: voice-off practice slide.** The task, the partner structure, and a visible `Voice off` marker. Auslan-only practice is the point of the stage, so the slide carries what students need to run it without the teacher talking: roles, steps, and where the cards sit. No scripted teacher talk here; the plan deliberately does not script the You Do.
 9. **Exit ticket slide** (`exitTicketSlide`): the door routine and the self-assessment tick, matching the printed slip.
@@ -119,7 +121,7 @@ Rules across the skeleton:
 In an Auslan deck, the bank image IS the visual anchor MEGA_PROMPT demands: the sign is the content, so the image of it is the thing students look at, exactly as a fraction wall anchors a fractions lesson. Three placements cover nearly every need. Build them with theme primitives and bank images inside otherwise house-standard slides; they are placements, not new drawing helpers, and they must never involve drawing a sign.
 
 - **Sign card.** One bank image on a card, English meaning as the visible label, gloss as a small caption. One to four per slide; at four, all four belong to one taught set.
-- **Variation slide ("Which one?").** Two bank images side by side (`<GLOSS>.jpg` and `<GLOSS>_2.jpg`) under a title like `LIBRARY - which one do you use?`. Teaching point in the notes: regional variation is real, two signs can both be right, a student's home sign goes up next to the reference. Only build this when both variant images exist or the unit document explicitly teaches the variation; a variation slide with one lookup card is just a sign card.
+- **Variation slide ("Which one?").** Two bank images side by side (`<GLOSS>.jpg` and `<GLOSS>_2.jpg`) under a title like `LIBRARY - which one do you use?`. Variants are curriculum content, so build the slide when the unit document's vocabulary bank fills the Variant column for a sign the lesson teaches. Label which form the class produces and which they only need to recognise; students are not asked to learn both. Teaching point in the notes: regional variation is real, two signs can both be right, and a student's home sign goes up next to the reference once it has been checked, per the unit document's wording. Only build it when both variant images exist; a variation slide with one lookup card is just a sign card.
 - **Retrieval reveal.** Bank image(s) with the label hidden behind a `clickBuild` step. Used in Do Now and for We Do answer checks. The pre-reveal notes ask the class to sign back or name it with the signing response routine; the post-reveal beat confirms and fixes.
 
 # 7. Teacher notes: voice-off deltas to the Glance format
@@ -128,12 +130,12 @@ Notes follow the Glance format and all of MEGA_PROMPT sections 45-47, with these
 
 - **Say: lines come from the unit document verbatim** wherever it scripts them. They are what the teacher communicates (signed, spoken, or both, per school practice); do not convert them into hearing-classroom presenter talk and do not paraphrase them.
 - **Response routines are the unit's signing routines,** cued identically in every Auslan deck: `Everyone signs it to me on three... one, two, three.` for expressive checks, and `Write the gloss. Boards up on three... one, two, three.` for receptive checks at bands with a writing load. These replace the school-standard verbal cue bank; the routine-tightness rules (full cue on first use, scripted one-line reset, never hands up) still apply.
-- Hands up is never how evidence is collected, and in a signing room it also collides with the language itself: keep hands free for signing. Waving and table taps are attention protocols, not sampling methods.
+- Hands up is never how evidence is collected, and in a signing room it also collides with the language itself: keep hands free for signing. Waving and table taps are attention protocols, not sampling methods. A game that counts hands to score a round is not sampling and is left as the unit document writes it.
 - **EXPECT: names the gloss or meaning expected** (`EXPECT: FAVOURITE`, `EXPECT: most sign TEAM`), never a description of how the sign is produced.
 - **ANSWER: lines state the meaning or gloss**, same rule.
 - CHECK SIGNBANK and CHECK GRAMMAR items for the slide's signs go in the prep zone as a rehearse-first line, for example: `Rehearse FAVOURITE (varies) and negated UNDERSTAND in Signbank before class.`
 - The prep zone tag keeps its `[Stage | VTLM element | SC | HITS n]` shape, using the HITS numbers the unit document's lesson tag names.
-- The "teaching a language you are still learning" stance carries into notes: where a lesson meets a risky sign, the notes may script the lookup move (`Say: I am not sure of that one. Let us look it up together.`) exactly as the unit document words it.
+- The "teaching a language you are still learning" stance carries into notes only when the unit document carries that block. From v1.9 it is conditional on who is teaching: a fluent signer's document omits it, and scripting a lookup move into his notes then reads as a correction he did not ask for. Where the block is present, the notes may script the lookup move (`Say: I am not sure of that one. Let us look it up together.`) exactly as the unit document words it.
 
 # 8. Printable resources
 

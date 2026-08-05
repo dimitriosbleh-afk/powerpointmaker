@@ -60,3 +60,9 @@ assets/auslan_signs/*.png
 # manifest.json embeds Signbank's dictionary definitions; it regenerates with
 # the images, so it stays local too.
 assets/auslan_signs/manifest.json
+
+# Purchased teaching references held locally so the Auslan game bank can be
+# expanded. Copyright the publisher's; the school's purchased copy puts use
+# under the schools statutory educational licence, which covers internal
+# teaching and NOT publishing to a public remote. Never commit these.
+reference/
