@@ -1,0 +1,56 @@
+{
+  "unit_folder": "Deaf_Sports_In_Australia_Unit",
+  "unit_pptx_name": "Deaf Sports In Australia Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_deafsport_lesson1.js",
+      "folder": "DeafSport_Lesson1_Meeting_A_Signer",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_deafsport_lesson2.js",
+      "folder": "DeafSport_Lesson2_Who_What_Where",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_deafsport_lesson3.js",
+      "folder": "DeafSport_Lesson3_When_And_How_Many",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_deafsport_lesson4.js",
+      "folder": "DeafSport_Lesson4_Back_Then_And_After",
+      "session": 4
+    },
+    {
+      "build_script": "builds/build_deafsport_lesson5.js",
+      "folder": "DeafSport_Lesson5_Starting_Lights_And_Flags",
+      "session": 5
+    },
+    {
+      "build_script": "builds/build_deafsport_lesson6.js",
+      "folder": "DeafSport_Lesson6_Building_A_Profile",
+      "session": 6
+    },
+    {
+      "build_script": "builds/build_deafsport_lesson7.js",
+      "folder": "DeafSport_Lesson7_The_Two_Minute_Interview",
+      "session": 7
+    },
+    {
+      "build_script": "builds/build_deafsport_lesson8.js",
+      "folder": "DeafSport_Lesson8_Showing_The_Story",
+      "session": 8
+    },
+    {
+      "build_script": "builds/build_deafsport_lesson9.js",
+      "folder": "DeafSport_Lesson9_Translating_Not_Swapping",
+      "session": 9
+    },
+    {
+      "build_script": "builds/build_deafsport_lesson10.js",
+      "folder": "DeafSport_Lesson10_Showcase_And_Reflection",
+      "session": 10
+    }
+  ]
+}
