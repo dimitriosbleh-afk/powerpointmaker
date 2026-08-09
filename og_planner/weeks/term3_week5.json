@@ -1,0 +1,1594 @@
+{
+  "term": 3,
+  "week": 5,
+  "cohort": "Enrichment",
+  "unit_folder": "OG_Term3_Week5",
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "overview": {
+    "Monday": {
+      "morphology": [
+        "New Morphology",
+        "eco"
+      ],
+      "grammar": "Appositives",
+      "learned_words": [
+        "New learned word",
+        "species"
+      ]
+    },
+    "Tuesday": {
+      "morphology": [
+        "New Morphology",
+        "carn/carni"
+      ],
+      "grammar": "Appositives",
+      "learned_words": [
+        "Review learned words",
+        "species, seismograph"
+      ]
+    },
+    "Wednesday": {
+      "morphology": [
+        "New Morphology",
+        "junct/join/joint"
+      ],
+      "grammar": "Appositives",
+      "learned_words": [
+        "New learned word",
+        "stomach"
+      ]
+    },
+    "Thursday": {
+      "morphology": [
+        "Week Review",
+        "eco, carn, junct"
+      ],
+      "grammar": "Appositives - review",
+      "learned_words": [
+        "Review learned words",
+        "stomach, species"
+      ]
+    },
+    "Friday": {
+      "morphology": "No session this week",
+      "grammar": "No session this week",
+      "learned_words": "No session this week"
+    }
+  },
+  "sessions": [
+    {
+      "day": "Monday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality"
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating",
+          "extra_task": {
+            "prompt": "Give me one vore word, meaning eating.",
+            "answers": [
+              "herbivore",
+              "omnivore",
+              "insectivore",
+              "voracious"
+            ]
+          }
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where",
+          "extra_task": {
+            "prompt": "Give me one word that ends in -ery.",
+            "answers": [
+              "machinery",
+              "bravery",
+              "surgery",
+              "discovery"
+            ]
+          }
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million",
+          "extra_task": {
+            "prompt": "Give me one mega- word, meaning million.",
+            "answers": [
+              "megabyte",
+              "megawatt",
+              "megalitre",
+              "megapixel"
+            ]
+          }
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "microscope",
+          "candidacy",
+          "pictogram",
+          "assertive",
+          "voraciously",
+          "malnutrition",
+          "microplastic",
+          "globule",
+          "depiction",
+          "composite",
+          "insectivorous",
+          "captive",
+          "microsurgery",
+          "megapixel",
+          "pictured"
+        ],
+        "notes": "1. READ: \"If your first name starts with A to F, read row 1.\"\n2. READ: \"G to L, read row 2.\"\n3. READ: \"M to R, read row 3.\"\n4. READ: \"S to Z, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"Which three words use micro, meaning small?\" 5 sec, choral response. EXPECT: microscope, microplastic, microsurgery.\n7. ASK: \"pict means paint. Which three words carry it?\" 5 sec, turn and tell. EXPECT: pictogram, depiction, pictured.\n8. ASK: \"vore means eating. Which word names an animal that eats insects?\" 5 sec, choral response. EXPECT: insectivorous.\n9. ASK: \"Which word names the state of putting yourself forward for a job?\" 3 sec, choral response. EXPECT: candidacy.\n10. ASK: \"Which word names the tiny plastic pieces we found in the creek study?\" 3 sec, choral response. EXPECT: microplastic.\n11. ASK: \"Make globule plural.\" 3 sec, choral response. EXPECT: globules.\n12. ASK: \"Which word is an antonym of timid?\" 3 sec, choral response. EXPECT: assertive."
+      },
+      "sound_bank": [
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root"
+        },
+        {
+          "morph": "de-",
+          "type": "prefix"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ic",
+          "type": "suffix"
+        },
+        {
+          "morph": "-al",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "microbe",
+          "sentence": "Our science group grew one microbe on a jelly plate.",
+          "prompt": "Which part of microbe tells you it is too small to see?",
+          "answer": "The micro part. It means small, so a microbe is a tiny living thing."
+        },
+        {
+          "word": "diplomacy",
+          "sentence": "Our school captains used diplomacy to settle the yard argument.",
+          "prompt": "What does the -acy ending do to the word diplomat?",
+          "answer": "It turns it into a state or a skill. Diplomacy is settling things without a fight."
+        },
+        {
+          "word": "explosive",
+          "sentence": "The science teacher warned us that the powder was explosive.",
+          "prompt": "What does the -ive ending tell you about the powder?",
+          "answer": "It describes what the powder is like. Explosive means it can blow up."
+        },
+        {
+          "word": "depict",
+          "sentence": "Our mural will depict the wetland behind the school oval.",
+          "prompt": "Which part of depict means paint?",
+          "answer": "The pict part. To depict something is to paint it or show it."
+        },
+        {
+          "word": "microwave",
+          "sentence": "Dad heated the soup in the microwave before training.",
+          "prompt": "Why is a microwave called that?",
+          "answer": "Micro means small. It cooks with very small, very fast waves."
+        },
+        {
+          "word": "malfunction",
+          "sentence": "One laptop had a malfunction during the maths test.",
+          "prompt": "Which part of malfunction tells you something went wrong?",
+          "answer": "The mal- prefix. It means bad or wrong, so the laptop worked badly."
+        },
+        {
+          "word": "pictorial",
+          "sentence": "The museum gave us a pictorial guide to the goldfields.",
+          "prompt": "What does a pictorial guide use to explain things?",
+          "answer": "Pictures. Pict means paint and -al means relating to."
+        },
+        {
+          "word": "megabyte",
+          "sentence": "Each photo we took on camp was almost one megabyte.",
+          "prompt": "How big is a megabyte?",
+          "answer": "Mega- means million, so a megabyte is about a million bytes."
+        },
+        {
+          "word": "pictograph",
+          "sentence": "We drew a pictograph to show our class lunch orders.",
+          "prompt": "Which two parts build pictograph?",
+          "answer": "Pict means picture and graph means write or record, so it records with pictures."
+        },
+        {
+          "word": "microscopic",
+          "sentence": "The pond water held microscopic life we could not see.",
+          "prompt": "What does microscopic tell you about the life in that water?",
+          "answer": "It is far too small for your eyes. Micro means small."
+        }
+      ],
+      "new_morphology": {
+        "morph": "eco",
+        "type": "root",
+        "keyword": "ecosystem",
+        "meaning": "house"
+      },
+      "words_to_read_new": [
+        {
+          "word": "ecosystem",
+          "meaning": "eco means house + system means parts that work together: the natural house where every part works together"
+        },
+        {
+          "word": "ecology",
+          "meaning": "eco means house + -ology means the study of: the study of the natural house living things share"
+        },
+        {
+          "word": "ecologist",
+          "meaning": "eco means house + -ology means the study of + -ist means person who: the person who studies the natural house"
+        },
+        {
+          "word": "ecological",
+          "meaning": "eco means house + -ology means the study of + -ical means relating to: relating to the study of the natural house"
+        },
+        {
+          "word": "ecocide",
+          "meaning": "eco means house + -cide means killing: the killing of a whole natural house"
+        },
+        {
+          "word": "economic",
+          "meaning": "eco means house + nom means managing + -ic means having the nature of: having the nature of managing the house"
+        },
+        {
+          "word": "economical",
+          "meaning": "eco means house + nom means managing + -ical means relating to: relating to managing the house so nothing is wasted"
+        },
+        {
+          "word": "economist",
+          "meaning": "eco means house + nom means managing + -ist means person who: the person who studies how a country manages its house"
+        },
+        {
+          "word": "economise",
+          "meaning": "eco means house + nom means managing + -ise means to make: to make the house run on less"
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Learn eco once and you can read and spell a whole family of environment words you have never met.\"\nREAD each word as it appears, then connect eco to the card meaning: house.\necosystem - eco means house + system means parts that work together: the natural house where every living part works together.\necology - eco means house + -ology means the study of: the study of the natural house living things share.\necologist - eco means house + -ology means the study of + -ist means person who: the person who studies the natural house.\necological - eco means house + -ology means the study of + -ical means relating to: relating to the study of the natural house.\necocide - eco means house + -cide means killing: the killing of a whole natural house.\neconomic - eco means house + nom means managing + -ic means having the nature of: having the nature of managing the house, and a country is one very big house.\neconomical - eco means house + nom means managing + -ical means relating to: relating to managing the house so well that nothing is wasted.\neconomist - eco means house + nom means managing + -ist means person who: the person who studies how a country manages its house.\neconomise - eco means house + nom means managing + -ise means to make: to make the house run on less.\nMemory hook: eco is a house with no walls - a pond, a paddock, a reef is an address living things share. Challenge: list five living things at one eco address in our school yard by Friday.",
+      "words_to_spell_new": [
+        "ecosystem",
+        "ecology",
+        "ecological",
+        "economic"
+      ],
+      "extension": "1. SAY: \"When you finish, write one sentence that uses two eco words and shows what they mean.\"\n2. CHECK: the sentence must show the house meaning, not just use the word.\nEXTENSION: Predict what the unseen word ecosphere means from its parts, write its full morpheme sum, then check it against the card meaning house.\nThen use ecosphere in one sentence about our creek study.",
+      "new_morph_activity": {
+        "title": "Morpheme sums for eco",
+        "rule": "eco means house. Build the real word from each sum.",
+        "example": "One done for you:\nhouse + study of = ecology",
+        "items": [
+          "1. house + study of + person = ?    2. house + killing = ?",
+          "3. house + study of + relating to = ?    4. house + system = ?"
+        ],
+        "item_size": 17,
+        "routine": "Whiteboards - 3 min - boards up",
+        "footer": "Extension: build a four-part eco word",
+        "notes": "ANSWER: 1 ecologist, 2 ecocide, 3 ecological, 4 ecosystem.\n1. SAY: \"Look at the finished sum first. Then build one real eco word for each number and write it on your board.\"\n2. TIME: 3 minutes. Work alone on whiteboards.\n3. CIRCULATE: to a stuck student say, \"-ist is the ending that means person who - so who is the person who studies the natural house?\" Then build number one together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number three together, then re-ask.\nTRAP: writing ecology for number one. Fix: point at the word person, add the -ist ending, student rewrites it.\nEXTENSION: Build the four-part word that means in a way relating to the study of the natural house, then write its full sum.\nHELP: Give the word bank ecologist, ecocide, ecological, ecosystem; students match each word to its sum first.\n---\nPurpose: day one of eco builds words straight from the card meaning. [You Do | Morpheme sums | Morphology]\nANSWERS:\n1. house + study of + person = ecologist\n2. house + killing = ecocide\n3. house + study of + relating to = ecological\n4. house + system = ecosystem\nEXTENSION: ecologically = eco + -ology + -ical + -ly, in a way relating to the study of the natural house.",
+        "check_title": "Tick it or fix it - Morpheme sums for eco",
+        "check_rule": "Tick each correct word. Fix any word that does not match.",
+        "check_items": [
+          "1. house + study of + person = ecologist",
+          "2. house + killing = ecocide (a home destroyed)",
+          "3. house + study of + relating to = ecological",
+          "4. house + system = ecosystem (all parts joined)"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Every answer begins with eco = house",
+        "check_notes": "ANSWER: 1 ecologist, 2 ecocide, 3 ecological, 4 ecosystem.\n1. MODEL: \"Number one says house plus study of plus person. Eco is house, -ology is the study of, -ist is the person, so it is ecologist.\"\n2. SAY: \"Now tick each word that matches. Fix any word that is different.\"\n3. ASK: \"Which of these four words changes meaning if you drop the eco?\" 10 sec, turn and tell. EXPECT: all of them - without eco there is no natural house left in the word.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number three together, then re-check.\nTRAP: ticking a word that is spelled wrong. Fix: read the green word chunk by chunk, then rewrite it.\nEXTENSION: Predict what ecotourism will mean before we meet it.\nHELP: read the green answer first, then match it back to its sum.\n---\nPurpose: protected reveal so every student hears how each eco word is built. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "seismograph",
+            "unfair": "ei",
+            "notes": "Why learned: ei says long i here, not the usual /ee/, because the seis part came straight from Greek.\nSay it: SIZE-muh-graf, three beats. Tap them, then write seis - mo - graph.\nQuick link: graph means write or record, the same graph as pictograph, so only the seis part is unfair."
+          },
+          {
+            "word": "camouflage",
+            "unfair": "ou",
+            "notes": "Why learned: the ou says a plain /uh/ and the French -age ending says /ahzh/, not the /ij/ of village.\nSay it: KAM-uh-flahzh, three beats. Write cam - ou - flage in three chunks.\nQuick link: the colours and patterns that hide an animal inside its own ecosystem."
+          }
+        ],
+        "new": {
+          "word": "species",
+          "unfair": "ci",
+          "notes": "Why learned: the ci says /sh/, which c and i almost never do together, and the final es says /eez/.\nSay it: SPEE-sheez, two beats. Say spee, then sheez, and write spe - cies in two chunks.\nLink: a species is one kind of living thing, so an ecosystem is built out of the species inside it.\nYou will write this word in every science report about living things this term."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Our class studied one new species in the school pond ecosystem.",
+          "targets": [
+            "species",
+            "ecosystem"
+          ],
+          "cups": {
+            "capitals": [
+              "Our"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "one clause with no extra commas; the new red word species and today's root eco"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Mr Lee, our science teacher, said that every species depends on the pond ecosystem.",
+          "targets": [
+            "species",
+            "ecosystem"
+          ],
+          "cups": {
+            "capitals": [
+              "Mr",
+              "Lee"
+            ],
+            "punctuation": [
+              "comma before the appositive (it opens the extra words that rename Mr Lee)",
+              "comma after the appositive (it closes those extra words before the sentence goes on)",
+              "full stop"
+            ]
+          },
+          "focus": "an appositive held inside two commas; species and ecosystem"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Name the appositive and teach the cover test that finds it.\nWHY THIS WEEK: students write two short sentences where one would do, so the reader loses the thread.\nPREP: OG books open before the I do. All grammar this week is written in the OG book.",
+        "i_do": {
+          "title": "What is an appositive?",
+          "rule": "An appositive renames the noun beside it, inside two commas.",
+          "example": "Mia, our team captain, scored first.\nour team captain = renames Mia",
+          "items": [
+            "A noun is a naming word: Mia, captain, pond, teacher.",
+            "Test: cover the extra words and read it again."
+          ],
+          "routine": "Eyes on me - watch the commas",
+          "footer": "Tomorrow: where do the commas go?",
+          "notes": "ANSWER: our team captain renames Mia.\n1. SAY: \"An appositive is a few extra words that rename the noun beside them, so you can tell your reader who someone is without stopping to write a second sentence.\"\n2. MODEL: point at Mia. SAY: \"Mia is the naming word. Straight after it, our team captain says who Mia is.\"\n3. MODEL: cover the extra words. SAY: \"Mia scored first still works, so those words are extra - that is why commas hold them in.\"\n4. ASK: \"What job do the two commas do?\" 5 sec, choral response. EXPECT: they hold the extra words in.\nTRAP: thinking the appositive is the person doing the action. Fix: cover it, read the sentence, then name the noun again.\n---\nPurpose: day one names the appositive and models the cover test. [I Do | Explicit modelling | Grammar | HITS 3]"
+        },
+        "we_do": {
+          "title": "Find the appositive",
+          "rule": "An appositive renames the noun beside it, inside two commas.",
+          "example": "Our dog, a noisy kelpie, waits at the gate.",
+          "items": [
+            "Write the words that rename Our dog.",
+            "Prove it: cover them and read the sentence again."
+          ],
+          "routine": "OG books - write it - pens down",
+          "footer": "Stem: It renames ... because ...",
+          "notes": "ANSWER: a noisy kelpie renames Our dog.\n1. SAY: \"Write the words that rename Our dog. Just those words, nothing else.\"\n2. TIME: 20 seconds in your OG book, then pens down and books up.\n3. SCAN the back row's books first. 80%+ -> take the reason. Less -> cover the words together, re-read, then re-ask.\n4. ASK: \"How do you know a noisy kelpie is the appositive?\" 5 sec, cold call two students. EXPECT: it renames Our dog and the sentence still works without it.\nTRAP: writing the whole sentence out. Fix: point at the two commas, take only what sits between them, student rewrites it.\n---\nPurpose: guided use of the cover test on one clear model. [We Do | Guided practice | Grammar | HITS 7]"
+        },
+        "you_do": {
+          "title": "Appositive - your turn",
+          "rule": "Your turn: write the appositive from each sentence.",
+          "example": "One done for you:\nSam, my little brother, lost a boot.\nAppositive: my little brother",
+          "items": [
+            "A) Rosa, our captain, cheered loudly.",
+            "B) Our ute, a rusty truck, stalled."
+          ],
+          "item_size": 17,
+          "routine": "OG books - 90 sec - pens down",
+          "footer": "Check: does it say who or what?",
+          "notes": "ANSWER: A - our captain. B - a rusty truck.\n1. SAY: \"Look at the finished one first. Then write just the appositive for A and for B.\"\n2. TIME: 90 seconds in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"read only the words between the two commas - do they say WHO Rosa is?\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> cover B's extra words together, then re-check.\nTRAP: including the noun itself. Fix: point at the first comma, start after it, student rewrites the answer.\nEXTENSION: Write one sentence about our class with an appositive, then rewrite it as two separate sentences and say which version a reader prefers.\nHELP: Give the two answers our captain and a rusty truck; students match each to A or B first.\n---\nPurpose: independent use of the cover test; tomorrow punctuates it. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) Rosa, our captain, cheered loudly. Appositive: our captain\nB) Our ute, a rusty truck, stalled. Appositive: a rusty truck\nEXTENSION: e.g. Ari, our class gardener, waters the beds. Two sentences: Ari waters the beds. Ari is our class gardener. The appositive version is shorter and keeps the flow.",
+          "check_title": "Tick it or fix it - Appositive",
+          "check_rule": "Tick each correct appositive. Fix any that does not match.",
+          "check_items": [
+            "A) Rosa, our captain, cheered loudly. = our captain",
+            "Cover it and Rosa cheered loudly still works.",
+            "B) Our ute, a rusty truck, stalled. = a rusty truck",
+            "Cover it and Our ute stalled still works."
+          ],
+          "check_item_size": 17,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: say who they are.",
+          "check_notes": "ANSWER: A - our captain. B - a rusty truck.\n1. MODEL: \"In A I cover our captain. Rosa cheered loudly still works, so those words are the appositive.\"\n2. SAY: \"Now tick each answer that matches. Fix any answer that is different.\"\n3. ASK: \"Why do the commas have to come in a pair?\" 10 sec, turn and tell. EXPECT: one opens the extra words and one closes them.\n4. SCAN corrections. 80%+ -> continue. Less -> cover B together, then re-check.\n5. SAY: \"When you edit your next draft, find a name your reader might not know and add commas with a few words that say who they are.\"\nTRAP: ticking an answer that keeps the noun in. Fix: read from after the first comma, then correct it.\n---\nPurpose: the answer slide shows how the cover test decides each one. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small",
+          "extra_task": {
+            "prompt": "Give me one word that ends in -ule, meaning small.",
+            "answers": [
+              "nodule",
+              "capsule",
+              "granule",
+              "molecule"
+            ]
+          }
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state"
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house",
+          "extra_task": {
+            "prompt": "Give me one eco word, meaning house.",
+            "answers": [
+              "ecosystem",
+              "ecology",
+              "ecologist",
+              "ecological"
+            ]
+          }
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality",
+          "extra_task": {
+            "prompt": "Give me one word that ends in -ice.",
+            "answers": [
+              "service",
+              "notice",
+              "novice",
+              "apprentice"
+            ]
+          }
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like"
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "microcosm",
+          "advocacy",
+          "herbivore",
+          "granite",
+          "ecosystem",
+          "picturesque",
+          "minuscule",
+          "primitive",
+          "microhabitat",
+          "mockery",
+          "ecologist",
+          "megaton",
+          "omnivorous",
+          "subordinate",
+          "pictography"
+        ],
+        "notes": "1. READ: \"Summer birthdays, read row 1.\"\n2. READ: \"Autumn birthdays, read row 2.\"\n3. READ: \"Winter birthdays, read row 3.\"\n4. READ: \"Spring birthdays, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"Which two words use eco, meaning house?\" 5 sec, choral response. EXPECT: ecosystem, ecologist.\n7. ASK: \"vore means eating. Which two words carry it?\" 5 sec, choral response. EXPECT: herbivore, omnivorous.\n8. ASK: \"-ule means small, so which word means extremely small?\" 5 sec, turn and tell. EXPECT: minuscule.\n9. ASK: \"Which word names an animal that eats only plants?\" 3 sec, choral response. EXPECT: herbivore.\n10. ASK: \"Which word is an antonym of modern?\" 3 sec, choral response. EXPECT: primitive.\n11. ASK: \"Make microcosm plural.\" 3 sec, choral response. EXPECT: microcosms.\n12. ASK: \"Which word might you hear on a camp walk about rocks?\" 3 sec, choral response. EXPECT: granite."
+      },
+      "sound_bank": [
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "dis-",
+          "type": "prefix"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ous",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ation",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "microsecond",
+          "sentence": "The timing gate measured her start to the nearest microsecond.",
+          "prompt": "How long is a microsecond?",
+          "answer": "Almost nothing. Micro means small, so it is one millionth of a second."
+        },
+        {
+          "word": "nodule",
+          "sentence": "The vet found a small nodule on the dog's back leg.",
+          "prompt": "How big is a nodule?",
+          "answer": "Small. The -ule ending means small, so a nodule is a small lump."
+        },
+        {
+          "word": "ecology",
+          "sentence": "Our unit on the creek is really a study of its ecology.",
+          "prompt": "Which part of ecology means the study of?",
+          "answer": "The -ology ending. Eco means house, so ecology studies the natural home."
+        },
+        {
+          "word": "sensitive",
+          "sentence": "My little sister is sensitive to loud noise at assembly.",
+          "prompt": "What does the -ive ending tell you about my sister?",
+          "answer": "It describes what she is like. She feels loud noise very strongly."
+        },
+        {
+          "word": "depicted",
+          "sentence": "The mural depicted our creek before the town was built.",
+          "prompt": "Which part of depicted means paint?",
+          "answer": "The pict part, and the -ed ending puts it in the past."
+        },
+        {
+          "word": "megalitre",
+          "sentence": "The reservoir beside the camp holds one megalitre of water.",
+          "prompt": "How much water is a megalitre?",
+          "answer": "A million litres. Mega- means million."
+        },
+        {
+          "word": "disorder",
+          "sentence": "The wind left the sports shed in complete disorder.",
+          "prompt": "Which part of disorder tells you the order has come apart?",
+          "answer": "The dis- prefix. It means apart, so the order has been pulled apart."
+        },
+        {
+          "word": "microbial",
+          "sentence": "The lab report showed microbial growth in the fish tank.",
+          "prompt": "What kind of life is microbial life?",
+          "answer": "Life far too small to see. Micro means small."
+        },
+        {
+          "word": "economist",
+          "sentence": "An economist came to explain how shop prices are set.",
+          "prompt": "Which part of economist tells you it names a person?",
+          "answer": "The -ist ending. Eco means house, so it is a person who studies how a country runs its house."
+        },
+        {
+          "word": "voracious",
+          "sentence": "The chicks had a voracious hunger by the second week.",
+          "prompt": "What does voracious tell you about the chicks?",
+          "answer": "They eat enormously. The vore part means eating."
+        }
+      ],
+      "new_morphology": {
+        "morph": "carn/carni",
+        "type": "root",
+        "keyword": "carnivore",
+        "meaning": "flesh, meat"
+      },
+      "words_to_read_new": [
+        {
+          "word": "carnivore",
+          "meaning": "carn means flesh + vore means eating: an animal that eats flesh"
+        },
+        {
+          "word": "carnivorous",
+          "meaning": "carn means flesh + vore means eating + -ous means full of: describes a meat eater"
+        },
+        {
+          "word": "carnage",
+          "meaning": "carn means flesh + -age means the result of: the result left when flesh is torn"
+        },
+        {
+          "word": "carnival",
+          "meaning": "carn means flesh + val means farewell: the old farewell to meat, now a street party"
+        },
+        {
+          "word": "carnation",
+          "meaning": "carn means flesh + -ation means the state of: the flower named for its flesh-pink colour"
+        },
+        {
+          "word": "carnelian",
+          "meaning": "carn means flesh + -ian names the kind: a stone the colour of flesh"
+        },
+        {
+          "word": "incarnate",
+          "meaning": "in- means into + carn means flesh + -ate means to make: made into flesh"
+        },
+        {
+          "word": "incarnation",
+          "meaning": "in- means into + carn means flesh + -ation means the state of: the state of being made into flesh"
+        },
+        {
+          "word": "reincarnate",
+          "meaning": "re- means again + in- means into + carn means flesh + -ate means to make: to be made into flesh again"
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Learn carn once and every meat word in science, history and even the garden opens up for you.\"\nREAD each word as it appears, then connect carn to the card meaning: flesh, meat.\ncarnivore - carn means flesh + vore means eating: an animal that eats flesh. You met vore on Friday - here is the other half.\ncarnivorous - carn means flesh + vore means eating + -ous means full of: full of flesh-eating habits, so it describes a meat eater.\ncarnage - carn means flesh + -age means the result of: the result left when flesh is torn, so a scene of terrible destruction.\ncarnival - carn means flesh + val means farewell: the old farewell to meat before a season without it, and now a street party.\ncarnation - carn means flesh + -ation means the state of: the flower named for its flesh-pink colour.\ncarnelian - carn means flesh + -ian names the kind: a stone the colour of flesh, a deep orange red.\nincarnate - in- means into + carn means flesh + -ate means to make: made into flesh, given a body you can see.\nincarnation - in- means into + carn means flesh + -ation means the state of: the state of being made into flesh, one life in one body.\nreincarnate - re- means again + in- means into + carn means flesh + -ate means to make: to be made into flesh again in a new body.\nMemory hook: carn is the butcher's window - if carn is in the word, picture meat or the pink of flesh. Challenge: find one carn word on a menu, one in a garden and one in a museum by Friday.",
+      "words_to_spell_new": [
+        "carnivore",
+        "carnivorous",
+        "carnation",
+        "incarnation"
+      ],
+      "extension": "1. SAY: \"When you finish, write the meaning of one spelling word in your own words, using the word flesh or meat.\"\n2. CHECK: the meaning must use the root, not just describe the animal.\nEXTENSION: Predict what the unseen word carnivory means from its parts, write its full morpheme sum, then use it in one sentence about a food web.\nA morpheme sum names every part and what each part means.",
+      "new_morph_activity": {
+        "title": "Literal meanings for carn",
+        "rule": "carn means flesh or meat. Write the sum beside each word.",
+        "example": "One done for you:\ncarnage = carn (flesh) + -age (result)",
+        "items": [
+          "1. carnivorous = ?    2. incarnate = ?",
+          "3. carnation = ?    4. reincarnate = ?"
+        ],
+        "item_size": 17,
+        "routine": "OG books - 3 min - books up",
+        "footer": "Extension: predict carnivory",
+        "notes": "ANSWER: 1 carn + vore + -ous, 2 in- + carn + -ate, 3 carn + -ation, 4 re- + in- + carn + -ate.\n1. SAY: \"Look at the finished sum first. Then write the parts of each word and what each part means.\"\n2. TIME: 3 minutes in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"cover carn with your thumb - what is left over, and have we met it before?\" Then do number one together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> break number four apart together, then re-ask.\nTRAP: writing only carn and stopping. Fix: point at the letters after carn, name that part, student adds it.\nEXTENSION: Write the full sum for reincarnation, the longest word in the family, then say what each extra part adds.\nHELP: Give the parts vore, -ous, in-, -ate, -ation, re- on the board; students match parts to words first.\n---\nPurpose: day one of carn pulls each word apart into parts that carry meaning. [You Do | Literal meanings | Morphology]\nANSWERS:\n1. carnivorous = carn (flesh) + vore (eating) + -ous (full of)\n2. incarnate = in- (into) + carn (flesh) + -ate (to make)\n3. carnation = carn (flesh) + -ation (state of), the flesh-pink flower\n4. reincarnate = re- (again) + in- (into) + carn (flesh) + -ate (to make)\nEXTENSION: reincarnation = re- (again) + in- (into) + carn (flesh) + -ation (state of).",
+        "check_title": "Tick it or fix it - Literal meanings for carn",
+        "check_rule": "Tick each correct sum. Fix any sum that is missing a part.",
+        "check_items": [
+          "1. carnivorous = carn + vore eating + -ous full of",
+          "2. incarnate = in- into + carn + -ate to make",
+          "3. carnation = carn + -ation state of, flesh-pink",
+          "4. reincarnate = re- again + in- into + carn + -ate"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Every sum starts with carn = flesh",
+        "check_notes": "ANSWER: 1 carn + vore + -ous, 2 in- + carn + -ate, 3 carn + -ation, 4 re- + in- + carn + -ate.\n1. MODEL: \"For number one I cover carn. Vore is left, meaning eating, then -ous meaning full of. So carnivorous is full of flesh-eating.\"\n2. SAY: \"Now tick each sum that matches. Fix any sum that is missing a part.\"\n3. ASK: \"Which word here would still make sense with a different root in place of carn?\" 10 sec, turn and tell. EXPECT: incarnate or reincarnate - in- and -ate work with many roots.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number four together, then re-check.\nTRAP: ticking a sum that leaves out a part. Fix: count the parts against the green line, then rewrite it.\nEXTENSION: Predict what carnivora will mean before we meet it.\nHELP: read the green sum first, then find each part inside the printed word.\n---\nPurpose: protected reveal so every student hears how a word breaks into parts. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "species",
+            "unfair": "ci",
+            "notes": "Why learned: the ci says /sh/, which those two letters almost never do, and the final es says /eez/.\nSay it: SPEE-sheez, two beats. Chin it back to me, then write spe - cies in two chunks.\nQuick link: the same word for one and for many - one species, ten species, never speciess."
+          },
+          {
+            "word": "seismograph",
+            "unfair": "ei",
+            "notes": "Why learned: ei says long i here, not the usual /ee/, because the seis part came straight from Greek.\nSay it: SIZE-muh-graf, three beats. Write seis - mo - graph, three chunks.\nQuick link: graph means write or record, so only the seis part has to be memorised."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The carnivore in that food web hunts one small species.",
+          "targets": [
+            "carnivore",
+            "species"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "one clause, no extra commas; today's root carn and the red word species"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Zara, our camp leader, warned us that a carnivore had crossed the ecosystem at dawn.",
+          "targets": [
+            "carnivore",
+            "ecosystem"
+          ],
+          "cups": {
+            "capitals": [
+              "Zara"
+            ],
+            "punctuation": [
+              "comma before the appositive (it opens the extra words that rename Zara)",
+              "comma after the appositive (it closes those extra words before the sentence goes on)",
+              "full stop"
+            ]
+          },
+          "focus": "an appositive held inside two commas; carnivore and ecosystem"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Punctuate the appositive - one comma opens it and one comma closes it.\nWHY THIS WEEK: a missing comma makes the reader stumble and reread.\nPREP: OG books open. All grammar this week is written in the OG book.",
+        "i_do": {
+          "title": "Two commas, one job",
+          "rule": "An appositive renames the noun beside it, inside two commas.",
+          "example": "Our teacher, Mr Lee, marked the books.\none comma opens, one comma closes",
+          "items": [
+            "Cover Mr Lee - Our teacher marked the books still works.",
+            "Miss one comma and the reader trips over the sentence."
+          ],
+          "routine": "Thumbs verdicts - voices off",
+          "footer": "Stem: The commas go before and after ...",
+          "notes": "ANSWER: the commas go before and after Mr Lee.\n1. SAY: \"An appositive renames the noun beside it, and it needs a pair of commas so your reader knows exactly where the extra words start and stop.\"\n2. MODEL: point at the first comma. SAY: \"This one opens the extra words. Mr Lee tells us who our teacher is.\"\n3. MODEL: point at the second comma. SAY: \"This one closes them, and the sentence carries on: marked the books.\"\n4. ASK: \"How many commas does one appositive need?\" 5 sec, choral response. EXPECT: two, a pair.\nTRAP: writing only the first comma. Fix: read aloud to the end, hear where the extra words stop, add the second comma.\n---\nPurpose: restates yesterday's rule, then teaches the comma pair. [I Do | Explicit modelling | Grammar | HITS 3]"
+        },
+        "we_do": {
+          "title": "Comma or no comma?",
+          "rule": "An appositive renames the noun beside it, inside two commas.",
+          "example": "A) My aunt, Sara Chen builds bridges.\nB) My aunt, Sara Chen, builds bridges.",
+          "items": [
+            "Which one punctuates the appositive correctly?",
+            "Prove it: cover Sara Chen and read it again."
+          ],
+          "routine": "Thumbs - A or B - on three",
+          "footer": "Stem: B is right because ...",
+          "notes": "ANSWER: B. It has both commas, so the extra words are opened and closed.\n1. SAY: \"One of these punctuates the appositive properly. Decide which, then thumbs on three.\"\n2. TIME: 15 seconds thinking, voices off, then everyone, together, on three.\n3. SCAN every thumb. 80%+ -> take the reason. Less -> read A aloud to the end so they hear it never closes, then re-ask.\n4. ASK: \"What is wrong with A?\" 5 sec, cold call two students. EXPECT: it opens the extra words but never closes them.\nTRAP: choosing A because it looks shorter. Fix: count the commas in each, then vote again.\n---\nPurpose: guided judgement on a matched pair. [We Do | Guided practice | Grammar | HITS 7]"
+        },
+        "you_do": {
+          "title": "Add the missing commas",
+          "rule": "Your turn: copy each sentence and add the two commas.",
+          "example": "One done for you:\nOur dog Bluey chased the ball.\nOur dog, Bluey, chased the ball.",
+          "items": [
+            "A) Our school Diamond Creek East won the relay.",
+            "B) The tall bird an emu crossed the road."
+          ],
+          "item_size": 17,
+          "routine": "OG books - 90 sec - pens down",
+          "footer": "Check: did you write both commas?",
+          "notes": "ANSWER: A - commas around Diamond Creek East. B - commas around an emu.\n1. SAY: \"Look at the finished one first. Then copy A and B and put in the two commas.\"\n2. TIME: 90 seconds in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"which words tell you WHICH school it is? Put one comma in front of them and one behind.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> read B aloud together and mark where the voice pauses, then re-check.\nTRAP: writing only the opening comma. Fix: read to the end of the extra words, hear the stop, add the closing comma.\nEXTENSION: Rewrite B so the appositive names the bird first and the emu becomes the noun, then repunctuate it.\nHELP: Give the two appositives Diamond Creek East and an emu; students box them in the sentence before adding commas.\n---\nPurpose: independent punctuation of the appositive; tomorrow adds one from scratch. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) Our school, Diamond Creek East, won the relay.\nB) The tall bird, an emu, crossed the road.\nEXTENSION: An emu, the tall bird, crossed the road.",
+          "check_title": "Tick it or fix it - Add the missing commas",
+          "check_rule": "Tick each correct sentence. Fix any sentence missing a comma.",
+          "check_items": [
+            "A) Our school, Diamond Creek East, won the relay.",
+            "The name renames school, so two commas hold it in.",
+            "B) The tall bird, an emu, crossed the road.",
+            "Cover an emu and The tall bird crossed the road works."
+          ],
+          "check_item_size": 17,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: comma in, comma out.",
+          "check_notes": "ANSWER: A - commas around Diamond Creek East. B - commas around an emu.\n1. MODEL: \"In A the name tells us which school, so I open with a comma before it and close with a comma after it.\"\n2. SAY: \"Now tick each sentence that matches. Fix any sentence that is missing a comma.\"\n3. ASK: \"In B, why can the commas not go around The tall bird instead?\" 10 sec, turn and tell. EXPECT: The tall bird is the noun, and an emu is the part that renames it.\n4. SCAN corrections. 80%+ -> continue. Less -> mark the pauses in B together, then re-check.\n5. SAY: \"In your next draft, read any sentence with extra naming words aloud and check both commas are there.\"\nTRAP: ticking a sentence with one comma. Fix: count the commas, then correct it.\n---\nPurpose: the answer slide shows where each comma belongs and why. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Wednesday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat",
+          "extra_task": {
+            "prompt": "Give me one carn word, meaning flesh or meat.",
+            "answers": [
+              "carnivore",
+              "carnival",
+              "carnation",
+              "carnage"
+            ]
+          }
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state",
+          "extra_task": {
+            "prompt": "Give me one word that ends in -acy.",
+            "answers": [
+              "literacy",
+              "privacy",
+              "accuracy",
+              "supremacy"
+            ]
+          }
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint",
+          "extra_task": {
+            "prompt": "Give me one pict word, meaning paint.",
+            "answers": [
+              "picture",
+              "pictograph",
+              "depict",
+              "pictorial"
+            ]
+          }
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "microgram",
+          "negative",
+          "carnivore",
+          "capsule",
+          "picture",
+          "exclude",
+          "insectivore",
+          "numeracy",
+          "ecological",
+          "dynamite",
+          "micrometer",
+          "bravery",
+          "devour",
+          "megajoule",
+          "pictographic"
+        ],
+        "notes": "1. READ: \"If you walk or ride to school, read row 1.\"\n2. READ: \"If you come by car, read row 2.\"\n3. READ: \"If you come by bus, read row 3.\"\n4. READ: \"If your trip changes from day to day, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"Which two words carry carn or eco, this week's roots?\" 5 sec, choral response. EXPECT: carnivore, ecological.\n7. ASSIGN: one student picks a wheel category for points - Rhyming 2, Meaning 2, Synonym 3, Antonym 3, Analogy 5.\n8. ASK: \"Which word rhymes with hour?\" 3 sec, choral response. EXPECT: devour.\n9. ASK: \"Which word is an antonym of exclude?\" 3 sec, choral response. EXPECT: include.\n10. ASK: \"Which word is a synonym for courage?\" 3 sec, choral response. EXPECT: bravery.\n11. ASK: \"vore means eating, so which word names an animal that eats insects?\" 3 sec, choral response. EXPECT: insectivore.\n12. ASK: \"Make capsule plural.\" 3 sec, choral response. EXPECT: capsules.\n13. COLLECT: keep the running score on the board and let the next student pick."
+      },
+      "sound_bank": [
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "dis-",
+          "type": "prefix"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-tion / -sion",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ly",
+          "type": "suffix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "micron",
+          "sentence": "The pool filter traps grit down to one micron across.",
+          "prompt": "How wide is a micron?",
+          "answer": "Tiny. Micro means small, so a micron is one millionth of a metre."
+        },
+        {
+          "word": "supremacy",
+          "sentence": "Our house held supremacy on the athletics track all day.",
+          "prompt": "What state is a house in when it holds supremacy?",
+          "answer": "The state of being above everyone else. The -acy ending names that state."
+        },
+        {
+          "word": "carnage",
+          "sentence": "The storm left carnage right across the fruit trees.",
+          "prompt": "Which part of carnage means flesh or meat?",
+          "answer": "The carn part, and -age means the result, so carnage is what is left torn up."
+        },
+        {
+          "word": "microfilm",
+          "sentence": "The library keeps its oldest newspapers on microfilm.",
+          "prompt": "Why is it called microfilm?",
+          "answer": "Micro means small. Whole pages are shrunk onto tiny film."
+        },
+        {
+          "word": "appetite",
+          "sentence": "A long swim always gives me an appetite for lunch.",
+          "prompt": "What does appetite mean here?",
+          "answer": "A strong wish to eat. It is the hunger you feel before food."
+        },
+        {
+          "word": "pictogram",
+          "sentence": "We drew a pictogram of the rubbish we collected.",
+          "prompt": "Which part of pictogram means picture?",
+          "answer": "The pict part, and gram means something written or drawn."
+        },
+        {
+          "word": "economise",
+          "sentence": "Our camp had to economise on water in the last week.",
+          "prompt": "Which part of economise goes back to the word house?",
+          "answer": "The eco part. It first meant running a household carefully."
+        },
+        {
+          "word": "molecule",
+          "sentence": "One molecule of water holds three atoms.",
+          "prompt": "How big is a molecule?",
+          "answer": "Very small. The -ule ending means small."
+        },
+        {
+          "word": "malformation",
+          "sentence": "The vet found a malformation in the puppy's front paw.",
+          "prompt": "Which part of malformation tells you something went wrong?",
+          "answer": "The mal- prefix. It means bad or wrong, so the paw formed incorrectly."
+        },
+        {
+          "word": "herbivorous",
+          "sentence": "Kangaroos are herbivorous, so they eat only plants.",
+          "prompt": "Which part of herbivorous means eating?",
+          "answer": "The vore part, and herb means plant, so it eats plants."
+        }
+      ],
+      "new_morphology": {
+        "morph": "junct/join/joint",
+        "type": "root",
+        "keyword": "join",
+        "meaning": "join"
+      },
+      "words_to_read_new": [
+        {
+          "word": "join",
+          "meaning": "join is the root on its own: to put two things together"
+        },
+        {
+          "word": "joint",
+          "meaning": "joint is the root with a t on the end: the place where two parts join"
+        },
+        {
+          "word": "jointly",
+          "meaning": "joint means the place where two join + -ly means in that way: done by two together"
+        },
+        {
+          "word": "junction",
+          "meaning": "junct means join + -tion means the act of: the place where two roads join"
+        },
+        {
+          "word": "juncture",
+          "meaning": "junct means join + -ure means the state of: the point where two moments join"
+        },
+        {
+          "word": "conjoin",
+          "meaning": "con- means together + join means join: to join two things into one"
+        },
+        {
+          "word": "conjunction",
+          "meaning": "con- means together + junct means join + -tion means the act of: the word that joins two parts of a sentence"
+        },
+        {
+          "word": "conjunctive",
+          "meaning": "con- means together + junct means join + -ive means relating to: relating to joining two things"
+        },
+        {
+          "word": "enjoin",
+          "meaning": "en- means on + join means join: to join an order onto someone"
+        },
+        {
+          "word": "injunction",
+          "meaning": "in- means onto + junct means join + -tion means the act of: a court order joined onto you to make you stop"
+        },
+        {
+          "word": "disjointed",
+          "meaning": "dis- means apart + joint means the place where two join + -ed means past tense: pulled apart at the joins"
+        },
+        {
+          "word": "rejoinder",
+          "meaning": "re- means back + join means join + -der names the thing: the reply you join straight back on"
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Learn junct once and roads, bones, sentences and court orders all start using the same word part.\"\nREAD each word as it appears, then connect junct to the card meaning: join.\njoin - join is the root on its own: to put two things together.\njoint - joint is the root with a t on the end: the place where two parts join, like your knee.\njointly - joint means the place where two join + -ly means in that way: done by two people together.\njunction - junct means join + -tion means the act of: the place where two roads join.\njuncture - junct means join + -ure means the state of: the point where two moments join, the moment that decides what happens next.\nconjoin - con- means together + join means join: to join two things into one.\nconjunction - con- means together + junct means join + -tion means the act of: the word that joins two parts of a sentence together.\nconjunctive - con- means together + junct means join + -ive means relating to: relating to joining two things together.\nenjoin - en- means on + join means join: to join an order onto someone, telling them they must do it.\ninjunction - in- means onto + junct means join + -tion means the act of: a court order joined onto you to make you stop.\ndisjointed - dis- means apart + joint means the place where two join + -ed means past tense: pulled apart at the joins, so nothing flows.\nrejoinder - re- means back + join means join + -der names the thing: the reply you join straight back onto what someone said.\nMemory hook: junct is the T-intersection - two roads, two bones, two clauses meeting at one point. Challenge: count three junctions on the walk home and name what joins at each one.",
+      "words_to_spell_new": [
+        "junction",
+        "conjunction",
+        "jointly",
+        "disjointed"
+      ],
+      "extension": "1. SAY: \"When you finish, turn one spelling word into a question you could ask a partner.\"\n2. CHECK: the question must show the join meaning, not just use the word.\nEXTENSION: Add a taught prefix or suffix to junct and build a real word we have not used today, then write its full morpheme sum and meaning.\nThen use your new word in one sentence about a road or about a sentence.",
+      "new_morph_activity": {
+        "title": "Build the junct words",
+        "rule": "junct and join mean join. Build each real word.",
+        "example": "One done for you:\ncon- + junct + -tion = conjunction",
+        "items": [
+          "1. junct + -tion = ?    2. dis- + joint + -ed = ?",
+          "3. joint + -ly = ?    4. in- + junct + -tion = ?"
+        ],
+        "item_size": 17,
+        "routine": "Whiteboards - 3 min - boards up",
+        "footer": "Extension: build a fifth junct word",
+        "notes": "ANSWER: 1 junction, 2 disjointed, 3 jointly, 4 injunction.\n1. SAY: \"Look at the finished build first. Then write each real word on your board, spelled correctly.\"\n2. TIME: 3 minutes. Write it... chin it... show me on my cue.\n3. CIRCULATE: to a stuck student say, \"-tion is the ending that means the act of - so what do we call the spot where two roads do the joining?\" Then build number one together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number four together, then re-ask.\nTRAP: writing junctshun. Fix: point at the -tion card in the sound bank, say it, student rewrites the ending.\nEXTENSION: Build the longest junct word you can from taught parts, then write its full sum.\nHELP: Give the word bank junction, disjointed, jointly, injunction; students match each word to its build first.\n---\nPurpose: day one of junct builds words from real morpheme spellings. [You Do | Word building | Morphology]\nANSWERS:\n1. junct + -tion = junction\n2. dis- + joint + -ed = disjointed\n3. joint + -ly = jointly\n4. in- + junct + -tion = injunction\nEXTENSION: e.g. conjunctive = con- + junct + -ive, relating to joining two things together.",
+        "check_title": "Tick it or fix it - Build the junct words",
+        "check_rule": "Tick each correct word. Fix any that is spelled differently.",
+        "check_items": [
+          "1. junct + -tion = junction (where two roads join)",
+          "2. dis- + joint + -ed = disjointed (pulled apart)",
+          "3. joint + -ly = jointly (done by two together)",
+          "4. in- + junct + -tion = injunction (an order to stop)"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Every word here has join inside it",
+        "check_notes": "ANSWER: 1 junction, 2 disjointed, 3 jointly, 4 injunction.\n1. MODEL: \"Number one is junct plus -tion. Junct means join and -tion means the act of, so junction is where the joining happens.\"\n2. SAY: \"Now tick each word that matches. Fix any word that is spelled differently.\"\n3. ASK: \"Which of these words would change meaning most if you took the prefix off?\" 10 sec, turn and tell. EXPECT: disjointed - without dis- it means joined instead of pulled apart.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number four together, then re-check.\nTRAP: ticking junction spelled with sh. Fix: read the green word chunk by chunk, then rewrite it.\nEXTENSION: Predict what adjunctive will mean before we meet it.\nHELP: read the green word first, then find junct or joint inside it.\n---\nPurpose: protected reveal so every student hears how each junct word is built. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "species",
+            "unfair": "ci",
+            "notes": "Why learned: the ci says /sh/, and the final es says /eez/, so nothing after spe is spelled the way it sounds.\nSay it: SPEE-sheez, two beats. Write spe - cies, then check the ci is not sh.\nQuick link: one species, ten species - the word never takes an extra s."
+          },
+          {
+            "word": "seismograph",
+            "unfair": "ei",
+            "notes": "Why learned: ei says long i here instead of the usual /ee/, because seis came straight from Greek.\nSay it: SIZE-muh-graf, three beats. Write seis - mo - graph.\nQuick link: the joint between two plates slips, and the seismograph records it."
+          }
+        ],
+        "new": {
+          "word": "stomach",
+          "unfair": "ch",
+          "notes": "Why learned: ch says /k/ here, not /ch/, because the word came to English from Greek, and the a says a plain /uh/.\nSay it: STUM-uk, two beats. Say stum, then uk, and write sto - mach in two chunks.\nLink: a carnivore's stomach is built for meat, so today's root and today's red word belong in the same sentence.\nYou will need this word in every body systems report this term."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Every carnivore has a strong stomach built for eating meat.",
+          "targets": [
+            "carnivore",
+            "stomach"
+          ],
+          "cups": {
+            "capitals": [
+              "Every"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "one clause, no extra commas; the new red word stomach and the root carn"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Ms Diaz, our science teacher, explained that a stomach and a gut join at one point.",
+          "targets": [
+            "stomach",
+            "join"
+          ],
+          "cups": {
+            "capitals": [
+              "Ms",
+              "Diaz"
+            ],
+            "punctuation": [
+              "comma before the appositive (it opens the extra words that rename Ms Diaz)",
+              "comma after the appositive (it closes those extra words before the sentence goes on)",
+              "full stop"
+            ]
+          },
+          "focus": "an appositive held inside two commas; stomach and today's root join"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Put an appositive into a sentence that does not have one yet.\nWHY THIS WEEK: naming who someone is inside commas saves the reader a whole second sentence.\nPREP: OG books open. All grammar this week is written in the OG book.",
+        "i_do": {
+          "title": "Add the extra words",
+          "rule": "An appositive renames the noun beside it, inside two commas.",
+          "example": "Our canteen sells pies.\nOur canteen, the busiest room, sells pies.",
+          "items": [
+            "Pick the noun, then say what it is.",
+            "Two commas hold the new words in place."
+          ],
+          "routine": "Eyes on me - watch the words go in",
+          "footer": "Stem: I added ... to say what it is.",
+          "notes": "ANSWER: the busiest room is the appositive added to Our canteen.\n1. SAY: \"An appositive renames the noun beside it, and today we put one in, so your reader learns what something is without a second sentence.\"\n2. MODEL: point at Our canteen. SAY: \"Canteen is my naming word. Now I ask myself what it is - the busiest room.\"\n3. MODEL: write both commas. SAY: \"One comma opens the new words, one closes them, and sells pies carries straight on.\"\n4. ASK: \"What question did I ask myself to find the extra words?\" 5 sec, choral response. EXPECT: what is it, or who is it.\nTRAP: dropping the new words at the end of the sentence. Fix: point at the noun, put the words straight after it, reread.\n---\nPurpose: models adding an appositive, not just spotting one. [I Do | Explicit modelling | Grammar | HITS 3]"
+        },
+        "we_do": {
+          "title": "Add it together",
+          "rule": "An appositive renames the noun beside it, inside two commas.",
+          "example": "Mr Green coaches the team.\nMr Green, ____, coaches the team.",
+          "items": [
+            "What could fill the gap to say who Mr Green is?",
+            "Then read it back with both commas in."
+          ],
+          "routine": "Choral - together on three",
+          "footer": "Stem: The gap tells us who ...",
+          "notes": "ANSWER: any wording that says who Mr Green is, for example our new sports teacher.\n1. SAY: \"The gap needs a few words that say who Mr Green is. Think of one, voices off.\"\n2. TIME: 15 seconds thinking, then everyone, together, on three.\n3. SCAN the whole room for voices. 80%+ -> take two versions and write one in. Less -> give one model, then re-collect.\n4. ASK: \"Does your wording still work if we cover it?\" 5 sec, cold call two students. EXPECT: yes, Mr Green coaches the team still makes sense.\nTRAP: filling the gap with an action such as runs fast. Fix: ask who he is, not what he does, then swap the words.\n---\nPurpose: guided generation before students write their own. [We Do | Guided practice | Grammar | HITS 7]"
+        },
+        "you_do": {
+          "title": "Add your own appositive",
+          "rule": "Your turn: copy each sentence and add the words in brackets.",
+          "example": "One done for you:\nThe emu ran off. (a tall grey bird)\nThe emu, a tall grey bird, ran off.",
+          "items": [
+            "A) My cousin visits us. (a nurse in Bendigo)",
+            "B) The library opens at nine. (our quietest room)"
+          ],
+          "item_size": 17,
+          "routine": "OG books - 2 min - books up",
+          "footer": "Check: did you write both commas?",
+          "notes": "ANSWER: A - My cousin, a nurse in Bendigo, visits us. B - The library, our quietest room, opens at nine.\n1. SAY: \"Look at the finished one first. Then copy A and B, dropping the bracket words in after the noun with two commas.\"\n2. TIME: 2 minutes in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"put your finger on the naming word, then slide one space right - that is where the extra words go.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> place B's words together, then re-check.\nTRAP: putting the bracket words at the end of the sentence. Fix: point at the noun, move the words next to it, student rewrites.\nEXTENSION: Write two sentences of your own about people in our class, each with an appositive, then swap and check a partner's commas.\nHELP: Give students the sentence already split at the noun, so they only add the words and the two commas.\n---\nPurpose: independent insertion of an appositive; tomorrow reviews the week. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) My cousin, a nurse in Bendigo, visits us.\nB) The library, our quietest room, opens at nine.\nEXTENSION: e.g. Tia, our class artist, painted the sign. Ben, the fastest runner, led the lap.",
+          "check_title": "Tick it or fix it - Add your own appositive",
+          "check_rule": "Tick each correct sentence. Fix any that is different.",
+          "check_items": [
+            "A) My cousin, a nurse in Bendigo, visits us.",
+            "The extra words say who, so two commas hold them in.",
+            "B) The library, our quietest room, opens at nine.",
+            "Cover them and The library opens at nine still works."
+          ],
+          "check_item_size": 17,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: say who or what it is.",
+          "check_notes": "ANSWER: A - My cousin, a nurse in Bendigo, visits us. B - The library, our quietest room, opens at nine.\n1. MODEL: \"In A the naming word is cousin, so the extra words go straight after it, held in by two commas.\"\n2. SAY: \"Now tick each sentence that matches. Fix any sentence that is different.\"\n3. ASK: \"Why does the appositive have to sit next to the noun it renames?\" 10 sec, turn and tell. EXPECT: so the reader knows which word it is telling us about.\n4. SCAN corrections. 80%+ -> continue. Less -> rewrite B together, then re-check.\n5. SAY: \"In your next piece of writing, find one name your reader might not know and add commas with a few words that say who or what it is.\"\nTRAP: ticking a sentence where the words sit at the end. Fix: find the noun, move the words beside it, then correct.\n---\nPurpose: the answer slide shows exactly where the extra words belong. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Thursday",
+      "type": "week_review",
+      "morphology_review": [
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join",
+          "extra_task": {
+            "prompt": "Give me one junct or join word, meaning join.",
+            "answers": [
+              "junction",
+              "joint",
+              "conjunction",
+              "conjoin"
+            ]
+          }
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating",
+          "extra_task": {
+            "prompt": "vore means eating. Give me an animal name that uses it.",
+            "answers": [
+              "carnivore",
+              "herbivore",
+              "omnivore",
+              "insectivore"
+            ]
+          }
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small",
+          "extra_task": {
+            "prompt": "Give me one micro word, meaning small.",
+            "answers": [
+              "microscope",
+              "microbe",
+              "microwave",
+              "microchip"
+            ]
+          }
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "literacy",
+          "juncture",
+          "microbiology",
+          "pyrite",
+          "carnival",
+          "surgery",
+          "omnivore",
+          "megavolt",
+          "depiction",
+          "granule",
+          "ecosystem",
+          "include",
+          "microphone",
+          "exhaustive",
+          "pictorial"
+        ],
+        "notes": "1. READ: \"Sport at lunchtime, read row 1.\"\n2. READ: \"Drawing or reading at lunchtime, read row 2.\"\n3. READ: \"Building or making at lunchtime, read row 3.\"\n4. READ: \"Music, games or anything else at lunchtime, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"Which word uses junct or join, meaning join?\" 5 sec, choral response. EXPECT: juncture.\n7. ASK: \"carn means flesh. Which word carries it?\" 5 sec, choral response. EXPECT: carnival.\n8. ASK: \"eco means house. Which word carries it?\" 5 sec, choral response. EXPECT: ecosystem.\n9. ASK: \"Which word names an animal that eats both plants and meat?\" 3 sec, choral response. EXPECT: omnivore.\n10. ASK: \"Which word is an antonym of exclude?\" 3 sec, choral response. EXPECT: include.\n11. ASK: \"Make granule plural.\" 3 sec, choral response. EXPECT: granules.\n12. ASK: \"Which word might you hear in a hospital?\" 3 sec, choral response. EXPECT: surgery."
+      },
+      "sound_bank": [
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ous",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "microscope",
+          "sentence": "Each pair shared one microscope in the science room.",
+          "prompt": "Which two parts build microscope?",
+          "answer": "Micro means small and scope means look at."
+        },
+        {
+          "word": "candidacy",
+          "sentence": "He announced his candidacy for the student council.",
+          "prompt": "Which part of candidacy turns candidate into a state?",
+          "answer": "The -acy ending. Candidacy is the state of being a candidate."
+        },
+        {
+          "word": "conjoin",
+          "sentence": "The builders will conjoin the two shelters with one roof.",
+          "prompt": "Which two parts build conjoin?",
+          "answer": "Con- means together and join means join."
+        },
+        {
+          "word": "herbivore",
+          "sentence": "A herbivore in that paddock eats only grass and leaves.",
+          "prompt": "Which part of herbivore means eating?",
+          "answer": "The vore part. Herb means plant, so it is a plant eater."
+        },
+        {
+          "word": "malnutrition",
+          "sentence": "The vet said malnutrition had weakened the stray dog.",
+          "prompt": "Which part of malnutrition tells you something is wrong?",
+          "answer": "The mal- prefix. It means bad, so the feeding has been bad."
+        },
+        {
+          "word": "ecologist",
+          "sentence": "An ecologist walked our creek and counted the frogs.",
+          "prompt": "Which part of ecologist tells you it names a person?",
+          "answer": "The -ist ending. Eco means house, so it is a person who studies the natural home."
+        },
+        {
+          "word": "minuscule",
+          "sentence": "The ant carried a minuscule crumb across the path.",
+          "prompt": "How big is something minuscule?",
+          "answer": "Extremely small. The -ule ending means small."
+        },
+        {
+          "word": "pictography",
+          "sentence": "We studied pictography, the picture writing used before letters.",
+          "prompt": "Which two parts build pictography?",
+          "answer": "Pict means picture and graph means write."
+        },
+        {
+          "word": "carnivorous",
+          "sentence": "The frilled lizard is carnivorous and hunts insects all day.",
+          "prompt": "Which two parts show that it eats meat?",
+          "answer": "Carn means flesh and vore means eating."
+        },
+        {
+          "word": "assertive",
+          "sentence": "Our captain was assertive when she called for the ball.",
+          "prompt": "What does the -ive ending tell you about the captain?",
+          "answer": "It describes what she is like. She spoke up clearly and firmly."
+        }
+      ],
+      "learned_words": {
+        "review": [
+          {
+            "word": "stomach",
+            "unfair": "ch",
+            "notes": "Why learned: ch says /k/ here because the word came from Greek, and the a says a plain /uh/.\nSay it: STUM-uk, two beats. Write sto - mach, then check the ending is ch, not k.\nQuick link: the same Greek ch spelling turns up in school and in chorus."
+          },
+          {
+            "word": "species",
+            "unfair": "ci",
+            "notes": "Why learned: the ci says /sh/ and the final es says /eez/, so only spe is spelled as it sounds.\nSay it: SPEE-sheez, two beats. Write spe - cies in two chunks.\nQuick link: an ecosystem is counted in species, so the two words travel together."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Each species in that ecosystem needs a safe place to live.",
+          "targets": [
+            "species",
+            "ecosystem"
+          ],
+          "cups": {
+            "capitals": [
+              "Each"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "one clause, no extra commas; the red word species and the root eco"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Mrs Patel, our camp cook, said, \"Every carnivore in there has a hungry stomach.\"",
+          "targets": [
+            "carnivore",
+            "stomach"
+          ],
+          "cups": {
+            "capitals": [
+              "Mrs",
+              "Patel",
+              "Every"
+            ],
+            "punctuation": [
+              "comma before the appositive (it opens the extra words that rename Mrs Patel)",
+              "comma after the appositive (it closes those extra words before the sentence goes on)",
+              "comma before the speech (it separates who said it from what they said)",
+              "opening quotation mark (speech starts here, so the first word takes a capital)",
+              "full stop inside the quotation (it belongs to the spoken words)",
+              "closing quotation mark (the speech ends here)"
+            ]
+          },
+          "focus": "an appositive plus reported speech; carnivore and the red word stomach"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Review the appositive and its comma pair, then check it independently.\nWHY THIS WEEK: one set of commas replaces a whole extra sentence for the reader.\nPREP: OG books open. The You do is the exit ticket for regrouping.",
+        "i_do": {
+          "title": "The week in one minute",
+          "rule": "An appositive renames the noun beside it, inside two commas.",
+          "example": "Zoe, our goalie, saved it.\nCover it and Zoe saved it still works.",
+          "items": [
+            "One comma opens the extra words, one closes them.",
+            "No verb needed - it just renames the noun."
+          ],
+          "routine": "Eyes on me - the whole week",
+          "footer": "Next: use one in your own draft.",
+          "notes": "ANSWER: our goalie renames Zoe, and it sits inside two commas.\n1. SAY: \"All week we have used one move: name the noun, then say who or what it is inside two commas, so your reader never needs a second sentence.\"\n2. MODEL: point at our goalie. SAY: \"These words rename Zoe. They do not tell us what she did - saved it does that.\"\n3. MODEL: cover the extra words. SAY: \"Zoe saved it still works, which is exactly why the commas are there.\"\n4. ASK: \"What two things make an appositive?\" 5 sec, choral response. EXPECT: it renames the noun, and two commas hold it in.\nTRAP: hunting for a verb inside the appositive. Fix: read it alone, hear that it only names, then relabel.\n---\nPurpose: one-minute restatement before the review checks. [I Do | Explicit modelling | Grammar | HITS 3]"
+        },
+        "we_do": {
+          "title": "Beat the teacher",
+          "rule": "An appositive renames the noun beside it, inside two commas.",
+          "example": "My uncle a truck driver waved.\nI wrote it with no commas. Fix me.",
+          "items": [
+            "Where do the two commas go? Show me with fingers.",
+            "Then read it back the right way."
+          ],
+          "routine": "Choral - together on three",
+          "footer": "Stem: The commas go after ... and after ...",
+          "notes": "ANSWER: after uncle and after driver - My uncle, a truck driver, waved.\n1. SAY: \"I have written this with no commas at all. Catch me out.\"\n2. TIME: 15 seconds thinking, voices off, then fingers up on three.\n3. SCAN every hand. 80%+ -> read it back correctly together. Less -> read my version aloud so they hear it run on, then re-ask.\n4. ASK: \"How do you know a truck driver is the part inside the commas?\" 5 sec, cold call two students. EXPECT: it renames uncle and the sentence works without it.\nTRAP: putting one comma after waved. Fix: read to the end of the naming words, hear the stop, move the comma.\n---\nPurpose: error-spotting keeps the whole class checking. [We Do | Guided practice | Grammar | HITS 7]"
+        },
+        "you_do": {
+          "title": "Exit ticket - the appositive",
+          "rule": "Your turn: copy each sentence and add the two commas.",
+          "example": "One done for you:\nOur cat Tiger sleeps all day.\nOur cat, Tiger, sleeps all day.",
+          "items": [
+            "A) The kelpie Bluey rounded up the sheep.",
+            "B) Our principal Ms Okafor opened the fair."
+          ],
+          "item_size": 17,
+          "routine": "OG books - 90 sec - books up",
+          "footer": "Check: did you write both commas?",
+          "notes": "ANSWER: A - commas around Bluey. B - commas around Ms Okafor.\n1. SAY: \"Look at the finished one first. Then copy A and B and put both commas in.\"\n2. TIME: 90 seconds in your OG book, then books up so I can scan.\n3. CIRCULATE: to a stuck student say, \"which word is the name, and which words tell you what that name IS? The name goes inside the commas.\" Then do A together.\n4. SCAN every book on the way past. 80%+ -> reveal the check slide. Less -> mark B together, then re-check.\nTRAP: putting commas around the whole sentence. Fix: point at the noun, take only the renaming words, student rewrites.\nEXTENSION: Rewrite A so the appositive comes first and Bluey becomes the noun, then repunctuate the whole sentence.\nHELP: Give students the two appositives Bluey and Ms Okafor; they box each one before adding commas.\n---\nPurpose: exit ticket the teacher scans to regroup next week. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) The kelpie, Bluey, rounded up the sheep.\nB) Our principal, Ms Okafor, opened the fair.\nEXTENSION: Bluey, the kelpie, rounded up the sheep.",
+          "check_title": "Tick it or fix it - Exit ticket",
+          "check_rule": "Tick each correct sentence. Fix any that is missing a comma.",
+          "check_items": [
+            "A) The kelpie, Bluey, rounded up the sheep.",
+            "Bluey renames kelpie, so two commas hold the name in.",
+            "B) Our principal, Ms Okafor, opened the fair.",
+            "Cover Ms Okafor and the sentence still works."
+          ],
+          "check_item_size": 17,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: name them inside commas.",
+          "check_notes": "ANSWER: A - commas around Bluey. B - commas around Ms Okafor.\n1. MODEL: \"In A the naming word is kelpie. Bluey tells us which kelpie, so a comma opens the name and a comma closes it.\"\n2. SAY: \"Now tick each sentence that matches. Fix any sentence that is missing a comma.\"\n3. ASK: \"Would A still be correct with no commas at all?\" 10 sec, turn and tell. EXPECT: no - the reader would run the name straight into the sentence.\n4. SCAN corrections. 80%+ -> collect the books. Less -> rewrite B together, then collect.\n5. SAY: \"Next time you write about a person or a place your reader may not know, add commas and a few words that say who or what it is.\"\nTRAP: ticking a sentence with only the opening comma. Fix: count the commas, then correct it.\n---\nPurpose: closes the week and shows the reasoning behind each comma. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    }
+  ]
+}

@@ -588,6 +588,22 @@
       "meaning": "eating",
       "source": "OG/Morphology USB files/Upper Level Latin Scrolls.pdf p284 (Upper Level Latin Roots master table, page 14: 'vore (eating)'; derivatives omnivore, herbivore, carnivore, voracious, devour*). Keyword selected from the printed family, 2026-08-02",
       "verified": true
+    },
+    {
+      "morph": "eco",
+      "type": "root",
+      "keyword": "ecosystem",
+      "meaning": "house",
+      "source": "OG/Morphology USB files/Greek Combining Forms.pdf PDF page 7 (Greek Combining Forms summary table, printed Page 4: 'eco (house)'; derivatives ecocide, ecological, ecologist, ecology, economic, economical, economist, economize, ecosystem). Greek combining forms are mapped to root/green by morpheme_meanings.json; keyword selected from the printed family and normalised to Australian spelling, 2026-08-09",
+      "verified": true
+    },
+    {
+      "morph": "carn/carni",
+      "type": "root",
+      "keyword": "carnivore",
+      "meaning": "flesh, meat",
+      "source": "OG/Morphology USB files/Upper Level Latin Scrolls.pdf PDF page 271 (Upper Level Latin Roots master table, printed Page 1: 'carn carni (flesh, meat)'; derivatives carnage, carnal, carnation, carnelian, carnival, carnivore, carnivorous, incarnate, incarnation, reincarnation). Keyword selected from the printed family, 2026-08-09",
+      "verified": true
     }
   ],
   "scope_sequence": {
