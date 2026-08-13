@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Persuasive_Writing_Week_6",
+  "unit_pptx_name": "Persuasive Writing Week 6 - Learning the Craft.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_pers_w6s1.js",
+      "folder": "Persuasive_W6_S1",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_pers_w6s2.js",
+      "folder": "Persuasive_W6_S2",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_pers_w6s3.js",
+      "folder": "Persuasive_W6_S3",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_pers_w6s4.js",
+      "folder": "Persuasive_W6_S4",
+      "session": 4
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "unit_folder": "Persuasive_Writing_Week_7",
+  "unit_pptx_name": "Persuasive Writing Week 7 - Write and Publish.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_pers_w7s1.js",
+      "folder": "Persuasive_W7_S1",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_pers_w7s2.js",
+      "folder": "Persuasive_W7_S2",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_pers_w7s3.js",
+      "folder": "Persuasive_W7_S3",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_pers_w7s4.js",
+      "folder": "Persuasive_W7_S4",
+      "session": 4
+    },
+    {
+      "build_script": "builds/build_pers_w7s5.js",
+      "folder": "Persuasive_W7_S5",
+      "session": 5
+    }
+  ]
+}
