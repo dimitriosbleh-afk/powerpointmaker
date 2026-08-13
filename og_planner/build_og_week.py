@@ -194,11 +194,23 @@ HEADER_NOTES = {
 }
 
 WARNINGS = []
+NOTES = []
 
 
 def warn(msg):
     WARNINGS.append(msg)
     print(f"  WARN: {msg}")
+
+
+def note(msg):
+    """Advisory finding: printed and summarised, but does not fail the gate.
+
+    For checks that rely on a heuristic (substring morpheme matching) where a
+    false positive would block a legitimate build.  Every WARN is fatal; a NOTE
+    is a content question for the author to answer.
+    """
+    NOTES.append(msg)
+    print(f"  NOTE: {msg}")
 
 
 _BANK = None
@@ -513,6 +525,157 @@ def validate_session_card_words(day, session):
     overlap = sorted(review_read & review_spell)
     if overlap:
         warn(f"{day}: same-day review reading/spelling overlap: {', '.join(overlap)}")
+
+
+# ------------------------------------------------- taught-morpheme bookkeeping
+# Everyday inflections a Grade 5/6 student uses without a Yoshimoto card.
+UNIVERSAL_INFLECTIONS = {"s", "es", "ed", "ing"}
+
+# Morpheme notation inside a You Do item: an affix carrying its hyphen, or a
+# slash variant label.  Anchored on non-letters so "T-intersection" and
+# "self-check" cannot masquerade as affixes.
+AFFIX_TOKEN_RE = re.compile(r"(?<![A-Za-z-])(-[A-Za-z]{1,12}|[A-Za-z]{1,12}-)(?![A-Za-z])")
+VARIANT_TOKEN_RE = re.compile(r"(?<![A-Za-z/])([A-Za-z]{2,12}(?:\([a-z]{1,3}\))?"
+                              r"(?:/[A-Za-z]{2,12}(?:\([a-z]{1,3}\))?)+)(?![A-Za-z/])")
+
+
+def morph_surface_forms(label):
+    """Lowercase spellings a morpheme label can wear inside a real word.
+
+    Expands slash variants, optional-letter brackets (clud(e) -> clud, clude)
+    and the silent e that drops before a vowel suffix (vore -> vor, so
+    herbivorous still counts as a vore word).
+
+    The silent-e stem is kept only at 3+ letters.  Without that floor, -ine
+    yields "in" and -ice yields "ic", which appear inside half the English
+    language and would make any substring test meaningless.
+    """
+    forms = set()
+    for part in str(label or "").split("/"):
+        part = part.strip().strip("-").strip().lower()
+        if not part:
+            continue
+        candidates = {part}
+        if "(" in part:
+            candidates.add(re.sub(r"[()]", "", part))
+            candidates.add(re.sub(r"\([^)]*\)", "", part))
+        for candidate in list(candidates):
+            if candidate.endswith("e") and len(candidate) >= 4:
+                candidates.add(candidate[:-1])
+        forms |= {c for c in candidates if c}
+    return forms
+
+
+def session_morph_labels(session):
+    """Every morpheme label a session puts in front of the class."""
+    labels = []
+    focus = (session.get("new_morphology") or {}).get("morph")
+    if focus:
+        labels.append(focus)
+    labels += [card["morph"] for card in session.get("morphology_review", [])
+               if card.get("morph")]
+    labels += [item["morph"] for item in session.get("sound_bank", [])
+               if item.get("morph")]
+    return labels
+
+
+def taught_morpheme_forms(week, session):
+    """Surface forms of every morpheme taught on or before this session.
+
+    Sources, in the order section 2f of OG_MEGA_PROMPT.md lists them: today's
+    focus card, this session's review cards and sound bank, every earlier
+    session in the same week spec, and the week-level `taught_morphemes` list
+    the author fills from the term timeline.
+    """
+    forms = set()
+    for item in week.get("taught_morphemes", []):
+        label = item.get("morph") if isinstance(item, dict) else item
+        forms |= morph_surface_forms(label)
+    sessions = week.get("sessions", [])
+    try:
+        stop = sessions.index(session)
+    except ValueError:
+        stop = len(sessions) - 1
+    for earlier in sessions[:stop + 1]:
+        for label in session_morph_labels(earlier):
+            forms |= morph_surface_forms(label)
+    return forms
+
+
+def validate_sound_bank(day, session):
+    """Sound bank rules from OG_MEGA_PROMPT.md section 2c.
+
+    The bank exists to support the Words to Spell Review list on the slides
+    immediately after it, and it is copied into books BEFORE the New Morphology
+    section runs.  So it never carries the day's focus morpheme, and every box
+    should serve a word on that page.
+    """
+    bank_items = session.get("sound_bank", [])
+    if not bank_items:
+        return
+    focus = (session.get("new_morphology") or {}).get("morph")
+    if focus:
+        focus_forms = morph_surface_forms(focus)
+        for item in bank_items:
+            if morph_surface_forms(item.get("morph")) & focus_forms:
+                warn(f"{day}: sound bank contains the day's focus morpheme "
+                     f"{item['morph']!r}. The bank is copied into books before the "
+                     "morpheme is taught (new day) or defeats the retrieval it "
+                     "exists for (review day) - give the slot to a morpheme one of "
+                     "the review spelling words needs (2c)")
+
+    spell_words = [str(entry.get("word", "")).strip().lower()
+                   for entry in session.get("words_to_spell_review", [])]
+    spell_words = [word for word in spell_words if word]
+    if not spell_words:
+        return
+    for item in bank_items:
+        forms = morph_surface_forms(item.get("morph"))
+        if not any(form in word for form in forms for word in spell_words):
+            # Advisory: this is a substring test, so a morpheme that surfaces in
+            # an unusual spelling can read as unused when it is not.
+            note(f"{day}: sound bank box {item['morph']!r} appears in none of the "
+                 "review spelling words on the same page; the 9 boxes should be "
+                 "derived from that list (2c)")
+
+
+def validate_activity_morphemes(day, week, session):
+    """Taught-morpheme gate from OG_MEGA_PROMPT.md section 2f.
+
+    Students may only be asked to SUPPLY an answer built from morphemes they
+    have been taught.  A morpheme named once in a Words to Read script line is
+    teacher-delivered, not taught - the teacher voices a handful of those lines.
+    """
+    activity = session.get("new_morph_activity")
+    if not isinstance(activity, dict):
+        return
+    lines = [activity.get("example", "")]
+    lines += list(activity.get("items", []))
+    lines += list(activity.get("check_items", []))
+    taught = taught_morpheme_forms(week, session)
+    flagged = set()
+    for line in lines:
+        for text in str(line or "").splitlines():
+            # Morpheme notation only carries meaning inside a sum; prose items
+            # (sorting, sentence writing) use whole words and are not scanned.
+            if "+" not in text and "=" not in text:
+                continue
+            tokens = ([match.group(1) for match in AFFIX_TOKEN_RE.finditer(text)]
+                      + [match.group(1) for match in VARIANT_TOKEN_RE.finditer(text)])
+            for token in tokens:
+                key = token.strip("-").lower()
+                if key in UNIVERSAL_INFLECTIONS or key in flagged:
+                    continue
+                if morph_surface_forms(token) & taught:
+                    continue
+                flagged.add(key)
+                warn(f"{day}: You Do uses morpheme {token!r}, which is not in this "
+                     "session's taught set (today's card + review cards + sound "
+                     "bank + earlier sessions + week taught_morphemes). Rewrite the "
+                     "item from taught parts, print the meaning on the slide face "
+                     f"(e.g. \"{token} (meaning)\"), or - if it really was taught "
+                     "earlier this term - add it to the week's taught_morphemes "
+                     "list (2f)")
 
 
 # ---------------------------------------------------------------- text helpers
@@ -1401,6 +1564,8 @@ def build_session(pkg, week, session, out_path):
         check_banked(day, "new morphology", new_morph["morph"],
                      new_morph.get("type"), new_morph.get("meaning"))
     validate_session_card_words(day, session)
+    validate_sound_bank(day, session)
+    validate_activity_morphemes(day, week, session)
     for card in session["morphology_review"]:
         tidx = CARD_REVIEW[card["type"]]
 
@@ -2307,6 +2472,7 @@ def qa_deck(path, session=None):
 
 def main():
     WARNINGS.clear()
+    NOTES.clear()
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     only = None
     outdir = Path("output")
@@ -2355,6 +2521,8 @@ def main():
             failed = True
         print(f"  {n} slides written.")
         built.append(out_path)
+    if NOTES:
+        print(f"\n{len(NOTES)} advisory note(s) - review above (non-fatal).")
     if WARNINGS:
         print(f"\n{len(WARNINGS)} warning(s) - review above.")
         failed = True

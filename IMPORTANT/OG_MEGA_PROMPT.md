@@ -1,4 +1,4 @@
-# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.1
+# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.2
 ## Grade 5/6 Enrichment | Diamond Creek East PS | Yoshimoto OG | Template-Locked | Term-Scale Input
 
 ---
@@ -18,9 +18,25 @@ philosophy is the OPPOSITE of the general lesson builder:
   backgrounds, new/review morpheme-card backgrounds and Sound Bank boxes. Never
   reverse, repurpose or infer a different mapping from an older template slide.
 
-The v1.1 refinement tightens response quality and responsive pacing inside the locked
-Yoshimoto sequence. It does not change the five-day shape, required review counts,
-morphology sequence, dictation, grammar finisher, master template or output naming.
+The v1.1 refinement tightened response quality and responsive pacing inside the locked
+Yoshimoto sequence. The v1.2 refinement fixes four defects the school found in shipped
+decks, all of them about WHAT STUDENTS HAVE ACTUALLY BEEN TAUGHT at the moment you ask
+them something:
+
+1. The Sound Bank was handed students the day's brand-new morpheme, thirteen slides
+   before it was taught (2c - it is now excluded on every day type, with a mechanical
+   derivation procedure).
+2. Word lists were chosen for catalogue tidiness ahead of teaching quality, so grids
+   filled with ornate low-value derivatives when a simpler, better-stacked word was
+   available (3b selection order, 4c ground 3).
+3. Questions and tasks required morphemes the class had never been taught (new section
+   2f, the taught-morpheme gate).
+4. Grammar and I do notes told the teacher WHAT the answer was but not HOW to
+   demonstrate it, so a teacher delivering cold had to invent the demonstration
+   (7 teach-it-cold notes).
+
+Neither refinement changes the five-day shape, required review counts, morphology
+sequence, dictation, grammar finisher, master template or output naming.
 
 The pipeline: user pastes a term's content -> you plan each week -> you author a week
 spec JSON -> `og_planner/build_og_week.py` clones the master template and fills it ->
@@ -218,20 +234,51 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
     OUTSIDE the grammar section.
   - Same gate applies to the Extension Wheel's Nouns/Verbs/Adjectives category - skip
     or substitute that sector until parts of speech have been taught.
+  - This rule gates untaught LABELS. Section 2f gates untaught MORPHEMES and is the
+    other half of the same idea - a morpheme hunt is only "always safe" when the
+    morpheme in question has actually been taught.
 
 ## 2c. Sound bank (9 boxes)
 
-- The 9 morphemes students will need for TODAY'S spelling work (review + new spelling
-  words). Students copy them into the top of their page before spelling.
-- REVIEW DAYS EXCLUDE THE FOCUS MORPHEME. On a `review` day the sound bank must NOT
-  contain the day's focus morpheme (the one the Review Morphology section revisits
-  from the previous session). Day 2 shifts the weight to auditory/spelling work -
-  students spell that morpheme from memory, and handing it to them in the bank defeats
-  the retrieval. Give its slot to another review prefix/suffix/root instead: prefer a
-  morpheme one of the day's review spelling words actually uses that is missing from
-  the bank; otherwise the most recently taught review morpheme of the same type, so
-  the type grouping stays intact. On `new` days the new morpheme DOES belong in the
-  bank - it is being taught that day, not retrieved.
+- WHAT THE BANK IS FOR: the 9 already-taught morphemes students need for the WORDS TO
+  SPELL REVIEW list on the very next slides. Students copy the 9 boxes into the top of
+  their page and then spell those 10 review words underneath. Supporting that list is
+  the bank's only job. It is not a preview, not a summary of the week, and not a
+  general morpheme poster.
+- NEVER PUT THE DAY'S FOCUS MORPHEME IN THE BANK. Not on a `new` day, not on a `review`
+  day, not on Friday. This is the most-reported Sound Bank defect and it has two
+  separate causes, both fatal:
+  - On a `new` day the Sound Bank slide sits roughly a dozen slides BEFORE the morpheme
+    card. The morpheme has not been taught yet. Banking it hands students a spelling
+    they have never been shown, pre-empts the reveal the whole New Morphology section is
+    built around, and burns one of nine slots on a morpheme that no review spelling word
+    uses. "It gets taught later today" does not make it taught now - the students are
+    looking at the bank NOW.
+  - On a `review` day the morpheme was taught yesterday, so printing it defeats the
+    retrieval that is the entire point of day 2 - students spell it from memory.
+  The NEW morphology spelling words (3c) never need the bank: they come straight off the
+  grid the class has just read, with the morpheme card still on screen.
+- HOW TO DERIVE THE 9 - do this mechanically, never by eye:
+  1. Write out the day's 10 Words to Spell Review.
+  2. Under each word list every morpheme in it that the class has ALREADY been taught.
+  3. Strike the day's focus morpheme from that list if it appears at all.
+  4. Rank what remains by how many of the 10 words need each morpheme, and take the top 9.
+  5. If fewer than 9 distinct morphemes survive, fill the remaining slots with the most
+     recently taught morphemes of the types already present, so the type grouping stays
+     intact.
+  A morpheme that a word on today's page actually uses ALWAYS outranks one that no word
+  on the page uses. The rejected junct deck banked `junct/join/joint` (needed by zero of
+  its ten review spelling words) while `-ite`, `pict`, `-ule` and `vore` - each needed by
+  a spelling word on that same page - were left out entirely.
+- SELF-CHECK BEFORE YOU BUILD: for each of the 9 boxes name the review spelling word it
+  serves. Any box you cannot tie to a word is a wasted slot; swap it for a morpheme one
+  of the ten words needs.
+- THE BUILDER ENFORCES THIS. A bank box matching the day's focus morpheme (any variant)
+  is a fatal WARN. A box that appears in none of the day's review spelling words is a
+  non-fatal NOTE, because the match is a substring test and an unusual surface spelling
+  can read as unused when it is not. Answer every NOTE - usually by swapping the box;
+  occasionally the honest answer is that the day needs only 8 morphemes and the 9th is
+  step-5 filler.
 - Box colour is set by type automatically: green root, yellow prefix, red suffix.
   Give the spec exactly 9 entries. Any other mapping is a build-stopping defect.
 - The slide's teacher note states the key as three plain lines and nothing else -
@@ -327,6 +374,82 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
 - Every scripted decision point states what the teacher scans or listens for, the secure move,
   the correction move and the fresh re-check. This is evidence-led pacing, not slide-led pacing.
 
+## 2f. THE TAUGHT-MORPHEME GATE (what a student may be asked to SUPPLY)
+
+The taught-only rule in 2b gates untaught METALANGUAGE. This gates untaught MORPHEMES.
+It applies to every segment of every deck and it is the rule most often broken in the
+New Morphology You Do.
+
+TEACHER-DELIVERED IS NOT THE SAME AS STUDENT-SUPPLIED. The gate binds only the second.
+
+- TEACHER-DELIVERED is anything the teacher says aloud with the answer in front of them:
+  the submarine lines in `wtr_new_notes`, an `Answer:` after a spelling reveal, a MODEL
+  beat, a dictation focus line. These may name ANY morpheme, taught or not - the teacher
+  supplies the meaning in the same breath. That is how students meet new parts, and it
+  is fine.
+- STUDENT-SUPPLIED is anything a student must produce, decode, or be marked on: a You Do
+  item, an `ASK:` with its `EXPECT:`, a check-slide question, an `After checking:`
+  prompt, an extension, a morpheme sum they have to complete.
+
+THE RULE: every student-supplied answer must be reachable from
+  (a) TODAY'S FOCUS MORPHEME - its card is on screen, its meaning has just been taught,
+      it has a copy-into-books slide and a memory hook; plus
+  (b) THE TAUGHT HISTORY - the review-10 cards, the sound bank, and anything earlier on
+      the term timeline; plus
+  (c) ORDINARY GRADE 5/6 ENGLISH - everyday words, common sense, general knowledge.
+Nothing else. If reaching the answer requires a morpheme outside (a) to (c), the item is
+a defect - not a stretch, not a challenge, a defect. The student cannot get there and
+knows it.
+
+HEARING A MORPHEME ONCE IS NOT BEING TAUGHT IT. A Words to Read grid holds 9 or 12 words
+and the teacher voices a HANDFUL of the script lines as the words appear - never all
+twelve, never with the class rehearsing them, and never in a form anyone could revise
+from. Therefore:
+
+- No morpheme becomes "taught" because it appeared in a grid script line, a spelling
+  `Answer:`, a dictation focus or an extra task earlier in the SAME deck.
+- Never build a later task on recall of a specific grid word ("the one we read before",
+  "remember injunction"). Assume the student saw the word for two seconds and heard
+  nothing about it.
+- The only thing the New Morphology section reliably teaches is the focus morpheme
+  itself, and that is because it gets a card, a copy slide, a hook and a whole grid.
+- A word may still be the ANSWER to a task, as long as the student can BUILD it from
+  taught parts rather than retrieve it from memory.
+
+WHEN AN ITEM NEEDS AN UNTAUGHT PART, PRINT THE MEANING ON THE SLIDE. First choice is
+always to swap the item for one built from taught parts. If a word genuinely earns its
+place, put the untaught part's meaning on the slide face inside the item itself, so the
+student READS it instead of remembering it:
+`4. in- (onto) + junct + -tion = ?`. A meaning printed on the board is knowledge the
+student has; a meaning mentioned nine slides ago is not.
+
+An inline gloss costs characters, and item lines do not shrink or clip - they wrap into
+the line below (10c). Count the line before you add one. If the gloss will not fit,
+that is the answer: swap the item for one built from taught parts.
+
+Defects, all taken from shipped decks:
+
+- A You Do item `in- + junct + -tion = ?` where `in-` meaning "onto" is untaught and had
+  appeared exactly once, inside one grid script line the teacher may never have read.
+- An extension asking students to predict what `adjunctive` means when `ad-` has never
+  been taught - that is a guess dressed as an extension.
+- An `After checking:` question whose `Answer:` turns on a suffix that is on no card the
+  class has met.
+- A check-slide `ASK:` whose `EXPECT:` names a morpheme meaning the students were never
+  given.
+
+WHAT THE BUILDER CATCHES, AND WHAT IT CANNOT. The builder scans the `new_morph_activity`
+`example`, `items` and `check_items` for morpheme notation - a hyphen-carrying affix
+(`in-`, `-tion`) or a slash variant label - but ONLY on lines containing `+` or `=`, so
+morpheme sums are checked and prose tasks are left alone. Anything not in the taught set
+is a fatal WARN. `-s`, `-es`, `-ed` and `-ing` are treated as universal inflections.
+It CANNOT check: meaning sums (`small + look at = ?` names meanings, not morphemes),
+sorting or sentence tasks, `EXPECT:` answers, `After checking:` prompts, or extensions
+written as prose. Those stay your job (4d step 8). When the gate fires, there are exactly
+three honest fixes: rewrite the item from taught parts, print the missing meaning on the
+slide face, or - only if the morpheme really was taught earlier this term - add it to the
+week-level `taught_morphemes` list (section 9).
+
 ---
 
 # 3. NEW / REVIEW MORPHOLOGY SECTION
@@ -361,14 +484,42 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   independently, so 8, 10 or 11 words leave a short third column floating out of
   alignment at a different size. "Aim for 12, floor about 8" is about morpheme
   integrity, not layout; the layout constraint is absolute.
-- MORPHEME STACKING IS THE FIRST SELECTION RULE. Where the family gives you a choice,
-  ALWAYS prefer the derivative that also carries a previously taught prefix, root or
-  suffix, weighted to the most recently taught. `microscopic` beats `microchip` once
-  `-ic` is on the cards; `malnutrition` beats `malaise` once `-tion` is taught. Two
-  taught morphemes in one word is worth more than a slightly neater single-morpheme
-  word: it is retrieval practice and it teaches students that words are built, not
-  memorised. This rule applies to the new grid, the new spelling four, and every
-  review reading and spelling list.
+- WORD SELECTION ORDER. Apply these in order for EVERY word list in the deck - the new
+  grid, the new spelling four, review reading and review spelling:
+  1. TRANSPARENCY - the morpheme is visibly doing its job and the whole-word meaning is
+     genuinely the sum of the parts. Reject opaque words outright (4c).
+  2. TAUGHT-MORPHEME STACKING - the word also carries previously taught prefixes, roots
+     or suffixes, weighted to the most recently taught.
+  3. GRADE 5/6 COMPREHENSIBILITY - a 10-12 year old can picture the word, or one plain
+     sentence makes it picturable. Stretch words are wanted (insubordinate, ordinance);
+     legal-register curios and archaic forms are not.
+  4. CATALOGUE MEMBERSHIP (4a-4c).
+  The order matters. A simpler, more transparent, better-stacked word BEATS a catalogue
+  word that scores worse on 1-3. Section 4c ground 3 exists precisely to authorise that
+  substitution - the catalogue is the default family, not a ceiling on teaching quality.
+- MORPHEME STACKING IS THE FIRST SELECTION RULE ONCE TRANSPARENCY IS SETTLED. Where the
+  family gives you a choice, ALWAYS prefer the derivative that also carries a previously
+  taught prefix, root or suffix, weighted to the most recently taught. `microscopic`
+  beats `microchip` once `-ic` is on the cards; `malnutrition` beats `malaise` once
+  `-tion` is taught. Two taught morphemes in one word is worth more than a slightly
+  neater single-morpheme word: it is retrieval practice and it teaches students that
+  words are built, not memorised.
+- THE SIMPLER SIBLING WINS. When a family offers a short transparent form and a longer
+  ornate one built on top of it, take the short one: `rejoin` (re- = back, taught) over
+  `rejoinder` (`-der` is taught nowhere); `adjoin` over `conjunctive`; `disjoint` over
+  `disjuncture`. Every extra untaught part is a part the teacher must gloss and the
+  student cannot reuse. A grid of plainer words that all click teaches the focus
+  morpheme better than a grid half-full of words ending in parts nobody has met.
+- CAP THE UNTAUGHT-PART COUNT ACROSS THE GRID. At most 2 of the 9 or 12 grid words may
+  contain a part the class has not been taught, and each of those must still be a word a Grade 5/6
+  student could plausibly meet in a book, a science lesson or the news. If the family
+  cannot fill 12 within that cap, build a 9-word grid - never pad to 12 with curios.
+- THE SCRIPT MUST BE DELIVERABLE COLD (section 7's teach-it-cold standard). The teacher
+  reads a word's line as that word appears, so a line MAY name an untaught part and
+  supply its meaning in the same breath - that is the teacher-delivered side of the gate
+  in 2f and it is exactly how new parts get met. What is never allowed is treating that
+  one mention as teaching: nothing later in the deck may require students to supply a
+  meaning they only heard here (2f).
 - Layout is automatic and ALWAYS the template's 3-column grid (never reshape it to two
   columns - the school wants the 3-column look preserved). The builder widens all three
   columns, removes hidden text insets and centres the block; 10-12 words also stretches
@@ -428,6 +579,10 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   read/spell overlap is required - students spell what they just decoded).
 - Apply the morpheme-stacking rule from 3b: of the eligible grid words, choose the four
   that also carry recently taught prefixes/suffixes wherever the family allows it.
+- PREFER THE FOUR WHOSE PARTS ARE ALL TAUGHT - today's morpheme counts as taught, its
+  card is on screen. Students should be able to BUILD each word from parts they hold. A
+  spelling word containing a part nobody has met is a memorisation task wearing a
+  morphology hat, and it is the one thing this section is not for.
 - Rotate the early-finisher extension in the notes; never the same one two days running.
   Menu: use two target words in one sentence with a subordinate clause; write the meaning
   in your own words using the root; find and record an antonym; turn the word into a
@@ -482,6 +637,20 @@ new/review session lacks one.
     can reach from that day's teaching and verify on the check slide. An item with two
     defensible answers (`pottery = P or R/P`) or a judgement call about etymological
     transparency is teacher-led We Do discussion material, never independent work.
+  - SOLVABLE FROM TAUGHT PARTS ONLY (2f - this is the You Do's hardest bar and the one
+    most often failed). Every item must be reachable from today's focus morpheme plus
+    previously taught morphemes plus everyday English. Do NOT use a part the class has
+    never been taught, and do NOT lean on recall of a particular word from the grid the
+    class just read - the teacher voices a handful of those twelve lines, not all of
+    them, and no student revised from it. If one item genuinely earns its place despite
+    an untaught part, print that part's meaning on the slide inside the item
+    (`4. in- (onto) + junct + -tion = ?`).
+  - WALK EACH ANSWER BACKWARDS BEFORE YOU SHIP IT. Write out the answer word and ask:
+    could a student who attended every lesson this term produce this from the board in
+    front of them right now? If the honest answer is "only if they remember it from the
+    grid" or "only if they already knew the word", replace the item. This check is
+    especially unforgiving on a `new` day, where the students have held the focus
+    morpheme for about five minutes.
   - Prefer CONCRETE BUILD/USE tasks (build the word from a meaning sum, write the sum
     beside a derivative, show the meaning in a sentence) over abstract classification
     or meaning-audit tasks. If a sort is used, the two categories must be plainly
@@ -561,6 +730,11 @@ Applies to every early-finisher note, every morphology You Do and every grammar 
     subordinate clause to the end and repunctuates it.
 - It must be STARTABLE WITHOUT THE TEACHER, and its answer goes in the `ANSWERS:`
   block so a teacher can confirm it.
+- THE TAUGHT-MORPHEME GATE APPLIES TO EXTENSIONS TOO (2f). "Predict what `adjunctive`
+  means" is not an extension when `ad-` has never been taught - it is a guess, and the
+  fastest students are the ones who notice. Push the SAME taught parts further instead:
+  more of them in one word, the full sum written out, the word used in a sentence that
+  demonstrates the meaning, or an unseen word whose parts are ALL taught.
 
 ---
 
@@ -632,10 +806,17 @@ Resolve every card in this strict order:
 
 ## 4c. Associated words and exclusions
 
-- For a captured card, `associated_words` is the default authorised family for new
+- For a captured card, `associated_words` is the DEFAULT authorised family for new
   Words to Read, new Words to Spell, review pools, extra tasks, and morphology
   examples. Choose for age, decodability, transparency, and lesson purpose from within
   that family; do not silently replace it with a web-generated list.
+- It is a default, NOT a ceiling on quality. The catalogue lists what is on the physical
+  card; it was not curated for Grade 5/6 teaching value or for stacking with this
+  cohort's taught history. Where a word outside the list carries the same morpheme doing
+  the same job and teaches it better - simpler, more transparent, or stacking a
+  previously taught prefix/root/suffix that no remaining associated word offers - use
+  it, under ground 3 below. Selection quality (3b) outranks list membership; the CARD's
+  own metadata is what stays locked.
 - `excluded_words` preserves the physical-card provenance but is a hard block on
   automatic or incidental student-facing selection. Do not restore an excluded word
   merely because it is common, appears online, or fits a word count. Use one only when
@@ -643,13 +824,24 @@ Resolve every card in this strict order:
   record the reason in the handoff.
 - A new morphology spelling word must be a subset of that session's new morphology
   reading grid. Same-day review reading and review spelling lists must remain disjoint.
-- An outside derivative is exceptional. Use one only when the captured card has too few
-  suitable associated words or the user explicitly requires it. Verify that the
-  morpheme is visibly present and contributes the taught meaning, verify the whole-word
-  meaning and Australian spelling from an appropriate source, and record it in the
-  session's `associated_word_exceptions` with `word`, `reason`, and `source`; repeat it
-  in the handoff. Never use an outside derivative merely to avoid reducing a genuinely
-  niche family below 12 words.
+- An outside derivative is allowed on three grounds, and only these three:
+  1. the captured card has too few suitable associated words;
+  2. the user explicitly requires that exact word; or
+  3. IT TEACHES THE MORPHEME BETTER than the catalogue options left to you - it is
+     simpler, its morpheme sum is more transparent, or it stacks a previously taught
+     prefix/root/suffix that no remaining associated word offers.
+  In every case: verify the morpheme is visibly present and contributes the taught
+  meaning, verify the whole-word meaning and Australian spelling from an appropriate
+  source, and record it in the session's `associated_word_exceptions` with `word`,
+  `reason`, and `source`; repeat it in the handoff. A ground-3 entry names the catalogue
+  word it displaced and why (`rejoin instead of rejoinder: re- is taught, -der is not`).
+  Never use an outside derivative merely to pad a genuinely niche family up to 12 words -
+  build a 9-word grid instead (3b).
+- WIDENING THE WORD CHOICE NEVER LICENSES EDITING THE CARD. The card's own `morpheme`,
+  `meaning`, `keyword` and printed `part_of_speech` stay locked exactly as captured
+  (0a, 4a). Ground 3 is about which derivatives you teach, nothing else.
+- `excluded_words` remains a hard block. A simpler-and-clearer word that sits on the
+  exclusion list is still excluded.
 - Membership in a printed family does not guarantee a transparent modern decomposition.
   Never force a false morpheme sum. If a listed word is etymologically opaque or the
   taught meaning does not operate clearly in it, omit it or teach it only as a
@@ -672,6 +864,14 @@ Before writing or building a week spec, verify mechanically:
 5. Every new spelling word occurs in that day's new reading grid, and no review spelling
    word duplicates that day's review reading list.
 6. Ambiguous headings such as `di-` include their intended meaning in the spec.
+7. The sound bank does not contain the day's focus morpheme, and every one of its 9
+   boxes can be tied to a word on that day's Words to Spell Review list (2c).
+8. Every student-supplied answer in the session - You Do items, `EXPECT:` answers,
+   check-slide questions, `After checking:` prompts, extensions - passes the
+   taught-morpheme gate (2f). Build the session's taught-morpheme set first (today's
+   focus morpheme + the review-10 + the sound bank + the term timeline), then test each
+   answer against it. Anything that fails is rewritten or has the missing meaning
+   printed on the slide.
 
 Any mismatch is a blocker, not an advisory note. Fix the source/spec before generating
 slides.
@@ -858,6 +1058,46 @@ students find boring, so it must earn its five minutes.
     never a new activity, never an extra slide, never a note-budget blowout. If the
     live zone is full, the WHY rides inside beat 1's SAY and the HOW inside the final
     SAY or the footer.
+- TEACH-IT-COLD NOTES (non-negotiable, school feedback). The notes must let a teacher
+  who did not plan this lesson, and who may not be confident with the grammar, deliver
+  it well straight off the iPad. The slide face never does that on its own: it shows the
+  FINISHED example, not how it got there, so a note that only states the answer leaves
+  the teacher inventing the demonstration in front of the class. Every I do and We do
+  carries all three of these:
+  - A BOARD-EXPLICIT DEMONSTRATION BEAT. The `MODEL:` / `WRITE:` / `POINT:` beat names
+    the exact thing the teacher does to the visible material, in order: which word to
+    point at, what to write, where it goes, and what the board reads when the beat ends.
+    `3. MODEL: write both commas.` is not deliverable - the example is already printed
+    complete on the slide, so the teacher cannot tell whether to annotate it, rewrite it
+    or build it from scratch. Author it as
+    `2. WRITE: copy "Our canteen sells pies." on the class board. POINT at canteen.` then
+    `3. WRITE: add ", the busiest room," straight after canteen so the class board now
+    reads the full sentence.` If the demonstration is annotation rather than writing, say
+    so and say what gets marked (`circle canteen on the slide, then draw both commas in`).
+    "Class board" means the teacher's own display board - it is not the student
+    whiteboard ban below, which is about where STUDENTS write.
+  - A `CLARIFY:` LINE, one per I do and We do, IN THE LIVE ZONE. It carries the one
+    question this slide predictably provokes with its answer scripted in plain classroom
+    English, or the boundary the teacher needs in order to judge a student answer nobody
+    planned for:
+    `CLARIFY: if a student asks whether the extra words can go at the end, say the
+    reader has to hold the name too long, so they sit straight after it.`
+    `CLARIFY: any wording counts if you can cover it and the sentence still stands.`
+    This is the on-the-fly support - it goes ABOVE the divider, never in the prep zone,
+    because it is needed mid-sentence with thirty students watching.
+  - A `PREP:` LINE in the prep zone giving the teacher the concept in one plain sentence
+    FOR THEMSELVES, not for the students: `PREP: an appositive is just a renaming phrase
+    - if you can cover it and the sentence still works, it is one.` A teacher who reads
+    nothing but the rule banner and that line should still be able to run the slide.
+  LIVE-ZONE BUDGET - the eight-line cap is enforced by the builder, so plan it before
+  writing: an I do or We do runs ANSWER + 3-4 beats + TRAP + CLARIFY = 6-7 lines. The
+  You do already spends its eight on ANSWER + 4 beats + TRAP + EXTENSION + HELP, so it
+  does NOT carry a CLARIFY line - its `CIRCULATE:` prompt ladder does that job. If a
+  You do genuinely needs one, drop to three beats.
+- THE SAME STANDARD APPLIES WHEREVER THE TEACHER MUST DEMONSTRATE: the morpheme card and
+  copy slide (3a) and the Words to Read grid script (3b) are the morphology equivalent of
+  an I do. A beat that says what the teacher KNOWS but not what the teacher DOES is
+  half-written.
 - DESIGNED SLIDES, NOT TEXT DUMPS. Grammar blocks use the structured spec and the
   builder lays them out (this is the one OG section with visual design): a purple rule
   banner across the top, a big soft-tinted HERO CARD carrying the example or task, up
@@ -947,11 +1187,16 @@ master template's old dense procedure blocks. All authored notes must follow
 - Every notes paragraph is left-aligned. Do not inherit centred or indented paragraph
   settings from the master; wrapped lines must return to the left edge on iPad.
 - LIVE ZONE: eight nonblank lines maximum in this order when relevant - ANSWER; 2-5
-  numbered beats; TRAP with Fix; STRETCH/HELP. No blank lines inside it. The Words to
-  Read Review script is the sole exception and follows section 2b's longer numbered
-  reading-plus-retrieval structure.
-- PREP ZONE: `---` on its own line, followed by at most three short lines. Anything
-  needed while students are working must stay above the divider.
+  numbered beats; TRAP with Fix; CLARIFY (required on grammar I do and We do, section 7);
+  EXTENSION/HELP. No blank lines inside it. `STRETCH` is retired everywhere in OG decks -
+  the label is `EXTENSION` (3e). The Words to Read Review script is the sole exception to
+  the eight-line cap and follows section 2b's longer numbered reading-plus-retrieval
+  structure.
+- PREP ZONE: `---` on its own line, followed by at most three short lines - the
+  `Purpose:` line with its `[Stage | element | focus]` tag, an optional `PREP:` line
+  giving the teacher the concept in their own terms (section 7), and at most one more.
+  Anything needed while students are working must stay above the divider. The `ANSWERS:`
+  block on a fixed-answer You Do is exempt from the three-line limit (3d).
 - SAY text is natural, direct teacher language that can be read verbatim. Do not use
   filler such as "Okay kids, next we have..." and do not write clipped production
   notes. Each question includes think time, one response routine, and `EXPECT:` or
@@ -970,14 +1215,14 @@ master template's old dense procedure blocks. All authored notes must follow
 |---|---|
 | Morph review card | `Type:` / `Keyword:` / `Meaning:` (catalogue verbatim) / `Part of speech:` where printed / optional `Extra task:` + `SAY:` + `Possible answers:` |
 | Words to Read Review table | one numbered `READ:` line per group (no whole-class warm-up beat), then the everyone-row-5 line stating each student reads at least two rows, then one direct question and its `EXPECT:` answer per numbered line |
-| Sound bank | `green = root` / `yellow = prefix` / `red = suffix`, one per line (builder default) |
+| Sound bank | `green = root` / `yellow = prefix` / `red = suffix`, one per line (builder default). The 9 boxes never include the day's focus morpheme (2c) |
 | Spell the word (each) | `Word to spell:` / `Sentence:` / reveal line / `After checking:` / `Answer:` (all required); builder renders labels bold and underlines the target word where it appears inside the `Sentence:` line |
 | New morph card | `Type:` / `Keyword:` / `Meaning:` or separate `Sound:` lines; the copy slide adds `MEMORY HOOK:` automatically |
 | Words to Read grid | one scripted line per word + `Memory hook:` last |
 | Words to Spell grid | line-separated early-finisher cue + `EXTENSION:` (3e) |
 | Learned word (each) | `Why learned:` / `Say it:` AU pronunciation / `Link:` |
 | Dictation (each) | sentence + line-separated CUPS checklist + `Score:` + `Focus:` |
-| Grammar I/We/You do | Glance Format live zone, `---`, prep line, then `ANSWERS:` on a fixed-answer You do (section 7) |
+| Grammar I/We/You do | Glance Format live zone with a board-explicit `MODEL:`/`WRITE:` beat and a `CLARIFY:` line on I do and We do, `---`, `Purpose:` line + optional `PREP:` teacher gloss, then `ANSWERS:` on a fixed-answer You do (section 7) |
 
 ---
 
@@ -1000,7 +1245,8 @@ One JSON per week in `og_planner/weeks/`. Exemplar: `og_planner/weeks/sample_ter
     "morphology_review": [ { "morph", "type": root|prefix|suffix, "keyword", "meaning",
                              "extra_task"?: { "prompt", "answers": [..] } } x10 ],
     "words_to_read_review": { "words": [15 strings], "notes": "activity script, 2b format" },
-    "sound_bank": [ { "morph", "type" } x9 ],
+    "sound_bank": [ { "morph", "type" } x9 ],  // derived from words_to_spell_review;
+                                               // never the day's focus morpheme (2c)
     "words_to_spell_review": [ { "word", "sentence", "prompt", "answer" } x10 ],
     "new_morphology": { "morph", "type", "keyword", "meaning" },   // omit on week_review
     "words_to_read_new": [ { "word", "meaning" } x8-12 ],          // omit on week_review
@@ -1035,7 +1281,21 @@ Notes:
   priority over the legacy bank and reference meanings. Any differing spec value
   is a blocker even if it appears only as a WARN. For a genuinely ambiguous heading
   such as `di-`, include the intended photographed meaning in the spec.
-- New-family words must pass the section 4c/4d associated-word and exclusion audit.
+- New-family words must pass the section 4c/4d associated-word and exclusion audit. A
+  word chosen outside `associated_words` on quality grounds (4c ground 3) must be logged
+  in `associated_word_exceptions`.
+- `taught_morphemes` (optional, WEEK level, alongside `term`/`week`/`sessions`): labels
+  taught earlier in the term that no longer appear on the review cards. Strings or
+  `{"morph": ...}` objects both work. The builder's taught-morpheme gate already counts
+  today's card, the review-10, the sound bank and every earlier session in the same
+  spec; this field carries the rest of the term timeline. Add a label here ONLY if it
+  was genuinely taught - the field is the escape hatch, not a mute button. The
+  authoritative term-by-term record is `og_planner/taught_morphemes.json` (teacher-
+  supplied timeline): copy labels from it, never from memory, and never add a label
+  that file does not hold.
+- The builder enforces PART of sections 2c and 2f (see section 10). It cannot see
+  meaning-sum You Dos, prose tasks, `EXPECT:` answers or `After checking:` prompts, so
+  the section 4d audits remain author-side: a clean build is not proof they passed.
 - The builder automatically appends the physical card's printed part of speech to
   teacher notes when the catalogue supplies it; do not invent a spec value.
 - `unfair` must be an exact substring of the word (builder warns if not found).
@@ -1056,6 +1316,8 @@ Notes:
 python og_planner/build_og_week.py og_planner/weeks/<spec>.json          # all sessions
 python og_planner/build_og_week.py og_planner/weeks/<spec>.json --only Tuesday
 python tests/test_og_builder_regressions.py                               # builder + exemplar regression gate
+# WARN = fatal, NOTE = advisory. Run the regression suite before touching
+# validate_sound_bank, validate_activity_morphemes or morph_surface_forms.
 ```
 
 1. The builder's gate must pass (exit 0): file reopens cleanly, no `XYZ` left anywhere,
@@ -1066,23 +1328,34 @@ python tests/test_og_builder_regressions.py                               # buil
    into one paragraph, every review/new card and Sound Bank box uses green root / yellow
    prefix / red suffix, fixed answers have an immediate green `Tick it or fix it` slide
    (morphology You Do AND any fixed-answer grammar You do),
-   new-word grids are at least 27 pt, grammar examples are at least 20 pt, and the first
-   dictation uses the green meter while the second/trickier dictation uses yellow.
+   new-word grids are at least 27 pt, grammar examples are at least 20 pt, the first
+   dictation uses the green meter while the second/trickier dictation uses yellow, the
+   sound bank does not contain the day's focus morpheme (2c), and no You Do morpheme sum
+   uses an affix outside the taught set (2f).
    Read every WARN - word-count, catalogue mismatch, excluded-word, unbanked-label and
-   overflow warnings are content bugs to fix in the spec, not noise. A NOTE about a card
-   absent from the photographed catalogues is advisory only when it clearly records an
-   unconfirmed fallback; list every such NOTE in the summary. Captured-card metadata is
-   never advisory.
+   overflow warnings are content bugs to fix in the spec, not noise. Every WARN fails the
+   build. A NOTE is advisory and does NOT fail the build - currently the unused-sound-
+   bank-box check (2c) and cards absent from the photographed catalogues. Advisory does
+   not mean ignorable: answer every NOTE and list them in the summary. Captured-card
+   metadata is never advisory.
 2. Visual QA every session deck: `python scripts/pptx_to_images.py "output/<folder>/<deck>.pptx"`,
    then INSPECT the images: title subtitle on one line; overview table cells complete;
    10 card slides in the jumbled order you specified; 15-word table filled; sound bank
-   colours match types; each spell word centred; every new-word grid term is unbroken
+   colours match types AND contains no focus morpheme, with every box traceable to one
+   of that day's review spelling words (2c); each spell word centred; every new-word grid term is unbroken
    and at least 27 pt; task and check slides form a protected pair; learned-word
    highlight is on the right letters; dictation capitals are green, punctuation red and
    targets bold/underlined; grammar slides are not overflowing. Also inspect the notes
    pane/XML: one thought per paragraph, no raw markdown, no dense paragraph walls and no
    control-character artefacts. Local render substitutes fonts (Luckiest Guy/Lexend may
    look plain) - that is a render artefact, not a bug.
+   Then run the AUTHOR-SIDE half of the 2c/2f audits. The builder covers the mechanical
+   part (focus morpheme in the bank, affixes in You Do sums); it cannot read meaning
+   sums, prose tasks, `EXPECT:` answers or `After checking:` prompts:
+   - SOUND BANK: name the review spelling word each of the 9 boxes serves.
+   - TAUGHT-MORPHEME GATE: list every student-supplied answer in the deck - including
+     the ones written as prose - and confirm each is reachable from today's morpheme +
+     the taught history + everyday English.
 3. Animation spot check (structural): the spell-word, grid, learned-word and dictation
    slides must contain `<p:timing>` (the builder preserves/regenerates them - verify
    after any builder change).
@@ -1107,16 +1380,22 @@ the per-session PPTX in the week folder IS the deliverable (unlike themed lesson
    4d audit. Only cards absent from the photographed catalogues may fall back to
    `og_planner/morpheme_bank.json`. Stop and verify anything unconfirmed BEFORE writing
    the spec.
-3. For each session, in slide order, generate: review-10 (jumbled per 2a), 15 review
-   words + verbal script (2b), sound bank 9 grouped by type, no focus morpheme on
-   review days (2c), 10 spelling words
-   with sentence + prompt + answer (2d), morpheme card + words to read + script +
-   memory hook + 4 spelling words + extension (3a-3c, skip on Friday), learned words
-   2 review + 1 new (5), 2 dictations with cups (6), grammar structured blocks (7).
-4. Self-check the spec against section 10b's failure list, line by line.
-5. `python og_planner/build_og_week.py og_planner/weeks/<spec>.json` - fix EVERY warn.
-6. Render each deck to images and INSPECT them (section 10). Fix, rebuild, re-render.
-7. Only then report, stating exactly which QA levels ran.
+3. Write down the session's TAUGHT-MORPHEME SET before writing any question: today's
+   focus morpheme + the review-10 + the sound bank + everything earlier on the term
+   timeline. Every student-supplied answer you script must come out of that set (2f).
+4. For each session, in slide order, generate: review-10 (jumbled per 2a), 15 review
+   words + verbal script (2b), 10 spelling words with sentence + prompt + answer (2d),
+   THEN the sound bank derived mechanically from those 10 words, grouped by type and
+   never containing the day's focus morpheme (2c), morpheme card + words to read +
+   script + memory hook + 4 spelling words + extension (3a-3c, skip on Friday), the
+   New Morphology You Do + its check slide (3d), learned words 2 review + 1 new (5),
+   2 dictations with cups (6), grammar structured blocks (7).
+   Note the order: the spelling list comes FIRST and the sound bank is derived from it.
+   Choosing bank morphemes before you know the words is how the wrong nine get banked.
+5. Self-check the spec against section 10b's failure list, line by line.
+6. `python og_planner/build_og_week.py og_planner/weeks/<spec>.json` - fix EVERY warn.
+7. Render each deck to images and INSPECT them (section 10). Fix, rebuild, re-render.
+8. Only then report, stating exactly which QA levels ran.
 
 # 10b. KNOWN FAILURE MODES (each of these has been rejected by the school - check
 your spec against every line before building)
@@ -1210,8 +1489,37 @@ your spec against every line before building)
 - A review question that cannot be answered from what has already been taught. (2b)
 - A sound bank note that describes the colour key instead of stating it, or a variant
   label allowed to break mid-bracket. (2c)
-- A review-day sound bank containing the day's focus morpheme - that slot belongs to
-  another review prefix/suffix/root. (2c)
+- A sound bank containing the day's focus morpheme, on ANY day type. On a `new` day it
+  hands over a morpheme that is still a dozen slides from being taught; on a `review`
+  day it destroys the retrieval. That slot belongs to a morpheme one of the day's review
+  spelling words actually uses. (2c - BUILD-STOPPING, the builder checks this)
+- A sound bank box that no word on that day's Words to Spell Review list needs, while a
+  morpheme one of those words DOES need is left out. (2c - the builder raises a NOTE)
+- Choosing the nine sound bank morphemes before writing the ten review spelling words -
+  the bank is derived from the list, never the other way round. (2c, 10a)
+- ANY student-supplied answer that needs a morpheme the class has not been taught: a You
+  Do item, an `EXPECT:`, a check-slide `ASK:`, an `After checking:` prompt, an extension.
+  (2f - the builder stops You Do morpheme sums; the rest is your audit)
+- Silencing that gate by dumping the morpheme into `taught_morphemes` when it was never
+  actually taught. The field records the term timeline, not your preferences. (2f, 9)
+- Treating a morpheme as taught because it appeared once in a Words to Read grid script
+  line, a spelling `Answer:` or a dictation earlier in the same deck. The teacher voices
+  a handful of grid lines, not twelve. (2f)
+- A You Do or extension that requires students to recall a specific word from the grid
+  they just read, rather than build it from taught parts. (2f, 3d)
+- An item kept despite an untaught part WITHOUT that part's meaning printed on the slide
+  face inside the item (`in- (onto) + junct + -tion = ?`). (2f)
+- Choosing an ornate catalogue derivative over a simpler, more transparent sibling that
+  stacks taught morphemes (`rejoinder` over `rejoin`, `conjunctive` over `adjoin`), or
+  padding a grid to 12 with curios instead of building a clean 9. (3b, 4c)
+- More than two grid words containing a part the class has not been taught. (3b)
+- A grammar I do or We do whose demonstration beat states the answer but not what the
+  teacher does to the board - `MODEL: write both commas` when the finished example is
+  already printed on the slide. (7 teach-it-cold)
+- A grammar I do or We do with no `CLARIFY:` line in the live zone, or one that hides the
+  clarification below the divider where the teacher cannot use it mid-lesson. (7)
+- A grammar block with no prep-zone `PREP:` line explaining the concept to the teacher in
+  their own terms. (7)
 - A spelling-review sentence that could be from a dictionary rather than the students'
   own school/science/sport world, or one that leaves a homophone ambiguous by ear. (2d)
 - An `After checking:` / `Answer:` pair that feeds the answer into the question and

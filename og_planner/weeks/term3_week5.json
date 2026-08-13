@@ -1,6 +1,14 @@
 {
   "term": 3,
   "week": 5,
+  "taught_morphemes": [
+    "mini-", "super-", "over-", "anti-", "ultra-", "retro-", "em-", "syn-", "sym-/sys-/syl-",
+    "-let", "-ling", "-cian", "-cial/-tial", "-ancy/-ance", "-ency/-ence", "-ity", "-tude",
+    "out-", "self-", "post-", "with-", "counter-", "contra-", "omni-", "intra-",
+    "-eer", "-ant", "-ar", "-ine", "-cy", "-ciate/-tiate",
+    "ped/pod", "rect/reg", "capt/capit", "flect/flex", "ord/ordin", "clud(e)/clus(e)",
+    "mal-", "-ery", "-ice", "-ive", "-ite", "-acy", "-ule", "mega-", "micro", "pict/picto", "vore"
+  ],
   "cohort": "Enrichment",
   "unit_folder": "OG_Term3_Week5",
   "days": [
@@ -176,10 +184,6 @@
       },
       "sound_bank": [
         {
-          "morph": "eco",
-          "type": "root"
-        },
-        {
           "morph": "micro",
           "type": "root"
         },
@@ -209,6 +213,10 @@
         },
         {
           "morph": "-al",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
           "type": "suffix"
         }
       ],
@@ -576,10 +584,6 @@
       },
       "sound_bank": [
         {
-          "morph": "carn/carni",
-          "type": "root"
-        },
-        {
           "morph": "eco",
           "type": "root"
         },
@@ -609,6 +613,10 @@
         },
         {
           "morph": "-ule",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
           "type": "suffix"
         }
       ],
@@ -725,31 +733,31 @@
         "carnation",
         "incarnation"
       ],
-      "extension": "1. SAY: \"When you finish, write the meaning of one spelling word in your own words, using the word flesh or meat.\"\n2. CHECK: the meaning must use the root, not just describe the animal.\nEXTENSION: Predict what the unseen word carnivory means from its parts, write its full morpheme sum, then use it in one sentence about a food web.\nA morpheme sum names every part and what each part means.",
+      "extension": "1. SAY: \"When you finish, write the meaning of one spelling word in your own words, using the word flesh or meat.\"\n2. CHECK: the meaning must use the root, not just describe the animal.\nEXTENSION: Predict what the unseen word herbivore means from its parts - herb is the plant word and vore you met on Friday. Write its sum, then use it in one sentence about a food web.\nA morpheme sum names every part and what each part means.",
       "new_morph_activity": {
-        "title": "Literal meanings for carn",
-        "rule": "carn means flesh or meat. Write the sum beside each word.",
-        "example": "One done for you:\ncarnage = carn (flesh) + -age (result)",
+        "title": "Morpheme sums - carn and review",
+        "rule": "carn means flesh or meat. Write the sum beside each word. 3 and 4 are review words.",
+        "example": "One done for you:\ncarnivore = carn (flesh) + vore (eat)",
         "items": [
-          "1. carnivorous = ?    2. incarnate = ?",
-          "3. carnation = ?    4. reincarnate = ?"
+          "1. carnivorous = ?    2. carnation = ?",
+          "3. megalitre = ?    4. ecosystem = ?"
         ],
         "item_size": 17,
         "routine": "OG books - 3 min - books up",
-        "footer": "Extension: predict carnivory",
-        "notes": "ANSWER: 1 carn + vore + -ous, 2 in- + carn + -ate, 3 carn + -ation, 4 re- + in- + carn + -ate.\n1. SAY: \"Look at the finished sum first. Then write the parts of each word and what each part means.\"\n2. TIME: 3 minutes in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"cover carn with your thumb - what is left over, and have we met it before?\" Then do number one together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> break number four apart together, then re-ask.\nTRAP: writing only carn and stopping. Fix: point at the letters after carn, name that part, student adds it.\nEXTENSION: Write the full sum for reincarnation, the longest word in the family, then say what each extra part adds.\nHELP: Give the parts vore, -ous, in-, -ate, -ation, re- on the board; students match parts to words first.\n---\nPurpose: day one of carn pulls each word apart into parts that carry meaning. [You Do | Literal meanings | Morphology]\nANSWERS:\n1. carnivorous = carn (flesh) + vore (eating) + -ous (full of)\n2. incarnate = in- (into) + carn (flesh) + -ate (to make)\n3. carnation = carn (flesh) + -ation (state of), the flesh-pink flower\n4. reincarnate = re- (again) + in- (into) + carn (flesh) + -ate (to make)\nEXTENSION: reincarnation = re- (again) + in- (into) + carn (flesh) + -ation (state of).",
-        "check_title": "Tick it or fix it - Literal meanings for carn",
+        "footer": "Extension: predict herbivore",
+        "notes": "ANSWER: 1 carn + vore + -ous, 2 carn + -ation, 3 mega- + litre, 4 eco + system.\n1. SAY: \"Look at the finished sum first. Then write the parts of each word and what each part means.\"\n2. TIME: 3 minutes in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"cover carn with your thumb - what is left over, and have we met it before?\" Then do number one together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> break number three apart together, then re-ask.\nTRAP: writing only carn and stopping. Fix: point at the letters after carn, name that part, student adds it.\nEXTENSION: Use carnivore and carnation in one sentence that shows they share the same root.\nHELP: Give the parts vore, -ous, -ation, mega-, litre, system on the board; students match parts to words first.\n---\nPurpose: day one of carn pulls each word apart into meaningful parts; 3 and 4 retrieve Monday. [You Do | Literal meanings | Morphology]\nANSWERS:\n1. carnivorous = carn (flesh) + vore (eating) + -ous (full of)\n2. carnation = carn (flesh) + -ation (state of), the flesh-pink flower\n3. megalitre = mega- (million) + litre, a million litres\n4. ecosystem = eco (house) + system, the natural house working as one\nEXTENSION: one sentence holding carnivore and carnation, root meaning shown.",
+        "check_title": "Tick it or fix it - Morpheme sums - carn and review",
         "check_rule": "Tick each correct sum. Fix any sum that is missing a part.",
         "check_items": [
           "1. carnivorous = carn + vore eating + -ous full of",
-          "2. incarnate = in- into + carn + -ate to make",
-          "3. carnation = carn + -ation state of, flesh-pink",
-          "4. reincarnate = re- again + in- into + carn + -ate"
+          "2. carnation = carn + -ation state of, flesh-pink",
+          "3. megalitre = mega- million + litre",
+          "4. ecosystem = eco house + system, working as one"
         ],
         "check_item_size": 17,
         "check_routine": "Tick - fix - explain",
-        "check_footer": "Every sum starts with carn = flesh",
-        "check_notes": "ANSWER: 1 carn + vore + -ous, 2 in- + carn + -ate, 3 carn + -ation, 4 re- + in- + carn + -ate.\n1. MODEL: \"For number one I cover carn. Vore is left, meaning eating, then -ous meaning full of. So carnivorous is full of flesh-eating.\"\n2. SAY: \"Now tick each sum that matches. Fix any sum that is missing a part.\"\n3. ASK: \"Which word here would still make sense with a different root in place of carn?\" 10 sec, turn and tell. EXPECT: incarnate or reincarnate - in- and -ate work with many roots.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number four together, then re-check.\nTRAP: ticking a sum that leaves out a part. Fix: count the parts against the green line, then rewrite it.\nEXTENSION: Predict what carnivora will mean before we meet it.\nHELP: read the green sum first, then find each part inside the printed word.\n---\nPurpose: protected reveal so every student hears how a word breaks into parts. [You Do | Feedback | Morphology]"
+        "check_footer": "A sum names every working part",
+        "check_notes": "ANSWER: 1 carn + vore + -ous, 2 carn + -ation, 3 mega- + litre, 4 eco + system.\n1. MODEL: \"For number one I cover carn. Vore is left, meaning eating, then -ous meaning full of. So carnivorous is full of flesh-eating.\"\n2. SAY: \"Now tick each sum that matches. Fix any sum that is missing a part.\"\n3. ASK: \"Which sum joins two roots together?\" 10 sec, turn and tell. EXPECT: carnivorous - carn and vore are both roots.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number three together, then re-check.\nTRAP: ticking a sum that leaves out a part. Fix: count the parts against the green line, then rewrite it.\nEXTENSION: Predict what herbivorous will mean before you meet it tomorrow - herb is the plant word.\nHELP: read the green sum first, then find each part inside the printed word.\n---\nPurpose: protected reveal so every student hears how a word breaks into parts. [You Do | Feedback | Morphology]"
       },
       "learned_words": {
         "review": [
@@ -970,10 +978,6 @@
       },
       "sound_bank": [
         {
-          "morph": "junct/join/joint",
-          "type": "root"
-        },
-        {
           "morph": "carn/carni",
           "type": "root"
         },
@@ -986,8 +990,8 @@
           "type": "root"
         },
         {
-          "morph": "dis-",
-          "type": "prefix"
+          "morph": "pict/picto",
+          "type": "root"
         },
         {
           "morph": "mal-",
@@ -1003,6 +1007,10 @@
         },
         {
           "morph": "-acy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ite",
           "type": "suffix"
         }
       ],
@@ -1131,31 +1139,30 @@
         "jointly",
         "disjointed"
       ],
-      "extension": "1. SAY: \"When you finish, turn one spelling word into a question you could ask a partner.\"\n2. CHECK: the question must show the join meaning, not just use the word.\nEXTENSION: Add a taught prefix or suffix to junct and build a real word we have not used today, then write its full morpheme sum and meaning.\nThen use your new word in one sentence about a road or about a sentence.",
+      "extension": "1. SAY: \"When you finish, turn one spelling word into a question you could ask a partner.\"\n2. CHECK: the question must show the join meaning, not just use the word.\nEXTENSION: Build a new word from join or joint with one taught ending, then write its full morpheme sum and meaning.\nThen use your new word in one sentence about a road or about your knee.",
       "new_morph_activity": {
         "title": "Build the junct words",
         "rule": "junct and join mean join. Build each real word.",
-        "example": "One done for you:\ncon- + junct + -tion = conjunction",
+        "example": "One done for you:\njunct + -tion = junction (where two roads join)",
         "items": [
-          "1. junct + -tion = ?    2. dis- + joint + -ed = ?",
-          "3. joint + -ly = ?    4. in- + junct + -tion = ?"
+          "1. dis- + joint + -ed = ?    2. joint + -ly = ?",
+          "3. dis- + junct + -ive = ?"
         ],
         "item_size": 17,
         "routine": "Whiteboards - 3 min - boards up",
-        "footer": "Extension: build a fifth junct word",
-        "notes": "ANSWER: 1 junction, 2 disjointed, 3 jointly, 4 injunction.\n1. SAY: \"Look at the finished build first. Then write each real word on your board, spelled correctly.\"\n2. TIME: 3 minutes. Write it... chin it... show me on my cue.\n3. CIRCULATE: to a stuck student say, \"-tion is the ending that means the act of - so what do we call the spot where two roads do the joining?\" Then build number one together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number four together, then re-ask.\nTRAP: writing junctshun. Fix: point at the -tion card in the sound bank, say it, student rewrites the ending.\nEXTENSION: Build the longest junct word you can from taught parts, then write its full sum.\nHELP: Give the word bank junction, disjointed, jointly, injunction; students match each word to its build first.\n---\nPurpose: day one of junct builds words from real morpheme spellings. [You Do | Word building | Morphology]\nANSWERS:\n1. junct + -tion = junction\n2. dis- + joint + -ed = disjointed\n3. joint + -ly = jointly\n4. in- + junct + -tion = injunction\nEXTENSION: e.g. conjunctive = con- + junct + -ive, relating to joining two things together.",
+        "footer": "Extension: build the longest join word",
+        "notes": "ANSWER: 1 disjointed, 2 jointly, 3 disjunctive.\n1. SAY: \"Look at the finished build first. Then write each real word on your board, spelled correctly.\"\n2. TIME: 3 minutes. Write it... chin it... show me on my cue.\n3. CIRCULATE: to a stuck student say, \"dis- means apart - so what happens to something joined when it is pulled apart?\" Then build number one together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number three together, then re-ask.\nTRAP: losing the t and writing joinly or disjuncive. Fix: point at joint on the card, say the t, student rewrites.\nEXTENSION: Build the longest junct or join word you can from taught parts, then write its full sum.\nHELP: Give the word bank disjointed, jointly, disjunctive; students match each word to its build first.\n---\nPurpose: day one of junct builds words from real morpheme spellings. [You Do | Word building | Morphology]\nANSWERS:\n1. dis- + joint + -ed = disjointed\n2. joint + -ly = jointly\n3. dis- + junct + -ive = disjunctive\nEXTENSION: e.g. disjointedly = dis- + joint + -ed + -ly, the longest build from taught parts.",
         "check_title": "Tick it or fix it - Build the junct words",
         "check_rule": "Tick each correct word. Fix any that is spelled differently.",
         "check_items": [
-          "1. junct + -tion = junction (where two roads join)",
-          "2. dis- + joint + -ed = disjointed (pulled apart)",
-          "3. joint + -ly = jointly (done by two together)",
-          "4. in- + junct + -tion = injunction (an order to stop)"
+          "1. dis- + joint + -ed = disjointed (pulled apart)",
+          "2. joint + -ly = jointly (done by two together)",
+          "3. dis- + junct + -ive = disjunctive (not joined, kept separate)"
         ],
         "check_item_size": 17,
         "check_routine": "Tick - fix - explain",
         "check_footer": "Every word here has join inside it",
-        "check_notes": "ANSWER: 1 junction, 2 disjointed, 3 jointly, 4 injunction.\n1. MODEL: \"Number one is junct plus -tion. Junct means join and -tion means the act of, so junction is where the joining happens.\"\n2. SAY: \"Now tick each word that matches. Fix any word that is spelled differently.\"\n3. ASK: \"Which of these words would change meaning most if you took the prefix off?\" 10 sec, turn and tell. EXPECT: disjointed - without dis- it means joined instead of pulled apart.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number four together, then re-check.\nTRAP: ticking junction spelled with sh. Fix: read the green word chunk by chunk, then rewrite it.\nEXTENSION: Predict what adjunctive will mean before we meet it.\nHELP: read the green word first, then find junct or joint inside it.\n---\nPurpose: protected reveal so every student hears how each junct word is built. [You Do | Feedback | Morphology]"
+        "check_notes": "ANSWER: 1 disjointed, 2 jointly, 3 disjunctive.\n1. MODEL: \"Number one is dis- plus joint plus -ed. Dis- means apart, so disjointed is pulled apart at the joins.\"\n2. SAY: \"Now tick each word that matches. Fix any word that is spelled differently.\"\n3. ASK: \"Which of these words would change meaning most if you took the prefix off?\" 10 sec, turn and tell. EXPECT: disjointed - without dis- it means joined instead of pulled apart.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number three together, then re-check.\nTRAP: ticking disjunctive with the t missing. Fix: read the green word chunk by chunk, then rewrite it.\nEXTENSION: Find join hiding inside two more words you know and write them.\nHELP: read the green word first, then find junct or joint inside it.\n---\nPurpose: protected reveal so every student hears how each junct word is built. [You Do | Feedback | Morphology]"
       },
       "learned_words": {
         "review": [

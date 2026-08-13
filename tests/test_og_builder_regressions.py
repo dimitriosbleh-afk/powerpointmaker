@@ -190,6 +190,137 @@ class OgBuilderRegressionTests(unittest.TestCase):
         self.assertIn(("Sentence:", True, False), sentence_runs)
         self.assertIn(("preordained", False, True), sentence_runs)
 
+    # ------------------------------------------------ 2c sound bank derivation
+    def test_sound_bank_rejects_the_days_focus_morpheme(self):
+        """The junct defect: today's new morpheme banked before it is taught."""
+        session = {
+            "new_morphology": {"morph": "junct/join/joint", "type": "root"},
+            "sound_bank": [{"morph": "junct/join/joint", "type": "root"},
+                           {"morph": "micro", "type": "root"}],
+            "words_to_spell_review": [{"word": "micron"}],
+        }
+        OG.WARNINGS.clear()
+        OG.validate_sound_bank("Wednesday", session)
+        self.assertTrue(
+            any("focus morpheme" in warning for warning in OG.WARNINGS),
+            OG.WARNINGS,
+        )
+
+    def test_sound_bank_focus_check_matches_a_single_variant(self):
+        """A bank box need only match one variant of the focus label."""
+        session = {
+            "new_morphology": {"morph": "pict/picto", "type": "root"},
+            "sound_bank": [{"morph": "picto", "type": "root"}],
+            "words_to_spell_review": [{"word": "pictogram"}],
+        }
+        OG.WARNINGS.clear()
+        OG.validate_sound_bank("Wednesday", session)
+        self.assertTrue(any("focus morpheme" in w for w in OG.WARNINGS), OG.WARNINGS)
+
+    def test_unused_sound_bank_box_is_advisory_not_fatal(self):
+        """A substring heuristic must not block an otherwise valid build."""
+        session = {
+            "sound_bank": [{"morph": "-ly", "type": "suffix"}],
+            "words_to_spell_review": [{"word": "micron"}, {"word": "carnage"}],
+        }
+        OG.WARNINGS.clear()
+        OG.NOTES.clear()
+        OG.validate_sound_bank("Wednesday", session)
+        self.assertEqual(OG.WARNINGS, [])
+        self.assertTrue(any("appears in none of the" in n for n in OG.NOTES), OG.NOTES)
+
+    def test_silent_e_stem_does_not_collapse_short_affixes(self):
+        """vore -> vor is wanted; -ine -> in would match half of English."""
+        self.assertIn("vor", OG.morph_surface_forms("vore"))
+        self.assertNotIn("in", OG.morph_surface_forms("-ine"))
+        self.assertNotIn("ic", OG.morph_surface_forms("-ice"))
+        self.assertEqual(OG.morph_surface_forms("-tion / -sion"), {"tion", "sion"})
+
+    def test_vore_box_counts_herbivorous_as_served(self):
+        session = {
+            "sound_bank": [{"morph": "vore", "type": "root"}],
+            "words_to_spell_review": [{"word": "herbivorous"}],
+        }
+        OG.WARNINGS.clear()
+        OG.NOTES.clear()
+        OG.validate_sound_bank("Friday", session)
+        self.assertEqual(OG.NOTES, [])
+
+    # ------------------------------------------------ 2f taught-morpheme gate
+    def _junct_week(self, items):
+        return {
+            "taught_morphemes": [],
+            "sessions": [{
+                "day": "Wednesday",
+                "new_morphology": {"morph": "junct/join/joint", "type": "root"},
+                "morphology_review": [{"morph": "micro", "type": "root"},
+                                      {"morph": "-ly", "type": "suffix"}],
+                "sound_bank": [{"morph": "dis-", "type": "prefix"},
+                               {"morph": "-tion / -sion", "type": "suffix"}],
+                "new_morph_activity": {"items": items},
+            }],
+        }
+
+    def test_you_do_flags_an_untaught_prefix(self):
+        """in- appeared once in a grid script line, so it is not taught."""
+        week = self._junct_week([
+            "1. junct + -tion = ?    2. dis- + joint + -ed = ?",
+            "3. joint + -ly = ?    4. in- + junct + -tion = ?",
+        ])
+        OG.WARNINGS.clear()
+        OG.validate_activity_morphemes("Wednesday", week, week["sessions"][0])
+        flagged = [w for w in OG.WARNINGS if "You Do uses morpheme" in w]
+        self.assertEqual(len(flagged), 1, OG.WARNINGS)
+        self.assertIn("'in-'", flagged[0])
+
+    def test_you_do_accepts_taught_parts_and_common_inflections(self):
+        """dis- and -tion are banked, -ly is a review card, -ed is universal."""
+        week = self._junct_week([
+            "1. junct + -tion = ?    2. dis- + joint + -ed = ?",
+            "3. joint + -ly = ?",
+        ])
+        OG.WARNINGS.clear()
+        OG.validate_activity_morphemes("Wednesday", week, week["sessions"][0])
+        self.assertEqual(OG.WARNINGS, [])
+
+    def test_you_do_scan_reaches_the_second_prompt_on_a_packed_line(self):
+        """10c packs two prompts per line; the tokenizer must see both."""
+        text = "1. junct + -tion = ?    2. in- + junct + -tion = ?"
+        found = [m.group(1) for m in OG.AFFIX_TOKEN_RE.finditer(text)]
+        self.assertIn("in-", found)
+
+    def test_you_do_scan_ignores_hyphenated_ordinary_words(self):
+        noise = "T-intersection self-check well-known 10-12yo"
+        self.assertEqual([m.group(1) for m in OG.AFFIX_TOKEN_RE.finditer(noise)], [])
+
+    def test_you_do_prose_items_are_not_scanned_for_affixes(self):
+        """No sum, no morpheme notation - a sorting task must not false-alarm."""
+        week = self._junct_week(["Sort these: re-do, un-tie, pre-heat"])
+        OG.WARNINGS.clear()
+        OG.validate_activity_morphemes("Wednesday", week, week["sessions"][0])
+        self.assertEqual(OG.WARNINGS, [])
+
+    def test_week_taught_morphemes_clears_an_earlier_taught_affix(self):
+        week = self._junct_week(["1. in- + junct + -tion = ?"])
+        OG.WARNINGS.clear()
+        OG.validate_activity_morphemes("Wednesday", week, week["sessions"][0])
+        self.assertTrue(OG.WARNINGS)
+        week["taught_morphemes"] = ["in-"]
+        OG.WARNINGS.clear()
+        OG.validate_activity_morphemes("Wednesday", week, week["sessions"][0])
+        self.assertEqual(OG.WARNINGS, [])
+
+    def test_earlier_session_in_the_week_counts_as_taught(self):
+        week = self._junct_week(["1. eco + -tion = ?"])
+        week["sessions"].insert(0, {
+            "day": "Monday",
+            "new_morphology": {"morph": "eco", "type": "root"},
+            "morphology_review": [], "sound_bank": [],
+        })
+        OG.WARNINGS.clear()
+        OG.validate_activity_morphemes("Wednesday", week, week["sessions"][1])
+        self.assertEqual(OG.WARNINGS, [])
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -196,8 +196,8 @@
           "type": "root"
         },
         {
-          "morph": "mal-",
-          "type": "prefix"
+          "morph": "-ine",
+          "type": "suffix"
         },
         {
           "morph": "-cy",
@@ -589,7 +589,7 @@
           "type": "prefix"
         },
         {
-          "morph": "-ery",
+          "morph": "-ine",
           "type": "suffix"
         },
         {
@@ -977,7 +977,7 @@
           "type": "suffix"
         },
         {
-          "morph": "-ice",
+          "morph": "-tion / -sion",
           "type": "suffix"
         }
       ],
