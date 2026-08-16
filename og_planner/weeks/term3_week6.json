@@ -1,0 +1,1691 @@
+{
+  "term": 3,
+  "week": 6,
+  "taught_morphemes": [
+    "mini-", "super-", "over-", "anti-", "ultra-", "retro-", "em-", "syn-", "sym-/sys-/syl-",
+    "-let", "-ling", "-cian", "-cial/-tial", "-ancy/-ance", "-ency/-ence", "-ity", "-tude",
+    "out-", "self-", "post-", "with-", "counter-", "contra-", "omni-", "intra-",
+    "-eer", "-ant", "-ar", "-ine", "-cy", "-ciate/-tiate",
+    "ped/pod", "rect/reg", "capt/capit", "flect/flex", "ord/ordin", "clud(e)/clus(e)",
+    "mal-", "-ery", "-ice", "-ive", "-ite", "-acy", "-ule", "mega-", "micro", "pict/picto",
+    "vore", "eco", "carn/carni", "junct/join/joint"
+  ],
+  "cohort": "Enrichment",
+  "unit_folder": "OG_Term3_Week6",
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "overview": {
+    "Monday": {
+      "morphology": [
+        "New Morphology",
+        "vict/vinc"
+      ],
+      "grammar": "Simple, compound, complex",
+      "learned_words": [
+        "New learned word",
+        "iron"
+      ]
+    },
+    "Tuesday": {
+      "morphology": [
+        "Review Morphology",
+        "vict/vinc"
+      ],
+      "grammar": "Simple, compound, complex",
+      "learned_words": [
+        "Review learned words",
+        "iron, stomach"
+      ]
+    },
+    "Wednesday": {
+      "morphology": [
+        "New Morphology",
+        "chron"
+      ],
+      "grammar": "Simple, compound, complex",
+      "learned_words": [
+        "New learned word",
+        "leopard"
+      ]
+    },
+    "Thursday": {
+      "morphology": [
+        "Review Morphology",
+        "chron"
+      ],
+      "grammar": "Simple, compound, complex - review",
+      "learned_words": [
+        "Review learned words",
+        "leopard, iron"
+      ]
+    },
+    "Friday": {
+      "morphology": "No session this week",
+      "grammar": "No session this week",
+      "learned_words": "No session this week"
+    }
+  },
+  "sessions": [
+    {
+      "day": "Monday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state",
+          "extra_task": {
+            "prompt": "Give me one word that ends in -acy.",
+            "answers": [
+              "accuracy",
+              "privacy",
+              "literacy",
+              "delicacy"
+            ]
+          }
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small",
+          "extra_task": {
+            "prompt": "Give me one micro word, meaning small.",
+            "answers": [
+              "microscope",
+              "microchip",
+              "microwave",
+              "microbe"
+            ]
+          }
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join",
+          "extra_task": {
+            "prompt": "Give me one junct or join word, meaning join.",
+            "answers": [
+              "junction",
+              "conjunction",
+              "jointly",
+              "adjoin"
+            ]
+          }
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "junction",
+          "privacy",
+          "microchip",
+          "carnivore",
+          "ecotourism",
+          "meteorite",
+          "picturesque",
+          "incarnation",
+          "megaphone",
+          "economical",
+          "insectivore",
+          "adjoin",
+          "carnation",
+          "extraordinary",
+          "ecocide"
+        ],
+        "notes": "1. READ: \"If your first name starts with A to F, read row 1.\"\n2. READ: \"G to L, read row 2.\"\n3. READ: \"M to R, read row 3.\"\n4. READ: \"S to Z, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"Which three words use eco, meaning house?\" 5 sec, choral response. EXPECT: ecotourism, economical, ecocide.\n7. ASK: \"carn means flesh. Which three words carry it?\" 5 sec, turn and tell. EXPECT: carnivore, incarnation, carnation.\n8. ASK: \"junct and join mean join. Which two words carry it?\" 5 sec, choral response. EXPECT: junction, adjoin.\n9. ASK: \"Which word names an animal that eats insects?\" 3 sec, choral response. EXPECT: insectivore.\n10. ASK: \"Which word means the opposite of ordinary?\" 3 sec, choral response. EXPECT: extraordinary.\n11. ASK: \"Make megaphone plural.\" 3 sec, choral response. EXPECT: megaphones.\n12. ASK: \"Which word names a rock that fell out of space?\" 3 sec, choral response. EXPECT: meteorite."
+      },
+      "sound_bank": [
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "clud(e)/clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "omni-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "ecology",
+          "sentence": "Our creek unit is really a study of local ecology.",
+          "prompt": "Which part of ecology means the study of?",
+          "answer": "The -ology ending. Eco means house, so ecology studies the natural home."
+        },
+        {
+          "word": "ecological",
+          "sentence": "The council did an ecological survey of our wetland.",
+          "prompt": "What does an ecological survey look at?",
+          "answer": "The natural home and everything living in it. Eco means house."
+        },
+        {
+          "word": "carnage",
+          "sentence": "The hailstorm left carnage across the school garden beds.",
+          "prompt": "Which part of carnage means flesh or meat?",
+          "answer": "The carn part. Carnage is what is left torn up after something violent."
+        },
+        {
+          "word": "conjunction",
+          "sentence": "We used a conjunction to join our two short sentences.",
+          "prompt": "Which part of conjunction means join?",
+          "answer": "The junct part. A conjunction is the word that joins two parts together."
+        },
+        {
+          "word": "jointly",
+          "sentence": "Our two classes jointly ran the second hand book stall.",
+          "prompt": "What does jointly tell you about the two classes?",
+          "answer": "They did it together. Joint is the place where two things join."
+        },
+        {
+          "word": "conjunctive",
+          "sentence": "The teacher called and, but and so conjunctive words.",
+          "prompt": "Which part of conjunctive means join?",
+          "answer": "The junct part again. Conjunctive means it does the job of joining."
+        },
+        {
+          "word": "microwave",
+          "sentence": "Dad reheated the soup in the microwave before training.",
+          "prompt": "Why is a microwave called that?",
+          "answer": "Micro means small. It cooks with very small, very fast waves."
+        },
+        {
+          "word": "omnivorous",
+          "sentence": "A bush rat is omnivorous, so it eats seeds and insects.",
+          "prompt": "Which two parts show that it eats everything?",
+          "answer": "Omni- means all and vore means eating, so it eats all sorts."
+        },
+        {
+          "word": "delicacy",
+          "sentence": "Fresh oysters are a delicacy at my nonna's table.",
+          "prompt": "What does the -acy ending do to the word delicate?",
+          "answer": "It names a quality or a thing with that quality. A delicacy is a rare treat."
+        },
+        {
+          "word": "exclusive",
+          "sentence": "The oval was exclusive to the year six team that lunchtime.",
+          "prompt": "Which part of exclusive means shut out?",
+          "answer": "The clus part, the same part as in exclude. Everyone else was shut out."
+        }
+      ],
+      "new_morphology": {
+        "morph": "vict/vinc",
+        "type": "root",
+        "keyword": "convict",
+        "meaning": "conquer"
+      },
+      "words_to_read_new": [
+        {
+          "word": "victor",
+          "meaning": "vict means conquer + -or means the one who: the one who conquered, the winner"
+        },
+        {
+          "word": "victory",
+          "meaning": "vict means conquer + -ory means the state of: the state of having conquered"
+        },
+        {
+          "word": "convict",
+          "meaning": "con- means completely + vict means conquer: to beat someone completely in court"
+        },
+        {
+          "word": "conviction",
+          "meaning": "con- means completely + vict means conquer + -tion means the act of: the act of proving someone guilty"
+        },
+        {
+          "word": "convince",
+          "meaning": "con- means completely + vinc means conquer: to completely conquer someone's doubt"
+        },
+        {
+          "word": "invincible",
+          "meaning": "in- means not + vinc means conquer + -ible means able to be: not able to be conquered"
+        },
+        {
+          "word": "evict",
+          "meaning": "e- means out + vict means conquer: to conquer someone out of a house"
+        },
+        {
+          "word": "eviction",
+          "meaning": "e- means out + vict means conquer + -tion means the act of: the act of putting someone out"
+        },
+        {
+          "word": "province",
+          "meaning": "pro- means for + vinc means conquer: land that was conquered and then ruled"
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Learn vict once and every word about winning, losing and courtrooms opens up for you as a reader and a speller.\"\nREAD each word as it appears, then connect vict or vinc to the card meaning: conquer.\nvictor - vict means conquer + -or means the one who: the one who conquered, so the winner.\nvictory - vict means conquer + -ory means the state of: the state of having conquered.\nconvict - con- means completely + vict means conquer: to beat someone completely in court and prove they did it.\nconviction - con- means completely + vict means conquer + -tion means the act of: the act of proving someone guilty in court.\nconvince - con- means completely + vinc means conquer: to completely conquer someone's doubt until they agree with you.\ninvincible - in- means not + vinc means conquer + -ible means able to be: not able to be conquered by anyone.\nevict - e- means out + vict means conquer: to conquer someone out of a house so they have to leave.\neviction - e- means out + vict means conquer + -tion means the act of: the act of putting someone out of a house.\nprovince - pro- means for + vinc means conquer: land that Rome conquered and then ruled for itself.\nMemory hook: hear vict or vinc and ask who beat whom. Picture the winner's podium - someone is standing on it and someone is not. Challenge: find one vict or vinc word in a sports report this week.",
+      "words_to_spell_new": [
+        "victory",
+        "convict",
+        "convince",
+        "invincible"
+      ],
+      "extension": "1. SAY: \"When you finish, write one sentence that uses two vict or vinc words and shows what they mean.\"\n2. CHECK: the sentence must show the conquer meaning, not just use the word.\nEXTENSION: Take the unseen word invincibility, write its full morpheme sum using -ity, then use it in one sentence about a team.\nA morpheme sum names every part and what each part means.",
+      "new_morph_activity": {
+        "title": "Meaning sums for vict and vinc",
+        "rule": "vict and vinc mean conquer. Build the real word from each meaning sum.",
+        "example": "One done for you:\nconquer someone in court = convict",
+        "items": [
+          "1. cannot be conquered = ?    2. the one who conquered = ?",
+          "3. to conquer a doubt = ?    4. the state of winning = ?"
+        ],
+        "item_size": 17,
+        "routine": "Whiteboards - 3 min - boards up",
+        "footer": "Extension: what does invincibility mean?",
+        "notes": "ANSWER: 1 invincible, 2 victor, 3 convince, 4 victory.\n1. SAY: \"Look at the finished sum first. Then build one real word for each number and write it on your board.\"\n2. TIME: 3 minutes. Write it... chin it... show me on my cue.\n3. CIRCULATE: to a stuck student say, \"conquer means beat - so what do we call the person who beat everyone else?\" Then build number one together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number three together, then re-ask.\nTRAP: writing victory for number two. Fix: point at the words the one who, say victor, student rewrites it.\nEXTENSION: Build the longest real word you can with vinc inside it, then write what each part does.\nHELP: Give the word bank invincible, victor, convince, victory; students match each word to its sum first.\n---\nPurpose: day one of vict builds words straight from the card meaning conquer. [You Do | Meaning sums | Morphology]\nANSWERS:\n1. cannot be conquered = invincible\n2. the one who conquered = victor\n3. to conquer a doubt = convince\n4. the state of winning = victory\nEXTENSION: invincibility = in (not) + vinc (conquer) + ible (able to be) + ity (the state of), the state of never being beaten.",
+        "check_title": "Tick it or fix it - Meaning sums for vict",
+        "check_rule": "Tick each correct word. Fix any word that does not match.",
+        "check_items": [
+          "1. cannot be conquered = invincible - vinc is inside it",
+          "2. the one who conquered = victor - vict at the front",
+          "3. to conquer a doubt = convince - vinc does the work",
+          "4. the state of winning = victory - vict plus the state"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Every answer has conquer inside it",
+        "check_notes": "ANSWER: 1 invincible, 2 victor, 3 convince, 4 victory.\n1. MODEL: \"Number one says cannot be conquered. Conquer is vinc, and the front says not, so it is invincible.\"\n2. SAY: \"Now tick each word that matches. Fix any word that is different.\"\n3. ASK: \"Which of these four words would change meaning most if you cut off its front part?\" 10 sec, turn and tell. EXPECT: invincible - without the not it would mean beatable.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number three together, then re-check.\nTRAP: ticking a word that is spelled wrong. Fix: read the green word chunk by chunk, then rewrite it.\nEXTENSION: Predict what vincible will mean before we meet it.\nHELP: read the green word first, then find vict or vinc inside it.\n---\nPurpose: protected reveal so every student hears how each vict word is built. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "stomach",
+            "unfair": "ch",
+            "notes": "Why learned: ch says /k/ here because the word came to us from Greek, and the a says a plain /uh/.\nSay it: STUM-uk, two beats. Write sto - mach, then check the ending is ch, not k.\nQuick link: the same Greek ch turns up in school and in chorus."
+          },
+          {
+            "word": "species",
+            "unfair": "ci",
+            "notes": "Why learned: the ci says /sh/, which those two letters almost never do, and the final es says /eez/.\nSay it: SPEE-sheez, two beats. Write spe - cies in two chunks.\nQuick link: one species, ten species - the word never takes an extra s."
+          }
+        ],
+        "new": {
+          "word": "iron",
+          "unfair": "ro",
+          "notes": "Why learned: the r is silent and the o says a plain /uh/, so the whole ro chunk sounds like nothing you would predict.\nSay it: EYE-uhn, two beats. Say eye, then uhn, and write i - ron in two chunks.\nLink: iron is the metal in a bridge and the mineral in your blood, so it turns up in science and in history.\nYou will write this word in every materials report and every Iron Age page this term."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The victor held the heavy iron cup high above her head.",
+          "targets": [
+            "victor",
+            "iron"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "one simple sentence, no extra commas; today's root vict and the new red word iron"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Mia, our new sports captain, carried the heavy iron trophy back after our victory.",
+          "targets": [
+            "iron",
+            "victory"
+          ],
+          "cups": {
+            "capitals": [
+              "Mia"
+            ],
+            "punctuation": [
+              "comma before the extra naming words (it opens the words that rename Mia)",
+              "comma after the extra naming words (it closes them before the sentence goes on)",
+              "full stop"
+            ]
+          },
+          "focus": "still a simple sentence, just longer; iron and victory"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Name a simple sentence and start the week's Sentence Smackdown.\nWHY THIS WEEK: students write in one gear - all short sentences, or one long run-on - so the reader is either jolted or lost.\nGAME: keep a Class v Teacher tally in the corner of the board all week. Class point when every signal is right, my point when it is not.\nPREP: OG books open. All grammar this week is written in the OG book. Signals: 1 finger simple, 2 fingers compound, C hand complex.",
+        "i_do": {
+          "title": "One idea, one sentence",
+          "rule": "A simple sentence has one idea with its own verb, and it stands alone.",
+          "example": "The leopard slept.\nThe hungry leopard slept in the shade.",
+          "items": [
+            "A verb is the doing or being word: slept, is, ran.",
+            "Test: read it alone. Does it leave you waiting?"
+          ],
+          "routine": "Eyes on me - fingers ready",
+          "footer": "Tomorrow: what happens with two ideas?",
+          "notes": "ANSWER: both sentences are simple - each one holds one idea that stands alone.\n1. SAY: \"A simple sentence is one idea that can stand on its own, and knowing it is how you stop half-finished sentences reaching your reader.\"\n2. WRITE: copy \"The leopard slept.\" onto the class board. POINT at slept and say it is the verb.\n3. WRITE: add the extra words so the class board reads \"The hungry leopard slept in the shade.\" Underline slept again.\n4. ASK: \"Is the longer one still simple?\" 5 sec, choral response. EXPECT: yes, it is still one idea with one verb.\nTRAP: thinking long means compound. Fix: count the verbs aloud, find only one, student re-labels it simple.\nCLARIFY: if a student asks whether a long sentence can still be simple, say yes - length is not the test, one stand-alone idea is.\n---\nPurpose: day one names the simple sentence and starts the signal game. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: a simple sentence is one independent clause - one subject doing one thing, however many describing words it carries."
+        },
+        "we_do": {
+          "title": "Round 1 - stand alone or not",
+          "rule": "A simple sentence has one idea with its own verb, and it stands alone.",
+          "example": "A) Because the bell rang.\nB) The bell rang at nine.",
+          "items": [
+            "One finger if it can stand alone. Fist if it cannot.",
+            "Class point if every hand is right. My point if not."
+          ],
+          "routine": "Fingers on three - voices off",
+          "footer": "Stem: A leaves me waiting because ...",
+          "notes": "ANSWER: A is not a sentence yet. B is a simple sentence.\n1. SAY: \"Round one of Sentence Smackdown. One finger if it stands alone, a fist if it leaves you waiting.\"\n2. TIME: 15 seconds thinking, voices off, then fingers up, everyone, together, on three.\n3. SCAN every hand. 80%+ -> class point on the board. Less -> my point, read A aloud and stop dead, then re-ask.\n4. ASK: \"What is A still waiting for?\" 5 sec, cold call two students. EXPECT: what happened when the bell rang.\nTRAP: choosing A because it has a verb in it. Fix: read A aloud to the end, hear the wait, then re-signal.\nCLARIFY: if a student argues that A is a sentence, read it aloud and stop dead - the waiting feeling is the evidence.\n---\nPurpose: guided judgement that separates a whole idea from a fragment. [We Do | Guided practice | Grammar | HITS 7]\nPREP: A is a fragment - a subordinate clause with no main clause attached to it."
+        },
+        "you_do": {
+          "title": "Smackdown - your turn",
+          "rule": "Your turn: write yes if it is a simple sentence, no if it is not.",
+          "example": "One done for you:\nWhen the siren sounded. = no",
+          "items": [
+            "A) The iron gate creaked.",
+            "B) After the long carnival parade."
+          ],
+          "item_size": 17,
+          "routine": "OG books - 90 sec - pens down",
+          "footer": "Check: does it leave you waiting?",
+          "notes": "ANSWER: A - yes. B - no.\n1. SAY: \"Look at the finished one first. Then copy A and B and write yes or no beside each.\"\n2. TIME: 90 seconds in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"read it out to yourself and then stop - if you are still waiting for something, it is a no.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> read B aloud together and hear the wait, then re-check.\nTRAP: writing yes for B because it is long. Fix: read only B aloud, hear the wait, student changes it to no.\nEXTENSION: Turn B into a simple sentence, then write a second simple sentence about the same moment that runs to at least ten words.\nHELP: Give students the two answers yes and no; they match each one to A or B and then say why.\n---\nPurpose: independent use of the stand-alone test; tomorrow joins two of them. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) The iron gate creaked. = yes, one idea with the verb creaked\nB) After the long carnival parade. = no, nothing has happened yet\nEXTENSION: e.g. After the long carnival parade, we walked home. The crowd slowly emptied out of the wide main street.",
+          "check_title": "Tick it or fix it - Smackdown round 1",
+          "check_rule": "Tick each correct answer. Fix any answer that does not match.",
+          "check_items": [
+            "A) The iron gate creaked. = yes",
+            "One idea, and creaked is the verb, so nothing is hanging.",
+            "B) After the long carnival parade. = no",
+            "It leaves you waiting - no verb is doing anything yet."
+          ],
+          "check_item_size": 17,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: read each sentence alone.",
+          "check_notes": "ANSWER: A - yes. B - no.\n1. MODEL: \"In A I read The iron gate creaked and then stop. Nothing is missing, so it stands alone.\"\n2. SAY: \"Now tick each answer that matches. Fix any answer that is different.\"\n3. ASK: \"What one word would you add to B to make it stand alone?\" 10 sec, turn and tell. EXPECT: any verb group, for example we cheered.\n4. SCAN corrections. 80%+ -> class point on the board. Less -> finish B together, then re-check.\n5. SAY: \"When you edit your next draft, read each sentence on its own - if it leaves you waiting, it is not finished.\"\nTRAP: ticking B because it sounds impressive. Fix: read it alone, hear the wait, then correct it.\n---\nPurpose: the answer slide shows how the stand-alone test decides each one. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "type": "review",
+      "morphology_review": [
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small",
+          "extra_task": {
+            "prompt": "Give me one word that ends in -ule, meaning small.",
+            "answers": [
+              "nodule",
+              "capsule",
+              "granule",
+              "molecule"
+            ]
+          }
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer",
+          "extra_task": {
+            "prompt": "Give me one vict or vinc word, meaning conquer.",
+            "answers": [
+              "victor",
+              "victory",
+              "convince",
+              "invincible"
+            ]
+          }
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million",
+          "extra_task": {
+            "prompt": "Give me one mega- word, meaning million.",
+            "answers": [
+              "megabyte",
+              "megawatt",
+              "megalitre",
+              "megaphone"
+            ]
+          }
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "capsule",
+          "convict",
+          "ecologist",
+          "micrometer",
+          "carnival",
+          "accuracy",
+          "injunction",
+          "herbivore",
+          "economise",
+          "dynamite",
+          "pictograph",
+          "invincible",
+          "reflection",
+          "juncture",
+          "reincarnate"
+        ],
+        "notes": "1. READ: \"If your birthday is in January, February or March, read row 1.\"\n2. READ: \"April, May or June, read row 2.\"\n3. READ: \"July, August or September, read row 3.\"\n4. READ: \"October, November or December, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"Which two words use vict or vinc, meaning conquer?\" 5 sec, choral response. EXPECT: convict, invincible.\n7. ASK: \"eco means house. Which two words carry it?\" 5 sec, turn and tell. EXPECT: ecologist, economise.\n8. ASK: \"junct means join. Which two words carry it?\" 5 sec, choral response. EXPECT: injunction, juncture.\n9. ASK: \"Which word names an animal that eats only plants?\" 3 sec, choral response. EXPECT: herbivore.\n10. ASK: \"Which word is a synonym for exactness?\" 3 sec, choral response. EXPECT: accuracy.\n11. ASK: \"Make capsule plural.\" 3 sec, choral response. EXPECT: capsules.\n12. ASK: \"Which word might you hear at a street party with rides and food?\" 3 sec, choral response. EXPECT: carnival."
+      },
+      "sound_bank": [
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root"
+        },
+        {
+          "morph": "capt/capit",
+          "type": "root"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "ecosystem",
+          "sentence": "Every frog in that pond ecosystem needs clean water.",
+          "prompt": "Which part of ecosystem goes back to the word house?",
+          "answer": "The eco part. An ecosystem is the natural house that living things share."
+        },
+        {
+          "word": "carnivorous",
+          "sentence": "The frilled lizard is carnivorous and hunts insects all day.",
+          "prompt": "Which two parts show that it eats meat?",
+          "answer": "Carn means flesh and vore means eating."
+        },
+        {
+          "word": "conjoin",
+          "sentence": "The builders will conjoin the two shelters with one roof.",
+          "prompt": "Which two parts build conjoin?",
+          "answer": "Con- means together and join means join."
+        },
+        {
+          "word": "disjointed",
+          "sentence": "My first draft felt disjointed, so I rewrote the middle.",
+          "prompt": "Which part of disjointed tells you it has come apart?",
+          "answer": "The dis- prefix. Joint is where two parts meet, so disjointed is pulled apart."
+        },
+        {
+          "word": "microscope",
+          "sentence": "Each pair shared one microscope in the science room.",
+          "prompt": "Which two parts build microscope?",
+          "answer": "Micro means small and scope means look at."
+        },
+        {
+          "word": "depicted",
+          "sentence": "The mural depicted our creek before the town was built.",
+          "prompt": "Which part of depicted means paint?",
+          "answer": "The pict part, and the -ed ending puts it in the past."
+        },
+        {
+          "word": "molecule",
+          "sentence": "One molecule of water holds three atoms.",
+          "prompt": "How big is a molecule?",
+          "answer": "Very small. The -ule ending means small."
+        },
+        {
+          "word": "captive",
+          "sentence": "The wildlife park keeps two captive owls for rescue work.",
+          "prompt": "Which part of captive means take or seize?",
+          "answer": "The capt part, the same part as in capture. A captive has been taken."
+        },
+        {
+          "word": "victory",
+          "sentence": "Our narrow victory came from one goal in the last minute.",
+          "prompt": "Which part of victory means conquer?",
+          "answer": "The vict part. Victory is the state of having conquered."
+        },
+        {
+          "word": "eviction",
+          "sentence": "The news reported the eviction of a family from their flat.",
+          "prompt": "Which part of eviction tells you someone was put out?",
+          "answer": "The e- at the front means out, and vict means conquer, so they were forced out."
+        }
+      ],
+      "new_morphology": {
+        "morph": "vict/vinc",
+        "type": "root",
+        "keyword": "convict",
+        "meaning": "conquer"
+      },
+      "words_to_read_new": [
+        {
+          "word": "province",
+          "meaning": "pro- means for + vinc means conquer: land that was conquered and then ruled"
+        },
+        {
+          "word": "provincial",
+          "meaning": "province + -ial means relating to: relating to a province, far from the capital"
+        },
+        {
+          "word": "victorious",
+          "meaning": "vict means conquer + -ous means full of: full of victory, so you won"
+        },
+        {
+          "word": "convincing",
+          "meaning": "con- means completely + vinc means conquer + -ing: conquering your doubt as you listen"
+        },
+        {
+          "word": "unconvincing",
+          "meaning": "un- means not + con- + vinc means conquer + -ing: not conquering your doubt at all"
+        },
+        {
+          "word": "evicted",
+          "meaning": "e- means out + vict means conquer + -ed means past: was conquered out of a home"
+        },
+        {
+          "word": "convicted",
+          "meaning": "con- means completely + vict means conquer + -ed means past: was found guilty in court"
+        },
+        {
+          "word": "conviction",
+          "meaning": "con- means completely + vict means conquer + -tion means the act of: the act of being found guilty"
+        },
+        {
+          "word": "invincible",
+          "meaning": "in- means not + vinc means conquer + -ible means able to be: not able to be conquered"
+        }
+      ],
+      "associated_word_exceptions": [
+        {
+          "word": "provincial",
+          "reason": "Ground 3: it stacks the taught -cial/-tial card onto province, which no remaining associated word offers, and it is printed on the card as an associated word in its own right.",
+          "source": "Photographed Yoshimoto card IMG_7665.JPG associated_words list, and OG/Morphology USB files/Lower Level Latin Scrolls.pdf PDF page 330 (Lower Level Latin Roots master table, printed Page 20: 'vict vinc (conquer)' derivative provincial)."
+        },
+        {
+          "word": "victorious",
+          "reason": "Ground 1: the captured card holds only ten associated words and Monday used nine of them, so the review day needs family extensions. Printed in the OG canon under this root.",
+          "source": "OG/Morphology USB files/Lower Level Latin Scrolls.pdf PDF page 330 (Lower Level Latin Roots master table, printed Page 20: 'vict vinc (conquer)' derivatives include victorious)."
+        },
+        {
+          "word": "convincing",
+          "reason": "Ground 1: regular -ing form of the card word convince, needed because the card family is exhausted after Monday. Morpheme visibly present and carrying the taught meaning.",
+          "source": "Regular inflection of the photographed card word 'convince' with the universal suffix -ing; Australian spelling unchanged."
+        },
+        {
+          "word": "unconvincing",
+          "reason": "Ground 3: adds the everyday un- contrast so students see the conquer meaning switch off, which no remaining associated word does.",
+          "source": "Regular derivation of the photographed card word 'convince' with everyday un- and the universal suffix -ing; Australian spelling unchanged."
+        },
+        {
+          "word": "evicted",
+          "reason": "Ground 1: regular past-tense form of the card word evict, needed to extend the family on the review day.",
+          "source": "Regular inflection of the photographed card word 'evict' with the universal suffix -ed; Australian spelling unchanged."
+        },
+        {
+          "word": "convicted",
+          "reason": "Ground 1: regular past-tense form of the card word convict, needed to extend the family on the review day.",
+          "source": "Regular inflection of the photographed card word 'convict' with the universal suffix -ed; Australian spelling unchanged."
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears, then connect vict or vinc back to the card meaning: conquer.\nprovince - pro- means for + vinc means conquer: land that was conquered and then ruled from far away.\nprovincial - province + -ial means relating to: relating to a province, so a long way from the big city.\nvictorious - vict means conquer + -ous means full of: full of victory, so the team came home winners.\nconvincing - con- means completely + vinc means conquer + -ing: conquering your doubt while you listen.\nunconvincing - un- means not + con- means completely + vinc means conquer + -ing: not conquering your doubt at all.\nevicted - e- means out + vict means conquer + -ed means past: was conquered out of a home and had to go.\nconvicted - con- means completely + vict means conquer + -ed means past: was beaten in court and found guilty.\nconviction - con- means completely + vict means conquer + -tion means the act of: the act of being found guilty.\ninvincible - in- means not + vinc means conquer + -ible means able to be: not able to be conquered by anyone.\nMemory hook: hear vict or vinc and ask who beat whom. Picture the winner's podium - someone is standing on it and someone is not. Challenge: find one vict or vinc word in a sports report this week.",
+      "words_to_spell_new": [
+        "victorious",
+        "convincing",
+        "convicted",
+        "provincial"
+      ],
+      "extension": "1. SAY: \"When you finish, write the meaning of one spelling word in your own words, using the word conquer.\"\n2. CHECK: the meaning must use the root, not just describe the picture.\nEXTENSION: Build the longest real vict or vinc word you can from parts you have been taught, write its full morpheme sum, then use it in one sentence about a game.\nA morpheme sum names every part and what each part means.",
+      "new_morph_activity": {
+        "title": "What does it mean - vict and vinc",
+        "rule": "vict and vinc mean conquer. Write what each word means, using the word conquer.",
+        "example": "One done for you:\nevicted = conquered out of a home",
+        "items": [
+          "1. victorious = ?    2. convincing = ?",
+          "3. unconvincing = ?    4. conviction = ?"
+        ],
+        "item_size": 17,
+        "routine": "OG books - 3 min - books up",
+        "footer": "Extension: use two of them in one line",
+        "notes": "ANSWER: 1 you conquered so you won, 2 it conquers your doubt, 3 it does not conquer your doubt, 4 found guilty in court.\n1. SAY: \"Look at the finished meaning first. Then write what each word means, and make sure the word conquer is in every answer.\"\n2. TIME: 3 minutes in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"cover everything except vinc - now who is being conquered in this word, a person or a doubt?\" Then do number one together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> write number three together, then re-ask.\nTRAP: writing a meaning with no conquer in it. Fix: point at vict on the card, say conquer, student adds it.\nEXTENSION: Write one sentence that holds two of these words and shows both meanings at once.\nHELP: Give the sentence frame It means ... conquered ...; students fill the two gaps for each word.\n---\nPurpose: day two turns each vict word back into the card meaning in the students' own words. [You Do | Literal meanings | Morphology]\nANSWERS:\n1. victorious = you conquered, so you won\n2. convincing = it conquers your doubt\n3. unconvincing = it does not conquer your doubt\n4. conviction = beaten in court and found guilty\nEXTENSION: e.g. Our victorious captain gave a convincing speech about the final.",
+        "check_title": "Tick it or fix it - What does it mean",
+        "check_rule": "Tick each meaning that matches. Fix any meaning without conquer in it.",
+        "check_items": [
+          "1. victorious = you conquered, so you won",
+          "2. convincing = it conquers your doubt",
+          "3. unconvincing = it does not conquer your doubt",
+          "4. conviction = beaten in court and found guilty"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Every meaning uses the word conquer",
+        "check_notes": "ANSWER: 1 you conquered so you won, 2 it conquers your doubt, 3 it does not conquer your doubt, 4 found guilty in court.\n1. MODEL: \"For number one I cover the ending and find vict, meaning conquer. Victorious means you conquered, so you won.\"\n2. SAY: \"Now tick each meaning that matches. Fix any meaning that has no conquer in it.\"\n3. ASK: \"Numbers two and three are almost the same word, so what does un- do to the conquering?\" 10 sec, turn and tell. EXPECT: it switches it off - the doubt is never beaten.\n4. SCAN corrections. 80%+ -> continue. Less -> rewrite number three together, then re-check.\nTRAP: ticking a meaning that only describes a feeling. Fix: check the word conquer is actually there, then rewrite it.\nEXTENSION: Write what vincible would have to mean, using conquer.\nHELP: read the green meaning first, then find vict or vinc inside the printed word.\n---\nPurpose: protected reveal so every student hears the card meaning inside each word. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "iron",
+            "unfair": "ro",
+            "notes": "Why learned: the r is silent and the o says a plain /uh/, so the ro chunk sounds like nothing you would predict.\nSay it: EYE-uhn, two beats. Chin it back to me, then write i - ron in two chunks.\nQuick link: the r stays silent in ironing and in ironed as well."
+          },
+          {
+            "word": "stomach",
+            "unfair": "ch",
+            "notes": "Why learned: ch says /k/ here because the word came to us from Greek, and the a says a plain /uh/.\nSay it: STUM-uk, two beats. Write sto - mach, three letters then four.\nQuick link: a carnivore's stomach is built for meat, so last week's root fits this word."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Our convincing win made the whole team feel invincible today.",
+          "targets": [
+            "convincing",
+            "invincible"
+          ],
+          "cups": {
+            "capitals": [
+              "Our"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "one simple sentence; two vinc words from today's grid"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "We felt invincible after that win, but the heavy iron gate had already been locked.",
+          "targets": [
+            "invincible",
+            "iron"
+          ],
+          "cups": {
+            "capitals": [
+              "We"
+            ],
+            "punctuation": [
+              "comma before the joining word but (it separates the two stand-alone halves of a compound sentence)",
+              "full stop"
+            ]
+          },
+          "focus": "a compound sentence with a comma before but; invincible and the red word iron"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Join two stand-alone ideas into one compound sentence.\nWHY THIS WEEK: students write in one gear, so the reader is either jolted by short sentences or lost in a run-on.\nGAME: round 2 of Sentence Smackdown. Keep the Class v Teacher tally going in the corner of the board.\nPREP: OG books open. All grammar this week is written in the OG book.",
+        "i_do": {
+          "title": "Two ideas, one joining word",
+          "rule": "A compound sentence joins two stand-alone ideas with and, but, so or or.",
+          "example": "The bell rang. We kept working.\nThe bell rang, but we kept working.",
+          "items": [
+            "Both halves still stand alone on their own.",
+            "The comma goes before the joining word."
+          ],
+          "routine": "Eyes on me - watch the comma",
+          "footer": "Stem: Both halves stand alone because ...",
+          "notes": "ANSWER: but joins the two halves, and the comma sits in front of it.\n1. SAY: \"A compound sentence puts two whole ideas in one sentence, so your reader gets the link between them instead of two flat little sentences.\"\n2. WRITE: copy \"The bell rang. We kept working.\" onto the class board. POINT at each full stop.\n3. WRITE: rub out the first full stop, add a comma and but, and lower the W so the board reads \"The bell rang, but we kept working.\"\n4. ASK: \"Could each half still stand alone?\" 5 sec, choral response. EXPECT: yes, both halves are whole ideas.\nTRAP: putting the comma after the joining word. Fix: point at but, place the comma in front of it, student rereads it.\nCLARIFY: if a student asks whether every and needs a comma, say only when both halves could stand alone by themselves.\n---\nPurpose: restates the simple sentence, then joins two of them. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: and, but, so and or are coordinating conjunctions; the comma comes before them when they join two independent clauses."
+        },
+        "we_do": {
+          "title": "Round 2 - beat the teacher",
+          "rule": "A compound sentence joins two stand-alone ideas with and, but, so or or.",
+          "example": "We trained all term, and we lost.\nI picked the wrong joining word.",
+          "items": [
+            "Which joining word fits? Fingers: 1 and, 2 but, 3 so.",
+            "Then read the fixed sentence back to me."
+          ],
+          "routine": "Fingers on three - voices off",
+          "footer": "Stem: But fits because ...",
+          "notes": "ANSWER: but - the second half is a surprise after the first.\n1. SAY: \"I have joined these two halves with the wrong word. Catch me out and pick the right one.\"\n2. TIME: 15 seconds thinking, voices off, then fingers up, everyone, together, on three.\n3. SCAN every hand. 80%+ -> class point, then read the fixed sentence together. Less -> my point, read my version aloud so they hear it, then re-ask.\n4. ASK: \"Why does and sound wrong there?\" 5 sec, cold call two students. EXPECT: and expects more of the same, and losing is the opposite.\nTRAP: changing the comma instead of the joining word. Fix: cover the comma, read both halves, choose the word, then check the comma.\nCLARIFY: any joining word counts if both halves still stand alone and the meaning still makes sense.\n---\nPurpose: guided choice of the joining word, with the class checking me. [We Do | Guided practice | Grammar | HITS 7]\nPREP: but is right because the second clause contradicts the first; and would flatten the contrast."
+        },
+        "you_do": {
+          "title": "Smackdown - join them",
+          "rule": "Your turn: join each pair into one compound sentence.",
+          "example": "One done for you:\nThe rain stopped. We ran outside.\nThe rain stopped, so we ran outside.",
+          "items": [
+            "A) The victor smiled. The crowd cheered. (and)",
+            "B) We searched all day. We found nothing. (but)"
+          ],
+          "item_size": 17,
+          "routine": "OG books - 90 sec - pens down",
+          "footer": "Check: did you write the comma?",
+          "notes": "ANSWER: A - The victor smiled, and the crowd cheered. B - We searched all day, but we found nothing.\n1. SAY: \"Look at the finished one first. Then join each pair using the word in brackets, and write the whole sentence out.\"\n2. TIME: 90 seconds in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"the first full stop is the spot - swap it for a comma and the bracket word, then make the next letter small.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> join B together on the board, then re-check.\nTRAP: keeping the capital letter after the comma. Fix: point at the comma, lower the next letter, student rewrites it.\nEXTENSION: Join each pair again with a different joining word so the meaning changes, then write one sentence saying what changed for the reader.\nHELP: Give students the two halves already written out; they only add the comma and the joining word.\n---\nPurpose: independent joining of two stand-alone ideas; tomorrow adds the part that cannot stand alone. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) The victor smiled, and the crowd cheered.\nB) We searched all day, but we found nothing.\nEXTENSION: e.g. The victor smiled, so the crowd cheered - now the smile causes the cheer instead of just sitting beside it.",
+          "check_title": "Tick it or fix it - Smackdown round 2",
+          "check_rule": "Tick each correct sentence. Fix any sentence missing its comma.",
+          "check_items": [
+            "A) The victor smiled, and the crowd cheered.",
+            "Both halves stand alone, so the comma goes before and.",
+            "B) We searched all day, but we found nothing.",
+            "But signals the surprise, and the comma still comes first."
+          ],
+          "check_item_size": 17,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: two ideas, one comma.",
+          "check_notes": "ANSWER: A - The victor smiled, and the crowd cheered. B - We searched all day, but we found nothing.\n1. MODEL: \"In A both halves stand alone, so I put a comma in first and then the word and, and the crowd keeps its small c.\"\n2. SAY: \"Now tick each sentence that matches. Fix any sentence that is missing its comma.\"\n3. ASK: \"What would change for the reader if B used and instead of but?\" 10 sec, turn and tell. EXPECT: the surprise disappears and it sounds like nothing went wrong.\n4. SCAN corrections. 80%+ -> class point on the board. Less -> rewrite B together, then re-check.\n5. SAY: \"In your next draft, find two short sentences sitting side by side and join them with a comma and a joining word.\"\nTRAP: ticking a sentence with the comma after the joining word. Fix: read it aloud, hear the wrong pause, then correct it.\n---\nPurpose: the answer slide shows where the comma belongs and why the joining word matters. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Wednesday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state"
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat",
+          "extra_task": {
+            "prompt": "Give me one carn word, meaning flesh or meat.",
+            "answers": [
+              "carnivore",
+              "carnival",
+              "carnation",
+              "carnage"
+            ]
+          }
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million"
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer",
+          "extra_task": {
+            "prompt": "Give me one vict or vinc word, meaning conquer.",
+            "answers": [
+              "victory",
+              "victorious",
+              "convict",
+              "invincible"
+            ]
+          }
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint",
+          "extra_task": {
+            "prompt": "Give me one pict word, meaning paint.",
+            "answers": [
+              "picture",
+              "pictograph",
+              "depict",
+              "pictorial"
+            ]
+          }
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "microbe",
+          "carnelian",
+          "victor",
+          "numeracy",
+          "joint",
+          "economy",
+          "voracious",
+          "megawatt",
+          "carnivore",
+          "subordinate",
+          "ecotourism",
+          "creative",
+          "convince",
+          "pictorial",
+          "rejoin"
+        ],
+        "notes": "1. READ: \"If there are one or two people living in your house, read row 1.\"\n2. READ: \"If there are three, read row 2.\"\n3. READ: \"If there are four, read row 3.\"\n4. READ: \"If there are five or more, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"Which two words use vict or vinc, meaning conquer?\" 5 sec, choral response. EXPECT: victor, convince.\n7. ASSIGN: one student picks a wheel category for points - Rhyming 2, Meaning 2, Synonym 3, Antonym 3, Analogy 5.\n8. ASK: \"carn means flesh. Which two words carry it?\" 5 sec, choral response. EXPECT: carnelian, carnivore.\n9. ASK: \"Which word means eating with a huge hunger?\" 3 sec, choral response. EXPECT: voracious.\n10. ASK: \"Which word is an antonym of destructive?\" 3 sec, choral response. EXPECT: creative.\n11. ASK: \"Make joint plural.\" 3 sec, choral response. EXPECT: joints.\n12. ASK: \"Which word might you hear in a maths lesson?\" 3 sec, choral response. EXPECT: numeracy.\n13. COLLECT: keep the running score on the board and let the next student pick."
+      },
+      "sound_bank": [
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root"
+        },
+        {
+          "morph": "flect/flex",
+          "type": "root"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "ecological",
+          "sentence": "Our class wrote an ecological report on the school wetland.",
+          "prompt": "Which part of ecological goes back to the word house?",
+          "answer": "The eco part. The report is about the natural house and everything in it."
+        },
+        {
+          "word": "carnage",
+          "sentence": "The hailstorm left carnage across the fruit trees.",
+          "prompt": "Which part of carnage means flesh or meat?",
+          "answer": "The carn part. Carnage is what is left torn up afterwards."
+        },
+        {
+          "word": "junction",
+          "sentence": "We turned left at the junction beside the old bakery.",
+          "prompt": "What happens at a junction?",
+          "answer": "Two roads join. The junct part means join."
+        },
+        {
+          "word": "conjunction",
+          "sentence": "Yesterday we joined two sentences with one conjunction.",
+          "prompt": "Which two parts build conjunction?",
+          "answer": "Con- means together and junct means join, so it joins two parts together."
+        },
+        {
+          "word": "microscopic",
+          "sentence": "The pond water held microscopic life we could not see.",
+          "prompt": "What does microscopic tell you about the life in that water?",
+          "answer": "It is far too small for your eyes. Micro means small."
+        },
+        {
+          "word": "depiction",
+          "sentence": "The gallery had a large depiction of the goldfields.",
+          "prompt": "Which part of depiction means paint?",
+          "answer": "The pict part. A depiction is a painted or drawn version of something."
+        },
+        {
+          "word": "megabyte",
+          "sentence": "Each photo we took on camp was almost one megabyte.",
+          "prompt": "How big is a megabyte?",
+          "answer": "Mega- means million, so a megabyte is about a million bytes."
+        },
+        {
+          "word": "reflective",
+          "sentence": "My bike jacket has reflective strips for winter mornings.",
+          "prompt": "Which part of reflective means bend?",
+          "answer": "The flect part. The light bends back off the strips."
+        },
+        {
+          "word": "evict",
+          "sentence": "The landlord tried to evict the family from their flat.",
+          "prompt": "Which two parts build evict?",
+          "answer": "The e- at the front means out and vict means conquer, so they are forced out."
+        },
+        {
+          "word": "conviction",
+          "sentence": "The court recorded one conviction after a long trial.",
+          "prompt": "What is a conviction?",
+          "answer": "The act of being found guilty. Con- means completely and vict means conquer."
+        }
+      ],
+      "new_morphology": {
+        "morph": "chron",
+        "type": "root",
+        "keyword": "chronology",
+        "meaning": "time"
+      },
+      "words_to_read_new": [
+        {
+          "word": "chronic",
+          "meaning": "chron means time + -ic means having the nature of: lasting a long time"
+        },
+        {
+          "word": "chronicle",
+          "meaning": "chron means time + -icle names the thing: the record of events in time order"
+        },
+        {
+          "word": "chronicler",
+          "meaning": "chron means time + -icle names the thing + -er means the one who: the one who writes that record"
+        },
+        {
+          "word": "chronology",
+          "meaning": "chron means time + -ology means the study of: the order things happened in"
+        },
+        {
+          "word": "chronometer",
+          "meaning": "chron means time + meter means measure: the instrument that measures time exactly"
+        },
+        {
+          "word": "synchronise",
+          "meaning": "syn- means together + chron means time + -ise means to make: to make two things run on the same time"
+        },
+        {
+          "word": "synchronised",
+          "meaning": "syn- means together + chron means time + -ise means to make + -ed means past: made to run on the same time"
+        },
+        {
+          "word": "anachronism",
+          "meaning": "ana- means back + chron means time + -ism names the thing: a thing sitting in the wrong time"
+        },
+        {
+          "word": "chronically",
+          "meaning": "chron means time + -ic means having the nature of + -ally means in that way: in a way that lasts a long time"
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Learn chron once and you can read and spell the time words that run through history, science and every timeline you will ever draw.\"\nREAD each word as it appears, then connect chron to the card meaning: time.\nchronic - chron means time + -ic means having the nature of: having the nature of lasting a long time.\nchronicle - chron means time + -icle names the thing: the thing that records events in time order.\nchronicler - chron means time + -icle names the thing + -er means the one who: the one who writes that record down.\nchronology - chron means time + -ology means the study of: the study of what happened in time order.\nchronometer - chron means time + meter means measure: the instrument that measures time exactly.\nsynchronise - syn- means together + chron means time + -ise means to make: to make two things run on the same time.\nsynchronised - syn- means together + chron means time + -ise means to make + -ed means past: made to run on the same time.\nanachronism - ana- means back + chron means time + -ism names the thing: a thing sitting in the wrong time, like a mobile phone in a Roman film.\nchronically - chron means time + -ic means having the nature of + -ally means in that way: in a way that lasts a long time.\nMemory hook: chron is the clock face hiding inside the word - if you see chron, put the word on a timeline. Challenge: find three chron words in your history or science book by Friday and order them.",
+      "words_to_spell_new": [
+        "chronic",
+        "chronicle",
+        "chronology",
+        "synchronise"
+      ],
+      "extension": "1. SAY: \"When you finish, turn one spelling word into a question you could ask a partner.\"\n2. CHECK: the question must show the time meaning, not just use the word.\nEXTENSION: Predict what the unseen word chronologically means from its parts, write its full morpheme sum, then use it in one sentence about a history timeline.\nA morpheme sum names every part and what each part means.",
+      "new_morph_activity": {
+        "title": "Build the chron words",
+        "rule": "chron means time. Build the real word from each meaning sum.",
+        "example": "One done for you:\ntime + lasting a long time = chronic",
+        "items": [
+          "1. time + the order of events = ?    2. time + measuring = ?",
+          "3. same time, together = ?    4. time + a written record = ?"
+        ],
+        "item_size": 17,
+        "routine": "Whiteboards - 3 min - boards up",
+        "footer": "Extension: predict chronologically",
+        "notes": "ANSWER: 1 chronology, 2 chronometer, 3 synchronise, 4 chronicle.\n1. SAY: \"Look at the finished build first. Then write each real word on your board, spelled correctly.\"\n2. TIME: 3 minutes. Write it... chin it... show me on my cue.\n3. CIRCULATE: to a stuck student say, \"syn is the part that means together - so what do you press on two watches to make them match?\" Then build number three together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number two together, then re-ask.\nTRAP: writing chronicle for number one. Fix: point at the words the order of events, say chronology, student rewrites it.\nEXTENSION: Build the longest real chron word you can from parts you have been taught, then write its full sum.\nHELP: Give the word bank chronology, chronometer, synchronise, chronicle; students match each word to its sum first.\n---\nPurpose: day one of chron builds words straight from the card meaning time. [You Do | Word building | Morphology]\nANSWERS:\n1. time + the order of events = chronology\n2. time + measuring = chronometer\n3. same time, together = synchronise\n4. time + a written record = chronicle\nEXTENSION: e.g. synchronised = syn (together) + chron (time) + ise (to make) + ed (past), made to run on the same time.",
+        "check_title": "Tick it or fix it - Build the chron words",
+        "check_rule": "Tick each correct word. Fix any word that is spelled differently.",
+        "check_items": [
+          "1. time + the order of events = chronology",
+          "2. time + measuring = chronometer (meter means measure)",
+          "3. same time, together = synchronise (syn means together)",
+          "4. time + a written record = chronicle"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Every answer has time inside it",
+        "check_notes": "ANSWER: 1 chronology, 2 chronometer, 3 synchronise, 4 chronicle.\n1. MODEL: \"Number two is time plus measuring. Chron is time and meter is measure, so a chronometer is the instrument that measures time.\"\n2. SAY: \"Now tick each word that matches. Fix any word that is spelled differently.\"\n3. ASK: \"Which of these four words would still make sense if you swapped chron for a different root?\" 10 sec, turn and tell. EXPECT: none of them - take time out and there is no word left.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number one together, then re-check.\nTRAP: losing the h and writing cronology. Fix: read the green word chunk by chunk, say c-h-r-o-n, then rewrite it.\nEXTENSION: Work out what a chronologist would do all day, then write it in one sentence.\nHELP: read the green word first, then find chron inside it and underline it.\n---\nPurpose: protected reveal so every student hears how each chron word is built. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "iron",
+            "unfair": "ro",
+            "notes": "Why learned: the r is silent and the o says a plain /uh/, so the ro chunk sounds like nothing you would predict.\nSay it: EYE-uhn, two beats. Write i - ron, then check the r is still there.\nQuick link: the Iron Age is a block of time, so this word will sit on a timeline today."
+          },
+          {
+            "word": "stomach",
+            "unfair": "ch",
+            "notes": "Why learned: ch says /k/ here because the word came to us from Greek, and the a says a plain /uh/.\nSay it: STUM-uk, two beats. Write sto - mach in two chunks.\nQuick link: chron came from Greek too, and Greek words are where our odd ch spellings come from."
+          }
+        ],
+        "new": {
+          "word": "leopard",
+          "unfair": "eo",
+          "notes": "Why learned: eo says one short /e/ here, not two vowel sounds, and the ard ending says /uhd/ with no r you can hear.\nSay it: LEP-uhd, two beats. Say lep, then uhd, and write leo - pard in two chunks.\nLink: a leopard is a carnivore and it is one species in its ecosystem, so three of our words meet in this animal.\nYou will write this word in every animal report and every food web this term."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "One young leopard moved through the dry ecosystem before dawn.",
+          "targets": [
+            "leopard",
+            "ecosystem"
+          ],
+          "cups": {
+            "capitals": [
+              "One"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "one simple sentence; the new red word leopard and last week's root eco"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "When the chronometer beeped, Ravi wrote down the exact time of the leopard sighting.",
+          "targets": [
+            "chronometer",
+            "leopard"
+          ],
+          "cups": {
+            "capitals": [
+              "When",
+              "Ravi"
+            ],
+            "punctuation": [
+              "comma after the opening waiting part (the when part cannot stand alone, so the comma shows where it ends)",
+              "full stop"
+            ]
+          },
+          "focus": "a complex sentence opening with a waiting part; chronometer and leopard"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Add a part that cannot stand alone and make a complex sentence.\nWHY THIS WEEK: students write in one gear, so the reader is either jolted by short sentences or lost in a run-on.\nGAME: round 3 of Sentence Smackdown. Keep the Class v Teacher tally going in the corner of the board.\nPREP: OG books open. All grammar this week is written in the OG book.",
+        "i_do": {
+          "title": "One part cannot stand alone",
+          "rule": "A complex sentence adds a part that cannot stand alone.",
+          "example": "The leopard hunted.\nWhen the sun set, the leopard hunted.",
+          "items": [
+            "Waiting words: because, when, although, if, while.",
+            "Cover the waiting part - the rest still stands alone."
+          ],
+          "routine": "Eyes on me - watch the split",
+          "footer": "Stem: It cannot stand alone because ...",
+          "notes": "ANSWER: When the sun set cannot stand alone; the leopard hunted can.\n1. SAY: \"A complex sentence adds a part that cannot stand alone, and that is how you tell your reader when or why something happened without a second sentence.\"\n2. WRITE: copy \"The leopard hunted.\" onto the class board. POINT at hunted and name it the verb.\n3. WRITE: add \"When the sun set,\" in front so the board reads \"When the sun set, the leopard hunted.\" Circle the comma.\n4. ASK: \"Which half leaves you waiting?\" 5 sec, choral response. EXPECT: When the sun set.\nTRAP: calling it compound because it has two parts. Fix: read the front part alone, hear the wait, student re-labels it complex.\nCLARIFY: if a student asks why the waiting part is not a sentence, cover the rest and read it aloud - it leaves you hanging.\n---\nPurpose: models building a complex sentence, not just spotting one. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: the waiting part is a subordinate clause; the word that opens it is a subordinating conjunction."
+        },
+        "we_do": {
+          "title": "Round 3 - hand chop",
+          "rule": "A complex sentence adds a part that cannot stand alone.",
+          "example": "Although our chronicle looked complete, one photo was missing.",
+          "items": [
+            "Hand chop in the air where the two parts split.",
+            "Then say only the part that can stand alone."
+          ],
+          "routine": "Hand chop on three - voices off",
+          "footer": "Stem: The waiting part is ...",
+          "notes": "ANSWER: the chop goes at the comma - one photo was missing stands alone.\n1. SAY: \"Round three. Chop the air exactly where this sentence splits into its two parts.\"\n2. TIME: 15 seconds thinking, voices off, then chop, everyone, together, on three.\n3. SCAN every chop. 80%+ -> class point, then read the stand-alone half together. Less -> my point, read the front part alone so they hear the wait, then re-ask.\n4. ASK: \"How do you know the front half cannot stand alone?\" 5 sec, cold call two students. EXPECT: although leaves you waiting for what happened.\nTRAP: chopping after complete instead of at the comma. Fix: read from the start to the comma, hear it stop, chop again.\nCLARIFY: the waiting part can sit at either end of the sentence; only the front position takes the comma.\n---\nPurpose: guided splitting of a complex sentence into its two parts. [We Do | Guided practice | Grammar | HITS 7]\nPREP: a fronted subordinate clause takes a comma; the same clause at the end usually does not."
+        },
+        "you_do": {
+          "title": "Smackdown - find the waiting part",
+          "rule": "Your turn: copy each one and write the part that cannot stand alone.",
+          "example": "One done for you:\nWhen the siren rang, we all stopped.\nCannot stand alone: When the siren rang",
+          "items": [
+            "A) Although the iron gate stuck, Sam got through.",
+            "B) We waited outside until the chronometer beeped."
+          ],
+          "item_size": 17,
+          "routine": "OG books - 90 sec - pens down",
+          "footer": "Check: does your part leave you waiting?",
+          "notes": "ANSWER: A - Although the iron gate stuck. B - until the chronometer beeped.\n1. SAY: \"Look at the finished one first. Then copy A and B and write only the part that cannot stand alone.\"\n2. TIME: 90 seconds in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"find the waiting word first - although, when, if, until - then take everything from there to the end of that part.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> read B's two halves aloud together, then re-check.\nTRAP: copying the whole sentence out. Fix: point at the waiting word, start there, student rewrites just that part.\nEXTENSION: Move the waiting part to the other end of each sentence, punctuate it correctly, then write which version you would use in your own story.\nHELP: Give students the two waiting words although and until; they box each one first, then take the words after it.\n---\nPurpose: independent identification of the part that cannot stand alone; tomorrow sorts all three. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) Although the iron gate stuck, Sam got through. Cannot stand alone: Although the iron gate stuck\nB) We waited outside until the chronometer beeped. Cannot stand alone: until the chronometer beeped\nEXTENSION: Sam got through, although the iron gate stuck. Until the chronometer beeped, we waited outside.",
+          "check_title": "Tick it or fix it - Smackdown round 3",
+          "check_rule": "Tick each correct answer. Fix any answer that does not match.",
+          "check_items": [
+            "A) Cannot stand alone: Although the iron gate stuck",
+            "Cover it and Sam got through still works on its own.",
+            "B) Cannot stand alone: until the chronometer beeped",
+            "We waited outside stands alone, so that half is fine."
+          ],
+          "check_item_size": 17,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: cover it and read on.",
+          "check_notes": "ANSWER: A - Although the iron gate stuck. B - until the chronometer beeped.\n1. MODEL: \"In A I cover Although the iron gate stuck. Sam got through still works, so the covered part is the one that cannot stand alone.\"\n2. SAY: \"Now tick each answer that matches. Fix any answer that is different.\"\n3. ASK: \"Why does A need a comma but B does not?\" 10 sec, turn and tell. EXPECT: A puts the waiting part first, so the comma shows where it ends.\n4. SCAN corrections. 80%+ -> class point on the board. Less -> cover B's halves together, then re-check.\n5. SAY: \"In your next draft, start one sentence with a when or because part so your reader gets the timing before the action.\"\nTRAP: ticking an answer that keeps the whole sentence. Fix: find the waiting word, start there, then correct it.\n---\nPurpose: the answer slide shows how the cover test finds the waiting part. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Thursday",
+      "type": "review",
+      "morphology_review": [
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house",
+          "extra_task": {
+            "prompt": "Give me one eco word, meaning house.",
+            "answers": [
+              "ecosystem",
+              "ecology",
+              "ecologist",
+              "economy"
+            ]
+          }
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small"
+        },
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time",
+          "extra_task": {
+            "prompt": "Give me one chron word, meaning time.",
+            "answers": [
+              "chronology",
+              "chronicle",
+              "chronometer",
+              "synchronise"
+            ]
+          }
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer",
+          "extra_task": {
+            "prompt": "Give me one vict or vinc word, meaning conquer.",
+            "answers": [
+              "victor",
+              "victorious",
+              "convince",
+              "eviction"
+            ]
+          }
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "globule",
+          "juncture",
+          "microphone",
+          "carnival",
+          "chronological",
+          "ecosystem",
+          "composite",
+          "picture",
+          "adjoin",
+          "victorious",
+          "omnivore",
+          "literacy",
+          "ecologist",
+          "include",
+          "incarnate"
+        ],
+        "notes": "1. READ: \"If sport is your favourite thing at school, read row 1.\"\n2. READ: \"If art is your favourite, read row 2.\"\n3. READ: \"If music is your favourite, read row 3.\"\n4. READ: \"If it is something else altogether, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"Which word uses chron, meaning time?\" 5 sec, choral response. EXPECT: chronological.\n7. ASK: \"vict and vinc mean conquer. Which word carries it?\" 5 sec, turn and tell. EXPECT: victorious.\n8. ASK: \"junct and join mean join. Which two words carry it?\" 5 sec, choral response. EXPECT: juncture, adjoin.\n9. ASK: \"Which word names an animal that eats both plants and meat?\" 3 sec, choral response. EXPECT: omnivore.\n10. ASK: \"Which word is an antonym of exclude?\" 3 sec, choral response. EXPECT: include.\n11. ASK: \"Make globule plural.\" 3 sec, choral response. EXPECT: globules.\n12. ASK: \"Which word might you hear at a street parade with rides?\" 3 sec, choral response. EXPECT: carnival."
+      },
+      "sound_bank": [
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root"
+        },
+        {
+          "morph": "clud(e)/clus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "economise",
+          "sentence": "Our camp had to economise on water in the last week.",
+          "prompt": "Which part of economise goes back to the word house?",
+          "answer": "The eco part. It first meant running a household carefully."
+        },
+        {
+          "word": "carnivorous",
+          "sentence": "A quoll is carnivorous, so it hunts other animals at night.",
+          "prompt": "Which two parts show that it eats meat?",
+          "answer": "Carn means flesh and vore means eating."
+        },
+        {
+          "word": "conjunctive",
+          "sentence": "The words and, but and so all do conjunctive work.",
+          "prompt": "Which part of conjunctive means join?",
+          "answer": "The junct part. Conjunctive means it does the job of joining."
+        },
+        {
+          "word": "jointly",
+          "sentence": "Both grades jointly planted the new trees near the fence.",
+          "prompt": "What does jointly tell you about the two grades?",
+          "answer": "They did it together. Joint is the place where two things join."
+        },
+        {
+          "word": "microwave",
+          "sentence": "The staffroom microwave broke on the coldest day of term.",
+          "prompt": "Why is a microwave called that?",
+          "answer": "Micro means small. It cooks with very small, very fast waves."
+        },
+        {
+          "word": "pictograph",
+          "sentence": "We drew a pictograph of our class lunch orders.",
+          "prompt": "Which two parts build pictograph?",
+          "answer": "Pict means picture and graph means write or record."
+        },
+        {
+          "word": "megalitre",
+          "sentence": "The reservoir beside the camp holds one megalitre of water.",
+          "prompt": "How much water is a megalitre?",
+          "answer": "A million litres. Mega- means million."
+        },
+        {
+          "word": "inclusive",
+          "sentence": "Our sports carnival is inclusive, so every student has an event.",
+          "prompt": "Which part of inclusive means shut in?",
+          "answer": "The clus part, the same part as in include. Nobody is left out."
+        },
+        {
+          "word": "chronic",
+          "sentence": "The vet said the old dog had a chronic sore hip.",
+          "prompt": "How long does a chronic problem last?",
+          "answer": "A long time. Chron means time, so it keeps coming back."
+        },
+        {
+          "word": "chronometer",
+          "sentence": "The sailing museum had a brass chronometer from 1850.",
+          "prompt": "What does a chronometer measure?",
+          "answer": "Time, very exactly. Chron means time and meter means measure."
+        }
+      ],
+      "new_morphology": {
+        "morph": "chron",
+        "type": "root",
+        "keyword": "chronology",
+        "meaning": "time"
+      },
+      "words_to_read_new": [
+        {
+          "word": "chronicle",
+          "meaning": "chron means time + -icle names the thing: the record of events in time order"
+        },
+        {
+          "word": "chronicled",
+          "meaning": "chron means time + -icle names the thing + -ed means past: wrote the events down in order"
+        },
+        {
+          "word": "chronicling",
+          "meaning": "chron means time + -icle names the thing + -ing: writing the events down in order right now"
+        },
+        {
+          "word": "chronology",
+          "meaning": "chron means time + -ology means the study of: the order events happened in"
+        },
+        {
+          "word": "chronologist",
+          "meaning": "chron means time + -ology means the study of + -ist means person who: the person who works out what happened when"
+        },
+        {
+          "word": "chronograph",
+          "meaning": "chron means time + graph means write or record: a watch that records exact times"
+        },
+        {
+          "word": "synchronise",
+          "meaning": "syn- means together + chron means time + -ise means to make: to make two things run on the same time"
+        },
+        {
+          "word": "synchronous",
+          "meaning": "syn- means together + chron means time + -ous means full of: happening at exactly the same time"
+        },
+        {
+          "word": "asynchronous",
+          "meaning": "a- means not + syn- means together + chron means time + -ous means full of: not happening at the same time"
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears, then connect chron back to the card meaning: time.\nchronicle - chron means time + -icle names the thing: the record of events in time order.\nchronicled - chron means time + -icle names the thing + -ed means past: wrote the events down in time order.\nchronicling - chron means time + -icle names the thing + -ing: writing the events down in time order right now.\nchronology - chron means time + -ology means the study of: the order the events actually happened in.\nchronologist - chron means time + -ology means the study of + -ist means person who: the person who works out what happened when.\nchronograph - chron means time + graph means write or record: a watch that records exact times, the same graph as in seismograph.\nsynchronise - syn- means together + chron means time + -ise means to make: to make two things run on the same time.\nsynchronous - syn- means together + chron means time + -ous means full of: happening at exactly the same time.\nasynchronous - a- means not + syn- means together + chron means time + -ous means full of: not at the same time, like a lesson you watch later.\nMemory hook: chron is the clock face hiding inside the word - if you see chron, put the word on a timeline. Challenge: find three chron words in your history or science book by Friday and order them.",
+      "words_to_spell_new": [
+        "chronograph",
+        "chronicled",
+        "synchronous",
+        "chronology"
+      ],
+      "extension": "1. SAY: \"When you finish, write one sentence that puts two chron words on the same timeline.\"\n2. CHECK: the sentence must show the time meaning, not just use the word.\nEXTENSION: Write one sentence that holds a chron word and a vinc word and shows both meanings, then rewrite it as a complex sentence.\nA complex sentence adds a part that cannot stand alone.",
+      "new_morph_activity": {
+        "title": "Which root is inside",
+        "rule": "Copy each word, then write chron or vinc - the part that is inside it.",
+        "example": "One done for you:\nchronicler = chron, so it is about time",
+        "items": [
+          "1. invincible = ?    2. chronologist = ?",
+          "3. unconvincing = ?    4. synchronous = ?"
+        ],
+        "item_size": 17,
+        "routine": "OG books - 3 min - books up",
+        "footer": "Extension: one sentence, both roots",
+        "notes": "ANSWER: 1 vinc, 2 chron, 3 vinc, 4 chron.\n1. SAY: \"Look at the finished one first. Then copy each word and write chron or vinc beside it, plus what the word does.\"\n2. TIME: 3 minutes in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"cover the front and the back of the word with two fingers - whatever is left in the middle is the root.\" Then do number one together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> pull number four apart together, then re-ask.\nTRAP: seeing chron in synchronous but missing it under syn. Fix: cover syn, read what is left, student writes chron.\nEXTENSION: Write one sentence that holds a chron word and a vinc word and shows both meanings at once.\nHELP: Give the two headings chron and vinc; students write each word under a heading before adding the meaning.\n---\nPurpose: the week closes by making students find both roots hiding inside longer words. [You Do | Sorting by root | Morphology]\nANSWERS:\n1. invincible = vinc, so it means never conquered\n2. chronologist = chron, a person who orders time\n3. unconvincing = vinc, it does not conquer doubt\n4. synchronous = chron, happening at the same time\nEXTENSION: e.g. Our victorious relay team synchronised every changeover.",
+        "check_title": "Tick it or fix it - Which root is inside",
+        "check_rule": "Tick each correct root. Fix any word with the wrong root beside it.",
+        "check_items": [
+          "1. invincible = vinc, so it means never conquered",
+          "2. chronologist = chron, a person who orders time",
+          "3. unconvincing = vinc, it does not conquer doubt",
+          "4. synchronous = chron, happening at the same time"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "chron is time, vinc is conquer",
+        "check_notes": "ANSWER: 1 vinc, 2 chron, 3 vinc, 4 chron.\n1. MODEL: \"In number one I cover in at the front and ible at the back. Vinc is left, so it means it cannot be conquered.\"\n2. SAY: \"Now tick each root that matches. Fix any word with the wrong root beside it.\"\n3. ASK: \"Number four hides its root in the middle, so which words would be hardest to sort if we added ten more?\" 10 sec, turn and tell. EXPECT: the ones with a prefix in front, because the root is not at the start.\n4. SCAN corrections. 80%+ -> class point on the board. Less -> pull number two apart together, then re-check.\nTRAP: sorting by how the word sounds. Fix: cover the front and back, read the middle, then correct it.\nEXTENSION: Find one more word of your own for each root and write what it does.\nHELP: read the green root first, then underline it inside the printed word.\n---\nPurpose: protected reveal so every student sees where each root hides. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "leopard",
+            "unfair": "eo",
+            "notes": "Why learned: eo says one short /e/ here, not two vowel sounds, and the ard ending says /uhd/.\nSay it: LEP-uhd, two beats. Chin it back to me, then write leo - pard in two chunks.\nQuick link: leopard, jeopardy and Leonard all hide the same odd eo spelling."
+          },
+          {
+            "word": "iron",
+            "unfair": "ro",
+            "notes": "Why learned: the r is silent and the o says a plain /uh/, so the ro chunk sounds like nothing you would predict.\nSay it: EYE-uhn, two beats. Write i - ron, then check the r is still there.\nQuick link: the r stays silent in ironing and ironed, but you can hear it again in ironic."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Our whole class listed every iron tool in chronological order.",
+          "targets": [
+            "iron",
+            "chronological"
+          ],
+          "cups": {
+            "capitals": [
+              "Our"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "one simple sentence; the red word iron and this week's root chron"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Although our chronicle of the term looked complete, the leopard photograph was still missing.",
+          "targets": [
+            "chronicle",
+            "leopard"
+          ],
+          "cups": {
+            "capitals": [
+              "Although"
+            ],
+            "punctuation": [
+              "comma after the opening waiting part (the although part cannot stand alone, so the comma shows where it ends)",
+              "full stop"
+            ]
+          },
+          "focus": "a complex sentence opening with a waiting part; chronicle and the red word leopard"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Sort all three sentence types and finish the week's Sentence Smackdown.\nWHY THIS WEEK: students write in one gear, so the reader is either jolted by short sentences or lost in a run-on.\nGAME: grand final. Add up the Class v Teacher tally at the end and announce the winner.\nPREP: OG books open. The You do is the exit ticket for regrouping next week.",
+        "i_do": {
+          "title": "The week in one minute",
+          "rule": "Simple, compound, complex - count the stand-alone ideas.",
+          "example": "The bell rang, but we kept working.\n2 fingers = compound",
+          "items": [
+            "1 finger simple, 2 fingers compound, C hand complex.",
+            "Ask: how many parts could stand alone by themselves?"
+          ],
+          "routine": "Eyes on me - signals ready",
+          "footer": "Next: the grand final scoreboard.",
+          "notes": "ANSWER: two stand-alone halves joined by but, so it is compound.\n1. SAY: \"All week we have counted stand-alone ideas, and that count is what stops your writing running in one gear all the way down the page.\"\n2. WRITE: copy \"The bell rang, but we kept working.\" onto the class board. POINT at the comma and at but.\n3. COVER: hide the second half, read the first alone, then hide the first and read the second - both work, so hold up two fingers.\n4. ASK: \"What would make it complex instead?\" 5 sec, choral response. EXPECT: swap but for a waiting word like although.\nTRAP: counting parts instead of stand-alone parts. Fix: cover each half, read it aloud, only count the ones that work.\nCLARIFY: if a student counts three parts, ask which of them could stand alone by themselves - only those count.\n---\nPurpose: one-minute restatement of all three types before the grand final. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: count independent clauses - one is simple, two joined by a coordinator is compound, one plus a subordinate clause is complex."
+        },
+        "we_do": {
+          "title": "Grand final - rapid signals",
+          "rule": "Simple, compound, complex - count the stand-alone ideas.",
+          "example": "A) We ran, and they followed.\nB) Because we ran, they followed.",
+          "items": [
+            "Signal A on three, then signal B on three.",
+            "Class point if every signal is right."
+          ],
+          "routine": "Signals on three - voices off",
+          "footer": "Stem: B is complex because ...",
+          "notes": "ANSWER: A is compound. B is complex.\n1. SAY: \"Grand final. Two sentences, two signals, and the tally decides the week.\"\n2. TIME: 10 seconds for A, signals on three, then 10 seconds for B, signals on three.\n3. SCAN every signal. 80%+ -> class point on the board. Less -> my point, cover each half aloud, then re-signal.\n4. ASK: \"Which half of B cannot stand alone?\" 5 sec, cold call two students. EXPECT: Because we ran.\nTRAP: signalling compound for B because it has a comma. Fix: read Because we ran alone, hear the wait, re-signal complex.\nCLARIFY: if two students signal differently, ask each of them to cover half the sentence and read what is left.\n---\nPurpose: rapid all-student sorting of two matched sentences. [We Do | Guided practice | Grammar | HITS 7]\nPREP: A is compound - two independent clauses joined by and; B is complex - Because we ran is subordinate."
+        },
+        "you_do": {
+          "title": "Grand final - label them",
+          "rule": "Your turn: write simple, compound or complex beside each one.",
+          "example": "One done for you:\nThe leopard slept. = simple",
+          "items": [
+            "A) The chronometer stopped, so we guessed the time.",
+            "B) Although we lost, our captain looked invincible."
+          ],
+          "item_size": 17,
+          "routine": "OG books - 2 min - books up",
+          "footer": "Check: how many parts stand alone?",
+          "notes": "ANSWER: A - compound. B - complex.\n1. SAY: \"Look at the finished one first. Then copy A and B and write simple, compound or complex beside each.\"\n2. TIME: 2 minutes in your OG book, then books up so I can scan.\n3. CIRCULATE: to a stuck student say, \"cover one half with your hand and read the other - if both halves work alone it is compound, if only one works it is complex.\" Then do A together.\n4. SCAN every book on the way past. 80%+ -> reveal the check slide. Less -> cover B's halves together, then re-check.\nTRAP: labelling B compound because it has a comma. Fix: read Although we lost alone, hear the wait, student relabels it complex.\nEXTENSION: Rewrite A as a complex sentence and B as a compound sentence, keeping the meaning, then say which version you would use and why.\nHELP: Give students the three labels simple, compound, complex; they cover one half of each sentence before choosing.\n---\nPurpose: exit ticket the teacher scans to regroup next week. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) The chronometer stopped, so we guessed the time. = compound\nB) Although we lost, our captain looked invincible. = complex\nEXTENSION: When the chronometer stopped, we guessed the time. We lost, but our captain looked invincible.",
+          "check_title": "Tick it or fix it - Grand final",
+          "check_rule": "Tick each correct label. Fix any label that does not match.",
+          "check_items": [
+            "A) The chronometer stopped, so we guessed the time.",
+            "Compound - both halves stand alone, joined by so.",
+            "B) Although we lost, our captain looked invincible.",
+            "Complex - Although we lost cannot stand alone."
+          ],
+          "check_item_size": 17,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: mix all three in one draft.",
+          "check_notes": "ANSWER: A - compound. B - complex.\n1. MODEL: \"In A I cover the second half and read The chronometer stopped, then cover the first and read we guessed the time - both work, so it is compound.\"\n2. SAY: \"Now tick each label that matches. Fix any label that is different.\"\n3. ASK: \"Which of the two would you keep if you wanted your reader to feel the surprise?\" 10 sec, turn and tell. EXPECT: B - although sets up the surprise before it lands.\n4. SCAN corrections, then add up the tally and announce the Sentence Smackdown winner.\n5. SAY: \"In your next draft, check you have used all three types on one page - that is what stops your writing running in one gear.\"\nTRAP: ticking B as compound because it has a comma. Fix: read the first half alone, hear the wait, then correct it.\n---\nPurpose: closes the week and shows the reasoning behind each label. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    }
+  ]
+}
