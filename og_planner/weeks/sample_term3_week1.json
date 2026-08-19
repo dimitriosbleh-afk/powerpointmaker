@@ -373,10 +373,10 @@
       "dictation": [
         {
           "meter": "green",
-          "sentence": "The captain gave a calm order before the long march.",
+          "sentence": "The captain read the orderly list before the busy morning march.",
           "targets": [
             "captain",
-            "order"
+            "orderly"
           ],
           "cups": {
             "capitals": [
@@ -386,29 +386,31 @@
               "full stop"
             ]
           },
-          "focus": "one preposition (before) opening a phrase; two review targets"
+          "focus": "one preposition (before) opening a phrase; two Term 2 review targets (capt, ord)"
         },
         {
           "meter": "yellow",
-          "sentence": "Before the final game, the coach gave one clear order: \"Protect that injured muscle!\"",
+          "sentence": "Before the final whistle, the captain shouted, \"Include every player, and reflect on the plan!\"",
           "targets": [
-            "order",
-            "muscle"
+            "captain",
+            "include",
+            "reflect"
           ],
           "cups": {
             "capitals": [
               "Before",
-              "Protect"
+              "Include"
             ],
             "punctuation": [
               "comma after opening phrase",
-              "colon",
-              "opening quotation mark",
-              "closing quotation mark",
-              "exclamation mark"
+              "comma before the speech (it separates who said it from what they said)",
+              "opening quotation mark (speech starts here, so the first word takes a capital)",
+              "comma before and (it joins two commands)",
+              "exclamation mark",
+              "closing quotation mark"
             ]
           },
-          "focus": "comma after an opening prepositional phrase, colon, quoted command"
+          "focus": "comma after an opening prepositional phrase, comma before speech, quoted compound command; capt, clud(e), flect from Term 2"
         }
       ],
       "grammar": {
@@ -753,10 +755,11 @@
       "dictation": [
         {
           "meter": "green",
-          "sentence": "The old machinery worked smoothly inside the busy pottery today.",
+          "sentence": "The regular routine kept the noisy machine running inside the shed.",
           "targets": [
-            "machinery",
-            "pottery"
+            "regular",
+            "routine",
+            "machine"
           ],
           "cups": {
             "capitals": [
@@ -766,29 +769,31 @@
               "full stop"
             ]
           },
-          "focus": "a prepositional phrase (inside the busy pottery); two -ery targets"
+          "focus": "a prepositional phrase (inside the shed); rect/reg and two -ine pattern words from Term 2"
         },
         {
           "meter": "yellow",
-          "sentence": "Before the tour, the guide gave one warning: \"Keep your tongue quiet near the machinery.\"",
+          "sentence": "After the tour, the guide warned us, \"Exclude the broken pedal, and keep the tripod steady.\"",
           "targets": [
-            "tongue",
-            "machinery"
+            "exclude",
+            "pedal",
+            "tripod"
           ],
           "cups": {
             "capitals": [
-              "Before",
-              "Keep"
+              "After",
+              "Exclude"
             ],
             "punctuation": [
               "comma after opening phrase",
-              "colon",
-              "opening quotation mark",
-              "closing quotation mark",
-              "full stop inside the quote"
+              "comma before the speech (it separates who said it from what they said)",
+              "opening quotation mark (speech starts here, so the first word takes a capital)",
+              "comma before and (it joins two commands)",
+              "full stop inside the quote",
+              "closing quotation mark"
             ]
           },
-          "focus": "comma after an opening prepositional phrase, colon and quoted command"
+          "focus": "comma after an opening prepositional phrase, comma before speech, quoted compound command; clud(e), ped/pod from Term 2"
         }
       ],
       "grammar": {
@@ -1136,10 +1141,10 @@
       "dictation": [
         {
           "meter": "green",
-          "sentence": "The new novice showed great service during the busy match.",
+          "sentence": "The doctor drew a direct line under the correct answer during the test.",
           "targets": [
-            "novice",
-            "service"
+            "direct",
+            "correct"
           ],
           "cups": {
             "capitals": [
@@ -1149,30 +1154,26 @@
               "full stop"
             ]
           },
-          "focus": "a preposition (during) opening a phrase; two -ice targets"
+          "focus": "two prepositional phrases (under the correct answer, during the test); two rect/reg targets from Term 2"
         },
         {
           "meter": "yellow",
-          "sentence": "Before the final, the doctor gave one notice: \"Rest that torn muscle and hold your tongue.\"",
+          "sentence": "Before the final, the coach gave me one clear rule: rest that flexible ankle and pedal slowly.",
           "targets": [
-            "notice",
-            "muscle",
-            "tongue"
+            "flexible",
+            "pedal"
           ],
           "cups": {
             "capitals": [
-              "Before",
-              "Rest"
+              "Before"
             ],
             "punctuation": [
               "comma after opening phrase",
-              "colon",
-              "opening quotation mark",
-              "closing quotation mark",
-              "full stop inside the quote"
+              "colon (it introduces the instruction that follows)",
+              "full stop"
             ]
           },
-          "focus": "comma after an opening prepositional phrase, colon, quoted speech; both learned words"
+          "focus": "comma after an opening prepositional phrase, colon introducing an instruction (not speech); flect/flex, ped/pod from Term 2"
         }
       ],
       "grammar": {
@@ -1444,10 +1445,10 @@
       "dictation": [
         {
           "meter": "green",
-          "sentence": "The novice offered excellent service during the busy school event.",
+          "sentence": "The captive bird sat on the marble pedestal during the quiet afternoon.",
           "targets": [
-            "novice",
-            "service"
+            "captive",
+            "pedestal"
           ],
           "cups": {
             "capitals": [
@@ -1457,31 +1458,32 @@
               "full stop"
             ]
           },
-          "focus": "a prepositional phrase (during the busy school event); two -ice targets"
+          "focus": "two prepositional phrases (on the marble pedestal, during the quiet afternoon); capt, ped/pod from Term 2"
         },
         {
           "meter": "yellow",
-          "sentence": "After the tour, the novice warned us: \"Protect the machinery, and report any malfunction.\"",
+          "sentence": "After the tour, the guide reminded us, \"Include the conclusion, and reflect on the ordinary parts.\"",
           "targets": [
-            "novice",
-            "machinery",
-            "malfunction"
+            "include",
+            "conclusion",
+            "reflect",
+            "ordinary"
           ],
           "cups": {
             "capitals": [
               "After",
-              "Protect"
+              "Include"
             ],
             "punctuation": [
               "comma after opening phrase",
-              "colon",
-              "opening quotation mark",
-              "comma",
-              "closing quotation mark",
-              "full stop inside the quote"
+              "comma before the speech (it separates who said it from what they said)",
+              "opening quotation mark (speech starts here, so the first word takes a capital)",
+              "comma before and (it joins two commands)",
+              "full stop inside the quote",
+              "closing quotation mark"
             ]
           },
-          "focus": "comma after an opening phrase, colon, quoted compound command; all three week morphemes"
+          "focus": "comma after an opening prepositional phrase, comma before speech, quoted compound command; clud(e)/clus(e), flect, ord/ordin from Term 2 - all revision, none of this week's words"
         }
       ],
       "grammar": {

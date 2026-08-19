@@ -20,7 +20,9 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILDER_PATH = ROOT / "og_planner" / "build_og_week.py"
-CURRENT_SPEC = ROOT / "og_planner" / "weeks" / "term3_week1.json"
+# Delivered before the Aug 2026 dictation-sourcing rule (section 6): its
+# dictations target that week's own new words, so it must now FAIL the gate.
+RETIRED_SPEC = ROOT / "og_planner" / "weeks" / "term3_week1.json"
 SAMPLE_SPEC = ROOT / "og_planner" / "weeks" / "sample_term3_week1.json"
 
 MODULE_SPEC = importlib.util.spec_from_file_location("og_builder", BUILDER_PATH)
@@ -57,15 +59,21 @@ class OgBuilderRegressionTests(unittest.TestCase):
         self.assertNotIn("WARN:", result.stdout)
         return sorted(Path(output_root).rglob("*.pptx"))
 
-    def test_current_and_sample_specs_pass_every_output_gate(self):
+    def test_sample_spec_passes_every_output_gate(self):
         with tempfile.TemporaryDirectory(prefix="og_builder_regression_") as temp:
             temp_root = Path(temp)
-            current = self.build_spec(CURRENT_SPEC, temp_root / "current")
             sample = self.build_spec(SAMPLE_SPEC, temp_root / "sample")
-            self.assertEqual(len(current), 4)
             self.assertEqual(len(sample), 4)
-            self.assert_deck_structure(CURRENT_SPEC, current)
             self.assert_deck_structure(SAMPLE_SPEC, sample)
+
+    def test_retired_spec_trips_the_dictation_sourcing_gate(self):
+        """Pre-rule decks dictated the week's own new words; the gate must say so."""
+        week = json.loads(RETIRED_SPEC.read_text(encoding="utf-8"))
+        OG.WARNINGS.clear()
+        for session in week["sessions"]:
+            OG.validate_dictation_sources(session["day"], week, session)
+        self.assertTrue(
+            any("THIS week's new words" in w for w in OG.WARNINGS), OG.WARNINGS)
 
     def assert_deck_structure(self, spec_path, decks):
         week = json.loads(spec_path.read_text(encoding="utf-8"))
@@ -228,6 +236,77 @@ class OgBuilderRegressionTests(unittest.TestCase):
         OG.validate_sound_bank("Wednesday", session)
         self.assertEqual(OG.WARNINGS, [])
         self.assertTrue(any("appears in none of the" in n for n in OG.NOTES), OG.NOTES)
+
+    def test_sound_bank_rejects_a_morpheme_taught_later_this_week(self):
+        """Steph's report (Aug 2026): the new morphology sat in the bank before
+        it was taught. Monday's bank/cards may not carry Wednesday's morpheme."""
+        monday = {
+            "day": "Monday", "type": "new",
+            "new_morphology": {"morph": "eco", "type": "root"},
+            "morphology_review": [{"morph": "chron", "type": "root"}],
+            "sound_bank": [{"morph": "vict/vinc", "type": "root"}],
+            "words_to_spell_review": [{"word": "victory"}],
+        }
+        tuesday = {"day": "Tuesday", "type": "review",
+                   "new_morphology": {"morph": "eco", "type": "root"},
+                   "morphology_review": [{"morph": "eco", "type": "root"}],
+                   "sound_bank": []}
+        wednesday = {"day": "Wednesday", "type": "new",
+                     "new_morphology": {"morph": "vict/vinc", "type": "root"}}
+        thursday = {"day": "Thursday", "type": "new",
+                    "new_morphology": {"morph": "chron", "type": "root"}}
+        week = {"sessions": [monday, tuesday, wednesday, thursday]}
+        OG.WARNINGS.clear()
+        OG.validate_sound_bank("Monday", monday, week)
+        self.assertEqual(
+            len([w for w in OG.WARNINGS if "later session" in w]), 2, OG.WARNINGS)
+        # A review day repeating yesterday's focus on its cards is fine.
+        OG.WARNINGS.clear()
+        OG.validate_sound_bank("Tuesday", tuesday, week)
+        self.assertEqual(OG.WARNINGS, [])
+
+    def test_review_cards_reject_todays_new_morpheme(self):
+        session = {
+            "day": "Monday", "type": "new",
+            "new_morphology": {"morph": "eco", "type": "root"},
+            "morphology_review": [{"morph": "eco", "type": "root"}],
+            "sound_bank": [],
+        }
+        OG.WARNINGS.clear()
+        OG.validate_sound_bank("Monday", session, {"sessions": [session]})
+        self.assertTrue(any("today's NEW morpheme" in w for w in OG.WARNINGS), OG.WARNINGS)
+
+    def _dictation_week(self, targets):
+        return {"term": 9, "week": 9, "sessions": [{
+            "day": "Monday", "type": "new",
+            "new_morphology": {"morph": "chron", "type": "root"},
+            "words_to_read_new": [{"word": "chronicle"}, {"word": "chronic"}],
+            "words_to_spell_new": ["chronicle"],
+            "learned_words": {"new": {"word": "leopard"},
+                              "review": [{"word": "iron"}]},
+            "dictation": [{"meter": "green", "sentence": "x", "targets": targets}],
+        }]}
+
+    def test_dictation_rejects_this_weeks_words_and_focus_morpheme(self):
+        """Steph's report (Aug 2026): students copy this week's words from their
+        books, so dictation targets come from 2-3 weeks ago."""
+        week = self._dictation_week(["chronicles", "leopard", "chronometer", "captain"])
+        OG.WARNINGS.clear()
+        OG.NOTES.clear()
+        OG.validate_dictation_sources("Monday", week, week["sessions"][0])
+        self.assertEqual(len([w for w in OG.WARNINGS if "THIS week's new words" in w]), 2,
+                         OG.WARNINGS)
+        self.assertEqual(len([w for w in OG.WARNINGS if "focus morpheme" in w]), 1,
+                         OG.WARNINGS)
+        self.assertFalse(any("captain" in w for w in OG.WARNINGS + OG.NOTES))
+
+    def test_dictation_review_learned_word_is_advisory(self):
+        week = self._dictation_week(["iron"])
+        OG.WARNINGS.clear()
+        OG.NOTES.clear()
+        OG.validate_dictation_sources("Monday", week, week["sessions"][0])
+        self.assertEqual(OG.WARNINGS, [])
+        self.assertTrue(any("review pair" in n for n in OG.NOTES), OG.NOTES)
 
     def test_silent_e_stem_does_not_collapse_short_affixes(self):
         """vore -> vor is wanted; -ine -> in would match half of English."""

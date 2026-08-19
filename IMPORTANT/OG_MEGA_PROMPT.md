@@ -1,4 +1,4 @@
-# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.2
+# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.3
 ## Grade 5/6 Enrichment | Diamond Creek East PS | Yoshimoto OG | Template-Locked | Term-Scale Input
 
 ---
@@ -35,8 +35,21 @@ them something:
    demonstrate it, so a teacher delivering cold had to invent the demonstration
    (7 teach-it-cold notes).
 
-Neither refinement changes the five-day shape, required review counts, morphology
-sequence, dictation, grammar finisher, master template or output naming.
+The v1.3 refinement (school feedback, 19 Aug 2026 - Steph, who teaches the decks)
+changes two things and confirms one:
+
+1. DICTATION IS REVISION FROM 2-3 WEEKS AGO, never this week's words. Students were
+   copying that week's morphology and learned words straight out of the front of
+   their books instead of spelling them (section 6 - sourcing order reversed, builder
+   gate added).
+2. The morphology bank must never show a morpheme before it is taught - not today's,
+   and not one taught later in the same week either (2a/2c - the builder now checks
+   the review-10 cards and the Sound Bank against the whole week timeline).
+3. The Week 6 shape - `new, review, new, review` with a real review day after each
+   morpheme - is the structure the team asked to keep (section 11).
+
+None of the refinements changes the required review counts, morphology sequence,
+grammar finisher, master template or output naming.
 
 The pipeline: user pastes a term's content -> you plan each week -> you author a week
 spec JSON -> `og_planner/build_og_week.py` clones the master template and fills it ->
@@ -117,6 +130,11 @@ weight shifted to auditory/spelling work - same morpheme, mostly fresh words.
 - The 10 cards are the 10 MOST RECENTLY taught morphemes, counting backward from today,
   excluding today's new morpheme. A morpheme enters the review deck the session AFTER it
   is taught; when one enters, the oldest of the 10 drops out.
+- NOTHING UNTAUGHT ON A CARD. A morpheme that this week teaches on a LATER day (Monday's
+  cards carrying Wednesday's morpheme) is as wrong as today's new one: students drill it
+  cold a dozen slides before anyone shows them the card. Same rule for the Sound Bank
+  (2c). The builder fails the build on either (today's new morpheme on a `new` day's
+  cards; any later-in-week focus morpheme on any day's cards or bank).
 - Friday's 10 include both of this week's morphemes.
 - JUMBLE the order every session. Hard rules:
   - Never the same order as any other session that week.
@@ -245,9 +263,12 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   their page and then spell those 10 review words underneath. Supporting that list is
   the bank's only job. It is not a preview, not a summary of the week, and not a
   general morpheme poster.
-- NEVER PUT THE DAY'S FOCUS MORPHEME IN THE BANK. Not on a `new` day, not on a `review`
-  day, not on Friday. This is the most-reported Sound Bank defect and it has two
-  separate causes, both fatal:
+- NEVER PUT THE DAY'S FOCUS MORPHEME IN THE BANK - AND NEVER A MORPHEME THIS WEEK HAS
+  NOT TAUGHT YET. Not on a `new` day, not on a `review` day, not on Friday. Monday's bank
+  may not carry Wednesday's morpheme, whatever the spelling list looks like. This is the
+  most-reported Sound Bank defect (the school reported it again in Aug 2026: "before
+  learning the new morphology it is in the morphology bank") and it has two separate
+  causes, both fatal:
   - On a `new` day the Sound Bank slide sits roughly a dozen slides BEFORE the morpheme
     card. The morpheme has not been taught yet. Banking it hands students a spelling
     they have never been shown, pre-empts the reveal the whole New Morphology section is
@@ -274,7 +295,8 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   serves. Any box you cannot tie to a word is a wasted slot; swap it for a morpheme one
   of the ten words needs.
 - THE BUILDER ENFORCES THIS. A bank box matching the day's focus morpheme (any variant)
-  is a fatal WARN. A box that appears in none of the day's review spelling words is a
+  is a fatal WARN, and so is a box or review card matching a morpheme that a LATER
+  session in the same week spec teaches. A box that appears in none of the day's review spelling words is a
   non-fatal NOTE, because the match is a substring test and an unusual surface spelling
   can read as unused when it is not. Answer every NOTE - usually by swapping the box;
   occasionally the honest answer is that the day needs only 8 morphemes and the 9th is
@@ -936,11 +958,28 @@ slides.
     camouflage badge."`
   - Word count is now only a sanity check (roughly 10-12 then 14-16); if the character
     count and the word count disagree, the CHARACTER count wins and you cut words.
-- Content sourcing, in priority order:
-  1. Today's new learned word and/or this week's learned words.
-  2. Today's (or yesterday's) morphology words.
-  3. The 2b weighting recipe for older morphemes - dictation IS revision.
+- CONTENT SOURCING - DICTATION IS REVISION FROM 2-3 WEEKS AGO. School feedback (Aug
+  2026): when dictation targets were that week's new words, students copied them from
+  the front of their books instead of spelling them, so the dictation measured nothing.
+  Targets therefore come from material that is OUT of the current pages of the book:
+  1. Derivatives of morphemes taught 2-3 weeks before this week (the older half of the
+     review-10 and the term timeline in `og_planner/taught_morphemes.json`; the current
+     week's Words to Spell Review pool is a ready-made source).
+  2. Learned words taught 2-3 weeks ago (from the user's `Recently taught learned words`
+     list, which is why that list must reach back at least three weeks).
+  3. Older still, weighted by the 2b recipe.
+  NEVER: today's or this week's new morphology words (anything on this week's Words to
+  Read / Words to Spell grids), any word built on this week's focus morphemes, or this
+  week's new learned words. Last week's words and the two learned words still on the
+  review pair are the fallback of last resort, not the plan.
   Every content word must be spellable from taught material; scope-check phonograms.
+  THE BUILDER ENFORCES THE HARD PART: a target that is one of this week's grid words or
+  new learned words, or that contains a 4+ letter form of one of this week's focus
+  morphemes, is a fatal WARN. A short-form match (`-ice`, `-ery`) and any target that
+  was new last week (read from `term<T>_week<N-1>.json` in the same folder) or is on the
+  learned-word review pair is a NOTE - answer it, usually by reaching further back.
+  The `focus` line names where the targets come from (`Term 2 review: capt, ord`), so
+  the teacher can tell students this is revision.
 - EVERY DICTATION SENTENCE MUST MAKE SENSE. Two checks, both mandatory, run on every
   sentence before shipping:
   1. REAL WORDS ONLY: every word must be a real English word, spelled exactly. Never
@@ -1330,12 +1369,15 @@ python tests/test_og_builder_regressions.py                               # buil
    (morphology You Do AND any fixed-answer grammar You do),
    new-word grids are at least 27 pt, grammar examples are at least 20 pt, the first
    dictation uses the green meter while the second/trickier dictation uses yellow, the
-   sound bank does not contain the day's focus morpheme (2c), and no You Do morpheme sum
+   sound bank and review cards do not contain the day's focus morpheme or any morpheme
+   this week teaches later (2a/2c), no dictation target is one of this week's new words
+   or built on this week's focus morphemes (6), and no You Do morpheme sum
    uses an affix outside the taught set (2f).
    Read every WARN - word-count, catalogue mismatch, excluded-word, unbanked-label and
    overflow warnings are content bugs to fix in the spec, not noise. Every WARN fails the
    build. A NOTE is advisory and does NOT fail the build - currently the unused-sound-
-   bank-box check (2c) and cards absent from the photographed catalogues. Advisory does
+   bank-box check (2c), the last-week / review-pair / short-form dictation checks (6)
+   and cards absent from the photographed catalogues. Advisory does
    not mean ignorable: answer every NOTE and list them in the summary. Captured-card
    metadata is never advisory.
 2. Visual QA every session deck: `python scripts/pptx_to_images.py "output/<folder>/<deck>.pptx"`,
@@ -1356,6 +1398,8 @@ python tests/test_og_builder_regressions.py                               # buil
    - TAUGHT-MORPHEME GATE: list every student-supplied answer in the deck - including
      the ones written as prose - and confirm each is reachable from today's morpheme +
      the taught history + everyday English.
+   - DICTATION REACH: for each target, name the week (2-3 weeks back or older) it comes
+     from. The builder can only see this week and last week's specs.
 3. Animation spot check (structural): the spell-word, grid, learned-word and dictation
    slides must contain `<p:timing>` (the builder preserves/regenerates them - verify
    after any builder change).
@@ -1389,9 +1433,12 @@ the per-session PPTX in the week folder IS the deliverable (unlike themed lesson
    never containing the day's focus morpheme (2c), morpheme card + words to read +
    script + memory hook + 4 spelling words + extension (3a-3c, skip on Friday), the
    New Morphology You Do + its check slide (3d), learned words 2 review + 1 new (5),
-   2 dictations with cups (6), grammar structured blocks (7).
+   2 dictations with cups whose targets come from 2-3 weeks ago - never this week's
+   grids or learned words (6), grammar structured blocks (7).
    Note the order: the spelling list comes FIRST and the sound bank is derived from it.
    Choosing bank morphemes before you know the words is how the wrong nine get banked.
+   Check the bank and the review-10 against the WHOLE week timeline, not just today:
+   nothing taught later this week may appear on an earlier day (2a/2c).
 5. Self-check the spec against section 10b's failure list, line by line.
 6. `python og_planner/build_og_week.py og_planner/weeks/<spec>.json` - fix EVERY warn.
 7. Render each deck to images and INSPECT them (section 10). Fix, rebuild, re-render.
@@ -1470,6 +1517,11 @@ your spec against every line before building)
   red mark/capital/target, or with the wrong meter (first = green; second/trickier =
   yellow), or
   with sentence lengths outside 10-12 / 14-16 words. (6)
+- A dictation whose targets are this week's new morphology words or this week's new
+  learned words - students copy them from their books. Targets are revision from 2-3
+  weeks ago. (6)
+- A Sound Bank box or review card carrying a morpheme this week teaches on a later
+  day (Wednesday's morpheme in Monday's bank). (2a/2c)
 - A dictation sentence containing an invented or misremembered word (`deisomograph`),
   or one that strings targets into a scene no student can picture when it is read
   aloud. (6)
@@ -1604,7 +1656,7 @@ Mapping morphemes to sessions (pick the row that matches; ask only if none fits)
 | 2 | 5 | new, review, new, review, week_review (the default) |
 | 3 | 5 | new, review, new, review, new - the team's historic pattern: `1a, 1b, 2a, 2b, 3.` with the third morpheme taught Friday, consolidated next week |
 | 3 | 4 | new, new, new, week_review (no per-morpheme review day; the week review carries consolidation - flag this trade-off in your summary) |
-| 2 | 4 | new, review, new, review (fold week-review weighting into Thursday's review sections) |
+| 2 | 4 | new, review, new, review (fold week-review weighting into Thursday's review sections) - Term 3 Week 6 ran exactly this and the team asked to keep it: "we like the structure of week 6 with the review". When a week could go either way, keep the review days |
 | 1 | any | new, then review days; last session week_review |
 | 2-3 | 3 | new, new(, new) - flag that review days are lost and weight the following week's history hard toward these morphemes |
 
@@ -1634,6 +1686,9 @@ Interpreting the block:
   canon. If `Additional notes` is empty, proceed with defaults - do not ask.
 - If `Recently taught morphemes` is empty and the bank/history gives you nothing,
   ask for it - week 1's review deck cannot be invented.
+- `Recently taught learned words` must reach back at least three weeks: dictation
+  targets come from 2-3 weeks ago (section 6), so a list holding only last week's
+  words leaves dictation with nothing legal to assess. Ask for more if it is short.
 
 ```
 User: Generate OG session decks for the following:

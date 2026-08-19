@@ -195,6 +195,9 @@ HEADER_NOTES = {
 
 WARNINGS = []
 NOTES = []
+# Folder holding the week specs; main() points it at the built spec's folder so
+# the dictation gate can read last week's spec (section 6).
+SPEC_DIR = Path(__file__).resolve().parent / "weeks"
 
 
 def warn(msg):
@@ -602,17 +605,40 @@ def taught_morpheme_forms(week, session):
     return forms
 
 
-def validate_sound_bank(day, session):
-    """Sound bank rules from OG_MEGA_PROMPT.md section 2c.
+def untaught_week_focus_labels(week, session):
+    """Focus morphemes this week spec teaches AFTER `session`.
+
+    A label counts as untaught only if no session up to and including this one
+    has it as its focus - a `review` day repeats yesterday's focus and that
+    morpheme is genuinely taught by then.
+    """
+    sessions = (week or {}).get("sessions", [])
+    try:
+        stop = sessions.index(session)
+    except ValueError:
+        return []
+    seen = set()
+    for earlier in sessions[:stop + 1]:
+        seen |= morph_surface_forms((earlier.get("new_morphology") or {}).get("morph"))
+    later = []
+    for upcoming in sessions[stop + 1:]:
+        label = (upcoming.get("new_morphology") or {}).get("morph")
+        if label and not (morph_surface_forms(label) & seen):
+            later.append(label)
+    return later
+
+
+def validate_sound_bank(day, session, week=None):
+    """Sound bank rules from OG_MEGA_PROMPT.md section 2c (and the 2a card rule).
 
     The bank exists to support the Words to Spell Review list on the slides
     immediately after it, and it is copied into books BEFORE the New Morphology
-    section runs.  So it never carries the day's focus morpheme, and every box
-    should serve a word on that page.
+    section runs.  So it never carries the day's focus morpheme, never carries a
+    morpheme this week has not taught yet, and every box should serve a word on
+    that page.  The review-10 cards get the same not-yet-taught check.
     """
     bank_items = session.get("sound_bank", [])
-    if not bank_items:
-        return
+    review_cards = session.get("morphology_review", [])
     focus = (session.get("new_morphology") or {}).get("morph")
     if focus:
         focus_forms = morph_surface_forms(focus)
@@ -623,6 +649,25 @@ def validate_sound_bank(day, session):
                      "morpheme is taught (new day) or defeats the retrieval it "
                      "exists for (review day) - give the slot to a morpheme one of "
                      "the review spelling words needs (2c)")
+        if session.get("type", "new") == "new":
+            for card in review_cards:
+                if morph_surface_forms(card.get("morph")) & focus_forms:
+                    warn(f"{day}: morphology review card {card['morph']!r} is today's "
+                         "NEW morpheme - it is drilled a dozen slides before it is "
+                         "taught. The review-10 excludes today's new morpheme; it "
+                         "enters the deck tomorrow (2a)")
+    for label in untaught_week_focus_labels(week, session):
+        later_forms = morph_surface_forms(label)
+        for where, items in (("sound bank", bank_items),
+                             ("morphology review card", review_cards)):
+            for item in items:
+                if morph_surface_forms(item.get("morph")) & later_forms:
+                    warn(f"{day}: {where} contains {item['morph']!r}, which this week "
+                         "does not teach until a later session. Students meet it in "
+                         "the bank/drill before the morpheme card - swap it for a "
+                         "morpheme already taught (2a/2c)")
+    if not bank_items:
+        return
 
     spell_words = [str(entry.get("word", "")).strip().lower()
                    for entry in session.get("words_to_spell_review", [])]
@@ -637,6 +682,100 @@ def validate_sound_bank(day, session):
             note(f"{day}: sound bank box {item['morph']!r} appears in none of the "
                  "review spelling words on the same page; the 9 boxes should be "
                  "derived from that list (2c)")
+
+
+def week_book_words(week):
+    """Every word this week's spec puts in students' books as NEW material:
+    the Words to Read / Words to Spell grids and the new learned words."""
+    words = set()
+    for session in (week or {}).get("sessions", []):
+        for item in session.get("words_to_read_new", []):
+            word = item.get("word") if isinstance(item, dict) else item
+            words.add(str(word or "").strip().lower())
+        for word in session.get("words_to_spell_new", []) or []:
+            words.add(str(word or "").strip().lower())
+        new_lw = (session.get("learned_words") or {}).get("new") or {}
+        words.add(str(new_lw.get("word") or "").strip().lower())
+    words.discard("")
+    return words
+
+
+def previous_week_spec(week):
+    """The spec for the week before this one, if it sits in SPEC_DIR."""
+    try:
+        term, num = int(week.get("term")), int(week.get("week"))
+    except (TypeError, ValueError):
+        return None
+    path = SPEC_DIR / f"term{term}_week{num - 1}.json"
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+
+
+def validate_dictation_sources(day, week, session):
+    """Dictation sourcing rule from OG_MEGA_PROMPT.md section 6.
+
+    Dictation targets are revision from 2-3 weeks ago.  Words taught THIS week
+    are in the front of the students' books and get copied, not spelled (school
+    feedback, Aug 2026).  Exact matches with this week's new material and
+    targets built on this week's focus morphemes are fatal; last week's words
+    are an advisory NOTE because the ideal reach is 2-3 weeks back.
+    """
+    dictations = session.get("dictation") or []
+    if not dictations:
+        return
+    this_week = week_book_words(week)
+    prev = previous_week_spec(week)
+    last_week = week_book_words(prev) if prev else set()
+    review_lw = {str(item.get("word") or "").strip().lower()
+                 for item in (session.get("learned_words") or {}).get("review", [])}
+    focus_forms = {}
+    for other in (week or {}).get("sessions", []):
+        label = (other.get("new_morphology") or {}).get("morph")
+        if label:
+            focus_forms[label] = morph_surface_forms(label)
+    for entry in dictations:
+        for target in entry.get("targets", []) or []:
+            word = str(target or "").strip().lower()
+            stems = {word}
+            for infl in ("es", "s", "ed", "ing", "d", "ly"):
+                if word.endswith(infl) and len(word) - len(infl) >= 3:
+                    stems.add(word[:-len(infl)])
+            if stems & this_week:
+                warn(f"{day}: dictation target {target!r} is one of THIS week's new "
+                     "words (grid, spelling grid or new learned word). Students copy "
+                     "it from their books; dictation targets come from 2-3 weeks "
+                     "ago (6)")
+                continue
+            hit = None
+            for label, forms in focus_forms.items():
+                for form in forms:
+                    if form in word:
+                        hit = (label, form)
+                        break
+                if hit:
+                    break
+            if hit:
+                label, form = hit
+                if len(form) >= 4:
+                    warn(f"{day}: dictation target {target!r} is built on this "
+                         f"week's focus morpheme {label!r}. Dictation revises "
+                         "morphemes taught 2-3 weeks ago, never this week's (6)")
+                else:
+                    note(f"{day}: dictation target {target!r} may contain this "
+                         f"week's focus morpheme {label!r} (short-form substring "
+                         "match). If it is a this-week word, replace it (6)")
+                continue
+            if stems & last_week:
+                note(f"{day}: dictation target {target!r} was new LAST week; the "
+                     "ideal dictation reach is 2-3 weeks back (6)")
+            elif word in review_lw:
+                note(f"{day}: dictation target {target!r} is a learned word still "
+                     "on the review pair; prefer a learned word from 2-3 weeks "
+                     "ago (6)")
 
 
 def validate_activity_morphemes(day, week, session):
@@ -1564,8 +1703,9 @@ def build_session(pkg, week, session, out_path):
         check_banked(day, "new morphology", new_morph["morph"],
                      new_morph.get("type"), new_morph.get("meaning"))
     validate_session_card_words(day, session)
-    validate_sound_bank(day, session)
+    validate_sound_bank(day, session, week)
     validate_activity_morphemes(day, week, session)
+    validate_dictation_sources(day, week, session)
     for card in session["morphology_review"]:
         tidx = CARD_REVIEW[card["type"]]
 
@@ -2484,6 +2624,8 @@ def main():
     if not args:
         sys.exit("usage: build_og_week.py <week_spec.json> [--only Day]")
     spec_path = Path(args[0])
+    global SPEC_DIR
+    SPEC_DIR = spec_path.resolve().parent
     week = deep_sanitize(json.loads(spec_path.read_text()))
     pkg = Package(MASTER)
     unit = week.get("unit_folder", f"OG_Term{week['term']}_Week{week['week']}")

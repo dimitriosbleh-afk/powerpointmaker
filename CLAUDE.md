@@ -333,10 +333,14 @@ Deliverable is one PPTX per session in `output/<week folder>/` - never merge OG 
 The builder reopens each finished PPTX and hard-fails on dense or malformed notes,
 missing real bold note labels, legacy `Derivative ask` output, undersized new-word
 grids, missing/non-green answer checks, undersized grammar examples, or incorrect
-dictation cue formatting. It also hard-fails when the Sound Bank contains the day's
-focus morpheme (it is copied into books before that morpheme is taught) or when a You
-Do morpheme sum uses an affix outside the taught set; both rules and the escape hatch
-(`taught_morphemes`) are in OG_MEGA_PROMPT sections 2c and 2f. Builder output uses two
+dictation cue formatting. It also hard-fails when the Sound Bank or review cards
+contain the day's focus morpheme or any morpheme this week teaches on a later day (the
+bank is copied into books before that morpheme is taught), when a dictation target is
+one of this week's new grid words / new learned words or is built on this week's focus
+morphemes (dictation is revision from 2-3 weeks ago - students copy this week's words
+from their books, school feedback Aug 2026), or when a You
+Do morpheme sum uses an affix outside the taught set; the rules and the escape hatch
+(`taught_morphemes`) are in OG_MEGA_PROMPT sections 2a/2c, 6 and 2f. Builder output uses two
 levels: every `WARN` fails the build, a `NOTE` is advisory but still needs answering.
 Run `python tests/test_og_builder_regressions.py` before
 changing the OG builder, its sample specification, or its note rules.
