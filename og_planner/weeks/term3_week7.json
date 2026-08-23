@@ -1,0 +1,2111 @@
+{
+  "term": 3,
+  "week": 7,
+  "cohort": "Enrichment",
+  "unit_folder": "OG_Term3_Week7",
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "taught_morphemes": [
+    "mini-",
+    "super-",
+    "over-",
+    "anti-",
+    "ultra-",
+    "retro-",
+    "em-",
+    "syn-",
+    "sym-/sys-/syl-",
+    "-let",
+    "-ling",
+    "-cian",
+    "-cial/-tial",
+    "-ancy/-ance",
+    "-ency/-ence",
+    "-ity",
+    "-tude",
+    "out-",
+    "self-",
+    "post-",
+    "with-",
+    "counter-",
+    "contra-",
+    "omni-",
+    "intra-",
+    "-eer",
+    "-ant",
+    "-ar",
+    "-ine",
+    "-cy",
+    "-ciate/-tiate",
+    "ped/pod",
+    "rect/reg",
+    "capt/capit",
+    "flect/flex",
+    "ord/ordin",
+    "clud(e)/clus(e)",
+    "mal-",
+    "-ery",
+    "-ice",
+    "-ive",
+    "-ite",
+    "-acy",
+    "-ule",
+    "mega-",
+    "micro",
+    "pict/picto",
+    "vore",
+    "eco",
+    "carn/carni",
+    "junct/join/joint",
+    "vict/vinc",
+    "chron"
+  ],
+  "overview": {
+    "Monday": {
+      "morphology": [
+        "New Morphology",
+        "mand/mend"
+      ],
+      "grammar": "Main clause and subordinate clause",
+      "learned_words": [
+        "New learned word",
+        "gauge"
+      ]
+    },
+    "Tuesday": {
+      "morphology": [
+        "Review Morphology",
+        "mand/mend"
+      ],
+      "grammar": "The subordinating conjunction",
+      "learned_words": [
+        "Review learned words",
+        "gauge, leopard"
+      ]
+    },
+    "Wednesday": {
+      "morphology": [
+        "New Morphology",
+        "jur/jud/just"
+      ],
+      "grammar": "Label main, subordinate and trigger",
+      "learned_words": [
+        "New learned word",
+        "vacuum"
+      ]
+    },
+    "Thursday": {
+      "morphology": [
+        "Review Morphology",
+        "jur/jud/just"
+      ],
+      "grammar": "Move the subordinate clause to the front",
+      "learned_words": [
+        "Review learned words",
+        "vacuum, gauge"
+      ]
+    },
+    "Friday": {
+      "morphology": [
+        "Week Review",
+        "mand/mend, jur/jud/just"
+      ],
+      "grammar": "Week review - complex sentences",
+      "learned_words": [
+        "Review learned words",
+        "vacuum, gauge"
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "day": "Monday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time",
+          "extra_task": {
+            "prompt": "Give me one word built from chron, meaning time.",
+            "answers": [
+              "chronic",
+              "chronicle",
+              "chronology",
+              "chronometer"
+            ]
+          }
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small"
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house",
+          "extra_task": {
+            "prompt": "Give me one word built from eco, meaning house.",
+            "answers": [
+              "ecosystem",
+              "ecology",
+              "economy",
+              "ecotourism"
+            ]
+          }
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million",
+          "extra_task": {
+            "prompt": "Give me one word that starts with mega-, meaning million.",
+            "answers": [
+              "megabyte",
+              "megawatt",
+              "megalitre",
+              "megahertz"
+            ]
+          }
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "carnival",
+          "chronic",
+          "victor",
+          "microscope",
+          "ecosystem",
+          "chronological",
+          "capsule",
+          "convince",
+          "junction",
+          "chronology",
+          "depict",
+          "conviction",
+          "ordinary",
+          "victorious",
+          "evict"
+        ],
+        "notes": "1. READ: \"Summer birthdays, read row 1.\"\n2. READ: \"Autumn birthdays, read row 2.\"\n3. READ: \"Winter birthdays, read row 3.\"\n4. READ: \"Spring birthdays, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"chron means time. Which three words carry it?\" 5 sec, choral response. EXPECT: chronic, chronological, chronology.\n7. ASK: \"vict and vinc mean conquer. Which five words carry them?\" 5 sec, turn and tell. EXPECT: victor, convince, conviction, victorious, evict.\n8. ASK: \"eco means house. Which word names the home living things share?\" 3 sec, choral response. EXPECT: ecosystem.\n9. ASK: \"Which word means the opposite of unusual?\" 3 sec, choral response. EXPECT: ordinary.\n10. ASK: \"pict means paint. Which word means to paint a scene with words?\" 3 sec, choral response. EXPECT: depict.\n11. ASK: \"Which word names the small case that holds medicine?\" 3 sec, choral response. EXPECT: capsule.\n12. ASK: \"Make microscope plural.\" 3 sec, choral response. EXPECT: microscopes."
+      },
+      "sound_bank": [
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "chron",
+          "type": "root"
+        },
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "capt/capit",
+          "type": "root"
+        },
+        {
+          "morph": "syn-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-cial",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ity",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "victory",
+          "sentence": "Our netball team celebrated a close victory on Friday afternoon.",
+          "prompt": "Which root tells you somebody conquered here?",
+          "answer": "vict. A victory is what you get when you conquer the other team."
+        },
+        {
+          "word": "invincible",
+          "sentence": "After six straight wins the whole squad felt invincible.",
+          "prompt": "Which part of invincible tells you nobody can beat them?",
+          "answer": "The in at the front. It means not, so nobody can conquer them."
+        },
+        {
+          "word": "provincial",
+          "sentence": "The provincial team travelled down from a small country town.",
+          "prompt": "Which root is hiding in the middle of provincial?",
+          "answer": "vinc. A province was land Rome conquered, so provincial means from that outer land."
+        },
+        {
+          "word": "chronicle",
+          "sentence": "Our class kept a chronicle of every day of camp.",
+          "prompt": "Which root tells you a chronicle follows time?",
+          "answer": "chron. A chronicle records events in the order they happened."
+        },
+        {
+          "word": "synchronise",
+          "sentence": "We had to synchronise our watches before the relay started.",
+          "prompt": "syn means together. What is being put together here?",
+          "answer": "The times. syn plus chron makes two clocks match."
+        },
+        {
+          "word": "chronometer",
+          "sentence": "The sailor checked the ship's chronometer twice before dawn.",
+          "prompt": "Which two parts tell you this tool measures time?",
+          "answer": "chron for time and meter for measure."
+        },
+        {
+          "word": "ecology",
+          "sentence": "We studied the ecology of the creek behind the oval.",
+          "prompt": "eco means house. Whose house is ecology about?",
+          "answer": "The home that living things share with everything around them."
+        },
+        {
+          "word": "conjunction",
+          "sentence": "The bus stop sits at the conjunction of two busy roads.",
+          "prompt": "junct means join. What is being joined here?",
+          "answer": "The two roads. A conjunction is a joining point, and in grammar it joins two clauses."
+        },
+        {
+          "word": "microwave",
+          "sentence": "Dad reheated the leftover pasta in the microwave.",
+          "prompt": "micro means small. What is small about a microwave?",
+          "answer": "The waves it cooks with. They are very short waves."
+        },
+        {
+          "word": "captivity",
+          "sentence": "The zoo says this koala was born in captivity.",
+          "prompt": "capt means hold. Which taught ending turns it into a state?",
+          "answer": "The -ity ending, the same one in gravity. Captivity is the state of being held."
+        }
+      ],
+      "new_morphology": {
+        "morph": "mand/mend",
+        "type": "root",
+        "keyword": "command",
+        "meaning": "order, entrust"
+      },
+      "words_to_read_new": [
+        {
+          "word": "command",
+          "meaning": "com means together + mand means order: an order that pulls everyone together"
+        },
+        {
+          "word": "demand",
+          "meaning": "de means down + mand means order: an order pushed down hard, not a request"
+        },
+        {
+          "word": "mandate",
+          "meaning": "mand means order + ate means to do: an official order to get something done"
+        },
+        {
+          "word": "mandatory",
+          "meaning": "mand means order + ory means relating to: relating to an order, so no choice"
+        },
+        {
+          "word": "commandment",
+          "meaning": "com means together + mand means order + ment means the thing itself: the written order"
+        },
+        {
+          "word": "commend",
+          "meaning": "com means together + mend means entrust: to entrust someone with your good words"
+        },
+        {
+          "word": "commendable",
+          "meaning": "com + mend means entrust + able means able to be: able to be praised"
+        },
+        {
+          "word": "commendation",
+          "meaning": "com + mend means entrust + ation means the act of: the act of praising in public"
+        },
+        {
+          "word": "countermand",
+          "meaning": "counter means against + mand means order: an order against an order, so it cancels it"
+        }
+      ],
+      "associated_word_exceptions": [
+        {
+          "word": "countermand",
+          "reason": "Ground 3 (OG_MEGA_PROMPT 4c): chosen instead of the card word remand because counter- was taught in Term 2, so countermand stacks a taught prefix on the new root and its sum (against + order) is fully transparent. remand needs the untaught re- and sits in adult legal register. remand is used on Tuesday's review grid instead.",
+          "source": "Macquarie Dictionary (Australian English) countermand, verb: to revoke or cancel a command or order."
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Learn mand and mend once and every word about orders, rules and praise opens up for you as a reader and a speller.\"\nREAD each word as it appears, then connect mand or mend to the card meaning: order, entrust.\ncommand - com means together + mand means order: an order that pulls everyone together. The captain commands.\ndemand - de means down + mand means order: an order pushed down hard. You are not asking any more.\nmandate - mand means order + -ate means to do: an official order telling someone to get a job done.\nmandatory - mand means order + -ory means relating to: relating to an order, so you have no choice at all.\ncommandment - com means together + mand means order + -ment means the thing itself: the written order itself.\ncommend - com means together + mend means entrust: to entrust someone with your good words, so you praise them.\ncommendable - com means together + mend means entrust + -able means able to be: able to be entrusted with praise. Worth praising.\ncommendation - com means together + mend means entrust + -ation means the act of: the act of praising someone in public.\ncountermand - counter means against + mand means order: an order set against an order, so the first one is cancelled.\nMemory hook: MAND hides a hand - an order is put into someone's hand. MEND is that hand held out in trust, so it praises. Challenge: catch three mand or mend words in a school notice this week.",
+      "words_to_spell_new": [
+        "command",
+        "demand",
+        "mandatory",
+        "commendable"
+      ],
+      "extension": "1. SAY: \"When you finish, write one sentence that uses two mand or mend words and shows what they mean.\"\n2. CHECK: the sentence must show the order or entrust meaning, not just use the word.\nEXTENSION: Build the longest real mand or mend word you can, then write its full morpheme sum naming every part.\nA morpheme sum names every part of the word and what each part means.\nAnswer: e.g. commandments = com (together) + mand (order) + ment (the thing) + s (more than one).",
+      "new_morph_activity": {
+        "title": "Meaning sums for mand and mend",
+        "rule": "mand and mend mean order or entrust. Build the real word from each meaning sum.",
+        "example": "One done for you:\nan order you must obey = mandatory",
+        "items": [
+          "1. to give an order = ?    2. to ask for it firmly = ?",
+          "3. an order that cancels one = ?    4. an order to do a job = ?"
+        ],
+        "item_size": 16,
+        "routine": "Whiteboards - 3 min - boards up",
+        "footer": "Which one hides counter, meaning against?",
+        "notes": "ANSWER: 1 command, 2 demand, 3 countermand, 4 mandate.\n1. SAY: \"Look at the finished sum first. Then build one real word for each number and write it on your board.\"\n2. TIME: 3 minutes. Write it... chin it... show me on my cue.\n3. CIRCULATE: to a stuck student say, \"counter means against - so what do you call an order that goes against another order?\" Then build number one together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number three together, then re-ask.\nTRAP: writing commandment for number one. Fix: point at the words to give, say that needs a doing word, student rewrites command.\nEXTENSION: Add one more part to your longest answer, then write the full morpheme sum for the new word.\nHELP: Give the word bank command, demand, countermand, mandate; students match each word to its sum first.\n---\nPurpose: day one builds mand words straight from the card meaning order. [You Do | Meaning sums | Morphology]\nANSWERS:\n1. to give an order = command\n2. to ask for it firmly = demand\n3. an order that cancels one = countermand\n4. an order to do a job = mandate\nEXTENSION: e.g. commandments = com (together) + mand (order) + ment (the thing) + s (more than one).",
+        "check_title": "Tick it or fix it - meaning sums for mand",
+        "check_rule": "Tick each correct word. Fix any word that does not match.",
+        "check_items": [
+          "1. command = com (with) + mand (order): give an order",
+          "2. demand = de (down) + mand (order): ask for it firmly",
+          "3. countermand = counter (against) + mand: cancel an order",
+          "4. mandate = mand (order) + ate (to do): an order to do a job"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Every answer has an order inside it",
+        "check_notes": "ANSWER: 1 command, 2 demand, 3 countermand, 4 mandate.\n1. MODEL: \"Number one says to give an order. Order is mand, and com means together, so it is command.\"\n2. SAY: \"Now tick each word that matches. Fix any word that is different.\"\n3. ASK: \"Which of these four words would change meaning most if you cut off its front part?\" 10 sec, turn and tell. EXPECT: countermand - without counter it would mean give the order, not cancel it.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number three together, then re-check.\nTRAP: ticking a word that is spelled wrong. Fix: read the green word chunk by chunk, then rewrite it.\nEXTENSION: Predict what a commandeer might mean before we meet it.\nHELP: read the green word first, then find mand or mend inside it.\n---\nPurpose: protected reveal so every student hears how each mand word is built. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "leopard",
+            "unfair": "eo",
+            "notes": "Why learned: eo says one short /e/ here, not two vowel sounds, and the ard ending says /uhd/.\nSay it: LEP-uhd, two beats. Write leo - pard in two chunks and check the o is still there.\nQuick link: leopard and jeopardy hide the same odd eo spelling."
+          },
+          {
+            "word": "iron",
+            "unfair": "ro",
+            "notes": "Why learned: the r is silent and the o says a plain /uh/, so the ro chunk sounds like nothing you would predict.\nSay it: EYE-uhn, two beats. Write i - ron in two chunks and leave the r in.\nQuick link: you can hear the r again in ironic, but never in iron itself."
+          }
+        ],
+        "new": {
+          "word": "gauge",
+          "unfair": "au",
+          "notes": "Why learned: au usually says /or/ as in caught and taught, but here it says a long /ay/, so the au chunk lies to you.\nSay it: GAYJ, one beat. Say gayj, then write g - au - ge in three chunks.\nLink: a gauge is the tool that measures - a rain gauge, a fuel gauge, a pressure gauge.\nYou will write this word in every science investigation where you measure something."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Every species in that rocky ecosystem needs clean running water.",
+          "targets": [
+            "species",
+            "ecosystem"
+          ],
+          "cups": {
+            "capitals": [
+              "Every"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "revision from two weeks ago: the eco root and the red word species"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Although the camouflage looked perfect, our microscope still found every insect egg.",
+          "targets": [
+            "camouflage",
+            "microscope"
+          ],
+          "cups": {
+            "capitals": [
+              "Although"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the although part that cannot stand alone - the comma shows where it ends)",
+              "full stop"
+            ]
+          },
+          "focus": "revision from three weeks ago: micro and the red word camouflage"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Name the two halves of a complex sentence - the half that stands alone and the half that waits.\nWHY THIS WEEK: in persuasive writing the opinion is one half and the reason is the other, and students keep leaving the reason on its own as a fragment.\nROUTINE: all grammar this week is written in the OG book. No boards and no scoring - books, thumbs and voices only.\nPREP: main clause = stands alone. Subordinate clause = leaves you waiting. Same cover-and-read test every day.",
+        "i_do": {
+          "title": "One half stands alone",
+          "rule": "A main clause stands alone. A subordinate clause leaves you waiting.",
+          "example": "Our canteen should sell fruit cups\nbecause students get hungry by recess.",
+          "items": [
+            "Cover one half. Read the other half out loud.",
+            "If it leaves you waiting, it is the subordinate clause."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Tomorrow: which word makes it wait?",
+          "notes": "ANSWER: the main clause is Our canteen should sell fruit cups. The subordinate clause is because students get hungry by recess.\n1. SAY: \"Every strong persuasive sentence has two halves - your opinion and your reason - and today you learn to tell them apart.\"\n2. WRITE: copy the whole sentence onto the class board as one line.\n3. MODEL: cover the second half with your hand, read \"Our canteen should sell fruit cups\" and stop. Say it stands alone, then write MAIN under it.\n4. MODEL: uncover, then cover the first half. Read \"because students get hungry by recess\" and stop dead. Say it leaves you waiting, then write SUB under it.\nTRAP: choosing the longer half as the main clause. Fix: cover and read each half, hear which one waits, student re-labels it.\nCLARIFY: if a student asks whether the main clause always comes first, say no - either half can come first, and we test by covering, never by position.\n---\nPurpose: day one names the two halves and gives the cover-and-read test. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: a main clause is independent; a subordinate clause depends on it and cannot be a sentence by itself."
+        },
+        "we_do": {
+          "title": "Which half is waiting?",
+          "rule": "A main clause stands alone. A subordinate clause leaves you waiting.",
+          "example": "A) although the price would go up\nB) our school should buy new library books",
+          "items": [
+            "Thumb up for the half that stands alone.",
+            "Read it right to the end before you decide."
+          ],
+          "routine": "Thumbs on three - voices off",
+          "footer": "Stem: A leaves me waiting because ...",
+          "notes": "ANSWER: B stands alone, so B is the main clause. A is the subordinate clause.\n1. SAY: \"Same test as the last slide. Read one half right to the end and listen for the wait.\"\n2. TIME: 15 seconds thinking, voices off, then thumbs up for the half that stands alone, everyone, together, on three.\n3. SCAN every thumb. 80%+ -> move on. Less -> read A aloud and stop dead so they hear the wait, then re-ask.\n4. ASK: \"What is A still waiting for?\" 5 sec, cold call two students. EXPECT: what we should do although the price goes up.\nTRAP: picking A because it sounds more grown up. Fix: read A aloud to the end, hear the wait, then re-signal.\nCLARIFY: if a student says both halves make sense, agree that they do - then say making sense is not the test, standing alone is.\n---\nPurpose: guided use of the cover-and-read test on a persuasive pair. [We Do | Guided practice | Grammar | HITS 7]\nPREP: A is a subordinate clause; although is what stops it standing on its own."
+        },
+        "you_do": {
+          "title": "Main or sub",
+          "rule": "Your turn: copy each half and write main or sub beside it.",
+          "example": "One done for you:\nif we start a school garden = sub",
+          "items": [
+            "A) every classroom should compost its scraps",
+            "B) because the bins are always full"
+          ],
+          "item_size": 17,
+          "routine": "OG books - 90 sec - pens down",
+          "footer": "Check: does it leave you waiting?",
+          "notes": "ANSWER: A - main. B - sub.\n1. SAY: \"Look at the finished one first. Then copy A and B into your book and write main or sub beside each.\"\n2. TIME: 90 seconds in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"read it out loud and stop at the end - if your voice is still hanging in the air, it is a sub.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> read B aloud together and hear the wait, then re-check.\nTRAP: writing sub for A because it is long. Fix: read only A aloud, hear it finish, student changes it to main.\nEXTENSION: Join A and B into one sentence, then rewrite it with the two halves swapped and the punctuation fixed.\nHELP: Give students the two labels main and sub; they match each label to A or B and then say why.\n---\nPurpose: independent use of the cover-and-read test on persuasive halves. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) every classroom should compost its scraps = main, it stands alone\nB) because the bins are always full = sub, because leaves you waiting\nEXTENSION: e.g. Every classroom should compost its scraps because the bins are always full. Because the bins are always full, every classroom should compost its scraps.",
+          "check_title": "Tick it or fix it - main or sub",
+          "check_rule": "Tick each correct label. Fix any label that does not match.",
+          "check_items": [
+            "A) every classroom should compost its scraps = main",
+            "It stands alone, so nothing is left hanging.",
+            "B) because the bins are always full = sub",
+            "Because leaves you waiting for the rest."
+          ],
+          "check_item_size": 17,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: read each half on its own.",
+          "check_notes": "ANSWER: A - main. B - sub.\n1. MODEL: \"In A I read every classroom should compost its scraps and stop. Nothing is missing, so it is a main clause.\"\n2. SAY: \"Now tick each label that matches. Fix any label that is different.\"\n3. ASK: \"Which single word in B is doing all the waiting?\" 10 sec, turn and tell. EXPECT: because.\n4. SCAN corrections. 80%+ -> continue. Less -> read B aloud together, then re-check.\n5. SAY: \"When you write your persuasive paragraph today, check that every reason half is joined to an opinion half.\"\nTRAP: ticking B because it sounds like a real sentence. Fix: read it alone, hear the wait, then correct it.\n---\nPurpose: protected reveal that models the cover-and-read reasoning. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "type": "review",
+      "morphology_review": [
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat",
+          "extra_task": {
+            "prompt": "Give me one word built from carn or carni, meaning flesh.",
+            "answers": [
+              "carnivore",
+              "carnival",
+              "carnage",
+              "incarnate"
+            ]
+          }
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer",
+          "extra_task": {
+            "prompt": "Give me one word built from vict or vinc, meaning conquer.",
+            "answers": [
+              "victor",
+              "convict",
+              "convince",
+              "invincible"
+            ]
+          }
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust"
+        },
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time"
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small",
+          "extra_task": {
+            "prompt": "Give me one word that starts with micro, meaning small.",
+            "answers": [
+              "microscope",
+              "microwave",
+              "microchip",
+              "microphone"
+            ]
+          }
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "ecologist",
+          "convict",
+          "megaphone",
+          "herbivore",
+          "chronicler",
+          "command",
+          "reflection",
+          "carnivore",
+          "eviction",
+          "mandatory",
+          "pictograph",
+          "synchronous",
+          "convincing",
+          "adjoin",
+          "chronologist"
+        ],
+        "notes": "1. READ: \"If your first name has three letters or fewer, read row 1.\"\n2. READ: \"Four letters, read row 2.\"\n3. READ: \"Five letters, read row 3.\"\n4. READ: \"Six letters or more, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"vore means eating. Which two words carry it?\" 5 sec, choral response. EXPECT: herbivore, carnivore.\n7. ASK: \"chron means time. Which three words carry it?\" 5 sec, turn and tell. EXPECT: chronicler, synchronous, chronologist.\n8. ASK: \"mand means order. Which two words carry it?\" 5 sec, choral response. EXPECT: command, mandatory.\n9. ASK: \"Which word names a scientist who studies the home living things share?\" 3 sec, choral response. EXPECT: ecologist.\n10. ASK: \"Which word means being thrown out of a home?\" 3 sec, choral response. EXPECT: eviction.\n11. ASK: \"Make megaphone plural.\" 3 sec, choral response. EXPECT: megaphones.\n12. ASK: \"junct and join mean join. Which word means to sit next to and touch?\" 3 sec, choral response. EXPECT: adjoin."
+      },
+      "sound_bank": [
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "chron",
+          "type": "root"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "syn-",
+          "type": "prefix"
+        },
+        {
+          "morph": "omni-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ity",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "invincibility",
+          "sentence": "The coach warned us that invincibility never lasts a whole season.",
+          "prompt": "Which two taught parts can you find inside invincibility?",
+          "answer": "vinc, meaning conquer, and the -ity ending, which names a state."
+        },
+        {
+          "word": "evicted",
+          "sentence": "The family were evicted when the old flats were finally sold.",
+          "prompt": "Which root inside evicted means conquer?",
+          "answer": "vict. The e in front means out, so they were conquered out of their home."
+        },
+        {
+          "word": "chronograph",
+          "sentence": "The runner started her chronograph at the sound of the whistle.",
+          "prompt": "Which part tells you this watch is about time?",
+          "answer": "chron. A chronograph writes down time."
+        },
+        {
+          "word": "synchronised",
+          "sentence": "The dancers synchronised every step in the final routine.",
+          "prompt": "syn means together. What was made to happen together?",
+          "answer": "Their timing. syn plus chron means their times matched exactly."
+        },
+        {
+          "word": "incarnation",
+          "sentence": "The film showed the same hero in a completely new incarnation.",
+          "prompt": "carn means flesh. What does incarnation name?",
+          "answer": "Coming into flesh, so appearing in a new body or form."
+        },
+        {
+          "word": "disjointed",
+          "sentence": "His retell of the match was disjointed and hard to follow.",
+          "prompt": "joint means join. What has gone wrong here?",
+          "answer": "The parts are not joined, so the story jumps about."
+        },
+        {
+          "word": "omnivore",
+          "sentence": "A bush rat is an omnivore, so it will eat almost anything.",
+          "prompt": "Which part tells you it eats everything?",
+          "answer": "The omni at the front. It means all, so an omnivore eats all kinds of food."
+        },
+        {
+          "word": "molecule",
+          "sentence": "Every water molecule holds two hydrogen atoms.",
+          "prompt": "Which ending tells you a molecule is tiny?",
+          "answer": "The ule ending. It means small."
+        },
+        {
+          "word": "demand",
+          "sentence": "The captain made one clear demand before the game started.",
+          "prompt": "mand means order. How is a demand different from a request?",
+          "answer": "A demand is an order, so it does not leave you a choice."
+        },
+        {
+          "word": "commend",
+          "sentence": "Our principal will commend the whole choir at assembly.",
+          "prompt": "mend means entrust. What is being entrusted here?",
+          "answer": "Her good words. To commend someone is to hand them public praise."
+        }
+      ],
+      "new_morphology": {
+        "morph": "mand/mend",
+        "type": "root",
+        "keyword": "command",
+        "meaning": "order, entrust"
+      },
+      "words_to_read_new": [
+        {
+          "word": "commander",
+          "meaning": "com + mand means order + er means the one who: the one who gives the orders"
+        },
+        {
+          "word": "commanding",
+          "meaning": "com + mand means order + ing means doing it now: giving orders right now"
+        },
+        {
+          "word": "demanding",
+          "meaning": "de means down + mand means order + ing: sending orders down without a break"
+        },
+        {
+          "word": "recommend",
+          "meaning": "re means again + com + mend means entrust: to hand it on with your praise attached"
+        },
+        {
+          "word": "commandeer",
+          "meaning": "com + mand means order + eer means one who acts: to take something by order"
+        },
+        {
+          "word": "remand",
+          "meaning": "re means back + mand means order: to order someone back until the court sits again"
+        },
+        {
+          "word": "mandate",
+          "meaning": "mand means order + ate means to do: an official order to get something done"
+        },
+        {
+          "word": "commandment",
+          "meaning": "com + mand means order + ment means the thing itself: the written order"
+        },
+        {
+          "word": "commendable",
+          "meaning": "com + mend means entrust + able means able to be: able to be praised"
+        }
+      ],
+      "associated_word_exceptions": [
+        {
+          "word": "commander",
+          "reason": "Ground 1 (OG_MEGA_PROMPT 4c): the mand/mend card lists only nine associated words and Monday's grid used all nine, so the review day has to extend the family. commander is the most transparent extension (mand plus the agent ending) and a word Grade 5/6 already meet in history and sport.",
+          "source": "Macquarie Dictionary (Australian English) commander, noun: a person who commands."
+        },
+        {
+          "word": "commanding",
+          "reason": "Ground 1: card family exhausted on Monday. commanding keeps the same root doing the same job and adds only the present-participle inflection.",
+          "source": "Macquarie Dictionary (Australian English) commanding, adjective: having or showing authority."
+        },
+        {
+          "word": "demanding",
+          "reason": "Ground 1: card family exhausted on Monday. Built directly on the card word demand with a universal inflection, and highly usable in Grade 5/6 writing.",
+          "source": "Macquarie Dictionary (Australian English) demanding, adjective: making demands, requiring much effort."
+        },
+        {
+          "word": "recommend",
+          "reason": "Ground 1 plus ground 3: card family exhausted on Monday, and recommend is the highest-value mend word for this cohort - they use it constantly in persuasive writing, and it makes the mend spelling visible in an everyday word.",
+          "source": "Macquarie Dictionary (Australian English) recommend, verb: to commend to another's favour, to present as worthy."
+        },
+        {
+          "word": "commandeer",
+          "reason": "Ground 3: chosen over the longer card-adjacent forms because -eer was taught in Term 2, so commandeer stacks a taught suffix on the new root, its sum (together + order + one who acts) is transparent, and it fits the grid at full size.",
+          "source": "Macquarie Dictionary (Australian English) commandeer, verb: to seize for official or military use, to take arbitrarily."
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears, then connect mand or mend back to the card meaning: order, entrust.\ncommander - com means together + mand means order + -er means the one who: the one who gives the orders.\ncommanding - com means together + mand means order + -ing means doing it now: giving the orders right now.\ndemanding - de means down + mand means order + -ing means doing it now: sending orders down without a break.\nrecommend - re means again + com means together + mend means entrust: to hand something on again with your praise attached.\ncommandeer - com means together + mand means order + -eer means one who acts: to take something by order, whether the owner likes it or not.\nremand - re means back + mand means order: to order someone back, usually back into custody until the court sits again.\nmandate - mand means order + -ate means to do: an official order telling someone to get a job done.\ncommandment - com means together + mand means order + -ment means the thing itself: the written order itself.\ncommendable - com means together + mend means entrust + -able means able to be: able to be entrusted with praise. Worth praising.\nMemory hook: MAND hides a hand - an order is put into someone's hand. MEND is that hand held out in trust, so it praises. Challenge: catch three mand or mend words in a school notice this week.",
+      "words_to_spell_new": [
+        "commander",
+        "demanding",
+        "recommend",
+        "commandeer"
+      ],
+      "extension": "1. SAY: \"When you finish, rewrite one of your four words as a school notice sentence a principal could actually send.\"\n2. CHECK: the sentence must show the order or entrust meaning, not just use the word.\nEXTENSION: Take the unseen word countermanded. Write its full morpheme sum naming every part, then use it in one sentence about a captain who changed her mind.\nAnswer: countermanded = counter (against) + mand (order) + ed (it is done), so an order was cancelled.",
+      "new_morph_activity": {
+        "title": "Order or entrust?",
+        "rule": "Write O if the word means giving an order. Write E if it means entrusting or praising.",
+        "example": "One done for you:\nmandate = O, it is an official order",
+        "items": [
+          "1. command = ?    2. demand = ?",
+          "3. commend = ?    4. recommend = ?"
+        ],
+        "item_size": 17,
+        "routine": "OG books - 3 min - pens down",
+        "footer": "Check: which spelling did each one use?",
+        "notes": "ANSWER: 1 O, 2 O, 3 E, 4 E.\n1. SAY: \"Our card gives mand and mend two meanings - order, and entrust. Write O or E beside each word, then read them back to yourself.\"\n2. TIME: 3 minutes in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"say the word to a friend - are you bossing them, or are you handing them something good?\" Then do number one together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> sort number three together aloud, then re-check.\nTRAP: marking recommend as O because it sounds forceful. Fix: read the sentence I recommend this book, hear the praise, student changes it to E.\nEXTENSION: Write the pattern you noticed as a rule sentence, then test it on commandment and commendable.\nHELP: Give students the two headings ORDER and ENTRUST already written; they copy each word under a heading.\n---\nPurpose: the sort makes the mand/mend spelling split visible before students spell them. [You Do | Sorting | Morphology]\nANSWERS:\n1. command = O\n2. demand = O\n3. commend = E\n4. recommend = E\nEXTENSION: the rule is that the mand spelling carries order and the mend spelling carries entrust; commandment is O and commendable is E, so it holds.",
+        "check_title": "Tick it or fix it - order or entrust",
+        "check_rule": "Tick each correct letter. Fix any letter that does not match.",
+        "check_items": [
+          "1. command = O, the mand spelling carries order",
+          "2. demand = O, mand again, an order pushed down",
+          "3. commend = E, the mend spelling carries entrust",
+          "4. recommend = E, mend again, so you hand on praise"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "mand orders. mend entrusts.",
+        "check_notes": "ANSWER: 1 O, 2 O, 3 E, 4 E.\n1. MODEL: \"Number one is command. I can see the mand spelling, and mand carries order, so it is O.\"\n2. SAY: \"Now tick each letter that matches. Fix any letter that is different.\"\n3. ASK: \"What does the spelling itself tell you before you even think about the meaning?\" 10 sec, turn and tell. EXPECT: mand means order and mend means entrust, so the spelling gives the answer away.\n4. SCAN corrections. 80%+ -> continue. Less -> re-sort number four together, then re-check.\nTRAP: ticking a letter without checking the spelling. Fix: underline mand or mend in the green word, then re-decide.\nEXTENSION: Predict whether commendation is O or E before you look.\nHELP: cover the ends of the words and read only mand or mend first.\n---\nPurpose: protected reveal that turns the sort into a spelling rule students can reuse. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "gauge",
+            "unfair": "au",
+            "notes": "Why learned: au says a long /ay/ here, not the /or/ it says in caught and taught.\nSay it: GAYJ, one beat. Chin it back to me, then write g - au - ge in three chunks.\nQuick link: the ge on the end says /j/, the same job it does in change and page."
+          },
+          {
+            "word": "leopard",
+            "unfair": "eo",
+            "notes": "Why learned: eo says a single short /e/, so the o is doing no work you can hear.\nSay it: LEP-uhd, two beats. Chin it back to me, then write leo - pard.\nQuick link: a leopard is a carnivore, and carn was one of our roots two weeks ago."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The heavy herbivore stayed close while the young carnivore slept.",
+          "targets": [
+            "herbivore",
+            "carnivore"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "revision from two and three weeks ago: the carn and vore roots"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Because our seismograph kept beeping, Ms Patel checked every microchip in the room.",
+          "targets": [
+            "seismograph",
+            "microchip"
+          ],
+          "cups": {
+            "capitals": [
+              "Because",
+              "Ms",
+              "Patel"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the because part that cannot stand alone - the comma shows where it ends)",
+              "full stop"
+            ]
+          },
+          "focus": "revision from three weeks ago: micro and the red word seismograph"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Name the one word that turns a whole clause into the waiting half.\nWHY THIS WEEK: students write their reason as a fragment because they never notice the trigger word that makes it wait.\nROUTINE: OG books, thumbs and voices. No boards and no scoring anywhere this week.\nPREP: because, although, when, if, since, while, unless, until are subordinating conjunctions. and, but, so are not.",
+        "i_do": {
+          "title": "The word that makes it wait",
+          "rule": "The subordinating conjunction sits at the front of the subordinate clause and makes it wait.",
+          "example": "because students get hungry by recess\nCover because and the rest stands alone.",
+          "items": [
+            "Trigger words: because, although, when, if, since, while.",
+            "Cover the trigger word. Does the rest stand alone?"
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Tomorrow: find all three parts.",
+          "notes": "ANSWER: because is the subordinating conjunction; cover it and students get hungry by recess stands alone.\n1. SAY: \"Yesterday you found the half that waits. Today you find the one word that makes it wait, and it is the word your reasons start with.\"\n2. WRITE: copy \"because students get hungry by recess\" onto the class board.\n3. MODEL: put your hand over because, read the rest aloud and stop. Say it stands alone now, then uncover and circle because on the board.\n4. ASK: \"So what is because doing to that clause?\" 5 sec, choral response. EXPECT: it makes the clause wait for the other half.\nTRAP: calling and or but a trigger word. Fix: cover and in Sam ran and Kim walked, hear that both halves still stand, student re-sorts it.\nCLARIFY: if a student asks about but, say but joins two halves that each stand alone, so it never makes one of them wait.\n---\nPurpose: names the trigger word and adds the cover-the-conjunction test. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: subordinating conjunctions make a clause dependent; coordinating ones (and, but, so, or) join two independent clauses."
+        },
+        "we_do": {
+          "title": "Which one has a trigger?",
+          "rule": "The subordinating conjunction sits at the front of the subordinate clause and makes it wait.",
+          "example": "A) although the queue is long\nB) and the queue is long",
+          "items": [
+            "Thumb up for the one with a trigger word.",
+            "Cover the first word. Does the rest stand alone?"
+          ],
+          "routine": "Thumbs on three - voices off",
+          "footer": "Stem: A waits because although ...",
+          "notes": "ANSWER: A has the trigger word although, so A is the subordinate clause. B is not waiting.\n1. SAY: \"Both start with a joining word, but only one of them makes you wait. Read each one right to the end.\"\n2. TIME: 15 seconds thinking, voices off, then thumbs up for A or fist for B, everyone, together, on three.\n3. SCAN every thumb. 80%+ -> move on. Less -> read A aloud and stop dead, then read B and hear it finish, then re-ask.\n4. ASK: \"How do you know although is the trigger and and is not?\" 5 sec, cold call two students. EXPECT: cover although and the rest stands alone, but covering and changes nothing.\nTRAP: choosing B because and is a joining word too. Fix: cover the first word of each, hear which one is freed, student re-signals.\nCLARIFY: if a student asks whether every clause has a trigger word, say no - a main clause has none, which is exactly why it stands alone.\n---\nPurpose: guided sorting of trigger words from joining words. [We Do | Guided practice | Grammar | HITS 7]\nPREP: although is subordinating and and is coordinating; the cover test separates them without any labels."
+        },
+        "you_do": {
+          "title": "Find the trigger word",
+          "rule": "Your turn: copy each clause and circle the word that makes it wait.",
+          "example": "One done for you:\nwhen the bell rings = when",
+          "items": [
+            "A) unless we act now",
+            "B) since the tuckshop closed"
+          ],
+          "item_size": 17,
+          "routine": "OG books - 90 sec - pens down",
+          "footer": "Check: cover it - does the rest stand alone?",
+          "notes": "ANSWER: A - unless. B - since.\n1. SAY: \"Look at the finished one first. Then copy A and B into your book and circle the word that makes each one wait.\"\n2. TIME: 90 seconds in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"cover the very first word and read what is left - if that suddenly stands alone, the word you covered is the trigger.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> cover the first word of B together, then re-check.\nTRAP: circling now in A because it is the last word. Fix: cover now, hear that A still waits, student circles unless instead.\nEXTENSION: Finish both clauses into full sentences, then rewrite each one with the two halves swapped and the punctuation fixed.\nHELP: Give students the trigger word list because, although, when, if, since, unless; they find which one starts each clause.\n---\nPurpose: independent use of the cover-the-conjunction test. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) unless we act now = unless\nB) since the tuckshop closed = since\nEXTENSION: e.g. Unless we act now, the creek will keep filling with rubbish. The creek will keep filling with rubbish unless we act now.",
+          "check_title": "Tick it or fix it - find the trigger",
+          "check_rule": "Tick each correct trigger word. Fix any that does not match.",
+          "check_items": [
+            "A) unless we act now = unless",
+            "Cover unless and we act now stands alone.",
+            "B) since the tuckshop closed = since",
+            "Cover since and the tuckshop closed stands alone."
+          ],
+          "check_item_size": 17,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: check every reason has a trigger.",
+          "check_notes": "ANSWER: A - unless. B - since.\n1. MODEL: \"In A I cover unless and read we act now. That stands alone, so unless was the word doing the waiting.\"\n2. SAY: \"Now tick each trigger word that matches. Fix any that is different.\"\n3. ASK: \"Which of these two triggers would you reach for in a persuasive paragraph, and why?\" 10 sec, turn and tell. EXPECT: unless, because it warns the reader what happens if we do nothing.\n4. SCAN corrections. 80%+ -> continue. Less -> cover the first word of B together, then re-check.\n5. SAY: \"When you draft your persuasive piece today, start one reason with because and one with unless.\"\nTRAP: ticking a whole clause instead of one word. Fix: point at the single circled word, student re-marks it.\n---\nPurpose: protected reveal that models the cover test on both clauses. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Wednesday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join",
+          "extra_task": {
+            "prompt": "Give me one word built from junct, join or joint, meaning join.",
+            "answers": [
+              "junction",
+              "conjunction",
+              "adjoin",
+              "jointly"
+            ]
+          }
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint",
+          "extra_task": {
+            "prompt": "Give me one word built from pict or picto, meaning paint.",
+            "answers": [
+              "picture",
+              "depict",
+              "pictograph",
+              "pictorial"
+            ]
+          }
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer"
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating",
+          "extra_task": {
+            "prompt": "Give me one word that ends in vore, meaning eating.",
+            "answers": [
+              "carnivore",
+              "herbivore",
+              "omnivore",
+              "insectivore"
+            ]
+          }
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "injunction",
+          "chronic",
+          "microbe",
+          "commandment",
+          "ecotourism",
+          "victor",
+          "globule",
+          "anachronism",
+          "pictorial",
+          "captive",
+          "province",
+          "reincarnate",
+          "chronically",
+          "commander",
+          "unconvincing"
+        ],
+        "notes": "1. READ: \"If soccer is your favourite of these, read row 1.\"\n2. READ: \"If netball or basketball is your favourite, read row 2.\"\n3. READ: \"If swimming is your favourite, read row 3.\"\n4. READ: \"If your favourite is none of those three, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"chron means time. Which three words carry it?\" 5 sec, choral response. EXPECT: chronic, anachronism, chronically.\n7. ASK: \"mand means order. Which two words carry it?\" 5 sec, turn and tell. EXPECT: commandment, commander.\n8. ASK: \"vict and vinc mean conquer. Which three words carry them?\" 5 sec, choral response. EXPECT: victor, province, unconvincing.\n9. ASK: \"Which word names a living thing too small to see?\" 3 sec, choral response. EXPECT: microbe.\n10. ASK: \"Which word means travel that looks after the environment?\" 3 sec, choral response. EXPECT: ecotourism.\n11. ASK: \"Which word means the opposite of convincing?\" 3 sec, choral response. EXPECT: unconvincing.\n12. ASK: \"Make globule plural.\" 3 sec, choral response. EXPECT: globules."
+      },
+      "sound_bank": [
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "chron",
+          "type": "root"
+        },
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root"
+        },
+        {
+          "morph": "syn-",
+          "type": "prefix"
+        },
+        {
+          "morph": "counter-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "conviction",
+          "sentence": "The court recorded a conviction after two days of evidence.",
+          "prompt": "vict means conquer. Who was conquered here?",
+          "answer": "The accused person. A conviction is the court proving the case against them."
+        },
+        {
+          "word": "victorious",
+          "sentence": "Our debating team came home victorious for the first time.",
+          "prompt": "Which root tells you they won?",
+          "answer": "vict. Victorious means having conquered."
+        },
+        {
+          "word": "chronology",
+          "sentence": "We built a chronology of the gold rush along the back wall.",
+          "prompt": "chron means time. What does a chronology show?",
+          "answer": "Events set out in the order they happened."
+        },
+        {
+          "word": "asynchronous",
+          "sentence": "Our online lesson was asynchronous, so we all worked at different times.",
+          "prompt": "syn means together. If the lesson was asynchronous, what was not together?",
+          "answer": "The times. Everyone did the work, but not at the same moment."
+        },
+        {
+          "word": "economical",
+          "sentence": "Riding to school is the most economical way to travel.",
+          "prompt": "eco means house. How does a house word end up meaning this?",
+          "answer": "It began as running a household well, so it now means careful with money."
+        },
+        {
+          "word": "conjoin",
+          "sentence": "The two creeks conjoin just past the old footbridge.",
+          "prompt": "junct and join mean join. What do the two creeks do at that spot?",
+          "answer": "They join together into one. The con at the front means together."
+        },
+        {
+          "word": "depiction",
+          "sentence": "The mural is a depiction of the wetlands before the town was built.",
+          "prompt": "pict means paint. What is a depiction?",
+          "answer": "Something painted or pictured, and here it is painted on a wall."
+        },
+        {
+          "word": "numeracy",
+          "sentence": "Our numeracy block runs straight after the morning break.",
+          "prompt": "What state does the acy ending name?",
+          "answer": "The state of being good with numbers."
+        },
+        {
+          "word": "countermand",
+          "sentence": "The captain had to countermand her own order at half time.",
+          "prompt": "counter means against. What does countermand do?",
+          "answer": "It sets one order against another, so the first order is cancelled."
+        },
+        {
+          "word": "recommendation",
+          "sentence": "Ms Ali wrote a recommendation for the student leadership team.",
+          "prompt": "Which part of recommendation carries the trust Ms Ali is handing over?",
+          "answer": "mend, meaning entrust. She is putting her trust in the student, in writing."
+        }
+      ],
+      "new_morphology": {
+        "morph": "jur/jud/just",
+        "type": "root",
+        "keyword": "adjure",
+        "meaning": "right, law"
+      },
+      "words_to_read_new": [
+        {
+          "word": "judge",
+          "meaning": "jud means right or law: the person who decides what the law says is right"
+        },
+        {
+          "word": "jury",
+          "meaning": "jur means law + y means the group: the group sworn in to decide by law"
+        },
+        {
+          "word": "justice",
+          "meaning": "just means right + ice means the state of: the state of things being right"
+        },
+        {
+          "word": "injustice",
+          "meaning": "in means not + just means right + ice: the state of things not being right"
+        },
+        {
+          "word": "justify",
+          "meaning": "just means right + ify means to make: to make your side look right"
+        },
+        {
+          "word": "injury",
+          "meaning": "in means not + jur means right + y: something not right done to your body"
+        },
+        {
+          "word": "injurious",
+          "meaning": "in means not + jur means right + ious means full of: full of harm"
+        },
+        {
+          "word": "prejudice",
+          "meaning": "pre means before + jud means judge + ice: judging before you know anything"
+        },
+        {
+          "word": "judgemental",
+          "meaning": "jud means judge + ment + al means relating to: quick to judge other people"
+        },
+        {
+          "word": "judicious",
+          "meaning": "jud means judge + icious means full of: full of good judgement"
+        },
+        {
+          "word": "adjudicate",
+          "meaning": "ad means to + jud means judge + ate means to do: to act as judge and settle it"
+        },
+        {
+          "word": "jurisdiction",
+          "meaning": "juris means law + dict means say + ion: the area where a court's law is spoken"
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Learn jur, jud and just once and every word about fairness, courts and rights opens up for you as a reader and a speller.\"\nREAD each word as it appears, then connect jur, jud or just to the card meaning: right, law.\njudge - jud means right or law: the person whose job is to decide what the law says is right.\njury - jur means law + -y means the group: the group sworn in to decide what the law says.\njustice - just means right + -ice means the state of: the state of everything being right and fair.\ninjustice - in means not + just means right + -ice means the state of: the state of things not being right.\njustify - just means right + -ify means to make: to make your side look right by giving reasons.\ninjury - in means not + jur means right + -y means the state of: the state of something not right being done to your body.\ninjurious - in means not + jur means right + -ious means full of: full of what is not right, so it does you damage.\nprejudice - pre means before + jud means judge + -ice means the state of: the state of judging before you know anything.\njudgemental - jud means judge + -ment means the act of + -al means relating to: relating to judging, so quick to judge other people.\njudicious - jud means judge + -icious means full of: full of good judgement, so you choose wisely.\nadjudicate - ad means to + jud means judge + -ate means to do: to act as the judge and settle it.\njurisdiction - juris means law + dict means say + -ion means the act of: the saying of the law, so the area where that court rules.\nMemory hook: JUR, JUD and JUST are one family in three coats - law, judge, right. Meet a new one and ask: is this about what is FAIR? Challenge: find one in a persuasive text this week.",
+      "words_to_spell_new": [
+        "justice",
+        "injustice",
+        "prejudice",
+        "justify"
+      ],
+      "extension": "1. SAY: \"When you finish, write one persuasive sentence that uses justice and shows what it means.\"\n2. CHECK: the sentence must show the right or fair meaning, not just use the word.\nEXTENSION: Write the full morpheme sums for injustice and prejudice, then write one persuasive sentence that uses both and shows the difference between them.\nA morpheme sum names every part of the word and what each part means.\nAnswer: injustice = in (not) + just (right) + ice (state); prejudice = pre (before) + jud (judge) + ice (state).",
+      "new_morph_activity": {
+        "title": "Build the jur, jud and just words",
+        "rule": "Add the parts together and write the real word each sum makes.",
+        "example": "One done for you:\njust + -ice = justice",
+        "items": [
+          "1. in (not) + just + -ice = ?    2. pre (before) + jud + -ice = ?",
+          "3. in (not) + jur + y = ?    4. just + ify (make) = ?"
+        ],
+        "item_size": 16,
+        "routine": "Whiteboards - 3 min - boards up",
+        "footer": "Which ending names a state in three?",
+        "notes": "ANSWER: 1 injustice, 2 prejudice, 3 injury, 4 justify.\n1. SAY: \"Look at the finished sum first. Then add the parts in each line and write the real word on your board.\"\n2. TIME: 3 minutes. Write it... chin it... show me on my cue.\n3. CIRCULATE: to a stuck student say, \"-ice is the ending that names a state, the same ending as in service - so put it on the end and say the whole word out loud.\" Then build number one together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number three together, then re-ask.\nTRAP: writing injustices for number one. Fix: point at the sum, say there is no plural part in it, student rewrites injustice.\nEXTENSION: Add one more part to number two, then write the full morpheme sum for the word you made.\nHELP: Give the word bank injustice, prejudice, injury, justify; students match each word to its sum first.\n---\nPurpose: builds jur, jud and just words from taught parts on the day the card is introduced. [You Do | Word building | Morphology]\nANSWERS:\n1. in (not) + just + -ice = injustice\n2. pre (before) + jud + -ice = prejudice\n3. in (not) + jur + y = injury\n4. just + ify (make) = justify\nEXTENSION: e.g. prejudiced = pre (before) + jud (judge) + ice (state) + ed (it is done), describing a person who already judged.",
+        "check_title": "Tick it or fix it - build the just words",
+        "check_rule": "Tick each correct word. Fix any word that does not match.",
+        "check_items": [
+          "1. injustice = in (not) + just (right) + -ice (state)",
+          "2. prejudice = pre (before) + jud (judge) + -ice (state)",
+          "3. injury = in (not) + jur (right) + y (state of)",
+          "4. justify = just (right) + ify (to make)"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Three spellings, one meaning: right or law.",
+        "check_notes": "ANSWER: 1 injustice, 2 prejudice, 3 injury, 4 justify.\n1. MODEL: \"Number one is in, meaning not, plus just, meaning right, plus -ice, the state of. Not right as a state is injustice.\"\n2. SAY: \"Now tick each word that matches. Fix any word that is different.\"\n3. ASK: \"Injury and injustice both start with in. Why does one hurt a body and the other hurt a whole group?\" 10 sec, turn and tell. EXPECT: jur points at your rights, just points at what is fair.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number two together, then re-check.\nTRAP: ticking a word that is spelled wrong. Fix: read the green word chunk by chunk, then rewrite it.\nEXTENSION: Predict what prejudge will mean before we meet it.\nHELP: read the green word first, then find jur, jud or just inside it.\n---\nPurpose: protected reveal that shows the same root wearing three spellings. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "gauge",
+            "unfair": "au",
+            "notes": "Why learned: au says a long /ay/ here, so the word sounds nothing like the letters promise.\nSay it: GAYJ, one beat. Write g - au - ge, then check the u is still in there.\nQuick link: gauge the depth, gauge the mood - it means to measure something you cannot count."
+          },
+          {
+            "word": "leopard",
+            "unfair": "eo",
+            "notes": "Why learned: eo says one short /e/ and the ard ending says /uhd/ with no r you can hear.\nSay it: LEP-uhd, two beats. Write leo - pard, then check the silent o is there.\nQuick link: snow leopard, clouded leopard - the spelling never changes."
+          }
+        ],
+        "new": {
+          "word": "vacuum",
+          "unfair": "uu",
+          "notes": "Why learned: uu is the unfair chunk. Almost no English word has two u letters in a row, and here they say /yoo/ then /uh/.\nSay it: VAK-yoom, two beats. Say vak, then yoom, and write vac - uum in two chunks.\nLink: a vacuum is a space with no air at all, so it turns up in space science and in forces work.\nYou will write this word in every space and forces report this term."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "My stomach rumbled while the microwave slowly heated our lunch.",
+          "targets": [
+            "stomach",
+            "microwave"
+          ],
+          "cups": {
+            "capitals": [
+              "My"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "revision from two and three weeks ago: the red word stomach and micro"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Ms Rowe said, \"Check the seismograph carefully before the tsunami drill starts.\"",
+          "targets": [
+            "seismograph",
+            "tsunami"
+          ],
+          "cups": {
+            "capitals": [
+              "Ms",
+              "Rowe",
+              "Check"
+            ],
+            "punctuation": [
+              "comma before the speech (it separates who said it from what they said)",
+              "opening quotation mark (speech starts here, so the first word takes a capital)",
+              "full stop inside the quotation",
+              "closing quotation mark"
+            ]
+          },
+          "focus": "revision from three and four weeks ago: the red words seismograph and tsunami"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Put the two halves and the trigger word together and label all three in one sentence.\nWHY THIS WEEK: a persuasive paragraph is opinion plus reason, and students need to see both halves in one sentence before they can build them.\nROUTINE: OG books, thumbs and voices. No boards and no scoring anywhere this week.\nPREP: label M for main clause, S for subordinate clause, T for trigger word. Same three labels all week.",
+        "i_do": {
+          "title": "All three parts",
+          "rule": "In a complex sentence: find the main clause, the subordinate clause and the trigger word.",
+          "example": "We should ban plastic straws because turtles eat them.",
+          "items": [
+            "Step 1: cover one half at a time. Step 2: name the trigger word.",
+            "Label them M, S and T in your book."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Tomorrow: move the waiting half to the front.",
+          "notes": "ANSWER: M is We should ban plastic straws. S is because turtles eat them. T is because.\n1. SAY: \"This is the sentence shape your persuasive paragraph is built from - your opinion, then your reason - and today you can name every part of it.\"\n2. WRITE: copy the whole sentence onto the class board, then draw a line straight down between straws and because.\n3. MODEL: cover the right side, read the left aloud, say it stands alone, then write M above it. Uncover, cover the left, read the right, hear the wait, write S above it.\n4. MODEL: circle because on the class board and write T under the circle, then say the board now shows M, S and T.\nTRAP: labelling the whole sentence S because it contains because. Fix: cover the because half, hear the other half stand alone, student re-labels the left side M.\nCLARIFY: if a student asks whether the trigger word belongs to the subordinate clause, say yes - it travels with it wherever the clause goes.\n---\nPurpose: brings the two halves and the trigger word together into one labelled model. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: this is a complex sentence - one independent clause plus one dependent clause introduced by a subordinating conjunction."
+        },
+        "we_do": {
+          "title": "Label it together",
+          "rule": "In a complex sentence: find the main clause, the subordinate clause and the trigger word.",
+          "example": "Homework should be optional if the work is already finished.",
+          "items": [
+            "Thumb up when you have found the trigger word.",
+            "Then say which half is M and which half is S."
+          ],
+          "routine": "Thumbs on three - voices off",
+          "footer": "Stem: The trigger word is ... because ...",
+          "notes": "ANSWER: M is Homework should be optional. S is if the work is already finished. T is if.\n1. SAY: \"Same three labels. Find the trigger word first, because it always sits at the front of the waiting half.\"\n2. TIME: 15 seconds thinking, voices off, then thumbs up when you have the trigger word, everyone, together, on three.\n3. ASK: \"What is the trigger word?\" 5 sec, choral response, then cold call one student for how do you know. EXPECT: if, because covering it lets the work is already finished stand alone.\n4. SCAN every thumb. 80%+ -> label M and S chorally and move on. Less -> cover each half aloud together, then re-ask.\nTRAP: reading if the work is already finished as a whole sentence. Fix: read it aloud and stop dead, hear the wait, student labels it S.\nCLARIFY: if a student says the sentence works without the S half, agree - that is exactly what makes the other half the main clause.\n---\nPurpose: guided labelling of all three parts before students do it alone. [We Do | Guided practice | Grammar | HITS 7]\nPREP: if introduces a condition, so the clause it starts always depends on the main clause to finish the idea."
+        },
+        "you_do": {
+          "title": "Label all three",
+          "rule": "Your turn: copy each sentence and label M, S and T.",
+          "example": "One done for you:\nWe need shade because the yard is hot. T = because",
+          "items": [
+            "A) Students should choose their seats when the term starts.",
+            "B) Although the pool is cold, our swimming times improved."
+          ],
+          "item_size": 15,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: did you circle the trigger word?",
+          "notes": "ANSWER: A - M is Students should choose their seats, S is when the term starts, T is when. B - M is our swimming times improved, S is Although the pool is cold, T is Although.\n1. SAY: \"Look at the finished one first. Then copy A and B into your book and mark M, S and T on each.\"\n2. TIME: 2 minutes in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"hunt the trigger word first - it is the one word you can cover to set a whole half free.\" Then label A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> label B together on the board, then re-check.\nTRAP: labelling B the wrong way round because the S half comes first. Fix: cover each half and read it, hear which one waits, student swaps the labels.\nEXTENSION: Rewrite B with the two halves swapped, fix the punctuation, then write which order suits a persuasive paragraph better and why.\nHELP: Give students the trigger words when and although already circled; they only label M and S.\n---\nPurpose: independent labelling with the subordinate clause in both positions. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) M = Students should choose their seats, S = when the term starts, T = when\nB) S = Although the pool is cold, M = our swimming times improved, T = Although\nEXTENSION: e.g. Our swimming times improved although the pool is cold. Front position suits persuasion because the reader meets the objection first.",
+          "check_title": "Tick it or fix it - label all three",
+          "check_rule": "Tick each correct label. Fix any label that does not match.",
+          "check_items": [
+            "A) M = Students should choose their seats, T = when",
+            "S = when the term starts, and it waits.",
+            "B) M = our swimming times improved, T = Although",
+            "S = Although the pool is cold, and it comes first."
+          ],
+          "check_item_size": 15,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: name M, S and T in your own draft.",
+          "check_notes": "ANSWER: A - T is when. B - T is Although, and the S half comes first.\n1. MODEL: \"In A I cover when the term starts and read Students should choose their seats. That stands alone, so it is M and when is the trigger.\"\n2. SAY: \"Now tick each label that matches. Fix any label that is different.\"\n3. ASK: \"Why is B labelled differently from A even though both have two halves?\" 10 sec, turn and tell. EXPECT: the waiting half comes first in B, so S is on the left and M is on the right.\n4. SCAN corrections. 80%+ -> continue. Less -> relabel B together, then re-check.\n5. SAY: \"Pick one sentence in your persuasive draft today and mark M, S and T on it in the margin.\"\nTRAP: assuming M is always the first half. Fix: cover and read, then re-label from what you hear.\n---\nPurpose: protected reveal that shows the labels in both clause orders. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Thursday",
+      "type": "review",
+      "morphology_review": [
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law"
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        },
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time",
+          "extra_task": {
+            "prompt": "Give me one word built from chron, meaning time.",
+            "answers": [
+              "chronicle",
+              "chronology",
+              "synchronise",
+              "chronograph"
+            ]
+          }
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust",
+          "extra_task": {
+            "prompt": "Give me one word built from mand or mend, meaning order or entrust.",
+            "answers": [
+              "command",
+              "demand",
+              "mandate",
+              "commend"
+            ]
+          }
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint"
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house",
+          "extra_task": {
+            "prompt": "Give me one word built from eco, meaning house.",
+            "answers": [
+              "ecologist",
+              "ecosystem",
+              "economical",
+              "ecocide"
+            ]
+          }
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "megabyte",
+          "convicted",
+          "ecocide",
+          "injustice",
+          "chronological",
+          "microphone",
+          "carnage",
+          "synchronise",
+          "exclusive",
+          "judge",
+          "insectivore",
+          "eviction",
+          "rejoin",
+          "chronicled",
+          "invincible"
+        ],
+        "notes": "1. READ: \"Birthdays in January, February or March, read row 1.\"\n2. READ: \"April, May or June, read row 2.\"\n3. READ: \"July, August or September, read row 3.\"\n4. READ: \"October, November or December, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"jud and just mean right or law. Which two words carry them?\" 5 sec, choral response. EXPECT: injustice, judge.\n7. ASK: \"chron means time. Which two words carry it?\" 5 sec, turn and tell. EXPECT: chronological, chronicled.\n8. ASK: \"vict and vinc mean conquer. Which three words carry them?\" 5 sec, choral response. EXPECT: convicted, eviction, invincible.\n9. ASK: \"Which word names an animal that eats insects?\" 3 sec, choral response. EXPECT: insectivore.\n10. ASK: \"Which word means to join back together?\" 3 sec, choral response. EXPECT: rejoin.\n11. ASK: \"clud and clus mean shut. Which word means shut off to everyone else?\" 3 sec, choral response. EXPECT: exclusive.\n12. ASK: \"Make microphone plural.\" 3 sec, choral response. EXPECT: microphones."
+      },
+      "sound_bank": [
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "chron",
+          "type": "root"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-cial",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ity",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "invincibility",
+          "sentence": "One loss on Friday ended our sense of invincibility.",
+          "prompt": "Which ending turns invincible into a state?",
+          "answer": "The ity ending. It names the state of not being able to be beaten."
+        },
+        {
+          "word": "provincial",
+          "sentence": "The provincial museum keeps the town's oldest photographs.",
+          "prompt": "Which root sits in the middle of provincial?",
+          "answer": "vinc. It marks land that was conquered and then ruled from far away."
+        },
+        {
+          "word": "chronicler",
+          "sentence": "Our class chronicler wrote up every excursion this term.",
+          "prompt": "chron means time. What does a chronicler actually do?",
+          "answer": "Writes down what happened, in the order it happened."
+        },
+        {
+          "word": "chronometer",
+          "sentence": "The museum's oldest chronometer still keeps perfect time.",
+          "prompt": "Which part of chronometer means measure?",
+          "answer": "The meter part. chron plus meter is a time measurer."
+        },
+        {
+          "word": "carnivorous",
+          "sentence": "A carnivorous plant traps insects on its sticky leaves.",
+          "prompt": "Two roots are working here. Which parts tell you what it eats?",
+          "answer": "carn for flesh and vore for eating, so it feeds on meat."
+        },
+        {
+          "word": "ecological",
+          "sentence": "The council released an ecological report on the wetlands.",
+          "prompt": "eco means house. What is an ecological report about?",
+          "answer": "The home living things share, and how healthy it is."
+        },
+        {
+          "word": "microscopic",
+          "sentence": "The sample held microscopic cracks we could not see.",
+          "prompt": "Which part tells you the cracks were tiny?",
+          "answer": "micro. It means small."
+        },
+        {
+          "word": "megalitre",
+          "sentence": "The dam lost one megalitre of water in the heatwave.",
+          "prompt": "Two parts build megalitre. What does each one add?",
+          "answer": "mega means million and litre is the unit, so the dam lost a million litres."
+        },
+        {
+          "word": "jury",
+          "sentence": "The jury listened to the last witness on Thursday morning.",
+          "prompt": "Which part of jury tells you this group works under the law?",
+          "answer": "jur. A jury is sworn in to decide what the law says is right."
+        },
+        {
+          "word": "prejudice",
+          "sentence": "The novel showed how prejudice can shape a whole town.",
+          "prompt": "Which part of prejudice tells you the judging came too early?",
+          "answer": "The pre at the front. It means before, so you judge before you know."
+        }
+      ],
+      "new_morphology": {
+        "morph": "jur/jud/just",
+        "type": "root",
+        "keyword": "adjure",
+        "meaning": "right, law"
+      },
+      "words_to_read_new": [
+        {
+          "word": "adjure",
+          "meaning": "ad means to + jur means law: to charge someone as if under the law"
+        },
+        {
+          "word": "judiciary",
+          "meaning": "jud means judge + iary means the group: all the judges and courts together"
+        },
+        {
+          "word": "jurist",
+          "meaning": "jur means law + ist means a person who: a person who studies the law"
+        },
+        {
+          "word": "juror",
+          "meaning": "jur means law + or means the one who: one of the people sworn in to decide"
+        },
+        {
+          "word": "unjust",
+          "meaning": "un means not + just means right: not right, plain and hard"
+        },
+        {
+          "word": "justified",
+          "meaning": "just means right + ify means to make + ed: shown to be right, with reasons"
+        },
+        {
+          "word": "prejudge",
+          "meaning": "pre means before + jud means judge: to judge it before you know anything"
+        },
+        {
+          "word": "judgement",
+          "meaning": "jud means judge + ment means the act or result: the decision reached"
+        },
+        {
+          "word": "misjudge",
+          "meaning": "mis means wrong + jud means judge: to judge something the wrong way"
+        }
+      ],
+      "associated_word_exceptions": [
+        {
+          "word": "juror",
+          "reason": "Ground 3 (OG_MEGA_PROMPT 4c): chosen over the card word adjudge because juror is the simplest transparent jur word left (jur plus the agent ending) and Grade 5/6 already meet it beside jury; adjudge is archaic and would need the untaught ad- glossed for no teaching gain.",
+          "source": "Macquarie Dictionary (Australian English) juror, noun: a member of a jury."
+        },
+        {
+          "word": "unjust",
+          "reason": "Ground 3: the plainest word in the whole family and the one this cohort will actually use in persuasive writing. It beats the card word abjure on transparency, register and usefulness, and un- is everyday English rather than an untaught affix.",
+          "source": "Macquarie Dictionary (Australian English) unjust, adjective: not just, lacking in justice or fairness."
+        },
+        {
+          "word": "justified",
+          "reason": "Ground 1: after Wednesday's twelve-word grid the card's remaining associated words are archaic (abjure, adjudge) or adult legal register (jurisprudence). justified extends Wednesday's justify with a universal inflection and is core persuasive-writing vocabulary.",
+          "source": "Macquarie Dictionary (Australian English) justified, adjective: having a good reason, shown to be right."
+        },
+        {
+          "word": "prejudge",
+          "reason": "Ground 3: the plainest pre plus jud word available and a better teaching word than the remaining card options (abjure, jurisprudence). Both parts are transparent, and it pays off Wednesday's prediction task where students were asked to guess its meaning.",
+          "source": "Macquarie Dictionary (Australian English) prejudge, verb: to judge beforehand, especially without adequate knowledge."
+        },
+        {
+          "word": "judgement",
+          "reason": "Ground 1 plus ground 3: card family exhausted, and judgement is the plain sibling of the card word judgemental. Australian spelling keeps the e, which is exactly the spelling decision this cohort gets wrong.",
+          "source": "Macquarie Dictionary (Australian English) judgement, noun: the act of judging, a decision. Australian usage keeps the medial e outside strict legal contexts."
+        },
+        {
+          "word": "misjudge",
+          "reason": "Ground 3: a simpler and more transparent jud word than the remaining card options (adjudge, jurisprudence), and mis- is everyday English so the sum reads cleanly as wrong plus judge.",
+          "source": "Macquarie Dictionary (Australian English) misjudge, verb: to judge wrongly."
+        }
+      ],
+      "wtr_new_notes": "READ each word as it appears, then connect jur, jud or just back to the card meaning: right, law.\nadjure - ad means to + jur means law: to charge someone as if the law itself were asking. It is the strongest way to ask.\njudiciary - jud means judge + -iary means the group or place: all the judges and courts of a country, taken together.\njurist - jur means law + -ist means a person who: a person who studies or writes about the law.\njuror - jur means law + -or means the one who: one of the people sworn in to decide by law.\nunjust - un means not + just means right: not right. Plain and hard, and useful in an argument.\njustified - just means right + -ify means to make + -ed means it is done: shown to be right, with reasons behind it.\nprejudge - pre means before + jud means judge: to judge something before you know anything about it.\njudgement - jud means judge + -ment means the act or result: the decision a judge reaches.\nmisjudge - mis means wrong + jud means judge: to judge something the wrong way.\nMemory hook: JUR, JUD and JUST are one family in three coats - law, judge, right. Meet a new one and ask: is this about what is FAIR? Challenge: find one in a persuasive text this week.",
+      "words_to_spell_new": [
+        "justified",
+        "judgement",
+        "prejudge",
+        "misjudge"
+      ],
+      "extension": "1. SAY: \"When you finish, write one sentence a lawyer could say that uses two of your four words.\"\n2. CHECK: the sentence must show the right or law meaning, not just use the word.\nEXTENSION: Write one complex sentence that uses justified and judgement together, then underline the root in each word and write what it means.\nA complex sentence has a main clause plus a waiting half that starts with a trigger word.\nAnswer: e.g. Although the judgement felt harsh, her decision was justified. just and jud both mean right or judge.",
+      "new_morph_activity": {
+        "title": "Literal meanings",
+        "rule": "Write the morpheme sum beside each word, then what the whole word means.",
+        "example": "One done for you:\nunjust = un (not) + just (right): not right",
+        "items": [
+          "1. justified = ?    2. misjudge = ?",
+          "3. judgement = ?    4. unjustly = ?"
+        ],
+        "item_size": 17,
+        "routine": "OG books - 4 min - pens down",
+        "footer": "Every sum must end in what the word means.",
+        "notes": "ANSWER: 1 shown to be right, 2 to judge it wrongly, 3 the decision reached, 4 in a way that is not right.\n1. SAY: \"Copy the finished one first so your layout matches. Then write the parts, then a colon, then what the whole word means.\"\n2. TIME: 4 minutes in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"say the word slowly and listen for the small word inside it - the root is the piece that means right or law.\" Then write number one together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> build number three together on the board, then re-check.\nTRAP: writing only the meaning and skipping the parts. Fix: point at the finished model, say every line needs parts then meaning, student adds the sum.\nEXTENSION: Take one of your four words and swap its ending for a different one, then write the new sum and meaning.\nHELP: Give students the part meanings not, wrong, make, the act of; they choose which belongs in each sum.\n---\nPurpose: students pull apart jur, jud and just words instead of building them. [You Do | Literal meanings | Morphology]\nANSWERS:\n1. justified = just (right) + ify (make) + ed: shown to be right\n2. misjudge = mis (wrong) + jud (judge): to judge it wrongly\n3. judgement = jud (judge) + ment (the act): the decision reached\n4. unjustly = un (not) + just (right) + ly (in that way): in a way that is not right\nEXTENSION: e.g. justifiable = just (right) + ify (make) + able (able to be), able to be shown right.",
+        "check_title": "Tick it or fix it - literal meanings",
+        "check_rule": "Tick each correct sum. Fix any sum that does not match.",
+        "check_items": [
+          "1. justified = just (right) + ify (make): shown to be right",
+          "2. misjudge = mis (wrong) + jud (judge): to judge wrongly",
+          "3. judgement = jud (judge) + ment (the act): the decision",
+          "4. unjustly = un (not) + just (right) + ly (in that way)"
+        ],
+        "check_item_size": 16,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "The root is the piece meaning right or law.",
+        "check_notes": "ANSWER: 1 shown to be right, 2 to judge wrongly, 3 the decision, 4 not rightly.\n1. MODEL: \"Number one is just, meaning right, plus ify, meaning make. Something made right, backed by reasons, is justified.\"\n2. SAY: \"Now tick each sum that matches. Fix any sum that is different.\"\n3. ASK: \"Three of these words could argue against something. Which one would you put in a persuasive paragraph, and where?\" 10 sec, turn and tell. EXPECT: unjustly or misjudge, in the sentence that names the problem.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number four together, then re-check.\nTRAP: ticking a sum with the parts in the wrong order. Fix: read the word left to right, match each part as you go, then re-mark it.\nEXTENSION: Predict the sum for misjudgement before you write it.\nHELP: read the green sum first, then find that root inside the word.\n---\nPurpose: protected reveal so every student hears the sums read as sums. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "vacuum",
+            "unfair": "uu",
+            "notes": "Why learned: the double u is the trap. Two u letters in a row are almost unheard of in English.\nSay it: VAK-yoom, two beats. Chin it back to me, then write vac - uum and count the two u letters.\nQuick link: vacuums, vacuumed and vacuuming all keep both u letters."
+          },
+          {
+            "word": "gauge",
+            "unfair": "au",
+            "notes": "Why learned: au says a long /ay/, and the ge ending says /j/.\nSay it: GAYJ, one beat. Write g - au - ge in three chunks, then check the u.\nQuick link: gauging and gauged keep the same odd au chunk."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The ecologist counted every species along the muddy creek bank.",
+          "targets": [
+            "ecologist",
+            "species"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "revision from two weeks ago: eco and the red word species"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Our field kit had one important job: record every species in that creek ecosystem.",
+          "targets": [
+            "species",
+            "ecosystem"
+          ],
+          "cups": {
+            "capitals": [
+              "Our"
+            ],
+            "punctuation": [
+              "colon (it introduces the instruction that follows)",
+              "full stop"
+            ]
+          },
+          "focus": "revision from two weeks ago: eco and species, plus a colon before an instruction"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Move the subordinate clause to the front and add the comma that shows where it ends.\nWHY THIS WEEK: every persuasive paragraph that opens the same way sounds flat, and moving the reason to the front fixes it in one move.\nROUTINE: OG books, thumbs and voices. No boards and no scoring anywhere this week.\nPREP: front position takes a comma, end position takes none. The trigger word always travels with its clause.",
+        "i_do": {
+          "title": "Move it to the front",
+          "rule": "Move the subordinate clause to the front and put a comma after it.",
+          "example": "We should ban plastic straws because turtles eat them.\nBecause turtles eat them, we should ban plastic straws.",
+          "items": [
+            "The trigger word always travels with its clause.",
+            "Front position needs a comma. End position does not."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Check: comma after the waiting half?",
+          "notes": "ANSWER: both sentences say the same thing; only the second one needs a comma, and it goes after them.\n1. SAY: \"Shifting the reason to the front is the fastest way to stop every sentence in your argument sounding the same.\"\n2. WRITE: copy the first sentence onto the class board, then draw a box around because turtles eat them.\n3. MODEL: rewrite the sentence underneath with the boxed half first, so the class board now reads Because turtles eat them, we should ban plastic straws. Say the trigger word came with it.\n4. ASK: \"Where does the comma go, and why?\" 5 sec, choral response. EXPECT: straight after them, because it shows the waiting half has finished.\nTRAP: dropping the comma after the fronted half. Fix: read it aloud without the comma, hear the two halves run together, student adds it.\nCLARIFY: if a student asks whether the comma is needed when the clause is at the end, say no - the trigger word already marks the join.\n---\nPurpose: models the move and the one punctuation rule it triggers. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: a fronted subordinate clause is followed by a comma; the same clause at the end is not."
+        },
+        "we_do": {
+          "title": "Comma or no comma?",
+          "rule": "Move the subordinate clause to the front and put a comma after it.",
+          "example": "A) When the siren sounds we line up.\nB) We line up when the siren sounds.",
+          "items": [
+            "Thumb up for the one that is missing a comma.",
+            "Find the waiting half first, then check its end."
+          ],
+          "routine": "Thumbs on three - voices off",
+          "footer": "Stem: A needs a comma after ...",
+          "notes": "ANSWER: A is missing a comma after sounds. B is correct with no comma at all.\n1. SAY: \"One of these is punctuated correctly and one is not. Find the waiting half first, then look at where it ends.\"\n2. TIME: 15 seconds thinking, voices off, then thumbs up for the one missing a comma, everyone, together, on three.\n3. SCAN every thumb. 80%+ -> move on. Less -> read A aloud with no pause so they hear the halves collide, then re-ask.\n4. ASK: \"Why does B need no comma at all?\" 5 sec, cold call two students. EXPECT: the waiting half is at the end, so the trigger word already marks the join.\nTRAP: adding a comma to B as well. Fix: read B aloud, hear it runs cleanly, student removes the comma.\nCLARIFY: if a student asks about a comma before when in B, say no - that would split the sentence where nothing needs splitting.\n---\nPurpose: guided judgement on the one comma rule this week hangs on. [We Do | Guided practice | Grammar | HITS 7]\nPREP: the comma marks the end of a fronted dependent clause; it is not used when that clause trails the main clause."
+        },
+        "you_do": {
+          "title": "Swap and punctuate",
+          "rule": "Your turn: rewrite each sentence with the waiting half at the front.",
+          "example": "One done for you:\nWe cheered because we won.\nBecause we won, we cheered.",
+          "items": [
+            "A) Our library should open at lunch since the yard gets crowded.",
+            "B) Phones should stay in bags although some students disagree."
+          ],
+          "item_size": 15,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: comma straight after the waiting half.",
+          "notes": "ANSWER: A - Since the yard gets crowded, our library should open at lunch. B - Although some students disagree, phones should stay in bags.\n1. SAY: \"Look at the finished one first. Then rewrite A and B with the waiting half at the front and the comma in place.\"\n2. TIME: 2 minutes in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"point at the trigger word, then copy from there to the end of that half first - the rest of the sentence follows after your comma.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> rewrite B together on the board, then re-check.\nTRAP: leaving the trigger word behind in the middle. Fix: read the new sentence aloud, hear the missing word, student moves it to the front.\nEXTENSION: Write both versions of one sentence from your own persuasive draft, then write which version you would keep and why.\nHELP: Give students the two fronted halves already written; they add the comma and copy the rest of each sentence after it.\n---\nPurpose: independent rewriting with the comma rule applied. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) Since the yard gets crowded, our library should open at lunch.\nB) Although some students disagree, phones should stay in bags.\nEXTENSION: e.g. Because the bins overflow by lunch, we need a second one. We need a second bin because the bins overflow by lunch.",
+          "check_title": "Tick it or fix it - swap and punctuate",
+          "check_rule": "Tick each correct rewrite. Fix any that is missing its comma.",
+          "check_items": [
+            "A) Since the yard gets crowded, our library should open at lunch.",
+            "Trigger word first, comma after crowded.",
+            "B) Although some students disagree, phones should stay in bags.",
+            "Trigger word first, comma after disagree."
+          ],
+          "check_item_size": 14,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: vary how your sentences open.",
+          "check_notes": "ANSWER: A - comma after crowded. B - comma after disagree.\n1. MODEL: \"In A the waiting half is since the yard gets crowded, so I copy that first, drop a comma after crowded, then write the rest.\"\n2. SAY: \"Now tick each rewrite that matches. Fix any that is missing its comma.\"\n3. ASK: \"Which version of B would you put in a persuasive paragraph, and why?\" 10 sec, turn and tell. EXPECT: the fronted one, because it deals with the objection before you make your point.\n4. SCAN corrections. 80%+ -> continue. Less -> rewrite B together, then re-check.\n5. SAY: \"In your persuasive draft today, move one reason to the front of its sentence and add the comma.\"\nTRAP: putting the comma after the trigger word instead of after the whole half. Fix: read to the end of the waiting half, then place it.\n---\nPurpose: protected reveal that shows exactly where the comma lands. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Friday",
+      "type": "week_review",
+      "morphology_review": [
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint"
+        },
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small",
+          "extra_task": {
+            "prompt": "Give me one word that starts with micro, meaning small.",
+            "answers": [
+              "microbe",
+              "micrometer",
+              "microscopic",
+              "microwave"
+            ]
+          }
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law",
+          "extra_task": {
+            "prompt": "Give me one word built from jur, jud or just, meaning right or law.",
+            "answers": [
+              "justice",
+              "judge",
+              "jury",
+              "injury"
+            ]
+          }
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer",
+          "extra_task": {
+            "prompt": "Give me one word built from vict or vinc, meaning conquer.",
+            "answers": [
+              "victory",
+              "convince",
+              "evict",
+              "province"
+            ]
+          }
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "jointly",
+          "victory",
+          "microchip",
+          "privacy",
+          "anachronism",
+          "carnation",
+          "mandate",
+          "economy",
+          "evicted",
+          "subordinate",
+          "chronicle",
+          "justify",
+          "picture",
+          "chronologist",
+          "convict"
+        ],
+        "notes": "1. READ: \"If your surname starts with A to F, read row 1.\"\n2. READ: \"G to L, read row 2.\"\n3. READ: \"M to R, read row 3.\"\n4. READ: \"S to Z, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"This week we learned mand and just. Which two words carry them?\" 5 sec, choral response. EXPECT: mandate, justify.\n7. ASK: \"chron means time. Which three words carry it?\" 5 sec, turn and tell. EXPECT: anachronism, chronicle, chronologist.\n8. ASK: \"vict means conquer. Which three words carry it?\" 5 sec, choral response. EXPECT: victory, evicted, convict.\n9. ASK: \"Which word means done together by everyone?\" 3 sec, choral response. EXPECT: jointly.\n10. ASK: \"ord means order. Which word means sitting under someone in the order?\" 3 sec, choral response. EXPECT: subordinate.\n11. ASK: \"Which word names the state of being left alone?\" 3 sec, choral response. EXPECT: privacy.\n12. ASK: \"Make microchip plural.\" 3 sec, choral response. EXPECT: microchips."
+      },
+      "sound_bank": [
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "chron",
+          "type": "root"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "conviction",
+          "sentence": "She spoke with real conviction, so the whole hall listened.",
+          "prompt": "vict means conquer. How does that fit a strong belief?",
+          "answer": "A conviction is a belief that has conquered your doubt."
+        },
+        {
+          "word": "province",
+          "sentence": "My cousin lives in a northern province of Canada.",
+          "prompt": "vinc means conquer. Why is a province called that?",
+          "answer": "It began as land Rome conquered and then ruled from far away."
+        },
+        {
+          "word": "synchronous",
+          "sentence": "Our synchronous lesson had every class online at the same moment.",
+          "prompt": "Two taught parts build synchronous. What does each one add?",
+          "answer": "syn means together and chron means time, so it all happens at the same time."
+        },
+        {
+          "word": "chronograph",
+          "sentence": "The pilot's chronograph timed the whole descent.",
+          "prompt": "Which part of chronograph means write or record?",
+          "answer": "The graph part. A chronograph records time."
+        },
+        {
+          "word": "incarnation",
+          "sentence": "The mascot is the latest incarnation of our old school emblem.",
+          "prompt": "carn means flesh. What does an incarnation do?",
+          "answer": "It puts an idea into a body or form you can actually see."
+        },
+        {
+          "word": "juncture",
+          "sentence": "We reached a difficult juncture in the project last week.",
+          "prompt": "Which part of juncture tells you two things meet?",
+          "answer": "junct, meaning join. A juncture is a moment where things come together."
+        },
+        {
+          "word": "omnivorous",
+          "sentence": "Bush rats are omnivorous, so they will eat almost anything.",
+          "prompt": "Two taught parts are working here. Which one tells you it eats everything?",
+          "answer": "omni, meaning all. vore means eating, so it eats every kind of food."
+        },
+        {
+          "word": "capsule",
+          "sentence": "The time capsule under the flagpole is opened in 2050.",
+          "prompt": "Which ending tells you a capsule is small?",
+          "answer": "The ule ending. It means small."
+        },
+        {
+          "word": "justice",
+          "sentence": "The story ends when justice finally reaches the small town.",
+          "prompt": "just means right. Which taught ending turns it into a state?",
+          "answer": "The -ice ending, the same one in service. Justice is the state of being right."
+        },
+        {
+          "word": "command",
+          "sentence": "The lifeguard gave one clear command and everyone stopped.",
+          "prompt": "command is the keyword on our card. Which part of it carries the order?",
+          "answer": "mand. The com in front means together, so a command pulls everyone into line."
+        }
+      ],
+      "learned_words": {
+        "review": [
+          {
+            "word": "vacuum",
+            "unfair": "uu",
+            "notes": "Why learned: uu is the unfair chunk, and it says /yoo-uh/ rather than one clean sound.\nSay it: VAK-yoom, two beats. Write vac - uum, then check you wrote two u letters.\nQuick link: space is a vacuum because there is no air in it, so nothing carries sound."
+          },
+          {
+            "word": "gauge",
+            "unfair": "au",
+            "notes": "Why learned: au says a long /ay/ here, not the /or/ of caught.\nSay it: GAYJ, one beat. Write g - au - ge, then read it back and check the u.\nQuick link: broad gauge and narrow gauge are the two rail widths Australia still argues about."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "My stomach and my muscles ached after the long carnival run.",
+          "targets": [
+            "stomach",
+            "muscles",
+            "carnival"
+          ],
+          "cups": {
+            "capitals": [
+              "My"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "revision from two weeks ago and earlier: carn, plus the red words stomach and muscle"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Although the drought had finally ended, we still checked our ecosystem's water level.",
+          "targets": [
+            "drought",
+            "ecosystem"
+          ],
+          "cups": {
+            "capitals": [
+              "Although"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the although part that cannot stand alone - the comma shows where it ends)",
+              "apostrophe for the owner in ecosystem's (the water level belongs to the ecosystem)",
+              "full stop"
+            ]
+          },
+          "focus": "revision from two weeks ago and Week 2: eco and the red word drought"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Week review - name all three parts, then fix a complex sentence that is not working.\nWHY THIS WEEK: fragments and flat openings are the two things that weaken a persuasive paragraph, and both are fixed by the same three labels.\nROUTINE: OG books, thumbs and voices. No boards and no scoring anywhere this week.\nPREP: M stands alone, S waits, T is the trigger word. Fronted S takes a comma.",
+        "i_do": {
+          "title": "Everything in one sentence",
+          "rule": "M stands alone. S waits. T is the trigger word. A fronted S takes a comma.",
+          "example": "Although the canteen is busy, we should still sell fruit cups.",
+          "items": [
+            "Cover one half at a time to find M and S.",
+            "The trigger word sits at the front of S."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Where does that comma have to sit?",
+          "notes": "ANSWER: S is Although the canteen is busy, M is we should still sell fruit cups, T is Although, and the comma sits after busy.\n1. SAY: \"One sentence, everything from this week in it - and this is the exact shape that makes a persuasive argument sound like it has thought about the other side.\"\n2. WRITE: copy the sentence onto the class board, then circle Although and write T under it.\n3. MODEL: cover from Although to busy, read what is left aloud, say it stands alone, then write M above it and S above the covered half.\n4. ASK: \"Why is there a comma after busy?\" 5 sec, choral response. EXPECT: the waiting half comes first, so the comma shows where it ends.\nTRAP: labelling the first half M because it comes first. Fix: cover and read it, hear the wait, student swaps the labels.\nCLARIFY: if a student asks which order is better, say both are correct - the fronted one is the one that answers an objection before you make your point.\n---\nPurpose: pulls the whole week into one labelled model. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: a complex sentence is one independent clause plus one dependent clause; fronting the dependent clause adds a comma."
+        },
+        "we_do": {
+          "title": "What is wrong here?",
+          "rule": "M stands alone. S waits. T is the trigger word. A fronted S takes a comma.",
+          "example": "A) Because the oval floods every winter.\nB) Because the oval floods every winter we need drains.",
+          "items": [
+            "Thumb up for A, two thumbs for B, if it needs fixing.",
+            "One is missing a whole half. One is missing a comma."
+          ],
+          "routine": "Thumbs on three - voices off",
+          "footer": "Stem: A is not finished because ...",
+          "notes": "ANSWER: A is a fragment with no main clause. B has both halves but is missing the comma after winter.\n1. SAY: \"Both of these turn up in real drafts all the time. Work out what each one is missing before you signal.\"\n2. TIME: 20 seconds thinking, voices off, then thumbs on three, everyone, together.\n3. ASK: \"What is A missing?\" 5 sec, choral response, then cold call one student for how do you know. EXPECT: a main clause, because covering nothing leaves it still waiting.\n4. SCAN every thumb. 80%+ -> fix both chorally and move on. Less -> read A aloud and stop dead, then read B with no pause, then re-ask.\nTRAP: calling A a complete sentence because it is long. Fix: read A aloud to the very end, hear the wait, student names it a fragment.\nCLARIFY: if a student asks whether B is wrong or just untidy, say the missing comma makes the reader run the two halves together, so it counts as wrong.\n---\nPurpose: guided repair of the two errors this week is designed to prevent. [We Do | Guided practice | Grammar | HITS 7]\nPREP: A is a dependent clause standing alone; B is a correct complex sentence missing the comma after its fronted clause."
+        },
+        "you_do": {
+          "title": "Fix these two",
+          "rule": "Your turn: rewrite each one so it is a correct complex sentence.",
+          "example": "One done for you:\nAlthough it rained. -> Although it rained, we played on.",
+          "items": [
+            "A) If we recycle our paper.",
+            "B) When the bell rings we pack up quickly."
+          ],
+          "item_size": 15,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: one main half, one waiting half.",
+          "notes": "ANSWER: A needs a main clause added. B needs a comma after rings.\n1. SAY: \"Look at the finished one first. Then rewrite A and B in your book so each one is a correct complex sentence.\"\n2. TIME: 2 minutes in your OG book. Work on your own.\n3. CIRCULATE: to a stuck student say, \"for A, ask yourself what happens - the answer to what happens is the main clause you are missing.\" Then write A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> repair B together on the board, then re-check.\nTRAP: fixing A by deleting If. Fix: say the trigger word is not the problem, the missing half is, student adds a main clause instead.\nEXTENSION: Write one more complex sentence for your persuasive topic, then rewrite it with the halves swapped and both versions punctuated correctly.\nHELP: Give students the ending we save hundreds of trees for A; they join it on and punctuate it.\n---\nPurpose: independent repair of a fragment and a missing comma. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) e.g. If we recycle our paper, we save hundreds of trees.\nB) When the bell rings, we pack up quickly.\nEXTENSION: e.g. Because our bins overflow by lunch, the yard looks messy. The yard looks messy because our bins overflow by lunch.",
+          "check_title": "Tick it or fix it - fix these two",
+          "check_rule": "Tick each correct repair. Fix any that still has a problem.",
+          "check_items": [
+            "A) If we recycle our paper, we save hundreds of trees.",
+            "A main half was added, then a comma after paper.",
+            "B) When the bell rings, we pack up quickly.",
+            "Both halves were already there, so only the comma was missing."
+          ],
+          "check_item_size": 14,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: hunt fragments in your own draft.",
+          "check_notes": "ANSWER: A needed a main clause and a comma. B needed only the comma after rings.\n1. MODEL: \"In A I read If we recycle our paper and stop. I am still waiting, so I add what happens, then put the comma after paper.\"\n2. SAY: \"Now tick each repair that matches. Fix any that still has a problem.\"\n3. ASK: \"Which of this week's three labels would have caught the mistake in A straight away?\" 10 sec, turn and tell. EXPECT: M, because there was no main clause anywhere in it.\n4. SCAN corrections. 80%+ -> continue. Less -> repair B together, then re-check.\n5. SAY: \"Before you hand in any persuasive writing this term, read each sentence alone - if it leaves you waiting, it is missing its main half.\"\nTRAP: ticking A when the added half still waits. Fix: read the new sentence alone, listen for the finish, then correct it.\n---\nPurpose: protected reveal that names which repair each sentence needed. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    }
+  ]
+}

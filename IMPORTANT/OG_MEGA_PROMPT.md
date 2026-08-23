@@ -291,6 +291,13 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   on the page uses. The rejected junct deck banked `junct/join/joint` (needed by zero of
   its ten review spelling words) while `-ite`, `pict`, `-ule` and `vore` - each needed by
   a spelling word on that same page - were left out entirely.
+- AGE IS NOT A CRITERION. The bank is a scaffold students COPY before they spell, not a
+  retrieval test, so a Term 1 morpheme earns a slot exactly as readily as last week's -
+  what decides it is whether a word on that page needs it. Step 5's "most recently
+  taught" preference governs FILLER slots only, the ones no word on the page uses; it
+  never outranks a morpheme a spelling word actually needs. Do not swap an old morpheme
+  out, and do not re-teach it first, because it feels distant: if a student is shaky on
+  it, 2e's in-the-moment correction is the whole response.
 - SELF-CHECK BEFORE YOU BUILD: for each of the 9 boxes name the review spelling word it
   serves. Any box you cannot tie to a word is a wasted slot; swap it for a morpheme one
   of the ten words needs.
@@ -366,6 +373,36 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   - No classroom-management filler either (`Alright boys and girls, who can tell
     me...`). Scripted, natural, and immediately sayable - that is the bar.
   - Keep the whole set consistent: every word on the day uses the same voice.
+- THE ANSWER MUST ADD SOMETHING THE PROMPT DID NOT. The blunt form of this defect is
+  above - the prompt states the answer and the answer repeats it. The subtle form
+  survives a quick read and still teaches nothing: the prompt hands over the root
+  meaning, and the answer is that same meaning wearing a sentence. `just means right.
+  What is justice?` / `The state of things being right.` The student has learned
+  nothing they were not just told. Cover the answer and ask what NEW information it
+  carries - a different part of the word, a reason, an application, a contrast. If the
+  answer is the prompt rearranged, change the QUESTION, not the answer:
+  `just means right. Which taught ending turns it into a state?` /
+  `The -ice ending, the same one in service. Justice is the state of being right.`
+- THE QUESTION MUST AIM AT A TAUGHT PART, OR CARRY THE UNTAUGHT PART'S MEANING WITH IT.
+  An `After checking:` prompt is a STUDENT-SUPPLIED answer, so the taught-morpheme gate
+  in 2f binds it - and this is the single place that gate is most often missed, because
+  you are writing the question here and the gate is written over there. A student may
+  never be asked to produce the meaning of a morpheme they have never been taught.
+  Three shapes, two safe and one banned:
+  - SAFE, aim at a taught part: `capt means hold. Which taught ending turns it into a
+    state?` / `The -ity ending, the same one in gravity.` Best of all when that part is
+    in the same day's Sound Bank, because it ties the bank to the list it exists to serve.
+  - SAFE, hand the untaught meaning over inside the question and ask the student to
+    locate or apply it: `Which part of chronograph means write or record?` /
+    `The graph part.` The student supplies the location, never the meaning.
+  - BANNED, ask a student to supply an untaught part's meaning. Real defects caught in
+    review: `What does the a at the front do to it?` (asynchronous, `a-` on no card);
+    `What does con add?` (conjoin, `con-` untaught); `Which two parts tell you they had
+    to leave?` (evicted, one of them is `e-`). Each was rewritten into a safe shape.
+  Read the prompt back and ask: can a student reach this from today's card, the Sound
+  Bank, the review-10, the term timeline, or ordinary Grade 5/6 English? If the only
+  route runs through a morpheme they have never met, it is a defect - and a common
+  Latinate prefix is not "ordinary English" unless the question itself supplies it.
 - The builder centres every word at the same position with reveal-on-click and a blank
   screen between words (one slide per word) - this fixes the alignment/reveal feedback
   from the team email; you only supply words, sentences and prompts.
@@ -506,6 +543,14 @@ week-level `taught_morphemes` list (section 9).
   independently, so 8, 10 or 11 words leave a short third column floating out of
   alignment at a different size. "Aim for 12, floor about 8" is about morpheme
   integrity, not layout; the layout constraint is absolute.
+- HARD CAP: NO GRID WORD LONGER THAN 12 CHARACTERS. The builder sizes the WHOLE grid to
+  its single longest word and the gate fails below 27 pt. The arithmetic is fixed and
+  identical for a 9-word and a 12-word grid: 12 characters renders at 28 pt, 13
+  characters drops to 26 pt and the build stops. `recommendation` (14) and
+  `justification` (13) both failed this and had to be swapped after the fact. Check the
+  longest word BEFORE you write the script lines, because replacing a grid word means
+  also updating `words_to_spell_new`, that word's line in `wtr_new_notes`, its
+  `associated_word_exceptions` entry, and any You Do item or extension that names it.
 - WORD SELECTION ORDER. Apply these in order for EVERY word list in the deck - the new
   grid, the new spelling four, review reading and review spelling:
   1. TRANSPARENCY - the morpheme is visibly doing its job and the whole-word meaning is
@@ -752,6 +797,13 @@ Applies to every early-finisher note, every morphology You Do and every grammar 
     subordinate clause to the end and repunctuates it.
 - It must be STARTABLE WITHOUT THE TEACHER, and its answer goes in the `ANSWERS:`
   block so a teacher can confirm it.
+- THE SPELL-SLIDE EXTENSION CARRIES ITS OWN ANSWER. The 3c `extension` field is a bare
+  notes string with no `ANSWERS:` block to fall back on, so the confirmable-answer rule
+  has to be met inside the note: finish it with one `Answer:` line giving a worked
+  example. `EXTENSION: Build the longest real mand or mend word you can, then write its
+  full morpheme sum.` / `Answer: e.g. commandments = com (together) + mand (order) +
+  ment (the thing) + s (more than one).` Without it the teacher is holding an open task
+  they cannot mark.
 - THE TAUGHT-MORPHEME GATE APPLIES TO EXTENSIONS TOO (2f). "Predict what `adjunctive`
   means" is not an extension when `ad-` has never been taught - it is a guess, and the
   fastest students are the ones who notice. Push the SAME taught parts further instead:
@@ -1577,7 +1629,16 @@ your spec against every line before building)
 - An `After checking:` / `Answer:` pair that feeds the answer into the question and
   repeats it back, or that a non-confident teacher cannot read aloud without sounding
   foolish. (2d read-aloud test)
-- A word grid whose size is not 9 or 12. (3b)
+- An `After checking:` question whose answer only restates the meaning the prompt just
+  handed over (`just means right. What is justice?` / `the state of being right`). The
+  answer must carry information the prompt did not. (2d)
+- An `After checking:` question that asks a student to SUPPLY the meaning of an untaught
+  morpheme (`What does the a at the front do?`, `What does con add?`). Aim the question
+  at a taught part, or put the untaught meaning inside the question. (2d, 2f)
+- A sound bank slot swapped out, or a morpheme pre-taught, because it was taught long
+  ago. The bank is a scaffold students copy; age is not a criterion, need is. (2c)
+- A word grid whose size is not 9 or 12, or containing a word longer than 12 characters
+  (the grid then renders below the 27 pt floor and the build stops). (3b)
 - Choosing a derivative with no taught morphemes when the family offered one that
   stacks a recently taught prefix, root or suffix. (3b morpheme stacking)
 - A submarine line whose fused meaning does not mirror the parts just named
@@ -1590,6 +1651,8 @@ your spec against every line before building)
 - The word `STRETCH` anywhere in a new deck, or an "extension" that is one notch harder
   rather than about 18 months ahead. (3e)
 - A fixed-answer You Do with no `ANSWERS:` block at the very bottom of the notes. (3d, 7)
+- A Words to Spell New `extension` note with no `Answer:` line - it has no `ANSWERS:`
+  block to fall back on, so the teacher cannot confirm the work. (3e)
 - A `CIRCULATE:` prompt that only repeats the rule or points back at the worked example
   the teacher has just read aloud. (3d)
 - A check-slide `ASK:` whose answer is visible without thinking. (3d)
