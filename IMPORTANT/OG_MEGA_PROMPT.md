@@ -1,4 +1,4 @@
-# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.3
+# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.4
 ## Grade 5/6 Enrichment | Diamond Creek East PS | Yoshimoto OG | Template-Locked | Term-Scale Input
 
 ---
@@ -47,6 +47,13 @@ changes two things and confirms one:
    the review-10 cards and the Sound Bank against the whole week timeline).
 3. The Week 6 shape - `new, review, new, review` with a real review day after each
    morpheme - is the structure the team asked to keep (section 11).
+
+The v1.4 refinement responds to teacher feedback that the notes could meet every
+format rule and still sound clipped when read word for word. It permits brief spoken
+connectors such as "Okay", "Now", "So" and "Let's" where they make a line flow, while
+still excluding repeated greetings, management chatter and extra explanation. The
+teacher should be able to read the scripted lines in order without inventing the words
+that join them.
 
 None of the refinements changes the required review counts, morphology sequence,
 grammar finisher, master template or output naming.
@@ -151,7 +158,7 @@ weight shifted to auditory/spelling work - same morpheme, mostly fresh words.
   MEANING, and give a derivative - occasionally used in a sentence. Every session,
   2-3 cards add an optional `extra_task` object with a direct teacher prompt and
   possible answers. The rendered label is `Extra task:`, never the unclear
-  `Derivative ask:`. Example: `SAY: "Give me one flect or flex word, meaning bend."`
+  `Derivative ask:`. Example: `SAY: "Okay, give me one flect or flex word, meaning bend."`
   followed on a new line by `Possible answers: flexible, deflect, reflection.` Rotate
   which cards receive it.
 - PATTERN MORPHEMES: some bank entries are pronunciation/spelling patterns, not
@@ -191,9 +198,10 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   by looking at the board - a named student finds words, the whole class answers
   quick-fire questions chorally.
 - NOTES ARE A VERBATIM TEACHER SCRIPT with numbered CAPS anchors, one thought per
-  line, no bullets and no dense multi-question paragraph. This slide is an explicit
-  exception to the general eight-line Glance Format limit because the playful reading
-  routine and retrieval questions must remain separate and easy to scan:
+  line, no bullets and no dense multi-question paragraph. Script the small spoken
+  connections a teacher needs; do not reduce every line to a bare command. This slide
+  is an explicit exception to the general eight-line Glance Format limit because the
+  playful reading routine and retrieval questions must remain separate and easy to scan:
   1-4. ONE NUMBERED `READ:` LINE PER GROUP - never a single line listing all four
      allocations. The whole-class warm-up read is NOT scripted: it wastes a line and
      teachers skip it anyway. Go straight to the groups. Use categories such as
@@ -370,8 +378,10 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
     sentence: `After checking: Which part of module tells you it is only a small
     piece?` / `Answer: The -ule ending. A module is one small part of a much bigger
     course.`
-  - No classroom-management filler either (`Alright boys and girls, who can tell
-    me...`). Scripted, natural, and immediately sayable - that is the bar.
+  - Allow brief connective tissue when it makes the words sound human aloud:
+    `Okay, now which part of module tells you it is a small piece?` is fine. Do not add
+    empty address or management chatter (`Alright boys and girls, who can tell me...`).
+    Scripted, natural, concise and immediately sayable - that is the bar.
   - Keep the whole set consistent: every word on the day uses the same voice.
 - THE ANSWER MUST ADD SOMETHING THE PROMPT DID NOT. The blunt form of this defect is
   above - the prompt states the answer and the answer repeats it. The subtle form
@@ -1250,8 +1260,9 @@ students find boring, so it must earn its five minutes.
   (ANSWER first if the slide asks anything; 2-5 numbered beats fusing action + talk with
   CAPS anchors - SAY/ASK/MODEL/SCAN/TIME/CIRCULATE; TRAP with Fix; EXTENSION/HELP), then
   `---`, then a one-line prep zone with the `[Stage | element | focus]` tag, then the
-  `ANSWERS:` block on fixed-answer You dos. SAY lines are warm, natural classroom talk,
-  one breath (~20 words), never clipped fragments.
+  `ANSWERS:` block on fixed-answer You dos. SAY lines are warm, natural classroom talk:
+  one short speaking turn, usually 12-24 words, with a brief connector where useful.
+  Never compress them into clipped fragments merely to save words.
 - Every new thought starts a new source line. Never place `ANSWER`, multiple numbered
   beats, `TIME`, `CIRCULATE`, `SCAN`, `TRAP`, `EXTENSION` and `HELP` in one paragraph.
   The live zone is eight lines maximum; the prep zone is three lines plus the
@@ -1288,10 +1299,21 @@ master template's old dense procedure blocks. All authored notes must follow
   giving the teacher the concept in their own terms (section 7), and at most one more.
   Anything needed while students are working must stay above the divider. The `ANSWERS:`
   block on a fixed-answer You Do is exempt from the three-line limit (3d).
-- SAY text is natural, direct teacher language that can be read verbatim. Do not use
-  filler such as "Okay kids, next we have..." and do not write clipped production
-  notes. Each question includes think time, one response routine, and `EXPECT:` or
-  `Answer:` in student-friendly language.
+- SAY text is natural, direct teacher language that can be read verbatim. Use
+  contractions and brief spoken connectors where a real teacher would: "Okay, let's
+  check that word." / "Now, look at the ending." / "So, what changed?" These words are
+  useful when they join ideas or soften an abrupt start; they are not a licence for
+  repeated greetings or management chatter. Do not write clipped production notes.
+  Each question includes think time, one response routine, and `EXPECT:` or `Answer:`
+  in student-friendly language.
+- Run the WHOLE-SCRIPT READ-ALOUD TEST. Read the scripted SAY, ASK, `After checking:`
+  and `Answer:` lines in teaching order. If the sequence sounds like separate labels or
+  commands, or the teacher must invent "Okay, so..." between them, include the smallest
+  natural connection in the script. Do not add another explanation just to make it
+  longer.
+- Natural does not mean padded. Prefer `Okay, let's check the ending. What does -ule
+  tell us here?` over `Check ending. Meaning?`, but reject `All right, boys and girls,
+  everyone looking this way, now let's move on to our next exciting word.`
 - Response routines are completed. Notes never imply that partial choral participation,
   missing boards or volunteer call-outs are sufficient evidence. The teacher resets the
   routine, checks the complete response and then decides whether to keep the brisk pace or

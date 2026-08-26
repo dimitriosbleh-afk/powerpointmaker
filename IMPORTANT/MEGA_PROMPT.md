@@ -1,6 +1,6 @@
 © 2026 James Hooke. Confidential. Internal use only. Not for redistribution.
 
-# Explicit Teaching Lesson Builder Mega-Prompt v12.4
+# Explicit Teaching Lesson Builder Mega-Prompt v12.5
 ## Foundation to Year 6 | Australian Primary Schools | Visual-First | Editable | Source-Faithful | Cognitive Load Aware | Classroom-Ready | School Feedback Aligned
 
 This v12.0 revision turns classroom response and teacher preparation into explicit system requirements. It adds high-quality opportunities to respond, decision-grade checks for understanding, curriculum-aware retrieval and prepared response branches. The Glance Format from v11.0 remains, now with source validation for think time, one named response routine, complete response, proceed and pivot branches, fresh re-checks and protected reveals. OG remains template-locked and receives only the compatible response-quality and pacing refinements named in `OG_MEGA_PROMPT.md`.
@@ -10,6 +10,8 @@ The v12.1 revision deepens the response to the Diamond Creek East classroom tour
 The v12.2 revision codifies two practices that previously lived only in per-request notes. Unit anchor consistency (section 79): one representation, one anchor phrase and one method held identical across every session of a unit. Catch-up architecture (section 80): a student who missed one or two sessions re-enters through a low-coupling launch, an anchor restatement in every I Do, a re-grounding first resource item, a CATCH-UP NOTE naming the fastest re-entry path, and HELP moves that double as re-entry scaffolds, all without flattening the unit's progress.
 
 The v12.4 revision responds to a successful build against a supplied school planner (T3W4 Discovery 2, division swoop lesson, 28 July 2026), where the teacher asked for a new lesson inside an existing 119-slide deck and judged the result house-quality. It adds the missing procedure for inserting into a supplied deck (section 20c), separates slide transitions from click builds and names the duplicate-slide reveal as the fallback it is (section 20b), locks the teacher's own vernacular for a notation or routine (section 5b), accepts natural teacher language as input and permits one structured question at a genuine fork (section 7), requires the mark itself to be constructed when no representation exists (section 15a), and requires honest scoping of QA when a renderer is unavailable (section 60a). The header also corrects to the current version; v12.2 and v12.3 shipped under a stale heading.
+
+The v12.5 revision responds to teacher feedback that concise, compliant notes could still sound clipped and disjointed when read verbatim. Sections 45-47 now distinguish useful spoken connective tissue (brief words such as "Okay", "Now", "So" and "Let's") from empty management padding. SAY lines must form a short, connected spoken turn, and the full sequence must pass a read-aloud flow test without the teacher inventing transitions. The note budgets remain unchanged: the goal is more natural speech, not more teaching detail.
 
 The v12.3 revision responds to live-teaching feedback (James Hooke, Big Ideas Session 2, 15 July 2026): fully spec-compliant notes still read as an unglanceable wall on an iPad mid-lesson. The Glance Format's budgets become RENDERED budgets (sections 45-46): about 120 words per live zone, no physical line over about 16 words, one idea per physical line, one blank line between logical units, speech never fused with stage directions on the same line, SCAN as three short lines, and a caret for exponents in notes (10^6). Reveal slides now carry their own short post-reveal notes instead of a byte-copy of the base slide's (section 47) - when the teacher clicks to the answer, the notes advance with the slide. Recognised note anchors render in real bold in the built file. The 8-unit structure, fixed order and voice rules are unchanged; what changed is that the budgets now measure what the teacher's eye actually meets. OG decks are unaffected.
 
@@ -640,10 +642,10 @@ Use:
 
 - Some of you may remember...
 - If this feels new, that is okay.
-- Let us build it together.
-- Let us look at this one together first.
-- Let us remind ourselves.
-- We will practise this step together.
+- Let's build it together.
+- Let's look at this one together first.
+- Let's remind ourselves.
+- We'll practise this step together.
 
 Confusion is normal.
 
@@ -2094,7 +2096,7 @@ Think-alouds should show:
 
 Script the think-aloud as natural, connected teacher talk the teacher can read straight off the notes. Write what a real teacher says, not clipped cues like "Watch me" or "Watch this first."
 
-- "Let us work through this one together. Watch how I decide what the question is actually asking before I write anything."
+- "Okay, let's work through this one together. Watch how I decide what the question is actually asking before I write anything."
 - "The first thing I always check is whether my drawing matches the numbers. Three counters here, four there, so my picture matches the problem."
 - "Here is the trap I want you to watch for. It looks like an addition because the numbers sit close together, but the symbol tells me to divide, so I have to share, not combine."
 - "Now I will say my thinking out loud so you can hear exactly how I got there."
@@ -2790,7 +2792,7 @@ LIVE ZONE (top, maximum 8 logical units). Everything the teacher needs while stu
 
 2. Numbered beats, 2 to 5, in teaching order. Each beat is one moment of teaching. A beat may span several SHORT physical lines: the first line carries the number and the anchor, continuation lines are indented three spaces, and each physical line holds exactly one idea. Beats open with CAPS anchors so a glance finds the current moment:
    - Action anchors: POINT, SHOW, MODEL, DRAW, BUILD, COVER, REVEAL, TIME, COLLECT, CIRCULATE, or any other caps action verb.
-   - SAY: natural classroom talk, read-aloud ready. A SAY line contains ONLY sayable words - never think time, routine cues, or what to look for. Reading a beat aloud must never require the teacher to filter out stage directions mid-sentence.
+   - SAY: natural classroom talk, read-aloud ready. Write a short, connected spoken turn, not compressed cue words. Brief connective tissue such as "Okay", "Now", "So", "All right" and "Let's..." is encouraged when it helps the next sentence land naturally. A SAY line contains ONLY sayable words - never think time, routine cues, or what to look for. Reading a beat aloud must never require the teacher to filter out stage directions mid-sentence.
    - ASK: the question on its own line. Think time and the cue script on the next line ("30 sec. Cue: Write it... chin it... show me."). EXPECT: on its own line, in student words. ACCEPT: optional, on the EXPECT line or its own.
    - SCAN: the decision beat, three short lines: where to look; "80%+ -> [proceed move]"; "Less -> [pivot using a different representation], re-ask."
 
@@ -2816,7 +2818,7 @@ Zone rules:
 Two reading modes, one artifact:
 
 - Glance mode: eyes hit ANSWER, the current beat number, SCAN, TRAP - each separated by white space, each line short enough not to wrap.
-- Script mode: read the SAY and ASK lines top to bottom. They are complete natural talk with no embedded directions, so nothing needs filtering.
+- Script mode: read the SAY and ASK lines top to bottom. They are complete natural talk with no embedded directions, and adjacent beats flow without the teacher inventing missing transitions.
 
 Reveal slides (the answer half of a click-to-reveal pair) get their OWN short notes, never a copy of the base slide's. When the teacher clicks to the answer, the notes advance with the slide: REVEALED: line restating what is now on screen, then 1 to 3 post-reveal beats (tick and fix, one cold-call follow-up, the transition), then the divider and one prep line. In the build pipeline this is `withReveal(buildFn, revealFn, { revealNotes: composeRevealNotes({...}) })`; the build gate fails any deck where consecutive slides carry identical notes.
 
@@ -2837,22 +2839,32 @@ Budgets:
 - Live zone: about 120 words maximum across all units. Over budget means the slide is doing too much - cut rationale (it belongs in the prep zone), cut a beat, or split the slide.
 - Every physical line: about 16 words maximum. A longer thought breaks into indented continuation lines, one idea each.
 - Live zone: 18 physical non-blank lines maximum.
-- SAY text up to about 20 words of speech - one breath - split across two physical lines when over about 12. Action segments up to about 10 words, verb first.
+- SAY text is one short speaking turn, usually 12 to 24 words and one or two connected sentences. Split it across two physical lines when over about 12 words. Action segments stay up to about 10 words, verb first.
 - ASK unit: question line, then think time + cue script line, then EXPECT line.
 - SCAN is three short lines: where to look / proceed / pivot. Never one compound sentence - a nested if-else in one line cannot be parsed with thirty boards in the air.
 - TRAP: error line, then Fix: line ending in the student redo.
 - Prep zone: 3 lines maximum. The prep zone has no per-line word cap - it is read seated, before the lesson.
 - Foundation to Year 2 slides usually need only 2 to 3 beats. More slides, fewer beats each.
 
-Voice rules for SAY text, unchanged from what teachers already trust:
+Voice rules for SAY text:
 
-- Natural classroom talk in a warm voice, read-aloud ready. Not clipped robotic fragments ("Watch me", "Fluency."), not presenter copy ("Today we are going to...").
-- Open modelling naturally: "Let us look at this one together. Watch how I..."
+- Natural classroom talk in a warm voice, read-aloud ready. Use contractions where a teacher would use them: "let's", "we're", "you'll", "that's". Do not turn spoken language into formal written prose.
+- Give the teacher enough verbal runway to begin cleanly: "Okay, let's look at this one together." / "Now, notice what happens here." / "So, what do we know already?"
+- Brief fillers and connectors are functional when they join ideas or soften an abrupt start. Keep one where it helps. Do not repeat the same opener on every beat, and do not add empty management chatter such as "Okay boys and girls, eyes on me, here we go."
+- Avoid clipped robotic fragments ("Watch me", "Fluency.") and repeated presenter copy. "Today we're going to..." is acceptable once when it genuinely orients the class, not as a default opening on every slide.
+- Open modelling naturally: "Let's look at this one together. Watch how I..."
 - On modelling beats, script the think-aloud as connected teacher talk: what you notice, the choice you are making and why, in plain words a student would hear.
 - A SAY line is 100% sayable. If any word on the line is a direction to the teacher rather than speech, move it to its own line. Script mode fails the moment the teacher has to skip words mid-sentence.
 - A teacher who has not pre-read the deck must be able to teach the slide from the beats alone.
+- Run the WHOLE-SCRIPT READ-ALOUD TEST, not just a line-by-line check. Read every SAY and ASK in order. If the voice lurches between commands, drops the subject, or needs an improvised "Okay, so..." to connect two beats, rewrite the beats with that connection included.
 
-What gets cut to fit the budget, in order: rationale prose (moves to the prep zone), instructions the slide already shows, second examples, politeness padding.
+Natural does not mean longer. Prefer one small connector plus a complete thought:
+
+- Clipped: "Watch me. Same denominator. Add the numerators."
+- Natural: "Okay, watch this one. The denominators already match, so I only need to add the numerators."
+- Overfilled: "All right, boys and girls, everyone looking this way, now we're going to have a little look at this next one."
+
+What gets cut to fit the budget, in order: rationale prose (moves to the prep zone), instructions the slide already shows, second examples, repeated greetings and empty management padding. Preserve brief connective words that make the script sound natural aloud.
 
 What never gets cut: the ANSWER line, think time and routine on an ASK, the SCAN decision, the TRAP redo, reveal protection.
 
@@ -2896,8 +2908,8 @@ Teaching slide template (blank line between units, continuations indented three 
 
 ANSWER: [answer in student words, or "open - listen for [quality marker]"]
 
-1. [ACTION anchor, up to 10 words]. SAY: [natural talk only,
-   split over a second line when past about 12 words].
+1. [ACTION anchor, up to 10 words]. SAY: [brief natural connector if useful,
+   then one complete spoken thought; split after about 12 words].
 
 2. ASK: [the question on its own line]?
    [Think time]. Cue: [school-standard cue script].
@@ -2921,8 +2933,8 @@ Worked example, Years 5 to 6 hinge CFU:
 
 ANSWER: B - 1000 times. 3 more zeros, each zero = x10.
 
-1. SAY: A million... a billion. The question is not
-   which is bigger. It is how MUCH bigger.
+1. SAY: Okay, we know a billion is bigger than a million.
+   This time, we're working out how MUCH bigger.
 
 2. ASK: How many times bigger is 10^9 than 10^6?
    30 sec. Cue: Write A, B or C... chin it... show me.
@@ -2941,7 +2953,7 @@ Worked example, Foundation (short beats rarely need continuation lines):
 
 ANSWER: the third teddy, counting from the flag
 
-1. POINT to the flag end. SAY: We always count from the flag. First, second, third.
+1. POINT to the flag end. SAY: Okay, start at the flag with me. First, second, third.
 
 2. ASK: Point to the third teddy.
    5 sec, everyone points.
@@ -2959,7 +2971,7 @@ Reveal slide template (the answer half of a click-to-reveal pair - never a copy 
 
 REVEALED: [what is now on screen, student voice]
 
-1. SAY: [tick-and-fix cue, sayable words only].
+1. SAY: [brief connector plus a complete tick-and-fix cue, sayable words only].
 
 2. Cold call one [fixed/strong] board: [the follow-up question].
 ---
@@ -2992,9 +3004,13 @@ Student-facing slide:
 
 Presenter notes:
 ANSWER: ...
-1. [ACTION]. SAY: ...
-2. ASK: ...? [think time], [routine]. EXPECT: ...
-3. SCAN ... 80%+ -> ... Less -> ..., re-ask.
+1. [ACTION]. SAY: [brief connector plus one complete spoken thought].
+2. ASK: ...?
+   [Think time]. Cue: [routine].
+   EXPECT: ...
+3. SCAN ...
+   80%+ -> ...
+   Less -> ..., re-ask.
 TRAP: ... Fix: ..., student redoes.
 ---
 [Purpose line.] [Tag]
