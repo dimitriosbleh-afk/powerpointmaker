@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Information_Reports_Week_10",
+  "unit_pptx_name": "Information Reports Week 10 - Write and Publish.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_inforep_w10s1.js",
+      "folder": "InfoReport_W10_S1",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_inforep_w10s2.js",
+      "folder": "InfoReport_W10_S2",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_inforep_w10s3.js",
+      "folder": "InfoReport_W10_S3",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_inforep_w10s4.js",
+      "folder": "InfoReport_W10_S4",
+      "session": 4
+    }
+  ]
+}

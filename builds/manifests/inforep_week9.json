@@ -1,0 +1,26 @@
+{
+  "unit_folder": "Information_Reports_Week_9",
+  "unit_pptx_name": "Information Reports Week 9 - Reading Like a Writer.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_inforep_w9s1.js",
+      "folder": "InfoReport_W9_S1",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_inforep_w9s2.js",
+      "folder": "InfoReport_W9_S2",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_inforep_w9s3.js",
+      "folder": "InfoReport_W9_S3",
+      "session": 3
+    },
+    {
+      "build_script": "builds/build_inforep_w9s4.js",
+      "folder": "InfoReport_W9_S4",
+      "session": 4
+    }
+  ]
+}
