@@ -242,7 +242,7 @@ Every theme object (all subjects) carries grade-band-aware visual anchor helpers
 | Answer reveal | `addRevealAnswerBar(slide, [answers], {y, h, fontSize})` inside `withReveal` revealFn — never a hand-placed success bar |
 | Vocabulary word card | `keyWordSlide(pres, { word, meaning, example }, notes, footer)` — ONE word per slide. NEVER render vocabulary as a definition bullet list; call once per word (F-2: 1-3 words, Y3-4: 2-4, Y5-6: 2-5) |
 
-PDF twins for worksheets/scaffolds (in `themes/pdf_helpers.js`): `addTenFramePdf`, `addFractionStripsPdf`, `addNumberLinePdf`, `addPpwMatPdf`, plus `addCycleDiagramPdf` (cycles/loops — never hand-draw cycle arrows with doc.moveTo, they come out tangled) and `addPosterMockupPdf`/`addPosterPairPdf` (designed visuals on paper). Same rule: never hand-draw these with raw pdfkit primitives.
+PDF twins for worksheets/scaffolds (in `themes/pdf_helpers.js`): `addTenFramePdf`, `addFractionStripsPdf`, `addNumberLinePdf`, `addPpwMatPdf`, `addHundredGridPdf` (the paper twin of `addAreaModel` — 10x10 grid, cells fill column by column), plus `addCycleDiagramPdf` (cycles/loops — never hand-draw cycle arrows with doc.moveTo, they come out tangled) and `addPosterMockupPdf`/`addPosterPairPdf` (designed visuals on paper). Same rule: never hand-draw these with raw pdfkit primitives.
 
 Visual reference deck: `node scripts/build_and_check.js builds/build_visual_catalogue.js` renders every helper per grade band to `output/Visual_Catalogue/`. Rebuild and re-inspect it after ANY change to the theme's visual helpers.
 

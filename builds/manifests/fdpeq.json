@@ -1,0 +1,16 @@
+{
+  "unit_folder": "Fractions_Decimals_And_Percentages_2Day_Unit",
+  "unit_pptx_name": "Fractions Decimals and Percentages - 2 Day Unit.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_fdpeq_lesson1.js",
+      "folder": "FDPEQ_Lesson1_Percentages_Are_Out_Of_100",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_fdpeq_lesson2.js",
+      "folder": "FDPEQ_Lesson2_Comparing_Fractions_On_One_Line",
+      "session": 2
+    }
+  ]
+}

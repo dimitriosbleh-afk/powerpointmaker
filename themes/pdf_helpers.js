@@ -1388,6 +1388,46 @@ function addTenFramePdf(doc, x, y, filled, opts) {
 }
 
 /**
+ * 10x10 hundred grid - the paper twin of the slide's addAreaModel, so a
+ * worksheet shows the SAME representation students met on screen. Cells fill
+ * column by column (full columns first, then part of the next), matching the
+ * on-screen model exactly.
+ * opts: { x=55, size=140, fillColor, borderColor, label }
+ */
+function addHundredGridPdf(doc, y, shaded, opts) {
+  const o = opts || {};
+  const x = o.x || 55;
+  const size = o.size || 140;
+  const cell = size / 10;
+  const fillColor = o.fillColor || "#1B3A6B";
+  const borderColor = o.borderColor || "#000000";
+  const count = Math.max(0, Math.min(100, Math.floor(shaded || 0)));
+  const fullCols = Math.floor(count / 10);
+  const extra = count % 10;
+
+  doc.save();
+  for (let col = 0; col < 10; col += 1) {
+    for (let row = 0; row < 10; row += 1) {
+      const cx = x + col * cell;
+      const cy = y + row * cell;
+      const isFilled = col < fullCols || (col === fullCols && row < extra);
+      if (isFilled) {
+        doc.rect(cx, cy, cell, cell).fillColor(fillColor).fill();
+      }
+      doc.lineWidth(0.5).strokeColor(borderColor).rect(cx, cy, cell, cell).stroke();
+    }
+  }
+  doc.restore();
+
+  if (o.label) {
+    doc.fontSize(10).font("Sans").fillColor("#6B7280");
+    doc.text(String(o.label), x, y + size + 4, { width: size, align: "center" });
+    return y + size + 20;
+  }
+  return y + size + 8;
+}
+
+/**
  * `count` separate whole strips, each split into `parts` equal cells
  * (parts <= 1 leaves the whole blank for the student to partition).
  * Strips keep a visible gap so separate wholes read as separate wholes.
@@ -1509,6 +1549,7 @@ module.exports = {
   addLinedArea, addTwoColumnOrganiser, addCycleDiagramPdf, addPosterMockupPdf, addPosterPairPdf,
   // Manipulative twins (paper versions of the slide visual anchors)
   addTenFramePdf, addFractionStripsPdf, addNumberLinePdf, addPpwMatPdf,
+  addHundredGridPdf,
   // PPTX integration
   addResourceSlide,
   addRichResourceSlide,
