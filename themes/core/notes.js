@@ -180,7 +180,9 @@ function parseNotesSections(notes) {
 
 // "everyone signs" is the expressive whole-class routine in an Auslan deck,
 // where the response is produced in the language rather than written or spoken.
-const RESPONSE_ROUTINE_RE = /\b(?:boards?(?:\s+up)?|mini[- ]whiteboards?|choral(?:\s+(?:response|read))?|everyone\s+(?:points?|shows?|writes?|reads?|acts?|signs?)|fingers?|thumbs?|turn\s+and\s+tell|pair(?:\s+(?:share|check))?|partner(?:\s+(?:talk|check|share))?|cold\s+call|stand\s+if|hold\s+up|quick\s+(?:write|sketch)|sort|match|act\s+it\s+out|read\s+aloud|show\s+me|chin\s+it|write\s+it)\b/i;
+// "Everyone, together, on three" is the school-standard choral cue
+// (megaprompt 75a) and counts as the choral routine.
+const RESPONSE_ROUTINE_RE = /\b(?:boards?(?:\s+up)?|mini[- ]whiteboards?|choral(?:\s+(?:response|read))?|everyone,?\s+together|together,?\s+on\s+three|everyone\s+(?:points?|shows?|writes?|reads?|acts?|signs?)|fingers?|thumbs?|turn\s+and\s+tell|pair(?:\s+(?:share|check))?|partner(?:\s+(?:talk|check|share))?|cold\s+call|stand\s+if|hold\s+up|quick\s+(?:write|sketch)|sort|match|act\s+it\s+out|read\s+aloud|show\s+me|chin\s+it|write\s+it)\b/i;
 const THINK_TIME_RE = /\b\d+(?:\.\d+)?\s*(?:sec|secs|second|seconds)\b/i;
 
 // A live-zone logical unit starts with ANSWER:, a beat number, or a labelled

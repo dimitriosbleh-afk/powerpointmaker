@@ -443,10 +443,15 @@ function createScienceBuilders(C, FONT_H, FONT_B, el, S, defaults) {
    * @param {{label:string, detail:string, color?:string}[]} steps
    * @param {string} notes
    * @param {string} footer
+   * @param {object} [opts]  { reserveBottom }
    * @returns {object}
    */
-  function cycleDiagramSlide(pres, badgeText, title, promptTitle, promptLines, centerLabel, steps, notes, footer) {
+  function cycleDiagramSlide(pres, badgeText, title, promptTitle, promptLines, centerLabel, steps, notes, footer, opts) {
     const s = pres.addSlide();
+    const o = opts || {};
+    // reserveBottom keeps room under both cards for a click-revealed answer bar.
+    const reserve = Number(o.reserveBottom) > 0 ? Number(o.reserveBottom) : 0;
+    const bottom = SAFE_BOTTOM - reserve;
     el.addTopBar(s, C.SECONDARY);
     el.addBadge(s, badgeText || "Cycle", { color: C.SUCCESS });
     el.addTitle(s, title);
@@ -463,14 +468,14 @@ function createScienceBuilders(C, FONT_H, FONT_B, el, S, defaults) {
     // Narrower prompt card so the cycle itself gets the room (it is the
     // visual anchor the megaprompt requires for cycle content).
     el.addInstructionCard(s, promptItems, {
-      x: 0.5, y: CONTENT_TOP, w: 3.0, h: SAFE_BOTTOM - CONTENT_TOP,
+      x: 0.5, y: CONTENT_TOP, w: 3.0, h: bottom - CONTENT_TOP,
       strip: C.SECONDARY, fill: C.WHITE,
     });
 
     const cardX = 3.7;
     const cardY = CONTENT_TOP;
     const cardW = 5.8;
-    const cardH = SAFE_BOTTOM - CONTENT_TOP;
+    const cardH = bottom - CONTENT_TOP;
     el.addCard(s, cardX, cardY, cardW, cardH, { variant: "tint", tone: C.PRIMARY });
 
     const safeSteps = (steps || []).slice(0, 4);
@@ -478,7 +483,10 @@ function createScienceBuilders(C, FONT_H, FONT_B, el, S, defaults) {
     const hasDetail = safeSteps.some((st) => st && st.detail);
     const legendH = hasDetail ? 0.5 : 0;
     const legendGapY = 0.1;
-    const legendRows = hasDetail ? Math.ceil(safeSteps.length / 2) : 0;
+    // When the bottom is reserved for a reveal bar the legend runs as one
+    // row of four so the loop itself keeps its height.
+    const legendCols = reserve > 0 ? Math.max(1, safeSteps.length) : 2;
+    const legendRows = hasDetail ? Math.ceil(safeSteps.length / legendCols) : 0;
     const legendBlockH = legendRows * legendH + Math.max(legendRows - 1, 0) * legendGapY;
     const diagramH = cardH - 0.3 - (legendBlockH ? legendBlockH + 0.2 : 0);
     const chipW = 1.95;
@@ -502,12 +510,15 @@ function createScienceBuilders(C, FONT_H, FONT_B, el, S, defaults) {
     });
 
     const centreW = Math.min(1.9, orbitX * 2 - chipW - 0.3);
+    // The centre label never touches the top and bottom chips: it scales
+    // down when the loop is short (e.g. with a reserved reveal bar).
+    const centreH = Math.min(0.72, Math.max(0.42, orbitY * 2 - chipH - 0.24));
     el.addTextOnShape(s, centerLabel || "Cycle", {
-      x: cx - centreW / 2, y: cy - 0.36, w: centreW, h: 0.72, rectRadius: 0.14,
+      x: cx - centreW / 2, y: cy - centreH / 2, w: centreW, h: centreH, rectRadius: 0.14,
       fill: { color: C.WHITE },
       line: { color: C.PRIMARY, width: 1.4 },
     }, {
-      fontSize: sz.sectionLabel + 3, fontFace: FONT_H, color: C.PRIMARY, bold: true,
+      fontSize: centreH < 0.6 ? sz.sectionLabel : sz.sectionLabel + 3, fontFace: FONT_H, color: C.PRIMARY, bold: true,
     });
 
     safeSteps.forEach((step, index) => {
@@ -531,10 +542,10 @@ function createScienceBuilders(C, FONT_H, FONT_B, el, S, defaults) {
     if (hasDetail) {
       const legendY = cardY + cardH - 0.15 - legendBlockH;
       const legendGapX = 0.16;
-      const legendW = (cardW - 0.4 - legendGapX) / 2;
+      const legendW = (cardW - 0.4 - legendGapX * (legendCols - 1)) / legendCols;
       safeSteps.forEach((step, index) => {
-        const row = Math.floor(index / 2);
-        const col = index % 2;
+        const row = Math.floor(index / legendCols);
+        const col = index % legendCols;
         const lx = cardX + 0.2 + col * (legendW + legendGapX);
         const ly = legendY + row * (legendH + legendGapY);
         const color = step && step.color ? step.color : palette[index];

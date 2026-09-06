@@ -71,8 +71,10 @@ Node.js project using PptxGenJS to generate explicit teaching slide decks with c
 ## Commands
 
 ```bash
-node scripts/build_and_check.js builds/build_<unit>_lesson<n>.js  # Build + enforce 7 QA gates (see MEGA_PROMPT 59a)
-node builds/build_<unit>_lesson<n>.js          # Build only (no automated checks)
+node scripts/check_spec_notes.js builds/<name>.json   # Lint a lesson spec's teacher notes (budgets, cues) before building
+node scripts/build_and_check.js builds/<name>.json    # Validate spec, build deck + PDFs, enforce 7 QA gates (MEGA_PROMPT 59a)
+node scripts/build_lesson.js builds/<name>.json       # Build only (no gates)
+node scripts/build_and_check.js builds/build_<name>.js  # Same gates for a hand-written build script (the exception, not the default)
 node tests/test_theme.js <subject> <level> [variant] # Test a theme combo
 python -m markitdown output/<file>.pptx        # Content QA - check text, order, typos (manual)
 python scripts/check_lesson_quality.py output/<file>.pptx --profile literacy-60  # Lesson density/language QA
@@ -89,12 +91,15 @@ themes/core/               # Shared utilities (layout, contrast, icons, shadows,
 themes/builders/           # Slide builders by subject (base, literacy, numeracy, inquiry, wellbeing, science)
 themes/palettes/           # Pure colour data (30 palettes per subject)
 themes/pdf_helpers.js      # PDF resource generation (pdfkit)
-builds/                    # One build script per lesson - writes to output/<LessonFolder>/
-_archive/                  # Archived lesson scripts - historical only, not active exemplars
+builds/                    # Lesson SPECS (exemplar_*.json, <unit>_<session>.json) + the visual catalogue - write to output/<LessonFolder>/
+themes/lesson/             # Spec pipeline: validate.js (strict, names every problem), buildLesson.js, resources.js (declarative PDFs)
+_archive/lessons/          # 300 pre-v12.6 build scripts, libs and manifests - historical only, NOT exemplars
 output/                    # Per-lesson folders (PPTX + companion PDFs)
 IMPORTANT/MEGA_PROMPT.md   # Pedagogical framework - paste into conversation when planning lessons
 docs/                      # Deep reference docs (read when needed, not every session)
 ```
+
+**Lessons are specs, not scripts.** A lesson is authored as `builds/<unit>_<session>.json` (schema: `docs/lesson-spec.md`; golden exemplars: `builds/exemplar_*.json`, one each for Foundation numeracy, Year 2 literacy and Year 5/6 science). The spec carries content and intent; `themes/lesson/buildLesson.js` chooses every builder, size, colour and reveal. Validation is strict and names the field and the fix. Write a JavaScript build script only when a spec cannot express a slide, say why, and extend the shared layer if the need will recur. Never copy patterns from `_archive/lessons/`.
 
 **Never append below the `===== END OF MEGA-PROMPT. SHIFT CLICK HERE. =====` marker in `IMPORTANT/MEGA_PROMPT.md`.** Teachers select from the top of the file to that marker to copy the prompt. New sections go ABOVE it; the marker and the USER REQUEST block stay last.
 
@@ -119,7 +124,7 @@ Variants: `0`-`5` (use `weekToVariant(weekNumber)` for 1-based weeks)
 
 **Subject builder overrides:** Subject builders (e.g. `createLiteracyBuilders`) must NOT re-export a stale copy of a base builder. If a subject builder shadows a base builder name (e.g. `annotatedModelSlide`), it must add genuine subject-specific behaviour that the base version cannot provide. If the override only duplicates the base logic — or is a frozen fork missing later improvements — remove it so the base version is used. The factory spreads `...subjectBuilders` after `...base`, so any name collision silently replaces the base version.
 
-For builder signatures, palette schema, and full API: read `docs/theme-system.md`.
+For builder signatures, palette schema, and full API: read `docs/theme-system.md`. For the lesson spec schema (slide kinds, visual specs, notes object, resources): read `docs/lesson-spec.md`.
 
 ## PptxGenJS Rules
 
@@ -432,14 +437,14 @@ For ad-hoc (non-themed) presentation design guidance: read `docs/design-guide.md
 
 **Use the tested theme builders** (`titleSlide`, `liSlide`, `contentSlide`, `cfuSlide`, `workedExSlide`, `exitTicketSlide`, `closingSlide`) for every slide that fits their signature. Only go manual for truly novel layouts, and test those individually.
 
-**Archived scripts are not active exemplars.** Do not scan `_archive/` for nearby scripts to update or imitate by default. Treat that folder as historical reference only. If `builds/` is empty, build from the shared theme system, current docs, and the user brief rather than reviving archived lesson files.
+**Archived scripts are not active exemplars.** `_archive/lessons/` holds the 300 pre-v12.6 build scripts (hand-placed small visuals, definition-list vocabulary, notes over budget; 32 fail the current gates). Do not scan it for patterns. The exemplars are the three `builds/exemplar_*.json` specs; build from those, the shared theme, and the current docs.
 
 Agents ARE useful for: research, reading reference files, visual QA inspection of rendered slide images, and content review. Just not for writing the build scripts themselves.
 
 ## QA (Required)
 
 First render is almost never correct. After every build:
-0. **Use `node scripts/build_and_check.js builds/build_<unit>_lesson<n>.js` as the default build command.** It runs seven gates: build, diagnostics, markitdown + forbidden markers, slide text hygiene, teacher notes format, hyperlink integrity, and lesson structure (resources placement, opening order, We Do vs You Do). If it exits non-zero, the build has failed — fix the issue before proceeding. Do NOT skip this step or ignore its output. **The gate script is the minimum automated bar, not a substitute for visual inspection.** Passing it means the build is structurally sound — it does NOT mean the slides look correct.
+0. **Use `node scripts/build_and_check.js builds/<name>.json` as the default build command** (a `.js` build script goes through the same command). For a spec, run `node scripts/check_spec_notes.js builds/<name>.json` first and fix until it prints "All notes within budget". It runs seven gates: build, diagnostics, markitdown + forbidden markers, slide text hygiene, teacher notes format, hyperlink integrity, and lesson structure (resources placement, opening order, We Do vs You Do). If it exits non-zero, the build has failed — fix the issue before proceeding. Do NOT skip this step or ignore its output. **The gate script is the minimum automated bar, not a substitute for visual inspection.** Passing it means the build is structurally sound — it does NOT mean the slides look correct.
 1. **Smoke build early.** If the script contains any manual/custom slide work, new helper usage, or new resource generation, run `build_and_check.js` after writing the PPTX-generating code but BEFORE writing companion PDFs. Do not write the entire script (slides + PDFs) in one pass and only build at the end. Catch API/signature errors while the change set is small and the fix is obvious.
 2. The gate script covers markitdown automatically. If it reports FAIL on the markitdown gate, that is a blocker — do not dismiss it as "intermittent" or "environmental" without concrete evidence (e.g. markitdown works on other PPTX files in the same session).
 3. **Visual QA is required after the gate passes.** Run `pptx_to_images.py` to generate slide previews, then inspect them directly. Look for: overlaps, text overflow, low contrast, uneven spacing, missing elements, text cut off, reveal mistakes, broken links, or elements below 5.1". The gate script cannot catch single-text-box overflow, reveal bar overlap, or visual imbalance — only eyes can.

@@ -1,21 +1,86 @@
 © 2026 James Hooke. Confidential. Internal use only. Not for redistribution.
 
-# Explicit Teaching Lesson Builder Mega-Prompt v12.6
+# Explicit Teaching Lesson Builder Mega-Prompt v12.7
 ## Foundation to Year 6 | Australian Primary Schools | Visual-First | Editable | Source-Faithful | Cognitive Load Aware | Classroom-Ready | School Feedback Aligned
 
-This v12.0 revision turns classroom response and teacher preparation into explicit system requirements. It adds high-quality opportunities to respond, decision-grade checks for understanding, curriculum-aware retrieval and prepared response branches. The Glance Format from v11.0 remains, now with source validation for think time, one named response routine, complete response, proceed and pivot branches, fresh re-checks and protected reveals. OG remains template-locked and receives only the compatible response-quality and pacing refinements named in `OG_MEGA_PROMPT.md`.
+How to read this document:
 
-The v12.1 revision deepens the response to the Diamond Creek East classroom tour with Ryan Dunn, 14 July 2026. It adds school-standard response routine cue scripts with voices rules and scripted resets (section 75a), makes no hands up the default sampling norm, scripts targeted cold-call follow-ups that raise the think ratio (section 75), requires a named CFU decision-point map per lesson (section 76), and sets brisk evidence-led pacing as the default with time-budget clauses on review blocks. Observed strengths are locked in: calm classrooms, consistent resources and varied opportunities to respond stay the floor; routine tightness and thinking depth become the next ceiling.
+- PART A (sections A1 to A9, directly below) is the build order. Follow it top to bottom for every lesson. It names the reference section for each step.
+- PART B (sections 0 to 80) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
+- Section 0a is the non-negotiable output gate. A lesson that fails any item there is not finished, whatever else it does well.
 
-The v12.2 revision codifies two practices that previously lived only in per-request notes. Unit anchor consistency (section 79): one representation, one anchor phrase and one method held identical across every session of a unit. Catch-up architecture (section 80): a student who missed one or two sessions re-enters through a low-coupling launch, an anchor restatement in every I Do, a re-grounding first resource item, a CATCH-UP NOTE naming the fastest re-entry path, and HELP moves that double as re-entry scaffolds, all without flattening the unit's progress.
+Version history (newest first):
 
-The v12.4 revision responds to a successful build against a supplied school planner (T3W4 Discovery 2, division swoop lesson, 28 July 2026), where the teacher asked for a new lesson inside an existing 119-slide deck and judged the result house-quality. It adds the missing procedure for inserting into a supplied deck (section 20c), separates slide transitions from click builds and names the duplicate-slide reveal as the fallback it is (section 20b), locks the teacher's own vernacular for a notation or routine (section 5b), accepts natural teacher language as input and permits one structured question at a genuine fork (section 7), requires the mark itself to be constructed when no representation exists (section 15a), and requires honest scoping of QA when a renderer is unavailable (section 60a). The header also corrects to the current version; v12.2 and v12.3 shipped under a stale heading.
+- v12.7 (6 September 2026): lessons are authored as specs, not scripts. A lesson spec (`builds/<name>.json`, schema in `docs/lesson-spec.md`) carries content and intent; the pipeline makes every layout decision, validates the spec field by field, composes the notes, builds the deck and PDFs and runs the gates. Three golden exemplars ship in `builds/`. Part A replaces the scattered workflow with one build order. Legacy build scripts moved to `_archive/lessons/` and are not exemplars.
+- v12.6 (6 September 2026): visual redesign of the shared theme after an audit of rendered decks. Retuned palettes, soft tint panels, one subject motif, hero sizing, a declarative visual layer (section 15j), 200+ built-in pictograms (section 18), four pattern builders. The default output now looks like the lesson the rules describe.
+- v12.5: SAY lines read as connected natural speech; the read-aloud flow test (sections 45-47).
+- v12.4: inserting a lesson into a supplied deck (20c), transitions versus click builds (20b), teacher vernacular lock (5b), natural-language requests (7), constructed marks (15a), honest QA scoping (60a).
+- v12.3: Glance Format budgets became rendered budgets (45-46); reveal slides carry their own post-reveal notes (47); anchors render bold.
+- v12.2: unit anchor consistency (79) and catch-up architecture (80).
+- v12.1: school-standard cue scripts and resets (75a), no hands up, cold-call follow-ups (75), decision-grade CFU map (76), brisk pacing.
+- v12.0: opportunities to respond, decision-grade checks for understanding, curriculum-aware retrieval and prepared response branches as system requirements.
 
-The v12.5 revision responds to teacher feedback that concise, compliant notes could still sound clipped and disjointed when read verbatim. Sections 45-47 now distinguish useful spoken connective tissue (brief words such as "Okay", "Now", "So" and "Let's") from empty management padding. SAY lines must form a short, connected spoken turn, and the full sequence must pass a read-aloud flow test without the teacher inventing transitions. The note budgets remain unchanged: the goal is more natural speech, not more teaching detail.
+# PART A. BUILD ORDER
 
-The v12.6 revision is a visual redesign of the shared theme layer after an audit of rendered decks (6 September 2026) found them bland, dark and template-heavy: every palette sat far darker than its contrast floor, so Foundation decks looked like corporate reports; title slides carried the generated-deck blobs; visuals were hand-placed small; vocabulary cards had no graphic. The theme now carries the design language (section 50), so a build script that uses the builders inherits it: retuned palettes (bright for Foundation, deeper for Year 5/6, every white-on-colour pairing still AA), soft tint panels for hero surfaces with strong colour reserved for signals, one subject motif on title and closing slides, hero sizing for short content, a declarative visual layer (`drawVisual` and visual specs, section 15j) so representations fill their frame without coordinates, 200+ built-in pictograms (section 18) so word cards, science stages, feelings and hooks carry a picture, and four pattern builders (`heroVisualSlide`, `choiceSlide`, `youDoSlide`, `textExtractSlide`) for the slides that were being hand-drawn. `addNumberLine` is now on every subject. Pedagogy is unchanged; what changed is that the default output now looks like the lesson the rules describe.
+Follow these nine steps in order for every lesson. Each step says what to produce and which reference section governs it. Do not skip to writing slides; the mistakes that fail the gate are almost always made in steps A1 to A3.
 
-The v12.3 revision responds to live-teaching feedback (James Hooke, Big Ideas Session 2, 15 July 2026): fully spec-compliant notes still read as an unglanceable wall on an iPad mid-lesson. The Glance Format's budgets become RENDERED budgets (sections 45-46): about 120 words per live zone, no physical line over about 16 words, one idea per physical line, one blank line between logical units, speech never fused with stage directions on the same line, SCAN as three short lines, and a caret for exponents in notes (10^6). Reveal slides now carry their own short post-reveal notes instead of a byte-copy of the base slide's (section 47) - when the teacher clicks to the answer, the notes advance with the slide. Recognised note anchors render in real bold in the built file. The 8-unit structure, fixed order and voice rules are unchanged; what changed is that the budgets now measure what the teacher's eye actually meets. OG decks are unaffected.
+## A1. Read the request and lock the sources
+
+Read the request as a teacher wrote it (section 7). Extract: subject, year level, week or session number, topic, session length, supplied texts or decks, resources wanted, the teacher's own words for any routine or notation (5b). If a supplied text exists, its quotes are exact and locked (5, 5a). Never invent a quote, page, video or URL; use a placeholder that says so (5). Ask at most one question, and only at a genuine fork (7). Apply the Scope Gate (8): one lesson-sized target.
+
+## A2. Choose the lesson shape and write the slide list as kinds
+
+Pick the structure for the subject and band, then write the slide list as spec `kind` values before writing any content:
+
+- Foundation to Year 2 maths: section 68l (one question per slide; three Daily Review and three Fluency prompts, each revealed on click; I Do 2-4, We Do 3-5, You Do 2-4).
+- Years 3 to 6 maths: section 21 (Daily Review, Fluency, launch, LI/SC, I Do, We Do, CFU, You Do, exit, closing).
+- Literacy: section 28 with the lean defaults (10-14 slides; one reading or craft focus plus one writing or language focus).
+- Science, HASS, wellbeing and other subjects: section 32.
+
+The opening order is fixed in every subject: title, resources, (numeracy: dailyReview, fluency), launch, li, keyWord (section 0a item 23). Every lesson has a launch that bridges known learning into today's (0a item 17). Only the body may move responsively (12).
+
+## A3. Write the intention, the criteria, the anchor and the decision points
+
+One Learning Intention sentence and exactly three "I can" criteria: reachable, core, stretch, with tier labels never on a student surface (14, 0a item 18). Name the unit anchor: one representation, one phrase, one method held across every session (79). Name the two or three decision-grade CFU points and what the teacher does at each on secure, mixed and weak evidence (76, 38). Decide the exit evidence and which criterion it assesses (53).
+
+## A4. Give every slide its visual and its builder
+
+For each slide in the list, choose the builder from the table in section 15j and write the visual as a spec: `{ "type": "tensFrame", "filled": 7 }`, a pictogram, a table, a text extract. Every student-facing slide carries the representation it names (0a item 2). Word cards carry a pictogram or a local image (29). Science cycles and processes use the cycle and process builders (32, CLAUDE.md visual rules). Reveal an answer only where hiding it protects thinking, and reveal on click (20, 20b). Junior band: one question per slide (68j), hero visuals (68g), concrete language before symbols (31a).
+
+## A5. Write the slide faces
+
+Lean, hero-sized, readable from the back (15, 16, 0a items 1-4, 15). The task or model is the largest thing on the slide; steps, cues and "what you need" are smaller. No question numbers. No teacher explanation on the face; it lives in the notes. Language for a student twelve months below level (10, 0a item 13); depth for a student eighteen months ahead through thinking, not harder words (9, 73).
+
+## A6. Write the notes for every slide
+
+Glance Format on every teaching slide (45, 46, 46a, 47): ANSWER first when the slide asks anything, 2-5 numbered beats with CAPS anchors, ASK with think time in seconds and one named routine on the school cue script (75a), SCAN as three lines with a proceed and a pivot, TRAP with the fix, STRETCH and HELP on I Do, We Do and You Do, then the divider and a one-line prep zone with the tag. Live zone at most 120 words; no line over 16 words. One plain line for title, resources and closing slides. In this codebase run `node scripts/check_spec_notes.js builds/<name>.json` and fix until it prints "All notes within budget".
+
+## A7. Decide resources and materials
+
+Default is zero or one printed resource (40, 0a item 7). A worksheet uses the same representation as the slides, drawn by the paper twins, spacious for the band, with an answer key (42, 61, 68i, 68m). An enabling scaffold changes the form of the task (39, 73). List every manipulative, tool and board setup on the Teacher Resources slide (44).
+
+## A8. Build, gate, then look
+
+In this codebase, author the lesson as a spec and build it:
+
+```bash
+node scripts/check_spec_notes.js builds/<name>.json      # notes within budget
+node scripts/build_and_check.js builds/<name>.json       # build + seven gates (59a)
+python scripts/pptx_to_images.py output/<folder>/<deck>.pptx   # then inspect every slide (60a)
+```
+
+Zero ERROR, zero WARN, zero ADVISORY. Then open the images and check what the gate cannot see (59a, 60a, 61a, 62): hero size, representation matches the concept, worked example does not give away the answer, quotes exact, PDF pages clean. Fix the spec and rebuild until a full pass finds nothing. Google Slides or PowerPoint compatibility is a separate check; say plainly whether it was done (60a).
+
+## A9. Deliver and hand over
+
+Report what was built, where it is, what was checked and what was not (64, 64a, 65). Include the catch-up note for a multi-session unit (80). Multi-session requests deliver one merged deck and one flat Resources folder (68a).
+
+## The pipeline in this codebase
+
+- Author `builds/<unit>_<session>.json` by copying the shape of the nearest golden exemplar (`docs/lesson-spec.md` lists them and every field). The spec holds content and intent; the theme decides layout, size, colour and reveal mechanics.
+- Slide kinds: `title` `overview` `resources` `dailyReview` `fluency` `launch` `li` `keyWord` `heroVisual` `content` `workedExample` `choice` `cfu` `youDo` `textExtract` `cycle` `process` `boardBuild` `scenario` `pairShare` `exitTicket` `closing`. Resource kinds: `worksheet` (answer key generated), `page`, `cards`.
+- Validation is strict and names the field and the fix for every problem. A spec that validates and builds with zero advisories has met every machine-checkable rule in this document; the judgement rules still need eyes (59a).
+- Write a JavaScript build script only when a spec genuinely cannot express a slide (a custom drawing the visual layer lacks). Say why in the summary, extend the shared layer if the need will recur, and never copy patterns from `_archive/lessons/`.
 
 # 0. PURPOSE
 
@@ -1093,7 +1158,9 @@ Fix the slide by:
 
 ## 15j. Which Builder For Which Slide
 
-Every slide shape below has a tested builder. Use the builder; never rebuild its layout with raw shapes and text. The builder gives the slide the house look (section 50), the band's sizes (section 16a), the diagnostics, and the visual at hero size.
+Every slide shape below has a tested builder and a spec `kind` (docs/lesson-spec.md). In a spec you name the kind and the theme calls the builder; never rebuild a layout with raw shapes and text. The builder gives the slide the house look (section 50), the band's sizes (section 16a), the diagnostics, and the visual at hero size.
+
+Spec kinds by slide shape: visual-only teaching slide `heroVisual`; statement, launch or bullets beside a model `launch` / `content` (numeracy steps `workedExample`); Which one? `choice` with `answer`; You Do `youDo`; extract `textExtract`; word `keyWord`; cycle or journey `cycle` / `process`; check `cfu` or `choice`; review and fluency `dailyReview` / `fluency`; board build `boardBuild`; framing `li`, `title`, `closing`, `exitTicket`, `resources`.
 
 | The slide is... | Build it with | Notes |
 |---|---|---|
@@ -3616,11 +3683,13 @@ When generating a slide deck and resources, follow this order:
 35. Run Lesson Health Check.
 36. Output final files and summary.
 
-In this codebase, steps 24 to 32 are run by the build gate. Build with:
+Part A is the operational order for this list. In this codebase the lesson is a spec and steps 20 to 32 run through the pipeline:
 
-`node scripts/build_and_check.js builds/build_<unit>_lesson<n>.js`
+`node scripts/check_spec_notes.js builds/<name>.json` lints every slide's notes against the section 46 budgets before a build.
 
-It must exit zero before you look at anything else. Section 59a lists what the seven gates do and, more importantly, what they cannot see.
+`node scripts/build_and_check.js builds/<name>.json` validates the spec (every problem named with its field path), builds the deck and its PDFs, then runs the seven gates.
+
+It must exit zero, with no ADVISORY lines, before you look at anything else. Section 59a lists what the gates do and, more importantly, what they cannot see. A JavaScript build script (`builds/build_<name>.js`) goes through the same gate command and is the exception, not the default (Part A).
 
 Lines beginning ADVISORY are not failures. They mark a place where the pipeline silently did the author's job: a reveal slide given derived notes instead of an authored post-reveal script, or a note line the machine broke because it ran past the word budget. The build still passes, because a whole library of older decks depends on those fallbacks. A lesson you are writing from scratch should produce NONE of them. Treat every advisory as work not yet done.
 
@@ -3636,9 +3705,9 @@ To check a change has not broken the wider library, sweep it:
 
 Some rules in this document are checked by machine on every build. Most are not. Knowing which is which is the difference between a rule that holds and a rule that quietly rots.
 
-`node scripts/build_and_check.js builds/<script>.js` runs seven gates. A non-zero exit is a blocker, not advice:
+`node scripts/build_and_check.js builds/<name>.json` runs seven gates. A non-zero exit is a blocker, not advice:
 
-- Gate 0: the build completes.
+- Gate 0: the spec validates and the build completes. Validation checks the opening order, exactly three success criteria, a launch before the LI, word cards with a picture, visual types and pictogram names, reveal placement, banned characters, notes shape, resource kinds and paper-twin visuals, and names every problem with its field path and fix.
 - Gate 1: zero layout diagnostics. Overlaps, out-of-bounds elements, underfilled slides, reveal elements covering base text, contrast failures.
 - Gate 2: markitdown parses the file, and no unfinished markers or legacy resource codes survive.
 - Gate 3: slide-face text hygiene. Banned dash and quote characters, layout-by-spaces.
@@ -4052,6 +4121,9 @@ A lesson is incomplete if:
 - students must read large amounts of text to understand a simple task
 - a longer writing sequence lacks a teacher-facing overview of structure and expected content
 - an answer key is missing where the answers are not obvious
+- the lesson was written as a JavaScript build script when a spec could express every slide
+- the build printed ADVISORY lines that were left unresolved
+- a slide asked for a picture the pictogram set does not have and a misleading pictogram was used instead of the nearest honest one or a word-only card
 
 # 64a. HANDOVER
 
@@ -4111,6 +4183,8 @@ Preferred Videos or Media: "[optional]"
 School Priorities: "[optional]"
 
 This template is one way a request arrives, not the required way. A file plus a sentence of plain teacher language is equally valid input. Read the fields out of it per section 7 rather than asking the user to restate their request in this format.
+
+The output is one lesson spec per requested session (Part A), built and gated, with the summary from section 64a.
 
 Do not enter plan mode.
 
@@ -4239,7 +4313,7 @@ Do not put this detailed overview on a student-facing slide.
 
 For Foundation to Year 2 maths, especially Grade 1 and Grade 2, Daily Review must use one question per slide.
 
-The answer must be shown on the following slide.
+The answer is revealed on click on the same slide (section 20b; in a spec, `reveal: { answers: [...] }`). A separate answer slide is the fallback for an answer that needs a different layout.
 
 Do not put three Daily Review questions on one slide for Foundation to Year 2.
 
@@ -4597,6 +4671,8 @@ For Foundation to Year 2 maths, use this fuller sequence unless the user gives a
 30. Closing Reflection
 
 Use 4 or 5 Daily Review and Fluency prompts when useful.
+
+With click reveals (section 20b) each "answer" line above is a click on the prompt slide, not a second slide, so a full junior sequence is about 17 to 22 slides. The Foundation exemplar in `builds/` is the reference shape.
 
 Do not follow this sequence mechanically if it would make the lesson inaccurate, too long for the session, or repetitive.
 

@@ -1,0 +1,593 @@
+{
+  "lesson": {
+    "subject": "science",
+    "yearLevel": "grade56",
+    "week": 2,
+    "session": 1,
+    "title": "The Water Cycle",
+    "subtitle": "Evaporation, condensation, precipitation, collection, and around again",
+    "meta": "Year 5/6 Science | Earth and Space",
+    "footer": "The Water Cycle | Year 5/6 Science",
+    "outputFolder": "Exemplar_Year56_Science_Water_Cycle",
+    "fileName": "The Water Cycle - Year 56 Science.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        "sun",
+        "cloud",
+        "rain",
+        "waves"
+      ],
+      "labels": false
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Science journals and pencils",
+      "Mini-whiteboards and markers",
+      "Printed Water Cycle Scaffold for students who need it"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Turn and tell",
+      "Show me A, B or C"
+    ],
+    "boardSetup": [
+      "A blank cycle ring drawn on the board with four empty labels, filled live during the I Do"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "page",
+      "label": "Water Cycle Scaffold",
+      "description": "Enabling scaffold for the You Do. The four stages are named and pictured; students order them, draw the loop and explain it.",
+      "title": "The Water Cycle",
+      "subtitle": "Order the stages, draw the loop, explain why it repeats.",
+      "blocks": [
+        {
+          "heading": "The four stages"
+        },
+        {
+          "visual": {
+            "type": "pictograms",
+            "items": [
+              {
+                "name": "hot",
+                "label": "evaporation"
+              },
+              {
+                "name": "cloud",
+                "label": "condensation"
+              },
+              {
+                "name": "rain",
+                "label": "precipitation"
+              },
+              {
+                "name": "waves",
+                "label": "collection"
+              }
+            ]
+          }
+        },
+        {
+          "organiser": {
+            "left": "Stage, in order",
+            "right": "What happens to the water",
+            "rows": 4,
+            "leftContent": [
+              "1. Evaporation",
+              "2.",
+              "3.",
+              "4."
+            ]
+          }
+        },
+        {
+          "box": 190,
+          "label": "Draw the cycle as a loop. Add arrows to show the water moving."
+        },
+        {
+          "heading": "Why is it a cycle and not a line?"
+        },
+        {
+          "lines": 3
+        },
+        {
+          "tip": "Stretch: where in the loop could the water be stored for a long time? Mark it on your drawing."
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open Session 1 of the unit. One line: today we follow one drop of water around a loop that never runs out."
+    },
+    {
+      "kind": "resources",
+      "notes": "Prep slide. Journals and whiteboards out. Draw the blank cycle ring on the board with four empty labels; it is filled live during the I Do. Print a few Water Cycle Scaffolds for students who need a different entry to the You Do. No earlier session is assumed."
+    },
+    {
+      "kind": "launch",
+      "title": "Where does rain come from?",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "sun",
+          "cloud",
+          "rain",
+          "waves"
+        ],
+        "labels": false
+      },
+      "prompt": "Turn and tell: where does the water in a puddle go on a hot day?",
+      "notes": {
+        "answer": "open - it dries up, goes into the air, becomes cloud",
+        "beats": [
+          [
+            "POINT to the four pictures.",
+            "SAY: Sun, cloud, rain, sea. Four pictures, one story."
+          ],
+          [
+            "ASK: Where does the water in a puddle go on a hot day?",
+            "30 sec. Turn and tell, partner A first.",
+            "EXPECT: it dries up, goes into the air."
+          ],
+          [
+            "SCAN the room. Listen for into the air.",
+            "80%+ -> cold call one pair: where does it go next?",
+            "Less -> hold up a wet cloth, ask where the water goes, re-ask."
+          ],
+          [
+            "SAY: It does not disappear. It goes somewhere.",
+            "Today we follow it around."
+          ]
+        ],
+        "trap": [
+          "saying the water disappears.",
+          "Fix: ask if the sun can destroy water, student rethinks."
+        ],
+        "prep": "Launch surfaces the disappears misconception before the model corrects it. Low-coupling, under 5 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how water moves and changes as it travels through the water cycle.",
+      "successCriteria": [
+        "I can name the four stages of the water cycle.",
+        "I can put the stages in order and say what happens to the water at each one.",
+        "I can explain why the water cycle never runs out."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today we learn how water moves and changes through the water cycle."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Naming the stages is the floor.",
+            "Explaining why it never runs out is the goal. That is the exit ticket."
+          ]
+        ],
+        "prep": "SC1 naming is reachable for all; SC2 order and process is the core target; SC3 the never-runs-out explanation is the exit ticket stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "evaporation",
+      "meaning": "Liquid water warms up and rises into the air as an invisible gas called water vapour.",
+      "example": "A puddle dries in the sun. The water evaporated.",
+      "pictogram": "hot",
+      "notes": {
+        "answer": "liquid water warming and rising into the air as water vapour",
+        "beats": [
+          "POINT to the word. SAY: Evaporation. Say it with me. E-vap-o-ra-tion.",
+          [
+            "SAY: Liquid water warms up and rises into the air as an invisible gas.",
+            "We call that gas water vapour. You cannot see it, but it is there."
+          ],
+          [
+            "ASK: Is the puddle water gone, or somewhere else?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: somewhere else, in the air as vapour"
+          ]
+        ],
+        "trap": [
+          "saying evaporation makes the water disappear.",
+          "Fix: ask what the water turned into, student says vapour in the air."
+        ],
+        "prep": "First of two key words. The word carries the up half of the loop.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "condensation",
+      "meaning": "Water vapour cools high in the sky and turns back into tiny drops that make clouds.",
+      "example": "Drops form on the outside of a cold can. That is condensation.",
+      "pictogram": "cloud",
+      "notes": {
+        "answer": "water vapour cooling and turning back into tiny drops",
+        "beats": [
+          "POINT to the word. SAY: Condensation. Say it with me. Con-den-sa-tion.",
+          [
+            "SAY: High up it is cold. The vapour cools and turns back into tiny drops.",
+            "Millions of tiny drops together are a cloud."
+          ],
+          [
+            "ASK: Evaporation goes up. Which way does condensation get us ready to go?",
+            "10 sec. Cue: Everyone, together, on three.",
+            "EXPECT: down, back to drops"
+          ]
+        ],
+        "trap": [
+          "swapping evaporation and condensation.",
+          "Fix: evaporation up and invisible, condensation cool and drops. Student says both."
+        ],
+        "prep": "Second key word, the turn at the top of the loop. Precipitation and collection are taught inside the diagram, not as extra cards.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "cycle",
+      "badge": "I Do",
+      "title": "Follow one drop around the loop",
+      "promptTitle": "Watch and listen",
+      "promptLines": [
+        "I will name each stage and say what the water is doing.",
+        "Follow the arrows around the loop."
+      ],
+      "centerLabel": "Water Cycle",
+      "steps": [
+        {
+          "label": "Evaporation",
+          "detail": "Sun warms water, vapour rises",
+          "icon": "sun"
+        },
+        {
+          "label": "Condensation",
+          "detail": "Vapour cools into cloud drops",
+          "icon": "cloud"
+        },
+        {
+          "label": "Precipitation",
+          "detail": "Drops fall as rain, hail or snow",
+          "icon": "rain"
+        },
+        {
+          "label": "Collection",
+          "detail": "Water gathers in rivers, lakes, sea",
+          "icon": "waves"
+        }
+      ],
+      "notes": {
+        "answer": "evaporation, condensation, precipitation, collection, then around again",
+        "beats": [
+          [
+            "POINT to evaporation.",
+            "SAY: Watch me follow one drop. The sun warms the sea and it rises as vapour."
+          ],
+          [
+            "POINT to condensation, then precipitation.",
+            "SAY: High up it cools into a cloud drop, then falls as rain."
+          ],
+          [
+            "POINT to collection, then evaporation.",
+            "SAY: It gathers in the sea, the sun warms it, around it goes."
+          ],
+          [
+            "ASK: After collection, which stage comes next?",
+            "10 sec. Cue: Everyone, together, on three.",
+            "EXPECT: evaporation"
+          ]
+        ],
+        "trap": [
+          "thinking each stage is new water.",
+          "Fix: trace one drop around with a finger, student re-traces."
+        ],
+        "stretch": "Where could the drop be stored for years?",
+        "help": "Cover the labels. Say rising, cooling, falling, gathering.",
+        "prep": "The model. The loop is the visual anchor; the think-aloud follows one drop so the cycle reads as one journey, not four facts. SC2.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which stage turns vapour into cloud?",
+      "prompt": "Show me A, B or C on your board",
+      "options": [
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "hot"
+          },
+          "text": "Evaporation"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "cloud"
+          },
+          "text": "Condensation"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "rain"
+          },
+          "text": "Precipitation"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - condensation. Vapour cools into drops",
+        "beats": [
+          "SAY: Three stages. Which one is the vapour cooling and turning back into drops?",
+          [
+            "ASK: Which stage turns vapour into cloud?",
+            "20 sec. Cue: Write A, B or C... Chin it... Show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN boards, back row first.",
+            "80%+ -> reveal, cold call one B: how do you know?",
+            "Less -> hold a cold can, point to the drops forming, name it, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Condensation. Cooling makes drops. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "choosing A because clouds are up high.",
+          "Fix: ask whether evaporation makes vapour or drops, student re-chooses."
+        ],
+        "prep": "First decision point, on the pair of stages students most often swap. Under 80% means the We Do starts by acting the loop out.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "cycle",
+      "badge": "We Do",
+      "title": "Name each stage",
+      "promptTitle": "With your partner",
+      "promptLines": [
+        "Use the clues to name stages 1 to 4.",
+        "Write the four names in order on your whiteboard."
+      ],
+      "centerLabel": "Water Cycle",
+      "steps": [
+        {
+          "label": "",
+          "detail": "Sun warms water, vapour rises",
+          "icon": "sun"
+        },
+        {
+          "label": "",
+          "detail": "Vapour cools into cloud drops",
+          "icon": "cloud"
+        },
+        {
+          "label": "",
+          "detail": "Drops fall as rain, hail or snow",
+          "icon": "rain"
+        },
+        {
+          "label": "",
+          "detail": "Water gathers in rivers, lakes, sea",
+          "icon": "waves"
+        }
+      ],
+      "reveal": {
+        "answers": [
+          "evaporation",
+          "condensation",
+          "precipitation",
+          "collection"
+        ]
+      },
+      "notes": {
+        "answer": "evaporation, condensation, precipitation, collection",
+        "beats": [
+          "SAY: The names are gone. The clues are not.",
+          [
+            "ASK: Name stages 1 to 4 in order.",
+            "60 sec. Partner talk, then Write it... Chin it... Show me.",
+            "EXPECT: evaporation, condensation, precipitation, collection"
+          ],
+          [
+            "SCAN boards, back row first.",
+            "80%+ -> reveal, cold call: which one was hard?",
+            "Less -> act it: stand for rising, crouch for falling, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Tick each name in the right place. Fix any that swapped."
+          ]
+        ],
+        "trap": [
+          "swapping condensation and precipitation.",
+          "Fix: ask which one is falling, student re-orders."
+        ],
+        "stretch": "Add a label where water is stored for years.",
+        "help": "Give the first and last names. Ask for the middle.",
+        "prep": "Guided practice on the same anchor with the labels faded, not the visual (visual-analysis rule). SC1 and SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Say what the water does",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Stage",
+            "What the water does"
+          ],
+          [
+            "Evaporation",
+            "Warms and rises as vapour"
+          ],
+          [
+            "Condensation",
+            "Cools into cloud drops"
+          ],
+          [
+            "Precipitation",
+            "Falls as rain, hail or snow"
+          ],
+          [
+            "Collection",
+            "Gathers in rivers, lakes and sea"
+          ]
+        ]
+      },
+      "prompt": "Partner A covers the right column. Partner B says it. Swap.",
+      "notes": {
+        "answer": "rises as vapour, cools into drops, falls, gathers",
+        "beats": [
+          [
+            "POINT to the table.",
+            "SAY: Names and what the water does. Now say it without looking."
+          ],
+          [
+            "ASK: Say what the water does at each stage.",
+            "90 sec. Partner check: A covers the right column, B says it, swap.",
+            "EXPECT: rises as vapour, cools into drops, falls, gathers"
+          ],
+          [
+            "SCAN two pairs per table. Listen for cools.",
+            "80%+ -> next slide.",
+            "Less -> choral read the right column, everyone, together, on three, re-ask."
+          ]
+        ],
+        "trap": [
+          "saying makes clouds without cools.",
+          "Fix: ask what happens to the vapour first, student adds cools."
+        ],
+        "stretch": "Say the four stages backwards and explain why the order still works.",
+        "help": "Cover the last two rows only.",
+        "prep": "Oral rehearsal of the process language before writing. The table is the anchor; the cover-and-say routine is the practice.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 6]"
+      }
+    },
+    {
+      "kind": "cfu",
+      "title": "Hinge question",
+      "technique": "Turn and tell, then show me",
+      "question": "What makes this a cycle and not a straight line?",
+      "reveal": {
+        "answers": [
+          "It collects, then evaporates again. The loop repeats."
+        ]
+      },
+      "notes": {
+        "answer": "the water collects, then evaporates again - the loop repeats",
+        "beats": [
+          "SAY: Big question. Think about the arrow back to evaporation.",
+          [
+            "ASK: What makes this a cycle and not a straight line?",
+            "30 sec. Turn and tell, then Write it... Chin it... Show me.",
+            "EXPECT: it goes around again, it repeats."
+          ],
+          [
+            "SCAN boards, back row first.",
+            "80%+ -> reveal, cold call: does Earth ever run out of water?",
+            "Less -> trace the loop twice on the board, ask where it ends, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: It collects, then evaporates again. Same water, around and around."
+          ]
+        ],
+        "trap": [
+          "saying it stops after the rain.",
+          "Fix: point to collection, ask what the sun does next."
+        ],
+        "prep": "The hinge of the lesson and the structure of the exit ticket's second question. SC3.",
+        "tag": "[CFU hinge | Supported application | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Show what you know in your journal",
+      "task": "Draw the water cycle as a loop. Label all four stages and add arrows.",
+      "steps": [
+        "Draw the loop with four stages",
+        "Add arrows to show the water moving",
+        "Write one sentence: why is it a cycle?"
+      ],
+      "where": "In your science journal",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "sun",
+          "cloud",
+          "rain",
+          "waves"
+        ],
+        "labels": false
+      },
+      "visualLabel": "The four stages, in order",
+      "notes": {
+        "answer": "a loop with four labels and arrows, plus one sentence about repeating",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Your own diagram. A loop, four labels, arrows, one sentence on why it repeats."
+          ],
+          "SAY: Draw, arrow, write. Say the steps with me.",
+          "CIRCULATE. Look for arrows pointing the same way and the loop closing.",
+          "TIME 12 minutes. Early finishers add where water is stored for years."
+        ],
+        "trap": [
+          "four boxes in a line with no return arrow.",
+          "Fix: ask where the water goes after collection, student draws the return."
+        ],
+        "stretch": "Add where water is stored for years and how it rejoins.",
+        "help": "Water Cycle Scaffold: stages pictured, first one named. Order and draw.",
+        "prep": "Independent application with the same loop as the slides. The journal drawing is the evidence for SC2; the sentence for SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Before you go",
+      "questions": [
+        "Name the four stages of the water cycle in order.",
+        "In one sentence: why does the water cycle never run out?"
+      ],
+      "notes": {
+        "answer": "evaporation, condensation, precipitation, collection; the water collects and evaporates again",
+        "beats": [
+          "SAY: Two questions on your whiteboard. Names in order, then one sentence.",
+          [
+            "ASK: Write the four stages in order. Then one sentence: why does it never run out?",
+            "180 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: the four names in order; the water goes around again"
+          ],
+          "RECORD who has the order right and who explains the repeat. Two lists for tomorrow."
+        ],
+        "trap": [
+          "explaining with rain falls again but no return to evaporation.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence: question 1 is SC1 and SC2, question 2 is SC3. Tomorrow groups on question 2.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner the four stages in order, from memory, and where the loop starts again.",
+      "selfAssessment": "Traffic light: green, orange or red on your whiteboard",
+      "notes": "Read the three I can lines together. Traffic light on cue, then the turn and tell. Listen for the return to evaporation."
+    }
+  ]
+}

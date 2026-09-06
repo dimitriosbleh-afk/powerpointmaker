@@ -1957,7 +1957,8 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
    *     { type: "tensFrame", filled: 7 }, notes, footer,
    *     { label: "Tens frame", prompt: "Show me on your fingers" })
    *
-   * opts: { label, prompt, badgeColor, panel (default true), promptColor }
+   * opts: { label, prompt, badgeColor, panel (default true), promptColor,
+   *         reserveBottom (inches kept free under the panel for a reveal bar) }
    */
   function heroVisualSlide(pres, badgeText, title, visualSpec, notes, footer, opts) {
     const s = pres.addSlide();
@@ -1971,7 +1972,9 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     const labelH = o.label ? byBand(sz, 0.5, 0.44, 0.38) : 0;
     const gap = 0.16;
     const panelTop = CONTENT_TOP;
-    const panelBottom = SAFE_BOTTOM - (promptH ? promptH + gap : 0);
+    // reserveBottom leaves room under the panel for a click-revealed answer bar.
+    const reserve = Number(o.reserveBottom) > 0 ? Number(o.reserveBottom) : 0;
+    const panelBottom = SAFE_BOTTOM - (promptH ? promptH + gap : 0) - reserve;
     const panelH = panelBottom - panelTop;
     const usePanel = o.panel !== false;
     if (usePanel) {
@@ -2271,7 +2274,8 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
    *     prompt: "Which word shows Joey is afraid?",
    *   })
    *
-   * opts: { highlights, source, prompt, badgeColor, fontFace, fontSize }
+   * opts: { highlights, source, prompt, badgeColor, fontFace, fontSize,
+   *         reserveBottom (inches kept free under the panel for a reveal bar) }
    */
   function textExtractSlide(pres, badgeText, title, extract, notes, footer, opts) {
     const s = pres.addSlide();
@@ -2284,7 +2288,9 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     const promptH = o.prompt ? byBand(sz, 0.78, 0.7, 0.6) : 0;
     const sourceH = o.source ? 0.3 : 0;
     const gap = 0.16;
-    const panelH = SAFE_BOTTOM - CONTENT_TOP - (promptH ? promptH + gap : 0) - (sourceH ? sourceH + 0.04 : 0);
+    // reserveBottom keeps room under the panel for a click-revealed answer bar.
+    const reserve = Number(o.reserveBottom) > 0 ? Number(o.reserveBottom) : 0;
+    const panelH = SAFE_BOTTOM - CONTENT_TOP - (promptH ? promptH + gap : 0) - (sourceH ? sourceH + 0.04 : 0) - reserve;
     el.addCard(s, 0.5, CONTENT_TOP, 9, panelH, { variant: "outline", tone });
     s.addShape("rect", { x: 0.5, y: CONTENT_TOP, w: 0.09, h: panelH, fill: { color: tone } });
 

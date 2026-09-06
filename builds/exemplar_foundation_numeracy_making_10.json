@@ -1,0 +1,759 @@
+{
+  "lesson": {
+    "subject": "numeracy",
+    "yearLevel": "foundation",
+    "week": 1,
+    "session": 1,
+    "title": "Making 10",
+    "subtitle": "Friends of 10 with ten frames",
+    "meta": "Foundation Numeracy | Number",
+    "footer": "Making 10 | Friends of 10 | Foundation Numeracy",
+    "outputFolder": "Exemplar_Foundation_Numeracy_Making_10",
+    "fileName": "Making 10 - Foundation Numeracy.pptx",
+    "titleVisual": {
+      "type": "tensFrame",
+      "filled": 10
+    }
+  },
+  "materials": {
+    "manipulatives": [
+      "A ten frame for every child",
+      "Tubs of counters (about 12 per child)"
+    ],
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Printed Make 10 Worksheet, one per child"
+    ],
+    "routineIcons": [
+      "Fingers up, voices off",
+      "Write it, chin it, show me",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "A large ten frame drawn on the board to fill live",
+      "Counters ready to place on the board frame"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "label": "Make 10 Worksheet",
+      "description": "You Do. Draw the counters that make each frame 10, then write how many more.",
+      "title": "Make 10",
+      "subtitle": "Draw counters to make 10. Write how many more.",
+      "instructions": "Count the counters. Draw more counters until the frame shows 10. Write the number you drew.",
+      "items": [
+        {
+          "prompt": "How many more make 10?",
+          "visual": {
+            "type": "tensFrame",
+            "filled": 7
+          },
+          "answerVisual": {
+            "type": "tensFrame",
+            "filled": 10
+          },
+          "answer": "3 more. 7 and 3 make 10.",
+          "answerLabel": "more"
+        },
+        {
+          "prompt": "How many more make 10?",
+          "visual": {
+            "type": "tensFrame",
+            "filled": 5
+          },
+          "answerVisual": {
+            "type": "tensFrame",
+            "filled": 10
+          },
+          "answer": "5 more. 5 and 5 make 10.",
+          "answerLabel": "more"
+        },
+        {
+          "prompt": "How many more make 10?",
+          "visual": {
+            "type": "tensFrame",
+            "filled": 9
+          },
+          "answerVisual": {
+            "type": "tensFrame",
+            "filled": 10
+          },
+          "answer": "1 more. 9 and 1 make 10.",
+          "answerLabel": "more"
+        }
+      ],
+      "tip": "Finished? Say each friends-of-10 pair to a partner: 7 and 3, 5 and 5, 9 and 1."
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open Session 1. Say the lesson in one line: today we find the friends of 10 on a ten frame."
+    },
+    {
+      "kind": "resources",
+      "notes": "Prep slide. Print the Make 10 Worksheet, one per child. Ten frames and counters on every table before the lesson. Draw the big ten frame on the board. Nothing is assumed from earlier sessions."
+    },
+    {
+      "kind": "dailyReview",
+      "title": "How many counters?",
+      "visual": {
+        "type": "tensFrame",
+        "filled": 6
+      },
+      "reveal": {
+        "answers": [
+          "6 counters"
+        ]
+      },
+      "notes": {
+        "answer": "six",
+        "beats": [
+          "SAY: Eyes on the frame. Count the counters in your head.",
+          [
+            "ASK: How many counters?",
+            "3 sec. Cue: voices off, fingers up.",
+            "EXPECT: six fingers"
+          ],
+          [
+            "SCAN the back row first.",
+            "80%+ -> reveal, then next slide.",
+            "Less -> tap each counter, count together, re-ask."
+          ],
+          [
+            "REVEAL after fingers are scanned.",
+            "SAY: Six. Tick or fix with me: one, two, three, four, five, six."
+          ]
+        ],
+        "trap": [
+          "counting the empty boxes too.",
+          "Fix: cover the empty row, count the counters, child recounts."
+        ],
+        "prep": "Retrieval of counting to 10 on the frame, the skill today builds on. Under 2 minutes.",
+        "tag": "[Daily Review | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "dailyReview",
+      "title": "How many dots?",
+      "visual": {
+        "type": "dotCard",
+        "count": 4
+      },
+      "reveal": {
+        "answers": [
+          "4 dots"
+        ]
+      },
+      "notes": {
+        "answer": "four",
+        "beats": [
+          "SAY: A quick look. I am only showing it for a moment.",
+          [
+            "ASK: How many dots?",
+            "2 sec. Cue: voices off, fingers up.",
+            "EXPECT: four fingers"
+          ],
+          [
+            "SCAN the whole carpet.",
+            "80%+ -> reveal, move on.",
+            "Less -> point to the pattern in twos, two and two, re-ask."
+          ],
+          "REVEAL after fingers are scanned. SAY: Four. Tick or fix."
+        ],
+        "trap": [
+          "counting one at a time slowly.",
+          "Fix: say the pattern, two and two make four, child says it back."
+        ],
+        "prep": "Subitising to 4 keeps the counting fast so the new idea gets the thinking time. Under 1 minute.",
+        "tag": "[Daily Review | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "dailyReview",
+      "title": "What comes after 7?",
+      "visual": {
+        "type": "numberTrack",
+        "start": 1,
+        "end": 10,
+        "highlight": [
+          7
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "8"
+        ]
+      },
+      "notes": {
+        "answer": "eight",
+        "beats": [
+          "POINT to the coloured 7. SAY: Here is seven on our track.",
+          [
+            "ASK: What number comes after seven?",
+            "3 sec. Cue: Everyone, together, on three.",
+            "EXPECT: eight"
+          ],
+          [
+            "SCAN for the choral answer.",
+            "80%+ -> reveal.",
+            "Less -> count along the track from 1 together, stop at 7, re-ask."
+          ],
+          "REVEAL after the choral answer. SAY: Eight. Point to the 8 on the track."
+        ],
+        "trap": [
+          "saying six, going backwards.",
+          "Fix: finger walks forward along the track, child says seven, eight."
+        ],
+        "prep": "Counting on is the move used later to find how many more. Under 1 minute.",
+        "tag": "[Daily Review | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "fluency",
+      "title": "Read this number",
+      "prompts": [
+        "8"
+      ],
+      "reveal": {
+        "answers": [
+          "eight"
+        ]
+      },
+      "notes": {
+        "answer": "eight",
+        "beats": [
+          "SAY: Fluency time. Read the number the moment it appears.",
+          [
+            "ASK: What number is this?",
+            "2 sec. Cue: Everyone, together, on three.",
+            "EXPECT: eight"
+          ],
+          "REVEAL after the choral read. SAY: Eight. Show me eight fingers."
+        ],
+        "prep": "Numeral reading to 10, brisk. Three numerals in under 2 minutes total.",
+        "tag": "[Fluency | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "fluency",
+      "title": "Read this number",
+      "prompts": [
+        "3"
+      ],
+      "reveal": {
+        "answers": [
+          "three"
+        ]
+      },
+      "notes": {
+        "answer": "three",
+        "beats": [
+          [
+            "ASK: What number is this?",
+            "2 sec. Cue: Everyone, together, on three.",
+            "EXPECT: three"
+          ],
+          "REVEAL after the choral read. SAY: Three. Show me three fingers."
+        ],
+        "prep": "Second numeral. Keep the pace.",
+        "tag": "[Fluency | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "fluency",
+      "title": "Read this number",
+      "prompts": [
+        "10"
+      ],
+      "reveal": {
+        "answers": [
+          "ten"
+        ]
+      },
+      "notes": {
+        "answer": "ten",
+        "beats": [
+          [
+            "ASK: What number is this?",
+            "2 sec. Cue: Everyone, together, on three.",
+            "EXPECT: ten"
+          ],
+          [
+            "REVEAL after the choral read.",
+            "SAY: Ten. All ten fingers up. Ten is our special number today."
+          ]
+        ],
+        "trap": [
+          "reading 10 as one and zero.",
+          "Fix: say ten together, child says it alone."
+        ],
+        "prep": "Ends fluency on the number the lesson is about, bridging into the launch.",
+        "tag": "[Fluency | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Our ten frame friend",
+      "visual": {
+        "type": "tensFrame",
+        "filled": 10
+      },
+      "label": "A full ten frame",
+      "prompt": "How many counters fill the frame?",
+      "notes": {
+        "answer": "ten - the frame is full",
+        "beats": [
+          [
+            "POINT to the full frame.",
+            "SAY: This is our ten frame. Every box has a counter."
+          ],
+          [
+            "ASK: How many counters fill the frame?",
+            "5 sec. Cue: voices off, fingers up.",
+            "EXPECT: ten fingers"
+          ],
+          [
+            "SCAN the carpet.",
+            "80%+ -> next slide.",
+            "Less -> count the top row, five, then the bottom row to ten, re-ask."
+          ],
+          [
+            "SAY: Today some boxes will be empty.",
+            "Our job is to find how many more make 10."
+          ]
+        ],
+        "trap": [
+          "counting the boxes and the counters separately, saying twenty.",
+          "Fix: one finger on each counter, count once, child recounts."
+        ],
+        "prep": "Launch bridges known counting to 10 into the new idea of how many more. Low-coupling, so no earlier session is assumed.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to make 10 using a ten frame.",
+      "successCriteria": [
+        "I can count the counters in a ten frame.",
+        "I can find how many more counters make 10.",
+        "I can say the two numbers that make 10."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today we learn to make 10 with a ten frame."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one everyone can do already.",
+            "By the end you will do all three."
+          ]
+        ],
+        "prep": "SC1 counting is reachable for all; SC2 how many more is the core target and the exit evidence; SC3 saying the pair is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "friends of 10",
+      "meaning": "Two numbers that make 10 together.",
+      "example": "6 and 4 are friends of 10.",
+      "pictogram": "partners",
+      "notes": {
+        "answer": "two numbers that make 10 together",
+        "beats": [
+          "POINT to the word. SAY: Friends of 10. Say it with me.",
+          "SAY: Friends of 10 are two numbers that make 10 together, like 6 and 4.",
+          [
+            "ASK: Say it with me, six and four make ten.",
+            "3 sec. Cue: Everyone, together, on three.",
+            "EXPECT: six and four make ten"
+          ]
+        ],
+        "prep": "The one phrase the lesson uses on every slide. Rehearsed once here, then used, never re-explained.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "How many more make 10?",
+      "visual": {
+        "type": "tensFrame",
+        "filled": 6
+      },
+      "label": "6 counters",
+      "reveal": {
+        "answers": [
+          "4 more. 6 and 4 make 10"
+        ]
+      },
+      "notes": {
+        "answer": "4 more - 6 and 4 make 10",
+        "beats": [
+          [
+            "POINT to the counters.",
+            "SAY: Watch me. First I count the counters. One, two, three, four, five, six."
+          ],
+          [
+            "MODEL the gaps.",
+            "SAY: Now the empty boxes. I touch each one. One, two, three, four."
+          ],
+          "SAY: Four empty boxes, so four more. Six and four make ten.",
+          [
+            "REVEAL after the think-aloud.",
+            "SAY: Say it with me, six and four make ten."
+          ]
+        ],
+        "trap": [
+          "saying the counters, six, as the answer.",
+          "Fix: hand on the empty boxes only, count them, child recounts."
+        ],
+        "stretch": "Cover the frame. If 6 needs 4, what does 4 need?",
+        "help": "Child places real counters in the empty boxes and counts them.",
+        "prep": "First model. The think-aloud is the teaching: count the counters, count the gaps, say the pair. SC2.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "How many more make 10?",
+      "visual": {
+        "type": "tensFrame",
+        "filled": 8
+      },
+      "label": "8 counters",
+      "reveal": {
+        "answers": [
+          "2 more. 8 and 2 make 10"
+        ]
+      },
+      "notes": {
+        "answer": "2 more - 8 and 2 make 10",
+        "beats": [
+          "SAY: Again, watch me. Count the counters first. One to eight.",
+          [
+            "MODEL the gaps.",
+            "SAY: Now the empty boxes. One, two. Two empty boxes."
+          ],
+          "SAY: So I need two more. Eight and two make ten.",
+          [
+            "REVEAL after the think-aloud.",
+            "SAY: Eight and two are friends of 10. Say it with me."
+          ]
+        ],
+        "trap": [
+          "counting past ten.",
+          "Fix: finger on the last counter, then jump to the first empty box, child redoes."
+        ],
+        "stretch": "Which pairs so far? Six and four, eight and two. What is the same?",
+        "help": "Cover the full top row with a card. Count only the bottom row.",
+        "prep": "Second model with fewer gaps so the move looks the same with different numbers.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which frame has 3 empty boxes?",
+      "prompt": "Point to A, B or C",
+      "options": [
+        {
+          "visual": {
+            "type": "tensFrame",
+            "filled": 7
+          }
+        },
+        {
+          "visual": {
+            "type": "tensFrame",
+            "filled": 5
+          }
+        },
+        {
+          "visual": {
+            "type": "tensFrame",
+            "filled": 9
+          }
+        }
+      ],
+      "answer": 0,
+      "notes": {
+        "answer": "A - 7 counters, 3 empty boxes",
+        "beats": [
+          "SAY: Three frames. Look at the empty boxes, not the counters.",
+          [
+            "ASK: Which frame has three empty boxes?",
+            "5 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to A"
+          ],
+          [
+            "SCAN the carpet, back row first.",
+            "80%+ -> reveal, cold call one child: how do you know?",
+            "Less -> count the empty boxes on B together, then re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: A. Seven counters and three empty boxes. Seven and three make ten."
+          ]
+        ],
+        "trap": [
+          "pointing to C because it looks fullest.",
+          "Fix: count the empty boxes on C, one, then on A, child re-points."
+        ],
+        "prep": "The first decision point. Under 80% means the We Do slides start with counters on real frames, not boards.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "How many more make 10?",
+      "visual": {
+        "type": "tensFrame",
+        "filled": 4
+      },
+      "label": "4 counters",
+      "reveal": {
+        "answers": [
+          "6 more. 4 and 6 make 10"
+        ]
+      },
+      "notes": {
+        "answer": "6 more - 4 and 6 make 10",
+        "beats": [
+          "SAY: Your turn. Count the counters first.",
+          [
+            "ASK: How many more make 10?",
+            "8 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 6"
+          ],
+          [
+            "SCAN boards, back row first.",
+            "80%+ -> reveal, cold call one 6: how did you count?",
+            "Less -> count the empty boxes together on the board frame, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Six more. Four and six make ten. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "writing 4, the counters seen.",
+          "Fix: child touches each empty box, counts aloud, rewrites."
+        ],
+        "stretch": "Say the pair both ways: four and six, six and four.",
+        "help": "Child fills the empty boxes with real counters, then counts them.",
+        "prep": "First guided try. Same move as the model with a smaller start number. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "How many more make 10?",
+      "visual": {
+        "type": "tensFrame",
+        "filled": 9
+      },
+      "label": "9 counters",
+      "reveal": {
+        "answers": [
+          "1 more. 9 and 1 make 10"
+        ]
+      },
+      "notes": {
+        "answer": "1 more - 9 and 1 make 10",
+        "beats": [
+          "SAY: A tricky one. Nearly full.",
+          [
+            "ASK: How many more make 10?",
+            "6 sec. Cue: boards up on cue.",
+            "EXPECT: 1"
+          ],
+          [
+            "SCAN boards.",
+            "80%+ -> reveal.",
+            "Less -> point to the one empty box, ask how many boxes, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: One more. Nine and one make ten. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "writing 10 because the frame looks full.",
+          "Fix: finger in the empty box, child says one, rewrites."
+        ],
+        "stretch": "Ask: what if the frame had 10? How many more then? Listen for zero.",
+        "help": "Child covers the counters with a hand and looks only for the gap.",
+        "prep": "Second guided try, near-full frame, catches the looks-full error before independence.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "How many more make 10?",
+      "visual": {
+        "type": "tensFrame",
+        "filled": 5
+      },
+      "label": "5 counters",
+      "reveal": {
+        "answers": [
+          "5 more. 5 and 5 make 10"
+        ]
+      },
+      "notes": {
+        "answer": "5 more - 5 and 5 make 10",
+        "beats": [
+          [
+            "POINT to the top row.",
+            "SAY: The top row is full. That is five."
+          ],
+          [
+            "ASK: How many more make 10?",
+            "6 sec. Cue: boards up on cue.",
+            "EXPECT: 5"
+          ],
+          [
+            "SCAN boards.",
+            "80%+ -> reveal, cold call: do you agree? Add one thing.",
+            "Less -> count the empty bottom row together, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Five more. Five and five make ten."
+          ]
+        ],
+        "trap": [
+          "writing 10, adding the row instead of counting gaps.",
+          "Fix: child touches the five empty boxes, counts, rewrites."
+        ],
+        "stretch": "Say all four pairs. Which one is a double?",
+        "help": "Cover the top row. How many empty boxes on the bottom?",
+        "prep": "Third guided try uses the full-row structure so students see 5 and 5 without counting.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "CFU",
+      "badgeColor": "alert",
+      "title": "How many more make 10?",
+      "visual": {
+        "type": "tensFrame",
+        "filled": 3
+      },
+      "label": "3 counters",
+      "reveal": {
+        "answers": [
+          "7 more. 3 and 7 make 10"
+        ]
+      },
+      "notes": {
+        "answer": "7 more - 3 and 7 make 10",
+        "beats": [
+          "SAY: On your own now. No talking. Show me on your board.",
+          [
+            "ASK: How many more make 10?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 7"
+          ],
+          [
+            "SCAN every board, back row first.",
+            "80%+ -> reveal, then the worksheet.",
+            "Less -> real frames: build 3, fill to 10, count the added, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Seven more. Three and seven make ten. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "losing count across two rows of gaps.",
+          "Fix: count the top row gaps, two, then the bottom, five, child counts on."
+        ],
+        "prep": "The hinge before independence. A child who cannot do this one works with real counters during the You Do.",
+        "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Make 10 on your own",
+      "task": "Draw counters to make 10. Write how many more.",
+      "steps": [
+        "Look at the frame",
+        "Draw the counters",
+        "Write how many more"
+      ],
+      "where": "On your worksheet",
+      "visual": {
+        "type": "tensFrame",
+        "filled": 6
+      },
+      "visualLabel": "This one shows 6. Yours are different.",
+      "notes": {
+        "answer": "worksheet answers: 3, 5, 1",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Three frames on your sheet. Draw the counters that make 10.",
+            "Then write how many you drew."
+          ],
+          "SAY: Look, draw, write. Say the steps with me.",
+          "CIRCULATE with the answer key. Listen for children saying the pair aloud.",
+          "TIME 8 minutes. Early finishers say each pair to a partner."
+        ],
+        "trap": [
+          "drawing counters in every box, including the full ones.",
+          "Fix: child counts the counters already there first, then draws only in empty boxes."
+        ],
+        "stretch": "Cover the frame. Say the friends of 10 pair from the number alone.",
+        "help": "Real counters on a real frame: build it, then draw what was added.",
+        "prep": "Independent application on paper with the same representation as the slides. Worksheet is the collected evidence for SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "visual": {
+        "type": "tensFrame",
+        "filled": 2
+      },
+      "questions": [
+        "Show me on your fingers: how many more make 10?"
+      ],
+      "notes": {
+        "answer": "8 more - 2 and 8 make 10",
+        "beats": [
+          "SAY: Last one. Eyes on the frame, voices off.",
+          [
+            "ASK: How many more make 10?",
+            "8 sec. Cue: voices off, fingers up.",
+            "EXPECT: eight fingers"
+          ],
+          "RECORD each child who shows 2 or 10. They are tomorrow's small group."
+        ],
+        "trap": [
+          "showing 2 fingers, the counters seen.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2. The record from the scan, plus the worksheet, drives tomorrow's grouping.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Turn and tell your partner: how do we find how many more make 10?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": "Read the three I can lines together. Thumbs on cue, then the turn and tell. Listen for count the empty boxes."
+    }
+  ]
+}

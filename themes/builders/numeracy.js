@@ -495,13 +495,19 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S, defaults) {
       return s;
     }
 
-    // Side-by-side cards. Each card is dominated by the prompt itself.
+    // Side-by-side cards. Each card is dominated by the prompt itself, and
+    // the cards stop short of the bottom so a click-revealed answer bar has
+    // its full height (megaprompt 23, 68d).
     const startY = CONTENT_TOP;
-    const cardH = SAFE_BOTTOM - startY - byBand(sz, 0.7, 0.6, 0.5);
+    const cardH = SAFE_BOTTOM - startY - byBand(sz, 1.15, 1.05, 0.9);
     const cardGap = 0.18;
     const totalW = 9;
     const cardW = (totalW - cardGap * (cleaned.length - 1)) / cleaned.length;
-    const promptFontSize = byBand(sz, 60, 52, 42);
+    // A lone numeral or short fact is the whole slide: set it huge.
+    const longest = cleaned.reduce((m, q) => Math.max(m, q.length), 0);
+    const promptFontSize = cleaned.length === 1 && longest <= 3
+      ? byBand(sz, 150, 130, 110)
+      : (cleaned.length === 1 && longest <= 8 ? byBand(sz, 96, 84, 72) : byBand(sz, 60, 52, 42));
 
     cleaned.forEach((q, i) => {
       const x = 0.5 + i * (cardW + cardGap);

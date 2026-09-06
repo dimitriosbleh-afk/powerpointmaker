@@ -1,0 +1,437 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade2",
+    "week": 3,
+    "session": 1,
+    "title": "Feeling Clues",
+    "subtitle": "Finding how a character feels from the words",
+    "meta": "Year 2 Literacy | Reading",
+    "footer": "Feeling Clues | Year 2 Literacy | Reading",
+    "outputFolder": "Exemplar_Year2_Literacy_Feeling_Clues",
+    "fileName": "Feeling Clues - Year 2 Literacy.pptx"
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Printed Feeling Clues Finder, one per child"
+    ],
+    "routineIcons": [
+      "Turn and tell",
+      "Write it, chin it, show me",
+      "Point to A, B or C"
+    ],
+    "boardSetup": [
+      "A two-column chart on the board: Clue | Feeling",
+      "Room to write the sentence stem: I think ... feels ... because ..."
+    ]
+  },
+  "resources": [
+    {
+      "kind": "page",
+      "label": "Feeling Clues Finder",
+      "description": "You Do. A short story with space to underline two clues, a clue chart, and the sentence stem.",
+      "title": "Feeling Clues Finder",
+      "subtitle": "Read. Find the clues. Name the feeling.",
+      "blocks": [
+        {
+          "heading": "Read the story"
+        },
+        {
+          "text": "Zara waited at the school gate. Everyone else had gone home. She kicked a stone, then looked up the empty road again. Her lip began to wobble. Then a car turned the corner and Zara jumped up and waved with both arms."
+        },
+        {
+          "steps": [
+            "Read the story twice.",
+            "Underline two clues that show how Zara feels.",
+            "Write the feeling and the clue in the chart."
+          ]
+        },
+        {
+          "organiser": {
+            "left": "Clue (the words)",
+            "right": "Feeling",
+            "rows": 2
+          }
+        },
+        {
+          "heading": "Write it"
+        },
+        {
+          "text": "I think Zara feels ____________ because ____________."
+        },
+        {
+          "lines": 3
+        },
+        {
+          "tip": "Stretch: Zara has two feelings in this story. Find the clue for each one."
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the lesson. One line: today we become feeling detectives and find the clues authors leave in the words."
+    },
+    {
+      "kind": "resources",
+      "notes": "Prep slide. Print the Feeling Clues Finder, one per child. Whiteboards ready for the checks. Draw the Clue | Feeling chart on the board before the lesson. The stories are original, written for this lesson, so nothing is assumed from earlier reading."
+    },
+    {
+      "kind": "launch",
+      "title": "How do you know how someone feels?",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "happy",
+          "sad",
+          "worried",
+          "angry"
+        ]
+      },
+      "prompt": "Turn and tell: how can you tell without being told?",
+      "notes": {
+        "answer": "open - faces, bodies, what people do and say",
+        "beats": [
+          [
+            "POINT to the four faces.",
+            "SAY: Four feelings. You can read a face in a second."
+          ],
+          [
+            "ASK: How can you tell how someone feels without being told?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: their face, what they do, their voice"
+          ],
+          [
+            "SCAN the room. Listen for what they do.",
+            "80%+ naming an action -> next slide.",
+            "Less -> act a worried face, ask what gave it away, re-ask."
+          ],
+          "SAY: Authors do the same with words. Today we find the clues in the words."
+        ],
+        "trap": [
+          "saying only the feeling word, not how they know.",
+          "Fix: ask what the body did, child names one clue."
+        ],
+        "prep": "Launch bridges reading faces, which every child can do, into reading words. Low-coupling, under 4 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to find clues in the words that show how a character feels.",
+      "successCriteria": [
+        "I can name a feeling.",
+        "I can find a clue in the words that shows the feeling.",
+        "I can say: I think ... feels ... because ..."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today we find clues in the words that show how a character feels."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one you can do now.",
+            "The third one is our big goal today. We will say it many times."
+          ]
+        ],
+        "prep": "SC1 naming a feeling is reachable for all; SC2 finding the clue is the core target and the exit evidence; SC3 the full sentence stem is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "clue",
+      "meaning": "A small hint that helps you work something out.",
+      "example": "Her hands shook. That is a clue she was scared.",
+      "pictogram": "magnifier",
+      "notes": {
+        "answer": "a small hint that helps you work something out",
+        "beats": [
+          "POINT to the word. SAY: Clue. Say it with me. Clue.",
+          [
+            "SAY: A clue is a small hint that helps you work something out.",
+            "Detectives use clues. Readers use clues too."
+          ],
+          [
+            "ASK: Her hands shook. What is the clue telling us?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: she was scared, or nervous"
+          ]
+        ],
+        "trap": [
+          "thinking a clue must be the feeling word itself.",
+          "Fix: cover the word scared, ask what the hands did, child says the clue."
+        ],
+        "prep": "The one word the lesson turns on. Rehearsed once here with a body clue, then used on every slide.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "I Do",
+      "title": "Watch me find the clues",
+      "extract": "Mia stood at the edge of the pool. Her knees wobbled and she held the rail with both hands. She looked down at the water and took a big breath.",
+      "highlights": [
+        "knees wobbled",
+        "held the rail with both hands",
+        "took a big breath"
+      ],
+      "source": "Written for this lesson",
+      "notes": {
+        "answer": "nervous - knees wobbled, held the rail, big breath",
+        "beats": [
+          [
+            "READ the passage aloud once.",
+            "SAY: Watch me hunt for clues about how Mia feels."
+          ],
+          [
+            "POINT to knees wobbled.",
+            "SAY: When my knees wobble, I feel nervous. That is a clue."
+          ],
+          [
+            "POINT to held the rail with both hands.",
+            "SAY: Holding on tight. Another clue."
+          ],
+          [
+            "POINT to took a big breath.",
+            "SAY: So I think Mia feels nervous because her knees wobbled."
+          ]
+        ],
+        "trap": [
+          "calling the pool the clue.",
+          "Fix: ask what Mia's body did, child points to a body clue."
+        ],
+        "stretch": "Scared or excited? Find the clue that decides it.",
+        "help": "Cover all but the three highlighted phrases. Read only those.",
+        "prep": "The model: read, find a body clue, say the feeling with because. The sentence stem is said aloud here for the first time.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "How does Mia feel?",
+      "prompt": "Point to A, B or C",
+      "options": [
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "happy"
+          },
+          "text": "happy"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "worried"
+          },
+          "text": "nervous"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "angry"
+          },
+          "text": "angry"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - nervous. Clue: knees wobbled, held the rail",
+        "beats": [
+          "SAY: Three feelings. Think about the clues, not the picture.",
+          [
+            "ASK: How does Mia feel?",
+            "5 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the carpet, back row first.",
+            "80%+ -> reveal, cold call one child: which clue told you?",
+            "Less -> re-read knees wobbled, ask how their knees feel when scared, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: Nervous. Her wobbly knees told us. Say it: nervous because her knees wobbled."
+          ]
+        ],
+        "trap": [
+          "pointing to happy because it is a pool.",
+          "Fix: cover pool, read the three clues, child re-points."
+        ],
+        "prep": "First decision point. Under 80% means the We Do starts with acting the clues out before reading the next text.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "We Do",
+      "title": "Find the clue together",
+      "extract": "Sam opened the box. He jumped up and clapped his hands. A puppy! he shouted, and he ran to hug his mum.",
+      "source": "Written for this lesson",
+      "reveal": {
+        "answers": [
+          "jumped up and clapped",
+          "shouted",
+          "ran to hug his mum"
+        ]
+      },
+      "notes": {
+        "answer": "excited - jumped, clapped, shouted, hugged",
+        "beats": [
+          [
+            "CHORAL READ the passage, everyone, together, on three.",
+            "SAY: Your hunt. Find one clue about Sam."
+          ],
+          [
+            "ASK: Which words are a clue?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: jumped up, clapped, shouted, ran. Any one."
+          ],
+          [
+            "SCAN boards, back row first.",
+            "80%+ -> reveal, cold call: what feeling is that?",
+            "Less -> act out jumped and clapped, ask how that feels, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Three clues. Tick yours."
+          ]
+        ],
+        "trap": [
+          "writing puppy as the clue.",
+          "Fix: ask what Sam's body did, child rewrites."
+        ],
+        "stretch": "Find a clue in what Sam said.",
+        "help": "Give jumped up. Ask for one more like it.",
+        "prep": "Guided practice on a new text with the same move: body clue first, then the feeling with because. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "CFU",
+      "badgeColor": "alert",
+      "title": "Which feeling? Find the clue.",
+      "extract": "Ali looked into his empty lunchbox. His tummy rumbled and his shoulders dropped.",
+      "source": "Written for this lesson",
+      "reveal": {
+        "answers": [
+          "sad or hungry - tummy rumbled, shoulders dropped"
+        ]
+      },
+      "notes": {
+        "answer": "sad, hungry or disappointed - clue: tummy rumbled, shoulders dropped",
+        "beats": [
+          "SAY: On your own. No talking. Read it twice.",
+          [
+            "ASK: How does Ali feel, and which words told you?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: sad, because his shoulders dropped. ACCEPT: hungry, disappointed."
+          ],
+          [
+            "SCAN every board, back row first.",
+            "80%+ -> reveal, then the worksheet.",
+            "Less -> drop your own shoulders, ask what that shows, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Sad, or hungry. His shoulders dropped. Tick or fix your feeling and your clue."
+          ]
+        ],
+        "trap": [
+          "a feeling with no clue written.",
+          "Fix: ask which words told you, child adds the clue."
+        ],
+        "prep": "The hinge before independence. A child with no clue on the board works with the teacher on the first clue of the worksheet story.",
+        "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Find the clues on your own",
+      "task": "Read the story on your sheet. Underline two clues. Write the feeling.",
+      "steps": [
+        "Read the story twice",
+        "Underline two clues",
+        "Write: I think ... feels ... because ..."
+      ],
+      "where": "On your Feeling Clues Finder",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "happy",
+          "sad",
+          "worried",
+          "angry"
+        ]
+      },
+      "visualLabel": "Feeling words to choose from",
+      "frame": "I think ___ feels ___ because ___.",
+      "notes": {
+        "answer": "Zara: worried, then excited (lip wobbled; jumped up and waved)",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: A new story about Zara. Read it twice, underline two clues, write the feeling."
+          ],
+          "SAY: Read, underline, write. Say the steps with me.",
+          "CIRCULATE. Listen for children reading the clue aloud before they write.",
+          "TIME 10 minutes. Early finishers find the second feeling in the story."
+        ],
+        "trap": [
+          "underlining the whole story.",
+          "Fix: ask which words show a body or voice, child underlines only those."
+        ],
+        "stretch": "Zara has two feelings. Find the clue for each.",
+        "help": "Read the story aloud. Point to lip began to wobble. Ask what it shows.",
+        "prep": "Independent application on a new text with the same stem. The sheet is the collected evidence for SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "happy",
+          "sad",
+          "worried",
+          "angry"
+        ]
+      },
+      "questions": [
+        "Point to how Mia felt at the pool. Tell your partner the clue."
+      ],
+      "notes": {
+        "answer": "worried or nervous - knees wobbled, held the rail",
+        "beats": [
+          "SAY: Last one. Think back to Mia at the pool.",
+          [
+            "ASK: How did Mia feel? Point, then tell your partner the clue.",
+            "10 sec. Cue: voices off, everyone points, then turn and tell.",
+            "EXPECT: pointing to worried, saying knees wobbled or held the rail"
+          ],
+          "RECORD who points to happy or gives no clue. Tomorrow's small group."
+        ],
+        "trap": [
+          "pointing to happy because of the pool.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 from the pointing and the partner talk, plus the sheet, drives tomorrow's grouping.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner one clue word from today and the feeling it showed.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": "Read the three I can lines together. Thumbs on cue, then the turn and tell. Listen for a body clue plus a feeling."
+    }
+  ]
+}

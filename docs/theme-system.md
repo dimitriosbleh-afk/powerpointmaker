@@ -1,5 +1,7 @@
 # Theme System Reference
 
+> Lessons are authored as specs (`builds/<name>.json`, see `docs/lesson-spec.md`); the pipeline in `themes/lesson/` calls the builders below. This document is the reference for the builders themselves and for the rare custom slide.
+
 The theme system uses a **factory pattern** with 150 pre-built colour palettes across 5 subjects, 5 year levels, and 6 weekly variants. Build scripts import a single factory function — all builders, element helpers, and palette colours are returned as a bound theme object.
 
 ## Factory API

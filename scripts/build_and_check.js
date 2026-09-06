@@ -11,6 +11,7 @@
  *   6. Lesson structure (resources placement, opening order, We Do vs You Do)
  *
  * Usage:
+ *   node scripts/build_and_check.js builds/exemplar_foundation_numeracy_making_10.json
  *   node scripts/build_and_check.js builds/build_foo_lesson1.js
  *
  * Exit codes:
@@ -82,7 +83,10 @@ async function main() {
   /* ── Gate 0: Build ─────────────────────────────────────────────────────── */
 
   console.log("\n── Build ─────────────────────────────────────────────");
-  const build = spawnSync("node", [script], {
+  // A .json spec builds through the lesson pipeline (docs/lesson-spec.md);
+  // a .js script builds itself. Both must print "PPTX written to ...".
+  const buildArgs = script.endsWith(".json") ? [path.join(__dirname, "build_lesson.js"), script] : [script];
+  const build = spawnSync("node", buildArgs, {
     encoding: "utf8",
     stdio: ["inherit", "pipe", "pipe"],
     env: PYTHON_ENV,

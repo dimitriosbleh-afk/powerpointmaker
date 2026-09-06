@@ -270,7 +270,8 @@ function createVisualSpec(C, FONT_H, FONT_B, el, S, deps) {
         return box;
       }
       case "pictogram": {
-        const labelH = s.label ? byBand(sz, 0.5, 0.45, 0.4) : 0;
+        const labelFont = s.labelFontSize || byBand(sz, 22, 19, 15);
+        const labelH = s.label ? Math.max(0.3, labelFont * 0.022 + 0.12) + 0.06 : 0;
         const size = Math.min(f.w, f.h - labelH, s.maxSize || byBand(sz, 3.0, 2.7, 2.4));
         const box = centreBox(f, size, size + labelH);
         picto.addPictogram(slide, s.name, box.x, box.y, size, {
@@ -281,7 +282,9 @@ function createVisualSpec(C, FONT_H, FONT_B, el, S, deps) {
       }
       case "pictograms": {
         const items = Array.isArray(s.items) ? s.items : [];
-        const labelH = byBand(sz, 0.5, 0.45, 0.4);
+        const labelFont = s.labelFontSize || byBand(sz, 22, 19, 15);
+        // Same box the row draws for its labels, so the frame really contains them.
+        const labelH = s.labels === false ? 0 : Math.max(0.3, labelFont * 0.022 + 0.12) + 0.06;
         const gap = s.gap != null ? s.gap : 0.35;
         const maxSize = Math.min(f.h - labelH, s.size || byBand(sz, 2.0, 1.8, 1.5));
         const size = Math.min(maxSize, (f.w - gap * (items.length - 1)) / Math.max(items.length, 1));

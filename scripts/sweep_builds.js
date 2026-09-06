@@ -35,7 +35,7 @@ function parseArgs(argv) {
 
 function listBuildScripts(filter) {
   return fs.readdirSync(path.join(ROOT, "builds"))
-    .filter((n) => /^build_.*\.js$/.test(n))
+    .filter((n) => /^build_.*\.js$/.test(n) || /^exemplar_.*\.json$/.test(n) || /^lesson_.*\.json$/.test(n))
     .filter((n) => !filter || n.includes(filter))
     .sort()
     .map((n) => path.join("builds", n));
