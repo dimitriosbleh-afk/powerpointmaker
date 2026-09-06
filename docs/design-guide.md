@@ -87,3 +87,5 @@ Choose colours that match your topic — don't default to generic blue. Use thes
 - **Don't forget text box padding** — when aligning lines or shapes with text edges, set `margin: 0` on the text box or offset the shape to account for padding
 - **Don't use low-contrast elements** — icons AND text need strong contrast against the background. **Never use the same palette colour for both text and its background fill** (e.g., gold text on gold pill, olive text on olive banner). Use white text on coloured fills, dark text on light fills.
 - **NEVER use accent lines under titles** — these are a hallmark of AI-generated slides; use whitespace or background colour instead
+- **NEVER scatter semi-transparent circles or blobs on title slides** — the other hallmark of generated decks. One purposeful motif (a subject glyph, the lesson's own visual) repeated on the opening and closing slides is what reads as designed
+- **Prefer soft tints for large fills** — a hero panel at ~12% of the accent colour with a hairline border, and the strong colour reserved for small signals (badges, ticks, reveal bars)

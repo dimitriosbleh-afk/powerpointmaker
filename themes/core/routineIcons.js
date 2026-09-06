@@ -20,6 +20,23 @@ const {
 } = require("react-icons/md");
 
 const { iconToBase64Png } = require("./icons");
+const React = require("react");
+const ReactDOMServer = require("react-dom/server");
+
+const routinePngCache = new Map();
+function renderRoutineIconSync(Icon, colorHex) {
+  const color = String(colorHex || "FFFFFF").replace("#", "");
+  const key = `${Icon.name || Icon.displayName || "icon"}|${color}`;
+  if (routinePngCache.has(key)) return routinePngCache.get(key);
+  const { Resvg } = require("@resvg/resvg-js");
+  const svg = ReactDOMServer.renderToStaticMarkup(
+    React.createElement(Icon, { color: `#${color}`, size: "256" })
+  );
+  const png = new Resvg(svg, { fitTo: { mode: "width", value: 256 }, font: { loadSystemFonts: false } }).render().asPng();
+  const data = "image/png;base64," + Buffer.from(png).toString("base64");
+  routinePngCache.set(key, data);
+  return data;
+}
 
 /**
  * Megaprompt §18a classroom routine icon set.
@@ -92,9 +109,17 @@ function getRoutineIcon(key) {
  * @param {string} FONT_B  Body font name
  * @param {object} el      Element helpers from createElements (addIconCircle)
  */
-function createRoutineHelpers(C, FONT_B, el) {
+function createRoutineHelpers(C, FONT_B, el, picto) {
 
-  async function addRoutineBadge(slide, routineKey, x, y, opts) {
+  /**
+   * Routine badge: icon in a coloured circle with a small label.
+   *
+   * Synchronous. Historically this was async (sharp), which meant a build
+   * script that forgot `await` shipped a slide with no icon and no warning.
+   * It now renders through the pictogram renderer when available and returns
+   * immediately; `await`-ing it is harmless.
+   */
+  function addRoutineBadge(slide, routineKey, x, y, opts) {
     const o = opts || {};
     const Icon = getRoutineIcon(routineKey);
     if (!Icon) return;
@@ -105,7 +130,7 @@ function createRoutineHelpers(C, FONT_B, el) {
     const showLabel = o.showLabel !== false;
     const label = o.label != null ? o.label : ROUTINE_LABELS[routineKey];
 
-    const iconData = await iconToBase64Png(Icon, iconColor, 256);
+    const iconData = renderRoutineIconSync(Icon, iconColor);
     el.addIconCircle(slide, iconData, x + size / 2, y + size / 2, size / 2, circleColor);
 
     if (showLabel && label) {

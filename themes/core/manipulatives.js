@@ -18,7 +18,7 @@ const { byBand, DEFAULT_SIZES } = require("./gradeBand");
  * @param {string} FONT_B  Body font name (used for number-track digits)
  * @param {object} [S]     Grade-band size table (from gradeBand) so labels
  *                         and chips scale with the year level
- * @returns {object} factory bag of manipulative helpers
+ * @returns {object} factory bag of manipulative helpers (incl. addNumberLine, shared by every subject)
  */
 function createManipulatives(C, FONT_B, S) {
   const sz = S || DEFAULT_SIZES;
@@ -282,8 +282,10 @@ function createManipulatives(C, FONT_B, S) {
       }
 
       if (showLabels) {
+        // An unshaded strip is a whole cut into parts, so it is labelled as
+        // the whole; a shaded strip is labelled as the fraction shown.
         const labelText = (item && item.label) || (
-          denom === 1 ? "1 whole" : `${shaded}/${denom}`
+          denom === 1 || shaded === 0 ? "1 whole" : `${shaded}/${denom}`
         );
         slide.addText(String(labelText), {
           x: x + stripW + 0.06, y: stripY,
@@ -413,6 +415,87 @@ function createManipulatives(C, FONT_B, S) {
     }
 
     validateBounds("addBaseTenBlocks", x, y, cursorX - x, flatSize);
+  }
+
+  /* ------------------------------------------------------------------ */
+  /*  addNumberLine                                                      */
+  /* ------------------------------------------------------------------ */
+
+  /**
+   * Number line with adaptive label sizing. Auto-adjusts font size and
+   * label width when interval width drops below 0.5" to prevent overlap.
+   * Marked positions use ALERT-coloured dots.
+   *
+   * @param {object}   slide            PptxGenJS slide object
+   * @param {number}   x                Left edge x (inches)
+   * @param {number}   y                Baseline y (inches)
+   * @param {number}   w                Total line width (inches)
+   * @param {string[]} labels           Tick labels (use "" for unlabelled ticks)
+   * @param {number[]} markedPositions  Indices of labels to mark with dots
+   * @param {object}   opts             Options: tickH, labelFontSize, markColor, markSize
+   * @returns {object}                  Geometry: { x, y, w, n, intervalW, tickH, labelW, labelFontSize }
+   */
+  function addNumberLine(slide, x, y, w, labels, markedPositions, opts) {
+    const o = opts || {};
+    const tickH = o.tickH || 0.12;
+    const n = labels.length - 1;
+
+    if (n <= 0) {
+      console.warn("[addNumberLine] need at least 2 labels — skipping");
+      return { x, y, w, n: 0, intervalW: 0, tickH, labelW: 0, labelFontSize: 12 };
+    }
+
+    const intervalW = w / n;
+    const baseLabelW = byBand(sz, 1.0, 0.9, 0.7);
+    const labelW = Math.min(baseLabelW, intervalW * 1.4);
+    const maxLabelLen = Math.max(...labels.filter(l => l !== "").map(l => l.length), 1);
+    const baseFontSize = o.labelFontSize || byBand(sz, 18, 15, 12);
+    let labelFontSize = baseFontSize;
+    if (intervalW < 0.5 && maxLabelLen > 3) {
+      labelFontSize = Math.max(8, Math.round(baseFontSize * (intervalW / 0.5)));
+    }
+
+    validateBounds("addNumberLine", x - 0.15, y - tickH, w + 0.3, tickH + 0.4);
+
+    // Main line with proper arrowheads (hand-drawn diagonal stubs render as
+    // broken slashes in PowerPoint and LibreOffice).
+    slide.addShape("line", {
+      x: x - 0.12, y, w: w + 0.24, h: 0,
+      line: { color: o.lineColor || C.CHARCOAL, width: o.lineWidth || byBand(sz, 3.2, 2.8, 2.5), beginArrowType: "arrow", endArrowType: "arrow" },
+    });
+
+    // Ticks and labels
+    labels.forEach((lbl, i) => {
+      const tx = x + i * intervalW;
+
+      // Tick mark
+      slide.addShape("line", { x: tx, y: y - tickH / 2, w: 0, h: tickH, line: { color: C.CHARCOAL, width: 2 } });
+
+      // Label
+      if (lbl !== "") {
+        slide.addText(lbl, {
+          x: tx - labelW / 2, y: y + tickH / 2 + 0.04, w: labelW, h: Math.max(0.28, labelFontSize * 0.0165),
+          fontSize: labelFontSize, fontFace: FONT_B, color: C.CHARCOAL,
+          align: "center", margin: 0,
+        });
+      }
+    });
+
+    // Marked position dots - sized by band so a Foundation mark reads from
+    // the back of the room.
+    if (markedPositions) {
+      const dot = o.markSize || byBand(sz, 0.26, 0.22, 0.16);
+      const markColor = o.markColor || C.ALERT;
+      markedPositions.forEach((idx) => {
+        const mx = x + idx * intervalW;
+        slide.addShape("roundRect", {
+          x: mx - dot / 2, y: y - dot / 2, w: dot, h: dot, rectRadius: dot / 2,
+          fill: { color: markColor },
+        });
+      });
+    }
+
+    return { x, y, w, n, intervalW, tickH, labelW, labelFontSize };
   }
 
   /* ------------------------------------------------------------------ */
@@ -587,6 +670,7 @@ function createManipulatives(C, FONT_B, S) {
     addFractionStripSet,
     addArray,
     addBaseTenBlocks,
+    addNumberLine,
     addChipRow,
     addGroupedCounters,
     addPartPartWholeMat,

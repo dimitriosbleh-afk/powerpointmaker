@@ -131,7 +131,8 @@ async function main() {
         console.log("");
       });
 
-    fs.writeFileSync(
+    fs.mkdirSync(path.join(ROOT, "tmp"), { recursive: true });
+  fs.writeFileSync(
       path.join(ROOT, "tmp", "sweep_failures.txt"),
       failures.map((f) => `### ${f.script}\nGATES: ${f.gates.join(" | ")}\n${f.detail.join("\n")}\n`).join("\n"),
       "utf8"

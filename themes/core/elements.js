@@ -3,6 +3,7 @@
 const { SLIDE_W, SAFE_BOTTOM, validateBounds } = require("./layout");
 const { validateContrast } = require("./contrast");
 const { DEFAULT_SIZES, byBand } = require("./gradeBand");
+const { mixHex } = require("./color");
 
 /**
  * Create element helpers bound to a specific palette and grade band.
@@ -23,10 +24,22 @@ function createElements(C, FONT_H, FONT_B, cardShadowFn, S) {
 
   function addTopBar(slide, color) {
     slide.background = { color: C.BG_LIGHT };
+    // Thick enough to read as a deliberate colour signal for the stage, not
+    // a hairline artefact.
     slide.addShape("rect", {
-      x: 0, y: 0, w: SLIDE_W, h: 0.06,
+      x: 0, y: 0, w: SLIDE_W, h: 0.09,
       fill: { color: color || C.PRIMARY },
     });
+  }
+
+  /** Soft wash of a colour toward the slide background (for large fills). */
+  function softOf(color, amount) {
+    return mixHex(color || C.PRIMARY, C.BG_LIGHT, amount != null ? amount : 0.88);
+  }
+
+  /** Hairline border tone of a colour. */
+  function lineOf(color, amount) {
+    return mixHex(color || C.PRIMARY, C.BG_LIGHT, amount != null ? amount : 0.6);
   }
 
   function addBadge(slide, text, opts) {
@@ -37,8 +50,9 @@ function createElements(C, FONT_H, FONT_B, cardShadowFn, S) {
     const w     = o.w || (byBand(sz, 2.1, 1.95, 1.8));
     const h     = o.h || bandH;
     const color = o.color || C.PRIMARY;
+    // Pill, not lozenge: reads friendlier and matches the chips elsewhere.
     slide.addShape("roundRect", {
-      x, y, w, h, rectRadius: 0.08,
+      x, y, w, h, rectRadius: h / 2,
       fill: { color },
     });
     slide.addText(text, {
@@ -46,6 +60,7 @@ function createElements(C, FONT_H, FONT_B, cardShadowFn, S) {
       fontSize: o.fontSize || sz.badge,
       fontFace: FONT_B, color: C.WHITE,
       align: "center", valign: "middle", bold: true, margin: 0,
+      fit: "shrink", shrinkText: true,
     });
   }
 
@@ -70,14 +85,40 @@ function createElements(C, FONT_H, FONT_B, cardShadowFn, S) {
     });
   }
 
+  /**
+   * Card surface. Three variants:
+   *   "white"   (default) white fill, soft shadow, optional left strip
+   *   "tint"    soft wash of `tone` (or the strip colour), hairline border,
+   *             no shadow - the calm hero surface for the main task, question
+   *             or model (megaprompt 18a: soften large fills)
+   *   "outline" white fill, hairline border in `tone`, no shadow - for option
+   *             cards and reading panels
+   * Pass `strip` to add the coloured left edge on any variant.
+   */
   function addCard(slide, x, y, w, h, opts) {
     const o = opts || {};
     validateBounds("addCard", x, y, w, h);
-    slide.addShape("roundRect", {
-      x, y, w, h, rectRadius: 0.1,
-      fill: { color: o.fill || C.WHITE },
-      shadow: o.shadow || cardShadowFn(),
-    });
+    const variant = o.variant || "white";
+    const tone = o.tone || o.strip || C.PRIMARY;
+    if (variant === "tint") {
+      slide.addShape("roundRect", {
+        x, y, w, h, rectRadius: 0.12,
+        fill: { color: o.fill || softOf(tone) },
+        line: { color: o.line || lineOf(tone), width: 0.75 },
+      });
+    } else if (variant === "outline") {
+      slide.addShape("roundRect", {
+        x, y, w, h, rectRadius: 0.12,
+        fill: { color: o.fill || C.WHITE },
+        line: { color: o.line || lineOf(tone), width: 1.0 },
+      });
+    } else {
+      slide.addShape("roundRect", {
+        x, y, w, h, rectRadius: 0.1,
+        fill: { color: o.fill || C.WHITE },
+        shadow: o.shadow || cardShadowFn(),
+      });
+    }
     if (o.strip) {
       slide.addShape("rect", { x, y, w: 0.07, h, fill: { color: o.strip } });
     }
@@ -117,6 +158,8 @@ function createElements(C, FONT_H, FONT_B, cardShadowFn, S) {
       strip: o.strip,
       fill: o.fill,
       shadow: o.shadow,
+      variant: o.variant,
+      tone: o.tone,
     });
 
     const textRuns = [];
@@ -220,7 +263,7 @@ function createElements(C, FONT_H, FONT_B, cardShadowFn, S) {
     });
   }
 
-  return { addTopBar, addBadge, addTitle, addCard, addInstructionCard, addFooter, addIconCircle, addTextOnShape };
+  return { addTopBar, addBadge, addTitle, addCard, addInstructionCard, addFooter, addIconCircle, addTextOnShape, softOf, lineOf };
 }
 
 module.exports = { createElements };

@@ -15,7 +15,9 @@ const {
   estimateBulletHeight,
   fitBulletFontSize,
   fitTextFontSize,
+  estimateTextHeight,
 } = require("../core/bulletFit");
+const { SUBJECT_PICTOGRAMS } = require("../core/pictograms");
 
 /**
  * Create the 7 universal slide builders bound to a specific palette and
@@ -36,6 +38,32 @@ const SC_TIER_LABELS = ["Everyone", "Most", "Stretch"];
 function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
   const sz = S || DEFAULT_SIZES;
   const builderDefaults = defaults || {};
+  // Pictograms and the declarative visual layer are injected by the factory.
+  // Builders degrade gracefully when a caller constructs them without.
+  const picto = builderDefaults.picto || null;
+  const visual = builderDefaults.visual || null;
+  const subjectKey = builderDefaults.subject || "";
+  const subjectGlyph = SUBJECT_PICTOGRAMS[subjectKey] || "star";
+  const isSpec = (value) => Boolean(visual && visual.isVisualSpec && visual.isVisualSpec(value));
+
+  /**
+   * Accept either a drawRight callback or a visual spec for the right column.
+   * A spec is fitted into the column frame by drawVisual, so a build script
+   * can write `{ type: "tensFrame", filled: 7 }` instead of coordinates.
+   */
+  function resolveDrawRight(drawRight, frame) {
+    if (typeof drawRight === "function") return drawRight;
+    if (isSpec(drawRight)) {
+      return (slide, guide) => {
+        const f = frame || {
+          x: guide.rightX, y: guide.panelTop + 0.05,
+          w: guide.rightW, h: guide.safeBottom - guide.panelTop - 0.1,
+        };
+        visual.drawVisual(slide, drawRight, f);
+      };
+    }
+    return null;
+  }
 
   const DENSITY = byBand(sz,
     { roomyBulletCount: 3, roomyTotalLines: 5, narrowChars: 28, wideChars: 42 },
@@ -744,47 +772,80 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
 
   /**
    * titleSlide - Dark full-bleed title for lesson start.
+   *
+   * Composition: left accent bar, title / subtitle / meta in the left 60%,
+   * and on the right a single calm motif: the subject glyph in a soft
+   * circle, or the lesson's own visual anchor when `opts.visual` is a
+   * visual spec (e.g. { type: "tensFrame", filled: 10 }). No decorative
+   * blobs, no gradients: one motif, repeated on the closing slide, is what
+   * makes a deck read as designed rather than generated.
+   *
+   *   titleSlide(pres, title, subtitle, meta, notes, { visual, glyph })
    */
-  function titleSlide(pres, title, subtitle, meta, notes) {
+  function titleSlide(pres, title, subtitle, meta, notes, opts) {
+    const o = opts || {};
     const s = pres.addSlide();
     s.background = { color: C.BG_DARK };
 
     // Vertical accent bar
     s.addShape("rect", { x: 0, y: 0, w: 0.12, h: SLIDE_H, fill: { color: C.ACCENT } });
 
-    // Decorative shapes (large, semi-transparent)
-    s.addShape("roundRect", {
-      x: 7.5, y: -0.6, w: 3.5, h: 3.5, rectRadius: 1.75,
-      fill: { color: C.DECOR_1, transparency: 75 },
-    });
-    s.addShape("roundRect", {
-      x: 8.2, y: 3.8, w: 2.5, h: 2.5, rectRadius: 1.25,
-      fill: { color: C.DECOR_2, transparency: 80 },
-    });
+    // Right-hand motif panel
+    const panel = { x: 6.35, y: 0.95, w: 3.15, h: 3.7 };
+    const hasVisual = isSpec(o.visual);
+    if (hasVisual) {
+      s.addShape("roundRect", {
+        x: panel.x, y: panel.y, w: panel.w, h: panel.h, rectRadius: 0.16,
+        fill: { color: C.WHITE },
+      });
+      visual.drawVisual(s, o.visual, { x: panel.x + 0.22, y: panel.y + 0.22, w: panel.w - 0.44, h: panel.h - 0.44 });
+    } else if (picto && o.glyph !== false) {
+      const d = 2.5;
+      const cx = panel.x + panel.w / 2;
+      const cy = panel.y + panel.h / 2;
+      s.addShape("roundRect", {
+        x: cx - d / 2, y: cy - d / 2, w: d, h: d, rectRadius: d / 2,
+        fill: { color: C.BG_DARK_PANEL || C.PRIMARY },
+      });
+      picto.addPictogram(s, o.glyph || subjectGlyph, cx - d * 0.31, cy - d * 0.31, d * 0.62, {
+        style: "flat", color: C.WHITE, glyphColor: C.WHITE,
+      });
+    }
 
-    const heroH = byBand(sz, 1.6, 1.45, 1.3);
+    const textW = hasVisual || (picto && o.glyph !== false) ? 5.5 : 8.0;
+    const heroH = byBand(sz, 1.7, 1.55, 1.4);
     s.addText(title, {
-      x: 0.7, y: 0.9, w: 8.0, h: heroH,
+      x: 0.7, y: 0.95, w: textW, h: heroH,
       fontSize: sz.titleHero, fontFace: FONT_H, color: C.WHITE, bold: true, margin: 0,
+      valign: "bottom",
       fit: "shrink", shrinkText: true,
     });
 
     // Subtitle
     if (subtitle) {
-      const subY = 0.9 + heroH + 0.05;
+      const subY = 0.95 + heroH + 0.12;
       s.addText(subtitle, {
-        x: 0.7, y: subY, w: 8.0, h: 0.8,
+        x: 0.7, y: subY, w: textW, h: 0.95,
         fontSize: sz.subtitleHero, fontFace: FONT_B, color: subtitleOnDark, margin: 0,
+        valign: "top",
         fit: "shrink", shrinkText: true,
       });
     }
 
-    // Meta line
+    // Meta line as a small pill so it reads as a label, not more prose
     if (meta) {
-      const metaY = subtitle ? (0.9 + heroH + 0.05 + 0.85) : (0.9 + heroH + 0.1);
+      const metaY = SLIDE_H - 0.95;
+      const metaFont = sz.metaHero;
+      const metaW = Math.min(textW, Math.max(2.4, String(meta).length * metaFont * 0.0105 + 0.6));
+      s.addShape("roundRect", {
+        x: 0.7, y: metaY, w: metaW, h: 0.44, rectRadius: 0.22,
+        fill: { color: C.BG_DARK_PANEL || C.PRIMARY },
+      });
       s.addText(meta, {
-        x: 0.7, y: metaY, w: 8.0, h: 0.42,
-        fontSize: sz.metaHero, fontFace: FONT_B, color: metaOnDark, margin: 0,
+        x: 0.7, y: metaY, w: metaW, h: 0.44,
+        fontSize: metaFont, fontFace: FONT_B, color: C.WHITE, margin: 0.12,
+        align: "center", valign: "middle",
+        fit: "shrink", shrinkText: true,
       });
     }
 
@@ -850,7 +911,7 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     // LI card
     const liBodyH = Math.max(liItems.length * perItem, 0.52);
     const liH     = LI_HDR_H + liBodyH + PAD;
-    el.addCard(s, 0.5, CONTENT_TOP, 9, liH, { strip: C.PRIMARY });
+    el.addCard(s, 0.5, CONTENT_TOP, 9, liH, { variant: "tint", tone: C.PRIMARY, strip: C.PRIMARY });
     s.addText("Learning Intention", {
       x: 0.75, y: CONTENT_TOP + 0.08, w: 5, h: LI_HDR_H - 0.10,
       fontSize: sz.liHeader, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
@@ -930,17 +991,27 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
 
   /**
    * contentSlide - Standard content slide with badge, title, and bullet card.
-   * Optional drawRight callback for right-column visual content.
+   *
+   * `bullets` may be a string (one statement) or an array. `drawRight` may be
+   * a callback(slide, layoutGuide) or a visual spec such as
+   * { type: "fractionStrips", strips: [...] }, which is fitted into the right
+   * column automatically.
+   *
+   * Density-aware: one or two short lines with no right column render as a
+   * hero statement (large type on a soft tint panel, vertically centred)
+   * instead of small bullets floating at the top of an empty slide
+   * (megaprompt 15b / 15h / 16).
    */
   function contentSlide(pres, badgeText, badgeColor, title, bullets, notes, footer, drawRight) {
     const s = pres.addSlide();
+    const tone = badgeColor || C.PRIMARY;
     el.addTopBar(s, C.PRIMARY);
-    el.addBadge(s, badgeText || "Content", { color: badgeColor || C.PRIMARY });
+    el.addBadge(s, badgeText || "Content", { color: tone });
     el.addTitle(s, title);
 
-    const cardW = drawRight ? 4.5 : 9.0;
-    const metrics = bullets && bullets.length ? getBulletCardMetrics(bullets, { narrow: Boolean(drawRight) }) : null;
-    const cardH = metrics ? metrics.cardH : (drawRight ? 2.0 : 1.55);
+    const rightFn = resolveDrawRight(drawRight);
+    const items = bullets == null ? [] : (Array.isArray(bullets) ? bullets : [String(bullets)]);
+    const cardW = rightFn ? 4.5 : 9.0;
     const contentY = CONTENT_TOP;
     const layoutGuide = {
       titleY: 0.65,
@@ -950,42 +1021,97 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
       leftCardX: 0.5,
       leftCardY: contentY,
       leftCardW: cardW,
-      leftCardH: cardH,
+      leftCardH: 0,
       rightX: 5.2,
       rightW: 4.3,
       safeBottom: SAFE_BOTTOM,
     };
 
-    el.addCard(s, 0.5, contentY, cardW, cardH, {
-      strip: badgeColor || C.PRIMARY,
-      fill: C.WHITE,
-    });
+    const prepared = prepareBullets(items);
+    const joined = prepared.map((p) => p.text).join(" ");
+    const areaH = SAFE_BOTTOM - contentY;
+    // Sparse = up to three short statements and no right column. Two
+    // launch questions or three You Do steps are the hero of their slide,
+    // so they are set large on a tint panel instead of floating as small
+    // bullets above an empty half-slide.
+    const sparse = !rightFn && prepared.length > 0 && prepared.length <= 3 &&
+      joined.length <= byBand(sz, 80, 110, 170);
 
-    if (bullets && bullets.length) {
-      const prepared = metrics.prepared || prepareBullets(bullets);
-      const baseSpacePt = metrics.fontSize >= 16 ? 5 : 3;
+    if (sparse) {
+      const charsPerLine = byBand(sz, 30, 38, 48);
+      const ideal = prepared.length === 1 ? sz.heroQuestion : (prepared.length === 2 ? sz.hero : Math.round(sz.hero * 0.9));
+      const floor = sz.body;
+      // Reveal-safe: many decks pair a contentSlide with a withReveal answer
+      // bar placed by the script at y >= 3.9. The hero panel therefore stays
+      // inside the top 2.75" of the content area and is centred within that
+      // region, so the grown text can never poke out beneath a bar.
+      const safeH = areaH - 1.05;
+      const maxTextH = safeH - 0.5;
+      const textBlock = prepared.map((p) => p.text).join("\n");
+      const fontSize = fitTextFontSize(textBlock, maxTextH, charsPerLine, ideal, floor);
+      const textH = Math.min(maxTextH, estimateTextHeight(textBlock, fontSize, charsPerLine) + (prepared.length - 1) * 0.2);
+      const cardH = Math.max(1.75, Math.min(safeH, textH + 0.7));
+      const cardY = contentY + Math.max(0, (safeH - cardH) * 0.5);
+      layoutGuide.leftCardY = cardY;
+      layoutGuide.leftCardH = cardH;
+      el.addCard(s, 0.5, cardY, 9, cardH, { variant: "tint", tone });
       s.addText(prepared.map((item, i) => ({
         text: item.text,
         options: {
-          bullet: true,
+          bullet: prepared.length > 1,
           breakLine: i < prepared.length - 1,
-          fontSize: metrics.fontSize,
+          fontSize,
           color: C.CHARCOAL,
-          // Per-paragraph space-after grows when the build script used an
-          // empty-string spacer between bullets. Avoids ugly empty bullet
-          // markers while preserving visual grouping.
-          paraSpaceAfter: baseSpacePt + (item.extraSpaceAfter || 0) * metrics.fontSize * 0.9,
+          paraSpaceAfter: prepared.length > 1 ? fontSize * 0.45 : 0,
         },
       })), {
-        x: 0.75, y: contentY + metrics.topInset, w: cardW - 0.5, h: cardH - metrics.topInset * 2,
-        fontFace: FONT_B, valign: "top", margin: 0,
+        x: 0.85, y: cardY + 0.25, w: 8.3, h: cardH - 0.5,
+        fontFace: FONT_B, valign: "middle", margin: 0,
+        align: prepared.length === 1 ? "center" : "left",
+        fit: "shrink", shrinkText: true,
       });
+    } else {
+      const metrics = prepared.length ? getBulletCardMetrics(items, { narrow: Boolean(rightFn) }) : null;
+      // A visual spec fills the whole right column, so the left card runs the
+      // full height too and its few lines sit centred and larger: two
+      // balanced panels, not a short card beside a floating model.
+      const specRight = isSpec(drawRight);
+      const longest = prepared.reduce((m, p) => Math.max(m, p.text.length), 0);
+      const fewShort = prepared.length > 0 && prepared.length <= 3 && longest <= 34;
+      const cardH = specRight ? areaH : (metrics ? metrics.cardH : (rightFn ? 2.0 : 1.55));
+      const fontSize = metrics ? (specRight && fewShort ? Math.max(metrics.fontSize, sz.body) : metrics.fontSize) : sz.body;
+      layoutGuide.leftCardH = cardH;
+
+      el.addCard(s, 0.5, contentY, cardW, cardH, {
+        strip: tone,
+        fill: C.WHITE,
+      });
+
+      if (metrics) {
+        const baseSpacePt = fontSize >= 16 ? 5 : 3;
+        s.addText(metrics.prepared.map((item, i) => ({
+          text: item.text,
+          options: {
+            bullet: true,
+            breakLine: i < metrics.prepared.length - 1,
+            fontSize,
+            color: C.CHARCOAL,
+            // Per-paragraph space-after grows when the build script used an
+            // empty-string spacer between bullets. Avoids ugly empty bullet
+            // markers while preserving visual grouping.
+            paraSpaceAfter: baseSpacePt + (item.extraSpaceAfter || 0) * fontSize * 0.9,
+          },
+        })), {
+          x: 0.75, y: contentY + metrics.topInset, w: cardW - 0.5, h: cardH - metrics.topInset * 2,
+          fontFace: FONT_B, valign: specRight ? "middle" : "top", margin: 0,
+        });
+      }
     }
 
-    if (drawRight) drawRight(s, layoutGuide);
+    if (rightFn) rightFn(s, layoutGuide);
     if (footer) el.addFooter(s, footer);
     if (notes) s.addNotes(notes);
-    if (drawRight) runSlideDiagnostics(s, pres);
+    if (rightFn) runSlideDiagnostics(s, pres);
     return s;
   }
 
@@ -1082,7 +1208,7 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     });
 
     const qY = pillY + pillH + 0.16;
-    el.addCard(s, 0.5, qY, 9, qH, { strip: C.ALERT, fill: C.WHITE });
+    el.addCard(s, 0.5, qY, 9, qH, { variant: "tint", tone: C.ALERT });
     // Sparse questions centre vertically at hero size; longer questions keep
     // valign:top so residual overflow goes downward (never up into the pill).
     // fontSize is pre-computed to fit via fitTextFontSize.
@@ -1141,18 +1267,21 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     // Accent bar
     s.addShape("rect", { x: 0, y: 0, w: 0.12, h: SLIDE_H, fill: { color: C.ACCENT } });
 
-    // Decorative shapes
-    s.addShape("roundRect", {
-      x: -1.0, y: 3.2, w: 3.5, h: 3.5, rectRadius: 1.75,
-      fill: { color: C.DECOR_1, transparency: 75 },
-    });
-    s.addShape("roundRect", {
-      x: 8.5, y: -0.5, w: 2.5, h: 2.5, rectRadius: 1.25,
-      fill: { color: C.DECOR_2, transparency: 80 },
-    });
+    // The same subject motif as the title slide, small, top right: the deck
+    // opens and closes on one visual idea.
+    if (picto) {
+      const d = 0.9;
+      s.addShape("roundRect", {
+        x: 9.5 - d, y: 0.45, w: d, h: d, rectRadius: d / 2,
+        fill: { color: C.BG_DARK_PANEL || C.PRIMARY },
+      });
+      picto.addPictogram(s, subjectGlyph, 9.5 - d + d * 0.19, 0.45 + d * 0.19, d * 0.62, {
+        style: "flat", color: C.WHITE, glyphColor: C.WHITE,
+      });
+    }
 
     s.addText("Review & Reflect", {
-      x: 0.7, y: 0.45, w: 8, h: 0.9,
+      x: 0.7, y: 0.45, w: 7.6, h: 0.9,
       fontSize: sz.closingHero, fontFace: FONT_H, color: C.WHITE, bold: true, margin: 0,
       fit: "shrink", shrinkText: true,
     });
@@ -1665,7 +1794,7 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
 
     cleaned.forEach((q, i) => {
       const qY = startY + blockOffset + i * (perH + 0.12);
-      el.addCard(s, 0.5, qY, 9, perH, { strip: stripColor });
+      el.addCard(s, 0.5, qY, 9, perH, { variant: "tint", tone: stripColor });
       const display = numbered ? `${i + 1}.  ${q}` : q;
       s.addText(display, {
         x: 0.75, y: qY + 0.08, w: 8.5, h: perH - 0.16,
@@ -1687,12 +1816,17 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
    * oral routine chip row. Use one call per word - never render vocabulary
    * as a definition bullet list.
    *
-   *   keyWordSlide(pres, { word, meaning, example, routine, color, badgeText, title }, notes, footer)
+   *   keyWordSlide(pres, { word, meaning, example, routine, color, badgeText, title, pictogram, image }, notes, footer)
    *
-   * - word     the key word (required)
-   * - meaning  student-friendly meaning (required)
-   * - example  optional example sentence or "hear it" line
-   * - routine  optional array of routine chips (default ["Say it", "Act it", "Use it"])
+   * - word       the key word (required)
+   * - meaning    student-friendly meaning (required)
+   * - example    optional example sentence or "hear it" line
+   * - routine    optional array of routine chips (default ["Say it", "Act it", "Use it"])
+   * - pictogram  built-in picture for the word (see listPictograms()), drawn
+   *              large under the word so the card carries a graphic
+   *              (megaprompt 29: one large word, one meaningful graphic)
+   * - image      local image path, used instead of a pictogram when a real
+   *              picture is the point (photo, illustration from the text)
    */
   function keyWordSlide(pres, config, notes, footer) {
     const cfg = (config && typeof config === "object") ? config : { word: String(config || "") };
@@ -1721,13 +1855,36 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
       byBand(sz, 54, 48, 40),
       Math.floor((panelW - 0.3) / (Math.max(word.length, 4) * 0.0118))
     ));
+    const sayW = byBand(sz, 2.5, 2.3, 2.1);
+    const sayH = byBand(sz, 0.5, 0.46, 0.42);
+    const hasPicto = Boolean(cfg.pictogram && picto);
+    const hasImage = Boolean(cfg.image);
+    const hasGraphic = hasPicto || hasImage;
+    if (!hasGraphic) {
+      console.log(`ADVISORY keyWordSlide "${word}" has no pictogram or image - megaprompt 29 wants one meaningful graphic per word card. Pass { pictogram: "<name>" } (see listPictograms()) or { image: path }.`);
+    }
+    // With a graphic the word takes the top third and the picture the middle.
+    const wordH = hasGraphic ? byBand(sz, 1.1, 1.0, 0.95) : panelH - 1.05;
     s.addText(word, {
-      x: 0.6, y: CONTENT_TOP + 0.15, w: panelW - 0.2, h: panelH - 1.05,
+      x: 0.6, y: CONTENT_TOP + 0.15, w: panelW - 0.2, h: wordH,
       fontSize: wordFont, fontFace: FONT_H, color: C.WHITE, bold: true,
       align: "center", valign: "middle", margin: 0,
     });
-    const sayW = byBand(sz, 2.5, 2.3, 2.1);
-    const sayH = byBand(sz, 0.5, 0.46, 0.42);
+    if (hasGraphic) {
+      const gTop = CONTENT_TOP + 0.15 + wordH + 0.05;
+      const gBottom = CONTENT_TOP + panelH - sayH - 0.3;
+      const gH = Math.max(0.8, gBottom - gTop);
+      if (hasImage && visual) {
+        visual.drawVisual(s, { type: "image", path: cfg.image, frame: true }, {
+          x: 0.75, y: gTop, w: panelW - 0.5, h: gH,
+        });
+      } else if (hasPicto) {
+        const d = Math.min(gH, panelW - 1.2);
+        picto.addPictogram(s, cfg.pictogram, 0.5 + (panelW - d) / 2, gTop + (gH - d) / 2, d, {
+          style: "flat", color: C.WHITE, glyphColor: C.WHITE,
+        });
+      }
+    }
     el.addTextOnShape(s, "Say it with me", {
       x: 0.5 + (panelW - sayW) / 2, y: CONTENT_TOP + panelH - sayH - 0.18,
       w: sayW, h: sayH, rectRadius: 0.08,
@@ -1788,6 +1945,403 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     return s;
   }
 
+  /**
+   * heroVisualSlide - visual-only teaching slide (megaprompt 0a item 20, 15c).
+   *
+   * The representation IS the slide. The visual spec is fitted to fill the
+   * content area on a soft panel and centred, with at most a short label
+   * naming the model and an optional one-line prompt bar. Everything the
+   * teacher says lives in the notes.
+   *
+   *   heroVisualSlide(pres, "I Do", "How many counters?",
+   *     { type: "tensFrame", filled: 7 }, notes, footer,
+   *     { label: "Tens frame", prompt: "Show me on your fingers" })
+   *
+   * opts: { label, prompt, badgeColor, panel (default true), promptColor }
+   */
+  function heroVisualSlide(pres, badgeText, title, visualSpec, notes, footer, opts) {
+    const s = pres.addSlide();
+    const o = opts || {};
+    const tone = o.badgeColor || C.PRIMARY;
+    el.addTopBar(s, tone);
+    el.addBadge(s, badgeText || "Look", { color: tone });
+    el.addTitle(s, title);
+
+    const promptH = o.prompt ? byBand(sz, 0.8, 0.72, 0.62) : 0;
+    const labelH = o.label ? byBand(sz, 0.5, 0.44, 0.38) : 0;
+    const gap = 0.16;
+    const panelTop = CONTENT_TOP;
+    const panelBottom = SAFE_BOTTOM - (promptH ? promptH + gap : 0);
+    const panelH = panelBottom - panelTop;
+    const usePanel = o.panel !== false;
+    if (usePanel) {
+      el.addCard(s, 0.5, panelTop, 9, panelH, { variant: "tint", tone });
+    }
+    const pad = usePanel ? 0.3 : 0.05;
+    const frame = {
+      x: 0.5 + pad, y: panelTop + pad, w: 9 - pad * 2,
+      h: panelH - pad * 2 - (labelH ? labelH + 0.08 : 0),
+    };
+    if (!visual) throw new Error("[heroVisualSlide] theme has no visual layer");
+    const bounds = visual.drawVisual(s, visualSpec, frame);
+
+    if (o.label) {
+      s.addText(String(o.label), {
+        x: 0.5, y: panelBottom - pad - labelH + 0.04, w: 9, h: labelH,
+        fontSize: byBand(sz, 22, 19, 15), fontFace: FONT_B, color: C.MUTED, bold: true,
+        align: "center", valign: "middle", margin: 0,
+      });
+    }
+    if (o.prompt) {
+      el.addTextOnShape(s, String(o.prompt), {
+        x: 0.5, y: SAFE_BOTTOM - promptH, w: 9, h: promptH, rectRadius: promptH / 2,
+        fill: { color: o.promptColor || tone },
+      }, {
+        fontSize: byBand(sz, 26, 22, 18), fontFace: FONT_H, color: C.WHITE, bold: true,
+        align: "center", valign: "middle", margin: 0.1,
+      });
+    }
+
+    if (footer) el.addFooter(s, footer);
+    if (notes) s.addNotes(notes);
+    runSlideDiagnostics(s, pres, { ignoreUnderfill: true });
+    s.heroBounds = bounds;
+    return s;
+  }
+
+  /**
+   * choiceSlide - "Which one?" visual choice (megaprompt 15d, 49, 68j).
+   *
+   * Two to four large option cards side by side, each holding a visual spec
+   * and/or short text, lettered A/B/C by default so students can answer on
+   * boards or fingers without anything being numbered. Use for Which one
+   * matches?, Same or different?, Example and non-example, odd one out, and
+   * A/B/C hinge questions.
+   *
+   *   const s = choiceSlide(pres, "CFU", "Which shows three quarters?",
+   *     "Show me A, B or C on your board", [
+   *       { visual: { type: "fractionStrips", strips: [{ denom: 4, shaded: 3 }] } },
+   *       { visual: { type: "fractionStrips", strips: [{ denom: 3, shaded: 2 }] } },
+   *       { text: "3 out of 5" },
+   *     ], notes, footer, { badgeColor: C.ALERT });
+   *   clickBuild(s, [() => markChoice(s, 0)]);   // reveal the answer on click
+   *
+   * option: { visual, text, label, caption }   (label overrides the letter)
+   * opts:   { badgeColor, letters (default true), promptColor, captionSize }
+   */
+  function choiceSlide(pres, badgeText, title, prompt, options, notes, footer, opts) {
+    const s = pres.addSlide();
+    const o = opts || {};
+    const tone = o.badgeColor || C.PRIMARY;
+    const list = (Array.isArray(options) ? options : []).slice(0, 4);
+    el.addTopBar(s, tone);
+    el.addBadge(s, badgeText || "Which one?", { color: tone });
+    el.addTitle(s, title);
+
+    const promptH = prompt ? byBand(sz, 0.74, 0.66, 0.56) : 0;
+    let cursorY = CONTENT_TOP;
+    if (prompt) {
+      el.addTextOnShape(s, String(prompt), {
+        x: 0.5, y: cursorY, w: 9, h: promptH, rectRadius: promptH / 2,
+        fill: { color: o.promptColor || tone },
+      }, {
+        fontSize: byBand(sz, 24, 20, 16), fontFace: FONT_B, color: C.WHITE, bold: true,
+        align: "center", valign: "middle", margin: 0.1,
+      });
+      cursorY += promptH + 0.18;
+    }
+
+    const n = Math.max(list.length, 1);
+    const gap = 0.25;
+    const cardW = (9 - gap * (n - 1)) / n;
+    const cardH = SAFE_BOTTOM - cursorY;
+    const letters = ["A", "B", "C", "D"];
+    const tag = byBand(sz, 0.62, 0.56, 0.48);
+    const frames = [];
+
+    list.forEach((raw, i) => {
+      const opt = typeof raw === "string" ? { text: raw } : (raw || {});
+      const x = 0.5 + i * (cardW + gap);
+      el.addCard(s, x, cursorY, cardW, cardH, { variant: "outline", tone });
+      const showTag = o.letters !== false || opt.label;
+      if (showTag) {
+        el.addTextOnShape(s, String(opt.label || letters[i]), {
+          x: x + 0.14, y: cursorY + 0.14, w: tag, h: tag, rectRadius: tag / 2,
+          fill: { color: tone },
+        }, {
+          fontSize: byBand(sz, 22, 19, 15), fontFace: FONT_H, color: C.WHITE, bold: true,
+        });
+      }
+      const innerTop = cursorY + (showTag ? tag + 0.26 : 0.2);
+      const captionH = opt.caption ? byBand(sz, 0.5, 0.44, 0.38) : 0;
+      const textH = opt.text && opt.visual ? byBand(sz, 0.9, 0.8, 0.7) : 0;
+      const innerBottom = cursorY + cardH - 0.2 - captionH - textH;
+      const frame = { x: x + 0.2, y: innerTop, w: cardW - 0.4, h: Math.max(0.6, innerBottom - innerTop) };
+
+      if (opt.visual && visual) {
+        visual.drawVisual(s, opt.visual, frame);
+      }
+      if (opt.text) {
+        const textOnly = !opt.visual;
+        const ty = textOnly ? innerTop : innerBottom;
+        const th = textOnly ? Math.max(0.6, cursorY + cardH - 0.2 - captionH - innerTop) : textH;
+        s.addText(String(opt.text), {
+          x: x + 0.2, y: ty, w: cardW - 0.4, h: th,
+          fontSize: textOnly ? byBand(sz, 40, 34, 28) : byBand(sz, 22, 19, 16),
+          fontFace: textOnly ? FONT_H : FONT_B, color: C.CHARCOAL, bold: textOnly,
+          align: "center", valign: "middle", margin: 0,
+          fit: "shrink", shrinkText: true,
+        });
+      }
+      if (opt.caption) {
+        s.addText(String(opt.caption), {
+          x: x + 0.15, y: cursorY + cardH - 0.14 - captionH, w: cardW - 0.3, h: captionH,
+          fontSize: o.captionSize || byBand(sz, 18, 16, 13), fontFace: FONT_B, color: C.MUTED,
+          align: "center", valign: "middle", margin: 0, fit: "shrink", shrinkText: true,
+        });
+      }
+      frames.push({ x, y: cursorY, w: cardW, h: cardH });
+    });
+
+    s.choiceFrames = frames;
+    if (footer) el.addFooter(s, footer);
+    if (notes) s.addNotes(notes);
+    runSlideDiagnostics(s, pres);
+    return s;
+  }
+
+  /**
+   * markChoice - reveal the correct option on a choiceSlide: a thick SUCCESS
+   * border plus a tick badge. Call inside a clickBuild step or a withReveal
+   * revealFn. `index` is 0-based.
+   */
+  function markChoice(slide, index, opts) {
+    const o = opts || {};
+    const frames = (slide && slide.choiceFrames) || [];
+    const f = frames[index];
+    if (!f) {
+      console.warn(`WARN [markChoice] no option ${index} on this slide (${frames.length} options)`);
+      return;
+    }
+    const color = o.color || C.SUCCESS;
+    slide.addShape("roundRect", {
+      x: f.x - 0.04, y: f.y - 0.04, w: f.w + 0.08, h: f.h + 0.08, rectRadius: 0.14,
+      fill: { color: color, transparency: 100 },
+      line: { color, width: 4 },
+    });
+    const d = byBand(sz, 0.7, 0.62, 0.54);
+    if (picto) {
+      picto.addPictogram(slide, "tick", f.x + f.w - d - 0.1, f.y - d * 0.35, d, { style: "flat", color });
+    } else {
+      el.addTextOnShape(slide, "Yes", {
+        x: f.x + f.w - d - 0.1, y: f.y - d * 0.35, w: d, h: d, rectRadius: d / 2, fill: { color },
+      }, { fontSize: byBand(sz, 14, 12, 10), fontFace: FONT_B, color: C.WHITE, bold: true });
+    }
+  }
+
+  /**
+   * youDoSlide - independent task slide (megaprompt 35).
+   *
+   * The task is the hero. First / Next / Then steps are small numbered chips
+   * beneath it (max 3, one action each), an optional visual spec sits on the
+   * right as a mini model, and an optional sentence frame or reminder line
+   * sits under the task in a dashed pill.
+   *
+   *   youDoSlide(pres, "Make 10 on your own", "Draw counters to make 10.",
+   *     ["Look at the frame", "Draw the counters", "Write how many more"],
+   *     notes, footer, {
+   *       where: "On your worksheet",
+   *       visual: { type: "tensFrame", filled: 6 },
+   *       frame: "___ and ___ make 10",
+   *     })
+   *
+   * opts: { where, visual, frame, badgeText, badgeColor, visualLabel }
+   */
+  function youDoSlide(pres, title, task, steps, notes, footer, opts) {
+    const s = pres.addSlide();
+    const o = opts || {};
+    const isNumeracy = subjectKey === "numeracy";
+    const tone = o.badgeColor || (isNumeracy ? C.ALERT : C.SUCCESS);
+    const badgeText = o.badgeText || (isNumeracy ? "Stage 4  |  You Do" : "You Do");
+    el.addTopBar(s, tone);
+    el.addBadge(s, badgeText, { color: tone, w: isNumeracy ? byBand(sz, 3.1, 2.8, 2.4) : undefined });
+    el.addTitle(s, title);
+
+    const stepList = (Array.isArray(steps) ? steps : (steps ? [steps] : []))
+      .map((t) => String(t == null ? "" : t).trim()).filter(Boolean).slice(0, 3);
+    const hasVisual = isSpec(o.visual) && visual;
+    const stepsH = stepList.length ? byBand(sz, 1.0, 0.9, 0.8) : 0;
+    const frameH = o.frame ? byBand(sz, 0.66, 0.6, 0.52) : 0;
+    const gap = 0.16;
+    const leftW = hasVisual ? 4.6 : 9;
+    const areaH = SAFE_BOTTOM - CONTENT_TOP;
+    const taskCardH = areaH - (stepsH ? stepsH + gap : 0) - (frameH ? frameH + gap : 0);
+
+    // Task card (hero)
+    el.addCard(s, 0.5, CONTENT_TOP, leftW, taskCardH, { variant: "tint", tone });
+    let taskTop = CONTENT_TOP + 0.2;
+    if (o.where) {
+      const whereH = byBand(sz, 0.42, 0.38, 0.34);
+      const whereW = Math.min(leftW - 0.4, Math.max(2.0, String(o.where).length * 0.11 + 0.5));
+      el.addTextOnShape(s, String(o.where), {
+        x: 0.7, y: taskTop, w: whereW, h: whereH, rectRadius: whereH / 2, fill: { color: tone },
+      }, { fontSize: byBand(sz, 15, 14, 12), fontFace: FONT_B, color: C.WHITE, bold: true });
+      taskTop += whereH + 0.12;
+    }
+    const taskText = String(task == null ? "" : task);
+    const taskAvailH = CONTENT_TOP + taskCardH - 0.2 - taskTop;
+    const charsPerLine = hasVisual ? byBand(sz, 18, 22, 28) : byBand(sz, 32, 40, 50);
+    const taskFont = fitTextFontSize(taskText, taskAvailH, charsPerLine, hasVisual ? sz.hero * 0.9 : sz.heroQuestion, sz.body);
+    s.addText(taskText, {
+      x: 0.75, y: taskTop, w: leftW - 0.5, h: taskAvailH,
+      fontSize: taskFont, fontFace: FONT_B, color: C.CHARCOAL, bold: true,
+      valign: "middle", align: "left", margin: 0, fit: "shrink", shrinkText: true,
+    });
+
+    // Optional mini model on the right
+    if (hasVisual) {
+      const vx = 0.5 + leftW + 0.2;
+      const vw = 9.5 - vx;
+      const labelH = o.visualLabel ? byBand(sz, 0.44, 0.4, 0.34) : 0;
+      el.addCard(s, vx, CONTENT_TOP, vw, taskCardH, { variant: "outline", tone });
+      visual.drawVisual(s, o.visual, { x: vx + 0.25, y: CONTENT_TOP + 0.25, w: vw - 0.5, h: taskCardH - 0.5 - labelH });
+      if (o.visualLabel) {
+        s.addText(String(o.visualLabel), {
+          x: vx, y: CONTENT_TOP + taskCardH - 0.18 - labelH, w: vw, h: labelH,
+          fontSize: byBand(sz, 16, 14, 12), fontFace: FONT_B, color: C.MUTED, bold: true,
+          align: "center", valign: "middle", margin: 0,
+        });
+      }
+    }
+
+    let cursor = CONTENT_TOP + taskCardH + gap;
+    if (o.frame) {
+      s.addShape("roundRect", {
+        x: 0.5, y: cursor, w: 9, h: frameH, rectRadius: frameH / 2,
+        fill: { color: C.WHITE }, line: { color: tone, width: 1.2, dashType: "dash" },
+      });
+      s.addText(String(o.frame), {
+        x: 0.7, y: cursor, w: 8.6, h: frameH,
+        fontSize: byBand(sz, 24, 20, 17), fontFace: FONT_B, color: C.CHARCOAL, italic: true,
+        align: "center", valign: "middle", margin: 0, fit: "shrink", shrinkText: true,
+      });
+      cursor += frameH + gap;
+    }
+
+    if (stepList.length) {
+      const words = ["First", "Next", "Then"];
+      const sgap = 0.2;
+      const stepW = (9 - sgap * (stepList.length - 1)) / stepList.length;
+      const numD = byBand(sz, 0.5, 0.46, 0.4);
+      stepList.forEach((text, i) => {
+        const x = 0.5 + i * (stepW + sgap);
+        el.addCard(s, x, cursor, stepW, stepsH, { variant: "outline", tone });
+        el.addTextOnShape(s, String(i + 1), {
+          x: x + 0.16, y: cursor + (stepsH - numD) / 2, w: numD, h: numD, rectRadius: numD / 2, fill: { color: tone },
+        }, { fontSize: byBand(sz, 18, 16, 13), fontFace: FONT_H, color: C.WHITE, bold: true });
+        s.addText([
+          { text: words[i] + ": ", options: { bold: true, color: tone } },
+          { text, options: { color: C.CHARCOAL } },
+        ], {
+          x: x + 0.16 + numD + 0.12, y: cursor + 0.08, w: stepW - numD - 0.4, h: stepsH - 0.16,
+          fontSize: byBand(sz, 18, 16, 14), fontFace: FONT_B, valign: "middle", margin: 0,
+          fit: "shrink", shrinkText: true,
+        });
+      });
+    }
+
+    if (footer) el.addFooter(s, footer);
+    if (notes) s.addNotes(notes);
+    runSlideDiagnostics(s, pres);
+    return s;
+  }
+
+  /**
+   * textExtractSlide - literacy reading anchor.
+   *
+   * A large calm reading panel with the extract set in a reading face, with
+   * optional highlighted phrases (bold, coloured, marker wash) for
+   * find-the-evidence and annotate-the-model work, an optional source line,
+   * and an optional prompt bar. Quote text is rendered exactly as passed
+   * (megaprompt 5a).
+   *
+   *   textExtractSlide(pres, "Read", "The storm", extractText, notes, footer, {
+   *     highlights: ["gnarled hands", "crept"],
+   *     source: "War Horse, chapter 3",
+   *     prompt: "Which word shows Joey is afraid?",
+   *   })
+   *
+   * opts: { highlights, source, prompt, badgeColor, fontFace, fontSize }
+   */
+  function textExtractSlide(pres, badgeText, title, extract, notes, footer, opts) {
+    const s = pres.addSlide();
+    const o = opts || {};
+    const tone = o.badgeColor || C.PRIMARY;
+    el.addTopBar(s, tone);
+    el.addBadge(s, badgeText || "Read", { color: tone });
+    el.addTitle(s, title);
+
+    const promptH = o.prompt ? byBand(sz, 0.78, 0.7, 0.6) : 0;
+    const sourceH = o.source ? 0.3 : 0;
+    const gap = 0.16;
+    const panelH = SAFE_BOTTOM - CONTENT_TOP - (promptH ? promptH + gap : 0) - (sourceH ? sourceH + 0.04 : 0);
+    el.addCard(s, 0.5, CONTENT_TOP, 9, panelH, { variant: "outline", tone });
+    s.addShape("rect", { x: 0.5, y: CONTENT_TOP, w: 0.09, h: panelH, fill: { color: tone } });
+
+    const text = String(extract == null ? "" : extract);
+    const readingFace = o.fontFace || (sz._band === "Y36" ? "Georgia" : FONT_B);
+    const charsPerLine = byBand(sz, 34, 42, 58);
+    const fontSize = o.fontSize || fitTextFontSize(text, panelH - 0.5, charsPerLine, byBand(sz, 30, 26, 22), byBand(sz, 20, 18, 14));
+
+    // Split into runs so highlighted phrases render bold, coloured and washed.
+    const highlights = (Array.isArray(o.highlights) ? o.highlights : []).map((h) => String(h)).filter(Boolean);
+    const runs = [];
+    if (highlights.length) {
+      const pattern = new RegExp(`(${highlights.map((h) => h.replace(/[.*+?^${}()|[\\]\\\\]/g, "\\\\$&")).join("|")})`, "g");
+      text.split(pattern).forEach((part) => {
+        if (!part) return;
+        const hit = highlights.includes(part);
+        runs.push({
+          text: part,
+          options: hit
+            ? { bold: true, color: tone, highlight: C.ACCENT_SOFT || el.softOf(C.ACCENT, 0.75) }
+            : { color: C.CHARCOAL },
+        });
+      });
+    } else {
+      runs.push({ text, options: { color: C.CHARCOAL } });
+    }
+    s.addText(runs, {
+      x: 0.85, y: CONTENT_TOP + 0.22, w: 8.4, h: panelH - 0.44,
+      fontSize, fontFace: readingFace, valign: "middle", margin: 0,
+      lineSpacingMultiple: 1.15,
+      fit: "shrink", shrinkText: true,
+    });
+
+    let cursor = CONTENT_TOP + panelH;
+    if (o.source) {
+      s.addText(String(o.source), {
+        x: 0.5, y: cursor + 0.02, w: 9, h: sourceH,
+        fontSize: byBand(sz, 13, 12, 11), fontFace: FONT_B, color: C.MUTED, italic: true,
+        align: "right", valign: "middle", margin: 0,
+      });
+      cursor += sourceH + 0.04;
+    }
+    if (o.prompt) {
+      el.addTextOnShape(s, String(o.prompt), {
+        x: 0.5, y: SAFE_BOTTOM - promptH, w: 9, h: promptH, rectRadius: promptH / 2,
+        fill: { color: o.promptColor || tone },
+      }, {
+        fontSize: byBand(sz, 24, 20, 17), fontFace: FONT_B, color: C.WHITE, bold: true,
+        align: "center", valign: "middle", margin: 0.1,
+      });
+    }
+
+    if (footer) el.addFooter(s, footer);
+    if (notes) s.addNotes(notes);
+    return s;
+  }
+
   return {
     titleSlide,
     liSlide,
@@ -1800,6 +2354,11 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     boardBuildSlide,
     exitTicketSlide,
     addRevealAnswerBar,
+    heroVisualSlide,
+    choiceSlide,
+    markChoice,
+    youDoSlide,
+    textExtractSlide,
   };
 }
 

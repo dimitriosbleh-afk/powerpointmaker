@@ -2,9 +2,12 @@
 
 // Visual helper catalogue - internal QA reference deck, NOT a lesson.
 // Renders every shared visual-anchor helper across the three grade bands
-// (foundation / grade2 / grade56) so theme changes can be eyeballed in one
-// pass. Rebuild after ANY change to themes/core/manipulatives.js,
-// themes/builders/numeracy.js visual helpers, or grade-band sizing:
+// (foundation / grade2 / grade56), every built-in pictogram, and the
+// pattern builders (heroVisualSlide, choiceSlide, youDoSlide,
+// textExtractSlide, cycle/process with icons) so theme changes can be
+// eyeballed in one pass. Rebuild after ANY change to
+// themes/core/manipulatives.js, themes/core/pictograms.js,
+// themes/core/visualSpec.js, the builders, or grade-band sizing:
 //   node scripts/build_and_check.js builds/build_visual_catalogue.js
 //   python3 scripts/pptx_to_images.py output/Visual_Catalogue/*.pptx
 
@@ -122,19 +125,118 @@ async function build() {
       T.runSlideDiagnostics(s, pres);
     })();
 
-    // ── Slide 4: keyWordSlide (visual word card) ──
+    // ── Slide 4: keyWordSlide (visual word card, with its pictogram) ──
     T.keyWordSlide(pres, {
       word: "equivalent",
       meaning: "The same value, even when it looks different.",
       example: "One half is equivalent to two quarters.",
-    }, "QA reference: " + band.label + " keyWordSlide word card.", FOOTER);
+      pictogram: "scales",
+    }, "QA reference: " + band.label + " keyWordSlide word card with pictogram.", FOOTER);
 
     // ── Slide 5: sparse CFU (density-aware hero sizing regression) ──
     T.cfuSlide(pres, "CFU", "Quick check",
       { technique: "Show Me Boards", question: "Which part turns liquid water into vapour?" },
       "QA reference: " + band.label + " sparse CFU - question must be hero-sized and centred, no dead bottom half.",
       FOOTER);
+
+    // ── Slide 6: heroVisualSlide (visual-only teaching slide) ──
+    T.heroVisualSlide(pres, "I Do", "How many counters?",
+      { type: "tensFrame", filled: 7 },
+      "QA reference: " + band.label + " heroVisualSlide - the representation fills the panel.",
+      FOOTER, { label: "Tens frame", prompt: "Show me on your fingers" });
+
+    // ── Slide 7: choiceSlide with a marked answer ──
+    (() => {
+      const s = T.choiceSlide(pres, "CFU", "Which shows 7?", "Show me A, B or C on your board", [
+        { visual: { type: "tensFrame", filled: 7 } },
+        { visual: { type: "groupedCounters", groups: 2, per: 3 } },
+        { visual: { type: "dotCard", count: 6 } },
+      ], "QA reference: " + band.label + " choiceSlide with markChoice on A.", FOOTER, { badgeColor: C.ALERT });
+      T.markChoice(s, 0);
+    })();
+
+    // ── Slide 8: youDoSlide with a mini model ──
+    T.youDoSlide(pres, "Make 10 on your own", "Draw counters to make 10.",
+      ["Look at the frame", "Draw the counters", "Write how many more"],
+      "QA reference: " + band.label + " youDoSlide - task is the hero, steps are chips.", FOOTER,
+      { where: "On your worksheet", visual: { type: "tensFrame", filled: 6 }, frame: "___ and ___ make 10", visualLabel: "6 in the frame" });
+
+    // ── Slide 9: contentSlide sparse hero mode + spec right column ──
+    T.contentSlide(pres, "Launch", C.PRIMARY, "Where does rain come from?",
+      ["Turn and tell your partner: where do you think rain comes from?", "A puddle dries up on a sunny day. Where does that water go?"],
+      "QA reference: " + band.label + " contentSlide with two short prompts renders as a hero panel.", FOOTER);
+    T.contentSlide(pres, "I Do", C.PRIMARY, "Three groups of four",
+      ["3 groups.", "4 in each group.", "12 altogether."],
+      "QA reference: " + band.label + " contentSlide with a visual spec in the right column.", FOOTER,
+      { type: "groupedCounters", groups: 3, per: 4 });
   });
+
+  // ── Pattern builders and pictograms at Year 3-6 sizing ──
+  {
+    const T = createTheme("literacy", "grade56", 3);
+    T.titleSlide(pres, "Persuasive Posters", "Headings, images and colour that make you act",
+      "Year 4 Literacy | Persuasive Texts", "QA reference: literacy title slide with the subject glyph.");
+    T.textExtractSlide(pres, "Read", "The storm",
+      "The wind howled all night. Joey pressed his gnarled hands against the stable door as the rain crept under it, cold and silent.",
+      "QA reference: textExtractSlide with highlighted phrases, source line and prompt bar.", FOOTER,
+      { highlights: ["gnarled hands", "crept"], source: "Sample text, chapter 3", prompt: "Which word shows Joey is afraid?" });
+    T.heroVisualSlide(pres, "We Do", "Which animals lay eggs?", {
+      type: "table",
+      rows: [["Animal", "Legs", "Lays eggs?"], ["Frog", "4", "Yes"], ["Dog", "4", "No"], ["Bird", "2", "Yes"]],
+    }, "QA reference: table visual via heroVisualSlide.", FOOTER, { prompt: "Which row surprised you?" });
+  }
+  {
+    const T = createTheme("numeracy", "grade34", 1);
+    T.titleSlide(pres, "Equivalent Fractions", "Same amount, different name", "Year 3/4 Numeracy | Fractions",
+      "QA reference: title slide carrying the lesson's own visual anchor.",
+      { visual: { type: "fractionStrips", strips: [{ denom: 2, shaded: 1 }, { denom: 4, shaded: 2 }] } });
+  }
+  {
+    const T = createTheme("science", "grade34", 2);
+    T.cycleDiagramSlide(pres, "I Do", "The Water Cycle", "Watch and listen",
+      ["I will name each part and how the water moves.", "Follow the arrows around the cycle."],
+      "Water Cycle", [
+        { label: "Evaporation", detail: "Sun heats the water", icon: "sun" },
+        { label: "Condensation", detail: "Vapour cools into cloud", icon: "cloud" },
+        { label: "Precipitation", detail: "Rain or snow falls", icon: "rain" },
+        { label: "Collection", detail: "Gathers in rivers and sea", icon: "waves" },
+      ], "QA reference: cycleDiagramSlide with stage icons.", FOOTER);
+    T.processFlowSlide(pres, "I Do", "Where does food go?", "Think together", ["Where does food go first?"], [
+      { label: "Mouth", detail: "Teeth chew, saliva softens", icon: "tooth" },
+      { label: "Stomach", detail: "Acid breaks food down" },
+      { label: "Intestines", detail: "Nutrients are absorbed" },
+    ], "QA reference: processFlowSlide with an icon on the first chip.", FOOTER);
+    T.heroVisualSlide(pres, "Launch", "How are you feeling today?",
+      { type: "pictograms", items: ["happy", "calm", "worried", "sad", "angry"] },
+      "QA reference: pictogram row as the hero visual.", FOOTER, { prompt: "Point to one. Turn and tell your partner." });
+  }
+
+  // ── Pictogram catalogue: every name, Year 3-6 sizing ──
+  {
+    const T = createTheme("inquiry", "grade56", 0);
+    const names = T.listPictograms();
+    const cols = 7;
+    const rows = 4;
+    const perSlide = cols * rows;
+    for (let start = 0; start < names.length; start += perSlide) {
+      const s = pres.addSlide();
+      T.addTopBar(s, T.C.PRIMARY);
+      T.addBadge(s, "Pictograms", { color: T.C.PRIMARY });
+      T.addTitle(s, `Built-in pictograms ${start + 1}-${Math.min(start + perSlide, names.length)} of ${names.length}`);
+      const colW = 9 / cols;
+      const rowH = (5.1 - 1.3) / rows;
+      const d = 0.56;
+      names.slice(start, start + perSlide).forEach((name, i) => {
+        const r = Math.floor(i / cols);
+        const c = i % cols;
+        const x = 0.5 + c * colW + (colW - d) / 2;
+        const y = 1.3 + r * rowH + 0.06;
+        T.addPictogram(s, name, x, y, d, { label: name, labelFontSize: 10, labelW: colW - 0.06 });
+      });
+      T.addFooter(s, FOOTER);
+      s.addNotes(`QA reference: pictograms ${start + 1} to ${Math.min(start + perSlide, names.length)} - names as accepted by addPictogram, keyWordSlide { pictogram } and visual specs.`);
+    }
+  }
 
   // ── Photo placeholder regression (grade56 annotatedModelSlide) ──
   {

@@ -35,7 +35,7 @@ Theme selection should follow the explicit `Subject:` field from the lesson prom
 
 ## Subjects and Their Builders
 
-All subjects get the **base builders**: `titleSlide`, `liSlide`, `contentSlide`, `cfuSlide`, `closingSlide`, `keyWordSlide`, `exitTicketSlide`, `boardBuildSlide`, `annotatedModelSlide`, `compareVisualSlide`, plus `addRevealAnswerBar`. `keyWordSlide(pres, { word, meaning, example }, notes, footer)` is the vocabulary word card - one word per slide, never definition bullet lists. `cfuSlide` and `exitTicketSlide` are density-aware (short prompts render hero-sized and centred).
+All subjects get the **base builders**: `titleSlide`, `liSlide`, `contentSlide`, `cfuSlide`, `closingSlide`, `keyWordSlide`, `exitTicketSlide`, `boardBuildSlide`, `annotatedModelSlide`, `compareVisualSlide`, plus the **pattern builders** `heroVisualSlide`, `choiceSlide` (+ `markChoice`), `youDoSlide`, `textExtractSlide`, and the helpers `addRevealAnswerBar`, `addDataTable`, `addPictogram`, `addPictogramRow`, `drawVisual`. `keyWordSlide(pres, { word, meaning, example, pictogram }, notes, footer)` is the vocabulary word card - one word per slide with its picture, never definition bullet lists. `cfuSlide`, `exitTicketSlide` and `contentSlide` are density-aware (one to three short lines render hero-sized on a soft tint panel, vertically centred).
 
 | Subject | Extra Builders | Purpose |
 |---------|---------------|---------|
@@ -44,6 +44,60 @@ All subjects get the **base builders**: `titleSlide`, `liSlide`, `contentSlide`,
 | **Inquiry** | `investigationSlide`, `findingsSlide`, `pairShareSlide` | Question-driven, evidence gathering |
 | **Wellbeing** | `scenarioSlide`, `reflectionSlide`, `pairShareSlide` | Social scenarios, discussion, reflection |
 | **Science** | `experimentSlide`, `observationSlide`, `conclusionSlide`, `processFlowSlide`, `cycleDiagramSlide` | Scientific method structure, ordered processes, systems, cycles |
+
+## Design Language (what every deck inherits)
+
+The theme layer, not the build script, carries the look. A build script that uses the builders gets all of this for free; a build script that hand-draws with `addShape`/`addText` has to reproduce it, which is why hand-drawing is discouraged.
+
+- **Colour does one job each.** Strong role colours (`PRIMARY`, `SECONDARY`, `ACCENT`, `ALERT`, `SUCCESS`, `ASSESS`) appear only on small, meaningful surfaces: the stage badge, the top bar, technique pills, answer bars, chips, ticks. Large surfaces (hero panels, question cards, option cards) use the derived **soft tint** `C.<ROLE>_SOFT` with a hairline `C.<ROLE>_LINE` border. `T.softOf(hex)` and `T.lineOf(hex)` derive the same tints for any colour a script chooses.
+- **Palettes are bright enough to look like their year level.** Every role colour is the brightest shade of its hue that still clears a per-band contrast target against white (Foundation about 4.9:1 for `PRIMARY`, rising to about 6.8:1 by Year 5/6). `scripts/retune_palettes.js` re-establishes those floors after any hue edit, so a Foundation deck reads as royal blue and grass green rather than navy and bottle green, and white text on any role colour is always AA.
+- **One motif, repeated.** The title slide carries the subject glyph in a soft circle (or the lesson's own visual anchor via `titleSlide(..., { visual })`); the closing slide repeats the glyph small. There are no decorative blobs, gradients or accent lines under titles.
+- **Three card surfaces.** `addCard(..., { variant: "white" | "tint" | "outline", tone })`. White cards (soft shadow, optional left strip) hold supporting content; tint cards hold the hero task or question; outline cards hold option cards and reading panels.
+- **Hero sizing is automatic.** Short content is set large and centred (`cfuSlide`, `exitTicketSlide`, `contentSlide`), representations are fitted to fill their frame (`drawVisual`), and pill badges shrink-fit long labels.
+- **Pictures are built in.** 200+ pictograms (`addPictogram`) give vocabulary cards, science stages, feelings and launch hooks a picture without any hunt for images.
+
+## Visual Specs (`drawVisual`)
+
+A visual spec names a representation and its values; the theme sizes and centres it. Every builder that takes a right-column callback (`contentSlide`, `workedExSlide`, `dailyReviewSlide`) also accepts a spec in that slot, and `heroVisualSlide`, `choiceSlide`, `youDoSlide` and `titleSlide` take specs directly.
+
+```javascript
+drawVisual(slide, { type: "tensFrame", filled: 7 }, { x: 0.5, y: 1.3, w: 9, h: 3.8 });
+```
+
+| `type` | Fields | Draws |
+|---|---|---|
+| `tensFrame` / `fiveFrame` | `filled`, `color` | frame sized to the frame's width |
+| `doubleTensFrame` | `filledTop`, `filledBottom` | two stacked frames (teen numbers) |
+| `dotCard` / `dotCards` | `count` / `counts[]` | dice-pattern cards |
+| `numberTrack` | `start`, `end`, `highlight[]` | numbered cells |
+| `numberLine` | `start`, `end`, `step`, `labelEvery`, `marked[]` (or `labels[]`) | arrowed line with ticks |
+| `fractionStrips` | `strips: [{ denom, shaded, label, color }]`, `showLabels` | separate wholes, gap between |
+| `array` | `rows`, `cols` | dot array |
+| `baseTen` | `hundreds`, `tens`, `ones` | MAB blocks |
+| `groupedCounters` | `groups`, `per` | framed groups |
+| `ppwMat` | `whole`, `partA`, `partB` (null = blank) | part-part-whole mat |
+| `chips` | `items[]` | row of choice chips |
+| `pictogram` | `name`, `label`, `style`, `color` | one large pictogram |
+| `pictograms` | `items: ["happy", ...]` or `[{ name, label, color }]` | labelled row |
+| `text` | `text`, `fontSize`, `card` | hero numeral or word in a bordered card |
+| `table` | `rows[][]`, `header`, `colWidths` | themed data table (see `addDataTable`) |
+| `image` | `path`, `frame` | local image, contained |
+| `custom` | `draw(slide, frame)` | anything else, still fitted |
+
+`drawVisual` returns the drawn bounds `{ x, y, w, h }`. Unknown types emit a `WARN`, which fails the build gate.
+
+## Pictograms (`addPictogram`)
+
+Simple flat glyphs (Phosphor Icons, MIT) rendered synchronously as a white glyph on a coloured circle or tile, or as a flat glyph in any theme colour. They are for naming a thing on a slide, not for illustration, and they never replace the mathematical or textual representation.
+
+```javascript
+addPictogram(slide, "butterfly", x, y, 1.2, { style: "circle", color: C.PRIMARY, label: "butterfly" });
+addPictogramRow(slide, 0.5, 2.0, 9, ["happy", "calm", "worried", "sad"]);
+keyWordSlide(pres, { word: "evaporate", meaning: "...", pictogram: "sun" }, notes, footer);
+cycleDiagramSlide(..., [{ label: "Evaporation", detail: "...", icon: "sun" }, ...], ...);
+```
+
+`listPictograms()` returns every accepted name; the full sheet renders in `output/Visual_Catalogue/`. An unknown name emits `WARN [pictogram]` and fails the gate on purpose (a missing picture is invisible in the file). Styles: `circle` (default), `tile`, `flat`. Subject glyphs used on title and closing slides live in `SUBJECT_PICTOGRAMS`.
 
 ## Visual Anchor Helpers (ALL subjects, MANDATORY for their representation)
 
@@ -59,7 +113,7 @@ Rendered reference: build `builds/build_visual_catalogue.js` and preview
 | Five frame | `addFiveFrame` | `(slide, x, y, w, filled, opts)` |
 | Dot card (subitising) | `addDotCard` | `(slide, x, y, size, count, opts)` |
 | Number track | `addNumberTrack` | `(slide, x, y, w, start, end, highlight[], opts)` |
-| Number line | `addNumberLine` | `(slide, x, y, w, labels[], markedPositions[], opts)` — use `""` for unlabelled ticks |
+| Number line | `addNumberLine` | `(slide, x, y, w, labels[], markedPositions[], opts)` — use `""` for unlabelled ticks; on every subject (moved from numeracy in Sept 2026); `opts.markColor`, `opts.markSize` |
 | Fraction strips (separate wholes) | `addFractionStripSet` | `(slide, x, y, w, h, [{denom, shaded, label, color}], opts)` |
 | Array (rows x cols dots) | `addArray` | `(slide, x, y, rows, cols, opts)` |
 | MAB / base-10 blocks | `addBaseTenBlocks` | `(slide, x, y, hundreds, tens, ones, opts)` |
@@ -78,18 +132,27 @@ in a build script.
 
 | Function | Signature |
 |----------|-----------|
-| `titleSlide` | `(pres, title, subtitle, meta, notes)` |
+| `titleSlide` | `(pres, title, subtitle, meta, notes, opts)` — `opts.visual` puts the lesson's visual anchor on the right instead of the subject glyph; `opts.glyph` picks another pictogram |
 | `liSlide` | `(pres, liItems, scItems, notes, footer)` |
-| `contentSlide` | `(pres, badgeText, badgeColor, title, bullets, notes, footer, drawRight)` |
+| `contentSlide` | `(pres, badgeText, badgeColor, title, bullets, notes, footer, drawRight)` — `bullets` may be one string; `drawRight` may be a callback or a visual spec; 1-3 short lines render as a hero panel |
 | `cfuSlide` | `(pres, badgeText, title, technique, questionText, notes, footer)` |
 | `closingSlide` | `(pres, reflectionPrompt, takeaways, notes)` |
 | `annotatedModelSlide` | `(pres, badgeText, title, prompts, modelTitle, features, notes, footer, opts)` |
 | `compareVisualSlide` | `(pres, badgeText, title, promptText, leftModel, rightModel, notes, footer, opts)` |
+| `heroVisualSlide` | `(pres, badgeText, title, visualSpec, notes, footer, { label, prompt, badgeColor, panel })` — visual-only teaching slide; the spec fills a soft panel |
+| `choiceSlide` | `(pres, badgeText, title, prompt, options[], notes, footer, { badgeColor, letters })` — 2-4 lettered option cards, each `{ visual, text, caption }`; returns slide with `choiceFrames` |
+| `markChoice` | `(slide, index, { color })` — SUCCESS border + tick on the correct option; call inside a `clickBuild` step or `withReveal` revealFn |
+| `youDoSlide` | `(pres, title, task, steps[], notes, footer, { where, visual, frame, badgeText, badgeColor, visualLabel })` — task is the hero; First/Next/Then chips; optional mini model |
+| `textExtractSlide` | `(pres, badgeText, title, extract, notes, footer, { highlights[], source, prompt })` — reading panel with marker-highlighted phrases |
+| `keyWordSlide` | `(pres, { word, meaning, example, routine, pictogram, image }, notes, footer)` — one word per slide; `pictogram` or `image` supplies the required graphic |
+| `addDataTable` | `(slide, x, y, w, rows[][], { header, colWidths, fontSize, zebra })` — themed table |
 
 Useful subject-specific signatures:
 
 - Science: `processFlowSlide(pres, badgeText, title, promptItems, steps, notes, footer, opts)`
-- Science: `cycleDiagramSlide(pres, badgeText, title, promptItems, stages, notes, footer, opts)`
+- Science: `cycleDiagramSlide(pres, badgeText, title, promptTitle, promptLines, centerLabel, steps, notes, footer)` — each step `{ label, detail, icon }`; `icon` is a pictogram name drawn in the stage chip
+- Science: `processFlowSlide` steps also accept `icon`
+- Numeracy: `workedExSlide` and `dailyReviewSlide` accept a visual spec in the `drawRight` slot
 
 `contentSlide()` now sizes its main card to the amount of content instead of always stretching to the full safe height. Use it for standard content blocks, but if the slide is fundamentally a sequence, system, cycle, or journey, prefer a process/diagram layout rather than bullets alone.
 
@@ -140,6 +203,10 @@ FONT_B         — Body font name
 
 Backward-compatible aliases are added by the factory: `C.NAVY → C.PRIMARY`, `C.CREAM → C.BG_LIGHT`, `C.TEAL → C.SECONDARY`.
 
+Derived at theme creation (not stored in the palette files): `PRIMARY_SOFT`, `SECONDARY_SOFT`, `ACCENT_SOFT`, `ALERT_SOFT`, `SUCCESS_SOFT`, `ASSESS_SOFT` (card-fill washes), the matching `*_LINE` hairline tones, and `BG_DARK_PANEL` (a lighter panel for use on the dark title background). `DECOR_1` / `DECOR_2` are kept for compatibility but no longer drawn.
+
+**Retuned palettes (September 2026).** The original palettes were authored far darker than the contrast floor needed (Foundation `PRIMARY` sat at 12-18:1 against white). `scripts/retune_palettes.js` lifts every role colour to the brightest shade of its hue that clears a per-band target and rewrites the palette files in place, preserving comments. Edit hues freely, then re-run the script; never hand-tune a colour below the floor.
+
 ## Year Level Font Pairings
 
 | Level | Header Font | Body Font | Design Feel |
@@ -174,10 +241,13 @@ The `createTheme()` return object includes everything a build script needs:
 - **Bounds validation:** `validateBounds`
 - **Slide diagnostics:** `warnIfSlideHasOverlaps`, `warnIfSlideElementsOutOfBounds`, `runSlideDiagnostics`
 - **Icon rendering:** `iconToBase64Png`
-- **Element helpers:** `addTopBar`, `addBadge`, `addTitle`, `addCard`, `addFooter`, `addIconCircle`, `addTextOnShape`
+- **Element helpers:** `addTopBar`, `addBadge`, `addTitle`, `addCard` (variants white / tint / outline), `addInstructionCard`, `addFooter`, `addIconCircle`, `addTextOnShape`, `softOf`, `lineOf`
+- **Colour tools:** `mixHex`, `lightenHex`, `darkenHex`
 - **Image helpers:** `addImageWithCaption`, `addInstructionalImageCard`
-- **Click-to-reveal:** `withReveal`
-- **Base builders:** `titleSlide`, `liSlide`, `contentSlide`, `cfuSlide`, `closingSlide`, `annotatedModelSlide`, `compareVisualSlide`
+- **Pictograms:** `addPictogram`, `addPictogramRow`, `listPictograms`, `PICTOGRAMS`, `renderPictogramPng`
+- **Visual specs:** `drawVisual`, `isVisualSpec`, `addDataTable`, `VISUAL_TYPES`
+- **Click-to-reveal:** `clickBuild` (preferred), `withReveal` (fallback)
+- **Base builders:** `titleSlide`, `liSlide`, `contentSlide`, `cfuSlide`, `closingSlide`, `keyWordSlide`, `exitTicketSlide`, `boardBuildSlide`, `annotatedModelSlide`, `compareVisualSlide`, `heroVisualSlide`, `choiceSlide`, `markChoice`, `youDoSlide`, `textExtractSlide`
 - **Subject-specific builders:** varies by subject (see table above)
 - **Metadata:** `_subject`, `_yearLevel`, `_variant`, `_paletteName`
 
@@ -272,7 +342,8 @@ withReveal(
 
 ### Notes
 
-- Both slides share the same teacher notes (the `notes` param is applied to both).
+- The reveal slide must carry its OWN post-reveal notes: pass `{ revealNotes: composeRevealNotes({ answer, beats, prep }) }` as the third argument. Without it the pipeline derives notes and prints an ADVISORY; consecutive identical notes fail the build gate.
+- `clickBuild(slide, [step, ...])` is the preferred reveal mechanism (one slide, real entrance animations); `withReveal` is the fallback for an answer slide that needs a genuinely different layout.
 - The question slide and answer slide are consecutive — no other slides should be inserted between them.
 - The `revealFn` callback receives the full PptxGenJS slide object — you can add any element (text, shapes, images, charts).
 - Available on every theme object: `T.withReveal` (or destructure as `withReveal` from `createTheme()`).
@@ -304,6 +375,10 @@ runSlideDiagnostics(slide, pres);
 
 Use these on custom layouts before shipping. The overlap checker is intentionally conservative and focuses on text/image collisions so normal text-on-card layouts do not produce noise.
 
+### Routine Badges
+
+`addRoutineBadge(slide, routineKey, x, y, opts)` draws a classroom-routine icon in a coloured circle with a label (`miniWhiteboard`, `partnerTalk`, `thumbsUp`, `exitTicket`, ...). It is **synchronous** since September 2026; `await`-ing it is harmless but no longer needed. Before that it was async, and a forgotten `await` shipped a slide with no icon and no warning.
+
 ### Image Helpers
 
 Use local lesson-cached or unit-cached assets only. The theme exposes:
@@ -328,7 +403,7 @@ addImageWithCaption(slide, imagePath, {
 Available on numeracy themes only (via `createTheme("numeracy", ...)`):
 
 - `addPlaceValueChart(slide, x, y, headers, values, opts)` — auto-sizing PV chart. Pass `{ totalW: 4.2 }`.
-- `addNumberLine(slide, x, y, w, labels, opts)` — adaptive label width/font for dense lines.
+- `addNumberLine` is now on EVERY theme (see the shared visual anchor table above).
 - `addAreaModel(slide, x, y, w, h, rows, cols, opts)` — grid-based area model.
 - `addTenthsStrip(slide, x, y, w, h, filled, opts)` — tenths strip visual.
 - `addDecimalDot(slide, geo, colIndex, opts)` — decimal dot positioned from chart geometry.

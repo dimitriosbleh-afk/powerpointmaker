@@ -18,6 +18,9 @@ const { createRoutineHelpers, ROUTINES, ROUTINE_LABELS } = require("./core/routi
 const { createPlaceholderHelpers } = require("./core/placeholders");
 const { createManipulatives }      = require("./core/manipulatives");
 const { composeNotes, composeGlanceNotes, composeRevealNotes } = require("./core/composeNotes");
+const { derivedTones, mixHex, lightenHex, darkenHex } = require("./core/color");
+const { createPictogramHelpers, PICTOGRAMS, listPictograms } = require("./core/pictograms");
+const { createVisualSpec } = require("./core/visualSpec");
 
 // ── Builder factories ──
 const { createBaseBuilders }       = require("./builders/base");
@@ -106,6 +109,24 @@ function createTheme(subject, yearLevel, variant) {
   C.TEAL  = C.TEAL  || C.SECONDARY;
   // C.WHITE and C.MUTED already exist in the palette schema
 
+  // Derived tints. Large fills (hero panels, question cards, option cards)
+  // use the SOFT wash of a role colour so the slide stays calm; the strong
+  // colour is reserved for badges, signals, reveals and small accents
+  // (megaprompt sections 18a and 50). *_LINE is the matching hairline border.
+  ["PRIMARY", "SECONDARY", "ACCENT", "ALERT", "SUCCESS", "ASSESS"].forEach((role) => {
+    if (!C[role]) return;
+    const tones = derivedTones(C[role], C.BG_LIGHT);
+    C[`${role}_SOFT`] = tones.soft;
+    C[`${role}_LINE`] = tones.line;
+  });
+  if (!C.ASSESS) { C.ASSESS = C.ALERT; C.ASSESS_SOFT = C.ALERT_SOFT; C.ASSESS_LINE = C.ALERT_LINE; }
+  // A slightly lighter panel colour for use ON the dark title/closing background.
+  C.BG_DARK_PANEL = mixHex(C.BG_DARK, "FFFFFF", 0.12);
+  /** Soft wash of any hex (e.g. a stage colour a build script chose). */
+  const softOf = (hex, amount) => mixHex(hex, C.BG_LIGHT, amount != null ? amount : 0.88);
+  /** Hairline border tone of any hex. */
+  const lineOf = (hex, amount) => mixHex(hex, C.BG_LIGHT, amount != null ? amount : 0.6);
+
   const FONT_H = palette.FONT_H;
   const FONT_B = palette.FONT_B;
 
@@ -128,15 +149,26 @@ function createTheme(subject, yearLevel, variant) {
   const boundGetContrastColor = (bgHex) => getContrastColor(bgHex, C.WHITE, C.CHARCOAL);
 
   // Build base slide builders (all subjects get these)
+  // Built-in pictograms (sync) and the declarative visual layer. Both are
+  // created before the builders so slide builders can place icons and
+  // fit visual specs without callers touching raw coordinates.
+  const picto = createPictogramHelpers(C, FONT_B, el, S);
+  const visual = createVisualSpec(C, FONT_H, FONT_B, el, S, { manips: createManipulatives(C, FONT_B, S), picto });
+
   const base = createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, {
     exitTicketTitle: subjectLower === "numeracy" ? "Stage 5  |  Show What You Know" : undefined,
+    subject: subjectLower,
+    picto,
+    visual,
+    softOf,
+    lineOf,
   });
 
   // Build subject-specific slide builders
   const subjectFactory = SUBJECT_BUILDER_FACTORIES[subjectLower];
-  const subjectBuilders = subjectFactory(C, FONT_H, FONT_B, el, S);
+  const subjectBuilders = subjectFactory(C, FONT_H, FONT_B, el, S, { picto, visual, softOf, lineOf, subject: subjectLower });
 
-  const routine = createRoutineHelpers(C, FONT_B, el);
+  const routine = createRoutineHelpers(C, FONT_B, el, picto);
   const placeholders = createPlaceholderHelpers(C, FONT_H, FONT_B, el);
   // Visual-anchor manipulative helpers on EVERY theme (a literacy or science
   // lesson may still need a number line, chips or grouped counters).
@@ -175,6 +207,23 @@ function createTheme(subject, yearLevel, variant) {
     // Element helpers
     ...el,
     ...img,
+
+    // Colour tools for custom slides
+    softOf,
+    lineOf,
+    mixHex,
+    lightenHex,
+    darkenHex,
+
+    // Built-in pictograms (white glyph on a coloured circle or tile, or a
+    // flat charcoal glyph) - the "visual built in" for vocabulary, science
+    // stages, wellbeing feelings, launch hooks. Synchronous.
+    ...picto,
+    PICTOGRAMS,
+    listPictograms,
+
+    // Declarative visuals: drawVisual(slide, { type: "tensFrame", filled: 7 }, frame)
+    ...visual,
 
     // Click-to-reveal. clickBuild is the preferred mechanism (one slide, one
     // element per click); withReveal duplicates the slide and is the fallback

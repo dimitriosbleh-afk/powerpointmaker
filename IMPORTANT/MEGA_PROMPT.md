@@ -1,6 +1,6 @@
 © 2026 James Hooke. Confidential. Internal use only. Not for redistribution.
 
-# Explicit Teaching Lesson Builder Mega-Prompt v12.5
+# Explicit Teaching Lesson Builder Mega-Prompt v12.6
 ## Foundation to Year 6 | Australian Primary Schools | Visual-First | Editable | Source-Faithful | Cognitive Load Aware | Classroom-Ready | School Feedback Aligned
 
 This v12.0 revision turns classroom response and teacher preparation into explicit system requirements. It adds high-quality opportunities to respond, decision-grade checks for understanding, curriculum-aware retrieval and prepared response branches. The Glance Format from v11.0 remains, now with source validation for think time, one named response routine, complete response, proceed and pivot branches, fresh re-checks and protected reveals. OG remains template-locked and receives only the compatible response-quality and pacing refinements named in `OG_MEGA_PROMPT.md`.
@@ -12,6 +12,8 @@ The v12.2 revision codifies two practices that previously lived only in per-requ
 The v12.4 revision responds to a successful build against a supplied school planner (T3W4 Discovery 2, division swoop lesson, 28 July 2026), where the teacher asked for a new lesson inside an existing 119-slide deck and judged the result house-quality. It adds the missing procedure for inserting into a supplied deck (section 20c), separates slide transitions from click builds and names the duplicate-slide reveal as the fallback it is (section 20b), locks the teacher's own vernacular for a notation or routine (section 5b), accepts natural teacher language as input and permits one structured question at a genuine fork (section 7), requires the mark itself to be constructed when no representation exists (section 15a), and requires honest scoping of QA when a renderer is unavailable (section 60a). The header also corrects to the current version; v12.2 and v12.3 shipped under a stale heading.
 
 The v12.5 revision responds to teacher feedback that concise, compliant notes could still sound clipped and disjointed when read verbatim. Sections 45-47 now distinguish useful spoken connective tissue (brief words such as "Okay", "Now", "So" and "Let's") from empty management padding. SAY lines must form a short, connected spoken turn, and the full sequence must pass a read-aloud flow test without the teacher inventing transitions. The note budgets remain unchanged: the goal is more natural speech, not more teaching detail.
+
+The v12.6 revision is a visual redesign of the shared theme layer after an audit of rendered decks (6 September 2026) found them bland, dark and template-heavy: every palette sat far darker than its contrast floor, so Foundation decks looked like corporate reports; title slides carried the generated-deck blobs; visuals were hand-placed small; vocabulary cards had no graphic. The theme now carries the design language (section 50), so a build script that uses the builders inherits it: retuned palettes (bright for Foundation, deeper for Year 5/6, every white-on-colour pairing still AA), soft tint panels for hero surfaces with strong colour reserved for signals, one subject motif on title and closing slides, hero sizing for short content, a declarative visual layer (`drawVisual` and visual specs, section 15j) so representations fill their frame without coordinates, 200+ built-in pictograms (section 18) so word cards, science stages, feelings and hooks carry a picture, and four pattern builders (`heroVisualSlide`, `choiceSlide`, `youDoSlide`, `textExtractSlide`) for the slides that were being hand-drawn. `addNumberLine` is now on every subject. Pedagogy is unchanged; what changed is that the default output now looks like the lesson the rules describe.
 
 The v12.3 revision responds to live-teaching feedback (James Hooke, Big Ideas Session 2, 15 July 2026): fully spec-compliant notes still read as an unglanceable wall on an iPad mid-lesson. The Glance Format's budgets become RENDERED budgets (sections 45-46): about 120 words per live zone, no physical line over about 16 words, one idea per physical line, one blank line between logical units, speech never fused with stage directions on the same line, SCAN as three short lines, and a caret for exponents in notes (10^6). Reveal slides now carry their own short post-reveal notes instead of a byte-copy of the base slide's (section 47) - when the teacher clicks to the answer, the notes advance with the slide. Recognised note anchors render in real bold in the built file. The 8-unit structure, fixed order and voice rules are unchanged; what changed is that the budgets now measure what the teacher's eye actually meets. OG decks are unaffected.
 
@@ -75,6 +77,7 @@ If any item fails, revise before delivering.
    - If the slide says number line, show an actual number line.
    - If the slide says grid, array, table, map, timeline, shape, fraction strip or model, show that exact representation.
    - Icons alone are not enough unless the slide is purely a routine or transition slide.
+   - In this codebase the representation is a visual spec drawn by the theme (section 15j): `{ type: "tensFrame", filled: 7 }` on a `heroVisualSlide`, in a `choiceSlide` option, or in the right-column slot of `contentSlide` / `workedExSlide`. Do not hand-place a representation with coordinates when a spec exists for it.
 
 3. The main question, number, word, sentence, model or task must be the largest item on the slide.
    - The task or question is the hero.
@@ -1088,6 +1091,47 @@ Fix the slide by:
 - keeping the model and matching task close together
 - splitting the slide into two slides when needed
 
+## 15j. Which Builder For Which Slide
+
+Every slide shape below has a tested builder. Use the builder; never rebuild its layout with raw shapes and text. The builder gives the slide the house look (section 50), the band's sizes (section 16a), the diagnostics, and the visual at hero size.
+
+| The slide is... | Build it with | Notes |
+|---|---|---|
+| the representation itself, nothing else to read (F-2 concept slide, "look at this model") | `heroVisualSlide(pres, badge, title, visualSpec, notes, footer, { label, prompt })` | Visual fills a soft panel. `label` names the model ("Tens frame"). `prompt` is one short student line, or omit it |
+| one big statement or question (launch, hinge, exit prompt) | `cfuSlide` for checks; `contentSlide` with one string, or 2-3 short lines, for launches and prompts | Both set short content hero-sized and centred automatically |
+| bullets beside a model (I Do, We Do) | `contentSlide(..., bullets, notes, footer, visualSpec)` or numeracy `workedExSlide(..., steps, notes, footer, visualSpec)` | Pass the spec in the `drawRight` slot instead of a callback. Keep 2-4 short lines |
+| Which one? Same or different? Example and non-example? A / B / C hinge | `choiceSlide(pres, badge, title, prompt, [{ visual }, { visual }, { text }], ...)` then `clickBuild(s, [() => markChoice(s, i)])` | 2-4 options, lettered, never numbered. Reveal the tick on click |
+| a You Do task with First / Next / Then | `youDoSlide(pres, title, task, [first, next, then], notes, footer, { where, visual, frame })` | Task is the hero, steps are small chips, optional mini model and sentence frame |
+| a text extract, quote or read-aloud | `textExtractSlide(pres, badge, title, extract, notes, footer, { highlights, source, prompt })` | Text is exact (section 5a). Highlights are the phrases students hunt for |
+| a key word | `keyWordSlide(pres, { word, meaning, example, pictogram }, ...)` | One word per slide, always with `pictogram` or `image` (section 29) |
+| a poster, article, layout or source to annotate | `annotatedModelSlide` / `compareVisualSlide` with `previewSpec` | Sections 15a, 18, and the CLAUDE.md visual-anchor rules |
+| a cycle, journey or ordered system | `cycleDiagramSlide` / `processFlowSlide` with `icon` on each step | Science decks; the loop or the order is the visual |
+| a data table | `heroVisualSlide` with `{ type: "table", rows }` or `addDataTable` | Header row, zebra rows, band-sized type |
+| Daily Review / Fluency | `dailyReviewSlide` (accepts a visual spec beside the prompts) / `fluencySlide` | Reveal answers with `clickBuild` + `addRevealAnswerBar` |
+| a live board build | `boardBuildSlide` | Blank canvas with hints |
+| LI and SC, title, closing, exit ticket, Teacher Resources | `liSlide`, `titleSlide`, `closingSlide`, `exitTicketSlide`, `addResourceSlide` | `titleSlide(..., { visual })` puts the lesson's anchor on the cover |
+
+Visual specs the theme can draw (`drawVisual`, any builder slot that takes one):
+
+`tensFrame` `fiveFrame` `doubleTensFrame` `dotCard` `dotCards` `numberTrack` `numberLine` `fractionStrips` `array` `baseTen` `groupedCounters` `ppwMat` `chips` `pictogram` `pictograms` `text` `table` `image` `custom`
+
+Examples:
+
+```js
+{ type: "tensFrame", filled: 7 }
+{ type: "doubleTensFrame", filledTop: 10, filledBottom: 8 }
+{ type: "numberLine", start: 0, end: 2, step: 1/3, marked: [3] }
+{ type: "fractionStrips", strips: [{ denom: 4, shaded: 3 }, { denom: 4, shaded: 0 }] }
+{ type: "groupedCounters", groups: 3, per: 4 }
+{ type: "ppwMat", whole: 7, partA: 4, partB: null }
+{ type: "pictograms", items: ["happy", "calm", "worried", "sad"] }
+{ type: "text", text: "9" }
+{ type: "table", rows: [["Animal", "Legs"], ["Dog", "4"], ["Bird", "2"]] }
+{ type: "custom", draw: (slide, frame) => { /* only when no type fits */ } }
+```
+
+The theme sizes and centres the spec to fill the frame it is given. If you find yourself computing x, y, w and h for a representation, stop and pass a spec.
+
 # 16. SLIDE FACE LIMITS
 
 Student-facing slides must be sparse, visual and readable from the back of the room.
@@ -1228,9 +1272,12 @@ Where the templates live:
 
 - `themes/core/gradeBand.js` is the source-of-truth size table per band.
 - `themes/core/elements.js` contains shared `addBadge`, `addTitle`, `addFooter` and related elements.
-- `themes/builders/base.js` contains universal slides: title, LI, content, CFU, closing, key word card (`keyWordSlide` - one word per slide, never definition bullet lists), exit ticket, board build, annotatedModel and compareVisual, plus `addRevealAnswerBar`.
+- `themes/builders/base.js` contains universal slides: title, LI, content, CFU, closing, key word card (`keyWordSlide` - one word per slide with its pictogram, never definition bullet lists), exit ticket, board build, annotatedModel and compareVisual, the pattern builders `heroVisualSlide`, `choiceSlide` (+ `markChoice`), `youDoSlide`, `textExtractSlide`, plus `addRevealAnswerBar`.
 - `themes/builders/<subject>.js` contains subject-specific slides.
-- `themes/core/manipulatives.js` contains the grade-band-aware visual anchor helpers available on every theme: `addTensFrame`, `addFiveFrame`, `addDotCard`, `addNumberTrack`, `addNumberLine`, `addFractionStripSet`, `addArray`, `addBaseTenBlocks`, `addChipRow`, `addGroupedCounters`, `addPartPartWholeMat`. When a slide needs one of these representations, use the helper. Never hand-draw a representation a helper covers.
+- `themes/core/manipulatives.js` contains the grade-band-aware visual anchor helpers available on every theme: `addTensFrame`, `addFiveFrame`, `addDotCard`, `addNumberTrack`, `addNumberLine`, `addFractionStripSet`, `addArray`, `addBaseTenBlocks`, `addChipRow`, `addGroupedCounters`, `addPartPartWholeMat`. When a slide needs one of these representations, use the helper or, better, a visual spec (section 15j) so the theme sizes it. Never hand-draw a representation a helper covers.
+- `themes/core/visualSpec.js` is the declarative layer: `drawVisual(slide, spec, frame)` and `addDataTable`.
+- `themes/core/pictograms.js` is the built-in picture set: `addPictogram`, `addPictogramRow`, `listPictograms()` (section 18).
+- `themes/core/color.js` and `scripts/retune_palettes.js` hold the colour rules. Palette hues live in `themes/palettes/`; after editing one, run the retune script so the contrast floors hold.
 
 When you write a build script, pass the user's grade through verbatim:
 
@@ -1310,6 +1357,14 @@ The visual must support learning.
 
 If a supplied source deck already contains a strong visual, preserve it unless the user asks for redesign.
 
+Built-in pictograms:
+
+- The theme carries 200+ pictograms: simple flat glyphs (butterfly, sun, cloud, rain, drop, tooth, brain, book, pencil, clock, coins, happy, sad, worried, angry, calm, and so on). `listPictograms()` returns every name and the Visual Catalogue renders the full sheet.
+- Use them where a slide needs a picture that names a thing: the graphic on a `keyWordSlide`, the `icon` on a science cycle or process stage, a row of feelings on a wellbeing launch (`{ type: "pictograms", items: [...] }`), a hook image on a launch, the subject glyph the theme already puts on title and closing slides.
+- A pictogram names; it does not teach the representation. A tens frame slide still shows a tens frame. A fraction slide still shows the strips. A pictogram never stands in for a photograph, map, artefact or source that students are meant to interpret (use a local instructional image for those).
+- Only use names from the catalogue. Do not invent a name and hope: an unknown name prints `WARN [pictogram]` and fails the build gate, because a missing picture is invisible in the rendered file. If the thing you need is not there (there is no frog), choose the nearest honest pictogram (`bug`, `leaf`, `drop`) or a word-only card; never a misleading one.
+- Pictograms render white on a coloured circle by default (style `circle`), or as a rounded tile, or flat in a theme colour. One style per slide.
+
 # 18a. CLASSROOM ROUTINE ICONS
 
 Use simple classroom routine icons to help students know what to do.
@@ -1352,6 +1407,7 @@ Use consistent colour signals:
 - Prefer softened palette applications for backgrounds, cards and large fills.
 - Reserve the strongest theme colours for small accents, headings, checks and reveal signals.
 - Avoid large blocks of harsh saturated colour when a softer tint or light background would keep the slide calmer and easier to read.
+- In this codebase the theme does this for you: hero and question cards use the derived soft tints (`C.PRIMARY_SOFT`, `C.ALERT_SOFT`, `T.softOf(hex)`), and the strong colour sits on the badge, the technique pill, chips and the answer bar. Do not override a hero card with a solid strong fill; if a custom panel needs a fill, use the soft tint.
 
 # 18b. VIDEOS AND ENGAGING MATERIALS
 
@@ -1899,7 +1955,7 @@ Use simple routines:
 
 Do not create long vocabulary list slides.
 
-In this codebase, vocabulary slides are built with `keyWordSlide(...)`: one call per word, hero word plus student-friendly meaning plus a say-it routine. Never render vocabulary as a definition bullet list.
+In this codebase, vocabulary slides are built with `keyWordSlide(...)`: one call per word, hero word plus its picture plus student-friendly meaning plus a say-it routine. Pass `pictogram: "<name>"` from the built-in set (section 18), or `image: <local path>` when a real picture from the supplied text is the point. A word card without a graphic prints an ADVISORY at build time and is not finished. Never render vocabulary as a definition bullet list.
 
 Do not use abstract academic vocabulary unless it is being explicitly taught.
 
@@ -2084,6 +2140,8 @@ Slide face should not show:
 - every explanation
 - tiny working
 
+In this codebase: a visual-only I Do is `heroVisualSlide`; a model with two to four short lines beside it is `contentSlide` or numeracy `workedExSlide` with the visual spec in the right-column slot; steps that should appear one at a time use `clickBuild` on that slide. Never split an I Do across a duplicate-slide reveal pair (section 20).
+
 Teacher notes must include think-alouds.
 
 Think-alouds should show:
@@ -2116,6 +2174,8 @@ It should include:
 - support fading
 
 Do not put all answers on the slide before students think.
+
+In this codebase: a Which one? / Same or different? / A-B-C check is `choiceSlide` with the answer revealed by `clickBuild(s, [() => markChoice(s, i)])`; a prompt beside a model is `contentSlide` or `workedExSlide` with a visual spec; the answer arrives through `addRevealAnswerBar` on click.
 
 We Do should not be:
 
@@ -2157,6 +2217,8 @@ You Do instructions:
 - no dense paragraph
 - no tiny text
 - steps smaller than the main task
+
+In this codebase the You Do slide is `youDoSlide(pres, title, task, [first, next, then], notes, footer, { where, visual, frame })`: the task renders as the hero, the three steps as small numbered chips, `where` as a small pill ("On your worksheet", "In your book"), `visual` as a mini model on the right, and `frame` as a dashed sentence stem. Do not build a You Do from a bullet list.
 
 # 36. CHECKING FOR UNDERSTANDING
 
@@ -3080,6 +3142,16 @@ The activity experience varies.
 
 Use a primary classroom visual style.
 
+The theme carries this style; a build script inherits it by using the builders. What the theme guarantees on every deck:
+
+- Palettes that look like their year level: Foundation bright and warm, Year 5/6 deeper and calmer, every white-on-colour pairing readable from the back of the room. Colour identifies the stage (badge, top bar, pill) and the moment (red check, green answer), and nowhere else.
+- Soft tint panels for the hero surface (the question, the task, the model) with a hairline edge; white cards for supporting content; outline cards for options and reading panels. No shadows on tint panels, no strips on hero panels.
+- One motif per deck: the subject glyph in a soft circle on the title slide, repeated small on the closing slide; or the lesson's own visual anchor on the cover via `titleSlide(..., { visual })`. No blurred circles, no gradients, no accent lines under titles.
+- Hero sizing without hand-tuning: short questions and statements set large and centred; representations fitted to fill their frame; pill badges that shrink-fit their label.
+- A picture where a picture helps: pictograms on word cards, science stages and feelings rows.
+
+If a rendered slide does not look like that, the defect is in the shared layer or in a hand-drawn slide, not in the palette. Fix the builder; do not paint over it in the build script.
+
 Prefer:
 
 - clean white or light background
@@ -3102,6 +3174,8 @@ Prefer:
 
 Avoid:
 
+- decorative blobs, blurred circles or gradients on title and closing slides
+- solid strong-colour fills behind body text
 - cramped white boxes
 - tiny footer text
 - too many bullets

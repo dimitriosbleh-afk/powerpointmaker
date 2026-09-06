@@ -13,8 +13,30 @@ const { DEFAULT_SIZES, byBand } = require("../core/gradeBand");
  * @param {object} el      Bound element helpers: addTopBar, addBadge, addTitle, addCard, addFooter, addIconCircle, addTextOnShape
  * @returns {object}        { experimentSlide, observationSlide, conclusionSlide, processFlowSlide, cycleDiagramSlide }
  */
-function createScienceBuilders(C, FONT_H, FONT_B, el, S) {
+function createScienceBuilders(C, FONT_H, FONT_B, el, S, defaults) {
   const sz = S || DEFAULT_SIZES;
+  const picto = (defaults && defaults.picto) || null;
+
+  /**
+   * Stage chip with an optional pictogram at its left edge. `step.icon` is a
+   * pictogram name (see listPictograms()); the chip text is "n. Label".
+   */
+  function drawStageChip(slide, x, y, w, h, text, color, icon, fontSize) {
+    slide.addShape("roundRect", { x, y, w, h, rectRadius: h / 2, fill: { color } });
+    const hasIcon = Boolean(icon && picto && picto.hasPictogram(icon));
+    if (icon && picto && !hasIcon) picto.addPictogram(slide, icon, x, y, h); // emits the WARN
+    if (hasIcon) {
+      const d = h * 0.72;
+      picto.addPictogram(slide, icon, x + 0.08, y + (h - d) / 2, d, { style: "flat", color: C.WHITE, glyphColor: C.WHITE });
+    }
+    const textX = hasIcon ? x + h * 0.8 + 0.06 : x + 0.08;
+    slide.addText(String(text), {
+      x: textX, y, w: x + w - textX - 0.08, h,
+      fontSize, fontFace: FONT_B, color: C.WHITE, bold: true,
+      align: hasIcon ? "left" : "center", valign: "middle", margin: 0,
+      fit: "shrink", shrinkText: true,
+    });
+  }
   function drawHorizontalArrow(slide, x, y, w, color, direction) {
     slide.addShape("line", {
       x, y, w: Math.max(0.05, w), h: 0,
@@ -24,6 +46,22 @@ function createScienceBuilders(C, FONT_H, FONT_B, el, S) {
         beginArrowType: direction === "left" ? "triangle" : "none",
         endArrowType: direction === "right" ? "triangle" : "none",
       },
+    });
+  }
+
+  /**
+   * Straight arrow from (x1, y1) to (x2, y2) with the head at the end point.
+   * PptxGenJS lines run top-left to bottom-right inside their box, so other
+   * directions use flipH / flipV (negative sizes corrupt the file).
+   */
+  function drawArrowBetween(slide, x1, y1, x2, y2, color) {
+    const w = Math.max(0.05, Math.abs(x2 - x1));
+    const h = Math.max(0.05, Math.abs(y2 - y1));
+    slide.addShape("line", {
+      x: Math.min(x1, x2), y: Math.min(y1, y2), w, h,
+      flipH: x2 < x1,
+      flipV: y2 < y1,
+      line: { color, width: 1.6, beginArrowType: "none", endArrowType: "triangle" },
     });
   }
 
@@ -356,26 +394,26 @@ function createScienceBuilders(C, FONT_H, FONT_B, el, S) {
 
     const safeSteps = (steps || []).slice(0, 6);
     const chipPalette = [C.PRIMARY, C.SECONDARY, C.ACCENT, C.ALERT, C.SUCCESS, C.PRIMARY];
-    const rowGap = 0.10;
-    const rowH = Math.min(0.50, (flowH - 0.62 - rowGap * Math.max(safeSteps.length - 1, 0)) / Math.max(safeSteps.length, 1));
+    const rowGap = safeSteps.length > 4 ? 0.10 : 0.16;
+    const rowH = Math.min(0.62, (flowH - 0.56 - rowGap * Math.max(safeSteps.length - 1, 0)) / Math.max(safeSteps.length, 1));
+    const chipH = Math.min(0.46, rowH - 0.04);
+    const chipW = 1.85;
+    const chipFont = Math.min(sz.chip + 2, Math.round(chipH * 30));
+    const detailFont = Math.min(sz.bodyDense, Math.max(sz.chip, Math.round(rowH * 26)));
 
     safeSteps.forEach((step, index) => {
       const rowY = flowY + 0.42 + index * (rowH + rowGap);
       const chipColor = step && step.color ? step.color : chipPalette[index];
-      el.addTextOnShape(s, `${index + 1}. ${String((step && step.label) || "")}`, {
-        x: flowX + 0.20, y: rowY, w: 1.75, h: 0.36, rectRadius: 0.06,
-        fill: { color: chipColor },
-      }, {
-        fontSize: sz.chip - 0.5, fontFace: FONT_B, color: C.WHITE, bold: true,
-      });
+      drawStageChip(s, flowX + 0.20, rowY + (rowH - chipH) / 2, chipW, chipH,
+        `${index + 1}. ${String((step && step.label) || "")}`, chipColor, step && step.icon, chipFont);
       s.addText(String((step && step.detail) || ""), {
-        x: flowX + 2.05, y: rowY - 0.01, w: 2.18, h: 0.40,
-        fontSize: sz.caption + 1, fontFace: FONT_B, color: C.CHARCOAL,
+        x: flowX + 0.20 + chipW + 0.12, y: rowY, w: flowW - chipW - 0.52, h: rowH,
+        fontSize: detailFont, fontFace: FONT_B, color: C.CHARCOAL,
         margin: 0, valign: "middle", fit: "shrink", shrinkText: true,
       });
       if (index < safeSteps.length - 1) {
         s.addShape("line", {
-          x: flowX + 1.05, y: rowY + 0.36, w: 0, h: rowGap + 0.06,
+          x: flowX + 0.20 + chipW / 2, y: rowY + (rowH + chipH) / 2, w: 0, h: rowGap + (rowH - chipH) / 2 + 0.02,
           line: { color: C.MUTED, width: 1.2, beginArrowType: "none", endArrowType: "triangle" },
         });
       }
@@ -422,78 +460,97 @@ function createScienceBuilders(C, FONT_H, FONT_B, el, S) {
       });
     });
 
+    // Narrower prompt card so the cycle itself gets the room (it is the
+    // visual anchor the megaprompt requires for cycle content).
     el.addInstructionCard(s, promptItems, {
-      x: 0.5, y: CONTENT_TOP, w: 3.6, h: 2.65,
+      x: 0.5, y: CONTENT_TOP, w: 3.0, h: SAFE_BOTTOM - CONTENT_TOP,
       strip: C.SECONDARY, fill: C.WHITE,
     });
 
-    const cardX = 4.35;
+    const cardX = 3.7;
     const cardY = CONTENT_TOP;
-    const cardW = 5.15;
-    const cardH = 3.65;
-    el.addCard(s, cardX, cardY, cardW, cardH, { strip: C.PRIMARY, fill: C.WHITE });
+    const cardW = 5.8;
+    const cardH = SAFE_BOTTOM - CONTENT_TOP;
+    el.addCard(s, cardX, cardY, cardW, cardH, { variant: "tint", tone: C.PRIMARY });
 
-    const cx = cardX + 2.58;
-    const cy = cardY + 1.48;
-    const orbitX = 1.45;
-    const orbitY = 0.76;
     const safeSteps = (steps || []).slice(0, 4);
     const palette = [C.PRIMARY, C.SECONDARY, C.ACCENT, C.SUCCESS];
+    const hasDetail = safeSteps.some((st) => st && st.detail);
+    const legendH = hasDetail ? 0.5 : 0;
+    const legendGapY = 0.1;
+    const legendRows = hasDetail ? Math.ceil(safeSteps.length / 2) : 0;
+    const legendBlockH = legendRows * legendH + Math.max(legendRows - 1, 0) * legendGapY;
+    const diagramH = cardH - 0.3 - (legendBlockH ? legendBlockH + 0.2 : 0);
+    const chipW = 1.95;
+    const chipH = 0.46;
+    const cx = cardX + cardW / 2;
+    const cy = cardY + 0.15 + diagramH / 2;
+    const orbitX = (cardW - chipW) / 2 - 0.35;
+    const orbitY = (diagramH - chipH) / 2 - 0.1;
     const positions = [
-      { x: cx, y: cy - orbitY - 0.24 },
+      { x: cx, y: cy - orbitY },
       { x: cx + orbitX, y: cy },
-      { x: cx, y: cy + orbitY + 0.22 },
+      { x: cx, y: cy + orbitY },
       { x: cx - orbitX, y: cy },
     ];
 
+    // Faint orbit ring so the loop reads as a loop before the arrows do.
+    s.addShape("ellipse", {
+      x: cx - orbitX, y: cy - orbitY, w: orbitX * 2, h: orbitY * 2,
+      fill: { color: C.WHITE, transparency: 100 },
+      line: { color: C.PRIMARY_LINE || C.MUTED, width: 1.5, dashType: "dash" },
+    });
+
+    const centreW = Math.min(1.9, orbitX * 2 - chipW - 0.3);
     el.addTextOnShape(s, centerLabel || "Cycle", {
-      x: cx - 0.7, y: cy - 0.34, w: 1.4, h: 0.68, rectRadius: 0.12,
-      fill: { color: C.BG_LIGHT },
-      line: { color: C.PRIMARY, width: 1.2 },
+      x: cx - centreW / 2, y: cy - 0.36, w: centreW, h: 0.72, rectRadius: 0.14,
+      fill: { color: C.WHITE },
+      line: { color: C.PRIMARY, width: 1.4 },
     }, {
-      fontSize: sz.sectionLabel + 2, fontFace: FONT_H, color: C.PRIMARY, bold: true,
+      fontSize: sz.sectionLabel + 3, fontFace: FONT_H, color: C.PRIMARY, bold: true,
     });
 
     safeSteps.forEach((step, index) => {
       const pos = positions[index];
       const color = step && step.color ? step.color : palette[index];
-      el.addTextOnShape(s, `${index + 1}. ${String((step && step.label) || "")}`, {
-        x: pos.x - 0.75, y: pos.y - 0.20, w: 1.5, h: 0.40, rectRadius: 0.08,
-        fill: { color },
-      }, {
-        fontSize: sz.chip, fontFace: FONT_B, color: C.WHITE, bold: true,
-      });
+      drawStageChip(s, pos.x - chipW / 2, pos.y - chipH / 2, chipW, chipH,
+        `${index + 1}. ${String((step && step.label) || "")}`, color, step && step.icon, sz.chip);
     });
 
     if (safeSteps.length >= 4) {
-      drawHorizontalArrow(s, cx + 0.35, cy - orbitY - 0.06, orbitX - 0.75, C.MUTED, "right");
-      drawVerticalArrow(s, cx + orbitX + 0.05, cy + 0.25, orbitY - 0.35, C.MUTED, "down");
-      drawHorizontalArrow(s, cx - orbitX + 0.45, cy + orbitY + 0.02, orbitX - 0.8, C.MUTED, "left");
-      drawVerticalArrow(s, cx - orbitX - 0.05, cy - orbitY + 0.2, orbitY - 0.45, C.MUTED, "up");
+      // Clockwise arrows between neighbouring chips, drawn as diagonals that
+      // follow the ring, so no arrow ever crosses a chip label.
+      const gapX = chipW / 2 + 0.14;
+      const gapY = chipH / 2 + 0.12;
+      drawArrowBetween(s, cx + gapX, cy - orbitY + 0.06, cx + orbitX - 0.12, cy - gapY, C.CHARCOAL);       // top -> right
+      drawArrowBetween(s, cx + orbitX - 0.12, cy + gapY, cx + gapX, cy + orbitY - 0.06, C.CHARCOAL);      // right -> bottom
+      drawArrowBetween(s, cx - gapX, cy + orbitY - 0.06, cx - orbitX + 0.12, cy + gapY, C.CHARCOAL);      // bottom -> left
+      drawArrowBetween(s, cx - orbitX + 0.12, cy - gapY, cx - gapX, cy - orbitY + 0.06, C.CHARCOAL);      // left -> top
     }
 
-    const legendY = cardY + 2.72;
-    const legendW = 2.08;
-    const legendH = 0.42;
-    const legendGapX = 0.18;
-    const legendGapY = 0.12;
-    safeSteps.forEach((step, index) => {
-      const row = Math.floor(index / 2);
-      const col = index % 2;
-      const lx = cardX + 0.24 + col * (legendW + legendGapX);
-      const ly = legendY + row * (legendH + legendGapY);
-      const color = step && step.color ? step.color : palette[index];
-      s.addShape("roundRect", {
-        x: lx, y: ly, w: legendW, h: legendH, rectRadius: 0.06,
-        fill: { color: C.BG_LIGHT },
-        line: { color, width: 1.0 },
+    if (hasDetail) {
+      const legendY = cardY + cardH - 0.15 - legendBlockH;
+      const legendGapX = 0.16;
+      const legendW = (cardW - 0.4 - legendGapX) / 2;
+      safeSteps.forEach((step, index) => {
+        const row = Math.floor(index / 2);
+        const col = index % 2;
+        const lx = cardX + 0.2 + col * (legendW + legendGapX);
+        const ly = legendY + row * (legendH + legendGapY);
+        const color = step && step.color ? step.color : palette[index];
+        s.addShape("roundRect", {
+          x: lx, y: ly, w: legendW, h: legendH, rectRadius: 0.08,
+          fill: { color: C.WHITE },
+          line: { color, width: 1.2 },
+        });
+        s.addShape("rect", { x: lx, y: ly, w: 0.08, h: legendH, fill: { color } });
+        s.addText(`${index + 1}. ${String((step && step.detail) || "")}`, {
+          x: lx + 0.16, y: ly + 0.04, w: legendW - 0.24, h: legendH - 0.08,
+          fontSize: Math.max(sz.caption + 2, sz.chip), fontFace: FONT_B, color: C.CHARCOAL,
+          margin: 0, align: "left", valign: "middle", fit: "shrink", shrinkText: true,
+        });
       });
-      s.addText(String((step && step.detail) || ""), {
-        x: lx + 0.08, y: ly + 0.07, w: legendW - 0.16, h: legendH - 0.14,
-        fontSize: sz.caption, fontFace: FONT_B, color: C.CHARCOAL,
-        margin: 0, align: "center", fit: "shrink", shrinkText: true,
-      });
-    });
+    }
 
     if (footer) el.addFooter(s, footer);
     if (notes) s.addNotes(notes);

@@ -14,11 +14,25 @@ const { prepareBullets, fitBulletFontSize } = require("../core/bulletFit");
  * @param {string} FONT_H  Heading font name
  * @param {string} FONT_B  Body font name
  * @param {object} el       Bound element helpers: addTopBar, addBadge, addTitle, addCard, addFooter, addIconCircle, addTextOnShape
- * @returns {object}        { STAGE_COLORS, addStageBadge, workedExSlide, dailyReviewSlide, fluencySlide, addPlaceValueChart, addTenthsStrip, addAreaModel, addNumberLine, addDecimalDot }
+ * @returns {object}        { STAGE_COLORS, addStageBadge, workedExSlide, dailyReviewSlide, fluencySlide, addPlaceValueChart, addTenthsStrip, addAreaModel, addDecimalDot } plus every shared manipulative (addNumberLine lives in core/manipulatives.js)
  */
-function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
+function createNumeracyBuilders(C, FONT_H, FONT_B, el, S, defaults) {
   const sz = S || DEFAULT_SIZES;
   const manipulatives = createManipulatives(C, FONT_B, sz);
+  const visual = (defaults && defaults.visual) || null;
+  const isSpec = (value) => Boolean(visual && visual.isVisualSpec && visual.isVisualSpec(value));
+
+  /** Accept a callback or a visual spec for the right column (see base.js). */
+  function resolveDrawRight(drawRight) {
+    if (typeof drawRight === "function") return drawRight;
+    if (isSpec(drawRight)) {
+      return (slide, guide) => visual.drawVisual(slide, drawRight, {
+        x: guide.rightX, y: guide.panelTop + 0.05,
+        w: guide.rightW, h: guide.safeBottom - guide.panelTop - 0.1,
+      });
+    }
+    return null;
+  }
 
   /* ------------------------------------------------------------------ */
   /*  STAGE_COLORS                                                       */
@@ -59,7 +73,7 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
     const w = byBand(sz, baseW + 0.7, baseW + 0.4, baseW);
     const h = byBand(sz, 0.42, 0.40, 0.36);
     slide.addShape("roundRect", {
-      x: 0.5, y: 0.2, w, h, rectRadius: 0.08,
+      x: 0.5, y: 0.2, w, h, rectRadius: h / 2,
       fill: { color },
     });
     slide.addText("Stage " + stageNum + "  |  " + resolvedLabel, {
@@ -84,11 +98,15 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
    * @param {string[]} steps       Bullet-point steps for the worked example
    * @param {string}   notes       Teacher notes
    * @param {string}   footer      Footer text
-   * @param {Function} drawRight   Optional callback(slide) for right-column visuals
+   * @param {Function|object} drawRight   Optional callback(slide, layoutGuide) for right-column
+   *                                      visuals, OR a visual spec such as
+   *                                      { type: "fractionStrips", strips: [...] } which is
+   *                                      fitted into the right column automatically
    * @returns {object}             The slide object
    */
-  function workedExSlide(pres, stageNum, stageLabel, title, steps, notes, footer, drawRight) {
+  function workedExSlide(pres, stageNum, stageLabel, title, steps, notes, footer, drawRightArg) {
     const s = pres.addSlide();
+    const drawRight = resolveDrawRight(drawRightArg);
     const stageColor = STAGE_COLORS[String(stageNum)] || C.PRIMARY;
     el.addTopBar(s, stageColor);
     addStageBadge(s, stageNum, stageLabel);
@@ -124,7 +142,14 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
     // Ideal step font size; narrow column drops one step. fitBulletFontSize
     // shrinks deterministically when content would overflow the card —
     // PptxGenJS shrinkText on bullet lists is unreliable, so we pre-compute.
-    const idealStepFontSize = drawRight ? sz.bodyDense : sz.body;
+    // Few short steps get hero-ish type: an I Do with three lines beside a
+    // model should not read as small print (megaprompt 15b / 16).
+    const stepCount = prepared.length;
+    const longest = prepared.reduce((m, p) => Math.max(m, p.text.length), 0);
+    const sparseSteps = stepCount <= 3 && longest <= (drawRight ? 34 : 60);
+    const idealStepFontSize = sparseSteps
+      ? (drawRight ? sz.body : Math.round(sz.body * 1.2))
+      : (drawRight ? sz.bodyDense : sz.body);
     const fontFloor = byBand(sz, 14, 13, 11);
     const charsPerLine = drawRight ? byBand(sz, 28, 32, 36) : byBand(sz, 42, 50, 56);
     const stepFontSize = fitBulletFontSize(prepared, textH, charsPerLine, idealStepFontSize, fontFloor);
@@ -324,84 +349,6 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
   }
 
   /* ------------------------------------------------------------------ */
-  /*  addNumberLine                                                      */
-  /* ------------------------------------------------------------------ */
-
-  /**
-   * Number line with adaptive label sizing. Auto-adjusts font size and
-   * label width when interval width drops below 0.5" to prevent overlap.
-   * Marked positions use ALERT-coloured dots.
-   *
-   * @param {object}   slide            PptxGenJS slide object
-   * @param {number}   x                Left edge x (inches)
-   * @param {number}   y                Baseline y (inches)
-   * @param {number}   w                Total line width (inches)
-   * @param {string[]} labels           Tick labels (use "" for unlabelled ticks)
-   * @param {number[]} markedPositions  Indices of labels to mark with dots
-   * @param {object}   opts             Options: tickH, labelFontSize
-   * @returns {object}                  Geometry: { x, y, w, n, intervalW, tickH, labelW, labelFontSize }
-   */
-  function addNumberLine(slide, x, y, w, labels, markedPositions, opts) {
-    const o = opts || {};
-    const tickH = o.tickH || 0.12;
-    const n = labels.length - 1;
-
-    if (n <= 0) {
-      console.warn("[addNumberLine] need at least 2 labels — skipping");
-      return { x, y, w, n: 0, intervalW: 0, tickH, labelW: 0, labelFontSize: 12 };
-    }
-
-    const intervalW = w / n;
-    const baseLabelW = 0.7;
-    const labelW = Math.min(baseLabelW, intervalW * 1.4);
-    const maxLabelLen = Math.max(...labels.filter(l => l !== "").map(l => l.length), 1);
-    const baseFontSize = o.labelFontSize || byBand(sz, 18, 15, 12);
-    let labelFontSize = baseFontSize;
-    if (intervalW < 0.5 && maxLabelLen > 3) {
-      labelFontSize = Math.max(8, Math.round(baseFontSize * (intervalW / 0.5)));
-    }
-
-    validateBounds("addNumberLine", x - 0.15, y - tickH, w + 0.3, tickH + 0.4);
-
-    // Main line with proper arrowheads (hand-drawn diagonal stubs render as
-    // broken slashes in PowerPoint and LibreOffice).
-    slide.addShape("line", {
-      x: x - 0.12, y, w: w + 0.24, h: 0,
-      line: { color: C.CHARCOAL, width: 2.5, beginArrowType: "arrow", endArrowType: "arrow" },
-    });
-
-    // Ticks and labels
-    labels.forEach((lbl, i) => {
-      const tx = x + i * intervalW;
-
-      // Tick mark
-      slide.addShape("line", { x: tx, y: y - tickH / 2, w: 0, h: tickH, line: { color: C.CHARCOAL, width: 2 } });
-
-      // Label
-      if (lbl !== "") {
-        slide.addText(lbl, {
-          x: tx - labelW / 2, y: y + tickH / 2 + 0.04, w: labelW, h: 0.28,
-          fontSize: labelFontSize, fontFace: FONT_B, color: C.CHARCOAL,
-          align: "center", margin: 0,
-        });
-      }
-    });
-
-    // Marked position dots
-    if (markedPositions) {
-      markedPositions.forEach((idx) => {
-        const mx = x + idx * intervalW;
-        slide.addShape("roundRect", {
-          x: mx - 0.07, y: y - 0.07, w: 0.14, h: 0.14, rectRadius: 0.07,
-          fill: { color: C.ALERT },
-        });
-      });
-    }
-
-    return { x, y, w, n, intervalW, tickH, labelW, labelFontSize };
-  }
-
-  /* ------------------------------------------------------------------ */
   /*  addDecimalDot                                                      */
   /* ------------------------------------------------------------------ */
 
@@ -454,8 +401,20 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
    * @param {Function}          [drawRight] Optional callback(slide, layoutGuide) for a right-column representation (grid, table, number line, etc.)
    * @returns {object}                       The slide object
    */
-  function dailyReviewSlide(pres, title, prompts, notes, footer, drawRight) {
+  function dailyReviewSlide(pres, title, prompts, notes, footer, drawRightArg) {
     const s = pres.addSlide();
+    const promptCountEarly = (Array.isArray(prompts) ? prompts : [prompts])
+      .filter((p) => String(p == null ? "" : p).trim()).length;
+    // A visual spec is fitted beside the prompt cards, level with them. With
+    // no prompts at all the representation IS the review, so it takes the
+    // full width (use heroVisualSlide for that case where possible).
+    const drawRight = typeof drawRightArg === "function"
+      ? drawRightArg
+      : (isSpec(drawRightArg)
+        ? (slide, guide) => visual.drawVisual(slide, drawRightArg, promptCountEarly === 0
+          ? { x: 0.5, y: guide.panelTop, w: 9, h: guide.leftCardH }
+          : { x: guide.rightX, y: guide.panelTop, w: guide.rightW, h: guide.leftCardH })
+        : null);
     el.addTopBar(s, C.ACCENT);
     addStageBadge(s, 1, "Daily Review");
     el.addTitle(s, title || "Daily Review", { color: C.ACCENT });
@@ -475,7 +434,7 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
 
     cleaned.forEach((q, i) => {
       const y = startY + i * (cardH + 0.10);
-      el.addCard(s, 0.5, y, cardW, cardH, { strip: C.ACCENT, fill: C.WHITE });
+      el.addCard(s, 0.5, y, cardW, cardH, { variant: "tint", tone: C.ACCENT });
       s.addText(String(q), {
         x: 0.7, y: y + 0.08, w: cardW - 0.4, h: cardH - 0.16,
         fontSize, fontFace: FONT_H, color: C.CHARCOAL,
@@ -546,7 +505,7 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
 
     cleaned.forEach((q, i) => {
       const x = 0.5 + i * (cardW + cardGap);
-      el.addCard(s, x, startY, cardW, cardH, { strip: C.ACCENT, fill: C.WHITE });
+      el.addCard(s, x, startY, cardW, cardH, { variant: "outline", tone: C.ACCENT });
       s.addText(String(q), {
         x: x + 0.16, y: startY + 0.16, w: cardW - 0.32, h: cardH - 0.32,
         fontSize: promptFontSize, fontFace: FONT_H, color: C.CHARCOAL,
@@ -574,7 +533,6 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S) {
     addPlaceValueChart,
     addTenthsStrip,
     addAreaModel,
-    addNumberLine,
     addDecimalDot,
     ...manipulatives,
   };

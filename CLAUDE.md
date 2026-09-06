@@ -111,6 +111,8 @@ Subjects: `literacy` | `numeracy` | `inquiry` | `wellbeing` | `science`
 Year levels: `foundation` | `grade1` | `grade2` | `grade34` | `grade56`
 Variants: `0`-`5` (use `weekToVariant(weekNumber)` for 1-based weeks)
 
+**Design language lives in the theme, not the build script.** Palettes are retuned so every role colour is the brightest shade of its hue that still clears a per-band contrast floor (Foundation reads bright, Year 5/6 deeper); strong colours appear only on badges, pills, chips, reveals and ticks, while hero panels use the derived soft tints `C.PRIMARY_SOFT` / `C.ALERT_SOFT` / etc. (`T.softOf(hex)` for any colour). Title and closing slides carry one subject glyph, never decorative blobs. `addCard` has three variants (`white`, `tint`, `outline`). `contentSlide`, `cfuSlide` and `exitTicketSlide` set short content hero-sized automatically. Do not fight this with raw `addShape`/`addText`; if a look is wrong, fix the shared layer. To change palette hues, edit `themes/palettes/*.js` then run `node scripts/retune_palettes.js` to re-establish the floors. Read `docs/theme-system.md` "Design Language".
+
 **Theme selection:** The explicit `Subject:` field in the user's prompt is authoritative for theme selection. Do not silently swap to a different theme because the content looks cross-curricular. If the content and subject seem misaligned, keep the theme aligned to the stated subject unless the user explicitly changes it.
 
 **Theme cohesion: All lessons in the same unit MUST use the same variant.** Switching palettes between lessons in a unit looks confusing and unprofessional. Pick one variant for the unit (typically based on the week number) and use it for every lesson. Different variants are for different weeks or different units, not different lessons within the same unit.
@@ -240,17 +242,27 @@ Every theme object (all subjects) carries grade-band-aware visual anchor helpers
 | "Groups of" counters | `addGroupedCounters(slide, x, y, groups, per)` |
 | Part-part-whole mat | `addPartPartWholeMat(slide, x, y, w, h, {whole, partA, partB})` (`null` = blank box) |
 | Answer reveal | `addRevealAnswerBar(slide, [answers], {y, h, fontSize})` inside `withReveal` revealFn — never a hand-placed success bar |
-| Vocabulary word card | `keyWordSlide(pres, { word, meaning, example }, notes, footer)` — ONE word per slide. NEVER render vocabulary as a definition bullet list; call once per word (F-2: 1-3 words, Y3-4: 2-4, Y5-6: 2-5) |
+| Vocabulary word card | `keyWordSlide(pres, { word, meaning, example, pictogram }, notes, footer)` — ONE word per slide WITH its picture (`pictogram: "<name>"` or `image: path`). NEVER render vocabulary as a definition bullet list; call once per word (F-2: 1-3 words, Y3-4: 2-4, Y5-6: 2-5). A word card with no graphic prints an ADVISORY and is not finished |
+| Any representation, sized to fill a frame | `drawVisual(slide, { type, ...values }, frame)` — declarative: `{ type: "tensFrame", filled: 7 }`, `{ type: "numberLine", start: 0, end: 2, step: 1/3, marked: [3] }`, `{ type: "fractionStrips", strips: [...] }`, `pictograms`, `table`, `text`, `image`, `custom`. Every `drawRight` slot (`contentSlide`, `workedExSlide`, `dailyReviewSlide`) accepts a spec instead of a callback |
+| Visual-only teaching slide | `heroVisualSlide(pres, badge, title, visualSpec, notes, footer, { label, prompt })` — the representation fills a soft panel; use for F-2 concept slides and any slide whose purpose is the model |
+| Which one? / A-B-C / example and non-example | `choiceSlide(pres, badge, title, prompt, [{ visual, text, caption }...], notes, footer)` then `clickBuild(s, [() => markChoice(s, correctIndex)])` — never hand-place option cards |
+| You Do task | `youDoSlide(pres, title, task, ["First...", "Next...", "Then..."], notes, footer, { where, visual, frame })` — task is the hero, steps are chips |
+| Text extract / read-aloud | `textExtractSlide(pres, badge, title, extract, notes, footer, { highlights, source, prompt })` — exact quoted text, marker-highlighted phrases |
+| Picture for a word, stage, feeling or hook | `addPictogram(slide, name, x, y, size, { style, color, label })` / `addPictogramRow(slide, x, y, w, ["happy", "sad"])` — 200+ built-in names (`listPictograms()`, sheet in the Visual Catalogue). Science `cycleDiagramSlide` / `processFlowSlide` steps take `icon: "<name>"`. Unknown names fail the build |
+| Data table | `addDataTable(slide, x, y, w, rows[][])` or `{ type: "table", rows }` — themed header, zebra rows, band-sized type |
 
 PDF twins for worksheets/scaffolds (in `themes/pdf_helpers.js`): `addTenFramePdf`, `addFractionStripsPdf`, `addNumberLinePdf`, `addPpwMatPdf`, `addHundredGridPdf` (the paper twin of `addAreaModel` — 10x10 grid, cells fill column by column), plus `addCycleDiagramPdf` (cycles/loops — never hand-draw cycle arrows with doc.moveTo, they come out tangled) and `addPosterMockupPdf`/`addPosterPairPdf` (designed visuals on paper). Same rule: never hand-draw these with raw pdfkit primitives.
 
-Visual reference deck: `node scripts/build_and_check.js builds/build_visual_catalogue.js` renders every helper per grade band to `output/Visual_Catalogue/`. Rebuild and re-inspect it after ANY change to the theme's visual helpers.
+Visual reference deck: `node scripts/build_and_check.js builds/build_visual_catalogue.js` renders every helper per grade band, every pattern builder and the full pictogram sheet to `output/Visual_Catalogue/`. Rebuild and re-inspect it after ANY change to the theme's visual helpers, pictograms or builders, then run `npm run qa:theme` (includes `tests/test_visual_builders.js`).
+
+`addRoutineBadge` and `addPictogram` are synchronous (resvg-js). Never `await` a builder to make an icon appear; if an icon is missing, the build printed a `WARN`.
 
 ## Key Conventions
 
 - Palette uses semantic keys: PRIMARY, SECONDARY, ACCENT, ALERT, SUCCESS, BG_DARK, BG_LIGHT, BG_CARD, CHARCOAL, WHITE, MUTED. Backward-compatible aliases exist (C.NAVY, C.CREAM, C.TEAL).
 - White text on coloured fills. Dark text on light fills. NEVER same colour for text and its background.
-- White icons need a coloured circle background on light surfaces.
+- White icons need a coloured circle background on light surfaces (that is what `addPictogram` style `circle` and `addRoutineBadge` do).
+- Title slides take `opts.visual` (a visual spec) to show the lesson's own anchor instead of the subject glyph: `titleSlide(pres, title, subtitle, meta, notes, { visual: { type: "tensFrame", filled: 10 } })`. Never draw decorative shapes on title or closing slides.
 - Images are opt-in instructional tools, not decoration. Use local lesson-cached or unit-cached assets only, and only when they directly support understanding.
 - Distinguish `visual anchor` from `actual image`. A diagram, labelled mockup, source layout, or builder like `annotatedModelSlide(...)` counts as a visual anchor. A real local image is required when students are meant to interpret authentic visual evidence such as a photograph, map, artefact, poster, illustration, or source document itself.
 - For literacy topics involving source analysis, text features, advertisements, posters, article layout, maps, artefacts, or compare-text-and-visual evidence, at least one core teaching slide should use a visual anchor such as `annotatedModelSlide(...)`, `addInstructionalImageCard(...)`, or another explicit source/feature layout. Text-only bullets are not sufficient by default for these cases.
@@ -271,7 +283,7 @@ Visual reference deck: `node scripts/build_and_check.js builds/build_visual_cata
 - Theme diagnostics are available for manual/custom slides: `runSlideDiagnostics(slide, pres)` plus the narrower `warnIfSlideHasOverlaps(...)` and `warnIfSlideElementsOutOfBounds(...)`. Use them before shipping any custom layout.
 - `contentSlide` and `workedExSlide` now auto-run diagnostics when a `drawRight` callback is provided. Any ERROR or WARN in build output is a layout bug — fix it before shipping.
 - Diagnostics also flag UNDERFILLED slides: if content stops in the top half of the content area, you get a WARN telling you to enlarge the hero task/visual or centre the layout. Do not shrink the check away — make the hero bigger (that is the fix the mega-prompt wants). `{ ignoreUnderfill: true }` is allowed only for deliberate visual-only white space (e.g. a lone Foundation ten frame).
-- `cfuSlide` and `exitTicketSlide` are density-aware: short questions render hero-sized and vertically centred automatically. Prefer them over hand-built question slides.
+- `cfuSlide`, `exitTicketSlide` and `contentSlide` are density-aware: short questions and one to three short lines render hero-sized on a soft tint panel, vertically centred, automatically. Prefer them over hand-built question slides.
 - Standard footer text is ignored by diagnostics. If a custom footer-like element is falsely flagged, keep diagnostics enabled and use a narrow `ignoreIndices` override rather than disabling safe-bottom checks for the whole slide.
 - Theme image helpers are available for local assets: `addImageWithCaption(...)` and `addInstructionalImageCard(...)`.
 - `annotatedModelSlide(...)` is available on every theme object for labelled source features, poster/article structure, and "notice this part" teaching. Do not swap subjects just to reach it.
@@ -443,6 +455,6 @@ Do not say "QA passed" unless the Google Slides compatibility pass in step 5 is 
 
 ```bash
 pip install "markitdown[pptx]" Pillow pymupdf   # Python: content + visual QA
-npm install                                     # Node: pptxgenjs, pdfkit, react-icons, sharp
+npm install                                     # Node: pptxgenjs, pdfkit, react-icons, sharp, @resvg/resvg-js (sync icon rendering)
 # LibreOffice (soffice) only needed for optional local image preview
 ```

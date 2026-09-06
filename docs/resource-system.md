@@ -6,7 +6,7 @@ Lessons can include printable student resources such as worksheets, graphic orga
 
 1. Build scripts generate PDFs using `themes/pdf_helpers.js` (pdfkit-based).
 2. PDFs go in `resources-session{N}/` inside the lesson folder, for example `output/ALG_Session3/resources-session3/`.
-3. A "Resources" slide at the end of the PPTX lists all companion files with clickable hyperlinks.
+3. A Teacher Resources slide immediately after the title slide lists all companion files with clickable hyperlinks (megaprompt section 44; never at the end of the deck).
 4. The teacher clicks a resource card, opens the PDF, and prints it.
 
 Example folder structure:
