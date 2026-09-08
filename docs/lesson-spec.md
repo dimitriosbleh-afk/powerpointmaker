@@ -22,6 +22,13 @@ Golden exemplars (copy their shape, not their content):
 Validation is strict. Every problem is printed with the field path and the
 fix. Warnings (`ADVISORY [spec] ...`) are work not yet done.
 
+For ordering and sequencing tasks, author the student items in a mixed order
+and keep the solution separately in `notes.answer`, `reveal.answers` where
+supported, and worksheet `items[].answer` / `answerVisual`. The builders
+preserve the supplied item order; they do not shuffle it or detect an
+already-solved task. Follow `IMPORTANT/MEGA_PROMPT.md` section 19a, including
+its student-view QA, for slides, worksheet visuals and cut-out `cards`.
+
 ## Top level
 
 ```json

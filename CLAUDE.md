@@ -174,6 +174,7 @@ Teacher notes are a live teleprompter and heads-up display: ~98% of the time the
 
 ## Cognitive Load Defaults
 
+- Ordering and sequencing questions on slides and student resources must start mixed, with the correct sequence kept separately in notes, reveals and answer keys. Follow `IMPORTANT/MEGA_PROMPT.md` section 19a for authoring, intentional ordered models and student-view QA.
 - `Lean` means fewer, better-taught moves, not less learning. Apply this across all sessions, not just literacy.
 - Protect the high-yield parts of instruction: clear modelling, repeated practice, retrieval, CFU, guided practice, and independent application.
 - If a lesson feels overcrowded, cut low-yield extras first: duplicate explanations, oversized vocab banks, unnecessary reveal pairs, long note essays, decorative transitions, and multiple competing objectives.

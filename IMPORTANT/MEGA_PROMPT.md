@@ -51,6 +51,8 @@ For each slide in the list, choose the builder from the table in section 15j and
 
 Lean, hero-sized, readable from the back (15, 16, 0a items 1-4, 15). The task or model is the largest thing on the slide; steps, cues and "what you need" are smaller. No question numbers. No teacher explanation on the face; it lives in the notes. Language for a student twelve months below level (10, 0a item 13); depth for a student eighteen months ahead through thinking, not harder words (9, 73).
 
+For any ordering or sequencing question, author a mixed starting arrangement separately from the correct answer (19a). Students must have something to rearrange; hiding an answer bar does not help if the prompt already shows the solution.
+
 ## A6. Write the notes for every slide
 
 Glance Format on every teaching slide (45, 46, 46a, 47): ANSWER first when the slide asks anything, 2-5 numbered beats with CAPS anchors, ASK with think time in seconds and one named routine on the school cue script (75a), SCAN as three lines with a proceed and a pivot, TRAP with the fix, STRETCH and HELP on I Do, We Do and You Do, then the divider and a one-line prep zone with the tag. Live zone at most 120 words; no line over 16 words. One plain line for title, resources and closing slides. In this codebase run `node scripts/check_spec_notes.js builds/<name>.json` and fix until it prints "All notes within budget".
@@ -58,6 +60,8 @@ Glance Format on every teaching slide (45, 46, 46a, 47): ANSWER first when the s
 ## A7. Decide resources and materials
 
 Default is zero or one printed resource (40, 0a item 7). A worksheet uses the same representation as the slides, drawn by the paper twins, spacious for the band, with an answer key (42, 61, 68i, 68m). An enabling scaffold changes the form of the task (39, 73). List every manipulative, tool and board setup on the Teacher Resources slide (44).
+
+Apply section 19a to worksheets, sequencing strips and cut-out cards too. The printed starting arrangement must be mixed before cutting; do not leave shuffling to the teacher or student.
 
 ## A8. Build, gate, then look
 
@@ -294,6 +298,10 @@ If any item fails, revise before delivering.
     - Never add a `teacher_brief` object to a unit manifest.
     - Never write a `Teacher Week Brief.pdf`, unit overview PDF or session summary PDF into `Resources/`.
     - Teacher preparation lives in the teacher notes (Glance Format prep zones) and the teacher-facing overview slide inside the deck.
+
+27. Ordering and sequencing tasks must not arrive already solved.
+    - Apply the mixed-start and answer checks in section 19a to every student slide and resource, including worksheets and cut-out cards.
+    - Check the actual visible or printed arrangement, not only the wording of the instruction or the presence of a hidden answer.
 
 # 1. FOUNDATION TO YEAR 6 FIRST
 
@@ -1526,6 +1534,34 @@ Use Board Build for:
 Teacher notes explain what the teacher writes, draws or adds.
 
 Do not generate a worksheet when board work and mini-whiteboards are better.
+
+# 19a. ORDERING AND SEQUENCING TASKS
+
+When students must order, sequence, rank, sort into an order or arrange items, the starting arrangement must require them to do that thinking. This applies across subjects: numbers, fractions, decimals, sizes, dates, story events, sentence strips and process or life-cycle stages. Apply it in review, fluency, We Do, CFU, You Do, exit tickets and all student resources.
+
+Author each task in this order:
+
+1. Solve it first. Establish the correct order and the direction or criterion, such as smallest to largest or earliest to latest. If more than one order is valid, record the accepted alternatives or the rule for accepting them in the teacher notes or answer key.
+2. Create a separate mixed starting arrangement using exactly the same items, with no omissions, additions or changed values. For three or more distinct items, use a genuine mix rather than simply reversing the answer. For two items, reverse them if that is the only unsolved arrangement. Avoid reusing the same positional pattern across successive questions.
+3. Check that the starting arrangement is not any valid answer to the question. A rotated cycle may still be correctly sequenced; rotation alone is not a mix. If the items cannot form an unsolved arrangement, change the task rather than pretending it needs ordering.
+4. Put only the mixed items on the student task. Keep the correct sequence in teacher notes, the teacher answer key and, where appropriate, a protected reveal after students respond (20). Recheck any answer expressed through card letters or positions after mixing. When a slide and sheet show the same question, keep their starting arrangement and item labels consistent.
+
+Examples:
+
+- FAIL: "Put these numbers from smallest to largest: 1, 2, 3, 4, 5."
+- PASS: "Put these numbers from smallest to largest: 3, 1, 5, 2, 4." Teacher answer: 1, 2, 3, 4, 5.
+- PASS: "Put these events in order within a day: eat lunch, wake up, go to bed, eat breakfast." Teacher answer: wake up, eat breakfast, eat lunch, go to bed.
+
+Protect the task in the layout too:
+
+- Read the items in the order students see them: left to right, top to bottom, across table rows, and across printed card grids. Do not print a cut-and-paste strip in the correct order and assume cutting makes it a sequencing task.
+- Do not attach answer-position numbers, letters, colour gradients or arrows that reveal the sequence. Neutral card identifiers are allowed for recording an answer, but must not encode the correct order. Keep meaningful content clues, such as dates in a chronology task.
+- For a student sequencing task, show mixed loose items and blank destinations where needed. A completed timeline, number line, process flow or cycle can give away the answer even when a nearby list is mixed.
+- Shuffle whole items only. Preserve exact supplied quotations, sentence wording, values and image-label pairings (5, 5a). Do not reorder a locked source extract; use separate task cards where the task allows them.
+
+Intentional ordered displays are allowed: an I Do model, a worked example, a reference number line, a teacher answer key or an explicit "Is this already in order? Explain" check. A partial scaffold may fix one step but must leave genuine ordering work. Make that purpose clear; never label an already completed arrangement as ordinary ordering practice.
+
+Before delivery, solve each task from its student view, compare it with the notes, reveal and answer key, and fix any already-solved arrangement or answer mismatch. This is a content QA check, not something the structural build gates currently detect.
 
 # 20. CLICK-TO-REVEAL
 
@@ -3721,6 +3757,7 @@ Everything else in this document is judgement, and passing the gate says nothing
 - a quote matches its source
 - the representation matches the concept
 - the worked example gives away the answer
+- an ordering task already presents a valid answer or leaks it through layout (19a)
 - the enabler changes the form of the task
 - the anchor holds across a unit
 - the language suits a student twelve months below level
@@ -3766,6 +3803,7 @@ Fail and revise if:
 - a vocabulary slide lacks a meaningful graphic
 - a quote does not exactly match the source
 - an answer is visible before students respond on a reveal slide
+- an ordering or sequencing task is already solved, or labels and layout give away the order (19a)
 - classroom routine icons are missing where they would support young students
 - there is unused space but the main task, model or visual is still too small
 - background boxes, cards or placeholders look misaligned
@@ -3857,6 +3895,7 @@ Fail and revise if:
 - Foundation students would need the teacher to read too much
 - answer spaces are too small
 - cut-and-paste pieces do not fit
+- ordering items or cut-out cards are already in a valid answer order, or the key no longer matches the mixed task (19a)
 - there are too many questions
 - there are three worksheets when one would do
 - the worksheet is referenced but not listed on the Teacher Resources slide
