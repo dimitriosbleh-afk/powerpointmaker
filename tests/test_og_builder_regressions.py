@@ -325,8 +325,10 @@ class OgBuilderRegressionTests(unittest.TestCase):
         OG.validate_sound_bank("Friday", session)
         self.assertEqual(OG.NOTES, [])
 
-    # ------------------------------------------------ 2f taught-morpheme gate
-    def _junct_week(self, items):
+    # ------------------------------------------------ 2f/3d You Do gates
+    GLOSSED_RULE = "Parts: dis- (apart), -tion (the act of), -ly (in that way)"
+
+    def _junct_week(self, items, rule="", example="", check_items=()):
         return {
             "taught_morphemes": [],
             "sessions": [{
@@ -336,31 +338,58 @@ class OgBuilderRegressionTests(unittest.TestCase):
                                       {"morph": "-ly", "type": "suffix"}],
                 "sound_bank": [{"morph": "dis-", "type": "prefix"},
                                {"morph": "-tion / -sion", "type": "suffix"}],
-                "new_morph_activity": {"items": items},
+                "new_morph_activity": {"rule": rule, "example": example,
+                                       "items": items,
+                                       "check_items": list(check_items)},
             }],
         }
 
+    def _run_gate(self, week):
+        """Run the You Do gate on the LAST session; returns (warnings, notes)."""
+        OG.WARNINGS.clear()
+        OG.NOTES.clear()
+        session = week["sessions"][-1]
+        OG.validate_activity_morphemes(session["day"], week, session)
+        return list(OG.WARNINGS), list(OG.NOTES)
+
     def test_you_do_flags_an_untaught_prefix(self):
-        """in- appeared once in a grid script line, so it is not taught."""
+        """in- appeared once in a grid script line: not taught, and not printed."""
         week = self._junct_week([
             "1. junct + -tion = ?    2. dis- + joint + -ed = ?",
             "3. joint + -ly = ?    4. in- + junct + -tion = ?",
-        ])
-        OG.WARNINGS.clear()
-        OG.validate_activity_morphemes("Wednesday", week, week["sessions"][0])
-        flagged = [w for w in OG.WARNINGS if "You Do uses morpheme" in w]
-        self.assertEqual(len(flagged), 1, OG.WARNINGS)
+        ], rule=self.GLOSSED_RULE)
+        warnings, _ = self._run_gate(week)
+        flagged = [w for w in warnings if "You Do uses morpheme" in w]
+        self.assertEqual(len(flagged), 1, warnings)
         self.assertIn("'in-'", flagged[0])
 
-    def test_you_do_accepts_taught_parts_and_common_inflections(self):
-        """dis- and -tion are banked, -ly is a review card, -ed is universal."""
+    def test_you_do_accepts_printed_parts_and_common_inflections(self):
+        """dis-, -tion and -ly are glossed on the rule banner; -ed is universal."""
         week = self._junct_week([
             "1. junct + -tion = ?    2. dis- + joint + -ed = ?",
             "3. joint + -ly = ?",
-        ])
-        OG.WARNINGS.clear()
-        OG.validate_activity_morphemes("Wednesday", week, week["sessions"][0])
-        self.assertEqual(OG.WARNINGS, [])
+        ], rule=self.GLOSSED_RULE)
+        self.assertEqual(self._run_gate(week), ([], []))
+
+    def test_taught_but_unprinted_part_trips_the_one_recall_rule(self):
+        """Team decision (Sept 2026): taught earlier is not printed. -ly is a
+        review card on this day and still needs its gloss on the face."""
+        week = self._junct_week(["1. joint + -ly = ?"])
+        warnings, _ = self._run_gate(week)
+        self.assertEqual(len(warnings), 1, warnings)
+        self.assertIn("'-ly'", warnings[0])
+        self.assertIn("one-recall", warnings[0])
+
+    def test_printed_meaning_clears_an_untaught_part_with_a_note(self):
+        """The 2f escape hatch: `in- (onto)` is reachable. Untaught -> NOTE;
+        listed in taught_morphemes -> silent."""
+        week = self._junct_week(["1. in- (onto) + junct + -tion (the act of) = ?"])
+        warnings, notes = self._run_gate(week)
+        self.assertEqual(warnings, [])
+        self.assertEqual(len(notes), 1, notes)
+        self.assertIn("'in-'", notes[0])
+        week["taught_morphemes"] = ["in-"]
+        self.assertEqual(self._run_gate(week), ([], []))
 
     def test_you_do_scan_reaches_the_second_prompt_on_a_packed_line(self):
         """10c packs two prompts per line; the tokenizer must see both."""
@@ -372,33 +401,97 @@ class OgBuilderRegressionTests(unittest.TestCase):
         noise = "T-intersection self-check well-known 10-12yo"
         self.assertEqual([m.group(1) for m in OG.AFFIX_TOKEN_RE.finditer(noise)], [])
 
-    def test_you_do_prose_items_are_not_scanned_for_affixes(self):
-        """No sum, no morpheme notation - a sorting task must not false-alarm."""
+    def test_you_do_prose_items_do_not_false_alarm_on_hyphenated_words(self):
+        """Prose prompts are scanned now, but re-do is a word, not notation."""
         week = self._junct_week(["Sort these: re-do, un-tie, pre-heat"])
-        OG.WARNINGS.clear()
-        OG.validate_activity_morphemes("Wednesday", week, week["sessions"][0])
-        self.assertEqual(OG.WARNINGS, [])
+        self.assertEqual(self._run_gate(week), ([], []))
 
-    def test_week_taught_morphemes_clears_an_earlier_taught_affix(self):
-        week = self._junct_week(["1. in- + junct + -tion = ?"])
-        OG.WARNINGS.clear()
-        OG.validate_activity_morphemes("Wednesday", week, week["sessions"][0])
-        self.assertTrue(OG.WARNINGS)
-        week["taught_morphemes"] = ["in-"]
-        OG.WARNINGS.clear()
-        OG.validate_activity_morphemes("Wednesday", week, week["sessions"][0])
-        self.assertEqual(OG.WARNINGS, [])
-
-    def test_earlier_session_in_the_week_counts_as_taught(self):
-        week = self._junct_week(["1. eco + -tion = ?"])
+    def test_earlier_session_in_the_week_still_needs_its_gloss(self):
+        """eco was taught on Monday: printed it builds silently, unprinted it fails."""
+        week = self._junct_week(["1. eco (house) + -tion (the act of) = ?"])
         week["sessions"].insert(0, {
             "day": "Monday",
             "new_morphology": {"morph": "eco", "type": "root"},
             "morphology_review": [], "sound_bank": [],
         })
-        OG.WARNINGS.clear()
-        OG.validate_activity_morphemes("Wednesday", week, week["sessions"][1])
-        self.assertEqual(OG.WARNINGS, [])
+        self.assertEqual(self._run_gate(week), ([], []))
+        week["sessions"][-1]["new_morph_activity"]["items"] = [
+            "1. eco + -tion (the act of) = ?"]
+        warnings, _ = self._run_gate(week)
+        self.assertEqual(len(warnings), 1, warnings)
+        self.assertIn("'eco'", warnings[0])
+
+    def test_meaning_sum_items_are_retired(self):
+        """The shape the team rejected (Sept 2026): meanings in, whole word out."""
+        for item in ("1. small + look at = ?", "bad function = ?",
+                     "3. same time, together = ?",
+                     "One done for you: house + study of = ecology"):
+            week = self._junct_week([item])
+            warnings, _ = self._run_gate(week)
+            self.assertTrue(any("meaning sum" in w for w in warnings),
+                            (item, warnings))
+
+    def test_meaning_sum_is_caught_on_the_check_slide(self):
+        """`small + wave = ?` looks like a part sum until the answer shows
+        that small is a meaning: it does not survive inside microwave."""
+        week = self._junct_week(
+            ["1. small + wave = ?"],
+            check_items=["1. small + wave = microwave (very small waves)"])
+        warnings, _ = self._run_gate(week)
+        self.assertTrue(any("'small'" in w and "meaning sum" in w
+                            for w in warnings), warnings)
+
+    def _suffix_week(self, morph, items, check_items=(), rule=""):
+        return {
+            "taught_morphemes": [],
+            "sessions": [{
+                "day": "Monday",
+                "new_morphology": {"morph": morph, "type": "suffix"},
+                "morphology_review": [], "sound_bank": [],
+                "new_morph_activity": {"rule": rule, "items": items,
+                                       "check_items": list(check_items)},
+            }],
+        }
+
+    def test_word_building_survives_spelling_changes(self):
+        """cooperate -> cooperative and private -> privacy are part sums: the
+        base visibly survives inside the answer, so nothing fires."""
+        week = self._suffix_week(
+            "-acy", ["1. private + -acy = ______    2. literate + -acy = ______"],
+            check_items=["1. private + -acy = privacy, the state of being private",
+                         "2. literate + -acy = literacy, being able to read"])
+        self.assertEqual(self._run_gate(week), ([], []))
+        week = self._suffix_week(
+            "-ive", ["1. cooperate + -ive = ?"],
+            check_items=["1. cooperate + -ive = cooperative (working together)"])
+        self.assertEqual(self._run_gate(week), ([], []))
+
+    def test_literal_meaning_check_items_scan_the_right_side_sum(self):
+        """The -al defect: `microbial = micro + bio + -al` asked students for a
+        suffix nobody had printed. The sum on the RIGHT of a check item is the
+        student's work."""
+        week = {
+            "taught_morphemes": [],
+            "sessions": [{
+                "day": "Tuesday",
+                "new_morphology": {"morph": "micro", "type": "root"},
+                "morphology_review": [], "sound_bank": [],
+                "new_morph_activity": {
+                    "rule": "Write the sum beside each word.",
+                    "items": ["1. microbial =    2. microsecond ="],
+                    "check_items": [
+                        "1. microbial = micro + bio + -al = relating to tiny life",
+                        "2. microsecond = micro + second = one millionth of a second",
+                    ]},
+            }],
+        }
+        warnings, _ = self._run_gate(week)
+        self.assertEqual(len(warnings), 1, warnings)
+        self.assertIn("'-al'", warnings[0])
+        week["sessions"][0]["new_morph_activity"]["rule"] = (
+            "Write the sum beside each word. Parts: -al (relating to)")
+        warnings, _ = self._run_gate(week)
+        self.assertEqual(warnings, [])
 
 
 if __name__ == "__main__":

@@ -357,8 +357,10 @@ bank is copied into books before that morpheme is taught), when a dictation targ
 one of this week's new grid words / new learned words or is built on this week's focus
 morphemes (dictation is revision from 2-3 weeks ago - students copy this week's words
 from their books, school feedback Aug 2026), or when a You
-Do morpheme sum uses an affix outside the taught set; the rules and the escape hatch
-(`taught_morphemes`) are in OG_MEGA_PROMPT sections 2a/2c, 6 and 2f. Builder output uses two
+Do item is a meaning sum (retired Sept 2026) or asks for any part beyond today's
+morpheme without its meaning printed on the slide face (one-recall rule); the rules
+and the escape hatch (`taught_morphemes`) are in OG_MEGA_PROMPT sections 2a/2c, 6, 2f
+and 3d. Builder output uses two
 levels: every `WARN` fails the build, a `NOTE` is advisory but still needs answering.
 Run `python tests/test_og_builder_regressions.py` before
 changing the OG builder, its sample specification, or its note rules.

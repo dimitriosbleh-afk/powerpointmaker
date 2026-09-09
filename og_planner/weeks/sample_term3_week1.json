@@ -327,29 +327,29 @@
       ],
       "extension": "1. SAY: \"When you finish, add a suffix to one spelling word and explain the new meaning.\"\n2. CHECK: malfunction can become malfunctioning; the meaning must still be clear.\nSTRETCH: Use two different mal- words in one sentence and make both meanings clear.",
       "new_morph_activity": {
-        "title": "Morpheme sums for mal-",
-        "rule": "Use bad, wrong or ill to build each mal- word.",
+        "title": "Build the mal- word",
+        "rule": "Join mal- (bad, wrong, ill) to each word. Write the whole new word.",
+        "example": "One done for you:\nmal- + treat = maltreat",
         "items": [
-          "bad function = ?",
-          "poor nutrition = ?",
-          "wrongly formed = ?",
-          "feeling ill = ?"
+          "1. mal- + function = ?      2. mal- + nutrition = ?",
+          "3. mal- + formation = ?      4. mal- + treatment = ?"
         ],
-        "item_size": 22,
+        "item_size": 18,
         "routine": "Whiteboards - 3 minutes - boards up",
-        "footer": "Stretch: explain which mal- meaning fits best",
-        "notes": "ANSWER: malfunction, malnutrition, malformation, malaise.\n1. SAY: \"Build one real mal- word for each meaning. Then label mal- as bad, wrong or ill.\"\n2. TIME: 3 minutes. Work alone on whiteboards.\n3. CIRCULATE: check that each word is real and its mal- meaning fits.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build malfunction together, then re-ask.\nTRAP: using bad for every word. Fix: reread the whole word, choose bad, wrong or ill, then rewrite it.\nSTRETCH: Explain why malaise matches ill more closely than wrong.\nHELP: Give the four-word bank; students match each word to a meaning instead of building it.\n---\nPurpose: connect all three printed meanings to genuine card words. [You Do | Morpheme sums | Morphology]",
-        "check_title": "Tick it or fix it - Morpheme sums for mal-",
-        "check_rule": "Tick each correct word. Fix any word that does not match.",
+        "footer": "Say mal, then say the word, then write it",
+        "notes": "ANSWER: 1. malfunction 2. malnutrition 3. malformation 4. maltreatment\n1. SAY: \"Join mal- to each word and write the whole new word on your board. mal- is glued on, no gap.\"\n2. TIME: 3 minutes. Work alone on whiteboards. Write it... chin it... show me.\n3. CIRCULATE: to a stuck student say, \"mal- means bad. Say mal, then say function. Now write what you just said.\" Then build number 1 together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number 1 together on the board, then re-ask.\nTRAP: leaving a gap or a hyphen inside the word. Fix: say mal- is glued on, then rewrite it as one word.\nEXTENSION: Write malnutrition in a sentence that shows what it does to a body. Then add -ed to maltreat and check it is a real word.\nHELP: Give the four answers jumbled; students match each to its sum instead of building it.\n---\nPurpose: join today's prefix to whole words the students already own; mal- is the only part they supply. [You Do | Word building | Morphology]\nANSWERS:\n1. mal- + function = malfunction\n2. mal- + nutrition = malnutrition\n3. mal- + formation = malformation\n4. mal- + treatment = maltreatment\nEXTENSION: e.g. Malnutrition left the puppy thin, weak and always tired. maltreated is real.",
+        "check_title": "Tick it or fix it - Build the mal- word",
+        "check_rule": "Tick each correct word. Fix any word that is different.",
         "check_items": [
-          "bad function = malfunction",
-          "poor nutrition = malnutrition",
-          "wrongly formed = malformation",
-          "feeling ill = malaise"
+          "1. mal- + function = malfunction (works badly)",
+          "2. mal- + nutrition = malnutrition (bad feeding)",
+          "3. mal- + formation = malformation (wrongly made)",
+          "4. mal- + treatment = maltreatment (bad treatment)"
         ],
+        "check_item_size": 20,
         "check_routine": "Tick - fix - explain",
-        "check_footer": "Which mal- meaning fits each word?",
-        "check_notes": "ANSWER: malfunction, malnutrition, malformation, malaise.\n1. REVEAL after every board has been scanned. SAY: \"Tick each correct word. Fix any word that is different.\"\n2. ASK: \"Which meaning of mal- fits each word?\" 10 sec, turn and tell. EXPECT: bad or wrong for malfunction; ill for malnutrition and malaise; wrong for malformation.\n3. SCAN corrections. 80%+ -> continue. Less -> point to one meaning at a time and have students match the word again.\nTRAP: ticking a correct spelling with the wrong meaning. Fix: say the whole-word meaning, choose the card meaning, then relabel.\nSTRETCH: Explain why one word could reasonably connect to two mal- meanings.\nHELP: read the green answer first, then match bad, wrong or ill.\n---\nPurpose: protected answer reveal for immediate tick-and-fix feedback. [You Do | Feedback | Morphology]"
+        "check_footer": "What does mal- add to each word?",
+        "check_notes": "ANSWER: malfunction, malnutrition, malformation, maltreatment.\n1. REVEAL after every board has been scanned. MODEL: \"mal- means bad, so mal- plus function is malfunction: it works badly.\"\n2. SAY: \"Tick each word that matches the green one. Fix any word that is different, then read it again.\"\n3. ASK: \"Which of these four words still makes sense if you take mal- off?\" 10 sec, turn and tell. EXPECT: all four; mal- adds bad or wrong to a word that already works on its own.\n4. SCAN corrections. 80%+ -> continue. Less -> build number 2 together on the board, then re-check.\nTRAP: ticking a word written with a gap or a hyphen. Fix: say mal- is glued on, then rewrite it as one word.\nHELP: read the green answer aloud, then copy it under the wrong one.\n---\nPurpose: protected answer reveal for immediate tick-and-fix feedback. [You Do | Feedback | Morphology]"
       },
       "learned_words": {
         "review": [

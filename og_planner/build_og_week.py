@@ -538,8 +538,10 @@ UNIVERSAL_INFLECTIONS = {"s", "es", "ed", "ing"}
 # slash variant label.  Anchored on non-letters so "T-intersection" and
 # "self-check" cannot masquerade as affixes.
 AFFIX_TOKEN_RE = re.compile(r"(?<![A-Za-z-])(-[A-Za-z]{1,12}|[A-Za-z]{1,12}-)(?![A-Za-z])")
-VARIANT_TOKEN_RE = re.compile(r"(?<![A-Za-z/])([A-Za-z]{2,12}(?:\([a-z]{1,3}\))?"
-                              r"(?:/[A-Za-z]{2,12}(?:\([a-z]{1,3}\))?)+)(?![A-Za-z/])")
+# A You Do prompt: optional worked-example label, optional "1." numbering.
+PROMPT_LABEL_RE = re.compile(r"^\s*(?:one done for you:\s*)?(?:\d+\.\s*)?", re.I)
+# A printed meaning beside a part: `in- (onto)`, `vore (eat)`.
+GLOSS_RE = re.compile(r"\([^)]*\)")
 
 
 def morph_surface_forms(label):
@@ -778,43 +780,174 @@ def validate_dictation_sources(day, week, session):
                      "ago (6)")
 
 
-def validate_activity_morphemes(day, week, session):
-    """Taught-morpheme gate from OG_MEGA_PROMPT.md section 2f.
+def catalogue_morph_forms():
+    """Surface forms of every photographed Yoshimoto card label.
 
-    Students may only be asked to SUPPLY an answer built from morphemes they
-    have been taught.  A morpheme named once in a Words to Read script line is
-    teacher-delivered, not taught - the teacher voices a handful of those lines.
+    Lets the You Do gate tell a morpheme (`bio`, `vore`) from an everyday whole
+    word (`climate`, `function`) when an operand carries no hyphen.
+    """
+    forms = set()
+    for (_type, _key), entries in photo_card_catalogue().items():
+        for entry in entries:
+            forms |= morph_surface_forms(entry["morph"])
+    return forms
+
+
+def activity_face_lines(activity):
+    """(field, physical line) for everything printed on the You Do slide face."""
+    for field in ("title", "rule", "example", "footer"):
+        for text in str(activity.get(field, "") or "").splitlines():
+            yield field, text
+    for field in ("items", "check_items"):
+        for line in activity.get(field, []):
+            for text in str(line or "").splitlines():
+                yield field, text
+
+
+def parse_sum_prompt(prompt):
+    """Split `1. a + b (gloss) = answer` into its parts.
+
+    Returns None when the prompt is not `something = something`.  Operands keep
+    their hyphens so the caller can tell an affix from a root or whole word;
+    printed glosses are stripped.  `answer` is the answer word when the right
+    side is a single word (`microscope`, `microscope (tiny things)`,
+    `invincible - vinc is inside it`), else "" - a right side that is a phrase
+    is a meaning or an explanation, not an answer to test.  `right_operands`
+    holds the parts of a sum written on the RIGHT (`carnivorous = carn + vore
+    + -ous: eating flesh`), which is what a student supplies in a
+    literal-meanings task.
+    """
+    body = PROMPT_LABEL_RE.sub("", prompt, count=1)
+    if "=" not in body:
+        return None
+    left, right = body.split("=", 1)
+    left = GLOSS_RE.sub("", left)
+    if "+" in left:
+        operands = [op.strip() for op in left.split("+")]
+    else:
+        operands = [left.strip()]
+    right = GLOSS_RE.sub("", right)
+    right = re.split(r":| - |,|=", right, maxsplit=1)[0].strip()
+    right_operands = []
+    if "+" in right:
+        # A part is one token; anything after it on the operand is an
+        # unbracketed gloss (`vore eating + -ous full of`).
+        right_operands = [op.split()[0] for op in right.split("+") if op.strip()]
+    words = right.split()
+    answer = re.sub(r"[^A-Za-z]", "", words[0]) if len(words) == 1 else ""
+    return {"operands": [op for op in operands if op],
+            "is_sum": "+" in left, "answer": answer,
+            "right_operands": right_operands}
+
+
+def part_in_word(part, word):
+    """Does `part` visibly survive inside `word`?  cooperate -> cooperative,
+    private -> privacy count; small -> microscope does not."""
+    stem = part.strip("-").lower()
+    word = word.lower()
+    forms = set(morph_surface_forms(stem))
+    for cut in (1, 2):
+        if len(stem) - cut >= 3:
+            forms.add(stem[:len(stem) - cut])
+    return any(form in word for form in forms)
+
+
+def validate_activity_morphemes(day, week, session):
+    """You Do shape gates from OG_MEGA_PROMPT.md sections 2f and 3d.
+
+    Team decision (Sept 2026): meaning sums are retired and the You Do is a
+    one-recall task.  Every part a student handles is either today's focus
+    morpheme, a universal inflection, an everyday whole word, or PRINTED with
+    its meaning on the slide face.  Taught earlier no longer counts as printed.
+
+    The prompts students work (`example`, `items`, `check_items`) are scanned;
+    the rule banner, title and footer are where glosses may live but are not
+    themselves scanned for parts.  Three checks:
+      1. MEANING SUM - a `+` operand or a `= ?` left side that is a meaning
+         phrase (`small + look at = ?`, `bad function = ?`), or a check-slide
+         sum whose operand does not survive inside the answer word
+         (`small + wave = microwave`).  Fatal.
+      2. ONE RECALL - an affix, catalogue root or taught morpheme the student
+         supplies (a sum operand on either side of `=`, or morpheme notation
+         in a prose prompt) that is not today's focus and has no
+         `part (meaning)` gloss anywhere on the face.  Fatal.
+      3. UNTAUGHT BUT GLOSSED - reachable, so allowed, but a NOTE asks whether
+         a taught part would serve (2f first choice).
     """
     activity = session.get("new_morph_activity")
     if not isinstance(activity, dict):
         return
-    lines = [activity.get("example", "")]
-    lines += list(activity.get("items", []))
-    lines += list(activity.get("check_items", []))
+    focus = morph_surface_forms((session.get("new_morphology") or {}).get("morph"))
     taught = taught_morpheme_forms(week, session)
-    flagged = set()
-    for line in lines:
-        for text in str(line or "").splitlines():
-            # Morpheme notation only carries meaning inside a sum; prose items
-            # (sorting, sentence writing) use whole words and are not scanned.
-            if "+" not in text and "=" not in text:
+    catalogue = catalogue_morph_forms()
+    face_lines = list(activity_face_lines(activity))
+    face_text = "\n".join(text for _field, text in face_lines)
+    reported = set()
+
+    def glossed(token):
+        pattern = r"(?<![A-Za-z])" + re.escape(token) + r"\s*\("
+        return re.search(pattern, face_text) is not None
+
+    def check_part(token, hyphenated):
+        key = token.strip("-").lower()
+        if not key or key in reported:
+            return
+        forms = morph_surface_forms(key)
+        if key in UNIVERSAL_INFLECTIONS or forms & focus:
+            return
+        if glossed(token):
+            if not forms & taught:
+                reported.add(key)
+                note(f"{day}: You Do prints the meaning of {token!r}, which is not "
+                     "in this session's taught set - reachable, but a part the "
+                     "class has been taught is the first choice (2f)")
+            return
+        if hyphenated or forms & taught or forms & catalogue:
+            reported.add(key)
+            warn(f"{day}: You Do uses morpheme {token!r}, which is not today's "
+                 "focus morpheme and has no printed meaning on the slide face. "
+                 "Students supply ONE part from memory - today's - so print it "
+                 f"as \"{token} (meaning)\" in the rule banner, the worked "
+                 "example or the item, or rebuild the item from today's "
+                 "morpheme and everyday words (2f/3d one-recall rule)")
+
+    def check_operands(operands):
+        for op in operands:
+            check_part(op, op.startswith("-") or op.endswith("-"))
+
+    for field, text in face_lines:
+        if field not in ("example", "items", "check_items"):
+            continue
+        # 10c packs two prompts per line, separated by a run of spaces.
+        for prompt in (p for p in re.split(r"\s{3,}", text) if p.strip()):
+            parsed = parse_sum_prompt(prompt)
+            if parsed is None:
+                for match in AFFIX_TOKEN_RE.finditer(prompt):
+                    check_part(match.group(1), True)
                 continue
-            tokens = ([match.group(1) for match in AFFIX_TOKEN_RE.finditer(text)]
-                      + [match.group(1) for match in VARIANT_TOKEN_RE.finditer(text)])
-            for token in tokens:
-                key = token.strip("-").lower()
-                if key in UNIVERSAL_INFLECTIONS or key in flagged:
+            phrase = [op for op in parsed["operands"] if re.search(r"\s", op)]
+            if phrase:
+                warn(f"{day}: You Do prompt {prompt.strip()!r} is a meaning "
+                     f"sum - {phrase[0]!r} is a meaning the student must turn "
+                     "into a word. Meaning sums are retired (3d). Print the "
+                     "parts themselves (`micro + scope = ?`) or ask for the "
+                     "sum beside the word (`microscope = ?`)")
+                continue
+            if parsed["is_sum"]:
+                answer = parsed["answer"]
+                stray = [op for op in parsed["operands"]
+                         if len(answer) >= 3 and not part_in_word(op, answer)]
+                if stray:
+                    warn(f"{day}: You Do prompt {prompt.strip()!r} is a meaning "
+                         f"sum - {stray[0]!r} does not appear inside "
+                         f"{answer!r}, so it is a meaning, not a part. Meaning "
+                         "sums are retired (3d)")
                     continue
-                if morph_surface_forms(token) & taught:
-                    continue
-                flagged.add(key)
-                warn(f"{day}: You Do uses morpheme {token!r}, which is not in this "
-                     "session's taught set (today's card + review cards + sound "
-                     "bank + earlier sessions + week taught_morphemes). Rewrite the "
-                     "item from taught parts, print the meaning on the slide face "
-                     f"(e.g. \"{token} (meaning)\"), or - if it really was taught "
-                     "earlier this term - add it to the week's taught_morphemes "
-                     "list (2f)")
+                check_operands(parsed["operands"])
+            else:
+                # `word = ?` / `word = answer`: the student's work is any sum
+                # written on the right of the check item.
+                check_operands(parsed["right_operands"])
 
 
 # ---------------------------------------------------------------- text helpers

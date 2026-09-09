@@ -1,4 +1,4 @@
-# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.4
+# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.5
 ## Grade 5/6 Enrichment | Diamond Creek East PS | Yoshimoto OG | Template-Locked | Term-Scale Input
 
 ---
@@ -54,6 +54,20 @@ connectors such as "Okay", "Now", "So" and "Let's" where they make a line flow, 
 still excluding repeated greetings, management chatter and extra explanation. The
 teacher should be able to read the scripted lines in order without inventing the words
 that join them.
+
+The v1.5 refinement (team meeting, 9 Sept 2026) reshapes the New Morphology You Do
+after the team reported it was too hard and too repetitive:
+
+1. MEANING SUMS ARE RETIRED. Handing students meanings and asking for the word
+   (`house + study of + relating to = ?`) made them hold three or four parts at once,
+   and it kept reaching for parts nobody had taught (`-al` in ecological). The four
+   remaining types - word building, literal meanings, sorting, showing sentence - are
+   the ones the team said work in the room (3d, builder gate).
+2. ONE RECALL. The only part a student supplies from memory is today's morpheme; every
+   other part is printed with its meaning on the slide face. Taught earlier no longer
+   counts as printed on the You Do (2f, 3d, builder gate).
+3. Same task for everyone, no tiers on the face; the green Tick it or fix it slide
+   stays as it is (3d).
 
 None of the refinements changes the required review counts, morphology sequence,
 grammar finisher, master template or output naming.
@@ -470,6 +484,11 @@ Nothing else. If reaching the answer requires a morpheme outside (a) to (c), the
 a defect - not a stretch, not a challenge, a defect. The student cannot get there and
 knows it.
 
+ON THE YOU DO SLIDE, (b) MUST BE PRINTED. Since v1.5 the You Do is a one-recall task
+(3d): the taught history still makes a part legitimate to use, but the student does not
+retrieve it - its meaning is printed on the slide face. `ASK:`/`EXPECT:`, check-slide
+questions, `After checking:` prompts and extensions keep the full (a)-(c) reach.
+
 HEARING A MORPHEME ONCE IS NOT BEING TAUGHT IT. A Words to Read grid holds 9 or 12 words
 and the teacher voices a HANDFUL of the script lines as the words appear - never all
 twelve, never with the class rehearsing them, and never in a form anyone could revise
@@ -508,16 +527,20 @@ Defects, all taken from shipped decks:
   given.
 
 WHAT THE BUILDER CATCHES, AND WHAT IT CANNOT. The builder scans the `new_morph_activity`
-`example`, `items` and `check_items` for morpheme notation - a hyphen-carrying affix
-(`in-`, `-tion`) or a slash variant label - but ONLY on lines containing `+` or `=`, so
-morpheme sums are checked and prose tasks are left alone. Anything not in the taught set
-is a fatal WARN. `-s`, `-es`, `-ed` and `-ing` are treated as universal inflections.
-It CANNOT check: meaning sums (`small + look at = ?` names meanings, not morphemes),
-sorting or sentence tasks, `EXPECT:` answers, `After checking:` prompts, or extensions
-written as prose. Those stay your job (4d step 8). When the gate fires, there are exactly
-three honest fixes: rewrite the item from taught parts, print the missing meaning on the
-slide face, or - only if the morpheme really was taught earlier this term - add it to the
-week-level `taught_morphemes` list (section 9).
+`example`, `items` and `check_items` - every prompt, including two packed on one line -
+and fails the build on two things. A MEANING SUM: an operand or a `= ?` left side that
+is a phrase (`small + look at = ?`, `bad function = ?`), or a check-slide sum whose
+operand does not survive inside the answer word (`small + wave = microwave`). An
+UNPRINTED PART: any affix (`in-`, `-tion`), catalogue root or taught morpheme a student
+handles, on either side of the `=`, that is not today's focus morpheme and has no
+`part (meaning)` gloss anywhere on the slide face (title, rule, example, items, footer).
+`-s`, `-es`, `-ed` and `-ing` are universal inflections. A glossed part that is NOT in
+the taught set builds with a NOTE, because printed is reachable but a taught part is the
+first choice. It CANNOT check: sorting or sentence tasks that name no parts, `EXPECT:`
+answers, `After checking:` prompts, or extensions written as prose. Those stay your job
+(4d step 8). When the gate fires, there are exactly three honest fixes: rebuild the item
+from today's morpheme and everyday words, print the missing meaning on the slide face,
+or - for a NOTE only - swap the glossed part for one the class has been taught.
 
 ---
 
@@ -685,16 +708,38 @@ new/review session lacks one.
 - SPREAD THE ACTIVITIES ACROSS THE WEEK: every new/review day in the same week uses a
   DIFFERENT activity type from the menu - with the standard Mon/Tue/Wed/Thu pattern
   that means four different activities in a week, and no type repeats within the
-  week. Vary the surface too (whiteboards one day, OG workbooks another). The menu:
-  - Word building: add known prefixes/suffixes to the root, build N real words
-    (LessonPlan.pdf: students brainstorm derivatives).
-  - Morpheme sums, tachistoscope-style: teacher gives the meaning sum, students build
-    the word (`together + order + to do = ? coordinate`).
+  week. Vary the surface too (whiteboards one day, OG workbooks another). The menu
+  (four types - the team confirmed in Sept 2026 that all four work in the room):
+  - Word building: the parts are PRINTED and the student joins them into the real
+    word, applying any spelling change (`cooperate + -ive = ?` -> cooperative;
+    `mal- + treat = ?` -> maltreat). The student's work is the join and the spelling,
+    not recall.
   - Literal meanings: write the morpheme sum beside a given derivative and its fused
-    meaning in your own words.
+    meaning in your own words (`microclimate = ?` -> micro + climate, the climate of
+    one small area). Any part beyond today's morpheme that the sum needs is printed
+    on the face (ONE RECALL, below).
   - Sort derivatives by prefix / by which morpheme they carry (sorting by part of
     speech only once PoS has been taught - taught-only rule, 2b).
   - Sentence that SHOWS the meaning (not just uses the word).
+- MEANING SUMS ARE RETIRED (team decision, Sept 2026). The tachistoscope shape - the
+  teacher gives the meanings, students produce the word (`small + look at = ?`,
+  `cannot be conquered = ?`, `house + study of + relating to = ?`) - is no longer a
+  You Do type. It asked students to hold three or four parts they could not all
+  remember, and it kept reaching for parts nobody had taught (`-al` in ecological).
+  The builder fails any item or check item of that shape. Meaning sums may still be
+  worked as teacher-led talk on the grid slides; they are never independent work.
+- ONE RECALL. The only part a student supplies from memory is TODAY'S focus morpheme.
+  Every other part an item touches is one of: a universal inflection (`-s`, `-es`,
+  `-ed`, `-ing`), an everyday whole word (`climate`, `function`), or PRINTED WITH ITS
+  MEANING on the slide face - in the rule banner, the worked example or the item
+  itself, in the form `part (meaning)`: `dis- (apart)`, `vore (eat)`. Taught earlier
+  in the term does NOT count as printed: the review cards and the Sound Bank are where
+  retrieval happens, the You Do is where today's morpheme is used. When several old
+  parts are needed, put a parts bank in the rule banner (`Parts: dis- (apart), -ive
+  (relating to)`) rather than glossing every item (10c character budget). The builder
+  fails an unprinted non-focus part.
+- SAME TASK FOR EVERYONE. No tiers on the slide face. Differentiation lives in the
+  notes: `EXTENSION:` for early finishers, `HELP:` for the stuck.
 - Every activity involves writing; every activity is startable without teacher help.
 - ACHIEVABILITY BAR (non-negotiable - the school has rejected You Dos that failed it):
   - The task description on the slide is EXPLICIT: it says exactly what to write and
@@ -704,7 +749,7 @@ new/review session lacks one.
     `One done for you: ...`, before students start. Use the hero card for it. A You Do
     whose first exposure to the task shape is the task itself is a defect.
   - PUT THE WORKED EQUATION ON ITS OWN LINE. Write the hero as
-    `One done for you:\nsmall + sound = microphone` - the label on line 1, the
+    `One done for you:\nmal- + treat = maltreat` - the label on line 1, the
     equation alone on line 2. The builder emits each authored line as its own centred
     paragraph, so an equation reads as an equation instead of trailing off the end of
     a sentence. The same applies to any `word = label` model on a grammar slide.
@@ -714,21 +759,22 @@ new/review session lacks one.
     can reach from that day's teaching and verify on the check slide. An item with two
     defensible answers (`pottery = P or R/P`) or a judgement call about etymological
     transparency is teacher-led We Do discussion material, never independent work.
-  - SOLVABLE FROM TAUGHT PARTS ONLY (2f - this is the You Do's hardest bar and the one
-    most often failed). Every item must be reachable from today's focus morpheme plus
-    previously taught morphemes plus everyday English. Do NOT use a part the class has
-    never been taught, and do NOT lean on recall of a particular word from the grid the
-    class just read - the teacher voices a handful of those twelve lines, not all of
-    them, and no student revised from it. If one item genuinely earns its place despite
-    an untaught part, print that part's meaning on the slide inside the item
-    (`4. in- (onto) + junct + -tion = ?`).
+  - SOLVABLE FROM THE BOARD (2f + ONE RECALL above - this is the You Do's hardest bar
+    and the one most often failed). Every item must be reachable from today's focus
+    morpheme plus the parts printed on the slide plus everyday English. Do NOT lean on
+    a part taught weeks ago, on a part the class has never been taught, or on recall of
+    a particular word from the grid the class just read - the teacher voices a handful
+    of those twelve lines, not all of them, and no student revised from it. If a part
+    is needed, print its meaning on the slide face
+    (`4. in- (onto) + junct + -tion (the act of) = ?`).
   - WALK EACH ANSWER BACKWARDS BEFORE YOU SHIP IT. Write out the answer word and ask:
-    could a student who attended every lesson this term produce this from the board in
-    front of them right now? If the honest answer is "only if they remember it from the
-    grid" or "only if they already knew the word", replace the item. This check is
-    especially unforgiving on a `new` day, where the students have held the focus
-    morpheme for about five minutes.
-  - Prefer CONCRETE BUILD/USE tasks (build the word from a meaning sum, write the sum
+    could a student who met today's morpheme five minutes ago produce this from the
+    board in front of them right now? If the honest answer is "only if they remember it
+    from the grid", "only if they already knew the word" or "only if they remember what
+    -al means", replace the item or print the part. This check is especially unforgiving
+    on a `new` day, where the students have held the focus morpheme for about five
+    minutes.
+  - Prefer CONCRETE BUILD/USE tasks (join printed parts into the word, write the sum
     beside a derivative, show the meaning in a sentence) over abstract classification
     or meaning-audit tasks. If a sort is used, the two categories must be plainly
     distinguishable by a 10-12yo using only the printed card meanings.
@@ -740,14 +786,13 @@ new/review session lacks one.
   per item restating the QUESTION and its ANSWER, plus the extension answer:
   ```
   ---
-  Purpose: ... [You Do | Morpheme sums | Morphology]
+  Purpose: ... [You Do | Word building | Morphology]
   ANSWERS:
-  1. small + look at = microscope
-  2. small + wave = microwave
-  3. small + chip = microchip
-  4. small + life + study of = microbiology
-  EXTENSION: e.g. microbiologist = micro + bio + -ology + -ist, a person who studies
-  tiny life.
+  1. mal- + function = malfunction
+  2. mal- + nutrition = malnutrition
+  3. mal- + formation = malformation
+  4. mal- + treatment = maltreatment
+  EXTENSION: e.g. maltreated = mal- + treat + -ed, was treated badly.
   ```
   The one-line `ANSWER:` at the top of the live zone stays - that is the glance fact.
   This block is the fallback for a teacher who gets stuck mid-circulation, so it
@@ -797,9 +842,10 @@ Applies to every early-finisher note, every morphology You Do and every grammar 
   it, it is a new task, not an extension.
   - Model to hold in mind: if the core task is a Year 1 class counting 1 to 20, the
     extension is counting backwards from 50 - same concept, bigger number, reversed.
-  - Morphology examples: core builds `microscope` from a two-part sum, extension
-    builds a four-morpheme word and writes the full sum
-    (`microbiologist = micro + bio + -ology + -ist`); core writes the sum beside a
+  - Morphology examples: core joins two printed parts (`micro + scope (look at) = ?`),
+    extension builds a four-morpheme word from a printed parts bank and writes the
+    full sum (`microbiologist = micro + bio (life) + -ology (study of) + -ist
+    (person)`); core writes the sum beside a
     derivative, extension takes an UNSEEN word from the same family and predicts its
     meaning from the parts alone, then checks it.
   - Grammar examples: core labels phrase or clause, extension combines a subordinate
@@ -1401,14 +1447,18 @@ Notes:
   taught earlier in the term that no longer appear on the review cards. Strings or
   `{"morph": ...}` objects both work. The builder's taught-morpheme gate already counts
   today's card, the review-10, the sound bank and every earlier session in the same
-  spec; this field carries the rest of the term timeline. Add a label here ONLY if it
-  was genuinely taught - the field is the escape hatch, not a mute button. The
+  spec; this field carries the rest of the term timeline. Since v1.5 the You Do gate
+  uses that set only to decide whether a PRINTED part builds silently (taught) or with
+  a NOTE (untaught) - an unprinted non-focus part fails either way (3d). Add a label
+  here ONLY if it was genuinely taught - the field is the escape hatch, not a mute
+  button. The
   authoritative term-by-term record is `og_planner/taught_morphemes.json` (teacher-
   supplied timeline): copy labels from it, never from memory, and never add a label
   that file does not hold.
-- The builder enforces PART of sections 2c and 2f (see section 10). It cannot see
-  meaning-sum You Dos, prose tasks, `EXPECT:` answers or `After checking:` prompts, so
-  the section 4d audits remain author-side: a clean build is not proof they passed.
+- The builder enforces PART of sections 2c, 2f and 3d (see section 10). On the You Do
+  face it stops meaning sums and unprinted parts; it cannot see prose tasks, `EXPECT:`
+  answers or `After checking:` prompts, so the section 4d audits remain author-side: a
+  clean build is not proof they passed.
 - The builder automatically appends the physical card's printed part of speech to
   teacher notes when the catalogue supplies it; do not invent a spec value.
 - `unfair` must be an exact substring of the word (builder warns if not found).
@@ -1445,8 +1495,9 @@ python tests/test_og_builder_regressions.py                               # buil
    dictation uses the green meter while the second/trickier dictation uses yellow, the
    sound bank and review cards do not contain the day's focus morpheme or any morpheme
    this week teaches later (2a/2c), no dictation target is one of this week's new words
-   or built on this week's focus morphemes (6), and no You Do morpheme sum
-   uses an affix outside the taught set (2f).
+   or built on this week's focus morphemes (6), no You Do item or check item is a
+   meaning sum, and every part a You Do asks for beyond today's morpheme is printed
+   with its meaning on the slide face (2f/3d).
    Read every WARN - word-count, catalogue mismatch, excluded-word, unbanked-label and
    overflow warnings are content bugs to fix in the spec, not noise. Every WARN fails the
    build. A NOTE is advisory and does NOT fail the build - currently the unused-sound-
@@ -1466,8 +1517,8 @@ python tests/test_og_builder_regressions.py                               # buil
    control-character artefacts. Local render substitutes fonts (Luckiest Guy/Lexend may
    look plain) - that is a render artefact, not a bug.
    Then run the AUTHOR-SIDE half of the 2c/2f audits. The builder covers the mechanical
-   part (focus morpheme in the bank, affixes in You Do sums); it cannot read meaning
-   sums, prose tasks, `EXPECT:` answers or `After checking:` prompts:
+   part (focus morpheme in the bank, meaning sums and unprinted parts on the You Do
+   face); it cannot read prose tasks, `EXPECT:` answers or `After checking:` prompts:
    - SOUND BANK: name the review spelling word each of the 9 boxes serves.
    - TAUGHT-MORPHEME GATE: list every student-supplied answer in the deck - including
      the ones written as prose - and confirm each is reachable from today's morpheme +
@@ -1534,8 +1585,10 @@ your spec against every line before building)
   to guarantee that every student reads at least two rows. (2b)
 - A grid script line that is circular (`order - ORD means order: the way things are
   arranged`) instead of the submarine model naming every part with `+`. (3b)
-- A new/review session without a `new_morph_activity`, or the same activity type
-  twice in one week. (3d)
+- A new/review session without a `new_morph_activity`, the same activity type twice
+  in one week, or a meaning-sum item of any kind - retired Sept 2026. (3d)
+- A You Do part beyond today's morpheme with no printed meaning on the slide face, or
+  tiers printed on the face instead of EXTENSION/HELP in the notes. (3d one recall)
 - A question relying on untaught metalanguage - e.g. "part of speech of regulate?"
   when parts of speech are not in the term's grammar history. (2b taught-only rule)
 - Renaming output files away from the team convention (`1a. Monday (morph).pptx`). (1)
@@ -1625,7 +1678,8 @@ your spec against every line before building)
   the bank is derived from the list, never the other way round. (2c, 10a)
 - ANY student-supplied answer that needs a morpheme the class has not been taught: a You
   Do item, an `EXPECT:`, a check-slide `ASK:`, an `After checking:` prompt, an extension.
-  (2f - the builder stops You Do morpheme sums; the rest is your audit)
+  (2f - the builder stops meaning sums and unprinted parts on the You Do face; the
+  rest is your audit)
 - Silencing that gate by dumping the morpheme into `taught_morphemes` when it was never
   actually taught. The field records the term timeline, not your preferences. (2f, 9)
 - Treating a morpheme as taught because it appeared once in a Words to Read grid script
@@ -1633,8 +1687,9 @@ your spec against every line before building)
   a handful of grid lines, not twelve. (2f)
 - A You Do or extension that requires students to recall a specific word from the grid
   they just read, rather than build it from taught parts. (2f, 3d)
-- An item kept despite an untaught part WITHOUT that part's meaning printed on the slide
-  face inside the item (`in- (onto) + junct + -tion = ?`). (2f)
+- Any You Do part beyond today's morpheme - untaught OR taught weeks ago - without its
+  meaning printed on the slide face (`in- (onto) + junct + -tion (the act of) = ?`, or
+  a parts bank in the rule banner). (2f, 3d)
 - Choosing an ornate catalogue derivative over a simpler, more transparent sibling that
   stacks taught morphemes (`rejoinder` over `rejoin`, `conjunctive` over `adjoin`), or
   padding a grid to 12 with curios instead of building a clean 9. (3b, 4c)
