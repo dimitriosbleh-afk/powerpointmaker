@@ -891,7 +891,13 @@ Resolve every card in this strict order:
    catalogue. For that card, use its `meaning` and `keyword` exactly as stored. Preserve
    `part_of_speech` exactly where present; do not invent one where the card prints none.
 2. If - and only if - the photographed catalogues do not contain the card, look in
-   `og_planner/morpheme_bank.json` for an older teacher-confirmed entry.
+   `og_planner/morpheme_bank.json` for an older teacher-confirmed entry. Bank cards
+   already taught (micro, pict/picto, vore, eco, carn/carni, chron, -acy) carry
+   `associated_words` (the default family - same role as the photographed field),
+   `taught` (the grid, spelling words and memory hook actually used), `avoid_words`
+   and `teaching_notes` (the rules and traps taught). Plan from those fields instead of
+   re-reading the source scan or old week specs. When a deck teaches an uncaptured card,
+   append the same fields to its entry afterwards (the file is append-only).
 3. If only `og_planner/morpheme_meanings.json` has the entry, treat its wording as an
    unconfirmed reference, not an exact Yoshimoto-card match. Surface that status and
    verify it from the OG source scans or with the teacher before building.
@@ -1050,6 +1056,16 @@ slides.
 - The builder replaces the template's old dense section-note blocks with concise,
   line-separated procedure notes. Never restore the inherited paragraph walls or
   control characters from the master notes.
+- SETTLED VALUES LIVE IN `og_planner/teaching_record.json`. Every learned word already
+  taught has its week, its `unfair` part and its Australian `say_it` recorded there.
+  Reuse them verbatim on review slides - do not re-decide them. Two drifted before they
+  were recorded: tongue (settled on `ongue`) and asthma (AS-muh - the t is silent, not
+  AST-muh). When a week is delivered, append its new learned words there.
+- REVIEW-ONLY WEEKS CAN REVIEW MORE THAN TWO. The two-review rule is for teaching weeks.
+  An end-of-term review week (11a) deals every word of the term across its sessions -
+  four or five review words a session - and grouping them by the kind of unfairness
+  (silent letters, vowel letters that lie, borrowed spellings, letters doing odd jobs)
+  gives each Link line a real job.
 
 ---
 
@@ -1146,6 +1162,10 @@ slides.
   Lexend sentence box draws the ASCII quote glyph slanted like a CLOSING quote, so
   opening quotes looked backwards on screen - school feedback. Quotes must come in
   pairs; an unpaired quote is a spec defect (the builder warns and leaves it straight).
+- NO BRACKETS IN A DICTATION SENTENCE. The builder colours only `, . ; : ! ? " ' -` red,
+  so round brackets render in black and never reach the red P count on the slide. Keep
+  acronym-and-brackets practice on the grammar slides; weave that grammar week into
+  dictation through another mark (a fronted clause, an apostrophe).
 - COLON vs COMMA vs SEMICOLON, decided once and applied consistently:
   - Speech introduced by a reporting clause takes a **comma**:
     `Mia whispered, "That microchip is tiny."` Never a colon.
@@ -1388,7 +1408,10 @@ master template's old dense procedure blocks. All authored notes must follow
 # 9. WEEK SPEC JSON (the artefact you author)
 
 One JSON per week in `og_planner/weeks/`. Exemplar: `og_planner/weeks/sample_term3_week1.json`
-(a full Monday `new` + Tuesday `review` + Friday `week_review`). Schema:
+(a full Monday `new` + Tuesday `review` + Friday `week_review`). NAME IT
+`term<T>_week<N>.json` exactly: the builder finds last week's spec by that name for its
+section 6 dictation NOTE, and `og_history.py` / `audit_week_spec.py` read the same
+pattern. A differently named spec silently skips those checks. Schema:
 
 ```
 {
@@ -1476,12 +1499,23 @@ Notes:
 # EVERY python command in this pipeline uses miniconda `python` (NOT homebrew
 # python3): lxml, python-pptx and pymupdf live there. That includes the builder,
 # scripts/pptx_to_images.py, and any PDF page rendering.
+python og_planner/og_history.py --from 6 --to 9      # what earlier weeks taught (no spec mining)
+python og_planner/og_history.py --index              # word -> every week/list that used it
+python og_planner/audit_week_spec.py og_planner/weeks/<spec>.json         # pre-build audit (ISSUE = fix)
 python og_planner/build_og_week.py og_planner/weeks/<spec>.json          # all sessions
 python og_planner/build_og_week.py og_planner/weeks/<spec>.json --only Tuesday
 python tests/test_og_builder_regressions.py                               # builder + exemplar regression gate
 # WARN = fatal, NOTE = advisory. Run the regression suite before touching
 # validate_sound_bank, validate_activity_morphemes or morph_surface_forms.
 ```
+
+`audit_week_spec.py` runs the checks the builder does not: dictation character bands
+and brackets (6), same-day read/spell overlap (the builder skips it on `week_review`
+days), repeats against the previous session, card order and position repeats (2a),
+scripted `EXPECT:` answers missing from the review board (2b), sound bank labels that
+are not on the taught timeline (2c), text that will wrap on structured slides (10c)
+and learned-word values that differ from `teaching_record.json` (5). Fix every ISSUE.
+A CHECK is a render-and-look item.
 
 1. The builder's gate must pass (exit 0): file reopens cleanly, no `XYZ` left anywhere,
    notes are separate left-aligned PowerPoint paragraphs with real bold labels, each
@@ -1544,6 +1578,12 @@ the per-session PPTX in the week folder IS the deliverable (unlike themed lesson
    demonstrated there. Your specs must match its formats exactly - same plain source
    labels (the builder applies real bold),
    same beat numbering, same field names. Do not invent alternative formats.
+1b. Get the history from the records, not by opening old specs one by one:
+   `og_planner/taught_morphemes.json` (morphemes by term), `og_planner/teaching_record.json`
+   (learned words with settled unfair parts and pronunciations; grammar focuses and the
+   class's own wording), `og_planner/morpheme_bank.json` (taught families for uncaptured
+   cards) and `python og_planner/og_history.py` (every word each session used, plus
+   `--index` to check a word's past uses before choosing it).
 2. Load the three category JSONs from section 4, build the week's morpheme timeline
    (which morpheme is taught which day), resolve each exact card, and run the section
    4d audit. Only cards absent from the photographed catalogues may fall back to
@@ -1564,10 +1604,22 @@ the per-session PPTX in the week folder IS the deliverable (unlike themed lesson
    Choosing bank morphemes before you know the words is how the wrong nine get banked.
    Check the bank and the review-10 against the WHOLE week timeline, not just today:
    nothing taught later this week may appear on an earlier day (2a/2c).
-5. Self-check the spec against section 10b's failure list, line by line.
+   AUTHORING TIP: write the spec through a short Python generator in your scratchpad
+   (Python dicts, notes as lists of lines joined with `"\n"`) that writes the JSON.
+   Notes are full of quotes and line breaks, and hand-typed JSON escaping is where
+   avoidable build failures come from. The JSON in `og_planner/weeks/` stays the artefact.
+5. Self-check the spec against section 10b's failure list, line by line, then run
+   `python og_planner/audit_week_spec.py og_planner/weeks/<spec>.json` and fix every ISSUE.
 6. `python og_planner/build_og_week.py og_planner/weeks/<spec>.json` - fix EVERY warn.
 7. Render each deck to images and INSPECT them (section 10). Fix, rebuild, re-render.
+   A contact sheet per deck (three slides across) makes 40 slides a deck quick to scan;
+   re-render only the slides you changed after a fix.
 8. Only then report, stating exactly which QA levels ran.
+9. RECORD THE WEEK once it is delivered, so the next session does not re-mine it:
+   new morphemes -> `taught_morphemes.json`; new learned words (unfair part + Say it)
+   and the grammar focus with its class wording -> `teaching_record.json`; the grid,
+   spelling words, hook and rules for any uncaptured card -> its `morpheme_bank.json`
+   entry (4a). Anything you had to work out that is not written down here -> this file.
 
 # 10b. KNOWN FAILURE MODES (each of these has been rejected by the school - check
 your spec against every line before building)
@@ -1734,6 +1786,18 @@ your spec against every line before building)
   the teacher has just read aloud. (3d)
 - A check-slide `ASK:` whose answer is visible without thinking. (3d)
 - Two new learned words on consecutive sessions instead of sessions 1 and 3. (5)
+- A review word whose card meaning does not operate in it: megaphone on the mega- card
+  (the card means million - megaphone means big, not a million). Weeks 6-9 used it; do
+  not. The same test catches -ite (dynamite is on the card but names none of its three
+  meanings - fine to read, never the answer to an -ite meaning question) and carn
+  (carnival and carnation are opaque - spelling targets only). (2b, 4c)
+- A sound bank or You Do part drawn from the `_unconfirmed` labels in
+  `taught_morphemes.json` (-tion, -sion, -ation, -ment, -ic, -al, -ous, -ly, dis-, de-).
+  Weeks 1-5 banked them without the timeline listing them; they stay out until the
+  teacher confirms. (2c, 2f)
+- A learned-word highlight or Say it line that differs from `teaching_record.json`. (5)
+- Brackets inside a dictation sentence - they cannot show red. (6)
+- A spec not named `term<T>_week<N>.json`, which silently skips the last-week checks. (9)
 - A dictation sized by word count alone, outside 55-75 / 80-100 characters. (6)
 - A `punctuation` entry naming a grammatical construct with no plain-English reminder
   in brackets, or a colon used before reported speech where a comma belongs. (6)
@@ -1762,8 +1826,17 @@ overlaps the one below it. Work the budget out BEFORE writing the spec:
   or the worked example - both are required.
 - Item lines must stay under `8.2 * 72 / (item_size * 0.55)` characters or they wrap
   into the next line. At 17 pt that is about 63 characters.
-- Check slides (rule + up to 4 green answers, no hero) fit comfortably, but the same
-  character limit applies at `check_item_size` (default 22 -> about 49 characters).
+- Check slides (rule + up to 4 green answers, no hero) fit comfortably, but their
+  answers are BOLD and wrap earlier than that formula says. In Term 3 Week 10 a
+  52-character answer wrapped at 20 pt and overlapped the answer below it, while a
+  55-character one fitted at 19 pt. Letter shapes decide it, so keep answers near
+  `8.2 * 72 / (check_item_size * 0.6)` characters (about 49 at 20 pt, 57 at 17 pt), drop
+  `check_item_size` to 17-19 for long ones, and render any line near the limit.
+- Rule banners auto-size 18 -> 16 -> 15 pt. In renders, banners of 69 characters or fewer
+  always fitted on one line; 70-79 sometimes left one word alone on line two (70, 74, 76,
+  77 and 79 did; 71 and 73 did not). Aim for 69 or fewer - shorten, do not pad.
+- A hero `example` takes `\n`: each authored line becomes its own centred paragraph.
+  Keep it to three lines, and in a multi-line hero keep each line to about 47 characters.
 - Routine chips stay on one line under about 30 characters; footers under about 45.
 - Hero text drops to 20 pt minimum, and the gate rejects a grammar example below that -
   keep heroes under roughly 180 characters.
@@ -1799,9 +1872,46 @@ Mapping morphemes to sessions (pick the row that matches; ask only if none fits)
 | 2 | 4 | new, review, new, review (fold week-review weighting into Thursday's review sections) - Term 3 Week 6 ran exactly this and the team asked to keep it: "we like the structure of week 6 with the review". When a week could go either way, keep the review days |
 | 1 | any | new, then review days; last session week_review |
 | 2-3 | 3 | new, new(, new) - flag that review days are lost and weight the following week's history hard toward these morphemes |
+| 0 - end-of-term review ("a review of the whole term") | any | every session `week_review` - see 11a. Term 3 Week 10 ran this over 4 sessions |
 
 Days with no session: keep them in `days`/`overview` with a "No session this week"
 cell so the weekly overview table stays truthful.
+
+## 11a. END-OF-TERM REVIEW WEEK (no new morphemes)
+
+When the Morphology focus is "a review of the whole term", do not stop to ask - this is
+the recipe the Term 3 Week 10 decks used (`og_planner/weeks/term3_week10.json` is the
+worked example):
+
+- SESSION TYPE: every session is `week_review`. There is no `new_morphology`, grid,
+  New Morphology You Do or new learned word, and none are needed. Filenames come out
+  `1. Monday (week review).pptx` ... `4. Thursday (week review).pptx`; leave them.
+- REVIEW-10 FROM THE WHOLE TERM, not the ten most recent. Spread the term's morphemes
+  so each appears on cards once or twice across the week. Give the older weeks the
+  second appearance (they dropped off the rolling cards weeks ago), and space repeats
+  so a morpheme does not return the next day where you can avoid it. The 2a jumble
+  rules still apply.
+- TOUCH EVERY TERM MORPHEME EVERY DAY with a complement design. The 10 card morphemes
+  get their words on the Words to Read Review board. The morphemes NOT on today's cards
+  supply the 10 review spelling words, and the sound bank is derived from those
+  (usually 9 of the remaining 11). The one or two left over go on the reading board.
+  Mechanical to plan, and nothing is forgotten.
+- WORDS: draw on the whole term's grids (`og_history.py --index` shows every past use).
+  A word READ on Monday is an ideal SPELLING word on Wednesday. Keep every 2b/2d rule:
+  same-day read/spell disjoint, no reading repeat on consecutive sessions.
+- LEARNED WORDS: review every word the term taught, split across the sessions (four or
+  five a session), grouped by the kind of unfairness (5). Use the settled values in
+  `teaching_record.json`.
+- GRAMMAR: pair the term's focuses into one day each, in teaching order, choosing pairs
+  that genuinely connect: prepositional phrases + adverbials; phrase/clause +
+  appositive; simple/compound/complex + trigger words; nominalisation + acronyms. Each
+  I do restates both rules (absent-student rule) and reuses the class wording recorded
+  in `teaching_record.json`; the You do has a fixed-answer core and a Tick it or fix it
+  slide as usual.
+- DICTATION: targets from any week at least two back, never last week, never a
+  learned word on that day's review list; weave that day's grammar into the sentence.
+- OVERVIEW CELLS: `["Term Review", "all <N> term morphemes"]`, the day's grammar pair,
+  and the day's review learned words.
 
 ---
 
@@ -1813,6 +1923,13 @@ words, review lists, sound banks, spelling words, dictation sentences, grammar
 scripts, teacher notes) is YOUR job to generate under the recipes above.
 
 Interpreting the block:
+- `Term`: check it against the history before building. If the focus morphemes or the
+  "previous weeks" folders say a different term (the Term 3 Week 10 request said Term 4
+  while every listed morpheme and folder was Term 3), build the term the history shows
+  and flag it in the summary. The week spec and folder name follow the real term.
+- `Cohort`: the title slide always says `Enrichment`. The class is a Grade 5/6 composite,
+  but the teacher confirmed (Sept 2026) it is known as Enrichment, so a request that
+  types "5/6 composite" still gets `"cohort": "Enrichment"`.
 - `Morphology focus` lists the week's new morphemes with their type, e.g.
   `ord/ordin (root), -ible (suffix)`. Two per week is the default (taught Mon + Wed).
   One is fine (taught Mon; every other day reviews it).
@@ -1852,7 +1969,4 @@ Grammar focus: " XYZ "
 
 Additional notes: " XYZ "
 
-Do not enter plan mode, proceed with the deck creation in bypass permissions. Ensure
-you remain active while the decks are being created and continue to be until they are
-fully complete, please.
-```
+Do not enter plan mode, proceed with the deck creation in bypass permissions. Ensure you remain active while the decks are being created and continue to be until they are fully complete, please.```

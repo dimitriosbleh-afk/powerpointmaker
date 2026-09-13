@@ -1,0 +1,76 @@
+{
+  "_purpose": "Companion to taught_morphemes.json: the learned words and grammar focuses this cohort has been taught, by term and week. Read this instead of re-mining old week specs when planning review weeks, dictation (section 6 needs learned words from 2-3 weeks ago) and the taught-only question rule (section 2b gates grammar labels). The builder does not read this file.",
+  "_rule": "Append a week's learned words and grammar focus when its specs are delivered. For Term 3, the unfair part and Say it line are the settled values - reuse them verbatim instead of re-deciding them. Morphemes live in taught_morphemes.json, and the words taught from each uncaptured card live on its morpheme_bank.json entry.",
+  "learned_words": {
+    "term2": {
+      "_source": "Teacher's Term 2 planner, as recorded 2026-07. Unfair parts and pronunciations were not recorded. Linked to the First Nations and civics inquiry.",
+      "weeks": {
+        "1": ["Indigenous", "Aboriginal"],
+        "2": ["European", "reconciliation"],
+        "3": ["influential", "economic"],
+        "4": ["colonies", "federation"],
+        "5": ["sovereignty", "parliament"],
+        "6": ["assimilation", "archaeology"],
+        "7": ["massacre", "prejudice"],
+        "8": ["constitution", "heritage"],
+        "9": ["colonial", "commemorate"],
+        "10": ["review"]
+      }
+    },
+    "term3": {
+      "_source": "Term 3 week specs og_planner/weeks/term3_week1-10.json. Week 10 reviewed all 18 words and taught none.",
+      "_corrections": [
+        "tongue: Week 1 highlighted ongue, Week 2 highlighted ue. Settled on ongue - both the o saying /u/ and the silent ue are unfair.",
+        "asthma: Week 9 notes said AST-muh, but the t is not pronounced. Correct Australian pronunciation is AS-muh."
+      ],
+      "words": [
+        {"word": "muscle", "week": 1, "unfair": "c", "say_it": "MUS-uhl", "why": "the c is silent, so sc just says /s/; you hear the c as /k/ in muscular"},
+        {"word": "tongue", "week": 1, "unfair": "ongue", "say_it": "TUNG", "why": "the o says /u/ and the ue is silent, so gue just says /g/"},
+        {"word": "drought", "week": 2, "unfair": "ough", "say_it": "DROWT", "why": "ough says /ow/ here, but /uff/ in enough and /oh/ in though"},
+        {"word": "buoyancy", "week": 2, "unfair": "uoy", "say_it": "BOY-uhn-see", "why": "uoy says /oy/; English almost never puts those letters in that order"},
+        {"word": "circuit", "week": 3, "unfair": "ui", "say_it": "SER-kit", "why": "after the c, ui says a short /i/"},
+        {"word": "tsunami", "week": 3, "unfair": "ts", "say_it": "soo-NAH-mee", "why": "ts says /s/ because the word kept its Japanese spelling"},
+        {"word": "camouflage", "week": 4, "unfair": "ou", "say_it": "KAM-uh-flahzh", "why": "ou says /uh/ and the French -age says /ahzh/"},
+        {"word": "seismograph", "week": 4, "unfair": "ei", "say_it": "SIZE-muh-grahf", "why": "ei says long /i/ (Greek seis); graph is the same ending as pictograph"},
+        {"word": "species", "week": 5, "unfair": "ci", "say_it": "SPEE-sheez", "why": "ci says /sh/ and es says /eez/; one species, ten species"},
+        {"word": "stomach", "week": 5, "unfair": "ch", "say_it": "STUM-uk", "why": "Greek ch says /k/ and the a says /uh/"},
+        {"word": "iron", "week": 6, "unfair": "ro", "say_it": "EYE-uhn", "why": "the r is silent and the o says /uh/; you hear the r in ironic"},
+        {"word": "leopard", "week": 6, "unfair": "eo", "say_it": "LEP-uhd", "why": "eo says one short /e/ and ard says /uhd/"},
+        {"word": "gauge", "week": 7, "unfair": "au", "say_it": "GAYJ", "why": "au says long /ay/ here, not the /or/ of caught"},
+        {"word": "vacuum", "week": 7, "unfair": "uu", "say_it": "VAK-yoom", "why": "two u letters in a row, saying /yoo/ then /uh/"},
+        {"word": "salmon", "week": 8, "unfair": "l", "say_it": "SAM-uhn", "why": "the l is silent"},
+        {"word": "yolk", "week": 8, "unfair": "l", "say_it": "YOHK", "why": "the l is silent, exactly like salmon"},
+        {"word": "asthma", "week": 9, "unfair": "th", "say_it": "AS-muh", "why": "the th in the middle is silent"},
+        {"word": "rhythm", "week": 9, "unfair": "y", "say_it": "RITH-uhm", "why": "y is the only vowel letter and says a short /i/; the h behind the r is silent"}
+      ],
+      "review_groups_used_week10": {
+        "silent letters": ["muscle", "salmon", "yolk", "asthma", "iron"],
+        "vowel letters that lie": ["drought", "buoyancy", "gauge", "leopard", "circuit"],
+        "borrowed spellings": ["tsunami", "camouflage", "seismograph", "stomach"],
+        "letters doing odd jobs": ["tongue", "species", "vacuum", "rhythm"]
+      }
+    }
+  },
+  "grammar": {
+    "term2": {
+      "_source": "Teacher's Term 2 planner, as recorded 2026-07 (week order not recorded).",
+      "focuses": ["relative clauses", "phrases vs clauses", "simple, compound and complex sentences", "coordinating conjunctions", "direct and indirect speech"]
+    },
+    "term3": {
+      "_source": "Term 3 week specs. class_language is the wording students met - reuse it in later review.",
+      "weeks": [
+        {"week": 1, "focus": "Identify prepositions and prepositional phrases", "class_language": "a preposition tells where, when or direction; the phrase includes its whole noun group"},
+        {"week": 2, "focus": "Identify adverbials and switch them to the front and back", "class_language": "an adverbial tells when, where, how or why; a fronted adverbial takes a comma"},
+        {"week": 3, "focus": "Add adverbials to sentences", "class_language": "comma only when the detail is at the front"},
+        {"week": 4, "focus": "Differentiate between phrases and clauses", "class_language": "a clause has its own verb, a phrase does not; a main clause stands alone, a subordinate clause leaves you waiting"},
+        {"week": 5, "focus": "Identify and add appositives", "class_language": "an appositive renames the noun beside it, inside two commas; cover it and the sentence still works"},
+        {"week": 6, "focus": "Differentiate between simple, compound and complex sentences", "class_language": "Sentence Smackdown signals - one finger stands alone, a fist leaves you waiting, two fingers compound; hand chop at the split"},
+        {"week": 7, "focus": "Identify main and subordinate clauses and the subordinating conjunction", "class_language": "labels M, S and T; T is the trigger word; a fronted S takes a comma"},
+        {"week": 8, "focus": "Use nominalisation for variety, objectivity and an impersonal tone", "class_language": "action word -> thing word; the person steps out; word bank -ence -ance -cy -ice -ity -acy"},
+        {"week": 9, "focus": "Define acronym, recall common acronyms, use brackets to expand one", "class_language": "full name first, short form in round brackets, then the short form alone; initialisms treated as acronyms"},
+        {"week": 10, "focus": "Whole-term review", "class_language": "Mon prepositional phrases + adverbials; Tue phrase, clause + appositive; Wed simple/compound/complex + trigger word; Thu nominalisation + acronyms"}
+      ],
+      "labels_used": "preposition and noun group (Week 1), verb (from Week 4), subordinating conjunction (Weeks 6-7), noun and verb (Week 8). adjective and adverb were never taught as labels - keep them out of questions outside the grammar section (section 2b)."
+    }
+  }
+}

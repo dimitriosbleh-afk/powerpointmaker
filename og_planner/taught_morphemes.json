@@ -1,7 +1,24 @@
 {
   "_purpose": "Authoritative term-by-term record of every morpheme explicitly taught to the cohort. When a week spec's You Do needs a morpheme taught in an earlier week or term, copy the label from here into that week's taught_morphemes list. The builder does not read this file - the week-level list is what the 2f gate sees.",
-  "_source": "Teacher-supplied timeline, recorded 2026-08-13. Labels normalised to card-label form (prefixes keep a trailing hyphen, suffixes a leading hyphen, slash variants preserved).",
+  "_source": "Teacher-supplied timeline, recorded 2026-08-13; extended through Term 3 Week 9 (caus-/cus(e)) on 2026-09-06. Term 3 is complete: Week 10 (2026-09-13) was a whole-term review that taught no new morphemes. Labels normalised to card-label form (prefixes keep a trailing hyphen, suffixes a leading hyphen, slash variants preserved).",
   "_rule": "Only add a label here when it has genuinely been taught from its card. This file records the timeline, not wishes - a morpheme absent from this file must never be added to a week spec's taught_morphemes list.",
+  "_unconfirmed": {
+    "_note": "Labels that appeared in Term 3 Weeks 1-5 sound banks but are NOT on the teacher timeline. They may have been taught before Term 1, or they may be sound-bank defects. Until the teacher confirms, do NOT treat them as taught: keep them out of new sound banks and You Do parts, and never add them to a week spec's taught_morphemes list. Move a label into the right term list (or delete it from here) once the teacher answers.",
+    "labels": [
+      "-tion / -sion",
+      "-tion",
+      "-sion",
+      "-ation",
+      "-ment",
+      "-ic",
+      "-al",
+      "-ous",
+      "-ly",
+      "dis-",
+      "de-"
+    ],
+    "seen_in": "Term 3 Weeks 1-5 sound banks (W1 Mon-Wed, W2 Mon, W3 Mon/Tue/Fri, W4 Mon/Tue, W5 Mon-Thu); none after the timeline was recorded on 2026-08-13"
+  },
   "term1": [
     "mini-",
     "super-",
@@ -43,7 +60,7 @@
     "ord/ordin",
     "clud(e)/clus(e)"
   ],
-  "term3_to_date": [
+  "term3": [
     "mal-",
     "-ery",
     "-ice",
@@ -61,6 +78,9 @@
     "vict/vinc",
     "chron",
     "mand/mend",
-    "jur/jud/just"
+    "jur/jud/just",
+    "pend/pens",
+    "pon/pound",
+    "caus-/cus(e)"
   ]
 }

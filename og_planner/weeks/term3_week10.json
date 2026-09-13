@@ -1,0 +1,1448 @@
+{
+  "term": 3,
+  "week": 10,
+  "cohort": "Enrichment",
+  "unit_folder": "OG_Term3_Week10",
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "taught_morphemes": [
+    "mini-",
+    "super-",
+    "over-",
+    "anti-",
+    "ultra-",
+    "retro-",
+    "em-",
+    "syn-",
+    "sym-/sys-/syl-",
+    "-let",
+    "-ling",
+    "-cian",
+    "-cial/-tial",
+    "-ancy/-ance",
+    "-ency/-ence",
+    "-ity",
+    "-tude",
+    "out-",
+    "self-",
+    "post-",
+    "with-",
+    "counter-",
+    "contra-",
+    "omni-",
+    "intra-",
+    "-eer",
+    "-ant",
+    "-ar",
+    "-ine",
+    "-cy",
+    "-ciate/-tiate",
+    "ped/pod",
+    "rect/reg",
+    "capt/capit",
+    "flect/flex",
+    "ord/ordin",
+    "clud(e)/clus(e)",
+    "mal-",
+    "-ery",
+    "-ice",
+    "-ive",
+    "-ite",
+    "-acy",
+    "-ule",
+    "mega-",
+    "micro",
+    "pict/picto",
+    "vore",
+    "eco",
+    "carn/carni",
+    "junct/join/joint",
+    "vict/vinc",
+    "chron",
+    "mand/mend",
+    "jur/jud/just",
+    "pend/pens",
+    "pon/pound",
+    "caus-/cus(e)"
+  ],
+  "overview": {
+    "Monday": {
+      "morphology": [
+        "Term Review",
+        "all 21 term morphemes"
+      ],
+      "grammar": "Review: prepositional phrases and adverbials",
+      "learned_words": [
+        "Review learned words",
+        "muscle, salmon, yolk, asthma, iron"
+      ]
+    },
+    "Tuesday": {
+      "morphology": [
+        "Term Review",
+        "all 21 term morphemes"
+      ],
+      "grammar": "Review: phrase, clause and appositive",
+      "learned_words": [
+        "Review learned words",
+        "drought, buoyancy, gauge, leopard, circuit"
+      ]
+    },
+    "Wednesday": {
+      "morphology": [
+        "Term Review",
+        "all 21 term morphemes"
+      ],
+      "grammar": "Review: simple, compound and complex",
+      "learned_words": [
+        "Review learned words",
+        "tsunami, camouflage, seismograph, stomach"
+      ]
+    },
+    "Thursday": {
+      "morphology": [
+        "Term Review",
+        "all 21 term morphemes"
+      ],
+      "grammar": "Review: nominalisation and acronyms",
+      "learned_words": [
+        "Review learned words",
+        "tongue, species, vacuum, rhythm"
+      ]
+    },
+    "Friday": {
+      "morphology": "No session this week",
+      "grammar": "No session this week",
+      "learned_words": "No session this week"
+    }
+  },
+  "sessions": [
+    {
+      "day": "Monday",
+      "type": "week_review",
+      "morphology_review": [
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating",
+          "extra_task": {
+            "prompt": "Give me one word built from vore, meaning eating.",
+            "answers": [
+              "carnivore",
+              "herbivore",
+              "omnivore",
+              "devour"
+            ]
+          }
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust",
+          "extra_task": {
+            "prompt": "Give me one word built from mand or mend, meaning order or entrust.",
+            "answers": [
+              "command",
+              "demand",
+              "mandate",
+              "commend"
+            ]
+          }
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small",
+          "extra_task": {
+            "prompt": "Give me one word ending in -ule, meaning small.",
+            "answers": [
+              "capsule",
+              "granule",
+              "module",
+              "nodule"
+            ]
+          }
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root",
+          "keyword": "appendage",
+          "meaning": "hang; pay"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "microphone",
+          "cowardice",
+          "opponent",
+          "granite",
+          "demand",
+          "herbivore",
+          "excuse",
+          "molecule",
+          "victor",
+          "malnutrition",
+          "graphite",
+          "pendulum",
+          "megawatt",
+          "microscopic",
+          "carnivorous"
+        ],
+        "notes": "1. READ: \"Okay, if your first name has four letters or fewer, read row 1.\"\n2. READ: \"If your first name has five letters, read row 2.\"\n3. READ: \"If your first name has six letters, read row 3.\"\n4. READ: \"If your first name has seven letters or more, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"micro and -ule both mean small. Which three words carry a small part?\" 5 sec, choral response - everyone, together, on three. EXPECT: microphone, molecule, microscopic.\n7. ASK: \"vore means eating. Which two words carry it?\" 5 sec, turn and tell. EXPECT: herbivore, carnivorous.\n8. ASK: \"-ite can name a rock or a mineral. Which two words name one?\" 5 sec, choral response. EXPECT: granite, graphite.\n9. ASK: \"vict means conquer and pon means place. Which two words name a person in a contest?\" 5 sec, turn and tell. EXPECT: victor, opponent.\n10. ASK: \"Which word names the quality of being a coward?\" 3 sec, choral response. EXPECT: cowardice.\n11. ASK: \"mega- means million. Which word names a million watts?\" 3 sec, choral response. EXPECT: megawatt.\n12. ASK: \"mal- means bad. Which word means the body has been badly fed?\" 3 sec, choral response. EXPECT: malnutrition."
+      },
+      "sound_bank": [
+        {
+          "morph": "pict/picto",
+          "type": "root"
+        },
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "chron",
+          "type": "root"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root"
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "pottery",
+          "sentence": "Our pottery club fires its clay bowls in the art room kiln.",
+          "prompt": "-ery can mean relating to. Which everyday word is sitting in front of it?",
+          "answer": "pot, with a second t added. Pottery is anything relating to pots: the craft, the room and the bowls."
+        },
+        {
+          "word": "sensitive",
+          "sentence": "Wear your hat at lunch, because sensitive skin burns fast.",
+          "prompt": "Which taught ending tells you sensitive is describing the skin?",
+          "answer": "The -ive ending, the same one in active. Sensitive skin reacts to even a little sun."
+        },
+        {
+          "word": "privacy",
+          "sentence": "The curtain in the reading corner gives quiet readers some privacy.",
+          "prompt": "-acy means state or quality. Which word did privacy grow from?",
+          "answer": "private. The te changes to c, so privacy is the state of being private."
+        },
+        {
+          "word": "depict",
+          "sentence": "Your comic strip must depict the water cycle in four boxes.",
+          "prompt": "pict means paint. How does a comic strip depict something?",
+          "answer": "It paints it in pictures, so the reader sees the water cycle happen instead of reading about it."
+        },
+        {
+          "word": "ecology",
+          "sentence": "Our ecology project counts the frogs in the school pond.",
+          "prompt": "eco means house. Whose house is being studied here?",
+          "answer": "The frogs' house. The pond is their home, and ecology studies how living things share it."
+        },
+        {
+          "word": "junction",
+          "sentence": "The bus waits at the busy junction near our school gate.",
+          "prompt": "junct means join. What joins at a junction?",
+          "answer": "Two or more roads. The junction is the exact spot where they meet."
+        },
+        {
+          "word": "chronic",
+          "sentence": "Sam has a chronic cough that comes back every winter.",
+          "prompt": "chron means time. Why is chronic the right word for this cough?",
+          "answer": "It lasts a long time and keeps coming back. A chronic problem never really goes away."
+        },
+        {
+          "word": "judgement",
+          "sentence": "The netball umpire made a quick judgement about the foul.",
+          "prompt": "jud means right or law. What is the umpire deciding in a judgement?",
+          "answer": "Whether the play was right or against the rules. In Australian spelling, judgement keeps its e."
+        },
+        {
+          "word": "component",
+          "sentence": "Each component of our robot kit comes in its own bag.",
+          "prompt": "pon means place or part. What happens if one component goes missing?",
+          "answer": "The robot cannot be finished. Every part has its own place, and the whole needs all of them."
+        },
+        {
+          "word": "explosive",
+          "sentence": "The volcano model had an explosive finish of fizzing foam.",
+          "prompt": "Which taught ending does explosive share with sensitive?",
+          "answer": "The -ive ending, meaning relating to or like. Explosive is like an explosion: sudden and loud."
+        }
+      ],
+      "learned_words": {
+        "review": [
+          {
+            "word": "muscle",
+            "unfair": "c",
+            "notes": "Why learned: the c is silent, so the sc just says /s/ and the c hides between the s and the l.\nSay it: MUS-uhl, two beats. Write mus - cle, then say muscular, where you can hear the c as /k/.\nLink: today's five words all hide a letter you never hear, and muscle hides a c."
+          },
+          {
+            "word": "salmon",
+            "unfair": "l",
+            "notes": "Why learned: the l is completely silent, so the word sounds like sam-uhn but keeps a letter you never hear.\nSay it: SAM-uhn, two beats. Write sal - mon in two chunks and leave the l in.\nLink: salmon hides a silent l, and so does the next word on today's list."
+          },
+          {
+            "word": "yolk",
+            "unfair": "l",
+            "notes": "Why learned: the l is silent, exactly like salmon, and the o says a long /oh/.\nSay it: YOHK, one beat. Write y - ol - k, then check the l is still sitting there.\nLink: salmon and yolk are a pair - both hide a silent l in the middle."
+          },
+          {
+            "word": "asthma",
+            "unfair": "th",
+            "notes": "Why learned: the th in the middle says nothing at all, so two letters are silent passengers.\nSay it: AS-muh, two beats. Write as - th - ma in three chunks and leave the th in the middle.\nLink: asthma hides two silent letters, the most of any word today."
+          },
+          {
+            "word": "iron",
+            "unfair": "ro",
+            "notes": "Why learned: the r is silent and the o says a plain /uh/, so the ro chunk sounds like nothing you would predict.\nSay it: EYE-uhn, two beats. Write i - ron in two chunks and leave the r in.\nLink: iron hides a silent r. You can hear it again in ironic, but never in iron itself."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "After the drought, a hungry leopard crept along the creek bed.",
+          "targets": [
+            "drought",
+            "leopard"
+          ],
+          "cups": {
+            "capitals": [
+              "After"
+            ],
+            "punctuation": [
+              "comma after the fronted adverbial (After the drought tells when and has moved to the front - the comma shows where it ends)",
+              "full stop"
+            ]
+          },
+          "focus": "Term review: the red words drought (Week 2) and leopard (Week 6), in a sentence that opens with a fronted adverbial"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Under the old gum tree, our captain gave one command: pack the equipment before the storm.",
+          "targets": [
+            "captain",
+            "command"
+          ],
+          "cups": {
+            "capitals": [
+              "Under"
+            ],
+            "punctuation": [
+              "comma after the fronted adverbial (Under the old gum tree tells where - the comma shows where it ends)",
+              "colon (it introduces the instruction that follows, so no speech marks)",
+              "full stop"
+            ]
+          },
+          "focus": "Term review: capt in captain (Term 2) and mand in command (Week 7). CUPS is not just for dictation - run the same four checks on your own draft."
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Term review day 1 - prepositional phrases and adverbials, pulled back into one sentence.\nWHY THIS WEEK: every grammar move this term fixed a writing problem. This week the whole toolkit comes back so students reach for it in their own drafts.\nROUTINE: all grammar this week is written in the OG book. No boards and no scoring - books, fingers, thumbs and voices only.\nPREP: an adverbial tells when, where, how or why. A prepositional phrase often does that job, and a fronted one takes a comma.",
+        "i_do": {
+          "title": "Where, when, how or why?",
+          "rule": "A prepositional phrase often tells when, where, how or why.",
+          "example": "The possum hid under the deck after dark.\nunder the deck = where\nafter dark = when",
+          "items": [
+            "Phrase = preposition + its whole noun group.",
+            "Move one to the front? Put a comma after it."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Tomorrow: phrase, clause or appositive?",
+          "notes": "ANSWER: under the deck tells where and after dark tells when. Both are prepositional phrases doing the adverbial job.\n1. SAY: \"Okay, Weeks 1 to 3 in one sentence. These phrases are what let your reader picture where and when something happened.\"\n2. WRITE: copy \"The possum hid.\" onto the class board. POINT at hid and wonder aloud where it hid, and when.\n3. WRITE: add \"under the deck after dark\" straight after hid, then underline each phrase from its preposition to the end of its noun group.\n4. WRITE: underneath, rewrite it as \"After dark, the possum hid under the deck.\" and circle the comma after dark.\nTRAP: underlining only the word under. Fix: say the phrase runs to the end of its noun group, student reads under the deck as one chunk.\nCLARIFY: if a student asks whether every prepositional phrase is an adverbial, say only when it tells when, where, how or why about the action.\n---\nPurpose: day one of the term review restates the phrase and adverbial rules in one sentence. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: both phrases describe the action hid, so both are working as adverbials; only the fronted one needs a comma."
+        },
+        "we_do": {
+          "title": "Find it, then front it",
+          "rule": "Find the prepositional phrase, name its job, then move it to the front.",
+          "example": "Our class ate lunch under the gum tree.",
+          "items": [
+            "Fingers: 1 when, 2 where, 3 how, 4 why.",
+            "Then say it with the phrase at the front."
+          ],
+          "routine": "Fingers on three - voices off",
+          "footer": "Stem: The comma goes after ...",
+          "notes": "ANSWER: under the gum tree tells where. Fronted: Under the gum tree, our class ate lunch.\n1. POINT: sweep a finger under the sentence on the slide, then SAY, \"Okay, one sentence and one phrase hiding in it. Find it with your eyes first.\"\n2. ASK: \"Which words make the prepositional phrase?\" 10 sec, everyone, together, on three. EXPECT: under the gum tree.\n3. ASK: \"Is it telling when, where, how or why?\" 10 sec, fingers on three, voices off. EXPECT: two fingers, where. Then cold call one student to say how they know.\n4. WRITE: \"Under the gum tree,\" on the class board and circle the comma, then everyone says the rest of the sentence on three. EXPECT: our class ate lunch.\n5. SCAN every hand. 80%+ -> move on. Less -> read the phrase from under to tree together, then re-ask.\nTRAP: saying under the gum and stopping. Fix: say the phrase ends where its noun group ends, student says under the gum tree again.\nCLARIFY: if a student asks why the comma only appears at the front, say it marks where the fronted part ends - at the end, the full stop does that job.\n---\nPurpose: guided oral practice finding, naming and fronting one phrase. [We Do | Guided practice | Grammar | HITS 7]\nPREP: the fingers are the four adverbial jobs from Week 2 - 1 when, 2 where, 3 how, 4 why."
+        },
+        "you_do": {
+          "title": "Front the phrase",
+          "rule": "Your turn: put the phrase at the FRONT, then a comma.",
+          "example": "One done for you:\nWe swam. + after lunch\nAfter lunch, we swam.",
+          "items": [
+            "A) The bell rang. + at nine    B) We hid. + behind the shed",
+            "C) Mia read. + in the library    D) We waited. + during the storm"
+          ],
+          "item_size": 16,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: is there a comma after the phrase?",
+          "notes": "ANSWER: A At nine, the bell rang. B Behind the shed, we hid. C In the library, Mia read. D During the storm, we waited.\n1. SAY: \"Okay, look at the finished one first. The phrase went to the front, and a comma closed it off.\"\n2. SAY: \"Write A, B, C and D down the page, then write each new sentence with the phrase at the front. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"write the phrase first with a capital letter and a comma, then copy the old sentence starting with a small letter.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> build C together on the board, then re-check.\nTRAP: keeping the old capital, as in At nine, The bell rang. Fix: say the sentence now starts with the phrase, student rewrites the with a small t.\nEXTENSION: Write one sentence with two prepositional phrases doing different jobs - front one and end the other - then label each job.\nHELP: Give each phrase already written with its capital and comma; students copy the rest of the sentence after it.\n---\nPurpose: independent practice fronting a phrase and punctuating it. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) The bell rang. + at nine = At nine, the bell rang.\nB) We hid. + behind the shed = Behind the shed, we hid.\nC) Mia read. + in the library = In the library, Mia read.\nD) We waited. + during the storm = During the storm, we waited.\nEXTENSION: e.g. After recess, we played cricket on the oval. After recess tells when and on the oval tells where.",
+          "check_title": "Tick it or fix it - front the phrase",
+          "check_rule": "Tick each sentence with the phrase at the front and a comma after it.",
+          "check_items": [
+            "A) At nine, the bell rang. (when)",
+            "B) Behind the shed, we hid. (where)",
+            "C) In the library, Mia read. (where)",
+            "D) During the storm, we waited. (when)"
+          ],
+          "check_item_size": 20,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: front a phrase for variety.",
+          "check_notes": "ANSWER: A At nine, the bell rang. B Behind the shed, we hid. C In the library, Mia read. D During the storm, we waited.\n1. MODEL: \"For A I found the phrase at nine. It tells when, so I moved it to the front, gave it a capital and put the comma straight after nine.\"\n2. SAY: \"Now tick each sentence that matches. Fix any comma or capital that is missing.\"\n3. ASK: \"If each phrase went back to the end, which of these sentences would still need a comma?\" 10 sec, turn and tell. EXPECT: none of them, because a phrase at the end needs no comma.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild D together, then re-check.\n5. SAY: \"When you edit your next narrative, find three sentences that start with The, and front a phrase in one of them.\"\nTRAP: ticking a comma in the wrong place, like At, nine the bell rang. Fix: say the comma waits until the whole phrase is finished, student moves it.\n---\nPurpose: protected reveal that models the fronting move and sends it into their narrative drafts. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "type": "week_review",
+      "morphology_review": [
+        {
+          "morph": "pon/pound",
+          "type": "root",
+          "keyword": "ponder",
+          "meaning": "place, part"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint",
+          "extra_task": {
+            "prompt": "Give me one word built from pict or picto, meaning paint.",
+            "answers": [
+              "picture",
+              "depict",
+              "pictograph",
+              "pictorial"
+            ]
+          }
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million",
+          "extra_task": {
+            "prompt": "Give me one word starting with mega-, meaning million.",
+            "answers": [
+              "megabyte",
+              "megawatt",
+              "megahertz",
+              "megalitre"
+            ]
+          }
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like",
+          "extra_task": {
+            "prompt": "Give me one word ending in -ive, meaning relating to or like.",
+            "answers": [
+              "active",
+              "negative",
+              "sensitive",
+              "explosive"
+            ]
+          }
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        },
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "literacy",
+          "conjunction",
+          "megabyte",
+          "picturesque",
+          "because",
+          "accuracy",
+          "chronological",
+          "ponder",
+          "inquisitive",
+          "megalitre",
+          "malfunction",
+          "ecologist",
+          "justify",
+          "numeracy",
+          "machinery"
+        ],
+        "notes": "1. READ: \"Okay, if you came to school in a car today, read row 1.\"\n2. READ: \"If you walked, read row 2.\"\n3. READ: \"If you came on a bike or a scooter, read row 3.\"\n4. READ: \"If you came on a bus, or any other way, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"-acy means quality or state. Which three words carry it?\" 5 sec, choral response - everyone, together, on three. EXPECT: literacy, accuracy, numeracy.\n7. ASK: \"mega- means million. Which two words carry it?\" 5 sec, turn and tell. EXPECT: megabyte, megalitre.\n8. ASK: \"junct means join. Which word names a joining word in a sentence?\" 5 sec, choral response. EXPECT: conjunction.\n9. ASK: \"caus and cus mean cause. Which word brings in a reason?\" 3 sec, choral response. EXPECT: because.\n10. ASK: \"chron means time. Which word describes events told in time order?\" 3 sec, choral response. EXPECT: chronological.\n11. ASK: \"eco means house. Which word names a scientist who studies living things in their habitat?\" 3 sec, choral response. EXPECT: ecologist.\n12. ASK: \"Which word describes a student who asks lots of questions?\" 3 sec, choral response. EXPECT: inquisitive."
+      },
+      "sound_bank": [
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root"
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "microscope",
+          "sentence": "We looked at pond water under the school microscope.",
+          "prompt": "micro means small. Which part of microscope means look at?",
+          "answer": "The scope part. A microscope lets you look at things far too small for your eyes."
+        },
+        {
+          "word": "microclimate",
+          "sentence": "The shady corner behind the library has its own cool microclimate.",
+          "prompt": "micro means small. Why does that corner get its own word?",
+          "answer": "Its climate is different from the rest of the yard, but only in one small area."
+        },
+        {
+          "word": "voracious",
+          "sentence": "Our class guinea pig is a voracious eater of fresh carrots.",
+          "prompt": "vore means eating. What does voracious tell you about the guinea pig?",
+          "answer": "It eats greedily and fast. Notice the e from vore drops off before the ending."
+        },
+        {
+          "word": "carnivore",
+          "sentence": "A quoll is a carnivore that hunts in the bush at night.",
+          "prompt": "carn means flesh or meat. Which part tells you the quoll eats it?",
+          "answer": "The vore ending, meaning eating. A carnivore is a meat eater, so the quoll hunts for its food."
+        },
+        {
+          "word": "conviction",
+          "sentence": "Priya spoke with such conviction that the whole class voted for her idea.",
+          "prompt": "vict means conquer. What did Priya's conviction conquer?",
+          "answer": "Everyone's doubts. She was so sure that nobody could argue her down."
+        },
+        {
+          "word": "mandatory",
+          "sentence": "Hats are mandatory in the playground from September to April.",
+          "prompt": "mand means order. Who is giving the order about hats?",
+          "answer": "The school. Mandatory means it has been ordered, so nobody gets a choice."
+        },
+        {
+          "word": "suspense",
+          "sentence": "The suspense in chapter nine kept the whole class silent.",
+          "prompt": "pens means hang. What is left hanging in suspense?",
+          "answer": "The answer. The reader hangs on, waiting to find out what happens next."
+        },
+        {
+          "word": "service",
+          "sentence": "The Year 6 leaders gave friendly service at the sausage sizzle.",
+          "prompt": "-ice means state or quality. Which everyday word is it stuck to?",
+          "answer": "serve, with its e dropped. Service is the state of serving other people."
+        },
+        {
+          "word": "favourite",
+          "sentence": "My favourite part of camp was the night walk to the creek.",
+          "prompt": "-ite can mean a quality. Which word is favourite built on?",
+          "answer": "favour, with the u kept in Australian spelling. Your favourite has the quality of being favoured most."
+        },
+        {
+          "word": "granule",
+          "sentence": "One granule of sugar dissolved in the beaker straight away.",
+          "prompt": "-ule means small. Which everyday word is hiding at the front?",
+          "answer": "grain, squeezed down to gran. A granule is a small grain."
+        }
+      ],
+      "learned_words": {
+        "review": [
+          {
+            "word": "drought",
+            "unfair": "ough",
+            "notes": "Why learned: ough says /ow/ here, but the same four letters say /uff/ in enough and /oh/ in though. You cannot sound it out.\nSay it: DROWT, one beat. It rhymes with out and shout.\nLink: today's five words all have vowel letters that do not say what they promise."
+          },
+          {
+            "word": "buoyancy",
+            "unfair": "uoy",
+            "notes": "Why learned: uoy says /oy/, and English almost never puts those three letters in that order.\nSay it: BOY-uhn-see, three beats. Hear buoy at the front, then the -ancy ending, the same one in infancy.\nLink: the science word for the upward push of water that keeps a floating object up."
+          },
+          {
+            "word": "gauge",
+            "unfair": "au",
+            "notes": "Why learned: au usually says /or/ as in caught, but here it says a long /ay/, so the au chunk lies to you.\nSay it: GAYJ, one beat. Write g - au - ge in three chunks, then check the u is still there.\nLink: a rain gauge measures rain, so this word belongs in every weather investigation."
+          },
+          {
+            "word": "leopard",
+            "unfair": "eo",
+            "notes": "Why learned: eo says one short /e/ here, not two vowel sounds, and the ard ending says /uhd/.\nSay it: LEP-uhd, two beats. Write leo - pard in two chunks and check the o is still there.\nLink: a leopard is a carnivore, so it pairs with carn and vore from this term."
+          },
+          {
+            "word": "circuit",
+            "unfair": "ui",
+            "notes": "Why learned: after the c, ui says a short /i/, so the ending sounds like kit, not kwit.\nSay it: SER-kit, two beats. Say kit at the end and remember the u is doing nothing.\nLink: the complete loop an electric current travels around, from our Week 3 science work."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Every species in the rock pool relies on clever camouflage.",
+          "targets": [
+            "species",
+            "camouflage"
+          ],
+          "cups": {
+            "capitals": [
+              "Every"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "Term review: the red words species (Week 5) and camouflage (Week 4)"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Mrs Kay, our school nurse, said the injury to my stomach muscle would heal in a week.",
+          "targets": [
+            "injury",
+            "stomach",
+            "muscle"
+          ],
+          "cups": {
+            "capitals": [
+              "Mrs",
+              "Kay"
+            ],
+            "punctuation": [
+              "comma opening the appositive (our school nurse renames Mrs Kay, so a comma goes before it)",
+              "comma closing the appositive (a second comma shows where the renaming words end)",
+              "full stop"
+            ]
+          },
+          "focus": "Term review: jur in injury (Week 7), and the red words stomach (Week 5) and muscle (Week 1)"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Term review day 2 - phrase or clause, and the appositive that renames.\nWHY THIS WEEK: every grammar move this term fixed a writing problem. This week the whole toolkit comes back so students reach for it in their own drafts.\nROUTINE: all grammar this week is written in the OG book. No boards and no scoring - books, fingers, thumbs and voices only.\nPREP: a clause has its own verb; a phrase does not. An appositive is a phrase that renames the noun right before it, inside two commas.",
+        "i_do": {
+          "title": "Clause, phrase or appositive?",
+          "rule": "Clause: has a verb. Phrase: no verb. Appositive: renames.",
+          "example": "Mia, our team captain, scored a goal.\nscored = verb, so it is a clause\nour team captain = phrase, renames Mia",
+          "items": [
+            "Clause test: find the verb.",
+            "Appositive test: cover it and the sentence still works."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Tomorrow: how many clauses?",
+          "notes": "ANSWER: scored is the verb, so Mia scored a goal is a clause. our team captain has no verb and renames Mia, so it is an appositive.\n1. SAY: \"Okay, Weeks 4 and 5. A clause has its own verb and a phrase does not, and that test catches a half-finished sentence before your reader does.\"\n2. WRITE: copy \"Mia scored a goal.\" onto the class board. POINT at scored and say that is the verb, so this is a clause that stands alone.\n3. WRITE: add \", our team captain,\" straight after Mia so the board reads the full sentence, then circle both commas.\n4. COVER our team captain with your hand and read the sentence aloud, so the class hears it still works without the appositive.\nTRAP: calling our team captain a clause because it sits in the middle. Fix: ask where its verb is, student finds none and says phrase.\nCLARIFY: if a student asks whether any phrase between commas is an appositive, say only one that renames the noun right before it - at lunch renames nobody.\n---\nPurpose: day two restates the clause test and the appositive in one sentence. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: an appositive is a noun phrase that renames the noun beside it; cover it and the sentence must still stand."
+        },
+        "we_do": {
+          "title": "Phrase, clause, appositive",
+          "rule": "Signal phrase or clause, then find the appositive.",
+          "example": "A) behind the canteen\nB) the siren wailed\nC) Ms Lee, our coach, waved.",
+          "items": [
+            "Fingers: 1 phrase, 2 clause.",
+            "For C, say the words that rename Ms Lee."
+          ],
+          "routine": "Fingers on three - voices off",
+          "footer": "Stem: It is a clause because ...",
+          "notes": "ANSWER: A phrase, no verb. B clause, the verb is wailed. C the appositive is our coach.\n1. POINT: at A on the slide and read it aloud, then SAY, \"Okay, hunt for a verb. No verb means phrase.\"\n2. ASK: \"Is A a phrase or a clause?\" 10 sec, fingers on three, voices off. EXPECT: one finger, phrase - there is no verb.\n3. ASK: \"Is B a phrase or a clause?\" 10 sec, fingers on three, voices off. EXPECT: two fingers, clause - wailed is the verb. Then cold call one student to say how they found it.\n4. ASK: \"In C, which words rename Ms Lee?\" 10 sec, everyone, together, on three. EXPECT: our coach.\n5. SCAN every hand. 80%+ -> move on. Less -> cover our coach on the slide and read C aloud, then re-ask.\nTRAP: calling behind the canteen a clause because it sounds long. Fix: say length is not the test, student hunts for a verb and finds none.\nCLARIFY: if a student asks whether coach is a verb, say here it names a job - the verb in C is waved.\n---\nPurpose: guided sorting that joins the Week 4 and Week 5 tests. [We Do | Guided practice | Grammar | HITS 7]\nPREP: C is a clause (Ms Lee waved) with an appositive dropped inside it."
+        },
+        "you_do": {
+          "title": "Add the appositive",
+          "rule": "Your turn: add the bracket words inside two commas.",
+          "example": "One done for you:\nOur dog chased the ball. (a kelpie)\nOur dog, a kelpie, chased the ball.",
+          "items": [
+            "A) Mr Ross waved. (our principal)    B) Bluey slept. (my cat)",
+            "C) The koala climbed. (a young male)    D) Ana won. (my sister)"
+          ],
+          "item_size": 16,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: did you write both commas?",
+          "notes": "ANSWER: A Mr Ross, our principal, waved. B Bluey, my cat, slept. C The koala, a young male, climbed. D Ana, my sister, won.\n1. SAY: \"Okay, look at the finished one. The bracket words went straight after our dog, with a comma on each side.\"\n2. SAY: \"Copy A, B, C and D and add each appositive inside two commas. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"put your finger on the name the bracket words describe - the appositive goes right after that name.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> build C together on the board, then re-check.\nTRAP: putting the bracket words at the end, like Mr Ross waved, our principal. Fix: point at Mr Ross, student moves the words next to it.\nEXTENSION: Write two sentences of your own, one with the appositive in the middle and one with it at the very end, then explain why the end one needs only one comma.\nHELP: Give each sentence already split after the name, so students only write the appositive and its two commas.\n---\nPurpose: independent practice adding an appositive with both commas. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) Mr Ross waved. (our principal) = Mr Ross, our principal, waved.\nB) Bluey slept. (my cat) = Bluey, my cat, slept.\nC) The koala climbed. (a young male) = The koala, a young male, climbed.\nD) Ana won. (my sister) = Ana, my sister, won.\nEXTENSION: e.g. Tia, our class artist, painted the sign. We cheered for our captain, Ana. The end one needs one comma because the full stop closes the appositive.",
+          "check_title": "Tick it or fix it - add the appositive",
+          "check_rule": "Tick each appositive: after the name, two commas.",
+          "check_items": [
+            "A) Mr Ross, our principal, waved. (renames Mr Ross)",
+            "B) Bluey, my cat, slept. (renames Bluey)",
+            "C) The koala, a young male, climbed. (renames koala)",
+            "D) Ana, my sister, won. (renames Ana)"
+          ],
+          "check_item_size": 18,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: rename a person in one line.",
+          "check_notes": "ANSWER: A Mr Ross, our principal, waved. B Bluey, my cat, slept. C The koala, a young male, climbed. D Ana, my sister, won.\n1. MODEL: \"For C I found the koala first. A young male renames it, so it sits right after koala, with one comma before and one after.\"\n2. SAY: \"Now tick each sentence that matches. Fix any sentence that is missing a comma.\"\n3. ASK: \"If we covered every appositive, which of these would still be a full sentence, and how can you tell?\" 10 sec, turn and tell. EXPECT: all four, because each still has a name and a verb.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild C together, then re-check.\n5. SAY: \"In your next information report, rename one person or place with an appositive instead of writing a second sentence.\"\nTRAP: ticking a sentence with only the first comma. Fix: say one comma opens the appositive and one closes it, student adds the second.\n---\nPurpose: protected reveal that models appositive placement and sends it into their reports. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Wednesday",
+      "type": "week_review",
+      "morphology_review": [
+        {
+          "morph": "-ule",
+          "type": "suffix",
+          "keyword": "nodule",
+          "meaning": "small"
+        },
+        {
+          "morph": "caus-/cus(e)",
+          "type": "root",
+          "keyword": "accuse",
+          "meaning": "cause",
+          "extra_task": {
+            "prompt": "Give me one word built from caus or cus, meaning cause.",
+            "answers": [
+              "cause",
+              "because",
+              "excuse",
+              "accuse"
+            ]
+          }
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix",
+          "keyword": "machinery",
+          "meaning": "relating to, place where",
+          "extra_task": {
+            "prompt": "Give me one word ending in -ery that names a place where something is made or done.",
+            "answers": [
+              "pottery",
+              "winery",
+              "surgery"
+            ]
+          }
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix",
+          "keyword": "service",
+          "meaning": "state or quality"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer",
+          "extra_task": {
+            "prompt": "Give me one word built from vict or vinc, meaning conquer.",
+            "answers": [
+              "victory",
+              "convince",
+              "invincible",
+              "evict"
+            ]
+          }
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix",
+          "keyword": "accuracy",
+          "meaning": "quality, state"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "jury",
+          "capsule",
+          "pictogram",
+          "bravery",
+          "invincible",
+          "causal",
+          "appetite",
+          "disjointed",
+          "minuscule",
+          "accuse",
+          "delicacy",
+          "omnivore",
+          "carnage",
+          "justice",
+          "victory"
+        ],
+        "notes": "1. READ: \"Okay, if your first name starts with A to D, read row 1.\"\n2. READ: \"If it starts with E to J, read row 2.\"\n3. READ: \"If it starts with K to R, read row 3.\"\n4. READ: \"If it starts with S to Z, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"-ule means small. Which two words carry it?\" 5 sec, choral response - everyone, together, on three. EXPECT: capsule, minuscule.\n7. ASK: \"caus and cus mean cause. Which two words carry them?\" 5 sec, turn and tell. EXPECT: causal, accuse.\n8. ASK: \"jur, jud and just mean right or law. Which two words carry them?\" 5 sec, choral response. EXPECT: jury, justice.\n9. ASK: \"omni- means all. Which word names an animal that eats all kinds of food?\" 3 sec, choral response. EXPECT: omnivore.\n10. ASK: \"vinc means conquer. Which word means nobody can conquer it?\" 3 sec, choral response. EXPECT: invincible.\n11. ASK: \"Which word names the quality of being brave?\" 3 sec, choral response. EXPECT: bravery.\n12. ASK: \"Which word names how hungry you feel for food?\" 3 sec, choral response. EXPECT: appetite."
+      },
+      "sound_bank": [
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "chron",
+          "type": "root"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root"
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root"
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "microphone",
+          "sentence": "Speak slowly into the microphone at Friday's assembly.",
+          "prompt": "micro means small. Which part of microphone means sound?",
+          "answer": "The phone part, the same one in telephone. A microphone takes a small sound and makes it big."
+        },
+        {
+          "word": "economy",
+          "sentence": "Tourism at the snowfields is a big part of the local economy.",
+          "prompt": "eco means house. How is a town like a house here?",
+          "answer": "The town manages its money the way a family runs its house. That money system is the economy."
+        },
+        {
+          "word": "chronology",
+          "sentence": "Our Gold Rush project needs a clear chronology of every event.",
+          "prompt": "chron means time. How is a chronology put in order?",
+          "answer": "From earliest to latest. Every event sits where it happened in time."
+        },
+        {
+          "word": "demand",
+          "sentence": "The crowd began to demand a rematch after the draw.",
+          "prompt": "mand means order. How is a demand different from a request?",
+          "answer": "A demand sounds like an order, so it does not wait for a yes."
+        },
+        {
+          "word": "pendulum",
+          "sentence": "We timed the pendulum swinging in our science investigation.",
+          "prompt": "pend means hang. Which part of a pendulum is hanging?",
+          "answer": "The weight on the end of the string. It hangs from one point and swings back and forth."
+        },
+        {
+          "word": "opponent",
+          "sentence": "My chess opponent took ten whole minutes to make one move.",
+          "prompt": "pon means place. Where is an opponent placed in a chess game?",
+          "answer": "Directly across the board, placed against you. That is what makes them the other side."
+        },
+        {
+          "word": "malnutrition",
+          "sentence": "The wildlife carers treated the young wombat for malnutrition.",
+          "prompt": "mal- means bad. What had gone bad for the wombat?",
+          "answer": "Its nutrition, the food its body needed. It was badly fed, so it grew weak."
+        },
+        {
+          "word": "megawatt",
+          "sentence": "One giant wind turbine can produce more than a megawatt of power.",
+          "prompt": "mega- means million. Why does a wind turbine need a mega- word?",
+          "answer": "Its power is huge. A megawatt is one million watts, enough for hundreds of homes at once."
+        },
+        {
+          "word": "negative",
+          "sentence": "One negative comment can ruin a friend's whole day.",
+          "prompt": "Which taught ending does negative share with active?",
+          "answer": "The -ive ending, meaning relating to or like. A negative comment is like a no: it pulls things down."
+        },
+        {
+          "word": "expensive",
+          "sentence": "The class agreed the zoo trip was too expensive for everyone.",
+          "prompt": "Which two taught parts are stacked in expensive?",
+          "answer": "pens, meaning pay, and -ive, meaning relating to. Expensive is relating to paying a lot."
+        }
+      ],
+      "learned_words": {
+        "review": [
+          {
+            "word": "tsunami",
+            "unfair": "ts",
+            "notes": "Why learned: ts says /s/ at the start, because the word kept its Japanese spelling when English borrowed it.\nSay it: soo-NAH-mee, three beats. The t stays silent and the stress lands on NAH.\nLink: today's four words were all borrowed from other languages and kept their spelling. tsunami came from Japanese."
+          },
+          {
+            "word": "camouflage",
+            "unfair": "ou",
+            "notes": "Why learned: the ou says a plain /uh/, and the French -age ending says /ahzh/, not the /ij/ of village.\nSay it: KAM-uh-flahzh, three beats. Write cam - ou - flage in three chunks.\nLink: camouflage came from French, which is why its ending sounds so different."
+          },
+          {
+            "word": "seismograph",
+            "unfair": "ei",
+            "notes": "Why learned: ei says a long /i/ here, so seis sounds like size, because this part came straight from Greek.\nSay it: SIZE-muh-grahf, three beats. Write seis - mo - graph in three chunks.\nLink: graph means write or record, the same ending as pictograph from Week 4, so only the seis part is unfair."
+          },
+          {
+            "word": "stomach",
+            "unfair": "ch",
+            "notes": "Why learned: ch says /k/ here because the word came to English from Greek, and the a says a plain /uh/.\nSay it: STUM-uk, two beats. Write sto - mach in two chunks.\nLink: chron came from Greek too, and Greek words are where our ch-says-k spellings come from."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The rain gauge was full, so the archery club stayed inside.",
+          "targets": [
+            "gauge",
+            "archery"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "comma before so (it joins two halves that both stand alone into one compound sentence)",
+              "full stop"
+            ]
+          },
+          "focus": "Term review: the red word gauge (Week 7) and -ery in archery (Week 1)"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Although the old circuit looked safe, the electrician said, \"Replace every wire today.\"",
+          "targets": [
+            "circuit",
+            "electrician"
+          ],
+          "cups": {
+            "capitals": [
+              "Although",
+              "Replace"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the although part that cannot stand alone - the comma shows where it ends)",
+              "comma before the speech (it separates who said it from what they said)",
+              "opening quotation mark (speech starts here, so Replace takes a capital)",
+              "full stop inside the speech (the electrician's sentence ends here)",
+              "closing quotation mark (the speech ends here)"
+            ]
+          },
+          "focus": "Term review: the red word circuit (Week 3) and -cian in electrician (Term 1). CUPS is not just for dictation - run the same four checks on your own draft."
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Term review day 3 - simple, compound and complex sentences, with the main clause, the subordinate clause and the trigger word.\nWHY THIS WEEK: every grammar move this term fixed a writing problem. This week the whole toolkit comes back so students reach for it in their own drafts.\nROUTINE: all grammar this week is written in the OG book. No boards and no scoring - books, fingers, thumbs and voices only.\nPREP: signals from Week 6 - one finger simple, two fingers compound, a fist for complex. T is the trigger word that makes a clause wait.",
+        "i_do": {
+          "title": "Count the clauses",
+          "rule": "Simple: one clause. Compound: two that stand alone. Complex: one waits.",
+          "example": "The bell rang. = simple\nThe bell rang, so we lined up. = compound\nWhen the bell rang, we lined up. = complex",
+          "items": [
+            "The trigger word (when, because, although) makes a clause wait.",
+            "Waiting clause at the front? Put a comma after it."
+          ],
+          "item_size": 16,
+          "routine": "Eyes on me - voices off",
+          "footer": "Tomorrow: sound like a report writer",
+          "notes": "ANSWER: The bell rang is simple. The so sentence is compound. The when sentence is complex, and when is the trigger word.\n1. SAY: \"Okay, Weeks 6 and 7 on one slide. Writers who mix all three kinds of sentence keep their reader awake.\"\n2. WRITE: copy \"The bell rang.\" onto the class board and hold up one finger - one clause, so it is simple.\n3. WRITE: add \", so we lined up.\" after rang and hold up two fingers - both halves stand alone, joined by so, so it is compound.\n4. WRITE: underneath, write \"When the bell rang, we lined up.\" then circle When, underline When the bell rang, make a fist and say that half waits, so it is complex.\nTRAP: calling the when sentence compound because it has two clauses. Fix: cover we lined up, student reads When the bell rang alone and hears it wait.\nCLARIFY: if a student asks whether so is a trigger word, say no - so joins two halves that both stand alone, which makes the sentence compound.\n---\nPurpose: day three restates all three sentence types and the trigger word on one board. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: a subordinate clause has a verb but cannot stand alone; the subordinating conjunction at its front, the trigger word, is what makes it wait."
+        },
+        "we_do": {
+          "title": "Signal it, then find T",
+          "rule": "Signal simple, compound or complex. For complex, name the trigger word.",
+          "example": "A) Although it rained, we played.\nB) We trained hard, but we lost.",
+          "items": [
+            "1 finger simple, 2 fingers compound, fist complex.",
+            "Complex? Say the trigger word."
+          ],
+          "routine": "Signals on three - voices off",
+          "footer": "Stem: A is complex because ...",
+          "notes": "ANSWER: A complex, the trigger word is although. B compound, joined by but.\n1. POINT: at A on the slide and read it aloud, then SAY, \"Okay, the Week 6 signals are back. One finger simple, two fingers compound, a fist for complex.\"\n2. ASK: \"What kind of sentence is A?\" 10 sec, signals on three, voices off. EXPECT: a fist, complex. Then cold call one student to name the trigger word.\n3. ASK: \"What kind of sentence is B?\" 10 sec, signals on three, voices off. EXPECT: two fingers, compound - we trained hard and we lost both stand alone.\n4. COVER we played on the slide with your hand and read Although it rained alone, so the class hears that half wait.\n5. SCAN every signal. 80%+ -> move on. Less -> cover each half of B aloud together, then re-signal.\nTRAP: signalling compound for A because it has a comma. Fix: read Although it rained alone, hear the wait, student re-signals complex.\nCLARIFY: if a student asks why but is not a trigger word, say both halves around but still stand alone, so but joins them instead of making one wait.\n---\nPurpose: guided sorting of a matched pair before students label alone. [We Do | Guided practice | Grammar | HITS 7]\nPREP: although makes its clause subordinate; but joins two main clauses, so B is compound."
+        },
+        "you_do": {
+          "title": "Label it",
+          "rule": "Your turn: label each one. Complex? Add T = trigger word.",
+          "example": "One done for you:\nBecause it was hot, we swam.\n= complex, T = because",
+          "items": [
+            "A) The possum slept.    B) We ran, and they followed.",
+            "C) If it rains, we stay in.    D) The tide rose, so we left."
+          ],
+          "item_size": 16,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: cover each half - which one waits?",
+          "notes": "ANSWER: A simple. B compound. C complex, T = if. D compound.\n1. SAY: \"Okay, look at the finished one. Because it was hot waits on its own, so the sentence is complex, and because is the trigger word.\"\n2. SAY: \"Write A, B, C and D down the page, then write the label beside each. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"count the verbs first - one verb means simple, and with two, cover one half and check the other still stands alone.\" Then do B together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> cover the halves of C together, then re-check.\nTRAP: labelling D complex because so sounds like a reason. Fix: read The tide rose alone, then we left alone, student hears both stand and relabels it compound.\nEXTENSION: Rewrite D as a complex sentence with a trigger word at the front, then write it again with the waiting clause at the end and fix the comma.\nHELP: Give each sentence with its verbs already underlined, so students only decide how many halves stand alone.\n---\nPurpose: independent labelling across all three sentence types. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) The possum slept. = simple, one clause\nB) We ran, and they followed. = compound, joined by and\nC) If it rains, we stay in. = complex, T = if\nD) The tide rose, so we left. = compound, joined by so\nEXTENSION: e.g. Because the tide rose, we left. We left because the tide rose. At the end, the waiting clause needs no comma.",
+          "check_title": "Tick it or fix it - label it",
+          "check_rule": "Tick each correct label. Fix any label that does not match.",
+          "check_items": [
+            "A) The possum slept. = simple, one clause",
+            "B) We ran, and they followed. = compound, and",
+            "C) If it rains, we stay in. = complex, T = if",
+            "D) The tide rose, so we left. = compound, so"
+          ],
+          "check_item_size": 20,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: mix all three in a paragraph.",
+          "check_notes": "ANSWER: A simple. B compound. C complex, T = if. D compound.\n1. MODEL: \"For C I covered we stay in and read If it rains. It waits, so C is complex, and if is the trigger word that makes it wait.\"\n2. SAY: \"Now tick each label that matches. Fix any label that is different.\"\n3. ASK: \"Which trigger word could turn D into a complex sentence with the same meaning?\" 10 sec, turn and tell. EXPECT: because, as in Because the tide rose, we left.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild C together, then re-check.\n5. SAY: \"When you edit your next draft, find three short sentences in a row and join two of them with a trigger word.\"\nTRAP: ticking complex for B because it has a comma. Fix: cover each half of B, student hears both stand alone and fixes the label.\n---\nPurpose: protected reveal that models the cover test and sends sentence variety into their drafts. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Thursday",
+      "type": "week_review",
+      "morphology_review": [
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time"
+        },
+        {
+          "morph": "mal-",
+          "type": "prefix",
+          "keyword": "malfunction",
+          "meaning": "bad, wrong, ill",
+          "extra_task": {
+            "prompt": "Give me one word starting with mal-, meaning bad, wrong or ill.",
+            "answers": [
+              "malfunction",
+              "malnutrition",
+              "maltreatment",
+              "malformation"
+            ]
+          }
+        },
+        {
+          "morph": "-ite",
+          "type": "suffix",
+          "keyword": "graphite",
+          "meaning": "native of, quality, mineral",
+          "extra_task": {
+            "prompt": "Give me one word ending in -ite that names a rock or a mineral.",
+            "answers": [
+              "granite",
+              "graphite",
+              "pyrite"
+            ]
+          }
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix",
+          "keyword": "active",
+          "meaning": "relating to, like"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat",
+          "extra_task": {
+            "prompt": "Give me one word built from carn or carni, meaning flesh or meat.",
+            "answers": [
+              "carnivore",
+              "carnivorous",
+              "carnage"
+            ]
+          }
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root",
+          "keyword": "ponder",
+          "meaning": "place, part"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "mega-",
+          "type": "prefix",
+          "keyword": "megahertz",
+          "meaning": "million"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "microchip",
+          "infinite",
+          "postpone",
+          "mandate",
+          "carnivorous",
+          "notice",
+          "ecological",
+          "microbe",
+          "cooperative",
+          "synchronise",
+          "definite",
+          "maltreatment",
+          "independence",
+          "megahertz",
+          "command"
+        ],
+        "notes": "1. READ: \"Okay, if you could be an eagle for a day, read row 1.\"\n2. READ: \"If you would pick a dolphin, read row 2.\"\n3. READ: \"If you would pick a leopard, read row 3.\"\n4. READ: \"If you would pick a wombat, or none of these, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"micro means small. Which two words carry it?\" 5 sec, choral response - everyone, together, on three. EXPECT: microchip, microbe.\n7. ASK: \"mand and mend mean order or entrust. Which two words carry them?\" 5 sec, turn and tell. EXPECT: mandate, command.\n8. ASK: \"-ite can mean a quality. Which two words end in -ite?\" 5 sec, choral response. EXPECT: infinite, definite.\n9. ASK: \"syn- means together. Which word means to set things to the same time?\" 3 sec, choral response. EXPECT: synchronise.\n10. ASK: \"post- means after. Which word means to move an event to a later date?\" 3 sec, choral response. EXPECT: postpone.\n11. ASK: \"pend means hang. Which word names the state of not hanging on anyone for help?\" 3 sec, choral response. EXPECT: independence.\n12. ASK: \"Which word describes a class that works well together?\" 3 sec, choral response. EXPECT: cooperative."
+      },
+      "sound_bank": [
+        {
+          "morph": "pict/picto",
+          "type": "root"
+        },
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root"
+        },
+        {
+          "morph": "caus-/cus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "-ery",
+          "type": "suffix"
+        },
+        {
+          "morph": "-acy",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ule",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "picturesque",
+          "sentence": "The creek walk at school camp is the most picturesque part of the week.",
+          "prompt": "pict means paint. Why call a view picturesque?",
+          "answer": "It looks good enough to paint. The -esque ending means in the style of, so it is like a picture."
+        },
+        {
+          "word": "conjunction",
+          "sentence": "Put a conjunction like but between your two clauses.",
+          "prompt": "junct means join. What does a conjunction join in your writing?",
+          "answer": "Two clauses that both stand alone. And, but and so build a compound sentence that way."
+        },
+        {
+          "word": "because",
+          "sentence": "We moved inside because the hail was the size of marbles.",
+          "prompt": "caus means cause. What job does because do in this sentence?",
+          "answer": "It is the trigger word that brings in the cause, the hail. Everything after it explains why."
+        },
+        {
+          "word": "accuracy",
+          "sentence": "Our cricket coach praised the accuracy of every throw at the stumps.",
+          "prompt": "-acy means quality or state. Which word is accuracy built on?",
+          "answer": "accurate. The te changes to c, the same change as private to privacy."
+        },
+        {
+          "word": "literacy",
+          "sentence": "Our library runs a literacy challenge for every class next term.",
+          "prompt": "Which taught ending does literacy share with accuracy?",
+          "answer": "The -acy ending, meaning quality or state. Literacy is the state of being able to read and write."
+        },
+        {
+          "word": "justify",
+          "sentence": "In persuasive writing, justify every opinion with a reason.",
+          "prompt": "just means right. What are you showing when you justify an opinion?",
+          "answer": "That it is right, or at least fair. The reason is the proof your reader needs."
+        },
+        {
+          "word": "machinery",
+          "sentence": "The farm machinery at the Royal Melbourne Show was bigger than a bus.",
+          "prompt": "-ery can mean relating to. What is machinery relating to?",
+          "answer": "Machines. Machinery means all the machines together, not just one."
+        },
+        {
+          "word": "herbivore",
+          "sentence": "A wombat is a herbivore that munches grass and roots at night.",
+          "prompt": "vore means eating. Which part tells you what a herbivore eats?",
+          "answer": "The herb part, meaning plants. A herbivore eats plants and never meat."
+        },
+        {
+          "word": "convince",
+          "sentence": "It took three emails to convince the principal to extend lunch.",
+          "prompt": "vinc means conquer. What gets conquered when you convince someone?",
+          "answer": "Their doubt. Once that is beaten, they agree with you."
+        },
+        {
+          "word": "molecule",
+          "sentence": "In science we built a water molecule out of three jelly beans.",
+          "prompt": "-ule means small. Why does a molecule need that ending?",
+          "answer": "It is tiny, far too small to see. A molecule is a small group of atoms joined together."
+        }
+      ],
+      "learned_words": {
+        "review": [
+          {
+            "word": "tongue",
+            "unfair": "ongue",
+            "notes": "Why learned: two tricks in one - the o says /u/, and the ue at the end is silent, so gue just says /g/.\nSay it: TUNG, one beat. It rhymes with lung, but it does not look like it.\nLink: today's four words all have letters doing a job you would not expect."
+          },
+          {
+            "word": "species",
+            "unfair": "ci",
+            "notes": "Why learned: the ci says /sh/, which those two letters almost never do, and the final es says /eez/.\nSay it: SPEE-sheez, two beats. Write spe - cies in two chunks.\nLink: one species, ten species - the word never takes an extra s."
+          },
+          {
+            "word": "vacuum",
+            "unfair": "uu",
+            "notes": "Why learned: two u letters in a row are almost unheard of in English, and here they say /yoo/ and then /uh/.\nSay it: VAK-yoom, two beats. Write vac - uum and count the two u letters.\nLink: space is a vacuum because there is no air in it, so nothing carries sound."
+          },
+          {
+            "word": "rhythm",
+            "unfair": "y",
+            "notes": "Why learned: the y is the only vowel letter in the word and says a short /i/, and the h behind the r is silent too.\nSay it: RITH-uhm, two beats. Write rhy - thm, then check the h behind the r.\nLink: every poem and every song has a rhythm, so you will write it in English and in music."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The buoyancy of each life jacket was checked before the carnival.",
+          "targets": [
+            "buoyancy",
+            "carnival"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "Term review: the red word buoyancy (Week 2) and carn in carnival (Week 5)"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "When the tsunami warning ended, the suspension of all beach swimming was lifted at noon.",
+          "targets": [
+            "tsunami",
+            "suspension"
+          ],
+          "cups": {
+            "capitals": [
+              "When"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the when part that cannot stand alone - the comma shows where it ends)",
+              "full stop"
+            ]
+          },
+          "focus": "Term review: the red word tsunami (Week 3) and pens in suspension (Week 8), a thing word like the ones from Week 8"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Term review day 4 - nominalisation and acronyms, the two moves that make a report sound like a report.\nWHY THIS WEEK: every grammar move this term fixed a writing problem. This week the whole toolkit comes back so students reach for it in their own drafts.\nROUTINE: all grammar this week is written in the OG book. No boards and no scoring - books, fingers, thumbs and voices only.\nPREP: nominalising turns an action word into a thing word so the people step out; an acronym gets its full name once, with the short form in round brackets.",
+        "i_do": {
+          "title": "Sound like a report",
+          "rule": "Thing words for actions. Unpack short forms in brackets.",
+          "example": "We depended on the SES.\nDependence on the SES grew.\nthe State Emergency Service (SES)",
+          "items": [
+            "Thing word: the people step out of the sentence.",
+            "First mention: full name, then the short form in brackets."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Check: has your reader met this short form?",
+          "notes": "ANSWER: depended becomes the thing word dependence, and SES is unpacked as the State Emergency Service (SES) the first time.\n1. SAY: \"Okay, Weeks 8 and 9. These two moves are what make a science or history report sound like a report instead of a chat.\"\n2. WRITE: copy \"We depended on the SES.\" onto the class board. POINT at depended and say that is the action, and we are the people doing it.\n3. WRITE: underneath, write \"Dependence on the SES grew.\" and circle Dependence - the action is now a thing word and the people have stepped out.\n4. WRITE: rub out SES in the second sentence and write \"State Emergency Service (SES)\" in its place, so the board shows a report sentence a new reader can follow.\nTRAP: writing depending instead of dependence. Fix: say depending is still an action, ask for the word that fits after the, student says dependence.\nCLARIFY: if a student asks whether stories should use thing words too, say no - stories keep the people and the action, reports use thing words.\n---\nPurpose: day four restates nominalisation and acronym brackets in one report sentence. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: nominalisation turns a verb into a noun (depend -> dependence); an acronym gets its full name first with the short form in brackets, then the short form alone."
+        },
+        "we_do": {
+          "title": "Report or chat?",
+          "rule": "Pick the report sentence. Then unpack the short form.",
+          "example": "A) Fans complained about the AFL.\nB) Complaints about the AFL grew.",
+          "items": [
+            "Which one sounds like a report, A or B?",
+            "Say the full name behind AFL."
+          ],
+          "routine": "Everyone, together, on three",
+          "footer": "Stem: B sounds like a report because ...",
+          "notes": "ANSWER: B is the report sentence, because complained became the thing word complaints. AFL stands for Australian Football League.\n1. POINT: at A on the slide and read it, then at B and read it, then SAY, \"Okay, same facts twice. Only one sounds like a report.\"\n2. ASK: \"Which sentence sounds like a report, A or B?\" 10 sec, everyone, together, on three. EXPECT: B.\n3. ASK: \"Which word in B is the thing word?\" 5 sec, everyone, together, on three. EXPECT: complaints. Then cold call one student to name the action word it came from.\n4. WRITE: copy B onto the class board, then ask the class on three what AFL stands for and write Australian Football League (AFL) in its place. EXPECT: Australian Football League.\n5. SCAN the room for voices. 80%+ -> move on. Less -> read A and B aloud together and point out where the fans went, then re-ask.\nTRAP: choosing A because it sounds friendlier. Fix: say friendly suits a story and reports keep people out, student finds the thing word in B.\nCLARIFY: if a student says everyone knows what AFL means, say a report is written for a reader who might not, so the full name costs three words and saves a stumble.\n---\nPurpose: guided oral practice spotting report voice and unpacking a short form. [We Do | Guided practice | Grammar | HITS 7]\nPREP: complain -> complaint is a nominalisation; AFL is the Australian Football League."
+        },
+        "you_do": {
+          "title": "Thing words and short forms",
+          "rule": "Your turn: A and B, write the thing word. C and D, unpack the short form.",
+          "example": "One done for you:\nresist -> resistance\nSES -> State Emergency Service (SES)",
+          "items": [
+            "A) complete -> ?    B) postpone -> ?",
+            "C) CFA -> ?    D) ABC -> ?"
+          ],
+          "item_size": 17,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: is the short form in brackets?",
+          "notes": "ANSWER: A completion. B postponement. C Country Fire Authority (CFA). D Australian Broadcasting Corporation (ABC).\n1. SAY: \"Okay, look at the two finished ones. Resist became a thing word, and SES got its full name with the short form in brackets.\"\n2. SAY: \"Write A, B, C and D down the page. Thing words for A and B, full names for C and D. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"put the in front - if the completion sounds right, it is a thing word. For C and D, one word for each letter.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> build D together on the board, then re-check.\nTRAP: writing completing for A. Fix: say completing is still an action, ask what word fits after the, student writes completion.\nEXTENSION: Write one report sentence that uses a thing word and unpacks a short form, then underline both moves.\nHELP: Give the four answers on a card out of order; students match each one to A, B, C or D and then say why.\n---\nPurpose: independent recall of both report moves from Weeks 8 and 9. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) complete -> completion\nB) postpone -> postponement\nC) CFA -> Country Fire Authority (CFA)\nD) ABC -> Australian Broadcasting Corporation (ABC)\nEXTENSION: e.g. Completion of the Country Fire Authority (CFA) training took a week. Completion is the thing word, and the brackets unpack CFA.",
+          "check_title": "Tick it or fix it - thing words and short forms",
+          "check_rule": "Tick each thing word and each full name. Fix any that do not match.",
+          "check_items": [
+            "A) complete -> completion, fits after the",
+            "B) postpone -> postponement, fits after the",
+            "C) Country Fire Authority (CFA), 3 words, 3 letters",
+            "D) Australian Broadcasting Corporation (ABC), 3 letters"
+          ],
+          "check_item_size": 19,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: report voice, reader first.",
+          "check_notes": "ANSWER: A completion. B postponement. C Country Fire Authority (CFA). D Australian Broadcasting Corporation (ABC).\n1. MODEL: \"For A I put the in front. The completing sounds wrong and the completion sounds right, so completion is the thing word.\"\n2. SAY: \"Now tick each answer that matches. Fix any word or full name that is different.\"\n3. ASK: \"Which answer could start a report sentence about sports day being moved, and how would it go?\" 10 sec, turn and tell. EXPECT: postponement, as in The postponement of sports day upset everyone.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild D together, then re-check.\n5. SAY: \"In your next report, give every short form its full name the first time, and swap one action for a thing word.\"\nTRAP: ticking a full name with a word that does not match its letter, like Country Fire Association. Fix: read the green line aloud, student rewrites Authority.\n---\nPurpose: protected reveal that closes the term review and hands both report moves to their own writing. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    }
+  ]
+}
