@@ -72,6 +72,11 @@
   ],
   "overview": {
     "Monday": {
+      "morphology": "No session this week",
+      "grammar": "No session this week",
+      "learned_words": "No session this week"
+    },
+    "Tuesday": {
       "morphology": [
         "Term Review",
         "all 21 term morphemes"
@@ -82,7 +87,7 @@
         "muscle, salmon, yolk, asthma, iron"
       ]
     },
-    "Tuesday": {
+    "Wednesday": {
       "morphology": [
         "Term Review",
         "all 21 term morphemes"
@@ -93,7 +98,7 @@
         "drought, buoyancy, gauge, leopard, circuit"
       ]
     },
-    "Wednesday": {
+    "Thursday": {
       "morphology": [
         "Term Review",
         "all 21 term morphemes"
@@ -104,7 +109,7 @@
         "tsunami, camouflage, seismograph, stomach"
       ]
     },
-    "Thursday": {
+    "Friday": {
       "morphology": [
         "Term Review",
         "all 21 term morphemes"
@@ -114,16 +119,11 @@
         "Review learned words",
         "tongue, species, vacuum, rhythm"
       ]
-    },
-    "Friday": {
-      "morphology": "No session this week",
-      "grammar": "No session this week",
-      "learned_words": "No session this week"
     }
   },
   "sessions": [
     {
-      "day": "Monday",
+      "day": "Tuesday",
       "type": "week_review",
       "morphology_review": [
         {
@@ -456,7 +456,7 @@
       }
     },
     {
-      "day": "Tuesday",
+      "day": "Wednesday",
       "type": "week_review",
       "morphology_review": [
         {
@@ -790,7 +790,7 @@
       }
     },
     {
-      "day": "Wednesday",
+      "day": "Thursday",
       "type": "week_review",
       "morphology_review": [
         {
@@ -1121,7 +1121,7 @@
       }
     },
     {
-      "day": "Thursday",
+      "day": "Friday",
       "type": "week_review",
       "morphology_review": [
         {

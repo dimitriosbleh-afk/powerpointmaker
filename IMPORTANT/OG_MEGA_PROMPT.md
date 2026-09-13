@@ -1885,7 +1885,8 @@ worked example):
 
 - SESSION TYPE: every session is `week_review`. There is no `new_morphology`, grid,
   New Morphology You Do or new learned word, and none are needed. Filenames come out
-  `1. Monday (week review).pptx` ... `4. Thursday (week review).pptx`; leave them.
+  `<n>. <Day> (week review).pptx` from the session days (Week 10 ran Tuesday to Friday:
+  `1. Tuesday (week review).pptx` ... `4. Friday (week review).pptx`); leave them.
 - REVIEW-10 FROM THE WHOLE TERM, not the ten most recent. Spread the term's morphemes
   so each appears on cards once or twice across the week. Give the older weeks the
   second appearance (they dropped off the rolling cards weeks ago), and space repeats
