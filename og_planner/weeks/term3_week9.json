@@ -1,0 +1,1716 @@
+{
+  "term": 3,
+  "week": 9,
+  "cohort": "Enrichment",
+  "unit_folder": "OG_Term3_Week9",
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "taught_morphemes": [
+    "mini-",
+    "super-",
+    "over-",
+    "anti-",
+    "ultra-",
+    "retro-",
+    "em-",
+    "syn-",
+    "sym-/sys-/syl-",
+    "-let",
+    "-ling",
+    "-cian",
+    "-cial/-tial",
+    "-ancy/-ance",
+    "-ency/-ence",
+    "-ity",
+    "-tude",
+    "out-",
+    "self-",
+    "post-",
+    "with-",
+    "counter-",
+    "contra-",
+    "omni-",
+    "intra-",
+    "-eer",
+    "-ant",
+    "-ar",
+    "-ine",
+    "-cy",
+    "-ciate/-tiate",
+    "ped/pod",
+    "rect/reg",
+    "capt/capit",
+    "flect/flex",
+    "ord/ordin",
+    "clud(e)/clus(e)",
+    "mal-",
+    "-ery",
+    "-ice",
+    "-ive",
+    "-ite",
+    "-acy",
+    "-ule",
+    "mega-",
+    "micro",
+    "pict/picto",
+    "vore",
+    "eco",
+    "carn/carni",
+    "junct/join/joint",
+    "vict/vinc",
+    "chron",
+    "mand/mend",
+    "jur/jud/just",
+    "pend/pens",
+    "pon/pound"
+  ],
+  "overview": {
+    "Monday": {
+      "morphology": [
+        "New Morphology",
+        "caus-/cus(e)"
+      ],
+      "grammar": "Acronyms: first letters make a word",
+      "learned_words": [
+        "New learned word",
+        "asthma"
+      ]
+    },
+    "Tuesday": {
+      "morphology": [
+        "Review Morphology",
+        "caus-/cus(e)"
+      ],
+      "grammar": "Acronyms: unpack the letters",
+      "learned_words": [
+        "Review learned words",
+        "asthma, yolk"
+      ]
+    },
+    "Wednesday": {
+      "morphology": [
+        "Review Morphology",
+        "caus-/cus(e)"
+      ],
+      "grammar": "Acronyms: brackets do the explaining",
+      "learned_words": [
+        "New learned word",
+        "rhythm"
+      ]
+    },
+    "Thursday": {
+      "morphology": [
+        "Week Review",
+        "caus-/cus(e)"
+      ],
+      "grammar": "Acronyms: which one does your reader need?",
+      "learned_words": [
+        "Review learned words",
+        "rhythm, asthma"
+      ]
+    },
+    "Friday": {
+      "morphology": "No session this week",
+      "grammar": "No session this week",
+      "learned_words": "No session this week"
+    }
+  },
+  "sessions": [
+    {
+      "day": "Monday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time",
+          "extra_task": {
+            "prompt": "Give me one word built from chron, meaning time.",
+            "answers": [
+              "chronicle",
+              "chronology",
+              "chronic",
+              "synchronise"
+            ]
+          }
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust"
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root",
+          "keyword": "ponder",
+          "meaning": "place, part"
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house",
+          "extra_task": {
+            "prompt": "Give me one word built from eco, meaning house.",
+            "answers": [
+              "ecosystem",
+              "ecology",
+              "economy",
+              "ecotourism"
+            ]
+          }
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer"
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root",
+          "keyword": "appendage",
+          "meaning": "hang; pay",
+          "extra_task": {
+            "prompt": "Give me one word built from pend or pens, meaning hang or pay.",
+            "answers": [
+              "depend",
+              "pendant",
+              "suspend",
+              "expensive"
+            ]
+          }
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "adjudicate",
+          "exponent",
+          "pendulum",
+          "synchronise",
+          "insectivore",
+          "postpone",
+          "commendable",
+          "dispense",
+          "province",
+          "ponderous",
+          "juncture",
+          "appendix",
+          "injurious",
+          "proponent",
+          "suspense"
+        ],
+        "notes": "1. READ: \"Okay, if you were born in January, February or March, read row 1.\"\n2. READ: \"If you were born in April, May or June, read row 2.\"\n3. READ: \"If you were born in July, August or September, read row 3.\"\n4. READ: \"If you were born in October, November or December, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"pend and pens mean hang or pay. Which four words carry them?\" 5 sec, choral response. EXPECT: pendulum, dispense, appendix, suspense.\n7. ASK: \"pon and pound mean place or part. Which four words carry them?\" 5 sec, turn and tell. EXPECT: exponent, postpone, ponderous, proponent.\n8. ASK: \"jur, jud and just mean right or law. Which two words carry them?\" 5 sec, choral response. EXPECT: adjudicate, injurious.\n9. ASK: \"Which word names an animal that eats insects?\" 3 sec, choral response. EXPECT: insectivore.\n10. ASK: \"chron means time. Which word means to make two things run at the same time?\" 3 sec, choral response. EXPECT: synchronise.\n11. ASK: \"Which word means to put something off until later?\" 3 sec, choral response. EXPECT: postpone.\n12. ASK: \"Make juncture plural.\" 3 sec, choral response. EXPECT: junctures."
+      },
+      "sound_bank": [
+        {
+          "morph": "pend/pens",
+          "type": "root"
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root"
+        },
+        {
+          "morph": "chron",
+          "type": "root"
+        },
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "omni-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ence",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ity",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "expenditure",
+          "sentence": "Our canteen expenditure on hot food climbs every winter.",
+          "prompt": "pend and pens mean hang or pay. Which of those two is working here?",
+          "answer": "The paying one. Ex means out, so expenditure is the money paid out."
+        },
+        {
+          "word": "impound",
+          "sentence": "The council will impound any bike left on the tram tracks.",
+          "prompt": "pound means place. Where does an impounded bike get placed?",
+          "answer": "Into a locked council yard. Im means in, so it goes in and stays there."
+        },
+        {
+          "word": "compensate",
+          "sentence": "The netball club had to compensate the school for the broken gate.",
+          "prompt": "pens means pay. Who ends up with the money here?",
+          "answer": "The school. Com means together, so both sides finish level again."
+        },
+        {
+          "word": "opponent",
+          "sentence": "Our opponent in the grand final has not lost a game all year.",
+          "prompt": "pon means place. Where is an opponent placed?",
+          "answer": "Straight across from you. Op means against, so they are placed against your team."
+        },
+        {
+          "word": "independence",
+          "sentence": "The koala showed real independence within a week of leaving its mother.",
+          "prompt": "pend means hang. Which taught ending turns not hanging into a state?",
+          "answer": "The -ence ending, the same one in existence. Independence is the state of not hanging on anyone."
+        },
+        {
+          "word": "propensity",
+          "sentence": "Our dog has a propensity for stealing socks off the line.",
+          "prompt": "pens means hang. Which taught ending turns it into a quality you carry?",
+          "answer": "The -ity ending, the same one in gravity. A propensity is a leaning that hangs on you."
+        },
+        {
+          "word": "recommendation",
+          "sentence": "The librarian wrote a recommendation for our next class novel.",
+          "prompt": "mend means entrust. What is the librarian entrusting you with?",
+          "answer": "A judgement about the book, handed over so you can trust the choice without reading it first."
+        },
+        {
+          "word": "jurisdiction",
+          "sentence": "Speeding on that highway sits in the state police jurisdiction.",
+          "prompt": "jur means law. What does a jurisdiction fence off?",
+          "answer": "The area where that law can be used. Step outside it and those police have no power."
+        },
+        {
+          "word": "chronometer",
+          "sentence": "The ship's chronometer kept perfect time right across the Pacific.",
+          "prompt": "chron means time. Why did a ship need one of these?",
+          "answer": "Exact time told sailors how far east or west they had travelled. No chronometer meant no position."
+        },
+        {
+          "word": "omnivorous",
+          "sentence": "A bin chicken is omnivorous, so almost anything counts as food.",
+          "prompt": "vore means eating. Which taught part tells you it eats everything?",
+          "answer": "The omni part, meaning all. Omni plus vore is eating all, so nothing is off the menu."
+        }
+      ],
+      "new_morphology": {
+        "morph": "caus-/cus(e)",
+        "type": "root",
+        "keyword": "accuse",
+        "meaning": "cause"
+      },
+      "words_to_read_new": [
+        {
+          "word": "cause",
+          "meaning": "caus is the root on its own, cause: the thing that makes something else happen"
+        },
+        {
+          "word": "because",
+          "meaning": "be means by + cause: by the cause of it"
+        },
+        {
+          "word": "excuse",
+          "meaning": "ex means out + cuse means cause: the cause that gets you out of trouble"
+        },
+        {
+          "word": "accuse",
+          "meaning": "ac means toward + cuse means cause: to point the cause toward a person"
+        },
+        {
+          "word": "causal",
+          "meaning": "caus means cause + al means relating to: relating to what made it happen"
+        },
+        {
+          "word": "accuser",
+          "meaning": "ac means toward + cus means cause + er means the person: the person who points the cause at you"
+        },
+        {
+          "word": "accused",
+          "meaning": "ac means toward + cus means cause + ed means already done: the person the cause has been pointed at"
+        },
+        {
+          "word": "excused",
+          "meaning": "ex means out + cus means cause + ed means already done: let out of it, the cause accepted"
+        },
+        {
+          "word": "excusable",
+          "meaning": "ex means out + cus means cause + able means able to be: able to be let off"
+        },
+        {
+          "word": "causing",
+          "meaning": "caus means cause + ing means happening now: making it happen right now"
+        },
+        {
+          "word": "causation",
+          "meaning": "caus means cause + ation means the act of: the act of one thing making another happen"
+        },
+        {
+          "word": "accusatory",
+          "meaning": "ac means toward + cus means cause + ory means relating to: relating to pointing the cause at someone"
+        }
+      ],
+      "associated_word_exceptions": [
+        {
+          "word": "causal",
+          "reason": "ground 3 - simpler and more transparent than causality, and it is the base students need before causality makes sense",
+          "source": "Macquarie Dictionary, Australian English"
+        },
+        {
+          "word": "accused",
+          "reason": "ground 1 - the captured card lists only ten words; accused is the everyday form students meet in news reports",
+          "source": "Macquarie Dictionary, Australian English"
+        },
+        {
+          "word": "excused",
+          "reason": "ground 1 - the captured card lists only ten words; excused is the school form students meet on absence notes",
+          "source": "Macquarie Dictionary, Australian English"
+        },
+        {
+          "word": "causing",
+          "reason": "ground 1 - the captured card lists only ten words; causing keeps the root visible in its commonest verb form",
+          "source": "Macquarie Dictionary, Australian English"
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Okay, learn caus and cus once and a whole family of blame and reason words opens up - and you will finally see why because ends the way it does.\"\nREAD each word as it appears, then connect caus or cus to the card meaning: cause.\ncause - caus is the root on its own, cause: the thing that makes something else happen.\nbecause - be means by + cause: by the cause of it. That is why because answers the question why.\nexcuse - ex means out + cuse means cause: the cause you offer to get out of trouble.\naccuse - ac means toward + cuse means cause: to point the cause toward a person.\ncausal - caus means cause + al means relating to: relating to what made it happen.\naccuser - ac means toward + cus means cause + er means the person: the person who points the cause at you.\naccused - ac means toward + cus means cause + ed means already done: the person the cause has been pointed at.\nexcused - ex means out + cus means cause + ed means already done: let out of it, because the cause was accepted.\nexcusable - ex means out + cus means cause + able means able to be: able to be let off.\ncausing - caus means cause + ing means happening now: making it happen right now.\ncausation - caus means cause + ation means the act of: the act of one thing making another happen.\naccusatory - ac means toward + cus means cause + ory means relating to: relating to pointing the cause at somebody. A blaming voice.\nMemory hook: picture the courtroom finger. accuse points the cause AT a person, excuse pushes the cause AWAY. Ask of any caus word: who is being blamed? Challenge: catch three caus words in one news story this week.",
+      "words_to_spell_new": [
+        "cause",
+        "because",
+        "excuse",
+        "accuse"
+      ],
+      "extension": "1. SAY: \"Okay, when you finish, write one sentence that uses cause and because and shows what caused what.\"\n2. CHECK: the sentence must show the cause doing the causing, not just use the word.\nEXTENSION: Build the longest real caus or cus word you can, then write its morpheme sum.\nName every part you can, and put a question mark on any part you have not been taught yet.\nAnswer: e.g. inexcusable = in (not) + ex (out) + cus (cause) + able (able to be).",
+      "new_morph_activity": {
+        "title": "Meaning sums for caus and cus",
+        "rule": "caus and cus mean cause. Write the real word for each meaning.",
+        "example": "One done for you:\nthe cause pointed at a person = accuse\nWord bank: cause  because  excuse  causal",
+        "items": [
+          "1. the thing that makes it happen = ?    2. by the cause of = ?",
+          "3. the cause you give to get out = ?    4. relating to a cause = ?"
+        ],
+        "item_size": 16,
+        "routine": "Whiteboards - 3 min - boards up",
+        "footer": "Check: can you hear cause in your word?",
+        "notes": "ANSWER: 1 cause, 2 because, 3 excuse, 4 causal.\n1. SAY: \"Okay, look at the finished one first. The cause pointed at a person is accuse.\"\n2. SAY: \"Now pick the right word from the bank for each meaning. Three minutes, then write it... chin it... show me.\"\n3. CIRCULATE: to a stuck student say, \"cause is hiding inside three of those four bank words - find it first, then read what is stuck on the front.\" Then do number one together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number two together, then re-ask.\nTRAP: writing cause for number two. Fix: say number two has an extra part at the front meaning by, student rewrites because.\nEXTENSION: Write causal as its parts, then build one more caus word that names a person.\nHELP: Cover two bank words at a time so each meaning has only two choices left.\n---\nPurpose: day one turns the card meaning cause into four real words students already say. [You Do | Meaning sums | Morphology]\nANSWERS:\n1. the thing that makes it happen = cause\n2. by the cause of = because\n3. the cause you give to get out = excuse\n4. relating to a cause = causal\nEXTENSION: causal splits into caus and al. One more: accuser, the person who points the cause at you.",
+        "check_title": "Tick it or fix it - meaning sums for caus",
+        "check_rule": "Tick each correct word. Fix any word that does not match.",
+        "check_items": [
+          "1. cause = the caus root on its own: what makes it happen",
+          "2. because = be (by) + cause: by the cause of it",
+          "3. excuse = ex (out) + cus (cause): gets you out of it",
+          "4. causal = caus (cause) + al (relating to): about the cause"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Every answer hides caus or cus",
+        "check_notes": "ANSWER: 1 cause, 2 because, 3 excuse, 4 causal.\n1. MODEL: \"Number two says by the cause of. Cause is the whole root, and be means by, so the word has to be because.\"\n2. SAY: \"Now tick each word that matches. Fix any word that is different.\"\n3. ASK: \"Which one of these four words is not about blame at all?\" 10 sec, turn and tell. EXPECT: cause.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number three together, then re-check.\nTRAP: ticking a word that is spelled wrong. Fix: read the green word chunk by chunk, then rewrite it.\nEXTENSION: Predict what accusation will mean before we meet it tomorrow.\nHELP: Find caus or cus inside the green word first, then read the part in front of it.\n---\nPurpose: protected reveal so every student hears how each caus word is built. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "yolk",
+            "unfair": "l",
+            "notes": "Why learned: the l is silent, exactly like salmon, and the o says a long /oh/.\nSay it: YOHK, one beat. Write y - ol - k, then check the l is still sitting there.\nQuick link: the yolk feeds a growing chick, so it belongs in every life cycle diagram."
+          },
+          {
+            "word": "salmon",
+            "unfair": "l",
+            "notes": "Why learned: the l is completely silent, so the word sounds like sam-on but keeps a letter you never hear.\nSay it: SAM-uhn, two beats. Write sal - mon in two chunks and leave the l in.\nQuick link: salmon swim upriver to spawn, so the word belongs in every food chain and river unit."
+          }
+        ],
+        "new": {
+          "word": "asthma",
+          "unfair": "th",
+          "notes": "Why learned: the th sits in the middle of the word and says nothing at all, so you write two letters you never hear.\nSay it: AST-muh, two beats. Write as - th - ma in three chunks and leave the th in the middle.\nLink: asthma turns up in every health and PE unit, and on the sport permission notes you take home.\nYou will write this word on your own health form and in your PE reflections this term."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The judge asked the jury for one clear answer before lunch.",
+          "targets": [
+            "judge",
+            "jury"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "revision from two weeks ago: jur and jud in judge and jury"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "When the rain gauge failed, our teacher gave one calm command: wait beside the iron gate.",
+          "targets": [
+            "gauge",
+            "command",
+            "iron"
+          ],
+          "cups": {
+            "capitals": [
+              "When"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the when part that cannot stand alone - the comma shows where it ends)",
+              "colon (it introduces the instruction that follows, so no speech marks)",
+              "full stop"
+            ]
+          },
+          "focus": "revision from two and three weeks ago: mand in command, and the red words gauge and iron"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Name an acronym, and use brackets so a reader is never stuck on letters they cannot unpack.\nWHY THIS WEEK: students write ANZAC, GPS and CFA in their reports and never tell the reader what the letters stand for.\nROUTINE: all grammar this week is written in the OG book. No boards and no scoring - books, thumbs and voices only.\nPREP: an acronym is a short word built from the first letters of a longer name. Round brackets are the tool that expands it.",
+        "i_do": {
+          "title": "First letters make a word",
+          "rule": "An acronym is a short word made from the first letters of a longer name.",
+          "example": "Australian and New Zealand Army Corps\nANZAC",
+          "items": [
+            "Take the first letter of each important word.",
+            "Say the short one as a word, not letter by letter."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Tomorrow: what do the letters stand for?",
+          "notes": "ANSWER: ANZAC is built from the first letter of Australian, New, Zealand, Army and Corps.\n1. SAY: \"Okay, your reports are full of short forms like this one. If your reader cannot unpack one, they stop. Watch where this one comes from.\"\n2. WRITE: copy \"Australian and New Zealand Army Corps\" onto the class board. POINT at Australian and say that is where we start.\n3. WRITE: circle the first letter of Australian, New, Zealand, Army and Corps, then write ANZAC underneath, so the class board shows both forms.\n4. SAY: \"Five words, five letters, one short word. That is an acronym, and we say it as a word - ANZAC, not A N Z A C.\"\nTRAP: taking a letter from the little word and. Fix: say we only use the important words, student reads the circled letters again.\nCLARIFY: if a student asks about ones we spell out, like ABC, say those are read letter by letter, and this week we treat both the same way.\n---\nPurpose: day one names the acronym and builds one letter by letter in front of the class. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: strictly, letter-by-letter ones are initialisms; this week treat any first-letter shortening as an acronym and focus on unpacking it."
+        },
+        "we_do": {
+          "title": "Build the acronym",
+          "rule": "An acronym takes the first letter of each important word.",
+          "example": "Country Fire Authority -> ?\nRadio Detection And Ranging -> ?",
+          "items": [
+            "Take the first letter of each important word.",
+            "Say it as a word if the letters make one."
+          ],
+          "routine": "Everyone, together, on three",
+          "footer": "Stem: The letters come from ...",
+          "notes": "ANSWER: CFA and RADAR.\n1. SAY: \"Okay, my turn is over. I give you the long name, you give me the short one.\"\n2. ASK: \"What is the acronym for Country Fire Authority?\" 10 sec, everyone together on three. EXPECT: CFA.\n3. ASK: \"What is the acronym for Radio Detection And Ranging?\" 10 sec, everyone together on three. EXPECT: RADAR. Then cold call one student to name the letter each word gave.\n4. SCAN the room for voices. 80%+ -> move on. Less -> circle the first letters on the board together, then re-ask.\nTRAP: reading RADAR letter by letter. Fix: say those five letters make a word we can say, student says radar out loud.\nCLARIFY: if a student asks why CFA is not said as a word, say cfa is not sayable, so we spell that one out and say radar as a word.\n---\nPurpose: guided oral practice so every student builds an acronym before writing one. [We Do | Guided practice | Grammar | HITS 7]\nPREP: RADAR really is an acronym from the 1940s; most people have forgotten it was ever a full name."
+        },
+        "you_do": {
+          "title": "Write the acronym",
+          "rule": "Your turn: write the acronym for each name in your OG book.",
+          "example": "One done for you:\nAustralian and New Zealand Army Corps\n= ANZAC",
+          "items": [
+            "A) Very Important Person = ?    B) As Soon As Possible = ?",
+            "C) Do It Yourself = ?    D) Personal Best = ?"
+          ],
+          "item_size": 16,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: does your short form use every big word?",
+          "notes": "ANSWER: A VIP, B ASAP, C DIY, D PB.\n1. SAY: \"Okay, look at the finished one first. Five important words gave five letters, and they spell ANZAC.\"\n2. SAY: \"Write A, B, C and D down the page, then write the acronym beside each. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"cover everything except the first letter of each word and read what is left.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> build C together on the board, then re-check.\nTRAP: taking a letter from as or a. Fix: say the small joining words are skipped, student rewrites B.\nEXTENSION: Write one acronym said as a word and one said letter by letter, then write a rule for what decides which way a reader says it.\nHELP: Give the four answers out of order; students match each answer to A, B, C or D and then say why.\n---\nPurpose: independent practice building acronyms from everyday names. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) Very Important Person = VIP\nB) As Soon As Possible = ASAP\nC) Do It Yourself = DIY\nD) Personal Best = PB\nEXTENSION: said as a word - ANZAC, RADAR, ASAP. Said letter by letter - VIP, DIY, PB, CFA. The rule: if the letters make a sayable pattern of consonants and vowels we say it as a word, and if they do not we spell it out.",
+          "check_title": "Tick it or fix it - write the acronym",
+          "check_rule": "Tick each correct acronym. Fix any that skips or adds a letter.",
+          "check_items": [
+            "A) Very Important Person = VIP, three first letters",
+            "B) As Soon As Possible = ASAP, said as a word",
+            "C) Do It Yourself = DIY, three first letters",
+            "D) Personal Best = PB, two first letters"
+          ],
+          "check_item_size": 20,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: check your reader knows it.",
+          "check_notes": "ANSWER: A VIP, B ASAP, C DIY, D PB.\n1. MODEL: \"For A I took the V from Very, the I from Important and the P from Person. Three big words, three letters, VIP.\"\n2. SAY: \"Now tick each acronym that matches. Fix any that skips or adds a letter.\"\n3. ASK: \"Which of these four can you say straight out as a word?\" 10 sec, turn and tell. EXPECT: ASAP.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild B together, then re-check.\n5. SAY: \"Next time you write a short form in a report, stop and ask whether your reader has met it before.\"\nTRAP: writing lower case letters. Fix: say each letter came from a capital at the start of a word, student rewrites it in capitals.\n---\nPurpose: protected reveal that models the first-letter move and sends it into their own writing. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "type": "review",
+      "morphology_review": [
+        {
+          "morph": "pend/pens",
+          "type": "root",
+          "keyword": "appendage",
+          "meaning": "hang; pay"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law"
+        },
+        {
+          "morph": "caus-/cus(e)",
+          "type": "root",
+          "keyword": "accuse",
+          "meaning": "cause"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat",
+          "extra_task": {
+            "prompt": "Give me one word built from carn or carni, meaning flesh or meat.",
+            "answers": [
+              "carnivore",
+              "carnage",
+              "incarnation",
+              "carnival"
+            ]
+          }
+        },
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time"
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root",
+          "keyword": "ponder",
+          "meaning": "place, part"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join",
+          "extra_task": {
+            "prompt": "Give me one word built from junct or join, meaning join.",
+            "answers": [
+              "junction",
+              "conjunction",
+              "adjoin",
+              "disjointed"
+            ]
+          }
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust",
+          "extra_task": {
+            "prompt": "Give me one word built from mand or mend, meaning order or entrust.",
+            "answers": [
+              "command",
+              "demand",
+              "mandate",
+              "commend"
+            ]
+          }
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "judiciary",
+          "compound",
+          "cause",
+          "chronicle",
+          "appendage",
+          "ecotourism",
+          "mandate",
+          "exponential",
+          "pictograph",
+          "pendant",
+          "convicted",
+          "excuse",
+          "commander",
+          "expound",
+          "impend"
+        ],
+        "notes": "1. READ: \"Okay, if your first name starts with A to F, read row 1.\"\n2. READ: \"If it starts with G to L, read row 2.\"\n3. READ: \"If it starts with M to R, read row 3.\"\n4. READ: \"If it starts with S to Z, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"pend and pens mean hang or pay. Which three words carry them?\" 5 sec, choral response. EXPECT: appendage, pendant, impend.\n7. ASK: \"pon and pound mean place or part. Which three words carry them?\" 5 sec, turn and tell. EXPECT: compound, exponential, expound.\n8. ASK: \"caus and cus mean cause. Which two words carry them?\" 5 sec, choral response. EXPECT: cause, excuse.\n9. ASK: \"mand means order. Which two words carry it?\" 3 sec, choral response. EXPECT: mandate, commander.\n10. ASK: \"Which word names a written record of events in time order?\" 3 sec, choral response. EXPECT: chronicle.\n11. ASK: \"Which word means found guilty in court?\" 3 sec, choral response. EXPECT: convicted.\n12. ASK: \"Which word names a picture that stands for a word or an idea?\" 3 sec, choral response. EXPECT: pictograph."
+      },
+      "sound_bank": [
+        {
+          "morph": "pend/pens",
+          "type": "root"
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "post-",
+          "type": "prefix"
+        },
+        {
+          "morph": "counter-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-cial",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "suspension",
+          "sentence": "A one week suspension kept our best defender off the court.",
+          "prompt": "pens means hang. What is left hanging during a suspension?",
+          "answer": "The player's place in the team. It hangs there, kept for them, until the week is up."
+        },
+        {
+          "word": "dispensable",
+          "sentence": "Our coach told the whole squad that nobody here is dispensable.",
+          "prompt": "Which taught root is hiding in the middle of dispensable?",
+          "answer": "pens, meaning hand out. Something dispensable can be handed away and never missed."
+        },
+        {
+          "word": "postponement",
+          "sentence": "The postponement of sports day gave us one more week of practice.",
+          "prompt": "pon means place. Which taught prefix tells you where the day was moved to?",
+          "answer": "The post part, meaning after. The whole day slides back to a later date."
+        },
+        {
+          "word": "ponder",
+          "sentence": "Our teacher asked us to ponder the ending before writing anything.",
+          "prompt": "pon means place. What are you placing when you ponder?",
+          "answer": "Ideas, side by side in your head, until one of them finally fits."
+        },
+        {
+          "word": "countermand",
+          "sentence": "The principal had to countermand the note about early dismissal.",
+          "prompt": "Which two taught parts are stacked in countermand?",
+          "answer": "counter, meaning against, and mand, meaning order. It is an order sent against an order."
+        },
+        {
+          "word": "prejudicial",
+          "sentence": "The umpire made one prejudicial remark about our whole side.",
+          "prompt": "jud means law or right. Which taught ending turns prejudice into a describing word?",
+          "answer": "The -cial ending, the same one in facial. Something prejudicial tips a decision before the facts arrive."
+        },
+        {
+          "word": "invincible",
+          "sentence": "Our netball team looked invincible until the final quarter.",
+          "prompt": "vinc means conquer. What has to be true for a team to be invincible?",
+          "answer": "Nobody can beat them at all. In means not, so they cannot be conquered."
+        },
+        {
+          "word": "conjunction",
+          "sentence": "The word although works as a conjunction in that sentence.",
+          "prompt": "junct means join. What is a conjunction holding together?",
+          "answer": "Two parts of one sentence. Con means together, so it keeps them side by side."
+        },
+        {
+          "word": "because",
+          "sentence": "We stayed inside at lunch because the storm had not passed.",
+          "prompt": "cause is the whole root here. Which little part sits in front of it?",
+          "answer": "The be part, meaning by. Because tells the reader by what cause something happened."
+        },
+        {
+          "word": "excused",
+          "sentence": "Ana was excused from swimming after handing in a note.",
+          "prompt": "cus means cause. Who accepted the cause here?",
+          "answer": "The teacher. Once the note explained the cause, Ana was let out of the lesson."
+        }
+      ],
+      "new_morphology": {
+        "morph": "caus-/cus(e)",
+        "type": "root",
+        "keyword": "accuse",
+        "meaning": "cause"
+      },
+      "words_to_read_new": [
+        {
+          "word": "causality",
+          "meaning": "caus means cause + al means relating to + -ity means the state of: the state of one thing causing another"
+        },
+        {
+          "word": "causative",
+          "meaning": "caus means cause + -ive means relating to: relating to being the cause"
+        },
+        {
+          "word": "accusation",
+          "meaning": "ac means toward + cus means cause + ation means the act of: the act of pointing the cause at a person"
+        },
+        {
+          "word": "inexcusable",
+          "meaning": "in means not + ex means out + cus means cause + able means able to be: not able to be let off"
+        },
+        {
+          "word": "unexcused",
+          "meaning": "un means not + ex means out + cus means cause + ed means already done: not let off, never explained"
+        },
+        {
+          "word": "accusing",
+          "meaning": "ac means toward + cus means cause + ing means happening now: pointing the cause at someone right now"
+        },
+        {
+          "word": "excusing",
+          "meaning": "ex means out + cus means cause + ing means happening now: letting the cause out, letting someone off"
+        },
+        {
+          "word": "causes",
+          "meaning": "caus means cause + s means more than one: the things that make something happen"
+        },
+        {
+          "word": "causally",
+          "meaning": "caus means cause + al means relating to + ly means in that way: linked the way a cause is linked to what follows"
+        }
+      ],
+      "associated_word_exceptions": [
+        {
+          "word": "causative",
+          "reason": "ground 3 - stacks the taught suffix -ive, which no remaining associated word on the card offers",
+          "source": "Macquarie Dictionary, Australian English"
+        },
+        {
+          "word": "accusation",
+          "reason": "ground 1 - the captured card lists only ten words; accusation is the everyday noun students meet in news reports",
+          "source": "Macquarie Dictionary, Australian English"
+        },
+        {
+          "word": "unexcused",
+          "reason": "ground 3 - everyday school word (an unexcused absence) built from un- plus the card word excused",
+          "source": "Macquarie Dictionary, Australian English"
+        },
+        {
+          "word": "accusing",
+          "reason": "ground 1 - the captured card lists only ten words; accusing keeps the root visible in its commonest verb form",
+          "source": "Macquarie Dictionary, Australian English"
+        },
+        {
+          "word": "excusing",
+          "reason": "ground 1 - the captured card lists only ten words; excusing pairs with accusing to show the two directions of the root",
+          "source": "Macquarie Dictionary, Australian English"
+        },
+        {
+          "word": "causes",
+          "reason": "ground 1 - the captured card lists only ten words; causes gives the plural students actually write in science",
+          "source": "Macquarie Dictionary, Australian English"
+        },
+        {
+          "word": "causally",
+          "reason": "ground 1 - the captured card lists only ten words; causally extends causal with the common -ly ending",
+          "source": "Macquarie Dictionary, Australian English"
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Okay, same root as yesterday. Today we stack more parts on top of it, and the words get longer without getting harder.\"\nREAD each word as it appears, then connect caus or cus to the card meaning: cause.\ncausality - caus means cause + al means relating to + -ity means the state of: the state of one thing causing another.\ncausative - caus means cause + -ive means relating to: relating to being the cause. A causative factor is the thing that made it happen.\naccusation - ac means toward + cus means cause + ation means the act of: the act of pointing the cause at a person.\ninexcusable - in means not + ex means out + cus means cause + able means able to be: not able to be let off. No cause is good enough.\nunexcused - un means not + ex means out + cus means cause + ed means already done: not let off, because nobody ever explained it.\naccusing - ac means toward + cus means cause + ing means happening now: pointing the cause at someone right now.\nexcusing - ex means out + cus means cause + ing means happening now: letting the cause out, letting somebody off.\ncauses - caus means cause + s means more than one: the things that make something happen.\ncausally - caus means cause + al means relating to + ly means in that way: linked the way a cause is linked to what follows.\nMemory hook: picture the courtroom finger. accuse points the cause AT a person, excuse pushes the cause AWAY. Ask of any caus word: who is being blamed? Challenge: catch three caus words in one news story this week.",
+      "words_to_spell_new": [
+        "accusation",
+        "causality",
+        "inexcusable",
+        "unexcused"
+      ],
+      "extension": "1. SAY: \"Okay, when you finish, write the same event twice - once accusing somebody, once excusing them.\"\n2. CHECK: the two sentences must keep the same event and change only the direction of the cause.\nEXTENSION: Rewrite your accusing sentence so it stays polite but still points at the cause, then write one line on what you had to change.\nAnswer: e.g. accusing - Sam left the gate open and the dog got out. Polite - the gate was left open, and that is how the dog got out. The change is that the cause stays and the person disappears.",
+      "new_morph_activity": {
+        "title": "Write the sum for each word",
+        "rule": "caus and cus mean cause. Write each word as its parts.",
+        "example": "One done for you:\naccuser = ac (toward) + cus (cause) + er\nthe person who points the cause at you",
+        "items": [
+          "1. causal    2. accusation    3. unexcused    4. causality",
+          "Write the parts, then write what the whole word means."
+        ],
+        "item_size": 16,
+        "routine": "OG books - 4 min - books up",
+        "footer": "Which word has the most parts?",
+        "notes": "ANSWER: 1 caus and al, 2 ac and cus and ation, 3 un and ex and cus and ed, 4 caus and al and -ity.\n1. SAY: \"Okay, look at the finished one. Accuser breaks into three parts, and the meaning underneath is those three parts joined up.\"\n2. SAY: \"Split each word into its parts, then write what the whole word means in your own words. Four minutes in your OG books.\"\n3. CIRCULATE: to a stuck student say, \"find caus or cus first and put a line either side of it - whatever is left is the other parts.\" Then split number one together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> split number three together on the board, then re-check.\nTRAP: splitting unexcused into un and excused and stopping. Fix: say excused still has parts inside it, student splits it again.\nEXTENSION: Write the sum for causative, then use it in a sentence that shows what it means.\nHELP: Give the parts of each word out of order; students put them back in the right order first.\n---\nPurpose: day two makes students take the longer family words apart for themselves. [You Do | Literal meanings | Morphology]\nANSWERS:\n1. causal = caus (cause) + al (relating to): about what made it happen\n2. accusation = ac (toward) + cus (cause) + ation (the act of): the act of blaming\n3. unexcused = un (not) + ex (out) + cus (cause) + ed: never explained, never let off\n4. causality = caus (cause) + al (relating to) + -ity (the state of): the link between a cause and what follows\nEXTENSION: causative = caus (cause) + -ive (relating to). Sentence: heavy rain was the causative factor in the flood.",
+        "check_title": "Tick it or fix it - write the sum",
+        "check_rule": "Tick each correct sum. Fix any sum that misses a part.",
+        "check_items": [
+          "1. causal = caus (cause) + al (relating to): about the cause",
+          "2. accusation = ac (toward) + cus + ation (act of): blaming",
+          "3. unexcused = un (not) + ex (out) + cus + ed: not let off",
+          "4. causality = caus + al + -ity (state of): the cause link"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Every sum starts by finding caus",
+        "check_notes": "ANSWER: 1 caus and al, 2 ac and cus and ation, 3 un and ex and cus and ed, 4 caus and al and -ity.\n1. MODEL: \"For number three I found cus in the middle first. Then un at the front means not, ex means out, and ed says it already happened.\"\n2. SAY: \"Now tick each sum that matches. Fix any sum that has missed a part.\"\n3. ASK: \"Which of these four words would still make sense if you took the first part off?\" 10 sec, turn and tell. EXPECT: unexcused, because excused is a word on its own.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number four together, then re-check.\nTRAP: ticking a sum that leaves out the ending. Fix: count the parts in the green line, student counts their own and adds the missing one.\nEXTENSION: Predict what accusatory will mean before we meet it tomorrow.\nHELP: Underline caus or cus in each green sum first, then read outwards from it.\n---\nPurpose: protected reveal that shows every part of the longer words. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "asthma",
+            "unfair": "th",
+            "notes": "Why learned: the th in the middle says nothing at all, so two of the letters are silent passengers.\nSay it: AST-muh, two beats. Write as - th - ma, then check the th is still in the middle.\nQuick link: an asthma plan lives in the first aid folder, so the word is on a form you may have to read."
+          },
+          {
+            "word": "yolk",
+            "unfair": "l",
+            "notes": "Why learned: the l is silent, exactly like salmon, and the o says a long /oh/.\nSay it: YOHK, one beat. Write y - ol - k, then check the l is still sitting there.\nQuick link: the yolk feeds a growing chick, so it belongs in every life cycle diagram."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The victory did not convince our coach to change anything.",
+          "targets": [
+            "victory",
+            "convince"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "revision from three weeks ago: vict and vinc in victory and convince"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "After the vacuum sealed the jar, our teacher said, \"Add one line to the chronicle.\"",
+          "targets": [
+            "vacuum",
+            "chronicle"
+          ],
+          "cups": {
+            "capitals": [
+              "After",
+              "Add"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the after part that cannot stand alone - the comma shows where it ends)",
+              "comma before the speech (it separates who said it from what they said)",
+              "opening quotation mark (speech starts here, so the first word takes a capital)",
+              "full stop inside the speech (the sentence the teacher spoke ends here)",
+              "closing quotation mark (the speech ends here)"
+            ]
+          },
+          "focus": "revision from two and three weeks ago: chron in chronicle, and the red word vacuum"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Name an acronym, and use brackets so a reader is never stuck on letters they cannot unpack.\nWHY THIS WEEK: students write ANZAC, GPS and CFA in their reports and never tell the reader what the letters stand for.\nROUTINE: all grammar this week is written in the OG book. No boards and no scoring - books, thumbs and voices only.\nPREP: today runs yesterday's move backwards - short form in, full name out.",
+        "i_do": {
+          "title": "Unpack the letters",
+          "rule": "Every acronym has a full name hiding behind it.",
+          "example": "GPS\nGlobal Positioning System",
+          "items": [
+            "Each letter is the start of one word.",
+            "Say the full name once, then the short form."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Tomorrow: how do you show your reader?",
+          "notes": "ANSWER: GPS stands for Global Positioning System.\n1. SAY: \"Okay, you use this one every time somebody checks a map on a phone. If you cannot unpack it, your reader cannot either.\"\n2. WRITE: copy G P S onto the class board with a wide gap under each letter. POINT at the G.\n3. WRITE: fill the gaps one at a time - Global under G, Positioning under P, System under S - so the class board shows both forms at once.\n4. SAY: \"Three letters, three words. Now say it the way a writer does - Global Positioning System, GPS.\"\nTRAP: offering a word that does not start with the letter. Fix: cover the other letters, point at the P, student gives a word starting with P.\nCLARIFY: if a student asks whether the G is General or Global, say Global, and add that when you are unsure you write the full name and check it before anyone reads it.\n---\nPurpose: day two turns a short form back into the full name it came from. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: GPS is a satellite system that works out where you are; the three words are Global, Positioning, System."
+        },
+        "we_do": {
+          "title": "Say the full name",
+          "rule": "Turn each short form back into the full name behind it.",
+          "example": "ANZAC -> ?\nCFA -> ?",
+          "items": [
+            "Start at the first letter and work along.",
+            "Say the whole name, not just the letters."
+          ],
+          "routine": "Everyone, together, on three",
+          "footer": "Stem: The A stands for ...",
+          "notes": "ANSWER: Australian and New Zealand Army Corps, and Country Fire Authority.\n1. SAY: \"Okay, yesterday I gave you the long name. Today I give you the short one and you give me the long one back.\"\n2. ASK: \"What does ANZAC stand for?\" 10 sec, everyone together on three. EXPECT: Australian and New Zealand Army Corps.\n3. ASK: \"What does CFA stand for?\" 10 sec, everyone together on three. EXPECT: Country Fire Authority. Then cold call one student to say which word gave the F.\n4. SCAN the room for voices. 80%+ -> move on. Less -> say the ANZAC name together twice, then re-ask.\nTRAP: saying Australia instead of Australian. Fix: say the name has to fit the sentence it came from, student says Australian and New Zealand Army Corps again.\nCLARIFY: if a student asks where the little word and went, say it stays in the full name but never gets a letter of its own.\n---\nPurpose: guided oral practice unpacking short forms every student already says. [We Do | Guided practice | Grammar | HITS 7]\nPREP: the CFA is Victoria's volunteer fire service; the letters are Country, Fire, Authority."
+        },
+        "you_do": {
+          "title": "Write the full name",
+          "rule": "Your turn: write the full name behind each short form in your OG book.",
+          "example": "One done for you:\nGPS = Global Positioning System",
+          "items": [
+            "A) ANZAC = ?    B) CFA = ?    C) VIP = ?    D) DIY = ?",
+            "Write every word the letters stand for."
+          ],
+          "item_size": 16,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: does each word start with its letter?",
+          "notes": "ANSWER: A Australian and New Zealand Army Corps, B Country Fire Authority, C Very Important Person, D Do It Yourself.\n1. SAY: \"Okay, look at the finished one. Three letters became three whole words, and each word starts with its letter.\"\n2. SAY: \"Write A, B, C and D down the page, then write the full name beside each. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"you wrote these four the other way round yesterday - start with the letter and ask what word begins with it.\" Then do C together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> build A together on the board, then re-check.\nTRAP: writing only two words for a three letter short form. Fix: say count the letters, then count your words, student adds the missing one.\nEXTENSION: Write two short forms you use outside school, then write the full name behind each and one line on why the short form is the one people say.\nHELP: Give the four full names out of order; students match each one to A, B, C or D and then say why.\n---\nPurpose: independent practice unpacking short forms back into full names. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) ANZAC = Australian and New Zealand Army Corps\nB) CFA = Country Fire Authority\nC) VIP = Very Important Person\nD) DIY = Do It Yourself\nEXTENSION: e.g. AFL = Australian Football League, and people say AFL because the full name is four words and the short one fits in a headline. e.g. PB = Personal Best.",
+          "check_title": "Tick it or fix it - write the full name",
+          "check_rule": "Tick each full name. Fix any word that does not start with its letter.",
+          "check_items": [
+            "A) ANZAC = Australian and New Zealand Army Corps",
+            "B) CFA = Country Fire Authority",
+            "C) VIP = Very Important Person",
+            "D) DIY = Do It Yourself"
+          ],
+          "check_item_size": 20,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: write the full name first.",
+          "check_notes": "ANSWER: A Australian and New Zealand Army Corps, B Country Fire Authority, C Very Important Person, D Do It Yourself.\n1. MODEL: \"For B I took the C and asked what word starts with C. Country. Then F for Fire, then A for Authority.\"\n2. SAY: \"Now tick each full name that matches. Fix any word that does not start with its letter.\"\n3. ASK: \"Which of these four has a word in the full name that never got a letter?\" 10 sec, turn and tell. EXPECT: ANZAC, the word and.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild A together, then re-check.\n5. SAY: \"In your next report, write the full name the first time and the short form after that.\"\nTRAP: ticking a name that is close but wrong, like Country Fire Association. Fix: read the green line aloud, student rewrites Authority.\n---\nPurpose: protected reveal that models the letter-by-letter unpack. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Wednesday",
+      "type": "review",
+      "morphology_review": [
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer",
+          "extra_task": {
+            "prompt": "Give me one word built from vict or vinc, meaning conquer.",
+            "answers": [
+              "victory",
+              "convict",
+              "convince",
+              "invincible"
+            ]
+          }
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust"
+        },
+        {
+          "morph": "caus-/cus(e)",
+          "type": "root",
+          "keyword": "accuse",
+          "meaning": "cause"
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root",
+          "keyword": "appendage",
+          "meaning": "hang; pay"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law",
+          "extra_task": {
+            "prompt": "Give me one word built from jur, jud or just, meaning right or law.",
+            "answers": [
+              "justice",
+              "judge",
+              "jury",
+              "justify"
+            ]
+          }
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root",
+          "keyword": "ponder",
+          "meaning": "place, part",
+          "extra_task": {
+            "prompt": "Give me one word built from pon or pound, meaning place or part.",
+            "answers": [
+              "ponder",
+              "opponent",
+              "component",
+              "compound"
+            ]
+          }
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "misjudge",
+          "suspend",
+          "megaphone",
+          "component",
+          "accuser",
+          "chronologist",
+          "depend",
+          "demanding",
+          "expense",
+          "disjointed",
+          "causation",
+          "unconvincing",
+          "jurist",
+          "pondering",
+          "pending"
+        ],
+        "notes": "1. READ: \"Okay, if you would rather play sport, read row 1.\"\n2. READ: \"If you would rather read a book, read row 2.\"\n3. READ: \"If you would rather build or draw something, read row 3.\"\n4. READ: \"If you would rather listen to music, read row 4. If two of those feel true, or none of them do, pick any row you like.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"caus and cus mean cause. Which two words carry them?\" 5 sec, choral response. EXPECT: accuser, causation.\n7. ASK: \"pend and pens mean hang or pay. Which four words carry them?\" 5 sec, turn and tell. EXPECT: suspend, depend, expense, pending.\n8. ASK: \"jur, jud and just mean right or law. Which two words carry them?\" 5 sec, choral response. EXPECT: misjudge, jurist.\n9. ASK: \"Which word names a person who works out the order events happened in?\" 3 sec, choral response. EXPECT: chronologist.\n10. ASK: \"Which word means the joints have come apart?\" 3 sec, choral response. EXPECT: disjointed.\n11. ASK: \"Which word means the opposite of convincing?\" 3 sec, choral response. EXPECT: unconvincing.\n12. ASK: \"Make jurist plural.\" 3 sec, choral response. EXPECT: jurists."
+      },
+      "sound_bank": [
+        {
+          "morph": "pend/pens",
+          "type": "root"
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "post-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "expensive",
+          "sentence": "The new scoreboard was too expensive for one fete to pay for.",
+          "prompt": "pens means pay. Which taught ending tells you the word describes something?",
+          "answer": "The -ive ending, the same one in active. Expensive describes anything that takes a lot of paying."
+        },
+        {
+          "word": "append",
+          "sentence": "Append your initials to the bottom of the borrowing card.",
+          "prompt": "pend means hang. Where does an appended name hang?",
+          "answer": "On the end of what is already there. Ap means onto, so nothing in front of it moves."
+        },
+        {
+          "word": "compounded",
+          "sentence": "The heat compounded the problem for the marathon runners.",
+          "prompt": "pound means part. What did the heat do to the problem?",
+          "answer": "Added another part to it. Com means together, so two problems ended up piled into one."
+        },
+        {
+          "word": "postpone",
+          "sentence": "The principal had to postpone athletics day until the Friday.",
+          "prompt": "pon means place. What is being placed somewhere new?",
+          "answer": "The whole day. Post means after, so it lands after the date it was meant to have."
+        },
+        {
+          "word": "commendation",
+          "sentence": "The whole choir earned a commendation from the visiting judge.",
+          "prompt": "mend means entrust. What is handed over in a commendation?",
+          "answer": "Public praise. It gets said out loud in front of everybody, so it counts for more."
+        },
+        {
+          "word": "judgement",
+          "sentence": "One quick judgement from the umpire ended the whole argument.",
+          "prompt": "jud means right or law. What is being weighed in a judgement?",
+          "answer": "Both sides of the argument. The umpire holds them up together, then decides which one is right."
+        },
+        {
+          "word": "eviction",
+          "sentence": "The eviction notice gave the corner shop thirty days to move.",
+          "prompt": "vict means conquer. Who has been conquered in an eviction?",
+          "answer": "The people who have to leave. E means out, so they are beaten out of the building."
+        },
+        {
+          "word": "carnivorous",
+          "sentence": "Every carnivorous animal in the display case had long back teeth.",
+          "prompt": "Which two taught roots are stacked inside carnivorous?",
+          "answer": "carn for flesh and vore for eating. Put them together and you have a meat eater."
+        },
+        {
+          "word": "excusable",
+          "sentence": "Being late once is excusable, but three times in a week is not.",
+          "prompt": "cus means cause. What makes something excusable?",
+          "answer": "There is a cause the other person will accept. Ex means out, so it lets you out of trouble."
+        },
+        {
+          "word": "accused",
+          "sentence": "The accused player asked to watch the video before saying anything.",
+          "prompt": "cus means cause. Which way is the cause pointing here?",
+          "answer": "Straight at the player. Ac means toward, so the blame has already landed on them."
+        }
+      ],
+      "new_morphology": {
+        "morph": "caus-/cus(e)",
+        "type": "root",
+        "keyword": "accuse",
+        "meaning": "cause"
+      },
+      "words_to_read_new": [
+        {
+          "word": "cause",
+          "meaning": "caus is the root on its own, cause: the thing that makes something else happen"
+        },
+        {
+          "word": "because",
+          "meaning": "be means by + cause: by the cause of it"
+        },
+        {
+          "word": "excuse",
+          "meaning": "ex means out + cuse means cause: the cause that gets you out of trouble"
+        },
+        {
+          "word": "accuse",
+          "meaning": "ac means toward + cuse means cause: to point the cause toward a person"
+        },
+        {
+          "word": "accuser",
+          "meaning": "ac means toward + cus means cause + er means the person: the person who points the cause at you"
+        },
+        {
+          "word": "causal",
+          "meaning": "caus means cause + al means relating to: relating to what made it happen"
+        },
+        {
+          "word": "causation",
+          "meaning": "caus means cause + ation means the act of: the act of one thing making another happen"
+        },
+        {
+          "word": "accusatory",
+          "meaning": "ac means toward + cus means cause + ory means relating to: relating to pointing the cause at someone"
+        },
+        {
+          "word": "causality",
+          "meaning": "caus means cause + al means relating to + -ity means the state of: the state of one thing causing another"
+        }
+      ],
+      "associated_word_exceptions": [
+        {
+          "word": "causal",
+          "reason": "ground 3 - simpler and more transparent than causality, and it is the base students need before causality makes sense",
+          "source": "Macquarie Dictionary, Australian English"
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Okay, third day on this root. Today watch the direction - some of these point the cause at a person, and some push it away.\"\nREAD each word as it appears, then say which way the cause is pointing.\ncause - caus is the root on its own, cause: the thing that makes something else happen. No direction yet.\nbecause - be means by + cause: by the cause of it. Any sentence with because is handing over a reason.\nexcuse - ex means out + cuse means cause: the cause that gets you out. Direction: away from you.\naccuse - ac means toward + cuse means cause: to point the cause toward a person. Direction: at somebody.\naccuser - ac means toward + cus means cause + er means the person: the person doing the pointing.\ncausal - caus means cause + al means relating to: relating to what made it happen. A causal link joins the cause to the result.\ncausation - caus means cause + ation means the act of: the act of one thing making another happen.\naccusatory - ac means toward + cus means cause + ory means relating to: relating to pointing the cause at somebody. A blaming tone.\ncausality - caus means cause + al means relating to + -ity means the state of: the state of one thing causing another.\nMemory hook: picture the courtroom finger. accuse points the cause AT a person, excuse pushes the cause AWAY. Ask of any caus word: who is being blamed? Challenge: catch three caus words in one news story this week.",
+      "words_to_spell_new": [
+        "accuser",
+        "causal",
+        "causation",
+        "accusatory"
+      ],
+      "extension": "1. SAY: \"Okay, when you finish, write one sentence where a causal link is doing the work - this happened, and that is why.\"\n2. CHECK: a reader must be able to point at the cause and at the result.\nEXTENSION: Find a caus or cus word that is not on the board, write its morpheme sum with a question mark on any part you have not been taught, then write one sentence where a reader could work out the meaning.\nAnswer: e.g. inexcusable = in (not) + ex (out) + cus (cause) + able (able to be). Sentence: leaving the tap running all night was inexcusable, because there was no reason for it at all.",
+      "new_morph_activity": {
+        "title": "Blame it or dodge it",
+        "rule": "accuse points the cause AT someone. excuse pushes it AWAY.",
+        "example": "One done for you:\naccuser = AT, it points the cause at you",
+        "items": [
+          "Write AT or AWAY beside each word.",
+          "1. excusable    2. accusation    3. excused    4. accusatory"
+        ],
+        "item_size": 16,
+        "routine": "Whiteboards - 3 min - boards up",
+        "footer": "Which two of these came from accuse?",
+        "notes": "ANSWER: 1 AWAY, 2 AT, 3 AWAY, 4 AT.\n1. SAY: \"Okay, look at the finished one. Accuser points the cause at a person, so it is AT.\"\n2. SAY: \"Write AT or AWAY beside each of the four words. Three minutes, then write it... chin it... show me.\"\n3. CIRCULATE: to a stuck student say, \"cover the middle of the word and read only the front - ac points toward, ex pushes out.\" Then do number one together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> sort number two together, then re-ask.\nTRAP: sorting by whether the word sounds negative. Fix: say both sides can sound harsh, student reads the front of the word again and re-sorts.\nEXTENSION: Write one sentence for an AT word and one for an AWAY word, then swap them so the same event is told the other way round.\nHELP: Write ac and ex at the top of the board with an arrow each, so the front of the word does the sorting.\n---\nPurpose: day three makes the two directions of the root visible and sortable. [You Do | Sorting | Morphology]\nANSWERS:\n1. excusable = AWAY, the cause lets you off\n2. accusation = AT, the blame lands on a person\n3. excused = AWAY, somebody accepted your cause\n4. accusatory = AT, a blaming tone aimed at a person\nEXTENSION: e.g. AT - the note was accusatory, so everyone knew who was blamed. AWAY - the note was excusing, so nobody got the blame.",
+        "check_title": "Tick it or fix it - blame it or dodge it",
+        "check_rule": "Tick each correct sort. Fix any word that points the wrong way.",
+        "check_items": [
+          "1. excusable = AWAY, the cause lets you off",
+          "2. accusation = AT, the blame lands on a person",
+          "3. excused = AWAY, somebody accepted your cause",
+          "4. accusatory = AT, a blaming tone"
+        ],
+        "check_item_size": 20,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "The front of the word decides it",
+        "check_notes": "ANSWER: 1 AWAY, 2 AT, 3 AWAY, 4 AT.\n1. MODEL: \"For number one I read the front. Ex means out, so excusable is about getting out of it. That is AWAY.\"\n2. SAY: \"Now tick each word you sorted the same way. Fix any word that points the other way.\"\n3. ASK: \"Which of these four would you least like written about you, and why?\" 10 sec, turn and tell. EXPECT: accusatory or accusation, because the blame is aimed straight at a person.\n4. SCAN corrections. 80%+ -> continue. Less -> re-sort number three together, then re-check.\nTRAP: ticking a word because the answer looks familiar. Fix: cover the green label, student re-reads the front of the word and decides again.\nEXTENSION: Sort causal, causation and causality. Explain why none of them is AT or AWAY.\nHELP: Read only the first two letters of each green word aloud before checking the label.\n---\nPurpose: protected reveal that ties the sort back to the front of each word. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "asthma",
+            "unfair": "th",
+            "notes": "Why learned: the th in the middle says nothing at all, so two of the letters are silent passengers.\nSay it: AST-muh, two beats. Write as - th - ma, then check the th is still in the middle.\nQuick link: an asthma plan lives in the first aid folder, so the word is on a form you may have to read."
+          },
+          {
+            "word": "yolk",
+            "unfair": "l",
+            "notes": "Why learned: the l is silent, exactly like salmon, and the o says a long /oh/.\nSay it: YOHK, one beat. Write y - ol - k, then check the l is still sitting there.\nQuick link: the yolk feeds a growing chick, so it belongs in every life cycle diagram."
+          }
+        ],
+        "new": {
+          "word": "rhythm",
+          "unfair": "y",
+          "notes": "Why learned: the y is the only vowel letter in the word, and it says a short /i/ where you expect an i or an e.\nSay it: RITH-uhm, two beats. Write rhy - thm in two chunks, and check the h hiding behind the r.\nLink: rhythm belongs to music, poetry and PE, so it turns up whenever you write about a beat or a pattern.\nYou will write this word in your poetry work and your PE reflections this term."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The council will evict the tenants under a new city mandate.",
+          "targets": [
+            "evict",
+            "mandate"
+          ],
+          "cups": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "revision from two and three weeks ago: vict in evict and mand in mandate"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Although the leopard is rare in this province, our guide's voice stayed completely calm.",
+          "targets": [
+            "leopard",
+            "province"
+          ],
+          "cups": {
+            "capitals": [
+              "Although"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the although part that cannot stand alone - the comma shows where it ends)",
+              "apostrophe for the missing letters in guide's (the voice belonging to the guide)",
+              "full stop"
+            ]
+          },
+          "focus": "revision from three weeks ago: vinc in province, and the red word leopard"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Name an acronym, and use brackets so a reader is never stuck on letters they cannot unpack.\nWHY THIS WEEK: students write ANZAC, GPS and CFA in their reports and never tell the reader what the letters stand for.\nROUTINE: all grammar this week is written in the OG book. No boards and no scoring - books, thumbs and voices only.\nPREP: round brackets hold an aside the sentence still works without; today the aside is the short form.",
+        "i_do": {
+          "title": "Brackets do the explaining",
+          "rule": "Give the full name once, then the short form in round brackets.",
+          "example": "The Country Fire Authority (CFA) sent two trucks.",
+          "items": [
+            "Full name first, short form in the brackets.",
+            "After that, the short form on its own is enough."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Tomorrow: which one does your reader need?",
+          "notes": "ANSWER: the full name comes first, and the short form sits in round brackets straight after it.\n1. SAY: \"Okay, this is the move that stops a reader getting stuck. You explain the short form once, and then you never explain it again.\"\n2. WRITE: copy \"The CFA sent two trucks.\" onto the class board. POINT at CFA and say a new reader stops right here.\n3. WRITE: rub out CFA and write \"Country Fire Authority (CFA)\" in its place, so the class board now reads the whole sentence again.\n4. SAY: \"Full name, then the short form in brackets. From here on in that piece of writing, CFA on its own is enough.\"\nTRAP: putting the full name inside the brackets instead. Fix: say the brackets hold the short form, student rewrites it with CFA inside them.\nCLARIFY: if a student asks whether they can start with the short form, say yes - CFA (Country Fire Authority) works too, as long as one of the two is in the brackets.\n---\nPurpose: day three gives students the bracket move that makes a short form usable. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: the test for brackets is that the sentence still works if you cover them; here it does, because the full name is already there."
+        },
+        "we_do": {
+          "title": "Put the brackets in",
+          "rule": "Say where the brackets go and what belongs inside them.",
+          "example": "The Australian Broadcasting Corporation ABC ran the story.",
+          "items": [
+            "The short form goes inside the brackets.",
+            "Say the whole sentence back with them in."
+          ],
+          "routine": "Thumbs verdicts - voices off",
+          "footer": "Stem: The brackets go around ...",
+          "notes": "ANSWER: the brackets go around ABC - the Australian Broadcasting Corporation (ABC) ran the story.\n1. SAY: \"Okay, this sentence has both forms in it already, but no brackets, so it reads like a stumble.\"\n2. ASK: \"Which three letters belong inside the brackets?\" 10 sec, everyone together on three. EXPECT: ABC.\n3. ASK: \"Say the whole sentence back with the brackets in.\" 15 sec, everyone together on three. EXPECT: the Australian Broadcasting Corporation (ABC) ran the story.\n4. SCAN the room for voices. 80%+ -> cold call one student to say why the full name goes first, then move on. Less -> read the sentence both ways, then re-ask.\nTRAP: putting brackets around the full name. Fix: say cover the brackets and the sentence must still make sense, student re-reads it and moves them.\nCLARIFY: if a student asks whether commas would do the same job, say they can, but brackets tell the reader this is a quick aside they can skip.\n---\nPurpose: guided practice placing the brackets before students write them. [We Do | Guided practice | Grammar | HITS 7]\nPREP: the ABC is the Australian Broadcasting Corporation, not Association - the C at the end is Corporation."
+        },
+        "you_do": {
+          "title": "Name it, then bracket it",
+          "rule": "Your turn: write each full name, then its short form in brackets.",
+          "example": "One done for you:\nState Emergency Service (SES)",
+          "items": [
+            "A) Country Fire Authority    B) Royal Australian Air Force",
+            "C) Australian Football League    D) Global Positioning System"
+          ],
+          "item_size": 16,
+          "routine": "OG books - 3 min - pens down",
+          "footer": "Check: do the brackets hold the short form?",
+          "notes": "ANSWER: A (CFA), B (RAAF), C (AFL), D (GPS).\n1. SAY: \"Okay, look at the finished one. Full name first, then the short form sitting inside round brackets.\"\n2. SAY: \"Copy each name into your OG book, then add its short form in brackets. Three minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"count the big words before you write anything - B has four of them, so its short form needs four letters.\" Then do B together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> build C together on the board, then re-check.\nTRAP: writing RAF for B. Fix: say Royal, Australian, Air, Force is four words, student counts again and adds the second A.\nEXTENSION: Write one sentence that uses a short form twice - full name and brackets first, short form only after - then explain why the second one needs no brackets.\nHELP: Highlight the first letter of every big word before writing anything.\n---\nPurpose: independent practice of the full-name-then-brackets move. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) Country Fire Authority (CFA)\nB) Royal Australian Air Force (RAAF)\nC) Australian Football League (AFL)\nD) Global Positioning System (GPS)\nEXTENSION: e.g. the State Emergency Service (SES) arrived at nine, and the SES stayed until dark. The second one needs no brackets because the reader has already been told what it means.",
+          "check_title": "Tick it or fix it - name it, then bracket it",
+          "check_rule": "Tick each one with the full name first and the short form in brackets.",
+          "check_items": [
+            "A) Country Fire Authority (CFA), three big words",
+            "B) Royal Australian Air Force (RAAF), four words",
+            "C) Australian Football League (AFL), three words",
+            "D) Global Positioning System (GPS), three words"
+          ],
+          "check_item_size": 20,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: unpack it the first time.",
+          "check_notes": "ANSWER: A (CFA), B (RAAF), C (AFL), D (GPS).\n1. MODEL: \"For B I counted the big words first - Royal, Australian, Air, Force. Four words, so four letters: R, A, A, F.\"\n2. SAY: \"Now tick each one with the full name first and the short form in brackets. Fix any that is the wrong way round.\"\n3. ASK: \"Which one of these has two letters the same, and where did they come from?\" 10 sec, turn and tell. EXPECT: RAAF, because Australian and Air both start with A.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild D together, then re-check.\n5. SAY: \"In your next report, the first time you use a short form, give the full name and put the short one in brackets.\"\nTRAP: writing square brackets instead of round ones. Fix: say round brackets are the ones above the nine and the zero, student rewrites them.\n---\nPurpose: protected reveal that models the bracket move and sends it into their own writing. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Thursday",
+      "type": "week_review",
+      "morphology_review": [
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root",
+          "keyword": "ponder",
+          "meaning": "place, part"
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root",
+          "keyword": "appendage",
+          "meaning": "hang; pay"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law"
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house",
+          "extra_task": {
+            "prompt": "Give me one word built from eco, meaning house.",
+            "answers": [
+              "ecosystem",
+              "ecology",
+              "economy",
+              "ecotourism"
+            ]
+          }
+        },
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time",
+          "extra_task": {
+            "prompt": "Give me one word built from chron, meaning time.",
+            "answers": [
+              "chronicle",
+              "chronology",
+              "chronic",
+              "synchronise"
+            ]
+          }
+        },
+        {
+          "morph": "caus-/cus(e)",
+          "type": "root",
+          "keyword": "accuse",
+          "meaning": "cause",
+          "extra_task": {
+            "prompt": "Give me one word built from caus or cus, meaning cause.",
+            "answers": [
+              "cause",
+              "excuse",
+              "accuse",
+              "because"
+            ]
+          }
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "victorious",
+          "impound",
+          "causing",
+          "recommend",
+          "suspension",
+          "globule",
+          "anachronism",
+          "expend",
+          "prejudice",
+          "conjoin",
+          "accusation",
+          "exponent",
+          "judgemental",
+          "dispensable",
+          "postponement"
+        ],
+        "notes": "1. READ: \"Okay, summer birthdays, read row 1.\"\n2. READ: \"Autumn birthdays, read row 2.\"\n3. READ: \"Winter birthdays, read row 3.\"\n4. READ: \"Spring birthdays, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"caus and cus mean cause. Which two words carry them?\" 5 sec, choral response. EXPECT: causing, accusation.\n7. ASK: \"pon and pound mean place or part. Which three words carry them?\" 5 sec, turn and tell. EXPECT: impound, exponent, postponement.\n8. ASK: \"pend and pens mean hang or pay. Which three words carry them?\" 5 sec, choral response. EXPECT: suspension, expend, dispensable.\n9. ASK: \"chron means time. Which word names something sitting in the wrong time period?\" 3 sec, choral response. EXPECT: anachronism.\n10. ASK: \"-ule means small. Which word names a tiny round drop?\" 3 sec, choral response. EXPECT: globule.\n11. ASK: \"Which word means to join two things together?\" 3 sec, choral response. EXPECT: conjoin.\n12. ASK: \"Which word means you won?\" 3 sec, choral response. EXPECT: victorious."
+      },
+      "sound_bank": [
+        {
+          "morph": "pend/pens",
+          "type": "root"
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root"
+        },
+        {
+          "morph": "chron",
+          "type": "root"
+        },
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "syn-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ant",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ity",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "appendix",
+          "sentence": "The map we needed was in the appendix at the back of the book.",
+          "prompt": "pend means hang. Where does an appendix hang?",
+          "answer": "Off the end. Ap means onto, so it is added on after the real book has finished."
+        },
+        {
+          "word": "pendant",
+          "sentence": "The pendant on that chain came from my great grandmother.",
+          "prompt": "pend means hang. Which taught ending turns it into a thing?",
+          "answer": "The -ant ending, the same one in accountant. A pendant is simply the thing that hangs."
+        },
+        {
+          "word": "compound",
+          "sentence": "Salt is a compound, so two different elements are locked inside it.",
+          "prompt": "pound means part. How many parts make a compound?",
+          "answer": "At least two. Com means together, so the parts are placed together and stay that way."
+        },
+        {
+          "word": "propensity",
+          "sentence": "Our class has a propensity for talking straight through the roll.",
+          "prompt": "pens means hang. What does a propensity make you do without deciding to?",
+          "answer": "Lean the same way every time. It hangs on you, so it shows up before you have thought."
+        },
+        {
+          "word": "mandate",
+          "sentence": "The new mandate says every rider wears a helmet on camp.",
+          "prompt": "mand means order. What makes a mandate different from a suggestion?",
+          "answer": "Nobody gets to opt out of it. A mandate is an order, so it applies to every single rider."
+        },
+        {
+          "word": "judiciary",
+          "sentence": "The judiciary is the part of government that runs the courts.",
+          "prompt": "jud means law. Who belongs to the judiciary?",
+          "answer": "The judges. They decide what the law means, and they are not the ones who write it."
+        },
+        {
+          "word": "synchronise",
+          "sentence": "We had to synchronise our watches before the orienteering start.",
+          "prompt": "chron means time. Which taught prefix tells you the watches match?",
+          "answer": "The syn part, meaning together. Synchronise puts every watch on the same time at once."
+        },
+        {
+          "word": "ecosystem",
+          "sentence": "One weed can change a whole creek ecosystem in a single summer.",
+          "prompt": "eco means house. Who lives in the house here?",
+          "answer": "Every living thing in the creek. The system is how they share the one home."
+        },
+        {
+          "word": "cause",
+          "sentence": "Nobody could agree on the cause of the power failure.",
+          "prompt": "This is the root on its own. What is a cause always attached to?",
+          "answer": "A result. There is no cause without something that happened afterwards."
+        },
+        {
+          "word": "accuse",
+          "sentence": "It is unfair to accuse somebody before you have heard them.",
+          "prompt": "cus means cause. Which way is the cause pointing in accuse?",
+          "answer": "Toward a person. Ac means toward, so the cause lands on somebody by name."
+        }
+      ],
+      "learned_words": {
+        "review": [
+          {
+            "word": "rhythm",
+            "unfair": "y",
+            "notes": "Why learned: the y does the vowel's job, and the second beat has no vowel letter at all.\nSay it: RITH-uhm, two beats. Write rhy - thm, then check the h behind the r.\nQuick link: every poem and every song has a rhythm, so you will write it in English and in music."
+          },
+          {
+            "word": "asthma",
+            "unfair": "th",
+            "notes": "Why learned: the th in the middle says nothing at all, so two of the letters are silent passengers.\nSay it: AST-muh, two beats. Write as - th - ma, then check the th is still in the middle.\nQuick link: an asthma plan lives in the first aid folder, so the word is on a form you may have to read."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Our coach was judicious and gave the injured player a rest.",
+          "targets": [
+            "judicious",
+            "injured"
+          ],
+          "cups": {
+            "capitals": [
+              "Our"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "revision from two weeks ago: jud and jur in judicious and injured"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Before the storm arrived, the commander checked the ship's chronometer and marked the time.",
+          "targets": [
+            "commander",
+            "chronometer"
+          ],
+          "cups": {
+            "capitals": [
+              "Before"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the before part that cannot stand alone - the comma shows where it ends)",
+              "apostrophe for the missing letters in ship's (the chronometer belonging to the ship)",
+              "full stop"
+            ]
+          },
+          "focus": "revision from two and three weeks ago: mand in commander and chron in chronometer"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Name an acronym, and use brackets so a reader is never stuck on letters they cannot unpack.\nWHY THIS WEEK: students write ANZAC, GPS and CFA in their reports and never tell the reader what the letters stand for.\nROUTINE: all grammar this week is written in the OG book. No boards and no scoring - books, thumbs and voices only.\nPREP: today is the judgement call - brackets on the first mention, short form on its own after that.",
+        "i_do": {
+          "title": "Which one does your reader need?",
+          "rule": "First time you use it: full name, then brackets.",
+          "example": "We rang the SES.\nWe rang the State Emergency Service (SES).",
+          "items": [
+            "First time: full name plus brackets.",
+            "After that: the short form on its own."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Check: has your reader met this one yet?",
+          "notes": "ANSWER: the second version works for a new reader, because the full name is there once with the short form in brackets.\n1. SAY: \"Okay, last day on this. The whole week comes down to one question: has my reader met this short form yet?\"\n2. WRITE: copy \"We rang the SES.\" onto the class board. POINT at SES and say a reader who has never met it stops here.\n3. WRITE: underneath, write \"We rang the State Emergency Service (SES).\" so the class board shows the weak version above the strong one.\n4. SAY: \"One extra bracket and three extra words, and now anybody can read it. Later in the same piece, SES on its own is plenty.\"\nTRAP: unpacking the same short form every single time. Fix: say once is enough in one piece of writing, student reads the second mention with SES alone.\nCLARIFY: if a student asks about a short form everybody knows, say if you are unsure whether your reader knows it, unpack it - it costs three words and saves a stumble.\n---\nPurpose: day four turns the bracket move into a decision students make while drafting. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: the SES is the State Emergency Service, the volunteers who come for storms, floods and fallen trees."
+        },
+        "we_do": {
+          "title": "Brackets or not?",
+          "rule": "Decide whether this mention still needs the brackets.",
+          "example": "A) first time you write GPS\nB) fifth time you write GPS",
+          "items": [
+            "Thumbs up if it needs the brackets.",
+            "Say why in one sentence."
+          ],
+          "routine": "Thumbs verdicts - voices off",
+          "footer": "Stem: It needs brackets because ...",
+          "notes": "ANSWER: A needs the brackets, B does not.\n1. SAY: \"Okay, same short form twice in the same piece of writing. Only one of them needs unpacking.\"\n2. ASK: \"Thumbs up if A needs the brackets.\" 10 sec, thumbs verdicts, voices off. EXPECT: thumbs up, because the reader has not met GPS yet.\n3. ASK: \"Thumbs up if B needs the brackets.\" 10 sec, thumbs verdicts, voices off. EXPECT: thumbs down. Then cold call one student to finish the stem, it needs no brackets because...\n4. SCAN every thumb. 80%+ -> move on. Less -> read both mentions in order aloud, then re-ask.\nTRAP: thinking every mention needs brackets. Fix: say the reader only needs telling once, student says which mention does the telling.\nCLARIFY: if a student asks what happens in a brand new piece of writing, say the count starts again - a new reader has met nothing.\n---\nPurpose: guided practice on the decision, not the mechanics. [We Do | Guided practice | Grammar | HITS 7]\nPREP: the rule is per piece of writing, not per paragraph and not per page."
+        },
+        "you_do": {
+          "title": "Fix it for a new reader",
+          "rule": "Your turn: rewrite each sentence so a new reader can follow it.",
+          "example": "One done for you:\nWe rang the SES. ->\nWe rang the State Emergency Service (SES).",
+          "items": [
+            "A) The CFA came fast.    B) Ana used GPS.",
+            "C) Our AFL team won.    D) Sam got a PB."
+          ],
+          "item_size": 16,
+          "routine": "OG books - 3 min - books up",
+          "footer": "Check: could a stranger read your sentence?",
+          "notes": "ANSWER: A Country Fire Authority (CFA), B Global Positioning System (GPS), C Australian Football League (AFL), D personal best (PB).\n1. SAY: \"Okay, look at the finished one. The sentence keeps every word it had, and the full name is dropped in front of the brackets.\"\n2. SAY: \"Rewrite all four sentences in your OG book so a stranger could read them. Three minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"we unpacked every one of these earlier in the week - start with the first letter and say what word begins with it.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> rebuild C together on the board, then re-check.\nTRAP: dropping the short form once the full name is in. Fix: say the reader still needs the short one for next time, student adds the brackets back.\nEXTENSION: Write a short paragraph using two different short forms, unpack each one only on its first mention, then underline the mentions that needed no brackets.\nHELP: Give the four full names on a card; students match each one to A, B, C or D before rewriting.\n---\nPurpose: independent application of the whole week in real sentences. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) The Country Fire Authority (CFA) came fast.\nB) Ana used the Global Positioning System (GPS).\nC) Our Australian Football League (AFL) team won.\nD) Sam got a personal best (PB).\nEXTENSION: e.g. the Country Fire Authority (CFA) sent two trucks, and the State Emergency Service (SES) sent one. The CFA stayed all night. The third mention needs no brackets.",
+          "check_title": "Tick it or fix it - fix it for a new reader",
+          "check_rule": "Tick each rewrite with the full name first and the short form in brackets.",
+          "check_items": [
+            "A) the Country Fire Authority (CFA) came fast",
+            "B) Ana used the Global Positioning System (GPS)",
+            "C) our Australian Football League (AFL) team won",
+            "D) Sam got a personal best (PB)"
+          ],
+          "check_item_size": 20,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: unpack it once, then move on.",
+          "check_notes": "ANSWER: A Country Fire Authority (CFA), B Global Positioning System (GPS), C Australian Football League (AFL), D personal best (PB).\n1. MODEL: \"For A I kept the sentence exactly as it was, then swapped CFA for Country Fire Authority and put CFA in brackets straight after it.\"\n2. SAY: \"Now tick each rewrite that puts the full name first and the short form in brackets. Fix any that is the wrong way round.\"\n3. ASK: \"Which one of these four is not really a name, and how can you tell?\" 10 sec, turn and tell. EXPECT: personal best, because it takes no capital letters.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild B together, then re-check.\n5. SAY: \"Take this straight into your next piece of writing. Unpack every short form the first time, then use the short one and keep going.\"\nTRAP: ticking a rewrite that lost the short form. Fix: say the brackets have to hold something, student writes the short form back in.\n---\nPurpose: protected reveal that closes the week and hands the move to their own drafting. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    }
+  ]
+}

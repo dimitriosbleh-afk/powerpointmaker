@@ -1,0 +1,1757 @@
+{
+  "term": 3,
+  "week": 8,
+  "cohort": "Enrichment",
+  "unit_folder": "OG_Term3_Week8",
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "taught_morphemes": [
+    "mini-",
+    "super-",
+    "over-",
+    "anti-",
+    "ultra-",
+    "retro-",
+    "em-",
+    "syn-",
+    "sym-/sys-/syl-",
+    "-let",
+    "-ling",
+    "-cian",
+    "-cial/-tial",
+    "-ancy/-ance",
+    "-ency/-ence",
+    "-ity",
+    "-tude",
+    "out-",
+    "self-",
+    "post-",
+    "with-",
+    "counter-",
+    "contra-",
+    "omni-",
+    "intra-",
+    "-eer",
+    "-ant",
+    "-ar",
+    "-ine",
+    "-cy",
+    "-ciate/-tiate",
+    "ped/pod",
+    "rect/reg",
+    "capt/capit",
+    "flect/flex",
+    "ord/ordin",
+    "clud(e)/clus(e)",
+    "mal-",
+    "-ery",
+    "-ice",
+    "-ive",
+    "-ite",
+    "-acy",
+    "-ule",
+    "mega-",
+    "micro",
+    "pict/picto",
+    "vore",
+    "eco",
+    "carn/carni",
+    "junct/join/joint",
+    "vict/vinc",
+    "chron",
+    "mand/mend",
+    "jur/jud/just"
+  ],
+  "overview": {
+    "Monday": {
+      "morphology": [
+        "New Morphology",
+        "pend/pens"
+      ],
+      "grammar": "Nominalisation: action word to thing word",
+      "learned_words": [
+        "New learned word",
+        "salmon"
+      ]
+    },
+    "Tuesday": {
+      "morphology": [
+        "Review Morphology",
+        "pend/pens"
+      ],
+      "grammar": "Nominalisation: take the person out",
+      "learned_words": [
+        "Review learned words",
+        "salmon, vacuum"
+      ]
+    },
+    "Wednesday": {
+      "morphology": [
+        "New Morphology",
+        "pon/pound"
+      ],
+      "grammar": "Nominalisation: two sentences into one",
+      "learned_words": [
+        "New learned word",
+        "yolk"
+      ]
+    },
+    "Thursday": {
+      "morphology": [
+        "Review Morphology",
+        "pon/pound"
+      ],
+      "grammar": "Nominalisation: noun or verb - you choose",
+      "learned_words": [
+        "Review learned words",
+        "yolk, salmon"
+      ]
+    },
+    "Friday": {
+      "morphology": "No session this week",
+      "grammar": "No session this week",
+      "learned_words": "No session this week"
+    }
+  },
+  "sessions": [
+    {
+      "day": "Monday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law",
+          "extra_task": {
+            "prompt": "Give me one word built from jur, jud or just, meaning right or law.",
+            "answers": [
+              "justice",
+              "judge",
+              "jury",
+              "justify"
+            ]
+          }
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer"
+        },
+        {
+          "morph": "micro",
+          "type": "root",
+          "keyword": "microscope",
+          "meaning": "small"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust"
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating",
+          "extra_task": {
+            "prompt": "Give me one word that ends with vore, meaning eating.",
+            "answers": [
+              "carnivore",
+              "herbivore",
+              "omnivore",
+              "insectivore"
+            ]
+          }
+        },
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join",
+          "extra_task": {
+            "prompt": "Give me one word built from junct or join, meaning join.",
+            "answers": [
+              "junction",
+              "conjunction",
+              "adjoin",
+              "injunction"
+            ]
+          }
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "judicious",
+          "evict",
+          "mandatory",
+          "ecology",
+          "recommend",
+          "chronological",
+          "injury",
+          "molecule",
+          "demanding",
+          "junction",
+          "unjust",
+          "herbivore",
+          "convincing",
+          "remand",
+          "jurisdiction"
+        ],
+        "notes": "1. READ: \"Okay, if your first name starts with A to F, read row 1.\"\n2. READ: \"If it starts with G to L, read row 2.\"\n3. READ: \"If it starts with M to R, read row 3.\"\n4. READ: \"If it starts with S to Z, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"jur, jud and just mean right or law. Which four words carry them?\" 5 sec, turn and tell. EXPECT: judicious, injury, unjust, jurisdiction.\n7. ASK: \"mand and mend mean order or entrust. Which four words carry them?\" 5 sec, choral response. EXPECT: mandatory, recommend, demanding, remand.\n8. ASK: \"chron means time. Which word means in time order?\" 3 sec, choral response. EXPECT: chronological.\n9. ASK: \"junct and join mean join. Which word names where two roads meet?\" 3 sec, choral response. EXPECT: junction.\n10. ASK: \"Which word means an animal that eats only plants?\" 3 sec, choral response. EXPECT: herbivore.\n11. ASK: \"-ule means small. Which word names a tiny piece of a substance?\" 3 sec, choral response. EXPECT: molecule.\n12. ASK: \"Which word means you have no choice about it?\" 3 sec, choral response. EXPECT: mandatory."
+      },
+      "sound_bank": [
+        {
+          "morph": "mand/mend",
+          "type": "root"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "chron",
+          "type": "root"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "vore",
+          "type": "root"
+        },
+        {
+          "morph": "capt/capit",
+          "type": "root"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ity",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "command",
+          "sentence": "One clear command from the coach and the whole field stopped.",
+          "prompt": "mand means order. Who is able to give a command?",
+          "answer": "Somebody who has to be obeyed. com means together, so it pulls everyone into line at once."
+        },
+        {
+          "word": "commend",
+          "sentence": "I want to commend everyone who stayed back to pack up the hall.",
+          "prompt": "mend means entrust. What are you entrusting someone with when you commend them?",
+          "answer": "Your good words. To commend is to hand over praise in front of other people."
+        },
+        {
+          "word": "demand",
+          "sentence": "The coach made one clear demand before the grand final.",
+          "prompt": "How is a demand different from a request?",
+          "answer": "A demand is an order pushed down hard. The de part means down, so there is no choice."
+        },
+        {
+          "word": "judgement",
+          "sentence": "The judgement in our art competition took a whole hour.",
+          "prompt": "jud means right or law. What is being decided in a judgement?",
+          "answer": "Which entry is best. The judges weigh them all and then decide."
+        },
+        {
+          "word": "injustice",
+          "sentence": "The team felt a real injustice when their goal was ruled out.",
+          "prompt": "just means right. Which taught ending turns it into a state?",
+          "answer": "The -ice ending, the same one in service. Injustice is the state of things not being right."
+        },
+        {
+          "word": "adjudicate",
+          "sentence": "Two teachers will adjudicate the debate on Friday afternoon.",
+          "prompt": "jud means law or right. What is the job of someone who adjudicates?",
+          "answer": "To listen to both sides and decide which one is right."
+        },
+        {
+          "word": "conviction",
+          "sentence": "The jury reached a conviction after two long days.",
+          "prompt": "vict means conquer. Who has been conquered in a conviction?",
+          "answer": "The person on trial. The evidence beat their case, so the court found them guilty."
+        },
+        {
+          "word": "chronology",
+          "sentence": "Our timeline showed the chronology of the Victorian gold rush.",
+          "prompt": "chron means time. What decides the order in a chronology?",
+          "answer": "When things happened. First to last, never most important first."
+        },
+        {
+          "word": "carnivorous",
+          "sentence": "The Venus flytrap on the science bench is a carnivorous plant.",
+          "prompt": "Which two roots are stacked inside carnivorous?",
+          "answer": "carn for flesh and vore for eating. A carnivorous plant eats meat."
+        },
+        {
+          "word": "captivity",
+          "sentence": "The sanctuary says this koala was born in captivity.",
+          "prompt": "capt means hold. What is holding the koala here?",
+          "answer": "The sanctuary. Captivity is the state of being held, so it was never in the wild."
+        }
+      ],
+      "new_morphology": {
+        "morph": "pend/pens",
+        "type": "root",
+        "keyword": "appendage",
+        "meaning": "hang; pay"
+      },
+      "words_to_read_new": [
+        {
+          "word": "depend",
+          "meaning": "de means down + pend means hang: it hangs down from something else"
+        },
+        {
+          "word": "pendant",
+          "meaning": "pend means hang + -ant means a thing: the thing that hangs on a chain"
+        },
+        {
+          "word": "pendulum",
+          "meaning": "pend means hang + -ulum means the thing: the hanging thing that swings"
+        },
+        {
+          "word": "suspend",
+          "meaning": "sus means under + pend means hang: to hang something underneath"
+        },
+        {
+          "word": "suspense",
+          "meaning": "sus means under + pens means hang: left hanging, still waiting to know"
+        },
+        {
+          "word": "appendix",
+          "meaning": "ap means onto + pend means hang: the part that hangs onto the end"
+        },
+        {
+          "word": "append",
+          "meaning": "ap means onto + pend means hang: to hang it onto the end, to add it on"
+        },
+        {
+          "word": "independence",
+          "meaning": "in means not + de means down + pend means hang + -ence means the state of: not hanging on anyone"
+        },
+        {
+          "word": "expensive",
+          "meaning": "ex means out + pens means pay + -ive means relating to: relating to paying a lot out"
+        },
+        {
+          "word": "dispense",
+          "meaning": "dis means apart + pens means pay: to pay out or hand out, one to each person"
+        },
+        {
+          "word": "compensate",
+          "meaning": "com means together + pens means pay + -ate means to do: to pay someone back to make it even"
+        },
+        {
+          "word": "expend",
+          "meaning": "ex means out + pend means pay: to pay it out, to spend it"
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Okay, learn pend and pens once and a whole family of words about hanging, waiting and paying opens up for you.\"\nREAD each word as it appears, then connect pend or pens to the card meaning: hang, pay.\ndepend - de means down + pend means hang: it hangs down from something else. You cannot stand without it.\npendant - pend means hang + -ant means a thing: the thing that hangs on a chain.\npendulum - pend means hang + -ulum means the thing: the hanging thing that swings inside a clock.\nsuspend - sus means under + pend means hang: to hang something underneath. You can suspend a decision too.\nsuspense - sus means under + pens means hang: left hanging underneath, still waiting to know.\nappendix - ap means onto + pend means hang: the part that hangs onto the end of a body or a book.\nappend - ap means onto + pend means hang: to hang something onto the end. To add it on.\nindependence - in means not + de means down + pend means hang + -ence means the state of: the state of not hanging down on anyone.\nexpensive - ex means out + pens means pay + -ive means relating to: relating to paying a lot out.\ndispense - dis means apart + pens means pay: to pay out or hand out, one to each person.\ncompensate - com means together + pens means pay + -ate means to do: to pay someone back so it is even again.\nexpend - ex means out + pend means pay: to pay it out. To spend it.\nMemory hook: a pendant hangs from a neck, a pendulum hangs from a clock. Picture both hanging, then swinging. Challenge: catch three pend or pens words on a shop receipt this week.",
+      "words_to_spell_new": [
+        "depend",
+        "pendant",
+        "suspend",
+        "expensive"
+      ],
+      "extension": "1. SAY: \"Okay, when you finish, write one sentence that uses two pend or pens words and shows what they mean.\"\n2. CHECK: the sentence must show the hanging or the paying, not just use the word.\nEXTENSION: Build the longest real pend or pens word you can, then write its full morpheme sum naming every part.\nA morpheme sum names every part of the word and what each part means.\nAnswer: e.g. independence = in (not) + de (down) + pend (hang) + -ence (the state of).",
+      "new_morph_activity": {
+        "title": "Meaning sums for pend and pens",
+        "rule": "pend and pens mean hang or pay. Write the real word for each meaning.",
+        "example": "One done for you:\nto hang something underneath = suspend\nWord bank: append  depend  expensive  pendant",
+        "items": [
+          "1. a thing that hangs on a chain = ?    2. to hang on the end = ?",
+          "3. costing a lot to pay for = ?    4. to hang down from = ?"
+        ],
+        "item_size": 16,
+        "routine": "Whiteboards - 3 min - boards up",
+        "footer": "Which one is about paying, not hanging?",
+        "notes": "ANSWER: 1 pendant, 2 append, 3 expensive, 4 depend.\n1. SAY: \"Okay, look at the finished one first. Suspend means to hang something underneath.\"\n2. SAY: \"Now choose the right word from the bank for each meaning. Three minutes, then boards up on my cue.\"\n3. CIRCULATE: to a stuck student say, \"a pendant is the bit that hangs off a necklace - which meaning is that?\" Then do number one together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number four together, then re-ask.\nTRAP: writing pendulum for number one. Fix: say a pendulum hangs in a clock, not on a chain, student rewrites pendant.\nEXTENSION: Write the full morpheme sum for expensive, then build one more pens word that is about paying.\nHELP: Cover two bank words at a time so each meaning has only two choices left.\n---\nPurpose: day one turns the card meanings hang and pay into real words. [You Do | Meaning sums | Morphology]\nANSWERS:\n1. a thing that hangs on a chain = pendant\n2. to hang on the end = append\n3. costing a lot to pay for = expensive\n4. to hang down from = depend\nEXTENSION: expensive = ex (out) + pens (pay) + -ive (relating to). One more: dispense, expense or compensate.",
+        "check_title": "Tick it or fix it - meaning sums for pend",
+        "check_rule": "Tick each correct word. Fix any word that does not match.",
+        "check_items": [
+          "1. pendant = pend (hang) + -ant (a thing): hangs on a chain",
+          "2. append = ap (onto) + pend (hang): hang it on the end",
+          "3. expensive = ex (out) + pens (pay) + -ive: costs a lot",
+          "4. depend = de (down) + pend (hang): it hangs down from"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Every answer hides pend or pens",
+        "check_notes": "ANSWER: 1 pendant, 2 append, 3 expensive, 4 depend.\n1. MODEL: \"Number one says a thing that hangs on a chain. Hang is pend, and -ant means a thing, so it is pendant.\"\n2. SAY: \"Now tick each word that matches. Fix any word that is different.\"\n3. ASK: \"Which one of these four is about money, not hanging?\" 10 sec, turn and tell. EXPECT: expensive.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number three together, then re-check.\nTRAP: ticking a word that is spelled wrong. Fix: read the green word chunk by chunk, then rewrite it.\nEXTENSION: Predict what expenditure means before we meet it tomorrow.\nHELP: Find pend or pens inside the green word first, then read the rest.\n---\nPurpose: protected reveal so every student hears how each pend word is built. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "vacuum",
+            "unfair": "uu",
+            "notes": "Why learned: uu is the unfair chunk, and it says /yoo-uh/ rather than one clean sound.\nSay it: VAK-yoom, two beats. Write vac - uum, then check you wrote two u letters.\nQuick link: space is a vacuum because there is no air in it, so nothing carries sound."
+          },
+          {
+            "word": "gauge",
+            "unfair": "au",
+            "notes": "Why learned: au says a long /ay/ here, not the /or/ of caught.\nSay it: GAYJ, one beat. Write g - au - ge, then read it back and check the u.\nQuick link: broad gauge and narrow gauge are the two rail widths Australia still argues about."
+          }
+        ],
+        "new": {
+          "word": "salmon",
+          "unfair": "l",
+          "notes": "Why learned: the l is completely silent, so the word sounds like sam-on but keeps a letter you never hear.\nSay it: SAM-uhn, two beats. Write sal - mon in two chunks and leave the l in.\nLink: salmon swim upriver to spawn, so the word turns up in every food chain and river unit.\nYou will write this word in your food chain and water reports this term."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Every species near the old iron bridge needs clean running water.",
+          "targets": [
+            "species",
+            "iron"
+          ],
+          "cups": {
+            "capitals": [
+              "Every"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "revision from two and three weeks ago: the red words species and iron"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Although the hungry leopard is a carnivore, its stomach stayed completely empty all week.",
+          "targets": [
+            "leopard",
+            "carnivore",
+            "stomach"
+          ],
+          "cups": {
+            "capitals": [
+              "Although"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the although part that cannot stand alone - the comma shows where it ends)",
+              "full stop"
+            ]
+          },
+          "focus": "revision from two and three weeks ago: carn, and the red words leopard and stomach"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Turn an action word into a thing word so the idea, not the person, runs the sentence.\nWHY THIS WEEK: students write we did this, then we did that in every science report, and the report never sounds like science.\nROUTINE: all grammar this week is written in the OG book. No boards and no scoring - books, thumbs and voices only.\nPREP: nominalising means making a noun. The noun-maker endings -ence, -ance, -cy and -ice are already on their cards.",
+        "i_do": {
+          "title": "Action word to thing word",
+          "rule": "Nominalising turns an action word into a thing word.",
+          "example": "We depend on the creek.\nOur dependence on the creek is total.",
+          "items": [
+            "Noun-makers you already know: -ence  -ance  -cy  -ice",
+            "The action stays. The person disappears."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Tomorrow: who vanished from the sentence?",
+          "notes": "ANSWER: depend becomes dependence, and the sentence is now about the idea, not about us.\n1. SAY: \"Okay, here is the move that makes a science report sound like science. Watch what happens to the word depend.\"\n2. WRITE: copy \"We depend on the creek.\" onto the class board. POINT at depend and say it is an action word.\n3. WRITE: underneath, write \"Our dependence on the creek is total.\" POINT at dependence and say the action has become a thing you can talk about.\n4. SAY: \"Now notice who is missing. We has gone, and the sentence is about the dependence instead of about us.\"\nTRAP: thinking the meaning changed. Fix: read both sentences aloud, agree the fact is the same, student says which one names the idea.\nCLARIFY: if a student asks which ending to use, say your ear picks it - try -ence, -ance, -cy and -ice, and keep the one that sounds like a real word.\n---\nPurpose: day one shows the verb-to-noun move and names four endings students already hold. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: a nominalisation is a noun built from a verb or adjective, and it can then be the subject of the sentence."
+        },
+        "we_do": {
+          "title": "Build the thing word",
+          "rule": "Say the thing word that each action word turns into.",
+          "example": "depend -> ?\nresist -> ?",
+          "items": [
+            "Noun-makers: -ence  -ance  -cy  -ice",
+            "Say the whole word, not just the ending."
+          ],
+          "routine": "Everyone, together, on three",
+          "footer": "Stem: The thing word for depend is ...",
+          "notes": "ANSWER: dependence and resistance.\n1. SAY: \"Okay, now it is your turn out loud. I say the action word, you say the thing word.\"\n2. ASK: \"What is the thing word for depend?\" 10 sec, everyone together on three. EXPECT: dependence.\n3. ASK: \"What is the thing word for resist?\" 10 sec, everyone together on three. EXPECT: resistance. Then cold call one student to name the ending they used.\n4. SCAN the room for voices. 80%+ -> move on. Less -> say both thing words together twice, then re-ask.\nTRAP: adding -ing and saying depending. Fix: say depending is still an action, ask for the word that can follow the, student re-answers.\nCLARIFY: if a student offers dependency, say yes, both are real nouns, and dependence is the one we will use this week.\n---\nPurpose: guided oral practice so every student builds a nominalisation before writing one. [We Do | Guided practice | Grammar | HITS 7]\nPREP: -ance and -ence sound identical in speech, so the spelling is the part students will need on paper."
+        },
+        "you_do": {
+          "title": "Write the thing word",
+          "rule": "Your turn: write the thing word for each one in your OG book.",
+          "example": "One done for you:\ndepend -> dependence\nWord bank: -ence  -ance  -cy  -ice",
+          "items": [
+            "A) resist = ?    B) confident = ?",
+            "C) urgent = ?    D) just = ?"
+          ],
+          "item_size": 17,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: can you put the in front of it?",
+          "notes": "ANSWER: A resistance, B confidence, C urgency, D justice.\n1. SAY: \"Okay, look at the finished one first. Depend became dependence, and now it names a thing.\"\n2. SAY: \"Write A, B, C and D down the page, then write the thing word beside each. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"put the word the in front of your answer - the resistance works, the resist does not.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> build C together on the board, then re-check.\nTRAP: writing resisting for A. Fix: say resisting is still an action, student writes the word that can follow the.\nEXTENSION: Nominalise accurate and different, then write what had to change in the base word before the ending would fit.\nHELP: Give the four answers out of order; students match each answer to A, B, C or D and then say why.\n---\nPurpose: independent practice of the verb-to-noun move using taught endings. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) resist = resistance\nB) confident = confidence\nC) urgent = urgency\nD) just = justice\nEXTENSION: accurate = accuracy, drop the -ate before adding -acy. different = difference, drop the -ent before adding -ence.",
+          "check_title": "Tick it or fix it - write the thing word",
+          "check_rule": "Tick each correct thing word. Fix any that does not match.",
+          "check_items": [
+            "A) resist = resistance, the -ance ending",
+            "B) confident = confidence, the -ence ending",
+            "C) urgent = urgency, the -cy ending",
+            "D) just = justice, the -ice ending"
+          ],
+          "check_item_size": 20,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: put the in front of it.",
+          "check_notes": "ANSWER: A resistance, B confidence, C urgency, D justice.\n1. MODEL: \"For A I asked what I could put the in front of. The resistance works, so resistance is the thing word.\"\n2. SAY: \"Now tick each thing word that matches. Fix any that is different.\"\n3. ASK: \"Which two of these endings sound exactly the same when you say them?\" 10 sec, turn and tell. EXPECT: -ance and -ence.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild B together, then re-check.\n5. SAY: \"In your science report today, find one we did sentence and turn it into a thing word sentence.\"\nTRAP: ticking a word that is spelled wrong. Fix: read the green word ending by ending, then rewrite it.\n---\nPurpose: protected reveal that models the the-test and sends the move into their own writing. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Tuesday",
+      "type": "review",
+      "morphology_review": [
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time"
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root",
+          "keyword": "appendage",
+          "meaning": "hang; pay"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house",
+          "extra_task": {
+            "prompt": "Give me one word built from eco, meaning house.",
+            "answers": [
+              "ecosystem",
+              "ecology",
+              "economy",
+              "ecotourism"
+            ]
+          }
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer"
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust",
+          "extra_task": {
+            "prompt": "Give me one word built from mand or mend, meaning order or entrust.",
+            "answers": [
+              "command",
+              "demand",
+              "mandate",
+              "commend"
+            ]
+          }
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint",
+          "extra_task": {
+            "prompt": "Give me one word built from pict, meaning paint.",
+            "answers": [
+              "picture",
+              "depict",
+              "pictograph",
+              "pictorial"
+            ]
+          }
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "prejudice",
+          "depend",
+          "chronicler",
+          "megaphone",
+          "justified",
+          "disjointed",
+          "victor",
+          "countermand",
+          "microbe",
+          "pendulum",
+          "invincible",
+          "commanding",
+          "ecotourism",
+          "juror",
+          "commandment"
+        ],
+        "notes": "1. READ: \"Okay, summer birthdays, read row 1.\"\n2. READ: \"Autumn birthdays, read row 2.\"\n3. READ: \"Winter birthdays, read row 3.\"\n4. READ: \"Spring birthdays, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"pend and pens mean hang or pay. Which two words carry them?\" 5 sec, choral response. EXPECT: depend, pendulum.\n7. ASK: \"mand and mend mean order or entrust. Which three words carry them?\" 5 sec, turn and tell. EXPECT: countermand, commanding, commandment.\n8. ASK: \"jur, jud and just mean right or law. Which three words carry them?\" 5 sec, choral response. EXPECT: prejudice, justified, juror.\n9. ASK: \"Which word names a person who writes events down in time order?\" 3 sec, choral response. EXPECT: chronicler.\n10. ASK: \"Which word means the winner?\" 3 sec, choral response. EXPECT: victor.\n11. ASK: \"Which word means too tiny to see without a microscope?\" 3 sec, choral response. EXPECT: microbe.\n12. ASK: \"Make pendulum plural.\" 3 sec, choral response. EXPECT: pendulums."
+      },
+      "sound_bank": [
+        {
+          "morph": "mand/mend",
+          "type": "root"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root"
+        },
+        {
+          "morph": "chron",
+          "type": "root"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "eco",
+          "type": "root"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root"
+        },
+        {
+          "morph": "syn-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ive",
+          "type": "suffix"
+        },
+        {
+          "morph": "-cial",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "append",
+          "sentence": "Please append your name to the bottom of the excursion list.",
+          "prompt": "pend means hang. Where does an appended name hang?",
+          "answer": "On the end. To append is to hang something onto what is already there."
+        },
+        {
+          "word": "expensive",
+          "sentence": "New football boots turned out to be very expensive.",
+          "prompt": "pens means pay. Which taught ending tells you the word describes something?",
+          "answer": "The -ive ending, the same one in active. Expensive describes something that takes a lot of paying."
+        },
+        {
+          "word": "commendation",
+          "sentence": "Ana received a commendation at assembly for helping the preps.",
+          "prompt": "mend means entrust. What was Ana entrusted with?",
+          "answer": "Public praise. A commendation hands it over in front of everybody."
+        },
+        {
+          "word": "mandate",
+          "sentence": "The school council has a mandate to spend the fete money.",
+          "prompt": "mand means order. Who gives a mandate?",
+          "answer": "The people who chose you. A mandate is their order telling you to get the job done."
+        },
+        {
+          "word": "judiciary",
+          "sentence": "The judiciary is the part of government that runs the courts.",
+          "prompt": "jud means law. What does the judiciary look after?",
+          "answer": "The courts and the judges. It is the part of government that applies the law."
+        },
+        {
+          "word": "prejudicial",
+          "sentence": "Judging the entries by school name would be prejudicial.",
+          "prompt": "jud means judge. Which taught ending turns it into a describing word?",
+          "answer": "The -cial ending, the same one in special. Prejudicial describes something judged unfairly in advance."
+        },
+        {
+          "word": "synchronise",
+          "sentence": "The whole class had to synchronise their claps for the assembly item.",
+          "prompt": "syn means together. What is being brought together here?",
+          "answer": "The timing. syn plus chron makes every clap land on the same beat."
+        },
+        {
+          "word": "evicted",
+          "sentence": "Noisy mynas evicted the smaller birds from our nesting box.",
+          "prompt": "vict means conquer. Who won here?",
+          "answer": "The mynas. To evict is to conquer a space and force the others out."
+        },
+        {
+          "word": "ecological",
+          "sentence": "Our creek clean-up had a real ecological benefit.",
+          "prompt": "eco means house. Whose house does an ecological benefit help?",
+          "answer": "The home that all the creek plants and animals share."
+        },
+        {
+          "word": "pictograph",
+          "sentence": "Rock walls out near Mildura still show a clear pictograph.",
+          "prompt": "pict means paint. What does a pictograph do instead of using letters?",
+          "answer": "It paints the meaning. The picture carries the message on its own."
+        }
+      ],
+      "new_morphology": {
+        "morph": "pend/pens",
+        "type": "root",
+        "keyword": "appendage",
+        "meaning": "hang; pay"
+      },
+      "words_to_read_new": [
+        {
+          "word": "appendage",
+          "meaning": "ap means onto + pend means hang + -age means the thing: the thing that hangs onto a body"
+        },
+        {
+          "word": "expense",
+          "meaning": "ex means out + pens means pay: the paying that goes out, what it costs you"
+        },
+        {
+          "word": "suspension",
+          "meaning": "sus means under + pens means hang + -ion means the act of: the act of hanging it up"
+        },
+        {
+          "word": "expenditure",
+          "meaning": "ex means out + pend means pay + -iture means the thing: the thing you have paid out"
+        },
+        {
+          "word": "dispensable",
+          "meaning": "dis means apart + pens means pay + -able means able to be: able to be given away"
+        },
+        {
+          "word": "impend",
+          "meaning": "im means over + pend means hang: to hang over you, so it has not happened yet"
+        },
+        {
+          "word": "propensity",
+          "meaning": "pro means forward + pens means hang + -ity means the state of: leaning forward towards something"
+        },
+        {
+          "word": "pendant",
+          "meaning": "pend means hang + -ant means a thing: the thing that hangs on a chain"
+        },
+        {
+          "word": "suspense",
+          "meaning": "sus means under + pens means hang: left hanging, still waiting to know"
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Okay, same two spellings as yesterday, pend and pens, and today the words get longer.\"\nREAD each word as it appears, then connect pend or pens to the card meaning: hang, pay.\nappendage - ap means onto + pend means hang + -age means the thing: the thing that hangs onto a body. An arm is one.\nexpense - ex means out + pens means pay: the paying that goes out. It is what something costs you.\nsuspension - sus means under + pens means hang + -ion means the act of: the act of hanging something up.\nexpenditure - ex means out + pend means pay + -iture means the thing: the thing you have paid out. Your spending.\ndispensable - dis means apart + pens means pay + -able means able to be: able to be given away, so you can do without it.\nimpend - im means over + pend means hang: to hang over you. An impending storm has not hit yet.\npropensity - pro means forward + pens means hang + -ity means the state of: the state of leaning forward towards something.\npendant - pend means hang + -ant means a thing: the thing that hangs on a chain.\nsuspense - sus means under + pens means hang: left hanging underneath, still waiting to know.\nMemory hook: a pendant hangs from a neck, a pendulum hangs from a clock. Picture both hanging, then swinging. Challenge: catch three pend or pens words on a shop receipt this week.",
+      "words_to_spell_new": [
+        "appendage",
+        "expense",
+        "suspension",
+        "dispensable"
+      ],
+      "extension": "1. SAY: \"Okay, when you finish, find an antonym for expense and write it beside the word.\"\n2. CHECK: the antonym must be a real word, not just expense with not in front of it.\nEXTENSION: Take an unseen pens word, dispenser, and predict its meaning from the parts alone, then check it.\nAn unseen word is one we have not read together, and the parts still tell you what it means.\nAnswer: dis (apart) + pens (hand out) + -er (the thing that does it) = the machine that hands things out one at a time.",
+      "new_morph_activity": {
+        "title": "Hang or pay?",
+        "rule": "Write H if the word is about hanging. Write P if it is about paying.",
+        "example": "One done for you:\nsuspension = H, the bridge hangs",
+        "items": [
+          "1. expenditure = ?    2. appendage = ?",
+          "3. impend = ?    4. expense = ?"
+        ],
+        "item_size": 17,
+        "routine": "OG books - 3 min - books up",
+        "footer": "Two hang. Two pay. Which is which?",
+        "notes": "ANSWER: 1 P, 2 H, 3 H, 4 P.\n1. SAY: \"Okay, the card gives pend and pens two jobs - hanging and paying. Your job is to hear which one is working.\"\n2. SAY: \"Copy each word into your book and write H or P beside it. Three minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"ask yourself whether money is involved - if no money is anywhere near it, it is hanging.\" Then do number one together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> work number three together, then re-check.\nTRAP: writing P for appendage because it is a long word. Fix: say an appendage is an arm, no money anywhere, student changes it to H.\nEXTENSION: Write one sentence for expenditure and one for appendage that makes the H or the P obvious to a reader.\nHELP: Give the two headings Hanging and Paying; students write each word under a heading before labelling it.\n---\nPurpose: day two separates the two jobs one card does, which is where pend words get confused. [You Do | Sense sort | Morphology]\nANSWERS:\n1. expenditure = P\n2. appendage = H\n3. impend = H\n4. expense = P\nEXTENSION: e.g. The expenditure on new nets used our whole budget. A koala uses every appendage to climb.",
+        "check_title": "Tick it or fix it - hang or pay",
+        "check_rule": "Tick each correct letter. Fix any letter that does not match.",
+        "check_items": [
+          "1. expenditure = P, it is money paid out",
+          "2. appendage = H, an arm hangs off the body",
+          "3. impend = H, a storm hangs over you",
+          "4. expense = P, it is what you pay"
+        ],
+        "check_item_size": 20,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "One card, two jobs",
+        "check_notes": "ANSWER: 1 P, 2 H, 3 H, 4 P.\n1. MODEL: \"For number one I asked whether money was involved. Expenditure is money paid out, so it is P.\"\n2. SAY: \"Now tick each letter that matches. Fix any letter that is different.\"\n3. ASK: \"Which of these four would change from H to P if you added a price to it?\" 10 sec, turn and tell. EXPECT: impend, if what is hanging over you is a bill.\n4. SCAN corrections. 80%+ -> continue. Less -> rework number three together, then re-check.\nTRAP: ticking H for expense because it looks like expenditure. Fix: read both aloud, student names the money in each one.\nEXTENSION: Find one more pens word for each letter before we start the next section.\nHELP: Read the green reason first, then decide whether the letter beside it fits.\n---\nPurpose: protected reveal that names the reason behind every H and P. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "salmon",
+            "unfair": "l",
+            "notes": "Why learned: the l is completely silent, so the word sounds like sam-on but keeps a letter you never hear.\nSay it: SAM-uhn, two beats. Write sal - mon in two chunks and leave the l in.\nQuick link: salmon swim upriver to spawn, so it turns up in every food chain and river unit."
+          },
+          {
+            "word": "vacuum",
+            "unfair": "uu",
+            "notes": "Why learned: uu is the unfair chunk, and it says /yoo-uh/ rather than one clean sound.\nSay it: VAK-yoom, two beats. Write vac - uum, then check you wrote two u letters.\nQuick link: space is a vacuum because there is no air in it, so nothing carries sound."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Mia kept a chronicle of every bird she saw at the junction.",
+          "targets": [
+            "chronicle",
+            "junction"
+          ],
+          "cups": {
+            "capitals": [
+              "Mia"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "revision from two and three weeks ago: chron and junct"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "When the ranger arrived, she had to convince us that every herbivore suits this ecosystem.",
+          "targets": [
+            "convince",
+            "herbivore",
+            "ecosystem"
+          ],
+          "cups": {
+            "capitals": [
+              "When"
+            ],
+            "punctuation": [
+              "comma after the opening subordinate clause (the when part that cannot stand alone - the comma shows where it ends)",
+              "full stop"
+            ]
+          },
+          "focus": "revision from two, three and four weeks ago: vinc, vore and eco"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Use the thing word to take the person out, so the writing sounds objective.\nWHY THIS WEEK: students write we did this, then we did that in every science report, and the report never sounds like science.\nROUTINE: all grammar this week is written in the OG book. No boards and no scoring - books, thumbs and voices only.\nPREP: an impersonal tone means the writer is not in the sentence; the thing word does the work the pronoun used to do.",
+        "i_do": {
+          "title": "Take the person out",
+          "rule": "Nominalise, and the person doing it disappears.",
+          "example": "We resisted the new rule.\nResistance to the rule grew.",
+          "items": [
+            "Who is missing from the second sentence?",
+            "No we. No I. The idea takes over."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Tomorrow: two sentences into one",
+          "notes": "ANSWER: we has gone, and resistance is now the subject of the sentence.\n1. SAY: \"Okay, yesterday an action word became a thing word. Today you find out what that is actually for.\"\n2. WRITE: copy \"We resisted the new rule.\" onto the class board. POINT at we, then at resisted.\n3. WRITE: underneath, write \"Resistance to the rule grew.\" POINT at the empty space where we used to be and say nobody is in this sentence now.\n4. SAY: \"A report is not about you. Taking yourself out is how the finding gets to be the important part.\"\nTRAP: thinking the second sentence hides the truth. Fix: agree the fact is identical, student says which one a scientist would write.\nCLARIFY: if a student asks whether we is banned, say no - narratives want we and reports want the idea, and the writer chooses.\n---\nPurpose: day two names the job nominalising does - objectivity and an impersonal tone. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: the nominalisation becomes the subject, so no person is needed anywhere in the sentence."
+        },
+        "we_do": {
+          "title": "Which one is the report?",
+          "rule": "Thumb up for the sentence a scientist would write.",
+          "example": "A) We depend on the creek.\nB) Dependence on the creek is total.",
+          "items": [
+            "Thumb up for the report sentence.",
+            "Then find the word that replaced we."
+          ],
+          "routine": "Thumbs on three - voices off",
+          "footer": "Stem: B sounds official because ...",
+          "notes": "ANSWER: B. Dependence replaced we depend, so the idea is the subject.\n1. SAY: \"Okay, both sentences say exactly the same thing. Only one of them belongs in a report.\"\n2. TIME: 15 seconds thinking, voices off, then thumbs up for the report sentence, everyone together on three.\n3. SCAN every thumb. 80%+ -> move on. Less -> read A aloud and ask who is in it, then re-signal.\n4. ASK: \"Which word in B is doing the job that we depend did in A?\" 10 sec, turn and tell. EXPECT: dependence.\nTRAP: choosing A because it is easier to read. Fix: agree A is easier, say a report still needs the idea first, student re-signals.\nCLARIFY: if a student says B sounds unfriendly, agree - that is exactly why it belongs in a report and not in a story.\n---\nPurpose: guided judgement of when the impersonal version is the right choice. [We Do | Guided practice | Grammar | HITS 7]\nPREP: B is impersonal because the noun dependence, not a person, is the subject of the sentence."
+        },
+        "you_do": {
+          "title": "Rewrite it without the person",
+          "rule": "Your turn: rewrite each sentence so no person is in it.",
+          "example": "One done for you:\nWe resisted. -> Resistance grew.\nWord bank: -ence  -ance  -ity  -acy",
+          "items": [
+            "A) We were confident about the plan.",
+            "B) The results were very accurate."
+          ],
+          "item_size": 17,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: is any person left in it?",
+          "notes": "ANSWER: A Confidence in the plan was high. B The accuracy of the results was high.\n1. SAY: \"Okay, look at the finished one first. We resisted became Resistance grew, and we disappeared.\"\n2. SAY: \"Copy A and B, then rewrite each one with no person in it. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"start your new sentence with the thing word - the confidence, the accuracy.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> rewrite B together on the board, then re-check.\nTRAP: keeping we at the front. Fix: point at the word we, say the sentence must start with the thing word, student rewrites it.\nEXTENSION: Rewrite both answers again so the thing word is not the first word, and still keep every person out.\nHELP: Give the two thing words confidence and accuracy; students build the sentence around the word they are given.\n---\nPurpose: independent production of an impersonal sentence from a personal one. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) We were confident about the plan. = Confidence in the plan was high.\nB) The results were very accurate. = The accuracy of the results was high.\nEXTENSION: e.g. The plan was met with confidence. A high level of accuracy marked the results.",
+          "check_title": "Tick it or fix it - rewrite it without the person",
+          "check_rule": "Tick your sentence if no person is left. Fix it if one is.",
+          "check_items": [
+            "A) Confidence in the plan was high.",
+            "The thing word replaced we were confident.",
+            "B) The accuracy of the results was high.",
+            "The thing word replaced the results were accurate."
+          ],
+          "check_item_size": 18,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: hunt for we and I.",
+          "check_notes": "ANSWER: A Confidence in the plan was high. B The accuracy of the results was high.\n1. MODEL: \"In A I took we were confident, turned confident into confidence, then started the sentence with it.\"\n2. SAY: \"Now tick your sentence if no person is left in it. Fix it if one is.\"\n3. ASK: \"Which word did you have to delete to make A impersonal?\" 10 sec, turn and tell. EXPECT: we.\n4. SCAN corrections. 80%+ -> continue. Less -> rewrite B together, then re-check.\n5. SAY: \"Before you hand in your next report, hunt for every we and I and decide if the idea could take the sentence instead.\"\nTRAP: leaving our in the sentence. Fix: say our is still a person, student deletes it and reads the sentence again.\n---\nPurpose: protected reveal plus the editing routine students take into their own reports. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Wednesday",
+      "type": "new",
+      "morphology_review": [
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust"
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root",
+          "keyword": "picture",
+          "meaning": "paint"
+        },
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time",
+          "extra_task": {
+            "prompt": "Give me one word built from chron, meaning time.",
+            "answers": [
+              "chronic",
+              "chronicle",
+              "chronology",
+              "chronometer"
+            ]
+          }
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root",
+          "keyword": "appendage",
+          "meaning": "hang; pay",
+          "extra_task": {
+            "prompt": "Give me one word built from pend or pens, meaning hang or pay.",
+            "answers": [
+              "depend",
+              "suspend",
+              "pendant",
+              "expensive"
+            ]
+          }
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat",
+          "extra_task": {
+            "prompt": "Give me one word built from carn or carni, meaning flesh.",
+            "answers": [
+              "carnivore",
+              "carnation",
+              "incarnate",
+              "carnival"
+            ]
+          }
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "judgemental",
+          "victory",
+          "suspend",
+          "carnation",
+          "megalitre",
+          "jury",
+          "convict",
+          "appendix",
+          "injurious",
+          "microscope",
+          "command",
+          "chronometer",
+          "injunction",
+          "adjure",
+          "commended"
+        ],
+        "notes": "1. READ: \"Okay, if you play a team sport, read row 1.\"\n2. READ: \"If you play music or sing, read row 2.\"\n3. READ: \"If you make or build things, read row 3.\"\n4. READ: \"If you read or draw, read row 4. Pick just one row if more than one fits you.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"jur, jud and just mean right or law. Which four words carry them?\" 5 sec, turn and tell. EXPECT: judgemental, jury, injurious, adjure.\n7. ASK: \"pend and pens mean hang or pay. Which two words carry them?\" 5 sec, choral response. EXPECT: suspend, appendix.\n8. ASK: \"vict and vinc mean conquer. Which two words carry them?\" 5 sec, choral response. EXPECT: victory, convict.\n9. ASK: \"junct and join mean join. Which word names a court order that stops something?\" 3 sec, choral response. EXPECT: injunction.\n10. ASK: \"chron means time. Which word names the tool that measures it?\" 3 sec, choral response. EXPECT: chronometer.\n11. ASK: \"mega means million. Which word means a million litres?\" 3 sec, choral response. EXPECT: megalitre.\n12. ASK: \"Which word on the board means praised, not ordered?\" 3 sec, choral response. EXPECT: commended."
+      },
+      "sound_bank": [
+        {
+          "morph": "pend/pens",
+          "type": "root"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "chron",
+          "type": "root"
+        },
+        {
+          "morph": "junct/join/joint",
+          "type": "root"
+        },
+        {
+          "morph": "pict/picto",
+          "type": "root"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix"
+        },
+        {
+          "morph": "-ity",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "dispense",
+          "sentence": "The office will dispense sunscreen before every summer sport session.",
+          "prompt": "pens means pay or hand out. What is being handed out here?",
+          "answer": "Sunscreen, one lot each. dis means apart, so it goes out to separate people."
+        },
+        {
+          "word": "suspension",
+          "sentence": "That bridge over the river is held up by one huge suspension cable.",
+          "prompt": "pens means hang. What is the cable doing to the bridge?",
+          "answer": "Hanging it. A suspension holds something up from above instead of underneath."
+        },
+        {
+          "word": "mandatory",
+          "sentence": "Wearing a hat is mandatory for everyone in Term 4.",
+          "prompt": "mand means order. What does mandatory tell you about your choices?",
+          "answer": "You have none. It is an order, so the hat goes on."
+        },
+        {
+          "word": "prejudge",
+          "sentence": "Try not to prejudge the story before you have heard both sides.",
+          "prompt": "pre means before. Which part of prejudge tells you a decision was made?",
+          "answer": "The judge part. To prejudge is to decide before you have any of the facts."
+        },
+        {
+          "word": "justice",
+          "sentence": "The class agreed that sharing the ball was simple justice.",
+          "prompt": "just means right. Which taught ending turns it into a state?",
+          "answer": "The -ice ending, the same one in service. Justice is the state of things being right."
+        },
+        {
+          "word": "jurisdiction",
+          "sentence": "That footpath is outside our school's jurisdiction.",
+          "prompt": "jur means law. What does a jurisdiction mark out?",
+          "answer": "The area where your rules actually apply. Outside it, somebody else decides."
+        },
+        {
+          "word": "invincibility",
+          "sentence": "Six wins in a row gave the squad a real feeling of invincibility.",
+          "prompt": "vinc means conquer. What does the -ity ending do to the word?",
+          "answer": "It turns it into a state you can feel. Invincibility is the state of not being beatable."
+        },
+        {
+          "word": "chronologist",
+          "sentence": "Our museum guide works as a chronologist for the goldfields collection.",
+          "prompt": "chron means time. What does a chronologist sort out?",
+          "answer": "What happened first, second and third. They put the past back into time order."
+        },
+        {
+          "word": "conjunction",
+          "sentence": "The word because is a conjunction that joins two ideas.",
+          "prompt": "junct means join. What does this conjunction join?",
+          "answer": "Two ideas inside one sentence, which is the joining job you did in grammar last week."
+        },
+        {
+          "word": "depiction",
+          "sentence": "The new mural gives a bright depiction of the river at sunset.",
+          "prompt": "pict means paint. What has the mural painted?",
+          "answer": "The river at sunset. A depiction shows you the scene instead of describing it."
+        }
+      ],
+      "new_morphology": {
+        "morph": "pon/pound",
+        "type": "root",
+        "keyword": "ponder",
+        "meaning": "place, part"
+      },
+      "words_to_read_new": [
+        {
+          "word": "ponder",
+          "meaning": "pon is the root on its own, place: to place a question in your mind and weigh it"
+        },
+        {
+          "word": "ponderous",
+          "meaning": "pon means place + -ous means full of: full of the weight you place on it, heavy and slow"
+        },
+        {
+          "word": "exponent",
+          "meaning": "ex means out + pon means place + -ent means one who: the one who places the idea out"
+        },
+        {
+          "word": "proponent",
+          "meaning": "pro means for + pon means place + -ent means one who: the one who places themselves for an idea"
+        },
+        {
+          "word": "opponent",
+          "meaning": "op means against + pon means place + -ent means one who: the one placed against you"
+        },
+        {
+          "word": "exponential",
+          "meaning": "ex means out + pon means place + -ial means relating to: relating to the number placed out above"
+        },
+        {
+          "word": "component",
+          "meaning": "com means together + pon means part: a part placed together with other parts"
+        },
+        {
+          "word": "compound",
+          "meaning": "com means together + pound means place: two or more things placed together as one"
+        },
+        {
+          "word": "expound",
+          "meaning": "ex means out + pound means place: to place your ideas out in full, so you explain them"
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Okay, learn pon and pound once and a whole family of maths, science and argument words opens up for you.\"\nREAD each word as it appears, then connect pon or pound to the card meaning: place, part.\nponder - pon is the root on its own, place: to place a question in your mind and turn it over.\nponderous - pon means place + -ous means full of: full of the weight you place on it. Heavy and slow to move.\nexponent - ex means out + pon means place + -ent means one who: the one who places the idea out for everyone.\nproponent - pro means for + pon means place + -ent means one who: the one who places themselves for an idea.\nopponent - op means against + pon means place + -ent means one who: the one placed right against you.\nexponential - ex means out + pon means place + -ial means relating to: relating to the small number placed out above. It grows fast.\ncomponent - com means together + pon means part: a part placed together with other parts to make the whole.\ncompound - com means together + pound means place: two or more things placed together as one.\nexpound - ex means out + pound means place: to place your ideas out in full, so you explain the whole thing.\nMemory hook: picture an opponent standing in your way, placed against you, then bike components laid out on the floor, each part in its place. Challenge: find three pon or pound words in a maths page this week.",
+      "words_to_spell_new": [
+        "ponder",
+        "opponent",
+        "component",
+        "compound"
+      ],
+      "extension": "1. SAY: \"Okay, when you finish, turn one of your words into a question you could ask a partner.\"\n2. CHECK: the question must use the word correctly, not just squeeze it in somewhere.\nEXTENSION: Write one sentence that uses component and compound together and shows the difference between a part and a whole.\nA component is one piece; a compound is the whole thing those pieces make.\nAnswer: e.g. Every component of the bike stays separate until you bolt them into one compound frame.",
+      "new_morph_activity": {
+        "title": "What each pon word means",
+        "rule": "pon and pound mean place or part. Write what each word means.",
+        "example": "One done for you:\nopponent = one placed against you",
+        "items": [
+          "1. component (com = together) = ?    2. expound (ex = out) = ?",
+          "3. proponent (pro = for) = ?    4. compound (com = together) = ?"
+        ],
+        "item_size": 16,
+        "routine": "Whiteboards - 3 min - boards up",
+        "footer": "Which one is a part, not the whole?",
+        "notes": "ANSWER: 1 a part placed with others, 2 to place ideas out in full, 3 one who places themselves for an idea, 4 things placed together.\n1. SAY: \"Okay, look at the finished one first. Op means against, so an opponent is one placed against you.\"\n2. SAY: \"The front part of each word is printed for you. Use it plus place or part, and write the meaning on your board.\"\n3. CIRCULATE: to a stuck student say, \"read the printed meaning out loud, then say the word place straight after it.\" Then do number one together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number two together, then re-ask.\nTRAP: writing a whole sentence instead of a meaning. Fix: say we only need the meaning, student cuts it back to one phrase.\nEXTENSION: Write the meaning of exponential using the words place and out, then say where you have seen it in maths.\nHELP: Give the four meanings out of order; students match a meaning to each word before writing it out.\n---\nPurpose: day one turns each printed prefix plus the new root into a meaning students can say. [You Do | Literal meanings | Morphology]\nANSWERS:\n1. component = a part placed together with other parts\n2. expound = to place your ideas out in full\n3. proponent = one who places themselves for an idea\n4. compound = two or more things placed together as one\nEXTENSION: exponential = relating to the number placed out above, and it makes things grow very fast.",
+        "check_title": "Tick it or fix it - what each pon word means",
+        "check_rule": "Tick each correct meaning. Fix any meaning that does not match.",
+        "check_items": [
+          "1. component = a part placed together with others",
+          "2. expound = to place your ideas out in full",
+          "3. proponent = one who places themselves for an idea",
+          "4. compound = two things placed together as one"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Every meaning uses place or part",
+        "check_notes": "ANSWER: 1 a part placed with others, 2 to place ideas out in full, 3 one who places themselves for an idea, 4 things placed together.\n1. MODEL: \"Number one is com plus pon. Com means together and pon means part, so a component is a part placed with others.\"\n2. SAY: \"Now tick each meaning that matches. Fix any meaning that is different.\"\n3. ASK: \"Which two of these words would swap meaning if you swapped their front parts?\" 10 sec, turn and tell. EXPECT: proponent and opponent.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number three together, then re-check.\nTRAP: ticking a meaning that never says place or part. Fix: read the green line, student underlines the word place or part in their own.\nEXTENSION: Predict what postpone will mean before we meet it tomorrow.\nHELP: Find pon or pound inside the word first, then read the printed front part.\n---\nPurpose: protected reveal so every student hears how the printed prefix and the root combine. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "salmon",
+            "unfair": "l",
+            "notes": "Why learned: the l is completely silent, so the word sounds like sam-on but keeps a letter you never hear.\nSay it: SAM-uhn, two beats. Write sal - mon in two chunks and leave the l in.\nQuick link: salmon swim upriver to spawn, so it turns up in every food chain and river unit."
+          },
+          {
+            "word": "vacuum",
+            "unfair": "uu",
+            "notes": "Why learned: uu is the unfair chunk, and it says /yoo-uh/ rather than one clean sound.\nSay it: VAK-yoom, two beats. Write vac - uum, then check you wrote two u letters.\nQuick link: space is a vacuum because there is no air in it, so nothing carries sound."
+          }
+        ],
+        "new": {
+          "word": "yolk",
+          "unfair": "l",
+          "notes": "Why learned: the l is silent again, exactly like salmon, and the o says a long /oh/.\nSay it: YOHK, one beat. Write y - ol - k, then check the l is still sitting there.\nLink: the yolk is the yellow part that feeds a growing chick, so it belongs in every life cycle diagram.\nYou will write this word in every egg and life cycle explanation this term."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "After the close victory Dad reheated our dinner in the microwave.",
+          "targets": [
+            "victory",
+            "microwave"
+          ],
+          "cups": {
+            "capitals": [
+              "After",
+              "Dad"
+            ],
+            "punctuation": [
+              "full stop"
+            ]
+          },
+          "focus": "revision from two and four weeks ago: vict and micro"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Priya asked, \"Does this old microscope really show the ecology of a single water drop?\"",
+          "targets": [
+            "microscope",
+            "ecology"
+          ],
+          "cups": {
+            "capitals": [
+              "Priya",
+              "Does"
+            ],
+            "punctuation": [
+              "comma before the speech (it separates who said it from what they said)",
+              "opening quotation mark (speech starts here, so the first word takes a capital)",
+              "question mark (the speaker is asking, so it goes inside the speech)",
+              "closing quotation mark (the speech stops here)"
+            ]
+          },
+          "focus": "revision from three and four weeks ago: micro and eco"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Use a thing word to fold two short sentences into one, which is where variety comes from.\nWHY THIS WEEK: students write we did this, then we did that in every science report, and the report never sounds like science.\nROUTINE: all grammar this week is written in the OG book. No boards and no scoring - books, thumbs and voices only.\nPREP: the nominalisation becomes the subject, so the second sentence's verb can do the work of both.",
+        "i_do": {
+          "title": "Two sentences into one",
+          "rule": "Nominalise, and two sentences fold into one.",
+          "example": "We postponed it. Everyone groaned.\nThe postponement upset everyone.",
+          "items": [
+            "The thing word becomes the subject.",
+            "Two facts, one sentence, nothing lost."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Tomorrow: when NOT to do it",
+          "notes": "ANSWER: postponed becomes the postponement, and the two sentences become one.\n1. SAY: \"Okay, you met pon and pound today - place or part. Postpone means to place it later, and watch what its thing word can do.\"\n2. WRITE: copy \"We postponed it. Everyone groaned.\" onto the class board as two separate sentences.\n3. WRITE: underneath, write \"The postponement upset everyone.\" POINT at the two sentences above, then at the single one below.\n4. SAY: \"Nothing was lost. One thing word carried the whole first sentence, so the writing got tighter.\"\nTRAP: dropping a fact to make it shorter. Fix: check both facts survived, student adds back the one that vanished.\nCLARIFY: if a student asks whether shorter is always better, say no - it is better only when the second sentence was repeating the first.\n---\nPurpose: day three uses nominalising for variety and compression, tied to today's pon root. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: -ment is another noun-maker; students meet its card later, so name it in passing and move on."
+        },
+        "we_do": {
+          "title": "Fold them together",
+          "rule": "Say the thing word that joins the two sentences.",
+          "example": "We depended on rain. The crops died.\n? on rain killed the crops.",
+          "items": [
+            "Say the whole thing word, not the ending.",
+            "Noun-makers: -ence  -ance  -cy  -ice"
+          ],
+          "routine": "Everyone, together, on three",
+          "footer": "Stem: The two sentences join because ...",
+          "notes": "ANSWER: Dependence. Dependence on rain killed the crops.\n1. SAY: \"Okay, same move as the last slide. I need the thing word that can carry the whole first sentence.\"\n2. ASK: \"What is the thing word for depended?\" 10 sec, everyone together on three. EXPECT: dependence.\n3. SAY: \"Now hear the whole thing. Dependence on rain killed the crops. Two sentences, one idea, nothing lost.\"\n4. SCAN the room for voices. 80%+ -> move on. Less -> say the joined sentence together twice, then re-ask.\nTRAP: saying depending. Fix: say depending is still an action, ask for the word that can follow the, student re-answers.\nCLARIFY: if a student asks why we vanished, say the crops and the rain are the story now, and we were never the point.\n---\nPurpose: guided oral folding of two sentences using one nominalisation. [We Do | Guided practice | Grammar | HITS 7]\nPREP: dependence becomes the subject, so killed does the work of both original sentences."
+        },
+        "you_do": {
+          "title": "Fold each pair into one",
+          "rule": "Your turn: fold each pair into one sentence in your OG book.",
+          "example": "One done for you:\nWe resisted. The rule changed.\n-> Our resistance changed the rule.",
+          "items": [
+            "A) We were confident. We won the game.",
+            "B) The plan was urgent. It worked."
+          ],
+          "item_size": 17,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: did both facts survive?",
+          "notes": "ANSWER: A Our confidence won the game. B The urgency of the plan made it work.\n1. SAY: \"Okay, look at the finished one first. Resisted became resistance, and the two sentences became one.\"\n2. SAY: \"Copy A and B, then write one sentence for each pair. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"build the thing word first, then ask yourself what it did.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> fold B together on the board, then re-check.\nTRAP: writing two sentences joined by and. Fix: say and still leaves two sentences, ask for the thing word version, student rewrites it.\nEXTENSION: Fold both of your answers into one sentence that keeps every fact, then cut any word it does not need.\nHELP: Give the thing words confidence and urgency; students write only the second half of each sentence.\n---\nPurpose: independent compression of two sentences using a nominalisation. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) We were confident. We won the game. = Our confidence won the game.\nB) The plan was urgent. It worked. = The urgency of the plan made it work.\nEXTENSION: e.g. Our confidence and the urgency of the plan won us the game.",
+          "check_title": "Tick it or fix it - fold each pair into one",
+          "check_rule": "Tick each folded sentence. Fix any that lost a fact.",
+          "check_items": [
+            "A) Our confidence won the game.",
+            "confident became confidence, then it won.",
+            "B) The urgency of the plan made it work.",
+            "urgent became urgency, then it made it work."
+          ],
+          "check_item_size": 18,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: fold the repeat away.",
+          "check_notes": "ANSWER: A Our confidence won the game. B The urgency of the plan made it work.\n1. MODEL: \"In A I turned confident into confidence, put the in front to check it, then asked what the confidence did.\"\n2. SAY: \"Now tick each folded sentence. Fix any that lost a fact.\"\n3. ASK: \"Which fact would disappear if you wrote only Our confidence?\" 10 sec, turn and tell. EXPECT: that we won the game.\n4. SCAN corrections. 80%+ -> continue. Less -> fold B together, then re-check.\n5. SAY: \"In your next paragraph, find two short sentences about the same thing and fold them with a thing word.\"\nTRAP: ticking a sentence with a fact missing. Fix: read both original sentences, student checks each fact is still there.\n---\nPurpose: protected reveal plus the folding move for their own paragraphs. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    },
+    {
+      "day": "Thursday",
+      "type": "review",
+      "morphology_review": [
+        {
+          "morph": "junct/join/joint",
+          "type": "root",
+          "keyword": "join",
+          "meaning": "join"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root",
+          "keyword": "convict",
+          "meaning": "conquer",
+          "extra_task": {
+            "prompt": "Give me one word built from vict or vinc, meaning conquer.",
+            "answers": [
+              "victor",
+              "convict",
+              "convince",
+              "invincible"
+            ]
+          }
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root",
+          "keyword": "ponder",
+          "meaning": "place, part",
+          "extra_task": {
+            "prompt": "Give me one word built from pon or pound, meaning place or part.",
+            "answers": [
+              "ponder",
+              "opponent",
+              "component",
+              "compound"
+            ]
+          }
+        },
+        {
+          "morph": "eco",
+          "type": "root",
+          "keyword": "ecosystem",
+          "meaning": "house"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law"
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root",
+          "keyword": "appendage",
+          "meaning": "hang; pay"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "flesh, meat"
+        },
+        {
+          "morph": "chron",
+          "type": "root",
+          "keyword": "chronology",
+          "meaning": "time"
+        },
+        {
+          "morph": "vore",
+          "type": "root",
+          "keyword": "carnivore",
+          "meaning": "eating",
+          "extra_task": {
+            "prompt": "Give me one word that ends with vore, meaning eating.",
+            "answers": [
+              "carnivore",
+              "herbivore",
+              "omnivore",
+              "insectivore"
+            ]
+          }
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "chronically",
+          "compound",
+          "jurist",
+          "demanding",
+          "economy",
+          "unconvincing",
+          "expend",
+          "pictorial",
+          "misjudge",
+          "commander",
+          "exclusive",
+          "convicted",
+          "justify",
+          "rejoin",
+          "recommended"
+        ],
+        "notes": "1. READ: \"Okay, if you were born January to March, read row 1.\"\n2. READ: \"Born April to June, read row 2.\"\n3. READ: \"Born July to September, read row 3.\"\n4. READ: \"Born October to December, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"pon and pound mean place or part. Which word carries them?\" 3 sec, choral response. EXPECT: compound.\n7. ASK: \"pend and pens mean hang or pay. Which word means to pay it out?\" 3 sec, choral response. EXPECT: expend.\n8. ASK: \"jur, jud and just mean right or law. Which three words carry them?\" 5 sec, turn and tell. EXPECT: jurist, misjudge, justify.\n9. ASK: \"mand and mend mean order or entrust. Which three words carry them?\" 5 sec, choral response. EXPECT: demanding, commander, recommended.\n10. ASK: \"eco means house. Which word names the way a country runs its household?\" 3 sec, choral response. EXPECT: economy.\n11. ASK: \"Which word means shut out to everybody else?\" 3 sec, choral response. EXPECT: exclusive.\n12. ASK: \"Which word means to join again?\" 3 sec, choral response. EXPECT: rejoin."
+      },
+      "sound_bank": [
+        {
+          "morph": "pend/pens",
+          "type": "root"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root"
+        },
+        {
+          "morph": "vict/vinc",
+          "type": "root"
+        },
+        {
+          "morph": "chron",
+          "type": "root"
+        },
+        {
+          "morph": "carn/carni",
+          "type": "root"
+        },
+        {
+          "morph": "micro",
+          "type": "root"
+        },
+        {
+          "morph": "counter-",
+          "type": "prefix"
+        },
+        {
+          "morph": "-ice",
+          "type": "suffix"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "ponder",
+          "sentence": "Give yourself a minute to ponder the question before you answer it.",
+          "prompt": "pon means place. Where are you placing the question when you ponder it?",
+          "answer": "In your mind, to weigh it up. You place it there and turn it over."
+        },
+        {
+          "word": "suspense",
+          "sentence": "The last over of the cricket match was full of suspense.",
+          "prompt": "pens means hang. What is left hanging in suspense?",
+          "answer": "The result. Nobody knows it yet, so everybody is left waiting."
+        },
+        {
+          "word": "judicious",
+          "sentence": "Mia made a judicious choice and packed a raincoat.",
+          "prompt": "jud means right or law. What does a judicious choice show about the person?",
+          "answer": "That they weighed it up first. A judicious choice is a well judged one."
+        },
+        {
+          "word": "countermand",
+          "sentence": "The principal had to countermand the earlier bus announcement.",
+          "prompt": "counter means against. What happens to the first order?",
+          "answer": "It is cancelled. The second order goes against it and wins."
+        },
+        {
+          "word": "prejudice",
+          "sentence": "Judging a book by its cover is a kind of prejudice.",
+          "prompt": "pre means before. Which part of prejudice tells you a decision was made?",
+          "answer": "The jud part. Prejudice is deciding before you know anything."
+        },
+        {
+          "word": "remand",
+          "sentence": "The court will remand the case until new evidence arrives.",
+          "prompt": "mand means order. What is being ordered here?",
+          "answer": "That the case waits. re means back, so it is sent back and held."
+        },
+        {
+          "word": "invincible",
+          "sentence": "That defence looked invincible in the second half.",
+          "prompt": "in means not. Which part of invincible means conquer?",
+          "answer": "The vinc part. Invincible means that nobody can conquer them."
+        },
+        {
+          "word": "chronicle",
+          "sentence": "The local paper is a chronicle of everything that happens in town.",
+          "prompt": "chron means time. What decides the order in a chronicle?",
+          "answer": "When things happened. A chronicle follows time, not importance."
+        },
+        {
+          "word": "incarnation",
+          "sentence": "Our new library is the third incarnation of that old brick building.",
+          "prompt": "carn means flesh. What does an incarnation give an idea?",
+          "answer": "A body. The building took a new form, so it is a new incarnation."
+        },
+        {
+          "word": "microscopic",
+          "sentence": "One drop of creek water holds microscopic life.",
+          "prompt": "micro means small. How small is microscopic life?",
+          "answer": "Far too small for your eyes. You need the microscope to see it at all."
+        }
+      ],
+      "new_morphology": {
+        "morph": "pon/pound",
+        "type": "root",
+        "keyword": "ponder",
+        "meaning": "place, part"
+      },
+      "words_to_read_new": [
+        {
+          "word": "postpone",
+          "meaning": "post means after + pon means place: to place it after, so it happens later"
+        },
+        {
+          "word": "postponement",
+          "meaning": "post means after + pon means place + -ment means the thing: the delay itself"
+        },
+        {
+          "word": "impound",
+          "meaning": "im means in + pound means place: to place it inside a yard and keep it there"
+        },
+        {
+          "word": "pondering",
+          "meaning": "pon means place + -ing means doing it now: placing a question in your mind right now"
+        },
+        {
+          "word": "compounded",
+          "meaning": "com means together + pound means place + -ed means it happened: placed together, so it grew"
+        },
+        {
+          "word": "opponents",
+          "meaning": "op means against + pon means place + -ent means one who + -s means more than one: the ones placed against you"
+        },
+        {
+          "word": "component",
+          "meaning": "com means together + pon means part: a part placed together with other parts"
+        },
+        {
+          "word": "exponent",
+          "meaning": "ex means out + pon means place + -ent means one who: the one who places the idea out"
+        },
+        {
+          "word": "ponderous",
+          "meaning": "pon means place + -ous means full of: full of the weight you place on it, heavy and slow"
+        }
+      ],
+      "associated_word_exceptions": [
+        {
+          "word": "postpone",
+          "reason": "Ground 1 (OG_MEGA_PROMPT 4c): the captured pon/pound card lists only nine associated words and all nine were taught on Wednesday, so the review day needs family extensions. postpone also stacks post-, taught in Term 2, onto the new root and its sum (after + place) is fully transparent.",
+          "source": "Macquarie Dictionary (Australian English) postpone, verb: to put off to a later time; defer."
+        },
+        {
+          "word": "postponement",
+          "reason": "Ground 1 and ground 3: same nine-word limit as postpone, and postponement stacks the taught post- with a noun-maker, which is exactly the grammar move taught this week.",
+          "source": "Macquarie Dictionary (Australian English) postponement, noun: the act of postponing; a delay."
+        },
+        {
+          "word": "impound",
+          "reason": "Ground 1: the captured card's nine associated words were all used on Wednesday. impound keeps the pound spelling in front of students and its sum (in + place) is transparent.",
+          "source": "Macquarie Dictionary (Australian English) impound, verb: to shut up in a pound or enclosure; to take into legal custody."
+        },
+        {
+          "word": "pondering",
+          "reason": "Ground 1: inflected form of the card word ponder, used because the nine associated words were all taught on Wednesday and the review day needs mostly fresh derivatives.",
+          "source": "Macquarie Dictionary (Australian English) ponder, verb: to consider something deeply and thoroughly."
+        },
+        {
+          "word": "compounded",
+          "reason": "Ground 1: inflected form of the card word compound, used because the nine associated words were all taught on Wednesday and the review day needs mostly fresh derivatives.",
+          "source": "Macquarie Dictionary (Australian English) compound, verb: to make up by combining parts; to make worse by adding to it."
+        },
+        {
+          "word": "opponents",
+          "reason": "Ground 1: plural of the card word opponent, used because the nine associated words were all taught on Wednesday and the review day needs mostly fresh derivatives.",
+          "source": "Macquarie Dictionary (Australian English) opponent, noun: one who is on the opposing side in a contest or argument."
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Okay, same root as yesterday, pon and pound, and today one part you already own joins it - post, meaning after.\"\nREAD each word as it appears, then connect pon or pound to the card meaning: place, part.\npostpone - post means after + pon means place: to place it after, so it happens later than planned.\npostponement - post means after + pon means place + -ment means the thing: the thing itself, the delay.\nimpound - im means in + pound means place: to place it inside a yard and keep it there.\npondering - pon means place + -ing means doing it now: placing a question in your mind right now.\ncompounded - com means together + pound means place + -ed means it already happened: placed together, so the problem grew.\nopponents - op means against + pon means place + -ent means one who + -s means more than one: the ones placed against you.\ncomponent - com means together + pon means part: a part placed together with other parts to make the whole.\nexponent - ex means out + pon means place + -ent means one who: the one who places the idea out for everyone.\nponderous - pon means place + -ous means full of: full of the weight you place on it. Heavy and slow to move.\nMemory hook: picture an opponent standing in your way, placed against you, then bike components laid out on the floor, each part in its place. Challenge: find three pon or pound words in a maths page this week.",
+      "words_to_spell_new": [
+        "postpone",
+        "postponement",
+        "impound",
+        "component"
+      ],
+      "extension": "1. SAY: \"Okay, when you finish, add a prefix or a suffix to one of your words and explain the new meaning.\"\n2. CHECK: the new word must be real, and the explanation must name the part you added.\nEXTENSION: Build a four-part pon or pound word, then write its full morpheme sum naming every part.\nA morpheme sum names every part of the word and what each part means.\nAnswer: e.g. postponements = post (after) + pon (place) + -ment (the thing) + -s (more than one).",
+      "new_morph_activity": {
+        "title": "Which root is inside?",
+        "rule": "Copy each word, then write pend or pon - the root inside it.",
+        "example": "One done for you:\nsuspension = pend, the bridge hangs\nBank: pend/pens = hang. pon/pound = place.",
+        "items": [
+          "1. postponement = ?    2. dispense = ?",
+          "3. impound = ?    4. suspense = ?"
+        ],
+        "item_size": 17,
+        "routine": "OG books - 3 min - books up",
+        "footer": "Two roots, one week. Can you hear them?",
+        "notes": "ANSWER: 1 pon, 2 pens, 3 pound, 4 pens.\n1. SAY: \"Okay, you have met two roots this week and they look alike. Today you separate them.\"\n2. SAY: \"Copy each word into your book, then write pend or pon beside it. Three minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"cover the front of the word with your finger and read what is left.\" Then do number one together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> work number three together, then re-check.\nTRAP: writing pend for impound because both start the same way. Fix: say pound is placing, not hanging, student changes it to pon.\nEXTENSION: Add one word of your own for each root, then write the meaning that proves which root it is.\nHELP: Give the two meanings hang and place; students say the meaning of each word first, then choose the root.\n---\nPurpose: day two separates the week's two look-alike roots by meaning, not by spelling. [You Do | Root identification | Morphology]\nANSWERS:\n1. postponement = pon, the match is placed later\n2. dispense = pens, the sunscreen is handed out\n3. impound = pound, the car is placed in a yard\n4. suspense = pens, the result is left hanging\nEXTENSION: e.g. compound = pon, things placed together. pendant = pend, it hangs on a chain.",
+        "check_title": "Tick it or fix it - which root is inside",
+        "check_rule": "Tick each correct root. Fix any root that does not match.",
+        "check_items": [
+          "1. postponement = pon, the match is placed later",
+          "2. dispense = pens, it is paid or handed out",
+          "3. impound = pound, the car is placed in a yard",
+          "4. suspense = pens, the result is left hanging"
+        ],
+        "check_item_size": 17,
+        "check_routine": "Tick - fix - explain",
+        "check_footer": "Meaning decides it, not spelling",
+        "check_notes": "ANSWER: 1 pon, 2 pens, 3 pound, 4 pens.\n1. MODEL: \"Number one is postponement. Nothing is hanging - the match is placed later - so the root is pon.\"\n2. SAY: \"Now tick each root that matches. Fix any root that is different.\"\n3. ASK: \"Which of these four words would fool you if you only looked at the spelling?\" 10 sec, turn and tell. EXPECT: impound, because it looks like pend words.\n4. SCAN corrections. 80%+ -> continue. Less -> rework number three together, then re-check.\nTRAP: ticking a root because the word looks similar. Fix: read the green reason aloud, student checks the meaning against their root.\nEXTENSION: Write one sentence that uses a pend word and a pon word and keeps both meanings clear.\nHELP: Read the green reason first, then decide whether the root beside it fits.\n---\nPurpose: protected reveal that shows meaning, not spelling, is what separates the two roots. [You Do | Feedback | Morphology]"
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "yolk",
+            "unfair": "l",
+            "notes": "Why learned: the l is silent, exactly like salmon, and the o says a long /oh/.\nSay it: YOHK, one beat. Write y - ol - k, then check the l is still sitting there.\nQuick link: the yolk feeds the growing chick, so it belongs in every life cycle diagram."
+          },
+          {
+            "word": "salmon",
+            "unfair": "l",
+            "notes": "Why learned: the l is completely silent, so the word sounds like sam-on but keeps a letter you never hear.\nSay it: SAM-uhn, two beats. Write sal - mon in two chunks and leave the l in.\nQuick link: salmon and yolk are this week's pair - both hide a silent l in the middle."
+          }
+        ]
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "Our small town's economy suffered from chronic drought last summer.",
+          "targets": [
+            "economy",
+            "chronic"
+          ],
+          "cups": {
+            "capitals": [
+              "Our"
+            ],
+            "punctuation": [
+              "apostrophe in town's (it shows the economy belongs to the town)",
+              "full stop"
+            ]
+          },
+          "focus": "revision from two and three weeks ago: eco and chron"
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Before the flood, our nature chronology showed how one omnivore could evict the smaller birds.",
+          "targets": [
+            "chronology",
+            "omnivore",
+            "evict"
+          ],
+          "cups": {
+            "capitals": [
+              "Before"
+            ],
+            "punctuation": [
+              "comma after the opening phrase (it shows where the time detail ends)",
+              "full stop"
+            ]
+          },
+          "focus": "revision from two and four weeks ago: chron, vore and vict"
+        }
+      ],
+      "grammar": {
+        "header_notes": "PURPOSE: Decide when the thing word helps the reader and when it buries the action.\nWHY THIS WEEK: students write we did this, then we did that in every science report, and the report never sounds like science.\nROUTINE: all grammar this week is written in the OG book. No boards and no scoring - books, thumbs and voices only.\nPREP: over-nominalised writing hides who acted; the cure is to find the buried action word and put it back.",
+        "i_do": {
+          "title": "Noun or verb - you choose",
+          "rule": "Thing word for the idea. Action word for the action.",
+          "example": "Report: The resistance grew quickly.\nStory: The crowd resisted quickly.",
+          "items": [
+            "Idea in charge? Use the thing word.",
+            "Action in charge? Keep the action word."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Check: which one is in charge here?",
+          "notes": "ANSWER: both are correct English; the report wants the idea and the story wants the action.\n1. SAY: \"Okay, three days of turning action words into thing words. Today you learn when not to.\"\n2. WRITE: copy both sentences onto the class board, one under the other, and label them Report and Story.\n3. MODEL: cover the label Report and read the first sentence aloud. Say it sounds like a scientist. Cover Story, read the second, say you can see the crowd.\n4. SAY: \"Nominalising is a tool, not a rule. Overdo it and your reader stops seeing anything happen at all.\"\nTRAP: deciding one sentence is wrong. Fix: say both are correct, student names the kind of writing each one suits.\nCLARIFY: if a student asks how many thing words are too many, say if you cannot find a real action anywhere, you have gone one too far.\n---\nPurpose: day four turns the move into a judgement, which is what stops writing turning to concrete. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: an over-nominalised sentence has no visible agent and no visible action, so the reader has to guess both."
+        },
+        "we_do": {
+          "title": "Which one is clearer?",
+          "rule": "Thumb up for the sentence that belongs in a fire drill notice.",
+          "example": "A) Leave the building quickly.\nB) Exit of the building is required.",
+          "items": [
+            "Thumb up for the clearer instruction.",
+            "Then say what B is hiding."
+          ],
+          "routine": "Thumbs on three - voices off",
+          "footer": "Stem: B hides ...",
+          "notes": "ANSWER: A. Instructions need the action word, because the reader has to do something.\n1. SAY: \"Okay, here is that same choice somewhere it really matters - a fire drill notice on the wall.\"\n2. TIME: 15 seconds thinking, voices off, then thumbs up for the clearer one, everyone together on three.\n3. SCAN every thumb. 80%+ -> move on. Less -> read B aloud and ask who has to move, then re-signal.\n4. ASK: \"What has B hidden that A tells you straight away?\" 10 sec, turn and tell. EXPECT: that you are the one who has to leave.\nTRAP: choosing B because it sounds more official. Fix: agree it sounds official, then say nobody moves, student re-signals.\nCLARIFY: if a student says B is more polite, agree - and say politeness is not worth confusion when the building is on fire.\n---\nPurpose: guided judgement showing that the impersonal version can cost the reader clarity. [We Do | Guided practice | Grammar | HITS 7]\nPREP: in B, exit is a noun, so nobody is actually told to do anything."
+        },
+        "you_do": {
+          "title": "Fix the heavy sentence",
+          "rule": "Your turn: rewrite each one so the action comes back.",
+          "example": "One done for you:\nHeavy: The completion of the run occurred.\nFixed: We completed the run.",
+          "items": [
+            "A) The cancellation of camp took place.",
+            "B) A postponement of the game occurred."
+          ],
+          "item_size": 17,
+          "routine": "OG books - 2 min - pens down",
+          "footer": "Check: who is doing something now?",
+          "notes": "ANSWER: A The school cancelled camp. B They postponed the game.\n1. SAY: \"Okay, look at the finished one first. The completion went back to completed, and somebody is doing it again.\"\n2. SAY: \"Copy A and B, then rewrite each one so a person or a group is doing the action. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"find the buried action word inside the long noun - cancellation is hiding cancelled.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> fix B together on the board, then re-check.\nTRAP: keeping took place or occurred. Fix: say those words do no work, student deletes them and lets the real action word carry it.\nEXTENSION: Decide which of your two heavy sentences would still be the better choice in a formal notice to families, and write why.\nHELP: Give the two buried action words cancelled and postponed; students build the sentence around the word they are given.\n---\nPurpose: independent repair of over-nominalised writing, closing the week's judgement. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) The cancellation of camp took place. = The school cancelled camp.\nB) A postponement of the game occurred. = They postponed the game.\nEXTENSION: e.g. the postponement version suits a formal notice, because the notice is about the change, not about who decided it.",
+          "check_title": "Tick it or fix it - fix the heavy sentence",
+          "check_rule": "Tick each repair. Fix any sentence with nobody doing anything.",
+          "check_items": [
+            "A) The school cancelled camp.",
+            "cancellation went back to cancelled.",
+            "B) They postponed the game.",
+            "postponement went back to postponed."
+          ],
+          "check_item_size": 20,
+          "check_routine": "Tick - fix - explain",
+          "check_footer": "Editing move: find the buried verb.",
+          "check_notes": "ANSWER: A The school cancelled camp. B They postponed the game.\n1. MODEL: \"In A I found cancelled hiding inside cancellation, then asked who did it. The school did.\"\n2. SAY: \"Now tick each repair. Fix any sentence where nobody is doing anything.\"\n3. ASK: \"Which words in the heavy sentences were doing no work at all?\" 10 sec, turn and tell. EXPECT: took place, and occurred.\n4. SCAN corrections. 80%+ -> continue. Less -> repair B together, then re-check.\n5. SAY: \"When you edit your next draft, read any long sentence and ask whether a person has gone missing from it.\"\nTRAP: rewriting without naming who acts. Fix: say every repair needs somebody doing it, student adds the person and reads it again.\n---\nPurpose: protected reveal plus the buried-verb edit for their own drafts. [You Do | Feedback | Grammar | HITS 5]"
+        }
+      }
+    }
+  ]
+}
