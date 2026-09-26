@@ -288,7 +288,7 @@
         ],
         "stretch": "Where could the drop be stored for years?",
         "help": "Cover the labels. Say rising, cooling, falling, gathering.",
-        "prep": "The model. The loop is the visual anchor; the think-aloud follows one drop so the cycle reads as one journey, not four facts. SC2.",
+        "prep": "The model. Critical feature: the same water travels the whole loop; warming lifts it as vapour, cooling turns it back into drops. The think-aloud follows one drop so the cycle reads as one journey, not four facts. SC2.",
         "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
       }
     },

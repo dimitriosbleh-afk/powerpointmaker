@@ -6,7 +6,7 @@
 How to read this document:
 
 - PART A (sections A1 to A9, directly below) is the build order. Follow it top to bottom for every lesson. It names the reference section for each step.
-- PART B (sections 0 to 80) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
+- PART B (sections 0 to 81) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
 - Section 0a is the non-negotiable output gate. A lesson that fails any item there is not finished, whatever else it does well.
 
 Version history (newest first):
@@ -41,7 +41,7 @@ The opening order is fixed in every subject: title, resources, (numeracy: dailyR
 
 ## A3. Write the intention, the criteria, the anchor and the decision points
 
-One Learning Intention sentence and exactly three "I can" criteria: reachable, core, stretch, with tier labels never on a student surface (14, 0a item 18). Name the unit anchor: one representation, one phrase, one method held across every session (79). Name the two or three decision-grade CFU points and what the teacher does at each on secure, mixed and weak evidence (76, 38); give every wrong option on a check the misconception it catches (37). Decide the exit evidence and which criterion it assesses, as a new item no slide has already modelled or revealed (53).
+One Learning Intention sentence and exactly three "I can" criteria: reachable, core, stretch, with tier labels never on a student surface (14, 0a item 18). Name the unit anchor: one representation, one phrase, one method held across every session (79). Design the example set: the critical feature, the near-misses, the range, and a new item at every release (81). Name the two or three decision-grade CFU points and what the teacher does at each on secure, mixed and weak evidence (76, 38); give every wrong option on a check the misconception it catches (37). Decide the exit evidence and which criterion it assesses, as a new item no slide has already modelled or revealed (53).
 
 ## A4. Give every slide its visual and its builder
 
@@ -5245,6 +5245,24 @@ Coupling rules:
 - Do not solve catch-up by re-teaching the previous lesson at the start of the next one. That steals time from the students who were present and flattens the unit.
 - Do not lower SC2 for returning students. Change the entry point and the scaffold, never the goal.
 - For a single-session request, this section does not apply beyond the standard launch rules.
+
+# 81. EXAMPLE SET DESIGN
+
+Students generalise from the examples they meet, not from the explanation. Two lessons with the same slides and notes teach different things if their examples differ. Design the lesson's examples as one set, before writing any slide, so every example does a job.
+
+1. Name the critical feature: the one thing students must notice to succeed. "The clue is what the body does, not the place or the object." "Count the empty boxes, not the counters." Write it in the I Do prep line. If you cannot name it in one short sentence, the scope is too broad (8).
+
+2. Show the boundary. At least one near-miss appears in the I Do or the first check: an example that differs from a correct one only in the critical feature. "Across the park" beside "he grinned"; a frame with 3 counters beside a frame with 3 empty boxes. Take the near-misses from the lesson's TRAPs, and reuse them as the wrong options on the check (37).
+
+3. Vary what does not matter. Across I Do, We Do, CFU, You Do and exit, change the surface: characters, contexts, numbers, orientation, which kind of clue. If every example shares an irrelevant feature, students learn that feature too (every clue a body clue, every triangle point-up, every number line starting at 0). Hold the representation and anchor phrase constant (79); vary the instances.
+
+4. Cover the range. Include an easy case, a typical case and an edge case: nine counters with one empty box; exactly five, where the row fills; a clue in speech instead of the body. Put the edge case in guided practice, where the teacher is there to catch it, not first in the You Do.
+
+5. Keep the structure through the fade. I Do, We Do and You Do items share the same deep structure (27), with support removed step by step: model it, then complete a partly done one, then do one alone.
+
+6. A new item at every release. The first check, the hinge, the You Do and the exit ticket each use an item students have not seen worked or revealed (35, 53). A check on the I Do example measures memory of the teacher's answer, not the skill.
+
+Before building, list the set in order with one line each: item, which job it does (model, near-miss, typical, edge, check, independent, exit). An item with no job is cut. A job with no item is added.
 
 # ===== END OF MEGA-PROMPT. SHIFT CLICK HERE. =====
 

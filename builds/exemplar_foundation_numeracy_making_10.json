@@ -415,7 +415,7 @@
         ],
         "stretch": "Cover the frame. If 6 needs 4, what does 4 need?",
         "help": "Child places real counters in the empty boxes and counts them.",
-        "prep": "First model. The think-aloud is the teaching: count the counters, count the gaps, say the pair. SC2.",
+        "prep": "First model. Critical feature: count the empty boxes, not the counters. The think-aloud is the teaching: count the counters, count the gaps, say the pair. SC2.",
         "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
       }
     },
