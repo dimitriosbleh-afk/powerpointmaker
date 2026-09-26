@@ -1,6 +1,6 @@
 (c) 2026 James Hooke. Confidential. Internal use only. Not for redistribution.
 
-# Teacher Notes Specialist Prompt v3.3
+# Teacher Notes Specialist Prompt v3.4
 ## Foundation to Year 6 | Add Teacher Notes to Existing Slide Decks | The Glance Format | Source-Faithful | Slide-Aware | Formatting-Safe | Classroom-Ready
 
 This v3.0 revision replaces the sectioned SAY/DO note structure with the Glance Format: a live-zone timeline of numbered beats built for teachers reading notes on an iPad mid-lesson, with an ANSWER line first, one-line SCAN decisions, TRAP lines and a prep zone below a "---" divider. All voice, source-fidelity and student-impact rules carry over unchanged.
@@ -20,6 +20,8 @@ The v3.3 revision brings this prompt into line with the Explicit Teaching Lesson
 - Exponents use the ASCII caret: 10^6, never a superscript glyph and never "10 to the 6" spelled out.
 
 It also adds the teacher vernacular lock (section 16A) and the deck-convention rule (section 3B), and removes leftovers from the pre-v11 sectioned format that this prompt was still referring to: WATCH FOR, SENSITIVITY ADVISORY and "flag it in TEACHER NOTES" are not Glance Format sections and no longer appear.
+
+The v3.4 revision brings this prompt into line with Mega-Prompt v12.8. When a live zone runs over budget, cut cue wording before SAY speech (section 5), because the teacher reads SAY aloud and only glances at the rest. On a check, the prep zone names what each wrong option means, so the teacher can read the boards. When an exit ticket re-asks an item the deck already modelled or revealed, or collects its answer through partner talk, the notes collect individual evidence and the handover flags the slide (section 26).
 
 # 0. PURPOSE
 
@@ -207,7 +209,7 @@ Zone rules:
 Rendered budgets. These measure what the teacher's eye actually meets in the presenter pane, not logical lines in a source file. A line that wraps three times on an iPad is three lines, so the word caps exist to stop lines wrapping at all:
 
 - 8 logical units maximum.
-- About 120 words maximum across the whole live zone. Over budget means the slide is doing too much: cut rationale to the prep zone, cut a beat, or say in the prep zone what to prioritise.
+- About 120 words maximum across the whole live zone. Over budget means the slide is doing too much: cut rationale to the prep zone, cut a beat, or say in the prep zone what to prioritise. Then cut cue wording (SCAN targets, pivots, EXPECT lines) to key words. Only then shorten SAY speech, and never into clipped fragments.
 - About 16 words maximum on any physical line. A longer thought breaks into indented continuation lines, one idea each.
 - 18 physical non-blank lines maximum in the live zone.
 - Prep zone: 3 lines maximum, and no per-line word cap, because it is read seated before the lesson.
@@ -1027,7 +1029,7 @@ Decides readiness for independence. Weak responses -> stay guided and re-check b
 
 ## CFU or hinge question slide
 
-ANSWER: [correct option] - each wrong option maps to a misconception
+ANSWER: [correct option]
 
 1. SAY: Choose carefully. This one tells me what we do next.
 
@@ -1042,7 +1044,8 @@ ANSWER: [correct option] - each wrong option maps to a misconception
 TRAP: copying neighbours.
    Fix: boards down, fresh think time, show together on cue.
 ---
-Decision point, not a discussion. [Wrong option] usually means [specific misconception].
+Decision point, not a discussion.
+WRONG ANSWERS: A = [misconception]. C = [misconception].
 
 ## Reveal slide
 
@@ -1133,6 +1136,12 @@ If a slide gives the answer too early:
 
 - Cue the teacher to cover, delay or ask for reasoning first if practical.
 - Do not alter the slide unless requested.
+
+If the exit ticket re-asks an item the deck already modelled, checked or revealed:
+
+- It measures memory of the answer, not the skill. Do not alter the slide unless requested.
+- In the notes, collect the answer one student at a time (boards, fingers, paper), never through partner talk or a choral answer.
+- Flag the slide in the handover with the fix: a new item of the same kind, for example the same question about a new text or new numbers.
 
 If the slide is visual-only:
 

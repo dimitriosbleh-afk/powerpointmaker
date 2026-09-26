@@ -1281,7 +1281,7 @@ The theme sets both sizes per band; you never choose a font size in a spec. What
 
 Dense body is a fallback the card metrics step down to when content will not otherwise fit. It is not a default. If a slide is landing on dense body regularly, the slide is carrying too much and should be split, not shrunk.
 
-These are the numbers in `themes/core/gradeBand.js`, the single source of truth. Years 3 and 4 share the Years 5 and 6 sizes. Do not hand-tune font sizes per slide; if the default does not work for a slide, that is a template defect per section 16a.
+These are the numbers in `themes/core/gradeBand.js`, the single source of truth. Years 3 and 4 share the Years 5 and 6 sizes. The canvas is 10 inches wide, not the 13.33 inches of a default widescreen deck, so projected full screen every size here reads about a third larger than the same point size in a default PowerPoint: Years 3 to 6 body text at 22 pt looks like 29 pt. Do not hand-tune font sizes per slide; if the default does not work for a slide, that is a template defect per section 16a.
 
 ## Universal hierarchy rule
 
@@ -3020,7 +3020,7 @@ Natural does not mean longer. Prefer one small connector plus a complete thought
 - Natural: "Okay, watch this one. The denominators already match, so I only need to add the numerators."
 - Overfilled: "All right, boys and girls, everyone looking this way, now we're going to have a little look at this next one."
 
-What gets cut to fit the budget, in order: rationale prose (moves to the prep zone), instructions the slide already shows, second examples, repeated greetings and empty management padding. Preserve brief connective words that make the script sound natural aloud.
+What gets cut to fit the budget, in order: rationale prose (moves to the prep zone), instructions the slide already shows, second examples, repeated greetings and empty management padding, then the wording of cue lines (SCAN targets, pivots and EXPECT lines cut to their key words). Only then touch SAY speech. Natural speech fits in 120 words when the teacher-facing lines are terse; a clipped SAY line to save three words is the wrong trade, because the teacher reads SAY aloud and only glances at the rest. Preserve brief connective words that make the script sound natural aloud.
 
 What never gets cut: the ANSWER line, think time and routine on an ASK, the SCAN decision, the TRAP redo, reveal protection.
 
