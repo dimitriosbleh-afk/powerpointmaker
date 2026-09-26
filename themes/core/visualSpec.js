@@ -297,9 +297,27 @@ function createVisualSpec(C, FONT_H, FONT_B, el, S, deps) {
       }
       case "text": {
         const text = String(s.text == null ? "" : s.text);
-        const fontSize = s.fontSize || byBand(sz, 96, 84, 66);
         const w = Math.min(f.w, s.maxW || 8.6);
-        const h = Math.min(f.h, s.maxH || (fontSize * 0.03 + 0.6));
+        // Hero size suits a numeral or one word. A sentence steps the size down
+        // until its wrapped lines fit the frame; renderers do not reliably honour
+        // shrink-to-fit, so the text would otherwise spill past the card.
+        const linesAt = (pt) => {
+          const perLine = Math.max(1, Math.floor((w - 0.2) / (pt * 0.6 / 72)));
+          let lines = 1;
+          let used = 0;
+          text.split(/\s+/).filter(Boolean).forEach((word) => {
+            const len = word.length + (used ? 1 : 0);
+            if (used && used + len > perLine) { lines += 1; used = word.length; } else { used += len; }
+          });
+          return lines;
+        };
+        const heightAt = (pt) => linesAt(pt) * pt * 1.25 / 72 + 0.4;
+        let fontSize = s.fontSize || byBand(sz, 96, 84, 66);
+        if (!s.fontSize) {
+          const floor = byBand(sz, 32, 30, 24);
+          while (fontSize > floor && heightAt(fontSize) > f.h) fontSize -= 2;
+        }
+        const h = Math.min(f.h, s.maxH || Math.max(fontSize * 0.03 + 0.6, heightAt(fontSize)));
         const box = centreBox(f, w, h);
         if (s.card !== false) {
           slide.addShape("roundRect", {

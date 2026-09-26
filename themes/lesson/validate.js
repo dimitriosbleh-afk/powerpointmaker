@@ -143,6 +143,130 @@ function validateReveal(reveal, where, errors, warnings, slide) {
   }
 }
 
+// Visual types that act as answer menus or pictures rather than the item
+// itself, so an exit ticket may repeat them (the feelings row, word chips).
+const MENU_VISUAL_TYPES = ["pictogram", "pictograms", "chips"];
+
+// Words an exit ticket routine may share with the rest of the deck.
+const ROUTINE_WORDS = /^(point|show|write|tell|name|draw|circle|say|turn|hold|chin|look|read|find|which|what|how|why|who|where|when|is|are|do|does|the|a)$/i;
+
+function canonical(value) {
+  if (Array.isArray(value)) return `[${value.map(canonical).join(",")}]`;
+  if (value && typeof value === "object") {
+    return `{${Object.keys(value).sort().map((k) => `${k}:${canonical(value[k])}`).join(",")}}`;
+  }
+  return JSON.stringify(value);
+}
+
+function normaliseText(s) {
+  return String(s).toLowerCase().replace(/[^a-z0-9 ]+/g, " ").replace(/\s+/g, " ").trim();
+}
+
+function shingles(s, n) {
+  const words = normaliseText(s).split(" ").filter(Boolean);
+  const out = new Set();
+  for (let i = 0; i + n <= words.length; i += 1) out.add(words.slice(i, i + n).join(" "));
+  return out;
+}
+
+/** Capitalised words that are not the first word of a sentence: character and place names. */
+function midSentenceNames(s) {
+  const names = new Set();
+  String(s).split(/(?<=[.!?:])\s+|\n/).forEach((sentence) => {
+    const words = sentence.trim().split(/\s+/);
+    words.slice(1).forEach((w) => {
+      const m = w.match(/^([A-Z][a-z]+)\b/);
+      if (m) names.add(m[1]);
+    });
+  });
+  return names;
+}
+
+function collectStrings(value) {
+  const out = [];
+  walkStrings(value, "", (s) => out.push(s));
+  return out;
+}
+
+/**
+ * The exit ticket is the lesson's evidence, so it must be a new item the
+ * students have not already seen modelled, checked or revealed, and every
+ * student's answer must be visible to the teacher (megaprompt 53).
+ */
+function validateExitTicket(spec, slides, exitIndex, errors) {
+  const exit = slides[exitIndex];
+  const w = `slides[${exitIndex}] (exitTicket)`;
+  const questions = toArray(exit.questions).map(String);
+  const exitText = questions.concat(exit.label ? [String(exit.label)] : [],
+    exit.visual && exit.visual.type === "text" ? [String(exit.visual.text)] : []);
+
+  // Topic words (lesson title, LI, SC, key words) may repeat; they name the learning, not the item.
+  const L = spec.lesson || {};
+  const topic = normaliseText([L.title, L.subtitle].concat(
+    ...slides.filter((s) => s && (s.kind === "li" || s.kind === "keyWord"))
+      .map((s) => collectStrings([s.learningIntention, s.successCriteria, s.word, s.meaning]))
+  ).join(" "));
+  const topicWords = new Set(topic.split(" "));
+
+  const exitNames = new Set();
+  exitText.forEach((q) => (q.match(/\b[A-Z][a-z]+\b/g) || []).forEach((n) => exitNames.add(n)));
+  const exitShingles = new Set();
+  exitText.forEach((q) => shingles(q, 6).forEach((sh) => exitShingles.add(sh)));
+  const exitQuestionKeys = questions.map(normaliseText);
+  const exitVisualKey = exit.visual && !MENU_VISUAL_TYPES.includes(exit.visual.type) ? canonical(exit.visual) : null;
+
+  const earlier = slides.slice(0, exitIndex).map((s, i) => ({ s, i }))
+    .filter(({ s }) => s && KINDS[s.kind] && KINDS[s.kind].teaching && s.kind !== "li");
+  // A worksheet item counts as already seen: students have just done it.
+  (spec.resources || []).forEach((r, ri) => {
+    if (r && r.kind === "worksheet") (r.items || []).forEach((it, j) => earlier.push({ s: it, label: `resources[${ri}].items[${j}]` }));
+  });
+
+  const reported = new Set();
+  const report = (msg) => { if (!reported.has(msg)) { reported.add(msg); errors.push(msg); } };
+  const fix = "The exit ticket must be a new item (a new text, new numbers or a new context), not one already modelled, checked or revealed, so it shows the skill rather than memory of the answer (megaprompt 53).";
+
+  earlier.forEach(({ s, i, label }) => {
+    const where = label || `slides[${i}] (${s.kind})`;
+    const strings = collectStrings(s);
+
+    const earlierNames = new Set();
+    strings.forEach((str) => midSentenceNames(str).forEach((n) => earlierNames.add(n)));
+    exitNames.forEach((n) => {
+      if (earlierNames.has(n) && !topicWords.has(n.toLowerCase()) && !ROUTINE_WORDS.test(n)) {
+        report(`${w}: reuses "${n}" from ${where}. ${fix}`);
+      }
+    });
+
+    const faceStrings = collectStrings(Object.assign({}, s, { notes: undefined }));
+    if (faceStrings.some((str) => [...shingles(str, 6)].some((sh) => exitShingles.has(sh)))) {
+      report(`${w}: repeats six or more words in a row from ${where}. ${fix}`);
+    }
+
+    if (!exitVisualKey) {
+      const keys = [s.question, s.title, s.prompt, s.task].concat(toArray(s.questions)).filter(isNonEmptyString).map(normaliseText);
+      if (exitQuestionKeys.some((q) => keys.includes(q))) report(`${w}: asks the same question as ${where} with no new item. ${fix}`);
+    }
+
+    if (exitVisualKey) {
+      const visuals = [s.visual, s.answerVisual].concat(toArray(s.options).map((o) => o && o.visual)).filter(Boolean);
+      if (visuals.some((v) => canonical(v) === exitVisualKey)) report(`${w}.visual: the same visual as ${where}. ${fix}`);
+    }
+  });
+
+  // Individual, visible evidence: talk to a partner or a choral answer hides who knows it.
+  const notes = exit.notes && typeof exit.notes === "object" ? exit.notes : null;
+  if (notes) {
+    const askBeats = toArray(notes.beats).map((b) => toArray(b).join(" ")).filter((b) => /\bASK:/.test(b));
+    if (askBeats.some((b) => /turn and tell|partner|together, on three/i.test(b))) {
+      errors.push(`${w}.notes: the exit ASK uses partner talk or a choral answer, which hides who can do it. Collect individual evidence the teacher can see: boards (Write it... Chin it... Show me.), fingers, pointing or paper (megaprompt 53).`);
+    }
+    if (isNonEmptyString(notes.tag) && !/\bSC2\b/.test(notes.tag)) {
+      errors.push(`${w}.notes.tag: the exit ticket assesses SC2; name it in the tag, e.g. "[Exit Ticket | Assessment | SC2 | HITS 8]" (megaprompt 53).`);
+    }
+  }
+}
+
 function validateLessonSpec(spec) {
   const errors = [];
   const warnings = [];
@@ -242,9 +366,20 @@ function validateLessonSpec(spec) {
           if (typeof o === "string") return;
           if (!o || (!o.visual && !o.text)) errors.push(`${w}.options[${j}]: needs visual and/or text.`);
           if (o && o.visual) validateVisual(o.visual, `${w}.options[${j}].visual`, errors);
+          if (o && o.misconception != null && !isNonEmptyString(o.misconception)) errors.push(`${w}.options[${j}].misconception: a short phrase, or omit it on the correct option.`);
+          const unknown = o ? Object.keys(o).filter((k) => !["visual", "text", "misconception"].includes(k)) : [];
+          unknown.forEach((k) => errors.push(`${w}.options[${j}].${k}: unknown field. Allowed: visual, text, misconception`));
         });
         if (slide.answer != null && (!Number.isInteger(slide.answer) || slide.answer < 0 || slide.answer >= opts.length)) {
           errors.push(`${w}.answer: 0-based index of the correct option.`);
+        } else if (slide.answer != null) {
+          // A check is only decision-grade when every wrong answer tells the teacher something (megaprompt 37).
+          opts.forEach((o, j) => {
+            if (j === slide.answer) return;
+            if (!o || typeof o === "string" || !isNonEmptyString(o.misconception)) {
+              errors.push(`${w}.options[${j}].misconception: every wrong option on a check must name the misconception it catches, e.g. "counts the counters, not the empty boxes" (megaprompt 37). An option that catches nothing is a wasted choice; replace it with one that does. Use { "text": ..., "misconception": ... } for a text option.`);
+            }
+          });
         }
         break;
       }
@@ -300,6 +435,7 @@ function validateLessonSpec(spec) {
     if (closingIndex === -1) errors.push("slides: no closing slide.");
     else if (closingIndex !== slides.length - 1) errors.push("slides: the closing slide must be last.");
     if (exitIndex === -1) warnings.push("slides: no exitTicket slide. Most lessons collect evidence before the closing (megaprompt 53).");
+    else validateExitTicket(spec, slides, exitIndex, errors);
     const kinds = slides.map((s) => s && s.kind);
     if (!kinds.includes("cfu") && !kinds.includes("choice")) warnings.push("slides: no cfu or choice slide. Where is the decision-grade check (megaprompt 36, 76)?");
     if (!kinds.includes("youDo")) warnings.push("slides: no youDo slide.");

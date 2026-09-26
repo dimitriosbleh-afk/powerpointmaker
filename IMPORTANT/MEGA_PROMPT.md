@@ -41,7 +41,7 @@ The opening order is fixed in every subject: title, resources, (numeracy: dailyR
 
 ## A3. Write the intention, the criteria, the anchor and the decision points
 
-One Learning Intention sentence and exactly three "I can" criteria: reachable, core, stretch, with tier labels never on a student surface (14, 0a item 18). Name the unit anchor: one representation, one phrase, one method held across every session (79). Name the two or three decision-grade CFU points and what the teacher does at each on secure, mixed and weak evidence (76, 38). Decide the exit evidence and which criterion it assesses (53).
+One Learning Intention sentence and exactly three "I can" criteria: reachable, core, stretch, with tier labels never on a student surface (14, 0a item 18). Name the unit anchor: one representation, one phrase, one method held across every session (79). Name the two or three decision-grade CFU points and what the teacher does at each on secure, mixed and weak evidence (76, 38); give every wrong option on a check the misconception it catches (37). Decide the exit evidence and which criterion it assesses, as a new item no slide has already modelled or revealed (53).
 
 ## A4. Give every slide its visual and its builder
 
@@ -2393,6 +2393,10 @@ A hinge question must:
 
 Each wrong answer must map to a misconception.
 
+- Choose the wrong options from the lesson's own TRAPs. A wrong option that no likely error would produce is a wasted choice; replace it with one that catches something.
+- Accept one answer. A check that accepts "sad or hungry or disappointed" cannot tell the teacher who is wrong, or why.
+- In a spec, every wrong option on a `choice` slide with an `answer` carries `misconception` ("counts the counters, not the empty boxes"). The validator fails a wrong option without one, and the build prints the map in the prep zone so the teacher knows what each letter means before the boards go up.
+
 Avoid hinge questions that require long marking.
 
 Use a clear visual signal, such as a Check label, for hinge slides.
@@ -3375,6 +3379,12 @@ Generate a printed exit ticket only if collection is important.
 
 The exit ticket must assess SC2 directly and may touch SC1 or SC3.
 
+The exit ticket must be a new item: a new text, new numbers or a new context that students have not seen modelled, checked or revealed in this lesson. Asking "How did Mia feel?" about the I Do passage measures whether students remember the teacher's answer, not whether they can find a clue. The same applies to repeating the hinge question after its answer was revealed. Keep the task form the same as the practice; change the item.
+
+The evidence must be individual and visible to the teacher: boards, fingers, pointing, or paper. Partner talk and choral answers hide who can do it, so they are not exit evidence.
+
+In a spec, the validator fails an exit ticket that reuses a character or place name from an earlier slide, repeats six or more words in a row from one, repeats an earlier question with no new item, reuses a modelled visual, collects its answer through partner talk or a choral response, or leaves SC2 out of its tag. It cannot catch a paraphrase, so check the item yourself.
+
 The exit ticket targets SC2 internally, but the slide face must not show this. Do not print "Assesses SC2", an "SC2" badge or any SC number on the exit ticket slide. Record the SC target in the teacher notes instead. SC numbering is an internal planning tool per section 0a item 18, and students see a clean prompt.
 
 If the exit ticket is printed, it counts as one resource unless it is a very small slip attached to the main worksheet.
@@ -3743,7 +3753,7 @@ Some rules in this document are checked by machine on every build. Most are not.
 
 `node scripts/build_and_check.js builds/<name>.json` runs seven gates. A non-zero exit is a blocker, not advice:
 
-- Gate 0: the spec validates and the build completes. Validation checks the opening order, exactly three success criteria, a launch before the LI, word cards with a picture, visual types and pictogram names, reveal placement, banned characters, notes shape, resource kinds and paper-twin visuals, and names every problem with its field path and fix.
+- Gate 0: the spec validates and the build completes. Validation checks the opening order, exactly three success criteria, a launch before the LI, word cards with a picture, visual types and pictogram names, reveal placement, banned characters, notes shape, resource kinds and paper-twin visuals, a misconception on every wrong option of a check (37), and an exit ticket that is a new item collected individually (53). It names every problem with its field path and fix.
 - Gate 1: zero layout diagnostics. Overlaps, out-of-bounds elements, underfilled slides, reveal elements covering base text, contrast failures.
 - Gate 2: markitdown parses the file, and no unfinished markers or legacy resource codes survive.
 - Gate 3: slide-face text hygiene. Banned dash and quote characters, layout-by-spaces.
@@ -3762,6 +3772,8 @@ Everything else in this document is judgement, and passing the gate says nothing
 - the anchor holds across a unit
 - the language suits a student twelve months below level
 - a maths answer is correct
+- an exit ticket that paraphrases an earlier item is really new (53)
+- a misconception named on a wrong option is the one a student choosing it actually holds (37)
 
 These are the rules that fail silently, because nothing shouts when they break. They need the checklist in sections 55 to 58 and an actual read of the finished deck.
 

@@ -34,10 +34,33 @@ function toList(value) {
   return Array.isArray(value) ? value.map((v) => String(v)) : [String(value)];
 }
 
+/**
+ * The Glance input for a slide's notes. On a choice check, the prep zone
+ * gains one line reading each wrong option as its misconception, so the
+ * teacher knows what a wrong answer means before the boards go up.
+ */
+function glanceInputFor(slide) {
+  const n = slide.notes;
+  if (slide.kind !== "choice" || slide.answer == null || !n || typeof n !== "object") return n;
+  const letters = ["A", "B", "C", "D"];
+  const reads = (slide.options || []).map((o, i) => {
+    if (i === slide.answer || !o || typeof o !== "object" || !o.misconception) return null;
+    return `${letters[i]}${o.text ? ` (${o.text})` : ""} = ${String(o.misconception).trim()}`;
+  }).filter(Boolean);
+  if (!reads.length) return n;
+  // The tag stays on the purpose line; the composer would otherwise attach it to the last prep line.
+  const prep = n.prep == null ? [] : (Array.isArray(n.prep) ? n.prep.slice() : [n.prep]);
+  if (n.tag) {
+    if (prep.length) prep[prep.length - 1] = `${prep[prep.length - 1]} ${n.tag}`;
+    else prep.push(n.tag);
+  }
+  return Object.assign({}, n, { tag: undefined, prep: prep.concat(`WRONG ANSWERS: ${reads.join(". ")}.`) });
+}
+
 function notesFor(slide) {
   const n = slide.notes;
   if (typeof n === "string") return n;
-  return composeGlanceNotes(n);
+  return composeGlanceNotes(glanceInputFor(slide));
 }
 
 function badgeColorFor(T, slide, fallback) {
@@ -298,4 +321,4 @@ function loadSpec(specPath) {
   return require(abs);
 }
 
-module.exports = { buildLesson, loadSpec };
+module.exports = { buildLesson, loadSpec, glanceInputFor };

@@ -110,7 +110,7 @@
       "notes": {
         "answer": "six",
         "beats": [
-          "SAY: Eyes on the frame. Count the counters in your head.",
+          "SAY: Let's warm up. Look at the frame and count the counters in your head.",
           [
             "ASK: How many counters?",
             "3 sec. Cue: voices off, fingers up.",
@@ -149,7 +149,7 @@
       "notes": {
         "answer": "four",
         "beats": [
-          "SAY: A quick look. I am only showing it for a moment.",
+          "SAY: Get ready, because I'm only showing these dots for a moment.",
           [
             "ASK: How many dots?",
             "2 sec. Cue: voices off, fingers up.",
@@ -224,7 +224,7 @@
       "notes": {
         "answer": "eight",
         "beats": [
-          "SAY: Fluency time. Read the number the moment it appears.",
+          "SAY: Now some quick numbers. Read each one out the moment you see it.",
           [
             "ASK: What number is this?",
             "2 sec. Cue: Everyone, together, on three.",
@@ -348,7 +348,7 @@
           ],
           "SAY: Read the I can lines with me. Everyone, together, on three.",
           [
-            "SAY: The first one everyone can do already.",
+            "SAY: We'll start with the first one and build up to the others together.",
             "By the end you will do all three."
           ]
         ],
@@ -396,7 +396,8 @@
         "beats": [
           [
             "POINT to the counters.",
-            "SAY: Watch me. First I count the counters. One, two, three, four, five, six."
+            "SAY: Let's look at this one together. First I count the counters.",
+            "One, two, three, four, five, six."
           ],
           [
             "MODEL the gaps.",
@@ -435,10 +436,10 @@
       "notes": {
         "answer": "2 more - 8 and 2 make 10",
         "beats": [
-          "SAY: Again, watch me. Count the counters first. One to eight.",
+          "SAY: Here's another one. I always count the counters first, one to eight.",
           [
             "MODEL the gaps.",
-            "SAY: Now the empty boxes. One, two. Two empty boxes."
+            "SAY: Now I touch the empty boxes. One, two. That's two empty boxes."
           ],
           "SAY: So I need two more. Eight and two make ten.",
           [
@@ -465,45 +466,47 @@
         {
           "visual": {
             "type": "tensFrame",
+            "filled": 3
+          },
+          "misconception": "counts the counters, not the empty boxes"
+        },
+        {
+          "visual": {
+            "type": "tensFrame",
             "filled": 7
           }
         },
         {
           "visual": {
             "type": "tensFrame",
-            "filled": 5
-          }
-        },
-        {
-          "visual": {
-            "type": "tensFrame",
-            "filled": 9
-          }
+            "filled": 8
+          },
+          "misconception": "loses count of the empty boxes; touch each one"
         }
       ],
-      "answer": 0,
+      "answer": 1,
       "notes": {
-        "answer": "A - 7 counters, 3 empty boxes",
+        "answer": "B - 7 counters, 3 empty boxes",
         "beats": [
-          "SAY: Three frames. Look at the empty boxes, not the counters.",
+          "SAY: Here are three frames. This time, look at the empty boxes, not the counters.",
           [
             "ASK: Which frame has three empty boxes?",
             "5 sec. Cue: voices off, everyone points to A, B or C.",
-            "EXPECT: pointing to A"
+            "EXPECT: pointing to B"
           ],
           [
             "SCAN the carpet, back row first.",
             "80%+ -> reveal, cold call one child: how do you know?",
-            "Less -> count the empty boxes on B together, then re-ask."
+            "Less -> count the empty boxes on A together, seven, then re-ask."
           ],
           [
             "REVEAL after pointing is scanned.",
-            "SAY: A. Seven counters and three empty boxes. Seven and three make ten."
+            "SAY: B. Seven counters and three empty boxes. Seven and three make ten."
           ]
         ],
         "trap": [
-          "pointing to C because it looks fullest.",
-          "Fix: count the empty boxes on C, one, then on A, child re-points."
+          "pointing to A, the frame with 3 counters.",
+          "Fix: touch the empty boxes on A together, seven, child re-points."
         ],
         "prep": "The first decision point. Under 80% means the We Do slides start with counters on real frames, not boards.",
         "tag": "[CFU | Supported application | SC2 | HITS 7]"
@@ -526,7 +529,7 @@
       "notes": {
         "answer": "6 more - 4 and 6 make 10",
         "beats": [
-          "SAY: Your turn. Count the counters first.",
+          "SAY: Now it's your turn. Count the empty boxes this time.",
           [
             "ASK: How many more make 10?",
             "8 sec. Cue: Write it... Chin it... Show me.",
@@ -535,7 +538,7 @@
           [
             "SCAN boards, back row first.",
             "80%+ -> reveal, cold call one 6: how did you count?",
-            "Less -> count the empty boxes together on the board frame, re-ask."
+            "Less -> count the empty boxes together, re-ask."
           ],
           [
             "REVEAL after boards are scanned.",
@@ -569,7 +572,7 @@
       "notes": {
         "answer": "1 more - 9 and 1 make 10",
         "beats": [
-          "SAY: A tricky one. Nearly full.",
+          "SAY: This one is tricky, because the frame is nearly full.",
           [
             "ASK: How many more make 10?",
             "6 sec. Cue: boards up on cue.",
@@ -659,7 +662,7 @@
       "notes": {
         "answer": "7 more - 3 and 7 make 10",
         "beats": [
-          "SAY: On your own now. No talking. Show me on your board.",
+          "SAY: This one is just for you, so work it out quietly on your board.",
           [
             "ASK: How many more make 10?",
             "10 sec. Cue: Write it... Chin it... Show me.",
@@ -733,7 +736,7 @@
       "notes": {
         "answer": "8 more - 2 and 8 make 10",
         "beats": [
-          "SAY: Last one. Eyes on the frame, voices off.",
+          "SAY: Here's your last one. Look carefully at the frame.",
           [
             "ASK: How many more make 10?",
             "8 sec. Cue: voices off, fingers up.",

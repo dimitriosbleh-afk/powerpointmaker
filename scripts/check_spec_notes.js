@@ -13,7 +13,7 @@
  */
 
 const path = require("path");
-const { loadSpec } = require("../themes/lesson/buildLesson");
+const { loadSpec, glanceInputFor } = require("../themes/lesson/buildLesson");
 const { composeGlanceNotes } = require("../themes/core/composeNotes");
 
 const specPath = process.argv[2];
@@ -43,7 +43,7 @@ let problems = 0;
   let words = 0;
   try {
     const silent = console.log; console.log = () => {};
-    const composed = composeGlanceNotes(n, { validate: false });
+    const composed = composeGlanceNotes(glanceInputFor(slide), { validate: false });
     console.log = silent;
     const live = composed.split("\n---")[0].trim();
     words = live ? live.split(/\s+/).length : 0;
@@ -56,7 +56,7 @@ let problems = 0;
   const origLog = console.log;
   console.log = () => {};   // the composer's wrap advisories duplicate the long-line report above
   try {
-    composeGlanceNotes(n);
+    composeGlanceNotes(glanceInputFor(slide));
   } catch (err) {
     issues.push(String(err.message).replace(/^\[composeGlanceNotes\]\s*/, ""));
   } finally {

@@ -96,7 +96,7 @@
         "beats": [
           [
             "POINT to the four faces.",
-            "SAY: Four feelings. You can read a face in a second."
+            "SAY: Here are four faces. Most of us can read a face in a second."
           ],
           [
             "ASK: How can you tell how someone feels without being told?",
@@ -104,8 +104,8 @@
             "EXPECT: their face, what they do, their voice"
           ],
           [
-            "SCAN the room. Listen for what they do.",
-            "80%+ naming an action -> next slide.",
+            "SCAN the room. Listen for actions.",
+            "80%+ -> next slide.",
             "Less -> act a worried face, ask what gave it away, re-ask."
           ],
           "SAY: Authors do the same with words. Today we find the clues in the words."
@@ -134,8 +134,8 @@
           ],
           "SAY: Read the I can lines with me. Everyone, together, on three.",
           [
-            "SAY: The first one you can do now.",
-            "The third one is our big goal today. We will say it many times."
+            "SAY: We'll start with the first one and build up together.",
+            "Finding the clue is our big goal today."
           ]
         ],
         "prep": "SC1 naming a feeling is reachable for all; SC2 finding the clue is the core target and the exit evidence; SC3 the full sentence stem is the stretch.",
@@ -182,23 +182,23 @@
       ],
       "source": "Written for this lesson",
       "notes": {
-        "answer": "nervous - knees wobbled, held the rail, big breath",
+        "answer": "worried - knees wobbled, held the rail, big breath",
         "beats": [
           [
-            "READ the passage aloud once.",
-            "SAY: Watch me hunt for clues about how Mia feels."
+            "READ it aloud once.",
+            "SAY: Now I'm going to hunt for clues about how Mia feels."
           ],
           [
             "POINT to knees wobbled.",
-            "SAY: When my knees wobble, I feel nervous. That is a clue."
+            "SAY: When my knees wobble, I feel worried. That's a clue."
           ],
           [
             "POINT to held the rail with both hands.",
-            "SAY: Holding on tight. Another clue."
+            "SAY: She's holding on tight with both hands. That's another clue."
           ],
           [
             "POINT to took a big breath.",
-            "SAY: So I think Mia feels nervous because her knees wobbled."
+            "SAY: So I think Mia feels worried, because her knees wobbled."
           ]
         ],
         "trap": [
@@ -214,56 +214,49 @@
     {
       "kind": "choice",
       "badge": "CFU",
-      "title": "How does Mia feel?",
-      "prompt": "Point to A, B or C",
+      "title": "Which words are the clue?",
+      "prompt": "Leo held his new kite. He grinned and ran across the park.",
       "options": [
         {
-          "visual": {
-            "type": "pictogram",
-            "name": "happy"
-          },
-          "text": "happy"
+          "text": "held his new kite",
+          "misconception": "picks the thing, not what Leo's body did"
         },
         {
-          "visual": {
-            "type": "pictogram",
-            "name": "worried"
-          },
-          "text": "nervous"
+          "text": "he grinned"
         },
         {
-          "visual": {
-            "type": "pictogram",
-            "name": "angry"
-          },
-          "text": "angry"
+          "text": "across the park",
+          "misconception": "picks the place, not a clue about the feeling"
         }
       ],
       "answer": 1,
       "notes": {
-        "answer": "B - nervous. Clue: knees wobbled, held the rail",
+        "answer": "B - he grinned. Leo feels happy",
         "beats": [
-          "SAY: Three feelings. Think about the clues, not the picture.",
           [
-            "ASK: How does Mia feel?",
-            "5 sec. Cue: voices off, everyone points to A, B or C.",
+            "SAY: Here's a new story about Leo.",
+            "Listen for what his body does while I read it."
+          ],
+          [
+            "ASK: Which words are the clue about how Leo feels?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
             "EXPECT: pointing to B"
           ],
           [
             "SCAN the carpet, back row first.",
-            "80%+ -> reveal, cold call one child: which clue told you?",
-            "Less -> re-read knees wobbled, ask how their knees feel when scared, re-ask."
+            "80%+ -> reveal, cold call one child: so how does Leo feel?",
+            "Less -> grin, ask what that shows, re-ask."
           ],
           [
             "REVEAL after pointing is scanned.",
-            "SAY: Nervous. Her wobbly knees told us. Say it: nervous because her knees wobbled."
+            "SAY: He grinned. That's what his body did, so it's our clue. Leo feels happy."
           ]
         ],
         "trap": [
-          "pointing to happy because it is a pool.",
-          "Fix: cover pool, read the three clues, child re-points."
+          "pointing to A, the kite.",
+          "Fix: ask what Leo's face did, child re-points to the grin."
         ],
-        "prep": "First decision point. Under 80% means the We Do starts with acting the clues out before reading the next text.",
+        "prep": "First decision point, on a new text so it checks the move, not memory of the model. Under 80% means the We Do starts with acting the clues out.",
         "tag": "[CFU | Supported application | SC2 | HITS 7]"
       }
     },
@@ -284,8 +277,8 @@
         "answer": "excited - jumped, clapped, shouted, hugged",
         "beats": [
           [
-            "CHORAL READ the passage, everyone, together, on three.",
-            "SAY: Your hunt. Find one clue about Sam."
+            "CHORAL READ, everyone, together, on three.",
+            "SAY: Now it's your turn. Find one clue about how Sam feels."
           ],
           [
             "ASK: Which words are a clue?",
@@ -294,12 +287,12 @@
           ],
           [
             "SCAN boards, back row first.",
-            "80%+ -> reveal, cold call: what feeling is that?",
-            "Less -> act out jumped and clapped, ask how that feels, re-ask."
+            "80%+ -> reveal, cold call: which feeling?",
+            "Less -> jump and clap, ask how that feels, re-ask."
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: Three clues. Tick yours."
+            "SAY: Here are the three clues. Tick yours if it matches."
           ]
         ],
         "trap": [
@@ -307,7 +300,7 @@
           "Fix: ask what Sam's body did, child rewrites."
         ],
         "stretch": "Find a clue in what Sam said.",
-        "help": "Give jumped up. Ask for one more like it.",
+        "help": "Give jumped up, ask for one more.",
         "prep": "Guided practice on a new text with the same move: body clue first, then the feeling with because. SC2.",
         "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
       }
@@ -317,35 +310,36 @@
       "badge": "CFU",
       "badgeColor": "alert",
       "title": "Which feeling? Find the clue.",
-      "extract": "Ali looked into his empty lunchbox. His tummy rumbled and his shoulders dropped.",
+      "extract": "Ali looked into his empty lunchbox. His shoulders dropped and a tear rolled down his cheek.",
       "source": "Written for this lesson",
       "reveal": {
         "answers": [
-          "sad or hungry - tummy rumbled, shoulders dropped"
+          "sad - a tear rolled down his cheek"
         ]
       },
       "notes": {
-        "answer": "sad, hungry or disappointed - clue: tummy rumbled, shoulders dropped",
+        "answer": "sad - shoulders dropped, a tear rolled down his cheek",
         "beats": [
-          "SAY: On your own. No talking. Read it twice.",
+          "SAY: This one is just for you, so read it twice in your head.",
           [
             "ASK: How does Ali feel, and which words told you?",
             "30 sec. Cue: Write it... Chin it... Show me.",
-            "EXPECT: sad, because his shoulders dropped. ACCEPT: hungry, disappointed."
+            "EXPECT: sad, because a tear rolled down. ACCEPT: upset."
           ],
           [
-            "SCAN every board, back row first.",
+            "SCAN every board.",
             "80%+ -> reveal, then the worksheet.",
-            "Less -> drop your own shoulders, ask what that shows, re-ask."
+            "Less -> drop your shoulders, ask what that shows, re-ask."
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: Sad, or hungry. His shoulders dropped. Tick or fix your feeling and your clue."
+            "SAY: Sad. His shoulders dropped and a tear rolled down his cheek.",
+            "Tick or fix your feeling and your clue."
           ]
         ],
         "trap": [
-          "a feeling with no clue written.",
-          "Fix: ask which words told you, child adds the clue."
+          "hungry, from the empty lunchbox.",
+          "Fix: ask what Ali's body did, child rewrites with a body clue."
         ],
         "prep": "The hinge before independence. A child with no clue on the board works with the teacher on the first clue of the worksheet story.",
         "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
@@ -397,33 +391,28 @@
       "kind": "exitTicket",
       "title": "Show what you know",
       "visual": {
-        "type": "pictograms",
-        "items": [
-          "happy",
-          "sad",
-          "worried",
-          "angry"
-        ]
+        "type": "text",
+        "text": "Ruby looked at the dark hall. She hugged her teddy tight."
       },
       "questions": [
-        "Point to how Mia felt at the pool. Tell your partner the clue."
+        "Write the feeling and one clue."
       ],
       "notes": {
-        "answer": "worried or nervous - knees wobbled, held the rail",
+        "answer": "scared or worried - she hugged her teddy tight",
         "beats": [
-          "SAY: Last one. Think back to Mia at the pool.",
+          "SAY: Here's a new story about Ruby. Read it twice in your head.",
           [
-            "ASK: How did Mia feel? Point, then tell your partner the clue.",
-            "10 sec. Cue: voices off, everyone points, then turn and tell.",
-            "EXPECT: pointing to worried, saying knees wobbled or held the rail"
+            "ASK: How does Ruby feel, and which words told you?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: scared, because she hugged her teddy tight. ACCEPT: worried."
           ],
-          "RECORD who points to happy or gives no clue. Tomorrow's small group."
+          "RECORD who writes no clue, or the dark hall. Tomorrow's small group."
         ],
         "trap": [
-          "pointing to happy because of the pool.",
+          "writing the dark hall as the clue.",
           "Fix: none now, record the name."
         ],
-        "prep": "Exit evidence for SC2 from the pointing and the partner talk, plus the sheet, drives tomorrow's grouping.",
+        "prep": "Exit evidence for SC2 on a text no one has seen, one board per child. With the sheet, it drives tomorrow's grouping.",
         "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
       }
     },

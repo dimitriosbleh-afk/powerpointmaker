@@ -731,11 +731,18 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
       fill: { color: fillColor },
     });
 
+    // Left column: the Answer tag with the small Tick & fix cue under it,
+    // centred as a block. The answer then owns the rest of the bar, full
+    // width and full height. The cue is dropped on a bar too short to hold it.
+    const tagW = byBand(sz, 1.6, 1.4, 1.2);
+    const tagH = byBand(sz, 0.42, 0.38, 0.32);
+    const cueH = byBand(sz, 0.24, 0.22, 0.20);
+    const cueFits = Boolean(label) && showTick && h >= tagH + cueH + 0.24;
+    const blockH = tagH + (cueFits ? 0.04 + cueH : 0);
+    const tagY = y + (h - blockH) / 2;
     if (label) {
-      const tagW = byBand(sz, 1.6, 1.4, 1.2);
-      const tagH = byBand(sz, 0.42, 0.38, 0.32);
       el.addTextOnShape(slide, String(label), {
-        x: x + 0.18, y: y + 0.16, w: tagW, h: tagH, rectRadius: 0.06,
+        x: x + 0.18, y: tagY, w: tagW, h: tagH, rectRadius: 0.06,
         fill: { color: C.WHITE },
       }, {
         fontSize: byBand(sz, 16, 14, 12),
@@ -743,31 +750,43 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
         bold: true, align: "center", valign: "middle", margin: 0,
       });
     }
+    if (cueFits) {
+      slide.addText("Tick & fix", {
+        x: x + 0.18, y: tagY + tagH + 0.04, w: tagW, h: cueH,
+        fontSize: byBand(sz, 12, 11, 10),
+        fontFace: FONT_B, color: textColor, italic: true,
+        align: "center", valign: "middle", margin: 0,
+      });
+    }
 
     const labelOffset = label ? byBand(sz, 1.85, 1.65, 1.45) : 0.2;
-    const tickCueW = byBand(sz, 1.8, 1.6, 1.4);
+    const textY = y + 0.08;
+    const textW = w - labelOffset - 0.18;
+    const textH = h - 0.16;
+    // Renderers do not reliably honour shrink-to-fit, so step the size down
+    // until the wrapped answer fits (0.42 em is a bold heading-face average).
+    const linesAt = (pt) => {
+      const perLine = Math.max(1, Math.floor(textW / (pt * 0.42 / 72)));
+      let lines = 1;
+      let used = 0;
+      text.split(/\s+/).filter(Boolean).forEach((word) => {
+        const len = word.length + (used ? 1 : 0);
+        if (used && used + len > perLine) { lines += 1; used = word.length; } else { used += len; }
+      });
+      return lines;
+    };
+    let answerSize = fontSize;
+    const answerFloor = byBand(sz, 22, 20, 16);
+    while (answerSize > answerFloor && linesAt(answerSize) * answerSize * 1.2 / 72 > textH) answerSize -= 1;
     slide.addText(String(text), {
-      x: x + labelOffset, y: y + 0.12,
-      // Stop before the Tick & fix cue so the two text boxes never overlap
-      w: w - labelOffset - (showTick ? tickCueW + 0.32 : 0.18),
-      h: h - 0.24,
-      fontSize, fontFace: FONT_H,
+      x: x + labelOffset, y: textY,
+      w: textW,
+      h: textH,
+      fontSize: answerSize, fontFace: FONT_H,
       color: textColor, bold: true,
       align: "left", valign: "middle", margin: 0,
       fit: "shrink", shrinkText: true,
     });
-
-    if (showTick) {
-      const cueY = y + h - byBand(sz, 0.32, 0.28, 0.24);
-      const cueW = tickCueW;
-      slide.addText("Tick & fix", {
-        x: x + w - cueW - 0.18, y: cueY,
-        w: cueW, h: byBand(sz, 0.24, 0.22, 0.20),
-        fontSize: byBand(sz, 12, 11, 10),
-        fontFace: FONT_B, color: textColor, italic: true,
-        align: "right", valign: "middle", margin: 0,
-      });
-    }
   }
 
   /**

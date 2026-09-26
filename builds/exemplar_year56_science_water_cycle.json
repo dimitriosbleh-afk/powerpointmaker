@@ -127,7 +127,7 @@
         "beats": [
           [
             "POINT to the four pictures.",
-            "SAY: Sun, cloud, rain, sea. Four pictures, one story."
+            "SAY: Here are four pictures: sun, cloud, rain and sea. They tell one story."
           ],
           [
             "ASK: Where does the water in a puddle go on a hot day?",
@@ -135,14 +135,11 @@
             "EXPECT: it dries up, goes into the air."
           ],
           [
-            "SCAN the room. Listen for into the air.",
+            "SCAN for into the air.",
             "80%+ -> cold call one pair: where does it go next?",
             "Less -> hold up a wet cloth, ask where the water goes, re-ask."
           ],
-          [
-            "SAY: It does not disappear. It goes somewhere.",
-            "Today we follow it around."
-          ]
+          "SAY: So the water doesn't disappear. Today we follow where it goes."
         ],
         "trap": [
           "saying the water disappears.",
@@ -168,8 +165,8 @@
           ],
           "SAY: Read the I can lines with me. Everyone, together, on three.",
           [
-            "SAY: Naming the stages is the floor.",
-            "Explaining why it never runs out is the goal. That is the exit ticket."
+            "SAY: Naming the stages is where we start.",
+            "Saying what the water does at each one is our goal today."
           ]
         ],
         "prep": "SC1 naming is reachable for all; SC2 order and process is the core target; SC3 the never-runs-out explanation is the exit ticket stretch.",
@@ -306,7 +303,8 @@
             "type": "pictogram",
             "name": "hot"
           },
-          "text": "Evaporation"
+          "text": "Evaporation",
+          "misconception": "places clouds with rising, not with cooling"
         },
         {
           "visual": {
@@ -320,14 +318,15 @@
             "type": "pictogram",
             "name": "rain"
           },
-          "text": "Precipitation"
+          "text": "Precipitation",
+          "misconception": "thinks clouds form from rain, not before it"
         }
       ],
       "answer": 1,
       "notes": {
         "answer": "B - condensation. Vapour cools into drops",
         "beats": [
-          "SAY: Three stages. Which one is the vapour cooling and turning back into drops?",
+          "SAY: Look at all three stages before you choose.",
           [
             "ASK: Which stage turns vapour into cloud?",
             "20 sec. Cue: Write A, B or C... Chin it... Show me.",
@@ -340,7 +339,7 @@
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: Condensation. Cooling makes drops. Tick or fix."
+            "SAY: It's condensation, because cooling turns the vapour into drops. Tick or fix."
           ]
         ],
         "trap": [
@@ -394,7 +393,7 @@
       "notes": {
         "answer": "evaporation, condensation, precipitation, collection",
         "beats": [
-          "SAY: The names are gone. The clues are not.",
+          "SAY: The names are gone, but the clues are still there.",
           [
             "ASK: Name stages 1 to 4 in order.",
             "60 sec. Partner talk, then Write it... Chin it... Show me.",
@@ -455,7 +454,7 @@
         "beats": [
           [
             "POINT to the table.",
-            "SAY: Names and what the water does. Now say it without looking."
+            "SAY: Here's what the water does at each stage. Now say it without looking."
           ],
           [
             "ASK: Say what the water does at each stage.",
@@ -463,7 +462,7 @@
             "EXPECT: rises as vapour, cools into drops, falls, gathers"
           ],
           [
-            "SCAN two pairs per table. Listen for cools.",
+            "SCAN two pairs per table for cools.",
             "80%+ -> next slide.",
             "Less -> choral read the right column, everyone, together, on three, re-ask."
           ]
@@ -472,7 +471,7 @@
           "saying makes clouds without cools.",
           "Fix: ask what happens to the vapour first, student adds cools."
         ],
-        "stretch": "Say the four stages backwards and explain why the order still works.",
+        "stretch": "Say the stages backwards. Does the order still work? Why?",
         "help": "Cover the last two rows only.",
         "prep": "Oral rehearsal of the process language before writing. The table is the anchor; the cover-and-say routine is the practice.",
         "tag": "[We Do | Supported application | SC2 | HITS 3, 6]"
@@ -491,7 +490,7 @@
       "notes": {
         "answer": "the water collects, then evaporates again - the loop repeats",
         "beats": [
-          "SAY: Big question. Think about the arrow back to evaporation.",
+          "SAY: Here's a big question. Think about the arrow back to evaporation.",
           [
             "ASK: What makes this a cycle and not a straight line?",
             "30 sec. Turn and tell, then Write it... Chin it... Show me.",
@@ -500,7 +499,7 @@
           [
             "SCAN boards, back row first.",
             "80%+ -> reveal, cold call: does Earth ever run out of water?",
-            "Less -> trace the loop twice on the board, ask where it ends, re-ask."
+            "Less -> trace the loop twice, ask where it ends, re-ask."
           ],
           [
             "REVEAL after boards are scanned.",
@@ -541,7 +540,7 @@
         "beats": [
           [
             "POINT to the task.",
-            "SAY: Your own diagram. A loop, four labels, arrows, one sentence on why it repeats."
+            "SAY: Now draw your own diagram: a loop, four labels, arrows and one sentence."
           ],
           "SAY: Draw, arrow, write. Say the steps with me.",
           "CIRCULATE. Look for arrows pointing the same way and the loop closing.",
@@ -561,25 +560,28 @@
       "kind": "exitTicket",
       "title": "Before you go",
       "questions": [
-        "Name the four stages of the water cycle in order.",
-        "In one sentence: why does the water cycle never run out?"
+        "Wet washing dries on the line. Which stage is this, and what does the water do?",
+        "Could that same water fall as rain on our school one day? Explain how."
       ],
       "notes": {
-        "answer": "evaporation, condensation, precipitation, collection; the water collects and evaporates again",
+        "answer": "evaporation, rises as vapour; yes, it goes around the loop again",
         "beats": [
-          "SAY: Two questions on your whiteboard. Names in order, then one sentence.",
+          "SAY: Two new questions for your whiteboard, about washing on the line.",
           [
-            "ASK: Write the four stages in order. Then one sentence: why does it never run out?",
+            "ASK: Answer both questions on your board.",
             "180 sec. Cue: Write it... Chin it... Show me.",
-            "EXPECT: the four names in order; the water goes around again"
+            "EXPECT: evaporation, it rises as vapour; yes, it goes around the loop"
           ],
-          "RECORD who has the order right and who explains the repeat. Two lists for tomorrow."
+          [
+            "RECORD who names the stage and what happens,",
+            "and who explains the loop. Two lists for tomorrow."
+          ]
         ],
         "trap": [
-          "explaining with rain falls again but no return to evaporation.",
+          "naming evaporation but not what the water does.",
           "Fix: none now, record the name."
         ],
-        "prep": "Exit evidence: question 1 is SC1 and SC2, question 2 is SC3. Tomorrow groups on question 2.",
+        "prep": "Exit evidence on a context not used in the lesson: question 1 is SC2, question 2 is SC3. Tomorrow groups on question 1.",
         "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
       }
     },

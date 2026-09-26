@@ -85,7 +85,7 @@ then `li`, then `keyWord` cards if any, then the body, `exitTicket`,
 | `heroVisual` | `badge`, `title`, `visual` | `label`, `prompt`, `badgeColor`, `reveal` | the representation IS the slide |
 | `content` | `badge`, `title`, `lines` | `visual`, `badgeColor`, `reveal` | 1-3 short lines set as a hero panel; more lines as bullets; visual on the right |
 | `workedExample` | `stage` (1-5), `title`, `steps` | `stageLabel`, `visual`, `reveal` | numeracy worked example with visual beside the steps |
-| `choice` | `badge`, `title`, `options` (2-4) | `prompt`, `answer` (0-based), `letters` | Which one? cards; `answer` reveals a tick on click |
+| `choice` | `badge`, `title`, `options` (2-4) | `prompt`, `answer` (0-based), `letters` | Which one? cards; `answer` reveals a tick on click. With `answer`, every wrong option needs `misconception` |
 | `cfu` | `title`, `technique`, `question` | `badge`, `reveal` | text check with the CHECK stamp |
 | `youDo` | `title`, `task` | `steps` (max 3), `where`, `visual`, `visualLabel`, `frame` | task hero, First/Next/Then chips, mini model, sentence frame |
 | `textExtract` | `badge`, `title`, `extract` | `highlights`, `source`, `prompt`, `reveal` | exact text, marker-highlighted phrases |
@@ -94,7 +94,7 @@ then `li`, then `keyWord` cards if any, then the body, `exitTicket`,
 | `boardBuild` | `title`, `directive` | `promptText`, `prefilledHints` | blank build canvas |
 | `scenario` | `title`, `scenario`, `questions` | `badge` | wellbeing scenario |
 | `pairShare` | `title`, `questions` | | discussion cards |
-| `exitTicket` | `questions` (1-3) | `title`, `visual`, `label` | with `visual`, a hero visual plus the first question as the prompt |
+| `exitTicket` | `questions` (1-3) | `title`, `visual`, `label` | with `visual`, a hero visual plus the first question as the prompt. Must be a new item, collected individually |
 | `closing` | `reflectionPrompt` | `selfAssessment`, `takeaways` | review and reflect; SC come from the `li` slide |
 
 `badge` is the student-facing stage label (`"I Do"`, `"We Do"`, `"CFU"`,
@@ -102,6 +102,32 @@ then `li`, then `keyWord` cards if any, then the body, `exitTicket`,
 We Do and You Do automatically. `badgeColor` is one of `primary`
 `secondary` `accent` `alert` `success` `assess`; it defaults sensibly from the
 badge text (CFU red, We Do secondary, You Do success).
+
+### Checks and the exit ticket
+
+A check is only decision-grade when every wrong answer tells the teacher
+something (megaprompt 37). On a `choice` slide with an `answer`, each wrong
+option names the misconception it catches:
+
+```json
+"options": [
+  { "visual": { "type": "tensFrame", "filled": 3 }, "misconception": "counts the counters, not the empty boxes" },
+  { "visual": { "type": "tensFrame", "filled": 7 } },
+  { "visual": { "type": "tensFrame", "filled": 8 }, "misconception": "loses count of the empty boxes; touch each one" }
+]
+```
+
+The build adds a `WRONG ANSWERS:` line to the slide's prep zone from these,
+so leave room for it (the prep zone holds three lines).
+
+The exit ticket is the lesson's evidence, so it must be a new item: a new
+text, new numbers or a new context, never one already modelled, checked or
+revealed (megaprompt 53). The validator fails an exit ticket that reuses a
+character or place name from an earlier slide, repeats six or more words in
+a row from one, repeats an earlier question with no new item, reuses a
+modelled visual, collects its answer through partner talk or a choral
+response, or leaves SC2 out of its tag. A `{ "type": "text" }` visual holds
+a short new passage and sizes itself to fit.
 
 ### Visual specs
 

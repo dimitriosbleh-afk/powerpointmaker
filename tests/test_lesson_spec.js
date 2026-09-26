@@ -90,9 +90,48 @@ function testValidatorNamesTheMistake() {
   ok("validator names the common mistakes with their field paths");
 }
 
+/** The evidence rules: mapped distractors on checks, and an exit ticket that is a new, individual item. */
+function testEvidenceRules() {
+  const byName = (n) => loadSpec(exemplars.find((f) => path.basename(f).includes(n)));
+  const errorsOf = (spec) => validateLessonSpec(spec).errors;
+
+  const found = byName("foundation");
+  const check = found.slides.find((s) => s.kind === "choice" && s.answer != null);
+  delete check.options.find((o, i) => i !== check.answer).misconception;
+  assert(errorsOf(found).some((e) => /misconception: every wrong option/.test(e)), "a wrong option with no misconception is an error");
+
+  const lit = byName("year2");
+  const exitAt = lit.slides.findIndex((s) => s.kind === "exitTicket");
+  const extract = lit.slides.find((s) => s.kind === "textExtract").extract;
+  const reusedName = JSON.parse(JSON.stringify(lit));
+  reusedName.slides[exitAt].visual = { type: "text", text: "Point to how Mia felt at the pool." };
+  assert(errorsOf(reusedName).some((e) => /reuses "Mia"/.test(e)), "an exit ticket reusing the I Do character is an error");
+
+  const copied = JSON.parse(JSON.stringify(lit));
+  copied.slides[exitAt].questions = [extract];
+  assert(errorsOf(copied).some((e) => /six or more words in a row/.test(e)), "an exit ticket copying an earlier text is an error");
+
+  const partner = JSON.parse(JSON.stringify(lit));
+  partner.slides[exitAt].notes.beats[1][1] = "10 sec. Cue: turn and tell, partner A first.";
+  assert(errorsOf(partner).some((e) => /partner talk or a choral answer/.test(e)), "exit evidence through partner talk is an error");
+
+  const sameVisual = JSON.parse(JSON.stringify(found));
+  const fExit = sameVisual.slides.find((s) => s.kind === "exitTicket");
+  fExit.visual = JSON.parse(JSON.stringify(sameVisual.slides.find((s) => s.kind === "heroVisual" && /I Do/.test(s.badge)).visual));
+  assert(errorsOf(sameVisual).some((e) => /the same visual as/.test(e)), "an exit ticket reusing a modelled visual is an error");
+
+  const sci = byName("science");
+  const sExit = sci.slides.find((s) => s.kind === "exitTicket");
+  sExit.questions = [sci.slides.find((s) => s.kind === "cfu").question];
+  assert(errorsOf(sci).some((e) => /asks the same question as/.test(e)), "an exit ticket repeating a check question is an error");
+
+  ok("checks need mapped distractors; exit tickets must be a new item with individual evidence");
+}
+
 (async () => {
   await testExemplarsBuild();
   testValidatorNamesTheMistake();
+  testEvidenceRules();
   console.log(`${passed} check(s) passed.`);
 })().catch((err) => {
   console.error("FAIL " + (err && err.stack ? err.stack : err));
