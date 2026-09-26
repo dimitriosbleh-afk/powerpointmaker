@@ -12,6 +12,7 @@ const fs = require("fs");
 const path = require("path");
 const pptxgen = require("pptxgenjs");
 const { createTheme } = require("../themes/factory");
+const { addResourceSlide } = require("../themes/pdf_helpers");
 
 const SAMPLE_LI = "We are learning to investigate fractions and reason about equal parts.";
 const SAMPLE_SC = [
@@ -68,6 +69,14 @@ const SELF_ASSESS = {
     const label = `Band: ${band}`;
 
     T.titleSlide(pres, `Smoke Test - ${band}`, "LI/SC, content, CFU, workedEx, closing", label, "Internal smoke test.");
+    // Resources slide with a long materials list: stresses the grouped layout.
+    addResourceSlide(pres, {
+      resources: [],
+      manipulatives: ["Fraction strips for every student", "Counters, about 12 per student"],
+      studentTools: ["Mini-whiteboards and markers"],
+      routineIcons: ["Write it, chin it, show me", "Turn and tell", "Fingers up, voices off"],
+      boardSetup: ["A large fraction wall drawn on the board, halves to eighths, filled live during the I Do"],
+    }, T, label, "Internal smoke test.");
     T.liSlide(pres, SAMPLE_LI, SAMPLE_SC, "Internal smoke test.", label);
 
     // Dense bullets with empty-string spacers — left card stress test.
