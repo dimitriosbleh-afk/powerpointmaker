@@ -10,6 +10,7 @@
 
 const PDFDocument = require("pdfkit");
 const fs = require("fs");
+const { resolveSansFamily } = require("./core/fonts");
 const path = require("path");
 const {
   createStructuredMockupPlan,
@@ -66,55 +67,10 @@ function resourceNameFromFileName(fileName) {
   return cleanResourceLabel(baseName) || "Resource";
 }
 
-function getPdfFontFamilyCandidates() {
-  if (process.platform === "win32") {
-    return [
-      {
-        regular: "C:/Windows/Fonts/arial.ttf",
-        bold: "C:/Windows/Fonts/arialbd.ttf",
-        italic: "C:/Windows/Fonts/ariali.ttf",
-      },
-      {
-        regular: "C:/Windows/Fonts/calibri.ttf",
-        bold: "C:/Windows/Fonts/calibrib.ttf",
-        italic: "C:/Windows/Fonts/calibrii.ttf",
-      },
-    ];
-  }
-
-  if (process.platform === "darwin") {
-    return [
-      {
-        regular: "/System/Library/Fonts/Supplemental/Arial.ttf",
-        bold: "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
-        italic: "/System/Library/Fonts/Supplemental/Arial Italic.ttf",
-      },
-    ];
-  }
-
-  return [
-    {
-      regular: "/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf",
-      bold: "/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf",
-      italic: "/usr/share/fonts/truetype/liberation2/LiberationSans-Italic.ttf",
-    },
-    {
-      regular: "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
-      bold: "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
-      italic: "/usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf",
-    },
-    {
-      regular: "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-      bold: "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-      italic: "/usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf",
-    },
-  ];
-}
-
+// Paper uses the shared sans family (themes/core/fonts.js): Trebuchet MS where
+// installed, then Arial, so worksheets read friendly on every teacher's machine.
 function resolvePdfFontFamily() {
-  return getPdfFontFamilyCandidates().find((family) =>
-    [family.regular, family.bold, family.italic].every((filePath) => fs.existsSync(filePath))
-  ) || null;
+  return resolveSansFamily();
 }
 
 // ── Page constants (A4 in points: 595.28 x 841.89) ─────────────────────────

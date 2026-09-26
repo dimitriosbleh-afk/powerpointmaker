@@ -11,6 +11,9 @@
  *
  *   node scripts/taught_log.js --list <yearLevel> <subject>
  *   node scripts/taught_log.js --remove <yearLevel> <subject> <key>
+ *   node scripts/taught_log.js --add <yearLevel> <subject> <key> "<what was taught>" ["<detail>"]
+ *       Record learning taught outside this pipeline (a term planner, last
+ *       term's decks) so Daily Review can reach back to it.
  *
  * The log lives in records/ (gitignored). build_and_check.js writes to it
  * whenever a lesson spec passes every gate.
@@ -18,7 +21,7 @@
 
 const path = require("path");
 const { loadSpec } = require("../themes/lesson/buildLesson");
-const { readLog, removeEntry, positionOf, logPath } = require("../themes/lesson/taughtLog");
+const { readLog, writeLog, removeEntry, positionOf, logPath } = require("../themes/lesson/taughtLog");
 
 function line(e) {
   const sc2 = Array.isArray(e.successCriteria) ? e.successCriteria[1] : "";
@@ -88,8 +91,22 @@ function main() {
     console.log(ok ? `Removed ${args[3]}.` : `${args[3]} is not in the log.`);
     process.exit(ok ? 0 : 1);
   }
+  if (args[0] === "--add" && (args.length === 5 || args.length === 6)) {
+    const [, yearLevel, subject, key, title, detail] = args;
+    const m = /^(\d{4})-T([1-4])-W(\d{1,2})-S(\d{1,2})$/.exec(key);
+    if (!m) { console.error(`Key must look like 2026-T3-W7-S1 (got ${key}).`); process.exit(2); }
+    const pos = positionOf({ year: Number(m[1]), term: Number(m[2]), week: Number(m[3]), session: Number(m[4]) });
+    const entries = readLog(yearLevel, subject).filter((e) => e.key !== key);
+    entries.push({
+      key, order: pos.order, weekIndex: pos.weekIndex, year: pos.year, term: pos.term, week: pos.week, session: pos.session,
+      title, learningIntention: detail || undefined, successCriteria: [], keyWords: [], reviews: [], items: [],
+      recordedBy: "manual", builtAt: new Date().toISOString(),
+    });
+    console.log(`Recorded ${key} in ${writeLog(yearLevel, subject, entries)}`);
+    return;
+  }
   if (args.length === 1 && args[0].endsWith(".json")) { showFor(args[0]); return; }
-  console.error("Usage:\n  node scripts/taught_log.js builds/<spec>.json\n  node scripts/taught_log.js --list <yearLevel> <subject>\n  node scripts/taught_log.js --remove <yearLevel> <subject> <key>");
+  console.error("Usage:\n  node scripts/taught_log.js builds/<spec>.json\n  node scripts/taught_log.js --list <yearLevel> <subject>\n  node scripts/taught_log.js --remove <yearLevel> <subject> <key>\n  node scripts/taught_log.js --add <yearLevel> <subject> <key> \"<what was taught>\" [\"<detail>\"]");
   process.exit(2);
 }
 

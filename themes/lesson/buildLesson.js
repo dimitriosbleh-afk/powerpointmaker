@@ -23,6 +23,7 @@ const { addResourceSlide, getSessionResourceFolder } = require("../pdf_helpers")
 const { validateLessonSpec } = require("./validate");
 const { buildResources } = require("./resources");
 const { expandSpec } = require("./practice");
+const { YOUR_TURN_STEPS } = require("./validate");
 
 const ROOT = path.resolve(__dirname, "..", "..");
 
@@ -66,9 +67,9 @@ function glanceInputFor(slide) {
 function resourcesNotes(authored, plan) {
   const lines = [String(authored || "").trim()].filter(Boolean);
   if (plan) {
-    lines.push("", "BEFORE THE LESSON");
+    lines.push("", "BEFORE TEACHING");
     lines.push(`Curriculum: ${plan.curriculum}`);
-    lines.push(`Lesson shape: ${plan.shape}`);
+    lines.push(`Shape: ${plan.shape}`);
     lines.push(`Critical feature: ${plan.criticalFeature}`);
     lines.push(`Decision points: ${plan.decisionPoints.join("; ")}`);
     if (plan.anchor) lines.push(`Unit anchor: ${plan.anchor}`);
@@ -160,6 +161,12 @@ async function buildLesson(authored, opts) {
 
   const pres = new pptxgen();
   pres.layout = "LAYOUT_16x9";
+  // Years 5-6 maths: no bullet points on any slide (megaprompt 85).
+  const planner56 = L.subject === "numeracy" && L.yearLevel === "grade56";
+  if (planner56) {
+    const addSlide = pres.addSlide.bind(pres);
+    pres.addSlide = (...args) => { const sl = addSlide(...args); sl.__noBullets = true; return sl; };
+  }
 
   const liSlideSpec = spec.slides.find((s) => s.kind === "li");
   const scItems = liSlideSpec ? toList(liSlideSpec.successCriteria) : [];
@@ -198,7 +205,10 @@ async function buildLesson(authored, opts) {
         break;
 
       case "fluency":
-        s = T.fluencySlide(pres, slide.title, toList(slide.prompts), notes, footer);
+        // A visual (e.g. a column sum for algorithm practice) replaces the numeral prompts.
+        s = slide.visual
+          ? T.heroVisualSlide(pres, "Stage 1  |  Fluency", slide.title, slide.visual, notes, footer, { label: slide.label, badgeColor: T.C.ACCENT })
+          : T.fluencySlide(pres, slide.title, toList(slide.prompts), notes, footer);
         break;
 
       case "launch":
@@ -254,7 +264,8 @@ async function buildLesson(authored, opts) {
         break;
 
       case "youDo":
-        s = T.youDoSlide(pres, slide.title, slide.task, toList(slide.steps), notes, footer, {
+        // Years 5-6 maths uses the staff's standard Your turn steps (megaprompt 85).
+        s = T.youDoSlide(pres, slide.title, slide.task, planner56 && slide.steps == null ? YOUR_TURN_STEPS.slice() : toList(slide.steps), notes, footer, {
           where: slide.where, visual: slide.visual, visualLabel: slide.visualLabel, frame: slide.frame,
           badgeText: slide.badge ? badgeTextFor(T, slide) : undefined,
           badgeColor: slide.badgeColor ? badgeColorFor(T, slide) : undefined,

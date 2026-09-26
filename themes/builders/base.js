@@ -1336,19 +1336,22 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
       // plain unlabelled "I can..." list, sized for the year band.
       const rowH = byBand(sz, 0.46, 0.42, 0.34);
       const rowFontSize = sz.takeaway;
-      const dotR = byBand(sz, 0.10, 0.09, 0.07);
-      const textX = 0.7 + dotR * 2 + 0.20;
+      // A no-bullets deck (Years 5-6 maths) drops the dot markers too.
+      const dotR = s.__noBullets ? 0 : byBand(sz, 0.10, 0.09, 0.07);
+      const textX = s.__noBullets ? 0.7 : 0.7 + dotR * 2 + 0.20;
       const textW = 9.0 - textX - 0.2;
 
       scItems.forEach((text, i) => {
         const rowY = cursorY + i * (rowH + 0.06);
         const dotY = rowY + (rowH / 2) - dotR;
-        s.addShape("roundRect", {
-          x: 0.7, y: dotY,
-          w: dotR * 2, h: dotR * 2,
-          rectRadius: dotR,
-          fill: { color: accentOnDark },
-        });
+        if (dotR) {
+          s.addShape("roundRect", {
+            x: 0.7, y: dotY,
+            w: dotR * 2, h: dotR * 2,
+            rectRadius: dotR,
+            fill: { color: accentOnDark },
+          });
+        }
         s.addText(String(text || ""), {
           x: textX, y: rowY,
           w: textW, h: rowH,

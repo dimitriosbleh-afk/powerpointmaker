@@ -51,7 +51,7 @@ its student-view QA, for slides, worksheet visuals and cut-out `cards`.
 | `week` | yes | 1-based; picks the palette variant. Every session of a unit uses the same week |
 | `year` | | Four-digit year; defaults to the current year |
 | `minutes` | | Session length, default 60. Sets the response floor (one per three minutes) |
-| `plan` | yes | `{ curriculum, shape, criticalFeature, decisionPoints (2-4), anchor?, catchUp? }`: printed in the Teacher Resources notes under BEFORE THE LESSON (megaprompt 84) |
+| `plan` | yes | `{ curriculum, shape, criticalFeature, decisionPoints (2-4), anchor?, catchUp? }`: printed in the Teacher Resources notes under BEFORE TEACHING (megaprompt 84) |
 | `variant` | alt | 0-5, overrides week |
 | `session` | default 1 | Session number; names the resources folder and the `Session N` prefix |
 | `title` | yes | Deck title |
@@ -83,7 +83,7 @@ then `li`, then `keyWord` cards if any, then the body, `exitTicket`,
 | `overview` | `lines` | `title` | teacher-facing overview (multi-session decks) |
 | `resources` | | | Teacher Resources from `resources` + `materials` |
 | `dailyReview` | `title`, `from` | `prompts`, `visual`, `reveal` | numeracy review; a visual with no prompts fills the slide. `from` names what it retrieves (see Taught log) |
-| `fluency` | `title`, `prompts` | `reveal` | one numeral or fact, hero-sized |
+| `fluency` | `title`, and `prompts` or `visual` | `reveal`, `label` | one numeral or fact, hero-sized; or a visual such as a column sum |
 | `launch` | `title` | `lines`, `visual`, `label`, `prompt`, `reveal` | hero visual (no lines) or hero statement panel |
 | `li` | `learningIntention`, `successCriteria` (exactly 3) | | LI and SC |
 | `keyWord` | `word`, `meaning`, `pictogram` or `image` | `example`, `routine` | one word card with its picture |
@@ -217,7 +217,18 @@ Anywhere a `visual` is accepted:
 { "type": "text", "text": "9" }
 { "type": "table", "rows": [["Animal", "Legs"], ["Dog", "4"]] }
 { "type": "image", "path": "assets/unit/photo.jpg" }
+{ "type": "angle", "rays": [0, 65], "protractor": true }
+{ "type": "angle", "rays": [0, 130, 180], "arcs": [{ "from": 0, "to": 130, "label": "130°" }, { "from": 130, "to": 180, "label": "x" }] }
+{ "type": "angle", "rays": [0, 90], "arcs": [{ "from": 0, "to": 90, "right": true }] }
+{ "type": "columnSum", "numbers": [34567, 12345], "op": "+" }
 ```
+
+`angle`: `rays` are directions in degrees, anticlockwise from pointing
+right, from one vertex; `arcs` mark the angle anticlockwise from `from` to
+`to` with an optional `label` (`right: true` draws the square marker);
+`rotate` turns the figure; `protractor: true` overlays a protractor on the
+first ray. Printed angles are true in degrees, so students can measure them
+with a real protractor. On paper, `size` sets the width in points.
 
 Pictogram names: `node -e 'console.log(require("./themes/factory").createTheme("science","grade2",0).listPictograms().join(" "))'`
 or the sheet at the end of the Visual Catalogue. An unknown name fails the
@@ -313,4 +324,31 @@ automatically (`answerKey: false` to skip). Item fields: `prompt`, `visual`,
 limited to the types with a paper twin (the validator names them).
 
 Keep to zero or one printed resource unless the lesson genuinely needs more
-(megaprompt 0a item 7).
+(megaprompt 0a item 7). Years 5-6 maths is the exception: every session
+carries a main sheet, an Extension and a supported sheet (megaprompt 85).
+
+### Sectioned worksheets
+
+A worksheet may use `sections` instead of `items`. Each section prints a
+coloured banner, an optional `intro`, a worked example with numbered steps,
+then its questions, numbered across the sheet:
+
+```json
+{
+  "kind": "worksheet", "role": "main", "label": "Worksheet",
+  "title": "Measuring Angles", "subtitle": "Use your protractor.",
+  "sections": [
+    {
+      "title": "Measure it", "proficiency": "fluency", "columns": 2,
+      "example": { "prompt": "Measure the angle.", "visual": { "type": "angle", "rays": [0, 50] },
+                   "steps": ["Put the centre on the corner.", "Line up 0 with one arm.", "Read the scale that starts at 0."], "answer": "50°" },
+      "items": [ { "prompt": "Measure the angle.", "visual": { "type": "angle", "rays": [0, 35] }, "answer": "35°", "answerLabel": "Angle:" } ]
+    }
+  ]
+}
+```
+
+`role` is `main`, `extension` or `supported`. `proficiency` (understanding,
+fluency, problemSolving, reasoning) is internal and never printed. A
+question may carry `hint` (printed in italics under it, for supported
+sheets), `box` (a working-space height in points) and `answerLines`.

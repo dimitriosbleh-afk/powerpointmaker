@@ -102,6 +102,8 @@ const SPEC_SAMPLES = {
   pictograms: { type: "pictograms", items: ["happy", "sad", "angry"] },
   text: { type: "text", text: "9" },
   table: { type: "table", rows: [["Animal", "Legs"], ["Dog", "4"], ["Bird", "2"]] },
+  angle: { type: "angle", rays: [0, 130, 180], arcs: [{ from: 0, to: 130, label: "130°" }, { from: 130, to: 180, label: "x" }], protractor: true },
+  columnSum: { type: "columnSum", numbers: [34567, 12345], op: "+" },
   custom: { type: "custom", draw: (slide, f) => { slide.addText("x", { x: f.x, y: f.y, w: 1, h: 0.4 }); return { x: f.x, y: f.y, w: 1, h: 0.4 }; } },
 };
 

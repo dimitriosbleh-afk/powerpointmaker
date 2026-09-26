@@ -113,11 +113,11 @@
   "slides": [
     {
       "kind": "title",
-      "notes": "Open Session 1. Say the lesson in one line: today we find the friends of 10 on a ten frame."
+      "notes": "Open Session 1. Say the focus in one line: today we find the friends of 10 on a ten frame."
     },
     {
       "kind": "resources",
-      "notes": "Prep slide. Print the Make 10 Worksheet, one per child. Ten frames and counters on every table before the lesson. Draw the big ten frame on the board. Nothing is assumed from earlier sessions."
+      "notes": "Prep slide. Print the Make 10 Worksheet, one per child. Ten frames and counters on every table beforehand. Draw the big ten frame on the board. Nothing is assumed from earlier sessions."
     },
     {
       "kind": "dailyReview",
@@ -316,7 +316,7 @@
           "reading 10 as one and zero.",
           "Fix: say ten together, child says it alone."
         ],
-        "prep": "Ends fluency on the number the lesson is about, bridging into the launch.",
+        "prep": "Ends fluency on the number the session is about, bridging into the launch.",
         "tag": "[Fluency | Retention and recall | HITS 6]"
       }
     },
@@ -400,7 +400,7 @@
             "EXPECT: six and four make ten"
           ]
         ],
-        "prep": "The one phrase the lesson uses on every slide. Rehearsed once here, then used, never re-explained.",
+        "prep": "The one phrase the session uses on every slide. Rehearsed once here, then used, never re-explained.",
         "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
       }
     },

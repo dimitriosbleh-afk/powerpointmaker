@@ -6,11 +6,12 @@
 How to read this document:
 
 - PART A (sections A1 to A9, directly below) is the build order. Follow it top to bottom for every lesson. It names the reference section for each step.
-- PART B (sections 0 to 84) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
+- PART B (sections 0 to 85) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
 - Section 0a is the non-negotiable output gate. A lesson that fails any item there is not finished, whatever else it does well.
 
 Version history (newest first):
 
+- v12.10 (27 September 2026): the Years 5-6 maths planning team's rules (85), sectioned kid-friendly worksheets, angle and protractor diagrams, and no "lesson" in teacher notes.
 - v12.9 (26 September 2026): practice volume, taught memory and teacher preparation. Every lesson carries a plan the teacher reads before teaching (84). Every lesson meets a floor of planned whole-class responses and independent items, reached through practice rounds (82). Each machine keeps a taught log, and Daily Review names the earlier lesson it retrieves, spaced, choosing the focus itself when the request does not name one (83).
 - v12.8 (26 September 2026): evidence you can act on. Every wrong option on a check names its misconception (37). The exit ticket is a new item, collected one student at a time (53). Lessons start from a designed example set (81). The validator enforces the first two. Tidied: one DOCX rule (41), Daily Review and Fluency answers are click reveals throughout, section 16 states the sizes the theme ships, section 59 points to Part A.
 - v12.7 (6 September 2026): lessons are authored as specs, not scripts. A lesson spec (`builds/<name>.json`, schema in `docs/lesson-spec.md`) carries content and intent; the pipeline makes every layout decision, validates the spec field by field, composes the notes, builds the deck and PDFs and runs the gates. Three golden exemplars ship in `builds/`. Part A replaces the scattered workflow with one build order. Legacy build scripts moved to `_archive/lessons/` and are not exemplars.
@@ -3105,7 +3106,7 @@ ANSWER: B - 1000 times. 3 more zeros, each zero = x10.
 TRAP: "A, 3 times" = subtracted the little numbers.
    Fix: ring zeros -> student re-says: x10, x10, x10.
 ---
-The decision point of the lesson and the exit ticket's structure. [CFU hinge | Supported application | SC2 | HITS 7, 8]
+The decision point of the session and the exit ticket's structure. [CFU hinge | Supported application | SC2 | HITS 7, 8]
 
 Worked example, Foundation (short beats rarely need continuation lines):
 
@@ -5177,7 +5178,7 @@ Requests arrive in three forms: a Victorian Curriculum 2.0 content description (
 
 4. Keep curriculum language for teachers. Students see a plain-words LI and three "I can" criteria (14). `lesson.plan.curriculum` records the learning area, strand, level and content in plain words; a code appears only when the request supplied it (69).
 
-5. Write the plan. Every spec carries `lesson.plan`, and the build prints it in the Teacher Resources notes under BEFORE THE LESSON: the one screen a teacher reads before teaching. It is the teacher-facing overview that sections 69, 72, 76, 79 and 80 refer to for a single lesson.
+5. Write the plan. Every spec carries `lesson.plan`, and the build prints it in the Teacher Resources notes under BEFORE TEACHING: the one screen a teacher reads before teaching. It is the teacher-facing overview that sections 69, 72, 76, 79 and 80 refer to for a single lesson.
    - `curriculum`: learning area, strand and level in plain words, plus the content ("English 2.0, Literacy, Year 2: inferring a character's feelings from clues in the text").
    - `shape`: the body shape and why, in one line (72).
    - `criticalFeature`: the one thing students must notice (81).
@@ -5188,6 +5189,29 @@ Requests arrive in three forms: a Victorian Curriculum 2.0 content description (
 6. Plan a term or unit before writing its first lesson. List the sessions in order in the unit manifest (68a), each with a one-line `focus` (what it teaches, its critical feature, what its Daily Review revisits), and a unit-level `anchor`. Check the prerequisite chain runs forward, place consolidation and assessment sessions deliberately, vary lesson shapes on purpose (72), and spread review across the term (77). Then build one lesson at a time in that order (83), so each lesson's review can draw on the ones before it.
 
 7. The bar does not move with the request. Whatever came in, the lesson leaves with its plan, an example set (81), diagnostic checks (37), practice that meets the floors (82), a new-item exit ticket (53), spaced review from the taught log (83), and Glance notes a teacher can teach from cold (45 to 47).
+
+# 85. YEARS 5-6 MATHS: THE PLANNING TEAM'S RULES
+
+The maths planning team checks every Years 5-6 maths deck. Their rules override the general defaults for Years 5-6 numeracy (`subject: numeracy`, `yearLevel: grade56`); the validator enforces each one.
+
+Slides:
+- The LI and SC slide comes before the launch: title, Teacher Resources, Daily Review, Fluency, LI and SC, launch, then the body. This replaces the opening order in 0a item 23 for Years 5-6 maths.
+- No bullet points anywhere. The build strips bullet markers from every slide in the deck; content slides keep to 1-3 short lines.
+- The "Your turn" slide always uses these steps (omit `steps` and the build adds them): First: Read each question carefully. Next: Solve each question carefully. Then: Check your answers and move onto the early finisher option, if you get there.
+- No question on a slide is repeated on a worksheet with the same numbers. Keep the skill; change the numbers.
+
+Teacher notes (every subject, every year level):
+- Never use the word "lesson". Staff search merged decks for "Lesson", and every note that uses the word buries the slide they want. Say "session" or name the part.
+
+Worksheets, every session (`resources`, `kind: "worksheet"`, `role`):
+- A main sheet (`role: "main"`), an Extension (`role: "extension"`, label exactly "Extension") and a supported sheet (`role: "supported"`), with answer keys for the main sheet and the Extension.
+- The Extension builds on the session's own content: no new concept that would need more teaching. Explain it in child-friendly words with worked examples. It is the "early finisher option" the Your turn steps point to.
+- The supported sheet is for students working below level: the same skill with more guidance, more worked examples, partly completed steps, hints (`hint` on a question) and bigger visuals.
+- Sheets are sectioned (`sections`). Each section has a child-friendly title, a worked example with its steps shown, and its questions. Sections run from easier to harder. Colour groups them automatically. Use `columns: 2` for short questions so there is room without extra pages.
+- The main sheet is long enough that fast finishers never run out: at least 16 questions over at least 3 sections.
+- Vary the question types: explicit practice of the skill (graded easy to hard), worded problems, problem solving in real-world contexts (Australian sport and children's interests work well), and reasoning (explain, prove, spot the mistake).
+- Tag each section's `proficiency` (understanding, fluency, problemSolving, reasoning). It is never printed. A main sheet covers at least two, includes a problemSolving section, and a week covers all four.
+- Put the representation on the paper: a protractor-ready angle diagram for angles (`{ "type": "angle" }`, drawn true to angle so a real protractor measures it), a fraction wall for fractions, a hundred grid for percentages, a conversion chart for measurement, blank clocks for time. A visual the pipeline cannot draw yet is extended in the shared layer (CLAUDE.md), not approximated in text.
 
 # ===== END OF MEGA-PROMPT. SHIFT CLICK HERE. =====
 

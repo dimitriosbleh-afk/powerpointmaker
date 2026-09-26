@@ -24,11 +24,13 @@
 const { SAFE_BOTTOM } = require("./layout");
 const { DEFAULT_SIZES, byBand } = require("./gradeBand");
 const { getImageDimensions } = require("./images");
+const { DIAGRAM_TYPES, diagramPng } = require("./diagrams");
 
 const SUPPORTED_TYPES = [
   "tensFrame", "fiveFrame", "doubleTensFrame", "dotCard", "dotCards", "numberTrack",
   "numberLine", "fractionStrips", "array", "baseTen", "groupedCounters", "ppwMat",
   "chips", "pictogram", "pictograms", "text", "image", "table", "custom",
+  ...DIAGRAM_TYPES,
 ];
 
 function createVisualSpec(C, FONT_H, FONT_B, el, S, deps) {
@@ -333,6 +335,18 @@ function createVisualSpec(C, FONT_H, FONT_B, el, S, deps) {
           align: "center", valign: "middle", margin: 0,
           fit: "shrink", shrinkText: true,
         });
+        return box;
+      }
+      case "angle":
+      case "columnSum": {
+        // Drawn once as SVG (themes/core/diagrams.js) so slides and paper match.
+        const { dataUri, aspect } = diagramPng(s, { ink: C.CHARCOAL, accent: C.PRIMARY }, 1600);
+        const maxH = s.maxH ? Math.min(f.h, s.maxH) : f.h;
+        let w = f.w;
+        let h = w / aspect;
+        if (h > maxH) { h = maxH; w = h * aspect; }
+        const box = centreBox(f, w, h);
+        slide.addImage({ data: dataUri, x: box.x, y: box.y, w, h });
         return box;
       }
       case "image": {

@@ -20,16 +20,25 @@ const path = require("path");
 const P = require("../pdf_helpers");
 const { renderPictogramPng } = require("../core/pictograms");
 const { byBand } = require("../core/gradeBand");
+const { diagramPng, diagramSvg } = require("../core/diagrams");
+
+// Paper width of a diagram in points: angles big enough to measure with a real protractor.
+function diagramWidth(visual, sz, maxW) {
+  const base = visual.type === "angle" ? (visual.protractor ? 260 : 200) : byBand(sz, 150, 150, 140);
+  return Math.min(maxW, visual.size || base);
+}
 
 const CONTENT_BOTTOM = P.PAGE.H - P.PAGE.MARGIN - 40;
 
+// Paper sizes per band. Set generously: staff asked for bigger type and
+// more room to write than the first sheets gave.
 function bandSizes(sz) {
   return {
-    body: byBand(sz, 16, 14, 12),
-    prompt: byBand(sz, 18, 16, 13),
-    heading: byBand(sz, 20, 18, 15),
-    lineGap: byBand(sz, 30, 28, 24),
-    cell: byBand(sz, 34, 30, 26),
+    body: byBand(sz, 18, 16, 14),
+    prompt: byBand(sz, 20, 17, 15),
+    heading: byBand(sz, 22, 20, 18),
+    lineGap: byBand(sz, 36, 34, 30),
+    cell: byBand(sz, 36, 32, 28),
   };
 }
 
@@ -220,6 +229,13 @@ function drawVisualPdf(doc, visual, x, y, opts) {
       });
       return y + chipH + 8;
     }
+    case "angle":
+    case "columnSum": {
+      const dw = diagramWidth(v, sz, w);
+      const { buffer, aspect } = diagramPng(v, { ink: C.CHARCOAL, accent: C.PRIMARY }, 1200);
+      doc.image(buffer, x, y, { width: dw });
+      return y + dw / aspect + 8;
+    }
     case "table": {
       const rows = v.rows || [];
       const cols = Math.max(...rows.map((r) => r.length), 1);
@@ -263,8 +279,177 @@ function estimateVisualHeight(visual, sz) {
     case "text": return (visual.fontSize || byBand(sz, 40, 34, 28)) * 1.3;
     case "chips": return S.cell * 0.9 + 8;
     case "table": return ((visual.rows || []).length) * S.body * 2 + 8;
+    case "angle":
+    case "columnSum": return diagramWidth(visual, sz, P.PAGE.CONTENT_W) / diagramSvg(visual).aspect + 8;
     default: return 60;
   }
+}
+
+/* ── Sectioned worksheets ──────────────────────────────────────────────── */
+/*
+ * A worksheet with `sections` is laid out the way staff asked for: each
+ * section has a coloured banner, an optional short explanation, a worked
+ * example with its steps shown, then its questions, numbered across the
+ * whole sheet, with room to answer. `columns: 2` sets short questions in a
+ * two-column grid. Section colours cycle through the theme so groups of
+ * questions read as groups. The proficiency a section targets is internal
+ * (validated, never printed).
+ */
+
+const { lightenHex } = require("../core/mockups");
+
+function sectionColours(C) {
+  return [C.PRIMARY, C.SECONDARY, C.SUCCESS || C.ACCENT, C.ALERT, C.ACCENT].filter(Boolean);
+}
+
+function textHeight(doc, text, font, size, width) {
+  doc.save().font(font).fontSize(size);
+  const h = doc.heightOfString(String(text), { width });
+  doc.restore();
+  return h;
+}
+
+/** Height a question needs in a cell of width w (so rows and page breaks can be planned). */
+function measureCell(doc, item, w, ctx) {
+  const { sz, isKey } = ctx;
+  const S = bandSizes(sz);
+  const numD = S.prompt + 10;
+  const innerW = w - numD - 10;
+  const visual = isKey && item.answerVisual ? item.answerVisual : item.visual;
+  const lines = item.answerLines != null ? item.answerLines : (item.box ? 0 : 1);
+  let h = Math.max(numD, textHeight(doc, item.prompt, "Sans-Bold", S.prompt, innerW) + 4) + 8;
+  if (item.hint) h += textHeight(doc, `Hint: ${item.hint}`, "Sans-Italic", S.body - 1, innerW) + 6;
+  if (visual) h += estimateVisualHeight(visual, sz) + 6;
+  if (item.box) h += item.box + 8;
+  h += lines * S.lineGap;
+  return h + 10;
+}
+
+function drawCell(doc, num, item, x, y, w, colour, ctx) {
+  const { C, sz, isKey } = ctx;
+  const S = bandSizes(sz);
+  const ink = P.hex(C.CHARCOAL);
+  const numD = S.prompt + 10;
+  const innerX = x + numD + 10;
+  const innerW = w - numD - 10;
+  const visual = isKey && item.answerVisual ? item.answerVisual : item.visual;
+  const lines = item.answerLines != null ? item.answerLines : (item.box ? 0 : 1);
+
+  doc.save().fillColor(colour).circle(x + numD / 2, y + numD / 2, numD / 2).fill().restore();
+  doc.save().font("Sans-Bold").fontSize(S.prompt - 2).fillColor("#FFFFFF").text(String(num), x, y + numD / 2 - (S.prompt - 2) / 2 - 1, { width: numD, align: "center" }).restore();
+  doc.save().font("Sans-Bold").fontSize(S.prompt).fillColor(ink).text(String(item.prompt), innerX, y + 2, { width: innerW }).restore();
+  y += Math.max(numD, textHeight(doc, item.prompt, "Sans-Bold", S.prompt, innerW) + 4) + 8;
+  if (item.hint) {
+    doc.save().font("Sans-Italic").fontSize(S.body - 1).fillColor(colour).text(`Hint: ${item.hint}`, innerX, y, { width: innerW }).restore();
+    y += textHeight(doc, `Hint: ${item.hint}`, "Sans-Italic", S.body - 1, innerW) + 6;
+  }
+  if (visual) y = drawVisualPdf(doc, visual, innerX, y, { C, sz, width: innerW }) + 6;
+  if (item.box) {
+    doc.save().lineWidth(1).strokeColor(P.hex(C.MUTED)).dash(3, { space: 3 }).roundedRect(innerX, y, innerW, item.box, 6).stroke().undash().restore();
+    if (isKey && item.answer != null && !lines) {
+      doc.save().font("Sans-Bold").fontSize(S.body).fillColor(colour).text(String(item.answer), innerX + 10, y + 8, { width: innerW - 20 }).restore();
+    }
+    y += item.box + 8;
+  }
+  for (let i = 0; i < lines; i += 1) {
+    const label = i === 0 && item.answerLabel ? String(item.answerLabel) : "";
+    const baseline = y + S.lineGap - 8;
+    doc.save().font("Sans").fontSize(S.body);
+    const labelW = label ? doc.widthOfString(label) + 8 : 0;
+    doc.restore();
+    if (label) doc.save().font("Sans").fontSize(S.body).fillColor(ink).text(label, innerX, baseline - S.body - 2).restore();
+    doc.save().lineWidth(1).strokeColor(P.hex(C.MUTED)).moveTo(innerX + labelW, baseline).lineTo(innerX + innerW, baseline).stroke().restore();
+    if (isKey && i === 0 && item.answer != null) {
+      doc.save().font("Sans-Bold").fontSize(S.body).fillColor(colour).text(String(item.answer), innerX + labelW + 6, baseline - S.body - 2, { width: innerW - labelW - 12 }).restore();
+    }
+    y += S.lineGap;
+  }
+  return y + 10;
+}
+
+function measureExample(doc, ex, w, ctx) {
+  const S = bandSizes(ctx.sz);
+  const innerW = w - 36;
+  let h = 16 + S.body + 8;
+  if (ex.prompt) h += textHeight(doc, ex.prompt, "Sans-Bold", S.body, innerW) + 6;
+  if (ex.visual) h += estimateVisualHeight(ex.visual, ctx.sz) + 4;
+  (ex.steps || []).forEach((st) => { h += textHeight(doc, st, "Sans", S.body, innerW - 28) + 6; });
+  if (ex.answer) h += S.body + 10;
+  return h + 12;
+}
+
+function drawExample(doc, ex, x, y, w, colour, ctx) {
+  const { C, sz } = ctx;
+  const S = bandSizes(sz);
+  const ink = P.hex(C.CHARCOAL);
+  const h = measureExample(doc, ex, w, ctx);
+  doc.save().roundedRect(x, y, w, h, 8).fill(P.hex(lightenHex(colour.replace("#", ""), 0.88))).restore();
+  doc.save().rect(x, y, 5, h).fill(colour).restore();
+  let cy = y + 12;
+  const ix = x + 18;
+  const iw = w - 36;
+  doc.save().font("Sans-Bold").fontSize(S.body).fillColor(colour).text(ex.title || "Worked example", ix, cy, { width: iw }).restore();
+  cy += S.body + 8;
+  if (ex.prompt) {
+    doc.save().font("Sans-Bold").fontSize(S.body).fillColor(ink).text(String(ex.prompt), ix, cy, { width: iw }).restore();
+    cy += textHeight(doc, ex.prompt, "Sans-Bold", S.body, iw) + 6;
+  }
+  if (ex.visual) cy = drawVisualPdf(doc, ex.visual, ix, cy, { C, sz, width: iw }) + 4;
+  (ex.steps || []).forEach((st, i) => {
+    doc.save().fillColor(colour).circle(ix + 9, cy + S.body / 2 + 1, 9).fill().restore();
+    doc.save().font("Sans-Bold").fontSize(S.body - 3).fillColor("#FFFFFF").text(String(i + 1), ix, cy + 2, { width: 18, align: "center" }).restore();
+    doc.save().font("Sans").fontSize(S.body).fillColor(ink).text(String(st), ix + 28, cy, { width: iw - 28 }).restore();
+    cy += textHeight(doc, st, "Sans", S.body, iw - 28) + 6;
+  });
+  if (ex.answer) {
+    doc.save().font("Sans-Bold").fontSize(S.body).fillColor(colour).text(`Answer: ${ex.answer}`, ix, cy + 2, { width: iw }).restore();
+  }
+  return y + h + 12;
+}
+
+function drawSections(doc, resource, y, ctx) {
+  const { C, sz } = ctx;
+  const S = bandSizes(sz);
+  const colours = sectionColours(C);
+  const x = P.PAGE.MARGIN;
+  const W = P.PAGE.CONTENT_W;
+  let num = 0;
+  (resource.sections || []).forEach((sec, si) => {
+    const colour = P.hex(sec.colour ? C[String(sec.colour).toUpperCase()] || sec.colour : colours[si % colours.length]);
+    const bannerH = S.heading + 16;
+    const introH = sec.intro ? textHeight(doc, sec.intro, "Sans", S.body, W) + 8 : 0;
+    const exampleH = sec.example ? measureExample(doc, sec.example, W, ctx) : 0;
+    // Keep the banner with its explanation, example and first question.
+    const firstH = (sec.items && sec.items[0]) ? measureCell(doc, sec.items[0], sec.columns === 2 ? (W - 16) / 2 : W, ctx) : 0;
+    y = fits(doc, y, bannerH + 10 + introH + exampleH + firstH);
+    doc.save().roundedRect(x, y, W, bannerH, 8).fill(colour).restore();
+    doc.save().font("Sans-Bold").fontSize(S.heading).fillColor("#FFFFFF").text(String(sec.title), x + 14, y + 8, { width: W - 28 }).restore();
+    y += bannerH + 10;
+    if (sec.intro) {
+      doc.save().font("Sans").fontSize(S.body).fillColor(P.hex(C.CHARCOAL)).text(String(sec.intro), x, y, { width: W }).restore();
+      y += introH;
+    }
+    if (sec.example) y = drawExample(doc, sec.example, x, y, W, colour, ctx);
+    const items = sec.items || [];
+    if (sec.columns === 2) {
+      const cw = (W - 16) / 2;
+      for (let i = 0; i < items.length; i += 2) {
+        const pair = items.slice(i, i + 2);
+        const rowH = Math.max(...pair.map((it) => measureCell(doc, it, cw, ctx)));
+        y = fits(doc, y, rowH);
+        pair.forEach((it, k) => { num += 1; drawCell(doc, num, it, x + k * (cw + 16), y, cw, colour, ctx); });
+        y += rowH;
+      }
+    } else {
+      items.forEach((it) => {
+        y = fits(doc, y, measureCell(doc, it, W, ctx));
+        num += 1;
+        y = drawCell(doc, num, it, x, y, W, colour, ctx);
+      });
+    }
+    y += 6;
+  });
+  return y;
 }
 
 /* ── Page composition ─────────────────────────────────────────────────── */
@@ -384,9 +569,12 @@ async function writeResourcePdf(resource, ctx, filePath, opts) {
   });
   if (o.isKey) y = P.addTipBox(doc, "Teacher answer key. Answers are shown in colour.", y, { color: primary });
   if (resource.instructions) y = P.addBodyText(doc, resource.instructions, y, { fontSize: bandSizes(sz).body });
+  if (resource.intro) y = P.addBodyText(doc, resource.intro, y, { fontSize: bandSizes(sz).body });
   if (resource.steps) y = P.addStepInstructions(doc, resource.steps, y, { color: primary });
 
-  if (resource.kind === "worksheet") {
+  if (resource.kind === "worksheet" && Array.isArray(resource.sections)) {
+    y = drawSections(doc, resource, y, { C, sz, isKey: Boolean(o.isKey) });
+  } else if (resource.kind === "worksheet") {
     (resource.items || []).forEach((item, i) => { y = drawItem(doc, i + 1, item, y, { C, sz, isKey: Boolean(o.isKey) }); });
   } else if (resource.kind === "page") {
     (resource.blocks || []).forEach((block) => { y = drawBlock(doc, block, y, { C, sz }); });

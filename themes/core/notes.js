@@ -616,6 +616,13 @@ function installSlideTextPatch(PptxGenJS) {
 
   function patchedAddText(text, options) {
     let cleanText = text;
+    // A slide marked __noBullets (Years 5-6 maths, megaprompt 85) keeps its
+    // paragraphs but never shows bullet markers.
+    const noBullets = Boolean(this && this.__noBullets);
+    if (noBullets && Array.isArray(text)) {
+      text = text.map((run) => (run && run.options && run.options.bullet ? { ...run, options: { ...run.options, bullet: false } } : run));
+    }
+    if (noBullets && options && options.bullet) options = { ...options, bullet: false };
     if (typeof text === "string") {
       cleanText = sanitizeSlideText(text);
     } else if (Array.isArray(text)) {
