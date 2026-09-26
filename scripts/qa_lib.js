@@ -248,7 +248,7 @@ function jaccard(a, b) {
  * Covers megaprompt section 0a item 19 / section 44 (Teacher Resources near
  * the front), section 0a item 23 / section 21 (Daily Review and Fluency sit
  * before the LI and SC slide), section 23 (a maths deck has Fluency), and
- * section 35 / section 64 (We Do and You Do must not use the same content).
+ * section 35 (We Do and You Do must not use the same content).
  *
  * Only runs on decks that look like a lesson, i.e. that carry a Learning
  * Intention slide. Visual catalogues, smoke tests and fragments are skipped

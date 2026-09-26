@@ -3771,6 +3771,10 @@ Fail and revise if:
 - text colour and background colour have low contrast, including white text on a light fill or dark text on a dark fill
 - success criteria carry tier labels such as "Everyone", "Most", "Stretch", "SC1", "SC2", "SC3", "Foundation", "Core" or "Depth" on the LI and SC slide or the closing slide
 - a visual-only teaching slide carries prose instruction text that the teacher would say from notes anyway
+- a revealed answer is too small to read, or a transition is distracting or inconsistent
+- any slide has no teacher notes, or the notes describe a click reveal the file does not contain
+- the Teacher Resources slide lists a resource that was not created, or omits one that was
+- the deck was not built with the grade-aware template for its year level
 
 For Foundation to Year 2, also fail if:
 
@@ -3796,72 +3800,36 @@ When the deck cannot be rendered:
 
 # 60b. TECHNICAL DECK QA
 
-Before finalising a built slide deck, check the technical presentation quality.
-
-Fail and revise if:
-
-- reveal transitions happen before students can respond
-- transitions are distracting or inconsistent
-- click-to-reveal answers are too small
-- a slide object overlaps important content
-- a title or body text element renders too large for its container, including a title that descends into the LI and SC card
-- text and background fail the contrast rule (white on dark, dark on light)
-- teacher notes are missing from any slide
-- the Teacher Resources slide lists a resource that is not included
-- the deck does not use the correct grade-aware template
-- template boxes sit behind nothing or no longer match the content
-- resized objects make the slide look stretched, squashed or visually awkward
-- the slide has avoidable empty areas while key text remains small
+Merged into the single slide fail-list in section 60a.
 
 # 61. WORKSHEET QA
 
-Before finalising any worksheet, inspect it.
-
-Fail and revise if:
-
-- font is too small
-- writing space is too small
-- there are too many questions
-- it looks adult or corporate
-- it has no visual support where needed
-- it has cramped sections
-- answer lines are tiny
-- instructions are wordy
-- students cannot show thinking
-- the worksheet is unnecessary
-- it creates a separate enabling, core and extension set without clear need
-- student-facing language is harder than needed
-- the worked example gives away the exact answer pattern
-- the worked example uses a different representation, strategy, notation or vocabulary from the slides
-- the worksheet has no slight scaffold where students may need help starting
+Merged into the single resource fail-list in section 61a.
 
 # 61a. RENDERED RESOURCE QA
 
-Before finalising any generated PDF, inspect the rendered pages.
+This is the one resource fail-list. Before finalising any generated PDF, inspect the rendered pages. Fail and revise if:
 
-Fail and revise if:
-
-- text spills over a page
-- there are large accidental blank gaps
-- a heading is stranded
-- a question is split awkwardly
-- the font is too small
-- instructions are too wordy
-- the worksheet looks adult
+- the resource is unnecessary: mini-whiteboards, workbooks, manipulatives or the board would do (40)
+- there are three worksheets, or a separate enabling, core and extension set, when one would do
+- the font is too small, the instructions are wordy, or it looks adult or corporate
 - Foundation students would need the teacher to read too much
-- answer spaces are too small
-- cut-and-paste pieces do not fit
-- ordering items or cut-out cards are already in a valid answer order, or the key no longer matches the mixed task (19a)
+- answer spaces, writing lines or drawing boxes are too small for the year level (42), or sections are cramped
 - there are too many questions
-- there are three worksheets when one would do
-- the worksheet is referenced but not listed on the Teacher Resources slide
-- the Teacher Resources slide lists a worksheet that was not created
+- students cannot show their thinking, or there is no visual support where it is needed
+- there is no slight scaffold where students may need help to start (42)
+- student-facing language is harder than needed
 - a worked example uses the same numbers, sentence, image or answer as the student task
 - a worked example uses a different representation, strategy, notation or vocabulary from the slides
-- the resource is filled with blank space while fonts or visuals remain too small
+- text spills over a page, a heading is stranded, or a question is split awkwardly
+- there are large accidental blank gaps, or the page is filled with blank space while fonts or visuals stay small
 - template tables, boxes or cards do not align with the printed content
+- cut-and-paste pieces do not fit
+- ordering items or cut-out cards are already in a valid answer order, or the key no longer matches the mixed task (19a)
+- an answer key is missing where the answers are not obvious (68m)
+- the worksheet is referenced but not listed on the Teacher Resources slide, or listed but not created
 
-Large blank spaces are acceptable only when they are intentional student working or drawing spaces.
+Large blank spaces are acceptable only when they are intentional student working or drawing spaces, or correctly sized bottom-of-page space on a Foundation or Year 1 sheet (42).
 
 # 62. ANTI-HALLUCINATION QA
 
@@ -4048,73 +4016,32 @@ Resources:
 
 # 64. COMPLETION RULES
 
-A lesson is incomplete if:
+A lesson is complete when all of these hold:
 
-- it has no teacher notes
-- slide faces are crowded
-- fonts are too small
-- student language is too advanced
-- source content is invented
-- supplied quotes are changed
-- Daily Review ignores the provided focus
-- Maths Fluency is missing
-- visuals are missing where needed
-- representations do not match prompts
-- a slide says tens frame but does not show one
-- a slide says number line but does not show one
-- question numbers appear on student-facing slides
-- the Teacher Resources slide is not immediately after the title slide
-- the lesson has no launch that activates prior knowledge and connects to new learning
-- actual questions are smaller than instructions
-- We Do and You Do use the same content
-- worksheets are cramped
-- worksheets are too wordy
-- worksheets are not age-appropriate
-- resource worked examples do not match the slide deck's representation, strategy, notation and vocabulary
-- a PDF has accidental blank gaps or awkward page breaks
-- three worksheets are created when one would do
-- resources are generated unnecessarily
-- resources are referenced but not created
-- a maths answer or symbol is wrong
-- Foundation slides use abstract language before concrete language
-- vocabulary slides lack graphics when vocabulary matters
-- source deck visuals are replaced unnecessarily
-- closing does not review the success criteria
-- a supplied OCHRE or school deck is ignored when the user asked to use it
-- a video or external material is invented instead of supplied or verified
-- student-facing language is too hard for students working about 12 months below expected level
-- advanced students are extended only by harder wording instead of deeper thinking
-- cognitive load is increased by unnecessary words, clutter, choices or competing prompts
-- a slide has avoidable large gaps while the hero task or model is too small
-- template boxes, cards or placeholders are misaligned
-- a worksheet worked example gives students the exact answer to copy
-- a worksheet has no slight enabler where one is needed to help students start
-- success criteria appear on a slide or worksheet with tier labels such as "Everyone", "Most", "Stretch", "SC1", "SC2", "SC3", "Foundation", "Core" or "Depth"
-- a visual-only teaching slide carries prose instruction text that the teacher will say from notes anyway
-- a rendered title or body element overflows its container or overlaps another element
-- text and background colours fail the contrast rule
-- Foundation visuals scatter counters, dots, cubes or markers randomly rather than arranging them in a frame, line, group or labelled zone
-- Foundation or Year 1 worksheets use writing lines, answer boxes or drawing boxes that are too small for young hands
-- a multi-session unit has no named unit anchor, or a session swaps the anchor representation, phrase or method mid-unit
-- a session in a multi-session unit lacks a low-coupling launch, an anchor restatement in the I Do, or a CATCH-UP NOTE in the Teacher Resources notes
-- a slide added to a supplied deck was authored from scratch instead of cloned, or does not match the deck's own styling
-- a lesson inserted mid-deck leaves downstream sections misnumbered or an overview table out of date
-- the supplied file was modified in place instead of a new file being written
-- the user's own word for a notation, routine or model was replaced with the formal term
-- teacher notes describe a click reveal that the built file does not contain
-- QA was claimed over a visual property that was never rendered or inspected
-- multiple requested sessions are split into separate PowerPoint files without an explicit request
-- generated resources are not placed in a Resources subfolder
-- key vocabulary the session needs is not introduced near the start, after the LI and SC
-- junior maths lessons have only 1 to 2 I Do, We Do and You Do slides when the session needs fuller guided practice
-- an extender task is hidden in teacher notes when an extender template would clearly help
-- worksheets for Foundation, Grade 1 or Grade 2 are too small, cramped or text-heavy
-- students must read large amounts of text to understand a simple task
-- a longer writing sequence lacks a teacher-facing overview of structure and expected content
-- an answer key is missing where the answers are not obvious
-- the lesson was written as a JavaScript build script when a spec could express every slide
-- the build printed ADVISORY lines that were left unresolved
-- a slide asked for a picture the pictogram set does not have and a misleading pictogram was used instead of the nearest honest one or a word-only card
+- the build exits zero with no ADVISORY lines (59, 59a)
+- a full pass of the rendered slides against 60a finds nothing
+- a full pass of the rendered resources against 61a finds nothing
+- the anti-hallucination check in 62 finds nothing
+- the subject checklist (55 to 58) passes, or its exceptions are stated in the handover (54)
+
+It is also incomplete if any of these rules, which no list above covers, is broken:
+
+- a maths answer, symbol or diagram is wrong (25)
+- the exit ticket re-asks, even in other words, an item already modelled, checked or revealed (53)
+- the closing does not revisit the success criteria (52)
+- a supplied OCHRE, school deck or planner the user asked to use is ignored (20a)
+- the user's own word for a notation, routine or model was replaced with the formal term (5b)
+- key vocabulary the session needs is not introduced near the start, after the LI and SC (68f)
+- junior maths has only 1 to 2 I Do, We Do and You Do slides when the session needs fuller guided practice (68e)
+- an extender is hidden in the notes when an extender template would clearly help (68h)
+- a longer writing sequence lacks a teacher-facing overview of its structure and expected content (68b)
+- a multi-session unit has no named anchor, or a session swaps the anchor's representation, phrase or method (79)
+- a session in a multi-session unit lacks a low-coupling launch, an anchor restatement in the I Do, or a CATCH-UP NOTE (80)
+- multiple requested sessions are split into separate PowerPoint files, or resources are not in the Resources subfolder (68a)
+- a slide added to a supplied deck was authored from scratch instead of cloned, a mid-deck insertion leaves sections misnumbered, or the supplied file was modified in place (20c)
+- QA was claimed over a visual property that was never rendered or inspected (60a)
+- the lesson was written as a JavaScript build script when a spec could express every slide (Part A)
+- a slide asked for a picture the pictogram set lacks, and a misleading pictogram was used instead of the nearest honest one or a word-only card (18)
 
 # 64a. HANDOVER
 
