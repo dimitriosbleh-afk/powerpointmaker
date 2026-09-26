@@ -24,6 +24,9 @@ const { spawnSync } = require("child_process");
 const path = require("path");
 const fs = require("fs");
 const { scanTextForForbiddenOutput, validateNotesFormat, validateLessonStructure } = require("./qa_lib");
+const { loadSpec } = require("../themes/lesson/buildLesson");
+const { recordLesson, isLoggable } = require("../themes/lesson/taughtLog");
+const { practiceCounts } = require("../themes/lesson/validate");
 
 /* ── Patterns ──────────────────────────────────────────────────────────────── */
 
@@ -320,6 +323,13 @@ async function main() {
 
   console.log("\n══════════════════════════════════════════════════════");
   if (gatesFailed === 0) {
+    if (script.endsWith(".json")) {
+      const spec = loadSpec(script);
+      const c = practiceCounts(spec);
+      console.log(`Practice: ${c.responses} planned whole-class responses, ${c.extended ? `extended task (${c.extended})` : `${c.independent} independent items`}`);
+      // A passing lesson joins this machine's taught log (megaprompt 83); exemplars never do.
+      if (isLoggable(script)) console.log(`Taught log: recorded in ${path.relative(process.cwd(), recordLesson(spec, script))}`);
+    }
     console.log("BUILD CHECK PASSED — proceed to visual QA");
     process.exit(0);
   } else {

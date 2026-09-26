@@ -73,3 +73,7 @@ reference/
 # stays local and is pasted into a chat from disk, never tracked here.
 IMPORTANT/AUSLAN_GAME_BANK.md
 assets/persuasive/
+
+# Taught log: each teacher's own record of what their lessons taught
+# (megaprompt 83). Local to each machine, never shared through the repo.
+records/

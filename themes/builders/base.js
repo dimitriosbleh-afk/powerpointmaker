@@ -2315,8 +2315,20 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
 
     const text = String(extract == null ? "" : extract);
     const readingFace = o.fontFace || (sz._band === "Y36" ? "Georgia" : FONT_B);
-    const charsPerLine = byBand(sz, 34, 42, 58);
-    const fontSize = o.fontSize || fitTextFontSize(text, panelH - 0.5, charsPerLine, byBand(sz, 30, 26, 22), byBand(sz, 20, 18, 14));
+    // A short extract (one or two sentences) is the hero of the slide and sets
+    // large; a longer passage steps down to reading size. Characters per line
+    // scale with the size, from the band's reading-size baseline.
+    const baseSize = byBand(sz, 30, 26, 22);
+    const baseChars = byBand(sz, 34, 42, 58);
+    const floorSize = byBand(sz, 20, 18, 14);
+    let fontSize = o.fontSize;
+    if (!fontSize) {
+      fontSize = floorSize;
+      for (let pt = byBand(sz, 44, 38, 32); pt >= floorSize; pt -= 1) {
+        const cpl = Math.max(8, Math.floor(baseChars * baseSize / pt));
+        if (estimateTextHeight(text, pt, cpl) * 1.15 <= panelH - 0.5) { fontSize = pt; break; }
+      }
+    }
 
     // Split into runs so highlighted phrases render bold, coloured and washed.
     const highlights = (Array.isArray(o.highlights) ? o.highlights : []).map((h) => String(h)).filter(Boolean);

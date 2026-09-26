@@ -14,6 +14,7 @@
 
 const path = require("path");
 const { loadSpec, glanceInputFor } = require("../themes/lesson/buildLesson");
+const { expandSpec } = require("../themes/lesson/practice");
 const { composeGlanceNotes } = require("../themes/core/composeNotes");
 
 const specPath = process.argv[2];
@@ -22,7 +23,8 @@ if (!specPath) {
   process.exit(2);
 }
 
-const spec = loadSpec(path.resolve(specPath));
+// Practice rounds are linted as the item slides they become.
+const spec = expandSpec(loadSpec(path.resolve(specPath)));
 let problems = 0;
 
 (spec.slides || []).forEach((slide, i) => {

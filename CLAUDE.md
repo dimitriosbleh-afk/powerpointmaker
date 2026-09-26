@@ -71,6 +71,7 @@ Node.js project using PptxGenJS to generate explicit teaching slide decks with c
 ## Commands
 
 ```bash
+node scripts/taught_log.js builds/<name>.json         # This machine's taught log: earlier lessons by gap, for Daily Review (MEGA_PROMPT 83)
 node scripts/check_spec_notes.js builds/<name>.json   # Lint a lesson spec's teacher notes (budgets, cues) before building
 node scripts/build_and_check.js builds/<name>.json    # Validate spec, build deck + PDFs, enforce 7 QA gates (MEGA_PROMPT 59a)
 node scripts/build_lesson.js builds/<name>.json       # Build only (no gates)
@@ -188,7 +189,7 @@ Teacher notes are a live teleprompter and heads-up display: ~98% of the time the
 - Beginner-safe prior-knowledge language is allowed: `Some of you may remember...`, `If this feels new, that's okay`, `We'll build this together`.
 - Default a 60-minute literacy lesson to one reading/comprehension or craft focus plus one writing/language focus only.
 - Default literacy lesson shape: title, Teacher Resources, hook or text launch, LI/SC, 0-2 explicit vocab slides if needed, up to 2 pause points, 1 craft/analysis slide, 1 CFU, 1 I Do, 1 We Do, 1 You Do, closing.
-- Default budget for a 60-minute literacy deck is 10-14 unique slides. Above 14 means the lesson is probably too crowded. Above 16 requires an explicit reason from the user.
+- Default budget for a 60-minute literacy deck is 10-14 unique slides. Above 14 means the lesson is probably too crowded. Above 16 requires an explicit reason from the user. A practice round (`kind: "practice"`) counts as one slide toward this budget: its item slides are practice, not crowding (MEGA_PROMPT section 82).
 - Default reveal budget is 0-2 reveal pairs. Use reveals only when hiding the answer materially improves thinking. Do not use reveal pairs by default for every vocabulary, CFU, or We Do slide.
 - Incidental vocabulary list slides are off by default. Only include them when the source text genuinely demands them or the user explicitly asks for them.
 - Slide-face text should stay lean. Do not preload large definition banks, long explanation blocks, or multiple abstract objectives onto one lesson by default.
@@ -416,9 +417,9 @@ When the user requests more than one session in a single ask (a unit, a week, a 
 
 **Workflow (do not skip the merge):**
 
-1. Write one per-lesson build script per session in `builds/` as usual.
+1. Write one lesson spec per session in `builds/`, in teaching order, and run `build_and_check.js` on each before writing the next. A passing build joins this machine's taught log, which the next lesson's Daily Review draws on (MEGA_PROMPT 83); writing every spec first leaves the log empty when review is chosen.
 2. Write a manifest at `builds/manifests/<unit>.json` listing each lesson's `build_script`, `folder`, and `session` in teaching order, plus `unit_folder` and `unit_pptx_name`. Manifest format is documented in `scripts/merge_unit.py` and `docs/resource-system.md`.
-3. Run `python scripts/build_unit.py builds/manifests/<unit>.json`. This builds every lesson through `build_and_check.js` (aborting on any gate failure), merges the decks and resources into `output/<unit_folder>/<unit_pptx_name>` + `output/<unit_folder>/Resources/<flat PDFs>`, then runs merged unit QA via `qa_unit.js --skip-build --skip-merge`.
+3. Run `python scripts/build_unit.py builds/manifests/<unit>.json --skip-build` (the lessons were built in step 1; drop `--skip-build` to rebuild them all). It merges the decks and resources into `output/<unit_folder>/<unit_pptx_name>` + `output/<unit_folder>/Resources/<flat PDFs>`, then runs merged unit QA via `qa_unit.js --skip-build --skip-merge`.
 4. The task is not "done" for a multi-session request until the combined unit folder exists. Do not claim completion after building per-lesson folders only.
 5. For a single-session request, the per-lesson folder IS the deliverable — no merge needed.
 

@@ -15,6 +15,7 @@
  */
 
 const { buildLesson, loadSpec } = require("../themes/lesson/buildLesson");
+const { readLog, isLoggable } = require("../themes/lesson/taughtLog");
 
 async function main() {
   const specPath = process.argv[2];
@@ -30,7 +31,11 @@ async function main() {
     process.exit(2);
   }
   try {
-    await buildLesson(spec);
+    // This machine's taught log checks Daily Review sources (megaprompt 83).
+    // Exemplars carry illustrative keys and are never checked against a real log.
+    const L = spec.lesson || {};
+    const taughtLog = isLoggable(specPath) && L.yearLevel && L.subject ? readLog(L.yearLevel, L.subject) : undefined;
+    await buildLesson(spec, { taughtLog });
   } catch (err) {
     if (err.specErrors) {
       console.error("SPEC INVALID:");

@@ -2,6 +2,7 @@
   "lesson": {
     "subject": "science",
     "yearLevel": "grade56",
+    "term": 3,
     "week": 2,
     "session": 1,
     "title": "The Water Cycle",
@@ -262,32 +263,34 @@
         }
       ],
       "notes": {
-        "answer": "evaporation, condensation, precipitation, collection, then around again",
+        "answer": "up; then evaporation, and around again",
         "beats": [
           [
             "POINT to evaporation.",
-            "SAY: Watch me follow one drop. The sun warms the sea and it rises as vapour."
+            "SAY: Let's follow one drop. The sun warms the sea and it rises as vapour."
+          ],
+          [
+            "ASK: Is the vapour going up or down now?",
+            "5 sec. Cue: voices off. Point... now.",
+            "EXPECT: pointing up"
           ],
           [
             "POINT to condensation, then precipitation.",
             "SAY: High up it cools into a cloud drop, then falls as rain."
           ],
           [
-            "POINT to collection, then evaporation.",
-            "SAY: It gathers in the sea, the sun warms it, around it goes."
-          ],
-          [
-            "ASK: After collection, which stage comes next?",
+            "POINT to collection.",
+            "ASK: It gathers in the sea. Which stage comes next?",
             "10 sec. Cue: Everyone, together, on three.",
             "EXPECT: evaporation"
           ]
         ],
         "trap": [
           "thinking each stage is new water.",
-          "Fix: trace one drop around with a finger, student re-traces."
+          "Fix: trace one drop, student re-traces."
         ],
-        "stretch": "Where could the drop be stored for years?",
-        "help": "Cover the labels. Say rising, cooling, falling, gathering.",
+        "stretch": "Where could a drop be stored for years?",
+        "help": "Cover the labels; say rising, cooling, falling, gathering.",
         "prep": "The model. Critical feature: the same water travels the whole loop; warming lifts it as vapour, cooling turns it back into drops. The think-aloud follows one drop so the cycle reads as one journey, not four facts. SC2.",
         "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
       }
@@ -478,6 +481,73 @@
       }
     },
     {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Which stage is this?",
+      "routine": "boards",
+      "thinkTime": 10,
+      "pivot": "act it: stand for rising, crouch for falling, then ask which stage",
+      "followUp": "cold call one board: is the water warming or cooling?",
+      "items": [
+        {
+          "text": "Hail bounces off the school roof.",
+          "answer": "precipitation - the drops fall as hail",
+          "expect": "precipitation"
+        },
+        {
+          "text": "Wet footprints on a hot path fade away.",
+          "answer": "evaporation - the water warms and rises as vapour",
+          "expect": "evaporation"
+        },
+        {
+          "text": "A river carries water back to the sea.",
+          "answer": "collection - the water gathers in the sea",
+          "expect": "collection"
+        },
+        {
+          "text": "Your breath makes a little cloud on a cold morning.",
+          "answer": "condensation - the vapour in your breath cools into drops",
+          "expect": "condensation",
+          "say": "Condensation. Your warm breath cools into tiny drops. Tick or fix."
+        },
+        {
+          "text": "Snow falls on the mountains.",
+          "answer": "precipitation - the water falls as snow",
+          "expect": "precipitation"
+        },
+        {
+          "text": "Rainwater runs down the gutter into a creek.",
+          "answer": "collection - the water gathers and flows",
+          "expect": "collection"
+        },
+        {
+          "text": "Fog forms over a lake on a cold night.",
+          "answer": "condensation - the vapour cools into tiny drops near the ground",
+          "expect": "condensation",
+          "say": "Condensation. Fog is a cloud near the ground. Tick or fix."
+        },
+        {
+          "text": "A puddle on the oval is gone by lunch.",
+          "answer": "evaporation - the water warms and rises as vapour",
+          "expect": "evaporation"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Let's practise with everyday examples.",
+          "Everyone writes the stage on their board."
+        ],
+        "trap": [
+          "calling breath clouds or fog evaporation.",
+          "Fix: ask whether the water is warming or cooling, student rewrites."
+        ],
+        "stretch": "Say whether the water is warming or cooling in each one.",
+        "help": "Keep the cycle diagram on the board and point from it.",
+        "prep": "Guided retrieval of the four names on new everyday cases. Breath and fog are the near-misses students call evaporation. SC1 and SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 6]"
+      }
+    },
+    {
       "kind": "cfu",
       "title": "Hinge question",
       "technique": "Turn and tell, then show me",
@@ -542,7 +612,7 @@
             "POINT to the task.",
             "SAY: Now draw your own diagram: a loop, four labels, arrows and one sentence."
           ],
-          "SAY: Draw, arrow, write. Say the steps with me.",
+          "SAY: Draw, arrow, write. Say the steps with me. Everyone, together, on three.",
           "CIRCULATE. Look for arrows pointing the same way and the loop closing.",
           "TIME 12 minutes. Early finishers add where water is stored for years."
         ],
@@ -554,7 +624,8 @@
         "help": "Water Cycle Scaffold: stages pictured, first one named. Order and draw.",
         "prep": "Independent application with the same loop as the slides. The journal drawing is the evidence for SC2; the sentence for SC3.",
         "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
-      }
+      },
+      "extendedTask": "draw and label the water cycle as a loop, with one sentence on why it repeats"
     },
     {
       "kind": "exitTicket",

@@ -6,6 +6,7 @@ where the visual sits, how the answer is revealed. You never write
 coordinates.
 
 ```bash
+node scripts/taught_log.js builds/<name>.json           # numeracy: what earlier lessons taught, for Daily Review
 node scripts/check_spec_notes.js builds/<name>.json     # lint the teacher notes first
 node scripts/build_and_check.js builds/<name>.json      # build + the seven QA gates
 python scripts/pptx_to_images.py output/<folder>/<deck>.pptx   # then LOOK at it
@@ -15,9 +16,9 @@ Golden exemplars (copy their shape, not their content):
 
 | Spec | Band | Shows |
 |---|---|---|
-| `builds/exemplar_foundation_numeracy_making_10.json` | Foundation numeracy | one-question-per-slide review and fluency, hero ten frames, choice check, You Do with worksheet and answer key |
-| `builds/exemplar_year2_literacy_feeling_clues.json` | Year 2 literacy | pictogram launch, word card, text extracts with highlights, choice check, scaffold page |
-| `builds/exemplar_year56_science_water_cycle.json` | Year 5/6 science | two word cards, cycle diagram I Do and faded We Do, table rehearsal, hinge CFU, scaffold |
+| `builds/exemplar_foundation_numeracy_making_10.json` | Foundation numeracy | Daily Review with `from` keys, one-question-per-slide fluency, hero ten frames, diagnostic choice check, We Do practice round, You Do with worksheet and answer key |
+| `builds/exemplar_year2_literacy_feeling_clues.json` | Year 2 literacy | pictogram launch, word card, text extracts with highlights, diagnostic choice check, We Do and You Do practice rounds, no printing |
+| `builds/exemplar_year56_science_water_cycle.json` | Year 5/6 science | two word cards, cycle diagram I Do and faded We Do, table rehearsal, practice round of everyday cases, hinge CFU, extended You Do with scaffold |
 
 Validation is strict. Every problem is printed with the field path and the
 fix. Warnings (`ADVISORY [spec] ...`) are work not yet done.
@@ -46,7 +47,10 @@ its student-view QA, for slides, worksheet visuals and cut-out `cards`.
 |---|---|---|
 | `subject` | yes | `literacy` `numeracy` `science` `inquiry` `wellbeing` |
 | `yearLevel` | yes | `foundation` `grade1` `grade2` `grade34` `grade56` |
-| `week` | recommended | 1-based; picks the palette variant. Every session of a unit uses the same week |
+| `term` | yes | 1-4. With `week` and `session` it places the lesson in teaching order for the taught log |
+| `week` | yes | 1-based; picks the palette variant. Every session of a unit uses the same week |
+| `year` | | Four-digit year; defaults to the current year |
+| `minutes` | | Session length, default 60. Sets the response floor (one per three minutes) |
 | `variant` | alt | 0-5, overrides week |
 | `session` | default 1 | Session number; names the resources folder and the `Session N` prefix |
 | `title` | yes | Deck title |
@@ -77,7 +81,7 @@ then `li`, then `keyWord` cards if any, then the body, `exitTicket`,
 | `title` | | | cover with subject glyph or `lesson.titleVisual` |
 | `overview` | `lines` | `title` | teacher-facing overview (multi-session decks) |
 | `resources` | | | Teacher Resources from `resources` + `materials` |
-| `dailyReview` | `title` | `prompts`, `visual`, `reveal` | numeracy review; a visual with no prompts fills the slide |
+| `dailyReview` | `title`, `from` | `prompts`, `visual`, `reveal` | numeracy review; a visual with no prompts fills the slide. `from` names what it retrieves (see Taught log) |
 | `fluency` | `title`, `prompts` | `reveal` | one numeral or fact, hero-sized |
 | `launch` | `title` | `lines`, `visual`, `label`, `prompt`, `reveal` | hero visual (no lines) or hero statement panel |
 | `li` | `learningIntention`, `successCriteria` (exactly 3) | | LI and SC |
@@ -87,7 +91,8 @@ then `li`, then `keyWord` cards if any, then the body, `exitTicket`,
 | `workedExample` | `stage` (1-5), `title`, `steps` | `stageLabel`, `visual`, `reveal` | numeracy worked example with visual beside the steps |
 | `choice` | `badge`, `title`, `options` (2-4) | `prompt`, `answer` (0-based), `letters` | Which one? cards; `answer` reveals a tick on click. With `answer`, every wrong option needs `misconception` |
 | `cfu` | `title`, `technique`, `question` | `badge`, `reveal` | text check with the CHECK stamp |
-| `youDo` | `title`, `task` | `steps` (max 3), `where`, `visual`, `visualLabel`, `frame` | task hero, First/Next/Then chips, mini model, sentence frame |
+| `practice` | `title`, `items` (3-8), `pivot` | `badge`, `routine`, `thinkTime`, `ask`, `followUp`, `badgeColor` | a practice round: one hero slide per item, answer on click, notes written for you (see Practice) |
+| `youDo` | `title`, `task` | `steps` (max 3), `where`, `visual`, `visualLabel`, `frame`, `extendedTask` | task hero, First/Next/Then chips, mini model, sentence frame |
 | `textExtract` | `badge`, `title`, `extract` | `highlights`, `source`, `prompt`, `reveal` | exact text, marker-highlighted phrases |
 | `cycle` | `title`, `centerLabel`, `steps` (3-4) | `badge`, `promptTitle`, `promptLines`, `reveal` | science loop; `steps[].icon` names a pictogram; `label: ""` fades a name and keeps the `detail` clue |
 | `process` | `title`, `steps` (2-6) | `badge`, `promptTitle`, `promptLines` | science ordered flow |
@@ -128,6 +133,66 @@ a row from one, repeats an earlier question with no new item, reuses a
 modelled visual, collects its answer through partner talk or a choral
 response, or leaves SC2 out of its tag. A `{ "type": "text" }` visual holds
 a short new passage and sizes itself to fit.
+
+### Practice
+
+Every lesson meets two floors (megaprompt 82), and the build prints both
+counts: planned whole-class responses, at least one per three minutes
+(20 in 60 minutes), and independent items (Foundation 4, Years 1-2 6,
+Years 3-6 8) from worksheet items or a practice round badged "You Do". A
+You Do that is one extended task sets `youDo.extendedTask` instead.
+
+A practice round is the main way there:
+
+```json
+{
+  "kind": "practice",
+  "badge": "We Do",
+  "title": "How many more make 10?",
+  "routine": "boards",
+  "thinkTime": 8,
+  "pivot": "count the empty boxes together on the board frame",
+  "followUp": "cold call one board: how did you count?",
+  "items": [
+    { "visual": { "type": "tensFrame", "filled": 4 }, "label": "4 counters", "answer": "6 more. 4 and 6 make 10", "expect": "6" },
+    { "visual": { "type": "tensFrame", "filled": 9 }, "label": "9 counters", "answer": "1 more. 9 and 1 make 10", "expect": "1" },
+    { "visual": { "type": "tensFrame", "filled": 1 }, "label": "1 counter", "answer": "9 more. 1 and 9 make 10", "expect": "9" }
+  ],
+  "notes": {
+    "say": ["Now it's your turn. Three quick frames,", "and everyone writes how many more on their board."],
+    "trap": ["writing the counters seen.", "Fix: child touches each empty box, counts aloud, rewrites."],
+    "stretch": "Say each pair both ways.",
+    "help": "Real counters on a real frame.",
+    "prep": "Guided practice from typical to edge cases. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+  }
+}
+```
+
+Each item has exactly one of `visual`, `extract` (a short text, with
+optional `source` and `highlights`) or `text` (one short line), plus
+`answer` (shown on the answer bar) and optional `expect` (the EXPECT line,
+default the answer), `say` (the reveal line) and `pivot`. `routine` is
+`boards` (default), `fingers`, `point` or `choral`. The pipeline writes
+each item's ASK, SCAN and REVEAL from the school cue scripts; the round's
+`say` opens the first item, and STRETCH and HELP sit on the second.
+
+### Taught log
+
+`build_and_check.js` records every lesson spec that passes all gates in
+`records/taught_<yearLevel>_<subject>.json` (gitignored, one log per
+machine; exemplars are never recorded; `TAUGHT_LOG_DIR` redirects it).
+Entries are ordered by year, term, week and session. Each `dailyReview`
+slide sets `from` to a log key (`"2026-T3-W8-S2"`), `"teacher"` when the
+request named the focus, or `"before log"`. The validator checks keys
+against the log: they must exist, come earlier, and at least one item
+must reach back two weeks when the log has older learning (megaprompt 83).
+
+```bash
+node scripts/taught_log.js builds/<name>.json                     # earlier lessons by gap, with review items
+node scripts/taught_log.js --list <yearLevel> <subject>
+node scripts/taught_log.js --remove <yearLevel> <subject> <key>   # a lesson that was not taught
+```
 
 ### Visual specs
 

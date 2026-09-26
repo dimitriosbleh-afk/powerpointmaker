@@ -2,6 +2,7 @@
   "lesson": {
     "subject": "numeracy",
     "yearLevel": "foundation",
+    "term": 3,
     "week": 1,
     "session": 1,
     "title": "Making 10",
@@ -81,9 +82,22 @@
           },
           "answer": "1 more. 9 and 1 make 10.",
           "answerLabel": "more"
+        },
+        {
+          "prompt": "How many more make 10?",
+          "visual": {
+            "type": "tensFrame",
+            "filled": 6
+          },
+          "answerVisual": {
+            "type": "tensFrame",
+            "filled": 10
+          },
+          "answer": "4 more. 6 and 4 make 10.",
+          "answerLabel": "more"
         }
       ],
-      "tip": "Finished? Say each friends-of-10 pair to a partner: 7 and 3, 5 and 5, 9 and 1."
+      "tip": "Finished? Say each friends-of-10 pair to a partner: 7 and 3, 5 and 5, 9 and 1, 6 and 4."
     }
   ],
   "slides": [
@@ -98,6 +112,7 @@
     {
       "kind": "dailyReview",
       "title": "How many counters?",
+      "from": "2026-T2-W9-S2",
       "visual": {
         "type": "tensFrame",
         "filled": 6
@@ -137,6 +152,7 @@
     {
       "kind": "dailyReview",
       "title": "How many dots?",
+      "from": "2026-T2-W6-S1",
       "visual": {
         "type": "dotCard",
         "count": 4
@@ -173,6 +189,7 @@
     {
       "kind": "dailyReview",
       "title": "What comes after 7?",
+      "from": "2026-T2-W4-S3",
       "visual": {
         "type": "numberTrack",
         "start": 1,
@@ -436,7 +453,11 @@
       "notes": {
         "answer": "2 more - 8 and 2 make 10",
         "beats": [
-          "SAY: Here's another one. I always count the counters first, one to eight.",
+          [
+            "ASK: How many counters are in the frame?",
+            "3 sec. Cue: voices off. Fingers at your chest... show me.",
+            "EXPECT: eight fingers"
+          ],
           [
             "MODEL the gaps.",
             "SAY: Now I touch the empty boxes. One, two. That's two empty boxes."
@@ -449,10 +470,10 @@
         ],
         "trap": [
           "counting past ten.",
-          "Fix: finger on the last counter, then jump to the first empty box, child redoes."
+          "Fix: finger on the last counter, then the first empty box, child redoes."
         ],
-        "stretch": "Which pairs so far? Six and four, eight and two. What is the same?",
-        "help": "Cover the full top row with a card. Count only the bottom row.",
+        "stretch": "Six and four, eight and two: what is the same?",
+        "help": "Cover the full top row; count only the bottom row.",
         "prep": "Second model with fewer gaps so the move looks the same with different numbers.",
         "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
       }
@@ -513,37 +534,59 @@
       }
     },
     {
-      "kind": "heroVisual",
+      "kind": "practice",
       "badge": "We Do",
       "title": "How many more make 10?",
-      "visual": {
-        "type": "tensFrame",
-        "filled": 4
-      },
-      "label": "4 counters",
-      "reveal": {
-        "answers": [
-          "6 more. 4 and 6 make 10"
-        ]
-      },
+      "routine": "boards",
+      "thinkTime": 8,
+      "pivot": "count the empty boxes together on the board frame",
+      "followUp": "cold call one board: how did you count?",
+      "items": [
+        {
+          "visual": {
+            "type": "tensFrame",
+            "filled": 4
+          },
+          "label": "4 counters",
+          "answer": "6 more. 4 and 6 make 10",
+          "expect": "6",
+          "say": "Six more. Four and six make ten. Tick or fix."
+        },
+        {
+          "visual": {
+            "type": "tensFrame",
+            "filled": 9
+          },
+          "label": "9 counters",
+          "answer": "1 more. 9 and 1 make 10",
+          "expect": "1",
+          "say": "One more. Nine and one make ten. Tick or fix."
+        },
+        {
+          "visual": {
+            "type": "tensFrame",
+            "filled": 5
+          },
+          "label": "5 counters",
+          "answer": "5 more. 5 and 5 make 10",
+          "expect": "5",
+          "say": "Five more. The top row is full, so five and five make ten."
+        },
+        {
+          "visual": {
+            "type": "tensFrame",
+            "filled": 1
+          },
+          "label": "1 counter",
+          "answer": "9 more. 1 and 9 make 10",
+          "expect": "9",
+          "say": "Nine more. One and nine make ten. Tick or fix."
+        }
+      ],
       "notes": {
-        "answer": "6 more - 4 and 6 make 10",
-        "beats": [
-          "SAY: Now it's your turn. Count the empty boxes this time.",
-          [
-            "ASK: How many more make 10?",
-            "8 sec. Cue: Write it... Chin it... Show me.",
-            "EXPECT: 6"
-          ],
-          [
-            "SCAN boards, back row first.",
-            "80%+ -> reveal, cold call one 6: how did you count?",
-            "Less -> count the empty boxes together, re-ask."
-          ],
-          [
-            "REVEAL after boards are scanned.",
-            "SAY: Six more. Four and six make ten. Tick or fix."
-          ]
+        "say": [
+          "Now it's your turn. Four quick frames,",
+          "and everyone writes how many more on their board."
         ],
         "trap": [
           "writing 4, the counters seen.",
@@ -551,96 +594,7 @@
         ],
         "stretch": "Say the pair both ways: four and six, six and four.",
         "help": "Child fills the empty boxes with real counters, then counts them.",
-        "prep": "First guided try. Same move as the model with a smaller start number. SC2.",
-        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
-      }
-    },
-    {
-      "kind": "heroVisual",
-      "badge": "We Do",
-      "title": "How many more make 10?",
-      "visual": {
-        "type": "tensFrame",
-        "filled": 9
-      },
-      "label": "9 counters",
-      "reveal": {
-        "answers": [
-          "1 more. 9 and 1 make 10"
-        ]
-      },
-      "notes": {
-        "answer": "1 more - 9 and 1 make 10",
-        "beats": [
-          "SAY: This one is tricky, because the frame is nearly full.",
-          [
-            "ASK: How many more make 10?",
-            "6 sec. Cue: boards up on cue.",
-            "EXPECT: 1"
-          ],
-          [
-            "SCAN boards.",
-            "80%+ -> reveal.",
-            "Less -> point to the one empty box, ask how many boxes, re-ask."
-          ],
-          [
-            "REVEAL after boards are scanned.",
-            "SAY: One more. Nine and one make ten. Tick or fix."
-          ]
-        ],
-        "trap": [
-          "writing 10 because the frame looks full.",
-          "Fix: finger in the empty box, child says one, rewrites."
-        ],
-        "stretch": "Ask: what if the frame had 10? How many more then? Listen for zero.",
-        "help": "Child covers the counters with a hand and looks only for the gap.",
-        "prep": "Second guided try, near-full frame, catches the looks-full error before independence.",
-        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
-      }
-    },
-    {
-      "kind": "heroVisual",
-      "badge": "We Do",
-      "title": "How many more make 10?",
-      "visual": {
-        "type": "tensFrame",
-        "filled": 5
-      },
-      "label": "5 counters",
-      "reveal": {
-        "answers": [
-          "5 more. 5 and 5 make 10"
-        ]
-      },
-      "notes": {
-        "answer": "5 more - 5 and 5 make 10",
-        "beats": [
-          [
-            "POINT to the top row.",
-            "SAY: The top row is full. That is five."
-          ],
-          [
-            "ASK: How many more make 10?",
-            "6 sec. Cue: boards up on cue.",
-            "EXPECT: 5"
-          ],
-          [
-            "SCAN boards.",
-            "80%+ -> reveal, cold call: do you agree? Add one thing.",
-            "Less -> count the empty bottom row together, re-ask."
-          ],
-          [
-            "REVEAL after boards are scanned.",
-            "SAY: Five more. Five and five make ten."
-          ]
-        ],
-        "trap": [
-          "writing 10, adding the row instead of counting gaps.",
-          "Fix: child touches the five empty boxes, counts, rewrites."
-        ],
-        "stretch": "Say all four pairs. Which one is a double?",
-        "help": "Cover the top row. How many empty boxes on the bottom?",
-        "prep": "Third guided try uses the full-row structure so students see 5 and 5 without counting.",
+        "prep": "Guided practice: typical cases, then 9 (one gap) and 1 (nine gaps) as the edges. Same move as the model every time. SC2.",
         "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
       }
     },
@@ -698,15 +652,15 @@
       "where": "On your worksheet",
       "visual": {
         "type": "tensFrame",
-        "filled": 6
+        "filled": 8
       },
-      "visualLabel": "This one shows 6. Yours are different.",
+      "visualLabel": "This one shows 8. Yours are different.",
       "notes": {
-        "answer": "worksheet answers: 3, 5, 1",
+        "answer": "worksheet answers: 3, 5, 1, 4",
         "beats": [
           [
             "POINT to the task.",
-            "SAY: Three frames on your sheet. Draw the counters that make 10.",
+            "SAY: Four frames on your sheet. Draw the counters that make 10.",
             "Then write how many you drew."
           ],
           "SAY: Look, draw, write. Say the steps with me.",

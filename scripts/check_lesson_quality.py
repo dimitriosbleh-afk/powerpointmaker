@@ -299,7 +299,10 @@ def analyze(slides: list[SlideData], profile_name: str) -> tuple[list[Issue], di
         else:
             idx += 1
 
-    unique_slide_count = len(slides) - reveal_pairs
+    # A practice round (MEGA_PROMPT 82) counts as one slide: items 2..N carry
+    # the pipeline's "Practice round, item N of M" prep line.
+    round_items = sum(1 for sl in slides if re.search(r"Practice round, item \d+ of \d+", sl.notes_text))
+    unique_slide_count = len(slides) - reveal_pairs - round_items
     explicit_vocab_count = 0
     incidental_vocab_count = 0
 

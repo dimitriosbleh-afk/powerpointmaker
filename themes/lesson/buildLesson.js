@@ -22,6 +22,7 @@ const { byBand } = require("../core/gradeBand");
 const { addResourceSlide, getSessionResourceFolder } = require("../pdf_helpers");
 const { validateLessonSpec } = require("./validate");
 const { buildResources } = require("./resources");
+const { expandSpec } = require("./practice");
 
 const ROOT = path.resolve(__dirname, "..", "..");
 
@@ -111,15 +112,17 @@ function addClickReveal(T, s, reveal, label) {
   T.clickBuild(s, [() => { T.addRevealAnswerBar(s, answers, { y, h, fontSize }); }]);
 }
 
-async function buildLesson(spec, opts) {
+async function buildLesson(authored, opts) {
   const o = opts || {};
-  const { errors, warnings } = validateLessonSpec(spec);
+  const { errors, warnings } = validateLessonSpec(authored, { taughtLog: o.taughtLog });
   warnings.forEach((w) => console.log(`ADVISORY [spec] ${w}`));
   if (errors.length) {
     const err = new Error(`[lesson spec] ${errors.length} error(s):\n  - ${errors.join("\n  - ")}`);
     err.specErrors = errors;
     throw err;
   }
+  // Practice rounds become one slide per item from here on (megaprompt 82).
+  const spec = expandSpec(authored);
 
   const L = spec.lesson;
   const variant = L.variant != null ? L.variant : weekToVariant(L.week || 1);

@@ -1,16 +1,17 @@
 © 2026 James Hooke. Confidential. Internal use only. Not for redistribution.
 
-# Explicit Teaching Lesson Builder Mega-Prompt v12.8
+# Explicit Teaching Lesson Builder Mega-Prompt v12.9
 ## Foundation to Year 6 | Australian Primary Schools | Visual-First | Editable | Source-Faithful | Cognitive Load Aware | Classroom-Ready | School Feedback Aligned
 
 How to read this document:
 
 - PART A (sections A1 to A9, directly below) is the build order. Follow it top to bottom for every lesson. It names the reference section for each step.
-- PART B (sections 0 to 81) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
+- PART B (sections 0 to 83) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
 - Section 0a is the non-negotiable output gate. A lesson that fails any item there is not finished, whatever else it does well.
 
 Version history (newest first):
 
+- v12.9 (26 September 2026): practice volume and taught memory. Every lesson meets a floor of planned whole-class responses and independent items, reached through practice rounds (82). Each machine keeps a taught log, and Daily Review names the earlier lesson it retrieves, spaced, choosing the focus itself when the request does not name one (83).
 - v12.8 (26 September 2026): evidence you can act on. Every wrong option on a check names its misconception (37). The exit ticket is a new item, collected one student at a time (53). Lessons start from a designed example set (81). The validator enforces the first two. Tidied: one DOCX rule (41), Daily Review and Fluency answers are click reveals throughout, section 16 states the sizes the theme ships, section 59 points to Part A.
 - v12.7 (6 September 2026): lessons are authored as specs, not scripts. A lesson spec (`builds/<name>.json`, schema in `docs/lesson-spec.md`) carries content and intent; the pipeline makes every layout decision, validates the spec field by field, composes the notes, builds the deck and PDFs and runs the gates. Three golden exemplars ship in `builds/`. Part A replaces the scattered workflow with one build order. Legacy build scripts moved to `_archive/lessons/` and are not exemplars.
 - v12.6 (6 September 2026): visual redesign of the shared theme after an audit of rendered decks. Retuned palettes, soft tint panels, one subject motif, hero sizing, a declarative visual layer (section 15j), 200+ built-in pictograms (section 18), four pattern builders. The default output now looks like the lesson the rules describe.
@@ -31,7 +32,7 @@ Read the request as a teacher wrote it (section 7). Extract: subject, year level
 
 ## A2. Choose the lesson shape and write the slide list as kinds
 
-Pick the structure for the subject and band, then write the slide list as spec `kind` values before writing any content:
+Pick the structure for the subject and band, then write the slide list as spec `kind` values before writing any content. Place the lesson in teaching order (`term`, `week`, `session`), and plan where the practice volume comes from: practice rounds in guided practice, and independent items in the You Do (82).
 
 - Foundation to Year 2 maths: section 68l (one question per slide; three Daily Review and three Fluency prompts, each revealed on click; I Do 2-4, We Do 3-5, You Do 2-4).
 - Years 3 to 6 maths: section 21 (Daily Review, Fluency, launch, LI/SC, I Do, We Do, CFU, You Do, exit, closing).
@@ -42,7 +43,7 @@ The opening order is fixed in every subject: title, resources, (numeracy: dailyR
 
 ## A3. Write the intention, the criteria, the anchor and the decision points
 
-One Learning Intention sentence and exactly three "I can" criteria: reachable, core, stretch, with tier labels never on a student surface (14, 0a item 18). Name the unit anchor: one representation, one phrase, one method held across every session (79). Design the example set: the critical feature, the near-misses, the range, and a new item at every release (81). Name the two or three decision-grade CFU points and what the teacher does at each on secure, mixed and weak evidence (76, 38); give every wrong option on a check the misconception it catches (37). Decide the exit evidence and which criterion it assesses, as a new item no slide has already modelled or revealed (53).
+One Learning Intention sentence and exactly three "I can" criteria: reachable, core, stretch, with tier labels never on a student surface (14, 0a item 18). Name the unit anchor: one representation, one phrase, one method held across every session (79). Design the example set: the critical feature, the near-misses, the range, and a new item at every release (81). Name the two or three decision-grade CFU points and what the teacher does at each on secure, mixed and weak evidence (76, 38); give every wrong option on a check the misconception it catches (37). Decide the exit evidence and which criterion it assesses, as a new item no slide has already modelled or revealed (53). For numeracy, choose the Daily Review from the taught log unless the request names a focus (83).
 
 ## A4. Give every slide its visual and its builder
 
@@ -69,6 +70,7 @@ Apply section 19a to worksheets, sequencing strips and cut-out cards too. The pr
 In this codebase, author the lesson as a spec and build it:
 
 ```bash
+node scripts/taught_log.js builds/<name>.json            # what earlier lessons taught, by gap (Daily Review)
 node scripts/check_spec_notes.js builds/<name>.json      # notes within budget
 node scripts/build_and_check.js builds/<name>.json       # build + seven gates (59a)
 python scripts/pptx_to_images.py output/<folder>/<deck>.pptx   # then inspect every slide (60a)
@@ -83,7 +85,7 @@ Report what was built, where it is, what was checked and what was not (64, 64a, 
 ## The pipeline in this codebase
 
 - Author `builds/<unit>_<session>.json` by copying the shape of the nearest golden exemplar (`docs/lesson-spec.md` lists them and every field). The spec holds content and intent; the theme decides layout, size, colour and reveal mechanics.
-- Slide kinds: `title` `overview` `resources` `dailyReview` `fluency` `launch` `li` `keyWord` `heroVisual` `content` `workedExample` `choice` `cfu` `youDo` `textExtract` `cycle` `process` `boardBuild` `scenario` `pairShare` `exitTicket` `closing`. Resource kinds: `worksheet` (answer key generated), `page`, `cards`.
+- Slide kinds: `title` `overview` `resources` `dailyReview` `fluency` `launch` `li` `keyWord` `heroVisual` `content` `workedExample` `choice` `cfu` `practice` `youDo` `textExtract` `cycle` `process` `boardBuild` `scenario` `pairShare` `exitTicket` `closing`. Resource kinds: `worksheet` (answer key generated), `page`, `cards`.
 - Validation is strict and names the field and the fix for every problem. A spec that validates and builds with zero advisories has met every machine-checkable rule in this document; the judgement rules still need eyes (59a).
 - Write a JavaScript build script only when a spec genuinely cannot express a slide (a custom drawing the visual layer lacks). Say why in the summary, extend the shared layer if the need will recur, and never copy patterns from `_archive/lessons/`.
 
@@ -1746,13 +1748,13 @@ The launch sits after the Daily Review and Fluency block. It connects retrieved 
 
 # 22. MATHS DAILY REVIEW
 
-Foundation to Year 2 override: section 68c tightens this to one question per slide with its answer on the following slide, and 3 to 5 review slides.
+Foundation to Year 2 override: section 68c tightens this to one question per slide with its answer revealed on click, and 3 to 5 review slides.
 
 Daily Review reviews prior learning.
 
 It does not teach today's new content.
 
-If the user provides a Daily Review Focus, honour it exactly.
+If the user provides a Daily Review Focus, honour it exactly and set each slide's `from` to "teacher". If the request does not name one, choose it from the taught log (83): run `node scripts/taught_log.js builds/<name>.json`, take items spaced across the gaps it lists, and set each slide's `from` to the lesson it retrieves.
 
 For example:
 
@@ -3700,7 +3702,7 @@ Some rules in this document are checked by machine on every build. Most are not.
 
 `node scripts/build_and_check.js builds/<name>.json` runs seven gates. A non-zero exit is a blocker, not advice:
 
-- Gate 0: the spec validates and the build completes. Validation checks the opening order, exactly three success criteria, a launch before the LI, word cards with a picture, visual types and pictogram names, reveal placement, banned characters, notes shape, resource kinds and paper-twin visuals, a misconception on every wrong option of a check (37), and an exit ticket that is a new item collected individually (53). It names every problem with its field path and fix.
+- Gate 0: the spec validates and the build completes. Validation checks the opening order, exactly three success criteria, a launch before the LI, word cards with a picture, visual types and pictogram names, reveal placement, banned characters, notes shape, resource kinds and paper-twin visuals, a misconception on every wrong option of a check (37), an exit ticket that is a new item collected individually (53), the practice floors (82), and Daily Review sources checked against the taught log (83). It names every problem with its field path and fix.
 - Gate 1: zero layout diagnostics. Overlaps, out-of-bounds elements, underfilled slides, reveal elements covering base text, contrast failures.
 - Gate 2: markitdown parses the file, and no unfinished markers or legacy resource codes survive.
 - Gate 3: slide-face text hygiene. Banned dash and quote characters, layout-by-spaces.
@@ -4180,9 +4182,9 @@ Resource files in this codebase are PDFs (generated by themes/pdf_helpers.js), n
 
 How to produce this output:
 
-1. Write one per-lesson build script per session in builds/ as usual.
+1. Write one lesson spec per session in builds/, in teaching order, and run build_and_check.js on each before writing the next, so each lesson joins the taught log before the next one's Daily Review is chosen (83).
 2. Write a manifest at builds/manifests/<unit>.json listing each lesson's build_script, folder and session in teaching order, plus unit_folder and unit_pptx_name. Manifest format is documented in docs/resource-system.md. Never add a `teacher_brief` object.
-3. Run python scripts/build_unit.py builds/manifests/<unit>.json. This builds every lesson through build_and_check.js (aborts on any gate failure), merges the decks and PDFs into the unit folder, and runs merged unit QA.
+3. Run python scripts/build_unit.py builds/manifests/<unit>.json --skip-build. The lessons were built in step 1; it merges the decks and PDFs into the unit folder and runs merged unit QA. Drop --skip-build to rebuild every lesson through build_and_check.js first.
 4. The task is not complete for a multi-session request until the combined unit folder exists. Do not report completion after building per-lesson folders only.
 
 For a single-session request, no merge is required. The per-lesson folder is the deliverable.
@@ -5117,6 +5119,51 @@ Students generalise from the examples they meet, not from the explanation. Two l
 6. A new item at every release. The first check, the hinge, the You Do and the exit ticket each use an item students have not seen worked or revealed (35, 53). A check on the I Do example measures memory of the teacher's answer, not the skill.
 
 Before building, list the set in order with one line each: item, which job it does (model, near-miss, typical, edge, check, independent, exit). An item with no job is cut. A job with no item is added.
+
+# 82. PRACTICE VOLUME AND RESPONSE RATE
+
+Students learn what they practise, and a lesson where each student answers five times in an hour has taught most of them very little. The research on explicit teaching asks for many successful responses (Rosenshine: a high success rate across plenty of guided and independent practice; the opportunities-to-respond research: several responses a minute while new material is taught). A lean slide is not a lean lesson. Less on the slide means the practice moves into the routines, the rounds and the notes.
+
+Every lesson meets two floors. The validator counts both from the spec and fails a lesson below them; the build prints the counts.
+
+- Planned whole-class responses: at least one for every three minutes of the session (20 for a 60-minute lesson; set `lesson.minutes` for a different length). A response counts when a beat uses a school cue script (75a) that every student answers: boards, fingers, pointing, thumbs, a choral answer, or turn and tell. A cold call or a volunteer does not count.
+- Independent items: at least 4 for Foundation, 6 for Years 1 and 2, 8 for Years 3 to 6. They come from a worksheet's items or from a practice round badged "You Do". A You Do that is one extended task (a paragraph, a labelled diagram, an investigation) sets `youDo.extendedTask` to say what it is, and the item count does not apply.
+
+These are floors, not targets. The teacher adds micro-responses live ("Everyone, what comes next? On three."); the planned count guarantees the lesson's structure makes a high response rate possible.
+
+How a lesson reaches them without crowding a slide:
+
+1. Practice rounds (`kind: "practice"`). Three to eight quick items of one kind, one item per slide at hero size, each answered by every student and revealed on click. The pipeline writes each item's notes from the cue scripts: the ASK with think time, the SCAN with the proceed and pivot, the REVEAL with tick and fix. The author writes the items and answers, the pivot, the trap and an optional opening line and follow-up. A round badged "We Do" is guided practice; badged "You Do", it is independent practice on boards with no printing.
+2. A response inside the I Do. The class predicts, counts along, or says the model sentence with the teacher at least once while the teacher models: "ASK: How many counters are in the frame? Fingers at your chest... show me."
+3. A You Do with enough items. A graded worksheet (easy, typical, edge, section 81), or a You Do round.
+
+Design rules for rounds:
+
+- Items follow the example set (81): the near-misses from the traps, a range from easy to edge, surfaces that vary. Never the same item twice, and never an item the exit ticket will use.
+- Keep items short enough to answer in the think time: a numeral, a word, a phrase, a short sentence. A round is brisk; an item that needs a paragraph is a You Do task, not a round item.
+- Choose the routine for the answer: boards for anything written, fingers for a number up to ten, pointing for a choice on screen, choral for a word or phrase everyone says together.
+- A round counts as one block, not as separate slides, against a slide budget (28, CLAUDE.md lean literacy defaults). Its slides are the one-question-per-slide rule applied to practice (68j).
+- Worksheets still have their place. Use one when students need to record, draw, cut or keep their work, or when the teacher needs to collect it. When boards will do, a You Do round saves the printing.
+
+# 83. TAUGHT LOG AND SPACED REVIEW
+
+Each teacher builds lessons on their own computer, and each computer keeps a taught log: what that teacher's lessons have taught, in teaching order. It lives in `records/taught_<yearLevel>_<subject>.json`, is ignored by git (the repository is shared and public; the log is not), and is written by `build_and_check.js` every time a lesson spec passes every gate. A rebuild replaces its own entry. The golden exemplars are never logged.
+
+Teaching order comes from `lesson.term`, `lesson.week` and `lesson.session` (and `lesson.year`, which defaults to the current year), never from the build date, because a whole term is often generated in one sitting. Every spec carries all three.
+
+Each entry holds the lesson's title, LI, success criteria, key words, the lessons its Daily Review retrieved, and its best review items with answers: the exit ticket first, then worksheet items, then practice round items.
+
+Daily Review uses it (22, 77):
+
+- Every `dailyReview` slide sets `from`: the log key of the lesson it retrieves ("2026-T3-W8-S2"), "teacher" when the request named the focus, or "before log" for learning taught before this log began (the first weeks of using it, or last year).
+- When the request does not name a focus, run `node scripts/taught_log.js builds/<name>.json`. It lists earlier lessons grouped by gap (earlier this week, last week, 2 to 4 weeks ago, 5 or more weeks ago), how often each has been reviewed, and its review items. Take one item from last week, one from 2 to 4 weeks ago and one older where the log has it, preferring lessons reviewed least.
+- Write a new item of the same kind: new numbers or a new example of the same skill, not the logged item copied. The logged items show the level and the answer form.
+- With the log present, the validator fails a `from` key that is not in the log or is not earlier than this lesson, and fails a Daily Review drawn entirely from the last week when older learning is in the log.
+- Literacy has no Daily Review slide, but the log still serves retrieval: a launch or review step can bring back key words and skills from two or more weeks ago (57, 77).
+
+When generating a sequence (a week, a unit, a term), write and build one lesson at a time in teaching order: author the spec, run `build_and_check.js` on it, then move to the next. Each lesson joins the log as it passes, so the next lesson's Daily Review can retrieve it. Writing every spec first and building at the end leaves the log empty while the review is chosen. Merge at the end with `build_unit.py --skip-build`.
+
+The log records what was built, which is not always what was taught. When a lesson is skipped, the teacher removes it (`node scripts/taught_log.js --remove <yearLevel> <subject> <key>`) or says so in the request, and review is chosen accordingly.
 
 # ===== END OF MEGA-PROMPT. SHIFT CLICK HERE. =====
 

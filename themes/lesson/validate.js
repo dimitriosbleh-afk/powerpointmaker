@@ -14,6 +14,8 @@
 const { VALID_SUBJECTS, VALID_YEAR_LEVELS } = require("../factory");
 const { SUPPORTED_TYPES } = require("../core/visualSpec");
 const { PICTOGRAMS } = require("../core/pictograms");
+const { ROUTINES, expandSpec } = require("./practice");
+const { TEACHER_SOURCE, BEFORE_LOG_SOURCE, positionOf } = require("./taughtLog");
 
 const BANNED_CHARS = /[–—‘’“”…]/;
 
@@ -24,7 +26,7 @@ const KINDS = {
   title:         { required: [], optional: ["notes"], teaching: false },
   overview:      { required: ["lines"], optional: ["title", "notes"], teaching: false },
   resources:     { required: [], optional: ["notes"], teaching: false },
-  dailyReview:   { required: ["title"], optional: ["prompts", "visual", "reveal", "notes"], teaching: true, numeracy: true },
+  dailyReview:   { required: ["title", "from"], optional: ["prompts", "visual", "reveal", "notes"], teaching: true, numeracy: true },
   fluency:       { required: ["title", "prompts"], optional: ["reveal", "notes"], teaching: true, numeracy: true },
   launch:        { required: ["title"], optional: ["lines", "visual", "label", "prompt", "badge", "badgeColor", "reveal", "notes"], teaching: true },
   li:            { required: ["learningIntention", "successCriteria"], optional: ["notes"], teaching: true },
@@ -34,7 +36,8 @@ const KINDS = {
   workedExample: { required: ["stage", "title", "steps"], optional: ["stageLabel", "visual", "reveal", "notes"], teaching: true, numeracy: true },
   choice:        { required: ["badge", "title", "options"], optional: ["prompt", "answer", "badgeColor", "letters", "notes"], teaching: true },
   cfu:           { required: ["title", "technique", "question"], optional: ["badge", "reveal", "notes"], teaching: true },
-  youDo:         { required: ["title", "task"], optional: ["steps", "where", "visual", "visualLabel", "frame", "badge", "badgeColor", "notes"], teaching: true },
+  youDo:         { required: ["title", "task"], optional: ["steps", "where", "visual", "visualLabel", "frame", "badge", "badgeColor", "extendedTask", "notes"], teaching: true },
+  practice:      { required: ["title", "items", "pivot"], optional: ["badge", "badgeColor", "ask", "routine", "thinkTime", "followUp", "notes"], teaching: true },
   textExtract:   { required: ["badge", "title", "extract"], optional: ["highlights", "source", "prompt", "badgeColor", "reveal", "notes"], teaching: true },
   cycle:         { required: ["title", "steps", "centerLabel"], optional: ["badge", "promptTitle", "promptLines", "reveal", "notes"], teaching: true, science: true },
   process:       { required: ["title", "steps"], optional: ["badge", "promptTitle", "promptLines", "notes"], teaching: true, science: true },
@@ -249,7 +252,7 @@ function validateExitTicket(spec, slides, exitIndex, errors) {
     }
 
     if (exitVisualKey) {
-      const visuals = [s.visual, s.answerVisual].concat(toArray(s.options).map((o) => o && o.visual)).filter(Boolean);
+      const visuals = [s.visual, s.answerVisual].concat(toArray(s.options).map((o) => o && o.visual), toArray(s.items).map((it) => it && it.visual)).filter(Boolean);
       if (visuals.some((v) => canonical(v) === exitVisualKey)) report(`${w}.visual: the same visual as ${where}. ${fix}`);
     }
   });
@@ -267,7 +270,111 @@ function validateExitTicket(spec, slides, exitIndex, errors) {
   }
 }
 
-function validateLessonSpec(spec) {
+/** A practice round: 3 to 8 items of one kind, each with its answer (megaprompt 82). */
+function validatePractice(slide, w, errors) {
+  const items = Array.isArray(slide.items) ? slide.items : [];
+  if (items.length < 3 || items.length > 8) errors.push(`${w}.items: 3 to 8 items in a round (got ${items.length}). More practice is another round.`);
+  if (slide.routine != null && !ROUTINES[slide.routine]) errors.push(`${w}.routine: use one of ${Object.keys(ROUTINES).join(", ")} (default boards).`);
+  if (slide.thinkTime != null && (!Number.isInteger(slide.thinkTime) || slide.thinkTime < 2 || slide.thinkTime > 120)) errors.push(`${w}.thinkTime: seconds, 2 to 120.`);
+  if (!isNonEmptyString(slide.pivot)) errors.push(`${w}.pivot: the re-teach move for a weak scan, in a different representation, e.g. "count the empty boxes together on the board frame" (megaprompt 38).`);
+  const allowed = ["extract", "source", "highlights", "visual", "label", "text", "answer", "expect", "reveal", "say", "pivot"];
+  items.forEach((it, j) => {
+    const iw = `${w}.items[${j}]`;
+    if (!it || typeof it !== "object") { errors.push(`${iw}: an object { visual | extract | text, answer }`); return; }
+    Object.keys(it).forEach((k) => { if (!allowed.includes(k)) errors.push(`${iw}.${k}: unknown field. Allowed: ${allowed.join(", ")}`); });
+    const forms = ["extract", "visual", "text"].filter((k) => it[k] != null);
+    if (forms.length !== 1) errors.push(`${iw}: exactly one of extract, visual or text (the thing students answer).`);
+    if (!isNonEmptyString(it.answer)) errors.push(`${iw}.answer: required, in student words.`);
+    if (it.visual) validateVisual(it.visual, `${iw}.visual`, errors);
+  });
+  const n = slide.notes;
+  if (!n || typeof n !== "object" || Array.isArray(n)) {
+    errors.push(`${w}.notes: { trap, prep, tag } and optionally say, stretch, help. The round's beats are written for you from the cue scripts.`);
+  } else {
+    const allowedNotes = ["say", "trap", "stretch", "help", "prep", "tag"];
+    Object.keys(n).forEach((k) => { if (!allowedNotes.includes(k)) errors.push(`${w}.notes.${k}: unknown field for a practice round. Allowed: ${allowedNotes.join(", ")}`); });
+    if (!isNonEmptyString(n.tag)) errors.push(`${w}.notes.tag: required, e.g. "[We Do | Supported application | SC2 | HITS 3, 7]".`);
+    if (!n.trap) errors.push(`${w}.notes.trap: the error this round is most likely to surface, with its fix.`);
+  }
+}
+
+/**
+ * Daily Review retrieves taught content, spaced (megaprompt 22, 77, 83).
+ * Each dailyReview slide names its source: a taught-log key, "teacher" when
+ * the request named the focus, or "before log" for learning that predates
+ * the log. With the log loaded, keys must exist and come earlier, and when
+ * older learning is available at least one item must reach back two weeks.
+ */
+function validateReviewSources(spec, slides, errors, taughtLog) {
+  const reviews = slides.map((s, i) => ({ s, i })).filter(({ s }) => s && s.kind === "dailyReview");
+  if (!reviews.length) return;
+  const L = spec.lesson || {};
+  const keyRe = /^\d{4}-T[1-4]-W\d{1,2}-S\d$/;
+  const special = [TEACHER_SOURCE, BEFORE_LOG_SOURCE];
+  reviews.forEach(({ s, i }) => {
+    if (s.from == null) return; // reported as a required field
+    if (!special.includes(s.from) && !keyRe.test(String(s.from))) {
+      errors.push(`slides[${i}] (dailyReview).from: a taught-log key like "2026-T3-W8-S2", "${TEACHER_SOURCE}" (the request named the focus) or "${BEFORE_LOG_SOURCE}". Run node scripts/taught_log.js <spec> to see what is due.`);
+    }
+  });
+  if (!Array.isArray(taughtLog) || !Number.isInteger(L.term) || !Number.isInteger(L.week)) return;
+  const here = positionOf(L);
+  const byKey = new Map(taughtLog.map((e) => [e.key, e]));
+  reviews.forEach(({ s, i }) => {
+    if (!keyRe.test(String(s.from))) return;
+    const e = byKey.get(s.from);
+    if (!e) errors.push(`slides[${i}] (dailyReview).from: "${s.from}" is not in the taught log for ${L.yearLevel} ${L.subject}. Run node scripts/taught_log.js <spec> for the lessons that are.`);
+    else if (e.order >= here.order) errors.push(`slides[${i}] (dailyReview).from: "${s.from}" is not earlier than this lesson (${here.key}). Daily Review retrieves learning already taught.`);
+  });
+  if (reviews.some(({ s }) => special.includes(s.from))) return;
+  const olderAvailable = taughtLog.some((e) => e.weekIndex <= here.weekIndex - 2);
+  const reachesBack = reviews.some(({ s }) => { const e = byKey.get(s.from); return e && e.weekIndex <= here.weekIndex - 2; });
+  if (olderAvailable && !reachesBack) {
+    errors.push(`slides (dailyReview): every item comes from the last week. At least one must retrieve learning from two or more weeks ago so it is spaced (megaprompt 77). Run node scripts/taught_log.js <spec>.`);
+  }
+}
+
+// Beats that ask every student to respond: the school cue scripts (megaprompt 75a).
+const ALL_STUDENT_CUE = /Write it|Chin it|boards up|Show me\b|fingers (up|on cue|at your chest)|everyone points|point on cue|Point\.\.\. now|together, on three|turn and tell|Partner [AB] first|thumbs/i;
+const INDEPENDENT_MIN = { foundation: 4, grade1: 6, grade2: 6, grade34: 8, grade56: 8 };
+
+/**
+ * Practice volume (megaprompt 82): planned whole-class responses and
+ * independent items, counted from the spec with practice rounds expanded.
+ */
+function practiceCounts(spec) {
+  const expanded = expandSpec(spec);
+  let responses = 0;
+  expanded.slides.forEach((s) => {
+    const n = s && s.notes;
+    if (!n || typeof n !== "object") return;
+    toArray(n.beats).forEach((b) => { if (ALL_STUDENT_CUE.test(toArray(b).join(" "))) responses += 1; });
+  });
+  let independent = 0;
+  (spec.resources || []).forEach((r) => { if (r && r.kind === "worksheet") independent += toArray(r.items).length; });
+  (spec.slides || []).forEach((s) => {
+    if (s && s.kind === "practice" && /you do/i.test(String(s.badge || ""))) independent += toArray(s.items).length;
+  });
+  const extended = (spec.slides || []).find((s) => s && s.kind === "youDo" && isNonEmptyString(s.extendedTask));
+  return { responses, independent, extended: extended ? extended.extendedTask : null };
+}
+
+function validatePracticeVolume(spec, errors) {
+  const L = spec.lesson || {};
+  const minutes = Number.isInteger(L.minutes) ? L.minutes : 60;
+  const { responses, independent, extended } = practiceCounts(spec);
+  const minResponses = Math.ceil(minutes / 3);
+  if (responses < minResponses) {
+    errors.push(`practice: ${responses} planned whole-class responses; a ${minutes}-minute lesson needs at least ${minResponses} (one every three minutes, megaprompt 82). Add a practice round ({ "kind": "practice" }) of quick board items, or a response in the I Do.`);
+  }
+  const minIndependent = INDEPENDENT_MIN[L.yearLevel];
+  if (minIndependent && !extended && independent < minIndependent) {
+    errors.push(`practice: ${independent} independent items; ${L.yearLevel} needs at least ${minIndependent} (megaprompt 82). Give the You Do a graded worksheet, or a practice round badged "You Do". For one extended task (a paragraph, a labelled diagram), set youDo.extendedTask to say what it is.`);
+  }
+}
+
+function validateLessonSpec(spec, opts) {
+  const vopts = opts || {};
   const errors = [];
   const warnings = [];
   if (!spec || typeof spec !== "object") return { errors: ["spec must be a JSON object"], warnings };
@@ -277,9 +384,12 @@ function validateLessonSpec(spec) {
   if (!VALID_SUBJECTS.includes(L.subject)) errors.push(`lesson.subject: "${L.subject}" must be one of ${VALID_SUBJECTS.join(", ")}`);
   if (!VALID_YEAR_LEVELS.includes(L.yearLevel)) errors.push(`lesson.yearLevel: "${L.yearLevel}" must be one of ${VALID_YEAR_LEVELS.join(", ")}`);
   if (!isNonEmptyString(L.title)) errors.push("lesson.title: required");
-  if (L.week == null && L.variant == null) warnings.push("lesson.week: not set; variant 0 will be used. Set the week so the unit keeps one palette.");
   if (L.week != null && (!Number.isInteger(L.week) || L.week < 1)) errors.push("lesson.week: 1-based integer");
   if (L.session != null && (!Number.isInteger(L.session) || L.session < 1)) errors.push("lesson.session: 1-based integer");
+  if (!Number.isInteger(L.term) || L.term < 1 || L.term > 4) errors.push("lesson.term: 1 to 4. With week and session it places the lesson in teaching order for the taught log (megaprompt 83).");
+  if (L.week == null) errors.push("lesson.week: required, 1-based. With term and session it places the lesson in teaching order.");
+  if (L.year != null && (!Number.isInteger(L.year) || L.year < 2020)) errors.push("lesson.year: a four-digit year, or omit it for the current year.");
+  if (L.minutes != null && (!Number.isInteger(L.minutes) || L.minutes < 20 || L.minutes > 120)) errors.push("lesson.minutes: session length, 20 to 120 (default 60).");
   if (L.titleVisual) validateVisual(L.titleVisual, "lesson.titleVisual", errors);
 
   // Banned characters anywhere: the theme sanitises slide text, but PDFs are
@@ -325,7 +435,8 @@ function validateLessonSpec(spec) {
       }
     });
 
-    validateNotes(slide.notes, w, def, errors, warnings);
+    if (slide.kind === "practice") validatePractice(slide, w, errors);
+    else validateNotes(slide.notes, w, def, errors, warnings);
     validateVisual(slide.visual, `${w}.visual`, errors);
     validateReveal(slide.reveal, w, errors, warnings, slide);
     if (slide.badgeColor && !BADGE_COLORS.includes(slide.badgeColor)) {
@@ -386,6 +497,7 @@ function validateLessonSpec(spec) {
       case "youDo": {
         const steps = slide.steps == null ? [] : (Array.isArray(slide.steps) ? slide.steps : [slide.steps]);
         if (steps.length > 3) errors.push(`${w}.steps: at most 3 (First, Next, Then).`);
+        if (slide.extendedTask != null && !isNonEmptyString(slide.extendedTask)) errors.push(`${w}.extendedTask: say what the one extended task is, e.g. "write the introduction paragraph".`);
         break;
       }
       case "workedExample":
@@ -436,9 +548,12 @@ function validateLessonSpec(spec) {
     else if (closingIndex !== slides.length - 1) errors.push("slides: the closing slide must be last.");
     if (exitIndex === -1) warnings.push("slides: no exitTicket slide. Most lessons collect evidence before the closing (megaprompt 53).");
     else validateExitTicket(spec, slides, exitIndex, errors);
+    validateReviewSources(spec, slides, errors, vopts.taughtLog);
+    validatePracticeVolume(spec, errors);
     const kinds = slides.map((s) => s && s.kind);
     if (!kinds.includes("cfu") && !kinds.includes("choice")) warnings.push("slides: no cfu or choice slide. Where is the decision-grade check (megaprompt 36, 76)?");
-    if (!kinds.includes("youDo")) warnings.push("slides: no youDo slide.");
+    const youDoRound = slides.some((sl) => sl && sl.kind === "practice" && /you do/i.test(String(sl.badge || "")));
+    if (!kinds.includes("youDo") && !youDoRound) warnings.push("slides: no youDo slide or practice round badged \"You Do\".");
   }
 
   // Resources
@@ -481,4 +596,4 @@ function validateLessonSpec(spec) {
   return { errors, warnings };
 }
 
-module.exports = { validateLessonSpec, KINDS, RESOURCE_KINDS, PDF_VISUAL_TYPES, BADGE_COLORS };
+module.exports = { validateLessonSpec, practiceCounts, KINDS, RESOURCE_KINDS, PDF_VISUAL_TYPES, BADGE_COLORS };
