@@ -1,0 +1,31 @@
+{
+  "unit_folder": "Term4_Week1_Maths_Angles",
+  "unit_pptx_name": "Term 4 Week 1 - Angles - Year 5-6 Maths.pptx",
+  "anchor": "quarter turn 90°, half turn 180°, full turn 360°",
+  "lessons": [
+    {
+      "build_script": "builds/t4w1_maths_s1_measuring_angles.json",
+      "folder": "T4W1_Maths_S1_Measuring_Angles",
+      "session": 1,
+      "focus": "Measure and classify angles with a protractor. Critical feature: read the scale that starts at 0 on your arm. Review: FDP (Term 3 Weeks 5 and 9)."
+    },
+    {
+      "build_script": "builds/t4w1_maths_s2_estimating_drawing_angles.json",
+      "folder": "T4W1_Maths_S2_Estimating_Drawing_Angles",
+      "session": 2,
+      "focus": "Estimate, draw and measure reflex angles. Critical feature: estimate against 90° and 180° first; reflex = 360° minus the inside. Review: FDP (Term 3 Weeks 8 and 9)."
+    },
+    {
+      "build_script": "builds/t4w1_maths_s3_angles_line_point.json",
+      "folder": "T4W1_Maths_S3_Angles_Line_Point",
+      "session": 3,
+      "focus": "Angles on a straight line, at a point, and in a right angle. Critical feature: find the whole (90°, 180°, 360°) first. Review: FDP (Term 3 Weeks 6 and 9)."
+    },
+    {
+      "build_script": "builds/t4w1_maths_s4_vertically_opposite.json",
+      "folder": "T4W1_Maths_S4_Vertically_Opposite",
+      "session": 4,
+      "focus": "Vertically opposite angles and mixed unknowns. Critical feature: name the angle fact with every answer. Review: four processes (Term 3 Week 7)."
+    }
+  ]
+}

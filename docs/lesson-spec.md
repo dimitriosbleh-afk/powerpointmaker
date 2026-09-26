@@ -19,6 +19,7 @@ Golden exemplars (copy their shape, not their content):
 | `builds/exemplar_foundation_numeracy_making_10.json` | Foundation numeracy | Daily Review with `from` keys, one-question-per-slide fluency, hero ten frames, diagnostic choice check, We Do practice round, You Do with worksheet and answer key |
 | `builds/exemplar_year2_literacy_feeling_clues.json` | Year 2 literacy | pictogram launch, word card, text extracts with highlights, diagnostic choice check, We Do and You Do practice rounds, no printing |
 | `builds/exemplar_year56_science_water_cycle.json` | Year 5/6 science | two word cards, cycle diagram I Do and faded We Do, table rehearsal, practice round of everyday cases, hinge CFU, extended You Do with scaffold |
+| `builds/exemplar_year56_numeracy_measuring_angles.json` | Year 5/6 numeracy | the maths planning team's rules (megaprompt 85): LI before launch, algorithm fluency with column sums, protractor diagrams, practice round, standard Your turn, sectioned main sheet with Extension and supported sheets |
 
 Validation is strict. Every problem is printed with the field path and the
 fix. Warnings (`ADVISORY [spec] ...`) are work not yet done.

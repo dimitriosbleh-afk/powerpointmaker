@@ -100,7 +100,7 @@ IMPORTANT/MEGA_PROMPT.md   # Pedagogical framework - paste into conversation whe
 docs/                      # Deep reference docs (read when needed, not every session)
 ```
 
-**Lessons are specs, not scripts.** A lesson is authored as `builds/<unit>_<session>.json` (schema: `docs/lesson-spec.md`; golden exemplars: `builds/exemplar_*.json`, one each for Foundation numeracy, Year 2 literacy and Year 5/6 science). The spec carries content and intent; `themes/lesson/buildLesson.js` chooses every builder, size, colour and reveal. Validation is strict and names the field and the fix. Write a JavaScript build script only when a spec cannot express a slide, say why, and extend the shared layer if the need will recur. Never copy patterns from `_archive/lessons/`.
+**Lessons are specs, not scripts.** A lesson is authored as `builds/<unit>_<session>.json` (schema: `docs/lesson-spec.md`; golden exemplars: `builds/exemplar_*.json`, one each for Foundation numeracy, Year 2 literacy, Year 5/6 science and Year 5/6 numeracy). The spec carries content and intent; `themes/lesson/buildLesson.js` chooses every builder, size, colour and reveal. Validation is strict and names the field and the fix. Write a JavaScript build script only when a spec cannot express a slide, say why, and extend the shared layer if the need will recur. Never copy patterns from `_archive/lessons/`.
 
 **Never append below the `===== END OF MEGA-PROMPT. SHIFT CLICK HERE. =====` marker in `IMPORTANT/MEGA_PROMPT.md`.** Teachers select from the top of the file to that marker to copy the prompt. New sections go ABOVE it; the marker and the USER REQUEST block stay last.
 
@@ -447,7 +447,7 @@ For ad-hoc (non-themed) presentation design guidance: read `docs/design-guide.md
 
 **Use the tested theme builders** (`titleSlide`, `liSlide`, `contentSlide`, `cfuSlide`, `workedExSlide`, `exitTicketSlide`, `closingSlide`) for every slide that fits their signature. Only go manual for truly novel layouts, and test those individually.
 
-**Archived scripts are not active exemplars.** `_archive/lessons/` holds the 300 pre-v12.6 build scripts (hand-placed small visuals, definition-list vocabulary, notes over budget; 32 fail the current gates). Do not scan it for patterns. The exemplars are the three `builds/exemplar_*.json` specs; build from those, the shared theme, and the current docs.
+**Archived scripts are not active exemplars.** `_archive/lessons/` holds the 300 pre-v12.6 build scripts (hand-placed small visuals, definition-list vocabulary, notes over budget; 32 fail the current gates). Do not scan it for patterns. The exemplars are the four `builds/exemplar_*.json` specs; build from those, the shared theme, and the current docs.
 
 Agents ARE useful for: research, reading reference files, visual QA inspection of rendered slide images, and content review. Just not for writing the build scripts themselves.
 

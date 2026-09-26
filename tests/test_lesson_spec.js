@@ -228,8 +228,46 @@ function testTaughtLog() {
   ok("taught log keeps teaching order and Daily Review sources are checked against it");
 }
 
+/** The Years 5-6 maths planning team's rules (megaprompt 85). */
+function testPlanner56() {
+  const base = loadSpec(exemplars.find((f) => path.basename(f).includes("year56_numeracy")));
+  const clone = () => JSON.parse(JSON.stringify(base));
+  const errorsOf = (spec) => validateLessonSpec(spec).errors;
+  assert.deepStrictEqual(errorsOf(base), [], "the Years 5-6 maths exemplar meets every planner rule");
+
+  const noExtension = clone();
+  noExtension.resources = noExtension.resources.filter((r) => r.role !== "extension");
+  assert(errorsOf(noExtension).some((e) => /role "extension"/.test(e)), "every session needs an Extension");
+
+  const ownSteps = clone();
+  ownSteps.slides.find((s) => s.kind === "youDo").steps = ["Read", "Solve", "Check"];
+  assert(errorsOf(ownSteps).some((e) => /standard steps/.test(e)), "Your turn uses the standard steps");
+
+  const launchFirst = clone();
+  const li = launchFirst.slides.findIndex((s) => s.kind === "li");
+  const launch = launchFirst.slides.findIndex((s) => s.kind === "launch");
+  const [launchSlide] = launchFirst.slides.splice(launch, 1);
+  launchFirst.slides.splice(li, 0, launchSlide);
+  assert(errorsOf(launchFirst).some((e) => /cannot come before the LI/.test(e)), "the launch comes after the LI and SC");
+
+  const lessonWord = clone();
+  lessonWord.slides.find((s) => s.kind === "li").notes.prep = "The core of the lesson.";
+  assert(errorsOf(lessonWord).some((e) => /the word "lesson"/.test(e)), "teacher notes never use the word lesson");
+
+  const repeated = clone();
+  const slideVisual = repeated.slides.find((s) => s.kind === "practice").items[0].visual;
+  repeated.resources.find((r) => r.role === "main").sections[1].items[0].visual = JSON.parse(JSON.stringify(slideVisual));
+  assert(errorsOf(repeated).some((e) => /same numbers/.test(e)), "a slide question may not reappear on a sheet");
+
+  const short = clone();
+  short.resources.find((r) => r.role === "main").sections.forEach((sec) => { sec.items = sec.items.slice(0, 2); });
+  assert(errorsOf(short).some((e) => /at least 16/.test(e)), "the main sheet is long enough for fast finishers");
+  ok("Years 5-6 maths: three sheets, standard Your turn, LI before launch, no repeated questions, long main sheet");
+}
+
 (async () => {
   await testExemplarsBuild();
+  testPlanner56();
   testValidatorNamesTheMistake();
   testEvidenceRules();
   testPracticeRounds();

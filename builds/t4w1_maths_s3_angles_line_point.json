@@ -1,0 +1,1974 @@
+{
+  "lesson": {
+    "subject": "numeracy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 1,
+    "session": 3,
+    "title": "Angles on a Line and at a Point",
+    "subtitle": "Term 4 Week 1, Session 3",
+    "meta": "Year 5/6 Maths | Measurement",
+    "footer": "Angles | Year 5/6 Maths | Session 3",
+    "outputFolder": "T4W1_Maths_S3_Angles_Line_Point",
+    "fileName": "Session 3 - Angles on a Line and at a Point.pptx",
+    "titleVisual": {
+      "type": "angle",
+      "rays": [
+        0,
+        130,
+        180
+      ],
+      "arcs": [
+        {
+          "from": 0,
+          "to": 130,
+          "label": "130°"
+        },
+        {
+          "from": 130,
+          "to": 180,
+          "label": "x"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "Mathematics 2.0, Measurement, Year 6 (VC2M6M04): angles on a straight line and at a point; use them to find unknown angles, communicating reasoning",
+      "shape": "example-first for the two angle facts, then a practice round mixing them, because choosing the right whole is the new decision",
+      "criticalFeature": "find the whole first (90°, 180° or 360°), then subtract what you know",
+      "decisionPoints": [
+        "the choice check on the straight line",
+        "the hinge: which whole?",
+        "the exit ticket"
+      ],
+      "anchor": "quarter turn 90°, half turn 180°, full turn 360°",
+      "catchUp": "Missed Sessions 1 or 2? Show the anchor: a straight line is a half turn, 180°, a full turn 360°; that is all today needs."
+    }
+  },
+  "materials": {
+    "manipulatives": [
+      "A protractor for every student, to check answers",
+      "Paper strips or rulers to show a straight line"
+    ],
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Everyone, together, on three",
+      "Point"
+    ],
+    "boardSetup": [
+      "The anchor on the board: quarter turn 90°, half turn 180°, full turn 360°"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn. Straight lines, points, right angles, worded problems and thinking questions.",
+      "title": "Angles on a Line and at a Point",
+      "subtitle": "Find the whole first, then subtract.",
+      "sections": [
+        {
+          "title": "On a straight line",
+          "proficiency": "fluency",
+          "columns": 2,
+          "example": {
+            "prompt": "Find x.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                110,
+                180
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 110,
+                  "label": "110°"
+                },
+                {
+                  "from": 110,
+                  "to": 180,
+                  "label": "x"
+                }
+              ]
+            },
+            "steps": [
+              "A straight line is 180°.",
+              "x = 180° - 110°",
+              "x = 70°"
+            ],
+            "answer": "x = 70°"
+          },
+          "items": [
+            {
+              "prompt": "Find a.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  155,
+                  180
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 155,
+                    "label": "155°"
+                  },
+                  {
+                    "from": 155,
+                    "to": 180,
+                    "label": "a"
+                  }
+                ]
+              },
+              "answer": "25°",
+              "answerLabel": "a ="
+            },
+            {
+              "prompt": "Find b.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  108,
+                  180
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 108,
+                    "label": "b"
+                  },
+                  {
+                    "from": 108,
+                    "to": 180,
+                    "label": "72°"
+                  }
+                ]
+              },
+              "answer": "108°",
+              "answerLabel": "b ="
+            },
+            {
+              "prompt": "Find c.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  33,
+                  180
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 33,
+                    "label": "33°"
+                  },
+                  {
+                    "from": 33,
+                    "to": 180,
+                    "label": "c"
+                  }
+                ]
+              },
+              "answer": "147°",
+              "answerLabel": "c ="
+            },
+            {
+              "prompt": "Find d.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  50,
+                  125,
+                  180
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 50,
+                    "label": "50°"
+                  },
+                  {
+                    "from": 50,
+                    "to": 125,
+                    "label": "75°"
+                  },
+                  {
+                    "from": 125,
+                    "to": 180,
+                    "label": "d"
+                  }
+                ]
+              },
+              "answer": "55°",
+              "answerLabel": "d ="
+            }
+          ]
+        },
+        {
+          "title": "Around a point",
+          "proficiency": "fluency",
+          "columns": 2,
+          "example": {
+            "prompt": "Find y.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                150,
+                260
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 150,
+                  "label": "150°"
+                },
+                {
+                  "from": 150,
+                  "to": 260,
+                  "label": "110°"
+                },
+                {
+                  "from": 260,
+                  "to": 360,
+                  "label": "y"
+                }
+              ]
+            },
+            "steps": [
+              "All the way round is 360°.",
+              "150° + 110° = 260°",
+              "y = 360° - 260° = 100°"
+            ],
+            "answer": "y = 100°"
+          },
+          "items": [
+            {
+              "prompt": "Find e.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  100,
+                  230
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 100,
+                    "label": "100°"
+                  },
+                  {
+                    "from": 100,
+                    "to": 230,
+                    "label": "130°"
+                  },
+                  {
+                    "from": 230,
+                    "to": 360,
+                    "label": "e"
+                  }
+                ]
+              },
+              "answer": "130°",
+              "answerLabel": "e ="
+            },
+            {
+              "prompt": "Find f.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  145,
+                  245
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 145,
+                    "label": "145°"
+                  },
+                  {
+                    "from": 145,
+                    "to": 245,
+                    "label": "100°"
+                  },
+                  {
+                    "from": 245,
+                    "to": 360,
+                    "label": "f"
+                  }
+                ]
+              },
+              "answer": "115°",
+              "answerLabel": "f ="
+            },
+            {
+              "prompt": "Find g.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  60,
+                  150,
+                  270
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 60,
+                    "label": "60°"
+                  },
+                  {
+                    "from": 60,
+                    "to": 150,
+                    "label": "90°"
+                  },
+                  {
+                    "from": 150,
+                    "to": 270,
+                    "label": "120°"
+                  },
+                  {
+                    "from": 270,
+                    "to": 360,
+                    "label": "g"
+                  }
+                ]
+              },
+              "answer": "90°",
+              "answerLabel": "g ="
+            },
+            {
+              "prompt": "Find h.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  90,
+                  230
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 90,
+                    "right": true
+                  },
+                  {
+                    "from": 90,
+                    "to": 230,
+                    "label": "140°"
+                  },
+                  {
+                    "from": 230,
+                    "to": 360,
+                    "label": "h"
+                  }
+                ]
+              },
+              "answer": "130°",
+              "answerLabel": "h ="
+            }
+          ]
+        },
+        {
+          "title": "In a right angle",
+          "proficiency": "understanding",
+          "columns": 2,
+          "example": {
+            "prompt": "Find z.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                40,
+                90
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 90,
+                  "right": true
+                },
+                {
+                  "from": 0,
+                  "to": 40,
+                  "label": "40°",
+                  "r": 36
+                },
+                {
+                  "from": 40,
+                  "to": 90,
+                  "label": "z",
+                  "r": 36
+                }
+              ]
+            },
+            "steps": [
+              "The square means 90°.",
+              "z = 90° - 40°",
+              "z = 50°"
+            ],
+            "answer": "z = 50°"
+          },
+          "items": [
+            {
+              "prompt": "Find p.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  25,
+                  90
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 90,
+                    "right": true
+                  },
+                  {
+                    "from": 0,
+                    "to": 25,
+                    "label": "25°",
+                    "r": 36
+                  },
+                  {
+                    "from": 25,
+                    "to": 90,
+                    "label": "p",
+                    "r": 36
+                  }
+                ]
+              },
+              "answer": "65°",
+              "answerLabel": "p ="
+            },
+            {
+              "prompt": "Find q.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  71,
+                  90
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 90,
+                    "right": true
+                  },
+                  {
+                    "from": 0,
+                    "to": 71,
+                    "label": "71°",
+                    "r": 36
+                  },
+                  {
+                    "from": 71,
+                    "to": 90,
+                    "label": "q",
+                    "r": 36
+                  }
+                ]
+              },
+              "answer": "19°",
+              "answerLabel": "q ="
+            },
+            {
+              "prompt": "Two complementary angles are equal. How big is each one?",
+              "answer": "45°"
+            },
+            {
+              "prompt": "Two supplementary angles are equal. How big is each one?",
+              "answer": "90°"
+            }
+          ]
+        },
+        {
+          "title": "Real-world angles",
+          "proficiency": "problemSolving",
+          "example": {
+            "prompt": "A ladder leans on a wall and makes 65° with the ground. What angle does it make with the ground on the other side of its foot?",
+            "steps": [
+              "The ground is a straight line: 180°.",
+              "180° - 65° = 115°."
+            ],
+            "answer": "115°"
+          },
+          "items": [
+            {
+              "prompt": "At the bottom of a skate ramp, the ramp makes 28° with the ground. What is the other angle on the straight line?",
+              "answer": "152°",
+              "answerLines": 1
+            },
+            {
+              "prompt": "A pizza is cut into 3 slices from the centre. Two slices have angles of 110° and 130°. What is the angle of the third slice?",
+              "answer": "120°",
+              "answerLines": 1
+            },
+            {
+              "prompt": "A coach draws two lines that meet at a right angle. A player runs along a line 35° from one of them, inside the right angle. What angle is left?",
+              "answer": "55°",
+              "answerLines": 1
+            },
+            {
+              "prompt": "A Ferris wheel has 8 equal spokes. What is the angle between two spokes next to each other?",
+              "answer": "45°",
+              "answerLines": 1
+            }
+          ]
+        },
+        {
+          "title": "Think deeper",
+          "proficiency": "reasoning",
+          "example": {
+            "prompt": "Can a straight line hold two angles of 100°? Explain.",
+            "steps": [
+              "A straight line makes 180°.",
+              "100° + 100° = 200°.",
+              "200° is more than 180°, so no."
+            ],
+            "answer": "No"
+          },
+          "items": [
+            {
+              "prompt": "One angle on a straight line is 140°. Ali says the other is 220° because 360 - 140 = 220. Explain his mistake and find the right answer.",
+              "answer": "A straight line is 180°, not 360°: 180 - 140 = 40°.",
+              "answerLines": 2
+            },
+            {
+              "prompt": "Can two obtuse angles sit next to each other on a straight line? Explain.",
+              "answer": "No. Two angles over 90° add to more than 180°.",
+              "answerLines": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option. Angle puzzles with number sentences, with worked examples.",
+      "title": "Extension: Angle Puzzles",
+      "subtitle": "Write a number sentence, then solve it.",
+      "sections": [
+        {
+          "title": "Equal angles",
+          "proficiency": "reasoning",
+          "intro": "When angles are marked with the same letter, they are the same size. Write a number sentence and share the whole equally.",
+          "example": {
+            "prompt": "Three angles marked x sit on a straight line. Find x.",
+            "steps": [
+              "The three angles make 180°.",
+              "x + x + x = 180°",
+              "x = 180° divided by 3 = 60°"
+            ],
+            "answer": "x = 60°"
+          },
+          "items": [
+            {
+              "prompt": "Two angles marked a and a 40° angle sit on a straight line. Find a.",
+              "answer": "a = 70°",
+              "answerLines": 2
+            },
+            {
+              "prompt": "Four equal angles meet at a point. How big is each?",
+              "answer": "90°",
+              "answerLines": 1
+            },
+            {
+              "prompt": "Five angles marked b meet at a point. Find b.",
+              "answer": "b = 72°",
+              "answerLines": 1
+            }
+          ]
+        },
+        {
+          "title": "Double trouble",
+          "proficiency": "reasoning",
+          "example": {
+            "prompt": "Two angles on a straight line: one is double the other. Find both.",
+            "steps": [
+              "Call the small one s. The big one is 2 x s.",
+              "s + 2s = 3s = 180°",
+              "s = 60°, so the angles are 60° and 120°."
+            ],
+            "answer": "60° and 120°"
+          },
+          "items": [
+            {
+              "prompt": "Two complementary angles: one is double the other. Find both.",
+              "answer": "30° and 60°",
+              "answerLines": 2
+            },
+            {
+              "prompt": "Three angles at a point: the second is double the first, and the third is triple the first. Find all three.",
+              "answer": "60°, 120°, 180°",
+              "answerLines": 2
+            }
+          ]
+        },
+        {
+          "title": "Make your own",
+          "proficiency": "problemSolving",
+          "example": {
+            "prompt": "Make a straight-line puzzle with a missing angle of 35°.",
+            "steps": [
+              "The missing angle and the known angle make 180°.",
+              "180° - 35° = 145°.",
+              "Puzzle: a straight line with 145° and x."
+            ],
+            "answer": "x = 35°"
+          },
+          "items": [
+            {
+              "prompt": "Make a puzzle around a point where the missing angle is 100°. Draw it and write the answer.",
+              "box": 150,
+              "answerLines": 0,
+              "answer": "any angles adding to 260° with a missing 100°"
+            },
+            {
+              "prompt": "Make a right-angle puzzle where the missing angle is 18°. Draw it and write the answer.",
+              "box": 150,
+              "answerLines": 0,
+              "answer": "a right angle split into 72° and 18°"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "answerKey": false,
+      "description": "For students who need more guidance: the whole is given, number sentences are started.",
+      "title": "Missing Angles: Step by Step",
+      "subtitle": "The whole is given. Finish the number sentence.",
+      "sections": [
+        {
+          "title": "Straight line: the whole is 180°",
+          "proficiency": "fluency",
+          "columns": 2,
+          "example": {
+            "prompt": "Find x.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                100,
+                180
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 100,
+                  "label": "100°"
+                },
+                {
+                  "from": 100,
+                  "to": 180,
+                  "label": "x"
+                }
+              ]
+            },
+            "steps": [
+              "Whole: 180°.",
+              "180 - 100 = 80.",
+              "x = 80°."
+            ],
+            "answer": "x = 80°"
+          },
+          "items": [
+            {
+              "prompt": "180 - 130 = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  130,
+                  180
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 130,
+                    "label": "130°"
+                  },
+                  {
+                    "from": 130,
+                    "to": 180,
+                    "label": "a"
+                  }
+                ]
+              },
+              "hint": "Count on from 130 to 180.",
+              "answer": "50°"
+            },
+            {
+              "prompt": "180 - 60 = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  60,
+                  180
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 60,
+                    "label": "60°"
+                  },
+                  {
+                    "from": 60,
+                    "to": 180,
+                    "label": "b"
+                  }
+                ]
+              },
+              "hint": "Count on from 60 to 180.",
+              "answer": "120°"
+            },
+            {
+              "prompt": "180 - 95 = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  95,
+                  180
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 95,
+                    "label": "95°"
+                  },
+                  {
+                    "from": 95,
+                    "to": 180,
+                    "label": "c"
+                  }
+                ]
+              },
+              "hint": "95 is close to 100: 180 - 100 = 80, add 5 back.",
+              "answer": "85°"
+            },
+            {
+              "prompt": "180 - 15 = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  15,
+                  180
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 15,
+                    "label": "15°"
+                  },
+                  {
+                    "from": 15,
+                    "to": 180,
+                    "label": "d"
+                  }
+                ]
+              },
+              "hint": "Take away 10, then 5.",
+              "answer": "165°"
+            }
+          ]
+        },
+        {
+          "title": "Around a point: the whole is 360°",
+          "proficiency": "fluency",
+          "columns": 2,
+          "example": {
+            "prompt": "Find y.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                180,
+                270
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 180,
+                  "label": "180°"
+                },
+                {
+                  "from": 180,
+                  "to": 270,
+                  "label": "90°"
+                },
+                {
+                  "from": 270,
+                  "to": 360,
+                  "label": "y"
+                }
+              ]
+            },
+            "steps": [
+              "Whole: 360°.",
+              "180 + 90 = 270.",
+              "360 - 270 = 90. y = 90°."
+            ],
+            "answer": "y = 90°"
+          },
+          "items": [
+            {
+              "prompt": "360 - 200 = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  100,
+                  200
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 100,
+                    "label": "100°"
+                  },
+                  {
+                    "from": 100,
+                    "to": 200,
+                    "label": "100°"
+                  },
+                  {
+                    "from": 200,
+                    "to": 360,
+                    "label": "e"
+                  }
+                ]
+              },
+              "hint": "Add the two angles first: 100 + 100.",
+              "answer": "160°"
+            },
+            {
+              "prompt": "360 - 250 = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  150,
+                  250
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 150,
+                    "label": "150°"
+                  },
+                  {
+                    "from": 150,
+                    "to": 250,
+                    "label": "100°"
+                  },
+                  {
+                    "from": 250,
+                    "to": 360,
+                    "label": "f"
+                  }
+                ]
+              },
+              "hint": "Add first: 150 + 100 = 250.",
+              "answer": "110°"
+            }
+          ]
+        },
+        {
+          "title": "Right angle: the whole is 90°",
+          "proficiency": "understanding",
+          "columns": 2,
+          "example": {
+            "prompt": "Find z.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                30,
+                90
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 90,
+                  "right": true
+                },
+                {
+                  "from": 0,
+                  "to": 30,
+                  "label": "30°",
+                  "r": 36
+                },
+                {
+                  "from": 30,
+                  "to": 90,
+                  "label": "z",
+                  "r": 36
+                }
+              ]
+            },
+            "steps": [
+              "Whole: 90°.",
+              "90 - 30 = 60.",
+              "z = 60°."
+            ],
+            "answer": "z = 60°"
+          },
+          "items": [
+            {
+              "prompt": "90 - 50 = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  50,
+                  90
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 90,
+                    "right": true
+                  },
+                  {
+                    "from": 0,
+                    "to": 50,
+                    "label": "50°",
+                    "r": 36
+                  },
+                  {
+                    "from": 50,
+                    "to": 90,
+                    "label": "p",
+                    "r": 36
+                  }
+                ]
+              },
+              "hint": "Count on from 50 to 90.",
+              "answer": "40°"
+            },
+            {
+              "prompt": "90 - 20 = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  20,
+                  90
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 90,
+                    "right": true
+                  },
+                  {
+                    "from": 0,
+                    "to": 20,
+                    "label": "20°",
+                    "r": 36
+                  },
+                  {
+                    "from": 20,
+                    "to": 90,
+                    "label": "q",
+                    "r": 36
+                  }
+                ]
+              },
+              "hint": "Count on from 20 to 90.",
+              "answer": "70°"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open Session 3 of the angles week. One line: today we find missing angles without measuring."
+    },
+    {
+      "kind": "resources",
+      "notes": "Prep slide. Boards and markers, a protractor each to check answers. Print the Worksheet for all, and some Extension and Supported Worksheet copies."
+    },
+    {
+      "kind": "dailyReview",
+      "title": "Compare them",
+      "from": "2026-T3-W9-S1",
+      "prompts": [
+        "Which is bigger: 3/5 or 0.62?"
+      ],
+      "reveal": {
+        "answers": [
+          "0.62"
+        ]
+      },
+      "notes": {
+        "answer": "0.62, because 3/5 is 0.60",
+        "beats": [
+          "SAY: Let's warm up with fractions, decimals and percentages again.",
+          [
+            "ASK: Which is bigger: three fifths or 0.62?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 0.62"
+          ],
+          [
+            "SCAN boards, back row first.",
+            "80%+ -> reveal, move on.",
+            "Less -> turn 3/5 into tenths, then hundredths, together, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Three fifths is 0.60, so 0.62 is bigger. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "choosing 3/5 because 5 is bigger than 2.",
+          "Fix: write both as hundredths, student compares."
+        ],
+        "prep": "Daily Review from Term 3 Week 9. Whole block under 6 minutes.",
+        "tag": "[Daily Review | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "dailyReview",
+      "title": "Percentage to fraction",
+      "from": "2026-T3-W6-S1",
+      "prompts": [
+        "Write 45% as a fraction in its simplest form."
+      ],
+      "visual": {
+        "type": "text",
+        "text": "45%"
+      },
+      "reveal": {
+        "answers": [
+          "45/100",
+          "9/20"
+        ]
+      },
+      "notes": {
+        "answer": "9/20",
+        "beats": [
+          [
+            "ASK: Write 45 percent as a fraction in its simplest form.",
+            "25 sec. Cue: boards up on cue.",
+            "EXPECT: 9/20"
+          ],
+          [
+            "SCAN boards for 9/20.",
+            "80%+ -> reveal, move on.",
+            "Less -> write 45/100 together, divide top and bottom by 5, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 45 hundredths simplifies to nine twentieths. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "stopping at 45/100.",
+          "Fix: find a number that divides both, student simplifies."
+        ],
+        "prep": "Spaced retrieval from Term 3 Week 6.",
+        "tag": "[Daily Review | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "dailyReview",
+      "title": "Percentage of an amount",
+      "from": "2026-T3-W9-S1",
+      "prompts": [
+        "What is 20% of 250?"
+      ],
+      "reveal": {
+        "answers": [
+          "50"
+        ]
+      },
+      "notes": {
+        "answer": "50",
+        "beats": [
+          [
+            "ASK: What is 20 percent of 250?",
+            "20 sec. Cue: boards up on cue.",
+            "EXPECT: 50"
+          ],
+          [
+            "SCAN boards.",
+            "80%+ -> reveal, then Fluency.",
+            "Less -> find 10% first, 25, then double it, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 10 percent is 25, so 20 percent is 50. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "writing 20 or 230.",
+          "Fix: find 10% first, student doubles."
+        ],
+        "prep": "Term 3 Week 9 retrieval: percentage of an amount.",
+        "tag": "[Daily Review | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "fluency",
+      "title": "Add with the written method: 3 digits",
+      "visual": {
+        "type": "columnSum",
+        "numbers": [
+          789,
+          456
+        ],
+        "op": "+"
+      },
+      "reveal": {
+        "answers": [
+          "1 245"
+        ]
+      },
+      "notes": {
+        "answer": "1 245",
+        "beats": [
+          "SAY: Now the written method. Line up the places and start with the ones.",
+          [
+            "ASK: Solve it with the written method.",
+            "30 sec. Cue: boards up on cue.",
+            "EXPECT: 1 245"
+          ],
+          [
+            "SCAN boards for the regrouped digits.",
+            "80%+ -> reveal, next one.",
+            "Less -> model the ones and the regroup together on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 1 245. Tick or fix, and check every regroup."
+          ]
+        ],
+        "trap": [
+          "forgetting to add a regrouped ten.",
+          "Fix: circle each carried digit, student re-adds that column."
+        ],
+        "prep": "Algorithm fluency: 3 digits, then 4, then 5. Whole block under 6 minutes.",
+        "tag": "[Fluency | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "fluency",
+      "title": "Add with the written method: 4 digits",
+      "visual": {
+        "type": "columnSum",
+        "numbers": [
+          6478,
+          3865
+        ],
+        "op": "+"
+      },
+      "reveal": {
+        "answers": [
+          "10 343"
+        ]
+      },
+      "notes": {
+        "answer": "10 343",
+        "beats": [
+          "SAY: Now 4 digits. Same method, one more column.",
+          [
+            "ASK: Solve it with the written method.",
+            "45 sec. Cue: boards up on cue.",
+            "EXPECT: 10 343"
+          ],
+          [
+            "SCAN boards for the regrouped digits.",
+            "80%+ -> reveal, next one.",
+            "Less -> model the ones and the regroup together on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 10 343. Tick or fix, and check every regroup."
+          ]
+        ],
+        "trap": [
+          "forgetting to add a regrouped ten.",
+          "Fix: circle each carried digit, student re-adds that column."
+        ],
+        "prep": "Algorithm fluency, next size up.",
+        "tag": "[Fluency | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "fluency",
+      "title": "Add with the written method: 5 digits",
+      "visual": {
+        "type": "columnSum",
+        "numbers": [
+          58736,
+          29487
+        ],
+        "op": "+"
+      },
+      "reveal": {
+        "answers": [
+          "88 223"
+        ]
+      },
+      "notes": {
+        "answer": "88 223",
+        "beats": [
+          "SAY: Now 5 digits. Same method, one more column.",
+          [
+            "ASK: Solve it with the written method.",
+            "60 sec. Cue: boards up on cue.",
+            "EXPECT: 88 223"
+          ],
+          [
+            "SCAN boards for the regrouped digits.",
+            "80%+ -> reveal, then the learning intention.",
+            "Less -> model the ones and the regroup together on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 88 223. Tick or fix, and check every regroup."
+          ]
+        ],
+        "trap": [
+          "forgetting to add a regrouped ten.",
+          "Fix: circle each carried digit, student re-adds that column."
+        ],
+        "prep": "Algorithm fluency, next size up.",
+        "tag": "[Fluency | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to find unknown angles on a straight line and around a point.",
+      "successCriteria": [
+        "I can say what angles on a straight line and around a point add to.",
+        "I can find an unknown angle by subtracting from 90°, 180° or 360°.",
+        "I can explain my answer using an angle fact."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today we find angles without measuring them. We use facts instead."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Knowing the two facts is where we start.",
+            "Finding the missing angle is our big goal today."
+          ]
+        ],
+        "prep": "SC1 the facts; SC2 finding the unknown is the core and the exit evidence; SC3 explaining with the fact is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "A straight line is a half turn",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          180
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 180,
+            "label": "?"
+          }
+        ]
+      },
+      "prompt": "How many degrees in a straight line? All the way round?",
+      "notes": {
+        "answer": "180° and 360°",
+        "beats": [
+          [
+            "POINT to the straight line.",
+            "SAY: A straight line is a half turn, from our anchor."
+          ],
+          [
+            "ASK: How many degrees in a straight line? All the way round?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 180 and 360"
+          ],
+          [
+            "SCAN boards for 180 and 360.",
+            "80%+ -> move on.",
+            "Less -> turn together: half turn, full turn, re-ask."
+          ]
+        ],
+        "trap": [
+          "writing 100 for a straight line.",
+          "Fix: add two quarter turns, student rewrites."
+        ],
+        "prep": "Launch after the LI: the anchor becomes today's two facts. Under 3 minutes.",
+        "tag": "[Launch | Retention and recall | HITS 3]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "supplementary",
+      "meaning": "Two angles that add to 180°, like the two parts of a straight line.",
+      "example": "130° and 50° are supplementary.",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          130,
+          180
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 130,
+            "label": "130°"
+          },
+          {
+            "from": 130,
+            "to": 180,
+            "label": "50°"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "two angles that add to 180 degrees",
+        "beats": [
+          "POINT to the word. SAY: Supplementary. Say it with me. Sup-ple-men-ta-ry.",
+          [
+            "SAY: Two angles are supplementary when they add to 180.",
+            "They fit together into a straight line."
+          ],
+          [
+            "ASK: Are 110° and 70° supplementary?",
+            "10 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, they add to 180"
+          ]
+        ],
+        "trap": [
+          "mixing up supplementary with 90.",
+          "Fix: point to the straight line, student re-says 180."
+        ],
+        "prep": "Complementary (90) is taught inside the I Do; one word card keeps the load down.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "workedExample",
+      "stage": 2,
+      "title": "Angles on a straight line",
+      "steps": [
+        "A straight line is 180°.",
+        "The angles on it add to 180°.",
+        "x = 180° - 120°",
+        "x = 60°"
+      ],
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          120,
+          180
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 120,
+            "label": "120°"
+          },
+          {
+            "from": 120,
+            "to": 180,
+            "label": "x"
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "x = 60°"
+        ]
+      },
+      "notes": {
+        "answer": "x = 60°",
+        "beats": [
+          [
+            "POINT to the straight line.",
+            "SAY: These two angles sit on a straight line, so together they make 180."
+          ],
+          [
+            "MODEL the number sentence.",
+            "SAY: I know 120, so the missing part is 180 take away 120."
+          ],
+          [
+            "ASK: What is x?",
+            "10 sec. Cue: boards up on cue.",
+            "EXPECT: 60"
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 60 degrees. And 120 plus 60 makes 180, so it checks."
+          ]
+        ],
+        "trap": [
+          "subtracting from 360.",
+          "Fix: trace the straight line, student uses 180."
+        ],
+        "stretch": "Could x be bigger than 120? What would the diagram look like?",
+        "help": "Write 120 + ___ = 180 and count on.",
+        "prep": "The whole first, then subtract: the critical feature. SC2.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "workedExample",
+      "stage": 2,
+      "title": "Angles around a point",
+      "steps": [
+        "All the way round is 360°.",
+        "Add what you know: 100° + 120° = 220°.",
+        "y = 360° - 220°",
+        "y = 140°"
+      ],
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          100,
+          220
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 100,
+            "label": "100°"
+          },
+          {
+            "from": 100,
+            "to": 220,
+            "label": "120°"
+          },
+          {
+            "from": 220,
+            "to": 360,
+            "label": "y"
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "y = 140°"
+        ]
+      },
+      "notes": {
+        "answer": "y = 140°",
+        "beats": [
+          [
+            "POINT around the point.",
+            "SAY: These three angles go all the way round, so together they make 360."
+          ],
+          [
+            "MODEL adding what I know.",
+            "SAY: 100 and 120 make 220. The missing angle is 360 take away 220."
+          ],
+          [
+            "ASK: What is y?",
+            "15 sec. Cue: boards up on cue.",
+            "EXPECT: 140"
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 140 degrees. 100, 120 and 140 make 360."
+          ]
+        ],
+        "trap": [
+          "subtracting from 180.",
+          "Fix: trace all the way round, student uses 360."
+        ],
+        "stretch": "Split y into two angles so that one is double the other.",
+        "help": "Add the known angles first, then count on to 360.",
+        "prep": "Same move, different whole. SC2.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "workedExample",
+      "stage": 2,
+      "title": "Angles in a right angle",
+      "steps": [
+        "The square marks 90°.",
+        "The two parts add to 90°.",
+        "z = 90° - 35°",
+        "z = 55°"
+      ],
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          35,
+          90
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 90,
+            "right": true
+          },
+          {
+            "from": 0,
+            "to": 35,
+            "label": "35°",
+            "r": 36
+          },
+          {
+            "from": 35,
+            "to": 90,
+            "label": "z",
+            "r": 36
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "z = 55°"
+        ]
+      },
+      "notes": {
+        "answer": "z = 55°",
+        "beats": [
+          [
+            "POINT to the square corner.",
+            "SAY: The little square tells me this whole corner is 90."
+          ],
+          [
+            "MODEL the subtraction.",
+            "SAY: Angles that add to 90 are complementary. 90 take away 35."
+          ],
+          [
+            "ASK: What is z?",
+            "10 sec. Cue: boards up on cue.",
+            "EXPECT: 55"
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 55 degrees. 35 plus 55 makes 90."
+          ]
+        ],
+        "trap": [
+          "using 180 because it is an angle.",
+          "Fix: point to the square, student uses 90."
+        ],
+        "stretch": "Which pairs of whole numbers are complementary and both multiples of 15?",
+        "help": "Write 35 + ___ = 90 and count on.",
+        "prep": "Third whole: 90. Complementary named in speech; the key word card covers supplementary. SC2.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "On a straight line",
+      "prompt": "One angle on a straight line is 70°. What is the other?",
+      "options": [
+        {
+          "text": "20°",
+          "misconception": "subtracts from 90° (confuses the straight line with a right angle)"
+        },
+        {
+          "text": "110°"
+        },
+        {
+          "text": "290°",
+          "misconception": "subtracts from 360° (uses a full turn for a straight line)"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - 110°",
+        "beats": [
+          "SAY: Find the whole first. Then choose.",
+          [
+            "ASK: One angle on a straight line is 70. What is the other?",
+            "10 sec. Cue: voices off. Point... now.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call one child: why not A?",
+            "Less -> trace a straight line and say half turn, 180, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. 180 take away 70 is 110."
+          ]
+        ],
+        "trap": [
+          "pointing to A or C.",
+          "Fix: ask which whole a straight line makes, student redoes."
+        ],
+        "prep": "First decision point: the wrong answers tell you which whole was used.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Find the missing angle",
+      "ask": "Find the missing angle. Which whole did you use?",
+      "routine": "boards",
+      "thinkTime": 20,
+      "pivot": "say the whole out loud first: 90, 180 or 360",
+      "followUp": "cold call one board: which whole, and why?",
+      "items": [
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              145,
+              180
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 145,
+                "label": "145°"
+              },
+              {
+                "from": 145,
+                "to": 180,
+                "label": "a"
+              }
+            ]
+          },
+          "answer": "a = 35°",
+          "expect": "35"
+        },
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              90,
+              200
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 90,
+                "right": true
+              },
+              {
+                "from": 90,
+                "to": 200,
+                "label": "110°"
+              },
+              {
+                "from": 200,
+                "to": 360,
+                "label": "b"
+              }
+            ]
+          },
+          "answer": "b = 160°",
+          "expect": "160"
+        },
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              62,
+              90
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 90,
+                "right": true
+              },
+              {
+                "from": 0,
+                "to": 62,
+                "label": "62°",
+                "r": 36
+              },
+              {
+                "from": 62,
+                "to": 90,
+                "label": "c",
+                "r": 36
+              }
+            ]
+          },
+          "answer": "c = 28°",
+          "expect": "28"
+        },
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              40,
+              110,
+              180
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 40,
+                "label": "40°"
+              },
+              {
+                "from": 40,
+                "to": 110,
+                "label": "70°"
+              },
+              {
+                "from": 110,
+                "to": 180,
+                "label": "d"
+              }
+            ]
+          },
+          "answer": "d = 70°",
+          "expect": "70"
+        },
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              120,
+              240
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 120,
+                "label": "120°"
+              },
+              {
+                "from": 120,
+                "to": 240,
+                "label": "120°"
+              },
+              {
+                "from": 240,
+                "to": 360,
+                "label": "e"
+              }
+            ]
+          },
+          "answer": "e = 120°",
+          "expect": "120",
+          "say": "120 degrees. Three equal angles around a point, 360 shared by 3. Tick or fix."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Let's practise. Say the whole to yourself first,",
+          "then write the missing angle on your board."
+        ],
+        "trap": [
+          "using the wrong whole.",
+          "Fix: name the shape, straight, corner or point, then redo."
+        ],
+        "stretch": "Write the number sentence you used for each one.",
+        "help": "Keep the anchor on your desk: 90, 180, 360.",
+        "prep": "Guided practice mixing all three wholes, so choosing the whole is the practice. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "CFU",
+      "badgeColor": "alert",
+      "title": "Find f",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          48,
+          180
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 48,
+            "label": "48°"
+          },
+          {
+            "from": 48,
+            "to": 180,
+            "label": "f"
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "f = 132°"
+        ]
+      },
+      "notes": {
+        "answer": "f = 132°. 42 means 90 was used",
+        "beats": [
+          "SAY: This one is just for you. Find the whole first.",
+          [
+            "ASK: What is f?",
+            "20 sec. Cue: boards up on cue.",
+            "EXPECT: 132"
+          ],
+          [
+            "SCAN every board, back row first.",
+            "80%+ -> reveal, then Your turn.",
+            "Less -> lay a ruler on the straight line, say half turn 180, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 132 degrees. 48 plus 132 makes 180. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "writing 42.",
+          "Fix: ask what the whole line makes, student uses 180."
+        ],
+        "prep": "The hinge before independence. Students writing 42 or 312 start with the teacher on the Supported Worksheet.",
+        "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Your turn",
+      "task": "Find the missing angles on your worksheet.",
+      "where": "On your worksheet",
+      "notes": {
+        "beats": [
+          [
+            "POINT to the steps.",
+            "SAY: Read each question, solve it carefully, then check your answers."
+          ],
+          [
+            "SAY: When you finish, the early finisher option is the Extension.",
+            "Say the steps with me. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: which whole did you use?",
+          "TIME 20 minutes. Check-in at question 10."
+        ],
+        "trap": [
+          "mixing up 180 and 360.",
+          "Fix: name the shape first, student redoes."
+        ],
+        "stretch": "Extension: angle puzzles with number sentences.",
+        "help": "Supported Worksheet: number sentences started for you.",
+        "prep": "Independent practice across the three wholes, worded problems and reasoning. Sheet is evidence for SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          125,
+          215
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 125,
+            "label": "125°"
+          },
+          {
+            "from": 125,
+            "to": 215,
+            "label": "90°"
+          },
+          {
+            "from": 215,
+            "to": 360,
+            "label": "g"
+          }
+        ]
+      },
+      "questions": [
+        "Find g. Write the number sentence."
+      ],
+      "notes": {
+        "answer": "g = 145°: 360 - 125 - 90 = 145",
+        "beats": [
+          "SAY: Last one. The answer and the number sentence on your board.",
+          [
+            "ASK: Find g.",
+            "30 sec. Cue: boards up on cue.",
+            "EXPECT: 145"
+          ],
+          [
+            "RECORD who uses 180: they write 35 or less.",
+            "They start tomorrow's check with the teacher."
+          ]
+        ],
+        "trap": [
+          "forgetting the right angle.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 with a hidden 90: the square marker has to be read.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner how you choose the whole.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for straight 180, point 360, corner 90",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can find a missing angle?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          [
+            "RECORD each thumb down beside the exit board.",
+            "A thumb up with a wrong whole matters most."
+          ],
+          [
+            "ASK: Tell your partner how you choose the whole.",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: straight line 180, point 360, square corner 90"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit evidence. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

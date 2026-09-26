@@ -1,0 +1,1733 @@
+{
+  "lesson": {
+    "subject": "numeracy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 1,
+    "session": 1,
+    "title": "Measuring and Classifying Angles",
+    "subtitle": "Term 4 Week 1, Session 1",
+    "meta": "Year 5/6 Maths | Measurement",
+    "footer": "Angles | Year 5/6 Maths | Session 1",
+    "outputFolder": "Exemplar_Year56_Numeracy_Measuring_Angles",
+    "fileName": "Session 1 - Measuring and Classifying Angles.pptx",
+    "titleVisual": {
+      "type": "angle",
+      "rays": [
+        0,
+        65
+      ],
+      "arcs": [
+        {
+          "from": 0,
+          "to": 65
+        }
+      ],
+      "protractor": true
+    },
+    "plan": {
+      "curriculum": "Mathematics 2.0, Measurement, Year 5 (VC2M5M04): measure angles in degrees with a protractor and relate the measures to angle names",
+      "shape": "example-first: reading a two-scale protractor is new for many, so the teacher models on both scales before any guided measuring",
+      "criticalFeature": "read the scale that starts at 0 on the arm you lined up",
+      "decisionPoints": [
+        "the choice check on angle names",
+        "the hinge: measure with the right scale",
+        "the exit ticket"
+      ],
+      "anchor": "quarter turn 90°, half turn 180°, full turn 360°"
+    }
+  },
+  "materials": {
+    "manipulatives": [
+      "A protractor and a ruler for every student",
+      "A large demonstration protractor, or the on-screen protractor"
+    ],
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Everyone, together, on three",
+      "Point"
+    ],
+    "boardSetup": [
+      "The anchor on the board: quarter turn 90°, half turn 180°, full turn 360°"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn. Name, measure, worded problems and thinking questions.",
+      "title": "Measuring and Classifying Angles",
+      "subtitle": "You need a protractor and a ruler.",
+      "sections": [
+        {
+          "title": "Name that angle",
+          "proficiency": "understanding",
+          "columns": 2,
+          "example": {
+            "prompt": "Name this angle.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                30
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 30
+                }
+              ],
+              "size": 150
+            },
+            "steps": [
+              "Compare it with a square corner (90°).",
+              "It is smaller than a square corner.",
+              "Smaller than 90° is acute."
+            ],
+            "answer": "acute"
+          },
+          "items": [
+            {
+              "prompt": "Name this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  160
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 160
+                  }
+                ],
+                "size": 150
+              },
+              "answer": "obtuse",
+              "answerLabel": "Name:"
+            },
+            {
+              "prompt": "Name this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  20
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 20
+                  }
+                ],
+                "size": 150
+              },
+              "answer": "acute",
+              "answerLabel": "Name:"
+            },
+            {
+              "prompt": "Name this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  270
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 270
+                  }
+                ],
+                "size": 150
+              },
+              "answer": "reflex",
+              "answerLabel": "Name:"
+            },
+            {
+              "prompt": "Name this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  90
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 90,
+                    "right": true
+                  }
+                ],
+                "size": 150
+              },
+              "answer": "right",
+              "answerLabel": "Name:"
+            },
+            {
+              "prompt": "Name this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 180
+                  }
+                ],
+                "size": 170
+              },
+              "answer": "straight",
+              "answerLabel": "Name:"
+            },
+            {
+              "prompt": "Name this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  75
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 75
+                  }
+                ],
+                "size": 150
+              },
+              "answer": "acute",
+              "answerLabel": "Name:"
+            }
+          ]
+        },
+        {
+          "title": "Measure it",
+          "proficiency": "fluency",
+          "columns": 2,
+          "intro": "Measure each angle with your protractor. If an arm is too short, extend it with your ruler.",
+          "example": {
+            "prompt": "Measure this angle.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                55
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 55
+                }
+              ],
+              "protractor": true
+            },
+            "steps": [
+              "Put the centre on the vertex.",
+              "Line up 0 with one arm.",
+              "Count up from that 0 to the other arm."
+            ],
+            "answer": "55°"
+          },
+          "items": [
+            {
+              "prompt": "Measure this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  40
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 40
+                  }
+                ]
+              },
+              "answer": "40° (±2°)",
+              "answerLabel": "Angle:"
+            },
+            {
+              "prompt": "Measure this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  115
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 115
+                  }
+                ]
+              },
+              "answer": "115° (±2°)",
+              "answerLabel": "Angle:"
+            },
+            {
+              "prompt": "Measure this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  180,
+                  110
+                ],
+                "arcs": [
+                  {
+                    "from": 110,
+                    "to": 180
+                  }
+                ],
+                "protractorAt": 0
+              },
+              "answer": "70° (±2°)",
+              "answerLabel": "Angle:"
+            },
+            {
+              "prompt": "Measure this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  145
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 145
+                  }
+                ]
+              },
+              "answer": "145° (±2°)",
+              "answerLabel": "Angle:"
+            },
+            {
+              "prompt": "Measure this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  30,
+                  95
+                ],
+                "arcs": [
+                  {
+                    "from": 30,
+                    "to": 95
+                  }
+                ]
+              },
+              "answer": "65° (±2°)",
+              "answerLabel": "Angle:"
+            },
+            {
+              "prompt": "Measure this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  180,
+                  80
+                ],
+                "arcs": [
+                  {
+                    "from": 80,
+                    "to": 180
+                  }
+                ],
+                "protractorAt": 0
+              },
+              "answer": "100° (±2°)",
+              "answerLabel": "Angle:"
+            }
+          ]
+        },
+        {
+          "title": "Angles around us",
+          "proficiency": "problemSolving",
+          "example": {
+            "prompt": "A goalkeeper's arms make an angle of 110°. Name the angle.",
+            "steps": [
+              "110° is more than 90°.",
+              "110° is less than 180°.",
+              "Between 90° and 180° is obtuse."
+            ],
+            "answer": "obtuse"
+          },
+          "items": [
+            {
+              "prompt": "A netball player stretches to catch. Her arms make an angle of 135°. Is this angle acute, obtuse or reflex? How do you know?",
+              "answer": "obtuse, because 135° is between 90° and 180°",
+              "answerLines": 2
+            },
+            {
+              "prompt": "A skate ramp rises at 25° from the ground. Name the angle. Is it more or less than half a right angle?",
+              "answer": "acute; less, because half a right angle is 45°",
+              "answerLines": 2
+            },
+            {
+              "prompt": "What angle do the hands of a clock make at 3 o'clock? What is its name?",
+              "answer": "90°, right angle",
+              "answerLines": 1
+            },
+            {
+              "prompt": "What angle do the hands of a clock make at 6 o'clock? What is its name?",
+              "answer": "180°, straight angle",
+              "answerLines": 1
+            },
+            {
+              "prompt": "A classroom door opens 100° from closed. Name the angle.",
+              "answer": "obtuse",
+              "answerLines": 1
+            }
+          ]
+        },
+        {
+          "title": "Think deeper",
+          "proficiency": "reasoning",
+          "example": {
+            "prompt": "Is an angle of 95° acute? Explain.",
+            "steps": [
+              "Acute means less than 90°.",
+              "95° is more than 90°.",
+              "So it is not acute. It is obtuse."
+            ],
+            "answer": "No, it is obtuse."
+          },
+          "items": [
+            {
+              "prompt": "Sam measured this angle as 130°. Is he right? Explain his mistake.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  50
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 50
+                  }
+                ],
+                "size": 120
+              },
+              "answer": "No. It is 50°. He read the scale that starts at 0 on the other side (180° - 50° = 130°).",
+              "answerLines": 2
+            },
+            {
+              "prompt": "Pip says every angle bigger than 90° is obtuse. Give an angle that proves Pip wrong, and name it.",
+              "answer": "Any angle of 180° or more, e.g. 200° is reflex, 180° is straight.",
+              "answerLines": 2
+            },
+            {
+              "prompt": "Draw an angle that is acute but more than half a right angle. Measure it and write its size.",
+              "answer": "any angle between 45° and 90°",
+              "box": 75,
+              "answerLines": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option. Clock-hand angles and angle puzzles, with worked examples.",
+      "title": "Extension: Angle Detectives",
+      "subtitle": "Use what you know about turns and angle names.",
+      "sections": [
+        {
+          "title": "Clock angles",
+          "proficiency": "reasoning",
+          "intro": "A full turn is 360°. A clock has 12 numbers, so the hands turn 30° from one number to the next (360° divided by 12).",
+          "example": {
+            "prompt": "What angle do the hands make at 2 o'clock?",
+            "steps": [
+              "Count the gaps from 12 to 2: 2 gaps.",
+              "Each gap is 30°.",
+              "2 x 30° = 60°. That is acute."
+            ],
+            "answer": "60°, acute"
+          },
+          "columns": 2,
+          "items": [
+            {
+              "prompt": "4 o'clock: angle and name?",
+              "answer": "120°, obtuse"
+            },
+            {
+              "prompt": "1 o'clock: angle and name?",
+              "answer": "30°, acute"
+            },
+            {
+              "prompt": "5 o'clock: angle and name?",
+              "answer": "150°, obtuse"
+            },
+            {
+              "prompt": "10 o'clock (the smaller angle): angle and name?",
+              "answer": "60°, acute"
+            },
+            {
+              "prompt": "8 o'clock (the smaller angle): angle and name?",
+              "answer": "120°, obtuse"
+            },
+            {
+              "prompt": "At what two times on the hour is the angle 90°?",
+              "answer": "3 o'clock and 9 o'clock"
+            }
+          ]
+        },
+        {
+          "title": "Angle riddles",
+          "proficiency": "reasoning",
+          "example": {
+            "prompt": "I am a multiple of 20. I am obtuse. I am less than 130°. What could I be?",
+            "steps": [
+              "Obtuse means more than 90° and less than 180°.",
+              "Less than 130° as well.",
+              "Multiples of 20 in that range: 100 and 120."
+            ],
+            "answer": "100° or 120°"
+          },
+          "items": [
+            {
+              "prompt": "I am a multiple of 25. I am obtuse. What could I be? List all the answers.",
+              "answer": "100°, 125°, 150°, 175°",
+              "answerLines": 2
+            },
+            {
+              "prompt": "I am half of a straight angle. What am I, and what is my name?",
+              "answer": "90°, right angle",
+              "answerLines": 1
+            },
+            {
+              "prompt": "I am a reflex angle and a multiple of 100. What am I?",
+              "answer": "200° or 300°",
+              "answerLines": 1
+            }
+          ]
+        },
+        {
+          "title": "Sport challenge",
+          "proficiency": "problemSolving",
+          "example": {
+            "prompt": "A shot leaves at 40°. The coach says make it 15° bigger. New angle and name?",
+            "steps": [
+              "Add the change: 40° + 15° = 55°.",
+              "55° is less than 90°.",
+              "So it is acute."
+            ],
+            "answer": "55°, acute"
+          },
+          "items": [
+            {
+              "prompt": "A basketball shot leaves the hand at 52°. The coach says make it 8° bigger. What is the new angle? Name it.",
+              "answer": "60°, acute",
+              "answerLines": 1
+            },
+            {
+              "prompt": "A footy kick leaves the boot at 35°. A player turns it a quarter turn more. What is the new angle? Name it.",
+              "answer": "125°, obtuse",
+              "answerLines": 1
+            },
+            {
+              "prompt": "A gymnast's legs start together (0°) and open to a straight line. How many degrees did they open? Name the final angle.",
+              "answer": "180°, straight",
+              "answerLines": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "answerKey": false,
+      "description": "For students who need more guidance: protractors printed on, hints on every question.",
+      "title": "Measuring Angles: Step by Step",
+      "subtitle": "Take it one step at a time.",
+      "sections": [
+        {
+          "title": "Smaller or bigger than a square corner?",
+          "proficiency": "understanding",
+          "columns": 2,
+          "example": {
+            "prompt": "Name this angle.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                45
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 45
+                }
+              ]
+            },
+            "steps": [
+              "Hold the corner of your book on the angle.",
+              "The angle is smaller than the corner.",
+              "Smaller is acute."
+            ],
+            "answer": "acute"
+          },
+          "items": [
+            {
+              "prompt": "Name this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  60
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 60
+                  }
+                ]
+              },
+              "hint": "Smaller than the book corner? Then it is acute.",
+              "answer": "acute",
+              "answerLabel": "Name:"
+            },
+            {
+              "prompt": "Name this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  120
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 120
+                  }
+                ]
+              },
+              "hint": "Bigger than the book corner but not a straight line? Obtuse.",
+              "answer": "obtuse",
+              "answerLabel": "Name:"
+            },
+            {
+              "prompt": "Name this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  90
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 90,
+                    "right": true
+                  }
+                ]
+              },
+              "hint": "The little square means exactly 90°.",
+              "answer": "right",
+              "answerLabel": "Name:"
+            },
+            {
+              "prompt": "Name this angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  170
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 170
+                  }
+                ]
+              },
+              "hint": "Almost a straight line, but not quite.",
+              "answer": "obtuse",
+              "answerLabel": "Name:"
+            }
+          ]
+        },
+        {
+          "title": "Read the protractor",
+          "proficiency": "fluency",
+          "columns": 2,
+          "example": {
+            "prompt": "Read this protractor.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                30
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 30
+                }
+              ],
+              "protractor": true
+            },
+            "steps": [
+              "Find the 0 where the arm lies flat.",
+              "Follow that row of numbers up.",
+              "Stop where the other arm crosses: 30."
+            ],
+            "answer": "30°"
+          },
+          "items": [
+            {
+              "prompt": "Read this protractor.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  80
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 80
+                  }
+                ],
+                "protractor": true
+              },
+              "hint": "The arm lies on the right, so start at the 0 on the right.",
+              "answer": "80°",
+              "answerLabel": "Angle:"
+            },
+            {
+              "prompt": "Read this protractor.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  130
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 130
+                  }
+                ],
+                "protractor": true
+              },
+              "hint": "It is obtuse, so the answer must be over 90.",
+              "answer": "130°",
+              "answerLabel": "Angle:"
+            },
+            {
+              "prompt": "Read this protractor.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  180,
+                  140
+                ],
+                "arcs": [
+                  {
+                    "from": 140,
+                    "to": 180
+                  }
+                ],
+                "protractorAt": 0,
+                "protractor": true
+              },
+              "hint": "The arm lies on the left, so start at the 0 on the left.",
+              "answer": "40°",
+              "answerLabel": "Angle:"
+            },
+            {
+              "prompt": "Read this protractor.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  180,
+                  70
+                ],
+                "arcs": [
+                  {
+                    "from": 70,
+                    "to": 180
+                  }
+                ],
+                "protractorAt": 0,
+                "protractor": true
+              },
+              "hint": "Start at the 0 on the left and count up.",
+              "answer": "110°",
+              "answerLabel": "Angle:"
+            }
+          ]
+        },
+        {
+          "title": "Fill the gap",
+          "proficiency": "understanding",
+          "example": {
+            "prompt": "An angle of exactly 90° is called a ________ angle.",
+            "steps": [
+              "Look at the word bank: acute, right, obtuse, straight, reflex.",
+              "Exactly 90° is a square corner.",
+              "A square corner is a right angle."
+            ],
+            "answer": "right"
+          },
+          "items": [
+            {
+              "prompt": "An angle less than 90° is called ________.",
+              "hint": "Word bank: acute, right, obtuse, straight, reflex.",
+              "answer": "acute"
+            },
+            {
+              "prompt": "An angle of exactly 180° is called a ________ angle.",
+              "hint": "It looks like a straight line.",
+              "answer": "straight"
+            },
+            {
+              "prompt": "An angle between 180° and 360° is called ________.",
+              "hint": "It is bigger than a straight line.",
+              "answer": "reflex"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open Session 1 of the angles week. One line: today we measure angles and name them by their size."
+    },
+    {
+      "kind": "resources",
+      "notes": "Prep slide. Protractor and ruler for every student, boards and markers ready. Print the Worksheet for all, and a few copies of the Extension and the Supported Worksheet."
+    },
+    {
+      "kind": "dailyReview",
+      "title": "Fraction, decimal, percentage",
+      "from": "2026-T3-W9-S1",
+      "prompts": [
+        "Write 3/4 as a decimal and as a percentage."
+      ],
+      "visual": {
+        "type": "fractionStrips",
+        "strips": [
+          {
+            "denom": 4,
+            "shaded": 3
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "0.75",
+          "75%"
+        ]
+      },
+      "notes": {
+        "answer": "0.75 and 75%",
+        "beats": [
+          "SAY: Let's warm up with fractions, decimals and percentages from last term.",
+          [
+            "ASK: Write three quarters as a decimal and as a percentage.",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 0.75 and 75%"
+          ],
+          [
+            "SCAN boards, back row first.",
+            "80%+ -> reveal, move on.",
+            "Less -> shade the strip: each quarter is 25%, count them, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Three quarters is 0.75, or 75%. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "writing 0.34 for three quarters.",
+          "Fix: count the quarters as 25% each, student rewrites."
+        ],
+        "prep": "Daily Review from Term 3 Week 9. Whole block under 6 minutes.",
+        "tag": "[Daily Review | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "dailyReview",
+      "title": "Percentage of an amount",
+      "from": "2026-T3-W9-S1",
+      "prompts": [
+        "What is 25% of 60?"
+      ],
+      "reveal": {
+        "answers": [
+          "15"
+        ]
+      },
+      "notes": {
+        "answer": "15",
+        "beats": [
+          [
+            "ASK: What is 25% of 60?",
+            "15 sec. Cue: boards up on cue.",
+            "EXPECT: 15"
+          ],
+          [
+            "SCAN boards.",
+            "80%+ -> reveal, move on.",
+            "Less -> 25% is one quarter: halve 60, then halve again, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Fifteen. A quarter of 60 is 15. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "writing 25 or 35.",
+          "Fix: say 25% is one quarter, student halves twice."
+        ],
+        "prep": "Term 3 Week 9 retrieval: percentage of an amount.",
+        "tag": "[Daily Review | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "dailyReview",
+      "title": "Order them",
+      "from": "2026-T3-W5-S1",
+      "prompts": [
+        "Order from smallest to largest: 0.6, 1/2, 55%"
+      ],
+      "reveal": {
+        "answers": [
+          "1/2",
+          "55%",
+          "0.6"
+        ]
+      },
+      "notes": {
+        "answer": "1/2, 55%, 0.6",
+        "beats": [
+          [
+            "ASK: Order these from smallest to largest.",
+            "30 sec. Cue: boards up on cue.",
+            "EXPECT: 1/2, 55%, 0.6"
+          ],
+          [
+            "SCAN boards for 1/2 first.",
+            "80%+ -> reveal, then Fluency.",
+            "Less -> change all three to percentages together, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Half is 50%, then 55%, then 0.6 is 60%. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "putting 55% last because 55 is the biggest number.",
+          "Fix: turn each into a percentage, student reorders."
+        ],
+        "prep": "Spaced retrieval from Term 3 Week 5: comparing fractions, decimals and percentages.",
+        "tag": "[Daily Review | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "fluency",
+      "title": "Add with the written method: 3 digits",
+      "visual": {
+        "type": "columnSum",
+        "numbers": [
+          458,
+          367
+        ],
+        "op": "+"
+      },
+      "reveal": {
+        "answers": [
+          "825"
+        ]
+      },
+      "notes": {
+        "answer": "825",
+        "beats": [
+          "SAY: Now the written method. Line up the places and start with the ones.",
+          [
+            "ASK: Solve it with the written method.",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 825"
+          ],
+          [
+            "SCAN boards for the regrouped digits.",
+            "80%+ -> reveal, next one.",
+            "Less -> model the ones and the regroup together on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 825. Tick or fix, and check every regroup."
+          ]
+        ],
+        "trap": [
+          "forgetting to add a regrouped ten.",
+          "Fix: circle each carried digit, student re-adds that column."
+        ],
+        "prep": "Algorithm fluency: 3 digits, then 4, then 5. Whole block under 6 minutes.",
+        "tag": "[Fluency | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "fluency",
+      "title": "Add with the written method: 4 digits",
+      "visual": {
+        "type": "columnSum",
+        "numbers": [
+          2746,
+          3589
+        ],
+        "op": "+"
+      },
+      "reveal": {
+        "answers": [
+          "6 335"
+        ]
+      },
+      "notes": {
+        "answer": "6 335",
+        "beats": [
+          "SAY: Now 4 digits. Same method, one more column.",
+          [
+            "ASK: Solve it with the written method.",
+            "45 sec. Cue: boards up on cue.",
+            "EXPECT: 6 335"
+          ],
+          [
+            "SCAN boards for the regrouped digits.",
+            "80%+ -> reveal, next one.",
+            "Less -> model the ones and the regroup together on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 6 335. Tick or fix, and check every regroup."
+          ]
+        ],
+        "trap": [
+          "forgetting to add a regrouped ten.",
+          "Fix: circle each carried digit, student re-adds that column."
+        ],
+        "prep": "Algorithm fluency, next size up.",
+        "tag": "[Fluency | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "fluency",
+      "title": "Add with the written method: 5 digits",
+      "visual": {
+        "type": "columnSum",
+        "numbers": [
+          34567,
+          28945
+        ],
+        "op": "+"
+      },
+      "reveal": {
+        "answers": [
+          "63 512"
+        ]
+      },
+      "notes": {
+        "answer": "63 512",
+        "beats": [
+          "SAY: Now 5 digits. Same method, one more column.",
+          [
+            "ASK: Solve it with the written method.",
+            "60 sec. Cue: boards up on cue.",
+            "EXPECT: 63 512"
+          ],
+          [
+            "SCAN boards for the regrouped digits.",
+            "80%+ -> reveal, then the learning intention.",
+            "Less -> model the ones and the regroup together on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 63 512. Tick or fix, and check every regroup."
+          ]
+        ],
+        "trap": [
+          "forgetting to add a regrouped ten.",
+          "Fix: circle each carried digit, student re-adds that column."
+        ],
+        "prep": "Algorithm fluency, next size up.",
+        "tag": "[Fluency | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to measure angles with a protractor and name them by their size.",
+      "successCriteria": [
+        "I can name an angle as acute, right, obtuse, straight or reflex.",
+        "I can measure an angle by reading the scale that starts at 0.",
+        "I can explain how I know my measurement makes sense."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: This week is all about angles. Today we measure them and name them."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: We'll start with the names and build up to measuring.",
+            "Measuring with the right scale is our big goal today."
+          ]
+        ],
+        "prep": "SC1 naming is reachable for all; SC2 reading the right scale is the core and the exit evidence; SC3 reasonableness is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "A quarter turn is 90°",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          90
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 90,
+            "right": true,
+            "label": "90°"
+          }
+        ]
+      },
+      "prompt": "Stand up. Show a quarter turn, a half turn, a full turn.",
+      "notes": {
+        "answer": "half turn 180°, full turn 360°",
+        "beats": [
+          [
+            "POINT to the square corner.",
+            "SAY: A quarter turn makes a square corner. That's 90 degrees."
+          ],
+          [
+            "TURN together: a quarter, a half, then all the way round.",
+            "Cue: Everyone, together, on three."
+          ],
+          [
+            "ASK: A quarter turn is 90°. What is a half turn? A full turn?",
+            "15 sec. Cue: boards up on cue.",
+            "EXPECT: 180 and 360"
+          ],
+          [
+            "SCAN boards for 180 and 360.",
+            "80%+ -> write the anchor on the board, move on.",
+            "Less -> turn together again counting quarters: 90, 180, 270, 360, re-ask."
+          ]
+        ],
+        "trap": [
+          "writing 100 for a half turn.",
+          "Fix: add two quarter turns, 90 and 90, student rewrites."
+        ],
+        "prep": "Launch after the LI: every student moves, then the anchor goes on the board for the whole week. Under 4 minutes.",
+        "tag": "[Launch | Retention and recall | HITS 3]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "protractor",
+      "meaning": "A tool for measuring angles in degrees.",
+      "example": "Put its centre on the corner and read the scale that starts at 0.",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          40
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 40
+          }
+        ],
+        "protractor": true
+      },
+      "notes": {
+        "answer": "a tool for measuring angles in degrees",
+        "beats": [
+          "POINT to the word. SAY: Protractor. Say it with me. Protractor.",
+          [
+            "SAY: A protractor measures angles in degrees.",
+            "Notice it has two rows of numbers going opposite ways."
+          ],
+          [
+            "ASK: Point to where the zero is on each row of numbers.",
+            "10 sec. Cue: voices off. Point... now.",
+            "EXPECT: one 0 on the right, one 0 on the left"
+          ]
+        ],
+        "trap": [
+          "thinking the protractor has only one scale.",
+          "Fix: trace each row with a finger, student finds both zeros."
+        ],
+        "prep": "The word the whole week turns on. Both zeros are named here so the I Do can use them.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Name an angle by its size",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Name",
+            "Size"
+          ],
+          [
+            "acute",
+            "less than 90°"
+          ],
+          [
+            "right",
+            "exactly 90°"
+          ],
+          [
+            "obtuse",
+            "between 90° and 180°"
+          ],
+          [
+            "straight",
+            "exactly 180°"
+          ],
+          [
+            "reflex",
+            "between 180° and 360°"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "obtuse",
+        "beats": [
+          [
+            "POINT to right and straight.",
+            "SAY: Right is our quarter turn, 90. Straight is our half turn, 180."
+          ],
+          [
+            "POINT to acute, then obtuse.",
+            "SAY: Acute is smaller than a quarter turn.",
+            "Obtuse sits between a quarter turn and a half turn."
+          ],
+          [
+            "POINT to reflex.",
+            "SAY: Reflex is bigger than a half turn, but not a full turn."
+          ],
+          [
+            "ASK: An angle is 120°. Which name?",
+            "10 sec. Cue: boards up on cue.",
+            "EXPECT: obtuse"
+          ]
+        ],
+        "trap": [
+          "calling any angle over 90° obtuse, even reflex ones.",
+          "Fix: check against 180 as well, student renames."
+        ],
+        "stretch": "Which names are exact sizes, and which are ranges? Why?",
+        "help": "Hold a book corner against the angle: smaller or bigger?",
+        "prep": "Names hang off the anchor: 90 and 180 are the boundaries. SC1.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3]"
+      }
+    },
+    {
+      "kind": "workedExample",
+      "stage": 2,
+      "title": "Measure: the arm points right",
+      "steps": [
+        "Put the centre on the vertex.",
+        "Line up 0 with one arm.",
+        "Count up from that 0 to the other arm.",
+        "Check: it is acute, so under 90°."
+      ],
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          65
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 65
+          }
+        ],
+        "protractor": true
+      },
+      "reveal": {
+        "answers": [
+          "65°",
+          "acute"
+        ]
+      },
+      "notes": {
+        "answer": "65°, acute",
+        "beats": [
+          [
+            "MODEL the centre on the vertex.",
+            "SAY: First I put the centre dot right on the corner."
+          ],
+          [
+            "POINT to the inner 0.",
+            "SAY: The arm points right, so I use this 0, the inner scale."
+          ],
+          [
+            "ASK: Count up in tens with me. Where does the arm cross?",
+            "10 sec. Cue: Everyone, together, on three.",
+            "EXPECT: 65"
+          ],
+          [
+            "REVEAL after the choral count.",
+            "SAY: 65 degrees. Acute, so under 90 makes sense."
+          ]
+        ],
+        "trap": [
+          "reading 115 on the outer scale.",
+          "Fix: finger on the 0 under the arm, student re-reads."
+        ],
+        "stretch": "What does the other scale say, and why do the two make 180?",
+        "help": "Colour the scale that starts at 0 on your arm.",
+        "prep": "The critical feature: the scale that starts at 0 on the arm you lined up. SC2.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "workedExample",
+      "stage": 2,
+      "title": "Measure: the arm points left",
+      "steps": [
+        "Put the centre on the vertex.",
+        "This arm points left, so use the 0 on the left.",
+        "Count up that outer scale to the other arm.",
+        "Check: it is obtuse, so between 90° and 180°."
+      ],
+      "visual": {
+        "type": "angle",
+        "rays": [
+          180,
+          55
+        ],
+        "arcs": [
+          {
+            "from": 55,
+            "to": 180
+          }
+        ],
+        "protractorAt": 0,
+        "protractor": true
+      },
+      "reveal": {
+        "answers": [
+          "125°",
+          "obtuse"
+        ]
+      },
+      "notes": {
+        "answer": "125°, obtuse",
+        "beats": [
+          [
+            "MODEL the centre on the vertex.",
+            "SAY: Same start. Centre on the corner, flat edge on the arm."
+          ],
+          [
+            "POINT to the outer 0.",
+            "SAY: This arm points left, so I use the 0 on the left."
+          ],
+          [
+            "ASK: Acute or obtuse? Show me before we count.",
+            "5 sec. Cue: voices off, fingers up: 1 acute, 2 obtuse.",
+            "EXPECT: 2 fingers"
+          ],
+          [
+            "REVEAL after fingers are scanned.",
+            "SAY: 125 degrees. Obtuse, so between 90 and 180 makes sense."
+          ]
+        ],
+        "trap": [
+          "reading 55 on the inner scale.",
+          "Fix: ask which 0 sits on the arm, student recounts."
+        ],
+        "stretch": "When could both scales give sensible numbers? How do you choose?",
+        "help": "Say the name first: obtuse means over 90.",
+        "prep": "Second model uses the other scale so the rule is the 0 on your arm, not the inside numbers. SC2 and SC3.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which angle is obtuse?",
+      "prompt": "Point to A, B or C",
+      "options": [
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              90
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 90,
+                "right": true
+              }
+            ]
+          },
+          "misconception": "calls a right angle obtuse because it looks big"
+        },
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              135
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 135
+              }
+            ]
+          }
+        },
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              225
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 225
+              }
+            ]
+          },
+          "misconception": "calls any angle over 90° obtuse, even reflex"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - it is between 90° and 180°",
+        "beats": [
+          "SAY: Three angles. Check each one against a quarter turn and a half turn.",
+          [
+            "ASK: Which angle is obtuse?",
+            "10 sec. Cue: voices off. Point... now.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call one child: why not C?",
+            "Less -> hold up the name chart, test each against 90 and 180, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. It's more than a quarter turn but less than a half turn."
+          ]
+        ],
+        "trap": [
+          "pointing to C.",
+          "Fix: ask if it is more than a half turn, student renames it reflex."
+        ],
+        "prep": "First decision point: names before measuring. Under 80% means one more pass of the chart with the turns.",
+        "tag": "[CFU | Supported application | SC1 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Read the protractor",
+      "ask": "How many degrees is this angle?",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "finger on the 0 under the arm, count up that row in tens",
+      "followUp": "cold call one board: which scale did you read, and why?",
+      "items": [
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              35
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 35
+              }
+            ],
+            "protractor": true
+          },
+          "answer": "35°, acute",
+          "expect": "35"
+        },
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              180,
+              110
+            ],
+            "arcs": [
+              {
+                "from": 110,
+                "to": 180
+              }
+            ],
+            "protractorAt": 0,
+            "protractor": true
+          },
+          "answer": "70°, acute",
+          "expect": "70",
+          "say": "70 degrees. The arm points left, so we read the outer scale. Tick or fix."
+        },
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              150
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 150
+              }
+            ],
+            "protractor": true
+          },
+          "answer": "150°, obtuse",
+          "expect": "150"
+        },
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              180,
+              20
+            ],
+            "arcs": [
+              {
+                "from": 20,
+                "to": 180
+              }
+            ],
+            "protractorAt": 0,
+            "protractor": true
+          },
+          "answer": "160°, obtuse",
+          "expect": "160",
+          "say": "160 degrees, not 20. It's obtuse, so it must be over 90. Tick or fix."
+        },
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              105
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 105
+              }
+            ],
+            "protractor": true
+          },
+          "answer": "105°, obtuse",
+          "expect": "105"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Let's practise reading the scale.",
+          "Write each measurement on your board."
+        ],
+        "trap": [
+          "reading the scale that starts at 180.",
+          "Fix: name the angle first, then check the number fits."
+        ],
+        "stretch": "Write both readings for each angle, then say which one is the real size.",
+        "help": "Colour the 0 on the arm before counting.",
+        "prep": "Guided practice on both scales, mixing arms that point right and left. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "CFU",
+      "badgeColor": "alert",
+      "title": "Measure this angle",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          48
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 48
+          }
+        ],
+        "protractor": true
+      },
+      "reveal": {
+        "answers": [
+          "48°",
+          "acute"
+        ]
+      },
+      "notes": {
+        "answer": "48°, acute. 132 means the wrong scale",
+        "beats": [
+          "SAY: This one is just for you. Measure it on your own.",
+          [
+            "ASK: How many degrees is this angle?",
+            "20 sec. Cue: boards up on cue.",
+            "EXPECT: 48"
+          ],
+          [
+            "SCAN every board, back row first.",
+            "80%+ -> reveal, then Your turn.",
+            "Less -> rebuild on the demonstration protractor: centre, 0 on the arm, count up, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 48 degrees. It's acute, so under 90 makes sense. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "writing 132.",
+          "Fix: ask whether the angle is acute, student re-reads from the 0 on the arm."
+        ],
+        "prep": "The hinge before independence. Students writing 132 start on the Supported Worksheet with the teacher.",
+        "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Your turn",
+      "task": "Name and measure each angle on your worksheet.",
+      "where": "On your worksheet",
+      "notes": {
+        "beats": [
+          [
+            "POINT to the steps.",
+            "SAY: Read each question, solve it carefully, then check your answers."
+          ],
+          [
+            "SAY: When you finish, the early finisher option is the Extension.",
+            "Say the steps with me. Everyone, together, on three."
+          ],
+          "CIRCULATE. Check centre on vertex and the 0 on the arm first.",
+          "TIME 20 minutes. Check-in at question 12."
+        ],
+        "trap": [
+          "protractor centre off the vertex.",
+          "Fix: put the dot on the corner, student measures again."
+        ],
+        "stretch": "Extension: clock-hand angles and angle puzzles, with worked examples.",
+        "help": "Supported Worksheet: angles printed with protractors, and a hint on each question.",
+        "prep": "Independent practice from naming, to measuring, to worded and reasoning questions. Sheet is evidence for SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          180,
+          45
+        ],
+        "arcs": [
+          {
+            "from": 45,
+            "to": 180
+          }
+        ],
+        "protractorAt": 0,
+        "protractor": true
+      },
+      "questions": [
+        "Write the size of this angle and its name."
+      ],
+      "notes": {
+        "answer": "135°, obtuse",
+        "beats": [
+          "SAY: Last one. Measure it and name it on your board.",
+          [
+            "ASK: How many degrees is this angle, and what is its name?",
+            "20 sec. Cue: boards up on cue.",
+            "EXPECT: 135, obtuse"
+          ],
+          [
+            "RECORD who writes 45: the wrong scale.",
+            "They start tomorrow's first check with the teacher."
+          ]
+        ],
+        "trap": [
+          "writing 45.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 with the arm pointing left, the harder scale. Drives tomorrow's grouping.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner how you choose which scale to read.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for the 0 on the arm",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can measure with the right scale?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          [
+            "RECORD each thumb down beside the exit board.",
+            "A thumb up with 45 on the board matters most."
+          ],
+          [
+            "ASK: Tell your partner how you choose which scale to read.",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: the one that starts at 0 on my arm"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit evidence. Tomorrow's first check comes from both. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

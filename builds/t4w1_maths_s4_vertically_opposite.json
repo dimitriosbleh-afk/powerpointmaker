@@ -1,0 +1,1866 @@
+{
+  "lesson": {
+    "subject": "numeracy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 1,
+    "session": 4,
+    "title": "Vertically Opposite Angles",
+    "subtitle": "Term 4 Week 1, Session 4",
+    "meta": "Year 5/6 Maths | Measurement",
+    "footer": "Angles | Year 5/6 Maths | Session 4",
+    "outputFolder": "T4W1_Maths_S4_Vertically_Opposite",
+    "fileName": "Session 4 - Vertically Opposite Angles.pptx",
+    "titleVisual": {
+      "type": "angle",
+      "rays": [
+        0,
+        180,
+        50,
+        230
+      ],
+      "arcs": [
+        {
+          "from": 0,
+          "to": 50,
+          "label": "50°"
+        },
+        {
+          "from": 180,
+          "to": 230,
+          "label": "a"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "Mathematics 2.0, Measurement, Year 6 (VC2M6M04): vertically opposite angles; use angle relationships to find unknown angles, communicating reasoning",
+      "shape": "example-first for the new fact, then mixed practice with all three facts, because the decision is which fact fits",
+      "criticalFeature": "vertically opposite angles are equal; say the angle fact with every answer",
+      "decisionPoints": [
+        "the choice check: opposite or next to?",
+        "the hinge: two unknowns, two facts",
+        "the exit ticket"
+      ],
+      "anchor": "quarter turn 90°, half turn 180°, full turn 360°",
+      "catchUp": "Missed Session 3? Show one straight line with a known angle: the two parts make 180. That is the only earlier fact today needs."
+    }
+  },
+  "materials": {
+    "manipulatives": [
+      "Two rulers or pencils per student, to make crossing lines",
+      "A protractor for every student, to check answers"
+    ],
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Everyone, together, on three",
+      "Point"
+    ],
+    "boardSetup": [
+      "The anchor on the board: quarter turn 90°, half turn 180°, full turn 360°",
+      "Three angle facts listed: straight line 180°, point 360°, vertically opposite equal"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn. Opposite angles, mixed angle facts, worded problems and thinking questions.",
+      "title": "Vertically Opposite Angles",
+      "subtitle": "Find each angle and name the fact you used.",
+      "sections": [
+        {
+          "title": "Spot the pairs",
+          "proficiency": "understanding",
+          "columns": 2,
+          "example": {
+            "prompt": "Which angle is vertically opposite a?",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                180,
+                50,
+                230
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 50,
+                  "label": "a"
+                },
+                {
+                  "from": 50,
+                  "to": 180,
+                  "label": "b"
+                },
+                {
+                  "from": 180,
+                  "to": 230,
+                  "label": "c"
+                },
+                {
+                  "from": 230,
+                  "to": 360,
+                  "label": "d"
+                }
+              ]
+            },
+            "steps": [
+              "Find where the lines cross.",
+              "Look straight across from a, through the point.",
+              "c is opposite a."
+            ],
+            "answer": "c"
+          },
+          "items": [
+            {
+              "prompt": "Which angle is vertically opposite b?",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  70,
+                  250
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 70,
+                    "label": "a"
+                  },
+                  {
+                    "from": 70,
+                    "to": 180,
+                    "label": "b"
+                  },
+                  {
+                    "from": 180,
+                    "to": 250,
+                    "label": "c"
+                  },
+                  {
+                    "from": 250,
+                    "to": 360,
+                    "label": "d"
+                  }
+                ]
+              },
+              "answer": "d",
+              "answerLabel": "Answer:"
+            },
+            {
+              "prompt": "Which angle is vertically opposite d?",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  110,
+                  290
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 110,
+                    "label": "a"
+                  },
+                  {
+                    "from": 110,
+                    "to": 180,
+                    "label": "b"
+                  },
+                  {
+                    "from": 180,
+                    "to": 290,
+                    "label": "c"
+                  },
+                  {
+                    "from": 290,
+                    "to": 360,
+                    "label": "d"
+                  }
+                ]
+              },
+              "answer": "b",
+              "answerLabel": "Answer:"
+            },
+            {
+              "prompt": "Which angle is vertically opposite c?",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  30,
+                  210
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 30,
+                    "label": "a"
+                  },
+                  {
+                    "from": 30,
+                    "to": 180,
+                    "label": "b"
+                  },
+                  {
+                    "from": 180,
+                    "to": 210,
+                    "label": "c"
+                  },
+                  {
+                    "from": 210,
+                    "to": 360,
+                    "label": "d"
+                  }
+                ]
+              },
+              "answer": "a",
+              "answerLabel": "Answer:"
+            },
+            {
+              "prompt": "Name the two pairs of equal angles.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  140,
+                  320
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 140,
+                    "label": "a"
+                  },
+                  {
+                    "from": 140,
+                    "to": 180,
+                    "label": "b"
+                  },
+                  {
+                    "from": 180,
+                    "to": 320,
+                    "label": "c"
+                  },
+                  {
+                    "from": 320,
+                    "to": 360,
+                    "label": "d"
+                  }
+                ]
+              },
+              "answer": "a and c; b and d",
+              "answerLabel": "Pairs:"
+            }
+          ]
+        },
+        {
+          "title": "Find the angle",
+          "proficiency": "fluency",
+          "columns": 2,
+          "example": {
+            "prompt": "Find m and n.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                180,
+                65,
+                245
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 65,
+                  "label": "65°"
+                },
+                {
+                  "from": 65,
+                  "to": 180,
+                  "label": "m"
+                },
+                {
+                  "from": 180,
+                  "to": 245,
+                  "label": "n"
+                }
+              ]
+            },
+            "steps": [
+              "n is opposite 65°, so n = 65°.",
+              "m is on a straight line with 65°.",
+              "m = 180° - 65° = 115°."
+            ],
+            "answer": "m = 115°, n = 65°"
+          },
+          "items": [
+            {
+              "prompt": "Find a. Name the fact.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  45,
+                  225
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 45,
+                    "label": "45°"
+                  },
+                  {
+                    "from": 180,
+                    "to": 225,
+                    "label": "a"
+                  }
+                ]
+              },
+              "answer": "45°, vertically opposite",
+              "answerLabel": "a ="
+            },
+            {
+              "prompt": "Find b. Name the fact.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  130,
+                  310
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 130,
+                    "label": "130°"
+                  },
+                  {
+                    "from": 130,
+                    "to": 180,
+                    "label": "b"
+                  }
+                ]
+              },
+              "answer": "50°, straight line",
+              "answerLabel": "b ="
+            },
+            {
+              "prompt": "Find c. Name the fact.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  75,
+                  255
+                ],
+                "arcs": [
+                  {
+                    "from": 75,
+                    "to": 180,
+                    "label": "105°"
+                  },
+                  {
+                    "from": 255,
+                    "to": 360,
+                    "label": "c"
+                  }
+                ]
+              },
+              "answer": "105°, vertically opposite",
+              "answerLabel": "c ="
+            },
+            {
+              "prompt": "Find d. Name the fact.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  20,
+                  200
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 20,
+                    "label": "20°"
+                  },
+                  {
+                    "from": 200,
+                    "to": 360,
+                    "label": "d"
+                  }
+                ]
+              },
+              "answer": "160°, straight line",
+              "answerLabel": "d ="
+            },
+            {
+              "prompt": "Find e and f.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  100,
+                  280
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 100,
+                    "label": "100°"
+                  },
+                  {
+                    "from": 100,
+                    "to": 180,
+                    "label": "e"
+                  },
+                  {
+                    "from": 180,
+                    "to": 280,
+                    "label": "f"
+                  }
+                ]
+              },
+              "answer": "e = 80°, f = 100°",
+              "answerLabel": "e, f ="
+            },
+            {
+              "prompt": "Find g and h.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  55,
+                  235
+                ],
+                "arcs": [
+                  {
+                    "from": 55,
+                    "to": 180,
+                    "label": "125°"
+                  },
+                  {
+                    "from": 180,
+                    "to": 235,
+                    "label": "g"
+                  },
+                  {
+                    "from": 235,
+                    "to": 360,
+                    "label": "h"
+                  }
+                ]
+              },
+              "answer": "g = 55°, h = 125°",
+              "answerLabel": "g, h ="
+            }
+          ]
+        },
+        {
+          "title": "Mixed angle facts",
+          "proficiency": "fluency",
+          "columns": 2,
+          "example": {
+            "prompt": "Find k.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                90,
+                200
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 90,
+                  "right": true
+                },
+                {
+                  "from": 90,
+                  "to": 200,
+                  "label": "110°"
+                },
+                {
+                  "from": 200,
+                  "to": 360,
+                  "label": "k"
+                }
+              ]
+            },
+            "steps": [
+              "All the way round is 360°.",
+              "90° + 110° = 200°.",
+              "k = 360° - 200° = 160°."
+            ],
+            "answer": "k = 160°"
+          },
+          "items": [
+            {
+              "prompt": "Find w.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  65,
+                  180
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 65,
+                    "label": "65°"
+                  },
+                  {
+                    "from": 65,
+                    "to": 180,
+                    "label": "w"
+                  }
+                ]
+              },
+              "answer": "115°, straight line",
+              "answerLabel": "w ="
+            },
+            {
+              "prompt": "Find x.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  95,
+                  230
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 95,
+                    "label": "95°"
+                  },
+                  {
+                    "from": 95,
+                    "to": 230,
+                    "label": "135°"
+                  },
+                  {
+                    "from": 230,
+                    "to": 360,
+                    "label": "x"
+                  }
+                ]
+              },
+              "answer": "130°, angles at a point",
+              "answerLabel": "x ="
+            },
+            {
+              "prompt": "Find y.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  150,
+                  330
+                ],
+                "arcs": [
+                  {
+                    "from": 180,
+                    "to": 330,
+                    "label": "150°"
+                  },
+                  {
+                    "from": 330,
+                    "to": 360,
+                    "label": "y"
+                  }
+                ]
+              },
+              "answer": "30°, straight line",
+              "answerLabel": "y ="
+            },
+            {
+              "prompt": "Find z.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  58,
+                  90
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 90,
+                    "right": true
+                  },
+                  {
+                    "from": 0,
+                    "to": 58,
+                    "label": "58°",
+                    "r": 36
+                  },
+                  {
+                    "from": 58,
+                    "to": 90,
+                    "label": "z",
+                    "r": 36
+                  }
+                ]
+              },
+              "answer": "32°, right angle",
+              "answerLabel": "z ="
+            }
+          ]
+        },
+        {
+          "title": "Angles in the real world",
+          "proficiency": "problemSolving",
+          "example": {
+            "prompt": "Two paths cross at 50°. What are the other three angles?",
+            "steps": [
+              "Opposite 50° is 50°.",
+              "Next to 50° on a straight line: 180° - 50° = 130°.",
+              "Opposite that is 130°."
+            ],
+            "answer": "50°, 130°, 130°"
+          },
+          "items": [
+            {
+              "prompt": "Two streets cross and make an angle of 72°. What are the other three angles?",
+              "answer": "108°, 72°, 108°",
+              "answerLines": 1
+            },
+            {
+              "prompt": "The legs of a folding chair cross. The angle at the top is 48°. What is the angle between the legs at the bottom?",
+              "answer": "48° (vertically opposite)",
+              "answerLines": 1
+            },
+            {
+              "prompt": "Scissors are open so the blades make 35°. What angle do the handles make?",
+              "answer": "35° (vertically opposite)",
+              "answerLines": 1
+            },
+            {
+              "prompt": "A railway crossing sign is an X. One angle is 124°. Find the other three.",
+              "answer": "56°, 124°, 56°",
+              "answerLines": 1
+            }
+          ]
+        },
+        {
+          "title": "Think deeper",
+          "proficiency": "reasoning",
+          "example": {
+            "prompt": "Two lines cross. Could all four angles be 90°?",
+            "steps": [
+              "Opposite angles are equal.",
+              "Next to each other, they make 180°: 90° + 90° = 180°.",
+              "So yes: the lines are perpendicular."
+            ],
+            "answer": "Yes"
+          },
+          "items": [
+            {
+              "prompt": "Explain why vertically opposite angles are always equal. Use the straight-line fact.",
+              "answer": "Each of the two opposite angles makes 180° with the same angle between them, so they must be the same size.",
+              "answerLines": 3
+            },
+            {
+              "prompt": "Jordan says the angle opposite 65° is 115°. Explain his mistake.",
+              "answer": "115° is next to 65° on the straight line. The opposite angle is 65°.",
+              "answerLines": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option. Three lines through a point, and angle proofs, with worked examples.",
+      "title": "Extension: Crossing Lines",
+      "subtitle": "Use all three angle facts together.",
+      "sections": [
+        {
+          "title": "Three lines through a point",
+          "proficiency": "reasoning",
+          "intro": "When three straight lines cross at one point, there are six angles. Opposite angles are still equal, and all six make 360°.",
+          "example": {
+            "prompt": "Three lines make angles of 50° and 60° next to each other. Find the third angle in that half.",
+            "steps": [
+              "The three angles on one side make a straight line: 180°.",
+              "50° + 60° = 110°.",
+              "180° - 110° = 70°."
+            ],
+            "answer": "70°"
+          },
+          "items": [
+            {
+              "prompt": "Three lines cross. Two neighbouring angles are 40° and 75°. Find the third angle in that half-turn, then all six angles.",
+              "answer": "65°; the six angles are 40°, 75°, 65°, 40°, 75°, 65°",
+              "answerLines": 2
+            },
+            {
+              "prompt": "Three lines cross so all six angles are equal. How big is each?",
+              "answer": "60°",
+              "answerLines": 1
+            },
+            {
+              "prompt": "Three lines cross. Two neighbouring angles are 90° and 35°. Find the other four angles.",
+              "answer": "55°, 90°, 35°, 55°",
+              "answerLines": 2
+            }
+          ]
+        },
+        {
+          "title": "Number sentences",
+          "proficiency": "reasoning",
+          "example": {
+            "prompt": "Two lines cross. One angle is 2x and the one opposite is 80°. Find x.",
+            "steps": [
+              "Opposite angles are equal: 2x = 80°.",
+              "x = 80° divided by 2.",
+              "x = 40°."
+            ],
+            "answer": "x = 40°"
+          },
+          "items": [
+            {
+              "prompt": "One angle is 3y and the angle opposite is 105°. Find y.",
+              "answer": "y = 35°",
+              "answerLines": 1
+            },
+            {
+              "prompt": "Two neighbouring angles where lines cross are a and a + 40°. Find a.",
+              "answer": "a = 70°",
+              "answerLines": 2
+            },
+            {
+              "prompt": "Make your own number-sentence puzzle with crossing lines. Solve it.",
+              "box": 120,
+              "answerLines": 0,
+              "answer": "any correct puzzle"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "answerKey": false,
+      "description": "For students who need more guidance: colour hints and sentence frames for each fact.",
+      "title": "Crossing Lines: Step by Step",
+      "subtitle": "Colour the opposite pairs first.",
+      "sections": [
+        {
+          "title": "Opposite angles are equal",
+          "proficiency": "understanding",
+          "columns": 2,
+          "example": {
+            "prompt": "Find a.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                180,
+                40,
+                220
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 40,
+                  "label": "40°"
+                },
+                {
+                  "from": 180,
+                  "to": 220,
+                  "label": "a"
+                }
+              ]
+            },
+            "steps": [
+              "Colour 40° and the angle straight across from it.",
+              "They are opposite, so they are equal.",
+              "a = 40°."
+            ],
+            "answer": "a = 40°"
+          },
+          "items": [
+            {
+              "prompt": "a is opposite ____, so a = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  60,
+                  240
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 60,
+                    "label": "60°"
+                  },
+                  {
+                    "from": 180,
+                    "to": 240,
+                    "label": "a"
+                  }
+                ]
+              },
+              "hint": "Look straight across the crossing point.",
+              "answer": "60°"
+            },
+            {
+              "prompt": "b is opposite ____, so b = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  120,
+                  300
+                ],
+                "arcs": [
+                  {
+                    "from": 120,
+                    "to": 180,
+                    "label": "b"
+                  },
+                  {
+                    "from": 300,
+                    "to": 360,
+                    "label": "60°"
+                  }
+                ]
+              },
+              "hint": "Colour the pair the same colour.",
+              "answer": "60°"
+            },
+            {
+              "prompt": "c is opposite ____, so c = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  30,
+                  210
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 30,
+                    "label": "c"
+                  },
+                  {
+                    "from": 180,
+                    "to": 210,
+                    "label": "30°"
+                  }
+                ]
+              },
+              "hint": "Opposite angles are equal.",
+              "answer": "30°"
+            }
+          ]
+        },
+        {
+          "title": "Next to each other: 180°",
+          "proficiency": "fluency",
+          "columns": 2,
+          "example": {
+            "prompt": "Find d.",
+            "visual": {
+              "type": "angle",
+              "rays": [
+                0,
+                180,
+                70,
+                250
+              ],
+              "arcs": [
+                {
+                  "from": 0,
+                  "to": 70,
+                  "label": "70°"
+                },
+                {
+                  "from": 70,
+                  "to": 180,
+                  "label": "d"
+                }
+              ]
+            },
+            "steps": [
+              "d and 70° are next to each other on a straight line.",
+              "180 - 70 = 110.",
+              "d = 110°."
+            ],
+            "answer": "d = 110°"
+          },
+          "items": [
+            {
+              "prompt": "180 - 50 = ____ so e = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  50,
+                  230
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 50,
+                    "label": "50°"
+                  },
+                  {
+                    "from": 50,
+                    "to": 180,
+                    "label": "e"
+                  }
+                ]
+              },
+              "hint": "Count on from 50 to 180.",
+              "answer": "130°"
+            },
+            {
+              "prompt": "180 - 140 = ____ so f = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  140,
+                  320
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 140,
+                    "label": "140°"
+                  },
+                  {
+                    "from": 140,
+                    "to": 180,
+                    "label": "f"
+                  }
+                ]
+              },
+              "hint": "Count on from 140 to 180.",
+              "answer": "40°"
+            },
+            {
+              "prompt": "180 - 85 = ____ so g = ____",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  180,
+                  85,
+                  265
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 85,
+                    "label": "85°"
+                  },
+                  {
+                    "from": 85,
+                    "to": 180,
+                    "label": "g"
+                  }
+                ]
+              },
+              "hint": "85 is close to 90: 180 - 90 = 90, add 5.",
+              "answer": "95°"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open Session 4 of the angles week. One line: today we find angles where two lines cross."
+    },
+    {
+      "kind": "resources",
+      "notes": "Prep slide. Two rulers or pencils per student, boards and markers. Print the Worksheet for all, and some Extension and Supported Worksheet copies."
+    },
+    {
+      "kind": "dailyReview",
+      "title": "Subtract",
+      "from": "2026-T3-W7-S1",
+      "prompts": [
+        "3 648 - 1 979"
+      ],
+      "reveal": {
+        "answers": [
+          "1 669"
+        ]
+      },
+      "notes": {
+        "answer": "1 669",
+        "beats": [
+          "SAY: Let's warm up with the four processes from last term.",
+          [
+            "ASK: Work out 3 648 - 1 979.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 1 669"
+          ],
+          [
+            "SCAN boards, back row first.",
+            "80%+ -> reveal, next one.",
+            "Less -> model the first step on the board together, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 1 669. Tick or fix, and check with the inverse."
+          ]
+        ],
+        "trap": [
+          "not regrouping across the zero-like gaps.",
+          "Fix: regroup one column at a time, student redoes."
+        ],
+        "prep": "Daily Review from Term 3 Week 7: four processes. Whole block under 7 minutes.",
+        "tag": "[Daily Review | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "dailyReview",
+      "title": "Multiply",
+      "from": "2026-T3-W7-S1",
+      "prompts": [
+        "48 x 25"
+      ],
+      "reveal": {
+        "answers": [
+          "1 200"
+        ]
+      },
+      "notes": {
+        "answer": "1 200",
+        "beats": [
+          "SAY: Next one: multiply.",
+          [
+            "ASK: Work out 48 times 25.",
+            "45 sec. Cue: boards up on cue.",
+            "EXPECT: 1 200"
+          ],
+          [
+            "SCAN boards, back row first.",
+            "80%+ -> reveal, next one.",
+            "Less -> model the first step on the board together, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 1 200. Tick or fix, and check with the inverse."
+          ]
+        ],
+        "trap": [
+          "multiplying only the ones.",
+          "Fix: split 48 into 40 and 8, student redoes."
+        ],
+        "prep": "Four processes retrieval.",
+        "tag": "[Daily Review | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "dailyReview",
+      "title": "Divide",
+      "from": "2026-T3-W7-S1",
+      "prompts": [
+        "1 452 ÷ 6"
+      ],
+      "reveal": {
+        "answers": [
+          "242"
+        ]
+      },
+      "notes": {
+        "answer": "242",
+        "beats": [
+          "SAY: Next one: divide.",
+          [
+            "ASK: Work out 1 452 divided by 6.",
+            "45 sec. Cue: boards up on cue.",
+            "EXPECT: 242"
+          ],
+          [
+            "SCAN boards, back row first.",
+            "80%+ -> reveal, then Fluency.",
+            "Less -> model the first step on the board together, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 242. Tick or fix, and check with the inverse."
+          ]
+        ],
+        "trap": [
+          "dropping a place in the quotient.",
+          "Fix: check 6 x 242, student corrects."
+        ],
+        "prep": "Four processes retrieval.",
+        "tag": "[Daily Review | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "fluency",
+      "title": "Add with the written method: 3 digits",
+      "visual": {
+        "type": "columnSum",
+        "numbers": [
+          867,
+          598
+        ],
+        "op": "+"
+      },
+      "reveal": {
+        "answers": [
+          "1 465"
+        ]
+      },
+      "notes": {
+        "answer": "1 465",
+        "beats": [
+          "SAY: Now the written method. Line up the places and start with the ones.",
+          [
+            "ASK: Solve it with the written method.",
+            "30 sec. Cue: boards up on cue.",
+            "EXPECT: 1 465"
+          ],
+          [
+            "SCAN boards for the regrouped digits.",
+            "80%+ -> reveal, next one.",
+            "Less -> model the ones and the regroup together on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 1 465. Tick or fix, and check every regroup."
+          ]
+        ],
+        "trap": [
+          "forgetting to add a regrouped ten.",
+          "Fix: circle each carried digit, student re-adds that column."
+        ],
+        "prep": "Algorithm fluency: 3 digits, then 4, then 5. Whole block under 6 minutes.",
+        "tag": "[Fluency | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "fluency",
+      "title": "Add with the written method: 4 digits",
+      "visual": {
+        "type": "columnSum",
+        "numbers": [
+          7659,
+          4876
+        ],
+        "op": "+"
+      },
+      "reveal": {
+        "answers": [
+          "12 535"
+        ]
+      },
+      "notes": {
+        "answer": "12 535",
+        "beats": [
+          "SAY: Now 4 digits. Same method, one more column.",
+          [
+            "ASK: Solve it with the written method.",
+            "45 sec. Cue: boards up on cue.",
+            "EXPECT: 12 535"
+          ],
+          [
+            "SCAN boards for the regrouped digits.",
+            "80%+ -> reveal, next one.",
+            "Less -> model the ones and the regroup together on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 12 535. Tick or fix, and check every regroup."
+          ]
+        ],
+        "trap": [
+          "forgetting to add a regrouped ten.",
+          "Fix: circle each carried digit, student re-adds that column."
+        ],
+        "prep": "Algorithm fluency, next size up.",
+        "tag": "[Fluency | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "fluency",
+      "title": "Add with the written method: 5 digits",
+      "visual": {
+        "type": "columnSum",
+        "numbers": [
+          67895,
+          48768
+        ],
+        "op": "+"
+      },
+      "reveal": {
+        "answers": [
+          "116 663"
+        ]
+      },
+      "notes": {
+        "answer": "116 663",
+        "beats": [
+          "SAY: Now 5 digits. Same method, one more column.",
+          [
+            "ASK: Solve it with the written method.",
+            "60 sec. Cue: boards up on cue.",
+            "EXPECT: 116 663"
+          ],
+          [
+            "SCAN boards for the regrouped digits.",
+            "80%+ -> reveal, then the learning intention.",
+            "Less -> model the ones and the regroup together on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 116 663. Tick or fix, and check every regroup."
+          ]
+        ],
+        "trap": [
+          "forgetting to add a regrouped ten.",
+          "Fix: circle each carried digit, student re-adds that column."
+        ],
+        "prep": "Algorithm fluency, next size up.",
+        "tag": "[Fluency | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to use vertically opposite angles to find unknown angles and explain our thinking.",
+      "successCriteria": [
+        "I can point to the pairs of vertically opposite angles where two lines cross.",
+        "I can find unknown angles where two lines cross.",
+        "I can explain each answer using an angle fact."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today two straight lines cross, and we find all four angles."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Spotting the pairs is where we start.",
+            "Finding the unknowns is our big goal today."
+          ]
+        ],
+        "prep": "SC1 spotting pairs; SC2 finding unknowns is the core and the exit evidence; SC3 naming the fact is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Two lines cross",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          180,
+          60,
+          240
+        ],
+        "arcs": []
+      },
+      "prompt": "Cross two pencils. How many angles? Which look the same size?",
+      "notes": {
+        "answer": "four angles; the opposite ones look the same",
+        "beats": [
+          [
+            "SHOW two pencils crossing.",
+            "SAY: Cross your two pencils like the lines on the screen."
+          ],
+          [
+            "ASK: How many angles can you see? Which ones look the same size?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: four; the ones opposite each other"
+          ],
+          [
+            "SCAN pencils and listen for opposite.",
+            "80%+ -> name them vertically opposite, move on.",
+            "Less -> trace each angle with a finger, compare the opposite pair, re-ask."
+          ]
+        ],
+        "trap": [
+          "seeing only two angles.",
+          "Fix: count around the point, student finds four."
+        ],
+        "prep": "Launch after the LI: students discover the pairs with their own crossed pencils. Under 4 minutes.",
+        "tag": "[Launch | Retention and recall | HITS 3, 5]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "vertically opposite",
+      "meaning": "Angles opposite each other where two straight lines cross. They are equal.",
+      "example": "If one is 50°, the angle opposite is 50° too.",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          180,
+          50,
+          230
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 50,
+            "label": "50°"
+          },
+          {
+            "from": 180,
+            "to": 230,
+            "label": "50°"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "angles opposite each other where two lines cross; they are equal",
+        "beats": [
+          "POINT to the words. SAY: Vertically opposite. Say it with me.",
+          [
+            "SAY: Vertically opposite angles face each other across the crossing point.",
+            "They are always equal."
+          ],
+          [
+            "ASK: Point to the angle opposite the 50 degree angle.",
+            "5 sec. Cue: voices off. Point... now.",
+            "EXPECT: pointing to the bottom angle"
+          ]
+        ],
+        "trap": [
+          "thinking vertical means up and down.",
+          "Fix: say it means at the vertex, student points again."
+        ],
+        "prep": "Vertical here means at the vertex, not up and down: worth one sentence if asked.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "workedExample",
+      "stage": 2,
+      "title": "Opposite angles are equal",
+      "steps": [
+        "a is opposite 50°, so a = 50°.",
+        "b and 50° sit on a straight line.",
+        "b = 180° - 50° = 130°."
+      ],
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          180,
+          50,
+          230
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 50,
+            "label": "50°"
+          },
+          {
+            "from": 50,
+            "to": 180,
+            "label": "b"
+          },
+          {
+            "from": 180,
+            "to": 230,
+            "label": "a"
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "a = 50°",
+          "b = 130°"
+        ]
+      },
+      "notes": {
+        "answer": "a = 50°, b = 130°",
+        "beats": [
+          [
+            "POINT to a and 50.",
+            "SAY: a sits opposite the 50, so it is equal. a is 50 degrees."
+          ],
+          [
+            "POINT to b and 50 on the line.",
+            "SAY: b and 50 share a straight line, so together they make 180."
+          ],
+          [
+            "ASK: What is b?",
+            "10 sec. Cue: boards up on cue.",
+            "EXPECT: 130"
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: b is 130. Opposite angles equal, straight line 180."
+          ]
+        ],
+        "trap": [
+          "saying b is 50 because it is nearby.",
+          "Fix: point to opposite versus next to, student redoes."
+        ],
+        "stretch": "Find the fourth angle two different ways.",
+        "help": "Colour opposite pairs the same colour first.",
+        "prep": "Two facts working together: opposite equal, straight line 180. SC2.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "workedExample",
+      "stage": 2,
+      "title": "Say the fact every time",
+      "steps": [
+        "c = 180° - 115° = 65° (straight line)",
+        "d = 115° (vertically opposite)",
+        "e = 65° (vertically opposite c)"
+      ],
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          180,
+          115,
+          295
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 115,
+            "label": "115°"
+          },
+          {
+            "from": 115,
+            "to": 180,
+            "label": "c"
+          },
+          {
+            "from": 180,
+            "to": 295,
+            "label": "d"
+          },
+          {
+            "from": 295,
+            "to": 360,
+            "label": "e"
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "c = 65°",
+          "d = 115°",
+          "e = 65°"
+        ]
+      },
+      "notes": {
+        "answer": "c = 65°, d = 115°, e = 65°",
+        "beats": [
+          [
+            "MODEL c first.",
+            "SAY: c is on a straight line with 115.",
+            "180 take away 115 is 65. That's the straight-line fact."
+          ],
+          [
+            "ASK: What is d? Say the fact too.",
+            "10 sec. Cue: boards up on cue.",
+            "EXPECT: 115, vertically opposite"
+          ],
+          [
+            "POINT to e.",
+            "SAY: e sits opposite c, so e is 65. Vertically opposite."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: All four checked: 115, 65, 115, 65 make 360."
+          ]
+        ],
+        "trap": [
+          "giving answers with no fact.",
+          "Fix: ask which fact, student adds it."
+        ],
+        "stretch": "Why do the four angles always make 360?",
+        "help": "Sentence frame: ___ is opposite ___, so they are equal.",
+        "prep": "The reasoning habit: every answer carries its fact. SC3.",
+        "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Opposite or next to?",
+      "prompt": "Two lines cross. One angle is 70°. What is the angle opposite it?",
+      "options": [
+        {
+          "text": "110°",
+          "misconception": "uses the straight-line fact: thinks opposite means the angle next to it"
+        },
+        {
+          "text": "70°"
+        },
+        {
+          "text": "290°",
+          "misconception": "subtracts from 360° (uses a full turn)"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - 70°",
+        "beats": [
+          "SAY: Opposite, not next to. Choose carefully.",
+          [
+            "ASK: One angle is 70. What is the angle opposite it?",
+            "10 sec. Cue: voices off. Point... now.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call one child: where would 110 be?",
+            "Less -> cross two pencils, point opposite then next to, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Vertically opposite angles are equal."
+          ]
+        ],
+        "trap": [
+          "pointing to A.",
+          "Fix: ask whether A is opposite or next to, student re-chooses."
+        ],
+        "prep": "First decision point: A means the facts are mixed up, the most common error today.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Find the angle, name the fact",
+      "ask": "Find the angle. Which fact did you use?",
+      "routine": "boards",
+      "thinkTime": 20,
+      "pivot": "cross two pencils and point: opposite or next to?",
+      "followUp": "cold call one board: say the fact out loud",
+      "items": [
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              180,
+              40,
+              220
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 40,
+                "label": "40°"
+              },
+              {
+                "from": 180,
+                "to": 220,
+                "label": "p"
+              }
+            ]
+          },
+          "answer": "p = 40° (vertically opposite)",
+          "expect": "40, opposite"
+        },
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              180,
+              125,
+              305
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 125,
+                "label": "125°"
+              },
+              {
+                "from": 125,
+                "to": 180,
+                "label": "q"
+              }
+            ]
+          },
+          "answer": "q = 55° (straight line)",
+          "expect": "55, straight line"
+        },
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              180,
+              60,
+              240
+            ],
+            "arcs": [
+              {
+                "from": 60,
+                "to": 180,
+                "label": "120°"
+              },
+              {
+                "from": 240,
+                "to": 360,
+                "label": "r"
+              }
+            ]
+          },
+          "answer": "r = 120° (vertically opposite)",
+          "expect": "120, opposite"
+        },
+        {
+          "visual": {
+            "type": "angle",
+            "rays": [
+              0,
+              180,
+              145,
+              325
+            ],
+            "arcs": [
+              {
+                "from": 0,
+                "to": 145,
+                "label": "145°"
+              },
+              {
+                "from": 325,
+                "to": 360,
+                "label": "s"
+              }
+            ]
+          },
+          "answer": "s = 35° (straight line)",
+          "expect": "35, straight line",
+          "say": "35 degrees. s and 145 share a straight line. Tick or fix."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Let's practise. Find the angle,",
+          "and write the fact next to it."
+        ],
+        "trap": [
+          "using the straight line for an opposite angle.",
+          "Fix: point opposite or next to, then redo."
+        ],
+        "stretch": "Find all four angles in each diagram.",
+        "help": "Colour the opposite pairs first.",
+        "prep": "Guided practice mixing the two facts, so choosing the fact is the practice. SC2 and SC3.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "CFU",
+      "badgeColor": "alert",
+      "title": "Find t and u",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          180,
+          80,
+          260
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 80,
+            "label": "80°"
+          },
+          {
+            "from": 80,
+            "to": 180,
+            "label": "t"
+          },
+          {
+            "from": 260,
+            "to": 360,
+            "label": "u"
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "t = 100° (straight line)",
+          "u = 100° (vertically opposite t)"
+        ]
+      },
+      "notes": {
+        "answer": "t = 100°, u = 100°. 80 for u means the facts are mixed",
+        "beats": [
+          "SAY: This one is just for you. Two answers, two facts.",
+          [
+            "ASK: Find t and u. Write the fact for each.",
+            "30 sec. Cue: boards up on cue.",
+            "EXPECT: t = 100 straight line, u = 100 opposite"
+          ],
+          [
+            "SCAN every board, back row first.",
+            "80%+ -> reveal, then Your turn.",
+            "Less -> shade t, then point to u opposite it, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: t is 100 on the straight line, and u sits opposite t. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "u = 80.",
+          "Fix: ask what u is opposite, student redoes."
+        ],
+        "prep": "The hinge before independence. Students with u = 80 start with the teacher on the Supported Worksheet.",
+        "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Your turn",
+      "task": "Find the missing angles and name the facts on your worksheet.",
+      "where": "On your worksheet",
+      "notes": {
+        "beats": [
+          [
+            "POINT to the steps.",
+            "SAY: Read each question, solve it carefully, then check your answers."
+          ],
+          [
+            "SAY: When you finish, the early finisher option is the Extension.",
+            "Say the steps with me. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: which fact did you use?",
+          "TIME 20 minutes. Check-in at question 10."
+        ],
+        "trap": [
+          "answers with no fact.",
+          "Fix: ask which fact, student adds it."
+        ],
+        "stretch": "Extension: three lines through a point, and proofs.",
+        "help": "Supported Worksheet: sentence frames and colour hints.",
+        "prep": "Independent practice with all three facts, worded problems and reasoning. Sheet is evidence for SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          180,
+          35,
+          215
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 35,
+            "label": "35°"
+          },
+          {
+            "from": 215,
+            "to": 360,
+            "label": "v"
+          }
+        ]
+      },
+      "questions": [
+        "Find v and write the fact."
+      ],
+      "notes": {
+        "answer": "v = 145°, straight line with 35°",
+        "beats": [
+          "SAY: Last one. Find v and write the fact on your board.",
+          [
+            "ASK: Find v and write the fact.",
+            "30 sec. Cue: boards up on cue.",
+            "EXPECT: 145, straight line"
+          ],
+          [
+            "RECORD who writes 35 for v: opposite and next to are mixed.",
+            "They start next week's review with the teacher."
+          ]
+        ],
+        "trap": [
+          "writing 35.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 and SC3 across the week's facts.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner the three angle facts from this week.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for straight line 180, point 360, opposite equal",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can find angles where lines cross?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          [
+            "RECORD each thumb down beside the exit board.",
+            "A thumb up with v = 35 matters most."
+          ],
+          [
+            "ASK: Tell your partner the three angle facts from this week.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: straight line 180, point 360, opposite equal"
+          ]
+        ],
+        "prep": "Week close: the three facts, said aloud. Self-assessment read beside the exit evidence.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}
