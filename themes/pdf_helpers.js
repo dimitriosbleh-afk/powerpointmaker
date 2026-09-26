@@ -1067,56 +1067,55 @@ function addRichResourceSlide(pres, config, theme, footer, notes) {
     { label: "Videos & media", items: cfg.videos },
     { label: "Supplied URLs", items: cfg.urls },
     { label: "OCHRE / source materials", items: cfg.ochre },
-  ].filter((g) => Array.isArray(g.items) && g.items.length > 0);
+  ].filter((g) => Array.isArray(g.items) && g.items.length > 0)
+    .map((g) => ({ label: g.label, items: g.items.map((e) => String(e == null ? "" : e).trim()).filter(Boolean) }));
 
-  s.background = { color: TC.CREAM || TC.BG_LIGHT || "F4F7FF" };
-  s.addShape("rect", {
-    x: 0, y: 0, w: 10, h: 0.06,
-    fill: { color: TC.NAVY || TC.PRIMARY || "1B3A6B" },
-  });
-
+  const ink = TC.NAVY || TC.PRIMARY || "1B3A6B";
+  const muted = TC.MUTED || "6B7280";
   const badgeColor = TC.TEAL || TC.SECONDARY || "0F7F8C";
-  s.addShape("roundRect", {
-    x: 0.5, y: 0.2, w: 2.8, h: 0.36, rectRadius: 0.08,
-    fill: { color: badgeColor },
-  });
-  s.addText("Teacher Resources", {
-    x: 0.5, y: 0.2, w: 2.8, h: 0.36,
-    fontSize: 11, fontFace: FB, color: TC.WHITE || "FFFFFF",
-    align: "center", valign: "middle", bold: true, margin: 0,
-  });
 
-  s.addText("Materials & references", {
-    x: 0.5, y: 0.65, w: 9, h: 0.55,
-    fontSize: 24, fontFace: FH, color: TC.NAVY || TC.PRIMARY || "1B3A6B",
-    bold: true, margin: 0,
-  });
-
-  if (resources.length === 0) {
-    s.addText("No printed student resources required.", {
-      x: 0.5, y: 1.25, w: 9, h: 0.3,
-      fontSize: 12, fontFace: FB, color: TC.MUTED || "6B7280",
-      italic: true, margin: 0,
-    });
+  // Same chrome as every other slide: theme background, badge and title.
+  s.background = { color: TC.BG_LIGHT || TC.CREAM || "F4F7FF" };
+  s.addShape("rect", { x: 0, y: 0, w: 10, h: 0.06, fill: { color: ink } });
+  if (theme.addBadge && theme.addTitle) {
+    theme.addBadge(s, "Teacher Resources", { color: badgeColor });
+    theme.addTitle(s, "Materials & references", { color: ink });
   } else {
-    s.addText("Click any resource to open. Print before the lesson.", {
-      x: 0.5, y: 1.25, w: 9, h: 0.3,
-      fontSize: 12, fontFace: FB, color: TC.MUTED || "6B7280",
-      italic: true, margin: 0,
+    s.addShape("roundRect", { x: 0.5, y: 0.2, w: 2.8, h: 0.36, rectRadius: 0.08, fill: { color: badgeColor } });
+    s.addText("Teacher Resources", {
+      x: 0.5, y: 0.2, w: 2.8, h: 0.36, fontSize: 11, fontFace: FB, color: TC.WHITE || "FFFFFF",
+      align: "center", valign: "middle", bold: true, margin: 0,
+    });
+    s.addText("Materials & references", {
+      x: 0.5, y: 0.65, w: 9, h: 0.55, fontSize: 24, fontFace: FH, color: ink, bold: true, margin: 0,
     });
   }
 
-  const colTop = 1.6;
-  const colH = 5.05 - colTop;
+  s.addText(resources.length ? "Click a resource to open it. Print before the lesson." : "No printed student resources required.", {
+    x: 0.5, y: 1.3, w: 9, h: 0.3,
+    fontSize: 13, fontFace: FB, color: muted, italic: true, margin: 0,
+  });
+
+  const colTop = 1.75;
+  const colBottom = 5.05;
+  const colH = colBottom - colTop;
   const useTwoCols = resources.length > 0 && groups.length > 0;
-  const leftW = useTwoCols ? 4.7 : 9;
   const leftX = 0.5;
-  const rightX = leftX + leftW + 0.2;
+  const leftW = useTwoCols ? 4.55 : 9;
+  const rightX = leftX + leftW + 0.3;
   const rightW = 9.5 - rightX;
 
+  // Rough wrapped-line count for body text at pt in a box w inches wide.
+  const linesFor = (text, pt, w) => {
+    const perLine = Math.max(1, Math.floor(w / (pt * 0.5 / 72)));
+    return Math.max(1, Math.ceil(String(text).length / perLine));
+  };
+
   if (resources.length > 0) {
-    const cardH = Math.min(0.62, (colH - 0.18 * (resources.length - 1)) / Math.max(resources.length, 1));
-    const gap = 0.16;
+    const gap = 0.18;
+    const cardH = Math.min(1.0, (colH - gap * (resources.length - 1)) / resources.length);
+    const baseName = cardH >= 0.8 ? 16 : 14;
+    const descSize = cardH >= 0.8 ? 12 : 11;
     resources.forEach((res, i) => {
       const displayName = cleanResourceLabel(res.name) || resourceNameFromFileName(res.fileName);
       const cy = colTop + i * (cardH + gap);
@@ -1125,38 +1124,40 @@ function addRichResourceSlide(pres, config, theme, footer, notes) {
         fill: { color: TC.WHITE || "FFFFFF" },
         shadow: { type: "outer", blur: 4, offset: 1, color: "000000", opacity: 0.10, angle: 135 },
       });
-      s.addShape("rect", {
-        x: leftX, y: cy, w: 0.06, h: cardH,
-        fill: { color: badgeColor },
-      });
-      const ICON_D = 0.40;
+      s.addShape("rect", { x: leftX, y: cy, w: 0.06, h: cardH, fill: { color: badgeColor } });
+      const ICON_D = 0.46;
       s.addShape("roundRect", {
-        x: leftX + 0.20, y: cy + (cardH - ICON_D) / 2, w: ICON_D, h: ICON_D, rectRadius: ICON_D / 2,
+        x: leftX + 0.2, y: cy + (cardH - ICON_D) / 2, w: ICON_D, h: ICON_D, rectRadius: ICON_D / 2,
         fill: { color: TC.CORAL || TC.ALERT || "C94030" },
       });
       s.addText("PDF", {
-        x: leftX + 0.20, y: cy + (cardH - ICON_D) / 2, w: ICON_D, h: ICON_D,
-        fontSize: 9, fontFace: FB, color: TC.WHITE || "FFFFFF",
+        x: leftX + 0.2, y: cy + (cardH - ICON_D) / 2, w: ICON_D, h: ICON_D,
+        fontSize: 10, fontFace: FB, color: TC.WHITE || "FFFFFF",
         align: "center", valign: "middle", bold: true, margin: 0,
       });
+      const textX = leftX + 0.82;
+      const textW = leftW - 0.97;
+      // One line for the name: heading faces run wide, so step down until it fits.
+      let nameSize = baseName;
+      while (nameSize > 11 && String(displayName).length * nameSize * 0.62 / 72 > textW) nameSize -= 1;
+      const nameH = nameSize * 1.25 / 72;
+      const hasDesc = Boolean(res.description);
+      const blockH = nameH + (hasDesc ? 0.05 + Math.min(2, linesFor(res.description, descSize, textW)) * descSize * 1.25 / 72 : 0);
+      const textY = cy + Math.max(0.08, (cardH - blockH) / 2);
       // Hyperlink lives in run options, NOT the addText options level:
       // options-level hyperlink makes PptxGenJS also link the whole text box
       // (shape-level hlinkClick), so clicking anywhere in the card follows it.
       s.addText([{
         text: String(displayName),
-        options: {
-          hyperlink: { url: res.fileName, tooltip: "Open " + displayName },
-          color: TC.NAVY || TC.PRIMARY || "1B3A6B",
-        },
+        options: { hyperlink: { url: res.fileName, tooltip: "Open " + displayName }, color: ink },
       }], {
-        x: leftX + 0.70, y: cy + 0.06, w: leftW - 0.85, h: 0.28,
-        fontSize: 13, fontFace: FH, color: TC.NAVY || TC.PRIMARY || "1B3A6B",
-        bold: true, margin: 0,
+        x: textX, y: textY, w: textW, h: nameH,
+        fontSize: nameSize, fontFace: FH, color: ink, bold: true, margin: 0, valign: "middle",
       });
-      if (res.description) {
+      if (hasDesc) {
         s.addText(String(res.description), {
-          x: leftX + 0.70, y: cy + 0.34, w: leftW - 0.85, h: cardH - 0.40,
-          fontSize: 10, fontFace: FB, color: TC.MUTED || "6B7280",
+          x: textX, y: textY + nameH + 0.05, w: textW, h: Math.max(0.2, cy + cardH - 0.06 - (textY + nameH + 0.05)),
+          fontSize: descSize, fontFace: FB, color: muted, valign: "top",
           margin: 0, fit: "shrink", shrinkText: true,
         });
       }
@@ -1166,36 +1167,41 @@ function addRichResourceSlide(pres, config, theme, footer, notes) {
   if (groups.length > 0) {
     const groupX = useTwoCols ? rightX : leftX;
     const groupW = useTwoCols ? rightW : leftW;
-    const totalGroups = groups.length;
-    const groupH = colH / Math.max(totalGroups, 1);
-    groups.forEach((g, i) => {
-      const gy = colTop + i * groupH;
-      s.addText(g.label, {
-        x: groupX, y: gy, w: groupW, h: 0.28,
-        fontSize: 12, fontFace: FB, color: badgeColor,
-        bold: true, margin: 0,
-      });
-      const items = g.items.map((entry) => String(entry == null ? "" : entry).trim()).filter(Boolean);
-      const bodyH = Math.max(0.4, groupH - 0.36);
-      s.addText(items.map((entry, idx) => ({
-        text: entry,
+    // One text box for every group, so the renderer does the spacing. The
+    // size is the largest that fits the column by a conservative estimate.
+    const heightAt = (pt) => groups.reduce((sum, g) => {
+      const lines = g.items.reduce((n, item) => n + linesFor(item, pt, groupW - 0.4), 0);
+      return sum + (pt + 1) * 1.3 / 72 + lines * pt * 1.3 / 72 + pt * 0.6 / 72;
+    }, 0);
+    let itemSize = 15;
+    while (itemSize > 11 && heightAt(itemSize) > colH) itemSize -= 1;
+    const runs = [];
+    groups.forEach((g, gi) => {
+      runs.push({
+        text: g.label,
         options: {
-          bullet: true, breakLine: idx < items.length - 1,
-          fontSize: 11, color: TC.CHARCOAL || "1F2937",
+          bold: true, color: badgeColor, fontSize: itemSize + 1, breakLine: true,
+          paraSpaceBefore: gi === 0 ? 0 : Math.round(itemSize * 0.7), paraSpaceAfter: 2,
         },
-      })), {
-        x: groupX + 0.06, y: gy + 0.30, w: groupW - 0.06, h: bodyH,
-        fontFace: FB, valign: "top", margin: 0,
-        fit: "shrink", shrinkText: true,
       });
+      g.items.forEach((entry, idx) => {
+        const last = gi === groups.length - 1 && idx === g.items.length - 1;
+        runs.push({
+          text: entry,
+          options: { bullet: true, fontSize: itemSize, color: TC.CHARCOAL || "1F2937", breakLine: !last, paraSpaceAfter: 2 },
+        });
+      });
+    });
+    s.addText(runs, {
+      x: groupX, y: colTop, w: groupW, h: colH,
+      fontFace: FB, valign: "top", margin: 0,
+      fit: "shrink", shrinkText: true,
     });
   }
 
-  if (footer) {
-    s.addText(footer, {
-      x: 0.5, y: 5.3, w: 9, h: 0.2,
-      fontSize: 9, fontFace: FB, color: TC.MUTED || "6B7280", margin: 0,
-    });
+  if (theme.addFooter && footer) theme.addFooter(s, footer);
+  else if (footer) {
+    s.addText(footer, { x: 0.5, y: 5.3, w: 9, h: 0.2, fontSize: 9, fontFace: FB, color: muted, margin: 0 });
   }
   if (notes) s.addNotes(notes);
   return s;
