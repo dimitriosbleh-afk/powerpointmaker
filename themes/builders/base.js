@@ -925,10 +925,28 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     const perItemMax = byBand(sz, 0.62, 0.54, 0.42);
     const perItem    = Math.min(perItemMax, available / Math.max(totalItems, 1));
     const dense      = totalItems > 8;
-    const fontSize   = dense ? Math.max(sz.liBody * sz._shrink, 10) : sz.liBody;
+    let fontSize     = dense ? Math.max(sz.liBody * sz._shrink, 10) : sz.liBody;
+    let liLinesH = null;
+    let scLinesH = null;
+    if (!dense && !tiered) {
+      // The intention and criteria are read aloud together every lesson:
+      // set them as large as the slide allows, never below the band size.
+      const linesAt = (text, pt, w) => Math.max(1, Math.ceil(String(text).length / Math.max(1, Math.floor(w / (pt * 0.5 / 72)))));
+      const lineH = (pt) => pt * 1.22 / 72;
+      const heightAt = (pt) => {
+        const li = liItems.reduce((n, t) => n + linesAt(t, pt, 8.5), 0) * lineH(pt);
+        const sc = scItems.reduce((n, t) => n + linesAt(t, pt, 8.1), 0) * lineH(pt) + 0.06 * scItems.length;
+        return { li, sc, total: li + sc };
+      };
+      for (let pt = byBand(sz, 32, 30, 26); pt >= sz.liBody; pt -= 1) {
+        const h = heightAt(pt);
+        // +0.16 is the breathing room added to the two bodies below.
+        if (h.total + 0.16 <= available) { fontSize = pt; liLinesH = h.li + 0.08; scLinesH = h.sc + 0.08; break; }
+      }
+    }
 
     // LI card
-    const liBodyH = Math.max(liItems.length * perItem, 0.52);
+    const liBodyH = liLinesH != null ? Math.max(liLinesH, 0.52) : Math.max(liItems.length * perItem, 0.52);
     const liH     = LI_HDR_H + liBodyH + PAD;
     el.addCard(s, 0.5, CONTENT_TOP, 9, liH, { variant: "tint", tone: C.PRIMARY, strip: C.PRIMARY });
     s.addText("Learning Intention", {
@@ -943,7 +961,7 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
 
     // SC card
     const scY     = CONTENT_TOP + liH + GAP;
-    const scBodyH = scItems.length * perItem;
+    const scBodyH = scLinesH != null ? scLinesH : scItems.length * perItem;
     const scH     = SC_HDR_H + scBodyH + PAD;
     el.addCard(s, 0.5, scY, 9, scH, { strip: C.ACCENT });
     s.addText("Success Criteria", {
