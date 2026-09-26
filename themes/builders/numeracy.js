@@ -104,8 +104,11 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S, defaults) {
    *                                      fitted into the right column automatically
    * @returns {object}             The slide object
    */
-  function workedExSlide(pres, stageNum, stageLabel, title, steps, notes, footer, drawRightArg) {
+  function workedExSlide(pres, stageNum, stageLabel, title, steps, notes, footer, drawRightArg, opts) {
     const s = pres.addSlide();
+    // reserveBottom keeps room under the card and visual for a click-revealed answer bar.
+    const reserve = opts && Number(opts.reserveBottom) > 0 ? Number(opts.reserveBottom) : 0;
+    const bottom = SAFE_BOTTOM - reserve;
     const drawRight = resolveDrawRight(drawRightArg);
     const stageColor = STAGE_COLORS[String(stageNum)] || C.PRIMARY;
     el.addTopBar(s, stageColor);
@@ -124,13 +127,13 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S, defaults) {
       leftCardX: 0.5,
       leftCardY: contentY,
       leftCardW: cardW,
-      leftCardH: SAFE_BOTTOM - contentY,
+      leftCardH: bottom - contentY,
       rightX: 5.3,
       rightW: 4.2,
-      safeBottom: SAFE_BOTTOM,
+      safeBottom: bottom,
     };
 
-    el.addCard(s, 0.5, contentY, cardW, SAFE_BOTTOM - contentY, { strip: stageColor });
+    el.addCard(s, 0.5, contentY, cardW, bottom - contentY, { strip: stageColor });
 
     // Filter empty-string spacers from build-script step lists; they
     // become paraSpaceAfter boosts on the preceding bullet so the slide
@@ -138,7 +141,7 @@ function createNumeracyBuilders(C, FONT_H, FONT_B, el, S, defaults) {
     const prepared = prepareBullets(steps);
     // Available text-frame height inside the step card.
     const textY = contentY + 0.14;
-    const textH = SAFE_BOTTOM - contentY - 0.24;
+    const textH = bottom - contentY - 0.24;
     // Ideal step font size; narrow column drops one step. fitBulletFontSize
     // shrinks deterministically when content would overflow the card —
     // PptxGenJS shrinkText on bullet lists is unreliable, so we pre-compute.

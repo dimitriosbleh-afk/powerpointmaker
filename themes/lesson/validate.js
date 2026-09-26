@@ -30,7 +30,7 @@ const KINDS = {
   fluency:       { required: ["title"], optional: ["prompts", "visual", "label", "reveal", "notes"], teaching: true, numeracy: true },
   launch:        { required: ["title"], optional: ["lines", "visual", "label", "prompt", "badge", "badgeColor", "reveal", "notes"], teaching: true },
   li:            { required: ["learningIntention", "successCriteria"], optional: ["notes"], teaching: true },
-  keyWord:       { required: ["word", "meaning"], optional: ["example", "pictogram", "image", "routine", "notes"], teaching: true },
+  keyWord:       { required: ["word", "meaning"], optional: ["example", "pictogram", "image", "visual", "routine", "notes"], teaching: true },
   heroVisual:    { required: ["badge", "title", "visual"], optional: ["label", "prompt", "badgeColor", "reveal", "notes"], teaching: true },
   content:       { required: ["badge", "title", "lines"], optional: ["visual", "badgeColor", "reveal", "notes"], teaching: true },
   workedExample: { required: ["stage", "title", "steps"], optional: ["stageLabel", "visual", "reveal", "notes"], teaching: true, numeracy: true },
@@ -351,7 +351,10 @@ function practiceCounts(spec) {
     toArray(n.beats).forEach((b) => { if (ALL_STUDENT_CUE.test(toArray(b).join(" "))) responses += 1; });
   });
   let independent = 0;
-  (spec.resources || []).forEach((r) => { if (r && r.kind === "worksheet") independent += toArray(r.items).length; });
+  // The main task counts; an Extension or a supported sheet is an alternative, not more practice.
+  (spec.resources || []).forEach((r) => {
+    if (r && r.kind === "worksheet" && (r.role == null || r.role === "main")) independent += worksheetItems(r).length;
+  });
   (spec.slides || []).forEach((s) => {
     if (s && s.kind === "practice" && /you do/i.test(String(s.badge || ""))) independent += toArray(s.items).length;
   });
@@ -424,7 +427,8 @@ function questionSignatures(texts, visuals) {
   const sigs = [];
   texts.filter(isNonEmptyString).forEach((t) => {
     const nums = String(t).match(/\d+(?:[.,/]\d+)?/g) || [];
-    if (nums.length) sigs.push(`n:${nums.join("|")}`);
+    // Two or more numbers in order make a question; a lone number (180) is usually a fact.
+    if (nums.length >= 2) sigs.push(`n:${nums.join("|")}`);
   });
   visuals.filter(Boolean).forEach((v) => sigs.push(`v:${canonical(v)}`));
   return sigs;
@@ -595,7 +599,7 @@ function validateLessonSpec(spec, opts) {
         break;
       }
       case "keyWord":
-        if (!slide.pictogram && !slide.image) errors.push(`${w}: a word card needs a picture: pictogram (see listPictograms()) or image path (megaprompt 29).`);
+        if (!slide.pictogram && !slide.image && !slide.visual) errors.push(`${w}: a word card needs a picture: pictogram (see listPictograms()), image path, or a visual such as an angle diagram (megaprompt 29).`);
         if (slide.pictogram && !PICTOGRAMS[slide.pictogram]) errors.push(`${w}.pictogram: "${slide.pictogram}" is not a pictogram.`);
         break;
       case "content":

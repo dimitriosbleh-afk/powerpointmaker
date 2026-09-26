@@ -24,11 +24,15 @@ const { diagramPng, diagramSvg } = require("../core/diagrams");
 
 // Paper width of a diagram in points: angles big enough to measure with a real protractor.
 function diagramWidth(visual, sz, maxW) {
-  const base = visual.type === "angle" ? (visual.protractor ? 260 : 200) : byBand(sz, 150, 150, 140);
-  return Math.min(maxW, visual.size || base);
+  // Angles up to 190pt: acute arms stay about 5 cm, long enough for a real protractor.
+  const base = visual.type === "angle" ? 190 : byBand(sz, 150, 150, 140);
+  // Tall figures (steep or reflex angles) are capped by height as well, so rows stay compact.
+  const maxH = visual.maxH || (visual.type === "angle" ? 140 : 400);
+  return Math.min(maxW, visual.size || base, maxH * diagramSvg(visual).aspect);
 }
 
-const CONTENT_BOTTOM = P.PAGE.H - P.PAGE.MARGIN - 40;
+// Content stops 30pt above the bottom margin; the footer sits 10pt above it.
+const CONTENT_BOTTOM = P.PAGE.H - P.PAGE.MARGIN - 30;
 
 // Paper sizes per band. Set generously: staff asked for bigger type and
 // more room to write than the first sheets gave.
@@ -260,7 +264,7 @@ function drawVisualPdf(doc, visual, x, y, opts) {
   }
 }
 
-function estimateVisualHeight(visual, sz) {
+function estimateVisualHeight(visual, sz, maxW) {
   const S = bandSizes(sz);
   switch (visual.type) {
     case "tensFrame": return S.cell * 2 + 8;
@@ -280,7 +284,7 @@ function estimateVisualHeight(visual, sz) {
     case "chips": return S.cell * 0.9 + 8;
     case "table": return ((visual.rows || []).length) * S.body * 2 + 8;
     case "angle":
-    case "columnSum": return diagramWidth(visual, sz, P.PAGE.CONTENT_W) / diagramSvg(visual).aspect + 8;
+    case "columnSum": return diagramWidth(visual, sz, maxW || P.PAGE.CONTENT_W) / diagramSvg(visual).aspect + 8;
     default: return 60;
   }
 }
@@ -319,7 +323,7 @@ function measureCell(doc, item, w, ctx) {
   const lines = item.answerLines != null ? item.answerLines : (item.box ? 0 : 1);
   let h = Math.max(numD, textHeight(doc, item.prompt, "Sans-Bold", S.prompt, innerW) + 4) + 8;
   if (item.hint) h += textHeight(doc, `Hint: ${item.hint}`, "Sans-Italic", S.body - 1, innerW) + 6;
-  if (visual) h += estimateVisualHeight(visual, sz) + 6;
+  if (visual) h += estimateVisualHeight(visual, sz, innerW) + 6;
   if (item.box) h += item.box + 8;
   h += lines * S.lineGap;
   return h + 10;
@@ -352,7 +356,8 @@ function drawCell(doc, num, item, x, y, w, colour, ctx) {
     y += item.box + 8;
   }
   for (let i = 0; i < lines; i += 1) {
-    const label = i === 0 && item.answerLabel ? String(item.answerLabel) : "";
+    const labels = Array.isArray(item.answerLabel) ? item.answerLabel : [item.answerLabel];
+    const label = labels[i] ? String(labels[i]) : "";
     const baseline = y + S.lineGap - 8;
     doc.save().font("Sans").fontSize(S.body);
     const labelW = label ? doc.widthOfString(label) + 8 : 0;
@@ -367,15 +372,21 @@ function drawCell(doc, num, item, x, y, w, colour, ctx) {
   return y + 10;
 }
 
+// A worked example's diagram is there to be read, not measured, so it sits smaller.
+function exampleVisual(ex) {
+  return ex.visual && ex.visual.size == null && (ex.visual.type === "angle" || ex.visual.type === "columnSum")
+    ? Object.assign({}, ex.visual, { size: 180 }) : ex.visual;
+}
+
 function measureExample(doc, ex, w, ctx) {
   const S = bandSizes(ctx.sz);
   const innerW = w - 36;
   let h = 16 + S.body + 8;
   if (ex.prompt) h += textHeight(doc, ex.prompt, "Sans-Bold", S.body, innerW) + 6;
-  if (ex.visual) h += estimateVisualHeight(ex.visual, ctx.sz) + 4;
-  (ex.steps || []).forEach((st) => { h += textHeight(doc, st, "Sans", S.body, innerW - 28) + 6; });
-  if (ex.answer) h += S.body + 10;
-  return h + 12;
+  if (ex.visual) h += estimateVisualHeight(exampleVisual(ex), ctx.sz, innerW) + 4;
+  (ex.steps || []).forEach((st) => { h += textHeight(doc, st, "Sans", S.body, innerW - 28) + 4; });
+  if (ex.answer) h += S.body + 8;
+  return h + 8;
 }
 
 function drawExample(doc, ex, x, y, w, colour, ctx) {
@@ -394,17 +405,17 @@ function drawExample(doc, ex, x, y, w, colour, ctx) {
     doc.save().font("Sans-Bold").fontSize(S.body).fillColor(ink).text(String(ex.prompt), ix, cy, { width: iw }).restore();
     cy += textHeight(doc, ex.prompt, "Sans-Bold", S.body, iw) + 6;
   }
-  if (ex.visual) cy = drawVisualPdf(doc, ex.visual, ix, cy, { C, sz, width: iw }) + 4;
+  if (ex.visual) cy = drawVisualPdf(doc, exampleVisual(ex), ix, cy, { C, sz, width: iw }) + 4;
   (ex.steps || []).forEach((st, i) => {
     doc.save().fillColor(colour).circle(ix + 9, cy + S.body / 2 + 1, 9).fill().restore();
     doc.save().font("Sans-Bold").fontSize(S.body - 3).fillColor("#FFFFFF").text(String(i + 1), ix, cy + 2, { width: 18, align: "center" }).restore();
     doc.save().font("Sans").fontSize(S.body).fillColor(ink).text(String(st), ix + 28, cy, { width: iw - 28 }).restore();
-    cy += textHeight(doc, st, "Sans", S.body, iw - 28) + 6;
+    cy += textHeight(doc, st, "Sans", S.body, iw - 28) + 4;
   });
   if (ex.answer) {
     doc.save().font("Sans-Bold").fontSize(S.body).fillColor(colour).text(`Answer: ${ex.answer}`, ix, cy + 2, { width: iw }).restore();
   }
-  return y + h + 12;
+  return y + h + 10;
 }
 
 function drawSections(doc, resource, y, ctx) {
@@ -419,8 +430,9 @@ function drawSections(doc, resource, y, ctx) {
     const bannerH = S.heading + 16;
     const introH = sec.intro ? textHeight(doc, sec.intro, "Sans", S.body, W) + 8 : 0;
     const exampleH = sec.example ? measureExample(doc, sec.example, W, ctx) : 0;
-    // Keep the banner with its explanation, example and first question.
-    const firstH = (sec.items && sec.items[0]) ? measureCell(doc, sec.items[0], sec.columns === 2 ? (W - 16) / 2 : W, ctx) : 0;
+    // Keep the banner with its explanation and worked example (or, with no
+    // example, its first question), so a heading never sits alone.
+    const firstH = !sec.example && sec.items && sec.items[0] ? measureCell(doc, sec.items[0], sec.columns === 2 ? (W - 16) / 2 : W, ctx) : 0;
     y = fits(doc, y, bannerH + 10 + introH + exampleH + firstH);
     doc.save().roundedRect(x, y, W, bannerH, 8).fill(colour).restore();
     doc.save().font("Sans-Bold").fontSize(S.heading).fillColor("#FFFFFF").text(String(sec.title), x + 14, y + 8, { width: W - 28 }).restore();

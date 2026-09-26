@@ -1899,7 +1899,9 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     const sayH = byBand(sz, 0.5, 0.46, 0.42);
     const hasPicto = Boolean(cfg.pictogram && picto);
     const hasImage = Boolean(cfg.image);
-    const hasGraphic = hasPicto || hasImage;
+    // A visual spec (e.g. an angle diagram) is the honest picture for a maths word.
+    const hasVisual = Boolean(cfg.visual && visual);
+    const hasGraphic = hasPicto || hasImage || hasVisual;
     if (!hasGraphic) {
       console.log(`ADVISORY keyWordSlide "${word}" has no pictogram or image - megaprompt 29 wants one meaningful graphic per word card. Pass { pictogram: "<name>" } (see listPictograms()) or { image: path }.`);
     }
@@ -1914,7 +1916,10 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
       const gTop = CONTENT_TOP + 0.15 + wordH + 0.05;
       const gBottom = CONTENT_TOP + panelH - sayH - 0.3;
       const gH = Math.max(0.8, gBottom - gTop);
-      if (hasImage && visual) {
+      if (hasVisual) {
+        s.addShape("roundRect", { x: 0.75, y: gTop, w: panelW - 0.5, h: gH, rectRadius: 0.1, fill: { color: C.WHITE } });
+        visual.drawVisual(s, cfg.visual, { x: 0.85, y: gTop + 0.08, w: panelW - 0.7, h: gH - 0.16 });
+      } else if (hasImage && visual) {
         visual.drawVisual(s, { type: "image", path: cfg.image, frame: true }, {
           x: 0.75, y: gTop, w: panelW - 0.5, h: gH,
         });

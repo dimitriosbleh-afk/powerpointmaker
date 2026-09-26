@@ -12,7 +12,8 @@
  * right, from one vertex. `arcs` mark the angle between two ray directions
  * (anticlockwise from `from` to `to`) with an optional label; `right: true`
  * draws a square marker. `rotate` turns the whole figure. `protractor`
- * overlays a protractor on the first ray, with an outer and an inner scale.
+ * overlays a protractor on the first ray (or along `protractorAt`), with an
+ * outer and an inner scale.
  * An angle is the same size at any scale, so a printed diagram measures
  * correctly with a real protractor.
  */
@@ -51,7 +52,9 @@ function angleSvg(spec, colours) {
 
   // Protractor under the figure, baseline on the first ray.
   if (spec.protractor) {
-    const base = rays[0];
+    // The protractor's flat edge lies along `protractorAt` (default the first ray),
+    // curved side anticlockwise from it. A left-pointing arm is read on the outer scale.
+    const base = spec.protractorAt != null ? Number(spec.protractorAt) + rot : rays[0];
     const R = 92;
     const semi = [];
     for (let d = 0; d <= 180; d += 3) semi.push(pt(base + d, R));
@@ -83,8 +86,13 @@ function angleSvg(spec, colours) {
   arcs.forEach((a, i) => {
     let sweep = a.to - a.from;
     while (sweep <= 0) sweep += 360;
-    const r = a.r || (spec.protractor ? 16 : 20 + (i % 2) * 9);
+    // Reflex arcs sit a little wider so the long way round is unmistakable.
+    // Adjacent arcs never overlap, so one radius reads cleanest; reflex arcs sit wider.
+    const r = a.r || (spec.protractor ? 16 : (sweep > 180 ? 26 : 22));
     const isRight = a.right === true;
+    // Arcs count towards the figure's bounds, or a reflex arc is cropped.
+    for (let t = 0; t <= sweep; t += 10) grow(pt(a.from + t, r + 3));
+    grow(pt(a.from + sweep, r + 3));
     if (isRight) {
       const s = 11;
       const p1 = pt(a.from, s);
@@ -99,13 +107,20 @@ function angleSvg(spec, colours) {
       els.push(`<path d="M${f2(s.x)},${f2(s.y)} A${r},${r} 0 ${large} 0 ${f2(e.x)},${f2(e.y)}" fill="none" stroke="${accent}" stroke-width="1.8"/>`);
     }
     if (a.label != null && a.label !== "") {
+      // Labels sit well clear of the vertex (further for narrow angles) and
+      // large enough to read when the figure spans a full turn.
       const mid = a.from + sweep / 2;
-      const lr = (isRight ? 16 : r) + (sweep < 35 ? 17 : 12);
+      const lr = Math.max((isRight ? 16 : r) + 20, sweep < 40 ? 58 : 46);
       const p = pt(mid, lr);
-      els.push(`<text x="${f2(p.x)}" y="${f2(p.y)}" font-size="11" font-weight="bold" fill="${ink}" text-anchor="middle" dominant-baseline="central">${esc(a.label)}</text>`);
-      grow({ x: p.x - 16, y: p.y - 8 }); grow({ x: p.x + 16, y: p.y + 8 });
+      // Trebuchet sets the degree sign wide of its number; pull it in.
+      const label = esc(a.label).replace(/°/g, '<tspan dx="-3">°</tspan>');
+      els.push(`<text x="${f2(p.x)}" y="${f2(p.y)}" font-size="15" font-weight="bold" fill="${ink}" text-anchor="middle" dominant-baseline="central">${label}</text>`);
+      grow({ x: p.x - 22, y: p.y - 10 }); grow({ x: p.x + 22, y: p.y + 10 });
     }
   });
+
+  // A lone arm is a drawing task: reserve the half-turn above it to draw in.
+  if (rays.length === 1) for (let d = 0; d <= 180; d += 15) grow(pt(rays[0] + d, arm));
 
   // Arms and vertex on top.
   rays.forEach((d) => {

@@ -207,7 +207,9 @@ async function buildLesson(authored, opts) {
       case "fluency":
         // A visual (e.g. a column sum for algorithm practice) replaces the numeral prompts.
         s = slide.visual
-          ? T.heroVisualSlide(pres, "Stage 1  |  Fluency", slide.title, slide.visual, notes, footer, { label: slide.label, badgeColor: T.C.ACCENT })
+          ? T.heroVisualSlide(pres, "Stage 1  |  Fluency", slide.title, slide.visual, notes, footer, {
+            label: slide.label, badgeColor: T.C.ACCENT, reserveBottom: slide.reveal ? byBand(T.S, 1.15, 1.05, 0.9) : 0,
+          })
           : T.fluencySlide(pres, slide.title, toList(slide.prompts), notes, footer);
         break;
 
@@ -233,7 +235,7 @@ async function buildLesson(authored, opts) {
       case "keyWord":
         s = T.keyWordSlide(pres, {
           word: slide.word, meaning: slide.meaning, example: slide.example,
-          pictogram: slide.pictogram, image: slide.image, routine: slide.routine,
+          pictogram: slide.pictogram, image: slide.image, visual: slide.visual, routine: slide.routine,
         }, notes, footer);
         break;
 
@@ -245,7 +247,9 @@ async function buildLesson(authored, opts) {
         break;
 
       case "workedExample":
-        s = T.workedExSlide(pres, slide.stage, slide.stageLabel, slide.title, toList(slide.steps), notes, footer, slide.visual || undefined);
+        s = T.workedExSlide(pres, slide.stage, slide.stageLabel, slide.title, toList(slide.steps), notes, footer, slide.visual || undefined, {
+          reserveBottom: slide.reveal ? byBand(T.S, 1.15, 1.05, 0.9) : 0,
+        });
         break;
 
       case "choice": {
