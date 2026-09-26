@@ -125,7 +125,16 @@ function testEvidenceRules() {
   sExit.questions = [sci.slides.find((s) => s.kind === "cfu").question];
   assert(errorsOf(sci).some((e) => /asks the same question as/.test(e)), "an exit ticket repeating a check question is an error");
 
-  ok("checks need mapped distractors; exit tickets must be a new item with individual evidence");
+  const noPlan = JSON.parse(JSON.stringify(lit));
+  delete noPlan.lesson.plan;
+  assert(errorsOf(noPlan).some((e) => /lesson\.plan: required/.test(e)), "a lesson without a plan is an error");
+  const thinPlan = JSON.parse(JSON.stringify(lit));
+  thinPlan.lesson.plan.decisionPoints = ["the exit ticket"];
+  delete thinPlan.lesson.plan.criticalFeature;
+  assert(errorsOf(thinPlan).some((e) => /decisionPoints: 2 to 4/.test(e)), "one decision point is not enough");
+  assert(errorsOf(thinPlan).some((e) => /criticalFeature/.test(e)), "the critical feature is required");
+
+  ok("checks need mapped distractors; exit tickets must be a new item with individual evidence; every lesson carries its plan");
 }
 
 /** Practice rounds expand to one slide per item with notes that pass the Glance gate. */
@@ -208,6 +217,10 @@ function testTaughtLog() {
   const noTerm = at(3, 3, ["teacher", "teacher", "teacher"]);
   delete noTerm.lesson.term;
   assert(validateLessonSpec(noTerm).errors.some((e) => /lesson\.term/.test(e)), "a lesson needs its term");
+
+  const { positionOf } = require("../themes/lesson/taughtLog");
+  assert(positionOf({ year: 2026, term: 4, week: 3, session: 12 }).order < positionOf({ year: 2026, term: 4, week: 4, session: 1 }).order,
+    "a unit that numbers sessions past 9 still sorts by week first");
 
   assert(removeEntry("foundation", "numeracy", "2026-T2-W5-S1", dir), "an entry can be removed");
   assert.strictEqual(readLog("foundation", "numeracy", dir).length, 1, "removal persists");

@@ -309,7 +309,7 @@ function validateReviewSources(spec, slides, errors, taughtLog) {
   const reviews = slides.map((s, i) => ({ s, i })).filter(({ s }) => s && s.kind === "dailyReview");
   if (!reviews.length) return;
   const L = spec.lesson || {};
-  const keyRe = /^\d{4}-T[1-4]-W\d{1,2}-S\d$/;
+  const keyRe = /^\d{4}-T[1-4]-W\d{1,2}-S\d{1,2}$/;
   const special = [TEACHER_SOURCE, BEFORE_LOG_SOURCE];
   reviews.forEach(({ s, i }) => {
     if (s.from == null) return; // reported as a required field
@@ -373,6 +373,26 @@ function validatePracticeVolume(spec, errors) {
   }
 }
 
+/**
+ * The lesson plan the teacher reads before teaching, printed in the Teacher
+ * Resources notes (megaprompt 69, 72, 76, 79, 80, 81).
+ */
+function validatePlan(plan, errors) {
+  const w = "lesson.plan";
+  if (!plan || typeof plan !== "object" || Array.isArray(plan)) {
+    errors.push(`${w}: required { curriculum, shape, criticalFeature, decisionPoints } - the teacher's preparation, printed in the Teacher Resources notes (megaprompt 84).`);
+    return;
+  }
+  const allowed = ["curriculum", "shape", "criticalFeature", "decisionPoints", "anchor", "catchUp"];
+  Object.keys(plan).forEach((k) => { if (!allowed.includes(k)) errors.push(`${w}.${k}: unknown field. Allowed: ${allowed.join(", ")}`); });
+  if (!isNonEmptyString(plan.curriculum)) errors.push(`${w}.curriculum: learning area, strand and year in plain words, plus the content being taught, e.g. "Mathematics 2.0, Number, Foundation: partitioning 10". Use a code only if the request supplied it (megaprompt 69).`);
+  if (!isNonEmptyString(plan.shape)) errors.push(`${w}.shape: the lesson body shape and why, in one line, e.g. "example-first, because making 10 is new" (megaprompt 72).`);
+  if (!isNonEmptyString(plan.criticalFeature)) errors.push(`${w}.criticalFeature: the one thing students must notice, e.g. "count the empty boxes, not the counters" (megaprompt 81).`);
+  const dp = Array.isArray(plan.decisionPoints) ? plan.decisionPoints : [];
+  if (dp.length < 2 || dp.length > 4 || !dp.every(isNonEmptyString)) errors.push(`${w}.decisionPoints: 2 to 4 short strings naming where the lesson slows to read whole-class evidence, e.g. "the hinge before the You Do" (megaprompt 76).`);
+  ["anchor", "catchUp"].forEach((k) => { if (plan[k] != null && !isNonEmptyString(plan[k])) errors.push(`${w}.${k}: a short line, or omit it.`); });
+}
+
 function validateLessonSpec(spec, opts) {
   const vopts = opts || {};
   const errors = [];
@@ -391,6 +411,7 @@ function validateLessonSpec(spec, opts) {
   if (L.year != null && (!Number.isInteger(L.year) || L.year < 2020)) errors.push("lesson.year: a four-digit year, or omit it for the current year.");
   if (L.minutes != null && (!Number.isInteger(L.minutes) || L.minutes < 20 || L.minutes > 120)) errors.push("lesson.minutes: session length, 20 to 120 (default 60).");
   if (L.titleVisual) validateVisual(L.titleVisual, "lesson.titleVisual", errors);
+  validatePlan(L.plan, errors);
 
   // Banned characters anywhere: the theme sanitises slide text, but PDFs are
   // not sanitised and notes must be authored clean.

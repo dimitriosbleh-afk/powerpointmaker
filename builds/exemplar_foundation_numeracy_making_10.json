@@ -11,6 +11,16 @@
     "footer": "Making 10 | Friends of 10 | Foundation Numeracy",
     "outputFolder": "Exemplar_Foundation_Numeracy_Making_10",
     "fileName": "Making 10 - Foundation Numeracy.pptx",
+    "plan": {
+      "curriculum": "Mathematics 2.0, Number, Foundation: partitioning and combining collections up to 10 (pairs that make 10)",
+      "shape": "example-first: making 10 is new, so two modelled frames come before any guided try",
+      "criticalFeature": "count the empty boxes, not the counters",
+      "decisionPoints": [
+        "the choice check after the I Do",
+        "the board check before the worksheet",
+        "the exit ticket on fingers"
+      ]
+    },
     "titleVisual": {
       "type": "tensFrame",
       "filled": 10
@@ -710,7 +720,28 @@
       "kind": "closing",
       "reflectionPrompt": "Turn and tell your partner: how do we find how many more make 10?",
       "selfAssessment": "Thumbs up, sideways or down",
-      "notes": "Read the three I can lines together. Thumbs on cue, then the turn and tell. Listen for count the empty boxes."
+      "notes": {
+        "answer": "open - listen for count the empty boxes",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can find how many more make 10?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          [
+            "RECORD each thumb down beside the exit ticket.",
+            "A thumb up with a wrong exit answer matters most."
+          ],
+          [
+            "ASK: Tell your partner how we find how many more make 10.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: count the empty boxes"
+          ]
+        ],
+        "prep": "Self-assessment against the criteria, read beside the exit evidence. Tomorrow's small group comes from both. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
     }
   ]
 }

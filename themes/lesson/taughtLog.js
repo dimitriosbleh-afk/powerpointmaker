@@ -39,7 +39,8 @@ function positionOf(L) {
   return {
     year, term: L.term, week: L.week, session: L.session || 1,
     weekIndex: weekIndex(year, L.term, L.week),
-    order: weekIndex(year, L.term, L.week) * 10 + (L.session || 1),
+    // Sessions may number past 9 when a unit counts them across weeks.
+    order: weekIndex(year, L.term, L.week) * 100 + (L.session || 1),
     key: `${year}-T${L.term}-W${L.week}-S${L.session || 1}`,
   };
 }

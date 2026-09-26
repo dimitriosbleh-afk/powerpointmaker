@@ -11,6 +11,16 @@
     "footer": "The Water Cycle | Year 5/6 Science",
     "outputFolder": "Exemplar_Year56_Science_Water_Cycle",
     "fileName": "The Water Cycle - Year 56 Science.pptx",
+    "plan": {
+      "curriculum": "Science 2.0, Earth and space sciences: the water cycle, taught here as the school's Year 5/6 unit (check the level against the school scope and sequence)",
+      "shape": "example-first with a faded diagram: the loop is new, so the I Do follows one drop before the names are removed",
+      "criticalFeature": "the same water travels the whole loop; warming lifts it as vapour, cooling turns it back into drops",
+      "decisionPoints": [
+        "the choice check (condensation)",
+        "the practice round of everyday cases",
+        "the hinge: cycle or straight line"
+      ]
+    },
     "titleVisual": {
       "type": "pictograms",
       "items": [
@@ -660,7 +670,28 @@
       "kind": "closing",
       "reflectionPrompt": "Tell your partner the four stages in order, from memory, and where the loop starts again.",
       "selfAssessment": "Traffic light: green, orange or red on your whiteboard",
-      "notes": "Read the three I can lines together. Traffic light on cue, then the turn and tell. Listen for the return to evaporation."
+      "notes": {
+        "answer": "open - listen for collection leading back to evaporation",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: Traffic light: how well can you explain the whole loop?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: green, orange or red"
+          ],
+          [
+            "RECORD each red beside the exit board.",
+            "A green with no loop in the exit answer matters most."
+          ],
+          [
+            "ASK: Tell your partner the four stages in order, and where the loop starts again.",
+            "30 sec. Turn and tell, partner A first.",
+            "EXPECT: evaporation, condensation, precipitation, collection, then evaporation"
+          ]
+        ],
+        "prep": "Self-assessment against the criteria, read beside the exit evidence. Tomorrow's grouping comes from both. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
     }
   ]
 }

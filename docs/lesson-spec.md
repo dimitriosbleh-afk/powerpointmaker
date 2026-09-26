@@ -51,6 +51,7 @@ its student-view QA, for slides, worksheet visuals and cut-out `cards`.
 | `week` | yes | 1-based; picks the palette variant. Every session of a unit uses the same week |
 | `year` | | Four-digit year; defaults to the current year |
 | `minutes` | | Session length, default 60. Sets the response floor (one per three minutes) |
+| `plan` | yes | `{ curriculum, shape, criticalFeature, decisionPoints (2-4), anchor?, catchUp? }`: printed in the Teacher Resources notes under BEFORE THE LESSON (megaprompt 84) |
 | `variant` | alt | 0-5, overrides week |
 | `session` | default 1 | Session number; names the resources folder and the `Session N` prefix |
 | `title` | yes | Deck title |
@@ -237,8 +238,11 @@ cannot also have a `prompt` bar. For a genuinely different answer layout use
 
 ### notes
 
-Title, resources and closing slides take a one-line string. Every teaching
-slide takes a Glance object (megaprompt 45-47):
+Title and resources slides take a one-line string (the resources line is
+followed automatically by the lesson plan). The closing takes a Glance
+object: criteria read together, a self-assessment ASK, a RECORD beat that
+reads it beside the exit evidence, and the reflection (megaprompt 52).
+Every teaching slide takes a Glance object (megaprompt 45-47):
 
 ```json
 "notes": {

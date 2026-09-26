@@ -6,12 +6,12 @@
 How to read this document:
 
 - PART A (sections A1 to A9, directly below) is the build order. Follow it top to bottom for every lesson. It names the reference section for each step.
-- PART B (sections 0 to 83) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
+- PART B (sections 0 to 84) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
 - Section 0a is the non-negotiable output gate. A lesson that fails any item there is not finished, whatever else it does well.
 
 Version history (newest first):
 
-- v12.9 (26 September 2026): practice volume and taught memory. Every lesson meets a floor of planned whole-class responses and independent items, reached through practice rounds (82). Each machine keeps a taught log, and Daily Review names the earlier lesson it retrieves, spaced, choosing the focus itself when the request does not name one (83).
+- v12.9 (26 September 2026): practice volume, taught memory and teacher preparation. Every lesson carries a plan the teacher reads before teaching (84). Every lesson meets a floor of planned whole-class responses and independent items, reached through practice rounds (82). Each machine keeps a taught log, and Daily Review names the earlier lesson it retrieves, spaced, choosing the focus itself when the request does not name one (83).
 - v12.8 (26 September 2026): evidence you can act on. Every wrong option on a check names its misconception (37). The exit ticket is a new item, collected one student at a time (53). Lessons start from a designed example set (81). The validator enforces the first two. Tidied: one DOCX rule (41), Daily Review and Fluency answers are click reveals throughout, section 16 states the sizes the theme ships, section 59 points to Part A.
 - v12.7 (6 September 2026): lessons are authored as specs, not scripts. A lesson spec (`builds/<name>.json`, schema in `docs/lesson-spec.md`) carries content and intent; the pipeline makes every layout decision, validates the spec field by field, composes the notes, builds the deck and PDFs and runs the gates. Three golden exemplars ship in `builds/`. Part A replaces the scattered workflow with one build order. Legacy build scripts moved to `_archive/lessons/` and are not exemplars.
 - v12.6 (6 September 2026): visual redesign of the shared theme after an audit of rendered decks. Retuned palettes, soft tint panels, one subject motif, hero sizing, a declarative visual layer (section 15j), 200+ built-in pictograms (section 18), four pattern builders. The default output now looks like the lesson the rules describe.
@@ -28,7 +28,7 @@ Follow these nine steps in order for every lesson. Each step says what to produc
 
 ## A1. Read the request and lock the sources
 
-Read the request as a teacher wrote it (section 7). Extract: subject, year level, week or session number, topic, session length, supplied texts or decks, resources wanted, the teacher's own words for any routine or notation (5b). If a supplied text exists, its quotes are exact and locked (5, 5a). Never invent a quote, page, video or URL; use a placeholder that says so (5). Ask at most one question, and only at a genuine fork (7). Apply the Scope Gate (8): one lesson-sized target.
+Read the request as a teacher wrote it (section 7), and turn it into a lesson-sized target the way section 84 describes, whether it arrived as a curriculum line, a vague topic or a detailed plan. Extract: subject, year level, week or session number, topic, session length, supplied texts or decks, resources wanted, the teacher's own words for any routine or notation (5b). If a supplied text exists, its quotes are exact and locked (5, 5a). Never invent a quote, page, video or URL; use a placeholder that says so (5). Ask at most one question, and only at a genuine fork (7). Apply the Scope Gate (8): one lesson-sized target.
 
 ## A2. Choose the lesson shape and write the slide list as kinds
 
@@ -43,7 +43,7 @@ The opening order is fixed in every subject: title, resources, (numeracy: dailyR
 
 ## A3. Write the intention, the criteria, the anchor and the decision points
 
-One Learning Intention sentence and exactly three "I can" criteria: reachable, core, stretch, with tier labels never on a student surface (14, 0a item 18). Name the unit anchor: one representation, one phrase, one method held across every session (79). Design the example set: the critical feature, the near-misses, the range, and a new item at every release (81). Name the two or three decision-grade CFU points and what the teacher does at each on secure, mixed and weak evidence (76, 38); give every wrong option on a check the misconception it catches (37). Decide the exit evidence and which criterion it assesses, as a new item no slide has already modelled or revealed (53). For numeracy, choose the Daily Review from the taught log unless the request names a focus (83).
+Write `lesson.plan` first (84): curriculum in plain words, lesson shape, critical feature, decision points. One Learning Intention sentence and exactly three "I can" criteria: reachable, core, stretch, with tier labels never on a student surface (14, 0a item 18). Name the unit anchor: one representation, one phrase, one method held across every session (79). Design the example set: the critical feature, the near-misses, the range, and a new item at every release (81). Name the two or three decision-grade CFU points and what the teacher does at each on secure, mixed and weak evidence (76, 38); give every wrong option on a check the misconception it catches (37). Decide the exit evidence and which criterion it assesses, as a new item no slide has already modelled or revealed (53). For numeracy, choose the Daily Review from the taught log unless the request names a focus (83).
 
 ## A4. Give every slide its visual and its builder
 
@@ -3344,7 +3344,7 @@ Self-assessment options:
 - turn and tell
 - exit reflection
 
-Teacher notes must tell the teacher how to use the data.
+Teacher notes must tell the teacher how to use the data. In a spec the closing takes Glance notes: read the criteria together, one self-assessment ASK on a cue script (thumbs, traffic light on boards), a RECORD beat that reads it beside the exit evidence (a confident self-rating with a wrong exit answer matters most), and the reflection turn and tell.
 
 Do not make the closing slide a generic "What did we learn?"
 
@@ -5106,7 +5106,7 @@ Coupling rules:
 
 Students generalise from the examples they meet, not from the explanation. Two lessons with the same slides and notes teach different things if their examples differ. Design the lesson's examples as one set, before writing any slide, so every example does a job.
 
-1. Name the critical feature: the one thing students must notice to succeed. "The clue is what the body does, not the place or the object." "Count the empty boxes, not the counters." Write it in the I Do prep line. If you cannot name it in one short sentence, the scope is too broad (8).
+1. Name the critical feature: the one thing students must notice to succeed. "The clue is what the body does, not the place or the object." "Count the empty boxes, not the counters." Write it in `lesson.plan.criticalFeature`, where the teacher reads it before the lesson, and in the I Do prep line. If you cannot name it in one short sentence, the scope is too broad (8).
 
 2. Show the boundary. At least one near-miss appears in the I Do or the first check: an example that differs from a correct one only in the critical feature. "Across the park" beside "he grinned"; a frame with 3 counters beside a frame with 3 empty boxes. Take the near-misses from the lesson's TRAPs, and reuse them as the wrong options on the check (37).
 
@@ -5164,6 +5164,30 @@ Daily Review uses it (22, 77):
 When generating a sequence (a week, a unit, a term), write and build one lesson at a time in teaching order: author the spec, run `build_and_check.js` on it, then move to the next. Each lesson joins the log as it passes, so the next lesson's Daily Review can retrieve it. Writing every spec first and building at the end leaves the log empty while the review is chosen. Merge at the end with `build_unit.py --skip-build`.
 
 The log records what was built, which is not always what was taught. When a lesson is skipped, the teacher removes it (`node scripts/taught_log.js --remove <yearLevel> <subject> <key>`) or says so in the request, and review is chosen accordingly.
+
+# 84. FROM REQUEST TO LESSON
+
+Requests arrive in three forms: a Victorian Curriculum 2.0 content description (often pasted, sometimes with elaborations), a vague topic ("fractions, Year 4"), or a detailed plan in the teacher's own words. The job is the same for all three: keep everything the teacher decided, fill everything they did not from the curriculum and this prompt, and deliver a lesson that meets every quality bar here. A thin request never produces a thin lesson.
+
+1. Separate what is fixed from what is open. Anything the teacher specified is a decision already made: the representation, the sequence, the text, the wording, the routine, the resource (5, 5a, 5b, 7). Keep it exactly. Where it collides with a rule here (no launch, a question-list slide, a worksheet every lesson), keep the teacher's intent, add or reshape only what the rule needs, and say so in one handover line.
+
+2. Unpack a content description before choosing the slice. A content description is usually several lessons. Write down, for yourself: the knowledge or skill; the representation students will use; the prerequisites that must already be secure (check the taught log, 83); the common misconceptions; and what the achievement standard asks at this level. Then choose one lesson-sized slice (8). Elaborations are options, not a checklist: use the one that fits the slice.
+
+3. Fill a vague request from evidence, not habit. Pitch it at the achievement standard for the year level, make it the next step after what the taught log shows was taught, use the representation the school already uses for that content, and state the assumptions in the plan and the handover.
+
+4. Keep curriculum language for teachers. Students see a plain-words LI and three "I can" criteria (14). `lesson.plan.curriculum` records the learning area, strand, level and content in plain words; a code appears only when the request supplied it (69).
+
+5. Write the plan. Every spec carries `lesson.plan`, and the build prints it in the Teacher Resources notes under BEFORE THE LESSON: the one screen a teacher reads before teaching. It is the teacher-facing overview that sections 69, 72, 76, 79 and 80 refer to for a single lesson.
+   - `curriculum`: learning area, strand and level in plain words, plus the content ("English 2.0, Literacy, Year 2: inferring a character's feelings from clues in the text").
+   - `shape`: the body shape and why, in one line (72).
+   - `criticalFeature`: the one thing students must notice (81).
+   - `decisionPoints`: the two to four places the lesson slows to read whole-class evidence (76).
+   - `anchor`: the unit anchor, for any lesson in a sequence (79).
+   - `catchUp`: the fastest re-entry for a student who missed the last session (80).
+
+6. Plan a term or unit before writing its first lesson. List the sessions in order in the unit manifest (68a), each with a one-line `focus` (what it teaches, its critical feature, what its Daily Review revisits), and a unit-level `anchor`. Check the prerequisite chain runs forward, place consolidation and assessment sessions deliberately, vary lesson shapes on purpose (72), and spread review across the term (77). Then build one lesson at a time in that order (83), so each lesson's review can draw on the ones before it.
+
+7. The bar does not move with the request. Whatever came in, the lesson leaves with its plan, an example set (81), diagnostic checks (37), practice that meets the floors (82), a new-item exit ticket (53), spaced review from the taught log (83), and Glance notes a teacher can teach from cold (45 to 47).
 
 # ===== END OF MEGA-PROMPT. SHIFT CLICK HERE. =====
 

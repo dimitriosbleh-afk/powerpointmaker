@@ -10,7 +10,17 @@
     "meta": "Year 2 Literacy | Reading",
     "footer": "Feeling Clues | Year 2 Literacy | Reading",
     "outputFolder": "Exemplar_Year2_Literacy_Feeling_Clues",
-    "fileName": "Feeling Clues - Year 2 Literacy.pptx"
+    "fileName": "Feeling Clues - Year 2 Literacy.pptx",
+    "plan": {
+      "curriculum": "English 2.0, Literacy, Year 2: inferring a character's feelings from clues in the text",
+      "shape": "short cycles: model, check, then two practice rounds on new stories, because the move is quick and needs volume",
+      "criticalFeature": "the clue is what the body does or says, not the place or the thing",
+      "decisionPoints": [
+        "the choice check after the I Do (Leo)",
+        "the hinge before the You Do (Ali)",
+        "the exit board (Ruby)"
+      ]
+    }
   },
   "materials": {
     "studentTools": [
@@ -456,7 +466,28 @@
       "kind": "closing",
       "reflectionPrompt": "Tell your partner one clue word from today and the feeling it showed.",
       "selfAssessment": "Thumbs up, sideways or down",
-      "notes": "Read the three I can lines together. Thumbs on cue, then the turn and tell. Listen for a body clue plus a feeling."
+      "notes": {
+        "answer": "open - listen for a body clue plus a feeling",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can find a clue in the words?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          [
+            "RECORD each thumb down beside the exit board.",
+            "A thumb up with no clue on the board matters most."
+          ],
+          [
+            "ASK: Tell your partner one clue word from today and the feeling it showed.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: knees wobbled, worried"
+          ]
+        ],
+        "prep": "Self-assessment against the criteria, read beside the exit board. Tomorrow's small group comes from both. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
     }
   ]
 }

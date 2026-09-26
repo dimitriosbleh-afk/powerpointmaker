@@ -58,6 +58,25 @@ function glanceInputFor(slide) {
   return Object.assign({}, n, { tag: undefined, prep: prep.concat(`WRONG ANSWERS: ${reads.join(". ")}.`) });
 }
 
+/**
+ * Teacher Resources notes: the materials line, then the lesson's plan, the
+ * one screen a teacher reads before teaching (megaprompt 69, 72, 76, 79, 80).
+ * Plain labelled lines, no divider, so it reads as preparation, not a live zone.
+ */
+function resourcesNotes(authored, plan) {
+  const lines = [String(authored || "").trim()].filter(Boolean);
+  if (plan) {
+    lines.push("", "BEFORE THE LESSON");
+    lines.push(`Curriculum: ${plan.curriculum}`);
+    lines.push(`Lesson shape: ${plan.shape}`);
+    lines.push(`Critical feature: ${plan.criticalFeature}`);
+    lines.push(`Decision points: ${plan.decisionPoints.join("; ")}`);
+    if (plan.anchor) lines.push(`Unit anchor: ${plan.anchor}`);
+    if (plan.catchUp) lines.push(`CATCH-UP: ${plan.catchUp}`);
+  }
+  return lines.join("\n");
+}
+
 function notesFor(slide) {
   const n = slide.notes;
   if (typeof n === "string") return n;
@@ -170,7 +189,7 @@ async function buildLesson(authored, opts) {
           videos: m.videos,
           urls: m.urls,
           ochre: m.ochre,
-        }, T, footer, notes);
+        }, T, footer, resourcesNotes(slide.notes, L.plan));
         break;
       }
 
