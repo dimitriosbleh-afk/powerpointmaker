@@ -134,7 +134,7 @@ function createVisualSpec(C, FONT_H, FONT_B, el, S, deps) {
     const s = spec && typeof spec === "object" ? spec : {};
     const type = String(s.type || "");
 
-    switch (type) {
+    switch (DIAGRAM_TYPES.includes(type) ? "__diagram__" : type) {
       case "tensFrame":
       case "fiveFrame": {
         const rows = type === "tensFrame" ? 2 : 1;
@@ -337,8 +337,7 @@ function createVisualSpec(C, FONT_H, FONT_B, el, S, deps) {
         });
         return box;
       }
-      case "angle":
-      case "columnSum": {
+      case "__diagram__": {
         // Drawn once as SVG (themes/core/diagrams.js) so slides and paper match.
         const { dataUri, aspect } = diagramPng(s, { ink: C.CHARCOAL, accent: C.PRIMARY }, 1600);
         const maxH = s.maxH ? Math.min(f.h, s.maxH) : f.h;

@@ -17,28 +17,24 @@
 const ROUTINES = {
   boards: {
     full: "Cue: Write it... Chin it... Show me.",
-    short: "Cue: boards up on cue.",
     where: "on your board",
     scan: "SCAN every board, back row first.",
     protection: "boards are scanned",
   },
   fingers: {
     full: "Cue: voices off. Fingers at your chest... show me.",
-    short: "Cue: fingers on cue, voices off.",
     where: "on your fingers",
     scan: "SCAN every hand, back row first.",
     protection: "fingers are scanned",
   },
   point: {
     full: "Cue: voices off. Point... now. Hold your point.",
-    short: "Cue: point on cue, voices off.",
     where: "by pointing",
     scan: "SCAN every point, back row first.",
     protection: "pointing is scanned",
   },
   choral: {
     full: "Cue: Everyone, together, on three.",
-    short: "Cue: together, on three.",
     where: "out loud together",
     scan: "LISTEN for every voice; re-cue if it is not everyone.",
     protection: "the choral answer",
@@ -47,6 +43,14 @@ const ROUTINES = {
 
 function isYouDo(slide) {
   return /you do/i.test(String(slide.badge || ""));
+}
+
+/** The spoken reveal: say the answer, then the tick-or-fix routine. */
+function revealSay(item, last) {
+  if (item.say) return [`SAY: ${item.say}`];
+  const answer = String(item.answer == null ? "" : item.answer).trim();
+  const lead = answer && answer.split(/\s+/).length <= 6 ? `It's ${answer.replace(/[.]$/, "")}. ` : "";
+  return [`SAY: ${lead}Tick it or fix it.`].concat(last ? [] : ["Then get ready for the next one."]);
 }
 
 function itemNotes(round, item, i) {
@@ -67,19 +71,21 @@ function itemNotes(round, item, i) {
   }
   beats.push([
     `ASK: ${round.ask || round.title}`,
-    `${think} sec. ${i === 0 ? routine.full : routine.short}`,
+    // The full cue every time: the teacher says it aloud, and a shorthand
+    // ("boards up on cue") reads as a stage direction, not speech.
+    `${think} sec. ${routine.full}`,
     `EXPECT: ${item.expect || item.answer}`,
   ]);
   beats.push([
     routine.scan,
     i === 0 && round.followUp
-      ? `80%+ -> ${round.followUp}, then reveal.`
+      ? `80%+ -> ${round.followUp}${/[.?!]$/.test(round.followUp.trim()) ? " Then reveal." : ", then reveal."}`
       : `80%+ -> reveal, ${last ? "then move on." : "then the next one."}`,
     `Less -> ${item.pivot || round.pivot}, re-ask.`,
   ]);
   beats.push([
     `REVEAL after ${routine.protection}.`,
-    `SAY: ${item.say || (last ? "Tick it or fix it." : "Tick it or fix it, then get ready for the next one.")}`,
+    ...revealSay(item, last),
   ]);
 
   const out = {

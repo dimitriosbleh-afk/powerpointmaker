@@ -304,7 +304,7 @@ function getTeacherNotesSourceIssues(notes, opts) {
     // Glance Format (v12.3): live zone above a "---" divider, prep zone below.
     // Budgets are RENDERED budgets: logical units (ANSWER, beats, TRAP,
     // STRETCH/HELP, CARE) stay capped at 8, but the wall-of-text failure mode
-    // is prevented by word caps - a live zone over ~120 words or any physical
+    // is prevented by word caps - a live zone over ~150 words or any physical
     // line over ~16 words wraps into an unglanceable block on an iPad.
     const allLines = sanitized ? sanitized.split("\n") : [];
     const dividerIndex = allLines.findIndex((line) => line.trim() === "---");
@@ -314,8 +314,8 @@ function getTeacherNotesSourceIssues(notes, opts) {
       .filter((line) => line.trim() && line.trim() !== "---");
 
     const maxLiveZoneUnits = o.maxLiveZoneUnits || o.maxLiveZoneLines || 8;
-    const maxLiveZonePhysicalLines = o.maxLiveZonePhysicalLines || 18;
-    const maxLiveZoneWords = o.maxLiveZoneWords || 120;
+    const maxLiveZonePhysicalLines = o.maxLiveZonePhysicalLines || 22;
+    const maxLiveZoneWords = o.maxLiveZoneWords || 150;
     const maxLineWords = o.maxLineWords || 16;
     const maxPrepZoneLines = o.maxPrepZoneLines || 3;
 

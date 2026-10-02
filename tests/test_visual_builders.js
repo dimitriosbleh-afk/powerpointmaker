@@ -104,6 +104,14 @@ const SPEC_SAMPLES = {
   table: { type: "table", rows: [["Animal", "Legs"], ["Dog", "4"], ["Bird", "2"]] },
   angle: { type: "angle", rays: [0, 130, 180], arcs: [{ from: 0, to: 130, label: "130°" }, { from: 130, to: 180, label: "x" }], protractor: true },
   columnSum: { type: "columnSum", numbers: [34567, 12345], op: "+" },
+  grid: { type: "grid", x: [-5, 5], y: [-5, 5], points: [{ x: 3, y: -2, label: "A" }], polygon: [[1, 1], [4, 1], [4, 3]] },
+  chart: { type: "chart", style: "bar", categories: ["Footy", "Netball", "Soccer"], values: [8, 5, 11], title: "Favourite sport", yLabel: "Students" },
+  spinner: { type: "spinner", sectors: [{ label: "red", weight: 2 }, { label: "blue" }, { label: "green" }] },
+  shape: { type: "shape", points: [[0, 0], [10, 0], [10, 4], [4, 4], [4, 9], [0, 9]], labels: ["10 cm", "4 cm", "6 cm", "5 cm", "4 cm", "9 cm"] },
+  shortDivision: { type: "shortDivision", dividend: 4728, divisor: 6 },
+  barModel: { type: "barModel", parts: 4, shaded: 1, total: "$80", labels: ["?", "", "", ""] },
+  hundredGrid: { type: "hundredGrid", shaded: 35, label: "35%" },
+  tally: { type: "tally", headers: ["Sport", "Tally", "Frequency"], rows: [["Footy", 8], ["Netball", 5], ["Soccer", 12]] },
   custom: { type: "custom", draw: (slide, f) => { slide.addText("x", { x: f.x, y: f.y, w: 1, h: 0.4 }); return { x: f.x, y: f.y, w: 1, h: 0.4 }; } },
 };
 

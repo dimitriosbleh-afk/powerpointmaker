@@ -6,7 +6,7 @@
  *   node scripts/check_spec_notes.js builds/exemplar_foundation_numeracy_making_10.json
  *
  * For every slide with Glance-object notes it reports the live-zone word
- * count (budget 120), any physical line over 16 words (which the build would
+ * count (budget 150), any physical line over 16 words (which the build would
  * auto-wrap with an ADVISORY), and any composer error (missing routine cue,
  * missing think time, too many units). Fix everything it lists and the build
  * will produce zero note advisories.
@@ -53,7 +53,7 @@ let problems = 0;
   const longLines = flat.filter((l) => l.trim().split(/\s+/).filter(Boolean).length > 16);
 
   const issues = [];
-  if (words > 120) issues.push(`live zone ${words} words (budget 120): cut a beat or move detail to prep`);
+  if (words > 150) issues.push(`live zone ${words} words (budget 150): cut a beat or move detail to prep`);
   longLines.forEach((l) => issues.push(`line over 16 words, split it into an array of short lines: "${l.slice(0, 60)}..."`));
   const origLog = console.log;
   console.log = () => {};   // the composer's wrap advisories duplicate the long-line report above

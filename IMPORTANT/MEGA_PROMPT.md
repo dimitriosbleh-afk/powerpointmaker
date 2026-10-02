@@ -1,16 +1,17 @@
 © 2026 James Hooke. Confidential. Internal use only. Not for redistribution.
 
-# Explicit Teaching Lesson Builder Mega-Prompt v12.9
+# Explicit Teaching Lesson Builder Mega-Prompt v12.11
 ## Foundation to Year 6 | Australian Primary Schools | Visual-First | Editable | Source-Faithful | Cognitive Load Aware | Classroom-Ready | School Feedback Aligned
 
 How to read this document:
 
 - PART A (sections A1 to A9, directly below) is the build order. Follow it top to bottom for every lesson. It names the reference section for each step.
-- PART B (sections 0 to 85) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
+- PART B (sections 0 to 86) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
 - Section 0a is the non-negotiable output gate. A lesson that fails any item there is not finished, whatever else it does well.
 
 Version history (newest first):
 
+- v12.11 (27 September 2026): worksheets staff want to print (86): a layout engine that fits one or two pages with real working space, six question kinds and a variety rule, work units instead of question counts; natural teacher-note voice checks with a before and after (46), full cue scripts every time, and a 150-word live-zone budget.
 - v12.10 (27 September 2026): the Years 5-6 maths planning team's rules (85), sectioned kid-friendly worksheets, angle and protractor diagrams, and no "lesson" in teacher notes.
 - v12.9 (26 September 2026): practice volume, taught memory and teacher preparation. Every lesson carries a plan the teacher reads before teaching (84). Every lesson meets a floor of planned whole-class responses and independent items, reached through practice rounds (82). Each machine keeps a taught log, and Daily Review names the earlier lesson it retrieves, spaced, choosing the focus itself when the request does not name one (83).
 - v12.8 (26 September 2026): evidence you can act on. Every wrong option on a check names its misconception (37). The exit ticket is a new item, collected one student at a time (53). Lessons start from a designed example set (81). The validator enforces the first two. Tidied: one DOCX rule (41), Daily Review and Fluency answers are click reveals throughout, section 16 states the sizes the theme ships, section 59 points to Part A.
@@ -58,11 +59,11 @@ For any ordering or sequencing question, author a mixed starting arrangement sep
 
 ## A6. Write the notes for every slide
 
-Glance Format on every teaching slide (45, 46, 46a, 47): ANSWER first when the slide asks anything, 2-5 numbered beats with CAPS anchors, ASK with think time in seconds and one named routine on the school cue script (75a), SCAN as three lines with a proceed and a pivot, TRAP with the fix, STRETCH and HELP on I Do, We Do and You Do, then the divider and a one-line prep zone with the tag. Live zone at most 120 words; no line over 16 words. One plain line for title, resources and closing slides. In this codebase run `node scripts/check_spec_notes.js builds/<name>.json` and fix until it prints "All notes within budget".
+Glance Format on every teaching slide (45, 46, 46a, 47): ANSWER first when the slide asks anything, 2-5 numbered beats with CAPS anchors, ASK with think time in seconds and one named routine on the school cue script (75a), SCAN as three lines with a proceed and a pivot, TRAP with the fix, STRETCH and HELP on I Do, We Do and You Do, then the divider and a one-line prep zone with the tag. Live zone at most 150 words; no line over 16 words. One plain line for title, resources and closing slides. In this codebase run `node scripts/check_spec_notes.js builds/<name>.json` and fix until it prints "All notes within budget".
 
 ## A7. Decide resources and materials
 
-Default is zero or one printed resource (40, 0a item 7). A worksheet uses the same representation as the slides, drawn by the paper twins, spacious for the band, with an answer key (42, 61, 68i, 68m). An enabling scaffold changes the form of the task (39, 73). List every manipulative, tool and board setup on the Teacher Resources slide (44).
+Default is zero or one printed resource (40, 0a item 7). A worksheet uses the same representation as the slides, drawn by the paper twins, spacious for the band, with an answer key (42, 61, 68i, 68m). It fits one or two pages and uses varied question kinds, never a list of the same question (86). An enabling scaffold changes the form of the task (39, 73). List every manipulative, tool and board setup on the Teacher Resources slide (44).
 
 Apply section 19a to worksheets, sequencing strips and cut-out cards too. The printed starting arrangement must be mixed before cutting; do not leave shuffling to the teacher or student.
 
@@ -2758,6 +2759,8 @@ Challenge for students working ahead should come from deeper thinking, explainin
 
 Do not make a worksheet just because a lesson exists.
 
+Page count, layout and question design: section 86.
+
 If a worksheet is created:
 
 - it must be used in the teacher notes
@@ -2995,9 +2998,9 @@ Two kinds of budget, enforced differently:
 Budgets:
 
 - Live zone: 8 logical units maximum. ANSWER, then 2 to 5 beats, then TRAP, then STRETCH/HELP.
-- Live zone: about 120 words maximum across all units. Over budget means the slide is doing too much - cut rationale (it belongs in the prep zone), cut a beat, or split the slide.
+- Live zone: about 150 words maximum across all units. Over budget means the slide is doing too much - cut rationale (it belongs in the prep zone), cut a beat, or split the slide.
 - Every physical line: about 16 words maximum. A longer thought breaks into indented continuation lines, one idea each.
-- Live zone: 18 physical non-blank lines maximum.
+- Live zone: 22 physical non-blank lines maximum.
 - SAY text is one short speaking turn, usually 12 to 24 words and one or two connected sentences. Split it across two physical lines when over about 12 words. Action segments stay up to about 10 words, verb first.
 - ASK unit: question line, then think time + cue script line, then EXPECT line.
 - SCAN is three short lines: where to look / proceed / pivot. Never one compound sentence - a nested if-else in one line cannot be parsed with thirty boards in the air.
@@ -3023,7 +3026,71 @@ Natural does not mean longer. Prefer one small connector plus a complete thought
 - Natural: "Okay, watch this one. The denominators already match, so I only need to add the numerators."
 - Overfilled: "All right, boys and girls, everyone looking this way, now we're going to have a little look at this next one."
 
-What gets cut to fit the budget, in order: rationale prose (moves to the prep zone), instructions the slide already shows, second examples, repeated greetings and empty management padding, then the wording of cue lines (SCAN targets, pivots and EXPECT lines cut to their key words). Only then touch SAY speech. Natural speech fits in 120 words when the teacher-facing lines are terse; a clipped SAY line to save three words is the wrong trade, because the teacher reads SAY aloud and only glances at the rest. Preserve brief connective words that make the script sound natural aloud.
+Naturalness checks. Teachers reported that notes passing every budget still "feel unnatural": they read like a glossary or a set of stage directions, not like a teacher talking. Apply these checks to every SAY, ASK, TRAP, STRETCH, HELP and prep line:
+
+1. SAY is complete sentences with a subject and a verb, the way a teacher talks to students of that age. "Right is our quarter turn, 90." is a note to self; "A right angle is a quarter turn, so it's exactly 90 degrees." is speech.
+2. Write units the way they are spoken: "90 degrees", never a bare "90" where the class should hear "90 degrees". (Exponents keep the `10^6` notation.)
+3. Beats connect. After the first SAY, each SAY picks up from the one before with a connector that carries meaning ("So...", "Now...", "That means...", "And if..."). A run of parallel definitions ("Acute is... Obtuse is... Reflex is...") is a glossary; join them by the idea that links them ("The other names compare an angle with those two.").
+4. SAY gives the reason, not only the label. A model that names things without saying why is a list; one "so" or "because" per beat turns it into teaching.
+5. ASK is the question exactly as the teacher would say it aloud, as one full sentence: "If an angle measures 120 degrees, which name would you give it?", never the telegraphic "An angle is 120. Which name?"
+6. The cue is the full school cue script every time (section 75a), because it is spoken. Never "boards up on cue".
+7. TRAP, STRETCH, HELP and the prep line are plain English a colleague would understand without reading this prompt. No private shorthand: not "student renames", "names hang off the anchor", "critical feature" or "form change". STRETCH is the question the teacher poses to the student, worded for the student; HELP says what the teacher hands over or does.
+8. Read the whole live zone aloud in a normal speaking voice. If any line makes you add words to say it, those words belong on the line.
+
+Before and after, Years 5 to 6 I Do, "Name an angle by its size" (a teacher's own report of notes that felt unnatural):
+
+Before:
+
+ANSWER: obtuse
+
+1. POINT to right and straight.
+   SAY: Right is our quarter turn, 90. Straight is our half turn, 180.
+
+2. POINT to acute, then obtuse.
+   SAY: Acute is smaller than a quarter turn.
+   Obtuse sits between a quarter turn and a half turn.
+
+3. POINT to reflex.
+   SAY: Reflex is bigger than a half turn, but not a full turn.
+
+4. ASK: An angle is 120. Which name?
+   10 sec. Cue: boards up on cue.
+   EXPECT: obtuse
+
+TRAP: calling any angle over 90 obtuse, even reflex ones.
+   Fix: check against 180 as well, student renames.
+---
+Names hang off the anchor: 90 and 180 are the boundaries. SC1.
+
+After:
+
+ANSWER: obtuse
+
+1. POINT to right, then straight.
+   SAY: Let's start with the two angles we know from our turns.
+   A right angle is a quarter turn, so it's exactly 90 degrees.
+   A straight angle is a half turn, so it's exactly 180 degrees.
+
+2. POINT to acute, then obtuse.
+   SAY: Every other name compares an angle with those two.
+   Acute is smaller than a right angle.
+   Obtuse is bigger than a right angle, but not yet a straight line.
+
+3. POINT to reflex.
+   SAY: And past a straight line, but short of a full turn, it's reflex.
+
+4. ASK: If an angle measures 120 degrees, which name would you give it?
+   10 sec. Cue: Write it... Chin it... Show me.
+   EXPECT: obtuse
+
+TRAP: calling every angle over 90 obtuse, even reflex ones.
+   Fix: ask "Is it past 180 too?" and they rewrite the name.
+---
+Every name is decided by comparing with the two landmarks, 90 and 180 degrees. SC1.
+
+The after version is about 40 words longer and sits inside the 150-word budget (145 words). It has the same beats, the same answer and the same trap; only the voice changed. When natural speech pushes a slide over budget, cut the teacher-facing lines first (a STRETCH or HELP on a pure naming slide is the first to go), never the speech.
+
+What gets cut to fit the budget, in order: rationale prose (moves to the prep zone), instructions the slide already shows, second examples, repeated greetings and empty management padding, then the wording of cue lines (SCAN targets, pivots and EXPECT lines cut to their key words). Only then touch SAY speech. Natural speech fits in 150 words when the teacher-facing lines are terse; a clipped SAY line to save three words is the wrong trade, because the teacher reads SAY aloud and only glances at the rest. Preserve brief connective words that make the script sound natural aloud.
 
 What never gets cut: the ANSWER line, think time and routine on an ASK, the SCAN decision, the TRAP redo, reveal protection.
 
@@ -3057,7 +3124,7 @@ Teacher notes are read by the teacher, but their quality is measured in what stu
 
 9. The teacher visibly values the response before moving. SCAN first, then give precise feedback or announce the evidence-based move: "Most of us kept the intervals equal, so we can fade the strip" or "I can see one shared error, so we will rebuild it another way." This makes CFU feedback on the teaching, not a compliance ritual.
 
-10. Response routines run on the school-standard cue scripts in section 75a. The first routine beat of a deck carries the full cue ("Write it... Chin it... Show me."); later beats may shorten it ("boards up on cue"). Non-verbal routines state "voices off" on first use. When call-outs replace a signal, the reset is one calm scripted line, then the response is re-collected before the evidence is read.
+10. Response routines run on the school-standard cue scripts in section 75a. Every routine beat carries the full spoken cue ("Write it... Chin it... Show me."), never a shorthand such as "boards up on cue": the teacher reads the cue aloud, and a shorthand is a stage direction they have to translate mid-lesson. Non-verbal routines state "voices off" every time. When call-outs replace a signal, the reset is one calm scripted line, then the response is re-collected before the evidence is read.
 
 11. On We Do, CFU and hinge slides, one ASK carries a targeted follow-up after the all-student response, drawn from the repertoire in section 75: probe, bounce, stretch, clarify or chain. Fold it into the ASK beat or the SCAN proceed clause, for example "80%+ -> cold call one strong board and one shaky board: Convince us. Then move on." Brisk routine slides carry no follow-up.
 
@@ -4948,9 +5015,9 @@ School-standard cue scripts. Use these exact cue phrases in SAY and ASK beats so
 
 Rules:
 
-- The first use of a routine in a deck carries the full cue script in the beat. Later beats may shorten to "boards up on cue" or "thumbs, voices off".
+- Every use of a routine carries the full cue script in the beat, exactly as written above. Never shorten it to "boards up on cue" or "thumbs, voices off": the teacher says the cue aloud, so it must be the words the class hears.
 - Do not invent new cue wording per lesson. Identical cues across every deck build routine muscle memory across the school; a student who changes classrooms already knows the routine.
-- The first response routine of each lesson names the voices rule explicitly. After that, the shorthand carries it.
+- Non-verbal cues include "voices off" every time.
 - The reset move is scripted, calm and short: "That was voices. This routine is thumbs only. Think again... show me." Reset once, immediately, without negotiation, then re-collect before interpreting the evidence.
 - Routine icons and slide chips may show the routine, but the cue script lives in the notes beats where the teacher's eyes are mid-lesson.
 - Tight is not slow. A tight routine is what makes a brisk pace possible, because the teacher never waits for stragglers or re-explains how to respond.
@@ -5207,11 +5274,43 @@ Worksheets, every session (`resources`, `kind: "worksheet"`, `role`):
 - A main sheet (`role: "main"`), an Extension (`role: "extension"`, label exactly "Extension") and a supported sheet (`role: "supported"`), with answer keys for the main sheet and the Extension.
 - The Extension builds on the session's own content: no new concept that would need more teaching. Explain it in child-friendly words with worked examples. It is the "early finisher option" the Your turn steps point to.
 - The supported sheet is for students working below level: the same skill with more guidance, more worked examples, partly completed steps, hints (`hint` on a question) and bigger visuals.
-- Sheets are sectioned (`sections`). Each section has a child-friendly title, a worked example with its steps shown, and its questions. Sections run from easier to harder. Colour groups them automatically. Use `columns: 2` for short questions so there is room without extra pages.
-- The main sheet is long enough that fast finishers never run out: at least 16 questions over at least 3 sections.
+- Sheets are sectioned (`sections`). Each section has a child-friendly title, a worked example with its steps shown, and its questions. Sections run from easier to harder. Colour groups them automatically. Layout, page count and question design follow section 86.
+- The main sheet is long enough that fast finishers never run out: at least 12 work units (section 86) over at least 3 sections.
 - Vary the question types: explicit practice of the skill (graded easy to hard), worded problems, problem solving in real-world contexts (Australian sport and children's interests work well), and reasoning (explain, prove, spot the mistake).
 - Tag each section's `proficiency` (understanding, fluency, problemSolving, reasoning). It is never printed. A main sheet covers at least two, includes a problemSolving section, and a week covers all four.
 - Put the representation on the paper: a protractor-ready angle diagram for angles (`{ "type": "angle" }`, drawn true to angle so a real protractor measures it), a fraction wall for fractions, a hundred grid for percentages, a conversion chart for measurement, blank clocks for time. A visual the pipeline cannot draw yet is extended in the shared layer (CLAUDE.md), not approximated in text.
+
+# 86. WORKSHEETS STAFF WANT TO PRINT
+
+Staff feedback on generated worksheets was blunt: they look bad, the questions are bland, and there is nowhere to work. This section is the standard for every worksheet in every subject. The layout rules are automatic; the question rules are yours.
+
+Layout (automatic, `themes/lesson/worksheetLayout.js`):
+- One page, or two pages that print as one sheet double-sided. Page 1 stands alone, so a teacher can print just the front. Three pages fails the build; set `maxPages` only with a reason a teacher would accept.
+- Every question sits on its own card with a coloured number, and every spare millimetre of the page becomes squared working paper inside the cards (ruled lines for written answers). Never size working space by hand, and never leave a question without room to work unless it is a one-word answer (`working: "none"`).
+- The answer key uses the same layout with answers in colour, so a teacher can mark against it at a glance.
+
+Fit the page by combining, not by cutting practice:
+- Put several short items on one card as parts a, b, c (`parts`).
+- Use a table for a run of the same calculation (`kind: "table"`): six rows of practice in the space of two questions.
+- Use `columns: 3` for very short items.
+- If it still does not fit, the sheet is trying to do two jobs. Move the extra job to the Extension.
+
+Question design. A worksheet is a sequence of thinking, not a list of the same question with different numbers:
+1. Start with a question almost everyone can do, then climb. The first card should be won by the student who is least sure.
+2. Use at least three question kinds on a main sheet (the build checks): practice the skill, then change the thinking.
+   - `question` with a diagram or parts: the skill itself.
+   - `table`: fluency at volume, or a pattern to complete ("fill the gaps").
+   - `sort`: sort cards into groups ("acute, obtuse, reflex"; "true, false"). Classification forces the definition.
+   - `choice`: odd one out, which is bigger, which is correct, with "Because..." (`reason: true`). A choice with a reason is a hinge question on paper.
+   - `mistake`: someone's working with one error, "find it and fix it". Name a child ("Mia measured this angle as 130 degrees"), and make the error the misconception the session targeted.
+   - `open`: make your own ("draw two angles that add to 180 degrees", "write a question whose answer is 45"). Low floor, high ceiling: everyone can start, strong students go further.
+3. Every sheet has at least one reasoning question: always, sometimes or never true; convince me; how do you know; what is the same and what is different.
+4. Contexts carry the mathematics, not decoration. A sports context is good when the numbers come from the sport (a skateboard ramp's angle, a netball court's markings, an AFL kick's angle to goal), not when a ball is pasted beside "35 + 47". One well-chosen context used for two or three questions beats a new story in every question.
+5. No question needs reading help to start. Prompts are one or two short sentences in the student's language; the diagram carries the rest.
+6. Numbers are chosen, not random. Each number is there to test something: an angle close to 90 so estimation matters, a sum with a carry into a zero column, a pair that lures the common error.
+7. The Extension deepens the same idea (a harder context, a reverse question, a proof, an open task) with its own worked example. The supported sheet changes the form: bigger diagrams, the first step done, a `hint` on each card, fewer and larger questions, the same skill.
+
+Before you finish a sheet, read it as a student: Is the first question easy to start? Is there a moment where I have to think differently? Is there somewhere to work? Would I be proud to hand it in?
 
 # ===== END OF MEGA-PROMPT. SHIFT CLICK HERE. =====
 

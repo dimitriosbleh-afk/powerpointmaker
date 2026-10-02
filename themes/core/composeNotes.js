@@ -160,8 +160,8 @@ const GLANCE_VALIDATION_OPTS = {
   maxLines: 34,
   maxChars: 1800,
   maxLiveZoneUnits: 8,
-  maxLiveZonePhysicalLines: 18,
-  maxLiveZoneWords: 120,
+  maxLiveZonePhysicalLines: 22,
+  maxLiveZoneWords: 150,
   maxLineWords: 16,
   maxPrepZoneLines: 3,
 };
@@ -237,7 +237,7 @@ function wrapGlanceLine(line) {
  * Compose Glance Format notes (megaprompt v12.3 sections 45-47).
  *
  * Live zone: ANSWER, numbered beats, TRAP, STRETCH/HELP, CARE - max 8 logical
- * units, one blank line between units, and RENDERED budgets: 120 words for
+ * units, one blank line between units, and RENDERED budgets: 150 words for
  * the whole live zone, 16 words per physical line. A beat may be an array of
  * short lines; the first line is numbered and the rest render indented, so
  * speech (SAY), think time, cue script and EXPECT each sit on their own line.

@@ -147,7 +147,7 @@ function testAiryGlanceFormat() {
     "an over-long beat should produce indented continuation lines:\n" + wrapped
   );
 
-  // A live zone over 120 words must throw even when every line is short.
+  // A live zone over 150 words must throw even when every line is short.
   assert.throws(
     () => composeGlanceNotes({
       answer: "six",
@@ -158,7 +158,7 @@ function testAiryGlanceFormat() {
       ]),
       prep: "Over-budget fixture.",
     }),
-    /exceeds 120 words/
+    /exceeds 150 words/
   );
 }
 

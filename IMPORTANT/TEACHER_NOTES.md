@@ -13,7 +13,7 @@ The v3.3 revision brings this prompt into line with the Explicit Teaching Lesson
 
 - The live zone is 8 logical UNITS, not 8 lines, and a unit may span several short physical lines.
 - One blank line BETWEEN units, none inside a unit. The white space is what makes the current beat findable. This reverses the v3.2 instruction to keep the live zone free of blank lines.
-- About 120 words per live zone, no physical line over about 16 words, 18 physical lines maximum.
+- About 150 words per live zone, no physical line over about 16 words, 22 physical lines maximum.
 - One idea per physical line. Speech, think time plus cue, and EXPECT each sit on their own line, so a SAY line is never fused with a stage direction.
 - SCAN is three short lines, not one compound sentence.
 - Reveal slides carry their OWN short post-reveal notes and never a copy of the base slide's (section 28).
@@ -209,9 +209,9 @@ Zone rules:
 Rendered budgets. These measure what the teacher's eye actually meets in the presenter pane, not logical lines in a source file. A line that wraps three times on an iPad is three lines, so the word caps exist to stop lines wrapping at all:
 
 - 8 logical units maximum.
-- About 120 words maximum across the whole live zone. Over budget means the slide is doing too much: cut rationale to the prep zone, cut a beat, or say in the prep zone what to prioritise. Then cut cue wording (SCAN targets, pivots, EXPECT lines) to key words. Only then shorten SAY speech, and never into clipped fragments.
+- About 150 words maximum across the whole live zone. Over budget means the slide is doing too much: cut rationale to the prep zone, cut a beat, or say in the prep zone what to prioritise. Then cut cue wording (SCAN targets, pivots, EXPECT lines) to key words. Only then shorten SAY speech, and never into clipped fragments.
 - About 16 words maximum on any physical line. A longer thought breaks into indented continuation lines, one idea each.
-- 18 physical non-blank lines maximum in the live zone.
+- 22 physical non-blank lines maximum in the live zone.
 - Prep zone: 3 lines maximum, and no per-line word cap, because it is read seated before the lesson.
 - Foundation to Year 2 slides usually need only 2 to 3 beats. More slides, fewer beats each.
 
@@ -301,7 +301,7 @@ Teacher notes are read by the teacher, but their quality is measured in what stu
 
 7. STRETCH and HELP change the task, not the count, and STRETCH is startable without teacher help, because early finishers cannot queue for an explanation.
 
-8. Response routines run on the school-standard cue scripts, identical in every deck: mini-whiteboards "Write it... Chin it... Show me." (hold until "Boards down"); thumbs and any non-verbal signal "Thumbs only, voices off. Show me... now."; choral "Everyone, together, on three... one, two, three."; fingers "Fingers at your chest... show me."; turn and tell "Partner A first. 20 seconds. Go." with a return signal. The first use of a routine in a deck carries the full cue script; later beats may shorten to "boards up on cue". Non-verbal means silent: when call-outs replace the signal, the reset is one calm scripted line ("That was voices. This routine is thumbs only. Think again... show me."), then the response is re-collected before the evidence is read.
+8. Response routines run on the school-standard cue scripts, identical in every deck: mini-whiteboards "Write it... Chin it... Show me." (hold until "Boards down"); thumbs and any non-verbal signal "Thumbs only, voices off. Show me... now."; choral "Everyone, together, on three... one, two, three."; fingers "Fingers at your chest... show me."; turn and tell "Partner A first. 20 seconds. Go." with a return signal. Every use of a routine carries the full cue script, because the teacher says it aloud; never shorten it to "boards up on cue". Non-verbal means silent: when call-outs replace the signal, the reset is one calm scripted line ("That was voices. This routine is thumbs only. Think again... show me."), then the response is re-collected before the evidence is read.
 
 9. Hands up is for asking a question, never the sampling method. Do not write "take some answers", "ask for volunteers" or "choose someone with their hand up". On We Do, CFU and hinge slides, follow the all-student response with ONE targeted cold-call follow-up that raises the think ratio: probe ("How do you know?"), bounce ("Do you agree with that board? Add one thing"), stretch (a correct answer earns a harder question on the same idea) or clarify ("Say it again using the word denominator"). Fold it into the ASK beat or the SCAN proceed clause. Match the follow-up to the student; keep brisk routine slides follow-up-free.
 
@@ -1286,7 +1286,7 @@ Formatting preservation:
 Coverage:
 
 - Every teaching slide has full Glance Format notes: live zone, divider, prep zone.
-- The live zone is 8 logical units or fewer, about 120 words or fewer, and 18 physical non-blank lines or fewer. The prep zone is 3 lines or fewer.
+- The live zone is 8 logical units or fewer, about 150 words or fewer, and 22 physical non-blank lines or fewer. The prep zone is 3 lines or fewer.
 - No physical line runs past about 16 words. Longer thoughts are broken into indented continuation lines.
 - One blank line sits between units and none inside a unit. Continuation lines are indented three spaces.
 - No SAY line carries a stage direction, think time or scan target fused into the speech.

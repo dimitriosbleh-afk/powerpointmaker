@@ -20,14 +20,16 @@ const path = require("path");
 const P = require("../pdf_helpers");
 const { renderPictogramPng } = require("../core/pictograms");
 const { byBand } = require("../core/gradeBand");
-const { diagramPng, diagramSvg } = require("../core/diagrams");
+const { diagramPng, diagramSvg, DIAGRAM_TYPES, PAPER } = require("../core/diagrams");
+const { renderWorksheet } = require("./worksheetLayout");
 
 // Paper width of a diagram in points: angles big enough to measure with a real protractor.
 function diagramWidth(visual, sz, maxW) {
   // Angles up to 190pt: acute arms stay about 5 cm, long enough for a real protractor.
-  const base = visual.type === "angle" ? 190 : byBand(sz, 150, 150, 140);
+  const pref = PAPER[visual.type] || { w: 150, h: 120 };
+  const base = visual.type === "columnSum" ? byBand(sz, 150, 150, 140) : pref.w;
   // Tall figures (steep or reflex angles) are capped by height as well, so rows stay compact.
-  const maxH = visual.maxH || (visual.type === "angle" ? 140 : 400);
+  const maxH = visual.maxH || (visual.type === "angle" ? 140 : (visual.type === "columnSum" ? 400 : pref.h * 1.3));
   return Math.min(maxW, visual.size || base, maxH * diagramSvg(visual).aspect);
 }
 
@@ -92,6 +94,12 @@ function drawVisualPdf(doc, visual, x, y, opts) {
   const border = P.hex(C.CHARCOAL);
   const w = o.width || P.PAGE.CONTENT_W;
   const v = visual;
+  if (DIAGRAM_TYPES.includes(v.type)) {
+    const dw = diagramWidth(v, sz, w);
+    const { buffer, aspect } = diagramPng(v, { ink: C.CHARCOAL, accent: C.PRIMARY }, 1200);
+    doc.image(buffer, x, y, { width: dw });
+    return y + dw / aspect + 8;
+  }
   switch (v.type) {
     case "tensFrame": return drawFrame(doc, x, y, 5, 2, S.cell, v.filled || 0, fill, border) + 8;
     case "fiveFrame": return drawFrame(doc, x, y, 5, 1, S.cell, v.filled || 0, fill, border) + 8;
@@ -192,7 +200,6 @@ function drawVisualPdf(doc, visual, x, y, opts) {
       return y + dot + 24;
     }
     case "ppwMat": return P.addPpwMatPdf(doc, y, { x, width: Math.min(300, w), whole: v.whole, partA: v.partA, partB: v.partB }) + 6;
-    case "hundredGrid": return P.addHundredGridPdf(doc, y, v.shaded || 0, { x, label: v.label }) + 6;
     case "pictogram":
     case "pictograms": {
       const items = v.type === "pictogram" ? [{ name: v.name, label: v.label }] : (v.items || []).map((it) => (typeof it === "string" ? { name: it, label: it } : it));
@@ -233,13 +240,6 @@ function drawVisualPdf(doc, visual, x, y, opts) {
       });
       return y + chipH + 8;
     }
-    case "angle":
-    case "columnSum": {
-      const dw = diagramWidth(v, sz, w);
-      const { buffer, aspect } = diagramPng(v, { ink: C.CHARCOAL, accent: C.PRIMARY }, 1200);
-      doc.image(buffer, x, y, { width: dw });
-      return y + dw / aspect + 8;
-    }
     case "table": {
       const rows = v.rows || [];
       const cols = Math.max(...rows.map((r) => r.length), 1);
@@ -266,6 +266,7 @@ function drawVisualPdf(doc, visual, x, y, opts) {
 
 function estimateVisualHeight(visual, sz, maxW) {
   const S = bandSizes(sz);
+  if (DIAGRAM_TYPES.includes(visual.type)) return diagramWidth(visual, sz, maxW || P.PAGE.CONTENT_W) / diagramSvg(visual).aspect + 8;
   switch (visual.type) {
     case "tensFrame": return S.cell * 2 + 8;
     case "fiveFrame": return S.cell + 8;
@@ -277,14 +278,11 @@ function estimateVisualHeight(visual, sz, maxW) {
     case "array": return (visual.rows || 1) * S.cell * 0.8 + 8;
     case "groupedCounters": return S.cell * 0.55 + 24;
     case "ppwMat": return 130;
-    case "hundredGrid": return 160;
     case "pictogram": return S.cell * 2 + 6;
     case "pictograms": return S.cell * 1.6 + 6;
     case "text": return (visual.fontSize || byBand(sz, 40, 34, 28)) * 1.3;
     case "chips": return S.cell * 0.9 + 8;
     case "table": return ((visual.rows || []).length) * S.body * 2 + 8;
-    case "angle":
-    case "columnSum": return diagramWidth(visual, sz, maxW || P.PAGE.CONTENT_W) / diagramSvg(visual).aspect + 8;
     default: return 60;
   }
 }
@@ -374,7 +372,7 @@ function drawCell(doc, num, item, x, y, w, colour, ctx) {
 
 // A worked example's diagram is there to be read, not measured, so it sits smaller.
 function exampleVisual(ex) {
-  return ex.visual && ex.visual.size == null && (ex.visual.type === "angle" || ex.visual.type === "columnSum")
+  return ex.visual && ex.visual.size == null && DIAGRAM_TYPES.includes(ex.visual.type)
     ? Object.assign({}, ex.visual, { size: 180 }) : ex.visual;
 }
 
@@ -574,6 +572,15 @@ function drawCards(doc, resource, y, ctx) {
 async function writeResourcePdf(resource, ctx, filePath, opts) {
   const { C, sz, lessonInfo, footer } = ctx;
   const o = opts || {};
+  // Worksheets use the page-fitting layout engine (megaprompt 86).
+  if (resource.kind === "worksheet") {
+    const doc = P.createPdf({ title: o.title || resource.title || resource.label });
+    doc.page.margins = { top: 0, bottom: 0, left: 0, right: 0 };
+    const { pages } = renderWorksheet(doc, resource, { C, sz, isKey: Boolean(o.isKey), lessonInfo, footer, tip: resource.tip });
+    console.log(`Worksheet: ${path.basename(filePath)} fits ${pages} page${pages === 1 ? "" : "s"}`);
+    await P.writePdf(doc, filePath);
+    return;
+  }
   const doc = P.createPdf({ title: o.title || resource.title || resource.label });
   const primary = P.hex(C.PRIMARY);
   let y = P.addPdfHeader(doc, o.title || resource.title || resource.label, {

@@ -221,8 +221,32 @@ Anywhere a `visual` is accepted:
 { "type": "angle", "rays": [0, 65], "protractor": true }
 { "type": "angle", "rays": [0, 130, 180], "arcs": [{ "from": 0, "to": 130, "label": "130°" }, { "from": 130, "to": 180, "label": "x" }] }
 { "type": "angle", "rays": [0, 90], "arcs": [{ "from": 0, "to": 90, "right": true }] }
-{ "type": "columnSum", "numbers": [34567, 12345], "op": "+" }
+{ "type": "columnSum", "numbers": [34567, 12345], "op": "+" }      op "-" or "×" too
+{ "type": "shortDivision", "dividend": 4728, "divisor": 6 }        "quotient": "788", "remainder": 1 shows the answer
+{ "type": "grid", "x": [0, 10], "y": [0, 10], "points": [{ "x": 3, "y": 4, "label": "A" }] }
+{ "type": "grid", "x": [-5, 5], "y": [-5, 5], "polygon": [[1,1],[4,1],[4,3]], "arrows": [{ "from": [1,1], "to": [-3,-2] }] }
+{ "type": "grid", "reference": true, "cols": 6, "rows": 5, "cells": [{ "col": "C", "row": 2, "label": "tree" }] }
+{ "type": "chart", "style": "bar", "categories": ["Footy", "Netball"], "values": [8, 5], "title": "...", "xLabel": "...", "yLabel": "..." }
+{ "type": "chart", "categories": ["Red", "Blue"], "series": [{ "name": "Expected", "values": [10, 10] }, { "name": "Observed", "values": [7, 13] }] }
+{ "type": "spinner", "sectors": [{ "label": "red", "weight": 2 }, { "label": "blue" }], "pointer": 40 }
+{ "type": "shape", "points": [[0,0],[8,0],[8,5],[0,5]], "labels": ["8 m", "5 m", null, null], "centerLabel": "A = ?" }
+{ "type": "barModel", "parts": 4, "shaded": 1, "total": "$80", "labels": ["?", "", "", ""], "below": ["25%", "25%", "25%", "25%"] }
+{ "type": "hundredGrid", "shaded": 35, "label": "35%" }
+{ "type": "tally", "headers": ["Sport", "Tally", "Frequency"], "rows": [["Footy", 8], ["Netball", 5]] }   "counts": false leaves the frequency blank
 ```
+
+`grid`: coordinates sit on the lines (points, `polygon`/`polygons`, `path`,
+dashed translation `arrows`, `showCoords`); a negative range draws four
+quadrants; `reference: true` labels the spaces A, B, C and 1, 2, 3 instead.
+`chart`: `style` is `bar` (default), `line` or `dot` (a dot plot, one dot per
+count); `yStart` above 0 makes a misleading axis; `series` draws grouped bars
+with a key; `showValues` prints each bar's value. `shape`: points in units
+(x right, y up); `labels[i]` sits outside edge i; `grid: true` fills the shape
+with unit squares; `splits` are dashed cut lines; `shapes: [...]` draws several
+in one coordinate system; square corners get markers automatically.
+`spinner`: sectors run clockwise from the top, and a colour word in the label
+sets the fill. All of these are drawn once and look the same on slides and
+paper.
 
 `angle`: `rays` are directions in degrees, anticlockwise from pointing
 right, from one vertex; `arcs` mark the angle anticlockwise from `from` to
@@ -275,7 +299,7 @@ Every teaching slide takes a Glance object (megaprompt 45-47):
 
 Rules the linter and the build enforce: 2-5 beats; each string is one
 physical line of at most 16 words (use an array for a multi-line beat); live
-zone at most 120 words including the labels and numbers; every `ASK` carries
+zone at most 150 words including the labels and numbers; every `ASK` carries
 think time in seconds and one named routine (`Write it... Chin it... Show
 me.`, `Everyone, together, on three`, `turn and tell`, `fingers up`,
 `everyone points`); every `SCAN` has three lines: where to look, `80%+ ->`,
@@ -320,8 +344,8 @@ nothing. Run `check_spec_notes.js` until it prints "All notes within budget".
 Names come out session-first (`Session 1 Make 10 Worksheet.pdf`) and the
 Teacher Resources slide links them. A `worksheet` gets an answer key
 automatically (`answerKey: false` to skip). Item fields: `prompt`, `visual`,
-`answerVisual` (the filled-in state for the key), `answer`, `answerLines`,
-`answerLabel`, `box` (drawing box height), `lined`. Visuals on paper are
+`answerVisual` (the filled-in state for the key), `answer`, `answerLabel`,
+`kind` and the kind fields below. Visuals on paper are
 limited to the types with a paper twin (the validator names them).
 
 Keep to zero or one printed resource unless the lesson genuinely needs more
@@ -350,6 +374,33 @@ then its questions, numbered across the sheet:
 ```
 
 `role` is `main`, `extension` or `supported`. `proficiency` (understanding,
-fluency, problemSolving, reasoning) is internal and never printed. A
-question may carry `hint` (printed in italics under it, for supported
-sheets), `box` (a working-space height in points) and `answerLines`.
+fluency, problemSolving, reasoning) is internal and never printed. Any
+item may carry `hint` (printed in italics under its prompt, for supported
+sheets).
+
+### Page layout and question kinds (megaprompt 86)
+
+Every worksheet is laid out by `themes/lesson/worksheetLayout.js`. It fits
+the sheet on one or two pages (two = one sheet printed double-sided, page 1
+able to stand alone), balances the two pages, then gives every spare
+millimetre back as squared working space. Three pages is a build error
+unless the resource sets `maxPages` with a reason. Do not size working
+space by hand; `workMin` (points) only sets a floor for one question.
+
+`item.kind` picks the question format; each counts as work units towards
+the practice floors:
+
+| kind | fields | work units |
+|---|---|---|
+| `question` (default) | `prompt`, `visual`, `parts: [{prompt, answer, unit}]` (a/b/c on one card), `answer`, `answerLabel`, `unit`, `answerBox: false`, `lines: n` (ruled lines instead of squares), `working: "none"`, `workMin` | 1, or one per part |
+| `table` | `columns`, `rows` (`""` = blank for the student), `answers` (same shape, for the key) | one per row |
+| `sort` | `cards`, `groups`, `answer: { group: [cards] }` | one per two cards |
+| `choice` | `options`, `answer` (index or indices to circle), `reason: true` adds "Because..." lines, `explain` (key) | 1 |
+| `mistake` | `work` (the wrong working, one line per step), `answer` (the fix) | 2 |
+| `open` | `answer` (a sample for the key), `workMin` | 2 |
+
+A main sheet has at least 12 work units and at least three kinds; four
+items in a row with the same kind and the same prompt is an error (a drill,
+not a worksheet). Columns per section: `columns: 1`, `2` (default) or `3`. In a multi-column
+section a `table` or `sort` takes a full-width row of its own; `span: "column"`
+keeps one in its column, and `span: "full"` gives any item the full width.

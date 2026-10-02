@@ -16,6 +16,7 @@ const { SUPPORTED_TYPES } = require("../core/visualSpec");
 const { PICTOGRAMS } = require("../core/pictograms");
 const { ROUTINES, expandSpec } = require("./practice");
 const { TEACHER_SOURCE, BEFORE_LOG_SOURCE, positionOf } = require("./taughtLog");
+const { workUnits, KINDS: ITEM_KINDS } = require("./worksheetLayout");
 
 const BANNED_CHARS = /[–—‘’“”…]/;
 
@@ -54,8 +55,8 @@ const RESOURCE_KINDS = ["worksheet", "page", "cards"];
 const PDF_VISUAL_TYPES = [
   "tensFrame", "fiveFrame", "doubleTensFrame", "dotCard", "dotCards", "numberTrack", "numberLine",
   "fractionStrips", "array", "groupedCounters", "ppwMat", "hundredGrid", "pictogram", "pictograms",
-  "text", "table", "chips", "angle", "columnSum",
-];
+  "text", "table", "chips", ...require("../core/diagrams").DIAGRAM_TYPES,
+].filter((t, i, a) => a.indexOf(t) === i);
 
 function walkStrings(value, pathLabel, visit) {
   if (typeof value === "string") { visit(value, pathLabel); return; }
@@ -353,7 +354,7 @@ function practiceCounts(spec) {
   let independent = 0;
   // The main task counts; an Extension or a supported sheet is an alternative, not more practice.
   (spec.resources || []).forEach((r) => {
-    if (r && r.kind === "worksheet" && (r.role == null || r.role === "main")) independent += worksheetItems(r).length;
+    if (r && r.kind === "worksheet" && (r.role == null || r.role === "main")) independent += worksheetItems(r).reduce((t, it) => t + (it ? workUnits(it) : 0), 0);
   });
   (spec.slides || []).forEach((s) => {
     if (s && s.kind === "practice" && /you do/i.test(String(s.badge || ""))) independent += toArray(s.items).length;
@@ -410,7 +411,8 @@ const YOUR_TURN_STEPS = [
   "Check your answers and move onto the early finisher option, if you get there.",
 ];
 const PROFICIENCIES = ["understanding", "fluency", "problemSolving", "reasoning"];
-const MAIN_SHEET_MIN_ITEMS = 16;
+// Work units, not question count: a table row, an a/b/c part or a pair of sort cards each count.
+const MAIN_SHEET_MIN_WORK = 12;
 
 function isPlanner56(spec) {
   const L = spec.lesson || {};
@@ -461,12 +463,26 @@ function validatePlanner56(spec, slides, errors) {
   byRole("main").forEach((r) => {
     if (r.answerKey === false) errors.push(`resources (main).answerKey: the main sheet needs an answer key.`);
     const items = worksheetItems(r);
-    if (items.length < MAIN_SHEET_MIN_ITEMS) errors.push(`resources (main): ${items.length} questions; the main sheet needs at least ${MAIN_SHEET_MIN_ITEMS} so fast finishers are not left with nothing (megaprompt 85).`);
+    const work = items.reduce((t, it) => t + (it ? workUnits(it) : 0), 0);
+    if (work < MAIN_SHEET_MIN_WORK) errors.push(`resources (main): ${work} units of work; the main sheet needs at least ${MAIN_SHEET_MIN_WORK} (a question, each a/b/c part, each table row, each pair of sort cards) so fast finishers are not left with nothing (megaprompt 85, 86).`);
     const secs = toArray(r.sections);
     if (secs.length < 3) errors.push(`resources (main).sections: at least 3 sections, easiest first, each with a worked example (megaprompt 85).`);
     const profs = new Set(secs.map((sec) => sec && sec.proficiency).filter(Boolean));
     if (profs.size < 2) errors.push(`resources (main).sections[].proficiency: cover at least two proficiencies in a session, and all four across the week (megaprompt 85).`);
     if (!profs.has("problemSolving")) errors.push(`resources (main): include a problemSolving section of worded, real-world problems (megaprompt 85).`);
+  });
+  // Varied questions (megaprompt 86): several formats, and no run of the same question.
+  resources.filter((r) => r && r.kind === "worksheet" && (r.role === "main" || r.role === "extension")).forEach((r) => {
+    const items = worksheetItems(r).filter(Boolean);
+    const kinds = new Set(items.map((it) => it.kind || "question"));
+    if (r.role === "main" && kinds.size < 3) errors.push(`resources (main): ${kinds.size} question format(s). Use at least three of question, table, sort, choice, mistake, open so students meet different kinds of thinking (megaprompt 86).`);
+    let run = 1;
+    items.forEach((it, j) => {
+      if (j === 0) return;
+      const same = normaliseText(it.prompt || "") === normaliseText(items[j - 1].prompt || "") && (it.kind || "question") === (items[j - 1].kind || "question");
+      run = same ? run + 1 : 1;
+      if (run === 4) errors.push(`resources (${r.role}) question ${j + 1}: four questions in a row ask the same thing ("${it.prompt}"). Combine them into a table or a/b/c parts, or change what each one asks (megaprompt 86).`);
+    });
   });
   resources.filter((r) => r && r.kind === "worksheet" && Array.isArray(r.sections)).forEach((r) => {
     toArray(r.sections).forEach((sec, j) => {
@@ -715,7 +731,7 @@ function validateLessonSpec(spec, opts) {
         if (!sec || !isNonEmptyString(sec.title)) errors.push(`${sw}.title: a short, child-friendly heading.`);
         if (!sec || !Array.isArray(sec.items) || !sec.items.length) errors.push(`${sw}.items: at least one question.`);
         if (sec && sec.proficiency != null && !PROFICIENCIES.includes(sec.proficiency)) errors.push(`${sw}.proficiency: one of ${PROFICIENCIES.join(", ")} (internal, never printed).`);
-        if (sec && sec.columns != null && ![1, 2].includes(sec.columns)) errors.push(`${sw}.columns: 1 or 2.`);
+        if (sec && sec.columns != null && ![1, 2, 3].includes(sec.columns)) errors.push(`${sw}.columns: 1, 2 or 3 (3 only for short items).`);
         if (sec && sec.example) {
           if (!Array.isArray(sec.example.steps) || !sec.example.steps.length) errors.push(`${sw}.example.steps: show the steps.`);
           if (sec.example.visual) validateVisual(sec.example.visual, `${sw}.example.visual`, errors, { pdf: true });
@@ -727,9 +743,15 @@ function validateLessonSpec(spec, opts) {
       if (!items.length) errors.push(`${w}.items: at least one item { prompt, visual, answer, answerLines }`);
       items.forEach((it, j) => {
         if (!it || !isNonEmptyString(it.prompt)) errors.push(`${w}.items[${j}].prompt: required`);
+        const kind = it && (it.kind || "question");
+        if (it && !ITEM_KINDS.includes(kind)) errors.push(`${w} item ${j + 1}.kind: one of ${ITEM_KINDS.join(", ")}.`);
+        if (kind === "table" && (!Array.isArray(it.columns) || !Array.isArray(it.rows) || !it.rows.length)) errors.push(`${w} item ${j + 1}: a table needs columns and rows (null or "" marks a blank to fill), and answers for the key.`);
+        if (kind === "sort" && (!Array.isArray(it.groups) || !Array.isArray(it.cards) || !it.answer)) errors.push(`${w} item ${j + 1}: a sort needs groups, cards and answer { group: [cards] }.`);
+        if (kind === "choice" && (!Array.isArray(it.options) || it.answer == null)) errors.push(`${w} item ${j + 1}: a choice needs options and answer (index or list of indexes).`);
+        if (kind === "mistake" && (!Array.isArray(it.work) || !isNonEmptyString(it.answer))) errors.push(`${w} item ${j + 1}: a mistake needs the flawed work lines and the fix as answer.`);
         if (it && it.visual) validateVisual(it.visual, `${w}.items[${j}].visual`, errors, { pdf: true });
         if (it && it.answerVisual) validateVisual(it.answerVisual, `${w}.items[${j}].answerVisual`, errors, { pdf: true });
-        if (it && r.answerKey !== false && it.answer == null && !it.answerVisual) {
+        if (it && r.answerKey !== false && it.answer == null && !it.answerVisual && !it.answers && !(Array.isArray(it.parts) && it.parts.length)) {
           warnings.push(`${w}.items[${j}]: no answer given; the answer key will show this item unanswered.`);
         }
       });

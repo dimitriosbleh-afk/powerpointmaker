@@ -157,7 +157,7 @@ async function extractNotesTextPerSlide(pptxPath) {
  *  - consecutive slides must not carry identical notes (a reveal slide that
  *    byte-copies its base slide's notes leaves the teacher staring at the
  *    same wall after clicking to the answer)
- *  - Glance Format live zones must respect the rendered budgets (120 words,
+ *  - Glance Format live zones must respect the rendered budgets (150 words,
  *    16 words per physical line, 18 physical lines) so the notes stay
  *    glanceable on an iPad presenter view
  */

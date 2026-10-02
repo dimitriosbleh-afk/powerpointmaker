@@ -261,8 +261,16 @@ function testPlanner56() {
 
   const short = clone();
   short.resources.find((r) => r.role === "main").sections.forEach((sec) => { sec.items = sec.items.slice(0, 2); });
-  assert(errorsOf(short).some((e) => /at least 16/.test(e)), "the main sheet is long enough for fast finishers");
-  ok("Years 5-6 maths: three sheets, standard Your turn, LI before launch, no repeated questions, long main sheet");
+  assert(errorsOf(short).some((e) => /at least 12/.test(e)), "the main sheet is long enough for fast finishers");
+
+  const bland = clone();
+  bland.resources.find((r) => r.role === "main").sections.forEach((sec) => {
+    sec.items = sec.items.map((it) => ({ prompt: "Measure this angle.", answer: it.answer || "40" }));
+  });
+  const blandErrors = errorsOf(bland);
+  assert(blandErrors.some((e) => /question format/.test(e)), "a main sheet mixes question kinds");
+  assert(blandErrors.some((e) => /four questions in a row ask the same thing/.test(e)), "four identical questions in a row are a drill, not a worksheet");
+  ok("Years 5-6 maths: three sheets, standard Your turn, LI before launch, no repeated questions, long and varied main sheet");
 }
 
 (async () => {

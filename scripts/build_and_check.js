@@ -220,7 +220,7 @@ async function main() {
   /* ── Gate 4: teacher notes format ──────────────────────────────────────── */
   // Megaprompt v12.3 sections 45-47: reveal slides must carry their own
   // post-reveal notes (never a byte-copy of the base slide's), and Glance
-  // Format live zones must respect the rendered budgets (120 words / 16 words
+  // Format live zones must respect the rendered budgets (150 words / 16 words
   // per line / 18 physical lines) so they stay glanceable on an iPad.
 
   console.log("\n── Teacher notes format ───────────────────────────────");
