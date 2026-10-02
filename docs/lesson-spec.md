@@ -18,7 +18,7 @@ Golden exemplars (copy their shape, not their content):
 |---|---|---|
 | `builds/exemplar_foundation_numeracy_making_10.json` | Foundation numeracy | Daily Review with `from` keys, one-question-per-slide fluency, hero ten frames, diagnostic choice check, We Do practice round, You Do with worksheet and answer key |
 | `builds/exemplar_year2_literacy_feeling_clues.json` | Year 2 literacy | pictogram launch, word card, text extracts with highlights, diagnostic choice check, We Do and You Do practice rounds, no printing |
-| `builds/exemplar_year56_science_water_cycle.json` | Year 5/6 science | two word cards, cycle diagram I Do and faded We Do, table rehearsal, practice round of everyday cases, hinge CFU, extended You Do with scaffold |
+| `builds/exemplar_year56_science_water_cycle.json` | Year 5/6 science | two word cards, cycle diagram I Do and faded We Do, table rehearsal, practice round of everyday cases, hinge CFU, standard Your turn, sectioned main sheet with Extension and supported sheets (megaprompt 85 outside maths) |
 | `builds/exemplar_year56_numeracy_measuring_angles.json` | Year 5/6 numeracy | the maths planning team's rules (megaprompt 85): LI before launch, algorithm fluency with column sums, protractor diagrams, practice round, standard Your turn, sectioned main sheet with Extension and supported sheets |
 
 Validation is strict. Every problem is printed with the field path and the
@@ -74,8 +74,8 @@ Every slide has `kind`, the fields for that kind, and `notes`. Unknown
 fields are errors (they are almost always typos).
 
 Fixed opening order (validated): `title`, `resources` (an `overview` may sit
-between), then for numeracy `dailyReview`... `fluency`..., then a launch,
-then `li`, then `keyWord` cards if any, then the body, `exitTicket`,
+between), then for numeracy `dailyReview`... `fluency`..., then `li`,
+then the `launch`, then `keyWord` cards if any, then the body, `exitTicket`,
 `closing` last.
 
 | kind | Required | Optional | Builds |
@@ -177,7 +177,7 @@ optional `source` and `highlights`) or `text` (one short line), plus
 default the answer), `say` (the reveal line) and `pivot`. `routine` is
 `boards` (default), `fingers`, `point` or `choral`. The pipeline writes
 each item's ASK, SCAN and REVEAL from the school cue scripts; the round's
-`say` opens the first item, and STRETCH and HELP sit on the second.
+`say` opens the first item, and EXTENSION and HELP sit on the second.
 
 ### Taught log
 
@@ -233,6 +233,9 @@ Anywhere a `visual` is accepted:
 { "type": "barModel", "parts": 4, "shaded": 1, "total": "$80", "labels": ["?", "", "", ""], "below": ["25%", "25%", "25%", "25%"] }
 { "type": "hundredGrid", "shaded": 35, "label": "35%" }
 { "type": "tally", "headers": ["Sport", "Tally", "Frequency"], "rows": [["Footy", 8], ["Netball", 5]] }   "counts": false leaves the frequency blank
+{ "type": "fractionWall" }                                         halves to twelfths; "denoms": [1, 2, 4, 8], "shaded": { "4": 3 }, "labels": false
+{ "type": "clock" }                                                blank face; "time": "3:45" draws the hands, "minutes": true, "digital": true
+{ "type": "conversionChart", "measure": "length" }                 mass, capacity, time, or "units": ["m", "cm"], "factors": [100]
 ```
 
 `grid`: coordinates sit on the lines (points, `polygon`/`polygons`, `path`,
@@ -329,17 +332,23 @@ nothing. Run `check_spec_notes.js` until it prints "All notes within budget".
     "blocks": [
       { "heading": "The four stages" },
       { "visual": { "type": "pictograms", "items": [{ "name": "hot", "label": "evaporation" }] } },
-      { "organiser": { "left": "Stage", "right": "What happens", "rows": 4, "leftContent": ["1. Evaporation", "2.", "3.", "4."] } },
+      { "organiser": { "left": "Stage", "right": "What happens", "rows": 4, "rowH": 50, "leftContent": ["1. Evaporation", "2.", "3.", "4."] } },
       { "box": 190, "label": "Draw the cycle as a loop." },
       { "steps": ["Read", "Underline", "Write"] },
+      { "checklist": ["Hook, context, position, preview", "A call to action"] },
       { "text": "I think ___ feels ___ because ___." },
+      { "passage": "A text to read and highlight: larger type, wide line spacing." },
       { "lines": 3 },
-      { "tip": "Stretch: ..." }
+      { "tip": "Extension: ..." }
     ]
   },
-  { "kind": "cards", "label": "Feeling Cards", "cols": 2, "cards": [{ "text": "happy", "visual": { "type": "pictogram", "name": "happy" } }] }
+  { "kind": "cards", "label": "Feeling Cards", "cols": 2, "cards": [{ "text": "happy", "visual": { "type": "pictogram", "name": "happy" } }] },
+  { "kind": "crossword", "label": "Persuasion Crossword", "wordBank": false,
+    "words": [{ "answer": "rebuttal", "clue": "Answering the other side's argument" }, { "answer": "audience", "clue": "The people you are persuading" }] }
 ]
 ```
+
+A `crossword` lays out its own grid from 4 to 16 `words` (`answer`, `clue`), longest first, each word crossing the others; a word that cannot cross is a validation error naming it. It gets an answer key automatically, and `wordBank: true` prints the answers as a bank for students who need it.
 
 Names come out session-first (`Session 1 Make 10 Worksheet.pdf`) and the
 Teacher Resources slide links them. A `worksheet` gets an answer key
@@ -349,8 +358,8 @@ automatically (`answerKey: false` to skip). Item fields: `prompt`, `visual`,
 limited to the types with a paper twin (the validator names them).
 
 Keep to zero or one printed resource unless the lesson genuinely needs more
-(megaprompt 0a item 7). Years 5-6 maths is the exception: every session
-carries a main sheet, an Extension and a supported sheet (megaprompt 85).
+(megaprompt 0a item 7). Years 3-6 maths, literacy, science and inquiry are the exception: every session
+carries a main sheet, an Extension and a supported sheet (megaprompt 85, 87).
 
 ### Sectioned worksheets
 

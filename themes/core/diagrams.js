@@ -645,6 +645,145 @@ function hundredGridSvg(spec, colours) {
   return wrapSvg(els, 0, 0, 10 * cell, maxY, 4);
 }
 
+/* ── Fraction wall ──────────────────────────────────────────────────────
+ * { type: "fractionWall" }                         halves to twelfths, every piece labelled
+ * { type: "fractionWall", denoms: [1, 2, 4, 8], shaded: { "4": 3 } }
+ * One whole per row, all rows the same width, so equal fractions line up.
+ * `shaded` shades the first n pieces of a row; `labels: false` leaves the
+ * pieces blank for students to label.
+ */
+const WALL_FILLS = ["#FDE2E4", "#E2ECE9", "#FFF1C1", "#DCEBFA", "#EADCF8", "#FFE5CC", "#D8F3DC", "#F9DCEB", "#E4E9F2", "#FFF6D6", "#DDF4F7", "#F2E2D2"];
+function fractionWallSvg(spec, colours) {
+  const ink = hexColour(colours && colours.ink, "2B2B2B");
+  const accent = hexColour(colours && colours.accent, "C0392B");
+  const denoms = (Array.isArray(spec.denoms) && spec.denoms.length ? spec.denoms : [1, 2, 3, 4, 5, 6, 8, 10, 12])
+    .map((d) => Math.max(1, Math.round(Number(d) || 1)));
+  const shaded = spec.shaded || {};
+  const W = 360;
+  const H = 24;
+  const els = [];
+  denoms.forEach((d, r) => {
+    const y = r * H;
+    const pw = W / d;
+    const fill = WALL_FILLS[r % WALL_FILLS.length];
+    const n = Number(shaded[String(d)]) || 0;
+    for (let i = 0; i < d; i += 1) {
+      const on = i < n;
+      els.push(`<rect x="${f2(i * pw)}" y="${y}" width="${f2(pw)}" height="${H}" fill="${on ? accent : fill}" fill-opacity="${on ? 0.55 : 1}" stroke="${ink}" stroke-width="1.2"/>`);
+      if (spec.labels !== false) els.push(text(i * pw + pw / 2, y + H / 2, d === 1 ? "1 whole" : `1/${d}`, { size: d >= 10 ? 9.5 : 11, bold: true, fill: ink }));
+    }
+  });
+  els.push(`<rect x="0" y="0" width="${W}" height="${denoms.length * H}" fill="none" stroke="${ink}" stroke-width="2"/>`);
+  return wrapSvg(els, 0, 0, W, denoms.length * H, 4);
+}
+
+/* ── Clock face ─────────────────────────────────────────────────────────
+ * { type: "clock" }                    a blank face for students to draw the hands
+ * { type: "clock", time: "3:45" }      hands drawn at that time
+ * { type: "clock", minutes: true }     5, 10, 15 ... labelled round the outside
+ * `digital: true` adds an empty box underneath for writing the digital time.
+ */
+function clockSvg(spec, colours) {
+  const ink = hexColour(colours && colours.ink, "2B2B2B");
+  const accent = hexColour(colours && colours.accent, "C0392B");
+  const R = 80;
+  const els = [];
+  els.push(`<circle cx="0" cy="0" r="${R}" fill="#FFFFFF" stroke="${ink}" stroke-width="3"/>`);
+  for (let m = 0; m < 60; m += 1) {
+    const big = m % 5 === 0;
+    const a = pt(90 - m * 6, R);
+    const b = pt(90 - m * 6, R - (big ? 10 : 5));
+    els.push(`<line x1="${f2(a.x)}" y1="${f2(a.y)}" x2="${f2(b.x)}" y2="${f2(b.y)}" stroke="${ink}" stroke-width="${big ? 2.4 : 1}"/>`);
+  }
+  for (let h = 1; h <= 12; h += 1) {
+    const p = pt(90 - h * 30, R - 22);
+    els.push(text(p.x, p.y, String(h), { size: 15, bold: true, fill: ink }));
+  }
+  let reach = R;
+  if (spec.minutes) {
+    for (let k = 0; k < 12; k += 1) {
+      const p = pt(90 - k * 30, R + 13);
+      els.push(text(p.x, p.y, String(k * 5), { size: 9.5, fill: accent, bold: true }));
+    }
+    reach = R + 22;
+  }
+  const t = /^(\d{1,2}):(\d{2})$/.exec(String(spec.time || ""));
+  if (t) {
+    const hh = Number(t[1]) % 12;
+    const mm = Number(t[2]);
+    const hour = pt(90 - (hh + mm / 60) * 30, R * 0.4);
+    const minute = pt(90 - mm * 6, R * 0.62);
+    els.push(`<line x1="0" y1="0" x2="${f2(hour.x)}" y2="${f2(hour.y)}" stroke="${ink}" stroke-width="6" stroke-linecap="round"/>`);
+    els.push(`<line x1="0" y1="0" x2="${f2(minute.x)}" y2="${f2(minute.y)}" stroke="${accent}" stroke-width="3.5" stroke-linecap="round"/>`);
+  }
+  els.push(`<circle cx="0" cy="0" r="4.5" fill="${ink}"/>`);
+  let maxY = reach;
+  if (spec.digital) {
+    els.push(`<rect x="-42" y="${reach + 10}" width="84" height="30" rx="6" fill="#FFFFFF" stroke="${ink}" stroke-width="1.6"/>`);
+    els.push(text(0, reach + 25, ":", { size: 18, bold: true, fill: ink }));
+    maxY = reach + 40;
+  }
+  if (spec.label) { els.push(text(0, maxY + 12, spec.label, { size: 12, bold: true, fill: ink })); maxY += 22; }
+  return wrapSvg(els, -reach, -reach, reach, maxY, 4);
+}
+
+/* ── Unit conversion chart ──────────────────────────────────────────────
+ * { type: "conversionChart", measure: "length" }   km, m, cm, mm with x and divide arrows
+ * measure: length | mass | capacity | time, or your own:
+ * { type: "conversionChart", units: ["m", "cm"], factors: [100] }
+ * Bigger units sit on the left. The arrows above go right (to the smaller
+ * unit: multiply), the arrows below go left (to the bigger unit: divide).
+ */
+const CONVERSIONS = {
+  length: { units: ["km", "m", "cm", "mm"], factors: [1000, 100, 10] },
+  mass: { units: ["t", "kg", "g", "mg"], factors: [1000, 1000, 1000] },
+  capacity: { units: ["kL", "L", "mL"], factors: [1000, 1000] },
+  time: { units: ["days", "hours", "minutes", "seconds"], factors: [24, 60, 60] },
+};
+function conversionChartSvg(spec, colours) {
+  const ink = hexColour(colours && colours.ink, "2B2B2B");
+  const accent = hexColour(colours && colours.accent, "C0392B");
+  const preset = CONVERSIONS[spec.measure] || CONVERSIONS.length;
+  const units = Array.isArray(spec.units) && spec.units.length >= 2 ? spec.units.map(String) : preset.units;
+  const factors = Array.isArray(spec.factors) && spec.factors.length === units.length - 1 ? spec.factors : preset.factors;
+  const BW = units.some((u) => u.length > 4) ? 78 : 58;
+  const BH = 40;
+  const GAP = 52;
+  const els = [];
+  const arrowHead = (x, y, dx, dy, fill) => {
+    const len = Math.hypot(dx, dy) || 1;
+    const ux = dx / len;
+    const uy = dy / len;
+    const s = 8;
+    return `<polygon points="${f2(x)},${f2(y)} ${f2(x - ux * s - uy * s * 0.6)},${f2(y - uy * s + ux * s * 0.6)} ${f2(x - ux * s + uy * s * 0.6)},${f2(y - uy * s - ux * s * 0.6)}" fill="${fill}"/>`;
+  };
+  units.forEach((u, i) => {
+    const x = i * (BW + GAP);
+    els.push(`<rect x="${x}" y="0" width="${BW}" height="${BH}" rx="8" fill="${accent}"/>`);
+    els.push(text(x + BW / 2, BH / 2, u, { size: 16, bold: true, fill: "#FFFFFF" }));
+    if (i === units.length - 1) return;
+    const x1 = x + BW * 0.75;
+    const x2 = x + BW + GAP + BW * 0.25;
+    const mid = (x1 + x2) / 2;
+    const f = num(Number(factors[i]));
+    // Above: to the smaller unit, multiply.
+    els.push(`<path d="M${f2(x1)},-2 Q${f2(mid)},-34 ${f2(x2)},-2" fill="none" stroke="${ink}" stroke-width="1.8"/>`);
+    els.push(arrowHead(x2, -2, x2 - mid, 32, ink));
+    els.push(text(mid, -27, `× ${f}`, { size: 12, bold: true, fill: ink }));
+    // Below: to the bigger unit, divide.
+    els.push(`<path d="M${f2(x2)},${BH + 2} Q${f2(mid)},${BH + 34} ${f2(x1)},${BH + 2}" fill="none" stroke="${ink}" stroke-width="1.8"/>`);
+    els.push(arrowHead(x1, BH + 2, x1 - mid, -32, ink));
+    els.push(text(mid, BH + 27, `÷ ${f}`, { size: 12, bold: true, fill: ink }));
+  });
+  const W = units.length * BW + (units.length - 1) * GAP;
+  let maxY = BH + 36;
+  if (spec.label !== false) {
+    els.push(text(W / 2, maxY + 10, spec.label || "Bigger unit to smaller: multiply. Smaller to bigger: divide.", { size: 11, fill: ink }));
+    maxY += 20;
+  }
+  return wrapSvg(els, 0, -36, W, maxY, 4);
+}
+
 /* ── Tally chart ────────────────────────────────────────────────────────
  * { type: "tally", headers: ["Sport", "Tally", "Frequency"], rows: [["Footy", 8], ["Netball", 5]], counts: true }
  * Tally marks are drawn in fives (four strokes and a gate). counts: false
@@ -699,6 +838,9 @@ const BUILDERS = {
   shortDivision: shortDivisionSvg,
   barModel: barModelSvg,
   hundredGrid: hundredGridSvg,
+  fractionWall: fractionWallSvg,
+  clock: clockSvg,
+  conversionChart: conversionChartSvg,
 };
 const DIAGRAM_TYPES = Object.keys(BUILDERS);
 
@@ -718,6 +860,9 @@ const PAPER = {
   shortDivision: { w: 170, h: 62 },
   barModel: { w: 300, h: 62 },
   hundredGrid: { w: 150, h: 130 },
+  fractionWall: { w: 340, h: 215 },
+  clock: { w: 140, h: 140 },
+  conversionChart: { w: 330, h: 110 },
 };
 
 function diagramSvg(spec, colours) {

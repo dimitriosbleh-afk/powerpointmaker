@@ -16,7 +16,7 @@ const assert = require("assert");
 const fs = require("fs");
 const os = require("os");
 const path = require("path");
-const { validateLessonSpec } = require("../themes/lesson/validate");
+const { validateLessonSpec, yourTurnSteps, followsPlanningRules } = require("../themes/lesson/validate");
 const { buildLesson, loadSpec } = require("../themes/lesson/buildLesson");
 
 const ROOT = path.resolve(__dirname, "..");
@@ -85,7 +85,7 @@ function testValidatorNamesTheMistake() {
 
   const noLaunch = clone();
   noLaunch.slides = noLaunch.slides.filter((s) => s.kind !== "launch");
-  assert(validateLessonSpec(noLaunch).errors.some((e) => /no launch before the LI/.test(e)), "missing launch is an error");
+  assert(validateLessonSpec(noLaunch).errors.some((e) => /no launch after the LI/.test(e)), "missing launch is an error");
 
   ok("validator names the common mistakes with their field paths");
 }
@@ -273,14 +273,75 @@ function testPlanner56() {
   ok("Years 5-6 maths: three sheets, standard Your turn, LI before launch, no repeated questions, long and varied main sheet");
 }
 
+/** The planning team's rules beyond Years 5-6 maths: every deck, and the Years 3-6 package in every subject but wellbeing (megaprompt 85). */
+function testPlanningRulesEverySubject() {
+  const byName = (n) => loadSpec(exemplars.find((f) => path.basename(f).includes(n)));
+  const errorsOf = (spec) => validateLessonSpec(spec).errors;
+
+  // Every deck, Foundation included: LI before the launch, and an extension task is called Extension.
+  const found = byName("foundation");
+  const li = found.slides.findIndex((s) => s.kind === "li");
+  const [launch] = found.slides.splice(found.slides.findIndex((s) => s.kind === "launch"), 1);
+  found.slides.splice(li, 0, launch);
+  assert(errorsOf(found).some((e) => /cannot come before the LI/.test(e)), "Foundation also puts LI and SC before the launch");
+  const challenge = byName("foundation");
+  challenge.resources.push({ kind: "page", label: "Challenge Card", blocks: [{ heading: "Make 10 two ways" }] });
+  assert(errorsOf(challenge).some((e) => /is an extension task/.test(e)), "a Challenge resource must be named Extension");
+  assert(!errorsOf(byName("foundation")).some((e) => /role "main"/.test(e)), "Foundation keeps its hands-on default: no three-sheet package");
+
+  // Years 3-6 science carries the package and the task wording of the Your turn steps.
+  const sci = byName("science");
+  assert.deepStrictEqual(errorsOf(sci), [], "the science exemplar meets the package");
+  assert.deepStrictEqual(yourTurnSteps("science"), yourTurnSteps("literacy"), "science uses the task wording of the steps");
+  const noSupported = byName("science");
+  noSupported.resources = noSupported.resources.filter((r) => r.role !== "supported");
+  assert(errorsOf(noSupported).some((e) => /role "supported"/.test(e)), "Years 5-6 science needs a supported sheet");
+  const grade34 = byName("science");
+  grade34.lesson.yearLevel = "grade34";
+  grade34.resources = [];
+  assert(errorsOf(grade34).some((e) => /role "main"/.test(e)), "Years 3-4 carry the package too");
+  const wellbeing = byName("science");
+  wellbeing.lesson.subject = "wellbeing";
+  assert(!followsPlanningRules(wellbeing), "wellbeing is discussion-led and outside the package");
+
+  // The same sentence on a slide and a sheet is a repeat outside maths.
+  const copied = byName("science");
+  const slideText = copied.slides.find((s) => s.kind === "practice").items[0].text;
+  copied.resources.find((r) => r.role === "main").sections[0].items.push({ prompt: slideText, answer: "precipitation" });
+  assert(errorsOf(copied).some((e) => /word for word/.test(e)), "a slide sentence may not reappear on a sheet");
+  ok("every deck: LI before launch, Extension naming; Years 3-6 package in science; no repeated sentences");
+}
+
+function testCrossword() {
+  const { buildCrossword } = require("../themes/lesson/crossword");
+  const words = ["rebuttal", "audience", "modality", "evidence", "emotive", "hook", "slogan", "perspective"]
+    .map((answer) => ({ answer, clue: "clue" }));
+  const cw = buildCrossword({ label: "test", words });
+  assert.strictEqual(cw.starts.length, words.length, "every word is placed");
+  // Each placed word reads back from the grid, and words only meet where letters match.
+  cw.starts.forEach((s) => {
+    const read = s.word.split("").map((_, i) => cw.cells.get(`${s.r + (s.dir === "down" ? i : 0)},${s.c + (s.dir === "across" ? i : 0)}`)).join("");
+    assert.strictEqual(read, s.word, `${s.word} reads back from the grid`);
+  });
+  const again = buildCrossword({ label: "test", words });
+  assert.deepStrictEqual([...again.cells], [...cw.cells], "the layout is deterministic");
+  const spec = loadSpec(exemplars.find((f) => /literacy/.test(f)));
+  spec.resources = [{ kind: "crossword", label: "Bad Crossword", words: [{ answer: "xyz", clue: "a" }, { answer: "qqq", clue: "b" }, { answer: "www", clue: "c" }, { answer: "vvv", clue: "d" }] }];
+  const { errors } = validateLessonSpec(spec);
+  assert(errors.some((e) => /could not fit/.test(e)), "a word that cannot cross is named at validation");
+  ok("crossword: every word placed and readable, deterministic, unplaceable words named");
+}
+
 (async () => {
   await testExemplarsBuild();
   testPlanner56();
+  testPlanningRulesEverySubject();
   testValidatorNamesTheMistake();
   testEvidenceRules();
   testPracticeRounds();
   testPracticeVolume();
   testTaughtLog();
+  testCrossword();
   console.log(`${passed} check(s) passed.`);
 })().catch((err) => {
   console.error("FAIL " + (err && err.stack ? err.stack : err));

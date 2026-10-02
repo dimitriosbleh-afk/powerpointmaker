@@ -151,7 +151,7 @@ You are always working inside someone else's artifact. A teacher scrolling one f
 
 - If the deck already has notes in a consistent house style that diverges from the Glance Format surface - no blank lines between units, a different divider, a different anchor set - match the deck and say so in the handover.
 - Consistency inside the artifact beats conformance to this spec. A deck that is Glance Format for slides 1 to 40 and something else from 41 is worse than a deck that is uniformly one thing.
-- The CONTENT rules never bend, only the surface. ANSWER line first, numbered beats in teaching order, TRAP, STRETCH and HELP, the prep zone and its purpose line, the response-routine rules in section 6A and the source-fidelity rules in section 14 all hold in full regardless of the deck's formatting.
+- The CONTENT rules never bend, only the surface. ANSWER line first, numbered beats in teaching order, TRAP, EXTENSION and HELP, the prep zone and its purpose line, the response-routine rules in section 6A and the source-fidelity rules in section 14 all hold in full regardless of the deck's formatting.
 - If the deck has no notes at all, or its notes are inconsistent, use the Glance Format as specified here.
 - State the choice plainly in the final response: "The existing notes run units together without blank lines, so I matched that rather than switching format at slide 12."
 
@@ -187,7 +187,7 @@ ANSWER: [always first whenever the slide asks anything, in student voice]
 TRAP: [most likely observable error]
    Fix: [the move], student redoes.
 
-STRETCH: [deepen or transfer, startable alone]
+EXTENSION: [deepen or transfer, startable alone]
 HELP: [form change for the named gap]
 
 CARE: [sensitive content only]
@@ -204,7 +204,7 @@ Zone rules:
 - The glance never crosses the divider. If it matters mid-lesson, it lives above the line.
 - One blank line BETWEEN units. None inside a unit: continuation lines sit directly under their beat, indented three spaces.
 - Same information in the same position on every slide, so the teacher's eye builds muscle memory.
-- STRETCH and HELP sit on separate physical lines but count as one unit.
+- EXTENSION and HELP sit on separate physical lines but count as one unit.
 
 Rendered budgets. These measure what the teacher's eye actually meets in the presenter pane, not logical lines in a source file. A line that wraps three times on an iPad is three lines, so the word caps exist to stop lines wrapping at all:
 
@@ -265,11 +265,11 @@ TRAP: counting only the shaded parts.
 - Usually one TRAP unit, maximum two, and only when both errors are genuinely likely and clearly different. None on brisk routine slides.
 - Observable behaviour only: "counting from the wrong end", never "students may struggle".
 
-STRETCH / HELP:
+EXTENSION / HELP:
 
 - One shared line on core I Do, We Do and You Do slides when variation is useful.
 - HELP names a form change and the gap it targets: a manipulative, a partial model, a first step done, a frame. "Do fewer" is not help.
-- STRETCH deepens or transfers the same idea and is startable without teacher help. "Do more" is not stretch.
+- EXTENSION deepens or transfers the same idea and is startable without teacher help. "Do more" is not an extension.
 
 CARE:
 
@@ -299,7 +299,7 @@ Teacher notes are read by the teacher, but their quality is measured in what stu
 
 6. The success criterion the slide builds is named in the prep zone, teacher-facing words only. No SC labels, numbers or tiers on any slide face.
 
-7. STRETCH and HELP change the task, not the count, and STRETCH is startable without teacher help, because early finishers cannot queue for an explanation.
+7. EXTENSION and HELP change the task, not the count, and EXTENSION is startable without teacher help, because early finishers cannot queue for an explanation.
 
 8. Response routines run on the school-standard cue scripts, identical in every deck: mini-whiteboards "Write it... Chin it... Show me." (hold until "Boards down"); thumbs and any non-verbal signal "Thumbs only, voices off. Show me... now."; choral "Everyone, together, on three... one, two, three."; fingers "Fingers at your chest... show me."; turn and tell "Partner A first. 20 seconds. Go." with a return signal. Every use of a routine carries the full cue script, because the teacher says it aloud; never shorten it to "boards up on cue". Non-verbal means silent: when call-outs replace the signal, the reset is one calm scripted line ("That was voices. This routine is thumbs only. Think again... show me."), then the response is re-collected before the evidence is read.
 
@@ -356,13 +356,13 @@ A short TRAP may sit on one line when it fits inside the 16-word cap.
 
 Use one TRAP line when a specific error is likely and worth naming; two only when both are genuinely likely and clearly different. When the background genuinely helps the teacher, add one WHY: line in the prep zone: "WHY: students over-generalise whole-number addition to fractions."
 
-# 9. STRETCH AND HELP TEMPLATE (ENABLING AND EXTENDING)
+# 9. EXTENSION AND HELP TEMPLATE (ENABLING AND EXTENDING)
 
-STRETCH: [deeper or transfer task, startable alone]. HELP: [form change for the named gap].
+EXTENSION: [deeper or transfer task, startable alone]. HELP: [form change for the named gap].
 
 Example:
 
-STRETCH: make one that shows 5/8, prove it with a drawing. HELP: strip with parts pre-drawn, student shades.
+EXTENSION: make one that shows 5/8, prove it with a drawing. HELP: strip with parts pre-drawn, student shades.
 
 Good HELP moves:
 
@@ -373,7 +373,7 @@ Good HELP moves:
 - Let the student rehearse orally before writing.
 - Use the same model with smaller numbers.
 
-Good STRETCH moves:
+Good EXTENSION moves:
 
 - Explain why this model works.
 - Create a matching example and a non-example.
@@ -385,7 +385,7 @@ Good STRETCH moves:
 Quality bar, per section 6A:
 
 - HELP names the form change and the prerequisite gap it targets. Reducing the number of items is not help.
-- STRETCH deepens or transfers the same idea and is startable without teacher help. Adding more items is not stretch.
+- EXTENSION deepens or transfers the same idea and is startable without teacher help. Adding more items is not an extension.
 
 # 10. CARE TEMPLATE (SENSITIVE CONTENT)
 
@@ -505,7 +505,7 @@ Do not:
 - write "read the slide" for every slide
 - write long generic theory statements
 - add a SCAN decision to every slide
-- add a STRETCH / HELP line to every slide
+- add a EXTENSION / HELP line to every slide
 - overuse "Some of you may remember..."
 - invent new activities that do not fit the slide
 - ask teachers to use resources not visible, listed or supplied
@@ -996,7 +996,7 @@ ANSWER: [the worked answer, so the teacher never loses it mid-model]
 TRAP: watching the answer, not the model.
    Fix: cover the answer, student names the first thing to notice.
 
-STRETCH: explain why the model works, or make a matching example.
+EXTENSION: explain why the model works, or make a matching example.
 HELP: same model, smaller or concrete example.
 ---
 Explicit modelling. Student response stays short; attention stays on the model.
@@ -1022,7 +1022,7 @@ ANSWER: [answer in student words]
 TRAP: waiting for the teacher answer.
    Fix: require a board or gesture before the reveal, student shows theirs.
 
-STRETCH: justify the answer against a close non-example.
+EXTENSION: justify the answer against a close non-example.
 HELP: partially completed model or fewer choices.
 ---
 Decides readiness for independence. Weak responses -> stay guided and re-check before release.
@@ -1074,7 +1074,7 @@ ANSWER: [answer or success indicator - this is what circulating checks against]
 TRAP: starting in the wrong place.
    Fix: reset the first action, student restarts it.
 
-STRETCH: explain, compare, prove or create a related example.
+EXTENSION: explain, compare, prove or create a related example.
 HELP: partial model, sentence frame or manipulative start.
 ---
 Independent or partner evidence. Instructions stay short; the slide visual is the reminder, not a second explanation.
@@ -1255,7 +1255,7 @@ ANSWER: ...
 2. ASK: ...? [think time], [routine]. EXPECT: ...
 3. SCAN ... 80%+ -> ... Less -> ..., re-ask.
 TRAP: ... Fix: ..., student redoes.
-STRETCH: ... HELP: ...
+EXTENSION: ... HELP: ...
 ---
 [Purpose line.]
 
@@ -1308,7 +1308,7 @@ Teacher usefulness:
 - SCAN lines appear only at genuine decision points, with a one-line proceed and a one-line pivot.
 - Pivots use a different representation and end with a fresh re-ask.
 - TRAP lines are observable errors with fixes that end in a student redo.
-- STRETCH and HELP are practical, not extra worksheet creation.
+- EXTENSION and HELP are practical, not extra worksheet creation.
 - The prep zone carries rationale, sources and flags; nothing mid-lesson-critical sits below the divider.
 
 Student impact (section 6A):
@@ -1321,7 +1321,7 @@ Student impact (section 6A):
 - Explain prompts carry a sentence stem matched to the year level.
 - Scripted feedback names the strategy. No bare "good job" cues.
 - REVEAL beats state their protection.
-- HELP changes task form; STRETCH deepens or transfers and is startable without teacher help.
+- HELP changes task form; EXTENSION deepens or transfers and is startable without teacher help.
 
 Source fidelity:
 

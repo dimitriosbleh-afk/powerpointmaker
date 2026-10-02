@@ -113,7 +113,7 @@ Rules across the skeleton:
 - Reveal budget and click mechanics follow MEGA_PROMPT: `clickBuild` is the mechanism, `withReveal` is the fallback for genuinely different layouts.
 - Every lesson names its Deaf-friendly protocol for the week; give it one visible line on the slide where it is practised (usually the We Do or You Do), worded from the unit document.
 - The care notes in the unit document are teacher-facing: notes zones, never slide faces.
-- Support and Extend moves from the plan go in the notes as HELP and STRETCH lines on the core GRR slides, reworded only as much as the Glance format requires.
+- Support and Extend moves from the plan go in the notes as HELP and EXTENSION lines on the core GRR slides, reworded only as much as the Glance format requires.
 - Band calibration on a mixed-group deck: build to the carrying band, and put the other band's calibration in the notes line of the affected slides. Do not build parallel slide sets per band unless the request asks for separate class decks.
 
 # 6. Sign images as the visual anchor

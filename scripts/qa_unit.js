@@ -94,6 +94,23 @@ async function main() {
     }
   }
 
+  // Years 3-6 maths: the week's main sheets cover all four proficiencies between them (megaprompt 85).
+  const proficiencies = new Set();
+  let mathsWeek = false;
+  for (const lesson of manifest.lessons) {
+    if (!/\.json$/.test(lesson.build_script)) continue;
+    const spec = JSON.parse(fs.readFileSync(path.resolve(ROOT, lesson.build_script), "utf8"));
+    const L = spec.lesson || {};
+    if (L.subject !== "numeracy" || !["grade34", "grade56"].includes(L.yearLevel)) continue;
+    mathsWeek = true;
+    (spec.resources || []).filter((r) => r && r.role === "main")
+      .forEach((r) => (r.sections || []).forEach((sec) => sec && sec.proficiency && proficiencies.add(sec.proficiency)));
+  }
+  const missing = ["understanding", "fluency", "problemSolving", "reasoning"].filter((p) => !proficiencies.has(p));
+  if (mathsWeek && missing.length) {
+    issues.push(`The week's main sheets never target ${missing.join(", ")}. Cover all four proficiencies across the week (megaprompt 85).`);
+  }
+
   let expectedResourceCount = 0;
   for (const lesson of manifest.lessons) {
     const lessonDir = path.join(ROOT, "output", lesson.folder);

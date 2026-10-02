@@ -10,6 +10,7 @@
  *   page       free layout of blocks (heading, text, tip, steps, visual,
  *              lines, organiser, box) for scaffolds and organisers
  *   cards      cut-out cards in a grid, each with text and/or a visual
+ *   crossword  a grid laid out from answers and clues, with an answer key
  *
  * Every visual is drawn with the pdf_helpers twins or the same pictogram
  * renderer as the slides, so paper shows the representation students met
@@ -22,6 +23,7 @@ const { renderPictogramPng } = require("../core/pictograms");
 const { byBand } = require("../core/gradeBand");
 const { diagramPng, diagramSvg, DIAGRAM_TYPES, PAPER } = require("../core/diagrams");
 const { renderWorksheet } = require("./worksheetLayout");
+const { drawCrossword } = require("./crossword");
 
 // Paper width of a diagram in points: angles big enough to measure with a real protractor.
 function diagramWidth(visual, sz, maxW) {
@@ -233,10 +235,14 @@ function drawVisualPdf(doc, visual, x, y, opts) {
       const items = (v.items || []).map(String);
       const chipH = S.cell * 0.9;
       const chipW = (w - 10 * (items.length - 1)) / Math.max(items.length, 1);
+      // One size for the row: the largest at which every chip's text fits on one line.
+      doc.font("Sans-Bold");
+      let chipFont = S.prompt;
+      while (chipFont > 9 && items.some((t) => doc.fontSize(chipFont).widthOfString(t) > chipW - 10)) chipFont -= 0.5;
       items.forEach((t, i) => {
         const cx = x + i * (chipW + 10);
         doc.save().lineWidth(1.2).strokeColor(fill).roundedRect(cx, y, chipW, chipH, 6).stroke().restore();
-        doc.save().font("Sans-Bold").fontSize(S.prompt).fillColor(fill).text(t, cx, y + chipH / 2 - S.prompt / 2, { width: chipW, align: "center" }).restore();
+        doc.save().font("Sans-Bold").fontSize(chipFont).fillColor(fill).text(t, cx, y + chipH / 2 - chipFont / 2, { width: chipW, align: "center", lineBreak: false }).restore();
       });
       return y + chipH + 8;
     }
@@ -518,7 +524,35 @@ function drawBlock(doc, block, y, ctx) {
   // never sits alone at the foot of a page.
   if (block.heading) { y = fits(doc, y, 110); return P.addSectionHeading(doc, block.heading, y, { color: primary, fontSize: S.heading }); }
   if (block.text) { y = fits(doc, y, 60); return P.addBodyText(doc, block.text, y, { fontSize: S.body }); }
-  if (block.tip) { y = fits(doc, y, 70); return P.addTipBox(doc, block.tip, y, { color: primary }); }
+  // A passage to read, highlight or annotate: larger type, wide line spacing.
+  if (block.passage) {
+    const size = S.body + 1;
+    const opts = { width: P.PAGE.CONTENT_W, lineGap: Math.round(size * 0.7) };
+    doc.font("Sans").fontSize(size);
+    y = fits(doc, y, doc.heightOfString(String(block.passage), opts) + 10);
+    doc.save().font("Sans").fontSize(size).fillColor(P.hex(C.CHARCOAL)).text(String(block.passage), x, y, opts).restore();
+    return doc.y + 12;
+  }
+  if (block.tip) {
+    const tipH = doc.fontSize(10).font("Sans-Italic").heightOfString(String(block.tip), { width: P.PAGE.CONTENT_W - 30 }) + 26;
+    y = fits(doc, y, tipH);
+    return P.addTipBox(doc, block.tip, y, { color: primary });
+  }
+  // A tick-box list: one empty square per line, for checklists and success criteria.
+  if (block.checklist) {
+    const items = (block.checklist || []).map(String);
+    const size = S.body;
+    const box = size * 0.9;
+    items.forEach((t) => {
+      doc.font("Sans").fontSize(size);
+      const h = Math.max(box, doc.heightOfString(t, { width: P.PAGE.CONTENT_W - box - 12 })) + 8;
+      y = fits(doc, y, h);
+      doc.save().lineWidth(1.2).strokeColor(primary).rect(x, y + 1, box, box).stroke().restore();
+      doc.save().font("Sans").fontSize(size).fillColor(P.hex(C.CHARCOAL)).text(t, x + box + 12, y, { width: P.PAGE.CONTENT_W - box - 12 }).restore();
+      y = doc.y + 8;
+    });
+    return y + 4;
+  }
   if (block.steps) { y = fits(doc, y, 90); return P.addStepInstructions(doc, block.steps, y, { color: primary }); }
   if (block.visual) {
     y = fits(doc, y, estimateVisualHeight(block.visual, sz) + 10);
@@ -527,8 +561,9 @@ function drawBlock(doc, block, y, ctx) {
   if (block.lines) { y = fits(doc, y, block.lines * S.lineGap); return P.addLinedArea(doc, y, block.lines, { lineSpacing: S.lineGap }); }
   if (block.organiser) {
     const org = block.organiser;
-    y = fits(doc, y, 200);
-    return P.addTwoColumnOrganiser(doc, org.left || "", org.right || "", y, { color: primary, rows: org.rows || 4, leftContent: org.leftContent, rightContent: org.rightContent });
+    const rowH = org.rowH || 50;
+    y = fits(doc, y, 36 + (org.rows || 4) * rowH);
+    return P.addTwoColumnOrganiser(doc, org.left || "", org.right || "", y, { color: primary, rows: org.rows || 4, rowH, leftContent: org.leftContent, rightContent: org.rightContent });
   }
   if (block.box) {
     const h = typeof block.box === "number" ? block.box : 140;
@@ -551,6 +586,12 @@ function drawCards(doc, resource, y, ctx) {
   const gap = 12;
   const cardW = (P.PAGE.CONTENT_W - gap * (cols - 1)) / cols;
   const cardH = resource.cardH || byBand(sz, 170, 150, 130);
+  // Text-only cards share one font size, the largest that fits every card, so the set looks even.
+  doc.font("Sans-Bold");
+  let textOnlySize = S.heading + 4;
+  cards.filter((c) => c.text && !c.visual).forEach((c) => {
+    while (textOnlySize > 10 && doc.fontSize(textOnlySize).heightOfString(String(c.text), { width: cardW - 20 }) > cardH - 20) textOnlySize -= 1;
+  });
   cards.forEach((card, i) => {
     const col = i % cols;
     if (col === 0) y = fits(doc, y, cardH + gap);
@@ -561,8 +602,16 @@ function drawCards(doc, resource, y, ctx) {
       inner = drawVisualPdf(doc, card.visual, cx + 14, inner, { C, sz, width: cardW - 28 }) + 4;
     }
     if (card.text) {
-      doc.save().font("Sans-Bold").fontSize(card.visual ? S.body : S.heading + 4).fillColor(P.hex(C.CHARCOAL))
-        .text(String(card.text), cx + 10, card.visual ? inner : y + cardH / 2 - S.heading / 2, { width: cardW - 20, align: "center" }).restore();
+      const textW = cardW - 20;
+      const room = card.visual ? y + cardH - 8 - inner : cardH - 20;
+      // Shrink long card text until it fits inside the card (a word card stays large).
+      let size = card.visual ? S.body : textOnlySize;
+      doc.font("Sans-Bold");
+      while (size > 10 && doc.fontSize(size).heightOfString(String(card.text), { width: textW }) > room) size -= 1;
+      const textH = doc.fontSize(size).heightOfString(String(card.text), { width: textW });
+      const ty = card.visual ? inner : y + (cardH - textH) / 2;
+      doc.save().font("Sans-Bold").fontSize(size).fillColor(P.hex(C.CHARCOAL))
+        .text(String(card.text), cx + 10, ty, { width: textW, align: "center" }).restore();
     }
     if (col === cols - 1 || i === cards.length - 1) y += cardH + gap;
   });
@@ -599,6 +648,8 @@ async function writeResourcePdf(resource, ctx, filePath, opts) {
     (resource.blocks || []).forEach((block) => { y = drawBlock(doc, block, y, { C, sz }); });
   } else if (resource.kind === "cards") {
     y = drawCards(doc, resource, y, { C, sz });
+  } else if (resource.kind === "crossword") {
+    y = drawCrossword(doc, resource, y, { C, isKey: Boolean(o.isKey), S: bandSizes(sz) });
   }
   if (resource.tip && !o.isKey) { y = fits(doc, y, 70); y = P.addTipBox(doc, resource.tip, y, { color: primary }); }
   P.addPdfFooter(doc, footer, { color: P.hex(C.MUTED) });
@@ -622,7 +673,7 @@ async function buildResources(spec, T, outDir, session) {
     const main = P.makeSessionResource(session, res.label, res.description || "");
     await writeResourcePdf(res, ctx, path.join(outDir, main.fileName));
     items.push(main);
-    if (res.kind === "worksheet" && res.answerKey !== false) {
+    if ((res.kind === "worksheet" || res.kind === "crossword") && res.answerKey !== false) {
       const keyLabel = res.answerKeyLabel || `${res.label.replace(/\bworksheet\b/i, "").trim()} Answer Key`.replace(/\s+/g, " ");
       const key = P.makeSessionResource(session, keyLabel, res.answerKeyDescription || `Teacher answers for the ${main.name}.`);
       await writeResourcePdf(res, ctx, path.join(outDir, key.fileName), { isKey: true, title: `${res.title || res.label} - Answer Key` });

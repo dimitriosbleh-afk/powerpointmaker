@@ -1047,7 +1047,7 @@ function addRichResourceSlide(pres, config, theme, footer, notes) {
     });
   }
 
-  s.addText(resources.length ? "Click a resource to open it. Print before the lesson." : "No printed student resources required.", {
+  s.addText(resources.length ? "Click a resource to open it. Print before the session." : "No printed student resources required.", {
     x: 0.5, y: 1.3, w: 9, h: 0.3,
     fontSize: 13, fontFace: FB, color: muted, italic: true, margin: 0,
   });
@@ -1286,7 +1286,7 @@ function addResourceSlide(pres, resources, theme, footer, notes) {
   });
 
   // Instruction text
-  s.addText("Click any resource below to open the PDF. Print before the lesson.", {
+  s.addText("Click any resource below to open the PDF. Print before the session.", {
     x: 0.5, y: 1.2, w: 9, h: 0.3,
     fontSize: 12, fontFace: FB, color: TC.MUTED || "6B7280",
     italic: true, margin: 0,

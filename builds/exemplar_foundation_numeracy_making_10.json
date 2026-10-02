@@ -321,6 +321,30 @@
       }
     },
     {
+      "kind": "li",
+      "learningIntention": "We are learning to make 10 using a ten frame.",
+      "successCriteria": [
+        "I can count the counters in a ten frame.",
+        "I can find how many more counters make 10.",
+        "I can say the two numbers that make 10."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today we learn to make 10 with a ten frame."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: We'll start with the first one and build up to the others together.",
+            "By the end you will do all three."
+          ]
+        ],
+        "prep": "SC1 counting is reachable for all; SC2 how many more is the core target and the exit evidence; SC3 saying the pair is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
       "kind": "launch",
       "title": "Our ten frame friend",
       "visual": {
@@ -357,30 +381,6 @@
         ],
         "prep": "Launch bridges known counting to 10 into the new idea of how many more. Low-coupling, so no earlier session is assumed.",
         "tag": "[Launch | Planning made visible | HITS 1]"
-      }
-    },
-    {
-      "kind": "li",
-      "learningIntention": "We are learning to make 10 using a ten frame.",
-      "successCriteria": [
-        "I can count the counters in a ten frame.",
-        "I can find how many more counters make 10.",
-        "I can say the two numbers that make 10."
-      ],
-      "notes": {
-        "beats": [
-          [
-            "POINT to the learning intention.",
-            "SAY: Today we learn to make 10 with a ten frame."
-          ],
-          "SAY: Read the I can lines with me. Everyone, together, on three.",
-          [
-            "SAY: We'll start with the first one and build up to the others together.",
-            "By the end you will do all three."
-          ]
-        ],
-        "prep": "SC1 counting is reachable for all; SC2 how many more is the core target and the exit evidence; SC3 saying the pair is the stretch.",
-        "tag": "[LI/SC | Planning made visible | HITS 1]"
       }
     },
     {

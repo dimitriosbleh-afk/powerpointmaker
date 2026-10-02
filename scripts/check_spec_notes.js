@@ -35,9 +35,10 @@ let problems = 0;
   // Word budget and line lengths from the author's own lines, before wrapping.
   const flat = [];
   if (n.answer) flat.push(`ANSWER: ${n.answer}`);
-  (n.beats || []).forEach((b) => (Array.isArray(b) ? b : [b]).forEach((l) => flat.push(String(l))));
+  // The build numbers each beat ("1. "), so a beat's first line carries one more word.
+  (n.beats || []).forEach((b, i) => (Array.isArray(b) ? b : [b]).forEach((l, j) => flat.push(j === 0 ? `${i + 1}. ${l}` : String(l))));
   (Array.isArray(n.trap) ? n.trap : (n.trap ? [n.trap] : [])).forEach((l) => flat.push(String(l)));
-  if (n.stretch) flat.push(`STRETCH: ${n.stretch}`);
+  if (n.stretch) flat.push(`EXTENSION: ${n.stretch}`);
   if (n.help) flat.push(`HELP: ${n.help}`);
   if (n.care) flat.push(`CARE: ${n.care}`);
   // Count the way the build gate counts: the composed live zone (numbers and

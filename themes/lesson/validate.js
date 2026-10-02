@@ -49,7 +49,7 @@ const KINDS = {
   closing:       { required: ["reflectionPrompt"], optional: ["selfAssessment", "takeaways", "notes"], teaching: false },
 };
 
-const RESOURCE_KINDS = ["worksheet", "page", "cards"];
+const RESOURCE_KINDS = ["worksheet", "page", "cards", "crossword"];
 
 // Visual types the PDF twin layer can draw on paper.
 const PDF_VISUAL_TYPES = [
@@ -152,7 +152,7 @@ function validateReveal(reveal, where, errors, warnings, slide) {
 const MENU_VISUAL_TYPES = ["pictogram", "pictograms", "chips"];
 
 // Words an exit ticket routine may share with the rest of the deck.
-const ROUTINE_WORDS = /^(point|show|write|tell|name|draw|circle|say|turn|hold|chin|look|read|find|which|what|how|why|who|where|when|is|are|do|does|the|a)$/i;
+const ROUTINE_WORDS = /^(point|show|write|tell|name|draw|circle|say|turn|hold|chin|look|read|find|which|what|how|why|who|where|when|is|are|do|does|the|a|an|it|its|this|that|these|those|we|you|they|he|she|our|my|your|their|his|her|there|here|if|and|but|so|then|now|some|every|everyone|all|please)$/i;
 
 function canonical(value) {
   if (Array.isArray(value)) return `[${value.map(canonical).join(",")}]`;
@@ -397,27 +397,43 @@ function validatePlan(plan, errors) {
   ["anchor", "catchUp"].forEach((k) => { if (plan[k] != null && !isNonEmptyString(plan[k])) errors.push(`${w}.${k}: a short line, or omit it.`); });
 }
 
-/* ── Years 5-6 maths: the maths planning team's rules (Term 4 2026) ──────
- * LI and SC before the launch, no bullet points on slides, the standard
+/* ── The planning team's rules (megaprompt 85) ───────────────────────────
+ * Every deck: LI and SC before the launch, no bullet points on slides, no
+ * slide question repeated on a sheet with the same numbers, every extension
+ * task named "Extension" with an answer key, and sectioned sheets that open
+ * each section with a worked example and vary their questions.
+ * Years 3-6 maths, literacy, science and inquiry also use the standard
  * "Your turn" steps, and every session carries a main worksheet, an
- * Extension and a supported sheet, with answer keys for the main sheet and
- * the Extension. Sheets are sectioned, long enough to keep fast finishers
- * working, and never repeat a slide question with the same numbers
- * (megaprompt 85).
+ * Extension and a supported sheet, the main sheet long enough to keep fast
+ * finishers working.
  */
 const YOUR_TURN_STEPS = [
   "Read each question carefully.",
   "Solve each question carefully.",
   "Check your answers and move onto the early finisher option, if you get there.",
 ];
+// Literacy, science and inquiry use the same three steps, worded for tasks rather than questions.
+const LITERACY_YOUR_TURN_STEPS = [
+  "Read the task carefully.",
+  "Complete each part carefully.",
+  "Check your work and move onto the early finisher option, if you get there.",
+];
+function yourTurnSteps(subject) { return subject === "numeracy" ? YOUR_TURN_STEPS : LITERACY_YOUR_TURN_STEPS; }
 const PROFICIENCIES = ["understanding", "fluency", "problemSolving", "reasoning"];
 // Work units, not question count: a table row, an a/b/c part or a pair of sort cards each count.
 const MAIN_SHEET_MIN_WORK = 12;
 
-function isPlanner56(spec) {
+/**
+ * Years 3-6 maths, literacy, science and inquiry carry the full package: the
+ * three sheets and the standard Your turn steps. Wellbeing is discussion-led
+ * and Foundation to Year 2 keep their hands-on default (megaprompt 68i).
+ */
+const PACKAGE_SUBJECTS = ["numeracy", "literacy", "science", "inquiry"];
+function followsPlanningRules(spec) {
   const L = spec.lesson || {};
-  return L.subject === "numeracy" && L.yearLevel === "grade56";
+  return PACKAGE_SUBJECTS.includes(L.subject) && (L.yearLevel === "grade34" || L.yearLevel === "grade56");
 }
+const EXTENSION_ALIASES = /\b(extender|extend(ing)? task|challenge|early finisher|stretch)\b/i;
 
 function worksheetItems(r) {
   if (Array.isArray(r.sections)) return r.sections.reduce((all, sec) => all.concat(toArray(sec && sec.items)), []);
@@ -425,10 +441,13 @@ function worksheetItems(r) {
 }
 
 /** A question's identity: its wording plus its numbers or its visual. The skill may repeat; the question may not. */
-function questionSignatures(texts, visuals) {
+function questionSignatures(texts, visuals, byText) {
   const sigs = [];
+  // Literacy questions are words, not numbers: the same sentence is the same question.
+  if (byText) texts.filter(isNonEmptyString).forEach((t) => { const n = normaliseText(t); if (n.split(" ").length >= 4) sigs.push(`t:${n}`); });
   texts.filter(isNonEmptyString).forEach((t) => {
-    const nums = String(t).match(/\d+(?:[.,/]\d+)?/g) || [];
+    // Digits straight after a letter (a cell name like B2) are labels, not numbers.
+    const nums = String(t).match(/(?<![A-Za-z])\d+(?:[.,/]\d+)?/g) || [];
     // Two or more numbers in order make a question; a lone number (180) is usually a fact.
     if (nums.length >= 2) sigs.push(`n:${nums.join("|")}`);
   });
@@ -436,25 +455,30 @@ function questionSignatures(texts, visuals) {
   return sigs;
 }
 
-function validatePlanner56(spec, slides, errors) {
-  // Slides: no bullet points; standard Your turn steps.
+function validatePlanningRules(spec, slides, errors) {
+  const subject = (spec.lesson || {}).subject;
+  const isMaths = subject === "numeracy";
+  const pkg = followsPlanningRules(spec);
+  const steps = yourTurnSteps(subject);
+  // Slides: no bullet points (every deck); standard Your turn steps (Years 3-6 package).
   slides.forEach((sl, i) => {
     if (!sl) return;
     const w = `slides[${i}] (${sl.kind})`;
     if (sl.kind === "content" && toArray(sl.lines).length > 3) {
-      errors.push(`${w}.lines: maths slides carry no bullet points, and more than 3 lines renders as bullets. Keep to 1-3 short lines or split the slide (megaprompt 85).`);
+      errors.push(`${w}.lines: slides carry no bullet points, and more than 3 lines renders as bullets. Keep to 1-3 short lines or split the slide (megaprompt 85).`);
     }
-    if (sl.kind === "youDo" && sl.steps != null && JSON.stringify(toArray(sl.steps)) !== JSON.stringify(YOUR_TURN_STEPS)) {
-      errors.push(`${w}.steps: maths "Your turn" slides use the standard steps. Omit steps and the build adds them: ${YOUR_TURN_STEPS.join(" / ")} (megaprompt 85).`);
+    if (pkg && sl.kind === "youDo" && sl.steps != null && JSON.stringify(toArray(sl.steps)) !== JSON.stringify(steps)) {
+      errors.push(`${w}.steps: "Your turn" slides use the standard steps. Omit steps and the build adds them: ${steps.join(" / ")} (megaprompt 85).`);
     }
   });
 
-  // Resources: main, Extension and supported sheets; keys for main and Extension.
   const resources = Array.isArray(spec.resources) ? spec.resources : [];
   const byRole = (role) => resources.filter((r) => r && r.kind === "worksheet" && r.role === role);
-  ["main", "extension", "supported"].forEach((role) => {
-    const found = byRole(role);
-    if (found.length !== 1) errors.push(`resources: Years 5-6 maths needs exactly one worksheet with role "${role}" (got ${found.length}). Each session gives a main sheet, an Extension and a supported sheet (megaprompt 85).`);
+  // Every extension task is called "Extension" and comes with an answer key.
+  resources.forEach((r, i) => {
+    if (r && r.role !== "extension" && EXTENSION_ALIASES.test(String(r.label || ""))) {
+      errors.push(`resources[${i}].label: "${r.label}" is an extension task. Give it role "extension" and the label "Extension" (staff name every extension task Extension, megaprompt 85).`);
+    }
   });
   byRole("extension").forEach((r) => {
     if (r.label !== "Extension") errors.push(`resources (extension).label: name it "Extension" (staff name every extension task Extension).`);
@@ -462,15 +486,26 @@ function validatePlanner56(spec, slides, errors) {
   });
   byRole("main").forEach((r) => {
     if (r.answerKey === false) errors.push(`resources (main).answerKey: the main sheet needs an answer key.`);
-    const items = worksheetItems(r);
-    const work = items.reduce((t, it) => t + (it ? workUnits(it) : 0), 0);
-    if (work < MAIN_SHEET_MIN_WORK) errors.push(`resources (main): ${work} units of work; the main sheet needs at least ${MAIN_SHEET_MIN_WORK} (a question, each a/b/c part, each table row, each pair of sort cards) so fast finishers are not left with nothing (megaprompt 85, 86).`);
-    const secs = toArray(r.sections);
-    if (secs.length < 3) errors.push(`resources (main).sections: at least 3 sections, easiest first, each with a worked example (megaprompt 85).`);
-    const profs = new Set(secs.map((sec) => sec && sec.proficiency).filter(Boolean));
-    if (profs.size < 2) errors.push(`resources (main).sections[].proficiency: cover at least two proficiencies in a session, and all four across the week (megaprompt 85).`);
-    if (!profs.has("problemSolving")) errors.push(`resources (main): include a problemSolving section of worded, real-world problems (megaprompt 85).`);
   });
+
+  // Years 3-6 package: main, Extension and supported sheets; a main sheet long enough to keep fast finishers working.
+  if (pkg) {
+    ["main", "extension", "supported"].forEach((role) => {
+      const found = byRole(role);
+      if (found.length !== 1) errors.push(`resources: needs exactly one worksheet with role "${role}" (got ${found.length}). Every Years 3-6 session gives a main sheet, an Extension and a supported sheet (megaprompt 85).`);
+    });
+    byRole("main").forEach((r) => {
+      const items = worksheetItems(r);
+      const work = items.reduce((t, it) => t + (it ? workUnits(it) : 0), 0);
+      if (work < MAIN_SHEET_MIN_WORK) errors.push(`resources (main): ${work} units of work; the main sheet needs at least ${MAIN_SHEET_MIN_WORK} (a question, each a/b/c part, each table row, each pair of sort cards) so fast finishers are not left with nothing (megaprompt 85, 86).`);
+      const secs = toArray(r.sections);
+      if (secs.length < 3) errors.push(`resources (main).sections: at least 3 sections, easiest first, each with a worked example (megaprompt 85).`);
+      const profs = new Set(secs.map((sec) => sec && sec.proficiency).filter(Boolean));
+      if (isMaths && profs.size < 2) errors.push(`resources (main).sections[].proficiency: cover at least two proficiencies in a session, and all four across the week (megaprompt 85).`);
+      if (isMaths && !profs.has("problemSolving")) errors.push(`resources (main): include a problemSolving section of worded, real-world problems (megaprompt 85).`);
+    });
+  }
+
   // Varied questions (megaprompt 86): several formats, and no run of the same question.
   resources.filter((r) => r && r.kind === "worksheet" && (r.role === "main" || r.role === "extension")).forEach((r) => {
     const items = worksheetItems(r).filter(Boolean);
@@ -490,21 +525,24 @@ function validatePlanner56(spec, slides, errors) {
     });
   });
 
-  // No slide question repeated on a sheet with the same numbers.
+  // No slide question repeated on a sheet with the same numbers (or, outside maths, the same sentence).
+  // Foundation to Year 2 skip the picture match: a ten frame only shows 0 to 10, so a make-10 deck shows every amount.
+  const junior = ["foundation", "grade1", "grade2"].includes((spec.lesson || {}).yearLevel);
+  const sheetVisual = (v) => (junior ? [] : [v]);
   const slideSigs = new Map();
   slides.forEach((sl, i) => {
     if (!sl) return;
     const texts = [sl.question, sl.task, sl.extract, sl.text].concat(toArray(sl.prompts), toArray(sl.questions),
       toArray(sl.items).map((it) => it && (it.text || it.extract)), toArray(sl.steps));
-    const visuals = [sl.visual].concat(toArray(sl.items).map((it) => it && it.visual));
-    questionSignatures(texts, visuals).forEach((sig) => { if (!slideSigs.has(sig)) slideSigs.set(sig, i); });
+    const visuals = junior ? [] : [sl.visual].concat(toArray(sl.items).map((it) => it && it.visual));
+    questionSignatures(texts, visuals, !isMaths).forEach((sig) => { if (!slideSigs.has(sig)) slideSigs.set(sig, i); });
   });
   resources.filter((r) => r && r.kind === "worksheet").forEach((r) => {
     worksheetItems(r).forEach((it, j) => {
       if (!it) return;
-      questionSignatures([it.prompt], [it.visual]).forEach((sig) => {
+      questionSignatures([it.prompt].concat(toArray(it.work), toArray(it.options)), sheetVisual(it.visual), !isMaths).forEach((sig) => {
         if (slideSigs.has(sig)) {
-          errors.push(`resources (${r.role || r.label}) question ${j + 1}: repeats slides[${slideSigs.get(sig)}] with the same numbers. Keep the skill, change the numbers (staff feedback, megaprompt 85).`);
+          errors.push(`resources (${r.role || r.label}) question ${j + 1}: repeats slides[${slideSigs.get(sig)}] ${isMaths ? "with the same numbers. Keep the skill, change the numbers" : "word for word. Keep the skill, change the example"} (staff feedback, megaprompt 85).`);
         }
       });
     });
@@ -557,12 +595,8 @@ function validateLessonSpec(spec, opts) {
   let exitIndex = -1;
   let dailyIndex = -1;
   let fluencyIndex = -1;
-  let launchLikeBeforeLi = false;
-  const planner56 = isPlanner56(spec);
-  // Years 5-6 maths: LI and SC come before the launch (megaprompt 85).
-  const preLiAllowed = planner56
-    ? ["title", "overview", "resources", "dailyReview", "fluency"]
-    : ["title", "overview", "resources", "dailyReview", "fluency", "launch", "content", "heroVisual", "textExtract", "choice", "boardBuild", "pairShare", "scenario"];
+  // Every deck: LI and SC come before the launch (megaprompt 0a item 23, 85).
+  const preLiAllowed = ["title", "overview", "resources", "dailyReview", "fluency"];
   let launchAfterLi = false;
 
   slides.forEach((slide, i) => {
@@ -683,9 +717,6 @@ function validateLessonSpec(spec, opts) {
     if (liIndex === -1 && i > 0 && !preLiAllowed.includes(slide.kind)) {
       errors.push(`${w}: ${slide.kind} cannot come before the LI and SC slide (megaprompt 0a item 23).`);
     }
-    if (liIndex === -1 && ["launch", "content", "heroVisual", "textExtract", "choice", "boardBuild", "pairShare", "scenario"].includes(slide.kind)) {
-      launchLikeBeforeLi = true;
-    }
     if (liIndex !== -1 && i > liIndex && slide.kind === "launch") launchAfterLi = true;
   });
 
@@ -693,9 +724,7 @@ function validateLessonSpec(spec, opts) {
     if (resourcesIndex === -1) errors.push("slides: no resources slide. Add { \"kind\": \"resources\" } straight after the title (megaprompt 44).");
     else if (resourcesIndex > 2) errors.push(`slides[${resourcesIndex}]: the resources slide belongs immediately after the title (an overview may sit between).`);
     if (liIndex === -1) errors.push("slides: no li slide (Learning Intention and Success Criteria).");
-    if (planner56) {
-      if (liIndex !== -1 && !launchAfterLi) errors.push("slides: Years 5-6 maths puts a launch slide straight after the LI and SC slide (megaprompt 85).");
-    } else if (liIndex !== -1 && !launchLikeBeforeLi) errors.push("slides: no launch before the LI slide. Every lesson needs a launch (megaprompt 0a item 17).");
+    if (liIndex !== -1 && !launchAfterLi) errors.push("slides: no launch after the LI and SC slide. Every session has a launch, and it comes after the LI and SC (megaprompt 0a items 17 and 23).");
     if (subject === "numeracy") {
       if (dailyIndex === -1) errors.push("slides: a numeracy lesson needs a dailyReview slide (megaprompt 22).");
       if (fluencyIndex === -1) errors.push("slides: a numeracy lesson needs a fluency slide (megaprompt 23).");
@@ -708,7 +737,7 @@ function validateLessonSpec(spec, opts) {
     else validateExitTicket(spec, slides, exitIndex, errors);
     validateReviewSources(spec, slides, errors, vopts.taughtLog);
     validatePracticeVolume(spec, errors);
-    if (planner56) validatePlanner56(spec, slides, errors);
+    validatePlanningRules(spec, slides, errors);
     const kinds = slides.map((s) => s && s.kind);
     if (!kinds.includes("cfu") && !kinds.includes("choice")) warnings.push("slides: no cfu or choice slide. Where is the decision-grade check (megaprompt 36, 76)?");
     const youDoRound = slides.some((sl) => sl && sl.kind === "practice" && /you do/i.test(String(sl.badge || "")));
@@ -761,9 +790,20 @@ function validateLessonSpec(spec, opts) {
       if (!blocks.length) errors.push(`${w}.blocks: at least one block`);
       blocks.forEach((b, j) => {
         if (b && b.visual) validateVisual(b.visual, `${w}.blocks[${j}].visual`, errors, { pdf: true });
-        const allowed = ["heading", "text", "tip", "steps", "visual", "lines", "organiser", "box"];
+        const allowed = ["heading", "text", "passage", "tip", "steps", "checklist", "visual", "lines", "organiser", "box"];
         if (b && !allowed.some((k) => b[k] != null)) errors.push(`${w}.blocks[${j}]: needs one of ${allowed.join(", ")}`);
       });
+    }
+    if (r.kind === "crossword") {
+      const words = Array.isArray(r.words) ? r.words : [];
+      if (words.length < 4 || words.length > 16) errors.push(`${w}.words: 4 to 16 words { answer, clue }.`);
+      words.forEach((wd, j) => {
+        if (!wd || !/^[A-Za-z ]{2,}$/.test(String(wd.answer || ""))) errors.push(`${w}.words[${j}].answer: letters only (spaces are dropped), at least two.`);
+        if (!wd || !isNonEmptyString(wd.clue)) errors.push(`${w}.words[${j}].clue: a short clue in student words.`);
+      });
+      if (words.length >= 4) {
+        try { require("./crossword").buildCrossword(r); } catch (err) { errors.push(`${w}: ${err.message.replace(/^\[crossword\]\s*/, "")}`); }
+      }
     }
     if (r.kind === "cards") {
       const cards = Array.isArray(r.cards) ? r.cards : [];
@@ -771,9 +811,9 @@ function validateLessonSpec(spec, opts) {
       cards.forEach((c, j) => { if (c && c.visual) validateVisual(c.visual, `${w}.cards[${j}].visual`, errors, { pdf: true }); });
     }
   });
-  if (resources.length > 2 && !isPlanner56(spec)) warnings.push("resources: more than two printed resources. Default is zero or one (megaprompt 0a item 7).");
+  if (resources.length > 2 && !followsPlanningRules(spec)) warnings.push("resources: more than two printed resources. Default is zero or one (megaprompt 0a item 7).");
 
   return { errors, warnings };
 }
 
-module.exports = { validateLessonSpec, practiceCounts, YOUR_TURN_STEPS, KINDS, RESOURCE_KINDS, PDF_VISUAL_TYPES, BADGE_COLORS };
+module.exports = { validateLessonSpec, practiceCounts, YOUR_TURN_STEPS, LITERACY_YOUR_TURN_STEPS, yourTurnSteps, followsPlanningRules, KINDS, RESOURCE_KINDS, PDF_VISUAL_TYPES, BADGE_COLORS };

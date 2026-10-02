@@ -171,7 +171,7 @@ const MAX_LINE_WORDS = 16;
 
 // A continuation line must never begin with a token that groupGlanceUnits
 // treats as the start of a new logical unit, or one beat would be read as two.
-const UNIT_START_TOKEN = /^(?:ANSWER:|REVEALED[.:]|\d+[.)]\s|TRAP:|STRETCH:|HELP:|CARE:|SCAN\b|REVEAL\b)/;
+const UNIT_START_TOKEN = /^(?:ANSWER:|REVEALED[.:]|\d+[.)]\s|TRAP:|STRETCH:|EXTENSION:|HELP:|CARE:|SCAN\b|REVEAL\b)/;
 
 /**
  * Break a physical line that exceeds the rendered word budget into a first
@@ -251,7 +251,7 @@ function wrapGlanceLine(line) {
  *                                                    indented continuation lines.
  * @param {string|string[]}           [input.trap]    "error. Fix: move, student redoes" (TRAP: prefixed;
  *                                                    an array renders as continuation lines)
- * @param {string}                    [input.stretch] STRETCH content (core teaching slides)
+ * @param {string}                    [input.stretch] EXTENSION line content (core teaching slides; the label was STRETCH before v12.12)
  * @param {string}                    [input.help]    HELP content (core teaching slides)
  * @param {string}                    [input.care]    CARE: content (sensitive content only)
  * @param {string|string[]}           [input.prep]    prep-zone purpose line(s)
@@ -288,7 +288,7 @@ function composeGlanceNotes(input, opts) {
   }
 
   const stretchHelp = [];
-  if (i.stretch) stretchHelp.push(`STRETCH: ${String(i.stretch).trim()}`);
+  if (i.stretch) stretchHelp.push(`EXTENSION: ${String(i.stretch).trim()}`);
   if (i.help) stretchHelp.push(`HELP: ${String(i.help).trim()}`);
   if (stretchHelp.length) blocks.push(stretchHelp);
 

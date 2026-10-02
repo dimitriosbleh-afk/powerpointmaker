@@ -190,7 +190,7 @@ const THINK_TIME_RE = /\b\d+(?:\.\d+)?\s*(?:sec|secs|second|seconds)\b/i;
 // EXPECT: line, pivot branch) attaches to the unit above it. This is what
 // lets the airy v12.3 format split one beat across several short lines while
 // validation still reasons about whole beats.
-const UNIT_START_RE = /^(?:ANSWER:|REVEALED[.:]|\d+[.)]\s|TRAP:|STRETCH:|HELP:|CARE:|SCAN\b|REVEAL\b)/;
+const UNIT_START_RE = /^(?:ANSWER:|REVEALED[.:]|\d+[.)]\s|TRAP:|STRETCH:|EXTENSION:|HELP:|CARE:|SCAN\b|REVEAL\b)/;
 
 function groupGlanceUnits(liveLines) {
   const units = [];
@@ -326,7 +326,7 @@ function getTeacherNotesSourceIssues(notes, opts) {
     const units = groupGlanceUnits(liveLines);
     // STRETCH and HELP sit on separate physical lines but count as one unit.
     const unitCount = units.length - units.filter((unit, idx) =>
-      /^HELP:/.test(unit.first) && idx > 0 && /^STRETCH:/.test(units[idx - 1].first)
+      /^HELP:/.test(unit.first) && idx > 0 && /^(?:STRETCH|EXTENSION):/.test(units[idx - 1].first)
     ).length;
     if (unitCount > maxLiveZoneUnits) {
       issues.push(`glance live zone exceeds ${maxLiveZoneUnits} logical units (${unitCount})`);
@@ -415,7 +415,7 @@ function getSlideNotesText(slide) {
 // they survive into PowerPoint and Google Slides presenter view (mirrors the
 // OG builder, which has always bolded its note labels). Case-sensitive on
 // purpose: "show" inside SAY speech must not match SHOW.
-const NOTE_BOLD_TOKEN_RE = /(\d+[.)](?=\s)|ANSWER:|REVEALED[.:]|SAY:|ASK:|EXPECT:|ACCEPT:|SCAN\b|TRAP:|Fix:|Cue:|STRETCH:|HELP:|CARE:|REVEAL\b|MODEL\b|POINT\b|SHOW\b|DRAW\b|BUILD\b|COVER\b|COLLECT\b|CIRCULATE\b|TIME:|SOURCES:|WHY:)/g;
+const NOTE_BOLD_TOKEN_RE = /(\d+[.)](?=\s)|ANSWER:|REVEALED[.:]|SAY:|ASK:|EXPECT:|ACCEPT:|SCAN\b|TRAP:|Fix:|Cue:|STRETCH:|EXTENSION:|HELP:|CARE:|REVEAL\b|MODEL\b|POINT\b|SHOW\b|DRAW\b|BUILD\b|COVER\b|COLLECT\b|CIRCULATE\b|TIME:|SOURCES:|WHY:)/g;
 
 function noteLineToRunsXml(line) {
   // split() with a single capture group alternates plain (even index) and
@@ -616,7 +616,7 @@ function installSlideTextPatch(PptxGenJS) {
 
   function patchedAddText(text, options) {
     let cleanText = text;
-    // A slide marked __noBullets (Years 5-6 maths, megaprompt 85) keeps its
+    // A slide marked __noBullets (every spec-built deck, megaprompt 85) keeps its
     // paragraphs but never shows bullet markers.
     const noBullets = Boolean(this && this.__noBullets);
     if (noBullets && Array.isArray(text)) {

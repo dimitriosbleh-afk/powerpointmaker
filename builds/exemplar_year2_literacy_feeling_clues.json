@@ -46,6 +46,30 @@
       "notes": "Prep slide. No printing today: every practice task is answered on boards. Whiteboards and markers for every child. Draw the Clue | Feeling chart on the board beforehand. The stories are original, written for this session."
     },
     {
+      "kind": "li",
+      "learningIntention": "We are learning to find clues in the words that show how a character feels.",
+      "successCriteria": [
+        "I can name a feeling.",
+        "I can find a clue in the words that shows the feeling.",
+        "I can say: I think ... feels ... because ..."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today we find clues in the words that show how a character feels."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: We'll start with the first one and build up together.",
+            "Finding the clue is our big goal today."
+          ]
+        ],
+        "prep": "SC1 naming a feeling is reachable for all; SC2 finding the clue is the core target and the exit evidence; SC3 the full sentence stem is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
       "kind": "launch",
       "title": "How do you know how someone feels?",
       "visual": {
@@ -83,30 +107,6 @@
         ],
         "prep": "Launch bridges reading faces, which every child can do, into reading words. Low-coupling, under 4 minutes.",
         "tag": "[Launch | Planning made visible | HITS 1]"
-      }
-    },
-    {
-      "kind": "li",
-      "learningIntention": "We are learning to find clues in the words that show how a character feels.",
-      "successCriteria": [
-        "I can name a feeling.",
-        "I can find a clue in the words that shows the feeling.",
-        "I can say: I think ... feels ... because ..."
-      ],
-      "notes": {
-        "beats": [
-          [
-            "POINT to the learning intention.",
-            "SAY: Today we find clues in the words that show how a character feels."
-          ],
-          "SAY: Read the I can lines with me. Everyone, together, on three.",
-          [
-            "SAY: We'll start with the first one and build up together.",
-            "Finding the clue is our big goal today."
-          ]
-        ],
-        "prep": "SC1 naming a feeling is reachable for all; SC2 finding the clue is the core target and the exit evidence; SC3 the full sentence stem is the stretch.",
-        "tag": "[LI/SC | Planning made visible | HITS 1]"
       }
     },
     {

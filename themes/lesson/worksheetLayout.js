@@ -102,6 +102,29 @@ function choicePer(doc, item, iw, S) {
   return Math.max(1, Math.min(opts.length || 1, Math.floor((iw + 8) / (need + 8))));
 }
 
+/** Choice options wrap when a sentence is longer than its box (literacy options are sentences). */
+function choiceGeometry(doc, item, iw, S) {
+  const opts = (item.options || []).map(String);
+  const per = choicePer(doc, item, iw, S);
+  const ow = (iw - 8 * (per - 1)) / per;
+  doc.save().font("Sans-Bold").fontSize(S.prompt);
+  const hs = opts.map((o) => Math.max(S.answerH + 4, doc.heightOfString(o, { width: ow - 14 }) + 10));
+  doc.restore();
+  const rowHs = [];
+  hs.forEach((h, i) => { const r = Math.floor(i / per); rowHs[r] = Math.max(rowHs[r] || 0, h); });
+  return { opts, per, ow, rowHs, total: rowHs.reduce((t, h) => t + h + 6, 0) };
+}
+
+/** Table geometry: optional column widths (fractions) and a taller row for written answers. */
+function tableGeometry(item, iw, S) {
+  const cols = item.columns || [];
+  const fr = Array.isArray(item.widths) && item.widths.length === cols.length ? item.widths : cols.map(() => 1);
+  const sum = fr.reduce((t, f) => t + f, 0) || 1;
+  const ws = fr.map((f) => (iw * f) / sum);
+  const xs = ws.map((_, j) => ws.slice(0, j).reduce((t, w) => t + w, 0));
+  return { ws, xs, headH: S.answerH + 2, rowH: item.rowH || S.answerH + 2 };
+}
+
 /** A part's printed prompt, lettered: measured and drawn from the same string. */
 function partText(pt, i) { return `${String.fromCharCode(97 + i)})  ${pt.prompt}`; }
 
@@ -157,25 +180,26 @@ function measureCard(doc, item, cw, ctx, level) {
     const lines = item.lines || (item.answerLines > 1 ? item.answerLines : 0);
     workMin = item.working === "none" ? 0 : (lines ? lines * S.line : (item.workMin || item.box || 34));
   } else if (k === "table") {
-    const rows = (item.rows || []).length + 1;
-    h += rows * (S.answerH + 2) + 4;
+    const g = tableGeometry(item, iw, S);
+    h += g.headH + (item.rows || []).length * g.rowH + 4;
     workMin = 0;
   } else if (k === "sort") {
     const chipsH = Math.ceil((item.cards || []).length / sortPer(doc, item, iw, S)) * (S.answerH + 4);
     h += chipsH + 22;
     workMin = 50;
   } else if (k === "choice") {
-    const rows = Math.ceil((item.options || []).length / choicePer(doc, item, iw, S));
-    h += rows * (S.answerH + 10);
+    h += choiceGeometry(doc, item, iw, S).total + 4;
     workMin = item.reason ? 2 * S.line : 0;
   } else if (k === "mistake") {
     const work = (item.work || []).join("\n");
     h += textH(doc, work, "Sans-Italic", S.prompt, iw - 24) + 22 + S.small + 6;
     workMin = 2 * S.line;
   } else if (k === "open") {
-    workMin = item.workMin || 80;
+    workMin = item.workMin || (item.lines ? item.lines * S.line : 80);
   }
-  return { fixed: h + PAD, workMin, diagramH, diagramPref, grows: workMin > 0 };
+  // A writing table (taller rows) grows into spare space: its rows get taller.
+  const growsTable = k === "table" && item.rowH != null;
+  return { fixed: h + PAD, workMin, diagramH, diagramPref, grows: workMin > 0 || growsTable };
 }
 
 /* ── Building blocks ───────────────────────────────────────────────────── */
@@ -279,7 +303,11 @@ function buildBlocks(doc, resource, ctx) {
       // A row whose only growing space is ruled lines stops at a few extra lines:
       // ten empty lines under "How do you know?" reads as a mistake, not room.
       const lined = row.every((r, j) => !mins[j].grows || isLined(r.item));
-      group.push({ type: "row", sec, colour, cols, cw, cells: row, minH: minH + GAP, prefH: prefH + GAP, maxH: maxH + GAP, grows: mins.some((m) => m.grows), workCap: lined ? 4 * S.line : 220 });
+      // A writing table grows to about double its row height, then stops.
+      const tablesOnly = row.every((r, j) => !mins[j].grows || kindOf(r.item) === "table");
+      const tableCap = Math.max(0, ...row.map((r) => (kindOf(r.item) === "table" && r.item.rowH ? (r.item.rows || []).length * r.item.rowH : 0)));
+      const workCap = lined ? 4 * S.line : (tablesOnly && tableCap ? Math.min(220, tableCap) : 220);
+      group.push({ type: "row", sec, colour, cols, cw, cells: row, minH: minH + GAP, prefH: prefH + GAP, maxH: maxH + GAP, grows: mins.some((m) => m.grows), workCap });
     });
     // Keep a heading with its intro, example and first row of questions.
     const lead = group.findIndex((b) => b.type === "row");
@@ -337,11 +365,22 @@ function paginate(blocks, resource, ctx) {
   if (pages.length === 2 && !forced.length) {
     let bestSplit = pages[0][1];
     let bestDiff = Infinity;
+    // Space a page cannot fill: its spare height beyond what its rows can absorb
+    // (working space up to each row's cap, plus a little air). A page of fixed
+    // questions must not end in a blank band, so that space is weighed first.
+    const blank = (a, b, cap) => {
+      const spare = cap - sum(a, b);
+      const absorb = blocks.slice(a, b).filter((x) => x.type === "row")
+        .reduce((t, x) => t + (x.grows ? x.workCap : 0) + 60, 0);
+      return Math.max(0, spare - absorb);
+    };
     breaks.forEach((b) => {
       const a = sum(0, b);
       const c = sum(b, blocks.length);
-      if (a <= capacity(0, resource, ctx) && c <= capacity(1, resource, ctx)) {
-        const diff = Math.abs(a / capacity(0, resource, ctx) - c / capacity(1, resource, ctx));
+      const cap0 = capacity(0, resource, ctx);
+      const cap1 = capacity(1, resource, ctx);
+      if (a <= cap0 && c <= cap1) {
+        const diff = (blank(0, b, cap0) + blank(b, blocks.length, cap1)) * 10 + Math.abs(a / cap0 - c / cap1);
         if (diff < bestDiff) { bestDiff = diff; bestSplit = b; }
       }
     });
@@ -512,24 +551,38 @@ function drawCard(doc, cell, x, y, cw, h, block, ctx) {
   } else if (k === "table") {
     const cols = item.columns || [];
     const rows = item.rows || [];
-    const cwid = iw / Math.max(cols.length, 1);
-    const rh = S.answerH + 2;
+    const g = tableGeometry(item, iw, S);
+    // A writing table shares out any extra card height between its rows.
+    if (item.rowH != null && rows.length) g.rowH = Math.max(g.rowH, (bottom - cy - g.headH - 2) / rows.length);
+    const tall = g.rowH > S.answerH + 2;
     cols.forEach((c, j) => {
-      doc.save().rect(x + PAD + j * cwid, cy, cwid, rh).fillAndStroke(tint(colour, 0.8), tint(colour, 0.4)).restore();
-      const fs = fitSize(doc, "Sans-Bold", c, S.small, cwid - 6);
-      doc.save().font("Sans-Bold").fontSize(fs).fillColor("#1F2530").text(String(c), x + PAD + j * cwid + 3, cy + (rh - fs) / 2 - 1, { width: cwid - 6, align: "center", lineBreak: false }).restore();
+      doc.save().rect(x + PAD + g.xs[j], cy, g.ws[j], g.headH).fillAndStroke(tint(colour, 0.8), tint(colour, 0.4)).restore();
+      const fs = fitSize(doc, "Sans-Bold", c, S.small, g.ws[j] - 6);
+      doc.save().font("Sans-Bold").fontSize(fs).fillColor("#1F2530").text(String(c), x + PAD + g.xs[j] + 3, cy + (g.headH - fs) / 2 - 1, { width: g.ws[j] - 6, align: "center", lineBreak: false }).restore();
     });
     rows.forEach((r, i) => {
-      const ry = cy + (i + 1) * rh;
+      const ry = cy + g.headH + i * g.rowH;
       r.forEach((cell, j) => {
-        doc.save().lineWidth(0.7).strokeColor(tint(colour, 0.4)).rect(x + PAD + j * cwid, ry, cwid, rh).stroke().restore();
+        const cx = x + PAD + g.xs[j];
+        const cw = g.ws[j];
+        doc.save().lineWidth(0.7).strokeColor(tint(colour, 0.4)).rect(cx, ry, cw, g.rowH).stroke().restore();
         const given = cell != null && cell !== "";
         const keyVal = item.answers && item.answers[i] ? item.answers[i][j] : null;
         const val = given ? cell : (isKey ? keyVal : null);
-        if (val != null && val !== "") {
-          const fs = fitSize(doc, given ? "Sans" : "Sans-Bold", val, S.small, cwid - 6);
-          doc.save().font(given ? "Sans" : "Sans-Bold").fontSize(fs).fillColor(given ? "#1F2530" : colour)
-            .text(String(val), x + PAD + j * cwid + 3, ry + (rh - fs) / 2 - 1, { width: cwid - 6, align: "center", lineBreak: false }).restore();
+        if (val == null || val === "") return;
+        const font = given ? "Sans" : "Sans-Bold";
+        if (tall) {
+          // A tall row holds a sentence: wrap it, shrinking only if it would overflow the cell.
+          let fs = S.small;
+          doc.font(font);
+          while (fs > 7 && doc.fontSize(fs).heightOfString(String(val), { width: cw - 8 }) > g.rowH - 6) fs -= 0.5;
+          const th = doc.fontSize(fs).heightOfString(String(val), { width: cw - 8 });
+          doc.save().font(font).fontSize(fs).fillColor(given ? "#1F2530" : colour)
+            .text(String(val), cx + 4, ry + Math.max(3, (g.rowH - th) / 2), { width: cw - 8, align: "center" }).restore();
+        } else {
+          const fs = fitSize(doc, font, val, S.small, cw - 6);
+          doc.save().font(font).fontSize(fs).fillColor(given ? "#1F2530" : colour)
+            .text(String(val), cx + 3, ry + (g.rowH - fs) / 2 - 1, { width: cw - 6, align: "center", lineBreak: false }).restore();
         }
       });
     });
@@ -557,18 +610,22 @@ function drawCard(doc, cell, x, y, cw, h, block, ctx) {
       }
     });
   } else if (k === "choice") {
-    const opts = item.options || [];
-    const per = choicePer(doc, item, iw, S);
-    const ow = (iw - 8 * (per - 1)) / per;
+    const cg = choiceGeometry(doc, item, iw, S);
+    const { opts, per, ow } = cg;
     const correct = [].concat(item.answer == null ? [] : item.answer);
+    let oy = cy;
     opts.forEach((o, i) => {
+      const r = Math.floor(i / per);
+      if (i > 0 && i % per === 0) oy += cg.rowHs[r - 1] + 6;
+      const oh = cg.rowHs[r];
       const ox = x + PAD + (i % per) * (ow + 8);
-      const oy = cy + Math.floor(i / per) * (S.answerH + 10);
-      doc.save().lineWidth(0.9).strokeColor(tint(colour, 0.3)).roundedRect(ox, oy, ow, S.answerH + 4, 8).stroke().restore();
-      doc.save().font("Sans-Bold").fontSize(S.prompt).fillColor("#1F2530").text(String(o), ox, oy + (S.answerH + 4 - S.prompt) / 2 - 1, { width: ow, align: "center", lineBreak: false }).restore();
-      if (isKey && correct.includes(i)) doc.save().lineWidth(2.2).strokeColor(colour).ellipse(ox + ow / 2, oy + (S.answerH + 4) / 2, ow / 2 - 2, (S.answerH + 4) / 2 + 3).stroke().restore();
+      doc.save().lineWidth(0.9).strokeColor(tint(colour, 0.3)).roundedRect(ox, oy, ow, oh, 8).stroke().restore();
+      doc.font("Sans-Bold").fontSize(S.prompt);
+      const th = doc.heightOfString(String(o), { width: ow - 14 });
+      doc.save().font("Sans-Bold").fontSize(S.prompt).fillColor("#1F2530").text(String(o), ox + 7, oy + (oh - th) / 2, { width: ow - 14, align: "center" }).restore();
+      if (isKey && correct.includes(i)) doc.save().lineWidth(2.2).strokeColor(colour).roundedRect(ox - 3, oy - 3, ow + 6, oh + 6, 10).stroke().restore();
     });
-    cy += Math.ceil(opts.length / per) * (S.answerH + 10);
+    cy += cg.total + 4;
     if (item.reason) {
       doc.save().font("Sans-Italic").fontSize(S.small).fillColor("#5B6472").text("Because...", x + PAD, cy + 2, { lineBreak: false }).restore();
       drawLines(doc, x + PAD, cy, iw, bottom - cy, S);
@@ -586,7 +643,8 @@ function drawCard(doc, cell, x, y, cw, h, block, ctx) {
     drawLines(doc, x + PAD, cy, iw, bottom - cy, S);
     if (isKey && item.answer) keyText(doc, item.answer, x + PAD + 2, cy, iw - 4, S, colour, true, bottom - cy);
   } else if (k === "open") {
-    drawSquares(doc, x + PAD, cy, iw, bottom - cy, S);
+    // Writing tasks (lines set) get ruled lines; maths make-your-own gets squared paper.
+    if (item.lines) drawLines(doc, x + PAD, cy, iw, bottom - cy, S); else drawSquares(doc, x + PAD, cy, iw, bottom - cy, S);
     if (isKey && item.answer) doc.save().font("Sans-Bold").fontSize(S.small).fillColor(colour).text(String(item.answer), x + PAD + 4, cy + 4, { width: iw - 8 }).restore();
   }
 }

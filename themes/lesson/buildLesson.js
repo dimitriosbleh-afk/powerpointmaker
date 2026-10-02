@@ -23,7 +23,7 @@ const { addResourceSlide, getSessionResourceFolder } = require("../pdf_helpers")
 const { validateLessonSpec } = require("./validate");
 const { buildResources } = require("./resources");
 const { expandSpec } = require("./practice");
-const { YOUR_TURN_STEPS } = require("./validate");
+const { yourTurnSteps, followsPlanningRules } = require("./validate");
 
 const ROOT = path.resolve(__dirname, "..", "..");
 
@@ -161,12 +161,10 @@ async function buildLesson(authored, opts) {
 
   const pres = new pptxgen();
   pres.layout = "LAYOUT_16x9";
-  // Years 5-6 maths: no bullet points on any slide (megaprompt 85).
-  const planner56 = L.subject === "numeracy" && L.yearLevel === "grade56";
-  if (planner56) {
-    const addSlide = pres.addSlide.bind(pres);
-    pres.addSlide = (...args) => { const sl = addSlide(...args); sl.__noBullets = true; return sl; };
-  }
+  // No bullet points on any slide (megaprompt 85).
+  const addSlide = pres.addSlide.bind(pres);
+  pres.addSlide = (...args) => { const sl = addSlide(...args); sl.__noBullets = true; return sl; };
+  const standardSteps = followsPlanningRules(spec);
 
   const liSlideSpec = spec.slides.find((s) => s.kind === "li");
   const scItems = liSlideSpec ? toList(liSlideSpec.successCriteria) : [];
@@ -268,8 +266,8 @@ async function buildLesson(authored, opts) {
         break;
 
       case "youDo":
-        // Years 5-6 maths uses the staff's standard Your turn steps (megaprompt 85).
-        s = T.youDoSlide(pres, slide.title, slide.task, planner56 && slide.steps == null ? YOUR_TURN_STEPS.slice() : toList(slide.steps), notes, footer, {
+        // Years 5-6 maths and literacy use the staff's standard Your turn steps (megaprompt 85).
+        s = T.youDoSlide(pres, slide.title, slide.task, standardSteps && slide.steps == null ? yourTurnSteps(L.subject).slice() : toList(slide.steps), notes, footer, {
           where: slide.where, visual: slide.visual, visualLabel: slide.visualLabel, frame: slide.frame,
           badgeText: slide.badge ? badgeTextFor(T, slide) : undefined,
           badgeColor: slide.badgeColor ? badgeColorFor(T, slide) : undefined,

@@ -34,9 +34,8 @@
   },
   "materials": {
     "studentTools": [
-      "Science journals and pencils",
-      "Mini-whiteboards and markers",
-      "Printed Water Cycle Scaffold for students who need it"
+      "Pencils and coloured pencils",
+      "Mini-whiteboards and markers"
     ],
     "routineIcons": [
       "Write it, chin it, show me",
@@ -49,63 +48,498 @@
   },
   "resources": [
     {
-      "kind": "page",
-      "label": "Water Cycle Scaffold",
-      "description": "Enabling scaffold for the You Do. The four stages are named and pictured; students order them, draw the loop and explain it.",
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: sort, spot and explain the water cycle.",
       "title": "The Water Cycle",
-      "subtitle": "Order the stages, draw the loop, explain why it repeats.",
-      "blocks": [
+      "subtitle": "Name it, spot it in real life, explain the loop.",
+      "sections": [
         {
-          "heading": "The four stages"
-        },
-        {
-          "visual": {
-            "type": "pictograms",
-            "items": [
-              {
-                "name": "hot",
-                "label": "evaporation"
-              },
-              {
-                "name": "cloud",
-                "label": "condensation"
-              },
-              {
-                "name": "rain",
-                "label": "precipitation"
-              },
-              {
-                "name": "waves",
-                "label": "collection"
+          "title": "Name the stage",
+          "columns": 1,
+          "example": {
+            "prompt": "The sun warms the sea and water rises into the air. Which stage is this?",
+            "steps": [
+              "Find the clue: warms and rises.",
+              "Warming turns liquid water into vapour.",
+              "Liquid to vapour is evaporation."
+            ],
+            "answer": "evaporation"
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "Write each event under its stage.",
+              "groups": [
+                "evaporation",
+                "condensation",
+                "precipitation",
+                "collection"
+              ],
+              "cards": [
+                "a swimmer's wet hair dries in the sun",
+                "drops form on a cold can of drink",
+                "hail falls on the netball courts",
+                "water soaks into the garden",
+                "clouds build up over the hills",
+                "snow settles on Mt Kosciuszko",
+                "rain fills the school water tank",
+                "a pot of soup boils down"
+              ],
+              "answer": {
+                "evaporation": [
+                  "a swimmer's wet hair dries in the sun",
+                  "a pot of soup boils down"
+                ],
+                "condensation": [
+                  "drops form on a cold can of drink",
+                  "clouds build up over the hills"
+                ],
+                "precipitation": [
+                  "hail falls on the netball courts",
+                  "snow settles on Mt Kosciuszko"
+                ],
+                "collection": [
+                  "water soaks into the garden",
+                  "rain fills the school water tank"
+                ]
               }
-            ]
-          }
+            },
+            {
+              "kind": "table",
+              "prompt": "Fill in the gaps.",
+              "columns": [
+                "Stage",
+                "What the water does",
+                "Warming or cooling?"
+              ],
+              "rows": [
+                [
+                  "evaporation",
+                  "liquid turns into vapour",
+                  "warming"
+                ],
+                [
+                  "condensation",
+                  "",
+                  ""
+                ],
+                [
+                  "precipitation",
+                  "",
+                  ""
+                ],
+                [
+                  "collection",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "evaporation",
+                  "liquid turns into vapour",
+                  "warming"
+                ],
+                [
+                  "condensation",
+                  "vapour turns into tiny drops",
+                  "cooling"
+                ],
+                [
+                  "precipitation",
+                  "drops fall as rain, hail or snow",
+                  "cooling (drops grow heavy)"
+                ],
+                [
+                  "collection",
+                  "water gathers in seas, rivers, lakes and the ground",
+                  "either: it waits to warm again"
+                ]
+              ]
+            }
+          ]
         },
         {
-          "organiser": {
-            "left": "Stage, in order",
-            "right": "What happens to the water",
-            "rows": 4,
-            "leftContent": [
-              "1. Evaporation",
-              "2.",
-              "3.",
-              "4."
-            ]
-          }
+          "title": "Spot it in real life",
+          "columns": 2,
+          "example": {
+            "prompt": "After a footy match, the change-room mirror fogs up. Which stage, and why?",
+            "steps": [
+              "What changed? Warm, wet air touched a cold mirror.",
+              "Cooling turns vapour into drops.",
+              "Vapour to drops is condensation."
+            ],
+            "answer": "condensation: the vapour cooled on the mirror"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "A water bottle is left in a hot car. Later there are drops inside the lid. Which stage made the drops?",
+              "options": [
+                "evaporation",
+                "condensation",
+                "precipitation",
+                "collection"
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "Condensation. Water evaporated in the heat, then the vapour cooled on the lid and turned into drops."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Jack explains why his cold drink can is wet on the outside. Find his mistake and fix it.",
+              "work": [
+                "The drink leaked out through the can.",
+                "So the water on the outside came from inside."
+              ],
+              "answer": "The can did not leak. Vapour in the air cooled on the cold can and turned into drops: condensation."
+            }
+          ]
         },
         {
-          "box": 190,
-          "label": "Draw the cycle as a loop. Add arrows to show the water moving."
+          "title": "Explain the loop",
+          "columns": 2,
+          "example": {
+            "prompt": "Why does Earth never run out of water?",
+            "steps": [
+              "Follow one drop: it evaporates, condenses, falls and collects.",
+              "After collection the sun warms it and it evaporates again.",
+              "The same water goes round and round."
+            ],
+            "answer": "The same water is used again and again, so it never runs out."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Draw your own water cycle diagram: a loop with all four stages labelled and arrows going one way.",
+              "answer": "A closed loop: evaporation, condensation, precipitation, collection, arrows all one way, back to evaporation."
+            },
+            {
+              "prompt": "Is the water cycle a cycle or a straight line? Use the words warming and cooling in your answer.",
+              "answer": "A cycle. Warming makes the water evaporate, cooling makes it condense and fall, then it collects and warms again, so it repeats.",
+              "lines": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option, with worked examples.",
+      "title": "Extension: Water Cycle Detectives",
+      "subtitle": "Use warming and cooling to explain what you see.",
+      "sections": [
+        {
+          "title": "Faster or slower?",
+          "columns": 1,
+          "intro": "Water evaporates faster when it is warmer, when wind carries the vapour away, and when it is spread out thin.",
+          "example": {
+            "prompt": "Which dries first: a wet beach towel in the sun or one in the shade?",
+            "steps": [
+              "Drying is evaporation.",
+              "Evaporation is faster when the water is warmer.",
+              "The sun warms the towel more, so it dries first."
+            ],
+            "answer": "the towel in the sun"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Will each change make a puddle evaporate faster or slower? Say why.",
+              "columns": [
+                "Change",
+                "Faster or slower?",
+                "Why?"
+              ],
+              "rows": [
+                [
+                  "a hotter day",
+                  "faster",
+                  "more warming"
+                ],
+                [
+                  "a cloudy day",
+                  "",
+                  ""
+                ],
+                [
+                  "a windy day",
+                  "",
+                  ""
+                ],
+                [
+                  "a cold night",
+                  "",
+                  ""
+                ],
+                [
+                  "the puddle is spread thin",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "a hotter day",
+                  "faster",
+                  "more warming"
+                ],
+                [
+                  "a cloudy day",
+                  "slower",
+                  "less warming from the sun"
+                ],
+                [
+                  "a windy day",
+                  "faster",
+                  "wind carries the vapour away"
+                ],
+                [
+                  "a cold night",
+                  "slower",
+                  "less warming"
+                ],
+                [
+                  "the puddle is spread thin",
+                  "faster",
+                  "more water touches the air"
+                ]
+              ]
+            },
+            {
+              "prompt": "Why does the bathroom mirror fog up more in winter than in summer?",
+              "answer": "The mirror is colder in winter, so more vapour cools on it and condenses.",
+              "lines": 2
+            }
+          ]
         },
         {
-          "heading": "Why is it a cycle and not a line?"
+          "title": "A drop's long journey",
+          "columns": 1,
+          "example": {
+            "prompt": "A drop falls as snow in the Snowy Mountains. What happens to it next?",
+            "steps": [
+              "It is stored as snow for months: collection.",
+              "In spring it warms and melts into a river.",
+              "The river carries it to the sea, where it can evaporate."
+            ],
+            "answer": "stored as snow, melts, flows to the sea, evaporates again"
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write the journey of a raindrop that lands on the MCG and ends up in a cloud. Use all four stages.",
+              "answer": "e.g. It falls on the MCG (precipitation), runs into a drain and the Yarra (collection), warms and rises as vapour (evaporation), then cools into a cloud (condensation)."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Ava wrote this about groundwater. Find her mistake and fix it.",
+              "work": [
+                "Water that soaks underground is out of the water cycle for good."
+              ],
+              "answer": "It is still in the cycle. Groundwater seeps into rivers or is pumped up, then it can evaporate again. It is just a slower part of the loop."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Clue words, choices and sentence starters.",
+      "title": "The Water Cycle",
+      "subtitle": "Look for the clue word: warm or cold, rise or fall.",
+      "sections": [
+        {
+          "title": "Find the clue",
+          "columns": 2,
+          "example": {
+            "prompt": "The sun warms a lake. Water rises into the air.",
+            "visual": {
+              "type": "pictograms",
+              "items": [
+                {
+                  "name": "hot",
+                  "label": "evaporation"
+                },
+                {
+                  "name": "cloud",
+                  "label": "condensation"
+                },
+                {
+                  "name": "rain",
+                  "label": "precipitation"
+                },
+                {
+                  "name": "waves",
+                  "label": "collection"
+                }
+              ]
+            },
+            "steps": [
+              "Clue words: warms, rises.",
+              "Warming makes vapour.",
+              "That is evaporation."
+            ],
+            "answer": "evaporation"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "A puddle shrinks on a hot day.",
+              "options": [
+                "evaporation",
+                "condensation",
+                "precipitation",
+                "collection"
+              ],
+              "answer": 0,
+              "hint": "Clue: hot. Warming makes vapour."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Clouds form high up, where the air is cold.",
+              "options": [
+                "evaporation",
+                "condensation",
+                "precipitation",
+                "collection"
+              ],
+              "answer": 1,
+              "hint": "Clue: cold. Cooling makes drops."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Rain falls on the oval.",
+              "options": [
+                "evaporation",
+                "condensation",
+                "precipitation",
+                "collection"
+              ],
+              "answer": 2,
+              "hint": "Clue: falls."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Rain runs into a dam.",
+              "options": [
+                "evaporation",
+                "condensation",
+                "precipitation",
+                "collection"
+              ],
+              "answer": 3,
+              "hint": "Clue: the water gathers."
+            }
+          ]
         },
         {
-          "lines": 3
+          "title": "Put the loop in order",
+          "columns": 1,
+          "example": {
+            "prompt": "What comes after evaporation?",
+            "visual": {
+              "type": "pictograms",
+              "items": [
+                {
+                  "name": "hot",
+                  "label": "evaporation"
+                },
+                {
+                  "name": "cloud",
+                  "label": "condensation"
+                },
+                {
+                  "name": "rain",
+                  "label": "precipitation"
+                },
+                {
+                  "name": "waves",
+                  "label": "collection"
+                }
+              ]
+            },
+            "steps": [
+              "Evaporation: the water rises as vapour.",
+              "High up it cools.",
+              "Cooling makes drops: condensation comes next."
+            ],
+            "answer": "condensation"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write the stages in order. The first one is done.",
+              "columns": [
+                "Order",
+                "Stage"
+              ],
+              "rows": [
+                [
+                  "1",
+                  "evaporation"
+                ],
+                [
+                  "2",
+                  ""
+                ],
+                [
+                  "3",
+                  ""
+                ],
+                [
+                  "4",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "1",
+                  "evaporation"
+                ],
+                [
+                  "2",
+                  "condensation"
+                ],
+                [
+                  "3",
+                  "precipitation"
+                ],
+                [
+                  "4",
+                  "collection"
+                ]
+              ],
+              "hint": "Use the pictures above: sun, cloud, rain, sea."
+            }
+          ]
         },
         {
-          "tip": "Stretch: where in the loop could the water be stored for a long time? Mark it on your drawing."
+          "title": "Say why it repeats",
+          "columns": 1,
+          "example": {
+            "prompt": "What happens to the water after collection?",
+            "steps": [
+              "The water sits in the sea or a lake.",
+              "The sun warms it.",
+              "It evaporates again, so the loop starts again."
+            ],
+            "answer": "it evaporates again"
+          },
+          "items": [
+            {
+              "prompt": "Why is the water cycle a loop?",
+              "hint": "Sentence starter: After collection, the water ... again, so ...",
+              "answer": "After collection, the water evaporates again, so the loop starts over.",
+              "lines": 2
+            }
+          ]
         }
       ]
     }
@@ -117,7 +551,31 @@
     },
     {
       "kind": "resources",
-      "notes": "Prep slide. Journals and whiteboards out. Draw the blank cycle ring on the board with four empty labels; it is filled live during the I Do. Print a few Water Cycle Scaffolds for students who need a different entry to the You Do. No earlier session is assumed."
+      "notes": "Prep slide. Journals and whiteboards out. Draw the blank cycle ring on the board with four empty labels; it is filled live during the I Do. Print the Worksheet for everyone, plus a few Extension and Supported Worksheet copies. No earlier session is assumed."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how water moves and changes as it travels through the water cycle.",
+      "successCriteria": [
+        "I can name the four stages of the water cycle.",
+        "I can put the stages in order and say what happens to the water at each one.",
+        "I can explain why the water cycle never runs out."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today we learn how water moves and changes through the water cycle."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Naming the stages is where we start.",
+            "Saying what the water does at each one is our goal today."
+          ]
+        ],
+        "prep": "SC1 naming is reachable for all; SC2 order and process is the core target; SC3 the never-runs-out explanation is the exit ticket stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
     },
     {
       "kind": "launch",
@@ -158,30 +616,6 @@
         ],
         "prep": "Launch surfaces the disappears misconception before the model corrects it. Low-coupling, under 5 minutes.",
         "tag": "[Launch | Planning made visible | HITS 1]"
-      }
-    },
-    {
-      "kind": "li",
-      "learningIntention": "We are learning how water moves and changes as it travels through the water cycle.",
-      "successCriteria": [
-        "I can name the four stages of the water cycle.",
-        "I can put the stages in order and say what happens to the water at each one.",
-        "I can explain why the water cycle never runs out."
-      ],
-      "notes": {
-        "beats": [
-          [
-            "POINT to the learning intention.",
-            "SAY: Today we learn how water moves and changes through the water cycle."
-          ],
-          "SAY: Read the I can lines with me. Everyone, together, on three.",
-          [
-            "SAY: Naming the stages is where we start.",
-            "Saying what the water does at each one is our goal today."
-          ]
-        ],
-        "prep": "SC1 naming is reachable for all; SC2 order and process is the core target; SC3 the never-runs-out explanation is the exit ticket stretch.",
-        "tag": "[LI/SC | Planning made visible | HITS 1]"
       }
     },
     {
@@ -596,14 +1030,9 @@
     },
     {
       "kind": "youDo",
-      "title": "Show what you know in your journal",
-      "task": "Draw the water cycle as a loop. Label all four stages and add arrows.",
-      "steps": [
-        "Draw the loop with four stages",
-        "Add arrows to show the water moving",
-        "Write one sentence: why is it a cycle?"
-      ],
-      "where": "In your science journal",
+      "title": "Your turn",
+      "task": "Name, spot and explain the water cycle on your worksheet.",
+      "where": "On your worksheet",
       "visual": {
         "type": "pictograms",
         "items": [
@@ -616,26 +1045,28 @@
       },
       "visualLabel": "The four stages, in order",
       "notes": {
-        "answer": "a loop with four labels and arrows, plus one sentence about repeating",
+        "answer": "see the Answer Key: stages sorted, everyday cases named, a closed loop with arrows",
         "beats": [
           [
-            "POINT to the task.",
-            "SAY: Now draw your own diagram: a loop, four labels, arrows and one sentence."
+            "POINT to the steps.",
+            "SAY: Read the task carefully, complete each part carefully, then check your work."
           ],
-          "SAY: Draw, arrow, write. Say the steps with me. Everyone, together, on three.",
-          "CIRCULATE. Look for arrows pointing the same way and the loop closing.",
-          "TIME 12 minutes. Early finishers add where water is stored for years."
+          [
+            "SAY: If you finish, the Extension is your early finisher option.",
+            "Let's read the steps together. Cue: Everyone, together, on three."
+          ],
+          "CIRCULATE. Look for warming and cooling in their reasons, and loops that close.",
+          "TIME 15 minutes. Stop everyone once at 8 minutes to share one real-life example."
         ],
         "trap": [
           "four boxes in a line with no return arrow.",
           "Fix: ask where the water goes after collection, student draws the return."
         ],
-        "stretch": "Add where water is stored for years and how it rejoins.",
-        "help": "Water Cycle Scaffold: stages pictured, first one named. Order and draw.",
-        "prep": "Independent application with the same loop as the slides. The journal drawing is the evidence for SC2; the sentence for SC3.",
+        "stretch": "Extension: faster or slower evaporation and a drop's long journey, with worked examples.",
+        "help": "Supported Worksheet: clue words, choices to circle and a sentence starter on every question.",
+        "prep": "Independent application from naming to explaining, same loop as the slides. The sheet is evidence for SC2 and SC3.",
         "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
-      },
-      "extendedTask": "draw and label the water cycle as a loop, with one sentence on why it repeats"
+      }
     },
     {
       "kind": "exitTicket",

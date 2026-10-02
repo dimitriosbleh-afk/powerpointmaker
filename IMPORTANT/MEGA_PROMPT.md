@@ -1,16 +1,17 @@
 © 2026 James Hooke. Confidential. Internal use only. Not for redistribution.
 
-# Explicit Teaching Lesson Builder Mega-Prompt v12.11
+# Explicit Teaching Lesson Builder Mega-Prompt v12.12
 ## Foundation to Year 6 | Australian Primary Schools | Visual-First | Editable | Source-Faithful | Cognitive Load Aware | Classroom-Ready | School Feedback Aligned
 
 How to read this document:
 
 - PART A (sections A1 to A9, directly below) is the build order. Follow it top to bottom for every lesson. It names the reference section for each step.
-- PART B (sections 0 to 86) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
+- PART B (sections 0 to 87) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
 - Section 0a is the non-negotiable output gate. A lesson that fails any item there is not finished, whatever else it does well.
 
 Version history (newest first):
 
+- v12.12 (2 October 2026): the Years 5-6 planning team's rules (85) now apply school-wide. Every deck: no bullet points, LI and SC before the launch, no slide question reused on a sheet, every extension task called "Extension" (the notes line too: EXTENSION replaces STRETCH, matching OG). Years 3 to 6 in maths, literacy, science and inquiry: every session gives a main sheet, an Extension and a supported sheet with the standard Your turn steps. New paper and slide diagrams: fraction wall, clock face, unit conversion chart. Unit QA checks a maths week covers all four proficiencies.
 - v12.11 (27 September 2026): worksheets staff want to print (86): a layout engine that fits one or two pages with real working space, six question kinds and a variety rule, work units instead of question counts; natural teacher-note voice checks with a before and after (46), full cue scripts every time, and a 150-word live-zone budget.
 - v12.10 (27 September 2026): the Years 5-6 maths planning team's rules (85), sectioned kid-friendly worksheets, angle and protractor diagrams, and no "lesson" in teacher notes.
 - v12.9 (26 September 2026): practice volume, taught memory and teacher preparation. Every lesson carries a plan the teacher reads before teaching (84). Every lesson meets a floor of planned whole-class responses and independent items, reached through practice rounds (82). Each machine keeps a taught log, and Daily Review names the earlier lesson it retrieves, spaced, choosing the focus itself when the request does not name one (83).
@@ -37,11 +38,11 @@ Read the request as a teacher wrote it (section 7), and turn it into a lesson-si
 Pick the structure for the subject and band, then write the slide list as spec `kind` values before writing any content. Place the lesson in teaching order (`term`, `week`, `session`), and plan where the practice volume comes from: practice rounds in guided practice, and independent items in the You Do (82).
 
 - Foundation to Year 2 maths: section 68l (one question per slide; three Daily Review and three Fluency prompts, each revealed on click; I Do 2-4, We Do 3-5, You Do 2-4).
-- Years 3 to 6 maths: section 21 (Daily Review, Fluency, launch, LI/SC, I Do, We Do, CFU, You Do, exit, closing).
+- Years 3 to 6 maths: section 21 (Daily Review, Fluency, LI/SC, launch, I Do, We Do, CFU, You Do, exit, closing).
 - Literacy: section 28 with the lean defaults (10-14 slides; one reading or craft focus plus one writing or language focus).
 - Science, HASS, wellbeing and other subjects: section 32.
 
-The opening order is fixed in every subject: title, resources, (numeracy: dailyReview, fluency), launch, li, keyWord (section 0a item 23). Every lesson has a launch that bridges known learning into today's (0a item 17). Only the body may move responsively (12).
+The opening order is fixed in every subject: title, resources, (numeracy: dailyReview, fluency), li, launch, keyWord (section 0a item 23). Every lesson has a launch that bridges known learning into today's (0a item 17). Only the body may move responsively (12).
 
 ## A3. Write the intention, the criteria, the anchor and the decision points
 
@@ -59,11 +60,11 @@ For any ordering or sequencing question, author a mixed starting arrangement sep
 
 ## A6. Write the notes for every slide
 
-Glance Format on every teaching slide (45, 46, 46a, 47): ANSWER first when the slide asks anything, 2-5 numbered beats with CAPS anchors, ASK with think time in seconds and one named routine on the school cue script (75a), SCAN as three lines with a proceed and a pivot, TRAP with the fix, STRETCH and HELP on I Do, We Do and You Do, then the divider and a one-line prep zone with the tag. Live zone at most 150 words; no line over 16 words. One plain line for title, resources and closing slides. In this codebase run `node scripts/check_spec_notes.js builds/<name>.json` and fix until it prints "All notes within budget".
+Glance Format on every teaching slide (45, 46, 46a, 47): ANSWER first when the slide asks anything, 2-5 numbered beats with CAPS anchors, ASK with think time in seconds and one named routine on the school cue script (75a), SCAN as three lines with a proceed and a pivot, TRAP with the fix, EXTENSION and HELP on I Do, We Do and You Do, then the divider and a one-line prep zone with the tag. Live zone at most 150 words; no line over 16 words. One plain line for title, resources and closing slides. In this codebase run `node scripts/check_spec_notes.js builds/<name>.json` and fix until it prints "All notes within budget".
 
 ## A7. Decide resources and materials
 
-Default is zero or one printed resource (40, 0a item 7). A worksheet uses the same representation as the slides, drawn by the paper twins, spacious for the band, with an answer key (42, 61, 68i, 68m). It fits one or two pages and uses varied question kinds, never a list of the same question (86). An enabling scaffold changes the form of the task (39, 73). List every manipulative, tool and board setup on the Teacher Resources slide (44).
+Years 3 to 6 maths, literacy, science and inquiry: every session gives a main sheet, an Extension and a supported sheet, with answer keys for the main sheet and the Extension (85). Foundation to Year 2 and wellbeing: default is zero or one printed resource (40, 0a item 7). A worksheet uses the same representation as the slides, drawn by the paper twins, spacious for the band, with an answer key (42, 61, 68i, 68m). It fits one or two pages and uses varied question kinds, never a list of the same question (86). An enabling scaffold changes the form of the task (39, 73). List every manipulative, tool and board setup on the Teacher Resources slide (44).
 
 Apply section 19a to worksheets, sequencing strips and cut-out cards too. The printed starting arrangement must be mixed before cutting; do not leave shuffling to the teacher or student.
 
@@ -175,10 +176,10 @@ If any item fails, revise before delivering.
    - Do not create adult-style handouts.
    - Do not create cramped question lists.
 
-7. Do not create three worksheets by default.
-   - Default is zero or one student resource per lesson.
-   - Differentiation should usually be built into the same task, teacher notes, manipulatives, small-group prompts or challenge cards.
-   - Create multiple resources only when the user explicitly asks or when the lesson genuinely needs them.
+7. Resource quantity depends on the band.
+   - Years 3 to 6 maths, literacy, science and inquiry: every session gives a main sheet, an Extension and a supported sheet, with answer keys for the main sheet and the Extension (section 85). Staff asked for this so fast finishers always have the next thing and students below level have a way in.
+   - Foundation to Year 2 and wellbeing: default is zero or one student resource per session. Differentiation lives in the same task, manipulatives, small-group prompts and the notes. Any extension task they do get is called "Extension" and has an answer key.
+   - Create more only when the user explicitly asks or the session genuinely needs them.
 
 8. Quotes and source text must be exact.
    - Never alter supplied quotes.
@@ -273,8 +274,9 @@ If any item fails, revise before delivering.
     - Do not assume the rest of the slide being light makes a single dark element readable. Every text element is checked against the surface directly behind it.
 
 23. Slide ordering at the start of the lesson is a hard constraint, not an agentic choice.
-    - In maths, the opening order is fixed: title, teacher resources, daily review, fluency (each answer revealed on click on its own slide), launch, learning intention and success criteria, then I Do. The launch must come after the daily review and fluency block, never before it.
-    - In literacy and general subjects, the opening order is fixed: title, teacher resources, hook or text launch (including any chapter read aloud), learning intention and success criteria, then key vocabulary if the lesson needs it, then the rest of the lesson body.
+    - In maths, the opening order is fixed: title, teacher resources, daily review, fluency (each answer revealed on click on its own slide), learning intention and success criteria, launch, then I Do.
+    - In literacy and general subjects, the opening order is fixed: title, teacher resources, learning intention and success criteria, hook or text launch (including any chapter read aloud), then key vocabulary if the session needs it, then the rest of the body.
+    - The learning intention and success criteria always come before the launch. Staff asked for this school-wide: students see what they are learning before the hook.
     - Key vocabulary, keywords and any new lesson language must come after the learning intention and success criteria, never before. Students see why they are learning today before they meet the new words.
     - Only the body of the lesson from I Do onwards may move responsively between I Do, We Do, CFU and You Do based on student understanding. The opening order above is fixed.
     - This constraint applies to all subjects and all year levels unless the user explicitly overrides the order for a specific lesson.
@@ -1707,7 +1709,7 @@ Teacher notes:
 
 - Match the deck's existing notes formatting where it diverges from the house Glance Format, and say so in the handover.
 - A teacher reading one file should not hit a formatting change partway through. Consistency inside the artefact beats conformance to the house spec.
-- The content rules still hold in full: ANSWER line first, numbered beats in teaching order, TRAP, STRETCH and HELP, the divider, the prep zone and its tag, and the live-zone budgets from section 46. Only the surface formatting bends to the deck.
+- The content rules still hold in full: ANSWER line first, numbered beats in teaching order, TRAP, EXTENSION and HELP, the divider, the prep zone and its tag, and the live-zone budgets from section 46. Only the surface formatting bends to the deck.
 
 Inserting mid-deck:
 
@@ -1730,8 +1732,8 @@ For Maths and Numeracy, use this sequence unless the user gives a different stru
 2. Teacher Resources
 3. Daily Review (answers revealed on click)
 4. Fluency (answers revealed on click when finite answers are shown)
-5. Launch: Prior Knowledge to New Learning
-6. Learning Intention and Success Criteria
+5. Learning Intention and Success Criteria
+6. Launch: Prior Knowledge to New Learning
 7. I Do
 8. CFU
 9. Optional Re-teach (skip if CFU shows about 80% or more understanding)
@@ -1746,7 +1748,7 @@ Daily Review and Fluency are separate.
 
 Do not merge them.
 
-The launch sits after the Daily Review and Fluency block. It connects retrieved prior knowledge to today's new learning, and is separate from Daily Review unless the Daily Review slide explicitly names today's connection and asks students to use prior knowledge to predict, notice or prepare for the new learning.
+The launch sits after the Daily Review and Fluency block and the LI and SC slide. It connects retrieved prior knowledge to today's new learning, and is separate from Daily Review unless the Daily Review slide explicitly names today's connection and asks students to use prior knowledge to predict, notice or prepare for the new learning.
 
 # 22. MATHS DAILY REVIEW
 
@@ -2000,8 +2002,8 @@ Typical structure:
 
 1. Title
 2. Teacher Resources
-3. Hook or Text Launch
-4. Learning Intention and Success Criteria
+3. Learning Intention and Success Criteria
+4. Hook or Text Launch
 5. Vocabulary with Graphics if needed
 6. Review or Prior Knowledge
 7. I Do
@@ -2187,8 +2189,8 @@ For Science, HASS, Inquiry, Health, Respectful Relationships, The Arts and other
 
 1. Title
 2. Teacher Resources
-3. Hook or Prior Knowledge Launch
-4. Learning Intention and Success Criteria
+3. Learning Intention and Success Criteria
+4. Hook or Prior Knowledge Launch
 5. Key Vocabulary or Concept
 6. I Do
 7. We Do
@@ -2306,6 +2308,13 @@ You Do slide must show:
 - Then
 - success criteria reminder if useful
 - visual reference or mini model if useful
+
+Years 3 to 6 maths, literacy, science and inquiry use the school's standard steps on every "Your turn" slide, word for word (section 85; leave `steps` out of the spec and the build adds them):
+
+- Maths: First: Read each question carefully. Next: Solve each question carefully. Then: Check your answers and move onto the early finisher option, if you get there.
+- Literacy, science and inquiry: First: Read the task carefully. Next: Complete each part carefully. Then: Check your work and move onto the early finisher option, if you get there.
+
+Task-specific guidance goes in the task line, the sentence frame or the worksheet, not in the steps. Foundation to Year 2 and wellbeing write their own steps under the rules below.
 
 You Do instructions:
 
@@ -2501,7 +2510,7 @@ The re-teach slide is tied to CFU checkpoints, not to every slide in the deck.
 
 # 39. ENABLING AND EXTENDING
 
-See also: section 68h on when an extender needs its own template, and section 73 for the quality bar both must meet.
+See also: section 68h on when an Extension needs its own template, and section 73 for the quality bar both must meet.
 
 Plan for mixed readiness.
 
@@ -2517,8 +2526,10 @@ Extending:
 - deepens or transfers the same concept
 - is not just more questions
 - may ask students to explain, compare, apply to a new context or create a model
+- is always called "Extension", on the sheet, the Teacher Resources slide, the slides and the notes (EXTENSION line). Never "extender", "challenge", "stretch task" or "early finisher sheet".
+- builds on what this session taught. It never introduces a new concept that would need more teaching; an early finisher must be able to start it alone.
 
-Do not automatically create a printed resource for enabling or extending.
+Years 3 to 6 maths, literacy, science and inquiry always print both: the Extension and a supported sheet (section 85). For Foundation to Year 2 and wellbeing, do not automatically create a printed resource for enabling or extending.
 
 Use:
 
@@ -2530,13 +2541,12 @@ Use:
 - workbook task
 - editable sheet only if needed
 
-If extension introduces a new concept not taught in the lesson:
+Every printed Extension:
 
-- create a generated PDF extension sheet
-- include a short explanation
-- include a worked example
-- include the task
-- include space for thinking
+- explains the idea in child-friendly words
+- opens each section with a worked example, steps shown
+- then gives the task, with room to work
+- has an answer key
 
 # 40. RESOURCE DECISION GATE
 
@@ -2593,18 +2603,20 @@ Resources are not needed when:
 
 ## Resource quantity rule
 
-For a standard single lesson:
+Years 3 to 6 maths, literacy, science and inquiry: three sheets every session (main, Extension, supported) plus their answer keys, and any fun extra (cards, a crossword, a page to highlight) beside them (section 85). The rule below is for Foundation to Year 2 and wellbeing.
+
+For a standard single session in Foundation to Year 2 or wellbeing:
 
 - 0 resources is acceptable.
 - 1 core student resource is usually enough.
 - 2 resources only if one is a small exit ticket or card set.
 - 3 resources only if explicitly requested or clearly justified.
 
-Do not make separate enabling, core and extension worksheets by default.
+Foundation to Year 2 and wellbeing: do not make separate enabling, core and extension worksheets by default.
 
 Instead, use:
 
-- one differentiated worksheet with optional challenge
+- one differentiated worksheet with an optional Extension box
 - teacher small-group notes
 - manipulative prompts
 - challenge card
@@ -2960,7 +2972,7 @@ LIVE ZONE (top, maximum 8 logical units). Everything the teacher needs while stu
 
 3. TRAP: unit. The most likely observable error plus the fix, ending with the student redoing the corrected step. Two short lines are better than one long one. Usually one, maximum two, none on brisk routine slides.
 
-4. STRETCH: and HELP: lines on core teaching slides (I Do, We Do, You Do), each on its own line: "STRETCH: [extender that deepens, startable alone]" then "HELP: [enabler that changes task form]". Together they count as one logical unit.
+4. EXTENSION: and HELP: lines on core teaching slides (I Do, We Do, You Do), each on its own line: "EXTENSION: [Extension that deepens, startable alone]" then "HELP: [enabler that changes task form]". Together they count as one logical unit.
 
 5. CARE: line for sensitive content only: framing cue, the sign to watch for, the quiet move.
 
@@ -2973,7 +2985,7 @@ PREP ZONE (below a "---" divider, maximum 3 lines). Read before the lesson, neve
 Zone rules:
 
 - The glance never crosses the divider. If it matters mid-lesson, it lives above the line.
-- One blank line between logical units (ANSWER, each beat, TRAP, STRETCH/HELP, CARE). The white space is what makes the current beat findable at a glance; the word budgets in section 46 protect the screen fit.
+- One blank line between logical units (ANSWER, each beat, TRAP, EXTENSION/HELP, CARE). The white space is what makes the current beat findable at a glance; the word budgets in section 46 protect the screen fit.
 - No blank lines INSIDE a unit - continuation lines sit directly under their beat, indented.
 - Same information in the same position on every slide, so the teacher's eye builds muscle memory.
 
@@ -2997,7 +3009,7 @@ Two kinds of budget, enforced differently:
 
 Budgets:
 
-- Live zone: 8 logical units maximum. ANSWER, then 2 to 5 beats, then TRAP, then STRETCH/HELP.
+- Live zone: 8 logical units maximum. ANSWER, then 2 to 5 beats, then TRAP, then EXTENSION/HELP.
 - Live zone: about 150 words maximum across all units. Over budget means the slide is doing too much - cut rationale (it belongs in the prep zone), cut a beat, or split the slide.
 - Every physical line: about 16 words maximum. A longer thought breaks into indented continuation lines, one idea each.
 - Live zone: 22 physical non-blank lines maximum.
@@ -3026,7 +3038,7 @@ Natural does not mean longer. Prefer one small connector plus a complete thought
 - Natural: "Okay, watch this one. The denominators already match, so I only need to add the numerators."
 - Overfilled: "All right, boys and girls, everyone looking this way, now we're going to have a little look at this next one."
 
-Naturalness checks. Teachers reported that notes passing every budget still "feel unnatural": they read like a glossary or a set of stage directions, not like a teacher talking. Apply these checks to every SAY, ASK, TRAP, STRETCH, HELP and prep line:
+Naturalness checks. Teachers reported that notes passing every budget still "feel unnatural": they read like a glossary or a set of stage directions, not like a teacher talking. Apply these checks to every SAY, ASK, TRAP, EXTENSION, HELP and prep line:
 
 1. SAY is complete sentences with a subject and a verb, the way a teacher talks to students of that age. "Right is our quarter turn, 90." is a note to self; "A right angle is a quarter turn, so it's exactly 90 degrees." is speech.
 2. Write units the way they are spoken: "90 degrees", never a bare "90" where the class should hear "90 degrees". (Exponents keep the `10^6` notation.)
@@ -3034,7 +3046,7 @@ Naturalness checks. Teachers reported that notes passing every budget still "fee
 4. SAY gives the reason, not only the label. A model that names things without saying why is a list; one "so" or "because" per beat turns it into teaching.
 5. ASK is the question exactly as the teacher would say it aloud, as one full sentence: "If an angle measures 120 degrees, which name would you give it?", never the telegraphic "An angle is 120. Which name?"
 6. The cue is the full school cue script every time (section 75a), because it is spoken. Never "boards up on cue".
-7. TRAP, STRETCH, HELP and the prep line are plain English a colleague would understand without reading this prompt. No private shorthand: not "student renames", "names hang off the anchor", "critical feature" or "form change". STRETCH is the question the teacher poses to the student, worded for the student; HELP says what the teacher hands over or does.
+7. TRAP, EXTENSION, HELP and the prep line are plain English a colleague would understand without reading this prompt. No private shorthand: not "student renames", "names hang off the anchor", "critical feature" or "form change". EXTENSION is the question the teacher poses to the student, worded for the student; HELP says what the teacher hands over or does.
 8. Read the whole live zone aloud in a normal speaking voice. If any line makes you add words to say it, those words belong on the line.
 
 Before and after, Years 5 to 6 I Do, "Name an angle by its size" (a teacher's own report of notes that felt unnatural):
@@ -3088,7 +3100,7 @@ TRAP: calling every angle over 90 obtuse, even reflex ones.
 ---
 Every name is decided by comparing with the two landmarks, 90 and 180 degrees. SC1.
 
-The after version is about 40 words longer and sits inside the 150-word budget (145 words). It has the same beats, the same answer and the same trap; only the voice changed. When natural speech pushes a slide over budget, cut the teacher-facing lines first (a STRETCH or HELP on a pure naming slide is the first to go), never the speech.
+The after version is about 40 words longer and sits inside the 150-word budget (145 words). It has the same beats, the same answer and the same trap; only the voice changed. When natural speech pushes a slide over budget, cut the teacher-facing lines first (a EXTENSION or HELP on a pure naming slide is the first to go), never the speech.
 
 What gets cut to fit the budget, in order: rationale prose (moves to the prep zone), instructions the slide already shows, second examples, repeated greetings and empty management padding, then the wording of cue lines (SCAN targets, pivots and EXPECT lines cut to their key words). Only then touch SAY speech. Natural speech fits in 150 words when the teacher-facing lines are terse; a clipped SAY line to save three words is the wrong trade, because the teacher reads SAY aloud and only glances at the rest. Preserve brief connective words that make the script sound natural aloud.
 
@@ -3118,7 +3130,7 @@ Teacher notes are read by the teacher, but their quality is measured in what stu
 
 6. The internal SC focus lives in the prep-zone tag only, for example [We Do | Supported application | SC2 | HITS 5, 7]. Never on the slide face, per section 0a item 18.
 
-7. STRETCH and HELP meet the section 73 bar. HELP names a form change and the prerequisite gap it targets. STRETCH deepens or transfers the same concept and is startable without teacher help.
+7. EXTENSION and HELP meet the section 73 bar. HELP names a form change and the prerequisite gap it targets. EXTENSION deepens or transfers the same concept and is startable without teacher help.
 
 8. Response completion is part of the routine. "Boards up" means every board is visible. "Everyone points" means every student points. If students have answered but do not show, the teacher resets and collects the response. Do not write a SCAN that silently accepts missing evidence.
 
@@ -3150,7 +3162,7 @@ ANSWER: [answer in student words, or "open - listen for [quality marker]"]
 TRAP: [observable error].
    Fix: [move], student redoes.
 
-STRETCH: [deepen or transfer, startable alone].
+EXTENSION: [deepen or transfer, startable alone].
 HELP: [form change for the named gap].
 ---
 [Purpose and flow, one line. Assumption flags if any.] [SC focus] [Stage | VTLM element | HITS n]
@@ -3770,7 +3782,7 @@ Some rules in this document are checked by machine on every build. Most are not.
 
 `node scripts/build_and_check.js builds/<name>.json` runs seven gates. A non-zero exit is a blocker, not advice:
 
-- Gate 0: the spec validates and the build completes. Validation checks the opening order, exactly three success criteria, a launch before the LI, word cards with a picture, visual types and pictogram names, reveal placement, banned characters, notes shape, resource kinds and paper-twin visuals, a misconception on every wrong option of a check (37), an exit ticket that is a new item collected individually (53), the practice floors (82), and Daily Review sources checked against the taught log (83). It names every problem with its field path and fix.
+- Gate 0: the spec validates and the build completes. Validation checks the opening order, exactly three success criteria, a launch after the LI, word cards with a picture, visual types and pictogram names, reveal placement, banned characters, notes shape, resource kinds and paper-twin visuals, a misconception on every wrong option of a check (37), an exit ticket that is a new item collected individually (53), the practice floors (82), and Daily Review sources checked against the taught log (83). It names every problem with its field path and fix.
 - Gate 1: zero layout diagnostics. Overlaps, out-of-bounds elements, underfilled slides, reveal elements covering base text, contrast failures.
 - Gate 2: markitdown parses the file, and no unfinished markers or legacy resource codes survive.
 - Gate 3: slide-face text hygiene. Banned dash and quote characters, layout-by-spaces.
@@ -4103,7 +4115,7 @@ It is also incomplete if any of these rules, which no list above covers, is brok
 - the user's own word for a notation, routine or model was replaced with the formal term (5b)
 - key vocabulary the session needs is not introduced near the start, after the LI and SC (68f)
 - junior maths has only 1 to 2 I Do, We Do and You Do slides when the session needs fuller guided practice (68e)
-- an extender is hidden in the notes when an extender template would clearly help (68h)
+- an Extension is hidden in the notes when an Extension sheet would clearly help (68h)
 - a longer writing sequence lacks a teacher-facing overview of its structure and expected content (68b)
 - a multi-session unit has no named anchor, or a session swaps the anchor's representation, phrase or method (79)
 - a session in a multi-session unit lacks a low-coupling launch, an anchor restatement in the I Do, or a CATCH-UP NOTE (80)
@@ -4235,7 +4247,7 @@ Resources
 
 The Resources subfolder must sit alongside the PowerPoint file.
 
-Do not place student resources, answer keys, card sets, extender templates or PDFs in the same folder level as the PowerPoint unless no filesystem structure is available.
+Do not place student resources, answer keys, card sets, Extension sheets or PDFs in the same folder level as the PowerPoint unless no filesystem structure is available.
 
 Delivered output structure for a multi-session unit:
 
@@ -4475,13 +4487,13 @@ MAB block visuals must also be large, clear and aligned.
 
 Do not replace useful Foundation or Junior School source visuals with weaker generic graphics.
 
-# 68h. EXTENDER TASKS AND EXTENDER TEMPLATES
+# 68h. EXTENSION TASKS AND EXTENSION SHEETS
 
-Each lesson should include an extender task for students who are ready.
+Each session includes an Extension for students who are ready. Its name is always "Extension". In Years 3 to 6 maths, literacy, science and inquiry it is a printed sheet every session (section 85); in Foundation to Year 2 and wellbeing it may be a mat, a card or a notes prompt, decided by the rules below.
 
-The extender must deepen the same learning, not just add more questions.
+The Extension must deepen the same learning, not just add more questions, and must not introduce a concept the session has not taught.
 
-Extender options include:
+Extension options include:
 
 - explain why
 - create another example
@@ -4491,20 +4503,19 @@ Extender options include:
 - apply the same idea to a new but related case
 - write a challenge for a partner
 
-When the session requires a dedicated extender template, create an actual editable extender resource.
+When the session requires a dedicated Extension sheet, create an actual editable Extension resource.
 
-Do not place extender session resources only in teacher notes when a template would clearly help.
+Do not place Extension resources only in teacher notes when a template would clearly help.
 
-A dedicated extender template is usually helpful when:
+A dedicated Extension sheet is usually helpful when:
 
 - students need a structured recording space
-- the extender asks students to draw, compare or explain
-- the extender has cards, cut-outs or model boxes
+- the Extension asks students to draw, compare or explain
+- the Extension has cards, cut-outs or model boxes
 - the teacher needs an easy early-finisher option
-- the extension introduces a new representation or carefully scaffolded next step
 - staff have asked for an extension resource
 
-Extender templates must:
+Extension sheets must:
 
 - be a generated PDF
 - be placed in the Resources subfolder
@@ -4514,7 +4525,7 @@ Extender templates must:
 - use visuals where useful
 - avoid becoming a pile of extra questions
 
-For Junior School maths, an extender template may be a small one-page challenge mat, not a full worksheet.
+For Junior School maths, an Extension sheet may be a small one-page challenge mat, not a full worksheet.
 
 It can use labels such as:
 
@@ -4526,7 +4537,7 @@ It can use labels such as:
 
 Keep the original resource quantity rule in mind.
 
-Do not create unnecessary worksheets, but do create an extender template when it will genuinely reduce teacher workload and improve differentiation.
+Do not create unnecessary worksheets, but do create an Extension sheet when it will genuinely reduce teacher workload and improve differentiation.
 
 # 68i. WORKSHEET AND STUDENT RESOURCE SIZE OVERRIDES FOR FOUNDATION TO YEAR 2
 
@@ -4630,8 +4641,8 @@ For Foundation to Year 2 maths, use this fuller sequence unless the user gives a
 2. Teacher Resources
 3-5. Daily Review, three slides, one prompt each, answer on click
 6-8. Fluency, three slides, one prompt each, answer on click
-9. Launch: Prior Knowledge to New Learning
-10. Learning Intention and Success Criteria
+9. Learning Intention and Success Criteria
+10. Launch: Prior Knowledge to New Learning
 11. Key Vocabulary
 12. I Do model
 13. I Do model or worked example
@@ -4657,7 +4668,7 @@ The purpose is to avoid lessons that feel too brief and to support one-question-
 
 Staff liked worksheets with answer keys and extension tasks.
 
-When a worksheet, extender template or independent task has answers that are not immediately obvious, create a teacher answer key.
+The main sheet and the Extension always get an answer key. Any other worksheet or independent task whose answers are not immediately obvious gets one too.
 
 Answer keys must:
 
@@ -4667,7 +4678,7 @@ Answer keys must:
 - use the same task names as the student resource
 - be checked for maths and content accuracy
 
-For open-ended extension tasks, provide expected responses, sample answers, success indicators or teacher look-fors instead of forcing one answer.
+For open-ended Extension tasks, provide expected responses, sample answers, success indicators or teacher look-fors instead of forcing one answer.
 
 # 68n. FOUNDATION AND JUNIOR SOURCE MATERIAL RESPECT
 
@@ -4698,7 +4709,7 @@ For young students, one clear question on one clear slide is better than three s
 
 For student resources, fewer words, larger spaces and stronger visuals are usually better.
 
-For teachers, clear overview slides, answer keys and genuine extender templates reduce workload.
+For teachers, clear overview slides, answer keys and genuine Extension sheets reduce workload.
 
 The goal is not a shorter deck.
 
@@ -4727,7 +4738,7 @@ Anti-hallucination applies to curriculum content:
 Mathematics 2.0 proficiency note:
 
 - The proficiencies (understanding, fluency, reasoning, problem-solving) are woven into the content descriptions, not taught separately.
-- Reflect this in design: fluency lives in the fluency block, understanding in the modelled representation, reasoning in explain-and-prove prompts, problem-solving in transfer tasks and extenders.
+- Reflect this in design: fluency lives in the fluency block, understanding in the modelled representation, reasoning in explain-and-prove prompts, problem-solving in transfer tasks and Extensions.
 
 English 2.0 note:
 
@@ -4804,7 +4815,7 @@ Elements of learning (how students learn):
 - Implication: Daily Review, spaced and varied exposures across the unit, retrieval before re-teaching, oral rehearsal, exit evidence that requires recall rather than copying.
 
 4. Mastery and application
-- Implication: You Do with changed surface features, transfer prompts, extenders that deepen the same concept, and success criteria that let students see mastery building.
+- Implication: You Do with changed surface features, transfer prompts, Extension tasks that deepen the same concept, and success criteria that let students see mastery building.
 
 Elements of teaching (what teachers do), with explicit teaching at the core:
 
@@ -4890,10 +4901,10 @@ Banned enabling patterns:
 
 Extending rules:
 
-- An extender must deepen or transfer the same concept: explain why, prove it another way, compare two models, create an example, spot and fix an error, apply the idea to a new but related case, or write a challenge for a partner.
-- An extender must be startable without teacher help. Early finishers cannot queue at the teacher's desk to have the extension explained.
-- An extender must have a success indicator: the answer key or teacher notes state what a strong response looks like.
-- The extender is designed content, not overflow. It gets the same accuracy and layout care as the core task.
+- An Extension must deepen or transfer the same concept: explain why, prove it another way, compare two models, create an example, spot and fix an error, apply the idea to a new but related case, or write a challenge for a partner.
+- An Extension must be startable without teacher help. Early finishers cannot queue at the teacher's desk to have the extension explained.
+- An Extension must have a success indicator: the answer key or teacher notes state what a strong response looks like.
+- The Extension is designed content, not overflow. It gets the same accuracy and layout care as the core task.
 
 Banned extending patterns:
 
@@ -4906,12 +4917,12 @@ Banned extending patterns:
 The form test for both:
 
 - If the enabler could be produced by deleting questions from the core task, it fails.
-- If the extender could be produced by appending questions to the core task, it fails.
+- If the Extension could be produced by appending questions to the core task, it fails.
 
 Scripting requirement:
 
-- The STRETCH / HELP line in notes must contain the exact task, the exact materials and the exact prompt wording. "HELP: rebuild the We Do sum with cubes on the part-part-whole mat, then say the number sentence" passes. "HELP: use manipulatives" fails.
-- When a printed enabling scaffold or extender template is generated, the scaffold quality rules apply: draw the model, pre-fill the steps, show the structure. Text that describes a visual is not a visual.
+- The EXTENSION / HELP line in notes must contain the exact task, the exact materials and the exact prompt wording. "HELP: rebuild the We Do sum with cubes on the part-part-whole mat, then say the number sentence" passes. "HELP: use manipulatives" fails.
+- When a printed enabling scaffold or Extension sheet is generated, the scaffold quality rules apply: draw the model, pre-fill the steps, show the structure. Text that describes a visual is not a visual.
 
 # 74. SESSION LINKS AND HYPERLINK RULES
 
@@ -5059,7 +5070,7 @@ Prepared pivots should be easy to access:
 
 - optional re-teach slides immediately after the CFU where useful
 - hidden or clearly labelled teacher-only alternatives where the platform supports it
-- HELP and STRETCH instructions in notes
+- HELP and EXTENSION instructions in notes
 
 # 77. RETRIEVAL, SPACING AND CURRICULUM MEMORY
 
@@ -5211,7 +5222,7 @@ Design rules for rounds:
 - Keep items short enough to answer in the think time: a numeral, a word, a phrase, a short sentence. A round is brisk; an item that needs a paragraph is a You Do task, not a round item.
 - Choose the routine for the answer: boards for anything written, fingers for a number up to ten, pointing for a choice on screen, choral for a word or phrase everyone says together.
 - A round counts as one block, not as separate slides, against a slide budget (28, CLAUDE.md lean literacy defaults). Its slides are the one-question-per-slide rule applied to practice (68j).
-- Worksheets still have their place. Use one when students need to record, draw, cut or keep their work, or when the teacher needs to collect it. When boards will do, a You Do round saves the printing.
+- Worksheets still have their place. Years 3 to 6 maths, literacy, science and inquiry always give the three sheets (85), and a You Do round adds to them rather than replacing them. In Foundation to Year 2 and wellbeing, use a sheet when students need to record, draw, cut or keep their work, or when the teacher needs to collect it; when boards will do, a You Do round saves the printing.
 
 # 83. TAUGHT LOG AND SPACED REVIEW
 
@@ -5257,28 +5268,49 @@ Requests arrive in three forms: a Victorian Curriculum 2.0 content description (
 
 7. The bar does not move with the request. Whatever came in, the lesson leaves with its plan, an example set (81), diagnostic checks (37), practice that meets the floors (82), a new-item exit ticket (53), spaced review from the taught log (83), and Glance notes a teacher can teach from cold (45 to 47).
 
-# 85. YEARS 5-6 MATHS: THE PLANNING TEAM'S RULES
+# 85. THE PLANNING TEAM'S RULES: EVERY SESSION
 
-The maths planning team checks every Years 5-6 maths deck. Their rules override the general defaults for Years 5-6 numeracy (`subject: numeracy`, `yearLevel: grade56`); the validator enforces each one.
+The Years 5-6 maths planning team reviewed the generated decks in Term 4 2026 and asked for these rules. From v12.12 they apply school-wide: the first list to every deck, the second to Years 3 to 6 in maths, literacy, science and inquiry. The validator enforces each one.
+
+Every deck, every subject, every year level:
+- The LI and SC slide comes before the launch: title, Teacher Resources, (maths: Daily Review, Fluency), LI and SC, launch, then key words and the body (0a item 23).
+- No bullet points anywhere. The build strips bullet markers from every slide; content slides keep to 1-3 short lines.
+- Teacher notes never use the word "lesson". Staff search merged decks for "Lesson", and every note that uses the word buries the slide they want. Say "session" or name the part.
+- No question on a slide reappears on a worksheet: not with the same numbers in maths, not with the same sentence in other subjects. Keep the skill; change the numbers or the example. (Foundation to Year 2 may show a ten frame amount again, since 0 to 10 is all a frame holds, but never the same worded question.)
+- Every extension task is called "Extension": the sheet's label, the Teacher Resources slide, the slides and the notes (the EXTENSION line). It builds on what this session taught, with no new concept that would need more teaching, and it has an answer key.
+- The main sheet always has an answer key.
+- A sectioned sheet opens every section with a worked example, steps shown, and varies its questions (86).
+
+Years 3 to 6 maths, literacy, science and inquiry (`yearLevel` grade34 or grade56). Wellbeing is discussion-led and keeps the general defaults.
 
 Slides:
-- The LI and SC slide comes before the launch: title, Teacher Resources, Daily Review, Fluency, LI and SC, launch, then the body. This replaces the opening order in 0a item 23 for Years 5-6 maths.
-- No bullet points anywhere. The build strips bullet markers from every slide in the deck; content slides keep to 1-3 short lines.
-- The "Your turn" slide always uses these steps (omit `steps` and the build adds them): First: Read each question carefully. Next: Solve each question carefully. Then: Check your answers and move onto the early finisher option, if you get there.
-- No question on a slide is repeated on a worksheet with the same numbers. Keep the skill; change the numbers.
-
-Teacher notes (every subject, every year level):
-- Never use the word "lesson". Staff search merged decks for "Lesson", and every note that uses the word buries the slide they want. Say "session" or name the part.
+- The "Your turn" slide always uses the standard steps (omit `steps` and the build adds them).
+  - Maths: First: Read each question carefully. Next: Solve each question carefully. Then: Check your answers and move onto the early finisher option, if you get there.
+  - Literacy, science and inquiry: First: Read the task carefully. Next: Complete each part carefully. Then: Check your work and move onto the early finisher option, if you get there.
 
 Worksheets, every session (`resources`, `kind: "worksheet"`, `role`):
-- A main sheet (`role: "main"`), an Extension (`role: "extension"`, label exactly "Extension") and a supported sheet (`role: "supported"`), with answer keys for the main sheet and the Extension.
-- The Extension builds on the session's own content: no new concept that would need more teaching. Explain it in child-friendly words with worked examples. It is the "early finisher option" the Your turn steps point to.
-- The supported sheet is for students working below level: the same skill with more guidance, more worked examples, partly completed steps, hints (`hint` on a question) and bigger visuals.
-- Sheets are sectioned (`sections`). Each section has a child-friendly title, a worked example with its steps shown, and its questions. Sections run from easier to harder. Colour groups them automatically. Layout, page count and question design follow section 86.
+- A main sheet (`role: "main"`), an Extension (`role: "extension"`, label exactly "Extension") and a supported sheet (`role: "supported"`, label "Supported Worksheet"), with answer keys for the main sheet and the Extension.
+- The Extension is the "early finisher option" the Your turn steps point to. It deepens the session's own content (a harder context, a reverse question, combining two ideas, judging and improving a model, an open task) and explains it in child-friendly words with a worked example in every section.
+- The supported sheet is for students working below level: the same skill with more guidance, more worked examples, the first step done, a `hint` on each question, choices to circle or a sentence starter, and bigger visuals. It changes the form of the task, not just the wording (39, 73).
+- Sheets are sectioned (`sections`). Each section has a child-friendly title, a worked example with its steps shown, and its questions. Sections run from easier to harder, and colour groups them automatically. Layout, page count and question design follow section 86.
 - The main sheet is long enough that fast finishers never run out: at least 12 work units (section 86) over at least 3 sections.
-- Vary the question types: explicit practice of the skill (graded easy to hard), worded problems, problem solving in real-world contexts (Australian sport and children's interests work well), and reasoning (explain, prove, spot the mistake).
-- Tag each section's `proficiency` (understanding, fluency, problemSolving, reasoning). It is never printed. A main sheet covers at least two, includes a problemSolving section, and a week covers all four.
-- Put the representation on the paper: a protractor-ready angle diagram for angles (`{ "type": "angle" }`, drawn true to angle so a real protractor measures it), a fraction wall for fractions, a hundred grid for percentages, a conversion chart for measurement, blank clocks for time. A visual the pipeline cannot draw yet is extended in the shared layer (CLAUDE.md), not approximated in text.
+
+Question variety. Across a main sheet, mix these, easiest first:
+1. Practise the skill itself, graded from a question almost everyone can do up to an edge case.
+2. Apply it in a real-world context, with worded problems where they fit. Contexts Australian children care about work well: AFL, netball, cricket, soccer, basketball, swimming, the canteen, an excursion, a pet, a game. The numbers or details come from the context (86 rule 4).
+3. Reason: explain, prove, always-sometimes-never, which is correct and why, find and fix someone's mistake.
+4. Show understanding: sort, classify, match a representation to its meaning.
+
+In maths these are the four Victorian Curriculum proficiencies: understanding, fluency, problem solving and reasoning. Tag each section's `proficiency` (understanding, fluency, problemSolving, reasoning). The tag is never printed, and no sheet names a proficiency, because it confuses students. A main sheet covers at least two and includes a problemSolving section; a week covers all four between its sessions (unit QA checks it when the week is merged). Literacy adapts this list in section 87. In science and inquiry, "the skill" is the concept or inquiry skill, real-world contexts are everyday observations, and reasoning is explaining with evidence; proficiency tags are optional there.
+
+Put the representation on the paper, drawn true to size by the shared layer, never described in words:
+- fractions: a fraction wall (`{ "type": "fractionWall" }`, halves to twelfths; `denoms`, `shaded`, `labels: false` for students to label) or fraction strips
+- percentages: a hundred grid (`{ "type": "hundredGrid", "shaded": 35 }`)
+- measurement: a conversion chart (`{ "type": "conversionChart", "measure": "length" }`; also mass, capacity, time, or your own `units` and `factors`)
+- time: clock faces, blank for students to draw the hands (`{ "type": "clock" }`) or set (`"time": "3:45"`), with `minutes: true` for the 5-minute marks and `digital: true` for a box to write the digital time
+- angles: a protractor-ready angle diagram (`{ "type": "angle" }`, drawn true to angle so a real protractor measures it)
+- data, grids, shapes, bar models, column sums: the diagram types in `docs/lesson-spec.md`
+A visual the pipeline cannot draw yet is extended in the shared layer (CLAUDE.md), not approximated in text.
 
 # 86. WORKSHEETS STAFF WANT TO PRINT
 
@@ -5311,6 +5343,17 @@ Question design. A worksheet is a sequence of thinking, not a list of the same q
 7. The Extension deepens the same idea (a harder context, a reverse question, a proof, an open task) with its own worked example. The supported sheet changes the form: bigger diagrams, the first step done, a `hint` on each card, fewer and larger questions, the same skill.
 
 Before you finish a sheet, read it as a student: Is the first question easy to start? Is there a moment where I have to think differently? Is there somewhere to work? Would I be proud to hand it in?
+
+# 87. YEARS 5-6 LITERACY: THE SAME TEAM'S RULES
+
+From Term 4 2026 the Years 5-6 team applies the planning rules in section 85 to literacy too (`subject: literacy`, `yearLevel: grade56`). The validator enforces them exactly as for maths, with these adaptations for writing:
+
+- Slides: no bullet points; LI and SC before the launch (title, Teacher Resources, any overview, LI and SC, launch, then key words and the body); never the word "lesson" in notes.
+- The "Your turn" slide uses the literacy wording of the standard steps (omit `steps` and the build adds them): First: Read the task carefully. Next: Complete each part carefully. Then: Check your work and move onto the early finisher option, if you get there. Put task-specific guidance in the task text and the sentence frame.
+- Every session gives a sectioned main sheet, an Extension and a supported sheet, with answer keys for the main sheet and the Extension. The main sheet climbs from a quick skill check to applying it, and usually ends with the session's writing (`lines` or `open`). The Extension deepens the same skill (a harder audience, combining two moves, judging and improving a model) with a worked example. The supported sheet changes the form: frames, a first sentence done, hints, a word bank.
+- Vary the question kinds (choice with a reason, sort, table, find and fix someone's sentence, open writing). Proficiency tags are a maths requirement and are optional here.
+- No slide sentence reappears on a sheet word for word: keep the skill, change the sentence.
+- Fun activities (cut and paste, highlighting, a crossword, a poster) sit beside the three sheets as their own page, cards or crossword resource.
 
 # ===== END OF MEGA-PROMPT. SHIFT CLICK HERE. =====
 

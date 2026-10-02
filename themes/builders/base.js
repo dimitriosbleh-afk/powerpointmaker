@@ -940,8 +940,9 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
       };
       for (let pt = byBand(sz, 32, 30, 26); pt >= sz.liBody; pt -= 1) {
         const h = heightAt(pt);
-        // +0.16 is the breathing room added to the two bodies below.
-        if (h.total + 0.16 <= available) { fontSize = pt; liLinesH = h.li + 0.08; scLinesH = h.sc + 0.08; break; }
+        // +0.08 per body is the breathing room added below; the LI body never
+        // drops under its 0.52" floor, so the fit has to count that floor too.
+        if (Math.max(h.li + 0.08, 0.52) + h.sc + 0.08 <= available) { fontSize = pt; liLinesH = h.li + 0.08; scLinesH = h.sc + 0.08; break; }
       }
     }
 
@@ -2107,6 +2108,33 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     const tag = byBand(sz, 0.62, 0.56, 0.48);
     const frames = [];
 
+    // Text-only options share one font size, the largest at which every
+    // option fits its card. Per-card shrinking made the longest option look
+    // different from the rest, which can give the answer away.
+    const textOnlyH = (opt) => {
+      const showTag = o.letters !== false || opt.label;
+      const top = cursorY + (showTag ? tag + 0.26 : 0.2);
+      const captionH = opt.caption ? byBand(sz, 0.5, 0.44, 0.38) : 0;
+      return Math.max(0.6, cursorY + cardH - 0.2 - captionH - top);
+    };
+    // Capitals are wider than lower case: weight them so CAPS words are measured honestly.
+    const wordLen = (w) => w.length + 0.4 * (w.match(/[A-Z]/g) || []).length;
+    const wrappedLines = (text, cpl) => {
+      let lines = 1; let len = 0;
+      String(text).split(/\s+/).filter(Boolean).forEach((word) => {
+        const wl = wordLen(word);
+        if (len && len + 1 + wl > cpl) { lines += 1; len = wl; } else len += (len ? 1 : 0) + wl;
+      });
+      return lines;
+    };
+    const textOpts = list.map((raw) => (typeof raw === "string" ? { text: raw } : (raw || {}))).filter((op) => op.text && !op.visual);
+    let sharedTextSize = byBand(sz, 40, 34, 28);
+    while (sharedTextSize > 16 && textOpts.some((op) => {
+      const cpl = Math.floor(((cardW - 0.4) * 72) / (sharedTextSize * 0.58));
+      const longest = Math.max(...String(op.text).split(/\s+/).map(wordLen));
+      return longest > cpl || wrappedLines(op.text, cpl) * (sharedTextSize * 1.25) / 72 > textOnlyH(op);
+    })) sharedTextSize -= 1;
+
     list.forEach((raw, i) => {
       const opt = typeof raw === "string" ? { text: raw } : (raw || {});
       const x = 0.5 + i * (cardW + gap);
@@ -2135,7 +2163,7 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
         const th = textOnly ? Math.max(0.6, cursorY + cardH - 0.2 - captionH - innerTop) : textH;
         s.addText(String(opt.text), {
           x: x + 0.2, y: ty, w: cardW - 0.4, h: th,
-          fontSize: textOnly ? byBand(sz, 40, 34, 28) : byBand(sz, 22, 19, 16),
+          fontSize: textOnly ? sharedTextSize : byBand(sz, 22, 19, 16),
           fontFace: textOnly ? FONT_H : FONT_B, color: C.CHARCOAL, bold: textOnly,
           align: "center", valign: "middle", margin: 0,
           fit: "shrink", shrinkText: true,

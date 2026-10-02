@@ -111,6 +111,9 @@ const SPEC_SAMPLES = {
   shortDivision: { type: "shortDivision", dividend: 4728, divisor: 6 },
   barModel: { type: "barModel", parts: 4, shaded: 1, total: "$80", labels: ["?", "", "", ""] },
   hundredGrid: { type: "hundredGrid", shaded: 35, label: "35%" },
+  fractionWall: { type: "fractionWall", shaded: { "4": 3 } },
+  clock: { type: "clock", time: "3:45", minutes: true, digital: true },
+  conversionChart: { type: "conversionChart", measure: "length" },
   tally: { type: "tally", headers: ["Sport", "Tally", "Frequency"], rows: [["Footy", 8], ["Netball", 5], ["Soccer", 12]] },
   custom: { type: "custom", draw: (slide, f) => { slide.addText("x", { x: f.x, y: f.y, w: 1, h: 0.4 }); return { x: f.x, y: f.y, w: 1, h: 0.4 }; } },
 };
