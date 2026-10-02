@@ -1,0 +1,1413 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 3,
+  "session": 4,
+  "title": "Reading Graphs and Drawing Conclusions",
+  "subtitle": "Term 4 Week 3, Session 4",
+  "meta": "Year 5/6 Maths | Statistics",
+  "footer": "Statistics | Year 5/6 Maths | Session 4",
+  "outputFolder": "T4W3_Maths_S4_Interpreting_Data",
+  "fileName": "Session 4 - Reading Graphs and Drawing Conclusions.pptx",
+  "titleVisual": {
+   "type": "chart",
+   "style": "bar",
+   "categories": [
+    "Shop A",
+    "Shop B"
+   ],
+   "values": [
+    52,
+    55
+   ],
+   "yStart": 50,
+   "title": "Sales"
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Statistics, Years 5 and 6 (VC2M5ST03, VC2M6ST03): interpret data and communicate findings in the context of the investigation, with conclusions supported by the evidence",
+   "shape": "problem-first: a misleading graph opens the session so students feel the trap, then the teacher models reading the scale and writing a conclusion",
+   "criticalFeature": "read the scale before you compare, and only claim what the data shows",
+   "decisionPoints": [
+    "the choice check: which graph shows the data fairly?",
+    "the hinge: how much did the score really go up?",
+    "the exit ticket"
+   ],
+   "anchor": "ask, collect, show, tell: every investigation starts with a fair question and ends with what the data shows",
+   "catchUp": "Missed Session 3? Show the display table (column, dot plot, line) and point out the title, labels and scale on one graph."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "A ruler for every student, for reading graphs",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: ask, collect, show, tell",
+   "A sentence frame: The data shows ___ because ___."
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Read a column graph and a dot plot, sort supported conclusions, and catch a misleading graph.",
+   "title": "Reading Graphs and Drawing Conclusions",
+   "subtitle": "Read the scale first. Only claim what the data shows.",
+   "sections": [
+    {
+     "title": "Read and tell",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "How many lunches were sold on Monday and Tuesday together?",
+      "steps": [
+       "Read Monday: 30.",
+       "Read Tuesday: 45.",
+       "30 + 45 = 75."
+      ],
+      "answer": "75 lunches"
+     },
+     "items": [
+      {
+       "prompt": "Use the canteen graph.",
+       "visual": {
+        "type": "chart",
+        "style": "bar",
+        "categories": [
+         "Mon",
+         "Tue",
+         "Wed",
+         "Thu",
+         "Fri"
+        ],
+        "values": [
+         30,
+         45,
+         25,
+         50,
+         40
+        ],
+        "title": "Canteen lunches sold",
+        "yLabel": "Lunches",
+        "maxH": 140
+       },
+       "working": "none",
+       "parts": [
+        {
+         "prompt": "Busiest day?",
+         "answer": "Thursday"
+        },
+        {
+         "prompt": "Total for the week?",
+         "answer": "190"
+        },
+        {
+         "prompt": "Thursday minus Wednesday?",
+         "answer": "25"
+        }
+       ]
+      },
+      {
+       "prompt": "Use the dot plot. Each dot is one family.",
+       "visual": {
+        "type": "chart",
+        "style": "dot",
+        "categories": [
+         "0",
+         "1",
+         "2",
+         "3",
+         "4"
+        ],
+        "values": [
+         4,
+         7,
+         5,
+         2,
+         1
+        ],
+        "title": "Pets per family",
+        "xLabel": "Pets",
+        "maxH": 140
+       },
+       "working": "none",
+       "parts": [
+        {
+         "prompt": "Most common number of pets?",
+         "answer": "1"
+        },
+        {
+         "prompt": "Families surveyed?",
+         "answer": "19"
+        },
+        {
+         "prompt": "Families with 2 or more pets?",
+         "answer": "8"
+        }
+       ]
+      },
+      {
+       "prompt": "The canteen plans to sell 250 lunches next week. Does this week's data make that likely? Explain with numbers.",
+       "answer": "Not likely: only 190 were sold this week, so 250 would need 60 more than this week.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Is it supported?",
+     "proficiency": "reasoning",
+     "columns": 1,
+     "example": {
+      "prompt": "Is 'Friday sold more than Wednesday' supported?",
+      "steps": [
+       "Friday 40 is more than Wednesday 25.",
+       "The data shows it."
+      ],
+      "answer": "supported"
+     },
+     "items": [
+      {
+       "kind": "sort",
+       "prompt": "Use the canteen graph. Sort each conclusion.",
+       "cards": [
+        "Thursday was the busiest day",
+        "Students love Thursday food",
+        "Tuesday sold more than Monday",
+        "Every school sells most on Thursday",
+        "Wednesday sold the fewest",
+        "Next Thursday will sell 50"
+       ],
+       "groups": [
+        "supported by the data",
+        "not supported"
+       ],
+       "answer": {
+        "supported by the data": [
+         "Thursday was the busiest day",
+         "Tuesday sold more than Monday",
+         "Wednesday sold the fewest"
+        ],
+        "not supported": [
+         "Students love Thursday food",
+         "Every school sells most on Thursday",
+         "Next Thursday will sell 50"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "title": "Catch the trick",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Scale starts at 40. A scored 42, B 48. How many more did B score?",
+      "steps": [
+       "The scale starts at 40, not 0.",
+       "Read 42 and 48.",
+       "48 - 42 = 6."
+      ],
+      "answer": "6 more"
+     },
+     "items": [
+      {
+       "kind": "mistake",
+       "prompt": "Ella read this graph. Find her mistake and fix it.",
+       "visual": {
+        "type": "chart",
+        "style": "bar",
+        "categories": [
+         "Red",
+         "Blue"
+        ],
+        "values": [
+         72,
+         78
+        ],
+        "yStart": 70,
+        "title": "Votes",
+        "maxH": 125
+       },
+       "work": [
+        "Blue's column is four times as tall,",
+        "so Blue got four times as many votes as Red."
+       ],
+       "answer": "The scale starts at 70. Red got 72 and Blue got 78, so Blue got only 6 more votes."
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which change would make Ella's graph fair?",
+       "options": [
+        "start the scale at 0",
+        "make the columns wider",
+        "add more colour"
+       ],
+       "answer": 0,
+       "reason": true,
+       "explain": "Starting at 0 makes each column's height match its value, so the columns compare fairly."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Comparing two classes, judging two graphs of the same data, and making a misleading graph on purpose, with worked examples.",
+   "title": "Extension: Data Detectives",
+   "subtitle": "Compare carefully. Explain the trick.",
+   "sections": [
+    {
+     "title": "Compare two classes",
+     "proficiency": "reasoning",
+     "columns": 1,
+     "example": {
+      "prompt": "Write a conclusion comparing 6A and 6B on walking.",
+      "steps": [
+       "Read 6A walk: 8. Read 6B walk: 3.",
+       "Find the difference: 5.",
+       "6A had 5 more walkers than 6B."
+      ],
+      "answer": "6A had 5 more walkers than 6B."
+     },
+     "items": [
+      {
+       "prompt": "Use the double column graph of how 6A and 6B get to school.",
+       "visual": {
+        "type": "chart",
+        "categories": [
+         "Walk",
+         "Car",
+         "Bus",
+         "Bike"
+        ],
+        "series": [
+         {
+          "name": "6A",
+          "values": [
+           8,
+           10,
+           3,
+           4
+          ]
+         },
+         {
+          "name": "6B",
+          "values": [
+           3,
+           12,
+           6,
+           4
+          ]
+         }
+        ],
+        "yLabel": "Students",
+        "maxH": 150
+       },
+       "working": "none",
+       "parts": [
+        {
+         "prompt": "Which way did both classes use equally?",
+         "answer": "bike"
+        },
+        {
+         "prompt": "How many more 6B students came by bus?",
+         "answer": "3"
+        },
+        {
+         "prompt": "How many students are in each class?",
+         "answer": "25 in each"
+        }
+       ]
+      },
+      {
+       "prompt": "Write two conclusions about the two classes. Use numbers as evidence in each.",
+       "answer": "For example: More 6B students come by car (12) than 6A (10). 6A has 5 more walkers than 6B.",
+       "lines": 4
+      }
+     ]
+    },
+    {
+     "title": "Same data, two graphs",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Two graphs show the same data. How can you tell which is fair?",
+      "steps": [
+       "Check where each scale starts.",
+       "A fair column graph starts at 0.",
+       "Check the steps are equal."
+      ],
+      "answer": "the one that starts at 0 with equal steps"
+     },
+     "items": [
+      {
+       "prompt": "Graph A: the scale starts at 0. Graph B: the scale starts at 90. Both show test scores of 92 and 96. Which graph would a student use to show off? Why?",
+       "answer": "Graph B: starting at 90 makes a 4-mark rise look huge.",
+       "lines": 3
+      },
+      {
+       "prompt": "A newspaper graph has no scale at all. Why is that a problem?",
+       "answer": "Without a scale you cannot read the values, so you cannot check any claim.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Make a misleading graph",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "How could you make 51 and 54 look very different?",
+      "steps": [
+       "Start the scale at 50.",
+       "Now the columns are 1 and 4 squares tall.",
+       "54 looks four times as big."
+      ],
+      "answer": "start the scale near the values"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Make a misleading graph on purpose with data of your own. Then explain the trick, and draw the fair version beside it.",
+       "answer": "Check: the misleading graph uses a trick (scale not at 0, uneven steps or missing labels), the trick is explained, and the fair version starts at 0 with equal steps."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: one question per graph, a ruler routine, and a hint on every question.",
+   "title": "Reading Graphs: Step by Step",
+   "subtitle": "Use a ruler. Read the scale first.",
+   "sections": [
+    {
+     "title": "Read a value",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "How many lunches were sold on Tuesday?",
+      "visual": {
+       "type": "chart",
+       "style": "bar",
+       "categories": [
+        "Mon",
+        "Tue",
+        "Wed"
+       ],
+       "values": [
+        30,
+        45,
+        25
+       ],
+       "maxH": 110
+      },
+      "steps": [
+       "Put a ruler across the top of the Tuesday column.",
+       "Read the number on the scale: 45."
+      ],
+      "answer": "45"
+     },
+     "items": [
+      {
+       "prompt": "How many lunches were sold on Friday?",
+       "visual": {
+        "type": "chart",
+        "style": "bar",
+        "categories": [
+         "Thu",
+         "Fri"
+        ],
+        "values": [
+         50,
+         40
+        ],
+        "maxH": 170
+       },
+       "hint": "Lay your ruler across the top of the Friday column.",
+       "answer": "40",
+       "answerLabel": "Friday:",
+       "working": "none"
+      },
+      {
+       "prompt": "How many more on Thursday than Friday?",
+       "visual": {
+        "type": "chart",
+        "style": "bar",
+        "categories": [
+         "Thu",
+         "Fri"
+        ],
+        "values": [
+         50,
+         40
+        ],
+        "maxH": 170
+       },
+       "hint": "Read both, then take the smaller from the bigger.",
+       "answer": "10",
+       "answerLabel": "More:",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "True or false?",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "'Monday sold the most.' True or false?",
+      "steps": [
+       "Monday: 30. Tuesday: 45.",
+       "45 is more than 30.",
+       "False."
+      ],
+      "answer": "false"
+     },
+     "items": [
+      {
+       "kind": "choice",
+       "prompt": "'Wednesday sold the fewest lunches (25).' True or false?",
+       "hint": "Find the shortest column.",
+       "options": [
+        "true",
+        "false"
+       ],
+       "answer": 0
+      },
+      {
+       "kind": "choice",
+       "prompt": "'This graph shows what every school sells.' True or false?",
+       "hint": "This data is from one school only.",
+       "options": [
+        "true",
+        "false"
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 4 of our statistics week: today we read graphs carefully and tell what the data shows."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards, markers and a ruler on every desk, and write the sentence frame on the board. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Describe the move",
+   "from": "teacher",
+   "prompts": [
+    "Describe the move from (2, 5) to (6, 1)."
+   ],
+   "reveal": {
+    "answers": [
+     "4 right, 4 down"
+    ]
+   },
+   "notes": {
+    "answer": "4 right, 4 down",
+    "beats": [
+     [
+      "SAY: Let's warm up with coordinates, fractions and angles."
+     ],
+     [
+      "ASK: How did the point move from 2, 5 to 6, 1?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 4 right, 4 down"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> compare the first numbers, then the second numbers, together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 4 right, from 2 to 6, and 4 down,",
+      "from 5 to 1. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 4 right, 4 up.",
+     "Fix: ask whether 1 is higher or lower than 5, and they fix it."
+    ],
+    "prep": "Review of Week 2 coordinates (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Compare them",
+   "from": "teacher",
+   "prompts": [
+    "Which is larger: 0.45 or 2/5?"
+   ],
+   "reveal": {
+    "answers": [
+     "0.45"
+    ]
+   },
+   "notes": {
+    "answer": "0.45",
+    "beats": [
+     [
+      "ASK: Which is larger: 0.45 or two fifths?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 0.45"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> turn 2/5 into hundredths, 40 hundredths, then compare. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Two fifths is 0.40, so 0.45 is larger. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "choosing 2/5 because 5 is bigger than 4.",
+     "Fix: write both as hundredths, and they compare again."
+    ],
+    "prep": "Term 3 review: comparing fractions and decimals.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Complementary angles",
+   "from": "teacher",
+   "prompts": [
+    "Two complementary angles: one is 28°. Find the other."
+   ],
+   "reveal": {
+    "answers": [
+     "62°"
+    ]
+   },
+   "notes": {
+    "answer": "62°",
+    "beats": [
+     [
+      "ASK: If two complementary angles are 28 degrees and x, how big is x?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 62"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> draw a right angle split in two, say 90, then subtract. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Complementary angles make 90, and 90 take away 28 is 62.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 152, from 180.",
+     "Fix: say complementary means 90, and they redo it."
+    ],
+    "prep": "Week 1 review: complementary angles.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Subtract with the written method: 3 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     604,
+     289
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "315"
+    ]
+   },
+   "notes": {
+    "answer": "315",
+    "beats": [
+     [
+      "SAY: Now for some written subtraction.",
+      "Line up the places, and always start with the ones."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 315"
+     ],
+     [
+      "SCAN boards for the regrouped columns.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 315.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one in every column.",
+     "Fix: ask \"Is the top digit big enough?\", and they regroup and redo it."
+    ],
+    "prep": "Subtraction fluency: 3 digits, then 4, then 5. Keep the whole block under 6 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Subtract with the written method: 4 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     9100,
+     4387
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "4 713"
+    ]
+   },
+   "notes": {
+    "answer": "4 713",
+    "beats": [
+     [
+      "SAY: Now it's 4 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 4 713"
+     ],
+     [
+      "SCAN boards for the regrouped columns.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 4 713.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one in every column.",
+     "Fix: ask \"Is the top digit big enough?\", and they regroup and redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Subtract with the written method: 5 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     80000,
+     45678
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "34 322"
+    ]
+   },
+   "notes": {
+    "answer": "34 322",
+    "beats": [
+     [
+      "SAY: Now it's 5 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 34 322"
+     ],
+     [
+      "SCAN boards for the regrouped columns.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 34 322.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one in every column.",
+     "Fix: ask \"Is the top digit big enough?\", and they regroup and redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to read data displays and write conclusions the data supports.",
+   "successCriteria": [
+    "I can read values from a graph.",
+    "I can write a conclusion that the data supports, with a number as evidence.",
+    "I can spot a misleading graph and explain why it misleads."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: We've asked, collected and shown our data.",
+      "Today is the last step: telling what it shows."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 reading values is reachable for everyone; SC2 a supported conclusion is the core and the exit evidence; SC3 spotting a misleading graph is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Did Shop B sell lots more?",
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Shop A",
+     "Shop B"
+    ],
+    "values": [
+     52,
+     55
+    ],
+    "yStart": 50,
+    "title": "Ice-creams sold",
+    "yLabel": "Ice-creams"
+   },
+   "prompt": "Did Shop B sell a lot more than Shop A?",
+   "notes": {
+    "answer": "No: only 3 more, the scale starts at 50",
+    "beats": [
+     [
+      "POINT to the two columns.",
+      "SAY: Here are two shops' ice-cream sales. Shop B's column looks much taller."
+     ],
+     [
+      "ASK: Did Shop B sell a lot more ice-creams than Shop A?",
+      "Thumbs up for yes, down for no.",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: many thumbs up"
+     ],
+     [
+      "POINT to the scale, starting at 50.",
+      "SAY: Now look at the scale. It starts at 50, not 0.",
+      "Shop A sold 52 and Shop B sold 55: only 3 more."
+     ],
+     [
+      "SAY: The graph tricked our eyes.",
+      "Today we learn to read the scale first,",
+      "and only claim what the data really shows."
+     ]
+    ],
+    "trap": [
+     "reading the column heights, not the scale.",
+     "Fix: run a finger up the scale from 50, and they read the values."
+    ],
+    "prep": "Problem-first: students feel the trap before the I Do. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "conclusion",
+   "meaning": "What the data shows, said in a sentence with evidence.",
+   "example": "Soccer is the most popular: 15 students chose it.",
+   "pictogram": "magnifier",
+   "notes": {
+    "answer": "what the data shows, with evidence",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is conclusion. Say it with me: con-clu-sion."
+     ],
+     [
+      "SAY: A conclusion says what the data shows,",
+      "and it gives a number from the data as evidence."
+     ],
+     [
+      "ASK: Does a conclusion need evidence? Thumbs up or down.",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up"
+     ]
+    ],
+    "trap": [
+     "giving an opinion as a conclusion.",
+     "Fix: ask which number proves it, and they rewrite it."
+    ],
+    "prep": "Conclusion plus evidence is the SC2 habit.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Write a conclusion",
+   "steps": [
+    "Read the values.",
+    "Find what stands out: biggest, smallest, a difference.",
+    "Write a sentence with a number as evidence.",
+    "Check: does the data really show it?"
+   ],
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Pasta",
+     "Wraps",
+     "Sushi",
+     "Soup"
+    ],
+    "values": [
+     12,
+     7,
+     9,
+     4
+    ],
+    "title": "Favourite lunch",
+    "yLabel": "Students"
+   },
+   "reveal": {
+    "answers": [
+     "8 more",
+     "Pasta is most popular: 12 students chose it"
+    ]
+   },
+   "notes": {
+    "answer": "8 more",
+    "beats": [
+     [
+      "MODEL reading each column with a ruler.",
+      "SAY: Let me read the values: pasta 12, wraps 7, sushi 9, soup 4."
+     ],
+     [
+      "MODEL writing the conclusion.",
+      "SAY: Pasta stands out as the biggest, so my conclusion is:",
+      "Pasta is the most popular lunch, because 12 students chose it."
+     ],
+     [
+      "ASK: How many more students chose pasta than soup?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 8"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 8 more. That's another conclusion with evidence:",
+      "8 more students chose pasta than soup."
+     ]
+    ],
+    "trap": [
+     "writing 'pasta is yummy' as a conclusion.",
+     "Fix: ask which number proves it, and they rewrite it."
+    ],
+    "stretch": "Write a conclusion about the two middle columns.",
+    "help": "Use the frame: The data shows ___ because ___.",
+    "prep": "A conclusion is a claim plus a number from the data. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Spot a misleading graph",
+   "steps": [
+    "Read the scale first: it starts at 40.",
+    "Read the values: 42 and 48.",
+    "The difference is only 6.",
+    "A fair column graph starts at 0."
+   ],
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Team A",
+     "Team B"
+    ],
+    "values": [
+     42,
+     48
+    ],
+    "yStart": 40,
+    "title": "Goals this season",
+    "yLabel": "Goals"
+   },
+   "reveal": {
+    "answers": [
+     "6 more goals"
+    ]
+   },
+   "notes": {
+    "answer": "6 more",
+    "beats": [
+     [
+      "POINT to the columns.",
+      "SAY: Team B's column looks four times taller. But I always read the scale first."
+     ],
+     [
+      "POINT to 40 at the bottom of the scale.",
+      "SAY: This scale starts at 40, not 0.",
+      "So Team A scored 42 and Team B scored 48."
+     ],
+     [
+      "ASK: How many more goals did Team B really score?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 6"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Only 6 more. Starting the scale at 40 makes a small difference look huge.",
+      "That's a misleading graph."
+     ]
+    ],
+    "trap": [
+     "saying four times as many.",
+     "Fix: read both values from the scale, and they redo the difference."
+    ],
+    "stretch": "Sketch how the fair graph would look.",
+    "help": "Put a finger on the bottom number of the scale before reading.",
+    "prep": "Read the scale before comparing: the critical feature. SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which graph shows the data fairly?",
+   "prompt": "Bike 20, Scooter 25. Point to A, B or C",
+   "options": [
+    {
+     "visual": {
+      "type": "chart",
+      "style": "bar",
+      "categories": [
+       "Bike",
+       "Scooter"
+      ],
+      "values": [
+       20,
+       25
+      ],
+      "yStart": 15
+     },
+     "misconception": "trusts column heights without checking the scale starts at 0"
+    },
+    {
+     "visual": {
+      "type": "chart",
+      "style": "bar",
+      "categories": [
+       "Bike",
+       "Scooter"
+      ],
+      "values": [
+       20,
+       25
+      ]
+     }
+    },
+    {
+     "visual": {
+      "type": "chart",
+      "style": "bar",
+      "categories": [
+       "Bike",
+       "Scooter"
+      ],
+      "values": [
+       25,
+       20
+      ]
+     },
+     "misconception": "checks the scale but not the values: bike and scooter are swapped"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Bike got 20 and scooter got 25.",
+      "Check each graph's scale and values."
+     ],
+     [
+      "ASK: Which graph shows the data fairly?",
+      "20 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What is wrong with A?",
+      "Less -> read the bottom of each scale aloud together. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B. Its scale starts at 0, and the values match.",
+      "A starts at 15, and C has the values swapped."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: ask where A's scale starts, and they choose again."
+    ],
+    "prep": "First decision point. A means the scale was not checked; C means values were not read.",
+    "tag": "[CFU | Supported application | SC3 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "True or false?",
+   "ask": "Is the statement true or false? Write T or F.",
+   "routine": "boards",
+   "thinkTime": 15,
+   "pivot": "read each value with a ruler, then check the statement",
+   "followUp": "cold call one board: Which numbers prove it?",
+   "items": [
+    {
+     "visual": {
+      "type": "chart",
+      "style": "bar",
+      "categories": [
+       "Footy",
+       "Netball",
+       "Soccer",
+       "Cricket",
+       "Tennis"
+      ],
+      "values": [
+       12,
+       9,
+       15,
+       6,
+       3
+      ],
+      "title": "Favourite sport",
+      "yLabel": "Students"
+     },
+     "label": "Soccer is the most popular.",
+     "answer": "T: soccer has 15"
+    },
+    {
+     "visual": {
+      "type": "chart",
+      "style": "bar",
+      "categories": [
+       "Footy",
+       "Netball",
+       "Soccer",
+       "Cricket",
+       "Tennis"
+      ],
+      "values": [
+       12,
+       9,
+       15,
+       6,
+       3
+      ],
+      "title": "Favourite sport",
+      "yLabel": "Students"
+     },
+     "label": "Footy is twice as popular as cricket.",
+     "answer": "T: 12 is double 6"
+    },
+    {
+     "visual": {
+      "type": "chart",
+      "style": "bar",
+      "categories": [
+       "Footy",
+       "Netball",
+       "Soccer",
+       "Cricket",
+       "Tennis"
+      ],
+      "values": [
+       12,
+       9,
+       15,
+       6,
+       3
+      ],
+      "title": "Favourite sport",
+      "yLabel": "Students"
+     },
+     "label": "Netball has 3 more votes than footy.",
+     "answer": "F: netball has 3 fewer"
+    },
+    {
+     "visual": {
+      "type": "chart",
+      "style": "bar",
+      "categories": [
+       "Footy",
+       "Netball",
+       "Soccer",
+       "Cricket",
+       "Tennis"
+      ],
+      "values": [
+       12,
+       9,
+       15,
+       6,
+       3
+      ],
+      "title": "Favourite sport",
+      "yLabel": "Students"
+     },
+     "label": "45 students were surveyed.",
+     "answer": "T: 12 + 9 + 15 + 6 + 3 = 45"
+    },
+    {
+     "visual": {
+      "type": "chart",
+      "style": "bar",
+      "categories": [
+       "Footy",
+       "Netball",
+       "Soccer",
+       "Cricket",
+       "Tennis"
+      ],
+      "values": [
+       12,
+       9,
+       15,
+       6,
+       3
+      ],
+      "title": "Favourite sport",
+      "yLabel": "Students"
+     },
+     "label": "Every student in Australia likes soccer best.",
+     "answer": "F: the data is only from our class",
+     "say": "False. This data is only from one class, not all of Australia."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's check some statements against the graph.",
+     "Write T or F on your board."
+    ],
+    "trap": [
+     "agreeing with a claim the data cannot show.",
+     "Fix: ask who was surveyed, and they rethink it."
+    ],
+    "stretch": "Rewrite each false statement so it is true.",
+    "help": "Write the five values on your board first.",
+    "prep": "Guided practice: true and false claims, then one beyond the data. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "How much did the score go up?",
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Term 1",
+     "Term 2"
+    ],
+    "values": [
+     92,
+     96
+    ],
+    "yStart": 90,
+    "title": "Class spelling score",
+    "yLabel": "Score"
+   },
+   "reveal": {
+    "answers": [
+     "4 marks"
+    ]
+   },
+   "notes": {
+    "answer": "4 marks",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Read the scale before you answer."
+     ],
+     [
+      "ASK: How much did the spelling score go up from Term 1 to Term 2?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 4"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> read the bottom of the scale aloud, then both values. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It went up 4, from 92 to 96.",
+      "The scale starts at 90, so the columns exaggerate it. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 'it tripled'.",
+     "Fix: read both values from the scale, and they redo it."
+    ],
+    "prep": "The hinge before independent work. Anyone writing 'a lot' or 'triple' starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC3 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Read graphs, sort conclusions and catch a misleading graph on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Where does this graph's scale start?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "a conclusion with no number.",
+     "Fix: ask which number proves it, and they add it."
+    ],
+    "stretch": "Extension: comparing two classes, two graphs of one set of data, and a trick graph.",
+    "help": "Supported Worksheet: one question per graph, a ruler routine and hints.",
+    "prep": "Independent practice: reading, supported conclusions and misleading graphs. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Write one conclusion this graph supports. Use a number as evidence."
+   ],
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Mon",
+     "Tue",
+     "Wed",
+     "Thu",
+     "Fri"
+    ],
+    "values": [
+     14,
+     20,
+     8,
+     17,
+     11
+    ],
+    "title": "Library books borrowed",
+    "yLabel": "Books"
+   },
+   "notes": {
+    "answer": "Tuesday was busiest: 20 books",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What is one conclusion this graph supports, with a number as evidence?",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: Tuesday was busiest: 20 books"
+     ],
+     [
+      "RECORD who writes a claim with no number, or one the data cannot show.",
+      "They start next week's statistics review with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing 'students like Tuesday'.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: a new graph, a conclusion with evidence.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner the two checks before you trust a graph.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for read the scale, and only claim what the data shows",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can write a conclusion the data supports?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with no number in the exit conclusion matters most."
+     ],
+     [
+      "ASK: What two checks do you make before you trust a graph?",
+      "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: read the scale, and only claim what the data shows"
+     ]
+    ],
+    "prep": "Week close: read the self-assessment beside the exit evidence for next week's review.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1946 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 2,
+  "session": 2,
+  "title": "Plotting Points to Draw Shapes",
+  "subtitle": "Term 4 Week 2, Session 2",
+  "meta": "Year 5/6 Maths | Space",
+  "footer": "Grid Coordinates | Year 5/6 Maths | Session 2",
+  "outputFolder": "T4W2_Maths_S2_Plotting_Shapes",
+  "fileName": "Session 2 - Plotting Points to Draw Shapes.pptx",
+  "titleVisual": {
+   "type": "grid",
+   "x": [
+    0,
+    7
+   ],
+   "y": [
+    0,
+    6
+   ],
+   "points": [
+    {
+     "x": 1,
+     "y": 1,
+     "label": "A"
+    },
+    {
+     "x": 6,
+     "y": 1,
+     "label": "B"
+    },
+    {
+     "x": 6,
+     "y": 4,
+     "label": "C"
+    },
+    {
+     "x": 1,
+     "y": 4,
+     "label": "D"
+    }
+   ],
+   "polygon": [
+    [
+     1,
+     1
+    ],
+    [
+     6,
+     1
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     1,
+     4
+    ]
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Space, Year 5 (VC2M5SP02) and Year 6 (VC2M6SP02): plotting points from coordinates and listing coordinates in order to complete a polygon",
+   "shape": "example-first, then a practice round of missing corners, because joining in order and reasoning about a missing vertex are both new",
+   "criticalFeature": "join the points in the order they are listed, then back to the start",
+   "decisionPoints": [
+    "the choice check: which list draws a square?",
+    "the hinge: the fourth corner of a rectangle",
+    "the exit ticket"
+   ],
+   "anchor": "across the corridor, then up the stairs: (x, y), and the numbers sit on the lines",
+   "catchUp": "Missed Session 1? Show the anchor on the big grid and plot one point together (across, then up) before the I Do."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "A ruler and a sharp pencil for every student",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The anchor on the board: across the corridor, then up the stairs, (x, y)",
+   "A large grid drawn or projected for plotting together"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Plot and join shapes, read a shape's corners, find missing corners, fix a mistake and design a garden bed.",
+   "title": "Plotting Points to Draw Shapes",
+   "subtitle": "Plot each point, then join them in order.",
+   "sections": [
+    {
+     "title": "Plot and join",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Plot and join (1, 1), (4, 1), (1, 3). Name the shape.",
+      "visual": {
+       "type": "grid",
+       "x": [
+        0,
+        5
+       ],
+       "y": [
+        0,
+        4
+       ],
+       "points": [
+        {
+         "x": 1,
+         "y": 1
+        },
+        {
+         "x": 4,
+         "y": 1
+        },
+        {
+         "x": 1,
+         "y": 3
+        }
+       ],
+       "polygon": [
+        [
+         1,
+         1
+        ],
+        [
+         4,
+         1
+        ],
+        [
+         1,
+         3
+        ]
+       ]
+      },
+      "steps": [
+       "Plot each point: across, then up.",
+       "Join them in order, then back to the start.",
+       "Three straight sides: a triangle."
+      ],
+      "answer": "a right-angled triangle"
+     },
+     "items": [
+      {
+       "prompt": "Plot and join in order: (1, 1), (6, 1), (6, 4), (1, 4). Name the shape.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         7
+        ],
+        "y": [
+         0,
+         6
+        ],
+        "maxH": 190
+       },
+       "answerVisual": {
+        "type": "grid",
+        "x": [
+         0,
+         7
+        ],
+        "y": [
+         0,
+         6
+        ],
+        "maxH": 190,
+        "polygon": [
+         [
+          1,
+          1
+         ],
+         [
+          6,
+          1
+         ],
+         [
+          6,
+          4
+         ],
+         [
+          1,
+          4
+         ]
+        ]
+       },
+       "answer": "rectangle",
+       "answerLabel": "Shape:",
+       "working": "none"
+      },
+      {
+       "prompt": "Plot and join in order: (2, 0), (6, 0), (4, 5). Name the shape.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         7
+        ],
+        "y": [
+         0,
+         6
+        ],
+        "maxH": 190
+       },
+       "answerVisual": {
+        "type": "grid",
+        "x": [
+         0,
+         7
+        ],
+        "y": [
+         0,
+         6
+        ],
+        "maxH": 190,
+        "polygon": [
+         [
+          2,
+          0
+         ],
+         [
+          6,
+          0
+         ],
+         [
+          4,
+          5
+         ]
+        ]
+       },
+       "answer": "isosceles triangle",
+       "answerLabel": "Shape:",
+       "working": "none"
+      },
+      {
+       "prompt": "Write the coordinates of each corner of the house.",
+       "span": "full",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         7
+        ],
+        "y": [
+         0,
+         6
+        ],
+        "points": [
+         {
+          "x": 1,
+          "y": 1,
+          "label": "A"
+         },
+         {
+          "x": 5,
+          "y": 1,
+          "label": "B"
+         },
+         {
+          "x": 5,
+          "y": 4,
+          "label": "C"
+         },
+         {
+          "x": 3,
+          "y": 6,
+          "label": "D"
+         },
+         {
+          "x": 1,
+          "y": 4,
+          "label": "E"
+         }
+        ],
+        "maxH": 130,
+        "polygon": [
+         [
+          1,
+          1
+         ],
+         [
+          5,
+          1
+         ],
+         [
+          5,
+          4
+         ],
+         [
+          3,
+          6
+         ],
+         [
+          1,
+          4
+         ]
+        ]
+       },
+       "parts": [
+        {
+         "prompt": "A",
+         "answer": "(1, 1)"
+        },
+        {
+         "prompt": "B",
+         "answer": "(5, 1)"
+        },
+        {
+         "prompt": "C",
+         "answer": "(5, 4)"
+        },
+        {
+         "prompt": "D",
+         "answer": "(3, 6)"
+        },
+        {
+         "prompt": "E",
+         "answer": "(1, 4)"
+        }
+       ],
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Find the missing corner",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "A rectangle has corners at (1, 1), (5, 1) and (5, 3). Find the fourth corner.",
+      "steps": [
+       "It is straight above (1, 1): across 1.",
+       "It is level with (5, 3): up 3.",
+       "So it is (1, 3)."
+      ],
+      "answer": "(1, 3)"
+     },
+     "items": [
+      {
+       "prompt": "A rectangle has corners at (2, 1), (7, 1) and (7, 6). Where is the fourth corner? Sketch it if it helps.",
+       "answer": "(2, 6)",
+       "answerLabel": "Corner:"
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Leo found the fourth corner of the rectangle (3, 2), (8, 2), (8, 5). Find his mistake and fix it.",
+       "work": [
+        "The missing corner is above (3, 2).",
+        "So it is (5, 3)."
+       ],
+       "answer": "He swapped the two numbers. Across comes first: it is (3, 5), above (3, 2) and level with (8, 5)."
+      }
+     ]
+    },
+    {
+     "title": "Design a garden bed",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "A sandpit is a square with sides 3 long. One corner is at (2, 2). Where is the corner to its right?",
+      "steps": [
+       "Going right changes the across number.",
+       "2 + 3 = 5.",
+       "The corner is (5, 2)."
+      ],
+      "answer": "(5, 2)"
+     },
+     "items": [
+      {
+       "prompt": "A garden bed is a rectangle 4 long and 2 wide. Its bottom-left corner is at (1, 1). Find its other corners.",
+       "parts": [
+        {
+         "prompt": "4 to the right of (1, 1)",
+         "answer": "(5, 1)"
+        },
+        {
+         "prompt": "2 above that corner",
+         "answer": "(5, 3)"
+        },
+        {
+         "prompt": "the last corner",
+         "answer": "(1, 3)"
+        }
+       ]
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which point makes a right-angled triangle with (1, 1) and (5, 1)?",
+       "options": [
+        "(3, 4)",
+        "(5, 4)",
+        "(6, 3)"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "(5, 4) is straight above (5, 1), so the corner at (5, 1) is a right angle."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Side lengths and perimeter from coordinates, halfway points and your own symmetrical shape, with worked examples.",
+   "title": "Extension: Shapes on the Grid",
+   "subtitle": "Use the coordinates to measure.",
+   "sections": [
+    {
+     "title": "Side lengths from coordinates",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "How long is the side from (2, 3) to (7, 3)?",
+      "steps": [
+       "The up number stays 3, so the side goes across.",
+       "Across from 2 to 7.",
+       "7 - 2 = 5 units."
+      ],
+      "answer": "5 units"
+     },
+     "items": [
+      {
+       "prompt": "A rectangle has corners (1, 1), (7, 1), (7, 4) and (1, 4). Find its length, width and perimeter.",
+       "parts": [
+        {
+         "prompt": "length",
+         "answer": "6 units"
+        },
+        {
+         "prompt": "width",
+         "answer": "3 units"
+        },
+        {
+         "prompt": "perimeter",
+         "answer": "18 units"
+        }
+       ]
+      },
+      {
+       "prompt": "A square has corners (2, 2), (7, 2), (7, 7) and (2, 7). What is its perimeter? What is its area?",
+       "parts": [
+        {
+         "prompt": "perimeter",
+         "answer": "20 units"
+        },
+        {
+         "prompt": "area",
+         "answer": "25 squares"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Halfway points",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "What point is halfway between (2, 4) and (8, 4)?",
+      "steps": [
+       "The up number stays 4.",
+       "Halfway between 2 and 8 is 5.",
+       "So (5, 4)."
+      ],
+      "answer": "(5, 4)"
+     },
+     "items": [
+      {
+       "prompt": "What point is halfway between (1, 6) and (9, 6)?",
+       "answer": "(5, 6)",
+       "answerLabel": "Point:"
+      },
+      {
+       "prompt": "What point is halfway between (4, 1) and (4, 7)?",
+       "answer": "(4, 4)",
+       "answerLabel": "Point:"
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which point is the centre of the square (0, 0), (6, 0), (6, 6), (0, 6)?",
+       "options": [
+        "(3, 3)",
+        "(6, 3)",
+        "(3, 6)"
+       ],
+       "answer": 0,
+       "reason": true,
+       "explain": "Halfway across is 3 and halfway up is 3."
+      }
+     ]
+    },
+    {
+     "title": "Make your own",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Design a symmetrical shape.",
+      "steps": [
+       "Draw a line of symmetry down the grid.",
+       "Plot corners on one side, then mirror them.",
+       "List all the corners in order."
+      ],
+      "answer": "a list of corners"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Design a symmetrical shape with 6 corners. List its corners in order so a partner can draw it.",
+       "answer": "Check the list is in order, across first, and the shape is symmetrical."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: fewer points, the first point plotted, and a hint on every question.",
+   "title": "Drawing Shapes: Step by Step",
+   "subtitle": "Plot one point at a time.",
+   "sections": [
+    {
+     "title": "Plot and join",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Plot (1, 1), (4, 1), (4, 3) and join them.",
+      "visual": {
+       "type": "grid",
+       "x": [
+        0,
+        5
+       ],
+       "y": [
+        0,
+        4
+       ],
+       "points": [
+        {
+         "x": 1,
+         "y": 1
+        },
+        {
+         "x": 4,
+         "y": 1
+        },
+        {
+         "x": 4,
+         "y": 3
+        }
+       ],
+       "polygon": [
+        [
+         1,
+         1
+        ],
+        [
+         4,
+         1
+        ],
+        [
+         4,
+         3
+        ]
+       ]
+      },
+      "steps": [
+       "Plot (1, 1): across 1, up 1.",
+       "Plot the next two the same way.",
+       "Join them with a ruler, then back to the start."
+      ],
+      "answer": "a triangle"
+     },
+     "items": [
+      {
+       "prompt": "Plot (1, 1), (5, 1), (5, 4), (1, 4). Join them in order.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         6
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 1,
+          "y": 1,
+          "label": "start"
+         }
+        ]
+       },
+       "hint": "The first point is done for you.",
+       "answerVisual": {
+        "type": "grid",
+        "x": [
+         0,
+         6
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "polygon": [
+         [
+          1,
+          1
+         ],
+         [
+          5,
+          1
+         ],
+         [
+          5,
+          4
+         ],
+         [
+          1,
+          4
+         ]
+        ]
+       },
+       "answer": "a rectangle",
+       "answerLabel": "Shape:",
+       "working": "none"
+      },
+      {
+       "prompt": "Plot (2, 1), (4, 4), (0, 4). Join them in order.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         6
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 2,
+          "y": 1,
+          "label": "start"
+         }
+        ]
+       },
+       "hint": "Across first, then up, for every point.",
+       "answerVisual": {
+        "type": "grid",
+        "x": [
+         0,
+         6
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "polygon": [
+         [
+          2,
+          1
+         ],
+         [
+          4,
+          4
+         ],
+         [
+          0,
+          4
+         ]
+        ]
+       },
+       "answer": "a triangle",
+       "answerLabel": "Shape:",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Find the missing corner",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Find the fourth corner of the square.",
+      "visual": {
+       "type": "grid",
+       "x": [
+        0,
+        5
+       ],
+       "y": [
+        0,
+        5
+       ],
+       "points": [
+        {
+         "x": 1,
+         "y": 1,
+         "label": "A"
+        },
+        {
+         "x": 4,
+         "y": 1,
+         "label": "B"
+        },
+        {
+         "x": 4,
+         "y": 4,
+         "label": "C"
+        }
+       ],
+       "path": [
+        [
+         1,
+         1
+        ],
+        [
+         4,
+         1
+        ],
+        [
+         4,
+         4
+        ]
+       ]
+      },
+      "steps": [
+       "The missing corner is above (1, 1), so across 1.",
+       "It is level with (4, 4), so up 4.",
+       "(1, 4)"
+      ],
+      "answer": "(1, 4)"
+     },
+     "items": [
+      {
+       "prompt": "Find the fourth corner of the rectangle.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         6
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 1,
+          "y": 1,
+          "label": "A"
+         },
+         {
+          "x": 5,
+          "y": 1,
+          "label": "B"
+         },
+         {
+          "x": 5,
+          "y": 3,
+          "label": "C"
+         }
+        ],
+        "path": [
+         [
+          1,
+          1
+         ],
+         [
+          5,
+          1
+         ],
+         [
+          5,
+          3
+         ]
+        ]
+       },
+       "hint": "It is above A, so its across number is 1.",
+       "answer": "(1, 3)",
+       "answerLabel": "D =",
+       "working": "none"
+      },
+      {
+       "prompt": "Find the fourth corner of the square.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         6
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 2,
+          "y": 1,
+          "label": "A"
+         },
+         {
+          "x": 5,
+          "y": 1,
+          "label": "B"
+         },
+         {
+          "x": 5,
+          "y": 4,
+          "label": "C"
+         }
+        ],
+        "path": [
+         [
+          2,
+          1
+         ],
+         [
+          5,
+          1
+         ],
+         [
+          5,
+          4
+         ]
+        ]
+       },
+       "hint": "It is above A and level with C.",
+       "answer": "(2, 4)",
+       "answerLabel": "D =",
+       "working": "none"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 2 of our coordinates week: today we plot points and join them to draw shapes."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards, markers, a ruler and a pencil on every desk. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Reflex angle",
+   "from": "teacher",
+   "prompts": [
+    "Find the reflex angle."
+   ],
+   "visual": {
+    "type": "angle",
+    "rays": [
+     0,
+     290
+    ],
+    "arcs": [
+     {
+      "from": 0,
+      "to": 290,
+      "label": "?"
+     },
+     {
+      "from": 290,
+      "to": 360,
+      "label": "70°"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "290°"
+    ]
+   },
+   "notes": {
+    "answer": "290°",
+    "beats": [
+     [
+      "SAY: Let's warm up with last week's angles again."
+     ],
+     [
+      "ASK: How big is the reflex angle marked with a question mark?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 290"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> trace all the way round: 360 take away the inside angle. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 290 degrees, because 360 take away 70 is 290.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 110, from 180.",
+     "Fix: trace the full turn, and they redo it from 360."
+    ],
+    "prep": "Review of Week 1 angles (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Two lines cross",
+   "from": "teacher",
+   "prompts": [
+    "Find a."
+   ],
+   "visual": {
+    "type": "angle",
+    "rays": [
+     0,
+     180,
+     55,
+     235
+    ],
+    "arcs": [
+     {
+      "from": 0,
+      "to": 55,
+      "label": "55°"
+     },
+     {
+      "from": 55,
+      "to": 180,
+      "label": "a"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "a = 125°"
+    ]
+   },
+   "notes": {
+    "answer": "a = 125°",
+    "beats": [
+     [
+      "ASK: How big is angle a?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 125"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> point to the straight line that a and 55 share,",
+      "then subtract from 180. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 125 degrees. Angle a sits next to 55 on a straight line,",
+      "and 180 take away 55 is 125. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 55, the opposite angle.",
+     "Fix: ask whether a is opposite or next to 55, and they redo it."
+    ],
+    "prep": "Week 1 review: angles where two lines cross.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Name the angles",
+   "from": "teacher",
+   "prompts": [
+    "Name each angle: 95°, 35°, 185°"
+   ],
+   "reveal": {
+    "answers": [
+     "obtuse",
+     "acute",
+     "reflex"
+    ]
+   },
+   "notes": {
+    "answer": "obtuse, acute, reflex",
+    "beats": [
+     [
+      "ASK: What is the name of each angle: 95, 35 and 185 degrees?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: obtuse, acute, reflex"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> hold up the name chart and compare each with 90 and 180. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 95 is obtuse, 35 is acute, and 185 is reflex,",
+      "because it's past a straight line. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "calling 185 obtuse.",
+     "Fix: ask whether it is past a straight line, and they rename it reflex."
+    ],
+    "prep": "Week 1 review: angle names.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "4 × 8"
+   ],
+   "reveal": {
+    "answers": [
+     "32"
+    ]
+   },
+   "notes": {
+    "answer": "32",
+    "beats": [
+     [
+      "SAY: Now for our four times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 4 times 8?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 32"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> double 8, then double again. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 32. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 28 or 36.",
+     "Fix: double 8 to get 16, double again to get 32, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "6 × 4"
+   ],
+   "reveal": {
+    "answers": [
+     "24"
+    ]
+   },
+   "notes": {
+    "answer": "24",
+    "beats": [
+     [
+      "SAY: Here's the next one."
+     ],
+     [
+      "ASK: What is 6 times 4?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 24"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> double 6, then double again. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 24. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 20.",
+     "Fix: count on one more 4 from 5 times 4, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "48 ÷ 4"
+   ],
+   "reveal": {
+    "answers": [
+     "12"
+    ]
+   },
+   "notes": {
+    "answer": "12",
+    "beats": [
+     [
+      "SAY: Now a division. Think: how many fours make 48?"
+     ],
+     [
+      "ASK: What is 48 divided by 4?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 12"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> halve 48, then halve again. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 12. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 11.",
+     "Fix: check: 12 times 4 is 48, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to plot points from coordinates and join them to draw shapes.",
+   "successCriteria": [
+    "I can plot a list of points on a grid.",
+    "I can draw a shape by joining points in the order they are listed.",
+    "I can find a missing corner and explain how I know."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: Yesterday we read and plotted single points.",
+      "Today we join points to make shapes."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 plotting is reachable for everyone; SC2 joining in order is the core and the exit evidence; SC3 reasoning about a missing corner is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Join the dots",
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     6
+    ],
+    "y": [
+     0,
+     6
+    ],
+    "points": [
+     {
+      "x": 1,
+      "y": 1,
+      "label": "A"
+     },
+     {
+      "x": 5,
+      "y": 1,
+      "label": "B"
+     },
+     {
+      "x": 5,
+      "y": 5,
+      "label": "C"
+     },
+     {
+      "x": 1,
+      "y": 5,
+      "label": "D"
+     }
+    ]
+   },
+   "prompt": "Join A, B, C, D in order. What shape do you get?",
+   "notes": {
+    "answer": "a square",
+    "beats": [
+     [
+      "POINT to each point in turn.",
+      "SAY: Here are four points, A, B, C and D.",
+      "Picture joining them in order with a ruler."
+     ],
+     [
+      "ASK: What shape do you get if you join A,",
+      "B, C, D in order, and back to A?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: a square"
+     ],
+     [
+      "SCAN boards for square.",
+      "80%+ -> draw it on the board and move on.",
+      "Less -> trace A to B to C to D in the air together. Re-ask."
+     ],
+     [
+      "SAY: It's a square. Now, what would happen if I joined A to C first?",
+      "The order changes the drawing, and that's our big idea today."
+     ]
+    ],
+    "trap": [
+     "saying rectangle.",
+     "Fix: count the squares along each side, 4 and 4, and they rename it."
+    ],
+    "prep": "The launch comes after the LI: order matters when joining points. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "vertex",
+   "meaning": "A corner of a shape, where two sides meet. More than one are called vertices.",
+   "example": "A triangle has 3 vertices.",
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     7
+    ],
+    "y": [
+     0,
+     6
+    ],
+    "points": [
+     {
+      "x": 1,
+      "y": 1,
+      "label": "A"
+     },
+     {
+      "x": 6,
+      "y": 1,
+      "label": "B"
+     },
+     {
+      "x": 3,
+      "y": 5,
+      "label": "C"
+     }
+    ],
+    "polygon": [
+     [
+      1,
+      1
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      3,
+      5
+     ]
+    ]
+   },
+   "notes": {
+    "answer": "a corner, where two sides meet",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is vertex. Say it with me: vertex."
+     ],
+     [
+      "SAY: A vertex is a corner of a shape, where two sides meet.",
+      "When there's more than one, we call them vertices."
+     ],
+     [
+      "ASK: How many vertices does this triangle have?",
+      "5 sec. Cue: Fingers at your chest... show me.",
+      "EXPECT: 3"
+     ]
+    ],
+    "trap": [
+     "counting the sides and the corners together.",
+     "Fix: touch only the corners, and they count again."
+    ],
+    "prep": "Mathematicians plot the vertices, then join them. Vertex and corner both work in speech today.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Plot and join",
+   "steps": [
+    "Plot each point: across, then up.",
+    "Join them in the order listed.",
+    "Join the last point back to the first.",
+    "Name the shape."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     8
+    ],
+    "y": [
+     0,
+     6
+    ],
+    "points": [
+     {
+      "x": 2,
+      "y": 1,
+      "label": "A"
+     },
+     {
+      "x": 7,
+      "y": 1,
+      "label": "B"
+     },
+     {
+      "x": 2,
+      "y": 5,
+      "label": "C"
+     }
+    ],
+    "polygon": [
+     [
+      2,
+      1
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      2,
+      5
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "a right-angled triangle"
+    ]
+   },
+   "notes": {
+    "answer": "a right-angled triangle",
+    "beats": [
+     [
+      "MODEL plotting A (2, 1), B (7, 1), C (2, 5).",
+      "SAY: Let me plot these three points.",
+      "For each one, I go across first, then up."
+     ],
+     [
+      "MODEL joining A to B to C, then back to A.",
+      "SAY: Now I join them in the order they're listed,",
+      "and I always finish by joining the last point back to the first."
+     ],
+     [
+      "ASK: What shape have I drawn?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: a triangle. ACCEPT: right-angled triangle"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's a right-angled triangle.",
+      "The corner at A is square: one side goes across, one goes straight up."
+     ]
+    ],
+    "trap": [
+     "leaving the shape open.",
+     "Fix: ask where the last point joins to, and they close it."
+    ],
+    "stretch": "Move one point to make an isosceles triangle.",
+    "help": "Tick each point as you plot it.",
+    "prep": "Plot, then join in order, then close the shape. SC1 and SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Find the missing corner",
+   "steps": [
+    "Plot the three corners you know.",
+    "D is straight above A, so its across number is A's: 1.",
+    "D is level with C, so its up number is C's: 5.",
+    "Write D as (1, 5)."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     7
+    ],
+    "y": [
+     0,
+     6
+    ],
+    "points": [
+     {
+      "x": 1,
+      "y": 2,
+      "label": "A"
+     },
+     {
+      "x": 6,
+      "y": 2,
+      "label": "B"
+     },
+     {
+      "x": 6,
+      "y": 5,
+      "label": "C"
+     }
+    ],
+    "path": [
+     [
+      1,
+      2
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      5
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "D = (1, 5)"
+    ]
+   },
+   "notes": {
+    "answer": "D = (1, 5)",
+    "beats": [
+     [
+      "POINT to A, B and C.",
+      "SAY: This rectangle has lost a corner. We know A, B and C."
+     ],
+     [
+      "MODEL tracing up from A, and across from C.",
+      "SAY: The missing corner D sits straight above A,",
+      "so it goes across 1, just like A.",
+      "And it's level with C, so it goes up 5, just like C."
+     ],
+     [
+      "ASK: So what are the coordinates of D?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (1, 5)"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 1, 5. We borrowed the across number from A,",
+      "and the up number from C."
+     ]
+    ],
+    "trap": [
+     "writing (5, 1).",
+     "Fix: trace up from A and across from C, and they rewrite it."
+    ],
+    "stretch": "If the rectangle were a square, what would D be?",
+    "help": "Lay one ruler up from A and one across from C.",
+    "prep": "Reasoning about a missing vertex: borrow one number from each neighbour. SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which list draws a square?",
+   "prompt": "Join the points in order. Point to A, B or C",
+   "options": [
+    {
+     "text": "(1, 1), (3, 1), (3, 3), (1, 3)"
+    },
+    {
+     "text": "(1, 1), (3, 3), (3, 1), (1, 3)",
+     "misconception": "ignores the order: the right points, but joined they make crossed lines"
+    },
+    {
+     "text": "(1, 1), (4, 1), (4, 3), (1, 3)",
+     "misconception": "checks for square corners but not equal sides: this is a rectangle"
+    }
+   ],
+   "answer": 0,
+   "notes": {
+    "answer": "A",
+    "beats": [
+     [
+      "SAY: Each list has four points.",
+      "Picture joining them in order. Which one makes a square?"
+     ],
+     [
+      "ASK: Which list draws a square when you join the points in order?",
+      "20 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to A"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: Why isn't it B?",
+      "Less -> sketch B on the big grid",
+      "in order so they see the crossed lines. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's A. B has the same points, but in the wrong order,",
+      "so its lines cross over.",
+      "C is a rectangle, because its sides are 3 and 2."
+     ]
+    ],
+    "trap": [
+     "pointing to B.",
+     "Fix: draw B in order together, and they choose again."
+    ],
+    "prep": "First decision point: B means order is ignored; C means equal sides are not checked.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Find the missing corner",
+   "ask": "What are the coordinates of the missing corner D?",
+   "routine": "boards",
+   "thinkTime": 15,
+   "pivot": "trace up from one corner and across from another with two rulers",
+   "followUp": "cold call one board: Which corner gave you the across number?",
+   "items": [
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       0,
+       7
+      ],
+      "y": [
+       0,
+       6
+      ],
+      "points": [
+       {
+        "x": 2,
+        "y": 1,
+        "label": "A"
+       },
+       {
+        "x": 5,
+        "y": 1,
+        "label": "B"
+       },
+       {
+        "x": 5,
+        "y": 4,
+        "label": "C"
+       }
+      ],
+      "path": [
+       [
+        2,
+        1
+       ],
+       [
+        5,
+        1
+       ],
+       [
+        5,
+        4
+       ]
+      ]
+     },
+     "answer": "D = (2, 4)"
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       0,
+       7
+      ],
+      "y": [
+       0,
+       6
+      ],
+      "points": [
+       {
+        "x": 0,
+        "y": 2,
+        "label": "A"
+       },
+       {
+        "x": 6,
+        "y": 2,
+        "label": "B"
+       },
+       {
+        "x": 6,
+        "y": 5,
+        "label": "C"
+       }
+      ],
+      "path": [
+       [
+        0,
+        2
+       ],
+       [
+        6,
+        2
+       ],
+       [
+        6,
+        5
+       ]
+      ]
+     },
+     "answer": "D = (0, 5)",
+     "say": "It's 0, 5. It sits right on the line going up."
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       0,
+       7
+      ],
+      "y": [
+       0,
+       6
+      ],
+      "points": [
+       {
+        "x": 1,
+        "y": 1,
+        "label": "A"
+       },
+       {
+        "x": 1,
+        "y": 4,
+        "label": "B"
+       },
+       {
+        "x": 5,
+        "y": 4,
+        "label": "C"
+       }
+      ],
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        5,
+        4
+       ]
+      ]
+     },
+     "answer": "D = (5, 1)"
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       0,
+       7
+      ],
+      "y": [
+       0,
+       6
+      ],
+      "points": [
+       {
+        "x": 1,
+        "y": 1,
+        "label": "A"
+       },
+       {
+        "x": 4,
+        "y": 1,
+        "label": "B"
+       },
+       {
+        "x": 5,
+        "y": 3,
+        "label": "C"
+       }
+      ],
+      "path": [
+       [
+        1,
+        1
+       ],
+       [
+        4,
+        1
+       ],
+       [
+        5,
+        3
+       ]
+      ]
+     },
+     "answer": "D = (2, 3)",
+     "say": "It's 2, 3. In a parallelogram, the top side matches the bottom side."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write the missing corner on your board each time."
+    ],
+    "trap": [
+     "swapping the two numbers.",
+     "Fix: ask which number is across, and they rewrite it."
+    ],
+    "stretch": "Find the perimeter of each shape in units.",
+    "help": "Lay one ruler up from a corner and one across from another.",
+    "prep": "Guided practice from typical to edge: a corner on the axis, then a parallelogram. SC2 and SC3.",
+    "tag": "[We Do | Supported application | SC3 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Find the fourth corner",
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     8
+    ],
+    "y": [
+     0,
+     7
+    ],
+    "points": [
+     {
+      "x": 2,
+      "y": 3,
+      "label": "A"
+     },
+     {
+      "x": 2,
+      "y": 6,
+      "label": "B"
+     },
+     {
+      "x": 7,
+      "y": 6,
+      "label": "C"
+     }
+    ],
+    "path": [
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      6
+     ],
+     [
+      7,
+      6
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "D = (7, 3)"
+    ]
+   },
+   "notes": {
+    "answer": "(7, 3). (3, 7) means across and up were swapped",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "It's a rectangle, and D is missing."
+     ],
+     [
+      "ASK: What are the coordinates of D?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (7, 3)"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> trace down from C and across from A together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 7, 3. D is below C, so across 7,",
+      "and level with A, so up 3. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (3, 7).",
+     "Fix: ask which number is across, and they rewrite it."
+    ],
+    "prep": "The hinge before independent work. Anyone who wrote (3, 7) starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Plot, join and find the corners on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Which order did you join the points in?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "joining points out of order.",
+     "Fix: tick each point in the list as they join it, and they redraw it."
+    ],
+    "stretch": "Extension: side lengths and perimeter from coordinates, halfway points and your own symmetrical shape.",
+    "help": "Supported Worksheet: fewer points, the first point plotted, and a hint on every question.",
+    "prep": "Independent practice: plot and join, missing corners, a mistake and a design problem. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "A square has corners (1, 2), (4, 2) and (4, 5). Find the fourth."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     6
+    ],
+    "y": [
+     0,
+     6
+    ]
+   },
+   "notes": {
+    "answer": "(1, 5)",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What is the fourth corner of this square?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (1, 5)"
+     ],
+     [
+      "RECORD who writes (5, 1) or leaves it blank.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing (5, 1).",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2 and SC3: a new square with no picture drawn.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner why the order of the points matters.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for joining in a different order makes a different drawing",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can",
+      "draw a shape from a list of points?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with (5, 1) on the board matters most."
+     ],
+     [
+      "ASK: Why does the order of the points matter?",
+      "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: joining in a different order makes a different drawing"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow's first check comes from both.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

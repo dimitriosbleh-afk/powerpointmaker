@@ -1,0 +1,1502 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 2,
+  "session": 5,
+  "title": "Moving Points Across the Plane",
+  "subtitle": "Term 4 Week 2, Session 5",
+  "meta": "Year 5/6 Maths | Space",
+  "footer": "Grid Coordinates | Year 5/6 Maths | Session 5",
+  "outputFolder": "T4W2_Maths_S5_Moving_Points",
+  "fileName": "Session 5 - Moving Points Across the Plane.pptx",
+  "titleVisual": {
+   "type": "grid",
+   "x": [
+    -5,
+    5
+   ],
+   "y": [
+    -5,
+    5
+   ],
+   "polygons": [
+    [
+     [
+      1,
+      1
+     ],
+     [
+      3,
+      1
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    [
+     [
+      -2,
+      -3
+     ],
+     [
+      0,
+      -3
+     ],
+     [
+      -2,
+      -1
+     ]
+    ]
+   ],
+   "arrows": [
+    {
+     "from": [
+      1,
+      1
+     ],
+     "to": [
+      -2,
+      -3
+     ]
+    }
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Space, Year 6 (VC2M6SP02): describe changes to the coordinates when a point is moved to a different position in the plane",
+   "shape": "short-cycle loops: model a move, try one, then a harder one, because crossing zero needs several small steps",
+   "criticalFeature": "moving left past zero keeps subtracting: 2 left of 1 is -1",
+   "decisionPoints": [
+    "the choice check: (1, -2) moves 3 left",
+    "the hinge: move A 4 left and 2 down",
+    "the exit ticket"
+   ],
+   "anchor": "across the corridor, then up the stairs: (x, y), and the numbers sit on the lines",
+   "catchUp": "Missed Session 4? Show the sign chart (minus first is left, minus second is down) and read one point in each quadrant before the launch."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "A ruler and a sharp pencil for every student",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The anchor on the board: across the corridor, then up the stairs, (x, y)",
+   "A number line from -5 to 5 under the four-quadrant grid, for counting across zero"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. A table of moves across zero, translating a rectangle, describing translations, a mistake to fix and a treasure map.",
+   "title": "Moving Points Across the Plane",
+   "subtitle": "Left and right change the first number, up and down the second, even past zero.",
+   "sections": [
+    {
+     "title": "Move across zero",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "(1, 2) moves 4 left. Where does it land?",
+      "steps": [
+       "Left changes the first number.",
+       "1 - 4: back 1 to zero, then 3 more.",
+       "-3. The second number stays 2."
+      ],
+      "answer": "(-3, 2)"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Write where each point lands.",
+       "columns": [
+        "Start",
+        "Move",
+        "New point"
+       ],
+       "rows": [
+        [
+         "(2, 3)",
+         "5 left",
+         ""
+        ],
+        [
+         "(-4, 1)",
+         "6 right",
+         ""
+        ],
+        [
+         "(0, -2)",
+         "4 up",
+         ""
+        ],
+        [
+         "(-1, -1)",
+         "3 down",
+         ""
+        ],
+        [
+         "(3, -2)",
+         "4 left, 5 up",
+         ""
+        ],
+        [
+         "(-5, 4)",
+         "5 right, 8 down",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "(2, 3)",
+         "5 left",
+         "(-3, 3)"
+        ],
+        [
+         "(-4, 1)",
+         "6 right",
+         "(2, 1)"
+        ],
+        [
+         "(0, -2)",
+         "4 up",
+         "(0, 2)"
+        ],
+        [
+         "(-1, -1)",
+         "3 down",
+         "(-1, -4)"
+        ],
+        [
+         "(3, -2)",
+         "4 left, 5 up",
+         "(-1, 3)"
+        ],
+        [
+         "(-5, 4)",
+         "5 right, 8 down",
+         "(0, -4)"
+        ]
+       ]
+      },
+      {
+       "prompt": "Translate the rectangle 5 left and 3 down. Draw it and write its new corners.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         -5,
+         5
+        ],
+        "y": [
+         -5,
+         5
+        ],
+        "polygon": [
+         [
+          1,
+          1
+         ],
+         [
+          4,
+          1
+         ],
+         [
+          4,
+          3
+         ],
+         [
+          1,
+          3
+         ]
+        ],
+        "maxH": 200
+       },
+       "answerVisual": {
+        "type": "grid",
+        "x": [
+         -5,
+         5
+        ],
+        "y": [
+         -5,
+         5
+        ],
+        "polygons": [
+         [
+          [
+           1,
+           1
+          ],
+          [
+           4,
+           1
+          ],
+          [
+           4,
+           3
+          ],
+          [
+           1,
+           3
+          ]
+         ],
+         [
+          [
+           -4,
+           -2
+          ],
+          [
+           -1,
+           -2
+          ],
+          [
+           -1,
+           0
+          ],
+          [
+           -4,
+           0
+          ]
+         ]
+        ],
+        "maxH": 200
+       },
+       "answer": "(-4, -2), (-1, -2), (-1, 0), (-4, 0)",
+       "lines": 1
+      },
+      {
+       "prompt": "What happened to the first number of every corner? What happened to the second number?",
+       "answer": "Every first number went down by 5, and every second number went down by 3.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Describe the translation",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Describe the move from (-2, 1) to (1, -3).",
+      "steps": [
+       "First number: -2 to 1 is 3 right.",
+       "Second number: 1 to -3 is 4 down.",
+       "Say both."
+      ],
+      "answer": "3 right, 4 down"
+     },
+     "items": [
+      {
+       "prompt": "Describe each move.",
+       "parts": [
+        {
+         "prompt": "(-2, 4) to (3, 4)",
+         "answer": "5 right"
+        },
+        {
+         "prompt": "(1, 1) to (1, -4)",
+         "answer": "5 down"
+        },
+        {
+         "prompt": "(-3, -2) to (2, 1)",
+         "answer": "5 right, 3 up"
+        },
+        {
+         "prompt": "(4, 0) to (-2, -3)",
+         "answer": "6 left, 3 down"
+        }
+       ]
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Ben moved (-2, 3) 4 right. Find his mistake and fix it.",
+       "work": [
+        "4 right from -2: -2 - 4 = -6.",
+        "So the point is (-6, 3)."
+       ],
+       "answer": "Right means add: -2 + 4 = 2, so the point is (2, 3)."
+      }
+     ]
+    },
+    {
+     "title": "Treasure map",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "The ship is at the origin. A crab at (2, -1) walks 3 left. Where is it?",
+      "steps": [
+       "Left: 2 - 3 = -1.",
+       "The second number stays -1."
+      ],
+      "answer": "(-1, -1)"
+     },
+     "items": [
+      {
+       "prompt": "Use coordinates to solve the treasure clues.",
+       "parts": [
+        {
+         "prompt": "The parrot at (3, 2) flies 7 left, 4 down. Where?",
+         "answer": "(-4, -2)"
+        },
+        {
+         "prompt": "Cave (-1, 4) to ship (0, 0): which moves?",
+         "answer": "1 right, 4 down"
+        }
+       ]
+      },
+      {
+       "kind": "choice",
+       "prompt": "A point moves 3 left, then 3 right, then 2 up, then 2 down. Where does it end?",
+       "options": [
+        "where it started",
+        "3 left of the start",
+        "at (0, 0)"
+       ],
+       "answer": 0,
+       "reason": true,
+       "explain": "The left and right moves cancel, and so do the up and down moves, so it ends where it started."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Finding a hidden translation, translation rules and your own puzzle, with worked examples.",
+   "title": "Extension: Translation Puzzles",
+   "subtitle": "Find the move, then use it.",
+   "sections": [
+    {
+     "title": "Find the hidden move",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "A corner moved from (2, -1) to (-3, 2). Where did the corner (4, 1) go?",
+      "steps": [
+       "First number: 2 to -3 is 5 left.",
+       "Second number: -1 to 2 is 3 up.",
+       "Same move for (4, 1): 4 - 5 = -1, 1 + 3 = 4."
+      ],
+      "answer": "(-1, 4)"
+     },
+     "items": [
+      {
+       "prompt": "A shape moved so that (1, 1) landed on (-2, 4). Where did (3, -2) land?",
+       "answer": "(0, 1): the move is 3 left, 3 up.",
+       "lines": 2
+      },
+      {
+       "prompt": "A shape moved so that (-4, 2) landed on (1, -3). Where did (0, 0) land?",
+       "answer": "(5, -5): the move is 5 right, 5 down.",
+       "lines": 2
+      }
+     ]
+    },
+    {
+     "title": "Translation rules",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Rule: 2 left, 3 up. Where does (1, -1) go?",
+      "steps": [
+       "2 left: 1 - 2 = -1.",
+       "3 up: -1 + 3 = 2.",
+       "(-1, 2)"
+      ],
+      "answer": "(-1, 2)"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Use the rule 4 left, 2 down. Fill the gaps.",
+       "columns": [
+        "Start",
+        "End"
+       ],
+       "rows": [
+        [
+         "(5, 3)",
+         ""
+        ],
+        [
+         "(0, 0)",
+         ""
+        ],
+        [
+         "(-1, 4)",
+         ""
+        ],
+        [
+         "",
+         "(2, -2)"
+        ]
+       ],
+       "answers": [
+        [
+         "(5, 3)",
+         "(1, 1)"
+        ],
+        [
+         "(0, 0)",
+         "(-4, -2)"
+        ],
+        [
+         "(-1, 4)",
+         "(-5, 2)"
+        ],
+        [
+         "(6, 0)",
+         "(2, -2)"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Make your own",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Make a translation puzzle.",
+      "steps": [
+       "Draw a triangle in one quadrant.",
+       "Choose a move that takes it into another quadrant.",
+       "Give a partner the start corners and the move."
+      ],
+      "answer": "a puzzle with an answer"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Make a translation puzzle that moves a shape from the first quadrant into the third. Write the answer on the back.",
+       "answer": "Check: the move is left and down, big enough that every corner ends with both numbers negative."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: number-line jumps first, then arrows drawn on the grid, with a hint on every question.",
+   "title": "Moving Across Zero: Step by Step",
+   "subtitle": "Count the jumps on the number line.",
+   "sections": [
+    {
+     "title": "Jump across zero",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "Start at 2. Jump 5 left.",
+      "visual": {
+       "type": "numberLine",
+       "start": -5,
+       "end": 5,
+       "step": 1
+      },
+      "steps": [
+       "2 jumps take you to 0.",
+       "3 more jumps take you to -3.",
+       "You land on -3."
+      ],
+      "answer": "-3"
+     },
+     "items": [
+      {
+       "prompt": "Start at 3. Jump 4 left. Where do you land?",
+       "visual": {
+        "type": "numberLine",
+        "start": -6,
+        "end": 6,
+        "step": 1
+       },
+       "hint": "3 jumps to 0, then 1 more.",
+       "answer": "-1",
+       "answerLabel": "Land on:",
+       "working": "none"
+      },
+      {
+       "prompt": "Start at -2. Jump 6 right. Where do you land?",
+       "visual": {
+        "type": "numberLine",
+        "start": -6,
+        "end": 6,
+        "step": 1
+       },
+       "hint": "2 jumps to 0, then 4 more.",
+       "answer": "4",
+       "answerLabel": "Land on:",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Move a point",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "A (2, 1) moves 3 left.",
+      "visual": {
+       "type": "grid",
+       "x": [
+        -4,
+        4
+       ],
+       "y": [
+        -4,
+        4
+       ],
+       "points": [
+        {
+         "x": 2,
+         "y": 1,
+         "label": "A"
+        }
+       ],
+       "arrows": [
+        {
+         "from": [
+          2,
+          1
+         ],
+         "to": [
+          -1,
+          1
+         ]
+        }
+       ]
+      },
+      "steps": [
+       "Left changes the first number.",
+       "2 - 3 = -1.",
+       "A lands at (-1, 1)."
+      ],
+      "answer": "(-1, 1)"
+     },
+     "items": [
+      {
+       "prompt": "B (1, 2) moves 4 left. New point = ( ___ , ___ )",
+       "visual": {
+        "type": "grid",
+        "x": [
+         -4,
+         4
+        ],
+        "y": [
+         -4,
+         4
+        ],
+        "points": [
+         {
+          "x": 1,
+          "y": 2,
+          "label": "B"
+         }
+        ],
+        "arrows": [
+         {
+          "from": [
+           1,
+           2
+          ],
+          "to": [
+           -3,
+           2
+          ]
+         }
+        ],
+        "maxH": 220
+       },
+       "hint": "Left changes the first number: 1 - 4.",
+       "answer": "(-3, 2)",
+       "working": "none"
+      },
+      {
+       "prompt": "C (-2, 1) moves 3 down. New point = ( ___ , ___ )",
+       "visual": {
+        "type": "grid",
+        "x": [
+         -4,
+         4
+        ],
+        "y": [
+         -4,
+         4
+        ],
+        "points": [
+         {
+          "x": -2,
+          "y": 1,
+          "label": "C"
+         }
+        ],
+        "arrows": [
+         {
+          "from": [
+           -2,
+           1
+          ],
+          "to": [
+           -2,
+           -2
+          ]
+         }
+        ],
+        "maxH": 220
+       },
+       "hint": "Down changes the second number: 1 - 3.",
+       "answer": "(-2, -2)",
+       "working": "none"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 5 of our coordinates week: today we move points and shapes across zero, into other quadrants."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards, markers, a ruler and a pencil on every desk. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Add fractions",
+   "from": "teacher",
+   "prompts": [
+    "3/4 + 1/8 = ?"
+   ],
+   "visual": {
+    "type": "fractionStrips",
+    "strips": [
+     {
+      "denom": 4,
+      "shaded": 3
+     },
+     {
+      "denom": 8,
+      "shaded": 1
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "7/8"
+    ]
+   },
+   "notes": {
+    "answer": "7/8",
+    "beats": [
+     [
+      "SAY: Let's warm up with fractions from last term."
+     ],
+     [
+      "ASK: What is three quarters plus one eighth?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 7/8"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> turn quarters into eighths on the fraction strips together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Three quarters is six eighths, and one more eighth makes seven eighths.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 4/12.",
+     "Fix: show that you can only add parts of the same size,",
+     "and they rename the quarters as eighths."
+    ],
+    "prep": "Review of Term 3 fractions (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Fraction of an amount",
+   "from": "teacher",
+   "prompts": [
+    "What is 2/3 of 18?"
+   ],
+   "reveal": {
+    "answers": [
+     "12"
+    ]
+   },
+   "notes": {
+    "answer": "12",
+    "beats": [
+     [
+      "ASK: What is two thirds of 18?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 12"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> share 18 into 3 equal groups, then take 2 groups. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: One third of 18 is 6,",
+      "so two thirds is 12. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 6 or 9.",
+     "Fix: find one third first, then double it, and they rewrite it."
+    ],
+    "prep": "Term 3 review: a fraction of an amount.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Subtract fractions",
+   "from": "teacher",
+   "prompts": [
+    "1/2 - 1/5 = ?"
+   ],
+   "reveal": {
+    "answers": [
+     "3/10"
+    ]
+   },
+   "notes": {
+    "answer": "3/10",
+    "beats": [
+     [
+      "ASK: What is one half take away one fifth?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 3/10"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> rename both as tenths together on the board. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: One half is five tenths and one fifth is two tenths,",
+      "so the answer is three tenths. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 0/3 or 1/3.",
+     "Fix: rename both as tenths, five tenths and two tenths, and they redo it."
+    ],
+    "prep": "Term 3 review: subtracting fractions with different denominators.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "4 × 13"
+   ],
+   "reveal": {
+    "answers": [
+     "52"
+    ]
+   },
+   "notes": {
+    "answer": "52",
+    "beats": [
+     [
+      "SAY: Now for our four times table.",
+      "This one's bigger, so double and double again."
+     ],
+     [
+      "ASK: What is 4 times 13?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 52"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> double 13, then double again. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 52. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 42.",
+     "Fix: double 13 to get 26, double again to get 52, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "36 ÷ 4"
+   ],
+   "reveal": {
+    "answers": [
+     "9"
+    ]
+   },
+   "notes": {
+    "answer": "9",
+    "beats": [
+     [
+      "SAY: Now a division. How many fours make 36?"
+     ],
+     [
+      "ASK: What is 36 divided by 4?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 9"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> halve 36, then halve again. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 9. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 8.",
+     "Fix: check: 8 times 4 is 32,",
+     "one more four makes 36, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "4 × 50"
+   ],
+   "reveal": {
+    "answers": [
+     "200"
+    ]
+   },
+   "notes": {
+    "answer": "200",
+    "beats": [
+     [
+      "SAY: And a big one to finish."
+     ],
+     [
+      "ASK: What is 4 times 50?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 200"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> double 50, then double again. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 200. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 20 or 250.",
+     "Fix: double 50 to get 100, double again to get 200, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to move points and shapes across the Cartesian plane and describe how their coordinates change.",
+   "successCriteria": [
+    "I can move a point left, right, up or down in four quadrants.",
+    "I can write the new coordinates after a move, even when it crosses zero.",
+    "I can describe a translation using the change in each number."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: This week we've read, plotted and moved points.",
+      "Today we move them across zero, into other quadrants."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 moving a point is reachable for everyone; SC2 writing the new coordinates across zero is the core and the exit evidence; SC3 describing a translation is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Jump across zero",
+   "visual": {
+    "type": "numberLine",
+    "start": -5,
+    "end": 5,
+    "step": 1
+   },
+   "prompt": "Start at 2. Jump 5 to the left. Where do you land?",
+   "notes": {
+    "answer": "-3",
+    "beats": [
+     [
+      "POINT to 2 on the number line.",
+      "SAY: Let's start on 2 and jump 5 to the left,",
+      "one jump at a time."
+     ],
+     [
+      "ASK: Where do you land after 5 jumps to the left?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: -3"
+     ],
+     [
+      "SCAN boards for -3.",
+      "80%+ -> say: moving left on a grid works exactly like this.",
+      "Less -> jump together, counting 1, 0, -1, -2, -3. Re-ask."
+     ],
+     [
+      "SAY: We land on negative 3. Two jumps took us to zero,",
+      "and three more took us past it.",
+      "Points on a grid cross zero the same way."
+     ]
+    ],
+    "trap": [
+     "landing on -2 by counting 2 as a jump.",
+     "Fix: jump from 2, counting each jump, not each number, and they try again."
+    ],
+    "prep": "The launch comes after the LI: crossing zero on one number line before the grid. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "origin",
+   "meaning": "The point (0, 0), where the two axes cross.",
+   "example": "Every point is measured from the origin.",
+   "visual": {
+    "type": "grid",
+    "x": [
+     -4,
+     4
+    ],
+    "y": [
+     -4,
+     4
+    ],
+    "points": [
+     {
+      "x": 0,
+      "y": 0,
+      "label": "origin"
+     }
+    ]
+   },
+   "notes": {
+    "answer": "(0, 0), where the axes cross",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is origin. Say it with me: or-i-gin."
+     ],
+     [
+      "SAY: The origin is the point zero, zero, where the axes cross.",
+      "When a point crosses an axis, it passes through zero."
+     ],
+     [
+      "ASK: What are the coordinates of the origin?",
+      "5 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (0, 0)"
+     ]
+    ],
+    "trap": [
+     "writing (1, 1).",
+     "Fix: trace both axes to where they cross, and they rewrite it."
+    ],
+    "prep": "Origin anchors today's crossing-zero moves.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Crossing zero",
+   "steps": [
+    "P is at (2, 1).",
+    "Move 5 left: left changes the first number.",
+    "2 - 5: back 2 to zero, then 3 more is -3.",
+    "P lands at (-3, 1)."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     -4,
+     4
+    ],
+    "y": [
+     -4,
+     4
+    ],
+    "points": [
+     {
+      "x": 2,
+      "y": 1,
+      "label": "P"
+     },
+     {
+      "x": -3,
+      "y": 1,
+      "label": "P'"
+     }
+    ],
+    "arrows": [
+     {
+      "from": [
+       2,
+       1
+      ],
+      "to": [
+       -3,
+       1
+      ]
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "(-3, 1)"
+    ]
+   },
+   "notes": {
+    "answer": "(-3, 1)",
+    "beats": [
+     [
+      "MODEL moving P five squares left.",
+      "SAY: Let me move P five squares to the left, counting as I go."
+     ],
+     [
+      "POINT to the axis as P crosses it.",
+      "SAY: Two squares take me to zero, and three more take me past it.",
+      "So the first number goes from 2 down to negative 3."
+     ],
+     [
+      "ASK: The second number didn't change. So what are P's new coordinates?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (-3, 1)"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's negative 3, 1. Moving left kept subtracting,",
+      "even after we passed zero."
+     ]
+    ],
+    "trap": [
+     "writing (3, 1).",
+     "Fix: count the jumps along the number line, and they add the sign."
+    ],
+    "stretch": "What move would take P back to where it started?",
+    "help": "Use the number line under the grid to count the jumps.",
+    "prep": "The critical feature: left keeps subtracting past zero. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Translate a shape",
+   "steps": [
+    "Move every corner the same way.",
+    "3 left: take 3 from each first number.",
+    "4 down: take 4 from each second number.",
+    "(1, 1) lands at (-2, -3)."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     -4,
+     4
+    ],
+    "y": [
+     -4,
+     4
+    ],
+    "polygons": [
+     [
+      [
+       1,
+       1
+      ],
+      [
+       3,
+       1
+      ],
+      [
+       1,
+       3
+      ]
+     ],
+     [
+      [
+       -2,
+       -3
+      ],
+      [
+       0,
+       -3
+      ],
+      [
+       -2,
+       -1
+      ]
+     ]
+    ],
+    "arrows": [
+     {
+      "from": [
+       1,
+       1
+      ],
+      "to": [
+       -2,
+       -3
+      ]
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "(3, 1) lands at (0, -3)",
+     "(1, 3) lands at (-2, -1)"
+    ]
+   },
+   "notes": {
+    "answer": "(0, -3) and (-2, -1)",
+    "beats": [
+     [
+      "POINT to the triangle.",
+      "SAY: Now I'll translate this triangle 3 left and 4 down.",
+      "Every corner moves the same way."
+     ],
+     [
+      "MODEL the corner (1, 1).",
+      "SAY: 1 take away 3 is negative 2,",
+      "and 1 take away 4 is negative 3.",
+      "So this corner lands on negative 2, negative 3."
+     ],
+     [
+      "ASK: Where does the corner 3, 1 land?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (0, -3)"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 3 take away 3 is 0, and 1 take away 4 is negative 3.",
+      "So it lands on 0, negative 3, right on the line going up."
+     ]
+    ],
+    "trap": [
+     "moving only one corner.",
+     "Fix: tick each corner as they move it, and they finish the shape."
+    ],
+    "stretch": "What move brings it back?",
+    "help": "Make a table: old corner, new corner.",
+    "prep": "A translation is the same move for every corner. SC2 and SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Where does it land?",
+   "prompt": "(1, -2) moves 3 left. Point to A, B or C",
+   "options": [
+    {
+     "text": "(4, -2)",
+     "misconception": "moves right instead of left: adds instead of subtracting"
+    },
+    {
+     "text": "(-2, -2)"
+    },
+    {
+     "text": "(1, -5)",
+     "misconception": "changes the second number for a left move"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Think about which number changes, and which way, before you choose."
+     ],
+     [
+      "ASK: If the point 1, negative 2 moves 3 left, where does it land?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: Why isn't it C?",
+      "Less -> jump left from 1 on the number line together. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B. 1 take away 3 is negative 2,",
+      "and the second number stays negative 2."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: jump left on the number line together, and they choose again."
+    ],
+    "prep": "First decision point. A means left was added; C means the wrong number moved.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Where does it land?",
+   "ask": "Where does the point land?",
+   "routine": "boards",
+   "thinkTime": 15,
+   "pivot": "count the jumps on the number line together",
+   "followUp": "cold call one board: Which number changed, and how?",
+   "items": [
+    {
+     "text": "(3, 2) moves 5 left",
+     "answer": "(-2, 2)"
+    },
+    {
+     "text": "(-1, 4) moves 6 down",
+     "answer": "(-1, -2)"
+    },
+    {
+     "text": "(-4, -3) moves 7 right",
+     "answer": "(3, -3)"
+    },
+    {
+     "text": "(2, -1) moves 4 left, 3 up",
+     "answer": "(-2, 2)"
+    },
+    {
+     "text": "(-3, 1) moved to (2, -2). What was the move?",
+     "answer": "5 right, 3 down",
+     "say": "It moved 5 right and 3 down. Compare each number."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write where each point lands on your board."
+    ],
+    "trap": [
+     "forgetting the minus sign after crossing zero.",
+     "Fix: count the jumps past zero, and they add the sign."
+    ],
+    "stretch": "Name the quadrant the point starts in and ends in.",
+    "help": "Sketch a number line on your board and jump along it.",
+    "prep": "Guided practice crossing zero each way, then two moves, then a reverse question. SC2 and SC3.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Move A 4 left and 2 down",
+   "visual": {
+    "type": "grid",
+    "x": [
+     -4,
+     4
+    ],
+    "y": [
+     -4,
+     4
+    ],
+    "points": [
+     {
+      "x": 1,
+      "y": 1,
+      "label": "A"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "(-3, -1)"
+    ]
+   },
+   "notes": {
+    "answer": "(-3, -1)",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Move A 4 left and 2 down."
+     ],
+     [
+      "ASK: Where does A land?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (-3, -1)"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> move A one square at a time on the big grid. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It lands on negative 3, negative 1.",
+      "1 take away 4, and 1 take away 2. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (-3, 1).",
+     "Fix: count the down jumps past zero, and they fix the second number."
+    ],
+    "prep": "The hinge before independent work: both numbers cross zero. Anyone who wrote (5, 3) or (-3, 1) starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Move points and shapes across zero on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Did your point cross zero? How do you know?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "adding for a left move.",
+     "Fix: ask which way left goes on the number line, and they redo it."
+    ],
+    "stretch": "Extension: finding a hidden translation, translation rules and your own puzzle.",
+    "help": "Supported Worksheet: number-line jumps, then arrows on the grid, with hints.",
+    "prep": "Independent practice: moves across zero, a translation, describing moves, a mistake and a treasure map. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "N moves 5 right and 4 down. Write its new coordinates."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     -4,
+     4
+    ],
+    "y": [
+     -4,
+     4
+    ],
+    "points": [
+     {
+      "x": -2,
+      "y": 3,
+      "label": "N"
+     }
+    ]
+   },
+   "notes": {
+    "answer": "(3, -1)",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: Where does N land after 5 right and 4 down?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (3, -1)"
+     ],
+     [
+      "RECORD who misses a sign or changes the wrong number.",
+      "Their names go to next week's catch-up group."
+     ]
+    ],
+    "trap": [
+     "writing (3, 7) or (-7, -1).",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2 across the week: both numbers change and one crosses zero.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner how you move a point across zero.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for keep subtracting past zero and add the minus sign",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can move points across the Cartesian plane?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with a sign missing matters most."
+     ],
+     [
+      "ASK: How do you move a point across zero?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: keep subtracting past zero and add the minus sign"
+     ]
+    ],
+    "prep": "Week close: read the self-assessment beside the exit evidence for next week's review.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

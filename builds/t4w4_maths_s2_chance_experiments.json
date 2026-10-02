@@ -1,0 +1,1366 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 4,
+  "session": 2,
+  "title": "Chance Experiments",
+  "subtitle": "Term 4 Week 4, Session 2",
+  "meta": "Year 5/6 Maths | Probability",
+  "footer": "Probability | Year 5/6 Maths | Session 2",
+  "outputFolder": "T4W4_Maths_S2_Chance_Experiments",
+  "fileName": "Session 2 - Chance Experiments.pptx",
+  "titleVisual": {
+   "type": "tally",
+   "headers": [
+    "Coin",
+    "Tally",
+    "Frequency"
+   ],
+   "rows": [
+    [
+     "Heads",
+     11
+    ],
+    [
+     "Tails",
+     9
+    ]
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Probability, Years 5 and 6 (VC2M5P02, VC2M6P02): conduct repeated chance experiments, record results and use frequency to describe outcomes",
+   "shape": "example-first with a live coin experiment in the launch, so relative frequency is built from data the class just made",
+   "criticalFeature": "relative frequency = the times it happened out of the total number of trials",
+   "decisionPoints": [
+    "the choice check: 12 heads in 20 tosses",
+    "the hinge: relative frequency of yellow as a percentage",
+    "the exit ticket"
+   ],
+   "anchor": "chance = the outcomes we want out of all the equally likely outcomes",
+   "catchUp": "Missed Session 1? Show one equal spinner and write P(red) as parts we want out of all the parts before the launch."
+  }
+ },
+ "materials": {
+  "manipulatives": [
+   "A coin for every pair",
+   "A demonstration coin for the launch"
+  ],
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: chance = the outcomes we want out of all the equally likely outcomes",
+   "A blank tally chart for 10 coin tosses: heads, tails"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Run a coin experiment, convert relative frequencies, read dice results, fix a mistake and reason about small samples.",
+   "title": "Chance Experiments",
+   "subtitle": "Relative frequency = times it happened out of the total trials.",
+   "sections": [
+    {
+     "title": "Our experiment",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "4 heads in 10 tosses. What is the relative frequency of heads?",
+      "steps": [
+       "Times it happened: 4.",
+       "Total trials: 10.",
+       "4/10 = 0.4 = 40%."
+      ],
+      "answer": "4/10 = 40%"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Toss a coin 20 times with a partner. Tally each toss, then fill in the table.",
+       "columns": [
+        "Outcome",
+        "Tally",
+        "Frequency",
+        "Relative frequency"
+       ],
+       "rows": [
+        [
+         "Heads",
+         "",
+         "",
+         ""
+        ],
+        [
+         "Tails",
+         "",
+         "",
+         ""
+        ],
+        [
+         "Total",
+         "",
+         "20",
+         "20/20 = 1"
+        ]
+       ],
+       "answers": [
+        [
+         "Heads",
+         "results vary",
+         "about 10",
+         "heads out of 20"
+        ],
+        [
+         "Tails",
+         "results vary",
+         "about 10",
+         "tails out of 20"
+        ],
+        [
+         "Total",
+         "",
+         "20",
+         "20/20 = 1"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Fraction, decimal, percentage",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "8 reds in 20 spins. Write the relative frequency three ways.",
+      "steps": [
+       "Fraction: 8/20 = 2/5.",
+       "Decimal: 0.4.",
+       "Percentage: 40%."
+      ],
+      "answer": "2/5, 0.4, 40%"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Write each relative frequency as a fraction, a decimal and a percentage.",
+       "columns": [
+        "Result",
+        "Fraction",
+        "Decimal",
+        "Percentage"
+       ],
+       "rows": [
+        [
+         "7 heads in 10 tosses",
+         "",
+         "",
+         ""
+        ],
+        [
+         "12 sixes in 50 rolls",
+         "",
+         "",
+         ""
+        ],
+        [
+         "15 reds in 20 spins",
+         "",
+         "",
+         ""
+        ],
+        [
+         "9 blues in 30 picks",
+         "",
+         "",
+         ""
+        ],
+        [
+         "18 wins in 25 games",
+         "",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "7 heads in 10 tosses",
+         "7/10",
+         "0.7",
+         "70%"
+        ],
+        [
+         "12 sixes in 50 rolls",
+         "12/50 = 6/25",
+         "0.24",
+         "24%"
+        ],
+        [
+         "15 reds in 20 spins",
+         "15/20 = 3/4",
+         "0.75",
+         "75%"
+        ],
+        [
+         "9 blues in 30 picks",
+         "9/30 = 3/10",
+         "0.3",
+         "30%"
+        ],
+        [
+         "18 wins in 25 games",
+         "18/25",
+         "0.72",
+         "72%"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Read the results",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "A dice was rolled 30 times. 3 came up 5 times. Relative frequency of 3?",
+      "steps": [
+       "Times it happened: 5.",
+       "Total trials: 30.",
+       "5/30 = 1/6."
+      ],
+      "answer": "1/6"
+     },
+     "items": [
+      {
+       "prompt": "A dice was rolled 30 times.",
+       "visual": {
+        "type": "tally",
+        "headers": [
+         "Number",
+         "Tally",
+         "Frequency"
+        ],
+        "rows": [
+         [
+          "1",
+          4
+         ],
+         [
+          "2",
+          6
+         ],
+         [
+          "3",
+          5
+         ],
+         [
+          "4",
+          3
+         ],
+         [
+          "5",
+          7
+         ],
+         [
+          "6",
+          5
+         ]
+        ],
+        "counts": false
+       },
+       "working": "none",
+       "parts": [
+        {
+         "prompt": "Relative frequency of 2?",
+         "answer": "6/30 = 1/5"
+        },
+        {
+         "prompt": "Most common number?",
+         "answer": "5"
+        },
+        {
+         "prompt": "Add all six frequencies.",
+         "answer": "30"
+        }
+       ]
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Zoe spun a spinner 20 times. Red came up 8 times. Find her mistake and fix it.",
+       "work": [
+        "Red 8, not red 12.",
+        "Relative frequency of red = 8/12."
+       ],
+       "answer": "The bottom number is all the trials: 8/20 = 2/5 = 40%."
+      },
+      {
+       "kind": "choice",
+       "prompt": "Tom tossed a coin 10 times and got 7 heads. Is the coin unfair?",
+       "options": [
+        "Yes",
+        "Not necessarily"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "10 tosses is a small number of trials, so results can be far from half. Toss it many more times before deciding."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Combining class results, two-dice totals and planning your own experiment, with worked examples.",
+   "title": "Extension: Bigger Experiments",
+   "subtitle": "Combine results. List every outcome.",
+   "sections": [
+    {
+     "title": "Combine the results",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Group A: 6 heads in 10. Group B: 4 heads in 10. Combined?",
+      "steps": [
+       "Add the heads: 6 + 4 = 10.",
+       "Add the trials: 10 + 10 = 20.",
+       "10/20 = 50%."
+      ],
+      "answer": "10/20 = 50%"
+     },
+     "items": [
+      {
+       "prompt": "Group A: 13 heads in 20 tosses. Group B: 8 heads in 20 tosses. What is the combined relative frequency of heads, as a percentage?",
+       "answer": "21/40 = 52.5%",
+       "lines": 2
+      },
+      {
+       "prompt": "Why is the combined result closer to 50% than either group on its own?",
+       "answer": "More trials: 40 tosses give a better picture than 20, so the result settles closer to the expected half.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Two dice totals",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "How many ways can two dice total 3?",
+      "steps": [
+       "First dice 1, second dice 2.",
+       "First dice 2, second dice 1.",
+       "2 ways out of 36."
+      ],
+      "answer": "2 ways: 2/36"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Two dice are rolled and added. Fill in the totals table, then answer below.",
+       "columns": [
+        "+",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+       ],
+       "rows": [
+        [
+         "1",
+         "2",
+         "3",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "2",
+         "3",
+         "",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "3",
+         "",
+         "",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "4",
+         "",
+         "",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "5",
+         "",
+         "",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "6",
+         "",
+         "",
+         "",
+         "",
+         "",
+         "12"
+        ]
+       ],
+       "answers": [
+        [
+         "1",
+         "2",
+         "3",
+         "4",
+         "5",
+         "6",
+         "7"
+        ],
+        [
+         "2",
+         "3",
+         "4",
+         "5",
+         "6",
+         "7",
+         "8"
+        ],
+        [
+         "3",
+         "4",
+         "5",
+         "6",
+         "7",
+         "8",
+         "9"
+        ],
+        [
+         "4",
+         "5",
+         "6",
+         "7",
+         "8",
+         "9",
+         "10"
+        ],
+        [
+         "5",
+         "6",
+         "7",
+         "8",
+         "9",
+         "10",
+         "11"
+        ],
+        [
+         "6",
+         "7",
+         "8",
+         "9",
+         "10",
+         "11",
+         "12"
+        ]
+       ]
+      },
+      {
+       "prompt": "Which total is most likely? What is its probability?",
+       "answer": "7: 6 ways out of 36, so 6/36 = 1/6.",
+       "lines": 2
+      }
+     ]
+    },
+    {
+     "title": "Plan an experiment",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Plan an experiment for a bag of 3 red and 1 blue counter.",
+      "steps": [
+       "Predict: P(red) = 3/4.",
+       "Pick, record, put it back, 20 times.",
+       "Compare your relative frequency with 3/4."
+      ],
+      "answer": "a plan with a prediction"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Plan an experiment with a bag of counters you choose. Write your prediction as a fraction, how many trials you will do, and how you will record the results.",
+       "answer": "Check: a stated bag, a predicted probability, a number of trials (more is better), replacing the counter each time, and a tally table."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: totals of 10 and 100, a fraction frame, and a hint on every question.",
+   "title": "Relative Frequency: Step by Step",
+   "subtitle": "Times it happened out of the total trials.",
+   "sections": [
+    {
+     "title": "Out of 10",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "3 heads in 10 tosses.",
+      "steps": [
+       "3 out of 10 = 3/10.",
+       "3 tenths = 0.3.",
+       "0.3 = 30%."
+      ],
+      "answer": "3/10, 0.3, 30%"
+     },
+     "items": [
+      {
+       "prompt": "6 heads in 10 tosses. ___ out of 10 = ___ %",
+       "hint": "Each toss out of 10 is worth 10%.",
+       "answer": "6/10 = 60%",
+       "answerLabel": "Answer:"
+      },
+      {
+       "prompt": "2 reds in 10 spins. ___ out of 10 = ___ %",
+       "hint": "2 tenths.",
+       "answer": "2/10 = 20%",
+       "answerLabel": "Answer:"
+      }
+     ]
+    },
+    {
+     "title": "Out of 100",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "45 heads in 100 tosses.",
+      "steps": [
+       "45 out of 100 = 45/100.",
+       "Out of 100 is a percentage: 45%."
+      ],
+      "answer": "45%"
+     },
+     "items": [
+      {
+       "prompt": "52 heads in 100 tosses. Write it as a percentage.",
+       "hint": "Out of 100 means per cent.",
+       "answer": "52%",
+       "answerLabel": "Answer:"
+      },
+      {
+       "prompt": "17 sixes in 100 rolls. Write it as a percentage.",
+       "hint": "Out of 100 means per cent.",
+       "answer": "17%",
+       "answerLabel": "Answer:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 2 of our probability week: today we run chance experiments and describe what happened."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards, markers and a coin per pair on desks, and draw a blank tally chart on the board. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Read the scale",
+   "from": "teacher",
+   "prompts": [
+    "The scale starts at 50. Shop A sold 54, Shop B sold 58. How many more did B sell?"
+   ],
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Shop A",
+     "Shop B"
+    ],
+    "values": [
+     54,
+     58
+    ],
+    "yStart": 50,
+    "title": "Sales"
+   },
+   "reveal": {
+    "answers": [
+     "4 more"
+    ]
+   },
+   "notes": {
+    "answer": "4 more",
+    "beats": [
+     [
+      "SAY: Let's warm up with last week's graphs."
+     ],
+     [
+      "ASK: How many more did Shop B sell than Shop A?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 4"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> point to the bottom of the scale, 50, then read both values. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 58 take away 54 is 4. The scale starts at 50,",
+      "so the columns exaggerate it. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "saying 'about double'.",
+     "Fix: read both values from the scale, and they subtract."
+    ],
+    "prep": "Review of Week 3 statistics (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Which quadrant?",
+   "from": "teacher",
+   "prompts": [
+    "Which quadrant is (4, -2) in?"
+   ],
+   "reveal": {
+    "answers": [
+     "fourth quadrant"
+    ]
+   },
+   "notes": {
+    "answer": "fourth quadrant",
+    "beats": [
+     [
+      "ASK: Which quadrant is 4, negative 2 in?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: the fourth"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> say right or left, then up or down, together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's the fourth quadrant: right 4 and down 2. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "saying the second.",
+     "Fix: ask whether negative 2 is up or down, and they rename it."
+    ],
+    "prep": "Week 2 review: the four quadrants.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Fraction to percentage",
+   "from": "teacher",
+   "prompts": [
+    "Write 7/20 as a percentage."
+   ],
+   "reveal": {
+    "answers": [
+     "35%"
+    ]
+   },
+   "notes": {
+    "answer": "35%",
+    "beats": [
+     [
+      "ASK: How do you write seven twentieths as a percentage?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 35%"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> make the denominator 100: times top and bottom by 5. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 7 twentieths is 35 hundredths, which is 35 percent. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 7% or 72%.",
+     "Fix: multiply top and bottom by 5 to get hundredths, and they rewrite it."
+    ],
+    "prep": "Term 3 review: fractions to percentages.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "7 × 9"
+   ],
+   "reveal": {
+    "answers": [
+     "63"
+    ]
+   },
+   "notes": {
+    "answer": "63",
+    "beats": [
+     [
+      "SAY: Now for our seven times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 7 times 9?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 63"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 7 tens is 70, take one 7 away. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 63. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 56 or 72.",
+     "Fix: use 7 tens is 70, take away 7, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "7 × 12"
+   ],
+   "reveal": {
+    "answers": [
+     "84"
+    ]
+   },
+   "notes": {
+    "answer": "84",
+    "beats": [
+     [
+      "SAY: Here's a bigger one."
+     ],
+     [
+      "ASK: What is 7 times 12?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 84"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 7 tens plus 7 twos. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 84. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 74.",
+     "Fix: 7 tens is 70 and 7 twos is 14,",
+     "add them, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "42 ÷ 7"
+   ],
+   "reveal": {
+    "answers": [
+     "6"
+    ]
+   },
+   "notes": {
+    "answer": "6",
+    "beats": [
+     [
+      "SAY: Now a division. How many sevens make 42?"
+     ],
+     [
+      "ASK: What is 42 divided by 7?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 6"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> count up in sevens to 42. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 6. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 7.",
+     "Fix: check: 7 sevens is 49, too many, so it's 6, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to run a chance experiment and describe the results as a fraction, decimal and percentage.",
+   "successCriteria": [
+    "I can record the results of a chance experiment in a frequency table.",
+    "I can write a relative frequency as a fraction, a decimal and a percentage.",
+    "I can explain what the relative frequency tells me about the chance."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: Yesterday we worked out the chance of something happening.",
+      "Today we test it by running real experiments."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 recording results is reachable for everyone; SC2 relative frequency three ways is the core and the exit evidence; SC3 interpreting it is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Toss a coin 10 times",
+   "visual": {
+    "type": "tally",
+    "headers": [
+     "Coin",
+     "Tally",
+     "Frequency"
+    ],
+    "rows": [
+     [
+      "Heads",
+      0
+     ],
+     [
+      "Tails",
+      0
+     ]
+    ],
+    "counts": false
+   },
+   "prompt": "Predict: how many heads in 10 tosses?",
+   "notes": {
+    "answer": "about 5 heads predicted",
+    "beats": [
+     [
+      "SHOW the coin.",
+      "SAY: I'm going to toss this coin 10 times,",
+      "and we'll tally every toss on the board."
+     ],
+     [
+      "ASK: Before I start, how many heads do you predict in 10 tosses?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 5. ACCEPT: 4 to 6"
+     ],
+     [
+      "MODEL tossing 10 times, tallying each on the board.",
+      "SAY: Let's count them together as I tally: heads or tails?"
+     ],
+     [
+      "SAY: We predicted about 5, and our result is what it is.",
+      "Today we'll describe results like ours as a fraction, a decimal and a percentage."
+     ]
+    ],
+    "trap": [
+     "expecting exactly 5 every time.",
+     "Fix: say results vary, and they compare with a neighbour's toss later."
+    ],
+    "prep": "The launch comes after the LI: live data for the I Do. Keep the board tally for later. Under 5 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "relative frequency",
+   "meaning": "How often an outcome happened, out of all the trials.",
+   "example": "3 heads in 10 tosses is a relative frequency of 3/10.",
+   "pictogram": "coin",
+   "notes": {
+    "answer": "times it happened out of all trials",
+    "beats": [
+     [
+      "POINT to the words.",
+      "SAY: These words are relative frequency. Say them with me: rel-a-tive fre-quen-cy."
+     ],
+     [
+      "SAY: Frequency is how many times it happened.",
+      "Relative frequency compares that with all the trials, so we write it as a fraction."
+     ],
+     [
+      "ASK: Our coin: what was the relative frequency of heads?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: our heads out of 10"
+     ]
+    ],
+    "trap": [
+     "writing heads out of tails.",
+     "Fix: ask how many tosses there were altogether, and they rewrite it."
+    ],
+    "prep": "Use the launch data so the word sticks to real results.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Relative frequency three ways",
+   "steps": [
+    "Total trials: 9 + 6 + 5 = 20.",
+    "Red happened 9 times: 9/20.",
+    "As a decimal: 0.45.",
+    "As a percentage: 45%."
+   ],
+   "visual": {
+    "type": "tally",
+    "headers": [
+     "Spinner",
+     "Tally",
+     "Frequency"
+    ],
+    "rows": [
+     [
+      "Red",
+      9
+     ],
+     [
+      "Blue",
+      6
+     ],
+     [
+      "Green",
+      5
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "Blue: 6/20 = 0.3 = 30%"
+    ]
+   },
+   "notes": {
+    "answer": "30%",
+    "beats": [
+     [
+      "MODEL adding the frequencies.",
+      "SAY: A spinner was spun and recorded.",
+      "First I find the total trials: 9, 6 and 5 make 20."
+     ],
+     [
+      "MODEL writing 9/20, then 0.45 and 45%.",
+      "SAY: Red happened 9 times out of 20, so its relative frequency is 9 twentieths.",
+      "Times by 5 on top and bottom: 45 hundredths, 0.45, or 45 percent."
+     ],
+     [
+      "ASK: What is the relative frequency of blue, as a percentage?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 30%"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Blue is 6 out of 20, which is 0.3, or 30 percent."
+     ]
+    ],
+    "trap": [
+     "writing 6/14, blue out of the others.",
+     "Fix: point to the total, 20, and they rewrite it."
+    ],
+    "stretch": "What do the three percentages add to? Why?",
+    "help": "Write 'times it happened' over 'total trials' first.",
+    "prep": "The anchor in action: times it happened out of the total trials. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Results from a dice",
+   "steps": [
+    "Total rolls: 30.",
+    "Find the number's frequency.",
+    "Write it out of 30.",
+    "Simplify if you can."
+   ],
+   "visual": {
+    "type": "tally",
+    "headers": [
+     "Number",
+     "Tally",
+     "Frequency"
+    ],
+    "rows": [
+     [
+      "1",
+      4
+     ],
+     [
+      "2",
+      6
+     ],
+     [
+      "3",
+      5
+     ],
+     [
+      "4",
+      3
+     ],
+     [
+      "5",
+      7
+     ],
+     [
+      "6",
+      5
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "5: 7/30"
+    ]
+   },
+   "notes": {
+    "answer": "7/30",
+    "beats": [
+     [
+      "POINT to the tally.",
+      "SAY: A dice was rolled 30 times.",
+      "Let me check the total first: the frequencies add to 30."
+     ],
+     [
+      "MODEL six.",
+      "SAY: Six came up 5 times,",
+      "so its relative frequency is 5 out of 30, which simplifies to one sixth."
+     ],
+     [
+      "ASK: What is the relative frequency of rolling a 5?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 7/30"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Five came up 7 times out of 30.",
+      "That's more than the 5 we'd expect, and that's normal in a small experiment."
+     ]
+    ],
+    "trap": [
+     "writing 7/6 because a dice has 6 faces.",
+     "Fix: point to the total rolls, 30, and they rewrite it."
+    ],
+    "stretch": "Which number came up least, and is that a problem?",
+    "help": "Touch the total before writing the bottom number.",
+    "prep": "Results vary from the expected chance: sets up Session 3. SC2 and SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "12 heads in 20 tosses",
+   "prompt": "What is the relative frequency of heads? Point to A, B or C",
+   "options": [
+    {
+     "text": "12/20"
+    },
+    {
+     "text": "12/8",
+     "misconception": "puts tails on the bottom instead of the total trials"
+    },
+    {
+     "text": "1/2",
+     "misconception": "gives the expected chance, not what actually happened"
+    }
+   ],
+   "answer": 0,
+   "notes": {
+    "answer": "A",
+    "beats": [
+     [
+      "SAY: A coin was tossed 20 times and landed on heads 12 times."
+     ],
+     [
+      "ASK: What is the relative frequency of heads?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to A"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: Why isn't it C?",
+      "Less -> write times it happened over total trials on the board. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's A, 12 out of 20. B divides by tails,",
+      "and C is what we expect, not what happened."
+     ]
+    ],
+    "trap": [
+     "pointing to C.",
+     "Fix: ask what actually happened in these 20 tosses, and they choose again."
+    ],
+    "prep": "First decision point. B: wrong denominator; C: expected chance confused with the result.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Relative frequency",
+   "ask": "Write the relative frequency as a fraction and a percentage.",
+   "routine": "boards",
+   "thinkTime": 25,
+   "pivot": "write times it happened over total trials, then convert",
+   "followUp": "cold call one board: How did you make the percentage?",
+   "items": [
+    {
+     "text": "Spinner spun 10 times: 4 blue. Blue?",
+     "answer": "4/10 = 40%"
+    },
+    {
+     "text": "Dice rolled 25 times: six came up 5 times. Six?",
+     "answer": "5/25 = 1/5 = 20%"
+    },
+    {
+     "text": "Coin tossed 50 times: 28 heads. Tails?",
+     "answer": "22/50 = 44%",
+     "say": "Tails is 50 take away 28, so 22 out of 50: 44 percent."
+    },
+    {
+     "text": "Card picked 40 times: red 30 times. Red?",
+     "answer": "30/40 = 3/4 = 75%"
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write a fraction and a percentage on your board each time."
+    ],
+    "trap": [
+     "using the wrong total on the bottom.",
+     "Fix: circle the total trials, and they rewrite it."
+    ],
+    "stretch": "Write each one as a decimal too.",
+    "help": "Make the bottom number 100 first, then read the percentage.",
+    "prep": "Guided practice with totals of 10, 25, 50 and 40, and one asked for the other outcome. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Relative frequency of yellow",
+   "visual": {
+    "type": "tally",
+    "headers": [
+     "Marble",
+     "Tally",
+     "Frequency"
+    ],
+    "rows": [
+     [
+      "Red",
+      7
+     ],
+     [
+      "Blue",
+      9
+     ],
+     [
+      "Yellow",
+      4
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "4/20 = 20%"
+    ]
+   },
+   "notes": {
+    "answer": "20%",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Marbles were picked and put back each time."
+     ],
+     [
+      "ASK: What is the relative frequency of yellow, as a percentage?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 20%"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then the coin experiment and Your turn.",
+      "Less -> find the total first, 20, then write 4 out of 20. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 4 out of 20 is 20 percent. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 4%.",
+     "Fix: ask what the total is, and they make it out of 100."
+    ],
+    "prep": "The hinge before independent work. Anyone with 4% or 4/16 starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Run the coin experiment, then work out relative frequencies on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: What is your total number of trials?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "a relative frequency out of the wrong total.",
+     "Fix: circle the total trials, and they redo it."
+    ],
+    "stretch": "Extension: combining results, two-dice totals and planning an experiment.",
+    "help": "Supported Worksheet: totals of 10 and 100, a fraction frame and hints.",
+    "prep": "Independent practice: a real experiment, converting forms, reading results and reasoning. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "How often did green come up? Give a fraction, then a percentage."
+   ],
+   "visual": {
+    "type": "text",
+    "text": "Green came up 9 times in 25 spins."
+   },
+   "notes": {
+    "answer": "9/25 = 36%",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What is the relative frequency of green, as a fraction and a percentage?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 9/25 = 36%"
+     ],
+     [
+      "RECORD who uses the wrong total or cannot convert.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing 9/16.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: a new total, 25, so the percentage needs converting.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner how you work out a relative frequency.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for times it happened out of the total trials",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can write a relative frequency three ways?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 9/16 on the board matters most."
+     ],
+     [
+      "ASK: How do you work out a relative frequency?",
+      "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: times it happened out of the total trials"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: what happens with lots more trials?",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

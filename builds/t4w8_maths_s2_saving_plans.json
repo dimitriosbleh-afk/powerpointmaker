@@ -1,0 +1,1204 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 8,
+  "session": 2,
+  "title": "Saving Plans",
+  "subtitle": "Term 4 Week 8, Session 2",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Budgeting | Year 5/6 Maths | Session 2",
+  "outputFolder": "T4W8_Maths_S2_Saving_Plans",
+  "fileName": "Session 2 - Saving Plans.pptx",
+  "titleVisual": {
+   "type": "chart",
+   "style": "line",
+   "categories": [
+    "Wk 1",
+    "Wk 2",
+    "Wk 3",
+    "Wk 4",
+    "Wk 5"
+   ],
+   "values": [
+    12,
+    24,
+    36,
+    48,
+    60
+   ],
+   "yLabel": "Saved ($)"
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 6 (VC2M6N09): modelling saving for a purchase ('How much do I need to save for it?') and developing a savings plan",
+   "shape": "short-cycle loops: a savings goal, then saving a fraction or percentage of income, because each adds one step to the last",
+   "criticalFeature": "weeks needed = amount still needed divided by savings each week, rounded up",
+   "decisionPoints": [
+    "the choice check: weeks to save $95 at $10 a week",
+    "the hinge: save 20% of $35 for a $60 goal",
+    "the exit ticket"
+   ],
+   "anchor": "read it, model it, solve it, check it: say what the answer means in the situation",
+   "catchUp": "Missed Session 1? Show one budget: income minus expenses equals money left over."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Calculators for checking (optional)",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The fortnight's anchor on the board: read it, model it, solve it, check it",
+   "Weeks = amount still needed divided by savings a week, rounded up"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. A savings goal table, saving a fraction or percentage of pay, a mistake to fix, and planning for a footy jersey.",
+   "title": "Saving Plans",
+   "subtitle": "Weeks = amount still needed divided by savings a week, rounded up.",
+   "sections": [
+    {
+     "title": "How many weeks?",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "Goal $80. Saved $20. Save $15 a week. How many weeks?",
+      "steps": [
+       "Still needed: $80 - $20 = $60.",
+       "$60 divided by $15 = 4.",
+       "4 weeks."
+      ],
+      "answer": "4 weeks"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Find how much is still needed and how many weeks it will take.",
+       "columns": [
+        "Goal",
+        "Already saved",
+        "Saves a week",
+        "Still needed",
+        "Weeks"
+       ],
+       "rows": [
+        [
+         "$60",
+         "$0",
+         "$12",
+         "",
+         ""
+        ],
+        [
+         "$90",
+         "$20",
+         "$10",
+         "",
+         ""
+        ],
+        [
+         "$150",
+         "$30",
+         "$15",
+         "",
+         ""
+        ],
+        [
+         "$200",
+         "$50",
+         "$25",
+         "",
+         ""
+        ],
+        [
+         "$75",
+         "$0",
+         "$8",
+         "",
+         ""
+        ],
+        [
+         "$124",
+         "$4",
+         "$12",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "$60",
+         "$0",
+         "$12",
+         "$60",
+         "5"
+        ],
+        [
+         "$90",
+         "$20",
+         "$10",
+         "$70",
+         "7"
+        ],
+        [
+         "$150",
+         "$30",
+         "$15",
+         "$120",
+         "8"
+        ],
+        [
+         "$200",
+         "$50",
+         "$25",
+         "$150",
+         "6"
+        ],
+        [
+         "$75",
+         "$0",
+         "$8",
+         "$75",
+         "10"
+        ],
+        [
+         "$124",
+         "$4",
+         "$12",
+         "$120",
+         "10"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Save part of your pay",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Earn $40 a week, save 1/4. How much saved a week?",
+      "visual": {
+       "type": "barModel",
+       "parts": 4,
+       "shaded": 1,
+       "total": "$40",
+       "labels": [
+        "save $10",
+        "",
+        "",
+        ""
+       ]
+      },
+      "steps": [
+       "1/4 of $40 = $10.",
+       "Save $10 a week."
+      ],
+      "answer": "$10"
+     },
+     "items": [
+      {
+       "prompt": "Earn $30 a week. Save 20%. How much a week, and how many weeks to save $90?",
+       "answer": "$6 a week; 90 divided by 6 = 15 weeks",
+       "lines": 2
+      },
+      {
+       "prompt": "Earn $24 a week. Save 3/8. How much a week, and how many weeks to save $100?",
+       "answer": "$9 a week; 100 divided by 9 = 11.1..., so 12 weeks",
+       "lines": 2
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Ben saves $8 a week for a $50 cap. Find his mistake and fix it.",
+       "work": [
+        "50 divided by 8 = 6 remainder 2.",
+        "So it takes 6 weeks."
+       ],
+       "answer": "After 6 weeks he has only $48. He needs 7 weeks: round up when you need the whole amount."
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which plan reaches $120 first?",
+       "options": [
+        "$15 a week",
+        "$25 a fortnight",
+        "$50 a month"
+       ],
+       "answer": 0,
+       "reason": true,
+       "explain": "$15 a week takes 8 weeks. $25 a fortnight takes 5 fortnights (10 weeks). $50 a month takes 3 months (about 13 weeks)."
+      }
+     ]
+    },
+    {
+     "title": "The footy jersey",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "A $75 jersey. Grandma gives $15. Save $10 a week. Weeks?",
+      "steps": [
+       "Still needed: $75 - $15 = $60.",
+       "$60 divided by $10 = 6 weeks."
+      ],
+      "answer": "6 weeks"
+     },
+     "items": [
+      {
+       "prompt": "Maya wants a $120 footy jersey. She has $27. She earns $18 a week and spends $9.50. How many weeks until she can buy it? Show your plan.",
+       "answer": "Still needed $93. Saves $8.50 a week. 93 divided by 8.5 = 10.9..., so 11 weeks.",
+       "lines": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Simple interest, a goal that goes on sale, and comparing savings plans, with worked examples.",
+   "title": "Extension: Interest and Goals",
+   "subtitle": "Money that grows. Goals that move.",
+   "sections": [
+    {
+     "title": "Earning interest",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "A bank pays 5% a year on $200. Interest after 1 year?",
+      "steps": [
+       "5% of $200 = $10.",
+       "After 1 year: $210."
+      ],
+      "answer": "$10 interest"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "The bank pays 4% of $500 each year (simple interest). Fill in the table.",
+       "columns": [
+        "Year",
+        "Interest that year",
+        "Total"
+       ],
+       "rows": [
+        [
+         "1",
+         "",
+         ""
+        ],
+        [
+         "2",
+         "",
+         ""
+        ],
+        [
+         "3",
+         "",
+         ""
+        ],
+        [
+         "5",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "1",
+         "$20",
+         "$520"
+        ],
+        [
+         "2",
+         "$20",
+         "$540"
+        ],
+        [
+         "3",
+         "$20",
+         "$560"
+        ],
+        [
+         "5",
+         "$20",
+         "$600"
+        ]
+       ]
+      },
+      {
+       "prompt": "How many years until the $500 earns $100 in interest?",
+       "answer": "$20 a year, so 5 years",
+       "answerLabel": "Years:"
+      },
+      {
+       "prompt": "Another bank pays 6% on $300. Which earns more interest each year: 4% of $500 or 6% of $300?",
+       "answer": "4% of $500 = $20; 6% of $300 = $18. The first earns more.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "The goal moves",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Saving $10 a week for a $90 bike. After 4 weeks it goes 20% off. Weeks now?",
+      "steps": [
+       "Saved: $40. New price: $72.",
+       "Still needed: $32.",
+       "4 more weeks: 8 in total."
+      ],
+      "answer": "8 weeks in total"
+     },
+     "items": [
+      {
+       "prompt": "Ella saves $12 a week for a $150 tablet. After 5 weeks it rises 10%. How many more weeks does she need?",
+       "answer": "Saved $60; new price $165; needs $105; 105 divided by 12 = 8.75, so 9 more weeks",
+       "lines": 4
+      },
+      {
+       "prompt": "Would you rather save $5 a week or 10% of $45 a week? Explain.",
+       "answer": "10% of $45 = $4.50, so $5 a week saves more.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Plan your own",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Plan to save for a $60 item in 8 weeks.",
+      "steps": [
+       "$60 divided by 8 = $7.50 a week.",
+       "Check: 8 × $7.50 = $60."
+      ],
+      "answer": "$7.50 a week"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Choose something you would like to buy (look up or estimate a price). Make a savings plan: how much a week, how many weeks, and what you will give up to save it.",
+       "answer": "Check: a price, a weekly amount, a correct number of weeks (rounded up) and a sensible trade-off."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: savings tables to count up, whole dollars, and a hint on every question.",
+   "title": "Saving: Step by Step",
+   "subtitle": "Count up in your savings each week.",
+   "sections": [
+    {
+     "title": "Count up",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Save $5 a week for $20.",
+      "steps": [
+       "Week 1: $5, week 2: $10.",
+       "Week 3: $15, week 4: $20.",
+       "4 weeks."
+      ],
+      "answer": "4 weeks"
+     },
+     "items": [
+      {
+       "prompt": "Save $10 a week for $50. Count up: 10, 20, ___. Weeks: ___",
+       "hint": "Count in tens to 50.",
+       "answer": "5 weeks",
+       "answerLabel": "Weeks:"
+      },
+      {
+       "prompt": "Save $4 a week for $24. Weeks: ___",
+       "hint": "Count in fours to 24.",
+       "answer": "6 weeks",
+       "answerLabel": "Weeks:"
+      }
+     ]
+    },
+    {
+     "title": "Divide",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Save $6 a week for $30.",
+      "steps": [
+       "$30 divided by $6.",
+       "5 weeks."
+      ],
+      "answer": "5 weeks"
+     },
+     "items": [
+      {
+       "prompt": "Save $8 a week for $40. 40 divided by 8 = ___ weeks",
+       "hint": "How many eights make 40?",
+       "answer": "5 weeks",
+       "answerLabel": "Weeks:"
+      },
+      {
+       "prompt": "Save $9 a week for $45. Weeks: ___",
+       "hint": "How many nines make 45?",
+       "answer": "5 weeks",
+       "answerLabel": "Weeks:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 2 of our budgeting week: today we make saving plans."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk; calculators are optional for checking. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Two steps",
+   "from": "teacher",
+   "prompts": [
+    "4 drinks at $2.75. Change from $20?"
+   ],
+   "reveal": {
+    "answers": [
+     "$9"
+    ]
+   },
+   "notes": {
+    "answer": "$9",
+    "beats": [
+     [
+      "SAY: Let's warm up with last week's money problems."
+     ],
+     [
+      "ASK: How much change from 20 dollars for 4 drinks at 2.75 each?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $9"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> plan it: cost first, then change. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 4 drinks cost 11 dollars, so the change is 9 dollars.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "taking one drink off.",
+     "Fix: reread 4 drinks, and they redo step 1."
+    ],
+    "prep": "Review of last week's financial problems (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Within budget?",
+   "from": "teacher",
+   "prompts": [
+    "Budget $50. Tickets $18.50 each for 2, plus $12 snacks."
+   ],
+   "reveal": {
+    "answers": [
+     "$49: within budget, $1 left"
+    ]
+   },
+   "notes": {
+    "answer": "$49: within budget, $1 left",
+    "beats": [
+     [
+      "ASK: Is 2 tickets at 18.50 plus 12",
+      "dollars of snacks within a 50 dollar budget?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: yes, $49, $1 left"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> add the costs one at a time, then compare with 50. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 37 plus 12 is 49 dollars: within budget,",
+      "with 1 dollar left. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "adding one ticket.",
+     "Fix: reread 2 tickets, and they redo it."
+    ],
+    "prep": "Week 7 review: costing a plan.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Percentage off",
+   "from": "teacher",
+   "prompts": [
+    "A $45 shirt is reduced to $36. What percentage off?"
+   ],
+   "reveal": {
+    "answers": [
+     "20% off"
+    ]
+   },
+   "notes": {
+    "answer": "20% off",
+    "beats": [
+     [
+      "ASK: What percentage off is a 45 dollar shirt reduced to 36?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 20%"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> find the saving, 9, then 9 out of 45. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 9 dollars off out of 45,",
+      "which is one fifth, or 20 percent. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 9%.",
+     "Fix: write 9 out of 45 as a fraction,",
+     "then a percentage, and they redo it."
+    ],
+    "prep": "Week 7 review: discounts.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "9 × 7"
+   ],
+   "reveal": {
+    "answers": [
+     "63"
+    ]
+   },
+   "notes": {
+    "answer": "63",
+    "beats": [
+     [
+      "SAY: Now for our nine times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 9 times 7?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 63"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 10 sevens is 70, take one 7 away. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 63. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 56 or 72.",
+     "Fix: 10 sevens is 70, take away 7, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "9 × 12"
+   ],
+   "reveal": {
+    "answers": [
+     "108"
+    ]
+   },
+   "notes": {
+    "answer": "108",
+    "beats": [
+     [
+      "SAY: Here's a bigger one."
+     ],
+     [
+      "ASK: What is 9 times 12?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 108"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 10 twelves is 120, take one 12 away. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 108. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 98 or 118.",
+     "Fix: 10 twelves is 120, take away 12, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "81 ÷ 9"
+   ],
+   "reveal": {
+    "answers": [
+     "9"
+    ]
+   },
+   "notes": {
+    "answer": "9",
+    "beats": [
+     [
+      "SAY: Now a division. How many nines make 81?"
+     ],
+     [
+      "ASK: What is 81 divided by 9?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 9"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> count up in nines to 81. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 9. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 8.",
+     "Fix: check: 9 nines is 81, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to make a savings plan for something we want to buy.",
+   "successCriteria": [
+    "I can work out how much I still need to save.",
+    "I can work out how many weeks it will take to reach a savings goal.",
+    "I can compare savings plans and explain which is better."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: Yesterday we found the money left over each week.",
+      "Today we use it to plan for something we want."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 still needed is reachable for everyone; SC2 weeks to the goal is the core and the exit evidence; SC3 comparing plans is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Saving up",
+   "visual": {
+    "type": "chart",
+    "style": "line",
+    "categories": [
+     "Wk 1",
+     "Wk 2",
+     "Wk 3",
+     "Wk 4",
+     "Wk 5"
+    ],
+    "values": [
+     12,
+     24,
+     36,
+     48,
+     60
+    ],
+    "yLabel": "Saved ($)",
+    "title": "Noah's savings"
+   },
+   "prompt": "When can Noah buy a $50 skateboard?",
+   "notes": {
+    "answer": "$12 a week; after week 5",
+    "beats": [
+     [
+      "POINT along the line.",
+      "SAY: Noah saves the same amount each week. This graph shows his total."
+     ],
+     [
+      "ASK: How much does Noah save each week,",
+      "and when can he buy a 50 dollar skateboard?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $12 a week; after week 5"
+     ],
+     [
+      "SCAN boards for 12 and week 5.",
+      "80%+ -> cold call one student: Why not week 4?",
+      "Less -> read each point on the line together. Re-ask."
+     ],
+     [
+      "SAY: He saves 12 dollars a week.",
+      "After week 4 he has 48, not quite 50,",
+      "so he can buy it after week 5. That rounding up is today's big idea."
+     ]
+    ],
+    "trap": [
+     "saying week 4.",
+     "Fix: compare 48 with 50, and they look again."
+    ],
+    "prep": "The launch comes after the LI: a savings line shows rounding up. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "savings goal",
+   "meaning": "The amount of money you plan to save, for something you want.",
+   "example": "My savings goal is $120 for footy boots.",
+   "pictogram": "target",
+   "notes": {
+    "answer": "$25",
+    "beats": [
+     [
+      "POINT to the words.",
+      "SAY: These words are savings goal. Say them with me: sav-ings goal."
+     ],
+     [
+      "SAY: A savings goal is the amount you plan to save, for something you want.",
+      "A plan says how much you'll save, and how long it'll take."
+     ],
+     [
+      "ASK: Your goal is $40 and you've saved $15. How much do you still need?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $25"
+     ]
+    ],
+    "trap": [
+     "writing $55.",
+     "Fix: say you take away what you have, and they redo it."
+    ],
+    "prep": "Still needed = goal minus already saved.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Weeks to the goal",
+   "steps": [
+    "Goal $95. Already saved $15.",
+    "Still needed: $95 - $15 = $80.",
+    "Save $12 a week: 80 divided by 12 = 6 r 8.",
+    "6 weeks is not enough: 7 weeks."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Week",
+      "Total"
+     ],
+     [
+      "0",
+      "$15"
+     ],
+     [
+      "6",
+      "$87"
+     ],
+     [
+      "7",
+      "$99"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "7 weeks"
+    ]
+   },
+   "notes": {
+    "answer": "8 weeks",
+    "beats": [
+     [
+      "MODEL still needed.",
+      "SAY: The goal is 95 dollars and I've saved 15, so I still need 80."
+     ],
+     [
+      "MODEL dividing and rounding.",
+      "SAY: At 12 dollars a week, 80 divided by 12 is 6, remainder 8.",
+      "After 6 weeks I'd have 87, still short, so I need 7 weeks."
+     ],
+     [
+      "ASK: Goal $70, saved $10, save $8 a week. How many weeks?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 8 weeks"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Still need 60. 60 divided by 8 is 7, remainder 4, so 8 weeks."
+     ]
+    ],
+    "trap": [
+     "rounding down to 7.",
+     "Fix: check 7 lots of 8 against 60, and they round up."
+    ],
+    "stretch": "How much would you need to save a week to do it in 5 weeks?",
+    "help": "Count up in your weekly savings in a table.",
+    "prep": "Still needed, divide, round up: the critical feature. SC1 and SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Save part of your pay",
+   "steps": [
+    "Earn $40 a week. Save 25%.",
+    "25% of $40 = $10 a week.",
+    "Goal $65: 65 divided by 10 = 6.5.",
+    "Round up: 7 weeks."
+   ],
+   "visual": {
+    "type": "barModel",
+    "parts": 4,
+    "shaded": 1,
+    "total": "$40",
+    "labels": [
+     "save $10",
+     "spend",
+     "spend",
+     "spend"
+    ],
+    "below": [
+     "25%",
+     "",
+     "",
+     ""
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "$6 a week; 9 weeks"
+    ]
+   },
+   "notes": {
+    "answer": "$6 a week; 9 weeks",
+    "beats": [
+     [
+      "MODEL finding the saving.",
+      "SAY: If I earn 40 dollars a week and save 25 percent,",
+      "I save a quarter: 10 dollars."
+     ],
+     [
+      "MODEL the weeks.",
+      "SAY: For a 65 dollar goal, 65 divided by 10 is 6.5,",
+      "so I round up to 7 weeks."
+     ],
+     [
+      "ASK: Earn $30 a week and save 20%.",
+      "How much a week, and how many weeks for $50?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $6 a week, 9 weeks"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 20 percent of 30 is 6 dollars.",
+      "50 divided by 6 is 8.3, so 9 weeks."
+     ]
+    ],
+    "trap": [
+     "dividing 50 by 30.",
+     "Fix: find the weekly saving first, and they redo it."
+    ],
+    "stretch": "What percentage would you need to save to do it in 5 weeks?",
+    "help": "Find 10% first, then build.",
+    "prep": "Two steps: the saving, then the weeks. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "How many weeks?",
+   "prompt": "Save $10 a week for $95. Point to A, B or C",
+   "options": [
+    {
+     "text": "9 weeks",
+     "misconception": "rounds down: 9 weeks only reaches $90"
+    },
+    {
+     "text": "10 weeks"
+    },
+    {
+     "text": "9.5 weeks",
+     "misconception": "leaves a part week instead of whole weeks"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Think about whether you have enough at the end of each week."
+     ],
+     [
+      "ASK: How many weeks to save 95 dollars at 10 dollars a week?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: Why not 9?",
+      "Less -> count up in tens together: 10, 20... 90, 100. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B. After 9 weeks there's only 90,",
+      "so we need a 10th week to reach 95."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: count up to week 9, 90 dollars, and they choose again."
+    ],
+    "prep": "First decision point: rounding up in a savings context.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Saving plans",
+   "ask": "How many weeks will it take?",
+   "routine": "boards",
+   "thinkTime": 25,
+   "pivot": "find still needed, divide, then round up",
+   "followUp": "cold call one board: Did you round up? Why?",
+   "items": [
+    {
+     "text": "Goal $48. Save $6 a week.",
+     "answer": "8 weeks"
+    },
+    {
+     "text": "Goal $100. Saved $28. Save $9 a week.",
+     "answer": "8 weeks"
+    },
+    {
+     "text": "Goal $85. Save $15 a week.",
+     "answer": "6 weeks",
+     "say": "85 divided by 15 is 5 r 10, so round up to 6 weeks."
+    },
+    {
+     "text": "Earn $50 a week, save 10%. Goal $32.",
+     "answer": "7 weeks",
+     "say": "10 percent is 5 a week. 32 divided by 5 is 6.4: 7 weeks."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write the number of weeks on your board."
+    ],
+    "trap": [
+     "rounding down.",
+     "Fix: check the total at that week against the goal, and they round up."
+    ],
+    "stretch": "Write the total saved at the end of each plan.",
+    "help": "Count up your savings in a table.",
+    "prep": "Guided practice: exact, with savings already, a remainder, and a percentage of pay. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Zac's saving plan",
+   "visual": {
+    "type": "text",
+    "text": "Zac earns $35 a week and saves 20%. His goal is $60."
+   },
+   "label": "How many weeks?",
+   "reveal": {
+    "answers": [
+     "$7 a week; 9 weeks"
+    ]
+   },
+   "notes": {
+    "answer": "9 weeks ($7 a week)",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Find the weekly saving first."
+     ],
+     [
+      "ASK: How many weeks until Zac reaches his 60 dollar goal?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 9 weeks"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> find 20 percent of 35 together, then divide and round. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 20 percent of 35 is 7 dollars.",
+      "60 divided by 7 is 8 r 4,",
+      "so 9 weeks. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "dividing 60 by 35.",
+     "Fix: find the weekly saving first, and they redo it."
+    ],
+    "prep": "The hinge before independent work. Anyone with 8 weeks or 2 weeks starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Make and check saving plans on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Did you round up? How do you know?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "rounding down.",
+     "Fix: check the total at that week, and they round up."
+    ],
+    "stretch": "Extension: simple interest, goals that move, and your own plan.",
+    "help": "Supported Worksheet: savings tables to count up, whole dollars.",
+    "prep": "Independent practice: a goal table, saving part of pay, a mistake and a jersey plan. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "When will Priya reach her goal? Show your plan."
+   ],
+   "visual": {
+    "type": "text",
+    "text": "Priya wants $110 for a netball. She has $22 and puts away $9 every week."
+   },
+   "notes": {
+    "answer": "10 weeks",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: After how many weeks can Priya buy the netball?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 10 weeks"
+     ],
+     [
+      "RECORD who forgets what is saved or rounds down.",
+      "They start tomorrow's spreadsheet work with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing 9 or 12.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: still needed, divide, round up.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner why we round up when saving.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for rounding down leaves you short of the goal",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can make a savings plan?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 9 on the board matters most."
+     ],
+     [
+      "ASK: Why do we round up the weeks when saving?",
+      "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: rounding down leaves you short of the goal"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: budgets in a spreadsheet.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

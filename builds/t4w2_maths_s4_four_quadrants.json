@@ -1,0 +1,1631 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 2,
+  "session": 4,
+  "title": "The Cartesian Plane",
+  "subtitle": "Term 4 Week 2, Session 4",
+  "meta": "Year 5/6 Maths | Space",
+  "footer": "Grid Coordinates | Year 5/6 Maths | Session 4",
+  "outputFolder": "T4W2_Maths_S4_Four_Quadrants",
+  "fileName": "Session 4 - The Cartesian Plane.pptx",
+  "titleVisual": {
+   "type": "grid",
+   "x": [
+    -5,
+    5
+   ],
+   "y": [
+    -5,
+    5
+   ],
+   "points": [
+    {
+     "x": 3,
+     "y": 2,
+     "label": "A"
+    },
+    {
+     "x": -4,
+     "y": 3,
+     "label": "B"
+    },
+    {
+     "x": -2,
+     "y": -4,
+     "label": "C"
+    },
+    {
+     "x": 4,
+     "y": -3,
+     "label": "D"
+    }
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Space, Year 6 (VC2M6SP02): locate points in the 4 quadrants of the Cartesian plane",
+   "shape": "example-first: negative coordinates are new for most, so the teacher models a point in two new quadrants before guided practice",
+   "criticalFeature": "the sign tells the direction from the origin: a negative first number is left, a negative second number is down; across still comes first",
+   "decisionPoints": [
+    "the choice check: which grid shows (-3, 2)?",
+    "the hinge: the coordinates of a point in the third quadrant",
+    "the exit ticket"
+   ],
+   "anchor": "across the corridor, then up the stairs: (x, y), and the numbers sit on the lines",
+   "catchUp": "Missed earlier sessions? Read one point in the top-right quadrant with the anchor, then stretch the number lines below zero."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "A ruler and a sharp pencil for every student",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The anchor on the board: across the corridor, then up the stairs, (x, y)",
+   "A four-quadrant grid, -5 to 5, drawn or projected, with the quadrants labelled first to fourth"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Read and plot points in four quadrants, a quadrant sort, a mistake to fix and a park map.",
+   "title": "The Cartesian Plane",
+   "subtitle": "Across first, then up. A minus sign means left or down.",
+   "sections": [
+    {
+     "title": "Read, plot and sort",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "What are the coordinates of P?",
+      "visual": {
+       "type": "grid",
+       "x": [
+        -4,
+        4
+       ],
+       "y": [
+        -3,
+        3
+       ],
+       "points": [
+        {
+         "x": -3,
+         "y": 2,
+         "label": "P"
+        }
+       ]
+      },
+      "steps": [
+       "Start at the origin (0, 0).",
+       "Across: 3 left, so -3.",
+       "Up: 2 up, so 2."
+      ],
+      "answer": "P = (-3, 2)"
+     },
+     "items": [
+      {
+       "prompt": "Write the coordinates of each point.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         -5,
+         5
+        ],
+        "y": [
+         -5,
+         5
+        ],
+        "points": [
+         {
+          "x": 2,
+          "y": -3,
+          "label": "A"
+         },
+         {
+          "x": -4,
+          "y": 1,
+          "label": "B"
+         },
+         {
+          "x": -3,
+          "y": -2,
+          "label": "C"
+         }
+        ],
+        "maxH": 180
+       },
+       "parts": [
+        {
+         "prompt": "A",
+         "answer": "(2, -3)"
+        },
+        {
+         "prompt": "B",
+         "answer": "(-4, 1)"
+        },
+        {
+         "prompt": "C",
+         "answer": "(-3, -2)"
+        }
+       ],
+       "working": "none"
+      },
+      {
+       "prompt": "Plot and label D (-2, 5), E (4, -3), F (-5, -1), G (0, -4).",
+       "visual": {
+        "type": "grid",
+        "x": [
+         -5,
+         5
+        ],
+        "y": [
+         -5,
+         5
+        ],
+        "maxH": 180
+       },
+       "answerVisual": {
+        "type": "grid",
+        "x": [
+         -5,
+         5
+        ],
+        "y": [
+         -5,
+         5
+        ],
+        "points": [
+         {
+          "x": -2,
+          "y": 5,
+          "label": "D"
+         },
+         {
+          "x": 4,
+          "y": -3,
+          "label": "E"
+         },
+         {
+          "x": -5,
+          "y": -1,
+          "label": "F"
+         },
+         {
+          "x": 0,
+          "y": -4,
+          "label": "G"
+         }
+        ],
+        "maxH": 180
+       },
+       "answer": "D, E, F and G plotted",
+       "working": "none"
+      },
+      {
+       "kind": "sort",
+       "prompt": "Which quadrant is each point in? Write it in the right group.",
+       "cards": [
+        "(3, 5)",
+        "(-2, 4)",
+        "(-1, -6)",
+        "(4, -2)",
+        "(-5, 1)",
+        "(6, -6)",
+        "(-3, -3)",
+        "(2, 2)"
+       ],
+       "groups": [
+        "first",
+        "second",
+        "third",
+        "fourth"
+       ],
+       "answer": {
+        "first": [
+         "(3, 5)",
+         "(2, 2)"
+        ],
+        "second": [
+         "(-2, 4)",
+         "(-5, 1)"
+        ],
+        "third": [
+         "(-1, -6)",
+         "(-3, -3)"
+        ],
+        "fourth": [
+         "(4, -2)",
+         "(6, -6)"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "title": "Think about it",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Is (2, -1) in the same place as (-1, 2)?",
+      "steps": [
+       "(2, -1): 2 right, 1 down.",
+       "(-1, 2): 1 left, 2 up.",
+       "Different places, different quadrants."
+      ],
+      "answer": "No"
+     },
+     "items": [
+      {
+       "kind": "mistake",
+       "prompt": "Zara says (-4, 2) is in the third quadrant. Find her mistake and fix it.",
+       "work": [
+        "-4 is left, and 2 is down,",
+        "so it is in the third quadrant."
+       ],
+       "answer": "The 2 is positive, so it is 2 up, not down. (-4, 2) is in the second quadrant."
+      },
+      {
+       "prompt": "Is (-3, -3) the same point as (3, 3)? Explain how you know.",
+       "answer": "No. (-3, -3) is 3 left and 3 down, in the third quadrant; (3, 3) is 3 right and 3 up, in the first.",
+       "lines": 2
+      }
+     ]
+    },
+    {
+     "title": "The park map",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "The playground is at the origin. Where is a point 2 right and 3 down?",
+      "steps": [
+       "Right is positive: 2.",
+       "Down is negative: -3.",
+       "Write across first."
+      ],
+      "answer": "(2, -3)"
+     },
+     "items": [
+      {
+       "prompt": "Use the park map. The playground is at the origin.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         -5,
+         5
+        ],
+        "y": [
+         -5,
+         5
+        ],
+        "points": [
+         {
+          "x": 0,
+          "y": 0,
+          "label": "Playground"
+         },
+         {
+          "x": -3,
+          "y": 4,
+          "label": "Tap"
+         },
+         {
+          "x": 4,
+          "y": -2,
+          "label": "Bin"
+         },
+         {
+          "x": -4,
+          "y": -5,
+          "label": "Gate"
+         }
+        ],
+        "maxH": 170
+       },
+       "working": "none",
+       "parts": [
+        {
+         "prompt": "Where is the tap?",
+         "answer": "(-3, 4)"
+        },
+        {
+         "prompt": "What is at (4, -2)?",
+         "answer": "the bin"
+        },
+        {
+         "prompt": "Gate to tap: which moves?",
+         "answer": "1 right, 9 up"
+        }
+       ]
+      },
+      {
+       "kind": "choice",
+       "prompt": "A drone hovers in the third quadrant. Which point could it be at?",
+       "options": [
+        "(-2, 5)",
+        "(2, -5)",
+        "(-2, -5)"
+       ],
+       "answer": 2,
+       "reason": true,
+       "explain": "The third quadrant is left and down, so both numbers are negative: (-2, -5)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Distances across zero, shapes in four quadrants and your own design, with worked examples.",
+   "title": "Extension: Across Zero",
+   "subtitle": "Count the squares across zero.",
+   "sections": [
+    {
+     "title": "Distance across zero",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "How far is it from (-3, 2) to (4, 2)?",
+      "steps": [
+       "The second number stays 2, so it is a move across.",
+       "From -3 to 0 is 3, from 0 to 4 is 4.",
+       "3 + 4 = 7 units."
+      ],
+      "answer": "7 units"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "How far apart are the points?",
+       "columns": [
+        "From",
+        "To",
+        "Distance"
+       ],
+       "rows": [
+        [
+         "(-5, 1)",
+         "(2, 1)",
+         ""
+        ],
+        [
+         "(-6, -1)",
+         "(-1, -1)",
+         ""
+        ],
+        [
+         "(2, -4)",
+         "(2, 5)",
+         ""
+        ],
+        [
+         "(-3, -6)",
+         "(-3, 0)",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "(-5, 1)",
+         "(2, 1)",
+         "7 units"
+        ],
+        [
+         "(-6, -1)",
+         "(-1, -1)",
+         "5 units"
+        ],
+        [
+         "(2, -4)",
+         "(2, 5)",
+         "9 units"
+        ],
+        [
+         "(-3, -6)",
+         "(-3, 0)",
+         "6 units"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Shapes in four quadrants",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "A rectangle has corners (-2, -1), (3, -1), (3, 2), (-2, 2). How long is the bottom side?",
+      "steps": [
+       "From -2 to 0 is 2.",
+       "From 0 to 3 is 3.",
+       "2 + 3 = 5 units."
+      ],
+      "answer": "5 units"
+     },
+     "items": [
+      {
+       "prompt": "Plot and join (-4, -2), (2, -2), (2, 3), (-4, 3). Name the shape and find its perimeter.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         -5,
+         5
+        ],
+        "y": [
+         -5,
+         5
+        ],
+        "maxH": 170
+       },
+       "answerVisual": {
+        "type": "grid",
+        "x": [
+         -5,
+         5
+        ],
+        "y": [
+         -5,
+         5
+        ],
+        "maxH": 170,
+        "polygon": [
+         [
+          -4,
+          -2
+         ],
+         [
+          2,
+          -2
+         ],
+         [
+          2,
+          3
+         ],
+         [
+          -4,
+          3
+         ]
+        ]
+       },
+       "parts": [
+        {
+         "prompt": "shape",
+         "answer": "rectangle"
+        },
+        {
+         "prompt": "perimeter",
+         "answer": "22 units"
+        }
+       ],
+       "working": "none"
+      },
+      {
+       "prompt": "A square has corners (-2, -1), (1, -1) and (1, 2). Where is the fourth corner? Which quadrant is it in?",
+       "answer": "(-2, 2), the second quadrant",
+       "lines": 2
+      }
+     ]
+    },
+    {
+     "title": "Make your own",
+     "proficiency": "reasoning",
+     "columns": 1,
+     "example": {
+      "prompt": "Plan a shape with a corner in every quadrant.",
+      "steps": [
+       "Pick one point in each quadrant.",
+       "Check the signs: (+,+), (-,+), (-,-), (+,-).",
+       "List them in order around the shape."
+      ],
+      "answer": "a list of four corners"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Design a shape with one corner in each quadrant. List its corners in order, then swap with a partner to check.",
+       "answer": "Check one corner per quadrant: (+,+), (-,+), (-,-), (+,-), listed in order around the shape."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: a sign chart, smaller grids and a hint on every question.",
+   "title": "Four Quadrants: Step by Step",
+   "subtitle": "Left is negative across. Down is negative up.",
+   "sections": [
+    {
+     "title": "The sign chart",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Which way is -3 across?",
+      "steps": [
+       "A minus sign on the first number means left.",
+       "So -3 across is 3 left."
+      ],
+      "answer": "3 left"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Finish the sign chart.",
+       "hint": "Word bank: left, right, up, down.",
+       "columns": [
+        "Number",
+        "Means"
+       ],
+       "rows": [
+        [
+         "first number positive",
+         "right"
+        ],
+        [
+         "first number negative",
+         ""
+        ],
+        [
+         "second number positive",
+         ""
+        ],
+        [
+         "second number negative",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "first number positive",
+         "right"
+        ],
+        [
+         "first number negative",
+         "left"
+        ],
+        [
+         "second number positive",
+         "up"
+        ],
+        [
+         "second number negative",
+         "down"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Read a point",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Read point A.",
+      "visual": {
+       "type": "grid",
+       "x": [
+        -4,
+        4
+       ],
+       "y": [
+        -4,
+        4
+       ],
+       "points": [
+        {
+         "x": -2,
+         "y": 3,
+         "label": "A"
+        }
+       ]
+      },
+      "steps": [
+       "Start at the origin.",
+       "2 left: -2.",
+       "3 up: 3. A = (-2, 3)."
+      ],
+      "answer": "(-2, 3)"
+     },
+     "items": [
+      {
+       "prompt": "B is ___ left, ___ down. B = ( ___ , ___ )",
+       "visual": {
+        "type": "grid",
+        "x": [
+         -4,
+         4
+        ],
+        "y": [
+         -4,
+         4
+        ],
+        "points": [
+         {
+          "x": -3,
+          "y": -2,
+          "label": "B"
+         }
+        ],
+        "maxH": 230
+       },
+       "hint": "Left and down are both negative.",
+       "answer": "(-3, -2)",
+       "working": "none"
+      },
+      {
+       "prompt": "C is ___ right, ___ down. C = ( ___ , ___ )",
+       "visual": {
+        "type": "grid",
+        "x": [
+         -4,
+         4
+        ],
+        "y": [
+         -4,
+         4
+        ],
+        "points": [
+         {
+          "x": 3,
+          "y": -1,
+          "label": "C"
+         }
+        ],
+        "maxH": 230
+       },
+       "hint": "Right is positive, down is negative.",
+       "answer": "(3, -1)",
+       "working": "none"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 4 of our coordinates week: today the grid grows into four quadrants, with negative numbers."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards, markers, a ruler and a pencil on every desk. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Fraction to percentage",
+   "from": "teacher",
+   "prompts": [
+    "Write 3/5 as a percentage."
+   ],
+   "visual": {
+    "type": "fractionStrips",
+    "strips": [
+     {
+      "denom": 5,
+      "shaded": 3
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "60%"
+    ]
+   },
+   "notes": {
+    "answer": "60%",
+    "beats": [
+     [
+      "SAY: Let's warm up with fractions, decimals and percentages."
+     ],
+     [
+      "ASK: How do you write three fifths as a percentage?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 60%"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> shade the strip: each fifth is 20 percent. Count them. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Each fifth is 20 percent, so three fifths is 60 percent.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 35%.",
+     "Fix: count each fifth as 20 percent, and they rewrite it."
+    ],
+    "prep": "Review of Term 3 fractions, decimals and percentages (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Decimal to percentage",
+   "from": "teacher",
+   "prompts": [
+    "Write 0.08 as a percentage."
+   ],
+   "reveal": {
+    "answers": [
+     "8%"
+    ]
+   },
+   "notes": {
+    "answer": "8%",
+    "beats": [
+     [
+      "ASK: How do you write 0.08 as a percentage?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 8%"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> write 0.08 as 8 hundredths together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 0.08 is 8 hundredths, so it's 8 percent. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 80%.",
+     "Fix: say it as hundredths, 8 hundredths, and they rewrite it."
+    ],
+    "prep": "Term 3 review: decimals and percentages.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Percentage of an amount",
+   "from": "teacher",
+   "prompts": [
+    "What is 75% of 120?"
+   ],
+   "reveal": {
+    "answers": [
+     "90"
+    ]
+   },
+   "notes": {
+    "answer": "90",
+    "beats": [
+     [
+      "ASK: What is 75 percent of 120?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 90"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> find 25 percent first, 30, then times 3. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 25 percent of 120 is 30,",
+      "so 75 percent is 90. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 75 or 45.",
+     "Fix: find one quarter first, and they multiply by 3."
+    ],
+    "prep": "Term 3 review: percentage of an amount.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "11 × 4"
+   ],
+   "reveal": {
+    "answers": [
+     "44"
+    ]
+   },
+   "notes": {
+    "answer": "44",
+    "beats": [
+     [
+      "SAY: Now for our four times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 11 times 4?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 44"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> say 10 fours, then one more four. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 44. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 40.",
+     "Fix: add one more 4 to 10 times 4, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "40 ÷ 4"
+   ],
+   "reveal": {
+    "answers": [
+     "10"
+    ]
+   },
+   "notes": {
+    "answer": "10",
+    "beats": [
+     [
+      "SAY: Now a division. How many fours make 40?"
+     ],
+     [
+      "ASK: What is 40 divided by 4?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 10"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> count in fours to 40 together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 10. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 4.",
+     "Fix: check: 10 times 4 is 40, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "4 × 15"
+   ],
+   "reveal": {
+    "answers": [
+     "60"
+    ]
+   },
+   "notes": {
+    "answer": "60",
+    "beats": [
+     [
+      "SAY: Here's a bigger one. Use doubling."
+     ],
+     [
+      "ASK: What is 4 times 15?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 60"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> double 15, then double again. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 60. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 45.",
+     "Fix: double 15 to get 30, double again to get 60, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to locate and plot points in all four quadrants of the Cartesian plane.",
+   "successCriteria": [
+    "I can say which quadrant a point is in.",
+    "I can read and plot points with negative coordinates.",
+    "I can explain what a minus sign tells me about where a point is."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: So far our grids started at zero.",
+      "Today the number lines go below zero, and the grid grows into four parts."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 naming the quadrant is reachable for everyone; SC2 reading and plotting with negatives is the core and the exit evidence; SC3 explaining the signs is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Below zero",
+   "visual": {
+    "type": "numberLine",
+    "start": -5,
+    "end": 5,
+    "step": 1
+   },
+   "prompt": "What number is 3 to the left of 0?",
+   "notes": {
+    "answer": "-3, negative 3",
+    "beats": [
+     [
+      "POINT to 0, then to the numbers on the left.",
+      "SAY: Some of you may remember negative numbers, like the temperature on a cold morning.",
+      "On this number line, the numbers to the left of zero are negative."
+     ],
+     [
+      "ASK: What number is 3 jumps to the left of zero?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: -3"
+     ],
+     [
+      "SCAN boards for the minus sign.",
+      "80%+ -> say: today our grid's number lines go below zero too.",
+      "Less -> jump left from zero together, counting. Re-ask."
+     ],
+     [
+      "SAY: It's negative 3. Now picture this number line as the bottom of our grid,",
+      "and another one going down below zero. That's today."
+     ]
+    ],
+    "trap": [
+     "writing 3 with no sign.",
+     "Fix: point left of zero and ask what sign those numbers have,",
+     "and they rewrite it."
+    ],
+    "prep": "The launch comes after the LI: negative numbers on one number line, before two. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "quadrant",
+   "meaning": "One of the four parts the two axes split the grid into.",
+   "example": "(-2, 3) is in the second quadrant.",
+   "visual": {
+    "type": "grid",
+    "x": [
+     -4,
+     4
+    ],
+    "y": [
+     -4,
+     4
+    ],
+    "points": [
+     {
+      "x": 2,
+      "y": 2,
+      "label": "first"
+     },
+     {
+      "x": -2,
+      "y": 2,
+      "label": "second"
+     },
+     {
+      "x": -2,
+      "y": -2,
+      "label": "third"
+     },
+     {
+      "x": 2,
+      "y": -2,
+      "label": "fourth"
+     }
+    ]
+   },
+   "notes": {
+    "answer": "one of the four parts of the grid",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is quadrant. Say it with me: quad-rant."
+     ],
+     [
+      "SAY: The two axes cross at the origin and split the grid into four quadrants.",
+      "We number them going anticlockwise, starting at the top right."
+     ],
+     [
+      "ASK: Point to the third quadrant.",
+      "5 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing bottom left"
+     ]
+    ],
+    "trap": [
+     "numbering the quadrants clockwise.",
+     "Fix: trace anticlockwise from the top right, and they point again."
+    ],
+    "prep": "Quad means four. The origin is the point (0, 0) where the axes cross; name it in the I Do.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Read a point left of zero",
+   "steps": [
+    "Start at the origin, (0, 0).",
+    "Across: 4 to the left, so -4.",
+    "Up: 3, so 3.",
+    "A = (-4, 3), in the second quadrant."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     -4,
+     4
+    ],
+    "y": [
+     -4,
+     4
+    ],
+    "points": [
+     {
+      "x": -4,
+      "y": 3,
+      "label": "A"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "A = (-4, 3)"
+    ]
+   },
+   "notes": {
+    "answer": "(-4, 3)",
+    "beats": [
+     [
+      "POINT to the origin.",
+      "SAY: Let me read point A.",
+      "I still start at the origin, where the axes cross."
+     ],
+     [
+      "MODEL across, then up.",
+      "SAY: Across first. A is 4 to the left,",
+      "so the first number is negative 4.",
+      "Then up the stairs: 3 up, so the second number is 3."
+     ],
+     [
+      "ASK: So how would we write the coordinates of A?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (-4, 3)"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's negative 4, 3. Across first, as always,",
+      "and the minus sign tells us it's to the left."
+     ]
+    ],
+    "trap": [
+     "writing (4, 3).",
+     "Fix: ask which side of the origin A is on, and they add the sign."
+    ],
+    "stretch": "Where would (4, -3) be? Point to it.",
+    "help": "Say left or right, then up or down, before you write.",
+    "prep": "Same anchor, new direction: the sign carries left. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Plot a point below zero",
+   "steps": [
+    "Across 2 to the right: 2.",
+    "Then 4 down: -4.",
+    "Draw a dot where the lines cross.",
+    "It is in the fourth quadrant."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     -4,
+     4
+    ],
+    "y": [
+     -4,
+     4
+    ],
+    "points": [
+     {
+      "x": 2,
+      "y": -4,
+      "label": "B"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "B is in the fourth quadrant"
+    ]
+   },
+   "notes": {
+    "answer": "the fourth quadrant",
+    "beats": [
+     [
+      "MODEL plotting (2, -5).",
+      "SAY: Now I'll plot 2, negative 4.",
+      "The 2 is positive, so I go 2 to the right."
+     ],
+     [
+      "MODEL going down.",
+      "SAY: The second number is negative 4, so instead of going up the stairs,",
+      "I go down 4. Then I draw my dot."
+     ],
+     [
+      "ASK: Which quadrant is B in?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: the fourth"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's the fourth quadrant: right and down.",
+      "Positive across, negative up."
+     ]
+    ],
+    "trap": [
+     "going up 5.",
+     "Fix: ask what the minus sign means, and they redraw it below zero."
+    ],
+    "stretch": "Write a point in the third quadrant that is the same distance from both axes.",
+    "help": "Use the sign chart: minus first means left, minus second means down.",
+    "prep": "A negative second number means down. SC1 and SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which grid shows (-3, 2)?",
+   "prompt": "Point to A, B or C",
+   "options": [
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       -4,
+       4
+      ],
+      "y": [
+       -4,
+       4
+      ],
+      "points": [
+       {
+        "x": 3,
+        "y": -2
+       }
+      ]
+     },
+     "misconception": "puts the minus sign on the wrong number"
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       -4,
+       4
+      ],
+      "y": [
+       -4,
+       4
+      ],
+      "points": [
+       {
+        "x": -3,
+        "y": 2
+       }
+      ]
+     }
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       -4,
+       4
+      ],
+      "y": [
+       -4,
+       4
+      ],
+      "points": [
+       {
+        "x": -2,
+        "y": 3
+       }
+      ]
+     },
+     "misconception": "reads up first: swaps the order"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Three grids, one point each.",
+      "Only one shows negative 3, 2."
+     ],
+     [
+      "ASK: Which grid shows the point negative 3, 2?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What point does A show?",
+      "Less -> walk it on the big grid: 3 left, then 2 up. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B. Negative 3 across is 3 to the left,",
+      "then 2 up the stairs."
+     ]
+    ],
+    "trap": [
+     "pointing to C.",
+     "Fix: say the anchor, across first, and they choose again."
+    ],
+    "prep": "First decision point. A means the sign went on the wrong number; C means the order is swapped.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "What are the coordinates?",
+   "ask": "What are the coordinates of P?",
+   "routine": "boards",
+   "thinkTime": 15,
+   "pivot": "say left or right, then up or down, together",
+   "followUp": "cold call one board: How did you know it was negative?",
+   "items": [
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       -4,
+       4
+      ],
+      "y": [
+       -4,
+       4
+      ],
+      "points": [
+       {
+        "x": -2,
+        "y": 4,
+        "label": "P"
+       }
+      ]
+     },
+     "answer": "(-2, 4)"
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       -4,
+       4
+      ],
+      "y": [
+       -4,
+       4
+      ],
+      "points": [
+       {
+        "x": 3,
+        "y": -1,
+        "label": "P"
+       }
+      ]
+     },
+     "answer": "(3, -1)"
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       -4,
+       4
+      ],
+      "y": [
+       -4,
+       4
+      ],
+      "points": [
+       {
+        "x": -4,
+        "y": -3,
+        "label": "P"
+       }
+      ]
+     },
+     "answer": "(-4, -3)"
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       -4,
+       4
+      ],
+      "y": [
+       -4,
+       4
+      ],
+      "points": [
+       {
+        "x": 0,
+        "y": -4,
+        "label": "P"
+       }
+      ]
+     },
+     "answer": "(0, -4)",
+     "say": "It's 0, negative 4. No across at all, then 4 down."
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       -4,
+       4
+      ],
+      "y": [
+       -4,
+       4
+      ],
+      "points": [
+       {
+        "x": -3,
+        "y": 0,
+        "label": "P"
+       }
+      ]
+     },
+     "answer": "(-3, 0)",
+     "say": "It's negative 3, 0. 3 left, and no up or down."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write the coordinates of P on your board each time."
+    ],
+    "trap": [
+     "leaving off the minus sign.",
+     "Fix: ask which side of the origin P is, and they add the sign."
+    ],
+    "stretch": "Name the quadrant for each point too, or the axis it sits on.",
+    "help": "Write L or R and U or D first, then turn them into numbers.",
+    "prep": "Guided practice in three quadrants, then points on each axis. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "What are K's coordinates?",
+   "visual": {
+    "type": "grid",
+    "x": [
+     -4,
+     4
+    ],
+    "y": [
+     -4,
+     4
+    ],
+    "points": [
+     {
+      "x": -1,
+      "y": -4,
+      "label": "K"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "K = (-1, -4)"
+    ]
+   },
+   "notes": {
+    "answer": "(-1, -4)",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Watch both signs."
+     ],
+     [
+      "ASK: What are the coordinates of K?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (-1, -4)"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> walk it from the origin on the big grid,",
+      "saying left and down. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's negative 1, negative 4. Left 1, down 4,",
+      "so both numbers are negative. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (-4, -1).",
+     "Fix: say the anchor, across first, and they rewrite it."
+    ],
+    "prep": "The hinge before independent work. Anyone who wrote (-4, -1) or dropped a sign starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Read, plot and sort points in four quadrants on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Which way does that minus sign send you?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "dropping a minus sign.",
+     "Fix: ask left or right, up or down, and they fix the sign."
+    ],
+    "stretch": "Extension: distances across zero, shapes in four quadrants and your own design.",
+    "help": "Supported Worksheet: a sign chart, smaller grids and a hint on every question.",
+    "prep": "Independent practice: read, plot, sort by quadrant, reasoning and a park map. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Write the coordinates of R and S."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     -4,
+     4
+    ],
+    "y": [
+     -4,
+     4
+    ],
+    "points": [
+     {
+      "x": 4,
+      "y": -2,
+      "label": "R"
+     },
+     {
+      "x": -3,
+      "y": -4,
+      "label": "S"
+     }
+    ]
+   },
+   "notes": {
+    "answer": "R (4, -2), S (-3, -4)",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What are the coordinates of R, and of S?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: R (4, -2), S (-3, -4)"
+     ],
+     [
+      "RECORD who drops a sign or swaps the order.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing R (-2, 4).",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: two points with different signs.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner what a minus sign tells you about a point.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for minus first means left, minus second means down",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can",
+      "read and plot points in all four quadrants?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with a missing sign matters most."
+     ],
+     [
+      "ASK: What does a minus sign tell you about where a point is?",
+      "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: minus first means left, minus second means down"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow we move points across zero.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

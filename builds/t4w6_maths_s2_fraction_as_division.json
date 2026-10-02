@@ -1,0 +1,1231 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 6,
+  "session": 2,
+  "title": "Fractions as Division",
+  "subtitle": "Term 4 Week 6, Session 2",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Fractions, Decimals and Percentages | Year 5/6 Maths | Session 2",
+  "outputFolder": "T4W6_Maths_S2_Fraction_As_Division",
+  "fileName": "Session 2 - Fractions as Division.pptx",
+  "titleVisual": {
+   "type": "shortDivision",
+   "dividend": "3.000",
+   "divisor": 8,
+   "quotient": "0.375"
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 5 (VC2M5N07): division with efficient written strategies, expressing results as decimals or fractions; connecting fractions, division and decimals",
+   "shape": "example-first: sharing pizzas shows a fraction is a division, then the teacher models the division bracket and the reverse, decimal to fraction",
+   "criticalFeature": "a fraction is a division: 3/8 means 3 divided by 8",
+   "decisionPoints": [
+    "the choice check: 0.25 in simplest form",
+    "the hinge: 0.06 as a fraction",
+    "the exit ticket"
+   ],
+   "anchor": "one amount, three names: fraction, decimal, percentage; make it out of 100 to switch",
+   "catchUp": "Missed Session 1? Show 23 squares on a hundred grid: 23/100 = 0.23, then start at the launch."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: one amount, three names: fraction, decimal, percentage; make it out of 100 to switch",
+   "Under it: a fraction is a division, 3/8 = 3 divided by 8"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Division-bracket decimals, a fraction table, decimals to simplest fractions, a mistake, and sharing problems.",
+   "title": "Fractions as Division",
+   "subtitle": "A fraction is a division. Decimals go back to fractions out of 10, 100 or 1000.",
+   "sections": [
+    {
+     "title": "Divide to make a decimal",
+     "proficiency": "fluency",
+     "columns": 3,
+     "example": {
+      "prompt": "Write 1/4 as a decimal by dividing.",
+      "visual": {
+       "type": "shortDivision",
+       "dividend": "1.00",
+       "divisor": 4,
+       "quotient": "0.25"
+      },
+      "steps": [
+       "1/4 means 1 divided by 4.",
+       "Write 1.00 under the bracket.",
+       "4 into 10 is 2 r 2; 4 into 20 is 5: 0.25."
+      ],
+      "answer": "0.25"
+     },
+     "items": [
+      {
+       "prompt": "2/5 as a decimal?",
+       "visual": {
+        "type": "shortDivision",
+        "dividend": "2.0",
+        "divisor": 5,
+        "maxH": 55
+       },
+       "answer": "0.4",
+       "answerLabel": "Decimal:"
+      },
+      {
+       "prompt": "3/4 as a decimal?",
+       "visual": {
+        "type": "shortDivision",
+        "dividend": "3.00",
+        "divisor": 4,
+        "maxH": 55
+       },
+       "answer": "0.75",
+       "answerLabel": "Decimal:"
+      },
+      {
+       "prompt": "9/4 as a decimal?",
+       "visual": {
+        "type": "shortDivision",
+        "dividend": "9.00",
+        "divisor": 4,
+        "maxH": 55
+       },
+       "answer": "2.25",
+       "answerLabel": "Decimal:"
+      },
+      {
+       "kind": "table",
+       "prompt": "Write each fraction as a decimal. Divide, or make the denominator 10, 100 or 1000.",
+       "columns": [
+        "Fraction",
+        "Decimal"
+       ],
+       "rows": [
+        [
+         "1/2",
+         ""
+        ],
+        [
+         "5/4",
+         ""
+        ],
+        [
+         "11/20",
+         ""
+        ],
+        [
+         "13/25",
+         ""
+        ],
+        [
+         "7/40",
+         ""
+        ],
+        [
+         "1/16",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "1/2",
+         "0.5"
+        ],
+        [
+         "5/4",
+         "1.25"
+        ],
+        [
+         "11/20",
+         "0.55"
+        ],
+        [
+         "13/25",
+         "0.52"
+        ],
+        [
+         "7/40",
+         "0.175"
+        ],
+        [
+         "1/16",
+         "0.0625"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Decimal to fraction",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Write 0.45 as a fraction in simplest form.",
+      "steps": [
+       "0.45 = 45 hundredths = 45/100.",
+       "Divide top and bottom by 5.",
+       "9/20"
+      ],
+      "answer": "9/20"
+     },
+     "items": [
+      {
+       "prompt": "Write each as a fraction in simplest form.",
+       "parts": [
+        {
+         "prompt": "0.7",
+         "answer": "7/10 = 7/10"
+        },
+        {
+         "prompt": "0.36",
+         "answer": "36/100 = 9/25"
+        },
+        {
+         "prompt": "0.04",
+         "answer": "4/100 = 1/25"
+        },
+        {
+         "prompt": "0.85",
+         "answer": "85/100 = 17/20"
+        }
+       ]
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Ella wrote 0.6 as a fraction. Find her mistake and fix it.",
+       "work": [
+        "0.6 = 6/100"
+       ],
+       "answer": "The 6 is in the tenths place: 0.6 = 6/10 = 3/5."
+      }
+     ]
+    },
+    {
+     "title": "Sharing problems",
+     "proficiency": "problemSolving",
+     "columns": 3,
+     "example": {
+      "prompt": "4 friends share 3 pizzas equally. How much each?",
+      "steps": [
+       "3 pizzas divided by 4 people.",
+       "3/4 of a pizza each.",
+       "3/4 = 0.75."
+      ],
+      "answer": "3/4 = 0.75 of a pizza"
+     },
+     "items": [
+      {
+       "prompt": "5 friends share 3 pizzas equally. How much does each get, as a fraction and a decimal?",
+       "answer": "3/5 = 0.6 of a pizza",
+       "answerLabel": "Each:"
+      },
+      {
+       "prompt": "A 7 m rope is cut into 4 equal pieces. How long is each piece?",
+       "answer": "7/4 = 1.75 m",
+       "answerLabel": "Each:"
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which is NOT equal to 0.4?",
+       "options": [
+        "2/5",
+        "4/10",
+        "1/4"
+       ],
+       "answer": 2,
+       "reason": true,
+       "explain": "1/4 = 0.25. The others are both 4 tenths."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Decimals that repeat, mixed numbers and a sharing puzzle, with worked examples.",
+   "title": "Extension: Repeating Decimals",
+   "subtitle": "Some divisions never stop.",
+   "sections": [
+    {
+     "title": "Decimals that repeat",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Write 1/3 as a decimal.",
+      "steps": [
+       "1 divided by 3: 3 into 10 is 3 r 1.",
+       "3 into 10 is 3 r 1 again, and again.",
+       "0.333... The 3 repeats forever."
+      ],
+      "answer": "0.333..."
+     },
+     "items": [
+      {
+       "prompt": "Write 2/3 as a decimal. What do you notice?",
+       "answer": "0.666...: the 6 repeats forever.",
+       "lines": 2
+      },
+      {
+       "prompt": "Write 1/9, 2/9 and 4/9 as decimals. What is the pattern?",
+       "answer": "0.111..., 0.222..., 0.444...: the numerator repeats.",
+       "lines": 3
+      },
+      {
+       "kind": "sort",
+       "prompt": "Divide to find out: does each decimal stop, or repeat forever?",
+       "cards": [
+        "1/6",
+        "3/8",
+        "5/12",
+        "7/20",
+        "2/11",
+        "9/16"
+       ],
+       "groups": [
+        "stops",
+        "repeats"
+       ],
+       "answer": {
+        "stops": [
+         "3/8",
+         "7/20",
+         "9/16"
+        ],
+        "repeats": [
+         "1/6",
+         "5/12",
+         "2/11"
+        ]
+       }
+      },
+      {
+       "prompt": "Predict 7/9 as a decimal without dividing. Then check by dividing.",
+       "answer": "0.777...",
+       "answerLabel": "7/9 ="
+      }
+     ]
+    },
+    {
+     "title": "Mixed numbers",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Write 11/4 as a decimal.",
+      "steps": [
+       "11 divided by 4 = 2 r 3.",
+       "2 and 3/4.",
+       "3/4 = 0.75, so 2.75."
+      ],
+      "answer": "2.75"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Write each as a mixed number and as a decimal.",
+       "columns": [
+        "Fraction",
+        "Mixed number",
+        "Decimal"
+       ],
+       "rows": [
+        [
+         "9/2",
+         "",
+         ""
+        ],
+        [
+         "13/4",
+         "",
+         ""
+        ],
+        [
+         "17/5",
+         "",
+         ""
+        ],
+        [
+         "21/8",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "9/2",
+         "4 1/2",
+         "4.5"
+        ],
+        [
+         "13/4",
+         "3 1/4",
+         "3.25"
+        ],
+        [
+         "17/5",
+         "3 2/5",
+         "3.4"
+        ],
+        [
+         "21/8",
+         "2 5/8",
+         "2.625"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Sharing puzzle",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "6 kids share 9 oranges. How many each?",
+      "steps": [
+       "9 divided by 6.",
+       "1 and 3/6 = 1 1/2.",
+       "1.5 oranges each."
+      ],
+      "answer": "1.5 each"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "A coach has 15 litres of sports drink to share equally among 8 players. How much does each player get? Show it as a fraction, a mixed number and a decimal.",
+       "answer": "15/8 = 1 7/8 = 1.875 litres each."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: the bracket set up for you, tenths and hundredths, and a hint on every question.",
+   "title": "Fractions and Division: Step by Step",
+   "subtitle": "Top number divided by bottom number.",
+   "sections": [
+    {
+     "title": "Divide",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "1/2 as a decimal.",
+      "visual": {
+       "type": "shortDivision",
+       "dividend": "1.0",
+       "divisor": 2,
+       "quotient": "0.5"
+      },
+      "steps": [
+       "1 divided by 2.",
+       "Write 1.0 under the bracket.",
+       "2 into 10 is 5: 0.5."
+      ],
+      "answer": "0.5"
+     },
+     "items": [
+      {
+       "prompt": "3/5 = 3 divided by 5 = ___",
+       "visual": {
+        "type": "shortDivision",
+        "dividend": "3.0",
+        "divisor": 5,
+        "maxH": 90
+       },
+       "hint": "5 into 30 is 6.",
+       "answer": "0.6",
+       "working": "none"
+      },
+      {
+       "prompt": "1/4 = 1 divided by 4 = ___",
+       "visual": {
+        "type": "shortDivision",
+        "dividend": "1.00",
+        "divisor": 4,
+        "maxH": 90
+       },
+       "hint": "4 into 10 is 2 r 2, then 4 into 20.",
+       "answer": "0.25",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Back to a fraction",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "0.3 as a fraction.",
+      "visual": {
+       "type": "hundredGrid",
+       "shaded": 30
+      },
+      "steps": [
+       "3 is in the tenths place.",
+       "0.3 = 3/10."
+      ],
+      "answer": "3/10"
+     },
+     "items": [
+      {
+       "prompt": "0.9 as a fraction = ___/10",
+       "hint": "9 tenths.",
+       "answer": "9/10",
+       "answerLabel": "Fraction:"
+      },
+      {
+       "prompt": "0.5 as a fraction = ___/10 = ___/2",
+       "hint": "5 tenths is one half.",
+       "answer": "5/10 = 1/2",
+       "answerLabel": "Fraction:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 2 of our fractions, decimals and percentages week: today we see that a fraction is a division."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk, and write 'a fraction is a division' under the anchor. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Expected results",
+   "from": "teacher",
+   "prompts": [
+    "P(blue) = 1/5. In 60 spins, how many blues would you expect?"
+   ],
+   "reveal": {
+    "answers": [
+     "12"
+    ]
+   },
+   "notes": {
+    "answer": "12",
+    "beats": [
+     [
+      "SAY: Let's warm up with probability and area."
+     ],
+     [
+      "ASK: How many blues would you expect in 60 spins?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 12"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> one fifth of 60: share 60 into 5 groups. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: One fifth of 60 is 12. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 300.",
+     "Fix: say 'one fifth of', and they divide."
+    ],
+    "prep": "Review of Week 4 probability (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Relative frequency",
+   "from": "teacher",
+   "prompts": [
+    "18 heads in 40 tosses. Write it as a percentage."
+   ],
+   "reveal": {
+    "answers": [
+     "18/40 = 45%"
+    ]
+   },
+   "notes": {
+    "answer": "18/40 = 45%",
+    "beats": [
+     [
+      "ASK: What is 18 heads in 40 tosses, as a percentage?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 45%"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> halve both to get 9/20, then make it out of 100. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 18 out of 40 is 45 out of 100,",
+      "so 45 percent. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 18%.",
+     "Fix: ask what the total is, and they make it out of 100."
+    ],
+    "prep": "Week 4 review: relative frequency.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Area",
+   "from": "teacher",
+   "prompts": [
+    "What is the area?"
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      0
+     ],
+     [
+      16,
+      5
+     ],
+     [
+      0,
+      5
+     ]
+    ],
+    "labels": [
+     "16 m",
+     "5 m",
+     null,
+     null
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "80 m²"
+    ]
+   },
+   "notes": {
+    "answer": "80 m²",
+    "beats": [
+     [
+      "ASK: What is the area of this rectangle?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 80 m²"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> say area covers the inside: length times width. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 16 times 5 is 80 square metres. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 42, the perimeter.",
+     "Fix: say area covers, and they multiply."
+    ],
+    "prep": "Week 5 review: area.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "8 × 6"
+   ],
+   "reveal": {
+    "answers": [
+     "48"
+    ]
+   },
+   "notes": {
+    "answer": "48",
+    "beats": [
+     [
+      "SAY: Now for our eight times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 8 times 6?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 48"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> double, double, double: 12, 24, 48. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 48. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 42 or 54.",
+     "Fix: double 6 three times: 12, 24, 48, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "8 × 12"
+   ],
+   "reveal": {
+    "answers": [
+     "96"
+    ]
+   },
+   "notes": {
+    "answer": "96",
+    "beats": [
+     [
+      "SAY: Here's a bigger one."
+     ],
+     [
+      "ASK: What is 8 times 12?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 96"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 8 tens plus 8 twos. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 96. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 86.",
+     "Fix: 8 tens is 80, 8 twos is 16, add them, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "56 ÷ 8"
+   ],
+   "reveal": {
+    "answers": [
+     "7"
+    ]
+   },
+   "notes": {
+    "answer": "7",
+    "beats": [
+     [
+      "SAY: Now a division. How many eights make 56?"
+     ],
+     [
+      "ASK: What is 56 divided by 8?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 7"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> count up in eights to 56. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 7. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 6 or 8.",
+     "Fix: check: 7 eights is 56, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to use division to write fractions as decimals, and to write decimals as fractions.",
+   "successCriteria": [
+    "I can say a fraction as a division: 3/8 means 3 divided by 8.",
+    "I can divide to write a fraction as a decimal.",
+    "I can write a decimal as a fraction in its simplest form."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: Yesterday we made fractions out of 10 or 100.",
+      "Today we find a way that works for any fraction: division."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 fraction as division is reachable for everyone; SC2 dividing to a decimal is the core and the exit evidence; SC3 decimal to simplest fraction is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Share the pizzas",
+   "visual": {
+    "type": "pictograms",
+    "items": [
+     "pizza",
+     "pizza",
+     "pizza"
+    ],
+    "labels": false
+   },
+   "prompt": "4 friends share 3 pizzas equally. How much does each get?",
+   "notes": {
+    "answer": "3/4 of a pizza",
+    "beats": [
+     [
+      "POINT to the pizzas.",
+      "SAY: Here are 3 pizzas, and 4 hungry friends who share them equally."
+     ],
+     [
+      "ASK: How much pizza does each friend get?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 3/4 of a pizza"
+     ],
+     [
+      "SCAN boards for 3/4.",
+      "80%+ -> cold call one student: How did you share them?",
+      "Less -> draw each pizza cut into quarters and hand them out. Re-ask."
+     ],
+     [
+      "SAY: Each friend gets three quarters. 3 pizzas divided by 4 people is 3/4.",
+      "So a fraction is a division. That's today's big idea."
+     ]
+    ],
+    "trap": [
+     "writing 4/3 or 1 each.",
+     "Fix: cut each pizza into quarters and share, and they recount."
+    ],
+    "prep": "The launch comes after the LI: sharing shows 3/4 = 3 divided by 4. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "simplest form",
+   "meaning": "A fraction whose top and bottom have no common factor except 1.",
+   "example": "75/100 in simplest form is 3/4.",
+   "visual": {
+    "type": "hundredGrid",
+    "shaded": 75,
+    "label": "75/100 = 3/4"
+   },
+   "notes": {
+    "answer": "no common factor except 1",
+    "beats": [
+     [
+      "POINT to the words.",
+      "SAY: These words are simplest form. Say them with me: sim-plest form."
+     ],
+     [
+      "SAY: A fraction is in simplest form when",
+      "nothing divides into both the top and the bottom,",
+      "except 1. So 75/100 simplifies to 3/4."
+     ],
+     [
+      "ASK: Is 6/10 in simplest form? Thumbs up for yes, down for no.",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs down: 3/5"
+     ]
+    ],
+    "trap": [
+     "stopping at 6/10.",
+     "Fix: ask what divides into 6 and 10, and they simplify."
+    ],
+    "prep": "Simplest form is the finish line for decimal-to-fraction work.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "A fraction is a division",
+   "steps": [
+    "3/8 means 3 divided by 8.",
+    "8 into 3 does not go: write 0 and the point.",
+    "8 into 30 is 3 r 6; 60 is 7 r 4; 40 is 5.",
+    "3/8 = 0.375"
+   ],
+   "visual": {
+    "type": "shortDivision",
+    "dividend": "3.000",
+    "divisor": 8,
+    "quotient": "0.375"
+   },
+   "reveal": {
+    "answers": [
+     "1/8 = 0.125"
+    ]
+   },
+   "notes": {
+    "answer": "0.125",
+    "beats": [
+     [
+      "POINT to 3/8.",
+      "SAY: 3/8 means 3 divided by 8,",
+      "so I set it up with the division bracket.",
+      "I write 3 with some zeros after the point."
+     ],
+     [
+      "MODEL each step.",
+      "SAY: 8 into 3 won't go, so 0 and a point.",
+      "8 into 30 is 3, remainder 6.",
+      "8 into 60 is 7, remainder 4. 8 into 40 is 5. So 0.375."
+     ],
+     [
+      "ASK: Use the bracket. What is 1/8 as a decimal?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 0.125"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 1 divided by 8 is 0.125.",
+      "Eighths need three decimal places."
+     ]
+    ],
+    "trap": [
+     "dividing 8 by 3.",
+     "Fix: say top divided by bottom, and they set it up again."
+    ],
+    "stretch": "Check: is 0.375 the same as 375/1000?",
+    "help": "Write the zeros first: 1.000 under the bracket.",
+    "prep": "The critical feature: a fraction is a division. SC1 and SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Decimal to fraction",
+   "steps": [
+    "0.45 is 45 hundredths: 45/100.",
+    "Find a number that divides both: 5.",
+    "45/100 = 9/20.",
+    "Nothing else divides 9 and 20: simplest form."
+   ],
+   "visual": {
+    "type": "hundredGrid",
+    "shaded": 45,
+    "label": "0.45 = 45/100"
+   },
+   "reveal": {
+    "answers": [
+     "0.8 = 8/10 = 4/5"
+    ]
+   },
+   "notes": {
+    "answer": "4/5",
+    "beats": [
+     [
+      "POINT to the grid.",
+      "SAY: Now the other way. 0.45 is 45 hundredths, so I write 45 over 100."
+     ],
+     [
+      "MODEL simplifying.",
+      "SAY: 5 divides into both 45 and 100: that gives 9/20.",
+      "Nothing else divides into 9 and 20, so it's in simplest form."
+     ],
+     [
+      "ASK: How do you write 0.8 as a fraction in simplest form?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 4/5"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 0.8 is 8 tenths, 8/10, which simplifies to 4/5."
+     ]
+    ],
+    "trap": [
+     "writing 8/100.",
+     "Fix: point to the tenths place, and they rewrite it."
+    ],
+    "stretch": "Write 0.875 as a fraction in simplest form.",
+    "help": "Write the place value name first: 8 tenths.",
+    "prep": "Read the place value, then simplify. SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "0.25 in simplest form",
+   "prompt": "Point to A, B or C",
+   "options": [
+    {
+     "text": "1/4"
+    },
+    {
+     "text": "25/10",
+     "misconception": "uses tenths for a hundredths decimal"
+    },
+    {
+     "text": "2/5",
+     "misconception": "reads the digits 2 and 5 as the top and bottom"
+    }
+   ],
+   "answer": 0,
+   "notes": {
+    "answer": "A",
+    "beats": [
+     [
+      "SAY: Read the place value first, then simplify."
+     ],
+     [
+      "ASK: What is 0.25 as a fraction in simplest form?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to A"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What is 2/5 as a decimal?",
+      "Less -> shade 25 on a hundred grid and see a quarter. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's A: 25/100 simplifies to 1/4.",
+      "B used tenths, and C read the digits as a fraction."
+     ]
+    ],
+    "trap": [
+     "pointing to C.",
+     "Fix: work out 2 divided by 5, 0.4, and they choose again."
+    ],
+    "prep": "First decision point. B: place value; C: digits read as a fraction.",
+    "tag": "[CFU | Supported application | SC3 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Switch the name",
+   "ask": "Write it in the other form.",
+   "routine": "boards",
+   "thinkTime": 30,
+   "pivot": "fraction to decimal: divide; decimal to fraction: read the place",
+   "followUp": "cold call one board: How did you check it?",
+   "items": [
+    {
+     "text": "5/8 as a decimal",
+     "answer": "0.625"
+    },
+    {
+     "text": "3/5 as a decimal",
+     "answer": "0.6"
+    },
+    {
+     "text": "0.35 as a fraction, simplest form",
+     "answer": "7/20"
+    },
+    {
+     "text": "0.125 as a fraction",
+     "answer": "1/8"
+    },
+    {
+     "text": "7/4 as a decimal",
+     "answer": "1.75",
+     "say": "7 divided by 4 is 1, remainder 3, so 1.75."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise switching between fractions and decimals.",
+     "Write each answer on your board."
+    ],
+    "trap": [
+     "forgetting to simplify.",
+     "Fix: ask what divides into both, and they simplify."
+    ],
+    "stretch": "Write each one as a percentage too.",
+    "help": "Use the division bracket for fractions to decimals.",
+    "prep": "Guided practice both ways, ending with a fraction greater than 1. SC2 and SC3.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Write 0.06 as a fraction",
+   "visual": {
+    "type": "text",
+    "text": "0.06"
+   },
+   "label": "Simplest form, please.",
+   "reveal": {
+    "answers": [
+     "6/100 = 3/50"
+    ]
+   },
+   "notes": {
+    "answer": "3/50. 6/10 means a place value slip",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Read the place value carefully."
+     ],
+     [
+      "ASK: How do you write 0.06 as a fraction in simplest form?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 3/50"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> write 0.06 into the place value chart: 6 hundredths. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 6 hundredths is 6/100, which simplifies to 3/50. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 6/10.",
+     "Fix: point to the hundredths place, and they rewrite it."
+    ],
+    "prep": "The hinge before independent work. Anyone writing 6/10 starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC3 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Switch between fractions and decimals on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Which way are you switching, and how?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "dividing the bottom by the top.",
+     "Fix: say top divided by bottom, and they redo it."
+    ],
+    "stretch": "Extension: repeating decimals, mixed numbers and a sharing puzzle.",
+    "help": "Supported Worksheet: the bracket set up for you, and tenths first.",
+    "prep": "Independent practice: dividing, a fraction table, decimals to fractions, a mistake and sharing. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Write 7/8 as a decimal."
+   ],
+   "visual": {
+    "type": "text",
+    "text": "7/8"
+   },
+   "notes": {
+    "answer": "0.875",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: How do you write 7/8 as a decimal?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 0.875"
+     ],
+     [
+      "RECORD who divides the wrong way or stops early.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing 1.142 (8 divided by 7).",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: eighths need three places.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner why a fraction is a division.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for 3/8 means 3 shared into 8 parts: 3 divided by 8",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can switch between fractions and decimals?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 1.142 on the board matters most."
+     ],
+     [
+      "ASK: Why is a fraction a division?",
+      "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: 3/8 means 3 shared into 8 parts: 3 divided by 8"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: percentages.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

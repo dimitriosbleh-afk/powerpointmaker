@@ -1,0 +1,1430 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 3,
+  "session": 2,
+  "title": "Collecting and Organising Data",
+  "subtitle": "Term 4 Week 3, Session 2",
+  "meta": "Year 5/6 Maths | Statistics",
+  "footer": "Statistics | Year 5/6 Maths | Session 2",
+  "outputFolder": "T4W3_Maths_S2_Collecting_Data",
+  "fileName": "Session 2 - Collecting and Organising Data.pptx",
+  "titleVisual": {
+   "type": "tally",
+   "headers": [
+    "Transport",
+    "Tally",
+    "Frequency"
+   ],
+   "rows": [
+    [
+     "Walk",
+     6
+    ],
+    [
+     "Car",
+     9
+    ],
+    [
+     "Bus",
+     4
+    ]
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Statistics, Years 5 and 6 (VC2M5ST03, VC2M6ST03): collect relevant categorical data by survey and organise it accurately",
+   "shape": "example-first, then a quick class survey in the You Do, because accurate tallying and checking the total are habits that need modelling",
+   "criticalFeature": "every response is counted once, so the total matches the number of people asked",
+   "decisionPoints": [
+    "the choice check: which frequencies could be right?",
+    "the hinge: the total from a tally chart",
+    "the exit ticket"
+   ],
+   "anchor": "ask, collect, show, tell: every investigation starts with a fair question and ends with what the data shows",
+   "catchUp": "Missed Session 1? Show one fair survey question (no push, a choice for everyone) before the launch."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "A pencil for every student",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: ask, collect, show, tell",
+   "A blank tally chart for the class survey: How do you get to school?"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Tally raw data, read a tally chart, check totals, fix a mistake and run your own mini survey.",
+   "title": "Collecting and Organising Data",
+   "subtitle": "Tally as you go. Check the total.",
+   "sections": [
+    {
+     "title": "Tally and count",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "Tally these answers: cat, dog, dog, cat, dog.",
+      "steps": [
+       "One mark for each answer.",
+       "cat: 2 marks. dog: 3 marks.",
+       "Count: cat 2, dog 3. Total 5."
+      ],
+      "answer": "cat 2, dog 3"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "20 students answered 'What is your favourite sport?': basketball, soccer, soccer, basketball, netball, netball, basketball, footy, soccer, footy, netball, footy, soccer, netball, soccer, footy, footy, soccer, footy, soccer. Make a tally and write each frequency.",
+       "columns": [
+        "Sport",
+        "Tally",
+        "Frequency"
+       ],
+       "rows": [
+        [
+         "Footy",
+         "",
+         ""
+        ],
+        [
+         "Netball",
+         "",
+         ""
+        ],
+        [
+         "Soccer",
+         "",
+         ""
+        ],
+        [
+         "Basketball",
+         "",
+         ""
+        ],
+        [
+         "Total",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "Footy",
+         "||||||",
+         "6"
+        ],
+        [
+         "Netball",
+         "||||",
+         "4"
+        ],
+        [
+         "Soccer",
+         "|||||||",
+         "7"
+        ],
+        [
+         "Basketball",
+         "|||",
+         "3"
+        ],
+        [
+         "Total",
+         "",
+         "20"
+        ]
+       ]
+      },
+      {
+       "prompt": "Read the tally chart.",
+       "visual": {
+        "type": "tally",
+        "headers": [
+         "Fruit",
+         "Tally",
+         "Frequency"
+        ],
+        "rows": [
+         [
+          "Apple",
+          12
+         ],
+         [
+          "Banana",
+          7
+         ],
+         [
+          "Grapes",
+          15
+         ],
+         [
+          "Orange",
+          4
+         ]
+        ],
+        "counts": false
+       },
+       "parts": [
+        {
+         "prompt": "How many chose apple?",
+         "answer": "12"
+        },
+        {
+         "prompt": "How many chose grapes?",
+         "answer": "15"
+        },
+        {
+         "prompt": "How many people in total?",
+         "answer": "38"
+        }
+       ],
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Check the total",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "10 people were asked. The frequencies are 4, 3 and 2. Is anything missing?",
+      "steps": [
+       "Add the frequencies: 4 + 3 + 2 = 9.",
+       "10 people were asked.",
+       "9 is less than 10: one answer is missing."
+      ],
+      "answer": "Yes, one answer is missing."
+     },
+     "items": [
+      {
+       "kind": "mistake",
+       "prompt": "Tom asked 25 students. Find the problem with his table and explain it.",
+       "work": [
+        "Walk 8, Car 9, Bus 5, Bike 2.",
+        "My table is correct."
+       ],
+       "answer": "8 + 9 + 5 + 2 = 24, not 25. One answer was missed or not recorded."
+      },
+      {
+       "kind": "choice",
+       "prompt": "26 students were asked. Which frequencies could be right?",
+       "options": [
+        "8, 9, 7",
+        "10, 9, 7",
+        "12, 9, 7"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "10 + 9 + 7 = 26, the number of students asked. The others add to 24 and 28."
+      }
+     ]
+    },
+    {
+     "title": "Run a survey",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "The canteen asked 50 students. 20 chose wraps and 18 chose pasta. The rest chose soup. How many chose soup?",
+      "steps": [
+       "Add what you know: 20 + 18 = 38.",
+       "Take it from the total: 50 - 38 = 12."
+      ],
+      "answer": "12"
+     },
+     "items": [
+      {
+       "prompt": "The canteen asked 120 students. 45 chose wraps, 38 chose pasta, 25 chose sushi and the rest chose soup. How many chose soup?",
+       "answer": "12",
+       "answerLabel": "Soup:"
+      },
+      {
+       "kind": "open",
+       "prompt": "Ask 8 people near you: 'Which season do you like best: summer, autumn, winter or spring?' Make a tally and frequency table, and check your total.",
+       "answer": "A table with four seasons, tallies, frequencies and a total of 8."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Grouping numerical data, fractions of a survey and designing a data sheet, with worked examples.",
+   "title": "Extension: Grouping Data",
+   "subtitle": "Group numbers into equal-sized intervals.",
+   "sections": [
+    {
+     "title": "Group the numbers",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Group these minutes: 4, 12, 15, 23, 7.",
+      "steps": [
+       "Choose groups: 0 to 9, 10 to 19, 20 to 29.",
+       "Count each group: 2, 2, 1.",
+       "Check: 2 + 2 + 1 = 5 values."
+      ],
+      "answer": "0 to 9: 2, 10 to 19: 2, 20 to 29: 1"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "16 students wrote how many minutes they read last night: 12, 25, 8, 31, 19, 22, 5, 14, 28, 17, 9, 35, 21, 26, 11, 18. Group the data.",
+       "columns": [
+        "Minutes",
+        "Frequency"
+       ],
+       "rows": [
+        [
+         "0 to 9",
+         ""
+        ],
+        [
+         "10 to 19",
+         ""
+        ],
+        [
+         "20 to 29",
+         ""
+        ],
+        [
+         "30 to 39",
+         ""
+        ],
+        [
+         "Total",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "0 to 9",
+         "3"
+        ],
+        [
+         "10 to 19",
+         "6"
+        ],
+        [
+         "20 to 29",
+         "5"
+        ],
+        [
+         "30 to 39",
+         "2"
+        ],
+        [
+         "Total",
+         "16"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Fractions of a survey",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "8 out of 24 students chose netball. What fraction is that?",
+      "steps": [
+       "Write it as a fraction: 8/24.",
+       "Simplify: divide both by 8.",
+       "1/3"
+      ],
+      "answer": "1/3"
+     },
+     "items": [
+      {
+       "prompt": "In the reading data, what fraction of students read for 20 minutes or more? Can it be simplified?",
+       "answer": "7/16. It cannot be simplified: 7 and 16 share no factor except 1.",
+       "lines": 2
+      },
+      {
+       "prompt": "What percentage of students read for 10 to 19 minutes?",
+       "answer": "6/16 = 37.5%",
+       "lines": 2
+      }
+     ]
+    },
+    {
+     "title": "Design a data sheet",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Plan a sheet for 'How many pets do you have?'",
+      "steps": [
+       "List the choices: 0, 1, 2, 3, 4 or more.",
+       "Add a tally column and a frequency column.",
+       "Add a total row to check."
+      ],
+      "answer": "a ready-to-use tally sheet"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Design a data collection sheet for a numerical question of your own. Include groups with no gaps or overlaps, a tally column, a frequency column and a total.",
+       "answer": "Check: a numerical question, groups with no gaps or overlaps, tally and frequency columns, and a total row."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: short lists, tallies to count in fives, and a hint on every question.",
+   "title": "Tallies: Step by Step",
+   "subtitle": "Count in fives, then ones.",
+   "sections": [
+    {
+     "title": "Count the tallies",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Count the tally for Dog.",
+      "visual": {
+       "type": "tally",
+       "headers": [
+        "Pet",
+        "Tally",
+        "Frequency"
+       ],
+       "rows": [
+        [
+         "Dog",
+         7
+        ]
+       ],
+       "counts": false
+      },
+      "steps": [
+       "One gate is 5.",
+       "Then count the ones: 6, 7.",
+       "Dog: 7."
+      ],
+      "answer": "7"
+     },
+     "items": [
+      {
+       "prompt": "How many chose Cat?",
+       "visual": {
+        "type": "tally",
+        "headers": [
+         "Pet",
+         "Tally",
+         "Frequency"
+        ],
+        "rows": [
+         [
+          "Cat",
+          9
+         ]
+        ],
+        "counts": false
+       },
+       "hint": "Count the gate as 5, then count on.",
+       "answer": "9",
+       "answerLabel": "Cat:",
+       "working": "none"
+      },
+      {
+       "prompt": "How many chose Fish?",
+       "visual": {
+        "type": "tally",
+        "headers": [
+         "Pet",
+         "Tally",
+         "Frequency"
+        ],
+        "rows": [
+         [
+          "Fish",
+          11
+         ]
+        ],
+        "counts": false
+       },
+       "hint": "Two gates make 10.",
+       "answer": "11",
+       "answerLabel": "Fish:",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Make a tally",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Tally: red, blue, red, red.",
+      "steps": [
+       "Red: one mark for each red. 3 marks.",
+       "Blue: 1 mark.",
+       "Total: 4."
+      ],
+      "answer": "red 3, blue 1"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Tally these colours: blue, green, blue, red, blue, green, blue, red.",
+       "hint": "Cross off each colour as you tally it.",
+       "columns": [
+        "Colour",
+        "Tally",
+        "Frequency"
+       ],
+       "rows": [
+        [
+         "Blue",
+         "",
+         ""
+        ],
+        [
+         "Green",
+         "",
+         ""
+        ],
+        [
+         "Red",
+         "",
+         ""
+        ],
+        [
+         "Total",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "Blue",
+         "||||",
+         "4"
+        ],
+        [
+         "Green",
+         "||",
+         "2"
+        ],
+        [
+         "Red",
+         "||",
+         "2"
+        ],
+        [
+         "Total",
+         "",
+         "8"
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 2 of our statistics week: today we collect data and organise it in a table."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards, markers and a pencil on every desk, and draw a blank tally chart on the board. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Missing corner",
+   "from": "teacher",
+   "prompts": [
+    "A rectangle has corners (1, 1), (5, 1) and (5, 4). Find the fourth corner."
+   ],
+   "reveal": {
+    "answers": [
+     "(1, 4)"
+    ]
+   },
+   "notes": {
+    "answer": "(1, 4)",
+    "beats": [
+     [
+      "SAY: Let's warm up with last week's coordinates."
+     ],
+     [
+      "ASK: What is the fourth corner of this rectangle?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (1, 4)"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> sketch the three corners on the",
+      "board grid and trace up from (1, 1). Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 1, 4: straight above 1, 1,",
+      "and level with 5, 4. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (4, 1).",
+     "Fix: say the anchor, across first, and they rewrite it."
+    ],
+    "prep": "Review of Week 2 coordinates (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Move across zero",
+   "from": "teacher",
+   "prompts": [
+    "(2, -1) moves 4 left. Where does it land?"
+   ],
+   "reveal": {
+    "answers": [
+     "(-2, -1)"
+    ]
+   },
+   "notes": {
+    "answer": "(-2, -1)",
+    "beats": [
+     [
+      "ASK: If 2, negative 1 moves 4 left, where does it land?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (-2, -1)"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> jump 4 left from 2 on the number line together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's negative 2, negative 1.",
+      "2 take away 4 is negative 2. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (6, -1).",
+     "Fix: ask which way left goes, and they redo it."
+    ],
+    "prep": "Week 2 review: moving points across zero.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Two lines cross",
+   "from": "teacher",
+   "prompts": [
+    "Find b."
+   ],
+   "visual": {
+    "type": "angle",
+    "rays": [
+     0,
+     180,
+     72,
+     252
+    ],
+    "arcs": [
+     {
+      "from": 0,
+      "to": 72,
+      "label": "72°"
+     },
+     {
+      "from": 72,
+      "to": 180,
+      "label": "b"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "b = 108°"
+    ]
+   },
+   "notes": {
+    "answer": "b = 108°",
+    "beats": [
+     [
+      "ASK: How big is angle b?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 108"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> point to the straight line that b and 72 share,",
+      "then subtract from 180. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 108 degrees: b sits next to 72 on a straight line.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 72, the opposite angle.",
+     "Fix: ask whether b is opposite or next to 72, and they redo it."
+    ],
+    "prep": "Week 1 review: angles where two lines cross.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Subtract with the written method: 3 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     805,
+     367
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "438"
+    ]
+   },
+   "notes": {
+    "answer": "438",
+    "beats": [
+     [
+      "SAY: Now for some written subtraction.",
+      "Line up the places, and always start with the ones."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 438"
+     ],
+     [
+      "SCAN boards for the regrouped columns.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 438.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one in every column.",
+     "Fix: ask \"Is the top digit big enough?\", and they regroup and redo it."
+    ],
+    "prep": "Subtraction fluency: 3 digits, then 4, then 5. Keep the whole block under 6 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Subtract with the written method: 4 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     7002,
+     3456
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "3 546"
+    ]
+   },
+   "notes": {
+    "answer": "3 546",
+    "beats": [
+     [
+      "SAY: Now it's 4 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 3 546"
+     ],
+     [
+      "SCAN boards for the regrouped columns.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 3 546.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one in every column.",
+     "Fix: ask \"Is the top digit big enough?\", and they regroup and redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Subtract with the written method: 5 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     60030,
+     28465
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "31 565"
+    ]
+   },
+   "notes": {
+    "answer": "31 565",
+    "beats": [
+     [
+      "SAY: Now it's 5 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 31 565"
+     ],
+     [
+      "SCAN boards for the regrouped columns.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 31 565.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one in every column.",
+     "Fix: ask \"Is the top digit big enough?\", and they regroup and redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to collect data and organise it in a frequency table.",
+   "successCriteria": [
+    "I can record data with tally marks.",
+    "I can turn tallies into a frequency table and check the total.",
+    "I can explain what the table tells us about our question."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: Yesterday we wrote fair questions.",
+      "Today we collect the answers and organise them."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 tallying is reachable for everyone; SC2 the frequency table and total check is the core and the exit evidence; SC3 explaining the table is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Count the tally",
+   "visual": {
+    "type": "tally",
+    "headers": [
+     "Sport",
+     "Tally",
+     "Frequency"
+    ],
+    "rows": [
+     [
+      "Footy",
+      13
+     ]
+    ],
+    "counts": false
+   },
+   "prompt": "How many students chose footy?",
+   "notes": {
+    "answer": "13",
+    "beats": [
+     [
+      "POINT to the tally marks.",
+      "SAY: Some of you may have used tally marks before.",
+      "Each gate is a group of five."
+     ],
+     [
+      "ASK: How many students chose footy?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 13"
+     ],
+     [
+      "SCAN boards for 13.",
+      "80%+ -> say: counting in fives makes tallies quick to read.",
+      "Less -> count together: 5, 10, 11, 12, 13. Re-ask."
+     ],
+     [
+      "SAY: It's 13: two fives, then three ones.",
+      "Today we'll make our own tallies, and turn them into a table."
+     ]
+    ],
+    "trap": [
+     "counting every line, including the crossing line, as 1.",
+     "Fix: count a gate as one 5, and they count again."
+    ],
+    "prep": "The launch comes after the LI: reading tallies by fives. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "frequency",
+   "meaning": "How many times something happens or is chosen.",
+   "example": "Netball has a frequency of 7.",
+   "visual": {
+    "type": "tally",
+    "headers": [
+     "Sport",
+     "Tally",
+     "Frequency"
+    ],
+    "rows": [
+     [
+      "Netball",
+      7
+     ]
+    ]
+   },
+   "notes": {
+    "answer": "how many times something is chosen",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is frequency. Say it with me: fre-quen-cy."
+     ],
+     [
+      "SAY: Frequency means how many times something is chosen.",
+      "In a table, we write it as a number beside the tally."
+     ],
+     [
+      "ASK: What is the frequency for netball?",
+      "5 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 7"
+     ]
+    ],
+    "trap": [
+     "writing the tally instead of a number.",
+     "Fix: ask how many marks there are, and they write the number."
+    ],
+    "prep": "Frequency is the column students fill in all week.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Tally as you collect",
+   "steps": [
+    "Read one answer at a time.",
+    "Draw one mark for each answer.",
+    "The fifth mark crosses the four.",
+    "Count in fives, then ones."
+   ],
+   "visual": {
+    "type": "tally",
+    "headers": [
+     "Transport",
+     "Tally",
+     "Frequency"
+    ],
+    "rows": [
+     [
+      "Walk",
+      6
+     ],
+     [
+      "Car",
+      9
+     ],
+     [
+      "Bus",
+      4
+     ],
+     [
+      "Bike",
+      3
+     ]
+    ],
+    "counts": false
+   },
+   "reveal": {
+    "answers": [
+     "Walk 6",
+     "Car 9",
+     "Bus 4",
+     "Bike 3"
+    ]
+   },
+   "notes": {
+    "answer": "Car: 9",
+    "beats": [
+     [
+      "MODEL tallying three answers on the board.",
+      "SAY: When I collect answers, I read one at a time,",
+      "and draw one mark for each. Every fifth mark crosses the four."
+     ],
+     [
+      "POINT to Car.",
+      "SAY: To read a row,",
+      "I count each gate as 5, then count on the ones."
+     ],
+     [
+      "ASK: How many students travel by car?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 9"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Car is 9: one five and four ones.",
+      "Walk is 6, bus is 4 and bike is 3."
+     ]
+    ],
+    "trap": [
+     "drawing a fifth upright line instead of a gate.",
+     "Fix: cross the four with the fifth, and they count again."
+    ],
+    "stretch": "Which two ways of travelling add to the same as car?",
+    "help": "Touch each mark as you count.",
+    "prep": "Tallying one answer at a time keeps every response counted once. SC1.",
+    "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Check the total",
+   "steps": [
+    "Add the frequencies: 6 + 9 + 4 + 3 = 22.",
+    "Count the people asked: 22.",
+    "They match, so nothing was missed or counted twice."
+   ],
+   "visual": {
+    "type": "tally",
+    "headers": [
+     "Transport",
+     "Tally",
+     "Frequency"
+    ],
+    "rows": [
+     [
+      "Walk",
+      6
+     ],
+     [
+      "Car",
+      9
+     ],
+     [
+      "Bus",
+      4
+     ],
+     [
+      "Bike",
+      3
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "Total: 22"
+    ]
+   },
+   "notes": {
+    "answer": "Total 22; 24 asked means 2 missed",
+    "beats": [
+     [
+      "MODEL adding the frequency column.",
+      "SAY: Now I check my table.",
+      "I add the frequencies: 6, 9, 4 and 3 make 22."
+     ],
+     [
+      "SAY: 22 students were asked, so the total matches.",
+      "That tells me every answer was counted once."
+     ],
+     [
+      "ASK: If 24 students had been asked, what would that tell us?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 2 answers were missed"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Two answers were missed. When the total doesn't match,",
+      "we go back and find them."
+     ]
+    ],
+    "trap": [
+     "adding the tally marks again instead of the numbers.",
+     "Fix: point to the frequency column, and they add those."
+    ],
+    "stretch": "If the total were 23, what might have happened?",
+    "help": "Add two numbers at a time and write each sum.",
+    "prep": "The critical feature: the total must equal the number asked. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which frequencies could be right?",
+   "prompt": "30 students were asked. Point to A, B or C",
+   "options": [
+    {
+     "text": "12, 9, 8",
+     "misconception": "does not check the total against the number asked (29)"
+    },
+    {
+     "text": "12, 10, 8"
+    },
+    {
+     "text": "13, 10, 9",
+     "misconception": "adds the frequencies wrongly (32), or counts someone twice"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Thirty students were asked.",
+      "Add each set of frequencies before you choose."
+     ],
+     [
+      "ASK: Which set of frequencies could be right?",
+      "20 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What does A tell us went wrong?",
+      "Less -> add each set together on the board. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B: 12, 10 and 8 make 30.",
+      "A makes 29, so one is missing, and C makes 32."
+     ]
+    ],
+    "trap": [
+     "pointing to C.",
+     "Fix: add 13, 10 and 9 together, and they choose again."
+    ],
+    "prep": "First decision point: the total check. A or C means the total is not being checked.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Count and check",
+   "ask": "Write the answer on your board.",
+   "routine": "boards",
+   "thinkTime": 20,
+   "pivot": "count the gates as fives together, then add",
+   "followUp": "cold call one board: How did you check?",
+   "items": [
+    {
+     "text": "How many said car? walk, car, bike, car, walk, bus, car, car",
+     "answer": "4"
+    },
+    {
+     "visual": {
+      "type": "tally",
+      "headers": [
+       "Sport",
+       "Tally",
+       "Frequency"
+      ],
+      "rows": [
+       [
+        "Soccer",
+        17
+       ]
+      ],
+      "counts": false
+     },
+     "answer": "17"
+    },
+    {
+     "visual": {
+      "type": "table",
+      "rows": [
+       [
+        "Pet",
+        "Frequency"
+       ],
+       [
+        "Dog",
+        "9"
+       ],
+       [
+        "Cat",
+        "7"
+       ],
+       [
+        "Fish",
+        "3"
+       ],
+       [
+        "None",
+        "5"
+       ],
+       [
+        "Total",
+        "?"
+       ]
+      ]
+     },
+     "answer": "24"
+    },
+    {
+     "text": "28 were asked. The frequencies are 10, 8 and 7. What went wrong?",
+     "answer": "3 answers are missing",
+     "say": "10, 8 and 7 make 25, so 3 answers are missing."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise counting and checking.",
+     "Write each answer on your board."
+    ],
+    "trap": [
+     "not checking the total.",
+     "Fix: add the frequencies and compare with the number asked, and they redo it."
+    ],
+    "stretch": "Write a frequency table for a survey of 30 that checks.",
+    "help": "Cross off each answer in the list as you tally it.",
+    "prep": "Guided practice: a raw list, a tally, a total and a total that does not check. SC1 and SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "How many students were surveyed?",
+   "visual": {
+    "type": "tally",
+    "headers": [
+     "Season",
+     "Tally",
+     "Frequency"
+    ],
+    "rows": [
+     [
+      "Summer",
+      11
+     ],
+     [
+      "Autumn",
+      4
+     ],
+     [
+      "Winter",
+      6
+     ],
+     [
+      "Spring",
+      8
+     ]
+    ],
+    "counts": false
+   },
+   "reveal": {
+    "answers": [
+     "29 students"
+    ]
+   },
+   "notes": {
+    "answer": "29",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Count each row, then find the total."
+     ],
+     [
+      "ASK: How many students were surveyed altogether?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 29"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then the class survey and Your turn.",
+      "Less -> write each frequency beside its tally together, then add. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 11, 4, 6 and 8 make 29 students. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "counting the gates as 4.",
+     "Fix: count each gate as 5, and they recount."
+    ],
+    "prep": "The hinge before independent work. Anyone far from 29 starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Tally, count and check the totals on your worksheet, then run your own mini survey.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Does your total match the number you asked?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "a total that does not match.",
+     "Fix: recount one row at a time, and they fix the table."
+    ],
+    "stretch": "Extension: grouping numerical data, fractions of a survey and designing a data sheet.",
+    "help": "Supported Worksheet: short lists, tallies to count in fives, and a hint on every question.",
+    "prep": "Independent practice: tally raw data, read a tally chart, check totals and run a mini survey. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "How many people were asked? Which colour is most popular?"
+   ],
+   "visual": {
+    "type": "tally",
+    "headers": [
+     "Colour",
+     "Tally",
+     "Frequency"
+    ],
+    "rows": [
+     [
+      "Red",
+      8
+     ],
+     [
+      "Blue",
+      14
+     ],
+     [
+      "Green",
+      6
+     ],
+     [
+      "Yellow",
+      9
+     ]
+    ],
+    "counts": false
+   },
+   "notes": {
+    "answer": "37 people; blue",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: How many people were asked, and which colour is the most popular?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 37 people; blue"
+     ],
+     [
+      "RECORD who misreads a gate or skips the total.",
+      "They start tomorrow's graphing with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing 33.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: read every row, total it, and name the most popular.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner how you know your table is correct.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for the total matches the number of people asked",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can make a frequency table and check it?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with a wrong total matters most."
+     ],
+     [
+      "ASK: How do you know your frequency table is correct?",
+      "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: the total matches the number of people asked"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow we turn tables into graphs.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

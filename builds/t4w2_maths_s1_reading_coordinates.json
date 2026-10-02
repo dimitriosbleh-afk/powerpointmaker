@@ -1,0 +1,1799 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 2,
+  "session": 1,
+  "title": "Reading and Plotting Coordinates",
+  "subtitle": "Term 4 Week 2, Session 1",
+  "meta": "Year 5/6 Maths | Space",
+  "footer": "Grid Coordinates | Year 5/6 Maths | Session 1",
+  "outputFolder": "T4W2_Maths_S1_Reading_Coordinates",
+  "fileName": "Session 1 - Reading and Plotting Coordinates.pptx",
+  "titleVisual": {
+   "type": "grid",
+   "x": [
+    0,
+    6
+   ],
+   "y": [
+    0,
+    5
+   ],
+   "points": [
+    {
+     "x": 4,
+     "y": 2,
+     "label": "A"
+    }
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Space, Year 5 (VC2M5SP02): a grid coordinate system that uses coordinates to locate positions, compared with a grid reference system",
+   "shape": "compare-two-models: a grid reference (it names a space) beside a coordinate grid (it names a point on the lines), because the switch from spaces to lines is the new idea",
+   "criticalFeature": "coordinates sit where two lines cross: across first, then up",
+   "decisionPoints": [
+    "the choice check: which grid shows (3, 1)?",
+    "the hinge: which point is at (0, 3)?",
+    "the exit ticket"
+   ],
+   "anchor": "across the corridor, then up the stairs: (x, y), and the numbers sit on the lines"
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "A ruler and a sharp pencil for every student",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The anchor on the board: across the corridor, then up the stairs, (x, y)",
+   "A large grid drawn or projected for plotting together"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Read and plot points, a coordinates table, a school map, a mistake to fix and a reasoning question.",
+   "title": "Reading and Plotting Coordinates",
+   "subtitle": "Across the corridor, then up the stairs.",
+   "sections": [
+    {
+     "title": "Read and plot",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "What are the coordinates of point A?",
+      "visual": {
+       "type": "grid",
+       "x": [
+        0,
+        6
+       ],
+       "y": [
+        0,
+        5
+       ],
+       "points": [
+        {
+         "x": 4,
+         "y": 2,
+         "label": "A"
+        }
+       ]
+      },
+      "steps": [
+       "Start at 0, where the axes meet.",
+       "Go across to 4.",
+       "Go up to 2."
+      ],
+      "answer": "A = (4, 2)"
+     },
+     "items": [
+      {
+       "prompt": "Write the coordinates of each point.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         7
+        ],
+        "y": [
+         0,
+         6
+        ],
+        "points": [
+         {
+          "x": 2,
+          "y": 5,
+          "label": "B"
+         },
+         {
+          "x": 5,
+          "y": 3,
+          "label": "C"
+         },
+         {
+          "x": 6,
+          "y": 0,
+          "label": "D"
+         },
+         {
+          "x": 0,
+          "y": 2,
+          "label": "E"
+         }
+        ],
+        "maxH": 130
+       },
+       "parts": [
+        {
+         "prompt": "B",
+         "answer": "(2, 5)"
+        },
+        {
+         "prompt": "C",
+         "answer": "(5, 3)"
+        },
+        {
+         "prompt": "D",
+         "answer": "(6, 0)"
+        },
+        {
+         "prompt": "E",
+         "answer": "(0, 2)"
+        }
+       ]
+      },
+      {
+       "prompt": "Plot and label these points: P (1, 4), Q (4, 1), R (0, 5), S (7, 3).",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         7
+        ],
+        "y": [
+         0,
+         6
+        ],
+        "maxH": 150
+       },
+       "answerVisual": {
+        "type": "grid",
+        "x": [
+         0,
+         7
+        ],
+        "y": [
+         0,
+         6
+        ],
+        "points": [
+         {
+          "x": 1,
+          "y": 4,
+          "label": "P"
+         },
+         {
+          "x": 4,
+          "y": 1,
+          "label": "Q"
+         },
+         {
+          "x": 0,
+          "y": 5,
+          "label": "R"
+         },
+         {
+          "x": 7,
+          "y": 3,
+          "label": "S"
+         }
+        ],
+        "maxH": 150
+       },
+       "answer": "P, Q, R and S plotted on the lines",
+       "working": "none"
+      },
+      {
+       "kind": "table",
+       "prompt": "Fill the gaps. Across first, then up.",
+       "columns": [
+        "Across",
+        "Up",
+        "Coordinates"
+       ],
+       "rows": [
+        [
+         "3",
+         "6",
+         "(3, 6)"
+        ],
+        [
+         "5",
+         "2",
+         ""
+        ],
+        [
+         "",
+         "",
+         "(0, 7)"
+        ],
+        [
+         "8",
+         "0",
+         ""
+        ],
+        [
+         "",
+         "",
+         "(4, 4)"
+        ]
+       ],
+       "answers": [
+        [
+         "3",
+         "6",
+         "(3, 6)"
+        ],
+        [
+         "5",
+         "2",
+         "(5, 2)"
+        ],
+        [
+         "0",
+         "7",
+         "(0, 7)"
+        ],
+        [
+         "8",
+         "0",
+         "(8, 0)"
+        ],
+        [
+         "4",
+         "4",
+         "(4, 4)"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Use it on a map",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "What is at (2, 6) on the school map?",
+      "steps": [
+       "Go across to 2.",
+       "Go up to 6.",
+       "Read the label at that point."
+      ],
+      "answer": "the canteen"
+     },
+     "items": [
+      {
+       "prompt": "Use the school map to answer.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         8
+        ],
+        "y": [
+         0,
+         7
+        ],
+        "points": [
+         {
+          "x": 1,
+          "y": 1,
+          "label": "Library"
+         },
+         {
+          "x": 7,
+          "y": 1,
+          "label": "Gym"
+         },
+         {
+          "x": 2,
+          "y": 6,
+          "label": "Canteen"
+         },
+         {
+          "x": 6,
+          "y": 5,
+          "label": "Oval"
+         }
+        ],
+        "maxH": 210
+       },
+       "working": "none",
+       "parts": [
+        {
+         "prompt": "What is at (7, 1)?",
+         "answer": "the gym"
+        },
+        {
+         "prompt": "What are the coordinates of the oval?",
+         "answer": "(6, 5)"
+        },
+        {
+         "prompt": "Start at the library. Go 5 across and 4 up. Where are you?",
+         "answer": "the oval"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Think about it",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Is (2, 5) the same point as (5, 2)?",
+      "steps": [
+       "(2, 5): across 2, up 5.",
+       "(5, 2): across 5, up 2.",
+       "They land in different places."
+      ],
+      "answer": "No"
+     },
+     "items": [
+      {
+       "kind": "mistake",
+       "prompt": "Point T is 6 across and 1 up. Ava wrote its coordinates. Find her mistake and fix it.",
+       "work": [
+        "T is 1 up and 6 across, so T is (1, 6)."
+       ],
+       "answer": "Across comes first. T is (6, 1)."
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which point sits on the y-axis, the line going up?",
+       "options": [
+        "(0, 5)",
+        "(5, 0)",
+        "(5, 5)"
+       ],
+       "answer": 0,
+       "reason": true,
+       "explain": "(0, 5) goes across 0, so it stays on the line going up."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Missing corners, coordinate patterns and your own puzzle, with worked examples.",
+   "title": "Extension: Coordinate Puzzles",
+   "subtitle": "Use what you know about across, then up.",
+   "sections": [
+    {
+     "title": "Missing corners",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "A rectangle has corners at (1, 1), (5, 1) and (5, 3). Where is the fourth corner?",
+      "visual": {
+       "type": "grid",
+       "x": [
+        0,
+        6
+       ],
+       "y": [
+        0,
+        4
+       ],
+       "points": [
+        {
+         "x": 1,
+         "y": 1
+        },
+        {
+         "x": 5,
+         "y": 1
+        },
+        {
+         "x": 5,
+         "y": 3
+        }
+       ]
+      },
+      "steps": [
+       "Plot the three corners.",
+       "The fourth corner is across from (1, 1) and level with (5, 3).",
+       "It is at (1, 3)."
+      ],
+      "answer": "(1, 3)"
+     },
+     "items": [
+      {
+       "prompt": "A square has corners at (2, 2), (6, 2) and (6, 6). Where is the fourth corner?",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         7
+        ],
+        "y": [
+         0,
+         7
+        ]
+       },
+       "answer": "(2, 6)",
+       "answerLabel": "Corner:"
+      },
+      {
+       "prompt": "A rectangle has corners at (0, 1), (3, 1) and (0, 6). Where is the fourth corner?",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         7
+        ],
+        "y": [
+         0,
+         7
+        ]
+       },
+       "answer": "(3, 6)",
+       "answerLabel": "Corner:"
+      }
+     ]
+    },
+    {
+     "title": "Coordinate patterns",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Points follow the rule: the second number is double the first. What comes after (1, 2), (2, 4)?",
+      "steps": [
+       "Next first number: 3.",
+       "Double it: 6.",
+       "The point is (3, 6)."
+      ],
+      "answer": "(3, 6)"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Each point follows the rule: the second number is 3 more than the first. Fill the gaps.",
+       "columns": [
+        "First number (across)",
+        "Second number (up)",
+        "Point"
+       ],
+       "rows": [
+        [
+         "0",
+         "3",
+         "(0, 3)"
+        ],
+        [
+         "1",
+         "",
+         ""
+        ],
+        [
+         "2",
+         "",
+         ""
+        ],
+        [
+         "",
+         "8",
+         ""
+        ],
+        [
+         "",
+         "",
+         "(7, 10)"
+        ]
+       ],
+       "answers": [
+        [
+         "0",
+         "3",
+         "(0, 3)"
+        ],
+        [
+         "1",
+         "4",
+         "(1, 4)"
+        ],
+        [
+         "2",
+         "5",
+         "(2, 5)"
+        ],
+        [
+         "5",
+         "8",
+         "(5, 8)"
+        ],
+        [
+         "7",
+         "10",
+         "(7, 10)"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Make your own",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Make a hidden-picture puzzle.",
+      "steps": [
+       "Draw a simple shape on a grid, with its corners on the lines.",
+       "List the corners in order.",
+       "A partner joins them in order."
+      ],
+      "answer": "a list of corners"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Draw a shape with at least 5 corners on squared paper. List its corners in order so a partner can draw it without seeing yours.",
+       "answer": "Check every corner sits where two lines cross and the list is in order, across first."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: every point is talked through, with a hint on each question.",
+   "title": "Coordinates: Step by Step",
+   "subtitle": "Across first, then up.",
+   "sections": [
+    {
+     "title": "Read a point",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Read point A.",
+      "visual": {
+       "type": "grid",
+       "x": [
+        0,
+        5
+       ],
+       "y": [
+        0,
+        5
+       ],
+       "points": [
+        {
+         "x": 3,
+         "y": 4,
+         "label": "A"
+        }
+       ]
+      },
+      "steps": [
+       "Put your finger on 0.",
+       "Slide across to 3.",
+       "Slide up to 4. A = (3, 4)."
+      ],
+      "answer": "(3, 4)"
+     },
+     "items": [
+      {
+       "prompt": "Across ___, up ___. B = ( ___ , ___ )",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         5
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 2,
+          "y": 3,
+          "label": "B"
+         }
+        ]
+       },
+       "hint": "Across first: how far along the bottom?",
+       "answer": "(2, 3)",
+       "working": "none"
+      },
+      {
+       "prompt": "Across ___, up ___. C = ( ___ , ___ )",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         5
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 4,
+          "y": 1,
+          "label": "C"
+         }
+        ]
+       },
+       "hint": "Across first, then up.",
+       "answer": "(4, 1)",
+       "working": "none"
+      },
+      {
+       "prompt": "Across ___, up ___. D = ( ___ , ___ )",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         5
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 1,
+          "y": 5,
+          "label": "D"
+         }
+        ]
+       },
+       "hint": "It is only 1 across.",
+       "answer": "(1, 5)",
+       "working": "none"
+      },
+      {
+       "prompt": "Across ___, up ___. E = ( ___ , ___ )",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         5
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 3,
+          "y": 0,
+          "label": "E"
+         }
+        ]
+       },
+       "hint": "It does not go up at all. Up 0.",
+       "answer": "(3, 0)",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Plot a point",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Plot (2, 4).",
+      "visual": {
+       "type": "grid",
+       "x": [
+        0,
+        5
+       ],
+       "y": [
+        0,
+        5
+       ],
+       "points": [
+        {
+         "x": 2,
+         "y": 4
+        }
+       ]
+      },
+      "steps": [
+       "Across to 2.",
+       "Up to 4.",
+       "Draw a dot where the lines cross."
+      ],
+      "answer": "a dot at (2, 4)"
+     },
+     "items": [
+      {
+       "prompt": "Plot F at (4, 2).",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         5
+        ],
+        "y": [
+         0,
+         5
+        ]
+       },
+       "hint": "Across 4 first.",
+       "answerVisual": {
+        "type": "grid",
+        "x": [
+         0,
+         5
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 4,
+          "y": 2,
+          "label": "F"
+         }
+        ]
+       },
+       "answer": "F at (4, 2)",
+       "working": "none"
+      },
+      {
+       "prompt": "Plot G at (1, 3).",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         5
+        ],
+        "y": [
+         0,
+         5
+        ]
+       },
+       "hint": "Across 1, then up 3.",
+       "answerVisual": {
+        "type": "grid",
+        "x": [
+         0,
+         5
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 1,
+          "y": 3,
+          "label": "G"
+         }
+        ]
+       },
+       "answer": "G at (1, 3)",
+       "working": "none"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 1 of our coordinates week: today we read and plot points on a grid."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards, markers, a ruler and a pencil on every desk. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Measure and name it",
+   "from": "teacher",
+   "prompts": [
+    "How big is this angle? What is its name?"
+   ],
+   "visual": {
+    "type": "angle",
+    "rays": [
+     0,
+     140
+    ],
+    "arcs": [
+     {
+      "from": 0,
+      "to": 140
+     }
+    ],
+    "protractor": true
+   },
+   "reveal": {
+    "answers": [
+     "140°",
+     "obtuse"
+    ]
+   },
+   "notes": {
+    "answer": "140° and obtuse",
+    "beats": [
+     [
+      "SAY: Let's warm up with last week's angles."
+     ],
+     [
+      "ASK: How big is this angle, and what is its name?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 140, obtuse"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> finger on the 0 under the arm, count up together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 140 degrees, and that's obtuse,",
+      "because it's between 90 and 180. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "reading 40 on the wrong scale.",
+     "Fix: ask whether it looks obtuse,",
+     "and they read again from the 0 on the arm."
+    ],
+    "prep": "Review of Week 1 angles (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "On a straight line",
+   "from": "teacher",
+   "prompts": [
+    "Find x."
+   ],
+   "visual": {
+    "type": "angle",
+    "rays": [
+     0,
+     62,
+     180
+    ],
+    "arcs": [
+     {
+      "from": 0,
+      "to": 62,
+      "label": "62°"
+     },
+     {
+      "from": 62,
+      "to": 180,
+      "label": "x"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "x = 118°"
+    ]
+   },
+   "notes": {
+    "answer": "x = 118°",
+    "beats": [
+     [
+      "ASK: How big is angle x?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 118"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> trace the straight line, say half turn 180, then subtract. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 118 degrees, because 180 take away 62 is 118.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "subtracting from 360.",
+     "Fix: trace the straight line, and they redo it from 180."
+    ],
+    "prep": "Week 1 review: angles on a straight line.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Around a point",
+   "from": "teacher",
+   "prompts": [
+    "Find y."
+   ],
+   "visual": {
+    "type": "angle",
+    "rays": [
+     0,
+     150,
+     240
+    ],
+    "arcs": [
+     {
+      "from": 0,
+      "to": 150,
+      "label": "150°"
+     },
+     {
+      "from": 150,
+      "to": 240,
+      "right": true
+     },
+     {
+      "from": 240,
+      "to": 360,
+      "label": "y"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "y = 120°"
+    ]
+   },
+   "notes": {
+    "answer": "y = 120°",
+    "beats": [
+     [
+      "ASK: How big is angle y?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 120"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> add the two angles you know, then count on to 360 together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 120 degrees. 150 and 90 make 240,",
+      "and 360 take away 240 is 120. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "subtracting from 180.",
+     "Fix: trace all the way round, and they redo it from 360."
+    ],
+    "prep": "Week 1 review: angles at a point.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "7 × 4"
+   ],
+   "reveal": {
+    "answers": [
+     "28"
+    ]
+   },
+   "notes": {
+    "answer": "28",
+    "beats": [
+     [
+      "SAY: Now for our four times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 7 times 4?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 28"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> double 7, then double again. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 28. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 24 or 32.",
+     "Fix: double 7 to get 14, double again to get 28, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "4 × 9"
+   ],
+   "reveal": {
+    "answers": [
+     "36"
+    ]
+   },
+   "notes": {
+    "answer": "36",
+    "beats": [
+     [
+      "SAY: Here's the next one."
+     ],
+     [
+      "ASK: What is 4 times 9?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 36"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> double 9, then double again. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 36. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 32.",
+     "Fix: count on one more 4 from 4 times 8, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "44 ÷ 4"
+   ],
+   "reveal": {
+    "answers": [
+     "11"
+    ]
+   },
+   "notes": {
+    "answer": "11",
+    "beats": [
+     [
+      "SAY: Now a division. Think: how many fours make 44?"
+     ],
+     [
+      "ASK: What is 44 divided by 4?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 11"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> count up in fours from 40. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 11. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 10.",
+     "Fix: check: 10 times 4 is 40,",
+     "one more four makes 44, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to read and plot points on a grid using coordinates.",
+   "successCriteria": [
+    "I can find a point on a grid when I am told its coordinates.",
+    "I can read and write coordinates, going across first, then up.",
+    "I can explain why (2, 5) and (5, 2) are different points."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: This week is all about finding places on a grid.",
+      "Today we learn to read and plot points with coordinates."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 finding a point is reachable for everyone; SC2 reading and writing in the right order is the core and the exit evidence; SC3 explaining order is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Where is the treasure?",
+   "visual": {
+    "type": "grid",
+    "reference": true,
+    "cols": 6,
+    "rows": 5,
+    "cells": [
+     {
+      "col": "C",
+      "row": 3,
+      "label": "X"
+     }
+    ]
+   },
+   "prompt": "Which square is the treasure in?",
+   "notes": {
+    "answer": "C3",
+    "beats": [
+     [
+      "POINT to the letters along the bottom, then the numbers up the side.",
+      "SAY: Some of you may have used a map like this before.",
+      "Each square has a letter and a number."
+     ],
+     [
+      "ASK: Which square is the X in?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: C3"
+     ],
+     [
+      "SCAN boards for C3.",
+      "80%+ -> say: that names a whole square. Today we name exact points.",
+      "Less -> run a finger along to C, then up to 3, together. Re-ask."
+     ],
+     [
+      "SAY: A grid reference names a square, a space.",
+      "Today we're going to name points on the lines instead, and that's more exact."
+     ]
+    ],
+    "trap": [
+     "writing 3C.",
+     "Fix: say letter first, then number, and they rewrite it."
+    ],
+    "prep": "The launch comes after the LI: a grid reference names a space, which sets up why coordinates use the lines. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "coordinates",
+   "meaning": "A pair of numbers that shows exactly where a point is: across first, then up.",
+   "example": "(4, 2) means go across 4, then up 2.",
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     6
+    ],
+    "y": [
+     0,
+     5
+    ],
+    "points": [
+     {
+      "x": 4,
+      "y": 2,
+      "label": "A"
+     }
+    ],
+    "showCoords": true
+   },
+   "notes": {
+    "answer": "a pair of numbers: across first, then up",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is coordinates. Say it with me: co-or-din-ates."
+     ],
+     [
+      "SAY: Coordinates are a pair of numbers in brackets.",
+      "The first number tells us how far across,",
+      "and the second tells us how far up."
+     ],
+     [
+      "ASK: Which number do we use first, the across number or the up number?",
+      "5 sec. Cue: Everyone, together, on three.",
+      "EXPECT: across"
+     ]
+    ],
+    "trap": [
+     "saying up first.",
+     "Fix: act it out: walk across the corridor,",
+     "then climb the stairs, and they say it again."
+    ],
+    "prep": "The word the whole week depends on. The anchor goes on the board now: across the corridor, then up the stairs.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Read a point",
+   "steps": [
+    "Start at 0, where the two axes meet.",
+    "Go across the bottom to 5.",
+    "Then go up to 3.",
+    "Write it as (5, 3)."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     7
+    ],
+    "y": [
+     0,
+     6
+    ],
+    "points": [
+     {
+      "x": 5,
+      "y": 3,
+      "label": "A"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "A = (5, 3)"
+    ]
+   },
+   "notes": {
+    "answer": "(5, 3)",
+    "beats": [
+     [
+      "POINT to 0.",
+      "SAY: Let me show you how I read where point A is.",
+      "I always start at 0, where the two lines meet."
+     ],
+     [
+      "MODEL across, then up.",
+      "SAY: First I go across the corridor, along the bottom, to 5.",
+      "Then I climb the stairs, up to 3."
+     ],
+     [
+      "ASK: So how would we write the coordinates of A?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (5, 3)"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 5, 3. Across 5, then up 3,",
+      "and the numbers sit where the lines cross, not in a square."
+     ]
+    ],
+    "trap": [
+     "writing (3, 5).",
+     "Fix: walk it again: across the corridor first,",
+     "then up the stairs, and they rewrite it."
+    ],
+    "stretch": "Where would (3, 5) be? Point to it.",
+    "help": "Put a finger on 0 and slide across before you look up.",
+    "prep": "The critical feature: across first, then up, on the lines. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Plot a point",
+   "steps": [
+    "Find 2 on the bottom axis.",
+    "Go up that line to 6.",
+    "Draw a dot where the lines cross.",
+    "Label it B."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     7
+    ],
+    "y": [
+     0,
+     7
+    ],
+    "points": [
+     {
+      "x": 2,
+      "y": 6,
+      "label": "B"
+     },
+     {
+      "x": 6,
+      "y": 2,
+      "label": "C"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "B = (2, 6)",
+     "C = (6, 2)"
+    ]
+   },
+   "notes": {
+    "answer": "C = (6, 2)",
+    "beats": [
+     [
+      "MODEL plotting (2, 6).",
+      "SAY: Now I'll plot a point. My coordinates are 2, 6.",
+      "Across to 2 first, then I follow that line up to 6,",
+      "and I draw a dot."
+     ],
+     [
+      "POINT to C.",
+      "SAY: Now look at C. It uses the same two numbers, the other way round."
+     ],
+     [
+      "ASK: What are the coordinates of C?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (6, 2)"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: C is 6, 2. Swapping the numbers moves the point,",
+      "so the order really matters."
+     ]
+    ],
+    "trap": [
+     "putting the dot in the middle of a square.",
+     "Fix: trace both lines to where they cross, and they redraw it."
+    ],
+    "stretch": "Find a point where swapping the numbers does not move it.",
+    "help": "Use a ruler to follow the line up from the across number.",
+    "prep": "Order matters: (2, 6) and (6, 2) are different places. SC2 and SC3.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which grid shows (3, 1)?",
+   "prompt": "Point to A, B or C",
+   "options": [
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       0,
+       4
+      ],
+      "y": [
+       0,
+       4
+      ],
+      "points": [
+       {
+        "x": 1,
+        "y": 3
+       }
+      ]
+     },
+     "misconception": "goes up first: reads the numbers in the wrong order"
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       0,
+       4
+      ],
+      "y": [
+       0,
+       4
+      ],
+      "points": [
+       {
+        "x": 3,
+        "y": 1
+       }
+      ]
+     }
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       0,
+       4
+      ],
+      "y": [
+       0,
+       4
+      ],
+      "points": [
+       {
+        "x": 3.5,
+        "y": 1.5
+       }
+      ]
+     },
+     "misconception": "puts the point in a square, like a grid reference"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Here are three grids, each with one point.",
+      "Only one of them shows the point 3, 1."
+     ],
+     [
+      "ASK: Which grid shows the point 3, 1?",
+      "10 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What went wrong in C?",
+      "Less -> act it out on the floor grid, across then up, and re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B. Across 3, then up 1,",
+      "and the dot sits where two lines cross."
+     ]
+    ],
+    "trap": [
+     "pointing to C.",
+     "Fix: trace the two lines to where they cross, and they choose again."
+    ],
+    "prep": "First decision point. A means the order is reversed; C means they still think in squares.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "What are the coordinates?",
+   "ask": "What are the coordinates of point P?",
+   "routine": "boards",
+   "thinkTime": 12,
+   "pivot": "slide a finger across, then up, together on the big grid",
+   "followUp": "cold call one board: Which number did you write first, and why?",
+   "items": [
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       0,
+       7
+      ],
+      "y": [
+       0,
+       6
+      ],
+      "points": [
+       {
+        "x": 4,
+        "y": 5,
+        "label": "P"
+       }
+      ]
+     },
+     "answer": "(4, 5)"
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       0,
+       7
+      ],
+      "y": [
+       0,
+       6
+      ],
+      "points": [
+       {
+        "x": 6,
+        "y": 1,
+        "label": "P"
+       }
+      ]
+     },
+     "answer": "(6, 1)"
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       0,
+       7
+      ],
+      "y": [
+       0,
+       6
+      ],
+      "points": [
+       {
+        "x": 3,
+        "y": 0,
+        "label": "P"
+       }
+      ]
+     },
+     "answer": "(3, 0)",
+     "say": "It's 3, 0. It goes across 3, but it doesn't go up at all."
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       0,
+       7
+      ],
+      "y": [
+       0,
+       6
+      ],
+      "points": [
+       {
+        "x": 0,
+        "y": 4,
+        "label": "P"
+       }
+      ]
+     },
+     "answer": "(0, 4)",
+     "say": "It's 0, 4. It doesn't go across at all, then up 4."
+    },
+    {
+     "visual": {
+      "type": "grid",
+      "x": [
+       0,
+       7
+      ],
+      "y": [
+       0,
+       6
+      ],
+      "points": [
+       {
+        "x": 7,
+        "y": 6,
+        "label": "P"
+       }
+      ]
+     },
+     "answer": "(7, 6)"
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write the coordinates of P on your board each time."
+    ],
+    "trap": [
+     "writing (4, 0) for a point on the line going up.",
+     "Fix: ask how far across it goes, and they rewrite it."
+    ],
+    "stretch": "Write the coordinates of the point you would get by swapping the numbers.",
+    "help": "Draw an arrow across, then an arrow up, before you write.",
+    "prep": "Guided practice from typical to edge cases: points on each axis. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Which point is at (0, 3)?",
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     5
+    ],
+    "y": [
+     0,
+     5
+    ],
+    "points": [
+     {
+      "x": 3,
+      "y": 0,
+      "label": "A"
+     },
+     {
+      "x": 0,
+      "y": 3,
+      "label": "B"
+     },
+     {
+      "x": 3,
+      "y": 3,
+      "label": "C"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "B"
+    ]
+   },
+   "notes": {
+    "answer": "B. A means across and up were swapped",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Read the coordinates carefully: across first."
+     ],
+     [
+      "ASK: Which point is at 0, 3? Write its letter.",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: B"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> start at 0, go across 0, then up 3, together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's B. Across 0, so it stays on the line going up,",
+      "then up 3. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing A.",
+     "Fix: ask how far across B goes, and they choose again."
+    ],
+    "prep": "The hinge before independent work. Anyone who wrote A starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Read and plot the points on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Which number did you go along first?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "plotting in the squares.",
+     "Fix: trace both lines to the crossing, and they redraw it."
+    ],
+    "stretch": "Extension: missing corners, coordinate patterns and a puzzle you design.",
+    "help": "Supported Worksheet: every point is talked through, with a hint on each question.",
+    "prep": "Independent practice: read, plot, a map and reasoning. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Write the coordinates of K and of L."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     8
+    ],
+    "y": [
+     0,
+     8
+    ],
+    "points": [
+     {
+      "x": 7,
+      "y": 2,
+      "label": "K"
+     },
+     {
+      "x": 2,
+      "y": 7,
+      "label": "L"
+     }
+    ]
+   },
+   "notes": {
+    "answer": "K (7, 2), L (2, 7)",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What are the coordinates of K, and of L?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: K (7, 2), L (2, 7)"
+     ],
+     [
+      "RECORD who swaps the numbers for K or L.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing K (2, 7).",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: two points that use the same numbers, so order is tested.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner how you remember which number comes first.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for across the corridor, then up the stairs",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can read and write coordinates?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with K and L swapped matters most."
+     ],
+     [
+      "ASK: How do you remember which number comes first?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: across the corridor, then up the stairs"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow's first check comes from both.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

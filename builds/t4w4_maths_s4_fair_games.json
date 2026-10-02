@@ -1,0 +1,1230 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 4,
+  "session": 4,
+  "title": "Fair and Unfair Games",
+  "subtitle": "Term 4 Week 4, Session 4",
+  "meta": "Year 5/6 Maths | Probability",
+  "footer": "Probability | Year 5/6 Maths | Session 4",
+  "outputFolder": "T4W4_Maths_S4_Fair_Games",
+  "fileName": "Session 4 - Fair and Unfair Games.pptx",
+  "titleVisual": {
+   "type": "spinner",
+   "sectors": [
+    {
+     "label": "Amy"
+    },
+    {
+     "label": "Ben"
+    },
+    {
+     "label": "Amy"
+    },
+    {
+     "label": "Ben"
+    }
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Probability, Years 5 and 6 (VC2M5P02, VC2M6P02): compare outcomes with and without equal likelihood, and recognise that the chances of all outcomes add to 1",
+   "shape": "problem-first: the launch game is quietly unfair, so students feel the need to compare chances before the teacher models it",
+   "criticalFeature": "a game is fair only when every player has the same chance; all the chances together add to 1",
+   "decisionPoints": [
+    "the choice check: which game is fair?",
+    "the hinge: is the three-player spinner fair?",
+    "the exit ticket"
+   ],
+   "anchor": "chance = the outcomes we want out of all the equally likely outcomes",
+   "catchUp": "Missed earlier sessions? Write P(red) for one equal spinner with the anchor, then start at the launch."
+  }
+ },
+ "materials": {
+  "manipulatives": [
+   "A dice for every pair",
+   "A coin for every pair (optional)"
+  ],
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: chance = the outcomes we want out of all the equally likely outcomes",
+   "Under it: fair means every player has the same chance"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Decide which games are fair, find missing chances that add to 1, fix a mistake and design a fair game.",
+   "title": "Fair and Unfair Games",
+   "subtitle": "Fair means every player has the same chance. All the chances add to 1.",
+   "sections": [
+    {
+     "title": "Fair or not?",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Coin: A wins on heads, B wins on tails. Fair?",
+      "steps": [
+       "A: 1/2. B: 1/2.",
+       "The chances are equal, so it is fair."
+      ],
+      "answer": "fair"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Write each player's chance, then decide if the game is fair.",
+       "columns": [
+        "Game",
+        "A's chance",
+        "B's chance",
+        "Fair?"
+       ],
+       "rows": [
+        [
+         "Coin: A heads, B tails",
+         "",
+         "",
+         ""
+        ],
+        [
+         "Dice: A 1 or 2, B 5 or 6",
+         "",
+         "",
+         ""
+        ],
+        [
+         "Dice: A even, B 1 or 3",
+         "",
+         "",
+         ""
+        ],
+        [
+         "4-colour spinner: A red, B the rest",
+         "",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "Coin: A heads, B tails",
+         "1/2",
+         "1/2",
+         "fair"
+        ],
+        [
+         "Dice: A 1 or 2, B 5 or 6",
+         "2/6",
+         "2/6",
+         "fair"
+        ],
+        [
+         "Dice: A even, B 1 or 3",
+         "3/6",
+         "2/6",
+         "not fair"
+        ],
+        [
+         "4-colour spinner: A red, B the rest",
+         "1/4",
+         "3/4",
+         "not fair"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Chances add to 1",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "P(red) = 1/2, P(blue) = 1/3. What is P(green)?",
+      "steps": [
+       "All the chances add to 1.",
+       "1/2 + 1/3 = 5/6.",
+       "1 - 5/6 = 1/6."
+      ],
+      "answer": "1/6"
+     },
+     "items": [
+      {
+       "prompt": "Find the missing chance.",
+       "parts": [
+        {
+         "prompt": "1/4, 1/2 and ?",
+         "answer": "1/4"
+        },
+        {
+         "prompt": "0.35, 0.4 and ?",
+         "answer": "0.25"
+        },
+        {
+         "prompt": "45%, 30% and ?",
+         "answer": "25%"
+        },
+        {
+         "prompt": "1/8, 3/8, 1/4 and ?",
+         "answer": "1/4"
+        }
+       ]
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Liam tossed a coin and wrote these relative frequencies. Find his mistake and explain it.",
+       "work": [
+        "Heads 0.6, tails 0.5."
+       ],
+       "answer": "0.6 + 0.5 = 1.1, but heads and tails must add to 1. If heads is 0.6, tails is 0.4."
+      }
+     ]
+    },
+    {
+     "title": "Design a fair game",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "Make a dice game fair for 2 players.",
+      "steps": [
+       "There are 6 outcomes.",
+       "Give each player 3 of them.",
+       "A on 1, 2, 3; B on 4, 5, 6."
+      ],
+      "answer": "3 outcomes each"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Design a fair dice game for 3 players. Say which numbers win for each player, and show each player's chance.",
+       "answer": "Each player wins on 2 numbers, for example A 1, 2; B 3, 4; C 5, 6. Each chance is 2/6 = 1/3."
+      },
+      {
+       "kind": "choice",
+       "prompt": "A footy coach spins a spinner numbered 1 to 8. Jack starts on 1 to 5, Liv on 6 to 8. Which change makes it fair?",
+       "options": [
+        "Jack 1 to 4, Liv 5 to 8",
+        "Liv spins first",
+        "Use two spinners"
+       ],
+       "answer": 0,
+       "reason": true,
+       "explain": "Then each has 4 of the 8 outcomes: 4/8 each."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Unusual dice, rock paper scissors and two-dice games, with worked examples.",
+   "title": "Extension: Tricky Games",
+   "subtitle": "List every outcome, then compare.",
+   "sections": [
+    {
+     "title": "Unusual dice",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "A dice has faces 1, 1, 2, 3, 4, 5. What is P(1)?",
+      "steps": [
+       "6 faces, all equally likely.",
+       "Two faces show 1.",
+       "P(1) = 2/6 = 1/3."
+      ],
+      "answer": "1/3"
+     },
+     "items": [
+      {
+       "prompt": "A dice has faces 2, 2, 2, 4, 6, 6. What is P(2)? What is P(an odd number)?",
+       "parts": [
+        {
+         "prompt": "P(2)",
+         "answer": "3/6 = 1/2"
+        },
+        {
+         "prompt": "P(odd)",
+         "answer": "0 (impossible)"
+        }
+       ]
+      },
+      {
+       "prompt": "With that dice, Ana wins on a 2 and Raf wins on a 6. Is it fair? Explain.",
+       "answer": "Not fair: Ana 3/6, Raf 2/6.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Rock, paper, scissors",
+     "proficiency": "reasoning",
+     "columns": 1,
+     "example": {
+      "prompt": "How many outcomes are there when two players play rock, paper, scissors?",
+      "steps": [
+       "Each player has 3 choices.",
+       "3 × 3 = 9 outcomes.",
+       "List them in a table."
+      ],
+      "answer": "9"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Fill in who wins: Player 1, Player 2 or draw.",
+       "columns": [
+        "Player 1 \\ Player 2",
+        "rock",
+        "paper",
+        "scissors"
+       ],
+       "rows": [
+        [
+         "rock",
+         "draw",
+         "",
+         ""
+        ],
+        [
+         "paper",
+         "",
+         "",
+         ""
+        ],
+        [
+         "scissors",
+         "",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "rock",
+         "draw",
+         "P2",
+         "P1"
+        ],
+        [
+         "paper",
+         "P1",
+         "draw",
+         "P2"
+        ],
+        [
+         "scissors",
+         "P2",
+         "P1",
+         "draw"
+        ]
+       ]
+      },
+      {
+       "prompt": "Is rock, paper, scissors fair? Use the table to explain.",
+       "answer": "Yes: each player wins 3 of the 9 outcomes, and 3 are draws.",
+       "lines": 2
+      }
+     ]
+    },
+    {
+     "title": "Two-dice game",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Two dice: how many ways to total 7?",
+      "steps": [
+       "(1,6), (2,5), (3,4), (4,3), (5,2), (6,1).",
+       "6 ways out of 36."
+      ],
+      "answer": "6/36"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Two dice are added. Mia wins on a total of 7. Sam wins on a total of 2, 3 or 12. Is it fair? If not, change Sam's totals to make it fair.",
+       "answer": "Not fair: Mia 6/36; Sam 4/36 (total 2: 1 way, 3: 2 ways, 12: 1 way). Fair fix: Sam wins on 2, 3, 11 or 12, which is 1 + 2 + 2 + 1 = 6/36."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: spinners to count, a same-or-different check, and a hint on every question.",
+   "title": "Fair Games: Step by Step",
+   "subtitle": "Write each player's chance. Are they the same?",
+   "sections": [
+    {
+     "title": "Same chance?",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Red for Amy, blue for Ben. Fair?",
+      "visual": {
+       "type": "spinner",
+       "sectors": [
+        {
+         "label": "red"
+        },
+        {
+         "label": "blue"
+        },
+        {
+         "label": "red"
+        },
+        {
+         "label": "blue"
+        }
+       ]
+      },
+      "steps": [
+       "Amy: 2 of 4 parts. Ben: 2 of 4 parts.",
+       "Same chance: fair."
+      ],
+      "answer": "fair"
+     },
+     "items": [
+      {
+       "prompt": "Red for Amy, blue for Ben. Amy ___/___, Ben ___/___. Fair?",
+       "visual": {
+        "type": "spinner",
+        "sectors": [
+         {
+          "label": "red",
+          "weight": 2
+         },
+         {
+          "label": "blue"
+         }
+        ],
+        "maxH": 170
+       },
+       "hint": "Count the equal parts: red takes 2 of 3.",
+       "answer": "Amy 2/3, Ben 1/3: not fair",
+       "working": "none"
+      },
+      {
+       "prompt": "Red for Amy, blue for Ben. Amy ___/___, Ben ___/___. Fair?",
+       "visual": {
+        "type": "spinner",
+        "sectors": [
+         {
+          "label": "red"
+         },
+         {
+          "label": "blue"
+         },
+         {
+          "label": "green"
+         },
+         {
+          "label": "red"
+         },
+         {
+          "label": "blue"
+         },
+         {
+          "label": "green"
+         }
+        ],
+        "maxH": 170
+       },
+       "hint": "Green wins for nobody.",
+       "answer": "Amy 2/6, Ben 2/6: fair",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Add to 1",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Heads 1/2. Tails?",
+      "steps": [
+       "Heads and tails make 1 whole.",
+       "1 - 1/2 = 1/2."
+      ],
+      "answer": "1/2"
+     },
+     "items": [
+      {
+       "prompt": "P(red) = 3/4. P(not red) = ?",
+       "hint": "3/4 and ? make 4/4.",
+       "answer": "1/4",
+       "answerLabel": "P(not red) ="
+      },
+      {
+       "prompt": "Red came up 0.7 of the time. Not red?",
+       "hint": "0.7 and ? make 1.",
+       "answer": "0.3",
+       "answerLabel": "Not red:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 4 of our probability week: today we decide whether games of chance are fair."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards, markers and a dice per pair on desks. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Translate a point",
+   "from": "teacher",
+   "prompts": [
+    "(1, -2) moves 3 left and 4 up. Where does it land?"
+   ],
+   "reveal": {
+    "answers": [
+     "(-2, 2)"
+    ]
+   },
+   "notes": {
+    "answer": "(-2, 2)",
+    "beats": [
+     [
+      "SAY: Let's warm up with coordinates, percentages and graphs."
+     ],
+     [
+      "ASK: If 1, negative 2 moves 3 left and 4 up, where does it land?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (-2, 2)"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> do one move at a time on the four-quadrant grid. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 1 take away 3 is negative 2,",
+      "and negative 2 add 4 is 2. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (4, 2).",
+     "Fix: ask which way left goes, and they redo the first number."
+    ],
+    "prep": "Review of Week 2 coordinates (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Percentage of an amount",
+   "from": "teacher",
+   "prompts": [
+    "What is 40% of 35?"
+   ],
+   "reveal": {
+    "answers": [
+     "14"
+    ]
+   },
+   "notes": {
+    "answer": "14",
+    "beats": [
+     [
+      "ASK: What is 40 percent of 35?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 14"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> find 10 percent first, 3.5, then times 4. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 10 percent of 35 is 3.5,",
+      "so 40 percent is 14. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 75 or 40.",
+     "Fix: find 10 percent first, and they multiply by 4."
+    ],
+    "prep": "Term 3 review: percentage of an amount.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Read the line graph",
+   "from": "teacher",
+   "prompts": [
+    "Which day was warmest? How much warmer than Monday?"
+   ],
+   "visual": {
+    "type": "chart",
+    "style": "line",
+    "categories": [
+     "Mon",
+     "Tue",
+     "Wed",
+     "Thu",
+     "Fri"
+    ],
+    "values": [
+     18,
+     22,
+     25,
+     21,
+     19
+    ],
+    "title": "Temperature at noon",
+    "yLabel": "Degrees"
+   },
+   "reveal": {
+    "answers": [
+     "Wednesday",
+     "7 degrees warmer"
+    ]
+   },
+   "notes": {
+    "answer": "Wednesday and 7 degrees warmer",
+    "beats": [
+     [
+      "ASK: Which day was warmest, and how much warmer was it than Monday?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: Wednesday, 7 degrees"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> lay a ruler across the highest point and read the scale. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Wednesday was 25 degrees, 7 warmer than Monday's 18. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "reading the wrong day.",
+     "Fix: trace up from each day to the line, and they read again."
+    ],
+    "prep": "Week 3 review: reading a line graph.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "7 × 4"
+   ],
+   "reveal": {
+    "answers": [
+     "28"
+    ]
+   },
+   "notes": {
+    "answer": "28",
+    "beats": [
+     [
+      "SAY: Now for our seven times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 7 times 4?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 28"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> double 7, then double again. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 28. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 24 or 32.",
+     "Fix: double 7 to get 14, double again to get 28, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "84 ÷ 7"
+   ],
+   "reveal": {
+    "answers": [
+     "12"
+    ]
+   },
+   "notes": {
+    "answer": "12",
+    "beats": [
+     [
+      "SAY: Now a division. How many sevens make 84?"
+     ],
+     [
+      "ASK: What is 84 divided by 7?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 12"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 10 sevens is 70, then count on in sevens. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 12. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 11.",
+     "Fix: check: 11 sevens is 77, one more is 84, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "7 × 25"
+   ],
+   "reveal": {
+    "answers": [
+     "175"
+    ]
+   },
+   "notes": {
+    "answer": "175",
+    "beats": [
+     [
+      "SAY: And a big one to finish."
+     ],
+     [
+      "ASK: What is 7 times 25?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 175"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> think of 7 lots of 25 cents. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 175. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 150.",
+     "Fix: 4 twenty-fives is 100, 3 more is 75, add them, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to decide whether a game of chance is fair.",
+   "successCriteria": [
+    "I can list the outcomes of a game and who wins each one.",
+    "I can decide whether a game is fair by comparing each player's chance.",
+    "I can design a fair game and explain why it is fair."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: This week we've worked out chances and tested them.",
+      "Today we use chance to decide whether a game is fair."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 listing outcomes is reachable for everyone; SC2 comparing chances is the core and the exit evidence; SC3 designing a fair game is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Would you play this game?",
+   "lines": [
+    "Roll a dice.",
+    "Player A wins on 1 or 2. Player B wins on 3, 4, 5 or 6."
+   ],
+   "notes": {
+    "answer": "not fair: B has 4/6, A has 2/6",
+    "beats": [
+     [
+      "POINT to the rules.",
+      "SAY: Here's a dice game for two players. Read the rules with me."
+     ],
+     [
+      "ASK: Is this game fair? Thumbs up for fair, down for not fair.",
+      "10 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs down"
+     ],
+     [
+      "ASK: Tell your partner which player you would rather be, and why.",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: B: four numbers win, A only has two"
+     ],
+     [
+      "SAY: B wins on 4 of the 6 outcomes, but A only wins on 2.",
+      "So it isn't fair. Today we learn to check any game, exactly."
+     ]
+    ],
+    "trap": [
+     "saying fair because there are two players.",
+     "Fix: count the winning numbers for each player, and they decide again."
+    ],
+    "prep": "Problem-first: the unfair game shows the need to compare chances. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "fair",
+   "meaning": "Every player has the same chance of winning.",
+   "example": "Heads for me, tails for you is fair: 1/2 each.",
+   "pictogram": "scales",
+   "notes": {
+    "answer": "every player has the same chance",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: In maths, fair has an exact meaning. Say it with me: fair."
+     ],
+     [
+      "SAY: A game is fair when every player has the same chance of winning.",
+      "The scales balance."
+     ],
+     [
+      "ASK: Is 'heads for me, tails for you' fair? Thumbs up or down.",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up"
+     ]
+    ],
+    "trap": [
+     "thinking fair means everyone wins sometimes.",
+     "Fix: compare the two chances, and they check again."
+    ],
+    "prep": "Fair means equal chances, not 'it feels fine'.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Is the game fair?",
+   "steps": [
+    "List the outcomes: 1, 2, 3, 4, 5, 6.",
+    "A wins on 2, 4, 6: 3/6.",
+    "B wins on 1, 3, 5: 3/6.",
+    "Equal chances, so it is fair."
+   ],
+   "visual": {
+    "type": "text",
+    "text": "Dice game: A wins on an even number. B wins on an odd number."
+   },
+   "reveal": {
+    "answers": [
+     "fair: 3/6 each"
+    ]
+   },
+   "notes": {
+    "answer": "fair, 3/6 each",
+    "beats": [
+     [
+      "MODEL listing the outcomes.",
+      "SAY: To check a game, I list every outcome first:",
+      "1, 2, 3, 4, 5 and 6."
+     ],
+     [
+      "MODEL sorting them by winner.",
+      "SAY: A wins on the even numbers, 2, 4 and 6.",
+      "B wins on 1, 3 and 5.",
+      "That's 3 out of 6 each."
+     ],
+     [
+      "ASK: Is this game fair? Write yes or no, and each chance.",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: yes, 3/6 each"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Yes, it's fair: 3 sixths each.",
+      "Same chance, fair game."
+     ]
+    ],
+    "trap": [
+     "judging by how many players there are.",
+     "Fix: list the outcomes for each player, and they compare."
+    ],
+    "stretch": "Change one rule to make it unfair for B.",
+    "help": "Write A or B under each number from 1 to 6.",
+    "prep": "List, sort, compare: the routine for any game. SC1 and SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "All the chances add to 1",
+   "steps": [
+    "P(red) = 3/6.",
+    "P(blue) = 1/6. P(green) = 2/6.",
+    "3/6 + 1/6 + 2/6 = 6/6 = 1.",
+    "Together, the outcomes are certain: 1."
+   ],
+   "visual": {
+    "type": "spinner",
+    "sectors": [
+     {
+      "label": "red",
+      "weight": 3
+     },
+     {
+      "label": "blue"
+     },
+     {
+      "label": "green",
+      "weight": 2
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "green = 0.25"
+    ]
+   },
+   "notes": {
+    "answer": "0.25",
+    "beats": [
+     [
+      "POINT to each colour.",
+      "SAY: Red is 3 of 6 equal parts, blue is 1, and green is 2."
+     ],
+     [
+      "MODEL adding the chances.",
+      "SAY: When I add all the chances, I get 6 sixths, which is 1.",
+      "Something has to happen, so all the chances together are certain."
+     ],
+     [
+      "ASK: The same is true for results. Red came up 0.45 and blue 0.3.",
+      "What was green?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 0.25"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 0.45 and 0.3 make 0.75, so green is 0.25.",
+      "Everything adds to 1."
+     ]
+    ],
+    "trap": [
+     "adding to 100 with decimals.",
+     "Fix: say decimals add to 1, and they redo it."
+    ],
+    "stretch": "Write a spinner where the chances are 1/2, 1/3 and 1/6.",
+    "help": "Count the equal parts and check they make the whole.",
+    "prep": "Chances and relative frequencies add to 1. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which game is fair?",
+   "prompt": "Point to A, B or C",
+   "options": [
+    {
+     "text": "Spinner, half red, half blue. Red wins for Amy, blue for Ben."
+    },
+    {
+     "text": "Dice. Amy wins on 1 to 4, Ben on 5 or 6.",
+     "misconception": "thinks two players means 50/50, without counting outcomes"
+    },
+    {
+     "text": "Equal spinner: red, blue, green. Amy wins red, Ben wins blue or green.",
+     "misconception": "only checks that each player has a colour"
+    }
+   ],
+   "answer": 0,
+   "notes": {
+    "answer": "A",
+    "beats": [
+     [
+      "SAY: Work out each player's chance before you choose."
+     ],
+     [
+      "ASK: Which game is fair?",
+      "20 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to A"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: Ben's chance in B?",
+      "Less -> write each player's chance for B and C on the board. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's A: one half each. In B, Amy has 4/6 and Ben 2/6.",
+      "In C, Ben has 2/3 and Amy only 1/3."
+     ]
+    ],
+    "trap": [
+     "pointing to B.",
+     "Fix: list who wins on each dice number, and they choose again."
+    ],
+    "prep": "First decision point. B: two players assumed to be 50/50; C: one colour each assumed to be fair.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Fair or unfair?",
+   "ask": "Is it fair? Write F or U, and each player's chance.",
+   "routine": "boards",
+   "thinkTime": 20,
+   "pivot": "list the outcomes and write the winner under each one",
+   "followUp": "cold call one board: How did you compare?",
+   "items": [
+    {
+     "text": "Coin: heads Mia, tails Sam.",
+     "answer": "F: 1/2 each"
+    },
+    {
+     "text": "Dice: Mia wins on 6, Sam wins on 1.",
+     "answer": "F: 1/6 each",
+     "say": "Fair: 1/6 each, even though most rolls nobody wins."
+    },
+    {
+     "text": "Dice: Mia wins on 2, 3 or 5. Sam on 1, 4 or 6.",
+     "answer": "F: 3/6 each"
+    },
+    {
+     "visual": {
+      "type": "spinner",
+      "sectors": [
+       {
+        "label": "red",
+        "weight": 2
+       },
+       {
+        "label": "blue"
+       }
+      ]
+     },
+     "label": "Red Mia, blue Sam.",
+     "answer": "U: Mia 2/3, Sam 1/3"
+    },
+    {
+     "text": "Two coins: Mia wins on two heads, Sam on one of each.",
+     "answer": "U: Mia 1/4, Sam 2/4",
+     "say": "Unfair: HT and TH both win for Sam, so 2/4 against 1/4."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's check some games together.",
+     "Write F or U, and each chance, on your board."
+    ],
+    "trap": [
+     "calling a game unfair when nobody wins some outcomes.",
+     "Fix: compare only the players' chances, and they decide again."
+    ],
+    "stretch": "Fix each unfair game in the smallest way.",
+    "help": "Write the winner under each outcome first.",
+    "prep": "Guided practice, including fair with non-winning outcomes and a two-coin game. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Is this game fair?",
+   "visual": {
+    "type": "spinner",
+    "sectors": [
+     {
+      "label": "Amy",
+      "weight": 3
+     },
+     {
+      "label": "Ben",
+      "weight": 3
+     },
+     {
+      "label": "Cal",
+      "weight": 2
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "Not fair: Amy 3/8, Ben 3/8, Cal 2/8"
+    ]
+   },
+   "notes": {
+    "answer": "not fair: Cal 2/8, others 3/8",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Each person wins on their own part of the spinner."
+     ],
+     [
+      "ASK: Is this three-player game fair? Write yes or no, and Cal's chance.",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: no, Cal 2/8"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> split the spinner into 8 equal parts and count each name. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Not fair. Amy and Ben have 3 eighths, but Cal only has 2.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "saying fair because each has a part.",
+     "Fix: split into equal parts and count, and they decide again."
+    ],
+    "prep": "The hinge before independent work. Anyone saying fair starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Decide which games are fair and design your own on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: What is each player's chance?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "judging a game without counting outcomes.",
+     "Fix: list the outcomes and winners, and they redo it."
+    ],
+    "stretch": "Extension: unusual dice, rock paper scissors and a two-dice game.",
+    "help": "Supported Worksheet: spinners to count, a same-or-different check and hints.",
+    "prep": "Independent practice: fair or not, chances adding to 1, a mistake and designing a fair game. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Is this dice game fair? Give each player's chance."
+   ],
+   "visual": {
+    "type": "text",
+    "text": "Jo wins on 1, 2 or 3. Pat wins on 4 or 5. A 6 means roll again."
+   },
+   "notes": {
+    "answer": "not fair: Jo 3/6, Pat 2/6",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: Is this dice game fair? Give each player's chance.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: not fair: Jo 3/6, Pat 2/6"
+     ],
+     [
+      "RECORD who calls it fair or cannot give the chances.",
+      "Their names go to next week's catch-up group."
+     ]
+    ],
+    "trap": [
+     "saying fair.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2 across the week: compare two chances in a new game.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner how to check whether a game is fair.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for list the outcomes and compare each player's chance",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can decide whether a game is fair?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 'fair' on the exit board matters most."
+     ],
+     [
+      "ASK: How do you check whether a game is fair?",
+      "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: list the outcomes and compare each player's chance"
+     ]
+    ],
+    "prep": "Week close: read the self-assessment beside the exit evidence for next week's review.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1230 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 3,
+  "session": 1,
+  "title": "Asking Fair Statistical Questions",
+  "subtitle": "Term 4 Week 3, Session 1",
+  "meta": "Year 5/6 Maths | Statistics",
+  "footer": "Statistics | Year 5/6 Maths | Session 1",
+  "outputFolder": "T4W3_Maths_S1_Fair_Questions",
+  "fileName": "Session 1 - Asking Fair Statistical Questions.pptx",
+  "titleVisual": {
+   "type": "pictogram",
+   "name": "question"
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Statistics, Years 5 and 6 (VC2M5ST03, VC2M6ST03): plan statistical investigations by posing and refining questions, including survey questions that are objective and balanced",
+   "shape": "compare-two-models: an unfair survey question beside a fair one, because spotting what makes a question fair is the new idea",
+   "criticalFeature": "a fair survey question does not push people towards an answer, and every person has a choice that fits",
+   "decisionPoints": [
+    "the choice check: which survey question is fair?",
+    "the hinge: what needs fixing?",
+    "the exit ticket"
+   ],
+   "anchor": "ask, collect, show, tell: every investigation starts with a fair question and ends with what the data shows"
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: ask, collect, show, tell",
+   "Two columns headed Fair and Unfair, for sorting questions during the I Do"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Sort statistical questions, categorical or numerical, fix unfair questions, and plan a canteen survey.",
+   "title": "Asking Fair Statistical Questions",
+   "subtitle": "A fair question does not push, and has a choice for everyone.",
+   "sections": [
+    {
+     "title": "Which questions need data?",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Is 'How many pets do our families have?' a statistical question?",
+      "steps": [
+       "Ask: would different people give different answers?",
+       "Yes, families have different numbers of pets.",
+       "So we need to collect data."
+      ],
+      "answer": "Yes, it is statistical."
+     },
+     "items": [
+      {
+       "kind": "sort",
+       "prompt": "Sort the questions. Do the answers vary, or is there only one answer?",
+       "cards": [
+        "How old is our principal?",
+        "What is everyone's favourite fruit?",
+        "How tall is the flagpole?",
+        "How many students walk to school?",
+        "What day is it today?",
+        "How long do students read each night?"
+       ],
+       "groups": [
+        "answers vary (statistical)",
+        "only one answer"
+       ],
+       "answer": {
+        "answers vary (statistical)": [
+         "What is everyone's favourite fruit?",
+         "How many students walk to school?",
+         "How long do students read each night?"
+        ],
+        "only one answer": [
+         "How old is our principal?",
+         "How tall is the flagpole?",
+         "What day is it today?"
+        ]
+       }
+      },
+      {
+       "kind": "table",
+       "prompt": "Will the answers be categorical (words or groups) or numerical (numbers)? Write C or N.",
+       "columns": [
+        "Survey question",
+        "C or N"
+       ],
+       "rows": [
+        [
+         "How many books did you read this term?",
+         ""
+        ],
+        [
+         "What is your favourite season?",
+         ""
+        ],
+        [
+         "How tall are you?",
+         ""
+        ],
+        [
+         "Which pet would you most like?",
+         ""
+        ],
+        [
+         "How many minutes do you read each night?",
+         ""
+        ],
+        [
+         "What colour is your bike?",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "How many books did you read this term?",
+         "N"
+        ],
+        [
+         "What is your favourite season?",
+         "C"
+        ],
+        [
+         "How tall are you?",
+         "N"
+        ],
+        [
+         "Which pet would you most like?",
+         "C"
+        ],
+        [
+         "How many minutes do you read each night?",
+         "N"
+        ],
+        [
+         "What colour is your bike?",
+         "C"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Fix the question",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Fix: 'Wouldn't a longer lunch be great?'",
+      "steps": [
+       "Find the push: 'Wouldn't... be great' wants a yes.",
+       "Remove the push.",
+       "Give choices for everyone."
+      ],
+      "answer": "How long should lunch be: 30, 40, 50 minutes or other?"
+     },
+     "items": [
+      {
+       "kind": "mistake",
+       "prompt": "Liam wrote this survey question. Find the problem and fix it.",
+       "work": [
+        "Don't you love our new playground?"
+       ],
+       "answer": "It pushes people to say yes. Fair: What do you think of the new playground? love it / like it / not sure / do not like it."
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Ava gave these choices. Find the problem and fix it.",
+       "work": [
+        "How many hours of screen time each day?",
+        "0 to 1, 1 to 2, 2 to 3"
+       ],
+       "answer": "The choices overlap (1 and 2 are in two boxes) and miss more than 3. Fix: 0, 1, 2, 3, more than 3 hours."
+      }
+     ]
+    },
+    {
+     "title": "Plan a survey",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "The library wants to know which books to buy. Plan the question.",
+      "steps": [
+       "Decide what you need to know: favourite type of book.",
+       "Write it without a push.",
+       "Give choices for everyone, including other."
+      ],
+      "answer": "What type of book do you like most: adventure, funny, mystery, fact books or other?"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "The canteen wants to sell a new lunch. Write a fair survey question with choices for everyone. Say who you would ask, and whether the answers will be categorical or numerical.",
+       "answer": "For example: Which new lunch would you most like: wraps, pasta, sushi, soup or other? Ask students from every year level. Categorical: the answers are foods."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Who to ask, choices with no gaps or overlaps, and designing your own two-question survey, with worked examples.",
+   "title": "Extension: Survey Detectives",
+   "subtitle": "A fair survey asks fair questions of the right people.",
+   "sections": [
+    {
+     "title": "Who should we ask?",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "To find the school's favourite sport, Sam asks only the netball team. Is that fair?",
+      "steps": [
+       "Think about who was asked.",
+       "Netball players are more likely to choose netball.",
+       "Not fair: ask students from every class."
+      ],
+      "answer": "Not fair"
+     },
+     "items": [
+      {
+       "prompt": "To find out how students get to school, Jade asks only the students in the bike shed. Is that fair? Explain.",
+       "answer": "Not fair: everyone in the bike shed rides a bike. Ask students from all over the school.",
+       "lines": 3
+      },
+      {
+       "prompt": "To find the class's favourite fruit, Omar asks every student in the class. Is that fair? Explain.",
+       "answer": "Fair: everyone in the class is asked, so every answer counts.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "No gaps, no overlaps",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Fix the choices 0 to 5, 5 to 10 pets.",
+      "steps": [
+       "5 is in two boxes: an overlap.",
+       "More than 10 has no box: a gap.",
+       "0 to 4, 5 to 9, 10 or more."
+      ],
+      "answer": "0 to 4, 5 to 9, 10 or more"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Each set of choices has a problem. Name it and write a fixed set.",
+       "columns": [
+        "Choices",
+        "Problem",
+        "Fixed choices"
+       ],
+       "rows": [
+        [
+         "1 to 3, 3 to 6 books",
+         "",
+         ""
+        ],
+        [
+         "0 to 10, 20 to 30 minutes",
+         "",
+         ""
+        ],
+        [
+         "under 5, over 5 km",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "1 to 3, 3 to 6 books",
+         "3 is in both; nothing over 6",
+         "1 to 3, 4 to 6, 7 or more"
+        ],
+        [
+         "0 to 10, 20 to 30 minutes",
+         "gap: 11 to 19 missing",
+         "0 to 10, 11 to 20, 21 to 30, more than 30"
+        ],
+        [
+         "under 5, over 5 km",
+         "exactly 5 has no box",
+         "under 5, 5 or more km"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Design a survey",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Design two questions about weekend sport.",
+      "steps": [
+       "One categorical: Which sport do you play most?",
+       "One numerical: How many hours of sport do you play?",
+       "Check both are fair."
+      ],
+      "answer": "two fair questions"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Design a two-question survey about a topic you choose: one categorical question and one numerical question. Give fair choices for both.",
+       "answer": "Check: one question has word answers, one has number answers; no pushing words; choices have no gaps or overlaps and include everyone."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: pushing words to circle, one missing choice at a time, and a hint on every question.",
+   "title": "Fair Questions: Step by Step",
+   "subtitle": "Look for the push. Check the choices.",
+   "sections": [
+    {
+     "title": "Circle the push",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Circle the pushing words: 'Isn't maths the best subject?'",
+      "steps": [
+       "Read it aloud.",
+       "'Isn't... the best' wants you to say yes.",
+       "Circle 'Isn't' and 'the best'."
+      ],
+      "answer": "Isn't, the best"
+     },
+     "items": [
+      {
+       "prompt": "Circle the pushing words: 'Don't you agree dogs are better than cats?'",
+       "hint": "Which words want you to say yes?",
+       "answer": "Don't you agree, better",
+       "answerLabel": "Push words:"
+      },
+      {
+       "prompt": "Circle the pushing words: 'Surely homework is boring?'",
+       "hint": "Look at the first word.",
+       "answer": "Surely, boring",
+       "answerLabel": "Push words:"
+      }
+     ]
+    },
+    {
+     "title": "Add a choice",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "'What is your favourite pet? dog / cat' needs another choice.",
+      "steps": [
+       "Some people like fish or birds.",
+       "Add 'other' so everyone can answer."
+      ],
+      "answer": "dog / cat / other"
+     },
+     "items": [
+      {
+       "prompt": "'Which season do you like best? summer / winter' Add the missing choices.",
+       "hint": "There are four seasons.",
+       "answer": "autumn, spring",
+       "answerLabel": "Add:"
+      },
+      {
+       "prompt": "'How do you get to school? walk / car' Add choices so everyone fits.",
+       "hint": "Think of bikes and buses.",
+       "answer": "bus, bike, other",
+       "answerLabel": "Add:"
+      }
+     ]
+    },
+    {
+     "title": "Categorical or numerical?",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "'How many brothers do you have?' C or N?",
+      "steps": [
+       "The answers are numbers: 0, 1, 2...",
+       "Numbers mean numerical."
+      ],
+      "answer": "N"
+     },
+     "items": [
+      {
+       "prompt": "'What is your favourite colour?' C or N?",
+       "hint": "Are the answers words or numbers?",
+       "answer": "C",
+       "answerLabel": "C or N:",
+       "working": "none"
+      },
+      {
+       "prompt": "'How many minutes do you walk each day?' C or N?",
+       "hint": "Are the answers words or numbers?",
+       "answer": "N",
+       "answerLabel": "C or N:",
+       "working": "none"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 1 of our statistics week: today we learn to ask fair questions."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Read a point",
+   "from": "teacher",
+   "prompts": [
+    "What are the coordinates of B?"
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     7
+    ],
+    "y": [
+     0,
+     6
+    ],
+    "points": [
+     {
+      "x": 6,
+      "y": 2,
+      "label": "B"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "(6, 2)"
+    ]
+   },
+   "notes": {
+    "answer": "(6, 2)",
+    "beats": [
+     [
+      "SAY: Let's warm up with last week's coordinates."
+     ],
+     [
+      "ASK: What are the coordinates of B?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (6, 2)"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> slide across, then up, together on the big grid. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 6, 2. Across first, then up. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (2, 6).",
+     "Fix: say the anchor, across the corridor, then up the stairs, and they rewrite it."
+    ],
+    "prep": "Review of Week 2 coordinates (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Which quadrant?",
+   "from": "teacher",
+   "prompts": [
+    "Which quadrant is (-3, 4) in?"
+   ],
+   "reveal": {
+    "answers": [
+     "second quadrant"
+    ]
+   },
+   "notes": {
+    "answer": "second quadrant",
+    "beats": [
+     [
+      "ASK: Which quadrant is the point negative 3, 4 in?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: the second"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> say left or right, then up or down,",
+      "and trace it on the four-quadrant grid. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's the second quadrant: 3 left and 4 up. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "saying the third.",
+     "Fix: ask whether 4 is up or down, and they rename it."
+    ],
+    "prep": "Week 2 review: the four quadrants.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Angles on a line",
+   "from": "teacher",
+   "prompts": [
+    "Find x."
+   ],
+   "visual": {
+    "type": "angle",
+    "rays": [
+     0,
+     143,
+     180
+    ],
+    "arcs": [
+     {
+      "from": 0,
+      "to": 143,
+      "label": "143°"
+     },
+     {
+      "from": 143,
+      "to": 180,
+      "label": "x"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "x = 37°"
+    ]
+   },
+   "notes": {
+    "answer": "x = 37°",
+    "beats": [
+     [
+      "ASK: How big is angle x?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 37"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> trace the straight line, say 180, then subtract. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 37 degrees, because 180 take away 143 is 37.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 53, from 90.",
+     "Fix: trace the straight line, and they redo it from 180."
+    ],
+    "prep": "Week 1 review: angles on a straight line.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Subtract with the written method: 3 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     702,
+     358
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "344"
+    ]
+   },
+   "notes": {
+    "answer": "344",
+    "beats": [
+     [
+      "SAY: Now for some written subtraction.",
+      "Line up the places, and always start with the ones."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 344"
+     ],
+     [
+      "SCAN boards for the regrouped columns.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 344.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one in every column.",
+     "Fix: ask \"Is the top digit big enough?\", and they regroup and redo it."
+    ],
+    "prep": "Subtraction fluency: 3 digits, then 4, then 5. Keep the whole block under 6 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Subtract with the written method: 4 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     6003,
+     2748
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "3 255"
+    ]
+   },
+   "notes": {
+    "answer": "3 255",
+    "beats": [
+     [
+      "SAY: Now it's 4 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 3 255"
+     ],
+     [
+      "SCAN boards for the regrouped columns.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 3 255.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one in every column.",
+     "Fix: ask \"Is the top digit big enough?\", and they regroup and redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Subtract with the written method: 5 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     50214,
+     27856
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "22 358"
+    ]
+   },
+   "notes": {
+    "answer": "22 358",
+    "beats": [
+     [
+      "SAY: Now it's 5 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 22 358"
+     ],
+     [
+      "SCAN boards for the regrouped columns.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 22 358.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one in every column.",
+     "Fix: ask \"Is the top digit big enough?\", and they regroup and redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to write fair questions for a statistical investigation.",
+   "successCriteria": [
+    "I can tell whether a question needs data to answer it.",
+    "I can write a survey question that is fair and has a choice for everyone.",
+    "I can explain whether the answers will be categorical or numerical."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: This week we're running our own statistical investigation.",
+      "It starts with asking a good question."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 spotting a statistical question is reachable for everyone; SC2 writing a fair question is the core and the exit evidence; SC3 categorical and numerical is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Which question needs data?",
+   "lines": [
+    "How tall is our classroom door?",
+    "How do students in our class get to school?"
+   ],
+   "notes": {
+    "answer": "the second: answers vary from person to person",
+    "beats": [
+     [
+      "POINT to each question.",
+      "SAY: Here are two questions.",
+      "One has a single answer,",
+      "and the other needs lots of answers from lots of people."
+     ],
+     [
+      "ASK: Which question needs us to collect data from lots of people?",
+      "Show one or two fingers.",
+      "10 sec. Cue: Fingers at your chest... show me.",
+      "EXPECT: two fingers"
+     ],
+     [
+      "SCAN fingers.",
+      "80%+ -> cold call one student: Why does it need lots of answers?",
+      "Less -> ask: if I asked five people about the door,",
+      "would their answers differ? Re-ask."
+     ],
+     [
+      "SAY: The second one is a statistical question, because the answers vary.",
+      "Today we'll learn to ask questions like that fairly."
+     ]
+    ],
+    "trap": [
+     "choosing the door question.",
+     "Fix: ask whether everyone would give a different answer, and they choose again."
+    ],
+    "prep": "The launch comes after the LI: a statistical question has answers that vary. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "bias",
+   "meaning": "When a question or survey pushes people towards one answer.",
+   "example": "\"Don't you agree footy is the best?\" has bias.",
+   "pictogram": "scales",
+   "notes": {
+    "answer": "a push towards one answer",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is bias. Say it with me: bi-as."
+     ],
+     [
+      "SAY: A question has bias when it pushes people towards one answer.",
+      "The scales are tipped before anyone answers."
+     ],
+     [
+      "ASK: Does 'What is your favourite sport?' have bias?",
+      "Thumbs up for yes, down for no.",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs down"
+     ]
+    ],
+    "trap": [
+     "thinking any question about a favourite is biased.",
+     "Fix: ask which words push, and they check again."
+    ],
+    "prep": "Bias is today's key idea; unfair and pushing are fine in speech.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Spot the push",
+   "steps": [
+    "Read the question aloud.",
+    "Find the pushing words: Don't you agree, the best.",
+    "Take them out.",
+    "Ask it fairly."
+   ],
+   "visual": {
+    "type": "text",
+    "text": "Don't you agree that footy is the best sport?"
+   },
+   "reveal": {
+    "answers": [
+     "What is your favourite sport?"
+    ]
+   },
+   "notes": {
+    "answer": "What is your favourite sport?",
+    "beats": [
+     [
+      "POINT to the question.",
+      "SAY: Let me read this survey question aloud and listen for a push."
+     ],
+     [
+      "MODEL underlining the pushing words.",
+      "SAY: 'Don't you agree' wants me to say yes,",
+      "and 'the best' tells me the answer.",
+      "That's bias, so the data wouldn't be fair."
+     ],
+     [
+      "ASK: How could we ask this fairly?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: What is your favourite sport?"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: What is your favourite sport? Now it doesn't push,",
+      "so every answer is a real answer."
+     ]
+    ],
+    "trap": [
+     "keeping 'the best' in the new question.",
+     "Fix: read it aloud and listen for the push, and they rewrite it."
+    ],
+    "stretch": "Write a biased question about lunch, then fix it.",
+    "help": "Cover the pushing words with your finger and read what is left.",
+    "prep": "A fair question has no pushing words. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "A choice for everyone",
+   "steps": [
+    "Read the choices.",
+    "Ask: can every person tick a box?",
+    "Someone who plays 10 hours has no box.",
+    "Add: more than 8 hours."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "How many hours of sport do you play each week?"
+     ],
+     [
+      "0 to 2 hours"
+     ],
+     [
+      "3 to 5 hours"
+     ],
+     [
+      "6 to 8 hours"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "Add: more than 8 hours"
+    ]
+   },
+   "notes": {
+    "answer": "more than 8 hours has no box",
+    "beats": [
+     [
+      "POINT to the choices.",
+      "SAY: This question doesn't push, but let's check the choices too."
+     ],
+     [
+      "MODEL testing two people.",
+      "SAY: If I play 1 hour, I tick the first box.",
+      "But what if I play 10 hours?"
+     ],
+     [
+      "ASK: Who can't tick a box, and how would you fix it?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: someone who plays more than 8 hours: add 'more than 8'"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Someone who plays more than 8 hours has no box,",
+      "so we add 'more than 8 hours'."
+     ]
+    ],
+    "trap": [
+     "adding a box that overlaps, like 8 to 10.",
+     "Fix: ask where someone who plays 8 hours ticks, and they fix it."
+    ],
+    "stretch": "Check: any gaps or overlaps?",
+    "help": "Test the choices with made-up people.",
+    "prep": "A fair question gives every person a choice that fits. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "content",
+   "badge": "I Do",
+   "title": "Two kinds of data",
+   "lines": [
+    "Categorical: words or groups, like favourite sport.",
+    "Numerical: numbers you count or measure, like hours of sport."
+   ],
+   "notes": {
+    "answer": "numerical",
+    "beats": [
+     [
+      "SAY: Data comes in two kinds.",
+      "Categorical data is words or groups, like which sport you like best."
+     ],
+     [
+      "SAY: Numerical data is numbers we count or measure,",
+      "like how many hours of sport you play."
+     ],
+     [
+      "ASK: Is 'How many pets do you have?' categorical or numerical?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: numerical"
+     ]
+    ],
+    "trap": [
+     "calling it categorical because pets are things.",
+     "Fix: ask whether the answers are words or numbers, and they rename it."
+    ],
+    "stretch": "Think of a question that could be asked both ways.",
+    "help": "Ask: are the answers words, or numbers?",
+    "prep": "Naming the kind of data now sets up choosing a graph in Session 3. SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which survey question is fair?",
+   "prompt": "Point to A, B or C",
+   "options": [
+    {
+     "text": "Don't you agree recess should be longer?",
+     "misconception": "misses the pushing words"
+    },
+    {
+     "text": "How long should recess be: 15, 20, 25, 30 minutes or other?"
+    },
+    {
+     "text": "Is recess too short, or way too short?",
+     "misconception": "accepts choices that all lean one way"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Read each question to yourself.",
+      "Check for a push, and check the choices."
+     ],
+     [
+      "ASK: Which survey question is fair?",
+      "20 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What is unfair about C?",
+      "Less -> read each one aloud and underline any push together. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B. It doesn't push,",
+      "and its choices fit everyone, including 'other'."
+     ]
+    ],
+    "trap": [
+     "pointing to C.",
+     "Fix: ask what you tick if recess is just right, and they choose again."
+    ],
+    "prep": "First decision point. A means pushing words are missed; C means one-sided choices are missed.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Categorical or numerical?",
+   "ask": "Will the answers be categorical or numerical? Write C or N.",
+   "routine": "boards",
+   "thinkTime": 8,
+   "pivot": "ask: are the answers words or numbers?",
+   "followUp": "cold call one board: How do you know?",
+   "items": [
+    {
+     "text": "How many siblings do you have?",
+     "answer": "N: numerical"
+    },
+    {
+     "text": "What is your favourite fruit?",
+     "answer": "C: categorical"
+    },
+    {
+     "text": "How far do you live from school?",
+     "answer": "N: numerical"
+    },
+    {
+     "text": "Which day of the week were you born?",
+     "answer": "C: categorical"
+    },
+    {
+     "text": "What size shoe do you wear?",
+     "answer": "N: numerical",
+     "say": "Numerical. Shoe sizes are measurements, even though we say them as names."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write C or N on your board for each question."
+    ],
+    "trap": [
+     "calling 'which day' numerical because days have dates.",
+     "Fix: ask whether the answers are words or numbers, and they redo it."
+    ],
+    "stretch": "Rewrite one categorical question so it collects numbers instead.",
+    "help": "Say one possible answer out loud first, then decide.",
+    "prep": "Guided practice with a tricky edge case at the end. SC3.",
+    "tag": "[We Do | Supported application | SC3 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "What needs fixing?",
+   "prompt": "How do you get to school? walk / car",
+   "options": [
+    {
+     "text": "It pushes people to one answer.",
+     "misconception": "confuses missing choices with a pushing question"
+    },
+    {
+     "text": "Some people have no choice that fits."
+    },
+    {
+     "text": "Nothing. It is fair.",
+     "misconception": "only checks for pushing words, not the choices"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B: some people have no choice",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Read the question and the choices carefully."
+     ],
+     [
+      "ASK: What needs fixing in this survey question?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN every point, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> test it with three people:",
+      "one who walks, one by bus, one by bike. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B. Anyone who catches a bus or rides a bike has no box,",
+      "so we add bus, bike and other."
+     ]
+    ],
+    "trap": [
+     "pointing to C.",
+     "Fix: ask where a bike rider ticks, and they choose again."
+    ],
+    "prep": "The hinge before independent work. Anyone choosing C starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Sort, fix and write fair questions on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Does your question push? Is there a box for everyone?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "writing a fair question with too few choices.",
+     "Fix: test the choices with three made-up people, and they add one."
+    ],
+    "stretch": "Extension: who to ask, choices with no gaps or overlaps, and designing your own survey.",
+    "help": "Supported Worksheet: pushing words to circle, one missing choice at a time, and hints.",
+    "prep": "Independent practice: statistical or not, C or N, fixing questions and planning a survey. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Write a fair survey question about favourite school subjects. Give choices for everyone."
+   ],
+   "visual": {
+    "type": "pictogram",
+    "name": "clipboard"
+   },
+   "notes": {
+    "answer": "a question with no push, several subjects, and 'other'",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: Write a fair survey question about favourite school subjects, with choices for everyone.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: a question with no push, several subjects, and 'other'"
+     ],
+     [
+      "RECORD who writes a push or leaves people without a choice.",
+      "They start tomorrow's survey with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing 'Isn't maths the best?'",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: a new topic, written from scratch.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner the two checks for a fair question.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for no push, and a choice for everyone",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can write a fair survey question?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with a pushing question on the board matters most."
+     ],
+     [
+      "ASK: What are the two checks for a fair question?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: no push, and a choice for everyone"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow we run our survey.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

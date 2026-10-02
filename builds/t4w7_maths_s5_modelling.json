@@ -1,0 +1,1133 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 7,
+  "session": 5,
+  "title": "Modelling a Shopping Problem",
+  "subtitle": "Term 4 Week 7, Session 5",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Money and Percentages | Year 5/6 Maths | Session 5",
+  "outputFolder": "T4W7_Maths_S5_Modelling",
+  "fileName": "Session 5 - Modelling a Shopping Problem.pptx",
+  "titleVisual": {
+   "type": "table",
+   "rows": [
+    [
+     "Item",
+     "Price",
+     "Deal"
+    ],
+    [
+     "Pizza",
+     "$14.50",
+     "3 for $39"
+    ],
+    [
+     "Drinks (10)",
+     "$8.00",
+     "10% off"
+    ],
+    [
+     "Fruit platter",
+     "$22.00",
+     ""
+    ]
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 6 (VC2M6N09): mathematical modelling of a practical financial problem: formulating it, choosing operations, interpreting and justifying the solution in the situation",
+   "shape": "consolidation: one modelling cycle modelled by the teacher, then students carry out their own, because the week's skills come together in one task",
+   "criticalFeature": "say what the answer means in the situation, and justify the choices you made",
+   "decisionPoints": [
+    "the choice check: which question needs answering first?",
+    "the hinge: is the plan within budget?",
+    "the exit ticket"
+   ],
+   "anchor": "read it, model it, solve it, check it: say what the answer means in the situation",
+   "catchUp": "Missed earlier sessions? Show the plan frame from Session 4 and one sale price before the launch."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Calculators for checking (optional)",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The fortnight's anchor on the board: read it, model it, solve it, check it",
+   "The party price list from the slides, written up for reference"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Plan an end-of-year party for 26 students with $150, using a price list with deals, and justify your choices.",
+   "title": "Modelling a Shopping Problem",
+   "subtitle": "Read it, model it, solve it, check it. Say what the answer means.",
+   "sections": [
+    {
+     "title": "Read and plan",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "What do we find out first?",
+      "steps": [
+       "Read: 26 students, $150.",
+       "Plan amounts first, then costs."
+      ],
+      "answer": "how much food and drink"
+     },
+     "items": [
+      {
+       "prompt": "Read the price list. Answer the planning questions.",
+       "visual": {
+        "type": "table",
+        "rows": [
+         [
+          "Item",
+          "Price",
+          "Deal"
+         ],
+         [
+          "Pizza",
+          "$14.50 each",
+          "3 for $39"
+         ],
+         [
+          "Juice, pack of 10",
+          "$8.00",
+          "10% off"
+         ],
+         [
+          "Fruit platter",
+          "$22.00",
+          ""
+         ],
+         [
+          "Cupcakes, box of 12",
+          "$15.00",
+          "buy 2 boxes, save $4"
+         ],
+         [
+          "Paper plates, 50",
+          "$6.50",
+          ""
+         ]
+        ],
+        "maxH": 120
+       },
+       "parts": [
+        {
+         "prompt": "Cupcake boxes for 1 each?",
+         "answer": "3 (36 cupcakes)"
+        },
+        {
+         "prompt": "Juice packs for 1 each?",
+         "answer": "3 (30 juices)"
+        },
+        {
+         "prompt": "Slices from 6 pizzas of 8?",
+         "answer": "48: almost 2 each"
+        },
+        {
+         "prompt": "Is 1 pack of 50 plates enough?",
+         "answer": "yes, 50 > 26"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Work out the costs",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Cost of 3 pizzas with the deal?",
+      "steps": [
+       "Deal: 3 for $39.",
+       "Without the deal: 3 × $14.50 = $43.50.",
+       "The deal saves $4.50."
+      ],
+      "answer": "$39"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Work out the cost of each item for the party.",
+       "columns": [
+        "Item",
+        "How many",
+        "Working",
+        "Cost"
+       ],
+       "rows": [
+        [
+         "Pizza",
+         "6",
+         "",
+         ""
+        ],
+        [
+         "Juice packs (10% off)",
+         "3",
+         "",
+         ""
+        ],
+        [
+         "Cupcake boxes",
+         "3",
+         "",
+         ""
+        ],
+        [
+         "Paper plates",
+         "1",
+         "",
+         ""
+        ],
+        [
+         "Total",
+         "",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "Pizza",
+         "6",
+         "2 × $39",
+         "$78"
+        ],
+        [
+         "Juice packs (10% off)",
+         "3",
+         "$24 - $2.40",
+         "$21.60"
+        ],
+        [
+         "Cupcake boxes",
+         "3",
+         "2 boxes $26 + $15",
+         "$41"
+        ],
+        [
+         "Paper plates",
+         "1",
+         "",
+         "$6.50"
+        ],
+        [
+         "Total",
+         "",
+         "",
+         "$147.10"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Check and justify",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Is the plan within budget?",
+      "steps": [
+       "Total: $147.10.",
+       "$150 - $147.10 = $2.90 left.",
+       "Yes, with $2.90 spare."
+      ],
+      "answer": "yes, $2.90 left"
+     },
+     "items": [
+      {
+       "kind": "choice",
+       "prompt": "The class wants a fruit platter ($22) too. What is the best change?",
+       "options": [
+        "Buy 1 fewer cupcake box",
+        "Buy 3 fewer pizzas",
+        "Buy 1 fewer juice pack"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "With the platter the total is $169.10, $19.10 over. 3 fewer pizzas saves $39 ($130.10). 1 fewer cupcake box saves $15 and 1 fewer juice pack saves $7.20: not enough."
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Ben added the juice cost. Find his mistake and fix it.",
+       "work": [
+        "3 packs at $8 = $24.",
+        "10% off: $24 - 10 = $14."
+       ],
+       "answer": "10% of $24 is $2.40, not $10. $24 - $2.40 = $21.60."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. More students, a delivery fee and a fundraising target, with worked examples.",
+   "title": "Extension: Change the Model",
+   "subtitle": "What if something changes?",
+   "sections": [
+    {
+     "title": "More students",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "If 4 more students come, what changes?",
+      "steps": [
+       "30 students now.",
+       "Juice: 3 packs still cover 30.",
+       "Cupcakes: 36 still covers 30."
+      ],
+      "answer": "nothing extra needed"
+     },
+     "items": [
+      {
+       "prompt": "If 34 students come, how many juice packs and cupcake boxes are needed now? What does it add to the cost?",
+       "answer": "4 juice packs (+$7.20), 3 cupcake boxes (36 is enough): +$7.20",
+       "lines": 3
+      },
+      {
+       "prompt": "Each student eats 2 slices of pizza. Each pizza has 8 slices. How many pizzas for 34 students?",
+       "answer": "68 slices; 68 divided by 8 = 8.5, so 9 pizzas",
+       "answerLabel": "Pizzas:"
+      }
+     ]
+    },
+    {
+     "title": "A delivery fee",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Delivery costs $9.95. Is the original plan still under $150?",
+      "steps": [
+       "$147.10 + $9.95 = $157.05.",
+       "That is $7.05 over budget."
+      ],
+      "answer": "no, $7.05 over"
+     },
+     "items": [
+      {
+       "prompt": "With the $9.95 delivery fee, change the plan so it fits the $150 budget. Show the new total.",
+       "answer": "For example: 5 pizzas (3 for $39 + 2 × $14.50 = $68), saving $10: total $147.05",
+       "lines": 4
+      }
+     ]
+    },
+    {
+     "title": "Fundraising",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "The class sells cupcakes at $2 each. How many to raise $60?",
+      "steps": [
+       "$60 divided by $2.",
+       "30 cupcakes."
+      ],
+      "answer": "30"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "The class wants $200 for next year's party. They sell drinks at $1.50 (cost 80c each). How many must they sell to make $200 profit? Show your model.",
+       "answer": "Profit per drink: $0.70. $200 divided by $0.70 = 285.7..., so 286 drinks."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: whole-dollar prices, one item per question, and a hint on every question.",
+   "title": "Party Plan: Step by Step",
+   "subtitle": "One item at a time, then add.",
+   "sections": [
+    {
+     "title": "Cost of each item",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "2 pizzas at $15 each.",
+      "steps": [
+       "2 × $15 = $30."
+      ],
+      "answer": "$30"
+     },
+     "items": [
+      {
+       "prompt": "3 juice packs at $8 each = ___",
+       "hint": "3 lots of 8.",
+       "answer": "$24",
+       "answerLabel": "Cost:"
+      },
+      {
+       "prompt": "2 cupcake boxes at $15 each = ___",
+       "hint": "2 lots of 15.",
+       "answer": "$30",
+       "answerLabel": "Cost:"
+      }
+     ]
+    },
+    {
+     "title": "Add and check",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "$30 + $24 + $30. Under $100?",
+      "steps": [
+       "$30 + $24 = $54.",
+       "$54 + $30 = $84.",
+       "$84 is under $100: yes."
+      ],
+      "answer": "yes, $84"
+     },
+     "items": [
+      {
+       "prompt": "$40 + $25 + $18 = ___  Under $100?",
+       "hint": "Add two at a time.",
+       "answer": "$83, yes",
+       "answerLabel": "Total:"
+      },
+      {
+       "prompt": "How much is left from $100 after spending $83?",
+       "hint": "Count on from 83 to 100.",
+       "answer": "$17",
+       "answerLabel": "Left:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 5 of our money and percentages fortnight: today we model a whole shopping problem, start to finish."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk, and write the party price list on the board. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Read the graph",
+   "from": "teacher",
+   "prompts": [
+    "How many more chose pizza than sushi?"
+   ],
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Pizza",
+     "Pasta",
+     "Sushi",
+     "Wraps"
+    ],
+    "values": [
+     14,
+     8,
+     5,
+     9
+    ],
+    "title": "Favourite party food",
+    "yLabel": "Students"
+   },
+   "reveal": {
+    "answers": [
+     "9 more"
+    ]
+   },
+   "notes": {
+    "answer": "9 more",
+    "beats": [
+     [
+      "SAY: Let's warm up with statistics."
+     ],
+     [
+      "ASK: How many more students chose pizza than sushi?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 9"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> lay a ruler across each column top, read the scale, then subtract. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Pizza 14, sushi 5, so 9 more chose pizza. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 14, the pizza value.",
+     "Fix: ask what 'how many more' means, and they subtract."
+    ],
+    "prep": "Review of Week 3 statistics (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Fair question?",
+   "from": "teacher",
+   "prompts": [
+    "Is this survey question fair? 'Don't you think pizza is the best party food?'"
+   ],
+   "reveal": {
+    "answers": [
+     "No: it pushes"
+    ]
+   },
+   "notes": {
+    "answer": "No: it pushes",
+    "beats": [
+     [
+      "ASK: Is this survey question fair? Thumbs up for fair, down for not fair.",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: thumbs down: it pushes towards yes"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> underline the pushing words together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Not fair: 'Don't you think' pushes people to say yes.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "thumbs up.",
+     "Fix: read it aloud and listen for the push, and they decide again."
+    ],
+    "prep": "Week 3 review: fair questions.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Which display?",
+   "from": "teacher",
+   "prompts": [
+    "Which display suits 'votes for party food'?"
+   ],
+   "reveal": {
+    "answers": [
+     "column graph"
+    ]
+   },
+   "notes": {
+    "answer": "column graph",
+    "beats": [
+     [
+      "ASK: Which display suits votes for party food?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: a column graph"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> ask: categories, a few numbers, or change over time? Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: A column graph: the foods are categories. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "choosing a line graph.",
+     "Fix: ask whether the votes change over time, and they choose again."
+    ],
+    "prep": "Week 3 review: choosing a display.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 3 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 954,
+    "divisor": 9
+   },
+   "reveal": {
+    "answers": [
+     "106"
+    ]
+   },
+   "notes": {
+    "answer": "106",
+    "beats": [
+     [
+      "SAY: Now for some short division with the division bracket.",
+      "Divide each digit from the left, and carry any remainder across."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 106"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 106.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "Division fluency: 3 digits, then 4, then 5. Keep the whole block under 6 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 4 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 7488,
+    "divisor": 6
+   },
+   "reveal": {
+    "answers": [
+     "1 248"
+    ]
+   },
+   "notes": {
+    "answer": "1 248",
+    "beats": [
+     [
+      "SAY: Now it's 4 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 1 248"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 1 248.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 5 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 36575,
+    "divisor": 7
+   },
+   "reveal": {
+    "answers": [
+     "5 225"
+    ]
+   },
+   "notes": {
+    "answer": "5 225",
+    "beats": [
+     [
+      "SAY: Now it's 5 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 5 225"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 5 225.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to model a real shopping problem and justify our choices.",
+   "successCriteria": [
+    "I can work out what a problem is asking and plan the steps.",
+    "I can use discounts and deals to cost a plan within a budget.",
+    "I can explain what my answer means and justify my choices."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: This fortnight we've learned sales, best buys, GST and multi-step problems.",
+      "Today we use all of it in one real problem."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 planning is reachable for everyone; SC2 costing within a budget is the core and the exit evidence; SC3 justifying is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "The end-of-year party",
+   "lines": [
+    "26 students.",
+    "A $150 budget.",
+    "Food and a drink for everyone."
+   ],
+   "notes": {
+    "answer": "how much, what cost, within budget?",
+    "beats": [
+     [
+      "POINT to each line.",
+      "SAY: Our task today: plan the end-of-year party for 26 students with 150 dollars."
+     ],
+     [
+      "ASK: What questions do we need to answer before we can spend anything?",
+      "Tell your partner.",
+      "30 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: how much food and drink, what it costs, whether it fits"
+     ],
+     [
+      "SAY: Good questions: how much do we need,",
+      "what will it cost, and does it fit the budget?",
+      "That's modelling: read it, model it, solve it, check it."
+     ]
+    ],
+    "trap": [
+     "starting to add prices straight away.",
+     "Fix: ask what we need to know first, and they plan."
+    ],
+    "prep": "The launch comes after the LI: the modelling task is posed before any numbers. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "budget",
+   "meaning": "A plan for how much money you can spend, and what you will spend it on.",
+   "example": "Our party budget is $150.",
+   "pictogram": "money",
+   "notes": {
+    "answer": "yes, $2.90 under",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is budget. Say it with me: bud-get."
+     ],
+     [
+      "SAY: A budget is a plan for how much money you can spend,",
+      "and what you'll spend it on.",
+      "Staying within budget means not spending more than you have."
+     ],
+     [
+      "ASK: If the budget is $150 and we spend $147.10, are we within budget?",
+      "10 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up"
+     ]
+    ],
+    "trap": [
+     "thinking any amount near $150 is fine.",
+     "Fix: compare the numbers, and they check again."
+    ],
+    "prep": "Budget leads into next week's earning and saving.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Model it",
+   "steps": [
+    "Read: 26 students, $150.",
+    "Model: 6 pizzas, 3 juice packs, 3 cupcake boxes, plates.",
+    "Solve: $78 + $21.60 + $41 + $6.50 = $147.10.",
+    "Check: under $150, with $2.90 left."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Item",
+      "Price",
+      "Deal"
+     ],
+     [
+      "Pizza",
+      "$14.50 each",
+      "3 for $39"
+     ],
+     [
+      "Juice, pack of 10",
+      "$8.00",
+      "10% off"
+     ],
+     [
+      "Cupcakes, box of 12",
+      "$15.00",
+      "buy 2, save $4"
+     ],
+     [
+      "Plates, 50",
+      "$6.50",
+      ""
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "$147.10: within budget, $2.90 left"
+    ]
+   },
+   "notes": {
+    "answer": "$147.10, within budget",
+    "beats": [
+     [
+      "MODEL choosing amounts.",
+      "SAY: 26 students need about 6 pizzas,",
+      "3 juice packs and 3 boxes of cupcakes, plus plates."
+     ],
+     [
+      "MODEL the costs with deals.",
+      "SAY: 6 pizzas is two lots of the 3 for 39 deal: 78.",
+      "Juice is 24 less 10 percent: 21.60.",
+      "Cupcakes: 2 boxes for 26, plus 15. Plates are 6.50."
+     ],
+     [
+      "ASK: What is the total, and is it within budget?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $147.10, yes"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 147.10, so we're within budget with 2.90 left.",
+      "Now I'd tell the principal why this plan works."
+     ]
+    ],
+    "trap": [
+     "forgetting a deal.",
+     "Fix: reread the deal column, and they recost."
+    ],
+    "stretch": "Could we afford a fruit platter too? What would change?",
+    "help": "Cost one item at a time in a table.",
+    "prep": "The full modelling cycle, modelled once. SC1 to SC3.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "What comes first?",
+   "prompt": "Point to A, B or C",
+   "options": [
+    {
+     "text": "Add up every price on the list.",
+     "misconception": "calculates before deciding what is needed"
+    },
+    {
+     "text": "Decide how much food and drink 26 students need."
+    },
+    {
+     "text": "Take $150 away from the most expensive item.",
+     "misconception": "picks an operation without a plan"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: We're planning the party. What do we do first?"
+     ],
+     [
+      "ASK: Which step comes first?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What comes second?",
+      "Less -> go back to the plan frame: know, need, steps. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B. We can't cost anything until we know how much we need.",
+      "Adding every price doesn't answer the question."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: ask what adding every price tells us, and they choose again."
+    ],
+    "prep": "First decision point: formulating before calculating.",
+    "tag": "[CFU | Supported application | SC1 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Cost it",
+   "ask": "What does it cost?",
+   "routine": "boards",
+   "thinkTime": 30,
+   "pivot": "check the deal column, then calculate one item at a time",
+   "followUp": "cold call one board: Did you use a deal? Which one?",
+   "items": [
+    {
+     "text": "3 pizzas ($14.50 each, or 3 for $39)",
+     "answer": "$39 (deal)"
+    },
+    {
+     "text": "4 pizzas ($14.50 each, or 3 for $39)",
+     "answer": "$53.50",
+     "say": "3 for 39 plus one at 14.50: 53.50."
+    },
+    {
+     "text": "2 juice packs ($8 each, 10% off)",
+     "answer": "$14.40"
+    },
+    {
+     "text": "2 cupcake boxes ($15 each, buy 2 save $4)",
+     "answer": "$26 (save $4)"
+    },
+    {
+     "text": "A fruit platter ($22) and plates ($6.50)",
+     "answer": "$28.50"
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's cost some items together.",
+     "Write each cost on your board."
+    ],
+    "trap": [
+     "missing a deal.",
+     "Fix: reread the deal column, and they recost."
+    ],
+    "stretch": "Find the cheapest way to buy 5 pizzas.",
+    "help": "Use the price list on the board.",
+    "prep": "Guided practice costing items with and without deals. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Is this plan within budget?",
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Plan",
+      "Cost"
+     ],
+     [
+      "3 pizzas",
+      "$39.00"
+     ],
+     [
+      "2 juice packs, 10% off",
+      "$14.40"
+     ],
+     [
+      "Fruit platter",
+      "$22.00"
+     ],
+     [
+      "Cupcake boxes × 2",
+      "$26.00"
+     ],
+     [
+      "Plates",
+      "$6.50"
+     ]
+    ]
+   },
+   "label": "Budget: $100",
+   "reveal": {
+    "answers": [
+     "$107.90: $7.90 over"
+    ]
+   },
+   "notes": {
+    "answer": "$107.90: $7.90 over",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "The budget here is 100 dollars."
+     ],
+     [
+      "ASK: Is this plan within a $100 budget? By how much over or under?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: no, $7.90 over"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> add two costs at a time together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The total is 107.90, so it's 7.90 over budget.",
+      "We'd need to change something. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "saying it fits.",
+     "Fix: add the costs again and compare with $100, and they decide again."
+    ],
+    "prep": "The hinge before independent work. Anyone who says it fits starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC3 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Plan the party on your worksheet, then justify your plan.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: What does your total mean for the party?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "a total with no decision.",
+     "Fix: ask whether it fits the budget, and they say so."
+    ],
+    "stretch": "Extension: more students, a delivery fee and fundraising.",
+    "help": "Supported Worksheet: whole-dollar prices, one item at a time.",
+    "prep": "Independent practice: the full modelling cycle with deals and a justification. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Can the class afford 5 pizzas and 3 juice packs with $90? Explain."
+   ],
+   "visual": {
+    "type": "text",
+    "text": "At another shop, pizza is $13 each or 3 for $36. Juice is $9 a pack, with 10% off."
+   },
+   "notes": {
+    "answer": "yes: $62 + $24.30 = $86.30",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: Can the class afford 5 pizzas and 3 juice packs with 90 dollars? Explain.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: yes: $62 + $24.30 = $86.30"
+     ],
+     [
+      "RECORD who ignores a deal or gives no decision.",
+      "Their names go to next week's budgeting group."
+     ]
+    ],
+    "trap": [
+     "saying no, without the deal.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2 and SC3: cost a new plan with deals and decide.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner one choice you made in your party plan, and why.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for a choice with a money reason",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can model a money problem and justify it?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 'no' on the exit board matters most."
+     ],
+     [
+      "ASK: What is one choice you made in your plan, and why?",
+      "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: a choice with a money reason"
+     ]
+    ],
+    "prep": "Fortnight midpoint: next week is earning, saving and budgeting.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

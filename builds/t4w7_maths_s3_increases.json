@@ -1,0 +1,1254 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 7,
+  "session": 3,
+  "title": "Percentage Increases and GST",
+  "subtitle": "Term 4 Week 7, Session 3",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Money and Percentages | Year 5/6 Maths | Session 3",
+  "outputFolder": "T4W7_Maths_S3_Increases",
+  "fileName": "Session 3 - Percentage Increases and GST.pptx",
+  "titleVisual": {
+   "type": "table",
+   "rows": [
+    [
+     "Price",
+     "GST (10%)",
+     "With GST"
+    ],
+    [
+     "$100",
+     "$10",
+     "$110"
+    ]
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 6 (VC2M6N09): modelling practical situations with percentage increases, such as GST and price rises, using efficient calculation strategies",
+   "shape": "compare-two-models: a discount bar beside an increase bar, because the only change from Session 1 is adding instead of taking off",
+   "criticalFeature": "an increase is added on: find the percentage, then add it to the price",
+   "decisionPoints": [
+    "the choice check: $40 plus 10% GST",
+    "the hinge: a $250 ticket goes up 20%",
+    "the exit ticket"
+   ],
+   "anchor": "read it, model it, solve it, check it: say what the answer means in the situation",
+   "catchUp": "Missed Sessions 1 or 2? Show 10% of $70 = $7 on a bar model; today we add it on instead of taking it off."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Calculators for checking (optional)",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The fortnight's anchor on the board: read it, model it, solve it, check it",
+   "Under it: discount takes off, increase adds on"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. A GST table, price rises, a mistake to fix, and ticket, wage and club problems.",
+   "title": "Percentage Increases and GST",
+   "subtitle": "Find the increase, then add it on.",
+   "sections": [
+    {
+     "title": "Add the GST",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "A $50 game plus 10% GST. Total price?",
+      "steps": [
+       "10% of $50 = $5 GST.",
+       "$50 + $5 = $55.",
+       "Check: more than $50."
+      ],
+      "answer": "$55"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Find the GST (10%) and the price with GST.",
+       "columns": [
+        "Item",
+        "Price before GST",
+        "GST",
+        "Price with GST"
+       ],
+       "rows": [
+        [
+         "Footy",
+         "$30",
+         "",
+         ""
+        ],
+        [
+         "Headphones",
+         "$80",
+         "",
+         ""
+        ],
+        [
+         "Board game",
+         "$45",
+         "",
+         ""
+        ],
+        [
+         "Bike lock",
+         "$25",
+         "",
+         ""
+        ],
+        [
+         "School bag",
+         "$64",
+         "",
+         ""
+        ],
+        [
+         "Tent",
+         "$230",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "Footy",
+         "$30",
+         "$3",
+         "$33"
+        ],
+        [
+         "Headphones",
+         "$80",
+         "$8",
+         "$88"
+        ],
+        [
+         "Board game",
+         "$45",
+         "$4.50",
+         "$49.50"
+        ],
+        [
+         "Bike lock",
+         "$25",
+         "$2.50",
+         "$27.50"
+        ],
+        [
+         "School bag",
+         "$64",
+         "$6.40",
+         "$70.40"
+        ],
+        [
+         "Tent",
+         "$230",
+         "$23",
+         "$253"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Up or down?",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "A $40 ticket: 25% off, or 25% more?",
+      "steps": [
+       "25% of $40 = $10.",
+       "25% off: $40 - $10 = $30.",
+       "25% more: $40 + $10 = $50."
+      ],
+      "answer": "$30 or $50"
+     },
+     "items": [
+      {
+       "kind": "sort",
+       "prompt": "Sort each situation: does the price go up or down?",
+       "cards": [
+        "20% off sale",
+        "add GST",
+        "price rises 5%",
+        "member discount",
+        "late fee of 10%",
+        "clearance 50% off"
+       ],
+       "groups": [
+        "goes up",
+        "goes down"
+       ],
+       "answer": {
+        "goes up": [
+         "add GST",
+         "price rises 5%",
+         "late fee of 10%"
+        ],
+        "goes down": [
+         "20% off sale",
+         "member discount",
+         "clearance 50% off"
+        ]
+       }
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Kai worked out a $60 jacket after a 20% price rise. Find his mistake and fix it.",
+       "work": [
+        "20% of $60 = $12.",
+        "$60 - $12 = $48."
+       ],
+       "answer": "A rise adds on: $60 + $12 = $72."
+      },
+      {
+       "kind": "choice",
+       "prompt": "A $100 skateboard rises 10%, then is 10% off. What does it cost now?",
+       "options": [
+        "$100",
+        "$99",
+        "$110"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "Rise: $110. Then 10% of $110 = $11 off: $99. The second 10% is of a bigger amount."
+      }
+     ]
+    },
+    {
+     "title": "Tickets, wages and clubs",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "Footy club fees were $120. They rise by 15%. New fee?",
+      "steps": [
+       "10% = $12, 5% = $6, so 15% = $18.",
+       "$120 + $18 = $138."
+      ],
+      "answer": "$138"
+     },
+     "items": [
+      {
+       "prompt": "A concert ticket is $85 before a 20% booking increase. What is the new price?",
+       "answer": "$17 more: $102",
+       "answerLabel": "New price:"
+      },
+      {
+       "prompt": "Mia earns $15 an hour. She gets a 10% pay rise. How much will she earn for a 6-hour shift now?",
+       "answer": "$16.50 an hour; 6 × $16.50 = $99",
+       "answerLabel": "Pay:"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Two rises in a row, removing GST from a price, and a percentage change puzzle, with worked examples.",
+   "title": "Extension: Rising Prices",
+   "subtitle": "Rises on rises. Work back from GST.",
+   "sections": [
+    {
+     "title": "Two rises in a row",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "$200 rises 10%, then 10% again.",
+      "steps": [
+       "First rise: $220.",
+       "10% of $220 = $22: $242.",
+       "Not the same as 20% ($240)."
+      ],
+      "answer": "$242"
+     },
+     "items": [
+      {
+       "prompt": "A $500 bike rises 10% one year and 10% the next. What does it cost after two years?",
+       "answer": "$550, then $605",
+       "answerLabel": "Price:"
+      },
+      {
+       "prompt": "Is a 20% rise the same as two 10% rises? Explain with an example.",
+       "answer": "No: two 10% rises give more, because the second 10% is of a bigger amount ($100 to $121, not $120).",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Take the GST out",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "A price with GST is $55. Price before GST?",
+      "steps": [
+       "With GST is 110% of the price.",
+       "$55 divided by 11 = $5: that is 10%.",
+       "Before GST: $50."
+      ],
+      "answer": "$50"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Each price includes 10% GST. Find the price before GST and the GST.",
+       "columns": [
+        "Price with GST",
+        "Before GST",
+        "GST"
+       ],
+       "rows": [
+        [
+         "$22",
+         "",
+         ""
+        ],
+        [
+         "$88",
+         "",
+         ""
+        ],
+        [
+         "$132",
+         "",
+         ""
+        ],
+        [
+         "$330",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "$22",
+         "$20",
+         "$2"
+        ],
+        [
+         "$88",
+         "$80",
+         "$8"
+        ],
+        [
+         "$132",
+         "$120",
+         "$12"
+        ],
+        [
+         "$330",
+         "$300",
+         "$30"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Percentage change",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "A $40 ticket now costs $50. What percentage increase?",
+      "steps": [
+       "Increase: $10.",
+       "$10 out of $40 = 1/4.",
+       "25% increase."
+      ],
+      "answer": "25%"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Find two items in an old catalogue or make some up, with an old and a new price. Work out the percentage change for each and say which rose more.",
+       "answer": "Check: increase = new - old; percentage = increase out of the old price × 100; the comparison uses percentages, not dollars."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: 10% increases only, a two-step frame, and a hint on every question.",
+   "title": "Increases: Step by Step",
+   "subtitle": "Step 1: find 10%. Step 2: add it on.",
+   "sections": [
+    {
+     "title": "Add 10%",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "A $20 ball plus 10%.",
+      "visual": {
+       "type": "table",
+       "rows": [
+        [
+         "Price",
+         "GST (10%)",
+         "With GST"
+        ],
+        [
+         "$20",
+         "$2",
+         "$22"
+        ]
+       ]
+      },
+      "steps": [
+       "10% of $20 = $2.",
+       "$20 + $2 = $22."
+      ],
+      "answer": "$22"
+     },
+     "items": [
+      {
+       "prompt": "A $30 hat plus 10%. 10% = $___  New price = $___",
+       "hint": "Divide 30 by 10, then add.",
+       "answer": "$3, $33",
+       "answerLabel": "Answer:"
+      },
+      {
+       "prompt": "A $60 game plus 10%. 10% = $___  New price = $___",
+       "hint": "Divide 60 by 10, then add.",
+       "answer": "$6, $66",
+       "answerLabel": "Answer:"
+      }
+     ]
+    },
+    {
+     "title": "Up or down?",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "'Add GST': up or down?",
+      "steps": [
+       "GST is added on.",
+       "The price goes up."
+      ],
+      "answer": "up"
+     },
+     "items": [
+      {
+       "kind": "choice",
+       "prompt": "'20% off': up or down?",
+       "hint": "Off means taken away.",
+       "options": [
+        "up",
+        "down"
+       ],
+       "answer": 1
+      },
+      {
+       "kind": "choice",
+       "prompt": "'Price rises 5%': up or down?",
+       "hint": "A rise goes up.",
+       "options": [
+        "up",
+        "down"
+       ],
+       "answer": 0
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 3 of our money and percentages fortnight: today prices go up, with GST and price rises."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk; calculators are optional for checking. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Add",
+   "from": "teacher",
+   "prompts": [
+    "Work out 4 657 + 2 879."
+   ],
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     4657,
+     2879
+    ],
+    "op": "+"
+   },
+   "reveal": {
+    "answers": [
+     "7 536"
+    ]
+   },
+   "notes": {
+    "answer": "7 536",
+    "beats": [
+     [
+      "SAY: Let's warm up with the four processes."
+     ],
+     [
+      "ASK: What is 4 657 plus 2 879?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 7 536"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> line up the places and regroup together on the board. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 7 536. Tick it or fix it, and check every regroup."
+     ]
+    ],
+    "trap": [
+     "forgetting a regrouped ten.",
+     "Fix: circle each carried digit, and they add that column again."
+    ],
+    "prep": "Review of the four processes (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Subtract",
+   "from": "teacher",
+   "prompts": [
+    "Work out 8 003 - 3 476."
+   ],
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     8003,
+     3476
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "4 527"
+    ]
+   },
+   "notes": {
+    "answer": "4 527",
+    "beats": [
+     [
+      "ASK: What is 8 003 take away 3 476?",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 4 527"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> regroup across the zeros together on the board. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 4 527.",
+      "Check by adding back: 4 527 plus 3 476 is 8 003."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one.",
+     "Fix: ask if the top digit is big enough, and they regroup."
+    ],
+    "prep": "Four processes review: subtraction across zeros.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Multiply",
+   "from": "teacher",
+   "prompts": [
+    "Work out 46 × 7."
+   ],
+   "reveal": {
+    "answers": [
+     "322"
+    ]
+   },
+   "notes": {
+    "answer": "322",
+    "beats": [
+     [
+      "ASK: What is 46 times 7?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 322"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> split 46 into 40 and 6, multiply each by 7. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 40 times 7 is 280 and 6 times 7 is 42: 322.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "multiplying only the ones.",
+     "Fix: split 46 into 40 and 6, and they redo it."
+    ],
+    "prep": "Four processes review: multiplication.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 3 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 738,
+    "divisor": 6
+   },
+   "reveal": {
+    "answers": [
+     "123"
+    ]
+   },
+   "notes": {
+    "answer": "123",
+    "beats": [
+     [
+      "SAY: Now for some short division with the division bracket.",
+      "Divide each digit from the left, and carry any remainder across."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 123"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 123.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "Division fluency: 3 digits, then 4, then 5. Keep the whole block under 6 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 4 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 9135,
+    "divisor": 7
+   },
+   "reveal": {
+    "answers": [
+     "1 305"
+    ]
+   },
+   "notes": {
+    "answer": "1 305",
+    "beats": [
+     [
+      "SAY: Now it's 4 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 1 305"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 1 305.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 5 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 52416,
+    "divisor": 8
+   },
+   "reveal": {
+    "answers": [
+     "6 552"
+    ]
+   },
+   "notes": {
+    "answer": "6 552",
+    "beats": [
+     [
+      "SAY: Now it's 5 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 6 552"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 6 552.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to work out percentage increases, including GST.",
+   "successCriteria": [
+    "I can find a percentage of a price.",
+    "I can add a percentage increase to find the new price.",
+    "I can explain when a price goes up or down, and check my answer makes sense."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: So far, prices have come down in sales.",
+      "Today prices go up, with GST and price rises."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 a percentage of a price is reachable for everyone; SC2 the new price after an increase is the core and the exit evidence; SC3 up or down is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Off or on?",
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Sign",
+      "What happens to $40?"
+     ],
+     [
+      "25% off",
+      "?"
+     ],
+     [
+      "25% more",
+      "?"
+     ]
+    ]
+   },
+   "prompt": "What does $40 become with each sign?",
+   "notes": {
+    "answer": "$30 and $50",
+    "beats": [
+     [
+      "POINT to each sign.",
+      "SAY: Here's a 40 dollar item with two different signs."
+     ],
+     [
+      "ASK: What does 40 dollars become with 25 percent off, and with 25 percent more?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $30 and $50"
+     ],
+     [
+      "SCAN boards for 30 and 50.",
+      "80%+ -> cold call one student: What stayed the same in both?",
+      "Less -> find 25 percent first, 10 dollars, then take off or add on. Re-ask."
+     ],
+     [
+      "SAY: Both times, 25 percent is 10 dollars.",
+      "Off takes it away, and more adds it on. Today, prices go up."
+     ]
+    ],
+    "trap": [
+     "writing $65 for 25% more.",
+     "Fix: find 25 percent of 40 first, and they redo it."
+    ],
+    "prep": "The launch comes after the LI: the same percentage, added or taken away. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "GST",
+   "meaning": "Goods and Services Tax: an extra 10% added to the price of most things in Australia.",
+   "example": "A $20 toy plus GST costs $22.",
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Price",
+      "GST (10%)",
+      "With GST"
+     ],
+     [
+      "$20",
+      "$2",
+      "$22"
+     ]
+    ]
+   },
+   "notes": {
+    "answer": "$4",
+    "beats": [
+     [
+      "POINT to the letters.",
+      "SAY: These letters are G, S, T. Say them with me: G, S, T."
+     ],
+     [
+      "SAY: GST stands for Goods and Services Tax.",
+      "In Australia, it adds 10 percent to the price of most things,",
+      "and the money goes to the government."
+     ],
+     [
+      "ASK: A $40 shirt plus GST. How much is the GST?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $4"
+     ]
+    ],
+    "trap": [
+     "writing $44 for the GST.",
+     "Fix: ask how much is added, and they separate GST from the total."
+    ],
+    "prep": "GST is 10%: one bar part on top of ten.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Add 10% GST",
+   "steps": [
+    "Find 10% of $70: $7.",
+    "Add it on: $70 + $7 = $77.",
+    "Check: a little more than $70."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Price",
+      "GST (10%)",
+      "With GST"
+     ],
+     [
+      "$70",
+      "$7",
+      "$77"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "$90 + GST = $99"
+    ]
+   },
+   "notes": {
+    "answer": "$99",
+    "beats": [
+     [
+      "MODEL finding 10%.",
+      "SAY: A 70 dollar pair of headphones, plus GST.",
+      "10 percent of 70 is 7 dollars."
+     ],
+     [
+      "MODEL adding on.",
+      "SAY: GST is added on, so 70 plus 7 is 77 dollars.",
+      "That's a bit more than 70, so it makes sense."
+     ],
+     [
+      "ASK: What does a $90 item cost with GST?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $99"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 10 percent of 90 is 9, so 90 plus 9 is 99 dollars."
+     ]
+    ],
+    "trap": [
+     "taking the GST off.",
+     "Fix: say GST is added on, and they add."
+    ],
+    "stretch": "Find the price with GST in one step: 110% of $90.",
+    "help": "Fill in a price, GST, total table.",
+    "prep": "Find the increase, then add it on: the critical feature. SC1 and SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "A price rise",
+   "steps": [
+    "The club fee is $80. It rises 15%.",
+    "10% = $8, 5% = $4, so 15% = $12.",
+    "New fee = $80 + $12 = $92."
+   ],
+   "visual": {
+    "type": "barModel",
+    "parts": 10,
+    "shaded": 0,
+    "total": "$80",
+    "labels": [
+     "$8",
+     "$8",
+     "$8",
+     "$8",
+     "$8",
+     "$8",
+     "$8",
+     "$8",
+     "$8",
+     "$8"
+    ],
+    "below": [
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%"
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "$60 up 25%: $15 more, $75"
+    ]
+   },
+   "notes": {
+    "answer": "$75",
+    "beats": [
+     [
+      "MODEL building 15%.",
+      "SAY: The netball club fee is 80 dollars, and it's going up 15 percent.",
+      "10 percent is 8, and 5 percent is half of that, 4.",
+      "So 15 percent is 12 dollars."
+     ],
+     [
+      "MODEL adding on.",
+      "SAY: It's a rise, so I add: 80 plus 12 is 92 dollars."
+     ],
+     [
+      "ASK: A $60 ticket goes up 25 percent. What is the new price?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $75"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 25 percent of 60 is 15, so the new price is 75 dollars."
+     ]
+    ],
+    "trap": [
+     "adding 25 dollars.",
+     "Fix: find 25 percent first, and they redo it."
+    ],
+    "stretch": "What percentage rise takes $60 to $90?",
+    "help": "Write the 10% step first.",
+    "prep": "Same benchmarks, added on. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "$40 plus 10% GST",
+   "prompt": "What is the price with GST? Point to A, B or C",
+   "options": [
+    {
+     "text": "$36",
+     "misconception": "takes the GST off instead of adding it"
+    },
+    {
+     "text": "$44"
+    },
+    {
+     "text": "$50",
+     "misconception": "adds 10 dollars instead of 10 percent"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Is GST added on, or taken off?"
+     ],
+     [
+      "ASK: What does a 40 dollar item cost with 10 percent GST?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What did C do?",
+      "Less -> find 10 percent of 40 together, then add it on. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B, 44 dollars. A took the GST off,",
+      "and C added 10 dollars instead of 10 percent."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: say GST is added on, and they choose again."
+    ],
+    "prep": "First decision point. A: direction; C: percent as dollars.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "What is the new price?",
+   "ask": "What is the new price?",
+   "routine": "boards",
+   "thinkTime": 25,
+   "pivot": "find the percentage first, then add it on",
+   "followUp": "cold call one board: How much was the increase?",
+   "items": [
+    {
+     "text": "$50 plus 10% GST",
+     "answer": "$55"
+    },
+    {
+     "text": "$120 rises 25%",
+     "answer": "$150"
+    },
+    {
+     "text": "$35 plus 10% GST",
+     "answer": "$38.50"
+    },
+    {
+     "text": "$200 rises 15%",
+     "answer": "$230"
+    },
+    {
+     "text": "$80: 20% off, or 20% more?",
+     "answer": "$64 off; $96 more",
+     "say": "20 percent is 16 dollars: 64 if it's off, 96 if it's more."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write each new price on your board."
+    ],
+    "trap": [
+     "taking the increase off.",
+     "Fix: ask whether the price goes up or down, and they redo it."
+    ],
+    "stretch": "Write the increase for each one too.",
+    "help": "Write the increase before the new price.",
+    "prep": "Guided practice: GST, a rise, a cents answer, and up or down. SC2 and SC3.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "The ticket price rises",
+   "visual": {
+    "type": "text",
+    "text": "A $250 festival ticket rises by 20%."
+   },
+   "label": "What is the new price?",
+   "reveal": {
+    "answers": [
+     "$50 more: $300"
+    ]
+   },
+   "notes": {
+    "answer": "$300",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Find the increase, then add it on."
+     ],
+     [
+      "ASK: What is the new price of the",
+      "250 dollar ticket after a 20 percent rise?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $300"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> find 10 percent together, 25, then double it. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 20 percent of 250 is 50,",
+      "so the new price is 300 dollars. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing $200.",
+     "Fix: ask whether the price went up or down, and they add."
+    ],
+    "prep": "The hinge before independent work. Anyone writing $200 or $270 starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Work out GST and price rises on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Does this price go up or down?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "taking an increase off.",
+     "Fix: ask up or down, and they redo it."
+    ],
+    "stretch": "Extension: two rises in a row, taking GST out, and percentage change.",
+    "help": "Supported Worksheet: 10% increases only, with a two-step frame.",
+    "prep": "Independent practice: a GST table, up or down, a mistake and real problems. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "How much will you pay at the counter?"
+   ],
+   "visual": {
+    "type": "text",
+    "text": "A scooter is $140 before GST."
+   },
+   "notes": {
+    "answer": "$154",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: A scooter is 140 dollars before GST.",
+      "How much will you pay at the counter?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $154"
+     ],
+     [
+      "RECORD who takes the GST off or adds $10.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing $126 or $150.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: GST on a new price.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner the difference between a discount and an increase.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for an increase is added on; a discount is taken off",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can work out a percentage increase?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with $126 on the board matters most."
+     ],
+     [
+      "ASK: How is an increase different from a discount?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: an increase is added on; a discount is taken off"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: multi-step money problems.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

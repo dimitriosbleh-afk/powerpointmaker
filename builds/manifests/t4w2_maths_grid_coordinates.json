@@ -1,0 +1,37 @@
+{
+  "unit_folder": "Term4_Week2_Maths_Grid_Coordinates",
+  "unit_pptx_name": "Term 4 Week 2 - Grid Coordinates - Year 5-6 Maths.pptx",
+  "anchor": "across the corridor, then up the stairs: (x, y), and the numbers sit on the lines",
+  "lessons": [
+    {
+      "build_script": "builds/t4w2_maths_s1_reading_coordinates.json",
+      "folder": "T4W2_Maths_S1_Reading_Coordinates",
+      "session": 1,
+      "focus": "Grid references name spaces; coordinates name points on the lines. Read and plot points in the first quadrant. Critical feature: across first, then up. Review: angles (Week 1)."
+    },
+    {
+      "build_script": "builds/t4w2_maths_s2_plotting_shapes.json",
+      "folder": "T4W2_Maths_S2_Plotting_Shapes",
+      "session": 2,
+      "focus": "Plot points and draw polygons from a list of coordinates; find a missing vertex. Critical feature: join the points in the order listed. Review: angles (Week 1)."
+    },
+    {
+      "build_script": "builds/t4w2_maths_s3_describing_movement.json",
+      "folder": "T4W2_Maths_S3_Describing_Movement",
+      "session": 3,
+      "focus": "Describe movement with directions and coordinates (left/right changes x, up/down changes y). Critical feature: name which number changes. Review: fractions, decimals and percentages (Term 3)."
+    },
+    {
+      "build_script": "builds/t4w2_maths_s4_four_quadrants.json",
+      "folder": "T4W2_Maths_S4_Four_Quadrants",
+      "session": 4,
+      "focus": "The Cartesian plane: locate points in all four quadrants with negative coordinates. Critical feature: the sign tells the direction from the origin; x still comes first. Review: fractions, decimals and percentages (Term 3)."
+    },
+    {
+      "build_script": "builds/t4w2_maths_s5_moving_points.json",
+      "folder": "T4W2_Maths_S5_Moving_Points",
+      "session": 5,
+      "focus": "Translate points and shapes across the four quadrants and describe the change to each coordinate. Critical feature: moving left past zero keeps subtracting. Review: understanding and operating with fractions (Term 3)."
+    }
+  ]
+}

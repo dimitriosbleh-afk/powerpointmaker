@@ -1,0 +1,1628 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 5,
+  "session": 3,
+  "title": "Area Problems",
+  "subtitle": "Term 4 Week 5, Session 3",
+  "meta": "Year 5/6 Maths | Measurement",
+  "footer": "Area and Perimeter | Year 5/6 Maths | Session 3",
+  "outputFolder": "T4W5_Maths_S3_Area_Problems",
+  "fileName": "Session 3 - Area Problems.pptx",
+  "titleVisual": {
+   "type": "shape",
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     10,
+     0
+    ],
+    [
+     10,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     0,
+     9
+    ]
+   ],
+   "labels": [
+    "10 cm",
+    "4 cm",
+    null,
+    "5 cm",
+    "6 cm",
+    "9 cm"
+   ],
+   "splits": [
+    [
+     [
+      0,
+      4
+     ],
+     [
+      6,
+      4
+     ]
+    ]
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 5 (VC2M5N07, VC2M5N06) applied to measurement: solving area problems with division, interpreting remainders in context, and checking reasonableness",
+   "shape": "short-cycle loops: three small model-then-try cycles (missing side, composite area, remainders), because each step is new but short",
+   "criticalFeature": "a missing side is the area divided by the known side; decide what the answer means before you round",
+   "decisionPoints": [
+    "the choice check: area 72 m², one side 9 m",
+    "the hinge: how many boxes of tiles?",
+    "the exit ticket"
+   ],
+   "anchor": "perimeter goes around the edge (add the sides); area covers the inside (length x width)",
+   "catchUp": "Missed Session 2? Show a 6 by 4 grid rectangle: 4 rows of 6 is 24 square units, so area = length x width."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: perimeter goes around the edge (add the sides); area covers the inside (length x width)",
+   "Under it: missing side = area divided by the known side"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Missing sides, composite shapes, and buses, paint and sausages with remainders.",
+   "title": "Area Problems",
+   "subtitle": "Missing side = area divided by the known side. Decide before you round.",
+   "sections": [
+    {
+     "title": "Missing sides",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "Area 60 m², one side 5 m. Other side?",
+      "steps": [
+       "5 x ? = 60, so divide: 60 divided by 5.",
+       "60 divided by 5 = 12. The side is 12 m."
+      ],
+      "answer": "12 m"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Find the missing side of each rectangle.",
+       "columns": [
+        "Area",
+        "Known side",
+        "Missing side"
+       ],
+       "rows": [
+        [
+         "96 m²",
+         "8 m",
+         ""
+        ],
+        [
+         "84 m²",
+         "6 m",
+         ""
+        ],
+        [
+         "135 m²",
+         "9 m",
+         ""
+        ],
+        [
+         "192 m²",
+         "8 m",
+         ""
+        ],
+        [
+         "156 m²",
+         "12 m",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "96 m²",
+         "8 m",
+         "12 m"
+        ],
+        [
+         "84 m²",
+         "6 m",
+         "14 m"
+        ],
+        [
+         "135 m²",
+         "9 m",
+         "15 m"
+        ],
+        [
+         "192 m²",
+         "8 m",
+         "24 m"
+        ],
+        [
+         "156 m²",
+         "12 m",
+         "13 m"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Composite shapes",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Split an L-shape into two rectangles and add the areas.",
+      "steps": [
+       "Draw a line to make two rectangles.",
+       "Find each area.",
+       "Add them."
+      ],
+      "answer": "the total area"
+     },
+     "items": [
+      {
+       "prompt": "Find the area. Split it into two rectangles first.",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          12,
+          0
+         ],
+         [
+          12,
+          5
+         ],
+         [
+          4,
+          5
+         ],
+         [
+          4,
+          9
+         ],
+         [
+          0,
+          9
+         ]
+        ],
+        "labels": [
+         "12 m",
+         "5 m",
+         null,
+         "4 m",
+         "4 m",
+         "9 m"
+        ],
+        "maxH": 110
+       },
+       "answer": "60 + 16 = 76",
+       "answerLabel": "Area:",
+       "unit": "m²"
+      },
+      {
+       "prompt": "Find the area. Split it into two rectangles first.",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          15,
+          0
+         ],
+         [
+          15,
+          6
+         ],
+         [
+          9,
+          6
+         ],
+         [
+          9,
+          11
+         ],
+         [
+          0,
+          11
+         ]
+        ],
+        "labels": [
+         "15 cm",
+         "6 cm",
+         null,
+         "5 cm",
+         "9 cm",
+         "11 cm"
+        ],
+        "maxH": 110
+       },
+       "answer": "90 + 45 = 135",
+       "answerLabel": "Area:",
+       "unit": "cm²"
+      }
+     ]
+    },
+    {
+     "title": "Buses, paint and sausages",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "27 people. Each car takes 4. How many cars?",
+      "steps": [
+       "27 divided by 4 = 6 remainder 3.",
+       "6 cars leave 3 people behind.",
+       "Round up: 7 cars."
+      ],
+      "answer": "7 cars"
+     },
+     "items": [
+      {
+       "prompt": "436 people are going on an excursion. Each bus carries 50 people. How many buses are needed?",
+       "answer": "436 divided by 50 = 8 r 36, so 9 buses",
+       "answerLabel": "Buses:"
+      },
+      {
+       "prompt": "A wall is 46 m². One tin of paint covers 8 m². How many tins are needed?",
+       "answer": "46 divided by 8 = 5 r 6, so 6 tins",
+       "answerLabel": "Tins:"
+      },
+      {
+       "prompt": "A footy club needs 125 sausages for a barbecue. Sausages come in packs of 8. How many packs?",
+       "answer": "125 divided by 8 = 15 r 5, so 16 packs",
+       "answerLabel": "Packs:"
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Tim found the area of this L-shape. Find his mistake and fix it.",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          12,
+          0
+         ],
+         [
+          12,
+          5
+         ],
+         [
+          4,
+          5
+         ],
+         [
+          4,
+          9
+         ],
+         [
+          0,
+          9
+         ]
+        ],
+        "labels": [
+         "12 m",
+         "5 m",
+         null,
+         "4 m",
+         "4 m",
+         "9 m"
+        ],
+        "maxH": 80
+       },
+       "work": [
+        "The longest sides are 12 and 9.",
+        "12 × 9 = 108 m²."
+       ],
+       "answer": "That is the area of a whole 12 by 9 rectangle, including the missing corner. Split it: 60 + 16 = 76 m²."
+      },
+      {
+       "kind": "choice",
+       "prompt": "A 50 m ribbon is cut into 6 m pieces. How many full pieces?",
+       "options": [
+        "8",
+        "9"
+       ],
+       "answer": 0,
+       "reason": true,
+       "explain": "50 divided by 6 = 8 r 2. The 2 m left over is not a full piece, so round down: 8."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Areas with a hole, working back to the perimeter, and planning a room, with worked examples.",
+   "title": "Extension: Area Challenges",
+   "subtitle": "Take away the hole. Work backwards.",
+   "sections": [
+    {
+     "title": "Shapes with a hole",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "A 10 m by 8 m lawn has a 4 m by 3 m garden bed in it. Lawn area?",
+      "steps": [
+       "Whole rectangle: 10 × 8 = 80 m².",
+       "The hole: 4 × 3 = 12 m².",
+       "80 - 12 = 68 m² of lawn."
+      ],
+      "answer": "68 m²"
+     },
+     "items": [
+      {
+       "prompt": "A pool is 12 m by 6 m. A path 1 m wide goes all the way around it. What is the area of the path?",
+       "answer": "Pool and path: 14 × 8 = 112 m². Pool: 12 × 6 = 72 m². Path: 112 - 72 = 40 m².",
+       "lines": 4
+      }
+     ]
+    },
+    {
+     "title": "Work backwards",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "A rectangle has area 48 m² and one side 6 m. Perimeter?",
+      "steps": [
+       "Missing side: 48 divided by 6 = 8 m.",
+       "Perimeter: (6 + 8) × 2 = 28 m."
+      ],
+      "answer": "28 m"
+     },
+     "items": [
+      {
+       "prompt": "A rectangle has area 91 m² and one side 7 m. What is its perimeter?",
+       "answer": "13 m, so (7 + 13) × 2 = 40 m",
+       "answerLabel": "Perimeter:"
+      },
+      {
+       "prompt": "A square has an area of 81 cm². What is its perimeter? How do you know?",
+       "answer": "9 × 9 = 81, so each side is 9 cm. Perimeter 36 cm.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Plan a room",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Carpet a 5 m by 4 m room at $30 a square metre.",
+      "steps": [
+       "Area: 5 × 4 = 20 m².",
+       "Cost: 20 × $30 = $600."
+      ],
+      "answer": "$600"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Design an L-shaped bedroom. Label its sides, find its area, and work out the cost of carpet at $42 a square metre. Show your working.",
+       "answer": "Check: the L-shape is split into two rectangles, the areas are added correctly, and the cost = area × $42."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: missing sides from times facts, the split already drawn, and a hint on every question.",
+   "title": "Area Problems: Step by Step",
+   "subtitle": "Use a times fact to find the missing side.",
+   "sections": [
+    {
+     "title": "Missing side from a times fact",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Area 24 m², one side 6 m.",
+      "steps": [
+       "6 x ? = 24.",
+       "6 × 4 = 24.",
+       "The other side is 4 m."
+      ],
+      "answer": "4 m"
+     },
+     "items": [
+      {
+       "prompt": "Area 35 m², one side 5 m. 5 × ___ = 35",
+       "hint": "Count in fives to 35.",
+       "answer": "7 m",
+       "answerLabel": "Side:"
+      },
+      {
+       "prompt": "Area 32 m², one side 4 m. 4 × ___ = 32",
+       "hint": "Count in fours to 32.",
+       "answer": "8 m",
+       "answerLabel": "Side:"
+      }
+     ]
+    },
+    {
+     "title": "The split is drawn",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Add the two parts.",
+      "steps": [
+       "Bottom part: 6 × 2 = 12.",
+       "Top part: 3 × 3 = 9.",
+       "12 + 9 = 21 m²."
+      ],
+      "answer": "21 m²"
+     },
+     "items": [
+      {
+       "prompt": "Bottom part ___ + top part ___ = ___ m²",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          8,
+          0
+         ],
+         [
+          8,
+          3
+         ],
+         [
+          4,
+          3
+         ],
+         [
+          4,
+          6
+         ],
+         [
+          0,
+          6
+         ]
+        ],
+        "labels": [
+         "8 m",
+         "3 m",
+         null,
+         "3 m",
+         "4 m",
+         "6 m"
+        ],
+        "splits": [
+         [
+          [
+           0,
+           3
+          ],
+          [
+           4,
+           3
+          ]
+         ]
+        ],
+        "maxH": 150
+       },
+       "hint": "Bottom: 8 × 3. Top: 4 × 3.",
+       "answer": "24 + 12 = 36 m²",
+       "working": "none"
+      },
+      {
+       "prompt": "Bottom part ___ + top part ___ = ___ m²",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          10,
+          0
+         ],
+         [
+          10,
+          2
+         ],
+         [
+          5,
+          2
+         ],
+         [
+          5,
+          6
+         ],
+         [
+          0,
+          6
+         ]
+        ],
+        "labels": [
+         "10 m",
+         "2 m",
+         null,
+         "4 m",
+         "5 m",
+         "6 m"
+        ],
+        "splits": [
+         [
+          [
+           0,
+           2
+          ],
+          [
+           5,
+           2
+          ]
+         ]
+        ],
+        "maxH": 150
+       },
+       "hint": "Bottom: 10 × 2. Top: 5 × 4.",
+       "answer": "20 + 20 = 40 m²",
+       "working": "none"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 3 of our area and perimeter week: today we solve area problems, including with division."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk, and add 'missing side = area divided by the known side' under the anchor. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Two lines cross",
+   "from": "teacher",
+   "prompts": [
+    "Find b."
+   ],
+   "visual": {
+    "type": "angle",
+    "rays": [
+     0,
+     180,
+     64,
+     244
+    ],
+    "arcs": [
+     {
+      "from": 0,
+      "to": 64,
+      "label": "64°"
+     },
+     {
+      "from": 64,
+      "to": 180,
+      "label": "b"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "b = 116°"
+    ]
+   },
+   "notes": {
+    "answer": "b = 116°",
+    "beats": [
+     [
+      "SAY: Let's warm up with angles, graphs and chance."
+     ],
+     [
+      "ASK: How big is angle b?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 116"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> point to the straight line that b and 64 share,",
+      "then subtract from 180. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 116 degrees: b sits next to 64 on a straight line.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 64, the opposite angle.",
+     "Fix: ask whether b is opposite or next to 64, and they redo it."
+    ],
+    "prep": "Review of Week 1 angles (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Check the scale",
+   "from": "teacher",
+   "prompts": [
+    "How many more did Team B score than Team A?"
+   ],
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Team A",
+     "Team B"
+    ],
+    "values": [
+     84,
+     92
+    ],
+    "yStart": 80,
+    "title": "Points this season",
+    "yLabel": "Points"
+   },
+   "reveal": {
+    "answers": [
+     "8 more"
+    ]
+   },
+   "notes": {
+    "answer": "8 more",
+    "beats": [
+     [
+      "ASK: How many more points did Team B score?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 8"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> read the bottom of the scale first, then both values. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 92 take away 84 is 8. The scale starts at 80,",
+      "so the columns exaggerate it. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "saying 'three times as many'.",
+     "Fix: read both values from the scale, and they subtract."
+    ],
+    "prep": "Week 3 review: critiquing a misleading graph.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Is it fair?",
+   "from": "teacher",
+   "prompts": [
+    "A wins on 1 or 2. B wins on 3 or 4. On 5 or 6, roll again. Fair?"
+   ],
+   "reveal": {
+    "answers": [
+     "fair: 2/6 each"
+    ]
+   },
+   "notes": {
+    "answer": "fair: 2/6 each",
+    "beats": [
+     [
+      "ASK: Is this dice game fair? Give each player's chance.",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: fair, 2/6 each"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> write the winner under each dice number. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's fair: each player has 2 of the 6 outcomes.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "saying unfair because 5 and 6 win for nobody.",
+     "Fix: compare only the players' chances, and they decide again."
+    ],
+    "prep": "Week 4 review: fair games.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Multiply with the written method: 3 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     739,
+     5
+    ],
+    "op": "×"
+   },
+   "reveal": {
+    "answers": [
+     "3 695"
+    ]
+   },
+   "notes": {
+    "answer": "3 695",
+    "beats": [
+     [
+      "SAY: Now for some written multiplication.",
+      "Multiply the ones first, and carry into the next column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 3 695"
+     ],
+     [
+      "SCAN boards for the carried digits.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 3 695.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "forgetting to add the carried digit after multiplying.",
+     "Fix: write each carry small above the next column, and they redo it."
+    ],
+    "prep": "Multiplication fluency: 3 digits, then 4, then 5. Keep the whole block under 6 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Multiply with the written method: 4 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     4608,
+     9
+    ],
+    "op": "×"
+   },
+   "reveal": {
+    "answers": [
+     "41 472"
+    ]
+   },
+   "notes": {
+    "answer": "41 472",
+    "beats": [
+     [
+      "SAY: Now it's 4 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 41 472"
+     ],
+     [
+      "SCAN boards for the carried digits.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 41 472.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "forgetting to add the carried digit after multiplying.",
+     "Fix: write each carry small above the next column, and they redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Multiply with the written method: 5 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     37254,
+     3
+    ],
+    "op": "×"
+   },
+   "reveal": {
+    "answers": [
+     "111 762"
+    ]
+   },
+   "notes": {
+    "answer": "111 762",
+    "beats": [
+     [
+      "SAY: Now it's 5 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 111 762"
+     ],
+     [
+      "SCAN boards for the carried digits.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 111 762.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "forgetting to add the carried digit after multiplying.",
+     "Fix: write each carry small above the next column, and they redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to solve area problems, including finding a missing side with division.",
+   "successCriteria": [
+    "I can find the area of a shape made of rectangles.",
+    "I can find a missing side by dividing the area by the known side.",
+    "I can decide whether to round up or down when a problem has a remainder."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: We can find areas now.",
+      "Today we solve problems: missing sides, joined shapes, and remainders."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 composite area is reachable for everyone; SC2 the missing side is the core and the exit evidence; SC3 interpreting remainders is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "What is the missing side?",
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      6,
+      0
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      0,
+      4
+     ]
+    ],
+    "labels": [
+     "6 m",
+     "? m",
+     null,
+     null
+    ],
+    "centerLabel": "24 m²"
+   },
+   "prompt": "Area 24 m², one side 6 m. How long is the other side?",
+   "notes": {
+    "answer": "4 m",
+    "beats": [
+     [
+      "POINT to the area and the 6.",
+      "SAY: This rectangle has an area of 24 square metres,",
+      "and one side is 6 metres."
+     ],
+     [
+      "ASK: How long is the other side?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 4 m"
+     ],
+     [
+      "SCAN boards for 4.",
+      "80%+ -> cold call one student: Which times fact helped?",
+      "Less -> say 6 times what is 24, and count in sixes. Re-ask."
+     ],
+     [
+      "SAY: It's 4 metres, because 6 times 4 is 24.",
+      "When we know the area and one side, we divide to find the other side."
+     ]
+    ],
+    "trap": [
+     "writing 18, by subtracting.",
+     "Fix: say 6 times what makes 24, and they redo it."
+    ],
+    "prep": "The launch comes after the LI: the missing side as a times fact turned around. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "composite shape",
+   "meaning": "A shape made by joining two or more simpler shapes.",
+   "example": "An L-shape is made of two rectangles.",
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      0,
+      9
+     ]
+    ],
+    "labels": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "splits": [
+     [
+      [
+       0,
+       4
+      ],
+      [
+       6,
+       4
+      ]
+     ]
+    ]
+   },
+   "notes": {
+    "answer": "a shape made of simpler shapes",
+    "beats": [
+     [
+      "POINT to the words.",
+      "SAY: These words are composite shape. Say them with me: com-po-site shape."
+     ],
+     [
+      "SAY: A composite shape is made by joining simpler shapes.",
+      "This L-shape is two rectangles joined together."
+     ],
+     [
+      "ASK: How many rectangles make this L-shape?",
+      "5 sec. Cue: Fingers at your chest... show me.",
+      "EXPECT: 2"
+     ]
+    ],
+    "trap": [
+     "seeing three rectangles.",
+     "Fix: trace the dashed line, and they count again."
+    ],
+    "prep": "Composite shapes are split along a dashed line.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Find the missing side",
+   "steps": [
+    "Area = length × width, so 8 x ? = 96.",
+    "Divide: 96 divided by 8.",
+    "96 divided by 8 = 12.",
+    "The missing side is 12 m."
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      0
+     ],
+     [
+      12,
+      8
+     ],
+     [
+      0,
+      8
+     ]
+    ],
+    "labels": [
+     "? m",
+     "8 m",
+     null,
+     null
+    ],
+    "centerLabel": "96 m²"
+   },
+   "reveal": {
+    "answers": [
+     "Area 135 m², width 5 m: 27 m"
+    ]
+   },
+   "notes": {
+    "answer": "27 m",
+    "beats": [
+     [
+      "POINT to 96 and 8.",
+      "SAY: The area is 96 square metres, and one side is 8 metres.",
+      "So 8 times something is 96."
+     ],
+     [
+      "MODEL dividing.",
+      "SAY: To find that something, I divide: 96 divided by 8.",
+      "8 tens is 80, and 2 more eights is 16, so it's 12 metres."
+     ],
+     [
+      "ASK: A rectangle has an area of 135",
+      "square metres and one side of 5 metres.",
+      "How long is the other side?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 27 m"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 135 divided by 5 is 27 metres. Check: 27 times 5 is 135."
+     ]
+    ],
+    "trap": [
+     "multiplying 135 by 5.",
+     "Fix: say 5 times what is 135, and they divide."
+    ],
+    "stretch": "Find the perimeter of that rectangle too.",
+    "help": "Use the division bracket, or count up in fives.",
+    "prep": "Missing side = area divided by the known side. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Area of a composite shape",
+   "steps": [
+    "Split it into two rectangles.",
+    "Bottom: 10 × 4 = 40 cm².",
+    "Top: 6 × 5 = 30 cm².",
+    "Total: 40 + 30 = 70 cm²."
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      0,
+      9
+     ]
+    ],
+    "labels": [
+     "10 cm",
+     "4 cm",
+     null,
+     "5 cm",
+     "6 cm",
+     "9 cm"
+    ],
+    "splits": [
+     [
+      [
+       0,
+       4
+      ],
+      [
+       6,
+       4
+      ]
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "Split the other way: 54 + 16 = 70 cm²"
+    ]
+   },
+   "notes": {
+    "answer": "70 cm² both ways",
+    "beats": [
+     [
+      "MODEL the dashed line.",
+      "SAY: I can't use length times width on an L-shape,",
+      "so I split it into two rectangles."
+     ],
+     [
+      "MODEL each part.",
+      "SAY: The bottom is 10 by 4, which is 40.",
+      "The top is 6 by 5, which is 30.",
+      "Altogether, 70 square centimetres."
+     ],
+     [
+      "ASK: Split it the other way, with a line going up.",
+      "Do you get the same area?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: yes, 54 + 16 = 70"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Left part 6 by 9 is 54,",
+      "right part 4 by 4 is 16: 70 again.",
+      "Any sensible split gives the same area."
+     ]
+    ],
+    "trap": [
+     "multiplying the two longest sides.",
+     "Fix: shade the missing corner, and they split instead."
+    ],
+    "stretch": "Take the corner away from a big rectangle.",
+    "help": "Colour each part differently.",
+    "prep": "Split, find each area, add. SC1.",
+    "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Round up or not?",
+   "steps": [
+    "50 divided by 6 = 8 remainder 2.",
+    "8 boxes leave 2 m² uncovered.",
+    "Every bit must be covered, so round up.",
+    "Buy 9 boxes."
+   ],
+   "visual": {
+    "type": "text",
+    "text": "A floor is 50 m². One box of tiles covers 6 m². How many boxes?"
+   },
+   "reveal": {
+    "answers": [
+     "34 m² wall, 8 m² a tin: 5 tins"
+    ]
+   },
+   "notes": {
+    "answer": "5 tins",
+    "beats": [
+     [
+      "MODEL 50 divided by 6.",
+      "SAY: 50 divided by 6 is 8, with 2 left over."
+     ],
+     [
+      "POINT to the remainder.",
+      "SAY: 8 boxes would leave 2 square metres bare.",
+      "We have to cover the whole floor, so we round up to 9 boxes."
+     ],
+     [
+      "ASK: A wall is 34 square metres,",
+      "and one tin of paint covers 8. How many tins?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 5"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 34 divided by 8 is 4, remainder 2.",
+      "4 tins leave part of the wall unpainted, so we need 5."
+     ]
+    ],
+    "trap": [
+     "writing 4 remainder 2 as the answer.",
+     "Fix: ask whether you can buy part of a tin, and they round up."
+    ],
+    "stretch": "When would you round down instead? Give an example.",
+    "help": "Draw the tins and shade what each covers.",
+    "prep": "Decide what the answer means before you round. SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Area 72 m², one side 9 m",
+   "prompt": "How long is the other side? Point to A, B or C",
+   "options": [
+    {
+     "text": "8 m"
+    },
+    {
+     "text": "63 m",
+     "misconception": "subtracts the side from the area"
+    },
+    {
+     "text": "648 m",
+     "misconception": "multiplies the area by the side instead of dividing"
+    }
+   ],
+   "answer": 0,
+   "notes": {
+    "answer": "A",
+    "beats": [
+     [
+      "SAY: Think: 9 times what makes 72?"
+     ],
+     [
+      "ASK: How long is the other side?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to A"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What went wrong in C?",
+      "Less -> write 9 x ? = 72 and count in nines. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's A, 8 metres: 9 times 8 is 72.",
+      "B subtracted, and C multiplied."
+     ]
+    ],
+    "trap": [
+     "pointing to C.",
+     "Fix: check C: is 648 times 9 equal to 72? and they choose again."
+    ],
+    "prep": "First decision point. B: subtracting; C: multiplying instead of dividing.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Solve it",
+   "ask": "What is the answer? Watch the units.",
+   "routine": "boards",
+   "thinkTime": 30,
+   "pivot": "write the times fact or draw the split first",
+   "followUp": "cold call one board: Did you round? Why?",
+   "items": [
+    {
+     "text": "Area 56 m², width 7 m. Length?",
+     "answer": "8 m"
+    },
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        8,
+        0
+       ],
+       [
+        8,
+        3
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        5,
+        7
+       ],
+       [
+        0,
+        7
+       ]
+      ],
+      "labels": [
+       "8 m",
+       "3 m",
+       null,
+       "4 m",
+       "5 m",
+       "7 m"
+      ]
+     },
+     "label": "Area?",
+     "answer": "24 + 20 = 44 m²"
+    },
+    {
+     "text": "Area 144 cm², one side 12 cm. Other side?",
+     "answer": "12 cm",
+     "say": "12 cm. Both sides are 12, so it's a square."
+    },
+    {
+     "text": "A lawn is 75 m². One bag of seed covers 10 m². How many bags?",
+     "answer": "8 bags",
+     "say": "75 divided by 10 is 7, remainder 5. Round up: 8 bags."
+    },
+    {
+     "text": "A 4 m by 7 m bed. Each plant needs 3 m². How many plants fit?",
+     "answer": "9 plants",
+     "say": "28 divided by 3 is 9, remainder 1. Round down: 9 plants."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write each answer with its units on your board."
+    ],
+    "trap": [
+     "always rounding up.",
+     "Fix: ask what the leftover means here, and they decide again."
+    ],
+    "stretch": "Write a problem where you must round down.",
+    "help": "Write the times fact with a gap first: 7 x ___ = 56.",
+    "prep": "Guided practice: a missing side, a composite area, a square, then round up and round down. SC2 and SC3.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "How many boxes?",
+   "visual": {
+    "type": "text",
+    "text": "A hall floor is 85 m². One box of tiles covers 9 m²."
+   },
+   "label": "How many boxes are needed?",
+   "reveal": {
+    "answers": [
+     "10 boxes"
+    ]
+   },
+   "notes": {
+    "answer": "10 boxes. 9 means the remainder was ignored",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Think about what the remainder means."
+     ],
+     [
+      "ASK: How many boxes of tiles are needed?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 10"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> work out 85 divided by 9 together,",
+      "then ask what is left bare. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 85 divided by 9 is 9, remainder 4.",
+      "9 boxes leave 4 square metres bare,",
+      "so we need 10. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 9.",
+     "Fix: ask whether 9 boxes cover the whole floor, and they round up."
+    ],
+    "prep": "The hinge before independent work. Anyone writing 9 or 9 r 4 starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC3 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Solve area problems on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Does your remainder mean round up or round down?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "ignoring the remainder.",
+     "Fix: ask what the leftover means, and they decide."
+    ],
+    "stretch": "Extension: areas with a hole, working back to perimeter, and planning a room.",
+    "help": "Supported Worksheet: times facts for missing sides and splits drawn for you.",
+    "prep": "Independent practice: missing sides, composite areas and remainder problems. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "How long is the missing side?"
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      24,
+      0
+     ],
+     [
+      24,
+      7
+     ],
+     [
+      0,
+      7
+     ]
+    ],
+    "labels": [
+     "? m",
+     "7 m",
+     null,
+     null
+    ],
+    "centerLabel": "168 m²"
+   },
+   "notes": {
+    "answer": "24 m",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: How long is the missing side of a rectangle",
+      "with area 168 square metres and one side 7 metres?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 24 m"
+     ],
+     [
+      "RECORD who multiplies or subtracts instead of dividing.",
+      "Their names go to next week's catch-up group."
+     ]
+    ],
+    "trap": [
+     "writing 1176 or 161.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2 across the week: a three-digit area divided by a one-digit side.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner how you find a missing side.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for divide the area by the known side",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can solve area problems with division?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 1176 on the board matters most."
+     ],
+     [
+      "ASK: How do you find a missing side when you know the area?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: divide the area by the known side"
+     ]
+    ],
+    "prep": "Week close: read the self-assessment beside the exit evidence for next week's review.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

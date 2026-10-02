@@ -1,0 +1,1721 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 5,
+  "session": 2,
+  "title": "Area of Rectangles",
+  "subtitle": "Term 4 Week 5, Session 2",
+  "meta": "Year 5/6 Maths | Measurement",
+  "footer": "Area and Perimeter | Year 5/6 Maths | Session 2",
+  "outputFolder": "T4W5_Maths_S2_Area",
+  "fileName": "Session 2 - Area of Rectangles.pptx",
+  "titleVisual": {
+   "type": "shape",
+   "shapes": [
+    {
+     "points": [
+      [
+       0,
+       0
+      ],
+      [
+       7,
+       0
+      ],
+      [
+       7,
+       3.6
+      ],
+      [
+       0,
+       3.6
+      ]
+     ],
+     "labels": [
+      "20 m",
+      null,
+      null,
+      "6 m"
+     ],
+     "centerLabel": "20 × 6"
+    },
+    {
+     "points": [
+      [
+       7,
+       0
+      ],
+      [
+       10.2,
+       0
+      ],
+      [
+       10.2,
+       3.6
+      ],
+      [
+       7,
+       3.6
+      ]
+     ],
+     "labels": [
+      "3 m",
+      null,
+      null,
+      null
+     ],
+     "centerLabel": "3 × 6"
+    }
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 5 (VC2M5N06) applied to measurement: multiplying larger numbers by one- and two-digit numbers with efficient strategies to find the area of rectangles, and checking reasonableness",
+   "shape": "short-cycle loops: model one strategy, try one, then the next strategy, because choosing an efficient strategy is the new skill",
+   "criticalFeature": "area = length x width, in square units; split or double and halve to make the multiplication easy",
+   "decisionPoints": [
+    "the choice check: area of a 9 m by 7 m rectangle",
+    "the hinge: area of a 27 m by 8 m rectangle",
+    "the exit ticket"
+   ],
+   "anchor": "perimeter goes around the edge (add the sides); area covers the inside (length x width)",
+   "catchUp": "Missed Session 1? Trace the edge of a rectangle (perimeter) then shade its inside (area) before the launch."
+  }
+ },
+ "materials": {
+  "manipulatives": [
+   "Square tiles or grid paper for counting (optional)"
+  ],
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: perimeter goes around the edge (add the sides); area covers the inside (length x width)",
+   "Strategy list: split the long side; double and halve; the written method"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Count and multiply, a table of areas with efficient strategies, and room, court and garden problems.",
+   "title": "Area of Rectangles",
+   "subtitle": "Area = length × width, in square units.",
+   "sections": [
+    {
+     "title": "Count, then multiply",
+     "proficiency": "understanding",
+     "columns": 3,
+     "example": {
+      "prompt": "How many squares cover a 4 by 3 rectangle?",
+      "steps": [
+       "Rows: 3. Squares in each row: 4.",
+       "3 × 4 = 12.",
+       "12 square units."
+      ],
+      "answer": "12 square units"
+     },
+     "items": [
+      {
+       "prompt": "Area?",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          6,
+          0
+         ],
+         [
+          6,
+          3
+         ],
+         [
+          0,
+          3
+         ]
+        ],
+        "grid": true,
+        "labels": [
+         null,
+         null,
+         null,
+         null
+        ],
+        "maxH": 80
+       },
+       "answer": "18",
+       "answerLabel": "Area:",
+       "unit": "squares",
+       "working": "none"
+      },
+      {
+       "prompt": "Area?",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          8,
+          0
+         ],
+         [
+          8,
+          4
+         ],
+         [
+          0,
+          4
+         ]
+        ],
+        "grid": true,
+        "labels": [
+         null,
+         null,
+         null,
+         null
+        ],
+        "maxH": 80
+       },
+       "answer": "32",
+       "answerLabel": "Area:",
+       "unit": "squares",
+       "working": "none"
+      },
+      {
+       "prompt": "Area?",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          5,
+          0
+         ],
+         [
+          5,
+          5
+         ],
+         [
+          0,
+          5
+         ]
+        ],
+        "grid": true,
+        "labels": [
+         null,
+         null,
+         null,
+         null
+        ],
+        "maxH": 80
+       },
+       "answer": "25",
+       "answerLabel": "Area:",
+       "unit": "squares",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Multiply efficiently",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "Find the area of a 24 m by 5 m rectangle.",
+      "steps": [
+       "Double and halve: 24 × 5 = 12 × 10.",
+       "12 × 10 = 120.",
+       "Area = 120 m²."
+      ],
+      "answer": "120 m²"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Find each area. Choose a strategy: split, double and halve, or the written method.",
+       "columns": [
+        "Length",
+        "Width",
+        "Area"
+       ],
+       "rows": [
+        [
+         "23 m",
+         "4 m",
+         ""
+        ],
+        [
+         "36 m",
+         "5 m",
+         ""
+        ],
+        [
+         "48 m",
+         "25 m",
+         ""
+        ],
+        [
+         "125 m",
+         "8 m",
+         ""
+        ],
+        [
+         "64 m",
+         "15 m",
+         ""
+        ],
+        [
+         "19 m",
+         "6 m",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "23 m",
+         "4 m",
+         "92 m²"
+        ],
+        [
+         "36 m",
+         "5 m",
+         "180 m²"
+        ],
+        [
+         "48 m",
+         "25 m",
+         "1 200 m²"
+        ],
+        [
+         "125 m",
+         "8 m",
+         "1 000 m²"
+        ],
+        [
+         "64 m",
+         "15 m",
+         "960 m²"
+        ],
+        [
+         "19 m",
+         "6 m",
+         "114 m²"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Rooms, courts and gardens",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "A rug is 4 m by 3 m. Carpet costs $20 a square metre. Cost?",
+      "steps": [
+       "Area: 4 × 3 = 12 m².",
+       "12 × $20 = $240."
+      ],
+      "answer": "$240"
+     },
+     "items": [
+      {
+       "prompt": "A classroom is 9 m by 7 m. New carpet costs $35 a square metre. How much will it cost?",
+       "answer": "63 m², 63 × $35 = $2205",
+       "answerLabel": "Cost:"
+      },
+      {
+       "prompt": "A netball court is 30 m by 15 m. What is its area?",
+       "answer": "450",
+       "answerLabel": "Area:",
+       "unit": "m²"
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Jai found the area of a 12 m by 5 m garden. Find his mistake and fix it.",
+       "work": [
+        "12 + 5 + 12 + 5 = 34",
+        "The area is 34 m²."
+       ],
+       "answer": "He found the perimeter. Area = 12 × 5 = 60 m²."
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which has the bigger area?",
+       "options": [
+        "8 m by 3 m",
+        "5 m by 5 m",
+        "they are the same"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "8 × 3 = 24 m² and 5 × 5 = 25 m², so the square is 1 m² bigger."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Factor strategies, the same area with different perimeters, and a rectangle puzzle, with worked examples.",
+   "title": "Extension: Area Strategies",
+   "subtitle": "Rearrange the factors to make it easy.",
+   "sections": [
+    {
+     "title": "Use the factors",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Area of a 15 m by 16 m rectangle?",
+      "steps": [
+       "15 = 3 × 5 and 16 = 2 × 8.",
+       "Rearrange: (5 × 2) × (3 × 8) = 10 × 24.",
+       "10 × 24 = 240 m²."
+      ],
+      "answer": "240 m²"
+     },
+     "items": [
+      {
+       "prompt": "Use factors to find the area of a 25 m by 12 m rectangle. Show how you rearranged them.",
+       "answer": "25 × 4 × 3 = 100 × 3 = 300 m²",
+       "lines": 3
+      },
+      {
+       "prompt": "Use factors to find the area of a 14 m by 15 m rectangle.",
+       "answer": "7 × 2 × 5 × 3 = 10 × 21 = 210 m²",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Same area, different perimeter",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Two rectangles with area 12 m²: compare perimeters.",
+      "steps": [
+       "6 by 2: perimeter 16 m.",
+       "4 by 3: perimeter 14 m.",
+       "Same area, different perimeters."
+      ],
+      "answer": "16 m and 14 m"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Every rectangle has an area of 36 m². Fill in the table. Which has the smallest perimeter?",
+       "columns": [
+        "Length",
+        "Width",
+        "Perimeter"
+       ],
+       "rows": [
+        [
+         "36 m",
+         "",
+         ""
+        ],
+        [
+         "18 m",
+         "",
+         ""
+        ],
+        [
+         "12 m",
+         "",
+         ""
+        ],
+        [
+         "9 m",
+         "",
+         ""
+        ],
+        [
+         "6 m",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "36 m",
+         "1 m",
+         "74 m"
+        ],
+        [
+         "18 m",
+         "2 m",
+         "40 m"
+        ],
+        [
+         "12 m",
+         "3 m",
+         "30 m"
+        ],
+        [
+         "9 m",
+         "4 m",
+         "26 m"
+        ],
+        [
+         "6 m",
+         "6 m",
+         "24 m (smallest)"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Rectangle puzzle",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "A rectangle's sides are whole numbers. Area 20 m², perimeter 18 m. What is it?",
+      "steps": [
+       "List pairs that multiply to 20: 1 and 20, 2 and 10, 4 and 5.",
+       "Check: (4 + 5) × 2 = 18.",
+       "4 m by 5 m."
+      ],
+      "answer": "4 m by 5 m"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Find a rectangle with whole-number sides, an area of 48 m² and a perimeter of 28 m. Then make up a puzzle like this for a partner.",
+       "answer": "6 m by 8 m: 6 × 8 = 48 and (6 + 8) × 2 = 28."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: grids to count, rows times columns, and a hint on every question.",
+   "title": "Area: Step by Step",
+   "subtitle": "Count the rows, then the squares in a row.",
+   "sections": [
+    {
+     "title": "Count the squares",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Area of a 4 by 2 rectangle?",
+      "visual": {
+       "type": "shape",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         4,
+         0
+        ],
+        [
+         4,
+         2
+        ],
+        [
+         0,
+         2
+        ]
+       ],
+       "grid": true,
+       "labels": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      "steps": [
+       "2 rows of 4.",
+       "4 + 4 = 8, or 2 × 4 = 8.",
+       "8 squares."
+      ],
+      "answer": "8 squares"
+     },
+     "items": [
+      {
+       "prompt": "___ rows of ___ = ___ squares",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          5,
+          0
+         ],
+         [
+          5,
+          3
+         ],
+         [
+          0,
+          3
+         ]
+        ],
+        "grid": true,
+        "labels": [
+         null,
+         null,
+         null,
+         null
+        ],
+        "maxH": 140
+       },
+       "hint": "Count the rows going up first.",
+       "answer": "3 rows of 5 = 15",
+       "working": "none"
+      },
+      {
+       "prompt": "___ rows of ___ = ___ squares",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          6,
+          0
+         ],
+         [
+          6,
+          4
+         ],
+         [
+          0,
+          4
+         ]
+        ],
+        "grid": true,
+        "labels": [
+         null,
+         null,
+         null,
+         null
+        ],
+        "maxH": 140
+       },
+       "hint": "Count one row, then how many rows.",
+       "answer": "4 rows of 6 = 24",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Length × width",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Area of a 7 m by 3 m rectangle?",
+      "steps": [
+       "Length × width.",
+       "7 × 3 = 21.",
+       "21 m²."
+      ],
+      "answer": "21 m²"
+     },
+     "items": [
+      {
+       "prompt": "A rug is 8 m by 2 m. Area = ___ × ___ = ___ m²",
+       "hint": "8 lots of 2.",
+       "answer": "8 × 2 = 16 m²",
+       "answerLabel": "Area:"
+      },
+      {
+       "prompt": "A mat is 10 m by 4 m. Area = ___ × ___ = ___ m²",
+       "hint": "Times by 10: add a zero.",
+       "answer": "10 × 4 = 40 m²",
+       "answerLabel": "Area:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 2 of our area and perimeter week: today we find the area of rectangles."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk, and write the strategy list on the board. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Read the graph",
+   "from": "teacher",
+   "prompts": [
+    "How many more books did Ava read than Leo?"
+   ],
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Mia",
+     "Leo",
+     "Ava"
+    ],
+    "values": [
+     12,
+     8,
+     15
+    ],
+    "title": "Books read",
+    "yLabel": "Books"
+   },
+   "reveal": {
+    "answers": [
+     "7 more"
+    ]
+   },
+   "notes": {
+    "answer": "7 more",
+    "beats": [
+     [
+      "SAY: Let's warm up with graphs, angles and chance."
+     ],
+     [
+      "ASK: How many more books did Ava read than Leo?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 7"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> lay a ruler across each column top and read the scale. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Ava read 15 and Leo read 8,",
+      "so Ava read 7 more. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 15, Ava's total.",
+     "Fix: ask what 'how many more' means, and they subtract."
+    ],
+    "prep": "Review of Week 3 statistics (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Reflex angle",
+   "from": "teacher",
+   "prompts": [
+    "Find the reflex angle."
+   ],
+   "visual": {
+    "type": "angle",
+    "rays": [
+     0,
+     280
+    ],
+    "arcs": [
+     {
+      "from": 0,
+      "to": 280,
+      "label": "?"
+     },
+     {
+      "from": 280,
+      "to": 360,
+      "label": "80°"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "280°"
+    ]
+   },
+   "notes": {
+    "answer": "280°",
+    "beats": [
+     [
+      "ASK: How big is the reflex angle?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 280"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> trace the full turn, then take away the inside angle. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 280 degrees, because 360 take away 80 is 280.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 100, from 180.",
+     "Fix: trace all the way round, and they redo it from 360."
+    ],
+    "prep": "Week 1 review: reflex angles.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Relative frequency",
+   "from": "teacher",
+   "prompts": [
+    "A dice showed six 6 times in 40 rolls. Write the relative frequency of six as a percentage."
+   ],
+   "reveal": {
+    "answers": [
+     "6/40 = 15%"
+    ]
+   },
+   "notes": {
+    "answer": "6/40 = 15%",
+    "beats": [
+     [
+      "ASK: What is the relative frequency of six, as a percentage?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 15%"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> write 6 over 40, then make it out of 100. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 6 out of 40 is 15 out of 100,",
+      "so 15 percent. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 6%.",
+     "Fix: ask what the total is, and they make it out of 100."
+    ],
+    "prep": "Week 4 review: relative frequency.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Multiply with the written method: 3 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     486,
+     7
+    ],
+    "op": "×"
+   },
+   "reveal": {
+    "answers": [
+     "3 402"
+    ]
+   },
+   "notes": {
+    "answer": "3 402",
+    "beats": [
+     [
+      "SAY: Now for some written multiplication.",
+      "Multiply the ones first, and carry into the next column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 3 402"
+     ],
+     [
+      "SCAN boards for the carried digits.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 3 402.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "forgetting to add the carried digit after multiplying.",
+     "Fix: write each carry small above the next column, and they redo it."
+    ],
+    "prep": "Multiplication fluency: 3 digits, then 4, then 5. Keep the whole block under 6 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Multiply with the written method: 4 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     3075,
+     8
+    ],
+    "op": "×"
+   },
+   "reveal": {
+    "answers": [
+     "24 600"
+    ]
+   },
+   "notes": {
+    "answer": "24 600",
+    "beats": [
+     [
+      "SAY: Now it's 4 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 24 600"
+     ],
+     [
+      "SCAN boards for the carried digits.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 24 600.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "forgetting to add the carried digit after multiplying.",
+     "Fix: write each carry small above the next column, and they redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Multiply with the written method: 5 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     24683,
+     6
+    ],
+    "op": "×"
+   },
+   "reveal": {
+    "answers": [
+     "148 098"
+    ]
+   },
+   "notes": {
+    "answer": "148 098",
+    "beats": [
+     [
+      "SAY: Now it's 5 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 148 098"
+     ],
+     [
+      "SCAN boards for the carried digits.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 148 098.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "forgetting to add the carried digit after multiplying.",
+     "Fix: write each carry small above the next column, and they redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to find the area of rectangles using efficient multiplication.",
+   "successCriteria": [
+    "I can find the area of a rectangle by counting squares or multiplying length by width.",
+    "I can multiply larger numbers to find an area, choosing an efficient strategy.",
+    "I can explain why area is measured in square units."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: Yesterday we went around the edge.",
+      "Today we find how much space is inside: the area."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 counting and length x width is reachable for everyone; SC2 efficient multiplication is the core and the exit evidence; SC3 square units is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Cover it with squares",
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      6,
+      0
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      0,
+      4
+     ]
+    ],
+    "grid": true,
+    "labels": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "prompt": "How many squares cover the rectangle?",
+   "notes": {
+    "answer": "24 squares",
+    "beats": [
+     [
+      "POINT to the squares.",
+      "SAY: This rectangle is covered in squares. How many are there altogether?"
+     ],
+     [
+      "ASK: How many squares cover the rectangle?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 24"
+     ],
+     [
+      "SCAN boards for 24.",
+      "80%+ -> cold call one student:",
+      "Did you count them all, or find a quicker way?",
+      "Less -> count one row, 6, then count the rows, 4. Re-ask."
+     ],
+     [
+      "SAY: It's 24: 4 rows of 6.",
+      "Multiplying the rows by the squares in each row is much faster than counting."
+     ]
+    ],
+    "trap": [
+     "counting the edge only.",
+     "Fix: say area covers the inside, and they count again."
+    ],
+    "prep": "The launch comes after the LI: area as covering with squares, then rows times columns. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "area",
+   "meaning": "The amount of surface a shape covers, measured in square units.",
+   "example": "A 5 m by 3 m rug covers 15 square metres, written 15 m².",
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      0,
+      3
+     ]
+    ],
+    "grid": true,
+    "labels": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "notes": {
+    "answer": "the inside: square units",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is area. Say it with me: ar-e-a."
+     ],
+     [
+      "SAY: Area is how much surface a shape covers.",
+      "We measure it in squares, like square metres, written with a little 2: m squared."
+     ],
+     [
+      "ASK: Show me with your hands: is area the edge or the inside?",
+      "5 sec. Cue: Everyone, together, on three. Show... now.",
+      "EXPECT: hands rubbing the inside of the desk"
+     ]
+    ],
+    "trap": [
+     "writing m instead of m².",
+     "Fix: point to the squares, and they add the little 2."
+    ],
+    "prep": "Square units: m² and cm². The little 2 means square.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Split the long side",
+   "steps": [
+    "Area = length × width = 23 × 6.",
+    "Split 23 into 20 and 3.",
+    "20 × 6 = 120 and 3 × 6 = 18.",
+    "120 + 18 = 138 m²."
+   ],
+   "visual": {
+    "type": "shape",
+    "shapes": [
+     {
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        7,
+        0
+       ],
+       [
+        7,
+        3.6
+       ],
+       [
+        0,
+        3.6
+       ]
+      ],
+      "labels": [
+       "20 m",
+       null,
+       null,
+       "6 m"
+      ],
+      "centerLabel": "20 × 6"
+     },
+     {
+      "points": [
+       [
+        7,
+        0
+       ],
+       [
+        10.2,
+        0
+       ],
+       [
+        10.2,
+        3.6
+       ],
+       [
+        7,
+        3.6
+       ]
+      ],
+      "labels": [
+       "3 m",
+       null,
+       null,
+       null
+      ],
+      "centerLabel": "3 × 6"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "34 m by 5 m: 150 + 20 = 170 m²"
+    ]
+   },
+   "notes": {
+    "answer": "170 m²",
+    "beats": [
+     [
+      "POINT to the rectangle.",
+      "SAY: This garden is 23 metres by 6 metres.",
+      "23 times 6 is tricky in my head,",
+      "so I split the long side into 20 and 3."
+     ],
+     [
+      "MODEL the two parts.",
+      "SAY: 20 times 6 is 120, and 3 times 6 is 18.",
+      "I add the two parts: 138 square metres."
+     ],
+     [
+      "ASK: Use the same split.",
+      "What is the area of a rectangle 34 metres by 5 metres?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 170 m²"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 30 times 5 is 150,",
+      "and 4 times 5 is 20, so 170 square metres."
+     ]
+    ],
+    "trap": [
+     "multiplying only the tens.",
+     "Fix: point to the small part of the area model, and they add it."
+    ],
+    "stretch": "Split 23 another way. Same answer?",
+    "help": "Draw two boxes; write each part inside.",
+    "prep": "Split the long side: the area model matches the written method. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Double and halve",
+   "steps": [
+    "Area = 25 × 16.",
+    "Double 25, halve 16: 50 × 8.",
+    "Again: 100 × 4.",
+    "100 × 4 = 400 m²."
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      0
+     ],
+     [
+      25,
+      16
+     ],
+     [
+      0,
+      16
+     ]
+    ],
+    "labels": [
+     "25 m",
+     "16 m",
+     null,
+     null
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "15 m by 18 m: 30 × 9 = 270 m²"
+    ]
+   },
+   "notes": {
+    "answer": "270 m²",
+    "beats": [
+     [
+      "POINT to 25 and 16.",
+      "SAY: Here's another strategy.",
+      "When one number is 25 or 50, doubling it makes it easy."
+     ],
+     [
+      "MODEL double and halve.",
+      "SAY: If I double 25 and halve 16,",
+      "the area stays the same: 50 times 8.",
+      "Again: 100 times 4, which is 400 square metres."
+     ],
+     [
+      "ASK: Use double and halve.",
+      "What is the area of a rectangle 15 metres by 18 metres?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 270 m²"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Double 15 is 30 and half of 18 is 9,",
+      "so 30 times 9 is 270 square metres."
+     ]
+    ],
+    "trap": [
+     "doubling both numbers.",
+     "Fix: say one doubles, one halves, and they redo it."
+    ],
+    "stretch": "Why does doubling one side and halving the other keep the area the same?",
+    "help": "Write each step on a new line.",
+    "prep": "Double one side, halve the other: the area stays the same. SC2 and SC3.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "A 9 m by 7 m rectangle",
+   "prompt": "What is the area? Point to A, B or C",
+   "options": [
+    {
+     "text": "32 m²",
+     "misconception": "finds the perimeter, not the area"
+    },
+    {
+     "text": "63 m²"
+    },
+    {
+     "text": "16 m²",
+     "misconception": "adds the length and width instead of multiplying"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Area covers the inside. Think before you point."
+     ],
+     [
+      "ASK: What is the area of a 9 metre by 7 metre rectangle?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What did A find?",
+      "Less -> sketch the rectangle, then rows times squares in a row. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B, 63 square metres: 9 times 7.",
+      "A is the perimeter, and C added instead of multiplying."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: say area covers, perimeter goes around, and they choose again."
+    ],
+    "prep": "First decision point. A: perimeter confused with area; C: adding instead of multiplying.",
+    "tag": "[CFU | Supported application | SC1 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Find the area",
+   "ask": "What is the area? Choose an efficient strategy.",
+   "routine": "boards",
+   "thinkTime": 30,
+   "pivot": "draw the area model and split the long side",
+   "followUp": "cold call one board: Which strategy did you choose, and why?",
+   "items": [
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        7,
+        0
+       ],
+       [
+        7,
+        5
+       ],
+       [
+        0,
+        5
+       ]
+      ],
+      "grid": true,
+      "labels": [
+       null,
+       null,
+       null,
+       null
+      ]
+     },
+     "answer": "35 square units"
+    },
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        14,
+        0
+       ],
+       [
+        14,
+        6
+       ],
+       [
+        0,
+        6
+       ]
+      ],
+      "labels": [
+       "14 m",
+       "6 m",
+       null,
+       null
+      ]
+     },
+     "answer": "84 m²"
+    },
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        45,
+        0
+       ],
+       [
+        45,
+        4
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "labels": [
+       "45 cm",
+       "4 cm",
+       null,
+       null
+      ]
+     },
+     "answer": "180 cm²",
+     "say": "Double and halve: 90 times 2 is 180 square centimetres."
+    },
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        32,
+        0
+       ],
+       [
+        32,
+        25
+       ],
+       [
+        0,
+        25
+       ]
+      ],
+      "labels": [
+       "32 m",
+       "25 m",
+       null,
+       null
+      ]
+     },
+     "answer": "800 m²",
+     "say": "25 times 4 is 100, and 32 is 8 fours, so 800."
+    },
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        13,
+        0
+       ],
+       [
+        13,
+        13
+       ],
+       [
+        0,
+        13
+       ]
+      ],
+      "labels": [
+       "13 m",
+       "13 m",
+       null,
+       null
+      ]
+     },
+     "answer": "169 m²",
+     "say": "A square: 13 times 13. Split it: 130 plus 39 is 169."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write the area, with square units, on your board."
+    ],
+    "trap": [
+     "forgetting the square units.",
+     "Fix: point to the little 2, and they add it."
+    ],
+    "stretch": "Find each perimeter too.",
+    "help": "Draw the area model and split it.",
+    "prep": "Guided practice: counting, splitting, doubling and halving, then a square. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "What is the area?",
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      27,
+      0
+     ],
+     [
+      27,
+      8
+     ],
+     [
+      0,
+      8
+     ]
+    ],
+    "labels": [
+     "27 m",
+     "8 m",
+     null,
+     null
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "216 m²"
+    ]
+   },
+   "notes": {
+    "answer": "216 m². 70 means perimeter",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Choose your strategy."
+     ],
+     [
+      "ASK: What is the area of a rectangle 27 metres by 8 metres?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 216 m²"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> split 27 into 20 and 7 on an area model together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 20 times 8 is 160, and 7 times 8 is 56: 216 square metres.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 70.",
+     "Fix: say area covers the inside, and they multiply."
+    ],
+    "prep": "The hinge before independent work. Anyone with 70 (perimeter) or a place value slip starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Find areas with efficient strategies on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Which strategy did you choose for that one?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "adding instead of multiplying.",
+     "Fix: point to the area model, and they multiply."
+    ],
+    "stretch": "Extension: factor strategies, same area with different perimeters, and a puzzle.",
+    "help": "Supported Worksheet: grids to count, rows times columns, and hints.",
+    "prep": "Independent practice: counting, efficient multiplication and real problems. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "What is the area of the basketball court?"
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      28,
+      0
+     ],
+     [
+      28,
+      15
+     ],
+     [
+      0,
+      15
+     ]
+    ],
+    "labels": [
+     "28 m",
+     "15 m",
+     null,
+     null
+    ]
+   },
+   "notes": {
+    "answer": "420 m²",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What is the area of a basketball court 28 metres by 15 metres?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 420 m²"
+     ],
+     [
+      "RECORD who finds the perimeter or slips in the multiplication.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing 86.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: a two-digit by two-digit area in context.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner the strategy you like best for area, and why.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for split, double and halve, or the written method, with a reason",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can find the area of a rectangle?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 86 on the board matters most."
+     ],
+     [
+      "ASK: Which area strategy do you like best, and why?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: split, double and halve, or the written method, with a reason"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: area problems with division.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1259 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 7,
+  "session": 2,
+  "title": "Best Buy",
+  "subtitle": "Term 4 Week 7, Session 2",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Money and Percentages | Year 5/6 Maths | Session 2",
+  "outputFolder": "T4W7_Maths_S2_Best_Buy",
+  "fileName": "Session 2 - Best Buy.pptx",
+  "titleVisual": {
+   "type": "table",
+   "rows": [
+    [
+     "Pack",
+     "Price",
+     "Each"
+    ],
+    [
+     "6 bars",
+     "$9.00",
+     "$1.50"
+    ],
+    [
+     "4 bars",
+     "$5.00",
+     "$1.25"
+    ]
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 6 (VC2M6N09) with Year 5 (VC2M5N07): modelling purchasing decisions by comparing unit prices with division, interpreting and justifying the choice",
+   "shape": "problem-first: two packs of muesli bars with different sizes; students guess the better buy before the teacher models the unit price",
+   "criticalFeature": "compare the price of the same amount: one item, 100 g or 1 L",
+   "decisionPoints": [
+    "the choice check: 6 for $9 or 4 for $5?",
+    "the hinge: 2 L for $5 or 3 L for $6.60?",
+    "the exit ticket"
+   ],
+   "anchor": "read it, model it, solve it, check it: say what the answer means in the situation",
+   "catchUp": "Missed Session 1? Show one sale price worked out on a bar model, then start at the launch."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Calculators for checking (optional)",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The fortnight's anchor on the board: read it, model it, solve it, check it",
+   "Under it: unit price = price divided by how many"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Unit prices, which pack is the best buy, a mistake to fix, and canteen and sports store problems.",
+   "title": "Best Buy",
+   "subtitle": "Compare the price of the same amount.",
+   "sections": [
+    {
+     "title": "Price for one",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "8 muesli bars cost $6. What does one cost?",
+      "steps": [
+       "Divide the price by how many: $6 divided by 8.",
+       "$6.00 divided by 8 = $0.75.",
+       "One bar costs 75c."
+      ],
+      "answer": "$0.75"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Find the price of one item in each pack.",
+       "columns": [
+        "Pack",
+        "Price",
+        "Price for one"
+       ],
+       "rows": [
+        [
+         "8 pencils",
+         "$4",
+         ""
+        ],
+        [
+         "5 apples",
+         "$3.50",
+         ""
+        ],
+        [
+         "12 eggs",
+         "$6",
+         ""
+        ],
+        [
+         "4 tennis balls",
+         "$10",
+         ""
+        ],
+        [
+         "6 juice boxes",
+         "$4.20",
+         ""
+        ],
+        [
+         "10 stickers",
+         "$2.50",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "8 pencils",
+         "$4",
+         "$0.50"
+        ],
+        [
+         "5 apples",
+         "$3.50",
+         "$0.70"
+        ],
+        [
+         "12 eggs",
+         "$6",
+         "$0.50"
+        ],
+        [
+         "4 tennis balls",
+         "$10",
+         "$2.50"
+        ],
+        [
+         "6 juice boxes",
+         "$4.20",
+         "$0.70"
+        ],
+        [
+         "10 stickers",
+         "$2.50",
+         "$0.25"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Which is the best buy?",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "3 for $4.50 or 5 for $7?",
+      "steps": [
+       "3 for $4.50: $1.50 each.",
+       "5 for $7: $1.40 each.",
+       "5 for $7 is the better buy."
+      ],
+      "answer": "5 for $7"
+     },
+     "items": [
+      {
+       "kind": "choice",
+       "prompt": "Which pack of footy cards is the best buy?",
+       "options": [
+        "10 for $5",
+        "4 for $2.40",
+        "6 for $3.30"
+       ],
+       "answer": 0,
+       "reason": true,
+       "explain": "50c, 60c and 55c each: 10 for $5 is cheapest per card."
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which bottle of water is better value?",
+       "options": [
+        "600 mL for $1.80",
+        "1.5 L for $3.60"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "Per 100 mL: 30c and 24c. The 1.5 L bottle is better value."
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Tom says the 12-pack is cheaper because $9 is less than $10. Find his mistake and fix it.",
+       "work": [
+        "12 cans for $9 or 20 cans for $10.",
+        "$9 is less, so the 12-pack is the better buy."
+       ],
+       "answer": "Compare one can: 12 for $9 is 75c each, 20 for $10 is 50c each. The 20-pack is the better buy."
+      }
+     ]
+    },
+    {
+     "title": "Canteen and sports store",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "Is it cheaper to buy 2 packs of 3 balls at $12 a pack, or 6 balls at $3.50 each?",
+      "steps": [
+       "Packs: 2 × $12 = $24.",
+       "Singles: 6 × $3.50 = $21.",
+       "Singles are cheaper by $3."
+      ],
+      "answer": "singles, by $3"
+     },
+     "items": [
+      {
+       "prompt": "The canteen sells muffins at $2.50 each or a box of 6 for $12. How much do you save on 6 muffins with the box?",
+       "answer": "6 × $2.50 = $15; save $3",
+       "answerLabel": "Save:"
+      },
+      {
+       "prompt": "A team needs 24 drink bottles. Packs of 4 cost $14 and packs of 6 cost $19.80. Which packs should they buy, and how much will it cost?",
+       "answer": "Packs of 4: $3.50 each, 6 packs = $84. Packs of 6: $3.30 each, 4 packs = $79.20. Buy packs of 6: $79.20.",
+       "lines": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Unit prices per 100 g, when the bigger pack is not better, and a multi-buy deal, with worked examples.",
+   "title": "Extension: Smart Shopper",
+   "subtitle": "Not always the biggest pack.",
+   "sections": [
+    {
+     "title": "Per 100 grams",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "500 g of rice for $3.50. Price per 100 g?",
+      "steps": [
+       "500 g is 5 lots of 100 g.",
+       "$3.50 divided by 5 = $0.70.",
+       "70c per 100 g."
+      ],
+      "answer": "$0.70"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Find the price per 100 g, then circle the best value.",
+       "columns": [
+        "Cereal",
+        "Mass",
+        "Price",
+        "Per 100 g"
+       ],
+       "rows": [
+        [
+         "Oat crunch",
+         "500 g",
+         "$4.50",
+         ""
+        ],
+        [
+         "Honey puffs",
+         "300 g",
+         "$3.30",
+         ""
+        ],
+        [
+         "Wheat flakes",
+         "800 g",
+         "$6.40",
+         ""
+        ],
+        [
+         "Rice pops",
+         "250 g",
+         "$2.00",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "Oat crunch",
+         "500 g",
+         "$4.50",
+         "$0.90"
+        ],
+        [
+         "Honey puffs",
+         "300 g",
+         "$3.30",
+         "$1.10"
+        ],
+        [
+         "Wheat flakes",
+         "800 g",
+         "$6.40",
+         "$0.80"
+        ],
+        [
+         "Rice pops",
+         "250 g",
+         "$2.00",
+         "$0.80 (best, with wheat flakes)"
+        ]
+       ]
+      },
+      {
+       "prompt": "Which is better value: 1 kg of apples for $4.50, or 750 g for $3.60? Show the price per 100 g.",
+       "answer": "1 kg: 45c per 100 g. 750 g: 48c per 100 g. The 1 kg bag is better value.",
+       "lines": 3
+      },
+      {
+       "prompt": "A 2 kg bag of dog food costs $11. How much should a 5 kg bag cost to be the same value?",
+       "answer": "$5.50 per kg, so $27.50",
+       "answerLabel": "Price:"
+      }
+     ]
+    },
+    {
+     "title": "Bigger is not always better",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Why might you buy the smaller pack even if it costs more per item?",
+      "steps": [
+       "Think about what you need.",
+       "Food can go off before you finish it.",
+       "Buy what you will use."
+      ],
+      "answer": "if you won't use it all"
+     },
+     "items": [
+      {
+       "prompt": "A family needs 6 eggs this week. A 12-pack is $6 and a 6-pack is $3.90. Which should they buy? Explain.",
+       "answer": "The 6-pack ($3.90): the 12-pack is cheaper per egg (50c) but costs more and they only need 6.",
+       "lines": 3
+      },
+      {
+       "prompt": "Make up a situation where the bigger pack is the worse choice.",
+       "answer": "For example: fruit that goes off, or a big tub of paint for a tiny job.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Multi-buy deals",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "'Buy 2, get 1 free' on $4 drinks. Price for 3?",
+      "steps": [
+       "Pay for 2: $8.",
+       "Get 3 drinks.",
+       "$8 divided by 3 = about $2.67 each."
+      ],
+      "answer": "$8 for 3"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Shop A: 'Buy 3, get 1 free' on $5 socks. Shop B: '25% off' $5 socks. You need 8 pairs. Which shop is cheaper? Show your working.",
+       "answer": "Shop A: pay for 6 pairs = $30. Shop B: 8 × $3.75 = $30. They are the same."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: easy divisions, a step frame, and a hint on every question.",
+   "title": "Best Buy: Step by Step",
+   "subtitle": "Price for one = price divided by how many.",
+   "sections": [
+    {
+     "title": "Price for one",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "4 pens for $8. One pen?",
+      "steps": [
+       "$8 divided by 4.",
+       "$2 each."
+      ],
+      "answer": "$2"
+     },
+     "items": [
+      {
+       "prompt": "5 balls for $10. One ball = $___",
+       "hint": "10 divided by 5.",
+       "answer": "$2",
+       "answerLabel": "One:"
+      },
+      {
+       "prompt": "3 books for $12. One book = $___",
+       "hint": "12 divided by 3.",
+       "answer": "$4",
+       "answerLabel": "One:"
+      }
+     ]
+    },
+    {
+     "title": "Compare one each",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "2 for $6 or 3 for $6?",
+      "steps": [
+       "2 for $6: $3 each.",
+       "3 for $6: $2 each.",
+       "3 for $6 is the better buy."
+      ],
+      "answer": "3 for $6"
+     },
+     "items": [
+      {
+       "kind": "choice",
+       "prompt": "Which is the better buy?",
+       "hint": "Find the price for one in each.",
+       "options": [
+        "2 for $4",
+        "5 for $5"
+       ],
+       "answer": 1
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which is the better buy?",
+       "hint": "Find the price for one in each.",
+       "options": [
+        "4 for $8",
+        "10 for $30"
+       ],
+       "answer": 0
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 2 of our money and percentages fortnight: today we find the best buy."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk; calculators are optional for checking. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Missing side",
+   "from": "teacher",
+   "prompts": [
+    "Area 128 m², one side 8 m. Other side?"
+   ],
+   "reveal": {
+    "answers": [
+     "16 m"
+    ]
+   },
+   "notes": {
+    "answer": "16 m",
+    "beats": [
+     [
+      "SAY: Let's warm up with area, perimeter and division."
+     ],
+     [
+      "ASK: How long is the other side?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 16 m"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> say 8 times what is 128, then divide with the bracket. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 128 divided by 8 is 16 metres. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 120, by subtracting.",
+     "Fix: say 8 times what makes 128, and they divide."
+    ],
+    "prep": "Review of Week 5 area and perimeter (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Composite area",
+   "from": "teacher",
+   "prompts": [
+    "Find the area."
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      11,
+      0
+     ],
+     [
+      11,
+      4
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      0,
+      8
+     ]
+    ],
+    "labels": [
+     "11 m",
+     "4 m",
+     null,
+     "4 m",
+     "5 m",
+     "8 m"
+    ],
+    "splits": [
+     [
+      [
+       0,
+       4
+      ],
+      [
+       5,
+       4
+      ]
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "64 m²"
+    ]
+   },
+   "notes": {
+    "answer": "64 m²",
+    "beats": [
+     [
+      "ASK: What is the area of this L-shape?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 64 m²"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> draw the split line, find each rectangle, add. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The bottom is 11 by 4, which is 44,",
+      "and the top is 5 by 4, which is 20.",
+      "44 plus 20 is 64 square metres. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "multiplying the two longest sides.",
+     "Fix: shade the missing corner, and they split it."
+    ],
+    "prep": "Week 5 review: composite area.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Perimeter",
+   "from": "teacher",
+   "prompts": [
+    "A square paddock has a perimeter of 84 m. How long is each side?"
+   ],
+   "reveal": {
+    "answers": [
+     "21 m"
+    ]
+   },
+   "notes": {
+    "answer": "21 m",
+    "beats": [
+     [
+      "ASK: How long is each side of the paddock?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 21 m"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> say a square has 4 equal sides, then divide by 4. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 84 divided by 4 is 21 metres. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 42, by halving.",
+     "Fix: say 4 equal sides, and they divide by 4."
+    ],
+    "prep": "Week 5 review: perimeter, working backwards.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 3 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 945,
+    "divisor": 7
+   },
+   "reveal": {
+    "answers": [
+     "135"
+    ]
+   },
+   "notes": {
+    "answer": "135",
+    "beats": [
+     [
+      "SAY: Now for some short division with the division bracket.",
+      "Divide each digit from the left, and carry any remainder across."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 135"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 135.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "Division fluency: 3 digits, then 4, then 5. Keep the whole block under 6 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 4 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 6328,
+    "divisor": 8
+   },
+   "reveal": {
+    "answers": [
+     "791"
+    ]
+   },
+   "notes": {
+    "answer": "791",
+    "beats": [
+     [
+      "SAY: Now it's 4 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 791"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 791.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 5 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 47592,
+    "divisor": 6
+   },
+   "reveal": {
+    "answers": [
+     "7 932"
+    ]
+   },
+   "notes": {
+    "answer": "7 932",
+    "beats": [
+     [
+      "SAY: Now it's 5 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 7 932"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 7 932.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to compare prices to find the best buy.",
+   "successCriteria": [
+    "I can find the price of one item in a pack.",
+    "I can compare unit prices to find the best buy.",
+    "I can explain when the best buy is not the best choice."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: Yesterday we worked out sale prices.",
+      "Today we work out which deal is really the best value."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 price for one is reachable for everyone; SC2 comparing unit prices is the core and the exit evidence; SC3 judging the choice is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Which pack?",
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Pack",
+      "Price"
+     ],
+     [
+      "6 muesli bars",
+      "$9.00"
+     ],
+     [
+      "4 muesli bars",
+      "$5.00"
+     ]
+    ]
+   },
+   "prompt": "Which pack is the better buy?",
+   "notes": {
+    "answer": "4 for $5: $1.25 each",
+    "beats": [
+     [
+      "POINT to both packs.",
+      "SAY: Two packs of muesli bars. One has more bars, but it also costs more."
+     ],
+     [
+      "ASK: Which pack do you think is the better buy?",
+      "Show one finger for the 6-pack, two for the 4-pack.",
+      "10 sec. Cue: Fingers at your chest... show me.",
+      "EXPECT: a mix"
+     ],
+     [
+      "MODEL dividing each price.",
+      "SAY: Let's check one bar each.",
+      "9 dollars shared by 6 is 1.50, and 5 dollars shared by 4 is 1.25."
+     ],
+     [
+      "SAY: So the smaller pack is the better buy here.",
+      "Today we learn to compare the price of the same amount, every time."
+     ]
+    ],
+    "trap": [
+     "choosing the 6-pack because it has more.",
+     "Fix: find the price of one bar in each, and they compare again."
+    ],
+    "prep": "Problem-first: a guess before the unit price. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "unit price",
+   "meaning": "The price of one item, or one unit like 1 kg or 100 g.",
+   "example": "8 bars for $6 is a unit price of 75c a bar.",
+   "pictogram": "money",
+   "notes": {
+    "answer": "50c",
+    "beats": [
+     [
+      "POINT to the words.",
+      "SAY: These words are unit price. Say them with me: u-nit price."
+     ],
+     [
+      "SAY: The unit price is the price of one, like one bar or 100 grams.",
+      "Shops print it on the shelf label so you can compare."
+     ],
+     [
+      "ASK: 4 apples cost $2. What is the unit price of one apple?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 50c"
+     ]
+    ],
+    "trap": [
+     "writing $8.",
+     "Fix: say price divided by how many, and they divide."
+    ],
+    "prep": "Unit price makes different-sized packs comparable.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Find the unit price",
+   "steps": [
+    "Price divided by how many.",
+    "$7.50 divided by 5.",
+    "$7.50 = 750c; 750 divided by 5 = 150c.",
+    "$1.50 each."
+   ],
+   "visual": {
+    "type": "shortDivision",
+    "dividend": "7.50",
+    "divisor": 5,
+    "quotient": "1.50"
+   },
+   "reveal": {
+    "answers": [
+     "6 for $8.40: $1.40 each"
+    ]
+   },
+   "notes": {
+    "answer": "$1.40",
+    "beats": [
+     [
+      "POINT to the division.",
+      "SAY: 5 drinks cost 7 dollars 50.",
+      "To find one, I divide the price by 5."
+     ],
+     [
+      "MODEL the division bracket.",
+      "SAY: 5 into 7 is 1, remainder 2.",
+      "5 into 25 is 5. 5 into 0 is 0.",
+      "So one drink is 1 dollar 50."
+     ],
+     [
+      "ASK: 6 drinks cost $8.40. What is the unit price?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $1.40"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 8.40 divided by 6 is 1.40: 1 dollar 40 each."
+     ]
+    ],
+    "trap": [
+     "dividing 6 by 8.40.",
+     "Fix: say the price is shared out, and they set it up again."
+    ],
+    "stretch": "How much would 15 drinks cost at that price?",
+    "help": "Change dollars to cents first: 840c divided by 6.",
+    "prep": "Unit price = price divided by how many. SC1.",
+    "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Compare the same amount",
+   "steps": [
+    "1 L for $2.40: $0.24 per 100 mL.",
+    "750 mL for $2.10: $0.28 per 100 mL.",
+    "24c is less than 28c.",
+    "1 L is better value."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Juice",
+      "Price",
+      "Per 100 mL"
+     ],
+     [
+      "1 L",
+      "$2.40",
+      "24c"
+     ],
+     [
+      "750 mL",
+      "$2.10",
+      "28c"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "2 L for $3: 15c per 100 mL, best of all"
+    ]
+   },
+   "notes": {
+    "answer": "15c",
+    "beats": [
+     [
+      "POINT to the juice sizes.",
+      "SAY: When the sizes are different, I compare the same amount. I'll use 100 millilitres."
+     ],
+     [
+      "MODEL each unit price.",
+      "SAY: 1 litre is 10 lots of 100 mL,",
+      "so 2.40 divided by 10 is 24 cents.",
+      "750 mL works out at 28 cents, so the litre is better value."
+     ],
+     [
+      "ASK: A 2 L bottle costs $3. What is its price per 100 mL?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 15c"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 2 L is 20 lots of 100 mL,",
+      "and 3 dollars divided by 20 is 15 cents."
+     ]
+    ],
+    "trap": [
+     "comparing the total prices.",
+     "Fix: ask whether the bottles are the same size, and they find the unit price."
+    ],
+    "stretch": "What price would make 750 mL match?",
+    "help": "Count the lots of 100 mL first.",
+    "prep": "The critical feature: compare the price of the same amount. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which is the better buy?",
+   "prompt": "Point to A or B",
+   "options": [
+    {
+     "text": "6 for $9",
+     "misconception": "chooses the bigger pack without checking the unit price"
+    },
+    {
+     "text": "4 for $5"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B, $1.25 each",
+    "beats": [
+     [
+      "SAY: Find the price of one in each pack first."
+     ],
+     [
+      "ASK: Which is the better buy: 6 for 9 dollars, or 4 for 5 dollars?",
+      "20 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What is each unit price?",
+      "Less -> divide each price on the board together. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B. 6 for 9 dollars is 1.50 each,",
+      "and 4 for 5 dollars is 1.25 each."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: find the price of one in each, and they choose again."
+    ],
+    "prep": "First decision point. A means bigger is assumed better.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Find the unit price",
+   "ask": "What is the price for one?",
+   "routine": "boards",
+   "thinkTime": 25,
+   "pivot": "change to cents, then divide with the bracket",
+   "followUp": "cold call one board: How did you check it?",
+   "items": [
+    {
+     "text": "4 pies for $10",
+     "answer": "$2.50"
+    },
+    {
+     "text": "3 notebooks for $4.50",
+     "answer": "$1.50"
+    },
+    {
+     "text": "8 pencils for $2",
+     "answer": "25c"
+    },
+    {
+     "text": "5 kg of potatoes for $6.50",
+     "answer": "$1.30 per kg"
+    },
+    {
+     "text": "12 for $9 or 10 for $7?",
+     "answer": "10 for $7 (70c vs 75c)",
+     "say": "10 for 7 dollars is 70c each, cheaper than 75c."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write each unit price on your board."
+    ],
+    "trap": [
+     "dividing how many by the price.",
+     "Fix: say the price is shared out, and they redo it."
+    ],
+    "stretch": "Find the price of 15 of each.",
+    "help": "Change dollars to cents first.",
+    "prep": "Guided practice: easy divisions, cents, per kilogram, then a comparison. SC1 and SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Which milk is better value?",
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Milk",
+      "Price"
+     ],
+     [
+      "2 L",
+      "$5.00"
+     ],
+     [
+      "3 L",
+      "$6.60"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "3 L: $2.20 per litre beats $2.50"
+    ]
+   },
+   "notes": {
+    "answer": "3 L, $2.20 a litre",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Compare the price of one litre."
+     ],
+     [
+      "ASK: Which milk is better value, and what is its price per litre?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 3 L, $2.20 a litre"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> divide each price by the litres together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 2 L is 2.50 a litre, and 3 L is 2.20 a litre.",
+      "So the 3 L bottle is better value. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "choosing 2 L because $5 is cheaper.",
+     "Fix: ask what one litre costs in each, and they compare."
+    ],
+    "prep": "The hinge before independent work. Anyone choosing the 2 L starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Find unit prices and best buys on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Are you comparing the same amount?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "comparing total prices.",
+     "Fix: find the price for one, and they redo it."
+    ],
+    "stretch": "Extension: price per 100 g, when bigger is worse, and multi-buy deals.",
+    "help": "Supported Worksheet: easy divisions and a step frame.",
+    "prep": "Independent practice: unit prices, best buys, a mistake and real problems. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Which pack of socks is the better buy? Show the price per pair."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Socks",
+      "Price"
+     ],
+     [
+      "3 pairs",
+      "$10.50"
+     ],
+     [
+      "5 pairs",
+      "$16.00"
+     ]
+    ]
+   },
+   "notes": {
+    "answer": "5 pairs: $3.20 vs $3.50",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: Which pack of socks is the better buy,",
+      "and what does one pair cost in each?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 5 pairs: $3.20 vs $3.50"
+     ],
+     [
+      "RECORD who compares totals or divides the wrong way.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "choosing 3 pairs because $10.50 is less.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: a new comparison with decimal unit prices.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner how to find the best buy.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for work out the price for one of each, then compare",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can find the best buy?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with '3 pairs' on the board matters most."
+     ],
+     [
+      "ASK: How do you find the best buy?",
+      "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: work out the price for one of each, then compare"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: when prices go up.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

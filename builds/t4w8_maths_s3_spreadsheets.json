@@ -1,0 +1,1443 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 8,
+  "session": 3,
+  "title": "Budgets in a Spreadsheet",
+  "subtitle": "Term 4 Week 8, Session 3",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Budgeting | Year 5/6 Maths | Session 3",
+  "outputFolder": "T4W8_Maths_S3_Spreadsheets",
+  "fileName": "Session 3 - Budgets in a Spreadsheet.pptx",
+  "titleVisual": {
+   "type": "text",
+   "text": "=B2*C2"
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 6 (VC2M6N09): representing a budget in a spreadsheet, creating and using formulas to calculate totals",
+   "shape": "example-first: the teacher names cells and builds one formula, then the class predicts what formulas calculate, because cell references are new",
+   "criticalFeature": "a formula uses cell references (like B2), so the total updates itself when a number changes",
+   "decisionPoints": [
+    "the choice check: which formula finds the cost of the pencils?",
+    "the hinge: what will =SUM(D2:D4) show?",
+    "the exit ticket"
+   ],
+   "anchor": "read it, model it, solve it, check it: say what the answer means in the situation",
+   "catchUp": "Missed Sessions 1 or 2? Show a budget table: income minus expenses equals money left over."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Devices with a spreadsheet program (Google Sheets or Excel), if available",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The fortnight's anchor on the board: read it, model it, solve it, check it",
+   "If devices are available, open a blank spreadsheet on the board and type the I Do example live"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Name cells, predict formulas, build a camping budget, fix a formula, and change a number.",
+   "title": "Budgets in a Spreadsheet",
+   "subtitle": "A formula uses cell references, so totals update themselves.",
+   "sections": [
+    {
+     "title": "Name the cells",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "In a shopping sheet, column B is Price and row 3 is Ruler. What is cell B3?",
+      "steps": [
+       "Find column B.",
+       "Go down to row 3.",
+       "Read the cell: the ruler's price."
+      ],
+      "answer": "the ruler's price"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "A sheet of netball stats. Column A: player, B: goals, C: games. Fill in the missing cells.",
+       "columns": [
+        "",
+        "A",
+        "B",
+        "C"
+       ],
+       "rows": [
+        [
+         "1",
+         "Player",
+         "Goals",
+         "Games"
+        ],
+        [
+         "2",
+         "Mia",
+         "12",
+         "8"
+        ],
+        [
+         "3",
+         "Jai",
+         "",
+         "10"
+        ],
+        [
+         "4",
+         "Liv",
+         "15",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "1",
+         "Player",
+         "Goals",
+         "Games"
+        ],
+        [
+         "2",
+         "Mia",
+         "12",
+         "8"
+        ],
+        [
+         "3",
+         "Jai",
+         "9 (B3)",
+         "10"
+        ],
+        [
+         "4",
+         "Liv",
+         "15",
+         "9 (C4)"
+        ]
+       ],
+       "span": "full"
+      }
+     ]
+    },
+    {
+     "title": "Predict the formula",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "B2 = 6, C2 = 4. What does =B2*C2 show?",
+      "steps": [
+       "* means multiply.",
+       "6 × 4 = 24."
+      ],
+      "answer": "24"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "B2 = 12, C2 = 5, D2 = 30. What does each formula show?",
+       "columns": [
+        "Formula",
+        "Shows"
+       ],
+       "rows": [
+        [
+         "=B2+C2",
+         ""
+        ],
+        [
+         "=B2*C2",
+         ""
+        ],
+        [
+         "=D2-B2",
+         ""
+        ],
+        [
+         "=D2/C2",
+         ""
+        ],
+        [
+         "=SUM(B2:D2)",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "=B2+C2",
+         "17"
+        ],
+        [
+         "=B2*C2",
+         "60"
+        ],
+        [
+         "=D2-B2",
+         "18"
+        ],
+        [
+         "=D2/C2",
+         "6"
+        ],
+        [
+         "=SUM(B2:D2)",
+         "47"
+        ]
+       ]
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Kai typed a formula for the cost of the tents. Find his mistake and fix it.",
+       "work": [
+        "Cost each is in B2, how many is in C2.",
+        "He typed: =B2+C2"
+       ],
+       "answer": "He added instead of multiplying. It should be =B2*C2, which shows $90."
+      }
+     ]
+    },
+    {
+     "title": "The camping budget",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "Write the formula for the torch total (row 4).",
+      "steps": [
+       "Cost each is in B4, how many in C4.",
+       "Total = cost each × how many.",
+       "=B4*C4"
+      ],
+      "answer": "=B4*C4"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "The camping budget sheet: row 2 Tent ($45, 2), row 3 Sleeping bag ($28, 4), row 4 Torch ($12, 3). Write each formula for column D and its value.",
+       "columns": [
+        "Cell",
+        "Formula",
+        "Shows"
+       ],
+       "rows": [
+        [
+         "D2 (tents)",
+         "",
+         ""
+        ],
+        [
+         "D3 (sleeping bags)",
+         "",
+         ""
+        ],
+        [
+         "D4 (torches)",
+         "",
+         ""
+        ],
+        [
+         "D5 (total)",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "D2 (tents)",
+         "=B2*C2",
+         "$90"
+        ],
+        [
+         "D3 (sleeping bags)",
+         "=B3*C3",
+         "$112"
+        ],
+        [
+         "D4 (torches)",
+         "=B4*C4",
+         "$36"
+        ],
+        [
+         "D5 (total)",
+         "=SUM(D2:D4)",
+         "$238"
+        ]
+       ]
+      },
+      {
+       "kind": "choice",
+       "prompt": "Sleeping bags go on sale at $22. Which cells change by themselves?",
+       "options": [
+        "only B3",
+        "B3, D3 and D5",
+        "every cell"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "You type the new price in B3. D3 uses B3 and D5 adds D3, so both update: D3 = $88, D5 = $214."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. A discount formula, an average with formulas, and designing your own budget sheet, with worked examples.",
+   "title": "Extension: Spreadsheet Wizard",
+   "subtitle": "Formulas that use other formulas.",
+   "sections": [
+    {
+     "title": "A discount formula",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Price in B2 is $80. Write a formula for 25% off.",
+      "steps": [
+       "25% off means pay 75%.",
+       "=B2*0.75",
+       "Shows $60."
+      ],
+      "answer": "=B2*0.75"
+     },
+     "items": [
+      {
+       "prompt": "Price in B2. Write a formula for the price with 10% GST added.",
+       "answer": "=B2*1.1",
+       "answerLabel": "Formula:"
+      },
+      {
+       "prompt": "Price in B3. Write a formula for 30% off. What does it show if B3 is $50?",
+       "answer": "=B3*0.7, shows $35",
+       "answerLabel": "Formula:"
+      }
+     ]
+    },
+    {
+     "title": "Averages",
+     "proficiency": "reasoning",
+     "columns": 1,
+     "example": {
+      "prompt": "Scores 12, 15, 9 in B2:B4. Average?",
+      "steps": [
+       "Add: =SUM(B2:B4) = 36.",
+       "Divide by 3: =SUM(B2:B4)/3 = 12."
+      ],
+      "answer": "12"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "A netball team's goals are in B2:B6: 14, 22, 18, 9, 17. What does each formula show?",
+       "columns": [
+        "Formula",
+        "Shows"
+       ],
+       "rows": [
+        [
+         "=SUM(B2:B6)",
+         ""
+        ],
+        [
+         "=SUM(B2:B6)/5",
+         ""
+        ],
+        [
+         "=MAX(B2:B6)",
+         ""
+        ],
+        [
+         "=MIN(B2:B6)",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "=SUM(B2:B6)",
+         "80"
+        ],
+        [
+         "=SUM(B2:B6)/5",
+         "16"
+        ],
+        [
+         "=MAX(B2:B6)",
+         "22"
+        ],
+        [
+         "=MIN(B2:B6)",
+         "9"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Design a sheet",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Plan a sheet for a weekly budget.",
+      "steps": [
+       "Column A: items. Column B: income. Column C: expenses.",
+       "B10: =SUM(B2:B9). C10: =SUM(C2:C9).",
+       "Left over: =B10-C10."
+      ],
+      "answer": "a planned sheet"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Design a spreadsheet for your own weekly budget. Sketch the columns and rows, and write every formula you would use.",
+       "answer": "Check: labelled columns, income and expense totals with SUM, and a left-over cell like =B10-C10."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: reading cells first, then simple add and multiply formulas, with a hint on every question.",
+   "title": "Spreadsheets: Step by Step",
+   "subtitle": "Column letter first, then row number.",
+   "sections": [
+    {
+     "title": "Read a cell",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "What is in B2?",
+      "visual": {
+       "type": "table",
+       "rows": [
+        [
+         "",
+         "A",
+         "B"
+        ],
+        [
+         "1",
+         "Fruit",
+         "How many"
+        ],
+        [
+         "2",
+         "Apples",
+         "6"
+        ],
+        [
+         "3",
+         "Pears",
+         "4"
+        ]
+       ]
+      },
+      "steps": [
+       "Find column B.",
+       "Go down to row 2.",
+       "B2 = 6."
+      ],
+      "answer": "6"
+     },
+     "items": [
+      {
+       "prompt": "What is in B3?",
+       "visual": {
+        "type": "table",
+        "rows": [
+         [
+          "",
+          "A",
+          "B"
+         ],
+         [
+          "1",
+          "Fruit",
+          "How many"
+         ],
+         [
+          "2",
+          "Apples",
+          "6"
+         ],
+         [
+          "3",
+          "Pears",
+          "4"
+         ]
+        ],
+        "maxH": 130
+       },
+       "hint": "Column B, then row 3.",
+       "answer": "4",
+       "answerLabel": "B3 =",
+       "working": "none"
+      },
+      {
+       "prompt": "What is in A2?",
+       "visual": {
+        "type": "table",
+        "rows": [
+         [
+          "",
+          "A",
+          "B"
+         ],
+         [
+          "1",
+          "Fruit",
+          "How many"
+         ],
+         [
+          "2",
+          "Apples",
+          "6"
+         ],
+         [
+          "3",
+          "Pears",
+          "4"
+         ]
+        ],
+        "maxH": 130
+       },
+       "hint": "Column A, then row 2.",
+       "answer": "Apples",
+       "answerLabel": "A2 =",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Simple formulas",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "B2 = 6, B3 = 4. What does =B2+B3 show?",
+      "steps": [
+       "+ means add.",
+       "6 + 4 = 10."
+      ],
+      "answer": "10"
+     },
+     "items": [
+      {
+       "prompt": "B2 = 5, C2 = 3. What does =B2*C2 show?",
+       "hint": "* means multiply.",
+       "answer": "15",
+       "answerLabel": "Shows:"
+      },
+      {
+       "prompt": "B2 = 9, B3 = 7. What does =B2+B3 show?",
+       "hint": "+ means add.",
+       "answer": "16",
+       "answerLabel": "Shows:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 3 of our budgeting week: today we put a budget into a spreadsheet."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk. If you have devices, open a blank spreadsheet on the board. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Add decimals",
+   "from": "teacher",
+   "prompts": [
+    "Work out $12.45 + $8.79."
+   ],
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     "12.45",
+     "8.79"
+    ],
+    "op": "+"
+   },
+   "reveal": {
+    "answers": [
+     "$21.24"
+    ]
+   },
+   "notes": {
+    "answer": "$21.24",
+    "beats": [
+     [
+      "SAY: Let's warm up with the four processes."
+     ],
+     [
+      "ASK: What is 12.45 plus 8.79?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $21.24"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> line up the decimal points and regroup together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 21.24.",
+      "Line up the points, then add. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "misaligning the decimal points.",
+     "Fix: line up the points, and they add again."
+    ],
+    "prep": "Review of the four processes (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Multiply money",
+   "from": "teacher",
+   "prompts": [
+    "Work out $3.60 × 7."
+   ],
+   "reveal": {
+    "answers": [
+     "$25.20"
+    ]
+   },
+   "notes": {
+    "answer": "$25.20",
+    "beats": [
+     [
+      "ASK: What is 3 dollars 60 times 7?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $25.20"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> split into $3 x 7 and 60c x 7, then add. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 3 times 7 is 21, and 60 cents times 7 is 4.20: 25.20.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing $21.42.",
+     "Fix: split 3.60 into 3 and 0.60, and they redo it."
+    ],
+    "prep": "Four processes review: multiplying money.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Divide money",
+   "from": "teacher",
+   "prompts": [
+    "$37.50 shared by 5. Each?"
+   ],
+   "reveal": {
+    "answers": [
+     "$7.50"
+    ]
+   },
+   "notes": {
+    "answer": "$7.50",
+    "beats": [
+     [
+      "ASK: If 37.50 is shared by 5, how much does each get?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $7.50"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> use the division bracket with cents. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 37.50 divided by 5 is 7.50 each. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing $7.05.",
+     "Fix: change to cents, 3750 divided by 5, and they redo it."
+    ],
+    "prep": "Four processes review: dividing money.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "9 × 9"
+   ],
+   "reveal": {
+    "answers": [
+     "81"
+    ]
+   },
+   "notes": {
+    "answer": "81",
+    "beats": [
+     [
+      "SAY: Now for our nine times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 9 times 9?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 81"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 10 nines is 90, take one 9 away. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 81. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 72 or 89.",
+     "Fix: 10 nines is 90, take away 9, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "9 × 4"
+   ],
+   "reveal": {
+    "answers": [
+     "36"
+    ]
+   },
+   "notes": {
+    "answer": "36",
+    "beats": [
+     [
+      "SAY: Here's the next one."
+     ],
+     [
+      "ASK: What is 9 times 4?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 36"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 10 fours is 40, take one 4 away. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 36. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 32 or 45.",
+     "Fix: 10 fours is 40, take away 4, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "54 ÷ 9"
+   ],
+   "reveal": {
+    "answers": [
+     "6"
+    ]
+   },
+   "notes": {
+    "answer": "6",
+    "beats": [
+     [
+      "SAY: Now a division. How many nines make 54?"
+     ],
+     [
+      "ASK: What is 54 divided by 9?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 6"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> count up in nines to 54. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 6. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 5 or 7.",
+     "Fix: check: 6 nines is 54, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to use a spreadsheet and formulas to calculate a budget.",
+   "successCriteria": [
+    "I can find a cell using its column letter and row number.",
+    "I can write a formula that uses cell references to calculate a total.",
+    "I can explain why a spreadsheet total updates when a number changes."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: We've made budgets with pencil and paper.",
+      "Today we let a spreadsheet do the calculating."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 cell names are reachable for everyone; SC2 writing a formula is the core and the exit evidence; SC3 explaining updates is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "What changes?",
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "",
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     [
+      "1",
+      "Item",
+      "Price",
+      "How many",
+      "Cost"
+     ],
+     [
+      "2",
+      "Pencils",
+      "$2.50",
+      "4",
+      "=B2*C2"
+     ],
+     [
+      "3",
+      "Ruler",
+      "$1.80",
+      "2",
+      "=B3*C3"
+     ],
+     [
+      "4",
+      "Glue stick",
+      "$3.20",
+      "3",
+      "=B4*C4"
+     ]
+    ]
+   },
+   "prompt": "If pencils go up to $3, what else has to change?",
+   "notes": {
+    "answer": "the pencil cost and the total",
+    "beats": [
+     [
+      "POINT to the price of pencils.",
+      "SAY: This is a shopping list in a spreadsheet: price, how many, and cost."
+     ],
+     [
+      "ASK: If pencils go up to 3 dollars,",
+      "what else has to change on this list? Tell your partner.",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: the pencil cost, and the total"
+     ],
+     [
+      "SAY: On paper, we'd rub out and work out the cost and total again.",
+      "In a spreadsheet, a formula does that for us. That's today."
+     ]
+    ],
+    "trap": [
+     "saying only the price changes.",
+     "Fix: ask what 4 pencils cost now, and they look again."
+    ],
+    "prep": "The launch comes after the LI: why formulas are worth learning. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "formula",
+   "meaning": "An instruction in a spreadsheet cell that calculates a value. It starts with =.",
+   "example": "=B2*C2 multiplies the numbers in cells B2 and C2.",
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "",
+      "A",
+      "B",
+      "C"
+     ],
+     [
+      "1",
+      "Price",
+      "How many",
+      "Cost"
+     ],
+     [
+      "2",
+      "$2.50",
+      "4",
+      "=A2*B2"
+     ]
+    ]
+   },
+   "notes": {
+    "answer": "=",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is formula. Say it with me: for-mu-la."
+     ],
+     [
+      "SAY: A formula is an instruction that tells a cell to calculate something.",
+      "It always starts with an equals sign, and it uses cell names like B2."
+     ],
+     [
+      "ASK: What sign does every formula start with?",
+      "5 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: ="
+     ]
+    ],
+    "trap": [
+     "writing x for multiply.",
+     "Fix: say spreadsheets use a star for multiply, and they rewrite it."
+    ],
+    "prep": "In spreadsheets, * means multiply and / means divide.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Cells and formulas",
+   "steps": [
+    "Every cell has a name: column letter, then row number.",
+    "B2 is the price of pencils: $2.50.",
+    "Cost = price × how many: =B2*C2.",
+    "The cell shows $10.00."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "",
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     [
+      "1",
+      "Item",
+      "Price",
+      "How many",
+      "Cost"
+     ],
+     [
+      "2",
+      "Pencils",
+      "$2.50",
+      "4",
+      "=B2*C2"
+     ],
+     [
+      "3",
+      "Ruler",
+      "$1.80",
+      "2",
+      "=B3*C3"
+     ],
+     [
+      "4",
+      "Glue stick",
+      "$3.20",
+      "3",
+      "=B4*C4"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "Ruler cost: =B3*C3 = $3.60"
+    ]
+   },
+   "notes": {
+    "answer": "=B3*C3, $3.60",
+    "beats": [
+     [
+      "POINT to column B, then row 2.",
+      "SAY: Every cell has a name: the column letter, then the row number.",
+      "This cell is B2, the price of pencils."
+     ],
+     [
+      "MODEL typing =B2*C2.",
+      "SAY: To find the cost, I type equals, B2, star, C2. The star means multiply.",
+      "The cell shows 10 dollars: 2.50 times 4."
+     ],
+     [
+      "ASK: What formula goes in D3 for the ruler, and what will it show?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: =B3*C3, $3.60"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: =B3*C3: 1.80 times 2 is 3.60.",
+      "Same formula, next row down."
+     ]
+    ],
+    "trap": [
+     "typing =1.80*2.",
+     "Fix: ask what happens if the price changes, and they use the cell names."
+    ],
+    "stretch": "What formula finds the glue stick cost?",
+    "help": "Point to the column, then the row, before writing.",
+    "prep": "The critical feature: cell references, not typed numbers. SC1 and SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Add up with SUM",
+   "steps": [
+    "=SUM(D2:D4) adds every cell from D2 to D4.",
+    "$10.00 + $3.60 + $9.60 = $23.20.",
+    "Change a price, and the total changes by itself."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "",
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     [
+      "1",
+      "Item",
+      "Price",
+      "How many",
+      "Cost"
+     ],
+     [
+      "2",
+      "Pencils",
+      "$2.50",
+      "4",
+      "=B2*C2"
+     ],
+     [
+      "3",
+      "Ruler",
+      "$1.80",
+      "2",
+      "=B3*C3"
+     ],
+     [
+      "4",
+      "Glue stick",
+      "$3.20",
+      "3",
+      "=B4*C4"
+     ],
+     [
+      "5",
+      "",
+      "",
+      "Total",
+      "=SUM(D2:D4)"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "=SUM(D2:D4) shows $23.20"
+    ]
+   },
+   "notes": {
+    "answer": "$23.20",
+    "beats": [
+     [
+      "POINT to D5.",
+      "SAY: For the total, I use SUM.",
+      "=SUM, D2 colon D4 means add every cell from D2 down to D4."
+     ],
+     [
+      "MODEL changing a price.",
+      "SAY: If I change the pencils to 3 dollars, D2 updates to 12,",
+      "and the total updates too. I don't redo anything."
+     ],
+     [
+      "ASK: What will D5 show before any change?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $23.20"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 10, 3.60 and 9.60 make 23.20.",
+      "And after the pencil change it would show 25.20."
+     ]
+    ],
+    "trap": [
+     "adding the prices instead of the costs.",
+     "Fix: point to column D, and they redo it."
+    ],
+    "stretch": "What would D5 show if you bought 6 rulers?",
+    "help": "Add the D column one cell at a time.",
+    "prep": "Totals that update themselves: SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which formula finds the pencil cost?",
+   "prompt": "Price in B2, how many in C2. Point to A, B or C",
+   "options": [
+    {
+     "text": "=B2+C2",
+     "misconception": "adds instead of multiplying price by how many"
+    },
+    {
+     "text": "=B2*C2"
+    },
+    {
+     "text": "=2.50*4",
+     "misconception": "types numbers, so the formula won't update when a price changes"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Think: how do you find a cost? And what makes it update?"
+     ],
+     [
+      "ASK: Which formula finds the cost of the pencils?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What's the problem with C?",
+      "Less -> say cost = price times how many, and point to the cells. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B. A adds instead of multiplying.",
+      "C gives the right answer today, but won't update if the price changes."
+     ]
+    ],
+    "trap": [
+     "pointing to C.",
+     "Fix: ask what happens if the price changes, and they choose again."
+    ],
+    "prep": "First decision point. A: operation; C: typed numbers instead of references.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "What does it show?",
+   "ask": "What does the formula show?",
+   "routine": "boards",
+   "thinkTime": 20,
+   "pivot": "find each cell's value first, then do the operation",
+   "followUp": "cold call one board: Which cells did you use?",
+   "items": [
+    {
+     "text": "A2 = $4.50 and B2 = 6. =A2*B2",
+     "answer": "$27"
+    },
+    {
+     "text": "A2 = 12, A3 = 9, A4 = 15. =SUM(A2:A4)",
+     "answer": "36"
+    },
+    {
+     "text": "A2 = $40 and B2 = $27.50. =A2-B2",
+     "answer": "$12.50"
+    },
+    {
+     "text": "A2 = $84 and B2 = 6. =A2/B2",
+     "answer": "$14",
+     "say": "84 divided by 6 is 14: the slash means divide."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's read some formulas together.",
+     "Write what each one shows on your board."
+    ],
+    "trap": [
+     "reading the column letter as the value.",
+     "Fix: point to the cell, read its number, and they redo it."
+    ],
+    "stretch": "Write a formula for each sheet that does something different.",
+    "help": "Write each cell's value under its name first.",
+    "prep": "Guided practice with multiply, SUM, subtract and divide. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "What will D5 show?",
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "",
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     [
+      "1",
+      "Item",
+      "Price",
+      "How many",
+      "Cost"
+     ],
+     [
+      "2",
+      "Footy",
+      "$25",
+      "2",
+      "$50"
+     ],
+     [
+      "3",
+      "Cones",
+      "$4",
+      "6",
+      "$24"
+     ],
+     [
+      "4",
+      "Bibs",
+      "$3.50",
+      "10",
+      "$35"
+     ],
+     [
+      "5",
+      "",
+      "",
+      "Total",
+      "=SUM(D2:D4)"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "$109"
+    ]
+   },
+   "notes": {
+    "answer": "$109",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Read the formula in D5 carefully."
+     ],
+     [
+      "ASK: What will cell D5 show?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $109"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> point to D2, D3 and D4 together and add. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 50, 24 and 35 make 109 dollars. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "adding the prices: $32.50.",
+     "Fix: point to column D, and they redo it."
+    ],
+    "prep": "The hinge before independent work. Anyone adding the prices starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Read, write and use spreadsheet formulas on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Does your formula use cell names?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "typing numbers into formulas.",
+     "Fix: ask what happens if a price changes, and they use cell names."
+    ],
+    "stretch": "Extension: discount formulas, averages, and your own budget sheet.",
+    "help": "Supported Worksheet: reading cells first, then add and multiply formulas.",
+    "prep": "Independent practice: cell names, predicting formulas, a camping budget and a mistake. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Write the formula for D2, and say what it shows."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "",
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     [
+      "1",
+      "Item",
+      "Price",
+      "How many",
+      "Cost"
+     ],
+     [
+      "2",
+      "Water bottle",
+      "$6.50",
+      "8",
+      "?"
+     ]
+    ]
+   },
+   "notes": {
+    "answer": "=B2*C2, $52",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What formula goes in D2, and what will it show?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: =B2*C2, $52"
+     ],
+     [
+      "RECORD who adds, or types numbers instead of cell names.",
+      "They start tomorrow's excursion budget with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing =B2+C2.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: a new formula with cell references.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner why spreadsheets use cell names in formulas.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for so totals update when a number changes",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can write a spreadsheet formula?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with =B2+C2 on the board matters most."
+     ],
+     [
+      "ASK: Why do formulas use cell names instead of numbers?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: so totals update when a number changes"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: an excursion budget.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

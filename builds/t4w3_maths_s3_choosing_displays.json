@@ -1,0 +1,1460 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 3,
+  "session": 3,
+  "title": "Choosing and Drawing Graphs",
+  "subtitle": "Term 4 Week 3, Session 3",
+  "meta": "Year 5/6 Maths | Statistics",
+  "footer": "Statistics | Year 5/6 Maths | Session 3",
+  "outputFolder": "T4W3_Maths_S3_Choosing_Displays",
+  "fileName": "Session 3 - Choosing and Drawing Graphs.pptx",
+  "titleVisual": {
+   "type": "chart",
+   "style": "bar",
+   "categories": [
+    "Walk",
+    "Car",
+    "Bus",
+    "Bike"
+   ],
+   "values": [
+    6,
+    9,
+    4,
+    3
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Statistics, Years 5 and 6 (VC2M5ST03, VC2M6ST03): choose appropriate displays and represent data",
+   "shape": "example-first: the teacher draws one column graph with every part named, then the class matches data to displays",
+   "criticalFeature": "match the display to the data: categories go in a column graph, small sets of numbers in a dot plot, and change over time in a line graph",
+   "decisionPoints": [
+    "the choice check: which display suits a seedling's height each week?",
+    "the hinge: what is missing from this graph?",
+    "the exit ticket"
+   ],
+   "anchor": "ask, collect, show, tell: every investigation starts with a fair question and ends with what the data shows",
+   "catchUp": "Missed Session 2? Show yesterday's frequency table and point to the total before the launch."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "A ruler and a sharp pencil for every student",
+   "Coloured pencils (optional)",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: ask, collect, show, tell",
+   "Yesterday's class survey frequency table, ready to graph together"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Read a column graph and a dot plot, sort data to displays, draw a column graph, and fix a mistake.",
+   "title": "Choosing and Drawing Graphs",
+   "subtitle": "Match the graph to the data. Title, labels, even scale.",
+   "sections": [
+    {
+     "title": "Read the graphs",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "How many more students chose basketball than cricket?",
+      "steps": [
+       "Read basketball: 7.",
+       "Read cricket: 4.",
+       "7 - 4 = 3."
+      ],
+      "answer": "3 more"
+     },
+     "items": [
+      {
+       "prompt": "Use the column graph.",
+       "visual": {
+        "type": "chart",
+        "style": "bar",
+        "categories": [
+         "Footy",
+         "Netball",
+         "Soccer",
+         "Cricket",
+         "Basketball"
+        ],
+        "values": [
+         8,
+         6,
+         10,
+         4,
+         7
+        ],
+        "title": "Favourite sport",
+        "yLabel": "Students",
+        "maxH": 140
+       },
+       "working": "none",
+       "parts": [
+        {
+         "prompt": "Most popular sport?",
+         "answer": "soccer"
+        },
+        {
+         "prompt": "Soccer minus footy?",
+         "answer": "2"
+        }
+       ]
+      },
+      {
+       "prompt": "Use the dot plot. Each dot is one player.",
+       "visual": {
+        "type": "chart",
+        "style": "dot",
+        "categories": [
+         "0",
+         "1",
+         "2",
+         "3",
+         "4"
+        ],
+        "values": [
+         3,
+         5,
+         4,
+         2,
+         1
+        ],
+        "title": "Goals scored",
+        "xLabel": "Goals",
+        "maxH": 140
+       },
+       "working": "none",
+       "parts": [
+        {
+         "prompt": "Players who scored 2?",
+         "answer": "4"
+        },
+        {
+         "prompt": "Players in total?",
+         "answer": "15"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Which display?",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Which display suits 'temperature every hour today'?",
+      "steps": [
+       "The data changes over time.",
+       "Change over time goes on a line graph."
+      ],
+      "answer": "line graph"
+     },
+     "items": [
+      {
+       "kind": "sort",
+       "prompt": "Write each kind of data under the display that suits it.",
+       "cards": [
+        "favourite colour",
+        "temperature each hour",
+        "pets per family",
+        "favourite sport",
+        "height each month",
+        "goals per game"
+       ],
+       "groups": [
+        "column graph",
+        "dot plot",
+        "line graph"
+       ],
+       "answer": {
+        "column graph": [
+         "favourite colour",
+         "favourite sport"
+        ],
+        "dot plot": [
+         "pets per family",
+         "goals per game"
+        ],
+        "line graph": [
+         "temperature each hour",
+         "height each month"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "title": "Draw a column graph",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "What scale would you use if the biggest value is 12?",
+      "steps": [
+       "Count up in equal steps.",
+       "Steps of 2 reach 12 in 6 steps.",
+       "0, 2, 4, 6, 8, 10, 12."
+      ],
+      "answer": "steps of 2"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Draw a column graph of how students get to school. Give it a title, label both axes and use an even scale.",
+       "visual": {
+        "type": "table",
+        "rows": [
+         [
+          "Transport",
+          "Walk",
+          "Car",
+          "Bus",
+          "Bike"
+         ],
+         [
+          "Students",
+          "7",
+          "12",
+          "5",
+          "3"
+         ]
+        ]
+       },
+       "answerVisual": {
+        "type": "chart",
+        "style": "bar",
+        "categories": [
+         "Walk",
+         "Car",
+         "Bus",
+         "Bike"
+        ],
+        "values": [
+         7,
+         12,
+         5,
+         3
+        ],
+        "title": "How we get to school",
+        "yLabel": "Students",
+        "xLabel": "Transport",
+        "maxH": 120
+       },
+       "answer": "Title, both axes labelled, an even scale (steps of 1 or 2), columns 7, 12, 5 and 3.",
+       "workMin": 150
+      }
+     ]
+    },
+    {
+     "title": "Think about it",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Is a line graph good for favourite pets?",
+      "steps": [
+       "Pets are categories, not times.",
+       "A line between categories means nothing.",
+       "Use a column graph."
+      ],
+      "answer": "No"
+     },
+     "items": [
+      {
+       "kind": "mistake",
+       "prompt": "Mia drew a line graph of the class's favourite fruits. Find her mistake and fix it.",
+       "work": [
+        "Apple, banana, grapes, orange along the bottom.",
+        "I joined the points with a line."
+       ],
+       "answer": "Fruits are categories, not times, so a joining line means nothing. Draw a column graph."
+      },
+      {
+       "kind": "choice",
+       "prompt": "A graph's scale goes 0, 2, 4, 8, 10. What is wrong?",
+       "options": [
+        "It starts at 0",
+        "The steps are not equal",
+        "Nothing"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "From 4 to 8 jumps 4, but the other steps jump 2, so the columns would look the wrong size."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. A double column graph, reading a line graph between points, and designing your own display, with worked examples.",
+   "title": "Extension: Graph Detective",
+   "subtitle": "Compare, read between the lines, then design.",
+   "sections": [
+    {
+     "title": "Compare two classes",
+     "proficiency": "reasoning",
+     "columns": 1,
+     "example": {
+      "prompt": "Which sport did 5A like more than 5B?",
+      "steps": [
+       "Find where the 5A column is taller.",
+       "Footy: 5A 9, 5B 6.",
+       "5A liked footy more."
+      ],
+      "answer": "footy"
+     },
+     "items": [
+      {
+       "prompt": "Use the double column graph.",
+       "visual": {
+        "type": "chart",
+        "categories": [
+         "Footy",
+         "Netball",
+         "Soccer",
+         "Cricket"
+        ],
+        "series": [
+         {
+          "name": "5A",
+          "values": [
+           9,
+           5,
+           8,
+           3
+          ]
+         },
+         {
+          "name": "5B",
+          "values": [
+           6,
+           8,
+           8,
+           4
+          ]
+         }
+        ],
+        "yLabel": "Students",
+        "maxH": 150
+       },
+       "working": "none",
+       "parts": [
+        {
+         "prompt": "Which sport did both classes choose equally?",
+         "answer": "soccer"
+        },
+        {
+         "prompt": "How many students are in 5B?",
+         "answer": "26"
+        },
+        {
+         "prompt": "Which class liked netball more, and by how many?",
+         "answer": "5B, by 3"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Read a line graph",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "About what was the temperature at 11 am?",
+      "steps": [
+       "Find 11 am along the bottom.",
+       "Go up to the line.",
+       "Read across: about 20 degrees."
+      ],
+      "answer": "about 20 degrees"
+     },
+     "items": [
+      {
+       "prompt": "Use the line graph of the temperature on a spring day.",
+       "visual": {
+        "type": "chart",
+        "style": "line",
+        "categories": [
+         "9am",
+         "11am",
+         "1pm",
+         "3pm",
+         "5pm"
+        ],
+        "values": [
+         14,
+         20,
+         25,
+         23,
+         17
+        ],
+        "yLabel": "Degrees",
+        "maxH": 130
+       },
+       "working": "none",
+       "parts": [
+        {
+         "prompt": "Hottest time?",
+         "answer": "1 pm"
+        },
+        {
+         "prompt": "Rise from 9 am to 1 pm?",
+         "answer": "11 degrees"
+        }
+       ]
+      },
+      {
+       "prompt": "Could you use the line graph to estimate the temperature at 2 pm? Explain.",
+       "answer": "Yes: about 24 degrees, halfway between 25 at 1 pm and 23 at 3 pm, because the temperature changes smoothly.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Design a display",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Plan a display for 'hours of sleep each night this week'.",
+      "steps": [
+       "The data changes over the week: time.",
+       "Use a line graph.",
+       "Title, labels, even scale."
+      ],
+      "answer": "a line graph"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Choose your own question for the class to answer. Say which display you would use and why, then sketch it with made-up data.",
+       "answer": "Check: the display matches the data (categories: column; numbers: dot plot; time: line), with a title, labels and an even scale."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: graph parts to label, values to read with a ruler, and a word bank.",
+   "title": "Graphs: Step by Step",
+   "subtitle": "Every graph needs a title, labels and an even scale.",
+   "sections": [
+    {
+     "title": "Parts of a graph",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "What does a graph's title tell you?",
+      "steps": [
+       "Read the title first.",
+       "It says what the graph shows."
+      ],
+      "answer": "what the graph is about"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Match each part of a graph to its job.",
+       "hint": "Word bank: title, labels, scale.",
+       "columns": [
+        "Job",
+        "Part"
+       ],
+       "rows": [
+        [
+         "Says what the graph is about",
+         ""
+        ],
+        [
+         "Says what each axis shows",
+         ""
+        ],
+        [
+         "Numbers going up in equal steps",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "Says what the graph is about",
+         "title"
+        ],
+        [
+         "Says what each axis shows",
+         "labels"
+        ],
+        [
+         "Numbers going up in equal steps",
+         "scale"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Read a column",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "How many chose Dog?",
+      "visual": {
+       "type": "chart",
+       "style": "bar",
+       "categories": [
+        "Dog",
+        "Cat",
+        "Fish"
+       ],
+       "values": [
+        9,
+        7,
+        3
+       ],
+       "title": "Our pets",
+       "maxH": 110
+      },
+      "steps": [
+       "Put a ruler across the top of the Dog column.",
+       "Read the number on the scale: 9."
+      ],
+      "answer": "9"
+     },
+     "items": [
+      {
+       "prompt": "How many chose Cat?",
+       "visual": {
+        "type": "chart",
+        "style": "bar",
+        "categories": [
+         "Dog",
+         "Cat",
+         "Fish"
+        ],
+        "values": [
+         9,
+         7,
+         3
+        ],
+        "title": "Our pets",
+        "maxH": 170
+       },
+       "hint": "Lay your ruler across the top of the Cat column.",
+       "answer": "7",
+       "answerLabel": "Cat:",
+       "working": "none"
+      },
+      {
+       "prompt": "Which pet was chosen least?",
+       "visual": {
+        "type": "chart",
+        "style": "bar",
+        "categories": [
+         "Dog",
+         "Cat",
+         "Fish"
+        ],
+        "values": [
+         9,
+         7,
+         3
+        ],
+        "title": "Our pets",
+        "maxH": 170
+       },
+       "hint": "Look for the shortest column.",
+       "answer": "fish",
+       "answerLabel": "Pet:",
+       "working": "none"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 3 of our statistics week: today we choose and draw graphs that suit our data."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards, markers, a ruler and a pencil on every desk, and keep yesterday's class frequency table on the board. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Read a point",
+   "from": "teacher",
+   "prompts": [
+    "What are the coordinates of Q?"
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     -4,
+     4
+    ],
+    "y": [
+     -4,
+     4
+    ],
+    "points": [
+     {
+      "x": -2,
+      "y": -3,
+      "label": "Q"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "(-2, -3)"
+    ]
+   },
+   "notes": {
+    "answer": "(-2, -3)",
+    "beats": [
+     [
+      "SAY: Let's warm up with the Cartesian plane from last week."
+     ],
+     [
+      "ASK: What are the coordinates of Q?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (-2, -3)"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> say left or right, then up or down, from the origin together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's negative 2, negative 3: left 2 and down 3.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (2, 3) with no signs.",
+     "Fix: ask which side of the origin Q is, and they add the signs."
+    ],
+    "prep": "Review of Week 2 coordinates (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Reflex angle",
+   "from": "teacher",
+   "prompts": [
+    "Find the reflex angle."
+   ],
+   "visual": {
+    "type": "angle",
+    "rays": [
+     0,
+     235
+    ],
+    "arcs": [
+     {
+      "from": 0,
+      "to": 235,
+      "label": "?"
+     },
+     {
+      "from": 235,
+      "to": 360,
+      "label": "125°"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "235°"
+    ]
+   },
+   "notes": {
+    "answer": "235°",
+    "beats": [
+     [
+      "ASK: How big is the reflex angle?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 235"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> trace the full turn: 360 take away the inside angle. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 235 degrees, because 360 take away 125 is 235.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 55, from 180.",
+     "Fix: trace all the way round, and they redo it from 360."
+    ],
+    "prep": "Week 1 review: reflex angles.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Fraction to decimal",
+   "from": "teacher",
+   "prompts": [
+    "Write 3/8 as a decimal."
+   ],
+   "reveal": {
+    "answers": [
+     "0.375"
+    ]
+   },
+   "notes": {
+    "answer": "0.375",
+    "beats": [
+     [
+      "ASK: How do you write three eighths as a decimal?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 0.375"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> find one eighth first, 0.125, then times 3. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: One eighth is 0.125, so three eighths is 0.375. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 0.38 or 3.8.",
+     "Fix: halve a half three times to find one eighth,",
+     "0.125, and they multiply by 3."
+    ],
+    "prep": "Term 3 review: fractions and decimals.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Subtract with the written method: 3 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     913,
+     476
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "437"
+    ]
+   },
+   "notes": {
+    "answer": "437",
+    "beats": [
+     [
+      "SAY: Now for some written subtraction.",
+      "Line up the places, and always start with the ones."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 437"
+     ],
+     [
+      "SCAN boards for the regrouped columns.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 437.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one in every column.",
+     "Fix: ask \"Is the top digit big enough?\", and they regroup and redo it."
+    ],
+    "prep": "Subtraction fluency: 3 digits, then 4, then 5. Keep the whole block under 6 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Subtract with the written method: 4 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     8040,
+     2675
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "5 365"
+    ]
+   },
+   "notes": {
+    "answer": "5 365",
+    "beats": [
+     [
+      "SAY: Now it's 4 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 5 365"
+     ],
+     [
+      "SCAN boards for the regrouped columns.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 5 365.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one in every column.",
+     "Fix: ask \"Is the top digit big enough?\", and they regroup and redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Subtract with the written method: 5 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     70105,
+     36548
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "33 557"
+    ]
+   },
+   "notes": {
+    "answer": "33 557",
+    "beats": [
+     [
+      "SAY: Now it's 5 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 33 557"
+     ],
+     [
+      "SCAN boards for the regrouped columns.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 33 557.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one in every column.",
+     "Fix: ask \"Is the top digit big enough?\", and they regroup and redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to choose and draw a graph that suits our data.",
+   "successCriteria": [
+    "I can name the parts of a graph: title, labels and scale.",
+    "I can draw a column graph with an even scale.",
+    "I can explain which display suits the data and why."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: We've asked and collected.",
+      "Today we show our data in a graph,",
+      "so people can see it at a glance."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 naming the parts is reachable for everyone; SC2 drawing the column graph is the core; SC3 choosing the display is the stretch and the exit evidence.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "See it at a glance",
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Walk",
+     "Car",
+     "Bus",
+     "Bike"
+    ],
+    "values": [
+     6,
+     9,
+     4,
+     3
+    ],
+    "title": "How we get to school",
+    "yLabel": "Students"
+   },
+   "prompt": "Which way of travelling is most common?",
+   "notes": {
+    "answer": "car, the tallest column",
+    "beats": [
+     [
+      "POINT to the graph.",
+      "SAY: Here's the data from yesterday's I Do, shown as a column graph."
+     ],
+     [
+      "ASK: Which way of travelling is most common, and how could you tell so quickly?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: car: it has the tallest column"
+     ],
+     [
+      "SCAN boards for car.",
+      "80%+ -> cold call one student: How did the graph help?",
+      "Less -> point to each column top and read the scale together. Re-ask."
+     ],
+     [
+      "SAY: Car is most common: its column is the tallest.",
+      "A graph lets people see the answer at a glance, and today we'll draw one."
+     ]
+    ],
+    "trap": [
+     "reading the scale wrongly.",
+     "Fix: lay a ruler across the column top, and they read it again."
+    ],
+    "prep": "The launch comes after the LI: why we graph data. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "scale",
+   "meaning": "The numbers up the side of a graph, going up in equal steps.",
+   "example": "This scale goes up in 2s: 0, 2, 4, 6, 8, 10.",
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Red",
+     "Blue",
+     "Green"
+    ],
+    "values": [
+     6,
+     10,
+     4
+    ],
+    "yLabel": "Votes"
+   },
+   "notes": {
+    "answer": "the numbers up the side, in equal steps",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is scale. Say it with me: scale."
+     ],
+     [
+      "SAY: The scale is the numbers up the side of a graph.",
+      "They must go up in equal steps, or the columns look the wrong size."
+     ],
+     [
+      "ASK: What step does this scale go up in?",
+      "5 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 2"
+     ]
+    ],
+    "trap": [
+     "counting the gridlines instead of reading the numbers.",
+     "Fix: read the numbers on the scale aloud, and they find the step."
+    ],
+    "prep": "An even scale is the most common error in student graphs.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Draw a column graph",
+   "steps": [
+    "Write a title that says what it shows.",
+    "Label both axes.",
+    "Choose a scale with equal steps.",
+    "Draw each column up to its value."
+   ],
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Dog",
+     "Cat",
+     "Fish",
+     "None"
+    ],
+    "values": [
+     9,
+     7,
+     3,
+     5
+    ],
+    "title": "Our pets",
+    "yLabel": "Students",
+    "xLabel": "Pet"
+   },
+   "reveal": {
+    "answers": [
+     "Fish: 3"
+    ]
+   },
+   "notes": {
+    "answer": "3",
+    "beats": [
+     [
+      "MODEL the title and labels.",
+      "SAY: Let me draw this graph from our pets table.",
+      "First the title, Our pets, then I label both axes."
+     ],
+     [
+      "MODEL the scale.",
+      "SAY: The biggest value is 9, so I'll count up in ones to 10.",
+      "Equal steps keep every column honest."
+     ],
+     [
+      "ASK: How tall should the Fish column be?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 3"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Fish is 3. Every column reaches exactly its value,",
+      "and the title, labels and scale tell the reader what they're looking at."
+     ]
+    ],
+    "trap": [
+     "starting the columns above zero.",
+     "Fix: trace from the bottom line up, and they redraw it."
+    ],
+    "stretch": "What scale would you use if the biggest value were 45?",
+    "help": "Use the grid squares: one square for each student.",
+    "prep": "Title, labels, an even scale, then the columns. SC1 and SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "I Do",
+   "title": "Which display?",
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Data",
+      "Display"
+     ],
+     [
+      "Categories, like favourite sport",
+      "Column graph"
+     ],
+     [
+      "Small sets of numbers, like pets at home",
+      "Dot plot"
+     ],
+     [
+      "Change over time, like temperature each day",
+      "Line graph"
+     ]
+    ]
+   },
+   "notes": {
+    "answer": "a line graph",
+    "beats": [
+     [
+      "SAY: Different data suits different displays.",
+      "Categories, like favourite sport, go in a column graph."
+     ],
+     [
+      "SAY: A small set of numbers,",
+      "like how many pets you have, suits a dot plot.",
+      "And when something changes over time, we use a line graph."
+     ],
+     [
+      "ASK: Which display would you use for the temperature every hour today?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: a line graph"
+     ]
+    ],
+    "trap": [
+     "choosing a column graph for everything.",
+     "Fix: ask: is it categories, numbers or time? and they choose again."
+    ],
+    "stretch": "Think of data that could suit two different displays.",
+    "help": "Ask: is it words, numbers, or time?",
+    "prep": "Matching display to data is the critical feature and SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "A seedling's height each week",
+   "prompt": "Which display suits this data? Point to A, B or C",
+   "options": [
+    {
+     "visual": {
+      "type": "chart",
+      "style": "bar",
+      "categories": [
+       "W1",
+       "W2",
+       "W3",
+       "W4"
+      ],
+      "values": [
+       2,
+       5,
+       9,
+       12
+      ]
+     },
+     "misconception": "uses a column graph for change over time"
+    },
+    {
+     "visual": {
+      "type": "chart",
+      "style": "dot",
+      "categories": [
+       "2",
+       "5",
+       "9",
+       "12"
+      ],
+      "values": [
+       1,
+       1,
+       1,
+       1
+      ]
+     },
+     "misconception": "uses a dot plot, which loses the order of the weeks"
+    },
+    {
+     "visual": {
+      "type": "chart",
+      "style": "line",
+      "categories": [
+       "W1",
+       "W2",
+       "W3",
+       "W4"
+      ],
+      "values": [
+       2,
+       5,
+       9,
+       12
+      ]
+     }
+    }
+   ],
+   "answer": 2,
+   "notes": {
+    "answer": "C, the line graph",
+    "beats": [
+     [
+      "SAY: A seedling is measured every week.",
+      "Think about what kind of data that is."
+     ],
+     [
+      "ASK: Which display suits a seedling's height each week?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to C"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: Why not A?",
+      "Less -> ask: does it change over time? Point to the line graph row. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's C, the line graph. The height changes over time,",
+      "and the line shows the growth from week to week."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: ask what happens between week 1 and week 2, and they choose again."
+    ],
+    "prep": "First decision point: matching the display to the data. A column graph here is the common error.",
+    "tag": "[CFU | Supported application | SC3 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Which display?",
+   "ask": "Which display suits this data? Write column, dot or line.",
+   "routine": "boards",
+   "thinkTime": 8,
+   "pivot": "ask: categories, a few numbers, or change over time?",
+   "followUp": "cold call one board: Why does that display suit it?",
+   "items": [
+    {
+     "text": "Favourite ice-cream flavour",
+     "answer": "column graph"
+    },
+    {
+     "text": "Goals each player scored this season, 0 to 6",
+     "answer": "dot plot"
+    },
+    {
+     "text": "Our classroom's temperature each hour",
+     "answer": "line graph"
+    },
+    {
+     "text": "Votes for class captain",
+     "answer": "column graph"
+    },
+    {
+     "text": "Your height on each birthday",
+     "answer": "line graph",
+     "say": "A line graph: your height changes over time."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise choosing.",
+     "Write column, dot or line on your board."
+    ],
+    "trap": [
+     "choosing column graph for data over time.",
+     "Fix: ask whether it changes over time, and they choose again."
+    ],
+    "stretch": "Give a title and axis labels for one of them.",
+    "help": "Use the display table on the board.",
+    "prep": "Guided practice across all three displays. SC3.",
+    "tag": "[We Do | Supported application | SC3 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "What is missing from this graph?",
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Mon",
+     "Tue",
+     "Wed",
+     "Thu",
+     "Fri"
+    ],
+    "values": [
+     12,
+     18,
+     15,
+     20,
+     9
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "a title",
+     "axis labels"
+    ]
+   },
+   "notes": {
+    "answer": "a title and axis labels",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Look at this graph carefully."
+     ],
+     [
+      "ASK: What two things is this graph missing?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: a title and labels on the axes"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> hold up our pets graph beside it and compare. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's missing a title and axis labels.",
+      "We can't tell what 12 means, or what the days are measuring.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "saying it needs more columns.",
+     "Fix: ask what the numbers on the side measure, and they look again."
+    ],
+    "prep": "The hinge before independent drawing. Anyone who names only one starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC1 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Read, choose and draw graphs on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: What does your scale go up in? Is every step equal?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "an uneven scale.",
+     "Fix: count the steps aloud, and they redraw the scale."
+    ],
+    "stretch": "Extension: a double column graph, a line graph and your own display.",
+    "help": "Supported Worksheet: graph parts to label and columns to read with a ruler.",
+    "prep": "Independent practice: read two graphs, sort displays, draw a column graph and reason about mistakes. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "This table shows a puppy's mass each month. Which display would you use, and why?"
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Month",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr"
+     ],
+     [
+      "Mass (kg)",
+      "3",
+      "5",
+      "8",
+      "10"
+     ]
+    ]
+   },
+   "notes": {
+    "answer": "a line graph: the mass changes over time",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: Which display would you use for the puppy's mass each month, and why?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: a line graph: the mass changes over time"
+     ],
+     [
+      "RECORD who chooses a column graph or gives no reason.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "choosing a column graph.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC3 with SC2 in the reason: a new context, change over time.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner how you choose a display.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for categories column, a few numbers dot plot, time line graph",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can",
+      "choose and draw a graph that suits the data?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 'column graph' on the board matters most."
+     ],
+     [
+      "ASK: How do you choose which display to use?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: categories column, a few numbers dot plot, time line graph"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow we read graphs and tell what they show.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

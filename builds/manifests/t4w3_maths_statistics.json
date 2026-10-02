@@ -1,0 +1,31 @@
+{
+  "unit_folder": "Term4_Week3_Maths_Statistics",
+  "unit_pptx_name": "Term 4 Week 3 - Statistics - Year 5-6 Maths.pptx",
+  "anchor": "ask, collect, show, tell: every investigation starts with a fair question and ends with what the data shows",
+  "lessons": [
+    {
+      "build_script": "builds/t4w3_maths_s1_fair_questions.json",
+      "folder": "T4W3_Maths_S1_Fair_Questions",
+      "session": 1,
+      "focus": "Ask: statistical questions, fair survey questions with a choice for everyone, categorical and numerical data. Critical feature: a fair question does not push and fits everyone. Review: coordinates and angles (Weeks 1 and 2)."
+    },
+    {
+      "build_script": "builds/t4w3_maths_s2_collecting_data.json",
+      "folder": "T4W3_Maths_S2_Collecting_Data",
+      "session": 2,
+      "focus": "Collect: run a class survey, record with tallies, build a frequency table and check the total. Critical feature: every response counted once; the total equals the number asked. Review: coordinates and angles (Weeks 1 and 2)."
+    },
+    {
+      "build_script": "builds/t4w3_maths_s3_choosing_displays.json",
+      "folder": "T4W3_Maths_S3_Choosing_Displays",
+      "session": 3,
+      "focus": "Show: choose and draw column graphs, dot plots and line graphs with a title, labels and an even scale. Critical feature: match the display to the data. Review: Cartesian plane, angles, fractions, decimals and percentages."
+    },
+    {
+      "build_script": "builds/t4w3_maths_s4_interpreting_data.json",
+      "folder": "T4W3_Maths_S4_Interpreting_Data",
+      "session": 4,
+      "focus": "Tell: interpret displays, spot a misleading graph and write conclusions supported by the data. Critical feature: read the scale before you compare. Review: coordinates, angles, fractions, decimals and percentages."
+    }
+  ]
+}

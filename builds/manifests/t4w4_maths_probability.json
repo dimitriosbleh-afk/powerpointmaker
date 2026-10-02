@@ -1,0 +1,31 @@
+{
+  "unit_folder": "Term4_Week4_Maths_Probability",
+  "unit_pptx_name": "Term 4 Week 4 - Probability - Year 5-6 Maths.pptx",
+  "anchor": "chance = the outcomes we want out of all the equally likely outcomes",
+  "lessons": [
+    {
+      "build_script": "builds/t4w4_maths_s1_outcomes_chance.json",
+      "folder": "T4W4_Maths_S1_Outcomes_Chance",
+      "session": 1,
+      "focus": "List outcomes and write probability as a fraction, with equal and unequal spinners. Critical feature: count the equally likely parts, not the colours. Review: statistics (Week 3) and grid coordinates (Week 2)."
+    },
+    {
+      "build_script": "builds/t4w4_maths_s2_chance_experiments.json",
+      "folder": "T4W4_Maths_S2_Chance_Experiments",
+      "session": 2,
+      "focus": "Run a chance experiment, record frequencies and write relative frequency as a fraction, decimal and percentage. Critical feature: relative frequency = times it happened out of the number of trials. Review: statistics, the Cartesian plane, fractions, decimals and percentages."
+    },
+    {
+      "build_script": "builds/t4w4_maths_s3_more_trials.json",
+      "folder": "T4W4_Maths_S3_More_Trials",
+      "session": 3,
+      "focus": "Compare observed results with expected results and see that more trials bring results closer to expected, including simulations. Critical feature: small samples vary; large samples settle near the expected result. Review: grid coordinates, the Cartesian plane, statistics."
+    },
+    {
+      "build_script": "builds/t4w4_maths_s4_fair_games.json",
+      "folder": "T4W4_Maths_S4_Fair_Games",
+      "session": 4,
+      "focus": "Decide whether a game is fair using the chance of each outcome; relative frequencies of all outcomes add to 1. Critical feature: compare the chances, and check they add to 1. Review: coordinates, fractions, decimals and percentages, statistics."
+    }
+  ]
+}

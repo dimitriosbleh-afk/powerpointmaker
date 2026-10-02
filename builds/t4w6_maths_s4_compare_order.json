@@ -1,0 +1,1244 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 6,
+  "session": 4,
+  "title": "Comparing and Ordering",
+  "subtitle": "Term 4 Week 6, Session 4",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Fractions, Decimals and Percentages | Year 5/6 Maths | Session 4",
+  "outputFolder": "T4W6_Maths_S4_Compare_Order",
+  "fileName": "Session 4 - Comparing and Ordering.pptx",
+  "titleVisual": {
+   "type": "numberLine",
+   "start": 0,
+   "end": 1,
+   "step": 0.1,
+   "labelEvery": 5,
+   "labels": [
+    "0",
+    "",
+    "",
+    "",
+    "",
+    "0.5",
+    "",
+    "",
+    "",
+    "",
+    "1"
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Years 5 and 6: comparing and ordering fractions, decimals and percentages by converting to one form and locating them on a number line",
+   "shape": "problem-first: students order a mixed set before the teacher models converting to one form, so the need to convert is felt",
+   "criticalFeature": "convert everything to the same form first, then compare",
+   "decisionPoints": [
+    "the choice check: which is largest, 0.7, 3/5 or 65%?",
+    "the hinge: order four mixed amounts",
+    "the exit ticket"
+   ],
+   "anchor": "one amount, three names: fraction, decimal, percentage; make it out of 100 to switch",
+   "catchUp": "Missed Session 3? Show one amount three ways on a hundred grid (45/100, 0.45, 45%) before the launch."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: one amount, three names: fraction, decimal, percentage; make it out of 100 to switch",
+   "A long number line from 0 to 1, marked in tenths"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Greater or less, ordering mixed sets, a mistake, and comparing sport results.",
+   "title": "Comparing and Ordering",
+   "subtitle": "Convert to the same form first, then compare.",
+   "sections": [
+    {
+     "title": "Bigger or smaller?",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Which is bigger: 3/5 or 0.65?",
+      "steps": [
+       "Convert 3/5: 60/100 = 0.6.",
+       "Compare 0.60 and 0.65.",
+       "0.65 is bigger."
+      ],
+      "answer": "0.65"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Write <, > or = between each pair.",
+       "columns": [
+        "Left",
+        "<, > or =",
+        "Right"
+       ],
+       "rows": [
+        [
+         "0.4",
+         "",
+         "38%"
+        ],
+        [
+         "1/4",
+         "",
+         "0.3"
+        ],
+        [
+         "0.5",
+         "",
+         "50%"
+        ],
+        [
+         "7/10",
+         "",
+         "0.07"
+        ],
+        [
+         "3/8",
+         "",
+         "40%"
+        ],
+        [
+         "0.85",
+         "",
+         "4/5"
+        ]
+       ],
+       "answers": [
+        [
+         "0.4",
+         ">",
+         "38%"
+        ],
+        [
+         "1/4",
+         "<",
+         "0.3"
+        ],
+        [
+         "0.5",
+         "=",
+         "50%"
+        ],
+        [
+         "7/10",
+         ">",
+         "0.07"
+        ],
+        [
+         "3/8",
+         "<",
+         "40%"
+        ],
+        [
+         "0.85",
+         ">",
+         "4/5"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Put them in order",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Order from smallest: 0.3, 1/4, 28%.",
+      "steps": [
+       "Convert all to percentages: 30%, 25%, 28%.",
+       "Order: 25%, 28%, 30%.",
+       "1/4, 28%, 0.3."
+      ],
+      "answer": "1/4, 28%, 0.3"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Order each set from smallest to largest. Use = for amounts that are equal.",
+       "columns": [
+        "Set",
+        "Smallest to largest"
+       ],
+       "rows": [
+        [
+         "0.6, 1/2, 55%",
+         ""
+        ],
+        [
+         "3/4, 0.7, 72%",
+         ""
+        ],
+        [
+         "40%, 0.35, 2/5, 3/10",
+         ""
+        ],
+        [
+         "0.09, 1/10, 8%, 0.1",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "0.6, 1/2, 55%",
+         "1/2, 55%, 0.6"
+        ],
+        [
+         "3/4, 0.7, 72%",
+         "0.7, 72%, 3/4"
+        ],
+        [
+         "40%, 0.35, 2/5, 3/10",
+         "3/10, 0.35, 40% = 2/5"
+        ],
+        [
+         "0.09, 1/10, 8%, 0.1",
+         "8%, 0.09, 1/10 = 0.1"
+        ]
+       ]
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Ruby ordered these from smallest. Find her mistake and fix it.",
+       "work": [
+        "0.8, 0.25, 0.125"
+       ],
+       "answer": "She ordered by the number of digits. 0.125 < 0.25 < 0.8, so the order is 0.125, 0.25, 0.8."
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which is closest to 1/2?",
+       "options": [
+        "0.45",
+        "52%",
+        "3/5"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "52% is 2% from 50%; 0.45 is 5% away and 3/5 = 60% is 10% away."
+      }
+     ]
+    },
+    {
+     "title": "Who did better?",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "Ava scored 17/20. Ben scored 82%. Who did better?",
+      "steps": [
+       "Ava: 17/20 = 85/100 = 85%.",
+       "85% is more than 82%.",
+       "Ava did better."
+      ],
+      "answer": "Ava"
+     },
+     "items": [
+      {
+       "prompt": "Mia kicked 7 of 10 goals. Zac kicked 15 of 20. Who had the better goal-kicking accuracy?",
+       "answer": "Zac: 75% beats Mia's 70%.",
+       "lines": 2
+      },
+      {
+       "prompt": "Team A won 0.6 of its games, Team B won 13 of 20, Team C won 62%. Rank the teams from best to worst.",
+       "answer": "B (65%), C (62%), A (60%)",
+       "lines": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Numbers between two amounts, amounts greater than one, and a comparison game, with worked examples.",
+   "title": "Extension: Between and Beyond",
+   "subtitle": "Find amounts in between. Go past one whole.",
+   "sections": [
+    {
+     "title": "In between",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Find a decimal between 0.4 and 0.5.",
+      "steps": [
+       "Think in hundredths: 0.40 and 0.50.",
+       "Anything from 0.41 to 0.49 works.",
+       "For example 0.45."
+      ],
+      "answer": "0.45"
+     },
+     "items": [
+      {
+       "prompt": "Write a fraction between 1/4 and 1/2.",
+       "answer": "For example 1/3 or 3/8 (anything between 0.25 and 0.5)",
+       "lines": 2
+      },
+      {
+       "prompt": "Write a percentage between 0.6 and 2/3.",
+       "answer": "For example 62% or 65% (between 60% and 66.6...%)",
+       "lines": 2
+      },
+      {
+       "prompt": "Is there always a number between two different decimals? Explain.",
+       "answer": "Yes: add another decimal place, for example between 0.4 and 0.41 is 0.405.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "More than one whole",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Order 1.2, 115%, 5/4.",
+      "steps": [
+       "Convert to percentages: 120%, 115%, 125%.",
+       "115%, 120%, 125%."
+      ],
+      "answer": "115%, 1.2, 5/4"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Convert each to a percentage, then rank them from smallest (1) to largest (5).",
+       "columns": [
+        "Amount",
+        "Percentage",
+        "Rank"
+       ],
+       "rows": [
+        [
+         "1.3",
+         "",
+         ""
+        ],
+        [
+         "7/5",
+         "",
+         ""
+        ],
+        [
+         "125%",
+         "",
+         ""
+        ],
+        [
+         "1 1/10",
+         "",
+         ""
+        ],
+        [
+         "1.05",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "1.3",
+         "130%",
+         "4"
+        ],
+        [
+         "7/5",
+         "140%",
+         "5"
+        ],
+        [
+         "125%",
+         "125%",
+         "3"
+        ],
+        [
+         "1 1/10",
+         "110%",
+         "2"
+        ],
+        [
+         "1.05",
+         "105%",
+         "1"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Make a game",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Make a 'higher or lower' card game.",
+      "steps": [
+       "Write 10 cards: fractions, decimals and percentages.",
+       "Turn one over; a partner guesses if the next is higher.",
+       "Check by converting."
+      ],
+      "answer": "a set of cards"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Write 10 cards for a higher-or-lower game, mixing fractions, decimals and percentages between 0 and 1. Then write the 10 cards in order as an answer list.",
+       "answer": "Check: 10 different amounts in mixed forms, and a correct ordered answer list."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: a conversion step for each one, then compare, with a hint on every question.",
+   "title": "Comparing: Step by Step",
+   "subtitle": "Change them all to percentages first.",
+   "sections": [
+    {
+     "title": "Change, then compare",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Which is bigger: 1/2 or 0.4?",
+      "steps": [
+       "1/2 = 50%. 0.4 = 40%.",
+       "50% is bigger.",
+       "1/2 is bigger."
+      ],
+      "answer": "1/2"
+     },
+     "items": [
+      {
+       "prompt": "0.3 = ___%  1/4 = ___%  Which is bigger?",
+       "hint": "1/4 is 25 out of 100.",
+       "answer": "30% and 25%: 0.3 is bigger",
+       "lines": 2
+      },
+      {
+       "prompt": "3/4 = ___%  0.8 = ___%  Which is bigger?",
+       "hint": "0.8 is 8 tenths, 80 hundredths.",
+       "answer": "75% and 80%: 0.8 is bigger",
+       "lines": 2
+      }
+     ]
+    },
+    {
+     "title": "On the number line",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Mark 0.5 on the number line.",
+      "visual": {
+       "type": "numberLine",
+       "start": 0,
+       "end": 1,
+       "step": 0.1,
+       "labelEvery": 5,
+       "marked": [
+        5
+       ]
+      },
+      "steps": [
+       "Count the jumps from 0: each is 0.1.",
+       "5 jumps is 0.5."
+      ],
+      "answer": "halfway"
+     },
+     "items": [
+      {
+       "prompt": "Mark 0.2, 70% and 1/2 on the number line. Which is biggest?",
+       "visual": {
+        "type": "numberLine",
+        "start": 0,
+        "end": 1,
+        "step": 0.1,
+        "labelEvery": 5,
+        "maxH": 60
+       },
+       "answerVisual": {
+        "type": "numberLine",
+        "start": 0,
+        "end": 1,
+        "step": 0.1,
+        "labelEvery": 5,
+        "marked": [
+         2,
+         5,
+         7
+        ],
+        "maxH": 60
+       },
+       "hint": "70% = 0.7 and 1/2 = 0.5.",
+       "answer": "70% is biggest",
+       "answerLabel": "Biggest:",
+       "working": "none"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 4 of our fractions, decimals and percentages week: today we compare and order all three."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk, and draw a long number line from 0 to 1 on the board. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Read a point",
+   "from": "teacher",
+   "prompts": [
+    "What are the coordinates of M?"
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     -4,
+     4
+    ],
+    "y": [
+     -4,
+     4
+    ],
+    "points": [
+     {
+      "x": -3,
+      "y": 2,
+      "label": "M"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "(-3, 2)"
+    ]
+   },
+   "notes": {
+    "answer": "(-3, 2)",
+    "beats": [
+     [
+      "SAY: Let's warm up with coordinates and probability."
+     ],
+     [
+      "ASK: What are the coordinates of M?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (-3, 2)"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> say left or right, then up or down, from the origin. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's negative 3, 2: left 3 and up 2. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (3, 2).",
+     "Fix: ask which side of the origin M is, and they add the sign."
+    ],
+    "prep": "Review of Week 2 coordinates (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Move a point",
+   "from": "teacher",
+   "prompts": [
+    "(2, 1) moves 5 left and 3 down. Where does it land?"
+   ],
+   "reveal": {
+    "answers": [
+     "(-3, -2)"
+    ]
+   },
+   "notes": {
+    "answer": "(-3, -2)",
+    "beats": [
+     [
+      "ASK: Where does 2, 1 land after 5 left and 3 down?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (-3, -2)"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> one move at a time, counting on the four-quadrant grid. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 2 take away 5 is negative 3,",
+      "and 1 take away 3 is negative 2. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (7, 4).",
+     "Fix: ask which way left and down go, and they redo it."
+    ],
+    "prep": "Week 2 review: moving points across zero.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Chance as a percentage",
+   "from": "teacher",
+   "prompts": [
+    "What is P(green) as a percentage?"
+   ],
+   "visual": {
+    "type": "spinner",
+    "sectors": [
+     {
+      "label": "green"
+     },
+     {
+      "label": "blue",
+      "weight": 2
+     },
+     {
+      "label": "red"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "1/4 = 25%"
+    ]
+   },
+   "notes": {
+    "answer": "1/4 = 25%",
+    "beats": [
+     [
+      "ASK: What is the probability of green, as a percentage?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 25%"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> count the equal parts, write the fraction,",
+      "then make it out of 100. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Green is 1 of 4 equal parts: 1/4,",
+      "which is 25 percent. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 1/3, from 3 colours.",
+     "Fix: count equal parts, not colours, and they recount."
+    ],
+    "prep": "Week 4 review: probability.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "8 × 3"
+   ],
+   "reveal": {
+    "answers": [
+     "24"
+    ]
+   },
+   "notes": {
+    "answer": "24",
+    "beats": [
+     [
+      "SAY: Now for our eight times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 8 times 3?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 24"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> double, double, double: 6, 12, 24. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 24. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 21 or 27.",
+     "Fix: double 3 three times: 6, 12, 24, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "8 × 11"
+   ],
+   "reveal": {
+    "answers": [
+     "88"
+    ]
+   },
+   "notes": {
+    "answer": "88",
+    "beats": [
+     [
+      "SAY: Here's the next one."
+     ],
+     [
+      "ASK: What is 8 times 11?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 88"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 8 tens, plus one more 8. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 88. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 81.",
+     "Fix: 8 tens is 80, plus one more 8, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "72 ÷ 8"
+   ],
+   "reveal": {
+    "answers": [
+     "9"
+    ]
+   },
+   "notes": {
+    "answer": "9",
+    "beats": [
+     [
+      "SAY: Now a division. How many eights make 72?"
+     ],
+     [
+      "ASK: What is 72 divided by 8?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 9"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> count up in eights to 72. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 9. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 8.",
+     "Fix: check: 8 eights is 64, one more is 72, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to compare and order fractions, decimals and percentages.",
+   "successCriteria": [
+    "I can place fractions, decimals and percentages on a number line.",
+    "I can order mixed amounts by changing them to the same form.",
+    "I can explain which form is easiest for comparing, and why."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: We know all three names now.",
+      "Today we put mixed amounts in order."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 the number line is reachable for everyone; SC2 ordering mixed amounts is the core and the exit evidence; SC3 choosing a form is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Which is the biggest?",
+   "lines": [
+    "0.45",
+    "1/2",
+    "48%"
+   ],
+   "notes": {
+    "answer": "1/2 (50%)",
+    "beats": [
+     [
+      "POINT to each amount.",
+      "SAY: Three amounts, three different names. Which do you think is the biggest?"
+     ],
+     [
+      "ASK: Which is the biggest: 0.45, one half, or 48 percent?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 1/2"
+     ],
+     [
+      "SCAN boards for 1/2.",
+      "80%+ -> cold call one student: How did you decide?",
+      "Less -> change each to a percentage together: 45, 50, 48. Re-ask."
+     ],
+     [
+      "SAY: One half is the biggest, at 50 percent.",
+      "It was hard to see until we changed",
+      "them all to the same name. That's today."
+     ]
+    ],
+    "trap": [
+     "choosing 48% because 48 is the biggest number.",
+     "Fix: change all three to percentages, and they choose again."
+    ],
+    "prep": "Problem-first: comparing mixed forms shows the need to convert. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "equivalent",
+   "meaning": "Equal in value, even if written differently.",
+   "example": "1/2, 0.5 and 50% are equivalent.",
+   "visual": {
+    "type": "chips",
+    "items": [
+     "1/2",
+     "0.5",
+     "50%"
+    ]
+   },
+   "notes": {
+    "answer": "equal in value",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is equivalent. Say it with me: e-quiv-a-lent."
+     ],
+     [
+      "SAY: Equivalent means the same value, even when it's written differently.",
+      "One half, 0.5 and 50 percent are all equivalent."
+     ],
+     [
+      "ASK: Are 0.3 and 3% equivalent? Thumbs up for yes, down for no.",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs down: 0.3 is 30%"
+     ]
+    ],
+    "trap": [
+     "thumbs up for 0.3 and 3%.",
+     "Fix: shade both on a hundred grid, and they compare."
+    ],
+    "prep": "Equivalent is the idea that makes converting fair.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Convert, then order",
+   "steps": [
+    "Change all to percentages.",
+    "0.62 = 62%. 3/5 = 60%. 65% stays.",
+    "Order: 60%, 62%, 65%.",
+    "3/5, 0.62, 65%."
+   ],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "0.62",
+     "3/5",
+     "65%"
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "7/10, 0.73, 76%"
+    ]
+   },
+   "notes": {
+    "answer": "7/10, 0.73, 76%",
+    "beats": [
+     [
+      "POINT to the three amounts.",
+      "SAY: To put these in order, I change them all into the same form.",
+      "Percentages are easy to compare, so I'll use those."
+     ],
+     [
+      "MODEL converting.",
+      "SAY: 0.62 is 62 percent, and 3/5 is 60 percent.",
+      "So the order is 60, 62, 65: 3/5, 0.62, then 65 percent."
+     ],
+     [
+      "ASK: Order these from smallest: 0.73, 7/10, 76%.",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 7/10, 0.73, 76%"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 70, 73 and 76 percent: 7/10, 0.73, then 76 percent."
+     ]
+    ],
+    "trap": [
+     "ordering by the digits as written.",
+     "Fix: write each as a percentage beside it, and they reorder."
+    ],
+    "stretch": "Would decimals have been easier here? Why?",
+    "help": "Write each amount as a percentage underneath it.",
+    "prep": "Convert to one form, then order: the critical feature. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Use a number line",
+   "steps": [
+    "Each mark is 0.1, or 10%.",
+    "1/4 = 0.25: halfway between 0.2 and 0.3.",
+    "0.6 sits on the sixth mark.",
+    "Further right is bigger."
+   ],
+   "visual": {
+    "type": "numberLine",
+    "start": 0,
+    "end": 1,
+    "step": 0.1,
+    "labelEvery": 5,
+    "marked": [
+     6
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "9/10 = 0.9: furthest right"
+    ]
+   },
+   "notes": {
+    "answer": "9/10",
+    "beats": [
+     [
+      "POINT along the number line.",
+      "SAY: This number line goes from 0 to 1,",
+      "and each jump is one tenth, or 10 percent."
+     ],
+     [
+      "MODEL placing 1/4 and 0.6.",
+      "SAY: A quarter is 0.25, so it sits halfway between 0.2 and 0.3.",
+      "0.6 is on the sixth mark. The further right, the bigger."
+     ],
+     [
+      "ASK: Which is furthest right: 0.85, 9/10 or 88%?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 9/10"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 9/10 is 0.9, or 90 percent, so it's furthest right and biggest."
+     ]
+    ],
+    "trap": [
+     "placing 1/4 at 0.4.",
+     "Fix: say a quarter is 25 hundredths, and they place it again."
+    ],
+    "stretch": "Place 3/8 on the line.",
+    "help": "Count the jumps from 0 with your finger.",
+    "prep": "A number line shows order at a glance. SC1.",
+    "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which is the largest?",
+   "prompt": "Point to A, B or C",
+   "options": [
+    {
+     "text": "0.7"
+    },
+    {
+     "text": "3/5",
+     "misconception": "thinks a larger denominator makes a larger fraction"
+    },
+    {
+     "text": "65%",
+     "misconception": "compares 65 with 7 without converting"
+    }
+   ],
+   "answer": 0,
+   "notes": {
+    "answer": "A",
+    "beats": [
+     [
+      "SAY: Change them all to the same form first."
+     ],
+     [
+      "ASK: Which is the largest: 0.7, 3/5 or 65 percent?",
+      "20 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to A"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: Why isn't it C?",
+      "Less -> write each as a percentage on the board: 70, 60, 65. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's A: 0.7 is 70 percent.",
+      "3/5 is 60 percent, and 65 percent sits between them."
+     ]
+    ],
+    "trap": [
+     "pointing to C.",
+     "Fix: write 0.7 as a percentage, and they choose again."
+    ],
+    "prep": "First decision point. C: 65 looks bigger than 7; B: fraction size misread.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Order them",
+   "ask": "Write them in order from smallest to largest.",
+   "routine": "boards",
+   "thinkTime": 30,
+   "pivot": "change each to a percentage first, then order",
+   "followUp": "cold call one board: Which form did you change them into?",
+   "items": [
+    {
+     "text": "0.8, 3/4, 78%",
+     "answer": "3/4, 78%, 0.8"
+    },
+    {
+     "text": "20%, 0.25, 1/5",
+     "answer": "20% = 1/5, then 0.25",
+     "say": "20 percent and 1/5 are equal, then 0.25."
+    },
+    {
+     "text": "0.06, 1/20, 7%",
+     "answer": "1/20, 0.06, 7%"
+    },
+    {
+     "text": "0.375, 3/10, 35%",
+     "answer": "3/10, 35%, 0.375"
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise ordering together.",
+     "Write each set in order on your board."
+    ],
+    "trap": [
+     "putting longer decimals last.",
+     "Fix: change each to a percentage, and they reorder."
+    ],
+    "stretch": "Add a fourth amount that goes in the middle of each set.",
+    "help": "Write each amount as a percentage underneath it first.",
+    "prep": "Guided practice including an equal pair and small amounts. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Order from smallest",
+   "visual": {
+    "type": "chips",
+    "items": [
+     "0.45",
+     "2/5",
+     "42%",
+     "0.5"
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "2/5, 42%, 0.45, 0.5"
+    ]
+   },
+   "notes": {
+    "answer": "2/5, 42%, 0.45, 0.5",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Convert, then order."
+     ],
+     [
+      "ASK: Write these in order from smallest to largest.",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 2/5, 42%, 0.45, 0.5"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> write each as a percentage: 45, 40, 42, 50. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 40, 42, 45 and 50 percent: 2/5,",
+      "42 percent, 0.45, 0.5. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "putting 0.5 before 0.45.",
+     "Fix: write both as hundredths, 0.50 and 0.45, and they reorder."
+    ],
+    "prep": "The hinge before independent work. Anyone with 0.5 first or 2/5 last starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Compare and order fractions, decimals and percentages on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Which form did you change them into?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "comparing digits without converting.",
+     "Fix: change each to a percentage, and they redo it."
+    ],
+    "stretch": "Extension: amounts in between, amounts over one, and a card game.",
+    "help": "Supported Worksheet: a conversion step for each one, then compare.",
+    "prep": "Independent practice: greater or less, ordering, a mistake and sport comparisons. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Put the four amounts in order, smallest first."
+   ],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "0.3",
+     "1/4",
+     "28%",
+     "0.32"
+    ]
+   },
+   "notes": {
+    "answer": "1/4, 28%, 0.3, 0.32",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: Can you put 0.3, one quarter, 28 percent and 0.32 in order, smallest first?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 1/4, 28%, 0.3, 0.32"
+     ],
+     [
+      "RECORD who orders by the digits or misplaces 1/4.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "putting 0.3 before 28%.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: a new mixed set with a close pair.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner how you order mixed amounts.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for change them all to the same form, then order",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can order fractions, decimals and percentages?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 0.3 before 28% matters most."
+     ],
+     [
+      "ASK: How do you put mixed amounts in order?",
+      "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: change them all to the same form, then order"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: percentage of an amount.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

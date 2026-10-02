@@ -1,0 +1,1211 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 6,
+  "session": 1,
+  "title": "Fractions as Decimals",
+  "subtitle": "Term 4 Week 6, Session 1",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Fractions, Decimals and Percentages | Year 5/6 Maths | Session 1",
+  "outputFolder": "T4W6_Maths_S1_Fractions_To_Decimals",
+  "fileName": "Session 1 - Fractions as Decimals.pptx",
+  "titleVisual": {
+   "type": "hundredGrid",
+   "shaded": 75,
+   "label": "3/4 = 75/100 = 0.75"
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 5 (VC2M5N06, VC2M5N07) with Year 6 fraction-decimal connections: writing fractions as decimals through equivalent fractions with denominators of 10, 100 and 1000, using multiplication facts",
+   "shape": "example-first: tenths and hundredths on a hundred grid, then making the denominator 10, 100 or 1000, because place value carries the meaning",
+   "criticalFeature": "make the denominator 10, 100 or 1000, then read the decimal from place value",
+   "decisionPoints": [
+    "the choice check: which decimal equals 4/100?",
+    "the hinge: 13/20 as a decimal",
+    "the exit ticket"
+   ],
+   "anchor": "one amount, three names: fraction, decimal, percentage; make it out of 100 to switch"
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: one amount, three names: fraction, decimal, percentage; make it out of 100 to switch",
+   "A place value chart: ones . tenths hundredths thousandths"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Hundred grids, a fraction-to-decimal table, equivalent fractions, a mistake and sport statistics.",
+   "title": "Fractions as Decimals",
+   "subtitle": "Make the denominator 10, 100 or 1000, then read the decimal.",
+   "sections": [
+    {
+     "title": "Tenths, hundredths, thousandths",
+     "proficiency": "fluency",
+     "columns": 3,
+     "example": {
+      "prompt": "Write 37/100 as a decimal.",
+      "steps": [
+       "37 hundredths = 3 tenths and 7 hundredths.",
+       "Write 0.37."
+      ],
+      "answer": "0.37"
+     },
+     "items": [
+      {
+       "prompt": "Shaded part as a decimal?",
+       "visual": {
+        "type": "hundredGrid",
+        "shaded": 40,
+        "maxH": 95
+       },
+       "answer": "0.4",
+       "answerLabel": "Decimal:",
+       "working": "none"
+      },
+      {
+       "prompt": "Shaded part as a decimal?",
+       "visual": {
+        "type": "hundredGrid",
+        "shaded": 7,
+        "maxH": 95
+       },
+       "answer": "0.07",
+       "answerLabel": "Decimal:",
+       "working": "none"
+      },
+      {
+       "prompt": "Shaded part as a decimal?",
+       "visual": {
+        "type": "hundredGrid",
+        "shaded": 65,
+        "maxH": 95
+       },
+       "answer": "0.65",
+       "answerLabel": "Decimal:",
+       "working": "none"
+      },
+      {
+       "kind": "table",
+       "prompt": "Write each fraction as a decimal.",
+       "columns": [
+        "Fraction",
+        "Decimal"
+       ],
+       "rows": [
+        [
+         "3/10",
+         ""
+        ],
+        [
+         "9/10",
+         ""
+        ],
+        [
+         "51/100",
+         ""
+        ],
+        [
+         "8/100",
+         ""
+        ],
+        [
+         "307/1000",
+         ""
+        ],
+        [
+         "45/1000",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "3/10",
+         "0.3"
+        ],
+        [
+         "9/10",
+         "0.9"
+        ],
+        [
+         "51/100",
+         "0.51"
+        ],
+        [
+         "8/100",
+         "0.08"
+        ],
+        [
+         "307/1000",
+         "0.307"
+        ],
+        [
+         "45/1000",
+         "0.045"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Make it out of 10, 100 or 1000",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Write 3/4 as a decimal.",
+      "steps": [
+       "4 × 25 = 100, so multiply top and bottom by 25.",
+       "3/4 = 75/100.",
+       "75 hundredths = 0.75."
+      ],
+      "answer": "0.75"
+     },
+     "items": [
+      {
+       "prompt": "Write each fraction as a decimal. Make the denominator 10 or 100 first.",
+       "span": "full",
+       "parts": [
+        {
+         "prompt": "1/2",
+         "answer": "5/10 = 0.5"
+        },
+        {
+         "prompt": "4/5",
+         "answer": "8/10 = 0.8"
+        },
+        {
+         "prompt": "3/20",
+         "answer": "15/100 = 0.15"
+        },
+        {
+         "prompt": "18/25",
+         "answer": "72/100 = 0.72"
+        }
+       ]
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Sam wrote 3/4 as a decimal. Find his mistake and fix it.",
+       "work": [
+        "3/4 = 0.34"
+       ],
+       "answer": "He wrote the digits side by side. 3/4 = 75/100 = 0.75."
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which is the same as 0.6?",
+       "options": [
+        "6/100",
+        "3/5",
+        "6/1"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "0.6 = 6/10 = 3/5. 6/100 is 0.06."
+      }
+     ]
+    },
+    {
+     "title": "Sport statistics",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "A goal shooter scored 9 of 10 shots. Decimal?",
+      "steps": [
+       "9/10 = 9 tenths.",
+       "0.9"
+      ],
+      "answer": "0.9"
+     },
+     "items": [
+      {
+       "prompt": "A netballer scored 17 of her 20 shots. Write this as a decimal.",
+       "answer": "17/20 = 85/100 = 0.85",
+       "answerLabel": "Decimal:"
+      },
+      {
+       "prompt": "A cricket team won 19 of its 25 games. Write this as a decimal.",
+       "answer": "19/25 = 76/100 = 0.76",
+       "answerLabel": "Decimal:"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Thousandths, eighths and a decimal puzzle, with worked examples.",
+   "title": "Extension: Thousandths and Beyond",
+   "subtitle": "Make the denominator 1000.",
+   "sections": [
+    {
+     "title": "Thousandths",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Write 3/8 as a decimal.",
+      "steps": [
+       "8 × 125 = 1000.",
+       "3 × 125 = 375, so 3/8 = 375/1000.",
+       "0.375"
+      ],
+      "answer": "0.375"
+     },
+     "items": [
+      {
+       "prompt": "Write 5/8 as a decimal.",
+       "answer": "625/1000 = 0.625",
+       "answerLabel": "Decimal:"
+      },
+      {
+       "prompt": "Write 7/40 as a decimal. (Hint: 40 × 25 = 1000.)",
+       "answer": "175/1000 = 0.175",
+       "answerLabel": "Decimal:"
+      },
+      {
+       "prompt": "Write 11/125 as a decimal.",
+       "answer": "88/1000 = 0.088",
+       "answerLabel": "Decimal:"
+      },
+      {
+       "prompt": "Write 3/200 as a decimal.",
+       "answer": "15/1000 = 0.015",
+       "answerLabel": "Decimal:"
+      }
+     ]
+    },
+    {
+     "title": "Which can't be done?",
+     "proficiency": "reasoning",
+     "columns": 1,
+     "example": {
+      "prompt": "Can 1/3 be made into tenths or hundredths?",
+      "steps": [
+       "No whole number times 3 makes 10, 100 or 1000.",
+       "1/3 does not make a short decimal: 0.333..."
+      ],
+      "answer": "No"
+     },
+     "items": [
+      {
+       "kind": "sort",
+       "prompt": "Sort the fractions: can the denominator become 10, 100 or 1000?",
+       "cards": [
+        "1/4",
+        "1/3",
+        "2/5",
+        "5/6",
+        "7/20",
+        "4/9"
+       ],
+       "groups": [
+        "yes, a short decimal",
+        "no"
+       ],
+       "answer": {
+        "yes, a short decimal": [
+         "1/4",
+         "2/5",
+         "7/20"
+        ],
+        "no": [
+         "1/3",
+         "5/6",
+         "4/9"
+        ]
+       }
+      },
+      {
+       "prompt": "Look at the denominators that work. What do you notice about their factors?",
+       "answer": "They only have the factors 2 and 5 (like 10 = 2 × 5).",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Decimal puzzle",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "I am a fraction with denominator 20 and I equal 0.45. What am I?",
+      "steps": [
+       "0.45 = 45/100.",
+       "Divide top and bottom by 5.",
+       "9/20"
+      ],
+      "answer": "9/20"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Make three fraction puzzles like the example for a partner: one with denominator 4, one with 25 and one with 50. Write the answers on the back.",
+       "answer": "Check each puzzle: the decimal matches the fraction (for example 0.75 = 3/4, 0.12 = 3/25, 0.18 = 9/50)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: hundred grids to read, a place value frame, and a hint on every question.",
+   "title": "Decimals: Step by Step",
+   "subtitle": "Tenths and hundredths, one step at a time.",
+   "sections": [
+    {
+     "title": "Read the grid",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "How many hundredths are shaded?",
+      "visual": {
+       "type": "hundredGrid",
+       "shaded": 23
+      },
+      "steps": [
+       "Count the full rows: 2 rows = 20.",
+       "Count the extra squares: 3.",
+       "23 hundredths = 0.23."
+      ],
+      "answer": "0.23"
+     },
+     "items": [
+      {
+       "prompt": "___ hundredths = 0.___",
+       "visual": {
+        "type": "hundredGrid",
+        "shaded": 35,
+        "maxH": 150
+       },
+       "hint": "Each full row is 10.",
+       "answer": "35 hundredths = 0.35",
+       "working": "none"
+      },
+      {
+       "prompt": "___ hundredths = 0.___",
+       "visual": {
+        "type": "hundredGrid",
+        "shaded": 8,
+        "maxH": 150
+       },
+       "hint": "Less than one row: 0.0_.",
+       "answer": "8 hundredths = 0.08",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Tenths",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Write 4/10 as a decimal.",
+      "steps": [
+       "4 tenths.",
+       "Tenths go straight after the point: 0.4."
+      ],
+      "answer": "0.4"
+     },
+     "items": [
+      {
+       "prompt": "Write 7/10 as a decimal.",
+       "hint": "7 tenths.",
+       "answer": "0.7",
+       "answerLabel": "Decimal:"
+      },
+      {
+       "prompt": "Write 1/2 as a decimal. Make it out of 10 first.",
+       "hint": "1/2 = 5/10.",
+       "answer": "0.5",
+       "answerLabel": "Decimal:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 1 of our fractions, decimals and percentages week: today we write fractions as decimals."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk, and draw a place value chart on the board. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Perimeter",
+   "from": "teacher",
+   "prompts": [
+    "What is the perimeter of a 14 m by 9 m rectangle?"
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      0
+     ],
+     [
+      14,
+      9
+     ],
+     [
+      0,
+      9
+     ]
+    ],
+    "labels": [
+     "14 m",
+     "9 m",
+     null,
+     null
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "46 m"
+    ]
+   },
+   "notes": {
+    "answer": "46 m",
+    "beats": [
+     [
+      "SAY: Let's warm up with last week's area and perimeter."
+     ],
+     [
+      "ASK: What is the perimeter of a 14 metre by 9 metre rectangle?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 46 m"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> add a length and a width, then double. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 14 and 9 make 23, doubled is 46 metres. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 126, the area.",
+     "Fix: say perimeter goes around the edge, and they add."
+    ],
+    "prep": "Review of Week 5 area and perimeter (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Missing side",
+   "from": "teacher",
+   "prompts": [
+    "Area 84 m², one side 7 m. How long is the other side?"
+   ],
+   "reveal": {
+    "answers": [
+     "12 m"
+    ]
+   },
+   "notes": {
+    "answer": "12 m",
+    "beats": [
+     [
+      "ASK: How long is the other side?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 12 m"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> say 7 times what is 84, and count up in sevens. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 84 divided by 7 is 12 metres. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 77, by subtracting.",
+     "Fix: say 7 times what makes 84, and they divide."
+    ],
+    "prep": "Week 5 review: missing sides.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Spinner chance",
+   "from": "teacher",
+   "prompts": [
+    "What is P(red)?"
+   ],
+   "visual": {
+    "type": "spinner",
+    "sectors": [
+     {
+      "label": "red"
+     },
+     {
+      "label": "blue"
+     },
+     {
+      "label": "red"
+     },
+     {
+      "label": "green"
+     },
+     {
+      "label": "red"
+     },
+     {
+      "label": "blue"
+     },
+     {
+      "label": "yellow"
+     },
+     {
+      "label": "green"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "3/8"
+    ]
+   },
+   "notes": {
+    "answer": "3/8",
+    "beats": [
+     [
+      "ASK: What is the probability of red?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 3/8"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> count all the equal parts, then the red parts. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Red is 3 of 8 equal parts, so 3/8. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 3/5, red out of the others.",
+     "Fix: count all 8 parts for the bottom number, and they rewrite it."
+    ],
+    "prep": "Week 4 review: probability.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "8 × 7"
+   ],
+   "reveal": {
+    "answers": [
+     "56"
+    ]
+   },
+   "notes": {
+    "answer": "56",
+    "beats": [
+     [
+      "SAY: Now for our eight times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 8 times 7?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 56"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> double, double, double: 14, 28, 56. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 56. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 54 or 63.",
+     "Fix: double 7 three times: 14, 28, 56, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "8 × 9"
+   ],
+   "reveal": {
+    "answers": [
+     "72"
+    ]
+   },
+   "notes": {
+    "answer": "72",
+    "beats": [
+     [
+      "SAY: Here's the next one."
+     ],
+     [
+      "ASK: What is 8 times 9?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 72"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 8 tens is 80, take one 8 away. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 72. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 81.",
+     "Fix: 8 tens is 80, take away 8, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "64 ÷ 8"
+   ],
+   "reveal": {
+    "answers": [
+     "8"
+    ]
+   },
+   "notes": {
+    "answer": "8",
+    "beats": [
+     [
+      "SAY: Now a division. How many eights make 64?"
+     ],
+     [
+      "ASK: What is 64 divided by 8?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 8"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> halve 64 three times: 32, 16, 8. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 8. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 7 or 9.",
+     "Fix: check: 8 eights is 64, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to write fractions as decimals using tenths, hundredths and thousandths.",
+   "successCriteria": [
+    "I can write tenths and hundredths as decimals.",
+    "I can make the denominator 10, 100 or 1000 to write a fraction as a decimal.",
+    "I can explain how place value shows the fraction in a decimal."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: This week, every amount has three names: a fraction, a decimal and a percentage.",
+      "Today we turn fractions into decimals."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 tenths and hundredths is reachable for everyone; SC2 making the denominator 10, 100 or 1000 is the core and the exit evidence; SC3 place value is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Name the shaded part",
+   "visual": {
+    "type": "hundredGrid",
+    "shaded": 30
+   },
+   "prompt": "What fraction is shaded? Write it as a decimal too.",
+   "notes": {
+    "answer": "30/100 = 3/10 = 0.3",
+    "beats": [
+     [
+      "POINT to the grid.",
+      "SAY: This grid has 100 equal squares.",
+      "Some of you may remember shading grids like this."
+     ],
+     [
+      "ASK: What fraction is shaded, and how would you write it as a decimal?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 30/100 or 3/10, and 0.3"
+     ],
+     [
+      "SCAN boards for 0.3.",
+      "80%+ -> cold call one student: Why 0.3 and not 0.03?",
+      "Less -> count the shaded rows: 3 rows of 10, 3 tenths. Re-ask."
+     ],
+     [
+      "SAY: It's 30 hundredths, which is 3 tenths, or 0.3.",
+      "One amount, different names. That's our week."
+     ]
+    ],
+    "trap": [
+     "writing 0.03.",
+     "Fix: count the full rows as tenths, and they rewrite it."
+    ],
+    "prep": "The launch comes after the LI: a hundred grid shows both names. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "decimal",
+   "meaning": "A number that uses a decimal point to show parts of a whole: tenths, hundredths, thousandths.",
+   "example": "0.75 means 7 tenths and 5 hundredths.",
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Ones",
+      ".",
+      "Tenths",
+      "Hundredths"
+     ],
+     [
+      "0",
+      ".",
+      "7",
+      "5"
+     ]
+    ]
+   },
+   "notes": {
+    "answer": "5",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is decimal. Say it with me: dec-i-mal."
+     ],
+     [
+      "SAY: After the decimal point come tenths, then hundredths, then thousandths.",
+      "Each place is ten times smaller than the one before."
+     ],
+     [
+      "ASK: In 0.75, which digit shows the hundredths?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 5"
+     ]
+    ],
+    "trap": [
+     "saying 7.",
+     "Fix: point along the chart: tenths, then hundredths, and they look again."
+    ],
+    "prep": "Place value carries the meaning; keep the chart on the board.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Tenths and hundredths",
+   "steps": [
+    "23/100 means 23 hundredths.",
+    "That is 2 tenths and 3 hundredths.",
+    "Write 0.23."
+   ],
+   "visual": {
+    "type": "hundredGrid",
+    "shaded": 23,
+    "label": "23/100"
+   },
+   "reveal": {
+    "answers": [
+     "9/100 = 0.09"
+    ]
+   },
+   "notes": {
+    "answer": "0.09",
+    "beats": [
+     [
+      "POINT to the shaded squares.",
+      "SAY: 23 squares out of 100 are shaded. That's 23 hundredths."
+     ],
+     [
+      "MODEL the place value chart.",
+      "SAY: 23 hundredths is 2 tenths and 3 hundredths,",
+      "so I write 0, point, 2 in the tenths, 3 in the hundredths: 0.23."
+     ],
+     [
+      "ASK: How would you write 9 hundredths as a decimal?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 0.09"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 0.09. Zero tenths, 9 hundredths.",
+      "The zero holds the tenths place."
+     ]
+    ],
+    "trap": [
+     "writing 0.9.",
+     "Fix: say 9 hundredths has no full tenths, and they rewrite it."
+    ],
+    "stretch": "Write 9 thousandths as a decimal.",
+    "help": "Write the digits into a place value chart first.",
+    "prep": "Hundredths sit two places after the point. SC1.",
+    "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Make the denominator 100",
+   "steps": [
+    "What times 4 makes 100? 25.",
+    "Multiply top and bottom by 25: 3/4 = 75/100.",
+    "75 hundredths = 0.75."
+   ],
+   "visual": {
+    "type": "barModel",
+    "parts": 4,
+    "shaded": 3,
+    "labels": [
+     "25",
+     "25",
+     "25",
+     ""
+    ],
+    "total": "100"
+   },
+   "reveal": {
+    "answers": [
+     "7/20 = 35/100 = 0.35"
+    ]
+   },
+   "notes": {
+    "answer": "0.35",
+    "beats": [
+     [
+      "POINT to the quarters.",
+      "SAY: To write 3/4 as a decimal, I want hundredths.",
+      "4 times 25 is 100, so each quarter is 25 hundredths."
+     ],
+     [
+      "MODEL multiplying top and bottom by 25.",
+      "SAY: Three quarters is 75 hundredths, which is 0.75."
+     ],
+     [
+      "ASK: Now you try: how would you write 7/20 as a decimal?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 0.35"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 20 times 5 is 100, so 7/20 is 35 hundredths: 0.35."
+     ]
+    ],
+    "trap": [
+     "writing 0.720 or 7.20.",
+     "Fix: ask what times 20 makes 100, and they redo it."
+    ],
+    "stretch": "Write 3/8 as a decimal using thousandths.",
+    "help": "List the times table of the denominator up to 100.",
+    "prep": "The critical feature: make the denominator 10, 100 or 1000 first. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which decimal equals 4/100?",
+   "prompt": "Point to A, B or C",
+   "options": [
+    {
+     "text": "0.4",
+     "misconception": "reads 4 hundredths as 4 tenths"
+    },
+    {
+     "text": "0.04"
+    },
+    {
+     "text": "4.100",
+     "misconception": "writes the numerator and denominator side by side"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Think about which place the 4 belongs in."
+     ],
+     [
+      "ASK: Which decimal equals 4 hundredths?",
+      "10 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What is A as a fraction?",
+      "Less -> write 4 into the hundredths column of the chart. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B, 0.04: zero tenths and 4 hundredths.",
+      "A is 4 tenths, and C is not a decimal of 4/100 at all."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: shade 4 squares on a hundred grid, and they choose again."
+    ],
+    "prep": "First decision point. A: hundredths read as tenths; C: digits side by side.",
+    "tag": "[CFU | Supported application | SC1 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Write it as a decimal",
+   "ask": "Write the fraction as a decimal.",
+   "routine": "boards",
+   "thinkTime": 15,
+   "pivot": "make the denominator 10 or 100 on the board together",
+   "followUp": "cold call one board: What did you multiply by?",
+   "items": [
+    {
+     "text": "3/10",
+     "answer": "0.3"
+    },
+    {
+     "text": "47/100",
+     "answer": "0.47"
+    },
+    {
+     "text": "6/100",
+     "answer": "0.06"
+    },
+    {
+     "text": "2/5",
+     "answer": "0.4",
+     "say": "2/5 is 4 tenths: 0.4."
+    },
+    {
+     "text": "9/25",
+     "answer": "0.36",
+     "say": "Times 4: 36 hundredths, 0.36."
+    },
+    {
+     "text": "125/1000",
+     "answer": "0.125"
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write each decimal on your board."
+    ],
+    "trap": [
+     "dropping the zero in 0.06.",
+     "Fix: write it into the place value chart, and they fix it."
+    ],
+    "stretch": "Write each one as a percentage too.",
+    "help": "Use the place value chart on the board.",
+    "prep": "Guided practice: tenths, hundredths, a zero place holder, equivalents and thousandths. SC1 and SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Write 13/20 as a decimal",
+   "visual": {
+    "type": "text",
+    "text": "13/20"
+   },
+   "reveal": {
+    "answers": [
+     "65/100 = 0.65"
+    ]
+   },
+   "notes": {
+    "answer": "0.65",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Make the denominator 100 first."
+     ],
+     [
+      "ASK: How do you write 13/20 as a decimal?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 0.65"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> ask what times 20 makes 100, then multiply the top. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 20 times 5 is 100, and 13 times 5 is 65: 0.65.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 0.13.",
+     "Fix: say twentieths are not hundredths yet, and they multiply."
+    ],
+    "prep": "The hinge before independent work. Anyone writing 0.1320 or 1.3 starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Write fractions as decimals on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: What did you make the denominator?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "writing the digits side by side.",
+     "Fix: make the denominator 100 first, and they redo it."
+    ],
+    "stretch": "Extension: thousandths, fractions that will not work, and a puzzle.",
+    "help": "Supported Worksheet: hundred grids to read and a place value frame.",
+    "prep": "Independent practice: grids, a fraction table, equivalents, a mistake and sport statistics. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Write 11/25 as a decimal."
+   ],
+   "visual": {
+    "type": "text",
+    "text": "11/25"
+   },
+   "notes": {
+    "answer": "0.44",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: How do you write 11/25 as a decimal?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 0.44"
+     ],
+     [
+      "RECORD who writes 0.1125 or 0.11.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing 0.11.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: twenty-fifths, a new denominator.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner how you turn a fraction into a decimal.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for make the denominator 10, 100 or 1000, then read it",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can write a fraction as a decimal?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 0.11 on the board matters most."
+     ],
+     [
+      "ASK: How do you turn a fraction into a decimal?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: make the denominator 10, 100 or 1000, then read it"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: fractions as division.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

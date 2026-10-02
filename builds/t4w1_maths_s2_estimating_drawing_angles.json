@@ -68,7 +68,7 @@
       "kind": "worksheet",
       "role": "main",
       "label": "Worksheet",
-      "description": "Your turn. Estimate, draw, reflex angles, worded problems and thinking questions.",
+      "description": "Your turn. Estimate, draw, reflex angles, and a sport problem with a mistake to fix.",
       "title": "Estimating and Drawing Angles",
       "subtitle": "You need a protractor, a ruler and a sharp pencil.",
       "sections": [
@@ -93,9 +93,8 @@
             },
             "steps": [
               "More than 90°? Yes.",
-              "Closer to 90° or 180°? Closer to 180°.",
-              "Estimate: about 130°.",
-              "Measure: 130°."
+              "Nearer 180° than 90°.",
+              "Estimate 130°. Measure: 130°."
             ],
             "answer": "estimate about 130°, measured 130°"
           },
@@ -113,15 +112,21 @@
                     "from": 0,
                     "to": 70
                   }
-                ],
-                "size": 165
+                ]
               },
-              "answer": "about 70°; 70° (±2°)",
-              "answerLines": 2,
-              "answerLabel": [
-                "Estimate:",
-                "Measure:"
-              ]
+              "parts": [
+                {
+                  "prompt": "Estimate",
+                  "unit": "°",
+                  "answer": "about 70"
+                },
+                {
+                  "prompt": "Measure",
+                  "unit": "°",
+                  "answer": "70"
+                }
+              ],
+              "working": "none"
             },
             {
               "prompt": "Estimate, then measure.",
@@ -136,114 +141,28 @@
                     "from": 0,
                     "to": 160
                   }
-                ],
-                "size": 165
+                ]
               },
-              "answer": "about 160°; 160° (±2°)",
-              "answerLines": 2,
-              "answerLabel": [
-                "Estimate:",
-                "Measure:"
-              ]
-            },
-            {
-              "prompt": "Estimate, then measure.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  25
-                ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 25
-                  }
-                ],
-                "size": 165
-              },
-              "answer": "about 25°; 25° (±2°)",
-              "answerLines": 2,
-              "answerLabel": [
-                "Estimate:",
-                "Measure:"
-              ]
-            },
-            {
-              "prompt": "Estimate, then measure.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  95
-                ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 95
-                  }
-                ],
-                "size": 165
-              },
-              "answer": "about 95°; 95° (±2°)",
-              "answerLines": 2,
-              "answerLabel": [
-                "Estimate:",
-                "Measure:"
-              ]
-            },
-            {
-              "prompt": "Estimate, then measure.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  145
-                ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 145
-                  }
-                ],
-                "size": 165
-              },
-              "answer": "about 145°; 145° (±2°)",
-              "answerLines": 2,
-              "answerLabel": [
-                "Estimate:",
-                "Measure:"
-              ]
-            },
-            {
-              "prompt": "Estimate, then measure.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  55
-                ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 55
-                  }
-                ],
-                "size": 165
-              },
-              "answer": "about 55°; 55° (±2°)",
-              "answerLines": 2,
-              "answerLabel": [
-                "Estimate:",
-                "Measure:"
-              ]
+              "parts": [
+                {
+                  "prompt": "Estimate",
+                  "unit": "°",
+                  "answer": "about 160"
+                },
+                {
+                  "prompt": "Measure",
+                  "unit": "°",
+                  "answer": "160"
+                }
+              ],
+              "working": "none"
             }
           ]
         },
         {
           "title": "Draw it",
           "proficiency": "fluency",
-          "columns": 1,
+          "columns": 2,
           "example": {
             "prompt": "Draw an angle of 50° on this arm.",
             "visual": {
@@ -261,57 +180,40 @@
               "protractor": true
             },
             "steps": [
-              "Centre on the vertex, 0 on the arm.",
-              "Count up from that 0 and dot at 50.",
-              "Rule from the vertex through the dot."
+              "Centre on the dot, 0 on the arm.",
+              "Count up from 0, dot at 50.",
+              "Rule from the corner through the dot."
             ],
             "answer": "a 50° angle"
           },
           "items": [
             {
-              "prompt": "Draw an angle of 40° on this arm.",
+              "prompt": "Draw an angle of 40° on this arm. Then name it.",
               "visual": {
                 "type": "angle",
                 "rays": [
                   0
                 ],
                 "arcs": [],
-                "size": 300,
                 "maxH": 150
               },
-              "answer": "a 40° angle (check with a protractor)",
-              "answerLines": 1,
-              "answerLabel": "Measured:"
+              "answer": "a 40° angle, acute",
+              "answerLabel": "Name:",
+              "working": "none"
             },
             {
-              "prompt": "Draw an angle of 115° on this arm.",
+              "prompt": "Draw an angle of 115° on this arm. Then name it.",
               "visual": {
                 "type": "angle",
                 "rays": [
                   0
                 ],
                 "arcs": [],
-                "size": 300,
                 "maxH": 150
               },
-              "answer": "a 115° angle (check with a protractor)",
-              "answerLines": 1,
-              "answerLabel": "Measured:"
-            },
-            {
-              "prompt": "Draw an angle of 165° on this arm.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0
-                ],
-                "arcs": [],
-                "size": 300,
-                "maxH": 150
-              },
-              "answer": "a 165° angle (check with a protractor)",
-              "answerLines": 1,
-              "answerLabel": "Measured:"
+              "answer": "a 115° angle, obtuse",
+              "answerLabel": "Name:",
+              "working": "none"
             }
           ]
         },
@@ -349,7 +251,7 @@
           },
           "items": [
             {
-              "prompt": "Measure the inside angle, then find the reflex angle.",
+              "prompt": "Measure the inside angle. Then work out the reflex angle.",
               "visual": {
                 "type": "angle",
                 "rays": [
@@ -363,84 +265,71 @@
                   }
                 ]
               },
-              "answer": "inside 125°, reflex 235°",
-              "answerLines": 2,
-              "answerLabel": [
-                "Inside:",
-                "Reflex:"
-              ]
+              "parts": [
+                {
+                  "prompt": "Inside",
+                  "unit": "°",
+                  "answer": "125"
+                },
+                {
+                  "prompt": "Reflex",
+                  "unit": "°",
+                  "answer": "235"
+                }
+              ],
+              "working": "none"
             },
             {
-              "prompt": "Measure the inside angle, then find the reflex angle.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  320
+              "kind": "table",
+              "prompt": "Fill the gaps. Some go backwards!",
+              "columns": [
+                "Inside angle",
+                "Reflex angle"
+              ],
+              "rows": [
+                [
+                  "50°",
+                  ""
                 ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 320
-                  }
-                ]
-              },
-              "answer": "inside 40°, reflex 320°",
-              "answerLines": 2,
-              "answerLabel": [
-                "Inside:",
-                "Reflex:"
-              ]
-            },
-            {
-              "prompt": "Measure the inside angle, then find the reflex angle.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  200
+                [
+                  "135°",
+                  ""
                 ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 200
-                  }
-                ]
-              },
-              "answer": "inside 160°, reflex 200°",
-              "answerLines": 2,
-              "answerLabel": [
-                "Inside:",
-                "Reflex:"
-              ]
-            },
-            {
-              "prompt": "Measure the inside angle, then find the reflex angle.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  265
+                [
+                  "",
+                  "260°"
                 ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 265
-                  }
+                [
+                  "",
+                  "185°"
                 ]
-              },
-              "answer": "inside 95°, reflex 265°",
-              "answerLines": 2,
-              "answerLabel": [
-                "Inside:",
-                "Reflex:"
-              ]
+              ],
+              "answers": [
+                [
+                  "50°",
+                  "310°"
+                ],
+                [
+                  "135°",
+                  "225°"
+                ],
+                [
+                  "100°",
+                  "260°"
+                ],
+                [
+                  "175°",
+                  "185°"
+                ]
+              ],
+              "span": "column"
             }
           ]
         },
         {
           "title": "Angles in sport",
           "proficiency": "problemSolving",
+          "columns": 2,
           "example": {
             "prompt": "A skier turns a quarter turn, then another quarter turn. How far did she turn?",
             "steps": [
@@ -452,49 +341,19 @@
           },
           "items": [
             {
-              "prompt": "A snowboarder spins a full turn and then another quarter turn. How many degrees is that altogether?",
-              "answer": "450°",
-              "answerLines": 1
+              "prompt": "A snowboarder spins a full turn, then another quarter turn. How many degrees is that altogether?",
+              "answer": "450",
+              "answerLabel": "Total:",
+              "unit": "°"
             },
             {
-              "prompt": "A diver's body starts straight (180°) and folds until the angle at the hips is 45°. By how many degrees did the angle close?",
-              "answer": "135°",
-              "answerLines": 1
-            },
-            {
-              "prompt": "A cricket umpire raises one arm from pointing down to pointing straight up. Estimate the turn and name the angle.",
-              "answer": "about 180°, a straight angle",
-              "answerLines": 1
-            },
-            {
-              "prompt": "A goalie stands facing the field and turns 270°. How far would she turn the other way to face the same direction?",
-              "answer": "90°",
-              "answerLines": 1
-            }
-          ]
-        },
-        {
-          "title": "Think deeper",
-          "proficiency": "reasoning",
-          "example": {
-            "prompt": "Could 30° be a good estimate for an obtuse angle?",
-            "steps": [
-              "Obtuse means between 90° and 180°.",
-              "30° is less than 90°.",
-              "So 30° cannot be right."
-            ],
-            "answer": "No"
-          },
-          "items": [
-            {
-              "prompt": "Mia estimated 30° for an angle that measures 150°. What mistake might she have made?",
-              "answer": "She judged the wrong side or confused acute and obtuse; 150° is more than 90°, so it cannot be about 30°.",
-              "answerLines": 2
-            },
-            {
-              "prompt": "Why can't you measure a reflex angle straight away with a 180° protractor? How do you find it instead?",
-              "answer": "The protractor only reaches 180°; measure the inside angle and subtract it from 360°.",
-              "answerLines": 2
+              "kind": "mistake",
+              "prompt": "Mia estimated the angle of a skater's arms, then measured it. Find her mistake and fix it.",
+              "work": [
+                "My estimate: about 30°.",
+                "My protractor says 150°, so the protractor must be wrong."
+              ],
+              "answer": "The estimate was wrong, not the protractor. 150° is obtuse, so compare with 90° first: it is well over 90°."
             }
           ]
         }
@@ -511,46 +370,53 @@
         {
           "title": "Build a triangle",
           "proficiency": "reasoning",
+          "columns": 2,
           "intro": "You can build a triangle from a base and two angles. Draw the base, draw an angle at each end, and where the arms cross is the third corner.",
           "example": {
             "prompt": "Base 6 cm, angles of 50° and 50°.",
             "steps": [
               "Rule a 6 cm base.",
-              "Draw 50° at the left end.",
-              "Draw 50° at the right end, facing in.",
+              "Draw 50° at each end, facing in.",
               "Where the arms cross is the top corner."
             ],
             "answer": "a triangle with two 50° angles"
           },
           "items": [
             {
+              "kind": "open",
               "prompt": "Build a triangle: base 7 cm, angles of 60° and 60°. Measure the third angle.",
-              "box": 150,
-              "answerLines": 1,
-              "answer": "third angle 60°"
+              "answer": "Third angle 60°.",
+              "workMin": 150
             },
             {
-              "prompt": "Build a triangle: base 8 cm, angles of 90° and 40°. Measure the third angle.",
-              "box": 150,
-              "answerLines": 1,
-              "answer": "third angle 50°"
+              "kind": "open",
+              "prompt": "Build a triangle: base 6 cm, angles of 90° and 40°. Measure the third angle.",
+              "answer": "Third angle 50°.",
+              "workMin": 150
             },
             {
-              "prompt": "Build a triangle: base 6 cm, angles of 30° and 110°. Measure the third angle.",
-              "box": 150,
-              "answerLines": 1,
-              "answer": "third angle 40°"
+              "prompt": "Add the three angles in each triangle. What do you notice? Do you think it is always true?",
+              "answer": "Each set adds to 180°. It is always true for a triangle.",
+              "lines": 3
             },
             {
-              "prompt": "Look at your three triangles. Add the three angles in each. What do you notice?",
-              "answerLines": 2,
-              "answer": "each triangle's angles add to 180°"
+              "kind": "choice",
+              "prompt": "A triangle has angles of 90° and 50°. What is the third angle?",
+              "options": [
+                "30°",
+                "40°",
+                "50°"
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "The three angles add to 180°: 180° - 90° - 50° = 40°."
             }
           ]
         },
         {
           "title": "Reflex riddles",
           "proficiency": "reasoning",
+          "columns": 2,
           "example": {
             "prompt": "My inside angle is a quarter turn. What is my reflex angle?",
             "steps": [
@@ -562,17 +428,14 @@
           },
           "items": [
             {
-              "prompt": "My inside angle is half of 100°. What is my reflex angle?",
-              "answer": "310°"
-            },
-            {
               "prompt": "My reflex angle is 3 times my inside angle. Together we make a full turn. What are we?",
               "answer": "inside 90°, reflex 270°",
-              "answerLines": 2
+              "lines": 2
             },
             {
               "prompt": "My reflex angle is 200°. What is my inside angle, and what is its name?",
-              "answer": "160°, obtuse"
+              "answer": "160°, obtuse",
+              "lines": 2
             }
           ]
         }
@@ -583,7 +446,7 @@
       "role": "supported",
       "label": "Supported Worksheet",
       "answerKey": false,
-      "description": "For students who need more guidance: protractors printed on, sentence starters and hints.",
+      "description": "For students who need more guidance: protractors printed on, and a hint on every question.",
       "title": "Estimating and Drawing Angles: Step by Step",
       "subtitle": "Take it one step at a time.",
       "sections": [
@@ -609,7 +472,7 @@
             "steps": [
               "Hold a book corner on it.",
               "It is just smaller than the corner.",
-              "Estimate: a bit less than 90°, about 85°."
+              "A bit less than 90°: about 85°."
             ],
             "answer": "about 85°"
           },
@@ -630,11 +493,14 @@
                 ]
               },
               "hint": "Half of a square corner is 45°.",
-              "answer": "about 45°",
-              "answerLabel": "About:"
+              "answer": "about 45",
+              "answerLabel": "About:",
+              "unit": "°",
+              "working": "none"
             },
             {
-              "prompt": "Estimate this angle.",
+              "kind": "choice",
+              "prompt": "Which is the best estimate?",
               "visual": {
                 "type": "angle",
                 "rays": [
@@ -648,9 +514,13 @@
                   }
                 ]
               },
-              "hint": "A square corner and a half of one: 90° + 45°.",
-              "answer": "about 135°",
-              "answerLabel": "About:"
+              "hint": "A square corner and half of one more.",
+              "options": [
+                "45°",
+                "90°",
+                "135°"
+              ],
+              "answer": 2
             },
             {
               "prompt": "Estimate this angle.",
@@ -667,9 +537,35 @@
                   }
                 ]
               },
-              "hint": "Almost a straight line (180°).",
-              "answer": "about 175°",
-              "answerLabel": "About:"
+              "hint": "Almost a straight line, and a straight line is 180°.",
+              "answer": "about 175",
+              "answerLabel": "About:",
+              "unit": "°",
+              "working": "none"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Which is the best estimate?",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  20
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 20
+                  }
+                ]
+              },
+              "hint": "Much smaller than a square corner.",
+              "options": [
+                "20°",
+                "60°",
+                "100°"
+              ],
+              "answer": 0
             }
           ]
         },
@@ -696,48 +592,47 @@
             "steps": [
               "Find the 0 on the arm.",
               "Count up that row to 60.",
-              "Dot at 60, then rule to the vertex."
+              "Dot at 60, then rule to the corner."
             ],
             "answer": "a 60° angle"
           },
           "items": [
             {
-              "prompt": "Draw 30°. Dot at 30, then rule to the vertex.",
+              "prompt": "Draw 30°. Dot at 30, then rule to the corner.",
               "visual": {
                 "type": "angle",
                 "rays": [
                   0
                 ],
                 "arcs": [],
-                "protractor": true,
-                "size": 190
+                "protractor": true
               },
               "hint": "Start at the 0 on the right.",
               "answer": "a 30° angle",
-              "answerLines": 1,
-              "answerLabel": "Measured:"
+              "answerBox": false,
+              "working": "none"
             },
             {
-              "prompt": "Draw 120°. Dot at 120, then rule to the vertex.",
+              "prompt": "Draw 120°. Dot at 120, then rule to the corner.",
               "visual": {
                 "type": "angle",
                 "rays": [
                   0
                 ],
                 "arcs": [],
-                "protractor": true,
-                "size": 190
+                "protractor": true
               },
               "hint": "It is obtuse, so the dot is past the top.",
               "answer": "a 120° angle",
-              "answerLines": 1,
-              "answerLabel": "Measured:"
+              "answerBox": false,
+              "working": "none"
             }
           ]
         },
         {
           "title": "Reflex angles with help",
           "proficiency": "fluency",
+          "columns": 2,
           "example": {
             "prompt": "The inside angle is 80°. Find the reflex angle.",
             "steps": [
@@ -749,7 +644,7 @@
           },
           "items": [
             {
-              "prompt": "The inside angle is 100°. 360 - 100 = ____",
+              "prompt": "The inside angle is 100°. What is the reflex angle?",
               "visual": {
                 "type": "angle",
                 "rays": [
@@ -767,14 +662,15 @@
                     "to": 360,
                     "label": "100°"
                   }
-                ],
-                "size": 170
+                ]
               },
               "hint": "Start at 360 and take away 100.",
-              "answer": "260°"
+              "answer": "260",
+              "answerLabel": "360 - 100 =",
+              "unit": "°"
             },
             {
-              "prompt": "The inside angle is 30°. 360 - 30 = ____",
+              "prompt": "The inside angle is 30°. What is the reflex angle?",
               "visual": {
                 "type": "angle",
                 "rays": [
@@ -792,36 +688,12 @@
                     "to": 360,
                     "label": "30°"
                   }
-                ],
-                "size": 170
+                ]
               },
               "hint": "Start at 360 and take away 30.",
-              "answer": "330°"
-            },
-            {
-              "prompt": "The inside angle is 145°. 360 - 145 = ____",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  215
-                ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 215,
-                    "label": "?"
-                  },
-                  {
-                    "from": 215,
-                    "to": 360,
-                    "label": "145°"
-                  }
-                ],
-                "size": 170
-              },
-              "hint": "Take away 100, then 45.",
-              "answer": "215°"
+              "answer": "330",
+              "answerLabel": "360 - 30 =",
+              "unit": "°"
             }
           ]
         }
@@ -831,11 +703,11 @@
   "slides": [
     {
       "kind": "title",
-      "notes": "Open Session 2 of the angles week. One line: today we estimate angles, draw them, and measure the big ones."
+      "notes": "Session 2 of our angles week: today we estimate angles, draw them, and find the really big ones."
     },
     {
       "kind": "resources",
-      "notes": "Prep slide. Protractor, ruler and a sharp pencil for every student. Print the Worksheet for all, and some Extension and Supported Worksheet copies."
+      "notes": "Before you start, put a protractor, a ruler and a sharp pencil on every desk. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
     },
     {
       "kind": "dailyReview",
@@ -854,25 +726,26 @@
         "beats": [
           "SAY: Let's warm up with fractions, decimals and percentages again.",
           [
-            "ASK: Write 0.4 as a fraction in its simplest form.",
+            "ASK: How would you write 0.4 as a fraction in its simplest form?",
             "20 sec. Cue: Write it... Chin it... Show me.",
-            "EXPECT: 2/5. ACCEPT: 4/10 then simplified"
+            "EXPECT: 2/5. ACCEPT: 4/10, then simplified"
           ],
           [
             "SCAN boards, back row first.",
-            "80%+ -> reveal, move on.",
-            "Less -> write 4/10, divide top and bottom by 2 together, re-ask."
+            "80%+ -> reveal and move on.",
+            "Less -> write 4/10, divide the top and bottom by 2 together, re-ask."
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: Four tenths simplifies to two fifths. Tick or fix."
+            "SAY: Four tenths simplifies to two fifths.",
+            "Tick it or fix it."
           ]
         ],
         "trap": [
           "stopping at 4/10.",
-          "Fix: ask what divides both numbers, student simplifies."
+          "Fix: ask what divides both numbers, and they simplify it."
         ],
-        "prep": "Daily Review from Term 3 Week 9. Whole block under 6 minutes.",
+        "prep": "Daily Review from Term 3 Week 9. Keep the whole review under 6 minutes.",
         "tag": "[Daily Review | Retention and recall | HITS 6]"
       }
     },
@@ -892,25 +765,26 @@
         "answer": "35",
         "beats": [
           [
-            "ASK: What is 10% of 350?",
-            "15 sec. Cue: boards up on cue.",
+            "ASK: What is 10 percent of 350?",
+            "15 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 35"
           ],
           [
             "SCAN boards.",
-            "80%+ -> reveal, move on.",
-            "Less -> 10% is one tenth: share 350 into 10 equal parts, re-ask."
+            "80%+ -> reveal and move on.",
+            "Less -> 10% is one tenth, so share 350 into 10 equal parts. Re-ask."
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 35. One tenth of 350. Tick or fix."
+            "SAY: It's 35, because 10 percent is one tenth of 350.",
+            "Tick it or fix it."
           ]
         ],
         "trap": [
           "writing 3.5 or 350.",
-          "Fix: say ten percent is one tenth, student divides by 10."
+          "Fix: remind them 10% is one tenth, and they divide by 10."
         ],
-        "prep": "Term 3 Week 9 retrieval: percentage of an amount.",
+        "prep": "Term 3 Week 9 retrieval: a percentage of an amount.",
         "tag": "[Daily Review | Retention and recall | HITS 6]"
       }
     },
@@ -945,22 +819,23 @@
         "beats": [
           [
             "ASK: What is one fifth plus three tenths?",
-            "30 sec. Cue: boards up on cue.",
+            "30 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 5/10 or 1/2"
           ],
           [
             "SCAN boards for a common denominator.",
-            "80%+ -> reveal, then Fluency.",
+            "80%+ -> reveal, then on to Fluency.",
             "Less -> rename one fifth as two tenths on the strips, re-ask."
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: One fifth is two tenths, so five tenths, which is one half. Tick or fix."
+            "SAY: One fifth is the same as two tenths, so we get five tenths,",
+            "which is one half. Tick it or fix it."
           ]
         ],
         "trap": [
           "adding across to get 4/15.",
-          "Fix: rename to tenths first, student re-adds."
+          "Fix: rename to tenths first, and they add again."
         ],
         "prep": "Spaced retrieval from Term 3 Week 8: adding related fractions.",
         "tag": "[Daily Review | Retention and recall | HITS 6]"
@@ -985,27 +860,31 @@
       "notes": {
         "answer": "923",
         "beats": [
-          "SAY: Now the written method. Line up the places and start with the ones.",
           [
-            "ASK: Solve it with the written method.",
-            "30 sec. Cue: boards up on cue.",
+            "SAY: Now for some written addition.",
+            "Line up the places, and always start with the ones."
+          ],
+          [
+            "ASK: Use the written method to solve this one.",
+            "30 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 923"
           ],
           [
             "SCAN boards for the regrouped digits.",
-            "80%+ -> reveal, next one.",
+            "80%+ -> reveal, then the next one.",
             "Less -> model the ones and the regroup together on the board, re-ask."
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 923. Tick or fix, and check every regroup."
+            "SAY: The answer is 923.",
+            "Tick it or fix it, and check every regroup."
           ]
         ],
         "trap": [
           "forgetting to add a regrouped ten.",
-          "Fix: circle each carried digit, student re-adds that column."
+          "Fix: circle each carried digit, and they add that column again."
         ],
-        "prep": "Algorithm fluency: 3 digits, then 4, then 5. Whole block under 6 minutes.",
+        "prep": "Addition fluency: 3 digits, then 4, then 5. Keep the whole block under 6 minutes.",
         "tag": "[Fluency | Retention and recall | HITS 6]"
       }
     },
@@ -1028,27 +907,31 @@
       "notes": {
         "answer": "8 043",
         "beats": [
-          "SAY: Now 4 digits. Same method, one more column.",
           [
-            "ASK: Solve it with the written method.",
-            "45 sec. Cue: boards up on cue.",
+            "SAY: Now it's 4 digits.",
+            "It's the same method, just one more column."
+          ],
+          [
+            "ASK: Use the written method to solve this one.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 8 043"
           ],
           [
             "SCAN boards for the regrouped digits.",
-            "80%+ -> reveal, next one.",
+            "80%+ -> reveal, then the next one.",
             "Less -> model the ones and the regroup together on the board, re-ask."
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 8 043. Tick or fix, and check every regroup."
+            "SAY: The answer is 8 043.",
+            "Tick it or fix it, and check every regroup."
           ]
         ],
         "trap": [
           "forgetting to add a regrouped ten.",
-          "Fix: circle each carried digit, student re-adds that column."
+          "Fix: circle each carried digit, and they add that column again."
         ],
-        "prep": "Algorithm fluency, next size up.",
+        "prep": "Addition fluency, one size up.",
         "tag": "[Fluency | Retention and recall | HITS 6]"
       }
     },
@@ -1071,10 +954,13 @@
       "notes": {
         "answer": "84 403",
         "beats": [
-          "SAY: Now 5 digits. Same method, one more column.",
           [
-            "ASK: Solve it with the written method.",
-            "60 sec. Cue: boards up on cue.",
+            "SAY: Now it's 5 digits.",
+            "It's the same method, just one more column."
+          ],
+          [
+            "ASK: Use the written method to solve this one.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 84 403"
           ],
           [
@@ -1084,14 +970,15 @@
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 84 403. Tick or fix, and check every regroup."
+            "SAY: The answer is 84 403.",
+            "Tick it or fix it, and check every regroup."
           ]
         ],
         "trap": [
           "forgetting to add a regrouped ten.",
-          "Fix: circle each carried digit, student re-adds that column."
+          "Fix: circle each carried digit, and they add that column again."
         ],
-        "prep": "Algorithm fluency, next size up.",
+        "prep": "Addition fluency, one size up.",
         "tag": "[Fluency | Retention and recall | HITS 6]"
       }
     },
@@ -1107,12 +994,16 @@
         "beats": [
           [
             "POINT to the learning intention.",
-            "SAY: Yesterday we measured angles. Today we estimate them, draw them, and find big ones."
+            "SAY: Yesterday we measured angles.",
+            "Today we're estimating them, drawing them, and finding the really big ones."
           ],
-          "SAY: Read the I can lines with me. Everyone, together, on three.",
           [
-            "SAY: Estimating comes first, drawing is our big goal.",
-            "Reflex angles are the challenge."
+            "SAY: Let's read our I can statements together.",
+            "Cue: Everyone, together, on three."
+          ],
+          [
+            "SAY: We'll estimate first, because it helps us check our measuring.",
+            "Drawing an angle is our big goal today."
           ]
         ],
         "prep": "SC1 estimating is reachable for all; SC2 drawing an angle is the core; SC3 reflex angles is the exit evidence and the stretch.",
@@ -1141,27 +1032,27 @@
         "beats": [
           [
             "POINT to the angle.",
-            "SAY: Here's an angle. First we name it, then we have a go at its size."
+            "SAY: Here's an angle. Let's name it first, then have a go at its size."
           ],
           [
-            "ASK: What is this angle called?",
+            "ASK: What do we call this kind of angle?",
             "10 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: obtuse"
           ],
           [
-            "ASK: Closer to 90 or to 180? Write your estimate.",
-            "15 sec. Cue: boards up on cue.",
+            "ASK: Is it closer to 90 degrees or to 180 degrees? Write your estimate.",
+            "15 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: closer to 180, about 140"
           ],
           [
             "SCAN boards for estimates between 120 and 160.",
-            "80%+ -> praise the reasoning, move on.",
+            "80%+ -> name the reasoning you saw, then move on.",
             "Less -> hold up a book corner and a ruler edge, compare, re-ask."
           ]
         ],
         "trap": [
           "estimating under 90 for an obtuse angle.",
-          "Fix: name it first, student re-estimates above 90."
+          "Fix: name it first, and they estimate again above 90."
         ],
         "prep": "Launch after the LI retrieves Session 1 names and starts benchmark estimating. Under 4 minutes.",
         "tag": "[Launch | Retention and recall | HITS 3]"
@@ -1176,20 +1067,23 @@
       "notes": {
         "answer": "a careful guess using what you know",
         "beats": [
-          "POINT to the word. SAY: Estimate. Say it with me. Estimate.",
           [
-            "SAY: An estimate is a careful guess.",
-            "For angles, we use a quarter turn and a half turn to help."
+            "POINT to the word.",
+            "SAY: This word is estimate. Say it with me: estimate."
           ],
           [
-            "ASK: Is 100° a good estimate for a right angle?",
+            "SAY: An estimate is a careful guess, not a wild one.",
+            "For angles, we compare with a quarter turn and a half turn."
+          ],
+          [
+            "ASK: Would 100 degrees be a good estimate for a right angle?",
             "10 sec. Cue: Thumbs only, voices off. Show me... now.",
-            "EXPECT: thumbs sideways, close but a right angle is 90"
+            "EXPECT: thumbs sideways: close, but a right angle is exactly 90"
           ]
         ],
         "trap": [
           "treating an estimate as a wild guess.",
-          "Fix: ask which benchmark it is near, student re-estimates."
+          "Fix: ask which turn it's close to, and they estimate again."
         ],
         "prep": "Estimating keeps measurements honest: a reading that is far from the estimate means the wrong scale.",
         "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
@@ -1230,29 +1124,32 @@
         "beats": [
           [
             "MODEL comparing with a square corner.",
-            "SAY: It's more than a quarter turn, but well short of a half turn."
+            "SAY: Watch how I estimate this one.",
+            "It's more than a quarter turn, but well short of a half turn."
           ],
           [
             "POINT between 90 and 180.",
-            "SAY: It's about a third of the way along, so I estimate 120."
+            "SAY: It's about a third of the way from 90 to 180,",
+            "so my estimate is about 120 degrees."
           ],
           [
-            "ASK: Read the protractor. How close was my estimate?",
-            "15 sec. Cue: boards up on cue.",
+            "ASK: Now read the protractor. How close was my estimate?",
+            "15 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 118"
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 118 degrees. My estimate of 120 tells me I read the right scale."
+            "SAY: It's 118 degrees, so my estimate of 120 was close.",
+            "That tells me I read the right scale."
           ]
         ],
         "trap": [
-          "reading 62 on the other scale.",
-          "Fix: compare with the estimate, student re-reads."
+          "reading 62 on the other row.",
+          "Fix: compare with the estimate, and they read it again."
         ],
-        "stretch": "Estimate three angles in the room, then measure them.",
+        "stretch": "Estimate three angles around the room, then measure them.",
         "help": "Say quarter turn or half turn first, then estimate.",
-        "prep": "Estimating is a check on measuring: far from the estimate means the wrong scale. SC1.",
+        "prep": "Estimating is a check on measuring: an answer far from the estimate means the wrong scale. SC1.",
         "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
       }
     },
@@ -1291,29 +1188,31 @@
         "beats": [
           [
             "MODEL the arm and the vertex dot.",
-            "SAY: I start with one straight arm and a dot for the corner."
+            "SAY: To draw an angle, I start with one straight arm",
+            "and a dot for the corner."
           ],
           [
             "MODEL the centre and the 0.",
-            "SAY: Centre on the dot, and the 0 sits on my arm."
+            "SAY: Now the centre goes on the dot, and the 0 sits on my arm."
           ],
           [
-            "ASK: Which scale do I count along to reach 70?",
-            "10 sec. Cue: voices off. Point... now.",
-            "EXPECT: pointing to the inner scale"
+            "ASK: Which row of numbers do I count along to reach 70?",
+            "10 sec. Cue: Voices off. Point... now. Hold your point.",
+            "EXPECT: pointing to the inside row"
           ],
           [
             "REVEAL after pointing is scanned.",
-            "SAY: The one that starts at 0 on my arm. Dot at 70, rule through."
+            "SAY: It's the row that starts at 0 on my arm.",
+            "I put a dot at 70, then rule a line through it."
           ]
         ],
         "trap": [
-          "dotting at 110 on the other scale.",
-          "Fix: check it looks acute, student redraws."
+          "dotting at 110 on the other row.",
+          "Fix: check it looks acute, and they draw it again."
         ],
-        "stretch": "Draw 70° on an arm pointing left.",
-        "help": "Supported Worksheet: protractor printed on.",
-        "prep": "Drawing is measuring in reverse: same centre, same 0. SC2.",
+        "stretch": "Draw a 70 degree angle on an arm pointing left.",
+        "help": "Use the Supported Worksheet, where the protractor is printed on.",
+        "prep": "Drawing is measuring in reverse: the same centre, the same 0. SC2.",
         "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
       }
     },
@@ -1356,29 +1255,31 @@
         "beats": [
           [
             "POINT to the big arc.",
-            "SAY: This angle goes the long way round. My protractor stops at 180."
+            "SAY: This angle goes the long way round.",
+            "My protractor only goes to 180, so I can't measure it directly."
           ],
           [
             "MODEL measuring the inside angle.",
-            "SAY: So I measure the small angle inside instead. It's 60 degrees."
+            "SAY: So instead, I measure the small angle inside. It's 60 degrees."
           ],
           [
-            "ASK: A full turn is 360. What is the reflex angle?",
-            "15 sec. Cue: boards up on cue.",
+            "ASK: A full turn is 360 degrees. So what's the reflex angle?",
+            "15 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 300"
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 360 take away 60 is 300 degrees."
+            "SAY: 360 take away 60 is 300,",
+            "so the reflex angle is 300 degrees."
           ]
         ],
         "trap": [
           "subtracting from 180 to get 120.",
-          "Fix: point to the full turn on the anchor, student redoes."
+          "Fix: point to the full turn on the anchor, and they redo it."
         ],
         "stretch": "Why do the inside angle and the reflex angle always make 360?",
         "help": "Write 360 - ___ = ___ and fill in the inside angle.",
-        "prep": "The anchor does the work: a full turn is 360. SC3.",
+        "prep": "The anchor does the work: a full turn is 360 degrees. SC3.",
         "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
       }
     },
@@ -1404,25 +1305,28 @@
       "notes": {
         "answer": "B - 310°",
         "beats": [
-          "SAY: Three answers. Only one uses a full turn.",
           [
-            "ASK: The inside angle is 50. What is the reflex angle?",
-            "15 sec. Cue: voices off. Point... now.",
+            "SAY: Here are three answers,",
+            "and only one of them uses a full turn."
+          ],
+          [
+            "ASK: The inside angle is 50 degrees. What's the reflex angle?",
+            "15 sec. Cue: Voices off. Point... now. Hold your point.",
             "EXPECT: pointing to B"
           ],
           [
             "SCAN the room, back row first.",
-            "80%+ -> reveal, cold call one child: why not A?",
-            "Less -> draw it: shade the small angle, trace the long way round, re-ask."
+            "80%+ -> reveal, then cold call one student: Why isn't it A?",
+            "Less -> draw it: shade the small angle, trace the long way round. Re-ask."
           ],
           [
             "REVEAL after pointing is scanned.",
-            "SAY: B. 360 take away 50 is 310."
+            "SAY: It's B. 360 take away 50 is 310."
           ]
         ],
         "trap": [
           "pointing to A.",
-          "Fix: ask how far a full turn goes, student redoes 360 - 50."
+          "Fix: ask how far a full turn goes, and they redo 360 - 50."
         ],
         "prep": "First decision point, on the step most students skip. Under 80% means rebuild with the demonstration protractor.",
         "tag": "[CFU | Supported application | SC3 | HITS 7]"
@@ -1436,7 +1340,7 @@
       "routine": "boards",
       "thinkTime": 10,
       "pivot": "compare with a book corner and a ruler edge together",
-      "followUp": "cold call one board: which guide did you use?",
+      "followUp": "cold call one board: Which turn did you compare it with?",
       "items": [
         {
           "visual": {
@@ -1453,7 +1357,8 @@
             ]
           },
           "answer": "about 80° (actual 82°)",
-          "expect": "anything from 70 to 90"
+          "expect": "anything from 70 to 90",
+          "say": "It's 82 degrees, so an estimate close to 80 is spot on."
         },
         {
           "visual": {
@@ -1470,7 +1375,8 @@
             ]
           },
           "answer": "about 150° (actual 155°)",
-          "expect": "anything from 140 to 170"
+          "expect": "anything from 140 to 170",
+          "say": "It's 155 degrees. Anything around 150 is a great estimate."
         },
         {
           "visual": {
@@ -1487,7 +1393,8 @@
             ]
           },
           "answer": "about 30° (actual 30°)",
-          "expect": "anything from 20 to 45"
+          "expect": "anything from 20 to 45",
+          "say": "It's 30 degrees, about a third of a right angle."
         },
         {
           "visual": {
@@ -1505,7 +1412,7 @@
           },
           "answer": "about 240° (actual 240°)",
           "expect": "anything from 220 to 260",
-          "say": "240 degrees. It is reflex: more than a half turn. Tick or fix."
+          "say": "It's 240 degrees. It's reflex, because it's past a half turn."
         },
         {
           "visual": {
@@ -1522,7 +1429,8 @@
             ]
           },
           "answer": "about 100° (actual 100°)",
-          "expect": "anything from 90 to 115"
+          "expect": "anything from 90 to 115",
+          "say": "It's 100 degrees, just a little more than a right angle."
         }
       ],
       "notes": {
@@ -1535,7 +1443,7 @@
           "Fix: name the angle first, then estimate."
         ],
         "stretch": "Estimate to the nearest 5 degrees.",
-        "help": "Say smaller than, about, or bigger than a quarter turn.",
+        "help": "Say smaller than, about, or bigger than a quarter turn first.",
         "prep": "Guided estimating: accept within about 10°. Reflex item tests the half-turn benchmark. SC1.",
         "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
       }
@@ -1572,27 +1480,28 @@
       "notes": {
         "answer": "320°. 140 means subtracting from 180",
         "beats": [
-          "SAY: This one is just for you. The inside angle is marked.",
+          "SAY: This one is just for you. The inside angle is marked for you.",
           [
-            "ASK: What is the reflex angle marked with the question mark?",
-            "20 sec. Cue: boards up on cue.",
+            "ASK: What's the reflex angle marked with the question mark?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 320"
           ],
           [
             "SCAN every board, back row first.",
             "80%+ -> reveal, then Your turn.",
-            "Less -> trace the full turn with a finger: 360 all the way round, re-ask."
+            "Less -> trace the full turn with a finger, 360 all the way round. Re-ask."
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 320 degrees. 360 take away 40. Tick or fix."
+            "SAY: It's 320 degrees, because 360 take away 40 is 320.",
+            "Tick it or fix it."
           ]
         ],
         "trap": [
           "writing 140.",
-          "Fix: ask what a full turn is, student subtracts from 360."
+          "Fix: ask what a full turn is, and they subtract from 360."
         ],
-        "prep": "The hinge before independence. Students writing 140 start with the teacher on the Supported Worksheet.",
+        "prep": "The hinge before independent work. Anyone who wrote 140 starts on the Supported Worksheet with the teacher.",
         "tag": "[CFU hinge | Supported application | SC3 | HITS 7, 8]"
       }
     },
@@ -1605,22 +1514,22 @@
         "beats": [
           [
             "POINT to the steps.",
-            "SAY: Read each question, solve it carefully, then check your answers."
+            "SAY: Read each question carefully, solve it carefully, then check your answers."
           ],
           [
-            "SAY: When you finish, the early finisher option is the Extension.",
-            "Say the steps with me. Everyone, together, on three."
+            "SAY: If you finish, the Extension is your early finisher option.",
+            "Let's read the steps together. Cue: Everyone, together, on three."
           ],
           "CIRCULATE. Check drawn angles with your own protractor.",
-          "TIME 20 minutes. Check-in at question 10."
+          "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
         ],
         "trap": [
           "drawing from the wrong 0.",
-          "Fix: check against the estimate, student redraws."
+          "Fix: check against their estimate, and they draw it again."
         ],
         "stretch": "Extension: build triangles from angles, and reflex riddles.",
-        "help": "Supported Worksheet: protractors printed on, and hints.",
-        "prep": "Independent practice: estimate, draw, reflex, worded and reasoning questions. Sheet is evidence for SC1 to SC3.",
+        "help": "Supported Worksheet: protractors printed on, and a hint on every question.",
+        "prep": "Independent practice: estimate, draw, reflex angles and a sport problem with a mistake to fix. The sheet is evidence for SC1 to SC3.",
         "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
       }
     },
@@ -1640,22 +1549,22 @@
       "notes": {
         "answer": "an obtuse angle of 125°. An acute angle means the wrong scale (55°)",
         "beats": [
-          "SAY: Last one. Use your protractor and draw it on your board.",
+          "SAY: Here's the last one. Use your protractor to draw it on your board.",
           [
-            "ASK: Draw an angle of 125 degrees.",
-            "60 sec. Cue: boards up on cue.",
+            "ASK: Can you draw an angle of 125 degrees?",
+            "60 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: an obtuse angle, about 125"
           ],
           [
-            "RECORD who draws an acute angle: the wrong scale.",
-            "They start tomorrow's check with the teacher."
+            "RECORD who draws an acute angle, the wrong scale.",
+            "They start tomorrow's first check with the teacher."
           ]
         ],
         "trap": [
-          "drawing 55°.",
-          "Fix: none now, record the name."
+          "drawing 55 degrees.",
+          "Fix: none now. Record the name for tomorrow."
         ],
-        "prep": "Exit evidence for SC2: an acute drawing shows the scale error at a glance. Drives tomorrow's grouping.",
+        "prep": "Exit evidence for SC2: an acute drawing shows the scale error at a glance. It drives tomorrow's grouping.",
         "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
       }
     },
@@ -1666,7 +1575,10 @@
       "notes": {
         "answer": "open - listen for checking the reading against the estimate",
         "beats": [
-          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "SAY: Let's read our I can statements together.",
+            "Cue: Everyone, together, on three."
+          ],
           [
             "ASK: How sure are you that you can draw an angle?",
             "5 sec. Cue: Thumbs only, voices off. Show me... now.",
@@ -1678,11 +1590,11 @@
           ],
           [
             "ASK: Tell your partner how estimating helps you measure.",
-            "20 sec. Turn and tell, partner B first.",
-            "EXPECT: it shows if I read the wrong scale"
+            "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+            "EXPECT: it shows me if I read the wrong scale"
           ]
         ],
-        "prep": "Self-assessment read beside the exit evidence. SC2.",
+        "prep": "Read the self-assessment beside the exit evidence. SC2.",
         "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
       }
     }

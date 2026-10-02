@@ -1,0 +1,1433 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 7,
+  "session": 1,
+  "title": "Discounts and Sale Prices",
+  "subtitle": "Term 4 Week 7, Session 1",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Money and Percentages | Year 5/6 Maths | Session 1",
+  "outputFolder": "T4W7_Maths_S1_Discounts",
+  "fileName": "Session 1 - Discounts and Sale Prices.pptx",
+  "titleVisual": {
+   "type": "barModel",
+   "parts": 4,
+   "shaded": 1,
+   "total": "$80",
+   "labels": [
+    "$20 off",
+    "$20",
+    "$20",
+    "$20"
+   ],
+   "below": [
+    "25%",
+    "",
+    "",
+    ""
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 6 (VC2M6N09): modelling practical situations involving percentages, such as purchasing items during a sale, with efficient calculation strategies, interpreting results in the situation",
+   "shape": "example-first with a bar model: the discount is shaded, the sale price is what is left, because confusing the two is the main error",
+   "criticalFeature": "the discount is the part taken off; the sale price is the part left to pay",
+   "decisionPoints": [
+    "the choice check: sale price of $80 shoes at 25% off",
+    "the hinge: a $150 bike at 30% off",
+    "the exit ticket"
+   ],
+   "anchor": "read it, model it, solve it, check it: say what the answer means in the situation"
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Calculators for checking (optional)",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The fortnight's anchor on the board: read it, model it, solve it, check it",
+   "Benchmarks: 50% halve, 25% quarter, 10% divide by 10"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. A sports shop sale table, bar models, a mistake to fix, and which shop is cheaper.",
+   "title": "Discounts and Sale Prices",
+   "subtitle": "Find the discount. Take it off. Check the sale price makes sense.",
+   "sections": [
+    {
+     "title": "The sports shop sale",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "A $60 cap is 25% off. Find the discount and the sale price.",
+      "steps": [
+       "25% of $60 = $15 (a quarter).",
+       "Sale price = $60 - $15 = $45.",
+       "Check: $45 is less than $60."
+      ],
+      "answer": "$15 off, $45"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Find the discount and the sale price of each item.",
+       "columns": [
+        "Item",
+        "Price",
+        "% off",
+        "Discount",
+        "Sale price"
+       ],
+       "rows": [
+        [
+         "Footy boots",
+         "$120",
+         "25%",
+         "",
+         ""
+        ],
+        [
+         "Skateboard",
+         "$80",
+         "10%",
+         "",
+         ""
+        ],
+        [
+         "Netball",
+         "$40",
+         "50%",
+         "",
+         ""
+        ],
+        [
+         "Swim goggles",
+         "$30",
+         "20%",
+         "",
+         ""
+        ],
+        [
+         "Cricket bat",
+         "$150",
+         "30%",
+         "",
+         ""
+        ],
+        [
+         "Bike helmet",
+         "$90",
+         "15%",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "Footy boots",
+         "$120",
+         "25%",
+         "$30",
+         "$90"
+        ],
+        [
+         "Skateboard",
+         "$80",
+         "10%",
+         "$8",
+         "$72"
+        ],
+        [
+         "Netball",
+         "$40",
+         "50%",
+         "$20",
+         "$20"
+        ],
+        [
+         "Swim goggles",
+         "$30",
+         "20%",
+         "$6",
+         "$24"
+        ],
+        [
+         "Cricket bat",
+         "$150",
+         "30%",
+         "$45",
+         "$105"
+        ],
+        [
+         "Bike helmet",
+         "$90",
+         "15%",
+         "$13.50",
+         "$76.50"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Bar models",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "A $50 game is 20% off.",
+      "visual": {
+       "type": "barModel",
+       "parts": 5,
+       "shaded": 1,
+       "total": "$50",
+       "labels": [
+        "$10",
+        "$10",
+        "$10",
+        "$10",
+        "$10"
+       ],
+       "below": [
+        "20%",
+        "20%",
+        "20%",
+        "20%",
+        "20%"
+       ],
+       "maxH": 60
+      },
+      "steps": [
+       "Split $50 into 5 parts of 20%: $10 each.",
+       "Shade one part: $10 off.",
+       "Sale price: 4 parts = $40."
+      ],
+      "answer": "$40"
+     },
+     "items": [
+      {
+       "prompt": "A $40 jacket is 25% off. Shade the discount and find the sale price.",
+       "visual": {
+        "type": "barModel",
+        "parts": 4,
+        "shaded": 0,
+        "total": "$40",
+        "below": [
+         "25%",
+         "25%",
+         "25%",
+         "25%"
+        ],
+        "maxH": 70
+       },
+       "answerVisual": {
+        "type": "barModel",
+        "parts": 4,
+        "shaded": 1,
+        "total": "$40",
+        "labels": [
+         "$10",
+         "$10",
+         "$10",
+         "$10"
+        ],
+        "below": [
+         "25%",
+         "25%",
+         "25%",
+         "25%"
+        ],
+        "maxH": 70
+       },
+       "answer": "30",
+       "answerLabel": "Sale price: $"
+      },
+      {
+       "prompt": "A $90 tent is 10% off. Shade the discount and find the sale price.",
+       "visual": {
+        "type": "barModel",
+        "parts": 10,
+        "shaded": 0,
+        "total": "$90",
+        "below": [
+         "10%",
+         "10%",
+         "10%",
+         "10%",
+         "10%",
+         "10%",
+         "10%",
+         "10%",
+         "10%",
+         "10%"
+        ],
+        "maxH": 70
+       },
+       "answerVisual": {
+        "type": "barModel",
+        "parts": 10,
+        "shaded": 1,
+        "total": "$90",
+        "labels": [
+         "$9",
+         "$9",
+         "$9",
+         "$9",
+         "$9",
+         "$9",
+         "$9",
+         "$9",
+         "$9",
+         "$9"
+        ],
+        "below": [
+         "10%",
+         "10%",
+         "10%",
+         "10%",
+         "10%",
+         "10%",
+         "10%",
+         "10%",
+         "10%",
+         "10%"
+        ],
+        "maxH": 70
+       },
+       "answer": "81",
+       "answerLabel": "Sale price: $"
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Ella worked out the sale price of a $70 scooter at 20% off. Find her mistake and fix it.",
+       "work": [
+        "20% of $70 = $14.",
+        "The sale price is $14."
+       ],
+       "answer": "$14 is the discount, not the sale price. Sale price = $70 - $14 = $56."
+      },
+      {
+       "kind": "choice",
+       "prompt": "A $200 bike is 40% off. Which is the sale price?",
+       "options": [
+        "$80",
+        "$120",
+        "$160"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "40% of $200 = $80 off, so you pay $200 - $80 = $120."
+      }
+     ]
+    },
+    {
+     "title": "Which shop?",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "Shop A: $60, 10% off. Shop B: $58, no discount. Cheaper?",
+      "steps": [
+       "Shop A: $60 - $6 = $54.",
+       "Shop B: $58.",
+       "Shop A is cheaper by $4."
+      ],
+      "answer": "Shop A"
+     },
+     "items": [
+      {
+       "prompt": "Shop A sells runners for $110 with 20% off. Shop B sells them for $95. Which is cheaper, and by how much?",
+       "answer": "A: $88. Cheaper at A by $7.",
+       "lines": 3
+      },
+      {
+       "prompt": "A $45 footy is 'one third off'. Another shop has it at 30% off. Which saves more?",
+       "answer": "One third off saves $15; 30% off saves $13.50. One third off saves more.",
+       "lines": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Finding the original price, a discount on a discount, and a sale percentage puzzle, with worked examples.",
+   "title": "Extension: Sale Detectives",
+   "subtitle": "Work backwards. Watch out for double discounts.",
+   "sections": [
+    {
+     "title": "Original price",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "After 25% off, a game costs $30. Original price?",
+      "steps": [
+       "$30 is 75% of the price.",
+       "75% = $30, so 25% = $10.",
+       "100% = $40."
+      ],
+      "answer": "$40"
+     },
+     "items": [
+      {
+       "prompt": "After 50% off, a hoodie costs $24. What was the original price?",
+       "answer": "$48",
+       "answerLabel": "Original: $"
+      },
+      {
+       "prompt": "After 20% off, a scooter costs $64. What was the original price?",
+       "answer": "80% = $64, 10% = $8, so $80",
+       "answerLabel": "Original:"
+      }
+     ]
+    },
+    {
+     "title": "Double discounts",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "$100 jacket: 20% off, then a further 10% off the sale price.",
+      "steps": [
+       "20% off: $80.",
+       "10% of $80 = $8: $72.",
+       "Not the same as 30% off ($70)."
+      ],
+      "answer": "$72"
+     },
+     "items": [
+      {
+       "prompt": "A $200 bike is 25% off, then a further 10% off the sale price. Is that the same as 35% off? Show your working.",
+       "answer": "25% off: $150. 10% of $150 = $15, so $135. 35% off would be $130. Not the same.",
+       "lines": 4
+      }
+     ]
+    },
+    {
+     "title": "What percentage off?",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "A $40 shirt is reduced to $30. What percentage off?",
+      "steps": [
+       "Saved $10.",
+       "$10 out of $40 = 1/4.",
+       "25% off."
+      ],
+      "answer": "25% off"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Find the percentage off for each item.",
+       "columns": [
+        "Was",
+        "Now",
+        "Saved",
+        "% off"
+       ],
+       "rows": [
+        [
+         "$50",
+         "$40",
+         "",
+         ""
+        ],
+        [
+         "$80",
+         "$56",
+         "",
+         ""
+        ],
+        [
+         "$120",
+         "$90",
+         "",
+         ""
+        ],
+        [
+         "$200",
+         "$170",
+         "",
+         ""
+        ],
+        [
+         "$60",
+         "$57",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "$50",
+         "$40",
+         "$10",
+         "20%"
+        ],
+        [
+         "$80",
+         "$56",
+         "$24",
+         "30%"
+        ],
+        [
+         "$120",
+         "$90",
+         "$30",
+         "25%"
+        ],
+        [
+         "$200",
+         "$170",
+         "$30",
+         "15%"
+        ],
+        [
+         "$60",
+         "$57",
+         "$3",
+         "5%"
+        ]
+       ]
+      },
+      {
+       "kind": "open",
+       "prompt": "A shop says 'Up to 50% off!'. Write two prices, before and after, that would make this true, and one pair that would make it misleading. Explain.",
+       "answer": "True: $80 to $40 (50% off). Misleading: most items only 10% off, like $50 to $45: 'up to' means only some items get the biggest discount."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: 50% and 10% discounts, a two-step frame, and a hint on every question.",
+   "title": "Discounts: Step by Step",
+   "subtitle": "Step 1: the discount. Step 2: take it off.",
+   "sections": [
+    {
+     "title": "Half price",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "A $30 ball is 50% off.",
+      "steps": [
+       "50% off means half off.",
+       "Half of $30 = $15.",
+       "Sale price $15."
+      ],
+      "answer": "$15"
+     },
+     "items": [
+      {
+       "prompt": "A $50 hat is 50% off. Discount $___  Sale price $___",
+       "hint": "Half of 50.",
+       "answer": "$25 off, $25",
+       "answerLabel": "Answer:"
+      },
+      {
+       "prompt": "A $18 book is 50% off. Discount $___  Sale price $___",
+       "hint": "Half of 18.",
+       "answer": "$9 off, $9",
+       "answerLabel": "Answer:"
+      }
+     ]
+    },
+    {
+     "title": "10% off",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "A $40 shirt is 10% off.",
+      "visual": {
+       "type": "barModel",
+       "parts": 10,
+       "shaded": 1,
+       "total": "$40",
+       "labels": [
+        "$4",
+        "$4",
+        "$4",
+        "$4",
+        "$4",
+        "$4",
+        "$4",
+        "$4",
+        "$4",
+        "$4"
+       ],
+       "below": [
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%"
+       ]
+      },
+      "steps": [
+       "10% of $40 = $4.",
+       "$40 - $4 = $36."
+      ],
+      "answer": "$36"
+     },
+     "items": [
+      {
+       "prompt": "A $70 bag is 10% off. Discount $___  Sale price $___",
+       "hint": "Divide 70 by 10.",
+       "answer": "$7 off, $63",
+       "answerLabel": "Answer:"
+      },
+      {
+       "prompt": "A $120 watch is 10% off. Discount $___  Sale price $___",
+       "hint": "Divide 120 by 10.",
+       "answer": "$12 off, $108",
+       "answerLabel": "Answer:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 1 of our money and percentages fortnight: today we work out discounts and sale prices."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk; calculators are optional for checking. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Perimeter",
+   "from": "teacher",
+   "prompts": [
+    "Find the perimeter of the L-shape."
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      0
+     ],
+     [
+      12,
+      4
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      5,
+      10
+     ],
+     [
+      0,
+      10
+     ]
+    ],
+    "labels": [
+     "12 m",
+     "4 m",
+     null,
+     null,
+     "5 m",
+     "10 m"
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "44 m"
+    ]
+   },
+   "notes": {
+    "answer": "44 m",
+    "beats": [
+     [
+      "SAY: Let's warm up with area and perimeter."
+     ],
+     [
+      "ASK: What is the perimeter of this L-shape?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 44 m"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> find the missing sides from the opposite sides, then add all six. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The missing sides are 7 and 6, so 12, 4, 7,",
+      "6, 5 and 10 make 44 metres. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "leaving out the missing sides.",
+     "Fix: count the sides, six, and they find the missing ones."
+    ],
+    "prep": "Review of Week 5 area and perimeter (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Area",
+   "from": "teacher",
+   "prompts": [
+    "A court is 24 m by 15 m. What is its area?"
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      24,
+      0
+     ],
+     [
+      24,
+      15
+     ],
+     [
+      0,
+      15
+     ]
+    ],
+    "labels": [
+     "24 m",
+     "15 m",
+     null,
+     null
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "360 m²"
+    ]
+   },
+   "notes": {
+    "answer": "360 m²",
+    "beats": [
+     [
+      "ASK: What is the area of a court 24 metres by 15 metres?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 360 m²"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> split 24 into 20 and 4, multiply each by 15. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 20 times 15 is 300, and 4 times 15 is 60:",
+      "360 square metres. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 78, the perimeter.",
+     "Fix: say area covers the inside, and they multiply."
+    ],
+    "prep": "Week 5 review: area.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "How many tins?",
+   "from": "teacher",
+   "prompts": [
+    "A fence is 75 m². A tin of stain covers 20 m². How many tins?"
+   ],
+   "reveal": {
+    "answers": [
+     "4 tins"
+    ]
+   },
+   "notes": {
+    "answer": "4 tins",
+    "beats": [
+     [
+      "ASK: How many tins of stain are needed?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 4"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> 75 divided by 20, then ask what the remainder means. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 75 divided by 20 is 3, remainder 15,",
+      "so we need 4 tins. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 3.",
+     "Fix: ask whether 3 tins cover the whole fence, and they round up."
+    ],
+    "prep": "Week 5 review: remainders in context.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 3 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 864,
+    "divisor": 4
+   },
+   "reveal": {
+    "answers": [
+     "216"
+    ]
+   },
+   "notes": {
+    "answer": "216",
+    "beats": [
+     [
+      "SAY: Now for some short division with the division bracket.",
+      "Divide each digit from the left, and carry any remainder across."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 216"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 216.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "Division fluency: 3 digits, then 4, then 5. Keep the whole block under 6 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 4 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 5742,
+    "divisor": 6
+   },
+   "reveal": {
+    "answers": [
+     "957"
+    ]
+   },
+   "notes": {
+    "answer": "957",
+    "beats": [
+     [
+      "SAY: Now it's 4 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 957"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 957.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 5 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 38475,
+    "divisor": 5
+   },
+   "reveal": {
+    "answers": [
+     "7 695"
+    ]
+   },
+   "notes": {
+    "answer": "7 695",
+    "beats": [
+     [
+      "SAY: Now it's 5 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 7 695"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 7 695.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to work out discounts and sale prices.",
+   "successCriteria": [
+    "I can find the discount as a percentage of a price.",
+    "I can find the sale price by taking the discount off.",
+    "I can compare sale prices and explain which is the better deal."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: For the next two weeks we're solving real money problems.",
+      "Today it's shopping in a sale."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 the discount is reachable for everyone; SC2 the sale price is the core and the exit evidence; SC3 comparing deals is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Footy boots on sale",
+   "visual": {
+    "type": "barModel",
+    "parts": 4,
+    "shaded": 1,
+    "total": "$120",
+    "below": [
+     "25% off",
+     "",
+     "",
+     ""
+    ]
+   },
+   "prompt": "$120 boots are 25% off. How much do you pay?",
+   "notes": {
+    "answer": "$90 (the discount is $30)",
+    "beats": [
+     [
+      "POINT to the bar.",
+      "SAY: These footy boots normally cost 120 dollars, and they're 25 percent off."
+     ],
+     [
+      "ASK: How much do you pay for the boots in the sale?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $90"
+     ],
+     [
+      "SCAN boards for 90.",
+      "80%+ -> cold call one student: What did you work out first?",
+      "Less -> split the bar into quarters, 30 each, and shade one. Re-ask."
+     ],
+     [
+      "SAY: 25 percent off is 30 dollars off, so you pay 90 dollars.",
+      "Some of you wrote 30. That's the discount.",
+      "Today we make sure we know which is which."
+     ]
+    ],
+    "trap": [
+     "writing $30.",
+     "Fix: ask whether $30 is what you save or what you pay,",
+     "and they redo it."
+    ],
+    "prep": "The launch comes after the LI: discount versus sale price, the main confusion. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "discount",
+   "meaning": "The amount taken off the price.",
+   "example": "A $40 discount on a $160 bike leaves a sale price of $120.",
+   "visual": {
+    "type": "barModel",
+    "parts": 4,
+    "shaded": 1,
+    "total": "$160",
+    "labels": [
+     "$40 off",
+     "",
+     "",
+     ""
+    ]
+   },
+   "notes": {
+    "answer": "$40",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is discount. Say it with me: dis-count."
+     ],
+     [
+      "SAY: The discount is the amount taken off the price.",
+      "The sale price is what's left, the amount you actually pay."
+     ],
+     [
+      "ASK: A $50 shirt has a $10 discount. What is the sale price?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $40"
+     ]
+    ],
+    "trap": [
+     "writing $10.",
+     "Fix: ask what you actually pay, and they subtract."
+    ],
+    "prep": "Discount and sale price: name them every time.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Discount, then sale price",
+   "steps": [
+    "25% of $80: a quarter = $20.",
+    "That is the discount: $20 off.",
+    "Sale price = $80 - $20 = $60.",
+    "Check: $60 is less than $80."
+   ],
+   "visual": {
+    "type": "barModel",
+    "parts": 4,
+    "shaded": 1,
+    "total": "$80",
+    "labels": [
+     "$20",
+     "$20",
+     "$20",
+     "$20"
+    ],
+    "below": [
+     "25%",
+     "25%",
+     "25%",
+     "25%"
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "$120, 25% off: $30 off, pay $90"
+    ]
+   },
+   "notes": {
+    "answer": "$90",
+    "beats": [
+     [
+      "MODEL finding the discount.",
+      "SAY: These shoes are 80 dollars, 25 percent off.",
+      "25 percent is a quarter, so the discount is 20 dollars."
+     ],
+     [
+      "MODEL subtracting.",
+      "SAY: The sale price is what's left: 80 take away 20 is 60 dollars.",
+      "And 60 is less than 80, so it makes sense."
+     ],
+     [
+      "ASK: A $120 skateboard is 25 percent off. What is the sale price?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $90"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: A quarter of 120 is 30 off, so you pay 90 dollars."
+     ]
+    ],
+    "trap": [
+     "stopping at the discount.",
+     "Fix: ask what you pay, and they subtract."
+    ],
+    "stretch": "Find the sale price in one step: 75% of the price.",
+    "help": "Draw the bar and shade the discount.",
+    "prep": "Discount first, then sale price, then check: the critical feature. SC1 and SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Build the discount from 10%",
+   "steps": [
+    "10% of $60 = $6.",
+    "30% = 3 × $6 = $18 off.",
+    "Sale price = $60 - $18 = $42."
+   ],
+   "visual": {
+    "type": "barModel",
+    "parts": 10,
+    "shaded": 3,
+    "total": "$60",
+    "labels": [
+     "$6",
+     "$6",
+     "$6",
+     "$6",
+     "$6",
+     "$6",
+     "$6",
+     "$6",
+     "$6",
+     "$6"
+    ],
+    "below": [
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%"
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "$90, 20% off: $18 off, pay $72"
+    ]
+   },
+   "notes": {
+    "answer": "$72",
+    "beats": [
+     [
+      "MODEL 10% first.",
+      "SAY: For 30 percent off a 60 dollar jacket,",
+      "I find my benchmark: 10 percent is 6 dollars."
+     ],
+     [
+      "MODEL building and subtracting.",
+      "SAY: 30 percent is three lots of 6, so 18 dollars off.",
+      "60 take away 18 is 42 dollars to pay."
+     ],
+     [
+      "ASK: A $90 tent is 20 percent off. What is the sale price?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $72"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 10 percent is 9, so 20 percent is 18 off: you pay 72 dollars."
+     ]
+    ],
+    "trap": [
+     "subtracting 20 dollars.",
+     "Fix: find 10 percent first, and they redo it."
+    ],
+    "stretch": "Which is bigger: 30% off $60 or 20% off $90?",
+    "help": "Write the 10% step first, every time.",
+    "prep": "Last week's benchmarks, now in a sale. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "$80 shoes at 25% off",
+   "prompt": "What is the sale price? Point to A, B or C",
+   "options": [
+    {
+     "text": "$20",
+     "misconception": "gives the discount, not the sale price"
+    },
+    {
+     "text": "$60"
+    },
+    {
+     "text": "$55",
+     "misconception": "subtracts 25 dollars instead of 25 percent"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Think: what do you actually pay?"
+     ],
+     [
+      "ASK: What is the sale price of 80 dollar shoes at 25 percent off?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What is A?",
+      "Less -> draw the bar, shade a quarter, and count what's left. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B, 60 dollars. A is the discount,",
+      "and C took off 25 dollars, not 25 percent."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: ask what you pay at the counter, and they choose again."
+    ],
+    "prep": "First decision point. A: discount for sale price; C: percent as dollars.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "What is the sale price?",
+   "ask": "What is the sale price?",
+   "routine": "boards",
+   "thinkTime": 25,
+   "pivot": "find the discount on a bar model, then take it off",
+   "followUp": "cold call one board: What was the discount?",
+   "items": [
+    {
+     "text": "$48 shirt, 50% off",
+     "answer": "$24"
+    },
+    {
+     "text": "$60 ball, 10% off",
+     "answer": "$54"
+    },
+    {
+     "text": "$200 bike, 25% off",
+     "answer": "$150"
+    },
+    {
+     "text": "$75 shoes, 20% off",
+     "answer": "$60"
+    },
+    {
+     "text": "$36 cap, one third off",
+     "answer": "$24",
+     "say": "One third of 36 is 12 off, so you pay 24 dollars."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write each sale price on your board."
+    ],
+    "trap": [
+     "writing the discount.",
+     "Fix: ask what you pay, and they subtract."
+    ],
+    "stretch": "Write the discount for each one too.",
+    "help": "Draw a bar and split it into the right number of parts.",
+    "prep": "Guided practice: each benchmark, then a fraction off. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "The bike sale",
+   "visual": {
+    "type": "text",
+    "text": "A $150 bike is 30% off."
+   },
+   "label": "What is the sale price?",
+   "reveal": {
+    "answers": [
+     "$45 off, pay $105"
+    ]
+   },
+   "notes": {
+    "answer": "$105. $45 is the discount",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Discount first, then the sale price."
+     ],
+     [
+      "ASK: What is the sale price of a 150 dollar bike at 30 percent off?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $105"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> find 10 percent together, 15, then build 30 percent. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 10 percent is 15, so 30 percent is 45 off:",
+      "you pay 105 dollars. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing $45.",
+     "Fix: ask what you pay, and they subtract."
+    ],
+    "prep": "The hinge before independent work. Anyone writing $45 or $120 starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Work out discounts and sale prices on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Is that the discount or the sale price?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "writing the discount as the sale price.",
+     "Fix: ask what you pay, and they subtract."
+    ],
+    "stretch": "Extension: original prices, double discounts and percentage off.",
+    "help": "Supported Worksheet: 50% and 10% discounts with a two-step frame.",
+    "prep": "Independent practice: a sale table, bar models, a mistake and comparing shops. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "What is the sale price?"
+   ],
+   "visual": {
+    "type": "text",
+    "text": "A $64 scooter is 25% off."
+   },
+   "notes": {
+    "answer": "$48",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What is the sale price of a 64 dollar scooter at 25 percent off?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $48"
+     ],
+     [
+      "RECORD who writes the discount or subtracts 25 dollars.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing $16 or $39.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: a new price at a benchmark discount.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner the difference between a discount and a sale price.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for discount is taken off; sale price is what you pay",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can work out a sale price?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with $16 on the board matters most."
+     ],
+     [
+      "ASK: What is the difference between a discount and a sale price?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: discount is taken off; sale price is what you pay"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: the best buy.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

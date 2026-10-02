@@ -1,0 +1,1619 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 2,
+  "session": 3,
+  "title": "Describing Movement on a Grid",
+  "subtitle": "Term 4 Week 2, Session 3",
+  "meta": "Year 5/6 Maths | Space",
+  "footer": "Grid Coordinates | Year 5/6 Maths | Session 3",
+  "outputFolder": "T4W2_Maths_S3_Describing_Movement",
+  "fileName": "Session 3 - Describing Movement on a Grid.pptx",
+  "titleVisual": {
+   "type": "grid",
+   "x": [
+    0,
+    7
+   ],
+   "y": [
+    0,
+    6
+   ],
+   "points": [
+    {
+     "x": 2,
+     "y": 2,
+     "label": "P"
+    },
+    {
+     "x": 6,
+     "y": 4,
+     "label": "P'"
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      2,
+      2
+     ],
+     "to": [
+      6,
+      4
+     ]
+    }
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Space, Year 5 (VC2M5SP02): coordinates and directional language to describe position and movement; Year 6 (VC2M6SP02): describe changes to the coordinates when a point moves",
+   "shape": "problem-first: students move a point before the rule is named, because most can move a point and the gap is saying which number changes",
+   "criticalFeature": "left and right change the first number; up and down change the second",
+   "decisionPoints": [
+    "the choice check: (3, 2) moves 4 up",
+    "the hinge: describe the move from two points",
+    "the exit ticket"
+   ],
+   "anchor": "across the corridor, then up the stairs: (x, y), and the numbers sit on the lines",
+   "catchUp": "Missed Sessions 1 or 2? Plot one point together with the anchor, then start at the launch: moving is reading a point twice."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "A ruler and a sharp pencil for every student",
+   "A counter for every pair, to move on the grid",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The anchor on the board: across the corridor, then up the stairs, (x, y)",
+   "Under it: left and right change the first number; up and down change the second"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. A table of moves, sliding a triangle, describing moves, a mistake to fix and a robot delivery problem.",
+   "title": "Describing Movement on a Grid",
+   "subtitle": "Left and right change the first number. Up and down change the second.",
+   "sections": [
+    {
+     "title": "Move a point",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "(2, 3) moves 4 right. Where does it land?",
+      "steps": [
+       "Right changes the first number.",
+       "2 + 4 = 6.",
+       "The second number stays 3."
+      ],
+      "answer": "(6, 3)"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Write where each point lands.",
+       "columns": [
+        "Start",
+        "Move",
+        "New point"
+       ],
+       "rows": [
+        [
+         "(2, 1)",
+         "3 right",
+         ""
+        ],
+        [
+         "(4, 6)",
+         "2 down",
+         ""
+        ],
+        [
+         "(7, 3)",
+         "5 left",
+         ""
+        ],
+        [
+         "(0, 2)",
+         "4 up",
+         ""
+        ],
+        [
+         "(3, 3)",
+         "1 right, 2 up",
+         ""
+        ],
+        [
+         "(6, 4)",
+         "6 left, 4 down",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "(2, 1)",
+         "3 right",
+         "(5, 1)"
+        ],
+        [
+         "(4, 6)",
+         "2 down",
+         "(4, 4)"
+        ],
+        [
+         "(7, 3)",
+         "5 left",
+         "(2, 3)"
+        ],
+        [
+         "(0, 2)",
+         "4 up",
+         "(0, 6)"
+        ],
+        [
+         "(3, 3)",
+         "1 right, 2 up",
+         "(4, 5)"
+        ],
+        [
+         "(6, 4)",
+         "6 left, 4 down",
+         "(0, 0)"
+        ]
+       ]
+      },
+      {
+       "prompt": "Slide the triangle 3 right. Draw it in its new place and write its new corners.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         7
+        ],
+        "y": [
+         0,
+         6
+        ],
+        "polygon": [
+         [
+          1,
+          1
+         ],
+         [
+          3,
+          1
+         ],
+         [
+          1,
+          4
+         ]
+        ],
+        "maxH": 170
+       },
+       "answerVisual": {
+        "type": "grid",
+        "x": [
+         0,
+         7
+        ],
+        "y": [
+         0,
+         6
+        ],
+        "polygons": [
+         [
+          [
+           1,
+           1
+          ],
+          [
+           3,
+           1
+          ],
+          [
+           1,
+           4
+          ]
+         ],
+         [
+          [
+           4,
+           1
+          ],
+          [
+           6,
+           1
+          ],
+          [
+           4,
+           4
+          ]
+         ]
+        ],
+        "maxH": 170
+       },
+       "answer": "(4, 1), (6, 1), (4, 4)",
+       "lines": 1
+      },
+      {
+       "prompt": "Look at your triangle. Which number changed in every corner? Which stayed the same?",
+       "answer": "The first (across) number went up by 3 in every corner. The second number stayed the same.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Describe the move",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Describe the move from (1, 2) to (5, 6).",
+      "steps": [
+       "The first number went from 1 to 5: 4 right.",
+       "The second number went from 2 to 6: 4 up.",
+       "Say both."
+      ],
+      "answer": "4 right, 4 up"
+     },
+     "items": [
+      {
+       "prompt": "Describe each move.",
+       "parts": [
+        {
+         "prompt": "(2, 5) to (7, 5)",
+         "answer": "5 right"
+        },
+        {
+         "prompt": "(6, 6) to (6, 1)",
+         "answer": "5 down"
+        },
+        {
+         "prompt": "(1, 1) to (4, 5)",
+         "answer": "3 right, 4 up"
+        },
+        {
+         "prompt": "(5, 3) to (2, 6)",
+         "answer": "3 left, 3 up"
+        }
+       ]
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Kai moved the point (4, 2) up 3. Find his mistake and fix it.",
+       "work": [
+        "Up 3, so I add 3: (7, 2)."
+       ],
+       "answer": "Up changes the second number, so it is (4, 5). Kai changed the across number."
+      }
+     ]
+    },
+    {
+     "title": "Robot delivery",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "A robot at (0, 0) moves 3 right, then 2 up. Where is it?",
+      "steps": [
+       "3 right: (3, 0).",
+       "Then 2 up: (3, 2)."
+      ],
+      "answer": "(3, 2)"
+     },
+     "items": [
+      {
+       "prompt": "A delivery robot moves around the school map.",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         7
+        ],
+        "y": [
+         0,
+         6
+        ],
+        "points": [
+         {
+          "x": 1,
+          "y": 2,
+          "label": "Canteen"
+         },
+         {
+          "x": 5,
+          "y": 5,
+          "label": "Library"
+         },
+         {
+          "x": 6,
+          "y": 1,
+          "label": "Oval"
+         },
+         {
+          "x": 2,
+          "y": 4,
+          "label": "Gate"
+         }
+        ],
+        "maxH": 150
+       },
+       "working": "none",
+       "parts": [
+        {
+         "prompt": "Canteen, then 4 right, 3 up. Where?",
+         "answer": "the library"
+        },
+        {
+         "prompt": "Oval to gate: which moves?",
+         "answer": "4 left, 3 up"
+        },
+        {
+         "prompt": "Library to oval: which moves?",
+         "answer": "1 right, 4 down"
+        }
+       ]
+      },
+      {
+       "kind": "choice",
+       "prompt": "A robot starts at (0, 0). Which path ends at (4, 4)?",
+       "options": [
+        "4 right, then 4 up",
+        "4 up, then 4 right",
+        "Both"
+       ],
+       "answer": 2,
+       "reason": true,
+       "explain": "Both: the right moves add 4 to the first number and the up moves add 4 to the second, in either order."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Sliding a rectangle, a repeating move pattern and your own path, with worked examples.",
+   "title": "Extension: Moving Shapes and Patterns",
+   "subtitle": "Move every corner the same way.",
+   "sections": [
+    {
+     "title": "Slide a shape",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Slide the corner (1, 1) 2 right and 3 up.",
+      "steps": [
+       "2 right: 1 + 2 = 3.",
+       "3 up: 1 + 3 = 4.",
+       "New corner: (3, 4)."
+      ],
+      "answer": "(3, 4)"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "A rectangle slides 2 right and 3 up. Fill in its new corners.",
+       "columns": [
+        "Old corner",
+        "New corner"
+       ],
+       "rows": [
+        [
+         "(1, 1)",
+         ""
+        ],
+        [
+         "(4, 1)",
+         ""
+        ],
+        [
+         "(4, 3)",
+         ""
+        ],
+        [
+         "(1, 3)",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "(1, 1)",
+         "(3, 4)"
+        ],
+        [
+         "(4, 1)",
+         "(6, 4)"
+        ],
+        [
+         "(4, 3)",
+         "(6, 6)"
+        ],
+        [
+         "(1, 3)",
+         "(3, 6)"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Move patterns",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "A point starts at (0, 0) and keeps moving 1 right and 2 up. Where is it after 2 moves?",
+      "steps": [
+       "After 1 move: (1, 2).",
+       "After 2 moves: (2, 4).",
+       "The second number is always double the first."
+      ],
+      "answer": "(2, 4)"
+     },
+     "items": [
+      {
+       "prompt": "A point starts at (0, 0) and keeps moving 2 right and 1 up. Write its next four positions.",
+       "answer": "(2, 1), (4, 2), (6, 3), (8, 4)",
+       "lines": 2
+      },
+      {
+       "kind": "choice",
+       "prompt": "Will that point ever land on (10, 5)?",
+       "options": [
+        "Yes",
+        "No"
+       ],
+       "answer": 0,
+       "reason": true,
+       "explain": "Yes: after 5 moves it is at (10, 5), because 5 lots of 2 right is 10 and 5 lots of 1 up is 5."
+      },
+      {
+       "prompt": "Will it ever land on (7, 3)? Explain.",
+       "answer": "No. The first number is always even (2, 4, 6, 8...), so it never reaches 7.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Plan a path",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Plan moves from (1, 1) to (5, 4).",
+      "steps": [
+       "The first number goes 1 to 5: 4 right.",
+       "The second goes 1 to 4: 3 up.",
+       "Path: 4 right, 3 up."
+      ],
+      "answer": "4 right, 3 up"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Plot 4 places of your choice on squared paper. Write a path of moves that visits all four and comes back to the start. Check your moves add back to zero.",
+       "answer": "Check the moves: total right equals total left, and total up equals total down."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: the arrow is drawn, and a hint says which number changes.",
+   "title": "Moving Points: Step by Step",
+   "subtitle": "Count the squares as you move.",
+   "sections": [
+    {
+     "title": "Move right or left",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "A is at (1, 2). It moves 3 right.",
+      "visual": {
+       "type": "grid",
+       "x": [
+        0,
+        5
+       ],
+       "y": [
+        0,
+        4
+       ],
+       "points": [
+        {
+         "x": 1,
+         "y": 2,
+         "label": "A"
+        },
+        {
+         "x": 4,
+         "y": 2
+        }
+       ],
+       "arrows": [
+        {
+         "from": [
+          1,
+          2
+         ],
+         "to": [
+          4,
+          2
+         ]
+        }
+       ]
+      },
+      "steps": [
+       "Follow the arrow 3 squares right.",
+       "Right changes the first number: 1 + 3 = 4.",
+       "A lands at (4, 2)."
+      ],
+      "answer": "(4, 2)"
+     },
+     "items": [
+      {
+       "prompt": "B (1, 3) moves 4 right. New point = ( ___ , ___ )",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         6
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 1,
+          "y": 3,
+          "label": "B"
+         }
+        ],
+        "arrows": [
+         {
+          "from": [
+           1,
+           3
+          ],
+          "to": [
+           5,
+           3
+          ]
+         }
+        ]
+       },
+       "hint": "Right changes the first number: 1 + 4.",
+       "answer": "(5, 3)",
+       "working": "none"
+      },
+      {
+       "prompt": "C (5, 1) moves 3 left. New point = ( ___ , ___ )",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         6
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 5,
+          "y": 1,
+          "label": "C"
+         }
+        ],
+        "arrows": [
+         {
+          "from": [
+           5,
+           1
+          ],
+          "to": [
+           2,
+           1
+          ]
+         }
+        ]
+       },
+       "hint": "Left changes the first number: 5 - 3.",
+       "answer": "(2, 1)",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Move up or down",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "D is at (2, 1). It moves 3 up.",
+      "visual": {
+       "type": "grid",
+       "x": [
+        0,
+        5
+       ],
+       "y": [
+        0,
+        5
+       ],
+       "points": [
+        {
+         "x": 2,
+         "y": 1,
+         "label": "D"
+        },
+        {
+         "x": 2,
+         "y": 4
+        }
+       ],
+       "arrows": [
+        {
+         "from": [
+          2,
+          1
+         ],
+         "to": [
+          2,
+          4
+         ]
+        }
+       ]
+      },
+      "steps": [
+       "Follow the arrow 3 squares up.",
+       "Up changes the second number: 1 + 3 = 4.",
+       "D lands at (2, 4)."
+      ],
+      "answer": "(2, 4)"
+     },
+     "items": [
+      {
+       "prompt": "E (3, 1) moves 4 up. New point = ( ___ , ___ )",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         6
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 3,
+          "y": 1,
+          "label": "E"
+         }
+        ],
+        "arrows": [
+         {
+          "from": [
+           3,
+           1
+          ],
+          "to": [
+           3,
+           5
+          ]
+         }
+        ]
+       },
+       "hint": "Up changes the second number: 1 + 4.",
+       "answer": "(3, 5)",
+       "working": "none"
+      },
+      {
+       "prompt": "F (4, 5) moves 2 down. New point = ( ___ , ___ )",
+       "visual": {
+        "type": "grid",
+        "x": [
+         0,
+         6
+        ],
+        "y": [
+         0,
+         5
+        ],
+        "points": [
+         {
+          "x": 4,
+          "y": 5,
+          "label": "F"
+         }
+        ],
+        "arrows": [
+         {
+          "from": [
+           4,
+           5
+          ],
+          "to": [
+           4,
+           3
+          ]
+         }
+        ]
+       },
+       "hint": "Down changes the second number: 5 - 2.",
+       "answer": "(4, 3)",
+       "working": "none"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 3 of our coordinates week: today we describe how points move on a grid."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards, markers, a ruler, a pencil and one counter per pair on desks. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Decimal to fraction",
+   "from": "teacher",
+   "prompts": [
+    "Write 0.35 as a fraction in its simplest form."
+   ],
+   "visual": {
+    "type": "hundredGrid",
+    "shaded": 35
+   },
+   "reveal": {
+    "answers": [
+     "35/100",
+     "7/20"
+    ]
+   },
+   "notes": {
+    "answer": "35/100 and 7/20",
+    "beats": [
+     [
+      "SAY: Let's warm up with fractions, decimals and percentages from last term."
+     ],
+     [
+      "ASK: How do you write 0.35 as a fraction in its simplest form?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 7/20"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> shade the hundred grid: 35 hundredths,",
+      "then divide top and bottom by 5. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 0.35 is 35 hundredths, and that simplifies to 7 twentieths.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "stopping at 35/100.",
+     "Fix: find a number that divides both, and they simplify it."
+    ],
+    "prep": "Review of Term 3 fractions, decimals and percentages (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Percentage of an amount",
+   "from": "teacher",
+   "prompts": [
+    "What is 30% of 80?"
+   ],
+   "reveal": {
+    "answers": [
+     "24"
+    ]
+   },
+   "notes": {
+    "answer": "24",
+    "beats": [
+     [
+      "ASK: What is 30 percent of 80?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 24"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> find 10 percent first, 8, then times 3. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 10 percent of 80 is 8,",
+      "so 30 percent is 24. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 30 or 50.",
+     "Fix: find 10 percent first, and they multiply by 3."
+    ],
+    "prep": "Term 3 review: percentage of an amount.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Order them",
+   "from": "teacher",
+   "prompts": [
+    "Order from smallest to largest: 2/5, 0.45, 38%"
+   ],
+   "reveal": {
+    "answers": [
+     "38%",
+     "2/5",
+     "0.45"
+    ]
+   },
+   "notes": {
+    "answer": "38%, 2/5, 0.45",
+    "beats": [
+     [
+      "ASK: Can you put these in order from smallest to largest?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 38%, 2/5, 0.45"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> change all three to percentages together, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 38 percent, then two fifths, which is 40 percent,",
+      "then 0.45, which is 45 percent. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "putting 0.45 first because it looks small.",
+     "Fix: turn each one into a percentage, and they reorder."
+    ],
+    "prep": "Term 3 review: comparing fractions, decimals and percentages.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "4 × 12"
+   ],
+   "reveal": {
+    "answers": [
+     "48"
+    ]
+   },
+   "notes": {
+    "answer": "48",
+    "beats": [
+     [
+      "SAY: Now for our four times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 4 times 12?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 48"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> double 12, then double again. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 48. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 44.",
+     "Fix: double 12 to get 24, double again to get 48, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "28 ÷ 4"
+   ],
+   "reveal": {
+    "answers": [
+     "7"
+    ]
+   },
+   "notes": {
+    "answer": "7",
+    "beats": [
+     [
+      "SAY: Now a division. How many fours make 28?"
+     ],
+     [
+      "ASK: What is 28 divided by 4?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 7"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> halve 28 to 14, then halve again. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 7. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 6 or 8.",
+     "Fix: halve 28, then halve again, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "4 × 25"
+   ],
+   "reveal": {
+    "answers": [
+     "100"
+    ]
+   },
+   "notes": {
+    "answer": "100",
+    "beats": [
+     [
+      "SAY: Here's a bigger one. Use doubling."
+     ],
+     [
+      "ASK: What is 4 times 25?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 100"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> think of four quarters of a dollar. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 100. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 80.",
+     "Fix: double 25 to get 50, double again to get 100, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to describe how a point moves on a grid and how its coordinates change.",
+   "successCriteria": [
+    "I can move a point left, right, up or down on a grid.",
+    "I can write the new coordinates after a move.",
+    "I can explain which number changes and why."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: We can read and plot points now.",
+      "Today we move them, and watch what happens to the numbers."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 moving a point is reachable for everyone; SC2 writing the new coordinates is the core and the exit evidence; SC3 explaining which number changes is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Move the robot",
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     8
+    ],
+    "y": [
+     0,
+     6
+    ],
+    "points": [
+     {
+      "x": 2,
+      "y": 3,
+      "label": "R"
+     }
+    ]
+   },
+   "prompt": "R moves 3 right. Where does it land?",
+   "notes": {
+    "answer": "(5, 3)",
+    "beats": [
+     [
+      "POINT to R.",
+      "SAY: Our robot R is sitting at 2, 3.",
+      "Put your counter on it on your grid if you have one."
+     ],
+     [
+      "ASK: If R moves 3 squares to the right, what are its new coordinates?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (5, 3)"
+     ],
+     [
+      "SCAN boards for (5, 3).",
+      "80%+ -> ask: Which number changed? Which stayed the same?",
+      "Less -> move R one square at a time on the big grid,",
+      "counting together. Re-ask."
+     ],
+     [
+      "SAY: It lands on 5, 3. Moving right changed the first number,",
+      "and the second number stayed the same. That's our big idea today."
+     ]
+    ],
+    "trap": [
+     "writing (2, 6).",
+     "Fix: move the counter right, not up, and they rewrite it."
+    ],
+    "prep": "Problem-first: students move before the rule is named. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "translate",
+   "meaning": "To slide a point or a shape to a new place, without turning or flipping it.",
+   "example": "Translate A 3 right and 2 up.",
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     6
+    ],
+    "y": [
+     0,
+     5
+    ],
+    "points": [
+     {
+      "x": 1,
+      "y": 1,
+      "label": "A"
+     },
+     {
+      "x": 4,
+      "y": 3,
+      "label": "A'"
+     }
+    ],
+    "arrows": [
+     {
+      "from": [
+       1,
+       1
+      ],
+      "to": [
+       4,
+       3
+      ]
+     }
+    ]
+   },
+   "notes": {
+    "answer": "slide to a new place, no turning or flipping",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is translate. Say it with me: trans-late."
+     ],
+     [
+      "SAY: In maths, translate means slide.",
+      "The point or shape moves to a new place, but it doesn't turn or flip."
+     ],
+     [
+      "ASK: Show me a translation with your hand: slide it across your desk.",
+      "5 sec. Cue: Everyone, together, on three. Slide... now.",
+      "EXPECT: every hand slides, no turning"
+     ]
+    ],
+    "trap": [
+     "turning the hand as it moves.",
+     "Fix: keep fingers pointing the same way, and they slide again."
+    ],
+    "prep": "Translate is the Year 6 word; slide and move are fine in speech. Keep the arrow on the board.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Move right or left",
+   "steps": [
+    "P is at (2, 4).",
+    "Move 4 right: right changes the first number.",
+    "2 + 4 = 6. The second number stays 4.",
+    "P lands at (6, 4)."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     7
+    ],
+    "y": [
+     0,
+     6
+    ],
+    "points": [
+     {
+      "x": 2,
+      "y": 4,
+      "label": "P"
+     },
+     {
+      "x": 6,
+      "y": 4,
+      "label": "P'"
+     }
+    ],
+    "arrows": [
+     {
+      "from": [
+       2,
+       4
+      ],
+      "to": [
+       6,
+       4
+      ]
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "(6, 4)"
+    ]
+   },
+   "notes": {
+    "answer": "(6, 4)",
+    "beats": [
+     [
+      "MODEL moving P four squares right.",
+      "SAY: Let me move P four squares to the right.",
+      "I count each square as I slide."
+     ],
+     [
+      "POINT to the first number.",
+      "SAY: Moving right takes me further across, so the first number grows by 4.",
+      "I'm not going up or down, so the second number stays the same."
+     ],
+     [
+      "ASK: So what are P's new coordinates?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (6, 4)"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 6, 4. Two plus four is six,",
+      "and the up number stayed 4."
+     ]
+    ],
+    "trap": [
+     "adding 4 to both numbers.",
+     "Fix: ask whether P went up at all, and they fix the second number."
+    ],
+    "stretch": "What move would take P back to where it started?",
+    "help": "Slide a counter along the grid and count each square.",
+    "prep": "The critical feature: right and left change only the first number. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Two moves at once",
+   "steps": [
+    "Q is at (5, 5).",
+    "2 left: 5 - 2 = 3. The first number.",
+    "3 down: 5 - 3 = 2. The second number.",
+    "Q lands at (3, 2)."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     7
+    ],
+    "y": [
+     0,
+     6
+    ],
+    "points": [
+     {
+      "x": 5,
+      "y": 5,
+      "label": "Q"
+     },
+     {
+      "x": 3,
+      "y": 2,
+      "label": "Q'"
+     }
+    ],
+    "arrows": [
+     {
+      "from": [
+       5,
+       5
+      ],
+      "to": [
+       3,
+       2
+      ]
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "(3, 2)"
+    ]
+   },
+   "notes": {
+    "answer": "(3, 2)",
+    "beats": [
+     [
+      "POINT to Q.",
+      "SAY: Now Q moves twice: 2 to the left, then 3 down."
+     ],
+     [
+      "MODEL left first.",
+      "SAY: Left takes me back across,",
+      "so I take 2 from the first number: 5 take away 2 is 3."
+     ],
+     [
+      "ASK: Down changes the other number. So what's the second number now?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 2"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 5 take away 3 is 2. So Q lands on 3, 2.",
+      "Left and right changed the first number, and down changed the second."
+     ]
+    ],
+    "trap": [
+     "taking 2 from the second number.",
+     "Fix: point to left on the anchor, and they redo the first number."
+    ],
+    "stretch": "Would it matter if Q went down first, then left?",
+    "help": "Do one move at a time, and write the point after each one.",
+    "prep": "Two moves, two numbers: each direction belongs to one number. SC2 and SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Where does it land?",
+   "prompt": "(3, 2) moves 4 up. Point to A, B or C",
+   "options": [
+    {
+     "text": "(7, 2)",
+     "misconception": "changes the first number for an up move"
+    },
+    {
+     "text": "(3, 6)"
+    },
+    {
+     "text": "(7, 6)",
+     "misconception": "adds 4 to both numbers"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Think about which number up changes before you choose."
+     ],
+     [
+      "ASK: If the point 3, 2 moves 4 up, where does it land?",
+      "10 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What move would land on A?",
+      "Less -> say the anchor again: up the stairs is the second number. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B, 3, 6. Up changes the second number,",
+      "so 2 becomes 6, and the 3 stays."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: walk it on the big grid: up, not across, and they choose again."
+    ],
+    "prep": "First decision point. A means up was put on the first number; C means both numbers were changed.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Where does it land?",
+   "ask": "Where does the point land?",
+   "routine": "boards",
+   "thinkTime": 15,
+   "pivot": "move a counter one square at a time on the grid",
+   "followUp": "cold call one board: Which number changed, and why?",
+   "items": [
+    {
+     "text": "(4, 1) moves 3 up",
+     "answer": "(4, 4)"
+    },
+    {
+     "text": "(6, 5) moves 2 left",
+     "answer": "(4, 5)"
+    },
+    {
+     "text": "(2, 3) moves 4 right, 1 down",
+     "answer": "(6, 2)"
+    },
+    {
+     "text": "(5, 0) moves 5 left",
+     "answer": "(0, 0)"
+    },
+    {
+     "text": "(3, 6) moves to (3, 2). What was the move?",
+     "answer": "4 down",
+     "say": "It moved 4 down. The across number stayed 3."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write where each point lands on your board."
+    ],
+    "trap": [
+     "changing the wrong number.",
+     "Fix: point to the anchor:",
+     "left and right is the first number, and they redo it."
+    ],
+    "stretch": "Write the move that would take the point back to its start.",
+    "help": "Draw the point on a small grid on your board, then move it.",
+    "prep": "Guided practice from one move to two moves, an edge case landing on (0, 0), then a reverse question. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Describe the move",
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     7
+    ],
+    "y": [
+     0,
+     6
+    ],
+    "points": [
+     {
+      "x": 1,
+      "y": 4,
+      "label": "B"
+     },
+     {
+      "x": 6,
+      "y": 2,
+      "label": "B'"
+     }
+    ],
+    "arrows": [
+     {
+      "from": [
+       1,
+       4
+      ],
+      "to": [
+       6,
+       2
+      ]
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "5 right, 2 down"
+    ]
+   },
+   "notes": {
+    "answer": "5 right, 2 down",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "B slid to B dash. Describe the move."
+     ],
+     [
+      "ASK: How did B move to get to B dash?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 5 right, 2 down"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> write both points' coordinates first, then compare each number. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It moved 5 right and 2 down.",
+      "The first number went from 1 to 6,",
+      "and the second from 4 to 2. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 5 right, 2 up.",
+     "Fix: ask whether B dash is higher or lower than B, and they fix it."
+    ],
+    "prep": "The hinge before independent work: describing a move from two points. Anyone with right and down mixed up starts on the Supported Worksheet.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Move points and describe moves on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Which number did that move change?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "changing the wrong number.",
+     "Fix: ask which direction belongs to which number, and they redo it."
+    ],
+    "stretch": "Extension: sliding a rectangle, a repeating move pattern and planning your own path.",
+    "help": "Supported Worksheet: the arrows are drawn, and a hint says which number changes.",
+    "prep": "Independent practice: a table of moves, a translation, describing moves, a mistake and a robot problem. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "M moves 3 right and 4 down. Write its new coordinates."
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     7
+    ],
+    "y": [
+     0,
+     6
+    ],
+    "points": [
+     {
+      "x": 2,
+      "y": 5,
+      "label": "M"
+     }
+    ]
+   },
+   "notes": {
+    "answer": "(5, 1)",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: Where does M land after 3 right and 4 down?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (5, 1)"
+     ],
+     [
+      "RECORD who changes the wrong number.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing (5, 9) or (6, 2).",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: two moves, with a down move that subtracts.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner which number changes when you move up.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for the second number, because up is the stairs",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can write the coordinates after a move?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with (5, 9) on the board matters most."
+     ],
+     [
+      "ASK: Which number changes when a point moves up, and why?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: the second number, because up is the stairs"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow's Cartesian plane builds on this.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+  "unit_folder": "Term4_Week8_Maths_Budgeting",
+  "unit_pptx_name": "Term 4 Week 8 - Earning, Saving and Budgeting - Year 5-6 Maths.pptx",
+  "anchor": "read it, model it, solve it, check it: say what the answer means in the situation",
+  "lessons": [
+    {
+      "build_script": "builds/t4w8_maths_s1_earning_spending.json",
+      "folder": "T4W8_Maths_S1_Earning_Spending",
+      "session": 1,
+      "focus": "Income and expenses: a weekly budget table, money left over, and 'Can I afford it? Do I need it?'. Critical feature: left over = income minus all expenses. Review: discounts and percentages (Week 7)."
+    },
+    {
+      "build_script": "builds/t4w8_maths_s2_saving_plans.json",
+      "folder": "T4W8_Maths_S2_Saving_Plans",
+      "session": 2,
+      "focus": "Saving plans: how long to reach a goal, saving a fraction or percentage of income, rounding weeks up. Critical feature: amount still needed divided by savings per week, rounded up. Review: multi-step money problems (Week 7)."
+    },
+    {
+      "build_script": "builds/t4w8_maths_s3_spreadsheets.json",
+      "folder": "T4W8_Maths_S3_Spreadsheets",
+      "session": 3,
+      "focus": "Budgets in a spreadsheet: cells, cell references and formulas (=B2*C2, =SUM). Critical feature: a formula uses cell references so the total updates itself. Review: four processes."
+    },
+    {
+      "build_script": "builds/t4w8_maths_s4_excursion_budget.json",
+      "folder": "T4W8_Maths_S4_Excursion_Budget",
+      "session": 4,
+      "focus": "Budgeting a class excursion: shared costs per student, fixed and per-person costs, rounding to cover costs. Critical feature: share fixed costs, add per-person costs. Review: four processes."
+    },
+    {
+      "build_script": "builds/t4w8_maths_s5_holiday_budget.json",
+      "folder": "T4W8_Maths_S5_Holiday_Budget",
+      "session": 5,
+      "focus": "Comparing two family holiday budgets and justifying a choice. Critical feature: compare totals for the same people and nights, then justify with more than cost. Review: probability (Week 4)."
+    }
+  ]
+}

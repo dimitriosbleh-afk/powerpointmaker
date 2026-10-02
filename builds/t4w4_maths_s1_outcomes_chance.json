@@ -1,0 +1,1364 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 4,
+  "session": 1,
+  "title": "Outcomes and Chance",
+  "subtitle": "Term 4 Week 4, Session 1",
+  "meta": "Year 5/6 Maths | Probability",
+  "footer": "Probability | Year 5/6 Maths | Session 1",
+  "outputFolder": "T4W4_Maths_S1_Outcomes_Chance",
+  "fileName": "Session 1 - Outcomes and Chance.pptx",
+  "titleVisual": {
+   "type": "spinner",
+   "sectors": [
+    {
+     "label": "red"
+    },
+    {
+     "label": "blue"
+    },
+    {
+     "label": "green"
+    },
+    {
+     "label": "yellow"
+    }
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Probability, Years 5 and 6 (VC2M5P02, VC2M6P02): list the outcomes of chance activities, with and without equally likely outcomes, and describe their likelihood as fractions",
+   "shape": "compare-two-models: an equal spinner beside an unequal one, because counting equal parts instead of colours is the new idea",
+   "criticalFeature": "count the equally likely parts, not the colours",
+   "decisionPoints": [
+    "the choice check: which event has a probability of 1/2?",
+    "the hinge: P(red) on an unequal spinner",
+    "the exit ticket"
+   ],
+   "anchor": "chance = the outcomes we want out of all the equally likely outcomes"
+  }
+ },
+ "materials": {
+  "manipulatives": [
+   "A dice and a coin for every pair (optional, for checking outcomes)"
+  ],
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: chance = the outcomes we want out of all the equally likely outcomes",
+   "A chance line: impossible, unlikely, even chance, likely, certain"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. List outcomes, write probabilities from spinners, sport and game problems, and a mistake to fix.",
+   "title": "Outcomes and Chance",
+   "subtitle": "Chance = the outcomes we want out of all the equally likely outcomes.",
+   "sections": [
+    {
+     "title": "List the outcomes",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "What are the outcomes of spinning a spinner with 4 equal parts: red, blue, red, green?",
+      "steps": [
+       "Read each part: red, blue, red, green.",
+       "The different results are red, blue and green.",
+       "Red has 2 of the 4 parts."
+      ],
+      "answer": "red, blue, green (red is 2 of 4 parts)"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "List every outcome, then count them.",
+       "columns": [
+        "Event",
+        "Outcomes",
+        "How many?"
+       ],
+       "rows": [
+        [
+         "Toss a coin",
+         "",
+         ""
+        ],
+        [
+         "Roll a dice",
+         "",
+         ""
+        ],
+        [
+         "Spin a red, blue, green spinner",
+         "",
+         ""
+        ],
+        [
+         "Pick a day of the week",
+         "",
+         ""
+        ],
+        [
+         "Pick a season",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "Toss a coin",
+         "heads, tails",
+         "2"
+        ],
+        [
+         "Roll a dice",
+         "1, 2, 3, 4, 5, 6",
+         "6"
+        ],
+        [
+         "Spin a red, blue, green spinner",
+         "red, blue, green",
+         "3"
+        ],
+        [
+         "Pick a day of the week",
+         "Monday to Sunday",
+         "7"
+        ],
+        [
+         "Pick a season",
+         "summer, autumn, winter, spring",
+         "4"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Write the probability",
+     "proficiency": "fluency",
+     "columns": 3,
+     "example": {
+      "prompt": "What is P(blue) on a spinner with 5 equal parts, 2 of them blue?",
+      "visual": {
+       "type": "spinner",
+       "sectors": [
+        {
+         "label": "blue"
+        },
+        {
+         "label": "red"
+        },
+        {
+         "label": "blue"
+        },
+        {
+         "label": "green"
+        },
+        {
+         "label": "yellow"
+        }
+       ]
+      },
+      "steps": [
+       "Count all the equal parts: 5.",
+       "Count the blue parts: 2.",
+       "P(blue) = 2/5."
+      ],
+      "answer": "2/5"
+     },
+     "items": [
+      {
+       "prompt": "What is P(red)?",
+       "visual": {
+        "type": "spinner",
+        "sectors": [
+         {
+          "label": "red"
+         },
+         {
+          "label": "blue"
+         },
+         {
+          "label": "green"
+         },
+         {
+          "label": "yellow"
+         }
+        ],
+        "maxH": 110
+       },
+       "answer": "1/4",
+       "answerLabel": "P(red) =",
+       "working": "none"
+      },
+      {
+       "prompt": "What is P(red)?",
+       "visual": {
+        "type": "spinner",
+        "sectors": [
+         {
+          "label": "red",
+          "weight": 2
+         },
+         {
+          "label": "blue"
+         },
+         {
+          "label": "green"
+         }
+        ],
+        "maxH": 110
+       },
+       "answer": "2/4 = 1/2",
+       "answerLabel": "P(red) =",
+       "working": "none"
+      },
+      {
+       "prompt": "What is P(blue)?",
+       "visual": {
+        "type": "spinner",
+        "sectors": [
+         {
+          "label": "red"
+         },
+         {
+          "label": "blue"
+         },
+         {
+          "label": "red"
+         },
+         {
+          "label": "green"
+         },
+         {
+          "label": "red"
+         },
+         {
+          "label": "blue"
+         }
+        ],
+        "maxH": 110
+       },
+       "answer": "2/6 = 1/3",
+       "answerLabel": "P(blue) =",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Chance in sport and games",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "A team of 10 picks a captain at random. 4 players are Year 5. What is the chance the captain is in Year 5?",
+      "steps": [
+       "All the equally likely outcomes: 10 players.",
+       "The ones we want: 4 Year 5 players.",
+       "4/10 = 2/5."
+      ],
+      "answer": "4/10 = 2/5"
+     },
+     "items": [
+      {
+       "prompt": "A netball team of 7 picks a captain at random. 3 players are in Year 6. What is the probability the captain is in Year 6?",
+       "answer": "3/7",
+       "answerLabel": "P ="
+      },
+      {
+       "prompt": "A footy club raffle sells 50 tickets. Sam buys 5. What is his chance of winning? Simplify it.",
+       "answer": "5/50 = 1/10",
+       "answerLabel": "P ="
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Kai worked out P(red) for this spinner. Find his mistake and fix it.",
+       "visual": {
+        "type": "spinner",
+        "sectors": [
+         {
+          "label": "red",
+          "weight": 2
+         },
+         {
+          "label": "blue"
+         },
+         {
+          "label": "green"
+         }
+        ],
+        "maxH": 100
+       },
+       "work": [
+        "There are 3 colours, so P(red) = 1/3."
+       ],
+       "answer": "Red takes 2 of the 4 equal parts, so P(red) = 2/4 = 1/2. Count parts, not colours."
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which is more likely?",
+       "options": [
+        "rolling a 5 on a dice",
+        "tossing heads",
+        "both the same"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "Tossing heads is 1/2; rolling a 5 is only 1/6."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Two coins, number cards and designing a spinner, with worked examples.",
+   "title": "Extension: Coins, Cards and Spinners",
+   "subtitle": "List every outcome before you count.",
+   "sections": [
+    {
+     "title": "Two coins",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "List the outcomes of tossing two coins.",
+      "steps": [
+       "First coin heads: HH, HT.",
+       "First coin tails: TH, TT.",
+       "4 equally likely outcomes."
+      ],
+      "answer": "HH, HT, TH, TT"
+     },
+     "items": [
+      {
+       "prompt": "Two coins are tossed. What is the probability of two heads?",
+       "answer": "1/4",
+       "answerLabel": "P ="
+      },
+      {
+       "prompt": "What is the probability of one head and one tail? Explain.",
+       "answer": "2/4 = 1/2: HT and TH are both one head and one tail.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Number cards",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Cards 1 to 10. What is P(a number less than 4)?",
+      "steps": [
+       "Outcomes we want: 1, 2, 3.",
+       "All outcomes: 10 cards.",
+       "3/10"
+      ],
+      "answer": "3/10"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Cards numbered 1 to 10 are shuffled and one is picked.",
+       "columns": [
+        "Event",
+        "Cards that work",
+        "Probability"
+       ],
+       "rows": [
+        [
+         "an even number",
+         "",
+         ""
+        ],
+        [
+         "a multiple of 3",
+         "",
+         ""
+        ],
+        [
+         "more than 7",
+         "",
+         ""
+        ],
+        [
+         "a number from 1 to 10",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "an even number",
+         "2, 4, 6, 8, 10",
+         "5/10 = 1/2"
+        ],
+        [
+         "a multiple of 3",
+         "3, 6, 9",
+         "3/10"
+        ],
+        [
+         "more than 7",
+         "8, 9, 10",
+         "3/10"
+        ],
+        [
+         "a number from 1 to 10",
+         "all 10",
+         "10/10 = 1 (certain)"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Design a spinner",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Design a spinner where P(red) = 1/2.",
+      "steps": [
+       "Choose 4 equal parts.",
+       "Colour 2 of them red.",
+       "2/4 = 1/2."
+      ],
+      "answer": "2 of 4 parts red"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Design a spinner with 8 equal parts where P(blue) = 3/8, P(red) = 1/4 and the rest is green. Draw it and write P(green).",
+       "answer": "3 blue parts, 2 red parts (1/4 = 2/8), 3 green parts. P(green) = 3/8."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: spinners to count part by part, a fraction frame, and a hint on every question.",
+   "title": "Chance: Step by Step",
+   "subtitle": "Count the parts. Write ___ out of ___.",
+   "sections": [
+    {
+     "title": "Count the parts",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "P(red)?",
+      "visual": {
+       "type": "spinner",
+       "sectors": [
+        {
+         "label": "red"
+        },
+        {
+         "label": "blue"
+        },
+        {
+         "label": "green"
+        },
+        {
+         "label": "yellow"
+        }
+       ]
+      },
+      "steps": [
+       "Count all the parts: 4.",
+       "Count the red parts: 1.",
+       "1 out of 4 = 1/4."
+      ],
+      "answer": "1/4"
+     },
+     "items": [
+      {
+       "prompt": "P(blue) = ___ out of ___",
+       "visual": {
+        "type": "spinner",
+        "sectors": [
+         {
+          "label": "blue"
+         },
+         {
+          "label": "red"
+         },
+         {
+          "label": "blue"
+         }
+        ],
+        "maxH": 170
+       },
+       "hint": "Count every part first. Then count blue.",
+       "answer": "2 out of 3 = 2/3",
+       "working": "none"
+      },
+      {
+       "prompt": "P(green) = ___ out of ___",
+       "visual": {
+        "type": "spinner",
+        "sectors": [
+         {
+          "label": "green"
+         },
+         {
+          "label": "red"
+         },
+         {
+          "label": "blue"
+         },
+         {
+          "label": "yellow"
+         },
+         {
+          "label": "red"
+         }
+        ],
+        "maxH": 170
+       },
+       "hint": "There are 5 parts.",
+       "answer": "1 out of 5 = 1/5",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Dice and coins",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Toss a coin. P(heads)?",
+      "steps": [
+       "Outcomes: heads, tails. That is 2.",
+       "We want heads: 1.",
+       "1/2"
+      ],
+      "answer": "1/2"
+     },
+     "items": [
+      {
+       "prompt": "Roll a dice. P(3) = ___ out of ___",
+       "hint": "A dice has 6 faces.",
+       "answer": "1 out of 6 = 1/6",
+       "answerLabel": "P(3) ="
+      },
+      {
+       "prompt": "Roll a dice. P(1 or 2) = ___ out of ___",
+       "hint": "Two faces work: 1 and 2.",
+       "answer": "2 out of 6 = 1/3",
+       "answerLabel": "P ="
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 1 of our probability week: today we list outcomes and write chance as a fraction."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk, and a dice and a coin per pair if you have them. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Read the graph",
+   "from": "teacher",
+   "prompts": [
+    "How many more chose grapes than banana?"
+   ],
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Apple",
+     "Banana",
+     "Grapes"
+    ],
+    "values": [
+     8,
+     5,
+     11
+    ],
+    "title": "Favourite fruit",
+    "yLabel": "Students"
+   },
+   "reveal": {
+    "answers": [
+     "6 more"
+    ]
+   },
+   "notes": {
+    "answer": "6 more",
+    "beats": [
+     [
+      "SAY: Let's warm up with last week's statistics."
+     ],
+     [
+      "ASK: How many more students chose grapes than banana?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 6"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> lay a ruler across each column top and read the scale. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Grapes 11, banana 5, so 6 more chose grapes. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 11, the grapes value.",
+     "Fix: ask what 'how many more' means, and they subtract."
+    ],
+    "prep": "Review of Week 3 statistics (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Which display?",
+   "from": "teacher",
+   "prompts": [
+    "Which display suits 'rainfall each month'?"
+   ],
+   "reveal": {
+    "answers": [
+     "line graph"
+    ]
+   },
+   "notes": {
+    "answer": "line graph",
+    "beats": [
+     [
+      "ASK: Which display suits rainfall each month?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: a line graph"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> ask: categories, a few numbers, or change over time? Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: A line graph, because the rainfall changes over time. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "choosing a column graph.",
+     "Fix: ask whether the rainfall changes over time, and they choose again."
+    ],
+    "prep": "Week 3 review: choosing a display.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Read a point",
+   "from": "teacher",
+   "prompts": [
+    "What are the coordinates of K?"
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     7
+    ],
+    "y": [
+     0,
+     7
+    ],
+    "points": [
+     {
+      "x": 3,
+      "y": 6,
+      "label": "K"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "(3, 6)"
+    ]
+   },
+   "notes": {
+    "answer": "(3, 6)",
+    "beats": [
+     [
+      "ASK: What are the coordinates of K?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (3, 6)"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> slide across, then up, on the big grid. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 3, 6: across 3, then up 6. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (6, 3).",
+     "Fix: say the anchor, across first, and they rewrite it."
+    ],
+    "prep": "Week 2 review: reading coordinates.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "7 × 6"
+   ],
+   "reveal": {
+    "answers": [
+     "42"
+    ]
+   },
+   "notes": {
+    "answer": "42",
+    "beats": [
+     [
+      "SAY: Now for our seven times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 7 times 6?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 42"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 5 sevens is 35, then one more 7. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 42. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 36 or 48.",
+     "Fix: use 5 sevens is 35, plus one more 7, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "7 × 8"
+   ],
+   "reveal": {
+    "answers": [
+     "56"
+    ]
+   },
+   "notes": {
+    "answer": "56",
+    "beats": [
+     [
+      "SAY: Here's the next one."
+     ],
+     [
+      "ASK: What is 7 times 8?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 56"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 7 sevens is 49, then one more 7. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 56. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 54.",
+     "Fix: count on one more 7 from 7 times 7, 49, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "63 ÷ 7"
+   ],
+   "reveal": {
+    "answers": [
+     "9"
+    ]
+   },
+   "notes": {
+    "answer": "9",
+    "beats": [
+     [
+      "SAY: Now a division. How many sevens make 63?"
+     ],
+     [
+      "ASK: What is 63 divided by 7?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 9"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> count up in sevens from 56. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 9. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 8.",
+     "Fix: check: 8 sevens is 56, one more is 63, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to describe the chance of an outcome and write it as a fraction.",
+   "successCriteria": [
+    "I can list all the possible outcomes of a chance event.",
+    "I can write the probability of an outcome as a fraction.",
+    "I can explain whether the outcomes are equally likely."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: This week is all about chance.",
+      "Today we learn to say exactly how likely something is, as a fraction."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 listing outcomes is reachable for everyone; SC2 writing the probability is the core and the exit evidence; SC3 equally likely is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "How likely is it?",
+   "visual": {
+    "type": "chips",
+    "items": [
+     "impossible",
+     "unlikely",
+     "even chance",
+     "likely",
+     "certain"
+    ]
+   },
+   "prompt": "Roll a normal dice. Where does 'rolling a 7' go?",
+   "notes": {
+    "answer": "impossible",
+    "beats": [
+     [
+      "POINT to each word on the chance line.",
+      "SAY: Some of you may know these chance words, from impossible to certain."
+     ],
+     [
+      "ASK: If you roll a normal dice,",
+      "where on the line does 'rolling a 7' go?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: impossible"
+     ],
+     [
+      "SCAN boards for impossible.",
+      "80%+ -> ask: where does 'rolling a number from 1 to 6' go?",
+      "Less -> hold up a dice and count its faces together. Re-ask."
+     ],
+     [
+      "SAY: Rolling a 7 is impossible, because no face has a 7.",
+      "Today we go further than words: we'll say chance with a fraction."
+     ]
+    ],
+    "trap": [
+     "saying unlikely.",
+     "Fix: count the faces on a real dice, and they place it again."
+    ],
+    "prep": "The launch comes after the LI: chance words before chance numbers. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "outcome",
+   "meaning": "One possible result of a chance event.",
+   "example": "Rolling a dice has 6 outcomes: 1, 2, 3, 4, 5, 6.",
+   "pictogram": "dice",
+   "notes": {
+    "answer": "one possible result",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is outcome. Say it with me: out-come."
+     ],
+     [
+      "SAY: An outcome is one possible result.",
+      "When you roll a dice, there are six outcomes, one for each face."
+     ],
+     [
+      "ASK: How many outcomes are there when you toss a coin?",
+      "5 sec. Cue: Fingers at your chest... show me.",
+      "EXPECT: 2"
+     ]
+    ],
+    "trap": [
+     "saying 1 outcome for a coin.",
+     "Fix: name them together, heads and tails, and they count again."
+    ],
+    "prep": "Outcome is the word the anchor depends on.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "List outcomes, write the chance",
+   "steps": [
+    "List the outcomes: red, blue, green, yellow.",
+    "The 4 parts are equal, so each is equally likely.",
+    "Red is 1 part out of 4.",
+    "P(red) = 1/4."
+   ],
+   "visual": {
+    "type": "spinner",
+    "sectors": [
+     {
+      "label": "red"
+     },
+     {
+      "label": "blue"
+     },
+     {
+      "label": "green"
+     },
+     {
+      "label": "yellow"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "P(red or blue) = 2/4 = 1/2"
+    ]
+   },
+   "notes": {
+    "answer": "2/4 = 1/2",
+    "beats": [
+     [
+      "POINT to each part.",
+      "SAY: First I list the outcomes: red, blue, green and yellow.",
+      "The four parts are the same size, so each is equally likely."
+     ],
+     [
+      "MODEL writing P(red) = 1/4.",
+      "SAY: Red is one part out of four equal parts,",
+      "so the probability of red is one quarter. We write it as P of red."
+     ],
+     [
+      "ASK: What is the probability of landing on red or blue?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 2/4. ACCEPT: 1/2"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Two parts out of four, which is two quarters, or one half."
+     ]
+    ],
+    "trap": [
+     "writing 2/2.",
+     "Fix: count all the parts as the bottom number, and they rewrite it."
+    ],
+    "stretch": "What is P(not yellow)?",
+    "help": "Write: ___ parts we want out of ___ parts.",
+    "prep": "The anchor: the outcomes we want out of all the equally likely outcomes. SC1 and SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "When parts are not equal",
+   "steps": [
+    "Red covers half the spinner: 2 of 4 equal parts.",
+    "P(red) = 2/4 = 1/2.",
+    "Blue is 1 of 4 parts: P(blue) = 1/4.",
+    "Red and blue are not equally likely."
+   ],
+   "visual": {
+    "type": "spinner",
+    "sectors": [
+     {
+      "label": "red",
+      "weight": 2
+     },
+     {
+      "label": "blue"
+     },
+     {
+      "label": "green"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "P(green) = 1/4"
+    ]
+   },
+   "notes": {
+    "answer": "1/4",
+    "beats": [
+     [
+      "POINT to the spinner.",
+      "SAY: This spinner has three colours, but the parts are not the same size."
+     ],
+     [
+      "MODEL splitting red into two equal parts.",
+      "SAY: Red covers half, so I split it into two quarters.",
+      "Now there are 4 equal parts, and red has 2 of them."
+     ],
+     [
+      "ASK: So what is the probability of green?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 1/4"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's one quarter, not one third.",
+      "We count equal parts, not colours."
+     ]
+    ],
+    "trap": [
+     "writing 1/3 because there are 3 colours.",
+     "Fix: split the spinner into equal parts, and they count again."
+    ],
+    "stretch": "Change one colour so all three are equally likely.",
+    "help": "Draw lines to split the spinner into equal parts.",
+    "prep": "The critical feature: count equal parts, not colours. SC2 and SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which has a probability of 1/2?",
+   "prompt": "Point to A, B or C",
+   "options": [
+    {
+     "text": "rolling a 6 on a dice",
+     "misconception": "thinks any single outcome is 50/50: it happens or it doesn't"
+    },
+    {
+     "text": "tossing heads on a coin"
+    },
+    {
+     "text": "picking red from 1 red and 2 blue counters",
+     "misconception": "counts colours, not counters: 1 of 2 colours"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Think about all the equally likely outcomes for each one."
+     ],
+     [
+      "ASK: Which event has a probability of one half?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What is the chance for C?",
+      "Less -> list the outcomes for each on the board. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B: heads is 1 of 2 outcomes.",
+      "A is 1 out of 6,",
+      "and C is 1 out of 3, because there are 3 counters."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: count the faces of a dice together, and they choose again."
+    ],
+    "prep": "First decision point. A means 'it happens or not' thinking; C means colours were counted, not counters.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "What is the probability?",
+   "ask": "What is the probability? Write a fraction.",
+   "routine": "boards",
+   "thinkTime": 15,
+   "pivot": "count all the equal parts, then the ones we want",
+   "followUp": "cold call one board: What did you count for the bottom number?",
+   "items": [
+    {
+     "text": "Roll a dice. P(4)?",
+     "answer": "1/6"
+    },
+    {
+     "visual": {
+      "type": "spinner",
+      "sectors": [
+       {
+        "label": "red"
+       },
+       {
+        "label": "blue"
+       },
+       {
+        "label": "green"
+       },
+       {
+        "label": "yellow"
+       },
+       {
+        "label": "purple"
+       }
+      ]
+     },
+     "label": "P(purple)?",
+     "answer": "1/5"
+    },
+    {
+     "visual": {
+      "type": "spinner",
+      "sectors": [
+       {
+        "label": "red",
+        "weight": 3
+       },
+       {
+        "label": "blue"
+       }
+      ]
+     },
+     "label": "P(red)?",
+     "answer": "3/4"
+    },
+    {
+     "text": "A bag has 2 red, 3 blue and 5 green counters. P(blue)?",
+     "answer": "3/10"
+    },
+    {
+     "text": "Roll a dice. P(an even number)?",
+     "answer": "3/6 = 1/2",
+     "say": "Three faces are even, 2, 4 and 6, so 3/6 or 1/2."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write each probability as a fraction on your board."
+    ],
+    "trap": [
+     "putting the wrong number on the bottom.",
+     "Fix: ask how many outcomes there are altogether, and they rewrite it."
+    ],
+    "stretch": "Write each answer as a decimal too.",
+    "help": "Write 'we want' and 'altogether' before the fraction.",
+    "prep": "Guided practice: dice, equal and unequal spinners, counters, then two outcomes we want. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "What is P(red)?",
+   "visual": {
+    "type": "spinner",
+    "sectors": [
+     {
+      "label": "blue"
+     },
+     {
+      "label": "red",
+      "weight": 2
+     },
+     {
+      "label": "yellow"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "P(red) = 2/4 = 1/2"
+    ]
+   },
+   "notes": {
+    "answer": "1/2. 1/3 means colours were counted",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Look carefully at the size of each part."
+     ],
+     [
+      "ASK: What is the probability of red?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 2/4. ACCEPT: 1/2"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> draw the line that splits red into two quarters. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Red is half the spinner, 2 of 4 equal parts,",
+      "so P of red is a half. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 1/3.",
+     "Fix: split red into equal parts, and they count again."
+    ],
+    "prep": "The hinge before independent work. Anyone who wrote 1/3 starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "List outcomes and write probabilities on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: What did you count for the bottom number?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "counting colours instead of equal parts.",
+     "Fix: split the spinner into equal parts, and they redo it."
+    ],
+    "stretch": "Extension: two coins, number cards and designing a spinner.",
+    "help": "Supported Worksheet: spinners to count part by part and a fraction frame.",
+    "prep": "Independent practice: outcomes, probabilities, sport problems and a mistake. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "What is the probability of picking a yellow counter?"
+   ],
+   "visual": {
+    "type": "text",
+    "text": "A bag holds 4 red, 1 blue and 3 yellow counters."
+   },
+   "notes": {
+    "answer": "3/8",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What is the probability of picking a yellow counter?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 3/8"
+     ],
+     [
+      "RECORD who writes 1/3 or 3/5.",
+      "They start tomorrow's experiment with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing 1/3, from 3 colours.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: a new context with unequal numbers of each colour.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner how to work out a probability.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for the outcomes we want out of all the equally likely outcomes",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can write a probability as a fraction?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 1/3 on the board matters most."
+     ],
+     [
+      "ASK: How do you work out a probability?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: the outcomes we want out of all the equally likely outcomes"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow we run real experiments.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

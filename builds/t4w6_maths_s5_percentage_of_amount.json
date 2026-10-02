@@ -1,0 +1,1325 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 6,
+  "session": 5,
+  "title": "Percentage of an Amount",
+  "subtitle": "Term 4 Week 6, Session 5",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Fractions, Decimals and Percentages | Year 5/6 Maths | Session 5",
+  "outputFolder": "T4W6_Maths_S5_Percentage_Of_Amount",
+  "fileName": "Session 5 - Percentage of an Amount.pptx",
+  "titleVisual": {
+   "type": "barModel",
+   "parts": 10,
+   "shaded": 3,
+   "total": "$80",
+   "labels": [
+    "$8",
+    "$8",
+    "$8",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "below": [
+    "10%",
+    "10%",
+    "10%",
+    "10%",
+    "10%",
+    "10%",
+    "10%",
+    "10%",
+    "10%",
+    "10%"
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 5 (VC2M5N06, VC2M5N07): finding percentages of amounts with efficient mental and written multiplication and division, checking reasonableness",
+   "shape": "short-cycle loops: benchmark percentages (50%, 25%, 10%), then building from 10% and 1%, because each builds on the one before",
+   "criticalFeature": "find a benchmark you know (50%, 25%, 10%, 1%), then build the percentage from it",
+   "decisionPoints": [
+    "the choice check: 10% of 350",
+    "the hinge: 35% of 80",
+    "the exit ticket"
+   ],
+   "anchor": "one amount, three names: fraction, decimal, percentage; make it out of 100 to switch",
+   "catchUp": "Missed earlier sessions? Show 25% = 1/4 and 10% = 1/10 on a hundred grid before the launch."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: one amount, three names: fraction, decimal, percentage; make it out of 100 to switch",
+   "Benchmarks: 50% = halve, 25% = halve again, 10% = divide by 10, 1% = divide by 100"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Benchmark percentages, a percentage table, building from 10%, a mistake, and sport and shopping problems.",
+   "title": "Percentage of an Amount",
+   "subtitle": "Find a benchmark, then build.",
+   "sections": [
+    {
+     "title": "Use a benchmark",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "Find 25% of 84.",
+      "steps": [
+       "25% is one quarter.",
+       "Halve 84: 42. Halve again: 21.",
+       "25% of 84 = 21."
+      ],
+      "answer": "21"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Find each percentage of the amount.",
+       "columns": [
+        "Percentage",
+        "Amount",
+        "Answer"
+       ],
+       "rows": [
+        [
+         "50%",
+         "86",
+         ""
+        ],
+        [
+         "25%",
+         "120",
+         ""
+        ],
+        [
+         "10%",
+         "470",
+         ""
+        ],
+        [
+         "1%",
+         "300",
+         ""
+        ],
+        [
+         "20%",
+         "65",
+         ""
+        ],
+        [
+         "75%",
+         "48",
+         ""
+        ],
+        [
+         "5%",
+         "260",
+         ""
+        ],
+        [
+         "30%",
+         "90",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "50%",
+         "86",
+         "43"
+        ],
+        [
+         "25%",
+         "120",
+         "30"
+        ],
+        [
+         "10%",
+         "470",
+         "47"
+        ],
+        [
+         "1%",
+         "300",
+         "3"
+        ],
+        [
+         "20%",
+         "65",
+         "13"
+        ],
+        [
+         "75%",
+         "48",
+         "36"
+        ],
+        [
+         "5%",
+         "260",
+         "13"
+        ],
+        [
+         "30%",
+         "90",
+         "27"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Build from 10%",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Find 35% of 60.",
+      "visual": {
+       "type": "barModel",
+       "parts": 10,
+       "shaded": 3,
+       "total": "60",
+       "labels": [
+        "6",
+        "6",
+        "6",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "below": [
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%"
+       ],
+       "maxH": 70
+      },
+      "steps": [
+       "10% of 60 = 6.",
+       "30% = 3 × 6 = 18. 5% = half of 6 = 3.",
+       "35% = 18 + 3 = 21."
+      ],
+      "answer": "21"
+     },
+     "items": [
+      {
+       "prompt": "Find 45% of 80. Show the 10% step.",
+       "answer": "10% = 8; 40% = 32; 5% = 4; 45% = 36",
+       "answerLabel": "45% of 80 ="
+      },
+      {
+       "prompt": "Find 15% of 240. Show the 10% step.",
+       "answer": "10% = 24; 5% = 12; 15% = 36",
+       "answerLabel": "15% of 240 ="
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Liv found 20% of 35. Find her mistake and fix it.",
+       "work": [
+        "20% of 35 = 35 - 20 = 15"
+       ],
+       "answer": "She subtracted 20. 10% of 35 = 3.5, so 20% = 7."
+      }
+     ]
+    },
+    {
+     "title": "Sport and shopping",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "A $60 footy jumper is 25% off. How much do you save?",
+      "steps": [
+       "25% is one quarter.",
+       "60 divided by 4 = 15.",
+       "Save $15."
+      ],
+      "answer": "$15"
+     },
+     "items": [
+      {
+       "prompt": "A stadium holds 48 000 people. It is 75% full. How many people are there?",
+       "answer": "36 000",
+       "answerLabel": "People:"
+      },
+      {
+       "prompt": "A $120 pair of runners is 30% off. What is the sale price?",
+       "answer": "Save $36, so pay $84",
+       "answerLabel": "Sale price:"
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which is more?",
+       "options": [
+        "10% of 900",
+        "90% of 100",
+        "they are equal"
+       ],
+       "answer": 2,
+       "reason": true,
+       "explain": "10% of 900 = 90 and 90% of 100 = 90. They are equal."
+      },
+      {
+       "kind": "open",
+       "prompt": "Make up a sale-price problem with an answer of $30 saved. Show it works.",
+       "answer": "For example: a $120 item with 25% off saves $30, or a $300 item with 10% off."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Working back to the whole, comparing two discounts, and a percentage increase, with worked examples.",
+   "title": "Extension: Percentage Challenges",
+   "subtitle": "Work backwards. Compare deals.",
+   "sections": [
+    {
+     "title": "Work backwards",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "10% of a number is 7. What is the number?",
+      "steps": [
+       "10% is one tenth.",
+       "The whole is 10 times bigger.",
+       "7 × 10 = 70."
+      ],
+      "answer": "70"
+     },
+     "items": [
+      {
+       "prompt": "25% of a number is 18. What is the number?",
+       "answer": "72",
+       "answerLabel": "Number:"
+      },
+      {
+       "prompt": "30% of a crowd is 600 people. How big is the whole crowd?",
+       "answer": "10% = 200, so 2000",
+       "answerLabel": "Crowd:"
+      },
+      {
+       "prompt": "5% of a prize is $40. What is the whole prize?",
+       "answer": "$800",
+       "answerLabel": "Prize:"
+      }
+     ]
+    },
+    {
+     "title": "Compare the deals",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "$50 shoes: 20% off, or $8 off. Which is better?",
+      "steps": [
+       "20% of $50 = $10.",
+       "$10 beats $8.",
+       "20% off is better."
+      ],
+      "answer": "20% off"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "For each item, which deal saves more?",
+       "columns": [
+        "Price",
+        "Deal A",
+        "Deal B",
+        "Better deal"
+       ],
+       "rows": [
+        [
+         "$80",
+         "25% off",
+         "$15 off",
+         ""
+        ],
+        [
+         "$45",
+         "10% off",
+         "$5 off",
+         ""
+        ],
+        [
+         "$200",
+         "15% off",
+         "$25 off",
+         ""
+        ],
+        [
+         "$36",
+         "50% off",
+         "$20 off",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "$80",
+         "25% off",
+         "$15 off",
+         "A ($20)"
+        ],
+        [
+         "$45",
+         "10% off",
+         "$5 off",
+         "B ($5 vs $4.50)"
+        ],
+        [
+         "$200",
+         "15% off",
+         "$25 off",
+         "A ($30)"
+        ],
+        [
+         "$36",
+         "50% off",
+         "$20 off",
+         "B ($20 vs $18)"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Going up",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "A $40 ticket goes up by 10%. New price?",
+      "steps": [
+       "10% of $40 = $4.",
+       "$40 + $4 = $44."
+      ],
+      "answer": "$44"
+     },
+     "items": [
+      {
+       "prompt": "A club had 250 members. Membership grew by 20%. How many members now?",
+       "answer": "50 more: 300 members",
+       "answerLabel": "Members:"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: benchmarks only, a step frame and a hint on every question.",
+   "title": "Percentages of Amounts: Step by Step",
+   "subtitle": "Halve for 50%. Halve again for 25%. Divide by 10 for 10%.",
+   "sections": [
+    {
+     "title": "50% and 25%",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "50% of 30.",
+      "steps": [
+       "50% is a half.",
+       "Half of 30 = 15."
+      ],
+      "answer": "15"
+     },
+     "items": [
+      {
+       "prompt": "50% of 48 = half of 48 = ___",
+       "hint": "Halve 40, halve 8, add.",
+       "answer": "24",
+       "answerLabel": "Answer:"
+      },
+      {
+       "prompt": "25% of 40 = half of half of 40 = ___",
+       "hint": "Halve 40, then halve again.",
+       "answer": "10",
+       "answerLabel": "Answer:"
+      }
+     ]
+    },
+    {
+     "title": "10%",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "10% of 70.",
+      "visual": {
+       "type": "barModel",
+       "parts": 10,
+       "shaded": 1,
+       "total": "70",
+       "labels": [
+        "7",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+       ],
+       "below": [
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%",
+        "10%"
+       ]
+      },
+      "steps": [
+       "10% is one tenth.",
+       "70 divided by 10 = 7."
+      ],
+      "answer": "7"
+     },
+     "items": [
+      {
+       "prompt": "10% of 90 = 90 divided by 10 = ___",
+       "hint": "Take away a zero.",
+       "answer": "9",
+       "answerLabel": "Answer:"
+      },
+      {
+       "prompt": "10% of 250 = ___",
+       "hint": "250 divided by 10.",
+       "answer": "25",
+       "answerLabel": "Answer:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 5 of our fractions, decimals and percentages week: today we find a percentage of an amount."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk, and write the benchmarks on the board. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Translate a point",
+   "from": "teacher",
+   "prompts": [
+    "(-1, 3) moves 4 right and 5 down. Where does it land?"
+   ],
+   "reveal": {
+    "answers": [
+     "(3, -2)"
+    ]
+   },
+   "notes": {
+    "answer": "(3, -2)",
+    "beats": [
+     [
+      "SAY: Let's warm up with coordinates and area."
+     ],
+     [
+      "ASK: Where does negative 1, 3 land after 4 right and 5 down?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (3, -2)"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> one move at a time on the four-quadrant grid. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Negative 1 add 4 is 3,",
+      "and 3 take away 5 is negative 2. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (-5, 8).",
+     "Fix: ask which way right and down go, and they redo it."
+    ],
+    "prep": "Review of Week 2 coordinates (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Which quadrant?",
+   "from": "teacher",
+   "prompts": [
+    "Which quadrant is (-2, -5) in?"
+   ],
+   "reveal": {
+    "answers": [
+     "third quadrant"
+    ]
+   },
+   "notes": {
+    "answer": "third quadrant",
+    "beats": [
+     [
+      "ASK: Which quadrant is negative 2, negative 5 in?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: the third"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> say left or right, then up or down. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Left and down: the third quadrant. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "saying the fourth.",
+     "Fix: ask whether negative 2 is left or right, and they rename it."
+    ],
+    "prep": "Week 2 review: the four quadrants.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Perimeter and area",
+   "from": "teacher",
+   "prompts": [
+    "A rectangle is 15 m by 6 m. Find its perimeter and its area."
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      15,
+      0
+     ],
+     [
+      15,
+      6
+     ],
+     [
+      0,
+      6
+     ]
+    ],
+    "labels": [
+     "15 m",
+     "6 m",
+     null,
+     null
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "P = 42 m",
+     "A = 90 m²"
+    ]
+   },
+   "notes": {
+    "answer": "P = 42 m and A = 90 m²",
+    "beats": [
+     [
+      "ASK: What are the perimeter and the area",
+      "of a 15 metre by 6 metre rectangle?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 42 m and 90 m²"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> trace the edge for perimeter, shade the inside for area. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Perimeter: 15 and 6 is 21, doubled is 42 metres.",
+      "Area: 15 times 6 is 90 square metres. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "swapping perimeter and area.",
+     "Fix: say perimeter goes around, area covers, and they check."
+    ],
+    "prep": "Week 5 review: perimeter and area.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "8 × 5"
+   ],
+   "reveal": {
+    "answers": [
+     "40"
+    ]
+   },
+   "notes": {
+    "answer": "40",
+    "beats": [
+     [
+      "SAY: Now for our eight times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 8 times 5?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 40"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 8 tens is 80, halve it. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 40. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 35 or 45.",
+     "Fix: half of 8 tens is 40, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "8 × 25"
+   ],
+   "reveal": {
+    "answers": [
+     "200"
+    ]
+   },
+   "notes": {
+    "answer": "200",
+    "beats": [
+     [
+      "SAY: Here's a bigger one."
+     ],
+     [
+      "ASK: What is 8 times 25?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 200"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 4 twenty-fives is 100, double it. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 200. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 180.",
+     "Fix: 4 twenty-fives is 100, so 8 is 200, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "88 ÷ 8"
+   ],
+   "reveal": {
+    "answers": [
+     "11"
+    ]
+   },
+   "notes": {
+    "answer": "11",
+    "beats": [
+     [
+      "SAY: Now a division. How many eights make 88?"
+     ],
+     [
+      "ASK: What is 88 divided by 8?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 11"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> 10 eights is 80, then one more 8. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 11. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 10 or 12.",
+     "Fix: 10 eights is 80, one more is 88, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to find a percentage of an amount using benchmarks and multiplication.",
+   "successCriteria": [
+    "I can find 50%, 25% and 10% of an amount.",
+    "I can build any percentage from 10% and 5% or 1%.",
+    "I can check my answer makes sense and explain how."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: This week we learned three names for one amount.",
+      "Today we use percentages to find part of an amount."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 benchmarks are reachable for everyone; SC2 building from 10% is the core and the exit evidence; SC3 checking reasonableness is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Half price!",
+   "visual": {
+    "type": "pictograms",
+    "items": [
+     {
+      "name": "shop",
+      "label": "50% off"
+     },
+     {
+      "name": "money",
+      "label": "$64"
+     }
+    ]
+   },
+   "prompt": "A $64 game is 50% off. How much do you save?",
+   "notes": {
+    "answer": "$32",
+    "beats": [
+     [
+      "POINT to the price.",
+      "SAY: Some of you may have seen a 50 percent off sale.",
+      "Here's a game for 64 dollars."
+     ],
+     [
+      "ASK: If the game is 50 percent off, how much do you save?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $32"
+     ],
+     [
+      "SCAN boards for 32.",
+      "80%+ -> cold call one student: How did you work it out so fast?",
+      "Less -> say 50 percent is a half, and halve 64 together. Re-ask."
+     ],
+     [
+      "SAY: 50 percent is a half, so you save 32 dollars.",
+      "Today we find other percentages using benchmarks like that."
+     ]
+    ],
+    "trap": [
+     "writing $14, by subtracting 50.",
+     "Fix: say 50 percent is a half, and they halve."
+    ],
+    "prep": "The launch comes after the LI: 50% as a half. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "benchmark",
+   "meaning": "An easy, known amount you use to work out harder ones.",
+   "example": "10% is a benchmark: divide by 10.",
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Percentage",
+      "Benchmark"
+     ],
+     [
+      "50%",
+      "halve"
+     ],
+     [
+      "25%",
+      "halve, then halve again"
+     ],
+     [
+      "10%",
+      "divide by 10"
+     ],
+     [
+      "1%",
+      "divide by 100"
+     ]
+    ]
+   },
+   "notes": {
+    "answer": "7",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is benchmark. Say it with me: bench-mark."
+     ],
+     [
+      "SAY: A benchmark is an easy amount we know,",
+      "that helps us work out harder ones.",
+      "Fifty, twenty-five, ten and one percent are our benchmarks."
+     ],
+     [
+      "ASK: What is 10 percent of 70?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 7"
+     ]
+    ],
+    "trap": [
+     "writing 60.",
+     "Fix: say 10 percent is a tenth, and they divide."
+    ],
+    "prep": "Benchmarks are the anchor for today.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Benchmarks",
+   "steps": [
+    "50% of 120: halve it = 60.",
+    "25% of 120: halve again = 30.",
+    "10% of 120: divide by 10 = 12.",
+    "1% of 120: divide by 100 = 1.2."
+   ],
+   "visual": {
+    "type": "barModel",
+    "parts": 4,
+    "shaded": 1,
+    "total": "120",
+    "labels": [
+     "30",
+     "30",
+     "30",
+     "30"
+    ],
+    "below": [
+     "25%",
+     "25%",
+     "25%",
+     "25%"
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "50% of 360 = 180",
+     "25% = 90",
+     "10% = 36"
+    ]
+   },
+   "notes": {
+    "answer": "180, 90, 36",
+    "beats": [
+     [
+      "POINT to the bar.",
+      "SAY: Here's 120 split into four quarters. Each quarter is 25 percent, and that's 30."
+     ],
+     [
+      "MODEL each benchmark.",
+      "SAY: 50 percent, I halve: 60. 25 percent, I halve again: 30.",
+      "10 percent, I divide by 10: 12."
+     ],
+     [
+      "ASK: For 360, what are 50 percent, 25 percent and 10 percent?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 180, 90, 36"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Halve 360: 180. Halve again: 90. Divide by 10: 36."
+     ]
+    ],
+    "trap": [
+     "finding 25% by dividing by 25.",
+     "Fix: say 25 percent is a quarter, and they halve twice."
+    ],
+    "stretch": "Find 1% of 360, then 99%.",
+    "help": "Draw the bar and split it into quarters or tenths.",
+    "prep": "The benchmarks everything else builds from. SC1.",
+    "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Build from 10%",
+   "steps": [
+    "Find 10% of 80: 8.",
+    "30% is 3 lots of 10%: 3 × 8 = 24.",
+    "5% is half of 10%: 4.",
+    "35% = 24 + 4 = 28."
+   ],
+   "visual": {
+    "type": "barModel",
+    "parts": 10,
+    "shaded": 3,
+    "total": "80",
+    "labels": [
+     "8",
+     "8",
+     "8",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "below": [
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%",
+     "10%"
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "15% of 60 = 6 + 3 = 9"
+    ]
+   },
+   "notes": {
+    "answer": "9",
+    "beats": [
+     [
+      "MODEL finding 10% of 80.",
+      "SAY: To find 35 percent of 80, I start with my benchmark.",
+      "10 percent of 80 is 8."
+     ],
+     [
+      "MODEL building 35%.",
+      "SAY: 30 percent is three lots of 8, which is 24.",
+      "5 percent is half of 10 percent: 4. So 35 percent is 28."
+     ],
+     [
+      "ASK: Use the same steps. What is 15 percent of 60?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 9"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 10 percent is 6, and 5 percent is 3, so 15 percent is 9."
+     ]
+    ],
+    "trap": [
+     "finding 15% by subtracting 15.",
+     "Fix: say find 10 percent first, and they build it."
+    ],
+    "stretch": "Find 35% of 80 a different way.",
+    "help": "Write the 10% step first, every time.",
+    "prep": "Build any percentage from 10% and 5%: the critical feature. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "What is 10% of 350?",
+   "prompt": "Point to A, B or C",
+   "options": [
+    {
+     "text": "35"
+    },
+    {
+     "text": "340",
+     "misconception": "subtracts 10 instead of finding a tenth"
+    },
+    {
+     "text": "3.5",
+     "misconception": "divides by 100: finds 1%, not 10%"
+    }
+   ],
+   "answer": 0,
+   "notes": {
+    "answer": "A",
+    "beats": [
+     [
+      "SAY: Think about which benchmark this is."
+     ],
+     [
+      "ASK: What is 10 percent of 350?",
+      "10 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to A"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What percentage is C?",
+      "Less -> say 10 percent is one tenth, and divide by 10. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's A, 35: one tenth of 350.",
+      "B took away 10, and C is 1 percent."
+     ]
+    ],
+    "trap": [
+     "pointing to B.",
+     "Fix: say 10 percent means one tenth, and they choose again."
+    ],
+    "prep": "First decision point. B: subtracting; C: 1% for 10%.",
+    "tag": "[CFU | Supported application | SC1 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Percentage of an amount",
+   "ask": "Find the percentage of the amount.",
+   "routine": "boards",
+   "thinkTime": 25,
+   "pivot": "find 10% first, then build",
+   "followUp": "cold call one board: Which benchmark did you start from?",
+   "items": [
+    {
+     "text": "25% of 64",
+     "answer": "16"
+    },
+    {
+     "text": "20% of 45",
+     "answer": "9"
+    },
+    {
+     "text": "75% of 120",
+     "answer": "90"
+    },
+    {
+     "text": "1% of 500",
+     "answer": "5"
+    },
+    {
+     "text": "45% of 200",
+     "answer": "90",
+     "say": "10 percent is 20, so 40 percent is 80, plus 5 percent, 10."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write each answer on your board."
+    ],
+    "trap": [
+     "subtracting the percentage from the amount.",
+     "Fix: say find 10 percent first, and they build it."
+    ],
+    "stretch": "Find 99% of each amount.",
+    "help": "Draw a bar and split it into tenths.",
+    "prep": "Guided practice: each benchmark, then a built percentage. SC1 and SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "What is 35% of 60?",
+   "visual": {
+    "type": "text",
+    "text": "35% of 60"
+   },
+   "reveal": {
+    "answers": [
+     "10% = 6; 30% = 18; 5% = 3; 35% = 21"
+    ]
+   },
+   "notes": {
+    "answer": "21",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Start from your benchmark."
+     ],
+     [
+      "ASK: What is 35 percent of 60?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 21"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> find 10 percent together, 6, then build 30 and 5. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 10 percent is 6, 30 percent is 18,",
+      "and 5 percent is 3: 21. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 25, by subtracting.",
+     "Fix: say find 10 percent first, and they build it."
+    ],
+    "prep": "The hinge before independent work. Anyone writing 25 or 95 starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Find percentages of amounts on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Which benchmark did you start from?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "subtracting the percentage.",
+     "Fix: say find 10 percent first, and they redo it."
+    ],
+    "stretch": "Extension: working backwards, comparing deals and a percentage increase.",
+    "help": "Supported Worksheet: benchmarks only, a step frame and hints.",
+    "prep": "Independent practice: benchmarks, building from 10%, a mistake, and sport and shopping. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Find 45% of 120."
+   ],
+   "visual": {
+    "type": "text",
+    "text": "45% of 120"
+   },
+   "notes": {
+    "answer": "54",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What is 45 percent of 120?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 54"
+     ],
+     [
+      "RECORD who subtracts or slips building from 10%.",
+      "Their names go to next week's catch-up group."
+     ]
+    ],
+    "trap": [
+     "writing 75.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2 across the week: a built percentage of a new amount.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner how to find any percentage of an amount.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for find 10 percent first, then build",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can find a percentage of an amount?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 75 on the board matters most."
+     ],
+     [
+      "ASK: How can you find any percentage of an amount?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: find 10 percent first, then build"
+     ]
+    ],
+    "prep": "Week close: read the self-assessment beside the exit evidence for next week's review.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

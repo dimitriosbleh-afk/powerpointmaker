@@ -1,0 +1,1211 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 8,
+  "session": 5,
+  "title": "Comparing Holiday Budgets",
+  "subtitle": "Term 4 Week 8, Session 5",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Budgeting | Year 5/6 Maths | Session 5",
+  "outputFolder": "T4W8_Maths_S5_Holiday_Budget",
+  "fileName": "Session 5 - Comparing Holiday Budgets.pptx",
+  "titleVisual": {
+   "type": "pictograms",
+   "items": [
+    "sun",
+    "snowflake"
+   ],
+   "labels": false
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 6 (VC2M6N09): modelling a family holiday budget, comparing options and justifying the choice in the situation",
+   "shape": "consolidation: the term's money skills in one comparison task, with a model of justifying a choice with more than the cost",
+   "criticalFeature": "compare totals for the same people and the same number of nights, then justify with more than just the cost",
+   "decisionPoints": [
+    "the choice check: total for the beach trip",
+    "the hinge: how much more is the snow trip?",
+    "the exit ticket"
+   ],
+   "anchor": "read it, model it, solve it, check it: say what the answer means in the situation",
+   "catchUp": "Missed earlier sessions? Show one budget total and compare it with the money available before the launch."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Calculators for checking (optional)",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The fortnight's anchor on the board: read it, model it, solve it, check it",
+   "The two holiday cost tables, side by side"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Cost a beach trip and a snow trip for a family of 4, compare them, fix a mistake and justify a choice.",
+   "title": "Comparing Holiday Budgets",
+   "subtitle": "Same people, same nights: compare the totals, then justify.",
+   "sections": [
+    {
+     "title": "Cost the beach trip",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "A cabin is $140 a night for 3 nights. Cost?",
+      "steps": [
+       "$140 × 3.",
+       "$420."
+      ],
+      "answer": "$420"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "The Lees (2 adults, 2 children) plan 3 nights at the beach. Fill in the costs.",
+       "columns": [
+        "Cost",
+        "Working",
+        "Total"
+       ],
+       "rows": [
+        [
+         "Cabin: $140 a night",
+         "",
+         ""
+        ],
+        [
+         "Fuel",
+         "",
+         "$95"
+        ],
+        [
+         "Food: $60 a day",
+         "",
+         ""
+        ],
+        [
+         "Surf class: $45 each child",
+         "",
+         ""
+        ],
+        [
+         "Total",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "Cabin: $140 a night",
+         "3 × $140",
+         "$420"
+        ],
+        [
+         "Fuel",
+         "",
+         "$95"
+        ],
+        [
+         "Food: $60 a day",
+         "3 × $60",
+         "$180"
+        ],
+        [
+         "Surf class: $45 each child",
+         "2 × $45",
+         "$90"
+        ],
+        [
+         "Total",
+         "",
+         "$785"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Compare",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Beach $785, snow $1 035. Difference?",
+      "steps": [
+       "$1 035 - $785.",
+       "$250."
+      ],
+      "answer": "$250 more for snow"
+     },
+     "items": [
+      {
+       "span": "full",
+       "prompt": "Use the snow trip costs: lodge $185 a night, fuel $130, food $70 a day, ski hire $35 each for 4 people, 3 nights.",
+       "parts": [
+        {
+         "prompt": "Total snow trip?",
+         "answer": "$1 035"
+        },
+        {
+         "prompt": "How much more than the beach?",
+         "answer": "$250"
+        },
+        {
+         "prompt": "Cost per person (snow)?",
+         "answer": "$258.75"
+        }
+       ]
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Max says the snow trip is cheaper because the fuel is the only big cost. Find his mistake.",
+       "work": [
+        "Fuel: beach $95, snow $130.",
+        "So the snow trip is only $35 more."
+       ],
+       "answer": "He compared one cost, not the totals. Totals: beach $785, snow $1 035, so snow is $250 more."
+      },
+      {
+       "kind": "choice",
+       "prompt": "The family has $900. Which trip can they afford?",
+       "options": [
+        "beach only",
+        "snow only",
+        "both",
+        "neither"
+       ],
+       "answer": 0,
+       "reason": true,
+       "explain": "Beach $785 is under $900. Snow $1 035 is over $900."
+      }
+     ]
+    },
+    {
+     "title": "Choose and justify",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Justify a choice with more than cost.",
+      "steps": [
+       "Say the costs: beach $785, snow $1 035.",
+       "Say a money reason: $115 left over at the beach.",
+       "Say a family reason: the kids love surfing."
+      ],
+      "answer": "a two-reason justification"
+     },
+     "items": [
+      {
+       "prompt": "The snow lodge has a 15% off deal. Does that make the snow trip affordable with $900? Show your working.",
+       "answer": "15% of $555 = $83.25; new total $951.75, still over $900",
+       "lines": 3
+      },
+      {
+       "kind": "open",
+       "prompt": "Which holiday would you choose for the Lee family? Write two sentences: one with a money reason, one with another reason.",
+       "answer": "Look for: correct totals or difference used as evidence, and a second, non-money reason."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. More nights, a savings plan for the trip, and designing your own holiday budget, with worked examples.",
+   "title": "Extension: Holiday Planner",
+   "subtitle": "Change the plan. Add the extras.",
+   "sections": [
+    {
+     "title": "More nights",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Beach for 5 nights instead of 3. What changes?",
+      "steps": [
+       "Cabin and food go up: 5 nights.",
+       "Fuel and surf classes stay the same.",
+       "Recalculate only what changes."
+      ],
+      "answer": "cabin and food"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Cost the beach trip for 5 nights.",
+       "columns": [
+        "Cost",
+        "5 nights"
+       ],
+       "rows": [
+        [
+         "Cabin ($140 a night)",
+         ""
+        ],
+        [
+         "Fuel",
+         ""
+        ],
+        [
+         "Food ($60 a day)",
+         ""
+        ],
+        [
+         "Surf classes (2 children)",
+         ""
+        ],
+        [
+         "Total",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "Cabin ($140 a night)",
+         "$700"
+        ],
+        [
+         "Fuel",
+         "$95"
+        ],
+        [
+         "Food ($60 a day)",
+         "$300"
+        ],
+        [
+         "Surf classes (2 children)",
+         "$90"
+        ],
+        [
+         "Total",
+         "$1 185"
+        ]
+       ]
+      },
+      {
+       "prompt": "How much more does the 5-night beach trip cost than the 3-night trip?",
+       "answer": "$1 185 - $785 = $400",
+       "answerLabel": "More:"
+      },
+      {
+       "prompt": "Is the 5-night beach trip cheaper per night than the 3-night trip? Show your working.",
+       "answer": "3 nights: $785 / 3 = $261.67 a night. 5 nights: $1 185 / 5 = $237 a night. Yes, cheaper per night.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Save for it",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Save $785 at $60 a week. Weeks?",
+      "steps": [
+       "785 divided by 60 = 13.08...",
+       "Round up: 14 weeks."
+      ],
+      "answer": "14 weeks"
+     },
+     "items": [
+      {
+       "prompt": "The family saves $85 a fortnight for the snow trip ($1 035). How many fortnights?",
+       "answer": "1035 divided by 85 = 12.2..., so 13 fortnights",
+       "answerLabel": "Fortnights:"
+      },
+      {
+       "prompt": "They already have $400 saved. How many fortnights now?",
+       "answer": "$635 needed; 635 divided by 85 = 7.5, so 8 fortnights",
+       "answerLabel": "Fortnights:"
+      }
+     ]
+    },
+    {
+     "title": "Your own holiday",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Plan a holiday budget.",
+      "steps": [
+       "List accommodation, travel, food and activities.",
+       "Find each cost and the total.",
+       "Compare with a budget."
+      ],
+      "answer": "a full budget"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Plan a 4-night holiday for your family with a $1 200 budget. List every cost, find the total, and say whether it fits. If not, what would you change?",
+       "answer": "Check: costs for every category, correct multiplication for nights and people, a total compared with $1 200, and a sensible change if over."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: friendly numbers, one cost at a time, and a hint on every question.",
+   "title": "Holiday Costs: Step by Step",
+   "subtitle": "Nights times cost a night. Then add.",
+   "sections": [
+    {
+     "title": "One cost at a time",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "A cabin is $100 a night for 3 nights.",
+      "steps": [
+       "$100 × 3.",
+       "$300."
+      ],
+      "answer": "$300"
+     },
+     "items": [
+      {
+       "prompt": "A tent site is $40 a night for 3 nights. Cost?",
+       "hint": "3 lots of 40.",
+       "answer": "$120",
+       "answerLabel": "Cost:"
+      },
+      {
+       "prompt": "Food is $50 a day for 3 days. Cost?",
+       "hint": "3 lots of 50.",
+       "answer": "$150",
+       "answerLabel": "Cost:"
+      }
+     ]
+    },
+    {
+     "title": "Add and compare",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Trip A $300, trip B $350. Cheaper?",
+      "steps": [
+       "300 is less than 350.",
+       "Trip A is cheaper by $50."
+      ],
+      "answer": "A, by $50"
+     },
+     "items": [
+      {
+       "prompt": "Trip A: $120 + $150 + $60. Total = ___",
+       "hint": "Add two at a time.",
+       "answer": "$330",
+       "answerLabel": "Total:"
+      },
+      {
+       "prompt": "Trip B costs $400. Which trip is cheaper, and by how much?",
+       "hint": "Compare $330 and $400.",
+       "answer": "A, by $70",
+       "answerLabel": "Answer:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 5, the last of our budgeting week: today we compare two holiday budgets and choose."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk, and the two holiday tables on the board. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Spinner chance",
+   "from": "teacher",
+   "prompts": [
+    "What is P(blue)?"
+   ],
+   "visual": {
+    "type": "spinner",
+    "sectors": [
+     {
+      "label": "blue"
+     },
+     {
+      "label": "red"
+     },
+     {
+      "label": "blue"
+     },
+     {
+      "label": "green"
+     },
+     {
+      "label": "red"
+     },
+     {
+      "label": "blue"
+     },
+     {
+      "label": "yellow"
+     },
+     {
+      "label": "red"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "3/8"
+    ]
+   },
+   "notes": {
+    "answer": "3/8",
+    "beats": [
+     [
+      "SAY: Let's warm up with probability, one last time this term."
+     ],
+     [
+      "ASK: What is the probability of blue?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 3/8"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> count all the equal parts, then the blue parts. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Blue is 3 of 8 equal parts: 3/8. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 3/5 or 1/3.",
+     "Fix: count every part for the bottom number, and they rewrite it."
+    ],
+    "prep": "Review of Week 4 probability (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Relative frequency",
+   "from": "teacher",
+   "prompts": [
+    "Heads came up 27 times in 50 tosses. As a percentage?"
+   ],
+   "reveal": {
+    "answers": [
+     "27/50 = 54%"
+    ]
+   },
+   "notes": {
+    "answer": "27/50 = 54%",
+    "beats": [
+     [
+      "ASK: What is 27 heads in 50 tosses, as a percentage?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 54%"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> double top and bottom to make it out of 100. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 27 out of 50 is 54 out of 100,",
+      "so 54 percent. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 27%.",
+     "Fix: ask what the total is, and they make it out of 100."
+    ],
+    "prep": "Week 4 review: relative frequency.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Expected results",
+   "from": "teacher",
+   "prompts": [
+    "Roll a dice 90 times. Expected number of 5s?"
+   ],
+   "reveal": {
+    "answers": [
+     "15"
+    ]
+   },
+   "notes": {
+    "answer": "15",
+    "beats": [
+     [
+      "ASK: How many fives would you expect in 90 rolls?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 15"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> say one sixth, then share 90 into 6 groups. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: One sixth of 90 is 15. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 540.",
+     "Fix: say one sixth of 90, and they divide."
+    ],
+    "prep": "Week 4 review: expected results.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "9 × 5"
+   ],
+   "reveal": {
+    "answers": [
+     "45"
+    ]
+   },
+   "notes": {
+    "answer": "45",
+    "beats": [
+     [
+      "SAY: Now for our nine times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 9 times 5?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 45"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 10 fives is 50, take one 5 away. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 45. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 40 or 54.",
+     "Fix: 10 fives is 50, take away 5, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "9 × 25"
+   ],
+   "reveal": {
+    "answers": [
+     "225"
+    ]
+   },
+   "notes": {
+    "answer": "225",
+    "beats": [
+     [
+      "SAY: Here's a bigger one."
+     ],
+     [
+      "ASK: What is 9 times 25?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 225"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 10 twenty-fives is 250, take one 25 away. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 225. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 200 or 250.",
+     "Fix: 10 twenty-fives is 250, take away 25, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "72 ÷ 9"
+   ],
+   "reveal": {
+    "answers": [
+     "8"
+    ]
+   },
+   "notes": {
+    "answer": "8",
+    "beats": [
+     [
+      "SAY: Now a division. How many nines make 72?"
+     ],
+     [
+      "ASK: What is 72 divided by 9?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 8"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> count up in nines to 72. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 8. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 7 or 9.",
+     "Fix: check: 8 nines is 72, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to compare budgets and justify a choice.",
+   "successCriteria": [
+    "I can work out the total cost of a holiday plan.",
+    "I can compare two budgets and find the difference.",
+    "I can justify a choice with a money reason and another reason."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: This fortnight we've done sales, best buys, budgets and spreadsheets.",
+      "Today we put it all together to compare two holidays."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 a total is reachable for everyone; SC2 comparing budgets is the core and the exit evidence; SC3 justifying is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Beach or snow?",
+   "visual": {
+    "type": "pictograms",
+    "items": [
+     {
+      "name": "sun",
+      "label": "beach"
+     },
+     {
+      "name": "snowflake",
+      "label": "snow"
+     }
+    ]
+   },
+   "prompt": "The Lee family can only afford one. How would you decide?",
+   "notes": {
+    "answer": "totals, budget, and what they enjoy",
+    "beats": [
+     [
+      "POINT to each picture.",
+      "SAY: The Lee family, two adults and two children,",
+      "want a 3-night holiday: the beach or the snow."
+     ],
+     [
+      "ASK: How would you help them decide?",
+      "Tell your partner two things you'd want to know.",
+      "30 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: the total cost of each, what they can afford, what they enjoy"
+     ],
+     [
+      "SAY: We'd want the totals, the money they have, and what they'd enjoy.",
+      "Today we work out the numbers, then justify a choice with more than money."
+     ]
+    ],
+    "trap": [
+     "choosing straight away.",
+     "Fix: ask what you'd need to know first, and they think again."
+    ],
+    "prep": "The launch comes after the LI: deciding needs data and reasons. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "justify",
+   "meaning": "To give reasons, with evidence, for a choice or an answer.",
+   "example": "I'd choose the beach: it is $250 cheaper and the kids love surfing.",
+   "pictogram": "scales",
+   "notes": {
+    "answer": "no: it needs evidence",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is justify. Say it with me: jus-ti-fy."
+     ],
+     [
+      "SAY: To justify is to give reasons, with evidence.",
+      "A good justification uses a number from your working, and another reason too."
+     ],
+     [
+      "ASK: Is 'because I like it' a good justification? Thumbs up or down.",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs down: no evidence"
+     ]
+    ],
+    "trap": [
+     "thumbs up.",
+     "Fix: ask which number proves it, and they decide again."
+    ],
+    "prep": "Justifying is SC3 and the end of every modelling cycle.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Cost the beach trip",
+   "steps": [
+    "Cabin: 3 nights × $140 = $420.",
+    "Food: 3 days × $60 = $180.",
+    "Surf classes: 2 children × $45 = $90.",
+    "Total: $420 + $95 + $180 + $90 = $785."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Beach trip (3 nights)",
+      "Cost"
+     ],
+     [
+      "Cabin: $140 a night",
+      "$420"
+     ],
+     [
+      "Fuel",
+      "$95"
+     ],
+     [
+      "Food: $60 a day",
+      "$180"
+     ],
+     [
+      "Surf class: $45 each child",
+      "$90"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "$785"
+    ]
+   },
+   "notes": {
+    "answer": "$785",
+    "beats": [
+     [
+      "MODEL the nightly costs.",
+      "SAY: The cabin is 140 a night for 3 nights: 420.",
+      "Food is 60 a day: 180."
+     ],
+     [
+      "MODEL the per-person cost.",
+      "SAY: Surf classes are 45 for each child,",
+      "and there are 2 children: 90. Fuel is 95."
+     ],
+     [
+      "ASK: What is the total cost of the beach trip?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $785"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 420, 95, 180 and 90 make 785 dollars."
+     ]
+    ],
+    "trap": [
+     "using 4 people for the surf classes.",
+     "Fix: reread 'each child', and they redo it."
+    ],
+    "stretch": "What is the cost per person?",
+    "help": "Write the working for each line first.",
+    "prep": "Multiply by nights or people, then add. SC1.",
+    "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Compare and justify",
+   "steps": [
+    "Snow total: $555 + $130 + $210 + $140 = $1 035.",
+    "Difference: $1 035 - $785 = $250.",
+    "Budget $900: beach fits, snow does not.",
+    "Justify: beach saves $250 and fits the budget."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Snow trip (3 nights)",
+      "Cost"
+     ],
+     [
+      "Lodge: $185 a night",
+      "$555"
+     ],
+     [
+      "Fuel",
+      "$130"
+     ],
+     [
+      "Food: $70 a day",
+      "$210"
+     ],
+     [
+      "Ski hire: $35 each person",
+      "$140"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "Snow $1 035: $250 more than the beach"
+    ]
+   },
+   "notes": {
+    "answer": "snow is $250 more; beach fits $900",
+    "beats": [
+     [
+      "MODEL the snow total.",
+      "SAY: For the snow: lodge 555, fuel 130, food 210,",
+      "ski hire 35 for 4 people, 140. Total 1 035."
+     ],
+     [
+      "MODEL comparing.",
+      "SAY: 1 035 take away 785 is 250 dollars more.",
+      "With 900 dollars, only the beach fits."
+     ],
+     [
+      "ASK: Give a justification for the beach with a money reason and another reason.",
+      "Tell your partner.",
+      "30 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: it's $250 cheaper and fits the budget; plus a family reason"
+     ],
+     [
+      "REVEAL after partners have shared.",
+      "SAY: A strong justification: the beach is 250 dollars cheaper and fits the budget,",
+      "and the children can learn to surf."
+     ]
+    ],
+    "trap": [
+     "comparing one line, not totals.",
+     "Fix: point to the totals, and they compare again."
+    ],
+    "stretch": "When might snow be better?",
+    "help": "I choose ___ because ___ and ___.",
+    "prep": "Compare totals, then justify with evidence. SC2 and SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Total for the beach trip",
+   "prompt": "Cabin $420, fuel $95, food $180, classes $90. Point to A, B or C",
+   "options": [
+    {
+     "text": "$695",
+     "misconception": "leaves out one cost when adding"
+    },
+    {
+     "text": "$785"
+    },
+    {
+     "text": "$1 035",
+     "misconception": "gives the other trip's total"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Add every cost before you choose."
+     ],
+     [
+      "ASK: What is the total for the beach trip?",
+      "20 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: Which cost did A leave out?",
+      "Less -> add the four costs two at a time on the board. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B, 785 dollars.",
+      "A left out the surf classes, and C is the snow trip."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: tick each cost as they add it, and they choose again."
+    ],
+    "prep": "First decision point: an accurate total.",
+    "tag": "[CFU | Supported application | SC1 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Holiday maths",
+   "ask": "Work it out.",
+   "routine": "boards",
+   "thinkTime": 30,
+   "pivot": "write the working for each cost, then add or compare",
+   "followUp": "cold call one board: How do you know it's right?",
+   "items": [
+    {
+     "text": "Motel $125 a night for 4 nights",
+     "answer": "$500"
+    },
+    {
+     "text": "Theme park: $85 an adult, $60 a child. 2 adults, 3 children.",
+     "answer": "$350"
+    },
+    {
+     "text": "Trip A $1 240, trip B $985. Difference?",
+     "answer": "$255"
+    },
+    {
+     "text": "A $960 trip for 4 people. Cost per person?",
+     "answer": "$240"
+    },
+    {
+     "text": "Budget $1 500. Trip $1 180. Left over?",
+     "answer": "$320"
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise some holiday maths together.",
+     "Write each answer on your board."
+    ],
+    "trap": [
+     "multiplying everyone by the adult price.",
+     "Fix: reread the adult and child prices, and they redo it."
+    ],
+    "stretch": "Say which trip you'd choose and why.",
+    "help": "Write the working for each line first.",
+    "prep": "Guided practice: nights, mixed prices, difference, per person and left over. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "How much more?",
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Trip",
+      "Total"
+     ],
+     [
+      "City trip",
+      "$1 165"
+     ],
+     [
+      "Country trip",
+      "$890"
+     ]
+    ]
+   },
+   "label": "How much more is the city trip? Which fits a $1 000 budget?",
+   "reveal": {
+    "answers": [
+     "$275 more; only the country trip fits"
+    ]
+   },
+   "notes": {
+    "answer": "$275; country trip fits",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Find the difference, then check the budget."
+     ],
+     [
+      "ASK: How much more is the city trip,",
+      "and which fits a 1 000 dollar budget?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $275; the country trip"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> subtract with the written method together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 1 165 take away 890 is 275 dollars.",
+      "Only the country trip fits 1 000 dollars. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing $375.",
+     "Fix: regroup carefully in the tens column, and they redo it."
+    ],
+    "prep": "The hinge before independent work. Anyone with $375 or the wrong trip starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Cost, compare and justify the holidays on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: What is your money reason, and your other reason?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "comparing single costs, not totals.",
+     "Fix: point to the totals, and they compare again."
+    ],
+    "stretch": "Extension: more nights, saving for the trip, and your own holiday.",
+    "help": "Supported Worksheet: friendly numbers, one cost at a time.",
+    "prep": "Independent practice: a full costing, comparison, a mistake and a justified choice. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Which camping plan is cheaper for the Patels, and by how much?"
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Camping plan",
+      "Costs"
+     ],
+     [
+      "Plan A: site $35 a night, 4 nights",
+      "+ $120 food"
+     ],
+     [
+      "Plan B: cabin $68 a night, 4 nights",
+      "+ $60 food"
+     ]
+    ]
+   },
+   "notes": {
+    "answer": "A ($260) by $72 (B is $332)",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: Which camping plan is cheaper for the Patels, and by how much?",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: A ($260) by $72 (B is $332)"
+     ],
+     [
+      "RECORD who leaves out a cost or compares one line.",
+      "Their names go in your end-of-term notes."
+     ]
+    ],
+    "trap": [
+     "comparing only the nightly rate.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: a new comparison, two costs each.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner one money skill from this fortnight you will use in real life.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for a skill with a real example",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can compare budgets and justify a choice?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with only the nightly rates compared matters most."
+     ],
+     [
+      "ASK: Which money skill from this fortnight will you use in real life?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: a skill with a real example"
+     ]
+    ],
+    "prep": "End of the money fortnight and the term's maths units. Read the self-assessment beside the exit evidence.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

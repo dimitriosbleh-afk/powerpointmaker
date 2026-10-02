@@ -1,0 +1,37 @@
+{
+  "unit_folder": "Term4_Week6_Maths_Fractions_Decimals_Percentages",
+  "unit_pptx_name": "Term 4 Week 6 - Fractions, Decimals and Percentages - Year 5-6 Maths.pptx",
+  "anchor": "one amount, three names: fraction, decimal, percentage; make it out of 100 to switch",
+  "lessons": [
+    {
+      "build_script": "builds/t4w6_maths_s1_fractions_to_decimals.json",
+      "folder": "T4W6_Maths_S1_Fractions_To_Decimals",
+      "session": 1,
+      "focus": "Fractions to decimals with tenths, hundredths and thousandths. Critical feature: make the denominator 10, 100 or 1000, then read the decimal. Review: area and perimeter (Week 5), probability (Week 4)."
+    },
+    {
+      "build_script": "builds/t4w6_maths_s2_fraction_as_division.json",
+      "folder": "T4W6_Maths_S2_Fraction_As_Division",
+      "session": 2,
+      "focus": "A fraction is a division: numerator divided by denominator with the division bracket; decimals back to simplified fractions. Critical feature: 3/8 means 3 divided by 8. Review: probability, area and perimeter."
+    },
+    {
+      "build_script": "builds/t4w6_maths_s3_percentages.json",
+      "folder": "T4W6_Maths_S3_Percentages",
+      "session": 3,
+      "focus": "Percentages as fractions and decimals on a hundred grid. Critical feature: per cent means out of 100. Review: probability, grid coordinates, area."
+    },
+    {
+      "build_script": "builds/t4w6_maths_s4_compare_order.json",
+      "folder": "T4W6_Maths_S4_Compare_Order",
+      "session": 4,
+      "focus": "Compare and order fractions, decimals and percentages by converting to one form and using a number line. Critical feature: convert to the same form first. Review: coordinates, the Cartesian plane, probability."
+    },
+    {
+      "build_script": "builds/t4w6_maths_s5_percentage_of_amount.json",
+      "folder": "T4W6_Maths_S5_Percentage_Of_Amount",
+      "session": 5,
+      "focus": "Percentage of an amount with benchmark strategies (50%, 25%, 10%, 1%) and multiplication and division. Critical feature: find a benchmark, then build. Review: the Cartesian plane, coordinates, area and perimeter."
+    }
+  ]
+}

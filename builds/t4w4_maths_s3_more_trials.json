@@ -1,0 +1,1205 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 4,
+  "session": 3,
+  "title": "Expected Results and More Trials",
+  "subtitle": "Term 4 Week 4, Session 3",
+  "meta": "Year 5/6 Maths | Probability",
+  "footer": "Probability | Year 5/6 Maths | Session 3",
+  "outputFolder": "T4W4_Maths_S3_More_Trials",
+  "fileName": "Session 3 - Expected Results and More Trials.pptx",
+  "titleVisual": {
+   "type": "chart",
+   "style": "line",
+   "categories": [
+    "10",
+    "100",
+    "1000"
+   ],
+   "values": [
+    70,
+    46,
+    50
+   ],
+   "yLabel": "% heads"
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Probability, Year 6 (VC2M6P02) with Year 5 (VC2M5P02): compare observations with expected results and discuss the effect of increasing the number of trials, including simulations",
+   "shape": "example-first: the teacher models expected results, then shows real results settling as trials grow, because the pattern needs to be seen before it is explained",
+   "criticalFeature": "small experiments vary a lot; with many more trials the relative frequency settles close to the expected chance",
+   "decisionPoints": [
+    "the choice check: what 8 heads in 10 tosses tells us",
+    "the hinge: 20 spins or 2000 spins?",
+    "the exit ticket"
+   ],
+   "anchor": "chance = the outcomes we want out of all the equally likely outcomes",
+   "catchUp": "Missed Session 2? Show 12 heads in 20 tosses written as 12/20 = 60% before the launch: that is relative frequency."
+  }
+ },
+ "materials": {
+  "manipulatives": [
+   "A coin and a dice for every pair (optional)"
+  ],
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: chance = the outcomes we want out of all the equally likely outcomes",
+   "Optional simulation: a spreadsheet column of =RANDBETWEEN(1,2) filled down 1000 rows, with 1 as heads"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Work out expected results, compare them with observed results, fix a mistake and read a simulation.",
+   "title": "Expected Results and More Trials",
+   "subtitle": "Expected = chance × trials. More trials, closer results.",
+   "sections": [
+    {
+     "title": "Expected results",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "A spinner has P(red) = 1/5. How many reds do you expect in 50 spins?",
+      "steps": [
+       "Chance: 1/5.",
+       "1/5 of 50 = 50 divided by 5.",
+       "Expect about 10 reds."
+      ],
+      "answer": "about 10"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "How many times would you expect each outcome?",
+       "columns": [
+        "Experiment",
+        "Chance",
+        "Trials",
+        "Expected"
+       ],
+       "rows": [
+        [
+         "Coin: heads",
+         "1/2",
+         "60",
+         ""
+        ],
+        [
+         "Dice: a 4",
+         "1/6",
+         "90",
+         ""
+        ],
+        [
+         "Spinner: red",
+         "1/4",
+         "100",
+         ""
+        ],
+        [
+         "Bag of 2 blue, 3 red: blue",
+         "2/5",
+         "40",
+         ""
+        ],
+        [
+         "Dice: an even number",
+         "1/2",
+         "70",
+         ""
+        ],
+        [
+         "Spinner: blue",
+         "3/8",
+         "80",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "Coin: heads",
+         "1/2",
+         "60",
+         "30"
+        ],
+        [
+         "Dice: a 4",
+         "1/6",
+         "90",
+         "15"
+        ],
+        [
+         "Spinner: red",
+         "1/4",
+         "100",
+         "25"
+        ],
+        [
+         "Bag of 2 blue, 3 red: blue",
+         "2/5",
+         "40",
+         "16"
+        ],
+        [
+         "Dice: an even number",
+         "1/2",
+         "70",
+         "35"
+        ],
+        [
+         "Spinner: blue",
+         "3/8",
+         "80",
+         "30"
+        ]
+       ]
+      },
+      {
+       "prompt": "Expected results in sport.",
+       "parts": [
+        {
+         "prompt": "A shooter scores 3 of every 4 shots. Goals from 40 shots?",
+         "answer": "30"
+        },
+        {
+         "prompt": "A keeper saves 1/5 of penalties. Saves from 25?",
+         "answer": "5"
+        }
+       ]
+      },
+      {
+       "prompt": "A batter hits 1 in every 3 balls. She expects 12 hits. How many balls does she face?",
+       "answer": "36",
+       "answerLabel": "Balls:"
+      }
+     ]
+    },
+    {
+     "title": "Observed or expected?",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Expected 20 heads, observed 23. Is that surprising?",
+      "steps": [
+       "Find the difference: 3.",
+       "3 is small next to 40 tosses.",
+       "Not surprising: results vary."
+      ],
+      "answer": "Not surprising"
+     },
+     "items": [
+      {
+       "prompt": "A spinner was spun 100 times.",
+       "visual": {
+        "type": "chart",
+        "categories": [
+         "Red",
+         "Blue",
+         "Green",
+         "Yellow"
+        ],
+        "series": [
+         {
+          "name": "Expected",
+          "values": [
+           25,
+           25,
+           25,
+           25
+          ]
+         },
+         {
+          "name": "Observed",
+          "values": [
+           22,
+           31,
+           24,
+           23
+          ]
+         }
+        ],
+        "yLabel": "Spins",
+        "maxH": 120
+       },
+       "working": "none",
+       "parts": [
+        {
+         "prompt": "Furthest from expected?",
+         "answer": "blue, by 6"
+        },
+        {
+         "prompt": "Total observed?",
+         "answer": "100"
+        }
+       ]
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Ella rolled a dice 6 times and got no sixes. Find her mistake and fix it.",
+       "work": [
+        "I expected one six.",
+        "I got none, so the dice is broken."
+       ],
+       "answer": "6 rolls is far too few to judge. Getting no sixes is common in a small experiment. Roll it many more times."
+      }
+     ]
+    },
+    {
+     "title": "Simulate it",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "A simulation tossed a coin 10 times: 70% heads. Is the coin unfair?",
+      "steps": [
+       "10 tosses is a small number of trials.",
+       "Run many more, like 1000.",
+       "Then compare with 50%."
+      ],
+      "answer": "not enough trials to tell"
+     },
+     "items": [
+      {
+       "prompt": "A spreadsheet simulated coin tosses.",
+       "visual": {
+        "type": "chart",
+        "style": "line",
+        "categories": [
+         "10",
+         "50",
+         "100",
+         "500",
+         "1000"
+        ],
+        "values": [
+         60,
+         44,
+         53,
+         49,
+         50
+        ],
+        "yLabel": "% heads",
+        "xLabel": "Number of tosses",
+        "maxH": 120
+       },
+       "working": "none",
+       "parts": [
+        {
+         "prompt": "Furthest from 50%?",
+         "answer": "10 tosses (60%)"
+        },
+        {
+         "prompt": "Heads in 500 tosses?",
+         "answer": "245 (49%)"
+        }
+       ]
+      },
+      {
+       "kind": "choice",
+       "prompt": "Kai tossed a coin and got heads 5 times in a row. What about the next toss?",
+       "options": [
+        "tails is more likely",
+        "heads and tails are still equally likely",
+        "heads is more likely"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "A coin has no memory: every toss is still 1/2 heads, 1/2 tails."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Planning a spreadsheet simulation, expected results for unequal spinners and judging fairness from data, with worked examples.",
+   "title": "Extension: Simulations",
+   "subtitle": "Use lots of trials to test a prediction.",
+   "sections": [
+    {
+     "title": "Plan a simulation",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "How could a spreadsheet roll a dice 600 times?",
+      "steps": [
+       "Type =RANDBETWEEN(1,6) in a cell.",
+       "Fill it down 600 rows.",
+       "Count each number, then compare with 100 each."
+      ],
+      "answer": "=RANDBETWEEN(1,6), filled down 600 rows"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Plan a spreadsheet simulation of 1000 coin tosses. Write the formula, how you would count heads, and what result you predict. If you have a device, try it.",
+       "answer": "=RANDBETWEEN(1,2) filled down 1000 rows; count the 1s (for example =COUNTIF(A1:A1000,1)); predict about 500 heads, close to 50%."
+      }
+     ]
+    },
+    {
+     "title": "Unequal spinners",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "P(green) = 3/8. Expected greens in 400 spins?",
+      "steps": [
+       "3/8 of 400.",
+       "400 divided by 8 = 50.",
+       "50 × 3 = 150."
+      ],
+      "answer": "150"
+     },
+     "items": [
+      {
+       "prompt": "P(red) = 5/12. How many reds would you expect in 360 spins?",
+       "answer": "150",
+       "answerLabel": "Expected:"
+      },
+      {
+       "prompt": "A bag has 3 red, 4 blue and 1 white counter. How many whites would you expect in 240 picks, with replacement?",
+       "answer": "30",
+       "answerLabel": "Expected:"
+      }
+     ]
+    },
+    {
+     "title": "Fair or not?",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "A dice gave 168 sixes in 1000 rolls. Fair?",
+      "steps": [
+       "Expected: 1000 divided by 6 is about 167.",
+       "168 is very close.",
+       "Fair, as far as we can tell."
+      ],
+      "answer": "likely fair"
+     },
+     "items": [
+      {
+       "prompt": "A coin gave 703 heads in 1000 tosses. Is it fair? Explain with numbers.",
+       "answer": "Probably not: expected about 500, and 703 is far off after so many trials.",
+       "lines": 3
+      },
+      {
+       "prompt": "A spinner gave 7 reds in 20 spins, but P(red) = 1/4. Is it unfair? Explain.",
+       "answer": "Not necessarily: expected 5, and 7 is close for only 20 spins. More trials are needed.",
+       "lines": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: halves and quarters first, a step frame, and a hint on every question.",
+   "title": "Expected Results: Step by Step",
+   "subtitle": "Half of, quarter of, then compare.",
+   "sections": [
+    {
+     "title": "Half of",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Toss a coin 30 times. Expected heads?",
+      "steps": [
+       "Heads is 1/2.",
+       "Half of 30 = 15."
+      ],
+      "answer": "15"
+     },
+     "items": [
+      {
+       "prompt": "Toss a coin 50 times. Expected heads?",
+       "hint": "Half of 50.",
+       "answer": "25",
+       "answerLabel": "Expected:"
+      },
+      {
+       "prompt": "Toss a coin 120 times. Expected tails?",
+       "hint": "Half of 120.",
+       "answer": "60",
+       "answerLabel": "Expected:"
+      }
+     ]
+    },
+    {
+     "title": "Quarter of",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Spinner with 4 equal parts. Red in 40 spins?",
+      "steps": [
+       "Red is 1/4.",
+       "Halve 40: 20. Halve again: 10."
+      ],
+      "answer": "10"
+     },
+     "items": [
+      {
+       "prompt": "Spinner with 4 equal parts. Expected blue in 80 spins?",
+       "hint": "Halve, then halve again.",
+       "answer": "20",
+       "answerLabel": "Expected:"
+      },
+      {
+       "kind": "choice",
+       "prompt": "A coin gave 3 heads in 10 tosses. Is the coin broken?",
+       "hint": "10 tosses is only a few.",
+       "options": [
+        "yes",
+        "not necessarily"
+       ],
+       "answer": 1
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 3 of our probability week: today we compare results with what we expect, and see what more trials do."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk. Optional: set up a spreadsheet simulation with =RANDBETWEEN(1,2) filled down 1000 rows. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Missing corner",
+   "from": "teacher",
+   "prompts": [
+    "A square has corners (2, 1), (6, 1) and (6, 5). Find the fourth corner."
+   ],
+   "reveal": {
+    "answers": [
+     "(2, 5)"
+    ]
+   },
+   "notes": {
+    "answer": "(2, 5)",
+    "beats": [
+     [
+      "SAY: Let's warm up with coordinates and statistics."
+     ],
+     [
+      "ASK: What is the fourth corner of this square?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (2, 5)"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> sketch the three corners on the",
+      "board grid and trace up from (2, 1). Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 2, 5: above 2, 1 and level with 6, 5.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (5, 2).",
+     "Fix: say the anchor, across first, and they rewrite it."
+    ],
+    "prep": "Review of Week 2 coordinates (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Move across zero",
+   "from": "teacher",
+   "prompts": [
+    "(-3, 2) moves 5 right. Where does it land?"
+   ],
+   "reveal": {
+    "answers": [
+     "(2, 2)"
+    ]
+   },
+   "notes": {
+    "answer": "(2, 2)",
+    "beats": [
+     [
+      "ASK: If negative 3, 2 moves 5 right, where does it land?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (2, 2)"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> jump 5 right from negative 3 on the number line together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Negative 3 add 5 is 2,",
+      "so it lands on 2, 2. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (-8, 2).",
+     "Fix: ask which way right goes, and they redo it."
+    ],
+    "prep": "Week 2 review: moving across zero.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Read the dot plot",
+   "from": "teacher",
+   "prompts": [
+    "How many families were surveyed?"
+   ],
+   "visual": {
+    "type": "chart",
+    "style": "dot",
+    "categories": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "values": [
+     2,
+     6,
+     4,
+     3,
+     1
+    ],
+    "title": "Pets per family",
+    "xLabel": "Pets"
+   },
+   "reveal": {
+    "answers": [
+     "16 families"
+    ]
+   },
+   "notes": {
+    "answer": "16 families",
+    "beats": [
+     [
+      "ASK: How many families were surveyed?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 16"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> count the dots in each column, then add. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 2, 6, 4, 3 and 1 make 16 families. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 5, the number of columns.",
+     "Fix: touch each dot as you count, and they recount."
+    ],
+    "prep": "Week 3 review: reading a dot plot.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "7 × 7"
+   ],
+   "reveal": {
+    "answers": [
+     "49"
+    ]
+   },
+   "notes": {
+    "answer": "49",
+    "beats": [
+     [
+      "SAY: Now for our seven times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 7 times 7?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 49"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 6 sevens is 42, then one more 7. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 49. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 42 or 56.",
+     "Fix: add one more 7 to 7 times 6, 42, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "7 × 11"
+   ],
+   "reveal": {
+    "answers": [
+     "77"
+    ]
+   },
+   "notes": {
+    "answer": "77",
+    "beats": [
+     [
+      "SAY: Here's the next one."
+     ],
+     [
+      "ASK: What is 7 times 11?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 77"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 7 tens, plus one more 7. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 77. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 71.",
+     "Fix: 7 tens is 70, plus one more 7, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "56 ÷ 7"
+   ],
+   "reveal": {
+    "answers": [
+     "8"
+    ]
+   },
+   "notes": {
+    "answer": "8",
+    "beats": [
+     [
+      "SAY: Now a division. How many sevens make 56?"
+     ],
+     [
+      "ASK: What is 56 divided by 7?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 8"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> count up in sevens to 56. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 8. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 7 or 9.",
+     "Fix: check: 8 sevens is 56, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to compare experiment results with what we expect, and see what happens with more trials.",
+   "successCriteria": [
+    "I can work out the expected result for a chance experiment.",
+    "I can compare an observed result with the expected result.",
+    "I can explain why more trials give results closer to what we expect."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: Yesterday our coin results weren't exactly half.",
+      "Today we find out why, and what happens with lots more trials."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 expected results is reachable for everyone; SC2 comparing observed and expected is the core and the exit evidence; SC3 the effect of more trials is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "What would you expect?",
+   "visual": {
+    "type": "pictogram",
+    "name": "coin"
+   },
+   "prompt": "Toss a coin 100 times. How many heads would you expect?",
+   "notes": {
+    "answer": "about 50",
+    "beats": [
+     [
+      "SHOW a coin.",
+      "SAY: If I tossed this coin 100 times, I wouldn't know exactly what would happen."
+     ],
+     [
+      "ASK: How many heads would you expect in 100 tosses?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 50"
+     ],
+     [
+      "ASK: Would 47 heads surprise you? What about 80? Tell your partner why.",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: 47 is fine; 80 is surprising"
+     ],
+     [
+      "SAY: We expect about 50, because heads is one half.",
+      "Today we'll see why 47 is normal, and 80 is unusual after many tosses."
+     ]
+    ],
+    "trap": [
+     "saying exactly 50 every time.",
+     "Fix: ask what happened with yesterday's coin, and they rethink."
+    ],
+    "prep": "The launch comes after the LI: expected versus observed. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "expected",
+   "meaning": "The result we predict from the chance: chance times the number of trials.",
+   "example": "Toss 40 coins: expect 1/2 of 40 = 20 heads.",
+   "pictogram": "target",
+   "notes": {
+    "answer": "what the chance predicts",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is expected. Say it with me: ex-pect-ed."
+     ],
+     [
+      "SAY: The expected result is what the chance predicts.",
+      "We find it by taking that fraction of the number of trials."
+     ],
+     [
+      "ASK: Toss a coin 40 times. How many heads would you expect?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 20"
+     ]
+    ],
+    "trap": [
+     "expecting 40 heads.",
+     "Fix: ask what fraction of tosses should be heads, and they redo it."
+    ],
+    "prep": "Expected versus observed is today's comparison.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Work out the expected result",
+   "steps": [
+    "Find the chance: P(6) = 1/6.",
+    "Take that fraction of the trials: 1/6 of 60.",
+    "60 divided by 6 = 10.",
+    "Expect about 10 sixes."
+   ],
+   "visual": {
+    "type": "text",
+    "text": "Roll a dice 60 times. How many sixes do you expect?"
+   },
+   "reveal": {
+    "answers": [
+     "In 120 rolls: about 20 sixes"
+    ]
+   },
+   "notes": {
+    "answer": "about 20",
+    "beats": [
+     [
+      "MODEL finding the chance.",
+      "SAY: A six is one face out of six, so the chance is one sixth."
+     ],
+     [
+      "MODEL one sixth of 60.",
+      "SAY: So I expect one sixth of the 60 rolls.",
+      "60 divided by 6 is 10,",
+      "so I expect about 10 sixes. About, because results vary."
+     ],
+     [
+      "ASK: How many sixes would you expect in 120 rolls?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 20"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: One sixth of 120 is 20.",
+      "Double the trials, double the expected number."
+     ]
+    ],
+    "trap": [
+     "writing 60 divided by 120.",
+     "Fix: say one sixth of the trials, and they redo it."
+    ],
+    "stretch": "How many rolls would give an expected 25 sixes?",
+    "help": "Draw 6 groups and share the trials equally.",
+    "prep": "Expected = chance times trials. SC1.",
+    "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "More trials, closer results",
+   "steps": [
+    "10 tosses: 70% heads, far from 50%.",
+    "100 tosses: 46% heads.",
+    "1000 tosses: 50% heads, very close.",
+    "More trials, closer to expected."
+   ],
+   "visual": {
+    "type": "chart",
+    "style": "line",
+    "categories": [
+     "10",
+     "50",
+     "100",
+     "500",
+     "1000"
+    ],
+    "values": [
+     70,
+     58,
+     46,
+     51,
+     50
+    ],
+    "yLabel": "% heads",
+    "xLabel": "Number of tosses"
+   },
+   "reveal": {
+    "answers": [
+     "10 000 tosses: very close to 50%"
+    ]
+   },
+   "notes": {
+    "answer": "very close to 50%",
+    "beats": [
+     [
+      "POINT to 10 tosses.",
+      "SAY: This graph shows a simulation.",
+      "After 10 tosses, 70 percent were heads, far from a half."
+     ],
+     [
+      "POINT along the line.",
+      "SAY: As the tosses grow to 100, then 1000,",
+      "the line settles closer and closer to 50 percent.",
+      "Small experiments jump around; big ones settle."
+     ],
+     [
+      "ASK: What would you expect after 10 000 tosses?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: very close to 50%"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Very close to 50 percent.",
+      "That's why we never judge a coin from 10 tosses."
+     ]
+    ],
+    "trap": [
+     "thinking more trials make it exactly 50%.",
+     "Fix: say close, not exact, and they rephrase."
+    ],
+    "stretch": "Why would 1000 tosses rarely give exactly 500 heads?",
+    "help": "Point to where the line is closest to 50.",
+    "prep": "The critical feature: more trials, closer to expected. SC3. Optional: run the spreadsheet simulation live.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "8 heads in 10 tosses",
+   "prompt": "What does this tell us? Point to A, B or C",
+   "options": [
+    {
+     "text": "The coin is unfair.",
+     "misconception": "judges the coin from a very small experiment"
+    },
+    {
+     "text": "Small experiments vary a lot."
+    },
+    {
+     "text": "The next toss will probably be tails.",
+     "misconception": "thinks the coin remembers and has to even out"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Mia tossed a coin 10 times and got 8 heads."
+     ],
+     [
+      "ASK: What does this result tell us?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: Why isn't it C?",
+      "Less -> go back to the simulation line: 10 tosses jumped to 70 percent. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B. 10 tosses is too few to judge,",
+      "and the coin has no memory, so the next toss is still one half."
+     ]
+    ],
+    "trap": [
+     "pointing to C.",
+     "Fix: ask whether the coin knows what came before, and they choose again."
+    ],
+    "prep": "First decision point. A: judging from too few trials. C: the coin has to even out.",
+    "tag": "[CFU | Supported application | SC3 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Expected results",
+   "ask": "How many would you expect?",
+   "routine": "boards",
+   "thinkTime": 20,
+   "pivot": "write the chance, then take that fraction of the trials",
+   "followUp": "cold call one board: Which fraction did you use?",
+   "items": [
+    {
+     "text": "Toss a coin 80 times. Heads?",
+     "answer": "40"
+    },
+    {
+     "text": "Roll a dice 120 times. Threes?",
+     "answer": "20"
+    },
+    {
+     "text": "P(red) = 1/4. Spin 200 times. Red?",
+     "answer": "50"
+    },
+    {
+     "text": "Bag: 3 red, 2 blue. 50 picks, replaced. Blue?",
+     "answer": "20",
+     "say": "Blue is 2 of 5, so 2/5 of 50 is 20."
+    },
+    {
+     "text": "Expected 25 sixes. How many rolls?",
+     "answer": "150",
+     "say": "One sixth of the rolls is 25, so 6 times 25 is 150 rolls."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise expected results.",
+     "Write each answer on your board."
+    ],
+    "trap": [
+     "using the wrong fraction.",
+     "Fix: say the chance first, and they redo it."
+    ],
+    "stretch": "Write a question where the expected answer is 12.",
+    "help": "Write 'chance' and 'trials' before you calculate.",
+    "prep": "Guided practice: halves, sixths, quarters, fifths, then a reverse question. SC1 and SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "20 spins or 2000 spins?",
+   "visual": {
+    "type": "text",
+    "text": "Class A spun a spinner 20 times. Class B spun it 2000 times. P(red) = 1/4."
+   },
+   "label": "Whose relative frequency of red is likely closer to 1/4?",
+   "reveal": {
+    "answers": [
+     "Class B: more trials"
+    ]
+   },
+   "notes": {
+    "answer": "B, more trials",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Think about what more trials do."
+     ],
+     [
+      "ASK: Whose relative frequency of red is likely to be closer to one quarter?",
+      "Write A or B.",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: B"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> point back to the simulation line settling at 50 percent. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's B. 2000 spins is many more trials,",
+      "so the result settles closer to the expected chance. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing A because 20 is easier to count.",
+     "Fix: ask which class has more evidence, and they choose again."
+    ],
+    "prep": "The hinge before independent work. Anyone writing A starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC3 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Work out expected results and compare them with observed results on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: What is the chance, and how many trials?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "multiplying instead of taking a fraction.",
+     "Fix: say 'one sixth of', and they redo it."
+    ],
+    "stretch": "Extension: a spreadsheet simulation, unequal spinners and judging fairness.",
+    "help": "Supported Worksheet: halves and quarters first, a step frame and hints.",
+    "prep": "Independent practice: expected results, observed versus expected, a mistake, and a simulation. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "How many fives would you expect in 300 rolls of a dice?"
+   ],
+   "visual": {
+    "type": "pictogram",
+    "name": "dice"
+   },
+   "notes": {
+    "answer": "50",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: How many fives would you expect in 300 rolls of a dice?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 50"
+     ],
+     [
+      "RECORD who multiplies or uses the wrong fraction.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing 1800.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC1 and SC2: a new number of trials.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner what happens to results with more trials.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for they get closer to what we expect",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can compare results with what you expect?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 1800 on the board matters most."
+     ],
+     [
+      "ASK: What happens to results when you do more trials?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: they get closer to what we expect"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: fair and unfair games.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

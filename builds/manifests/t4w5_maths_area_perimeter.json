@@ -1,0 +1,25 @@
+{
+  "unit_folder": "Term4_Week5_Maths_Area_Perimeter",
+  "unit_pptx_name": "Term 4 Week 5 - Area and Perimeter - Year 5-6 Maths.pptx",
+  "anchor": "perimeter goes around the edge (add the sides); area covers the inside (length x width)",
+  "lessons": [
+    {
+      "build_script": "builds/t4w5_maths_s1_perimeter.json",
+      "folder": "T4W5_Maths_S1_Perimeter",
+      "session": 1,
+      "focus": "Perimeter of rectangles and shapes with straight sides, including missing side lengths. Critical feature: add every side; find a missing side from the opposite sides. Review: probability (Week 4) and statistics (Week 3)."
+    },
+    {
+      "build_script": "builds/t4w5_maths_s2_area.json",
+      "folder": "T4W5_Maths_S2_Area",
+      "session": 2,
+      "focus": "Area of rectangles with larger numbers, multiplying efficiently: split the long side, double and halve, or the written method. Critical feature: area = length x width, in square units. Review: statistics, angles, probability."
+    },
+    {
+      "build_script": "builds/t4w5_maths_s3_area_problems.json",
+      "folder": "T4W5_Maths_S3_Area_Problems",
+      "session": 3,
+      "focus": "Area problems with division: a missing side is area divided by the known side; composite areas; remainders in context (round up when you must cover it all). Critical feature: decide what the answer means before you round. Review: angles, misleading graphs, probability."
+    }
+  ]
+}

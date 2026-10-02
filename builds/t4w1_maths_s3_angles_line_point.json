@@ -68,14 +68,14 @@
       "kind": "worksheet",
       "role": "main",
       "label": "Worksheet",
-      "description": "Your turn. Straight lines, points, right angles, worded problems and thinking questions.",
+      "description": "Your turn. Straight lines, points and right angles, an angle-pair sort, real-world problems and a mistake to fix.",
       "title": "Angles on a Line and at a Point",
       "subtitle": "Find the whole first, then subtract.",
       "sections": [
         {
-          "title": "On a straight line",
+          "title": "Find the whole first",
           "proficiency": "fluency",
-          "columns": 2,
+          "columns": 3,
           "example": {
             "prompt": "Find x.",
             "visual": {
@@ -128,8 +128,10 @@
                   }
                 ]
               },
-              "answer": "25°",
-              "answerLabel": "a ="
+              "answer": "25",
+              "answerLabel": "a =",
+              "unit": "°",
+              "working": "none"
             },
             {
               "prompt": "Find b.",
@@ -153,204 +155,13 @@
                   }
                 ]
               },
-              "answer": "108°",
-              "answerLabel": "b ="
+              "answer": "108",
+              "answerLabel": "b =",
+              "unit": "°",
+              "working": "none"
             },
             {
-              "prompt": "Find c.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  33,
-                  180
-                ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 33,
-                    "label": "33°"
-                  },
-                  {
-                    "from": 33,
-                    "to": 180,
-                    "label": "c"
-                  }
-                ]
-              },
-              "answer": "147°",
-              "answerLabel": "c ="
-            },
-            {
-              "prompt": "Find d.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  50,
-                  125,
-                  180
-                ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 50,
-                    "label": "50°"
-                  },
-                  {
-                    "from": 50,
-                    "to": 125,
-                    "label": "75°"
-                  },
-                  {
-                    "from": 125,
-                    "to": 180,
-                    "label": "d"
-                  }
-                ]
-              },
-              "answer": "55°",
-              "answerLabel": "d ="
-            }
-          ]
-        },
-        {
-          "title": "Around a point",
-          "proficiency": "fluency",
-          "columns": 2,
-          "example": {
-            "prompt": "Find y.",
-            "visual": {
-              "type": "angle",
-              "rays": [
-                0,
-                150,
-                260
-              ],
-              "arcs": [
-                {
-                  "from": 0,
-                  "to": 150,
-                  "label": "150°"
-                },
-                {
-                  "from": 150,
-                  "to": 260,
-                  "label": "110°"
-                },
-                {
-                  "from": 260,
-                  "to": 360,
-                  "label": "y"
-                }
-              ]
-            },
-            "steps": [
-              "All the way round is 360°.",
-              "150° + 110° = 260°",
-              "y = 360° - 260° = 100°"
-            ],
-            "answer": "y = 100°"
-          },
-          "items": [
-            {
-              "prompt": "Find e.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  100,
-                  230
-                ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 100,
-                    "label": "100°"
-                  },
-                  {
-                    "from": 100,
-                    "to": 230,
-                    "label": "130°"
-                  },
-                  {
-                    "from": 230,
-                    "to": 360,
-                    "label": "e"
-                  }
-                ]
-              },
-              "answer": "130°",
-              "answerLabel": "e ="
-            },
-            {
-              "prompt": "Find f.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  145,
-                  245
-                ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 145,
-                    "label": "145°"
-                  },
-                  {
-                    "from": 145,
-                    "to": 245,
-                    "label": "100°"
-                  },
-                  {
-                    "from": 245,
-                    "to": 360,
-                    "label": "f"
-                  }
-                ]
-              },
-              "answer": "115°",
-              "answerLabel": "f ="
-            },
-            {
-              "prompt": "Find g.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  60,
-                  150,
-                  270
-                ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 60,
-                    "label": "60°"
-                  },
-                  {
-                    "from": 60,
-                    "to": 150,
-                    "label": "90°"
-                  },
-                  {
-                    "from": 150,
-                    "to": 270,
-                    "label": "120°"
-                  },
-                  {
-                    "from": 270,
-                    "to": 360,
-                    "label": "g"
-                  }
-                ]
-              },
-              "answer": "90°",
-              "answerLabel": "g ="
-            },
-            {
-              "prompt": "Find h.",
+              "prompt": "Watch the square. Find h.",
               "visual": {
                 "type": "angle",
                 "rays": [
@@ -376,131 +187,131 @@
                   }
                 ]
               },
-              "answer": "130°",
-              "answerLabel": "h ="
+              "answer": "130",
+              "answerLabel": "h =",
+              "unit": "°",
+              "working": "none"
             }
-          ]
+          ],
+          "intro": "A straight line is 180°. All the way round is 360°. A square corner is 90°."
         },
         {
-          "title": "In a right angle",
+          "title": "Pairs and wholes",
           "proficiency": "understanding",
-          "columns": 2,
+          "columns": 1,
+          "intro": "Complementary angles add to 90°. Supplementary angles add to 180°.",
           "example": {
-            "prompt": "Find z.",
-            "visual": {
-              "type": "angle",
-              "rays": [
-                0,
-                40,
-                90
-              ],
-              "arcs": [
-                {
-                  "from": 0,
-                  "to": 90,
-                  "right": true
-                },
-                {
-                  "from": 0,
-                  "to": 40,
-                  "label": "40°",
-                  "r": 36
-                },
-                {
-                  "from": 40,
-                  "to": 90,
-                  "label": "z",
-                  "r": 36
-                }
-              ]
-            },
+            "prompt": "Are 30° and 60° complementary or supplementary?",
             "steps": [
-              "The square means 90°.",
-              "z = 90° - 40°",
-              "z = 50°"
+              "Add them: 30° + 60° = 90°.",
+              "90° is a right angle.",
+              "So they are complementary."
             ],
-            "answer": "z = 50°"
+            "answer": "complementary"
           },
           "items": [
             {
-              "prompt": "Find p.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  25,
-                  90
+              "kind": "sort",
+              "prompt": "Add each pair, then write it in the right group.",
+              "cards": [
+                "35° and 55°",
+                "120° and 60°",
+                "45° and 125°",
+                "72° and 18°",
+                "100° and 80°",
+                "65° and 35°"
+              ],
+              "groups": [
+                "complementary (90°)",
+                "supplementary (180°)",
+                "neither"
+              ],
+              "answer": {
+                "complementary (90°)": [
+                  "35° and 55°",
+                  "72° and 18°"
                 ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 90,
-                    "right": true
-                  },
-                  {
-                    "from": 0,
-                    "to": 25,
-                    "label": "25°",
-                    "r": 36
-                  },
-                  {
-                    "from": 25,
-                    "to": 90,
-                    "label": "p",
-                    "r": 36
-                  }
-                ]
-              },
-              "answer": "65°",
-              "answerLabel": "p ="
-            },
-            {
-              "prompt": "Find q.",
-              "visual": {
-                "type": "angle",
-                "rays": [
-                  0,
-                  71,
-                  90
+                "supplementary (180°)": [
+                  "120° and 60°",
+                  "100° and 80°"
                 ],
-                "arcs": [
-                  {
-                    "from": 0,
-                    "to": 90,
-                    "right": true
-                  },
-                  {
-                    "from": 0,
-                    "to": 71,
-                    "label": "71°",
-                    "r": 36
-                  },
-                  {
-                    "from": 71,
-                    "to": 90,
-                    "label": "q",
-                    "r": 36
-                  }
+                "neither": [
+                  "45° and 125°",
+                  "65° and 35°"
                 ]
-              },
-              "answer": "19°",
-              "answerLabel": "q ="
+              }
             },
             {
-              "prompt": "Two complementary angles are equal. How big is each one?",
-              "answer": "45°"
-            },
-            {
-              "prompt": "Two supplementary angles are equal. How big is each one?",
-              "answer": "90°"
+              "kind": "table",
+              "prompt": "Write the whole, then the missing angle.",
+              "columns": [
+                "What you know",
+                "Whole",
+                "Missing angle"
+              ],
+              "rows": [
+                [
+                  "On a straight line: 64°",
+                  "180°",
+                  ""
+                ],
+                [
+                  "Around a point: 150° and 85°",
+                  "",
+                  ""
+                ],
+                [
+                  "In a right angle: 38°",
+                  "",
+                  ""
+                ],
+                [
+                  "On a straight line: 35° and 65°",
+                  "",
+                  ""
+                ],
+                [
+                  "Around a point: 90°, 90° and 45°",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "On a straight line: 64°",
+                  "180°",
+                  "116°"
+                ],
+                [
+                  "Around a point: 150° and 85°",
+                  "360°",
+                  "125°"
+                ],
+                [
+                  "In a right angle: 38°",
+                  "90°",
+                  "52°"
+                ],
+                [
+                  "On a straight line: 35° and 65°",
+                  "180°",
+                  "80°"
+                ],
+                [
+                  "Around a point: 90°, 90° and 45°",
+                  "360°",
+                  "135°"
+                ]
+              ]
             }
           ]
         },
         {
           "title": "Real-world angles",
           "proficiency": "problemSolving",
+          "columns": 2,
           "example": {
-            "prompt": "A ladder leans on a wall and makes 65° with the ground. What angle does it make with the ground on the other side of its foot?",
+            "prompt": "A ladder leans on a wall and makes 65° with the ground. What angle is on the other side of its foot?",
             "steps": [
               "The ground is a straight line: 180°.",
               "180° - 65° = 115°."
@@ -510,48 +321,36 @@
           "items": [
             {
               "prompt": "At the bottom of a skate ramp, the ramp makes 28° with the ground. What is the other angle on the straight line?",
-              "answer": "152°",
-              "answerLines": 1
+              "answer": "152",
+              "answerLabel": "Angle:",
+              "unit": "°"
             },
             {
               "prompt": "A pizza is cut into 3 slices from the centre. Two slices have angles of 110° and 130°. What is the angle of the third slice?",
-              "answer": "120°",
-              "answerLines": 1
+              "answer": "120",
+              "answerLabel": "Angle:",
+              "unit": "°"
             },
             {
-              "prompt": "A coach draws two lines that meet at a right angle. A player runs along a line 35° from one of them, inside the right angle. What angle is left?",
-              "answer": "55°",
-              "answerLines": 1
+              "kind": "choice",
+              "prompt": "Which pair could sit side by side on a straight line?",
+              "options": [
+                "95° and 95°",
+                "130° and 50°",
+                "90° and 80°"
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "130° + 50° = 180°. The others add to 190° and 170°."
             },
             {
-              "prompt": "A Ferris wheel has 8 equal spokes. What is the angle between two spokes next to each other?",
-              "answer": "45°",
-              "answerLines": 1
-            }
-          ]
-        },
-        {
-          "title": "Think deeper",
-          "proficiency": "reasoning",
-          "example": {
-            "prompt": "Can a straight line hold two angles of 100°? Explain.",
-            "steps": [
-              "A straight line makes 180°.",
-              "100° + 100° = 200°.",
-              "200° is more than 180°, so no."
-            ],
-            "answer": "No"
-          },
-          "items": [
-            {
-              "prompt": "One angle on a straight line is 140°. Ali says the other is 220° because 360 - 140 = 220. Explain his mistake and find the right answer.",
-              "answer": "A straight line is 180°, not 360°: 180 - 140 = 40°.",
-              "answerLines": 2
-            },
-            {
-              "prompt": "Can two obtuse angles sit next to each other on a straight line? Explain.",
-              "answer": "No. Two angles over 90° add to more than 180°.",
-              "answerLines": 2
+              "kind": "mistake",
+              "prompt": "Ali found the missing angle on a straight line. Find his mistake and fix it.",
+              "work": [
+                "One angle is 140°.",
+                "360 - 140 = 220, so the other angle is 220°."
+              ],
+              "answer": "A straight line is 180°, not 360°. 180 - 140 = 40, so the other angle is 40°."
             }
           ]
         }
@@ -582,17 +381,23 @@
             {
               "prompt": "Two angles marked a and a 40° angle sit on a straight line. Find a.",
               "answer": "a = 70°",
-              "answerLines": 2
+              "lines": 2
             },
             {
+              "kind": "choice",
               "prompt": "Four equal angles meet at a point. How big is each?",
-              "answer": "90°",
-              "answerLines": 1
+              "options": [
+                "45°",
+                "90°",
+                "180°"
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "360° shared by 4 is 90° each."
             },
             {
               "prompt": "Five angles marked b meet at a point. Find b.",
-              "answer": "b = 72°",
-              "answerLines": 1
+              "answer": "b = 72°"
             }
           ]
         },
@@ -602,7 +407,7 @@
           "example": {
             "prompt": "Two angles on a straight line: one is double the other. Find both.",
             "steps": [
-              "Call the small one s. The big one is 2 x s.",
+              "Call the small one s. The big one is 2 × s.",
               "s + 2s = 3s = 180°",
               "s = 60°, so the angles are 60° and 120°."
             ],
@@ -612,12 +417,12 @@
             {
               "prompt": "Two complementary angles: one is double the other. Find both.",
               "answer": "30° and 60°",
-              "answerLines": 2
+              "lines": 2
             },
             {
               "prompt": "Three angles at a point: the second is double the first, and the third is triple the first. Find all three.",
               "answer": "60°, 120°, 180°",
-              "answerLines": 2
+              "lines": 2
             }
           ]
         },
@@ -636,15 +441,13 @@
           "items": [
             {
               "prompt": "Make a puzzle around a point where the missing angle is 100°. Draw it and write the answer.",
-              "box": 150,
-              "answerLines": 0,
-              "answer": "any angles adding to 260° with a missing 100°"
+              "answer": "any angles adding to 260° with a missing 100°",
+              "kind": "open"
             },
             {
               "prompt": "Make a right-angle puzzle where the missing angle is 18°. Draw it and write the answer.",
-              "box": 150,
-              "answerLines": 0,
-              "answer": "a right angle split into 72° and 18°"
+              "answer": "a right angle split into 72° and 18°",
+              "kind": "open"
             }
           ]
         }
@@ -716,7 +519,8 @@
                 ]
               },
               "hint": "Count on from 130 to 180.",
-              "answer": "50°"
+              "answer": "50°",
+              "working": "none"
             },
             {
               "prompt": "180 - 60 = ____",
@@ -741,7 +545,8 @@
                 ]
               },
               "hint": "Count on from 60 to 180.",
-              "answer": "120°"
+              "answer": "120°",
+              "working": "none"
             },
             {
               "prompt": "180 - 95 = ____",
@@ -766,7 +571,8 @@
                 ]
               },
               "hint": "95 is close to 100: 180 - 100 = 80, add 5 back.",
-              "answer": "85°"
+              "answer": "85°",
+              "working": "none"
             },
             {
               "prompt": "180 - 15 = ____",
@@ -791,7 +597,8 @@
                 ]
               },
               "hint": "Take away 10, then 5.",
-              "answer": "165°"
+              "answer": "165°",
+              "working": "none"
             }
           ]
         },
@@ -862,7 +669,8 @@
                 ]
               },
               "hint": "Add the two angles first: 100 + 100.",
-              "answer": "160°"
+              "answer": "160°",
+              "working": "none"
             },
             {
               "prompt": "360 - 250 = ____",
@@ -892,7 +700,8 @@
                 ]
               },
               "hint": "Add first: 150 + 100 = 250.",
-              "answer": "110°"
+              "answer": "110°",
+              "working": "none"
             }
           ]
         },
@@ -967,7 +776,8 @@
                 ]
               },
               "hint": "Count on from 50 to 90.",
-              "answer": "40°"
+              "answer": "40°",
+              "working": "none"
             },
             {
               "prompt": "90 - 20 = ____",
@@ -999,7 +809,8 @@
                 ]
               },
               "hint": "Count on from 20 to 90.",
-              "answer": "70°"
+              "answer": "70°",
+              "working": "none"
             }
           ]
         }
@@ -1009,11 +820,11 @@
   "slides": [
     {
       "kind": "title",
-      "notes": "Open Session 3 of the angles week. One line: today we find missing angles without measuring."
+      "notes": "Session 3 of our angles week: today we find missing angles without measuring them."
     },
     {
       "kind": "resources",
-      "notes": "Prep slide. Boards and markers, a protractor each to check answers. Print the Worksheet for all, and some Extension and Supported Worksheet copies."
+      "notes": "Before you start, put boards, markers and a protractor on every desk for checking. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
     },
     {
       "kind": "dailyReview",
@@ -1032,7 +843,7 @@
         "beats": [
           "SAY: Let's warm up with fractions, decimals and percentages again.",
           [
-            "ASK: Which is bigger: three fifths or 0.62?",
+            "ASK: Which is bigger, three fifths or 0.62?",
             "20 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 0.62"
           ],
@@ -1043,7 +854,7 @@
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: Three fifths is 0.60, so 0.62 is bigger. Tick or fix."
+            "SAY: Three fifths is 0.60, so 0.62 is bigger. Tick it or fix it."
           ]
         ],
         "trap": [
@@ -1076,7 +887,7 @@
         "beats": [
           [
             "ASK: Write 45 percent as a fraction in its simplest form.",
-            "25 sec. Cue: boards up on cue.",
+            "25 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 9/20"
           ],
           [
@@ -1086,7 +897,7 @@
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 45 hundredths simplifies to nine twentieths. Tick or fix."
+            "SAY: 45 hundredths simplifies to nine twentieths. Tick it or fix it."
           ]
         ],
         "trap": [
@@ -1114,7 +925,7 @@
         "beats": [
           [
             "ASK: What is 20 percent of 250?",
-            "20 sec. Cue: boards up on cue.",
+            "20 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 50"
           ],
           [
@@ -1124,7 +935,8 @@
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 10 percent is 25, so 20 percent is 50. Tick or fix."
+            "SAY: 10 percent of 250 is 25,",
+            "so 20 percent is 50. Tick it or fix it."
           ]
         ],
         "trap": [
@@ -1154,10 +966,11 @@
       "notes": {
         "answer": "1 245",
         "beats": [
-          "SAY: Now the written method. Line up the places and start with the ones.",
+          "SAY: Now for some written addition.",
+          "Line up the places, and always start with the ones.",
           [
-            "ASK: Solve it with the written method.",
-            "30 sec. Cue: boards up on cue.",
+            "ASK: Use the written method to solve this one.",
+            "30 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 1 245"
           ],
           [
@@ -1167,12 +980,12 @@
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 1 245. Tick or fix, and check every regroup."
+            "SAY: The answer is 1 245. Tick it or fix it, and check every regroup."
           ]
         ],
         "trap": [
           "forgetting to add a regrouped ten.",
-          "Fix: circle each carried digit, student re-adds that column."
+          "Fix: circle each carried digit, and they add that column again."
         ],
         "prep": "Algorithm fluency: 3 digits, then 4, then 5. Whole block under 6 minutes.",
         "tag": "[Fluency | Retention and recall | HITS 6]"
@@ -1197,10 +1010,10 @@
       "notes": {
         "answer": "10 343",
         "beats": [
-          "SAY: Now 4 digits. Same method, one more column.",
+          "SAY: Now it's 4 digits. It's the same method, just one more column.",
           [
-            "ASK: Solve it with the written method.",
-            "45 sec. Cue: boards up on cue.",
+            "ASK: Use the written method to solve this one.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 10 343"
           ],
           [
@@ -1210,12 +1023,12 @@
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 10 343. Tick or fix, and check every regroup."
+            "SAY: The answer is 10 343. Tick it or fix it, and check every regroup."
           ]
         ],
         "trap": [
           "forgetting to add a regrouped ten.",
-          "Fix: circle each carried digit, student re-adds that column."
+          "Fix: circle each carried digit, and they add that column again."
         ],
         "prep": "Algorithm fluency, next size up.",
         "tag": "[Fluency | Retention and recall | HITS 6]"
@@ -1240,10 +1053,10 @@
       "notes": {
         "answer": "88 223",
         "beats": [
-          "SAY: Now 5 digits. Same method, one more column.",
+          "SAY: Now it's 5 digits. It's the same method, just one more column.",
           [
-            "ASK: Solve it with the written method.",
-            "60 sec. Cue: boards up on cue.",
+            "ASK: Use the written method to solve this one.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 88 223"
           ],
           [
@@ -1253,12 +1066,12 @@
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 88 223. Tick or fix, and check every regroup."
+            "SAY: The answer is 88 223. Tick it or fix it, and check every regroup."
           ]
         ],
         "trap": [
           "forgetting to add a regrouped ten.",
-          "Fix: circle each carried digit, student re-adds that column."
+          "Fix: circle each carried digit, and they add that column again."
         ],
         "prep": "Algorithm fluency, next size up.",
         "tag": "[Fluency | Retention and recall | HITS 6]"
@@ -1276,12 +1089,12 @@
         "beats": [
           [
             "POINT to the learning intention.",
-            "SAY: Today we find angles without measuring them. We use facts instead."
+            "SAY: Today we find angles without measuring them, by using angle facts instead."
           ],
-          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          "SAY: Let's read our I can statements together. Cue: Everyone, together, on three.",
           [
-            "SAY: Knowing the two facts is where we start.",
-            "Finding the missing angle is our big goal today."
+            "SAY: Knowing the facts is where we start,",
+            "and finding a missing angle is our big goal today."
           ]
         ],
         "prep": "SC1 the facts; SC2 finding the unknown is the core and the exit evidence; SC3 explaining with the fact is the stretch.",
@@ -1311,22 +1124,23 @@
         "beats": [
           [
             "POINT to the straight line.",
-            "SAY: A straight line is a half turn, from our anchor."
+            "SAY: Remember our anchor? A straight line is a half turn."
           ],
           [
-            "ASK: How many degrees in a straight line? All the way round?",
+            "ASK: How many degrees are in a straight line,",
+            "and how many all the way round?",
             "10 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 180 and 360"
           ],
           [
             "SCAN boards for 180 and 360.",
             "80%+ -> move on.",
-            "Less -> turn together: half turn, full turn, re-ask."
+            "Less -> stand and turn together: half turn, full turn. Re-ask."
           ]
         ],
         "trap": [
           "writing 100 for a straight line.",
-          "Fix: add two quarter turns, student rewrites."
+          "Fix: add two quarter turns, 90 and 90, and they rewrite it."
         ],
         "prep": "Launch after the LI: the anchor becomes today's two facts. Under 3 minutes.",
         "tag": "[Launch | Retention and recall | HITS 3]"
@@ -1360,20 +1174,20 @@
       "notes": {
         "answer": "two angles that add to 180 degrees",
         "beats": [
-          "POINT to the word. SAY: Supplementary. Say it with me. Sup-ple-men-ta-ry.",
+          "POINT to the word. SAY: This word is supplementary. Say it with me: sup-ple-men-ta-ry.",
           [
-            "SAY: Two angles are supplementary when they add to 180.",
-            "They fit together into a straight line."
+            "SAY: Two angles are supplementary when they add to 180 degrees,",
+            "so they fit together to make a straight line."
           ],
           [
-            "ASK: Are 110° and 70° supplementary?",
+            "ASK: Are 110 degrees and 70 degrees supplementary?",
             "10 sec. Cue: Thumbs only, voices off. Show me... now.",
             "EXPECT: thumbs up, they add to 180"
           ]
         ],
         "trap": [
           "mixing up supplementary with 90.",
-          "Fix: point to the straight line, student re-says 180."
+          "Fix: point to the straight line, and they say 180 again."
         ],
         "prep": "Complementary (90) is taught inside the I Do; one word card keeps the load down.",
         "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
@@ -1419,25 +1233,25 @@
         "beats": [
           [
             "POINT to the straight line.",
-            "SAY: These two angles sit on a straight line, so together they make 180."
+            "SAY: These two angles sit on a straight line, so together they make 180 degrees."
           ],
           [
             "MODEL the number sentence.",
-            "SAY: I know 120, so the missing part is 180 take away 120."
+            "SAY: I know one part is 120, so the missing part is 180 take away 120."
           ],
           [
-            "ASK: What is x?",
-            "10 sec. Cue: boards up on cue.",
+            "ASK: So how big is angle x?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 60"
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 60 degrees. And 120 plus 60 makes 180, so it checks."
+            "SAY: It's 60 degrees. And 120 plus 60 makes 180, so it checks."
           ]
         ],
         "trap": [
           "subtracting from 360.",
-          "Fix: trace the straight line, student uses 180."
+          "Fix: trace the straight line, and they redo it from 180."
         ],
         "stretch": "Could x be bigger than 120? What would the diagram look like?",
         "help": "Write 120 + ___ = 180 and count on.",
@@ -1490,25 +1304,26 @@
         "beats": [
           [
             "POINT around the point.",
-            "SAY: These three angles go all the way round, so together they make 360."
+            "SAY: These three angles go all the way round, so together they make 360 degrees."
           ],
           [
             "MODEL adding what I know.",
-            "SAY: 100 and 120 make 220. The missing angle is 360 take away 220."
+            "SAY: First I add what I know: 100 and 120 make 220.",
+            "So the missing angle is 360 take away 220."
           ],
           [
-            "ASK: What is y?",
-            "15 sec. Cue: boards up on cue.",
+            "ASK: So how big is angle y?",
+            "15 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 140"
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 140 degrees. 100, 120 and 140 make 360."
+            "SAY: It's 140 degrees, because 100, 120 and 140 make 360."
           ]
         ],
         "trap": [
           "subtracting from 180.",
-          "Fix: trace all the way round, student uses 360."
+          "Fix: trace all the way round, and they redo it from 360."
         ],
         "stretch": "Split y into two angles so that one is double the other.",
         "help": "Add the known angles first, then count on to 360.",
@@ -1563,25 +1378,26 @@
         "beats": [
           [
             "POINT to the square corner.",
-            "SAY: The little square tells me this whole corner is 90."
+            "SAY: The little square tells me this whole corner is a right angle, 90 degrees."
           ],
           [
             "MODEL the subtraction.",
-            "SAY: Angles that add to 90 are complementary. 90 take away 35."
+            "SAY: Angles that add to 90 are called complementary,",
+            "so I work out 90 take away 35."
           ],
           [
-            "ASK: What is z?",
-            "10 sec. Cue: boards up on cue.",
+            "ASK: So how big is angle z?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 55"
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 55 degrees. 35 plus 55 makes 90."
+            "SAY: It's 55 degrees, because 35 plus 55 makes 90."
           ]
         ],
         "trap": [
           "using 180 because it is an angle.",
-          "Fix: point to the square, student uses 90."
+          "Fix: point to the square, and they redo it from 90."
         ],
         "stretch": "Which pairs of whole numbers are complementary and both multiples of 15?",
         "help": "Write 35 + ___ = 90 and count on.",
@@ -1611,25 +1427,26 @@
       "notes": {
         "answer": "B - 110°",
         "beats": [
-          "SAY: Find the whole first. Then choose.",
+          "SAY: Remember to find the whole first, then choose your answer.",
           [
-            "ASK: One angle on a straight line is 70. What is the other?",
-            "10 sec. Cue: voices off. Point... now.",
+            "ASK: If one angle on a straight line is 70 degrees,",
+            "what is the other angle?",
+            "10 sec. Cue: Voices off. Point... now. Hold your point.",
             "EXPECT: pointing to B"
           ],
           [
             "SCAN the room, back row first.",
-            "80%+ -> reveal, cold call one child: why not A?",
-            "Less -> trace a straight line and say half turn, 180, re-ask."
+            "80%+ -> reveal, then cold call one student: Why isn't it A?",
+            "Less -> trace a straight line, say half turn, 180. Re-ask."
           ],
           [
             "REVEAL after pointing is scanned.",
-            "SAY: B. 180 take away 70 is 110."
+            "SAY: It's B. A straight line is 180 degrees, and 180 take away 70 is 110."
           ]
         ],
         "trap": [
           "pointing to A or C.",
-          "Fix: ask which whole a straight line makes, student redoes."
+          "Fix: ask which whole a straight line makes, and they redo it."
         ],
         "prep": "First decision point: the wrong answers tell you which whole was used.",
         "tag": "[CFU | Supported application | SC2 | HITS 7]"
@@ -1797,7 +1614,7 @@
         ],
         "trap": [
           "using the wrong whole.",
-          "Fix: name the shape, straight, corner or point, then redo."
+          "Fix: name the shape, straight line, corner or point, and they redo it."
         ],
         "stretch": "Write the number sentence you used for each one.",
         "help": "Keep the anchor on your desk: 90, 180, 360.",
@@ -1838,10 +1655,10 @@
       "notes": {
         "answer": "f = 132°. 42 means 90 was used",
         "beats": [
-          "SAY: This one is just for you. Find the whole first.",
+          "SAY: This one is just for you. Find the whole first, then the missing angle.",
           [
-            "ASK: What is f?",
-            "20 sec. Cue: boards up on cue.",
+            "ASK: How big is angle f?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 132"
           ],
           [
@@ -1851,12 +1668,12 @@
           ],
           [
             "REVEAL after boards are scanned.",
-            "SAY: 132 degrees. 48 plus 132 makes 180. Tick or fix."
+            "SAY: It's 132 degrees, because 48 plus 132 makes 180. Tick it or fix it."
           ]
         ],
         "trap": [
           "writing 42.",
-          "Fix: ask what the whole line makes, student uses 180."
+          "Fix: ask what the whole line makes, and they redo it from 180."
         ],
         "prep": "The hinge before independence. Students writing 42 or 312 start with the teacher on the Supported Worksheet.",
         "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
@@ -1871,21 +1688,21 @@
         "beats": [
           [
             "POINT to the steps.",
-            "SAY: Read each question, solve it carefully, then check your answers."
+            "SAY: Read each question carefully, solve it carefully, then check your answers."
           ],
           [
-            "SAY: When you finish, the early finisher option is the Extension.",
-            "Say the steps with me. Everyone, together, on three."
+            "SAY: If you finish, the Extension is your early finisher option.",
+            "Let's read the steps together. Cue: Everyone, together, on three."
           ],
-          "CIRCULATE. Ask: which whole did you use?",
-          "TIME 20 minutes. Check-in at question 10."
+          "CIRCULATE and ask: Which whole did you use?",
+          "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
         ],
         "trap": [
           "mixing up 180 and 360.",
-          "Fix: name the shape first, student redoes."
+          "Fix: name the shape first, and they redo it."
         ],
         "stretch": "Extension: angle puzzles with number sentences.",
-        "help": "Supported Worksheet: number sentences started for you.",
+        "help": "Supported Worksheet: the whole is given and each number sentence is started.",
         "prep": "Independent practice across the three wholes, worded problems and reasoning. Sheet is evidence for SC2 and SC3.",
         "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
       }
@@ -1924,10 +1741,10 @@
       "notes": {
         "answer": "g = 145°: 360 - 125 - 90 = 145",
         "beats": [
-          "SAY: Last one. The answer and the number sentence on your board.",
+          "SAY: Here's the last one. Write the answer and your number sentence on your board.",
           [
-            "ASK: Find g.",
-            "30 sec. Cue: boards up on cue.",
+            "ASK: How big is angle g?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
             "EXPECT: 145"
           ],
           [
@@ -1937,7 +1754,7 @@
         ],
         "trap": [
           "forgetting the right angle.",
-          "Fix: none now, record the name."
+          "Fix: none now. Record the name for tomorrow."
         ],
         "prep": "Exit evidence for SC2 with a hidden 90: the square marker has to be read.",
         "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
@@ -1950,7 +1767,7 @@
       "notes": {
         "answer": "open - listen for straight 180, point 360, corner 90",
         "beats": [
-          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          "SAY: Let's read our I can statements together. Cue: Everyone, together, on three.",
           [
             "ASK: How sure are you that you can find a missing angle?",
             "5 sec. Cue: Thumbs only, voices off. Show me... now.",
@@ -1962,7 +1779,7 @@
           ],
           [
             "ASK: Tell your partner how you choose the whole.",
-            "20 sec. Turn and tell, partner A first.",
+            "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
             "EXPECT: straight line 180, point 360, square corner 90"
           ]
         ],

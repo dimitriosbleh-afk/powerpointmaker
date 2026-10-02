@@ -1,0 +1,1137 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 7,
+  "session": 4,
+  "title": "Multi-Step Money Problems",
+  "subtitle": "Term 4 Week 7, Session 4",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Money and Percentages | Year 5/6 Maths | Session 4",
+  "outputFolder": "T4W7_Maths_S4_Money_Problems",
+  "fileName": "Session 4 - Multi-Step Money Problems.pptx",
+  "titleVisual": {
+   "type": "table",
+   "rows": [
+    [
+     "Plan",
+     "Step"
+    ],
+    [
+     "Know",
+     "$50 to spend"
+    ],
+    [
+     "Need",
+     "Cost of 3 items"
+    ],
+    [
+     "Steps",
+     "Add, then compare"
+    ]
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 6 (VC2M6N09): formulating multi-step practical money problems with fractions, decimals and percentages, choosing operations and checking that answers make sense",
+   "shape": "example-first with a plan routine: the teacher writes the steps in words before calculating, because multi-step problems fail at the planning stage",
+   "criticalFeature": "write a plan in words before you calculate: what do I know, what do I need, which steps?",
+   "decisionPoints": [
+    "the choice check: the first step of a two-step problem",
+    "the hinge: can Ava afford it?",
+    "the exit ticket"
+   ],
+   "anchor": "read it, model it, solve it, check it: say what the answer means in the situation",
+   "catchUp": "Missed earlier sessions? Show one sale price and one GST price on the board before the launch."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Calculators for checking (optional)",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The fortnight's anchor on the board: read it, model it, solve it, check it",
+   "A plan frame: I know... I need... Step 1... Step 2..."
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Canteen orders, change from a purchase, fractions and percentages of money, a mistake to fix and saving for a bike.",
+   "title": "Multi-Step Money Problems",
+   "subtitle": "Plan the steps in words, then calculate, then check.",
+   "sections": [
+    {
+     "title": "Canteen orders",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "Sam buys 2 sausage rolls and a juice. He pays with $10. Change?",
+      "steps": [
+       "Cost: 2 × $3.50 + $1.80 = $8.80.",
+       "Change: $10 - $8.80 = $1.20.",
+       "Check: under $10, so change makes sense."
+      ],
+      "answer": "$1.20"
+     },
+     "items": [
+      {
+       "prompt": "Use the canteen menu.",
+       "visual": {
+        "type": "table",
+        "rows": [
+         [
+          "Canteen item",
+          "Price"
+         ],
+         [
+          "Sausage roll",
+          "$3.50"
+         ],
+         [
+          "Fruit cup",
+          "$2.20"
+         ],
+         [
+          "Juice",
+          "$1.80"
+         ],
+         [
+          "Muffin",
+          "$2.75"
+         ]
+        ],
+        "maxH": 140
+       },
+       "parts": [
+        {
+         "prompt": "A muffin and a juice?",
+         "answer": "$4.55"
+        },
+        {
+         "prompt": "3 fruit cups?",
+         "answer": "$6.60"
+        },
+        {
+         "prompt": "Change from $20 for 4 sausage rolls?",
+         "answer": "$6"
+        },
+        {
+         "prompt": "One of each item?",
+         "answer": "$10.25"
+        },
+        {
+         "prompt": "2 muffins and 2 juices?",
+         "answer": "$9.10"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Two steps",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "A $60 game is 1/3 off. Mia pays with a $50 note. Change?",
+      "steps": [
+       "Step 1: 1/3 of $60 = $20 off, so $40.",
+       "Step 2: $50 - $40 = $10.",
+       "Check: $10 is reasonable."
+      ],
+      "answer": "$10"
+     },
+     "items": [
+      {
+       "prompt": "Liam has $45. He spends 2/5 of it on a book. How much does he have left?",
+       "answer": "2/5 of $45 = $18; $45 - $18 = $27",
+       "answerLabel": "Left: "
+      },
+      {
+       "prompt": "A pack of 4 tennis balls costs $9.60. The coach buys 6 packs and pays 10% GST on top. What is the total?",
+       "answer": "6 × $9.60 = $57.60; GST $5.76; total $63.36",
+       "answerLabel": "Total:"
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Zoe worked out the cost of 3 drinks at $2.40 each with a $10 note. Find her mistake and fix it.",
+       "work": [
+        "$10 - $2.40 = $7.60.",
+        "Her change is $7.60."
+       ],
+       "answer": "She only paid for one drink. 3 × $2.40 = $7.20, so the change is $10 - $7.20 = $2.80."
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which plan answers: 'How much do 5 tickets at $12 cost with $5 off the total?'",
+       "options": [
+        "5 × 12, then - 5",
+        "5 - 12, then × 5",
+        "12 - 5, then × 5"
+       ],
+       "answer": 0,
+       "reason": true,
+       "explain": "Find the total first (5 × $12 = $60), then take the $5 off the total: $55. The third plan takes $5 off every ticket."
+      }
+     ]
+    },
+    {
+     "title": "Saving for a bike",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "Jai saves $15 a week for a $90 scooter. How many weeks?",
+      "steps": [
+       "$90 divided by $15 = 6.",
+       "6 weeks."
+      ],
+      "answer": "6 weeks"
+     },
+     "items": [
+      {
+       "prompt": "A bike costs $340. Ruby has saved $115 and saves $25 a week. How many more weeks until she can buy it?",
+       "answer": "$225 more to save; 225 divided by 25 = 9 weeks",
+       "answerLabel": "Weeks:"
+      },
+      {
+       "prompt": "The bike goes on sale at 15% off before Ruby has saved enough. How much less does she need to save altogether now?",
+       "answer": "15% of $340 = $51 less",
+       "answerLabel": "Less:"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Working backwards from change, sharing costs fairly and a planning puzzle, with worked examples.",
+   "title": "Extension: Money Puzzles",
+   "subtitle": "Work backwards. Check every step.",
+   "sections": [
+    {
+     "title": "Work backwards",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Ben bought 3 equal drinks and got $3.25 change from $10. Price of one drink?",
+      "steps": [
+       "Spent: $10 - $3.25 = $6.75.",
+       "$6.75 divided by 3 = $2.25.",
+       "One drink: $2.25."
+      ],
+      "answer": "$2.25"
+     },
+     "items": [
+      {
+       "prompt": "Kai bought 4 equal pies and got $4.60 change from $20. How much was one pie?",
+       "answer": "Spent $15.40; one pie $3.85",
+       "answerLabel": "One pie:"
+      },
+      {
+       "prompt": "After spending 3/8 of her money, Sophie has $25 left. How much did she start with?",
+       "answer": "5/8 = $25, so 1/8 = $5, start $40",
+       "answerLabel": "Start:"
+      }
+     ]
+    },
+    {
+     "title": "Share it fairly",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "3 friends share a $27 pizza and a $6 drink equally. Each pays?",
+      "steps": [
+       "Total: $27 + $6 = $33.",
+       "$33 divided by 3 = $11."
+      ],
+      "answer": "$11 each"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Five friends go to a footy match. Work out each person's share.",
+       "columns": [
+        "Cost",
+        "Total",
+        "Each"
+       ],
+       "rows": [
+        [
+         "5 tickets at $28",
+         "",
+         ""
+        ],
+        [
+         "Train: $46 for the group",
+         "",
+         ""
+        ],
+        [
+         "Food: $63.50 for the group",
+         "",
+         ""
+        ],
+        [
+         "Everything",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "5 tickets at $28",
+         "$140",
+         "$28"
+        ],
+        [
+         "Train: $46 for the group",
+         "$46",
+         "$9.20"
+        ],
+        [
+         "Food: $63.50 for the group",
+         "$63.50",
+         "$12.70"
+        ],
+        [
+         "Everything",
+         "$249.50",
+         "$49.90"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Plan it",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Plan a $30 movie trip for 2.",
+      "steps": [
+       "List costs: 2 tickets, snacks.",
+       "Add them up.",
+       "Check: under $30."
+      ],
+      "answer": "a plan under $30"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "You have $50 for a day out with a friend. Tickets are $14.50 each, lunch is $9.80 each and the bus is $3.70 each way per person. Can you afford it? If not, what would you change?",
+       "answer": "Each: $14.50 + $9.80 + $7.40 = $31.70; for 2: $63.40. Not affordable: $13.40 over. Change: skip lunch out or walk one way."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: whole-dollar prices, the steps written for you, and a hint on every question.",
+   "title": "Money Problems: Step by Step",
+   "subtitle": "One step at a time.",
+   "sections": [
+    {
+     "title": "Total cost",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "2 pies at $4 and a drink at $3. Total?",
+      "steps": [
+       "Step 1: 2 × $4 = $8.",
+       "Step 2: $8 + $3 = $11."
+      ],
+      "answer": "$11"
+     },
+     "items": [
+      {
+       "prompt": "3 balls at $5 and a pump at $8. Step 1: 3 × $5 = ___  Step 2: ___ + $8 = ___",
+       "hint": "Multiply first, then add.",
+       "answer": "$15, $23",
+       "answerLabel": "Total:"
+      },
+      {
+       "prompt": "4 books at $6 and a bag at $10. Step 1: ___  Step 2: ___",
+       "hint": "Multiply first, then add.",
+       "answer": "$24, $34",
+       "answerLabel": "Total:"
+      }
+     ]
+    },
+    {
+     "title": "Change",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "You spend $13 and pay with $20. Change?",
+      "steps": [
+       "$20 - $13.",
+       "Count on from 13 to 20: $7."
+      ],
+      "answer": "$7"
+     },
+     "items": [
+      {
+       "prompt": "You spend $16 and pay with $20. Change?",
+       "hint": "Count on from 16 to 20.",
+       "answer": "$4",
+       "answerLabel": "Change:"
+      },
+      {
+       "prompt": "You buy 2 hats at $9 each and pay with $50. Change?",
+       "hint": "First 2 × $9, then 50 take away that.",
+       "answer": "$32",
+       "answerLabel": "Change:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 4 of our money and percentages fortnight: today we solve multi-step money problems."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk, and draw the plan frame on the board. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Divide",
+   "from": "teacher",
+   "prompts": [
+    "Work out 1 836 ÷ 6."
+   ],
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 1836,
+    "divisor": 6
+   },
+   "reveal": {
+    "answers": [
+     "306"
+    ]
+   },
+   "notes": {
+    "answer": "306",
+    "beats": [
+     [
+      "SAY: Let's warm up with the four processes."
+     ],
+     [
+      "ASK: What is 1 836 divided by 6?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 306"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> use the division bracket together,",
+      "and write a zero when 6 won't go. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 306. 6 won't go into 3,",
+      "so we write a 0. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 36, dropping the zero.",
+     "Fix: ask how many sixes in 3, and they write the 0."
+    ],
+    "prep": "Review of the four processes (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Multiply",
+   "from": "teacher",
+   "prompts": [
+    "Work out 235 × 24."
+   ],
+   "reveal": {
+    "answers": [
+     "5 640"
+    ]
+   },
+   "notes": {
+    "answer": "5 640",
+    "beats": [
+     [
+      "ASK: What is 235 times 24?",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 5 640"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> split 24 into 20 and 4, multiply each, then add. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 235 times 20 is 4 700,",
+      "and 235 times 4 is 940: 5 640. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "forgetting the zero in the tens row.",
+     "Fix: say times 20 is times 2 then times 10, and they redo it."
+    ],
+    "prep": "Four processes review: two-digit multiplication.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Order of operations",
+   "from": "teacher",
+   "prompts": [
+    "Work out 6 + 4 × 5."
+   ],
+   "reveal": {
+    "answers": [
+     "26"
+    ]
+   },
+   "notes": {
+    "answer": "26",
+    "beats": [
+     [
+      "ASK: What is 6 plus 4 times 5?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 26"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> say multiplication before addition, then work it out. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 4 times 5 is 20 first,",
+      "then 6 plus 20 is 26. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 50.",
+     "Fix: say times before plus, and they redo it."
+    ],
+    "prep": "Four processes review: order of operations.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 3 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 672,
+    "divisor": 8
+   },
+   "reveal": {
+    "answers": [
+     "84"
+    ]
+   },
+   "notes": {
+    "answer": "84",
+    "beats": [
+     [
+      "SAY: Now for some short division with the division bracket.",
+      "Divide each digit from the left, and carry any remainder across."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 84"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 84.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "Division fluency: 3 digits, then 4, then 5. Keep the whole block under 6 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 4 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 4356,
+    "divisor": 9
+   },
+   "reveal": {
+    "answers": [
+     "484"
+    ]
+   },
+   "notes": {
+    "answer": "484",
+    "beats": [
+     [
+      "SAY: Now it's 4 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 484"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 484.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Divide with the division bracket: 5 digits",
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 61236,
+    "divisor": 4
+   },
+   "reveal": {
+    "answers": [
+     "15 309"
+    ]
+   },
+   "notes": {
+    "answer": "15 309",
+    "beats": [
+     [
+      "SAY: Now it's 5 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the division bracket to solve this one.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 15 309"
+     ],
+     [
+      "SCAN boards for each digit of the answer.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 15 309.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "leaving out a zero in the answer when a digit is too small to share.",
+     "Fix: ask \"How many times does it go?\", write 0, and they carry on."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to plan and solve money problems with more than one step.",
+   "successCriteria": [
+    "I can find what I know and what I need in a money problem.",
+    "I can plan the steps and solve a problem with more than one step.",
+    "I can check that my answer makes sense in the situation."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: This fortnight we've worked out sales, best buys and price rises.",
+      "Today we put them together in problems with more than one step."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 know and need is reachable for everyone; SC2 planning and solving is the core and the exit evidence; SC3 checking in context is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "What do we need to know?",
+   "lines": [
+    "Ava has $20.",
+    "She buys 3 drinks at $2.50 each.",
+    "How much change does she get?"
+   ],
+   "notes": {
+    "answer": "$12.50",
+    "beats": [
+     [
+      "POINT to each line.",
+      "SAY: Let's read this problem together,",
+      "and find out what we know and what we need."
+     ],
+     [
+      "ASK: Before we calculate: what are the two steps? Tell your partner.",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: find the cost of 3 drinks, then take it from $20"
+     ],
+     [
+      "ASK: Now solve it. How much change does Ava get?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $12.50"
+     ],
+     [
+      "SAY: 3 drinks cost 7.50, and 20 take away 7.50 is 12.50.",
+      "Planning the steps first made it easy. That's today's habit."
+     ]
+    ],
+    "trap": [
+     "writing $17.50, paying for one drink.",
+     "Fix: reread 3 drinks, and they redo step 1."
+    ],
+    "prep": "The launch comes after the LI: steps in words before numbers. Under 5 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "estimate",
+   "meaning": "A close, sensible guess, used to check that an answer makes sense.",
+   "example": "3 drinks at $2.50 is about 3 × $2.50, so less than $10.",
+   "pictogram": "think",
+   "notes": {
+    "answer": "about $16",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is estimate. Say it with me: es-ti-mate."
+     ],
+     [
+      "SAY: An estimate is a close, sensible guess.",
+      "We use it before or after we calculate, to check the answer makes sense."
+     ],
+     [
+      "ASK: Estimate: about how much do 4 pies at $3.95 cost?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: about $16"
+     ]
+    ],
+    "trap": [
+     "writing $1580.",
+     "Fix: round $3.95 to $4 first, and they estimate again."
+    ],
+    "prep": "Estimating is the 'check it' step of the anchor.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Plan, then solve",
+   "steps": [
+    "Know: $50. Need: change after 2 tickets at $18.50.",
+    "Step 1: 2 × $18.50 = $37.",
+    "Step 2: $50 - $37 = $13.",
+    "Check: about $40 spent, so about $10 change."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Plan",
+      ""
+     ],
+     [
+      "I know",
+      "$50; tickets $18.50 each"
+     ],
+     [
+      "I need",
+      "change after 2 tickets"
+     ],
+     [
+      "Step 1",
+      "cost of 2 tickets"
+     ],
+     [
+      "Step 2",
+      "$50 take away the cost"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "$13 change"
+    ]
+   },
+   "notes": {
+    "answer": "$13",
+    "beats": [
+     [
+      "MODEL the plan in words.",
+      "SAY: Before I calculate, I write what I know: 50 dollars, and tickets at 18.50.",
+      "What I need is the change after 2 tickets."
+     ],
+     [
+      "MODEL each step.",
+      "SAY: Step 1, two tickets: 2 times 18.50 is 37.",
+      "Step 2, the change: 50 take away 37 is 13 dollars."
+     ],
+     [
+      "ASK: Check it: is 13 dollars sensible? Thumbs up or down.",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up: about $40 spent, about $10 change"
+     ],
+     [
+      "REVEAL after thumbs are scanned.",
+      "SAY: Yes. 2 tickets are about 40 dollars, so about 10 dollars change.",
+      "13 is close, so it makes sense."
+     ]
+    ],
+    "trap": [
+     "doing the steps in the wrong order.",
+     "Fix: reread what you need, and they replan."
+    ],
+    "stretch": "What if each ticket were 10% off?",
+    "help": "Fill in the plan frame before calculating.",
+    "prep": "Plan in words first: the critical feature. SC1 and SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Fractions and percentages in steps",
+   "steps": [
+    "Sam has $80. He spends 1/4 on a shirt.",
+    "Step 1: 1/4 of $80 = $20. Left: $60.",
+    "Step 2: he saves 10% of what is left: $6.",
+    "He has $54 to spend."
+   ],
+   "visual": {
+    "type": "barModel",
+    "parts": 4,
+    "shaded": 1,
+    "total": "$80",
+    "labels": [
+     "$20",
+     "$20",
+     "$20",
+     "$20"
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "$54 left to spend"
+    ]
+   },
+   "notes": {
+    "answer": "$54",
+    "beats": [
+     [
+      "MODEL step 1 on the bar.",
+      "SAY: Sam has 80 dollars and spends a quarter on a shirt.",
+      "A quarter of 80 is 20, so he has 60 left."
+     ],
+     [
+      "MODEL step 2.",
+      "SAY: Then he saves 10 percent of what's left. 10 percent of 60 is 6."
+     ],
+     [
+      "ASK: So how much does Sam have left to spend?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $54"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 60 take away 6 is 54 dollars.",
+      "The second step used what was left, not the 80."
+     ]
+    ],
+    "trap": [
+     "finding 10% of $80.",
+     "Fix: point to what was left, and they redo step 2."
+    ],
+    "stretch": "What if he saved 10% first, then spent a quarter?",
+    "help": "Write the amount left after each step.",
+    "prep": "Each step uses the answer from the step before. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "What is the first step?",
+   "prompt": "4 hats at $12 each, paid with $100. Change? Point to A, B or C",
+   "options": [
+    {
+     "text": "$100 - $12",
+     "misconception": "takes away the price of one hat before finding the total"
+    },
+    {
+     "text": "4 × $12"
+    },
+    {
+     "text": "$100 ÷ 4",
+     "misconception": "shares the money instead of finding the cost"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Don't solve it yet. Just choose the first step."
+     ],
+     [
+      "ASK: What is the first step to find the change?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What is the second step?",
+      "Less -> write the plan frame together: know, need, steps. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B: find the cost of 4 hats first, 48 dollars.",
+      "Then 100 take away 48 is 52 dollars change."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: reread 4 hats, and they choose again."
+    ],
+    "prep": "First decision point: planning before calculating. A and C show a missing plan.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Solve it in steps",
+   "ask": "Solve it. Write your steps.",
+   "routine": "boards",
+   "thinkTime": 40,
+   "pivot": "fill in the plan frame together before calculating",
+   "followUp": "cold call one board: What was your first step, and why?",
+   "items": [
+    {
+     "text": "3 pies at $4.20. Change from $20?",
+     "answer": "$7.40"
+    },
+    {
+     "text": "A $90 jacket is 1/3 off. You pay with $100. Change?",
+     "answer": "$40"
+    },
+    {
+     "text": "5 tickets at $16, with $10 off the total. Cost?",
+     "answer": "$70"
+    },
+    {
+     "text": "You have $60, spend 1/2, then 25% of the rest. Left?",
+     "answer": "$22.50",
+     "say": "Half leaves 30, and 25 percent of 30 is 7.50, so 22.50."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write your steps and the answer on your board."
+    ],
+    "trap": [
+     "skipping a step.",
+     "Fix: ask what you need, and they replan."
+    ],
+    "stretch": "Write a two-step problem whose answer is $15.",
+    "help": "Use the plan frame on the board.",
+    "prep": "Guided practice from two steps to steps with fractions and percentages. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Can Ava afford it?",
+   "visual": {
+    "type": "text",
+    "text": "Ava has $45. She wants 2 shirts at $16.50 each and a $14 cap."
+   },
+   "label": "Can she afford all three? By how much is she over or under?",
+   "reveal": {
+    "answers": [
+     "$47: $2 over, so no"
+    ]
+   },
+   "notes": {
+    "answer": "No: $47 is $2 over",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Plan the steps, then solve, then check."
+     ],
+     [
+      "ASK: Can Ava afford all three, and by how much is she over or under?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: no, $2 over"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> fill in the plan frame together, then re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 2 shirts are 33, plus 14 is 47 dollars.",
+      "That's 2 dollars more than she has, so no. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "adding only one shirt.",
+     "Fix: reread 2 shirts, and they redo step 1."
+    ],
+    "prep": "The hinge before independent work. Anyone with one shirt or without a decision starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC3 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Plan and solve multi-step money problems on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: What was your plan before you calculated?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "skipping the plan.",
+     "Fix: fill in know, need and steps, and they redo it."
+    ],
+    "stretch": "Extension: working backwards, sharing costs and a planning puzzle.",
+    "help": "Supported Worksheet: whole-dollar prices with the steps written for you.",
+    "prep": "Independent practice: canteen orders, two-step problems, a mistake and saving. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "How much change does Noah get? Write your steps."
+   ],
+   "visual": {
+    "type": "text",
+    "text": "Noah buys 3 footy cards packs at $4.80 each. He pays with $20."
+   },
+   "notes": {
+    "answer": "$5.60",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: How much change does Noah get, and what were your steps?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $5.60"
+     ],
+     [
+      "RECORD who skips a step or subtracts one pack.",
+      "They start tomorrow's modelling task with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing $15.20.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: a new two-step problem with decimals.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner why you plan before you calculate.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for so we know the steps and their order",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can",
+      "solve a money problem with more than one step?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with $15.20 on the board matters most."
+     ],
+     [
+      "ASK: Why do we plan before we calculate?",
+      "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: so we know the steps and their order"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: a whole shopping problem.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

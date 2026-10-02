@@ -1,0 +1,1211 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 8,
+  "session": 4,
+  "title": "Budgeting an Excursion",
+  "subtitle": "Term 4 Week 8, Session 4",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Budgeting | Year 5/6 Maths | Session 4",
+  "outputFolder": "T4W8_Maths_S4_Excursion_Budget",
+  "fileName": "Session 4 - Budgeting an Excursion.pptx",
+  "titleVisual": {
+   "type": "table",
+   "rows": [
+    [
+     "Excursion cost",
+     "Amount"
+    ],
+    [
+     "Bus (whole class)",
+     "$600"
+    ],
+    [
+     "Entry (each)",
+     "$12"
+    ],
+    [
+     "Students",
+     "25"
+    ]
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 6 (VC2M6N09): modelling a budget for a class excursion, calculating totals and cost per student, and interpreting the result",
+   "shape": "example-first: one excursion costed fully, then the class works one with different numbers, because fixed and per-person costs are new",
+   "criticalFeature": "share the fixed costs (like the bus) between everyone, then add the per-person costs (like entry)",
+   "decisionPoints": [
+    "the choice check: bus cost per student",
+    "the hinge: cost per student for a zoo trip",
+    "the exit ticket"
+   ],
+   "anchor": "read it, model it, solve it, check it: say what the answer means in the situation",
+   "catchUp": "Missed earlier sessions? Show one budget: add the costs, compare with the money you have."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Calculators for checking (optional)",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The fortnight's anchor on the board: read it, model it, solve it, check it",
+   "Cost per student = fixed costs shared + per-person costs"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Fixed or per person, a trip cost table, a mistake to fix, and the Year 6 camp.",
+   "title": "Budgeting an Excursion",
+   "subtitle": "Share the fixed costs, then add the per-person costs.",
+   "sections": [
+    {
+     "title": "Fixed or per person?",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Is 'bus hire $500' fixed or per person?",
+      "steps": [
+       "The bus costs $500 however many come.",
+       "So it is a fixed cost, shared by everyone."
+      ],
+      "answer": "fixed"
+     },
+     "items": [
+      {
+       "kind": "sort",
+       "prompt": "Sort each excursion cost.",
+       "cards": [
+        "bus hire",
+        "entry ticket each",
+        "lunch each",
+        "guide for the group",
+        "souvenir each",
+        "venue booking"
+       ],
+       "groups": [
+        "fixed (shared)",
+        "per person (each)"
+       ],
+       "answer": {
+        "fixed (shared)": [
+         "bus hire",
+         "guide for the group",
+         "venue booking"
+        ],
+        "per person (each)": [
+         "entry ticket each",
+         "lunch each",
+         "souvenir each"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "title": "Trip costs",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "Bus $480 for 24 students, entry $8 each. Cost per student?",
+      "steps": [
+       "Share the bus: $480 divided by 24 = $20.",
+       "Add entry: $20 + $8 = $28.",
+       "$28 per student."
+      ],
+      "answer": "$28"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Find the cost per student for each trip.",
+       "columns": [
+        "Trip",
+        "Bus (shared)",
+        "Entry each",
+        "Students",
+        "Bus each",
+        "Cost per student"
+       ],
+       "rows": [
+        [
+         "Museum",
+         "$480",
+         "$8",
+         "24",
+         "",
+         ""
+        ],
+        [
+         "Aquarium",
+         "$650",
+         "$15",
+         "25",
+         "",
+         ""
+        ],
+        [
+         "Pool",
+         "$300",
+         "$6",
+         "30",
+         "",
+         ""
+        ],
+        [
+         "Theatre",
+         "$720",
+         "$18",
+         "24",
+         "",
+         ""
+        ],
+        [
+         "Farm",
+         "$400",
+         "$9",
+         "20",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "Museum",
+         "$480",
+         "$8",
+         "24",
+         "$20",
+         "$28"
+        ],
+        [
+         "Aquarium",
+         "$650",
+         "$15",
+         "25",
+         "$26",
+         "$41"
+        ],
+        [
+         "Pool",
+         "$300",
+         "$6",
+         "30",
+         "$10",
+         "$16"
+        ],
+        [
+         "Theatre",
+         "$720",
+         "$18",
+         "24",
+         "$30",
+         "$48"
+        ],
+        [
+         "Farm",
+         "$400",
+         "$9",
+         "20",
+         "$20",
+         "$29"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "The Year 6 camp",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "A camp for 50 costs $3 000 for the site plus $40 each for food. Total?",
+      "steps": [
+       "Food: 50 × $40 = $2 000.",
+       "Total: $3 000 + $2 000 = $5 000."
+      ],
+      "answer": "$5 000"
+     },
+     "items": [
+      {
+       "prompt": "52 students go to camp. The bus is $1 560 and activities are $85 each. What is the cost per student?",
+       "answer": "Bus $30 each + $85 = $115",
+       "answerLabel": "Each:"
+      },
+      {
+       "prompt": "The school pays 20% of each student's cost. How much does each family pay?",
+       "answer": "20% of $115 = $23, so $92",
+       "answerLabel": "Family:"
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Lily worked out the cost per student for a trip: bus $500 for 25 students, entry $10 each.",
+       "work": [
+        "$500 + $10 = $510.",
+        "$510 divided by 25 = $20.40 each."
+       ],
+       "answer": "Entry is per person, so don't share it. Bus: $500 divided by 25 = $20, plus $10 entry = $30 each."
+      },
+      {
+       "kind": "choice",
+       "prompt": "If more students come, what happens to the cost per student?",
+       "options": [
+        "it goes up",
+        "it goes down",
+        "it stays the same"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "The fixed costs are shared by more people, so each share is smaller. Per-person costs stay the same."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Rounding the price up, a minimum number of students, and planning a full excursion, with worked examples.",
+   "title": "Extension: Excursion Planner",
+   "subtitle": "Round up so costs are covered.",
+   "sections": [
+    {
+     "title": "Round up to cover it",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Bus $500 shared by 28. Each?",
+      "steps": [
+       "500 divided by 28 = 17.857...",
+       "Charging $17.85 would not cover it.",
+       "Round up: $17.86 (or charge $18)."
+      ],
+      "answer": "$17.86, or $18"
+     },
+     "items": [
+      {
+       "prompt": "A $650 bus is shared by 27 students. What should each pay to cover it (to the nearest cent)?",
+       "answer": "650 divided by 27 = 24.07..., so $24.08 (or $25)",
+       "lines": 2
+      },
+      {
+       "prompt": "Why should the school round up, not down?",
+       "answer": "Rounding down would leave the bus not fully paid for.",
+       "lines": 2
+      }
+     ]
+    },
+    {
+     "title": "How many students?",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Bus $600. To keep the bus under $25 each, how many must come?",
+      "steps": [
+       "600 divided by 25 = 24.",
+       "At least 25 students (24 gives exactly $25)."
+      ],
+      "answer": "25"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "A $720 bus. Find the bus cost per student for each class size.",
+       "columns": [
+        "Students",
+        "Bus each"
+       ],
+       "rows": [
+        [
+         "18",
+         ""
+        ],
+        [
+         "20",
+         ""
+        ],
+        [
+         "24",
+         ""
+        ],
+        [
+         "30",
+         ""
+        ],
+        [
+         "36",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "18",
+         "$40"
+        ],
+        [
+         "20",
+         "$36"
+        ],
+        [
+         "24",
+         "$30"
+        ],
+        [
+         "30",
+         "$24"
+        ],
+        [
+         "36",
+         "$20"
+        ]
+       ]
+      },
+      {
+       "prompt": "What is the smallest class size that keeps the bus at $25 or less each?",
+       "answer": "29 (720 divided by 29 = $24.83)",
+       "answerLabel": "Students:"
+      }
+     ]
+    },
+    {
+     "title": "Plan an excursion",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Plan a trip budget.",
+      "steps": [
+       "List fixed costs and per-person costs.",
+       "Find the cost per student.",
+       "Check: is it fair and affordable?"
+      ],
+      "answer": "a full budget"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Plan an excursion for your class (25 students) to a place you choose. Estimate a bus cost, entry and lunch. Find the cost per student and say whether you think it is reasonable.",
+       "answer": "Check: fixed costs shared by 25, per-person costs added, a cost per student and a sensible judgement."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: friendly numbers, a two-step frame, and a hint on every question.",
+   "title": "Excursion Costs: Step by Step",
+   "subtitle": "Step 1: share the bus. Step 2: add the entry.",
+   "sections": [
+    {
+     "title": "Share the bus",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Bus $200 for 20 students.",
+      "steps": [
+       "$200 divided by 20.",
+       "$10 each."
+      ],
+      "answer": "$10"
+     },
+     "items": [
+      {
+       "prompt": "Bus $300 for 30 students. Each pays $___",
+       "hint": "300 divided by 30.",
+       "answer": "$10",
+       "answerLabel": "Each:"
+      },
+      {
+       "prompt": "Bus $400 for 20 students. Each pays $___",
+       "hint": "400 divided by 20.",
+       "answer": "$20",
+       "answerLabel": "Each:"
+      }
+     ]
+    },
+    {
+     "title": "Add the entry",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Bus $10 each, entry $5 each. Total each?",
+      "steps": [
+       "$10 + $5 = $15."
+      ],
+      "answer": "$15"
+     },
+     "items": [
+      {
+       "prompt": "Bus $10 each, entry $8 each. Total each = $___",
+       "hint": "Add them.",
+       "answer": "$18",
+       "answerLabel": "Each:"
+      },
+      {
+       "prompt": "Bus $500 for 25 students, entry $6 each. Step 1: ___  Step 2: ___",
+       "hint": "500 divided by 25, then add 6.",
+       "answer": "$20, then $26",
+       "answerLabel": "Each:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 4 of our budgeting week: today we budget a class excursion."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk; calculators are optional for checking. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Subtract",
+   "from": "teacher",
+   "prompts": [
+    "Work out 7 205 - 3 648."
+   ],
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     7205,
+     3648
+    ],
+    "op": "-"
+   },
+   "reveal": {
+    "answers": [
+     "3 557"
+    ]
+   },
+   "notes": {
+    "answer": "3 557",
+    "beats": [
+     [
+      "SAY: Let's warm up with the four processes."
+     ],
+     [
+      "ASK: What is 7 205 take away 3 648?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 3 557"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> regroup across the zero together on the board. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 3 557.",
+      "Check by adding back: 3 557 plus 3 648 is 7 205."
+     ]
+    ],
+    "trap": [
+     "taking the smaller digit from the bigger one.",
+     "Fix: ask if the top digit is big enough, and they regroup."
+    ],
+    "prep": "Review of the four processes (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Divide",
+   "from": "teacher",
+   "prompts": [
+    "Work out 2 352 ÷ 8."
+   ],
+   "visual": {
+    "type": "shortDivision",
+    "dividend": 2352,
+    "divisor": 8
+   },
+   "reveal": {
+    "answers": [
+     "294"
+    ]
+   },
+   "notes": {
+    "answer": "294",
+    "beats": [
+     [
+      "ASK: What is 2 352 divided by 8?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 294"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> use the division bracket together, carrying remainders. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 294.",
+      "Check: 294 times 8 is 2 352. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "dropping a carried remainder.",
+     "Fix: write each remainder small beside the next digit, and they redo it."
+    ],
+    "prep": "Four processes review: division.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Multiply",
+   "from": "teacher",
+   "prompts": [
+    "Work out 48 × 26."
+   ],
+   "reveal": {
+    "answers": [
+     "1 248"
+    ]
+   },
+   "notes": {
+    "answer": "1 248",
+    "beats": [
+     [
+      "ASK: What is 48 times 26?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 1 248"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> split 26 into 20 and 6, multiply each, then add. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 48 times 20 is 960, and 48 times 6 is 288:",
+      "1 248. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "forgetting the zero when multiplying by 20.",
+     "Fix: say times 20 is times 2 then times 10, and they redo it."
+    ],
+    "prep": "Four processes review: two-digit multiplication.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "9 × 3"
+   ],
+   "reveal": {
+    "answers": [
+     "27"
+    ]
+   },
+   "notes": {
+    "answer": "27",
+    "beats": [
+     [
+      "SAY: Now for our nine times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 9 times 3?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 27"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 10 threes is 30, take one 3 away. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 27. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 24 or 36.",
+     "Fix: 10 threes is 30, take away 3, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "9 × 11"
+   ],
+   "reveal": {
+    "answers": [
+     "99"
+    ]
+   },
+   "notes": {
+    "answer": "99",
+    "beats": [
+     [
+      "SAY: Here's the next one."
+     ],
+     [
+      "ASK: What is 9 times 11?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 99"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 9 tens, plus one more 9. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 99. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 91.",
+     "Fix: 9 tens is 90, plus one more 9, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "108 ÷ 9"
+   ],
+   "reveal": {
+    "answers": [
+     "12"
+    ]
+   },
+   "notes": {
+    "answer": "12",
+    "beats": [
+     [
+      "SAY: Now a division. How many nines make 108?"
+     ],
+     [
+      "ASK: What is 108 divided by 9?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 12"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> 10 nines is 90, then count on in nines. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 12. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 11.",
+     "Fix: check: 12 nines is 108, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to budget a class excursion and work out the cost for each student.",
+   "successCriteria": [
+    "I can sort costs into fixed costs and per-person costs.",
+    "I can work out the cost per student for an excursion.",
+    "I can explain how the number of students changes the cost per student."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: We've budgeted for ourselves.",
+      "Today we budget a whole class excursion."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 sorting costs is reachable for everyone; SC2 cost per student is the core and the exit evidence; SC3 how class size changes it is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Who pays for the bus?",
+   "lines": [
+    "A bus costs $600 for the day.",
+    "25 students are going."
+   ],
+   "notes": {
+    "answer": "$24 each",
+    "beats": [
+     [
+      "POINT to each line.",
+      "SAY: The bus costs 600 dollars for the whole day,",
+      "whether 10 students come or 40."
+     ],
+     [
+      "ASK: If 25 students share the bus fairly, how much does each pay?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $24"
+     ],
+     [
+      "SCAN boards for 24.",
+      "80%+ -> ask: What if 30 students came?",
+      "Less -> share 600 into 25 equal parts together,",
+      "4 lots of 25 is 100. Re-ask."
+     ],
+     [
+      "SAY: Each pays 24 dollars. If 30 came, each would pay 20.",
+      "Sharing a fixed cost is the first step of any excursion budget."
+     ]
+    ],
+    "trap": [
+     "multiplying $600 by 25.",
+     "Fix: ask whether each student pays more or less than the whole bus,",
+     "and they divide."
+    ],
+    "prep": "The launch comes after the LI: a fixed cost shared fairly. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "fixed cost",
+   "meaning": "A cost that stays the same no matter how many people come.",
+   "example": "A $600 bus is a fixed cost: it costs $600 for 20 or 30 students.",
+   "pictogram": "bus",
+   "notes": {
+    "answer": "no, per person",
+    "beats": [
+     [
+      "POINT to the words.",
+      "SAY: These words are fixed cost. Say them with me: fixed cost."
+     ],
+     [
+      "SAY: A fixed cost stays the same however many people come, like the bus.",
+      "A per-person cost, like an entry ticket, is paid by each person."
+     ],
+     [
+      "ASK: Is an entry ticket a fixed cost? Thumbs up for yes, down for no.",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs down: it is per person"
+     ]
+    ],
+    "trap": [
+     "thumbs up.",
+     "Fix: ask whether 2 students pay for 2 tickets, and they decide again."
+    ],
+    "prep": "Fixed shared; per person added.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Cost per student",
+   "steps": [
+    "Fixed: bus $600, shared by 25: $24 each.",
+    "Per person: entry $12.",
+    "Cost per student: $24 + $12 = $36.",
+    "Check: total = 25 × $36 = $900."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Cost",
+      "Amount"
+     ],
+     [
+      "Bus (whole class)",
+      "$600"
+     ],
+     [
+      "Entry (each)",
+      "$12"
+     ],
+     [
+      "Students",
+      "25"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "$36 per student"
+    ]
+   },
+   "notes": {
+    "answer": "$36",
+    "beats": [
+     [
+      "MODEL sharing the bus.",
+      "SAY: The bus is a fixed cost, so I share it:",
+      "600 divided by 25 is 24 dollars each."
+     ],
+     [
+      "MODEL adding the entry.",
+      "SAY: Entry is per person, so each student pays it in full: 12 dollars.",
+      "24 plus 12 is 36 dollars per student."
+     ],
+     [
+      "ASK: Check: does 25 times 36 dollars cover the bus and all the entries?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: yes: $900 = $600 + $300"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 25 times 36 is 900,",
+      "and the bus plus 25 entries is 600 plus 300: 900.",
+      "It checks."
+     ]
+    ],
+    "trap": [
+     "sharing the entry too.",
+     "Fix: ask whether each student pays a whole ticket, and they redo it."
+    ],
+    "stretch": "What would it cost per student if 30 came?",
+    "help": "Write fixed and per person in two columns first.",
+    "prep": "Share fixed, add per person: the critical feature. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "More students, lower cost",
+   "steps": [
+    "Bus $600. 20 students: $30 each.",
+    "30 students: $20 each.",
+    "The entry stays $12 each.",
+    "More students share the bus, so each pays less."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Students",
+      "Bus each",
+      "Plus entry",
+      "Per student"
+     ],
+     [
+      "20",
+      "$30",
+      "$12",
+      "$42"
+     ],
+     [
+      "25",
+      "$24",
+      "$12",
+      "$36"
+     ],
+     [
+      "30",
+      "$20",
+      "$12",
+      "$32"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "40 students: $15 + $12 = $27"
+    ]
+   },
+   "notes": {
+    "answer": "$27",
+    "beats": [
+     [
+      "POINT down the table.",
+      "SAY: Watch what happens as more students come.",
+      "The bus share drops: 30, then 24, then 20."
+     ],
+     [
+      "POINT to the entry column.",
+      "SAY: But the entry stays 12, because everyone pays their own ticket."
+     ],
+     [
+      "ASK: What would the cost per student be if 40 came?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $27"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 600 divided by 40 is 15, plus 12 is 27 dollars."
+     ]
+    ],
+    "trap": [
+     "thinking the entry also drops.",
+     "Fix: point to the entry column, and they redo it."
+    ],
+    "stretch": "How many students for $25 each?",
+    "help": "Fill in the bus-each column first.",
+    "prep": "Class size changes the shared part only. SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Bus cost per student",
+   "prompt": "A $750 bus for 30 students. Point to A, B or C",
+   "options": [
+    {
+     "text": "$25"
+    },
+    {
+     "text": "$720",
+     "misconception": "subtracts the students from the cost"
+    },
+    {
+     "text": "$22 500",
+     "misconception": "multiplies instead of sharing"
+    }
+   ],
+   "answer": 0,
+   "notes": {
+    "answer": "A",
+    "beats": [
+     [
+      "SAY: Share the bus fairly between the students."
+     ],
+     [
+      "ASK: How much does each student pay for a 750 dollar bus, with 30 students?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to A"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: Why can't it be C?",
+      "Less -> share 750 into 30 equal parts together. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's A: 750 divided by 30 is 25 dollars.",
+      "C multiplied, which gives far more than the whole bus."
+     ]
+    ],
+    "trap": [
+     "pointing to C.",
+     "Fix: ask whether one student pays more than the whole bus, and they choose again."
+    ],
+    "prep": "First decision point: share the fixed cost.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Cost per student",
+   "ask": "What is the cost per student?",
+   "routine": "boards",
+   "thinkTime": 30,
+   "pivot": "share the fixed cost, then add the per-person cost",
+   "followUp": "cold call one board: Which cost did you share?",
+   "items": [
+    {
+     "text": "Bus $400, 20 students, entry $7 each",
+     "answer": "$27"
+    },
+    {
+     "text": "Bus $540, 27 students, entry $15 each",
+     "answer": "$35"
+    },
+    {
+     "text": "Bus $360, guide $90, 30 students, lunch $8 each",
+     "answer": "$23",
+     "say": "Fixed costs 450, shared by 30 is 15, plus 8 is 23."
+    },
+    {
+     "text": "Bus $480, 24 students, entry $9.50 each",
+     "answer": "$29.50"
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write the cost per student on your board."
+    ],
+    "trap": [
+     "sharing the per-person cost.",
+     "Fix: ask whether each student pays it in full, and they redo it."
+    ],
+    "stretch": "Find the total cost of each trip too.",
+    "help": "Write fixed and per person in two columns first.",
+    "prep": "Guided practice including two fixed costs and a decimal. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "The zoo trip",
+   "visual": {
+    "type": "text",
+    "text": "Bus $700 for 28 students. Zoo entry $16 each."
+   },
+   "label": "What is the cost per student?",
+   "reveal": {
+    "answers": [
+     "$25 + $16 = $41"
+    ]
+   },
+   "notes": {
+    "answer": "$41",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Share the fixed cost, then add the per-person cost."
+     ],
+     [
+      "ASK: What is the cost per student for the zoo trip?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $41"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> share 700 by 28 together, then add 16. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 700 divided by 28 is 25,",
+      "plus 16 is 41 dollars. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing $25.57 (sharing $716).",
+     "Fix: ask whether each student pays a whole entry, and they redo it."
+    ],
+    "prep": "The hinge before independent work. Anyone sharing the entry, or multiplying, starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Budget excursions on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Which costs are fixed, and which are per person?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "sharing per-person costs.",
+     "Fix: sort the costs first, and they redo it."
+    ],
+    "stretch": "Extension: rounding up, class sizes, and planning your own trip.",
+    "help": "Supported Worksheet: friendly numbers and a two-step frame.",
+    "prep": "Independent practice: sorting costs, a trip table, camp problems and a mistake. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "What will each student pay for the aquarium trip?"
+   ],
+   "visual": {
+    "type": "text",
+    "text": "A coach costs $585 and 26 students are going. Aquarium tickets are $14 per student."
+   },
+   "notes": {
+    "answer": "$22.50 + $14 = $36.50",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What will each student pay for the aquarium trip?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $22.50 + $14 = $36.50"
+     ],
+     [
+      "RECORD who shares the tickets or multiplies.",
+      "Their names go to tomorrow's holiday budget group."
+     ]
+    ],
+    "trap": [
+     "writing $22.50.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: a new trip with a decimal share.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner what happens to the cost per student when more students come.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for it goes down: the fixed cost is shared more ways",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can budget an excursion?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with $22.50 on the board matters most."
+     ],
+     [
+      "ASK: What happens to the cost per student when more students come?",
+      "20 sec. Cue: Partner B first. You have 20 seconds. Go.",
+      "EXPECT: it goes down: the fixed cost is shared more ways"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: comparing holiday budgets.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

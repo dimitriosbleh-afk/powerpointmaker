@@ -1,0 +1,1275 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 8,
+  "session": 1,
+  "title": "Earning and Spending",
+  "subtitle": "Term 4 Week 8, Session 1",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Budgeting | Year 5/6 Maths | Session 1",
+  "outputFolder": "T4W8_Maths_S1_Earning_Spending",
+  "fileName": "Session 1 - Earning and Spending.pptx",
+  "titleVisual": {
+   "type": "table",
+   "rows": [
+    [
+     "Income",
+     "Amount"
+    ],
+    [
+     "Pocket money",
+     "$15"
+    ],
+    [
+     "Dog walking",
+     "$12"
+    ],
+    [
+     "Total",
+     "$27"
+    ]
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 6 (VC2M6N09): modelling situations involving earning money and budgeting, asking 'Can I afford it?' and 'Do I need it?'",
+   "shape": "example-first with a weekly budget table, because income, expenses and money left over are new words for many",
+   "criticalFeature": "money left over = income minus all the expenses",
+   "decisionPoints": [
+    "the choice check: which is an expense?",
+    "the hinge: can Leo afford the game this week?",
+    "the exit ticket"
+   ],
+   "anchor": "read it, model it, solve it, check it: say what the answer means in the situation",
+   "catchUp": "Missed last week? Show one change-from-a-purchase problem with the plan frame before the launch."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Calculators for checking (optional)",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The fortnight's anchor on the board: read it, model it, solve it, check it",
+   "Income - expenses = money left over"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Sort income and expenses, read Ava's week, a budget table, a mistake, and can I afford it?",
+   "title": "Earning and Spending",
+   "subtitle": "Money left over = income minus all the expenses.",
+   "sections": [
+    {
+     "title": "Income or expense?",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Is 'a $10 birthday gift' income or an expense?",
+      "steps": [
+       "Income is money coming in.",
+       "An expense is money going out.",
+       "A gift comes in: income."
+      ],
+      "answer": "income"
+     },
+     "items": [
+      {
+       "kind": "sort",
+       "prompt": "Sort each money event for a Year 6 student.",
+       "cards": [
+        "pocket money",
+        "buying lunch",
+        "selling old toys",
+        "phone credit",
+        "paper round pay",
+        "footy registration",
+        "birthday money",
+        "bus fare"
+       ],
+       "groups": [
+        "income (in)",
+        "expense (out)"
+       ],
+       "answer": {
+        "income (in)": [
+         "pocket money",
+         "selling old toys",
+         "paper round pay",
+         "birthday money"
+        ],
+        "expense (out)": [
+         "buying lunch",
+         "phone credit",
+         "footy registration",
+         "bus fare"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "title": "Ava's week",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Income $30, expenses $18. Left over?",
+      "steps": [
+       "Left over = income - expenses.",
+       "$30 - $18 = $12."
+      ],
+      "answer": "$12"
+     },
+     "items": [
+      {
+       "span": "full",
+       "prompt": "Ava earned $20 pocket money and $15 mowing. She spent $8.50 at the canteen, $6 on bus fares and $12.50 at the movies.",
+       "parts": [
+        {
+         "prompt": "Total income?",
+         "answer": "$35"
+        },
+        {
+         "prompt": "Total expenses?",
+         "answer": "$27"
+        },
+        {
+         "prompt": "Money left over?",
+         "answer": "$8"
+        }
+       ]
+      },
+      {
+       "kind": "table",
+       "prompt": "Fill the gaps in this weekly budget.",
+       "columns": [
+        "Week",
+        "Income",
+        "Expenses",
+        "Left over"
+       ],
+       "rows": [
+        [
+         "1",
+         "$25",
+         "$18",
+         ""
+        ],
+        [
+         "2",
+         "$40",
+         "",
+         "$12.50"
+        ],
+        [
+         "3",
+         "",
+         "$22.75",
+         "$7.25"
+        ],
+        [
+         "4",
+         "$32.50",
+         "$32.50",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "1",
+         "$25",
+         "$18",
+         "$7"
+        ],
+        [
+         "2",
+         "$40",
+         "$27.50",
+         "$12.50"
+        ],
+        [
+         "3",
+         "$30",
+         "$22.75",
+         "$7.25"
+        ],
+        [
+         "4",
+         "$32.50",
+         "$32.50",
+         "$0"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Can I afford it?",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "Mia has $8 left over each week. Can she afford a $25 game after 3 weeks?",
+      "steps": [
+       "3 × $8 = $24.",
+       "$24 is less than $25.",
+       "Not yet: $1 short."
+      ],
+      "answer": "no, $1 short"
+     },
+     "items": [
+      {
+       "prompt": "Jai earns $18 a week and spends $11.50. Can he afford $30 footy boots after 5 weeks? Explain.",
+       "answer": "Left over $6.50 a week; 5 × $6.50 = $32.50, so yes, with $2.50 spare.",
+       "lines": 3
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Zara worked out her money left over. Find her mistake and fix it.",
+       "work": [
+        "Income $40. Expenses $12, $9.50 and $6.",
+        "$40 - $12 = $28 left over."
+       ],
+       "answer": "She only took off one expense. Expenses total $27.50, so $40 - $27.50 = $12.50 left over."
+      },
+      {
+       "kind": "choice",
+       "prompt": "Sam can afford a $60 skateboard, but he already has one. What is the best question to ask first?",
+       "options": [
+        "Is it on sale?",
+        "Do I need it?",
+        "Is it red?"
+       ],
+       "answer": 1,
+       "reason": true,
+       "explain": "Being able to afford something does not mean you need it. Asking 'Do I need it?' helps you save for things that matter more."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. A monthly budget, percentage of income spent, and planning a wants and needs list, with worked examples.",
+   "title": "Extension: Budget Planner",
+   "subtitle": "Plan a month. Find the percentage spent.",
+   "sections": [
+    {
+     "title": "A monthly budget",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Earn $15 a week for 4 weeks, spend $40. Left over?",
+      "steps": [
+       "Income: 4 × $15 = $60.",
+       "$60 - $40 = $20 left over."
+      ],
+      "answer": "$20"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Lily earns $22.50 a week. Complete her 4-week budget.",
+       "columns": [
+        "Week",
+        "Income",
+        "Expenses",
+        "Left over",
+        "Total saved"
+       ],
+       "rows": [
+        [
+         "1",
+         "$22.50",
+         "$14.00",
+         "",
+         ""
+        ],
+        [
+         "2",
+         "$22.50",
+         "$19.75",
+         "",
+         ""
+        ],
+        [
+         "3",
+         "$22.50",
+         "$8.20",
+         "",
+         ""
+        ],
+        [
+         "4",
+         "$22.50",
+         "$22.50",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "1",
+         "$22.50",
+         "$14.00",
+         "$8.50",
+         "$8.50"
+        ],
+        [
+         "2",
+         "$22.50",
+         "$19.75",
+         "$2.75",
+         "$11.25"
+        ],
+        [
+         "3",
+         "$22.50",
+         "$8.20",
+         "$14.30",
+         "$25.55"
+        ],
+        [
+         "4",
+         "$22.50",
+         "$22.50",
+         "$0",
+         "$25.55"
+        ]
+       ]
+      },
+      {
+       "prompt": "In which week did Lily have the most left over? What fraction of that week's income did she keep?",
+       "answer": "Week 3: $14.30 of $22.50, about 64% (143/225)",
+       "lines": 3
+      },
+      {
+       "prompt": "Lily wants a $45 jacket. If weeks 1 to 4 repeat, after how many weeks can she buy it?",
+       "answer": "After 4 weeks she has $25.55; after week 7 she has $25.55 + $8.50 + $2.75 + $14.30 = $51.10, so 7 weeks",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Percentage spent",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Income $40, spent $30. What percentage was spent?",
+      "steps": [
+       "$30 out of $40 = 3/4.",
+       "3/4 = 75%."
+      ],
+      "answer": "75%"
+     },
+     "items": [
+      {
+       "prompt": "Income $50, spent $35. What percentage was spent? What percentage was saved?",
+       "answer": "70% spent, 30% saved",
+       "answerLabel": "Answer:"
+      },
+      {
+       "prompt": "Ben spends 85% of his $60. Tom spends $48 of his $64. Who saves a bigger percentage? Explain.",
+       "answer": "Ben saves 15%; Tom spends 75%, saves 25%. Tom saves a bigger percentage.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Needs and wants",
+     "proficiency": "understanding",
+     "columns": 1,
+     "example": {
+      "prompt": "Is lunch a need or a want?",
+      "steps": [
+       "You must eat to be healthy.",
+       "Lunch is a need (a fancy lunch might be a want)."
+      ],
+      "answer": "need"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Make a list of 5 needs and 5 wants for a Year 6 student. Then plan a $50 budget that covers the needs first. Show the costs and what is left.",
+       "answer": "Check: needs are covered first, costs add up correctly, and the total is $50 or less."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: whole-dollar amounts, one expense at a time, and a hint on every question.",
+   "title": "Budget: Step by Step",
+   "subtitle": "In minus out = left over.",
+   "sections": [
+    {
+     "title": "In or out?",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Pocket money: in or out?",
+      "steps": [
+       "Money you get comes in.",
+       "In: income."
+      ],
+      "answer": "in"
+     },
+     "items": [
+      {
+       "kind": "choice",
+       "prompt": "Buying a drink: in or out?",
+       "hint": "Do you get money or spend it?",
+       "options": [
+        "in",
+        "out"
+       ],
+       "answer": 1
+      },
+      {
+       "kind": "choice",
+       "prompt": "Washing the car for $5: in or out?",
+       "hint": "Do you get money or spend it?",
+       "options": [
+        "in",
+        "out"
+       ],
+       "answer": 0
+      }
+     ]
+    },
+    {
+     "title": "Left over",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "In $20. Out $7 and $5. Left over?",
+      "steps": [
+       "Add what goes out: $7 + $5 = $12.",
+       "$20 - $12 = $8."
+      ],
+      "answer": "$8"
+     },
+     "items": [
+      {
+       "prompt": "In $30. Out $10 and $6. Left over = ___",
+       "hint": "Add the outs first: 10 + 6.",
+       "answer": "$14",
+       "answerLabel": "Left:"
+      },
+      {
+       "prompt": "In $25. Out $8, $4 and $3. Left over = ___",
+       "hint": "Add the three outs first.",
+       "answer": "$10",
+       "answerLabel": "Left:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 1 of our budgeting week: today we work out income, expenses and money left over."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk; calculators are optional for checking. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Sale price",
+   "from": "teacher",
+   "prompts": [
+    "A $70 jacket is 20% off. What is the sale price?"
+   ],
+   "reveal": {
+    "answers": [
+     "$56"
+    ]
+   },
+   "notes": {
+    "answer": "$56",
+    "beats": [
+     [
+      "SAY: Let's warm up with last week's money maths."
+     ],
+     [
+      "ASK: What is the sale price of a 70 dollar jacket at 20 percent off?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $56"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> find 10 percent, double it, then take it off. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 20 percent of 70 is 14 off,",
+      "so you pay 56 dollars. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing $14, the discount.",
+     "Fix: ask what you pay, and they subtract."
+    ],
+    "prep": "Review of last week's modelling with percentages (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Price with GST",
+   "from": "teacher",
+   "prompts": [
+    "A $36 game plus 10% GST. Total?"
+   ],
+   "reveal": {
+    "answers": [
+     "$39.60"
+    ]
+   },
+   "notes": {
+    "answer": "$39.60",
+    "beats": [
+     [
+      "ASK: What does a 36 dollar game cost with GST?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $39.60"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> find 10 percent, 3.60, then add it on. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 10 percent of 36 is 3.60, so 39.60 dollars. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing $32.40.",
+     "Fix: say GST is added on, and they add."
+    ],
+    "prep": "Week 7 review: percentage increases.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Best buy",
+   "from": "teacher",
+   "prompts": [
+    "5 for $8 or 8 for $12?"
+   ],
+   "reveal": {
+    "answers": [
+     "8 for $12 ($1.50 vs $1.60)"
+    ]
+   },
+   "notes": {
+    "answer": "8 for $12 ($1.50 vs $1.60)",
+    "beats": [
+     [
+      "ASK: Which is the better buy: 5 for 8 dollars, or 8 for 12 dollars?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 8 for $12"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> find the price of one in each together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 5 for 8 is 1.60 each, and 8 for 12 is 1.50 each,",
+      "so 8 for 12 is the better buy. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "choosing 5 for $8 because it costs less.",
+     "Fix: find the price for one in each, and they compare."
+    ],
+    "prep": "Week 7 review: unit prices.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "9 × 6"
+   ],
+   "reveal": {
+    "answers": [
+     "54"
+    ]
+   },
+   "notes": {
+    "answer": "54",
+    "beats": [
+     [
+      "SAY: Now for our nine times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 9 times 6?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 54"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 10 sixes is 60, take one 6 away. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 54. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 56 or 45.",
+     "Fix: 10 sixes is 60, take away 6, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "9 × 8"
+   ],
+   "reveal": {
+    "answers": [
+     "72"
+    ]
+   },
+   "notes": {
+    "answer": "72",
+    "beats": [
+     [
+      "SAY: Here's the next one."
+     ],
+     [
+      "ASK: What is 9 times 8?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 72"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> 10 eights is 80, take one 8 away. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 72. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 81 or 63.",
+     "Fix: 10 eights is 80, take away 8, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "63 ÷ 9"
+   ],
+   "reveal": {
+    "answers": [
+     "7"
+    ]
+   },
+   "notes": {
+    "answer": "7",
+    "beats": [
+     [
+      "SAY: Now a division. How many nines make 63?"
+     ],
+     [
+      "ASK: What is 63 divided by 9?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 7"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> count up in nines to 63. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 7. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 6 or 8.",
+     "Fix: check: 7 nines is 63, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to work out income, expenses and money left over.",
+   "successCriteria": [
+    "I can sort money into income and expenses.",
+    "I can work out the money left over in a budget.",
+    "I can decide whether I can afford something, and whether I need it."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: This week is about earning, saving and budgeting.",
+      "Today we track money coming in and going out."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 sorting is reachable for everyone; SC2 money left over is the core and the exit evidence; SC3 afford and need is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Where does the money go?",
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Food",
+     "Fun",
+     "Transport",
+     "Saving"
+    ],
+    "values": [
+     12,
+     15,
+     6,
+     7
+    ],
+    "title": "Leo's $40 week",
+    "yLabel": "Dollars"
+   },
+   "prompt": "Leo had $40 this week. What did he spend most on?",
+   "notes": {
+    "answer": "fun ($15); he saved $7",
+    "beats": [
+     [
+      "POINT to the graph.",
+      "SAY: Leo got 40 dollars this week. This graph shows where it went."
+     ],
+     [
+      "ASK: What did Leo spend most on, and how much did he save?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: fun, $15; saved $7"
+     ],
+     [
+      "SCAN boards for fun and 7.",
+      "80%+ -> cold call one student: Is that a good way to use $40? Why?",
+      "Less -> lay a ruler across each column top together. Re-ask."
+     ],
+     [
+      "SAY: Fun was the biggest, at 15 dollars, and he saved 7.",
+      "Today we track money coming in and going out,",
+      "so we can make choices like Leo's."
+     ]
+    ],
+    "trap": [
+     "reading the scale wrongly.",
+     "Fix: lay a ruler across the column top, and they read again."
+    ],
+    "prep": "The launch comes after the LI: a real week of money. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "expense",
+   "meaning": "Money you spend: money going out.",
+   "example": "Bus fares and canteen lunches are expenses.",
+   "pictogram": "coins",
+   "notes": {
+    "answer": "income",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is expense. Say it with me: ex-pense."
+     ],
+     [
+      "SAY: An expense is money you spend, money going out.",
+      "Its partner is income: money coming in."
+     ],
+     [
+      "ASK: Is pocket money income or an expense?",
+      "Show one finger for income, two for expense.",
+      "5 sec. Cue: Fingers at your chest... show me.",
+      "EXPECT: one finger: income"
+     ]
+    ],
+    "trap": [
+     "calling pocket money an expense.",
+     "Fix: ask whether it comes in or goes out, and they decide again."
+    ],
+    "prep": "Income and expense are the two sides of every budget.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "A weekly budget",
+   "steps": [
+    "Add the income: $20 + $15 = $35.",
+    "Add the expenses: $8.50 + $6 + $12.50 = $27.",
+    "Left over = $35 - $27 = $8.",
+    "Check: less than the income."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Ava's week",
+      "Amount"
+     ],
+     [
+      "Pocket money (in)",
+      "$20.00"
+     ],
+     [
+      "Mowing (in)",
+      "$15.00"
+     ],
+     [
+      "Canteen (out)",
+      "$8.50"
+     ],
+     [
+      "Bus fares (out)",
+      "$6.00"
+     ],
+     [
+      "Movie (out)",
+      "$12.50"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "$8 left over"
+    ]
+   },
+   "notes": {
+    "answer": "$8",
+    "beats": [
+     [
+      "MODEL adding the income.",
+      "SAY: Ava's money coming in is 20 dollars",
+      "pocket money and 15 for mowing: 35 dollars."
+     ],
+     [
+      "MODEL adding the expenses.",
+      "SAY: Going out: 8.50, 6 and 12.50. That's 27 dollars of expenses."
+     ],
+     [
+      "ASK: So how much money does Ava have left over?",
+      "15 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $8"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 35 take away 27 is 8 dollars left over.",
+      "That's what she could save this week."
+     ]
+    ],
+    "trap": [
+     "taking off only one expense.",
+     "Fix: add all the expenses first, and they redo it."
+    ],
+    "stretch": "What percentage of her income did Ava spend?",
+    "help": "Circle the ins in one colour and the outs in another.",
+    "prep": "Left over = income minus all expenses: the critical feature. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Can I afford it? Do I need it?",
+   "steps": [
+    "Leo saves $9 a week.",
+    "After 4 weeks: 4 × $9 = $36.",
+    "A $34 game: $36 is enough, so he can afford it.",
+    "Do I need it? Think before buying."
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Week",
+      "Saved"
+     ],
+     [
+      "1",
+      "$9"
+     ],
+     [
+      "2",
+      "$18"
+     ],
+     [
+      "3",
+      "$27"
+     ],
+     [
+      "4",
+      "$36"
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "yes, after 4 weeks: $2 spare"
+    ]
+   },
+   "notes": {
+    "answer": "yes after 4 weeks; need is a choice",
+    "beats": [
+     [
+      "POINT to the table.",
+      "SAY: Leo has 9 dollars left over each week,",
+      "and he wants a 34 dollar game."
+     ],
+     [
+      "MODEL checking each week.",
+      "SAY: After 3 weeks he has 27, not enough.",
+      "After 4 weeks, 36: he can afford it.",
+      "But there's a second question: do I need it?"
+     ],
+     [
+      "ASK: Leo hasn't finished his last game. Should he buy it? Tell your partner.",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: a reason to wait or to buy"
+     ],
+     [
+      "REVEAL after partners have shared.",
+      "SAY: He can afford it after 4 weeks, with 2 dollars spare.",
+      "Whether he should is his choice."
+     ]
+    ],
+    "trap": [
+     "saying yes after 3 weeks.",
+     "Fix: check 27 against 34, and they recount."
+    ],
+    "stretch": "How long at $7 a week?",
+    "help": "Keep a running total each week.",
+    "prep": "Afford and need are different questions. SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which is an expense?",
+   "prompt": "Point to A, B or C",
+   "options": [
+    {
+     "text": "Selling cupcakes at a stall",
+     "misconception": "thinks any money activity is spending"
+    },
+    {
+     "text": "Buying a footy ticket"
+    },
+    {
+     "text": "Getting paid for chores",
+     "misconception": "confuses money coming in with money going out"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Think: does the money come in, or go out?"
+     ],
+     [
+      "ASK: Which one is an expense?",
+      "10 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What are A and C?",
+      "Less -> act it out: hold out a hand for in,",
+      "give a coin away for out. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B: buying a ticket is money going out.",
+      "A and C both bring money in, so they're income."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: ask whether you get money or spend it at a stall,",
+     "and they choose again."
+    ],
+    "prep": "First decision point: income versus expense.",
+    "tag": "[CFU | Supported application | SC1 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Money left over",
+   "ask": "How much money is left over?",
+   "routine": "boards",
+   "thinkTime": 25,
+   "pivot": "add all the expenses first, then take them from the income",
+   "followUp": "cold call one board: What were the total expenses?",
+   "items": [
+    {
+     "text": "Income $30. Expenses $12 and $9.",
+     "answer": "$9"
+    },
+    {
+     "text": "Income $45. Expenses $15.50 and $20.",
+     "answer": "$9.50"
+    },
+    {
+     "text": "Income $18 + $12. Expenses $7.25, $4.75 and $10.",
+     "answer": "$8"
+    },
+    {
+     "text": "Income $50. Expenses $22, $18.40 and $9.60.",
+     "answer": "$0",
+     "say": "Nothing left over: the expenses add to exactly 50 dollars."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write the money left over on your board."
+    ],
+    "trap": [
+     "taking off only one expense.",
+     "Fix: add all the expenses first, and they redo it."
+    ],
+    "stretch": "Find the percentage left over for each one.",
+    "help": "Circle the income, box the expenses.",
+    "prep": "Guided practice from two expenses to decimals and a zero left over. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Can Leo afford it this week?",
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Leo's week",
+      "Amount"
+     ],
+     [
+      "Pocket money (in)",
+      "$25.00"
+     ],
+     [
+      "Odd jobs (in)",
+      "$10.00"
+     ],
+     [
+      "Lunches (out)",
+      "$12.50"
+     ],
+     [
+      "Bus (out)",
+      "$5.00"
+     ]
+    ]
+   },
+   "label": "He wants a $16 game.",
+   "reveal": {
+    "answers": [
+     "$17.50 left: yes, $1.50 spare"
+    ]
+   },
+   "notes": {
+    "answer": "yes: $17.50 left, $1.50 spare",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Find his money left over, then decide."
+     ],
+     [
+      "ASK: Can Leo afford the 16 dollar game this week? How much would be left?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: yes, $1.50 left"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> add income, add expenses, subtract, together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Income 35, expenses 17.50, so 17.50 left.",
+      "Yes, he can afford it, with 1.50 spare. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "forgetting the odd jobs income.",
+     "Fix: circle every income line, and they redo it."
+    ],
+    "prep": "The hinge before independent work. Anyone saying no, or using one expense, starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Work out income, expenses and money left over on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Have you included every expense?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "missing an income or expense line.",
+     "Fix: tick each line as they use it, and they redo it."
+    ],
+    "stretch": "Extension: a monthly budget, percentage spent, and needs and wants.",
+    "help": "Supported Worksheet: whole-dollar amounts, one expense at a time.",
+    "prep": "Independent practice: sorting, a weekly budget, afford and need, and a mistake. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "What does Mia have left at the end of her week?"
+   ],
+   "visual": {
+    "type": "table",
+    "rows": [
+     [
+      "Mia's week",
+      "Amount"
+     ],
+     [
+      "Babysitting (in)",
+      "$32.00"
+     ],
+     [
+      "Gift (in)",
+      "$10.00"
+     ],
+     [
+      "Swimming (out)",
+      "$14.50"
+     ],
+     [
+      "Snacks (out)",
+      "$9.75"
+     ]
+    ]
+   },
+   "notes": {
+    "answer": "$17.75",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What does Mia have left at the end of her week?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: $17.75"
+     ],
+     [
+      "RECORD who leaves out a line or subtracts one expense.",
+      "They start tomorrow's saving plan with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing $27.50.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: a new budget with decimals.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner the two questions to ask before buying something.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for can I afford it, and do I need it?",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can work out money left over?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with $27.50 on the board matters most."
+     ],
+     [
+      "ASK: What two questions should you ask before you buy something?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: can I afford it, and do I need it?"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: saving plans.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

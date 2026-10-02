@@ -1,0 +1,37 @@
+{
+  "unit_folder": "Term4_Week7_Maths_Money_Percentages",
+  "unit_pptx_name": "Term 4 Week 7 - Modelling with Percentages and Money - Year 5-6 Maths.pptx",
+  "anchor": "read it, model it, solve it, check it: say what the answer means in the situation",
+  "lessons": [
+    {
+      "build_script": "builds/t4w7_maths_s1_discounts.json",
+      "folder": "T4W7_Maths_S1_Discounts",
+      "session": 1,
+      "focus": "Discounts and sale prices: find the percentage off, then the sale price. Critical feature: the discount is the part taken off; the sale price is what is left. Review: area and perimeter (Week 5)."
+    },
+    {
+      "build_script": "builds/t4w7_maths_s2_best_buy.json",
+      "folder": "T4W7_Maths_S2_Best_Buy",
+      "session": 2,
+      "focus": "Best buy: compare unit prices with division and decide which deal is better value. Critical feature: compare the price of the same amount. Review: area and perimeter."
+    },
+    {
+      "build_script": "builds/t4w7_maths_s3_increases.json",
+      "folder": "T4W7_Maths_S3_Increases",
+      "session": 3,
+      "focus": "Percentage increases: GST of 10%, price rises and mark-ups. Critical feature: an increase is added on; find the percentage first. Review: four processes."
+    },
+    {
+      "build_script": "builds/t4w7_maths_s4_money_problems.json",
+      "folder": "T4W7_Maths_S4_Money_Problems",
+      "session": 4,
+      "focus": "Multi-step money problems with fractions, decimals and percentages: plan the steps, choose the operations, check the answer makes sense. Critical feature: write a plan before calculating. Review: four processes."
+    },
+    {
+      "build_script": "builds/t4w7_maths_s5_modelling.json",
+      "folder": "T4W7_Maths_S5_Modelling",
+      "session": 5,
+      "focus": "Modelling a shopping problem: formulate it, solve it, interpret the answer and justify choices (a class party on a budget). Critical feature: say what the answer means in the situation. Review: statistics (Week 3)."
+    }
+  ]
+}

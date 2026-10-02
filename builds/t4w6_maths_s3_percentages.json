@@ -1,0 +1,1231 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 6,
+  "session": 3,
+  "title": "Percentages",
+  "subtitle": "Term 4 Week 6, Session 3",
+  "meta": "Year 5/6 Maths | Number",
+  "footer": "Fractions, Decimals and Percentages | Year 5/6 Maths | Session 3",
+  "outputFolder": "T4W6_Maths_S3_Percentages",
+  "fileName": "Session 3 - Percentages.pptx",
+  "titleVisual": {
+   "type": "hundredGrid",
+   "shaded": 45,
+   "label": "45% = 45/100 = 0.45"
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Years 5 and 6: connecting percentages with fractions and decimals (out of 100), using multiplication and division to make equivalent fractions",
+   "shape": "example-first on a hundred grid, then a table of all three names, because 'out of 100' is the bridge between them",
+   "criticalFeature": "per cent means out of 100: make the fraction out of 100 and you have the percentage",
+   "decisionPoints": [
+    "the choice check: which grid shows 7%?",
+    "the hinge: 3/20 as a percentage",
+    "the exit ticket"
+   ],
+   "anchor": "one amount, three names: fraction, decimal, percentage; make it out of 100 to switch",
+   "catchUp": "Missed earlier sessions? Shade 45 squares on a hundred grid: 45/100 = 0.45. Today adds the third name: 45%."
+  }
+ },
+ "materials": {
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Coloured pencils for shading grids",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: one amount, three names: fraction, decimal, percentage; make it out of 100 to switch"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Shade and name hundred grids, a three-names table, a mistake, and sport and shopping percentages.",
+   "title": "Percentages",
+   "subtitle": "Per cent means out of 100.",
+   "sections": [
+    {
+     "title": "Shade and name",
+     "proficiency": "understanding",
+     "columns": 3,
+     "example": {
+      "prompt": "Name the shaded part three ways.",
+      "visual": {
+       "type": "hundredGrid",
+       "shaded": 32
+      },
+      "steps": [
+       "32 squares of 100 shaded.",
+       "Fraction 32/100, decimal 0.32.",
+       "Percentage: 32%."
+      ],
+      "answer": "32/100, 0.32, 32%"
+     },
+     "items": [
+      {
+       "prompt": "What percentage is shaded?",
+       "visual": {
+        "type": "hundredGrid",
+        "shaded": 58,
+        "maxH": 90
+       },
+       "answer": "58",
+       "answerLabel": "Shaded:",
+       "unit": "%",
+       "working": "none"
+      },
+      {
+       "prompt": "Write the shaded part as a decimal.",
+       "visual": {
+        "type": "hundredGrid",
+        "shaded": 9,
+        "maxH": 90
+       },
+       "answer": "0.09",
+       "answerLabel": "Decimal:",
+       "working": "none"
+      },
+      {
+       "prompt": "Shade 70%. Write it as a decimal.",
+       "visual": {
+        "type": "hundredGrid",
+        "shaded": 0,
+        "maxH": 90
+       },
+       "answerVisual": {
+        "type": "hundredGrid",
+        "shaded": 70,
+        "maxH": 90
+       },
+       "answer": "0.7",
+       "answerLabel": "Decimal:",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "One amount, three names",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "Write 3/5 as a decimal and a percentage.",
+      "steps": [
+       "Make it out of 100: 3/5 = 60/100.",
+       "Decimal 0.6. Percentage 60%."
+      ],
+      "answer": "0.6, 60%"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Fill in the gaps.",
+       "columns": [
+        "Fraction",
+        "Decimal",
+        "Percentage"
+       ],
+       "rows": [
+        [
+         "1/2",
+         "",
+         ""
+        ],
+        [
+         "",
+         "0.25",
+         ""
+        ],
+        [
+         "",
+         "",
+         "75%"
+        ],
+        [
+         "1/5",
+         "",
+         ""
+        ],
+        [
+         "",
+         "0.7",
+         ""
+        ],
+        [
+         "",
+         "",
+         "12%"
+        ],
+        [
+         "9/20",
+         "",
+         ""
+        ],
+        [
+         "",
+         "0.01",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "1/2",
+         "0.5",
+         "50%"
+        ],
+        [
+         "1/4",
+         "0.25",
+         "25%"
+        ],
+        [
+         "3/4",
+         "0.75",
+         "75%"
+        ],
+        [
+         "1/5",
+         "0.2",
+         "20%"
+        ],
+        [
+         "7/10",
+         "0.7",
+         "70%"
+        ],
+        [
+         "3/25",
+         "0.12",
+         "12%"
+        ],
+        [
+         "9/20",
+         "0.45",
+         "45%"
+        ],
+        [
+         "1/100",
+         "0.01",
+         "1%"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Sport and shopping",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "A team won 15 of 25 games. What percentage did they win?",
+      "steps": [
+       "15/25: times top and bottom by 4.",
+       "60/100 = 60%."
+      ],
+      "answer": "60%"
+     },
+     "items": [
+      {
+       "prompt": "A shooter scored 18 of 20 goals. What percentage is that?",
+       "answer": "18/20 = 90/100 = 90%",
+       "answerLabel": "Percentage:"
+      },
+      {
+       "prompt": "In a class of 25, 7 walk to school. What percentage walk?",
+       "answer": "7/25 = 28/100 = 28%",
+       "answerLabel": "Percentage:"
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Jack wrote 0.5 as a percentage. Find his mistake and fix it.",
+       "work": [
+        "0.5 = 5%"
+       ],
+       "answer": "0.5 is 5 tenths = 50 hundredths, so it is 50%."
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which is the biggest share of a pizza?",
+       "options": [
+        "35%",
+        "1/4",
+        "0.3"
+       ],
+       "answer": 0,
+       "reason": true,
+       "explain": "1/4 = 25% and 0.3 = 30%, so 35% is the biggest."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Percentages over 100%, halves of a percent, and a design task, with worked examples.",
+   "title": "Extension: Tricky Percentages",
+   "subtitle": "Over 100% and less than 1%.",
+   "sections": [
+    {
+     "title": "More than 100%",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Write 1.25 as a percentage.",
+      "steps": [
+       "1.25 = 125 hundredths.",
+       "125%: more than one whole."
+      ],
+      "answer": "125%"
+     },
+     "items": [
+      {
+       "prompt": "Write 1.5 as a percentage.",
+       "answer": "150%",
+       "answerLabel": "Percentage:"
+      },
+      {
+       "prompt": "Write 7/4 as a percentage.",
+       "answer": "175%",
+       "answerLabel": "Percentage:"
+      },
+      {
+       "prompt": "A footy crowd was 120% of last week's. What does that mean?",
+       "answer": "It was bigger than last week's: last week's crowd plus another 20% of it.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "Parts of a percent",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "Write 0.005 as a percentage.",
+      "steps": [
+       "0.005 = 5 thousandths.",
+       "Out of 100: 0.5 hundredths.",
+       "0.5%"
+      ],
+      "answer": "0.5%"
+     },
+     "items": [
+      {
+       "prompt": "Write 3/8 as a percentage.",
+       "answer": "37.5%",
+       "answerLabel": "Percentage:"
+      },
+      {
+       "prompt": "Write 12.5% as a fraction in simplest form.",
+       "answer": "12.5/100 = 125/1000 = 1/8",
+       "answerLabel": "Fraction:"
+      }
+     ]
+    },
+    {
+     "title": "Design it",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "Colour a flag that is 40% blue.",
+      "steps": [
+       "Use 10 equal stripes.",
+       "Colour 4 of them blue: 4/10 = 40%."
+      ],
+      "answer": "4 of 10 stripes blue"
+     },
+     "items": [
+      {
+       "kind": "open",
+       "prompt": "Design a team flag on a 10 by 10 grid that is 35% red, 0.4 blue and the rest white. What percentage is white? Show your working.",
+       "answer": "35 red squares, 40 blue squares, 25 white squares: 25% white."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: hundred grids to count, a three-names frame, and a hint on every question.",
+   "title": "Percentages: Step by Step",
+   "subtitle": "Count the shaded squares out of 100.",
+   "sections": [
+    {
+     "title": "Count out of 100",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "What percentage is shaded?",
+      "visual": {
+       "type": "hundredGrid",
+       "shaded": 45
+      },
+      "steps": [
+       "Count full rows of 10: 4 rows = 40.",
+       "Count extra squares: 5.",
+       "45 out of 100 = 45%."
+      ],
+      "answer": "45%"
+     },
+     "items": [
+      {
+       "prompt": "___ out of 100 = ___ %",
+       "visual": {
+        "type": "hundredGrid",
+        "shaded": 60,
+        "maxH": 150
+       },
+       "hint": "Count the full rows.",
+       "answer": "60 out of 100 = 60%",
+       "working": "none"
+      },
+      {
+       "prompt": "___ out of 100 = ___ %",
+       "visual": {
+        "type": "hundredGrid",
+        "shaded": 25,
+        "maxH": 150
+       },
+       "hint": "2 full rows and 5 more.",
+       "answer": "25 out of 100 = 25%",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Easy ones",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "1/2 as a percentage.",
+      "steps": [
+       "Half of 100 is 50.",
+       "1/2 = 50/100 = 50%."
+      ],
+      "answer": "50%"
+     },
+     "items": [
+      {
+       "prompt": "1/4 as a percentage.",
+       "hint": "A quarter of 100.",
+       "answer": "25%",
+       "answerLabel": "Percentage:"
+      },
+      {
+       "prompt": "1/10 as a percentage.",
+       "hint": "A tenth of 100.",
+       "answer": "10%",
+       "answerLabel": "Percentage:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 3 of our fractions, decimals and percentages week: today we meet the third name, percentages."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards, markers and coloured pencils on every desk. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Fair or not?",
+   "from": "teacher",
+   "prompts": [
+    "Spinner: half red, a quarter blue, a quarter green. Red wins for Ali, blue or green for Bo. Fair?"
+   ],
+   "reveal": {
+    "answers": [
+     "fair: 1/2 each"
+    ]
+   },
+   "notes": {
+    "answer": "fair: 1/2 each",
+    "beats": [
+     [
+      "SAY: Let's warm up with probability, coordinates and area."
+     ],
+     [
+      "ASK: Is this spinner game fair?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: fair, 1/2 each"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> write each player's chance: Ali half, Bo a quarter plus a quarter. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Fair: Ali has a half, and Bo has two quarters,",
+      "also a half. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "saying unfair because Bo has two colours.",
+     "Fix: add Bo's chances, and they compare again."
+    ],
+    "prep": "Review of Week 4 probability (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Missing corner",
+   "from": "teacher",
+   "prompts": [
+    "What are the coordinates of the fourth corner D?"
+   ],
+   "visual": {
+    "type": "grid",
+    "x": [
+     0,
+     7
+    ],
+    "y": [
+     0,
+     6
+    ],
+    "points": [
+     {
+      "x": 1,
+      "y": 1,
+      "label": "A"
+     },
+     {
+      "x": 6,
+      "y": 1,
+      "label": "B"
+     },
+     {
+      "x": 6,
+      "y": 5,
+      "label": "C"
+     }
+    ],
+    "path": [
+     [
+      1,
+      1
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      6,
+      5
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "(1, 5)"
+    ]
+   },
+   "notes": {
+    "answer": "(1, 5)",
+    "beats": [
+     [
+      "ASK: What are the coordinates of the fourth corner, D?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: (1, 5)"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> trace up from A and across from C together. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 1, 5: above A, level with C. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing (5, 1).",
+     "Fix: say the anchor, across first, and they rewrite it."
+    ],
+    "prep": "Week 2 review: grid coordinates.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Composite area",
+   "from": "teacher",
+   "prompts": [
+    "Find the area of the L-shape."
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      4,
+      7
+     ],
+     [
+      0,
+      7
+     ]
+    ],
+    "labels": [
+     "10 m",
+     "4 m",
+     null,
+     "3 m",
+     "4 m",
+     "7 m"
+    ],
+    "splits": [
+     [
+      [
+       0,
+       4
+      ],
+      [
+       4,
+       4
+      ]
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "52 m²"
+    ]
+   },
+   "notes": {
+    "answer": "52 m²",
+    "beats": [
+     [
+      "ASK: What is the area of this L-shape?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 52 m²"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> draw the split line, then find each rectangle's area. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The bottom is 10 by 4, 40, and the top is 4 by 3,",
+      "12: 52 square metres. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "multiplying the two longest sides.",
+     "Fix: shade the missing corner, and they split it."
+    ],
+    "prep": "Week 5 review: composite area.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "8 × 8"
+   ],
+   "reveal": {
+    "answers": [
+     "64"
+    ]
+   },
+   "notes": {
+    "answer": "64",
+    "beats": [
+     [
+      "SAY: Now for our eight times table.",
+      "Write each answer as fast as you can."
+     ],
+     [
+      "ASK: What is 8 times 8?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 64"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> double, double, double: 16, 32, 64. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 64. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 56 or 72.",
+     "Fix: double 8 three times: 16, 32, 64, and they rewrite it."
+    ],
+    "prep": "Times tables fluency. Keep the whole block under 5 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "8 × 4"
+   ],
+   "reveal": {
+    "answers": [
+     "32"
+    ]
+   },
+   "notes": {
+    "answer": "32",
+    "beats": [
+     [
+      "SAY: Here's the next one."
+     ],
+     [
+      "ASK: What is 8 times 4?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 32"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> double 4, then again, then again. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 32. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 24 or 36.",
+     "Fix: double 4 three times: 8, 16, 32, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Times tables",
+   "prompts": [
+    "96 ÷ 8"
+   ],
+   "reveal": {
+    "answers": [
+     "12"
+    ]
+   },
+   "notes": {
+    "answer": "12",
+    "beats": [
+     [
+      "SAY: Now a division. How many eights make 96?"
+     ],
+     [
+      "ASK: What is 96 divided by 8?",
+      "8 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 12"
+     ],
+     [
+      "SCAN boards.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> 10 eights is 80, then 2 more eights. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 12. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 11.",
+     "Fix: check: 12 eights is 96, and they rewrite it."
+    ],
+    "prep": "Brisk: one line of feedback, then the next.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to write percentages as fractions and decimals, and back again.",
+   "successCriteria": [
+    "I can say what per cent means: out of 100.",
+    "I can write the same amount as a fraction, a decimal and a percentage.",
+    "I can explain which name is easiest to use in a real situation."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: We've switched between fractions and decimals.",
+      "Today we add the third name: the percentage."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 out of 100 is reachable for everyone; SC2 three names is the core and the exit evidence; SC3 choosing a name is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Where do you see percentages?",
+   "visual": {
+    "type": "pictograms",
+    "items": [
+     {
+      "name": "battery",
+      "label": "battery 80%"
+     },
+     {
+      "name": "shop",
+      "label": "sale 25% off"
+     },
+     {
+      "name": "percent",
+      "label": "test 90%"
+     }
+    ]
+   },
+   "prompt": "What does 80% battery mean?",
+   "notes": {
+    "answer": "80 out of 100: most of the battery is left",
+    "beats": [
+     [
+      "POINT to each picture.",
+      "SAY: Some of you may see percentages every day:",
+      "your device battery, sales in shops, test scores."
+     ],
+     [
+      "ASK: What do you think 80 percent battery means? Tell your partner.",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: 80 out of 100, most of it is charged"
+     ],
+     [
+      "SAY: 80 percent means 80 out of 100, so most of the battery is left.",
+      "Per cent means out of 100. Today we connect it to fractions and decimals."
+     ]
+    ],
+    "trap": [
+     "thinking 80% means 80 minutes.",
+     "Fix: say per cent means out of 100, and they explain again."
+    ],
+    "prep": "The launch comes after the LI: everyday percentages. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "percentage",
+   "meaning": "A number out of 100, written with the % sign.",
+   "example": "45% means 45 out of 100.",
+   "pictogram": "percent",
+   "notes": {
+    "answer": "the whole",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is percentage. Say it with me: per-cent-age."
+     ],
+     [
+      "SAY: Per cent means out of 100. 45 percent means 45 out of every 100.",
+      "We write it with the per cent sign."
+     ],
+     [
+      "ASK: What does 100 percent mean?",
+      "10 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: the whole: 100 out of 100"
+     ]
+    ],
+    "trap": [
+     "saying 100% is a lot but not all.",
+     "Fix: shade all 100 squares, and they say it again."
+    ],
+    "prep": "Per cent: per = for each, cent = 100.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Three names for one amount",
+   "steps": [
+    "37 of 100 squares are shaded.",
+    "Fraction: 37/100.",
+    "Decimal: 0.37.",
+    "Percentage: 37%."
+   ],
+   "visual": {
+    "type": "hundredGrid",
+    "shaded": 37
+   },
+   "reveal": {
+    "answers": [
+     "8/100 = 0.08 = 8%"
+    ]
+   },
+   "notes": {
+    "answer": "8/100, 0.08, 8%",
+    "beats": [
+     [
+      "POINT to the grid.",
+      "SAY: 37 of the 100 squares are shaded. That's 37 out of 100."
+     ],
+     [
+      "MODEL the three names.",
+      "SAY: As a fraction, 37/100. As a decimal, 0.37.",
+      "And because it's out of 100, it's 37 percent."
+     ],
+     [
+      "ASK: If 8 squares were shaded, what would the three names be?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 8/100, 0.08, 8%"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 8/100, 0.08 and 8 percent.",
+      "Out of 100 links all three."
+     ]
+    ],
+    "trap": [
+     "writing 0.8 for 8%.",
+     "Fix: write it into the place value chart as hundredths, and they fix it."
+    ],
+    "stretch": "Write 80% three ways. How is it different from 8%?",
+    "help": "Count the shaded squares, then write 'out of 100'.",
+    "prep": "Out of 100 is the bridge: the critical feature. SC1 and SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Make it out of 100",
+   "steps": [
+    "What times 20 makes 100? 5.",
+    "Multiply top and bottom by 5: 7/20 = 35/100.",
+    "35/100 = 35% = 0.35."
+   ],
+   "visual": {
+    "type": "barModel",
+    "parts": 20,
+    "shaded": 7,
+    "total": "100%"
+   },
+   "reveal": {
+    "answers": [
+     "9/25 = 36/100 = 36%"
+    ]
+   },
+   "notes": {
+    "answer": "36%",
+    "beats": [
+     [
+      "POINT to the bar.",
+      "SAY: To change 7/20 into a percentage, I need it out of 100.",
+      "20 times 5 is 100, so I multiply the top and bottom by 5."
+     ],
+     [
+      "MODEL 7 times 5.",
+      "SAY: 7 times 5 is 35, so 7/20 is 35/100, which is 35 percent."
+     ],
+     [
+      "ASK: Now you try: how would you write 9/25 as a percentage?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 36%"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 25 times 4 is 100, and 9 times 4 is 36: 36 percent."
+     ]
+    ],
+    "trap": [
+     "writing 9% or 25%.",
+     "Fix: ask what times 25 makes 100, and they multiply."
+    ],
+    "stretch": "Write 9/25 as a decimal too.",
+    "help": "List the times table of the denominator up to 100.",
+    "prep": "Same move as Session 1, new name. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "Which grid shows 7%?",
+   "prompt": "Point to A, B or C",
+   "options": [
+    {
+     "visual": {
+      "type": "hundredGrid",
+      "shaded": 70
+     },
+     "misconception": "reads 7% as 7 tenths"
+    },
+    {
+     "visual": {
+      "type": "hundredGrid",
+      "shaded": 7
+     }
+    },
+    {
+     "visual": {
+      "type": "hundredGrid",
+      "shaded": 17
+     },
+     "misconception": "shades by guessing, not counting out of 100"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Count carefully: per cent means out of 100."
+     ],
+     [
+      "ASK: Which grid shows 7 percent?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What percentage is A?",
+      "Less -> count 7 squares on the board grid together. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B: 7 squares out of 100.",
+      "A is 70 percent, 7 full rows."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: count A's squares, 70, and they choose again."
+    ],
+    "prep": "First decision point. A: 7% confused with 0.7 or 70%.",
+    "tag": "[CFU | Supported application | SC1 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Switch the name",
+   "ask": "Write it in the form asked for.",
+   "routine": "boards",
+   "thinkTime": 20,
+   "pivot": "make it out of 100 first, then read the percentage",
+   "followUp": "cold call one board: How did you make it out of 100?",
+   "items": [
+    {
+     "text": "1/4 as a percentage",
+     "answer": "25%"
+    },
+    {
+     "text": "0.6 as a percentage",
+     "answer": "60%"
+    },
+    {
+     "text": "15% as a fraction, simplest form",
+     "answer": "3/20"
+    },
+    {
+     "text": "0.03 as a percentage",
+     "answer": "3%"
+    },
+    {
+     "text": "11/20 as a percentage",
+     "answer": "55%",
+     "say": "Times 5: 55 out of 100, so 55 percent."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise switching names.",
+     "Write each answer on your board."
+    ],
+    "trap": [
+     "writing 0.6 as 6%.",
+     "Fix: say 6 tenths is 60 hundredths, and they rewrite it."
+    ],
+    "stretch": "Write each answer in the third form too.",
+    "help": "Use the hundred grid to picture each amount.",
+    "prep": "Guided practice: benchmark, tenths, simplifying, a zero place holder and twentieths. SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "Write 3/20 as a percentage",
+   "visual": {
+    "type": "text",
+    "text": "3/20"
+   },
+   "reveal": {
+    "answers": [
+     "15/100 = 15%"
+    ]
+   },
+   "notes": {
+    "answer": "15%",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Make it out of 100 first."
+     ],
+     [
+      "ASK: How do you write 3/20 as a percentage?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 15%"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> ask what times 20 makes 100, then multiply the top. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Times 5: 15 out of 100, so 15 percent. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 3%.",
+     "Fix: say twentieths are not hundredths, and they multiply."
+    ],
+    "prep": "The hinge before independent work. Anyone writing 3% or 20% starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Switch between fractions, decimals and percentages on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: How did you make it out of 100?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "writing tenths as single-digit percentages.",
+     "Fix: shade it on a hundred grid, and they rewrite it."
+    ],
+    "stretch": "Extension: percentages over 100%, parts of a percent and designing a flag.",
+    "help": "Supported Worksheet: hundred grids to count and a three-names frame.",
+    "prep": "Independent practice: grids, a three-names table, a mistake and real percentages. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Write 0.4 as a fraction in simplest form, and as a percentage."
+   ],
+   "visual": {
+    "type": "text",
+    "text": "0.4"
+   },
+   "notes": {
+    "answer": "2/5 and 40%",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: How do you write 0.4 as a fraction in simplest form,",
+      "and as a percentage?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 2/5 and 40%"
+     ],
+     [
+      "RECORD who writes 4% or 4/100.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing 4%.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC2: both other names from a decimal.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner what per cent means, with an example.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for out of 100, like 45% is 45 out of 100",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can switch between all three names?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 4% on the board matters most."
+     ],
+     [
+      "ASK: What does per cent mean? Give an example.",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: out of 100, like 45% is 45 out of 100"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: comparing and ordering.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1633 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 5,
+  "session": 1,
+  "title": "Perimeter",
+  "subtitle": "Term 4 Week 5, Session 1",
+  "meta": "Year 5/6 Maths | Measurement",
+  "footer": "Area and Perimeter | Year 5/6 Maths | Session 1",
+  "outputFolder": "T4W5_Maths_S1_Perimeter",
+  "fileName": "Session 1 - Perimeter.pptx",
+  "titleVisual": {
+   "type": "shape",
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     10,
+     0
+    ],
+    [
+     10,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     0,
+     9
+    ]
+   ],
+   "labels": [
+    "10 cm",
+    "4 cm",
+    null,
+    null,
+    "6 cm",
+    "9 cm"
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Number, Year 5 (VC2M5N06, VC2M5N07) applied to measurement: solving perimeter problems with efficient addition and multiplication, and checking the reasonableness of answers",
+   "shape": "example-first: the teacher models a rectangle, then a shape with missing sides, because finding missing sides from opposite sides is the new step",
+   "criticalFeature": "add every side once; a missing side comes from the opposite sides",
+   "decisionPoints": [
+    "the choice check: perimeter of a 6 m by 4 m rectangle",
+    "the hinge: perimeter of an L-shape with a missing side",
+    "the exit ticket"
+   ],
+   "anchor": "perimeter goes around the edge (add the sides); area covers the inside (length x width)"
+  }
+ },
+ "materials": {
+  "manipulatives": [
+   "A metre ruler or trundle wheel for the launch (optional)"
+  ],
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "A ruler for every student",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The week's anchor on the board: perimeter goes around the edge (add the sides); area covers the inside (length x width)"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Rectangle perimeters, missing sides, a mistake to fix, and fence, oval and garden problems.",
+   "title": "Perimeter",
+   "subtitle": "Go around the edge. Add every side once.",
+   "sections": [
+    {
+     "title": "Rectangles",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "Find the perimeter of a rectangle 14 m by 6 m.",
+      "steps": [
+       "Opposite sides are equal: 14, 6, 14, 6.",
+       "Add one length and one width: 14 + 6 = 20.",
+       "Double it: 20 × 2 = 40 m."
+      ],
+      "answer": "40 m"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Find the missing values for each rectangle.",
+       "columns": [
+        "Length",
+        "Width",
+        "Perimeter"
+       ],
+       "rows": [
+        [
+         "18 m",
+         "5 m",
+         ""
+        ],
+        [
+         "24 m",
+         "13 m",
+         ""
+        ],
+        [
+         "35 m",
+         "20 m",
+         ""
+        ],
+        [
+         "",
+         "6 m",
+         "40 m"
+        ],
+        [
+         "50 m",
+         "",
+         "130 m"
+        ]
+       ],
+       "answers": [
+        [
+         "18 m",
+         "5 m",
+         "46 m"
+        ],
+        [
+         "24 m",
+         "13 m",
+         "74 m"
+        ],
+        [
+         "35 m",
+         "20 m",
+         "110 m"
+        ],
+        [
+         "14 m",
+         "6 m",
+         "40 m"
+        ],
+        [
+         "50 m",
+         "15 m",
+         "130 m"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Missing sides",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "An L-shape: bottom 10, top 6, left 9, right 4. Find the two missing sides.",
+      "steps": [
+       "Across: 10 - 6 = 4.",
+       "Up: 9 - 4 = 5.",
+       "Now add all six sides."
+      ],
+      "answer": "4 cm and 5 cm"
+     },
+     "items": [
+      {
+       "prompt": "Find the missing sides, then the perimeter.",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          12,
+          0
+         ],
+         [
+          12,
+          5
+         ],
+         [
+          4,
+          5
+         ],
+         [
+          4,
+          9
+         ],
+         [
+          0,
+          9
+         ]
+        ],
+        "labels": [
+         "12 m",
+         "5 m",
+         null,
+         null,
+         "4 m",
+         "9 m"
+        ],
+        "maxH": 115
+       },
+       "parts": [
+        {
+         "prompt": "missing across side",
+         "answer": "8 m"
+        },
+        {
+         "prompt": "missing up side",
+         "answer": "4 m"
+        },
+        {
+         "prompt": "perimeter",
+         "answer": "42 m"
+        }
+       ],
+       "working": "none"
+      },
+      {
+       "prompt": "Find the missing sides, then the perimeter.",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          15,
+          0
+         ],
+         [
+          15,
+          6
+         ],
+         [
+          9,
+          6
+         ],
+         [
+          9,
+          11
+         ],
+         [
+          0,
+          11
+         ]
+        ],
+        "labels": [
+         "15 cm",
+         "6 cm",
+         null,
+         null,
+         "9 cm",
+         "11 cm"
+        ],
+        "maxH": 115
+       },
+       "parts": [
+        {
+         "prompt": "missing across side",
+         "answer": "6 cm"
+        },
+        {
+         "prompt": "missing up side",
+         "answer": "5 cm"
+        },
+        {
+         "prompt": "perimeter",
+         "answer": "52 cm"
+        }
+       ],
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Fences, courts and ovals",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "A pen is 20 m by 15 m. Fencing costs $10 a metre. Cost?",
+      "steps": [
+       "Perimeter: (20 + 15) × 2 = 70 m.",
+       "70 × $10 = $700."
+      ],
+      "answer": "$700"
+     },
+     "items": [
+      {
+       "prompt": "A paddock is 45 m by 28 m. Fencing costs $12 a metre. How much does it cost to fence?",
+       "answer": "146 m of fence, 146 × $12 = $1752",
+       "answerLabel": "Cost:"
+      },
+      {
+       "prompt": "A footy oval is roughly a rectangle 160 m by 130 m. Liv runs 3 laps. How far does she run?",
+       "answer": "580 m a lap, 3 × 580 = 1740 m",
+       "answerLabel": "Distance:"
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Ava found the perimeter of a 7 cm by 5 cm rectangle. Find her mistake and fix it.",
+       "work": [
+        "7 + 5 = 12, so the perimeter is 12 cm."
+       ],
+       "answer": "She added only two sides. All four: 7 + 5 + 7 + 5 = 24 cm."
+      },
+      {
+       "kind": "choice",
+       "prompt": "Which rectangle has the larger perimeter?",
+       "options": [
+        "10 m by 2 m",
+        "6 m by 6 m",
+        "they are the same"
+       ],
+       "answer": 2,
+       "reason": true,
+       "explain": "(10 + 2) × 2 = 24 m and (6 + 6) × 2 = 24 m: the same."
+      },
+      {
+       "kind": "open",
+       "prompt": "Design two different garden beds that each have a perimeter of 24 m. Sketch them and label the sides.",
+       "answer": "Any two rectangles where length + width = 12, for example 8 m by 4 m and 10 m by 2 m."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. Working backwards from a perimeter, shapes made of squares, and the biggest pen for a fixed fence, with worked examples.",
+   "title": "Extension: Perimeter Puzzles",
+   "subtitle": "Work backwards from the perimeter.",
+   "sections": [
+    {
+     "title": "Work backwards",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "A square has a perimeter of 36 cm. How long is each side?",
+      "steps": [
+       "A square has 4 equal sides.",
+       "36 divided by 4 = 9.",
+       "Each side is 9 cm."
+      ],
+      "answer": "9 cm"
+     },
+     "items": [
+      {
+       "prompt": "A rectangle has a perimeter of 56 m. Its length is 17 m. How wide is it?",
+       "answer": "11 m: 56 divided by 2 = 28, 28 - 17 = 11",
+       "answerLabel": "Width:"
+      },
+      {
+       "prompt": "A regular hexagon has a perimeter of 72 cm. How long is each side?",
+       "answer": "12 cm",
+       "answerLabel": "Side:"
+      }
+     ]
+    },
+    {
+     "title": "Shapes from squares",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Two 1 cm squares side by side. Perimeter?",
+      "steps": [
+       "The shape is 2 cm by 1 cm.",
+       "(2 + 1) × 2 = 6 cm."
+      ],
+      "answer": "6 cm"
+     },
+     "items": [
+      {
+       "prompt": "Five 1 cm squares in a straight row. What is the perimeter?",
+       "answer": "12 cm",
+       "answerLabel": "Perimeter:"
+      },
+      {
+       "prompt": "Arrange four 1 cm squares to make the biggest perimeter, then the smallest. Sketch both.",
+       "answer": "Biggest: a row of 4, perimeter 10 cm. Smallest: a 2 by 2 square, perimeter 8 cm.",
+       "lines": 2
+      }
+     ]
+    },
+    {
+     "title": "Biggest pen",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "20 m of fence. Which rectangle pens can you make with whole metres?",
+      "steps": [
+       "Length + width = 10.",
+       "9 by 1, 8 by 2, 7 by 3, 6 by 4, 5 by 5.",
+       "List them all."
+      ],
+      "answer": "five pens"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "A farmer has 24 m of fencing for a rectangular pen. Fill in the table. Which pen gives the most space inside?",
+       "columns": [
+        "Length",
+        "Width",
+        "Perimeter",
+        "Space inside (m²)"
+       ],
+       "rows": [
+        [
+         "11 m",
+         "",
+         "24 m",
+         ""
+        ],
+        [
+         "10 m",
+         "",
+         "24 m",
+         ""
+        ],
+        [
+         "8 m",
+         "",
+         "24 m",
+         ""
+        ],
+        [
+         "6 m",
+         "",
+         "24 m",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "11 m",
+         "1 m",
+         "24 m",
+         "11"
+        ],
+        [
+         "10 m",
+         "2 m",
+         "24 m",
+         "20"
+        ],
+        [
+         "8 m",
+         "4 m",
+         "24 m",
+         "32"
+        ],
+        [
+         "6 m",
+         "6 m",
+         "24 m",
+         "36 (most)"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: every side to label, then add, with a hint on every question.",
+   "title": "Perimeter: Step by Step",
+   "subtitle": "Write every side, then add.",
+   "sections": [
+    {
+     "title": "Label every side",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Perimeter of a 5 cm by 3 cm rectangle?",
+      "visual": {
+       "type": "shape",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         5,
+         0
+        ],
+        [
+         5,
+         3
+        ],
+        [
+         0,
+         3
+        ]
+       ],
+       "labels": [
+        "5 cm",
+        "3 cm",
+        null,
+        null
+       ]
+      },
+      "steps": [
+       "Label all four sides: 5, 3, 5, 3.",
+       "Add: 5 + 3 + 5 + 3 = 16.",
+       "16 cm."
+      ],
+      "answer": "16 cm"
+     },
+     "items": [
+      {
+       "prompt": "___ + ___ + ___ + ___ = ___ cm",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          6,
+          0
+         ],
+         [
+          6,
+          4
+         ],
+         [
+          0,
+          4
+         ]
+        ],
+        "labels": [
+         "6 cm",
+         "4 cm",
+         null,
+         null
+        ],
+        "maxH": 150
+       },
+       "hint": "The two sides you cannot see match the ones you can.",
+       "answer": "6 + 4 + 6 + 4 = 20 cm",
+       "working": "none"
+      },
+      {
+       "prompt": "___ + ___ + ___ + ___ = ___ m",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          9,
+          0
+         ],
+         [
+          9,
+          2
+         ],
+         [
+          0,
+          2
+         ]
+        ],
+        "labels": [
+         "9 m",
+         "2 m",
+         null,
+         null
+        ],
+        "maxH": 150
+       },
+       "hint": "Opposite sides are equal.",
+       "answer": "9 + 2 + 9 + 2 = 22 m",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Squares",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "A square has sides of 4 m. Perimeter?",
+      "steps": [
+       "All 4 sides are 4 m.",
+       "4 + 4 + 4 + 4 = 16 m."
+      ],
+      "answer": "16 m"
+     },
+     "items": [
+      {
+       "prompt": "A square has sides of 7 cm. Perimeter?",
+       "hint": "Add 7 four times.",
+       "answer": "28 cm",
+       "answerLabel": "Perimeter:"
+      },
+      {
+       "prompt": "A square has sides of 10 m. Perimeter?",
+       "hint": "Add 10 four times.",
+       "answer": "40 m",
+       "answerLabel": "Perimeter:"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Session 1 of our area and perimeter week: today we find the distance around shapes."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards, markers and a ruler on every desk. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Spinner chance",
+   "from": "teacher",
+   "prompts": [
+    "What is P(blue)?"
+   ],
+   "visual": {
+    "type": "spinner",
+    "sectors": [
+     {
+      "label": "blue"
+     },
+     {
+      "label": "red"
+     },
+     {
+      "label": "red"
+     },
+     {
+      "label": "blue"
+     },
+     {
+      "label": "green"
+     },
+     {
+      "label": "red"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "2/6 = 1/3"
+    ]
+   },
+   "notes": {
+    "answer": "2/6 = 1/3",
+    "beats": [
+     [
+      "SAY: Let's warm up with last week's probability."
+     ],
+     [
+      "ASK: What is the probability of blue?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 2/6. ACCEPT: 1/3"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> count every equal part, then the blue parts. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Blue is 2 of the 6 equal parts,",
+      "so 2/6, which is 1/3. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 1/3 because there are 3 colours.",
+     "Fix: count parts, not colours, and they recount."
+    ],
+    "prep": "Review of Week 4 probability (the request named the focus). Keep the review under 6 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Expected results",
+   "from": "teacher",
+   "prompts": [
+    "Roll a dice 48 times. How many sixes would you expect?"
+   ],
+   "reveal": {
+    "answers": [
+     "8"
+    ]
+   },
+   "notes": {
+    "answer": "8",
+    "beats": [
+     [
+      "ASK: How many sixes would you expect in 48 rolls?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 8"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> say the chance, one sixth, then share 48 into 6 groups. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: One sixth of 48 is 8. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 288.",
+     "Fix: say 'one sixth of', and they divide instead."
+    ],
+    "prep": "Week 4 review: expected results.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Fraction of a survey",
+   "from": "teacher",
+   "prompts": [
+    "What fraction of students chose summer?"
+   ],
+   "visual": {
+    "type": "chart",
+    "style": "bar",
+    "categories": [
+     "Summer",
+     "Autumn",
+     "Winter",
+     "Spring"
+    ],
+    "values": [
+     12,
+     6,
+     4,
+     8
+    ],
+    "title": "Favourite season",
+    "yLabel": "Students"
+   },
+   "reveal": {
+    "answers": [
+     "12/30 = 2/5"
+    ]
+   },
+   "notes": {
+    "answer": "12/30 = 2/5",
+    "beats": [
+     [
+      "ASK: What fraction of the students chose summer?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 12/30. ACCEPT: 2/5"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> add all the columns for the total, then put summer over it. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 12 out of 30 chose summer,",
+      "which simplifies to 2/5. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 12/18, summer over the rest.",
+     "Fix: point to the total, 30, and they rewrite it."
+    ],
+    "prep": "Week 3 review: reading a graph.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Multiply with the written method: 3 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     347,
+     6
+    ],
+    "op": "×"
+   },
+   "reveal": {
+    "answers": [
+     "2 082"
+    ]
+   },
+   "notes": {
+    "answer": "2 082",
+    "beats": [
+     [
+      "SAY: Now for some written multiplication.",
+      "Multiply the ones first, and carry into the next column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 2 082"
+     ],
+     [
+      "SCAN boards for the carried digits.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 2 082.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "forgetting to add the carried digit after multiplying.",
+     "Fix: write each carry small above the next column, and they redo it."
+    ],
+    "prep": "Multiplication fluency: 3 digits, then 4, then 5. Keep the whole block under 6 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Multiply with the written method: 4 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     2856,
+     4
+    ],
+    "op": "×"
+   },
+   "reveal": {
+    "answers": [
+     "11 424"
+    ]
+   },
+   "notes": {
+    "answer": "11 424",
+    "beats": [
+     [
+      "SAY: Now it's 4 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 11 424"
+     ],
+     [
+      "SCAN boards for the carried digits.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 11 424.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "forgetting to add the carried digit after multiplying.",
+     "Fix: write each carry small above the next column, and they redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Multiply with the written method: 5 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     13579,
+     7
+    ],
+    "op": "×"
+   },
+   "reveal": {
+    "answers": [
+     "95 053"
+    ]
+   },
+   "notes": {
+    "answer": "95 053",
+    "beats": [
+     [
+      "SAY: Now it's 5 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "60 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 95 053"
+     ],
+     [
+      "SCAN boards for the carried digits.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 95 053.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "forgetting to add the carried digit after multiplying.",
+     "Fix: write each carry small above the next column, and they redo it."
+    ],
+    "prep": "One size up.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to find the perimeter of rectangles and other shapes with straight sides.",
+   "successCriteria": [
+    "I can find the perimeter by adding all the side lengths.",
+    "I can find missing side lengths using the opposite sides.",
+    "I can choose an efficient way to find a perimeter and explain it."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: This week is all about area and perimeter.",
+      "Today we start with perimeter: the distance around the edge."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 adding the sides is reachable for everyone; SC2 missing sides is the core and the exit evidence; SC3 an efficient method is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Walk the fence",
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      8,
+      0
+     ],
+     [
+      8,
+      5
+     ],
+     [
+      0,
+      5
+     ]
+    ],
+    "labels": [
+     "8 m",
+     "5 m",
+     null,
+     null
+    ]
+   },
+   "prompt": "How far is it all the way around the fence?",
+   "notes": {
+    "answer": "26 m",
+    "beats": [
+     [
+      "POINT to each side as if walking along it.",
+      "SAY: Imagine walking all the way around this garden fence, starting at a corner."
+     ],
+     [
+      "ASK: How many metres do you walk to get back to where you started?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 26 m"
+     ],
+     [
+      "SCAN boards for 26.",
+      "80%+ -> cold call one student: How did you add it?",
+      "Less -> trace each side together, writing 8, 5, 8, 5. Re-ask."
+     ],
+     [
+      "SAY: It's 26 metres: 8, 5, 8 and 5.",
+      "That distance around the edge is called the perimeter."
+     ]
+    ],
+    "trap": [
+     "writing 13, two sides only.",
+     "Fix: walk all four sides with your finger, and they add again."
+    ],
+    "prep": "The launch comes after the LI: perimeter as a walk around the edge. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "perimeter",
+   "meaning": "The total distance around the outside of a shape.",
+   "example": "A 3 m by 2 m rug has a perimeter of 10 m.",
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "labels": [
+     "3 m",
+     "2 m",
+     null,
+     null
+    ]
+   },
+   "notes": {
+    "answer": "the distance around the outside",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is perimeter. Say it with me: pe-rim-e-ter."
+     ],
+     [
+      "SAY: Perimeter is the total distance around the outside.",
+      "We find it by adding every side once."
+     ],
+     [
+      "ASK: Trace the perimeter of your desk with your finger. Ready, go.",
+      "5 sec. Cue: Everyone, together, on three. Trace... now.",
+      "EXPECT: fingers moving around the edge"
+     ]
+    ],
+    "trap": [
+     "rubbing the middle of the desk.",
+     "Fix: say edge, not inside, and they trace again."
+    ],
+    "prep": "Perimeter is the edge; area, tomorrow, is the inside. Keep both on the anchor.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Perimeter of a rectangle",
+   "steps": [
+    "Opposite sides are equal: 12, 7, 12, 7.",
+    "Add a length and a width: 12 + 7 = 19.",
+    "Double it: 19 × 2 = 38.",
+    "Perimeter = 38 m."
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      0
+     ],
+     [
+      12,
+      7
+     ],
+     [
+      0,
+      7
+     ]
+    ],
+    "labels": [
+     "12 m",
+     "7 m",
+     null,
+     null
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "15 m by 9 m: 48 m"
+    ]
+   },
+   "notes": {
+    "answer": "48 m",
+    "beats": [
+     [
+      "POINT to the two labelled sides.",
+      "SAY: Only two sides are labelled, but opposite sides of a rectangle are equal.",
+      "So the sides are 12, 7, 12 and 7."
+     ],
+     [
+      "MODEL the efficient way.",
+      "SAY: Instead of adding four numbers, I add one length and one width, 19,",
+      "then double it: 38 metres."
+     ],
+     [
+      "ASK: What is the perimeter of a rectangle 15 metres by 9 metres?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 48 m"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 15 and 9 make 24, doubled is 48 metres."
+     ]
+    ],
+    "trap": [
+     "multiplying 15 by 9.",
+     "Fix: say perimeter goes around the edge, and they add instead."
+    ],
+    "stretch": "Find a different rectangle with the same perimeter.",
+    "help": "Write all four sides before you add.",
+    "prep": "Add a length and a width, then double. SC1 and SC3.",
+    "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Missing sides",
+   "steps": [
+    "Across: 10 = 6 + ?, so ? = 4.",
+    "Up: 9 = 4 + ?, so ? = 5.",
+    "Add all six sides: 10 + 4 + 4 + 5 + 6 + 9.",
+    "Perimeter = 38 cm."
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      0,
+      9
+     ]
+    ],
+    "labels": [
+     "10 cm",
+     "4 cm",
+     "?",
+     "?",
+     "6 cm",
+     "9 cm"
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "38 cm"
+    ]
+   },
+   "notes": {
+    "answer": "38 cm",
+    "beats": [
+     [
+      "POINT to the bottom and the top.",
+      "SAY: The bottom is 10 across and the top is 6,",
+      "so the missing across side is 10 take away 6: 4."
+     ],
+     [
+      "POINT to the left side and the right side.",
+      "SAY: The left side is 9 tall. The right part is 4,",
+      "so the missing up side is 9 take away 4: 5."
+     ],
+     [
+      "ASK: Now add all six sides. What is the perimeter?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 38 cm"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 10, 4, 4, 5, 6 and 9 make 38 centimetres.",
+      "Every side, once."
+     ]
+    ],
+    "trap": [
+     "leaving out the missing sides.",
+     "Fix: count the sides, six, and they add them all."
+    ],
+    "stretch": "Why is it the same as a 10 by 9 rectangle?",
+    "help": "Tick each side as you add it.",
+    "prep": "The critical feature: a missing side comes from the opposite sides. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "A 6 m by 4 m rectangle",
+   "prompt": "What is the perimeter? Point to A, B or C",
+   "options": [
+    {
+     "text": "10 m",
+     "misconception": "adds only one length and one width"
+    },
+    {
+     "text": "20 m"
+    },
+    {
+     "text": "24 m",
+     "misconception": "multiplies: finds the area, not the perimeter"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Think: perimeter means all the way around."
+     ],
+     [
+      "ASK: What is the perimeter of a 6 metre by 4 metre rectangle?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What did C find?",
+      "Less -> trace all four sides on a sketch together. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B, 20 metres: 6, 4, 6 and 4.",
+      "A forgot two sides, and C multiplied, which gives the area."
+     ]
+    ],
+    "trap": [
+     "pointing to C.",
+     "Fix: say area covers, perimeter goes around, and they choose again."
+    ],
+    "prep": "First decision point. A: two sides only; C: perimeter confused with area.",
+    "tag": "[CFU | Supported application | SC1 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Find the perimeter",
+   "ask": "What is the perimeter?",
+   "routine": "boards",
+   "thinkTime": 25,
+   "pivot": "label every side, then add them one at a time",
+   "followUp": "cold call one board: Which sides did you work out?",
+   "items": [
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        7,
+        0
+       ],
+       [
+        7,
+        7
+       ],
+       [
+        0,
+        7
+       ]
+      ],
+      "labels": [
+       "7 cm",
+       null,
+       null,
+       null
+      ]
+     },
+     "label": "a square",
+     "answer": "28 cm"
+    },
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        25,
+        0
+       ],
+       [
+        25,
+        8
+       ],
+       [
+        0,
+        8
+       ]
+      ],
+      "labels": [
+       "25 m",
+       "8 m",
+       null,
+       null
+      ]
+     },
+     "answer": "66 m"
+    },
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        8,
+        0
+       ],
+       [
+        8,
+        3
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        5,
+        7
+       ],
+       [
+        0,
+        7
+       ]
+      ],
+      "labels": [
+       "8 m",
+       "3 m",
+       null,
+       null,
+       "5 m",
+       "7 m"
+      ]
+     },
+     "answer": "30 m",
+     "say": "30 metres: the missing sides are 3 and 4."
+    },
+    {
+     "text": "A rectangle's perimeter is 30 m. One side is 9 m. How long is the other side?",
+     "answer": "6 m",
+     "say": "Half of 30 is 15, and 15 take away 9 is 6."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write the perimeter on your board each time."
+    ],
+    "trap": [
+     "missing a side.",
+     "Fix: count the sides first, and they add again."
+    ],
+    "stretch": "Write a quicker way for each one.",
+    "help": "Copy the shape and write a number on every side.",
+    "prep": "Guided practice: a square, a rectangle, an L-shape, then working backwards. SC1 and SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "What is the perimeter?",
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      0
+     ],
+     [
+      12,
+      5
+     ],
+     [
+      7,
+      5
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      0,
+      8
+     ]
+    ],
+    "labels": [
+     "12 m",
+     "5 m",
+     null,
+     "3 m",
+     "7 m",
+     "8 m"
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "40 m"
+    ]
+   },
+   "notes": {
+    "answer": "40 m",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "One side has no label. Find it first."
+     ],
+     [
+      "ASK: What is the perimeter of this shape?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 40 m"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> find the missing step together: 12 take away 7. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The missing side is 5, so 12,",
+      "5, 5, 3, 7 and 8 make 40 metres.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 35, without the missing side.",
+     "Fix: count the sides, six, and they find the missing one."
+    ],
+    "prep": "The hinge before independent work. Anyone missing the unlabelled side starts on the Supported Worksheet with the teacher.",
+    "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Find perimeters and missing sides on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Did you add every side once?",
+     "TIME: 20 minutes. Stop everyone once at 10 minutes to share a strategy."
+    ],
+    "trap": [
+     "adding only the labelled sides.",
+     "Fix: count the sides, and they find the missing ones."
+    ],
+    "stretch": "Extension: working backwards, shapes from squares and the biggest pen.",
+    "help": "Supported Worksheet: every side to label, then add, with hints.",
+    "prep": "Independent practice: rectangles, missing sides and real problems. The sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "What is the perimeter of the pool?"
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      0
+     ],
+     [
+      25,
+      12
+     ],
+     [
+      0,
+      12
+     ]
+    ],
+    "labels": [
+     "25 m",
+     "12 m",
+     null,
+     null
+    ]
+   },
+   "notes": {
+    "answer": "74 m",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What is the perimeter of a pool 25 metres by 12 metres?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 74 m"
+     ],
+     [
+      "RECORD who adds two sides or multiplies.",
+      "They start tomorrow's check with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing 37 or 300.",
+     "Fix: none now. Record the name for tomorrow."
+    ],
+    "prep": "Exit evidence for SC1 and SC2: a new rectangle in context.",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner a quick way to find a rectangle's perimeter.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for add a length and a width, then double it",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can find a perimeter?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with 300 on the board matters most."
+     ],
+     [
+      "ASK: What is a quick way to find a rectangle's perimeter?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "EXPECT: add a length and a width, then double it"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence. Tomorrow: area, the inside.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}
