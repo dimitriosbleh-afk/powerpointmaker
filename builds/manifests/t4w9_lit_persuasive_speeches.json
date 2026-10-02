@@ -1,0 +1,21 @@
+{
+ "unit_folder": "Term4_Week9_Literacy_Persuasive_Speeches",
+ "unit_pptx_name": "Term 4 Week 9 - Speak Up - Year 5-6 Literacy.pptx",
+ "anchor": "Claim it. Prove it. Sell it. Say it. The writing anchor plus a microphone (say it), and the speech rule: write for the ear. Final piece: a rehearsed persuasive speech delivered to a live audience.",
+ "lessons": [
+  {
+   "build_script": "builds/t4w9_lit_s1_rehearse_and_refine.json",
+   "folder": "T4W9_Lit_S1_Rehearse_And_Refine",
+   "session": 1,
+   "title": "Rehearse and Refine",
+   "focus": "Edit by ear, rehearse in trios with feedback, and make final changes. Critical feature: practise the hard parts, not the whole thing again."
+  },
+  {
+   "build_script": "builds/t4w9_lit_s2_speech_day.json",
+   "folder": "T4W9_Lit_S2_Speech_Day",
+   "session": 2,
+   "title": "Speech Day",
+   "focus": "Deliver the persuasive speech to a live audience and reflect. Critical feature: the audience should know what you want them to do."
+  }
+ ]
+}

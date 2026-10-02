@@ -1,0 +1,926 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 7,
+    "session": 1,
+    "variant": 4,
+    "minutes": 60,
+    "title": "Same Fight, Different Style",
+    "subtitle": "Term 4 Week 7, Session 1",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 7 Session 1",
+    "outputFolder": "T4W7_Lit_S1_Same_Fight_Different_Style",
+    "fileName": "Session 1 - Same Fight, Different Style.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY07 how a text reflects the time and place it was created; VC2E5LY09 evaluating ideas in spoken texts; VC2E5LE02 forming and sharing opinions using metalanguage",
+      "shape": "compare, link choice to effect, judge: two young climate speakers 27 years apart are compared on a grid, students link each choice to its effect, then write a comparison paragraph that judges which works better and for whom",
+      "criticalFeature": "compare the speakers' choices and their effects, not just their topics",
+      "decisionPoints": [
+        "the Same or different? round",
+        "the choice check: a sentence that compares choice and effect",
+        "the exit board: a new comparison sentence"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: judge how others said it.",
+      "catchUp": "Missed Week 6? Replay one minute of each speech; the grid on the slide gives everything needed to compare."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Persuasive Speaker's Toolkit (Week 6 rows)",
+      "Mini-whiteboards and markers",
+      "Writing books"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 or 2",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Comparison frame: Both... However... I think ___ is more persuasive for ___ because ___.",
+      "Cue one minute each of the Severn and Greta speeches"
+    ],
+    "videos": [
+      "DCE Speech Collection: Severn Cullis-Suzuki (1992) and Greta Thunberg (2019), one minute each, back to back"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: compare the two speakers, link choices to effects, then write a comparison paragraph that judges them.",
+      "title": "Same Fight, Different Style",
+      "subtitle": "Compare the choices and their effects.",
+      "sections": [
+        {
+          "title": "Side by side",
+          "columns": 1,
+          "example": {
+            "prompt": "Compare: tone",
+            "steps": [
+              "What tone does each use?",
+              "Write each in a few words",
+              "Same or different?"
+            ],
+            "answer": "Severn: calm, polite. Greta: angry, urgent. Different."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Compare the two speakers.",
+              "columns": [
+                "",
+                "Severn (1992, age 12)",
+                "Greta (2019, age 16)"
+              ],
+              "rows": [
+                [
+                  "Tone",
+                  "",
+                  ""
+                ],
+                [
+                  "Main technique",
+                  "",
+                  ""
+                ],
+                [
+                  "Audience",
+                  "",
+                  ""
+                ],
+                [
+                  "What she wants",
+                  "",
+                  ""
+                ],
+                [
+                  "A line I remember",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Tone",
+                  "calm, polite, firm",
+                  "angry, urgent"
+                ],
+                [
+                  "Main technique",
+                  "a child's credibility; simple requests",
+                  "short punches; talking to you"
+                ],
+                [
+                  "Audience",
+                  "world leaders, Earth Summit",
+                  "world leaders, UN summit"
+                ],
+                [
+                  "What she wants",
+                  "stop breaking what you can't fix",
+                  "act on climate now"
+                ],
+                [
+                  "A line I remember",
+                  "please stop breaking it",
+                  "How dare you!"
+                ]
+              ],
+              "widths": [
+                0.8,
+                1.2,
+                1.2
+              ],
+              "rowH": 26
+            }
+          ]
+        },
+        {
+          "title": "Compare, don't just describe",
+          "columns": 2,
+          "example": {
+            "prompt": "Weak: both talk about the planet.",
+            "steps": [
+              "Name a choice each made",
+              "Say the effect of each",
+              "Use however to compare"
+            ],
+            "answer": "Severn stays polite, which makes leaders feel guilty; however, Greta's anger makes them uncomfortable."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which sentence compares choices AND effects?",
+              "options": [
+                "Both are about the environment.",
+                "Severn's calm makes them guilty; Greta's anger makes them squirm.",
+                "Greta's better. I like her."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "It names a choice from each speaker and the effect of each."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Ana wrote this comparison. Find the problem and fix it.",
+              "work": [
+                "Severn is twelve and Greta is sixteen."
+              ],
+              "answer": "It compares facts, not choices. Fix: Severn uses her age to make adults feel responsible; Greta uses anger to make them feel ashamed."
+            }
+          ]
+        },
+        {
+          "title": "Choice and effect",
+          "columns": 1,
+          "example": {
+            "prompt": "Choice: a short sentence after a long one.",
+            "steps": [
+              "Name the choice",
+              "What does the audience feel or do?",
+              "Write: which makes..."
+            ],
+            "answer": "which makes the point hit like a punch"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write the effect of each speaker's choice.",
+              "columns": [
+                "Choice",
+                "Effect on the audience"
+              ],
+              "rows": [
+                [
+                  "Severn says she is only a child.",
+                  ""
+                ],
+                [
+                  "Greta says you, not they.",
+                  ""
+                ],
+                [
+                  "Both speak to the most powerful people in the world.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Severn says she is only a child.",
+                  "the adults feel responsible for her future"
+                ],
+                [
+                  "Greta says you, not they.",
+                  "each leader feels personally blamed"
+                ],
+                [
+                  "Both speak to the most powerful people in the world.",
+                  "their words feel brave and important"
+                ]
+              ],
+              "widths": [
+                1.2,
+                1.5
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "Who persuades better?",
+          "columns": 1,
+          "example": {
+            "prompt": "My judgement",
+            "steps": [
+              "Both... (what is the same)",
+              "However... (a different choice and its effect)",
+              "I think ___ is more persuasive for ___ because ___"
+            ],
+            "answer": "Both speak for young people. However, ... I think Severn is more persuasive for adults because..."
+          },
+          "items": [
+            {
+              "prompt": "Write a paragraph comparing Severn and Greta. Finish by judging which is more persuasive, and for which audience.",
+              "answer": "Both..., However..., and a judgement with an audience and a reason.",
+              "lines": 6
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: match styles to audiences, then write in one speaker's style.",
+      "title": "Speech Coach",
+      "subtitle": "Different audiences need different styles.",
+      "sections": [
+        {
+          "title": "Which style for which audience?",
+          "columns": 1,
+          "example": {
+            "prompt": "Audience: Year 1 students",
+            "steps": [
+              "What will they respond to?",
+              "Which speaker's style fits?",
+              "Why?"
+            ],
+            "answer": "Malala's hopeful story: young kids respond to hope, not blame."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Choose the best speaker style for each audience and explain.",
+              "columns": [
+                "Audience",
+                "Style (whose?)",
+                "Why"
+              ],
+              "rows": [
+                [
+                  "the school council",
+                  "",
+                  ""
+                ],
+                [
+                  "a Year 1 class",
+                  "",
+                  ""
+                ],
+                [
+                  "a crowd at a protest",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "the school council",
+                  "Severn: calm, polite, credible",
+                  "adults respond to respect and reasons"
+                ],
+                [
+                  "a Year 1 class",
+                  "Malala: hopeful, story",
+                  "young kids need hope and simple stories"
+                ],
+                [
+                  "a crowd at a protest",
+                  "Greta or Dr King: urgent or soaring",
+                  "a crowd wants energy and rhythm"
+                ]
+              ],
+              "widths": [
+                0.9,
+                1.2,
+                1.3
+              ],
+              "rowH": 38
+            }
+          ]
+        },
+        {
+          "title": "In their style",
+          "columns": 1,
+          "example": {
+            "prompt": "Issue: phones at school, in Greta's style.",
+            "steps": [
+              "Pick a speaker",
+              "Copy their tone and technique",
+              "Use your own words"
+            ],
+            "answer": "You knew. You saw kids glued to screens. And you did nothing."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write a five-line speech opening on a new issue in the style of one of our speakers. Name the speaker and two things you copied.",
+              "answer": "An opening that clearly copies a speaker's tone and technique.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first comparison done and a frame.",
+      "title": "Compare Helper",
+      "subtitle": "Same? Different? Which works better?",
+      "sections": [
+        {
+          "title": "Same or different?",
+          "columns": 3,
+          "example": {
+            "prompt": "Both are young.",
+            "steps": [
+              "Is it true for both?",
+              "Yes",
+              "Same"
+            ],
+            "answer": "same"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Both spoke to world leaders.",
+              "options": [
+                "same",
+                "different"
+              ],
+              "answer": 0,
+              "hint": "True for both?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Their tone.",
+              "options": [
+                "same",
+                "different"
+              ],
+              "answer": 1,
+              "hint": "Calm or angry?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Both care about the planet.",
+              "options": [
+                "same",
+                "different"
+              ],
+              "answer": 0,
+              "hint": "True for both?"
+            }
+          ]
+        },
+        {
+          "title": "Compare them",
+          "columns": 1,
+          "example": {
+            "prompt": "Tone",
+            "steps": [
+              "Severn was ___",
+              "Greta was ___",
+              "So they are different"
+            ],
+            "answer": "Severn was calm. Greta was angry."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in each row.",
+              "columns": [
+                "",
+                "Severn",
+                "Greta"
+              ],
+              "rows": [
+                [
+                  "Tone",
+                  "calm",
+                  "angry"
+                ],
+                [
+                  "Age",
+                  "",
+                  ""
+                ],
+                [
+                  "Famous line",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Tone",
+                  "calm",
+                  "angry"
+                ],
+                [
+                  "Age",
+                  "12",
+                  "16"
+                ],
+                [
+                  "Famous line",
+                  "please stop breaking it",
+                  "How dare you!"
+                ]
+              ],
+              "hint": "The first row is done for you.",
+              "widths": [
+                0.7,
+                1,
+                1
+              ],
+              "rowH": 30
+            }
+          ]
+        },
+        {
+          "title": "My judgement",
+          "columns": 1,
+          "example": {
+            "prompt": "Which is more persuasive?",
+            "steps": [
+              "Both ___.",
+              "Severn ___, but Greta ___.",
+              "I think ___ is better because ___."
+            ],
+            "answer": "Both care about the planet. Severn is calm, but Greta is angry. I think Severn is better because adults listen to calm."
+          },
+          "items": [
+            {
+              "prompt": "Finish: Both ___. Severn ___, but Greta ___. I think ___ is more persuasive because ___.",
+              "answer": "A comparison with a judgement.",
+              "lines": 4,
+              "hint": "Use the table above."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: two young speakers, one fight, 27 years apart. Who did it better?"
+    },
+    {
+      "kind": "overview",
+      "title": "For the teacher: Week 7 at a glance",
+      "lines": [
+        "This week: compare speakers, then the delivery skills: voice, body language, openings and endings.",
+        "Session 5 is the fun Just a Minute challenge: one-minute speeches on silly topics.",
+        "Every session ends with students speaking, not just writing.",
+        "Unit anchor: Claim it. Prove it. Sell it. Say it."
+      ],
+      "notes": "Teacher-facing only. Week 8 is writing their own speech; Week 9 is Speech Day."
+    },
+    {
+      "kind": "resources",
+      "notes": "Cue one minute each of Severn's and Greta's speeches from the DCE Speech Collection. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to compare how two speakers persuade and judge which works better.",
+      "successCriteria": [
+        "I can say what is the same and different about two speeches.",
+        "I can compare speakers' choices and their effects.",
+        "I can judge which speaker is more persuasive for an audience, with reasons."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Two speakers, one fight. Today you are the judge."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "27 years apart",
+      "lines": [
+        "1992: Severn, 12. Calm and polite.",
+        "2019: Greta, 16. Angry and urgent.",
+        "Same fight. Who was more persuasive?"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "calm",
+            "label": "Severn, 1992"
+          },
+          {
+            "name": "angry",
+            "label": "Greta, 2019"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - both have a case; it depends on the audience",
+        "beats": [
+          [
+            "PLAY one minute of each speech, back to back.",
+            "SAY: Same issue. Same kind of audience. Very different style."
+          ],
+          [
+            "ASK: Who was more persuasive? 1 for Severn, 2 for Greta.",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: a split"
+          ],
+          [
+            "ASK: Convince your partner in one sentence.",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: Severn was calm so adults listened; Greta made them feel it"
+          ],
+          "SAY: Today you learn to judge like an expert: by choices and effects."
+        ],
+        "trap": [
+          "choosing by which speaker they like.",
+          "Fix: ask what did she DO that worked? Student names a choice."
+        ],
+        "prep": "Low-coupling launch; the clips do the re-grounding. 4 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "effect",
+      "meaning": "What a speaker's choice makes the audience think, feel or do.",
+      "example": "Her calm tone makes the leaders feel guilty.",
+      "pictogram": "lightbulb",
+      "notes": {
+        "answer": "what a speaker's choice makes the audience think, feel or do",
+        "beats": [
+          "POINT to the word. SAY: Effect. Say it with me. Effect.",
+          [
+            "SAY: What a speaker's choice makes the audience think, feel or do.",
+            "SAY: Her calm tone makes the leaders feel guilty."
+          ],
+          [
+            "ASK: Greta says you. What is the effect on the leaders?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: they feel blamed; they can't hide"
+          ]
+        ],
+        "trap": [
+          "confusing effect with technique.",
+          "Fix: say technique is what the speaker does; effect is what happens to us."
+        ],
+        "prep": "The analysis word the comparison runs on.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Compare the choices",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "",
+            "Severn (1992)",
+            "Greta (2019)"
+          ],
+          [
+            "Tone",
+            "calm, polite, firm",
+            "angry, urgent"
+          ],
+          [
+            "Main technique",
+            "a child's credibility",
+            "short punches, you"
+          ],
+          [
+            "Effect",
+            "leaders feel responsible",
+            "leaders feel uncomfortable"
+          ],
+          [
+            "Same",
+            "young, brave, world leaders, the planet",
+            "young, brave, world leaders, the planet"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "different tone and technique, different effect; same purpose and audience",
+        "beats": [
+          [
+            "POINT to Tone.",
+            "SAY: Same audience. Severn chose calm. Greta chose anger."
+          ],
+          [
+            "POINT to Effect.",
+            "SAY: Calm makes them feel responsible. Anger makes them feel uncomfortable.",
+            "Both get under their skin, in different ways."
+          ],
+          [
+            "SAY: Some of that is the time. By 2019,",
+            "young people had been asking for decades. Greta's anger fits that."
+          ],
+          [
+            "ASK: Write one thing that is the SAME about them.",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: both young; both spoke to leaders; both about the planet"
+          ]
+        ],
+        "trap": [
+          "listing facts like age and year instead of choices.",
+          "Fix: ask what did she choose to do? Student names a choice."
+        ],
+        "stretch": "Explain how the year changes how each speech sounds.",
+        "help": "Start with tone: calm or angry?",
+        "prep": "The model. Critical feature: compare choices and effects, not topics. Time and place (VC2E5LY07) in beat 3.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Same or different?",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "check the comparison table row by row",
+      "followUp": "cold call one student: why does that matter?",
+      "items": [
+        {
+          "text": "Their tone",
+          "answer": "2 - different: calm vs angry",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Their audience",
+          "answer": "1 - same: world leaders",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Their main technique",
+          "answer": "2 - different: credibility vs punches",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Their purpose",
+          "answer": "1 - same: make leaders act on the environment",
+          "expect": "1 finger"
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger same. Two fingers different."
+        ],
+        "trap": [
+          "calling purpose different because their words differ.",
+          "Fix: ask what does each want leaders to do? Student re-votes."
+        ],
+        "stretch": "Say the effect of each difference.",
+        "help": "Use the comparison table.",
+        "prep": "Guided practice. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which sentence compares choices and effects?",
+      "options": [
+        {
+          "text": "Both speeches are about the environment.",
+          "misconception": "compares topics, not choices"
+        },
+        {
+          "text": "Severn's calm makes leaders feel guilty; Greta's anger makes them squirm."
+        },
+        {
+          "text": "Greta is better because I like her more.",
+          "misconception": "a preference with no choice or effect"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - a choice and an effect for each speaker",
+        "beats": [
+          "SAY: Three comparison sentences. Only one compares like an expert.",
+          [
+            "ASK: Which sentence compares choices and effects?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: turn A into an expert comparison.",
+            "Less -> underline choice and effect in B, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Calm, guilty. Anger, squirm. Choice and effect, twice."
+          ]
+        ],
+        "trap": [
+          "pointing to C because it gives an opinion.",
+          "Fix: ask why? What did she do? Student finds no choice named."
+        ],
+        "prep": "Decision point before writing. Under 80% means one comparison sentence is built together.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Choice, then effect",
+      "routine": "boards",
+      "thinkTime": 25,
+      "pivot": "ask: what does the audience feel or do because of it?",
+      "followUp": "cold call one board: is that an effect or a technique?",
+      "items": [
+        {
+          "text": "A speaker tells a true story about her little brother.",
+          "answer": "the audience feels it personally and cares",
+          "expect": "an effect on the audience"
+        },
+        {
+          "text": "A speaker repeats We can at the start of every line.",
+          "answer": "it builds rhythm and hope; the audience feels they can act",
+          "expect": "an effect"
+        },
+        {
+          "text": "A speaker pauses for three seconds before her last line.",
+          "answer": "everyone leans in; the last line lands harder",
+          "expect": "an effect"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Each card is a choice. Write its effect on the audience."
+        ],
+        "trap": [
+          "repeating the choice: it makes it repeated.",
+          "Fix: ask so how does the audience feel? Student rewrites."
+        ],
+        "stretch": "Name a speaker this term who made that choice.",
+        "help": "Start: which makes the audience...",
+        "prep": "Guided practice on effects. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Judge the speakers",
+      "task": "Work through your Worksheet. Finish with a paragraph comparing Severn and Greta that judges who is more persuasive, and for whom.",
+      "where": "Worksheet",
+      "frame": "Both ___. However, ___. I think ___ is more persuasive for ___ because ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "scales",
+          "lightbulb",
+          "pencil"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Compare, then judge",
+      "notes": {
+        "answer": "a comparison paragraph with Both, However and a judgement",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Compare choices and effects, then be brave: make a judgement."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: what's the effect of that choice? For which audience?",
+          [
+            "ASK: Read your judgement sentence to your partner. Do they agree?",
+            "30 sec. Turn and tell, partner A first.",
+            "EXPECT: a judgement with an audience and a reason"
+          ]
+        ],
+        "trap": [
+          "a paragraph that describes each speech separately and never compares.",
+          "Fix: student joins them with However and names the difference."
+        ],
+        "stretch": "Extension: match speaker styles to audiences, then write in one speaker's style.",
+        "help": "Supported Worksheet: picture-clue choices, a first row done, a frame.",
+        "prep": "Independent application. The judgement sentence is SC3 evidence. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a comparison paragraph with a judgement"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Think of Malala and Dr King.",
+        "Write one sentence comparing a choice each made and its effect."
+      ],
+      "notes": {
+        "answer": "e.g. Malala's story makes us care; Dr King's repetition makes us feel hope",
+        "beats": [
+          "SAY: Two different speakers from last week. Compare them like an expert.",
+          [
+            "ASK: Write one sentence comparing a choice and an effect.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a choice and an effect for each"
+          ],
+          "RECORD who compares topics only. Tomorrow's warm-up."
+        ],
+        "trap": [
+          "Both are famous speakers.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new pair of speakers. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Which speaker's style would suit YOUR speech audience best? Why?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - calm like Severn, because I'm talking to the principal",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can compare choices and effects?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Which speaker's style would suit YOUR speech audience best? Why?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: calm like Severn, because I'm talking to the principal"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1008 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 7,
+    "session": 3,
+    "variant": 4,
+    "minutes": 60,
+    "title": "Stand Tall",
+    "subtitle": "Term 4 Week 7, Session 3",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 7 Session 3",
+    "outputFolder": "T4W7_Lit_S3_Stand_Tall",
+    "fileName": "Session 3 - Stand Tall.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY02 delivering spoken texts to an audience using features of voice and body; VC2E5LY01 interaction skills when giving and receiving feedback",
+      "shape": "watch, name, perform: a good and a weak speaker are compared, body language is named, then trios perform speech karaoke cards and give each other feedback",
+      "criticalFeature": "your body must say the same thing as your words: stance, eyes, hands and face all carry the message",
+      "decisionPoints": [
+        "the Helps or hurts? round",
+        "the choice check: the most confident speaker",
+        "the exit board: two fixes for a new speaker"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: say it with your whole body.",
+      "catchUp": "Missed earlier sessions? Body language is taught from scratch today; perform a karaoke card instead of your own lines."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Speech Karaoke Cards (one set per trio, cut before the session)",
+      "Marked-up speech lines from Session 2",
+      "Mini-whiteboards and markers"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 or 2",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Stand tall: feet planted, shoulders back, hands still or purposeful, lighthouse eyes (left, middle, right), face matches the words",
+      "Trios: speaker, eyes coach, body coach"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: judge body language, fix a mismatch, choose gestures, then plan your own body language.",
+      "title": "Stand Tall",
+      "subtitle": "Your body must say what your words say.",
+      "sections": [
+        {
+          "title": "Helps or hurts?",
+          "columns": 1,
+          "example": {
+            "prompt": "Swaying side to side",
+            "steps": [
+              "Picture the audience watching",
+              "Does it help or distract?",
+              "Say why"
+            ],
+            "answer": "Hurts: the audience watches the swaying, not the message."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Does each one help or hurt a speech? Say why.",
+              "columns": [
+                "Body language",
+                "Helps or hurts?",
+                "Why?"
+              ],
+              "rows": [
+                [
+                  "looking at the floor",
+                  "",
+                  ""
+                ],
+                [
+                  "feet planted, shoulders back",
+                  "",
+                  ""
+                ],
+                [
+                  "fiddling with your cards",
+                  "",
+                  ""
+                ],
+                [
+                  "looking left, middle, right",
+                  "",
+                  ""
+                ],
+                [
+                  "a smile on a serious line",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "looking at the floor",
+                  "hurts",
+                  "the audience feels ignored"
+                ],
+                [
+                  "feet planted, shoulders back",
+                  "helps",
+                  "you look confident"
+                ],
+                [
+                  "fiddling with your cards",
+                  "hurts",
+                  "it distracts"
+                ],
+                [
+                  "looking left, middle, right",
+                  "helps",
+                  "everyone feels spoken to"
+                ],
+                [
+                  "a smile on a serious line",
+                  "hurts",
+                  "face and words don't match"
+                ]
+              ],
+              "widths": [
+                1.3,
+                0.8,
+                1.2
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Match body and words",
+          "columns": 2,
+          "example": {
+            "prompt": "Words: This is urgent. Body: shrugging.",
+            "steps": [
+              "What do the words say?",
+              "What does the body say?",
+              "Match them"
+            ],
+            "answer": "Stand still, lean forward slightly, serious face."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which speaker looks most confident?",
+              "options": [
+                "Reads every word with eyes on the page.",
+                "Stands still, looks up, pauses, then speaks.",
+                "Rocks on heels and laughs nervously."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "Still, looking up and pausing shows they believe what they say."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Tom's body doesn't match his words. Find the problem and fix it.",
+              "work": [
+                "He says: Please, this matters so much. He shrugs and looks at his shoes."
+              ],
+              "answer": "His body says he doesn't care. Fix: stand still, look at the audience, open hands on please."
+            }
+          ]
+        },
+        {
+          "title": "Choose a gesture",
+          "columns": 1,
+          "example": {
+            "prompt": "Line: One bag. One turtle.",
+            "steps": [
+              "What is the key idea?",
+              "Which simple gesture shows it?",
+              "Use it once, on the key word"
+            ],
+            "answer": "Hold up one finger on One."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Choose a simple gesture for each line.",
+              "columns": [
+                "Line",
+                "Gesture"
+              ],
+              "rows": [
+                [
+                  "We are all in this together.",
+                  ""
+                ],
+                [
+                  "The ice is shrinking every year.",
+                  ""
+                ],
+                [
+                  "Stop. Think. Choose.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "We are all in this together.",
+                  "open arms towards the audience"
+                ],
+                [
+                  "The ice is shrinking every year.",
+                  "hands close together, slowly"
+                ],
+                [
+                  "Stop. Think. Choose.",
+                  "a hand up on Stop, then point to head, then open palm"
+                ]
+              ],
+              "widths": [
+                1.3,
+                1.4
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "My body language plan",
+          "columns": 1,
+          "example": {
+            "prompt": "My speech",
+            "steps": [
+              "How I'll stand",
+              "Where I'll look",
+              "One gesture and its line"
+            ],
+            "answer": "Feet planted. Lighthouse eyes. Open hands on We can fix this."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Plan your body language for Speech Day.",
+              "columns": [
+                "Part",
+                "My plan"
+              ],
+              "rows": [
+                [
+                  "How I'll stand",
+                  ""
+                ],
+                [
+                  "Where I'll look",
+                  ""
+                ],
+                [
+                  "Gesture 1 and its line",
+                  ""
+                ],
+                [
+                  "My face on my most serious line",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "How I'll stand",
+                  "feet planted, shoulders back"
+                ],
+                [
+                  "Where I'll look",
+                  "left, middle, right"
+                ],
+                [
+                  "Gesture 1 and its line",
+                  "a simple gesture on a key line"
+                ],
+                [
+                  "My face on my most serious line",
+                  "serious, matching the words"
+                ]
+              ],
+              "widths": [
+                1,
+                1.8
+              ],
+              "rowH": 30
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: plan movement across a speech, then coach a partner.",
+      "title": "Stage Presence",
+      "subtitle": "The best speakers own the space.",
+      "sections": [
+        {
+          "title": "Move with meaning",
+          "columns": 1,
+          "example": {
+            "prompt": "A speech with three parts",
+            "steps": [
+              "Stand in one spot for each part",
+              "Step forward for the call to action",
+              "Never wander"
+            ],
+            "answer": "Left for the problem, middle for the proof, step forward for Please..."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Plan where you'll stand for each part of your speech.",
+              "columns": [
+                "Part of my speech",
+                "Where I stand",
+                "Why"
+              ],
+              "rows": [
+                [
+                  "Opening",
+                  "",
+                  ""
+                ],
+                [
+                  "My story",
+                  "",
+                  ""
+                ],
+                [
+                  "Call to action",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Opening",
+                  "centre",
+                  "a strong, still start"
+                ],
+                [
+                  "My story",
+                  "one step to the side",
+                  "it feels personal, like a chat"
+                ],
+                [
+                  "Call to action",
+                  "one step forward",
+                  "it feels urgent and direct"
+                ]
+              ],
+              "widths": [
+                1,
+                1,
+                1.4
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "Coach a partner",
+          "columns": 1,
+          "example": {
+            "prompt": "Coaching note",
+            "steps": [
+              "One thing that worked",
+              "One thing to change",
+              "Show them how"
+            ],
+            "answer": "Your eyes were great. Try keeping your hands still on the story."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Watch a partner perform. Write a coaching note: one thing that worked, one thing to change, and how to do it.",
+              "answer": "A specific, kind coaching note with a demonstration.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first gesture done and a short plan.",
+      "title": "Stand Tall Helper",
+      "subtitle": "Feet still. Eyes up. Face matches words.",
+      "sections": [
+        {
+          "title": "Good or not?",
+          "columns": 3,
+          "example": {
+            "prompt": "Looking at the audience",
+            "steps": [
+              "Does it help?",
+              "Yes",
+              "Good"
+            ],
+            "answer": "good"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Looking at your shoes",
+              "options": [
+                "good",
+                "not good"
+              ],
+              "answer": 1,
+              "hint": "Can the audience see your eyes?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Standing still and tall",
+              "options": [
+                "good",
+                "not good"
+              ],
+              "answer": 0,
+              "hint": "Does it look confident?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Playing with your hair",
+              "options": [
+                "good",
+                "not good"
+              ],
+              "answer": 1,
+              "hint": "Is it distracting?"
+            }
+          ]
+        },
+        {
+          "title": "Pick a gesture",
+          "columns": 1,
+          "example": {
+            "prompt": "We are a team.",
+            "steps": [
+              "What does it mean?",
+              "Show it with your hands",
+              "Write it"
+            ],
+            "answer": "open arms"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Choose a gesture.",
+              "columns": [
+                "Line",
+                "Gesture"
+              ],
+              "rows": [
+                [
+                  "We are a team.",
+                  "open arms"
+                ],
+                [
+                  "One more chance.",
+                  ""
+                ],
+                [
+                  "Stop the litter.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "We are a team.",
+                  "open arms"
+                ],
+                [
+                  "One more chance.",
+                  "one finger up"
+                ],
+                [
+                  "Stop the litter.",
+                  "hand up like a stop sign"
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                1.2
+              ],
+              "rowH": 30
+            }
+          ]
+        },
+        {
+          "title": "My plan",
+          "columns": 1,
+          "example": {
+            "prompt": "Speech Day",
+            "steps": [
+              "I will stand ___",
+              "I will look ___",
+              "I will use ___"
+            ],
+            "answer": "I will stand still. I will look at three spots. I will use open arms."
+          },
+          "items": [
+            {
+              "prompt": "Finish: I will stand ___. I will look ___. I will use this gesture: ___.",
+              "answer": "A simple body language plan.",
+              "lines": 3,
+              "hint": "Use the board for ideas."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    },
+    {
+      "kind": "cards",
+      "label": "Speech Karaoke Cards",
+      "description": "Performance activity: six short original speeches to perform in trios with lighthouse eyes and one gesture. One set per trio.",
+      "title": "Speech Karaoke Cards",
+      "subtitle": "Perform your card. Use lighthouse eyes, one gesture and one big pause.",
+      "cols": 2,
+      "cardH": 150,
+      "cards": [
+        {
+          "text": "Friends, our oval is a swamp every winter. Our boots sink. Our games are cancelled. Fix the drains, and give us back our sport!"
+        },
+        {
+          "text": "Every lunch, three bins overflow. Three bins! For six hundred kids! We don't need speeches. We need bins."
+        },
+        {
+          "text": "I'm only eleven. But I know this: shade saves skin. Plant trees now, and we'll thank you every summer."
+        },
+        {
+          "text": "Picture a library at lunch. Quiet. Cool. Full of stories. Now picture it locked. Open the doors. Please."
+        },
+        {
+          "text": "One bottle. One turtle. One choice. Bring your own bottle, and save one more life."
+        },
+        {
+          "text": "They say kids can't change the world. Watch us. Starting today, our school goes plastic-free."
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: before your audience hears a word, they see you. Today we make that count."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print and cut one set of Speech Karaoke Cards per trio. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Clear space for trios to perform."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to use body language and eye contact to support our message.",
+      "successCriteria": [
+        "I can name body language that helps or hurts a speech.",
+        "I can make my body match my words when I speak.",
+        "I can give a speaker useful feedback on body language."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Your audience reads your body before your words. Let's make it say the right thing."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Guess the feeling",
+      "lines": [
+        "I'll say the same line twice with different body language.",
+        "We need your help."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "person",
+            "label": "slumped"
+          },
+          {
+            "name": "run",
+            "label": "confident"
+          },
+          {
+            "name": "eye",
+            "label": "eye contact"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - the confident version is more believable",
+        "beats": [
+          [
+            "SAY: Watch my body, not just my words.",
+            "SAY We need your help: slumped, eyes down. Then: tall, eyes up, open hands."
+          ],
+          [
+            "ASK: Which time did you believe me? First or second?",
+            "5 sec. Cue: Fingers at your chest, 1 or 2... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: What did my body do differently?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: stood tall, looked at us, used hands"
+          ],
+          "SAY: Same words. Your body changed the message. Today we learn to control it."
+        ],
+        "trap": [
+          "focusing on the voice only.",
+          "Fix: say this time the voice was the same; what changed?"
+        ],
+        "prep": "Act both versions clearly; it is the hook. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "eye contact",
+      "meaning": "Looking at your audience so they feel you are talking to them.",
+      "example": "Lighthouse eyes: left, middle, right.",
+      "pictogram": "eye",
+      "notes": {
+        "answer": "looking at your audience so they feel you are talking to them",
+        "beats": [
+          "POINT to the word. SAY: Eye contact. Say it with me. Eye contact.",
+          [
+            "SAY: Looking at your audience so they feel you are talking to them.",
+            "SAY: Lighthouse eyes: left, middle, right."
+          ],
+          [
+            "ASK: Try lighthouse eyes on your partner's group for one sentence.",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: eyes sweep left, middle, right"
+          ]
+        ],
+        "trap": [
+          "staring at one person the whole time.",
+          "Fix: say a lighthouse sweeps; give every part of the room a turn."
+        ],
+        "prep": "Toolkit note beside row 8.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Stand tall",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Part",
+            "Do this",
+            "Not this"
+          ],
+          [
+            "Feet",
+            "planted, shoulder-width",
+            "swaying, rocking"
+          ],
+          [
+            "Eyes",
+            "lighthouse: left, middle, right",
+            "floor, ceiling, cards"
+          ],
+          [
+            "Hands",
+            "still, or one purposeful gesture",
+            "fiddling, pockets"
+          ],
+          [
+            "Face",
+            "matches the words",
+            "smiling on a serious line"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "feet planted, lighthouse eyes, still or purposeful hands, a matching face",
+        "beats": [
+          [
+            "POINT to Feet.",
+            "SAY: Plant your feet. If you sway, they watch the sway, not your message."
+          ],
+          [
+            "POINT to Eyes.",
+            "SAY: Lighthouse eyes. Left, middle, right. Everyone feels spoken to."
+          ],
+          [
+            "POINT to Face.",
+            "SAY: If your words are serious, so is your face. Body and words must agree."
+          ],
+          [
+            "ASK: Stand, plant your feet, and say I can do this with lighthouse eyes.",
+            "5 sec. Cue: Everyone, together, on three.",
+            "EXPECT: the whole class standing tall"
+          ]
+        ],
+        "trap": [
+          "over-gesturing on every word.",
+          "Fix: say one gesture, on one key line. Hands rest the rest of the time."
+        ],
+        "stretch": "Plan where in your speech one gesture will go.",
+        "help": "Start with feet only: planted.",
+        "prep": "The model. Critical feature: your body must say what your words say.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Helps or hurts?",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "picture yourself in the audience: are you watching the message or the movement?",
+      "followUp": "cold call one student: what would you do instead?",
+      "items": [
+        {
+          "text": "Hands in pockets the whole time",
+          "answer": "2 - hurts: looks uninterested",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "A pause and a look at the audience before the last line",
+          "answer": "1 - helps: they lean in",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Reading every word from the page",
+          "answer": "2 - hurts: no eye contact",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Open hands on Together, we can",
+          "answer": "1 - helps: the body matches the words",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Laughing during the sad part",
+          "answer": "2 - hurts: face and words clash",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "One step forward for the call to action",
+          "answer": "1 - helps: it feels urgent and direct",
+          "expect": "1 finger"
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger helps. Two fingers hurts."
+        ],
+        "trap": [
+          "voting helps for any movement.",
+          "Fix: ask does it match the words? Student re-votes."
+        ],
+        "stretch": "Give a fix for each one that hurts.",
+        "help": "Use the Do this column.",
+        "prep": "Guided practice. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which speaker looks most confident?",
+      "options": [
+        {
+          "text": "Reads every word with eyes on the page.",
+          "misconception": "thinks reading accurately is enough"
+        },
+        {
+          "text": "Stands still, looks up, pauses, then speaks."
+        },
+        {
+          "text": "Rocks on heels and laughs between lines.",
+          "misconception": "nerves showing; the body distracts from the words"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - still, eyes up, a pause before speaking",
+        "beats": [
+          "SAY: Three speakers, same speech. Who looks like they believe it?",
+          [
+            "ASK: Which speaker looks most confident?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what would help speaker C?",
+            "Less -> act out all three, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Still and looking up. The pause says: I'm in charge."
+          ]
+        ],
+        "trap": [
+          "pointing to A because they get every word right.",
+          "Fix: ask how does the audience feel when you never look at them?"
+        ],
+        "prep": "Decision point before trios perform. Under 80% means a teacher demo of A and B first.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "We Do",
+      "title": "Speech karaoke",
+      "lines": [
+        "Trios: speaker, eyes coach, body coach.",
+        "Speaker performs a card. Coaches give one glow, one grow.",
+        "Swap roles until everyone has performed."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "microphone",
+            "label": "speaker"
+          },
+          {
+            "name": "eye",
+            "label": "eyes coach"
+          },
+          {
+            "name": "person",
+            "label": "body coach"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - every student performs once and coaches twice",
+        "beats": [
+          [
+            "SAY: Pick a card. You get thirty seconds to read it twice, then perform.",
+            "Lighthouse eyes, one gesture, one big pause."
+          ],
+          [
+            "TIME 4 minutes per speaker, 12 minutes total.",
+            "CIRCULATE. Coach the coaches: name one body part in every note."
+          ],
+          [
+            "ASK: Thumbs: how did your performance feel?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: mostly up or sideways"
+          ],
+          [
+            "ASK: Coaches, tell your speaker one glow and one grow.",
+            "20 sec. Turn and tell, eyes coach first.",
+            "EXPECT: Your pause was great; look at the left side too"
+          ]
+        ],
+        "trap": [
+          "coaches saying good job.",
+          "Fix: model: Your eyes were on the floor during the story; lift them."
+        ],
+        "stretch": "Perform your card twice: once calm, once urgent.",
+        "help": "Perform the shortest card, holding it at chest height.",
+        "prep": "Fun performance activity with cards; every student speaks. 14 minutes. SC2 and SC3.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Plan your body language",
+      "task": "Work through your Worksheet. Finish by planning your body language for Speech Day, then try it with your own lines.",
+      "where": "Worksheet",
+      "frame": "I will stand ___, look ___, and ___ on ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "person",
+          "eye",
+          "microphone"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Stand tall",
+      "notes": {
+        "answer": "a body language plan: stance, eyes, one gesture, matching face",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Plan it, then try it on your own lines from Session 2."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: where will you look? Which line gets your gesture?",
+          [
+            "ASK: Perform one line with your plan for your partner.",
+            "30 sec each. Turn and tell, partner A first.",
+            "EXPECT: planted feet, eyes up, one gesture"
+          ]
+        ],
+        "trap": [
+          "a plan with a gesture on every line.",
+          "Fix: student picks the single most important line for the gesture."
+        ],
+        "stretch": "Extension: plan movement across your speech, then coach a partner.",
+        "help": "Supported Worksheet: picture-clue choices, a first gesture done, a short plan.",
+        "prep": "Independent planning, then a quick paired try. SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a body language plan for the student's own speech"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "A speaker says Our playground needs shade, now! while staring at her notes and twisting her feet.",
+        "Write two fixes."
+      ],
+      "notes": {
+        "answer": "eyes up to the audience; feet planted; a gesture on now",
+        "beats": [
+          "SAY: A new speaker. Coach her in two fixes.",
+          [
+            "ASK: Write two body language fixes.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: look up; plant feet; matching face; a gesture"
+          ],
+          "RECORD who gives voice fixes only. Speech Day rehearsal group."
+        ],
+        "trap": [
+          "Speak louder.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new speaker. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "What body language will you practise at home before Speech Day?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - lighthouse eyes in the mirror",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that your body can match your words?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: What body language will you practise at home before Speech Day?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: lighthouse eyes in the mirror"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

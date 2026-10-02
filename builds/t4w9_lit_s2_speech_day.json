@@ -1,0 +1,928 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 9,
+    "session": 2,
+    "variant": 4,
+    "minutes": 60,
+    "title": "Speech Day",
+    "subtitle": "Term 4 Week 9, Session 2",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 9 Session 2",
+    "outputFolder": "T4W9_Lit_S2_Speech_Day",
+    "fileName": "Session 2 - Speech Day.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY02 delivering spoken persuasive texts using features of voice; VC2E5LY01 listening for and identifying a speaker's purpose; VC2E5LE02 reflecting on texts",
+      "shape": "model, deliver, reflect: the teacher delivers the shade-trees speech first, students deliver theirs to a live audience while listeners record each call to action, then everyone reflects",
+      "criticalFeature": "the audience should know what you want them to do: the call to action lands",
+      "decisionPoints": [
+        "the choice check: which audience knows what to do",
+        "the After each speech boards",
+        "the exit board: my call to action and one change"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: say it, for real.",
+      "catchUp": "Absent or anxious speakers: deliver to a small group or the teacher later in the week."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Speech and cue cards",
+      "Speech Feedback Cards (from S1)",
+      "Mini-whiteboards and markers",
+      "A visible timer"
+    ],
+    "routineIcons": [
+      "Point to A, B or C",
+      "Write it, chin it, show me",
+      "Fingers 1, 2 or 3",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "The speaking order",
+      "After each speech: applause, then write their call to action on your board"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: name the moves, record each speaker's call to action, rate your own delivery, then reflect.",
+      "title": "Speech Day Notes",
+      "subtitle": "Listen like a judge. Reflect like a pro.",
+      "sections": [
+        {
+          "title": "Name the move",
+          "columns": 3,
+          "example": {
+            "prompt": "Remember Sam's burnt shoulders?",
+            "steps": [
+              "Is something repeated?",
+              "Is it a question?",
+              "Is it a small story?"
+            ],
+            "answer": "A question that brings back a small story."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Not next year. Not next week. Today.",
+              "options": [
+                "repetition",
+                "question",
+                "small story"
+              ],
+              "answer": 0
+            },
+            {
+              "kind": "choice",
+              "prompt": "Last summer, Mia fainted at soccer.",
+              "options": [
+                "repetition",
+                "question",
+                "small story"
+              ],
+              "answer": 2
+            },
+            {
+              "kind": "choice",
+              "prompt": "Who here wants a cooler yard?",
+              "options": [
+                "repetition",
+                "question",
+                "small story"
+              ],
+              "answer": 1
+            }
+          ]
+        },
+        {
+          "title": "Audience notes",
+          "columns": 1,
+          "example": {
+            "prompt": "Speaker: our teacher",
+            "steps": [
+              "Their position",
+              "Their call to action",
+              "Did it land?"
+            ],
+            "answer": "Shade trees; say yes on Tuesday; yes, I knew what to do."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "For each speaker, write their position and what they want us to do.",
+              "columns": [
+                "Speaker",
+                "Position",
+                "Call to action"
+              ],
+              "rows": [
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "each speaker",
+                  "their side",
+                  "their action"
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "widths": [
+                0.8,
+                1.3,
+                1.3
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "Rate my delivery",
+          "columns": 1,
+          "example": {
+            "prompt": "Eyes: 2",
+            "steps": [
+              "Score 1, 2 or 3",
+              "Give proof",
+              "Be honest"
+            ],
+            "answer": "Eyes: 2. I looked up for my action but read my story."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Score yourself 1, 2 or 3 and give proof.",
+              "columns": [
+                "Skill",
+                "Score",
+                "Proof"
+              ],
+              "rows": [
+                [
+                  "Eye contact",
+                  "",
+                  ""
+                ],
+                [
+                  "Voice: loud and clear",
+                  "",
+                  ""
+                ],
+                [
+                  "Pace and pauses",
+                  "",
+                  ""
+                ],
+                [
+                  "My call to action landed",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Eye contact",
+                  "1-3",
+                  "a specific moment"
+                ],
+                [
+                  "Voice: loud and clear",
+                  "1-3",
+                  "a specific moment"
+                ],
+                [
+                  "Pace and pauses",
+                  "1-3",
+                  "a specific moment"
+                ],
+                [
+                  "My call to action landed",
+                  "1-3",
+                  "did listeners write it?"
+                ]
+              ],
+              "widths": [
+                1,
+                0.4,
+                1.6
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "Reflect",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "What worked?",
+              "What would I change?",
+              "What did I learn?"
+            ],
+            "answer": "The ouch hook worked. Next time I'd slow my story down."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "What was your best moment today? Why did it work?",
+              "answer": "A specific moment and why it worked.",
+              "lines": 3
+            },
+            {
+              "kind": "open",
+              "prompt": "If you gave your speech again, what would you change?",
+              "answer": "One specific change to writing or delivery.",
+              "lines": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: turn your speech into a 30-second radio ad, then a letter to the real decision-maker.",
+      "title": "Take It Further",
+      "subtitle": "A great speech can travel.",
+      "sections": [
+        {
+          "title": "Radio ad",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "Hook in 5 seconds",
+              "One reason",
+              "One action"
+            ],
+            "answer": "Ouch! That's our slide in summer. Shade cuts UV by 75%. Say yes to trees on Tuesday."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write a 30-second radio ad version of your speech.",
+              "answer": "A short ad: hook, one strong reason, one action, about 60-75 words.",
+              "lines": 6
+            }
+          ]
+        },
+        {
+          "title": "Letter to the decision-maker",
+          "columns": 1,
+          "example": {
+            "prompt": "To the principal",
+            "steps": [
+              "Dear ___,",
+              "My position and best proof",
+              "My action and a polite close"
+            ],
+            "answer": "Dear Ms Ross, our yard needs shade. It hit 41 degrees. Please plant ten trees. Yours sincerely..."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write a short letter to the real person who can say yes to your speech.",
+              "answer": "A letter with greeting, position, best proof, a clear request and a polite close.",
+              "lines": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a listening table and a reflection frame.",
+      "title": "Speech Day Helper",
+      "subtitle": "Listen. Write. Reflect.",
+      "sections": [
+        {
+          "title": "Which move?",
+          "columns": 3,
+          "example": {
+            "prompt": "Today. Today. Today.",
+            "steps": [
+              "Is a word repeated?",
+              "Yes",
+              "Repetition"
+            ],
+            "answer": "repetition"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Who wants a cool yard?",
+              "options": [
+                "question",
+                "story"
+              ],
+              "answer": 0,
+              "hint": "Look at the end."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Mia fainted at soccer.",
+              "options": [
+                "question",
+                "story"
+              ],
+              "answer": 1,
+              "hint": "Did something happen?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Now. Now. Now.",
+              "options": [
+                "repetition",
+                "story"
+              ],
+              "answer": 0,
+              "hint": "Is a word repeated?"
+            }
+          ]
+        },
+        {
+          "title": "What do they want?",
+          "columns": 1,
+          "example": {
+            "prompt": "Our teacher",
+            "steps": [
+              "Listen for Please...",
+              "Write the action",
+              "Short is fine"
+            ],
+            "answer": "plant trees"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write what each speaker wants us to do.",
+              "columns": [
+                "Speaker",
+                "They want us to..."
+              ],
+              "rows": [
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "each speaker",
+                  "their action"
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  ""
+                ]
+              ],
+              "widths": [
+                1,
+                2
+              ],
+              "rowH": 36
+            }
+          ]
+        },
+        {
+          "title": "My reflection",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "My best part was ___.",
+              "Next time I will ___.",
+              "I feel ___."
+            ],
+            "answer": "My best part was the ouch. Next time I will slow down. I feel proud."
+          },
+          "items": [
+            {
+              "prompt": "My best part was ___. Next time I will ___. I feel ___.",
+              "answer": "A best moment, a next step and a feeling.",
+              "lines": 4,
+              "hint": "Think about your coach's card."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open Speech Day. One line: today you are the speaker, and the room is your audience."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Speech Day Notes for everyone, the Extension for early finishers and the Supported version for those who need it. Speaking order on the board. Large classes: about 2.5 minutes per speaker, so plan a second session."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to deliver a persuasive speech to a live audience.",
+      "successCriteria": [
+        "I can deliver my speech from my cue cards.",
+        "I can use eye contact, voice and pauses so my audience knows what to do.",
+        "I can reflect on what worked and what I would change."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Four weeks of work. Today, it's yours."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "The audience has a job too",
+      "lines": [
+        "Eyes on the speaker. Still hands. Big applause.",
+        "After every speech: write their call to action on your board."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "eye",
+            "label": "eyes"
+          },
+          {
+            "name": "clap",
+            "label": "applause"
+          },
+          {
+            "name": "write",
+            "label": "write it"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "eyes on the speaker, still hands, applause, write the action",
+        "beats": [
+          "SAY: Every speaker deserves the audience you'd want.",
+          [
+            "ASK: Which audience job is hardest for you? 1 eyes, 2 still hands, 3 applause.",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: a mix"
+          ],
+          [
+            "ASK: How will you show a nervous speaker you're with them?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: smile; nod; look at them"
+          ],
+          "SAY: Big applause for every speaker, before and after."
+        ],
+        "trap": [
+          "listeners rehearsing their own speech instead of listening.",
+          "Fix: say cards down while others speak."
+        ],
+        "prep": "Sets audience norms. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "delivery",
+      "meaning": "How you say a speech: voice, pace, eyes and body.",
+      "example": "Great delivery: slow, loud, eyes up.",
+      "pictogram": "microphone",
+      "notes": {
+        "answer": "how you say a speech: voice, pace, eyes and body",
+        "beats": [
+          "POINT to the word. SAY: Delivery. Say it with me. Delivery.",
+          [
+            "SAY: How you say a speech: voice, pace, eyes and body.",
+            "SAY: Great delivery: slow, loud, eyes up."
+          ],
+          [
+            "ASK: Name one part of delivery you'll focus on today.",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: eye contact; volume; pauses; slowing down"
+          ]
+        ],
+        "trap": [
+          "thinking delivery means saying it fast to get it over with.",
+          "Fix: say slow is brave, and slow is clear."
+        ],
+        "prep": "Delivery is today's focus word.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Before I speak",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Step",
+            "What I do"
+          ],
+          [
+            "Plant",
+            "Feet still, card in one hand"
+          ],
+          [
+            "Breathe",
+            "In for four, out for four"
+          ],
+          [
+            "Find a face",
+            "One friendly face in the middle"
+          ],
+          [
+            "Slow first line",
+            "My hook, slower than feels normal"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "plant, breathe, find a face, slow first line",
+        "beats": [
+          [
+            "SAY: Watch my ten seconds before I speak.",
+            "MODEL each step on the table, then deliver the full shade-trees speech."
+          ],
+          [
+            "POINT to Slow first line.",
+            "SAY: Nerves speed you up. So I start slower than feels normal."
+          ],
+          [
+            "SAY: After my speech, write my call to action on your board.",
+            "Then we check."
+          ],
+          [
+            "ASK: What did I want you to do?",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: say yes to ten trees on Tuesday"
+          ]
+        ],
+        "trap": [
+          "starting before the room is quiet.",
+          "Fix: say wait for silence; it's yours."
+        ],
+        "stretch": "Use a gesture on your strongest line.",
+        "help": "Read your first line from the card, then look up.",
+        "prep": "Teacher delivers first: it lowers the stakes. Critical feature: the call to action lands.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which audience knows what to do?",
+      "options": [
+        {
+          "text": "A speech that ends: That's all, thanks.",
+          "misconception": "no action; the audience leaves with nothing"
+        },
+        {
+          "text": "A speech that ends: Switch off one light tonight."
+        },
+        {
+          "text": "A speech that ends: Polar bears are important.",
+          "misconception": "a claim, not an action"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - one clear action",
+        "beats": [
+          "SAY: Three speeches, three last lines.",
+          [
+            "ASK: Which audience knows what to do?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: read your own last line.",
+            "Less -> ask what would you DO after each? re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Check your own last card now. Is it an action?"
+          ]
+        ],
+        "trap": [
+          "pointing to C because it's strong.",
+          "Fix: ask what would you do after hearing C?"
+        ],
+        "prep": "Decision point before speeches: last check on calls to action. Under 80% means two minutes to fix last cards.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "You Do",
+      "title": "Speech Day",
+      "lines": [
+        "Speakers in the order on the board. About 2 minutes each.",
+        "After each speech: applause, then boards.",
+        "Waiting? Fill in your Speech Day Notes."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "microphone",
+            "label": "speak"
+          },
+          {
+            "name": "clap",
+            "label": "applause"
+          },
+          {
+            "name": "whiteboard",
+            "label": "boards"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - every speaker delivers; listeners record each call to action",
+        "beats": [
+          [
+            "SAY: Speaker one, when you're ready. Take your time.",
+            "TIME each speech on the board timer."
+          ],
+          "RECORD for each speaker: eyes, voice, pace, action landed.",
+          [
+            "ASK: After each speech, what did they want us to do?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: the speaker's call to action"
+          ],
+          "SAY: Name one strength for each speaker, warmly and specifically."
+        ],
+        "trap": [
+          "a speaker freezes.",
+          "Fix: say breathe, look at your first card. Start again; we're with you."
+        ],
+        "prep": "The main event. Large classes run across two sessions; anxious speakers may present to a small group. SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "After each speech",
+      "routine": "boards",
+      "thinkTime": 10,
+      "pivot": "ask the speaker to say their last line again",
+      "followUp": "cold call one board: how did you know?",
+      "items": [
+        {
+          "text": "What did the speaker want us to do?",
+          "answer": "the speaker's call to action",
+          "expect": "the action, in a few words"
+        },
+        {
+          "text": "What was their position, in five words or fewer?",
+          "answer": "the speaker's claim",
+          "expect": "a short claim"
+        },
+        {
+          "text": "What was their strongest proof?",
+          "answer": "a fact, an expert or a story from the speech",
+          "expect": "one piece of proof"
+        },
+        {
+          "text": "What was their hook?",
+          "answer": "the opening line or question",
+          "expect": "the hook in a few words"
+        },
+        {
+          "text": "Which word did they stress most?",
+          "answer": "a stressed word from the speech",
+          "expect": "one word"
+        },
+        {
+          "text": "Which moment could you picture?",
+          "answer": "the speaker's small story or image",
+          "expect": "a moment from the speech"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Use one question after each speech. Boards up, then applause again."
+        ],
+        "trap": [
+          "boards writing what they liked, not what was said.",
+          "Fix: ask what exactly did they say?"
+        ],
+        "stretch": "Name the Toolkit move the speaker used.",
+        "help": "Write just the action word.",
+        "prep": "Rotate these after each speech. Every board shows whether the message landed. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Reflect and record",
+      "task": "Work through your Speech Day Notes. Finish by reflecting on your own speech.",
+      "where": "Worksheet",
+      "frame": "My best moment was ___. Next time I will ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "star",
+          "think",
+          "pencil"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Reflect like a pro",
+      "notes": {
+        "answer": "audience notes for each speaker and a specific reflection",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Record each speaker as you go. Reflect when you've spoken."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: what proof do you have for that score?",
+          [
+            "ASK: Tell your partner your best moment and one change.",
+            "30 sec each. Turn and tell, partner A first.",
+            "EXPECT: a specific moment and a specific change"
+          ]
+        ],
+        "trap": [
+          "a reflection that says it was good.",
+          "Fix: student names one exact moment."
+        ],
+        "stretch": "Extension: a radio ad, then a letter to the real decision-maker.",
+        "help": "Supported Worksheet: picture-clue choices, a listening table, a frame.",
+        "prep": "Independent reflection on their own delivery. SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "Speech Day Notes ending in a written reflection on the student's own speech"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Write your own call to action, exactly as you said it.",
+        "Then write one change you would make to your delivery."
+      ],
+      "notes": {
+        "answer": "the student's call to action plus one specific delivery change",
+        "beats": [
+          "SAY: Your own speech. Two lines.",
+          [
+            "ASK: Write your call to action and one delivery change.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: an action and a specific change"
+          ],
+          "RECORD who has no clear action. Feedback conversation before reports."
+        ],
+        "trap": [
+          "a change like be better.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 and SC3. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "What is one thing you learned about persuading people that you'll keep using?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - start with a hook; prove it; end with an action",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How proud are you of your speech today?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: What is one thing you learned",
+            "about persuading people that you'll keep using?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: start with a hook; prove it; end with an action"
+          ]
+        ],
+        "prep": "End of the speech unit. Celebrate every speaker. SC2 and SC3.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

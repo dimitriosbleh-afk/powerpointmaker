@@ -1,0 +1,35 @@
+{
+ "unit_folder": "Term4_Week4_Literacy_Persuasive_Writing",
+ "unit_pptx_name": "Term 4 Week 4 - Plan and Draft - Year 5-6 Literacy.pptx",
+ "anchor": "Claim it. Prove it. Sell it. Three pictures held all term: flag (claim), magnifier (prove), megaphone (sell). Weeks 1-5 final piece: a published persuasive text on an issue from The Last Bear.",
+ "lessons": [
+  {
+   "build_script": "builds/t4w4_lit_s1_choose_your_fight.json",
+   "folder": "T4W4_Lit_S1_Choose_Your_Fight",
+   "session": 1,
+   "title": "Choose Your Fight",
+   "focus": "Choose the issue, audience and form for the big piece and plan three reasons. Critical feature: the audience decides the language. Retrieves: Week 1 issues and Week 2 evidence."
+  },
+  {
+   "build_script": "builds/t4w4_lit_s2_open_strong.json",
+   "folder": "T4W4_Lit_S2_Open_Strong",
+   "session": 2,
+   "title": "Open Strong",
+   "focus": "Draft the introduction: hook, context, position, preview. Critical feature: by the end of the introduction the reader knows exactly what you want. Retrieves: Week 3 hooks."
+  },
+  {
+   "build_script": "builds/t4w4_lit_s3_build_your_body.json",
+   "folder": "T4W4_Lit_S3_Build_Your_Body",
+   "session": 3,
+   "title": "Build Your Body",
+   "focus": "Draft body paragraphs with a topic sentence that leads and linking words that guide. Critical feature: the first sentence of a paragraph tells the reader its claim. Retrieves: Week 2 claim-prove-sell paragraph."
+  },
+  {
+   "build_script": "builds/t4w4_lit_s4_finish_strong.json",
+   "folder": "T4W4_Lit_S4_Finish_Strong",
+   "session": 4,
+   "title": "Answer Back and Finish Strong",
+   "focus": "Draft the rebuttal and a conclusion with a call to action. Critical feature: a conclusion tells the reader what to do now. Retrieves: Week 1 rebuttal."
+  }
+ ]
+}

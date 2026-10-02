@@ -1,0 +1,977 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 3,
+    "session": 4,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Campaign Creators",
+    "subtitle": "Term 4 Week 3, Session 4",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 3 Session 4",
+    "outputFolder": "T4W3_Lit_S4_Campaign_Creators",
+    "fileName": "Session 4 - Campaign Creators.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "palette",
+          "label": "design"
+        },
+        {
+          "name": "megaphone",
+          "label": "slogan"
+        },
+        {
+          "name": "target",
+          "label": "action"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA07 how still images affect meaning; VC2E5LY10 creating multimodal texts for purpose and audience; VC2E5LY08 features used to meet purpose and audience",
+      "shape": "model, sharpen, design, gallery: the four poster parts modelled, slogans and calls to action sharpened, then each student designs their own poster and a gallery walk tests it, because a visual product re-energises the class before drafting week",
+      "criticalFeature": "words and picture work together on one message, ending in one small action",
+      "decisionPoints": [
+        "the Shrink the slogan round",
+        "the choice check: the best call to action",
+        "the exit board: a new campaign's slogan and action"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. A poster does all three in a glance: slogan, fact, picture.",
+      "catchUp": "Missed the week? Give the Worksheet plan and the issue plastic at the beach. Everything they need is on the slide and the planner."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "A3 paper, one sheet each, plus coloured pencils and textas",
+      "Mini-whiteboards and markers",
+      "Sticky notes for the gallery walk"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Thumbs vote",
+      "Gallery walk"
+    ],
+    "boardSetup": [
+      "Four poster parts on the board: slogan, picture, key fact, call to action",
+      "Space to pin finished posters for the gallery walk"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: name the parts, shrink slogans, choose the call to action, then plan your poster.",
+      "title": "Campaign Creators",
+      "subtitle": "Words and picture, one message, one small action.",
+      "sections": [
+        {
+          "title": "Which part?",
+          "columns": 1,
+          "example": {
+            "prompt": "'Switch off one light tonight.'",
+            "steps": [
+              "Does it tell me what to do?",
+              "Yes",
+              "Call to action"
+            ],
+            "answer": "call to action"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Name the poster part: slogan, picture, key fact or call to action.",
+              "columns": [
+                "Poster line",
+                "Part"
+              ],
+              "rows": [
+                [
+                  "No ice, no bears.",
+                  ""
+                ],
+                [
+                  "A bear on a tiny piece of ice",
+                  ""
+                ],
+                [
+                  "Sea ice shrinks about 12% a decade (NASA).",
+                  ""
+                ],
+                [
+                  "Bring a refillable bottle tomorrow.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "No ice, no bears.",
+                  "slogan"
+                ],
+                [
+                  "A bear on a tiny piece of ice",
+                  "picture"
+                ],
+                [
+                  "Sea ice shrinks about 12% a decade (NASA).",
+                  "key fact"
+                ],
+                [
+                  "Bring a refillable bottle tomorrow.",
+                  "call to action"
+                ]
+              ],
+              "widths": [
+                2.2,
+                1
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "The right call to action",
+          "columns": 2,
+          "example": {
+            "prompt": "Poster: save water at school.",
+            "steps": [
+              "Is it one small thing?",
+              "Can they do it today?",
+              "Does it say when?"
+            ],
+            "answer": "Turn the tap off while you scrub, every lunch."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Poster: plant more trees at school. Best call to action?",
+              "options": [
+                "Save the whole planet.",
+                "Bring a seedling on Friday.",
+                "Trees are amazing."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "It is small, clear and says when."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Mia's poster has this call to action. Find the problem and fix it.",
+              "work": [
+                "Litter is really bad for animals."
+              ],
+              "answer": "It's a claim, not an action. Fix: Pick up three pieces of litter at lunch today."
+            }
+          ]
+        },
+        {
+          "title": "Shrink the slogan",
+          "columns": 1,
+          "example": {
+            "prompt": "We should all try to use less water when we can.",
+            "steps": [
+              "Find the key idea",
+              "Cut to 8 words or fewer",
+              "Add a pattern: repeat, rhyme or three"
+            ],
+            "answer": "Save it. Every drop."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Shrink each slogan to 8 words or fewer. Make it catchy.",
+              "columns": [
+                "Too long",
+                "My slogan"
+              ],
+              "rows": [
+                [
+                  "Please try to remember to bring your hat to school.",
+                  ""
+                ],
+                [
+                  "It would be good if people stopped dropping litter.",
+                  ""
+                ],
+                [
+                  "We think bikes are better than cars for short trips.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Please try to remember to bring your hat to school.",
+                  "No hat? No play!"
+                ],
+                [
+                  "It would be good if people stopped dropping litter.",
+                  "Bin it. Don't drop it."
+                ],
+                [
+                  "We think bikes are better than cars for short trips.",
+                  "Short trip? Ride it."
+                ]
+              ],
+              "widths": [
+                1.4,
+                1
+              ],
+              "rowH": 30
+            }
+          ]
+        },
+        {
+          "title": "Plan your poster",
+          "columns": 1,
+          "example": {
+            "prompt": "Message: switch off for the Arctic.",
+            "steps": [
+              "One message",
+              "Slogan, fact, picture, action",
+              "Sketch where each goes"
+            ],
+            "answer": "Slogan top, picture middle, fact and action at the bottom."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Plan your words.",
+              "columns": [
+                "Part",
+                "Mine"
+              ],
+              "rows": [
+                [
+                  "Slogan (8 words or fewer)",
+                  ""
+                ],
+                [
+                  "Key fact and who said it",
+                  ""
+                ],
+                [
+                  "Call to action (with when)",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Slogan (8 words or fewer)",
+                  "a short, catchy slogan"
+                ],
+                [
+                  "Key fact and who said it",
+                  "a true fact with a named source"
+                ],
+                [
+                  "Call to action (with when)",
+                  "one small action and when"
+                ]
+              ],
+              "widths": [
+                0.9,
+                1.5
+              ],
+              "rowH": 28
+            },
+            {
+              "kind": "open",
+              "prompt": "Quick sketch: where will the slogan, picture, fact and action go?",
+              "answer": "A rough layout with all four parts placed.",
+              "workMin": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: one message for three audiences, then a second poster for a new reader.",
+      "title": "Campaign Director",
+      "subtitle": "Same message, different readers.",
+      "sections": [
+        {
+          "title": "One message, three readers",
+          "columns": 1,
+          "example": {
+            "prompt": "Message: walk to school. Reader: Preps.",
+            "steps": [
+              "Who is reading?",
+              "What would pull THEM in?",
+              "Write the slogan"
+            ],
+            "answer": "Walk like a dinosaur to school!"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write a slogan for each reader. Same message: walk to school.",
+              "columns": [
+                "Reader",
+                "Slogan"
+              ],
+              "rows": [
+                [
+                  "Preps",
+                  ""
+                ],
+                [
+                  "Parents",
+                  ""
+                ],
+                [
+                  "Teachers",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Preps",
+                  "Stomp to school like a dinosaur!"
+                ],
+                [
+                  "Parents",
+                  "Skip the traffic. Walk the last block."
+                ],
+                [
+                  "Teachers",
+                  "Walkers arrive awake and ready."
+                ]
+              ],
+              "widths": [
+                0.6,
+                2
+              ],
+              "rowH": 36
+            }
+          ]
+        },
+        {
+          "title": "A second poster",
+          "columns": 1,
+          "example": {
+            "prompt": "Same issue, new reader: the local council.",
+            "steps": [
+              "What does this reader care about?",
+              "Change the slogan and the picture",
+              "Keep the message"
+            ],
+            "answer": "Council poster: a safe crossing picture, 'Safer streets start here.'"
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Sketch a second poster for a different reader. Then write two sentences explaining what you changed and why.",
+              "answer": "A sketch plus two sentences linking the changes to the reader.",
+              "workMin": 170
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first slogan done and a planning frame.",
+      "title": "Campaign Helper",
+      "subtitle": "Four parts: slogan, picture, fact, call to action.",
+      "sections": [
+        {
+          "title": "Which part?",
+          "columns": 3,
+          "example": {
+            "prompt": "'No ice, no bears.'",
+            "steps": [
+              "Is it short and catchy?",
+              "Yes",
+              "Slogan"
+            ],
+            "answer": "slogan"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Pick up 3 pieces of litter today.",
+              "options": [
+                "slogan",
+                "call to action"
+              ],
+              "answer": 1,
+              "hint": "Does it tell you what to do?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Bin it. Win it.",
+              "options": [
+                "slogan",
+                "call to action"
+              ],
+              "answer": 0,
+              "hint": "Is it short and catchy?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Bring your hat tomorrow.",
+              "options": [
+                "slogan",
+                "call to action"
+              ],
+              "answer": 1,
+              "hint": "Does it say when?"
+            }
+          ]
+        },
+        {
+          "title": "Shrink it",
+          "columns": 1,
+          "example": {
+            "prompt": "Please put your rubbish in the bin.",
+            "steps": [
+              "Find the key words",
+              "Cut it short",
+              "Make it catchy"
+            ],
+            "answer": "Bin it!"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Make each slogan short and catchy.",
+              "columns": [
+                "Too long",
+                "Short"
+              ],
+              "rows": [
+                [
+                  "Please walk to school more often.",
+                  "Walk it!"
+                ],
+                [
+                  "Please turn off the lights.",
+                  ""
+                ],
+                [
+                  "Please save water.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Please walk to school more often.",
+                  "Walk it!"
+                ],
+                [
+                  "Please turn off the lights.",
+                  "Lights off!"
+                ],
+                [
+                  "Please save water.",
+                  "Every drop counts."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1.2,
+                1
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "Plan it",
+          "columns": 1,
+          "example": {
+            "prompt": "My message: save the bears.",
+            "steps": [
+              "Slogan",
+              "Picture",
+              "Call to action"
+            ],
+            "answer": "Slogan: No ice, no bears. Picture: a bear on ice. Action: switch off tonight."
+          },
+          "items": [
+            {
+              "prompt": "Slogan: ___  Picture: ___  Call to action: ___",
+              "answer": "A slogan, a picture idea and one action.",
+              "lines": 4,
+              "hint": "Use one of your short slogans."
+            },
+            {
+              "kind": "open",
+              "prompt": "Sketch your poster here.",
+              "answer": "A rough sketch with the parts placed.",
+              "workMin": 150
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we design posters that could change what people at our school do."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone (its last section is the poster plan), the Extension for early finishers and the Supported Worksheet for those who need it. A3 paper and colours on tables. This is the draw and create fun activity."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to design a campaign poster where words and pictures work together.",
+      "successCriteria": [
+        "I can name the four parts of a campaign poster.",
+        "I can write a slogan and a call to action that match my picture.",
+        "I can explain how my words and picture work on the reader."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Two seconds to persuade. Let's make them count."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Naming the four parts is where we start.",
+            "A slogan and action that match the picture is today's main goal."
+          ]
+        ],
+        "prep": "SC1 naming the parts is reachable for all; SC2 slogan and call to action is the core and the exit evidence; SC3 explaining the word-picture effect is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "What makes you stop and look?",
+      "lines": [
+        "Think of a poster or sign you actually remember.",
+        "What made you stop?"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "eye",
+            "label": "look"
+          },
+          {
+            "name": "think",
+            "label": "remember"
+          },
+          {
+            "name": "walk",
+            "label": "act"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "a big picture, a short catchy line, bright colours, one message",
+        "beats": [
+          [
+            "SAY: You walk past hundreds of posters.",
+            "A few stick. Why those?"
+          ],
+          [
+            "ASK: What made a poster stick for you?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: a big picture; a funny or short line; it told me what to do"
+          ],
+          [
+            "ASK: Do you read every word on a poster?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs down"
+          ],
+          [
+            "SAY: So a poster has two seconds.",
+            "Words and picture must work together on one message."
+          ]
+        ],
+        "trap": [
+          "it had lots of information.",
+          "Fix: ask did you read it all? Student realises it was the picture or the line."
+        ],
+        "prep": "Low-coupling launch; everyone has seen posters. Links Week 2 Sell it and Week 3 devices. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "slogan",
+      "meaning": "A short, catchy line people remember.",
+      "example": "No ice, no bears.",
+      "pictogram": "star",
+      "notes": {
+        "answer": "a short, catchy line people remember",
+        "beats": [
+          "POINT to the word. SAY: Slogan. Say it with me. Slogan.",
+          [
+            "SAY: A slogan is short and catchy. You remember it without trying.",
+            "No ice, no bears. Four words."
+          ],
+          [
+            "ASK: Tell your partner a slogan you know from an ad or a sign.",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: Slip, slop, slap; any ad line"
+          ]
+        ],
+        "trap": [
+          "a slogan that's a whole sentence of reasons.",
+          "Fix: ask can you shout it? Student cuts it to a few words."
+        ],
+        "prep": "Slip, Slop, Slap is the Australian classic most students will know.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Four parts, one message",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Part",
+            "My poster: switch off for the Arctic"
+          ],
+          [
+            "Slogan",
+            "Lights off. Ice on."
+          ],
+          [
+            "Picture",
+            "one polar bear on a tiny piece of ice"
+          ],
+          [
+            "Key fact",
+            "Summer sea ice shrinks about 12% a decade (NASA)"
+          ],
+          [
+            "Call to action",
+            "Switch off one light tonight."
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "slogan, picture, key fact and call to action all on one message",
+        "beats": [
+          [
+            "POINT to Slogan.",
+            "SAY: Four words, a pattern, easy to remember. Lights off. Ice on."
+          ],
+          [
+            "POINT to Picture.",
+            "SAY: One bear, one tiny piece of ice. The picture shows the problem in a glance."
+          ],
+          [
+            "POINT to Call to action.",
+            "SAY: Switch off one light tonight. Small and easy. Save the planet is too big."
+          ],
+          [
+            "ASK: Which part is the Prove it?",
+            "5 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: the key fact"
+          ]
+        ],
+        "trap": [
+          "a poster with three messages: plastic, cars and lights.",
+          "Fix: student circles one message and cuts the rest."
+        ],
+        "stretch": "Make the picture tell the story with no words at all.",
+        "help": "Copy the four-row table, fill one row at a time.",
+        "prep": "The model. Critical feature: words and picture work together on one message, ending in one small action.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Which poster part?",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "ask: does it name, show, prove or ask for action?",
+      "followUp": "cold call one student: how did you know?",
+      "items": [
+        {
+          "text": "Waste less. Taste more.",
+          "answer": "1 - slogan",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Bring your own cup to the canteen on Friday.",
+          "answer": "4 - call to action",
+          "expect": "4 fingers"
+        },
+        {
+          "text": "Australia wastes about 7.6 million tonnes of food a year (Australian Government).",
+          "answer": "3 - key fact",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "Crush it. Can it. Recycle it.",
+          "answer": "1 - slogan (rule of three)",
+          "expect": "1 finger"
+        }
+      ],
+      "notes": {
+        "say": [
+          "1 slogan, 3 key fact, 4 call to action.",
+          "Pictures are 2, but today every line is words."
+        ],
+        "trap": [
+          "calling the call to action a slogan because it's short.",
+          "Fix: ask does it tell me what to do? Then it's the action."
+        ],
+        "stretch": "Turn the fact into a slogan.",
+        "help": "Look for a number: that's usually the fact.",
+        "prep": "Guided naming of the poster parts. SC1. Food waste figure: National Food Waste Baseline, 2021.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Shrink the slogan",
+      "routine": "boards",
+      "thinkTime": 30,
+      "pivot": "find the one key idea, then say it in four words",
+      "followUp": "cold call one board: which device did you use?",
+      "items": [
+        {
+          "text": "Please think about maybe using less plastic if you can.",
+          "answer": "Ditch the plastic.",
+          "expect": "a few words, no maybe"
+        },
+        {
+          "text": "It is important that everybody walks to school more often.",
+          "answer": "Walk it. Don't drive it.",
+          "expect": "a short pattern"
+        },
+        {
+          "text": "Polar bears need the sea ice, so we should try to protect it.",
+          "answer": "No ice, no bears.",
+          "expect": "under 8 words"
+        },
+        {
+          "text": "We should all turn off the lights whenever we leave a room.",
+          "answer": "Last one out? Lights out!",
+          "expect": "short, catchy, an action"
+        }
+      ],
+      "notes": {
+        "say": [
+          "These slogans are way too long.",
+          "Shrink each one to 8 words or fewer. Make it catchy."
+        ],
+        "trap": [
+          "cutting words but keeping it boring: Use less plastic please.",
+          "Fix: student adds a pattern: repeat, rhyme or a question."
+        ],
+        "stretch": "Use rhyme or repetition in every slogan.",
+        "help": "Start with the key noun: plastic, walk, ice, lights.",
+        "prep": "Guided shrinking. Devices from Session 2 reappear. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which is the best call to action?",
+      "prompt": "Poster: stop plastic bottles at our school",
+      "options": [
+        {
+          "text": "Save the whole planet now.",
+          "misconception": "too big to act on; nobody knows what to do next"
+        },
+        {
+          "text": "Bring a refillable bottle tomorrow."
+        },
+        {
+          "text": "Plastic bottles are really bad.",
+          "misconception": "a claim, not an action"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - one small, clear thing to do, with a when",
+        "beats": [
+          "SAY: A call to action tells the reader exactly what to do next.",
+          [
+            "ASK: Which is the best call to action?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what job does C do?",
+            "Less -> ask could you do it tomorrow? for each, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Small, clear, and it says when. You can do it tomorrow."
+          ]
+        ],
+        "trap": [
+          "pointing to A because it's the biggest goal.",
+          "Fix: ask what would you actually do at 9 am? Student re-chooses."
+        ],
+        "prep": "Decision point before designing. Under 80% means every student writes their call to action on a board for a check before starting.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Design your campaign poster",
+      "task": "Work through your Worksheet, plan your poster on it, then make your A3 campaign poster.",
+      "where": "Worksheet, then A3 paper",
+      "frame": "My picture shows ___, and my slogan says ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "draw",
+          "palette",
+          "target"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Plan, draw, check",
+      "notes": {
+        "answer": "a poster with all four parts on one message",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Plan first, then draw. The planner takes 5 minutes; the poster takes the rest."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: what's your one message? Does your picture show it?",
+          [
+            "ASK: Hold your planner up. Are all four parts filled in?",
+            "5 sec. Cue: Fingers at your chest, how many parts done... show me.",
+            "EXPECT: 4 before starting on A3"
+          ],
+          "TIME 22 minutes. At 20, posters up on the wall."
+        ],
+        "trap": [
+          "spending the whole time drawing, slogan squeezed in at the end.",
+          "Fix: student writes the slogan on the A3 first, then draws."
+        ],
+        "stretch": "Extension: one message for three readers, then a second poster.",
+        "help": "Supported Worksheet: picture-clue choices, a first slogan done, a planning frame.",
+        "prep": "Fun activity: draw and create. Posters can go up around the school during Week 5 publishing. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a poster plan, then an A3 campaign poster"
+    },
+    {
+      "kind": "content",
+      "badge": "We Do",
+      "title": "Gallery walk: would you stop?",
+      "lines": [
+        "Walk the gallery. Read each poster for two seconds.",
+        "Sticky note: one star (what works) and one action you'd take."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "walk",
+            "label": "walk"
+          },
+          {
+            "name": "eye",
+            "label": "two seconds"
+          },
+          {
+            "name": "sticker",
+            "label": "sticky note"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - notes name a part that works and the action",
+        "beats": [
+          "SAY: Two seconds per poster. That's all a real poster gets.",
+          "CIRCULATE with the class. Read notes as they go up.",
+          [
+            "ASK: Which poster made you stop first?",
+            "10 sec. Cue: voices off, everyone points to it... now.",
+            "EXPECT: a few posters get most points"
+          ],
+          [
+            "ASK: Why did that one work? Name a part.",
+            "15 sec. Turn and tell, partner B first.",
+            "EXPECT: the picture told the story; the slogan was short"
+          ]
+        ],
+        "trap": [
+          "notes that say nice or cool.",
+          "Fix: model one note: Your slogan rhymes, I'll bring a bottle."
+        ],
+        "prep": "Peer feedback rehearsal before Week 5's feedback session. 6 minutes. SC3.",
+        "tag": "[We Do | Supported application | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "New campaign: stop litter on the beach.",
+        "Write a slogan (8 words or fewer) and a call to action."
+      ],
+      "notes": {
+        "answer": "e.g. Leave only footprints. Take three pieces of rubbish home",
+        "beats": [
+          "SAY: A brand new campaign. Slogan and action, go.",
+          [
+            "ASK: Write a slogan and a call to action.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a short catchy slogan; a small, clear action"
+          ],
+          "RECORD who writes a claim as the action. Week 4 drafting conference."
+        ],
+        "trap": [
+          "Litter is bad. as the call to action.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new campaign. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "What's one thing from your poster you'll use in your big persuasive piece next week?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - slogan as title, the fact, the action as the ending",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that your words and picture work together?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: What from your poster will you use in your big piece?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: my slogan as my title; my call to action as my ending"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Week 4 starts the big piece: issue, audience and form. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

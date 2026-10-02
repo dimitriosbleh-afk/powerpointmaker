@@ -1,0 +1,35 @@
+{
+ "unit_folder": "Term4_Week1_Literacy_Persuasive_Writing",
+ "unit_pptx_name": "Term 4 Week 1 - Find Your Fight - Year 5-6 Literacy.pptx",
+ "anchor": "Claim it. Prove it. Sell it. Three pictures held all term: flag (claim), magnifier (prove), megaphone (sell). Weeks 1-5 final piece: a published persuasive text on an issue from The Last Bear.",
+ "lessons": [
+  {
+   "build_script": "builds/t4w1_lit_s1_big_questions.json",
+   "folder": "T4W1_Lit_S1_Big_Questions",
+   "session": 1,
+   "title": "Big Questions from Bear Island",
+   "focus": "Turn a theme from The Last Bear into an arguable should-question and take a side. Critical feature: an issue is a question fair people disagree on, not a fact. Retrieves: Term 3 persuasive writing (opinion plus reasons)."
+  },
+  {
+   "build_script": "builds/t4w1_lit_s2_say_it_strong.json",
+   "folder": "T4W1_Lit_S2_Say_It_Strong",
+   "session": 2,
+   "title": "Say It Like You Mean It",
+   "focus": "Write a strong position statement with high-modality words and a fronted because-clause. Critical feature: the modal word sets how sure the writer sounds. Retrieves: Term 3 main and subordinate clauses."
+  },
+  {
+   "build_script": "builds/t4w1_lit_s3_walk_in_their_boots.json",
+   "folder": "T4W1_Lit_S3_Walk_In_Their_Boots",
+   "session": 3,
+   "title": "Walk in Their Boots",
+   "focus": "Cut-and-paste perspective sort, then write a paragraph from another person's point of view. Critical feature: who is speaking changes what they care about. Fun activity: cut and paste."
+  },
+  {
+   "build_script": "builds/t4w1_lit_s4_debate_day.json",
+   "folder": "T4W1_Lit_S4_Debate_Day",
+   "session": 4,
+   "title": "Debate Day",
+   "focus": "Run a mini debate and write a rebuttal paragraph: Some people say... However... Critical feature: name the other side fairly, then beat it with a reason."
+  }
+ ]
+}

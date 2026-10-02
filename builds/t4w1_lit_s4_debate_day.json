@@ -1,0 +1,900 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 1,
+    "session": 4,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Debate Day",
+    "subtitle": "Term 4 Week 1, Session 4",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 1 Session 4",
+    "outputFolder": "T4W1_Lit_S4_Debate_Day",
+    "fileName": "Session 4 - Debate Day.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA02 moving beyond bare assertions by taking account of differing opinions; VC2E5LY01 interaction skills to present and justify an opinion; VC2E5LY10 creating persuasive texts",
+      "shape": "model, rehearse, debate, write: a rebuttal is modelled, practised on boards, used live in mini debates, then written, because saying it aloud first makes the writing faster and sharper",
+      "criticalFeature": "name the other side fairly, then beat it with a reason, never an insult",
+      "decisionPoints": [
+        "the Finish the rebuttal round",
+        "the choice check: which is the strongest rebuttal?",
+        "the exit board: a new rebuttal"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Today: prove it against the other side's best reason.",
+      "catchUp": "Missed Session 3? Say: every side has someone who cares about it. Show the model rebuttal; they debate with a partner who was here."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Writing books with the Issue Card and the other-side paragraph",
+      "Session 3 Sort Mats, as a reason bank"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Turn and tell",
+      "Point to A, B or C",
+      "Thumbs vote"
+    ],
+    "boardSetup": [
+      "The motion written large: Zoos should keep polar bears",
+      "A visible timer for the debate rounds",
+      "Desks arranged in groups of four, two facing two"
+    ]
+  },
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we debate, and we learn the move that wins debates: the rebuttal."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for students who need it. Arrange groups of four and put a timer on the board."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to answer the other side's argument with a stronger reason.",
+      "successCriteria": [
+        "I can name the other side's argument fairly.",
+        "I can write a rebuttal: Some people say... However...",
+        "I can beat a reason live in a debate, with evidence or a better reason."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today we answer back, with reasons, not volume."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Naming their side fairly is where we all start.",
+            "Writing the full rebuttal is today's main goal."
+          ]
+        ],
+        "prep": "SC1 naming the other side is reachable for all; SC2 the written rebuttal is the core and the exit evidence; SC3 a live rebuttal in the debate is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Which comeback wins?",
+      "lines": [
+        "Homework helps you learn.",
+        "Reply A: No it doesn't.",
+        "Reply B: Some say homework helps. However, tired kids need rest to learn well."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "chat",
+            "label": "the claim"
+          },
+          {
+            "name": "shield",
+            "label": "the comeback"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "B - it names the other side, then gives a reason",
+        "beats": [
+          [
+            "SAY: Someone says homework helps you learn.",
+            "Two people answer. Who would win the argument?"
+          ],
+          [
+            "ASK: Which comeback wins, A or B?",
+            "5 sec. Cue: Fingers at your chest, 1 for A, 2 for B... show me.",
+            "EXPECT: 2, B"
+          ],
+          [
+            "ASK: What does B do that A doesn't?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: it says what they think first; it gives a reason"
+          ],
+          "SAY: Yesterday you argued the other side. Today you beat it."
+        ],
+        "trap": [
+          "choosing A because it's shorter and bolder.",
+          "Fix: ask what reason did A give? Student finds none."
+        ],
+        "prep": "Launch links yesterday's other-side paragraph to today's rebuttal. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "rebuttal",
+      "meaning": "Answering the other side's argument to show why yours is stronger.",
+      "example": "Some people say zoos are safe. However, safe is not the same as free.",
+      "pictogram": "shield",
+      "notes": {
+        "answer": "answering the other side's argument to show why yours is stronger",
+        "beats": [
+          "POINT to the word. SAY: Rebuttal. Say it with me. Rebuttal.",
+          [
+            "SAY: A rebuttal answers the other side's argument.",
+            "Like a shield: their reason comes at you, you block it with a better one."
+          ],
+          [
+            "ASK: Which word in the example does the blocking?",
+            "5 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: However"
+          ]
+        ],
+        "trap": [
+          "thinking a rebuttal means disagreeing loudly.",
+          "Fix: ask where is your reason? Student adds one after However."
+        ],
+        "prep": "The one word for the session; the shield picture carries it.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "I Do",
+      "title": "Watch me beat their best reason",
+      "extract": "Some people say tourist boats help, because visitors go home and protect polar bears. However, nobody needs to sail to the Arctic to care about it. Every cruise burns fuel that warms the planet and melts the ice the bears need. If we truly love polar bears, we should watch them through cameras, not boat windows.",
+      "highlights": [
+        "Some people say",
+        "However",
+        "Every cruise burns fuel",
+        "not boat windows"
+      ],
+      "source": "Written for this session",
+      "notes": {
+        "answer": "name it fairly, turn with However, beat it with a reason, bring it home",
+        "beats": [
+          [
+            "POINT to Some people say.",
+            "SAY: First I name their best reason, fairly. No sneering."
+          ],
+          [
+            "POINT to However.",
+            "SAY: However is my turn. Now I block it."
+          ],
+          [
+            "POINT to Every cruise burns fuel.",
+            "SAY: I beat it with a reason they can't easily argue with."
+          ],
+          [
+            "ASK: Read my last sentence with me.",
+            "3 sec. Cue: Everyone, together, on three.",
+            "EXPECT: If we truly love polar bears, we should watch them through cameras..."
+          ]
+        ],
+        "trap": [
+          "making the other side sound silly so it's easy to beat.",
+          "Fix: student rewrites their reason the way they'd say it."
+        ],
+        "stretch": "Use a fact to beat their reason, not just an opinion.",
+        "help": "Use the three moves: Some people say... However... So...",
+        "prep": "The model. Critical feature: name the other side fairly, then beat it with a reason, never an insult.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Fair or unfair?",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "ask: would the other side say it this way?",
+      "followUp": "cold call one student: how would you make it fair?",
+      "items": [
+        {
+          "text": "Some people believe zoos protect bears from danger.",
+          "answer": "1 - fair",
+          "expect": "1 finger, fair"
+        },
+        {
+          "text": "Some silly people think zoos are fine.",
+          "answer": "2 - unfair (silly)",
+          "expect": "2 fingers, unfair"
+        },
+        {
+          "text": "Supporters of drilling argue that it brings jobs.",
+          "answer": "1 - fair",
+          "expect": "1 finger, fair"
+        },
+        {
+          "text": "Only lazy people want tourist boats in the Arctic.",
+          "answer": "2 - unfair (lazy, only)",
+          "expect": "2 fingers, unfair",
+          "say": "Unfair. Lazy is an insult, and only is untrue. Tick or fix."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Before you block a reason, you name it.",
+          "One finger if it's named fairly, two if it's unfair."
+        ],
+        "trap": [
+          "calling a sentence fair because they agree with it.",
+          "Fix: ask would the other side be happy with these words? Student re-votes."
+        ],
+        "stretch": "Rewrite the unfair ones fairly.",
+        "help": "Look for insult words first.",
+        "prep": "Guided practice on SC1: naming the other side without insults. Quick, 2 minutes.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Finish the rebuttal",
+      "routine": "boards",
+      "thinkTime": 30,
+      "pivot": "build one together: their reason, However, a better reason",
+      "followUp": "cold call one board: would the other side struggle to answer that?",
+      "items": [
+        {
+          "text": "Some people say zoos keep polar bears safe. However...",
+          "answer": "However, a zoo is a tiny fraction of the space a wild bear roams.",
+          "expect": "However, + a reason about space, freedom or the wild"
+        },
+        {
+          "text": "Some people say one person can't make a difference. However...",
+          "answer": "However, every big change starts with one person deciding to act.",
+          "expect": "However, + a reason or an example"
+        },
+        {
+          "text": "Some people say plastic bags are convenient. However...",
+          "answer": "However, a reusable bag is just as easy and never ends up in the ocean.",
+          "expect": "However, + a reason that answers convenient"
+        },
+        {
+          "text": "Some people say kids are too young to care about climate. However...",
+          "answer": "However, kids will live with the changes longest, so they have the most at stake.",
+          "expect": "However, + why kids should care"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Here's the other side's reason.",
+          "You write the However sentence that blocks it."
+        ],
+        "trap": [
+          "However, that's wrong. No reason.",
+          "Fix: ask why is it wrong? Student writes the why."
+        ],
+        "stretch": "Answer the exact word they used, like convenient.",
+        "help": "Start: However, this is not true because...",
+        "prep": "Guided rebuttal on new claims. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which is the strongest rebuttal?",
+      "prompt": "Some people say we need oil drilling in the Arctic for jobs.",
+      "options": [
+        {
+          "text": "That is a dumb idea, and everyone knows it.",
+          "misconception": "name-calling; no reason, so nothing is beaten"
+        },
+        {
+          "text": "However, clean energy jobs are growing, and they don't melt the ice."
+        },
+        {
+          "text": "However, I personally just don't like oil at all.",
+          "misconception": "a personal feeling, not a reason the other side has to answer"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - it answers jobs with jobs, plus a reason",
+        "beats": [
+          "SAY: Their reason is jobs. Which rebuttal actually answers jobs?",
+          [
+            "ASK: Which is the strongest rebuttal?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: why does B mention jobs again?",
+            "Less -> underline their reason, find the answer to it, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. It answers jobs with jobs, then adds the ice. That's a block."
+          ]
+        ],
+        "trap": [
+          "pointing to C because it has However.",
+          "Fix: ask does it answer the jobs reason? Student sees it doesn't."
+        ],
+        "prep": "Decision point before the debate. Under 80% means groups get one sentence starter card each for the debate.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "We Do",
+      "title": "Debate: Zoos should keep polar bears",
+      "lines": [
+        "Groups of four: two FOR, two AGAINST.",
+        "Round 1: claim it. Round 2: rebut. One minute each side.",
+        "Round 3: swap sides and go again!"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "timer",
+            "label": "1 minute"
+          },
+          {
+            "name": "chats",
+            "label": "rebut"
+          },
+          {
+            "name": "scales",
+            "label": "swap"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - listen for Some people say... However... in round 2",
+        "beats": [
+          [
+            "SAY: The motion is: zoos should keep polar bears.",
+            "Two minutes to plan in pairs. Use your Sort Mats."
+          ],
+          [
+            "TIME each round with the visible timer.",
+            "Call: Round 2. Start with Some people say..."
+          ],
+          [
+            "CIRCULATE. Listen for one great rebuttal per group.",
+            "Write two on the board, word for word."
+          ],
+          [
+            "ASK: Which side had the stronger rebuttals?",
+            "5 sec. Cue: Thumbs only, voices off. Thumbs up FOR, down AGAINST... now.",
+            "EXPECT: a split vote"
+          ]
+        ],
+        "trap": [
+          "round 2 becomes new reasons, not answers.",
+          "Fix: freeze the room, read one rebuttal from the board, restart."
+        ],
+        "stretch": "In round 3, rebut your own round 1 argument.",
+        "help": "Speak second in your pair, using the starter Some people say...",
+        "prep": "Oral rehearsal, 12 minutes. Swapping sides forces students to hear the other case. SC3.",
+        "tag": "[We Do | Oral rehearsal | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Write your rebuttal",
+      "task": "Work through your Worksheet. Finish with a rebuttal paragraph for your own issue.",
+      "where": "Main sheet",
+      "frame": "Some people say ___. However, ___. This means ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "chat",
+          "shield",
+          "trophy"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Name it, block it, win it",
+      "notes": {
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: You wrote the other side yesterday. Now beat it."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Check the However sentence answers their exact reason.",
+          "TIME 12 minutes. At 9 minutes, two students read theirs aloud."
+        ],
+        "trap": [
+          "a rebuttal that answers a reason nobody gave.",
+          "Fix: student underlines their reason, then checks the However answers it."
+        ],
+        "stretch": "Extension: predict the comeback, and rebut two reasons at once.",
+        "help": "Supported Worksheet: fair-or-unfair choices, a first rebuttal done, a frame.",
+        "prep": "Independent application on each student's own issue. Saved for drafting in Week 4. SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a rebuttal paragraph for the student's own issue"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Some people say school uniforms make everyone equal.",
+        "Write a rebuttal sentence that starts with However."
+      ],
+      "notes": {
+        "answer": "e.g. However, kindness makes us equal, not matching jumpers",
+        "beats": [
+          "SAY: A new argument you haven't met today. Block it.",
+          [
+            "ASK: Write your However sentence.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: However, + a reason that answers equal"
+          ],
+          "RECORD who writes However with no reason. Small group on Monday."
+        ],
+        "trap": [
+          "However, uniforms are bad.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new topic. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "What was the best rebuttal you heard in your debate? Tell your partner why it worked.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for a rebuttal that answered the exact reason",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can write a rebuttal?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: What was the best rebuttal you heard? Why did it work?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: it answered their reason with a fact"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Week 1 ends with an issue, a claim, the other side and a rebuttal in every book. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ],
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: fair or unfair, block the reason, pick the winner, then write your own rebuttal.",
+      "title": "Debate Day",
+      "subtitle": "Name it fairly. Block it with a reason.",
+      "sections": [
+        {
+          "title": "Fair or unfair?",
+          "columns": 1,
+          "example": {
+            "prompt": "'Only silly people want more parking.'",
+            "steps": [
+              "Look for insult words",
+              "Would the other side say it this way?",
+              "Fair or unfair?"
+            ],
+            "answer": "Unfair: 'silly' and 'only' insult the other side."
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "Sort the cards: FAIR or UNFAIR ways to name the other side.",
+              "cards": [
+                "Supporters of zoos argue they protect bears.",
+                "Only silly people like zoos.",
+                "Some people believe tourism helps towns.",
+                "Lazy tourists ruin everything.",
+                "Many farmers say they need more land.",
+                "Greedy farmers don't care.",
+                "Drivers argue cars save time.",
+                "Every driver is selfish."
+              ],
+              "groups": [
+                "FAIR",
+                "UNFAIR"
+              ],
+              "answer": {
+                "FAIR": [
+                  "Supporters of zoos argue they protect bears.",
+                  "Some people believe tourism helps towns.",
+                  "Many farmers say they need more land.",
+                  "Drivers argue cars save time."
+                ],
+                "UNFAIR": [
+                  "Only silly people like zoos.",
+                  "Lazy tourists ruin everything.",
+                  "Greedy farmers don't care.",
+                  "Every driver is selfish."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Block it",
+          "columns": 1,
+          "example": {
+            "prompt": "Some people say homework builds good habits.",
+            "steps": [
+              "Name their reason fairly",
+              "Turn with However",
+              "Block it with a better reason"
+            ],
+            "answer": "However, reading for fun every night builds the same habits and more."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write a However sentence that blocks each reason.",
+              "columns": [
+                "Some people say...",
+                "However, ..."
+              ],
+              "rows": [
+                [
+                  "fast food is cheap and quick.",
+                  ""
+                ],
+                [
+                  "cars are faster than walking.",
+                  ""
+                ],
+                [
+                  "screens help kids learn.",
+                  ""
+                ],
+                [
+                  "one person can't stop climate change.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "fast food is cheap and quick.",
+                  "However, cooking at home is often cheaper and much healthier."
+                ],
+                [
+                  "cars are faster than walking.",
+                  "However, walking keeps kids fit and the street safer."
+                ],
+                [
+                  "screens help kids learn.",
+                  "However, too much screen time cuts sleep, and tired kids learn less."
+                ],
+                [
+                  "one person can't stop climate change.",
+                  "However, millions of single people changing habits adds up."
+                ]
+              ],
+              "widths": [
+                1,
+                1.5
+              ],
+              "rowH": 28
+            }
+          ]
+        },
+        {
+          "title": "Which rebuttal wins?",
+          "columns": 2,
+          "example": {
+            "prompt": "They say: bikes are dangerous on roads.",
+            "steps": [
+              "Find their reason",
+              "Does the rebuttal answer THAT reason?",
+              "Choose the one that does"
+            ],
+            "answer": "However, bike paths keep riders off busy roads. (It answers 'dangerous'.)"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "They say: plastic bags are handy. Which rebuttal wins?",
+              "options": [
+                "However, plastic is ugly.",
+                "However, a cloth bag is just as handy and lasts for years.",
+                "That is a silly thing to say."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "It answers 'handy' with something equally handy, plus a reason."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Jack wrote this rebuttal. Find his mistake and fix it.",
+              "work": [
+                "Some people say recycling is too hard. However, that's dumb."
+              ],
+              "answer": "No reason, and 'dumb' is an insult. Fix: However, sorting takes ten seconds once the bins are labelled."
+            }
+          ]
+        },
+        {
+          "title": "Your rebuttal",
+          "columns": 1,
+          "example": {
+            "prompt": "Your issue, their best reason.",
+            "steps": [
+              "Some people say... (fairly)",
+              "However, ...",
+              "This means... (bring it home)"
+            ],
+            "answer": "Some people say zoos keep bears safe. However, safe is not the same as free. This means..."
+          },
+          "items": [
+            {
+              "prompt": "Write a rebuttal paragraph for your own issue. Beat the other side's best reason.",
+              "answer": "Their reason named fairly, However, a better reason, and a closing line.",
+              "lines": 6
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: predict the comeback and answer it, then rebut two reasons in one paragraph.",
+      "title": "Debate Coach",
+      "subtitle": "Think one move ahead.",
+      "sections": [
+        {
+          "title": "One move ahead",
+          "columns": 1,
+          "example": {
+            "prompt": "My claim: zoos should not keep polar bears.",
+            "steps": [
+              "Write my claim",
+              "Predict their best comeback",
+              "Write my answer to it"
+            ],
+            "answer": "Comeback: zoos fund research. Answer: research can be funded in the wild, where the bears live."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Predict the comeback, then answer it.",
+              "columns": [
+                "My claim",
+                "Their best comeback",
+                "My answer"
+              ],
+              "rows": [
+                [
+                  "Schools should ban junk food.",
+                  "",
+                  ""
+                ],
+                [
+                  "Tourist boats should stay away from bears.",
+                  "",
+                  ""
+                ],
+                [
+                  "Kids should walk to school.",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Schools should ban junk food.",
+                  "Kids should choose for themselves",
+                  "Schools teach healthy choices; the canteen should too"
+                ],
+                [
+                  "Tourist boats should stay away from bears.",
+                  "Visitors learn to care",
+                  "Cameras teach care without disturbing bears"
+                ],
+                [
+                  "Kids should walk to school.",
+                  "Some live too far away",
+                  "Walk the last few blocks from a drop-off spot"
+                ]
+              ],
+              "widths": [
+                1,
+                1,
+                1
+              ],
+              "rowH": 44
+            }
+          ]
+        },
+        {
+          "title": "Two at once",
+          "columns": 1,
+          "example": {
+            "prompt": "They say: zoos are safe AND they teach kids.",
+            "steps": [
+              "Answer the weaker reason first",
+              "Then the stronger one",
+              "Finish with your claim"
+            ],
+            "answer": "Safe is not the same as free. And cameras teach kids without a cage. So zoos should..."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write a rebuttal that answers TWO of the other side's reasons, weakest first.",
+              "answer": "Two reasons named fairly and each answered, then a closing claim.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: fair-or-unfair choices, a first rebuttal done and a frame.",
+      "title": "Debate Day Helper",
+      "subtitle": "Name it fairly, then However.",
+      "sections": [
+        {
+          "title": "Name it fairly",
+          "columns": 2,
+          "example": {
+            "prompt": "Fair or unfair? 'Some people think uniforms help.'",
+            "steps": [
+              "Look for insults",
+              "None? It's fair",
+              "Circle"
+            ],
+            "answer": "Fair"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Circle the FAIR one.",
+              "options": [
+                "Some people think zoos help bears.",
+                "Only silly people like zoos."
+              ],
+              "answer": 0,
+              "hint": "Fair has no insult words."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Circle the FAIR one.",
+              "options": [
+                "Lazy drivers ruin the air.",
+                "Drivers say cars save time."
+              ],
+              "answer": 1,
+              "hint": "Look for lazy, silly, only."
+            }
+          ]
+        },
+        {
+          "title": "Block it",
+          "columns": 1,
+          "example": {
+            "prompt": "Some people say chips are tasty.",
+            "steps": [
+              "Copy their reason",
+              "Write However,",
+              "Add a better reason"
+            ],
+            "answer": "However, fruit is tasty AND healthy."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Finish each However sentence.",
+              "columns": [
+                "Some people say...",
+                "However, ..."
+              ],
+              "rows": [
+                [
+                  "zoos are fun to visit.",
+                  "However, wild bears need more space than a zoo."
+                ],
+                [
+                  "cars are quick.",
+                  "However, ..."
+                ],
+                [
+                  "plastic is cheap.",
+                  "However, ..."
+                ]
+              ],
+              "answers": [
+                [
+                  "zoos are fun to visit.",
+                  "However, wild bears need more space than a zoo."
+                ],
+                [
+                  "cars are quick.",
+                  "However, walking keeps us fit."
+                ],
+                [
+                  "plastic is cheap.",
+                  "However, it lasts hundreds of years."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                1.5
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "Your rebuttal",
+          "columns": 1,
+          "example": {
+            "prompt": "My issue: should zoos keep polar bears?",
+            "steps": [
+              "Some people say ___.",
+              "However, ___.",
+              "This means ___."
+            ],
+            "answer": "Some people say zoos are safe. However, bears need space. This means zoos are wrong for them."
+          },
+          "items": [
+            {
+              "prompt": "Finish the frame for your issue: Some people say ___. However, ___. This means ___.",
+              "answer": "A three-part rebuttal.",
+              "lines": 4,
+              "hint": "Use the other side's reason from Session 3."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ]
+}

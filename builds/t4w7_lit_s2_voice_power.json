@@ -1,0 +1,900 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 7,
+    "session": 2,
+    "variant": 4,
+    "minutes": 60,
+    "title": "Voice Power",
+    "subtitle": "Term 4 Week 7, Session 2",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 7 Session 2",
+    "outputFolder": "T4W7_Lit_S2_Voice_Power",
+    "fileName": "Session 2 - Voice Power.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY02 delivering spoken texts using features of voice (pace, pause, volume, emphasis); VC2E5LY06 reading aloud fluently for meaning",
+      "shape": "warm up, model a marked script, practise, perform: a voice warm-up game, a modelled mark-up code, practice marking lines, then pairs mark up and perform their own speech lines",
+      "criticalFeature": "the pause before the key word makes the audience listen; stress only the word that matters most",
+      "decisionPoints": [
+        "the Where's the pause? round",
+        "the choice check: the mark-up that makes the key word land",
+        "the exit board: a new line marked up"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: say it with your voice.",
+      "catchUp": "Missed Week 6? The mark-up code is taught from scratch; use any persuasive paragraph from your writing book."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Speech lines written in Week 6 (opening, story, vision)",
+      "Mini-whiteboards and markers",
+      "Persuasive Speaker's Toolkit"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Turn and tell",
+      "Everyone, together, on three"
+    ],
+    "boardSetup": [
+      "Mark-up code: / short pause, // long pause, CAPS = stress the word, (slow) (fast)",
+      "Space for pairs to rehearse"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: read mark-up, fix a misplaced pause, mark up lines, then mark up your own speech.",
+      "title": "Voice Power",
+      "subtitle": "Pause before it. Stress the one word that matters.",
+      "sections": [
+        {
+          "title": "Read the mark-up",
+          "columns": 1,
+          "example": {
+            "prompt": "We have one planet // ONE.",
+            "steps": [
+              "Find the marks",
+              "Long pause at //",
+              "Stress the CAPS word"
+            ],
+            "answer": "Read normally, wait two seconds, then say ONE with weight."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "What does the speaker do at each mark?",
+              "columns": [
+                "Marked line",
+                "What I do"
+              ],
+              "rows": [
+                [
+                  "Ice to hunt / ice to live.",
+                  ""
+                ],
+                [
+                  "And then // the ice was gone.",
+                  ""
+                ],
+                [
+                  "We must act NOW.",
+                  ""
+                ],
+                [
+                  "(slow) Every. Single. Day.",
+                  ""
+                ],
+                [
+                  "(fast) Cars, buses, trucks, planes",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Ice to hunt / ice to live.",
+                  "a short pause between the two"
+                ],
+                [
+                  "And then // the ice was gone.",
+                  "a long pause before the ice was gone"
+                ],
+                [
+                  "We must act NOW.",
+                  "stress now"
+                ],
+                [
+                  "(slow) Every. Single. Day.",
+                  "say each word slowly"
+                ],
+                [
+                  "(fast) Cars, buses, trucks, planes",
+                  "speed up to sound busy"
+                ]
+              ],
+              "widths": [
+                1.4,
+                1.4
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Pause in the right place",
+          "columns": 2,
+          "example": {
+            "prompt": "Where should the pause go? The bears are / starving.",
+            "steps": [
+              "Find the key word",
+              "Put the pause just before it",
+              "Read it aloud"
+            ],
+            "answer": "The bears are // starving."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which mark-up makes the key word land?",
+              "options": [
+                "Please / switch off one light tonight.",
+                "Please switch off one light // TONIGHT.",
+                "Please switch // off one light tonight."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "The long pause and stress land on tonight, the word that matters."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Leo marked up his line. Find the problem and fix it.",
+              "work": [
+                "WE MUST SAVE OUR CREEK FROM RUBBISH."
+              ],
+              "answer": "Stressing every word means nothing stands out. Fix: We must save our creek // from RUBBISH."
+            }
+          ]
+        },
+        {
+          "title": "Mark it up",
+          "columns": 1,
+          "example": {
+            "prompt": "Plain: We can still save the reef.",
+            "steps": [
+              "Find the key word",
+              "Pause before it",
+              "Stress it"
+            ],
+            "answer": "We can still // SAVE the reef."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Mark up each line with / // and CAPS.",
+              "columns": [
+                "Plain line",
+                "Marked up"
+              ],
+              "rows": [
+                [
+                  "One bag can trap one turtle.",
+                  ""
+                ],
+                [
+                  "They waited and the ice never came.",
+                  ""
+                ],
+                [
+                  "This is our school and our choice.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "One bag can trap // one turtle.",
+                  "One bag can trap // ONE turtle."
+                ],
+                [
+                  "They waited and the ice never came.",
+                  "They waited / and waited // the ice never CAME."
+                ],
+                [
+                  "This is our school and our choice.",
+                  "This is OUR school / and OUR choice."
+                ]
+              ],
+              "widths": [
+                1.3,
+                1.5
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "My marked-up speech",
+          "columns": 1,
+          "example": {
+            "prompt": "My vision passage",
+            "steps": [
+              "Copy four lines of your speech",
+              "Add / and // where you'll pause",
+              "CAPS one word per line"
+            ],
+            "answer": "I dream of bears / with room to ROAM."
+          },
+          "items": [
+            {
+              "prompt": "Copy four lines from your speech and mark them up. Then rehearse them aloud with a partner.",
+              "answer": "Four marked lines: pauses before key words and one stressed word per line.",
+              "lines": 7
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: direct a line three ways, then write director's notes for your speech.",
+      "title": "Voice Director",
+      "subtitle": "Directors tell actors exactly how to say each line.",
+      "sections": [
+        {
+          "title": "Three ways",
+          "columns": 1,
+          "example": {
+            "prompt": "Line: It's not too late.",
+            "steps": [
+              "Version 1: hopeful",
+              "Version 2: urgent",
+              "Version 3: quiet and serious"
+            ],
+            "answer": "Hopeful: It's NOT too late! Urgent: It's not too late // YET. Quiet: (slow) It's... not... too late."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Mark up each line three different ways.",
+              "columns": [
+                "Line",
+                "Hopeful",
+                "Urgent",
+                "Serious"
+              ],
+              "rows": [
+                [
+                  "We can fix this.",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "The bears are waiting.",
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "We can fix this.",
+                  "We CAN fix this!",
+                  "We can fix this // NOW.",
+                  "(slow) We. Can. Fix this."
+                ],
+                [
+                  "The bears are waiting.",
+                  "The bears are waiting / for US.",
+                  "The bears are WAITING.",
+                  "(slow) The bears // are waiting."
+                ]
+              ],
+              "widths": [
+                0.8,
+                1,
+                1,
+                1
+              ],
+              "rowH": 46
+            }
+          ]
+        },
+        {
+          "title": "Director's notes",
+          "columns": 1,
+          "example": {
+            "prompt": "My speech, line by line",
+            "steps": [
+              "Pick your three most important lines",
+              "Write how to say each",
+              "Say why"
+            ],
+            "answer": "Line 1: slow and quiet, so they lean in."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write director's notes for the three most important lines of your speech: how to say each one, and why.",
+              "answer": "Three lines with voice choices and reasons linked to the audience.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first line marked and a frame.",
+      "title": "Voice Helper",
+      "subtitle": "/ means pause. CAPS means say it strongly.",
+      "sections": [
+        {
+          "title": "What do I do?",
+          "columns": 3,
+          "example": {
+            "prompt": "We must // act.",
+            "steps": [
+              "See //",
+              "Wait two seconds",
+              "Then say act"
+            ],
+            "answer": "a long pause before act"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "At / I...",
+              "options": [
+                "pause",
+                "shout"
+              ],
+              "answer": 0,
+              "hint": "The slash means stop for a moment."
+            },
+            {
+              "kind": "choice",
+              "prompt": "At a CAPS word I...",
+              "options": [
+                "say it strongly",
+                "whisper"
+              ],
+              "answer": 0,
+              "hint": "Big letters, big voice."
+            },
+            {
+              "kind": "choice",
+              "prompt": "At (slow) I...",
+              "options": [
+                "speed up",
+                "slow down"
+              ],
+              "answer": 1,
+              "hint": "Read the word in brackets."
+            }
+          ]
+        },
+        {
+          "title": "Mark it",
+          "columns": 1,
+          "example": {
+            "prompt": "Save the bears.",
+            "steps": [
+              "Find the key word",
+              "Put // before it",
+              "CAPS it"
+            ],
+            "answer": "Save the // BEARS."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Mark up each line.",
+              "columns": [
+                "Line",
+                "Marked up"
+              ],
+              "rows": [
+                [
+                  "Save the bears.",
+                  "Save the // BEARS."
+                ],
+                [
+                  "Pick up litter.",
+                  ""
+                ],
+                [
+                  "Plant a tree today.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Save the bears.",
+                  "Save the // BEARS."
+                ],
+                [
+                  "Pick up litter.",
+                  "Pick up // LITTER."
+                ],
+                [
+                  "Plant a tree today.",
+                  "Plant a tree // TODAY."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                1.4
+              ],
+              "rowH": 30
+            }
+          ]
+        },
+        {
+          "title": "My line",
+          "columns": 1,
+          "example": {
+            "prompt": "My speech",
+            "steps": [
+              "Copy one line",
+              "Add // before the key word",
+              "CAPS the key word"
+            ],
+            "answer": "Bears need // SPACE."
+          },
+          "items": [
+            {
+              "prompt": "Copy one line from your speech. Mark it up. Say it to your partner.",
+              "answer": "A marked line with a pause and one stressed word.",
+              "lines": 3,
+              "hint": "Choose your favourite line."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: the same words can fall flat or bring the house down. Today we learn why."
+    },
+    {
+      "kind": "resources",
+      "notes": "No video today. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Write the mark-up code on the board. Students need their Week 6 speech lines."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to use our voice to make a speech powerful.",
+      "successCriteria": [
+        "I can read a script marked for pauses and stress.",
+        "I can mark up a speech so the key words land.",
+        "I can perform my lines with pace, pause and emphasis."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Great words need a great voice. Today you find yours."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Same line, five ways",
+      "lines": [
+        "We need more lunchtime.",
+        "Say it: excited, bored, whispering, like a robot, like a coach."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "happy",
+            "label": "excited"
+          },
+          {
+            "name": "calm",
+            "label": "bored"
+          },
+          {
+            "name": "speaker",
+            "label": "volume"
+          },
+          {
+            "name": "timer",
+            "label": "pace"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - the same words sound completely different",
+        "beats": [
+          [
+            "SAY: One line. Five voices. Let's warm up.",
+            "Everyone stand."
+          ],
+          [
+            "ASK: Say it excited... now bored... now whispering... robot... coach!",
+            "3 sec each. Cue: Everyone, together, on three.",
+            "EXPECT: five very different versions"
+          ],
+          [
+            "ASK: Which voice would actually convince the principal?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: the coach; calm and confident"
+          ],
+          "SAY: Your voice can make or break your words. Sit down."
+        ],
+        "trap": [
+          "giggling through the whole warm-up.",
+          "Fix: say one more round, then freeze; make the last one serious."
+        ],
+        "prep": "Movement and voice warm-up; low-coupling, everyone can join. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "emphasis",
+      "meaning": "Saying one word with extra force so it stands out.",
+      "example": "We must act NOW.",
+      "pictogram": "megaphone",
+      "notes": {
+        "answer": "saying one word with extra force so it stands out",
+        "beats": [
+          "POINT to the word. SAY: Emphasis. Say it with me. Emphasis.",
+          [
+            "SAY: Saying one word with extra force so it stands out.",
+            "SAY: We must act NOW."
+          ],
+          [
+            "ASK: Say We must act now, stressing a different word each time.",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: the meaning shifts with the stressed word"
+          ]
+        ],
+        "trap": [
+          "stressing every word.",
+          "Fix: say if everything is loud, nothing stands out. One word per line."
+        ],
+        "prep": "Toolkit row 8: pause and emphasis.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "The mark-up code",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Mark",
+            "What I do",
+            "Example"
+          ],
+          [
+            "/",
+            "short pause",
+            "Ice to hunt / ice to live."
+          ],
+          [
+            "//",
+            "long pause",
+            "And then // it was gone."
+          ],
+          [
+            "CAPS",
+            "stress the word",
+            "We must act NOW."
+          ],
+          [
+            "(slow) (fast)",
+            "change the pace",
+            "(slow) Every. Single. Day."
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "/ short pause, // long pause, CAPS stress, (slow) (fast) pace",
+        "beats": [
+          [
+            "POINT to //.",
+            "SAY: And then... (wait two seconds)... it was gone. Feel how you leaned in?"
+          ],
+          [
+            "POINT to CAPS.",
+            "SAY: We must act NOW. One word. Not every word."
+          ],
+          [
+            "POINT to (slow).",
+            "SAY: (slow) Every. Single. Day. Slow makes it heavy."
+          ],
+          [
+            "ASK: Say And then // it was gone with me, with the pause.",
+            "3 sec. Cue: Everyone, together, on three.",
+            "EXPECT: a real two-second pause"
+          ]
+        ],
+        "trap": [
+          "rushing through the // pause.",
+          "Fix: student counts one-thousand, two-thousand in their head."
+        ],
+        "stretch": "Find where a (fast) section would help your speech.",
+        "help": "Use // only once per line.",
+        "prep": "The model. Critical feature: the pause before the key word makes the audience listen.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Stress test",
+      "routine": "boards",
+      "thinkTime": 10,
+      "pivot": "say the line three ways; which word changes the meaning most?",
+      "followUp": "cold call one board: say it with your stress",
+      "items": [
+        {
+          "text": "Only three bins for the whole school.",
+          "answer": "THREE",
+          "expect": "three. ACCEPT: whole"
+        },
+        {
+          "text": "This may be the last summer the ice lasts.",
+          "answer": "LAST",
+          "expect": "last"
+        },
+        {
+          "text": "You can do this today.",
+          "answer": "YOU or TODAY",
+          "expect": "you or today, with a reason"
+        },
+        {
+          "text": "We need shade, not excuses.",
+          "answer": "SHADE or EXCUSES",
+          "expect": "shade or excuses"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Write the ONE word you'd stress in each line."
+        ],
+        "trap": [
+          "choosing small words like the or for.",
+          "Fix: ask which word carries the meaning? Student re-chooses."
+        ],
+        "stretch": "Explain how the meaning changes if you stress a different word.",
+        "help": "Look for numbers, you, or the problem word.",
+        "prep": "Guided practice on emphasis. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Where's the pause?",
+      "routine": "boards",
+      "thinkTime": 20,
+      "pivot": "find the key word first, then put // just before it",
+      "followUp": "cold call one board: perform it",
+      "items": [
+        {
+          "text": "The creek used to be full of frogs and now it's silent.",
+          "answer": "The creek used to be full of frogs // and now it's SILENT.",
+          "expect": "// before the change; stress silent"
+        },
+        {
+          "text": "You can change this today.",
+          "answer": "You can change this // TODAY.",
+          "expect": "// before today"
+        },
+        {
+          "text": "Three bins for six hundred kids.",
+          "answer": "Three bins // for SIX HUNDRED kids.",
+          "expect": "// before six hundred"
+        },
+        {
+          "text": "She waited all summer for the ice.",
+          "answer": "She waited / all summer // for the ICE.",
+          "expect": "a pause before the ice"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Copy each line and mark where the pause goes."
+        ],
+        "trap": [
+          "a pause after the key word, not before.",
+          "Fix: say the pause is the drumroll; it comes first."
+        ],
+        "stretch": "Add CAPS to one word per line.",
+        "help": "Underline the key word, then put // in front of it.",
+        "prep": "Guided practice. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which mark-up makes the key word land?",
+      "options": [
+        {
+          "text": "Bring a bottle / to school tomorrow.",
+          "misconception": "the pause is in a place that doesn't matter"
+        },
+        {
+          "text": "BRING A BOTTLE TO SCHOOL TOMORROW.",
+          "misconception": "stresses everything, so nothing stands out"
+        },
+        {
+          "text": "Bring a bottle to school // TOMORROW."
+        }
+      ],
+      "answer": 2,
+      "notes": {
+        "answer": "C - the pause and stress land on tomorrow",
+        "beats": [
+          "SAY: Three ways to mark the same line.",
+          [
+            "ASK: Which mark-up makes the key word land?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to C"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: perform C for us.",
+            "Less -> perform all three aloud, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: C. The pause builds, then tomorrow lands."
+          ]
+        ],
+        "trap": [
+          "pointing to B because it looks loud and strong.",
+          "Fix: perform B; ask which word mattered most? Nobody can tell."
+        ],
+        "prep": "Decision point before pairs rehearse. Under 80% means the class marks one line together first.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Mark up and rehearse",
+      "task": "Work through your Worksheet. Finish by marking up four lines of your speech, then rehearse them with a partner.",
+      "where": "Worksheet",
+      "frame": "___ // KEY WORD.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "speaker",
+          "timer",
+          "microphone"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Pause, stress, pace",
+      "notes": {
+        "answer": "four marked lines, performed with real pauses",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Mark it, then say it. Your partner listens for the pauses."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Listen: is there a real pause? Is only one word stressed?",
+          [
+            "ASK: Perform your four lines to your partner. Partner: thumbs for the best pause.",
+            "60 sec each. Turn and tell, partner A first.",
+            "EXPECT: real pauses and one stressed word per line"
+          ]
+        ],
+        "trap": [
+          "marking pauses but rushing through them when speaking.",
+          "Fix: partner taps the desk to count two seconds at each //."
+        ],
+        "stretch": "Extension: direct a line three ways, then write director's notes.",
+        "help": "Supported Worksheet: picture-clue choices, a first line marked, a frame.",
+        "prep": "Independent application and paired rehearsal. Toolkit row 8 filled before the exit. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in four marked-up speech lines, rehearsed aloud"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Every lunch, our oval fills with wrappers that nobody picks up.",
+        "Copy it and mark it up: one // and one CAPS word."
+      ],
+      "notes": {
+        "answer": "e.g. Every lunch, our oval fills with wrappers // that NOBODY picks up.",
+        "beats": [
+          "SAY: A new line. Mark it so it lands.",
+          [
+            "ASK: Copy the line and mark it up.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: one // before the key word; one CAPS word"
+          ],
+          "RECORD who marks every word or no key word. Tomorrow's warm-up."
+        ],
+        "trap": [
+          "CAPS on every word.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new line. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "What will you do with your voice that you didn't do before today?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - pause before my key word; slow down",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can mark up and perform a speech?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: What will you do with your",
+            "voice that you didn't do before today?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: pause before my key word; slow down"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Toolkit row 8 filled. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

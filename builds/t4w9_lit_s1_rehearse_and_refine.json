@@ -1,0 +1,996 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 9,
+    "session": 1,
+    "variant": 4,
+    "minutes": 60,
+    "title": "Rehearse and Refine",
+    "subtitle": "Term 4 Week 9, Session 1",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 9 Session 1",
+    "outputFolder": "T4W9_Lit_S1_Rehearse_And_Refine",
+    "fileName": "Session 1 - Rehearse and Refine.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY02 rehearsing spoken texts with features of voice; VC2E5LY11 re-reading and editing for the ear; VC2E5LY01 giving and using feedback",
+      "shape": "model, guide, apply: the teacher edits the shade-trees speech by ear and models useful feedback, students fix tricky lines and name delivery fixes, then rehearse in trios and make final changes",
+      "criticalFeature": "practise the hard parts, not the whole thing again: find where you trip, fix it, say it three times",
+      "decisionPoints": [
+        "the Delivery doctor round",
+        "the choice check: the feedback that helps most",
+        "the exit board: one specific grow for a new speaker"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: make Say it smooth.",
+      "catchUp": "Students without a finished speech rehearse their opening and finish only."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Speech and cue cards (speech folder)",
+      "Speech Feedback Card (two per student)",
+      "A timer per trio",
+      "Mini-whiteboards and markers"
+    ],
+    "routineIcons": [
+      "Fingers 1, 2 or 3",
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Trios: speaker, timer, coach. Rotate.",
+      "Trip test: say it aloud, mark where you trip, fix it, say it three times"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: fix lines that trip the tongue, judge feedback, prescribe delivery fixes, then plan your final changes.",
+      "title": "Rehearse and Refine",
+      "subtitle": "Find the trips. Fix them. Say it smooth.",
+      "sections": [
+        {
+          "title": "Trip test",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade significantly reduces ultraviolet exposure.",
+            "steps": [
+              "Say it aloud",
+              "Where do you trip?",
+              "Swap for easy words"
+            ],
+            "answer": "Shade cuts UV by 75 per cent."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each line so it is easy to say aloud.",
+              "columns": [
+                "Tricky to say",
+                "Easy to say"
+              ],
+              "rows": [
+                [
+                  "Particularly problematic plastic pollution persists.",
+                  ""
+                ],
+                [
+                  "Statistically, sixty-seven per cent of students surveyed stated...",
+                  ""
+                ],
+                [
+                  "The environmental ramifications are extraordinarily serious.",
+                  ""
+                ],
+                [
+                  "Unquestionably, an unacceptable situation.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Particularly problematic plastic pollution persists.",
+                  "Plastic pollution is still a big problem."
+                ],
+                [
+                  "Statistically, sixty-seven per cent of students surveyed stated...",
+                  "Two out of three of us said..."
+                ],
+                [
+                  "The environmental ramifications are extraordinarily serious.",
+                  "This hurts our planet. Badly."
+                ],
+                [
+                  "Unquestionably, an unacceptable situation.",
+                  "This is not OK."
+                ]
+              ],
+              "widths": [
+                1.4,
+                1.3
+              ],
+              "rowH": 30
+            }
+          ]
+        },
+        {
+          "title": "Helpful or not?",
+          "columns": 3,
+          "example": {
+            "prompt": "Feedback: It was good.",
+            "steps": [
+              "Does it say what?",
+              "Does it say where?",
+              "Can they fix it?"
+            ],
+            "answer": "Not helpful: nothing to fix. Try: pause after 41 degrees."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Slow down in your story so we can picture it.",
+              "options": [
+                "helpful",
+                "not helpful"
+              ],
+              "answer": 0
+            },
+            {
+              "kind": "choice",
+              "prompt": "I didn't like it.",
+              "options": [
+                "helpful",
+                "not helpful"
+              ],
+              "answer": 1
+            },
+            {
+              "kind": "choice",
+              "prompt": "Look up when you say your call to action.",
+              "options": [
+                "helpful",
+                "not helpful"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "title": "Delivery doctor",
+          "columns": 1,
+          "example": {
+            "prompt": "Problem: the back row can't hear.",
+            "steps": [
+              "Name the problem",
+              "Name one fix",
+              "Make it doable"
+            ],
+            "answer": "Fix: speak to the back wall, not the front row."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write one fix for each delivery problem.",
+              "columns": [
+                "Problem",
+                "Fix"
+              ],
+              "rows": [
+                [
+                  "Rushed: finished in 50 seconds.",
+                  ""
+                ],
+                [
+                  "Reads every word off the card.",
+                  ""
+                ],
+                [
+                  "Swaying and fiddling with the card.",
+                  ""
+                ],
+                [
+                  "Voice flat, same speed the whole time.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Rushed: finished in 50 seconds.",
+                  "pause after each part; breathe at the slashes"
+                ],
+                [
+                  "Reads every word off the card.",
+                  "shrink the card to key words; look up at the end of each line"
+                ],
+                [
+                  "Swaying and fiddling with the card.",
+                  "feet planted; card in one hand"
+                ],
+                [
+                  "Voice flat, same speed the whole time.",
+                  "stress key words; slow down for the story"
+                ]
+              ],
+              "widths": [
+                1.2,
+                1.5
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "My final changes",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "Where did I trip?",
+              "What did my coach say?",
+              "What will I change?"
+            ],
+            "answer": "Fix the UV line; pause before ouch; look up for the action."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write three changes you will make after rehearsal.",
+              "answer": "Three specific changes from the trip test and the coach's feedback.",
+              "lines": 4
+            },
+            {
+              "kind": "open",
+              "prompt": "Which part is hardest to say? How will you practise it?",
+              "answer": "A named hard part and a plan to say it three times.",
+              "lines": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: plan gestures for key lines, then make a plan for nerves.",
+      "title": "Stage Ready",
+      "subtitle": "Your body talks too.",
+      "sections": [
+        {
+          "title": "Plan the gestures",
+          "columns": 1,
+          "example": {
+            "prompt": "Line: One tree would have stopped that.",
+            "steps": [
+              "Which word matters?",
+              "What could your hand do?",
+              "Keep it small"
+            ],
+            "answer": "Hold up one finger on One."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Plan one small gesture for each line.",
+              "columns": [
+                "Line",
+                "Gesture"
+              ],
+              "rows": [
+                [
+                  "Not next year. Not next week. Today.",
+                  ""
+                ],
+                [
+                  "Put your hand on the slide.",
+                  ""
+                ],
+                [
+                  "Will you help?",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Not next year. Not next week. Today.",
+                  "point down on Today"
+                ],
+                [
+                  "Put your hand on the slide.",
+                  "hold out a flat hand"
+                ],
+                [
+                  "Will you help?",
+                  "open both hands to the audience"
+                ]
+              ],
+              "widths": [
+                1.3,
+                1.3
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "Beat the nerves",
+          "columns": 1,
+          "example": {
+            "prompt": "Nerves: shaky voice",
+            "steps": [
+              "What happens to you?",
+              "What helps?",
+              "Make a plan"
+            ],
+            "answer": "Breathe in for four before I start; find one friendly face."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "What happens when you get nervous? Write a three-step plan for Speech Day.",
+              "answer": "Specific signs and a three-step plan, such as breathing, a friendly face, a slow first line.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first fix done and a plan frame.",
+      "title": "Rehearse Helper",
+      "subtitle": "Say it. Fix it. Say it again.",
+      "sections": [
+        {
+          "title": "Helpful?",
+          "columns": 3,
+          "example": {
+            "prompt": "It was good.",
+            "steps": [
+              "Does it say what to fix?",
+              "No",
+              "Not helpful"
+            ],
+            "answer": "not helpful"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Look up at the end.",
+              "options": [
+                "helpful",
+                "not helpful"
+              ],
+              "answer": 0,
+              "hint": "Can they do it?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "It was boring.",
+              "options": [
+                "helpful",
+                "not helpful"
+              ],
+              "answer": 1,
+              "hint": "Can they fix it?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Slow down in your story.",
+              "options": [
+                "helpful",
+                "not helpful"
+              ],
+              "answer": 0,
+              "hint": "Can they do it?"
+            }
+          ]
+        },
+        {
+          "title": "Easy to say",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade significantly reduces UV.",
+            "steps": [
+              "Say it",
+              "Find the hard word",
+              "Swap it"
+            ],
+            "answer": "Shade cuts UV."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Make each line easy to say.",
+              "columns": [
+                "Hard",
+                "Easy"
+              ],
+              "rows": [
+                [
+                  "Plastic is extraordinarily problematic.",
+                  "Plastic is a big problem."
+                ],
+                [
+                  "Unquestionably unacceptable.",
+                  ""
+                ],
+                [
+                  "Environmental ramifications.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Plastic is extraordinarily problematic.",
+                  "Plastic is a big problem."
+                ],
+                [
+                  "Unquestionably unacceptable.",
+                  "Not OK."
+                ],
+                [
+                  "Environmental ramifications.",
+                  "It hurts the planet."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1.3,
+                1.3
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "My plan",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "My best part is ___.",
+              "I will practise ___.",
+              "I will look up at ___."
+            ],
+            "answer": "My best part is the story. I will practise the UV line. I will look up at the end."
+          },
+          "items": [
+            {
+              "prompt": "My best part is ___. I will practise ___. I will look up at ___.",
+              "answer": "A best part, a part to practise and a look-up point.",
+              "lines": 4,
+              "hint": "Ask your coach."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    },
+    {
+      "kind": "page",
+      "label": "Speech Feedback Card",
+      "description": "Fun activity: the coach's card for trio rehearsals and Speech Day. Two per student.",
+      "title": "Speech Feedback Card",
+      "subtitle": "Coach: tick what you see and hear. Then one glow and one grow.",
+      "blocks": [
+        {
+          "heading": "Message"
+        },
+        {
+          "checklist": [
+            "A hook that grabbed me",
+            "A clear position",
+            "Three arguments, strongest last",
+            "A small true story",
+            "A clear call to action"
+          ]
+        },
+        {
+          "heading": "Delivery"
+        },
+        {
+          "checklist": [
+            "Looked up at the audience",
+            "Loud enough for the back row",
+            "Pauses and stressed words",
+            "Feet planted, card in one hand",
+            "About 2 minutes"
+          ]
+        },
+        {
+          "heading": "My feedback for the speaker"
+        },
+        {
+          "organiser": {
+            "left": "Glow: a moment that worked",
+            "right": "Grow: one thing to fix",
+            "rows": 1,
+            "rowH": 130
+          }
+        },
+        {
+          "text": "Time: ___ minutes ___ seconds"
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open Week 9. One line: tomorrow is Speech Day. Today we make it smooth."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers, the Supported Worksheet for those who need it, and two Speech Feedback Cards per student. A timer per trio. Spread trios around the room and corridor."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to rehearse and refine a speech using feedback.",
+      "successCriteria": [
+        "I can find and fix a line that is hard to say.",
+        "I can give and use specific feedback to improve my delivery.",
+        "I can plan gestures and a plan for nerves."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Speakers don't just practise. They practise the hard parts."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "How do the pros practise?",
+      "lines": [
+        "A pianist doesn't play the whole song fifty times.",
+        "They find the tricky bars and play those, again and again."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "music",
+            "label": "tricky bars"
+          },
+          {
+            "name": "run",
+            "label": "tricky moves"
+          },
+          {
+            "name": "microphone",
+            "label": "tricky lines"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "practise the hard parts, not the whole thing again",
+        "beats": [
+          "SAY: Athletes and musicians practise the hard bits most.",
+          [
+            "ASK: Think of a sport or skill. What do you practise most?",
+            "1 the easy part, 2 the hard part.",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: What would the hard part of your speech be?",
+            "15 sec. Turn and tell, partner B first.",
+            "EXPECT: the story; the facts; looking up"
+          ],
+          "SAY: Today you find your tricky lines and fix them."
+        ],
+        "trap": [
+          "rehearsing by reading the whole speech silently.",
+          "Fix: say rehearsal is out loud, or it isn't rehearsal."
+        ],
+        "prep": "Low-entry launch. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "rehearse",
+      "meaning": "To practise a performance out loud before the real thing.",
+      "example": "We rehearse in trios before Speech Day.",
+      "pictogram": "microphone",
+      "notes": {
+        "answer": "to practise a performance out loud before the real thing",
+        "beats": [
+          "POINT to the word. SAY: Rehearse. Say it with me. Rehearse.",
+          [
+            "SAY: To practise a performance out loud before the real thing.",
+            "SAY: We rehearse in trios before Speech Day."
+          ],
+          [
+            "ASK: What is the difference between reading and rehearsing?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: rehearsing is out loud, standing, like the real thing"
+          ]
+        ],
+        "trap": [
+          "rehearsing silently in your head.",
+          "Fix: say out loud, standing, with your cards."
+        ],
+        "prep": "Rehearse is the session's verb.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "The trip test",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Where I tripped",
+            "My fix"
+          ],
+          [
+            "Shade significantly reduces ultraviolet exposure.",
+            "Shade cuts UV by 75 per cent."
+          ],
+          [
+            "I rushed through Sam's story.",
+            "Pause after Forty minutes."
+          ],
+          [
+            "I read my action off the card.",
+            "Look up. Say it to their eyes."
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "say it aloud, mark the trip, fix it, say it three times",
+        "beats": [
+          [
+            "SAY: Watch me say my speech out loud. Count my trips.",
+            "PERFORM the shade speech; stumble on the UV line."
+          ],
+          [
+            "POINT to row 1.",
+            "SAY: I tripped on a written line. So I swap it for words I'd say."
+          ],
+          [
+            "POINT to rows 2 and 3.",
+            "SAY: Some trips are delivery. Fix them, then say that bit three times."
+          ],
+          [
+            "ASK: How many times did I trip?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 3"
+          ]
+        ],
+        "trap": [
+          "fixing a trip once and moving on.",
+          "Fix: say it three times smooth before it counts."
+        ],
+        "stretch": "Plan a gesture for your strongest line.",
+        "help": "Trip test only your opening and your finish.",
+        "prep": "Perform the stumbles on purpose. Critical feature: practise the hard parts.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Delivery doctor",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "act each one out, then ask what went wrong",
+      "followUp": "cold call one student: what's the fix?",
+      "items": [
+        {
+          "text": "Ava's speech took 50 seconds. 1 too fast, 2 too quiet, 3 no eye contact",
+          "answer": "1 - too fast",
+          "expect": "1 finger"
+        },
+        {
+          "text": "The back row kept saying pardon? 1 too fast, 2 too quiet, 3 no eye contact",
+          "answer": "2 - too quiet",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Ben read every word off his card. 1 too fast, 2 too quiet, 3 no eye contact",
+          "answer": "3 - no eye contact",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "Lily whispered her call to action. 1 too fast, 2 too quiet, 3 no eye contact",
+          "answer": "2 - too quiet",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Jack stared at the ceiling. 1 too fast, 2 too quiet, 3 no eye contact",
+          "answer": "3 - no eye contact",
+          "expect": "3 fingers"
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger: too fast. Two: too quiet. Three: no eye contact."
+        ],
+        "trap": [
+          "mixing up quiet and fast.",
+          "Fix: ask could they hear it, or could they keep up?"
+        ],
+        "stretch": "Say the fix for each.",
+        "help": "Picture yourself in the back row.",
+        "prep": "Guided practice. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which feedback helps most?",
+      "options": [
+        {
+          "text": "It was good.",
+          "misconception": "kind, but nothing to fix"
+        },
+        {
+          "text": "Slow down in your story. Pause after 41 degrees."
+        },
+        {
+          "text": "Change your whole topic.",
+          "misconception": "too late, and not about delivery"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - specific: what, where, how to fix",
+        "beats": [
+          "SAY: Three coaches give feedback after a rehearsal.",
+          [
+            "ASK: Which feedback helps most?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what makes B useful?",
+            "Less -> ask which one could you fix tonight? re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. It says what, where and how. Coach like that today."
+          ]
+        ],
+        "trap": [
+          "pointing to A because it's nicest.",
+          "Fix: say kind and specific, both. Nice alone can't be fixed."
+        ],
+        "prep": "Decision point before trios. Under 80% means model one more coach comment together.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Trip test",
+      "routine": "boards",
+      "thinkTime": 30,
+      "pivot": "say it aloud, circle the trip word, swap it",
+      "followUp": "cold call one board: say it smoothly three times",
+      "items": [
+        {
+          "text": "Consequently, the aforementioned problem persists.",
+          "answer": "e.g. So the problem is still here.",
+          "expect": "short, easy words"
+        },
+        {
+          "text": "Approximately three-quarters of participants agreed.",
+          "answer": "e.g. Three out of four of us agreed.",
+          "expect": "short, easy words"
+        },
+        {
+          "text": "Numerous species are increasingly endangered.",
+          "answer": "e.g. More and more animals are in danger.",
+          "expect": "short, easy words"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Make each line easy to say out loud."
+        ],
+        "trap": [
+          "swapping one long word for another long word.",
+          "Fix: student says it aloud; if they trip, swap again."
+        ],
+        "stretch": "Add a stressed word in capitals.",
+        "help": "Circle the longest word first.",
+        "prep": "Guided editing by ear. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "We Do",
+      "title": "Trio rehearsals",
+      "lines": [
+        "Speaker: give your speech from your cue cards.",
+        "Timer: time it. Coach: fill in the Feedback Card.",
+        "Rotate until everyone has spoken, then fix and go again."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "microphone",
+            "label": "speaker"
+          },
+          {
+            "name": "timer",
+            "label": "timer"
+          },
+          {
+            "name": "clipboard",
+            "label": "coach"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - every student rehearses and gets one glow and one grow",
+        "beats": [
+          [
+            "SAY: Trios. Speaker, timer, coach. Then rotate.",
+            "TIME the rounds: 4 minutes each including feedback."
+          ],
+          "CIRCULATE. Listen for one great grow comment to share.",
+          [
+            "ASK: Thumbs: did your coach give you a grow you can fix tonight?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: mostly thumbs up"
+          ],
+          [
+            "ASK: Tell your coach the one change you'll make.",
+            "15 sec. Turn and tell, speaker first.",
+            "EXPECT: a specific change"
+          ]
+        ],
+        "trap": [
+          "coaches writing good job as the grow.",
+          "Fix: coach must name a line or a moment."
+        ],
+        "stretch": "Second run: add a gesture to your strongest line.",
+        "help": "Rehearse just the opening and finish first.",
+        "prep": "Fun activity: trio rehearsal with Feedback Cards. 14 minutes. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Refine my speech",
+      "task": "Work through your Worksheet. Finish by writing your three final changes, then make them on your speech and cards.",
+      "where": "Worksheet",
+      "frame": "Change 1: ___. Change 2: ___. Change 3: ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "pencil",
+          "microphone",
+          "star"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Fix the hard parts",
+      "notes": {
+        "answer": "three specific changes from the trip test and feedback",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Make your three changes on your real speech and cards."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: show me a line you fixed. Say it three times.",
+          [
+            "ASK: Say your fixed line to your partner three times.",
+            "30 sec each. Turn and tell, partner A first.",
+            "EXPECT: smoother each time"
+          ]
+        ],
+        "trap": [
+          "writing changes but never saying them aloud.",
+          "Fix: student says each changed line three times."
+        ],
+        "stretch": "Extension: plan gestures, then a plan for nerves.",
+        "help": "Supported Worksheet: picture-clue choices, a fix done, a frame.",
+        "prep": "Independent refining; tomorrow is Speech Day. SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in three final changes made to the student's speech"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "A speaker stares at their shoes and mumbles their final line.",
+        "Write one specific grow comment for them."
+      ],
+      "notes": {
+        "answer": "e.g. Look up and say your final line loudly to the back wall.",
+        "beats": [
+          "SAY: A new speaker. Coach them in one line.",
+          [
+            "ASK: Write one specific grow comment.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: what, where and how to fix"
+          ],
+          "RECORD who writes a vague comment. Pair them with a strong coach on Speech Day."
+        ],
+        "trap": [
+          "a comment like be better.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "What is the one line you'll practise tonight?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - a named line from their speech",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How ready do you feel for Speech Day?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: What is the one line you'll practise tonight?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: a named line from their speech"
+          ]
+        ],
+        "prep": "Speeches and cards go home to practise tonight, or stay in the folder. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

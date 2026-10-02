@@ -1,0 +1,937 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 3,
+    "session": 1,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Hook, Line and Sinker",
+    "subtitle": "Term 4 Week 3, Session 1",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 3 Session 1",
+    "outputFolder": "T4W3_Lit_S1_Hook_Line_And_Sinker",
+    "fileName": "Session 1 - Hook, Line and Sinker.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA03 how persuasive texts are organised into stages (the opening); VC2E5LY10 creating texts for purpose and audience; VC2E5LE04 experimenting with imagery",
+      "shape": "model five, battle, write five: students see one issue opened five ways, battle hooks in pairs, then write five of their own and choose, because choice and competition lift effort late in the year",
+      "criticalFeature": "a hook makes the reader need the next sentence, and the best hook fits the audience",
+      "decisionPoints": [
+        "the Name that hook round",
+        "the choice check: the best hook for the principal",
+        "the exit board: a new hook, named"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Today: sell it from the very first line.",
+      "catchUp": "Missed earlier weeks? Give the Hook Starters page and the issue Should zoos keep polar bears? They write five hooks for that."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Writing books with the Week 1 Issue Card"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 to 5",
+      "Point to A, B or C",
+      "Thumbs vote"
+    ],
+    "boardSetup": [
+      "Five hook names down the side of the board: question, shocking fact, imagine, mini-story, bold statement",
+      "A Hook Battle bracket for the class vote"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: name hooks, match a hook to a reader, write hooks for new issues, then five for your own.",
+      "title": "Hook, Line and Sinker",
+      "subtitle": "A hook makes your reader need the next sentence.",
+      "sections": [
+        {
+          "title": "Name that hook",
+          "columns": 1,
+          "example": {
+            "prompt": "'Picture a playground with no shade at all.'",
+            "steps": [
+              "Read the first two words",
+              "Match: question, fact, imagine, story or bold",
+              "Write the type"
+            ],
+            "answer": "imagine"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write the type of each hook: question, shocking fact, imagine, mini-story or bold statement.",
+              "columns": [
+                "Hook",
+                "Type"
+              ],
+              "rows": [
+                [
+                  "What if your lunchbox could save a turtle?",
+                  ""
+                ],
+                [
+                  "Junk mail should be banned.",
+                  ""
+                ],
+                [
+                  "Yesterday, a koala crossed our school oval.",
+                  ""
+                ],
+                [
+                  "Australians use billions of plastic bags each year.",
+                  ""
+                ],
+                [
+                  "Imagine a summer with no beach days.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "What if your lunchbox could save a turtle?",
+                  "question"
+                ],
+                [
+                  "Junk mail should be banned.",
+                  "bold statement"
+                ],
+                [
+                  "Yesterday, a koala crossed our school oval.",
+                  "mini-story"
+                ],
+                [
+                  "Australians use billions of plastic bags each year.",
+                  "shocking fact"
+                ],
+                [
+                  "Imagine a summer with no beach days.",
+                  "imagine"
+                ]
+              ],
+              "widths": [
+                2.2,
+                1
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Hook the right reader",
+          "columns": 2,
+          "example": {
+            "prompt": "Reader: a Prep class. Issue: litter.",
+            "steps": [
+              "Who is reading?",
+              "What would pull THEM in?",
+              "Choose the best fit"
+            ],
+            "answer": "'Can you help a hungry magpie?' Simple and about animals."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Reader: Year 3. Issue: litter. Best hook?",
+              "options": [
+                "Litter costs councils millions.",
+                "Can a lolly wrapper trap a lizard?",
+                "I will now explain litter."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "A question about an animal, in simple words, pulls young readers in."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Noah wrote this hook. Find the problem and fix it.",
+              "work": [
+                "This is about litter. I will tell you why litter is bad."
+              ],
+              "answer": "It announces the topic but doesn't pull. Fix: Every lunchtime, our oval swallows another fifty wrappers."
+            }
+          ]
+        },
+        {
+          "title": "Write hooks",
+          "columns": 1,
+          "example": {
+            "prompt": "Issue: should we ban single-use cups? Type: imagine.",
+            "steps": [
+              "Read the issue",
+              "Use the hook type",
+              "Make them need the next line"
+            ],
+            "answer": "Imagine a mountain of cups taller than our school."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write the hook for each issue, using the type given.",
+              "columns": [
+                "Issue",
+                "Type",
+                "My hook"
+              ],
+              "rows": [
+                [
+                  "Should school start later?",
+                  "question",
+                  ""
+                ],
+                [
+                  "Should zoos keep polar bears?",
+                  "mini-story",
+                  ""
+                ],
+                [
+                  "Should every school have solar panels?",
+                  "shocking fact",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Should school start later?",
+                  "question",
+                  "What if one extra hour of sleep made every lesson easier?"
+                ],
+                [
+                  "Should zoos keep polar bears?",
+                  "mini-story",
+                  "The bear paced to the fence, turned, and paced back."
+                ],
+                [
+                  "Should every school have solar panels?",
+                  "shocking fact",
+                  "The sun hits our school roof with free energy every single day."
+                ]
+              ],
+              "widths": [
+                1.1,
+                0.7,
+                1.6
+              ],
+              "rowH": 36
+            }
+          ]
+        },
+        {
+          "title": "Five hooks for your issue",
+          "columns": 1,
+          "example": {
+            "prompt": "Issue: my own.",
+            "steps": [
+              "Write one of each type",
+              "Star the best for your reader",
+              "Say why it works"
+            ],
+            "answer": "Five hooks, one starred: 'It works because my reader...'"
+          },
+          "items": [
+            {
+              "prompt": "Write five hooks for your own issue, one of each type. Star the best one for your reader and write why.",
+              "answer": "Five labelled hooks, one starred, with a reason that names the reader.",
+              "lines": 7
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: combine hooks, then make the ending echo the opening.",
+      "title": "Hook Master",
+      "subtitle": "The best openings use two hooks at once.",
+      "sections": [
+        {
+          "title": "Two hooks in one",
+          "columns": 1,
+          "example": {
+            "prompt": "Story + question: The bear paced back and forth. Would you call that living?",
+            "steps": [
+              "Start with one hook type",
+              "Finish with another",
+              "Check it pulls harder than either alone"
+            ],
+            "answer": "A mini-story that ends in a question."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Combine the two hook types for each issue.",
+              "columns": [
+                "Issue",
+                "Hooks to combine",
+                "My opening"
+              ],
+              "rows": [
+                [
+                  "Should plastic straws be banned?",
+                  "fact + question",
+                  ""
+                ],
+                [
+                  "Should kids have a later bedtime?",
+                  "imagine + bold",
+                  ""
+                ],
+                [
+                  "Should our town have a dog park?",
+                  "story + question",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Should plastic straws be banned?",
+                  "fact + question",
+                  "Straws can last hundreds of years. Is one drink worth that?"
+                ],
+                [
+                  "Should kids have a later bedtime?",
+                  "imagine + bold",
+                  "Imagine waking up rested. Kids need an extra hour."
+                ],
+                [
+                  "Should our town have a dog park?",
+                  "story + question",
+                  "Max pulled at his lead all the way home. Where can he run?"
+                ]
+              ],
+              "widths": [
+                1.1,
+                0.8,
+                1.6
+              ],
+              "rowH": 42
+            }
+          ]
+        },
+        {
+          "title": "Echo it",
+          "columns": 1,
+          "example": {
+            "prompt": "Hook: Imagine a beach you can't see for plastic. Echo: Let's keep our beaches golden.",
+            "steps": [
+              "Find the hook's picture",
+              "Bring it back at the end",
+              "Add what to do"
+            ],
+            "answer": "The last line returns to the beach."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write your best opening (two hooks combined), then the last line of your conclusion that echoes it.",
+              "answer": "A combined opening and an ending that brings back its picture or words.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, starters to finish and a frame.",
+      "title": "Hook Helper",
+      "subtitle": "Five ways to grab a reader.",
+      "sections": [
+        {
+          "title": "What kind of hook?",
+          "columns": 3,
+          "example": {
+            "prompt": "'What if dogs could vote?'",
+            "steps": [
+              "Is there a question mark?",
+              "Yes",
+              "It's a question hook"
+            ],
+            "answer": "question"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Imagine a school with no bins.",
+              "options": [
+                "question",
+                "imagine",
+                "story"
+              ],
+              "answer": 1,
+              "hint": "Look at the first word."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Do you like hot classrooms?",
+              "options": [
+                "question",
+                "imagine",
+                "story"
+              ],
+              "answer": 0,
+              "hint": "Look at the end."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Last week, a possum ate my lunch.",
+              "options": [
+                "question",
+                "imagine",
+                "story"
+              ],
+              "answer": 2,
+              "hint": "Something that happened."
+            }
+          ]
+        },
+        {
+          "title": "Finish the starters",
+          "columns": 1,
+          "example": {
+            "prompt": "Imagine...",
+            "steps": [
+              "Read the starter",
+              "Think of your issue",
+              "Finish it"
+            ],
+            "answer": "Imagine a playground with no shade."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Finish each hook for your issue.",
+              "columns": [
+                "Starter",
+                "My hook"
+              ],
+              "rows": [
+                [
+                  "Imagine...",
+                  "Imagine walking the same twenty steps for thirty years."
+                ],
+                [
+                  "Have you ever...?",
+                  ""
+                ],
+                [
+                  "Every year, ...",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Imagine...",
+                  "Imagine walking the same twenty steps for thirty years."
+                ],
+                [
+                  "Have you ever...?",
+                  "Have you ever seen a hungry bear?"
+                ],
+                [
+                  "Every year, ...",
+                  "Every year, the ice melts earlier."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                0.8,
+                2
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "My best hook",
+          "columns": 1,
+          "example": {
+            "prompt": "My reader: the principal.",
+            "steps": [
+              "Choose your best hook",
+              "Copy it",
+              "Finish: It works because..."
+            ],
+            "answer": "It works because the principal cares about calm afternoons."
+          },
+          "items": [
+            {
+              "prompt": "Copy your best hook. Finish: It works because my reader ___.",
+              "answer": "A hook and a reason linked to the reader.",
+              "lines": 4,
+              "hint": "Who is your reader?"
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we learn to hook a reader so hard they can't stop reading."
+    },
+    {
+      "kind": "overview",
+      "title": "For the teacher: Week 3 at a glance",
+      "lines": [
+        "This week: play with persuasion. Hooks, devices, a letter in role, a campaign poster.",
+        "Today: five kinds of hook, a hook battle, five hooks for their own issue.",
+        "Session 4 is the draw and create fun activity: a campaign poster (print one A3 sheet each if you can).",
+        "Unit anchor: Claim it. Prove it. Sell it."
+      ],
+      "notes": "Teacher-facing only. Skip it in front of the class."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Draw the five hook names and a battle bracket on the board."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to write an opening hook that makes the reader need to keep reading.",
+      "successCriteria": [
+        "I can name five kinds of hook.",
+        "I can write a hook that fits my issue and my reader.",
+        "I can choose my best hook and explain why it works."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Readers decide in one sentence whether to keep going."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Naming the hooks is where we start.",
+            "Writing a hook that fits your reader is today's main goal."
+          ]
+        ],
+        "prep": "SC1 naming hooks is reachable for all; SC2 writing a fitting hook is the core and the exit evidence; SC3 choosing and justifying is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Which video would you watch?",
+      "lines": [
+        "Hello. Today I will talk about bins.",
+        "There's a monster under our school, and it eats 40 kilograms of lunch every week."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "tv",
+            "label": "video one"
+          },
+          {
+            "name": "shocked",
+            "label": "video two"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "the second - you need to know what the monster is",
+        "beats": [
+          [
+            "SAY: Two videos about the same thing.",
+            "You only have time to watch one."
+          ],
+          [
+            "ASK: Which would you watch, first or second?",
+            "5 sec. Cue: Fingers at your chest, 1 or 2... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: Why can't you stop at the first sentence of video two?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: you want to know what the monster is"
+          ],
+          [
+            "SAY: The monster is our rubbish bin. Week 1 you wrote openings.",
+            "Today we make the first line impossible to ignore."
+          ]
+        ],
+        "trap": [
+          "choosing the first because it is clear.",
+          "Fix: ask would you keep reading? Student re-votes honestly."
+        ],
+        "prep": "Launch reconnects to the Week 1 opening paragraph. The bin figure is invented for the hook; say so if asked. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "hook",
+      "meaning": "An opening line that grabs the reader and won't let go.",
+      "example": "Imagine walking the same twenty steps, every day, for thirty years.",
+      "pictogram": "magnet",
+      "notes": {
+        "answer": "an opening line that grabs the reader and won't let go",
+        "beats": [
+          "POINT to the word. SAY: Hook. Say it with me. Hook.",
+          [
+            "SAY: A hook is your first line. It pulls the reader in like a magnet.",
+            "Hook, line and sinker: they swallow the whole thing."
+          ],
+          [
+            "ASK: Does the example make you want the next sentence? Why?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: yes, who walks twenty steps? why?"
+          ]
+        ],
+        "trap": [
+          "thinking a hook means a joke.",
+          "Fix: say a hook can be serious, shocking or sad. It just has to pull."
+        ],
+        "prep": "The word the session runs on. The example previews the zoo model.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "One issue, five hooks",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Hook",
+            "Should zoos keep polar bears?"
+          ],
+          [
+            "Question",
+            "Would you want to spend your whole life in a backyard?"
+          ],
+          [
+            "Shocking fact",
+            "Some wild polar bears roam areas bigger than Tasmania."
+          ],
+          [
+            "Imagine",
+            "Imagine walking the same twenty steps, every day, for thirty years."
+          ],
+          [
+            "Mini-story",
+            "The bear paced to the wall, turned, and paced back. Again."
+          ],
+          [
+            "Bold statement",
+            "A zoo is no place for a polar bear."
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "five hooks for one issue; pick the one that fits the reader",
+        "beats": [
+          [
+            "SAY: My issue: should zoos keep polar bears? I'll open it five ways.",
+            "READ each hook aloud, slowly."
+          ],
+          [
+            "POINT to Shocking fact.",
+            "SAY: This one's true and surprising. Bigger than Tasmania. I'd use it for adults."
+          ],
+          [
+            "POINT to Mini-story.",
+            "SAY: This one makes you feel it. I'd use it for kids my age."
+          ],
+          [
+            "ASK: Which hook would you choose for our principal?",
+            "10 sec. Cue: Fingers at your chest, 1 to 5... show me.",
+            "EXPECT: 2 or 5. ACCEPT: any with a reason"
+          ]
+        ],
+        "trap": [
+          "choosing the hook they like, not the one the reader would like.",
+          "Fix: ask who's reading? Student re-chooses for that reader."
+        ],
+        "stretch": "Combine two hooks into one opening.",
+        "help": "Start with the bold statement: it's the easiest to write.",
+        "prep": "The model. Critical feature: a hook makes the reader need the next sentence, and fits the audience.",
+        "sources": "SOURCES: polar bear home ranges vary widely; some exceed Tasmania's area (Polar Bears International).",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Name that hook",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "read the first two words; they usually give it away",
+      "followUp": "cold call one student: what gave it away?",
+      "items": [
+        {
+          "text": "Have you ever wondered where your chip packet goes after the bin?",
+          "answer": "1 - question",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Every minute, about a garbage truck of plastic enters the ocean.",
+          "answer": "2 - shocking fact",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Imagine a beach where you can't see the sand for plastic.",
+          "answer": "3 - imagine",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "Last week, a girl at the beach untangled a plastic bag from a seagull's leg.",
+          "answer": "4 - mini-story",
+          "expect": "4 fingers"
+        },
+        {
+          "text": "Plastic bags should be history.",
+          "answer": "5 - bold statement",
+          "expect": "5 fingers"
+        }
+      ],
+      "notes": {
+        "say": [
+          "1 question, 2 shocking fact, 3 imagine, 4 mini-story, 5 bold.",
+          "New topic: plastic."
+        ],
+        "trap": [
+          "calling the mini-story a fact because it could be true.",
+          "Fix: ask is it telling what happened to someone? Then it's a story."
+        ],
+        "stretch": "Say which hook fits a Prep audience best.",
+        "help": "Check the first two words against the board.",
+        "prep": "Guided naming on a new topic. SC1. Garbage truck a minute: Ellen MacArthur Foundation, 2016.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which hook would grab the principal?",
+      "prompt": "Issue: we need a longer lunch break.",
+      "options": [
+        {
+          "text": "Hi, my name is Sam and this is about lunch.",
+          "misconception": "introduces the writer, not the issue; nothing pulls"
+        },
+        {
+          "text": "What if ten extra minutes made every afternoon calmer?"
+        },
+        {
+          "text": "LUNCH IS WAY TOO SHORT AND IT IS NOT FAIR!!!",
+          "misconception": "shouting, not hooking; doesn't fit a principal"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - a question about what the principal cares about",
+        "beats": [
+          "SAY: Think about who's reading: the principal.",
+          [
+            "ASK: Which hook would grab the principal?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: why calmer afternoons?",
+            "Less -> ask what does a principal want? re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. It's a question about calmer afternoons, which principals care about."
+          ]
+        ],
+        "trap": [
+          "pointing to C because it shows strong feeling.",
+          "Fix: ask would the principal keep reading? Student re-chooses."
+        ],
+        "prep": "Decision point: audience fit. Under 80% means the battle uses the principal as the judge.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "We Do",
+      "title": "Hook battle!",
+      "lines": [
+        "Issue: should our school ban junk food at the canteen?",
+        "Write your best hook in 60 seconds.",
+        "Battle your partner. The winners go head to head."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "timer",
+            "label": "60 seconds"
+          },
+          {
+            "name": "partners",
+            "label": "battle"
+          },
+          {
+            "name": "trophy",
+            "label": "class vote"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - any hook type that fits the reader",
+        "beats": [
+          "SAY: One issue. Sixty seconds. Your best hook.",
+          [
+            "ASK: Write your best hook on your board.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: questions, facts, imagine lines"
+          ],
+          [
+            "ASK: Read hooks to your partner. Point to the one that pulls harder.",
+            "20 sec. Cue: voices off, everyone points to the winning board.",
+            "EXPECT: one winner per pair"
+          ],
+          [
+            "ASK: Four winners read aloud. Which would you keep reading?",
+            "5 sec. Cue: Thumbs only, voices off. Thumbs up on your pick... now.",
+            "EXPECT: one clear class winner"
+          ]
+        ],
+        "trap": [
+          "voting for friends.",
+          "Fix: read the four hooks anonymously, teacher reads aloud."
+        ],
+        "stretch": "Write a second hook of a different type for the same issue.",
+        "help": "Use a Hook Starter: Have you ever wondered...?",
+        "prep": "Oral and written rehearsal with a competitive edge, 8 minutes. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Five hooks for your issue",
+      "task": "Work through your Worksheet. Finish with five hooks for your own issue, the best one starred.",
+      "where": "Main sheet",
+      "frame": "My best hook works because my reader ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "question",
+          "shocked",
+          "think",
+          "openBook",
+          "megaphone"
+        ],
+        "labels": false
+      },
+      "visualLabel": "The five hooks",
+      "notes": {
+        "answer": "five labelled hooks, one starred with a reason that names the reader",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Your issue from Week 1. Five ways in. Then you choose."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: who's your reader? Does your star fit them?",
+          [
+            "ASK: How many of your five hooks are done?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 3 or more at the halfway mark"
+          ],
+          "TIME 15 minutes. At 12, two students read their starred hook."
+        ],
+        "trap": [
+          "five hooks of the same kind.",
+          "Fix: student labels each hook with its type, rewrites any doubles."
+        ],
+        "stretch": "Extension: combine two hooks, then echo the opening at the end.",
+        "help": "Supported Worksheet: picture-clue choices, starters to finish, a frame.",
+        "prep": "Independent application. The starred hook opens their big piece in Week 4. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in five hooks for the student's issue, the best starred and justified"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "New issue: should every school have a vegetable garden?",
+        "Write one hook. Then write which kind it is."
+      ],
+      "notes": {
+        "answer": "any hook that pulls, labelled correctly, e.g. Imagine eating a tomato you grew yourself",
+        "beats": [
+          "SAY: A brand new issue. Hook me.",
+          [
+            "ASK: Write a hook and name its kind.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: e.g. What if lunch grew outside our classroom? Question."
+          ],
+          "RECORD who writes a statement that doesn't pull. Tomorrow's warm-up."
+        ],
+        "trap": [
+          "This is about vegetable gardens.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new issue. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Read your starred hook to your partner. Did they want the next sentence?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for a hook that fits its reader",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can write a hook that fits your reader?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Read your starred hook. Did your partner want more?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: yes, they asked what happened next"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

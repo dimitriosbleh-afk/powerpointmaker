@@ -1,0 +1,970 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 1,
+    "session": 1,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Big Questions from Bear Island",
+    "subtitle": "Term 4 Week 1, Session 1",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 1 Session 1",
+    "outputFolder": "T4W1_Lit_S1_Big_Questions",
+    "fileName": "Session 1 - Big Questions from Bear Island.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA02 moving beyond bare assertions by taking account of differing opinions; VC2E5LY01 present and justify an opinion; VC2E5LE02 form and share opinions on a literary text (The Last Bear)",
+      "shape": "sort then make: students sort facts from issues at speed, then turn the novel's big ideas into their own arguable questions, because choosing a real issue is what makes them want to write this term",
+      "criticalFeature": "an issue is a question fair people could disagree on, not a fact you can look up",
+      "decisionPoints": [
+        "the Fact or issue? round",
+        "the choice check: which is the best issue to argue?",
+        "the exit board: a new topic turned into an issue"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Today is Claim it: pick a side of a real issue.",
+      "catchUp": "First session of the unit, no catch-up needed. A student who misses it starts tomorrow with the Supported Worksheet."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Writing books",
+      "The class copy of The Last Bear by Hannah Gold"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 or 2",
+      "Turn and tell",
+      "Four corners"
+    ],
+    "boardSetup": [
+      "Four corner signs around the room: Strongly agree, Agree, Disagree, Strongly disagree",
+      "A class Issues Wall: a strip of butcher's paper headed Big Questions from Bear Island"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: fact or issue, make an issue, find the mistake, then claim your own big question.",
+      "title": "Big Questions",
+      "subtitle": "Facts, issues and your own big question.",
+      "sections": [
+        {
+          "title": "Fact or issue?",
+          "columns": 1,
+          "example": {
+            "prompt": "Is this a fact or an issue? Polar bears have black skin under their fur.",
+            "steps": [
+              "Can I look it up?",
+              "Could a fair person disagree?",
+              "Decide: fact or issue"
+            ],
+            "answer": "Fact. You can look it up, and nobody can fairly disagree."
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "Sort the cards: FACT or ISSUE.",
+              "cards": [
+                "Svalbard is in the Arctic.",
+                "Should people kayak near polar bears?",
+                "Sea ice is frozen sea water.",
+                "Should schools ban plastic bottles?",
+                "Seals live in the Arctic.",
+                "Is it fair to keep whales in aquariums?",
+                "Polar bears can swim.",
+                "Should kids be paid for chores?"
+              ],
+              "groups": [
+                "FACT",
+                "ISSUE"
+              ],
+              "answer": {
+                "FACT": [
+                  "Svalbard is in the Arctic.",
+                  "Sea ice is frozen sea water.",
+                  "Seals live in the Arctic.",
+                  "Polar bears can swim."
+                ],
+                "ISSUE": [
+                  "Should people kayak near polar bears?",
+                  "Should schools ban plastic bottles?",
+                  "Is it fair to keep whales in aquariums?",
+                  "Should kids be paid for chores?"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Make it an issue",
+          "columns": 1,
+          "example": {
+            "prompt": "Big idea: litter at the beach.",
+            "steps": [
+              "Who is affected?",
+              "Start with Should",
+              "Could a fair person say no?"
+            ],
+            "answer": "Should people be fined for littering at the beach?"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Turn each big idea into a should-question.",
+              "columns": [
+                "Big idea",
+                "My should-question"
+              ],
+              "rows": [
+                [
+                  "plastic in the sea",
+                  ""
+                ],
+                [
+                  "wild animals as pets",
+                  ""
+                ],
+                [
+                  "melting ice",
+                  ""
+                ],
+                [
+                  "screen time for kids",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "plastic in the sea",
+                  "Should supermarkets stop selling plastic bags?"
+                ],
+                [
+                  "wild animals as pets",
+                  "Should people be allowed to keep wild animals as pets?"
+                ],
+                [
+                  "melting ice",
+                  "Should families drive less to slow the melting ice?"
+                ],
+                [
+                  "screen time for kids",
+                  "Should kids have a daily screen time limit?"
+                ]
+              ],
+              "widths": [
+                1,
+                2
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "Spot the problem",
+          "columns": 2,
+          "example": {
+            "prompt": "Which is a real issue? A: How big is a polar bear? B: Should zoos keep polar bears?",
+            "steps": [
+              "Test A: can I look it up?",
+              "Test B: could people disagree?",
+              "Choose and give a reason"
+            ],
+            "answer": "B, because fair people could say yes or no."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which is the best issue to write about?",
+              "options": [
+                "How cold is the Arctic?",
+                "Should countries protect polar bears more?",
+                "I really like snow."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "The middle one: people could argue yes or no. The first is a fact; the last is a feeling."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Ben wrote this as his issue. Find his mistake and fix it.",
+              "work": [
+                "My issue: How many polar bears live in Canada?"
+              ],
+              "answer": "It is a fact you can look up. Fix: Should Canada do more to protect its polar bears?"
+            }
+          ]
+        },
+        {
+          "title": "Claim it",
+          "columns": 1,
+          "example": {
+            "prompt": "Issue: Should zoos keep polar bears?",
+            "steps": [
+              "Write your should-question",
+              "Claim your side: I believe...",
+              "Give three different reasons"
+            ],
+            "answer": "I believe zoos should not keep polar bears because they need huge spaces, cold and freedom."
+          },
+          "items": [
+            {
+              "prompt": "Write your own big question from The Last Bear. Claim your side, then give three reasons.",
+              "answer": "A should-question, a clear claim (I believe...) and three different reasons.",
+              "lines": 7
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: the best reason on each side, and a fair question that does not pick a side.",
+      "title": "Both Sides",
+      "subtitle": "Strong writers know the other side's best reason.",
+      "sections": [
+        {
+          "title": "The best of both sides",
+          "columns": 1,
+          "example": {
+            "prompt": "Should zoos keep polar bears?",
+            "steps": [
+              "Best YES reason",
+              "Best NO reason",
+              "Which is stronger, and why?"
+            ],
+            "answer": "YES: zoos pay for research. NO: bears need huge spaces. NO is stronger: research can happen in the wild."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write the strongest reason for each side.",
+              "columns": [
+                "Issue",
+                "Best YES reason",
+                "Best NO reason"
+              ],
+              "rows": [
+                [
+                  "Should people live on Bear Island?",
+                  "",
+                  ""
+                ],
+                [
+                  "Should tourists see polar bears up close?",
+                  "",
+                  ""
+                ],
+                [
+                  "Should kids keep a secret to protect a friend?",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Should people live on Bear Island?",
+                  "Scientists can study the ice",
+                  "The bears need it to themselves"
+                ],
+                [
+                  "Should tourists see polar bears up close?",
+                  "Visitors learn to care",
+                  "Boats disturb hunting bears"
+                ],
+                [
+                  "Should kids keep a secret to protect a friend?",
+                  "Loyalty matters",
+                  "Adults may need to know to keep them safe"
+                ]
+              ],
+              "widths": [
+                1.3,
+                1,
+                1
+              ],
+              "rowH": 46
+            }
+          ]
+        },
+        {
+          "title": "Fair to both sides",
+          "columns": 2,
+          "example": {
+            "prompt": "Which question is fair? A: Should mean councils ban dogs? B: Should councils ban dogs from beaches?",
+            "steps": [
+              "Look for words that pick a side",
+              "Remove them",
+              "Check both sides could answer"
+            ],
+            "answer": "B. 'Mean' already picks a side."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which question is fairer to both sides?",
+              "options": [
+                "Should cruel zoos be shut down?",
+                "Should zoos keep polar bears?"
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "The second. 'Cruel' already picks a side, so the question isn't fair."
+            },
+            {
+              "kind": "open",
+              "prompt": "Write a fair issue question about the Arctic. Then write one word that would make it unfair.",
+              "answer": "e.g. Should ships sail through Arctic waters? Unfair word: greedy.",
+              "lines": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: the same task with picture clues, a first answer done and sentence frames.",
+      "title": "Big Questions Helper",
+      "subtitle": "A question people argue about is an issue.",
+      "sections": [
+        {
+          "title": "Circle the issue",
+          "columns": 3,
+          "example": {
+            "prompt": "Circle the issue: A: Snow is cold. B: Should snow days close schools?",
+            "steps": [
+              "Read both",
+              "Ask: could people disagree?",
+              "Circle that one"
+            ],
+            "answer": "B"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Circle the issue.",
+              "options": [
+                "Polar bears are white.",
+                "Should we ban plastic straws?"
+              ],
+              "answer": 1,
+              "hint": "An issue is a question people argue about."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Circle the issue.",
+              "options": [
+                "Should kids have homework?",
+                "Homework is on paper."
+              ],
+              "answer": 0,
+              "hint": "Look for Should."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Circle the issue.",
+              "options": [
+                "Ice melts in the sun.",
+                "Should we protect the sea ice?"
+              ],
+              "answer": 1,
+              "hint": "Could a fair person say no?"
+            }
+          ]
+        },
+        {
+          "title": "Start with Should",
+          "columns": 1,
+          "example": {
+            "prompt": "Big idea: dogs at the beach.",
+            "steps": [
+              "Write Should",
+              "Add who and what",
+              "Add a question mark"
+            ],
+            "answer": "Should dogs be allowed on the beach?"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Finish each should-question.",
+              "columns": [
+                "Big idea",
+                "Should-question"
+              ],
+              "rows": [
+                [
+                  "plastic in the sea",
+                  "Should shops stop selling plastic bags?"
+                ],
+                [
+                  "melting ice",
+                  "Should people ________________?"
+                ],
+                [
+                  "zoos",
+                  "Should zoos __________________?"
+                ]
+              ],
+              "answers": [
+                [
+                  "plastic in the sea",
+                  "Should shops stop selling plastic bags?"
+                ],
+                [
+                  "melting ice",
+                  "Should people drive less?"
+                ],
+                [
+                  "zoos",
+                  "Should zoos keep polar bears?"
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                2
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "Claim it",
+          "columns": 1,
+          "example": {
+            "prompt": "Should zoos keep polar bears?",
+            "steps": [
+              "Pick a side",
+              "Use the frame",
+              "Add one reason"
+            ],
+            "answer": "I believe zoos should not keep polar bears because they need space."
+          },
+          "items": [
+            {
+              "prompt": "Choose one question above. Finish the frame: I believe ___ should ___ because ___.",
+              "answer": "A claim with one reason.",
+              "lines": 3,
+              "hint": "Choose the question you care about most."
+            },
+            {
+              "prompt": "Write a second reason.",
+              "answer": "A different reason.",
+              "lines": 2,
+              "hint": "Who else would agree with you?"
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the unit. One line: this term we stop learning about persuasive writing and start doing it, for real causes."
+    },
+    {
+      "kind": "overview",
+      "title": "For the teacher: Weeks 1-5 at a glance",
+      "lines": [
+        "Weeks 1-5: students apply the persuasive structure they know. Final piece: a published persuasive text on an issue from The Last Bear.",
+        "This week: find issues, take a position, see other perspectives, debate.",
+        "Today: fact or issue, then each student chooses their own big question.",
+        "Unit anchor: Claim it. Prove it. Sell it. (flag, magnifier, megaphone)",
+        "Writing every session: a quick write plus a sustained You Do in writing books."
+      ],
+      "notes": "Teacher-facing only. Skip it in front of the class. The structure students already know (introduction, body paragraphs, conclusion) is applied, not re-taught."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for students who need a first step (about one in five). Put the four corner signs up before the session."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to turn a big idea from The Last Bear into a question worth arguing about.",
+      "successCriteria": [
+        "I can tell a fact from an issue.",
+        "I can write a should-question from the novel that fair people could disagree on.",
+        "I can take a side and give three reasons that would convince someone else."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today we find the big questions hiding inside our novel."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Spotting a fact is where everyone starts.",
+            "Writing your own big question is today's main goal."
+          ]
+        ],
+        "prep": "SC1 fact or issue is reachable for all; SC2 writing an arguable should-question is the core and the exit evidence; SC3 three convincing reasons is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Thumbs up, down or sideways?",
+      "lines": [
+        "Homework should be banned.",
+        "Polar bears live in the Arctic.",
+        "Kids should get a vote in elections."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "thumbsUp",
+          "thumbsDown",
+          "think"
+        ],
+        "labels": false
+      },
+      "notes": {
+        "answer": "the middle one is a fact: nobody can disagree, so there is nothing to argue",
+        "beats": [
+          [
+            "SAY: Three statements. Show me what you think of each one.",
+            "No talking, just thumbs."
+          ],
+          [
+            "ASK: Homework should be banned. Thumbs up, down or sideways?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: a mix. Repeat for the other two."
+          ],
+          [
+            "ASK: Which one was strange to vote on? Why?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: the polar bear one, it's just true"
+          ],
+          [
+            "SAY: Last term you wrote opinions with reasons.",
+            "This term we write about things that really matter.",
+            "And it starts with finding something worth arguing about."
+          ]
+        ],
+        "trap": [
+          "saying the polar bear one is an opinion because people like bears.",
+          "Fix: ask could a fair person say no? Student checks with the atlas fact."
+        ],
+        "prep": "Launch bridges Term 3 persuasive writing (opinion plus reasons) to choosing a real issue. Brisk, 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "issue",
+      "meaning": "A question that fair people could disagree about.",
+      "example": "Should zoos keep polar bears? Some say yes, some say no.",
+      "pictogram": "scales",
+      "notes": {
+        "answer": "a question fair people could disagree about",
+        "beats": [
+          "POINT to the word. SAY: Issue. Say it with me. Issue.",
+          [
+            "SAY: An issue is a question that fair, sensible people could disagree about.",
+            "The scales show it: there's weight on both sides."
+          ],
+          [
+            "ASK: Is 'What colour is a polar bear?' an issue? Why not?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: no, you can look it up, nobody disagrees"
+          ]
+        ],
+        "trap": [
+          "thinking any question is an issue.",
+          "Fix: ask could a fair person argue the other side? Student tests it."
+        ],
+        "prep": "The word the unit runs on. The test is said here first: could a fair person disagree?",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "I Do",
+      "title": "From big idea to big question",
+      "lines": [
+        "Big idea: the sea ice is melting.",
+        "Fact question: Is the sea ice melting? (look it up)",
+        "Issue: Should people fly less to protect the sea ice? (argue it)"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "snow",
+            "label": "big idea"
+          },
+          {
+            "name": "magnifier",
+            "label": "fact"
+          },
+          {
+            "name": "scales",
+            "label": "issue"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "the issue is the should-question, because fair people could say yes or no",
+        "beats": [
+          [
+            "POINT to the big idea.",
+            "SAY: In The Last Bear, the sea ice is melting.",
+            "That's a big idea."
+          ],
+          [
+            "POINT to the fact question.",
+            "SAY: Is the ice melting? Scientists can measure that.",
+            "It's a fact. Nothing to argue."
+          ],
+          [
+            "POINT to the issue.",
+            "SAY: But should people fly less to protect it?",
+            "Some say yes. Some say flights matter too. Now we've got an issue."
+          ],
+          [
+            "ASK: What word did I start the issue with?",
+            "5 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: should"
+          ]
+        ],
+        "trap": [
+          "writing a question that has one right answer.",
+          "Fix: student says the opposite answer aloud; if it sounds silly, rewrite."
+        ],
+        "stretch": "Make a second issue from the same big idea.",
+        "help": "Start from the stem: Should people...",
+        "prep": "The model. Critical feature: an issue is a question fair people could disagree on, not a fact. Near-miss shown side by side.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Fact or issue?",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "say the opposite aloud: could a fair person believe it?",
+      "followUp": "cold call one student: how did you know?",
+      "items": [
+        {
+          "text": "Polar bears hunt seals on the sea ice.",
+          "answer": "1 - fact",
+          "expect": "1 finger, fact"
+        },
+        {
+          "text": "Should tourists be allowed to visit polar bear areas?",
+          "answer": "2 - issue",
+          "expect": "2 fingers, issue"
+        },
+        {
+          "text": "How many polar bears are left in the world?",
+          "answer": "1 - fact. It's a question, but you can look it up",
+          "expect": "1 finger, fact",
+          "say": "Fact. It's a question, but scientists can count. Tick or fix."
+        },
+        {
+          "text": "Is it right to feed a hungry wild animal?",
+          "answer": "2 - issue. No should, but people disagree",
+          "expect": "2 fingers, issue",
+          "say": "Issue. No should, but fair people disagree. Tick or fix."
+        },
+        {
+          "text": "Arctic sea ice is smaller in summer than in winter.",
+          "answer": "1 - fact",
+          "expect": "1 finger, fact"
+        },
+        {
+          "text": "Should children help make decisions about the environment?",
+          "answer": "2 - issue",
+          "expect": "2 fingers, issue"
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger for a fact. Two fingers for an issue.",
+          "Six quick ones."
+        ],
+        "trap": [
+          "calling every question an issue.",
+          "Fix: ask can we look it up? Student re-sorts."
+        ],
+        "stretch": "Turn each fact into an issue.",
+        "help": "Ask: could someone say no and still be fair?",
+        "prep": "Guided sort with the near-misses: a fact in question form, an issue with no should. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which is the best issue to argue?",
+      "options": [
+        {
+          "text": "Where is Bear Island?",
+          "misconception": "picks a fact you can look up on a map"
+        },
+        {
+          "text": "Should people be allowed to live on Bear Island?"
+        },
+        {
+          "text": "I love polar bears.",
+          "misconception": "picks a feeling, not a question others could argue"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - should people be allowed to live on Bear Island?",
+        "beats": [
+          "SAY: Three choices. Only one is a real issue.",
+          [
+            "ASK: Which is the best issue to argue?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: give me one reason someone might say no.",
+            "Less -> run the fair-person test on each, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Some people say yes, for science. Others say leave it to the animals."
+          ]
+        ],
+        "trap": [
+          "pointing to C because it's an opinion.",
+          "Fix: ask what would the other side say? Student hears there is no other side."
+        ],
+        "prep": "First decision point, on new items. Under 80% means a second run of the fact-or-issue test before students write.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Turn the big idea into an issue",
+      "routine": "boards",
+      "thinkTime": 30,
+      "pivot": "build one together from the stem Should people...",
+      "followUp": "cold call two boards: would a fair person say no?",
+      "items": [
+        {
+          "text": "Big idea: rubbish in the ocean",
+          "answer": "Should plastic bags be banned?",
+          "expect": "a should-question, e.g. Should plastic bags be banned?"
+        },
+        {
+          "text": "Big idea: wild animals in zoos",
+          "answer": "Should zoos keep polar bears?",
+          "expect": "e.g. Should zoos keep large wild animals?"
+        },
+        {
+          "text": "Big idea: keeping secrets from adults",
+          "answer": "Should kids ever keep a secret to protect someone?",
+          "expect": "e.g. Is it ever right to keep a secret from a parent?"
+        },
+        {
+          "text": "Big idea: people and wild animals as friends",
+          "answer": "Should people try to make friends with wild animals?",
+          "expect": "e.g. Should people go near wild animals?"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Your turn to make issues.",
+          "Each big idea comes from our novel. Write a question people could argue about."
+        ],
+        "trap": [
+          "writing a fact question, like Are zoos big?",
+          "Fix: student adds Should, then tests: could a fair person say no?"
+        ],
+        "stretch": "Write the question so that both sides sound reasonable.",
+        "help": "Copy the stem Should people... then finish it.",
+        "prep": "Guided making. Big ideas link to the novel without needing a passage. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "We Do",
+      "title": "Four corners: Claim it!",
+      "lines": [
+        "Should humans be allowed to live on Bear Island?",
+        "Go to your corner. Convince someone from another corner in 30 seconds."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "flag",
+            "label": "Claim it"
+          },
+          {
+            "name": "magnifier",
+            "label": "Prove it"
+          },
+          {
+            "name": "megaphone",
+            "label": "Sell it"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - any side, with a reason",
+        "beats": [
+          [
+            "POINT to the flag.",
+            "SAY: Every piece this term runs on three moves. Claim it. Prove it. Sell it.",
+            "Today we claim it."
+          ],
+          [
+            "ASK: Should humans be allowed to live on Bear Island? Decide.",
+            "10 sec. Cue: voices off, everyone points to your corner... now.",
+            "EXPECT: every arm pointing. Then everyone walks there."
+          ],
+          [
+            "ASK: Find someone from another corner. Give them your best reason.",
+            "30 sec each. Turn and tell, partner A first.",
+            "EXPECT: scientists need the island; the bears need it more"
+          ],
+          "SAY: Did anyone's reason pull someone across? That's what a good reason does."
+        ],
+        "trap": [
+          "repeating the claim as the reason.",
+          "Fix: ask why? once more, student adds a because."
+        ],
+        "stretch": "Use your opponent's reason in your reply.",
+        "help": "Start with: I think yes because... or I think no because...",
+        "prep": "Movement break and oral rehearsal before writing. Introduces the unit anchor. 5 minutes.",
+        "tag": "[We Do | Oral rehearsal | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Write your Issue Card",
+      "task": "Work through your Worksheet: sort, make issues, spot the problem, then claim your own big question.",
+      "where": "Main sheet",
+      "frame": "I believe ___ should ___ because ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "flag",
+          "pen",
+          "star"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Claim it",
+      "notes": {
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Now it's yours. Choose a question you actually care about.",
+            "That's the one you'll write best."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Read the question first: could a fair person say no?",
+          [
+            "TIME 12 minutes.",
+            "At 8 minutes, two students read their question for the Issues Wall."
+          ]
+        ],
+        "trap": [
+          "three reasons that say the same thing.",
+          "Fix: ask who each reason would convince, student swaps one out."
+        ],
+        "stretch": "Extension: the best reason on both sides, and a fair question.",
+        "help": "Supported Worksheet: picture clues, a first answer done, sentence frames.",
+        "prep": "Independent application. The Issue Card is the seed for the week and is reused on Thursday's debate. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in the student's own should-question, claim and three reasons"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "New topic: mobile phones at school. Turn it into an issue people would argue over.",
+        "Which side are you on? Write one sentence."
+      ],
+      "notes": {
+        "answer": "e.g. Should mobile phones be banned at school? Claim with a side",
+        "beats": [
+          "SAY: A brand new topic. Show me you can make it into an issue.",
+          [
+            "ASK: Write an issue question about phones at school, then your side.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: Should phones be banned at school? I believe they should because..."
+          ],
+          "RECORD who writes a fact question, like How many kids have phones? Tomorrow's small group."
+        ],
+        "trap": [
+          "writing a fact question about phones.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a topic no slide used. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner your big question and the reason most likely to change someone's mind.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for a real should-question and a reason that names who it convinces",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can turn a big idea into an issue?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          [
+            "RECORD each thumb down beside the exit boards.",
+            "A thumb up with a fact question on the board matters most."
+          ],
+          [
+            "ASK: Tell your partner your big question and your strongest reason.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: Should zoos keep polar bears? No, because they walk huge distances"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Tomorrow's small group comes from both. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

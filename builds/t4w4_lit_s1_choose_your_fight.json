@@ -1,0 +1,954 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 4,
+    "session": 1,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Choose Your Fight",
+    "subtitle": "Term 4 Week 4, Session 1",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 4 Session 1",
+    "outputFolder": "T4W4_Lit_S1_Choose_Your_Fight",
+    "fileName": "Session 1 - Choose Your Fight.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY10 creating texts with relevant, sequenced ideas and a structure for topic, purpose and audience; VC2E5LA02 using authoritative sources; VC2E5LE02 opinions on The Last Bear",
+      "shape": "model a plan, test audience fit, then plan: students see a full plan, judge reasons by who reads them, then plan their own big piece and conference with the teacher, because a strong plan is what makes the next three drafting sessions flow",
+      "criticalFeature": "the audience decides which reasons and which words will work",
+      "decisionPoints": [
+        "the Which form fits? round",
+        "the choice check: the reason that convinces this audience",
+        "the plan conference and the exit board"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. The plan puts all three in order for one reader.",
+      "catchUp": "Missed Weeks 1-3? Give the planner and the model plan. They choose question A, B or C from the Week 1 Issue Card Scaffold and use the Arctic Fact Cards."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Writing books with Weeks 1-3 work",
+      "Mini-whiteboards and markers",
+      "Arctic Fact Cards and Power Word Bank from Week 2"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1, 2 or 3",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "The big piece structure: introduction, body 1, body 2, answer back, conclusion",
+      "A conference list: names ticked when each plan is checked"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: match form to reader, choose reasons for a reader, then plan your big piece.",
+      "title": "Choose Your Fight",
+      "subtitle": "Plan it for ONE reader. Strongest reason last.",
+      "sections": [
+        {
+          "title": "Which form fits?",
+          "columns": 1,
+          "example": {
+            "prompt": "Reader: everyone at our school.",
+            "steps": [
+              "Who is the reader?",
+              "Where would they read it?",
+              "Choose the form"
+            ],
+            "answer": "an opinion article in the newsletter"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Choose the best form: letter, opinion article or open letter.",
+              "columns": [
+                "Reader",
+                "Form"
+              ],
+              "rows": [
+                [
+                  "the school principal",
+                  ""
+                ],
+                [
+                  "readers of the local paper",
+                  ""
+                ],
+                [
+                  "anyone in Australia",
+                  ""
+                ],
+                [
+                  "the Prime Minister",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "the school principal",
+                  "letter"
+                ],
+                [
+                  "readers of the local paper",
+                  "opinion article"
+                ],
+                [
+                  "anyone in Australia",
+                  "open letter"
+                ],
+                [
+                  "the Prime Minister",
+                  "letter (or open letter)"
+                ]
+              ],
+              "widths": [
+                2,
+                1
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Reasons for THIS reader",
+          "columns": 2,
+          "example": {
+            "prompt": "Issue: longer lunch. Reader: the principal.",
+            "steps": [
+              "What does the reader care about?",
+              "Find a reason that matches",
+              "Put it last if it's strongest"
+            ],
+            "answer": "Calmer afternoons mean more learning."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Issue: a school dog park. Reader: parents. Which reason fits best?",
+              "options": [
+                "Dogs are cute.",
+                "Kids walk more when the dog comes too.",
+                "I want one."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "Parents care about their kids' health; the other two are about the writer."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Leo planned this for the council. Find the problem and fix it.",
+              "work": [
+                "Reason 1: I love skating.",
+                "Reason 2: My friends love skating."
+              ],
+              "answer": "Both reasons are about Leo, not the council. Fix: A skate park keeps kids off busy roads."
+            }
+          ]
+        },
+        {
+          "title": "My big piece plan",
+          "columns": 1,
+          "example": {
+            "prompt": "Should zoos keep polar bears?",
+            "steps": [
+              "Reader and form first",
+              "Three reasons, strongest last, each with proof",
+              "The other side and my call to action"
+            ],
+            "answer": "A zoo director, a letter, three reasons with proof, the other side answered, and one clear action."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Plan your big piece.",
+              "columns": [
+                "Part",
+                "My plan"
+              ],
+              "rows": [
+                [
+                  "My issue",
+                  ""
+                ],
+                [
+                  "My reader",
+                  ""
+                ],
+                [
+                  "My form",
+                  ""
+                ],
+                [
+                  "My position (Claim it)",
+                  ""
+                ],
+                [
+                  "Reason 1 + proof",
+                  ""
+                ],
+                [
+                  "Reason 2 + proof",
+                  ""
+                ],
+                [
+                  "Reason 3 (strongest) + proof",
+                  ""
+                ],
+                [
+                  "The other side says... I answer...",
+                  ""
+                ],
+                [
+                  "My call to action",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "My issue",
+                  "a should-question"
+                ],
+                [
+                  "My reader",
+                  "one person or group"
+                ],
+                [
+                  "My form",
+                  "letter, opinion article or open letter"
+                ],
+                [
+                  "My position (Claim it)",
+                  "high modality"
+                ],
+                [
+                  "Reason 1 + proof",
+                  "reason with a sourced fact"
+                ],
+                [
+                  "Reason 2 + proof",
+                  "a different reason with proof"
+                ],
+                [
+                  "Reason 3 (strongest) + proof",
+                  "the reason this reader cares about most"
+                ],
+                [
+                  "The other side says... I answer...",
+                  "a fair rebuttal"
+                ],
+                [
+                  "My call to action",
+                  "one clear action"
+                ]
+              ],
+              "widths": [
+                1,
+                2
+              ],
+              "rowH": 32
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: plan the same issue for a second reader, then compare.",
+      "title": "Two Readers",
+      "subtitle": "Change the reader, change the reasons.",
+      "sections": [
+        {
+          "title": "A second reader",
+          "columns": 1,
+          "example": {
+            "prompt": "Issue: zoos. Reader 1: a zoo director. Reader 2: Year 3 students.",
+            "steps": [
+              "What does reader 2 care about?",
+              "Choose reasons for them",
+              "Notice what changed"
+            ],
+            "answer": "Year 3: bears are lonely; they need room to play."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Plan three reasons for a second reader.",
+              "columns": [
+                "Reason",
+                "For my second reader"
+              ],
+              "rows": [
+                [
+                  "1",
+                  ""
+                ],
+                [
+                  "2",
+                  ""
+                ],
+                [
+                  "3 (strongest)",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "1",
+                  "a reason this reader cares about"
+                ],
+                [
+                  "2",
+                  "a second, different reason"
+                ],
+                [
+                  "3 (strongest)",
+                  "the reason that matters most to them"
+                ]
+              ],
+              "widths": [
+                0.6,
+                2
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "Compare",
+          "columns": 1,
+          "example": {
+            "prompt": "Director: money and visitors. Year 3: animals and fairness.",
+            "steps": [
+              "Which reader is harder to persuade?",
+              "Why?",
+              "What would you change in your words?"
+            ],
+            "answer": "The director: I'd use facts and costs, not feelings."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Which of your two readers is harder to persuade? Explain why, and what you would change in your words.",
+              "answer": "A choice, a reason linked to the reader, and specific word changes.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a partly filled plan and a frame.",
+      "title": "Plan Helper",
+      "subtitle": "One reader. Three reasons. One call to action.",
+      "sections": [
+        {
+          "title": "Which form?",
+          "columns": 3,
+          "example": {
+            "prompt": "Reader: the principal.",
+            "steps": [
+              "One person?",
+              "Yes",
+              "Letter"
+            ],
+            "answer": "letter"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Reader: the school council.",
+              "options": [
+                "letter",
+                "article"
+              ],
+              "answer": 0,
+              "hint": "A group you write to."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Reader: everyone in town.",
+              "options": [
+                "letter",
+                "article"
+              ],
+              "answer": 1,
+              "hint": "Lots of people read it."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Reader: your local MP.",
+              "options": [
+                "letter",
+                "article"
+              ],
+              "answer": 0,
+              "hint": "One person."
+            }
+          ]
+        },
+        {
+          "title": "My plan",
+          "columns": 1,
+          "example": {
+            "prompt": "Should zoos keep polar bears?",
+            "steps": [
+              "Pick your issue",
+              "Pick your reader",
+              "Fill in each row"
+            ],
+            "answer": "Issue: zoos. Reader: zoo director. Form: letter."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in your plan. Use your fact cards for proof.",
+              "columns": [
+                "Part",
+                "My plan"
+              ],
+              "rows": [
+                [
+                  "My issue",
+                  ""
+                ],
+                [
+                  "My reader",
+                  ""
+                ],
+                [
+                  "I believe...",
+                  ""
+                ],
+                [
+                  "Reason 1 + proof",
+                  ""
+                ],
+                [
+                  "Reason 2 + proof",
+                  ""
+                ],
+                [
+                  "Please...",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "My issue",
+                  "a should-question"
+                ],
+                [
+                  "My reader",
+                  "one person or group"
+                ],
+                [
+                  "I believe...",
+                  "a clear claim"
+                ],
+                [
+                  "Reason 1 + proof",
+                  "a reason with a fact"
+                ],
+                [
+                  "Reason 2 + proof",
+                  "another reason"
+                ],
+                [
+                  "Please...",
+                  "one action"
+                ]
+              ],
+              "hint": "Use the issue from your Week 1 Issue Card.",
+              "widths": [
+                0.9,
+                2
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "Why this reason?",
+          "columns": 1,
+          "example": {
+            "prompt": "Reader: principal.",
+            "steps": [
+              "My reader cares about ___",
+              "So my best reason is ___",
+              "Write it"
+            ],
+            "answer": "My reader cares about learning, so my best reason is calmer afternoons."
+          },
+          "items": [
+            {
+              "prompt": "Finish: My reader cares about ___, so my strongest reason is ___.",
+              "answer": "A reason linked to the reader.",
+              "lines": 3,
+              "hint": "Think about the reader's job."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: this week you write your big piece, and today you choose your fight."
+    },
+    {
+      "kind": "overview",
+      "title": "For the teacher: the big piece",
+      "lines": [
+        "Structure (modelled and expected): introduction, body 1, body 2, answer back, conclusion.",
+        "Flexible: each student chooses issue, reader, form (letter, opinion article, open letter) and reasons.",
+        "This week: S1 plan, S2 introduction, S3 body paragraphs, S4 answer back and conclusion.",
+        "Week 5: feedback, revise, edit, publish to a real audience.",
+        "Unit anchor: Claim it. Prove it. Sell it."
+      ],
+      "notes": "Teacher-facing only. The piece is highly structured by paragraph; students choose the content. Decide the publishing audience this week (another class, the newsletter, a real organisation)."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone (its last section is the big piece plan, kept beside the draft all week), the Extension for early finishers and the Supported Worksheet for those who need it."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to plan a persuasive piece for a real reader.",
+      "successCriteria": [
+        "I can choose my issue, my reader and my form.",
+        "I can plan three reasons with evidence that would convince my reader.",
+        "I can plan words and a tone that suit my reader."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Real writers write for real readers. So will you."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Choosing your issue and reader is where we start.",
+            "Planning reasons that convince that reader is today's main goal."
+          ]
+        ],
+        "prep": "SC1 choosing issue, reader and form is reachable for all; SC2 reasons for that reader is the core and the exit evidence; SC3 tone is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Same request, different reader",
+      "lines": [
+        "Can I please stay up later? I'll still be ready for school.",
+        "Dear Principal, I am writing to ask for a later finish to lunch.",
+        "bro pls can u save me a seat"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "family",
+            "label": "parent"
+          },
+          {
+            "name": "teacher",
+            "label": "principal"
+          },
+          {
+            "name": "student",
+            "label": "a mate"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "1 parent, 2 principal, 3 a mate - the words change with the reader",
+        "beats": [
+          [
+            "SAY: Three messages. Three different readers.",
+            "You can tell who each one is for."
+          ],
+          [
+            "ASK: Which one is written to the principal?",
+            "5 sec. Cue: Fingers at your chest, 1, 2 or 3... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: What gave it away?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: Dear Principal; I am writing; full words, no slang"
+          ],
+          "SAY: Before you write a word of your big piece, you choose your reader."
+        ],
+        "trap": [
+          "thinking audience only changes the greeting.",
+          "Fix: ask what else changed? Student finds slang, length, reasons."
+        ],
+        "prep": "Low-coupling launch on audience. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "form",
+      "meaning": "The type of text you write: a letter, an article, a speech.",
+      "example": "To persuade the council, a formal letter is the right form.",
+      "pictogram": "newspaper",
+      "notes": {
+        "answer": "the type of text you write",
+        "beats": [
+          "POINT to the word. SAY: Form. Say it with me. Form.",
+          [
+            "SAY: Form is the type of text. A letter, an article, a speech.",
+            "You choose the form that will reach your reader."
+          ],
+          [
+            "ASK: To persuade the whole school, which form would you choose?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: an article in the newsletter; a speech at assembly"
+          ]
+        ],
+        "trap": [
+          "confusing form with a printed form you fill in.",
+          "Fix: say here form means the type of writing."
+        ],
+        "prep": "Three forms on offer this week: letter, opinion article, open letter. Speech comes in Week 6.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Watch me plan for one reader",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Plan",
+            "Should zoos keep polar bears?"
+          ],
+          [
+            "Reader and form",
+            "a zoo director - a formal letter"
+          ],
+          [
+            "Position",
+            "Zoos should stop bringing in new polar bears."
+          ],
+          [
+            "Reasons",
+            "space, heat, and money better spent in the wild"
+          ],
+          [
+            "Other side",
+            "zoos teach kids - but so can cameras"
+          ],
+          [
+            "Call to action",
+            "Fund wild polar bear research instead."
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "issue, reader, form, position, three reasons, the other side, the action",
+        "beats": [
+          [
+            "POINT to Reader and form.",
+            "SAY: My reader is a zoo director. A director runs a business and loves animals."
+          ],
+          [
+            "POINT to Reasons.",
+            "SAY: So my strongest reason is money: better spent in the wild.",
+            "That's what a director can actually act on. Strongest goes last."
+          ],
+          [
+            "POINT to Call to action.",
+            "SAY: Something a director can do: fund research. Not shut every zoo."
+          ],
+          [
+            "ASK: Why did I save the money reason for last?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: it matters most to the director; end strong"
+          ]
+        ],
+        "trap": [
+          "planning reasons that convince the writer, not the reader.",
+          "Fix: student writes their reader's name above each reason and checks it."
+        ],
+        "stretch": "Plan a second, different reader and see which reasons change.",
+        "help": "Copy the plan's shape; fill one row at a time.",
+        "prep": "The model plan. Critical feature: the audience decides which reasons and words will work.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Which form fits the reader?",
+      "routine": "fingers",
+      "thinkTime": 6,
+      "pivot": "ask: where would this reader actually read it?",
+      "followUp": "cold call one student: why that form?",
+      "items": [
+        {
+          "text": "Reader: the whole school community",
+          "answer": "2 - opinion article in the newsletter",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Reader: the local council",
+          "answer": "1 - a formal letter",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Reader: anyone in Australia who might read it",
+          "answer": "3 - an open letter",
+          "expect": "3 fingers",
+          "say": "An open letter is to everyone, published for all to read. Tick or fix."
+        },
+        {
+          "text": "Reader: the Minister for the Environment",
+          "answer": "1 - a formal letter",
+          "expect": "1 finger. ACCEPT: 3"
+        }
+      ],
+      "notes": {
+        "say": [
+          "1 letter, 2 opinion article, 3 open letter.",
+          "Choose the form that would reach each reader."
+        ],
+        "trap": [
+          "choosing the form they like best for every reader.",
+          "Fix: ask where would this reader see it? Student re-chooses."
+        ],
+        "stretch": "Name the greeting each form would start with.",
+        "help": "Letters go to one person or group; articles go to everyone.",
+        "prep": "Guided choice of form. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which reason would convince THIS reader?",
+      "prompt": "Issue: our school needs a vegetable garden. Reader: the school council.",
+      "options": [
+        {
+          "text": "Gardens are fun and I love getting dirty.",
+          "misconception": "a reason that convinces the writer, not the reader"
+        },
+        {
+          "text": "A garden can supply the canteen and teach science outside."
+        },
+        {
+          "text": "Every single school already has one.",
+          "misconception": "a sneaky trick; untrue and easy to dismiss"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - it meets what a school council cares about: money and learning",
+        "beats": [
+          "SAY: Think about the reader: a school council. What do they care about?",
+          [
+            "ASK: Which reason would convince this reader?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: who would A convince?",
+            "Less -> list what a council cares about, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Canteen supplies and science. That's what a council can say yes to."
+          ]
+        ],
+        "trap": [
+          "pointing to A because it's honest.",
+          "Fix: ask does the council care that you like dirt? Student re-chooses."
+        ],
+        "prep": "Decision point before planning. Under 80% means students write their reader's name at the top of the planner before any reasons.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "What does this reader care about?",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "picture their job: what keeps them up at night?",
+      "followUp": "cold call one board: so which reason would you lead with?",
+      "items": [
+        {
+          "text": "Reader: the principal",
+          "answer": "learning, safety, happy students",
+          "expect": "learning, safety, behaviour"
+        },
+        {
+          "text": "Reader: parents at our school",
+          "answer": "their kids' safety, health and cost",
+          "expect": "safety, health, money"
+        },
+        {
+          "text": "Reader: the local council",
+          "answer": "residents, safety, the budget",
+          "expect": "residents, roads, cost"
+        },
+        {
+          "text": "Reader: a Year 3 class",
+          "answer": "fun, fairness, animals, things they can do",
+          "expect": "fun, fair, animals"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Before you plan, know your reader.",
+          "Write two things each reader cares about."
+        ],
+        "trap": [
+          "writing what the student cares about.",
+          "Fix: ask what is their job? Student answers as the reader."
+        ],
+        "stretch": "Write the word you'd avoid with each reader.",
+        "help": "Think: what does this person spend their day doing?",
+        "prep": "Guided audience analysis just before planning. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Plan your big piece",
+      "task": "Work through your Worksheet. Finish by planning your big piece for one reader.",
+      "where": "Main sheet",
+      "frame": "My reader cares about ___, so my strongest reason is ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "target",
+          "clipboard",
+          "flag"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Reader first",
+      "notes": {
+        "answer": "a complete planner aimed at one named reader",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Use your issue from Week 1, or a new one you care about more.",
+            "It must connect to The Last Bear's big ideas."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          [
+            "CONFERENCE. Two minutes per student, tick the board list.",
+            "Check: one reader, three different reasons, a source for each."
+          ],
+          [
+            "ASK: How many rows of your planner are done?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 4 or more by 15 minutes"
+          ],
+          "TIME 22 minutes."
+        ],
+        "trap": [
+          "three reasons that are really one reason three ways.",
+          "Fix: ask what's different about reason 2? Student swaps one for a fact card."
+        ],
+        "stretch": "Extension: plan for a second reader, then compare.",
+        "help": "Supported Worksheet: picture-clue choices, a partly filled plan, a frame.",
+        "prep": "Independent planning with teacher conferences. The planner travels with the draft all week. SC1 and SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3, 4]"
+      },
+      "extendedTask": "a worksheet ending in a full plan for the big persuasive piece"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Issue: build a bike path to our school. Reader: the local council.",
+        "Write one reason that would convince THAT reader."
+      ],
+      "notes": {
+        "answer": "e.g. fewer cars at drop-off means safer roads and less traffic for residents",
+        "beats": [
+          "SAY: A new issue and reader. Think like the council.",
+          [
+            "ASK: Write one reason that would convince the council.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: safety, traffic, health, cost - something a council cares about"
+          ],
+          "RECORD who writes a reason about themselves. Conference first tomorrow."
+        ],
+        "trap": [
+          "Because I like riding my bike.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new issue. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner your reader and why your strongest reason will work on them.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for a reason linked to what the reader cares about",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How ready is your plan?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down. Conference them first tomorrow.",
+          [
+            "ASK: Tell your partner your reader and your strongest reason.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: the principal, because it saves teaching time"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards and conference list. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

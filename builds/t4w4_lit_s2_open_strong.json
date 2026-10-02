@@ -1,0 +1,928 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 4,
+    "session": 2,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Open Strong",
+    "subtitle": "Term 4 Week 4, Session 2",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 4 Session 2",
+    "outputFolder": "T4W4_Lit_S2_Open_Strong",
+    "fileName": "Session 2 - Open Strong.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA03 how persuasive texts are organised into stages; VC2E5LA04 using the start of a paragraph to give prominence to the message; VC2E5LY10 creating texts with sequenced ideas for an audience",
+      "shape": "order, label, draft: students order a shuffled introduction, label the parts of a new one, then draft their own, because the four moves are quick to learn and the drafting time is what matters",
+      "criticalFeature": "by the end of the introduction the reader knows exactly what you want and why",
+      "decisionPoints": [
+        "the Which part? round",
+        "the choice check: what is missing?",
+        "the exit board: a missing preview written"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. The introduction sells first, then claims, then previews the proof.",
+      "catchUp": "Missed Session 1? Five-minute plan with the teacher: issue, reader, position, three reasons. Then use the Introduction Frame."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Big piece plan (Session 1 Worksheet)",
+      "Writing books (draft on every second line)",
+      "Mini-whiteboards and markers"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 to 4",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "The four parts of an introduction: 1 hook, 2 context, 3 position, 4 preview",
+      "Drafting rule on the board: skip a line, so there is room to revise in Week 5"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: label the parts, find what's missing, write previews, then plan your own introduction.",
+      "title": "Open Strong",
+      "subtitle": "Hook, context, position, preview.",
+      "sections": [
+        {
+          "title": "Which part?",
+          "columns": 1,
+          "example": {
+            "prompt": "'Right now, our pool closes at 4 pm.'",
+            "steps": [
+              "Does it pull? Hook",
+              "Does it explain what's happening? Context",
+              "Claim or list of reasons?"
+            ],
+            "answer": "context"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Label each sentence: hook, context, position or preview.",
+              "columns": [
+                "Sentence",
+                "Part"
+              ],
+              "rows": [
+                [
+                  "Our pool should stay open until 7 pm.",
+                  ""
+                ],
+                [
+                  "What if summer evenings were spent splashing, not scrolling?",
+                  ""
+                ],
+                [
+                  "Longer hours mean fitter kids, safer swimming and happier families.",
+                  ""
+                ],
+                [
+                  "Right now, the pool shuts at 4 pm, just as school ends.",
+                  ""
+                ],
+                [
+                  "Imagine a 35-degree evening with nowhere to cool off.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Our pool should stay open until 7 pm.",
+                  "position"
+                ],
+                [
+                  "What if summer evenings were spent splashing, not scrolling?",
+                  "hook"
+                ],
+                [
+                  "Longer hours mean fitter kids, safer swimming and happier families.",
+                  "preview"
+                ],
+                [
+                  "Right now, the pool shuts at 4 pm, just as school ends.",
+                  "context"
+                ],
+                [
+                  "Imagine a 35-degree evening with nowhere to cool off.",
+                  "hook"
+                ]
+              ],
+              "widths": [
+                2.4,
+                0.8
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "What's missing?",
+          "columns": 2,
+          "example": {
+            "prompt": "Hook, context, position... and?",
+            "steps": [
+              "Count the four parts",
+              "Find the gap",
+              "Name it"
+            ],
+            "answer": "the preview"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "'Have you ever tripped on our broken path? It has been cracked for two years. The council must fix it.' What's missing?",
+              "options": [
+                "hook",
+                "position",
+                "preview"
+              ],
+              "answer": 2,
+              "reason": true,
+              "explain": "There is no preview of the reasons coming."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Ella's preview is too long. Find the problem and fix it.",
+              "work": [
+                "Gardens give food, shade, science, calm, birds, bees, jobs and fun."
+              ],
+              "answer": "Eight reasons is a list, not a preview. Fix: A garden feeds our canteen, teaches science and calms busy minds."
+            }
+          ]
+        },
+        {
+          "title": "Preview it",
+          "columns": 1,
+          "example": {
+            "prompt": "Position: we need more bins. Reasons: less litter, fewer pests, a cleaner oval.",
+            "steps": [
+              "Cut each reason to a few words",
+              "Strongest last",
+              "Join with commas and and"
+            ],
+            "answer": "More bins mean less litter, fewer pests and, most importantly, a cleaner oval."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write a one-line preview for each position.",
+              "columns": [
+                "Position and reasons",
+                "My preview"
+              ],
+              "rows": [
+                [
+                  "Ban phones at lunch: play, friendships, rest for eyes",
+                  ""
+                ],
+                [
+                  "Start school later: sleep, focus, safer mornings",
+                  ""
+                ],
+                [
+                  "Plant more trees: shade, birds, cooler rooms",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Ban phones at lunch: play, friendships, rest for eyes",
+                  "Phone-free lunches mean more play, real friendships and rested eyes."
+                ],
+                [
+                  "Start school later: sleep, focus, safer mornings",
+                  "A later start means more sleep, sharper focus and safer mornings."
+                ],
+                [
+                  "Plant more trees: shade, birds, cooler rooms",
+                  "Trees bring shade, birds and, most importantly, cooler classrooms."
+                ]
+              ],
+              "widths": [
+                1.2,
+                1.6
+              ],
+              "rowH": 36
+            }
+          ]
+        },
+        {
+          "title": "Plan your introduction",
+          "columns": 1,
+          "example": {
+            "prompt": "Zoo letter",
+            "steps": [
+              "Hook from Week 3",
+              "Context: what's happening",
+              "Position and preview from your plan"
+            ],
+            "answer": "Hook: Imagine twenty steps... Position: stop bringing in new bears."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Plan your four parts in a few words each. Then draft it in your writing book, every second line.",
+              "columns": [
+                "Part",
+                "My notes"
+              ],
+              "rows": [
+                [
+                  "Hook",
+                  ""
+                ],
+                [
+                  "Context",
+                  ""
+                ],
+                [
+                  "Position",
+                  ""
+                ],
+                [
+                  "Preview",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Hook",
+                  "the starred hook from Week 3"
+                ],
+                [
+                  "Context",
+                  "one or two sentences: what's happening"
+                ],
+                [
+                  "Position",
+                  "the claim, high modality"
+                ],
+                [
+                  "Preview",
+                  "three reasons, strongest last"
+                ]
+              ],
+              "widths": [
+                0.6,
+                2.2
+              ],
+              "rowH": 30
+            }
+          ]
+        }
+      ],
+      "tip": "Drafted it? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: link the four parts smoothly, then write the opening for a second reader.",
+      "title": "Opening Moves",
+      "subtitle": "Great introductions flow.",
+      "sections": [
+        {
+          "title": "Make it flow",
+          "columns": 1,
+          "example": {
+            "prompt": "Hook: Imagine twenty steps. Context: In the wild, bears roam hundreds of kilometres.",
+            "steps": [
+              "Read the hook and context",
+              "Add a linking word or phrase",
+              "Check it flows"
+            ],
+            "answer": "Imagine twenty steps a day. Yet in the wild, a bear roams hundreds of kilometres."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Join each pair so they flow. Use a linking word or phrase.",
+              "columns": [
+                "Sentence 1",
+                "Sentence 2",
+                "Joined smoothly"
+              ],
+              "rows": [
+                [
+                  "What if lunch were longer?",
+                  "Right now it is 40 minutes.",
+                  ""
+                ],
+                [
+                  "Imagine a shady playground.",
+                  "Ours has two small trees.",
+                  ""
+                ],
+                [
+                  "Have you seen our river?",
+                  "Rubbish floats there daily.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "What if lunch were longer?",
+                  "Right now it is 40 minutes.",
+                  "What if lunch were longer? Right now, it lasts only 40 minutes."
+                ],
+                [
+                  "Imagine a shady playground.",
+                  "Ours has two small trees.",
+                  "Imagine a shady playground. Sadly, ours has just two small trees."
+                ],
+                [
+                  "Have you seen our river?",
+                  "Rubbish floats there daily.",
+                  "Have you seen our river? Every day, rubbish floats past."
+                ]
+              ],
+              "widths": [
+                1,
+                1,
+                1.6
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "A second reader",
+          "columns": 1,
+          "example": {
+            "prompt": "Same issue, younger reader.",
+            "steps": [
+              "Keep the four parts",
+              "Change the words",
+              "Keep it short"
+            ],
+            "answer": "Year 3: Polar bears need lots of room. Zoos are too small."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write your introduction again for a Year 3 class. Keep all four parts.",
+              "answer": "Four parts in short, simple sentences.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, starters for each part and a frame.",
+      "title": "Introduction Helper",
+      "subtitle": "Four parts: hook, context, position, preview.",
+      "sections": [
+        {
+          "title": "Which part?",
+          "columns": 3,
+          "example": {
+            "prompt": "'We must fix the path.'",
+            "steps": [
+              "Does it say what should happen?",
+              "Yes",
+              "Position"
+            ],
+            "answer": "position"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Imagine a beach with no rubbish.",
+              "options": [
+                "hook",
+                "position"
+              ],
+              "answer": 0,
+              "hint": "Does it pull you in?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Our school must plant trees.",
+              "options": [
+                "hook",
+                "position"
+              ],
+              "answer": 1,
+              "hint": "Look for must."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Have you ever been too hot?",
+              "options": [
+                "hook",
+                "position"
+              ],
+              "answer": 0,
+              "hint": "A question to pull you in."
+            }
+          ]
+        },
+        {
+          "title": "My four parts",
+          "columns": 1,
+          "example": {
+            "prompt": "Zoos",
+            "steps": [
+              "Hook: Imagine...",
+              "Context: Right now...",
+              "Position: I am writing to ask..."
+            ],
+            "answer": "Imagine twenty steps. Right now, bears live in small zoos. I am writing to ask you to stop."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Finish each starter for your issue.",
+              "columns": [
+                "Part",
+                "Starter"
+              ],
+              "rows": [
+                [
+                  "Hook",
+                  "Imagine ..."
+                ],
+                [
+                  "Context",
+                  "Right now, ..."
+                ],
+                [
+                  "Position",
+                  "I am writing to ask you to ..."
+                ],
+                [
+                  "Preview",
+                  "..., ... and, most importantly, ..."
+                ]
+              ],
+              "answers": [
+                [
+                  "Hook",
+                  "Imagine ..."
+                ],
+                [
+                  "Context",
+                  "Right now, ..."
+                ],
+                [
+                  "Position",
+                  "I am writing to ask you to ..."
+                ],
+                [
+                  "Preview",
+                  "..., ... and, most importantly, ..."
+                ]
+              ],
+              "hint": "Write your words after each starter.",
+              "widths": [
+                0.6,
+                2.2
+              ],
+              "rowH": 36
+            }
+          ]
+        },
+        {
+          "title": "Check it",
+          "columns": 1,
+          "example": {
+            "prompt": "My introduction",
+            "steps": [
+              "Hook?",
+              "Position?",
+              "Preview?"
+            ],
+            "answer": "Tick each part you have."
+          },
+          "items": [
+            {
+              "prompt": "Copy your best sentence from your introduction. Which part is it?",
+              "answer": "Any sentence, labelled correctly.",
+              "lines": 3,
+              "hint": "Look for your hook."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today you write the first paragraph your reader will ever see."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Students need their big piece plan from Session 1. Drafts go in writing books, every second line."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to write an introduction that tells the reader exactly where we stand.",
+      "successCriteria": [
+        "I can name the four parts of an introduction.",
+        "I can write an introduction with a hook, context, position and preview.",
+        "I can make my introduction fit my reader so they keep reading."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Your reader decides in one paragraph whether to take you seriously."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Naming the four parts is where we start.",
+            "Writing all four for your issue is today's main goal."
+          ]
+        ],
+        "prep": "SC1 naming the parts is reachable for all; SC2 writing all four is the core and the exit evidence; SC3 fitting the reader is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Put it back together",
+      "lines": [
+        "A: I am writing to ask you to stop bringing in new polar bears.",
+        "B: Imagine walking the same twenty steps, every day, for thirty years.",
+        "C: They need space, they are built for cold, and the money could help wild bears.",
+        "D: In the wild, a polar bear can roam hundreds of kilometres."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "puzzle",
+            "label": "four pieces"
+          },
+          {
+            "name": "sort",
+            "label": "one order"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "B, D, A, C - hook, context, position, preview",
+        "beats": [
+          [
+            "SAY: Four sentences from one introduction. They're jumbled.",
+            "Which one should come first?"
+          ],
+          [
+            "ASK: Which sentence starts it?",
+            "5 sec. Cue: voices off, everyone points to A, B, C or D.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "ASK: What's the whole order? Tell your partner.",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: B, D, A, C"
+          ],
+          "SAY: Hook, what's happening, what I want, what's coming. Today you write yours."
+        ],
+        "trap": [
+          "putting the position first because it's most important.",
+          "Fix: ask would the reader keep going? Student moves the hook up."
+        ],
+        "prep": "Mixed-start ordering task (megaprompt 19a); the correct order is only in these notes. Retrieves Week 3 hooks. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "preview",
+      "meaning": "A sneak peek at the reasons that are coming.",
+      "example": "They need space, they are built for cold, and the money could help wild bears.",
+      "pictogram": "look",
+      "notes": {
+        "answer": "a sneak peek at the reasons that are coming",
+        "beats": [
+          "POINT to the word. SAY: Preview. Say it with me. Preview.",
+          [
+            "SAY: Like a movie trailer. It shows what's coming without the whole story.",
+            "One short line naming your three reasons."
+          ],
+          [
+            "ASK: How many reasons does the example preview?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 3"
+          ]
+        ],
+        "trap": [
+          "writing the whole of each reason in the preview.",
+          "Fix: student cuts each reason to a few words."
+        ],
+        "prep": "The part students most often leave out. The trailer image carries it.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "I Do",
+      "title": "Watch me open strong",
+      "extract": "Dear Zoo Director, Imagine walking the same twenty steps, every day, for thirty years. In the wild, a polar bear can roam hundreds of kilometres in search of food. I am writing to ask you to stop bringing new polar bears into your zoo. Polar bears need far more space than any zoo can give, they are built for the cold, and the money could do much more good in the Arctic.",
+      "highlights": [
+        "Imagine walking the same twenty steps",
+        "In the wild, a polar bear can roam",
+        "I am writing to ask you to stop",
+        "they are built for the cold"
+      ],
+      "source": "Model letter, written for this session",
+      "notes": {
+        "answer": "hook, context, position, preview",
+        "beats": [
+          [
+            "POINT to Imagine.",
+            "SAY: My hook from last week. It pulls the director in."
+          ],
+          [
+            "POINT to In the wild.",
+            "SAY: Context: what's happening. Now the director knows the problem."
+          ],
+          [
+            "POINT to I am writing to ask.",
+            "SAY: My position. Clear, polite, and it says exactly what I want."
+          ],
+          [
+            "ASK: Which part is my last sentence?",
+            "5 sec. Cue: Fingers at your chest, 1 hook, 2 context, 3 position, 4 preview... now.",
+            "EXPECT: 4, preview"
+          ]
+        ],
+        "trap": [
+          "context that tells the whole story of the novel.",
+          "Fix: student keeps one or two sentences: just enough to see the problem."
+        ],
+        "stretch": "Make your preview's last reason the strongest.",
+        "help": "Introduction Frame: one starter per part.",
+        "prep": "The model, the same zoo letter used all week. Critical feature: by the end the reader knows exactly what you want and why.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Which part?",
+      "routine": "fingers",
+      "thinkTime": 6,
+      "pivot": "ask: does it pull, explain, claim or list?",
+      "followUp": "cold call one student: which words told you?",
+      "items": [
+        {
+          "text": "We should turn the empty land behind the library into a vegetable garden.",
+          "answer": "3 - position",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "Have you ever eaten a tomato straight off the vine?",
+          "answer": "1 - hook",
+          "expect": "1 finger"
+        },
+        {
+          "text": "A garden would feed our canteen, teach science outdoors and calm busy minds.",
+          "answer": "4 - preview",
+          "expect": "4 fingers"
+        },
+        {
+          "text": "Right now, that land is just weeds and broken pavers.",
+          "answer": "2 - context",
+          "expect": "2 fingers"
+        }
+      ],
+      "notes": {
+        "say": [
+          "A new introduction, chopped up and mixed.",
+          "1 hook, 2 context, 3 position, 4 preview."
+        ],
+        "trap": [
+          "calling the preview a position because it sounds certain.",
+          "Fix: ask is it a list of reasons? Then it's the preview."
+        ],
+        "stretch": "Say the correct order of all four.",
+        "help": "Look for a question first: that's often the hook.",
+        "prep": "Guided labelling on a new issue, in mixed order. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "What is missing from this introduction?",
+      "prompt": "Too hot to learn? Our rooms hit 30 degrees. We must have air conditioning.",
+      "options": [
+        {
+          "text": "the hook",
+          "misconception": "misses that the question is the hook"
+        },
+        {
+          "text": "the position",
+          "misconception": "misses that We must... is the position"
+        },
+        {
+          "text": "the preview"
+        }
+      ],
+      "answer": 2,
+      "notes": {
+        "answer": "C - there is no preview of the reasons",
+        "beats": [
+          "SAY: Read it in your head. Count the parts.",
+          [
+            "ASK: What is missing from this introduction?",
+            "15 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to C"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: write the missing preview aloud.",
+            "Less -> label each sentence 1, 2, 3 together, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: The preview. The reader doesn't know what reasons are coming."
+          ]
+        ],
+        "trap": [
+          "pointing to A because there's no Imagine.",
+          "Fix: ask what is the first sentence doing? Student sees the question hook."
+        ],
+        "prep": "Decision point before drafting. Under 80% means the class writes a preview for this one together first.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Preview it in one line",
+      "routine": "boards",
+      "thinkTime": 30,
+      "pivot": "cut each reason to two or three words, then join with commas",
+      "followUp": "cold call one board: which reason did you put last, and why?",
+      "items": [
+        {
+          "text": "Every class should have a pet. Reasons: responsibility, calm, science.",
+          "answer": "Pets teach responsibility, calm us down and bring science to life.",
+          "expect": "three short reasons in one sentence"
+        },
+        {
+          "text": "Lunch should be longer. Reasons: time to play, time to eat, better focus.",
+          "answer": "A longer lunch means time to play, time to eat and sharper afternoons.",
+          "expect": "three reasons, strongest last"
+        },
+        {
+          "text": "Kids should help write school rules. Reasons: fairness, ownership, new ideas.",
+          "answer": "Rules made together are fairer, kids follow them and fresh ideas get heard.",
+          "expect": "three reasons in one line"
+        },
+        {
+          "text": "Our playground needs more shade. Reasons: sun safety, cooler play, comfy lunches.",
+          "answer": "Shade keeps us sun safe, keeps play cool and makes lunch comfortable.",
+          "expect": "three reasons in one line"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Each one has a position and three reasons.",
+          "Squeeze the reasons into one preview sentence."
+        ],
+        "trap": [
+          "writing three whole sentences.",
+          "Fix: student cuts each reason to a few words, joins with commas and and."
+        ],
+        "stretch": "Put the strongest reason last and say why.",
+        "help": "Use the frame: ___, ___ and, most importantly, ___.",
+        "prep": "Guided practice on the part most often left out. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Draft your introduction",
+      "task": "Work through your Worksheet, plan your four parts, then draft your introduction in your writing book.",
+      "where": "Worksheet, then writing book",
+      "frame": "I am writing to ask you to ___. ___, ___ and, most importantly, ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "magnet",
+          "info",
+          "flag",
+          "look"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Hook, context, position, preview",
+      "notes": {
+        "answer": "a four-part introduction aimed at one reader",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Planner open beside you. Every second line, so you can improve it later."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CONFERENCE first with anyone from yesterday's exit list.",
+          [
+            "ASK: Swap with your partner. Show me how many parts you can find.",
+            "10 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 4"
+          ],
+          "TIME 20 minutes, including the swap at 15."
+        ],
+        "trap": [
+          "a preview that lists more than three reasons.",
+          "Fix: student checks the planner and cuts to the three planned."
+        ],
+        "stretch": "Extension: make the parts flow, then write it for a second reader.",
+        "help": "Supported Worksheet: picture-clue choices, a starter for each part, a check.",
+        "prep": "Independent drafting. The introduction is the first paragraph of the published piece. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a plan, then the drafted introduction of the big piece"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Every week, our class throws away bags of paper. Recycling bins would fix this. Our school must put one in every room.",
+        "Write the missing preview."
+      ],
+      "notes": {
+        "answer": "e.g. Bins save paper, teach good habits and cost almost nothing",
+        "beats": [
+          "SAY: A new introduction with a part missing. Add it.",
+          [
+            "ASK: Write the preview this introduction needs.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: three short reasons in one line"
+          ],
+          "RECORD who writes a single reason or a new position. Tomorrow's conference."
+        ],
+        "trap": [
+          "writing another position sentence.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new introduction. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Read your introduction to your partner. Can they tell you exactly what you want?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - partner can name the position and the three reasons",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that your introduction has all four parts?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Can your partner say exactly what you want?",
+            "30 sec. Turn and tell, partner B reads, partner A repeats the position.",
+            "EXPECT: You want the zoo to stop..."
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+ "unit_folder": "Term4_Week6_Literacy_Persuasive_Speeches",
+ "unit_pptx_name": "Term 4 Week 6 - Learning from Powerful Speakers - Year 5-6 Literacy.pptx",
+ "anchor": "Claim it. Prove it. Sell it. Say it. The writing anchor plus a microphone (say it), and the speech rule: write for the ear. Final piece: a rehearsed persuasive speech delivered to a live audience.",
+ "lessons": [
+  {
+   "build_script": "builds/t4w6_lit_s1_read_it_or_hear_it.json",
+   "folder": "T4W6_Lit_S1_Read_It_Or_Hear_It",
+   "session": 1,
+   "title": "Read It or Hear It?",
+   "focus": "Compare a persuasive text read silently with the same ideas spoken; start the Persuasive Speaker's Toolkit. Critical feature: write for the ear: short sentences, repeated key words, you and we."
+  },
+  {
+   "build_script": "builds/t4w6_lit_s2_severn.json",
+   "folder": "T4W6_Lit_S2_Severn",
+   "session": 2,
+   "title": "Severn's Six Minutes",
+   "focus": "Severn Cullis-Suzuki at the 1992 Earth Summit: message, audience and what she wants us to think, feel and do. Critical feature: a speaker earns the right to be heard by saying who they are and why it matters to them."
+  },
+  {
+   "build_script": "builds/t4w6_lit_s3_malala.json",
+   "folder": "T4W6_Lit_S3_Malala",
+   "session": 3,
+   "title": "Malala's Voice",
+   "focus": "Malala Yousafzai at the UN in 2013: personal story and lists of three. Critical feature: a true story makes a big idea feel real."
+  },
+  {
+   "build_script": "builds/t4w6_lit_s4_greta.json",
+   "folder": "T4W6_Lit_S4_Greta",
+   "session": 4,
+   "title": "Greta's Fire",
+   "focus": "Greta Thunberg at the UN in 2019: short sentences, direct address and tone. Critical feature: a short sentence after a long one lands like a punch."
+  },
+  {
+   "build_script": "builds/t4w6_lit_s5_mlk.json",
+   "folder": "T4W6_Lit_S5_Mlk",
+   "session": 5,
+   "title": "The Dream Speech",
+   "focus": "Martin Luther King Jr. in 1963: repetition and imagery building a vision. Critical feature: repeated openings build rhythm and make the audience feel the dream."
+  }
+ ]
+}

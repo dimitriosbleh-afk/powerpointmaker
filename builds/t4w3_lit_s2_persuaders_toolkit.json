@@ -1,0 +1,922 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 3,
+    "session": 2,
+    "variant": 1,
+    "minutes": 60,
+    "title": "The Persuader's Toolkit",
+    "subtitle": "Term 4 Week 3, Session 2",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 3 Session 2",
+    "outputFolder": "T4W3_Lit_S2_Persuaders_Toolkit",
+    "fileName": "Session 2 - The Persuader's Toolkit.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA03 language features of persuasive texts; VC2E5LY08 features used to meet purpose and audience; VC2E5LY10 creating persuasive texts",
+      "shape": "name, add, remix: four devices named on new examples, added to plain sentences, then remixed into the student's own paragraph, because students overuse one device unless they practise choosing",
+      "criticalFeature": "a device earns its place only if it moves the reader; name its effect, not just its name",
+      "decisionPoints": [
+        "the Name the device round",
+        "the choice check: which device makes the reader part of the team?",
+        "the exit board: a plain sentence with a device added"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Today: four tools for selling it.",
+      "catchUp": "Missed Week 2? Use the Plastic straws claim from the board as their paragraph to remix instead of their own."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Writing books with the Week 2 Prove it paragraph"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 to 4",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Four devices numbered on the board: 1 rhetorical question, 2 rule of three, 3 repetition, 4 we-words",
+      "A spare paragraph for catch-up: Plastic straws harm sea animals. We should stop using them."
+    ]
+  },
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we fill our persuader's toolkit with four tools that move a reader."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Number the four devices on the board."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to use persuasive devices on purpose to move a reader.",
+      "successCriteria": [
+        "I can spot four persuasive devices.",
+        "I can add a device to make a sentence more persuasive.",
+        "I can choose devices that suit my reader and explain their effect."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: On purpose is the key. A device should never be an accident."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Spotting devices is where we start.",
+            "Adding one that works is today's main goal."
+          ]
+        ],
+        "prep": "SC1 spotting devices is reachable for all; SC2 adding a device is the core and the exit evidence; SC3 choosing for the reader and naming the effect is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "What makes this pump you up?",
+      "lines": [
+        "We trained hard. We played hard. Now we finish hard.",
+        "Who's with me?"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "trophy",
+            "label": "the coach"
+          },
+          {
+            "name": "group",
+            "label": "the team"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "the repeated pattern, we, and the question at the end",
+        "beats": [
+          [
+            "SAY: A footy coach at three-quarter time. Listen.",
+            "READ it like a coach, building up."
+          ],
+          [
+            "ASK: Did that make you want to run back out?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up"
+          ],
+          [
+            "ASK: What did the coach do with the words?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: said hard three times; said we; asked a question"
+          ],
+          [
+            "SAY: Last week we chose powerful words.",
+            "Today we learn patterns that make words hit harder."
+          ]
+        ],
+        "trap": [
+          "it was loud, so it worked.",
+          "Fix: read it flat and quiet; ask what still works? Student finds the pattern."
+        ],
+        "prep": "Launch links Week 2 word power to devices. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "device",
+      "meaning": "A word pattern a writer uses on purpose to persuade.",
+      "example": "Asking a question you don't want answered is a device.",
+      "pictogram": "wrench",
+      "notes": {
+        "answer": "a word pattern a writer uses on purpose to persuade",
+        "beats": [
+          "POINT to the word. SAY: Device. Say it with me. Device.",
+          [
+            "SAY: A device is a tool in your toolkit: a pattern used on purpose.",
+            "Like a wrench, you pick the right one for the job."
+          ],
+          [
+            "ASK: What device did the coach use most?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: repeating hard"
+          ]
+        ],
+        "trap": [
+          "thinking device means a phone or tablet.",
+          "Fix: say in writing, a device is a tool made of words."
+        ],
+        "prep": "The word the session runs on; the wrench makes it a tool.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Four tools and what they do",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Device",
+            "Example",
+            "What it does"
+          ],
+          [
+            "Rhetorical question",
+            "Do we really want to lose them?",
+            "makes you answer in your head"
+          ],
+          [
+            "Rule of three",
+            "They need ice, food and space.",
+            "sounds complete, easy to remember"
+          ],
+          [
+            "Repetition",
+            "We can act. We can change.",
+            "hammers the idea in"
+          ],
+          [
+            "We-words",
+            "We all share one planet.",
+            "puts the reader on your team"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "each device has a job: name the effect, not just the device",
+        "beats": [
+          [
+            "POINT to Rhetorical question.",
+            "SAY: I don't want an answer out loud. I want you answering no in your head."
+          ],
+          [
+            "POINT to Rule of three.",
+            "SAY: Ice, food and space. Three feels complete. Two feels short."
+          ],
+          [
+            "POINT to We-words.",
+            "SAY: We, us, our. Now the reader is on my team, not being told off."
+          ],
+          [
+            "ASK: Which tool would you use to end a paragraph? Why?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: a rhetorical question, it leaves them thinking"
+          ]
+        ],
+        "trap": [
+          "naming a device but not what it does to the reader.",
+          "Fix: ask so what does it make the reader do? Student adds the effect."
+        ],
+        "stretch": "Find a sentence that uses two devices at once.",
+        "help": "Learn the rule of three first; it's the easiest to use.",
+        "prep": "The model. Critical feature: a device earns its place only if it moves the reader. Examples are the student's own topic language.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Name the device",
+      "routine": "fingers",
+      "thinkTime": 6,
+      "pivot": "check each tool on the board in order",
+      "followUp": "cold call one student: what does it make the reader do?",
+      "items": [
+        {
+          "text": "Is a few minutes of convenience worth a hundred years of rubbish?",
+          "answer": "1 - rhetorical question",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Walking to school is cheaper, healthier and cleaner.",
+          "answer": "2 - rule of three",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Every bottle counts. Every bag counts. Every choice counts.",
+          "answer": "3 - repetition (and a rule of three!)",
+          "expect": "3 fingers. ACCEPT: 2",
+          "say": "Repetition, and three of them. Two tools at once. Tick or fix."
+        },
+        {
+          "text": "Together, our school can lead the way.",
+          "answer": "4 - we-words",
+          "expect": "4 fingers"
+        },
+        {
+          "text": "Who wants to breathe dirty air?",
+          "answer": "1 - rhetorical question",
+          "expect": "1 finger"
+        }
+      ],
+      "notes": {
+        "say": [
+          "1 question, 2 rule of three, 3 repetition, 4 we-words.",
+          "Read, decide, fingers."
+        ],
+        "trap": [
+          "calling any question a rhetorical question.",
+          "Fix: ask does the writer want a real answer? If not, it's rhetorical."
+        ],
+        "stretch": "Say the effect of each one.",
+        "help": "Look for a question mark, then a list, then a repeat, then we.",
+        "prep": "Guided naming. Item 3 is the double-device edge case. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which one puts the reader on your team?",
+      "options": [
+        {
+          "text": "Polar bears need ice, food and space to survive.",
+          "misconception": "a rule of three; confuses any device with we-words"
+        },
+        {
+          "text": "Together, we can protect the Arctic for good."
+        },
+        {
+          "text": "Can you imagine a world without any polar bears?",
+          "misconception": "a rhetorical question; involves the reader but doesn't make them part of us"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - together and we put the reader on the team",
+        "beats": [
+          "SAY: Three sentences, three devices. Which one makes you part of the team?",
+          [
+            "ASK: Which one puts the reader on your team?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: which device is A?",
+            "Less -> circle we, us, our on the board, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Together and we. You're not being told off, you're being invited."
+          ]
+        ],
+        "trap": [
+          "pointing to C because it talks to you.",
+          "Fix: ask does it say we? Student finds the we-words in B."
+        ],
+        "prep": "Decision point: the device by its effect. Under 80% means the Add a device round is done in pairs first.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Add a device",
+      "routine": "boards",
+      "thinkTime": 40,
+      "pivot": "build one together on the board, then re-ask",
+      "followUp": "cold call one board: what does your device make the reader do?",
+      "items": [
+        {
+          "text": "Plastic harms turtles. Add a rhetorical question.",
+          "answer": "How many more turtles must choke on our rubbish?",
+          "expect": "a question that wants no answer"
+        },
+        {
+          "text": "Trees give shade. Add a rule of three.",
+          "answer": "Trees give us shade, clean air and homes for birds.",
+          "expect": "three things, last one strongest"
+        },
+        {
+          "text": "You should recycle. Add we-words.",
+          "answer": "We can all recycle, and together our school can lead the way.",
+          "expect": "we, us, our, together"
+        },
+        {
+          "text": "Act now. Add repetition.",
+          "answer": "Act now. Act together. Act before it's too late.",
+          "expect": "a repeated opening word"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Your turn to use the tools.",
+          "Each sentence tells you which device to add."
+        ],
+        "trap": [
+          "a rule of three with three things that mean the same, like big, huge, large.",
+          "Fix: ask are they three different reasons? Student swaps two."
+        ],
+        "stretch": "Add two devices to one sentence.",
+        "help": "Use the example in the table as a pattern.",
+        "prep": "Guided adding, one device each. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Device remix",
+      "task": "Work through your Worksheet. Finish by remixing your Week 2 paragraph with three labelled devices.",
+      "where": "Main sheet",
+      "frame": "This ___ makes my reader ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "question",
+          "stars",
+          "cycle",
+          "group"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Question, three, repeat, we",
+      "notes": {
+        "answer": "a remixed paragraph with three labelled devices",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Same paragraph, but better tools. Don't cram them all in one sentence."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: what does that one make your reader do?",
+          [
+            "ASK: Swap books. How many devices can you find in your partner's?",
+            "10 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 3 or more"
+          ],
+          "TIME 15 minutes, including the 2-minute swap."
+        ],
+        "trap": [
+          "five rhetorical questions in a row.",
+          "Fix: student keeps the best question, swaps the rest for other tools."
+        ],
+        "stretch": "Extension: name each device's effect, then judge which earn their place.",
+        "help": "Supported Worksheet: picture-clue choices, a first device added, a frame.",
+        "prep": "Independent application on students' own Week 2 writing. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a paragraph remixed with three labelled devices"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Bikes are good for the planet.",
+        "Rewrite it with one device. Name the device you used."
+      ],
+      "notes": {
+        "answer": "e.g. Bikes are quiet, cheap and clean. Rule of three",
+        "beats": [
+          "SAY: A plain sentence about something new. Use one tool.",
+          [
+            "ASK: Rewrite the sentence with a device, and name it.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a question, a three, a repeat or we-words, correctly named"
+          ],
+          "RECORD who names a device that isn't there. Tomorrow's warm-up."
+        ],
+        "trap": [
+          "rewriting with emotive words only and calling it a device.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new sentence. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Which tool will you use most in your big piece? Tell your partner why it suits your reader.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for a device matched to a reader",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can add a device on purpose?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Which tool will you use most in your big piece, and why?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: we-words, because I'm writing to the principal"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ],
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: name devices, choose the right one, add devices, then remix your own paragraph.",
+      "title": "The Persuader's Toolkit",
+      "subtitle": "Use a device on purpose, for a reason.",
+      "sections": [
+        {
+          "title": "Name the device",
+          "columns": 1,
+          "example": {
+            "prompt": "'We can do this. We can win this.'",
+            "steps": [
+              "Is there a question? A list of three?",
+              "A repeated opening? We-words?",
+              "Name it"
+            ],
+            "answer": "repetition"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Name the device: rhetorical question, rule of three, repetition or we-words.",
+              "columns": [
+                "Sentence",
+                "Device"
+              ],
+              "rows": [
+                [
+                  "Shade trees cool, protect and calm us.",
+                  ""
+                ],
+                [
+                  "Who wants a playground like an oven?",
+                  ""
+                ],
+                [
+                  "Together, our class can fix this.",
+                  ""
+                ],
+                [
+                  "Every bin matters. Every day matters.",
+                  ""
+                ],
+                [
+                  "Can we really ignore a dying reef?",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Shade trees cool, protect and calm us.",
+                  "rule of three"
+                ],
+                [
+                  "Who wants a playground like an oven?",
+                  "rhetorical question"
+                ],
+                [
+                  "Together, our class can fix this.",
+                  "we-words"
+                ],
+                [
+                  "Every bin matters. Every day matters.",
+                  "repetition"
+                ],
+                [
+                  "Can we really ignore a dying reef?",
+                  "rhetorical question"
+                ]
+              ],
+              "widths": [
+                2.2,
+                1
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Pick the right tool",
+          "columns": 2,
+          "example": {
+            "prompt": "Goal: leave the reader thinking at the end.",
+            "steps": [
+              "What should the reader do or feel?",
+              "Which device does that?",
+              "Choose it"
+            ],
+            "answer": "A rhetorical question: they keep answering it in their head."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Goal: make readers feel part of the team. Which works?",
+              "options": [
+                "Bees pollinate, feed and heal.",
+                "Together, our school can save the bees.",
+                "Why would anyone hurt a bee?"
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "Together and our put the reader on the writer's team."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Lucy tried a rule of three. Find her mistake and fix it.",
+              "work": [
+                "Bees are small, little and tiny."
+              ],
+              "answer": "All three words mean the same thing. Fix: Bees pollinate crops, make honey and feed birds."
+            }
+          ]
+        },
+        {
+          "title": "Add a device",
+          "columns": 1,
+          "example": {
+            "prompt": "Plain: Sport keeps us healthy. Add: rule of three.",
+            "steps": [
+              "Read the plain sentence",
+              "Use the device named",
+              "Check it sounds stronger"
+            ],
+            "answer": "Sport keeps our hearts strong, our minds calm and our friendships close."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each sentence with the device named.",
+              "columns": [
+                "Plain",
+                "Device",
+                "My sentence"
+              ],
+              "rows": [
+                [
+                  "We should save water.",
+                  "we-words",
+                  ""
+                ],
+                [
+                  "Littering hurts animals.",
+                  "rhetorical question",
+                  ""
+                ],
+                [
+                  "Walk to school.",
+                  "repetition",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "We should save water.",
+                  "we-words",
+                  "Together, we can save every drop."
+                ],
+                [
+                  "Littering hurts animals.",
+                  "rhetorical question",
+                  "How many more animals must choke on our litter?"
+                ],
+                [
+                  "Walk to school.",
+                  "repetition",
+                  "Walk for your health. Walk for your planet. Walk to school."
+                ]
+              ],
+              "widths": [
+                1,
+                0.8,
+                1.6
+              ],
+              "rowH": 36
+            }
+          ]
+        },
+        {
+          "title": "Device remix",
+          "columns": 1,
+          "example": {
+            "prompt": "My Week 2 Prove it paragraph.",
+            "steps": [
+              "Copy your claim",
+              "Add three devices in different places",
+              "Label each device and its effect"
+            ],
+            "answer": "A remixed paragraph with three labelled devices."
+          },
+          "items": [
+            {
+              "prompt": "Remix your Week 2 Prove it paragraph with three devices. Label each one in the margin with its effect.",
+              "answer": "A remixed paragraph with three devices, each labelled with its effect.",
+              "lines": 7
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: name each device's effect, then judge which devices earn their place.",
+      "title": "Toolkit Expert",
+      "subtitle": "A device must earn its place.",
+      "sections": [
+        {
+          "title": "What does it do to the reader?",
+          "columns": 1,
+          "example": {
+            "prompt": "'Act now. Act together. Act today.'",
+            "steps": [
+              "Name the device",
+              "What does the reader feel or do?",
+              "Write the effect"
+            ],
+            "answer": "Repetition: it builds urgency, so the reader wants to act."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Name the device and its effect on the reader.",
+              "columns": [
+                "Sentence",
+                "Device",
+                "Effect on the reader"
+              ],
+              "rows": [
+                [
+                  "Is a cheaper toy worth a dead turtle?",
+                  "",
+                  ""
+                ],
+                [
+                  "Plant, water, grow.",
+                  "",
+                  ""
+                ],
+                [
+                  "This is our school, our future, our choice.",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Is a cheaper toy worth a dead turtle?",
+                  "rhetorical question",
+                  "makes the reader answer no"
+                ],
+                [
+                  "Plant, water, grow.",
+                  "rule of three",
+                  "easy steps to remember and do"
+                ],
+                [
+                  "This is our school, our future, our choice.",
+                  "we-words and rule of three",
+                  "the reader feels responsible"
+                ]
+              ],
+              "widths": [
+                1.4,
+                1,
+                1.2
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "Earn its place",
+          "columns": 1,
+          "example": {
+            "prompt": "Too many devices: 'Why? Why? Why? We, us, our...'",
+            "steps": [
+              "Write it with all four devices",
+              "Cross out the weakest",
+              "Explain why"
+            ],
+            "answer": "Too many devices sound like shouting; keep the ones that move the reader."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write a closing paragraph using all four devices. Cross out the one that doesn't earn its place, and explain why.",
+              "answer": "A paragraph with four devices, one crossed out, and a reason.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first device added and a frame.",
+      "title": "Toolkit Helper",
+      "subtitle": "Four tools: a question, three things, a repeat, we-words.",
+      "sections": [
+        {
+          "title": "Which device?",
+          "columns": 3,
+          "example": {
+            "prompt": "'Why would anyone litter?'",
+            "steps": [
+              "Is there a question mark?",
+              "Yes",
+              "Rhetorical question"
+            ],
+            "answer": "rhetorical question"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Red, gold and green.",
+              "options": [
+                "question",
+                "three",
+                "we-words"
+              ],
+              "answer": 1,
+              "hint": "Count the things."
+            },
+            {
+              "kind": "choice",
+              "prompt": "We can all help.",
+              "options": [
+                "question",
+                "three",
+                "we-words"
+              ],
+              "answer": 2,
+              "hint": "Look for we."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Who likes litter?",
+              "options": [
+                "question",
+                "three",
+                "we-words"
+              ],
+              "answer": 0,
+              "hint": "Look at the end."
+            }
+          ]
+        },
+        {
+          "title": "Add a device",
+          "columns": 1,
+          "example": {
+            "prompt": "You should recycle.",
+            "steps": [
+              "Find you",
+              "Change to we",
+              "Read it again"
+            ],
+            "answer": "We should all recycle."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each sentence with the device.",
+              "columns": [
+                "Sentence",
+                "Device",
+                "New sentence"
+              ],
+              "rows": [
+                [
+                  "You should walk.",
+                  "we-words",
+                  "We should all walk."
+                ],
+                [
+                  "Trees are good.",
+                  "three",
+                  ""
+                ],
+                [
+                  "Litter is bad.",
+                  "question",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "You should walk.",
+                  "we-words",
+                  "We should all walk."
+                ],
+                [
+                  "Trees are good.",
+                  "three",
+                  "Trees give shade, air and homes."
+                ],
+                [
+                  "Litter is bad.",
+                  "question",
+                  "Who wants a dirty park?"
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                0.7,
+                1.5
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "My device",
+          "columns": 1,
+          "example": {
+            "prompt": "My issue: zoos.",
+            "steps": [
+              "Pick one device",
+              "Write one sentence",
+              "Name the device"
+            ],
+            "answer": "We can give bears their freedom. (we-words)"
+          },
+          "items": [
+            {
+              "prompt": "Write two sentences about your issue. Use a different device in each and name it.",
+              "answer": "Two sentences, two named devices.",
+              "lines": 4,
+              "hint": "Try we-words first."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ]
+}

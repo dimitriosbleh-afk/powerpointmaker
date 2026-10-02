@@ -1,0 +1,940 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 6,
+    "session": 1,
+    "variant": 4,
+    "minutes": 60,
+    "title": "Read It or Hear It?",
+    "subtitle": "Term 4 Week 6, Session 1",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 6 Session 1",
+    "outputFolder": "T4W6_Lit_S1_Read_It_Or_Hear_It",
+    "fileName": "Session 1 - Read It or Hear It?.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA03 how spoken and written texts use different language features for their purpose; VC2E5LY02 delivering spoken texts using features of voice; VC2E5LY08 features for audience",
+      "shape": "hear the difference, name the rules, rewrite for the ear, say it aloud: a written paragraph and its speech twin are compared, then students turn their own Week 5 opening into a speech opening",
+      "criticalFeature": "a listener can't re-read, so a speech uses short sentences, repeated key words, you and we, and signposts",
+      "decisionPoints": [
+        "the Eye or ear? round",
+        "the choice check: the line that works best spoken",
+        "the exit board: a written sentence rewritten for the ear"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Write for the ear.",
+      "catchUp": "First session of the speech unit; no catch-up needed. Students who missed Week 5 use any persuasive paragraph from Weeks 1-4."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Week 5 published pieces (or any persuasive paragraph)",
+      "Mini-whiteboards and markers",
+      "Persuasive Speaker's Toolkit (printed, kept in books all unit)"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 or 2",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Write for the ear: short sentences, repeat key words, you and we, signposts",
+      "A Speech Day date for Week 9 and the audience (another class, assembly or families)"
+    ],
+    "videos": [
+      "DCE Speech Collection (Persuasive/Speeches): Severn Cullis-Suzuki, Malala Yousafzai, Greta Thunberg, Martin Luther King Jr. Used from Session 2."
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: sort eye and ear sentences, fix a speech line, rewrite for the ear, then turn your own opening into a speech.",
+      "title": "Read It or Hear It?",
+      "subtitle": "Write for the ear.",
+      "sections": [
+        {
+          "title": "Eye or ear?",
+          "columns": 1,
+          "example": {
+            "prompt": "'Bears need ice. Ice to hunt. Ice to live.'",
+            "steps": [
+              "Is it short?",
+              "Does it repeat a key word?",
+              "Easy to follow by listening? Ear"
+            ],
+            "answer": "ear"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Is each line written for the EYE (reading) or the EAR (listening)?",
+              "columns": [
+                "Line",
+                "Eye or ear?"
+              ],
+              "rows": [
+                [
+                  "Here's the thing. We are running out of time.",
+                  ""
+                ],
+                [
+                  "Notwithstanding the aforementioned data, change is required.",
+                  ""
+                ],
+                [
+                  "You. Me. All of us. We can fix this.",
+                  ""
+                ],
+                [
+                  "See Figure 3 for the full results.",
+                  ""
+                ],
+                [
+                  "So I ask you: what will you do tomorrow?",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Here's the thing. We are running out of time.",
+                  "ear"
+                ],
+                [
+                  "Notwithstanding the aforementioned data, change is required.",
+                  "eye"
+                ],
+                [
+                  "You. Me. All of us. We can fix this.",
+                  "ear"
+                ],
+                [
+                  "See Figure 3 for the full results.",
+                  "eye"
+                ],
+                [
+                  "So I ask you: what will you do tomorrow?",
+                  "ear"
+                ]
+              ],
+              "widths": [
+                2.3,
+                0.8
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Spot the problem",
+          "columns": 2,
+          "example": {
+            "prompt": "Too long to follow by ear?",
+            "steps": [
+              "Read it aloud in one breath",
+              "Run out of breath? Too long",
+              "Split it"
+            ],
+            "answer": "Split it into two or three short sentences."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which line works best SPOKEN to a crowd?",
+              "options": [
+                "Plastic, which lasts for centuries, harms sea life in ways we are only now beginning to understand.",
+                "Plastic lasts for centuries. It chokes our sea life. And we're only starting to see the damage."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "Short sentences a listener can follow, with a strong word at the end of each."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Kai wrote this for his speech. Find the problem and fix it.",
+              "work": [
+                "The aforementioned statistics demonstrate significant ecological consequences."
+              ],
+              "answer": "Too hard to follow by ear. Fix: These numbers show us something scary. Our planet is in trouble."
+            }
+          ]
+        },
+        {
+          "title": "Rewrite for the ear",
+          "columns": 1,
+          "example": {
+            "prompt": "Written: Many students, according to our survey, would like a longer lunch break.",
+            "steps": [
+              "Split long sentences",
+              "Talk to them: you, we",
+              "Repeat the key word"
+            ],
+            "answer": "Lunch. We all love it. And we all want more of it. Our survey says so."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each written sentence so it works for the ear.",
+              "columns": [
+                "Written",
+                "For the ear"
+              ],
+              "rows": [
+                [
+                  "Shade trees, which cool our classrooms, should be planted.",
+                  ""
+                ],
+                [
+                  "It is recommended that families reduce car use.",
+                  ""
+                ],
+                [
+                  "Recycling rates at our school are lower than desirable.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Shade trees, which cool our classrooms, should be planted.",
+                  "Trees cool our rooms. So let's plant them."
+                ],
+                [
+                  "It is recommended that families reduce car use.",
+                  "Walk. Ride. Leave the car at home."
+                ],
+                [
+                  "Recycling rates at our school are lower than desirable.",
+                  "We don't recycle enough. Not even close."
+                ]
+              ],
+              "widths": [
+                1.2,
+                1.4
+              ],
+              "rowH": 36
+            }
+          ]
+        },
+        {
+          "title": "My opening, for the ear",
+          "columns": 1,
+          "example": {
+            "prompt": "My Week 5 opening",
+            "steps": [
+              "Split long sentences",
+              "Add you or we",
+              "Repeat one key word"
+            ],
+            "answer": "Twenty steps. Every day. For thirty years. Would you call that a life?"
+          },
+          "items": [
+            {
+              "prompt": "Rewrite the opening of your Week 5 piece as a speech opening. Then say it aloud to your partner.",
+              "answer": "An opening with short sentences, you or we, and a repeated key word.",
+              "lines": 7
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: signposts that guide a listener, then a full speech paragraph.",
+      "title": "Speechwriter",
+      "subtitle": "Speechwriters write for one voice and many ears.",
+      "sections": [
+        {
+          "title": "Signposts",
+          "columns": 1,
+          "example": {
+            "prompt": "A listener can't see paragraphs.",
+            "steps": [
+              "Use a signpost to say where they are",
+              "First... Here's the thing... So...",
+              "Place it at the start"
+            ],
+            "answer": "First, let's talk about the ice."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write a signpost to start each part of a speech.",
+              "columns": [
+                "Part of the speech",
+                "My signpost"
+              ],
+              "rows": [
+                [
+                  "the first reason",
+                  ""
+                ],
+                [
+                  "the strongest reason",
+                  ""
+                ],
+                [
+                  "answering the other side",
+                  ""
+                ],
+                [
+                  "the ending",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "the first reason",
+                  "First, let's talk about..."
+                ],
+                [
+                  "the strongest reason",
+                  "But here's what matters most."
+                ],
+                [
+                  "answering the other side",
+                  "Now, some of you might be thinking..."
+                ],
+                [
+                  "the ending",
+                  "So here's what I'm asking you to do."
+                ]
+              ],
+              "widths": [
+                1,
+                1.6
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "A full speech paragraph",
+          "columns": 1,
+          "example": {
+            "prompt": "Body paragraph 1, for the ear",
+            "steps": [
+              "Signpost",
+              "Short sentences and a repeated word",
+              "Finish with a question to the audience"
+            ],
+            "answer": "First, the ice. The ice is their road. The ice is their food. And the ice is going. What happens next?"
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Rewrite one body paragraph from your Week 5 piece as a speech paragraph. Use a signpost, repetition and a question.",
+              "answer": "A spoken paragraph with a signpost, short sentences, repetition and a question.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first rewrite done and a frame.",
+      "title": "Write for the Ear Helper",
+      "subtitle": "Short sentences. Say you and we. Repeat the big word.",
+      "sections": [
+        {
+          "title": "Eye or ear?",
+          "columns": 3,
+          "example": {
+            "prompt": "'Bears need ice.'",
+            "steps": [
+              "Is it short?",
+              "Easy to hear?",
+              "Ear"
+            ],
+            "answer": "ear"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "You can help. Yes, you.",
+              "options": [
+                "eye",
+                "ear"
+              ],
+              "answer": 1,
+              "hint": "Short and talks to you."
+            },
+            {
+              "kind": "choice",
+              "prompt": "See the table on page 4.",
+              "options": [
+                "eye",
+                "ear"
+              ],
+              "answer": 0,
+              "hint": "Can a listener see a table?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "We must act. Now.",
+              "options": [
+                "eye",
+                "ear"
+              ],
+              "answer": 1,
+              "hint": "Short and punchy."
+            }
+          ]
+        },
+        {
+          "title": "Make it short",
+          "columns": 1,
+          "example": {
+            "prompt": "Bears, which need ice to hunt, are hungry.",
+            "steps": [
+              "Find the two ideas",
+              "Make two sentences",
+              "Read it aloud"
+            ],
+            "answer": "Bears need ice to hunt. They are hungry."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Split each long sentence into short ones.",
+              "columns": [
+                "Long",
+                "Short"
+              ],
+              "rows": [
+                [
+                  "Trees, which give us shade, keep us cool.",
+                  "Trees give us shade. They keep us cool."
+                ],
+                [
+                  "Bins, which are full, need emptying.",
+                  ""
+                ],
+                [
+                  "Kids, who love sport, need more time.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Trees, which give us shade, keep us cool.",
+                  "Trees give us shade. They keep us cool."
+                ],
+                [
+                  "Bins, which are full, need emptying.",
+                  "Our bins are full. Empty them."
+                ],
+                [
+                  "Kids, who love sport, need more time.",
+                  "Kids love sport. We need more time."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1.2,
+                1.4
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "My speech line",
+          "columns": 1,
+          "example": {
+            "prompt": "My issue: zoos",
+            "steps": [
+              "Talk to them: You...",
+              "Short sentence",
+              "Repeat a word"
+            ],
+            "answer": "You love animals. So do I. Animals need space."
+          },
+          "items": [
+            {
+              "prompt": "Write two short speech sentences about your issue. Use you or we.",
+              "answer": "Two short spoken sentences with you or we.",
+              "lines": 3,
+              "hint": "Start with: You... or We..."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    },
+    {
+      "kind": "page",
+      "label": "Persuasive Speaker's Toolkit",
+      "description": "Kept all unit: students add one technique each session, with a real example and its effect. Reprint only if lost.",
+      "title": "My Persuasive Speaker's Toolkit",
+      "subtitle": "Add each technique as we learn it: who used it, an example, and what it does to the audience.",
+      "blocks": [
+        {
+          "organiser": {
+            "left": "Technique",
+            "right": "Example, who said it, and its effect",
+            "rows": 9,
+            "rowH": 62,
+            "leftContent": [
+              "1. Write for the ear",
+              "2. Who I am and why I care",
+              "3. A true story",
+              "4. Rule of three",
+              "5. Talk straight to them (you)",
+              "6. Short sentences that punch",
+              "7. Repetition",
+              "8. Pause and emphasis",
+              "9. A call to action"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the speech unit. One line: for four weeks we stop writing to be read, and start writing to be heard."
+    },
+    {
+      "kind": "overview",
+      "title": "For the teacher: Weeks 6-9 at a glance",
+      "lines": [
+        "Weeks 6-7: learn from powerful speakers (DCE Speech Collection) and practise delivery.",
+        "Week 8: plan and write their own persuasive speech. Week 9: rehearse, refine, Speech Day.",
+        "Speech quotes on slides are short famous lines: check each against your DCE copy before teaching.",
+        "Unit anchor: Claim it. Prove it. Sell it. Say it. Write for the ear."
+      ],
+      "notes": "Teacher-facing only. Book the Speech Day audience now (another class, assembly or families). Each session adds one row to the Persuasive Speaker's Toolkit."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Persuasive Speaker's Toolkit once per student (kept all unit), plus the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Students need their Week 5 published piece."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how a speech is different from writing that is read.",
+      "successCriteria": [
+        "I can name three differences between reading and listening.",
+        "I can rewrite a written sentence so it works for the ear.",
+        "I can explain why speakers repeat key words."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Five weeks of writing to be read. Now we write to be heard."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Read it, or hear it?",
+      "lines": [
+        "Polar bears, which rely on sea ice to hunt, are threatened by its decline.",
+        "Polar bears need ice. Ice to hunt. Ice to live. And it's disappearing."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "eye",
+            "label": "read it"
+          },
+          {
+            "name": "ear",
+            "label": "hear it"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "the second is easier to follow by ear: short, repeated, ends strong",
+        "beats": [
+          [
+            "SAY: I'll read both aloud. Eyes closed. Just listen.",
+            "READ the first flatly, then the second with pauses."
+          ],
+          [
+            "ASK: Which was easier to follow with your eyes closed? First or second?",
+            "5 sec. Cue: Fingers at your chest, 1 or 2... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: What did the speaker do to help your ears?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: short sentences; repeated ice; it built up"
+          ],
+          [
+            "SAY: A reader can go back and re-read. A listener can't.",
+            "So speeches are written for the ear."
+          ]
+        ],
+        "trap": [
+          "preferring the first because it sounds clever.",
+          "Fix: ask what did you remember? Student finds the repeated ice."
+        ],
+        "prep": "Low-coupling launch: everyone can listen. Perform the second line with real pauses. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "speech",
+      "meaning": "A text written to be heard, not read.",
+      "example": "A speech can't have a table or a footnote.",
+      "pictogram": "microphone",
+      "notes": {
+        "answer": "a text written to be heard, not read",
+        "beats": [
+          "POINT to the word. SAY: Speech. Say it with me. Speech.",
+          [
+            "SAY: A text written to be heard, not read.",
+            "SAY: A speech can't have a table or a footnote."
+          ],
+          [
+            "ASK: Name one thing a speech can't use that a written text can.",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: headings, pictures, footnotes, re-reading"
+          ]
+        ],
+        "trap": [
+          "thinking a speech is an essay read aloud.",
+          "Fix: ask could a listener follow it with eyes closed?"
+        ],
+        "prep": "Sets up the unit: everything is judged by the ear.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Write for the ear",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "For the ear",
+            "Example"
+          ],
+          [
+            "Short sentences",
+            "Bears need ice."
+          ],
+          [
+            "Repeat the key word",
+            "Ice to hunt. Ice to live."
+          ],
+          [
+            "Talk to them: you and we",
+            "You can help. We all can."
+          ],
+          [
+            "Signposts",
+            "First... Here's the thing... So..."
+          ],
+          [
+            "Questions",
+            "What will we do?"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "short sentences, repetition, you and we, signposts, questions",
+        "beats": [
+          [
+            "POINT to Short sentences.",
+            "SAY: A listener holds one idea at a time.",
+            "So I give them one idea per sentence."
+          ],
+          [
+            "POINT to Repeat the key word.",
+            "SAY: On paper, repeating looks lazy. Out loud, it's how listeners remember."
+          ],
+          [
+            "POINT to Signposts.",
+            "SAY: Listeners can't see paragraphs. Signposts tell them where we are."
+          ],
+          [
+            "ASK: Say the anchor with me: Claim it. Prove it. Sell it. Say it.",
+            "3 sec. Cue: Everyone, together, on three.",
+            "EXPECT: Claim it. Prove it. Sell it. Say it."
+          ]
+        ],
+        "trap": [
+          "copying a written paragraph and calling it a speech.",
+          "Fix: student reads it aloud; any sentence they run out of breath on gets split."
+        ],
+        "stretch": "Find which rule your Week 5 piece already uses.",
+        "help": "Start with one rule: short sentences.",
+        "prep": "The model and the unit anchor: Say it joins Claim it, Prove it, Sell it. Students add row 1 to their Toolkit.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Eye or ear?",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "read it aloud: could you follow it with eyes closed?",
+      "followUp": "cold call one student: which rule does it use?",
+      "items": [
+        {
+          "text": "Here's what I know. We can change this.",
+          "answer": "2 - ear",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Refer to the appendix for further information.",
+          "answer": "1 - eye",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Not next year. Not next week. Today.",
+          "answer": "2 - ear",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "The graph above shows a steady decline.",
+          "answer": "1 - eye (a listener can't see a graph)",
+          "expect": "1 finger"
+        },
+        {
+          "text": "So I'm asking you, every one of you: will you help?",
+          "answer": "2 - ear",
+          "expect": "2 fingers"
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger: written for the eye. Two: written for the ear."
+        ],
+        "trap": [
+          "voting by topic, not by how it is written.",
+          "Fix: ask could you follow it with your eyes shut?"
+        ],
+        "stretch": "Rewrite the eye lines for the ear.",
+        "help": "Look for words a listener can't see, like above or appendix.",
+        "prep": "Guided practice. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which line works best spoken?",
+      "options": [
+        {
+          "text": "Littering, which is common, harms wildlife in numerous ways.",
+          "misconception": "long and formal; written for the eye"
+        },
+        {
+          "text": "Litter hurts animals. Every wrapper. Every day."
+        },
+        {
+          "text": "See the chart for litter facts.",
+          "misconception": "a listener can't see a chart"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - short sentences and repetition for the ear",
+        "beats": [
+          "SAY: Three lines for a speech at assembly. Which works best out loud?",
+          [
+            "ASK: Which line works best spoken?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: read B aloud like a speaker.",
+            "Less -> read each aloud with eyes closed, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Short, repeated, and you can feel the rhythm."
+          ]
+        ],
+        "trap": [
+          "pointing to A because it sounds grown-up.",
+          "Fix: ask could the Preps follow it at assembly? Student re-chooses."
+        ],
+        "prep": "Decision point before rewriting. Under 80% means one rewrite is done together on the board.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Make it for the ear",
+      "routine": "boards",
+      "thinkTime": 40,
+      "pivot": "split it at each comma, then read it aloud",
+      "followUp": "cold call one board: perform it for the class",
+      "items": [
+        {
+          "text": "Our canteen, which sells mostly fried food, should offer healthier options.",
+          "answer": "Our canteen sells fried food. Mostly fried food. We deserve better.",
+          "expect": "two or three short sentences"
+        },
+        {
+          "text": "It is essential that students wear hats during outdoor play.",
+          "answer": "Hats on. Every play. No exceptions.",
+          "expect": "short, direct, maybe repeated"
+        },
+        {
+          "text": "Many trees in our area have been removed for development.",
+          "answer": "Our trees are gone. One by one. For car parks.",
+          "expect": "short sentences with a punch"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Written sentences. Rewrite each one for the ear."
+        ],
+        "trap": [
+          "swapping words but keeping one long sentence.",
+          "Fix: student reads it aloud in one breath; if they can't, split it."
+        ],
+        "stretch": "Add a question to the audience at the end.",
+        "help": "Split the sentence at the commas first.",
+        "prep": "Guided rewriting. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Write it for the ear",
+      "task": "Work through your Worksheet. Finish by turning your Week 5 opening into a speech opening, then say it aloud to your partner.",
+      "where": "Worksheet",
+      "frame": "___. ___. And ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "ear",
+          "pencil",
+          "microphone"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Write for the ear",
+      "notes": {
+        "answer": "a speech opening with short sentences, repetition and you or we",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Your Week 5 opening, rewritten for the ear. Then say it aloud."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: read me one line. Did you run out of breath?",
+          [
+            "ASK: Say your speech opening to your partner. Did it work by ear?",
+            "60 sec. Turn and tell, partner A first, then swap.",
+            "EXPECT: short sentences, a repeated word"
+          ]
+        ],
+        "trap": [
+          "a speech opening that is the written opening with one word changed.",
+          "Fix: student splits every sentence over 12 words."
+        ],
+        "stretch": "Extension: signposts, then a full speech paragraph.",
+        "help": "Supported Worksheet: picture-clue choices, a first split done, a frame.",
+        "prep": "Independent application on students' own Week 5 writing. Students fill Toolkit row 1 before the exit. SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in the student's Week 5 opening rewritten as a speech opening"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Bicycles, which produce no pollution, are an excellent way to travel to school.",
+        "Rewrite it for the ear."
+      ],
+      "notes": {
+        "answer": "e.g. Bikes make no pollution. None. So ride to school.",
+        "beats": [
+          "SAY: A new written sentence. Make it work for listeners.",
+          [
+            "ASK: Rewrite the sentence for the ear.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: short sentences, maybe a repeat, maybe you"
+          ],
+          "RECORD who keeps one long sentence. Next session's warm-up group."
+        ],
+        "trap": [
+          "keeping which produce no pollution.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new sentence. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner one rule for writing for the ear, and why listeners need it.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - short sentences, because listeners can't re-read",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can write for the ear?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Tell your partner one rule for writing for the ear,",
+            "and why listeners need it.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: short sentences, because listeners can't re-read"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Toolkit row 1 filled in. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

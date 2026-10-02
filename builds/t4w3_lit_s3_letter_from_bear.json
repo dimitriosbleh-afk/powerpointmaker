@@ -1,0 +1,872 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 3,
+    "session": 3,
+    "variant": 1,
+    "minutes": 60,
+    "title": "A Letter from Bear",
+    "subtitle": "Term 4 Week 3, Session 3",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 3 Session 3",
+    "outputFolder": "T4W3_Lit_S3_Letter_From_Bear",
+    "fileName": "Session 3 - A Letter from Bear.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "paw",
+          "label": "Bear"
+        },
+        {
+          "name": "envelope",
+          "label": "a letter"
+        },
+        {
+          "name": "people",
+          "label": "to humans"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LE04 the effects of imagery (simile, metaphor, personification); VC2E5LE02 opinions on a literary text (The Last Bear); VC2E5LY10 creating persuasive texts for an audience",
+      "shape": "model, sort, picture, write: a model letter in role, a quick sort of imagery types, then students write their own letter as a polar bear, because a voice and a character unlock writing for reluctant writers",
+      "criticalFeature": "imagery shows the reader the problem so they feel it; the bear's point of view decides what the reader cares about",
+      "decisionPoints": [
+        "the Simile, metaphor or personification? round",
+        "the choice check: which line helps you picture the problem?",
+        "the exit board: a new animal, a new image"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Today the bear does all three, in its own voice.",
+      "catchUp": "Missed the week? Show the model letter and say: write as the bear, show the problem with a picture, ask humans to act."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Writing books",
+      "The class copy of The Last Bear"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1, 2 or 3",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Three imagery types: 1 simile (like, as), 2 metaphor (is a), 3 personification (acts human)",
+      "Letter outline: Dear Humans / who I am / my problem / what I need / sign-off"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: name the imagery, aim it at the problem, make pictures, then write your Letter from Bear.",
+      "title": "A Letter from Bear",
+      "subtitle": "Help the reader picture the problem, then ask them to act.",
+      "sections": [
+        {
+          "title": "Simile, metaphor or personification?",
+          "columns": 1,
+          "example": {
+            "prompt": "'The wind bit my nose.'",
+            "steps": [
+              "Like or as? Simile",
+              "Is a? Metaphor",
+              "Acting human? Personification"
+            ],
+            "answer": "personification: wind can't bite"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Name the imagery: simile, metaphor or personification.",
+              "columns": [
+                "Line",
+                "Imagery"
+              ],
+              "rows": [
+                [
+                  "The ice groaned under my weight.",
+                  ""
+                ],
+                [
+                  "My den is a cave of snow.",
+                  ""
+                ],
+                [
+                  "The sea is as grey as old steel.",
+                  ""
+                ],
+                [
+                  "The sun stared down at the melting floe.",
+                  ""
+                ],
+                [
+                  "My cubs ran like snowballs down the hill.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "The ice groaned under my weight.",
+                  "personification"
+                ],
+                [
+                  "My den is a cave of snow.",
+                  "metaphor"
+                ],
+                [
+                  "The sea is as grey as old steel.",
+                  "simile"
+                ],
+                [
+                  "The sun stared down at the melting floe.",
+                  "personification"
+                ],
+                [
+                  "My cubs ran like snowballs down the hill.",
+                  "simile"
+                ]
+              ],
+              "widths": [
+                2.2,
+                1
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Aim it at the problem",
+          "columns": 2,
+          "example": {
+            "prompt": "Problem: thin ice. Image: The ice is as thin as a biscuit.",
+            "steps": [
+              "Name the problem",
+              "Pick a picture that shows it",
+              "Check: does it show the problem?"
+            ],
+            "answer": "Yes: a thin biscuit snaps, just like the ice."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Problem: hunger. Which image shows it best?",
+              "options": [
+                "My fur is white as snow.",
+                "My belly growls like thunder.",
+                "The stars twinkle at night."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "A growling belly shows hunger; the others are pretty but off-topic."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Kai wrote this line for his letter. Find the problem and fix it.",
+              "work": [
+                "The sky was like pink candy floss."
+              ],
+              "answer": "It's pretty, but not about the bear's problem. Fix: The ice cracked like a dropped plate."
+            }
+          ]
+        },
+        {
+          "title": "Make it a picture",
+          "columns": 1,
+          "example": {
+            "prompt": "Plain: The water is warm.",
+            "steps": [
+              "Picture it",
+              "Choose simile, metaphor or personification",
+              "Write the image"
+            ],
+            "answer": "The sea is a warm bath where ice goes to die."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Turn each plain line into an image.",
+              "columns": [
+                "Bear says...",
+                "My image"
+              ],
+              "rows": [
+                [
+                  "My home is shrinking.",
+                  ""
+                ],
+                [
+                  "I am tired of swimming.",
+                  ""
+                ],
+                [
+                  "Humans are far away.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "My home is shrinking.",
+                  "My home melts away like ice cream in the sun."
+                ],
+                [
+                  "I am tired of swimming.",
+                  "My legs are heavy anchors after days at sea."
+                ],
+                [
+                  "Humans are far away.",
+                  "Your cities glow like distant stars."
+                ]
+              ],
+              "widths": [
+                1,
+                1.6
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "Your Letter from Bear",
+          "columns": 1,
+          "example": {
+            "prompt": "Dear Humans,",
+            "steps": [
+              "Who I am and my problem",
+              "Two or more images that show it",
+              "What I need you to do, and sign off"
+            ],
+            "answer": "Once, the ice was a highway. Now it is a broken jigsaw. I am asking you to..."
+          },
+          "items": [
+            {
+              "prompt": "Write your letter to humans as a polar bear (or a seal or Arctic fox). Use imagery, then ask them to act.",
+              "answer": "A letter in role with two or more images aimed at the problem and a clear call to act.",
+              "lines": 9
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: three animal voices, then a reply from a human.",
+      "title": "Voices of the Arctic",
+      "subtitle": "Every animal sees the problem differently.",
+      "sections": [
+        {
+          "title": "Three voices",
+          "columns": 1,
+          "example": {
+            "prompt": "Seal: 'The ice was my nursery. Now my pups have nowhere to rest.'",
+            "steps": [
+              "Choose the animal",
+              "Show its problem",
+              "Use a different image type each time"
+            ],
+            "answer": "A metaphor in a seal's voice."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write one line for each animal. Use a different type of imagery each time.",
+              "columns": [
+                "Animal",
+                "Imagery type",
+                "My line"
+              ],
+              "rows": [
+                [
+                  "seal",
+                  "metaphor",
+                  ""
+                ],
+                [
+                  "walrus",
+                  "simile",
+                  ""
+                ],
+                [
+                  "Arctic fox",
+                  "personification",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "seal",
+                  "metaphor",
+                  "The ice was my nursery."
+                ],
+                [
+                  "walrus",
+                  "simile",
+                  "I crowd onto beaches like people at a sale."
+                ],
+                [
+                  "Arctic fox",
+                  "personification",
+                  "The tundra whispers that winter is shrinking."
+                ]
+              ],
+              "widths": [
+                0.7,
+                0.8,
+                1.8
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "The human replies",
+          "columns": 1,
+          "example": {
+            "prompt": "Dear Bear, I read your letter...",
+            "steps": [
+              "Show you understood",
+              "Promise one clear action",
+              "Use one image"
+            ],
+            "answer": "Your broken jigsaw stays with me. Tonight, our family switches off."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write a human's reply to the bear. Show you understood, promise one action, and use one image.",
+              "answer": "A reply that echoes the bear's image and promises one specific action.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first image done and a letter frame.",
+      "title": "Letter from Bear Helper",
+      "subtitle": "A simile uses like or as. A metaphor says it IS something.",
+      "sections": [
+        {
+          "title": "Which kind?",
+          "columns": 3,
+          "example": {
+            "prompt": "'The ice is like glass.'",
+            "steps": [
+              "Look for like or as",
+              "Found like",
+              "Simile"
+            ],
+            "answer": "simile"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "The ice is as thin as paper.",
+              "options": [
+                "simile",
+                "metaphor"
+              ],
+              "answer": 0,
+              "hint": "Look for as."
+            },
+            {
+              "kind": "choice",
+              "prompt": "My den is a castle.",
+              "options": [
+                "simile",
+                "metaphor"
+              ],
+              "answer": 1,
+              "hint": "It says IS."
+            },
+            {
+              "kind": "choice",
+              "prompt": "The sea is like a bath.",
+              "options": [
+                "simile",
+                "metaphor"
+              ],
+              "answer": 0,
+              "hint": "Look for like."
+            }
+          ]
+        },
+        {
+          "title": "Make a picture",
+          "columns": 1,
+          "example": {
+            "prompt": "The ice is thin.",
+            "steps": [
+              "Write The ice is like...",
+              "Pick something thin",
+              "Finish it"
+            ],
+            "answer": "The ice is like a sheet of paper."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Finish each image.",
+              "columns": [
+                "Plain",
+                "Image"
+              ],
+              "rows": [
+                [
+                  "The ice is thin.",
+                  "The ice is like a sheet of paper."
+                ],
+                [
+                  "I am hungry.",
+                  "My belly is like ..."
+                ],
+                [
+                  "The sun is hot.",
+                  "The sun is like ..."
+                ]
+              ],
+              "answers": [
+                [
+                  "The ice is thin.",
+                  "The ice is like a sheet of paper."
+                ],
+                [
+                  "I am hungry.",
+                  "My belly is like an empty cave."
+                ],
+                [
+                  "The sun is hot.",
+                  "The sun is like a heater."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                0.8,
+                1.6
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "My letter",
+          "columns": 1,
+          "example": {
+            "prompt": "Dear Humans,",
+            "steps": [
+              "Once, ___.",
+              "Now, ___.",
+              "I am asking you to ___."
+            ],
+            "answer": "Once, the ice was strong. Now, it is like paper. I am asking you to save power."
+          },
+          "items": [
+            {
+              "prompt": "Write your letter: Dear Humans, Once, ___. Now, ___. I am asking you to ___. From, Bear.",
+              "answer": "A short letter in role with one image and a request.",
+              "lines": 6,
+              "hint": "Use one of your images from above."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today the polar bear gets to write back."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone (the letter is written on it), the Extension for early finishers and the Supported Worksheet for those who need it."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to write a persuasive letter in a character's voice, using imagery.",
+      "successCriteria": [
+        "I can write as a polar bear, using I and my.",
+        "I can use imagery to help the reader picture the bear's problem.",
+        "I can make my letter persuade humans to act."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today you're not you. You're the bear."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Writing as the bear is where we start.",
+            "Making the reader picture the problem is today's main goal."
+          ]
+        ],
+        "prep": "SC1 writing in role is reachable for all; SC2 imagery that shows the problem is the core and the exit evidence; SC3 persuading humans to act is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "If a polar bear could write to us...",
+      "lines": [
+        "In The Last Bear, Bear can't tell anyone what he needs.",
+        "What would he say to humans if he could?"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "paw",
+            "label": "Bear"
+          },
+          {
+            "name": "envelope",
+            "label": "a letter"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - help me, my ice is gone, stop what you're doing",
+        "beats": [
+          [
+            "SAY: Bear can't talk. But writers can give anyone a voice.",
+            "Even a polar bear."
+          ],
+          [
+            "ASK: What would Bear say to humans? One sentence.",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: give me back my ice; I'm hungry; why did you do this?"
+          ],
+          [
+            "ASK: Would Bear's letter be angry, sad or hopeful?",
+            "5 sec. Cue: Fingers at your chest, 1 angry, 2 sad, 3 hopeful... show me.",
+            "EXPECT: a mix"
+          ],
+          "SAY: Today you write that letter."
+        ],
+        "trap": [
+          "answers that are just about April, not Bear.",
+          "Fix: ask what does Bear need? Student answers as Bear."
+        ],
+        "prep": "Launch uses the novel's premise only (a stranded bear who cannot speak); no passage needed. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "imagery",
+      "meaning": "Words that paint a picture in the reader's mind.",
+      "example": "The ice cracked like old glass beneath my paws.",
+      "pictogram": "palette",
+      "notes": {
+        "answer": "words that paint a picture in the reader's mind",
+        "beats": [
+          "POINT to the word. SAY: Imagery. Say it with me. Imagery.",
+          [
+            "SAY: Imagery paints a picture in your head.",
+            "Some of you may remember simile and metaphor from our poetry in Term 3."
+          ],
+          [
+            "ASK: Close your eyes. What do you see in the example?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: thin ice, cracks spreading, a bear's paws"
+          ]
+        ],
+        "trap": [
+          "thinking imagery means pictures on the page.",
+          "Fix: say it's pictures made of words, in your head."
+        ],
+        "prep": "Retrieval of Term 3 poetry devices, now used to persuade.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "I Do",
+      "title": "Watch me write as the bear",
+      "extract": "Dear Humans, Once, the sea ice stretched before me like a frozen highway to the seals. Now it is a broken jigsaw, and every summer the pieces drift further apart. I swim until my legs burn. I am not asking for your pity. I am asking you to switch off, slow down and care.",
+      "highlights": [
+        "like a frozen highway",
+        "a broken jigsaw",
+        "switch off, slow down and care"
+      ],
+      "source": "Written for this session",
+      "notes": {
+        "answer": "simile and metaphor show the problem; the last line asks humans to act",
+        "beats": [
+          [
+            "READ it aloud slowly, as the bear.",
+            "SAY: I write as I. The reader hears the bear."
+          ],
+          [
+            "POINT to like a frozen highway.",
+            "SAY: A simile. Like a highway: once the ice took him straight to food."
+          ],
+          [
+            "POINT to a broken jigsaw.",
+            "SAY: A metaphor. It IS a jigsaw, falling apart. You can see the problem."
+          ],
+          [
+            "ASK: What does the bear want humans to do? Finish my last line with me.",
+            "3 sec. Cue: Everyone, together, on three.",
+            "EXPECT: switch off, slow down and care"
+          ]
+        ],
+        "trap": [
+          "imagery that's pretty but not about the problem: the sky was like candy floss.",
+          "Fix: ask does it show what's wrong? Student points the picture at the problem."
+        ],
+        "stretch": "Find the rule of three in my letter.",
+        "help": "Use one simile: The ice is like...",
+        "prep": "The model. Critical feature: imagery shows the problem so the reader feels it. Original letter, not from the novel.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Simile, metaphor or personification?",
+      "routine": "fingers",
+      "thinkTime": 6,
+      "pivot": "look for like or as, then is a, then human actions",
+      "followUp": "cold call one student: what picture did you see?",
+      "items": [
+        {
+          "text": "The wind howled at my den all night.",
+          "answer": "3 - personification (the wind howls)",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "My fur is a white blanket against the cold.",
+          "answer": "2 - metaphor (is a blanket)",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "The ice melted like butter in a pan.",
+          "answer": "1 - simile (like)",
+          "expect": "1 finger"
+        },
+        {
+          "text": "The ocean swallowed the last ice floe.",
+          "answer": "3 - personification (swallowed)",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "My cubs are as hungry as the empty sea.",
+          "answer": "1 - simile (as ... as)",
+          "expect": "1 finger"
+        }
+      ],
+      "notes": {
+        "say": [
+          "1 simile, 2 metaphor, 3 personification.",
+          "Every line is in the bear's voice."
+        ],
+        "trap": [
+          "calling personification a metaphor.",
+          "Fix: ask is something non-human doing a human action? Then it's personification."
+        ],
+        "stretch": "Say which picture shows the problem best.",
+        "help": "Check for like or as first.",
+        "prep": "Guided sort of Term 3 imagery terms in the new persuasive context. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which line helps you picture the bear's problem?",
+      "options": [
+        {
+          "text": "The ice is melting and it is really bad for me.",
+          "misconception": "tells the problem plainly; no picture to feel"
+        },
+        {
+          "text": "The ice beneath my paws is cracking like a dropped plate."
+        },
+        {
+          "text": "I am a big white polar bear and I live in the Arctic.",
+          "misconception": "in role, but no problem and no picture"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - a simile you can see and hear, aimed at the problem",
+        "beats": [
+          "SAY: Three bear lines. Which one lets you see the problem?",
+          [
+            "ASK: Which line helps you picture the bear's problem?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what's missing from C?",
+            "Less -> close eyes, read each, ask what you see, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. A dropped plate: you can see it and hear it.",
+            "And it's about the problem."
+          ]
+        ],
+        "trap": [
+          "pointing to C because it's in the bear's voice.",
+          "Fix: ask what's the problem in C? Student finds none."
+        ],
+        "prep": "Decision point before writing. Under 80% means the Make it a picture round is done with a partner first.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Make it a picture",
+      "routine": "boards",
+      "thinkTime": 40,
+      "pivot": "ask: what does it look like? like a...?",
+      "followUp": "cold call one board: which kind of imagery did you use?",
+      "items": [
+        {
+          "text": "Bear says: I am very hungry.",
+          "answer": "My stomach growls like a winter storm.",
+          "expect": "a simile, metaphor or personification about hunger"
+        },
+        {
+          "text": "Bear says: the ice is thin.",
+          "answer": "The ice is as thin as a sheet of paper.",
+          "expect": "an image of thin ice"
+        },
+        {
+          "text": "Bear says: the summers are hotter.",
+          "answer": "The sun glares down and steals my world, piece by piece.",
+          "expect": "an image of heat or melting"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Plain lines from Bear.",
+          "Turn each one into a picture the reader can see."
+        ],
+        "trap": [
+          "a cliche with no link: as cold as ice.",
+          "Fix: ask does it show the bear's problem? Student sharpens it."
+        ],
+        "stretch": "Use personification in every answer.",
+        "help": "Use the frame: ___ is like ___.",
+        "prep": "Guided imagery-making on the bear's problems. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Your Letter from Bear",
+      "task": "Work through your Worksheet. Finish by writing your Letter from Bear: help humans picture the problem, then ask them to act.",
+      "where": "Main sheet",
+      "frame": "Once, ___. Now, ___. I am asking you to ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "paw",
+          "palette",
+          "envelope"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Be the bear",
+      "notes": {
+        "answer": "a letter in role with at least two images and a call to act",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Be the bear. You could be a seal or an Arctic fox if you prefer."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: where's your picture? Does it show the problem?",
+          [
+            "ASK: How many images are in your letter so far?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 2 or more"
+          ],
+          "TIME 18 minutes. At 15, three volunteers read their best line in a bear voice."
+        ],
+        "trap": [
+          "the letter becomes a story with no ask.",
+          "Fix: student writes the last line first: I am asking you to..."
+        ],
+        "stretch": "Extension: three animal voices, then a human's reply.",
+        "help": "Supported Worksheet: picture-clue choices, a first image done, a letter frame.",
+        "prep": "Independent creative application. Letters can go on display or be read to another class. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a persuasive letter written as a polar bear, with imagery and a call to act"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Now be a sea turtle. Write one sentence to people about plastic.",
+        "Use a simile, metaphor or personification."
+      ],
+      "notes": {
+        "answer": "e.g. Your plastic bags drift past me like ghosts",
+        "beats": [
+          "SAY: A new animal, a new problem. Show me an image.",
+          [
+            "ASK: Write one sentence as a sea turtle, with imagery.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a simile, metaphor or personification about plastic"
+          ],
+          "RECORD who writes in role with no image. Tomorrow's warm-up."
+        ],
+        "trap": [
+          "Plastic is bad for turtles.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 with a new animal and problem. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Read your best line to your partner in a bear voice. What picture did it paint?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for an image that shows the problem",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can use imagery to persuade?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Read your best line in a bear voice. What did your partner picture?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: they saw the ice breaking up"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Display the letters if there is wall space. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

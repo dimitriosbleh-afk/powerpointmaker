@@ -1,0 +1,908 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 4,
+    "session": 4,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Answer Back and Finish Strong",
+    "subtitle": "Term 4 Week 4, Session 4",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 4 Session 4",
+    "outputFolder": "T4W4_Lit_S4_Finish_Strong",
+    "fileName": "Session 4 - Answer Back and Finish Strong.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA02 taking account of differing opinions; VC2E5LA03 the stages of a persuasive text (conclusion); VC2E5LY10 creating sequenced texts for an audience",
+      "shape": "model, label, echo, draft: the model's last two paragraphs, a quick label of conclusion parts, an echo-the-hook round, then students finish their whole draft, because a finished draft is what Week 5 needs",
+      "criticalFeature": "a conclusion tells the reader exactly what to do now, in words that echo the opening",
+      "decisionPoints": [
+        "the Which part of the ending? round",
+        "the choice check: the strongest call to action",
+        "the exit board: a missing call to action written"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. The ending sells one last time and asks for action.",
+      "catchUp": "Behind on the draft? Write the conclusion first today (it is the shortest), then go back to one body paragraph."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Big piece plan and the draft so far",
+      "Mini-whiteboards and markers"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 to 3",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Answer back: Some people say... However...",
+      "Conclusion: 1 restate, 2 sum up, 3 call to action (echo your hook)"
+    ]
+  },
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today you finish your draft, with a final answer and a final ask."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Students who are behind write the conclusion first."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to answer the other side and finish with a strong call to action.",
+      "successCriteria": [
+        "I can name the three parts of a conclusion.",
+        "I can write a rebuttal paragraph and a conclusion with a clear call to action.",
+        "I can make my ending echo my hook."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: By the end of today, your whole draft is done."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Naming the parts is where we start.",
+            "Writing the rebuttal and the conclusion is today's main goal."
+          ]
+        ],
+        "prep": "SC1 naming conclusion parts is reachable for all; SC2 rebuttal and conclusion with a call to action is the core and the exit evidence; SC3 echoing the hook is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Which ending would the director remember?",
+      "lines": [
+        "That is all. Thank you for reading my letter.",
+        "Twenty steps a day is no life for a polar bear. Please give them back their hundreds of kilometres."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "stop",
+            "label": "ending one"
+          },
+          {
+            "name": "target",
+            "label": "ending two"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "the second - it echoes the hook and asks for something",
+        "beats": [
+          [
+            "SAY: Two endings for my zoo letter.",
+            "The last thing a reader reads is what they remember."
+          ],
+          [
+            "ASK: Which ending would the director remember? First or second?",
+            "5 sec. Cue: Fingers at your chest, 1 or 2... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: What did the second ending bring back from the start?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: the twenty steps; the hook"
+          ],
+          "SAY: Today: answer the other side, then finish strong."
+        ],
+        "trap": [
+          "choosing the first because it's polite.",
+          "Fix: ask what will the director do after reading it? Student re-chooses."
+        ],
+        "prep": "Launch reconnects the Session 2 hook and the Week 1 rebuttal. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "call to action",
+      "meaning": "One clear thing you want the reader to do now.",
+      "example": "Please switch off one light tonight.",
+      "pictogram": "target",
+      "notes": {
+        "answer": "one clear thing you want the reader to do now",
+        "beats": [
+          "POINT to the words. SAY: Call to action. Say it with me. Call to action.",
+          [
+            "SAY: You call your reader to act. One clear thing, now.",
+            "Some of you may remember this from your posters."
+          ],
+          [
+            "ASK: What makes Please switch off one light tonight easy to do?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: it's small, it's clear, it says when"
+          ]
+        ],
+        "trap": [
+          "a call to action that is too big: save the world.",
+          "Fix: ask what would they do tomorrow morning? Student shrinks it."
+        ],
+        "prep": "Retrieved from the Week 3 posters, now in a written conclusion.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "I Do",
+      "title": "Watch me answer back and finish",
+      "extract": "Some people say zoos help children love polar bears. However, wildlife cameras let millions of children watch wild bears without taking a single bear from the ice. Twenty steps a day is no life for a polar bear. Bears need space, cold and a wild home. Please stop bringing new polar bears to your zoo, and put that money into protecting them in the Arctic.",
+      "highlights": [
+        "Some people say",
+        "However",
+        "Twenty steps a day",
+        "Please stop bringing new polar bears"
+      ],
+      "source": "Model letter, written for this session",
+      "notes": {
+        "answer": "rebuttal, then restate, sum up, call to action",
+        "beats": [
+          [
+            "POINT to Some people say.",
+            "SAY: I name their best reason fairly, then However, and I beat it."
+          ],
+          [
+            "POINT to Twenty steps a day.",
+            "SAY: New paragraph. I restate my position, and it echoes my hook."
+          ],
+          [
+            "POINT to space, cold and a wild home.",
+            "SAY: I sum up my three reasons in one line. A rule of three."
+          ],
+          [
+            "ASK: Read my call to action with me.",
+            "3 sec. Cue: Everyone, together, on three.",
+            "EXPECT: Please stop bringing new polar bears to your zoo..."
+          ]
+        ],
+        "trap": [
+          "a conclusion that adds a brand new reason.",
+          "Fix: student moves the new reason into a body paragraph."
+        ],
+        "stretch": "End on a short sentence that lands like a punch.",
+        "help": "Three lines: I believe... / ..., ... and ... / Please...",
+        "prep": "The final model paragraphs of the zoo letter. Critical feature: tell the reader exactly what to do, echoing the opening.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Which part of the ending?",
+      "routine": "fingers",
+      "thinkTime": 6,
+      "pivot": "ask: does it repeat, list, or ask?",
+      "followUp": "cold call one student: which words told you?",
+      "items": [
+        {
+          "text": "Please give us the empty land behind the library by Term 1.",
+          "answer": "3 - call to action",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "A vegetable garden is exactly what our school needs.",
+          "answer": "1 - restate",
+          "expect": "1 finger"
+        },
+        {
+          "text": "It would feed the canteen, teach science and calm busy minds.",
+          "answer": "2 - sum up",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Our playground deserves more than weeds and broken pavers.",
+          "answer": "1 - restate (echoing the context)",
+          "expect": "1 finger. ACCEPT: 2"
+        }
+      ],
+      "notes": {
+        "say": [
+          "1 restate, 2 sum up, 3 call to action.",
+          "Same garden letter as Tuesday, now its ending."
+        ],
+        "trap": [
+          "calling the restate a call to action because it sounds strong.",
+          "Fix: ask does it ask the reader to do something? If not, it's not the action."
+        ],
+        "stretch": "Put the four lines in the best order.",
+        "help": "Look for Please first.",
+        "prep": "Guided labelling of conclusion parts, mixed order. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which is the strongest call to action?",
+      "prompt": "A letter to the principal about hot classrooms",
+      "options": [
+        {
+          "text": "Thank you very much for reading my letter today.",
+          "misconception": "polite, but asks for nothing"
+        },
+        {
+          "text": "Please fit fans in the senior rooms before next summer."
+        },
+        {
+          "text": "Hot classrooms are not good for anybody at all.",
+          "misconception": "a claim, not an action"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - one clear action, with a when",
+        "beats": [
+          "SAY: Three possible last lines. Which one gets something done?",
+          [
+            "ASK: Which is the strongest call to action?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what makes B easy to say yes to?",
+            "Less -> ask what would the principal do next? for each, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. One thing, the senior rooms, before summer. Easy to say yes to."
+          ]
+        ],
+        "trap": [
+          "pointing to A because letters end with thank you.",
+          "Fix: say thank you can come after the call to action, not instead of it."
+        ],
+        "prep": "Decision point before drafting. Under 80% means students write their call to action on a board first for a check.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Echo the hook",
+      "routine": "boards",
+      "thinkTime": 30,
+      "pivot": "underline the hook's key picture, reuse it in the last line",
+      "followUp": "cold call one board: which words did you echo?",
+      "items": [
+        {
+          "text": "Hook: Have you ever eaten a tomato straight off the vine?",
+          "answer": "Give us a garden, and every student can taste one.",
+          "expect": "a last line that brings back the tomato"
+        },
+        {
+          "text": "Hook: Imagine a beach where you can't see the sand for plastic.",
+          "answer": "Let's make sure our beaches stay golden, not grey.",
+          "expect": "a last line that brings back the beach"
+        },
+        {
+          "text": "Hook: There's a monster under our school, and it eats our lunches.",
+          "answer": "Let's starve the monster: no more wasted lunches.",
+          "expect": "a last line that brings back the monster"
+        },
+        {
+          "text": "Hook: What if ten extra minutes made every afternoon calmer?",
+          "answer": "Ten minutes. Calmer afternoons. Please say yes.",
+          "expect": "a last line that brings back the ten minutes"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Great endings echo the opening.",
+          "Write a last line that brings back the hook's picture."
+        ],
+        "trap": [
+          "copying the hook word for word.",
+          "Fix: student keeps the picture, changes the sentence."
+        ],
+        "stretch": "Make the echo a call to action too.",
+        "help": "Start with Let's... and reuse one word from the hook.",
+        "prep": "Guided practice on SC3: echoing the hook. Hooks retrieved from Week 3.",
+        "tag": "[We Do | Supported application | SC3 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Finish your draft",
+      "task": "Work through your Worksheet, plan your ending, then draft your rebuttal and conclusion in your writing book.",
+      "where": "Worksheet, then writing book",
+      "frame": "Please ___ by ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "shield",
+          "target",
+          "read"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Answer back, finish, read",
+      "notes": {
+        "answer": "a rebuttal paragraph and a three-part conclusion; a complete draft",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Your Week 1 rebuttal might fit here. Upgrade it for your reader."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CONFERENCE with anyone who is two paragraphs behind. Conclusion first.",
+          [
+            "ASK: Is your whole draft finished?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: most thumbs up by the end"
+          ],
+          "TIME 22 minutes. At 20, everyone reads their ending to a partner."
+        ],
+        "trap": [
+          "a conclusion that just stops: That's why zoos are bad.",
+          "Fix: student adds Please... with one clear action."
+        ],
+        "stretch": "Extension: three styles of ending, then choose and read aloud.",
+        "help": "Supported Worksheet: picture-clue choices, a first However done, a conclusion frame.",
+        "prep": "Independent drafting to a finished first draft. Collect books to read before Session 1 of Week 5. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a plan, then the drafted rebuttal and conclusion that finish the big piece"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "The library should stay open at lunch. It gives quiet kids a safe place, builds reading and costs nothing extra.",
+        "Write the call to action that finishes this conclusion."
+      ],
+      "notes": {
+        "answer": "e.g. Please open the library every lunchtime from next Monday",
+        "beats": [
+          "SAY: A new conclusion with its last line missing.",
+          [
+            "ASK: Write the call to action.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: Please + one clear action + when"
+          ],
+          "RECORD who writes another claim instead of an action. Week 5 revision group."
+        ],
+        "trap": [
+          "Libraries are the best.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new conclusion. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Read your partner your hook and your last line. Do they echo each other?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for a picture or word that returns at the end",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How proud are you of your finished draft?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down. Read those drafts first.",
+          [
+            "ASK: Read your hook and your last line. Do they echo?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: yes, both have the twenty steps"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Every student ends Week 4 with a complete first draft. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ],
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: label ending parts, pick the call to action, echo hooks, then plan your rebuttal and conclusion.",
+      "title": "Answer Back and Finish Strong",
+      "subtitle": "Answer the other side. Then tell the reader exactly what to do.",
+      "sections": [
+        {
+          "title": "Which part?",
+          "columns": 1,
+          "example": {
+            "prompt": "'Please fix the crossing before Term 1.'",
+            "steps": [
+              "Does it repeat the claim? Restate",
+              "List the reasons? Sum up",
+              "Ask for action? Call to action"
+            ],
+            "answer": "call to action"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Label each line: rebuttal, restate, sum up or call to action.",
+              "columns": [
+                "Line",
+                "Part"
+              ],
+              "rows": [
+                [
+                  "Safer crossings save lives.",
+                  ""
+                ],
+                [
+                  "Some say lights are costly. However, one accident costs far more.",
+                  ""
+                ],
+                [
+                  "It is cheaper, safer and fairer.",
+                  ""
+                ],
+                [
+                  "Please install lights by next term.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Safer crossings save lives.",
+                  "restate"
+                ],
+                [
+                  "Some say lights are costly. However, one accident costs far more.",
+                  "rebuttal"
+                ],
+                [
+                  "It is cheaper, safer and fairer.",
+                  "sum up"
+                ],
+                [
+                  "Please install lights by next term.",
+                  "call to action"
+                ]
+              ],
+              "widths": [
+                2.3,
+                1
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Finish strong",
+          "columns": 2,
+          "example": {
+            "prompt": "A conclusion with a new reason?",
+            "steps": [
+              "Read the conclusion",
+              "Is anything new?",
+              "Move new reasons to a body paragraph"
+            ],
+            "answer": "Conclusions sum up; they never add new reasons."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Crossing letter. Best call to action?",
+              "options": [
+                "Thanks for reading.",
+                "Please add lights by Term 1.",
+                "Crossings matter."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "One clear action with a when."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Jai's conclusion adds something new. Find the problem and fix it.",
+              "work": [
+                "Bikes are healthy, cheap and clean. Also, bike shops sell cool helmets."
+              ],
+              "answer": "The helmets point is new and off-topic. Fix: cut it, then add: Please build a bike path by summer."
+            }
+          ]
+        },
+        {
+          "title": "Echo the hook",
+          "columns": 1,
+          "example": {
+            "prompt": "Hook: Imagine a playground with no shade.",
+            "steps": [
+              "Find the hook's picture",
+              "Bring it back",
+              "Add the action"
+            ],
+            "answer": "Let's make sure no child plays in a shadeless playground again."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write a last line that echoes each hook.",
+              "columns": [
+                "Hook",
+                "My echo"
+              ],
+              "rows": [
+                [
+                  "What if every lunch left zero rubbish?",
+                  ""
+                ],
+                [
+                  "The bear paced to the fence and back.",
+                  ""
+                ],
+                [
+                  "Imagine a river you could swim in again.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "What if every lunch left zero rubbish?",
+                  "Zero rubbish. Every lunch. Let's start Monday."
+                ],
+                [
+                  "The bear paced to the fence and back.",
+                  "No bear should pace a fence forever."
+                ],
+                [
+                  "Imagine a river you could swim in again.",
+                  "Let's make our river swimmable again."
+                ]
+              ],
+              "widths": [
+                1.2,
+                1.5
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "Plan your ending",
+          "columns": 1,
+          "example": {
+            "prompt": "Zoo letter",
+            "steps": [
+              "Their best reason, and my However",
+              "Restate and sum up",
+              "Call to action that echoes the hook"
+            ],
+            "answer": "Some say zoos teach kids. However, cameras do too. ... Please fund wild bears instead."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Plan your rebuttal and conclusion. Then draft them in your writing book.",
+              "columns": [
+                "Part",
+                "My notes"
+              ],
+              "rows": [
+                [
+                  "Some people say...",
+                  ""
+                ],
+                [
+                  "However, ...",
+                  ""
+                ],
+                [
+                  "Restate",
+                  ""
+                ],
+                [
+                  "Sum up",
+                  ""
+                ],
+                [
+                  "Call to action",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Some people say...",
+                  "the other side's best reason"
+                ],
+                [
+                  "However, ...",
+                  "a better reason"
+                ],
+                [
+                  "Restate",
+                  "the position in new words"
+                ],
+                [
+                  "Sum up",
+                  "three reasons in one line"
+                ],
+                [
+                  "Call to action",
+                  "one action, echoing the hook"
+                ]
+              ],
+              "widths": [
+                0.8,
+                2
+              ],
+              "rowH": 26
+            }
+          ]
+        }
+      ],
+      "tip": "Finished your draft? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: three styles of ending, then a final read-aloud check.",
+      "title": "The Last Word",
+      "subtitle": "The ending is what readers remember.",
+      "sections": [
+        {
+          "title": "Three ways to end",
+          "columns": 1,
+          "example": {
+            "prompt": "Issue: zoos.",
+            "steps": [
+              "Question ending",
+              "Picture ending",
+              "Short punch ending"
+            ],
+            "answer": "Question: Would you trade the Arctic for a cage? Picture: ... Punch: Set them free."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write three different last lines for your own piece.",
+              "columns": [
+                "Ending style",
+                "My last line"
+              ],
+              "rows": [
+                [
+                  "a rhetorical question",
+                  ""
+                ],
+                [
+                  "a picture that echoes the hook",
+                  ""
+                ],
+                [
+                  "a short punch",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "a rhetorical question",
+                  "a question the reader keeps answering"
+                ],
+                [
+                  "a picture that echoes the hook",
+                  "the hook's image, returned"
+                ],
+                [
+                  "a short punch",
+                  "three to five words"
+                ]
+              ],
+              "widths": [
+                1,
+                2
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "Choose and explain",
+          "columns": 1,
+          "example": {
+            "prompt": "My three endings",
+            "steps": [
+              "Read each aloud",
+              "Which would your reader remember?",
+              "Explain"
+            ],
+            "answer": "The picture ending: my reader saw the bear at the start, so it brings them full circle."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Which ending will you use? Explain why it suits your reader. Then read your whole draft aloud and fix two things you stumble on.",
+              "answer": "A choice with a reader-linked reason, and two named fixes.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first line done and a three-line frame.",
+      "title": "Ending Helper",
+      "subtitle": "Some people say... However... Please...",
+      "sections": [
+        {
+          "title": "Which part?",
+          "columns": 3,
+          "example": {
+            "prompt": "'Please plant trees by summer.'",
+            "steps": [
+              "Does it ask for something?",
+              "Yes",
+              "Call to action"
+            ],
+            "answer": "call to action"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Please fix our path.",
+              "options": [
+                "restate",
+                "call to action"
+              ],
+              "answer": 1,
+              "hint": "Look for Please."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Our path must be fixed.",
+              "options": [
+                "restate",
+                "call to action"
+              ],
+              "answer": 0,
+              "hint": "It repeats the claim."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Please add bins today.",
+              "options": [
+                "restate",
+                "call to action"
+              ],
+              "answer": 1,
+              "hint": "Does it say what to do?"
+            }
+          ]
+        },
+        {
+          "title": "Answer back",
+          "columns": 1,
+          "example": {
+            "prompt": "They say: zoos are fun.",
+            "steps": [
+              "Some people say ___.",
+              "However, ___.",
+              "Done!"
+            ],
+            "answer": "Some people say zoos are fun. However, bears need space."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Finish each However.",
+              "columns": [
+                "Some people say...",
+                "However, ..."
+              ],
+              "rows": [
+                [
+                  "zoos are fun.",
+                  "However, bears need space."
+                ],
+                [
+                  "bikes are slow.",
+                  "However, ..."
+                ],
+                [
+                  "trees cost money.",
+                  "However, ..."
+                ]
+              ],
+              "answers": [
+                [
+                  "zoos are fun.",
+                  "However, bears need space."
+                ],
+                [
+                  "bikes are slow.",
+                  "However, they keep us fit."
+                ],
+                [
+                  "trees cost money.",
+                  "However, they give free shade."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                1.6
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "My ending",
+          "columns": 1,
+          "example": {
+            "prompt": "Zoos",
+            "steps": [
+              "I believe ___.",
+              "___, ___ and ___.",
+              "Please ___."
+            ],
+            "answer": "I believe zoos should not keep bears. They need space, cold and freedom. Please fund wild bears."
+          },
+          "items": [
+            {
+              "prompt": "Write your conclusion: I believe ___. (three reasons in one line) Please ___.",
+              "answer": "A restated claim, a summary and a call to action.",
+              "lines": 4,
+              "hint": "Use the three reasons from your plan."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ]
+}

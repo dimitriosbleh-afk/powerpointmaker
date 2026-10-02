@@ -1,0 +1,933 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 8,
+    "session": 2,
+    "variant": 4,
+    "minutes": 60,
+    "title": "Gather the Proof",
+    "subtitle": "Term 4 Week 8, Session 2",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 8 Session 2",
+    "outputFolder": "T4W8_Lit_S2_Gather_The_Proof",
+    "fileName": "Session 2 - Gather the Proof.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY10 planning spoken persuasive texts with evidence; VC2E5LY08 selecting information to support a point of view; VC2E5LA03 language to persuade",
+      "shape": "model, guide, apply: the teacher gathers and ranks proof for the shade-trees speech, students sort evidence types and rank arguments, then gather proof for their own speech",
+      "criticalFeature": "the order of arguments builds the audience's feeling: strong, stronger, strongest last",
+      "decisionPoints": [
+        "the What kind of proof? round",
+        "the choice check: the order that builds best",
+        "the exit board: rank three reasons for a new speech"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: Prove it, and save the best for last.",
+      "catchUp": "Students without an S1 plan use the planner frame on the Supported Worksheet."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "S1 speech plan (in the speech folder)",
+      "Persuasive Speaker's Toolkit",
+      "Mini-whiteboards and markers"
+    ],
+    "routineIcons": [
+      "Fingers 1, 2 or 3",
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Three kinds of proof: 1 fact or number, 2 expert, 3 example or story",
+      "Strong, stronger, strongest last"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: sort the proof, pick the stronger proof, rank the arguments, then gather proof for your own speech.",
+      "title": "Gather the Proof",
+      "subtitle": "Strong. Stronger. Strongest last.",
+      "sections": [
+        {
+          "title": "What kind of proof?",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade cuts UV by up to 75% (Cancer Council).",
+            "steps": [
+              "Is it a number?",
+              "Is someone an expert?",
+              "Is it a story?"
+            ],
+            "answer": "A fact or number, from an expert group."
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "Sort the proof: FACT, EXPERT or STORY.",
+              "cards": [
+                "Our yard hit 41 degrees in February.",
+                "A doctor says sunburn can lead to cancer.",
+                "Mia fainted after soccer in the sun.",
+                "Trees can cool a street by several degrees.",
+                "Our principal says hot kids learn less.",
+                "Last summer, nobody could use the slide."
+              ],
+              "groups": [
+                "FACT",
+                "EXPERT",
+                "STORY"
+              ],
+              "answer": {
+                "FACT": [
+                  "Our yard hit 41 degrees in February.",
+                  "Trees can cool a street by several degrees."
+                ],
+                "EXPERT": [
+                  "A doctor says sunburn can lead to cancer.",
+                  "Our principal says hot kids learn less."
+                ],
+                "STORY": [
+                  "Mia fainted after soccer in the sun.",
+                  "Last summer, nobody could use the slide."
+                ]
+              },
+              "hint": "Who said it? What happened? Is there a number?"
+            }
+          ]
+        },
+        {
+          "title": "Which proof is stronger?",
+          "columns": 3,
+          "example": {
+            "prompt": "Claim: we need a crossing guard.",
+            "steps": [
+              "Is it exact?",
+              "Can it be checked?",
+              "Does it fit the claim?"
+            ],
+            "answer": "Twelve near misses this term beats lots of cars go past."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Claim: plastic hurts sea life.",
+              "options": [
+                "Plastic is gross.",
+                "Turtles mistake plastic bags for jellyfish."
+              ],
+              "answer": 1,
+              "hint": "Which can be checked?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Claim: kids need more sleep.",
+              "options": [
+                "Doctors say kids need 9 to 11 hours.",
+                "I'm always tired."
+              ],
+              "answer": 0,
+              "hint": "Who knows more?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Claim: our library needs more books.",
+              "options": [
+                "Books are good.",
+                "We have one book on space for 400 kids."
+              ],
+              "answer": 1,
+              "hint": "Which is exact?"
+            }
+          ]
+        },
+        {
+          "title": "Order it",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "Find the weakest reason",
+              "Find the strongest reason",
+              "Strongest last"
+            ],
+            "answer": "Birds like trees, then cooler play, then skin cancer."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write the letters in order so the strongest comes last.",
+              "columns": [
+                "Speech",
+                "Reasons",
+                "My order"
+              ],
+              "rows": [
+                [
+                  "Walk to school",
+                  "A: it's fun with friends. B: fewer cars keeps us safe. C: saves petrol.",
+                  ""
+                ],
+                [
+                  "Ban junk food ads",
+                  "A: ads are annoying. B: kids copy what they see. C: diabetes is rising in kids.",
+                  ""
+                ],
+                [
+                  "Save polar bears",
+                  "A: bears are cute. B: sea ice is shrinking. C: cubs are starving.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Walk to school",
+                  "A: it's fun with friends. B: fewer cars keeps us safe. C: saves petrol.",
+                  "A, C, B"
+                ],
+                [
+                  "Ban junk food ads",
+                  "A: ads are annoying. B: kids copy what they see. C: diabetes is rising in kids.",
+                  "A, B, C"
+                ],
+                [
+                  "Save polar bears",
+                  "A: bears are cute. B: sea ice is shrinking. C: cubs are starving.",
+                  "A, B, C (accept B last with a reason)"
+                ]
+              ],
+              "widths": [
+                0.7,
+                2.2,
+                0.6
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "My proof",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "Three arguments",
+              "Proof for each",
+              "Strongest last"
+            ],
+            "answer": "1 Birds: trees bring wildlife. 2 Cooler: yard hit 41 degrees. 3 Safer: shade cuts UV by up to 75%."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Gather proof for your own speech. Put your strongest argument last.",
+              "columns": [
+                "",
+                "My argument",
+                "My proof"
+              ],
+              "rows": [
+                [
+                  "1",
+                  "",
+                  ""
+                ],
+                [
+                  "2",
+                  "",
+                  ""
+                ],
+                [
+                  "3 (strongest)",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "1",
+                  "a reason",
+                  "a fact, expert or story"
+                ],
+                [
+                  "2",
+                  "a stronger reason",
+                  "a fact, expert or story"
+                ],
+                [
+                  "3 (strongest)",
+                  "the strongest reason",
+                  "the best proof"
+                ]
+              ],
+              "widths": [
+                0.5,
+                1.2,
+                1.6
+              ],
+              "rowH": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: test proof for trust, then add a story to your strongest argument.",
+      "title": "Proof Detective",
+      "subtitle": "Not all proof is good proof.",
+      "sections": [
+        {
+          "title": "Can you trust it?",
+          "columns": 1,
+          "example": {
+            "prompt": "My cousin says chocolate is healthy.",
+            "steps": [
+              "Who said it?",
+              "Could they know?",
+              "Can it be checked?"
+            ],
+            "answer": "Not trustworthy: a cousin isn't an expert, and it can't be checked."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Trust it or not? Explain.",
+              "columns": [
+                "Proof",
+                "Trust it?",
+                "Why"
+              ],
+              "rows": [
+                [
+                  "An ad says this drink makes you smarter.",
+                  "",
+                  ""
+                ],
+                [
+                  "The Bureau of Meteorology says 2019 was Australia's hottest year.",
+                  "",
+                  ""
+                ],
+                [
+                  "Everyone knows bears are fine.",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "An ad says this drink makes you smarter.",
+                  "no",
+                  "the company wants to sell it"
+                ],
+                [
+                  "The Bureau of Meteorology says 2019 was Australia's hottest year.",
+                  "yes",
+                  "weather experts; it can be checked"
+                ],
+                [
+                  "Everyone knows bears are fine.",
+                  "no",
+                  "who is everyone? no proof"
+                ]
+              ],
+              "widths": [
+                1.5,
+                0.5,
+                1.3
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "Add a story",
+          "columns": 1,
+          "example": {
+            "prompt": "Strongest argument: shade keeps us safe.",
+            "steps": [
+              "Find a small true moment",
+              "Who, where, what happened",
+              "Link it back"
+            ],
+            "answer": "Last summer, Sam got burnt waiting for pickup. One tree would have stopped it."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write a short true story or example to go with your strongest argument.",
+              "answer": "A small, specific story that links back to the argument.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first ranking done and a proof frame.",
+      "title": "Proof Helper",
+      "subtitle": "Fact. Expert. Story.",
+      "sections": [
+        {
+          "title": "What kind?",
+          "columns": 3,
+          "example": {
+            "prompt": "Our yard hit 41 degrees.",
+            "steps": [
+              "Is there a number?",
+              "Yes",
+              "Fact"
+            ],
+            "answer": "fact"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "A doctor says sunburn is dangerous.",
+              "options": [
+                "fact",
+                "expert"
+              ],
+              "answer": 1,
+              "hint": "Who said it?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Mia fainted in the sun.",
+              "options": [
+                "story",
+                "expert"
+              ],
+              "answer": 0,
+              "hint": "Did something happen?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Shade cuts UV by 75%.",
+              "options": [
+                "fact",
+                "story"
+              ],
+              "answer": 0,
+              "hint": "Is there a number?"
+            }
+          ]
+        },
+        {
+          "title": "Strongest last",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "Weak: birds like trees",
+              "Stronger: cooler play",
+              "Strongest: no sunburn"
+            ],
+            "answer": "birds, cooler, sunburn"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write the reasons in order: weak, stronger, strongest.",
+              "columns": [
+                "Speech",
+                "Weak",
+                "Stronger",
+                "Strongest"
+              ],
+              "rows": [
+                [
+                  "Walk to school",
+                  "it's fun",
+                  "saves petrol",
+                  "keeps us safe"
+                ],
+                [
+                  "Less plastic",
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Walk to school",
+                  "it's fun",
+                  "saves petrol",
+                  "keeps us safe"
+                ],
+                [
+                  "Less plastic",
+                  "it looks messy",
+                  "it fills the tip",
+                  "it kills sea animals"
+                ]
+              ],
+              "hint": "Reasons for plastic: it kills sea animals, it looks messy, it fills the tip.",
+              "widths": [
+                0.9,
+                0.9,
+                0.9,
+                0.9
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "My proof",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "My best reason is ___.",
+              "I know because ___.",
+              "Fact, expert or story?"
+            ],
+            "answer": "My best reason is shade stops sunburn. I know because shade cuts UV by 75%."
+          },
+          "items": [
+            {
+              "prompt": "My best reason is ___. I know because ___.",
+              "answer": "A reason and one piece of proof.",
+              "lines": 4,
+              "hint": "Use your plan from last session."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open S2. One line: a claim without proof is just an opinion."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Students need their S1 plan from the speech folder."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to choose proof and order arguments so a speech builds.",
+      "successCriteria": [
+        "I can tell a fact, an expert and a story apart.",
+        "I can order three arguments so the strongest comes last.",
+        "I can test whether proof can be trusted."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Yesterday you chose your side. Today you prove it."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Which would make you believe it?",
+      "lines": [
+        "Claim: our yard is too hot.",
+        "1: It's really hot. 2: It hit 41 degrees. 3: Mia fainted at soccer."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "thermometer",
+            "label": "a number"
+          },
+          {
+            "name": "teacher",
+            "label": "an expert"
+          },
+          {
+            "name": "openBook",
+            "label": "a story"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "2 or 3 - exact proof beats it's really hot",
+        "beats": [
+          "SAY: One claim, three ways to prove it.",
+          [
+            "ASK: Which proof convinces you most? 1, 2 or 3?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 2 or 3"
+          ],
+          [
+            "ASK: Why is 1 the weakest?",
+            "15 sec. Turn and tell, partner B first.",
+            "EXPECT: it's just an opinion; no proof"
+          ],
+          "SAY: Numbers and stories both work. Saying really doesn't."
+        ],
+        "trap": [
+          "thinking a louder claim is proof.",
+          "Fix: ask how would we check that?"
+        ],
+        "prep": "Low-entry launch. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "rank",
+      "meaning": "To put things in order, from least to most.",
+      "example": "Rank your reasons: save the strongest for last.",
+      "pictogram": "medal",
+      "notes": {
+        "answer": "to put things in order, from least to most",
+        "beats": [
+          "POINT to the word. SAY: Rank. Say it with me. Rank.",
+          [
+            "SAY: To put things in order, from least to most.",
+            "SAY: Rank your reasons: save the strongest for last."
+          ],
+          [
+            "ASK: Why save the strongest reason for last?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: it's what they remember; it builds up"
+          ]
+        ],
+        "trap": [
+          "thinking rank means remove the weak ones.",
+          "Fix: say we keep all three, we just order them."
+        ],
+        "prep": "Rank is today's ordering move.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Proof for my shade trees speech",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Order",
+            "Argument",
+            "Proof"
+          ],
+          [
+            "1 Strong",
+            "Trees bring birds and life.",
+            "Story: the magpies left when the old gum came down."
+          ],
+          [
+            "2 Stronger",
+            "Shade makes play cooler.",
+            "Fact: our yard hit 41 degrees in February."
+          ],
+          [
+            "3 Strongest",
+            "Shade protects our skin.",
+            "Expert: Cancer Council says shade cuts UV by up to 75%."
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "birds, then cooler play, then skin protection last",
+        "beats": [
+          [
+            "POINT to row 1.",
+            "SAY: Birds are nice. But nice won't get a principal spending money."
+          ],
+          [
+            "POINT to row 3.",
+            "SAY: Skin cancer is serious. An expert backs it.",
+            "That's my strongest, so it goes last."
+          ],
+          [
+            "SAY: Each argument gets one proof.",
+            "A fact, an expert or a story. I used all three."
+          ],
+          [
+            "ASK: Why didn't I put skin protection first?",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: so it builds; they remember the last"
+          ]
+        ],
+        "trap": [
+          "three arguments that are really the same one.",
+          "Fix: ask is this a new reason or the same reason again?"
+        ],
+        "stretch": "Find a second proof for the strongest argument.",
+        "help": "Start from the proof table on the Supported Worksheet.",
+        "prep": "Model: three different arguments, one proof each, ranked. Cancer Council shade figure: check current wording. Critical feature: strongest last.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]",
+        "sources": "Cancer Council Australia, shade and UV guidance (up to 75% reduction)."
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "What kind of proof?",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "ask is there a number, a who, or a happening?",
+      "followUp": "cold call one student: how did you know?",
+      "items": [
+        {
+          "text": "A vet says dogs need a walk every day.",
+          "answer": "2 - expert",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Ninety per cent of us walk past the bins.",
+          "answer": "1 - fact or number",
+          "expect": "1 finger"
+        },
+        {
+          "text": "My nan grew up with no plastic at all.",
+          "answer": "3 - story",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "Scientists say Arctic ice is shrinking.",
+          "answer": "2 - expert",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Yesterday a magpie got tangled in a bag.",
+          "answer": "3 - story",
+          "expect": "3 fingers"
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger: fact or number. Two: expert. Three: story."
+        ],
+        "trap": [
+          "calling every sentence with a number a story.",
+          "Fix: ask did something happen to someone?"
+        ],
+        "stretch": "Say which would convince a principal most.",
+        "help": "Look for a number, a job title, or a happening.",
+        "prep": "Guided practice. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which order builds best?",
+      "options": [
+        {
+          "text": "Skin cancer, then cooler play, then birds.",
+          "misconception": "strongest first; it fizzles out"
+        },
+        {
+          "text": "Birds, then cooler play, then skin cancer."
+        },
+        {
+          "text": "Cooler play, then skin cancer, then birds.",
+          "misconception": "the weakest is the last thing they hear"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - strong, stronger, strongest last",
+        "beats": [
+          "SAY: Same three arguments. Three orders.",
+          [
+            "ASK: Which order builds best?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what will they remember?",
+            "Less -> read A then B aloud, ask which ends stronger, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. It climbs. They leave with the strongest."
+          ]
+        ],
+        "trap": [
+          "pointing to A because strongest first grabs attention.",
+          "Fix: say the opening grabs them; the last argument stays with them."
+        ],
+        "prep": "Decision point before ranking. Under 80% means one more ranking done together.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Rank it",
+      "routine": "boards",
+      "thinkTime": 20,
+      "pivot": "find the strongest first, put it last, then order the rest",
+      "followUp": "cold call one board: why is that one strongest?",
+      "items": [
+        {
+          "text": "Longer lunch. A: more play. B: we eat properly. C: fewer fights.",
+          "answer": "A, B, C or A, C, B (with a reason)",
+          "expect": "A first"
+        },
+        {
+          "text": "Class pet. A: pets are cute. B: we learn to care. C: pets calm worried kids.",
+          "answer": "A, B, C",
+          "expect": "A first, C last"
+        },
+        {
+          "text": "Recycling bins. A: tidier yard. B: less landfill. C: bins look nice.",
+          "answer": "C, A, B",
+          "expect": "C first, B last"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Write the three letters in order. Strongest last."
+        ],
+        "trap": [
+          "ranking by which they like most, not which convinces.",
+          "Fix: ask which would make the principal say yes?"
+        ],
+        "stretch": "Add a proof to the strongest.",
+        "help": "Cross out the weakest first.",
+        "prep": "Guided ranking. Accept a different order with a sound reason. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Gather my proof",
+      "task": "Work through your Worksheet. Finish by writing three arguments for your own speech, with proof, strongest last.",
+      "where": "Worksheet",
+      "frame": "Argument: ___. Proof: ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "magnifier",
+          "medal",
+          "clipboard"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Strongest last",
+      "notes": {
+        "answer": "three different arguments, each with proof, strongest last",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Your three arguments and proof. Strongest goes last."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: is that a new reason? Where's your proof?",
+          [
+            "ASK: Read your strongest argument and proof to your partner.",
+            "30 sec each. Turn and tell, partner A first.",
+            "EXPECT: a reason plus a fact, expert or story"
+          ]
+        ],
+        "trap": [
+          "three arguments with no proof.",
+          "Fix: student adds one fact, expert or story to each."
+        ],
+        "stretch": "Extension: test proof for trust, then add a story.",
+        "help": "Supported Worksheet: picture-clue choices, a ranking done, a frame.",
+        "prep": "Independent application to their own speech; S3 drafts the opening. SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in the student's three ranked arguments with proof"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "A speech asks for a vegie garden at school.",
+        "Reasons: A fresh lunches, B it looks nice, C we learn where food comes from. Rank them, strongest last."
+      ],
+      "notes": {
+        "answer": "B, A, C or B, C, A (B first)",
+        "beats": [
+          "SAY: A new speech. Rank the reasons.",
+          [
+            "ASK: Write the three letters, strongest last, and why.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B first"
+          ],
+          "RECORD who puts B last. Conference list for S3."
+        ],
+        "trap": [
+          "B last because it is the easiest to see.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new speech. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Which proof in your speech will your audience remember most?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - my story; my number; my expert",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that your strongest argument comes last?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Which proof in your speech will your audience remember most?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: my story; my number; my expert"
+          ]
+        ],
+        "prep": "Arguments go in the speech folder for S3. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

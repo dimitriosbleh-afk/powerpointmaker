@@ -1,0 +1,35 @@
+{
+ "unit_folder": "Term4_Week2_Literacy_Persuasive_Writing",
+ "unit_pptx_name": "Term 4 Week 2 - Read Like a Persuader - Year 5-6 Literacy.pptx",
+ "anchor": "Claim it. Prove it. Sell it. Three pictures held all term: flag (claim), magnifier (prove), megaphone (sell). Weeks 1-5 final piece: a published persuasive text on an issue from The Last Bear.",
+ "lessons": [
+  {
+   "build_script": "builds/t4w2_lit_s1_inside_a_persuasive_text.json",
+   "folder": "T4W2_Lit_S1_Inside_A_Persuasive_Text",
+   "session": 1,
+   "title": "Inside a Persuasive Text",
+   "focus": "Highlight claim, proof and sell in a mentor text, then judge its best line. Critical feature: every sentence has a job. Fun activity: highlighting."
+  },
+  {
+   "build_script": "builds/t4w2_lit_s2_words_with_power.json",
+   "folder": "T4W2_Lit_S2_Words_With_Power",
+   "session": 2,
+   "title": "Words with Power",
+   "focus": "Choose emotive and precise words, and build word families with suffixes. Critical feature: the word changes how the reader feels, but it must stay true. Retrieves: Week 1 modality."
+  },
+  {
+   "build_script": "builds/t4w2_lit_s3_prove_it.json",
+   "folder": "T4W2_Lit_S3_Prove_It",
+   "session": 3,
+   "title": "Prove It",
+   "focus": "Pick the strongest evidence for a claim from fact cards and write a claim-prove-sell paragraph. Critical feature: evidence must match the claim and come from someone who would know. Retrieves: Term 3 appositives (Dr Lee, a scientist, says)."
+  },
+  {
+   "build_script": "builds/t4w2_lit_s4_fair_or_sneaky.json",
+   "folder": "T4W2_Lit_S4_Fair_Or_Sneaky",
+   "session": 4,
+   "title": "Fair or Sneaky?",
+   "focus": "Spot unfair persuasion (exaggeration, everyone-does-it, name-calling) and rewrite it fairly. Critical feature: strong is not the same as true."
+  }
+ ]
+}

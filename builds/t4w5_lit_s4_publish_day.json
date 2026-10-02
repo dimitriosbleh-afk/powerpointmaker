@@ -1,0 +1,914 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 5,
+    "session": 4,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Publish Day",
+    "subtitle": "Term 4 Week 5, Session 4",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 5 Session 4",
+    "outputFolder": "T4W5_Lit_S4_Publish_Day",
+    "fileName": "Session 4 - Publish Day.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY10 creating texts for purpose and audience; VC2E5LY12 writing legibly, fluently and automatically; VC2E5LY11 final editing against agreed criteria",
+      "shape": "check, title, publish, share: a last check against the checklist, a title that hooks, a clean final copy, then sharing with a real audience and reflecting on growth",
+      "criticalFeature": "a published piece is clean, clear and written for its reader, so nothing gets in the way of the message",
+      "decisionPoints": [
+        "the Ready to publish? round",
+        "the choice check: the publish-ready paragraph",
+        "the exit board: a new sentence made publish-ready"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Today the whole piece goes out into the world.",
+      "catchUp": "No finished draft? Publish the strongest paragraphs you have, with a title and your best handwriting."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Revised and edited drafts",
+      "Final Copy Pages, or devices for typing",
+      "Big Piece Checklist from Session 1",
+      "Sticky notes for audience responses"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 or 2",
+      "Point to A, B or C",
+      "Gallery walk"
+    ],
+    "boardSetup": [
+      "The audience for today: another class, the newsletter, or a real organisation (teacher's choice)",
+      "Publishing order: check, title, final copy, share"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: a final check, a hooking title, then a reflection on how your writing has grown.",
+      "title": "Publish Day",
+      "subtitle": "Check it, title it, publish it, share it.",
+      "sections": [
+        {
+          "title": "Ready to publish?",
+          "columns": 1,
+          "example": {
+            "prompt": "My draft",
+            "steps": [
+              "Read the checklist row",
+              "Find it in your draft",
+              "Tick, or fix it now"
+            ],
+            "answer": "Every row ticked, or fixed before the final copy."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Check your draft one last time. Tick or write what you fixed.",
+              "columns": [
+                "Check",
+                "Ticked or fixed"
+              ],
+              "rows": [
+                [
+                  "A hook in the first line",
+                  ""
+                ],
+                [
+                  "A clear position (Claim it)",
+                  ""
+                ],
+                [
+                  "Each body paragraph starts with its claim",
+                  ""
+                ],
+                [
+                  "Proof with who said it",
+                  ""
+                ],
+                [
+                  "Some people say... However...",
+                  ""
+                ],
+                [
+                  "A call to action at the end",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "A hook in the first line",
+                  "ticked or fixed"
+                ],
+                [
+                  "A clear position (Claim it)",
+                  "ticked or fixed"
+                ],
+                [
+                  "Each body paragraph starts with its claim",
+                  "ticked or fixed"
+                ],
+                [
+                  "Proof with who said it",
+                  "ticked or fixed"
+                ],
+                [
+                  "Some people say... However...",
+                  "ticked or fixed"
+                ],
+                [
+                  "A call to action at the end",
+                  "ticked or fixed"
+                ]
+              ],
+              "widths": [
+                1.8,
+                1
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Title it",
+          "columns": 1,
+          "example": {
+            "prompt": "Issue: zoos and polar bears.",
+            "steps": [
+              "Use your slogan, a question or a bold claim",
+              "Keep it under 8 words",
+              "Make the reader curious"
+            ],
+            "answer": "Twenty Steps Is Not a Life"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write three possible titles. Circle your favourite.",
+              "columns": [
+                "Kind of title",
+                "My title"
+              ],
+              "rows": [
+                [
+                  "a question",
+                  ""
+                ],
+                [
+                  "a bold claim",
+                  ""
+                ],
+                [
+                  "my poster slogan",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "a question",
+                  "e.g. Would You Trade the Arctic for a Cage?"
+                ],
+                [
+                  "a bold claim",
+                  "e.g. Polar Bears Belong on the Ice"
+                ],
+                [
+                  "my poster slogan",
+                  "e.g. No Ice, No Bears"
+                ]
+              ],
+              "widths": [
+                0.8,
+                2
+              ],
+              "rowH": 32
+            },
+            {
+              "kind": "choice",
+              "prompt": "Which title would make a reader most curious?",
+              "options": [
+                "My Persuasive Writing",
+                "Why Our Oval Needs Drains",
+                "Is Your Lunch Feeding the Ocean?"
+              ],
+              "answer": 2,
+              "reason": true,
+              "explain": "A question that surprises makes the reader want to read on."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Zac chose this title. Find the problem and fix it.",
+              "work": [
+                "My Persuasive Writing About Zoos That I Wrote This Term"
+              ],
+              "answer": "Too long, and it doesn't hook. Fix: Twenty Steps Is Not a Life"
+            }
+          ]
+        },
+        {
+          "title": "How I've grown",
+          "columns": 1,
+          "example": {
+            "prompt": "Week 1 me vs now",
+            "steps": [
+              "Look at your Week 1 Issue Card",
+              "Look at your final piece",
+              "Name what changed"
+            ],
+            "answer": "In Week 1 I gave opinions. Now I prove them with sources."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Look back over the unit.",
+              "columns": [
+                "Question",
+                "My answer"
+              ],
+              "rows": [
+                [
+                  "The strongest sentence I wrote",
+                  ""
+                ],
+                [
+                  "The move I'm best at now",
+                  ""
+                ],
+                [
+                  "What I'll practise next",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "The strongest sentence I wrote",
+                  "a copied sentence"
+                ],
+                [
+                  "The move I'm best at now",
+                  "claim, prove, sell, a device, a rebuttal..."
+                ],
+                [
+                  "What I'll practise next",
+                  "a specific next step"
+                ]
+              ],
+              "widths": [
+                1,
+                1.8
+              ],
+              "rowH": 36
+            }
+          ]
+        }
+      ],
+      "tip": "Finished your final copy? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: an author's note and a blurb that persuades people to read the class collection.",
+      "title": "Author's Note",
+      "subtitle": "Real books tell readers why the author wrote them.",
+      "sections": [
+        {
+          "title": "Author's note",
+          "columns": 1,
+          "example": {
+            "prompt": "Why I wrote this",
+            "steps": [
+              "What made you care about the issue?",
+              "Who did you write it for?",
+              "What do you hope happens?"
+            ],
+            "answer": "I chose polar bears because The Last Bear made me feel..."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write an author's note (4-5 sentences) to go beside your published piece: why you chose the issue and what you hope readers do.",
+              "answer": "A personal, persuasive note linked to the issue and the reader.",
+              "lines": 6
+            }
+          ]
+        },
+        {
+          "title": "The blurb",
+          "columns": 1,
+          "example": {
+            "prompt": "Back-cover blurb",
+            "steps": [
+              "Hook the reader",
+              "Say what is inside",
+              "Tell them to read it"
+            ],
+            "answer": "Twenty-five young writers. One frozen planet. Read their voices before the ice is gone."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write a 3-4 sentence blurb that persuades people to read our class collection, Voices for the Arctic.",
+              "answer": "A hooking blurb with devices and a call to action.",
+              "lines": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: a picture checklist, a title frame and a reflection frame.",
+      "title": "Publish Day Helper",
+      "subtitle": "Check, title, publish.",
+      "sections": [
+        {
+          "title": "Quick check",
+          "columns": 3,
+          "example": {
+            "prompt": "My draft",
+            "steps": [
+              "Look for it",
+              "Found it?",
+              "Tick"
+            ],
+            "answer": "Hook? Tick."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Does your piece start with a hook?",
+              "options": [
+                "yes",
+                "not yet"
+              ],
+              "answer": 0,
+              "hint": "A question, fact or Imagine..."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Does it say Please... at the end?",
+              "options": [
+                "yes",
+                "not yet"
+              ],
+              "answer": 0,
+              "hint": "Look at your last line."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Did you say who your fact came from?",
+              "options": [
+                "yes",
+                "not yet"
+              ],
+              "answer": 0,
+              "hint": "According to..."
+            }
+          ]
+        },
+        {
+          "title": "My title",
+          "columns": 1,
+          "example": {
+            "prompt": "Zoos",
+            "steps": [
+              "Pick a kind",
+              "Write it",
+              "Check it is short"
+            ],
+            "answer": "No Ice, No Bears"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Finish a title.",
+              "columns": [
+                "Kind",
+                "My title"
+              ],
+              "rows": [
+                [
+                  "question",
+                  "Should ...?"
+                ],
+                [
+                  "bold claim",
+                  "... Must ..."
+                ]
+              ],
+              "answers": [
+                [
+                  "question",
+                  "Should Zoos Keep Polar Bears?"
+                ],
+                [
+                  "bold claim",
+                  "Bears Must Stay Wild"
+                ]
+              ],
+              "hint": "Use your issue.",
+              "widths": [
+                0.8,
+                2
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "I'm proud of",
+          "columns": 1,
+          "example": {
+            "prompt": "My best sentence",
+            "steps": [
+              "Find it",
+              "Copy it",
+              "Say why"
+            ],
+            "answer": "I'm proud of my hook because it makes people think."
+          },
+          "items": [
+            {
+              "prompt": "Finish: I'm proud of ___ because ___.",
+              "answer": "A part of their writing and a reason.",
+              "lines": 3,
+              "hint": "Look for your best sentence."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    },
+    {
+      "kind": "page",
+      "label": "Final Copy Page",
+      "description": "Publishing page for the final copy: a title box and wide lines for best handwriting. Students who type use devices instead.",
+      "title": "Voices for the Arctic",
+      "subtitle": "Final copy. Best handwriting. Every sentence checked.",
+      "blocks": [
+        {
+          "box": 60,
+          "label": "My title"
+        },
+        {
+          "text": "By: ______________________"
+        },
+        {
+          "text": "Written for: ______________________"
+        },
+        {
+          "lines": 17
+        }
+      ],
+      "showNameDate": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today your writing goes out into the world."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print two Final Copy Pages per student, the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Book the audience: another class, the newsletter or a real organisation. Collect the final copies for a class collection, Voices for the Arctic."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to publish a polished persuasive piece for a real audience.",
+      "successCriteria": [
+        "I can do a final check of my writing.",
+        "I can publish a clean, clear final copy for my reader.",
+        "I can reflect on how my writing has grown."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Five weeks of thinking, arguing and drafting. Today it goes public."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Who will read your writing?",
+      "lines": [
+        "Our audience today: ___",
+        "What do they need from a published piece?"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "books",
+            "label": "publish"
+          },
+          {
+            "name": "people",
+            "label": "a real audience"
+          },
+          {
+            "name": "trophy",
+            "label": "your best"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "neat, correct, a clear title, easy to read, convincing",
+        "beats": [
+          [
+            "SAY: Fill in today's audience on the board.",
+            "Real people will read your writing."
+          ],
+          [
+            "ASK: What will your readers need from a published piece?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: neat writing, no mistakes, a good title, clear paragraphs"
+          ],
+          [
+            "ASK: How ready do you feel to publish?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: mostly up or sideways"
+          ],
+          "SAY: Check, title, final copy, share. Let's go."
+        ],
+        "trap": [
+          "thinking publish means copying it out again, unchanged.",
+          "Fix: say publishing is the last chance to fix and polish."
+        ],
+        "prep": "Name the real audience before the session; it is the strongest motivation on Publish Day. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "publish",
+      "meaning": "To share a finished piece with a real audience.",
+      "example": "Our class collection is published for families to read.",
+      "pictogram": "books",
+      "notes": {
+        "answer": "to share a finished piece with a real audience",
+        "beats": [
+          "POINT to the word. SAY: Publish. Say it with me. Publish.",
+          [
+            "SAY: To share a finished piece with a real audience.",
+            "SAY: Our class collection is published for families to read."
+          ],
+          [
+            "ASK: Who could we publish our writing for?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: families, another class, the council, the newsletter"
+          ]
+        ],
+        "trap": [
+          "thinking publish only means a printed book.",
+          "Fix: say a newsletter, a website or reading aloud are publishing too."
+        ],
+        "prep": "The word sets up the audience for the share at the end.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "What publish-ready looks like",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Ready",
+            "Looks like"
+          ],
+          [
+            "Title",
+            "short, hooking, centred at the top"
+          ],
+          [
+            "Paragraphs",
+            "a new line for each, with space between"
+          ],
+          [
+            "Handwriting",
+            "your best: joined, even, on the lines"
+          ],
+          [
+            "Checked",
+            "every CUPS fix copied across"
+          ],
+          [
+            "Signed",
+            "By: your name. Written for: your reader."
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "title, paragraphs, best handwriting, every fix copied, signed",
+        "beats": [
+          [
+            "POINT to Title.",
+            "SAY: The title is the first thing your reader sees. Make it hook."
+          ],
+          [
+            "POINT to Paragraphs.",
+            "SAY: Each paragraph on a new line, with a gap. Readers need to see your structure."
+          ],
+          [
+            "POINT to Checked.",
+            "SAY: Copy every fix across. A final copy with old mistakes in it isn't final."
+          ],
+          [
+            "ASK: Which row will you need to watch most carefully?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: handwriting; copying fixes across"
+          ]
+        ],
+        "trap": [
+          "copying from the old draft and missing the coloured fixes.",
+          "Fix: student ticks each fix as it is copied."
+        ],
+        "stretch": "Add a short author's line under your title.",
+        "help": "Copy one paragraph at a time, ticking each fix.",
+        "prep": "The model. VC2E5LY12: legible, fluent final copy. Typed copies are fine where the school allows.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Ready or not?",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "check each against the publish-ready table",
+      "followUp": "cold call one student: what would make it ready?",
+      "items": [
+        {
+          "text": "The title is: My Writing.",
+          "answer": "2 - not ready: it doesn't hook",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Every paragraph starts on a new line with a gap.",
+          "answer": "1 - ready",
+          "expect": "1 finger"
+        },
+        {
+          "text": "The last line says: Please switch off one light tonight.",
+          "answer": "1 - ready: a clear call to action",
+          "expect": "1 finger"
+        },
+        {
+          "text": "The draft's coloured fixes weren't copied into the final copy.",
+          "answer": "2 - not ready: copy the fixes across",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "It says: Written for: the zoo director.",
+          "answer": "1 - ready: it names the reader",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Paragraph 2 is squeezed into the margin.",
+          "answer": "2 - not ready: start it on a new line",
+          "expect": "2 fingers"
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger ready, two not ready yet."
+        ],
+        "trap": [
+          "voting ready because it sounds fine.",
+          "Fix: check against the table, row by row."
+        ],
+        "stretch": "Fix each one that isn't ready.",
+        "help": "Look at the table on the slide before.",
+        "prep": "Guided check before the final copy. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which paragraph is publish-ready?",
+      "options": [
+        {
+          "text": "polar bears need our help acording to NASA the ice is shrinking",
+          "misconception": "copied the content but not the edits"
+        },
+        {
+          "text": "Polar bears need our help. According to NASA, the ice is shrinking."
+        },
+        {
+          "text": "Polar bears need our help!!!!! The ice is shrinking!!!!!",
+          "misconception": "thinks lots of punctuation is polish; lost the source"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - capitals, comma, spelling and the source all right",
+        "beats": [
+          "SAY: Three final copies of the same paragraph. Only one is ready.",
+          [
+            "ASK: Which paragraph is publish-ready?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what went wrong in C?",
+            "Less -> run CUPS on each together, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Every fix is there, and nothing distracts the reader."
+          ]
+        ],
+        "trap": [
+          "pointing to C because it looks excited.",
+          "Fix: ask where did the proof go? Student sees it is missing."
+        ],
+        "prep": "Decision point before the final copy. Under 80% means everyone runs the Worksheet's check row by row before copying.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Publish your piece",
+      "task": "Do the final check and title on your Worksheet. Then write your final copy on the Final Copy Page, in your best handwriting.",
+      "where": "Worksheet, then Final Copy Page",
+      "frame": "By: ___  Written for: ___",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "tick",
+          "pencil",
+          "books",
+          "trophy"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Check, title, publish",
+      "notes": {
+        "answer": "a clean, titled, signed final copy",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Final check first. Then your best handwriting, one paragraph at a time."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Spot check: is that fix from the draft copied across?",
+          [
+            "ASK: How many paragraphs are on your final copy?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 2 or 3 by halfway"
+          ]
+        ],
+        "trap": [
+          "rushing the final copy and adding new mistakes.",
+          "Fix: student reads each finished paragraph aloud before starting the next."
+        ],
+        "stretch": "Extension: an author's note and a blurb for the class collection.",
+        "help": "Supported Worksheet: a picture checklist and frames; publish the best paragraphs.",
+        "prep": "Independent publishing, about 25 minutes. Leave 8 minutes for the share. SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a final check and title, then the published final copy"
+    },
+    {
+      "kind": "content",
+      "badge": "We Do",
+      "title": "Share it: gallery walk",
+      "lines": [
+        "Lay your final copy on your desk.",
+        "Read three pieces. Leave a sticky note on each:",
+        "This made me want to..."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "walk",
+            "label": "walk"
+          },
+          {
+            "name": "read",
+            "label": "read"
+          },
+          {
+            "name": "sticker",
+            "label": "respond"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - notes say what the reader wants to do",
+        "beats": [
+          "SAY: Real readers react. Your note tells the writer their piece worked.",
+          "CIRCULATE with the class. Read notes aloud that name an action.",
+          [
+            "ASK: Point to a piece that made you want to act.",
+            "10 sec. Cue: voices off, everyone points to it... now.",
+            "EXPECT: a few pieces get many points"
+          ],
+          [
+            "ASK: What did that writer do to persuade you?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: their story made me care; their fact surprised me"
+          ]
+        ],
+        "trap": [
+          "notes that say good job.",
+          "Fix: model one: This made me want to switch off lights."
+        ],
+        "prep": "The authentic-audience share. If another class visits, they write the sticky notes. 8 minutes. SC3.",
+        "tag": "[We Do | Supported application | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "This line is going in the class collection: in our school the kids bags are left on the floor and its messy",
+        "Make it publish-ready."
+      ],
+      "notes": {
+        "answer": "In our school, the kids' bags are left on the floor, and it's messy.",
+        "beats": [
+          "SAY: One more line to make publish-ready.",
+          [
+            "ASK: Rewrite it publish-ready.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: capital, comma after school, kids', it's, full stop"
+          ],
+          "RECORD who misses two or more fixes. Speech unit warm-ups next week."
+        ],
+        "trap": [
+          "fixing the capital only.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new line. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner one thing you can do now that you couldn't in Week 1.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - I can prove my claims with real sources",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How proud are you of your published piece?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Tell your partner one thing you can",
+            "do now that you couldn't in Week 1.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: I can prove my claims with real sources"
+          ]
+        ],
+        "prep": "Unit reflection. The class collection, Voices for the Arctic, goes to the audience this week. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

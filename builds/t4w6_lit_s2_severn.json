@@ -1,0 +1,941 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 6,
+    "session": 2,
+    "variant": 4,
+    "minutes": 60,
+    "title": "Severn's Six Minutes",
+    "subtitle": "Term 4 Week 6, Session 2",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 6 Session 2",
+    "outputFolder": "T4W6_Lit_S2_Severn",
+    "fileName": "Session 2 - Severn's Six Minutes.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY09 comprehension strategies to evaluate a spoken text; VC2E5LA01 language that signals social roles (a child speaking to world leaders); VC2E5LY02 spoken texts using features of voice",
+      "shape": "listen, map, try: students watch the selected section of Severn's speech, map her message, audience and think-feel-do, then write their own 'who I am and why I care' opening",
+      "criticalFeature": "a speaker earns the right to be heard by saying who they are and why it matters to them; Severn turns 'only a child' into her strength",
+      "decisionPoints": [
+        "the Why should we listen? round",
+        "the choice check: the opening that earns the right to be heard",
+        "the exit board: a new credibility line"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: who I am and why I care.",
+      "catchUp": "Missed Session 1? Say: speeches are written for the ear. Play the clip again; the Worksheet starts from the speech itself."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Persuasive Speaker's Toolkit",
+      "Mini-whiteboards and markers",
+      "Writing books"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Turn and tell",
+      "Thumbs vote"
+    ],
+    "boardSetup": [
+      "Listening grid: Message? Audience? Think? Feel? Do?",
+      "Cue the selected section of Severn's speech (DCE Speech Collection)"
+    ],
+    "videos": [
+      "DCE Speech Collection: Severn Cullis-Suzuki, Earth Summit speech, age 12 (teacher's copy; play the opening and the 'fix it' section)"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: map Severn's speech, judge credibility lines, write lines that earn the right to speak, then your own opening.",
+      "title": "Severn's Six Minutes",
+      "subtitle": "Who is she? Why should the world listen?",
+      "sections": [
+        {
+          "title": "Map the speech",
+          "columns": 1,
+          "example": {
+            "prompt": "Any speech: message, audience, think, feel, do.",
+            "steps": [
+              "Message: the big idea in one sentence",
+              "Audience: who is in the room?",
+              "Think, feel, do: what does she want?"
+            ],
+            "answer": "Message: adults must stop harming the planet."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in the listening grid for Severn's speech.",
+              "columns": [
+                "Question",
+                "My answer"
+              ],
+              "rows": [
+                [
+                  "Her message in one sentence",
+                  ""
+                ],
+                [
+                  "Her audience",
+                  ""
+                ],
+                [
+                  "What she wants them to think",
+                  ""
+                ],
+                [
+                  "What she wants them to feel",
+                  ""
+                ],
+                [
+                  "What she wants them to do",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Her message in one sentence",
+                  "Adults must stop damaging the planet our generation will inherit."
+                ],
+                [
+                  "Her audience",
+                  "world leaders at the 1992 Earth Summit"
+                ],
+                [
+                  "What she wants them to think",
+                  "children see the harm clearly"
+                ],
+                [
+                  "What she wants them to feel",
+                  "ashamed, responsible, moved"
+                ],
+                [
+                  "What she wants them to do",
+                  "stop breaking what they can't fix; act now"
+                ]
+              ],
+              "widths": [
+                1,
+                1.8
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Who gets heard?",
+          "columns": 2,
+          "example": {
+            "prompt": "'I'm a lifeguard, and I've pulled plastic from this beach every summer.'",
+            "steps": [
+              "Who are they?",
+              "What have they seen or done?",
+              "Why does that matter?"
+            ],
+            "answer": "Experience: they've seen the problem first-hand."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Topic: a school garden. Which opening earns the right to be heard?",
+              "options": [
+                "Hi, I'm Lily.",
+                "I'm Lily. I eat lunch by that dirt patch daily.",
+                "I'm Lily. I'm great at speeches."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "It shows she knows the problem first-hand."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Max opened his speech like this. Find the problem and fix it.",
+              "work": [
+                "Hello, my name is Max and today I am going to do my speech."
+              ],
+              "answer": "It says nothing about why we should listen. Fix: I'm Max, and I walk past our flooded oval every winter."
+            }
+          ]
+        },
+        {
+          "title": "Earn the right to speak",
+          "columns": 1,
+          "example": {
+            "prompt": "Speaker: a Year 6 student. Issue: climate.",
+            "steps": [
+              "Who are you?",
+              "What is your link to the issue?",
+              "Turn 'only' into a strength"
+            ],
+            "answer": "I'm only twelve. But I'll live with your choices longer than anyone here."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write a line that earns the right to be heard.",
+              "columns": [
+                "Speaker and issue",
+                "My line"
+              ],
+              "rows": [
+                [
+                  "a Prep student: more shade",
+                  ""
+                ],
+                [
+                  "a new student: a buddy bench",
+                  ""
+                ],
+                [
+                  "a kid: a bike path, to the council",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "a Prep student: more shade",
+                  "I'm only small, but I get burnt every lunch."
+                ],
+                [
+                  "a new student: a buddy bench",
+                  "I was new here once. I know what it's like to sit alone."
+                ],
+                [
+                  "a kid: a bike path, to the council",
+                  "I'm not old enough to vote, but I ride this road every day."
+                ]
+              ],
+              "widths": [
+                1.1,
+                1.6
+              ],
+              "rowH": 36
+            }
+          ]
+        },
+        {
+          "title": "My opening",
+          "columns": 1,
+          "example": {
+            "prompt": "My issue",
+            "steps": [
+              "Who I am",
+              "My link to the issue",
+              "Why that matters"
+            ],
+            "answer": "I'm a Year 6 student. I've read about the Arctic all term. And I can't unsee it."
+          },
+          "items": [
+            {
+              "prompt": "Write the opening of a speech on your issue that tells the audience who you are and why you care.",
+              "answer": "Who they are, their link to the issue, and why it matters, in short spoken sentences.",
+              "lines": 6
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Add Severn to your Toolkit, then grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: name her techniques and their effects, then write what she might say now.",
+      "title": "Then and Now",
+      "subtitle": "Severn spoke in 1992. What would she say today?",
+      "sections": [
+        {
+          "title": "How she persuades",
+          "columns": 1,
+          "example": {
+            "prompt": "Technique: 'I'm only a child'",
+            "steps": [
+              "Name the technique",
+              "Where in the speech?",
+              "What does it do to the audience?"
+            ],
+            "answer": "It makes the adults feel responsible."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Name three of Severn's techniques and their effect.",
+              "columns": [
+                "Technique",
+                "Effect on the audience"
+              ],
+              "rows": [
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "a child's point of view",
+                  "the adults feel responsible"
+                ],
+                [
+                  "simple, direct requests",
+                  "it sounds obvious and fair"
+                ],
+                [
+                  "speaking for future generations",
+                  "the audience thinks beyond today"
+                ]
+              ],
+              "widths": [
+                1,
+                1.6
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "Severn, today",
+          "columns": 1,
+          "example": {
+            "prompt": "Same message, new year.",
+            "steps": [
+              "Keep her voice",
+              "Use a fact from today",
+              "End with her kind of request"
+            ],
+            "answer": "We're still asking. The ice is still melting. Please, stop breaking it."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write four to six lines Severn might say to world leaders today. Keep her voice and use one fact from our unit.",
+              "answer": "Lines in her plain, direct voice with a current fact and a request.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first line done and a frame.",
+      "title": "Severn Helper",
+      "subtitle": "Who is she? Who is listening? What does she want?",
+      "sections": [
+        {
+          "title": "The speech",
+          "columns": 3,
+          "example": {
+            "prompt": "Who spoke?",
+            "steps": [
+              "Listen to the start",
+              "She says her age",
+              "Severn, age 12"
+            ],
+            "answer": "Severn, age 12"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Who was her audience?",
+              "options": [
+                "her class",
+                "world leaders"
+              ],
+              "answer": 1,
+              "hint": "She spoke at a big world meeting."
+            },
+            {
+              "kind": "choice",
+              "prompt": "What does she want adults to do?",
+              "options": [
+                "stop harming the Earth",
+                "build more cities"
+              ],
+              "answer": 0,
+              "hint": "Think about the 'fix it' line."
+            },
+            {
+              "kind": "choice",
+              "prompt": "How old was she?",
+              "options": [
+                "12",
+                "20"
+              ],
+              "answer": 0,
+              "hint": "She was a kid, like you."
+            }
+          ]
+        },
+        {
+          "title": "Why listen to me?",
+          "columns": 1,
+          "example": {
+            "prompt": "Issue: shade",
+            "steps": [
+              "I'm ___",
+              "I ___",
+              "So I care"
+            ],
+            "answer": "I'm in Year 5. I get hot every lunch. So I care about shade."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Finish each line.",
+              "columns": [
+                "Issue",
+                "Why listen to me?"
+              ],
+              "rows": [
+                [
+                  "shade",
+                  "I'm in Year 5. I get hot every lunch."
+                ],
+                [
+                  "bins",
+                  "I'm ___. I ___."
+                ],
+                [
+                  "a bike path",
+                  "I'm ___. I ___."
+                ]
+              ],
+              "answers": [
+                [
+                  "shade",
+                  "I'm in Year 5. I get hot every lunch."
+                ],
+                [
+                  "bins",
+                  "I'm a student. I see rubbish every day."
+                ],
+                [
+                  "a bike path",
+                  "I'm a bike rider. I ride the busy road."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                0.7,
+                2
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "My opening",
+          "columns": 1,
+          "example": {
+            "prompt": "Zoos",
+            "steps": [
+              "I'm ___.",
+              "I ___.",
+              "That's why I care about ___."
+            ],
+            "answer": "I'm a Year 6 student. I've read The Last Bear. That's why I care about polar bears."
+          },
+          "items": [
+            {
+              "prompt": "Finish: I'm ___. I ___. That's why I care about ___.",
+              "answer": "A three-part opening.",
+              "lines": 3,
+              "hint": "Use your issue from the writing unit."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: a twelve-year-old once silenced a room of world leaders. Today we find out how."
+    },
+    {
+      "kind": "resources",
+      "notes": "Cue the selected section of Severn Cullis-Suzuki's Earth Summit speech from the DCE Speech Collection. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Toolkits out."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how a speaker earns the right to be heard.",
+      "successCriteria": [
+        "I can say a speaker's message and audience.",
+        "I can explain how a speaker shows who they are and why they care.",
+        "I can write an opening that earns my right to be heard."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today a twelve-year-old teaches us how to make adults listen."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "A kid at the world's biggest meeting",
+      "lines": [
+        "Rio de Janeiro, 1992. The Earth Summit.",
+        "World leaders in the room. A 12-year-old at the microphone.",
+        "Would they listen?"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "globe",
+            "label": "Earth Summit, 1992"
+          },
+          {
+            "name": "student",
+            "label": "age 12"
+          },
+          {
+            "name": "microphone",
+            "label": "six minutes"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - most say no, kids aren't taken seriously",
+        "beats": [
+          [
+            "SAY: In 1992,",
+            "leaders from around the world met in Rio to talk about the planet.",
+            "One speaker was Severn Cullis-Suzuki. She was twelve."
+          ],
+          [
+            "ASK: Would world leaders listen to a twelve-year-old?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: mostly down or sideways"
+          ],
+          [
+            "ASK: What would a kid have to do to make them listen?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: say something true; make them feel guilty; be brave"
+          ],
+          "SAY: Let's watch, and find out what she did."
+        ],
+        "trap": [
+          "assuming kids can't persuade adults.",
+          "Fix: say that is exactly the doubt Severn used."
+        ],
+        "prep": "Launch sets the context. SOURCES: Severn Cullis-Suzuki, UN Earth Summit, Rio de Janeiro, June 1992, aged 12.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "credibility",
+      "meaning": "The reasons an audience should believe and listen to you.",
+      "example": "A lifeguard talking about beach safety has credibility.",
+      "pictogram": "shield",
+      "notes": {
+        "answer": "the reasons an audience should believe and listen to you",
+        "beats": [
+          "POINT to the word. SAY: Credibility. Say it with me. Credibility.",
+          [
+            "SAY: The reasons an audience should believe and listen to you.",
+            "SAY: A lifeguard talking about beach safety has credibility."
+          ],
+          [
+            "ASK: Who has more credibility on school lunches:",
+            "a chef or a student who eats them?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: both, for different reasons"
+          ]
+        ],
+        "trap": [
+          "thinking credibility only comes from being an adult or an expert.",
+          "Fix: ask what has this person seen or lived? That counts too."
+        ],
+        "prep": "The technique word for the session: Toolkit row 2.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Listen like a speech detective",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Question",
+            "Severn's speech"
+          ],
+          [
+            "Message",
+            "Adults must stop harming the planet."
+          ],
+          [
+            "Audience",
+            "world leaders at the Earth Summit"
+          ],
+          [
+            "Think",
+            "children see the harm clearly"
+          ],
+          [
+            "Feel",
+            "responsible, even ashamed"
+          ],
+          [
+            "Do",
+            "stop breaking what you can't fix"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "message, audience, and what she wants them to think, feel and do",
+        "beats": [
+          [
+            "PLAY the selected section from the DCE Speech Collection.",
+            "SAY: Listen for who she says she is, and who she's talking to."
+          ],
+          [
+            "POINT to Message.",
+            "SAY: One sentence for the whole speech. Adults must stop harming the planet."
+          ],
+          [
+            "POINT to Feel.",
+            "SAY: She doesn't shout. She makes a room of adults feel responsible.",
+            "That's credibility from being a child."
+          ],
+          [
+            "ASK: What does she want them to DO?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: stop breaking it; change; act"
+          ]
+        ],
+        "trap": [
+          "writing the topic (the environment) as the message.",
+          "Fix: ask what does she want to happen? Student writes a claim."
+        ],
+        "stretch": "Find where she turns being young into a strength.",
+        "help": "Listen for one word: fix.",
+        "prep": "The model: the listening grid used for every speaker this week. Critical feature: earning the right to be heard. CARE: discuss gently that some students feel worried about the planet.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Think, feel or do?",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "ask: is it a fact, a feeling or an action?",
+      "followUp": "cold call one student: which word told you?",
+      "items": [
+        {
+          "text": "Please turn off one light tonight.",
+          "answer": "3 - do",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "Imagine a hungry bear on melting ice.",
+          "answer": "2 - feel",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Arctic summer ice shrinks about 12 percent a decade.",
+          "answer": "1 - think",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Look at your own children. They are counting on you.",
+          "answer": "2 - feel",
+          "expect": "2 fingers"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Speakers want us to think, feel, then do.",
+          "1 think, 2 feel, 3 do."
+        ],
+        "trap": [
+          "calling every line feel.",
+          "Fix: ask is it a fact? Then it's think."
+        ],
+        "stretch": "Find a line that does two jobs.",
+        "help": "Look for Please: that's usually do.",
+        "prep": "Guided practice on the listening grid's last three rows. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Her most famous line",
+      "visual": {
+        "type": "text",
+        "text": "\"If you don't know how to fix it, please stop breaking it!\""
+      },
+      "label": "Severn Cullis-Suzuki, Earth Summit, 1992",
+      "notes": {
+        "answer": "simple logic, a polite word, and a request any child could make",
+        "beats": [
+          [
+            "READ it aloud, slowly, the way she said it.",
+            "SAY: Twelve words. A child could say it."
+          ],
+          [
+            "POINT to please.",
+            "SAY: She's polite, even when she's telling adults off. That makes it hard to argue with."
+          ],
+          [
+            "ASK: Say the line with me, the way she said it.",
+            "3 sec. Cue: Everyone, together, on three.",
+            "EXPECT: If you don't know how to fix it, please stop breaking it!"
+          ],
+          [
+            "ASK: Why is this line so hard to argue with?",
+            "15 sec. Turn and tell, partner B first.",
+            "EXPECT: it's obvious; it's fair; a kid said it"
+          ]
+        ],
+        "trap": [
+          "thinking a powerful line needs big words.",
+          "Fix: count the long words. None. Simple is strong."
+        ],
+        "stretch": "Write your own twelve-word line for your issue.",
+        "help": "Copy her pattern: If you ___, please ___.",
+        "prep": "A short, famous line for close study; play it in context from the DCE clip. Toolkit row 2: who I am and why I care.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Why should we listen?",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "ask: what has this person seen, done or lived?",
+      "followUp": "cold call one board: is that a strong reason to listen?",
+      "items": [
+        {
+          "text": "I've swum at this beach every morning for ten years.",
+          "answer": "experience: they know the beach",
+          "expect": "experience or they've seen it"
+        },
+        {
+          "text": "I'm a Year 6 student, and I'll live with these choices the longest.",
+          "answer": "stake: it affects them most",
+          "expect": "it affects them; they'll live with it"
+        },
+        {
+          "text": "I'm a nurse, and I treat sunburnt kids every summer.",
+          "answer": "expertise and experience",
+          "expect": "they're an expert or they've seen it"
+        },
+        {
+          "text": "I'm only ten. But I can count the bins that overflow every Friday.",
+          "answer": "turns 'only ten' into a strength: they've seen it",
+          "expect": "a weakness made into a strength"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Each speaker gives a reason to listen.",
+          "Write what gives them the right to be heard."
+        ],
+        "trap": [
+          "writing because they're nice.",
+          "Fix: ask what do they know that we don't? Student rewrites."
+        ],
+        "stretch": "Rank the four by how much you'd trust them.",
+        "help": "Choose from: experience, expert, it affects them.",
+        "prep": "Guided practice on credibility. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which opening earns the right to be heard?",
+      "prompt": "Topic: our school needs a crossing guard.",
+      "options": [
+        {
+          "text": "Hi everyone, my name is Jai.",
+          "misconception": "a name is not a reason to listen"
+        },
+        {
+          "text": "I'm Jai, and I'm really good at talking.",
+          "misconception": "boasting about the speech, not the issue"
+        },
+        {
+          "text": "I'm Jai, and I cross that busy road twice a day."
+        }
+      ],
+      "answer": 2,
+      "notes": {
+        "answer": "C - he lives the problem every day",
+        "beats": [
+          "SAY: Three openings for the same speech. Which makes you listen?",
+          [
+            "ASK: Which opening earns the right to be heard?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to C"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what would make B work?",
+            "Less -> ask what does each tell us about the issue? re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: C. He crosses that road. He knows. Now we listen."
+          ]
+        ],
+        "trap": [
+          "pointing to A because speeches start with your name.",
+          "Fix: say your name is fine, but add why you should be heard."
+        ],
+        "prep": "Decision point before writing. Under 80% means the class builds one opening together on the board.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Earn the right to be heard",
+      "task": "Work through your Worksheet. Finish with a speech opening that tells your audience who you are and why you care. Add Severn to your Toolkit.",
+      "where": "Worksheet",
+      "frame": "I'm ___, and I ___. That's why ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "shield",
+          "microphone",
+          "pencil"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Who I am and why I care",
+      "notes": {
+        "answer": "an opening with who they are and their link to the issue",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Your issue, your opening. Make them believe you before you give one reason."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: why should they listen to YOU about this?",
+          [
+            "ASK: Read your opening to your partner. Would they listen?",
+            "60 sec. Turn and tell, partner A first, then swap.",
+            "EXPECT: a real link to the issue"
+          ]
+        ],
+        "trap": [
+          "an opening that only gives a name and a topic.",
+          "Fix: student adds one thing they've seen, done or lived."
+        ],
+        "stretch": "Extension: name Severn's techniques, then write what she might say today.",
+        "help": "Supported Worksheet: picture-clue choices, a first line done, a frame.",
+        "prep": "Independent application. Toolkit row 2 filled in before the exit. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a credibility opening for the student's own speech"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "You're giving a speech to the council asking for a skate park.",
+        "Write one line that earns your right to be heard."
+      ],
+      "notes": {
+        "answer": "e.g. I skate in the car park because there's nowhere else to go",
+        "beats": [
+          "SAY: A new speech, a new audience. Earn their attention.",
+          [
+            "ASK: Write one line that earns your right to be heard.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a link to the issue: experience, stake or expertise"
+          ],
+          "RECORD who writes only a name. Tomorrow's warm-up."
+        ],
+        "trap": [
+          "Hi, I'm ___ and I like skating.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new speech. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "What did Severn do that you could use in your own speech?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - say who I am and why it matters to me",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can earn the right to be heard?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: What did Severn do that you could use in your own speech?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: say who I am and why it matters to me"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Toolkit row 2 filled. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

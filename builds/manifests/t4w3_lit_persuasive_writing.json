@@ -1,0 +1,35 @@
+{
+ "unit_folder": "Term4_Week3_Literacy_Persuasive_Writing",
+ "unit_pptx_name": "Term 4 Week 3 - Play with Persuasion - Year 5-6 Literacy.pptx",
+ "anchor": "Claim it. Prove it. Sell it. Three pictures held all term: flag (claim), magnifier (prove), megaphone (sell). Weeks 1-5 final piece: a published persuasive text on an issue from The Last Bear.",
+ "lessons": [
+  {
+   "build_script": "builds/t4w3_lit_s1_hook_line_and_sinker.json",
+   "folder": "T4W3_Lit_S1_Hook_Line_And_Sinker",
+   "session": 1,
+   "title": "Hook, Line and Sinker",
+   "focus": "Write and battle five kinds of opening hook. Critical feature: a hook makes the reader need the next sentence. Retrieves: Week 1 position statements."
+  },
+  {
+   "build_script": "builds/t4w3_lit_s2_persuaders_toolkit.json",
+   "folder": "T4W3_Lit_S2_Persuaders_Toolkit",
+   "session": 2,
+   "title": "The Persuader's Toolkit",
+   "focus": "Use rhetorical questions, the rule of three, repetition and we-words on purpose. Critical feature: a device earns its place only if it moves the reader. Retrieves: Week 2 emotive words."
+  },
+  {
+   "build_script": "builds/t4w3_lit_s3_letter_from_bear.json",
+   "folder": "T4W3_Lit_S3_Letter_From_Bear",
+   "session": 3,
+   "title": "A Letter from Bear",
+   "focus": "Write a persuasive letter in role as a polar bear, using imagery. Critical feature: the writer's point of view decides what the reader feels. Retrieves: Term 3 poetry imagery."
+  },
+  {
+   "build_script": "builds/t4w3_lit_s4_campaign_creators.json",
+   "folder": "T4W3_Lit_S4_Campaign_Creators",
+   "session": 4,
+   "title": "Campaign Creators",
+   "focus": "Design a campaign poster: slogan, picture, fact and call to action. Critical feature: words and picture work together on one message. Fun activity: draw and create."
+  }
+ ]
+}

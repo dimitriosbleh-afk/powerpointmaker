@@ -1,0 +1,42 @@
+{
+ "unit_folder": "Term4_Week7_Literacy_Persuasive_Speeches",
+ "unit_pptx_name": "Term 4 Week 7 - Compare and Deliver - Year 5-6 Literacy.pptx",
+ "anchor": "Claim it. Prove it. Sell it. Say it. The writing anchor plus a microphone (say it), and the speech rule: write for the ear. Final piece: a rehearsed persuasive speech delivered to a live audience.",
+ "lessons": [
+  {
+   "build_script": "builds/t4w7_lit_s1_same_fight_different_style.json",
+   "folder": "T4W7_Lit_S1_Same_Fight_Different_Style",
+   "session": 1,
+   "title": "Same Fight, Different Style",
+   "focus": "Compare two speakers' choices for audience and purpose. Critical feature: compare the choice and its effect, not just the topic."
+  },
+  {
+   "build_script": "builds/t4w7_lit_s2_voice_power.json",
+   "folder": "T4W7_Lit_S2_Voice_Power",
+   "session": 2,
+   "title": "Voice Power",
+   "focus": "Mark up a speech for pace, pause, volume and emphasis and perform it. Critical feature: the pause before the key word makes the audience listen."
+  },
+  {
+   "build_script": "builds/t4w7_lit_s3_stand_tall.json",
+   "folder": "T4W7_Lit_S3_Stand_Tall",
+   "session": 3,
+   "title": "Stand Tall",
+   "focus": "Body language and eye contact; perform and give feedback. Critical feature: your body must say the same thing as your words."
+  },
+  {
+   "build_script": "builds/t4w7_lit_s4_strong_starts.json",
+   "folder": "T4W7_Lit_S4_Strong_Starts",
+   "session": 4,
+   "title": "Strong Starts, Mic-Drop Endings",
+   "focus": "Write a speech opening and a closing call to action. Critical feature: the ending tells the audience exactly what to do next."
+  },
+  {
+   "build_script": "builds/t4w7_lit_s5_just_a_minute.json",
+   "folder": "T4W7_Lit_S5_Just_A_Minute",
+   "session": 5,
+   "title": "Just a Minute",
+   "focus": "Plan and deliver a one-minute persuasive speech on a fun topic. Critical feature: claim it, prove it, sell it, say it, in sixty seconds."
+  }
+ ]
+}

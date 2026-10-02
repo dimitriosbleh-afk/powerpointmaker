@@ -1,0 +1,997 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 7,
+    "session": 5,
+    "variant": 4,
+    "minutes": 60,
+    "title": "Just a Minute",
+    "subtitle": "Term 4 Week 7, Session 5",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 7 Session 5",
+    "outputFolder": "T4W7_Lit_S5_Just_A_Minute",
+    "fileName": "Session 5 - Just a Minute.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY02 delivering structured spoken texts for a purpose using features of voice; VC2E5LY01 presenting and justifying an opinion; VC2E5LY10 creating spoken texts",
+      "shape": "model, plan fast, play: the teacher plans and delivers a one-minute speech live, students practise 30-second plans, then play Just a Minute rounds in groups with peer scoring",
+      "criticalFeature": "claim it, prove it, sell it, say it, in sixty seconds: one claim, two reasons, one action",
+      "decisionPoints": [
+        "the Plan it fast round",
+        "the choice check: the strongest one-minute plan",
+        "the exit board: a 60-second plan for a new topic"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: all four, in one minute.",
+      "catchUp": "Anyone can play: the anchor and the plan frame are on the slide."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Just a Minute Topic Cards (one set per group of four, cut before the session)",
+      "Mini-whiteboards and markers",
+      "A timer for each group (or the board timer)"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Turn and tell",
+      "Thumbs vote"
+    ],
+    "boardSetup": [
+      "The 60-second plan: Claim (1 line), Prove (2 reasons), Sell (1 device), Say (an action)",
+      "Scoring: one tick each for claim, proof, sell, action"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: sharpen claims, fix a rambling speech, plan three speeches fast, then write your best one-minute speech.",
+      "title": "Just a Minute",
+      "subtitle": "One claim. Two reasons. One action. Sixty seconds.",
+      "sections": [
+        {
+          "title": "Claim it fast",
+          "columns": 1,
+          "example": {
+            "prompt": "Topic: Dogs or cats?",
+            "steps": [
+              "Pick a side, fast",
+              "Use a sure word",
+              "One sentence"
+            ],
+            "answer": "Dogs are the best pets, and I can prove it."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write a strong one-sentence claim for each topic.",
+              "columns": [
+                "Topic",
+                "My claim"
+              ],
+              "rows": [
+                [
+                  "Pineapple on pizza",
+                  ""
+                ],
+                [
+                  "School starting at 10 am",
+                  ""
+                ],
+                [
+                  "Winter: the best season?",
+                  ""
+                ],
+                [
+                  "Robots doing our chores",
+                  ""
+                ],
+                [
+                  "A slide instead of stairs at school",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Pineapple on pizza",
+                  "Pineapple belongs on every pizza."
+                ],
+                [
+                  "School starting at 10 am",
+                  "School must start at 10 am."
+                ],
+                [
+                  "Winter: the best season?",
+                  "Winter is the best season, no contest."
+                ],
+                [
+                  "Robots doing our chores",
+                  "Every home should have a chore robot."
+                ],
+                [
+                  "A slide instead of stairs at school",
+                  "Every school needs a slide instead of stairs."
+                ]
+              ],
+              "widths": [
+                1,
+                1.6
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Don't ramble",
+          "columns": 2,
+          "example": {
+            "prompt": "A rambling minute",
+            "steps": [
+              "Is there a clear claim?",
+              "Are there two reasons?",
+              "Is there an action at the end?"
+            ],
+            "answer": "If any is missing, the minute is wasted."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which one-minute plan is strongest?",
+              "options": [
+                "Claim, then lots of ums, then the bell.",
+                "Claim, two reasons, a question, an action.",
+                "Five reasons and no claim."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "It has every part of the anchor: claim, proof, sell and say."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Ollie's one-minute speech rambled. Find the problem and fix it.",
+              "work": [
+                "So, um, cats. Cats are fluffy. Also my aunty has a cat. Its name is Pickles. Pickles likes fish. Um. Yeah."
+              ],
+              "answer": "No clear claim, no real reasons, no action. Fix: Cats are the perfect pet. They're clean and calm. Adopt one this weekend!"
+            }
+          ]
+        },
+        {
+          "title": "Plan it fast",
+          "columns": 1,
+          "example": {
+            "prompt": "Topic: Every class needs a pet.",
+            "steps": [
+              "Reason 1",
+              "Reason 2",
+              "Action"
+            ],
+            "answer": "Calm and responsibility; action: vote yes at the class meeting."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Plan each speech in 30 seconds.",
+              "columns": [
+                "Topic",
+                "Reason 1",
+                "Reason 2",
+                "Action"
+              ],
+              "rows": [
+                [
+                  "Sport every day",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "Ice cream for breakfast on Fridays",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "Kids choose their own bedtime",
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Sport every day",
+                  "fitter bodies",
+                  "happier minds",
+                  "move it to the timetable"
+                ],
+                [
+                  "Ice cream for breakfast on Fridays",
+                  "a happy start",
+                  "a reward to look forward to",
+                  "ask the canteen"
+                ],
+                [
+                  "Kids choose their own bedtime",
+                  "learn responsibility",
+                  "know when we're tired",
+                  "try it for one week"
+                ]
+              ],
+              "widths": [
+                1.1,
+                0.9,
+                0.9,
+                0.9
+              ],
+              "rowH": 36
+            }
+          ]
+        },
+        {
+          "title": "My best minute",
+          "columns": 1,
+          "example": {
+            "prompt": "My topic",
+            "steps": [
+              "Claim it",
+              "Prove it: two reasons",
+              "Sell it with a device, say it with an action"
+            ],
+            "answer": "Dogs are the best pets. They keep you active. They love you no matter what. Who else greets you like that? Go and adopt one."
+          },
+          "items": [
+            {
+              "prompt": "Write your best one-minute speech for one topic. Claim it, prove it, sell it, say it.",
+              "answer": "A claim, two reasons, a device and an action, about 100-120 words.",
+              "lines": 7
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: answer comebacks, then argue the side you disagree with.",
+      "title": "Rebuttal Round",
+      "subtitle": "The best speakers can argue either side.",
+      "sections": [
+        {
+          "title": "Answer the comeback",
+          "columns": 1,
+          "example": {
+            "prompt": "Topic: dogs are best. Comeback: dogs are messy.",
+            "steps": [
+              "Name their point fairly",
+              "However...",
+              "Turn it into a win"
+            ],
+            "answer": "Some say dogs are messy. However, a bit of mud is worth a best friend."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write a one-line answer to each comeback.",
+              "columns": [
+                "Topic",
+                "Their comeback",
+                "My answer"
+              ],
+              "rows": [
+                [
+                  "Sport every day",
+                  "It takes time from learning.",
+                  ""
+                ],
+                [
+                  "A slide instead of stairs",
+                  "It's unsafe.",
+                  ""
+                ],
+                [
+                  "School at 10 am",
+                  "Parents start work early.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Sport every day",
+                  "It takes time from learning.",
+                  "Fit kids learn faster, so it gives time back."
+                ],
+                [
+                  "A slide instead of stairs",
+                  "It's unsafe.",
+                  "Keep the stairs too; the slide is just faster."
+                ],
+                [
+                  "School at 10 am",
+                  "Parents start work early.",
+                  "Run a breakfast club before class."
+                ]
+              ],
+              "widths": [
+                0.9,
+                1,
+                1.4
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "The other side",
+          "columns": 1,
+          "example": {
+            "prompt": "I love winter. Argue for summer.",
+            "steps": [
+              "Pick the side you disagree with",
+              "Find its two best reasons",
+              "Make it convincing"
+            ],
+            "answer": "Summer means beaches, mangoes and long light evenings. Who could argue with that?"
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write a one-minute speech for the side you disagree with. Make it as convincing as you can.",
+              "answer": "A full one-minute speech for the other side, with claim, proof, sell and action.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first plan done and a speech frame.",
+      "title": "Just a Minute Helper",
+      "subtitle": "Claim. Two reasons. Action.",
+      "sections": [
+        {
+          "title": "Which part?",
+          "columns": 3,
+          "example": {
+            "prompt": "Dogs are the best pets.",
+            "steps": [
+              "Is it what I think?",
+              "Yes",
+              "Claim"
+            ],
+            "answer": "claim"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "They keep you active.",
+              "options": [
+                "claim",
+                "reason"
+              ],
+              "answer": 1,
+              "hint": "Does it say why?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Cats are better than dogs.",
+              "options": [
+                "claim",
+                "reason"
+              ],
+              "answer": 0,
+              "hint": "Is it what you think?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "They love you every day.",
+              "options": [
+                "claim",
+                "reason"
+              ],
+              "answer": 1,
+              "hint": "Does it say why?"
+            }
+          ]
+        },
+        {
+          "title": "Plan it",
+          "columns": 1,
+          "example": {
+            "prompt": "Topic: pizza every Friday",
+            "steps": [
+              "Claim",
+              "Two reasons",
+              "Action"
+            ],
+            "answer": "Pizza Fridays! Tasty and fun. Ask the canteen."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in the plan.",
+              "columns": [
+                "Topic",
+                "Claim",
+                "Reason",
+                "Action"
+              ],
+              "rows": [
+                [
+                  "pizza Fridays",
+                  "We need pizza Fridays.",
+                  "It's tasty and fun.",
+                  "Ask the canteen."
+                ],
+                [
+                  "longer lunch",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "a class pet",
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "pizza Fridays",
+                  "We need pizza Fridays.",
+                  "It's tasty and fun.",
+                  "Ask the canteen."
+                ],
+                [
+                  "longer lunch",
+                  "Lunch should be longer.",
+                  "We need time to play.",
+                  "Ask the principal."
+                ],
+                [
+                  "a class pet",
+                  "Every class needs a pet.",
+                  "Pets calm us down.",
+                  "Vote yes."
+                ]
+              ],
+              "hint": "The first row is done for you.",
+              "widths": [
+                0.8,
+                1,
+                1,
+                0.8
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "My minute",
+          "columns": 1,
+          "example": {
+            "prompt": "Longer lunch",
+            "steps": [
+              "I think ___.",
+              "Because ___ and ___.",
+              "So please ___!"
+            ],
+            "answer": "I think lunch should be longer. Because we need to eat and play. So please give us ten more minutes!"
+          },
+          "items": [
+            {
+              "prompt": "Finish: I think ___. Because ___ and ___. So please ___!",
+              "answer": "A claim, two reasons and an action.",
+              "lines": 4,
+              "hint": "Pick your favourite topic."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    },
+    {
+      "kind": "cards",
+      "label": "Just a Minute Topic Cards",
+      "description": "Fun activity: twelve silly topics for one-minute speeches. One set per group of four.",
+      "title": "Just a Minute Topic Cards",
+      "subtitle": "Draw a card. 30 seconds to plan. 60 seconds to persuade.",
+      "cols": 3,
+      "cardH": 120,
+      "cards": [
+        {
+          "text": "Pineapple belongs on pizza"
+        },
+        {
+          "text": "Homework should be banned"
+        },
+        {
+          "text": "Dogs are better than cats"
+        },
+        {
+          "text": "School should start at 10 am"
+        },
+        {
+          "text": "Every class needs a pet"
+        },
+        {
+          "text": "Kids should choose their own bedtime"
+        },
+        {
+          "text": "Winter is the best season"
+        },
+        {
+          "text": "Robots should do our chores"
+        },
+        {
+          "text": "Sport should be every day"
+        },
+        {
+          "text": "Ice cream for breakfast on Fridays"
+        },
+        {
+          "text": "Lunch should be an hour long"
+        },
+        {
+          "text": "Every school needs a slide instead of stairs"
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today is a game. Sixty seconds. One topic. Persuade us."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print and cut one set of Just a Minute Topic Cards per group of four. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. A visible timer."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to plan and give a short persuasive speech on the spot.",
+      "successCriteria": [
+        "I can plan a claim and two reasons in 30 seconds.",
+        "I can give a one-minute speech that claims it, proves it, sells it and says it.",
+        "I can answer a comeback on the spot."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today is fast and fun. All four moves in sixty seconds."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Can your teacher do it?",
+      "lines": [
+        "Pick a topic for me. Any silly topic.",
+        "I get 30 seconds to plan and 60 seconds to persuade you."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "timer",
+            "label": "60 seconds"
+          },
+          {
+            "name": "microphone",
+            "label": "persuade"
+          },
+          {
+            "name": "trophy",
+            "label": "score"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - the class scores the teacher on claim, prove, sell, say",
+        "beats": [
+          [
+            "SAY: Draw a card for me.",
+            "I'll plan for 30 seconds where you can see it.",
+            "Then 60 seconds. Score me."
+          ],
+          "MODEL: plan Claim, two reasons, a device, an action on the board. Then deliver.",
+          [
+            "ASK: Score me: one finger for each move I did. Claim, prove, sell, say.",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 3 or 4"
+          ],
+          [
+            "ASK: Which move did I do best, and which could be better?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: good claim; more proof"
+          ]
+        ],
+        "trap": [
+          "scoring for funny, not for the moves.",
+          "Fix: say funny is a bonus; we score the four moves."
+        ],
+        "prep": "Teacher models live, thinking aloud the plan. Choose a card students can't predict. 4 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "impromptu",
+      "meaning": "Done on the spot, with very little time to plan.",
+      "example": "An impromptu speech: 30 seconds to plan.",
+      "pictogram": "timer",
+      "notes": {
+        "answer": "done on the spot, with very little time to plan",
+        "beats": [
+          "POINT to the word. SAY: Impromptu. Say it with me. Impromptu.",
+          [
+            "SAY: Done on the spot, with very little time to plan.",
+            "SAY: An impromptu speech: 30 seconds to plan."
+          ],
+          [
+            "ASK: When might you need to speak impromptu in real life?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: an interview; a class meeting; when someone asks your opinion"
+          ]
+        ],
+        "trap": [
+          "thinking impromptu means no plan at all.",
+          "Fix: say a tiny plan is the secret: claim, two reasons, action."
+        ],
+        "prep": "The game word for today.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "The 60-second plan",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Move",
+            "Time",
+            "Topic: every class needs a pet"
+          ],
+          [
+            "Claim it",
+            "10 sec",
+            "Every class needs a pet."
+          ],
+          [
+            "Prove it",
+            "25 sec",
+            "Pets calm us. Caring teaches responsibility."
+          ],
+          [
+            "Sell it",
+            "15 sec",
+            "Who wouldn't learn better next to a guinea pig?"
+          ],
+          [
+            "Say it",
+            "10 sec",
+            "Vote yes at the class meeting!"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "claim 10 seconds, prove 25, sell 15, say 10",
+        "beats": [
+          [
+            "POINT to Claim it.",
+            "SAY: Ten seconds. One sure sentence. No ums before it."
+          ],
+          [
+            "POINT to Prove it.",
+            "SAY: Two reasons. Just two. More and you'll run out of time."
+          ],
+          [
+            "POINT to Say it.",
+            "SAY: Always finish with what to do. That's how you beat the clock."
+          ],
+          [
+            "ASK: Say the four moves with me.",
+            "3 sec. Cue: Everyone, together, on three.",
+            "EXPECT: Claim it. Prove it. Sell it. Say it."
+          ]
+        ],
+        "trap": [
+          "spending the whole minute on the first reason.",
+          "Fix: say watch the clock; move on at 35 seconds."
+        ],
+        "stretch": "Add a comeback answer in your proof.",
+        "help": "Hold the plan card while you speak.",
+        "prep": "The model plan. Critical feature: all four moves, in a minute.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Plan it fast",
+      "routine": "boards",
+      "thinkTime": 30,
+      "pivot": "write the claim first, then any two reasons, then Please...",
+      "followUp": "cold call one board: say your plan in 20 seconds",
+      "items": [
+        {
+          "text": "Topic: Every school needs a pool.",
+          "answer": "Claim + two reasons (swimming saves lives; cool in summer) + action",
+          "expect": "claim, two reasons, action"
+        },
+        {
+          "text": "Topic: Kids should get paid for chores.",
+          "answer": "Claim + two reasons (teaches money; fair) + action",
+          "expect": "claim, two reasons, action"
+        },
+        {
+          "text": "Topic: The holidays should be longer.",
+          "answer": "Claim + two reasons (rest; family time) + action",
+          "expect": "claim, two reasons, action"
+        },
+        {
+          "text": "Topic: Every classroom needs beanbags.",
+          "answer": "Claim + two reasons (comfy reading; calm) + action",
+          "expect": "claim, two reasons, action"
+        },
+        {
+          "text": "Topic: Every town needs a skate park.",
+          "answer": "Claim + two reasons (active kids; somewhere safe) + action",
+          "expect": "claim, two reasons, action"
+        }
+      ],
+      "notes": {
+        "say": [
+          "30 seconds each. Plan, don't write sentences."
+        ],
+        "trap": [
+          "writing full sentences and running out of time.",
+          "Fix: student writes three or four words per move."
+        ],
+        "stretch": "Add a device to sell it.",
+        "help": "Use: I think ___ because ___ and ___. Please ___.",
+        "prep": "Guided fast planning. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which one-minute plan is strongest?",
+      "options": [
+        {
+          "text": "A claim, then lots of ums until the bell.",
+          "misconception": "no proof, no action; the minute is wasted"
+        },
+        {
+          "text": "A claim, two reasons, a question, an action."
+        },
+        {
+          "text": "Five reasons and no claim.",
+          "misconception": "too much proof, no clear side"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - all four moves",
+        "beats": [
+          "SAY: Three plans for the same minute.",
+          [
+            "ASK: Which one-minute plan is strongest?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: which move is the question?",
+            "Less -> match each plan to the four moves, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Claim, prove, sell, say. Nothing wasted."
+          ]
+        ],
+        "trap": [
+          "pointing to C because more reasons sounds stronger.",
+          "Fix: ask what side are they on? Nobody knows."
+        ],
+        "prep": "Decision point before the game. Under 80% means one more teacher model before groups play.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "We Do",
+      "title": "Just a Minute: play!",
+      "lines": [
+        "Groups of four. Draw a card. 30 seconds to plan, 60 to speak.",
+        "Listeners score: a tick for claim, prove, sell, say.",
+        "Everyone speaks twice. Highest group score wins."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "dice",
+            "label": "draw a card"
+          },
+          {
+            "name": "timer",
+            "label": "plan, then speak"
+          },
+          {
+            "name": "trophy",
+            "label": "score"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - every student speaks twice",
+        "beats": [
+          [
+            "SAY: Draw, plan, speak. The clock is the boss.",
+            "TIME each round on the board timer."
+          ],
+          "CIRCULATE. Note one great claim and one great action to share at the end.",
+          [
+            "ASK: Thumbs: how did your minute go?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: mostly up after round 2"
+          ],
+          [
+            "ASK: Tell your group the best line you heard.",
+            "20 sec. Turn and tell, newest speaker first.",
+            "EXPECT: a quoted claim or mic drop"
+          ]
+        ],
+        "trap": [
+          "groups scoring friends, not moves.",
+          "Fix: listeners must name the move for every tick."
+        ],
+        "stretch": "Second turn: answer a comeback from a listener mid-speech.",
+        "help": "Speak with the plan card in hand; first turn can be 30 seconds.",
+        "prep": "Fun activity: impromptu speaking game. 16 minutes, two rounds. SC2 and SC3.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Write your best minute",
+      "task": "Work through your Worksheet. Finish by writing your best one-minute speech in full.",
+      "where": "Worksheet",
+      "frame": "Claim: ___. Proof: ___, ___. Sell: ___. Say: ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "timer",
+          "microphone",
+          "trophy"
+        ],
+        "labels": false
+      },
+      "visualLabel": "One minute, four moves",
+      "notes": {
+        "answer": "a one-minute speech with claim, two reasons, a device and an action",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Take your best game topic and write it properly."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: where's your action? Could you say it in a minute?",
+          [
+            "ASK: Time your partner reading their speech. Under a minute?",
+            "60 sec each. Turn and tell, partner A first.",
+            "EXPECT: 50 to 70 seconds"
+          ]
+        ],
+        "trap": [
+          "a written speech that is three minutes long.",
+          "Fix: student cuts to two reasons and one device."
+        ],
+        "stretch": "Extension: answer comebacks, then argue the other side.",
+        "help": "Supported Worksheet: picture-clue choices, a first plan done, a frame.",
+        "prep": "Independent application of the full anchor; Week 8 starts the real speech. SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a written one-minute speech"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "New topic: Every family should have a vegetable patch.",
+        "Write your 60-second plan: claim, two reasons, an action."
+      ],
+      "notes": {
+        "answer": "e.g. Claim; fresh food and less waste; plant one thing this weekend",
+        "beats": [
+          "SAY: A new topic. Plan it like the game.",
+          [
+            "ASK: Write your 60-second plan.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a claim, two reasons, an action"
+          ],
+          "RECORD who misses the action. Week 8 conference list."
+        ],
+        "trap": [
+          "a claim and five reasons, no action.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new topic. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "What will you take from today into writing your real speech next week?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - always finish with an action",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can claim,",
+            "prove, sell and say it in a minute?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: What will you take from today",
+            "into writing your real speech next week?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: always finish with an action"
+          ]
+        ],
+        "prep": "End of Week 7. Next week: students write their own speeches. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

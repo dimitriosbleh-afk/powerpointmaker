@@ -1,0 +1,890 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 8,
+    "session": 5,
+    "variant": 4,
+    "minutes": 60,
+    "title": "The Big Finish",
+    "subtitle": "Term 4 Week 8, Session 5",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 8 Session 5",
+    "outputFolder": "T4W8_Lit_S5_The_Big_Finish",
+    "fileName": "Session 5 - The Big Finish.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY10 creating spoken persuasive texts; VC2E5LY02 planning delivery with notes; VC2E5LA07 cohesive endings that link back",
+      "shape": "model, guide, apply: the teacher finishes the shade-trees speech and shrinks it to cue cards, students practise endings and key words, then finish, time and card their own speech",
+      "criticalFeature": "cue cards hold key words, not sentences: three or four words that jog the memory",
+      "decisionPoints": [
+        "the Name the part round",
+        "the choice check: the best cue card",
+        "the exit board: key words for a new sentence"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: Say it, finish strong, and card it.",
+      "catchUp": "Students with an unfinished middle write a two-line conclusion, then card what they have."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "S3 opening and S4 middle (in the speech folder)",
+      "Five index cards or paper strips per student",
+      "Timers (one per pair)",
+      "Mini-whiteboards and markers"
+    ],
+    "routineIcons": [
+      "Fingers 1, 2 or 3",
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "The finish: restate, echo the hook, call to action",
+      "Cue cards: key words only, one card per part",
+      "Target: about 2 minutes"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: name the parts of a finish, strengthen endings, shrink sentences to key words, then finish and card your speech.",
+      "title": "The Big Finish",
+      "subtitle": "Finish strong. Card it. Time it.",
+      "sections": [
+        {
+          "title": "Name the part",
+          "columns": 3,
+          "example": {
+            "prompt": "So, our school needs ten shade trees.",
+            "steps": [
+              "Does it repeat the position?",
+              "Does it echo the hook?",
+              "Does it ask for action?"
+            ],
+            "answer": "It restates the position."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Next summer, touch the slide. No ouch.",
+              "options": [
+                "restate",
+                "echo the hook",
+                "call to action"
+              ],
+              "answer": 1
+            },
+            {
+              "kind": "choice",
+              "prompt": "Vote yes at Tuesday's meeting.",
+              "options": [
+                "restate",
+                "echo the hook",
+                "call to action"
+              ],
+              "answer": 2
+            },
+            {
+              "kind": "choice",
+              "prompt": "Every class deserves a pet.",
+              "options": [
+                "restate",
+                "echo the hook",
+                "call to action"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "title": "Fizzle to mic drop",
+          "columns": 1,
+          "example": {
+            "prompt": "That's the end of my speech. Thank you.",
+            "steps": [
+              "Cut the that's the end",
+              "Ask for one action",
+              "End on a strong word"
+            ],
+            "answer": "So walk with us on Wednesday. Your feet. Our planet."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each fizzling ending as a mic-drop call to action.",
+              "columns": [
+                "Fizzle",
+                "Mic drop"
+              ],
+              "rows": [
+                [
+                  "So yeah, that's my speech.",
+                  ""
+                ],
+                [
+                  "I hope you liked my speech about plastic.",
+                  ""
+                ],
+                [
+                  "Um, anyway, bears are cool.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "So yeah, that's my speech.",
+                  "So join us. Today. Not tomorrow."
+                ],
+                [
+                  "I hope you liked my speech about plastic.",
+                  "Pack a nude-food lunch tomorrow. The ocean is counting on you."
+                ],
+                [
+                  "Um, anyway, bears are cool.",
+                  "Switch off one light tonight. Do it for the bears."
+                ]
+              ],
+              "widths": [
+                1,
+                1.6
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "Shrink it",
+          "columns": 1,
+          "example": {
+            "prompt": "Put your hand on the slide at lunch. Ouch!",
+            "steps": [
+              "Find the memory words",
+              "Three or four only",
+              "Capitals help"
+            ],
+            "answer": "HAND - SLIDE - OUCH"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Shrink each sentence to cue-card key words.",
+              "columns": [
+                "Sentence",
+                "Key words"
+              ],
+              "rows": [
+                [
+                  "In February our yard hit 41 degrees.",
+                  ""
+                ],
+                [
+                  "Shade cuts UV by up to 75 per cent.",
+                  ""
+                ],
+                [
+                  "Last summer, Sam waited for pickup in the sun.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "In February our yard hit 41 degrees.",
+                  "FEB - 41 DEGREES"
+                ],
+                [
+                  "Shade cuts UV by up to 75 per cent.",
+                  "UV - 75%"
+                ],
+                [
+                  "Last summer, Sam waited for pickup in the sun.",
+                  "SAM - PICKUP - SUN"
+                ]
+              ],
+              "widths": [
+                1.6,
+                1
+              ],
+              "rowH": 26
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Tom's cue card has a problem. Find it and fix it.",
+              "work": [
+                "Card 1: Imagine waking up and there are no birds singing at all, not one, because the trees are gone and the birds have nowhere to live."
+              ],
+              "answer": "It's a full paragraph; he'll read it, not say it. Fix: NO BIRDS - TREES GONE - NOWHERE"
+            }
+          ]
+        },
+        {
+          "title": "My finish",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "Restate",
+              "Echo the hook",
+              "Call to action"
+            ],
+            "answer": "So, ten trees. Next summer, touch the slide: no ouch. Say yes on Tuesday."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write your conclusion: restate, echo your hook, call to action.",
+              "answer": "A restated position, a hook echo and one clear action.",
+              "lines": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: mark pauses and stress on your speech, then plan your answer to a tough question.",
+      "title": "Speech Coach",
+      "subtitle": "Mark it up like a pro.",
+      "sections": [
+        {
+          "title": "Mark it up",
+          "columns": 1,
+          "example": {
+            "prompt": "Put your hand on the slide. / Go on. / OUCH.",
+            "steps": [
+              "/ means pause",
+              "CAPITALS mean stress",
+              "Read it aloud"
+            ],
+            "answer": "Put your HAND on the slide. / Go on. / OUCH."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Mark pauses (/) and stress (CAPITALS) on each line.",
+              "columns": [
+                "Line",
+                "Marked up"
+              ],
+              "rows": [
+                [
+                  "Not next year. Not next week. Today.",
+                  ""
+                ],
+                [
+                  "One tree would have stopped that.",
+                  ""
+                ],
+                [
+                  "So I'm asking you: will you help?",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Not next year. Not next week. Today.",
+                  "NOT next year. / NOT next week. / TODAY."
+                ],
+                [
+                  "One tree would have stopped that.",
+                  "ONE tree / would have STOPPED that."
+                ],
+                [
+                  "So I'm asking you: will you help?",
+                  "So I'm asking YOU: / will you HELP?"
+                ]
+              ],
+              "widths": [
+                1.2,
+                1.4
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "The tough question",
+          "columns": 1,
+          "example": {
+            "prompt": "Question: who will water the trees?",
+            "steps": [
+              "Thank them",
+              "Answer briefly",
+              "Back to your action"
+            ],
+            "answer": "Great question. The garden club offered. So: ten trees, yes?"
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write the toughest question your audience might ask, and your answer.",
+              "answer": "A realistic question and a short answer that returns to the action.",
+              "lines": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first card done and a finish frame.",
+      "title": "Finish Helper",
+      "subtitle": "So. Please. Thank you.",
+      "sections": [
+        {
+          "title": "Strong or fizzle?",
+          "columns": 3,
+          "example": {
+            "prompt": "Vote yes on Tuesday!",
+            "steps": [
+              "Does it ask for action?",
+              "Yes",
+              "Strong"
+            ],
+            "answer": "strong"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "That's the end.",
+              "options": [
+                "strong",
+                "fizzle"
+              ],
+              "answer": 1,
+              "hint": "Does it ask for anything?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Walk to school on Wednesday!",
+              "options": [
+                "strong",
+                "fizzle"
+              ],
+              "answer": 0,
+              "hint": "Does it ask for action?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Um, so yeah.",
+              "options": [
+                "strong",
+                "fizzle"
+              ],
+              "answer": 1,
+              "hint": "Is there an action?"
+            }
+          ]
+        },
+        {
+          "title": "Key words",
+          "columns": 1,
+          "example": {
+            "prompt": "Our yard hit 41 degrees.",
+            "steps": [
+              "Find the big words",
+              "Write 2 or 3",
+              "Use capitals"
+            ],
+            "answer": "YARD - 41"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write 2 or 3 key words.",
+              "columns": [
+                "Sentence",
+                "Key words"
+              ],
+              "rows": [
+                [
+                  "Sam got burnt waiting in the sun.",
+                  "SAM - BURNT - SUN"
+                ],
+                [
+                  "Please plant ten trees.",
+                  ""
+                ],
+                [
+                  "Trees bring birds back.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Sam got burnt waiting in the sun.",
+                  "SAM - BURNT - SUN"
+                ],
+                [
+                  "Please plant ten trees.",
+                  "10 TREES"
+                ],
+                [
+                  "Trees bring birds back.",
+                  "BIRDS - BACK"
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1.4,
+                1
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "My finish",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "So, ___.",
+              "Please ___.",
+              "Thank you."
+            ],
+            "answer": "So, we need trees. Please plant ten before summer. Thank you."
+          },
+          "items": [
+            {
+              "prompt": "So, ___. Please ___. Thank you.",
+              "answer": "A restated position and one action.",
+              "lines": 4,
+              "hint": "Use your Do from your plan."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open S5. One line: today the speech gets finished, timed and onto cue cards."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Five index cards or paper strips per student; a timer per pair."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to finish a speech strongly and prepare cue cards to deliver it.",
+      "successCriteria": [
+        "I can name restate, echo the hook and call to action.",
+        "I can write a strong finish and shrink my speech to key-word cue cards.",
+        "I can mark my speech for pauses and stress."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: The last words they hear decide what they do."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Read it, or say it?",
+      "lines": [
+        "Watch me give my opening twice.",
+        "Once reading a full page. Once with one small card."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "article",
+            "label": "full page"
+          },
+          {
+            "name": "notebook",
+            "label": "cue card"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "the cue card version - eye contact and expression",
+        "beats": [
+          [
+            "SAY: Watch twice. Notice my eyes.",
+            "PERFORM the opening head down from a full page, then with one card, looking up."
+          ],
+          [
+            "ASK: Which version had you listening? 1 or 2?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: What changed when I used the card?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: you looked at us; more expression"
+          ],
+          "SAY: A full page makes you read. A card lets you speak."
+        ],
+        "trap": [
+          "thinking cue cards mean memorising every word.",
+          "Fix: say the card holds key words; you know the rest."
+        ],
+        "prep": "Low-entry launch. Hold a full page and one index card. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "cue card",
+      "meaning": "A small card with key words to jog your memory.",
+      "example": "My cue card says HAND - SLIDE - OUCH.",
+      "pictogram": "notebook",
+      "notes": {
+        "answer": "a small card with key words to jog your memory",
+        "beats": [
+          "POINT to the word. SAY: Cue card. Say it with me. Cue card.",
+          [
+            "SAY: A small card with key words to jog your memory.",
+            "SAY: My cue card says HAND - SLIDE - OUCH."
+          ],
+          [
+            "ASK: Why not write your whole speech on the cue card?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: you'd read it, not say it; no eye contact"
+          ]
+        ],
+        "trap": [
+          "writing full sentences on cards.",
+          "Fix: say if you can read it aloud word for word, it's too long."
+        ],
+        "prep": "Cue card is today's delivery tool.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "My big finish, then my cards",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Part",
+            "My speech",
+            "My cue card"
+          ],
+          [
+            "Restate",
+            "So, our school needs ten shade trees.",
+            "10 TREES"
+          ],
+          [
+            "Echo the hook",
+            "Next summer, touch the slide. No ouch.",
+            "SLIDE - NO OUCH"
+          ],
+          [
+            "Call to action",
+            "Say yes at Tuesday's council meeting.",
+            "YES - TUESDAY"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "restate, echo the hook, call to action; key words on the card",
+        "beats": [
+          [
+            "POINT to Echo the hook.",
+            "SAY: My speech started with ouch. It ends with no ouch.",
+            "Full circle. They feel it close."
+          ],
+          [
+            "POINT to Call to action.",
+            "SAY: One action. A day. They know exactly what to do."
+          ],
+          [
+            "POINT to My cue card.",
+            "SAY: Only the words that jog my memory. Three or four. Capitals."
+          ],
+          [
+            "ASK: What goes on a cue card, sentences or key words?",
+            "5 sec. Cue: Everyone, together, on three.",
+            "EXPECT: key words"
+          ]
+        ],
+        "trap": [
+          "ending with thank you for listening as the last strong line.",
+          "Fix: say the action is the last strong line; thank you comes after."
+        ],
+        "stretch": "Mark one pause and one stressed word.",
+        "help": "Use the frame: So... Please... Thank you.",
+        "prep": "Model finish and cards. Critical feature: key words, not sentences.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Name the part",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "ask does it repeat, look back, or ask?",
+      "followUp": "cold call one student: how do you know?",
+      "items": [
+        {
+          "text": "So, polar bears need us to act now.",
+          "answer": "1 - restate",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Remember that magpie? Let's make sure it's the last.",
+          "answer": "2 - echo the hook",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Sign the petition at the office by Friday.",
+          "answer": "3 - call to action",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "Imagine that playground again. Now add trees.",
+          "answer": "2 - echo the hook",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Switch off at the wall tonight. Every night.",
+          "answer": "3 - call to action",
+          "expect": "3 fingers"
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger: restate. Two: echo the hook. Three: call to action."
+        ],
+        "trap": [
+          "calling every strong line a call to action.",
+          "Fix: ask does it tell us to do something?"
+        ],
+        "stretch": "Write the missing two parts for one item.",
+        "help": "Look for a doing word at the start.",
+        "prep": "Guided practice. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which cue card is best?",
+      "options": [
+        {
+          "text": "Imagine a 41 degree slide. That's our yard, and we need shade now.",
+          "misconception": "a full sentence; you will read it"
+        },
+        {
+          "text": "41 SLIDE - OUR YARD - SHADE NOW"
+        },
+        {
+          "text": "Opening",
+          "misconception": "too little; nothing to jog the memory"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - key words only",
+        "beats": [
+          "SAY: Three cue cards for the same opening.",
+          [
+            "ASK: Which cue card is best?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: say the opening from card B.",
+            "Less -> try speaking from each card, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Enough to remember, too little to read."
+          ]
+        ],
+        "trap": [
+          "pointing to A because it's safest.",
+          "Fix: ask where will your eyes be with card A?"
+        ],
+        "prep": "Decision point before carding. Under 80% means one more shrink done together.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Shrink it",
+      "routine": "boards",
+      "thinkTime": 20,
+      "pivot": "circle the nouns and numbers, then keep three",
+      "followUp": "cold call one board: say the sentence from your key words",
+      "items": [
+        {
+          "text": "Every minute, a garbage truck of plastic enters the ocean.",
+          "answer": "MINUTE - TRUCK - OCEAN",
+          "expect": "three key words"
+        },
+        {
+          "text": "Malala said one child, one teacher, one book and one pen can change the world.",
+          "answer": "MALALA - CHILD TEACHER BOOK PEN",
+          "expect": "three or four key words"
+        },
+        {
+          "text": "Walking to school saves petrol and wakes up your brain.",
+          "answer": "WALK - PETROL - BRAIN",
+          "expect": "three key words"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Three or four key words only. Capitals."
+        ],
+        "trap": [
+          "keeping little words like the and of.",
+          "Fix: student crosses out every word they'd remember anyway."
+        ],
+        "stretch": "Say the full sentence from your key words.",
+        "help": "Circle the numbers and naming words first.",
+        "prep": "Guided shrinking. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Finish and card it",
+      "task": "Work through your Worksheet. Finish your conclusion, make five cue cards on index cards, then time your whole speech with a partner.",
+      "where": "Worksheet",
+      "frame": "So, ___. Remember ___? Please ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "flag",
+          "notebook",
+          "timer"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Finish strong, card it",
+      "notes": {
+        "answer": "a conclusion with restate, hook echo and action, plus key-word cards",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Your finish, then five cue cards. Then time it."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          [
+            "CIRCULATE. Ask: read me card 3.",
+            "Could you read it word for word? Then shrink it."
+          ],
+          [
+            "ASK: Give your speech from your cards. Partner times you.",
+            "120 sec each. Turn and tell, partner A first.",
+            "EXPECT: close to 2 minutes"
+          ]
+        ],
+        "trap": [
+          "a speech under one minute because it was rushed.",
+          "Fix: student adds the pauses they marked."
+        ],
+        "stretch": "Extension: mark pauses and stress, then plan for a tough question.",
+        "help": "Supported Worksheet: picture-clue choices, a card done, a frame.",
+        "prep": "Independent finishing and carding; Week 9 is rehearse and deliver. SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in the student's conclusion and five key-word cue cards"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Bikes are cheaper than cars, keep you fit, and never get stuck in traffic.",
+        "Write the key words for a cue card."
+      ],
+      "notes": {
+        "answer": "e.g. BIKES - CHEAP - FIT - NO TRAFFIC",
+        "beats": [
+          "SAY: A new sentence. Card it.",
+          [
+            "ASK: Write three or four key words.",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: CHEAP, FIT, TRAFFIC"
+          ],
+          "RECORD who writes the full sentence. Check their cards first in Week 9."
+        ],
+        "trap": [
+          "copying the whole sentence.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new sentence. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "What is the very last thing your audience will hear you say?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - the call to action",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How ready is your speech for rehearsal next week?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: What is the very last thing your audience will hear you say?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: the call to action"
+          ]
+        ],
+        "prep": "Cards and speech stay in the folder for Week 9. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

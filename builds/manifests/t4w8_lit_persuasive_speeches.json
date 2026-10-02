@@ -1,0 +1,42 @@
+{
+ "unit_folder": "Term4_Week8_Literacy_Persuasive_Speeches",
+ "unit_pptx_name": "Term 4 Week 8 - Write My Speech - Year 5-6 Literacy.pptx",
+ "anchor": "Claim it. Prove it. Sell it. Say it. The writing anchor plus a microphone (say it), and the speech rule: write for the ear. Final piece: a rehearsed persuasive speech delivered to a live audience.",
+ "lessons": [
+  {
+   "build_script": "builds/t4w8_lit_s1_what_do_i_stand_for.json",
+   "folder": "T4W8_Lit_S1_What_Do_I_Stand_For",
+   "session": 1,
+   "title": "What Do I Stand For?",
+   "focus": "Choose an issue, position, audience and think-feel-do purpose for the speech. Critical feature: an audience you can picture tells you what to say."
+  },
+  {
+   "build_script": "builds/t4w8_lit_s2_gather_the_proof.json",
+   "folder": "T4W8_Lit_S2_Gather_The_Proof",
+   "session": 2,
+   "title": "Gather the Proof",
+   "focus": "Collect evidence and order three arguments, saving the strongest for last. Critical feature: the order of arguments builds the audience's feeling."
+  },
+  {
+   "build_script": "builds/t4w8_lit_s3_write_the_opening.json",
+   "folder": "T4W8_Lit_S3_Write_The_Opening",
+   "session": 3,
+   "title": "Write the Opening",
+   "focus": "Draft the speech opening and first argument for the ear. Critical feature: the first 20 seconds decide whether they listen."
+  },
+  {
+   "build_script": "builds/t4w8_lit_s4_heart_of_the_speech.json",
+   "folder": "T4W8_Lit_S4_Heart_Of_The_Speech",
+   "session": 4,
+   "title": "The Heart of the Speech",
+   "focus": "Draft the middle arguments and one emotional moment: a story or picture. Critical feature: one true small story beats ten big claims."
+  },
+  {
+   "build_script": "builds/t4w8_lit_s5_the_big_finish.json",
+   "folder": "T4W8_Lit_S5_The_Big_Finish",
+   "session": 5,
+   "title": "The Big Finish",
+   "focus": "Draft the conclusion and call to action, time the speech and make cue cards. Critical feature: cue cards hold key words, not sentences."
+  }
+ ]
+}

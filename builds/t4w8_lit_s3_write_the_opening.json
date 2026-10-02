@@ -1,0 +1,865 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 8,
+    "session": 3,
+    "variant": 4,
+    "minutes": 60,
+    "title": "Write the Opening",
+    "subtitle": "Term 4 Week 8, Session 3",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 8 Session 3",
+    "outputFolder": "T4W8_Lit_S3_Write_The_Opening",
+    "fileName": "Session 3 - Write the Opening.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY10 creating spoken persuasive texts; VC2E5LA07 sentence choices for effect; VC2E5LY02 features of voice for an audience",
+      "shape": "model, guide, apply: the teacher drafts the shade-trees opening live, students name hooks and fix flat openings, then draft their own opening and first argument",
+      "criticalFeature": "the first 20 seconds decide whether they listen: hook, position, preview",
+      "decisionPoints": [
+        "the Name the hook round",
+        "the choice check: the opening that grabs the ear",
+        "the exit board: a 20-second opening for a new speech"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: Claim it, in the first 20 seconds.",
+      "catchUp": "Students without S1-S2 plans borrow the shade-trees plan and write its opening."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "S1 plan and S2 proof (in the speech folder)",
+      "Persuasive Speaker's Toolkit (strong starts, row 2)",
+      "Mini-whiteboards and markers"
+    ],
+    "routineIcons": [
+      "Fingers 1, 2 or 3",
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "The opening: hook, position, preview",
+      "Hooks: 1 question, 2 surprising fact, 3 imagine"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: name the hooks, fix flat openings, spot the problem, then draft your own opening and first argument.",
+      "title": "Write the Opening",
+      "subtitle": "Twenty seconds to win them.",
+      "sections": [
+        {
+          "title": "Name the hook",
+          "columns": 3,
+          "example": {
+            "prompt": "Did you know our yard hit 41 degrees?",
+            "steps": [
+              "Is it a question?",
+              "Is there a surprise?",
+              "Does it say imagine?"
+            ],
+            "answer": "A question with a surprising fact inside it."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Imagine a playground with no shade at all.",
+              "options": [
+                "question",
+                "surprising fact",
+                "imagine"
+              ],
+              "answer": 2
+            },
+            {
+              "kind": "choice",
+              "prompt": "One rubbish truck of plastic hits the ocean every minute.",
+              "options": [
+                "question",
+                "surprising fact",
+                "imagine"
+              ],
+              "answer": 1
+            },
+            {
+              "kind": "choice",
+              "prompt": "Who here has burnt their legs on the slide?",
+              "options": [
+                "question",
+                "surprising fact",
+                "imagine"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "title": "Flat to fired up",
+          "columns": 1,
+          "example": {
+            "prompt": "Hello. My speech is about polar bears.",
+            "steps": [
+              "Cut the hello",
+              "Start with a hook",
+              "Say your position"
+            ],
+            "answer": "Imagine your home melting under your feet. For polar bears, it is. We have to act."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each flat opening with a hook and a position.",
+              "columns": [
+                "Flat opening",
+                "Fired-up opening"
+              ],
+              "rows": [
+                [
+                  "Today I will talk about homework.",
+                  ""
+                ],
+                [
+                  "My topic is the canteen.",
+                  ""
+                ],
+                [
+                  "This speech is about bikes.",
+                  ""
+                ],
+                [
+                  "I am going to tell you about dogs.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Today I will talk about homework.",
+                  "Three hours a week. That's what homework steals. It's time to stop."
+                ],
+                [
+                  "My topic is the canteen.",
+                  "Who wants a healthy lunch? Then our canteen has to change."
+                ],
+                [
+                  "This speech is about bikes.",
+                  "Imagine riding to school with your friends. We need bike racks."
+                ],
+                [
+                  "I am going to tell you about dogs.",
+                  "Dogs save lives. Every single day. Every school needs a reading dog."
+                ]
+              ],
+              "widths": [
+                1,
+                1.6
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "Spot the problem",
+          "columns": 2,
+          "example": {
+            "prompt": "Opening: a hook and a position, no preview.",
+            "steps": [
+              "Hook?",
+              "Position?",
+              "Preview?"
+            ],
+            "answer": "Missing the preview. Add: I'll give you three reasons."
+          },
+          "items": [
+            {
+              "kind": "mistake",
+              "prompt": "Ruby's opening has a problem. Find it and fix it.",
+              "work": [
+                "Polar bears, which are the largest land carnivores, are currently experiencing significant habitat loss due to the reduction of Arctic sea ice."
+              ],
+              "answer": "Written for the eye: one long sentence. Fix: Polar bears are in trouble. Their ice is melting. And we can help."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Leo's opening has a problem. Find it and fix it.",
+              "work": [
+                "Imagine a hot yard. Imagine a hot slide. Imagine a hot bench. Imagine hot shoes. Imagine..."
+              ],
+              "answer": "All hook, no position. Fix: keep two imagines, then say: We need shade trees."
+            }
+          ]
+        },
+        {
+          "title": "My opening",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "Hook",
+              "Position",
+              "Preview, then argument 1"
+            ],
+            "answer": "Hand on the slide at lunch. Ouch! We need shade trees. Here are three reasons."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write your speech opening: hook, position, preview.",
+              "answer": "A hook, a clear position and a preview, written for the ear.",
+              "lines": 4
+            },
+            {
+              "kind": "open",
+              "prompt": "Write your first argument with its proof, for the ear.",
+              "answer": "Argument 1 with a fact, expert or story, in short sentences.",
+              "lines": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: write three different hooks for your speech, then pick and defend the best.",
+      "title": "Opening Remix",
+      "subtitle": "Same speech, three ways in.",
+      "sections": [
+        {
+          "title": "Three hooks",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "A question",
+              "A surprising fact",
+              "Imagine..."
+            ],
+            "answer": "Ever burnt your legs on the slide? / Our yard hit 41 degrees. / Imagine a yard full of cool green shade."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write three hooks for your own speech.",
+              "columns": [
+                "Hook type",
+                "My hook"
+              ],
+              "rows": [
+                [
+                  "Question",
+                  ""
+                ],
+                [
+                  "Surprising fact",
+                  ""
+                ],
+                [
+                  "Imagine...",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Question",
+                  "a question the audience answers in their head"
+                ],
+                [
+                  "Surprising fact",
+                  "a checked fact that surprises"
+                ],
+                [
+                  "Imagine...",
+                  "a picture the audience can see"
+                ]
+              ],
+              "widths": [
+                0.7,
+                2
+              ],
+              "rowH": 50
+            }
+          ]
+        },
+        {
+          "title": "Pick the best",
+          "columns": 1,
+          "example": {
+            "prompt": "Audience: the principal",
+            "steps": [
+              "What do they care about?",
+              "Which hook fits?",
+              "Why?"
+            ],
+            "answer": "The fact: principals trust numbers."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Which hook will work best for your audience? Explain why.",
+              "answer": "A chosen hook, linked to what the audience cares about.",
+              "lines": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first rewrite done and an opening frame.",
+      "title": "Opening Helper",
+      "subtitle": "Hook. Position. Go.",
+      "sections": [
+        {
+          "title": "Which hook?",
+          "columns": 3,
+          "example": {
+            "prompt": "Who has burnt their legs on the slide?",
+            "steps": [
+              "Is there a question mark?",
+              "Yes",
+              "Question"
+            ],
+            "answer": "question"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Imagine no shade at all.",
+              "options": [
+                "imagine",
+                "question"
+              ],
+              "answer": 0,
+              "hint": "Look at the first word."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Is lunch long enough?",
+              "options": [
+                "question",
+                "fact"
+              ],
+              "answer": 0,
+              "hint": "Look at the end."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Our yard hit 41 degrees.",
+              "options": [
+                "fact",
+                "imagine"
+              ],
+              "answer": 0,
+              "hint": "Is there a number?"
+            }
+          ]
+        },
+        {
+          "title": "Fix it",
+          "columns": 1,
+          "example": {
+            "prompt": "My speech is about dogs.",
+            "steps": [
+              "Cut my speech is about",
+              "Start with a hook",
+              "Say what you think"
+            ],
+            "answer": "Who loves dogs? Every class needs one!"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Make each opening exciting.",
+              "columns": [
+                "Boring",
+                "Exciting"
+              ],
+              "rows": [
+                [
+                  "My speech is about bikes.",
+                  "Who loves riding? We need bike racks!"
+                ],
+                [
+                  "My speech is about lunch.",
+                  ""
+                ],
+                [
+                  "My speech is about pets.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "My speech is about bikes.",
+                  "Who loves riding? We need bike racks!"
+                ],
+                [
+                  "My speech is about lunch.",
+                  "Is lunch long enough? It needs ten more minutes!"
+                ],
+                [
+                  "My speech is about pets.",
+                  "Imagine a guinea pig in our room! Every class needs a pet."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                1.5
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "My opening",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "Did you know ___?",
+              "I think ___.",
+              "Here's why."
+            ],
+            "answer": "Did you know our yard hit 41 degrees? I think we need trees. Here's why."
+          },
+          "items": [
+            {
+              "prompt": "Did you know ___? I think ___. Here's why.",
+              "answer": "A hook, a position and a preview.",
+              "lines": 5,
+              "hint": "Use your plan."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open S3. One line: today you write the first words your audience will hear."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Students need their S1 plan, S2 proof and Toolkit."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to write a speech opening that makes an audience want to listen.",
+      "successCriteria": [
+        "I can name a question, a surprising fact and an imagine hook.",
+        "I can write an opening with a hook, a position and a preview.",
+        "I can choose the hook that suits my audience best."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Twenty seconds. That's how long you have to win them."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Would you keep listening?",
+      "lines": [
+        "1: Hello. My name is Mr Brown and my speech is about trees.",
+        "2: Put your hand on the slide at lunch. Go on. Ouch."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "timer",
+            "label": "20 seconds"
+          },
+          {
+            "name": "ear",
+            "label": "listen?"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "2 - it grabs the ear",
+        "beats": [
+          [
+            "SAY: Two openings. Eyes closed.",
+            "READ 1 flatly. READ 2 with energy and a pause before Ouch."
+          ],
+          [
+            "ASK: Which one makes you want to keep listening? 1 or 2?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: What did opening 2 do to you?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: made me imagine it; made me feel the heat"
+          ],
+          "SAY: Your audience decides in 20 seconds. Hello, my name is... wastes five."
+        ],
+        "trap": [
+          "thinking a polite hello is needed first.",
+          "Fix: say speakers hook first; introductions can come after, if at all."
+        ],
+        "prep": "Low-entry launch. Change Mr Brown to your own name. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "preview",
+      "meaning": "Telling the audience what is coming.",
+      "example": "Here are three reasons we need shade trees.",
+      "pictogram": "binoculars",
+      "notes": {
+        "answer": "telling the audience what is coming",
+        "beats": [
+          "POINT to the word. SAY: Preview. Say it with me. Preview.",
+          [
+            "SAY: Telling the audience what is coming.",
+            "SAY: Here are three reasons we need shade trees."
+          ],
+          [
+            "ASK: Why does a listener need a preview more than a reader?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: a listener can't flip ahead or see headings"
+          ]
+        ],
+        "trap": [
+          "listing the whole speech in the preview.",
+          "Fix: say just the number: three reasons."
+        ],
+        "prep": "Preview is the third part of the opening.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Writing my opening",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Part",
+            "My shade trees opening"
+          ],
+          [
+            "Hook",
+            "Put your hand on the slide at lunch. Go on. Ouch!"
+          ],
+          [
+            "Position",
+            "Our school needs ten shade trees before summer."
+          ],
+          [
+            "Preview",
+            "Here are three reasons."
+          ],
+          [
+            "Argument 1",
+            "First, trees bring life. The magpies left when the old gum came down."
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "hook, position, preview, then argument 1",
+        "beats": [
+          [
+            "POINT to Hook.",
+            "SAY: I want them to feel the heat before I say a single fact."
+          ],
+          [
+            "POINT to Position and Preview.",
+            "SAY: Then my side, plain and sure. Then how many reasons, so they can follow."
+          ],
+          [
+            "POINT to Argument 1.",
+            "SAY: First is a signpost. Short sentences. One proof."
+          ],
+          [
+            "ASK: What are the three parts of my opening?",
+            "5 sec. Cue: Everyone, together, on three.",
+            "EXPECT: hook, position, preview"
+          ]
+        ],
+        "trap": [
+          "a hook with no position after it.",
+          "Fix: ask what do you want them to do? Say it next."
+        ],
+        "stretch": "Make the hook link back at the very end.",
+        "help": "Use the frame: Did you know... I think... Here's why.",
+        "prep": "Write it live on the board as you think aloud. Critical feature: hook, position, preview in 20 seconds.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Name the hook",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "look at the first word and the last mark",
+      "followUp": "cold call one student: would it work on the principal?",
+      "items": [
+        {
+          "text": "What if your bedroom flooded every winter?",
+          "answer": "1 - question",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Australians throw out 7.6 million tonnes of food a year.",
+          "answer": "2 - surprising fact",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Imagine waking up to silence. No birds. None.",
+          "answer": "3 - imagine",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "How many of you walked here today?",
+          "answer": "1 - question",
+          "expect": "1 finger"
+        },
+        {
+          "text": "A polar bear once swam for nine days straight.",
+          "answer": "2 - surprising fact",
+          "expect": "2 fingers"
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger: question. Two: surprising fact. Three: imagine."
+        ],
+        "trap": [
+          "calling every surprising sentence a question.",
+          "Fix: student checks the end mark."
+        ],
+        "stretch": "Turn the fact into a question hook.",
+        "help": "Look at the first word and the last mark.",
+        "prep": "Guided practice. Facts as used in Weeks 2 and 3. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which opening grabs the ear?",
+      "options": [
+        {
+          "text": "Hello, my name is Sam and my speech is about trees.",
+          "misconception": "polite, but no hook and no position"
+        },
+        {
+          "text": "Imagine a 41 degree slide. That's our yard. We need shade."
+        },
+        {
+          "text": "Trees, which provide shade, are beneficial for a number of reasons.",
+          "misconception": "written for the eye: long and flat"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - a hook, then the position, in short sentences",
+        "beats": [
+          "SAY: Three openings for the same speech.",
+          [
+            "ASK: Which opening grabs the ear?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: point to the hook and the position.",
+            "Less -> read all three aloud, eyes closed, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. They can see it, feel it, and they know your side."
+          ]
+        ],
+        "trap": [
+          "pointing to C because it sounds clever.",
+          "Fix: ask could you follow it with eyes closed?"
+        ],
+        "prep": "Decision point before drafting. Under 80% means one more flat-to-fired-up rewrite together.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Flat to fired up",
+      "routine": "boards",
+      "thinkTime": 40,
+      "pivot": "cut the first words, start with a question, then say your side",
+      "followUp": "cold call one board: perform it",
+      "items": [
+        {
+          "text": "My speech is about the school bus.",
+          "answer": "e.g. Forty minutes, standing up, every morning. We need a second bus.",
+          "expect": "a hook and a position"
+        },
+        {
+          "text": "Today I am talking about recycling.",
+          "answer": "e.g. Where does your chip packet go? Not the bin. We need recycling bins.",
+          "expect": "a hook and a position"
+        },
+        {
+          "text": "This is a speech about screen time.",
+          "answer": "e.g. Imagine dinner with no phones. Families need screen-free dinners.",
+          "expect": "a hook and a position"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Rewrite the flat opening. Hook first, then your side."
+        ],
+        "trap": [
+          "keeping My speech is about... and adding a hook after it.",
+          "Fix: student crosses out the first four words."
+        ],
+        "stretch": "Add a preview.",
+        "help": "Start with Who here... or Imagine...",
+        "prep": "Guided rewriting. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Draft my opening",
+      "task": "Work through your Worksheet. Finish by drafting your own opening and first argument, then read them aloud.",
+      "where": "Worksheet",
+      "frame": "Hook: ___. Position: ___. Preview: ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "timer",
+          "pencil",
+          "microphone"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Win them in 20 seconds",
+      "notes": {
+        "answer": "an opening with a hook, a position and a preview, then argument 1",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Your opening and first argument, written for the ear."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: read me your hook. Would the principal keep listening?",
+          [
+            "ASK: Read your opening to your partner. Time it: under 20 seconds?",
+            "40 sec each. Turn and tell, partner A first.",
+            "EXPECT: a hook, a position, a preview"
+          ]
+        ],
+        "trap": [
+          "an opening that starts Hello, my name is.",
+          "Fix: student crosses it out and starts with the hook."
+        ],
+        "stretch": "Extension: three hooks, then pick the best for the audience.",
+        "help": "Supported Worksheet: picture-clue choices, a rewrite done, a frame.",
+        "prep": "Independent drafting of their own speech; S4 drafts the middle. Toolkit row 2 for strong starts. SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in the student's drafted opening and first argument"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "A speech asks families to switch appliances off at the wall.",
+        "Write a 20-second opening: hook, position, preview."
+      ],
+      "notes": {
+        "answer": "e.g. Your TV is eating power while you sleep. Switch it off. Here's why.",
+        "beats": [
+          "SAY: A new speech. Write the opening only.",
+          [
+            "ASK: Write a hook, a position and a preview.",
+            "90 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: three parts, short sentences"
+          ],
+          "RECORD who has no hook or no position. Conference list for S4."
+        ],
+        "trap": [
+          "an opening with no position.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new speech. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Which word in your hook will hit your audience hardest?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - ouch; imagine; a number",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that your opening wins them in 20 seconds?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Which word in your hook will hit your audience hardest?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: ouch; imagine; a number"
+          ]
+        ],
+        "prep": "Openings go in the speech folder for S4. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

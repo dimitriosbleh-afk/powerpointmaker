@@ -1,0 +1,970 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 5,
+    "session": 2,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Revise for Impact",
+    "subtitle": "Term 4 Week 5, Session 2",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 5 Session 2",
+    "outputFolder": "T4W5_Lit_S2_Revise_For_Impact",
+    "fileName": "Session 2 - Revise for Impact.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY11 re-reading and editing their own texts using agreed criteria; VC2E5LA05 complex sentences used for effect; VC2E5LA08 vocabulary for precision",
+      "shape": "before and after, name the move, punch it, revise: the model shows a paragraph revised with four moves, students name and practise each, then revise their own draft in colour",
+      "criticalFeature": "revising changes the meaning and impact for the reader; editing only fixes the errors",
+      "decisionPoints": [
+        "the Which move? round",
+        "the choice check: the biggest difference for the reader",
+        "the exit board: one named revision on a new paragraph"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Revising makes each move hit harder.",
+      "catchUp": "No full draft? Revise the paragraphs you have; the ARMS log works on any paragraph."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Writing books with the complete draft and Session 1 revision plan",
+      "A coloured pencil for revisions",
+      "Mini-whiteboards and markers"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 to 4",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "ARMS on the board: 1 Add, 2 Remove, 3 Move, 4 Swap",
+      "Revise = make it stronger. Edit = make it correct."
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: name the moves, judge a revision, punch it up, then log your own revisions.",
+      "title": "Revise for Impact",
+      "subtitle": "Add, Remove, Move, Swap.",
+      "sections": [
+        {
+          "title": "Name the move",
+          "columns": 1,
+          "example": {
+            "prompt": "'Kids like parks.' -> 'Kids love our park, especially the flying fox.'",
+            "steps": [
+              "What changed?",
+              "Added, removed, moved or swapped?",
+              "Name the move"
+            ],
+            "answer": "Add (a detail) and Swap (like to love)"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Name the ARMS move: add, remove, move or swap.",
+              "columns": [
+                "Before -> after",
+                "Move"
+              ],
+              "rows": [
+                [
+                  "'The bin is full.' -> 'The bin is overflowing.'",
+                  ""
+                ],
+                [
+                  "'It is bad. It is very bad.' -> 'It is harmful.'",
+                  ""
+                ],
+                [
+                  "'Act now.' -> 'Act now, before the ice is gone.'",
+                  ""
+                ],
+                [
+                  "The strongest reason went from first to last.",
+                  ""
+                ],
+                [
+                  "'Lots of people' -> '18 of our 25 students'",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "'The bin is full.' -> 'The bin is overflowing.'",
+                  "swap"
+                ],
+                [
+                  "'It is bad. It is very bad.' -> 'It is harmful.'",
+                  "remove (and swap)"
+                ],
+                [
+                  "'Act now.' -> 'Act now, before the ice is gone.'",
+                  "add"
+                ],
+                [
+                  "The strongest reason went from first to last.",
+                  "move"
+                ],
+                [
+                  "'Lots of people' -> '18 of our 25 students'",
+                  "swap (vague for exact)"
+                ]
+              ],
+              "widths": [
+                2.4,
+                0.9
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Revise or edit?",
+          "columns": 2,
+          "example": {
+            "prompt": "Fixing 'enviroment' to 'environment'.",
+            "steps": [
+              "Does it change the meaning or impact?",
+              "Or only fix a mistake?",
+              "Revise or edit"
+            ],
+            "answer": "edit: it only fixes a spelling mistake"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which change makes the biggest difference for the reader?",
+              "options": [
+                "Big swapped for large.",
+                "A sourced fact added after a claim.",
+                "Neater handwriting."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "The fact makes the claim believable; the others barely change the meaning."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Ava says she revised. Find the problem and fix it.",
+              "work": [
+                "I fixed three spelling mistakes and added a full stop."
+              ],
+              "answer": "That is editing. Fix: add proof to paragraph 2 and swap a weak word."
+            }
+          ]
+        },
+        {
+          "title": "Punch it",
+          "columns": 1,
+          "example": {
+            "prompt": "Long: Every winter the creek floods and every winter the path is closed.",
+            "steps": [
+              "Read the long sentence",
+              "Find the point it builds to",
+              "Add a 2-5 word punch"
+            ],
+            "answer": "Enough is enough."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write a short punch sentence to follow each long one.",
+              "columns": [
+                "Long sentence",
+                "My punch"
+              ],
+              "rows": [
+                [
+                  "The library closes at lunch, so kids who want quiet have nowhere to go.",
+                  ""
+                ],
+                [
+                  "Each year we buy new balls, and each year they end up on the roof.",
+                  ""
+                ],
+                [
+                  "The ice that carried bears to food for thousands of years is vanishing.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "The library closes at lunch, so kids who want quiet have nowhere to go.",
+                  "That isn't fair."
+                ],
+                [
+                  "Each year we buy new balls, and each year they end up on the roof.",
+                  "Time for a net."
+                ],
+                [
+                  "The ice that carried bears to food for thousands of years is vanishing.",
+                  "Fast."
+                ]
+              ],
+              "widths": [
+                2,
+                1
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "My ARMS log",
+          "columns": 1,
+          "example": {
+            "prompt": "Zoo letter",
+            "steps": [
+              "Find a weak spot in your draft",
+              "Choose the move",
+              "Say why it helps the reader"
+            ],
+            "answer": "Add: According to NASA... in paragraph 1, because proof makes it believable."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Log one revision of each kind from your own draft.",
+              "columns": [
+                "Move",
+                "Where",
+                "Why it helps my reader"
+              ],
+              "rows": [
+                [
+                  "Add",
+                  "",
+                  ""
+                ],
+                [
+                  "Remove",
+                  "",
+                  ""
+                ],
+                [
+                  "Move",
+                  "",
+                  ""
+                ],
+                [
+                  "Swap",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Add",
+                  "a named paragraph",
+                  "a reason linked to the reader"
+                ],
+                [
+                  "Remove",
+                  "a named sentence",
+                  "a reason"
+                ],
+                [
+                  "Move",
+                  "a named paragraph",
+                  "a reason"
+                ],
+                [
+                  "Swap",
+                  "a named word",
+                  "a reason"
+                ]
+              ],
+              "widths": [
+                0.6,
+                1.1,
+                1.6
+              ],
+              "rowH": 30
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: revise one sentence for two readers, then test two endings.",
+      "title": "Master Reviser",
+      "subtitle": "Revise for the reader, not just for the rules.",
+      "sections": [
+        {
+          "title": "Two readers, two revisions",
+          "columns": 1,
+          "example": {
+            "prompt": "Plain: Bears need help.",
+            "steps": [
+              "Reader 1: the principal",
+              "Reader 2: Year 3",
+              "Revise for each"
+            ],
+            "answer": "Principal: Our school can support polar bear research. Year 3: Bears need our help!"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Revise each plain sentence for both readers.",
+              "columns": [
+                "Plain",
+                "For the principal",
+                "For Year 3"
+              ],
+              "rows": [
+                [
+                  "We should save water.",
+                  "",
+                  ""
+                ],
+                [
+                  "Litter is bad.",
+                  "",
+                  ""
+                ],
+                [
+                  "Trees are good.",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "We should save water.",
+                  "Our school could cut water use with timed taps.",
+                  "Turn off the tap. Every drop counts!"
+                ],
+                [
+                  "Litter is bad.",
+                  "Litter costs our school cleaning hours each week.",
+                  "Litter hurts birds and lizards."
+                ],
+                [
+                  "Trees are good.",
+                  "Trees cool classrooms and cut power bills.",
+                  "Trees give us shade to play in."
+                ]
+              ],
+              "widths": [
+                0.8,
+                1.2,
+                1.2
+              ],
+              "rowH": 42
+            }
+          ]
+        },
+        {
+          "title": "Test two endings",
+          "columns": 1,
+          "example": {
+            "prompt": "Ending A: short punch. Ending B: Because..., please...",
+            "steps": [
+              "Write both",
+              "Read both aloud",
+              "Choose and explain"
+            ],
+            "answer": "B: it gives the reason and the action together."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Rewrite your last sentence twice: once as a short punch, once starting with Because... Which is stronger for your reader, and why?",
+              "answer": "Two versions and a reader-linked choice.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first swap done and a frame.",
+      "title": "Revise Helper",
+      "subtitle": "Add, Remove, Move, Swap.",
+      "sections": [
+        {
+          "title": "Which move?",
+          "columns": 3,
+          "example": {
+            "prompt": "'hungry' -> 'starving'",
+            "steps": [
+              "Was a word changed?",
+              "Yes",
+              "Swap"
+            ],
+            "answer": "swap"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "bad -> harmful",
+              "options": [
+                "add",
+                "swap"
+              ],
+              "answer": 1,
+              "hint": "A word was changed."
+            },
+            {
+              "kind": "choice",
+              "prompt": "We must act. -> We must act, before it is too late.",
+              "options": [
+                "add",
+                "swap"
+              ],
+              "answer": 0,
+              "hint": "Words were added."
+            },
+            {
+              "kind": "choice",
+              "prompt": "big -> enormous",
+              "options": [
+                "add",
+                "swap"
+              ],
+              "answer": 1,
+              "hint": "A word was changed."
+            }
+          ]
+        },
+        {
+          "title": "Swap it",
+          "columns": 1,
+          "example": {
+            "prompt": "The bin is full.",
+            "steps": [
+              "Find the plain word",
+              "Choose a stronger one",
+              "Write it"
+            ],
+            "answer": "The bin is overflowing."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Swap the plain word for a stronger one.",
+              "columns": [
+                "Before",
+                "After"
+              ],
+              "rows": [
+                [
+                  "Bears are hungry.",
+                  "Bears are starving."
+                ],
+                [
+                  "The ice is small.",
+                  ""
+                ],
+                [
+                  "Plastic is bad.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Bears are hungry.",
+                  "Bears are starving."
+                ],
+                [
+                  "The ice is small.",
+                  "The ice is shrinking."
+                ],
+                [
+                  "Plastic is bad.",
+                  "Plastic is harmful."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                1.2
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "Revise my sentence",
+          "columns": 1,
+          "example": {
+            "prompt": "My sentence: Zoos are bad.",
+            "steps": [
+              "Copy one sentence",
+              "Add a reason",
+              "Swap one word"
+            ],
+            "answer": "Zoos are cruel for bears because they need huge spaces."
+          },
+          "items": [
+            {
+              "prompt": "Copy one sentence from your draft. Revise it: add a reason and swap one word.",
+              "answer": "A revised sentence with a reason and a stronger word.",
+              "lines": 4,
+              "hint": "Use the Power Word Bank."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we take a good draft and make it great."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Coloured pencils for revisions. Drafts are on every second line, so there is room to revise."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to revise our draft so it is stronger for our reader.",
+      "successCriteria": [
+        "I can name the four ARMS moves.",
+        "I can revise my writing using Add, Remove, Move and Swap.",
+        "I can vary my sentences so the key ones hit hardest."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: A first draft is just the start. Today you make yours stronger."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Which draft would you rather read?",
+      "lines": [
+        "Polar bears are in danger. This is bad. We should help them.",
+        "Polar bears are starving on shrinking ice. They cannot wait. We must act now."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "pencil",
+            "label": "first draft"
+          },
+          {
+            "name": "star",
+            "label": "revised"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "the second - stronger words, a reason and a short punch",
+        "beats": [
+          [
+            "SAY: Same writer, same idea. One is a first draft.",
+            "One has been revised."
+          ],
+          [
+            "ASK: Which would you rather read, first or second?",
+            "5 sec. Cue: Fingers at your chest, 1 or 2... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: What did the writer change?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: starving, shrinking, the short sentence, must"
+          ],
+          "SAY: Yesterday's feedback tells you what to change. Today you change it."
+        ],
+        "trap": [
+          "thinking revising means fixing spelling.",
+          "Fix: say spelling is editing, Thursday's job; today we change what it says."
+        ],
+        "prep": "Launch links the Session 1 revision plan to today. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "revise",
+      "meaning": "To change your writing to make it stronger, not just correct.",
+      "example": "Swap bad for harmful. That is revising.",
+      "pictogram": "eraser",
+      "notes": {
+        "answer": "to change your writing to make it stronger, not just correct",
+        "beats": [
+          "POINT to the word. SAY: Revise. Say it with me. Revise.",
+          [
+            "SAY: To change your writing to make it stronger, not just correct.",
+            "SAY: Swap bad for harmful. That is revising."
+          ],
+          [
+            "ASK: Is fixing a spelling mistake revising or editing?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: editing; it doesn't change the meaning"
+          ]
+        ],
+        "trap": [
+          "thinking revise means rewrite it neatly.",
+          "Fix: ask did the meaning get stronger? If not, it's not revising."
+        ],
+        "prep": "Revise versus edit is the line between Sessions 2 and 3.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "I Do",
+      "title": "Watch me find what to revise",
+      "extract": "Polar bears are in danger. This is bad. It is really, really bad. They need ice to hunt seals. We should probably help them.",
+      "highlights": [
+        "in danger",
+        "This is bad. It is really, really bad.",
+        "They need ice to hunt seals.",
+        "should probably"
+      ],
+      "source": "Sample draft, written for this session",
+      "notes": {
+        "answer": "swap in danger; remove the repeats; add proof; swap should probably for must",
+        "beats": [
+          [
+            "READ it aloud once.",
+            "SAY: Every highlight is a spot I can make stronger."
+          ],
+          [
+            "POINT to This is bad. It is really, really bad.",
+            "SAY: Remove. It says nothing new. Out it goes."
+          ],
+          [
+            "POINT to They need ice to hunt seals.",
+            "SAY: Add. Who says so? According to Polar Bears International..."
+          ],
+          [
+            "ASK: Should probably. Which move fixes it? 1 add, 2 remove, 3 move, 4 swap.",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 4, swap for must"
+          ]
+        ],
+        "trap": [
+          "changing every word and losing the writer's voice.",
+          "Fix: student makes one move per weak spot only."
+        ],
+        "stretch": "Find the sentence that should move to the end.",
+        "help": "Start with Remove: cross out any sentence that repeats.",
+        "prep": "The model, part 1. Critical feature: revising changes the impact; editing only fixes errors.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "I Do",
+      "title": "After: four moves later",
+      "extract": "Polar bears are starving. According to Polar Bears International, they hunt seals from the sea ice, and that ice is vanishing. They cannot wait. We must act now.",
+      "highlights": [
+        "starving",
+        "According to Polar Bears International",
+        "They cannot wait.",
+        "must"
+      ],
+      "source": "Sample draft, revised for this session",
+      "notes": {
+        "answer": "swap, add, a short punch, swap",
+        "beats": [
+          [
+            "READ the revised version aloud.",
+            "SAY: Same idea. Listen to how much harder it hits."
+          ],
+          [
+            "POINT to They cannot wait.",
+            "SAY: A long sentence, then three short words. The short one lands like a punch."
+          ],
+          [
+            "ASK: Which is stronger, before or after? Thumbs up for after.",
+            "3 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up"
+          ],
+          [
+            "ASK: Name one move I made, and why it helps.",
+            "15 sec. Turn and tell, partner B first.",
+            "EXPECT: added a source so it's believable"
+          ]
+        ],
+        "trap": [
+          "copying the model's words into their own draft.",
+          "Fix: student names the move, then makes it with their own words."
+        ],
+        "stretch": "Add a fronted Because-clause to one sentence.",
+        "help": "Make two moves only: one Add, one Swap.",
+        "prep": "The model, part 2. Sentence variety (VC2E5LA05): long build, short punch.",
+        "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Which move?",
+      "routine": "fingers",
+      "thinkTime": 6,
+      "pivot": "read before and after aloud; what is different?",
+      "followUp": "cold call one student: how does it help the reader?",
+      "items": [
+        {
+          "text": "'Bears are hungry.' -> 'Bears are starving.'",
+          "answer": "4 - swap",
+          "expect": "4 fingers"
+        },
+        {
+          "text": "'Litter is bad. It is so bad.' -> 'Litter chokes our creek.'",
+          "answer": "2 - remove (and swap)",
+          "expect": "2 fingers. ACCEPT: 4"
+        },
+        {
+          "text": "'We must act.' -> 'The IUCN lists bears as Vulnerable. We must act.'",
+          "answer": "1 - add proof",
+          "expect": "1 finger"
+        },
+        {
+          "text": "The strongest reason moved to the last paragraph.",
+          "answer": "3 - move",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "'It is very, very important.' -> 'It is urgent.'",
+          "answer": "4 - swap (and remove)",
+          "expect": "4 fingers. ACCEPT: 2"
+        }
+      ],
+      "notes": {
+        "say": [
+          "1 add, 2 remove, 3 move, 4 swap.",
+          "What did the writer do?"
+        ],
+        "trap": [
+          "calling any change a swap.",
+          "Fix: ask were words added or taken out? Student re-votes."
+        ],
+        "stretch": "Say how each move helps the reader.",
+        "help": "Count the words before and after: more means add, fewer means remove.",
+        "prep": "Guided naming of ARMS moves. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which change helps the reader most?",
+      "options": [
+        {
+          "text": "Swapping big for large.",
+          "misconception": "a synonym swap; the meaning barely changes"
+        },
+        {
+          "text": "Adding a sourced fact after a claim."
+        },
+        {
+          "text": "Rewriting it in neater handwriting.",
+          "misconception": "neatness is publishing, not revising"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - proof makes the claim believable",
+        "beats": [
+          "SAY: Three changes. Only one really changes things for the reader.",
+          [
+            "ASK: Which change helps the reader most?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: why doesn't A help much?",
+            "Less -> ask what does the reader learn from each? re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Now the reader believes you. That's a real revision."
+          ]
+        ],
+        "trap": [
+          "pointing to C because neat work gets praised.",
+          "Fix: say neat comes on Publish Day; today is about meaning."
+        ],
+        "prep": "Decision point before students revise. Under 80% means the class revises one paragraph together on the board first.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Punch it",
+      "routine": "boards",
+      "thinkTime": 20,
+      "pivot": "ask: what is the one thing this sentence builds to?",
+      "followUp": "cold call one board: read the long one, then your punch",
+      "items": [
+        {
+          "text": "Our bins overflow every Friday, and the wind spreads rubbish across the oval.",
+          "answer": "It has to stop.",
+          "expect": "a 2-5 word punch"
+        },
+        {
+          "text": "For thousands of years the ice carried bears to their food, and now it is melting away.",
+          "answer": "Time is running out.",
+          "expect": "a 2-5 word punch"
+        },
+        {
+          "text": "The creek behind our school used to croak with frogs, but now there is nothing.",
+          "answer": "Silence.",
+          "expect": "a 1-5 word punch"
+        }
+      ],
+      "notes": {
+        "say": [
+          "A long sentence builds. A short one punches.",
+          "Write a short sentence to follow each long one."
+        ],
+        "trap": [
+          "writing another long sentence.",
+          "Fix: student counts words; five or fewer."
+        ],
+        "stretch": "Make your punch echo a word from the long sentence.",
+        "help": "Try: It has to stop. or Not anymore.",
+        "prep": "Guided sentence variety (VC2E5LA05). SC3.",
+        "tag": "[We Do | Supported application | SC3 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Revise your draft",
+      "task": "Work through your Worksheet. Then revise your draft in colour: at least one Add, Remove, Move and Swap.",
+      "where": "Worksheet, then draft",
+      "frame": "I added ___ so my reader ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "plus",
+          "minus",
+          "sort",
+          "pencil"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Add, Remove, Move, Swap",
+      "notes": {
+        "answer": "a draft revised in colour with all four moves",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Use your feedback from Session 1. Revise in colour, so you can see your changes."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: which move is that? How does it help your reader?",
+          [
+            "ASK: How many of the four moves have you made so far?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 2 or more by halfway"
+          ]
+        ],
+        "trap": [
+          "only swapping words.",
+          "Fix: student finds one paragraph with no proof and adds some."
+        ],
+        "stretch": "Extension: revise for two readers, then test two endings.",
+        "help": "Supported Worksheet: picture-clue choices, a first swap done, a frame.",
+        "prep": "Independent application on students' own drafts. The ARMS log is the evidence for SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in an ARMS log, then the draft revised in colour"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Dogs at the beach is a thing people talk about. Some people think dogs are good. Dogs are good because they are good.",
+        "Make one revision. Name the ARMS move."
+      ],
+      "notes": {
+        "answer": "e.g. Remove the repeats; Add a reason: dogs need exercise",
+        "beats": [
+          "SAY: A new paragraph that needs help. Make one revision.",
+          [
+            "ASK: Write one revision and the ARMS move.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a real revision, correctly named"
+          ],
+          "RECORD who only fixes spelling. Tomorrow's warm-up."
+        ],
+        "trap": [
+          "fixing the capital letters only.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new paragraph. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Read your partner your best revision, before and after. Which move was it?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - Before: they need ice. After: according to NASA...",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can revise, not just edit?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Read your partner your best revision, before and after. Which move was it?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: Before: they need ice. After: according to NASA..."
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

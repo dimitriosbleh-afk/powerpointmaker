@@ -1,0 +1,1026 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 5,
+    "session": 3,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Edit Like a Pro",
+    "subtitle": "Term 4 Week 5, Session 3",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 5 Session 3",
+    "outputFolder": "T4W5_Lit_S3_Edit_Like_A_Pro",
+    "fileName": "Session 3 - Edit Like a Pro.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA09 commas to mark prepositional phrases and apostrophes for multiple possession; VC2E5LY11 editing using agreed criteria; VC2E5LY03 and LY04 spelling",
+      "shape": "error race, two quick rules, then a slow edit: commas after an opening where or when phrase, apostrophes for one or many owners, then a read-aloud CUPS edit of their own draft",
+      "criticalFeature": "read it aloud, slowly, once for each check: the pause tells you the comma, the owner tells you the apostrophe",
+      "decisionPoints": [
+        "the Comma or not? round",
+        "the choice check: the correct sentence",
+        "the exit board: two fixes in a new sentence"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Clean writing lets every move land.",
+      "catchUp": "Missed the drafting week? Edit any paragraph you have; the rules work on any writing."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Writing books with the revised draft",
+      "A different coloured pencil for edits",
+      "Mini-whiteboards and markers",
+      "Dictionaries"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Turn and tell",
+      "Thumbs vote"
+    ],
+    "boardSetup": [
+      "CUPS: Capitals, Usage, Punctuation, Spelling. One read-aloud per letter.",
+      "Where or when phrase first? Comma after it."
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: add commas, write possessives, spot the correct sentence, then log your CUPS edits.",
+      "title": "Edit Like a Pro",
+      "subtitle": "Read it aloud, slowly, once for each check.",
+      "sections": [
+        {
+          "title": "Comma after where or when",
+          "columns": 1,
+          "example": {
+            "prompt": "After lunch the rain started.",
+            "steps": [
+              "Find the where or when phrase at the start",
+              "Read it aloud: hear the pause?",
+              "Add a comma at the pause"
+            ],
+            "answer": "After lunch, the rain started."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each sentence with the comma in the right place.",
+              "columns": [
+                "Sentence",
+                "With the comma"
+              ],
+              "rows": [
+                [
+                  "Across the bay the ice cracked.",
+                  ""
+                ],
+                [
+                  "During summer the bears go hungry.",
+                  ""
+                ],
+                [
+                  "Behind our school a creek runs.",
+                  ""
+                ],
+                [
+                  "At the zoo the bear paced.",
+                  ""
+                ],
+                [
+                  "In the morning the canteen opens.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Across the bay the ice cracked.",
+                  "Across the bay, the ice cracked."
+                ],
+                [
+                  "During summer the bears go hungry.",
+                  "During summer, the bears go hungry."
+                ],
+                [
+                  "Behind our school a creek runs.",
+                  "Behind our school, a creek runs."
+                ],
+                [
+                  "At the zoo the bear paced.",
+                  "At the zoo, the bear paced."
+                ],
+                [
+                  "In the morning the canteen opens.",
+                  "In the morning, the canteen opens."
+                ]
+              ],
+              "widths": [
+                1.2,
+                1.4
+              ],
+              "rowH": 26
+            }
+          ]
+        },
+        {
+          "title": "One owner or many?",
+          "columns": 1,
+          "example": {
+            "prompt": "the den of two bears",
+            "steps": [
+              "How many owners?",
+              "One: 's. Many ending in s: s'.",
+              "Plurals without s: 's"
+            ],
+            "answer": "the bears' den"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write each one with an apostrophe.",
+              "columns": [
+                "Phrase",
+                "With an apostrophe"
+              ],
+              "rows": [
+                [
+                  "the noses of three seals",
+                  ""
+                ],
+                [
+                  "the books of the children",
+                  ""
+                ],
+                [
+                  "the camera of one scientist",
+                  ""
+                ],
+                [
+                  "the voices of the people",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "the noses of three seals",
+                  "the seals' noses"
+                ],
+                [
+                  "the books of the children",
+                  "the children's books"
+                ],
+                [
+                  "the camera of one scientist",
+                  "the scientist's camera"
+                ],
+                [
+                  "the voices of the people",
+                  "the people's voices"
+                ]
+              ],
+              "widths": [
+                1.4,
+                1.2
+              ],
+              "rowH": 26
+            }
+          ]
+        },
+        {
+          "title": "Spot the correct one",
+          "columns": 2,
+          "example": {
+            "prompt": "Which is right? In winter the ice grows. / In winter, the ice grows.",
+            "steps": [
+              "Find the opening phrase",
+              "Is there a comma after it?",
+              "Check every apostrophe"
+            ],
+            "answer": "In winter, the ice grows."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which sentence is correct?",
+              "options": [
+                "Near the shore the walruses' tusks shone.",
+                "Near the shore, the walruses' tusks shone.",
+                "Near the shore, the walrus's' tusks shone."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "Comma after the opening phrase; walruses' for many walruses."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Noah edited this sentence. Find two mistakes and fix them.",
+              "work": [
+                "On the ice the bear's cubs (two bears) played."
+              ],
+              "answer": "Comma after On the ice; the bears' cubs for two bears. Fix: On the ice, the bears' cubs played."
+            }
+          ]
+        },
+        {
+          "title": "My CUPS edit",
+          "columns": 1,
+          "example": {
+            "prompt": "My draft",
+            "steps": [
+              "Read aloud once for each letter",
+              "Fix in colour",
+              "Log one fix for each"
+            ],
+            "answer": "P: added a comma after In the Arctic."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Edit your draft. Log one fix for each CUPS check.",
+              "columns": [
+                "Check",
+                "What I fixed"
+              ],
+              "rows": [
+                [
+                  "Capitals",
+                  ""
+                ],
+                [
+                  "Usage (words that sound right)",
+                  ""
+                ],
+                [
+                  "Punctuation",
+                  ""
+                ],
+                [
+                  "Spelling",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Capitals",
+                  "a fixed capital"
+                ],
+                [
+                  "Usage (words that sound right)",
+                  "a word that now makes sense"
+                ],
+                [
+                  "Punctuation",
+                  "a comma or apostrophe"
+                ],
+                [
+                  "Spelling",
+                  "a corrected word"
+                ]
+              ],
+              "widths": [
+                1,
+                1.8
+              ],
+              "rowH": 28
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Extension, then the crossword."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: find eight errors in a paragraph, then write sentences that use today's rules.",
+      "title": "Proofreader",
+      "subtitle": "Professional editors catch everything.",
+      "sections": [
+        {
+          "title": "Catch all eight",
+          "columns": 1,
+          "example": {
+            "prompt": "in the arctic the bears den melts",
+            "steps": [
+              "Capitals",
+              "Commas after opening phrases",
+              "Apostrophes and spelling"
+            ],
+            "answer": "In the Arctic, the bear's den melts."
+          },
+          "items": [
+            {
+              "kind": "mistake",
+              "prompt": "This paragraph has eight errors. Find and fix them all.",
+              "work": [
+                "across the arctic the polar bears homes are melting. scientists say the ice is shrinking every year and their worried.",
+                "In the summer the bears cubs go hungry."
+              ],
+              "answer": "Across, Arctic, comma after Arctic, bears' homes, Scientists, they're, comma after summer, bears' cubs."
+            }
+          ]
+        },
+        {
+          "title": "Use the rules",
+          "columns": 1,
+          "example": {
+            "prompt": "Write about your issue.",
+            "steps": [
+              "Start with a where or when phrase",
+              "Use a plural possessive",
+              "Check your commas"
+            ],
+            "answer": "Around the world, scientists' warnings grow louder."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write three sentences about your issue. Each starts with a where or when phrase, and one uses a plural possessive.",
+              "answer": "Three correct sentences with commas after the opening phrases and one plural possessive.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first answer done and a short check.",
+      "title": "Edit Helper",
+      "subtitle": "A where or when phrase first? Add a comma.",
+      "sections": [
+        {
+          "title": "Where does the comma go?",
+          "columns": 3,
+          "example": {
+            "prompt": "At school the bell rang.",
+            "steps": [
+              "Find the where phrase",
+              "Say it with a pause",
+              "Comma at the pause"
+            ],
+            "answer": "At school, the bell rang."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "At lunch, we play.",
+                "At, lunch we play."
+              ],
+              "answer": 0,
+              "hint": "Pause after the phrase."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "In the sea fish swim.",
+                "In the sea, fish swim."
+              ],
+              "answer": 1,
+              "hint": "Pause after the sea."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Which is correct?",
+              "options": [
+                "On Monday, we swim.",
+                "On Monday we, swim."
+              ],
+              "answer": 0,
+              "hint": "Pause after Monday."
+            }
+          ]
+        },
+        {
+          "title": "Whose is it?",
+          "columns": 1,
+          "example": {
+            "prompt": "the dog of my friend",
+            "steps": [
+              "One owner",
+              "Add 's",
+              "Write it"
+            ],
+            "answer": "my friend's dog"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write each one with an apostrophe.",
+              "columns": [
+                "Phrase",
+                "With an apostrophe"
+              ],
+              "rows": [
+                [
+                  "the bag of Sam",
+                  "Sam's bag"
+                ],
+                [
+                  "the den of the bear",
+                  ""
+                ],
+                [
+                  "the toys of the children",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "the bag of Sam",
+                  "Sam's bag"
+                ],
+                [
+                  "the den of the bear",
+                  "the bear's den"
+                ],
+                [
+                  "the toys of the children",
+                  "the children's toys"
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1.2,
+                1.2
+              ],
+              "rowH": 30
+            }
+          ]
+        },
+        {
+          "title": "Fix my writing",
+          "columns": 1,
+          "example": {
+            "prompt": "in the arctic the ice melts",
+            "steps": [
+              "Capital letters",
+              "Comma after the phrase",
+              "Full stop"
+            ],
+            "answer": "In the Arctic, the ice melts."
+          },
+          "items": [
+            {
+              "prompt": "Copy one sentence from your draft. Check capitals, commas and spelling. Write it correctly.",
+              "answer": "A corrected sentence.",
+              "lines": 3,
+              "hint": "Read it aloud slowly."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    },
+    {
+      "kind": "crossword",
+      "label": "Persuasion Crossword",
+      "description": "Fun activity: a crossword of the unit's persuasion words. Early finishers, or a five-minute warm-up next session.",
+      "title": "Persuasion Crossword",
+      "subtitle": "Every answer is a word from our persuasive writing unit.",
+      "words": [
+        {
+          "answer": "issue",
+          "clue": "A question fair people could disagree about"
+        },
+        {
+          "answer": "perspective",
+          "clue": "How one person sees an issue because of who they are"
+        },
+        {
+          "answer": "rebuttal",
+          "clue": "Answering the other side's argument"
+        },
+        {
+          "answer": "modality",
+          "clue": "How sure a word makes an idea sound"
+        },
+        {
+          "answer": "emotive",
+          "clue": "Chosen to make the reader feel"
+        },
+        {
+          "answer": "evidence",
+          "clue": "Facts, numbers or expert words that prove a claim"
+        },
+        {
+          "answer": "audience",
+          "clue": "The people you are trying to persuade"
+        },
+        {
+          "answer": "exaggerate",
+          "clue": "Make it sound bigger than it really is"
+        },
+        {
+          "answer": "hook",
+          "clue": "An opening line that grabs the reader"
+        },
+        {
+          "answer": "device",
+          "clue": "A word pattern used on purpose to persuade"
+        },
+        {
+          "answer": "slogan",
+          "clue": "A short, catchy line people remember"
+        },
+        {
+          "answer": "preview",
+          "clue": "A sneak peek at the reasons coming"
+        },
+        {
+          "answer": "imagery",
+          "clue": "Words that paint a picture in your mind"
+        },
+        {
+          "answer": "revise",
+          "clue": "Change your writing to make it stronger"
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we polish our writing until nothing distracts the reader."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension and the Persuasion Crossword for early finishers, and the Supported Worksheet for those who need it. A second coloured pencil for edits; dictionaries on tables."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to edit our writing so nothing distracts the reader.",
+      "successCriteria": [
+        "I can check my writing for capitals, usage, punctuation and spelling.",
+        "I can use commas after opening phrases and apostrophes for one or many owners.",
+        "I can edit my own draft by reading it aloud, once for each check."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Editors make sure nothing gets between the reader and your message."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch. Retrieves Term 3 Week 1 prepositional phrases.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Error race!",
+      "lines": [
+        "in the arctic the bears den is melting and there food is dissapearing",
+        "How many mistakes can you find in 60 seconds?"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "timer",
+            "label": "60 seconds"
+          },
+          {
+            "name": "magnifier",
+            "label": "spot them"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "six: In, Arctic, comma after Arctic, bears', their, disappearing",
+        "beats": [
+          [
+            "SAY: One sentence. Lots of mistakes.",
+            "Sixty seconds. How many can you find?"
+          ],
+          [
+            "ASK: Write the number of mistakes you found.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 4 to 6"
+          ],
+          [
+            "ASK: Tell your partner the one you think most people missed.",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: the comma after Arctic; bears'"
+          ],
+          "SAY: Today you hunt like this through your own draft."
+        ],
+        "trap": [
+          "finding spelling only.",
+          "Fix: say there are capitals and punctuation hiding too."
+        ],
+        "prep": "Low-coupling, game-style launch. Six errors. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "edit",
+      "meaning": "To fix the mistakes so nothing distracts the reader.",
+      "example": "Disapearing becomes disappearing. That is editing.",
+      "pictogram": "tick",
+      "notes": {
+        "answer": "to fix the mistakes so nothing distracts the reader",
+        "beats": [
+          "POINT to the word. SAY: Edit. Say it with me. Edit.",
+          [
+            "SAY: To fix the mistakes so nothing distracts the reader.",
+            "SAY: Disapearing becomes disappearing. That is editing."
+          ],
+          [
+            "ASK: What is the difference between revising and editing?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: revising makes it stronger; editing makes it correct"
+          ]
+        ],
+        "trap": [
+          "thinking editing means rewriting whole paragraphs.",
+          "Fix: say editing changes letters and marks, not ideas."
+        ],
+        "prep": "Edit is the partner word to Session 2's revise.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "I Do",
+      "title": "Comma after where or when",
+      "lines": [
+        "In the Arctic the ice is melting.",
+        "In the Arctic, the ice is melting.",
+        "Where or when phrase first? Comma after it."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "map",
+            "label": "where"
+          },
+          {
+            "name": "clock",
+            "label": "when"
+          },
+          {
+            "name": "pin",
+            "label": "comma"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "a where or when phrase at the start gets a comma after it",
+        "beats": [
+          [
+            "POINT to the first sentence.",
+            "SAY: In the Arctic tells me where. It's at the front."
+          ],
+          [
+            "READ it aloud with a pause.",
+            "SAY: In the Arctic... pause... the ice is melting. The pause is where my comma goes."
+          ],
+          [
+            "SAY: Some of you may remember these from Term 3.",
+            "At the front, they get a comma."
+          ],
+          [
+            "ASK: During summer the bears go hungry. Where is the comma?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: after summer"
+          ]
+        ],
+        "trap": [
+          "putting the comma after the first word: In, the Arctic.",
+          "Fix: student reads the whole phrase aloud and pauses at its end."
+        ],
+        "stretch": "Find a sentence in your draft that would be stronger starting with a where phrase.",
+        "help": "Read it aloud and clap at the pause.",
+        "prep": "The model for rule 1 (VC2E5LA09). Retrieval of Term 3 Week 1 prepositional phrases.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Comma or not?",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "read it aloud together and clap at the pause",
+      "followUp": "cold call one board: where is the phrase?",
+      "items": [
+        {
+          "text": "Under the ice seals hide from bears.",
+          "answer": "Under the ice, seals hide from bears.",
+          "expect": "comma after ice"
+        },
+        {
+          "text": "After school we walk the dog.",
+          "answer": "After school, we walk the dog.",
+          "expect": "comma after school"
+        },
+        {
+          "text": "We walk the dog after school.",
+          "answer": "No comma needed: the phrase is at the end.",
+          "expect": "no comma",
+          "say": "No comma. The phrase is at the end, not the start. Tick or fix."
+        },
+        {
+          "text": "Across the frozen sea the bear walked for days.",
+          "answer": "Across the frozen sea, the bear walked for days.",
+          "expect": "comma after sea"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Rewrite each sentence with a comma if it needs one."
+        ],
+        "trap": [
+          "adding a comma to every sentence.",
+          "Fix: ask is the where or when phrase at the START? Student checks."
+        ],
+        "stretch": "Move the phrase to the end of each sentence and drop the comma.",
+        "help": "Underline the where or when words first.",
+        "prep": "Guided practice including the near-miss: the phrase at the end needs no comma. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "One owner or many?",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Owners",
+            "Write it",
+            "Example"
+          ],
+          [
+            "one bear",
+            "'s",
+            "the bear's den"
+          ],
+          [
+            "many bears",
+            "s'",
+            "the bears' den"
+          ],
+          [
+            "children, people",
+            "'s",
+            "the children's toys"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "one owner 's; many owners ending in s add '; plurals without s add 's",
+        "beats": [
+          [
+            "POINT to one bear.",
+            "SAY: One bear owns the den. Bear, apostrophe, s."
+          ],
+          [
+            "POINT to many bears.",
+            "SAY: Two bears share a den.",
+            "Bears already ends in s, so the apostrophe goes after it."
+          ],
+          [
+            "POINT to children.",
+            "SAY: Children is already plural, with no s. So children, apostrophe, s."
+          ],
+          [
+            "ASK: The ideas of the people. Write it.",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: the people's ideas"
+          ]
+        ],
+        "trap": [
+          "writing the childrens' toys.",
+          "Fix: student asks does the plural already end in s? Children doesn't, so 's."
+        ],
+        "stretch": "Explain why the bears' den and the bear's den mean different things.",
+        "help": "Count the owners first: one or many?",
+        "prep": "The model for rule 2: apostrophes for multiple possession, regular and irregular (VC2E5LA09).",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Whose is it?",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "count the owners together, then check for an s",
+      "followUp": "cold call one board: one owner or many?",
+      "items": [
+        {
+          "text": "the den of two bears",
+          "answer": "the bears' den",
+          "expect": "the bears' den"
+        },
+        {
+          "text": "the toys of the children",
+          "answer": "the children's toys",
+          "expect": "the children's toys"
+        },
+        {
+          "text": "the boat of one scientist",
+          "answer": "the scientist's boat",
+          "expect": "the scientist's boat"
+        },
+        {
+          "text": "the homes of the women",
+          "answer": "the women's homes",
+          "expect": "the women's homes",
+          "say": "Women has no s, so apostrophe s. Tick or fix."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Write each one with an apostrophe."
+        ],
+        "trap": [
+          "putting the apostrophe after the s every time.",
+          "Fix: student counts owners, then checks the plural."
+        ],
+        "stretch": "Write a sentence using two of them.",
+        "help": "Use the chart on the slide before.",
+        "prep": "Guided practice on regular and irregular plurals. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which sentence is correct?",
+      "options": [
+        {
+          "text": "Along the beach the seals' pups slept.",
+          "misconception": "misses the comma after the opening phrase"
+        },
+        {
+          "text": "Along the beach, the seals' pups slept."
+        },
+        {
+          "text": "Along the beach, the seal's' pups slept.",
+          "misconception": "confused about where the apostrophe goes for many owners"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - comma after the phrase, seals' for many seals",
+        "beats": [
+          "SAY: Check two things: the comma and the apostrophe.",
+          [
+            "ASK: Which sentence is correct?",
+            "15 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: why seals' and not seal's?",
+            "Less -> read each aloud with the pause, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. A comma at the pause, and seals' because many seals own the pups."
+          ]
+        ],
+        "trap": [
+          "pointing to A because the apostrophe is right.",
+          "Fix: read it aloud; ask where do you pause?"
+        ],
+        "prep": "Decision point before editing drafts. Under 80% means a second run of each rule on the board.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Edit your draft",
+      "task": "Work through your Worksheet. Then edit your draft in a new colour: read it aloud once for each CUPS check.",
+      "where": "Worksheet, then draft",
+      "frame": "In ___, ___. / the ___' ___",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "tick",
+          "magnifier",
+          "pencil",
+          "read"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Read, check, fix",
+      "notes": {
+        "answer": "a draft edited in colour, with a CUPS log",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Edits go in a new colour. Read your draft aloud, quietly, once for each letter."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Point to one sentence: read it to me. Where's the pause?",
+          [
+            "ASK: Which CUPS check are you up to?",
+            "1 for C, 2 for U, 3 for P, 4 for S.",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 2 or more by halfway"
+          ]
+        ],
+        "trap": [
+          "reading silently and skimming.",
+          "Fix: student reads aloud, finger under each word."
+        ],
+        "stretch": "Extension: catch eight errors, then write sentences using today's rules. Then the crossword.",
+        "help": "Supported Worksheet: picture-clue choices, a first answer done, a short check.",
+        "prep": "Independent editing of their own drafts. Final copies are written next session. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a CUPS log, then the draft edited in colour"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Beside the river the farmers paddocks were flooded.",
+        "Rewrite it correctly. There are two fixes."
+      ],
+      "notes": {
+        "answer": "Beside the river, the farmers' paddocks were flooded.",
+        "beats": [
+          "SAY: A new sentence. Two fixes needed.",
+          [
+            "ASK: Rewrite the sentence correctly.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: comma after river; farmers' (many farmers)"
+          ],
+          "RECORD who misses the comma or writes farmer's. Small group before Publish Day."
+        ],
+        "trap": [
+          "farmer's paddocks.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new sentence. Farmer's is acceptable only if the student says one farmer; record either way.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner your most common mistake, and how you'll catch it.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - I forget commas after opening phrases; I'll read aloud and pause",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can edit your own writing?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Tell your partner your most common mistake, and how you'll catch it.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: I forget commas after opening phrases; I'll read aloud and pause"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

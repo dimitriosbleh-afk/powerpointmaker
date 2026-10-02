@@ -1,0 +1,896 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 2,
+    "session": 4,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Fair or Sneaky?",
+    "subtitle": "Term 4 Week 2, Session 4",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 2 Session 4",
+    "outputFolder": "T4W2_Lit_S4_Fair_Or_Sneaky",
+    "fileName": "Session 4 - Fair or Sneaky.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY09 evaluating information and ideas; VC2E5LA02 moving beyond bare assertions; VC2E5LY08 features used to persuade an audience",
+      "shape": "spot, name, fix, then play: students catch four sneaky tricks, fix them, then write a sneaky ad and its fair twin, because seeing the trick from the inside is what makes it stick",
+      "criticalFeature": "strong is not the same as true: a fair argument can be checked",
+      "decisionPoints": [
+        "the Name the trick round",
+        "the choice check: fair and strong",
+        "the exit board: a new sneaky claim named and fixed"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Today: sell it fairly, or the reader stops trusting you.",
+      "catchUp": "Missed earlier sessions? Say: proof must be true and from someone who would know. Today's tricks need nothing from last week."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Writing books"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Thumbs vote",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Four trick names on the board: Exaggerating, Everyone's doing it, Name-calling, Mystery source",
+      "A Sneaky | Fair two-column chart"
+    ]
+  },
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we become persuasion detectives and catch the sneaky tricks."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Write the four trick names on the board."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to spot sneaky persuasion and make our arguments fair and strong.",
+      "successCriteria": [
+        "I can tell when a claim feels unfair.",
+        "I can name a sneaky trick and fix it so it is fair and strong.",
+        "I can check my own writing for sneaky tricks."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: A good persuader wins without tricks. Today we learn the difference."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Noticing a claim feels unfair is where we start.",
+            "Naming and fixing the trick is today's main goal."
+          ]
+        ],
+        "prep": "SC1 noticing unfairness is reachable for all; SC2 name and fix is the core and the exit evidence; SC3 checking their own writing is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Would you buy it?",
+      "lines": [
+        "9 out of 10 kids say Zappo cereal makes you smarter!",
+        "Everyone's eating it. Don't be left behind!"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "cup",
+            "label": "Zappo"
+          },
+          {
+            "name": "question",
+            "label": "Really?"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "no - which 10 kids? smarter how? everyone isn't eating it",
+        "beats": [
+          [
+            "SAY: A new cereal ad just landed.",
+            "Read it like you're about to spend your pocket money."
+          ],
+          [
+            "ASK: Do you believe it?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: mostly thumbs down or sideways"
+          ],
+          [
+            "ASK: What questions would you ask Zappo?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: which kids? who asked them? how do you measure smarter?"
+          ],
+          "SAY: That ad is strong, but it isn't fair. Today we catch the tricks."
+        ],
+        "trap": [
+          "believing it because it has a number.",
+          "Fix: ask who were the 10 kids? Student sees the number proves nothing."
+        ],
+        "prep": "Low-coupling launch: everyone can doubt an ad. Bridges from Session 3's trustworthy sources. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "exaggerate",
+      "meaning": "To make something sound bigger or worse than it really is.",
+      "example": "I've told you a million times! (It was really three.)",
+      "pictogram": "warning",
+      "notes": {
+        "answer": "to make something sound bigger or worse than it really is",
+        "beats": [
+          "POINT to the word. SAY: Exaggerate. Say it with me. Exaggerate.",
+          [
+            "SAY: To exaggerate is to make it sound bigger than it really is.",
+            "A million times? Probably three."
+          ],
+          [
+            "ASK: Give your partner an exaggeration you've heard at home.",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: I'm starving; it took forever; everyone has one"
+          ]
+        ],
+        "trap": [
+          "thinking exaggeration is the same as lying on purpose.",
+          "Fix: say it starts from something true, then stretches it."
+        ],
+        "prep": "The most common sneaky trick, with a home example everyone has heard.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "I Do",
+      "title": "Four sneaky tricks",
+      "lines": [
+        "Sneaky: Everyone hates zoos.",
+        "Ask: Is it really everyone? Who said so?",
+        "Fair: Many animal experts question whether zoos suit polar bears."
+      ],
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Trick",
+            "Sounds like"
+          ],
+          [
+            "Exaggerating",
+            "everyone, never, always"
+          ],
+          [
+            "Everyone's doing it",
+            "all the cool kids..."
+          ],
+          [
+            "Name-calling",
+            "only lazy people..."
+          ],
+          [
+            "Mystery source",
+            "experts say... (who?)"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "name the trick, ask the checking question, rewrite so it can be checked",
+        "beats": [
+          [
+            "POINT to the table.",
+            "SAY: Four tricks. Each one has words that give it away."
+          ],
+          [
+            "POINT to Sneaky.",
+            "SAY: Everyone hates zoos. Everyone? That's exaggerating."
+          ],
+          [
+            "POINT to Ask, then Fair.",
+            "SAY: I ask is it really everyone? No. So I say what's true:",
+            "many animal experts question it. Still strong. Now it's fair."
+          ],
+          [
+            "ASK: Which trick uses only lazy people?",
+            "5 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: name-calling"
+          ]
+        ],
+        "trap": [
+          "fixing a trick by making it weak: Some people maybe don't like zoos.",
+          "Fix: keep high modality, swap the untrue word for a true one."
+        ],
+        "stretch": "Explain why a sneaky argument can backfire on the writer.",
+        "help": "Look for the give-away words in the table first.",
+        "prep": "The model. Critical feature: strong is not the same as true; a fair argument can be checked.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Name the trick",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "find the give-away word, then match it in the table",
+      "followUp": "cold call one board: what's the checking question?",
+      "items": [
+        {
+          "text": "Every single person in Australia wants plastic banned.",
+          "answer": "Exaggerating (every single person)",
+          "expect": "exaggerating"
+        },
+        {
+          "text": "All the high school kids already recycle, so you should too.",
+          "answer": "Everyone's doing it",
+          "expect": "everyone's doing it"
+        },
+        {
+          "text": "Anyone who eats takeaway is lazy and doesn't care about the planet.",
+          "answer": "Name-calling (lazy)",
+          "expect": "name-calling"
+        },
+        {
+          "text": "Studies prove recycling will fix climate change.",
+          "answer": "Mystery source and exaggerating",
+          "expect": "mystery source. ACCEPT: exaggerating",
+          "say": "Two tricks! Which studies? And fix is too big. Tick or fix."
+        },
+        {
+          "text": "Drink Zappo water: the only bottle that saves the reef!",
+          "answer": "Exaggerating (the only, saves)",
+          "expect": "exaggerating"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Five claims. Write the name of the trick.",
+          "Use the four names on the board."
+        ],
+        "trap": [
+          "writing it's wrong without naming the trick.",
+          "Fix: student points to the give-away word, then names it."
+        ],
+        "stretch": "Write the checking question for each.",
+        "help": "Underline the give-away word before naming.",
+        "prep": "Guided naming. Item 4 uses two tricks at once. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which one is fair AND strong?",
+      "options": [
+        {
+          "text": "Only total idiots still use plastic straws.",
+          "misconception": "name-calling; it insults instead of persuading"
+        },
+        {
+          "text": "Plastic straws can last for hundreds of years in the ocean."
+        },
+        {
+          "text": "Everybody knows that straws are the worst thing ever.",
+          "misconception": "exaggerating; everybody and worst can't be checked"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - it can be checked, and it still makes you care",
+        "beats": [
+          "SAY: All three want you to give up straws. Only one plays fair.",
+          [
+            "ASK: Which one is fair AND strong?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: which trick is C?",
+            "Less -> ask the checking question for each, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. You could check it, and hundreds of years still makes us care."
+          ]
+        ],
+        "trap": [
+          "pointing to C because it sounds most certain.",
+          "Fix: ask can we check everybody knows? Student re-chooses."
+        ],
+        "prep": "Decision point before the fix round. Under 80% means the first fix is done together on the board.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Fix it: fair and strong",
+      "routine": "boards",
+      "thinkTime": 40,
+      "pivot": "cross out the trick word, swap in something checkable",
+      "followUp": "cold call two boards: is it still strong?",
+      "items": [
+        {
+          "text": "All kids are totally addicted to screens.",
+          "answer": "Many kids find it hard to switch off screens.",
+          "expect": "many or some kids + a checkable claim"
+        },
+        {
+          "text": "Only lazy families drive to school.",
+          "answer": "Walking to school, when it's safe, keeps kids active and cuts pollution.",
+          "expect": "a reason, no insult"
+        },
+        {
+          "text": "Experts say our canteen food is the worst in Victoria.",
+          "answer": "Most of our canteen menu is fried food, and the healthy options sell out first.",
+          "expect": "a checkable fact about our canteen"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Now fix them. Keep it strong, make it fair.",
+          "Write the fair version on your board."
+        ],
+        "trap": [
+          "removing the trick and the power: Some kids use screens.",
+          "Fix: student adds why it matters, keeps a strong verb."
+        ],
+        "stretch": "Make the fair version more persuasive than the sneaky one.",
+        "help": "Swap one word: all to many, lazy to a reason.",
+        "prep": "Guided fixing. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Sneaky ad, fair ad",
+      "task": "Work through your Worksheet. Finish by writing a sneaky ad with three tricks, then its fair twin.",
+      "where": "Main sheet",
+      "frame": "Sneaky: ___  Fair: ___",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "warning",
+          "megaphone",
+          "tick"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Sneaky, then fair",
+      "notes": {
+        "answer": "a sneaky ad with three labelled tricks, and a fair version of the same ad",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Have fun with the sneaky one. Rocket socks, self-cleaning lunchboxes, anything.",
+            "Then make it honest."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: which trick is that? What's the fair version?",
+          [
+            "ASK: Which version would really sell your product?",
+            "5 sec. Cue: Thumbs only, voices off. Thumbs up for fair... now.",
+            "EXPECT: most thumbs up"
+          ],
+          "TIME 15 minutes. At 12, two students read both versions aloud."
+        ],
+        "trap": [
+          "a fair twin that's boring.",
+          "Fix: student keeps one strong verb and one feeling word in the fair ad."
+        ],
+        "stretch": "Extension: question ad claims, then write a fair ad that wins.",
+        "help": "Supported Worksheet: fair-or-sneaky choices, a first fix done, a frame.",
+        "prep": "Independent creative application. Writing the tricks from the inside cements them. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a sneaky ad with labelled tricks and its fair twin"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "All dog owners are selfish because some dogs bark at night.",
+        "Name the trick. Then rewrite it so it is fair and strong."
+      ],
+      "notes": {
+        "answer": "exaggerating and name-calling. e.g. Barking at night can keep neighbours awake",
+        "beats": [
+          "SAY: A brand new sneaky claim. Catch it and fix it.",
+          [
+            "ASK: Name the trick, then write the fair version.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: name-calling or exaggerating, plus a checkable rewrite"
+          ],
+          "RECORD who names it but can't fix it. Monday's small group."
+        ],
+        "trap": [
+          "naming the trick, then keeping all and selfish.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new claim. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Where have you seen a sneaky trick outside school this week? Tell your partner.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - ads, games, social media, packaging",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can name and fix a sneaky trick?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Where have you seen a sneaky trick outside school?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: a game ad said everyone is playing it"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Week 2 ends with a mentor text, upgraded words, a proof paragraph and a fair-ad check in every book. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ],
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: name the trick, choose the fair one, fix sneaky claims, then write a sneaky ad and its fair twin.",
+      "title": "Fair or Sneaky?",
+      "subtitle": "Strong is not the same as true.",
+      "sections": [
+        {
+          "title": "Name the trick",
+          "columns": 1,
+          "example": {
+            "prompt": "'Everyone hates homework.'",
+            "steps": [
+              "Find the give-away word",
+              "Match it to a trick",
+              "Write the trick"
+            ],
+            "answer": "exaggerating (everyone)"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Name the trick: exaggerating, everyone's doing it, name-calling or mystery source.",
+              "columns": [
+                "Claim",
+                "Trick"
+              ],
+              "rows": [
+                [
+                  "Only greedy people drive big cars.",
+                  ""
+                ],
+                [
+                  "Experts say our pool is unsafe.",
+                  ""
+                ],
+                [
+                  "All the cool kids have a smartwatch.",
+                  ""
+                ],
+                [
+                  "This is the best park in the universe.",
+                  ""
+                ],
+                [
+                  "Studies show cats are smarter than dogs.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Only greedy people drive big cars.",
+                  "name-calling"
+                ],
+                [
+                  "Experts say our pool is unsafe.",
+                  "mystery source"
+                ],
+                [
+                  "All the cool kids have a smartwatch.",
+                  "everyone's doing it"
+                ],
+                [
+                  "This is the best park in the universe.",
+                  "exaggerating"
+                ],
+                [
+                  "Studies show cats are smarter than dogs.",
+                  "mystery source"
+                ]
+              ],
+              "widths": [
+                2,
+                1.2
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Fair and strong?",
+          "columns": 2,
+          "example": {
+            "prompt": "Which is fair? A: Everyone loves pools. B: Our town pool gets 500 visits a week.",
+            "steps": [
+              "Can it be checked?",
+              "Is there an insult?",
+              "Choose the checkable one"
+            ],
+            "answer": "B: it can be checked."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which is fair AND strong?",
+              "options": [
+                "Only lazy kids get driven to school.",
+                "Walking to school, when it's safe, keeps kids fit.",
+                "Every single car trip ruins the planet!"
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "It can be checked and it gives a reason, with no insult."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Max's ad uses a sneaky trick. Find it and fix it.",
+              "work": [
+                "Every kid in Australia is buying Rocket Socks!"
+              ],
+              "answer": "Exaggerating. Fix: Rocket Socks are soft, warm and come in 12 colours."
+            }
+          ]
+        },
+        {
+          "title": "Fix it",
+          "columns": 1,
+          "example": {
+            "prompt": "Sneaky: Nobody likes the new playground.",
+            "steps": [
+              "Cross out the trick word",
+              "Swap in something checkable",
+              "Keep it strong"
+            ],
+            "answer": "Fair: Many students say the new playground has too little shade."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each claim so it is fair and strong.",
+              "columns": [
+                "Sneaky",
+                "Fair and strong"
+              ],
+              "rows": [
+                [
+                  "Everyone knows recycling is pointless.",
+                  ""
+                ],
+                [
+                  "Only selfish people waste water.",
+                  ""
+                ],
+                [
+                  "Scientists say our river is the dirtiest ever.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Everyone knows recycling is pointless.",
+                  "Some people doubt recycling, but it keeps tonnes of waste out of landfill."
+                ],
+                [
+                  "Only selfish people waste water.",
+                  "Short showers save thousands of litres a year."
+                ],
+                [
+                  "Scientists say our river is the dirtiest ever.",
+                  "Council tests found rubbish and oil in our river."
+                ]
+              ],
+              "widths": [
+                1,
+                1.3
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "Sneaky ad, fair ad",
+          "columns": 1,
+          "example": {
+            "prompt": "Product: Rocket Socks.",
+            "steps": [
+              "Write a sneaky ad with three tricks",
+              "Label each trick",
+              "Write the fair twin"
+            ],
+            "answer": "Sneaky: Every kid wants them! Fair: Soft, warm, and they last all winter."
+          },
+          "items": [
+            {
+              "prompt": "Invent a silly product. Write a sneaky ad with three labelled tricks, then its fair twin.",
+              "answer": "A sneaky ad with three labelled tricks, and a fair version that is still persuasive.",
+              "lines": 6
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: question real-sounding ad claims, then write a fair ad that beats a sneaky one.",
+      "title": "Ad Investigator",
+      "subtitle": "Ask the question the advertiser hopes you won't.",
+      "sections": [
+        {
+          "title": "Ask the hard question",
+          "columns": 1,
+          "example": {
+            "prompt": "Ad: 'Doctors recommend Sparkle toothpaste.'",
+            "steps": [
+              "Which word hides something?",
+              "Ask the question",
+              "What proof would convince you?"
+            ],
+            "answer": "Which doctors? How many? I'd want a dental association's advice."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "For each ad claim, write the question to ask and the proof you'd want.",
+              "columns": [
+                "Ad claim",
+                "My question",
+                "Proof that would convince me"
+              ],
+              "rows": [
+                [
+                  "'9 out of 10 kids prefer Zoom bikes.'",
+                  "",
+                  ""
+                ],
+                [
+                  "'The most loved cereal in the country.'",
+                  "",
+                  ""
+                ],
+                [
+                  "'Scientifically proven to make you faster.'",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "'9 out of 10 kids prefer Zoom bikes.'",
+                  "Which 10 kids? Who asked?",
+                  "A large, fair survey"
+                ],
+                [
+                  "'The most loved cereal in the country.'",
+                  "Loved by whom? Measured how?",
+                  "Sales figures or a fair survey"
+                ],
+                [
+                  "'Scientifically proven to make you faster.'",
+                  "Which scientists? What test?",
+                  "A published study"
+                ]
+              ],
+              "widths": [
+                1.2,
+                1,
+                1
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "Fair can win",
+          "columns": 1,
+          "example": {
+            "prompt": "Sneaky: Everyone's switching to Glow Bulbs! Fair: Glow Bulbs use a fifth of the power.",
+            "steps": [
+              "Find a true selling point",
+              "Make it vivid",
+              "Add a call to action"
+            ],
+            "answer": "The fair one gives a real reason to buy."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write a fair ad for your Week 3 campaign that is MORE persuasive than a sneaky one. Explain why it works.",
+              "answer": "A fair, vivid ad with a real reason and a call to action, plus a why.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: fair-or-sneaky choices, a first fix done and a frame.",
+      "title": "Fair or Sneaky Helper",
+      "subtitle": "Sneaky words: everyone, only, never, experts say.",
+      "sections": [
+        {
+          "title": "Fair or sneaky?",
+          "columns": 3,
+          "example": {
+            "prompt": "'Everyone loves my cake.'",
+            "steps": [
+              "Look for everyone, only, never",
+              "Found one?",
+              "Sneaky"
+            ],
+            "answer": "sneaky"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Only silly people litter.",
+              "options": [
+                "fair",
+                "sneaky"
+              ],
+              "answer": 1,
+              "hint": "Look for only and silly."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Litter can hurt birds.",
+              "options": [
+                "fair",
+                "sneaky"
+              ],
+              "answer": 0,
+              "hint": "Can it be checked?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Experts say pizza is healthy.",
+              "options": [
+                "fair",
+                "sneaky"
+              ],
+              "answer": 1,
+              "hint": "Which experts?"
+            }
+          ]
+        },
+        {
+          "title": "Fix it",
+          "columns": 1,
+          "example": {
+            "prompt": "Everyone hates traffic.",
+            "steps": [
+              "Cross out everyone",
+              "Write many people",
+              "Read it again"
+            ],
+            "answer": "Many people dislike traffic."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Make each claim fair.",
+              "columns": [
+                "Sneaky",
+                "Fair"
+              ],
+              "rows": [
+                [
+                  "Everyone hates rubbish.",
+                  "Many people dislike rubbish."
+                ],
+                [
+                  "Nobody walks to school.",
+                  ""
+                ],
+                [
+                  "Only mean people cut down trees.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Everyone hates rubbish.",
+                  "Many people dislike rubbish."
+                ],
+                [
+                  "Nobody walks to school.",
+                  "Few students walk to school."
+                ],
+                [
+                  "Only mean people cut down trees.",
+                  "Cutting down trees removes shade."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                1.2
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "My fair ad",
+          "columns": 1,
+          "example": {
+            "prompt": "Product: Sun Hats.",
+            "steps": [
+              "Name the product",
+              "Give one true reason",
+              "Tell them what to do"
+            ],
+            "answer": "Sun Hats keep the sun off your face. Grab one for summer!"
+          },
+          "items": [
+            {
+              "prompt": "Write a fair ad for a product you invent: name it, give one true reason, tell people what to do.",
+              "answer": "Three fair sentences.",
+              "lines": 4,
+              "hint": "Use a true fact about the product."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ]
+}

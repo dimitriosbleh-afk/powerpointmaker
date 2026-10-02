@@ -1,0 +1,994 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 8,
+    "session": 1,
+    "variant": 4,
+    "minutes": 60,
+    "title": "What Do I Stand For?",
+    "subtitle": "Term 4 Week 8, Session 1",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 8 Session 1",
+    "outputFolder": "T4W8_Lit_S1_What_Do_I_Stand_For",
+    "fileName": "Session 1 - What Do I Stand For?.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY10 planning spoken persuasive texts for a purpose and audience; VC2E5LA03 language that suits audience and purpose; VC2E5LY01 presenting an opinion",
+      "shape": "model, guide, apply: the teacher plans the week's model speech (more shade trees) aloud, students practise matching audiences and think-feel-do, then plan their own speech",
+      "criticalFeature": "an audience you can picture tells you what to say: name who, then what they should think, feel and do",
+      "decisionPoints": [
+        "the Who's listening? round",
+        "the choice check: the clearest position",
+        "the exit board: audience and think-feel-do for a new speech"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. This week: write my own speech, for the ear.",
+      "catchUp": "Students who missed Weeks 6-7 use the Toolkit page and the planner frame."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Persuasive Speaker's Toolkit",
+      "Week 5 published piece (a possible issue)",
+      "Mini-whiteboards and markers"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers 1, 2 or 3",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "The model speech all week: Our school needs more shade trees",
+      "Issue, position, audience, think, feel, do"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: match speeches to audiences, plan think-feel-do, sharpen positions, then plan your own speech.",
+      "title": "What Do I Stand For?",
+      "subtitle": "Pick your fight. Picture your audience.",
+      "sections": [
+        {
+          "title": "Who's listening?",
+          "columns": 3,
+          "example": {
+            "prompt": "Speech: a longer lunch break",
+            "steps": [
+              "Who can make it happen?",
+              "Who will care most?",
+              "Pick them"
+            ],
+            "answer": "The principal: they can change the bell times."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Speech: a crossing guard at the school gate",
+              "options": [
+                "the local council",
+                "the Preps",
+                "my pet"
+              ],
+              "answer": 0,
+              "hint": "Who pays for crossing guards?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Speech: everyone bring a nude-food lunch",
+              "options": [
+                "the canteen",
+                "students and families",
+                "the bus driver"
+              ],
+              "answer": 1,
+              "hint": "Who packs lunches?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Speech: save the koalas' trees",
+              "options": [
+                "the tuckshop",
+                "the council and community",
+                "the Year 1s"
+              ],
+              "answer": 1,
+              "hint": "Who decides about land?"
+            }
+          ]
+        },
+        {
+          "title": "Think, feel, do",
+          "columns": 1,
+          "example": {
+            "prompt": "Speech: more shade trees. Audience: the principal.",
+            "steps": [
+              "Think: what idea should stick?",
+              "Feel: what emotion?",
+              "Do: what action?"
+            ],
+            "answer": "Think: kids need shade. Feel: worried. Do: plant ten trees."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Plan what each audience should think, feel and do.",
+              "columns": [
+                "Speech and audience",
+                "Think",
+                "Feel",
+                "Do"
+              ],
+              "rows": [
+                [
+                  "Walk to school. Families.",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "Ban single-use plastic. The canteen.",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "Save the polar bears. The whole school.",
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Walk to school. Families.",
+                  "walking is healthy and easy",
+                  "excited",
+                  "walk on Wednesdays"
+                ],
+                [
+                  "Ban single-use plastic. The canteen.",
+                  "plastic harms animals",
+                  "guilty, then hopeful",
+                  "switch to paper bags"
+                ],
+                [
+                  "Save the polar bears. The whole school.",
+                  "our energy use melts ice",
+                  "sad, then fired up",
+                  "switch off at home"
+                ]
+              ],
+              "widths": [
+                1.3,
+                1,
+                0.8,
+                0.9
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "Make it clear",
+          "columns": 1,
+          "example": {
+            "prompt": "Trees are kind of nice, I guess.",
+            "steps": [
+              "Pick a side",
+              "Make it sure",
+              "Make it specific"
+            ],
+            "answer": "Our school needs ten new shade trees before summer."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Make each position clear and sure.",
+              "columns": [
+                "Wobbly position",
+                "Clear position"
+              ],
+              "rows": [
+                [
+                  "Maybe homework is a bit much?",
+                  ""
+                ],
+                [
+                  "Plastic is sort of bad.",
+                  ""
+                ],
+                [
+                  "Sport could be more often, maybe.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Maybe homework is a bit much?",
+                  "Homework in primary school should end."
+                ],
+                [
+                  "Plastic is sort of bad.",
+                  "Our school must go plastic-free."
+                ],
+                [
+                  "Sport could be more often, maybe.",
+                  "We need sport every single day."
+                ]
+              ],
+              "widths": [
+                1,
+                1.3
+              ],
+              "rowH": 26
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Kai's plan has a problem. Fix it.",
+              "work": [
+                "Audience: everyone in the world."
+              ],
+              "answer": "The audience is too big to picture. Fix: our school's students at assembly."
+            }
+          ]
+        },
+        {
+          "title": "My speech plan",
+          "columns": 1,
+          "example": {
+            "prompt": "The model speech",
+            "steps": [
+              "Issue and position",
+              "Audience",
+              "Think, feel, do"
+            ],
+            "answer": "More shade trees; the principal and school council; kids need shade, worried, plant ten trees."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Plan your own speech.",
+              "columns": [
+                "Part",
+                "My plan"
+              ],
+              "rows": [
+                [
+                  "Issue",
+                  ""
+                ],
+                [
+                  "My position",
+                  ""
+                ],
+                [
+                  "My audience",
+                  ""
+                ],
+                [
+                  "Think and feel",
+                  ""
+                ],
+                [
+                  "Do",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Issue",
+                  "the student's chosen issue"
+                ],
+                [
+                  "My position",
+                  "one clear, sure sentence"
+                ],
+                [
+                  "My audience",
+                  "a group they can picture"
+                ],
+                [
+                  "Think and feel",
+                  "one idea and one emotion"
+                ],
+                [
+                  "Do",
+                  "one action"
+                ]
+              ],
+              "widths": [
+                0.6,
+                2
+              ],
+              "rowH": 25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: tune one speech to two audiences, then predict the toughest listener.",
+      "title": "Same Speech, New Crowd",
+      "subtitle": "Change the audience, change the speech.",
+      "sections": [
+        {
+          "title": "Two audiences",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees: Preps, then the council",
+            "steps": [
+              "What does each care about?",
+              "Change the words",
+              "Change the action"
+            ],
+            "answer": "Preps: no more hot slides! Council: shade cuts skin cancer risk."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write your opening line for each audience.",
+              "columns": [
+                "My issue",
+                "Audience 1: kids",
+                "Audience 2: adults in charge"
+              ],
+              "rows": [
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "the student's issue",
+                  "fun, simple, about them",
+                  "facts, cost, responsibility"
+                ],
+                [
+                  "a second issue",
+                  "fun, simple, about them",
+                  "facts, cost, responsibility"
+                ]
+              ],
+              "widths": [
+                0.8,
+                1.2,
+                1.2
+              ],
+              "rowH": 56
+            }
+          ]
+        },
+        {
+          "title": "The toughest listener",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees. Toughest listener: the business manager.",
+            "steps": [
+              "Who might say no?",
+              "What will they say?",
+              "Plan your answer"
+            ],
+            "answer": "Too expensive. Answer: one tree costs less than one sunburn day of missed learning."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Who is the toughest listener for your speech? What will they say, and how will you answer?",
+              "answer": "A named sceptical listener, their objection and a planned answer.",
+              "lines": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a plan started for you and a planning frame.",
+      "title": "My Speech Helper",
+      "subtitle": "Who. What. Do.",
+      "sections": [
+        {
+          "title": "Who's listening?",
+          "columns": 3,
+          "example": {
+            "prompt": "A longer lunch",
+            "steps": [
+              "Who can change it?",
+              "The principal",
+              "Pick them"
+            ],
+            "answer": "the principal"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "A crossing guard",
+              "options": [
+                "council",
+                "Preps"
+              ],
+              "answer": 0,
+              "hint": "Who pays?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Nude-food lunches",
+              "options": [
+                "families",
+                "bus driver"
+              ],
+              "answer": 0,
+              "hint": "Who packs lunch?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "More library books",
+              "options": [
+                "principal",
+                "pet"
+              ],
+              "answer": 0,
+              "hint": "Who buys books?"
+            }
+          ]
+        },
+        {
+          "title": "Think, feel, do",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "Think: what idea?",
+              "Feel: what emotion?",
+              "Do: what action?"
+            ],
+            "answer": "Think: kids need shade. Feel: worried. Do: plant trees."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in the plan.",
+              "columns": [
+                "Speech",
+                "Think",
+                "Feel",
+                "Do"
+              ],
+              "rows": [
+                [
+                  "Walk to school",
+                  "Walking is healthy.",
+                  "excited",
+                  "Walk on Wednesdays."
+                ],
+                [
+                  "Less plastic",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "Save bears",
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Walk to school",
+                  "Walking is healthy.",
+                  "excited",
+                  "Walk on Wednesdays."
+                ],
+                [
+                  "Less plastic",
+                  "Plastic hurts animals.",
+                  "sad",
+                  "Use a lunchbox."
+                ],
+                [
+                  "Save bears",
+                  "Ice is melting.",
+                  "worried",
+                  "Switch off lights."
+                ]
+              ],
+              "hint": "The first row is done for you.",
+              "widths": [
+                0.9,
+                1,
+                0.7,
+                1
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "My plan",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "I think ___.",
+              "I am talking to ___.",
+              "I want them to ___."
+            ],
+            "answer": "I think we need trees. I am talking to the principal. I want them to plant ten."
+          },
+          "items": [
+            {
+              "prompt": "I think ___. I am talking to ___. I want them to ___.",
+              "answer": "A position, an audience and an action.",
+              "lines": 4,
+              "hint": "Pick an issue you care about."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the speech-writing week. One line: this week every one of you writes your own speech."
+    },
+    {
+      "kind": "overview",
+      "title": "For the teacher: Week 8 at a glance",
+      "lines": [
+        "Students write a 2-minute speech (about 250-300 words) across five sessions.",
+        "Your model all week: Our school needs more shade trees. Write it live; don't pre-write it.",
+        "Each session's Worksheet ends with that part of their speech. Keep the sheets together in a folder.",
+        "Speech Day is Week 9 Session 2: confirm the audience this week."
+      ],
+      "notes": "Teacher-facing only. Plan: S1 issue and audience, S2 evidence and order, S3 opening, S4 middle and a story, S5 conclusion, timing and cue cards."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Students need their Toolkit and Week 5 published piece. A folder per student for the week's sheets."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to plan a speech for a purpose and an audience.",
+      "successCriteria": [
+        "I can pick an issue and a clear position.",
+        "I can name my audience and what they should think, feel and do.",
+        "I can predict the toughest listener and plan an answer."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: This week you write your own speech. It starts with who you're talking to."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "What fires you up?",
+      "lines": [
+        "Something at school, at home or in the world that should change.",
+        "If you had two minutes and a microphone, what would you say?"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "chalkboard",
+            "label": "school"
+          },
+          {
+            "name": "house",
+            "label": "home"
+          },
+          {
+            "name": "globe",
+            "label": "world"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - any issue the student cares about",
+        "beats": [
+          [
+            "SAY: Two minutes. A microphone. Everyone listening.",
+            "What would you change?"
+          ],
+          [
+            "ASK: School, home or the world: where is your issue?",
+            "5 sec. Cue: Fingers at your chest, 1, 2 or 3... show me.",
+            "EXPECT: a mix of 1, 2 and 3"
+          ],
+          [
+            "ASK: Tell your partner your issue in one sentence.",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: We should... or ... has to stop."
+          ],
+          "SAY: Your Week 5 issue is welcome. So is a brand new one."
+        ],
+        "trap": [
+          "picking an issue nobody can act on.",
+          "Fix: ask who could actually change this?"
+        ],
+        "prep": "Low-entry launch: every student names an issue. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "position",
+      "meaning": "The side you take on an issue.",
+      "example": "My position: our school needs more shade trees.",
+      "pictogram": "flag",
+      "notes": {
+        "answer": "the side you take on an issue",
+        "beats": [
+          "POINT to the word. SAY: Position. Say it with me. Position.",
+          [
+            "SAY: The side you take on an issue.",
+            "SAY: My position: our school needs more shade trees."
+          ],
+          [
+            "ASK: What is the difference between an issue and a position?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: the issue is the topic; the position is my side"
+          ]
+        ],
+        "trap": [
+          "giving a topic as a position, like trees.",
+          "Fix: ask what about trees? Student adds should or must."
+        ],
+        "prep": "Position is the claim of a speech.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Plan the speech: my model",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Plan",
+            "My speech"
+          ],
+          [
+            "Issue",
+            "Too little shade in our yard"
+          ],
+          [
+            "Position",
+            "Our school needs more shade trees."
+          ],
+          [
+            "Audience",
+            "The principal and school council"
+          ],
+          [
+            "Think",
+            "Kids need shade to play safely."
+          ],
+          [
+            "Feel",
+            "Worried, then hopeful"
+          ],
+          [
+            "Do",
+            "Plant ten trees before summer."
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "issue, position, audience, think, feel, do",
+        "beats": [
+          [
+            "POINT to Audience.",
+            "SAY: I picked the people who can actually plant trees.",
+            "Not the Preps. They can't buy trees."
+          ],
+          [
+            "POINT to Think and Feel.",
+            "SAY: One idea to stick, one feeling to stir.",
+            "Worried first, then hopeful, so they want to act."
+          ],
+          [
+            "POINT to Do.",
+            "SAY: A small, exact action. Ten trees. Before summer."
+          ],
+          [
+            "ASK: Which row tells me what to say in my speech?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: audience"
+          ]
+        ],
+        "trap": [
+          "an audience of everyone.",
+          "Fix: say if you can't picture their faces, the audience is too big."
+        ],
+        "stretch": "Predict what the business manager will say.",
+        "help": "Use the frame: I think, I'm talking to, I want them to.",
+        "prep": "The week's model speech. Think aloud; students copy nothing yet. Critical feature: picture the audience.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Who's listening?",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "ask who can actually make it happen?",
+      "followUp": "cold call one student: why that audience?",
+      "items": [
+        {
+          "text": "Longer lunch. 1 the principal, 2 the Preps, 3 the bus driver",
+          "answer": "1 - the principal",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Turn off screens at dinner. 1 the council, 2 families, 3 the canteen",
+          "answer": "2 - families",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "A new skate park. 1 the library, 2 the Preps, 3 the local council",
+          "answer": "3 - the local council",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "Stop littering at recess. 1 students, 2 the mayor, 3 farmers",
+          "answer": "1 - students",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Protect polar bear habitat. 1 a toy shop, 2 world leaders, 3 the Preps",
+          "answer": "2 - world leaders",
+          "expect": "2 fingers"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Pick the audience that can make it happen."
+        ],
+        "trap": [
+          "picking the audience that would like the idea most.",
+          "Fix: ask who has the power to say yes?"
+        ],
+        "stretch": "Name a second audience who could help.",
+        "help": "Ask: who is in charge of this?",
+        "prep": "Guided practice. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which position is clearest?",
+      "options": [
+        {
+          "text": "Trees are kind of nice, I guess.",
+          "misconception": "wobbly; no clear side"
+        },
+        {
+          "text": "Our school needs ten new shade trees by summer."
+        },
+        {
+          "text": "Here are some facts about trees.",
+          "misconception": "a topic, not a position"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - sure, specific and takes a side",
+        "beats": [
+          "SAY: Three speakers start their speech.",
+          [
+            "ASK: Which position is clearest?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what makes B sure?",
+            "Less -> ask which one takes a side, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. A side, a number, a deadline."
+          ]
+        ],
+        "trap": [
+          "pointing to C because facts sound strong.",
+          "Fix: ask what does C want us to do?"
+        ],
+        "prep": "Decision point before students plan. Under 80% means one more wobbly-to-clear rewrite together.",
+        "tag": "[CFU | Supported application | SC1 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Think, feel, do",
+      "routine": "boards",
+      "thinkTime": 30,
+      "pivot": "write the Do first, then the feeling that gets them there",
+      "followUp": "cold call one board: why that feeling?",
+      "items": [
+        {
+          "text": "Speech: walk to school on Wednesdays. Audience: families.",
+          "answer": "Think: walking is easy. Feel: excited. Do: walk on Wednesdays.",
+          "expect": "think, feel, do"
+        },
+        {
+          "text": "Speech: no plastic straws. Audience: the canteen.",
+          "answer": "Think: straws hurt sea life. Feel: guilty. Do: stop selling them.",
+          "expect": "think, feel, do"
+        },
+        {
+          "text": "Speech: more books in the library. Audience: the principal.",
+          "answer": "Think: reading matters. Feel: proud. Do: buy fifty books.",
+          "expect": "think, feel, do"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Three words or short phrases on your board: think, feel, do."
+        ],
+        "trap": [
+          "a Do that is too big, like save the planet.",
+          "Fix: student shrinks it to one action this week."
+        ],
+        "stretch": "Add the toughest listener.",
+        "help": "Start with Do. What should they actually do?",
+        "prep": "Guided practice. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Plan my speech",
+      "task": "Work through your Worksheet. Finish by planning your own speech: issue, position, audience, think, feel, do.",
+      "where": "Worksheet",
+      "frame": "I think ___. I'm talking to ___. I want them to ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "flag",
+          "people",
+          "target"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Picture your audience",
+      "notes": {
+        "answer": "a plan with an issue, a clear position, an audience and think-feel-do",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Your plan for your own speech. The last section is the one that matters most."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: can you picture their faces? What should they do?",
+          [
+            "ASK: Tell your partner your position and your Do.",
+            "30 sec each. Turn and tell, partner A first.",
+            "EXPECT: a clear side and one action"
+          ]
+        ],
+        "trap": [
+          "an audience of everyone.",
+          "Fix: student names one group who could say yes."
+        ],
+        "stretch": "Extension: one speech for two audiences, then the toughest listener.",
+        "help": "Supported Worksheet: picture-clue choices, a plan started, a frame.",
+        "prep": "Independent planning of their own speech; S2 builds on it. SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in the student's own speech plan"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "A speech asks for a water bottle refill station at the park.",
+        "Name the best audience, and what they should think, feel and do."
+      ],
+      "notes": {
+        "answer": "e.g. the council; plastic waste is a problem; hopeful; build one by summer",
+        "beats": [
+          "SAY: A new speech. Plan the audience and think, feel, do.",
+          [
+            "ASK: Write the audience and think, feel, do.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: the council or the park's owners; one action"
+          ],
+          "RECORD who names everyone as the audience. Conference list for S2."
+        ],
+        "trap": [
+          "an audience with no power, like park visitors only.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new speech. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "What is one thing your audience should feel by the end of your speech?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - worried, hopeful, proud, fired up",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you about your position and your audience?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: What is one thing your audience",
+            "should feel by the end of your speech?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: worried, hopeful, proud, fired up"
+          ]
+        ],
+        "prep": "Plans go in the speech folder for S2. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

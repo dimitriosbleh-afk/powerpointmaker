@@ -1,0 +1,882 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 2,
+    "session": 1,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Inside a Persuasive Text",
+    "subtitle": "Term 4 Week 2, Session 1",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 2 Session 1",
+    "outputFolder": "T4W2_Lit_S1_Inside_A_Persuasive_Text",
+    "fileName": "Session 1 - Inside a Persuasive Text.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA03 how persuasive texts use language features and stages for their purpose; VC2E5LY08 features used to meet purpose and audience; VC2E5LY09 comprehension strategies to evaluate ideas",
+      "shape": "read like a writer: label sentences claim, prove or sell on new examples, then highlight a whole mentor text and judge its best line, because students write better once they see every sentence has a job",
+      "criticalFeature": "every sentence has a job: claim it, prove it or sell it",
+      "decisionPoints": [
+        "the Claim, prove or sell? round",
+        "the choice check: which sentence proves it?",
+        "the exit board: the proof in a new text"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Today: the three moves, found in someone else's writing.",
+      "catchUp": "Missed Week 1? Say the anchor with the three pictures. The highlighting task needs nothing from last week."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Highlighters in three colours: yellow, green and pink (or coloured pencils)",
+      "Mini-whiteboards and markers",
+      "Writing books"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1, 2 or 3",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "A colour key on the board: yellow = Claim it, green = Prove it, pink = Sell it",
+      "The first paragraph of the mentor text, enlarged, to highlight live"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn after the highlighting: label sentence jobs, find the audience, fix a label, judge the best line.",
+      "title": "Inside a Persuasive Text",
+      "subtitle": "Every sentence has a job: claim it, prove it or sell it.",
+      "sections": [
+        {
+          "title": "What is its job?",
+          "columns": 1,
+          "example": {
+            "prompt": "Our school needs a bike shed.",
+            "steps": [
+              "Does it say what should happen?",
+              "Does it give facts?",
+              "Does it make me feel?"
+            ],
+            "answer": "Claim it: it says what should happen."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write the job of each sentence: claim, prove or sell. Then say how you know.",
+              "columns": [
+                "Sentence",
+                "Job",
+                "How I know"
+              ],
+              "rows": [
+                [
+                  "Bikes left in the rain go rusty.",
+                  "",
+                  ""
+                ],
+                [
+                  "Imagine walking out to find your bike gone.",
+                  "",
+                  ""
+                ],
+                [
+                  "Twelve bikes were damaged last term.",
+                  "",
+                  ""
+                ],
+                [
+                  "The school must build a shed by Term 1.",
+                  "",
+                  ""
+                ],
+                [
+                  "Who wants a soggy seat at home time?",
+                  "",
+                  ""
+                ],
+                [
+                  "A shed costs less than one new bike a year.",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Bikes left in the rain go rusty.",
+                  "prove",
+                  "a fact"
+                ],
+                [
+                  "Imagine walking out to find your bike gone.",
+                  "sell",
+                  "makes me picture it"
+                ],
+                [
+                  "Twelve bikes were damaged last term.",
+                  "prove",
+                  "a number"
+                ],
+                [
+                  "The school must build a shed by Term 1.",
+                  "claim",
+                  "must: what should happen"
+                ],
+                [
+                  "Who wants a soggy seat at home time?",
+                  "sell",
+                  "a question to make me feel"
+                ],
+                [
+                  "A shed costs less than one new bike a year.",
+                  "prove",
+                  "a comparison with numbers"
+                ]
+              ],
+              "widths": [
+                2,
+                0.7,
+                1.2
+              ],
+              "rowH": 26
+            }
+          ]
+        },
+        {
+          "title": "Readers and labels",
+          "columns": 2,
+          "example": {
+            "prompt": "A text says 'kids our age' and 'our school'. Who is it for?",
+            "steps": [
+              "Look for who the writer talks to",
+              "Look for the words they choose",
+              "Name the audience"
+            ],
+            "answer": "Other students at the school."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "A text says 'our generation' and 'we must act'. Who is it mostly written for?",
+              "options": [
+                "Preps",
+                "young people",
+                "scientists"
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "Young people: 'our generation' and 'we' put the reader on the writer's team."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Tom labelled this sentence Prove it. Find his mistake and fix it.",
+              "work": [
+                "Picture a turtle tangled in a fishing net."
+              ],
+              "answer": "It gives no fact; it makes us picture and feel it. Fix: Sell it."
+            }
+          ]
+        },
+        {
+          "title": "The best line",
+          "columns": 1,
+          "example": {
+            "prompt": "Best line: Walk, switch off, speak up.",
+            "steps": [
+              "Copy the line",
+              "Say its job",
+              "Say what it makes the reader do or feel"
+            ],
+            "answer": "It's a Sell it line: three quick actions make it easy to act."
+          },
+          "items": [
+            {
+              "prompt": "Copy the best line from Every Ice Floe Counts. Explain why it works on the reader.",
+              "answer": "Any line, with its job and its effect on the reader.",
+              "lines": 4
+            },
+            {
+              "kind": "open",
+              "prompt": "Write one new Prove it sentence the writer could add. Say who the fact comes from.",
+              "answer": "A true fact with a source, e.g. Polar Bears International says bears hunt seals from the ice.",
+              "lines": 3
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: write each job for a new topic, then rewrite a paragraph for younger readers.",
+      "title": "Writer's Toolbox",
+      "subtitle": "Now write the jobs yourself.",
+      "sections": [
+        {
+          "title": "Write each job",
+          "columns": 1,
+          "example": {
+            "prompt": "Topic: our school should have a vegetable garden.",
+            "steps": [
+              "Claim: what should happen",
+              "Prove: a fact or number",
+              "Sell: make them feel"
+            ],
+            "answer": "Claim: Our school must plant a garden. Prove: Gardens grow food for the canteen. Sell: Imagine biting a tomato you grew."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Topic: our town needs a dog park. Write one sentence for each job.",
+              "columns": [
+                "Job",
+                "My sentence"
+              ],
+              "rows": [
+                [
+                  "Claim it",
+                  ""
+                ],
+                [
+                  "Prove it",
+                  ""
+                ],
+                [
+                  "Sell it",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Claim it",
+                  "Our council should build a fenced dog park."
+                ],
+                [
+                  "Prove it",
+                  "There is nowhere in town for dogs to run off the lead."
+                ],
+                [
+                  "Sell it",
+                  "Picture a happy dog running free while its owner relaxes."
+                ]
+              ],
+              "widths": [
+                0.6,
+                2
+              ],
+              "rowH": 38
+            }
+          ]
+        },
+        {
+          "title": "Same message, younger reader",
+          "columns": 1,
+          "example": {
+            "prompt": "Original: 'Our generation must act.' For Year 3: 'Kids like us can help!'",
+            "steps": [
+              "Keep the message",
+              "Swap hard words",
+              "Keep it short"
+            ],
+            "answer": "Kids like us can help!"
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Rewrite paragraph 3 of Every Ice Floe Counts for a Year 3 class. Keep every job, change the words.",
+              "answer": "Same claim, proof and sell, in short sentences and simple words.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: three quick choices, a first label done and a frame.",
+      "title": "Inside a Persuasive Text Helper",
+      "subtitle": "Claim it says what should happen. Prove it gives facts. Sell it makes you feel.",
+      "sections": [
+        {
+          "title": "Pick the job",
+          "columns": 3,
+          "example": {
+            "prompt": "'We must save the reef.'",
+            "steps": [
+              "Look for must or should",
+              "Found one? It's a claim",
+              "Circle claim"
+            ],
+            "answer": "claim"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Trees cool the playground.",
+              "options": [
+                "claim",
+                "prove",
+                "sell"
+              ],
+              "answer": 1,
+              "hint": "Is it a fact?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Picture a hot, bare playground.",
+              "options": [
+                "claim",
+                "prove",
+                "sell"
+              ],
+              "answer": 2,
+              "hint": "Does it make you picture or feel?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "We should plant trees.",
+              "options": [
+                "claim",
+                "prove",
+                "sell"
+              ],
+              "answer": 0,
+              "hint": "Look for should."
+            }
+          ]
+        },
+        {
+          "title": "Label it",
+          "columns": 1,
+          "example": {
+            "prompt": "'Bins are full every Friday.'",
+            "steps": [
+              "Read it",
+              "Fact, claim or feeling?",
+              "Write the job"
+            ],
+            "answer": "prove"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write the job of each sentence.",
+              "columns": [
+                "Sentence",
+                "Job"
+              ],
+              "rows": [
+                [
+                  "Our school must recycle.",
+                  "claim"
+                ],
+                [
+                  "Bins are full every Friday.",
+                  ""
+                ],
+                [
+                  "Imagine a school with no rubbish.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Our school must recycle.",
+                  "claim"
+                ],
+                [
+                  "Bins are full every Friday.",
+                  "prove"
+                ],
+                [
+                  "Imagine a school with no rubbish.",
+                  "sell"
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                2,
+                0.8
+              ],
+              "rowH": 30
+            }
+          ]
+        },
+        {
+          "title": "My favourite line",
+          "columns": 1,
+          "example": {
+            "prompt": "Favourite: The bears cannot ask for help.",
+            "steps": [
+              "Copy your line",
+              "It makes me feel ___",
+              "Because ___"
+            ],
+            "answer": "It makes me feel sad because the bears can't speak for themselves."
+          },
+          "items": [
+            {
+              "prompt": "Copy your favourite line from the text. Finish: It makes me feel ___ because ___.",
+              "answer": "A line and a feeling with a reason.",
+              "lines": 4,
+              "hint": "Look at your pink highlights."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    },
+    {
+      "kind": "page",
+      "label": "Highlight the Persuasion",
+      "description": "Fun activity: highlighting. An original mentor text to colour-code claim, prove and sell.",
+      "title": "Every Ice Floe Counts",
+      "subtitle": "Yellow = Claim it, green = Prove it, pink = Sell it. Stretch: find the sentence doing two jobs.",
+      "blocks": [
+        {
+          "visual": {
+            "type": "chips",
+            "items": [
+              "yellow = Claim",
+              "green = Prove",
+              "pink = Sell"
+            ]
+          }
+        },
+        {
+          "passage": "Imagine standing on the edge of the world and watching your home melt beneath your feet. For polar bears, this is not imagination. It is happening right now. We must act to protect the Arctic before it is too late."
+        },
+        {
+          "passage": "Polar bears need sea ice to survive. They hunt seals from the ice, and without it they go hungry. Scientists at NASA report that Arctic summer sea ice is shrinking by about 12 percent every ten years. Less ice means longer swims, thinner bears and fewer cubs."
+        },
+        {
+          "passage": "Some people say one family cannot make a difference. However, small choices add up. If every family in our town walked to school once a week, thousands of car trips would disappear. Turning off lights, recycling and choosing reusable bottles all cut the pollution that warms our planet."
+        },
+        {
+          "passage": "The Arctic may feel a world away, but the air we share has no borders. Do we really want to be the generation that let the polar bear disappear? Start today. Walk, switch off, speak up. The bears cannot ask for help, but we can give it."
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we take a persuasive text apart to see how it works."
+    },
+    {
+      "kind": "overview",
+      "title": "For the teacher: Week 2 at a glance",
+      "lines": [
+        "This week: read like a persuader. Mentor text, word power, evidence, fair or sneaky.",
+        "Today: label sentences claim, prove or sell; highlight a full mentor text (fun activity).",
+        "The mentor text is original, written for this session. NASA sea ice figure: about 12 percent per decade (NASA Vital Signs).",
+        "Unit anchor: Claim it. Prove it. Sell it."
+      ],
+      "notes": "Teacher-facing only. Skip it in front of the class."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print one Highlight the Persuasion sheet per student, then the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Highlighters in three colours on tables."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to work out the job of each sentence in a persuasive text.",
+      "successCriteria": [
+        "I can find the writer's main claim.",
+        "I can label sentences as claim, prove or sell, and say why.",
+        "I can judge which sentence persuades best and explain my choice."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Last week you wrote. This week you read like a writer."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Finding the main claim is where we all start.",
+            "Labelling each sentence's job is today's main goal."
+          ]
+        ],
+        "prep": "SC1 finding the main claim is reachable for all; SC2 labelling claim, prove or sell is the core and the exit evidence; SC3 judging the best line is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Which one wants to change your mind?",
+      "lines": [
+        "Preheat the oven to 180 degrees.",
+        "The old lighthouse creaked in the storm.",
+        "Every student deserves a library that is open at lunch."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "cookie",
+            "label": "recipe"
+          },
+          {
+            "name": "storm",
+            "label": "story"
+          },
+          {
+            "name": "megaphone",
+            "label": "persuade"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "the third - it wants you to agree with something",
+        "beats": [
+          [
+            "SAY: Three opening lines from three different texts.",
+            "Only one wants to change your mind."
+          ],
+          [
+            "ASK: Which one is trying to persuade you? First, second or third?",
+            "5 sec. Cue: Fingers at your chest, 1, 2 or 3... show me.",
+            "EXPECT: 3"
+          ],
+          [
+            "ASK: What gave it away?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: deserves; it's an opinion; it wants something to change"
+          ],
+          "SAY: Today we look inside a persuasive text and find the job of every sentence."
+        ],
+        "trap": [
+          "choosing the story because it's exciting.",
+          "Fix: ask is it asking you to agree with anything? Student re-chooses."
+        ],
+        "prep": "Launch retrieves text purpose from Term 3 (persuasive versus information writing). 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "audience",
+      "meaning": "The people a writer is trying to persuade.",
+      "example": "A letter to the principal and a poster for Preps need different words.",
+      "pictogram": "people",
+      "notes": {
+        "answer": "the people a writer is trying to persuade",
+        "beats": [
+          "POINT to the word. SAY: Audience. Say it with me. Audience.",
+          [
+            "SAY: Your audience is who you're trying to persuade.",
+            "Writers choose every word with them in mind."
+          ],
+          [
+            "ASK: Would you use the word generation with Preps? Why or why not?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: no, they might not know it; use kids instead"
+          ]
+        ],
+        "trap": [
+          "thinking audience only means people watching a show.",
+          "Fix: ask who reads this? Student names the reader."
+        ],
+        "prep": "Audience recurs every session from here: who are we persuading?",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "I Do",
+      "title": "Watch me find each sentence's job",
+      "extract": "Imagine standing on the edge of the world and watching your home melt beneath your feet. For polar bears, this is not imagination. It is happening right now. We must act to protect the Arctic before it is too late.",
+      "highlights": [
+        "Imagine standing on the edge of the world",
+        "We must act to protect the Arctic"
+      ],
+      "source": "Every Ice Floe Counts, written for this session",
+      "notes": {
+        "answer": "Imagine... = sell; We must act... = the main claim",
+        "beats": [
+          [
+            "READ it aloud once.",
+            "SAY: I ask one question of every sentence: what's your job?"
+          ],
+          [
+            "POINT to Imagine standing.",
+            "SAY: This doesn't prove anything. It makes me feel it. So it's Sell it. Pink."
+          ],
+          [
+            "POINT to We must act.",
+            "SAY: Must. This is what the writer wants. It's the main claim. Yellow."
+          ],
+          [
+            "ASK: It is happening right now. Claim, prove or sell?",
+            "10 sec. Cue: Fingers at your chest, 1, 2 or 3... show me.",
+            "EXPECT: 3, sell. ACCEPT: 2, with a reason"
+          ]
+        ],
+        "trap": [
+          "calling every sentence a claim because it is all persuasive.",
+          "Fix: ask does it say what should happen? If not, it's prove or sell."
+        ],
+        "stretch": "Find a sentence doing two jobs.",
+        "help": "Ask in order: what should happen? how do we know? how should I feel?",
+        "prep": "The model. Critical feature: every sentence has a job. Paragraph 1 of the mentor text the students will highlight.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Claim, prove or sell?",
+      "routine": "fingers",
+      "thinkTime": 8,
+      "pivot": "ask the three job questions aloud, in order",
+      "followUp": "cold call one student: which word told you?",
+      "items": [
+        {
+          "text": "Plastic straws should be banned in every Australian cafe.",
+          "answer": "1 - claim (should be banned)",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Around 8 million tonnes of plastic enter the ocean every year.",
+          "answer": "2 - prove (a statistic)",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Picture a turtle tangled in a plastic bag, struggling for air.",
+          "answer": "3 - sell (makes you feel)",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "Will you be the one who says no to a straw?",
+          "answer": "3 - sell (a question that pulls you in)",
+          "expect": "3 fingers",
+          "say": "Sell. A question that pulls you in. Tick or fix."
+        },
+        {
+          "text": "Beach clean-up crews collect thousands of straws each year.",
+          "answer": "2 - prove (an example with numbers)",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Our school must go plastic-free by next year.",
+          "answer": "1 - claim (must)",
+          "expect": "1 finger"
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger claim, two prove, three sell.",
+          "New topic: plastic. Same three jobs."
+        ],
+        "trap": [
+          "calling the turtle sentence proof because it could be true.",
+          "Fix: ask does it give a fact, or a picture to feel? Student re-votes."
+        ],
+        "stretch": "Rewrite one prove sentence as a sell.",
+        "help": "Look for must or should first: that's the claim.",
+        "prep": "Guided labelling on a new topic, so the highlighting is still fresh thinking. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which sentence is the Prove it?",
+      "prompt": "Topic: dogs at the beach",
+      "options": [
+        {
+          "text": "Dogs must be kept on leads at the beach.",
+          "misconception": "picks the claim; must means it's what the writer wants"
+        },
+        {
+          "text": "Imagine a toddler knocked flat by a bounding dog.",
+          "misconception": "picks the sell; a vivid picture is not evidence"
+        },
+        {
+          "text": "Councils record hundreds of beach dog bites every summer."
+        }
+      ],
+      "answer": 2,
+      "notes": {
+        "answer": "C - the report of dog bites is the proof",
+        "beats": [
+          "SAY: Three sentences, three jobs. Find the one that proves it.",
+          [
+            "ASK: Which sentence is the Prove it?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to C"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what job does B do?",
+            "Less -> ask how we know for each, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: C. Records of bites tell us it really happens. That's proof."
+          ]
+        ],
+        "trap": [
+          "pointing to B because it feels real.",
+          "Fix: ask does it tell us how often? Student says no, re-chooses."
+        ],
+        "prep": "Decision point before the highlighting. Under 80% means paragraph 2 is highlighted together before students go solo. The bite number is general, not a cited statistic.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Highlight the persuasion",
+      "task": "Highlight Every Ice Floe Counts: yellow claim, green prove, pink sell. Then work through your Worksheet.",
+      "where": "Highlight sheet, then Worksheet",
+      "visual": {
+        "type": "chips",
+        "items": [
+          "yellow = Claim",
+          "green = Prove",
+          "pink = Sell"
+        ]
+      },
+      "visualLabel": "Colour key",
+      "notes": {
+        "answer": "yellow: We must act, small choices add up, Start today. Green: para 2, car trips",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Read it all first. Then decide, then colour. No colouring as you go."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: why is that one green? Listen for how we know.",
+          "TIME 15 minutes. At 12, compare one paragraph with a partner.",
+          [
+            "ASK: How many yellow claim sentences in the whole text?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 3. ACCEPT: 4 with a reason"
+          ]
+        ],
+        "trap": [
+          "highlighting everything yellow.",
+          "Fix: student asks does this say what should happen? for each yellow."
+        ],
+        "stretch": "Extension: write each job yourself, then rewrite for a younger reader.",
+        "help": "Supported Worksheet: three quick choices, a first label done, a frame.",
+        "prep": "Fun activity: highlighting. Paragraph 1 was modelled; paragraphs 2-4 are new. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "colour-code a four-paragraph mentor text, then a worksheet on sentence jobs"
+    },
+    {
+      "kind": "cfu",
+      "badge": "CFU",
+      "title": "Best line battle",
+      "technique": "Write it, chin it, show me",
+      "question": "Which sentence in the whole text persuades you most? Write its first three words.",
+      "notes": {
+        "answer": "open - e.g. The bears cannot..., Do we really..., Imagine standing...",
+        "beats": [
+          "SAY: Every writer has a best line. Let's see which one won the room.",
+          [
+            "ASK: Write the first three words of the sentence that persuades you most.",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: The bears cannot, Do we really, Imagine standing"
+          ],
+          [
+            "ASK: Tell your partner why it works. Use: It works because it makes me...",
+            "30 sec. Turn and tell, partner B first.",
+            "EXPECT: It works because it makes me feel guilty"
+          ],
+          [
+            "SAY: Most of you chose a Sell it line.",
+            "Proof convinces the head. Sell moves the heart."
+          ]
+        ],
+        "trap": [
+          "it's the best because it's good.",
+          "Fix: ask what does it make you feel or think? Student names it."
+        ],
+        "prep": "SC3 rehearsal and the bridge to Session 2 (word power). 4 minutes.",
+        "tag": "[CFU | Supported application | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Our council should build a skate park. Last year, 400 local kids signed a petition asking for one. Picture a Saturday with somewhere safe to ride!",
+        "Which sentence is the proof? Write its first four words."
+      ],
+      "notes": {
+        "answer": "Last year, 400 local - the petition is the proof",
+        "beats": [
+          "SAY: A brand new text. Find the job of each sentence in your head.",
+          [
+            "ASK: Which sentence is the proof? Write its first four words.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: Last year, 400 local"
+          ],
+          "RECORD who writes the claim or the sell. Tomorrow's warm-up group."
+        ],
+        "trap": [
+          "choosing Picture a Saturday.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new text. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Which job do you use most in your own writing: claim, prove or sell? Which do you need more of?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - most students will say they need more prove",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can label a sentence's job?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Which job do you need more of in your own writing?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: prove, I just give opinions"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Collect the highlighted sheets: they show who can tell proof from sell. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

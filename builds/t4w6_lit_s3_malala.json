@@ -1,0 +1,934 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 6,
+    "session": 3,
+    "variant": 4,
+    "minutes": 60,
+    "title": "Malala's Voice",
+    "subtitle": "Term 4 Week 6, Session 3",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 6 Session 3",
+    "outputFolder": "T4W6_Lit_S3_Malala",
+    "fileName": "Session 3 - Malala's Voice.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY09 evaluating ideas in a spoken text; VC2E5LY07 how a text reflects the time and place it was created; VC2E5LY10 creating spoken texts with elaborated ideas",
+      "shape": "listen, map, story, list: Malala's UN speech is mapped on the listening grid, then students practise a true small story that proves a point and a list that builds",
+      "criticalFeature": "a true small story makes a big idea feel real, and a list that builds carries the audience to the big point",
+      "decisionPoints": [
+        "the Story or statement? round",
+        "the choice check: the story that proves the point",
+        "the exit board: a short story for a new claim"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: a true story sells it.",
+      "catchUp": "Missed earlier sessions? Show the listening grid; it is the same for every speaker. The story frame needs nothing from before."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Persuasive Speaker's Toolkit",
+      "Mini-whiteboards and markers",
+      "Writing books"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 or 2",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Listening grid: Message? Audience? Think? Feel? Do?",
+      "Story frame: Then... One day... Now... So..."
+    ],
+    "videos": [
+      "DCE Speech Collection: Malala Yousafzai, UN speech, 2013 (teacher's copy; play the opening and the 'one child, one teacher' section)"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: map Malala's speech, judge stories, build lists, then tell your own true story for your issue.",
+      "title": "Malala's Voice",
+      "subtitle": "A true story makes a big idea real.",
+      "sections": [
+        {
+          "title": "Map the speech",
+          "columns": 1,
+          "example": {
+            "prompt": "Any speech: message, audience, think, feel, do.",
+            "steps": [
+              "Message in one sentence",
+              "Who is listening?",
+              "Think, feel, do"
+            ],
+            "answer": "Message: every child deserves to go to school."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in the listening grid for Malala's speech.",
+              "columns": [
+                "Question",
+                "My answer"
+              ],
+              "rows": [
+                [
+                  "Her message in one sentence",
+                  ""
+                ],
+                [
+                  "Her audience",
+                  ""
+                ],
+                [
+                  "What she wants them to think",
+                  ""
+                ],
+                [
+                  "What she wants them to feel",
+                  ""
+                ],
+                [
+                  "What she wants them to do",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Her message in one sentence",
+                  "Every child, especially every girl, deserves an education."
+                ],
+                [
+                  "Her audience",
+                  "young people and leaders at the United Nations"
+                ],
+                [
+                  "What she wants them to think",
+                  "education is the answer"
+                ],
+                [
+                  "What she wants them to feel",
+                  "hope, courage, determination"
+                ],
+                [
+                  "What she wants them to do",
+                  "speak up and support education for all"
+                ]
+              ],
+              "widths": [
+                1,
+                1.8
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Stories that prove",
+          "columns": 2,
+          "example": {
+            "prompt": "Claim: we need a crossing guard.",
+            "steps": [
+              "Find a small true moment",
+              "Tell it in two or three sentences",
+              "Link it back: That's why..."
+            ],
+            "answer": "Last week a car missed my little brother by a metre. That's why we need a crossing guard."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Claim: our school needs a buddy bench. Which story proves it?",
+              "options": [
+                "I like benches.",
+                "In Prep, I sat alone every lunch until someone noticed.",
+                "Benches are made of wood."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "A real moment of loneliness that a buddy bench would fix."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Zara told this story in her speech. Find the problem and fix it.",
+              "work": [
+                "Last summer we went to the beach and it was fun and we had ice cream."
+              ],
+              "answer": "It doesn't prove any point. Fix: Last summer I found a turtle tangled in plastic. That's why bags must go."
+            }
+          ]
+        },
+        {
+          "title": "Build a list",
+          "columns": 1,
+          "example": {
+            "prompt": "Claim: one person can make a difference.",
+            "steps": [
+              "Repeat a starting word",
+              "Build from small to big",
+              "End on the biggest"
+            ],
+            "answer": "One bottle. One bin. One school. One planet."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write a list that builds for each claim.",
+              "columns": [
+                "Claim",
+                "My list"
+              ],
+              "rows": [
+                [
+                  "Small actions add up.",
+                  ""
+                ],
+                [
+                  "Kids can lead change.",
+                  ""
+                ],
+                [
+                  "Every tree matters.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Small actions add up.",
+                  "One light. One tap. One trip. One planet."
+                ],
+                [
+                  "Kids can lead change.",
+                  "One voice, one class, one school, one world."
+                ],
+                [
+                  "Every tree matters.",
+                  "Shade for one child, home for one bird, air for us all."
+                ]
+              ],
+              "widths": [
+                0.9,
+                1.8
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "My true story",
+          "columns": 1,
+          "example": {
+            "prompt": "My issue: zoos",
+            "steps": [
+              "Then: set the scene",
+              "One day: what happened",
+              "So: link it to your claim"
+            ],
+            "answer": "Last year I saw a bear at a zoo. It paced the same path, over and over. That's when I knew."
+          },
+          "items": [
+            {
+              "prompt": "Write a short true story (3-5 sentences) for your speech that makes your issue feel real. End with: That's why...",
+              "answer": "A small true moment, told simply, linked to the claim.",
+              "lines": 6
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Add Malala to your Toolkit, then grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: make a story specific, then write one for a different audience.",
+      "title": "Story Crafter",
+      "subtitle": "The best speech stories are small, true and specific.",
+      "sections": [
+        {
+          "title": "Make it specific",
+          "columns": 1,
+          "example": {
+            "prompt": "Vague: Once I saw some rubbish.",
+            "steps": [
+              "Add when",
+              "Add a detail you could see or hear",
+              "Add how you felt"
+            ],
+            "answer": "Last Tuesday, a chip packet was stuck in the creek grate. A duck was pecking at it. I felt sick."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each vague story with specific details.",
+              "columns": [
+                "Vague",
+                "Specific"
+              ],
+              "rows": [
+                [
+                  "One time I was hot at school.",
+                  ""
+                ],
+                [
+                  "I saw an animal that was sad.",
+                  ""
+                ],
+                [
+                  "Something bad happened at the beach.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "One time I was hot at school.",
+                  "Last February, our classroom hit 34 degrees and Ella fainted."
+                ],
+                [
+                  "I saw an animal that was sad.",
+                  "At the show, a pony stood in the sun with no water."
+                ],
+                [
+                  "Something bad happened at the beach.",
+                  "At Easter, I pulled a fishing line off a seagull's leg."
+                ]
+              ],
+              "widths": [
+                1,
+                1.6
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "Same story, new audience",
+          "columns": 1,
+          "example": {
+            "prompt": "Story for my class vs story for the council.",
+            "steps": [
+              "What does this audience care about?",
+              "Keep the true moment",
+              "Change what you highlight"
+            ],
+            "answer": "For the council: the same story, plus how many students it affects."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Retell your true story for a different audience. Explain one thing you changed and why.",
+              "answer": "A retold story with a change linked to the new audience.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first story line done and a frame.",
+      "title": "Malala Helper",
+      "subtitle": "Then, one day, now, so.",
+      "sections": [
+        {
+          "title": "The speech",
+          "columns": 3,
+          "example": {
+            "prompt": "Who spoke?",
+            "steps": [
+              "Listen to the start",
+              "She says her name",
+              "Malala"
+            ],
+            "answer": "Malala"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "What does Malala want every child to have?",
+              "options": [
+                "school",
+                "a phone"
+              ],
+              "answer": 0,
+              "hint": "Think about one book and one pen."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Where did she speak?",
+              "options": [
+                "the United Nations",
+                "her school"
+              ],
+              "answer": 0,
+              "hint": "A big world meeting."
+            },
+            {
+              "kind": "choice",
+              "prompt": "How does she want us to feel?",
+              "options": [
+                "hopeful",
+                "bored"
+              ],
+              "answer": 0,
+              "hint": "She believes things can change."
+            }
+          ]
+        },
+        {
+          "title": "Story or statement?",
+          "columns": 1,
+          "example": {
+            "prompt": "'Last week I tripped on the broken path.'",
+            "steps": [
+              "Did something happen?",
+              "Yes",
+              "Story"
+            ],
+            "answer": "story"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write story or statement.",
+              "columns": [
+                "Line",
+                "Story or statement?"
+              ],
+              "rows": [
+                [
+                  "Last week I tripped on the broken path.",
+                  "story"
+                ],
+                [
+                  "Paths should be safe.",
+                  ""
+                ],
+                [
+                  "Yesterday my bag got soaked in the rain.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Last week I tripped on the broken path.",
+                  "story"
+                ],
+                [
+                  "Paths should be safe.",
+                  "statement"
+                ],
+                [
+                  "Yesterday my bag got soaked in the rain.",
+                  "story"
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1.8,
+                1
+              ],
+              "rowH": 30
+            }
+          ]
+        },
+        {
+          "title": "My story",
+          "columns": 1,
+          "example": {
+            "prompt": "Zoos",
+            "steps": [
+              "Last year, I ___.",
+              "I saw ___.",
+              "That's why ___."
+            ],
+            "answer": "Last year, I visited a zoo. I saw a bear pacing. That's why bears need space."
+          },
+          "items": [
+            {
+              "prompt": "Finish: Last ___, I ___. I saw ___. That's why ___.",
+              "answer": "A short true story linked to the issue.",
+              "lines": 4,
+              "hint": "Think of something you really saw or did."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we hear from a girl who spoke up for every child's right to go to school."
+    },
+    {
+      "kind": "resources",
+      "notes": "Cue the selected section of Malala Yousafzai's 2013 UN speech from the DCE Speech Collection. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Toolkits out."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how a true story and a building list make a speech powerful.",
+      "successCriteria": [
+        "I can say a speaker's message and audience.",
+        "I can tell a short true story that proves my point.",
+        "I can write a list that builds to a big idea."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today we learn how one true story can move the whole world."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Imagine school was taken away",
+      "lines": [
+        "Imagine being told: girls can't go to school any more.",
+        "Would you speak up, even if it was risky?"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "books",
+            "label": "school"
+          },
+          {
+            "name": "stop",
+            "label": "taken away"
+          },
+          {
+            "name": "megaphone",
+            "label": "speak up"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - most would want to; some would be scared",
+        "beats": [
+          [
+            "SAY: In parts of Pakistan, girls were told they could not go to school.",
+            "One girl, Malala, spoke up anyway."
+          ],
+          [
+            "ASK: Would you speak up, even if it was risky?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: a mix"
+          ],
+          [
+            "ASK: What would you say to make the world listen?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: school matters; it's not fair; everyone deserves to learn"
+          ],
+          [
+            "SAY: Malala was attacked for speaking up. She survived.",
+            "At 16, she spoke at the United Nations."
+          ]
+        ],
+        "trap": [
+          "focusing on the attack rather than her message.",
+          "Fix: say the attack is why her story is",
+          "powerful; the message is about school for every child."
+        ],
+        "care": "Keep details of the 2012 attack brief and calm; check in quietly with anyone upset.",
+        "prep": "SOURCES: Malala Yousafzai, UN Youth Assembly, New York, 12 July 2013 (her 16th birthday).",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "anecdote",
+      "meaning": "A short true story that makes a point.",
+      "example": "I sat alone every lunch in Prep. That's why we need a buddy bench.",
+      "pictogram": "openBook",
+      "notes": {
+        "answer": "a short true story that makes a point",
+        "beats": [
+          "POINT to the word. SAY: Anecdote. Say it with me. Anecdote.",
+          "SAY: A short true story that makes a point.",
+          [
+            "ASK: Tell your partner a ten-second true story about lunchtime.",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: a real moment, short, with a point"
+          ]
+        ],
+        "trap": [
+          "thinking any story is an anecdote, even a made-up one.",
+          "Fix: say a speech anecdote must be true, or the audience stops trusting you."
+        ],
+        "prep": "The technique word: Toolkit row 3.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Map Malala's speech",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Question",
+            "Malala's speech"
+          ],
+          [
+            "Message",
+            "Every child deserves an education."
+          ],
+          [
+            "Audience",
+            "young people and leaders at the UN"
+          ],
+          [
+            "Think",
+            "education is the answer"
+          ],
+          [
+            "Feel",
+            "hope and courage"
+          ],
+          [
+            "Do",
+            "speak up; support school for all"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "message, audience, think, feel, do",
+        "beats": [
+          [
+            "PLAY the selected section from the DCE Speech Collection.",
+            "SAY: Listen for her own story, and for a list that builds."
+          ],
+          [
+            "POINT to Message.",
+            "SAY: Her story is about her, but her message is about every child."
+          ],
+          [
+            "POINT to Feel.",
+            "SAY: She doesn't make us feel sorry for her.",
+            "She makes us feel hopeful. That's a choice."
+          ],
+          [
+            "ASK: What does she want the audience to do?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: speak up; support education"
+          ]
+        ],
+        "trap": [
+          "writing her story as her message.",
+          "Fix: ask what does she want for every child? That's the message."
+        ],
+        "stretch": "Compare her audience with Severn's.",
+        "help": "Listen for the word education.",
+        "prep": "The model: the same listening grid as Session 2. CARE: some students may find the attack upsetting; keep the focus on her message.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "A list that builds",
+      "visual": {
+        "type": "text",
+        "text": "\"One child, one teacher, one book and one pen can change the world.\""
+      },
+      "label": "Malala Yousafzai, United Nations, 2013",
+      "notes": {
+        "answer": "repeated one, building from a child to the world",
+        "beats": [
+          [
+            "READ it aloud, slowly, with a pause after each one.",
+            "SAY: Four small things. Then the biggest thing of all: the world."
+          ],
+          [
+            "POINT to each one.",
+            "SAY: Repeating one makes each thing feel small and possible. Anyone can do one."
+          ],
+          [
+            "ASK: Say it with me, pausing after each one.",
+            "3 sec. Cue: Everyone, together, on three.",
+            "EXPECT: the line, with pauses"
+          ],
+          [
+            "ASK: Why end with change the world?",
+            "15 sec. Turn and tell, partner B first.",
+            "EXPECT: it's the biggest idea; it lands last"
+          ]
+        ],
+        "trap": [
+          "a list in random order.",
+          "Fix: student orders from smallest to biggest."
+        ],
+        "stretch": "Write a list that builds for your own issue.",
+        "help": "Use her pattern: One ___, one ___, one ___ can ___.",
+        "prep": "SOURCES: check the wording against your DCE copy. Toolkit row 4.",
+        "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Story or statement?",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "ask: did something happen to someone?",
+      "followUp": "cold call one student: what point could that story prove?",
+      "items": [
+        {
+          "text": "Last winter, the oval flooded and our grand final was cancelled.",
+          "answer": "2 - story",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Every school needs good drainage.",
+          "answer": "1 - statement",
+          "expect": "1 finger"
+        },
+        {
+          "text": "My nan grew up with no library, so she read the same book forty times.",
+          "answer": "2 - story",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Libraries are important for learning.",
+          "answer": "1 - statement",
+          "expect": "1 finger"
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger statement. Two fingers story."
+        ],
+        "trap": [
+          "calling any sentence with I in it a story.",
+          "Fix: ask did something actually happen? Student re-votes."
+        ],
+        "stretch": "Say which claim each story could prove.",
+        "help": "Look for a time: last winter, yesterday.",
+        "prep": "Guided practice. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which story proves the point?",
+      "prompt": "Claim: kids should learn first aid at school.",
+      "options": [
+        {
+          "text": "I once watched a movie about doctors.",
+          "misconception": "a story, but it doesn't prove the point"
+        },
+        {
+          "text": "When my brother choked, my friend knew what to do."
+        },
+        {
+          "text": "First aid is very important for everyone.",
+          "misconception": "a statement, not a story"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - a real moment where first aid mattered",
+        "beats": [
+          "SAY: Three lines for a speech on first aid. Which one proves it?",
+          [
+            "ASK: Which story proves the point?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what feeling does B give the audience?",
+            "Less -> ask does it show the claim is true? for each, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. A real moment. You can feel why first aid matters."
+          ]
+        ],
+        "trap": [
+          "pointing to C because it sounds sure.",
+          "Fix: ask did anything happen in C? Student re-chooses."
+        ],
+        "prep": "Decision point before writing. Under 80% means the class builds one story together with the frame.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Build the list",
+      "routine": "boards",
+      "thinkTime": 30,
+      "pivot": "repeat one starting word, then order small to big",
+      "followUp": "cold call one board: perform it with pauses",
+      "items": [
+        {
+          "text": "Claim: one action can matter.",
+          "answer": "One bottle. One bin. One habit. One planet.",
+          "expect": "a repeated word, small to big"
+        },
+        {
+          "text": "Claim: reading changes lives.",
+          "answer": "One book, one reader, one idea can change a life.",
+          "expect": "a list that builds"
+        },
+        {
+          "text": "Claim: our class can lead the school.",
+          "answer": "One class. One voice. One whole school following.",
+          "expect": "a list that builds"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Write a list that builds, Malala style."
+        ],
+        "trap": [
+          "a list that doesn't build: one cat, one dog, one fish.",
+          "Fix: ask what is the biggest? Put it last."
+        ],
+        "stretch": "Make your list a rule of three instead of four.",
+        "help": "Use: One ___, one ___, one ___ can ___.",
+        "prep": "Guided practice. SC3.",
+        "tag": "[We Do | Supported application | SC3 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Tell a true story",
+      "task": "Work through your Worksheet. Finish with a short true story for your speech that makes your issue feel real. Add Malala to your Toolkit.",
+      "where": "Worksheet",
+      "frame": "Last ___, I ___. That's why ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "openBook",
+          "microphone",
+          "heart"
+        ],
+        "labels": false
+      },
+      "visualLabel": "A true story",
+      "notes": {
+        "answer": "a short true story ending in That's why...",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: A small, true moment beats a big claim. What have you seen or done?"
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: is it true? What's the point it proves?",
+          [
+            "ASK: Tell your story to your partner in under 30 seconds.",
+            "30 sec each. Turn and tell, partner A first.",
+            "EXPECT: a real moment linked to a claim"
+          ]
+        ],
+        "trap": [
+          "a long story with no point.",
+          "Fix: student finishes with That's why... and cuts anything before it that doesn't matter."
+        ],
+        "stretch": "Extension: make a story specific, then retell it for a new audience.",
+        "help": "Supported Worksheet: picture-clue choices, a first line done, a story frame.",
+        "prep": "Independent application. Toolkit rows 3 and 4 filled before the exit. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a short true story for the student's speech"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Claim: every school should teach swimming.",
+        "Write a two-sentence true-sounding story that proves it."
+      ],
+      "notes": {
+        "answer": "e.g. My cousin slipped into the river. She could swim, so she was safe.",
+        "beats": [
+          "SAY: A new claim. Prove it with a short story.",
+          [
+            "ASK: Write a two-sentence story that proves the claim.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: something happened, linked to swimming"
+          ],
+          "RECORD who writes a statement instead of a story. Tomorrow's warm-up."
+        ],
+        "trap": [
+          "Swimming is important.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new claim. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Which is stronger in a speech: a fact or a story? Tell your partner why.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - a story, because people feel it; a fact, because it's proof",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can tell a story that proves your point?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Which is stronger in a speech:",
+            "a fact or a story? Tell your partner why.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: a story, because people feel it; a fact, because it's proof"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Toolkit rows 3-4 filled. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

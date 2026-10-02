@@ -1,0 +1,973 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 1,
+    "session": 2,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Say It Like You Mean It",
+    "subtitle": "Term 4 Week 1, Session 2",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 1 Session 2",
+    "outputFolder": "T4W1_Lit_S2_Say_It_Strong",
+    "fileName": "Session 2 - Say It Like You Mean It.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA08 vocabulary chosen for precise meaning (modal words); VC2E5LA05 complex sentences used for effect (a fronted because-clause); VC2E5LY10 creating persuasive texts for purpose and audience",
+      "shape": "ladder then upgrade: sort words by strength, upgrade weak claims, then front the reason, because a sure-sounding claim is the first thing a reader judges",
+      "criticalFeature": "the modal word sets how sure the writer sounds; louder is not stronger",
+      "decisionPoints": [
+        "the High, medium or low? round",
+        "the choice check: which is the strongest position statement?",
+        "the exit board: a new weak claim upgraded"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Today is still Claim it: say your side like you mean it.",
+      "catchUp": "Missed Session 1? Give the Issue Card Scaffold, have them choose question A, B or C, then join the upgrade round."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Writing books with yesterday's Issue Card"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1, 2 or 3",
+      "Turn and tell",
+      "Point to A, B or C"
+    ],
+    "boardSetup": [
+      "A three-step ladder on the board: low (might, could), medium (should, probably), high (must, will)",
+      "Space to collect upgraded claims for the Issues Wall"
+    ]
+  },
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we make our side sound like we actually mean it."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for students who need a first step. Draw the modality ladder on the board before the session."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to write a position statement that sounds sure and strong.",
+      "successCriteria": [
+        "I can find the words that show how sure a writer is.",
+        "I can upgrade a weak opinion into a strong position statement.",
+        "I can start my statement with a because-clause for extra punch."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Yesterday you picked a side. Today you say it like you mean it."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Spotting the sure words is where we all start.",
+            "Upgrading a weak opinion is today's main goal."
+          ]
+        ],
+        "prep": "SC1 spotting modal words is reachable for all; SC2 upgrading a weak claim is the core and the exit evidence; SC3 the fronted because-clause is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Which one would convince the principal?",
+      "lines": [
+        "Maybe we could perhaps have a slightly longer lunch?",
+        "Because tired kids can't learn, we must have a longer lunch."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "teacher",
+            "label": "the principal"
+          },
+          {
+            "name": "clock",
+            "label": "longer lunch"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "the second - it sounds sure and gives the reason first",
+        "beats": [
+          [
+            "SAY: Two students want a longer lunch. Same idea.",
+            "Only one of them will get a yes."
+          ],
+          [
+            "ASK: Which one would convince the principal? First or second?",
+            "5 sec. Cue: Fingers at your chest, 1 or 2... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: What makes the second one stronger? Name one word.",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: must; because; it sounds sure"
+          ],
+          "SAY: Some of you may remember because-clauses from Term 3. Today they become a weapon."
+        ],
+        "trap": [
+          "saying the first is better because it's polite.",
+          "Fix: ask which one sounds like the writer believes it. Student re-chooses."
+        ],
+        "prep": "Launch reconnects Term 3 complex sentences (Week 7, main and subordinate clauses) to persuasion. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "modality",
+      "meaning": "How sure or how strong a word makes an idea sound.",
+      "example": "might (not sure) - should (fairly sure) - must (very sure)",
+      "pictogram": "thermometer",
+      "notes": {
+        "answer": "how sure or how strong a word makes an idea sound",
+        "beats": [
+          "POINT to the word. SAY: Modality. Say it with me. Modality.",
+          [
+            "SAY: Modality is how sure a word makes you sound.",
+            "Like a thermometer: might is cool, must is boiling hot."
+          ],
+          [
+            "ASK: Which is hotter: We could act, or We must act?",
+            "5 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: must"
+          ]
+        ],
+        "trap": [
+          "thinking more exclamation marks means higher modality.",
+          "Fix: cover the punctuation, ask which word is sure. Student points to the modal."
+        ],
+        "prep": "The one technical word today, used beside its plain meaning: how sure it sounds.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "I Do",
+      "title": "Turn up the heat",
+      "lines": [
+        "Weak: Maybe zoos could stop keeping polar bears.",
+        "Strong: Zoos must stop keeping polar bears.",
+        "Punch: Because polar bears roam huge distances, zoos must stop keeping them."
+      ],
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Strength",
+            "Words"
+          ],
+          [
+            "Low",
+            "might, could, perhaps"
+          ],
+          [
+            "Medium",
+            "should, probably, likely"
+          ],
+          [
+            "High",
+            "must, will, certainly"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "swap low words for high ones, then put the reason first with a comma",
+        "beats": [
+          [
+            "POINT to Weak.",
+            "SAY: Maybe and could. I don't sound like I believe it.",
+            "I'll cross out maybe and swap could for must."
+          ],
+          [
+            "POINT to Strong.",
+            "SAY: Zoos must stop. Now I sound sure."
+          ],
+          [
+            "POINT to Punch.",
+            "SAY: Now the reason goes first: Because polar bears roam huge distances, comma.",
+            "The reader gets the why before the claim lands."
+          ],
+          [
+            "ASK: Where does my comma go in the punch sentence?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: after distances, at the end of the because part"
+          ]
+        ],
+        "trap": [
+          "keeping maybe and adding must: Maybe zoos must...",
+          "Fix: student crosses out every low word first, then rereads."
+        ],
+        "stretch": "Use a high word that isn't must: will, need to.",
+        "help": "Point to the ladder and swap one word at a time.",
+        "prep": "The model. Critical feature: the modal word sets how sure you sound; louder is not stronger.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Low, medium or high?",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "find the modal word together, then place it on the ladder",
+      "followUp": "cold call one student: which word told you?",
+      "items": [
+        {
+          "text": "People might want to think about the Arctic.",
+          "answer": "1 - low (might)",
+          "expect": "1 finger"
+        },
+        {
+          "text": "We must protect polar bears now.",
+          "answer": "3 - high (must)",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "Governments should fund more Arctic research.",
+          "answer": "2 - medium (should)",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Perhaps tourists could stay further away.",
+          "answer": "1 - low (perhaps, could)",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Without a doubt, plastic is harming our oceans.",
+          "answer": "3 - high (without a doubt)",
+          "expect": "3 fingers",
+          "say": "High. No must here, but without a doubt sounds certain. Tick or fix."
+        },
+        {
+          "text": "Polar bears are SO amazing!!!",
+          "answer": "1 or 2 - loud, but it doesn't claim anything sure",
+          "expect": "low fingers. ACCEPT: 2",
+          "say": "Loud is not strong. There's no sure claim here. Tick or fix."
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger low, two medium, three high.",
+          "Find the word that shows how sure the writer is."
+        ],
+        "trap": [
+          "judging by capitals and exclamation marks.",
+          "Fix: cover the punctuation, student finds the modal word."
+        ],
+        "stretch": "Rewrite the low ones as high.",
+        "help": "Underline the modal word with a finger first.",
+        "prep": "Guided sort. Edge cases: a phrase (without a doubt) and a loud sentence with no modal. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which is the strongest position statement?",
+      "options": [
+        {
+          "text": "I think maybe zoos are not that great.",
+          "misconception": "keeps the low words; vague about what should happen"
+        },
+        {
+          "text": "Zoos must stop keeping polar bears."
+        },
+        {
+          "text": "Zoos are really, really, really bad!!!",
+          "misconception": "mistakes loud for strong; no clear position"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - zoos must stop keeping polar bears",
+        "beats": [
+          "SAY: Same topic, three writers. Who sounds sure and clear?",
+          [
+            "ASK: Which is the strongest position statement?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what does C forget to say?",
+            "Less -> read each aloud calmly, ask which is sure, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. It says exactly what should happen, and must makes it sure."
+          ]
+        ],
+        "trap": [
+          "pointing to C because it sounds passionate.",
+          "Fix: ask what should happen, according to C? Student finds nothing."
+        ],
+        "prep": "First decision point, new sentences. Under 80% means a second ladder round before the upgrade round.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Upgrade it",
+      "routine": "boards",
+      "thinkTime": 30,
+      "pivot": "cross out the low words together, then pick from the ladder",
+      "followUp": "cold call two boards: read yours like you mean it",
+      "items": [
+        {
+          "text": "Maybe kids could pick up a bit of rubbish.",
+          "answer": "Every student must pick up rubbish they see.",
+          "expect": "a must or will statement saying who does what"
+        },
+        {
+          "text": "Perhaps people might use less plastic.",
+          "answer": "We should stop using single-use plastic.",
+          "expect": "should or must, and what exactly to stop"
+        },
+        {
+          "text": "It could be good to save some energy.",
+          "answer": "Families must switch off lights to save energy.",
+          "expect": "who must do what"
+        },
+        {
+          "text": "Scientists might possibly need more money.",
+          "answer": "Governments must give Arctic scientists more funding.",
+          "expect": "who must give what to whom"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Here are four wishy-washy claims.",
+          "Upgrade each one so it sounds sure and says who must do what."
+        ],
+        "trap": [
+          "changing the word but keeping it vague, like People must do stuff.",
+          "Fix: ask who must do what? Student names both."
+        ],
+        "stretch": "Add a because-clause at the front.",
+        "help": "Keep the sentence, swap only the low word for must.",
+        "prep": "Guided upgrading on new claims. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Put the reason first",
+      "routine": "boards",
+      "thinkTime": 30,
+      "pivot": "say it aloud with a pause where the comma goes",
+      "followUp": "cold call one board: where is your comma and why?",
+      "items": [
+        {
+          "text": "We must cut pollution. Polar bears are losing their ice.",
+          "answer": "Because polar bears are losing their ice, we must cut pollution.",
+          "expect": "Because..., we must cut pollution."
+        },
+        {
+          "text": "Schools should plant more trees. Trees cool the playground.",
+          "answer": "Because trees cool the playground, schools should plant more of them.",
+          "expect": "Because trees cool the playground, schools should..."
+        },
+        {
+          "text": "Everyone must recycle. Landfill is filling up fast.",
+          "answer": "Because landfill is filling up fast, everyone must recycle.",
+          "expect": "Because landfill is filling up fast, everyone must recycle."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Some of you may remember this from Term 3.",
+          "Join the two sentences: reason first, comma, then the claim."
+        ],
+        "trap": [
+          "leaving out the comma after the because-part.",
+          "Fix: student reads it aloud, pauses, adds the comma at the pause."
+        ],
+        "stretch": "Try Since or Unless instead of Because.",
+        "help": "Write Because first, then copy the reason sentence after it.",
+        "prep": "Retrieval of Term 3 Week 7 subordinate clauses, now used for effect. SC3.",
+        "tag": "[We Do | Supported application | SC3 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Turn up the heat on your issue",
+      "task": "Work through your Worksheet: rate, upgrade, fix, then write your own strong opening.",
+      "where": "Main sheet",
+      "frame": "Because ___, we must ___.",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Low",
+            "Medium",
+            "High"
+          ],
+          [
+            "might, could",
+            "should, probably",
+            "must, will"
+          ]
+        ]
+      },
+      "visualLabel": "The ladder",
+      "notes": {
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Use yesterday's issue. Write it weak first, so you can feel the difference."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Check the punch sentence has a comma after the because-part.",
+          [
+            "TIME 15 minutes.",
+            "At 10 minutes, read two punch sentences aloud for the Issues Wall."
+          ]
+        ],
+        "trap": [
+          "a strong claim, then a paragraph full of maybe and might.",
+          "Fix: student circles every low word in the paragraph and upgrades it."
+        ],
+        "stretch": "Extension: modality for different readers, and a fair concession.",
+        "help": "Supported Worksheet: a word sort, first answers done, the because frame.",
+        "prep": "Independent application on each student's own issue. The opening paragraph is reused when drafting in Week 4. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in three versions of the student's position and a strong opening paragraph"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Perhaps the canteen might sell a bit less junk food.",
+        "Upgrade it. Make it sure and put a reason first."
+      ],
+      "notes": {
+        "answer": "e.g. Because junk food makes us sluggish, the canteen must stop selling it",
+        "beats": [
+          "SAY: A new weak claim. Show me you can turn up the heat.",
+          [
+            "ASK: Upgrade this claim, with the reason first.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: Because..., the canteen must..."
+          ],
+          "RECORD who keeps a low word or loses the comma. Tomorrow's warm-up group."
+        ],
+        "trap": [
+          "keeping perhaps or might.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 (upgrade) with SC3 (fronted reason) on a new topic. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Read your punch sentence to your partner like a news reader. Did it sound sure?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for a high modal word and a reason first",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can upgrade a weak opinion?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Read your punch sentence to your partner like a news reader.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: Because..., we must..."
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Tomorrow's warm-up group comes from both. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ],
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: rate modality, upgrade weak claims, fix a comma, then write your own strong opening.",
+      "title": "Say It Like You Mean It",
+      "subtitle": "Strong words, sure claims, reasons first.",
+      "sections": [
+        {
+          "title": "How sure is it?",
+          "columns": 1,
+          "example": {
+            "prompt": "We might plant more trees.",
+            "steps": [
+              "Find the modal word",
+              "Place it on the ladder",
+              "Write low, medium or high"
+            ],
+            "answer": "might = low"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Find the modal word. Is it low, medium or high?",
+              "columns": [
+                "Sentence",
+                "Modal word",
+                "Low, medium or high?"
+              ],
+              "rows": [
+                [
+                  "People should switch off lights.",
+                  "",
+                  ""
+                ],
+                [
+                  "We will win this fight.",
+                  "",
+                  ""
+                ],
+                [
+                  "Perhaps the council could help.",
+                  "",
+                  ""
+                ],
+                [
+                  "Students must wear hats outside.",
+                  "",
+                  ""
+                ],
+                [
+                  "It is likely to rain.",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "People should switch off lights.",
+                  "should",
+                  "medium"
+                ],
+                [
+                  "We will win this fight.",
+                  "will",
+                  "high"
+                ],
+                [
+                  "Perhaps the council could help.",
+                  "perhaps, could",
+                  "low"
+                ],
+                [
+                  "Students must wear hats outside.",
+                  "must",
+                  "high"
+                ],
+                [
+                  "It is likely to rain.",
+                  "likely",
+                  "medium"
+                ]
+              ],
+              "widths": [
+                2,
+                1,
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Turn up the heat",
+          "columns": 1,
+          "example": {
+            "prompt": "Maybe we could recycle more.",
+            "steps": [
+              "Cross out the low words",
+              "Choose a high word",
+              "Say who must do what"
+            ],
+            "answer": "Our school must recycle every bottle and can."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each weak claim so it sounds sure.",
+              "columns": [
+                "Weak",
+                "Strong"
+              ],
+              "rows": [
+                [
+                  "I guess bikes are sort of good.",
+                  ""
+                ],
+                [
+                  "Maybe the canteen could sell fruit.",
+                  ""
+                ],
+                [
+                  "Perhaps we might plant a garden.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "I guess bikes are sort of good.",
+                  "Every family should ride bikes more often."
+                ],
+                [
+                  "Maybe the canteen could sell fruit.",
+                  "The canteen must sell fresh fruit every day."
+                ],
+                [
+                  "Perhaps we might plant a garden.",
+                  "Our school will plant a vegetable garden."
+                ]
+              ],
+              "widths": [
+                1,
+                1.4
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "Reason first",
+          "columns": 2,
+          "example": {
+            "prompt": "Join: We must save water. Dams are low.",
+            "steps": [
+              "Start with Because",
+              "Add the reason, then a comma",
+              "Finish with the claim"
+            ],
+            "answer": "Because dams are low, we must save water."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which sentence has the comma in the right place?",
+              "options": [
+                "Because, bins are full we recycle.",
+                "Because bins are full, we recycle.",
+                "Because bins are full we, recycle."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "The comma goes at the end of the because-part, where you pause."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Lily joined two sentences. Find her mistake and fix it.",
+              "work": [
+                "Polar bears are hungry because. We must act."
+              ],
+              "answer": "The because-part is broken off. Fix: Because polar bears are hungry, we must act."
+            }
+          ]
+        },
+        {
+          "title": "Your strong opening",
+          "columns": 1,
+          "example": {
+            "prompt": "Issue: should zoos keep polar bears?",
+            "steps": [
+              "Write it weak, then strong",
+              "Write the punch: Because..., ...",
+              "Add 3-4 sentences to open your argument"
+            ],
+            "answer": "Because polar bears roam huge distances, zoos must stop keeping them."
+          },
+          "items": [
+            {
+              "prompt": "Write your position three ways: weak, strong and punch. Then write a 4-5 sentence opening.",
+              "answer": "Three versions, then an opening with a high modal word and a reason.",
+              "lines": 7
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: choose modality to suit the reader, and use a fair concession.",
+      "title": "Modality Masters",
+      "subtitle": "The right strength for the right reader.",
+      "sections": [
+        {
+          "title": "Right word, right reader",
+          "columns": 1,
+          "example": {
+            "prompt": "Claim: kids need more play time. Reader: the principal.",
+            "steps": [
+              "Who is reading?",
+              "Too strong sounds rude; too weak sounds unsure",
+              "Choose and write"
+            ],
+            "answer": "We strongly believe students should have more play time."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write the claim for each reader. Choose your modal word carefully.",
+              "columns": [
+                "Reader",
+                "Claim: we need a school garden"
+              ],
+              "rows": [
+                [
+                  "the principal",
+                  ""
+                ],
+                [
+                  "your best friend",
+                  ""
+                ],
+                [
+                  "the local council",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "the principal",
+                  "We believe our school should build a garden."
+                ],
+                [
+                  "your best friend",
+                  "We have to get a garden!"
+                ],
+                [
+                  "the local council",
+                  "The council must fund school gardens now."
+                ]
+              ],
+              "widths": [
+                1,
+                2.4
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "Strong, but fair",
+          "columns": 1,
+          "example": {
+            "prompt": "Zoos must stop keeping polar bears, although some zoos do help research.",
+            "steps": [
+              "High modality for your claim",
+              "Medium modality for the other side",
+              "Join with although or while"
+            ],
+            "answer": "Must for my claim; do help (medium) for the fair point."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which writer sounds sure AND fair?",
+              "options": [
+                "Zoos must close, and anyone who disagrees is wrong.",
+                "Zoos should change, although some do help research."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "The second: sure about the change, fair to the other side."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Sam mixed his modal words. Find the problem and fix it.",
+              "work": [
+                "Zoos must maybe close their polar bear areas."
+              ],
+              "answer": "Must and maybe fight each other. Fix: Zoos must close their polar bear areas."
+            },
+            {
+              "kind": "open",
+              "prompt": "Write a paragraph on your issue: high modality for your claim, medium for one fair point.",
+              "answer": "A claim with must or will, a fair point with might or some, joined smoothly.",
+              "lines": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: a word sort, a first answer done and a sentence frame.",
+      "title": "Strong Words Helper",
+      "subtitle": "Use the ladder: might is low, must is high.",
+      "sections": [
+        {
+          "title": "Low or high?",
+          "columns": 1,
+          "example": {
+            "prompt": "Is must low or high?",
+            "steps": [
+              "Say the word",
+              "Does it sound sure?",
+              "Sure means high"
+            ],
+            "answer": "must = high"
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "Sort the words: LOW or HIGH.",
+              "cards": [
+                "might",
+                "must",
+                "could",
+                "will",
+                "perhaps",
+                "definitely"
+              ],
+              "groups": [
+                "LOW",
+                "HIGH"
+              ],
+              "answer": {
+                "LOW": [
+                  "might",
+                  "could",
+                  "perhaps"
+                ],
+                "HIGH": [
+                  "must",
+                  "will",
+                  "definitely"
+                ]
+              },
+              "hint": "Low words sound unsure."
+            }
+          ]
+        },
+        {
+          "title": "Swap the word",
+          "columns": 1,
+          "example": {
+            "prompt": "We could save water.",
+            "steps": [
+              "Find the low word",
+              "Swap it for must",
+              "Read it again"
+            ],
+            "answer": "We must save water."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Swap the low word for must.",
+              "columns": [
+                "Weak",
+                "Strong"
+              ],
+              "rows": [
+                [
+                  "We might help bears.",
+                  "We must help bears."
+                ],
+                [
+                  "People could recycle.",
+                  ""
+                ],
+                [
+                  "Kids might walk more.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "We might help bears.",
+                  "We must help bears."
+                ],
+                [
+                  "People could recycle.",
+                  "People must recycle."
+                ],
+                [
+                  "Kids might walk more.",
+                  "Kids must walk more."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                1
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "Reason first",
+          "columns": 1,
+          "example": {
+            "prompt": "Bins are full. We must recycle.",
+            "steps": [
+              "Write Because",
+              "Add the reason and a comma",
+              "Add the claim"
+            ],
+            "answer": "Because bins are full, we must recycle."
+          },
+          "items": [
+            {
+              "prompt": "Finish the frame for your issue: Because ___, we must ___.",
+              "answer": "A because-part, a comma, then a must claim.",
+              "lines": 3,
+              "hint": "Use your Issue Card from Session 1."
+            },
+            {
+              "prompt": "Write one more sentence that says why it matters.",
+              "answer": "Any clear reason.",
+              "lines": 2,
+              "hint": "Who will it help?"
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ]
+}

@@ -1,0 +1,884 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 8,
+    "session": 4,
+    "variant": 4,
+    "minutes": 60,
+    "title": "The Heart of the Speech",
+    "subtitle": "Term 4 Week 8, Session 4",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 8 Session 4",
+    "outputFolder": "T4W8_Lit_S4_Heart_Of_The_Speech",
+    "fileName": "Session 4 - The Heart of the Speech.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY10 creating spoken persuasive texts; VC2E5LE04 language that evokes emotion; VC2E5LA07 cohesion with signposts",
+      "shape": "model, guide, apply: the teacher drafts arguments 2 and 3 with a true small story, students zoom big claims into small stories, then draft the middle of their own speech",
+      "criticalFeature": "one true small story beats ten big claims: a who, a where, a what happened",
+      "decisionPoints": [
+        "the Big claim or small story? round",
+        "the choice check: the moment that moves us",
+        "the exit board: a small story for a new claim"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: Sell it, with a story they can see.",
+      "catchUp": "Students without an S3 opening draft argument 3 with a story only."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "S2 proof and S3 opening (in the speech folder)",
+      "Persuasive Speaker's Toolkit",
+      "Mini-whiteboards and markers"
+    ],
+    "routineIcons": [
+      "Fingers 1 or 2",
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "A small story: who, where, what happened, link back",
+      "Signposts: First... On top of that... But most importantly..."
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: spot small stories, zoom in on big claims, sort the signposts, then draft the middle of your speech.",
+      "title": "The Heart of the Speech",
+      "subtitle": "Zoom in. Make them feel it.",
+      "sections": [
+        {
+          "title": "Big claim or small story?",
+          "columns": 3,
+          "example": {
+            "prompt": "Last week, a magpie got stuck in a chip packet.",
+            "steps": [
+              "Is there a who?",
+              "Is there a where or when?",
+              "Did something happen?"
+            ],
+            "answer": "A small story: a who, a when and a happening."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Plastic is a huge problem everywhere.",
+              "options": [
+                "big claim",
+                "small story"
+              ],
+              "answer": 0
+            },
+            {
+              "kind": "choice",
+              "prompt": "On Tuesday, Zara's lunch bag blew into the creek.",
+              "options": [
+                "big claim",
+                "small story"
+              ],
+              "answer": 1
+            },
+            {
+              "kind": "choice",
+              "prompt": "Lots of kids get hurt crossing roads.",
+              "options": [
+                "big claim",
+                "small story"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "title": "Zoom in",
+          "columns": 1,
+          "example": {
+            "prompt": "Big claim: kids get sunburnt.",
+            "steps": [
+              "Who?",
+              "Where and when?",
+              "What happened?"
+            ],
+            "answer": "Sam waited for pickup in the sun. Forty minutes. Burnt shoulders."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Turn each big claim into a small story.",
+              "columns": [
+                "Big claim",
+                "Small story (who, where, what happened)"
+              ],
+              "rows": [
+                [
+                  "Animals suffer when we litter.",
+                  ""
+                ],
+                [
+                  "Screens keep kids awake.",
+                  ""
+                ],
+                [
+                  "Crossing the road here is dangerous.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Animals suffer when we litter.",
+                  "At the beach, my brother found a gull tangled in fishing line."
+                ],
+                [
+                  "Screens keep kids awake.",
+                  "Last night I watched one more video. Then it was 11 pm."
+                ],
+                [
+                  "Crossing the road here is dangerous.",
+                  "Yesterday a car missed my friend by a metre at the gate."
+                ]
+              ],
+              "widths": [
+                1,
+                1.8
+              ],
+              "rowH": 44
+            }
+          ]
+        },
+        {
+          "title": "Signposts",
+          "columns": 1,
+          "example": {
+            "prompt": "Signposts help the ear follow.",
+            "steps": [
+              "Starts an argument?",
+              "Adds another?",
+              "Saves the best?"
+            ],
+            "answer": "First, then On top of that, then But most importantly."
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "Sort the signposts: FIRST, MIDDLE or LAST.",
+              "cards": [
+                "First,",
+                "To start with,",
+                "On top of that,",
+                "Next,",
+                "But most importantly,",
+                "Finally, and this matters most,"
+              ],
+              "groups": [
+                "FIRST",
+                "MIDDLE",
+                "LAST"
+              ],
+              "answer": {
+                "FIRST": [
+                  "First,",
+                  "To start with,"
+                ],
+                "MIDDLE": [
+                  "On top of that,",
+                  "Next,"
+                ],
+                "LAST": [
+                  "But most importantly,",
+                  "Finally, and this matters most,"
+                ]
+              },
+              "hint": "Which ones say the best is coming?"
+            }
+          ]
+        },
+        {
+          "title": "My middle",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "Signpost",
+              "Argument and proof",
+              "A small story"
+            ],
+            "answer": "On top of that, our yard hit 41 degrees. But most importantly... Sam's burnt shoulders."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write argument 2 with a signpost and its proof.",
+              "answer": "A signpost, argument 2 and its proof, in short sentences.",
+              "lines": 4
+            },
+            {
+              "kind": "open",
+              "prompt": "Write argument 3, your strongest, with a small true story.",
+              "answer": "But most importantly... argument 3 with a who, where and what happened.",
+              "lines": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: add senses to small stories, then retell your story to change the feeling.",
+      "title": "Paint the Picture",
+      "subtitle": "Help them see it, hear it, feel it.",
+      "sections": [
+        {
+          "title": "Add the senses",
+          "columns": 1,
+          "example": {
+            "prompt": "Sam waited for pickup in the sun.",
+            "steps": [
+              "See",
+              "Hear or feel",
+              "Rewrite"
+            ],
+            "answer": "Sam waited by the gate. No shade. The bench burnt through his shorts."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Add a sense to each small story.",
+              "columns": [
+                "Small story",
+                "With senses"
+              ],
+              "rows": [
+                [
+                  "A gull was tangled in fishing line.",
+                  ""
+                ],
+                [
+                  "The yard was hot at lunch.",
+                  ""
+                ],
+                [
+                  "A car nearly hit my friend.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "A gull was tangled in fishing line.",
+                  "It flapped and squawked, the line cutting its leg."
+                ],
+                [
+                  "The yard was hot at lunch.",
+                  "The slide burnt my legs. The air shimmered."
+                ],
+                [
+                  "A car nearly hit my friend.",
+                  "Brakes screeched. My heart thumped. One metre."
+                ]
+              ],
+              "widths": [
+                1,
+                1.6
+              ],
+              "rowH": 44
+            }
+          ]
+        },
+        {
+          "title": "Change the feeling",
+          "columns": 1,
+          "example": {
+            "prompt": "Sad: the gull couldn't fly.",
+            "steps": [
+              "Same story",
+              "New ending",
+              "Hopeful feeling"
+            ],
+            "answer": "Hopeful: we cut the line, and it flew away. That's what action does."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Retell your own small story twice: once to make us worried, once to make us hopeful.",
+              "answer": "Two versions of the student's story with clearly different feelings.",
+              "lines": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a zoom-in done and a story frame.",
+      "title": "Story Helper",
+      "subtitle": "Who. Where. What happened.",
+      "sections": [
+        {
+          "title": "Claim or story?",
+          "columns": 3,
+          "example": {
+            "prompt": "A magpie got stuck in a chip packet.",
+            "steps": [
+              "Is there a who?",
+              "Yes, a magpie",
+              "Story"
+            ],
+            "answer": "story"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Plastic is bad.",
+              "options": [
+                "claim",
+                "story"
+              ],
+              "answer": 0,
+              "hint": "Is there a who?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Zara's bag blew into the creek.",
+              "options": [
+                "claim",
+                "story"
+              ],
+              "answer": 1,
+              "hint": "Did something happen?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Roads are dangerous.",
+              "options": [
+                "claim",
+                "story"
+              ],
+              "answer": 0,
+              "hint": "Is there a who?"
+            }
+          ]
+        },
+        {
+          "title": "Zoom in",
+          "columns": 1,
+          "example": {
+            "prompt": "Kids get sunburnt.",
+            "steps": [
+              "Who: Sam",
+              "Where: at pickup",
+              "What: burnt shoulders"
+            ],
+            "answer": "Sam got burnt waiting at pickup."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in the story.",
+              "columns": [
+                "Big claim",
+                "Who",
+                "Where",
+                "What happened"
+              ],
+              "rows": [
+                [
+                  "Litter hurts animals.",
+                  "a gull",
+                  "the beach",
+                  "tangled in line"
+                ],
+                [
+                  "Screens keep us awake.",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "The road is dangerous.",
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Litter hurts animals.",
+                  "a gull",
+                  "the beach",
+                  "tangled in line"
+                ],
+                [
+                  "Screens keep us awake.",
+                  "me",
+                  "in bed",
+                  "awake till 11"
+                ],
+                [
+                  "The road is dangerous.",
+                  "my friend",
+                  "the gate",
+                  "a car nearly hit her"
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                0.7,
+                0.7,
+                1
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "My story",
+          "columns": 1,
+          "example": {
+            "prompt": "Shade trees",
+            "steps": [
+              "One day, ___.",
+              "It was ___.",
+              "That's why ___."
+            ],
+            "answer": "One day, Sam waited in the sun. It was 41 degrees. That's why we need trees."
+          },
+          "items": [
+            {
+              "prompt": "One day, ___. It was ___. That's why ___.",
+              "answer": "A small true story linked to the claim.",
+              "lines": 5,
+              "hint": "Think of something that really happened."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open S4. One line: today we write the part of the speech they will remember."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Students need their S2 proof and S3 opening."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to use a small true story to make an audience feel our argument.",
+      "successCriteria": [
+        "I can tell a big claim from a small story.",
+        "I can write my middle arguments with signposts and a small story.",
+        "I can add senses so the audience can picture it."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Big claims tell. Small stories make people feel."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Which one do you feel?",
+      "lines": [
+        "1: Millions of animals are harmed by plastic.",
+        "2: Last week a magpie got its head stuck in a chip packet. It couldn't eat."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "globe",
+            "label": "big claim"
+          },
+          {
+            "name": "bird",
+            "label": "small story"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "2 - you can picture it",
+        "beats": [
+          "SAY: Two lines. Same message.",
+          [
+            "ASK: Which one do you feel more? 1 or 2?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: Why does the smaller one hit harder?",
+            "15 sec. Turn and tell, partner B first.",
+            "EXPECT: I can see it; it's one bird; it's real"
+          ],
+          "SAY: Millions is too big to picture. One magpie, you can see."
+        ],
+        "trap": [
+          "thinking bigger numbers always persuade more.",
+          "Fix: ask which one could you picture?"
+        ],
+        "prep": "Low-entry launch. Severn and Malala both used small true moments. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "anecdote",
+      "meaning": "A short true story told to make a point.",
+      "example": "Sam's burnt shoulders are my anecdote.",
+      "pictogram": "openBook",
+      "notes": {
+        "answer": "a short true story told to make a point",
+        "beats": [
+          "POINT to the word. SAY: Anecdote. Say it with me. Anecdote.",
+          [
+            "SAY: A short true story told to make a point.",
+            "SAY: Sam's burnt shoulders are my anecdote."
+          ],
+          [
+            "ASK: What makes an anecdote different from a big claim?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: a who, a where, something that happened"
+          ]
+        ],
+        "trap": [
+          "making up a dramatic story.",
+          "Fix: say true and small beats invented and huge."
+        ],
+        "prep": "Anecdote is today's sell-it move.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Writing the heart of my speech",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Part",
+            "My shade trees speech"
+          ],
+          [
+            "Argument 2",
+            "On top of that, shade keeps us cool. In February our yard hit 41 degrees."
+          ],
+          [
+            "Argument 3",
+            "But most importantly, shade protects our skin. Shade cuts UV by up to 75%."
+          ],
+          [
+            "Anecdote",
+            "Last summer, Sam waited for pickup in the sun. Forty minutes. Burnt shoulders."
+          ],
+          [
+            "Link back",
+            "One tree would have stopped that."
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "signpost, argument, proof, then a small story that links back",
+        "beats": [
+          [
+            "POINT to the signposts.",
+            "SAY: On top of that. But most importantly. The ear hears the best is coming."
+          ],
+          [
+            "POINT to Anecdote.",
+            "SAY: I zoom in. One kid. One place. What happened.",
+            "Short sentences, so they can see it."
+          ],
+          [
+            "POINT to Link back.",
+            "SAY: The story must point back to my claim, or it's just a story."
+          ],
+          [
+            "ASK: What three things does my anecdote have?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: who, where, what happened"
+          ]
+        ],
+        "trap": [
+          "a story that never links back to the claim.",
+          "Fix: ask so what? Student adds the link-back line."
+        ],
+        "stretch": "Add a sense: what Sam felt or heard.",
+        "help": "Use the frame: One day... It was... That's why...",
+        "prep": "Model with a real or realistic small moment from your own school. Critical feature: one small true story.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Big claim or small story?",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "ask is there a who, a where and a happening?",
+      "followUp": "cold call one student: which detail tells you?",
+      "items": [
+        {
+          "text": "Pollution is ruining the planet.",
+          "answer": "1 - big claim",
+          "expect": "1 finger"
+        },
+        {
+          "text": "At swimming, Noah found a straw in the pool filter.",
+          "answer": "2 - small story",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Many families struggle to afford food.",
+          "answer": "1 - big claim",
+          "expect": "1 finger"
+        },
+        {
+          "text": "My grandpa planted a tree the year I was born.",
+          "answer": "2 - small story",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Last Friday our class bin overflowed by lunch.",
+          "answer": "2 - small story",
+          "expect": "2 fingers"
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger: big claim. Two: small story."
+        ],
+        "trap": [
+          "calling any sad sentence a story.",
+          "Fix: ask who is it about? When did it happen?"
+        ],
+        "stretch": "Zoom one big claim into a story.",
+        "help": "Look for a name and a day.",
+        "prep": "Guided practice. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which moment moves us most?",
+      "options": [
+        {
+          "text": "Lots of people get sunburnt, which is bad.",
+          "misconception": "a big claim; nothing to picture"
+        },
+        {
+          "text": "Sam waited in the sun for forty minutes. His shoulders blistered."
+        },
+        {
+          "text": "It is very, very, very sad and terrible.",
+          "misconception": "tells us to feel; shows nothing"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - a who, a where and what happened",
+        "beats": [
+          "SAY: Three tries at the emotional moment.",
+          [
+            "ASK: Which moment moves us most?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what can you picture in B?",
+            "Less -> read each, ask what can you see? re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. We can see Sam. We don't need to be told it's sad."
+          ]
+        ],
+        "trap": [
+          "pointing to C because it has the most feeling words.",
+          "Fix: ask what can you see in C? Nothing."
+        ],
+        "prep": "Decision point before drafting. Under 80% means one more zoom-in done together.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Zoom in",
+      "routine": "boards",
+      "thinkTime": 40,
+      "pivot": "write a name, then a place, then one thing that happened",
+      "followUp": "cold call one board: read it like a speaker",
+      "items": [
+        {
+          "text": "Big claim: bullying hurts.",
+          "answer": "e.g. Mia ate lunch alone for a week. Nobody asked why.",
+          "expect": "a who, a where, a happening"
+        },
+        {
+          "text": "Big claim: our oceans are full of rubbish.",
+          "answer": "e.g. At Torquay, I picked up 40 bottle caps in ten minutes.",
+          "expect": "a who, a where, a happening"
+        },
+        {
+          "text": "Big claim: kids need more sleep.",
+          "answer": "e.g. On Monday, Leo fell asleep in maths. Head on the desk.",
+          "expect": "a who, a where, a happening"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Turn the big claim into a small story. Two short sentences."
+        ],
+        "trap": [
+          "repeating the big claim with a name added.",
+          "Fix: ask what happened? Student adds one action."
+        ],
+        "stretch": "Add a sense.",
+        "help": "Use: One day, ___ was at ___ and ___.",
+        "prep": "Guided zoom-ins. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Draft the middle",
+      "task": "Work through your Worksheet. Finish by drafting arguments 2 and 3 of your speech, with signposts and a small true story.",
+      "where": "Worksheet",
+      "frame": "On top of that, ___. But most importantly, ___. One day, ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "openBook",
+          "heart",
+          "microphone"
+        ],
+        "labels": false
+      },
+      "visualLabel": "One small true story",
+      "notes": {
+        "answer": "arguments 2 and 3 with signposts, proof and a small true story",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Arguments 2 and 3, with signposts and your small true story."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: who is in your story? What happened? Does it link back?",
+          [
+            "ASK: Read your story to your partner. What could they picture?",
+            "40 sec each. Turn and tell, partner A first.",
+            "EXPECT: a who, a where, a happening"
+          ]
+        ],
+        "trap": [
+          "a story with no link back to the argument.",
+          "Fix: student adds That's why... at the end."
+        ],
+        "stretch": "Extension: add the senses, then change the feeling.",
+        "help": "Supported Worksheet: picture-clue choices, a zoom-in done, a frame.",
+        "prep": "Independent drafting; S5 writes the finish and cue cards. SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in the student's drafted arguments 2 and 3 with an anecdote"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Big claim: junk food ads target kids.",
+        "Write a small story that makes an audience feel it: who, where, what happened."
+      ],
+      "notes": {
+        "answer": "e.g. On Saturday, my sister begged for nuggets after one TV ad.",
+        "beats": [
+          "SAY: A new big claim. Zoom it in.",
+          [
+            "ASK: Write a small story: who, where, what happened.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a name, a place, a happening"
+          ],
+          "RECORD who writes another big claim. Conference list for S5."
+        ],
+        "trap": [
+          "another big claim instead of a story.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new claim. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Who in your speech will your audience picture?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - a name from their story",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that your story links back to your argument?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Who in your speech will your audience picture?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: a name from their story"
+          ]
+        ],
+        "prep": "Drafts go in the speech folder for S5. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

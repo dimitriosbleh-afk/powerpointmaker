@@ -1,0 +1,1157 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 2,
+    "session": 2,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Words with Power",
+    "subtitle": "Term 4 Week 2, Session 2",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 2 Session 2",
+    "outputFolder": "T4W2_Lit_S2_Words_With_Power",
+    "fileName": "Session 2 - Words with Power.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA08 vocabulary for precision of meaning; VC2E5LY04 building and spelling new words from base words and suffixes; VC2E5LY05 how a suffix changes the grammatical form of a word",
+      "shape": "upgrade then build: swap plain words for powerful true ones, then build word families with suffixes, because students' writing is flat when every noun and verb is the first one that comes to mind",
+      "criticalFeature": "the right word changes how the reader feels, but it must stay true or the reader stops trusting you",
+      "decisionPoints": [
+        "the Swap it round",
+        "the choice check: powerful and true",
+        "the exit board: a new plain sentence upgraded"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Today: sell it with words that are powerful and true.",
+      "catchUp": "Missed Session 1? Say: sell it sentences make the reader feel. Give the Power Word Bank and start at the Swap it round."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Writing books with the Week 1 opening and rebuttal paragraphs",
+      "Dictionaries or thesauruses for each table"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 or 2",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Three columns on the board: Plain | Powerful and true | Too far",
+      "A word family web for protect, to build live"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: feel the difference, sort true from too far, swap plain words, build word families, then upgrade your own paragraph.",
+      "title": "Words with Power",
+      "subtitle": "Powerful words, still true.",
+      "sections": [
+        {
+          "title": "Feel the difference",
+          "columns": 3,
+          "example": {
+            "prompt": "The storm was ___. (big / ferocious)",
+            "steps": [
+              "Read both words in the sentence",
+              "Which makes you feel more?",
+              "Is it still true?"
+            ],
+            "answer": "ferocious"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "The forest was ___.",
+              "options": [
+                "cut down",
+                "destroyed"
+              ],
+              "answer": 1
+            },
+            {
+              "kind": "choice",
+              "prompt": "The bear was ___.",
+              "options": [
+                "thin",
+                "starving"
+              ],
+              "answer": 1
+            },
+            {
+              "kind": "choice",
+              "prompt": "Factories ___ smoke.",
+              "options": [
+                "make",
+                "pump out"
+              ],
+              "answer": 1
+            }
+          ]
+        },
+        {
+          "title": "Powerful and true, or too far?",
+          "columns": 1,
+          "example": {
+            "prompt": "'Litter is choking our creek.'",
+            "steps": [
+              "Does it make me feel?",
+              "Could it be checked?",
+              "Both? Powerful and true"
+            ],
+            "answer": "Powerful and true"
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "Sort the cards.",
+              "cards": [
+                "Rubbish chokes our creeks.",
+                "Every animal on Earth is dying!",
+                "Plastic lasts hundreds of years.",
+                "Cars are murdering the planet!",
+                "Heatwaves are getting longer.",
+                "Nobody cares about nature anymore."
+              ],
+              "groups": [
+                "POWERFUL AND TRUE",
+                "TOO FAR"
+              ],
+              "answer": {
+                "POWERFUL AND TRUE": [
+                  "Rubbish chokes our creeks.",
+                  "Plastic lasts hundreds of years.",
+                  "Heatwaves are getting longer."
+                ],
+                "TOO FAR": [
+                  "Every animal on Earth is dying!",
+                  "Cars are murdering the planet!",
+                  "Nobody cares about nature anymore."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Swap it",
+          "columns": 1,
+          "example": {
+            "prompt": "The river is dirty.",
+            "steps": [
+              "Find the plain word",
+              "Picture it",
+              "Swap for a true, powerful word"
+            ],
+            "answer": "The river is polluted."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Swap the plain word for a powerful, true one.",
+              "columns": [
+                "Plain",
+                "Powerful and true"
+              ],
+              "rows": [
+                [
+                  "The reef is getting sick.",
+                  ""
+                ],
+                [
+                  "Trucks make a lot of noise.",
+                  ""
+                ],
+                [
+                  "It is important to act.",
+                  ""
+                ],
+                [
+                  "The beach had some rubbish.",
+                  ""
+                ],
+                [
+                  "The ice is going away.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "The reef is getting sick.",
+                  "The reef is bleaching."
+                ],
+                [
+                  "Trucks make a lot of noise.",
+                  "Trucks roar past all day."
+                ],
+                [
+                  "It is important to act.",
+                  "It is urgent that we act."
+                ],
+                [
+                  "The beach had some rubbish.",
+                  "The beach was littered with rubbish."
+                ],
+                [
+                  "The ice is going away.",
+                  "The ice is vanishing."
+                ]
+              ],
+              "widths": [
+                1,
+                1.3
+              ],
+              "rowH": 26
+            }
+          ]
+        },
+        {
+          "title": "Upgrade your writing",
+          "columns": 1,
+          "example": {
+            "prompt": "Before: Bears are hungry. After: Bears are starving.",
+            "steps": [
+              "Circle five plain words in a Week 1 paragraph",
+              "Swap each one",
+              "Check each is still true"
+            ],
+            "answer": "Five upgrades, every one still true."
+          },
+          "items": [
+            {
+              "prompt": "Rewrite one of your Week 1 paragraphs here with five powerful, true words. Underline each upgrade.",
+              "answer": "A rewritten paragraph with five underlined upgrades, none exaggerated.",
+              "lines": 6
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: the same event in two writers' words, then two versions of your own.",
+      "title": "Word Detective",
+      "subtitle": "Writers choose words to make you feel a certain way.",
+      "sections": [
+        {
+          "title": "Same event, different words",
+          "columns": 1,
+          "example": {
+            "prompt": "Event: the council removed an old tree.",
+            "steps": [
+              "How would a supporter say it?",
+              "How would an opponent say it?",
+              "Which words changed the feeling?"
+            ],
+            "answer": "Supporter: cleared a dangerous tree. Opponent: chopped down a 100-year-old tree."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write how each writer would describe the event.",
+              "columns": [
+                "Event",
+                "Writer who supports it",
+                "Writer against it"
+              ],
+              "rows": [
+                [
+                  "A new road was built through the bush.",
+                  "",
+                  ""
+                ],
+                [
+                  "The canteen stopped selling lollies.",
+                  "",
+                  ""
+                ],
+                [
+                  "A zoo brought in a new polar bear.",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "A new road was built through the bush.",
+                  "a safer, faster road opened",
+                  "a road was bulldozed through the bush"
+                ],
+                [
+                  "The canteen stopped selling lollies.",
+                  "the canteen went healthy",
+                  "the canteen banned treats"
+                ],
+                [
+                  "A zoo brought in a new polar bear.",
+                  "a zoo welcomed a rescued bear",
+                  "a zoo locked up another bear"
+                ]
+              ],
+              "widths": [
+                1.2,
+                1,
+                1
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "Make them cheer, make them upset",
+          "columns": 1,
+          "example": {
+            "prompt": "Fact: the school planted 50 trees.",
+            "steps": [
+              "Write it so readers cheer",
+              "Write it so readers worry",
+              "Keep both true"
+            ],
+            "answer": "Cheer: Fifty young trees now shade our playground! Worry: Only fifty trees, for a playground of 600 kids."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Choose one true fact about your issue. Write it twice: once to make readers cheer, once to make them upset.",
+              "answer": "Two true versions with different word choices.",
+              "lines": 5
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Ella went too far. Fix it so it is powerful AND true.",
+              "work": [
+                "The new road has completely destroyed every animal in the bush forever."
+              ],
+              "answer": "Too far: every and forever can't be true. Fix: The new road has cut the bush in two."
+            }
+          ]
+        },
+        {
+          "title": "Tricky word families",
+          "columns": 1,
+          "example": {
+            "prompt": "persuade",
+            "steps": [
+              "Drop the d and e",
+              "Add -sion or -sive",
+              "Say it slowly to check"
+            ],
+            "answer": "persuasion, persuasive"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Build each word family. Watch the spelling changes.",
+              "columns": [
+                "Base word",
+                "Thing",
+                "Describing"
+              ],
+              "rows": [
+                [
+                  "decide",
+                  "",
+                  ""
+                ],
+                [
+                  "destroy",
+                  "",
+                  ""
+                ],
+                [
+                  "explode",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "decide",
+                  "decision",
+                  "decisive"
+                ],
+                [
+                  "destroy",
+                  "destruction",
+                  "destructive"
+                ],
+                [
+                  "explode",
+                  "explosion",
+                  "explosive"
+                ]
+              ],
+              "widths": [
+                1,
+                1,
+                1
+              ],
+              "rowH": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: choices with hints, a first swap done and a word family started.",
+      "title": "Words with Power Helper",
+      "subtitle": "Pick the word that makes you feel more. Check it is true.",
+      "sections": [
+        {
+          "title": "Which feels stronger?",
+          "columns": 3,
+          "example": {
+            "prompt": "big or huge?",
+            "steps": [
+              "Say both",
+              "Which feels bigger?",
+              "Circle it"
+            ],
+            "answer": "huge"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "hungry or starving?",
+              "options": [
+                "hungry",
+                "starving"
+              ],
+              "answer": 1,
+              "hint": "Which feels worse?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "wet or soaked?",
+              "options": [
+                "wet",
+                "soaked"
+              ],
+              "answer": 1,
+              "hint": "Which is wetter?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "sad or heartbroken?",
+              "options": [
+                "sad",
+                "heartbroken"
+              ],
+              "answer": 1,
+              "hint": "Which feels stronger?"
+            }
+          ]
+        },
+        {
+          "title": "Swap it",
+          "columns": 1,
+          "example": {
+            "prompt": "The bin was full.",
+            "steps": [
+              "Find the plain word",
+              "Look in the Power Word Bank",
+              "Swap it"
+            ],
+            "answer": "The bin was overflowing."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Swap the plain word. Use the Power Word Bank.",
+              "columns": [
+                "Plain",
+                "Powerful"
+              ],
+              "rows": [
+                [
+                  "The bear was hungry.",
+                  "The bear was starving."
+                ],
+                [
+                  "Plastic is bad.",
+                  ""
+                ],
+                [
+                  "We should help.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "The bear was hungry.",
+                  "The bear was starving."
+                ],
+                [
+                  "Plastic is bad.",
+                  "Plastic is harmful."
+                ],
+                [
+                  "We should help.",
+                  "We should protect them."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                1.2
+              ],
+              "rowH": 30
+            }
+          ]
+        },
+        {
+          "title": "Word family",
+          "columns": 1,
+          "example": {
+            "prompt": "protect",
+            "steps": [
+              "Add ion",
+              "Say it",
+              "Write it"
+            ],
+            "answer": "protection"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Add ion to make a thing.",
+              "columns": [
+                "Base word",
+                "+ ion"
+              ],
+              "rows": [
+                [
+                  "protect",
+                  "protection"
+                ],
+                [
+                  "inform",
+                  ""
+                ],
+                [
+                  "act",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "protect",
+                  "protection"
+                ],
+                [
+                  "inform",
+                  "information"
+                ],
+                [
+                  "act",
+                  "action"
+                ]
+              ],
+              "hint": "inform + at + ion",
+              "widths": [
+                1,
+                1
+              ],
+              "rowH": 28
+            },
+            {
+              "prompt": "Write one sentence about your issue using a powerful word.",
+              "answer": "Any true sentence with a powerful word.",
+              "lines": 3,
+              "hint": "Try starving, protect or urgent."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    },
+    {
+      "kind": "page",
+      "label": "Power Word Bank",
+      "description": "Enabling scaffold for the You Do: plain words beside powerful, true swaps, and four word families. Every student can keep it in their book.",
+      "title": "Power Word Bank",
+      "subtitle": "Swap a plain word for a powerful one. Check it is still true.",
+      "blocks": [
+        {
+          "heading": "Plain to powerful"
+        },
+        {
+          "visual": {
+            "type": "table",
+            "rows": [
+              [
+                "Plain",
+                "Powerful and true"
+              ],
+              [
+                "bad",
+                "harmful, damaging, dangerous"
+              ],
+              [
+                "hungry",
+                "starving, weak, desperate"
+              ],
+              [
+                "getting smaller",
+                "shrinking, vanishing, melting away"
+              ],
+              [
+                "put out",
+                "pump out, release, pour"
+              ],
+              [
+                "important",
+                "urgent, vital, essential"
+              ],
+              [
+                "help",
+                "protect, rescue, defend"
+              ],
+              [
+                "sad",
+                "heartbreaking, devastating"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Word families"
+        },
+        {
+          "visual": {
+            "type": "table",
+            "rows": [
+              [
+                "Base word",
+                "Thing (noun)",
+                "Describing (adjective)"
+              ],
+              [
+                "protect",
+                "protection",
+                "protective"
+              ],
+              [
+                "environment",
+                "environment",
+                "environmental"
+              ],
+              [
+                "persuade",
+                "persuasion",
+                "persuasive"
+              ],
+              [
+                "destroy",
+                "destruction",
+                "destructive"
+              ]
+            ]
+          }
+        },
+        {
+          "tip": "Stretch: find a word family for pollute and for danger. Use one of the new words in your paragraph."
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we find words with real power, and we keep them honest."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Power Word Bank for everyone to keep, the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to choose words that make a reader feel and believe.",
+      "successCriteria": [
+        "I can find the words that make me feel something.",
+        "I can swap plain words for powerful words that are still true.",
+        "I can build word families to vary my writing."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Powerful words are a writer's best tool. Today we sharpen yours."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Finding the feeling words is where we start.",
+            "Swapping in powerful, true words is today's main goal."
+          ]
+        ],
+        "prep": "SC1 spotting emotive words is reachable for all; SC2 swapping plain for powerful and true is the core and the exit evidence; SC3 word families is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Which bear would you help?",
+      "lines": [
+        "A bear walked along the beach.",
+        "A starving polar bear dragged itself along the empty shore."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "paw",
+            "label": "plain"
+          },
+          {
+            "name": "heart",
+            "label": "powerful"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "the second - starving, dragged, empty make us feel",
+        "beats": [
+          [
+            "SAY: Same bear. Same beach. Two writers.",
+            "Which one makes you want to help?"
+          ],
+          [
+            "ASK: Which sentence makes you want to help, first or second?",
+            "5 sec. Cue: Fingers at your chest, 1 or 2... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: Which words did the work?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: starving, dragged, empty"
+          ],
+          [
+            "SAY: Yesterday's best lines were Sell it lines.",
+            "Today we learn the words that make them."
+          ]
+        ],
+        "trap": [
+          "naming polar as the powerful word.",
+          "Fix: ask which words make you feel? Student finds starving or dragged."
+        ],
+        "prep": "Launch links Session 1's Sell it sentences to word choice. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "emotive",
+      "meaning": "Chosen to make the reader feel something.",
+      "example": "The forest was cut down. The forest was destroyed.",
+      "pictogram": "heart",
+      "notes": {
+        "answer": "chosen to make the reader feel something",
+        "beats": [
+          "POINT to the word. SAY: Emotive. Say it with me. Emotive.",
+          [
+            "SAY: Emotive comes from emotion.",
+            "An emotive word is chosen to make you feel something."
+          ],
+          [
+            "ASK: Cut down or destroyed: which is emotive?",
+            "5 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: destroyed"
+          ]
+        ],
+        "trap": [
+          "thinking emotive means sad only.",
+          "Fix: ask can a word make you angry, or hopeful? Student names one."
+        ],
+        "prep": "The one technical word today, linked to emotion so it sticks.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "I Do",
+      "title": "Powerful, but true",
+      "lines": [
+        "Plain: Melting ice is bad for polar bears.",
+        "Powerful and true: Melting ice leaves polar bears stranded and starving.",
+        "Too far: Melting ice is murdering every bear on Earth!"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "thumbsDown",
+            "label": "plain"
+          },
+          {
+            "name": "thumbsUp",
+            "label": "powerful and true"
+          },
+          {
+            "name": "warning",
+            "label": "too far"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "upgrade the plain word, then check: is it still true?",
+        "beats": [
+          [
+            "POINT to Plain.",
+            "SAY: Bad. It's true, but it doesn't make me feel anything."
+          ],
+          [
+            "POINT to Powerful and true.",
+            "SAY: Stranded and starving. I can see it, and scientists say it happens.",
+            "That's the one I want."
+          ],
+          [
+            "POINT to Too far.",
+            "SAY: Murdering every bear? That isn't true. If I exaggerate, my reader stops trusting me."
+          ],
+          [
+            "ASK: Which word did I swap for bad?",
+            "5 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: stranded and starving"
+          ]
+        ],
+        "trap": [
+          "picking the biggest word, even if it isn't true.",
+          "Fix: ask could a scientist say this? Student tones it to true."
+        ],
+        "stretch": "Make the plain sentence powerful a different way.",
+        "help": "Swap one word only, from the Power Word Bank.",
+        "prep": "The model. Critical feature: the word changes the feeling, but it must stay true. The near-miss (too far) is shown beside the target.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Swap it",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "picture it: what would you see or feel?",
+      "followUp": "cold call one board: is your word still true?",
+      "items": [
+        {
+          "text": "The bear was hungry.",
+          "answer": "starving, weak, desperate",
+          "expect": "starving. ACCEPT: any true, stronger word"
+        },
+        {
+          "text": "Rubbish is on the beach.",
+          "answer": "Rubbish litters / chokes the beach.",
+          "expect": "litters, covers, chokes"
+        },
+        {
+          "text": "The ice is getting smaller.",
+          "answer": "shrinking, vanishing, melting away",
+          "expect": "shrinking. ACCEPT: vanishing"
+        },
+        {
+          "text": "Factories put out smoke.",
+          "answer": "pump out, pour out, belch",
+          "expect": "pump out"
+        },
+        {
+          "text": "Saving bears is important.",
+          "answer": "urgent, vital, essential",
+          "expect": "urgent",
+          "say": "Urgent. It means it can't wait. Tick or fix."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Let's practise swapping.",
+          "Write a powerful word to replace the plain one. Keep it true."
+        ],
+        "trap": [
+          "swapping for a longer word that means the same, like large for big.",
+          "Fix: ask does it make you feel more? Student picks again."
+        ],
+        "stretch": "Give two swaps, one stronger than the other.",
+        "help": "Use the Plain to powerful table on the Power Word Bank.",
+        "prep": "Guided swapping, nouns and verbs both. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which sentence is powerful AND true?",
+      "options": [
+        {
+          "text": "Plastic is killing every single animal in the ocean!",
+          "misconception": "exaggeration; strong but untrue, so readers stop trusting"
+        },
+        {
+          "text": "Plastic bags choke sea turtles that mistake them for jellyfish."
+        },
+        {
+          "text": "Plastic is not very good for the ocean and its animals.",
+          "misconception": "true but plain; the reader feels nothing"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - choke is powerful, and it really happens",
+        "beats": [
+          "SAY: Three writers, same issue. Only one is powerful and true.",
+          [
+            "ASK: Which sentence is powerful AND true?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what's wrong with A?",
+            "Less -> test each: could a scientist say this?, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Choke makes us feel it, and turtles really do mistake bags for jellyfish."
+          ]
+        ],
+        "trap": [
+          "pointing to A because it is the most dramatic.",
+          "Fix: ask is every single animal dying? Student re-chooses."
+        ],
+        "prep": "Decision point. Under 80% means a second Plain / Powerful / Too far sort on the board before the word families.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "I Do",
+      "title": "Build a word family",
+      "lines": [
+        "protect - protection - protective",
+        "The ending changes the job: a thing, or a describing word.",
+        "Watch the spelling: persuade - persuasion"
+      ],
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Base",
+            "+ ion (thing)",
+            "+ ive (describing)"
+          ],
+          [
+            "protect",
+            "protection",
+            "protective"
+          ],
+          [
+            "persuade",
+            "persuasion",
+            "persuasive"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "add a suffix to change the word's job; check the spelling change",
+        "beats": [
+          [
+            "POINT to protect.",
+            "SAY: Protect is a doing word. Add ion: protection, a thing.",
+            "Add ive: protective, a describing word."
+          ],
+          [
+            "POINT to persuasion.",
+            "SAY: Careful. Persuade drops its d e and takes sion. Persuasion."
+          ],
+          [
+            "ASK: Persuade plus ive. Spell it.",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: persuasive"
+          ]
+        ],
+        "trap": [
+          "writing persuadeive.",
+          "Fix: student drops the e before ive, rereads."
+        ],
+        "stretch": "Find a fourth family member: protector, persuader.",
+        "help": "Build only the ion column first.",
+        "prep": "Spelling and morphology focus: suffixes change the job and sometimes the spelling (VC2E5LY04, LY05). SC3.",
+        "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Build it",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "say the word slowly, clap the parts, then spell",
+      "followUp": "cold call one board: what changed in the spelling?",
+      "items": [
+        {
+          "text": "environment + al",
+          "answer": "environmental",
+          "expect": "environmental"
+        },
+        {
+          "text": "pollute + ion",
+          "answer": "pollution (drop the e)",
+          "expect": "pollution"
+        },
+        {
+          "text": "danger + ous",
+          "answer": "dangerous",
+          "expect": "dangerous"
+        },
+        {
+          "text": "create + ive",
+          "answer": "creative (drop the e)",
+          "expect": "creative"
+        },
+        {
+          "text": "destroy + ion (careful!)",
+          "answer": "destruction - the y and the end change",
+          "expect": "destruction. ACCEPT: close tries, then fix",
+          "say": "Destruction. Destroy changes more than most. Tick or fix."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Build the new word.",
+          "Write it on your board, spelled right."
+        ],
+        "trap": [
+          "keeping the e: polluteion.",
+          "Fix: student says it aloud, hears no e sound, drops it."
+        ],
+        "stretch": "Use each word in a persuasive phrase.",
+        "help": "Check the Word families table on the Power Word Bank.",
+        "prep": "Guided spelling. Destruction is the edge case. SC3.",
+        "tag": "[We Do | Supported application | SC3 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Upgrade challenge",
+      "task": "Work through your Worksheet. Finish by upgrading one of your Week 1 paragraphs with five powerful, true words.",
+      "where": "Main sheet",
+      "frame": "Before: ___  After: ___",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "magnifier",
+          "pencil",
+          "heart"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Find, swap, check",
+      "notes": {
+        "answer": "five upgrades, each powerful and still true",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Pick your opening or your rebuttal from last week.",
+            "Rewrite it underneath with five upgrades."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: is that still true? Could a scientist say it?",
+          [
+            "ASK: How many upgrades so far?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 3 to 5"
+          ],
+          "TIME 15 minutes. At 12, swap books and read your partner's best upgrade."
+        ],
+        "trap": [
+          "upgrades that exaggerate: every, never, millions.",
+          "Fix: student checks each against the Too far column."
+        ],
+        "stretch": "Extension: the same event in two writers' words, then cheer-or-upset versions.",
+        "help": "Supported Worksheet: choices with hints, a first swap done, a word family started.",
+        "prep": "Independent application on students' own Week 1 writing. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a Week 1 paragraph rewritten with five powerful, true words"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "The trees in the rainforest are getting cut down fast.",
+        "Upgrade it with one powerful word that is still true."
+      ],
+      "notes": {
+        "answer": "e.g. The rainforest is being destroyed / cleared / stripped at an alarming rate",
+        "beats": [
+          "SAY: A new sentence about a new place. Upgrade it.",
+          [
+            "ASK: Rewrite the sentence with one powerful, true word.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: destroyed, cleared, stripped, vanishing"
+          ],
+          "RECORD who goes too far, like every tree is gone. Tomorrow's warm-up."
+        ],
+        "trap": [
+          "All the trees in the world are dead!",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new topic. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Read your partner your best before-and-after upgrade. Which word did the most work?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for a verb or adjective that changed the feeling",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can choose powerful, true words?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Read your partner your best upgrade.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: hungry became starving"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Students keep the Power Word Bank in their books for drafting. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

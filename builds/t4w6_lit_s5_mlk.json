@@ -1,0 +1,947 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 6,
+    "session": 5,
+    "variant": 4,
+    "minutes": 60,
+    "title": "The Dream Speech",
+    "subtitle": "Term 4 Week 6, Session 5",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 6 Session 5",
+    "outputFolder": "T4W6_Lit_S5_Mlk",
+    "fileName": "Session 5 - The Dream Speech.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LE04 the effects of imagery and sound devices; VC2E5LY07 how a text reflects the time and place it was created; VC2E5LY09 evaluating a spoken text",
+      "shape": "picture, map, repeat, vision: an imagined picture opens, the speech is mapped, then students practise repetition that builds and write a vision passage for their own issue",
+      "criticalFeature": "repeated openings build rhythm, and each repeat must paint a new, bigger picture of the future",
+      "decisionPoints": [
+        "the Keep the rhythm round",
+        "the choice check: repetition that builds",
+        "the exit board: a new vision in two lines"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: repetition and a vision sell the future.",
+      "catchUp": "Missed earlier sessions? The listening grid is the same every time; the vision passage needs only your issue."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Persuasive Speaker's Toolkit",
+      "Mini-whiteboards and markers",
+      "Writing books"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Turn and tell",
+      "Everyone, together, on three"
+    ],
+    "boardSetup": [
+      "Listening grid: Message? Audience? Think? Feel? Do?",
+      "Repetition rule: same opening words, a new and bigger picture each time"
+    ],
+    "videos": [
+      "DCE Speech Collection: Martin Luther King Jr., I Have a Dream, 1963 (teacher's copy; play the 'I have a dream' section)"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: map the speech, judge repetition, paint pictures of the future, then write your own vision.",
+      "title": "The Dream Speech",
+      "subtitle": "Same opening words. A new picture every time.",
+      "sections": [
+        {
+          "title": "Map the speech",
+          "columns": 1,
+          "example": {
+            "prompt": "Any speech: message, audience, think, feel, do.",
+            "steps": [
+              "Message in one sentence",
+              "Who is listening?",
+              "Think, feel, do"
+            ],
+            "answer": "Message: all people deserve to be treated equally and live free."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in the listening grid for the I Have a Dream speech.",
+              "columns": [
+                "Question",
+                "My answer"
+              ],
+              "rows": [
+                [
+                  "His message in one sentence",
+                  ""
+                ],
+                [
+                  "His audience",
+                  ""
+                ],
+                [
+                  "What he wants them to think",
+                  ""
+                ],
+                [
+                  "What he wants them to feel",
+                  ""
+                ],
+                [
+                  "What he wants them to do",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "His message in one sentence",
+                  "People of every colour deserve equal rights and freedom."
+                ],
+                [
+                  "His audience",
+                  "hundreds of thousands of marchers and the whole nation"
+                ],
+                [
+                  "What he wants them to think",
+                  "equality is a promise that must be kept"
+                ],
+                [
+                  "What he wants them to feel",
+                  "hope and determination"
+                ],
+                [
+                  "What he wants them to do",
+                  "keep working peacefully for freedom"
+                ]
+              ],
+              "widths": [
+                1,
+                1.8
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Does it build?",
+          "columns": 2,
+          "example": {
+            "prompt": "We will walk. We will ride. We will change this town.",
+            "steps": [
+              "Same opening words?",
+              "Does each line add something new?",
+              "Does it end on the biggest?"
+            ],
+            "answer": "Yes: walk, ride, then change the whole town."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which repetition builds best?",
+              "options": [
+                "We must act. We must act. We must act.",
+                "We must act for the bears, for the ice, for our children.",
+                "We must act and also do things."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "Each repeat adds something new and bigger."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Isla's repetition doesn't build. Find the problem and fix it.",
+              "work": [
+                "I dream of clean beaches. I dream of clean beaches. I dream of clean beaches."
+              ],
+              "answer": "Nothing new is added. Fix: I dream of clean beaches, rivers we can swim in, and oceans full of life."
+            }
+          ]
+        },
+        {
+          "title": "Paint the picture",
+          "columns": 1,
+          "example": {
+            "prompt": "Plain wish: I want less litter.",
+            "steps": [
+              "Picture the future",
+              "Add what you would see or hear",
+              "Start with I dream of... or Imagine..."
+            ],
+            "answer": "Imagine a park where the only thing on the grass is kids."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Turn each plain wish into a picture of the future.",
+              "columns": [
+                "Plain wish",
+                "Picture of the future"
+              ],
+              "rows": [
+                [
+                  "I want more trees.",
+                  ""
+                ],
+                [
+                  "I want kids to be safe on bikes.",
+                  ""
+                ],
+                [
+                  "I want polar bears to survive.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "I want more trees.",
+                  "Imagine a playground where every bench sits in cool green shade."
+                ],
+                [
+                  "I want kids to be safe on bikes.",
+                  "I dream of a path where a seven-year-old can ride to school alone."
+                ],
+                [
+                  "I want polar bears to survive.",
+                  "Imagine my grandchildren watching a polar bear walk out onto thick, white ice."
+                ]
+              ],
+              "widths": [
+                0.9,
+                1.8
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "My vision",
+          "columns": 1,
+          "example": {
+            "prompt": "My issue: zoos",
+            "steps": [
+              "Choose an opening to repeat",
+              "Write 3-4 lines, each a new picture",
+              "End on the biggest"
+            ],
+            "answer": "I dream of bears with room to roam. I dream of ice that lasts all summer. I dream of a world that keeps its promise to them."
+          },
+          "items": [
+            {
+              "prompt": "Write a vision passage for your speech: 3-4 lines that start the same way, each painting a new, bigger picture.",
+              "answer": "Three or four lines with the same opening, building to the biggest picture.",
+              "lines": 7
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Add Dr King to your Toolkit, then grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: compare the four speakers, then choose what you'll borrow.",
+      "title": "Four Speakers",
+      "subtitle": "Every great speaker had a different way in.",
+      "sections": [
+        {
+          "title": "Compare the four",
+          "columns": 1,
+          "example": {
+            "prompt": "Severn",
+            "steps": [
+              "Her main technique",
+              "Her tone",
+              "Her audience"
+            ],
+            "answer": "Who I am and why I care; calm and direct; world leaders"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in the table for each speaker.",
+              "columns": [
+                "Speaker",
+                "Main technique",
+                "Tone"
+              ],
+              "rows": [
+                [
+                  "Severn",
+                  "",
+                  ""
+                ],
+                [
+                  "Malala",
+                  "",
+                  ""
+                ],
+                [
+                  "Greta",
+                  "",
+                  ""
+                ],
+                [
+                  "Dr King",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Severn",
+                  "a child's credibility; simple requests",
+                  "calm, direct"
+                ],
+                [
+                  "Malala",
+                  "a true story; a list that builds",
+                  "hopeful"
+                ],
+                [
+                  "Greta",
+                  "short punches; talking to you",
+                  "angry, urgent"
+                ],
+                [
+                  "Dr King",
+                  "repetition and a vision",
+                  "hopeful, soaring"
+                ]
+              ],
+              "widths": [
+                0.7,
+                1.6,
+                1
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "What I'll borrow",
+          "columns": 1,
+          "example": {
+            "prompt": "My speech",
+            "steps": [
+              "Pick one technique from two speakers",
+              "Say where it goes in your speech",
+              "Say why it suits your audience"
+            ],
+            "answer": "Malala's story for my opening; Dr King's repetition for my ending."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Which two techniques will you borrow for your speech? Say where each goes and why it suits your audience.",
+              "answer": "Two named techniques, placed in the speech, with audience-linked reasons.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first picture done and a frame.",
+      "title": "Dream Speech Helper",
+      "subtitle": "Repeat the start. Change the picture.",
+      "sections": [
+        {
+          "title": "The speech",
+          "columns": 3,
+          "example": {
+            "prompt": "Which words does he repeat?",
+            "steps": [
+              "Listen",
+              "Hear it again and again",
+              "I have a dream"
+            ],
+            "answer": "I have a dream"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "What does Dr King want for all people?",
+              "options": [
+                "equal rights",
+                "more money"
+              ],
+              "answer": 0,
+              "hint": "Fair for everyone."
+            },
+            {
+              "kind": "choice",
+              "prompt": "How does he want people to feel?",
+              "options": [
+                "hopeful",
+                "bored"
+              ],
+              "answer": 0,
+              "hint": "He is dreaming of a better future."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Which words repeat?",
+              "options": [
+                "I have a dream",
+                "Thank you"
+              ],
+              "answer": 0,
+              "hint": "The speech's name."
+            }
+          ]
+        },
+        {
+          "title": "Paint it",
+          "columns": 1,
+          "example": {
+            "prompt": "I want more trees.",
+            "steps": [
+              "Write Imagine...",
+              "Add what you see",
+              "Read it"
+            ],
+            "answer": "Imagine shady trees over every bench."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Turn each wish into a picture.",
+              "columns": [
+                "Wish",
+                "Picture"
+              ],
+              "rows": [
+                [
+                  "more trees",
+                  "Imagine shady trees over every bench."
+                ],
+                [
+                  "clean beaches",
+                  "Imagine ..."
+                ],
+                [
+                  "safe bike paths",
+                  "Imagine ..."
+                ]
+              ],
+              "answers": [
+                [
+                  "more trees",
+                  "Imagine shady trees over every bench."
+                ],
+                [
+                  "clean beaches",
+                  "Imagine sand with no rubbish at all."
+                ],
+                [
+                  "safe bike paths",
+                  "Imagine riding to school with no cars near you."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                0.8,
+                1.8
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "My dream",
+          "columns": 1,
+          "example": {
+            "prompt": "Zoos",
+            "steps": [
+              "I dream of ___.",
+              "I dream of ___.",
+              "I dream of ___."
+            ],
+            "answer": "I dream of bears with space. I dream of thick ice. I dream of a wild home for every bear."
+          },
+          "items": [
+            {
+              "prompt": "Finish three lines: I dream of ___. I dream of ___. I dream of ___.",
+              "answer": "Three lines with the same start and different pictures.",
+              "lines": 4,
+              "hint": "Make the last one the biggest."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we hear one of the most famous speeches ever given."
+    },
+    {
+      "kind": "resources",
+      "notes": "Cue the 'I have a dream' section of Martin Luther King Jr.'s 1963 speech from the DCE Speech Collection. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Toolkits out."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how repetition and a vision of the future make a speech unforgettable.",
+      "successCriteria": [
+        "I can say a speaker's message and audience.",
+        "I can use repetition that builds, with a new picture each time.",
+        "I can write a vision of the future for my own issue."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today's speaker made a whole nation picture a better future."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Close your eyes and picture this",
+      "lines": [
+        "I dream of a school where every playground has shade.",
+        "I dream of a school where no lunch ends up in the bin.",
+        "I dream of a school that the planet would be proud of."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "eye",
+            "label": "picture it"
+          },
+          {
+            "name": "rainbow",
+            "label": "a better future"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - shady playgrounds, empty bins, a proud planet",
+        "beats": [
+          [
+            "SAY: Close your eyes. Just listen and picture it.",
+            "READ the three lines slowly, with a pause after each."
+          ],
+          [
+            "ASK: What did you see? Tell your partner one picture.",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: trees, shade, empty bins"
+          ],
+          [
+            "ASK: Which words did I repeat?",
+            "5 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: I dream of a school"
+          ],
+          "SAY: Repeat the start, change the picture. Today's speaker did it better than anyone."
+        ],
+        "trap": [
+          "focusing on the topic, not the pattern.",
+          "Fix: ask what stayed the same in every line? Student finds the repeat."
+        ],
+        "prep": "Original lines, written for this session, that preview the technique. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "vision",
+      "meaning": "A picture of the future that a speaker wants us to see.",
+      "example": "Imagine every kid riding safely to school.",
+      "pictogram": "rainbow",
+      "notes": {
+        "answer": "a picture of the future that a speaker wants us to see",
+        "beats": [
+          "POINT to the word. SAY: Vision. Say it with me. Vision.",
+          [
+            "SAY: A picture of the future that a speaker wants us to see.",
+            "SAY: Imagine every kid riding safely to school."
+          ],
+          [
+            "ASK: Tell your partner your vision for our school playground in one sentence.",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: Imagine a playground with..."
+          ]
+        ],
+        "trap": [
+          "thinking a vision is a list of rules.",
+          "Fix: ask what would you see? A vision is a picture."
+        ],
+        "prep": "The technique word: Toolkit row 7.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Map the Dream speech",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Question",
+            "Dr King's speech"
+          ],
+          [
+            "Message",
+            "Every person deserves equal rights and freedom."
+          ],
+          [
+            "Audience",
+            "marchers in Washington and the whole nation"
+          ],
+          [
+            "Think",
+            "equality is a promise to keep"
+          ],
+          [
+            "Feel",
+            "hope and determination"
+          ],
+          [
+            "Do",
+            "keep working peacefully for freedom"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "message, audience, think, feel, do",
+        "beats": [
+          [
+            "SAY: In 1963, in Washington, hundreds of thousands of people marched for equal rights.",
+            "Dr King spoke to them all."
+          ],
+          [
+            "PLAY the selected section from the DCE Speech Collection.",
+            "SAY: Listen for the words he repeats, and the pictures he paints."
+          ],
+          [
+            "POINT to Feel.",
+            "SAY: He speaks about unfair treatment, but he leaves them hopeful. That's his choice."
+          ],
+          [
+            "ASK: What does he want the audience to do?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: keep going; work for freedom peacefully"
+          ]
+        ],
+        "trap": [
+          "thinking the speech is only about the past.",
+          "Fix: ask is everyone treated equally everywhere today? Student links it to now."
+        ],
+        "stretch": "Find a line where he paints a picture you can see.",
+        "help": "Listen for the words I have a dream.",
+        "care": "Racism is the context: keep the discussion respectful, factual and calm.",
+        "prep": "SOURCES: Martin Luther King Jr., March on Washington, Lincoln Memorial, 28 August 1963.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Four words, again and again",
+      "visual": {
+        "type": "text",
+        "text": "\"I have a dream...\""
+      },
+      "label": "Martin Luther King Jr., Washington, 1963",
+      "notes": {
+        "answer": "the repeated opening builds rhythm; each repeat paints a new picture",
+        "beats": [
+          [
+            "SAY: He says these four words again and again.",
+            "Each time, he paints a new picture of the future."
+          ],
+          [
+            "SAY: The repeat builds rhythm.",
+            "The crowd starts to feel it coming. Then the picture lands."
+          ],
+          [
+            "ASK: Say it with me, the way he says it.",
+            "3 sec. Cue: Everyone, together, on three.",
+            "EXPECT: I have a dream..."
+          ],
+          [
+            "ASK: Why repeat the same opening, instead of new words each time?",
+            "15 sec. Turn and tell, partner B first.",
+            "EXPECT: rhythm; easy to remember; it builds"
+          ]
+        ],
+        "trap": [
+          "repeating the whole sentence word for word.",
+          "Fix: say repeat the start, change the picture."
+        ],
+        "stretch": "Find another phrase he repeats in the speech.",
+        "help": "Use: I dream of ___.",
+        "prep": "SOURCES: check the wording against your DCE copy. Toolkit row 7: repetition.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Does it build?",
+      "routine": "fingers",
+      "thinkTime": 6,
+      "pivot": "ask: is each picture new, and is the last the biggest?",
+      "followUp": "cold call one student: how would you fix it?",
+      "items": [
+        {
+          "text": "We'll plant a tree. We'll plant a garden. We'll plant a forest.",
+          "answer": "1 - builds: tree, garden, forest",
+          "expect": "1 finger"
+        },
+        {
+          "text": "I want shade. I want shade. I want shade.",
+          "answer": "2 - doesn't build: nothing new",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "For my class, for my school, for my whole town.",
+          "answer": "1 - builds: class, school, town",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Imagine a world. Imagine a park. Imagine a bench.",
+          "answer": "2 - shrinks instead of builds",
+          "expect": "2 fingers",
+          "say": "It gets smaller. Flip it: bench, park, world. Tick or fix."
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger: it builds. Two fingers: it doesn't."
+        ],
+        "trap": [
+          "voting builds whenever words repeat.",
+          "Fix: ask is the last picture the biggest? Student re-votes."
+        ],
+        "stretch": "Fix the ones that don't build.",
+        "help": "Look at the last picture: is it the biggest?",
+        "prep": "Guided practice with a near-miss that shrinks. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Keep the rhythm",
+      "routine": "boards",
+      "thinkTime": 30,
+      "pivot": "copy the opening, then picture something new",
+      "followUp": "cold call one board: read all three lines with rhythm",
+      "items": [
+        {
+          "text": "We will walk... We will ride... We will ___",
+          "answer": "We will change the way this town moves.",
+          "expect": "same opening, a bigger picture"
+        },
+        {
+          "text": "Imagine a river you can swim in. Imagine a creek full of frogs. Imagine ___",
+          "answer": "Imagine a world where every child knows clean water.",
+          "expect": "Imagine + the biggest picture"
+        },
+        {
+          "text": "Not for us. Not for them. ___",
+          "answer": "For everyone who comes after.",
+          "expect": "a turn to the biggest idea"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Each line has the start of a pattern.",
+          "Write the last line. Keep the rhythm. Make it the biggest."
+        ],
+        "trap": [
+          "a last line that is smaller than the others.",
+          "Fix: ask is yours the biggest picture? Student scales it up."
+        ],
+        "stretch": "Add a fourth line to each.",
+        "help": "Copy the opening words first.",
+        "prep": "Guided practice. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which repetition builds best?",
+      "options": [
+        {
+          "text": "Save the reef. Save the reef. Save the reef.",
+          "misconception": "repeats without adding anything new"
+        },
+        {
+          "text": "Save the reef for the fish, for the turtles, for us."
+        },
+        {
+          "text": "Save the reef, and other things too.",
+          "misconception": "no pattern and a weak ending"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - each repeat adds something bigger",
+        "beats": [
+          "SAY: Three speakers repeat themselves. Only one builds.",
+          [
+            "ASK: Which repetition builds best?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: why does A get boring?",
+            "Less -> read each aloud with rhythm, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Fish, turtles, then us. Every repeat climbs higher."
+          ]
+        ],
+        "trap": [
+          "pointing to A because it repeats the most.",
+          "Fix: ask what new picture does each line add? Student sees none."
+        ],
+        "prep": "Decision point before writing. Under 80% means one vision passage is built together on the board.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Write your vision",
+      "task": "Work through your Worksheet. Finish with a vision passage for your speech: three or four lines that start the same way and build. Add Dr King to your Toolkit.",
+      "where": "Worksheet",
+      "frame": "I dream of ___. I dream of ___. I dream of ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "rainbow",
+          "microphone",
+          "eye"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Repeat the start, grow the picture",
+      "notes": {
+        "answer": "three or four lines with the same opening, building to the biggest picture",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Your issue, your future. What do you want your audience to see?"
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: is your last line the biggest picture?",
+          [
+            "ASK: Perform your vision to your partner with rhythm.",
+            "30 sec each. Turn and tell, partner A first.",
+            "EXPECT: a repeated opening, rising pictures"
+          ]
+        ],
+        "trap": [
+          "three lines that say the same thing.",
+          "Fix: student makes each line a bigger picture: me, us, everyone."
+        ],
+        "stretch": "Extension: compare all four speakers, then choose what you'll borrow.",
+        "help": "Supported Worksheet: picture-clue choices, a first picture done, a frame.",
+        "prep": "Independent application. Toolkit row 7 filled before the exit. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a vision passage for the student's speech"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Topic: a library open every lunchtime.",
+        "Write two lines that start with Imagine... and paint a picture."
+      ],
+      "notes": {
+        "answer": "e.g. Imagine a quiet corner every lunch. Imagine every kid finding a book they love.",
+        "beats": [
+          "SAY: A new topic. Paint the future.",
+          [
+            "ASK: Write two Imagine lines.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: same opening, two pictures, the second bigger"
+          ],
+          "RECORD who writes a rule instead of a picture. Monday's warm-up."
+        ],
+        "trap": [
+          "Imagine the library being open.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new topic. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Which speaker this week would you most like to sound like? Why?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - Malala, because she was hopeful and brave",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can use repetition that builds?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Which speaker this week would you most like to sound like? Why?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: Malala, because she was hopeful and brave"
+          ]
+        ],
+        "prep": "End of Week 6: four speakers in every Toolkit. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

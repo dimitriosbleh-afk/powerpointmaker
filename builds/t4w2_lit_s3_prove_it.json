@@ -1,0 +1,945 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 2,
+    "session": 3,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Prove It",
+    "subtitle": "Term 4 Week 2, Session 3",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 2 Session 3",
+    "outputFolder": "T4W2_Lit_S3_Prove_It",
+    "fileName": "Session 3 - Prove It.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA02 moving beyond bare assertions by using authoritative sources; VC2E5LY09 evaluating information and ideas; VC2E5LY10 creating persuasive texts with elaborated ideas",
+      "shape": "sort, match, write: name the kinds of evidence, match fact cards to claims, then write a paragraph that proves it, because students' arguments are mostly opinion until they learn to pick and cite proof",
+      "criticalFeature": "evidence must match the claim and come from someone who would know",
+      "decisionPoints": [
+        "the What kind of evidence? round",
+        "the choice check: which evidence matches the claim?",
+        "the exit board: the best evidence for a new claim"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Today is Prove it.",
+      "catchUp": "Missed earlier sessions? Say the anchor, give the Arctic Fact Cards and the claim Polar bears need our help. They write today's paragraph on that claim."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Writing books",
+      "Arctic Fact Cards, one set per pair"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 to 4",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Four evidence types: fact, statistic, expert, example",
+      "The frame: According to ___, ___, ___."
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: name the evidence, match it, say who said it, then write a Prove it paragraph.",
+      "title": "Prove It",
+      "subtitle": "Proof must match the claim and come from someone who would know.",
+      "sections": [
+        {
+          "title": "What kind of evidence?",
+          "columns": 1,
+          "example": {
+            "prompt": "'A vet says most dog bites happen at home.'",
+            "steps": [
+              "Is there a number?",
+              "Is it a person who knows?",
+              "Is it a story?"
+            ],
+            "answer": "expert"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write the kind of evidence: fact, statistic, expert or example.",
+              "columns": [
+                "Evidence",
+                "Kind"
+              ],
+              "rows": [
+                [
+                  "Koalas eat eucalyptus leaves.",
+                  ""
+                ],
+                [
+                  "Our survey: 19 of 24 kids want a garden.",
+                  ""
+                ],
+                [
+                  "A dentist says sugar damages teeth.",
+                  ""
+                ],
+                [
+                  "Last week a magpie swooped my brother.",
+                  ""
+                ],
+                [
+                  "Australia has over 20,000 native plants.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Koalas eat eucalyptus leaves.",
+                  "fact"
+                ],
+                [
+                  "Our survey: 19 of 24 kids want a garden.",
+                  "statistic"
+                ],
+                [
+                  "A dentist says sugar damages teeth.",
+                  "expert"
+                ],
+                [
+                  "Last week a magpie swooped my brother.",
+                  "example"
+                ],
+                [
+                  "Australia has over 20,000 native plants.",
+                  "statistic"
+                ]
+              ],
+              "widths": [
+                2.2,
+                1
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Does it match?",
+          "columns": 2,
+          "example": {
+            "prompt": "Claim: our oval needs drains. Evidence: it floods every winter.",
+            "steps": [
+              "Underline the claim's key word",
+              "Find it in the evidence",
+              "Who said it? Would they know?"
+            ],
+            "answer": "It matches: both are about water on the oval."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Claim: our school needs more bike racks. Which proof matches?",
+              "options": [
+                "Bikes are good exercise.",
+                "Every morning, 30 bikes share 12 racks.",
+                "My uncle really likes bikes."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "It is about racks at our school, with numbers someone counted."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Zara wrote this proof. Find the problem and fix it.",
+              "work": [
+                "Scientists say polar bears are in danger."
+              ],
+              "answer": "Which scientists? Fix: According to the IUCN Red List, polar bears are listed as Vulnerable."
+            }
+          ]
+        },
+        {
+          "title": "Say who said it",
+          "columns": 1,
+          "example": {
+            "prompt": "Card 2",
+            "steps": [
+              "According to + who",
+              "Add who they are, between commas",
+              "Then the fact"
+            ],
+            "answer": "According to NASA, the US space agency, summer sea ice is shrinking about 12 percent a decade."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Use the Arctic Fact Cards. Write an According to sentence for each card.",
+              "columns": [
+                "Card",
+                "According to ___, ___, ___."
+              ],
+              "rows": [
+                [
+                  "1",
+                  ""
+                ],
+                [
+                  "6",
+                  ""
+                ],
+                [
+                  "7",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "1",
+                  "According to Polar Bears International, a group that studies bears, bears hunt seals from the ice."
+                ],
+                [
+                  "6",
+                  "According to Polar Bears International, some bears go months without eating when the ice melts."
+                ],
+                [
+                  "7",
+                  "According to the CSIRO, Australia's science agency, burning coal, oil and gas warms the planet."
+                ]
+              ],
+              "widths": [
+                0.4,
+                2.4
+              ],
+              "rowH": 36
+            }
+          ]
+        },
+        {
+          "title": "Your Prove it paragraph",
+          "columns": 1,
+          "example": {
+            "prompt": "Claim: polar bears need our help.",
+            "steps": [
+              "Claim it",
+              "Prove it: According to...",
+              "Sell it: why it matters"
+            ],
+            "answer": "Polar bears need our help. According to NASA, ... This means ..."
+          },
+          "items": [
+            {
+              "prompt": "Write a claim-prove-sell paragraph for your issue, with real evidence and who said it.",
+              "answer": "A claim, a sourced fact, a This means sentence and a sell.",
+              "lines": 6
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: judge sources, then turn weak proof into strong proof.",
+      "title": "Source Judge",
+      "subtitle": "Not every source deserves your trust.",
+      "sections": [
+        {
+          "title": "Trust it?",
+          "columns": 1,
+          "example": {
+            "prompt": "Source: a cruise company's ad saying the Arctic is 'unspoiled'.",
+            "steps": [
+              "Who made it?",
+              "What do they want?",
+              "Trust: high or low?"
+            ],
+            "answer": "Low: they want to sell cruises."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rate each source high or low, and say why.",
+              "columns": [
+                "Source",
+                "Trust?",
+                "Why?"
+              ],
+              "rows": [
+                [
+                  "NASA's website on sea ice",
+                  "",
+                  ""
+                ],
+                [
+                  "A stranger's video online",
+                  "",
+                  ""
+                ],
+                [
+                  "A book by a polar bear scientist",
+                  "",
+                  ""
+                ],
+                [
+                  "An ad for an Arctic cruise",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "NASA's website on sea ice",
+                  "high",
+                  "scientists who measure it"
+                ],
+                [
+                  "A stranger's video online",
+                  "low",
+                  "no way to check"
+                ],
+                [
+                  "A book by a polar bear scientist",
+                  "high",
+                  "an expert"
+                ],
+                [
+                  "An ad for an Arctic cruise",
+                  "low",
+                  "wants to sell trips"
+                ]
+              ],
+              "widths": [
+                1.6,
+                0.6,
+                1.4
+              ],
+              "rowH": 30
+            }
+          ]
+        },
+        {
+          "title": "Weak proof, strong proof",
+          "columns": 1,
+          "example": {
+            "prompt": "Weak: lots of people think bears are in trouble.",
+            "steps": [
+              "Who? How many? How do they know?",
+              "Find a fact with a source",
+              "Rewrite it"
+            ],
+            "answer": "Strong: The IUCN Red List lists polar bears as Vulnerable."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write two proof sentences for the same claim: one weak, one strong. Then explain what makes the strong one strong.",
+              "answer": "A weak and a strong version, and an explanation naming the source.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first According to done and a paragraph frame.",
+      "title": "Prove It Helper",
+      "subtitle": "Proof is a fact, a number, an expert or an example.",
+      "sections": [
+        {
+          "title": "What kind?",
+          "columns": 3,
+          "example": {
+            "prompt": "'7 of our 25 students ride bikes.'",
+            "steps": [
+              "Is there a number?",
+              "Yes!",
+              "Circle statistic"
+            ],
+            "answer": "statistic"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Koalas eat gum leaves.",
+              "options": [
+                "fact",
+                "statistic",
+                "expert"
+              ],
+              "answer": 0,
+              "hint": "Is it simply true?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "A vet says dogs need walks.",
+              "options": [
+                "fact",
+                "statistic",
+                "expert"
+              ],
+              "answer": 2,
+              "hint": "Is it a person who knows?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "12 of 20 kids walk to school.",
+              "options": [
+                "fact",
+                "statistic",
+                "expert"
+              ],
+              "answer": 1,
+              "hint": "Is there a number?"
+            }
+          ]
+        },
+        {
+          "title": "According to...",
+          "columns": 1,
+          "example": {
+            "prompt": "Card 2",
+            "steps": [
+              "Write According to",
+              "Write who",
+              "Write the fact"
+            ],
+            "answer": "According to NASA, sea ice is shrinking."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Use a fact card. Finish each sentence.",
+              "columns": [
+                "Card",
+                "Sentence"
+              ],
+              "rows": [
+                [
+                  "2",
+                  "According to NASA, sea ice is shrinking."
+                ],
+                [
+                  "4",
+                  "According to the IUCN, ..."
+                ],
+                [
+                  "1",
+                  "According to ..."
+                ]
+              ],
+              "answers": [
+                [
+                  "2",
+                  "According to NASA, sea ice is shrinking."
+                ],
+                [
+                  "4",
+                  "According to the IUCN, polar bears are Vulnerable."
+                ],
+                [
+                  "1",
+                  "According to Polar Bears International, bears hunt from the ice."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                0.4,
+                2.2
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "My paragraph",
+          "columns": 1,
+          "example": {
+            "prompt": "Polar bears need help.",
+            "steps": [
+              "Claim",
+              "According to ___, ___.",
+              "This means ___."
+            ],
+            "answer": "Polar bears need help. According to NASA, sea ice is shrinking. This means bears can't hunt."
+          },
+          "items": [
+            {
+              "prompt": "Finish: Polar bears need our help. According to ___, ___. This means ___.",
+              "answer": "A claim, a sourced fact and why it matters.",
+              "lines": 4,
+              "hint": "Use a fact card."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    },
+    {
+      "kind": "cards",
+      "label": "Arctic Fact Cards",
+      "description": "Eight real facts with their sources, numbered for the matching round and the You Do. One set per pair.",
+      "title": "Arctic Fact Cards",
+      "subtitle": "Real facts with their sources. Choose the card that proves your claim.",
+      "cols": 2,
+      "cardH": 112,
+      "cards": [
+        {
+          "text": "1. Polar bears hunt seals from the sea ice. Without ice, they cannot reach their food. (Polar Bears International)"
+        },
+        {
+          "text": "2. Arctic summer sea ice is shrinking by about 12 percent every ten years. (NASA)"
+        },
+        {
+          "text": "3. There are about 26,000 polar bears left in the wild. (IUCN estimate)"
+        },
+        {
+          "text": "4. Polar bears are listed as Vulnerable to extinction. (IUCN Red List)"
+        },
+        {
+          "text": "5. In 2011, scientists tracked a polar bear that swam for nine days and about 687 km. (US Geological Survey)"
+        },
+        {
+          "text": "6. When the ice melts in summer, some polar bears go months without eating. (Polar Bears International)"
+        },
+        {
+          "text": "7. Burning coal, oil and gas releases gases that trap heat and warm the planet. (CSIRO)"
+        },
+        {
+          "text": "8. Australia has warmed by about 1.5 degrees since 1910. (CSIRO and Bureau of Meteorology)"
+        }
+      ],
+      "tip": "Stretch: which card would a doubter find hardest to argue with? Why?"
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we stop saying trust me and start proving it."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print one Arctic Fact Cards sheet per pair. Then the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Every fact card is real, with its source."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to back up a claim with strong evidence.",
+      "successCriteria": [
+        "I can name four kinds of evidence.",
+        "I can choose evidence that fits my claim, from someone who would know.",
+        "I can say who my source is, with extra detail between commas."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today is Prove it. The magnifier."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Naming the kinds of evidence is where we start.",
+            "Choosing evidence that matches is today's main goal."
+          ]
+        ],
+        "prep": "SC1 naming evidence types is reachable for all; SC2 choosing matching, trustworthy evidence is the core and the exit evidence; SC3 the appositive is the stretch (Term 3 Week 5 retrieval).",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Who would you believe?",
+      "lines": [
+        "Claim: polar bears are in danger.",
+        "Said by: a stranger online, a polar bear scientist, or your cousin?"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "tv",
+            "label": "stranger online"
+          },
+          {
+            "name": "testTube",
+            "label": "scientist"
+          },
+          {
+            "name": "person",
+            "label": "your cousin"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "the scientist - they study it, so they would know",
+        "beats": [
+          [
+            "SAY: Three people tell you polar bears are in danger.",
+            "Same claim. Who do you believe most?"
+          ],
+          [
+            "ASK: Who would you believe? 1 stranger, 2 scientist, 3 cousin.",
+            "5 sec. Cue: Fingers at your chest, 1, 2 or 3... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: Why the scientist?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: they study bears; they have proof; it's their job"
+          ],
+          "SAY: Who says it matters. Today we choose proof from people who would know."
+        ],
+        "trap": [
+          "trusting the cousin because they're family.",
+          "Fix: ask how would your cousin know? Student re-chooses."
+        ],
+        "prep": "Launch sets up the second half of the critical feature: from someone who would know. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "evidence",
+      "meaning": "Facts, numbers, expert words or examples that show a claim is true.",
+      "example": "Claim: bears are hungry. Evidence: they go months without eating.",
+      "pictogram": "magnifier",
+      "notes": {
+        "answer": "facts, numbers, expert words or examples that show a claim is true",
+        "beats": [
+          "POINT to the word. SAY: Evidence. Say it with me. Evidence.",
+          [
+            "SAY: Evidence shows your claim is true.",
+            "Four kinds: a fact, a statistic, an expert, an example."
+          ],
+          [
+            "ASK: Name the four kinds to your partner without looking.",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: fact, statistic, expert, example"
+          ]
+        ],
+        "trap": [
+          "thinking a strong opinion is evidence.",
+          "Fix: ask how do we know it's true? Student names a fact or source."
+        ],
+        "prep": "The word the session runs on, with the four kinds named once.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "I Do",
+      "title": "Pick proof that fits",
+      "lines": [
+        "Claim: polar bears are running out of ice.",
+        "Best proof: card 2, a NASA statistic.",
+        "According to NASA, the US space agency, summer sea ice is shrinking fast."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "flag",
+            "label": "claim"
+          },
+          {
+            "name": "magnifier",
+            "label": "matching proof"
+          },
+          {
+            "name": "pen",
+            "label": "say who"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "match the proof to the exact claim, then say who it comes from",
+        "beats": [
+          [
+            "POINT to the claim.",
+            "SAY: My claim is about ice. So my proof must be about ice."
+          ],
+          [
+            "POINT to card 2.",
+            "SAY: Card 3 is about bear numbers. True, but not about ice.",
+            "Card 2 is about ice, from NASA."
+          ],
+          [
+            "POINT to the sentence.",
+            "SAY: I say who, plus a few words on who they are, between commas."
+          ],
+          [
+            "ASK: What are the extra words between my commas?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: the US space agency"
+          ]
+        ],
+        "trap": [
+          "grabbing the most shocking fact, even if it's about something else.",
+          "Fix: student underlines the key word in the claim, finds it on the card."
+        ],
+        "stretch": "Add a second card that proves the same claim.",
+        "help": "Underline the topic word in the claim, then find it on a card.",
+        "prep": "The model. Critical feature: evidence must match the claim and come from someone who would know. Near-miss: card 3, true but off-topic.",
+        "sources": "SOURCES: NASA Vital Signs (Arctic sea ice minimum, about 12 percent per decade); IUCN polar bear estimate.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "What kind of evidence?",
+      "routine": "fingers",
+      "thinkTime": 8,
+      "pivot": "ask: is it a number, a person, a story, or a fact?",
+      "followUp": "cold call one student: which words told you?",
+      "items": [
+        {
+          "text": "Bees pollinate many of the crops we eat.",
+          "answer": "1 - fact",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Our class survey found 21 of 26 students walk or ride to school.",
+          "answer": "2 - statistic",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "A marine biologist explains that turtles often swallow plastic bags.",
+          "answer": "3 - expert",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "Last summer, a thirsty koala wandered into our school yard.",
+          "answer": "4 - example",
+          "expect": "4 fingers"
+        },
+        {
+          "text": "The Bureau of Meteorology reports Australia has warmed about 1.5 degrees since 1910.",
+          "answer": "2 - statistic, from an expert source",
+          "expect": "2 fingers. ACCEPT: 3 with a reason",
+          "say": "Both! A statistic from an expert source. That's the strongest kind. Tick or fix."
+        }
+      ],
+      "notes": {
+        "say": [
+          "1 fact, 2 statistic, 3 expert, 4 example.",
+          "Read it, decide, then fingers."
+        ],
+        "trap": [
+          "calling any sentence with a number a fact, not a statistic.",
+          "Fix: ask is there a number? Then it's a statistic. Student re-votes."
+        ],
+        "stretch": "Rank the five from strongest to weakest.",
+        "help": "Look for a number first, then a person, then a story.",
+        "prep": "Guided sort on SC1. The last item is the edge case: a statistic from an expert. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which evidence matches the claim best?",
+      "prompt": "Claim: our school needs more water fountains.",
+      "options": [
+        {
+          "text": "Polar bears are listed as Vulnerable to extinction.",
+          "misconception": "true, but it doesn't match this claim"
+        },
+        {
+          "text": "In our survey, 18 of 25 students were thirsty after lunch play."
+        },
+        {
+          "text": "My friend reckons cold water is really nice to drink.",
+          "misconception": "matches the topic but comes from someone who wouldn't know"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - it's about our school and our students, with numbers",
+        "beats": [
+          "SAY: A new claim. Find the evidence that fits it.",
+          [
+            "ASK: Which evidence matches the claim best?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: what's wrong with A? It's true.",
+            "Less -> underline the claim's key words, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Our school, our students, real numbers. It fits and we can trust it."
+          ]
+        ],
+        "trap": [
+          "pointing to A because it is a real, serious fact.",
+          "Fix: ask is it about water fountains? Student re-chooses."
+        ],
+        "prep": "Decision point before the card matching. Under 80% means the first two matching items are done together.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Which card proves it?",
+      "routine": "boards",
+      "thinkTime": 20,
+      "pivot": "underline the key word in the claim, find it on a card",
+      "followUp": "cold call one board: who is the source on your card?",
+      "items": [
+        {
+          "text": "Claim: polar bears depend on the ice to eat.",
+          "answer": "Card 1 (Polar Bears International)",
+          "expect": "1"
+        },
+        {
+          "text": "Claim: melting ice forces bears into dangerous journeys.",
+          "answer": "Card 5 (the nine-day swim)",
+          "expect": "5"
+        },
+        {
+          "text": "Claim: what we do in Australia affects the Arctic too.",
+          "answer": "Card 7 (CSIRO), or card 8",
+          "expect": "7. ACCEPT: 8"
+        },
+        {
+          "text": "Claim: polar bears could disappear one day.",
+          "answer": "Card 4 (IUCN Red List)",
+          "expect": "4. ACCEPT: 3",
+          "say": "Card 4. Vulnerable to extinction is the official warning. Tick or fix."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Get your Arctic Fact Cards out with your partner.",
+          "Each claim needs one card. Write its number."
+        ],
+        "trap": [
+          "choosing the most dramatic card every time.",
+          "Fix: student reads the claim's key word aloud and checks the card has it."
+        ],
+        "stretch": "Name a second card that could also work.",
+        "help": "Lay the cards in a row; read each claim's key word first.",
+        "prep": "Guided matching with the fact cards. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Write a Prove it paragraph",
+      "task": "Work through your Worksheet. Finish with a Prove it paragraph for your issue.",
+      "where": "Main sheet",
+      "frame": "According to ___, ___, ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "flag",
+          "magnifier",
+          "megaphone"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Claim it. Prove it. Sell it.",
+      "notes": {
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Use your own issue.",
+            "Need proof? Use a fact card, or ask me for a source."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: does your proof match your claim? Who said it?",
+          "TIME 15 minutes. At 12, two students read their According to sentence."
+        ],
+        "trap": [
+          "proof without a source: Scientists say...",
+          "Fix: ask which scientists? Student names the organisation from the card."
+        ],
+        "stretch": "Extension: judge sources, then turn weak proof into strong proof.",
+        "help": "Supported Worksheet: picture-clue choices, a first According to done, a frame.",
+        "prep": "Independent application. The anchor's three moves in one paragraph, used again in Week 4 drafting. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a claim-prove-sell paragraph with a sourced fact"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Claim: our school should plant more shade trees.",
+        "A: Trees are pretty.  B: Cancer Council says shade protects kids from UV.  C: My dad likes trees.",
+        "Write the best letter and why."
+      ],
+      "notes": {
+        "answer": "B - it matches the claim and comes from health experts",
+        "beats": [
+          "SAY: A new claim about our school. Choose the best proof.",
+          [
+            "ASK: Write the letter of the best proof and one reason.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B, because Cancer Council are experts on sun safety"
+          ],
+          "RECORD who chooses A or C. Tomorrow's small group."
+        ],
+        "trap": [
+          "choosing A because trees are pretty is true.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new claim. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Read your According to sentence to your partner. Would a doubter believe it?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for a named source that would know",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can choose evidence that fits?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Read your According to sentence. Would a doubter believe it?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: yes, it says NASA"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Students keep the fact cards in their books for drafting. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

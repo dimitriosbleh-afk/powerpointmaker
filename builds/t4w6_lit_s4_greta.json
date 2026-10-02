@@ -1,0 +1,925 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 6,
+    "session": 4,
+    "variant": 4,
+    "minutes": 60,
+    "title": "Greta's Fire",
+    "subtitle": "Term 4 Week 6, Session 4",
+    "meta": "Year 5/6 Literacy | Persuasive Speeches",
+    "footer": "Persuasive Speeches | Year 5/6 Literacy | Week 6 Session 4",
+    "outputFolder": "T4W6_Lit_S4_Greta",
+    "fileName": "Session 4 - Greta's Fire.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        },
+        {
+          "name": "microphone",
+          "label": "Say it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA05 sentence structure used for effect; VC2E5LY02 features of voice (tone); VC2E5LY09 evaluating a spoken text",
+      "shape": "listen, map, punch, tone: Greta's UN speech is mapped, then students practise short punch sentences, talking straight to the audience, and choosing a tone",
+      "criticalFeature": "a short sentence after a long one lands like a punch, and saying you makes the audience responsible",
+      "decisionPoints": [
+        "the Name the tone round",
+        "the choice check: the line that makes the audience responsible",
+        "the exit board: a new you-line with a punch"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Say it. Today: talk straight to them.",
+      "catchUp": "Missed earlier sessions? The listening grid is the same for every speaker; the punch and you rules are taught from scratch today."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Persuasive Speaker's Toolkit",
+      "Mini-whiteboards and markers",
+      "Writing books"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 to 3",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Listening grid: Message? Audience? Think? Feel? Do?",
+      "Tone words: angry, hopeful, calm, urgent"
+    ],
+    "videos": [
+      "DCE Speech Collection: Greta Thunberg, UN Climate Action Summit speech, 2019 (teacher's copy; play the 'how dare you' section)"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: map Greta's speech, match tone to moment, talk straight to the audience, then rewrite your own lines.",
+      "title": "Greta's Fire",
+      "subtitle": "Short sentences. Straight to you. Tone on purpose.",
+      "sections": [
+        {
+          "title": "Map the speech",
+          "columns": 1,
+          "example": {
+            "prompt": "Any speech: message, audience, think, feel, do.",
+            "steps": [
+              "Message in one sentence",
+              "Who is listening?",
+              "Think, feel, do"
+            ],
+            "answer": "Message: leaders are failing young people on climate."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in the listening grid for Greta's speech.",
+              "columns": [
+                "Question",
+                "My answer"
+              ],
+              "rows": [
+                [
+                  "Her message in one sentence",
+                  ""
+                ],
+                [
+                  "Her audience",
+                  ""
+                ],
+                [
+                  "What she wants them to think",
+                  ""
+                ],
+                [
+                  "What she wants them to feel",
+                  ""
+                ],
+                [
+                  "What she wants them to do",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Her message in one sentence",
+                  "World leaders are failing young people by not acting on climate."
+                ],
+                [
+                  "Her audience",
+                  "world leaders at the UN Climate Action Summit"
+                ],
+                [
+                  "What she wants them to think",
+                  "they are responsible"
+                ],
+                [
+                  "What she wants them to feel",
+                  "guilty, uncomfortable, urgent"
+                ],
+                [
+                  "What she wants them to do",
+                  "act on climate now"
+                ]
+              ],
+              "widths": [
+                1,
+                1.8
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "Tone on purpose",
+          "columns": 2,
+          "example": {
+            "prompt": "A speech about a lost pet.",
+            "steps": [
+              "What is the moment?",
+              "Which tone fits it?",
+              "Does the line match?"
+            ],
+            "answer": "Sad and hopeful; not angry."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Moment: thanking volunteers who cleaned the creek. Which line fits the tone?",
+              "options": [
+                "How dare you leave it to us!",
+                "You gave up your Saturday, and look what you did.",
+                "Whatever."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "Warm and grateful fits a thank-you; anger would not."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Ben chose the wrong tone. Find the problem and fix it.",
+              "work": [
+                "Moment: asking the principal kindly for a garden. Line: You have failed us all!"
+              ],
+              "answer": "Too angry for a polite request. Fix: You could give us a place to grow food and learn."
+            }
+          ]
+        },
+        {
+          "title": "Talk straight to them",
+          "columns": 1,
+          "example": {
+            "prompt": "People should recycle more.",
+            "steps": [
+              "Find who should act",
+              "Change it to you",
+              "Add a short punch"
+            ],
+            "answer": "You throw it out. You can sort it. Start today."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each line so it talks straight to the audience, with a short punch.",
+              "columns": [
+                "Line",
+                "Straight to you"
+              ],
+              "rows": [
+                [
+                  "Adults should drive less.",
+                  ""
+                ],
+                [
+                  "Some people waste water.",
+                  ""
+                ],
+                [
+                  "Leaders need to listen.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Adults should drive less.",
+                  "You drive two blocks to buy milk. Walk it."
+                ],
+                [
+                  "Some people waste water.",
+                  "You leave the tap running. Every drop counts."
+                ],
+                [
+                  "Leaders need to listen.",
+                  "You were elected to listen. So listen."
+                ]
+              ],
+              "widths": [
+                0.9,
+                1.7
+              ],
+              "rowH": 34
+            }
+          ]
+        },
+        {
+          "title": "My lines, with fire",
+          "columns": 1,
+          "example": {
+            "prompt": "My zoo speech",
+            "steps": [
+              "Find a long sentence",
+              "Follow it with a short punch",
+              "Talk straight to your audience"
+            ],
+            "answer": "Bears walk hundreds of kilometres in the wild. Here, they walk twenty steps. You can change that."
+          },
+          "items": [
+            {
+              "prompt": "Rewrite three lines of your speech: talk straight to your audience and add a short punch after a long sentence.",
+              "answer": "Three lines with you and at least one long-then-short pair.",
+              "lines": 6
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Add Greta to your Toolkit, then grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: one line in three tones, then choose the tone for your speech.",
+      "title": "Tone Shifter",
+      "subtitle": "The same words can land in different ways.",
+      "sections": [
+        {
+          "title": "One line, three tones",
+          "columns": 1,
+          "example": {
+            "prompt": "Line: We still have time.",
+            "steps": [
+              "Angry: ...",
+              "Hopeful: ...",
+              "Calm: ..."
+            ],
+            "answer": "Angry: We STILL have time, but you're wasting it! Hopeful: We still have time. Calm: We still have time to choose."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each line in three tones.",
+              "columns": [
+                "Line",
+                "Angry",
+                "Hopeful",
+                "Calm"
+              ],
+              "rows": [
+                [
+                  "The ice is melting.",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "Kids are watching.",
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "The ice is melting.",
+                  "And you're watching it melt!",
+                  "But we can slow it.",
+                  "The ice is melting, slowly."
+                ],
+                [
+                  "Kids are watching.",
+                  "Kids are watching you fail!",
+                  "Kids are watching. Let's show them.",
+                  "Kids are watching what we do."
+                ]
+              ],
+              "widths": [
+                0.8,
+                1,
+                1,
+                1
+              ],
+              "rowH": 46
+            }
+          ]
+        },
+        {
+          "title": "My tone",
+          "columns": 1,
+          "example": {
+            "prompt": "My audience: Year 3 students",
+            "steps": [
+              "Who is listening?",
+              "Which tone will move them?",
+              "Why?"
+            ],
+            "answer": "Hopeful: young kids switch off if they feel scared."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Which tone will your speech use, and when might it change? Explain why that suits your audience.",
+              "answer": "A tone choice, a change point, and an audience-linked reason.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first rewrite done and a frame.",
+      "title": "Greta Helper",
+      "subtitle": "A short sentence after a long one lands like a punch.",
+      "sections": [
+        {
+          "title": "Which tone?",
+          "columns": 3,
+          "example": {
+            "prompt": "'Thank you so much!'",
+            "steps": [
+              "Listen to the feeling",
+              "It sounds glad",
+              "Hopeful or happy"
+            ],
+            "answer": "hopeful"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "How dare you!",
+              "options": [
+                "angry",
+                "calm"
+              ],
+              "answer": 0,
+              "hint": "Is it shouting?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "We can do this together.",
+              "options": [
+                "angry",
+                "hopeful"
+              ],
+              "answer": 1,
+              "hint": "Does it sound positive?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Please listen.",
+              "options": [
+                "angry",
+                "calm"
+              ],
+              "answer": 1,
+              "hint": "Is it gentle?"
+            }
+          ]
+        },
+        {
+          "title": "Talk to you",
+          "columns": 1,
+          "example": {
+            "prompt": "People should walk.",
+            "steps": [
+              "Change people to you",
+              "Make it short",
+              "Read it"
+            ],
+            "answer": "You can walk. Start today."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Change each line to talk to you.",
+              "columns": [
+                "Line",
+                "To you"
+              ],
+              "rows": [
+                [
+                  "People should walk.",
+                  "You can walk. Start today."
+                ],
+                [
+                  "Kids should recycle.",
+                  ""
+                ],
+                [
+                  "Adults should listen.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "People should walk.",
+                  "You can walk. Start today."
+                ],
+                [
+                  "Kids should recycle.",
+                  "You can recycle. Every day."
+                ],
+                [
+                  "Adults should listen.",
+                  "You can listen. Right now."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                0.9,
+                1.6
+              ],
+              "rowH": 30
+            }
+          ]
+        },
+        {
+          "title": "My punch",
+          "columns": 1,
+          "example": {
+            "prompt": "My issue",
+            "steps": [
+              "A long sentence",
+              "A short punch",
+              "Use you"
+            ],
+            "answer": "Bears walk for days in the wild. Not here. You can help."
+          },
+          "items": [
+            {
+              "prompt": "Write a long sentence about your issue, then a short punch with you.",
+              "answer": "A long sentence, then a short you-sentence.",
+              "lines": 3,
+              "hint": "Short means five words or fewer."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we hear a 16-year-old who spoke to world leaders with fire."
+    },
+    {
+      "kind": "resources",
+      "notes": "Cue the selected section of Greta Thunberg's 2019 UN speech from the DCE Speech Collection. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Toolkits out."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how short sentences, talking to the audience and tone make a speech hit hard.",
+      "successCriteria": [
+        "I can name the tone of a speech line.",
+        "I can talk straight to my audience and add a short punch.",
+        "I can choose a tone on purpose for my audience."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Some speakers whisper. Some roar. Today we learn why."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one is where we all start.",
+            "The second one is today's main goal."
+          ]
+        ],
+        "prep": "SC1 is reachable for all; SC2 is the core and the exit evidence; SC3 is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Hopeful or angry?",
+      "lines": [
+        "You have the power to fix this.",
+        "Which way should I say it?"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "angry",
+            "label": "angry"
+          },
+          {
+            "name": "happy",
+            "label": "hopeful"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - it depends on the audience and the moment",
+        "beats": [
+          [
+            "SAY: Same words, two ways. Listen.",
+            "SAY the line angrily, then hopefully."
+          ],
+          [
+            "ASK: Which would make a leader act? 1 angry, 2 hopeful.",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: a split"
+          ],
+          [
+            "ASK: Why might a speaker choose anger?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: to shock them; to show it's urgent; because they're upset"
+          ],
+          "SAY: Greta chose anger. Malala chose hope. Today we see why."
+        ],
+        "trap": [
+          "thinking angry always works best.",
+          "Fix: ask would anger work at a thank-you speech? Student sees tone depends on the moment."
+        ],
+        "prep": "Perform both readings clearly. Links to Session 3 (Malala's hopeful tone). 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "tone",
+      "meaning": "How a speaker sounds: angry, hopeful, calm or urgent.",
+      "example": "Same words, different tone, different effect.",
+      "pictogram": "speaker",
+      "notes": {
+        "answer": "how a speaker sounds: angry, hopeful, calm or urgent",
+        "beats": [
+          "POINT to the word. SAY: Tone. Say it with me. Tone.",
+          [
+            "SAY: How a speaker sounds: angry, hopeful, calm or urgent.",
+            "SAY: Same words, different tone, different effect."
+          ],
+          [
+            "ASK: Say We can do this in a calm tone to your partner,",
+            "then an urgent one.",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: two clearly different tones"
+          ]
+        ],
+        "trap": [
+          "thinking tone means volume only.",
+          "Fix: say tone is the feeling; a whisper can be angry."
+        ],
+        "prep": "Tone links to features of voice (VC2E5LY02). Toolkit row 5.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Map Greta's speech",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Question",
+            "Greta's speech"
+          ],
+          [
+            "Message",
+            "Leaders are failing young people on climate."
+          ],
+          [
+            "Audience",
+            "world leaders at the UN"
+          ],
+          [
+            "Think",
+            "you are responsible"
+          ],
+          [
+            "Feel",
+            "guilty and uncomfortable"
+          ],
+          [
+            "Do",
+            "act on climate now"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "message, audience, think, feel, do",
+        "beats": [
+          [
+            "PLAY the selected section from the DCE Speech Collection.",
+            "SAY: Listen for who she says you to, and how short some sentences are."
+          ],
+          [
+            "POINT to Feel.",
+            "SAY: Severn made them feel responsible. Greta makes them feel uncomfortable. Different tone."
+          ],
+          [
+            "POINT to Audience.",
+            "SAY: She speaks straight to the leaders. You. Not they. You."
+          ],
+          [
+            "ASK: What does she want them to do?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: act now; stop talking and act"
+          ]
+        ],
+        "trap": [
+          "mixing up Greta's and Severn's messages.",
+          "Fix: ask whose speech was angrier? Student matches tone to speaker."
+        ],
+        "stretch": "Compare her tone with Malala's.",
+        "help": "Listen for the word you.",
+        "prep": "SOURCES: Greta Thunberg, UN Climate Action Summit, New York, September 2019, aged 16. CARE: climate worry is real for some students; end on what we can do.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Three words",
+      "visual": {
+        "type": "text",
+        "text": "\"How dare you!\""
+      },
+      "label": "Greta Thunberg, United Nations, 2019",
+      "notes": {
+        "answer": "short, direct (you), and the tone is anger",
+        "beats": [
+          "SAY: Three words. Some of the most famous in any climate speech.",
+          [
+            "POINT to you.",
+            "SAY: She doesn't say how dare they.",
+            "She says you. Every leader in that room feels it."
+          ],
+          "SAY: It's short. After her long sentences, three words land like a punch.",
+          [
+            "ASK: Why is you stronger than they here?",
+            "15 sec. Turn and tell, partner B first.",
+            "EXPECT: it points at them; they can't hide"
+          ]
+        ],
+        "trap": [
+          "copying the anger into every line of their own speech.",
+          "Fix: say save the punch for one moment; a whole speech of shouting stops working."
+        ],
+        "stretch": "Find where your own speech needs one short punch.",
+        "help": "Try: You can ___. Start today.",
+        "prep": "SOURCES: check the wording and context against your DCE copy. Toolkit rows 5 and 6.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Name the tone",
+      "routine": "fingers",
+      "thinkTime": 5,
+      "pivot": "say it aloud in each tone; which fits the words?",
+      "followUp": "cold call one student: which words gave it away?",
+      "items": [
+        {
+          "text": "You promised. You broke it. Again.",
+          "answer": "1 - angry",
+          "expect": "1 finger"
+        },
+        {
+          "text": "Together, we can still turn this around.",
+          "answer": "2 - hopeful",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Let's look at what the scientists found.",
+          "answer": "3 - calm",
+          "expect": "3 fingers"
+        },
+        {
+          "text": "Imagine a world where every child can swim in a clean river.",
+          "answer": "2 - hopeful",
+          "expect": "2 fingers"
+        }
+      ],
+      "notes": {
+        "say": [
+          "1 angry, 2 hopeful, 3 calm."
+        ],
+        "trap": [
+          "voting angry for any line with you.",
+          "Fix: ask is it blaming or inviting? Student re-votes."
+        ],
+        "stretch": "Rewrite one line in a different tone.",
+        "help": "Listen for blame words: promised, broke, failed.",
+        "prep": "Guided practice. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which line makes the audience responsible?",
+      "options": [
+        {
+          "text": "Someone should do something about litter.",
+          "misconception": "someone lets every listener off the hook"
+        },
+        {
+          "text": "Litter is a big problem in many places.",
+          "misconception": "a statement; nobody is asked to act"
+        },
+        {
+          "text": "You walked past it. You can pick it up."
+        }
+      ],
+      "answer": 2,
+      "notes": {
+        "answer": "C - you points straight at the listener",
+        "beats": [
+          "SAY: Three lines about litter. Which one makes YOU feel responsible?",
+          [
+            "ASK: Which line makes the audience responsible?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to C"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: who does someone point at?",
+            "Less -> read each aloud to one student, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: C. You. Short. Nowhere to hide."
+          ]
+        ],
+        "trap": [
+          "pointing to A because it says someone should act.",
+          "Fix: ask who is someone? Nobody. Student re-chooses."
+        ],
+        "prep": "Decision point before writing. Under 80% means the class rewrites line A together.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Long, then punch",
+      "routine": "boards",
+      "thinkTime": 25,
+      "pivot": "find what the long sentence builds to; say it in five words",
+      "followUp": "cold call one board: perform it, long then short",
+      "items": [
+        {
+          "text": "Every morning, hundreds of cars idle outside our gate while kids breathe the fumes.",
+          "answer": "You can turn the key.",
+          "expect": "a short you-punch"
+        },
+        {
+          "text": "We have known about plastic in the ocean for years, and still the bags keep coming.",
+          "answer": "Not one more.",
+          "expect": "a 2-5 word punch"
+        },
+        {
+          "text": "The bears have waited all summer on the shore for ice that comes later every year.",
+          "answer": "They can't wait forever.",
+          "expect": "a 2-5 word punch"
+        }
+      ],
+      "notes": {
+        "say": [
+          "A long sentence builds. You add the punch."
+        ],
+        "trap": [
+          "a punch that is another long sentence.",
+          "Fix: student counts: five words or fewer."
+        ],
+        "stretch": "Make your punch talk straight to the audience.",
+        "help": "Try: Not anymore. or You can stop it.",
+        "prep": "Guided practice on sentence length for effect (VC2E5LA05). SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Speak with fire",
+      "task": "Work through your Worksheet. Finish by rewriting three lines of your speech: talk straight to your audience and add a short punch. Add Greta to your Toolkit.",
+      "where": "Worksheet",
+      "frame": "___ (long). ___ (short). You ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "angry",
+          "microphone",
+          "pencil"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Short, direct, on purpose",
+      "notes": {
+        "answer": "three lines with you and at least one long-then-short pair",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Pick three lines from your speech so far. Make them talk straight to your audience."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Ask: who is you here? Is the punch five words or fewer?",
+          [
+            "ASK: Perform your best long-then-short pair for your partner.",
+            "30 sec each. Turn and tell, partner A first.",
+            "EXPECT: a clear pause before the punch"
+          ]
+        ],
+        "trap": [
+          "you used to blame a friendly audience.",
+          "Fix: student checks the tone fits who is listening."
+        ],
+        "stretch": "Extension: one line in three tones, then choose your speech's tone.",
+        "help": "Supported Worksheet: picture-clue choices, a first rewrite done, a frame.",
+        "prep": "Independent application. Toolkit rows 5 and 6 filled before the exit. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in three rewritten speech lines with you and a short punch"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Topic: rubbish left on the beach after summer.",
+        "Write a long sentence, then a short punch that talks straight to the audience."
+      ],
+      "notes": {
+        "answer": "e.g. Cans and wrappers cover the sand every January. You left them.",
+        "beats": [
+          "SAY: A new topic. Build it, then punch it.",
+          [
+            "ASK: Write a long sentence, then a short you-punch.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a long sentence, then five words or fewer with you"
+          ],
+          "RECORD who writes no you, or a long punch. Tomorrow's warm-up."
+        ],
+        "trap": [
+          "People should clean up the beach.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new topic. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Hopeful or angry: which tone will your speech use, and why?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - hopeful, because my audience is younger kids",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can",
+            "write a short punch that talks to your audience?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Hopeful or angry: which tone will your speech use, and why?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: hopeful, because my audience is younger kids"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Toolkit rows 5-6 filled. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

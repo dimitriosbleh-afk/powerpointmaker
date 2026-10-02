@@ -1,0 +1,1012 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 1,
+    "session": 3,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Walk in Their Boots",
+    "subtitle": "Term 4 Week 1, Session 3",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 1 Session 3",
+    "outputFolder": "T4W1_Lit_S3_Walk_In_Their_Boots",
+    "fileName": "Session 3 - Walk in Their Boots.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA02 moving beyond bare assertions by taking account of differing ideas and opinions; VC2E5LE02 forming and sharing opinions on a literary text; VC2E5LY10 creating texts for purpose and audience",
+      "shape": "sort then become: a cut-and-paste sort of eight arguments, then a paragraph written in the voice of someone students disagree with, because writers who understand the other side argue better",
+      "criticalFeature": "who is speaking changes what they care about, and so what reason they give",
+      "decisionPoints": [
+        "the Who might say it? round",
+        "the choice check: which reason would a scientist give?",
+        "the exit board: two voices on a new issue"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Today: every claim belongs to someone, and they have their reasons.",
+      "catchUp": "Missed Sessions 1-2? Say: an issue is a question fair people disagree on. They can do the sort and the paragraph today without the Issue Card."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Scissors and glue sticks",
+      "Mini-whiteboards and markers",
+      "Writing books"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Turn and tell",
+      "Point to A, B or C"
+    ],
+    "boardSetup": [
+      "The issue written large: Should tourist boats take visitors to see polar bears?",
+      "A two-column chart: Who | What they care about"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: what each person cares about, whose words, fix the voice, then argue the other side.",
+      "title": "Walk in Their Boots",
+      "subtitle": "Who is speaking changes what they care about.",
+      "sections": [
+        {
+          "title": "Who cares about what?",
+          "columns": 1,
+          "example": {
+            "prompt": "Issue: should the beach be closed to dogs? Person: a dog owner.",
+            "steps": [
+              "Who are they?",
+              "What do they care about?",
+              "So which side?"
+            ],
+            "answer": "A dog owner cares about walks and exercise, so they are against closing the beach."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Issue: should the beach be closed to dogs? Fill in each person.",
+              "columns": [
+                "Person",
+                "Cares about",
+                "For or against closing?"
+              ],
+              "rows": [
+                [
+                  "lifeguard",
+                  "",
+                  ""
+                ],
+                [
+                  "little kid",
+                  "",
+                  ""
+                ],
+                [
+                  "surfer",
+                  "",
+                  ""
+                ],
+                [
+                  "cafe owner",
+                  "",
+                  ""
+                ],
+                [
+                  "bird ranger",
+                  "",
+                  ""
+                ],
+                [
+                  "dog walker",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "lifeguard",
+                  "swimmers' safety",
+                  "for"
+                ],
+                [
+                  "little kid",
+                  "not being knocked over; or patting dogs",
+                  "either, with a reason"
+                ],
+                [
+                  "surfer",
+                  "space to surf; maybe their own dog",
+                  "either, with a reason"
+                ],
+                [
+                  "cafe owner",
+                  "customers who walk dogs",
+                  "against"
+                ],
+                [
+                  "bird ranger",
+                  "nesting birds",
+                  "for"
+                ],
+                [
+                  "dog walker",
+                  "their job",
+                  "against"
+                ]
+              ],
+              "widths": [
+                1,
+                1.6,
+                1
+              ],
+              "rowH": 26
+            }
+          ]
+        },
+        {
+          "title": "Whose words?",
+          "columns": 3,
+          "example": {
+            "prompt": "'The waves are better with no dogs in the water.' Who said it?",
+            "steps": [
+              "Read the words",
+              "Ask: what do they care about?",
+              "Match the person"
+            ],
+            "answer": "the surfer"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "'My customers love walking dogs past my shop.' Who said it?",
+              "options": [
+                "lifeguard",
+                "cafe owner",
+                "surfer"
+              ],
+              "answer": 1
+            },
+            {
+              "kind": "choice",
+              "prompt": "'I keep swimmers safe from loose dogs.' Who said it?",
+              "options": [
+                "dog walker",
+                "little kid",
+                "lifeguard"
+              ],
+              "answer": 2
+            },
+            {
+              "kind": "choice",
+              "prompt": "'Dogs scare the birds off their nests.' Who said it?",
+              "options": [
+                "bird ranger",
+                "cafe owner",
+                "dog walker"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "title": "Fix the voice",
+          "columns": 1,
+          "example": {
+            "prompt": "As a ranger, I protect the birds. I personally love dogs though.",
+            "steps": [
+              "Find the sentence in your own voice",
+              "Cross it out",
+              "Write what the ranger would say"
+            ],
+            "answer": "As a ranger, I protect the birds. Every nest matters to me."
+          },
+          "items": [
+            {
+              "kind": "mistake",
+              "prompt": "Ava wrote as a lifeguard but slipped back into her own voice. Find it and fix it.",
+              "work": [
+                "As a lifeguard, I worry about loose dogs near swimmers. Personally, I just think dogs are cute."
+              ],
+              "answer": "The last sentence is Ava, not the lifeguard. Fix: Last summer I treated three children for dog scratches."
+            }
+          ]
+        },
+        {
+          "title": "Argue the other side",
+          "columns": 1,
+          "example": {
+            "prompt": "As a tour boat captain...",
+            "steps": [
+              "Say who you are",
+              "Give the reason they care about most",
+              "Answer the other side's worry"
+            ],
+            "answer": "As a captain, I show visitors the Arctic. They go home and protect it. We stay far back and never feed the bears."
+          },
+          "items": [
+            {
+              "prompt": "Tourist boats in the Arctic: choose a speaker from the side you DON'T agree with. Write their paragraph in their voice.",
+              "answer": "Who I am, the reason they care about most, and an answer to the other side's worry.",
+              "lines": 7
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: one fact told two ways, then a conversation where each side answers the other.",
+      "title": "Two Voices",
+      "subtitle": "Same facts, different eyes.",
+      "sections": [
+        {
+          "title": "One fact, two spins",
+          "columns": 1,
+          "example": {
+            "prompt": "Fact: 40 tour boats visited the bay last summer.",
+            "steps": [
+              "How would the captain tell it?",
+              "How would the scientist tell it?",
+              "Notice the different words"
+            ],
+            "answer": "Captain: 40 boats of people who now care about bears! Scientist: 40 boats of noise in the bears' hunting grounds."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write how each person would tell the same fact.",
+              "columns": [
+                "Fact",
+                "Tour boat captain",
+                "Bear scientist"
+              ],
+              "rows": [
+                [
+                  "The tour season is now twice as long.",
+                  "",
+                  ""
+                ],
+                [
+                  "Visitors take 10,000 photos of bears a year.",
+                  "",
+                  ""
+                ],
+                [
+                  "The town has a new tour office.",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "The tour season is now twice as long.",
+                  "More months of jobs and learning",
+                  "More months of disturbance"
+                ],
+                [
+                  "Visitors take 10,000 photos of bears a year.",
+                  "10,000 reasons people care",
+                  "10,000 times a bear was followed"
+                ],
+                [
+                  "The town has a new tour office.",
+                  "Our town is growing",
+                  "More boats are coming"
+                ]
+              ],
+              "widths": [
+                1.2,
+                1,
+                1
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "They answer each other",
+          "columns": 1,
+          "example": {
+            "prompt": "Captain: People who see bears protect them. Scientist: ...",
+            "steps": [
+              "Start with the captain's best reason",
+              "The scientist answers that exact reason",
+              "Keep both fair"
+            ],
+            "answer": "Scientist: People can care through cameras, without boats in the way."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Write a short conversation (6 lines) between the captain and the scientist. Each line must answer the one before.",
+              "answer": "Six lines; each answers the line before; both voices stay fair.",
+              "lines": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: a short sort, a partly filled chart and a paragraph frame.",
+      "title": "Walk in Their Boots Helper",
+      "subtitle": "Ask: who are they, and what do they care about?",
+      "sections": [
+        {
+          "title": "For or against?",
+          "columns": 1,
+          "example": {
+            "prompt": "'Boats bring jobs to our town.'",
+            "steps": [
+              "Read it",
+              "Does it want boats or not?",
+              "Sort it"
+            ],
+            "answer": "FOR the boats"
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "Sort the cards: FOR or AGAINST tourist boats.",
+              "cards": [
+                "Jobs for our town",
+                "Noise scares bears",
+                "People learn to care",
+                "Fuel can spill",
+                "Tickets pay for research",
+                "Bears need peace"
+              ],
+              "groups": [
+                "FOR",
+                "AGAINST"
+              ],
+              "answer": {
+                "FOR": [
+                  "Jobs for our town",
+                  "People learn to care",
+                  "Tickets pay for research"
+                ],
+                "AGAINST": [
+                  "Noise scares bears",
+                  "Fuel can spill",
+                  "Bears need peace"
+                ]
+              },
+              "hint": "FOR cards say something good about the boats."
+            }
+          ]
+        },
+        {
+          "title": "What do they care about?",
+          "columns": 1,
+          "example": {
+            "prompt": "Person: tour boat captain.",
+            "steps": [
+              "Think about their job",
+              "What would they lose?",
+              "Write it"
+            ],
+            "answer": "jobs and showing people the Arctic"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in what each person cares about.",
+              "columns": [
+                "Person",
+                "Cares about"
+              ],
+              "rows": [
+                [
+                  "tour boat captain",
+                  "jobs, sharing the Arctic"
+                ],
+                [
+                  "bear scientist",
+                  ""
+                ],
+                [
+                  "tourist",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "tour boat captain",
+                  "jobs, sharing the Arctic"
+                ],
+                [
+                  "bear scientist",
+                  "where bears hunt"
+                ],
+                [
+                  "tourist",
+                  "seeing a bear once in a lifetime"
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                1.6
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "Speak as them",
+          "columns": 1,
+          "example": {
+            "prompt": "Person: bear scientist.",
+            "steps": [
+              "As a ___,",
+              "I care about ___.",
+              "That is why I ___."
+            ],
+            "answer": "As a bear scientist, I care about where bears hunt. That is why I worry about boats."
+          },
+          "items": [
+            {
+              "prompt": "Choose one person. Finish the frame: As a ___, I care about ___. That is why I ___.",
+              "answer": "A three-part paragraph in that person's voice.",
+              "lines": 4,
+              "hint": "Use I and my, as if you are them."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    },
+    {
+      "kind": "cards",
+      "label": "Perspective Cards",
+      "description": "Cut-and-paste activity: eight arguments about Arctic tourist boats, in mixed order. One sheet per student.",
+      "title": "Perspective Cards",
+      "subtitle": "Cut out the cards. Sort them FOR or AGAINST on your mat.",
+      "cols": 2,
+      "cardH": 100,
+      "cards": [
+        {
+          "text": "Visitors who see a polar bear up close go home and fight to protect them."
+        },
+        {
+          "text": "Boats bring noise and fuel into the places where bears hunt."
+        },
+        {
+          "text": "Tourism pays for the jobs that keep our small Arctic town alive."
+        },
+        {
+          "text": "This is the bears' home, not a zoo. They were here first."
+        },
+        {
+          "text": "A bear that gets used to people can become a danger to them, and to itself."
+        },
+        {
+          "text": "Every ticket sold can help pay for polar bear research."
+        },
+        {
+          "text": "Every flight and cruise to the Arctic adds to the warming that melts the ice."
+        },
+        {
+          "text": "Seeing a wild polar bear is a once-in-a-lifetime memory."
+        }
+      ],
+      "tip": "Stretch: star the strongest card on each side. Write why it is the strongest."
+    },
+    {
+      "kind": "page",
+      "label": "Perspective Sort Mat",
+      "description": "Glue mat for the Perspective Cards: FOR and AGAINST boxes and a bank of speakers to label each card.",
+      "title": "Should tourist boats take visitors to see polar bears?",
+      "subtitle": "Glue each card on the side it argues for. Under each card, write who might say it.",
+      "blocks": [
+        {
+          "visual": {
+            "type": "chips",
+            "items": [
+              "scientist",
+              "captain",
+              "local",
+              "tourist",
+              "ranger",
+              "bear"
+            ]
+          }
+        },
+        {
+          "box": 225,
+          "label": "FOR the boats"
+        },
+        {
+          "box": 225,
+          "label": "AGAINST the boats"
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today we step into other people's boots and argue their side."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print one Perspective Cards sheet and one Sort Mat per student for the cut and paste. Then the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for students who need it. Scissors and glue on tables."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to see an issue through other people's eyes.",
+      "successCriteria": [
+        "I can say who cares about an issue and why.",
+        "I can sort arguments for and against and name who might give them.",
+        "I can write a paragraph from a point of view that is not my own."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today you argue a side you might not even agree with."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Naming who cares is where everyone starts.",
+            "Sorting and naming the speaker is today's main goal."
+          ]
+        ],
+        "prep": "SC1 naming who cares is reachable for all; SC2 sorting and naming the speaker is the core and the exit evidence; SC3 writing in another voice is the stretch most students will reach.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Same news, different eyes",
+      "lines": [
+        "The canteen is closing for a week.",
+        "How does it feel for the canteen worker? A student who forgot lunch? A parent?"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "shop",
+            "label": "canteen worker"
+          },
+          {
+            "name": "student",
+            "label": "hungry student"
+          },
+          {
+            "name": "family",
+            "label": "parent"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "worried about pay; hungry and cross; relieved or annoyed",
+        "beats": [
+          [
+            "SAY: One piece of news. Three people hear it.",
+            "Same news, different feelings."
+          ],
+          [
+            "ASK: Is the canteen closing good news or bad news?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: a mix. That's the point."
+          ],
+          [
+            "ASK: Pick one person. How do they feel about the canteen closing, and why?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: the worker is worried about money; the student is hungry"
+          ],
+          [
+            "SAY: Who you are changes what you care about.",
+            "In The Last Bear, April and her dad see Bear Island differently too."
+          ]
+        ],
+        "trap": [
+          "giving everyone the same feeling.",
+          "Fix: ask what does this person lose or win? Student answers for that person."
+        ],
+        "prep": "Low-coupling launch: everyone can reason about the canteen, so returning students join fully. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "perspective",
+      "meaning": "The way one person sees an issue, because of who they are.",
+      "example": "From a farmer's perspective, rain is great. From a camper's, not so much.",
+      "pictogram": "binoculars",
+      "notes": {
+        "answer": "the way one person sees an issue, because of who they are",
+        "beats": [
+          "POINT to the word. SAY: Perspective. Say it with me. Perspective.",
+          [
+            "SAY: Your perspective is how you see something because of who you are.",
+            "Same rain. The farmer cheers, the camper groans."
+          ],
+          [
+            "ASK: From a dog's perspective, what is the best part of the day?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: walk time, dinner time"
+          ]
+        ],
+        "trap": [
+          "thinking perspective means opinion, with no reason why.",
+          "Fix: ask because of who they are? Student adds the who."
+        ],
+        "prep": "Point of view in plain words. The binoculars: you look from where someone stands.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "I Do",
+      "title": "Step into their boots",
+      "lines": [
+        "Should tourist boats take visitors to see polar bears?",
+        "Who are they? What do they care about? So which side?"
+      ],
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Who",
+            "Cares about",
+            "Side"
+          ],
+          [
+            "Boat captain",
+            "jobs, sharing nature",
+            "For"
+          ],
+          [
+            "Bear scientist",
+            "where bears hunt",
+            "Against"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "the captain cares about jobs, so for; the scientist cares about hunting grounds, so against",
+        "beats": [
+          [
+            "POINT to the question.",
+            "SAY: Here's today's issue. I'll step into two pairs of boots."
+          ],
+          [
+            "POINT to Boat captain.",
+            "SAY: I drive the boat. My crew needs this job.",
+            "I love showing people the Arctic. So I'm for the boats."
+          ],
+          [
+            "POINT to Bear scientist.",
+            "SAY: I study where bears hunt. Noise and fuel worry me.",
+            "So I'm against."
+          ],
+          [
+            "ASK: Same issue. Why do they disagree? One word.",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: they care about different things; jobs, bears"
+          ]
+        ],
+        "trap": [
+          "deciding the side first, then inventing a reason.",
+          "Fix: student answers who? and cares about? before choosing a side."
+        ],
+        "stretch": "Find something the captain and scientist both care about.",
+        "help": "Use the three questions on the slide in order.",
+        "prep": "The model. Critical feature: who is speaking changes what they care about, and so the reason they give.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Who might say it?",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "ask: what does this person win or lose?",
+      "followUp": "cold call one board: what words gave them away?",
+      "items": [
+        {
+          "text": "If the boats stop, I lose my job.",
+          "answer": "boat crew - for the boats",
+          "expect": "boat captain or crew, for"
+        },
+        {
+          "text": "My tracking data shows bears avoid busy waters.",
+          "answer": "scientist - against",
+          "expect": "scientist, against"
+        },
+        {
+          "text": "I saved for ten years to make this trip.",
+          "answer": "tourist - for",
+          "expect": "tourist, for"
+        },
+        {
+          "text": "Leave me alone so I can hunt in peace.",
+          "answer": "the polar bear - against",
+          "expect": "polar bear, against",
+          "say": "The bear itself. Writers can speak for an animal too. Tick or fix."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Four quotes. Write who might say it, and which side.",
+          "Look for the clue in what they care about."
+        ],
+        "trap": [
+          "writing only for or against, with no speaker.",
+          "Fix: student writes the who first, then the side."
+        ],
+        "stretch": "Name a second person who might say the same thing.",
+        "help": "Choose from: scientist, captain, tourist, ranger, polar bear.",
+        "prep": "Guided practice on new quotes before the cards. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which reason would a bear scientist most likely give?",
+      "options": [
+        {
+          "text": "Tickets bring good money into town.",
+          "misconception": "gives the captain's or business view, not the scientist's"
+        },
+        {
+          "text": "Boats can disturb bears while they hunt."
+        },
+        {
+          "text": "It is a once-in-a-lifetime trip.",
+          "misconception": "gives the tourist's view; ignores who is speaking"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - boats can disturb bears while they hunt",
+        "beats": [
+          "SAY: You are the scientist now. Think about what you study.",
+          [
+            "ASK: Which reason would a bear scientist most likely give?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: who would give reason A?",
+            "Less -> fill the Who / Cares about chart, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. A scientist cares about how the bears live, so that's their reason."
+          ]
+        ],
+        "trap": [
+          "choosing the reason they personally agree with.",
+          "Fix: ask what does a scientist study? Student re-chooses."
+        ],
+        "prep": "Decision point before the cut-and-paste. Under 80% means the first two cards are sorted together.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "We Do",
+      "title": "Cut, sort, glue",
+      "lines": [
+        "Cut out the eight cards.",
+        "Sort them FOR or AGAINST, then glue.",
+        "Write who might say it under each card."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "scissors",
+            "label": "cut"
+          },
+          {
+            "name": "sort",
+            "label": "sort"
+          },
+          {
+            "name": "pen",
+            "label": "label"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "FOR: protect, jobs, research, memory. AGAINST: noise, their home, danger, warming",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Sort before you glue. Lay all eight out first, then decide."
+          ],
+          [
+            "SAY: Cut, sort, label. Say it with me.",
+            "3 sec. Cue: Everyone, together, on three."
+          ],
+          [
+            "ASK: Before gluing: the jobs card. For or against?",
+            "5 sec. Cue: Fingers at your chest, 1 for, 2 against... show me.",
+            "EXPECT: 1, for"
+          ],
+          "CIRCULATE. Ask one student per table: who would say that card?",
+          [
+            "ASK: Hold up the card you think is strongest on your side.",
+            "5 sec. Cue: Hold it up, voices off... show me.",
+            "EXPECT: any card, held up with a reason ready"
+          ]
+        ],
+        "trap": [
+          "gluing before sorting, then getting stuck.",
+          "Fix: student lays all cards out, sorts, then glues."
+        ],
+        "prep": "Fun activity: cut and paste. 12 minutes. The sorted mat becomes the reason bank for the paragraph. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7]",
+        "stretch": "Star the strongest card each side; write why.",
+        "help": "Sort with a partner, then label on your own."
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "I Do",
+      "title": "Write in their voice",
+      "extract": "As a tour boat captain, I have shown thousands of visitors the Arctic. Every one of them goes home changed. They donate, they vote and they tell their friends. My boat follows strict rules: we stay far back, we cut the engine and we never feed the bears.",
+      "highlights": [
+        "As a tour boat captain",
+        "Every one of them goes home changed",
+        "we stay far back"
+      ],
+      "source": "Written for this session",
+      "notes": {
+        "answer": "say who you are, give the reason they care about, answer the other side's worry",
+        "beats": [
+          [
+            "READ it aloud once, like the captain.",
+            "SAY: I'm writing as someone else, so I start by saying who I am."
+          ],
+          [
+            "POINT to goes home changed.",
+            "SAY: Then the reason this person cares about most."
+          ],
+          [
+            "POINT to we stay far back.",
+            "SAY: A clever captain answers the scientist's worry before they can say it."
+          ],
+          [
+            "ASK: What are the three moves I made?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: who I am, why I care, answer the worry"
+          ]
+        ],
+        "trap": [
+          "switching back to their own view halfway through.",
+          "Fix: student reads it aloud as the character and crosses out their own opinion."
+        ],
+        "stretch": "Write the scientist's reply in the same three moves.",
+        "help": "Use the frame: As a ___, I believe ___ because ___.",
+        "prep": "Second model, for the You Do: who I am, why I care, answer the worry. SC3.",
+        "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Argue the other side",
+      "task": "Work through your Worksheet. Finish by arguing the other side, in their voice.",
+      "where": "Main sheet",
+      "frame": "As a ___, I believe ___ because ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "footprints",
+          "binoculars",
+          "pen"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Walk in their boots",
+      "notes": {
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: This is the hard one.",
+            "Argue for the side you disagree with, as well as you can."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Read the first line: is it clearly someone else's voice?",
+          "TIME 12 minutes. At 9 minutes, two students read theirs in character."
+        ],
+        "trap": [
+          "a weak paragraph on purpose, because they disagree.",
+          "Fix: ask would this person be proud of it? Student strengthens one reason."
+        ],
+        "stretch": "Extension: one fact told two ways, and a conversation where each side answers.",
+        "help": "Supported Worksheet: a short sort, a partly filled chart, a paragraph frame.",
+        "prep": "Independent application. The other side's best reason is what students rebut in tomorrow's debate. SC3.",
+        "tag": "[You Do | Independent application | SC3 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a paragraph written in the voice of a speaker from the other side"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Should the school ban ball games at lunch?",
+        "Write what a Prep student might say, and what a teacher on yard duty might say."
+      ],
+      "notes": {
+        "answer": "two different reasons: Prep loves the games; teacher worries about kids getting hit",
+        "beats": [
+          "SAY: A brand new issue, two new people. Show me both perspectives.",
+          [
+            "ASK: Write one sentence for each person.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: two different reasons that fit who is speaking"
+          ],
+          "RECORD who gives both people the same reason. Tomorrow's debate partners."
+        ],
+        "trap": [
+          "both sentences in the student's own voice.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new issue: naming what each speaker cares about. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Did arguing the other side change your mind at all? Tell your partner why or why not.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for students who now see a reason on the other side",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that you can argue someone else's side?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Did arguing the other side change your mind at all?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: a bit, because their reason about jobs made sense"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Collect the Sort Mats; they are the reason bank for tomorrow's debate. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

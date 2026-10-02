@@ -1,0 +1,894 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 4,
+    "session": 3,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Build Your Body",
+    "subtitle": "Term 4 Week 4, Session 3",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 4 Session 3",
+    "outputFolder": "T4W4_Lit_S3_Build_Your_Body",
+    "fileName": "Session 3 - Build Your Body.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LA04 using the starting point of a paragraph to give prominence to the message and guide the reader; VC2E5LY10 creating texts with elaborated, sequenced ideas; VC2E5LA02 authoritative sources",
+      "shape": "skim, pick, link, draft: the skim test shows why first sentences matter, students pick topic sentences and linking words, then draft two body paragraphs, because sustained drafting time is the priority this week",
+      "criticalFeature": "the first sentence of a paragraph tells the reader its claim; the linking word tells them where they are",
+      "decisionPoints": [
+        "the Find the topic sentence round",
+        "the choice check: the strongest topic sentence",
+        "the exit board: a topic sentence written for a new paragraph"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. One paragraph, all three moves, claim first.",
+      "catchUp": "Missed the planning? Five minutes with the planner and the Paragraph Builder; draft one body paragraph today."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Big piece plan and the introduction draft",
+      "Mini-whiteboards and markers",
+      "Arctic Fact Cards and Power Word Bank"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 or 2",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Linking words by job: next reason (In addition), strongest (Most importantly), result (As a result), example (For example)",
+      "Paragraph recipe: topic sentence, proof, This means..., sell it"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: sort topic sentences from proof, link paragraphs, fix a squashed paragraph, then plan your body paragraphs.",
+      "title": "Build Your Body",
+      "subtitle": "The first sentence carries the claim.",
+      "sections": [
+        {
+          "title": "Topic sentence or proof?",
+          "columns": 1,
+          "example": {
+            "prompt": "'Our library needs more beanbags.'",
+            "steps": [
+              "Does it make a claim?",
+              "Do other sentences prove it?",
+              "Claim = topic sentence"
+            ],
+            "answer": "topic sentence"
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "Sort the sentences: TOPIC SENTENCE or PROOF.",
+              "cards": [
+                "Every classroom needs a water filter.",
+                "Last week the oval flooded twice.",
+                "Our oval needs better drains.",
+                "Tap water costs far less than bottled.",
+                "Kids should help plan the canteen menu.",
+                "Most kids finish lunch in ten minutes.",
+                "Lunch should be longer.",
+                "Our survey: 20 of 25 kids skip canteen food."
+              ],
+              "groups": [
+                "TOPIC SENTENCE",
+                "PROOF"
+              ],
+              "answer": {
+                "TOPIC SENTENCE": [
+                  "Every classroom needs a water filter.",
+                  "Our oval needs better drains.",
+                  "Kids should help plan the canteen menu.",
+                  "Lunch should be longer."
+                ],
+                "PROOF": [
+                  "Last week the oval flooded twice.",
+                  "Tap water costs far less than bottled.",
+                  "Most kids finish lunch in ten minutes.",
+                  "Our survey: 20 of 25 kids skip canteen food."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Link it",
+          "columns": 1,
+          "example": {
+            "prompt": "___, gardens teach science. (second reason)",
+            "steps": [
+              "Read the job in brackets",
+              "Choose a linking word for that job",
+              "Add a comma"
+            ],
+            "answer": "In addition,"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write a linking word for each job.",
+              "columns": [
+                "Sentence",
+                "Linking word"
+              ],
+              "rows": [
+                [
+                  "___, shade protects us from UV. (first reason)",
+                  ""
+                ],
+                [
+                  "___, trees cool our classrooms. (strongest reason)",
+                  ""
+                ],
+                [
+                  "The oval flooded. ___, sport was cancelled. (a result)",
+                  ""
+                ],
+                [
+                  "Bikes save money. ___, a bus pass costs $300. (an example)",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "___, shade protects us from UV. (first reason)",
+                  "Firstly,"
+                ],
+                [
+                  "___, trees cool our classrooms. (strongest reason)",
+                  "Most importantly,"
+                ],
+                [
+                  "The oval flooded. ___, sport was cancelled. (a result)",
+                  "As a result,"
+                ],
+                [
+                  "Bikes save money. ___, a bus pass costs $300. (an example)",
+                  "For example,"
+                ]
+              ],
+              "widths": [
+                2.3,
+                1
+              ],
+              "rowH": 24
+            }
+          ]
+        },
+        {
+          "title": "One reason, one paragraph",
+          "columns": 2,
+          "example": {
+            "prompt": "Two reasons in one paragraph?",
+            "steps": [
+              "Find where the second reason starts",
+              "Start a new paragraph there",
+              "Give it its own topic sentence"
+            ],
+            "answer": "Split it, and give the second reason a topic sentence."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which is the strongest topic sentence for a paragraph about noise?",
+              "options": [
+                "Some things are loud.",
+                "Leaf blowers should be banned before 8 am.",
+                "In 2025 a survey asked people."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "It makes a clear claim the paragraph can prove."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Sam squashed two reasons together. Find the problem and fix it.",
+              "work": [
+                "Firstly, dogs need exercise. Also the park has no fence, and cars are dangerous for dogs."
+              ],
+              "answer": "Two reasons in one paragraph. Fix: keep exercise here; start a new paragraph: In addition, a fence would keep dogs safe from cars."
+            }
+          ]
+        },
+        {
+          "title": "Plan your body paragraphs",
+          "columns": 1,
+          "example": {
+            "prompt": "Zoo letter",
+            "steps": [
+              "Linking word",
+              "Topic sentence (the claim)",
+              "Proof to use"
+            ],
+            "answer": "Firstly, polar bears need more space than any zoo can give. Proof: they roam hundreds of km."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Plan each body paragraph. Then draft them in your writing book, every second line.",
+              "columns": [
+                "Paragraph",
+                "Linking word + topic sentence",
+                "Proof I'll use"
+              ],
+              "rows": [
+                [
+                  "1",
+                  "",
+                  ""
+                ],
+                [
+                  "2",
+                  "",
+                  ""
+                ],
+                [
+                  "3 (strongest)",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "1",
+                  "Firstly, + reason 1 as a claim",
+                  "a sourced fact"
+                ],
+                [
+                  "2",
+                  "In addition, + reason 2",
+                  "a sourced fact or example"
+                ],
+                [
+                  "3 (strongest)",
+                  "Most importantly, + reason 3",
+                  "the strongest proof"
+                ]
+              ],
+              "widths": [
+                0.6,
+                1.6,
+                1.2
+              ],
+              "rowH": 40
+            }
+          ]
+        }
+      ],
+      "tip": "Drafted them? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: improve weak topic sentences, then explain proof with This means.",
+      "title": "Paragraph Power",
+      "subtitle": "Make every paragraph pull its weight.",
+      "sections": [
+        {
+          "title": "Sharpen the topic sentence",
+          "columns": 1,
+          "example": {
+            "prompt": "Weak: This paragraph is about trees.",
+            "steps": [
+              "What is the claim?",
+              "Use high modality",
+              "Make it specific"
+            ],
+            "answer": "Strong: Every playground needs at least ten shade trees."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each weak topic sentence as a sharp claim.",
+              "columns": [
+                "Weak",
+                "Sharp claim"
+              ],
+              "rows": [
+                [
+                  "I will talk about bins now.",
+                  ""
+                ],
+                [
+                  "Phones are a thing at school.",
+                  ""
+                ],
+                [
+                  "Here is another reason.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "I will talk about bins now.",
+                  "Every classroom must have a recycling bin."
+                ],
+                [
+                  "Phones are a thing at school.",
+                  "Phones should stay in bags until home time."
+                ],
+                [
+                  "Here is another reason.",
+                  "Most importantly, shade protects us from skin cancer."
+                ]
+              ],
+              "widths": [
+                1,
+                1.6
+              ],
+              "rowH": 36
+            }
+          ]
+        },
+        {
+          "title": "Explain the proof",
+          "columns": 1,
+          "example": {
+            "prompt": "Proof: the oval flooded twice last week.",
+            "steps": [
+              "Write This means...",
+              "Say why it matters to the reader",
+              "Link back to the claim"
+            ],
+            "answer": "This means students lose sport, so the drains must be fixed."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Choose one proof sentence from your draft. Write two different This means... sentences for it. Which is stronger, and why?",
+              "answer": "Two explanations, one chosen, with a reason linked to the reader.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: picture-clue choices, a first link done and a paragraph frame.",
+      "title": "Paragraph Builder",
+      "subtitle": "Topic sentence, proof, This means, sell it.",
+      "sections": [
+        {
+          "title": "Topic sentence?",
+          "columns": 3,
+          "example": {
+            "prompt": "'Our school needs more bins.'",
+            "steps": [
+              "Is it a claim?",
+              "Yes",
+              "Topic sentence"
+            ],
+            "answer": "yes"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Kids should have longer lunch.",
+              "options": [
+                "topic sentence",
+                "proof"
+              ],
+              "answer": 0,
+              "hint": "Look for should."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Last week 12 bikes got wet.",
+              "options": [
+                "topic sentence",
+                "proof"
+              ],
+              "answer": 1,
+              "hint": "Is it a fact?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Every room needs a fan.",
+              "options": [
+                "topic sentence",
+                "proof"
+              ],
+              "answer": 0,
+              "hint": "Look for needs."
+            }
+          ]
+        },
+        {
+          "title": "Link it",
+          "columns": 1,
+          "example": {
+            "prompt": "first reason",
+            "steps": [
+              "Find the job",
+              "Pick the word",
+              "Add a comma"
+            ],
+            "answer": "Firstly,"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write the linking word.",
+              "columns": [
+                "Job",
+                "Linking word"
+              ],
+              "rows": [
+                [
+                  "first reason",
+                  "Firstly,"
+                ],
+                [
+                  "next reason",
+                  ""
+                ],
+                [
+                  "strongest reason",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "first reason",
+                  "Firstly,"
+                ],
+                [
+                  "next reason",
+                  "In addition,"
+                ],
+                [
+                  "strongest reason",
+                  "Most importantly,"
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                1,
+                1.2
+              ],
+              "rowH": 30
+            }
+          ]
+        },
+        {
+          "title": "Build one paragraph",
+          "columns": 1,
+          "example": {
+            "prompt": "Firstly, bears need space.",
+            "steps": [
+              "Firstly, ___.",
+              "According to ___, ___.",
+              "This means ___."
+            ],
+            "answer": "Firstly, bears need space. According to scientists, they roam hundreds of km. This means zoos are too small."
+          },
+          "items": [
+            {
+              "prompt": "Build one paragraph: Firstly, ___. According to ___, ___. This means ___.",
+              "answer": "A topic sentence, sourced proof and an explanation.",
+              "lines": 5,
+              "hint": "Use reason 1 from your plan."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: today you build the body of your argument, one strong paragraph at a time."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Drafts go in writing books, every second line."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to write body paragraphs that lead with a clear topic sentence.",
+      "successCriteria": [
+        "I can find the topic sentence of a paragraph.",
+        "I can write a body paragraph that claims it, proves it and sells it.",
+        "I can use linking words to guide my reader between paragraphs."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today is the longest writing time of the week. Let's make every paragraph count."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Finding the topic sentence is where we start.",
+            "Writing a full claim-prove-sell paragraph is today's main goal."
+          ]
+        ],
+        "prep": "SC1 finding the topic sentence is reachable for all; SC2 the full paragraph is the core and the exit evidence; SC3 linking words is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "The skim test",
+      "lines": [
+        "Busy readers often read only the first sentence of each paragraph.",
+        "There are lots of things to think about with zoos.",
+        "Polar bears need far more space than any zoo can give."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "eye",
+            "label": "skim"
+          },
+          {
+            "name": "timer",
+            "label": "busy reader"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "the second - it tells you the paragraph's claim straight away",
+        "beats": [
+          [
+            "SAY: A busy zoo director skims.",
+            "They read the first sentence of each paragraph, then decide. Here are two."
+          ],
+          [
+            "ASK: Which first sentence tells the director what the paragraph proves? First or second?",
+            "5 sec. Cue: Fingers at your chest, 1 or 2... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: What does the director learn from the first one?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: nothing; it could be about anything"
+          ],
+          "SAY: So your first sentence must carry your claim."
+        ],
+        "trap": [
+          "thinking the first one is a good hook.",
+          "Fix: say hooks start the whole piece; a paragraph starts with its claim."
+        ],
+        "prep": "Launch links to the Week 2 claim-prove-sell paragraph. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "topic sentence",
+      "meaning": "The first sentence of a paragraph. It says what the paragraph will prove.",
+      "example": "Polar bears are built for the cold, not an Australian summer.",
+      "pictogram": "pin",
+      "notes": {
+        "answer": "the first sentence; it says what the paragraph will prove",
+        "beats": [
+          "POINT to the words. SAY: Topic sentence. Say it with me. Topic sentence.",
+          [
+            "SAY: It's the pin that holds the paragraph in place.",
+            "Everything after it proves it."
+          ],
+          [
+            "ASK: What will the example paragraph prove?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: that polar bears suffer in hot places"
+          ]
+        ],
+        "trap": [
+          "a topic sentence that asks a question with no claim.",
+          "Fix: student turns the question into a statement with high modality."
+        ],
+        "prep": "Plain-words version of VC2E5LA04: the start of the paragraph gives the message prominence.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "I Do",
+      "title": "Watch me build a body paragraph",
+      "extract": "Firstly, polar bears need far more space than any zoo can give. In the wild, a polar bear can roam hundreds of kilometres in a season. Even a large zoo enclosure is a tiny fraction of that. This means a zoo bear spends its whole life in a space smaller than one day's walk. No animal built to wander should live behind a wall.",
+      "highlights": [
+        "Firstly, polar bears need far more space",
+        "In the wild, a polar bear can roam",
+        "This means",
+        "No animal built to wander"
+      ],
+      "source": "Model letter, written for this session",
+      "notes": {
+        "answer": "linking word, topic sentence, proof, This means, sell",
+        "beats": [
+          [
+            "POINT to Firstly.",
+            "SAY: Linking word tells the director: reason one. Then my claim, straight away."
+          ],
+          [
+            "POINT to In the wild.",
+            "SAY: Proof. Then I compare it with a zoo so the gap is obvious."
+          ],
+          [
+            "POINT to This means.",
+            "SAY: This means: I explain why the proof matters. Many writers skip this."
+          ],
+          [
+            "ASK: Which sentence sells it? Read it with me.",
+            "3 sec. Cue: Everyone, together, on three.",
+            "EXPECT: No animal built to wander should live behind a wall."
+          ]
+        ],
+        "trap": [
+          "proof dropped in with no explaining sentence.",
+          "Fix: student adds This means... after every piece of proof."
+        ],
+        "stretch": "Use As a result instead of This means.",
+        "help": "Paragraph Builder: four steps, one at a time.",
+        "prep": "Model body paragraph, continuing the zoo letter. Critical feature: the first sentence carries the claim.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Find the topic sentence",
+      "routine": "point",
+      "thinkTime": 10,
+      "pivot": "ask which sentence the others are proving",
+      "followUp": "cold call one student: how did you know?",
+      "items": [
+        {
+          "text": "A: It also keeps us calm. B: A class pet teaches responsibility. C: Feeding it is a shared job.",
+          "answer": "B - the others prove it",
+          "expect": "B"
+        },
+        {
+          "text": "A: Plastic straws should be banned. B: They last hundreds of years. C: Paper ones work fine.",
+          "answer": "A - the claim",
+          "expect": "A"
+        },
+        {
+          "text": "A: Our oval floods every winter. B: Kids slip and get hurt. C: The oval needs better drains.",
+          "answer": "C - the claim; A and B prove it",
+          "expect": "C",
+          "say": "C. The claim was last here. In your writing, it goes first. Tick or fix."
+        },
+        {
+          "text": "A: Shade cuts sunburn risk. B: Every playground needs more trees. C: Trees also cool the air.",
+          "answer": "B - the claim",
+          "expect": "B"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Three sentences from one paragraph, jumbled.",
+          "Point to the one that should go first."
+        ],
+        "trap": [
+          "choosing the first sentence shown.",
+          "Fix: ask which one do the others prove? Student re-points."
+        ],
+        "stretch": "Add a This means... sentence to each.",
+        "help": "Look for should, must or need: that's often the claim.",
+        "prep": "Guided practice on SC1 with mixed orders (megaprompt 19a). SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which is the strongest topic sentence?",
+      "prompt": "A paragraph about heat",
+      "options": [
+        {
+          "text": "Zoos can be very interesting places to visit.",
+          "misconception": "vague; doesn't say what the paragraph proves"
+        },
+        {
+          "text": "Polar bears are built for the cold, not for hot summers."
+        },
+        {
+          "text": "In 2011, scientists tracked a bear swimming for nine days.",
+          "misconception": "a piece of proof, not a claim"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - it claims exactly what the paragraph will prove",
+        "beats": [
+          "SAY: Three possible first sentences for a paragraph about heat.",
+          [
+            "ASK: Which is the strongest topic sentence?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: where would C go in the paragraph?",
+            "Less -> run the skim test on each, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Skim it and you know what the paragraph proves."
+          ]
+        ],
+        "trap": [
+          "pointing to C because facts are strong.",
+          "Fix: ask is it proof or a claim? Student moves it to the middle."
+        ],
+        "prep": "Decision point before drafting. Under 80% means every student writes topic sentence 1 on a board for checking first.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Link it",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "read the linking words by job on the board",
+      "followUp": "cold call one board: what job does your linking word do?",
+      "items": [
+        {
+          "text": "___, the money spent on zoo bears could protect wild ones. (my strongest reason)",
+          "answer": "Most importantly,",
+          "expect": "Most importantly"
+        },
+        {
+          "text": "___, polar bears are built for the cold. (my second reason)",
+          "answer": "In addition, / Secondly,",
+          "expect": "In addition. ACCEPT: Secondly, Also"
+        },
+        {
+          "text": "Bears pace their enclosures. ___, many zoos now add toys and puzzles. (a result)",
+          "answer": "As a result,",
+          "expect": "As a result. ACCEPT: Because of this"
+        },
+        {
+          "text": "Bears roam huge distances. ___, one swam for nine days. (an example)",
+          "answer": "For example,",
+          "expect": "For example. ACCEPT: For instance"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Each gap needs a linking word.",
+          "The brackets tell you its job."
+        ],
+        "trap": [
+          "using And then for every link.",
+          "Fix: student reads the job in brackets and picks from the board."
+        ],
+        "stretch": "Find two linking words for each job.",
+        "help": "Match the bracket to the board list.",
+        "prep": "Guided cohesion practice (VC2E5LA04). SC3.",
+        "tag": "[We Do | Supported application | SC3 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Draft your body paragraphs",
+      "task": "Work through your Worksheet, plan each paragraph, then draft your body paragraphs in your writing book.",
+      "where": "Worksheet, then writing book",
+      "frame": "Firstly, ___. According to ___, ___. This means ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "flag",
+          "magnifier",
+          "megaphone"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Claim it. Prove it. Sell it.",
+      "notes": {
+        "answer": "two or three body paragraphs, each led by its claim",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Aim for two paragraphs today. Three if you're flying."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CONFERENCE with exit-list students first. Read only their topic sentences.",
+          [
+            "ASK: How many body paragraphs are finished?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 1 at 12 minutes, 2 by the end"
+          ],
+          "TIME 22 minutes. At 18, partners do the skim test on each other."
+        ],
+        "trap": [
+          "two reasons squashed into one paragraph.",
+          "Fix: student draws a line between them and adds a new topic sentence."
+        ],
+        "stretch": "Extension: sharpen weak topic sentences and explain proof two ways.",
+        "help": "Supported Worksheet (Paragraph Builder): picture-clue choices, a first link done, a frame.",
+        "prep": "Independent drafting, the longest writing block of the week. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      },
+      "extendedTask": "a worksheet ending in a paragraph plan, then two or three drafted body paragraphs"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Walking gets your heart pumping before class. It's free, and you can chat with friends on the way.",
+        "Write the topic sentence that should start this paragraph."
+      ],
+      "notes": {
+        "answer": "e.g. Walking is the best way to start a school day",
+        "beats": [
+          "SAY: A paragraph with no first sentence. Give it one.",
+          [
+            "ASK: Write the topic sentence.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a claim that walking to school is good, with high modality"
+          ],
+          "RECORD who writes a fact or a question. Tomorrow's conference."
+        ],
+        "trap": [
+          "Did you know walking is good?",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 (leading with the claim) on a new topic. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Read only your topic sentences to your partner. Can they guess your whole argument?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - the topic sentences alone should carry the argument",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How sure are you that your paragraphs lead with their claim?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Read only your topic sentences. Can your partner guess your argument?",
+            "30 sec. Turn and tell, partner A first.",
+            "EXPECT: yes, they could say my reasons back"
+          ]
+        ],
+        "prep": "Self-assessment and the skim test on their own work. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

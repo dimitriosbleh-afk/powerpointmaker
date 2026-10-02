@@ -1,0 +1,35 @@
+{
+ "unit_folder": "Term4_Week5_Literacy_Persuasive_Writing",
+ "unit_pptx_name": "Term 4 Week 5 - Polish and Publish - Year 5-6 Literacy.pptx",
+ "anchor": "Claim it. Prove it. Sell it. Three pictures held all term: flag (claim), magnifier (prove), megaphone (sell). Weeks 1-5 final piece: a published persuasive text on an issue from The Last Bear.",
+ "lessons": [
+  {
+   "build_script": "builds/t4w5_lit_s1_feedback_friends.json",
+   "folder": "T4W5_Lit_S1_Feedback_Friends",
+   "session": 1,
+   "title": "Feedback Friends",
+   "focus": "Give and use feedback against agreed criteria: one glow, one grow, one question. Critical feature: useful feedback points at a sentence and says what to try."
+  },
+  {
+   "build_script": "builds/t4w5_lit_s2_revise_for_impact.json",
+   "folder": "T4W5_Lit_S2_Revise_For_Impact",
+   "session": 2,
+   "title": "Revise for Impact",
+   "focus": "Revise the draft with Add, Remove, Move, Swap and vary sentence length. Critical feature: revising changes the meaning and impact, editing fixes the errors. Retrieves: Term 3 complex sentences."
+  },
+  {
+   "build_script": "builds/t4w5_lit_s3_edit_like_a_pro.json",
+   "folder": "T4W5_Lit_S3_Edit_Like_A_Pro",
+   "session": 3,
+   "title": "Edit Like a Pro",
+   "focus": "Edit commas after prepositional phrases, apostrophes and spelling; persuasion crossword. Critical feature: read it aloud, slowly, once for each check. Fun activity: crossword. Retrieves: Term 3 prepositional phrases."
+  },
+  {
+   "build_script": "builds/t4w5_lit_s4_publish_day.json",
+   "folder": "T4W5_Lit_S4_Publish_Day",
+   "session": 4,
+   "title": "Publish Day",
+   "focus": "Publish the final piece and share it with a real audience; reflect on growth. Critical feature: a published piece is clean, clear and written for its reader."
+  }
+ ]
+}

@@ -1,0 +1,994 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 5,
+    "session": 1,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Feedback Friends",
+    "subtitle": "Term 4 Week 5, Session 1",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 5 Session 1",
+    "outputFolder": "T4W5_Lit_S1_Feedback_Friends",
+    "fileName": "Session 1 - Feedback Friends.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "star",
+          "label": "glow"
+        },
+        {
+          "name": "plant",
+          "label": "grow"
+        },
+        {
+          "name": "question",
+          "label": "question"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Level 5: VC2E5LY11 re-reading and editing their own texts and the texts of others using agreed criteria; VC2E5LY01 interaction skills, questioning to clarify meaning",
+      "shape": "model, sort, conference: the teacher gives feedback on a weak sample, students sort helpful from unhelpful comments, then run a peer conference with the checklist and plan their own revisions",
+      "criticalFeature": "useful feedback points at one sentence and says one thing to try",
+      "decisionPoints": [
+        "the Helpful or not? round",
+        "the choice check: the best grow comment",
+        "the exit board: a grow comment for a new paragraph"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. The checklist asks: did the writer do all three, for their reader?",
+      "catchUp": "No finished draft? Pair them with a partner to give feedback first, then conference with the teacher about their own plan."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Each student's complete draft from Week 4",
+      "Sticky notes in two colours (glow and grow)",
+      "Mini-whiteboards and markers"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers up: 1 or 2",
+      "Point to A, B or C",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Glow (a sentence that works and why) / Grow (one thing to try) / Question (something you wondered)",
+      "Feedback rule: kind, specific, helpful"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your turn: judge feedback, sharpen vague comments, then plan your own revisions from your partner's feedback.",
+      "title": "Feedback Friends",
+      "subtitle": "Point at a sentence. Say one thing to try.",
+      "sections": [
+        {
+          "title": "Helpful or not?",
+          "columns": 1,
+          "example": {
+            "prompt": "'Nice work!'",
+            "steps": [
+              "Does it point at a sentence?",
+              "Does it say what to try?",
+              "No and no? Not helpful yet"
+            ],
+            "answer": "Not helpful yet: what was nice?"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Is each comment helpful? Say why.",
+              "columns": [
+                "Comment",
+                "Helpful?",
+                "Why?"
+              ],
+              "rows": [
+                [
+                  "Your hook question made me want to read on.",
+                  "",
+                  ""
+                ],
+                [
+                  "It's too short.",
+                  "",
+                  ""
+                ],
+                [
+                  "In paragraph 2, add who said your fact.",
+                  "",
+                  ""
+                ],
+                [
+                  "I agree with you about zoos!",
+                  "",
+                  ""
+                ],
+                [
+                  "Your call to action says exactly what to do.",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Your hook question made me want to read on.",
+                  "yes",
+                  "points at the hook and says why"
+                ],
+                [
+                  "It's too short.",
+                  "no",
+                  "which part? what to add?"
+                ],
+                [
+                  "In paragraph 2, add who said your fact.",
+                  "yes",
+                  "where and what"
+                ],
+                [
+                  "I agree with you about zoos!",
+                  "no",
+                  "about the topic, not the writing"
+                ],
+                [
+                  "Your call to action says exactly what to do.",
+                  "yes",
+                  "names a part that works"
+                ]
+              ],
+              "widths": [
+                1.8,
+                0.6,
+                1.2
+              ],
+              "rowH": 26
+            }
+          ]
+        },
+        {
+          "title": "Glow and grow",
+          "columns": 2,
+          "example": {
+            "prompt": "Draft: strong hook, but no evidence in paragraph 1.",
+            "steps": [
+              "Glow: name the part that works",
+              "Grow: name where and what to add",
+              "Keep it kind"
+            ],
+            "answer": "Glow: your hook pulled me in. Grow: in paragraph 1, add a fact and who said it."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which is the most useful grow?",
+              "options": [
+                "Make it better.",
+                "Your conclusion needs a Please... line.",
+                "I didn't like it."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "It names the part and exactly what to add."
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Ruby wrote this grow. Make it helpful.",
+              "work": [
+                "Your words are boring."
+              ],
+              "answer": "Fix: In line 3, swap bad for a powerful word like harmful."
+            }
+          ]
+        },
+        {
+          "title": "Sharpen it",
+          "columns": 1,
+          "example": {
+            "prompt": "Vague: Add more detail.",
+            "steps": [
+              "Name the paragraph or line",
+              "Say exactly what to add or change",
+              "Keep it to one thing"
+            ],
+            "answer": "In paragraph 2, add an example of a bear that swam for days."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each vague comment as a helpful grow.",
+              "columns": [
+                "Vague",
+                "Helpful grow"
+              ],
+              "rows": [
+                [
+                  "Check your spelling.",
+                  ""
+                ],
+                [
+                  "The middle is confusing.",
+                  ""
+                ],
+                [
+                  "Make your ending stronger.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Check your spelling.",
+                  "In line 4, check enviroment: it needs an n."
+                ],
+                [
+                  "The middle is confusing.",
+                  "Paragraph 2 has two reasons; split them."
+                ],
+                [
+                  "Make your ending stronger.",
+                  "End with Please... and one clear action."
+                ]
+              ],
+              "widths": [
+                1,
+                1.6
+              ],
+              "rowH": 36
+            }
+          ]
+        },
+        {
+          "title": "My revision plan",
+          "columns": 1,
+          "example": {
+            "prompt": "My partner said: add a source in paragraph 2.",
+            "steps": [
+              "Read your feedback",
+              "Choose three changes",
+              "Say where and why"
+            ],
+            "answer": "1. Paragraph 2: add According to NASA - makes my claim believable."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Choose three changes from your feedback.",
+              "columns": [
+                "Change",
+                "Where",
+                "Why it helps my reader"
+              ],
+              "rows": [
+                [
+                  "1",
+                  "",
+                  ""
+                ],
+                [
+                  "2",
+                  "",
+                  ""
+                ],
+                [
+                  "3",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "1",
+                  "a named paragraph or line",
+                  "a reason linked to the reader"
+                ],
+                [
+                  "2",
+                  "a named paragraph or line",
+                  "a reason"
+                ],
+                [
+                  "3",
+                  "a named paragraph or line",
+                  "a reason"
+                ]
+              ],
+              "widths": [
+                1.2,
+                1,
+                1.4
+              ],
+              "rowH": 38
+            }
+          ]
+        }
+      ],
+      "tip": "Finished? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: rank feedback, then give a second writer a full conference.",
+      "title": "Editor in Chief",
+      "subtitle": "Great editors help the writer, not just the writing.",
+      "sections": [
+        {
+          "title": "Rank the feedback",
+          "columns": 1,
+          "example": {
+            "prompt": "Three grows for one draft",
+            "steps": [
+              "Which helps the reader most?",
+              "Which is quickest to fix?",
+              "Rank and explain"
+            ],
+            "answer": "Adding proof helps most, so it goes first."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rank these grows for a draft about school gardens (1 = most important).",
+              "columns": [
+                "Grow",
+                "Rank",
+                "Why"
+              ],
+              "rows": [
+                [
+                  "Add a fact about gardens and who said it.",
+                  "",
+                  ""
+                ],
+                [
+                  "Fix the spelling of vegetable.",
+                  "",
+                  ""
+                ],
+                [
+                  "Your hook is a statement; try a question.",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Add a fact about gardens and who said it.",
+                  "1",
+                  "proof makes the claim believable"
+                ],
+                [
+                  "Fix the spelling of vegetable.",
+                  "3",
+                  "easy fix, smaller effect"
+                ],
+                [
+                  "Your hook is a statement; try a question.",
+                  "2",
+                  "a stronger start keeps the reader"
+                ]
+              ],
+              "widths": [
+                1.8,
+                0.5,
+                1.3
+              ],
+              "rowH": 36
+            }
+          ]
+        },
+        {
+          "title": "Second conference",
+          "columns": 1,
+          "example": {
+            "prompt": "Another writer's draft",
+            "steps": [
+              "Read it twice",
+              "One glow, one grow, one question",
+              "Rank your grow's importance"
+            ],
+            "answer": "Glow, grow, question, each pointing at a sentence."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Read a second writer's draft. Write a glow, a grow and a question, each pointing at a sentence.",
+              "answer": "Three specific comments that point at sentences.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: choices with hints, a first grow done and a revision frame.",
+      "title": "Feedback Helper",
+      "subtitle": "Glow: what works. Grow: one thing to try.",
+      "sections": [
+        {
+          "title": "Glow or grow?",
+          "columns": 3,
+          "example": {
+            "prompt": "'Add a fact in paragraph 1.'",
+            "steps": [
+              "Does it praise or suggest?",
+              "Suggests",
+              "Grow"
+            ],
+            "answer": "grow"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Your hook pulled me in.",
+              "options": [
+                "glow",
+                "grow"
+              ],
+              "answer": 0,
+              "hint": "Is it praise?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Add who said your fact.",
+              "options": [
+                "glow",
+                "grow"
+              ],
+              "answer": 1,
+              "hint": "Is it something to try?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Your title is catchy.",
+              "options": [
+                "glow",
+                "grow"
+              ],
+              "answer": 0,
+              "hint": "Is it praise?"
+            }
+          ]
+        },
+        {
+          "title": "Make it helpful",
+          "columns": 1,
+          "example": {
+            "prompt": "Good job.",
+            "steps": [
+              "Find a part that works",
+              "Name it",
+              "Say why"
+            ],
+            "answer": "Your hook question made me curious."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Make each comment helpful.",
+              "columns": [
+                "Not helpful",
+                "Helpful"
+              ],
+              "rows": [
+                [
+                  "Good job.",
+                  "Your hook question made me curious."
+                ],
+                [
+                  "Fix it.",
+                  ""
+                ],
+                [
+                  "It's boring.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Good job.",
+                  "Your hook question made me curious."
+                ],
+                [
+                  "Fix it.",
+                  "In line 2, add a full stop."
+                ],
+                [
+                  "It's boring.",
+                  "Swap bad for harmful in line 3."
+                ]
+              ],
+              "hint": "The first one is done for you.",
+              "widths": [
+                0.9,
+                1.6
+              ],
+              "rowH": 32
+            }
+          ]
+        },
+        {
+          "title": "My plan",
+          "columns": 1,
+          "example": {
+            "prompt": "Feedback: add a fact.",
+            "steps": [
+              "I will ___",
+              "in ___",
+              "because ___"
+            ],
+            "answer": "I will add a fact in paragraph 2 because it proves my claim."
+          },
+          "items": [
+            {
+              "prompt": "Finish: I will ___ in ___ because ___.",
+              "answer": "One change, a place and a reason.",
+              "lines": 3,
+              "hint": "Use the grow your partner gave you."
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    },
+    {
+      "kind": "page",
+      "label": "Big Piece Checklist",
+      "description": "The agreed criteria for the big piece, used by partners today and by the writer when revising and editing all week.",
+      "title": "Big Piece Checklist",
+      "subtitle": "Tick what you find. Then write one glow, one grow and one question.",
+      "blocks": [
+        {
+          "heading": "Structure"
+        },
+        {
+          "checklist": [
+            "Introduction: hook, context, position, preview",
+            "Each body paragraph starts with its claim",
+            "Proof with who said it, then This means...",
+            "Answer back: Some people say... However...",
+            "Conclusion: restate, sum up, call to action"
+          ]
+        },
+        {
+          "heading": "Language"
+        },
+        {
+          "checklist": [
+            "Sure words: must, should, will",
+            "Powerful words that are still true",
+            "Two or more devices, and linking words between paragraphs"
+          ]
+        },
+        {
+          "heading": "My feedback for the writer"
+        },
+        {
+          "organiser": {
+            "left": "Glow: a sentence that works",
+            "right": "Grow: one thing to try",
+            "rows": 1,
+            "rowH": 66
+          }
+        },
+        {
+          "text": "Question: something I wondered"
+        },
+        {
+          "lines": 1
+        },
+        {
+          "text": "Writer: my revision plan (three changes I will make)"
+        },
+        {
+          "lines": 3
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: this week we polish and publish, starting with feedback from a friend."
+    },
+    {
+      "kind": "overview",
+      "title": "For the teacher: Week 5 at a glance",
+      "lines": [
+        "This week: feedback, revise, edit, publish. Every student has a complete draft from Week 4.",
+        "Today: peer feedback with the Big Piece Checklist (agreed criteria, VC2E5LY11).",
+        "Session 3 includes the crossword fun activity (persuasion words) for early finishers and the warm-up.",
+        "Session 4: publish and share with the audience you chose (another class, newsletter, a real organisation).",
+        "Unit anchor: Claim it. Prove it. Sell it."
+      ],
+      "notes": "Teacher-facing only. Confirm the publishing audience before Session 4."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print one Big Piece Checklist per student for the conference (reused all week), then the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Pair a confident writer with a developing one."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to give and use feedback that makes writing stronger.",
+      "successCriteria": [
+        "I can check a draft against our checklist.",
+        "I can give feedback that points to a sentence and suggests one thing to try.",
+        "I can choose which feedback to use and plan my changes."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Every published writer has an editor. Today you are each other's."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Checking against the checklist is where we start.",
+            "Feedback that points and suggests is today's main goal."
+          ]
+        ],
+        "prep": "SC1 checking against criteria is reachable for all; SC2 specific feedback is the core and the exit evidence; SC3 choosing and planning revisions is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Which comment would help you?",
+      "lines": [
+        "It's good.",
+        "Your question at the start pulled me in. Try adding a fact after your second sentence."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "thumbsUp",
+            "label": "comment one"
+          },
+          {
+            "name": "chats",
+            "label": "comment two"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "the second - it points at a sentence and says what to try",
+        "beats": [
+          [
+            "SAY: Two people read your draft. Here's what they say.",
+            "Which would actually help you improve it?"
+          ],
+          [
+            "ASK: Which comment helps you more? First or second?",
+            "5 sec. Cue: Fingers at your chest, 1 or 2... show me.",
+            "EXPECT: 2"
+          ],
+          [
+            "ASK: What does the second one do that the first doesn't?",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: it says which part; it says what to try"
+          ],
+          "SAY: Today you'll be the second kind of reader for a friend."
+        ],
+        "trap": [
+          "preferring It's good because it feels nicer.",
+          "Fix: ask what would you change after It's good? Student sees nothing."
+        ],
+        "prep": "Low-coupling launch. 3 minutes.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "feedback",
+      "meaning": "Information that helps someone improve their work.",
+      "example": "Your hook pulled me in. Try a fact after it.",
+      "pictogram": "chats",
+      "notes": {
+        "answer": "information that helps someone improve their work",
+        "beats": [
+          "POINT to the word. SAY: Feedback. Say it with me. Feedback.",
+          [
+            "SAY: Feedback is information that helps you improve.",
+            "A glow says what works. A grow says what to try."
+          ],
+          [
+            "ASK: In the example, which part is the glow and which is the grow?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: glow is the hook; grow is the fact"
+          ]
+        ],
+        "trap": [
+          "thinking feedback means saying what's wrong.",
+          "Fix: say every feedback slip starts with a glow."
+        ],
+        "prep": "Glow and grow are the class protocol all week.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "I Do",
+      "title": "Watch me give feedback",
+      "extract": "Zoos are bad for polar bears. They are really, really bad. Polar bears like the cold. Zoos are hot. I think zoos should maybe not have them. That is why.",
+      "highlights": [
+        "Polar bears like the cold. Zoos are hot.",
+        "I think zoos should maybe not have them."
+      ],
+      "source": "Sample draft, written for this session",
+      "notes": {
+        "answer": "glow: the cold and hot contrast; grow: high modality and proof; question: which zoos?",
+        "beats": [
+          [
+            "READ the sample aloud once. Use the checklist beside it.",
+            "SAY: First, a glow. I point at a sentence that works."
+          ],
+          [
+            "POINT to Polar bears like the cold. Zoos are hot.",
+            "SAY: Glow: those two short sentences make the problem clear. Nice contrast."
+          ],
+          [
+            "POINT to maybe.",
+            "SAY: Grow: swap I think... maybe for must, then add proof with who said it."
+          ],
+          [
+            "ASK: What question would you ask this writer?",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: which zoos? how hot? who says bears suffer?"
+          ]
+        ],
+        "trap": [
+          "a grow with three things to fix at once.",
+          "Fix: student picks the one change that would help most."
+        ],
+        "stretch": "Rank three grows by which helps the reader most.",
+        "help": "Use the checklist: find the first unticked box.",
+        "prep": "The model. Critical feature: useful feedback points at one sentence and says one thing to try. The sample is deliberately weak.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Helpful or not?",
+      "routine": "fingers",
+      "thinkTime": 6,
+      "pivot": "ask: could the writer act on it tomorrow?",
+      "followUp": "cold call one student: how would you fix the unhelpful one?",
+      "items": [
+        {
+          "text": "Good job!",
+          "answer": "2 - not helpful: what was good?",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Your question in line 1 really pulled me in.",
+          "answer": "1 - helpful glow: it points at a sentence",
+          "expect": "1 finger"
+        },
+        {
+          "text": "In paragraph 2, add who said your fact, like According to NASA.",
+          "answer": "1 - helpful grow: one clear thing to try",
+          "expect": "1 finger"
+        },
+        {
+          "text": "I don't like zoos either.",
+          "answer": "2 - not helpful: about the topic, not the writing",
+          "expect": "2 fingers"
+        },
+        {
+          "text": "Fix your spelling.",
+          "answer": "2 - not helpful yet: which words?",
+          "expect": "2 fingers. ACCEPT: 1 if they say which",
+          "say": "Not yet. Which words? Point to them. Tick or fix."
+        }
+      ],
+      "notes": {
+        "say": [
+          "One finger helpful, two not helpful.",
+          "Helpful means the writer knows what to do next."
+        ],
+        "trap": [
+          "voting Good job helpful because it's kind.",
+          "Fix: ask what would the writer change? Student re-votes."
+        ],
+        "stretch": "Rewrite each unhelpful comment to be helpful.",
+        "help": "Ask: does it point at a sentence?",
+        "prep": "Guided sort of feedback quality. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which is the best grow comment?",
+      "prompt": "The paragraph has a strong claim but no evidence.",
+      "options": [
+        {
+          "text": "Make it better somehow.",
+          "misconception": "vague; the writer doesn't know what to do"
+        },
+        {
+          "text": "Add a fact after your topic sentence, and say who said it."
+        },
+        {
+          "text": "I disagree with your opinion.",
+          "misconception": "judges the opinion, not the writing"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - it points to where and says what to add",
+        "beats": [
+          "SAY: The paragraph needs proof. Which comment would get it there?",
+          [
+            "ASK: Which is the best grow comment?",
+            "10 sec. Cue: voices off, everyone points to A, B or C.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call: turn A into a helpful grow.",
+            "Less -> run the could-they-act-on-it test, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. It says where, what and how. The writer can do it straight away."
+          ]
+        ],
+        "trap": [
+          "pointing to C because honest feedback is good.",
+          "Fix: say we judge the writing, not the opinion."
+        ],
+        "prep": "Decision point before the conference. Under 80% means one pair models the conference for the class first.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Turn it into a grow",
+      "routine": "boards",
+      "thinkTime": 30,
+      "pivot": "ask: which sentence, and what exactly should they try?",
+      "followUp": "cold call one board: could the writer do that tomorrow?",
+      "items": [
+        {
+          "text": "Unhelpful: Add more stuff.",
+          "answer": "In paragraph 1, add a fact that proves your claim, and who said it.",
+          "expect": "where + what to add"
+        },
+        {
+          "text": "Unhelpful: The ending is boring.",
+          "answer": "End with a call to action: tell the principal exactly what to do.",
+          "expect": "where + one thing to try"
+        },
+        {
+          "text": "Unhelpful: Use better words.",
+          "answer": "In line 3, swap bad for a powerful true word like harmful.",
+          "expect": "which word + a swap"
+        }
+      ],
+      "notes": {
+        "say": [
+          "These comments mean well, but they don't help yet.",
+          "Rewrite each one as a grow the writer can act on."
+        ],
+        "trap": [
+          "rewriting it longer but still vague: Add more good stuff please.",
+          "Fix: student names the sentence and the exact change."
+        ],
+        "stretch": "Add the reason: because your reader needs...",
+        "help": "Frame: In ___, try ___.",
+        "prep": "Guided rewriting of vague feedback. SC2.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Feedback conference",
+      "task": "Swap drafts and give feedback on the Checklist. Then work through your Worksheet and plan your changes.",
+      "where": "Checklist, then Worksheet",
+      "frame": "Glow: ___ works because ___. Grow: try ___ in ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "star",
+          "plant",
+          "question"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Glow, grow, question",
+      "notes": {
+        "answer": "feedback that points at a sentence; a three-point revision plan",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: Be the reader your partner needs. Kind, specific, helpful."
+          ],
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Finished? Extension next. Everyone, together, on three."
+          ],
+          "CIRCULATE. Read grow notes: does each one point at a sentence?",
+          [
+            "ASK: Is your feedback written and handed back?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up at 15 minutes"
+          ],
+          "TIME 22 minutes: 15 reading and writing feedback, 7 planning."
+        ],
+        "trap": [
+          "only glows, because they don't want to upset a friend.",
+          "Fix: say a grow is a gift: it makes their writing win."
+        ],
+        "stretch": "Extension: rank feedback, then give a second full conference.",
+        "help": "Supported Worksheet: glow-or-grow choices, a first fix done, a revision frame.",
+        "prep": "Independent application. The revision plan drives Session 2. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 8]"
+      },
+      "extendedTask": "a peer feedback conference, then a worksheet ending in a three-change revision plan"
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Kids should have more PE. It's fun. Everyone likes it. PE is good.",
+        "Write one helpful grow comment for this writer."
+      ],
+      "notes": {
+        "answer": "e.g. After line 1, add a fact about exercise and who said it",
+        "beats": [
+          "SAY: A new paragraph from a new writer. Help them.",
+          [
+            "ASK: Write one helpful grow comment.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: points at a sentence or word, says one thing to try"
+          ],
+          "RECORD who writes a vague grow. Revision small group tomorrow."
+        ],
+        "trap": [
+          "Make it longer.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new paragraph. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Which piece of feedback will you use first? Tell your partner why.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for a specific change linked to the reader",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: How useful was the feedback you gave?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          "RECORD each thumb down beside the exit boards.",
+          [
+            "ASK: Which feedback will you use first, and why?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: adding my source, because it makes my claim believable"
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Keep the checklists in the books. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}
