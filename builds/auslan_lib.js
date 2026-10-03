@@ -68,6 +68,31 @@ const SENSE_NEEDED = {
   WHY: "question", WHICH: "question", HOW: "question",
 };
 
+/**
+ * Chris's Sign It! page numbers, from the sheet he returned on 3 Oct 2026.
+ * A gloss missing here is not in the book. Printed under every sign card.
+ */
+const SIGNIT_PAGES = {
+  SWIM: 57, BASKETBALL: 58, TENNIS: 60, FOOTY: 58, NETBALL: 59, RUGBY: 60,
+  SPORT: 80, DEAF: 64, AGAIN: 50, PRACTISE: 83, WHO: 47, WHAT: 47, WHERE: 47,
+  WIN: 108, WHEN: 47, "HOW-MANY": 47, YEAR: 65, BEFORE: 68, PAST: 69, THEN: 68,
+  START: 84, CHANGE: 105, COMMUNITY: 128,
+};
+
+/**
+ * Signs Chris vetted from outside Signbank (3 Oct 2026). The fetcher only
+ * reads Signbank, so these stay lookup cards, but the card opens his choice
+ * rather than a Signbank search.
+ */
+const TEACHER_LINKS = {
+  FUTSAL: "https://find.auslan.fyi/sign/spread-the-sign-auslan/4306",
+  AFTER: "https://find.auslan.fyi/sign/spread-the-sign-auslan/7964",
+  FINISH: "https://find.auslan.fyi/sign/latrobe-ig/CCHi2nDHEJD",
+  GOLD: "https://find.auslan.fyi/sign/spread-the-sign-auslan/6852",
+  SILVER: "https://find.auslan.fyi/sign/spread-the-sign-auslan/599",
+  BRONZE: "https://find.auslan.fyi/sign/spread-the-sign-auslan/6157",
+};
+
 /** The teacher's own overrides, which beat everything else in this file. */
 const OVERRIDE_FILE = path.join(
   __dirname, "..", "reference", "auslan", "signbank_links", "overrides.json"
@@ -294,7 +319,8 @@ function readManifestUnvetted(placed) {
  * and not a hole: the meaning, a watch-the-teacher line and a Signbank search.
  */
 function addSignCard(T, slide, spec, box, report) {
-  const { gloss, meaning, page } = spec;
+  const { gloss, meaning } = spec;
+  const page = spec.page || SIGNIT_PAGES[gloss];
   const { x, y, w, h } = box;
   const C = T.C;
   const pad = 0.16;
@@ -331,7 +357,9 @@ function addSignCard(T, slide, spec, box, report) {
       align: "center", valign: "middle", margin: 0,
     });
     slide.addText(
-      [{ text: "Look it up: Auslan Signbank", options: { hyperlink: { url: lookupUrl(word) }, color: C.PRIMARY } }],
+      [TEACHER_LINKS[gloss]
+        ? { text: "Watch the sign online", options: { hyperlink: { url: TEACHER_LINKS[gloss] }, color: C.PRIMARY } }
+        : { text: "Look it up: Auslan Signbank", options: { hyperlink: { url: lookupUrl(word) }, color: C.PRIMARY } }],
       {
         x: x + pad, y: imgTop + imgH / 2 - 0.06, w: w - pad * 2, h: 0.36,
         fontSize: 12, fontFace: T.FONT_B, bold: true,
@@ -507,7 +535,64 @@ function buildTeamRoleCardsPdf(file, footer, color) {
   P.writePdf(doc, file, footer);
 }
 
+/**
+ * Deaf Sport Timeline Cards (unit document 11.2). Cards 1 to 8 are the Lesson 5
+ * set; 9 and 10 join them in the review week. Every date is from Deaf Sports
+ * Australia or Deaf Connect, checked 17 Sept 2026. The 1880s club appears under
+ * its current name only: the original name is not language we use now.
+ */
+const TIMELINE_CARDS = [
+  ["1880s", "A Deaf cricket club starts in Melbourne. It is still going today as the Melbourne Deaf Cricket Club, and it is one of the oldest Deaf sport clubs in the world."],
+  ["1954", "Deaf Sports Australia is set up as the national body for Deaf sport in Australia."],
+  ["1964", "The first Australian Deaf Games are held in Sydney, over the summer of 1964 and 1965, with fifteen sports."],
+  ["1965", "Australia sends two athletes to the world games for the Deaf. Both of them win a medal."],
+  ["1985", "The national Deaf sports body is formally recognised and funded."],
+  ["2005", "Melbourne hosts the Deaflympics, with over 3,500 people taking part. It is the only time Australia has hosted them."],
+  ["2011", "The Active Deaf Kids school program starts."],
+  ["2026", "The Australian Deaf Games are held on the Sunshine Coast from 4 to 11 July, with more than 1,300 competitors and up to twenty sports."],
+  ["1924", "The first Deaflympic Games are held in Paris. They have been held every four years since."],
+  ["1955", "Deaf Sports Australia joins the international Deaf sports committee."],
+];
+
+/** One set of ten cards on one page. Print seven sets, cut and laminate. */
+function buildTimelineCardsPdf(file, footer, color) {
+  const P = require("../themes/pdf_helpers");
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  const doc = P.createPdf({ title: "Session 5 Deaf Sport Timeline Cards" });
+  let y = P.addPdfHeader(doc, "Session 5 Deaf Sport Timeline Cards", {
+    color,
+    subtitle: "Print seven copies: one set per group of four. Cut and laminate. Keep for the review week.",
+    lessonInfo: "Session 5  |  Game 6 Order The Years  |  cards 9 and 10 (marked R) join in the review week",
+    showNameDate: false,
+  });
+  y += 8;
+  const cols = 2;
+  const gap = 10;
+  const cw = (P.PAGE.CONTENT_W - gap) / cols;
+  const ch = 120;
+  // Printed out of order (MEGA_PROMPT 19a): an uncut sheet must not give the answer.
+  const PRINT_ORDER = [5, 0, 3, 7, 1, 6, 4, 2, 8, 9];
+  PRINT_ORDER.map((k) => TIMELINE_CARDS[k]).forEach(([year, text], i) => {
+    const x = P.PAGE.MARGIN + (i % cols) * (cw + gap);
+    const cy = y + Math.floor(i / cols) * (ch + gap);
+    doc.save();
+    doc.dash(3, { space: 3 }).roundedRect(x, cy, cw, ch, 6).lineWidth(1).strokeColor("#9CA3AF").stroke();
+    doc.undash();
+    doc.restore();
+    doc.fontSize(24).font("Sans-Bold").fillColor("#111827").text(year, x + 12, cy + 10, { width: cw - 60 });
+    if (i >= 8) {
+      doc.fontSize(10).font("Sans-Bold").fillColor("#6B7280").text("R", x + cw - 24, cy + 12, { width: 14 });
+    }
+    doc.fontSize(11.5).font("Sans").fillColor("#1F2937").text(text, x + 12, cy + 44, { width: cw - 24 });
+  });
+  P.writePdf(doc, file, footer);
+}
+
 module.exports = {
+  TIMELINE_CARDS,
+  buildTimelineCardsPdf,
+  SIGNIT_PAGES,
+  TEACHER_LINKS,
   buildTeamRoleCardsPdf,
   ATTRIBUTION,
   BANK,
