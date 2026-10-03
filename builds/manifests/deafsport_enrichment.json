@@ -1,0 +1,21 @@
+{
+  "unit_folder": "Deaf_Sports_Enrichment_Unit",
+  "unit_pptx_name": "Deaf Sports in Australia Enrichment.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_deafsport_enrichment_s1.js",
+      "folder": "DeafSport_Enrichment_S1_Finding_The_Signs",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_deafsport_enrichment_s2.js",
+      "folder": "DeafSport_Enrichment_S2_Meeting_A_Signer",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_deafsport_enrichment_s3.js",
+      "folder": "DeafSport_Enrichment_S3_Who_What_Where",
+      "session": 3
+    }
+  ]
+}

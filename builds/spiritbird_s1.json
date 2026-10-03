@@ -1,0 +1,628 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "variant": 4,
+    "session": 1,
+    "title": "Spirit Bird",
+    "subtitle": "How one repeated line makes a message impossible to forget",
+    "meta": "Year 6 Literacy | Lyrics as text",
+    "footer": "Spirit Bird | Year 6 Literacy",
+    "outputFolder": "Spirit_Bird_Lyric_Study",
+    "fileName": "Spirit Bird - Year 6 Literacy.pptx",
+    "titleVisual": {
+      "type": "pictogram",
+      "name": "bird",
+      "label": "red-tailed black cockatoo"
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Printed lyric sheet AND Listening Booklet, one each per student",
+      "Highlighter and pencil each",
+      "Mini-whiteboards and markers for the check"
+    ],
+    "routineIcons": [
+      "Voices off, fingers at your chest",
+      "Write it, chin it, show me",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "Write on the board: The chorus makes you feel it. The verse tells you what to do.",
+      "Leave space to build one sentence together in the We Do"
+    ],
+    "videos": [
+      "Xavier Rudd - Spirit Bird (audio), runs 7 min 11 sec: https://www.youtube.com/watch?v=TmxSxKxBbQE"
+    ],
+    "urls": [
+      "Lyric sheet is NOT in this pack. Print the lyrics from a licensed source before the lesson."
+    ]
+  },
+  "resources": [
+    {
+      "kind": "page",
+      "label": "Spirit Bird Listening Booklet",
+      "description": "Use with the printed lyric sheet. Listening agreement, the repeated line, and the group chorus planner.",
+      "title": "Spirit Bird Listening Booklet",
+      "subtitle": "Keep this beside your lyric sheet.",
+      "blocks": [
+        {
+          "heading": "Before we listen"
+        },
+        {
+          "steps": [
+            "Voices off for the whole song. All seven minutes.",
+            "Follow the words on your lyric sheet with your finger.",
+            "Some singing will not sound like English. Listen harder, not louder."
+          ]
+        },
+        {
+          "heading": "While you listen"
+        },
+        {
+          "text": "One word for how the song feels to you:"
+        },
+        {
+          "lines": 1
+        },
+        {
+          "text": "Circle any line on your lyric sheet that comes back more than once."
+        },
+        {
+          "text": "One line that stayed with you:"
+        },
+        {
+          "lines": 1
+        },
+        {
+          "heading": "The line he repeats"
+        },
+        {
+          "organiser": {
+            "left": "The line that comes back",
+            "right": "What it asks us to do or feel",
+            "rows": 3
+          }
+        },
+        {
+          "heading": "The chorus makes you feel it. The verse tells you what to do."
+        },
+        {
+          "text": "The chorus makes us feel ______________________________________."
+        },
+        {
+          "text": "The verse asks us to __________________________________________."
+        },
+        {
+          "heading": "Write your own chorus"
+        },
+        {
+          "text": "Our group stands up for _______________________________________."
+        },
+        {
+          "text": "The one line we repeat:"
+        },
+        {
+          "lines": 2
+        },
+        {
+          "text": "Two lines that show why it matters:"
+        },
+        {
+          "lines": 4
+        },
+        {
+          "heading": "Check your chorus"
+        },
+        {
+          "steps": [
+            "Say the repeated line out loud three times.",
+            "Does it ask for something, not just describe something?",
+            "Could someone remember it after hearing it once?"
+          ]
+        },
+        {
+          "tip": "Stretch: write a second line that answers your repeated line, the way a verse answers a chorus."
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the lesson. One line: today we study a song, and we work out how one repeated line makes a message stay with people."
+    },
+    {
+      "kind": "overview",
+      "title": "For the teacher: read this before you teach",
+      "lines": [
+        "Print the lyrics from a licensed source, one per student. They are not in this pack.",
+        "Paste the chorus and one verse into the two slides marked PASTE.",
+        "Timing: launch 5, context 7, listen 9, talk 3, I Do 6, We Do 7, check 3, write 12, close 4.",
+        "The listening agreement slide is not optional. Set it before you touch play.",
+        "Decision points: the fingers check before group writing, then the exit ticket.",
+        "Builds on the First Fleet in Term 1, famous Australians in Term 2, and the Goodes film.",
+        "Steer the group task to real groups, not jokes. Name examples before they write.",
+        "Booklet and lyric sheet stay side by side on every desk."
+      ],
+      "notes": "Teacher-facing. Two jobs before the bell: print the lyric sheet, and paste the lyrics into the two PASTE slides."
+    },
+    {
+      "kind": "resources",
+      "notes": "Prep slide. Print the lyric sheet and the booklet, one each per student. Open the video link in a browser tab before the lesson so play is one click. Whiteboards out for the fingers check."
+    },
+    {
+      "kind": "launch",
+      "title": "Three things you have studied",
+      "lines": [
+        "Term 1: the First Fleet, 1788.",
+        "Term 2: famous Australians.",
+        "The film about Adam Goodes."
+      ],
+      "notes": {
+        "answer": "open - land taken, people forced off Country, children taken, racism now",
+        "beats": [
+          [
+            "POINT to the three lines.",
+            "SAY: Three things you have studied. Today they meet in one song."
+          ],
+          [
+            "ASK: What happened to Aboriginal people after 1788?",
+            "30 sec. Turn and tell, partner A first.",
+            "EXPECT: land taken, forced off, treated badly"
+          ],
+          [
+            "SCAN the room. Listen for land, and for people.",
+            "80%+ naming a loss -> next slide.",
+            "Less -> ask who was here before the ships, re-ask."
+          ],
+          "SAY: A musician said all of that in one song. Today we find out how."
+        ],
+        "trap": [
+          "treating it as ancient history that is finished.",
+          "Fix: name the Goodes film, ask if that felt long ago, student answers."
+        ],
+        "prep": "Low-coupling launch: every student has met at least one of the three. Whole block under 5 minutes.",
+        "tag": "[Launch | Retention and recall | HITS 1, 6]"
+      }
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how a songwriter uses one repeated line to make a message stay with people.",
+      "successCriteria": [
+        "I can find the line that Xavier Rudd repeats.",
+        "I can explain what that repeated line makes us feel.",
+        "I can write a repeated line that stands up for a group of people."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: One repeated line. That is the whole lesson."
+          ],
+          "SAY: Read the three I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: The first one you can do with the lyric sheet in your hand.",
+            "The third one you write in your group at the end."
+          ]
+        ],
+        "prep": "SC1 find the repeated line. SC2 explain what it asks, the exit evidence. SC3 write one.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "Country",
+      "meaning": "The land, water and sky a group of people belong to.",
+      "example": "Aboriginal people say they belong to Country, not that they own it.",
+      "pictogram": "mountains",
+      "routine": "Say it. Then name one place you feel you belong to.",
+      "notes": {
+        "answer": "the land, water and sky a group of people belong to",
+        "beats": [
+          "POINT to the word. SAY: Country. Look at the capital C. Say it with me.",
+          [
+            "SAY: Country is not just dirt. It is land, water, sky and story.",
+            "People belong to Country. It is not a thing you buy."
+          ],
+          [
+            "ASK: Name one place you feel you belong to.",
+            "15 sec. Turn and tell, partner B first.",
+            "EXPECT: a house, a park, a beach, a town"
+          ]
+        ],
+        "trap": [
+          "hearing Country as Australia the nation.",
+          "Fix: point to the capital C, say it means a people's own place, student repeats it."
+        ],
+        "prep": "The word the song rests on. Taught once here, used on every slide after.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "refrain",
+      "meaning": "The line a songwriter repeats so you cannot forget it.",
+      "example": "Every time the chorus comes back, the refrain comes back too.",
+      "pictogram": "music",
+      "routine": "Say it three times, the way a chorus does.",
+      "notes": {
+        "answer": "the line a songwriter repeats so you cannot forget it",
+        "beats": [
+          "POINT to the word. SAY: Refrain. Say it with me. Refrain.",
+          [
+            "SAY: The refrain is the line that comes back again and again.",
+            "A songwriter repeats the line they most want you to keep."
+          ],
+          [
+            "ASK: Name a song where you know one line by heart.",
+            "15 sec. Turn and tell, partner A first.",
+            "EXPECT: any song, any line they can sing back"
+          ]
+        ],
+        "trap": [
+          "thinking the refrain means the whole chorus.",
+          "Fix: sing a known chorus, ask which line repeats most, student names it."
+        ],
+        "prep": "The craft word for today. Every slide from here uses it.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "Notice",
+      "title": "The man and the bird",
+      "lines": [
+        "Xavier Rudd is an Australian musician.",
+        "A red-tailed black cockatoo stopped him.",
+        "That bird is sacred to Aboriginal people.",
+        "He wrote the whole song that night."
+      ],
+      "visual": {
+        "type": "pictogram",
+        "name": "bird",
+        "label": "red-tailed black cockatoo"
+      },
+      "notes": {
+        "answer": "open - the feeling was strong and he did not want to lose it",
+        "beats": [
+          [
+            "POINT to the bird.",
+            "SAY: A red-tailed black cockatoo. Sacred to Aboriginal people in the Kimberley."
+          ],
+          [
+            "SAY: Rudd was up there when one stopped him in his tracks.",
+            "He wrote the whole song that same night, on the beach."
+          ],
+          [
+            "ASK: Why write it that same night, do you think?",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: the feeling was strong, he might lose it"
+          ]
+        ],
+        "trap": [
+          "treating the bird as a pet or a cartoon.",
+          "Fix: say sacred means it carries meaning, student says the word back."
+        ],
+        "prep": "Context before the listen. Rudd has Aboriginal, Irish and Scottish heritage and was adopted by Yolngu people in 2003.",
+        "sources": "Xavier Rudd interviews and Wikipedia, checked September 2026. Song released 2012, runs 7 min 11 sec",
+        "tag": "[Notice | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "Notice",
+      "badgeColor": "alert",
+      "title": "What the song stands up for",
+      "lines": [
+        "Aboriginal people have been here 60,000 years.",
+        "From 1788 they were forced off their land.",
+        "Children were taken from their families.",
+        "Culture, language and Country are still here."
+      ],
+      "visual": {
+        "type": "pictogram",
+        "name": "mountains",
+        "label": "Country"
+      },
+      "notes": {
+        "beats": [
+          "SAY: Aboriginal people have been here more than sixty thousand years.",
+          [
+            "SAY: From 1788 they were forced off the land they belonged to.",
+            "Governments took children from their families for most of a century."
+          ],
+          [
+            "SAY: We call those children the Stolen Generations.",
+            "The national apology to them came in 2008, before you were born."
+          ],
+          [
+            "POINT to the last line.",
+            "SAY: Culture, language and Country are still here. That matters most."
+          ]
+        ],
+        "trap": [
+          "thinking this is all safely in the past.",
+          "Fix: name the Goodes film, ask if that felt long ago, student answers."
+        ],
+        "care": "some students may have family in this history. Quiet child -> quiet job.",
+        "prep": "Four facts, said plainly, ending on survival not despair. No spotlight on any student. Rudd's own great-grandmother had her child taken.",
+        "tag": "[Notice | Knowledge and memory | HITS 3, 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "Listen",
+      "title": "How we listen",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "stop",
+            "label": "Voices off"
+          },
+          {
+            "name": "read",
+            "label": "Follow the words"
+          },
+          {
+            "name": "listen",
+            "label": "Right to the end"
+          }
+        ]
+      },
+      "label": "Our agreement for the next seven minutes",
+      "prompt": "Press play",
+      "link": "https://www.youtube.com/watch?v=TmxSxKxBbQE",
+      "notes": {
+        "beats": [
+          "SAY: Seven minutes. The whole song, start to finish, no stopping.",
+          [
+            "SAY: It opens with singing and yidaki, the didgeridoo.",
+            "Some of it will not sound like English. That is not a joke."
+          ],
+          [
+            "SAY: If a part sounds strange to you, listen harder, not louder.",
+            "It is somebody's language and somebody's Country."
+          ],
+          [
+            "POINT to the three agreements.",
+            "SAY: Voices off. Follow the words. Right to the end."
+          ],
+          "PRESS PLAY. Stand at the back and watch faces, not the screen."
+        ],
+        "trap": [
+          "a laugh at the opening singing.",
+          "Fix: pause it, one calm line - that is someone's language - restart from zero."
+        ],
+        "prep": "Respect is taught here, not assumed. Do this before you touch play. If a student asks what language it is, say honestly that we do not name what we cannot check.",
+        "tag": "[Listen | Enabling learning | HITS 2, 3]"
+      }
+    },
+    {
+      "kind": "pairShare",
+      "title": "What stayed with you?",
+      "questions": [
+        "One word: how did that song feel?",
+        "Which line stayed with you? Why that one?",
+        "Did any line come back more than once?"
+      ],
+      "notes": {
+        "answer": "open - any feeling word, and any line they can point to on the sheet",
+        "beats": [
+          "SAY: Do not talk yet. Sit with it for ten seconds.",
+          [
+            "ASK: One word for how that felt.",
+            "10 sec. Turn and tell, partner A first.",
+            "EXPECT: sad, strong, angry, calm, proud"
+          ],
+          [
+            "ASK: Which line stayed with you?",
+            "30 sec. Turn and tell, partner B first.",
+            "EXPECT: a line they can point to on the sheet"
+          ],
+          "CIRCULATE. Listen for a line that comes back. That is your I Do hook."
+        ],
+        "trap": [
+          "talking over the last note of the song.",
+          "Fix: hand up for silence, ten seconds, then release the talk."
+        ],
+        "prep": "Protected response time after a heavy listen. Three minutes, then move on.",
+        "tag": "[Notice | Attention and regulation | HITS 5, 9]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "I Do",
+      "title": "Watch me find the line that repeats",
+      "extract": "[ The chorus goes here. Run scripts/inject_lyrics.py, or paste it from your lyric sheet. ]",
+      "source": "Spirit Bird, Xavier Rudd, 2012",
+      "notes": {
+        "answer": "the line that comes back after every verse - the refrain",
+        "beats": [
+          [
+            "READ the chorus aloud once, slowly.",
+            "SAY: Watch me hunt for the line he will not drop."
+          ],
+          [
+            "POINT to the line that comes back.",
+            "SAY: There it is. And there again. That is the refrain."
+          ],
+          [
+            "SAY: Now I ask what that line wants from me.",
+            "MODEL: He repeats this line because he wants us to ..."
+          ]
+        ],
+        "trap": [
+          "naming the loudest line, not the repeated one.",
+          "Fix: count how often each line appears, student names it."
+        ],
+        "stretch": "Find a second repeat: a word, a sound, an instrument.",
+        "help": "Highlight the chorus first, then count the repeats with a partner.",
+        "prep": "PASTE THE CHORUS into the extract box before you teach. Model: read, count repeats, name the ask.",
+        "tag": "[I Do | Explicit teaching | SC1, SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "We Do",
+      "title": "What does he want us to do?",
+      "extract": "[ Four lines of Verse 2 go here. Run scripts/inject_lyrics.py, or paste them yourself. ]",
+      "source": "Spirit Bird, Xavier Rudd, 2012",
+      "reveal": {
+        "answers": [
+          "Chorus: we feel ___",
+          "Verse: we must ___"
+        ]
+      },
+      "notes": {
+        "answer": "open - keep fighting for culture and land",
+        "beats": [
+          [
+            "CHORAL READ the verse, together on three.",
+            "SAY: The chorus made us feel. Now he says what to do."
+          ],
+          [
+            "ASK: What does he want them to do?",
+            "40 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: keep fighting, keep going, do not give up"
+          ],
+          [
+            "SCAN boards, back row first.",
+            "80%+ -> reveal, cold call: which word told you?",
+            "Less -> reread two lines, ask who he speaks to, re-ask."
+          ]
+        ],
+        "trap": [
+          "saying he wants us to feel sad.",
+          "Fix: point to the verbs, ask what they order, student rewrites."
+        ],
+        "stretch": "Who is he speaking to? Give your evidence.",
+        "help": "Underline every verb first, then answer.",
+        "prep": "Guided practice on new text, same craft move. SC2, seven minutes.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 5, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Why does a songwriter repeat a line?",
+      "prompt": "Voices off. Fingers at your chest, then show me.",
+      "options": [
+        {
+          "text": "To fill up time in the song"
+        },
+        {
+          "text": "To make sure you remember that idea"
+        },
+        {
+          "text": "Because they ran out of new words"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - to make sure you remember that idea",
+        "beats": [
+          "SAY: Three reasons. Only one is his real reason.",
+          [
+            "ASK: Why does a songwriter repeat a line?",
+            "15 sec. Cue: fingers at your chest... show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN fingers, back row first.",
+            "80%+ -> reveal, cold call one B: what do you remember?",
+            "Less -> say a jingle, ask why it stuck, re-ask."
+          ],
+          [
+            "REVEAL after fingers.",
+            "SAY: B. Repeat the line you want them to remember."
+          ]
+        ],
+        "trap": [
+          "choosing A because the song is long.",
+          "Fix: ask what they remember from the song, student re-answers."
+        ],
+        "stretch": "Name an advert line you cannot forget.",
+        "help": "Cover A and C. Ask only whether B is true.",
+        "prep": "The hinge before group writing. Under 80% means write one class refrain together first.",
+        "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Write the line they will remember",
+      "task": "Write one line you would repeat for people whose rights are ignored.",
+      "steps": [
+        "Choose who you stand up for",
+        "Write the one line you repeat",
+        "Add two lines that show why"
+      ],
+      "where": "In your booklet",
+      "visual": {
+        "type": "pictogram",
+        "name": "megaphone"
+      },
+      "visualLabel": "Say it so they remember",
+      "frame": "We stand up for ___ . Our line is ___ .",
+      "notes": {
+        "answer": "open - one short line that asks for something, not a nice slogan",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: One line. The line your whole group would repeat."
+          ],
+          [
+            "SAY: Choose real people. Refugees, people with disability, kids left out.",
+            "Name yours before you write."
+          ],
+          "TIME 10 minutes. CIRCULATE. Ask each group to say their line aloud.",
+          "TIME 2 minutes to share. One group says their line, class repeats it."
+        ],
+        "trap": [
+          "writing a whole verse and no repeated line.",
+          "Fix: ask which line they would say twice, the group circles it."
+        ],
+        "stretch": "Write a second line that answers the first.",
+        "help": "Give the frame filled to the first blank. The group writes only the line.",
+        "prep": "Independent application of SC3. Twelve minutes including the share. Steer groups off jokes early.",
+        "tag": "[You Do | Mastery and application | SC3 | HITS 5, 10]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Write the line Xavier Rudd repeats. What does it make you feel?",
+        "Now write one thing the verse asks us to do."
+      ],
+      "notes": {
+        "answer": "the repeated line, a feeling word, and one thing the verse asks",
+        "beats": [
+          "SAY: On your own now. Booklet open, lyric sheet beside it.",
+          [
+            "ASK: The repeated line, how it feels, one thing the verse asks.",
+            "180 sec. Cue: voices off, quick write in your own booklet.",
+            "EXPECT: the refrain, a feeling word, a keep-going answer"
+          ],
+          "COLLECT booklets. RECORD who gave no feeling word for the small group."
+        ],
+        "trap": [
+          "copying the line and stopping there.",
+          "Fix: none now, record the name and pick it up tomorrow."
+        ],
+        "prep": "Exit evidence. The line alone is SC1; the feeling and the ask are SC2.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner the one line from today you will still remember tomorrow.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "takeaways": [
+        "Repeat the line you want them to remember."
+      ],
+      "notes": "Read the three I can lines together. Thumbs on cue, then the turn and tell. Listen for a repeated line plus what it asks."
+    }
+  ]
+}

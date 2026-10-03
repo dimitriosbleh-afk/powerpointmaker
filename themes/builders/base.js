@@ -912,9 +912,11 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     const liBodyH = Math.max(liItems.length * perItem, 0.52);
     const liH     = LI_HDR_H + liBodyH + PAD;
     el.addCard(s, 0.5, CONTENT_TOP, 9, liH, { variant: "tint", tone: C.PRIMARY, strip: C.PRIMARY });
+    const hdrSize = o.strongHeadings ? sz.liHeader * 1.22 : sz.liHeader;
     s.addText("Learning Intention", {
       x: 0.75, y: CONTENT_TOP + 0.08, w: 5, h: LI_HDR_H - 0.10,
-      fontSize: sz.liHeader, fontFace: FONT_B, color: C.PRIMARY, bold: true, margin: 0,
+      fontSize: hdrSize, fontFace: o.strongHeadings ? FONT_H : FONT_B,
+      color: C.PRIMARY, bold: true, margin: 0,
     });
     s.addText(liItems[0] || "", {
       x: 0.75, y: CONTENT_TOP + LI_HDR_H, w: 8.5, h: liBodyH,
@@ -922,14 +924,16 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
       fit: "shrink", shrinkText: true,
     });
 
-    // SC card
-    const scY     = CONTENT_TOP + liH + GAP;
+    // SC card. `separate` opens the gap so the two cards read as two things,
+    // which is what a teacher scanning from the back of the room needs.
+    const scY     = CONTENT_TOP + liH + (o.separate ? GAP * 2.2 : GAP);
     const scBodyH = scItems.length * perItem;
     const scH     = SC_HDR_H + scBodyH + PAD;
     el.addCard(s, 0.5, scY, 9, scH, { strip: C.ACCENT });
     s.addText("Success Criteria", {
       x: 0.75, y: scY + 0.08, w: 5, h: SC_HDR_H - 0.10,
-      fontSize: sz.liHeader, fontFace: FONT_B, color: C.CHARCOAL, bold: true, margin: 0,
+      fontSize: hdrSize, fontFace: o.strongHeadings ? FONT_H : FONT_B,
+      color: o.strongHeadings ? C.ACCENT : C.CHARCOAL, bold: true, margin: 0,
     });
 
     if (tiered) {
@@ -957,8 +961,12 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
       });
     } else {
       s.addText(scItems.map((t, i) => ({
-        text: t,
-        options: { bullet: true, breakLine: i < scItems.length - 1, fontSize, color: C.CHARCOAL },
+        text: o.numberSC ? `${i + 1}.  ${t}` : t,
+        options: {
+          bullet: !o.numberSC,
+          breakLine: i < scItems.length - 1,
+          fontSize, color: C.CHARCOAL,
+        },
       })), {
         x: 0.75, y: scY + SC_HDR_H, w: 8.5, h: scBodyH,
         fontFace: FONT_B, margin: 0,
@@ -1996,12 +2004,15 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
       });
     }
     if (o.prompt) {
+      // opts.link makes the prompt bar's TEXT a hyperlink (megaprompt 74) so a
+      // listen/watch slide can open its video without the teacher retyping a URL.
       el.addTextOnShape(s, String(o.prompt), {
         x: 0.5, y: SAFE_BOTTOM - promptH, w: 9, h: promptH, rectRadius: promptH / 2,
         fill: { color: o.promptColor || tone },
       }, {
         fontSize: byBand(sz, 26, 22, 18), fontFace: FONT_H, color: C.WHITE, bold: true,
         align: "center", valign: "middle", margin: 0.1,
+        hyperlink: o.link ? { url: String(o.link), tooltip: String(o.prompt) } : undefined,
       });
     }
 

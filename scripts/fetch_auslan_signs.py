@@ -1,17 +1,27 @@
 """Populate the Auslan sign image bank from Auslan Signbank.
 
-For each gloss, finds the Signbank entry, downloads the sign video, and composes
-a still sequence strip that shows the sign's movement (the way the printed
-references do). Writes assets/auslan_signs/<GLOSS>.png plus a manifest recording
-exactly which entry each image came from, so the teacher can verify every sign
-before teaching it.
+For each gloss, finds the Signbank entry, downloads the sign video, and writes
+either an animated GIF of the sign (--gif, the default for new units) or a
+still sequence strip, plus a manifest recording exactly which entry the asset
+came from, so the teacher can verify every sign before teaching it.
+
+The teacher's verdict on the strips was that they are not clear enough to
+reproduce a sign from, so --gif is what decks use. The strip mode is kept for
+printables, which cannot animate.
 
 Nothing here is a verified sign. The manifest is the verification worklist.
 
 Usage:
-    python scripts/fetch_auslan_signs.py --glosses TEAM SCHOOL AGAIN
-    python scripts/fetch_auslan_signs.py --from-file glosses.txt
+    python scripts/fetch_auslan_signs.py --gif --glosses TEAM SCHOOL AGAIN
+    python scripts/fetch_auslan_signs.py --gif --from-file glosses.txt
     python scripts/fetch_auslan_signs.py --from-file glosses.txt --refetch
+    python scripts/fetch_auslan_signs.py --gif --links vetted_links.json
+
+A links file is how the teacher's vetted entry wins over a search. It is JSON
+({"TEAM": "https://auslan.org.au/dictionary/words/team-1.html"}) or one
+`GLOSS <tab or space> url` per line. A gloss listed there is fetched from that
+exact entry and marked vetted in the manifest; anything not listed falls back
+to the search, and the manifest says so.
 
 Source: Auslan Signbank (auslan.org.au), CC BY-NC-ND 4.0. Stills are extracted
 for internal school teaching use under the Australian schools statutory
@@ -33,6 +43,7 @@ import urllib.request
 
 import cv2
 import numpy as np
+from PIL import Image
 
 BASE = "https://auslan.org.au"
 UA = "Mozilla/5.0 (compatible; school Auslan lesson resource builder)"
@@ -56,6 +67,18 @@ PANEL_GAP = 14
 MARGIN = 16
 MAX_PANELS = 3
 
+# GIF settings, tuned by measuring. 280px tall reads clearly on a projector at
+# the size a sign card uses. Every frame shares one palette and nothing is
+# disposed between frames, so the unchanging backdrop is encoded once and the
+# file is roughly half what per-frame palettes cost. 64 colours with no dither
+# keeps handshape and face clean; the backdrop is flat, so the colours are not
+# doing much work. A sign lands around 300KB, so a deck of a dozen is about 4MB.
+GIF_H = 280
+GIF_MAX_FRAMES = 14
+GIF_MS = 90            # per frame; about 11 frames a second
+GIF_HOLD_MS = 550      # hold on the first and last frame so the sign reads
+GIF_COLORS = 64
+
 
 def fetch(url, timeout=30):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
@@ -71,12 +94,17 @@ def fetch_text(url):
         return None, str(exc)
 
 
-def find_existing(gloss):
-    """Images already in the bank for this gloss, either extension."""
-    return sorted(
-        glob.glob(os.path.join(OUT_DIR, "{}.jpg".format(gloss)))
-        + glob.glob(os.path.join(OUT_DIR, "{}.png".format(gloss)))
-    )
+def find_existing(gloss, ext=None):
+    """Assets already in the bank for this gloss.
+
+    With `ext` given, only that kind counts: a bank full of strips must not
+    make a --gif run think there is nothing to do.
+    """
+    exts = [ext] if ext else ["gif", "jpg", "png"]
+    out = []
+    for e in exts:
+        out += glob.glob(os.path.join(OUT_DIR, "{}.{}".format(gloss, e)))
+    return sorted(out)
 
 
 def gloss_to_term(gloss):
@@ -178,8 +206,52 @@ def parse_entry(htmltext):
     }
 
 
+VETTED_LINKS = {}
+
+
+def load_links(path):
+    """Read the teacher's vetted gloss -> Signbank entry URL map."""
+    with open(path, encoding="utf-8") as fh:
+        raw = fh.read().strip()
+    if raw.startswith("{"):
+        data = json.loads(raw)
+    else:
+        data = {}
+        for line in raw.splitlines():
+            line = line.split("#")[0].strip()
+            if not line:
+                continue
+            parts = line.replace("\t", " ").split(None, 1)
+            if len(parts) == 2:
+                data[parts[0]] = parts[1].strip()
+    clean = {}
+    for gloss, url in data.items():
+        url = str(url).strip()
+        if not url.startswith(BASE + "/dictionary/words/"):
+            print("  ignoring {}: not a Signbank entry URL ({})".format(gloss, url[:60]))
+            continue
+        clean[gloss.strip().upper()] = url
+    return clean
+
+
+def resolve_vetted(gloss):
+    """Build the entry list from the teacher's own link, no search involved."""
+    url = VETTED_LINKS[gloss]
+    final, text = fetch_text(url)
+    if final is None or "Sign Definition" not in text:
+        return [], "vetted link did not load: {}".format(url)
+    entry = parse_entry(text)
+    if not entry["video"]:
+        return [], "vetted entry has no video: {}".format(url)
+    entry["url"] = final
+    entry["vetted"] = True
+    return [entry], None
+
+
 def resolve(gloss):
     """Return a list of entry dicts for this gloss, best match first."""
+    if gloss in VETTED_LINKS:
+        return resolve_vetted(gloss)
     term = gloss_to_term(gloss)
     if not term:
         return [], "no lexical sign expected for this gloss"
@@ -255,19 +327,16 @@ def _sharpness(fr):
     return float(cv2.Laplacian(g, cv2.CV_64F).var())
 
 
-def pick_frames(frames):
-    """Choose up to MAX_PANELS frames that all sit inside the sign itself.
+def sign_window(frames):
+    """Return (lo, hi, diffs, thresh) for the stretch that is actually the sign.
 
-    Frame 0 is the rest pose. Frames far from it are the sign. Panels are taken
-    only from the sustained-movement window, so the return to rest never prints
-    as if it were part of the sign, and each panel is nudged to the sharpest
-    nearby frame so fast signs do not come out motion-blurred.
+    Frame 0 and the last frame are rest poses. A frame resembling either one is
+    the signer arriving or leaving, not signing. The longest contiguous run of
+    genuinely-signing frames is the window. Returns lo == hi == -1 when the clip
+    never moves enough to call it.
     """
     if len(frames) < 3:
-        return frames[:1]
-
-    # Score each frame against BOTH rest poses. A frame that resembles either the
-    # opening or the closing rest is the signer arriving or leaving, not signing.
+        return -1, -1, [], 0.0
     rest_in, rest_out = _thumb(frames[0]), _thumb(frames[-1])
     diffs = []
     for fr in frames:
@@ -276,9 +345,7 @@ def pick_frames(frames):
                          float(np.abs(t - rest_out).mean())))
     peak = max(diffs) if diffs else 0.0
     if peak < 1.5:
-        return [frames[len(frames) // 2]]
-
-    # Longest contiguous run of genuinely-signing frames.
+        return -1, -1, diffs, 0.0
     thresh = peak * 0.5
     best = cur = None
     for i, d in enumerate(diffs):
@@ -289,9 +356,22 @@ def pick_frames(frames):
         else:
             cur = None
     if not best:
-        return [frames[int(np.argmax(diffs))]]
+        i = int(np.argmax(diffs))
+        return i, i, diffs, thresh
+    return best[0], best[1], diffs, thresh
 
-    lo, hi = best
+
+def pick_frames(frames):
+    """Choose up to MAX_PANELS frames that all sit inside the sign itself.
+
+    Each panel is nudged to the sharpest nearby frame so fast signs do not come
+    out motion-blurred.
+    """
+    if len(frames) < 3:
+        return frames[:1]
+    lo, hi, diffs, thresh = sign_window(frames)
+    if lo < 0:
+        return [frames[len(frames) // 2]]
     if hi - lo < 3:
         return [frames[(lo + hi) // 2]]
 
@@ -385,15 +465,63 @@ def compose_strip(frames, out_path):
     return len(panels), total_w, total_h
 
 
-def build_gloss(gloss, refetch=False):
+def compose_gif(frames, out_path):
+    """Write the sign as a looping GIF, cropped to the signer.
+
+    Padded a little either side of the movement window so the sign starts from
+    rest and returns to it, which is how a learner needs to see it. The first
+    and last frames are held so the start and end handshapes read before the
+    loop comes round again.
+    """
+    lo, hi, _, _ = sign_window(frames)
+    if lo < 0:
+        lo, hi = 0, len(frames) - 1
+    pad = max(2, (hi - lo) // 6)
+    lo = max(0, lo - pad)
+    hi = min(len(frames) - 1, hi + pad)
+    window = frames[lo:hi + 1] or frames
+
+    step = max(1, int(round(len(window) / float(GIF_MAX_FRAMES))))
+    chosen = window[::step][:GIF_MAX_FRAMES]
+    if len(chosen) < 2:
+        chosen = window[:2] or window
+
+    x, y, w, h = signer_bbox(chosen)
+    pil = []
+    for fr in chosen:
+        crop = fr[y:y + h, x:x + w]
+        scale = GIF_H / float(crop.shape[0])
+        small = cv2.resize(
+            crop, (max(1, int(crop.shape[1] * scale)), GIF_H), interpolation=cv2.INTER_AREA
+        )
+        pil.append(Image.fromarray(cv2.cvtColor(small, cv2.COLOR_BGR2RGB)))
+
+    # One palette for every frame, so GIF can encode only what changed between
+    # them. Per-frame palettes force a full frame each time and cost about
+    # double for no visible gain on a flat backdrop.
+    base = pil[0].quantize(colors=GIF_COLORS, method=Image.MEDIANCUT)
+    quant = [base] + [p.quantize(palette=base, dither=Image.NONE) for p in pil[1:]]
+
+    durations = [GIF_MS] * len(quant)
+    durations[0] = GIF_HOLD_MS
+    durations[-1] = GIF_HOLD_MS
+    quant[0].save(
+        out_path, save_all=True, append_images=quant[1:],
+        duration=durations, loop=0, optimize=True, disposal=1,
+    )
+    return len(quant), quant[0].width, quant[0].height
+
+
+def build_gloss(gloss, refetch=False, as_gif=False):
     entries, err = resolve(gloss)
     if err:
         return {"gloss": gloss, "status": "MISSING", "reason": err}
 
+    ext = "gif" if as_gif else "jpg"
     made = []
     for i, entry in enumerate(entries[:MAX_PANELS]):
         suffix = "" if i == 0 else "_{}".format(i + 1)
-        out = os.path.join(OUT_DIR, "{}{}.jpg".format(gloss, suffix))
+        out = os.path.join(OUT_DIR, "{}{}.{}".format(gloss, suffix, ext))
         if os.path.exists(out) and not refetch:
             made.append({"file": os.path.basename(out), "skipped": True, "entry": entry["url"]})
             continue
@@ -402,15 +530,20 @@ def build_gloss(gloss, refetch=False):
             frames = read_frames(vid)
             if not frames:
                 continue
-            picks = pick_frames(frames)
-            n, w, h = compose_strip(picks, out)
+            if as_gif:
+                n, w, h = compose_gif(frames, out)
+            else:
+                n, w, h = compose_strip(pick_frames(frames), out)
         except Exception as exc:
             return {"gloss": gloss, "status": "ERROR", "reason": str(exc)[:120]}
         made.append({
             "file": os.path.basename(out),
-            "panels": n,
+            "kind": "gif" if as_gif else "strip",
+            "frames" if as_gif else "panels": n,
             "size": "{}x{}".format(w, h),
+            "kb": round(os.path.getsize(out) / 1024.0),
             "entry": entry["url"],
+            "vetted": bool(entry.get("vetted")),
             "keywords": entry["keywords"],
             "definition": entry["definition"],
             "video": entry["video"],
@@ -428,6 +561,13 @@ def main():
     ap.add_argument("--glosses", nargs="*", default=[])
     ap.add_argument("--from-file")
     ap.add_argument("--refetch", action="store_true")
+    ap.add_argument("--gif", action="store_true",
+                    help="write an animated GIF of the whole sign instead of a "
+                         "still strip. This is what decks use")
+    ap.add_argument("--links",
+                    help="the teacher's vetted gloss -> Signbank entry URL map "
+                         "(JSON, or one 'GLOSS url' per line). Listed glosses "
+                         "are fetched from that entry, not from a search")
     ap.add_argument("--workers", type=int, default=4,
                     help="parallel fetches (default 4; Signbank is run by a "
                          "charity, so do not raise this much)")
@@ -440,17 +580,23 @@ def main():
                 line = line.split("#")[0].strip()
                 if line:
                     glosses.append(line.upper())
+    if args.links:
+        VETTED_LINKS.update(load_links(args.links))
+        print("Vetted links loaded for {} gloss(es).".format(len(VETTED_LINKS)))
+        if not glosses:
+            glosses = sorted(VETTED_LINKS)
     if not glosses:
-        ap.error("give --glosses or --from-file")
+        ap.error("give --glosses, --from-file or --links")
 
     os.makedirs(OUT_DIR, exist_ok=True)
+    ext = "gif" if args.gif else "jpg"
 
     # Skip glosses already in the bank before spending any requests on them.
     # After a few units most of a new unit's vocabulary is already here, which
     # is the whole point of sharing one bank.
     todo, already = [], []
     for g in dict.fromkeys(glosses):  # de-duplicate, keep order
-        if not args.refetch and find_existing(g):
+        if not args.refetch and find_existing(g, ext):
             already.append(g)
         else:
             todo.append(g)
@@ -466,7 +612,7 @@ def main():
     lock = threading.Lock()
     print("Fetching {} gloss(es) with {} workers...".format(len(todo), args.workers))
     with cf.ThreadPoolExecutor(max_workers=max(1, args.workers)) as pool:
-        futures = {pool.submit(build_gloss, g, args.refetch): g for g in todo}
+        futures = {pool.submit(build_gloss, g, args.refetch, args.gif): g for g in todo}
         for fut in cf.as_completed(futures):
             g = futures[fut]
             try:
@@ -508,7 +654,13 @@ def main():
         }, fh, indent=2)
 
     ok = sum(1 for r in results if r["status"] == "OK")
-    print("\n{} of {} glosses imaged. Manifest: {}".format(ok, len(results), manifest_path))
+    kb = sum(m.get("kb", 0) for r in results if r["status"] == "OK" for m in r["images"])
+    print("\n{} of {} glosses imaged as {}s, {} KB total. Manifest: {}".format(
+        ok, len(results), ext, kb, manifest_path))
+    unvetted = [r["gloss"] for r in results if r["status"] == "OK"
+                and not any(m.get("vetted") for m in r["images"])]
+    if unvetted and VETTED_LINKS:
+        print("Found by search, not from a vetted link: " + ", ".join(unvetted))
     missing = [r["gloss"] for r in results if r["status"] != "OK"]
     if missing:
         print("Not found (deck will use lookup cards): " + ", ".join(missing))

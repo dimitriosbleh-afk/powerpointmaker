@@ -4,12 +4,32 @@ Shared library of sign images used by Auslan session decks (see
 `IMPORTANT/AUSLAN_2_SLIDES_PROMPT.md`). One bank for all Auslan units, because
 question signs, greetings, time markers and politeness signs recur every term.
 
-Images are built automatically from Auslan Signbank:
+Assets are built automatically from Auslan Signbank:
 
 ```bash
+# what decks use: an animated GIF of the whole sign
+python scripts/fetch_auslan_signs.py --gif --links reference/auslan/signbank_links/<unit>.json
+python scripts/fetch_auslan_signs.py --gif --glosses TEAM SCHOOL AGAIN
+
+# still strips, for printables, which cannot animate
 python scripts/fetch_auslan_signs.py --from-file assets/auslan_signs/core_glosses.txt
-python scripts/fetch_auslan_signs.py --glosses TEAM SCHOOL AGAIN
 ```
+
+**Decks use the GIF.** The teacher's verdict on the still strips was that they
+are not clear enough for a student to reproduce a sign from, so a sign card
+shows the movement: 14 frames at about 11 a second, 280 pixels tall, starting
+and ending at rest, around 250KB a sign. Strips are kept only for paper.
+
+**A links file beats the search.** `--links` takes the teacher's own map of
+gloss to Signbank entry URL (JSON, or one `GLOSS url` per line). Those glosses
+are fetched from that exact entry and recorded as vetted in the manifest;
+everything else falls back to searching, and the run prints which. Chase those
+before a deck ships, because a plausible image of the wrong sense is invisible
+in a rendered slide.
+
+Sign It! illustrations scanned by the teacher live in `signit/`, cut by
+`scripts/crop_signit_scans.py`, with their page numbers in
+`signit_manifest.json` so a slide can caption them.
 
 ## The images are NOT in git. Rebuild them.
 
@@ -41,13 +61,13 @@ than one sign for a word, the extra ones are saved as variants and belong on a
 
 ## Naming
 
-- One image per sign, gloss in caps: `TEAM.jpg`, `FAVOURITE.jpg`
+- One asset per sign, gloss in caps: `TEAM.gif` for decks, `TEAM.jpg` for paper
 - Multi-word glosses use hyphens: `THANK-YOU.jpg`, `SLOW-DOWN.jpg`
 - Regional or alternate forms are `TEAM_2.jpg`, `TEAM_3.jpg`. The unnumbered
   file is Signbank's first entry, which is not automatically the form your
   school teaches - check it.
-- `.jpg` holds the photographic strips from Signbank. Hand-added line-art scans
-  may be `.png`. Build scripts resolve either extension.
+- `.gif` holds the animated sign, `.jpg` the photographic strip. Hand-added
+  line-art scans may be `.png`. Build scripts resolve any of the three.
 - The gloss in the filename must match the gloss in the unit document's
   vocabulary bank exactly. That match is how build scripts find the image.
 

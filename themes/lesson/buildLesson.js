@@ -184,7 +184,7 @@ async function buildLesson(spec, opts) {
 
       case "heroVisual":
         s = T.heroVisualSlide(pres, badgeTextFor(T, slide), slide.title, slide.visual, notes, footer, {
-          label: slide.label, prompt: slide.prompt, badgeColor: badgeColorFor(T, slide),
+          label: slide.label, prompt: slide.prompt, link: slide.link, badgeColor: badgeColorFor(T, slide),
           reserveBottom: slide.reveal ? byBand(T.S, 1.15, 1.05, 0.9) : 0,
         });
         break;

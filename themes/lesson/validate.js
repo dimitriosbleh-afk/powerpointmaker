@@ -29,7 +29,7 @@ const KINDS = {
   launch:        { required: ["title"], optional: ["lines", "visual", "label", "prompt", "badge", "badgeColor", "reveal", "notes"], teaching: true },
   li:            { required: ["learningIntention", "successCriteria"], optional: ["notes"], teaching: true },
   keyWord:       { required: ["word", "meaning"], optional: ["example", "pictogram", "image", "routine", "notes"], teaching: true },
-  heroVisual:    { required: ["badge", "title", "visual"], optional: ["label", "prompt", "badgeColor", "reveal", "notes"], teaching: true },
+  heroVisual:    { required: ["badge", "title", "visual"], optional: ["label", "prompt", "link", "badgeColor", "reveal", "notes"], teaching: true },
   content:       { required: ["badge", "title", "lines"], optional: ["visual", "badgeColor", "reveal", "notes"], teaching: true },
   workedExample: { required: ["stage", "title", "steps"], optional: ["stageLabel", "visual", "reveal", "notes"], teaching: true, numeracy: true },
   choice:        { required: ["badge", "title", "options"], optional: ["prompt", "answer", "badgeColor", "letters", "notes"], teaching: true },
@@ -206,6 +206,13 @@ function validateLessonSpec(spec) {
     validateReveal(slide.reveal, w, errors, warnings, slide);
     if (slide.badgeColor && !BADGE_COLORS.includes(slide.badgeColor)) {
       errors.push(`${w}.badgeColor: use one of ${BADGE_COLORS.join(", ")}`);
+    }
+    if (slide.link != null) {
+      if (!isNonEmptyString(slide.link) || !/^https?:\/\//i.test(slide.link)) {
+        errors.push(`${w}.link: a full http(s) URL. The prompt bar text becomes the clickable link (megaprompt 74).`);
+      } else if (!isNonEmptyString(slide.prompt)) {
+        errors.push(`${w}.link: needs a prompt too. The prompt text is what becomes clickable, e.g. "Press play".`);
+      }
     }
 
     switch (slide.kind) {
