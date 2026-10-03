@@ -248,7 +248,13 @@ function createElements(C, FONT_H, FONT_B, cardShadowFn, S) {
       validateContrast(to.color, fillObj.color, "addTextOnShape");
     }
 
-    slide.addText(text, {
+    // Megaprompt 74: a hyperlink belongs on the TEXT RUN, never at the
+    // addText options level, so only the words are clickable, not the card.
+    const runs = to.hyperlink
+      ? [{ text: String(text), options: { hyperlink: to.hyperlink, color: to.color } }]
+      : text;
+
+    slide.addText(runs, {
       x: so.x, y: so.y, w: so.w, h: so.h,
       align:    to.align    || "center",
       valign:   to.valign   || "middle",

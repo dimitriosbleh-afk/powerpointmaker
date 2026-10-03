@@ -88,7 +88,7 @@ then the `launch`, then `keyWord` cards if any, then the body, `exitTicket`,
 | `launch` | `title` | `lines`, `visual`, `label`, `prompt`, `reveal` | hero visual (no lines) or hero statement panel |
 | `li` | `learningIntention`, `successCriteria` (exactly 3) | | LI and SC |
 | `keyWord` | `word`, `meaning`, `pictogram` or `image` | `example`, `routine` | one word card with its picture |
-| `heroVisual` | `badge`, `title`, `visual` | `label`, `prompt`, `badgeColor`, `reveal` | the representation IS the slide |
+| `heroVisual` | `badge`, `title`, `visual` | `label`, `prompt`, `link`, `badgeColor`, `reveal` | the representation IS the slide. `link` (a full http(s) URL) makes the `prompt` bar text clickable, e.g. a listen/watch slide that opens its video |
 | `content` | `badge`, `title`, `lines` | `visual`, `badgeColor`, `reveal` | 1-3 short lines set as a hero panel; more lines as bullets; visual on the right |
 | `workedExample` | `stage` (1-5), `title`, `steps` | `stageLabel`, `visual`, `reveal` | numeracy worked example with visual beside the steps |
 | `choice` | `badge`, `title`, `options` (2-4) | `prompt`, `answer` (0-based), `letters` | Which one? cards; `answer` reveals a tick on click. With `answer`, every wrong option needs `misconception` |

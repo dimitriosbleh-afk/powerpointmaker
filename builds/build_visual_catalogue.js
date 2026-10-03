@@ -238,6 +238,31 @@ async function build() {
     }
   }
 
+  // ── Signing-room cue strip: the six cues, in every combination a deck uses ──
+  {
+    const T = createTheme("literacy", "grade56", 0);
+    const s = pres.addSlide();
+    T.addTopBar(s, T.C.PRIMARY);
+    T.addBadge(s, "Cues", { color: T.C.PRIMARY });
+    T.addTitle(s, "Signing-room cue strip");
+    const sets = [
+      ["voicesOff", "eyesUp", "watchCopy"],
+      ["voicesOff", "partner", "timer"],
+      ["voicesOff", "whiteboards"],
+      T.listCues(),
+    ];
+    sets.forEach((set, i) => {
+      T.addCueStrip(s, set, { y: 1.45 + i * 0.62, right: 9.5 });
+      s.addText(set.length === 6 ? "all six" : set.join(", "), {
+        x: 0.5, y: 1.45 + i * 0.62, w: 3.4, h: 0.34,
+        fontSize: 11, fontFace: T.FONT_B, color: T.C.MUTED,
+        align: "left", valign: "middle", margin: 0,
+      });
+    });
+    T.addFooter(s, FOOTER);
+    s.addNotes("QA reference: addCueStrip. The six cues are fixed by the Auslan slides prompt. Same image and same words for the same cue on every slide, right-aligned under the stage badge. Check nothing overlaps the title and every chip reads at a glance.");
+  }
+
   // ── Photo placeholder regression (grade56 annotatedModelSlide) ──
   {
     const T = createTheme("literacy", "grade56", 0);

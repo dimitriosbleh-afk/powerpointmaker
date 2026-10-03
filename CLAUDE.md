@@ -374,17 +374,30 @@ levels: every `WARN` fails the build, a `NOTE` is advisory but still needs answe
 Run `python tests/test_og_builder_regressions.py` before
 changing the OG builder, its sample specification, or its note rules.
 
-## Auslan Decks - Two-Step Pipeline
+## Auslan Decks - Three-Step Pipeline
 
-Auslan units use two prompts in `IMPORTANT/`, numbered by step:
+Auslan units use three prompts in `IMPORTANT/`, numbered by step, plus
+`AUSLAN_PENDING_FROM_CHRIS.md` (the live checklist of decisions made with the Auslan
+teacher and what he still owes; update its Status column, never delete rows):
 `AUSLAN_1_UNIT_PROMPT.md` (run in a chat, produces the unit planning document,
 which always delivers as a Word file - author the Markdown, run its output
 hygiene checks, then convert with `python scripts/md_to_docx.py in.md out.docx
 "Title" "Subtitle" "Meta"`; there is no pandoc here, and QA the result via
 LibreOffice + PyMuPDF because pdftoppm is not installed)
 then `AUSLAN_2_SLIDES_PROMPT.md` (run in this repo with that document pasted,
-builds the session decks + PDFs through the normal theme pipeline, literacy
-theme). `AUSLAN_GAME_BANK.md` is an optional companion pasted alongside step 1:
+builds the session decks, the student journal template and PDFs through the
+normal theme pipeline, literacy theme), then `AUSLAN_3_TEACHER_LAYER_PROMPT.md`
+(run in this repo, produces the landscape pick-up documents, the cross-cohort
+weekly planner, the iDoceo-ready evidence tracker xlsx and the CRT review pack).
+From v2.0 of the slides prompt, Signbank frame strips are retired: signs are
+animated GIFs from the Signbank video (`fetch_auslan_signs.py --gif`, with
+`--links` so the teacher's vetted Signbank entry beats a search) or
+teacher-supplied Sign It! scans cropped by `crop_signit_scans.py` and captioned
+with their page number. Timed slides carry a countdown from
+`make_countdown_gif.py <seconds> --color <PRIMARY>`. The six fixed signing-room
+cues are `T.addCueStrip(slide, [...])`, listed by `T.listCues()`. The evidence
+tracker workbook is `build_evidence_tracker.py`, whose columns are the ACARA
+checklist rows, because those rows are the report descriptors. `AUSLAN_GAME_BANK.md` is an optional companion pasted alongside step 1:
 a growing repository of voice-off games, teacher-supplied ones reproduced
 faithfully and published mechanics rebuilt for a signing room. Add to it when a
 game has been run and worked; do not reconstruct its entries from memory when it

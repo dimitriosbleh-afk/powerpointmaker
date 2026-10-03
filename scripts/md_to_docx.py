@@ -5,9 +5,13 @@ Written for AUSLAN_1_UNIT_PROMPT.md, which delivers as a Word file. Handles
 **bold** inside cells), - bullets, inline bold, and a Word TOC field.
 
     python scripts/md_to_docx.py in.md out.docx ["Title"] ["Subtitle"] ["Meta"]
+                                 [--landscape] [--plain] [--fontsize=9]
 
 Title defaults to the output filename stem. Subtitle and Meta are optional
-title-page lines. There is no pandoc in this environment; python-docx is the
+title-page lines. --landscape gives A4 landscape (for the teacher layer's
+at-a-glance, lesson pages and weekly planner). --plain drops the title page and
+the contents field, for short documents that start at their first heading.
+--fontsize sets the body point size; column widths scale with it. There is no pandoc in this environment; python-docx is the
 route. QA the result with LibreOffice + PyMuPDF (pdftoppm is not installed):
 
     soffice --headless --convert-to pdf out.docx
@@ -20,16 +24,28 @@ from docx import Document
 from docx.shared import Pt, Cm, RGBColor
 from docx.enum.text import WD_BREAK, WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.enum.section import WD_ORIENT
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
-SRC = sys.argv[1]
-OUT = sys.argv[2]
-TITLE = sys.argv[3] if len(sys.argv) > 3 else os.path.splitext(os.path.basename(OUT))[0]
-SUBTITLE = sys.argv[4] if len(sys.argv) > 4 else ''
-META = sys.argv[5] if len(sys.argv) > 5 else ''
+argv = [a for a in sys.argv[1:] if not a.startswith('--')]
+FLAGS = {a for a in sys.argv[1:] if a.startswith('--')}
+LANDSCAPE = '--landscape' in FLAGS
+PLAIN = '--plain' in FLAGS
+FONT_PT = 11.0
+for f in FLAGS:
+    if f.startswith('--fontsize'):
+        FONT_PT = float(f.split('=', 1)[1])
 
-USABLE_CM = 18.0  # A4 portrait, 1.5cm margins each side
+SRC = argv[0]
+OUT = argv[1]
+TITLE = argv[2] if len(argv) > 2 else os.path.splitext(os.path.basename(OUT))[0]
+SUBTITLE = argv[3] if len(argv) > 3 else ''
+META = argv[4] if len(argv) > 4 else ''
+
+# usable text width, 1.5cm margins each side
+USABLE_CM = 26.7 if LANDSCAPE else 18.0
+NEWPAGE = chr(92) + 'newpage'
 
 
 def add_toc_field(par):
@@ -54,17 +70,27 @@ def add_toc_field(par):
     r5._r.append(end)
 
 
+INLINE = re.compile(r'\*\*(.+?)\*\*|`([^`]+)`')
+
+
 def emit_inline(par, text):
-    """Write text into a paragraph, honouring **bold** and <br> line breaks."""
+    """Write text into a paragraph, honouring **bold**, `code` and <br> line breaks."""
     for bi, chunk in enumerate(text.split('<br>')):
         if bi:
             par.add_run().add_break(WD_BREAK.LINE)
-        for i, piece in enumerate(re.split(r'\*\*(.+?)\*\*', chunk)):
-            if not piece:
-                continue
-            run = par.add_run(piece)
-            if i % 2 == 1:
-                run.bold = True
+        pos = 0
+        for m in INLINE.finditer(chunk):
+            if m.start() > pos:
+                par.add_run(chunk[pos:m.start()])
+            if m.group(1) is not None:
+                par.add_run(m.group(1)).bold = True
+            else:
+                run = par.add_run(m.group(2))
+                run.font.name = 'Consolas'
+                run.font.size = Pt(FONT_PT - 1)
+            pos = m.end()
+        if pos < len(chunk):
+            par.add_run(chunk[pos:])
 
 
 def split_row(line):
@@ -75,8 +101,8 @@ def is_sep(line):
     return bool(re.match(r'^\|[\s:|-]+\|$', line.strip())) and '-' in line
 
 
-CHAR_CM = 0.185   # approx width of one Calibri 11pt character
-PAD_CM = 0.42     # left + right cell padding
+CHAR_CM = 0.20 * FONT_PT / 11.0   # approx width of one Calibri character at FONT_PT
+PAD_CM = 0.45                     # left + right cell padding
 
 
 def col_widths(rows, ncol):
@@ -85,13 +111,15 @@ def col_widths(rows, ncol):
     floors, weights = [], []
     for c in range(ncol):
         longest_word, longest_cell = 1, 1
-        for r in rows:
-            txt = r[c].replace('<br>', ' ').replace('**', '')
+        for ri, r in enumerate(rows):
+            txt = r[c].replace('<br>', ' ').replace('**', '').replace('`', '')
             longest_cell = max(longest_cell, len(txt))
+            # the header row renders bold, which is about 15 per cent wider
+            scale = 1.15 if ri == 0 else 1.0
             for w in txt.split():
-                longest_word = max(longest_word, len(w))
+                longest_word = max(longest_word, len(w) * scale)
         floors.append(min(longest_word * CHAR_CM + PAD_CM, USABLE_CM / 2))
-        weights.append(min(longest_cell, 60))
+        weights.append(min(longest_cell, 120))
 
     spare = USABLE_CM - sum(floors)
     if spare <= 0:                       # floors alone overflow: scale them down
@@ -120,18 +148,23 @@ def set_repeat_header(row):
 doc = Document()
 
 sec = doc.sections[0]
-sec.page_width, sec.page_height = Cm(21.0), Cm(29.7)
+if LANDSCAPE:
+    sec.orientation = WD_ORIENT.LANDSCAPE
+    sec.page_width, sec.page_height = Cm(29.7), Cm(21.0)
+else:
+    sec.page_width, sec.page_height = Cm(21.0), Cm(29.7)
 sec.left_margin = sec.right_margin = Cm(1.5)
-sec.top_margin = sec.bottom_margin = Cm(1.8)
+sec.top_margin = sec.bottom_margin = Cm(1.0 if LANDSCAPE else 1.8)
 
 normal = doc.styles['Normal']
 normal.font.name = 'Calibri'
-normal.font.size = Pt(11)
-normal.paragraph_format.space_after = Pt(6)
+normal.font.size = Pt(FONT_PT)
+normal.paragraph_format.space_after = Pt(6 if FONT_PT >= 11 else 3)
 normal.paragraph_format.space_before = Pt(0)
 
-for name, size, colour in (('Heading 1', 20, RGBColor(0x1F, 0x3B, 0x63)),
-                           ('Heading 2', 15, RGBColor(0x1F, 0x3B, 0x63))):
+for name, size, colour in (('Heading 1', FONT_PT + 9, RGBColor(0x1F, 0x3B, 0x63)),
+                           ('Heading 2', FONT_PT + 4, RGBColor(0x1F, 0x3B, 0x63)),
+                           ('Heading 3', FONT_PT + 1, RGBColor(0x1F, 0x3B, 0x63))):
     st = doc.styles[name]
     st.font.name = 'Calibri'
     st.font.size = Pt(size)
@@ -142,29 +175,34 @@ for name, size, colour in (('Heading 1', 20, RGBColor(0x1F, 0x3B, 0x63)),
     st.paragraph_format.keep_with_next = True
 
 # ---- title page ----
-t = doc.add_paragraph()
-t.alignment = WD_ALIGN_PARAGRAPH.CENTER
-r = t.add_run(TITLE)
-r.bold = True
-r.font.size = Pt(28)
-for text, size in ((SUBTITLE, 16), (META, 12)):
-    if not text:
-        continue
-    p = doc.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    p.add_run(text).font.size = Pt(size)
-t4 = doc.add_paragraph()
-t4.alignment = WD_ALIGN_PARAGRAPH.CENTER
-r = t4.add_run('(c) 2026 James Hooke. Confidential. Internal use only. Not for redistribution.')
-r.font.size = Pt(9)
-r.italic = True
-doc.add_paragraph()
-h = doc.add_paragraph()
-r = h.add_run('Contents')
-r.bold = True
-r.font.size = Pt(16)
-add_toc_field(doc.add_paragraph())
-doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
+def build_title_page():
+    t = doc.add_paragraph()
+    t.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    r = t.add_run(TITLE)
+    r.bold = True
+    r.font.size = Pt(28)
+    for text, size in ((SUBTITLE, 16), (META, 12)):
+        if not text:
+            continue
+        p = doc.add_paragraph()
+        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.add_run(text).font.size = Pt(size)
+    t4 = doc.add_paragraph()
+    t4.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    r = t4.add_run('(c) 2026 James Hooke. Confidential. Internal use only. Not for redistribution.')
+    r.font.size = Pt(9)
+    r.italic = True
+    doc.add_paragraph()
+    h = doc.add_paragraph()
+    r = h.add_run('Contents')
+    r.bold = True
+    r.font.size = Pt(16)
+    add_toc_field(doc.add_paragraph())
+    doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
+
+
+if not PLAIN:
+    build_title_page()
 
 lines = open(SRC, encoding='utf-8').read().split('\n')
 i = 0
@@ -174,7 +212,7 @@ while i < len(lines):
     line = lines[i]
     stripped = line.strip()
 
-    if stripped == '\\newpage':
+    if stripped == NEWPAGE:
         pending_break = True
         i += 1
         continue
@@ -187,7 +225,7 @@ while i < len(lines):
         doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
         pending_break = False
 
-    m = re.match(r'^(#{1,2}) (.+)$', stripped)
+    m = re.match(r'^(#{1,3}) (.+)$', stripped)
     if m:
         doc.add_heading(m.group(2).strip(), level=len(m.group(1)))
         i += 1
@@ -227,11 +265,15 @@ while i < len(lines):
                         rr.bold = True
             if ri == 0:
                 set_repeat_header(row)
-        doc.add_paragraph()
+        # no spacer paragraph when a page break or the end of file follows:
+        # on a table that exactly fills the page it would create a blank page
+        nxt = next((x.strip() for x in lines[i:] if x.strip()), '')
+        if nxt and nxt != NEWPAGE:
+            doc.add_paragraph()
         continue
 
-    if stripped.startswith('- '):
-        while i < len(lines) and lines[i].strip().startswith('- '):
+    if stripped.startswith('- ') or stripped.startswith('* '):
+        while i < len(lines) and lines[i].strip()[:2] in ('- ', '* '):
             par = doc.add_paragraph(style='List Bullet')
             par.paragraph_format.space_after = Pt(2)
             emit_inline(par, lines[i].strip()[2:])
