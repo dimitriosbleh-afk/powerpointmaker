@@ -588,7 +588,63 @@ function buildTimelineCardsPdf(file, footer, color) {
   P.writePdf(doc, file, footer);
 }
 
+/**
+ * Medal Tally Sheets A and B (unit document 11.3), for Game 7 How Many Medals.
+ * Cricket is swapped for netball, from Chris's twelve sports. The last row is
+ * meant to be ridiculous. One per student, half A and half B; consumable.
+ */
+const MEDAL_TALLY = {
+  A: [["Swimming", 7], ["Athletics", 12], ["Netball", 3], ["Basketball", 9], ["Tennis", 5], ["Sock wrestling", 41]],
+  B: [["Swimming", 11], ["Athletics", 4], ["Netball", 8], ["Basketball", 6], ["Tennis", 14], ["Sock wrestling", 38]],
+};
+
+function buildMedalTallyPdf(file, footer, color) {
+  const P = require("../themes/pdf_helpers");
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  const doc = P.createPdf({ title: "Session 6 Medal Tally Sheets A and B" });
+  ["A", "B"].forEach((sheet, k) => {
+    if (k > 0) doc.addPage();
+    let y = P.addPdfHeader(doc, "Session 6 Medal Tally Sheet " + sheet, {
+      color,
+      subtitle: "Your medals are filled in. Write your partner's numbers as they sign them to you.",
+      lessonInfo: "Session 6  |  Game 7 How Many Medals  |  print half the class A and half B",
+      showNameDate: true,
+    });
+    y += 14;
+    const x0 = P.PAGE.MARGIN;
+    const widths = [P.PAGE.CONTENT_W * 0.44, P.PAGE.CONTENT_W * 0.26, P.PAGE.CONTENT_W * 0.30];
+    const rowH = 46;
+    const rows = [["Sport", "My medals", "My partner's medals"]]
+      .concat(MEDAL_TALLY[sheet].map(([sport, n]) => [sport, String(n), ""]))
+      .concat([["Total", "", ""]]);
+    rows.forEach((row, r) => {
+      let x = x0;
+      row.forEach((cell, c) => {
+        if (r === 0) doc.rect(x, y, widths[c], rowH).fill("#E5E7EB");
+        doc.rect(x, y, widths[c], rowH).lineWidth(1).strokeColor("#374151").stroke();
+        doc.fontSize(r === 0 ? 13 : 16).font(r === 0 || c === 0 ? "Sans-Bold" : "Sans").fillColor("#111827")
+          .text(cell, x + 10, y + (rowH - (r === 0 ? 13 : 16)) / 2 - 2, { width: widths[c] - 20, align: c === 0 ? "left" : "center" });
+        x += widths[c];
+      });
+      y += rowH;
+    });
+    y += 26;
+    doc.fontSize(14).font("Sans-Bold").fillColor("#111827")
+      .text("Who has more medals altogether?", x0, y);
+    P.addWriteLine(doc, "", y + 26, {});
+    y += 70;
+    doc.fontSize(14).font("Sans-Bold").fillColor("#111827")
+      .text("Who has more sock wrestling medals?", x0, y);
+    P.addWriteLine(doc, "", y + 26, {});
+    y += 70;
+    doc.fontSize(11).font("Sans").fillColor("#4B5563")
+      .text("Pencil down while your partner signs. Watch the whole answer, then write.", x0, y, { width: P.PAGE.CONTENT_W });
+  });
+  P.writePdf(doc, file, footer);
+}
+
 module.exports = {
+  buildMedalTallyPdf,
   TIMELINE_CARDS,
   buildTimelineCardsPdf,
   SIGNIT_PAGES,
