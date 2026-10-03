@@ -135,7 +135,7 @@ function build() {
     s.addText(
       [
         { text: "I like ", options: { color: C.MUTED } },
-        { text: "cricket", options: { color: C.CHARCOAL, bold: true, underline: true } },
+        { text: "basketball", options: { color: C.CHARCOAL, bold: true, underline: true } },
         { text: " and I play it with my ", options: { color: C.MUTED } },
         { text: "brother", options: { color: C.CHARCOAL, bold: true, underline: true } },
         { text: ".", options: { color: C.MUTED } },
@@ -146,7 +146,7 @@ function build() {
       }
     );
     const cols = [
-      ["Carries the meaning", "cricket, brother, like", C.SUCCESS],
+      ["Carries the meaning", "basketball, brother, like", C.SUCCESS],
       ["Does not get looked up", "I, and, it, with, my", C.MUTED],
     ];
     cols.forEach(([head, body, tone], i) => {
@@ -167,7 +167,7 @@ function build() {
     });
     T.addFooter(s, FOOTER);
     s.addNotes(T.composeGlanceNotes({
-      answer: "cricket, brother, like",
+      answer: "basketball, brother, like",
       beats: [
         ["MODEL with your own sentence.", "Underline as you talk, so they see the choosing."],
         ["SAY: Every English word is not a sign.", "The small joining words do not get looked up."],
@@ -191,7 +191,7 @@ function build() {
     T.addTitle(s, "Finding a word in Sign It!");
     const steps = [
       ["1", "Go to the back", "The word list is at the back, in alphabetical order."],
-      ["2", "Find your word", "Look up cricket. It gives you a page number."],
+      ["2", "Find your word", "Look up basketball. It gives you a page number."],
       ["3", "Page, not chapter", "Page 80 is a page. Chapter 8 is not. Check the bottom of the page."],
     ];
     const sw = (5.7 - 0.16 * 2) / 3;
@@ -220,7 +220,7 @@ function build() {
     s.addNotes(T.composeGlanceNotes({
       answer: "the word list at the back gives the page, not the chapter",
       beats: [
-        ["MODEL with the book held up.", "Back of the book, find cricket, read the number."],
+        ["MODEL with the book held up.", "Back of the book, find basketball, read the number."],
         ["SAY: That number is a page.", "A chapter number is the big one at the start."],
         "SHOW the page number printed at the bottom of a page.",
         ["GET IT WRONG: turn to chapter 8, not page 80.", "SAY: Check the bottom of the page."],

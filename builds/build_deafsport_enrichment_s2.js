@@ -22,8 +22,8 @@ const FOOTER = "Deaf Sports in Australia  |  Session 2 of 8  |  Years 5-6 Auslan
 const OUT_DIR = "DeafSport_Enrichment_S2_Meeting_A_Signer";
 
 const SPORTS = [
-  "swimming", "running", "cricket", "basketball", "tennis", "football",
-  "netball", "soccer", "golf", "bike riding", "dance", "lawn bowls",
+  "swimming", "athletics", "futsal", "basketball", "tennis", "football",
+  "netball", "chess", "golf", "rugby", "table tennis", "lawn bowls",
 ];
 
 const report = A.createSignReport();

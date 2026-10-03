@@ -35,16 +35,16 @@ const TEAMS = [
   ["Jo", "Swimming", "Perth"], ["Kit", "Swimming", "Perth"],
   ["Ren", "Swimming", "Hobart"], ["Bo", "Swimming", "Hobart"],
   ["Tam", "Swimming", "Hobart"], ["Nia", "Swimming", "Hobart"],
-  ["Max", "Cricket", "Adelaide"], ["Eve", "Cricket", "Adelaide"],
-  ["Ari", "Cricket", "Adelaide"], ["Lou", "Cricket", "Adelaide"],
+  ["Max", "Netball", "Adelaide"], ["Eve", "Netball", "Adelaide"],
+  ["Ari", "Netball", "Adelaide"], ["Lou", "Netball", "Adelaide"],
   ["Fin", "Basketball", "Sydney"], ["Zia", "Basketball", "Sydney"],
   ["Rue", "Basketball", "Sydney"], ["Dev", "Basketball", "Sydney"],
   ["Ivy", "Tennis", "Melbourne"], ["Cam", "Tennis", "Melbourne"],
   ["Rio", "Tennis", "Melbourne"], ["Gus", "Tennis", "Melbourne"],
   ["Wren", "Athletics", "Brisbane"], ["Ash", "Athletics", "Brisbane"],
   ["Nell", "Athletics", "Brisbane"], ["Ty", "Athletics", "Brisbane"],
-  ["Sol", "Soccer", "Darwin"], ["Pip", "Soccer", "Darwin"],
-  ["Quin", "Soccer", "Darwin"], ["Jed", "Soccer", "Darwin"],
+  ["Sol", "Futsal", "Darwin"], ["Pip", "Futsal", "Darwin"],
+  ["Quin", "Futsal", "Darwin"], ["Jed", "Futsal", "Darwin"],
 ];
 
 /** Session 3 Team Role Cards: 28 cards, seven teams of four, cut and laminate. */

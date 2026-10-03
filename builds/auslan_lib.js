@@ -139,10 +139,11 @@ const EXTS = [".gif", ".jpg", ".png"];
 /**
  * Resolve a gloss to a bank asset, in this order of authority:
  *   1. the teacher's override file
- *   2. the variant whose recorded definition carries the sense the lesson needs
- *   3. a verified sense correction
- *   4. the default entry
- * A lookup card is what happens when all four come up empty, not a shortcut.
+ *   2. the entry fetched from the teacher's vetted link
+ *   3. the variant whose recorded definition carries the sense the lesson needs
+ *   4. a verified sense correction
+ *   5. the default entry
+ * A lookup card is what happens when all five come up empty, not a shortcut.
  */
 function resolveSign(gloss) {
   const exact = (name) => {
@@ -166,6 +167,13 @@ function resolveSign(gloss) {
   }
 
   if (FORCE_LOOKUP[gloss]) return null;
+
+  // Fetched from the teacher's own vetted link (--links): his choice of entry
+  // outranks the sense rules below, which exist to guess when he has not chosen.
+  const rec = manifest()[gloss];
+  const vetted = rec && (rec.images || []).find((img) => img.vetted);
+  const vettedHit = vetted && exact(vetted.file);
+  if (vettedHit) return Object.assign(vettedHit, { why: "teacher's vetted link" });
 
   const sense = SENSE_NEEDED[gloss];
   if (sense) {
