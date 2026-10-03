@@ -16,6 +16,31 @@
       "build_script": "builds/build_deafsport_challenge_s3.js",
       "folder": "DeafSport_Challenge_S3_Who_What_Where",
       "session": 3
+    },
+    {
+      "build_script": "builds/build_deafsport_challenge_s4.js",
+      "folder": "DeafSport_Challenge_S4_When_And_How_Many",
+      "session": 4
+    },
+    {
+      "build_script": "builds/build_deafsport_challenge_s5.js",
+      "folder": "DeafSport_Challenge_S5_Back_Then_And_After",
+      "session": 5
+    },
+    {
+      "build_script": "builds/build_deafsport_challenge_s6.js",
+      "folder": "DeafSport_Challenge_S6_Lights_Flags_And_What_Changed",
+      "session": 6
+    },
+    {
+      "build_script": "builds/build_deafsport_challenge_s7.js",
+      "folder": "DeafSport_Challenge_S7_The_Deaf_Profile_Interview",
+      "session": 7
+    },
+    {
+      "build_script": "builds/build_deafsport_challenge_s8.js",
+      "folder": "DeafSport_Challenge_S8_Showing_The_Story",
+      "session": 8
     }
   ]
 }

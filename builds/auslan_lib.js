@@ -767,7 +767,51 @@ function buildObservationChecklistPdf(file, footer, color, cohortNote) {
   P.writePdf(doc, file, footer);
 }
 
+/** Story Strip, The Race That Started With A Light (unit document 11.6). */
+const STORY_STRIP = [
+  "A swimmer is on the blocks. Beside her, in the next lane, is the swimmer she has raced all season.",
+  "The starter raises the gun. She is not listening for it. She is looking down at the side of the pool.",
+  "The gun fires and the light comes on. Both swimmers are gone before the sound reaches the back row.",
+  "Later, at the wall, she turns and looks up at the board. Her name is at the top.",
+];
+
+/** One strip per page, large text. Print fourteen, one per pair, and laminate. */
+function buildStoryStripPdf(file, footer, color) {
+  const P = require("../themes/pdf_helpers");
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  const doc = P.createPdf({ title: "Session 8 Story Strip" });
+  let y = P.addPdfHeader(doc, "Session 8 Story Strip", {
+    color,
+    subtitle: "Print fourteen, one per pair. Single sided. Laminate.",
+    lessonInfo: "Session 8  |  Showing the story  |  read the English, sign what you were shown",
+    showNameDate: false,
+  });
+  y += 16;
+  const x = P.PAGE.MARGIN;
+  const w = P.PAGE.CONTENT_W;
+  doc.fontSize(24).font("Sans-Bold").fillColor("#111827").text("The Race That Started With A Light", x, y, { width: w });
+  y = doc.y + 18;
+  STORY_STRIP.forEach((line) => {
+    doc.fontSize(17).font("Sans").fillColor("#111827").text(line, x, y, { width: w, lineGap: 6 });
+    y = doc.y + 16;
+  });
+  y += 10;
+  doc.roundedRect(x, y, w, 196, 8).lineWidth(1).strokeColor("#9CA3AF").stroke();
+  doc.fontSize(15).font("Sans-Bold").fillColor("#111827").text("Before you sign it", x + 16, y + 14);
+  [
+    "Where does it happen? Show that first.",
+    "Who is in it? Two swimmers, two different places. Keep them there.",
+    "Find the four things that actually happen. Some sentences only describe.",
+    "Join them with soon, later or next.",
+  ].forEach((step, i) => {
+    doc.fontSize(13).font("Sans").fillColor("#1F2937").text((i + 1) + ".  " + step, x + 16, y + 44 + i * 36, { width: w - 32 });
+  });
+  P.writePdf(doc, file, footer);
+}
+
 module.exports = {
+  STORY_STRIP,
+  buildStoryStripPdf,
   PROFILE_CARDS,
   buildProfileCardsPdf,
   buildInterviewPromptCardPdf,
