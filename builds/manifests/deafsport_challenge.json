@@ -1,0 +1,21 @@
+{
+  "unit_folder": "Deaf_Sports_Challenge_Unit",
+  "unit_pptx_name": "Deaf Sports in Australia Challenge.pptx",
+  "lessons": [
+    {
+      "build_script": "builds/build_deafsport_challenge_s1.js",
+      "folder": "DeafSport_Challenge_S1_Finding_The_Signs",
+      "session": 1
+    },
+    {
+      "build_script": "builds/build_deafsport_challenge_s2.js",
+      "folder": "DeafSport_Challenge_S2_Meeting_A_Signer",
+      "session": 2
+    },
+    {
+      "build_script": "builds/build_deafsport_challenge_s3.js",
+      "folder": "DeafSport_Challenge_S3_Who_What_Where",
+      "session": 3
+    }
+  ]
+}

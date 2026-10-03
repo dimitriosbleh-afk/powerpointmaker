@@ -1,10 +1,10 @@
 "use strict";
 
 /**
- * Deaf Sports in Australia | Enrichment (Years 5 and 6) | Lesson 3 Who, what, where
+ * Deaf Sports in Australia | Challenge (Years 3 and 4) | Lesson 3 Who, what, where
  *
  * Built from the unit document section 9.3. A build script rather than a lesson
- * spec for the reasons given in build_deafsport_enrichment_s2.js: animated sign
+ * spec for the reasons given in build_deafsport_challenge_s2.js: animated sign
  * cards, Signbank lookup cards, the cue strip and the countdown are not things
  * a spec can express. Shared parts live in builds/auslan_lib.js.
  *
@@ -12,6 +12,10 @@
  * first entry for "who" is the noun (someone); only the second carries the
  * question use, and the shared layer goes and finds it. Chris overrides any of
  * it from reference/auslan/signbank_links/overrides.json.
+ *
+ * Challenge calibration (unit document 3, 5 and 9.3): the written question card
+ * stays face up, students ask two questions (what sport, where from), and there
+ * is no cold-call follow-up after the boards.
  */
 
 const pptxgen = require("pptxgenjs");
@@ -21,14 +25,46 @@ const { createTheme, weekToVariant } = require("../themes/factory");
 const P = require("../themes/pdf_helpers");
 const A = require("./auslan_lib");
 
-const T = createTheme("literacy", "grade56", weekToVariant(1));
+const T = createTheme("literacy", "grade34", weekToVariant(1));
 const C = T.C;
-const FOOTER = "Deaf Sports in Australia  |  Session 3 of 8  |  Years 5-6 Auslan";
-const OUT_DIR = path.join("output", "DeafSport_Enrichment_S3_Who_What_Where");
+const FOOTER = "Deaf Sports in Australia  |  Session 3 of 8  |  Years 3-4 Auslan";
+const OUT_DIR = path.join("output", "DeafSport_Challenge_S3_Who_What_Where");
 const RES_DIR = path.join(OUT_DIR, "resources-session3");
 const CARDS_PDF = "Session 3 Team Role Cards.pdf";
+const QUESTION_PDF = "Session 3 Question Card.pdf";
+const QUESTIONS = ["Who are you?", "What sport do you play?", "Where are you from?"];
 
 const report = A.createSignReport();
+
+/** Session 3 Question Card: the three questions in English, eight to a page. */
+function buildQuestionCardPdf() {
+  fs.mkdirSync(RES_DIR, { recursive: true });
+  const doc = P.createPdf({ title: "Session 3 Question Card" });
+  let y = P.addPdfHeader(doc, "Session 3 Question Card", {
+    color: C.PRIMARY,
+    subtitle: "One per pair, face up on the desk all lesson. Eight to a page: cut along the lines.",
+    lessonInfo: "Session 3  |  Find Your Team and the You Do  |  the card carries the order",
+    showNameDate: false,
+  });
+  y += 10;
+  const cols = 2;
+  const gap = 12;
+  const cw = (P.PAGE.CONTENT_W - gap) / cols;
+  const ch = 132;
+  for (let i = 0; i < 8; i++) {
+    const x = P.PAGE.MARGIN + (i % cols) * (cw + gap);
+    const cy = y + Math.floor(i / cols) * (ch + gap);
+    doc.save();
+    doc.dash(3, { space: 3 }).roundedRect(x, cy, cw, ch, 6).lineWidth(1).strokeColor("#9CA3AF").stroke();
+    doc.undash();
+    doc.restore();
+    QUESTIONS.forEach((q, k) => {
+      doc.fontSize(15).font("Sans-Bold").fillColor("#111827")
+        .text((k + 1) + ".  " + q, x + 14, cy + 16 + k * 36, { width: cw - 28 });
+    });
+  }
+  P.writePdf(doc, path.join(RES_DIR, QUESTION_PDF), "Session 3  |  Question Card  |  Years 3-4 Auslan");
+}
 
 function build() {
   const pres = new pptxgen();
@@ -39,7 +75,7 @@ function build() {
     pres,
     "Who, what, where",
     "Deaf Sports in Australia",
-    "Lesson 3 of 8  |  Years 5 and 6  |  Term 4",
+    "Lesson 3 of 8  |  Years 3 and 4  |  Term 4",
     "Lesson 3 of 8. The three profile questions, and the repair that gets an explanation rather than a repeat."
   );
 
@@ -49,6 +85,11 @@ function build() {
       name: "Session 3 Team Role Cards",
       fileName: "resources-session3/" + CARDS_PDF,
       note: "One set of 28, cut and laminated. One set does all five classes.",
+    },
+    {
+      name: "Session 3 Question Card",
+      fileName: "resources-session3/" + QUESTION_PDF,
+      note: "One per pair, face up all lesson. Eight to a page.",
     },
   ], T, FOOTER, T.composeGlanceNotes({
     beats: [
@@ -76,7 +117,7 @@ function build() {
     });
     T.addInstructionCard(s, [
       { role: "header", text: "Same as every week" },
-      { text: "Write your answer in English." },
+      { text: "Write your answer in English. One sentence." },
       { text: "Underline every word you would need a sign for." },
     ], { x: 0.5, y: 3.15, w: 9, h: 1.4, strip: C.PRIMARY });
     T.addFooter(s, FOOTER);
@@ -103,7 +144,7 @@ function build() {
     "I am learning to ask who, what and where, and to ask for an explanation when I miss something.",
     [
       "I can ask one of the three profile questions.",
-      "I can ask all three and record the answers.",
+      "I can ask two of the questions and record the answers.",
       "I can use WHAT MEAN? when a repeat would not help.",
     ],
     T.composeGlanceNotes({
@@ -111,7 +152,7 @@ function build() {
         ["POINT to each criterion.", "SAY: Three questions, and one way out when you miss an answer."],
         "SAY: By the end, everyone knows three things about the person opposite them.",
       ],
-      prep: "Criterion 2 is what the exit rotation collects this week.",
+      prep: "Criterion 2 is what the exit rotation collects this week. Two questions is the Challenge bar.",
       tag: "[LI and SC | Planning | HITS 1]",
     }),
     FOOTER,
@@ -193,8 +234,8 @@ function build() {
           "not one form repeated with a different face."],
       ],
       trap: ["WHERE collapsing into WHAT under time pressure.", "Fix: slow the third one down on its own, student redoes it."],
-      stretch: "ask a fourth question of your own and say why you chose it.",
-      help: "the three question words in English, face up. Then the load is the sign.",
+      stretch: "ask the third question as well as the two on the card task.",
+      help: "the question card, plus you signing each one beside them as they copy.",
       prep: [
         "CHECK GRAMMAR: confirm where the question sign sits before you teach it.",
         "WHO, WHAT and WHERE are Chris's vetted Signbank entries. The question face carries the question.",
@@ -249,7 +290,7 @@ function build() {
     T.addInstructionCard(s, [
       { role: "header", text: "How to play" },
       { text: "Your card has a name, a sport and a city. Leave it flat on the desk." },
-      { text: "Get eyes, then ask all three questions." },
+      { text: "Get eyes, then ask: what sport, and where from?" },
       { text: "Find the other three people on your team." },
       { text: "A found team sits down together and keeps checking new arrivals." },
     ], { x: 0.5, y: 1.4, w: 5.7, h: 2.5, strip: C.SUCCESS });
@@ -258,7 +299,7 @@ function build() {
       x: 6.6, y: 1.6, w: 2.75, h: 0.9, fontSize: 19, fontFace: T.FONT_H, bold: true,
       color: C.CHARCOAL, align: "center", valign: "middle", margin: 0,
     });
-    s.addText("One matching answer is never enough. Ask all three.", {
+    s.addText("One matching answer is never enough. Ask both questions.", {
       x: 6.6, y: 2.55, w: 2.75, h: 1.2, fontSize: 15, fontFace: T.FONT_B,
       color: C.CHARCOAL, align: "center", valign: "top", margin: 0,
     });
@@ -284,7 +325,10 @@ function build() {
         "COLLECT: every team seated together, then every card back.",
       ],
       trap: ["joining the first person with the same sport.", "Fix: send them back to ask the city question."],
-      prep: "10 min. Game 4 Find Your Team. Teams 1 and 2 share swimming on purpose.",
+      prep: [
+        "10 min. Game 4 Find Your Team. Teams 1 and 2 share swimming on purpose.",
+        "Challenge asks two questions, sport and city, with the question card in hand.",
+      ],
       tag: "[We Do | Collaborative learning | HITS 5]",
     }));
   }
@@ -334,7 +378,6 @@ function build() {
           "80%+ -> cold-call one student to sign the answer back, then go to You Do.",
           "Less -> three headings on the board, you sign a question, they point.",
           "Six times fast, then re-ask the whole question."],
-        ["FOLLOW UP the student who signed back.", "SAY: Do you agree with that one? Add one thing."],
       ],
       trap: ["reading WHERE as WHAT because they grabbed the nearest question sign.", "Fix: sort, then re-ask."],
       prep: [
@@ -350,7 +393,7 @@ function build() {
     const s = T.youDoSlide(
       pres,
       "Interview the person opposite you",
-      "Ask your partner all three questions and write their three answers on your board. Then swap.",
+      "Ask your partner two of the questions and write their answers on your board. Keep the question card face up. Then swap.",
       [
         "Wave or tap. Wait for their eyes.",
         "Ask, then watch the whole answer.",
@@ -363,12 +406,12 @@ function build() {
           "TIME: 10 minutes, both ways.",
           ["CIRCULATE: look for pencils moving while a partner signs.",
             "That is the thing to stop."],
-          "COLLECT: boards hovered, three answers each.",
+          "COLLECT: boards hovered, two answers each.",
         ],
-        stretch: "ask a fourth question of your own and say why you chose it.",
-        help: "the three question words in English, face up on the desk.",
+        stretch: "ask the third question too, then one of your own.",
+        help: "you sign the first question with the pair, then they ask the second alone.",
         prep: [
-          "10 min. Year 5 keeps the prompt card. Year 6 works with it face down.",
+          "10 min. The question card stays face up all lesson; that is the Challenge load.",
           "Watch the whole answer, then write. Never both at once.",
         ],
         tag: "[You Do | Explicit teaching | HITS 10]",
@@ -412,7 +455,7 @@ function build() {
       reflectionPrompt: "Turn and tell your partner the one thing you found out about them today.",
       scItems: [
         "I can ask one of the three profile questions.",
-        "I can ask all three and record the answers.",
+        "I can ask two of the questions and record the answers.",
         "I can use WHAT MEAN? when a repeat would not help.",
       ],
       selfAssessment: ["Just starting", "Getting there", "Got it"],
@@ -433,9 +476,10 @@ function build() {
   return pres;
 }
 
-A.buildTeamRoleCardsPdf(path.join(RES_DIR, CARDS_PDF), "Session 3  |  Team Role Cards  |  Years 5-6 Auslan", C.PRIMARY);
+A.buildTeamRoleCardsPdf(path.join(RES_DIR, CARDS_PDF), "Session 3  |  Team Role Cards  |  Years 3-4 Auslan", C.PRIMARY);
+buildQuestionCardPdf();
 const pres = build();
-const file = path.join(OUT_DIR, "DeafSport Enrichment Session 3 Who What Where.pptx");
+const file = path.join(OUT_DIR, "DeafSport Challenge Session 3 Who What Where.pptx");
 pres.writeFile({ fileName: file }).then(() => {
   console.log("PPTX written to " + file);
   report.print();

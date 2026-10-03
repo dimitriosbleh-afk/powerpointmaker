@@ -434,7 +434,81 @@ function addCountdown(T, slide, seconds, box) {
   return { x: box.x, y: box.y, w: d, h: d };
 }
 
+const TEAM_ROLE_CARDS = [
+  ["Sam", "Swimming", "Perth"], ["Ali", "Swimming", "Perth"],
+  ["Jo", "Swimming", "Perth"], ["Kit", "Swimming", "Perth"],
+  ["Ren", "Swimming", "Hobart"], ["Bo", "Swimming", "Hobart"],
+  ["Tam", "Swimming", "Hobart"], ["Nia", "Swimming", "Hobart"],
+  ["Max", "Netball", "Adelaide"], ["Eve", "Netball", "Adelaide"],
+  ["Ari", "Netball", "Adelaide"], ["Lou", "Netball", "Adelaide"],
+  ["Fin", "Basketball", "Sydney"], ["Zia", "Basketball", "Sydney"],
+  ["Rue", "Basketball", "Sydney"], ["Dev", "Basketball", "Sydney"],
+  ["Ivy", "Tennis", "Melbourne"], ["Cam", "Tennis", "Melbourne"],
+  ["Rio", "Tennis", "Melbourne"], ["Gus", "Tennis", "Melbourne"],
+  ["Wren", "Athletics", "Brisbane"], ["Ash", "Athletics", "Brisbane"],
+  ["Nell", "Athletics", "Brisbane"], ["Ty", "Athletics", "Brisbane"],
+  ["Sol", "Futsal", "Darwin"], ["Pip", "Futsal", "Darwin"],
+  ["Quin", "Futsal", "Darwin"], ["Jed", "Futsal", "Darwin"],
+];
+
+/**
+ * Session 3 Team Role Cards: 28 cards, seven teams of four, cut and laminate.
+ * Shared because Challenge and Enrichment play Game 4 with the same set.
+ */
+function buildTeamRoleCardsPdf(file, footer, color) {
+  const P = require("../themes/pdf_helpers");
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  const doc = P.createPdf({ title: "Session 3 Team Role Cards" });
+  let y = P.addPdfHeader(doc, "Session 3 Team Role Cards", {
+    color,
+    subtitle: "Seven teams of four. Cut along the lines and laminate. One set does every class.",
+    lessonInfo: "Session 3  |  Game 4 Find Your Team  |  one card per student",
+    showNameDate: false,
+  });
+
+  doc.fontSize(10).font("Sans").fillColor("#374151");
+  doc.text(
+    "Teams 1 and 2 both play swimming on purpose. A student who stops at the sport question "
+    + "joins the wrong team, which is the whole point of the game. Deal so every team of four "
+    + "is complete; for a class of 25, hold team 7 back.",
+    P.PAGE.MARGIN, y, { width: P.PAGE.CONTENT_W }
+  );
+  y += 52;  // the intro note runs to three lines; 34 clipped it under the first row
+
+  // Six rows a page, not seven: seven overflows A4 and PDFKit silently starts a
+  // new page mid-card, which is how 28 cards became eight pages.
+  const cols = 3;
+  const rowsPerPage = 6;
+  const gap = 10;
+  const cw = (P.PAGE.CONTENT_W - gap * (cols - 1)) / cols;
+  const ch = 88;
+  const perPage = cols * rowsPerPage;
+  TEAM_ROLE_CARDS.forEach(([name, sport, city], i) => {
+    const col = i % cols;
+    const row = Math.floor((i % perPage) / cols);
+    if (i > 0 && i % perPage === 0) {
+      doc.addPage();
+      y = P.PAGE.MARGIN;
+    }
+    const x = P.PAGE.MARGIN + col * (cw + gap);
+    const cy = y + row * (ch + gap);
+    doc.save();
+    doc.dash(3, { space: 3 }).roundedRect(x, cy, cw, ch, 6)
+      .lineWidth(1).strokeColor("#9CA3AF").stroke();
+    doc.undash();
+    doc.restore();
+    doc.fontSize(20).font("Sans-Bold").fillColor("#111827")
+      .text(name, x + 12, cy + 10, { width: cw - 24 });
+    doc.fontSize(12).font("Sans").fillColor("#374151")
+      .text("Sport: " + sport, x + 12, cy + 38, { width: cw - 24 });
+    doc.text("City: " + city, x + 12, cy + 56, { width: cw - 24 });
+  });
+
+  P.writePdf(doc, file, footer);
+}
+
 module.exports = {
+  buildTeamRoleCardsPdf,
   ATTRIBUTION,
   BANK,
   SENSE_CORRECTIONS,
