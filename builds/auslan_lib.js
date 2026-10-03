@@ -643,7 +643,135 @@ function buildMedalTallyPdf(file, footer, color) {
   P.writePdf(doc, file, footer);
 }
 
+/**
+ * Deaf Athlete Profile Cards (unit document 11.4). Cards 1 and 2 are real
+ * people, one living: keep every profile to what they did in their sport.
+ * Four facts in the same order: who, what sport, when, what they won or did.
+ */
+const PROFILE_CARDS = [
+  ["Barry Knapman, Australia", "Diving", "1965 and 1969", "Gold on the three metre springboard in Washington DC in 1965. Silver in the same event in Belgrade in 1969."],
+  ["Cindy-Lu Bailey, Australia", "Swimming", "1977 to 1997", "Competed at six world games for the Deaf, from Bucharest to Copenhagen. Won 29 medals, 19 of them gold."],
+  ["The Melbourne Deaf Cricket Club", "Cricket", "Started in the 1880s", "Still playing today. One of the oldest Deaf sport clubs in the world."],
+  ["The Australian Deaf Games", "Many sports", "First held in Sydney, summer 1964 and 1965", "Fifteen sports at the first Games. The 2026 Games were on the Sunshine Coast with more than 1,300 competitors."],
+  ["The Melbourne Deaflympics", "Many sports", "2005", "Over 3,500 people took part. The only time Australia has hosted them."],
+  ["Deaf Sports Australia", "All sports", "Set up in 1954", "The national body for Deaf sport in Australia. Helps Deaf Australians play sport at every level."],
+];
+
+function dashedCard(doc, x, y, w, h) {
+  doc.save();
+  doc.dash(3, { space: 3 }).roundedRect(x, y, w, h, 6).lineWidth(1).strokeColor("#9CA3AF").stroke();
+  doc.undash();
+  doc.restore();
+}
+
+/** One set of six on one page. Print seven sets, cut and laminate. */
+function buildProfileCardsPdf(file, footer, color) {
+  const P = require("../themes/pdf_helpers");
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  const doc = P.createPdf({ title: "Session 7 Deaf Athlete Profile Cards" });
+  let y = P.addPdfHeader(doc, "Session 7 Deaf Athlete Profile Cards", {
+    color,
+    subtitle: "Print seven copies: one set per group of four. Cut and laminate. Keep for the review week.",
+    lessonInfo: "Session 7  |  Game 8 Which Card Is Mine  |  four facts, always in the same order",
+    showNameDate: false,
+  });
+  y += 8;
+  const gap = 10;
+  const cw = (P.PAGE.CONTENT_W - gap) / 2;
+  const ch = 196;
+  const labels = ["Who", "What sport", "When", "What they won or did"];
+  PROFILE_CARDS.forEach((facts, i) => {
+    const x = P.PAGE.MARGIN + (i % 2) * (cw + gap);
+    const cy = y + Math.floor(i / 2) * (ch + gap);
+    dashedCard(doc, x, cy, cw, ch);
+    let ty = cy + 12;
+    facts.forEach((fact, k) => {
+      doc.fontSize(9).font("Sans-Bold").fillColor("#6B7280").text(labels[k].toUpperCase(), x + 12, ty, { width: cw - 24 });
+      ty += 12;
+      doc.fontSize(k === 0 ? 14 : 11).font(k === 0 ? "Sans-Bold" : "Sans").fillColor("#111827");
+      doc.text(fact, x + 12, ty, { width: cw - 24 });
+      ty = doc.y + 6;
+    });
+  });
+  P.writePdf(doc, file, footer);
+}
+
+/** Interview Prompt Card (11.5): two wide cards a page, laminated, one per pair. */
+function buildInterviewPromptCardPdf(file, footer, color) {
+  const P = require("../themes/pdf_helpers");
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  const doc = P.createPdf({ title: "Session 7 Interview Prompt Card" });
+  let y = P.addPdfHeader(doc, "Session 7 Interview Prompt Card", {
+    color,
+    subtitle: "Fourteen cards, one per pair: print seven pages. Cut across the middle and laminate.",
+    lessonInfo: "Session 7  |  Game 9 Two Minute Interview  |  lies flat on the desk, never held",
+    showNameDate: false,
+  });
+  y += 6;
+  const ch = 318;
+  const x = P.PAGE.MARGIN;
+  const w = P.PAGE.CONTENT_W;
+  [0, 1].forEach((k) => {
+    const cy = y + k * (ch + 12);
+    dashedCard(doc, x, cy, w, ch);
+    doc.fontSize(10).font("Sans").fillColor("#6B7280").text("Lay this flat on the desk between you. Do not hold it.", x + 16, cy + 12, { width: w - 32 });
+    doc.fontSize(13).font("Sans-Bold").fillColor("#111827").text("Ask these four, in this order.", x + 16, cy + 34);
+    ["Who are you?", "What sport do you play?", "When did you start?", "What are you proud of?"].forEach((q, i) => {
+      doc.fontSize(22).font("Sans-Bold").fillColor("#111827").text((i + 1) + ".  " + q, x + 28, cy + 58 + i * 34, { width: w - 56 });
+    });
+    doc.fontSize(13).font("Sans-Bold").text("Then ask one of your own.", x + 16, cy + 202);
+    doc.fontSize(11).font("Sans").fillColor("#374151").text("Something you actually want to know, that is not on this list.", x + 16, cy + 220, { width: w - 32 });
+    doc.fontSize(13).font("Sans-Bold").fillColor("#111827").text("If you miss an answer", x + 16, cy + 246);
+    doc.fontSize(11).font("Sans").fillColor("#374151").text("Ask for it again. If a repeat would not help, ask what they mean instead.", x + 16, cy + 264, { width: w - 32 });
+    doc.fontSize(9).fillColor("#6B7280").text("Read the English here; sign what you were shown.", x + 16, cy + 292, { width: w - 32 });
+  });
+  P.writePdf(doc, file, footer);
+}
+
+/** Lesson 7 Observational Checklist (13.1): one page per class, 30 blank rows. */
+function buildObservationChecklistPdf(file, footer, color, cohortNote) {
+  const P = require("../themes/pdf_helpers");
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  const doc = P.createPdf({ title: "Session 7 Observational Checklist" });
+  let y = P.addPdfHeader(doc, "Session 7 Observational Checklist", {
+    color,
+    subtitle: "Tick live while they film. Blank if not seen. S for supported. Never re-watch to score.",
+    lessonInfo: "Class: ________________   Date: ____________   " + cohortNote,
+    showNameDate: false,
+  });
+  y += 4;
+  const heads = ["Student", "Waits for eyes before starting", "Asks the questions in order", "Watches the whole answer",
+    "Repairs with AGAIN or WHAT MEAN?", "Adds a follow-up of their own", "Keeps going after losing a question"];
+  const nameW = 128;
+  const colW = (P.PAGE.CONTENT_W - nameW) / 6;
+  const headH = 52;
+  const rowH = 19.4;
+  let x = P.PAGE.MARGIN;
+  heads.forEach((h, c) => {
+    const w = c === 0 ? nameW : colW;
+    doc.rect(x, y, w, headH).fill("#E5E7EB");
+    doc.rect(x, y, w, headH).lineWidth(0.8).strokeColor("#374151").stroke();
+    doc.fontSize(8.5).font("Sans-Bold").fillColor("#111827").text(h, x + 4, y + 6, { width: w - 8, align: c === 0 ? "left" : "center" });
+    x += w;
+  });
+  y += headH;
+  for (let r = 0; r < 30; r++) {
+    x = P.PAGE.MARGIN;
+    heads.forEach((h, c) => {
+      const w = c === 0 ? nameW : colW;
+      doc.rect(x, y, w, rowH).lineWidth(0.6).strokeColor("#6B7280").stroke();
+      x += w;
+    });
+    y += rowH;
+  }
+  P.writePdf(doc, file, footer);
+}
+
 module.exports = {
+  PROFILE_CARDS,
+  buildProfileCardsPdf,
+  buildInterviewPromptCardPdf,
+  buildObservationChecklistPdf,
   buildMedalTallyPdf,
   TIMELINE_CARDS,
   buildTimelineCardsPdf,
