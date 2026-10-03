@@ -51,6 +51,10 @@ const FORCE_LOOKUP = {
   "WHAT MEAN?": "what do you mean",  // a fixed two-sign form the school supplies, not one entry
   MEAN: "meaning",   // MEAN's first sense is SIGN LANGUAGE; do not assert it
   BRONZE: "bronze",  // no Signbank entry at all
+  // Waiting on Chris (sign sheet, 3 Oct 2026). A searched image is not his pick.
+  THEN: "then",      // he signs it as LATER or FINISH, or a pause and nod
+  TELL: "tell",      // two links given; he has not said which he teaches
+  LATER: "later",    // row left blank
 };
 
 /**
@@ -192,6 +196,8 @@ function resolveSign(gloss) {
   }
 
   if (FORCE_LOOKUP[gloss]) return null;
+  // Chris chose these from outside Signbank, so any Signbank image is not his sign.
+  if (TEACHER_LINKS[gloss]) return null;
 
   // Fetched from the teacher's own vetted link (--links): his choice of entry
   // outranks the sense rules below, which exist to guess when he has not chosen.
