@@ -41,6 +41,16 @@
       "build_script": "builds/build_deafsport_enrichment_s8.js",
       "folder": "DeafSport_Enrichment_S8_Showing_The_Story",
       "session": 8
+    },
+    {
+      "build_script": "builds/build_deafsport_enrichment_review8.js",
+      "folder": "DeafSport_Enrichment_Review_Week_8",
+      "session": 9
+    },
+    {
+      "build_script": "builds/build_deafsport_enrichment_review9.js",
+      "folder": "DeafSport_Enrichment_Review_Week_9",
+      "session": 10
     }
   ]
 }
