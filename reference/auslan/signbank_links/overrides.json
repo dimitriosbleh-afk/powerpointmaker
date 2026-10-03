@@ -1,0 +1,7 @@
+{
+  "_note": "Chris's overrides. A gloss listed here wins over everything the pipeline works out for itself: the sense search, the verified corrections and the default Signbank entry. Use it when the pipeline picked a sign you do not teach.",
+  "_how": "Give the exact file already in assets/auslan_signs/ (for example \"WHO_2.gif\"), or the bare variant name without an extension (\"WHO_2\"). To bring in a sign that is not in the bank yet, add its Signbank entry URL to the unit's links file and refetch with --gif --links, then name the file here.",
+  "_example_only_delete_these": {
+    "WHO": "WHO_2.gif"
+  }
+}
