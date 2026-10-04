@@ -51,10 +51,8 @@ const FORCE_LOOKUP = {
   "WHAT MEAN?": "what do you mean",  // a fixed two-sign form the school supplies, not one entry
   MEAN: "meaning",   // MEAN's first sense is SIGN LANGUAGE; do not assert it
   BRONZE: "bronze",  // no Signbank entry at all
-  // Waiting on Chris (sign sheet, 3 Oct 2026). A searched image is not his pick.
-  THEN: "then",      // he signs it as LATER or FINISH, or a pause and nod
-  TELL: "tell",      // two links given; he has not said which he teaches
-  LATER: "later",    // row left blank
+  // Chris signs THEN as LATER or FINISH, or a pause and nod: no single entry.
+  THEN: "then",
 };
 
 /**
@@ -426,6 +424,105 @@ function addSignItCover(T, slide, box) {
     align: "center", valign: "middle", margin: 0,
   });
   return { x, y, w, h, present: fs.existsSync(cover) };
+}
+
+/**
+ * The Do Now videos: Auslan90's daily news from the 2026 Australian Deaf Games,
+ * Chris's choice (3 Oct 2026). The video replaces the write-and-underline Do
+ * Now (his answer, 4 Oct 2026): authentic signers, the diversity of the Deaf
+ * community, and what the community values. Three points per day are from his
+ * playlist menu; transcripts are his, in the For James Drive folder.
+ */
+const DO_NOW_VIDEOS = {
+  1: { id: "JKhlp_5wrbQ", minutes: 3, transcript: "https://docs.google.com/document/d/1epCCiHQytIF-mzKMlqcH6_zS7WudYlik7LdetGqomGE/edit?usp=sharing",
+    points: ["Opening ceremony and the state teams", "Ramas McRae on mental health and community", "New demonstration sports: handball and CrossFit"] },
+  2: { id: "0bQQqS6la3Y", minutes: 3, transcript: "https://docs.google.com/document/d/10p0fNY01ylABTKhigowj2YkF4GgvZ8HsDwJt7UBY-ZY/edit?usp=sharing",
+    points: ["History of the Games and the John M. Lovett Cup", "Larry Brown, Deaf Netball Australia life membership", "Tegan on golf and being an Indigenous ambassador"] },
+  3: { id: "NHj5ETD_UOI", minutes: 3, transcript: "https://docs.google.com/document/d/1_tm7A2Tiqb4iteaKYpY1bY-oBW9hTOOU7IHLm2qplQE/edit?usp=sharing",
+    points: ["Basketball and netball grand finals", "The theme: Achieving Sunshine Moments Together", "Community interviews about sunshine moments"] },
+  4: { id: "YO9vApsSLP0", minutes: 3, transcript: "https://docs.google.com/document/d/1k9XKaffn6nnHP7iPP4M5BVaawi2lklLBS0Ga3TNQH8o/edit?usp=sharing",
+    points: ["Caine Batten on athletics events", "Lefroy Alford and George Ravlich, youngest and oldest", "A Carnival of Our Own, the history of the Games"] },
+  5: { id: "bjBJ8Rnn-8k", minutes: 3, transcript: "https://docs.google.com/document/d/16Cxr7PpgjeyR_g-jxfGQYf7XzVy5eZxOz4JyN2z1xF8/edit?usp=sharing",
+    points: ["The day's sports", "Trevor and Michael on table tennis, and community interviews", "Who is eligible to compete at the Games"] },
+  6: { id: "485nOTyXxus", minutes: 3, transcript: "https://docs.google.com/document/d/1D2VCbWuqXK2pF22Wcbm5k3ttSockZBTBt7GW2L6hXCk/edit?usp=sharing",
+    points: ["Swimming events and competitors", "Cindy-Lu Bailey on pickleball and her swimming career", "Jamie Howell on joining the Deaflympics team"] },
+  7: { id: "pn5BIY64j6w", minutes: 7, transcript: "https://docs.google.com/document/d/1iuwzrC1XIBkSno-1UAl0CWYJ_iAzKamSUF21BjQWo6c/edit?usp=sharing",
+    points: ["Final day reflections and the Games community", "The historical Deaf Carnival photo exhibition", "Deaf Sports Australia on leadership and access"] },
+};
+
+const VIDEO_THUMBS = path.join(__dirname, "..", "assets", "auslan_video");
+
+/** YouTube's own still for the video, fetched once and cached (gitignored). */
+function videoThumb(id) {
+  const file = path.join(VIDEO_THUMBS, id + ".jpg");
+  if (!fs.existsSync(file)) {
+    const { execFileSync } = require("child_process");
+    fs.mkdirSync(VIDEO_THUMBS, { recursive: true });
+    // maxresdefault has no letterbox bars; older uploads only have hqdefault.
+    try {
+      execFileSync("curl", ["-sfL", "-o", file, `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`]);
+    } catch (e) {
+      execFileSync("curl", ["-sfL", "-o", file, `https://i.ytimg.com/vi/${id}/hqdefault.jpg`]);
+    }
+  }
+  return file;
+}
+
+/**
+ * Do Now slide: the day's video, clickable, with a watching job beside it.
+ * `bridge` is the lesson's own closing SAY line, so each Do Now still lands on
+ * that lesson's content. `rewatch` marks a second viewing.
+ */
+function addVideoDoNow(T, pres, opts) {
+  const C = T.C;
+  const v = DO_NOW_VIDEOS[opts.day];
+  const url = "https://www.youtube.com/watch?v=" + v.id;
+  const s = pres.addSlide();
+  T.addTopBar(s, C.PRIMARY);
+  T.addBadge(s, "Do Now", { color: C.PRIMARY });
+  T.addCueStrip(s, ["voicesOff", "eyesUp"]);
+  T.addTitle(s, `Australian Deaf Games: Day ${opts.day}`);
+
+  // 16:9 still from YouTube, the whole picture a link to the video.
+  const vw = 5.6;
+  const vh = vw * 9 / 16;
+  const vx = 0.5;
+  const vy = 1.45;
+  s.addImage({ path: videoThumb(v.id), x: vx, y: vy, w: vw, h: vh,
+    sizing: { type: "cover", w: vw, h: vh }, hyperlink: { url } });
+  T.addTextOnShape(
+    s,
+    "Play",
+    { x: vx + vw / 2 - 0.6, y: vy + vh / 2 - 0.3, w: 1.2, h: 0.6, rectRadius: 0.3, fill: { color: C.ALERT } },
+    { fontSize: 20, fontFace: T.FONT_H, bold: true, color: C.WHITE, align: "center", valign: "middle", margin: 0 }
+  );
+  s.addText([{ text: "Watch on YouTube, captions on", options: { hyperlink: { url }, color: C.PRIMARY } }], {
+    x: vx, y: vy + vh + 0.1, w: vw, h: 0.32, fontSize: 13, fontFace: T.FONT_B, bold: true,
+    align: "center", valign: "middle", margin: 0,
+  });
+
+  T.addInstructionCard(s, [
+    { role: "header", text: opts.rewatch ? "Watch it again" : "Watch, voices off" },
+    { text: opts.rewatch ? "What can you catch now that you missed in Lesson 1?" : "Spot one sign you know." },
+    { text: "What do these people care about?" },
+  ], { x: 6.35, y: 1.45, w: 3.15, h: vh, strip: C.PRIMARY });
+  T.addFooter(s, opts.footer);
+
+  s.addNotes(T.composeGlanceNotes({
+    beats: [
+      ["PLAY as they walk in. Captions on. Seated, silent, no explaining.",
+        `TIME: about ${v.minutes} minutes, the length of the video.`],
+      ["IN IT: " + v.points[0] + ".", v.points[1] + ".", v.points[2] + "."],
+      opts.bridge,
+    ],
+    prep: [
+      (opts.rewatch ? "Second viewing of Day " + opts.day + ". " : "") +
+        "Chris, 4 Oct 2026: the video replaces the write-and-underline Do Now.",
+      "Transcript: " + v.transcript,
+    ],
+    tag: "[Do Now | Attention, focus and regulation | HITS 6]",
+  }));
+  return s;
 }
 
 /** A row of sign cards filling the content area, one to four across. */
@@ -816,6 +913,8 @@ function buildStoryStripPdf(file, footer, color) {
 }
 
 module.exports = {
+  DO_NOW_VIDEOS,
+  addVideoDoNow,
   STORY_STRIP,
   buildStoryStripPdf,
   PROFILE_CARDS,

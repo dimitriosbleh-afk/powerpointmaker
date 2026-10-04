@@ -60,36 +60,12 @@ function build() {
     tag: "[Setup | Planning | HITS 2]",
   }));
 
-  // 3. Do Now
-  {
-    const s = pres.addSlide();
-    T.addTopBar(s, C.PRIMARY);
-    T.addBadge(s, "Do Now", { color: C.PRIMARY });
-    T.addCueStrip(s, ["voicesOff", "whiteboards"]);
-    T.addTitle(s, "Same as every week: write it, then find the signs");
-    T.addCard(s, 0.5, 1.45, 9, 1.5, { variant: "tint", tone: C.PRIMARY });
-    s.addText("How do you know a race has started? List everything that tells you.", {
-      x: 0.7, y: 1.45, w: 8.6, h: 1.5, fontSize: 30, fontFace: T.FONT_H, bold: true,
-      color: C.CHARCOAL, align: "center", valign: "middle", margin: 0,
-    });
-    T.addInstructionCard(s, [
-      { role: "header", text: "Same as every week" },
-      { text: "Write your answer in English. Two sentences." },
-      { text: "Underline every word you would need a sign for." },
-    ], { x: 0.5, y: 3.15, w: 9, h: 1.4, strip: C.PRIMARY });
-    T.addFooter(s, FOOTER);
-    s.addNotes(T.composeGlanceNotes({
-      beats: [
-        "SILENT from the door. Say nothing; the routine runs itself now.",
-        ["Retrieval sits inside the prompt: SPORT and TEAM from Lesson 2,", "and the time signs from Lesson 5."],
-        "TIME: 5 minutes. Deal with whatever walked in from the playground.",
-        ["SAY: Every answer you wrote is a sound or a sight. Today you find out",
-          "what happens when the sport decides it will not rely on the sound."],
-      ],
-      prep: "5 min. Most answers arrive in an order, which is why the time signs come back.",
-      tag: "[Do Now | Attention, focus and regulation | HITS 6]",
-    }));
-  }
+  // 3. Do Now: Auslan90 Australian Deaf Games, Day 6
+  A.addVideoDoNow(T, pres, {
+    day: 6,
+    footer: FOOTER,
+    bridge: ["SAY: You watched swimmers race. How did they know it had started?", "Today you find out why Deaf sport does not rely on sound."],
+  });
 
   // 4. LI and SC
   T.liSlide(

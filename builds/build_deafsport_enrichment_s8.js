@@ -60,36 +60,13 @@ function build() {
     tag: "[Setup | Planning | HITS 2]",
   }));
 
-  // 3. Do Now
-  {
-    const s = pres.addSlide();
-    T.addTopBar(s, C.PRIMARY);
-    T.addBadge(s, "Do Now", { color: C.PRIMARY });
-    T.addCueStrip(s, ["voicesOff", "whiteboards"]);
-    T.addTitle(s, "Same as every week: write it, then find the signs");
-    T.addCard(s, 0.5, 1.45, 9, 1.5, { variant: "tint", tone: C.PRIMARY });
-    s.addText("Where were you when something exciting happened? Describe the place first.", {
-      x: 0.7, y: 1.45, w: 8.6, h: 1.5, fontSize: 28, fontFace: T.FONT_H, bold: true,
-      color: C.CHARCOAL, align: "center", valign: "middle", margin: 0,
-    });
-    T.addInstructionCard(s, [
-      { role: "header", text: "Same as every week" },
-      { text: "Write your answer in English. Two sentences." },
-      { text: "Underline every word you would need a sign for." },
-    ], { x: 0.5, y: 3.15, w: 9, h: 1.4, strip: C.PRIMARY });
-    T.addFooter(s, FOOTER);
-    s.addNotes(T.composeGlanceNotes({
-      beats: [
-        "SILENT from the door. Say nothing; the routine runs itself now.",
-        ["Retrieval sits inside the prompt: the time signs from Lesson 5,", "and PROUD and HAPPEN from Lesson 7."],
-        "TIME: 5 minutes. Deal with whatever walked in from the playground.",
-        ["SAY: You all set the place before the event, because I told you to.",
-          "Today you find out why that instruction exists."],
-      ],
-      prep: "5 min. The bridge line is the reason this lesson exists. Say it as written.",
-      tag: "[Do Now | Attention, focus and regulation | HITS 6]",
-    }));
-  }
+  // 3. Do Now: Auslan90 Australian Deaf Games, Day 1 again
+  A.addVideoDoNow(T, pres, {
+    day: 1,
+    rewatch: true,
+    footer: FOOTER,
+    bridge: ["SAY: Watch how the signers show where things happen.", "Today you set the place before you tell a story."],
+  });
 
   // 4. LI and SC
   T.liSlide(
@@ -121,7 +98,7 @@ function build() {
     T.addTitle(s, "Two signs for telling a story");
     A.addSignCardRow(T, s, [
       { gloss: "STORY", meaning: "story" },
-      { gloss: "TELL", meaning: "tell, recount" },
+      { gloss: "TELL", meaning: "tell, inform" },
     ], { y: 1.4, bottom: 5.05, report });
     T.addFooter(s, FOOTER);
     s.addNotes(T.composeGlanceNotes({
@@ -136,7 +113,7 @@ function build() {
       stretch: "tell a partner one thing that happened today, place first.",
       help: "copy beside a partner who has it, then on your own.",
       prep: [
-        "TELL waits on Chris's pick of two links, so it shows as a watch-the-teacher card.",
+        "TELL is Chris's INFORM entry, the one for telling someone about an event.",
         "STORY is Chris's vetted entry.",
       ],
       tag: "[I Do | Explicit teaching | HITS 3, 4]",
@@ -190,12 +167,14 @@ function build() {
         ["SAY: These move a story along rather than place it in history.",
           "Before, after and back then put you in a year."],
         "SAY: Soon, later and next move you through an afternoon.",
+        ["MODEL LATER both ways: two short movements is later.",
+          "One long movement is much later, some time in the future."],
       ],
       trap: ["NEXT pointed the wrong way for who is next.", "Fix: show I'm next and you're next, student redoes it."],
       stretch: "join all four events with three different time signs.",
       help: "the three meanings written up beside where you stand.",
       prep: [
-        "Chris: NEXT moves toward whoever is next. LATER waits on his link: watch-the-teacher card.",
+        "Chris: NEXT moves toward whoever is next. LATER also has a 7 handshape variant, thumb and finger.",
         "NEXT is Chris's NEXT_2; Signbank's default is a demotion sign.",
       ],
       tag: "[I Do | Explicit teaching | HITS 3, 4]",

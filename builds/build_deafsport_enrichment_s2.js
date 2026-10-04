@@ -72,39 +72,12 @@ function build() {
     }));
   }
 
-  // 3. Do Now
-  {
-    const s = pres.addSlide();
-    T.addTopBar(s, C.PRIMARY);
-    T.addBadge(s, "Do Now", { color: C.PRIMARY });
-    T.addCueStrip(s, ["voicesOff", "whiteboards"]);
-    T.addTitle(s, "Same as last week: write it, then find the signs");
-    T.addCard(s, 0.5, 1.45, 9, 1.5, { variant: "tint", tone: C.PRIMARY });
-    s.addText("What sport do you like?", {
-      x: 0.7, y: 1.45, w: 8.6, h: 1.5, fontSize: 40, fontFace: T.FONT_H, bold: true,
-      color: C.CHARCOAL, align: "center", valign: "middle", margin: 0,
-    });
-    T.addInstructionCard(s, [
-      { role: "header", text: "On your whiteboard" },
-      { text: "Write your answer in English. Two sentences." },
-      { text: "Underline every word you would need a sign for." },
-      { text: "Tick the ones you already know on your tracker." },
-    ], { x: 0.5, y: 3.15, w: 9, h: 1.55, strip: C.PRIMARY });
-    T.addFooter(s, FOOTER);
-    s.addNotes(T.composeGlanceNotes({
-      beats: [
-        "SILENT from the door. Say nothing; Lesson 1 taught this.",
-        ["WATCH for the underlining, not the writing.", "That is the step that was taught."],
-        "TIME: 5 minutes. Deal with whatever walked in from the playground.",
-        ["SAY: You know how to find a sign now.", "Today you learn twelve of them."],
-      ],
-      prep: [
-        "Seated and silent every week from here. It is the settling time.",
-        "If the underlining is shaky, reteach the choosing step for two minutes.",
-      ],
-      tag: "[Do Now | Attention, focus and regulation | HITS 6]",
-    }));
-  }
+  // 3. Do Now: Auslan90 Australian Deaf Games, Day 2
+  A.addVideoDoNow(T, pres, {
+    day: 2,
+    footer: FOOTER,
+    bridge: ["SAY: You saw netball and golf in that video.", "By the end of today you can sign both, and ten more sports."],
+  });
 
   // 4. LI and SC
   T.liSlide(

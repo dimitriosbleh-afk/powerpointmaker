@@ -64,36 +64,12 @@ function build() {
     tag: "[Setup | Planning | HITS 2]",
   }));
 
-  // 3. Do Now
-  {
-    const s = pres.addSlide();
-    T.addTopBar(s, C.PRIMARY);
-    T.addBadge(s, "Do Now", { color: C.PRIMARY });
-    T.addCueStrip(s, ["voicesOff", "whiteboards"]);
-    T.addTitle(s, "Same as every week: write it, then find the signs");
-    T.addCard(s, 0.5, 1.45, 9, 1.5, { variant: "tint", tone: C.PRIMARY });
-    s.addText("What is the oldest club or team you know of?", {
-      x: 0.7, y: 1.45, w: 8.6, h: 1.5, fontSize: 30, fontFace: T.FONT_H, bold: true,
-      color: C.CHARCOAL, align: "center", valign: "middle", margin: 0,
-    });
-    T.addInstructionCard(s, [
-      { role: "header", text: "Same as every week" },
-      { text: "Write your answer in English. One sentence." },
-      { text: "Underline every word you would need a sign for." },
-    ], { x: 0.5, y: 3.15, w: 9, h: 1.4, strip: C.PRIMARY });
-    T.addFooter(s, FOOTER);
-    s.addNotes(T.composeGlanceNotes({
-      beats: [
-        "SILENT from the door. Say nothing; the routine runs itself now.",
-        ["Retrieval sits inside the prompt: YEAR and HOW-MANY from last week,", "and TEAM from Lesson 2."],
-        "TIME: 5 minutes. Deal with whatever walked in from the playground.",
-        ["SAY: You can write a year. Now you need to say which one came first,",
-          "and you cannot do that with numbers alone."],
-      ],
-      prep: "5 min. The bridge line is the reason this lesson exists. Say it as written.",
-      tag: "[Do Now | Attention, focus and regulation | HITS 6]",
-    }));
-  }
+  // 3. Do Now: Auslan90 Australian Deaf Games, Day 5
+  A.addVideoDoNow(T, pres, {
+    day: 5,
+    footer: FOOTER,
+    bridge: ["SAY: The Games have a long history behind them.", "Today you put the big moments of Deaf sport in order."],
+  });
 
   // 4. LI and SC
   T.liSlide(
@@ -172,7 +148,7 @@ function build() {
       stretch: "join three events with BEFORE and THEN in one go.",
       help: "the three meanings written up beside where you stand.",
       prep: [
-        "BEFORE is Chris's time form. AFTER and THEN are watch-the-teacher cards; AFTER links Chris's pick.",
+        "BEFORE is Chris's PRIOR TO entry, as in before 1pm. AFTER and THEN are watch-the-teacher cards; AFTER links Chris's pick.",
         "Chris: Signbank's AFTER has no arm movement, which he disagrees with.",
       ],
       tag: "[I Do | Explicit teaching | HITS 3, 4]",

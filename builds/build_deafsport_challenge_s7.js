@@ -75,37 +75,12 @@ function build() {
     tag: "[Setup | Planning | HITS 2]",
   }));
 
-  // 3. Do Now
-  {
-    const s = pres.addSlide();
-    T.addTopBar(s, C.PRIMARY);
-    T.addBadge(s, "Do Now", { color: C.PRIMARY });
-    T.addCueStrip(s, ["voicesOff", "whiteboards"]);
-    T.addTitle(s, "Same as every week: write it, then find the signs");
-    T.addCard(s, 0.5, 1.45, 9, 1.5, { variant: "tint", tone: C.PRIMARY });
-    s.addText("If you could interview any athlete, what would you ask?", {
-      x: 0.7, y: 1.45, w: 8.6, h: 1.5, fontSize: 32, fontFace: T.FONT_H, bold: true,
-      color: C.CHARCOAL, align: "center", valign: "middle", margin: 0,
-    });
-    T.addInstructionCard(s, [
-      { role: "header", text: "Same as every week" },
-      { text: "Write your answer in English. One sentence." },
-      { text: "Underline every word you would need a sign for." },
-    ], { x: 0.5, y: 3.15, w: 9, h: 1.4, strip: C.PRIMARY });
-    T.addFooter(s, FOOTER);
-    s.addNotes(T.composeGlanceNotes({
-      beats: [
-        "SILENT from the door. Say nothing; the routine runs itself now.",
-        ["Retrieval sits inside the prompt: the question signs from Lessons 3 and 4.",
-          "Most students write four questions without being told to."],
-        "TIME: 5 minutes. Deal with whatever walked in from the playground.",
-        ["SAY: Four questions, four weeks apart, all in your hands at once.",
-          "Today they run as one conversation, and it goes on camera."],
-      ],
-      prep: "5 min. Their four questions become the interview later. Leave the boards up.",
-      tag: "[Do Now | Attention, focus and regulation | HITS 6]",
-    }));
-  }
+  // 3. Do Now: Auslan90 Australian Deaf Games, Day 7
+  A.addVideoDoNow(T, pres, {
+    day: 7,
+    footer: FOOTER,
+    bridge: ["SAY: Everyone in that video was interviewed.", "Today you run an interview of your own, and it goes on camera."],
+  });
 
   // 4. LI and SC
   T.liSlide(

@@ -62,6 +62,9 @@ assets/auslan_signs/*.gif
 # used under the schools statutory educational licence. Same rule, harder.
 assets/auslan_signs/signit/
 assets/auslan_signs/signit_manifest.json
+# Cue sign images Chris made for the signing-room cues (4 Oct 2026). Sign
+# images, so same rule. Originals sit in reference/auslan/chris_images/.
+assets/auslan_signs/cues/
 # manifest.json embeds Signbank's dictionary definitions; it regenerates with
 # the images, so it stays local too.
 assets/auslan_signs/manifest.json
@@ -86,3 +89,4 @@ assets/persuasive/
 # Taught log: each teacher's own record of what their lessons taught
 # (megaprompt 83). Local to each machine, never shared through the repo.
 records/
+assets/auslan_video/

@@ -132,6 +132,25 @@ const CUES = {
   timer: { pictogram: "timer", label: "Timer", tone: "ACCENT" },
 };
 
+/**
+ * The teacher's own picture for a cue, when he has supplied one: the sign
+ * itself for voices off and watch, a real board for whiteboards (Chris, 4 Oct
+ * 2026). Students learn the classroom instruction as Auslan, so the chip shows
+ * the sign, not a stand-in glyph. Files are gitignored sign images; a missing
+ * file falls back to the pictogram.
+ */
+const CUE_IMAGE_DIR = require("path").join(__dirname, "..", "..", "assets", "auslan_signs", "cues");
+
+function cueImage(key) {
+  const fs = require("fs");
+  const path = require("path");
+  for (const ext of [".gif", ".png", ".jpg"]) {
+    const file = path.join(CUE_IMAGE_DIR, key + ext);
+    if (fs.existsSync(file)) return file;
+  }
+  return null;
+}
+
 /** Subject glyphs for title and closing slides. */
 const SUBJECT_PICTOGRAMS = {
   numeracy: "maths",
@@ -321,7 +340,7 @@ function createPictogramHelpers(C, FONT_B, el, S) {
         `WARN [cue] unknown cue(s) ${unknown.join(", ")}. The six cues are: ${Object.keys(CUES).join(", ")}`
       );
     }
-    const cues = list.filter((n) => CUES[n]).map((n) => CUES[n]);
+    const cues = list.filter((n) => CUES[n]).map((n) => Object.assign({ image: cueImage(n) }, CUES[n]));
     if (!cues.length) return { x: 0, y: 0, w: 0, h: 0, chips: 0 };
 
     // Each cue keeps its own colour on every slide of every deck, so a student
@@ -330,12 +349,15 @@ function createPictogramHelpers(C, FONT_B, el, S) {
     const fontSize = o.fontSize || byBand(sz, 14, 13, 12);
     const h = Math.max(0.36, fontSize * 0.0235 + 0.13);
     const glyph = h * 0.66;
+    // A picture of a sign needs every bit of the chip's height to read.
+    const imgSize = h - 0.04;
+    const glyphW = (c) => (c.image ? imgSize : glyph);
     const padX = 0.11;
     const gap = 0.12;
     // Width per chip: padding, glyph, a small gap, then the label. Calibri-ish
     // at this size is about 0.0078in per character per point.
     const widths = cues.map(
-      (c) => padX * 2 + glyph + 0.07 + c.label.length * fontSize * 0.0078
+      (c) => padX * 2 + glyphW(c) + 0.07 + c.label.length * fontSize * 0.0078
     );
     const totalW = widths.reduce((a, b) => a + b, 0) + gap * (cues.length - 1);
 
@@ -357,13 +379,19 @@ function createPictogramHelpers(C, FONT_B, el, S) {
         fill: { color: o.fill || C.BG_CARD || C.WHITE },
         line: { color: tone, width: 1.25 },
       });
-      const data = renderPictogramPng(c.pictogram, tone, Math.round(glyph * 220));
-      if (data) {
-        slide.addImage({ data, x: x + padX, y: y + (h - glyph) / 2, w: glyph, h: glyph });
+      const gw = glyphW(c);
+      if (c.image) {
+        slide.addImage({ path: c.image, x: x + 0.06, y: y + 0.02, w: gw, h: gw,
+          sizing: { type: "cover", w: gw, h: gw }, rounding: true });
+      } else {
+        const data = renderPictogramPng(c.pictogram, tone, Math.round(glyph * 220));
+        if (data) {
+          slide.addImage({ data, x: x + padX, y: y + (h - glyph) / 2, w: glyph, h: glyph });
+        }
       }
       slide.addText(c.label, {
-        x: x + padX + glyph + 0.04, y,
-        w: w - padX * 2 - glyph - 0.04, h,
+        x: x + padX + gw + 0.04, y,
+        w: w - padX * 2 - gw - 0.04, h,
         fontSize, fontFace: FONT_B, bold: true,
         color: o.labelColor || C.CHARCOAL,
         align: "left", valign: "middle", margin: 0,
