@@ -39,6 +39,9 @@ const SENSE_CORRECTIONS = {
   WIN: "WIN_3",            // WIN is CELEBRATION, not the sporting result
   NEXT: "NEXT_2",          // NEXT is DEMOTION, not the next event
   CORRECT: "CORRECT_2",    // CORRECT is the written tick, not "that is right"
+  // Chris's sheet (3 Oct 2026): THEN has no sign of its own; he signs it as
+  // LATER (or FINISH, or a pause and nod). LATER is his vetted entry.
+  THEN: "LATER",
 };
 
 /**
@@ -51,8 +54,6 @@ const FORCE_LOOKUP = {
   "WHAT MEAN?": "what do you mean",  // a fixed two-sign form the school supplies, not one entry
   MEAN: "meaning",   // MEAN's first sense is SIGN LANGUAGE; do not assert it
   BRONZE: "bronze",  // no Signbank entry at all
-  // Chris signs THEN as LATER or FINISH, or a pause and nod: no single entry.
-  THEN: "then",
 };
 
 /**
@@ -704,13 +705,13 @@ const MEDAL_TALLY = {
 function buildMedalTallyPdf(file, footer, color) {
   const P = require("../themes/pdf_helpers");
   fs.mkdirSync(path.dirname(file), { recursive: true });
-  const doc = P.createPdf({ title: "Session 6 Medal Tally Sheets A and B" });
+  const doc = P.createPdf({ title: "Session 8 Medal Tally Sheets A and B" });
   ["A", "B"].forEach((sheet, k) => {
     if (k > 0) doc.addPage();
-    let y = P.addPdfHeader(doc, "Session 6 Medal Tally Sheet " + sheet, {
+    let y = P.addPdfHeader(doc, "Session 8 Medal Tally Sheet " + sheet, {
       color,
       subtitle: "Your medals are filled in. Write your partner's numbers as they sign them to you.",
-      lessonInfo: "Session 6  |  Game 7 How Many Medals  |  print half the class A and half B",
+      lessonInfo: "Session 8  |  Game 7 How Many Medals  |  print half the class A and half B",
       showNameDate: true,
     });
     y += 14;
@@ -882,11 +883,11 @@ const STORY_STRIP = [
 function buildStoryStripPdf(file, footer, color) {
   const P = require("../themes/pdf_helpers");
   fs.mkdirSync(path.dirname(file), { recursive: true });
-  const doc = P.createPdf({ title: "Session 8 Story Strip" });
-  let y = P.addPdfHeader(doc, "Session 8 Story Strip", {
+  const doc = P.createPdf({ title: "Session 6 Story Strip" });
+  let y = P.addPdfHeader(doc, "Session 6 Story Strip", {
     color,
     subtitle: "Print fourteen, one per pair. Single sided. Laminate.",
-    lessonInfo: "Session 8  |  Showing the story  |  read the English, sign what you were shown",
+    lessonInfo: "Session 6  |  Showing the story  |  read the English, sign what you were shown",
     showNameDate: false,
   });
   y += 16;

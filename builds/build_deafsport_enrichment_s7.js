@@ -416,7 +416,7 @@ function build() {
     T.composeGlanceNotes({
       beats: [
         "SAY: Tell your partner the best answer you got.",
-        ["SAY: Next week, a story told in Auslan,", "with the scene set before anything happens."],
+        ["SAY: Next week, how Deaf sport is set up", "so everything you need can be seen."],
       ],
       prep: [
         "Protocol practised today: light on faces, nobody signing in front of a window.",

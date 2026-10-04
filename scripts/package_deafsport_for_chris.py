@@ -4,7 +4,7 @@
 
 Writes output/Auslan Term 4 for Chris/Challenge and .../Enrichment, each holding
 everything that cohort needs for the term: the slides (all eight lessons plus
-the Week 8 and 9 reviews), the printables, the student journal template, and the
+the Week 9 and 10 reviews), the printables, the student journal template, and the
 planning documents. Rebuild the decks first (build_unit.py and
 build_deafsport_journal.js); this only copies. The printables folder keeps the
 name Resources because the deck's links point at it.
@@ -18,13 +18,14 @@ DEST = os.path.join(OUT, "Auslan Term 4 for Chris")
 UNIT = os.path.join(OUT, "Deaf_Sports_Term4_2026")
 LAYER = os.path.join(UNIT, "Teacher Layer")
 
+# The landscape pick-up documents ship as Word only: LibreOffice on the Mac
+# paginates them differently from Word (a lesson page spills onto two), and
+# Drive opens the Word file directly.
 SHARED_PLANNING = [
     (UNIT, "Deaf Sports In Australia Unit.docx"),
     (UNIT, "Deaf Sports In Australia Unit.pdf"),
     (LAYER, "Deaf Sports At A Glance.docx"),
-    (LAYER, "Deaf Sports At A Glance.pdf"),
     (LAYER, "Deaf Sports Lesson Pages.docx"),
-    (LAYER, "Deaf Sports Lesson Pages.pdf"),
     (LAYER, "Deaf Sports CRT Review Pack.docx"),
 ]
 
@@ -39,9 +40,7 @@ COHORTS = {
         "unit": "Deaf_Sports_Enrichment_Unit",
         "deck": "Deaf Sports in Australia Enrichment.pptx",
         "journal": "Deaf Sports Enrichment Student Journal Template.pptx",
-        # The REBUILT copy is current: the original was open in Excel when the
-        # trackers were rebuilt (AUSLAN_PENDING_FROM_CHRIS.md, Built so far).
-        "tracker": "Deaf Sports Enrichment Evidence Tracker REBUILT.xlsx",
+        "tracker": "Deaf Sports Enrichment Evidence Tracker.xlsx",
     },
 }
 

@@ -1,16 +1,18 @@
 "use strict";
 
 /**
- * Deaf Sports in Australia | Enrichment (Years 5 and 6) | Review lesson, Week 8 game set
+ * Deaf Sports in Australia | Enrichment (Years 5 and 6) | Review lesson, Week 10 game set
  *
  * Built from the unit document section 9.9. The review lesson runs twice, in
- * weeks 8 and 9, with a different game set each time. Nothing new is taught and
+ * weeks 9 and 10, with a different game set each time. Nothing new is taught and
  * no evidence is collected. It is also the CRT lesson: every note is written so
  * a teacher with no Auslan can run it without modelling a sign.
  *
- * Nothing new to print. The Week 8 set reuses the Lesson 5 timeline cards and
- * the Lesson 7 profile cards, named on the resources slide rather than
- * regenerated (AUSLAN_2 section 8). The points table is a slide.
+ * Nothing new to print. The Week 10 set reuses the Lesson 8 medal tally sheets,
+ * named on the resources slide rather than regenerated (AUSLAN_2 section 8).
+ *
+ * Watch and Write normally has the teacher signing. A relief teacher may not
+ * sign, so a student from each team signs a word from the term list instead.
  */
 
 const pptxgen = require("pptxgenjs");
@@ -20,8 +22,9 @@ const { createTheme, weekToVariant } = require("../themes/factory");
 
 const T = createTheme("literacy", "grade56", weekToVariant(1));
 const C = T.C;
-const FOOTER = "Deaf Sports in Australia  |  Review, Week 8  |  Years 5-6 Auslan";
-const OUT_DIR = path.join("output", "DeafSport_Enrichment_Review_Week_8");
+const FOOTER = "Deaf Sports in Australia  |  Review, Week 10  |  Years 5-6 Auslan";
+const RANGE = "1 to 100";
+const OUT_DIR = path.join("output", "DeafSport_Enrichment_Review_Week_10");
 
 const SC = [
   "I can recognise a sign from the term list.",
@@ -63,10 +66,10 @@ function build() {
   // 1. Title
   T.titleSlide(
     pres,
-    "Review: the Week 8 games",
+    "Review: the Week 10 games",
     "Deaf Sports in Australia",
     "Review lesson  |  Years 5 and 6  |  Term 4",
-    "Review lesson, Week 8 set. Game-based review of signs already taught. Nothing new. A teacher with no Auslan can run it."
+    "Review lesson, Week 10 set. Game-based review of signs already taught. Nothing new. A teacher with no Auslan can run it."
   );
 
   // 2. Teacher Resources
@@ -77,10 +80,10 @@ function build() {
     T.addTitle(s, "Nothing new to print");
     T.addInstructionCard(s, [
       { role: "header", text: "Get these out before the lesson" },
-      { text: "The Lesson 5 Deaf Sport Timeline Cards, all ten in each set." },
-      { text: "The Lesson 7 Deaf Athlete Profile Cards." },
+      { text: "The Lesson 8 Medal Tally Sheets A and B, one per student." },
+      { text: "A mini whiteboard and marker for every team and every student." },
+      { text: "A folder per pair to prop up as a screen." },
       { text: "Sign It!, one per pair, and the student journals." },
-      { text: "A cleared floor space for the first game." },
     ], { x: 0.5, y: 1.45, w: 9, h: 2.3, strip: C.PRIMARY });
     s.addText("No Auslan needed to run this lesson. If a student asks how to sign something, open Sign It! at the page on the term list. Do not guess a sign.", {
       x: 0.5, y: 3.95, w: 9, h: 0.75, fontSize: 15, fontFace: T.FONT_B, bold: true,
@@ -185,78 +188,81 @@ function build() {
     }));
   }
 
-  // 6. We Do round 1: Bob Virus as a team round
-  gameSlide(pres, "We Do", C.SUCCESS, "Round 1: Bob Virus", [
-    "Everyone stands in the space, eyes closed.",
-    "The teacher taps one or two people: they are Bobs.",
-    "Move around. Ask each person their name. Answer by fingerspelling.",
-    "A Bob fingerspells B-O-B. Meet a Bob and you become one.",
-    "Two minutes. Then count the Bobs and the rest.",
-  ], "A point for every name your team reads back correctly at the end.",
-  "No running. Never avoid somebody who comes up to you.",
+  // 6. We Do round 1: Watch and Write as a team round
+  gameSlide(pres, "We Do", C.SUCCESS, "Round 1: Watch and Write", [
+    "One board per team. Pens down.",
+    "A signer from one team signs a word from the term list.",
+    "Every other team watches it all, then writes the English.",
+    "One, two, three, chin it: every board up at once.",
+    "Take turns being the signer. Ten words.",
+  ], "A point for every board with the right word.",
+  "Nobody writes while the signer is signing.",
+  T.composeGlanceNotes({
+    answer: "the English word the student signed, from the term list",
+    beats: [
+      ["SET UP: four teams, one board each.", "Each team picks a signer for the first word."],
+      ["POINT at a word on the term list for the signer to sign.",
+        "Do not sign it yourself; the signer has learned it this term."],
+      "SAY: One, two, three, chin it. Every board comes up at once.",
+      "COLLECT: a point per team board with the right word. Then the next signer.",
+    ],
+    trap: ["writing while the signer is still signing.", "Fix: pens down, the signer signs it again."],
+    stretch: "the signer adds a number or a year to the word.",
+    help: "the team signs back the word together before writing it.",
+    prep: "10 min. Game 2 Watch and Write as a team round, student signers for a relief teacher.",
+    tag: "[We Do | Collaborative learning | HITS 6]",
+  }), ["voicesOff", "whiteboards"]);
+
+  // 7. We Do round 2: More or Less
+  gameSlide(pres, "We Do", C.SUCCESS, "Round 2: More or Less", [
+    "Pairs inside your team, facing each other.",
+    "Write a hidden number from " + RANGE + " and turn your board over.",
+    "Take turns signing a guess. Never write it.",
+    "Answer more, less or correct.",
+    "First to guess wins the round. Swap who guesses first.",
+  ], "A point to your team for every round a pair member wins.",
+  "Look down mid-guess and you lose that turn.",
   T.composeGlanceNotes({
     beats: [
-      ["SET UP: clear the furniture. Students face each other close enough", "to read fingerspelling."],
-      ["TAP one or two students on the shoulder while eyes are closed.", "They are the Bobs."],
-      "TIME: two minutes on a timer everyone can see.",
-      ["COLLECT: each team reads back names it saw fingerspelled.", "A point for each correct one."],
+      ["SET UP: pairs inside teams, facing.", "Range " + RANGE + " written up where everyone can see it."],
+      "SAY: A guess is signed, never written. Boards face down between turns.",
+      "TIME: 10 minutes.",
+      "COLLECT: each team counts its round wins.",
     ],
-    trap: ["voicing a name instead of fingerspelling it.", "Fix: that pair restarts the exchange, fingerspelling."],
-    stretch: "add Doctors: two taps makes a Doctor, who fingerspells D-R and cures Bobs.",
-    help: "a secure partner stands with an unsure one and they answer as one.",
-    prep: "10 min. Game 1 Bob Virus as a team round. No signs to model: fingerspelling only.",
+    trap: ["writing a guess on the board.", "Fix: board face down, sign the guess again."],
+    stretch: "play with years only, range 1880 to 2026.",
+    help: "a number line on the desk, so a guess is a point plus a sign.",
+    prep: "10 min. Game 5 More or Less. Range " + RANGE + " for this cohort.",
     tag: "[We Do | Collaborative learning | HITS 6]",
-  }), ["voicesOff", "timer"]);
+  }), ["voicesOff", "partner", "whiteboards"]);
 
-  // 7. We Do round 2: Order The Years
-  gameSlide(pres, "We Do", C.SUCCESS, "Round 2: Order The Years", [
-    "Teams of four in a circle. Timeline cards face down in the middle.",
-    "Take two cards each. Keep them flat on the desk.",
-    "Going left, sign one event from a card, with its year.",
-    "Your team decides where it goes in the line.",
-    "All ten cards in order, then read the line back around the circle.",
-  ], "A point for every card in the right place when your team says done.",
-  "One signer at a time. Hands off the table while somebody is signing.",
-  T.composeGlanceNotes({
-    answer: "1880s, 1924, 1954, 1955, 1964, 1965, 1985, 2005, 2011, 2026",
-    beats: [
-      ["SET UP: teams of four, every face visible.", "All ten cards this time, including the two marked R."],
-      "SAY: The turn passes left, so nobody has to be called on.",
-      ["CIRCULATE: check each team's line against the answer above.", "A point per card in the right place."],
-      "COLLECT every set at the end.",
-    ],
-    trap: ["ordering by the last two digits of the year.", "Fix: compare the first two digits, team re-places the card."],
-    stretch: "play from memory: each player says the event, not reading the card.",
-    help: "the team places the 1880s and 2026 cards first, as the two ends.",
-    prep: "10 min. Game 6 Order The Years. Ten cards make the team hold a running order.",
-    tag: "[We Do | Collaborative learning | HITS 6]",
-  }), ["voicesOff", "partner"]);
-
-  // 8. You Do: Which Card Is Mine, in fours
+  // 8. You Do: How Many Medals, in pairs
   {
     const s = T.youDoSlide(
       pres,
-      "Which Card Is Mine",
-      "In fours, all six profile cards face up in the middle. Secretly pick one. Take turns signing its four facts. Everyone points at the end.",
+      "How Many Medals",
+      "Pairs: one of you has sheet A, one has sheet B, folder up between you. Take turns asking how many medals your partner has in each sport. Write their numbers, then compare totals.",
       [
-        "Pick a card. Do not say which.",
-        "Sign who, what sport, when, what they won.",
-        "Point at the end, never during.",
+        "Ask how many medals, one sport at a time.",
+        "Pencil down while they sign. Then write.",
+        "Add both totals. Who has more?",
       ],
       T.composeGlanceNotes({
         beats: [
-          ["SAY: Fours. Cards in the middle, never in hands.", "Two people can choose the same card."],
+          ["SAY: Pairs. Folder up. The folder hides the sheet, never your face.",
+            "Pencils down while your partner signs."],
           "TIME: 10 minutes.",
-          ["CIRCULATE: watch for eyes on the cards mid-profile.", "That student has stopped watching."],
-          "COLLECT: a point per correct guess. Every card set back at the end.",
+          ["CIRCULATE: totals are A 77 and B 81.",
+            "Last row: who has more sock wrestling medals?"],
+          "COLLECT: a point to the team of every pair whose totals are right.",
         ],
-        stretch: "a secure team plays with the cards face down, from memory.",
-        help: "the describer signs two facts, not four.",
-        prep: "10 min. Game 8 Which Card Is Mine. Cut this game if you are running late.",
+        stretch: "work out how many more medals the winner has, and sign that number.",
+        help: "a number line on the desk for the bigger numbers.",
+        prep: "10 min. Game 7 How Many Medals. Cut this game if you are running late.",
         tag: "[You Do | Collaborative learning | HITS 6]",
       }),
       FOOTER,
-      { where: "Voices off  |  Groups of four  |  Profile cards in the middle" }
+      { where: "Voices off  |  Pairs  |  Medal tally sheets" }
     );
     T.addCueStrip(s, ["voicesOff", "partner"]);
   }
@@ -293,7 +299,7 @@ function build() {
     T.composeGlanceNotes({
       beats: [
         "SAY: Tell your partner the sign you got right first time today.",
-        "SAY: Next week, a different set of games.",
+        "SAY: That is the end of the games for this term.",
       ],
       prep: "If running late, cut the third game. The team rounds are the lesson.",
       tag: "[Closing | Planning | HITS 9]",
@@ -305,5 +311,5 @@ function build() {
 
 const pres = build();
 fs.mkdirSync(OUT_DIR, { recursive: true });
-const file = path.join(OUT_DIR, "DeafSport Enrichment Review Week 8.pptx");
+const file = path.join(OUT_DIR, "DeafSport Enrichment Review Week 10.pptx");
 pres.writeFile({ fileName: file }).then(() => console.log("PPTX written to " + file));

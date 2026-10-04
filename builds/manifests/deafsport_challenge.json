@@ -29,7 +29,7 @@
     },
     {
       "build_script": "builds/build_deafsport_challenge_s6.js",
-      "folder": "DeafSport_Challenge_S6_Lights_Flags_And_What_Changed",
+      "folder": "DeafSport_Challenge_S6_Showing_The_Story",
       "session": 6
     },
     {
@@ -39,17 +39,17 @@
     },
     {
       "build_script": "builds/build_deafsport_challenge_s8.js",
-      "folder": "DeafSport_Challenge_S8_Showing_The_Story",
+      "folder": "DeafSport_Challenge_S8_Lights_Flags_And_What_Changed",
       "session": 8
-    },
-    {
-      "build_script": "builds/build_deafsport_challenge_review8.js",
-      "folder": "DeafSport_Challenge_Review_Week_8",
-      "session": 9
     },
     {
       "build_script": "builds/build_deafsport_challenge_review9.js",
       "folder": "DeafSport_Challenge_Review_Week_9",
+      "session": 9
+    },
+    {
+      "build_script": "builds/build_deafsport_challenge_review10.js",
+      "folder": "DeafSport_Challenge_Review_Week_10",
       "session": 10
     }
   ]

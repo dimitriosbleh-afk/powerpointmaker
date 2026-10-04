@@ -129,7 +129,7 @@ function build() {
     A.addSignCardRow(T, s, [
       { gloss: "BEFORE", meaning: "before" },
       { gloss: "AFTER", meaning: "after" },
-      { gloss: "THEN", meaning: "then" },
+      { gloss: "THEN", meaning: "then, signed LATER" },
     ], { y: 1.4, bottom: 5.05, report });
     T.addFooter(s, FOOTER);
     s.addNotes(T.composeGlanceNotes({
@@ -144,7 +144,7 @@ function build() {
       stretch: "join three events with BEFORE and THEN in one go.",
       help: "the three meanings written up beside where you stand.",
       prep: [
-        "BEFORE is Chris's PRIOR TO entry, as in before 1pm. AFTER and THEN are watch-the-teacher cards; AFTER links Chris's pick.",
+        "BEFORE is Chris's PRIOR TO entry, as in before 1pm. THEN shows LATER, as Chris signs it. AFTER links Chris's pick.",
         "Chris: Signbank's AFTER has no arm movement, which he disagrees with.",
       ],
       tag: "[I Do | Explicit teaching | HITS 3, 4]",
@@ -360,7 +360,7 @@ function build() {
     T.composeGlanceNotes({
       beats: [
         "SAY: Tell your partner the event that surprised you most, and when.",
-        ["SAY: Next week, how Deaf sport is set up", "so everything you need can be seen."],
+        ["SAY: Next week, a story told in Auslan,", "with the scene set before anything happens."],
       ],
       prep: [
         "Collect every timeline set. The review week uses all ten cards.",

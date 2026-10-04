@@ -1,21 +1,23 @@
 "use strict";
 
 /**
- * Deaf Sports in Australia | Challenge (Years 3 and 4) | Lesson 8 Showing the story
+ * Deaf Sports in Australia | Challenge (Years 3 and 4) | Lesson 8 Lights, flags and what changed
  *
- * Built from the unit document sections 9.8, 11.6 and 13.2. Evidence piece 2,
- * the receptive test, runs in the exit slot from a numbered frame on screen.
- * A build script rather than a lesson spec for the reasons given in
- * build_deafsport_enrichment_s2.js. The story strip is shared with the
- * Challenge deck, so it lives in builds/auslan_lib.js.
+ * Moved from Lesson 6 to Lesson 8 on 4 Oct 2026 so the storytelling lesson and
+ * its assessment finish by Week 7. Nothing is assessed here: Week 8 carries no
+ * summative evidence (Chris).
  *
- * Depicting signs, constructed action and signing space are modelled from
- * Sign It! and the school reference. Nothing here describes how they are
- * produced (CHECK GRAMMAR in the unit document).
+ * Built from the unit document section 9.6. A build script rather than a lesson
+ * spec for the reasons given in build_deafsport_enrichment_s2.js. The medal
+ * tally sheets are shared with the Challenge deck and the review week, so they
+ * live in builds/auslan_lib.js.
  *
- * Challenge calibration (unit document 3, 9.8 and 13.2): set the scene and
- * retell two events with the picture version on screen, test items 1 to 8
- * only, rated out of eight, and no cold-call follow-up after the boards.
+ * Every modification is taught as a design problem somebody fixed, never as
+ * something an athlete had to overcome (unit document care note).
+ *
+ * Challenge calibration (unit document 3 and 9.6): name one change and what it
+ * replaced, with the three picture prompts on the You Do slide, and no cold-call
+ * follow-up after the boards.
  */
 
 const pptxgen = require("pptxgenjs");
@@ -28,10 +30,9 @@ const A = require("./auslan_lib");
 const T = createTheme("literacy", "grade34", weekToVariant(1));
 const C = T.C;
 const FOOTER = "Deaf Sports in Australia  |  Session 8 of 8  |  Years 3-4 Auslan";
-const OUT_DIR = path.join("output", "DeafSport_Challenge_S8_Showing_The_Story");
+const OUT_DIR = path.join("output", "DeafSport_Challenge_S8_Lights_Flags_And_What_Changed");
 const RES_DIR = path.join(OUT_DIR, "resources-session8");
-const STRIP_PDF = "Session 8 Story Strip.pdf";
-const TEST_ITEMS = 8;
+const TALLY_PDF = "Session 8 Medal Tally Sheets A and B.pdf";
 
 const report = A.createSignReport();
 
@@ -42,188 +43,200 @@ function build() {
   // 1. Title
   T.titleSlide(
     pres,
-    "Showing the story",
+    "Lights, flags and what changed",
     "Deaf Sports in Australia",
     "Lesson 8 of 8  |  Years 3 and 4  |  Term 4",
-    "Lesson 8 of 8. Set the scene, then tell what happened in it. Evidence piece 2 runs at the end."
+    "Lesson 8 of 8. How Deaf sport turns what you were meant to hear into something you can see."
   );
 
   // 2. Teacher Resources
   P.addResourceSlide(pres, [
-    { name: "Session 8 Story Strip", fileName: "resources-session8/" + STRIP_PDF,
-      note: "Fourteen, one per pair. Large text, laminated." },
+    {
+      name: "Session 8 Medal Tally Sheets A and B",
+      fileName: "resources-session8/" + TALLY_PDF,
+      note: "One per student, half A and half B. Consumable. Plus one propped folder per pair.",
+    },
   ], T, FOOTER, T.composeGlanceNotes({
     beats: [
-      ["SHOW while students settle.", "SAY: Exercise books out. Plain paper and a pencil each."],
-      "COLLECT the story strips at the end. Nothing else is collected.",
+      ["SHOW while students settle.", "SAY: Sheets stay face down until I say. Folders up between partners."],
+      "COLLECT the sheets at the end; they go in the journal as a photo.",
     ],
     prep: [
-      "The eight test items and answers are in the notes of the test slide. Rehearse them.",
+      "The only large print run in the unit. The review week uses the sheets again.",
       A.ATTRIBUTION,
     ],
     tag: "[Setup | Planning | HITS 2]",
   }));
 
-  // 3. Do Now: Auslan90 Australian Deaf Games, Day 1 again
+  // 3. Do Now: Auslan90 Australian Deaf Games, Day 6
   A.addVideoDoNow(T, pres, {
     day: 1,
     rewatch: true,
     footer: FOOTER,
-    bridge: ["SAY: Watch how the signers show where things happen.", "Today you set the place before you tell a story."],
+    bridge: ["SAY: Watch how much more you catch this time.", "Today you find out why Deaf sport does not rely on sound."],
   });
 
   // 4. LI and SC
   T.liSlide(
     pres,
-    "I am learning to set a scene before I tell what happened in it, and to join the events with time signs.",
+    "I am learning to explain how Deaf sport is set up so everything you need to know can be seen.",
     [
-      "I can show where a story happens before I start it.",
-      "I can retell a two-event story with the scene set first.",
-      "I can keep two people in the story apart so my partner knows who is who.",
+      "I can name one thing in sport that is shown with a light or a flag.",
+      "I can explain what problem the light or flag solved.",
+      "I can give one more example of a barrier somebody designed away.",
     ],
     T.composeGlanceNotes({
       beats: [
-        ["POINT to each criterion.", "SAY: The place first, then the events, then two people kept apart."],
-        "SAY: By the end, you can tell a whole story in Auslan.",
+        ["POINT to each criterion.", "SAY: Name it, say what problem it solved, then find another one."],
+        "SAY: By the end, you can explain one change and why somebody made it.",
       ],
-      prep: "Criterion 2 is what the rotation collects today, during the You Do.",
+      prep: "Criterion 2 is only assessable in the You Do explanation. Never cut it.",
       tag: "[LI and SC | Planning | HITS 1]",
     }),
     FOOTER,
     { numberSC: true, strongHeadings: true, separate: true }
   );
 
-  // 5. I Do: story, tell
+  // 5. I Do: start, light, flag
   {
     const s = pres.addSlide();
     T.addTopBar(s, C.PRIMARY);
     T.addBadge(s, "I Do", { color: C.PRIMARY });
     T.addCueStrip(s, ["eyesUp", "watchCopy"]);
-    T.addTitle(s, "Two signs for telling a story");
+    T.addTitle(s, "Three signs for a race you can see");
     A.addSignCardRow(T, s, [
-      { gloss: "STORY", meaning: "story" },
-      { gloss: "TELL", meaning: "tell, inform" },
+      { gloss: "START", meaning: "start, begin" },
+      { gloss: "LIGHT", meaning: "light" },
+      { gloss: "FLAG", meaning: "flag" },
     ], { y: 1.4, bottom: 5.05, report });
     T.addFooter(s, FOOTER);
     s.addNotes(T.composeGlanceNotes({
-      answer: "STORY, TELL",
+      answer: "START, LIGHT, FLAG",
       beats: [
-        ["SAY: Same three moves. In a story the watching does the most work,",
-          "because the place and the people are set up before anything happens."],
-        "MODEL each twice, slowly then at pace. They copy once.",
-        "SAY: A story in Auslan starts with where. Then who. Then what happened.",
+        ["SAY: Same three moves. Eyes up, watch, copy.", "MODEL each twice, slowly then at pace. They copy once."],
+        ["SAY: Deaf athletes play every sport with very little change.",
+          "Every change does one job: it turns something you hear into something you see."],
+        ["MODEL LIGHT low and facing you, like a starter light in a pool.", "Flick the fingers for a flashing light."],
       ],
-      trap: ["starting with the action before the place.", "Fix: place first, student restarts the story."],
-      stretch: "tell a partner one thing that happened today, place first.",
+      trap: ["signing LIGHT as a ceiling lamp.", "Fix: move it to where the light really is, student redoes it."],
+      stretch: "sign where a light would be at the start of a running race.",
       help: "copy beside a partner who has it, then on your own.",
       prep: [
-        "TELL is Chris's INFORM entry, the one for telling someone about an event.",
-        "STORY is Chris's vetted entry.",
+        "Chris: START includes both forms on its Signbank page. LIGHT moves to where the light is.",
+        "Source: Deaf Sports Australia, what changes for Deaf athletes.",
       ],
       tag: "[I Do | Explicit teaching | HITS 3, 4]",
     }));
   }
 
-  // 6. I Do: set the scene from the story strip
-  T.textExtractSlide(
-    pres,
-    "I Do",
-    "The Race That Started With A Light",
-    A.STORY_STRIP.join("\n"),
-    T.composeGlanceNotes({
-      answer: "four events: gun raised, light on, both gone, her name at the top",
-      beats: [
-        ["MODEL the scene before any event: a pool, two swimmers,",
-          "one in each lane, kept in two different places."],
-        ["MODEL the four events in order, keeping the two swimmers", "where you put them."],
-        ["GET IT WRONG: retell two events with both swimmers in one place.",
-          "SAY: Nothing wrong with my signs. Everything wrong with where I put them."],
-        ["ASK: where was the first swimmer. Thumb toward that side.", "5 sec, voices off. EXPECT: thumbs agree"],
+  // 6. I Do: three real modifications
+  {
+    const s = T.choiceSlide(
+      pres,
+      "I Do",
+      "Three things somebody changed",
+      "Each one turns a sound into something you can see.",
+      [
+        { visual: { type: "pictogram", name: "lightbulb" }, text: "Pool light" },
+        { visual: { type: "pictogram", name: "flag" }, text: "Flag or wave" },
+        { visual: { type: "pictogram", name: "tv" }, text: "Scoreboard" },
       ],
-      trap: ["two people in the same place.", "Fix: point to each swimmer's place, student re-signs."],
-      stretch: "find which sentences only describe and which ones happen.",
-      help: "the strip on the desk, read in English first.",
-      care: "constructed action shows what she did. Caricature? Stop once, name it.",
-      prep: "CHECK GRAMMAR: model depicting signs and placement from Sign It!. Do not improvise them.",
-      tag: "[I Do | Explicit teaching | HITS 3, 4]",
-    }),
-    FOOTER,
-    { prompt: "Where does it happen? Who is in it? What actually happens?", fontSize: 19 }
-  );
+      T.composeGlanceNotes({
+        answer: "pool light, flag or wave, scoreboard",
+        beats: [
+          ["SAY: In swimming, a light beside the pool is wired to the gun.",
+            "No light? The starter raises an arm and drops it."],
+          ["SAY: A referee gets your attention with a flag, or by waving.",
+            "A captain taps the referee on the shoulder. That is normal, not rude."],
+          "SAY: Scores go on a board or a screen, so nobody waits to be told.",
+          ["GET IT WRONG: SAY: I nearly told you Deaf athletes need special sports.",
+            "Same sports, same rules. The equipment got redesigned."],
+        ],
+        trap: ["saying the athlete had to overcome something.", "Fix: name what got changed, student restates it."],
+        stretch: "name what each one replaced: the gun, the whistle, the announcer.",
+        help: "point to the picture, then sign LIGHT or FLAG.",
+        care: "a design problem somebody fixed, never something an athlete overcame.",
+        prep: "Protocol this week: the shoulder tap. It comes straight out of this content.",
+        sources: "Deaf Sports Australia, deafsports.org.au",
+        tag: "[I Do | Explicit teaching | HITS 3]",
+      }),
+      FOOTER,
+      { letters: false }
+    );
+    T.addCueStrip(s, ["eyesUp"]);
+  }
 
-  // 7. I Do: soon, later, next
+  // 7. I Do: change, community
   {
     const s = pres.addSlide();
     T.addTopBar(s, C.PRIMARY);
     T.addBadge(s, "I Do", { color: C.PRIMARY });
     T.addCueStrip(s, ["eyesUp", "watchCopy"]);
-    T.addTitle(s, "Three signs that move a story along");
+    T.addTitle(s, "Not the athlete. The equipment changed.");
     A.addSignCardRow(T, s, [
-      { gloss: "SOON", meaning: "soon" },
-      { gloss: "LATER", meaning: "later" },
-      { gloss: "NEXT", meaning: "next" },
+      { gloss: "CHANGE", meaning: "change" },
+      { gloss: "COMMUNITY", meaning: "community" },
     ], { y: 1.4, bottom: 5.05, report });
     T.addFooter(s, FOOTER);
     s.addNotes(T.composeGlanceNotes({
-      answer: "SOON, LATER, NEXT",
+      answer: "CHANGE, COMMUNITY",
       beats: [
         "MODEL each twice; they copy once.",
-        ["SAY: These move a story along rather than place it in history.",
-          "Before, after and back then put you in a year."],
-        "SAY: Soon, later and next move you through an afternoon.",
-        ["MODEL LATER both ways: two short movements is later.",
-          "One long movement is much later, some time in the future."],
+        ["SAY: Notice what changed in every one. Not the athlete.",
+          "The gun changed, the referee changed, the scoreboard changed."],
+        "SAY: The community decided what to change, and then changed it.",
+        ["ASK: what changed at the pool. Thumbs up when you can name it.",
+          "5 sec, voices off. EXPECT: most thumbs up fast"],
       ],
-      trap: ["NEXT pointed the wrong way for who is next.", "Fix: show I'm next and you're next, student redoes it."],
-      stretch: "join all four events with three different time signs.",
-      help: "the three meanings written up beside where you stand.",
-      prep: [
-        "Chris: NEXT moves toward whoever is next. LATER also has a 7 handshape variant, thumb and finger.",
-        "NEXT is Chris's NEXT_2; Signbank's default is a demotion sign.",
-      ],
+      trap: ["CHANGE used to mean the athlete changed.", "Fix: ask what got changed, student re-signs it."],
+      stretch: "sign one sentence with CHANGE and COMMUNITY in it.",
+      help: "the three pictures from the last slide on the board as prompts.",
+      prep: "COMMUNITY is the first sign to drop if the lesson runs heavy.",
       tag: "[I Do | Explicit teaching | HITS 3, 4]",
     }));
   }
 
-  // 8. We Do: Game 10 Watch And Draw It
+  // 8. We Do: Game 7 How Many Medals
   {
     const s = pres.addSlide();
     T.addTopBar(s, C.SUCCESS);
     T.addBadge(s, "We Do", { color: C.SUCCESS });
     T.addCueStrip(s, ["voicesOff", "partner"]);
-    T.addTitle(s, "Game 10 Watch And Draw It");
+    T.addTitle(s, "Game 7 How Many Medals");
     T.addInstructionCard(s, [
-      { role: "header", text: "With your partner, one round each way" },
-      { text: "A signs the scene only: the place and two people." },
-      { text: "B watches it all, pencil down, then sketches it." },
-      { text: "Compare. Wrong places? A signs it again." },
-      { text: "Swap." },
+      { role: "header", text: "With your partner" },
+      { text: "One of you has sheet A, one has sheet B. Folder up between you." },
+      { text: "Take turns: ask how many medals they have in each sport." },
+      { text: "Write their number next to that sport." },
+      { text: "Add up both totals. The bigger total wins." },
     ], { x: 0.5, y: 1.4, w: 5.9, h: 2.5, strip: C.SUCCESS });
     T.addCard(s, 6.65, 1.4, 2.85, 2.5, { variant: "tint", tone: C.ALERT });
-    s.addText("Pencil down. Watch. Then draw.", {
+    s.addText("Pencil down while they sign.", {
       x: 6.8, y: 1.6, w: 2.55, h: 0.9, fontSize: 19, fontFace: T.FONT_H, bold: true,
       color: C.CHARCOAL, align: "center", valign: "middle", margin: 0,
     });
-    s.addText("Head down drawing means you missed where they put people.", {
+    s.addText("Watch the whole answer, then write.", {
       x: 6.8, y: 2.55, w: 2.55, h: 1.2, fontSize: 15, fontFace: T.FONT_B,
       color: C.CHARCOAL, align: "center", valign: "top", margin: 0,
     });
-    s.addText("A warm-up for the retell. Fast.", {
+    s.addText("The folder hides the sheet, never your face.", {
       x: 0.5, y: 4.15, w: 9, h: 0.5, fontSize: 16, fontFace: T.FONT_B, bold: true,
       color: C.CHARCOAL, align: "center", valign: "middle", margin: 0,
     });
     T.addFooter(s, FOOTER);
     s.addNotes(T.composeGlanceNotes({
-      answer: "a sketch with the two people where the signer put them",
+      answer: "totals: sheet A 77, sheet B 81",
       beats: [
-        ["SET UP: pairs facing at an angle, paper flat, pencils down.", "One round each way, five minutes."],
-        "SAY: Scene only. Nothing happens yet.",
-        ["CIRCULATE: watch for heads down while the partner signs.", "That student missed the whole content."],
+        ["SET UP: pairs facing, sheet flat behind a propped folder.", "HOW-MANY from Lesson 4 does the asking."],
+        ["CIRCULATE: watch for pencils moving while a partner signs.",
+          "A pair who writes while watching will be a number out in three turns."],
+        ["ASK at the end: who has more sock wrestling medals.", "It is the bit they remember."],
+        "COLLECT: photo of the finished sheet into the journal.",
       ],
-      trap: ["explaining the scene in writing.", "Fix: sign it again instead, partner redraws."],
-      stretch: "three people in the scene instead of two.",
-      help: "the pool scene from the strip, so only the placement is new.",
-      prep: "5 min. Game 10 Watch And Draw It. Cut it entirely if you are running late.",
+      trap: ["writing while the partner is still signing.", "Fix: pencils down, partner re-signs, student writes after."],
+      stretch: "work out how many more medals the winner has, and sign that number.",
+      help: "a number line on the desk for the bigger numbers.",
+      prep: "10 min. Game 7 How Many Medals. Netball replaces cricket, from Chris's twelve sports.",
       tag: "[We Do | Collaborative learning | HITS 5]",
     }));
   }
@@ -234,10 +247,10 @@ function build() {
     T.addTopBar(s, C.ASSESS);
     T.addBadge(s, "Check it", { color: C.ASSESS });
     T.addCueStrip(s, ["eyesUp"]);
-    T.addTitle(s, "Where were the two swimmers?");
+    T.addTitle(s, "What starts the race?");
     T.addCard(s, 0.5, 1.5, 9, 1.6, { variant: "tint", tone: C.ASSESS });
-    s.addText("Show me where the two swimmers were placed.", {
-      x: 0.7, y: 1.5, w: 8.6, h: 1.6, fontSize: 32, fontFace: T.FONT_H, bold: true,
+    s.addText("What starts a race in Deaf swimming?", {
+      x: 0.7, y: 1.5, w: 8.6, h: 1.6, fontSize: 34, fontFace: T.FONT_H, bold: true,
       color: C.CHARCOAL, align: "center", valign: "middle", margin: 0,
     });
     T.addTextOnShape(
@@ -253,140 +266,97 @@ function build() {
     });
     T.addFooter(s, FOOTER);
     s.addNotes(T.composeGlanceNotes({
-      answer: "two different places, one swimmer each",
+      answer: "a light, wired to the starting gun",
       beats: [
-        ["ASK: show where the two swimmers were placed.",
+        ["ASK: what starts a race in Deaf swimming.",
           "5 sec think time. Cue: Everyone signs it to me on three. One, two, three.",
-          "EXPECT: two clearly separate places"],
+          "EXPECT: LIGHT"],
         ["SCAN the room, back row first.",
-          "80%+ -> You Do with the two-event retell.",
-          "Less -> two chairs at the front, a swimmer each. Retell pointing at chairs,",
-          "then sign it without them. Re-check."],
+          "80%+ -> move to You Do.",
+          "Less -> three problems left, three fixes right. Pair them on boards,",
+          "explain one pairing to a partner, then re-ask."],
       ],
-      trap: ["copying handshapes and ignoring placement.", "Fix: the two chairs, then re-check."],
-      prep: "The decision point that changes what you report for the retell.",
+      trap: ["LIGHT as a word with no problem attached.", "Fix: the matching task, then re-ask."],
+      prep: "The decision point that decides whether the You Do explanation will land.",
       tag: "[CFU | Evaluating impact | HITS 7]",
     }));
   }
 
-  // 10. You Do: retell, rotation runs here
+  // 10. You Do: Mix and Mingle, then explain
   {
     const s = T.youDoSlide(
       pres,
-      "Retell the story",
-      "Scene first. Then two events, joined with soon, later or next. Keep the two swimmers apart. Use the pictures if you need them. Then swap.",
+      "Find someone who picked a different change",
+      "Find someone who picked a different change. Sit together. Sign your change and what it replaced. Then swap.",
       [
-        "Set the place and the two swimmers.",
-        "Two events, joined with a time sign.",
-        "Partner signs back the first event.",
+        "Mix and mingle: find a different change.",
+        "Sign the change and what it replaced.",
+        "Partner signs it back to check.",
       ],
       T.composeGlanceNotes({
         beats: [
-          ["SAY: Voices off, pairs at an angle.", "Different from the game: that set a scene, this adds four events."],
-          "TIME: 10 minutes, both ways.",
-          ["CALL the last rotation group while the rest retell.",
-            "They sign STORY, NEXT and one sign from Lesson 6, then set the scene for you."],
-          "RECORD E, C or P on the tracker against the checklist row.",
+          ["SAY: Voices off. Three minutes to find your person.",
+            "Different from the game: that swapped numbers, this swaps an explanation."],
+          "TIME: advance to start the clock. Then sit and explain, both ways.",
+          ["CIRCULATE: listen for the problem, not just the change.", "Criterion 2 lives here."],
+          "COLLECT: each pair's change and what it replaced, on the board.",
         ],
-        stretch: "retell all four events, keeping both swimmers apart.",
-        help: "you point to each picture as they sign, so the order is held for them.",
+        stretch: "name one more barrier somebody designed away, in sport or anywhere.",
+        help: "point to a picture first, then sign the change.",
         prep: [
-          "10 min. The rotation runs here, because the exit slot is the test.",
-          "Challenge: scene plus two events, with the picture version on screen.",
+          "10 min. Game 3 Mix and Mingle, then the partner explanation.",
+          "Challenge explains one change with the pictures up. Time 3 minutes on the class timer.",
         ],
         tag: "[You Do | Explicit teaching | HITS 10]",
       }),
       FOOTER,
       {
-        where: "Voices off  |  Pairs at an angle  |  Story strip on the desk",
-        visual: { type: "pictograms", items: [
-          { name: "waves", label: "on the blocks" }, { name: "eye", label: "watching" },
-          { name: "lightbulb", label: "light on, go" }, { name: "trophy", label: "top of the board" },
-        ] },
+        where: "Voices off  |  3 minutes  |  Then sit together",
+        visual: { type: "pictograms", items: [{ name: "lightbulb", label: "light" }, { name: "flag", label: "flag" }, { name: "tv", label: "scores" }] },
       }
     );
-    T.addCueStrip(s, ["voicesOff", "partner"]);
+    T.addCueStrip(s, ["voicesOff", "partner", "timer"]);
   }
 
-  // 11. The receptive test frame
-  {
-    const s = pres.addSlide();
-    T.addTopBar(s, C.ASSESS);
-    T.addBadge(s, "Exit Ticket", { color: C.ASSESS });
-    T.addCueStrip(s, ["eyesUp"]);
-    T.addTitle(s, "In your exercise book: number 1 to " + TEST_ITEMS);
-    const perCol = Math.ceil(TEST_ITEMS / 2);
-    const lineH = 0.62;
-    for (let i = 0; i < TEST_ITEMS; i++) {
-      const col = Math.floor(i / perCol);
-      const row = i % perCol;
-      const x = 0.7 + col * 4.6;
-      const y = 1.5 + row * lineH;
-      s.addText(String(i + 1), {
-        x, y, w: 0.5, h: 0.45, fontSize: 22, fontFace: T.FONT_H, bold: true,
-        color: C.CHARCOAL, align: "right", valign: "bottom", margin: 0,
-      });
-      s.addShape("line", { x: x + 0.65, y: y + 0.45, w: 3.4, h: 0, line: { color: C.MUTED, width: 1.25 } });
-    }
-    T.addFooter(s, FOOTER);
-    s.addNotes(T.composeGlanceNotes({
-      answer: "2-8: 1965, 2005, medal, proud, change, where, before",
-      beats: [
-        ["SIGN each item once, then once more. Pens down while you sign.",
-          "1 a number in range. 2 1965. 3 2005. 4 MEDAL. 5 PROUD."],
-        "6 CHANGE. 7 WHERE. 8 BEFORE.",
-        ["At item 8 stop. Go through all eight together.",
-          "Students correct their own in a different colour. Scan for outliers."],
-      ],
-      prep: [
-        "Evidence piece 2, Challenge: items 1 to 8, rated out of eight.",
-        "Emerging 0 to 2, Consolidating 3 to 5, Proficient 6 to 8. Nothing marked at home.",
-      ],
-      tag: "[Exit ticket | Evaluating impact | HITS 7]",
-    }));
-  }
-
-  // 12. Journal, last two minutes
+  // 11. Exit ticket
   T.exitTicketSlide(
     pres,
     [
       "Rate yourself on the three I can statements: just starting, getting there, got it.",
-      "On your tracker page, tick every sign you can now do.",
-      "Cultural question: what does a Deaf storyteller show you that an English sentence does not?",
+      "Write one line: the change you explained and what it replaced.",
+      "Cultural question: what is one thing at our school that could be designed so it can be seen instead of heard?",
     ],
     T.composeGlanceNotes({
       beats: [
-        "SAY: Last two minutes. Journal and the tracker page.",
-        "COLLECT nothing. The test levels go on the tracker after class.",
+        "COLLECT nothing. Everyone writes in the journal.",
+        "CIRCULATE and read the cultural answers over shoulders.",
       ],
-      prep: "Allow 10 minutes per class to record the test levels.",
+      prep: "5 min. Week 8 collects no evidence. The rotation finished in Lesson 6.",
       tag: "[Exit ticket | Evaluating impact | HITS 7]",
     }),
     FOOTER,
     { title: "In your journal" }
   );
 
-  // 13. Closing
+  // 12. Closing
   T.closingSlide(
     pres,
     {
-      reflectionPrompt: "Turn and tell your partner the sign from this term you are proudest of.",
+      reflectionPrompt: "Turn and tell your partner one thing at school that could be seen instead of heard.",
       scItems: [
-        "I can show where a story happens before I start it.",
-        "I can retell a two-event story with the scene set first.",
-        "I can keep two people in the story apart so my partner knows who is who.",
+        "I can name one thing in sport that is shown with a light or a flag.",
+        "I can explain what problem the light or flag solved.",
+        "I can give one more example of a barrier somebody designed away.",
       ],
       selfAssessment: ["Just starting", "Getting there", "Got it"],
     },
     T.composeGlanceNotes({
       beats: [
-        "SAY: Tell your partner the sign from this term you are proudest of.",
+        "SAY: Tell your partner one thing at school that could be seen instead of heard.",
         "SAY: That is the last new lesson of the term. Next is the review.",
       ],
-      prep: [
-        "Protocol practised today: signing space and sight lines.",
-        "Never cut the test; evidence piece 2 has no other slot.",
-      ],
+      care: "athlete called amazing for competing? Redirect to what they did in the pool.",
+      prep: "Protocol practised today: the shoulder tap. Required from here on.",
       tag: "[Closing | Planning | HITS 9]",
     })
   );
@@ -394,9 +364,9 @@ function build() {
   return pres;
 }
 
-A.buildStoryStripPdf(path.join(RES_DIR, STRIP_PDF), "Session 8  |  Story Strip  |  Years 3-4 Auslan", C.PRIMARY);
+A.buildMedalTallyPdf(path.join(RES_DIR, TALLY_PDF), "Session 8  |  Medal Tally Sheets  |  Years 3-4 Auslan", C.PRIMARY);
 const pres = build();
-const file = path.join(OUT_DIR, "DeafSport Challenge Session 8 Showing The Story.pptx");
+const file = path.join(OUT_DIR, "DeafSport Challenge Session 8 Lights Flags And What Changed.pptx");
 pres.writeFile({ fileName: file }).then(() => {
   console.log("PPTX written to " + file);
   report.print();
