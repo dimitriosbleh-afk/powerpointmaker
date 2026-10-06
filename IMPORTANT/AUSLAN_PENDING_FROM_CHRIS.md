@@ -45,6 +45,13 @@ Kept next to the prompts on purpose. This is the checklist James works from unti
 | Images on vocabulary slides | Chris asked for pictures beside the twelve sports, then agreed with the house approach once it was explained: less on the screen, so the picture does not compete with the sign. **Settled: no images on vocabulary list slides** |
 | Signbank agency | The pipeline goes and gets the right sign itself rather than shipping a lookup card and asking Chris to do it. It now reads the whole recorded definition and picks the variant carrying the sense the lesson needs, and Chris overrides any of it from `reference/auslan/signbank_links/overrides.json` |
 
+## Decisions from 7 October 2026
+
+| Decision | Detail |
+| --- | --- |
+| Foundation to Year 2 planning | Steve is organising a two-hour morning block for James and Chris to plan the Foundation, Discovery (Years 1-2) units together. The work is a conversation first: how Chris likes to teach junior classes, what the slides should look like, and what content to teach. Nothing for F-2 is built before that meeting |
+| Term 4 is the 2027 pilot | Chris teaches the Challenge and Enrichment units as built, from the shared Drive folder, and logs what works and what does not, lesson by lesson, as he goes. That log plus the preliminary chats become the brief for the whole 2027 year, so 2027 starts where he likes it. Do not rebuild Term 4 mid-term for preference changes; collect them for 2027 |
+
 ## Where supplied material is filed
 
 Everything Chris hands over goes in `reference/auslan/` (gitignored): reports/, signit/, auslan_hub/, term3_projects/, acara/, signbank_links/. See its README. File it there, then close the row below.
