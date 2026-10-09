@@ -517,7 +517,7 @@ class OgBuilderRegressionTests(unittest.TestCase):
         spec = ROOT / "og_planner" / "weeks" / "term4_week2.json"
         with tempfile.TemporaryDirectory(prefix="og_round_regression_") as temp:
             decks = self.build_spec(spec, Path(temp))
-            self.assertEqual(len(decks), 4)
+            self.assertEqual(len(decks), 5)
             week = json.loads(spec.read_text(encoding="utf-8"))
             worked = week["sessions"][0]["new_morph_activity"]["round"][0]
             self.assertTrue(worked.get("worked"))
