@@ -117,9 +117,15 @@
    ]
   },
   "Friday": {
-   "morphology": "No session this week",
-   "grammar": "No session this week",
-   "learned_words": "No session this week"
+   "morphology": [
+    "Week Review",
+    "astro, terr"
+   ],
+   "grammar": "Upgrade verbs: week review",
+   "learned_words": [
+    "Review learned words",
+    "receipt, entrepreneur"
+   ]
   }
  },
  "sessions": [
@@ -1968,6 +1974,346 @@
        "answer": "interrupted",
        "why": "ten minutes of rain, not ruined",
        "notes": "ANSWER: interrupted.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask whether ten minutes of rain ruins a whole recess, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Changed is too weak and ruined is hyperbole for ten minutes. Interrupted fits the fact - the strength question.\"\n4. SAY: \"When you edit your argument, read every verb and ask the three questions. Upgrade one verb on every line.\"\nTRAP: choosing ruined. Fix: point at ten minutes, ask whether recess was ruined, student swaps to interrupted.\nEXTENSION: Take one paragraph of your persuasive writing and upgrade three verbs, labelling which question each upgrade answers.\n---\nPurpose: edge case: strength against a fact, and the verb stays in the past. [You Do | Independent practice | Grammar | HITS 5]"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "day": "Friday",
+   "type": "week_review",
+   "morphology_review": [
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from astro, meaning star.",
+      "answers": [
+       "astronaut",
+       "astronomy",
+       "astronomer",
+       "astrophysics"
+      ]
+     }
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from terr, meaning land.",
+      "answers": [
+       "terrain",
+       "territory",
+       "terrace",
+       "terrarium"
+      ]
+     }
+    },
+    {
+     "morph": "chron",
+     "type": "root",
+     "keyword": "chronology",
+     "meaning": "time"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root",
+     "keyword": "command",
+     "meaning": "order, entrust",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from mand or mend, meaning order or entrust.",
+      "answers": [
+       "command",
+       "demand",
+       "recommend",
+       "commander"
+      ]
+     }
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root",
+     "keyword": "adjure",
+     "meaning": "right, law"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "territory",
+     "causing",
+     "hyperbole",
+     "omnivores",
+     "asteroid",
+     "ponder",
+     "excusable",
+     "hyperactive",
+     "terrarium",
+     "convict",
+     "omnipotent",
+     "pendulum",
+     "astrophysics",
+     "commander",
+     "causative"
+    ],
+    "notes": "1. READ: \"Okay, if your first name has two, three or four letters, read row 1.\"\n2. READ: \"Five letters, read row 2.\"\n3. READ: \"Six letters, read row 3.\"\n4. READ: \"Seven letters or more, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"astro and its twin aster mean star. Which two words carry them?\" 5 sec, choral response. EXPECT: asteroid, astrophysics.\n7. ASK: \"terr means land. Which two words carry it?\" 5 sec, choral response. EXPECT: territory, terrarium.\n8. ASK: \"caus and cus mean cause. Which three words carry them?\" 5 sec, turn and tell. EXPECT: causing, excusable, causative.\n9. ASK: \"Which word names a glass tank of soil and plants for a pet lizard?\" 3 sec, choral response. EXPECT: terrarium.\n10. ASK: \"Which word names the swinging weight inside an old clock?\" 3 sec, choral response. EXPECT: pendulum.\n11. ASK: \"vict means conquer. Which word names a person found guilty in court?\" 3 sec, choral response. EXPECT: convict.\n12. ASK: \"What is the opposite of hyperactive?\" 3 sec, choral response. EXPECT: calm. ACCEPT: still, sleepy."
+   },
+   "words_to_spell_review": [
+    {
+     "word": "astronomical",
+     "sentence": "The price of a real space telescope is astronomical.",
+     "prompt": "astro means star. Why would a huge price be called astronomical?",
+     "answer": "Because it is as huge as the distances between the stars."
+    },
+    {
+     "word": "asterisk",
+     "sentence": "Mr Lee put an asterisk beside the trickiest question on the quiz.",
+     "prompt": "aster means star. Which part of asterisk makes the star little?",
+     "answer": "The -isk ending, meaning little. An asterisk is a little star, like this *."
+    },
+    {
+     "word": "terrace",
+     "sentence": "We ate lunch on the stone terrace above the school garden.",
+     "prompt": "terr means land. What shape of land is a terrace?",
+     "answer": "A flat step of land, like one stair cut into the side of a hill."
+    },
+    {
+     "word": "terrestrial",
+     "sentence": "Kangaroos are terrestrial animals, but dolphins spend their whole lives in the sea.",
+     "prompt": "terr means land. So where does a terrestrial animal live?",
+     "answer": "On the land. The -ial ending means relating to, so terrestrial means relating to the land."
+    },
+    {
+     "word": "hyperlinked",
+     "sentence": "Our class website has every homework sheet hyperlinked on one page.",
+     "prompt": "Which part tells you each link jumps you over to another page?",
+     "answer": "The hyper part, meaning over. The -ed ending tells you the linking is already done."
+    },
+    {
+     "word": "omnipresence",
+     "sentence": "The omnipresence of seagulls at the beach made eating chips a real challenge.",
+     "prompt": "omni means all. Which taught ending turns present into a thing you can name?",
+     "answer": "The -ence ending, the same one in dependence. Omnipresence means being present everywhere."
+    },
+    {
+     "word": "excuse",
+     "sentence": "Forgetting your hat is not an excuse to miss out on sport.",
+     "prompt": "cus means cause. What is an excuse trying to give?",
+     "answer": "A cause, or a reason, that gets you out of something. The ex part means out."
+    },
+    {
+     "word": "accuser",
+     "sentence": "In the courtroom drama, the accuser pointed straight at the butler.",
+     "prompt": "cus means cause. What is the accuser saying about the butler?",
+     "answer": "That the butler caused the crime. The -er ending names the person doing the accusing."
+    },
+    {
+     "word": "component",
+     "sentence": "The battery is the most important component of our science buggy.",
+     "prompt": "pon means place. Where is a component placed?",
+     "answer": "Inside something bigger. It is one part of the whole machine, like the battery in the buggy."
+    },
+    {
+     "word": "prejudice",
+     "sentence": "Choosing teams only from your friends can be a kind of prejudice.",
+     "prompt": "pre means before and jud means judge. When does prejudice make its judgement?",
+     "answer": "Before knowing the facts. The judging comes first, so the facts never get a turn."
+    }
+   ],
+   "sound_bank": [
+    {
+     "morph": "astro",
+     "type": "root"
+    },
+    {
+     "morph": "terr",
+     "type": "root"
+    },
+    {
+     "morph": "hyper",
+     "type": "root"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix"
+    },
+    {
+     "morph": "-ence",
+     "type": "suffix"
+    },
+    {
+     "morph": "-ice",
+     "type": "suffix"
+    }
+   ],
+   "learned_words": {
+    "review": [
+     {
+      "word": "receipt",
+      "unfair": "p",
+      "notes": "Why learned: the p is silent, and the ei follows i before e except after c.\nSay it: ruh-SEET, two beats. Write re - ceipt, and say the p in your head.\nLink: you can hear the p in reception, so think reception to keep the silent p in receipt."
+     },
+     {
+      "word": "entrepreneur",
+      "unfair": "eur",
+      "notes": "Why learned: the ending eur says /er/ and entre says /on-truh/, because the word came from French.\nSay it: ON-truh-pruh-NER, four beats. Write en - tre - pre - neur, then check the eur at the end.\nLink: an entrepreneur is the person who starts a business."
+     }
+    ]
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "The drought made the farmer depend on water from the dam.",
+     "targets": [
+      "drought",
+      "depend"
+     ],
+     "cups": {
+      "capitals": [
+       "The"
+      ],
+      "punctuation": [
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "Term 3 revision: the red word drought (Week 2) and pend in depend (Week 8)."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "During the heatwave, our coach urged, \"Drink often; a tired muscle can cause an injury!\"",
+     "targets": [
+      "muscle",
+      "cause",
+      "injury"
+     ],
+     "cups": {
+      "capitals": [
+       "During",
+       "Drink"
+      ],
+      "punctuation": [
+       "comma after the opening phrase (During the heatwave tells when, and the comma shows where it ends)",
+       "comma before the speech (it separates who said it from what they said)",
+       "opening quotation mark (speech starts here, so the first word takes a capital)",
+       "semicolon (it joins two complete sentences that belong together)",
+       "exclamation mark (it shows an urgent instruction)",
+       "closing quotation mark (speech ends here, after its own punctuation)"
+      ]
+     },
+     "focus": "Term 3 revision: the red word muscle (Week 1), caus in cause (Week 9) and jur in injury (Week 7). urged is this week's grammar - it shows how the coach said it."
+    }
+   ],
+   "grammar": {
+    "header_notes": "PURPOSE: Week review - ask the three verb questions of one argument sentence, then upgrade it.\nWHY THIS WEEK: vague verbs make an argument flat and too-strong verbs make readers stop trusting it; the three questions fix both.\nTIME: 5 minutes, no more - I do 1 min, We do 1 question, You do 3 questions at about 45 seconds each. One question per slide; your click reveals the answer.\nROUTINE: all grammar this week is written in the OG book. No boards - books, fingers and voices only.\nPREP: exact (exactly what happens?), strength (does it fit the facts? too strong is hyperbole), saying verbs (how was it said?).",
+    "i_do": {
+     "title": "Upgrade every verb",
+     "rule": "Ask three questions: exactly what? Fits the facts? How was it said?",
+     "example": "Fact: two pies were burnt.\nThe chef says the oven ruined every pie.\nThe chef admits the oven burnt two pies.",
+     "items": [
+      "Exact: washes, digs. Strength: fits the facts.",
+      "Saying: warn, insist, agree, admit, show."
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Next week: upgrade your own argument",
+     "notes": "ANSWER: says becomes admits (how it was said) and ruined every becomes burnt two (fits the facts).\n1. SAY: \"Okay, this week we upgraded verbs three ways. Today one sentence needs two of them, so ask all three questions.\"\n2. WRITE: copy the fact and \"The chef says the oven ruined every pie.\" on the class board. POINT at ruined every and ask, does it fit the facts?\n3. WRITE: cross out ruined every and write burnt two, then cross out says and write admits, so the board matches the bottom line.\n4. ASK: \"Why admits, not says? Turn and tell your partner.\" 10 sec, turn and tell. EXPECT: the chef did not want to say it - it is the chef's own oven.\nTRAP: fixing only the first verb you see. Fix: say ask all three questions of every verb, student rereads and finds the second.\nCLARIFY: if a student asks whether ruined is ever right, say yes, if every pie really was burnt - the fact decides.\n---\nPurpose: week review restates all three upgrades on one argument sentence (absent-student rule). [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: exact (washes for gets), strength (burnt two, not ruined every), saying verb (admits for says)."
+    },
+    "we_do": {
+     "title": "Which verb fits the facts?",
+     "rule": "Pick the sentence whose verb fits the facts.",
+     "round": [
+      {
+       "prompt": "Fact: the library closed for one day.\nA) The flood destroyed our library.\nB) The flood closed our library.",
+       "answer": "B",
+       "why": "closed for one day, not destroyed",
+       "routine": "Fingers: 1 for A, 2 for B",
+       "footer": "Stem: B fits because ...",
+       "notes": "ANSWER: B - closed fits the fact.\n1. SAY: \"Okay, read the fact first, then both sentences, in your head.\"\n2. ASK: \"Which verb fits the facts? One finger for A, two for B, voices off, show me on three.\" 5 sec. EXPECT: two fingers - B.\n3. REVEAL after fingers are scanned. ASK: \"Which of the three questions did you use?\" Cold call one student. EXPECT: does it fit the facts - the strength question.\n4. WRITE: copy A on the class board, cross out destroyed and write closed, so it matches the fact.\nTRAP: choosing A because a flood sounds serious. Fix: point at one day, ask whether the library is gone, student votes again.\nCLARIFY: if a student says closed sounds boring, say it is exactly as strong as the facts, so the reader trusts you.\n---\nPurpose: guided strength check, the question most often skipped. [We Do | Guided practice | Grammar | HITS 7]\nPREP: the fact decides; a verb stronger than the facts is hyperbole."
+      }
+     ]
+    },
+    "you_do": {
+     "title": "Upgrade the verb",
+     "rule": "Write the best verb in your OG book. Ask the three questions.",
+     "routine": "OG books - 30 sec - pens down",
+     "footer": "Check: exact, true and how?",
+     "round": [
+      {
+       "prompt": "Strong wind does damage to\nour vegetable garden.",
+       "choices": [
+        "makes",
+        "flattens",
+        "has"
+       ],
+       "answer": "flattens",
+       "why": "it shows exactly what the wind does",
+       "notes": "ANSWER: flattens.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask exactly what strong wind does to tall plants, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Does damage to is vague. Flattens shows exactly what the wind does to the plants - the exact question.\"\nTRAP: choosing makes. Fix: ask, makes what? Student swaps to flattens.\nEXTENSION: Write the whole sentence, then name which of the three questions fixed it.\nHELP: give the student the three questions on a card and ask them to try each one aloud on the verb.\n---\nPurpose: exact-verb question first, easy case. [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "The rain gauge ____ that we had\n40 mm of rain this week.",
+       "choices": [
+        "says",
+        "shows",
+        "wonders"
+       ],
+       "answer": "shows",
+       "why": "a gauge measures, so it shows",
+       "notes": "ANSWER: shows.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask whether a gauge talks or measures, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. A gauge cannot talk - it measures. Evidence shows, so the gauge shows we had 40 mm of rain.\"\nTRAP: choosing says. Fix: ask, can a gauge say anything? Student swaps to shows.\n---\nPurpose: saying-verb question for evidence, not a person. [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "Fact: the bus was five minutes late.\nThe bus ____ our excursion.",
+       "choices": [
+        "changed",
+        "delayed",
+        "wrecked"
+       ],
+       "answer": "delayed",
+       "why": "five minutes late is delayed, not wrecked",
+       "notes": "ANSWER: delayed.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask whether five minutes late wrecks a whole excursion, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Changed is too weak and wrecked is hyperbole for five minutes. Delayed fits the fact - the strength question.\"\n4. SAY: \"Before you hand in your argument, ask the three questions of every verb. Upgrade one verb on every line.\"\nTRAP: choosing wrecked. Fix: point at five minutes, ask whether the excursion was wrecked, student swaps to delayed.\nEXTENSION: Take three verbs from your persuasive writing, upgrade each one, and label which question each upgrade answers.\n---\nPurpose: edge case: strength against a fact, and the verb stays in the past. [You Do | Independent practice | Grammar | HITS 5]"
       }
      ]
     }

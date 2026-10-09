@@ -85,7 +85,7 @@
       "_source": "Term 4 week specs. class_language is the wording students met - reuse it in later review.",
       "weeks": [
         {"week": 1, "focus": "Upgrade nouns within an argument", "class_language": "three upgrades - exact (exactly who or what?), strength (does it fit the facts? too strong is hyperbole), built up into a noun group (describer, noun, detail); Mon exact, Tue strength, Wed noun group, Thu all three"},
-        {"week": 2, "focus": "Upgrade verbs within an argument", "class_language": "three verb upgrades - exact (exactly what happens?), strength (does it fit the facts? too strong is hyperbole), saying verbs (how was it said? warn, insist, agree, admit, show); Mon exact, Tue strength, Wed saying verbs, Thu all three. First week on v1.6 rounds: I do, one We do item, three You do items, answer on the click"}
+        {"week": 2, "focus": "Upgrade verbs within an argument", "class_language": "three verb upgrades - exact (exactly what happens?), strength (does it fit the facts? too strong is hyperbole), saying verbs (how was it said? warn, insist, agree, admit, show); Mon exact, Tue strength, Wed saying verbs, Thu all three, Fri week review. First week on v1.6 rounds: I do, one We do item, three You do items, answer on the click"}
       ]
     }
   }
