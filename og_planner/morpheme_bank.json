@@ -1153,7 +1153,7 @@
           "asteroids",
           "astrologer"
         ],
-        "memory_hook": "Point up at the night sky when you say astro, then swap astro for 'star' and read the rest: astronaut, star sailor. Challenge: catch an astro word in a space book or the news by Tuesday."
+        "memory_hook": "Point up at the night sky when you say astro, then swap astro for 'star' and read the rest: astronaut, star sailor. Challenge: catch an astro word in a space book or the news by Friday."
       },
       "associated_words": [
         "astronaut",
@@ -1228,7 +1228,7 @@
           "terraced",
           "territories"
         ],
-        "memory_hook": "Stamp your foot when you say terr - the land under your feet. Can't stamp on it? It is a look-alike, like terrible. Challenge: bring one more terr word by Thursday."
+        "memory_hook": "Stamp your foot when you say terr - the land under your feet. No land in the meaning? It is a look-alike, like terrible. Challenge: bring one more terr word by Friday."
       },
       "associated_words": [
         "terrain",
@@ -1251,7 +1251,8 @@
       "teaching_notes": [
         "The scan's heading is terr, meaning land; morpheme_meanings.json's 'earth; land' is unconfirmed wording. James's request said terra - the card label stays terr.",
         "terr has the clearest look-alikes in the deck (terrible, terrify, terror, terrific), which made Thursday's Real or look-alike? You Do.",
-        "You Do used: Match the terr word (Wed, the Yoshimoto worksheet task) and Land or look-alike? (Thu)."
+        "You Do used: Match the terr word (Wed, the Yoshimoto worksheet task) and Land or look-alike? (Thu).",
+        "The look-alike test is the meaning (is land part of what the word means?), not 'can you stamp on it' - that wording marks terrarium and terrier wrong."
       ]
     }
   ],

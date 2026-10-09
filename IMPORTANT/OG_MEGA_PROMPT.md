@@ -259,8 +259,12 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
      picks a category for points - Rhyming (2), Meaning or use in a sentence (2),
      Synonym (3), Antonym (3), name all the Nouns/Verbs/Adjectives in a row (4),
      Analogy (5) - answers still scripted with EXPECT, next student picks, keep score.
-- Every EXPECT answer must be checked against the actual word list on the slide - a
-  scripted answer that is not on the board is a build-stopping content bug.
+- Every EXPECT answer to a find-the-word question ("Which words carry...", "Which word
+  names...") must be checked against the actual word list on the slide - a scripted
+  answer that is not on the board is a build-stopping content bug. Quick checks whose
+  answer is said aloud rather than found (opposites, rhymes, as in "opposite of include?
+  EXPECT: exclude") may answer with a word that is not on the board. Check rhymes in
+  Australian English: wonder does not rhyme with ponder (fonder does).
 - THIS SEGMENT IS REVIEW, SO EVERY QUESTION MUST BE ANSWERABLE FROM WHAT HAS ALREADY
   BEEN TAUGHT. It is not the place to introduce a new meaning, a new morpheme, a new
   word-part split or a new label. If answering needs anything the group has not met,
@@ -779,7 +783,10 @@ builds for old specs, but new weeks use rounds.
     student decides whether the letters are really the morpheme doing its job
     (territory, terrarium) or a look-alike (terrible, terrific - from terror, fear). This
     is the OG "morpheme must do its job" test (2b) handed to students, and it suits any
-    morpheme with common look-alikes (mini in minister, ped in pedal).
+    morpheme with common look-alikes (mini in minister, ped in pedal). The test is
+    always the MEANING ("is land part of what the word means?"), never a physical
+    stand-in: Term 4 Week 2 first printed "can you stamp on it?", which marks terrarium
+    and terrier wrong. A stamp can stay as the memory-hook action, not as the test.
   - Literal meanings and a sentence that SHOWS the meaning stay available, but only with
     a fixed answer a round can reveal; open writing belongs in EXTENSION.
   - WORD BUILDING is narrowed (v1.6): only when the join itself needs a decision the
@@ -1254,6 +1261,10 @@ slides.
   ships the master's real yellow artwork, so the needle genuinely moves - if a harder
   dictation renders with the needle still at the start, that is a build defect, not a
   design choice.
+- SPREAD THE WEEK'S TARGETS: across a week's ten dictation sentences, use a morpheme or
+  red word as a target once, and do not reuse last week's targets. A Term 4 Week 2 draft
+  targeted caus in four of ten sentences and repeated salmon, vacuum, captain and
+  postpone from Week 1; the reviewed set uses ten different Term 3 sources.
 - Model pair (from the team email):
   - Easier: We followed the ordinary order, and then we began our work. (targets:
     ordinary, order)
@@ -1280,6 +1291,14 @@ students find boring, so it must earn its five minutes.
   screen. The You do items share the I do's exact move, so a student who followed the I
   do and the We do can do all three alone (example set, MEGA_PROMPT 81): easy, typical,
   then an edge case (a past-tense verb, a plural subject, a near-miss chip).
+- The last You do item's notes carry the `ANSWERS:` block for all three items plus an
+  example answer for every EXTENSION in the round - the teacher holds an open task they
+  cannot mark otherwise (3e).
+- In an A/B We do, change ONLY the verb (`Possums wrecked our bins` / `Possums knocked
+  over our bins`). If the nouns differ too (`wrecked our whole school`), students pick on
+  the noun and never judge the verb. Check every chip for a defensible second answer in
+  everyday Australian speech: `took the trophy` is ordinary sports talk for won, so it
+  cannot be the wrong chip.
 - FIXED ANSWERS, WRITTEN SMALL: each You do item gives three chips - the answer, the
   vague or wrong-strength near-miss from the TRAP, and one clearly wrong option - and
   students write only the answer word in the OG book. Writing the whole sentence is the
