@@ -1,4 +1,4 @@
-# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.5
+# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.6
 ## Grade 5/6 Enrichment | Diamond Creek East PS | Yoshimoto OG | Template-Locked | Term-Scale Input
 
 ---
@@ -68,6 +68,20 @@ after the team reported it was too hard and too repetitive:
    counts as printed on the You Do (2f, 3d, builder gate).
 3. Same task for everyone, no tiers on the face; the green Tick it or fix it slide
    stays as it is (3d).
+
+The v1.6 refinement (James, 9 Oct 2026, ahead of Kate - the school's OG lead - reviewing
+the decks) fixes two things the room found:
+
+1. PLAIN JOINING IS NOT A TASK. `hyper + link = ?` asks nothing: the answer is the two
+   printed parts said together, so no student used hyper's meaning. Every You Do now makes
+   the student USE today's morpheme's meaning to decide something - which word fits a
+   sentence, whether a sentence uses the word truly, which word matches a meaning, whether
+   the letters are the morpheme at all (3d menu).
+2. ONE QUESTION PER SLIDE, ANSWER ON THE CLICK. The morphology You Do and the grammar We
+   do / You do are ROUNDS (3d, 7): one item per slide at hero size, every student answers,
+   the teacher's click reveals a green answer bar with its one-line reason. The reveal is
+   the tick-it-or-fix-it moment, so a round needs no separate check slide. Grammar is held
+   to five minutes by its shape: I do, one We do item, three You do items (7).
 
 None of the refinements changes the required review counts, morphology sequence,
 grammar finisher, master template or output naming.
@@ -444,6 +458,10 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
   "Everyone, together, on three". The first use in a deck scripts the full cue; later beats
   may shorten it. When call-outs replace a signal, the reset is one calm scripted line,
   then the response is re-collected.
+- Notes call the session a "session", never a "lesson" (school feedback, Oct 2026: staff
+  search decks for "Lesson", and every note that uses the word buries the slide they want).
+  The word may still appear as content, in an example sentence or a question about school
+  life ("Which word might you hear in a maths lesson?").
 - Hands up is never the sampling method in any OG segment. After a complete choral or board
   response, an occasional targeted cold-call follow-up ("How do you know?" / "Convince us")
   deepens retrieval without breaking pace - a few times per session, never on every card.
@@ -534,6 +552,8 @@ operand does not survive inside the answer word (`small + wave = microwave`). An
 UNPRINTED PART: any affix (`in-`, `-tion`), catalogue root or taught morpheme a student
 handles, on either side of the `=`, that is not today's focus morpheme and has no
 `part (meaning)` gloss anywhere on the slide face (title, rule, example, items, footer).
+Round items (v1.6) are scanned slide by slide: a gloss counts only on the slide that
+uses it, so a part glossed on item 1 must be glossed again on item 3.
 `-s`, `-es`, `-ed` and `-ing` are universal inflections. A glossed part that is NOT in
 the taught set builds with a NOTE, because printed is reachable but a taught part is the
 first choice. It CANNOT check: sorting or sentence tasks that name no parts, `EXPECT:`
@@ -672,6 +692,23 @@ or - for a NOTE only - swap the glossed part for one the class has been taught.
 - On `review` days: same morpheme as the previous session, mostly NEW derivatives
   (morphological family extensions: coordination, subordination, preordain), with at
   most 2-3 repeats from the previous day.
+  SMALL FAMILIES: when the card family cannot supply a fresh review grid inside the
+  12-letter cap and the two-untaught-part cap, repeat yesterday's words and add plural or
+  inflected forms rather than reaching for curios, and flag it in the summary. omni-
+  (five card words) did this in Term 4 Week 1: the Thursday grid repeated six of
+  Wednesday's nine words. hyper's printed family is mostly 13-15 letters
+  (hypersensitive, hypercritical, hyperventilate), so its grids lean on transparent
+  hyper + everyday-word compounds (hyperlink, hyperspace, hypermarket).
+  GREEK AND LATIN COMBINING FORMS (astro, terr, and the rest of the Greek Combining
+  Forms and Upper Level Latin Roots books) almost never join to an everyday word: their
+  partners are other untaught parts (naut, nomy, -arium, -ory). The two-untaught-part
+  cap cannot be met, so choose words a Grade 5/6 student meets in science, geography or
+  the news, have every script line name and gloss the partner part, and print that
+  part's meaning wherever a You Do uses it. Term 4 Week 2 did this for astro (astronaut,
+  astronomer, asteroid, asterisk, astrolabe) and terr (terrain, territory, terrarium,
+  terrier, subterranean). astro's twin spelling aster (asteroid, asterisk) is the same
+  Greek word for star; say so in the script line. The scroll prints the Latin root as
+  terr (land), not terra - James's request said terra, the card label stays terr.
 
 ## 3c. Words to Spell (4, revealed per click)
 
@@ -696,31 +733,59 @@ or - for a NOTE only - swap the glossed part for one the class has been taught.
 
 After Words to Spell and before Review Learned Words, every new/review session gets a
 dedicated Yoshimoto-style You Do: a magenta section header (auto-retitled `New
-  Morphology - You Do` / `Review Morphology - You Do`) followed by a DESIGNED task slide
-  (same structured layout as grammar, but in the New Morphology magenta: rule banner,
-  hero task card or up to four short prompt lines, routine chip, footer). The generic "write a
-fun sentence" is the extension note, not this - this is a real activity slide teachers
-actually run. Supply it as `new_morph_activity` in the spec; the builder warns when a
-new/review session lacks one.
+Morphology - You Do` / `Review Morphology - You Do`) followed by a ROUND (v1.6): a
+"One done for you" slide, then four item slides, one question each. Every slide carries
+the same rule banner, the item as the hero, up to three choice chips, and a green answer
+bar that the teacher's click reveals; the worked slide shows its answer from the start.
+The generic "write a fun sentence" is the extension note, not this. Supply it as
+`new_morph_activity` with a `round` (schema in 9); the builder warns when a new/review
+session lacks one. The older single task slide plus `Tick it or fix it` check slide still
+builds for old specs, but new weeks use rounds.
 
+- THE TASK MUST NEED TODAY'S MEANING (v1.6, the test every item must pass). Cover the
+  card meaning and ask: could a student still get this right? If yes, the item teaches
+  nothing. `hyper + link = ?` failed it (Term 4 Week 1, flagged by James before Kate's
+  review): the answer is the two printed parts said together. The student must use the
+  morpheme's MEANING to decide, and must HAVE everything else they need - today's card,
+  the printed parts and everyday Grade 5/6 English.
+- ROUND SHAPE, why it is the default: every student answers every item (boards or
+  workbooks), the teacher sees the whole class before clicking, and a wrong answer is
+  fixed seconds later while the reason is still in front of them - the immediate
+  corrective feedback OG is built on. It is also the easiest shape for a teacher who did
+  not plan the session: read the item, run the cue, scan, click, read the green reason.
+  Time: about 20 seconds on the worked slide and 35 seconds an item, inside 3 minutes.
 - The task uses today's morpheme and is done on MINI WHITEBOARDS or in OG WORKBOOKS -
-  the `routine` chip says which and how long (`Whiteboards - 3 minutes - boards up`).
+  the `routine` chip says which (`Boards - write it, show me`, `OG workbooks - write it`).
 - SPREAD THE ACTIVITIES ACROSS THE WEEK: every new/review day in the same week uses a
   DIFFERENT activity type from the menu - with the standard Mon/Tue/Wed/Thu pattern
   that means four different activities in a week, and no type repeats within the
-  week. Vary the surface too (whiteboards one day, OG workbooks another). The menu
-  (four types - the team confirmed in Sept 2026 that all four work in the room):
-  - Word building: the parts are PRINTED and the student joins them into the real
-    word, applying any spelling change (`cooperate + -ive = ?` -> cooperative;
-    `mal- + treat = ?` -> maltreat). The student's work is the join and the spelling,
-    not recall.
-  - Literal meanings: write the morpheme sum beside a given derivative and its fused
-    meaning in your own words (`microclimate = ?` -> micro + climate, the climate of
-    one small area). Any part beyond today's morpheme that the sum needs is printed
-    on the face (ONE RECALL, below).
-  - Sort derivatives by prefix / by which morpheme they carry (sorting by part of
-    speech only once PoS has been taught - taught-only rule, 2b).
-  - Sentence that SHOWS the meaning (not just uses the word).
+  week. Vary the surface too (whiteboards one day, OG workbooks another). The menu, with
+  the day each type suits best (Term 4 Week 2 ran all four, astro then terr):
+  - WHICH WORD FITS? (new day). The hero is a sentence with a blank; three chips are
+    family words, each with its OTHER part glossed (`asteroid` / `-oid (like)`). The
+    student recalls the morpheme's meaning, adds the printed part, and picks the word
+    the sentence needs. Build the wrong chips from the item's trap: the edge item's
+    sentence mentions sailors and the answer is astrolabe (a star-taker), not
+    astronaut (a star sailor).
+  - YES OR NO - PROVE IT (review day). The hero is a statement using a family word
+    truly or falsely (`An asterisk is a giant star in deep space.`); the student writes
+    YES or NO and must be ready to prove it from the parts. Mix YES and NO so guessing
+    does not pay, and print any needed parts in the rule banner (`Parts: -isk (little)`).
+  - MATCH THE MEANING (new day) - the Yoshimoto worksheet's own task ("Match the words
+    with the meanings", on the terr and anti pages). The rule banner is a word bank with
+    ONE MORE word than there are items, so the last item is never a forced leftover;
+    the hero is a kid-friendly meaning; the student writes the matching word.
+  - REAL OR LOOK-ALIKE? (review day). The hero is a sentence with one bold word; the
+    student decides whether the letters are really the morpheme doing its job
+    (territory, terrarium) or a look-alike (terrible, terrific - from terror, fear). This
+    is the OG "morpheme must do its job" test (2b) handed to students, and it suits any
+    morpheme with common look-alikes (mini in minister, ped in pedal).
+  - Literal meanings and a sentence that SHOWS the meaning stay available, but only with
+    a fixed answer a round can reveal; open writing belongs in EXTENSION.
+  - WORD BUILDING is narrowed (v1.6): only when the join itself needs a decision the
+    class has been taught - a spelling change (`cooperate + -ive = cooperative`,
+    `hyper + extend + -ed`) or choosing between two endings. Joining a morpheme to an
+    everyday word with no change is retired.
 - MEANING SUMS ARE RETIRED (team decision, Sept 2026). The tachistoscope shape - the
   teacher gives the meanings, students produce the word (`small + look at = ?`,
   `cannot be conquered = ?`, `house + study of + relating to = ?`) - is no longer a
@@ -810,12 +875,21 @@ new/review session lacks one.
   together. HELP still changes the task form (word bank, match instead of build,
   first item done). A bare `CIRCULATE: check work`, or one that only restates the
   slide, is a defect.
+- IN A ROUND the prompt ladder lives in each item's SCAN line: `80%+ -> click to
+  reveal. Less -> [one move that adds something the slide does not say], then re-ask.`
+  (`Less -> ask whether the blank is a person, a science or a tool, then point at labe
+  (taker), then re-ask.`) The TRAP names the near-miss chip and its fix.
 - The check slide's `ASK:` must be a genuine thinking question, not a spot-the-obvious
   (`Which part of every answer means small?` when every answer visibly starts with
   micro). Ask something that makes them USE the pattern: which of these two words
   changes meaning if you drop the prefix, why does this word need three parts, which
   answer would still make sense with a different root.
-- A fixed-answer activity MUST be followed immediately by a duplicate answer slide
+- IN A ROUND, the green answer bar IS the tick-it-or-fix-it slide: each item's
+  REVEAL beat says "Tick it or fix it", then the reason. Each item's notes open with
+  its own `ANSWER:` line; the worked slide's notes carry the `ANSWERS:` block, the
+  `EXTENSION:` and the `HELP:` for the whole round. The rules below about a separate
+  check slide apply to the older single-slide shape only.
+- A fixed-answer single-slide activity MUST be followed immediately by a duplicate answer slide
   titled `Tick it or fix it - ...`. Supply `check_items` (the completed prompt/answer
   lines) plus `check_notes`. Never use the old `Check and fix` title. The first slide
   protects independent thinking; the next slide shows answers in green and tells
@@ -1194,6 +1268,28 @@ slides.
 The one section where the general MEGA_PROMPT teaching craft applies - and the section
 students find boring, so it must earn its five minutes.
 
+- FIVE MINUTES IS A HARD CAP, AND THE SHAPE ENFORCES IT (v1.6). Grammar is five slides
+  after its header: one I do slide, ONE We do item, THREE You do items, each item on its
+  own slide with the answer on the click - the maths decks' one-question-per-slide
+  practice round (MEGA_PROMPT 17, 20, 82). Budget: I do 1 minute, We do 1 minute, You do
+  about 45 seconds an item (30 seconds writing, then scan, click, tick or fix). The old
+  four-item You do slide plus check slide ran long and asked students to hold four
+  sentences at once; do not author it for new weeks.
+- WHY ONE ITEM A SLIDE: every student commits to one answer, the teacher scans the whole
+  room before the click, and a student who got it wrong fixes it while the reason is on
+  screen. The You do items share the I do's exact move, so a student who followed the I
+  do and the We do can do all three alone (example set, MEGA_PROMPT 81): easy, typical,
+  then an edge case (a past-tense verb, a plural subject, a near-miss chip).
+- FIXED ANSWERS, WRITTEN SMALL: each You do item gives three chips - the answer, the
+  vague or wrong-strength near-miss from the TRAP, and one clearly wrong option - and
+  students write only the answer word in the OG book. Writing the whole sentence is the
+  item's EXTENSION, not the core, because it doubles the time.
+- The We do is a round of one: an A/B judgement or three chips, answered with fingers,
+  voices off, then one cold-call "How do you know?" after the reveal.
+- The You do needs no separate "One done for you" slide: the We do item, worked together
+  seconds earlier, is the model. EXTENSION and HELP go on the first You do item's notes,
+  and the HOW transfer line is beat 4 of the last item.
+
 - ONE grammar focus per week, taught as a 4-5 day sequence (Mon intro -> Fri week
   review). Link back to previous weeks' grammar when natural.
 - ABSENT-STUDENT RULE (non-negotiable): every day's I do restates the core rule in one
@@ -1305,7 +1401,8 @@ students find boring, so it must earn its five minutes.
 - You do produces visible evidence (books up, exit ticket) the teacher can scan to
   regroup tomorrow.
 - The You do obeys the same achievability bar as the morphology You Do (3d):
-  - The hero card shows a COMPLETED WORKED EXAMPLE of the task (`One done for you:
+  - On a round, the We do item worked together is the completed example. On the older
+    single slide, the hero card shows a COMPLETED WORKED EXAMPLE of the task (`One done for you:
     The keys are under the blue mat. Whole phrase: under the blue mat`), never the
     bare task instruction. Put the instruction in the rule banner or the first item
     (`Your turn: ...`), then give the material items.
@@ -1317,7 +1414,8 @@ students find boring, so it must earn its five minutes.
   - The grammar You do carries an `EXTENSION:` meeting the 3e standard (about 18 months
     ahead, same concept pushed) and an `ANSWERS:` block at the very bottom of the notes
     listing each item's question and answer plus the extension answer.
-- A fixed-answer You do MUST be followed by the same green `Tick it or fix it - ...`
+- In a round, each item's green answer bar replaces the check slide (3d). On the older
+  single-slide shape, a fixed-answer You do MUST be followed by the same green `Tick it or fix it - ...`
   answer slide as the morphology You Do: supply `check_title`, `check_rule`,
   `check_items`, `check_routine`, `check_footer`, `check_notes` on the `you_do` block.
   The answer slide must teach (3d): each answer carries its one-line reasoning, and
@@ -1401,6 +1499,7 @@ master template's old dense procedure blocks. All authored notes must follow
 | Words to Spell grid | line-separated early-finisher cue + `EXTENSION:` (3e) |
 | Learned word (each) | `Why learned:` / `Say it:` AU pronunciation / `Link:` |
 | Dictation (each) | sentence + line-separated CUPS checklist + `Score:` + `Focus:` |
+| Round item (You Do, grammar We do / You do) | `ANSWER:` / `1. ASK` or `SAY` with think time and the cue / `2. SCAN ... 80%+ -> click to reveal. Less -> [ladder], then re-ask.` / `3. REVEAL after ... SAY: "Tick it or fix it. [reason]"` / `TRAP:` / `---` / `Purpose:`. Worked item: the round's beats, EXTENSION, HELP and the `ANSWERS:` block |
 | Grammar I/We/You do | Glance Format live zone with a board-explicit `MODEL:`/`WRITE:` beat and a `CLARIFY:` line on I do and We do, `---`, `Purpose:` line + optional `PREP:` teacher gloss, then `ANSWERS:` on a fixed-answer You do (section 7) |
 
 ---
@@ -1436,11 +1535,16 @@ pattern. A differently named spec silently skips those checks. Schema:
     "wtr_new_notes": "verbatim line-separated teacher script + Memory hook: (3b)",
     "words_to_spell_new": [4 words, all from words_to_read_new],   // omit on week_review
     "extension": "self-contained early-finisher + EXTENSION: (3e)", // omit on week_review
-    "new_morph_activity": { "title", "rule", "example"?, "items": [<=4],
-                            "routine", "footer", "time"?, "notes",
-                            "check_title"?: "Tick it or fix it - ...",
-                            "check_rule"?, "check_items": [completed answers],
-                            "check_routine"?, "check_footer"?, "check_notes" }, // 3d
+    "new_morph_activity": { "title", "rule", "routine", "footer", "time"?,
+                            "round": [ <round item> x5 ] },   // 3d, v1.6: item 1 is
+                                                              // the worked one
+       // <round item> = { "prompt" (hero, <=3 lines of <=47 chars, `**bold**` ok),
+       //                  "choices"?: [<=3, "word\npart (meaning)", <=24 chars a line],
+       //                  "answer", "why" (bar = answer + why, <=58 chars with chips),
+       //                  "notes" (ANSWER first), "worked"?: true (answer shown, no click),
+       //                  "rule"?/"routine"?/"footer"? per-item overrides }
+       // Legacy single slide (old specs only): "example", "items", "notes",
+       //   "check_title", "check_rule", "check_items", "check_routine", "check_footer", "check_notes"
     "file_name"?: "override only if the user asks",
     "learned_words": { "review": [ { "word", "unfair", "notes" } x2 ],
                         "new": { "word", "unfair", "notes" } },     // "new" omitted Friday
@@ -1449,10 +1553,9 @@ pattern. A differently named spec silently skips those checks. Schema:
                      "focus" } x2 ],
     "grammar": { "header_notes",
                  "i_do":  { "title", "rule", "example", "items": [<=2], "routine", "footer", "notes" },
-                 "we_do": { ... },
-                 "you_do": { ...,                       // fixed-answer You do: same
-                             "check_title"?, "check_rule"?, "check_items"?,  // check
-                             "check_routine"?, "check_footer"?, "check_notes"? } } // slide as 3d
+                 "we_do": { "title", "rule", "round": [ <round item> x1 ] },  // v1.6
+                 "you_do": { "title", "rule", "routine", "footer",
+                             "round": [ <round item> x3 ] } }                 // section 7
   } ]
 }
 ```
@@ -1806,6 +1909,14 @@ your spec against every line before building)
 - A grammar footer that is instruction-shaped noise rather than a tease, stem or
   self-check question. (7)
 
+- A You Do item a student can get right without today's morpheme meaning - plain
+  joining like `hyper + link = ?`. (3d, v1.6)
+- A new week's You Do or grammar We do / You do authored as one crowded slide plus a
+  check slide instead of a round, or a grammar block longer than I do + 1 + 3. (3d, 7)
+- A round item whose answer bar shows before the click, or a worked item that hides its
+  answer. (3d - the builder checks the first)
+- A match-the-meaning bank with no spare word, so the last item is a forced leftover. (3d)
+
 # 10c. STRUCTURED-SLIDE SPACE BUDGET (grammar blocks and the morphology You Do)
 
 `draw_structured_slide` stacks rule banner -> hero example -> item lines from y=1.15
@@ -1840,6 +1951,12 @@ overlaps the one below it. Work the budget out BEFORE writing the spec:
 - Routine chips stay on one line under about 30 characters; footers under about 45.
 - Hero text drops to 20 pt minimum, and the gate rejects a grammar example below that -
   keep heroes under roughly 180 characters.
+- ROUND SLIDES (`draw_round_slide`): rule 0.76, hero 1.10 with chips or 1.62 without,
+  chips 0.82, answer bar what is left above 4.56. Keep a prompt to two lines of 47
+  characters or fewer, a chip line to 24 (`astronomer` / `-er (person who)` fitted;
+  `nom (law) + -er (person)` wrapped to three lines and shrank), and the bar (answer +
+  " - " + why) to about 48 characters so it stays near 18 pt - the audit fails over 58
+  on a slide with chips. Term 4 Week 2 renders confirmed these numbers.
 
 ---
 

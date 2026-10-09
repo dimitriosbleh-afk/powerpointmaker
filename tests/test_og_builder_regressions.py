@@ -6,6 +6,7 @@ Run from the repository root:
 
 import importlib.util
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -492,6 +493,43 @@ class OgBuilderRegressionTests(unittest.TestCase):
             "Write the sum beside each word. Parts: -al (relating to)")
         warnings, _ = self._run_gate(week)
         self.assertEqual(warnings, [])
+
+    def test_round_gloss_counts_only_on_its_own_slide(self):
+        """v1.6 rounds put one item on each slide, so a gloss printed on item 1
+        is not on the face of item 2."""
+        week = self._junct_week([])
+        week["sessions"][0]["new_morph_activity"] = {
+            "rule": "Write the word that fits.",
+            "round": [
+                {"prompt": "A space rock that looks like a star", "answer": "asteroid",
+                 "choices": ["asteroid\n-oid (like)"], "why": "it looks like a star"},
+                {"prompt": "A rock in space", "answer": "asteroid",
+                 "why": "-oid makes it like a star"},
+            ],
+        }
+        warnings, _ = self._run_gate(week)
+        self.assertEqual(len(warnings), 1, warnings)
+        self.assertIn("'-oid'", warnings[0])
+
+    def test_round_decks_hide_each_answer_behind_a_click(self):
+        """Term 4 Week 2 is the first week built on rounds: the gate checks every
+        item's green answer bar is click-revealed, and the worked item is not."""
+        spec = ROOT / "og_planner" / "weeks" / "term4_week2.json"
+        with tempfile.TemporaryDirectory(prefix="og_round_regression_") as temp:
+            decks = self.build_spec(spec, Path(temp))
+            self.assertEqual(len(decks), 4)
+            week = json.loads(spec.read_text(encoding="utf-8"))
+            worked = week["sessions"][0]["new_morph_activity"]["round"][0]
+            self.assertTrue(worked.get("worked"))
+            with zipfile.ZipFile(decks[0]) as archive:
+                texts = {}
+                for name in archive.namelist():
+                    if re.fullmatch(r"ppt/slides/slide\d+\.xml", name):
+                        texts[name] = archive.read(name).decode("utf-8")
+            first = worked["prompt"].splitlines()[0]
+            worked_slides = [x for x in texts.values() if first in x]
+            self.assertEqual(len(worked_slides), 1)
+            self.assertNotIn("<p:timing", worked_slides[0])
 
 
 if __name__ == "__main__":

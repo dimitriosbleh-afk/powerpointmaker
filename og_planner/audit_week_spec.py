@@ -126,12 +126,17 @@ def audit_cards(week):
 def audit_bank(week):
     taught, unconfirmed = taught_timeline()
     for session in week["sessions"]:
+        # a morpheme taught on an earlier day of this week is taught (2c)
+        earlier = set(taught)
+        for prior in week["sessions"][:week["sessions"].index(session)]:
+            if prior.get("type") == "new" and prior.get("new_morphology"):
+                earlier |= og.morph_surface_forms(prior["new_morphology"]["morph"])
         for item in session.get("sound_bank", []):
             forms = og.morph_surface_forms(item["morph"])
-            if forms & unconfirmed and not forms & taught:
+            if forms & unconfirmed and not forms & earlier:
                 issue(f"{session['day']}: sound bank {item['morph']!r} is on the _unconfirmed list in "
                       "taught_morphemes.json - not treated as taught until the teacher confirms")
-            elif not forms & taught:
+            elif not forms & earlier:
                 issue(f"{session['day']}: sound bank {item['morph']!r} is not on the taught timeline")
 
 
@@ -170,17 +175,68 @@ def audit_text_budget(ctx, block, is_check=False):
         issue(f"{ctx}: footer is {len(footer)} characters (keep under 45)")
 
 
+def audit_round(ctx, block):
+    """v1.6 one-question-per-slide rounds (OG_MEGA_PROMPT 3d/7, 10c)."""
+    items = block.get("round", [])
+    for n, item in enumerate(items, 1):
+        where = f"{ctx} round item {n}"
+        rule = item.get("rule", block.get("rule", ""))
+        if 70 <= len(rule) <= 82:
+            check(f"{where}: rule banner is {len(rule)} characters - cut to 69 or fewer")
+        lines = [ln for ln in str(item.get("prompt", "")).split("\n") if ln.strip()]
+        if not lines:
+            issue(f"{where}: no prompt")
+        if len(lines) > 3:
+            issue(f"{where}: prompt has {len(lines)} lines (max 3)")
+        for line in lines:
+            # hero is 7.7" wide and shrinks no further than 20 pt: ~47 characters a line
+            if len(line) > 47:
+                issue(f"{where}: prompt line of {len(line)} characters wraps (keep to 47): {line}")
+        choices = item.get("choices", [])
+        if len(choices) > 3:
+            issue(f"{where}: {len(choices)} choices (max 3)")
+        for choice in choices:
+            for line in str(choice).split("\n"):
+                if len(line) > 24:
+                    issue(f"{where}: choice line of {len(line)} characters will not fit a chip (keep to 24): {line}")
+        answer = item.get("answer", "")
+        if not answer:
+            issue(f"{where}: no answer")
+        bar = len(answer) + (3 + len(item["why"]) if item.get("why") else 0)
+        if bar > 110:
+            issue(f"{where}: answer bar is {bar} characters (keep to 110)")
+        elif bar > 58 and choices:
+            issue(f"{where}: answer bar is {bar} characters on a slide with choices (keep to 58 or it drops to 14 pt)")
+        if not item.get("worked") and not str(item.get("notes", "")).startswith("ANSWER:"):
+            issue(f"{where}: notes must open with the ANSWER line")
+    routine = block.get("round_routine", block.get("routine", ""))
+    footer = block.get("round_footer", block.get("footer", ""))
+    if len(routine) > 30:
+        check(f"{ctx} round: routine chip is {len(routine)} characters (keep under 30)")
+    if len(footer) > 45:
+        issue(f"{ctx} round: footer is {len(footer)} characters (keep under 45)")
+
+
 def audit_slides(week):
     for session in week["sessions"]:
         day = session["day"]
         grammar = session.get("grammar", {})
         for key in ("i_do", "we_do", "you_do"):
             if key in grammar:
-                audit_text_budget(f"{day} grammar {key}", grammar[key])
+                if grammar[key].get("round"):
+                    audit_round(f"{day} grammar {key}", grammar[key])
+                    if grammar[key].get("example"):
+                        audit_text_budget(f"{day} grammar {key} lead", grammar[key])
+                else:
+                    audit_text_budget(f"{day} grammar {key}", grammar[key])
         if grammar.get("you_do", {}).get("check_items"):
             audit_text_budget(f"{day} grammar check slide", grammar["you_do"], is_check=True)
         activity = session.get("new_morph_activity")
-        if activity:
+        if activity and activity.get("round"):
+            audit_round(f"{day} You Do", activity)
+            if activity.get("example"):
+                audit_text_budget(f"{day} You Do lead", activity)
+        elif activity:
             audit_text_budget(f"{day} You Do", activity)
             if activity.get("check_items"):
                 audit_text_budget(f"{day} You Do check slide", activity, is_check=True)

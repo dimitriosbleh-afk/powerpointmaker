@@ -1,0 +1,1780 @@
+{
+ "term": 4,
+ "week": 1,
+ "cohort": "Enrichment",
+ "unit_folder": "OG_Term4_Week1",
+ "days": [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday"
+ ],
+ "taught_morphemes": [
+  "mini-",
+  "super-",
+  "over-",
+  "anti-",
+  "ultra-",
+  "retro-",
+  "em-",
+  "syn-",
+  "sym-/sys-/syl-",
+  "-let",
+  "-ling",
+  "-cian",
+  "-cial/-tial",
+  "-ancy/-ance",
+  "-ency/-ence",
+  "-ity",
+  "-tude",
+  "out-",
+  "self-",
+  "post-",
+  "with-",
+  "counter-",
+  "contra-",
+  "omni-",
+  "intra-",
+  "-eer",
+  "-ant",
+  "-ar",
+  "-ine",
+  "-cy",
+  "-ciate/-tiate",
+  "ped/pod",
+  "rect/reg",
+  "capt/capit",
+  "flect/flex",
+  "ord/ordin",
+  "clud(e)/clus(e)",
+  "mal-",
+  "-ery",
+  "-ice",
+  "-ive",
+  "-ite",
+  "-acy",
+  "-ule",
+  "mega-",
+  "micro",
+  "pict/picto",
+  "vore",
+  "eco",
+  "carn/carni",
+  "junct/join/joint",
+  "vict/vinc",
+  "chron",
+  "mand/mend",
+  "jur/jud/just",
+  "pend/pens",
+  "pon/pound",
+  "caus-/cus(e)"
+ ],
+ "overview": {
+  "Monday": {
+   "morphology": [
+    "New Morphology",
+    "hyper"
+   ],
+   "grammar": "Upgrade nouns: swap the vague noun",
+   "learned_words": [
+    "New learned word",
+    "business"
+   ]
+  },
+  "Tuesday": {
+   "morphology": [
+    "Review Morphology",
+    "hyper"
+   ],
+   "grammar": "Upgrade nouns: pick the noun with power",
+   "learned_words": [
+    "Review learned words",
+    "business, rhythm"
+   ]
+  },
+  "Wednesday": {
+   "morphology": [
+    "New Morphology",
+    "omni-"
+   ],
+   "grammar": "Upgrade nouns: build the noun up",
+   "learned_words": [
+    "New learned word",
+    "scenario"
+   ]
+  },
+  "Thursday": {
+   "morphology": [
+    "Review Morphology",
+    "omni-"
+   ],
+   "grammar": "Upgrade nouns: three ways",
+   "learned_words": [
+    "Review learned words",
+    "scenario, business"
+   ]
+  },
+  "Friday": {
+   "morphology": "No session this week",
+   "grammar": "No session this week",
+   "learned_words": "No session this week"
+  }
+ },
+ "sessions": [
+  {
+   "day": "Monday",
+   "type": "new",
+   "morphology_review": [
+    {
+     "morph": "vict/vinc",
+     "type": "root",
+     "keyword": "convict",
+     "meaning": "conquer"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from pend or pens, meaning hang or pay.",
+      "answers": [
+       "depend",
+       "pendant",
+       "suspend",
+       "expensive"
+      ]
+     }
+    },
+    {
+     "morph": "eco",
+     "type": "root",
+     "keyword": "ecosystem",
+     "meaning": "house"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root",
+     "keyword": "adjure",
+     "meaning": "right, law"
+    },
+    {
+     "morph": "chron",
+     "type": "root",
+     "keyword": "chronology",
+     "meaning": "time",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from chron, meaning time.",
+      "answers": [
+       "chronic",
+       "chronicle",
+       "chronology",
+       "synchronise"
+      ]
+     }
+    },
+    {
+     "morph": "carn/carni",
+     "type": "root",
+     "keyword": "carnivore",
+     "meaning": "flesh, meat"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from caus or cus, meaning cause.",
+      "answers": [
+       "because",
+       "excuse",
+       "accuse",
+       "causing"
+      ]
+     }
+    },
+    {
+     "morph": "junct/join/joint",
+     "type": "root",
+     "keyword": "join",
+     "meaning": "join"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root",
+     "keyword": "command",
+     "meaning": "order, entrust"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "accusation",
+     "pendulum",
+     "victorious",
+     "jury",
+     "causal",
+     "component",
+     "because",
+     "recommend",
+     "excusable",
+     "suspense",
+     "ecosystem",
+     "unexcused",
+     "injustice",
+     "expound",
+     "chronicle"
+    ],
+    "notes": "1. READ: \"Okay, if your birthday is in summer - December, January or February - read row 1.\"\n2. READ: \"Autumn birthdays - March, April or May - read row 2.\"\n3. READ: \"Winter birthdays - June, July or August - read row 3.\"\n4. READ: \"Spring birthdays - September, October or November - read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"caus and cus mean cause. Which five words carry them?\" 5 sec, choral response. EXPECT: accusation, causal, because, excusable, unexcused.\n7. ASK: \"pend and pens mean hang or pay. Which two words carry them?\" 5 sec, turn and tell. EXPECT: pendulum, suspense.\n8. ASK: \"jur, jud and just mean right or law. Which two words carry them?\" 5 sec, choral response. EXPECT: jury, injustice.\n9. ASK: \"Which word names the swinging weight inside an old clock?\" 3 sec, choral response. EXPECT: pendulum.\n10. ASK: \"Which word might you hear in a courtroom when someone is blamed?\" 3 sec, choral response. EXPECT: accusation.\n11. ASK: \"chron means time. Which word names a record of events in time order?\" 3 sec, choral response. EXPECT: chronicle.\n12. ASK: \"What is the opposite of victorious?\" 3 sec, choral response. EXPECT: defeated. ACCEPT: beaten."
+   },
+   "sound_bank": [
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root"
+    },
+    {
+     "morph": "vict/vinc",
+     "type": "root"
+    },
+    {
+     "morph": "post-",
+     "type": "prefix"
+    },
+    {
+     "morph": "-ive",
+     "type": "suffix"
+    },
+    {
+     "morph": "-ence",
+     "type": "suffix"
+    },
+    {
+     "morph": "-ice",
+     "type": "suffix"
+    }
+   ],
+   "words_to_spell_review": [
+    {
+     "word": "cause",
+     "sentence": "The strong wind was the cause of the fallen branch on our oval.",
+     "prompt": "caus is the root on its own here. What question does a cause always answer?",
+     "answer": "The question why. Why did the branch fall? Because the wind caused it."
+    },
+    {
+     "word": "accuse",
+     "sentence": "Please do not accuse your partner before you check the facts.",
+     "prompt": "cus means cause. Where does an accuser point the cause?",
+     "answer": "Straight at another person. To accuse someone is to say they caused the problem."
+    },
+    {
+     "word": "excuse",
+     "sentence": "My excuse for the late library book was that it slid behind the couch.",
+     "prompt": "cus means cause. What job is an excuse trying to do for you?",
+     "answer": "It gives a cause that gets you out of trouble. The ex part means out."
+    },
+    {
+     "word": "causation",
+     "sentence": "Scientists study causation to find out what really makes a disease spread.",
+     "prompt": "caus means cause. So what is the difference between a cause and causation?",
+     "answer": "A cause is the thing itself. Causation is the act of one thing making another happen."
+    },
+    {
+     "word": "expensive",
+     "sentence": "The new scoreboard was too expensive for our school to buy this year.",
+     "prompt": "pens means pay. Which taught ending tells you what the scoreboard is like?",
+     "answer": "The -ive ending, the same one in active. Expensive means it makes you pay out a lot."
+    },
+    {
+     "word": "opponent",
+     "sentence": "Our opponent in the netball final had the tallest goal shooter in the league.",
+     "prompt": "pon means place. Why is opponent a good word for the other team?",
+     "answer": "They are placed against you. The op part means against, so they stand in your way."
+    },
+    {
+     "word": "independence",
+     "sentence": "Year 6 camp gives everyone a taste of independence away from home.",
+     "prompt": "pend means hang. Who are you not hanging on when you show independence?",
+     "answer": "Your parents, or anyone else. You are doing it yourself, not hanging on someone for help."
+    },
+    {
+     "word": "postpone",
+     "sentence": "Rain made us postpone the cross country until next Friday.",
+     "prompt": "Which taught prefix tells you the race moves later, not earlier?",
+     "answer": "post-, meaning after. The race is placed after the date we planned."
+    },
+    {
+     "word": "prejudice",
+     "sentence": "Judging a new student by their shoes is a kind of prejudice.",
+     "prompt": "pre means before. So when does prejudice make its judgement?",
+     "answer": "Before knowing the facts. The judging comes first, and the facts never get a turn."
+    },
+    {
+     "word": "conviction",
+     "sentence": "Mia argued with such conviction that the whole class voted for her plan.",
+     "prompt": "vict means conquer. What did Mia's conviction conquer?",
+     "answer": "Everyone's doubts. She was so sure of her plan that the class was won over."
+    }
+   ],
+   "new_morphology": {
+    "morph": "hyper",
+    "type": "root",
+    "keyword": "hyperactive",
+    "meaning": "over, above"
+   },
+   "words_to_read_new": [
+    {
+     "word": "hyperactive",
+     "meaning": "hyper means over + active: active over and above the usual amount"
+    },
+    {
+     "word": "hypersonic",
+     "meaning": "hyper means above + sonic means to do with sound: above the speed of sound"
+    },
+    {
+     "word": "hypertension",
+     "meaning": "hyper means over + tension means pressure: pressure over the healthy level"
+    },
+    {
+     "word": "hyperbole",
+     "meaning": "hyper means over + bole means throw: words thrown over the top"
+    },
+    {
+     "word": "hyperlink",
+     "meaning": "hyper means over + link: a link that jumps you over to another page"
+    },
+    {
+     "word": "hyperspace",
+     "meaning": "hyper means above + space: a space above and beyond ordinary space"
+    },
+    {
+     "word": "hyperextend",
+     "meaning": "hyper means over + extend means stretch out: to stretch a joint out over its limit"
+    },
+    {
+     "word": "hypermarket",
+     "meaning": "hyper means over + market: a market over the size of a supermarket"
+    },
+    {
+     "word": "hyperfocus",
+     "meaning": "hyper means over + focus: focus over the usual amount"
+    }
+   ],
+   "wtr_new_notes": "SAY: \"Okay, learn hyper once and you can read a whole family of science, tech and sport words, from hypersonic jets to a hyperextended knee.\"\nREAD each word as it appears, then connect hyper to the card meaning: over, above.\nhyperactive - hyper means over + active: active over and above the usual amount. A puppy that never stops.\nhypersonic - hyper means above + sonic means to do with sound: above the speed of sound. At least five times faster.\nhypertension - hyper means over + tension means pressure: pressure over the healthy level. Doctors say it about blood pressure.\nhyperbole - hyper means over + bole means throw: words thrown over the top. I have told you a million times!\nhyperlink - hyper means over + link: a link that jumps you over to another page.\nhyperspace - hyper means above + space: a space above and beyond ordinary space. Science fiction loves it.\nhyperextend - hyper means over + extend means stretch out: to stretch a joint out over its limit. A sport injury.\nhypermarket - hyper means over + market: a market over the size of a supermarket. Super means above, and hyper goes over even that.\nhyperfocus - hyper means over + focus: focus over the usual amount, so you notice nothing else.\nMemory hook: hyper is the high jumper sailing OVER the bar. Swap hyper for 'over the' and read the rest: hyperactive is over the active line. Challenge: find a hyper word in a game, ad or sports report by Thursday.",
+   "words_to_spell_new": [
+    "hyperactive",
+    "hyperlink",
+    "hypertension",
+    "hypermarket"
+   ],
+   "extension": "1. SAY: \"Okay, when you finish, write one sentence that shows what hypertension does to a body.\"\n2. CHECK: the sentence must show the pressure is over the healthy level, not just use the word.\nEXTENSION: Build a three-part hyper word from parts you know, then write its full morpheme sum and its meaning.\nAnswer: e.g. hypertensive = hyper (over) + tense (stretched tight) + -ive (relating to): relating to blood pressure over the healthy level.",
+   "new_morph_activity": {
+    "title": "Build the hyper word",
+    "rule": "Join hyper (over, above) to each word. Write the whole new word.",
+    "example": "One done for you:\nhyper + active = hyperactive",
+    "items": [
+     "1. hyper + link = ?      2. hyper + space = ?",
+     "3. hyper + market = ?      4. hyper + extend + -ed = ?"
+    ],
+    "item_size": 18,
+    "routine": "Whiteboards - 3 min - show me",
+    "footer": "Check: is hyper glued on, no gap?",
+    "notes": "ANSWER: 1 hyperlink, 2 hyperspace, 3 hypermarket, 4 hyperextended.\n1. SAY: \"Okay, look at the finished one first. Hyper plus active is hyperactive, written as one word with no gap.\"\n2. SAY: \"Now join hyper to each word on your whiteboard. Three minutes, then write it... chin it... show me.\"\n3. CIRCULATE: to a stuck student say, \"say hyper out loud, then say the word straight after it. Now write exactly what you just said.\" Then do number 1 together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> build number 4 together on the board, then re-ask.\nTRAP: leaving a gap or a hyphen after hyper. Fix: say hyper is glued on, student rewrites it as one word.\nEXTENSION: Write hypermarket and supermarket in one sentence that shows which store is bigger and why.\nHELP: Give the four answers jumbled; students match each answer to its sum instead of building it.\n---\nPurpose: day one joins today's morpheme to words students already own; hyper is the only part they supply. [You Do | Word building | Morphology]\nANSWERS:\n1. hyper + link = hyperlink\n2. hyper + space = hyperspace\n3. hyper + market = hypermarket\n4. hyper + extend + -ed = hyperextended\nEXTENSION: e.g. The hypermarket is even bigger than the supermarket, because hyper means over and super only means above.",
+    "check_title": "Tick it or fix it - build the hyper word",
+    "check_rule": "Tick each correct word. Fix any word that is different.",
+    "check_items": [
+     "1. hyper + link = hyperlink (jumps over to a page)",
+     "2. hyper + space = hyperspace (above ordinary space)",
+     "3. hyper + market = hypermarket (a giant market)",
+     "4. hyper + extend + -ed = hyperextended (too far)"
+    ],
+    "check_item_size": 18,
+    "check_routine": "Tick - fix - explain",
+    "check_footer": "What does hyper add to each word?",
+    "check_notes": "ANSWER: hyperlink, hyperspace, hypermarket, hyperextended.\n1. MODEL: \"hyper means over, so hyper plus link is hyperlink: a link that jumps you over to another page.\"\n2. SAY: \"Now tick each word that matches the green one. Fix any word that is different, then read it again.\"\n3. ASK: \"Super means above, and a supermarket is already big. So why call a shop a hypermarket?\" 10 sec, turn and tell. EXPECT: it is even bigger - hyper goes over and above a supermarket.\n4. SCAN corrections. 80%+ -> continue. Less -> rebuild number 4 together on the board, then re-check.\nTRAP: ticking hyper extended written as two words. Fix: say hyper is glued on, student rewrites it as one word.\nHELP: read the green answer aloud, then copy it under the wrong one.\n---\nPurpose: protected reveal so every student hears how each hyper word is built. [You Do | Feedback | Morphology]"
+   },
+   "learned_words": {
+    "review": [
+     {
+      "word": "rhythm",
+      "unfair": "y",
+      "notes": "Why learned: the y is the only vowel letter in the word and says a short /i/, and the h behind the r is silent too.\nSay it: RITH-uhm, two beats. Write rhy - thm, then check the h behind the r.\nLink: every poem and every song has a rhythm, so you will write it in English and in music."
+     },
+     {
+      "word": "asthma",
+      "unfair": "th",
+      "notes": "Why learned: the th in the middle says nothing at all, so two letters are silent passengers.\nSay it: AS-muh, two beats. Write as - th - ma in three chunks and leave the th in the middle.\nLink: asthma turns up in every health and PE unit, and on the sport permission notes you take home."
+     }
+    ],
+    "new": {
+     "word": "business",
+     "unfair": "usi",
+     "notes": "Why learned: busi is really busy with its y changed to i, so the u says /i/ just like in busy, and the i makes no sound at all.\nSay it: BIZ-nis, two beats. Write busi - ness and think busy plus ness.\nLink: a business is where people are busy at work. We will use it in maths this term when we plan budgets and work with money.\nYou will write this word whenever you write about shops, jobs or money, and in any argument about a local business."
+    }
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "The leopard at the zoo depends on its keeper for fresh meat.",
+     "targets": [
+      "leopard",
+      "depends"
+     ],
+     "cups": {
+      "capitals": [
+       "The"
+      ],
+      "punctuation": [
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "Term 3 revision: the red word leopard (Week 6) and pend in depends (Week 8)."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "Before the storm, our principal demanded, \"Carry the iron benches inside and empty the gauge!\"",
+     "targets": [
+      "demanded",
+      "iron",
+      "gauge"
+     ],
+     "cups": {
+      "capitals": [
+       "Before",
+       "Carry"
+      ],
+      "punctuation": [
+       "comma after the opening phrase (Before the storm tells when, and the comma shows where it ends)",
+       "comma before the speech (it separates who said it from what they said)",
+       "opening quotation mark (speech starts here, so the first word takes a capital)",
+       "exclamation mark (it shows a strong, urgent command)",
+       "closing quotation mark (speech ends here, after its own punctuation)"
+      ]
+     },
+     "focus": "Term 3 revision: mand in demanded (Week 7) and the red words iron (Week 6) and gauge (Week 7). CUPS is not just for dictation - run the same four checks on your own draft before anyone else reads it."
+    }
+   ],
+   "grammar": {
+    "header_notes": "PURPOSE: Swap vague nouns like stuff, things and people for nouns that name exactly who or what.\nWHY THIS WEEK: students' arguments say things like stuff is bad for animals, so the reader has nothing to picture and no reason to care.\nROUTINE: all grammar this week is written in the OG book. No boards - books, thumbs and voices only.\nPREP: a noun names a person, place or thing. Upgrading swaps a vague noun for an exact one or a stronger one, or builds it into a noun group.",
+    "i_do": {
+     "title": "Swap the vague noun",
+     "rule": "Upgrade a vague noun to one that names exactly who or what.",
+     "example": "Stuff in the yard hurts animals.\nLitter in the yard hurts possums.",
+     "items": [
+      "Vague nouns: stuff, things, people, place.",
+      "Ask: exactly who or what?"
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Tomorrow: a noun with real strength",
+     "notes": "ANSWER: stuff becomes litter and animals becomes possums - both now name exactly what.\n1. SAY: \"Okay, in an argument your reader has to picture the problem. Vague nouns like stuff and things give them nothing to picture.\"\n2. WRITE: copy \"Stuff in the yard hurts animals.\" on the class board. POINT at stuff and ask aloud, exactly what stuff?\n3. WRITE: cross out stuff and write litter above it, then cross out animals and write possums, so the board reads the upgraded sentence.\n4. ASK: \"Which sentence makes you picture the problem? Thumbs up for the second, down for the first, on three.\" 5 sec, voices off. EXPECT: thumbs up - litter and possums name exactly what.\nTRAP: adding describing words but keeping the vague noun, like really bad stuff. Fix: say the noun itself must change, student swaps stuff for litter.\nCLARIFY: if a student asks whether animals is wrong, say it is not wrong, just vague - possums names exactly which animals, so the reader cares more.\n---\nPurpose: day one shows the exact-noun upgrade on one argument sentence. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: a vague noun could mean almost anything (stuff, things, people); an exact noun lets the reader picture it (litter, possums, Year 6 students)."
+    },
+    "we_do": {
+     "title": "Which noun does the job?",
+     "rule": "Pick the sentence whose noun names exactly who or what.",
+     "example": "A) Things in the canteen are unhealthy.\nB) Lollies in the canteen are unhealthy.",
+     "items": [
+      "Thumb up = A is stronger. Thumb down = B is stronger.",
+      "Then: what did B do that A did not?"
+     ],
+     "routine": "Thumbs verdicts - voices off",
+     "footer": "Stem: B is stronger because ...",
+     "notes": "ANSWER: B - lollies names exactly what; things is vague.\n1. SAY: \"Okay, two arguments about the canteen. Read both in your head.\"\n2. ASK: \"Thumb up if A is stronger, thumb down if B is. Voices off, show me on three.\" 5 sec. EXPECT: thumbs down - B.\n3. ASK: \"What did B do that A did not?\" 10 sec, turn and tell, then cold call one pair to say how they know. EXPECT: B names exactly what - lollies, not things.\n4. WRITE: copy A on the class board, cross out Things and write Lollies above it, so the board now matches B.\nTRAP: choosing A because it sounds more grown-up. Fix: ask which one you can picture, student votes again.\nCLARIFY: if a student says canteen is a noun too, say yes, and it is already exact - we only upgrade the vague ones.\n---\nPurpose: guided judgement between a vague and an exact noun. [We Do | Guided practice | Grammar | HITS 7]\nPREP: the test is always the same question - can the reader picture exactly who or what?"
+    },
+    "you_do": {
+     "title": "Upgrade the vague noun",
+     "rule": "Swap each vague noun. Bank: litter, bikes, students, garden",
+     "example": "One done for you:\nStuff on the oval cuts our feet.\n-> Glass on the oval cuts our feet.",
+     "items": [
+      "A) Things vanish from the rack.   B) People want a longer lunch.",
+      "C) The place needs more water.   D) Stuff blocks the drains."
+     ],
+     "item_size": 16,
+     "routine": "OG books - 2 min - pens down",
+     "footer": "Check: can you picture it now?",
+     "notes": "ANSWER: A bikes, B students, C garden, D litter.\n1. SAY: \"Okay, look at the finished one. Stuff was vague, and glass names exactly what cuts our feet.\"\n2. SAY: \"Write A to D in your OG book and rewrite each sentence with the exact noun from the bank. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"ask yourself, exactly what goes missing from a rack at school? Your answer is in the bank.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> do B together on the board, then re-check.\nTRAP: writing the bank word next to the vague noun, like things bikes. Fix: say the exact noun replaces the vague one, student crosses out and rewrites.\nEXTENSION: Write two sentences arguing for a longer lunch with no vague nouns, then swap one exact noun for an even more exact one and explain why it is stronger.\nHELP: Give each sentence with only two choices (bikes or garden) so students choose instead of search.\n---\nPurpose: independent exact-noun swaps with a bank; production is the extension. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) Things vanish from the rack. = Bikes vanish from the rack.\nB) People want a longer lunch. = Students want a longer lunch.\nC) The place needs more water. = The garden needs more water.\nD) Stuff blocks the drains. = Litter blocks the drains.\nEXTENSION: e.g. Year 6 students need a longer lunch. Our footy games end before the second half. More exact: Year 6 netballers - it names who is missing out.",
+     "check_title": "Tick it or fix it - upgrade the vague noun",
+     "check_rule": "Tick each exact noun. Fix any sentence that is different.",
+     "check_items": [
+      "A) Bikes vanish from the rack. (things -> bikes)",
+      "B) Students want a longer lunch. (people -> students)",
+      "C) The garden needs more water. (place -> garden)",
+      "D) Litter blocks the drains. (stuff -> litter)"
+     ],
+     "check_item_size": 18,
+     "check_routine": "Tick - fix - explain",
+     "check_footer": "Editing move: circle stuff and things.",
+     "check_notes": "ANSWER: A bikes, B students, C garden, D litter.\n1. MODEL: \"For A I asked, exactly what vanishes from a rack? A rack holds bikes, so bikes replaces things.\"\n2. SAY: \"Now tick each sentence that matches. Fix any that is different, then read it again.\"\n3. ASK: \"Which of these four upgrades would make the principal act fastest, and why?\" 10 sec, turn and tell. EXPECT: any with a reason, such as D because blocked drains flood the yard.\n4. SCAN corrections. 80%+ -> continue. Less -> redo C together, then re-check.\n5. SAY: \"When you edit your next argument, circle every stuff, things and people, and swap each one for exactly who or what.\"\nTRAP: ticking a sentence that still says things. Fix: say the vague noun must be gone, student rewrites it.\n---\nPurpose: protected reveal that models the exact-noun question and sends it into their own writing. [You Do | Feedback | Grammar | HITS 5]"
+    }
+   }
+  },
+  {
+   "day": "Tuesday",
+   "type": "review",
+   "morphology_review": [
+    {
+     "morph": "mand/mend",
+     "type": "root",
+     "keyword": "command",
+     "meaning": "order, entrust",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from mand or mend, meaning order or entrust.",
+      "answers": [
+       "command",
+       "demand",
+       "mandatory",
+       "recommend"
+      ]
+     }
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root",
+     "keyword": "adjure",
+     "meaning": "right, law"
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from hyper, meaning over or above.",
+      "answers": [
+       "hyperactive",
+       "hypersonic",
+       "hyperlink",
+       "hypertension"
+      ]
+     }
+    },
+    {
+     "morph": "carn/carni",
+     "type": "root",
+     "keyword": "carnivore",
+     "meaning": "flesh, meat"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "junct/join/joint",
+     "type": "root",
+     "keyword": "join",
+     "meaning": "join"
+    },
+    {
+     "morph": "vict/vinc",
+     "type": "root",
+     "keyword": "convict",
+     "meaning": "conquer",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from vict or vinc, meaning conquer.",
+      "answers": [
+       "victory",
+       "convince",
+       "invincible",
+       "evict"
+      ]
+     }
+    },
+    {
+     "morph": "chron",
+     "type": "root",
+     "keyword": "chronology",
+     "meaning": "time"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "accused",
+     "junction",
+     "appendix",
+     "hyperspace",
+     "justify",
+     "invincible",
+     "causality",
+     "proponent",
+     "demanding",
+     "carnivorous",
+     "dispensable",
+     "excused",
+     "hypermarket",
+     "synchronise",
+     "accusing"
+    ],
+    "notes": "1. READ: \"Okay, if your first name starts with A to E, read row 1.\"\n2. READ: \"First names starting with F to J, read row 2.\"\n3. READ: \"First names starting with K to O, read row 3.\"\n4. READ: \"First names starting with P to Z, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"caus and cus mean cause. Which four words carry them?\" 5 sec, choral response. EXPECT: accused, causality, excused, accusing.\n7. ASK: \"hyper means over or above. Which two words carry it?\" 5 sec, choral response. EXPECT: hyperspace, hypermarket.\n8. ASK: \"vict and vinc mean conquer. Which word means nobody can conquer you?\" 5 sec, turn and tell. EXPECT: invincible.\n9. ASK: \"Which word names the meeting point of two roads?\" 3 sec, choral response. EXPECT: junction.\n10. ASK: \"Which word describes a friend who keeps asking for more and more?\" 3 sec, choral response. EXPECT: demanding.\n11. ASK: \"Which word describes an animal that eats meat?\" 3 sec, choral response. EXPECT: carnivorous.\n12. ASK: \"Make proponent plural.\" 3 sec, choral response. EXPECT: proponents."
+   },
+   "sound_bank": [
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root"
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root"
+    },
+    {
+     "morph": "chron",
+     "type": "root"
+    },
+    {
+     "morph": "post-",
+     "type": "prefix"
+    },
+    {
+     "morph": "counter-",
+     "type": "prefix"
+    },
+    {
+     "morph": "-ive",
+     "type": "suffix"
+    }
+   ],
+   "words_to_spell_review": [
+    {
+     "word": "accusation",
+     "sentence": "The referee made an accusation that our team had wasted time.",
+     "prompt": "cus means cause. What is the difference between accuse and an accusation?",
+     "answer": "To accuse is the action. An accusation is the thing you say when you do it - the blame itself."
+    },
+    {
+     "word": "because",
+     "sentence": "We stayed inside at lunch because the oval was flooded.",
+     "prompt": "Which part of because tells you it is about a reason?",
+     "answer": "The cause part. Because always brings in the cause, so the next words explain why."
+    },
+    {
+     "word": "causative",
+     "sentence": "Scientists hunt for the causative germ when a bug spreads through a school.",
+     "prompt": "caus means cause. Which taught ending tells you this germ is like a cause?",
+     "answer": "The -ive ending, meaning relating to, the same one in active. The causative germ is the one doing the causing."
+    },
+    {
+     "word": "pendant",
+     "sentence": "My nan wears a silver pendant shaped like a koala.",
+     "prompt": "pend means hang. Which taught ending tells you a pendant is the thing that hangs?",
+     "answer": "The -ant ending, meaning that which, the same one in assistant. A pendant is that which hangs on a chain."
+    },
+    {
+     "word": "postponement",
+     "sentence": "The postponement of sports day disappointed the whole school.",
+     "prompt": "post- means after. What did the postponement do to sports day?",
+     "answer": "It placed the day after the date we planned. Pon means place, so the whole day was moved later."
+    },
+    {
+     "word": "countermand",
+     "sentence": "The principal will countermand the order to play outside if lightning starts.",
+     "prompt": "mand means order. Which taught prefix tells you the new order goes against the old one?",
+     "answer": "counter-, meaning against, the same one in counterattack. To countermand is to give an order against your own order."
+    },
+    {
+     "word": "justice",
+     "sentence": "Our class debate was about justice for animals kept in tiny cages.",
+     "prompt": "just means right or law. Which taught ending turns it into a state?",
+     "answer": "The -ice ending, the same one in service. Justice is the state of things being right and fair."
+    },
+    {
+     "word": "chronicle",
+     "sentence": "Our class chronicle records every excursion we went on this year.",
+     "prompt": "chron means time. Why does a chronicle need dates?",
+     "answer": "Because it records events in time order. Without dates, the reader cannot follow what came first."
+    },
+    {
+     "word": "hypertension",
+     "sentence": "My grandpa takes a tablet every morning for his hypertension.",
+     "prompt": "Which part of hypertension tells you the pressure is too high?",
+     "answer": "The hyper part, meaning over. The tension in his blood is over the healthy level."
+    },
+    {
+     "word": "hyperextend",
+     "sentence": "Netballers land with bent knees so they do not hyperextend a joint.",
+     "prompt": "Which part tells you the knee goes past the point where it should stop?",
+     "answer": "The hyper part, meaning over. The joint stretches out over its normal limit, and that hurts."
+    }
+   ],
+   "new_morphology": {
+    "morph": "hyper",
+    "type": "root",
+    "keyword": "hyperactive",
+    "meaning": "over, above"
+   },
+   "words_to_read_new": [
+    {
+     "word": "hyperactive",
+     "meaning": "hyper means over + active: active over and above the usual amount"
+    },
+    {
+     "word": "hyperbole",
+     "meaning": "hyper means over + bole means throw: words thrown over the top"
+    },
+    {
+     "word": "hypersonic",
+     "meaning": "hyper means above + sonic means to do with sound: above the speed of sound"
+    },
+    {
+     "word": "hypermobile",
+     "meaning": "hyper means over + mobile means able to move: able to move over the normal range"
+    },
+    {
+     "word": "hyperlinked",
+     "meaning": "hyper means over + link + -ed means already done: already linked over to another page"
+    },
+    {
+     "word": "hyperfocused",
+     "meaning": "hyper means over + focus + -ed: focused over the usual amount"
+    },
+    {
+     "word": "hyperthermia",
+     "meaning": "hyper means over + therm means heat + -ia means a condition: a condition of heat over the safe level"
+    },
+    {
+     "word": "hyperdrive",
+     "meaning": "hyper means above + drive: a drive above light speed in science fiction"
+    },
+    {
+     "word": "hypertensive",
+     "meaning": "hyper means over + tense means stretched tight + -ive means relating to: relating to pressure stretched over the healthy level"
+    }
+   ],
+   "wtr_new_notes": "READ each word as it appears, then connect hyper to the card meaning: over, above.\nhyperactive - hyper means over + active: active over and above the usual amount.\nhyperbole - hyper means over + bole means throw: words thrown over the top. I am so hungry I could eat a horse!\nhypersonic - hyper means above + sonic means to do with sound: above the speed of sound.\nhypermobile - hyper means over + mobile means able to move: able to move over the normal range. Very bendy joints.\nhyperlinked - hyper means over + link + -ed means already done: already linked over to another page.\nhyperfocused - hyper means over + focus + -ed: focused over the usual amount, so the world disappears.\nhyperthermia - hyper means over + therm means heat + -ia means a condition: a condition of heat over the safe level. A danger on a hot sports day.\nhyperdrive - hyper means above + drive: a drive above light speed. A science-fiction spaceship engine.\nhypertensive - hyper means over + tense means stretched tight + -ive means relating to: relating to pressure stretched over the healthy level.\nMemory hook: hyper is the high jumper sailing OVER the bar. Swap hyper for 'over the' and read the rest: hyperactive is over the active line. Challenge: find a hyper word in a game, ad or sports report by Thursday.",
+   "words_to_spell_new": [
+    "hypertensive",
+    "hypermobile",
+    "hyperfocused",
+    "hyperlinked"
+   ],
+   "extension": "1. SAY: \"Okay, when you finish, use two of the spelling words in one sentence that starts with a subordinate clause.\"\n2. REMIND: a subordinate clause starts with a trigger word like when, because or although, and cannot stand alone. A comma follows it at the front.\nEXTENSION: Then move the subordinate clause to the end of the sentence and fix the punctuation.\nAnswer: e.g. When I am hyperfocused on a game, I miss the hyperlinked homework. / I miss the hyperlinked homework when I am hyperfocused on a game.",
+   "new_morph_activity": {
+    "title": "What does the hyper word mean?",
+    "rule": "Write each sum and meaning. Parts: sonic (sound), mobile (moving)",
+    "example": "One done for you:\nhyperactive = hyper + active:\nactive over the usual amount",
+    "items": [
+     "1. hypertension = ?      2. hypersonic = ?",
+     "3. hypermobile = ?      4. hyperfocus = ?"
+    ],
+    "item_size": 18,
+    "routine": "OG books - 3 min - books up",
+    "footer": "Check: does your meaning say over?",
+    "notes": "ANSWER: 1 hyper + tension, 2 hyper + sonic, 3 hyper + mobile, 4 hyper + focus - each meaning uses over or above.\n1. SAY: \"Okay, look at the finished one. Hyperactive splits into hyper and active, and the meaning puts over in front: active over the usual amount.\"\n2. SAY: \"In your OG workbook, write each word, its sum, then its meaning. The meanings of sonic and mobile are in the banner. Three minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"cover hyper with your finger. What word is left? Now say over or above in front of it.\" Then do number 1 together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> do number 2 together on the board, then re-check.\nTRAP: writing over tension as the meaning without saying what is over. Fix: ask what is too high, student writes pressure over the healthy level.\nEXTENSION: Write the full three-part sum for hypertensive and its meaning, then write one sentence that shows the difference between hypertension and hypertensive.\nHELP: Give the four sums already split; students write only the meanings.\n---\nPurpose: review day turns each hyper word back into its parts and a meaning built from them. [You Do | Literal meanings | Morphology]\nANSWERS:\n1. hypertension = hyper + tension: pressure over the healthy level\n2. hypersonic = hyper + sonic: above the speed of sound\n3. hypermobile = hyper + mobile: able to move over the normal range\n4. hyperfocus = hyper + focus: focus over the usual amount\nEXTENSION: hypertensive = hyper (over) + tense (stretched tight) + -ive (relating to): relating to pressure over the healthy level.\ne.g. Hypertension is the condition, and a hypertensive patient is someone who has it.",
+    "check_title": "Tick it or fix it - hyper meanings",
+    "check_rule": "Tick each correct sum and meaning. Fix any that is different.",
+    "check_items": [
+     "1. hypertension = hyper + tension: pressure over the limit",
+     "2. hypersonic = hyper + sonic: above the speed of sound",
+     "3. hypermobile = hyper + mobile: moving over the limit",
+     "4. hyperfocus = hyper + focus: focus over the usual amount"
+    ],
+    "check_item_size": 16,
+    "check_routine": "Tick - fix - explain",
+    "check_footer": "Check: does each meaning say over or above?",
+    "check_notes": "ANSWER: hyper + tension, hyper + sonic, hyper + mobile, hyper + focus.\n1. MODEL: \"For number 1 I covered hyper and found tension, meaning pressure. Then I put over in front: pressure over the healthy level.\"\n2. SAY: \"Now tick each sum and meaning that matches. Your words can differ, but over or above must be there.\"\n3. ASK: \"Super means above, and supersonic is a real word. So which is faster, supersonic or hypersonic?\" 10 sec, turn and tell. EXPECT: hypersonic - hyper goes even further over.\n4. SCAN corrections. 80%+ -> continue. Less -> redo number 3 together, then re-check.\nTRAP: ticking a meaning that never says over or above. Fix: say hyper must show up in the meaning, student adds over.\nHELP: read the green line aloud, then copy it under the wrong one.\n---\nPurpose: protected reveal so every student hears how each meaning is built from its parts. [You Do | Feedback | Morphology]"
+   },
+   "learned_words": {
+    "review": [
+     {
+      "word": "business",
+      "unfair": "usi",
+      "notes": "Why learned: busi is busy with its y changed to i - the u says /i/ and the i is silent.\nSay it: BIZ-nis, two beats. Write busi - ness, then check the silent i is still there.\nLink: busy plus ness, so a business is a place where people are busy at work."
+     },
+     {
+      "word": "rhythm",
+      "unfair": "y",
+      "notes": "Why learned: the y is the only vowel letter in the word and says a short /i/, and the h behind the r is silent too.\nSay it: RITH-uhm, two beats. Write rhy - thm, then check the h behind the r.\nLink: every poem and every song has a rhythm, so you will write it in English and in music."
+     }
+    ]
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "Our class voted to postpone the salmon barbecue until Friday.",
+     "targets": [
+      "postpone",
+      "salmon"
+     ],
+     "cups": {
+      "capitals": [
+       "Our",
+       "Friday"
+      ],
+      "punctuation": [
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "Term 3 revision: pon in postpone (Week 8) and the red word salmon (Week 8). Friday takes a capital because days are names."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "Although the jury listened carefully, the judge said, \"Your verdict must be fair to everyone.\"",
+     "targets": [
+      "jury",
+      "judge"
+     ],
+     "cups": {
+      "capitals": [
+       "Although",
+       "Your"
+      ],
+      "punctuation": [
+       "comma after the opening subordinate clause (the although part cannot stand alone - the comma shows where it ends)",
+       "comma before the speech (it separates who said it from what they said)",
+       "opening quotation mark (speech starts here, so the first word takes a capital)",
+       "full stop (it ends the sentence)",
+       "closing quotation mark (speech ends here, after its own punctuation)"
+      ]
+     },
+     "focus": "Term 3 revision: jur and jud in jury and judge (Week 7). Verdict is an exact, strong noun."
+    }
+   ],
+   "grammar": {
+    "header_notes": "PURPOSE: Choose a noun whose strength fits the facts - strong enough to make the reader care, never over the top.\nWHY THIS WEEK: a weak noun (problem, issue) lets the reader shrug; an over-the-top noun (catastrophe) makes them stop trusting you.\nROUTINE: all grammar this week is written in the OG book. No boards - books, thumbs and voices only.\nPREP: a noun names a person, place or thing. Upgrading swaps a vague noun for an exact one or a stronger one, or builds it into a noun group.",
+    "i_do": {
+     "title": "Pick the noun with power",
+     "rule": "Choose a noun strong enough to show how serious the problem is.",
+     "example": "Litter is a problem for our creek.\nLitter is a threat to our creek.",
+     "items": [
+      "Weak: issue, problem, thing.",
+      "Strong: threat, danger, hazard, disaster."
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Tomorrow: build the noun up",
+     "notes": "ANSWER: threat - it shows the creek could really be harmed; problem only says something is wrong.\n1. SAY: \"Okay, yesterday we swapped vague nouns for exact ones. Today the noun also needs the right strength, so your reader feels how serious it is.\"\n2. WRITE: copy \"Litter is a problem for our creek.\" on the class board. POINT at problem and say, problem could mean anything, even something tiny.\n3. WRITE: cross out problem and write threat above it, then change for to to, so the board reads \"Litter is a threat to our creek.\"\n4. ASK: \"Which sentence makes you want to do something? Thumbs up for the second, down for the first, on three.\" 5 sec, voices off. EXPECT: thumbs up - threat shows the creek could be harmed.\nTRAP: picking the biggest noun every time. Fix: say the noun must fit the facts, student checks it against what really happens.\nCLARIFY: if a student asks why not catastrophe, say too strong becomes hyperbole - over the top - and the reader stops trusting you.\n---\nPurpose: day two restates the exact-noun rule and adds strength that fits the facts. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: nouns come in strengths - a nuisance, a problem, a hazard, a disaster. The right one is the strongest one the facts can back up."
+    },
+    "we_do": {
+     "title": "Too weak or over the top?",
+     "rule": "The noun must fit the facts - not too weak, not over the top.",
+     "example": "Two wrappers on the oval are a disaster.",
+     "items": [
+      "Thumb up = just right. Thumb down = over the top.",
+      "Then: which noun fits two wrappers?"
+     ],
+     "routine": "Thumbs verdicts - voices off",
+     "footer": "Stem: The noun fits because ...",
+     "notes": "ANSWER: over the top - two wrappers are a mess or a nuisance, not a disaster.\n1. SAY: \"Okay, read the sentence in your head. Is disaster the right strength for two wrappers?\"\n2. ASK: \"Thumb up if it is just right, thumb down if it is over the top. Voices off, show me on three.\" 5 sec. EXPECT: thumbs down.\n3. ASK: \"Which noun fits two wrappers better?\" 10 sec, turn and tell, then cold call one pair to say how they know. EXPECT: a mess, because it is small and easy to fix. ACCEPT: nuisance, problem.\n4. WRITE: copy the sentence on the class board, cross out disaster and write mess above it, so it reads \"Two wrappers on the oval are a mess.\"\nTRAP: thinking stronger is always better. Fix: ask what really happens with two wrappers, student picks the noun that matches.\nCLARIFY: any mild noun counts - mess, nuisance, problem - as long as it fits two wrappers.\n---\nPurpose: guided judgement of noun strength against the facts. [We Do | Guided practice | Grammar | HITS 7]\nPREP: an over-the-top noun is hyperbole; it is fine in a joke and a weakness in an argument."
+    },
+    "you_do": {
+     "title": "Fit the noun to the facts",
+     "rule": "Your turn: pick the noun that fits the facts. Write the sentence.",
+     "example": "One done for you:\nA wasp nest by the gate is a (worry / hazard).\n-> hazard: wasps can sting anyone walking by",
+     "items": [
+      "A) snake in class: pest/danger   B) squeaky chair: nuisance/crisis",
+      "C) glass in sandpit: issue/hazard   D) bushfire nearby: mess/emergency"
+     ],
+     "item_size": 15,
+     "routine": "OG books - 2 min - pens down",
+     "footer": "Check: would the facts back it up?",
+     "notes": "ANSWER: A danger, B nuisance, C hazard, D emergency.\n1. SAY: \"Okay, look at the finished one. A wasp nest can hurt someone, so hazard fits the facts and worry is too weak.\"\n2. SAY: \"Write A to D in your OG book. Pick the noun that fits, then write the whole sentence. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"picture it happening. Could someone get hurt? If yes, you need the stronger noun.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> do D together on the board, then re-check.\nTRAP: choosing crisis for the squeaky chair because it sounds exciting. Fix: ask what really happens, student swaps it for nuisance.\nEXTENSION: Write two sentences arguing for a school crossing - one with a noun that is too weak and one that fits - then explain in one line why the second would convince the principal.\nHELP: Read each pair aloud and ask, could someone get hurt? Students point to the answer before they write.\n---\nPurpose: independent choice of noun strength from the facts. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) A snake in class is a (pest / danger). = danger\nB) A squeaky chair is a (nuisance / crisis). = nuisance\nC) Glass in the sandpit is an (issue / hazard). = hazard\nD) A bushfire nearby is a (mess / emergency). = emergency\nEXTENSION: e.g. Cars outside the gate are an issue. / Speeding cars outside the gate are a danger to students. The second names a real risk, so the principal has a reason to act.",
+     "check_title": "Tick it or fix it - fit the noun to the facts",
+     "check_rule": "Tick each noun that fits. Fix any that is too weak or too strong.",
+     "check_items": [
+      "A) danger - a snake can bite someone",
+      "B) nuisance - a squeak annoys, it never hurts",
+      "C) hazard - broken glass can cut a hand",
+      "D) emergency - a fire near town is serious"
+     ],
+     "check_item_size": 20,
+     "check_routine": "Tick - fix - explain",
+     "check_footer": "Editing move: does each noun fit?",
+     "check_notes": "ANSWER: A danger, B nuisance, C hazard, D emergency.\n1. MODEL: \"For A I pictured it. A snake can bite, so someone could get hurt. Pest is too weak, and danger fits.\"\n2. SAY: \"Now tick each noun that matches. Fix any that is too weak or over the top.\"\n3. ASK: \"If the bushfire was already out and far away, which noun would fit then?\" 10 sec, turn and tell. EXPECT: a problem, or no longer an emergency - the facts changed, so the strength changes.\n4. SCAN corrections. 80%+ -> continue. Less -> redo B together, then re-check.\n5. SAY: \"When you edit your next argument, read each strong noun and ask, would the facts back this up? If not, tone it down.\"\nTRAP: ticking crisis for the chair. Fix: say a squeak never hurts anyone, student rewrites nuisance.\n---\nPurpose: protected reveal that models the fit-the-facts test and sends it into their own writing. [You Do | Feedback | Grammar | HITS 5]"
+    }
+   }
+  },
+  {
+   "day": "Wednesday",
+   "type": "new",
+   "morphology_review": [
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay"
+    },
+    {
+     "morph": "vict/vinc",
+     "type": "root",
+     "keyword": "convict",
+     "meaning": "conquer"
+    },
+    {
+     "morph": "junct/join/joint",
+     "type": "root",
+     "keyword": "join",
+     "meaning": "join",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from junct, join or joint, meaning join.",
+      "answers": [
+       "junction",
+       "conjunction",
+       "jointly",
+       "adjoin"
+      ]
+     }
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root",
+     "keyword": "command",
+     "meaning": "order, entrust"
+    },
+    {
+     "morph": "chron",
+     "type": "root",
+     "keyword": "chronology",
+     "meaning": "time"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from pon or pound, meaning place or part.",
+      "answers": [
+       "opponent",
+       "component",
+       "postpone",
+       "compound"
+      ]
+     }
+    },
+    {
+     "morph": "carn/carni",
+     "type": "root",
+     "keyword": "carnivore",
+     "meaning": "flesh, meat"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root",
+     "keyword": "adjure",
+     "meaning": "right, law",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from jur, jud or just, meaning right or law.",
+      "answers": [
+       "judge",
+       "jury",
+       "justice",
+       "injury"
+      ]
+     }
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "prejudge",
+     "suspend",
+     "hyperbole",
+     "causing",
+     "chronometer",
+     "ecology",
+     "excuse",
+     "mandatory",
+     "compound",
+     "accuser",
+     "convict",
+     "hypersonic",
+     "microphone",
+     "ponder",
+     "cause"
+    ],
+    "notes": "1. READ: \"Okay, pick your favourite season in your head. If it is summer, read row 1.\"\n2. READ: \"Autumn lovers, read row 2.\"\n3. READ: \"Winter lovers, read row 3.\"\n4. READ: \"Spring lovers, read row 4. If you cannot choose, pick any row from 1 to 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"hyper means over or above. Which two words carry it?\" 5 sec, choral response. EXPECT: hyperbole, hypersonic.\n7. ASK: \"caus and cus mean cause. Which four words carry them?\" 5 sec, choral response. EXPECT: causing, excuse, accuser, cause.\n8. ASK: \"pon and pound mean place or part. Which two words carry them?\" 5 sec, turn and tell. EXPECT: compound, ponder.\n9. ASK: \"Which word names something you must do, with no choice at all?\" 3 sec, choral response. EXPECT: mandatory.\n10. ASK: \"Which word means to judge someone before you know the facts?\" 3 sec, choral response. EXPECT: prejudge.\n11. ASK: \"Which word might you hear at assembly when the principal speaks to the whole school?\" 3 sec, choral response. EXPECT: microphone.\n12. ASK: \"Which word is an over-the-top statement, like I have told you a million times?\" 3 sec, choral response. EXPECT: hyperbole."
+   },
+   "sound_bank": [
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root"
+    },
+    {
+     "morph": "hyper",
+     "type": "root"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root"
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root"
+    },
+    {
+     "morph": "vict/vinc",
+     "type": "root"
+    },
+    {
+     "morph": "-ive",
+     "type": "suffix"
+    },
+    {
+     "morph": "-ence",
+     "type": "suffix"
+    },
+    {
+     "morph": "-ity",
+     "type": "suffix"
+    }
+   ],
+   "words_to_spell_review": [
+    {
+     "word": "causality",
+     "sentence": "Our science test asked us to explain the causality between rain and floods.",
+     "prompt": "caus means cause. Which taught ending turns cause into a quality an idea can have?",
+     "answer": "The -ity ending, the same one in gravity. Causality is the quality of one thing causing another."
+    },
+    {
+     "word": "accused",
+     "sentence": "The accused player sat on the bench until the umpires finished talking.",
+     "prompt": "cus means cause. Is the accused the one pointing, or the one pointed at?",
+     "answer": "The one pointed at. The -ed shows the blaming has already been done to them."
+    },
+    {
+     "word": "recommend",
+     "sentence": "Our librarian will recommend a new novel for our class to read.",
+     "prompt": "mend means entrust. What is the librarian trusting you with when she recommends a book?",
+     "answer": "Her judgement. She hands you her choice so you can trust it without reading the whole shelf."
+    },
+    {
+     "word": "inexcusable",
+     "sentence": "Leaving rubbish all over the oval after the fete was inexcusable.",
+     "prompt": "in means not. So could anyone let you off for inexcusable behaviour?",
+     "answer": "No. There is no cause good enough to let anyone off for it."
+    },
+    {
+     "word": "appendix",
+     "sentence": "Check the appendix at the back of the atlas for the list of rivers.",
+     "prompt": "pend means hang. Where does an appendix hang in a book?",
+     "answer": "Right on the end, after the main chapters. It is extra information hanging off the back."
+    },
+    {
+     "word": "proponent",
+     "sentence": "Our principal is a big proponent of reading every single day.",
+     "prompt": "pon means place. Where does a proponent place themselves when an idea comes up?",
+     "answer": "Out in front of it, backing it. A proponent puts an idea forward and stands up for it."
+    },
+    {
+     "word": "dependence",
+     "sentence": "Our class is reducing its dependence on plastic lunch wrap.",
+     "prompt": "pend means hang. Which taught ending turns depend into a state?",
+     "answer": "The -ence ending, the same one in existence. Dependence is the state of hanging on something you need."
+    },
+    {
+     "word": "invincible",
+     "sentence": "Our footy team felt invincible after winning ten games in a row.",
+     "prompt": "vinc means conquer. What did the team believe about themselves?",
+     "answer": "That nobody could conquer them. The in- means not, so invincible means not able to be beaten."
+    },
+    {
+     "word": "hypermarket",
+     "sentence": "We drove to the giant hypermarket to buy our camping gear.",
+     "prompt": "Which part of hypermarket tells you it is bigger than a supermarket?",
+     "answer": "The hyper part, meaning over. Super means above, and hyper goes over even that."
+    },
+    {
+     "word": "hyperactive",
+     "sentence": "The puppy was so hyperactive that it ran laps around the classroom.",
+     "prompt": "hyper means over. Which taught ending finishes hyperactive?",
+     "answer": "The -ive ending, the same one in creative. Hyperactive means relating to being active over the limit."
+    }
+   ],
+   "new_morphology": {
+    "morph": "omni-",
+    "type": "prefix",
+    "keyword": "omnibus",
+    "meaning": "all"
+   },
+   "words_to_read_new": [
+    {
+     "word": "omnibus",
+     "meaning": "omni means all + bus: a vehicle for all the people"
+    },
+    {
+     "word": "omnivore",
+     "meaning": "omni means all + vore means eating: eating all kinds of food"
+    },
+    {
+     "word": "omnivores",
+     "meaning": "omni means all + vore means eating + -s means more than one: more than one animal eating all kinds of food"
+    },
+    {
+     "word": "omnipresent",
+     "meaning": "omni means all + present means here: present in all places at once"
+    },
+    {
+     "word": "omnipresence",
+     "meaning": "omni means all + present + -ence means the state of: the state of being here in all places"
+    },
+    {
+     "word": "omnishambles",
+     "meaning": "omni means all + shambles means a mess: a mess in all ways"
+    },
+    {
+     "word": "omnium",
+     "meaning": "omni means all + -um means of: the event of all the races"
+    },
+    {
+     "word": "omniscient",
+     "meaning": "omni means all + sci means know + -ent means being: knowing all"
+    },
+    {
+     "word": "omnipotent",
+     "meaning": "omni means all + pot means power + -ent means being: having all the power"
+    }
+   ],
+   "associated_word_exceptions": [
+    {
+     "word": "omnivore",
+     "reason": "ground 3 - stacks the taught root vore (Term 3 Week 4); the card's omnivorous adds -ous, which is not on the taught timeline",
+     "source": "Oxford Learner's Dictionaries"
+    },
+    {
+     "word": "omnivores",
+     "reason": "ground 1 - the captured card lists only five words; the plural keeps omni and vore visible with a universal inflection",
+     "source": "Oxford Learner's Dictionaries (omnivore, plural omnivores)"
+    },
+    {
+     "word": "omnipresence",
+     "reason": "ground 3 - stacks the taught suffix -ence (Term 1) onto the card's omnipresent",
+     "source": "Oxford Learner's Dictionaries"
+    },
+    {
+     "word": "omnishambles",
+     "reason": "ground 1 - the captured card lists only five words; omni + shambles is fully transparent from an everyday word (a mess in every way)",
+     "source": "Oxford Learner's Dictionaries (informal, Oxford Word of the Year 2012)"
+    },
+    {
+     "word": "omnium",
+     "reason": "ground 1 - the captured card lists only five words; the track cycling event in which riders race all the races, an Olympic event Australians follow",
+     "source": "Oxford Learner's Dictionaries (cycling sense)"
+    }
+   ],
+   "wtr_new_notes": "SAY: \"Okay, some of you may remember omni from earlier in the year. Learn it properly once and you can read words for animals, books, buses and superheroes.\"\nREAD each word as it appears, then connect omni to the card meaning: all.\nomnibus - omni means all + bus: a vehicle for all the people. Our word bus is just the end of omnibus.\nomnivore - omni means all + vore means eating: eating all kinds of food. Plants and meat.\nomnivores - omni means all + vore means eating + -s means more than one: more than one animal eating all kinds of food.\nomnipresent - omni means all + present means here: present in all places at once.\nomnipresence - omni means all + present means here + -ence means the state of: the state of being here in all places at once.\nomnishambles - omni means all + shambles means a mess: a mess in all ways. Everything that could go wrong did.\nomnium - omni means all + -um, a Latin ending meaning of: the event of all the races. Track cyclists race all of them in one day.\nomniscient - omni means all + sci means know + -ent means being: knowing all. A narrator who knows every character's thoughts.\nomnipotent - omni means all + pot means power + -ent means being: having all the power.\nMemory hook: omni is the big umbrella covering EVERYTHING. Say 'all' in its place - if the word still makes sense, omni is doing its job. Challenge: catch omni in an animal fact or a book blurb before next week.",
+   "words_to_spell_new": [
+    "omnibus",
+    "omnivore",
+    "omnipresent",
+    "omnipresence"
+   ],
+   "extension": "1. SAY: \"Okay, when you finish, write what omnipresent means in your own words, using the word all.\"\n2. CHECK: the meaning must say all and name places, not just copy the grid line.\nEXTENSION: Build an omni word with three or more parts from parts you know, write the full sum, then use it in a sentence that proves the meaning.\nAnswer: e.g. omnipresence = omni (all) + present (here) + -ence (state of): the state of being here in all places. The smell of the sausage sizzle had an omnipresence at the fete.",
+   "new_morph_activity": {
+    "title": "Is omni doing its job?",
+    "rule": "Sort: omni (all) words in one list, NOT omni words in the other.",
+    "example": "One done for you:\nomnibus -> omni list (a bus for all)\nomen -> NOT omni (no omni inside)",
+    "items": [
+     "1. omnivore      2. ominous      3. omnishambles",
+     "4. omelette      5. omnipresent      6. omit"
+    ],
+    "item_size": 18,
+    "routine": "Whiteboards - 3 min - show me",
+    "footer": "Check: o-m-n-i, and does all fit?",
+    "notes": "ANSWER: omni list - 1 omnivore, 3 omnishambles, 5 omnipresent. NOT omni - 2 ominous, 4 omelette, 6 omit.\n1. SAY: \"Okay, look at the finished ones. Omnibus has omni inside, meaning all - a bus for all. Omen starts with o-m but has no omni in it.\"\n2. SAY: \"Draw two columns on your whiteboard, omni and NOT omni, and write each word in the right one. Three minutes, then write it... chin it... show me.\"\n3. CIRCULATE: to a stuck student say, \"put your finger under the first four letters and check they spell o-m-n-i. Then ask, does all make sense in this word?\" Then do number 2 together.\n4. SCAN all boards. 80%+ -> reveal the check slide. Less -> spell ominous together letter by letter, then re-ask.\nTRAP: putting ominous in the omni list because it starts with om. Fix: spell its first four letters aloud, student hears o-m-i-n, not o-m-n-i, and moves it.\nEXTENSION: Add two more real omni words of your own to the omni list and write what all means in each one.\nHELP: Give a paper strip with o-m-n-i printed on it; students slide it along each word to test the letters before sorting.\n---\nPurpose: day one checks that omni is really there and really means all, so students stop trusting look-alike starts. [You Do | Sort | Morphology]\nANSWERS:\n1. omnivore = omni list (eats all kinds of food)\n2. ominous = NOT omni (o-m-i-n, no omni)\n3. omnishambles = omni list (a mess in all ways)\n4. omelette = NOT omni (o-m-e, no omni)\n5. omnipresent = omni list (here in all places)\n6. omit = NOT omni (o-m-i-t, no omni)\nEXTENSION: e.g. omniscient - knowing all; omnipotent - having all the power; omnium - the race of all the races.",
+    "check_title": "Tick it or fix it - is omni doing its job?",
+    "check_rule": "Tick each word in the right list. Fix any word in the wrong one.",
+    "check_items": [
+     "Omni list: omnivore - eats all kinds of food",
+     "Omni list: omnishambles - a mess in all ways",
+     "Omni list: omnipresent - here in all places",
+     "NOT omni: ominous, omelette, omit - no o-m-n-i"
+    ],
+    "check_item_size": 19,
+    "check_routine": "Tick - fix - explain",
+    "check_footer": "Letters first, then does all fit?",
+    "check_notes": "ANSWER: omni list - omnivore, omnishambles, omnipresent. NOT omni - ominous, omelette, omit.\n1. MODEL: \"For omnivore I checked the letters first: o-m-n-i. Then I asked, does all fit? It eats all kinds of food, so it goes in the omni list.\"\n2. SAY: \"Now tick each word in the right list. Fix any word that is in the wrong one.\"\n3. ASK: \"Omnivore and omelette are both about food. Why is only one an omni word?\" 10 sec, turn and tell. EXPECT: omnivore has omni, meaning all foods; omelette is just o-m-e.\n4. SCAN corrections. 80%+ -> continue. Less -> test ominous with the letter check together, then re-check.\nTRAP: ticking ominous in the omni list. Fix: spell o-m-i-n aloud, student moves it to NOT omni.\nHELP: read the green line aloud, then copy the word into the right column.\n---\nPurpose: protected reveal that models the two checks - letters, then meaning. [You Do | Feedback | Morphology]"
+   },
+   "learned_words": {
+    "review": [
+     {
+      "word": "business",
+      "unfair": "usi",
+      "notes": "Why learned: busi is busy with its y changed to i - the u says /i/ and the i is silent.\nSay it: BIZ-nis, two beats. Write busi - ness, then check the silent i is still there.\nLink: busy plus ness, so a business is a place where people are busy at work."
+     },
+     {
+      "word": "rhythm",
+      "unfair": "y",
+      "notes": "Why learned: the y is the only vowel letter in the word and says a short /i/, and the h behind the r is silent too.\nSay it: RITH-uhm, two beats. Write rhy - thm, then check the h behind the r.\nLink: every poem and every song has a rhythm, so you will write it in English and in music."
+     }
+    ],
+    "new": {
+     "word": "scenario",
+     "unfair": "sc",
+     "notes": "Why learned: the c after the s is silent, just like in science and scene, and the a says /ah/ because the word came to us from Italian.\nSay it: suh-NAH-ree-oh, four beats. Write sce - nar - i - o, and check the c is still there.\nLink: a scenario is a situation you imagine and think through, so you will meet it in debates and in maths chance problems.\nYou will write this word in your arguments this term: Imagine this scenario... is a strong way to open a paragraph."
+    }
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "Mum bought an expensive vacuum that cleans the stairs by itself.",
+     "targets": [
+      "expensive",
+      "vacuum"
+     ],
+     "cups": {
+      "capitals": [
+       "Mum"
+      ],
+      "punctuation": [
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "Term 3 revision: pens in expensive (Week 8) and the red word vacuum (Week 7)."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "In the debate, Ava sounded convincing when she said, \"Our canteen should recommend refill bottles.\"",
+     "targets": [
+      "convincing",
+      "recommend"
+     ],
+     "cups": {
+      "capitals": [
+       "In",
+       "Ava",
+       "Our"
+      ],
+      "punctuation": [
+       "comma after the opening phrase (In the debate tells where, and the comma shows where it ends)",
+       "comma before the speech (it separates who said it from what they said)",
+       "opening quotation mark (speech starts here, so the first word takes a capital)",
+       "full stop (it ends the sentence)",
+       "closing quotation mark (speech ends here, after its own punctuation)"
+      ]
+     },
+     "focus": "Term 3 revision: vinc in convincing (Week 6) and mend in recommend (Week 7). Ava is a name, so it takes a capital."
+    }
+   ],
+   "grammar": {
+    "header_notes": "PURPOSE: Build an important noun into a noun group - describers before, a detail after - so the reader sees exactly who or what.\nWHY THIS WEEK: one exact noun is good; a built-up noun group lets the reader see the problem and the people it hurts.\nROUTINE: all grammar this week is written in the OG book. No boards - books, thumbs and voices only.\nPREP: a noun group is the noun plus every word that belongs to it. Students met it in Term 3 Week 1 with prepositional phrases.",
+    "i_do": {
+     "title": "Build the noun up",
+     "rule": "Build a noun into a noun group: describers before, detail after.",
+     "example": "Students need shade.\nHot, tired students on the oval need shade.",
+     "items": [
+      "Before the noun: words that describe it.",
+      "After the noun: a where or what-with phrase."
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Tomorrow: all three upgrades at once",
+     "notes": "ANSWER: hot, tired students on the oval - the whole noun group does the arguing.\n1. SAY: \"Okay, an exact noun on its own can still sound flat. Today you build it up, so your reader sees exactly who needs the shade.\"\n2. WRITE: copy \"Students need shade.\" on the class board. POINT at students and say, this is the noun we will build up.\n3. WRITE: add \"Hot, tired\" in front of students and \"on the oval\" after it, then underline the whole group, so the board reads \"Hot, tired students on the oval need shade.\"\n4. SAY: \"Describing words in front, a where phrase after. The whole underlined group is the noun group, and it does the arguing.\"\nTRAP: piling on five describing words. Fix: say two strong ones beat five weak ones, student cuts back to two.\nCLARIFY: if a student asks whether on the oval is a phrase, say yes - it is a prepositional phrase telling where, and here it belongs to students.\n---\nPurpose: day three restates exact and strong nouns and builds one into a noun group. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: a noun group is the noun plus everything that belongs to it: describers before (hot, tired) and a phrase after (on the oval)."
+    },
+    "we_do": {
+     "title": "Find the whole noun group",
+     "rule": "A noun group is the noun plus every word that belongs to it.",
+     "example": "Sticky wrappers from the canteen block our drains.",
+     "items": [
+      "Find the noun first: what blocks the drains?",
+      "Then add every word that belongs to it."
+     ],
+     "routine": "Everyone, together, on three",
+     "footer": "Stem: The noun group is ... because ...",
+     "notes": "ANSWER: Sticky wrappers from the canteen.\n1. SAY: \"Okay, first find the noun. What is blocking our drains?\"\n2. ASK: \"What is the noun? Everyone, together, on three.\" 5 sec. EXPECT: wrappers.\n3. ASK: \"Now say the whole noun group, every word that belongs to wrappers. Everyone, together, on three.\" 10 sec. EXPECT: sticky wrappers from the canteen. Then cold call one student to prove from the canteen belongs.\n4. WRITE: copy the sentence on the class board, underline Sticky wrappers from the canteen, then circle wrappers inside it.\nTRAP: stopping at sticky wrappers. Fix: ask which wrappers, student adds from the canteen.\nCLARIFY: block our drains is not part of it - that is what the wrappers do, so it sits outside the group.\n---\nPurpose: guided spotting of a whole noun group in an argument sentence. [We Do | Guided practice | Grammar | HITS 7]\nPREP: to find the edge of the group, ask which wrappers? Every word that answers it belongs."
+    },
+    "you_do": {
+     "title": "Build the noun group",
+     "rule": "Your turn: build each noun group - describer, noun, then detail.",
+     "example": "One done for you:\nstudents / hot / on the oval\n-> hot students on the oval",
+     "items": [
+      "A) bins / full / near the gate   B) birds / thirsty / in our creek",
+      "C) wrappers / sticky / from lunch   D) seats / broken / at the stop"
+     ],
+     "item_size": 16,
+     "routine": "OG books - 2 min - pens down",
+     "footer": "Check: describer, noun, then detail?",
+     "notes": "ANSWER: A full bins near the gate. B thirsty birds in our creek. C sticky wrappers from lunch. D broken seats at the stop.\n1. SAY: \"Okay, look at the finished one. The describer hot went first, then the noun students, then the detail on the oval.\"\n2. SAY: \"Write A to D in your OG book and build each noun group in that order. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"find the noun first - it is the thing you could draw. Then ask what it is like, and where it is.\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> do B together on the board, then re-check.\nTRAP: putting the detail first, like near the gate full bins. Fix: say the detail comes after the noun, student rewrites it in order.\nEXTENSION: Use two of your noun groups in one argument sentence for a cleaner school, then move a where phrase to the front of the sentence and add the comma it needs.\nHELP: Give the three parts on cut-up strips; students put them in order before writing.\n---\nPurpose: independent noun-group building in a fixed order. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) bins / full / near the gate = full bins near the gate\nB) birds / thirsty / in our creek = thirsty birds in our creek\nC) wrappers / sticky / from lunch = sticky wrappers from lunch\nD) seats / broken / at the stop = broken seats at the stop\nEXTENSION: e.g. Full bins near the gate and sticky wrappers from lunch make our school look neglected. Moved: Near the gate, full bins and sticky wrappers from lunch make our school look neglected.",
+     "check_title": "Tick it or fix it - build the noun group",
+     "check_rule": "Tick each noun group in the right order. Fix any that is jumbled.",
+     "check_items": [
+      "A) full + bins + near the gate",
+      "B) thirsty + birds + in our creek",
+      "C) sticky + wrappers + from lunch",
+      "D) broken + seats + at the stop"
+     ],
+     "check_item_size": 20,
+     "check_routine": "Tick - fix - explain",
+     "check_footer": "Editing move: build up your key noun.",
+     "check_notes": "ANSWER: A full bins near the gate. B thirsty birds in our creek. C sticky wrappers from lunch. D broken seats at the stop.\n1. MODEL: \"For A I found the noun bins - I could draw it. Full tells what it is like, so it goes in front. Near the gate tells where, so it goes after.\"\n2. SAY: \"Now tick each noun group in the right order. Fix any that is jumbled, then read it aloud.\"\n3. ASK: \"Which of these noun groups would make the principal act fastest, and why?\" 10 sec, turn and tell. EXPECT: broken seats at the stop, because someone could get hurt. ACCEPT: any with a reason.\n4. SCAN corrections. 80%+ -> continue. Less -> redo C together, then re-check.\n5. SAY: \"When you edit your next argument, find your most important noun and build it up with one describer and one detail.\"\nTRAP: ticking a group with the detail in front. Fix: say the detail follows the noun, student rewrites it.\n---\nPurpose: protected reveal that models the order and sends noun groups into their own writing. [You Do | Feedback | Grammar | HITS 5]"
+    }
+   }
+  },
+  {
+   "day": "Thursday",
+   "type": "review",
+   "morphology_review": [
+    {
+     "morph": "chron",
+     "type": "root",
+     "keyword": "chronology",
+     "meaning": "time",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from chron, meaning time.",
+      "answers": [
+       "chronic",
+       "chronicle",
+       "chronology",
+       "synchronise"
+      ]
+     }
+    },
+    {
+     "morph": "junct/join/joint",
+     "type": "root",
+     "keyword": "join",
+     "meaning": "join"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from omni, meaning all.",
+      "answers": [
+       "omnivore",
+       "omnibus",
+       "omnipresent",
+       "omniscient"
+      ]
+     }
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root",
+     "keyword": "command",
+     "meaning": "order, entrust"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root",
+     "keyword": "adjure",
+     "meaning": "right, law"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from pend or pens, meaning hang or pay.",
+      "answers": [
+       "depend",
+       "pendant",
+       "suspend",
+       "expensive"
+      ]
+     }
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "vict/vinc",
+     "type": "root",
+     "keyword": "convict",
+     "meaning": "conquer"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "opponent",
+     "hyperlink",
+     "chronicler",
+     "accusatory",
+     "eviction",
+     "jointly",
+     "suspension",
+     "command",
+     "accuse",
+     "hypermobile",
+     "expenditure",
+     "chronic",
+     "judgement",
+     "causation",
+     "conjunction"
+    ],
+    "notes": "1. READ: \"Okay, if you are the oldest child in your family, read row 1.\"\n2. READ: \"Youngest children, read row 2.\"\n3. READ: \"Middle children, read row 3.\"\n4. READ: \"Only children, or anyone not sure, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"hyper means over or above. Which two words carry it?\" 5 sec, choral response. EXPECT: hyperlink, hypermobile.\n7. ASK: \"caus and cus mean cause. Which three words carry them?\" 5 sec, choral response. EXPECT: accusatory, accuse, causation.\n8. ASK: \"junct, join and joint mean join. Which two words carry them?\" 5 sec, turn and tell. EXPECT: jointly, conjunction.\n9. ASK: \"Which word names the money a school pays out over a year?\" 3 sec, choral response. EXPECT: expenditure.\n10. ASK: \"chron means time. Which word describes a cough that goes on for a long time?\" 3 sec, choral response. EXPECT: chronic.\n11. ASK: \"Which word might you hear when a family is forced to leave their house?\" 3 sec, choral response. EXPECT: eviction.\n12. ASK: \"Make opponent plural.\" 3 sec, choral response. EXPECT: opponents."
+   },
+   "sound_bank": [
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root"
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root"
+    },
+    {
+     "morph": "vict/vinc",
+     "type": "root"
+    },
+    {
+     "morph": "junct/join/joint",
+     "type": "root"
+    },
+    {
+     "morph": "hyper",
+     "type": "root"
+    },
+    {
+     "morph": "-ity",
+     "type": "suffix"
+    }
+   ],
+   "words_to_spell_review": [
+    {
+     "word": "accuser",
+     "sentence": "The accuser told the teacher exactly what she had seen at lunch.",
+     "prompt": "-er can mean the person who. So who is the accuser in this story?",
+     "answer": "The person pointing the cause at someone else - the one doing the blaming, not the one being blamed."
+    },
+    {
+     "word": "unexcused",
+     "sentence": "An unexcused absence means the school never got a note from home.",
+     "prompt": "cus means cause. What is missing when an absence is unexcused?",
+     "answer": "A cause the school accepts. The un- means not, so no good reason was given."
+    },
+    {
+     "word": "suspend",
+     "sentence": "The council will suspend the bus service while the bridge is fixed.",
+     "prompt": "pend means hang. How is a suspended bus service like something hanging?",
+     "answer": "It is left hanging, stopped in mid-air until the bridge is ready. It has not ended for good."
+    },
+    {
+     "word": "compound",
+     "sentence": "Salt is a compound made of two different elements joined together.",
+     "prompt": "pound means place or part. Why is compound a good name for salt?",
+     "answer": "Its parts are placed together. Com means together, so two parts sit in one substance."
+    },
+    {
+     "word": "mandatory",
+     "sentence": "Hats are mandatory on the playground in Terms 1 and 4.",
+     "prompt": "mand means order. Who gives the order that makes hats mandatory?",
+     "answer": "The school does. When something is mandatory, it is an order, not a choice."
+    },
+    {
+     "word": "prejudge",
+     "sentence": "Try not to prejudge a new book just by its cover.",
+     "prompt": "pre means before and jud means judge. What goes wrong when you prejudge?",
+     "answer": "You decide before you have the facts, so your judgement is often wrong."
+    },
+    {
+     "word": "invincibility",
+     "sentence": "The superhero lost her invincibility when the villain found her weakness.",
+     "prompt": "vinc means conquer. Which taught ending turns invincible into a quality you have?",
+     "answer": "The -ity ending, the same one in gravity. Invincibility is the quality of being impossible to conquer."
+    },
+    {
+     "word": "conjoin",
+     "sentence": "The two creeks conjoin just below our school bridge.",
+     "prompt": "join means join. Where would you stand to watch the creeks conjoin?",
+     "answer": "At the meeting point just below the bridge, where two creeks become one."
+    },
+    {
+     "word": "hyperdrive",
+     "sentence": "In the movie, the spaceship jumped to hyperdrive and vanished.",
+     "prompt": "Which part of hyperdrive tells you the ship goes beyond normal speed?",
+     "answer": "The hyper part, meaning over or above. A hyperdrive drives a ship above any normal speed."
+    },
+    {
+     "word": "hypersonic",
+     "sentence": "A hypersonic jet could fly from Melbourne to Perth in under an hour.",
+     "prompt": "hyper means above. So above what is a hypersonic jet flying?",
+     "answer": "Above the speed of sound - at least five times faster. Sonic means to do with sound."
+    }
+   ],
+   "new_morphology": {
+    "morph": "omni-",
+    "type": "prefix",
+    "keyword": "omnibus",
+    "meaning": "all"
+   },
+   "words_to_read_new": [
+    {
+     "word": "omnibus",
+     "meaning": "omni means all + bus: transport for all the people"
+    },
+    {
+     "word": "omnibuses",
+     "meaning": "omni means all + bus + -es means more than one: more than one vehicle for all the people"
+    },
+    {
+     "word": "omnivore",
+     "meaning": "omni means all + vore means eating: eating all kinds of food"
+    },
+    {
+     "word": "omnivores",
+     "meaning": "omni means all + vore means eating + -s means more than one: animals eating all kinds of food"
+    },
+    {
+     "word": "omnivorous",
+     "meaning": "omni means all + vore means eating + -ous means full of: full of eating all kinds of food"
+    },
+    {
+     "word": "omnipresence",
+     "meaning": "omni means all + present + -ence means the state of: the state of being here in all places"
+    },
+    {
+     "word": "omnishambles",
+     "meaning": "omni means all + shambles means a mess: a mess in all ways"
+    },
+    {
+     "word": "omnium",
+     "meaning": "omni means all + -um means of: the event of all the races"
+    },
+    {
+     "word": "omniscience",
+     "meaning": "omni means all + sci means know + -ence means the state of: the state of knowing all"
+    }
+   ],
+   "associated_word_exceptions": [
+    {
+     "word": "omnibuses",
+     "reason": "ground 1 - the captured card lists only five words; the plural keeps omni visible with the universal -es",
+     "source": "Oxford Learner's Dictionaries (omnibus, plural omnibuses)"
+    },
+    {
+     "word": "omnivore",
+     "reason": "ground 3 - stacks the taught root vore (Term 3 Week 4)",
+     "source": "Oxford Learner's Dictionaries"
+    },
+    {
+     "word": "omnivores",
+     "reason": "ground 1 - the captured card lists only five words; plural with a universal inflection",
+     "source": "Oxford Learner's Dictionaries"
+    },
+    {
+     "word": "omnipresence",
+     "reason": "ground 3 - stacks the taught suffix -ence (Term 1)",
+     "source": "Oxford Learner's Dictionaries"
+    },
+    {
+     "word": "omnishambles",
+     "reason": "ground 1 - the captured card lists only five words; omni + an everyday word",
+     "source": "Oxford Learner's Dictionaries"
+    },
+    {
+     "word": "omnium",
+     "reason": "ground 1 - the captured card lists only five words; the all-races track cycling event",
+     "source": "Oxford Learner's Dictionaries (cycling sense)"
+    },
+    {
+     "word": "omniscience",
+     "reason": "ground 3 - stacks the taught suffix -ence (Term 1) onto the card's omniscient",
+     "source": "Oxford Learner's Dictionaries"
+    }
+   ],
+   "wtr_new_notes": "READ each word as it appears, then connect omni to the card meaning: all.\nomnibus - omni means all + bus: transport for all the people.\nomnibuses - omni means all + bus + -es means more than one: more than one vehicle for all the people.\nomnivore - omni means all + vore means eating: eating all kinds of food.\nomnivores - omni means all + vore means eating + -s means more than one: animals that eat all kinds of food. Possums, magpies and us.\nomnivorous - omni means all + vore means eating + -ous means full of: full of eating all kinds of food. The e in vore drops before -ous.\nomnipresence - omni means all + present means here + -ence means the state of: the state of being here in all places.\nomnishambles - omni means all + shambles means a mess: a mess in all ways.\nomnium - omni means all + -um, a Latin ending meaning of: the event of all the races.\nomniscience - omni means all + sci means know + -ence means the state of: the state of knowing all. Only the narrator has it.\nMemory hook: omni is the big umbrella covering EVERYTHING. Say 'all' in its place - if the word still makes sense, omni is doing its job. Challenge: catch omni in an animal fact or a book blurb before next week.",
+   "words_to_spell_new": [
+    "omnibuses",
+    "omnivores",
+    "omnishambles",
+    "omnium"
+   ],
+   "extension": "1. SAY: \"Okay, when you finish, turn one spelling word into a question a scientist or a reporter might ask.\"\n2. CHECK: the question must use the word so its meaning is clear.\nEXTENSION: Then ask an omni question about a backyard animal and answer it in a sentence that uses omnivorous and proves the meaning.\nAnswer: e.g. Is a magpie omnivorous? Yes - magpies eat worms, insects, seeds and even scraps of bread, so they eat all kinds of food.",
+   "new_morph_activity": {
+    "title": "Show the omni meaning",
+    "rule": "Write a sentence for each word that SHOWS the meaning all.",
+    "example": "One done for you:\nomnivore: Our dog is an omnivore - he eats\nmeat, carrots and even bread.",
+    "items": [
+     "1. omnipresent      2. omnibus      3. omnishambles"
+    ],
+    "item_size": 20,
+    "routine": "OG books - 4 min - books up",
+    "footer": "Check: where is the all in your sentence?",
+    "notes": "ANSWER: open - each sentence must prove all: in all places, for all the people, wrong in all ways.\n1. SAY: \"Okay, look at the finished one. It does not just use omnivore - meat, carrots and bread prove the dog eats all kinds of food.\"\n2. SAY: \"Write one sentence for each word in your OG workbook. Each sentence must prove the meaning all. Four minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"for omnipresent, think of something you see in every room at school, then name the places you see it.\" Then plan number 1 together.\n4. SCAN four books. Most sentences prove all -> share two aloud. Less -> rewrite number 1 together, then re-check.\nTRAP: a sentence that only uses the word, like The omnibus was big. Fix: ask, where is the all? Student adds the proof.\nEXTENSION: Write one sentence that uses both omnivorous and omnipresent and proves both meanings, then underline the words that carry the proof.\nHELP: Give a starter: \"___ is omnipresent at our school - I see it in ___, ___ and ___.\"\n---\nPurpose: review day moves from reading omni words to using them so the meaning shows. [You Do | Showing sentence | Morphology]\nANSWERS:\n1. omnipresent - e.g. Mrs Lee's whistle is omnipresent at sport: you hear it on the oval, the courts and the track.\n2. omnibus - e.g. The old omnibus carried all the people in town, from bakers to bankers.\n3. omnishambles - e.g. The fete was an omnishambles: the jumping castle popped, the sausages burnt and it rained.\nEXTENSION: e.g. Seagulls are omnivorous and omnipresent at the beach, eating chips, crabs and bread in every spot along the sand."
+   },
+   "learned_words": {
+    "review": [
+     {
+      "word": "scenario",
+      "unfair": "sc",
+      "notes": "Why learned: the c after the s is silent, like in science and scene, and the a says /ah/ from Italian.\nSay it: suh-NAH-ree-oh, four beats. Write sce - nar - i - o and check the silent c.\nLink: Imagine this scenario... opens an argument by making your reader picture the problem."
+     },
+     {
+      "word": "business",
+      "unfair": "usi",
+      "notes": "Why learned: busi is busy with its y changed to i - the u says /i/ and the i is silent.\nSay it: BIZ-nis, two beats. Write busi - ness, then check the silent i is still there.\nLink: busy plus ness, so a business is a place where people are busy at work."
+     }
+    ]
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "Every component of our robot is listed in the class chronicle.",
+     "targets": [
+      "component",
+      "chronicle"
+     ],
+     "cups": {
+      "capitals": [
+       "Every"
+      ],
+      "punctuation": [
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "Term 3 revision: pon in component (Week 8) and chron in chronicle (Week 6)."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "After the siren, our captain said, \"That victory was tough, but every judgement was fair.\"",
+     "targets": [
+      "captain",
+      "victory",
+      "judgement"
+     ],
+     "cups": {
+      "capitals": [
+       "After",
+       "That"
+      ],
+      "punctuation": [
+       "comma after the opening phrase (After the siren tells when, and the comma shows where it ends)",
+       "comma before the speech (it separates who said it from what they said)",
+       "opening quotation mark (speech starts here, so the first word takes a capital)",
+       "comma before but (it joins two complete sentences inside the speech)",
+       "full stop (it ends the sentence)",
+       "closing quotation mark (speech ends here, after its own punctuation)"
+      ]
+     },
+     "focus": "Term 3 revision: vict in victory (Week 6), jud in judgement (Week 7) and capt in captain (Term 2)."
+    }
+   ],
+   "grammar": {
+    "header_notes": "PURPOSE: Use all three noun upgrades in one argument - exact, the right strength, built up.\nWHY THIS WEEK: an argument persuades when the reader can picture the problem and feels how serious it is; this week's three upgrades do exactly that.\nROUTINE: all grammar this week is written in the OG book. No boards - books, thumbs and voices only.\nPREP: a noun names a person, place or thing. Upgrading swaps a vague noun for an exact one or a stronger one, or builds it into a noun group.",
+    "i_do": {
+     "title": "Three ways to upgrade a noun",
+     "rule": "Upgrade nouns three ways: exact, the right strength, built up.",
+     "example": "Stuff by the creek is a problem.\nPlastic bottles by the creek are a hazard.",
+     "items": [
+      "Exact: who or what?   Strength: does it fit the facts?",
+      "Built up: describer, noun, detail."
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Check: which noun still needs work?",
+     "notes": "ANSWER: stuff -> plastic bottles (exact), problem -> hazard (strength), plastic bottles by the creek (built up).\n1. SAY: \"Okay, this week's three upgrades all do one job: they make your reader picture the problem and care about it.\"\n2. WRITE: copy \"Stuff by the creek is a problem.\" on the class board. Cross out stuff, write plastic bottles above it, and say: exact - now we know what.\n3. WRITE: cross out problem and write hazard, change is to are, then underline plastic bottles by the creek, so the board shows all three upgrades.\n4. ASK: \"Which upgrade made the biggest difference?\" 10 sec, turn and tell, then cold call one pair to convince us. EXPECT: any upgrade with a reason, such as plastic bottles, because you can picture it.\nTRAP: forgetting to change is to are once the noun is more than one. Fix: read it aloud, student hears plastic bottles is sounds wrong and fixes it.\nCLARIFY: by the creek was already there - it now belongs to the bigger noun group, so the whole group is plastic bottles by the creek.\n---\nPurpose: day four restates all three upgrades on one argument sentence. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: exact answers who or what, strength answers how serious, and built up adds a describer and a detail around the noun."
+    },
+    "we_do": {
+     "title": "Beat the teacher",
+     "rule": "I upgraded this argument. Catch the nouns I got wrong.",
+     "example": "Things near the canteen bins are a catastrophe.",
+     "items": [
+      "Thumb up = upgraded well. Thumb down = needs work.",
+      "Then: which nouns, and what is wrong?"
+     ],
+     "routine": "Thumbs verdicts - voices off",
+     "footer": "Stem: That noun is wrong because ...",
+     "notes": "ANSWER: thumbs down - things is still vague and catastrophe is over the top.\n1. SAY: \"Okay, I tried to upgrade this argument about the canteen bins. Read it in your head and judge my work.\"\n2. ASK: \"Thumb up if I upgraded it well, thumb down if it still needs work. Voices off, show me on three.\" 5 sec. EXPECT: thumbs down.\n3. ASK: \"Which nouns are wrong, and what is wrong with each?\" 10 sec, turn and tell, then cold call one pair to say how they know. EXPECT: things is vague, catastrophe is over the top.\n4. WRITE: copy the sentence on the class board, cross out Things and write Wasps, cross out catastrophe and write hazard, so it reads \"Wasps near the canteen bins are a hazard.\"\nTRAP: fixing only one noun. Fix: say test every noun with both questions, student finds the second one.\nCLARIFY: other exact nouns count too - flies, seagulls, ants - as long as you can picture them near the bins.\n---\nPurpose: guided error-catching with both tests on one sentence. [We Do | Guided practice | Grammar | HITS 7]\nPREP: near the canteen bins is already a good detail, so the noun group only needs a better noun."
+    },
+    "you_do": {
+     "title": "Name the upgrade",
+     "rule": "Your turn: name each upgrade - exact, strength or built up.",
+     "example": "One done for you:\nkids -> Year 6 students\n= exact (now we know who)",
+     "items": [
+      "A) stuff -> litter      B) a problem -> a hazard",
+      "C) birds -> thirsty birds in our creek      D) people -> parents"
+     ],
+     "item_size": 16,
+     "routine": "OG books - 2 min - pens down",
+     "footer": "Check: did the noun change or grow?",
+     "notes": "ANSWER: A exact. B strength. C built up. D exact.\n1. SAY: \"Okay, look at the finished one. Kids became Year 6 students, so now we know exactly who. That is an exact upgrade.\"\n2. SAY: \"Write A to D in your OG book and name each upgrade: exact, strength or built up. Two minutes, on your own.\"\n3. CIRCULATE: to a stuck student say, \"check three things: the noun changed to tell exactly who or what, the noun got stronger, or words were added around it. Which one happened here?\" Then do A together.\n4. SCAN four books. 80%+ -> reveal the check slide. Less -> do C together on the board, then re-check.\nTRAP: calling C exact because birds stayed birds. Fix: say the noun did not change, words were added around it, student writes built up.\nEXTENSION: Write a three-sentence argument for more shade that uses all three upgrades, then turn one action into a thing word, as in Term 3 nominalisation, so it sounds like a report.\nHELP: Give the three labels as picture cards - magnifying glass, flexed arm, building blocks - and students match one to each of A to D.\n---\nPurpose: independent recognition of the week's three upgrades; production is the extension. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\nA) stuff -> litter = exact\nB) a problem -> a hazard = strength\nC) birds -> thirsty birds in our creek = built up\nD) people -> parents = exact\nEXTENSION: e.g. Hot, tired students on the oval need shade. Sunburn is a real danger at lunchtime. The installation of shade sails would protect everyone.\nExact: students; strength: danger; built up: hot, tired students on the oval; thing word: installation.",
+     "check_title": "Tick it or fix it - name the upgrade",
+     "check_rule": "Tick each correct label. Fix any that is different.",
+     "check_items": [
+      "A) stuff -> litter = exact: now we know what",
+      "B) problem -> hazard = strength: fits the risk",
+      "C) thirsty birds in our creek = built up",
+      "D) people -> parents = exact: now we know who"
+     ],
+     "check_item_size": 20,
+     "check_routine": "Tick - fix - explain",
+     "check_footer": "Editing move: upgrade your key nouns.",
+     "check_notes": "ANSWER: A exact. B strength. C built up. D exact.\n1. MODEL: \"For A I asked, did the noun change to tell us exactly what? Stuff became litter, so that is exact.\"\n2. SAY: \"Now tick each label that matches. Fix any that is different.\"\n3. ASK: \"Pick one of these four and upgrade it one more way. What would you write?\" 10 sec, turn and tell. EXPECT: e.g. worried parents at the gate. ACCEPT: any second upgrade.\n4. SCAN corrections. 80%+ -> continue. Less -> redo C together, then re-check.\n5. SAY: \"Before you hand in your next argument, find your three most important nouns and give each one an upgrade.\"\nTRAP: ticking exact for C. Fix: say the noun birds stayed the same and grew, student rewrites built up.\n---\nPurpose: protected reveal that models the three questions and sends them into their own writing. [You Do | Feedback | Grammar | HITS 5]"
+    }
+   }
+  }
+ ]
+}

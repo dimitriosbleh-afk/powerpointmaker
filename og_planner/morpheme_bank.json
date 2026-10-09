@@ -1021,6 +1021,238 @@
         "Greek ch says /k/ - links to the learned word stomach.",
         "Stacks with taught syn- (synchronise, synchronous). asynchronous (a-) and anachronism (ana-) carry untaught prefixes: teacher supplies their meaning, never ask students for it."
       ]
+    },
+    {
+      "morph": "hyper",
+      "type": "root",
+      "keyword": "hyperactive",
+      "meaning": "over, above",
+      "source": "OG/Morphology USB files/Greek Combining Forms.pdf PDF page 9 (Greek Combining Forms summary table, printed Page 6: 'hyper (over, above)'; derivatives hyperactive, hyperbole, hyperbolic, hypercritical, hyperkinesis, hyperkinetic, hypersensitive, hypersensitivity, hypertension, hyperthyroidism, hyperthyroid, hypertrophy) and PDF pages 123-124 (the hyper worksheet and its answer key, heading 'hyper (over, above)'; words hypersensitive, hypertonic, hypertension, hyperbole, hypercritical, hyperactive, hyperthyroidism, hypertrophic, hyperventilate, hypersonic). Greek combining forms are mapped to root/green by morpheme_meanings.json; keyword selected from the printed family, 2026-10-02",
+      "verified": true,
+      "printed_family": [
+        "hyperactive",
+        "hyperbole",
+        "hyperbolic",
+        "hypercritical",
+        "hypersensitive",
+        "hypertension",
+        "hyperventilate",
+        "hypersonic",
+        "hypertonic",
+        "hypertrophy",
+        "hyperkinetic"
+      ],
+      "taught": {
+        "sessions": [
+          "Term 4 Week 1 Monday (new)",
+          "Term 4 Week 1 Tuesday (review)"
+        ],
+        "grid_words": [
+          "hyperactive",
+          "hypersonic",
+          "hypertension",
+          "hyperbole",
+          "hyperlink",
+          "hyperspace",
+          "hyperextend",
+          "hypermarket",
+          "hyperfocus",
+          "hypermobile",
+          "hyperlinked",
+          "hyperfocused",
+          "hyperthermia",
+          "hyperdrive",
+          "hypertensive"
+        ],
+        "spelling_words": [
+          "hyperactive",
+          "hyperlink",
+          "hypertension",
+          "hypermarket",
+          "hypertensive",
+          "hypermobile",
+          "hyperfocused",
+          "hyperlinked"
+        ],
+        "memory_hook": "hyper is the high jumper sailing OVER the bar. Swap hyper for 'over the' and read the rest of the word. Challenge: catch a hyper word in a game, an ad or a sports report by Thursday."
+      },
+      "associated_words": [
+        "hyperactive",
+        "hyperbole",
+        "hypersonic",
+        "hypertension",
+        "hyperlink",
+        "hyperspace",
+        "hyperextend",
+        "hypermarket",
+        "hyperfocus",
+        "hypermobile",
+        "hyperlinked",
+        "hyperfocused",
+        "hyperthermia",
+        "hyperdrive",
+        "hypertensive"
+      ],
+      "avoid_words": [
+        "hypersensitive (14 letters - grid renders below 27 pt)",
+        "hypercritical (13 letters)",
+        "hyperventilate (14 letters)",
+        "hyperactivity (13 letters)",
+        "hyperthyroidism, hypertrophic, hypertonic (medical, not Grade 5/6)"
+      ],
+      "teaching_notes": [
+        "The printed family is long-word heavy: most printed hyper words pass the 12-letter grid cap only as hyperactive, hyperbole, hypersonic and hypertension, so the rest of the grids are transparent hyper + everyday-word compounds.",
+        "hyper sits one step above super- (taught Term 1, above, beyond): a hypermarket is bigger than a supermarket.",
+        "hyperbole (bole = throw) and hyperthermia (therm = heat) carry untaught parts: teacher supplies their meaning, never ask students for it."
+      ]
+    },
+    {
+      "morph": "astro",
+      "type": "root",
+      "keyword": "astronaut",
+      "meaning": "star",
+      "source": "OG/Morphology USB files/Greek Combining Forms.pdf PDF page 5 (Greek Combining Forms summary table, printed Page 2: 'astro (star)'; derivatives astrodynamics, astrolab, astrology, astronaut, astronomical, astronomy) and PDF pages 37-38 (the astro worksheet and its answer key, heading 'astro (star)'; tasks: read the words, find the meanings of astronomy, astrology and astronomical, name the first astronaut to walk on the Moon). Greek combining forms are mapped to root/green by morpheme_meanings.json; keyword selected from the printed family, 2026-10-09",
+      "verified": true,
+      "printed_family": [
+        "astrodynamics",
+        "astrolabe",
+        "astrology",
+        "astronaut",
+        "astronomical",
+        "astronomy"
+      ],
+      "taught": {
+        "sessions": [
+          "Term 4 Week 2 Monday (new)",
+          "Term 4 Week 2 Tuesday (review)"
+        ],
+        "grid_words": [
+          "astronaut",
+          "astronomy",
+          "astronomer",
+          "astronomical",
+          "astrology",
+          "astrophysics",
+          "asteroid",
+          "asterisk",
+          "astrolabe",
+          "astronauts",
+          "astronomers",
+          "astrologer",
+          "asteroids",
+          "astral",
+          "astronautics"
+        ],
+        "spelling_words": [
+          "astronaut",
+          "astronomy",
+          "asteroid",
+          "asterisk",
+          "astronomical",
+          "astronauts",
+          "asteroids",
+          "astrologer"
+        ],
+        "memory_hook": "Point up at the night sky when you say astro, then swap astro for 'star' and read the rest: astronaut, star sailor. Challenge: catch an astro word in a space book or the news by Tuesday."
+      },
+      "associated_words": [
+        "astronaut",
+        "astronomy",
+        "astronomer",
+        "astronomical",
+        "astrology",
+        "astrologer",
+        "astrophysics",
+        "asteroid",
+        "asterisk",
+        "astrolabe",
+        "astral",
+        "astronautics"
+      ],
+      "avoid_words": [
+        "astrodynamics (13 letters - grid renders below 27 pt)",
+        "astrophysicist (14 letters)",
+        "disaster (dis-aster, bad star: true etymology, but dis- is unconfirmed and the meaning has drifted - teacher story only)"
+      ],
+      "teaching_notes": [
+        "aster (asteroid, asterisk) is astro's twin spelling of the Greek word for star; name it in the script line. A sound bank box labelled astro does not match aster words by substring, so prefer astro-spelled review spelling words.",
+        "Almost every astro word carries an untaught Greek partner part (naut sailor, nomy law, -logy talk, labe taker, -oid like, -isk little): gloss it in every script line and print it on any You Do slide.",
+        "astronomy vs astrology is the trap worth teaching: same star, but one is science and one is a belief.",
+        "You Do used: Which astro word fits? (Mon) and Yes or no - prove it (Tue)."
+      ]
+    },
+    {
+      "morph": "terr",
+      "type": "root",
+      "keyword": "territory",
+      "meaning": "land",
+      "source": "OG/Morphology USB files/Upper Level Latin Scrolls.pdf PDF page 282 (Upper Level Latin Roots master table, printed Page 12: 'terr (land)'; derivatives terrain, terrace, territorial, subterranean, territory, extraterrestrial, terrestrial) and PDF pages 234-235 (the terr worksheet and its answer key, heading 'terr (land)'; task: match terrain, terrace, territory, terrestrial and subterranean to their meanings). The heading is terr, not terra; morpheme_meanings.json's 'earth; land' is the unconfirmed reference wording - the scan prints 'land' only. Keyword selected from the printed family, 2026-10-09",
+      "verified": true,
+      "printed_family": [
+        "terrain",
+        "terrace",
+        "territorial",
+        "subterranean",
+        "territory",
+        "extraterrestrial",
+        "terrestrial"
+      ],
+      "taught": {
+        "sessions": [
+          "Term 4 Week 2 Wednesday (new)",
+          "Term 4 Week 2 Thursday (review)"
+        ],
+        "grid_words": [
+          "terrain",
+          "terrace",
+          "territory",
+          "terrestrial",
+          "terrarium",
+          "terracotta",
+          "terrier",
+          "subterranean",
+          "terraform",
+          "territorial",
+          "territories",
+          "terraced",
+          "terrariums",
+          "terriers"
+        ],
+        "spelling_words": [
+          "terrain",
+          "territory",
+          "terrace",
+          "terrarium",
+          "territorial",
+          "terrestrial",
+          "terraced",
+          "territories"
+        ],
+        "memory_hook": "Stamp your foot when you say terr - the land under your feet. Can't stamp on it? It is a look-alike, like terrible. Challenge: bring one more terr word by Thursday."
+      },
+      "associated_words": [
+        "terrain",
+        "terrace",
+        "territory",
+        "territorial",
+        "terrestrial",
+        "subterranean",
+        "terrarium",
+        "terracotta",
+        "terrier",
+        "terraform"
+      ],
+      "avoid_words": [
+        "extraterrestrial (16 letters - extension or teacher talk only)",
+        "Mediterranean (13 letters; medi + terr, the sea in the middle of the lands - a good extension)",
+        "terrible, terrify, terror, terrific (look-alikes from Latin terrere, to frighten - use them only as look-alikes)",
+        "inter (to bury - collides with the inter- prefix)"
+      ],
+      "teaching_notes": [
+        "The scan's heading is terr, meaning land; morpheme_meanings.json's 'earth; land' is unconfirmed wording. James's request said terra - the card label stays terr.",
+        "terr has the clearest look-alikes in the deck (terrible, terrify, terror, terrific), which made Thursday's Real or look-alike? You Do.",
+        "You Do used: Match the terr word (Wed, the Yoshimoto worksheet task) and Land or look-alike? (Thu)."
+      ]
     }
   ],
   "scope_sequence": {

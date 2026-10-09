@@ -49,6 +49,15 @@
         "borrowed spellings": ["tsunami", "camouflage", "seismograph", "stomach"],
         "letters doing odd jobs": ["tongue", "species", "vacuum", "rhythm"]
       }
+    },
+    "term4": {
+      "_source": "Term 4 week specs og_planner/weeks/term4_week*.json.",
+      "words": [
+        {"word": "business", "week": 1, "unfair": "usi", "say_it": "BIZ-nis", "why": "busi is busy with its y changed to i; the u says /i/ as in busy and the i is silent"},
+        {"word": "scenario", "week": 1, "unfair": "sc", "say_it": "suh-NAH-ree-oh", "why": "the c after the s is silent, as in science and scene; the a says /ah/ from Italian"},
+        {"word": "entrepreneur", "week": 2, "unfair": "eur", "say_it": "ON-truh-pruh-NER", "why": "French: the ending eur says /er/ and entre says /on-truh/; links to business (Week 1)"},
+        {"word": "receipt", "week": 2, "unfair": "p", "say_it": "ruh-SEET", "why": "the p is silent; ei is fair (i before e except after c); the p is heard in reception"}
+      ]
     }
   },
   "grammar": {
@@ -71,6 +80,13 @@
         {"week": 10, "focus": "Whole-term review", "class_language": "Tue prepositional phrases + adverbials; Wed phrase, clause + appositive; Thu simple/compound/complex + trigger word; Fri nominalisation + acronyms (no Monday session)"}
       ],
       "labels_used": "preposition and noun group (Week 1), verb (from Week 4), subordinating conjunction (Weeks 6-7), noun and verb (Week 8). adjective and adverb were never taught as labels - keep them out of questions outside the grammar section (section 2b)."
+    },
+    "term4": {
+      "_source": "Term 4 week specs. class_language is the wording students met - reuse it in later review.",
+      "weeks": [
+        {"week": 1, "focus": "Upgrade nouns within an argument", "class_language": "three upgrades - exact (exactly who or what?), strength (does it fit the facts? too strong is hyperbole), built up into a noun group (describer, noun, detail); Mon exact, Tue strength, Wed noun group, Thu all three"},
+        {"week": 2, "focus": "Upgrade verbs within an argument", "class_language": "three verb upgrades - exact (exactly what happens?), strength (does it fit the facts? too strong is hyperbole), saying verbs (how was it said? warn, insist, agree, admit, show); Mon exact, Tue strength, Wed saying verbs, Thu all three. First week on v1.6 rounds: I do, one We do item, three You do items, answer on the click"}
+      ]
     }
   }
 }

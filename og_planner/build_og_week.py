@@ -880,9 +880,32 @@ def validate_activity_morphemes(day, week, session):
     focus = morph_surface_forms((session.get("new_morphology") or {}).get("morph"))
     taught = taught_morpheme_forms(week, session)
     catalogue = catalogue_morph_forms()
-    face_lines = list(activity_face_lines(activity))
-    face_text = "\n".join(text for _field, text in face_lines)
+    # Each slide is its own face: a gloss counts only on the slide that uses it.
+    faces = [list(activity_face_lines(activity))]
+    for item in activity.get("round", []):
+        faces.append(list(round_face_lines(activity, item)))
     reported = set()
+    for face_lines in faces:
+        _scan_activity_face(day, face_lines, focus, taught, catalogue, reported)
+
+
+def round_face_lines(activity, item):
+    """(field, physical line) printed on one round slide (v1.6)."""
+    for field, text in (("title", activity.get("title", "")),
+                        ("rule", item.get("rule", activity.get("rule", ""))),
+                        ("footer", item.get("footer", activity.get("footer", "")))):
+        for line in str(text or "").splitlines():
+            yield field, line
+    for line in str(item.get("prompt", "")).splitlines():
+        yield "example", line
+    for choice in item.get("choices", []):
+        for line in str(choice).splitlines():
+            yield "items", line
+    yield "check_items", round_answer_text(item).replace("**", "")
+
+
+def _scan_activity_face(day, face_lines, focus, taught, catalogue, reported):
+    face_text = "\n".join(text for _field, text in face_lines)
 
     def glossed(token):
         pattern = r"(?<![A-Za-z])" + re.escape(token) + r"\s*\("
@@ -890,20 +913,21 @@ def validate_activity_morphemes(day, week, session):
 
     def check_part(token, hyphenated):
         key = token.strip("-").lower()
-        if not key or key in reported:
+        if not key:
             return
         forms = morph_surface_forms(key)
         if key in UNIVERSAL_INFLECTIONS or forms & focus:
             return
         if glossed(token):
-            if not forms & taught:
-                reported.add(key)
+            if not forms & taught and ("note", key) not in reported:
+                reported.add(("note", key))
                 note(f"{day}: You Do prints the meaning of {token!r}, which is not "
                      "in this session's taught set - reachable, but a part the "
                      "class has been taught is the first choice (2f)")
             return
-        if hyphenated or forms & taught or forms & catalogue:
-            reported.add(key)
+        if (hyphenated or forms & taught or forms & catalogue) and \
+                ("warn", key) not in reported:
+            reported.add(("warn", key))
             warn(f"{day}: You Do uses morpheme {token!r}, which is not today's "
                  "focus morpheme and has no printed meaning on the slide face. "
                  "Students supply ONE part from memory - today's - so print it "
@@ -1091,12 +1115,15 @@ def set_slide_background(root, hexval):
 
 
 def add_textbox(root, sid, x, y, w, h, lines, size_pt, color=CHARCOAL, bold=False,
-                fill=None, rounded=False, align="ctr", anchor="ctr", italic=False):
+                fill=None, rounded=False, align="ctr", anchor="ctr", italic=False,
+                outline=None):
     """Add a generated text box/card to a slide. `**bold**` markup supported."""
     a, p = NS["a"], NS["p"]
     geom = "roundRect" if rounded else "rect"
     fill_xml = (f'<a:solidFill><a:srgbClr val="{fill}"/></a:solidFill>'
                 if fill else "<a:noFill/>")
+    line_xml = (f'<a:ln w="25400"><a:solidFill><a:srgbClr val="{outline}"/>'
+                f'</a:solidFill></a:ln>' if outline else '<a:ln><a:noFill/></a:ln>')
     paras = []
     for ln in lines:
         runs = ""
@@ -1118,7 +1145,7 @@ def add_textbox(root, sid, x, y, w, h, lines, size_pt, color=CHARCOAL, bold=Fals
         f'<p:spPr><a:xfrm><a:off x="{int(x * 914400)}" y="{int(y * 914400)}"/>'
         f'<a:ext cx="{int(w * 914400)}" cy="{int(h * 914400)}"/></a:xfrm>'
         f'<a:prstGeom prst="{geom}"><a:avLst/></a:prstGeom>{fill_xml}'
-        f'<a:ln><a:noFill/></a:ln></p:spPr>'
+        f'{line_xml}</p:spPr>'
         f'<p:txBody><a:bodyPr anchor="{anchor}" wrap="square" lIns="91440" '
         f'tIns="45720" rIns="91440" bIns="45720"/><a:lstStyle/>{"".join(paras)}'
         f'</p:txBody></p:sp>')
@@ -1684,6 +1711,119 @@ def add_answer_check_slide(d, blk, tidx, accent, tint, ctx,
     return True
 
 
+ROUND_BAR_BOTTOM = 4.56   # the routine chip and footer start at y=4.66
+
+
+def round_answer_text(item):
+    """The green reveal bar: the answer in bold, then its one-line reason."""
+    text = f"**{item.get('answer', '')}**"
+    if item.get("why"):
+        text += " - " + item["why"]
+    return text
+
+
+def draw_round_slide(root, blk, item, accent, tint, ctx):
+    """One question per slide (OG_MEGA_PROMPT 3d/7, v1.6).
+
+    Rule banner / hero item / up to three choice chips / green answer bar /
+    routine chip / footer.  Returns the answer bar's shape id so the caller
+    can hide it behind one click - the reveal IS the tick-it-or-fix-it moment.
+    """
+    sid, y = 90100, 1.15
+    rule = item.get("rule", blk.get("rule"))
+    if rule:
+        rsz = fit_font_block(rule, 8.6, 0.58, 18, min_pt=15)
+        add_textbox(root, sid, 0.5, y, 9.0, 0.64, [rule], rsz,
+                    color="FFFFFF", bold=True, fill=accent, rounded=True)
+        sid += 1
+        y += 0.76
+    choices = [str(c) for c in item.get("choices", [])][:3]
+    hero_h = 1.1 if choices else 1.62
+    lines = [ln.strip() for ln in str(item.get("prompt", "")).split("\n")
+             if ln.strip()] or [""]
+    longest = max(lines, key=len)
+    sz = fit_font_block(longest, 7.7, (hero_h - 0.2) / len(lines), 32,
+                        min_pt=20, char_em=0.58)
+    add_textbox(root, sid, 0.9, y, 8.2, hero_h, lines, sz,
+                fill=tint, rounded=True)
+    sid += 1
+    y += hero_h + 0.1
+    if choices:
+        gap = 0.18
+        cw = (8.2 - gap * (len(choices) - 1)) / len(choices)
+        chip_lines = [[ln.strip() for ln in c.split("\n") if ln.strip()]
+                      for c in choices]
+        longest = max((ln for cl in chip_lines for ln in cl), key=len)
+        rows = max(len(cl) for cl in chip_lines)
+        csz = fit_font_block(longest, cw - 0.2, (0.82 - 0.1) / rows, 20,
+                             min_pt=13, char_em=0.58)
+        for i, cl in enumerate(chip_lines):
+            add_textbox(root, sid, 0.9 + i * (cw + gap), y, cw, 0.82, cl, csz,
+                        bold=True, fill="FFFFFF", outline=accent, rounded=True)
+            sid += 1
+        y += 0.82 + 0.08
+    bar_h = min(0.8, ROUND_BAR_BOTTOM - y)
+    if bar_h < 0.45:
+        warn(f"{ctx}: no room for the answer bar - shorten the prompt or drop a choice")
+        bar_h = 0.45
+    answer = round_answer_text(item)
+    asz = fit_font_block(answer.replace("**", ""), 8.0, bar_h - 0.1, 20,
+                         min_pt=14, char_em=0.58)
+    answer_sid = sid
+    add_textbox(root, sid, 0.9, y, 8.2, bar_h, [answer], asz,
+                color="FFFFFF", fill=ANSWER_GREEN, rounded=True)
+    sid += 1
+    routine = item.get("routine", blk.get("round_routine", blk.get("routine")))
+    if routine:
+        csz = fit_font(routine, 3.55, 15, min_pt=13, char_em=0.58)
+        add_textbox(root, sid, 0.5, 4.66, 3.9, 0.44, [routine], csz,
+                    color="FFFFFF", bold=True, fill=accent, rounded=True)
+        sid += 1
+    footer = item.get("footer", blk.get("round_footer", blk.get("footer")))
+    if footer:
+        add_textbox(root, sid, 4.55, 4.66, 4.95, 0.44, [footer], 14,
+                    align="r", italic=True, color="595959")
+    return answer_sid
+
+
+def insert_timing(root, timing):
+    """Place a <p:timing> block where PresentationML expects it (before extLst)."""
+    old = root.find(q("p:timing"))
+    if old is not None:
+        root.remove(old)
+    ext = root.find(q("p:extLst"))
+    if ext is not None:
+        ext.addprevious(timing)
+    else:
+        root.append(timing)
+
+
+def emit_round(d, blk, tidx, accent, tint, ctx, label):
+    """Emit one slide per `round` item, each answer hidden behind one click.
+
+    An item marked `worked` is the "One done for you" model: same layout,
+    answer visible from the start.
+    """
+    timing_src = etree.fromstring(d.pkg.slide_xml(T["spell_word"])).find(q("p:timing"))
+    for n, item in enumerate(blk.get("round", []), 1):
+        for field in ("prompt", "answer", "notes"):
+            if not str(item.get(field, "")).strip():
+                warn(f"{ctx}: round item {n} has no {field}")
+
+        def fill(root, item=item, n=n):
+            tsp = find_sp(root, SHAPE["gr_title"][tidx])
+            set_text(tsp, label + blk.get("title", ""))
+            bsp = find_sp(root, SHAPE["gr_body"][tidx])
+            set_runs(bsp, [[]])
+            answer_sid = draw_round_slide(root, blk, item, accent, tint,
+                                          f"{ctx} round item {n}")
+            if item.get("worked"):
+                return  # "One done for you": same layout, answer already showing
+            insert_timing(root, copy.deepcopy(timing_src))
+            regen_timing(root, [(answer_sid, None)])
+        d.add(tidx, fill, notes=item.get("notes", ""))
+
+
 def sanitize(s):
     if s is None:
         return s
@@ -2127,14 +2267,23 @@ def build_session(pkg, week, session, out_path):
                 set_runs(bsp, [[]])
                 draw_structured_slide(root, act, MORPH_MAGENTA, MORPH_TINT,
                                       f"{day} new_morph_activity")
-            d.add(act_tidx, fill_act, notes=act.get("notes", ""))
+            if act.get("round"):
+                # v1.6: one item per slide, each answer revealed on its own
+                # click - the reveal replaces the separate check slide. The
+                # optional lead slide carries the "One done for you" model.
+                if act.get("example"):
+                    d.add(act_tidx, fill_act, notes=act.get("notes", ""))
+                emit_round(d, act, act_tidx, MORPH_MAGENTA, MORPH_TINT,
+                           f"{day} new_morph_activity", "You do - ")
+            else:
+                d.add(act_tidx, fill_act, notes=act.get("notes", ""))
 
-            added_check = add_answer_check_slide(
-                d, act, act_tidx, MORPH_MAGENTA, MORPH_TINT,
-                f"{day} new_morph_activity answer check")
-            if has_fixed_answer_notes(act) and not added_check:
-                warn(f"{day}: fixed-answer new_morph_activity needs a duplicate "
-                     "check_items answer slide")
+                added_check = add_answer_check_slide(
+                    d, act, act_tidx, MORPH_MAGENTA, MORPH_TINT,
+                    f"{day} new_morph_activity answer check")
+                if has_fixed_answer_notes(act) and not added_check:
+                    warn(f"{day}: fixed-answer new_morph_activity needs a duplicate "
+                         "check_items answer slide")
 
     # --- learned words
     lw = session["learned_words"]
@@ -2266,6 +2415,13 @@ def build_session(pkg, week, session, out_path):
             set_runs(bsp, [[]])  # clear the body placeholder; we draw instead
             draw_structured_slide(root, blk, GRAMMAR_PURPLE, GRAMMAR_TINT,
                                   f"{day} grammar {key}")
+        if blk.get("round"):
+            # v1.6: one question per slide, answer on click (section 7).
+            if blk.get("example"):
+                d.add(tidx, fill_gr, notes=blk.get("notes", ""))
+            emit_round(d, blk, tidx, GRAMMAR_PURPLE, GRAMMAR_TINT,
+                       f"{day} grammar {key}", label)
+            continue
         d.add(tidx, fill_gr, notes=blk.get("notes", ""))
         if key == "you_do":
             added_check = add_answer_check_slide(
@@ -2615,6 +2771,44 @@ def qa_deck(path, session=None):
                         problems.append(
                             "check-and-fix answers are not all shown in green"
                         )
+
+            # v1.6 rounds: each item slide hides its green answer behind one click.
+            round_blocks = [session.get("new_morph_activity") or {}] + [
+                session.get("grammar", {}).get(key) or {}
+                for key in ("i_do", "we_do", "you_do")
+            ]
+            for blk in round_blocks:
+                for item in blk.get("round", []):
+                    if item.get("worked"):
+                        continue
+                    first = str(item.get("prompt", "")).strip().splitlines()[0].replace("**", "")
+                    answer = str(item.get("answer", "")).strip()
+                    idx = next(
+                        (n for n, slide in enumerate(pres.slides)
+                         if first in slide_text(slide) and answer in slide_text(slide)),
+                        None,
+                    )
+                    if idx is None:
+                        problems.append(f"round item slide not found: {first[:32]}")
+                        continue
+                    bar = next(
+                        (shape for shape in pres.slides[idx].shapes
+                         if shape.has_text_frame
+                         and shape.text.strip().startswith(answer)
+                         and fill_rgb(shape.fill) == ANSWER_GREEN),
+                        None,
+                    )
+                    if bar is None:
+                        problems.append(f"round item has no green answer bar: {first[:32]}")
+                        continue
+                    timing = raw_slide_roots[idx].find(q("p:timing"))
+                    timed = {
+                        target.get("spid")
+                        for target in timing.findall(".//" + q("p:spTgt"))
+                    } if timing is not None else set()
+                    if str(bar.shape_id) not in timed:
+                        problems.append(
+                            f"round answer is visible before the click: {first[:32]}")
 
             # Dictation slides use colour/format as CUPS information, so verify it.
             punctuation = set(",.;:!?\"'“”-")
