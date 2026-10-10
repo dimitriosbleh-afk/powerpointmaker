@@ -226,6 +226,7 @@ Everything in CLAUDE.md's QA section applies unchanged (build gates, markitdown,
 - **Link check.** Every Signbank hyperlink is either a supplied entry link or the search URL pattern with the query matching the English word on the card.
 - **Cue strip check.** Every slide that should carry a cue carries it, in the same position, with the same image. A cue that drifts between slides has failed.
 - **Plan fidelity check.** Re-read the lesson's run sheet against the finished deck: every stage present, in order, minutes in the notes, the anchor restated in its exact words, both decision points present, You Do content different from We Do, the Do Now seated and silent.
+- **Review panel.** After every check above passes, run the review panel on each session (`IMPORTANT/REVIEW_PANEL.md`) and rebuild its agreed changes. Chris's sign choices, the sign-visual hard rules and the Say: lines reproduced verbatim from the unit document are fixed; the panel cannot change them, only raise them with James.
 
 # 10. Request format
 

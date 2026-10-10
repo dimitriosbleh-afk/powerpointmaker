@@ -1614,7 +1614,12 @@ the per-session PPTX in the week folder IS the deliverable (unlike themed lesson
 7. Render each deck to images and INSPECT them (section 10). Fix, rebuild, re-render.
    A contact sheet per deck (three slides across) makes 40 slides a deck quick to scan;
    re-render only the slides you changed after a fix.
-8. Only then report, stating exactly which QA levels ran.
+7b. Run the review panel on every session deck (`IMPORTANT/REVIEW_PANEL.md`): Steve,
+   James and the Team Leader review independently, meet on one change list, and review
+   again after the changes until all three sign off (four rounds at most). Every change
+   goes back through the spec, the audit, the builder and a re-render; the locked
+   catalogues, template and section 10b rules beat any panel finding.
+8. Only then report, stating exactly which QA levels ran and how many panel rounds it took.
 9. RECORD THE WEEK once it is delivered, so the next session does not re-mine it:
    new morphemes -> `taught_morphemes.json`; new learned words (unfair part + Say it)
    and the grammar focus with its class wording -> `teaching_record.json`; the grid,

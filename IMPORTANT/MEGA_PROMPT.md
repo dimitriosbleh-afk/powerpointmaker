@@ -1,16 +1,17 @@
 © 2026 James Hooke. Confidential. Internal use only. Not for redistribution.
 
-# Explicit Teaching Lesson Builder Mega-Prompt v12.12
+# Explicit Teaching Lesson Builder Mega-Prompt v12.13
 ## Foundation to Year 6 | Australian Primary Schools | Visual-First | Editable | Source-Faithful | Cognitive Load Aware | Classroom-Ready | School Feedback Aligned
 
 How to read this document:
 
 - PART A (sections A1 to A9, directly below) is the build order. Follow it top to bottom for every lesson. It names the reference section for each step.
-- PART B (sections 0 to 87) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
+- PART B (sections 0 to 88) is the reference. Consult a section when Part A points to it, or when a request raises something Part A does not cover. Section numbers are stable and are cited throughout the codebase, the teacher notes tags and the build gates, so they are not renumbered.
 - Section 0a is the non-negotiable output gate. A lesson that fails any item there is not finished, whatever else it does well.
 
 Version history (newest first):
 
+- v12.13 (10 October 2026): the review panel (88). Every session ends with Steve (principal), James (teacher) and the Team Leader reviewing it independently, meeting on one change list, the changes rebuilt, and a fresh review, until all three sign off (four rounds at most, then open items go to James).
 - v12.12 (2 October 2026): the Years 5-6 planning team's rules (85) now apply school-wide. Every deck: no bullet points, LI and SC before the launch, no slide question reused on a sheet, every extension task called "Extension" (the notes line too: EXTENSION replaces STRETCH, matching OG). Years 3 to 6 in maths, literacy, science and inquiry: every session gives a main sheet, an Extension and a supported sheet with the standard Your turn steps. New paper and slide diagrams: fraction wall, clock face, unit conversion chart. Unit QA checks a maths week covers all four proficiencies.
 - v12.11 (27 September 2026): worksheets staff want to print (86): a layout engine that fits one or two pages with real working space, six question kinds and a variety rule, work units instead of question counts; natural teacher-note voice checks with a before and after (46), full cue scripts every time, and a 150-word live-zone budget.
 - v12.10 (27 September 2026): the Years 5-6 maths planning team's rules (85), sectioned kid-friendly worksheets, angle and protractor diagrams, and no "lesson" in teacher notes.
@@ -81,9 +82,11 @@ python scripts/pptx_to_images.py output/<folder>/<deck>.pptx   # then inspect ev
 
 Zero ERROR, zero WARN, zero ADVISORY. Then open the images and check what the gate cannot see (59a, 60a, 61a, 62): hero size, representation matches the concept, worked example does not give away the answer, quotes exact, PDF pages clean. Fix the spec and rebuild until a full pass finds nothing. Google Slides or PowerPoint compatibility is a separate check; say plainly whether it was done (60a).
 
+Then run the review panel on the finished session (88) and make its agreed changes through the same build and look loop.
+
 ## A9. Deliver and hand over
 
-Report what was built, where it is, what was checked and what was not (64, 64a, 65). Include the catch-up note for a multi-session unit (80). Multi-session requests deliver one merged deck and one flat Resources folder (68a).
+Report what was built, where it is, what was checked and what was not (64, 64a, 65), and how many review panel rounds it took with what the panel changed (88). Include the catch-up note for a multi-session unit (80). Multi-session requests deliver one merged deck and one flat Resources folder (68a).
 
 ## The pipeline in this codebase
 
@@ -5354,6 +5357,26 @@ From Term 4 2026 the Years 5-6 team applies the planning rules in section 85 to 
 - Vary the question kinds (choice with a reason, sort, table, find and fix someone's sentence, open writing). Proficiency tags are a maths requirement and are optional here.
 - No slide sentence reappears on a sheet word for word: keep the skill, change the sentence.
 - Fun activities (cut and paste, highlighting, a crossword, a poster) sit beside the three sheets as their own page, cards or crossword resource.
+
+# 88. THE REVIEW PANEL: THE FINAL PASS ON EVERY SESSION
+
+No session is finished until a three-person panel has signed it off. This applies to every subject and year level, single sessions and whole units. Run it after the build gates and visual QA pass (A8), on the finished deck and sheets as staff will see them. The full procedure is `IMPORTANT/REVIEW_PANEL.md`; when that file is not available, this section is enough to run it.
+
+The panel:
+- Steve, principal: curriculum fit, the school's rules visibly in place (85-87, VTLM 2.0, HITS), whether he would be comfortable with a parent or DET visitor seeing it, consistency with every other school deck, no extra workload for staff.
+- James, classroom teacher: can it be taught live tomorrow from the notes at a glance, does it fit the time, are printing and materials realistic, is the first question winnable, would the kids be engaged, could a CRT run it.
+- The Team Leader: does it build on the last session and set up the next, do the main sheet, Extension and supported sheet each do their job, are the decision-grade CFU points real decisions, would every teacher in the team deliver it the same way, is earlier school feedback honoured.
+
+Each round:
+1. Each persona reviews alone (separate fresh subagents, or one full written review after another without revising earlier ones). They see the rendered slides, the notes, the rendered sheets and the original request.
+2. Each finding is graded Must fix (wrong, unsafe, breaks a rule, or would stop it working tomorrow), Should fix (clearly better and cheap) or Leave (taste, never acted on), and names the slide or sheet and the change wanted. Each review ends "I'd sign this off as is" or "Not yet".
+3. The panel meets: merge duplicates, settle disagreements (the lead persona for that lens wins unless another shows a rule broken or students harmed), and agree one numbered change list of every Must fix plus the Should fixes two personas support.
+4. Make every change through the spec and rebuild through the gates, then look again at what changed.
+5. Review again with fresh reviewers, who also confirm the last list was done.
+
+The hard rules (this document, CLAUDE.md, the validator) beat any persona; a finding that breaks one is dropped, and a reviewer who thinks a rule is wrong raises it with James instead. Do not invent work: lean is the default. From round 2, a new Must fix must be something the changes broke or a real miss.
+
+The panel signs off when all three say "I'd sign this off as is" and the round produced no Must fix and no agreed Should fix. Stop after round 4 regardless; anything still open goes to James as numbered one-line decisions.
 
 # ===== END OF MEGA-PROMPT. SHIFT CLICK HERE. =====
 

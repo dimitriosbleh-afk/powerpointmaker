@@ -536,6 +536,7 @@ Coverage
 - Write for a teacher opening this on a Tuesday night, not for a reader assessing the plan. Every line either tells him something to do, say, print or decide. Cut anything that only explains why the document is the way it is.
 - The deliverable is a Word document. Build it, every time, without being asked. The Markdown is the intermediate step, not the hand-over. See the Word document section below.
 - Keep it teachable. A teacher reading this ten minutes before class should know what to say, what to hold up, and what students do.
+- Before building the Word document, put every lesson plan past the review panel (`IMPORTANT/REVIEW_PANEL.md`, summarised in MEGA_PROMPT section 88): Steve (principal), James (classroom teacher) and the Team Leader review independently, agree one change list, the Markdown is revised, and they review again until all three sign off, four rounds at most. Report the rounds in one line in the chat, never in the document. If neither file is available, ask for MEGA_PROMPT section 88 rather than inventing the panel.
 
 Output hygiene, because this becomes a Word document
 This document runs to about a hundred pages and he navigates it by the contents list. A heading that fails to render is a lesson he cannot find.

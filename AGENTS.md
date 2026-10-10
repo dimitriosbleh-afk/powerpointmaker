@@ -18,6 +18,8 @@ disagree.
 - **`IMPORTANT/TEACHER_NOTES.md`** - adding notes to an existing deck.
 - **`IMPORTANT/OG_MEGA_PROMPT.md`** - Orton-Gillingham decks, which use a
   separate template-locked pipeline.
+- **`IMPORTANT/REVIEW_PANEL.md`** - the required final pass on every session
+  in every pipeline: three personas review, meet, change, and review again.
 - **`docs/`** - deep reference: theme system, resource system, PptxGenJS API,
   design guide.
 

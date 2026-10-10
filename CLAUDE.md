@@ -435,7 +435,7 @@ When the user requests more than one session in a single ask (a unit, a week, a 
 1. Write one lesson spec per session in `builds/`, in teaching order, and run `build_and_check.js` on each before writing the next. A passing build joins this machine's taught log, which the next lesson's Daily Review draws on (MEGA_PROMPT 83); writing every spec first leaves the log empty when review is chosen.
 2. Write a manifest at `builds/manifests/<unit>.json` listing each lesson's `build_script`, `folder`, and `session` in teaching order, plus `unit_folder` and `unit_pptx_name`. For a term or unit, write it FIRST as the plan: a one-line `focus` per lesson (what it teaches, its critical feature, what its Daily Review revisits) and a unit `anchor` (MEGA_PROMPT 84). The merge ignores these keys. Manifest format is documented in `scripts/merge_unit.py` and `docs/resource-system.md`.
 3. Run `python scripts/build_unit.py builds/manifests/<unit>.json --skip-build` (the lessons were built in step 1; drop `--skip-build` to rebuild them all). It merges the decks and resources into `output/<unit_folder>/<unit_pptx_name>` + `output/<unit_folder>/Resources/<flat PDFs>`, then runs merged unit QA via `qa_unit.js --skip-build --skip-merge`.
-4. The task is not "done" for a multi-session request until the combined unit folder exists. Do not claim completion after building per-lesson folders only.
+4. The task is not "done" for a multi-session request until the combined unit folder exists and the review panel (`IMPORTANT/REVIEW_PANEL.md`) has signed off the merged unit. Do not claim completion after building per-lesson folders only.
 5. For a single-session request, the per-lesson folder IS the deliverable — no merge needed.
 
 If you fix one lesson later, rebuild just that lesson with `build_and_check.js`, then re-run `build_unit.py ... --skip-build` to re-merge and re-run merged unit QA without rebuilding the rest.
@@ -477,7 +477,8 @@ First render is almost never correct. After every build:
 5. Final visual and compatibility QA in Google Slides - import the `.pptx` and inspect title, content, reveal, subject-specific, closing, and resource slides.
 6. Fix issues, re-verify affected slides. One fix often creates another problem.
 7. Repeat until a full pass reveals no new issues.
-8. Clean up optional preview images: `python scripts/pptx_to_images.py --clean`
+8. **Review panel (required, every session, every pipeline).** Once the gates and visual QA pass, Steve (principal), James (teacher) and the Team Leader review the session independently, meet, agree one change list, the changes are made and rebuilt, and they review again until all three sign off (maximum four rounds, then open items go to James as decisions). Follow `IMPORTANT/REVIEW_PANEL.md`. This applies to literacy, numeracy, science, inquiry, wellbeing, OG and Auslan alike; a session is not finished until the panel has signed off or its open items are reported.
+9. Clean up optional preview images: `python scripts/pptx_to_images.py --clean`
 
 Do not say "QA passed" unless the Google Slides compatibility pass in step 5 is complete. Do not treat a passing gate script or local visual inspection as delivery-ready. If only the gate script ran, state that automated gates passed and visual review is still pending. If local visual QA ran but not Google Slides, state that local QA passed and Google Slides review is still pending.
 
