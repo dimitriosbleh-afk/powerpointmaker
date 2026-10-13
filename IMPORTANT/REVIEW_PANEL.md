@@ -30,7 +30,7 @@ Each persona reviews the whole session, but leads on their own lens. A finding o
 - Feedback already given by the school (MEGA_PROMPT 68, 85-87, OG_MEGA_PROMPT 10b, AUSLAN_PENDING_FROM_CHRIS.md) is honoured, not reintroduced.
 
 **In the other pipelines** the lenses stay the same, judged against that pipeline's own prompt:
-- OG: James reviews as the teacher running the Enrichment morphology session; the Team Leader checks the week against the taught-morpheme history and the dictation-from-2-3-weeks-ago rule; nobody may propose changes to the locked template, the captured card catalogues or the type colours (OG_MEGA_PROMPT).
+- OG: James reviews as the teacher running the Enrichment morphology session; the Team Leader checks the week against the taught-morpheme history and the v1.7 dictation rule (this week's teaching plus one throwback); nobody may propose changes to the locked template, the captured card catalogues or the type colours (OG_MEGA_PROMPT).
 - Auslan: James reviews as the teacher running it in a signing room (voices off, cue strip, signing routines); Chris's sign choices and the sign-visual hard rules are fixed (AUSLAN_2_SLIDES_PROMPT section 3); the Team Leader checks the decks against the unit document's run sheets and the evidence plan.
 
 ## 2. What the panel sees

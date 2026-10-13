@@ -531,6 +531,108 @@ class OgBuilderRegressionTests(unittest.TestCase):
             self.assertEqual(len(worked_slides), 1)
             self.assertNotIn("<p:timing", worked_slides[0])
 
+    # ------------------------------------------------ v1.7 five-day shape
+    V17_SPEC = ROOT / "og_planner" / "weeks" / "term4_week3.json"
+
+    def _slide_xml(self, deck):
+        with zipfile.ZipFile(deck) as archive:
+            names = sorted(
+                (n for n in archive.namelist()
+                 if re.fullmatch(r"ppt/slides/slide\d+\.xml", n)),
+                key=lambda n: int(re.search(r"(\d+)\.xml", n).group(1)))
+            return [archive.read(n).decode("utf-8") for n in names]
+
+    def test_v17_week_builds_one_deck_per_day_type(self):
+        """Kate Watt (Oct 2026): one morpheme a week, each day only its own blocks."""
+        with tempfile.TemporaryDirectory(prefix="og_v17_regression_") as temp:
+            decks = self.build_spec(self.V17_SPEC, Path(temp))
+            names = [d.name for d in decks]
+            self.assertEqual(names, [
+                "1. Monday (port).pptx", "2. Tuesday (port spelling).pptx",
+                "3. Wednesday (port building).pptx", "4. Thursday (parts of speech).pptx",
+                "5. Friday (week review).pptx"])
+            monday, tuesday, wednesday, thursday, friday = (
+                "\n".join(self._slide_xml(d)) for d in decks)
+            # Monday teaches: no dictation, spelling or grammar
+            self.assertNotIn("Write this sentence", monday)
+            self.assertNotIn("Spell the word", monday)
+            self.assertIn("Your keyword and one sentence", monday)
+            # Tuesday: no card drill, but a dictated bank and dictation
+            self.assertNotIn("Morphology Review", tuesday)
+            self.assertIn("Write this sentence", tuesday)
+            # Wednesday: build and break only
+            self.assertIn("Build and Break", wednesday)
+            self.assertNotIn("Write this sentence", wednesday)
+            # Thursday: parts of speech and the week's one grammar block
+            self.assertIn("Suffix Parts of Speech", thursday)
+            self.assertIn("I do - ", thursday)
+            self.assertNotIn("I do - ", friday.split("Trickiest")[0])
+            self.assertIn("Trickiest this week?", friday)
+
+            # The dictated sound bank reveals every box on a click.
+            bank = next(x for x in self._slide_xml(decks[1]) if "Write the sound" in x)
+            self.assertIn("<p:timing", bank)
+            self.assertEqual(bank.count("<p:spTgt"), 9)
+            # Parts-of-speech cards hide the answer behind a click.
+            pos = [x for x in self._slide_xml(decks[3]) if ">noun<" in x or ">adjective<" in x]
+            self.assertTrue(pos)
+            self.assertTrue(all("<p:timing" in x for x in pos))
+            # COPS replaced CUPS school-wide.
+            with zipfile.ZipFile(decks[1]) as archive:
+                notes = "".join(archive.read(n).decode("utf-8") for n in archive.namelist()
+                                if n.startswith("ppt/notesSlides/notesSlide"))
+            self.assertIn("Mark with COPS", notes)
+            self.assertIn("O - Organisation", notes)
+            self.assertNotIn("CUPS", notes)
+
+    def _v17_week(self, targets, new_lw="economy"):
+        teach = {"day": "Monday", "type": "teach",
+                 "new_morphology": {"morph": "port", "type": "root"},
+                 "words_to_read_new": [{"word": "transport"}, {"word": "export"}]}
+        spell = {"day": "Tuesday", "type": "spell",
+                 "learned_words": {"new": {"word": new_lw}, "review": []},
+                 "dictation": [{"meter": "green", "sentence": "x", "targets": targets}]}
+        return {"term": 9, "week": 9, "sessions": [teach, spell]}
+
+    def test_v17_dictation_must_carry_this_weeks_teaching(self):
+        """Yoshimoto's planning slide: dictation must prioritise what was introduced."""
+        week = self._v17_week(["captain", "salmon"])
+        OG.WARNINGS.clear()
+        OG.NOTES.clear()
+        OG.validate_dictation_sources("Tuesday", week, week["sessions"][1])
+        self.assertTrue(any("this week's teaching" in w for w in OG.WARNINGS), OG.WARNINGS)
+
+    def test_v17_dictation_wants_a_throwback(self):
+        """All-this-week targets build, with a NOTE asking for one older word."""
+        week = self._v17_week(["transported", "economy"])
+        OG.WARNINGS.clear()
+        OG.NOTES.clear()
+        OG.validate_dictation_sources("Tuesday", week, week["sessions"][1])
+        self.assertEqual(OG.WARNINGS, [])
+        self.assertTrue(any("week or two back" in n for n in OG.NOTES), OG.NOTES)
+        week = self._v17_week(["export", "entrepreneur"])
+        OG.WARNINGS.clear()
+        OG.NOTES.clear()
+        OG.validate_dictation_sources("Tuesday", week, week["sessions"][1])
+        self.assertEqual((OG.WARNINGS, OG.NOTES), ([], []))
+
+    def test_v17_bank_may_carry_mondays_morpheme_but_not_a_later_one(self):
+        """The bank is dictated in v1.7, so Monday's morpheme is retrieval on
+        Tuesday; a morpheme taught later in the week is still fatal."""
+        teach = {"day": "Monday", "type": "teach",
+                 "new_morphology": {"morph": "port", "type": "root"}}
+        spell = {"day": "Tuesday", "type": "spell",
+                 "sound_bank": [{"morph": "port", "type": "root"},
+                                {"morph": "tract", "type": "root"}],
+                 "words_to_spell_review": [{"word": "transport"}, {"word": "tractor"}]}
+        later = {"day": "Thursday", "type": "teach",
+                 "new_morphology": {"morph": "tract", "type": "root"}}
+        week = {"sessions": [teach, spell, later]}
+        OG.WARNINGS.clear()
+        OG.validate_sound_bank("Tuesday", spell, week)
+        self.assertEqual(len(OG.WARNINGS), 1, OG.WARNINGS)
+        self.assertIn("'tract'", OG.WARNINGS[0])
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

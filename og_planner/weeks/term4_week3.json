@@ -1,0 +1,974 @@
+{
+ "term": 4,
+ "week": 3,
+ "cohort": "Enrichment",
+ "unit_folder": "OG_Term4_Week3",
+ "days": [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday"
+ ],
+ "taught_morphemes": [
+  "mini-",
+  "super-",
+  "over-",
+  "anti-",
+  "ultra-",
+  "retro-",
+  "em-",
+  "syn-",
+  "sym-/sys-/syl-",
+  "-let",
+  "-ling",
+  "-cian",
+  "-cial/-tial",
+  "-ancy/-ance",
+  "-ency/-ence",
+  "-ity",
+  "-tude",
+  "out-",
+  "self-",
+  "post-",
+  "with-",
+  "counter-",
+  "contra-",
+  "omni-",
+  "intra-",
+  "-eer",
+  "-ant",
+  "-ar",
+  "-ine",
+  "-cy",
+  "-ciate/-tiate",
+  "ped/pod",
+  "rect/reg",
+  "capt/capit",
+  "flect/flex",
+  "ord/ordin",
+  "clud(e)/clus(e)",
+  "mal-",
+  "-ery",
+  "-ice",
+  "-ive",
+  "-ite",
+  "-acy",
+  "-ule",
+  "mega-",
+  "micro",
+  "pict/picto",
+  "vore",
+  "eco",
+  "carn/carni",
+  "junct/join/joint",
+  "vict/vinc",
+  "chron",
+  "mand/mend",
+  "jur/jud/just",
+  "pend/pens",
+  "pon/pound",
+  "caus-/cus(e)",
+  "hyper",
+  "omni-",
+  "astro",
+  "terr"
+ ],
+ "overview": {
+  "Monday": {
+   "morphology": [
+    "New Morphology",
+    "port"
+   ],
+   "grammar": "Not today",
+   "learned_words": "Not today"
+  },
+  "Tuesday": {
+   "morphology": [
+    "Spell and dictate",
+    "port"
+   ],
+   "grammar": "Not today",
+   "learned_words": [
+    "New learned word",
+    "debt"
+   ]
+  },
+  "Wednesday": {
+   "morphology": [
+    "Build and break",
+    "port"
+   ],
+   "grammar": "Not today",
+   "learned_words": "Not today"
+  },
+  "Thursday": {
+   "morphology": [
+    "Parts of speech",
+    "suffix cards"
+   ],
+   "grammar": "Link it: however, on the other hand, therefore, for example",
+   "learned_words": [
+    "New learned word",
+    "cheque"
+   ]
+  },
+  "Friday": {
+   "morphology": [
+    "Week Review",
+    "port"
+   ],
+   "grammar": "Not today",
+   "learned_words": [
+    "Review learned words",
+    "cheque, debt, entrepreneur"
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "day": "Monday",
+   "type": "teach",
+   "morphology_review": [
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay"
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from terr, meaning land.",
+      "answers": [
+       "terrain",
+       "territory",
+       "terrace",
+       "subterranean"
+      ]
+     }
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root",
+     "keyword": "command",
+     "meaning": "order, entrust"
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from astro, meaning star.",
+      "answers": [
+       "astronaut",
+       "astronomy",
+       "asteroid",
+       "astrophysics"
+      ]
+     }
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "chron",
+     "type": "root",
+     "keyword": "chronology",
+     "meaning": "time",
+     "extra_task": {
+      "prompt": "Okay, give me one chron word, meaning time.",
+      "answers": [
+       "chronic",
+       "chronicle",
+       "synchronise"
+      ]
+     }
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root",
+     "keyword": "adjure",
+     "meaning": "right, law"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "astronomer",
+     "terrain",
+     "hypersonic",
+     "causation",
+     "subterranean",
+     "omniscient",
+     "astrology",
+     "proponent",
+     "territorial",
+     "unexcused",
+     "asteroids",
+     "hyperfocus",
+     "terracotta",
+     "suspension",
+     "astronautics"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"Summer and autumn birthdays, read rows 1 and 2.\"\n3. READ: \"Winter and spring birthdays, read rows 3 and 4.\"\n4. READ: \"Everyone, read row 5.\"\n5. ASK: \"astro and its twin aster mean star. Which four words carry them?\" 5 sec, choral response. EXPECT: astronomer, astrology, asteroids, astronautics.\n6. ASK: \"terr means land. Which word means under the ground?\" 3 sec, choral response. EXPECT: subterranean.\n7. ASK: \"hyper means over. Which word means five times faster than sound, or more?\" 3 sec, choral response. EXPECT: hypersonic.\n8. ASK: \"terracotta means cooked earth. Why is that a good name for a clay pot?\" 10 sec, turn and tell. EXPECT: clay is earth, and the pot is baked hard in a kiln.\n9. ASK: \"astronomy and astrology both carry astro. Which one is a science?\" 5 sec, choral response. EXPECT: astronomy.\n10. ASK: \"What is the opposite of unexcused?\" 3 sec, choral response. EXPECT: excused."
+   },
+   "new_morphology": {
+    "morph": "port",
+    "type": "root",
+    "keyword": "export",
+    "meaning": "bring, carry"
+   },
+   "brainstorm": "\"What words do you already know with port in them?\" 20 sec, turn and tell, then cold call four pairs.\nEXPECT: transport, report, support, export.\nCLARIFY: if airport or passport comes up, say port means harbour there - a cousin of carry, the place ships carry goods to.",
+   "words_to_read_new": [
+    {
+     "word": "portable",
+     "meaning": "port means carry + -able means able to: able to be carried"
+    },
+    {
+     "word": "porter",
+     "meaning": "port means carry + -er means a person who: a person who carries"
+    },
+    {
+     "word": "export",
+     "meaning": "ex- means out + port means carry: to carry out"
+    },
+    {
+     "word": "import",
+     "meaning": "im- means in + port means carry: to carry in"
+    },
+    {
+     "word": "report",
+     "meaning": "re- means back + port means carry: to carry back"
+    },
+    {
+     "word": "support",
+     "meaning": "sup- means under + port means carry: to carry from underneath"
+    },
+    {
+     "word": "transport",
+     "meaning": "trans- means across + port means carry: to carry across"
+    },
+    {
+     "word": "reporter",
+     "meaning": "re- means back + port means carry + -er means a person who: a person who carries news back"
+    },
+    {
+     "word": "supportive",
+     "meaning": "sup- means under + port means carry + -ive means relating to: holding others up"
+    }
+   ],
+   "associated_word_exceptions": [
+    {
+     "word": "porter",
+     "reason": "Ground 3: port + -er is the most transparent word in the family (a person who carries) and makes the memory hook concrete; the card list has no -er person word except reporter.",
+     "source": "Macquarie Dictionary: porter, a person employed to carry luggage."
+    }
+   ],
+   "wtr_new_notes": "SAY: \"Okay, learn port once and you can read a whole family of words about carrying things, from transport to reporter.\"\nREAD each word as it appears, talk about what it means, then connect port to the card meaning: carry.\nportable - PORT means carry + -able means able to: able to be carried. A portable speaker goes anywhere.\nporter - PORT means carry + -er means a person who: a person who carries. Porters carry bags at hotels and train stations.\nexport - ex- means out + PORT means carry: to carry out. Australia exports wheat to other countries.\nimport - im- means in + PORT means carry: to carry in. Most of our phones are imported.\nreport - re- means back + PORT means carry: to carry back. A report carries the news back to us.\nsupport - sup- means under + PORT means carry: to carry from underneath. Tent poles support the tent.\ntransport - trans- means across + PORT means carry: to carry across. Trucks transport food across the country.\nreporter - re- means back + PORT means carry + -er means a person who: a person who carries the news back.\nsupportive - sup- means under + PORT means carry + -ive means relating to: holding others up. A supportive friend carries you through a hard day.\nMemory hook: picture a porter carrying your bag. See port, picture the carrying, then ask where it goes - in, out, across, back or from underneath.",
+   "keyword_sentence": {
+    "title": "Your keyword and one sentence",
+    "rule": "Pick the port word that helps YOU remember carry. Write it, star it.",
+    "example": "Card keyword: export (carry out)\nMine: porter (a person who carries)",
+    "items": [
+     "Then write ONE sentence with a port word that shows the carrying."
+    ],
+    "routine": "OG books - 3 mins",
+    "footer": "Check: can you see the carrying?",
+    "notes": "1. SAY: \"The card keyword is export, carry out. It works because you can see both parts, ex for out and port for carry.\"\n2. SAY: \"Now pick the port word that helps YOU remember carry. You can keep export. Write it at the bottom of the page and star it.\"\n3. SAY: \"Then write one sentence with a port word. Make the sentence show the carrying.\" TIME: 3 min, then cold call two students to read theirs aloud.\nEXTENSION: Write one sentence with three port words that have different prefixes, so a reader can see the carrying go in, out and across.\nHELP: give a stem, \"The porter carried...\" or \"Trucks transport...\", and let them finish it.\n---\nPurpose: Yoshimoto's keyword and sentence steps - each student owns a memory hook for port. [You Do | Keyword and sentence | Morphology]\nANSWERS: open - e.g. Mine: porter. The porter carried our bags up to the room. EXTENSION: e.g. Trucks transport wheat to the docks to be exported, and the phones we import come back the same way."
+   }
+  },
+  {
+   "day": "Tuesday",
+   "type": "spell",
+   "recap": {
+    "morph": "port",
+    "type": "root",
+    "keyword": "export",
+    "meaning": "bring, carry",
+    "notes": "1. CHORAL: \"Everyone, together, on three: port means...\" EXPECT: port means carry.\n2. ASK: \"Give me a port word and tell me what it means.\" 10 sec, turn and tell, then cold call two students. EXPECT: transport, to carry across; report, to carry back.\n3. SAY: \"Keep carry in your head. Every port word today is carrying something somewhere.\""
+   },
+   "sound_bank": [
+    {
+     "morph": "astro",
+     "type": "root"
+    },
+    {
+     "morph": "terr",
+     "type": "root"
+    },
+    {
+     "morph": "port",
+     "type": "root"
+    },
+    {
+     "morph": "hyper",
+     "type": "root"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root"
+    },
+    {
+     "morph": "-ive",
+     "type": "suffix"
+    },
+    {
+     "morph": "ph",
+     "type": "sound",
+     "say": "/f/ as in phone"
+    }
+   ],
+   "words_to_spell_review": [
+    {
+     "word": "astrophysics",
+     "sentence": "My cousin studies astrophysics because she wants to know how stars burn.",
+     "prompt": "physics is the science of energy. Which part tells you it is about stars?",
+     "answer": "The astro part, meaning star. It is the physics of the stars."
+    },
+    {
+     "word": "terrier",
+     "sentence": "Our neighbour's terrier digs holes all over their back lawn.",
+     "prompt": "Terriers were bred to chase animals into burrows. Which part fits that?",
+     "answer": "The terr part, meaning land. A terrier is an earth dog that digs into the ground."
+    },
+    {
+     "word": "hyperbole",
+     "sentence": "Saying the homework took a million years is hyperbole, not the truth.",
+     "prompt": "Which part tells you the claim goes over the top?",
+     "answer": "The hyper part, meaning over. Hyperbole throws the words over and above the truth."
+    },
+    {
+     "word": "excusable",
+     "sentence": "Being late is excusable if the bus breaks down on the way to school.",
+     "prompt": "Which part tells you there is a reason behind it?",
+     "answer": "The cus part, meaning cause. There is a good cause, so we can excuse it."
+    },
+    {
+     "word": "proponent",
+     "sentence": "Our class captain was the main proponent of a longer lunchtime.",
+     "prompt": "Which part tells you the proponent places an idea in front of people?",
+     "answer": "The pon part, meaning place. A proponent places an idea forward and argues for it."
+    },
+    {
+     "word": "justify",
+     "sentence": "In your persuasive writing you must justify every reason with evidence.",
+     "prompt": "just means right. Which ending turns it into something you do?",
+     "answer": "The -ify ending. To justify is to show your reason is right."
+    },
+    {
+     "word": "hypertension",
+     "sentence": "The doctor checked Grandpa's hypertension at his check-up on Friday.",
+     "prompt": "tension means pressure. Which part tells you the pressure is too high?",
+     "answer": "The hyper part, meaning over. His blood pressure is over the healthy level."
+    }
+   ],
+   "words_to_spell_new": [
+    "transport",
+    "export",
+    "report",
+    "supportive"
+   ],
+   "extension": "SAY each word, students write it in their book, then click to show it.\n1. SAY: \"Okay, when you finish, write one sentence that uses transport and export together.\"\n2. CHECK: the sentence must show that export carries goods out of the country.\nEXTENSION: Write what supportive means in your own words using port's meaning, then use it in a sentence about a team.\nAnswer: e.g. supportive means carrying someone from underneath, holding them up. Our captain was supportive when we lost the final.",
+   "learned_words": {
+    "review": [
+     {
+      "word": "receipt",
+      "unfair": "p",
+      "notes": "Why learned: the p is silent, and the ei follows i before e except after c.\nSay it: ruh-SEET, two beats. Write re - ceipt, and say the p in your head.\nLink: you can hear the p in reception, so think reception to keep the silent p in receipt."
+     },
+     {
+      "word": "entrepreneur",
+      "unfair": "eur",
+      "notes": "Why learned: the ending eur says /er/ and entre says /on-truh/, because the word came from French.\nSay it: ON-truh-pruh-NER, four beats. Write en - tre - pre - neur, then check the eur at the end.\nLink: an entrepreneur is the person who starts a business."
+     }
+    ],
+    "new": {
+     "word": "debt",
+     "unfair": "b",
+     "notes": "Why learned: the b is silent. Scribes added it hundreds of years ago to match the Latin word debitum, owed, but nobody ever said it.\nSay it: DET, one beat. Write d - e - b - t, and say the b in your head.\nLink: you can hear the b in debit - the same Latin family, debitum, owed.\nYou will write debt in your persuasive writing whenever you argue about money, loans or a business that is struggling."
+    }
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "The farm paid off its debt by exporting wheat to Japan.",
+     "targets": [
+      "debt",
+      "exporting"
+     ],
+     "cops": {
+      "capitals": [
+       "The",
+       "Japan"
+      ],
+      "punctuation": [
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "This week: the new red word debt and port in exporting.\nTRAP: it's. Fix: its means belonging to it and has no apostrophe; student removes it."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "Before the market opened, the entrepreneur said, \"We transport our honey by truck.\"",
+     "targets": [
+      "entrepreneur",
+      "transport"
+     ],
+     "cops": {
+      "capitals": [
+       "Before",
+       "We"
+      ],
+      "punctuation": [
+       "comma after the opening phrase (Before the market opened tells when, and the comma shows where it ends)",
+       "comma before the speech (it separates who said it from what they said)",
+       "opening quotation mark (speech starts here, so the first word takes a capital)",
+       "full stop inside the speech (it ends what was said)",
+       "closing quotation mark (speech ends here, after its own punctuation)"
+      ]
+     },
+     "focus": "This week: port in transport. Week 2 throwback: the red word entrepreneur."
+    }
+   ]
+  },
+  {
+   "day": "Wednesday",
+   "type": "build",
+   "build": {
+    "time": "15 mins",
+    "matrix": {
+     "title": "Build port words",
+     "rule": "Build real words. Write each one and what it means.",
+     "base": {
+      "morph": "port",
+      "type": "root",
+      "meaning": "bring, carry"
+     },
+     "prefixes": [
+      "ex- (out)",
+      "im- (in)",
+      "re- (back)",
+      "trans- (across)",
+      "sup- (under)"
+     ],
+     "suffixes": [
+      "-able (able to)",
+      "-er (a person who)",
+      "-ive (relating to)",
+      "-ity (state of)",
+      "-ed"
+     ],
+     "routine": "OG books - 4 mins",
+     "footer": "Challenge: a word with three parts",
+     "notes": "1. SAY: \"port is in the middle. Join a part from the left, the right, or both, and build a real word. Write the word and what it means.\"\n2. MODEL: say \"trans plus port: transport, to carry across\", and write it on the class board.\n3. TIME: 4 min. CIRCULATE: to a stuck student say, \"Start with port, add er. Who carries? Now try a prefix in front.\"\n4. ASK: \"Read me a word with three parts and what it means.\" Cold call two students. EXPECT: transportable, able to be carried across; supportive, holding others up.\nTRAP: a made-up word that sounds right, like exportive. Fix: ask, would you read that in a newspaper? Student builds a real one.\nEXTENSION: Build the longest real word you can and write its full morpheme sum.\nHELP: give three starters, export, import, report, and ask for one ending on each.\n---\nPurpose: Kate Watt's Wednesday matrix - build real words from port and taught parts. [You Do | Word matrix | Morphology]\nANSWERS:\nexport (carry out), import (carry in), report (carry back), transport (carry across), support (carry from underneath)\nexporter, importer, reporter, transporter, supporter (a person or thing who carries ...)\nexported, imported, reported, transported, supported (carried ... in the past)\nportable (able to be carried), transportable (able to be carried across), porter (a person who carries), supportive (holding others up), portability (being easy to carry)\nEXTENSION: e.g. transportability = trans + port + able + ity: the state of being able to be carried across."
+    },
+    "rounds": [
+     {
+      "title": "Break it apart",
+      "rule": "Write the parts in your OG book: prefix + root + suffix.",
+      "routine": "OG books - write the parts",
+      "footer": "Check: can you see port?",
+      "round": [
+       {
+        "prompt": "One done for you:\ntransportable",
+        "answer": "trans- (across) + port + -able (able to)",
+        "why": "it can be carried across",
+        "notes": "1. SAY: \"We just built words. Now we do the opposite. I show a whole word, you write its parts.\"\n2. MODEL: point at transportable. SAY: \"I look for port first, then what is in front, trans, then what is behind, able. trans plus port plus able: able to be carried across.\"\n3. SAY: \"Four words, one at a time. Write the parts in your OG book, then I click.\"\nEXTENSION: Break unsupportable into its four parts and say what it means.\nHELP: underline port in each word first, then split what is left on each side.\n---\nPurpose: break a whole word back into its parts - the opposite of building. [You Do | Break it apart | Morphology]\nANSWERS:\n1. reporter = re- (back) + port + -er (a person who)\n2. supportive = sup- (under) + port + -ive (relating to)\n3. portability = port + -able (able to) + -ity (state of)\n4. hyperactive = hyper (over) + act + -ive (relating to)\nEXTENSION: unsupportable = un- (not) + sup- (under) + port + -able: not able to be held up.",
+        "worked": true
+       },
+       {
+        "prompt": "reporter",
+        "answer": "re- (back) + port + -er (a person who)",
+        "why": "carries the news back",
+        "notes": "ANSWER: re- + port + -er.\n1. ASK: \"Write the parts of reporter.\" 20 sec. Cue: \"Pens down when you are done.\"\n2. SCAN four books near you. 80%+ -> click to reveal. Less -> point at port, ask what is in front of it and what is behind it, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. re means back, port means carry, er is a person - a person who carries the news back.\"\nTRAP: splitting it rep + orter. Fix: find port first, student rewrites the parts around it.\n---\nPurpose: break a whole word back into its parts - the opposite of building. [You Do | Break it apart | Morphology]"
+       },
+       {
+        "prompt": "supportive",
+        "answer": "sup- (under) + port + -ive (relating to)",
+        "why": "holding others up",
+        "notes": "ANSWER: sup- + port + -ive.\n1. ASK: \"Write the parts of supportive.\" 20 sec. Cue: \"Pens down when you are done.\"\n2. SCAN four books near you. 80%+ -> click to reveal. Less -> remind them -ive is our Term 3 suffix, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. sup means under, port means carry, ive means relating to. A supportive friend holds you up from underneath.\"\nTRAP: writing supp + ort. Fix: the double p is sup plus port meeting, student redraws the line.\n---\nPurpose: break a whole word back into its parts - the opposite of building. [You Do | Break it apart | Morphology]"
+       },
+       {
+        "prompt": "portability",
+        "answer": "port + -able (able to) + -ity (state of)",
+        "why": "abil is able",
+        "notes": "ANSWER: port + -able + -ity.\n1. ASK: \"Write the parts of portability. Careful, one part changes its spelling.\" 30 sec. Cue: \"Pens down when you are done.\"\n2. SCAN four books near you. 80%+ -> click to reveal. Less -> write portable above it and ask what happened to able, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. port plus able plus ity. able changes to abil before ity, the same as in ability. The state of being able to be carried.\"\nTRAP: writing -abil as a new suffix. Fix: show able inside it, student writes -able.\n---\nPurpose: break a whole word back into its parts - the opposite of building. [You Do | Break it apart | Morphology]"
+       },
+       {
+        "prompt": "hyperactive",
+        "answer": "hyper (over) + act + -ive (relating to)",
+        "why": "active over the top",
+        "footer": "Check: can you see hyper?",
+        "notes": "ANSWER: hyper + act + -ive.\n1. ASK: \"Here is a word from two weeks ago. Write the parts of hyperactive.\" 20 sec. Cue: \"Pens down when you are done.\"\n2. SCAN four books near you. 80%+ -> click to reveal. Less -> ask which part means over, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. hyper means over, act is the base, ive means relating to. Active over the top.\"\nTRAP: splitting it hyperac + tive. Fix: find hyper first, then the word act, student rewrites the parts.\n---\nPurpose: break a whole word back into its parts - the opposite of building. [You Do | Break it apart | Morphology]"
+       }
+      ]
+     },
+     {
+      "title": "Write the word that names...",
+      "rule": "Write the port word on your whiteboard.",
+      "routine": "Boards - write it, show me",
+      "footer": "Check: spelt it right?",
+      "round": [
+       {
+        "prompt": "One done for you:\na person who carries bags at a hotel",
+        "answer": "porter",
+        "why": "port (carry) + -er (a person who)",
+        "notes": "1. SAY: \"Last one today. I give you a meaning, you write the word that names it.\"\n2. MODEL: point at the done one. SAY: \"A person who carries bags. carry is port, a person who is er, so porter.\"\n3. SAY: \"Four more. Write it... chin it... show me.\"\nEXTENSION: Write your own meaning for a port word for a partner to name, then swap.\nHELP: give the port word list from Monday's grid so the student chooses instead of recalls.\n---\nPurpose: retrieve the word and its spelling from its meaning - the model lesson's whiteboard move. [You Do | Write the word that names | Morphology]\nANSWERS:\n1. able to be carried around easily = portable\n2. to carry goods into the country = import\n3. to carry people or goods across a distance = transport\n4. describes a friend who holds you up = supportive\nEXTENSION: e.g. a person who carries news back = reporter",
+        "worked": true
+       },
+       {
+        "prompt": "able to be carried\naround easily",
+        "answer": "portable",
+        "why": "port (carry) + -able (able to)",
+        "notes": "ANSWER: portable.\n1. ASK: \"Write the word that names something able to be carried around easily.\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> ask which ending means able to, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. port plus able, able to be carried.\"\nTRAP: spelling it portible. Fix: say able to aloud, student rewrites -able.\n---\nPurpose: retrieve the word and its spelling from its meaning - the model lesson's whiteboard move. [You Do | Write the word that names | Morphology]"
+       },
+       {
+        "prompt": "to carry goods into\nthe country from overseas",
+        "answer": "import",
+        "why": "im- (in) + port (carry)",
+        "notes": "ANSWER: import.\n1. ASK: \"Write the word that means to carry goods into the country.\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> ask in or out, then which prefix means in, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. im means in, port means carry: carry in.\"\nTRAP: writing export. Fix: ask, is it coming in or going out? Student swaps to import.\n---\nPurpose: retrieve the word and its spelling from its meaning - the model lesson's whiteboard move. [You Do | Write the word that names | Morphology]"
+       },
+       {
+        "prompt": "to carry people or goods\nacross a distance",
+        "answer": "transport",
+        "why": "trans- (across) + port (carry)",
+        "notes": "ANSWER: transport.\n1. ASK: \"Write the word that means to carry people or goods across a distance.\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> ask which part means across, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. trans means across, port means carry: carry across.\"\nTRAP: spelling it transpot. Fix: say port slowly, student adds the r.\n---\nPurpose: retrieve the word and its spelling from its meaning - the model lesson's whiteboard move. [You Do | Write the word that names | Morphology]"
+       },
+       {
+        "prompt": "describes a friend who holds\nyou up when things are hard",
+        "answer": "supportive",
+        "why": "sup- (under) + port + -ive (relating to)",
+        "notes": "ANSWER: supportive.\n1. ASK: \"Write the word that describes a friend who holds you up when things are hard.\" 20 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> ask what carries something from underneath, then which ending makes it describe a person, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. sup means under, port means carry, ive makes it describe someone. A supportive friend.\"\nTRAP: writing support. Fix: ask, does it describe the friend? Student adds -ive.\n---\nPurpose: retrieve the word and its spelling from its meaning - the model lesson's whiteboard move. [You Do | Write the word that names | Morphology]"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "day": "Thursday",
+   "type": "apply",
+   "pos_drill": {
+    "intro": {
+     "title": "A suffix tells the job",
+     "rule": "A suffix tells you the word's job: its part of speech.",
+     "example": "support = verb: Fans support the team.\nsupporter = noun: a person\nsupportive = adjective: describes",
+     "items": [
+      "noun = names it    verb = does it",
+      "adjective = describes a noun    adverb = how, when, where"
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Next: say the job on every card",
+     "notes": "ANSWER: the suffix decides the job - -er makes a noun here, -ive makes an adjective.\n1. SAY: \"Every suffix card tells you two things: what the ending means, and the job it gives the word. That job is its part of speech.\"\n2. WRITE: copy support, supporter, supportive on the class board in a column. POINT at each ending as you name its job: support does it, supporter names the person, supportive describes the person.\n3. ASK: \"My supportive friend - which word is describing?\" 5 sec, choral response. EXPECT: supportive.\nTRAP: thinking the root decides the job. Fix: point at the ending, student names the job from it.\nCLARIFY: if a student asks about adverbs, say the -ly cards make most of them - we meet those cards later.\n---\nPurpose: first parts-of-speech Thursday - Kate Watt's whole-school gap. [I Do | Explicit modelling | Morphology]\nPREP: noun names, verb does, adjective describes a noun, adverb tells how, when or where."
+    },
+    "cards": [
+     {
+      "morph": "-tude",
+      "notes": "1. ASK: \"Give me a -tude word in a short sentence.\" 10 sec, turn and tell, then cold call. EXPECT: gratitude - We showed gratitude to the bus driver."
+     },
+     {
+      "morph": "-ive",
+      "notes": "1. ASK: \"Give me an -ive word in a short sentence.\" 10 sec, turn and tell, then cold call. EXPECT: supportive - My team is supportive."
+     },
+     {
+      "morph": "-ity",
+      "notes": "1. ASK: \"Give me an -ity word in a short sentence.\" 10 sec, turn and tell, then cold call. EXPECT: portability - Portability matters in a speaker."
+     },
+     {
+      "morph": "-cial",
+      "notes": "SAY: \"Its twin -tial does the same job, like in essential.\"\n1. ASK: \"Give me a -cial word in a short sentence.\" 10 sec, turn and tell, then cold call. EXPECT: special - It was a special day."
+     },
+     {
+      "morph": "-ciate",
+      "notes": "SAY: \"Its twin -tiate does the same job, like in negotiate.\"\n1. ASK: \"Give me a -ciate word in a short sentence.\" 10 sec, turn and tell, then cold call. EXPECT: appreciate - I appreciate your help."
+     },
+     {
+      "morph": "-cian",
+      "notes": "1. ASK: \"Give me a -cian word in a short sentence.\" 10 sec, turn and tell, then cold call. EXPECT: musician - The musician played at assembly."
+     },
+     {
+      "morph": "-ery",
+      "notes": "1. ASK: \"Give me an -ery word in a short sentence.\" 10 sec, turn and tell, then cold call. EXPECT: bakery - The bakery opens at six."
+     },
+     {
+      "morph": "-ar",
+      "notes": "SAY: \"-ar can also make a noun, like a calendar. Today we learn it as the describing job.\"\n1. ASK: \"Give me an -ar word in a short sentence.\" 10 sec, turn and tell, then cold call. EXPECT: solar - Our school has solar panels.",
+      "pos_answer": "adjective"
+     }
+    ]
+   },
+   "learned_words": {
+    "review": [
+     {
+      "word": "debt",
+      "unfair": "b",
+      "notes": "Why learned: the b is silent - it was added to match the Latin debitum, owed.\nSay it: DET, one beat. Write d - e - b - t, then check the silent b.\nLink: hear the b in debit - the same Latin family, debitum, owed."
+     },
+     {
+      "word": "receipt",
+      "unfair": "p",
+      "notes": "Why learned: the p is silent, and the ei follows i before e except after c.\nSay it: ruh-SEET, two beats. Write re - ceipt, and say the p in your head.\nLink: you can hear the p in reception, so think reception to keep the silent p in receipt."
+     }
+    ],
+    "new": {
+     "word": "cheque",
+     "unfair": "que",
+     "notes": "Why learned: this is the Australian and British spelling. The que at the end says /k/, the way it does in unique and antique.\nSay it: CHEK, one beat. Write ch - e - que, and check the que at the end.\nLink: Americans spell it check. Cheque is the British spelling, shaped by exchequer, the old name for the government's money office.\nYou will write cheque whenever your persuasive or business writing talks about paying, prizes or donations - a giant cheque at a fundraiser."
+    }
+   },
+   "grammar": {
+    "header_notes": "PURPOSE: Join two argument sentences with a connective that tells the reader how they link - however and on the other hand turn to the other side, therefore gives the result, for example gives the proof.\nWHY THIS WEEK: our nouns and verbs are upgraded. Now the sentences must link, or an argument reads like a list of separate claims.\nTIME: 5 minutes, no more - I do 1 min, We do 1 question, You do 3 questions at about 30 seconds each. One question per slide; your click reveals the answer.\nROUTINE: all grammar is written in the OG book. No boards - books, fingers and voices only.\nPREP: the connective starts the second sentence and takes a comma after it: However, ... / Therefore, ... / For example, ...",
+    "i_do": {
+     "title": "Link it with a connective",
+     "rule": "A connective shows how two sentences link.",
+     "example": "Polar bears hunt on sea ice.\nHowever, the ice melts earlier every year.",
+     "items": [
+      "however / on the other hand = the other side",
+      "therefore = so, the result    for example = the proof"
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Your turn: which link fits?",
+     "notes": "ANSWER: However - the second sentence turns to the problem.\n1. SAY: \"An argument is more than a list of facts. A connective tells your reader how the next sentence links to the last one.\"\n2. WRITE: copy \"Polar bears hunt on sea ice.\" on the class board, then write \"However, the ice melts earlier every year.\" underneath. CIRCLE However and its comma.\n3. ASK: \"Does the second sentence agree with the first, or turn to the other side? One finger agree, two fingers turn, voices off, show me.\" 5 sec. EXPECT: two fingers - it turns.\nTRAP: leaving out the comma after However. Fix: the comma shows where the connective ends and the sentence starts; student adds it.\nCLARIFY: on the other hand does the same job as however - both warn the reader the other side is coming. And only adds more of the same.\n---\nPurpose: one block a week (v1.7) - model how a connective links two argument sentences. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: however and on the other hand = contrast, therefore = result, for example = evidence. Each starts the second sentence and takes a comma."
+    },
+    "we_do": {
+     "title": "Which link fits?",
+     "rule": "Pick the connective that shows how the sentences link.",
+     "round": [
+      {
+       "prompt": "Cars pollute the air near school.\n___, our school supports walking.",
+       "answer": "Therefore",
+       "why": "walking is the result of the reason",
+       "notes": "ANSWER: Therefore - walking is the result.\n1. SAY: \"Read both sentences in your head. Which link fits: however, therefore or for example?\"\n2. ASK: \"One finger however, two therefore, three for example, voices off, show me on three.\" 5 sec. EXPECT: two fingers - therefore.\n3. REVEAL after fingers are scanned. ASK: \"How do you know?\" Cold call one student. EXPECT: the pollution is the reason, so walking is the result.\nTRAP: choosing for example. Fix: ask, is walking an example of pollution? Student votes again.\nCLARIFY: if a student picks however, ask: does walking turn against the pollution, or happen because of it? Because of it, so therefore.\n---\nPurpose: guided choice between the three connectives. [We Do | Guided practice | Grammar | HITS 7]\nPREP: test each connective by reading it aloud in the gap.",
+       "choices": [
+        "However",
+        "Therefore",
+        "For example"
+       ],
+       "routine": "Fingers: 1, 2 or 3",
+       "footer": "Stem: It fits because ..."
+      }
+     ]
+    },
+    "you_do": {
+     "title": "Choose the connective",
+     "rule": "Write the connective in your OG book.",
+     "routine": "OG books - 30 sec - pens down",
+     "footer": "Check: does the link make sense?",
+     "round": [
+      {
+       "prompt": "Electric cars make no exhaust fumes.\n___, they cost more to buy.",
+       "choices": [
+        "However",
+        "Therefore",
+        "For example"
+       ],
+       "answer": "However",
+       "why": "or On the other hand - the other side",
+       "notes": "ANSWER: However. ACCEPT: On the other hand.\n1. SAY: \"Read it in your head, then write just the connective in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask whether the second sentence agrees or turns to the other side, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. No fumes is the good side, the cost is the other side. However.\"\nTRAP: choosing therefore. Fix: ask, do they cost more BECAUSE they make no fumes? Student swaps to however.\nEXTENSION: Write your own argument sentence with a port word - transport, export or support - and join a second sentence to it with however or therefore.\nHELP: read the gap aloud with each chip and let the student choose by ear.\n---\nPurpose: easy case - a clear turn to the other side, fresh topic. [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "Plastic harms sea animals.\n___, turtles swallow plastic bags.",
+       "choices": [
+        "However",
+        "Therefore",
+        "For example"
+       ],
+       "answer": "For example",
+       "why": "the turtles are the proof",
+       "notes": "ANSWER: For example.\n1. SAY: \"Read it in your head, then write just the connective in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask whether the turtle sentence is a result or the proof, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Turtles swallowing bags proves that plastic harms sea animals. For example.\"\nTRAP: choosing therefore. Fix: ask, did the turtles swallow bags because plastic harms animals? Student swaps.\n---\nPurpose: typical case - evidence for a claim, from our ocean arguments. [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "Most fruit in our shop is imported.\n___, it travels thousands of kilometres.",
+       "choices": [
+        "However",
+        "Therefore",
+        "For example"
+       ],
+       "answer": "Therefore",
+       "why": "the long trip is the result",
+       "notes": "ANSWER: Therefore.\n1. SAY: \"Read it in your head, then write just the connective in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask what imported means - im in, port carry - and whether the long trip follows from it, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Imported means carried in from overseas, so the long trip is the result. Therefore.\"\n4. SAY: \"When you edit your next argument, find two sentences that sit side by side and join them with the connective that shows how they link.\"\nTRAP: choosing for example. Fix: ask, is the trip an example of importing, or what happens because of it? Student swaps.\n---\nPurpose: edge case - imported, this week's port word, carries the reason. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\n1. Electric cars make no fumes. ___ they cost more = However\n2. Plastic harms sea animals. ___ turtles swallow bags = For example\n3. Most fruit is imported. ___ it travels far = Therefore\nEXTENSION 1: e.g. Trucks transport our food. Therefore, the roads are busy all night."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "day": "Friday",
+   "type": "week_review",
+   "morphology_review": [
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "port",
+     "type": "root",
+     "keyword": "export",
+     "meaning": "bring, carry",
+     "extra_task": {
+      "prompt": "Okay, give me one port word, meaning carry.",
+      "answers": [
+       "transport",
+       "export",
+       "report",
+       "portable"
+      ]
+     }
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root",
+     "keyword": "adjure",
+     "meaning": "right, law"
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star"
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root",
+     "keyword": "command",
+     "meaning": "order, entrust",
+     "extra_task": {
+      "prompt": "Okay, give me one mand or mend word, meaning order.",
+      "answers": [
+       "command",
+       "demand",
+       "mandatory",
+       "recommend"
+      ]
+     }
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "export",
+     "astronaut",
+     "hyperactive",
+     "terrestrial",
+     "support",
+     "accuse",
+     "transport",
+     "asterisk",
+     "omnivore",
+     "import",
+     "terraform",
+     "hypertension",
+     "porter",
+     "astronomical",
+     "terrace"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"First names starting with A to K, read rows 1 and 2.\"\n3. READ: \"First names starting with L to Z, read rows 3 and 4.\"\n4. READ: \"Everyone, read row 5.\"\n5. ASK: \"port means carry. Which five words carry it?\" 5 sec, choral response. EXPECT: export, support, transport, import, porter.\n6. ASK: \"Which two port words are opposites?\" 5 sec, turn and tell. EXPECT: export, import.\n7. ASK: \"Which word names a person who carries bags?\" 3 sec, choral response. EXPECT: porter.\n8. ASK: \"porter ends in -er. Which part of speech does -er make here?\" 5 sec, choral response. EXPECT: a noun - it names the person.\n9. ASK: \"terr means land. Which word means making a planet more like Earth?\" 3 sec, choral response. EXPECT: terraform.\n10. ASK: \"astronomical can mean about the stars. What else can it mean?\" 5 sec, turn and tell. EXPECT: huge, like an astronomical price.\n11. ASK: \"What is the opposite of hyperactive?\" 3 sec, choral response. EXPECT: calm. ACCEPT: still."
+   },
+   "sound_bank": [
+    {
+     "morph": "port",
+     "type": "root"
+    },
+    {
+     "morph": "terr",
+     "type": "root"
+    },
+    {
+     "morph": "astro",
+     "type": "root"
+    },
+    {
+     "morph": "hyper",
+     "type": "root"
+    },
+    {
+     "morph": "au",
+     "type": "sound",
+     "say": "/aw/ as in astronaut"
+    },
+    {
+     "morph": "er",
+     "type": "sound",
+     "say": "/er/ as in reporter"
+    }
+   ],
+   "words_to_spell_review": [
+    {
+     "word": "portable",
+     "sentence": "Our class takes a portable speaker on every excursion.",
+     "prompt": "Which ending tells you it can be carried?",
+     "answer": "The -able ending, meaning able to. port means carry, so it is able to be carried."
+    },
+    {
+     "word": "reporter",
+     "sentence": "A reporter from the local paper came to our athletics carnival.",
+     "prompt": "Which part tells you the reporter carries the news back?",
+     "answer": "The re part, meaning back, joined to port, carry. A reporter carries the news back to us."
+    },
+    {
+     "word": "importer",
+     "sentence": "My uncle is an importer who brings toys in from Japan.",
+     "prompt": "im- means in. Which part tells you the toys are carried?",
+     "answer": "The port part, meaning carry. An importer carries goods in from overseas."
+    },
+    {
+     "word": "terracotta",
+     "sentence": "We planted basil in a terracotta pot for our garden club.",
+     "prompt": "cotta means cooked. Which part tells you the pot is made of earth?",
+     "answer": "The terr part, meaning land. Terracotta is cooked earth - baked clay."
+    },
+    {
+     "word": "astronautics",
+     "sentence": "Students who love rockets might study astronautics one day.",
+     "prompt": "naut means sailor. Which part tells you the sailing is among the stars?",
+     "answer": "The astro part, meaning star. Astronautics is the science of star sailing - space travel."
+    },
+    {
+     "word": "subterranean",
+     "sentence": "Wombats dig subterranean burrows to stay cool in summer.",
+     "prompt": "sub means under. Which part tells you what the burrow is under?",
+     "answer": "The terr part, meaning land. Subterranean means under the land."
+    },
+    {
+     "word": "hypersonic",
+     "sentence": "The hypersonic jet crossed the sky before we heard a sound.",
+     "prompt": "sonic means sound. Which part tells you it went past the speed of sound?",
+     "answer": "The hyper part, meaning over. Hypersonic is over the speed of sound - far over."
+    }
+   ],
+   "learned_words": {
+    "review": [
+     {
+      "word": "cheque",
+      "unfair": "que",
+      "notes": "Why learned: the que at the end says /k/, like unique and antique.\nSay it: CHEK, one beat. Write ch - e - que, then check the que.\nLink: Australian spelling. Americans write check."
+     },
+     {
+      "word": "debt",
+      "unfair": "b",
+      "notes": "Why learned: the b is silent - it was added to match the Latin debitum, owed.\nSay it: DET, one beat. Write d - e - b - t, then check the silent b.\nLink: hear the b in debit - the same Latin family, debitum, owed."
+     },
+     {
+      "word": "entrepreneur",
+      "unfair": "eur",
+      "notes": "Why learned: the ending eur says /er/ and entre says /on-truh/, because the word came from French.\nSay it: ON-truh-pruh-NER, four beats. Write en - tre - pre - neur, then check the eur at the end.\nLink: an entrepreneur is the person who starts a business."
+     }
+    ]
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "Grandma paid for the small portable heater with a cheque.",
+     "targets": [
+      "cheque",
+      "portable"
+     ],
+     "cops": {
+      "capitals": [
+       "Grandma"
+      ],
+      "punctuation": [
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "This week: the red word cheque and port in portable."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "Our school reporter interviewed an astronomer. However, the asteroid story was cut.",
+     "targets": [
+      "reporter",
+      "astronomer"
+     ],
+     "cops": {
+      "capitals": [
+       "Our",
+       "However"
+      ],
+      "punctuation": [
+       "full stop (it ends the first sentence)",
+       "comma after However (the connective leads in, then the comma)",
+       "full stop (it ends the second sentence)"
+      ]
+     },
+     "focus": "This week: port in reporter and Thursday's connective however. Week 2 throwback: astronomer.\nSAY: \"COPS is not just for dictation - run the same four checks on your persuasive draft before anyone reads it.\""
+    }
+   ],
+   "vote": {
+    "title": "Trickiest this week?",
+    "rule": "Which was trickiest this week? Hold up 1, 2, 3 or 4.",
+    "options": [
+     "Spelling port words",
+     "debt and cheque",
+     "Linking sentences with connectives",
+     "Parts of speech on suffixes"
+    ],
+    "notes": "1. SAY: \"Before we finish, I want to know what was trickiest this week. Read the four choices with me.\"\n2. ASK: \"Hold up 1, 2, 3 or 4 fingers for the trickiest one, voices off, show me on three.\" 5 sec. Count the most common number.\n3. WRITE the winner, and any word most books missed today, into next week's From our reviews line.\n---\nPurpose: one class-level signal for next week's decks - nobody tracks individual students. [Review | Responsive planning | Morphology]"
+   }
+  }
+ ]
+}

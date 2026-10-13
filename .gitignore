@@ -90,3 +90,8 @@ assets/persuasive/
 # (megaprompt 83). Local to each machine, never shared through the repo.
 records/
 assets/auslan_video/
+assets/videos/
+
+# Working notes, including findings from Kate Watt's OG training material,
+# which she asked to stay inside the school (Oct 2026). Never commit.
+scratch/

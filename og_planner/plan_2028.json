@@ -1,0 +1,51 @@
+{
+  "_purpose": "2028 Grade 5/6 Enrichment morphology plan (even year), one morpheme a week (OG_MEGA_PROMPT v1.7). Written into James's 5-6 Literacy Scope & Sequence 2027.docx on 13 Oct 2026 alongside plan_2027.json. Built from the strongest 2026 morphemes, matched to the even-year learned words and inquiry, with nothing from either Challenge 3/4 year or the 2027 list. path, tele, therm, meter/metry and chrom are not on the photographed cards - verify against the Yoshimoto Greek Combining Forms before their weeks. The 2029 odd year needs re-cutting: 2027 used roots that 3/4 teaches in its odd year.",
+  "term1": {
+    "1": "Start Up",
+    "2": "Recap week: port, ject, struct, tract, rupt",
+    "3": "jur/jud/just",
+    "4": "-ance/-ence",
+    "5": "sym-/syn-",
+    "6": "path",
+    "7": "-ity",
+    "8": "vict/vinc",
+    "9": "Camp",
+    "10": "-tude"
+  },
+  "term2": {
+    "1": "chron",
+    "2": "terr",
+    "3": "capt/capit",
+    "4": "ped/pod",
+    "5": "post-",
+    "6": "ord/ordin",
+    "7": "mand/mend",
+    "8": "rect/reg",
+    "9": "-eer",
+    "10": "Review"
+  },
+  "term3": {
+    "1": "micro",
+    "2": "scop(e)",
+    "3": "tele",
+    "4": "therm",
+    "5": "meter/metry",
+    "6": "chrom",
+    "7": "-ule",
+    "8": "vore",
+    "9": "eco",
+    "10": "Review"
+  },
+  "term4": {
+    "1": "hyper",
+    "2": "contra-",
+    "3": "clud(e)/clus(e)",
+    "4": "pon/pound",
+    "5": "pend/pens",
+    "6": "caus-/cus(e)",
+    "7": "-ant",
+    "8": "super-",
+    "9": "Review",
+    "10": "Christmas"
+  }
+}

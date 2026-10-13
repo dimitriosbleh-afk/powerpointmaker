@@ -343,11 +343,16 @@ The universal type-colour key overrides any older master colour: GREEN = root,
 YELLOW = prefix, RED = suffix. The builder enforces it on morphology review-card
 backgrounds, new/review morpheme-card backgrounds and Sound Bank boxes, and its
 finished-PPTX gate rejects mismatches.
+Since v1.7 (Kate Watt, the school's Yoshimoto trainer, Oct 2026) a week teaches ONE
+morpheme, every day for 20-30 minutes, split across five day types: `teach` (Mon),
+`spell` (Tue), `build` (Wed), `apply` (Thu, parts of speech + the week's one grammar
+block), `week_review` (Fri). Each day carries only its own blocks; legacy `new`/`review`
+weeks still build unchanged. Exemplar: `og_planner/weeks/term4_week3.json`. Kate's
+training deck and videos must stay inside the school - never commit them.
 OG teacher notes follow the shared Glance Format: plain source text, one thought per
 line, left-aligned paragraphs, eight live-zone lines maximum, and no markdown. Words
-to Read Review is the exception: use separate cues for the whole-class read, exhaustive
-playful groups for rows 1-4, and everyone reading row 5 so every student reads at least
-two rows, followed by one retrieval question per line. The OG builder applies real bold
+to Read Review is the exception: in v1.7 the whole class reads every row first, then
+playful groups reread rows for fluency, followed by one retrieval question per line. The OG builder applies real bold
 to recognised labels and underlines the spelling target where it appears inside every
 `Sentence:` note line. Fixed-
 answer new morphology activities require an immediate green answer slide titled `Tick
@@ -361,11 +366,10 @@ The builder reopens each finished PPTX and hard-fails on dense or malformed note
 missing real bold note labels, legacy `Derivative ask` output, undersized new-word
 grids, missing/non-green answer checks, undersized grammar examples, or incorrect
 dictation cue formatting. It also hard-fails when the Sound Bank or review cards
-contain the day's focus morpheme or any morpheme this week teaches on a later day (the
-bank is copied into books before that morpheme is taught), when a dictation target is
-one of this week's new grid words / new learned words or is built on this week's focus
-morphemes (dictation is revision from 2-3 weeks ago - students copy this week's words
-from their books, school feedback Aug 2026), or when a You
+contain any morpheme this week teaches on a later day (legacy weeks: also the day's
+focus morpheme), when a v1.7 dictation day has no target from this week's teaching
+(Kate Watt: dictation carries what was just taught, plus one harder word from a week or
+two back; copying is fine; legacy weeks ran the reverse, 2-3-weeks-back rule), or when a You
 Do item is a meaning sum (retired Sept 2026) or asks for any part beyond today's
 morpheme without its meaning printed on the slide face (one-recall rule); the rules
 and the escape hatch (`taught_morphemes`) are in OG_MEGA_PROMPT sections 2a/2c, 6, 2f
