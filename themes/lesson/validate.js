@@ -29,7 +29,7 @@ const KINDS = {
   resources:     { required: [], optional: ["notes"], teaching: false },
   dailyReview:   { required: ["title", "from"], optional: ["prompts", "visual", "reveal", "notes"], teaching: true, numeracy: true },
   fluency:       { required: ["title"], optional: ["prompts", "visual", "label", "reveal", "notes"], teaching: true, numeracy: true },
-  launch:        { required: ["title"], optional: ["lines", "visual", "label", "prompt", "badge", "badgeColor", "reveal", "notes"], teaching: true },
+  launch:        { required: ["title"], optional: ["lines", "visual", "label", "prompt", "link", "badge", "badgeColor", "reveal", "notes"], teaching: true },
   li:            { required: ["learningIntention", "successCriteria"], optional: ["notes"], teaching: true },
   keyWord:       { required: ["word", "meaning"], optional: ["example", "pictogram", "image", "visual", "routine", "notes"], teaching: true },
   heroVisual:    { required: ["badge", "title", "visual"], optional: ["label", "prompt", "link", "badgeColor", "reveal", "notes"], teaching: true },
@@ -94,6 +94,12 @@ function validateVisual(visual, where, errors, opts) {
       const name = typeof it === "string" ? it : it && it.name;
       if (!PICTOGRAMS[name]) errors.push(`${where}.items[${i}]: "${name}" is not a pictogram.`);
     });
+  }
+  if (visual.type === "video") {
+    if (!/^[A-Za-z0-9_-]{11}$/.test(String(visual.youtube || ""))) errors.push(`${where}.youtube: the 11-character YouTube video id, e.g. "IDpfl2aGruE" from youtube.com/watch?v=IDpfl2aGruE.`);
+    if (visual.start != null && !(Number.isInteger(visual.start) && visual.start > 0)) errors.push(`${where}.start: whole seconds into the clip to start from, or omit it.`);
+    if (visual.end != null && !(Number.isInteger(visual.end) && visual.end > (visual.start || 0))) errors.push(`${where}.end: whole seconds into the clip where the embedded player stops, after start, or omit it.`);
+    if (visual.label != null && !isNonEmptyString(visual.label)) errors.push(`${where}.label: the link text under the video, or omit it.`);
   }
   if (visual.type === "image" && !isNonEmptyString(visual.path)) {
     errors.push(`${where}.path: an image visual needs a local file path.`);

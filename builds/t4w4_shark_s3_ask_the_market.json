@@ -1,0 +1,962 @@
+{
+  "lesson": {
+    "subject": "inquiry",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 4,
+    "session": 3,
+    "variant": 3,
+    "minutes": 60,
+    "title": "Ask the Market",
+    "subtitle": "Shark Tank | Term 4 Week 4, Session 3",
+    "meta": "Year 5/6 Inquiry | Shark Tank",
+    "footer": "Shark Tank | Year 5/6 Inquiry | Week 4 Session 3",
+    "outputFolder": "T4W4_SharkTank_S3_Ask_the_Market",
+    "fileName": "Session 3 - Ask the Market.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "magnifier",
+          "label": "Find a problem"
+        },
+        {
+          "name": "recycle",
+          "label": "Upcycle a fix"
+        },
+        {
+          "name": "megaphone",
+          "label": "Pitch it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "Victorian Curriculum Economics and Business, Levels 5 and 6: influences on consumer choices and how businesses find out what people want; Design and Technologies, Levels 5 and 6: investigating needs and choosing a design using criteria",
+      "shape": "watch, model, try: a young entrepreneur with a clear target market, fair and unfair survey questions, a quick round, then 30 minutes of the Token Test with the Grade 6s as the market",
+      "criticalFeature": "market research asks the people you want to sell to, with fair questions, and the team chooses from what they say, not from what the team likes best",
+      "decisionPoints": [
+        "the Fair or unfair? round",
+        "the choice check: Pocket Pal's target market",
+        "the exit board: a target market and a fair question for a new product"
+      ],
+      "anchor": "Find a problem. Upcycle a fix. Pitch it.",
+      "catchUp": "Missed Session 2? Say: sharks invest, they don't buy, and they use four checks. Join your team's shortlist; the Grade 6 consultant fills you in."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Session 2 team shortlists",
+      "A3 paper or card for three idea cards per team"
+    ],
+    "manipulatives": [
+      "Shark Tokens: one per Grade 5 team for each Grade 6 (about four each), cut before the session",
+      "One cup or envelope per idea card to collect tokens"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Turn and tell",
+      "Point to A, B or C"
+    ],
+    "boardSetup": [
+      "Write the three kinds of fair question: a choice question, a score out of 5, and What would make it better?",
+      "Clear desks around the room so each Grade 5 team has a stall for the Token Test",
+      "A class list with three columns: team members, final product, problem it fixes",
+      "By Friday of Week 4: send the class team list to the Shark Tank teachers"
+    ],
+    "videos": [
+      "Glossy Boys on Shark Tank Australia: a 13-year-old pitches nail polish for boys (youtube.com/watch?v=ie2Q1srSpk0)"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Fair survey questions, your team's survey, and your Token Test results.",
+      "title": "Market Research",
+      "subtitle": "Ask the people you want to sell to.",
+      "sections": [
+        {
+          "title": "Fair or unfair?",
+          "columns": 1,
+          "example": {
+            "prompt": "Is this question fair? You'd never leave your hat on the floor, would you?",
+            "steps": [
+              "Ask: does it push people to one answer?",
+              "Would you... would you? pushes people to say no.",
+              "Pushing people to an answer makes it unfair."
+            ],
+            "answer": "Unfair: it pushes people to one answer."
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "Sort each survey question: fair or unfair?",
+              "groups": [
+                "fair",
+                "unfair"
+              ],
+              "cards": [
+                "How many days a week would you use it?",
+                "This is the best bag ever, right?",
+                "Which colour would you pick?",
+                "All your friends want one. Don't you?",
+                "What would you change about it?",
+                "You'd be silly not to, wouldn't you?"
+              ],
+              "answer": {
+                "fair": [
+                  "How many days a week would you use it?",
+                  "Which colour would you pick?",
+                  "What would you change about it?"
+                ],
+                "unfair": [
+                  "This is the best bag ever, right?",
+                  "All your friends want one. Don't you?",
+                  "You'd be silly not to, wouldn't you?"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Write our survey",
+          "columns": 1,
+          "example": {
+            "prompt": "Write a fair score question about a cord tidy.",
+            "steps": [
+              "Name the product: the cord tidy.",
+              "Ask for a score, not a yes.",
+              "Out of 5, how useful would a cord tidy be at your house?"
+            ],
+            "answer": "Out of 5, how useful would a cord tidy be at your house?"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write three fair questions for your team's survey.",
+              "columns": [
+                "Kind of question",
+                "Our fair question"
+              ],
+              "rows": [
+                [
+                  "A choice: which of our ideas...?",
+                  ""
+                ],
+                [
+                  "A score: out of 5...?",
+                  ""
+                ],
+                [
+                  "Make it better: what would...?",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "A choice: which of our ideas...?",
+                  "e.g. Which of our three ideas would you use most?"
+                ],
+                [
+                  "A score: out of 5...?",
+                  "e.g. Out of 5, how much would you want a hat clip?"
+                ],
+                [
+                  "Make it better: what would...?",
+                  "e.g. What would make our hat clip better?"
+                ]
+              ]
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Ava wrote this survey question. Find the problem and fix it.",
+              "work": [
+                "Our drink bottle sling is so cool, isn't it?"
+              ],
+              "answer": "It pushes people to say yes. Fix: Out of 5, how useful would a drink bottle sling be for you?"
+            }
+          ]
+        },
+        {
+          "title": "Our Token Test results",
+          "columns": 1,
+          "example": {
+            "prompt": "A team's results: hat clips 9 tokens, ball bags 4, cord tidy 2. Most people said hat clips need to be strong. What should they make?",
+            "steps": [
+              "Most tokens: hat clips, 9.",
+              "Survey: make them strong.",
+              "Choose hat clips, and make them strong."
+            ],
+            "answer": "Hat clips, built strong."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in your team's results.",
+              "columns": [
+                "Our idea",
+                "Tokens",
+                "What people said"
+              ],
+              "rows": [
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Idea 1",
+                  "count",
+                  "one comment that came up a lot"
+                ],
+                [
+                  "Idea 2",
+                  "count",
+                  "one comment that came up a lot"
+                ],
+                [
+                  "Idea 3",
+                  "count",
+                  "one comment that came up a lot"
+                ]
+              ]
+            },
+            {
+              "prompt": "Our final product is... Give two reasons from your results.",
+              "answer": "e.g. Hat clips: they got the most tokens, and people said every kid loses a hat.",
+              "lines": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: read another team's results and spot what the tokens don't show.",
+      "title": "Extension: Read the Data",
+      "subtitle": "Tokens tell you a lot, but not everything.",
+      "sections": [
+        {
+          "title": "What do the tokens say?",
+          "columns": 1,
+          "example": {
+            "prompt": "Bird bath 6 tokens, seed tray 6 tokens. Is one idea the clear winner?",
+            "steps": [
+              "Compare the numbers: 6 and 6.",
+              "They are the same.",
+              "The team needs more information, like the survey comments."
+            ],
+            "answer": "No clear winner: look at the comments."
+          },
+          "items": [
+            {
+              "prompt": "Team Sunrise tested three ideas. Look at the graph.",
+              "visual": {
+                "type": "chart",
+                "style": "bar",
+                "categories": [
+                  "Book sleeve",
+                  "Dog toy",
+                  "Key hook"
+                ],
+                "values": [
+                  10,
+                  7,
+                  3
+                ],
+                "title": "Team Sunrise Token Test",
+                "xLabel": "Idea",
+                "yLabel": "Tokens",
+                "showValues": true
+              },
+              "parts": [
+                {
+                  "prompt": "Which idea got the most tokens?",
+                  "answer": "Book sleeve, 10"
+                },
+                {
+                  "prompt": "How many more tokens than the key hook?",
+                  "answer": "7 more"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "What the tokens don't show",
+          "columns": 1,
+          "example": {
+            "prompt": "The book sleeve got 10 tokens, but 8 people said it is too floppy. What should the team do?",
+            "steps": [
+              "The tokens say people want it.",
+              "The comments say fix the floppiness.",
+              "Keep the idea, and make it stiffer."
+            ],
+            "answer": "Keep the book sleeve and make it stiffer, e.g. with cereal box card."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "The dog toy got 7 tokens. Every comment said: I'd use it, but I don't have a dog. What does this tell the team?",
+              "options": [
+                "the dog toy is their best idea",
+                "their market was the wrong people to ask",
+                "dogs don't like toys"
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "They asked people without dogs. Dog owners are the target market, so they should ask dog owners."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Choose the fair question, then finish question starters for your team's survey.",
+      "title": "Market Research",
+      "subtitle": "A fair question lets people answer honestly.",
+      "sections": [
+        {
+          "title": "Pick the fair question",
+          "columns": 1,
+          "example": {
+            "prompt": "Which question is fair?",
+            "steps": [
+              "Our idea is great, isn't it? pushes people to say yes.",
+              "Out of 5, how useful is it? lets people choose.",
+              "The second question is fair."
+            ],
+            "answer": "Out of 5, how useful is it?"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Which question is fair?",
+              "options": [
+                "You think it's amazing, don't you?",
+                "How often would you use it?"
+              ],
+              "answer": 1,
+              "hint": "Fair questions let people choose any answer."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Which question is fair?",
+              "options": [
+                "What would you change about it?",
+                "Your mates said yes. Will you?"
+              ],
+              "answer": 0,
+              "hint": "Does it push people to one answer?"
+            }
+          ]
+        },
+        {
+          "title": "Finish our survey questions",
+          "columns": 1,
+          "example": {
+            "prompt": "Finish: Out of 5, how useful would a ___ be?",
+            "steps": [
+              "Pick the product: cord tidy.",
+              "Put it in the gap.",
+              "Out of 5, how useful would a cord tidy be?"
+            ],
+            "answer": "Out of 5, how useful would a cord tidy be?"
+          },
+          "items": [
+            {
+              "prompt": "Finish the question with your team's idea.",
+              "hint": "Out of 5, how useful would a ___ be for you?",
+              "answer": "Out of 5, how useful would a ___ be for you?",
+              "lines": 1
+            },
+            {
+              "prompt": "Finish the question with your team's idea.",
+              "hint": "What would make our ___ better?",
+              "answer": "What would make our ___ better?",
+              "lines": 1
+            },
+            {
+              "prompt": "Which idea got the most tokens?",
+              "hint": "Count the tokens in each cup.",
+              "answer": "the idea with the most tokens",
+              "lines": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "cards",
+      "label": "Shark Tokens",
+      "description": "Print and cut before the session: about four per Grade 6, one per Grade 5 team. Collect them back after.",
+      "cols": 3,
+      "cards": [
+        {
+          "text": "Shark Token",
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          }
+        },
+        {
+          "text": "Shark Token",
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          }
+        },
+        {
+          "text": "Shark Token",
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          }
+        },
+        {
+          "text": "Shark Token",
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          }
+        },
+        {
+          "text": "Shark Token",
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          }
+        },
+        {
+          "text": "Shark Token",
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          }
+        },
+        {
+          "text": "Shark Token",
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          }
+        },
+        {
+          "text": "Shark Token",
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          }
+        },
+        {
+          "text": "Shark Token",
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          }
+        },
+        {
+          "text": "Shark Token",
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          }
+        },
+        {
+          "text": "Shark Token",
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          }
+        },
+        {
+          "text": "Shark Token",
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          }
+        }
+      ],
+      "showNameDate": false
+    },
+    {
+      "kind": "page",
+      "label": "Family Note",
+      "description": "Send home at the end of the session: asks families for clean junk for the Week 6 and 7 builds.",
+      "title": "Shark Tank: We Need Your Junk!",
+      "subtitle": "A note for Grade 5 families",
+      "blocks": [
+        {
+          "text": "Dear families,"
+        },
+        {
+          "text": "Our Grade 5s are building their own small businesses. Each team will invent a product that fixes a real problem, build a prototype, and pitch it to the Grade 6 sharks at our Shark Tank on Monday 7 December."
+        },
+        {
+          "text": "The big rule is upcycling: every product must be made from things that have already been used. That is where you come in."
+        },
+        {
+          "heading": "Please send in clean, safe items such as"
+        },
+        {
+          "checklist": [
+            "cardboard boxes, tubes and egg cartons",
+            "clean plastic bottles, tubs and lids",
+            "old clothes, socks, jeans and fabric scraps",
+            "bottle tops, jar lids, corks and string",
+            "old toys, game pieces and broken bits that can be reused"
+          ]
+        },
+        {
+          "heading": "Please do not send"
+        },
+        {
+          "checklist": [
+            "glass, sharp metal or anything broken and sharp",
+            "packaging that held nuts or other allergy foods",
+            "batteries or anything electrical"
+          ]
+        },
+        {
+          "text": "Please send items to your child's classroom tub from Monday 2 November, and by Friday 13 November. Your child's team will tell you what their product needs."
+        },
+        {
+          "heading": "Can you help with hot glue?"
+        },
+        {
+          "text": "We are looking for parent helpers to run a supervised hot glue station during the Shark Tank sessions in Weeks 6 and 7. Helpers sign in at the office and follow our school's volunteer rules, including a Working with Children Check if the school asks. If you can help, please let your child's teacher know. Thank you!"
+        },
+        {
+          "text": "The Grade 5 Shark Tank teachers"
+        }
+      ],
+      "showNameDate": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Session 3 of Shark Tank, the last homeroom session. One line: today the market tells each team which idea to build."
+    },
+    {
+      "kind": "resources",
+      "notes": "Cut the Shark Tokens: about four per Grade 6, one per Grade 5 team (12 a page, so about 4 copies per class). One cup per idea card. Clear stall space. Cue the Glossy Boys clip. Print the Worksheet one per Grade 5, a few Extension and Supported copies, and one Family Note per Grade 5."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how market research helps a business choose what to make.",
+      "successCriteria": [
+        "I can explain what market research is.",
+        "I can write a fair survey question.",
+        "I can use what the market tells us to choose our product."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Each team has three ideas. Today the market helps you pick one."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Grade 6s, you're the market today.",
+            "You'll invest tokens, just like on Shark Tank Day."
+          ]
+        ],
+        "prep": "SC1 what market research is, reachable for all; SC2 a fair question is the core; SC3 choosing from the results. Anchor: Find a problem. Upcycle a fix. Pitch it.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Who is Glossy Boys for?",
+      "visual": {
+        "type": "video",
+        "youtube": "ie2Q1srSpk0",
+        "label": "Watch on YouTube: Glossy Boys",
+        "end": 180
+      },
+      "prompt": "Turn and tell: who did Lucas make his product for?",
+      "notes": {
+        "answer": "boys and men who want to wear nail polish",
+        "beats": [
+          [
+            "PLAY 0:00 to 3:00, the pitch. The player stops itself; the full clip is 10:00.",
+            "SAY: Watch for who Lucas is selling to."
+          ],
+          [
+            "ASK: Who did Lucas make his product for?",
+            "30 sec. Turn and tell, partner A first.",
+            "EXPECT: boys, men who want nail polish"
+          ],
+          [
+            "SCAN for boys or men, not everyone.",
+            "80%+ -> cold call one pair: how would he know they want it?",
+            "Less -> replay his opening, re-ask."
+          ],
+          [
+            "SAY: Lucas got a $75,000 deal, the youngest ever to get one on the show.",
+            "He knew exactly who his customers were."
+          ]
+        ],
+        "trap": [
+          "saying his product is for everyone.",
+          "Fix: ask who most nail polish ads are aimed at, student names the gap."
+        ],
+        "prep": "Launch. A clear customer group sets up target market. The clip is an exclusive first look from Shark Tank Australia.",
+        "sources": "Glossy Boys, Shark Tank Australia; SmartCompany on Lucas Lane's $75,000 deal.",
+        "tag": "[Launch | Planning made visible | HITS 1]",
+        "care": "Anyone can wear nail polish. Stop any teasing at once, then refocus on his customers."
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "target market",
+      "meaning": "The group of people most likely to want your product.",
+      "example": "The target market for Glossy Boys is boys and men who want nail polish.",
+      "pictogram": "target",
+      "notes": {
+        "answer": "the group of people most likely to want your product",
+        "beats": [
+          "POINT to the words. SAY: Target market. Say it with me. Tar-get mar-ket.",
+          "SAY: Your target market is the group most likely to want your product.",
+          [
+            "ASK: Pocket Pal's target market: everyone, or kids with bag hooks?",
+            "10 sec. Cue: Everyone, together, on three.",
+            "EXPECT: kids with bag hooks"
+          ]
+        ],
+        "trap": [
+          "thinking the target market is everyone.",
+          "Fix: ask who would want it most, student names one group."
+        ],
+        "prep": "First of two key words. For most teams the target market is kids at our school, so the Grade 6s are the right people to ask.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "market research",
+      "meaning": "Asking your target market what they need, like and would pay for.",
+      "example": "Before building, the team asked 20 Grade 6s which idea they'd use.",
+      "pictogram": "clipboard",
+      "notes": {
+        "answer": "asking your target market what they need, like and would pay for",
+        "beats": [
+          "POINT to the words. SAY: Market research. Say it with me.",
+          [
+            "SAY: Market research means asking your target market before you build.",
+            "Then you build what they want, not just what you like."
+          ],
+          [
+            "ASK: Who should a Pocket Pal team ask?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: kids with bag hooks, kids at our school"
+          ]
+        ],
+        "trap": [
+          "asking only your friends or your own team.",
+          "Fix: ask whether friends would say no, student names the target market."
+        ],
+        "prep": "Second key word. Today's Token Test is the market research.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Fair questions get honest answers",
+      "visual": {
+        "type": "table",
+        "fontSize": 20,
+        "rows": [
+          [
+            "Unfair",
+            "Fair"
+          ],
+          [
+            "You love Pocket Pal, don't you?",
+            "Which would you use most: A, B or C?"
+          ],
+          [
+            "Hats on the floor are annoying, right?",
+            "Out of 5, how useful is a Pocket Pal?"
+          ],
+          [
+            "Pocket Pal is perfect, isn't it?",
+            "What would make Pocket Pal better?"
+          ]
+        ]
+      },
+      "label": "A choice. A score out of 5. What would make it better?",
+      "notes": {
+        "answer": "fair questions let people give any answer",
+        "beats": [
+          [
+            "POINT to the Unfair column.",
+            "SAY: These push people to say yes, so they tell me nothing."
+          ],
+          [
+            "POINT to the Fair column.",
+            "SAY: A choice, a score out of 5, what would make it better. Honest answers."
+          ],
+          [
+            "ASK: Out of 5, how useful would a Pocket Pal be for you?",
+            "10 sec. Cue: fingers at your chest... show me.",
+            "EXPECT: a spread of scores"
+          ],
+          [
+            "ASK: What tells me more: a room of fives, or a spread?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: a spread, it shows what people really think"
+          ]
+        ],
+        "trap": [
+          "writing questions that start You love... or ...right?",
+          "Fix: turn it into a choice or a score, student rewrites."
+        ],
+        "stretch": "Why is a spread more useful than all fives?",
+        "help": "Give the three starters: Which would you..., Out of 5..., What would make...",
+        "prep": "The model for SC2. The fingers vote is live market research on Pocket Pal; read the spread aloud.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Fair or unfair?",
+      "routine": "boards",
+      "thinkTime": 10,
+      "pivot": "ask: does it push people to one answer? then re-ask",
+      "followUp": "cold call one board: how would you make it fair?",
+      "items": [
+        {
+          "text": "Our hat clip is awesome, right?",
+          "answer": "Unfair - it pushes people to say yes",
+          "expect": "unfair"
+        },
+        {
+          "text": "Which of our three ideas would you use most?",
+          "answer": "Fair - people can choose any idea",
+          "expect": "fair"
+        },
+        {
+          "text": "Would you pay $1, $3 or $5 for it?",
+          "answer": "Fair - people choose a price",
+          "expect": "fair"
+        },
+        {
+          "text": "Don't you hate tangled cords?",
+          "answer": "Unfair - it tells people how to feel",
+          "expect": "unfair"
+        },
+        {
+          "text": "What would make this idea better?",
+          "answer": "Fair - people can say anything",
+          "expect": "fair"
+        },
+        {
+          "text": "Wouldn't your mum love one of these?",
+          "answer": "Unfair - it pushes people to say yes",
+          "expect": "unfair"
+        },
+        {
+          "text": "Everyone else liked it. Do you?",
+          "answer": "Unfair - it pressures people to agree",
+          "expect": "unfair"
+        },
+        {
+          "text": "Out of 5, how useful is this for you?",
+          "answer": "Fair - people choose a score",
+          "expect": "fair"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Your turn. Write fair or unfair.",
+          "Fair means people can give any answer."
+        ],
+        "trap": [
+          "calling a question fair because it is polite.",
+          "Fix: ask whether someone could easily say no, student re-judges."
+        ],
+        "stretch": "Rewrite each unfair question so it is fair.",
+        "help": "Point to the Fair column on the last slide.",
+        "prep": "First decision point: spotting a pushy question. Teams write their own survey next. SC2. Eight items, about 8 minutes.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 6]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Who should the Pocket Pal team ask?",
+      "prompt": "Pick the target market. Point to A, B or C.",
+      "options": [
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "globe"
+          },
+          "text": "Everyone in the world",
+          "misconception": "thinks the target market is everyone"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "backpack"
+          },
+          "text": "Kids at school with bag hooks"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "group"
+          },
+          "text": "The team that made it",
+          "misconception": "asks the people who already like the idea"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - kids at school with bag hooks",
+        "beats": [
+          "SAY: Think about who would want a Pocket Pal most.",
+          [
+            "ASK: Who should the Pocket Pal team ask?",
+            "15 sec. Cue: voices off. Point... now.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN pointing fingers, back row first.",
+            "80%+ -> reveal, cold call one B: why not the team?",
+            "Less -> ask who has the problem, then who to ask, re-ask."
+          ],
+          [
+            "REVEAL after fingers are scanned.",
+            "SAY: B. Ask the people who have the problem. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "choosing C because the team knows the product best.",
+          "Fix: ask whether the team would ever say no, student re-chooses."
+        ],
+        "prep": "Second decision point. Under 80% means each team names its target market aloud before the Token Test.",
+        "tag": "[CFU | Supported application | SC1 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "The Token Test",
+      "task": "Grade 5s: make an idea card for each of your three ideas, ask your fair questions and count the tokens. Grade 6s: at every stall, put one token on the idea you'd back.",
+      "where": "Your stall and Worksheet",
+      "frame": "Our final product is ___ because the market told us ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "clipboard",
+          "coins",
+          "tick"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Ask. Count. Choose.",
+      "extendedTask": "the Token Test: idea cards, a three-question survey, a token count and a final product choice",
+      "notes": {
+        "answer": "each team chooses one product from its tokens and survey answers",
+        "beats": [
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Everyone, together, on three: Ask. Count. Choose."
+          ],
+          [
+            "TIME 30 minutes: cards 8, Token Test 15, count and choose 7.",
+            "SAY: Grade 6s, while cards are made, check your team's questions are fair.",
+            "Then one token at every stall. You invest, you don't buy."
+          ],
+          "CIRCULATE. Ask: what did the market tell you that surprised you?",
+          [
+            "TIME at 30: each team writes its final product on the class list.",
+            "SAY: Name the product and the problem it fixes."
+          ]
+        ],
+        "trap": [
+          "a team ignoring the tokens and choosing its own favourite.",
+          "Fix: point to the count and the comments, team gives a reason from them."
+        ],
+        "stretch": "Extension: read another team's results and spot what tokens don't show.",
+        "help": "Supported Worksheet: pick the fair question, finish the starters.",
+        "prep": "Grade 6s help count at the end and rehearse the Shark Tank Day token routine. Collect tokens back. Send the class list to the Shark Tank teachers by Friday.",
+        "tag": "[You Do | Independent application | SC3 | HITS 5, 10]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "You want to sell bird feeders made from milk bottles. Who is your target market?",
+        "Write one fair question to ask them."
+      ],
+      "notes": {
+        "answer": "e.g. families with gardens; Out of 5, how likely are you to hang one up?",
+        "beats": [
+          "SAY: A new product. Work on your own.",
+          [
+            "ASK: Name the target market, then write one fair question.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: people with gardens; a choice or score question"
+          ],
+          "RECORD who writes everyone, or a question that pushes to yes."
+        ],
+        "trap": [
+          "Everyone. You'd love a bird feeder, wouldn't you?",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new product. One board per student, Grade 6s included.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner your team's final product, and the evidence that chose it.",
+      "selfAssessment": "Fist to five: how sure is your team that the market wants your product?",
+      "notes": {
+        "answer": "a product and a reason from the tokens or survey",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: Fist to five: how sure is your team that the market wants your product?",
+            "5 sec. Cue: fingers at your chest... show me.",
+            "EXPECT: mostly three to five"
+          ],
+          "RECORD teams showing fists and ones for the Shark Tank teachers.",
+          [
+            "ASK: Tell your partner your final product and the evidence that chose it.",
+            "30 sec. Turn and tell, partner A first.",
+            "EXPECT: we got the most tokens, people said..."
+          ]
+        ],
+        "prep": "Last homeroom session. Family Note goes home today. From Week 5 the Grade 5s build with the Shark Tank teachers. SC3.",
+        "tag": "[Closing | Retention and recall | SC3 | HITS 9]"
+      }
+    }
+  ]
+}

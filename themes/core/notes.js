@@ -487,6 +487,27 @@ async function rewriteSpeakerNotesInFile(pptxPath, slides) {
   await fs.promises.writeFile(pptxPath, output);
 }
 
+/**
+ * PptxGenJS numbers an online video's shape from its relationship id, so it can
+ * share an id with another shape on the slide, which PowerPoint repairs on open.
+ * Give each embedded video the next free id instead.
+ */
+async function fixOnlineVideoIdsInFile(pptxPath) {
+  const zip = await JSZip.loadAsync(await fs.promises.readFile(pptxPath));
+  let changed = false;
+  for (const name of Object.keys(zip.files).filter((n) => /^ppt\/slides\/slide\d+\.xml$/.test(n))) {
+    let xml = await zip.file(name).async("string");
+    if (!xml.includes("<a:videoFile r:link=")) continue;
+    let next = Math.max(...[...xml.matchAll(/<p:cNvPr id="(\d+)"/g)].map((m) => Number(m[1]))) + 1;
+    xml = xml.replace(/(<p:cNvPr id=")\d+(" name="Media \d+"\/>\s*<p:cNvPicPr\/>\s*<p:nvPr>\s*<a:videoFile r:link=)/g,
+      (_m, a, b) => `${a}${next++}${b}`);
+    zip.file(name, xml);
+    changed = true;
+  }
+  if (!changed) return;
+  await fs.promises.writeFile(pptxPath, await zip.generateAsync({ type: "nodebuffer", compression: "DEFLATE" }));
+}
+
 function cleanTargetText(value) {
   return toAscii(stripMarkdown(String(value || ""))).replace(/\s+/g, " ").trim();
 }
@@ -672,6 +693,7 @@ function installNotesPatch(PptxGenJS) {
     if (typeof filePath === "string") {
       const slides = this.slides || [];
       await rewriteSpeakerNotesInFile(filePath, slides);
+      await fixOnlineVideoIdsInFile(filePath);
       // Lazy require: animations.js needs nothing from this module, so there
       // is no cycle, but keeping it lazy means decks that never call
       // clickBuild() do not pay for loading it.

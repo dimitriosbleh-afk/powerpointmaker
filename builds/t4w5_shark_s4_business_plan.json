@@ -1,0 +1,844 @@
+{
+  "lesson": {
+    "subject": "inquiry",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 5,
+    "session": 4,
+    "variant": 3,
+    "minutes": 60,
+    "title": "The Business Plan",
+    "subtitle": "Shark Tank | Term 4 Week 5, Session 4",
+    "meta": "Grade 5 Inquiry | Shark Tank",
+    "footer": "Shark Tank | Grade 5 Inquiry | Week 5 Session 4",
+    "outputFolder": "T4W5_SharkTank_S4_Business_Plan",
+    "fileName": "Session 4 - The Business Plan.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "magnifier",
+          "label": "Find a problem"
+        },
+        {
+          "name": "recycle",
+          "label": "Upcycle a fix"
+        },
+        {
+          "name": "megaphone",
+          "label": "Pitch it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "Victorian Curriculum Economics and Business, Levels 5 and 6: types of resources (natural, human, capital) and how they are used to make what people want; Design and Technologies, Levels 5 and 6: planning the materials and steps to produce a design",
+      "shape": "15 minutes explicit, 40 minutes team time: upcycling kids on BTN, the three kinds of resources on Pocket Pal, a quick sorting round, then teams write their business plan",
+      "criticalFeature": "every product uses natural, human and capital resources; upcycling saves natural resources because the materials already exist",
+      "decisionPoints": [
+        "the Natural, human or capital? round",
+        "the choice check: which resource upcycling saves",
+        "the exit board: three resources for a new product"
+      ],
+      "anchor": "Find a problem. Upcycle a fix. Pitch it.",
+      "catchUp": "Missed the homeroom sessions? Say: your team found a problem, the Grade 6s tested three ideas, and the market chose one. Your team catches you up in two minutes."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Each team's Session 3 Token Test results and final product"
+    ],
+    "manipulatives": [
+      "A Pocket Pal model, or old jeans, scissors and a sewing needle to hold up during the I Do",
+      "The class junk tubs the Grade 5s bring from their homerooms"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Turn and tell",
+      "Point to A, B or C"
+    ],
+    "boardSetup": [
+      "Three headings on the board: Natural, Human, Capital",
+      "The team list from the homerooms, with each team's final product"
+    ],
+    "videos": [
+      "BTN Upcycling Kids (2015, about 4 min): students turn hard-to-recycle waste into pencil cases and bags (abc.net.au/btn/classroom/upcycling-kids/10527044)"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your team's business plan: the product, the problem, the market and every resource you need.",
+      "title": "Our Business Plan",
+      "subtitle": "Write every team member's name. Hand this in on Shark Tank Day.",
+      "sections": [
+        {
+          "title": "Sort the resources",
+          "columns": 1,
+          "example": {
+            "prompt": "Pocket Pal needs scissors. Natural, human or capital?",
+            "steps": [
+              "Ask: is it from nature, a person, or a tool people made?",
+              "Scissors are a tool people made, used again and again.",
+              "Tools and machines are capital."
+            ],
+            "answer": "Capital"
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "Sort each resource for a team making bird houses from old fence palings.",
+              "groups": [
+                "natural",
+                "human",
+                "capital"
+              ],
+              "cards": [
+                "wood from the old palings",
+                "a saw",
+                "Jai, who measures and cuts",
+                "rainwater to clean them",
+                "a hammer",
+                "Ruby, who paints the signs"
+              ],
+              "answer": {
+                "natural": [
+                  "wood from the old palings",
+                  "rainwater to clean them"
+                ],
+                "human": [
+                  "Jai, who measures and cuts",
+                  "Ruby, who paints the signs"
+                ],
+                "capital": [
+                  "a saw",
+                  "a hammer"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Our business",
+          "columns": 1,
+          "example": {
+            "prompt": "Fill in the business details for Pocket Pal.",
+            "steps": [
+              "Name: Pocket Pal. Product: a hanging pocket for your bag hook.",
+              "Problem: hats and bottles fall off bag hooks.",
+              "Target market: kids at school with bag hooks."
+            ],
+            "answer": "Pocket Pal | hanging pocket | things fall off hooks | kids with bag hooks"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in your team's business details.",
+              "columns": [
+                "Our business",
+                "Our answer"
+              ],
+              "rows": [
+                [
+                  "Business name",
+                  ""
+                ],
+                [
+                  "Our product",
+                  ""
+                ],
+                [
+                  "The problem it fixes",
+                  ""
+                ],
+                [
+                  "Our target market",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Business name",
+                  "e.g. Clip It"
+                ],
+                [
+                  "Our product",
+                  "e.g. a hat clip made from bread tags and string"
+                ],
+                [
+                  "The problem it fixes",
+                  "e.g. hats get lost at lunch"
+                ],
+                [
+                  "Our target market",
+                  "e.g. kids at our school"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Our resources",
+          "columns": 1,
+          "example": {
+            "prompt": "List one resource Pocket Pal needs and where it comes from.",
+            "steps": [
+              "Resource: denim. It comes from old jeans.",
+              "Old jeans are already made, so it is upcycled.",
+              "Who brings it? Sam's family has two old pairs."
+            ],
+            "answer": "Denim | natural | upcycled from old jeans | Sam"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "List the resources your team needs. Use at least one of each kind.",
+              "columns": [
+                "Resource",
+                "Natural, human or capital?",
+                "Upcycled from, or who"
+              ],
+              "rows": [
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "e.g. cardboard",
+                  "natural",
+                  "old cereal boxes, Mia brings"
+                ],
+                [
+                  "e.g. hot glue gun",
+                  "capital",
+                  "from the classroom"
+                ],
+                [
+                  "e.g. Leo, the builder",
+                  "human",
+                  "our team"
+                ],
+                [
+                  "e.g. string",
+                  "natural",
+                  "old shoelaces, Ari brings"
+                ]
+              ]
+            },
+            {
+              "kind": "open",
+              "prompt": "Sketch your first design. Label each part with what it is made from.",
+              "answer": "A sketch with labels naming the upcycled material for each part."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: work out what upcycling saves your team.",
+      "title": "Extension: What Upcycling Saves",
+      "subtitle": "Upcycled materials cost less and save natural resources.",
+      "sections": [
+        {
+          "title": "Count the savings",
+          "columns": 1,
+          "intro": "When you upcycle, you don't pay for new materials. The money you save is the difference between the new price and the upcycled price.",
+          "example": {
+            "prompt": "New denim costs $12. Old jeans from home cost $0. How much does upcycling save?",
+            "steps": [
+              "New price: $12.",
+              "Upcycled price: $0.",
+              "$12 - $0 = $12 saved."
+            ],
+            "answer": "$12"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Work out the savings for each material.",
+              "columns": [
+                "Material",
+                "New price",
+                "Upcycled price",
+                "Saved"
+              ],
+              "rows": [
+                [
+                  "Cardboard sheet",
+                  "$4",
+                  "$0",
+                  ""
+                ],
+                [
+                  "String",
+                  "$3",
+                  "$1",
+                  ""
+                ],
+                [
+                  "Fabric",
+                  "$9",
+                  "$0",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Cardboard sheet",
+                  "$4",
+                  "$0",
+                  "$4"
+                ],
+                [
+                  "String",
+                  "$3",
+                  "$1",
+                  "$2"
+                ],
+                [
+                  "Fabric",
+                  "$9",
+                  "$0",
+                  "$9"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Natural resources saved",
+          "columns": 1,
+          "example": {
+            "prompt": "Why does a cardboard box made from an old box save a natural resource?",
+            "steps": [
+              "New cardboard is made from trees.",
+              "Using an old box means no new cardboard is needed.",
+              "Fewer trees are cut down."
+            ],
+            "answer": "It saves trees, a natural resource."
+          },
+          "items": [
+            {
+              "prompt": "Pick one material your team is upcycling. Which natural resource does it save, and how?",
+              "answer": "e.g. Old T-shirts: new cotton needs land and lots of water to grow, so we save cotton and water.",
+              "lines": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Picture clues for the three kinds of resources, and a business plan with sentence starters.",
+      "title": "Our Business Plan",
+      "subtitle": "Natural, human, capital.",
+      "sections": [
+        {
+          "title": "Three kinds of resources",
+          "columns": 1,
+          "example": {
+            "prompt": "Pocket Pal needs scissors.",
+            "visual": {
+              "type": "pictograms",
+              "items": [
+                {
+                  "name": "tree",
+                  "label": "natural: from nature"
+                },
+                {
+                  "name": "person",
+                  "label": "human: people's work"
+                },
+                {
+                  "name": "wrench",
+                  "label": "capital: tools people made"
+                }
+              ]
+            },
+            "steps": [
+              "Scissors are a tool.",
+              "People made them.",
+              "Tools are capital."
+            ],
+            "answer": "Capital"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Wood from old fence palings",
+              "options": [
+                "natural",
+                "human",
+                "capital"
+              ],
+              "answer": 0,
+              "hint": "Wood comes from trees."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Jai, who measures and cuts",
+              "options": [
+                "natural",
+                "human",
+                "capital"
+              ],
+              "answer": 1,
+              "hint": "Jai is a person."
+            },
+            {
+              "kind": "choice",
+              "prompt": "A hammer",
+              "options": [
+                "natural",
+                "human",
+                "capital"
+              ],
+              "answer": 2,
+              "hint": "A hammer is a tool."
+            }
+          ]
+        },
+        {
+          "title": "Our business",
+          "columns": 1,
+          "example": {
+            "prompt": "Pocket Pal's business.",
+            "steps": [
+              "Our product is a hanging pocket.",
+              "It fixes hats falling off hooks.",
+              "It is made from old jeans."
+            ],
+            "answer": "Our product is a hanging pocket. It fixes hats falling off hooks. It is made from old jeans."
+          },
+          "items": [
+            {
+              "prompt": "Finish the sentences for your team.",
+              "hint": "Our product is ___. It fixes ___. It is made from ___.",
+              "answer": "Our product is ___. It fixes ___. It is made from ___.",
+              "lines": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "First Grade 5 Shark Tank session. One line: today every team writes the plan that turns its idea into a real business."
+    },
+    {
+      "kind": "overview",
+      "title": "For the Shark Tank teachers: Weeks 5 to 10",
+      "lines": [
+        "Two groups of about 30 Grade 5s, each made of whole homeroom classes, one Shark Tank teacher each.",
+        "Every session: about 15 minutes taught, 40 minutes of team work, 5 minutes to exit and reflect.",
+        "The business plan from this session is the assessment piece, handed in on Monday 7 December."
+      ],
+      "notes": "Teacher-facing overview for Sessions 4 to 8 and Shark Tank Day. Skip it on the board."
+    },
+    {
+      "kind": "resources",
+      "notes": "Teams seated together from the homeroom class lists. Make one Pocket Pal per Shark Tank teacher before this week, from old jeans; its strap rips in Week 6's demo. Cue the BTN clip. Print the Worksheet one per team, plus a few Extension and Supported copies. Grade 5s bring their class junk tubs from homeroom; sort them by material as they arrive."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how a business plans the resources it needs.",
+      "successCriteria": [
+        "I can name the three kinds of resources.",
+        "I can sort my team's resources into natural, human and capital.",
+        "I can complete my team's business plan."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Your team has its product. Today you plan everything it needs."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          "SAY: Fifteen minutes with me, then forty minutes for your team. Let's be quick."
+        ],
+        "prep": "15 minutes explicit, 40 team time. SC1 naming resources for all; SC2 sorting is the core; SC3 the plan. Anchor: Find a problem. Upcycle a fix. Pitch it.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Kids who turn rubbish into products",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "recycle",
+            "label": "old rubbish"
+          },
+          {
+            "name": "arrowRight",
+            "label": "upcycled"
+          },
+          {
+            "name": "backpack",
+            "label": "new product"
+          }
+        ]
+      },
+      "prompt": "Watch on BTN: Upcycling Kids",
+      "link": "https://www.abc.net.au/btn/classroom/upcycling-kids/10527044",
+      "notes": {
+        "answer": "toothpaste tubes and other hard-to-recycle waste, made into bows, pencil cases and bags",
+        "beats": [
+          [
+            "PLAY the whole BTN story from the link, about 4 minutes.",
+            "SAY: Watch what these kids start with, and what they end up with."
+          ],
+          [
+            "ASK: What did they start with, and what did they make?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: toothpaste tubes, made into pencil cases and bags"
+          ],
+          [
+            "SCAN for both parts: the waste and the product.",
+            "80%+ -> cold call one pair: why upcycle, not bin it?",
+            "Less -> replay the first minute, re-ask."
+          ],
+          [
+            "ASK: Thumbs: could you upcycle something from your bin at home?",
+            "5 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: thumbs up"
+          ]
+        ],
+        "trap": [
+          "saying they recycled it.",
+          "Fix: ask whether the tube was broken down or kept and changed, student says upcycled."
+        ],
+        "prep": "Launch. The BTN story shows waste as a resource. About 6 minutes including the clip discussion.",
+        "sources": "BTN Classroom, Upcycling Kids, 24 February 2015.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      },
+      "label": "Turn and tell: what did they start with, and what did they make?"
+    },
+    {
+      "kind": "keyWord",
+      "word": "resources",
+      "meaning": "Everything a business uses to make its product: natural, human and capital.",
+      "example": "Pocket Pal's resources are old jeans, the team's sewing, and a pair of scissors.",
+      "pictogram": "build",
+      "notes": {
+        "answer": "everything a business uses to make its product",
+        "beats": [
+          "POINT to the word. SAY: Resources. Say it with me. Re-sour-ces.",
+          [
+            "SAY: Natural resources come from nature. Human resources are people's work.",
+            "Capital is the tools and machines people made."
+          ],
+          [
+            "ASK: Scissors. Natural, human or capital?",
+            "10 sec. Cue: Everyone, together, on three.",
+            "EXPECT: capital"
+          ],
+          [
+            "ASK: Name one natural resource in this room.",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: wood, paper, water"
+          ]
+        ],
+        "trap": [
+          "calling capital money.",
+          "Fix: in business, capital also means tools and machines. Student names one."
+        ],
+        "prep": "One key word carrying three kinds. Point to the three board headings as you say each.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Pocket Pal's resources",
+      "visual": {
+        "type": "table",
+        "fontSize": 20,
+        "rows": [
+          [
+            "Natural",
+            "Human",
+            "Capital"
+          ],
+          [
+            "Cotton in the old jeans",
+            "The designer who draws it",
+            "Scissors"
+          ],
+          [
+            "Water to wash the jeans",
+            "The sewer who stitches it",
+            "A sewing needle"
+          ],
+          [
+            "",
+            "The seller who pitches it",
+            "A hot glue gun"
+          ]
+        ]
+      },
+      "label": "Upcycling: the jeans already exist, so no new cotton is grown.",
+      "notes": {
+        "answer": "natural: cotton, water; human: designer, sewer, seller; capital: scissors, needle, glue gun",
+        "beats": [
+          [
+            "HOLD UP the old jeans.",
+            "ASK: Cotton grown on a farm. Natural, human or capital?",
+            "5 sec. Cue: Everyone, together, on three.",
+            "EXPECT: natural"
+          ],
+          [
+            "POINT to the Human column.",
+            "ASK: The person who sews it. Which column?",
+            "5 sec. Cue: Everyone, together, on three.",
+            "EXPECT: human"
+          ],
+          [
+            "ASK: Scissors and a needle. Which column?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: capital"
+          ],
+          "SAY: And because the jeans already exist, no new cotton is grown. That's upcycling."
+        ],
+        "trap": [
+          "putting the old jeans under capital because they were made by people.",
+          "Fix: ask what jeans are made of, student says cotton, natural."
+        ],
+        "stretch": "Why is the sewing machine capital but the thread natural?",
+        "help": "Point to each column and say one example aloud with the student.",
+        "prep": "The model for SC2. Pocket Pal is the class model business; keep the jeans on the desk all term.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Natural, human or capital?",
+      "routine": "boards",
+      "thinkTime": 8,
+      "pivot": "ask: from nature, a person, or a tool? then re-ask",
+      "followUp": "cold call one board: how do you know?",
+      "items": [
+        {
+          "text": "A stapler",
+          "answer": "Capital - a tool people made",
+          "expect": "capital"
+        },
+        {
+          "text": "Mia's drawing skills",
+          "answer": "Human - a person's skill",
+          "expect": "human"
+        },
+        {
+          "text": "Wool from an old jumper",
+          "answer": "Natural - wool comes from sheep",
+          "expect": "natural"
+        },
+        {
+          "text": "The person who presents the pitch",
+          "answer": "Human - a person's work",
+          "expect": "human"
+        },
+        {
+          "text": "Cardboard from an old box",
+          "answer": "Natural - cardboard is made from trees",
+          "expect": "natural"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Quick round. Write N, H or C",
+          "for natural, human or capital."
+        ],
+        "trap": [
+          "calling cardboard or wool capital because a factory made it.",
+          "Fix: ask what it is made of, student traces it back to nature."
+        ],
+        "stretch": "Name a resource that could be two kinds, and say why.",
+        "help": "Keep the three board headings with one picture each.",
+        "prep": "First decision point: sorting new resources. Brisk: one line of feedback per item. SC2. Five items, about 4 minutes.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 6]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "What does upcycling save?",
+      "prompt": "Pick the resource upcycling saves most. Point to A, B or C.",
+      "options": [
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "tree"
+          },
+          "text": "Natural resources, like trees and cotton"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "person"
+          },
+          "text": "Human resources, like the team's work",
+          "misconception": "thinks upcycling means less work"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "wrench"
+          },
+          "text": "Capital, like scissors and glue guns",
+          "misconception": "thinks upcycling needs no tools"
+        }
+      ],
+      "answer": 0,
+      "notes": {
+        "answer": "A - natural resources",
+        "beats": [
+          "SAY: Think about what we don't need to grow or cut down.",
+          [
+            "ASK: What does upcycling save most?",
+            "15 sec. Cue: voices off. Point... now.",
+            "EXPECT: A"
+          ],
+          [
+            "SCAN pointing fingers, back row first.",
+            "80%+ -> reveal, cold call one A: why not B?",
+            "Less -> hold up the jeans: was new cotton grown? re-ask."
+          ],
+          [
+            "REVEAL after fingers are scanned.",
+            "SAY: Natural resources. The materials already exist. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "choosing B because upcycling feels easier.",
+          "Fix: ask whether the team still has to build it, student re-chooses."
+        ],
+        "prep": "Second decision point and the reason the sharks invest in upcycling. Under 80% means repeat the jeans example before team time.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Write your business plan",
+      "task": "With your team: fill in your business details, list every resource and who brings it, then sketch your first design.",
+      "where": "Business Plan Worksheet",
+      "frame": "We need ___ (natural), ___ (human) and ___ (capital).",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "tree",
+          "person",
+          "wrench"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Natural. Human. Capital.",
+      "extendedTask": "a team business plan: business details, a resources list with who brings what, and a labelled first design",
+      "notes": {
+        "answer": "a plan with natural, human and capital resources, and who brings each",
+        "beats": [
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Everyone, together, on three: Natural. Human. Capital."
+          ],
+          [
+            "TIME 40 minutes. At 20, stop for a check.",
+            "ASK: Thumbs: does every resource have a name beside it?",
+            "5 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: thumbs up"
+          ],
+          "CIRCULATE. Ask: what's upcycled? Who's bringing it? What if they forget?",
+          "TIME at 40: each team names one thing it still needs from home."
+        ],
+        "trap": [
+          "a resources list with nothing upcycled.",
+          "Fix: team swaps one new material for something from the junk tubs."
+        ],
+        "stretch": "Extension: work out what upcycling saves in money and natural resources.",
+        "help": "Supported Worksheet: picture clues and sentence starters. Sit with the team for the first row.",
+        "prep": "The business plan is assessment evidence, handed in on Shark Tank Day. Building starts next week, so materials lists must be done today.",
+        "tag": "[You Do | Independent application | SC3 | HITS 5, 10]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "A team makes book stands from old cereal boxes, cut with scissors by Ava.",
+        "Name one natural, one human and one capital resource."
+      ],
+      "notes": {
+        "answer": "natural: the cardboard; human: Ava's cutting; capital: the scissors",
+        "beats": [
+          "SAY: A new product. Work on your own.",
+          [
+            "ASK: Name one natural, one human and one capital resource.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: cardboard, Ava, scissors"
+          ],
+          "RECORD who swaps capital and natural."
+        ],
+        "trap": [
+          "writing the book stand as the capital.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new product. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner one thing you must bring from home for next week's build.",
+      "selfAssessment": "Fist to five: how ready is your team to start building?",
+      "notes": {
+        "answer": "a named material and who is bringing it",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: Fist to five: how ready is your team to start building?",
+            "5 sec. Cue: fingers at your chest... show me.",
+            "EXPECT: mostly three to five"
+          ],
+          "RECORD teams showing fists and ones. Check their materials list first next week.",
+          [
+            "ASK: Tell your partner what you must bring from home.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: a material and who brings it"
+          ]
+        ],
+        "prep": "Next week is build day one. Teams without materials use the junk tubs. SC3.",
+        "tag": "[Closing | Retention and recall | SC3 | HITS 9]"
+      }
+    }
+  ]
+}

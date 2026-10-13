@@ -26,10 +26,39 @@ const { DEFAULT_SIZES, byBand } = require("./gradeBand");
 const { getImageDimensions } = require("./images");
 const { DIAGRAM_TYPES, diagramPng } = require("./diagrams");
 
+const VIDEO_STILLS = require("path").join(__dirname, "..", "..", "assets", "videos");
+
+/**
+ * YouTube's own still for a video as a PNG data URI, fetched once and cached
+ * in assets/videos/ (gitignored: the stills are YouTube's, not ours).
+ */
+function videoStill(id) {
+  const fs = require("fs");
+  const path = require("path");
+  const png = path.join(VIDEO_STILLS, id + ".png");
+  if (!fs.existsSync(png)) {
+    const { execFileSync } = require("child_process");
+    fs.mkdirSync(VIDEO_STILLS, { recursive: true });
+    const jpg = path.join(VIDEO_STILLS, id + ".jpg");
+    // maxresdefault has no letterbox bars; older uploads only have hqdefault.
+    try {
+      execFileSync("curl", ["-sfL", "-o", jpg, `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`]);
+    } catch (e) {
+      execFileSync("curl", ["-sfL", "-o", jpg, `https://i.ytimg.com/vi/${id}/hqdefault.jpg`]);
+    }
+    // PowerPoint's video cover must be a PNG; sharp is async, so run it in a child process.
+    execFileSync(process.execPath, ["-e",
+      "require('sharp')(process.argv[1]).resize(960, 540, { fit: 'cover' }).png({ palette: true, quality: 90 }).toFile(process.argv[2])", jpg, png],
+    { cwd: path.join(__dirname, "..", "..") });
+    fs.unlinkSync(jpg);
+  }
+  return "data:image/png;base64," + fs.readFileSync(png).toString("base64");
+}
+
 const SUPPORTED_TYPES = [
   "tensFrame", "fiveFrame", "doubleTensFrame", "dotCard", "dotCards", "numberTrack",
   "numberLine", "fractionStrips", "array", "baseTen", "groupedCounters", "ppwMat",
-  "chips", "pictogram", "pictograms", "text", "image", "table", "custom",
+  "chips", "pictogram", "pictograms", "text", "image", "video", "table", "custom",
   ...DIAGRAM_TYPES,
 ];
 
@@ -369,6 +398,32 @@ function createVisualSpec(C, FONT_H, FONT_B, el, S, deps) {
         }
         slide.addImage(s.path ? { path: s.path, x: box.x, y: box.y, w, h } : { data: s.data, x: box.x, y: box.y, w, h });
         return box;
+      }
+      case "video": {
+        // A YouTube clip embedded on the slide (plays in PowerPoint), with its
+        // still as the cover and a text link under it that works everywhere.
+        const id = String(s.youtube || "");
+        const start = Number.isInteger(s.start) && s.start > 0 ? s.start : 0;
+        // "end" stops the embedded player there (PowerPoint honours the embed URL's end).
+        const end = Number.isInteger(s.end) && s.end > start ? s.end : 0;
+        const params = [start ? `start=${start}` : "", end ? `end=${end}` : ""].filter(Boolean).join("&");
+        const linkH = 0.34;
+        let w = f.w;
+        let h = w * 9 / 16;
+        if (h > f.h - linkH) { h = f.h - linkH; w = h * 16 / 9; }
+        const box = centreBox({ x: f.x, y: f.y, w: f.w, h: f.h - linkH }, w, h);
+        slide.addMedia({
+          type: "online",
+          link: `https://www.youtube.com/embed/${id}` + (params ? `?${params}` : ""),
+          cover: videoStill(id),
+          x: box.x, y: box.y, w, h,
+        });
+        const url = `https://www.youtube.com/watch?v=${id}` + (start ? `&t=${start}s` : "");
+        slide.addText([{ text: s.label ? String(s.label) : "Watch on YouTube", options: { hyperlink: { url }, color: C.PRIMARY } }], {
+          x: box.x, y: box.y + h + 0.04, w, h: linkH - 0.04, fontSize: 13, fontFace: FONT_B, bold: true,
+          align: "center", valign: "middle", margin: 0, fit: "shrink", shrinkText: true,
+        });
+        return { x: box.x, y: box.y, w, h: h + linkH };
       }
       case "table": {
         const rows = Array.isArray(s.rows) ? s.rows : [];

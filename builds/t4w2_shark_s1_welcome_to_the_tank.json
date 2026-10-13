@@ -1,0 +1,876 @@
+{
+  "lesson": {
+    "subject": "inquiry",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 2,
+    "session": 1,
+    "variant": 3,
+    "minutes": 60,
+    "title": "Welcome to the Tank",
+    "subtitle": "Shark Tank | Term 4 Week 2, Session 1",
+    "meta": "Year 5/6 Inquiry | Shark Tank",
+    "footer": "Shark Tank | Year 5/6 Inquiry | Week 2 Session 1",
+    "outputFolder": "T4W2_SharkTank_S1_Welcome",
+    "fileName": "Session 1 - Welcome to the Tank.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "magnifier",
+          "label": "Find a problem"
+        },
+        {
+          "name": "recycle",
+          "label": "Upcycle a fix"
+        },
+        {
+          "name": "megaphone",
+          "label": "Pitch it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "Victorian Curriculum Economics and Business, Levels 5 and 6: how businesses meet people's needs and wants; Design and Technologies, Levels 5 and 6: investigating a need and generating design ideas",
+      "shape": "watch, model, try: a real kid entrepreneur, the problem-to-product model, a quick round, then 25 minutes of hands-on Junk Lab in mixed 5/6 teams",
+      "criticalFeature": "a product starts with a problem someone has, not with a cool object; upcycling makes the fix from something already made",
+      "decisionPoints": [
+        "the What problem does it fix? round",
+        "the choice check: which idea follows the anchor",
+        "the exit board: a new problem and an upcycled fix"
+      ],
+      "anchor": "Find a problem. Upcycle a fix. Pitch it.",
+      "catchUp": "Missed today? Say: every product starts with a problem someone has. Join a Junk Lab team next week and use their sketch."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Pencils and coloured pencils"
+    ],
+    "manipulatives": [
+      "One junk box per table: clean recyclables such as cardboard, bottle tops, egg cartons, toilet rolls, jar lids and fabric scraps",
+      "Masking tape, scissors, string and glue sticks for each table"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Turn and tell",
+      "Point to A, B or C"
+    ],
+    "boardSetup": [
+      "Write the unit anchor on the board: Find a problem. Upcycle a fix. Pitch it.",
+      "Before the session, ask two Grade 6s to be ready to share what their team built last year",
+      "Seat mixed teams: two or three Grade 5s with one or two Grade 6s at each table"
+    ],
+    "videos": [
+      "Locker Board on Shark Tank US: Carson Kropfl, aged 11, pitches mini skateboards cut down from old boards (youtube.com/watch?v=IDpfl2aGruE)"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Junk Lab record: spot the problem, then sketch and pitch your team's upcycled fix.",
+      "title": "Problem Hunter",
+      "subtitle": "Every product starts with a problem.",
+      "sections": [
+        {
+          "title": "Spot the problem",
+          "columns": 2,
+          "example": {
+            "prompt": "A pencil cup made from an old tin can. What problem does it fix?",
+            "steps": [
+              "Ask: what goes wrong without it?",
+              "Pencils roll off the desk and get lost.",
+              "Write the problem, not the product."
+            ],
+            "answer": "Pencils roll away and get lost."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "What problem does each upcycled product fix?",
+              "columns": [
+                "Upcycled product",
+                "The problem it fixes"
+              ],
+              "rows": [
+                [
+                  "A key hook made from an old fork.",
+                  ""
+                ],
+                [
+                  "A bag for wet swimmers made from an old raincoat.",
+                  ""
+                ],
+                [
+                  "A shoe rack made from old milk crates.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "A key hook made from an old fork.",
+                  "Keys get lost, so people are late leaving the house."
+                ],
+                [
+                  "A bag for wet swimmers made from an old raincoat.",
+                  "Wet bathers soak everything else in your school bag."
+                ],
+                [
+                  "A shoe rack made from old milk crates.",
+                  "Shoes pile up at the door and people trip on them."
+                ]
+              ],
+              "span": "column"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Problem: my earphones tangle in my bag. Which product fixes it?",
+              "options": [
+                "a cord wrap cut from an old plastic lid",
+                "a sticker for your earphones",
+                "a bigger school bag"
+              ],
+              "answer": 0,
+              "reason": true,
+              "explain": "The cord wrap. It keeps the cord wound up, and it is upcycled from a lid."
+            }
+          ]
+        },
+        {
+          "title": "Problem detective",
+          "columns": 1,
+          "example": {
+            "prompt": "Cords tangle behind the TV. Who has the problem, and what could fix it?",
+            "steps": [
+              "Who has it? Families with lots of plugs.",
+              "What is already made that could help? Toilet roll tubes.",
+              "Fix: label a tube for each cord and thread it through."
+            ],
+            "answer": "Families with lots of plugs; a cord tidy made from toilet roll tubes."
+          },
+          "items": [
+            {
+              "kind": "mistake",
+              "prompt": "Mia wrote her product idea. Find what is missing and fix it.",
+              "work": [
+                "My product is a rainbow drink bottle.",
+                "It is cool because it has glitter on it."
+              ],
+              "answer": "She names no problem. Fix: start with a problem, e.g. my bottle rolls around my bag, then make the fix."
+            },
+            {
+              "kind": "table",
+              "prompt": "Write two problems you have seen at school or at home. Fill in each row.",
+              "columns": [
+                "The problem",
+                "Who has it?",
+                "An upcycled fix"
+              ],
+              "rows": [
+                [
+                  "Hats get lost at lunch",
+                  "Kids at school",
+                  "A hat clip made from a bread tag and string"
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Hats get lost at lunch",
+                  "Kids at school",
+                  "A hat clip made from a bread tag and string"
+                ],
+                [
+                  "e.g. Library books get bent",
+                  "Kids who carry books",
+                  "A book sleeve made from a cereal box"
+                ],
+                [
+                  "e.g. The dog is bored",
+                  "Dog owners",
+                  "A tug toy plaited from old T-shirts"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "My Junk Lab invention",
+          "columns": 2,
+          "example": {
+            "prompt": "Write a one-sentence pitch for a cord tidy made from toilet roll tubes.",
+            "steps": [
+              "Say what it is: a cord tidy.",
+              "Say the problem it fixes: tangled cords.",
+              "Say what it is upcycled from: toilet roll tubes."
+            ],
+            "answer": "Our Cord Keeper stops tangled cords, and it is made from old toilet roll tubes."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Sketch your team's invention. Label each part with the junk it was made from.",
+              "answer": "A clear sketch with at least three labels naming each part and the junk it came from."
+            },
+            {
+              "prompt": "Write your team's one-sentence pitch: what it is, the problem it fixes, what it is made from.",
+              "answer": "Our ___ fixes ___ for ___, and it is made from ___.",
+              "lines": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: make an upcycled idea better, and find more customers.",
+      "title": "Extension: Make It Better",
+      "subtitle": "Great entrepreneurs keep improving.",
+      "sections": [
+        {
+          "title": "Improve it",
+          "columns": 1,
+          "intro": "A first idea is never the last. Entrepreneurs ask: what still goes wrong, and how could we fix that too?",
+          "example": {
+            "prompt": "A pencil cup made from a tin can tips over when it is full. Improve it.",
+            "steps": [
+              "Find what still goes wrong: it tips over.",
+              "Ask why: it is tall and light.",
+              "Fix: glue a heavy jar lid to the bottom to make it steady."
+            ],
+            "answer": "Add a heavy base made from a jar lid so it stays upright."
+          },
+          "items": [
+            {
+              "prompt": "A shoe rack made from milk crates slides around on the floorboards. Improve it, using only junk.",
+              "answer": "e.g. Stick old rubber thongs or bike tube pieces under the crates so they grip the floor.",
+              "lines": 2
+            },
+            {
+              "prompt": "A bag for wet bathers made from a raincoat still leaks at the zip. Improve it.",
+              "answer": "e.g. Fold the top over twice and close it with a clip, or line it with a bread bag.",
+              "lines": 2
+            }
+          ]
+        },
+        {
+          "title": "Who else would want it?",
+          "columns": 1,
+          "example": {
+            "prompt": "Who else could use a cord tidy, apart from families?",
+            "steps": [
+              "Think of places with lots of cords.",
+              "Offices, classrooms and gamers all have cord tangles.",
+              "Each group is a new set of customers."
+            ],
+            "answer": "Office workers, teachers, gamers."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Name a new customer for each product and say why they want it.",
+              "columns": [
+                "Product",
+                "New customer",
+                "Why they want it"
+              ],
+              "rows": [
+                [
+                  "Key hook from an old fork",
+                  "",
+                  ""
+                ],
+                [
+                  "Shoe rack from milk crates",
+                  "",
+                  ""
+                ],
+                [
+                  "Your Junk Lab invention",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Key hook from an old fork",
+                  "e.g. a holiday house owner",
+                  "guests keep losing the keys"
+                ],
+                [
+                  "Shoe rack from milk crates",
+                  "e.g. a swimming club",
+                  "wet shoes pile up at the door"
+                ],
+                [
+                  "Your Junk Lab invention",
+                  "answers vary",
+                  "a real reason linked to the problem"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Circle the problem, then finish your team's pitch with a sentence frame.",
+      "title": "Problem Hunter",
+      "subtitle": "Ask: what goes wrong without it?",
+      "sections": [
+        {
+          "title": "Circle the problem",
+          "columns": 1,
+          "example": {
+            "prompt": "A pencil cup made from an old tin can.",
+            "steps": [
+              "Ask: what goes wrong without it?",
+              "Pencils roll off the desk.",
+              "So the problem is: pencils get lost."
+            ],
+            "answer": "Pencils get lost."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "A key hook made from an old fork. What problem does it fix?",
+              "options": [
+                "keys get lost",
+                "forks are shiny",
+                "doors are heavy"
+              ],
+              "answer": 0,
+              "hint": "Ask: what goes wrong without a key hook?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "A shoe rack made from old milk crates. What problem does it fix?",
+              "options": [
+                "milk goes off",
+                "shoes pile up at the door",
+                "crates are blue"
+              ],
+              "answer": 1,
+              "hint": "Ask: where do shoes end up without a rack?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "A bag for wet bathers made from an old raincoat. What problem does it fix?",
+              "options": [
+                "it rains at school",
+                "raincoats are too big",
+                "wet bathers soak your bag"
+              ],
+              "answer": 2,
+              "hint": "Ask: what happens to your books without it?"
+            }
+          ]
+        },
+        {
+          "title": "My Junk Lab invention",
+          "columns": 1,
+          "example": {
+            "prompt": "Finish the pitch for a cord tidy.",
+            "steps": [
+              "It is a cord tidy.",
+              "It fixes tangled cords.",
+              "It is made from toilet roll tubes."
+            ],
+            "answer": "Our cord tidy fixes tangled cords, and it is made from toilet roll tubes."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Draw your team's invention. Label two parts.",
+              "hint": "Label what each part was before, e.g. bottle top.",
+              "answer": "A sketch with two labels naming the junk used."
+            },
+            {
+              "prompt": "Finish the pitch for your team's invention.",
+              "hint": "Our ___ fixes ___, and it is made from ___.",
+              "answer": "Our ___ fixes ___, and it is made from ___.",
+              "lines": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the Shark Tank unit. One line: every great product starts with a problem someone has."
+    },
+    {
+      "kind": "overview",
+      "title": "For the homeroom teacher: Weeks 2 to 4",
+      "lines": [
+        "Grade 6s are mentors in Week 2, consultant sharks in Week 3 and the market in Week 4.",
+        "Before Week 3, form Grade 5 teams of three or four from the Session 1 Worksheets. By Friday of Week 4, send the team list to the Shark Tank teachers.",
+        "The Week 4 Family Note sends junk to a tub in your room (2 to 13 November). Grade 5s carry it to their Shark Tank session in Weeks 5 and 6 and leave it there; send later items across by 13 November."
+      ],
+      "notes": "Teacher-facing overview for Sessions 1 to 3. Skip it on the board; read it before Week 2."
+    },
+    {
+      "kind": "resources",
+      "notes": "Junk box, tape and scissors on every table before the bell. Two Grade 6s ready to share last year's build. Play the Locker Board clip once beforehand to cue the pitch. Print the Worksheet for everyone, plus a few Extension and Supported Worksheet copies."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how entrepreneurs turn a problem into a product.",
+      "successCriteria": [
+        "I can name a problem that people have.",
+        "I can explain how a product fixes a problem.",
+        "I can turn junk into a product idea and pitch it in one sentence."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: For the rest of the term, you're entrepreneurs, and the Grade 6s are the sharks."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Grade 5s, you'll build a business. Grade 6s, you did this last year.",
+            "Today you're the experts at every table."
+          ]
+        ],
+        "prep": "SC1 naming a problem is reachable for all; SC2 problem to product is the core; SC3 is the Junk Lab pitch. Anchor said once: Find a problem. Upcycle a fix. Pitch it.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "An 11-year-old in the Shark Tank",
+      "visual": {
+        "type": "video",
+        "youtube": "IDpfl2aGruE",
+        "label": "Watch on YouTube: Locker Board",
+        "end": 180
+      },
+      "prompt": "Turn and tell: what problem did Carson fix?",
+      "notes": {
+        "answer": "his skateboard didn't fit in his school locker, so he cut old boards down",
+        "beats": [
+          [
+            "PLAY 0:00 to 3:00, the pitch. The player stops itself; the full clip is 9:06.",
+            "SAY: Watch for the problem Carson had before he had a business."
+          ],
+          [
+            "ASK: What problem did Carson fix?",
+            "30 sec. Turn and tell, partner A first.",
+            "EXPECT: his skateboard wouldn't fit in his locker."
+          ],
+          [
+            "SCAN for the locker, not just skateboards.",
+            "80%+ -> cold call one pair: what did he make it from?",
+            "Less -> replay his opening line, re-ask."
+          ],
+          "SAY: He didn't start with a cool board. He started with a problem."
+        ],
+        "trap": [
+          "saying his product was a skateboard.",
+          "Fix: ask what went wrong before Locker Board, student names the locker."
+        ],
+        "prep": "Launch. Carson cut down old skateboards: problem, upcycled fix and pitch in one real story. He got a deal from Richard Branson.",
+        "sources": "Locker Board, Shark Tank US Season 9; Green Matters 2018 on the recycled boards.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "entrepreneur",
+      "meaning": "A person who spots a problem and starts a business to fix it.",
+      "example": "Carson is an entrepreneur. He fixed his own problem, then sold the fix.",
+      "pictogram": "lightbulb",
+      "notes": {
+        "answer": "a person who spots a problem and starts a business to fix it",
+        "beats": [
+          "POINT to the word. SAY: Entrepreneur. Say it with me. On-truh-pruh-ner.",
+          "SAY: An entrepreneur spots a problem and starts a business to fix it.",
+          [
+            "ASK: Is Carson an entrepreneur? Why?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: yes, he spotted a problem and started a business"
+          ]
+        ],
+        "trap": [
+          "thinking only rich adults can be entrepreneurs.",
+          "Fix: point to Carson's age, student restates the meaning."
+        ],
+        "prep": "First of two key words. Every Grade 5 is an entrepreneur from today.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "upcycle",
+      "meaning": "To turn something old or unwanted into something new and more useful.",
+      "example": "Carson upcycled old skateboards into boards that fit in a locker.",
+      "pictogram": "recycle",
+      "notes": {
+        "answer": "turning something old or unwanted into something new and more useful",
+        "beats": [
+          "POINT to the word. SAY: Upcycle. Say it with me. Up-cy-cle.",
+          [
+            "SAY: Recycling breaks things down. Upcycling turns old things into something better.",
+            "Our sharks love upcycled products."
+          ],
+          [
+            "ASK: An old jar becomes a pencil holder. Recycle or upcycle?",
+            "10 sec. Cue: Everyone, together, on three.",
+            "EXPECT: upcycle"
+          ]
+        ],
+        "trap": [
+          "mixing up upcycle and recycle.",
+          "Fix: recycle breaks it down, upcycle keeps it and makes it better. Student says both."
+        ],
+        "prep": "Second key word. Upcycling is a must in every product this term; the Grade 6s invest in it.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Problem to product",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "",
+            "Locker Board",
+            "Pocket Pal"
+          ],
+          [
+            "The problem",
+            "My skateboard won't fit in my locker",
+            "My hat and bottle fall off my bag hook"
+          ],
+          [
+            "The upcycled fix",
+            "Old skateboards, cut down",
+            "A hanging pocket sewn from old jeans"
+          ],
+          [
+            "Who wants it",
+            "Kids who skate to school",
+            "Kids with a bag hook"
+          ]
+        ],
+        "fontSize": 20
+      },
+      "label": "Find a problem. Upcycle a fix.",
+      "notes": {
+        "answer": "kids with a bag hook; problem first, then the upcycled fix",
+        "beats": [
+          [
+            "POINT to the Locker Board column.",
+            "SAY: Carson's problem came first. The board came second. The old boards made it upcycled."
+          ],
+          [
+            "POINT to the Pocket Pal column.",
+            "SAY: Here's my idea. At school my hat and bottle fall off my bag hook.",
+            "So I'd sew a hanging pocket from old jeans."
+          ],
+          [
+            "ASK: Who would want a Pocket Pal?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: kids with a bag hook, kids at our school"
+          ],
+          "SAY: Problem first. Upcycled fix second. Then the people who want it."
+        ],
+        "trap": [
+          "starting from a cool object and hunting for a problem later.",
+          "Fix: cover the bottom rows, student says the problem first."
+        ],
+        "stretch": "What else could old jeans fix?",
+        "help": "Point to each row in order: problem, fix, who wants it.",
+        "prep": "The model. Pocket Pal is the class model business all term, so say its name the same way every time. SC2.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "What problem does it fix?",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "ask: what goes wrong without it? then re-ask",
+      "followUp": "cold call one board: who has that problem?",
+      "items": [
+        {
+          "text": "A phone stand made from an old CD case",
+          "answer": "You can't hold your phone and watch it at the same time",
+          "expect": "holding the phone up, watching hands-free",
+          "say": "You can't hold your phone and watch it. Tick it or fix it."
+        },
+        {
+          "text": "A doorstop made from an old sock filled with sand",
+          "answer": "The door blows shut and slams",
+          "expect": "the door slams or blows shut",
+          "say": "The door blows shut and slams. Tick it or fix it."
+        },
+        {
+          "text": "A draught stopper sewn from old jumpers",
+          "answer": "Cold air blows in under the door",
+          "expect": "cold air comes under the door",
+          "say": "Cold air blows in under the door. Tick it or fix it."
+        },
+        {
+          "text": "A bookmark made from an old birthday card",
+          "answer": "You lose your page in a book",
+          "expect": "losing your page",
+          "say": "You lose your page in a book. Tick it or fix it."
+        },
+        {
+          "text": "A cord tidy made from toilet roll tubes",
+          "answer": "Cords get tangled behind the TV",
+          "expect": "tangled cords",
+          "say": "Cords get tangled behind the TV. Tick it or fix it."
+        },
+        {
+          "text": "A plant pot that waters itself, made from a drink bottle",
+          "answer": "Plants die when people forget to water them",
+          "expect": "people forget to water plants",
+          "say": "Plants die when people forget to water them. Tick it or fix it."
+        },
+        {
+          "text": "A tug toy plaited from old T-shirts",
+          "answer": "The dog is bored and chews things it shouldn't",
+          "expect": "the dog is bored or chews shoes",
+          "say": "The dog is bored and chews things it shouldn't. Tick it or fix it."
+        },
+        {
+          "text": "A seedling tray made from an egg carton",
+          "answer": "Tiny seedlings need small pots that cost money",
+          "expect": "small pots for seedlings",
+          "say": "Tiny seedlings need small pots that cost money. Tick it or fix it."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Your turn. Write the problem each one fixes.",
+          "Grade 6s, add who has it."
+        ],
+        "trap": [
+          "writing what the product does, not the problem.",
+          "Fix: start with Without it..., student rewrites as the problem."
+        ],
+        "stretch": "Name who has that problem.",
+        "help": "Partner whispers: what goes wrong without it?",
+        "prep": "First decision point: problem language on new products. Grade 6s answer too and model the reasoning. SC2. Eight items, about 8 minutes.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 6]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which idea follows our anchor?",
+      "prompt": "Find a problem. Upcycle a fix. Point to A, B or C.",
+      "options": [
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "star"
+          },
+          "text": "A glitter phone case, because glitter looks cool",
+          "misconception": "starts from a cool object, not a problem"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "recycle"
+          },
+          "text": "A lunchbox divider from an old tub, because my sandwich gets squashed"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "shop"
+          },
+          "text": "A brand new plastic divider, because my sandwich gets squashed",
+          "misconception": "finds the problem but forgets to upcycle"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - a real problem and an upcycled fix",
+        "beats": [
+          "SAY: Check each idea against both parts of our anchor.",
+          [
+            "ASK: Which idea follows our anchor?",
+            "15 sec. Cue: voices off. Point... now.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN pointing fingers, back row first.",
+            "80%+ -> reveal, cold call one B: why not C?",
+            "Less -> read A, B and C as problem, then fix, re-ask."
+          ],
+          [
+            "REVEAL after fingers are scanned.",
+            "SAY: B has a real problem and an upcycled fix. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "choosing C because it solves the problem.",
+          "Fix: ask what C is made from, student checks the upcycle part."
+        ],
+        "prep": "Second decision point. Under 80% means Junk Lab teams start by saying their problem aloud before building.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "Ask the experts",
+      "title": "Ask the Grade 6s",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "trophy",
+            "label": "What did your team build?"
+          },
+          {
+            "name": "lightbulb",
+            "label": "What would you change?"
+          }
+        ]
+      },
+      "label": "Last year's entrepreneurs",
+      "notes": {
+        "beats": [
+          [
+            "SAY: Two Grade 6s did this last year. Let's hear from the experts.",
+            "Call the two Grade 6s you asked before the session."
+          ],
+          "ASK each: What did your team build? What would you do differently?",
+          [
+            "ASK: Grade 5s, thumbs up if you can picture your team building something.",
+            "5 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: most thumbs up"
+          ]
+        ],
+        "prep": "Three minutes, no more. Grade 6 voices make it real; they mentor the Junk Lab teams next.",
+        "tag": "[Launch | Planning made visible | HITS 1]",
+        "answer": "open - listen for the Grade 6 build and one thing they would change"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Junk Lab",
+      "task": "Pick one problem. Build a quick fix from the junk box. Sketch it, label it and pitch it in one sentence.",
+      "where": "Junk box and Worksheet",
+      "frame": "Our ___ fixes ___ for ___, and it is made from ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "magnifier",
+          "build",
+          "megaphone"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Find a problem. Upcycle a fix. Pitch it.",
+      "extendedTask": "a team Junk Lab build with a labelled sketch and a one-sentence pitch",
+      "notes": {
+        "answer": "a quick build that fixes a named problem, made from junk, with a one-sentence pitch",
+        "beats": [
+          [
+            "SAY: Start with the last part of your sheet, My Junk Lab invention.",
+            "Everyone, together, on three: Find a problem. Upcycle a fix. Pitch it."
+          ],
+          [
+            "TIME 25 minutes: pick a problem 5, build 15, pitch practice 5.",
+            "Grade 6s: you're mentors. Ask, don't build for them."
+          ],
+          "CIRCULATE. Ask: what problem does it fix? What was it before?",
+          [
+            "TIME at 25: three teams pitch in one sentence.",
+            "SAY: Say what it is, the problem it fixes and what it's made from."
+          ]
+        ],
+        "trap": [
+          "building a cool object with no problem.",
+          "Fix: team says the problem aloud first, then changes the build to fix it."
+        ],
+        "stretch": "Extension: improve a product, find new customers.",
+        "help": "Supported Worksheet: circle the problem, finish the pitch frame. A Grade 6 sits in.",
+        "prep": "Collect every Grade 5 Worksheet: teams are formed from them before Week 3. Nothing built is kept; the thinking is.",
+        "tag": "[You Do | Independent application | SC3 | HITS 5, 10]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Name a problem someone in your family has.",
+        "Name an upcycled product that could fix it."
+      ],
+      "notes": {
+        "answer": "e.g. Dad loses his glasses; a glasses holder made from an old mug",
+        "beats": [
+          "SAY: A new problem, from your own home. Work on your own.",
+          [
+            "ASK: Write the problem, then an upcycled fix.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a real problem and a fix made from something old"
+          ],
+          "RECORD who writes a product with no problem, or a fix that's brand new."
+        ],
+        "trap": [
+          "a fix bought new from a shop.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new context. One board per student, Grade 6s included.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner our anchor from memory, and one problem you want to fix this term.",
+      "selfAssessment": "Fist to five: how ready are you to find a problem worth fixing?",
+      "notes": {
+        "answer": "Find a problem. Upcycle a fix. Pitch it.",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: Fist to five: how ready are you to find a problem worth fixing?",
+            "5 sec. Cue: fingers at your chest... show me.",
+            "EXPECT: mostly three to five"
+          ],
+          [
+            "RECORD the fists and ones beside the exit boards.",
+            "They join a strong Grade 6 mentor next week."
+          ],
+          [
+            "ASK: Tell your partner our anchor, and one problem you want to fix.",
+            "30 sec. Turn and tell, partner A first.",
+            "EXPECT: Find a problem. Upcycle a fix. Pitch it."
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. Next week: teams form and learn to think like a shark. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

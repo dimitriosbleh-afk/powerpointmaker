@@ -1,0 +1,49 @@
+{
+ "unit_folder": "Term4_SharkTank_Grade5_Weeks_5-10",
+ "unit_pptx_name": "Shark Tank - Grade 5 Sessions and Shark Tank Day (Weeks 5-10).pptx",
+ "anchor": "Find a problem. Upcycle a fix. Pitch it. Grade 5 teams invent an upcycled product, build a prototype and pitch it; the Grade 6s are the sharks who invest tokens, never buy, on Shark Tank Day, Monday 7 December. Model business all term: Pocket Pal, a hanging pocket sewn from old jeans.",
+ "lessons": [
+  {
+   "build_script": "builds/t4w5_shark_s4_business_plan.json",
+   "folder": "T4W5_SharkTank_S4_Business_Plan",
+   "session": 4,
+   "title": "The Business Plan",
+   "focus": "Week 5, Grade 5 only, 15 minutes explicit and 40 team time. Natural, human and capital resources on Pocket Pal; teams write the business plan. Critical feature: upcycling saves natural resources."
+  },
+  {
+   "build_script": "builds/t4w6_shark_s5_build_it.json",
+   "folder": "T4W6_SharkTank_S5_Build_It",
+   "session": 5,
+   "title": "Build It",
+   "focus": "Week 6. Prototype, build-test-fix and choosing a join; first build. Critical feature: when a test fails, fix the part that failed, not the idea."
+  },
+  {
+   "build_script": "builds/t4w7_shark_s6_brand_it.json",
+   "folder": "T4W7_SharkTank_S6_Brand_It",
+   "session": 6,
+   "title": "Brand It",
+   "focus": "Week 7. The 4 Ps and taglines; finish the build and start the poster. Critical feature: a tagline is short, catchy and says what the product does for you."
+  },
+  {
+   "build_script": "builds/t4w8_shark_s7_pitch_it.json",
+   "folder": "T4W8_SharkTank_S7_Pitch_It",
+   "session": 7,
+   "title": "Pitch It",
+   "focus": "Week 8. The six-part pitch recipe; teams write and rehearse a 60 to 90 second pitch. Critical feature: the ask is for investment, never a sale."
+  },
+  {
+   "build_script": "builds/t4w9_shark_s8_dress_rehearsal.json",
+   "folder": "T4W9_SharkTank_S8_Dress_Rehearsal",
+   "session": 8,
+   "title": "Dress Rehearsal",
+   "focus": "Week 9. Kind, specific, helpful feedback and the Shark Scorecard; rehearsal swaps and one fix. Critical feature: fix the exact part the feedback names."
+  },
+  {
+   "build_script": "builds/build_t4w10_shark_tank_day.js",
+   "folder": "T4W10_SharkTank_Day",
+   "session": 9,
+   "title": "Shark Tank Day",
+   "focus": "Monday 7 December, Week 10. Run sheet, Grade 6 shark briefing, pitches, stall walk with tokens, winner. An event deck, not a lesson."
+  }
+ ]
+}

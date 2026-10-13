@@ -1,0 +1,953 @@
+{
+  "lesson": {
+    "subject": "inquiry",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 3,
+    "session": 2,
+    "variant": 3,
+    "minutes": 60,
+    "title": "Think Like a Shark",
+    "subtitle": "Shark Tank | Term 4 Week 3, Session 2",
+    "meta": "Year 5/6 Inquiry | Shark Tank",
+    "footer": "Shark Tank | Year 5/6 Inquiry | Week 3 Session 2",
+    "outputFolder": "T4W3_SharkTank_S2_Think_Like_a_Shark",
+    "fileName": "Session 2 - Think Like a Shark.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "magnifier",
+          "label": "Find a problem"
+        },
+        {
+          "name": "recycle",
+          "label": "Upcycle a fix"
+        },
+        {
+          "name": "megaphone",
+          "label": "Pitch it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "Victorian Curriculum Economics and Business, Levels 5 and 6: why businesses exist and how people make choices about where their money goes; Design and Technologies, Levels 5 and 6: evaluating design ideas against criteria",
+      "shape": "watch, model, judge: a young entrepreneur the sharks loved but did not invest in, buying versus investing, the four-check shark checklist, a judging round, then 30 minutes of team forming and shortlisting with Grade 6 consultants",
+      "criticalFeature": "a shark invests in a business that can grow, not in one product to take home; the four checks are the same ones the Grade 6s use on Shark Tank Day",
+      "decisionPoints": [
+        "the Invest or pass? round",
+        "the choice check: what did the shark do with the tokens",
+        "the exit board: judge a new pitch with one check"
+      ],
+      "anchor": "Find a problem. Upcycle a fix. Pitch it.",
+      "catchUp": "Missed Session 1? Say: every product starts with a problem, and upcycling makes the fix from something already made. Seat them with a team that has a Junk Lab sketch."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Session 1 Worksheets and Junk Lab sketches"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Turn and tell",
+      "Thumbs vote",
+      "Point to A, B or C"
+    ],
+    "boardSetup": [
+      "Write the four shark checks on the board: Real problem? Upcycled? Can they make it work? Will people want it?",
+      "Grade 5 business teams of three or four, written up before the session. Group by shared ideas, not friendships",
+      "Each Grade 5 team gets two or three Grade 6s as its consultant sharks"
+    ],
+    "videos": [
+      "Luv Ur Self on Shark Tank Australia: Isabella Dymalovski, aged 13 (youtube.com/watch?v=aDS5mmZij-4)"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Buying or investing, the shark checklist, then your team's shortlist of three ideas.",
+      "title": "Idea Shortlist",
+      "subtitle": "Sharks invest. They don't buy.",
+      "sections": [
+        {
+          "title": "Buying or investing?",
+          "columns": 1,
+          "example": {
+            "prompt": "Mum pays $3 for a cupcake at the school fete. Buying or investing?",
+            "steps": [
+              "Ask: what does she get?",
+              "She gets one cupcake to keep.",
+              "Money for one product is buying."
+            ],
+            "answer": "Buying"
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "Sort each one: buying or investing?",
+              "groups": [
+                "buying",
+                "investing"
+              ],
+              "cards": [
+                "pays $5 for a key ring",
+                "gives money so a team makes more",
+                "gets a share of the earnings",
+                "takes home a jar of slime",
+                "helps a business grow",
+                "buys an ice block"
+              ],
+              "answer": {
+                "buying": [
+                  "pays $5 for a key ring",
+                  "takes home a jar of slime",
+                  "buys an ice block"
+                ],
+                "investing": [
+                  "gives money so a team makes more",
+                  "gets a share of the earnings",
+                  "helps a business grow"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Run the shark checklist",
+          "columns": 2,
+          "example": {
+            "prompt": "Pot plant holders made from old tins, because plants keep falling off the windowsill.",
+            "steps": [
+              "Real problem? Yes. Upcycled? Yes, old tins.",
+              "Can they make it work? Yes. Will people want it? Yes.",
+              "Four yes answers: invest."
+            ],
+            "answer": "Invest: it passes all four checks."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write yes or no for each check.",
+              "columns": [
+                "Idea",
+                "Real problem?",
+                "Upcycled?",
+                "Can they make it work?",
+                "Will people want it?"
+              ],
+              "rows": [
+                [
+                  "Ball bags sewn from old pillowcases, because balls roll away",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "A new plastic toy car, because toy cars are fun",
+                  "",
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "A cardboard robot that tidies your room",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Ball bags sewn from old pillowcases, because balls roll away",
+                  "yes",
+                  "yes",
+                  "yes",
+                  "yes"
+                ],
+                [
+                  "A new plastic toy car, because toy cars are fun",
+                  "no",
+                  "no",
+                  "yes",
+                  "maybe"
+                ],
+                [
+                  "A cardboard robot that tidies your room",
+                  "yes",
+                  "yes",
+                  "no",
+                  "yes"
+                ]
+              ]
+            },
+            {
+              "kind": "choice",
+              "prompt": "Which idea would you invest in? Circle it.",
+              "options": [
+                "ball bags from pillowcases",
+                "a new plastic toy car",
+                "a cardboard robot"
+              ],
+              "answer": 0,
+              "explain": "The ball bags. They pass all four checks; the car is not upcycled and fixes no problem, and the robot cannot really be made."
+            }
+          ]
+        },
+        {
+          "title": "Our team's shortlist",
+          "columns": 2,
+          "example": {
+            "prompt": "Shortlist one idea: a cord tidy from toilet roll tubes.",
+            "steps": [
+              "Name the idea: Cord Keeper.",
+              "Name the problem: cords tangle behind the TV.",
+              "Count the checks it passes: 4 out of 4."
+            ],
+            "answer": "Cord Keeper | tangled cords | 4 out of 4"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write your team's three best ideas.",
+              "columns": [
+                "Our idea",
+                "The problem it fixes",
+                "Checks passed (out of 4)"
+              ],
+              "rows": [
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Answers vary: an upcycled product",
+                  "a real problem",
+                  "0 to 4"
+                ],
+                [
+                  "e.g. Hat clips from bread tags",
+                  "hats get lost at lunch",
+                  "4"
+                ],
+                [
+                  "e.g. A drink bottle sling from an old belt",
+                  "bottles roll out of bags",
+                  "4"
+                ]
+              ]
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Jack explains investing. Find his mistake and fix it.",
+              "work": [
+                "Investing means buying lots of the product.",
+                "So a shark takes home ten of them."
+              ],
+              "answer": "Investing is not buying. The shark gives money to help the business grow and gets a share of what it earns, not the products."
+            },
+            {
+              "prompt": "Which idea is your team's favourite so far? Give a reason from the checklist.",
+              "answer": "e.g. Hat clips, because they pass all four checks and every kid at school loses a hat.",
+              "lines": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: work out what a shark gets back for investing.",
+      "title": "Extension: The Shark's Share",
+      "subtitle": "Sharks invest for a share of what the business earns.",
+      "sections": [
+        {
+          "title": "Work out the shark's share",
+          "columns": 1,
+          "intro": "When a shark owns half of a business, the shark gets half of what it earns. A quarter of the business means a quarter of the earnings.",
+          "example": {
+            "prompt": "A shark owns half of a cupcake business. The business earns $40. How much does the shark get?",
+            "steps": [
+              "The shark owns half.",
+              "Half of $40 is $20.",
+              "The team keeps the other $20."
+            ],
+            "answer": "$20"
+          },
+          "items": [
+            {
+              "prompt": "A shark owns a quarter of a bird bath business. The business earns $80. How much does the shark get?",
+              "answer": "$20, a quarter of $80",
+              "answerLabel": "Shark gets:"
+            },
+            {
+              "prompt": "A shark owns half of a candle business. The shark got $35. How much did the business earn?",
+              "answer": "$70, because $35 is half",
+              "answerLabel": "Business earned:"
+            }
+          ]
+        },
+        {
+          "title": "Is it a good deal?",
+          "columns": 1,
+          "example": {
+            "prompt": "Shark A gives $100 for half the business. Shark B gives $100 for a quarter. Which deal is better for the team?",
+            "steps": [
+              "Both sharks give $100.",
+              "Shark B wants a smaller share.",
+              "The team keeps more with Shark B."
+            ],
+            "answer": "Shark B's deal: the team keeps three quarters."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Three sharks each offer a team $60. Which deal lets the team keep the most?",
+              "options": [
+                "$60 for half",
+                "$60 for a quarter",
+                "$60 for three quarters"
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "$60 for a quarter. The team gives away the smallest share, so it keeps three quarters of the earnings."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Buying or investing with picture clues, then the checklist as yes or no circles.",
+      "title": "Idea Shortlist",
+      "subtitle": "Sharks invest. They don't buy.",
+      "sections": [
+        {
+          "title": "Buying or investing?",
+          "columns": 1,
+          "example": {
+            "prompt": "Mum pays $3 for a cupcake at the fete.",
+            "visual": {
+              "type": "pictograms",
+              "items": [
+                {
+                  "name": "shop",
+                  "label": "buying: you keep the product"
+                },
+                {
+                  "name": "coins",
+                  "label": "investing: you help it grow"
+                }
+              ]
+            },
+            "steps": [
+              "She gets one cupcake.",
+              "She keeps the product.",
+              "That is buying."
+            ],
+            "answer": "Buying"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Ella pays $5 and takes home a key ring.",
+              "options": [
+                "buying",
+                "investing"
+              ],
+              "answer": 0,
+              "hint": "Does she keep the product?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "A shark gives tokens so a team can make more.",
+              "options": [
+                "buying",
+                "investing"
+              ],
+              "answer": 1,
+              "hint": "Does the shark take a product home, or help the business grow?"
+            }
+          ]
+        },
+        {
+          "title": "Run the checklist",
+          "columns": 1,
+          "example": {
+            "prompt": "Pot plant holders made from old tins.",
+            "steps": [
+              "Real problem? Yes: plants fall off the windowsill.",
+              "Upcycled? Yes: old tins.",
+              "Can they make it work? Yes. Will people want it? Yes."
+            ],
+            "answer": "4 yes answers: invest."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Ball bags sewn from old pillowcases. Circle yes or no.",
+              "columns": [
+                "Check",
+                "Yes or no?"
+              ],
+              "rows": [
+                [
+                  "Real problem?",
+                  "yes / no"
+                ],
+                [
+                  "Upcycled?",
+                  "yes / no"
+                ],
+                [
+                  "Can they make it work?",
+                  "yes / no"
+                ],
+                [
+                  "Will people want it?",
+                  "yes / no"
+                ]
+              ],
+              "answers": [
+                [
+                  "Real problem?",
+                  "yes"
+                ],
+                [
+                  "Upcycled?",
+                  "yes"
+                ],
+                [
+                  "Can they make it work?",
+                  "yes"
+                ],
+                [
+                  "Will people want it?",
+                  "yes"
+                ]
+              ],
+              "hint": "Balls roll away at sport. Old pillowcases are already made."
+            },
+            {
+              "prompt": "Write your team's favourite idea.",
+              "hint": "Our idea is ___. It fixes ___.",
+              "answer": "Our idea is ___. It fixes ___.",
+              "lines": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "label": "Grade 6 Consultant Card",
+      "description": "For each Grade 6 consultant shark: the four questions to ask their team.",
+      "title": "Consultant Shark Card",
+      "subtitle": "You are a shark. Ask, don't build.",
+      "blocks": [
+        {
+          "heading": "Ask your team these four questions"
+        },
+        {
+          "visual": {
+            "type": "pictograms",
+            "items": [
+              {
+                "name": "magnifier",
+                "label": "Real problem?"
+              },
+              {
+                "name": "recycle",
+                "label": "Upcycled?"
+              },
+              {
+                "name": "build",
+                "label": "Can they make it work?"
+              },
+              {
+                "name": "people",
+                "label": "Will people want it?"
+              }
+            ]
+          }
+        },
+        {
+          "checklist": [
+            "What problem does it fix, and who has that problem?",
+            "What is it made from? Was it something old?",
+            "Can your team build it from junk in two build sessions?",
+            "Who would want it? How do you know?"
+          ]
+        },
+        {
+          "heading": "One tip I gave my team"
+        },
+        {
+          "lines": 3
+        },
+        {
+          "tip": "Remember: on Shark Tank Day you invest your tokens. You don't buy."
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Session 2 of Shark Tank. One line: today we learn to think like a shark, and the Grade 5s form their business teams."
+    },
+    {
+      "kind": "resources",
+      "notes": "Teams written up before the session from the Session 1 Worksheets; two or three Grade 6s matched to each team. Cue the Luv Ur Self clip. Print the Worksheet one per Grade 5, a few Extension and Supported copies, and one Consultant Card per Grade 6."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning what makes a business worth investing in.",
+      "successCriteria": [
+        "I can explain the difference between buying and investing.",
+        "I can judge an idea with the four shark checks.",
+        "I can use the shark checks to choose my team's best ideas."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Last week we found problems. Today we think like the sharks who judge them."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          [
+            "SAY: Grade 6s, you're the sharks on the day, so this is your training.",
+            "Grade 5s, today you meet your business team."
+          ]
+        ],
+        "prep": "SC1 buying versus investing is reachable for all; SC2 the four checks is the core; SC3 is the team shortlist. Anchor: Find a problem. Upcycle a fix. Pitch it.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Would you invest in Isabella?",
+      "visual": {
+        "type": "video",
+        "youtube": "aDS5mmZij-4",
+        "label": "Watch on YouTube: Luv Ur Self",
+        "end": 180
+      },
+      "prompt": "Thumbs vote: would you invest?",
+      "notes": {
+        "answer": "open - the sharks loved her, but none invested",
+        "beats": [
+          [
+            "PLAY 0:00 to 3:00, the pitch. The player stops itself; the full clip is 10:31.",
+            "SAY: Isabella was 13. Watch her pitch like a shark would."
+          ],
+          [
+            "ASK: Would you invest in Isabella's business?",
+            "10 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: mostly thumbs up"
+          ],
+          [
+            "SAY: Here's what happened. The sharks loved her, but none invested.",
+            "They all offered to help her instead."
+          ],
+          [
+            "ASK: Why might a shark say no to someone they like?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: they worried about the business, school, time"
+          ]
+        ],
+        "trap": [
+          "thinking a likeable pitcher always gets a deal.",
+          "Fix: sharks judge the business, not the person. Student restates."
+        ],
+        "prep": "Launch. Sharks judge whether the business can grow. The sharks worried she could not balance school and a business; Andrew Banks later helped her into stores.",
+        "sources": "Luv Ur Self, Shark Tank Australia; SmartCompany recap of Isabella Dymalovski's pitch.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "invest",
+      "meaning": "To give money to a business so it can grow, in return for a share of what it earns.",
+      "example": "The sharks didn't buy Carson's board. They invested in his business.",
+      "pictogram": "coins",
+      "notes": {
+        "answer": "giving money so a business can grow, for a share of what it earns",
+        "beats": [
+          "POINT to the word. SAY: Invest. Say it with me. In-vest.",
+          [
+            "SAY: When you invest, you don't take a product home.",
+            "You help the business grow, and you get a share of what it earns."
+          ],
+          [
+            "ASK: Does a shark who invests take the product home?",
+            "10 sec. Cue: Everyone, together, on three.",
+            "EXPECT: no"
+          ]
+        ],
+        "trap": [
+          "thinking investing means buying lots of the product.",
+          "Fix: ask what the shark gets back, student says a share of the earnings."
+        ],
+        "prep": "The key word for the Grade 6s. On Shark Tank Day they invest tokens; they never buy.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Buying or investing?",
+      "visual": {
+        "type": "table",
+        "fontSize": 20,
+        "rows": [
+          [
+            "",
+            "Buying",
+            "Investing"
+          ],
+          [
+            "You give",
+            "Money for one product",
+            "Money to help the business grow"
+          ],
+          [
+            "You get",
+            "The product to keep",
+            "A share of what it earns"
+          ],
+          [
+            "Shark Tank Day",
+            "Grade 6s never buy",
+            "Grade 6s invest tokens"
+          ]
+        ]
+      },
+      "label": "Sharks invest. They don't buy.",
+      "notes": {
+        "answer": "investing: the shark helps the business grow and shares what it earns",
+        "beats": [
+          [
+            "POINT to the Buying column.",
+            "SAY: When I buy a Pocket Pal, I hand over money and take one home. Done."
+          ],
+          [
+            "POINT to the Investing column.",
+            "SAY: When I invest, I help the Pocket Pal team make more.",
+            "If the business does well, I get a share."
+          ],
+          [
+            "ASK: Grade 6s give tokens on Shark Tank Day. Buying or investing?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: investing"
+          ]
+        ],
+        "trap": [
+          "Grade 6s choosing the product they want to own.",
+          "Fix: ask which business you'd help grow, student re-chooses."
+        ],
+        "stretch": "Why would a shark invest in a business they don't personally need?",
+        "help": "Cover the right column; ask what you get when you buy.",
+        "prep": "The model for SC1. Pocket Pal is the class model business; say it the same way every time.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "The four shark checks",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "magnifier",
+            "label": "Real problem?"
+          },
+          {
+            "name": "recycle",
+            "label": "Upcycled?"
+          },
+          {
+            "name": "build",
+            "label": "Can they make it work?"
+          },
+          {
+            "name": "people",
+            "label": "Will people want it?"
+          }
+        ]
+      },
+      "label": "The same four checks the sharks use on Shark Tank Day",
+      "notes": {
+        "answer": "yes to all four for Pocket Pal",
+        "beats": [
+          [
+            "POINT to each check in turn.",
+            "SAY: Real problem? Upcycled? Can they make it work? Will people want it?"
+          ],
+          [
+            "SAY: Let me check Pocket Pal. Hats fall off hooks, so yes, a real problem.",
+            "Old jeans, so yes, upcycled."
+          ],
+          [
+            "ASK: Can a team of Grade 5s sew a pocket from old jeans?",
+            "10 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: thumbs up"
+          ],
+          [
+            "ASK: Who would want one?",
+            "10 sec. Turn and tell, partner B first.",
+            "EXPECT: kids with bag hooks"
+          ]
+        ],
+        "trap": [
+          "skipping Can they make it work? for a dream idea.",
+          "Fix: ask what it would be built from this term, student re-checks."
+        ],
+        "stretch": "Which check would you weigh most, and why?",
+        "help": "Point to each picture and say the check with the student.",
+        "prep": "The model for SC2. These four checks are on the Shark Scorecard and Shark Notes, worded the same way every time.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Invest or pass?",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "run the four checks aloud together, then re-ask",
+      "followUp": "cold call one board: which check decided it?",
+      "items": [
+        {
+          "text": "Pencil cases sewn from old chip packets, because torn cases spill pencils",
+          "answer": "Invest - it passes all four checks",
+          "expect": "invest"
+        },
+        {
+          "text": "A brand new plastic fidget spinner, because spinners are fun",
+          "answer": "Pass - no real problem, and it's not upcycled",
+          "expect": "pass: not upcycled, no problem"
+        },
+        {
+          "text": "A flying car made from cardboard boxes",
+          "answer": "Pass - the team can't make it fly",
+          "expect": "pass: can't make it"
+        },
+        {
+          "text": "Draught stoppers from old jumpers, for cold classrooms",
+          "answer": "Invest - it passes all four checks",
+          "expect": "invest"
+        },
+        {
+          "text": "A bookmark made from brand new parts that plays music",
+          "answer": "Pass - not upcycled, and no real problem",
+          "expect": "pass: not upcycled"
+        },
+        {
+          "text": "Herb planters made from old gumboots, for the school garden",
+          "answer": "Invest - it passes all four checks",
+          "expect": "invest"
+        },
+        {
+          "text": "A robot dog made from old toasters",
+          "answer": "Pass - the team can't make it work this term",
+          "expect": "pass: can't make it"
+        },
+        {
+          "text": "Gift wrap made from old maps, because wrapping paper gets thrown out",
+          "answer": "Invest - it passes all four checks",
+          "expect": "invest"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Shark training. Write invest or pass,",
+          "and the check that decided it."
+        ],
+        "trap": [
+          "investing in an idea because it sounds fun.",
+          "Fix: run all four checks, student names the one it fails."
+        ],
+        "stretch": "Turn one pass into an invest by changing one thing.",
+        "help": "Give the student the four checks on a card to tick.",
+        "prep": "First decision point: applying the four checks to new ideas. Grade 6s answer first on their boards. SC2. Eight items, about 8 minutes.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 6]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "What did the shark do?",
+      "prompt": "A shark puts 3 tokens on Pocket Pal. Point to A, B or C.",
+      "options": [
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "shop"
+          },
+          "text": "Bought three Pocket Pals to take home",
+          "misconception": "thinks investing means buying the product"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          },
+          "text": "Invested in the Pocket Pal business"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "build"
+          },
+          "text": "Paid the team to make one just for them",
+          "misconception": "thinks investing is ordering a product"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - invested in the business",
+        "beats": [
+          "SAY: This one matters for Shark Tank Day. Think about the tokens.",
+          [
+            "ASK: What did the shark do with the tokens?",
+            "15 sec. Cue: voices off. Point... now.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN Grade 6 fingers first.",
+            "80%+ -> reveal, cold call a Grade 6: why not A?",
+            "Less -> back to the buying and investing table, re-ask."
+          ],
+          [
+            "REVEAL after fingers are scanned.",
+            "SAY: B. Tokens help a business grow. Nobody takes a product home. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "choosing A because shops work that way.",
+          "Fix: ask what the shark takes home, student says nothing, a share."
+        ],
+        "prep": "Second decision point, aimed at the Grade 6s. Under 80% of Grade 6s means re-teach invest before they meet their teams.",
+        "tag": "[CFU | Supported application | SC1 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Team up and shortlist",
+      "task": "Grade 5s: meet your business team. Choose three ideas and run the shark checks on each. Grade 6s: be the consultant shark for your team.",
+      "where": "Worksheet and Consultant Card",
+      "frame": "Our idea is ___. It fixes ___, and it passes ___ checks.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "group",
+          "sort",
+          "coins"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Team up. Check it. Shortlist it.",
+      "extendedTask": "a team shortlist of three ideas, each run through the four shark checks",
+      "notes": {
+        "answer": "three ideas per team, each with a problem and a checks score",
+        "beats": [
+          [
+            "SAY: Read the task, complete each part, then check your work.",
+            "Finished early? The Extension. Everyone, together, on three: Team up. Check it. Shortlist it."
+          ],
+          [
+            "SAY: Grade 5s, your team is on the board. Grade 6s, find your team.",
+            "Ask your four questions. Don't build for them."
+          ],
+          [
+            "TIME 30 minutes: teams form 5, ideas 10, checks 10, shortlist 5.",
+            "CIRCULATE. Ask: which check is your weakest idea failing?"
+          ],
+          "TIME at 30: each team reads out its favourite idea in one sentence."
+        ],
+        "trap": [
+          "a team keeping an idea that fails Can they make it work?",
+          "Fix: consultant asks what they'd build it from, team swaps the idea."
+        ],
+        "stretch": "Extension: work out the shark's share of a business's earnings.",
+        "help": "Supported Worksheet: picture clues, checks as yes or no circles.",
+        "prep": "Teams are set by the teacher from the Session 1 sheets: grouped by shared ideas, not friendships. Keep the shortlists for next week.",
+        "tag": "[You Do | Independent application | SC3 | HITS 5, 10]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "A team pitches fridge magnets made from old bottle tops, because notes fall off the fridge.",
+        "Invest or pass? Name the check that decided it for you."
+      ],
+      "notes": {
+        "answer": "invest: real problem, upcycled, makeable, people want it",
+        "beats": [
+          "SAY: A brand new pitch. Judge it on your own, like a real shark.",
+          [
+            "ASK: Invest or pass? Name the check that decided it.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: invest, it passes all four checks"
+          ],
+          "RECORD who writes invest or pass with no check named."
+        ],
+        "trap": [
+          "pass, because magnets are boring.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new pitch. One board per student, Grade 6s included.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner the four shark checks from memory.",
+      "selfAssessment": "Fist to five: how well can you judge an idea like a shark?",
+      "notes": {
+        "answer": "Real problem? Upcycled? Can they make it work? Will people want it?",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: Fist to five: how well can you judge an idea like a shark?",
+            "5 sec. Cue: fingers at your chest... show me.",
+            "EXPECT: mostly three to five"
+          ],
+          "RECORD the fists and ones beside the exit boards.",
+          [
+            "ASK: Tell your partner the four shark checks.",
+            "30 sec. Turn and tell, partner A first.",
+            "EXPECT: problem, upcycled, make it, people want it"
+          ]
+        ],
+        "prep": "Self-assessment beside the exit boards. Next week: teams test their shortlist on the market. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}
