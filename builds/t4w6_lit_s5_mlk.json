@@ -65,7 +65,7 @@
       "Repetition rule: same opening words, a new and bigger picture each time"
     ],
     "videos": [
-      "DCE Speech Collection: Martin Luther King Jr., I Have a Dream, 1963 (teacher's copy; play the 'I have a dream' section)"
+      "Martin Luther King Jr., I Have a Dream, 1963 (public recording; play the 'I have a dream' section)"
     ]
   },
   "resources": [
@@ -510,7 +510,7 @@
     },
     {
       "kind": "resources",
-      "notes": "Cue the 'I have a dream' section of Martin Luther King Jr.'s 1963 speech from the DCE Speech Collection. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Toolkits out."
+      "notes": "Cue the 'I have a dream' section of Martin Luther King Jr.'s 1963 speech from a public recording. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Toolkits out."
     },
     {
       "kind": "li",
@@ -653,7 +653,7 @@
             "Dr King spoke to them all."
           ],
           [
-            "PLAY the selected section from the DCE Speech Collection.",
+            "PLAY the selected section of the recording.",
             "SAY: Listen for the words he repeats, and the pictures he paints."
           ],
           [
@@ -714,7 +714,7 @@
         ],
         "stretch": "Find another phrase he repeats in the speech.",
         "help": "Use: I dream of ___.",
-        "prep": "SOURCES: check the wording against your DCE copy. Toolkit row 7: repetition.",
+        "prep": "SOURCES: Martin Luther King Jr., March on Washington, 28 August 1963. Toolkit row 7: repetition.",
         "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
       }
     },
