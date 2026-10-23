@@ -347,7 +347,14 @@ Since v1.7 (Kate Watt, the school's Yoshimoto trainer, Oct 2026) a week teaches 
 morpheme, every day for 20-30 minutes, split across five day types: `teach` (Mon),
 `spell` (Tue), `build` (Wed), `apply` (Thu, parts of speech + the week's one grammar
 block), `week_review` (Fri). Each day carries only its own blocks; legacy `new`/`review`
-weeks still build unchanged. Exemplar: `og_planner/weeks/term4_week3.json`. Kate's
+weeks still build unchanged. v1.8 (James, Oct 2026, spec field `"og_version": "1.8"`)
+opens EVERY day with the card drill and a 5-4-3-2-1 Words to Read Review (at most 3
+questions, rotating formats), puts a short memory hook with a pictogram on Monday's
+card, tests parts of speech with the frames the ___ / to ___ / very ___, draws part
+boxes for Break it apart, allows only three extension types, and handles short weeks
+(4 sessions: Thursday ends with the vote then one grammar dictation; 3 sessions: a
+`combined` day). Exemplar: `og_planner/weeks/term4_week4.json` (v1.7:
+`term4_week3.json`). Kate's
 training deck and videos must stay inside the school - never commit them.
 OG teacher notes follow the shared Glance Format: plain source text, one thought per
 line, left-aligned paragraphs, eight live-zone lines maximum, and no markdown. Words

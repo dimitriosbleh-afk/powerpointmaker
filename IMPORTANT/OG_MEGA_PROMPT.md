@@ -1,4 +1,4 @@
-# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.7
+# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.8
 ## Grade 5/6 Enrichment | Diamond Creek East PS | Yoshimoto OG | Template-Locked | Term-Scale Input
 
 ---
@@ -114,8 +114,38 @@ training deck and its videos stay inside the school - never copy them into this 
 9. RESPOND TO THE CLASS. An optional `From our reviews` line in the request plants the
    class's wobbles into next week (12), fed by a quick Friday vote (1).
 
-Legacy `new` / `review` weeks (v1.0-v1.6) still build unchanged; every new week uses the
-v1.7 day types.
+The v1.8 refinement (James, 22 Oct 2026, after teaching the first v1.7 week; every
+point settled with him) keeps the v1.7 week and fixes what the room found:
+
+1. EVERY SESSION OPENS WITH THE CARD DRILL AND WORDS TO READ REVIEW, Monday to Friday,
+   fresh random card order each day. Tuesday's separate recap card is gone (1, 2a).
+2. 5-4-3-2-1 READING REVIEW (Kate Watt): 5 words from the most recently taught morpheme,
+   then 4, 3, 2, 1 from the next four back; the 2 and 1 slots may be words from a while
+   back (2b).
+3. THE READING REVIEW WAS "SOOOO REPETITIVE" AND KIDS SWITCHED OFF. At most 3 questions,
+   one-word answers on the board, at least two as 10 sec turn and talk then choral,
+   "why" only as turn and tell, and the question format and second read rotate daily (2b).
+4. REAL QUESTIONS: "What is one word built from terr, meaning land?", never "Okay, give
+   me..." (2a).
+5. MEMORY HOOK: 8 words or fewer, on the new-morpheme card with a small picture, and the
+   first line of the notes. No PROCEDURE block on the new-morpheme header (3a).
+6. VET EVERY WORD EQUATION against its answer; adult-use words only (3b).
+7. AFTER-CHECK QUESTIONS only where the part's meaning plainly shows in the word, at most
+   3 a session; no "Click to reveal answer." line (2d). No "SAY each word..." line on
+   Words to Spell New (3c).
+8. THREE EXTENSION TYPES ONLY: longest word hunt, beat the number, two in one (3e).
+9. BREAK IT APART: one empty box per part, root filled in, students write only the parts
+   (3f).
+10. PARTS OF SPEECH BY FRAME: Thursday was "brutal" because the suffixes were old and
+    nobody could say why a suffix makes a noun. Each suffix card now shows its meaning,
+    keyword and a keyword sentence, and students try the keyword in three frames:
+    "the ___" noun, "to ___" verb, "very ___" adjective (3g).
+11. LEARNED WORD ROUTINES rewritten (5), and SHORT WEEKS of 3 or 4 sessions never cut new
+    content (11).
+
+A v1.8 week says `"og_version": "1.8"` at the top of its spec. Legacy `new` / `review`
+weeks (v1.0-v1.6) and v1.7 weeks (Term 4 Week 3) still build unchanged; every new week
+uses v1.8.
 
 The pipeline: user pastes a term's content -> you plan each week -> you author a week
 spec JSON -> `og_planner/build_og_week.py` clones the master template and fills it ->
@@ -153,7 +183,7 @@ you QA the rendered decks. One PPTX per session (day), grouped in a week folder.
 
 ---
 
-# 1. THE FIVE-DAY SHAPE (v1.7)
+# 1. THE FIVE-DAY SHAPE (v1.7, daily review added in v1.8)
 
 ONE morpheme a week, OG every day, 20-30 minutes a day. The week is one Yoshimoto
 lesson split across the days (`OG/OG Post Training Resources/OneLessonOver2Days.pdf`:
@@ -163,11 +193,16 @@ Friday. Each day carries ONLY its own blocks - the builder emits nothing else.
 
 | Day | type in spec | What runs (in slide order) | About |
 |---|---|---|---|
-| Monday | `teach` | card drill (10 cards) - Words to Read Review (15) - NEW morpheme card, copy slide, write it 3 times, class brainstorm - Words to Read grid (6, 9 or 12) - Your keyword and one sentence | 25 min |
-| Tuesday | `spell` | quick recap of Monday's card - Sound Bank, dictated (2c) - Words to Spell Review (6-8) - Words to Spell New (4, off Monday's grid) - learned words (2 review + NEW word 1) - dictation x2 | 25 min |
-| Wednesday | `build` | word matrix - Break it apart round - Write the word that names... round (3f) | 15-20 min |
-| Thursday | `apply` | suffix parts-of-speech drill (3g) - learned words (2 review + NEW word 2) - grammar I do / We do / You do (7) | 20 min |
+| Monday | `teach` | card drill (10 cards) - Words to Read Review (15) - NEW morpheme card with memory hook and picture, copy slide, write it 3 times, class brainstorm - Words to Read grid (6, 9 or 12) - Your keyword and one sentence | 25-30 min |
+| Tuesday | `spell` | card drill - Words to Read Review - Sound Bank, dictated (2c) - Words to Spell Review (6-8) - Words to Spell New (4, off Monday's grid) - learned words (2 review + NEW word 1) - dictation x2 | 25-30 min |
+| Wednesday | `build` | card drill - Words to Read Review - word matrix - Break it apart round - Write the word that names... round (3f) | 20-25 min |
+| Thursday | `apply` | card drill - Words to Read Review - suffix parts-of-speech drill by frames (3g) - learned words (2 review + NEW word 2) - grammar I do / We do / You do (7) | 25-30 min |
 | Friday | `week_review` | card drill (10) - Words to Read Review (15) - Sound Bank, dictated - Words to Spell Review (6-10) - learned words review - dictation x2 - grammar (only if no Thursday ran) - trickiest-this-week vote | 25 min |
+
+v1.8: every day opens with the card drill and the Words to Read Review, so retrieval
+runs every session. The table above is the v1.8 shape; a v1.7 spec (no `og_version`)
+still builds the v1.7 shape, where Tuesday had a recap card and Wednesday/Thursday had
+no opening review.
 
 Why this shape (Kate, 13 Oct 2026): "Big focus on a Monday morning ... tomorrow card
 deck, spelling ... Wednesday, let's build some words." "It's still doing it every day,
@@ -175,8 +210,8 @@ but the amount that you do every day can be tweaked." The structure is fixed so 
 class runs the same week; the teacher's delivery inside it is theirs.
 
 - Monday has no spelling, no You Do, no learned words, no dictation and no grammar.
-- Tuesday has no card drill and no Words to Read Review ("Today, don't do the card
-  deck"); the recap card and the dictated bank are its retrieval.
+- Tuesday opens with the card drill and Words to Read Review like every day (v1.8).
+  There is no separate recap card: the new morpheme is already on the drill.
 - Wednesday is the morphology You Do day: building (matrix) and its opposite (breaking
   apart), then meaning-to-word retrieval on whiteboards.
 - Thursday is the only grammar day in a five-session week. The grammar block keeps its
@@ -227,8 +262,9 @@ stay the historical record; do not author new weeks in that shape.
   card, students say meaning"). The whole class says `port means carry` together; a
   suffix card adds the part of speech it makes (`-tude means condition of, noun`).
   Then one student gives a word with it and what that word means. The Yoshimoto
-  training videos run a whole deck this way in under two minutes. Cards run on Monday
-  and Friday only (section 1).
+  training videos run a whole deck this way in under two minutes. From v1.8 the cards
+  run EVERY session, in a fresh random order each day (section 1); from Tuesday the
+  week's new morpheme is one of the 10.
 - KEYWORDS ARE A PROMPT, NEVER A QUIZ (Kate, Oct 2026: "the keyword is if they forget").
   Never script "What's the keyword?" as a question. The meaning is what students must
   know; the keyword is what the teacher offers when a student is stuck.
@@ -237,9 +273,11 @@ stay the historical record; do not author new weeks in that shape.
   MEANING, and give a derivative - occasionally used in a sentence. Every session,
   2-3 cards add an optional `extra_task` object with a direct teacher prompt and
   possible answers. The rendered label is `Extra task:`, never the unclear
-  `Derivative ask:`. Example: `SAY: "Okay, give me one flect or flex word, meaning bend."`
-  followed on a new line by `Possible answers: flexible, deflect, reflection.` Rotate
-  which cards receive it.
+  `Derivative ask:`. The prompt is a real question (v1.8, James: "Okay, give me..." is not
+  a question): `ASK: "What is one word built from flect, meaning bend?"` followed on a
+  new line by `Possible answers: flexible, deflect, reflection.` A prompt ending in `?`
+  renders as `ASK:`; the builder fails a v1.8 deck containing "give me". Rotate which
+  cards receive it.
 - PATTERN MORPHEMES: some bank entries are pronunciation/spelling patterns, not
   meaning morphemes (their `meaning` field says so - e.g. `-ine` "says /in/ or
   /uhn/", `-ciate / -tiate` "says /sh-ee-ate/"). Drill these for SOUND only: the
@@ -249,7 +287,29 @@ stay the historical record; do not author new weeks in that shape.
 
 ## 2b. Words to Read Review (15 words)
 
-Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
+V1.8 SLOTS: 5-4-3-2-1 (Kate Watt: "five, four, three, two, one, meaning most recent").
+5 words from the most recently taught morpheme, 4 from the one before, then 3, 2 and 1
+from the next three back, counting the week's new morpheme from Tuesday on. The 2 and 1
+slots may instead carry words from a while back (a Term 3 morpheme, a sound or spelling
+pattern) to keep older learning alive. Jumble the 15 in the grid. Monday's newest
+morpheme is last week's, and Monday must not reuse the previous Friday's words.
+
+V1.8 SCRIPT (the v1.7 script below was "SOOOO repetitive", James 22 Oct 2026):
+1. `1. READ: "Everyone, read every row with me, row 1 to row 5."` stays first.
+2. ONE second read, and it ROTATES day to day: partners on alternate rows, whisper read
+   then voices, sides of the room, news-reader read. Birthday groups every day are out.
+3. AT MOST 3 numbered `ASK:` beats, each with a ONE-WORD answer that is on the board, so
+   a choral answer has no discrepancy. At least two run as `10 sec, turn and talk. Then:
+   "Everyone, together, on three."`. A "why" question is turn and tell only, never
+   choral. Rotate the formats daily: "Which word means...", "Finish my sentence...",
+   "Odd one out: a, b, c", and partner point-and-read (A points, B reads it and says what
+   its part means). The builder warns on more than 3 ASKs or fewer than two turn and talk
+   beats.
+
+The v1.7 weighting and script below still apply to v1.7 specs and supply the word-choice
+rules (fresh words daily, morpheme doing its job, taught-only questions) for every week.
+
+V1.7 retrieval weighting - most recent gets most attention. Allocate the 15 slots:
 
 | Source | Slots |
 |---|---|
@@ -462,7 +522,15 @@ Retrieval weighting - most recent gets most attention. Allocate the 15 slots:
 - Spelling scope: the rest of each word must be spellable - check phonograms/patterns
   against what the group has been taught (OG sequence). When in doubt, choose the more
   decodable word.
-- Every word's notes carry THREE things, all required (the builder warns on gaps):
+- V1.8 AFTER-CHECK RULE (James, 22 Oct 2026: the cus, pon and -ify questions "made no
+  sense"). Only `Sentence:` is required. Add an `After checking:` / `Answer:` pair ONLY
+  where the part's meaning plainly shows in the word (astrophysics, hypersonic,
+  territory) - never on words whose parts have drifted from their meaning (excusable,
+  proponent, justify). At most 3 per session; the builder warns on more. The notes no
+  longer carry a "Click to reveal answer." line - a blank line separates the sentence
+  from the check.
+- v1.7 and earlier: every word's notes carry THREE things, all required (the builder
+  warns on gaps):
   1. `Sentence:` - context sentence, and it must do TWO jobs.
      - CONNECT TO THE STUDENTS. Put the word in a Grade 5/6 world they actually live
        in: their school, their yard, their sport, their science unit, their city.
@@ -663,7 +731,18 @@ or - for a NOTE only - swap the glossed part for one the class has been taught.
 - The card is followed by a copy-into-your-book reference slide showing
   `Type / Keyword / Meaning`. It renders at about 35 pt so it carries the room; do
   not shrink it back.
-- THE MEMORY HOOK BELONGS ON THAT COPY SLIDE TOO. The builder lifts the `Memory hook:`
+- V1.8 MEMORY HOOK: SHORT, SHARP AND SHINY, ON THE CARD WITH A PICTURE (James, 22 Oct
+  2026: the old hooks "suck"). Author it as the teach day's `memory_hook`:
+  `{"text": "Eject throws the pilot out!", "picture": "plane"}`. The text is 8 words or
+  fewer, one line, a concrete picture students can see (an action, an object), never the
+  definition reworded. `picture` names a pictogram from `themes/core/pictograms.js`
+  (`node -e "console.log(require('./themes/core/pictograms').listPictograms().join(' '))"`);
+  when none fits, draw a new one in that file first, then use it. The builder prints the
+  hook and picture on the new-morpheme card under the morpheme and puts
+  `MEMORY HOOK: ...` as the FIRST line of the card, copy-slide and grid notes. Do not
+  also write a `Memory hook:` line in `wtr_new_notes` (the builder warns). The
+  new-morpheme header notes carry one line, no PROCEDURE block.
+- v1.7 and earlier: THE MEMORY HOOK BELONGS ON THAT COPY SLIDE TOO. The builder lifts the `Memory hook:`
   line out of `wtr_new_notes` and appends it to the copy-card notes as a bold
   `MEMORY HOOK:` line, so the teacher delivers it while the anchor card is on screen
   and again at the end of the grid. Author the hook once, in `wtr_new_notes`.
@@ -772,6 +851,11 @@ or - for a NOTE only - swap the glossed part for one the class has been taught.
   columns, removes hidden text insets and centres the block; 10-12 words also stretches
   the columns down the page for a fourth row. Every term must remain unbroken at 27 pt
   or larger. Reveal stays one word per click.
+- V1.8 VET EVERY EQUATION (James, 22 Oct 2026: "word equations sometimes don't match the
+  answer"). Before the build, read each `words_to_read_new` meaning against its word:
+  every part in the word is named, no part is named that is not in the word, and the
+  meaning after the colon is built from exactly those parts. Then ask whether an adult
+  uses the word; if not, swap it.
 - NOTES ARE A VERBATIM TEACHER SCRIPT (`wtr_new_notes`), not a glossary.
   Non-negotiable line formula, the SUBMARINE MODEL: sub means beneath + marine means
   water, so a submarine is a vessel beneath the water. Every line does exactly that:
@@ -799,7 +883,7 @@ or - for a NOTE only - swap the glossed part for one the class has been taught.
   -al, -ate, -ance, -ation, -ly each get named with a kid-friendly meaning). Both
   morpheme spellings (ord AND ordin) must each appear across the script when the
   morpheme has variants.
-- End the script with a `Memory hook:` line - one sticky retention device students
+- v1.7 and earlier: end the script with a `Memory hook:` line - one sticky retention device students
   can rehearse and reuse in their writing: a hearable slogan (`hear ORD, think "Off to
   my place in the line"`), an action, a family-collection challenge, or a
   build-the-longest-word game. Every new/review morphology session has one; reuse the
@@ -849,10 +933,15 @@ or - for a NOTE only - swap the glossed part for one the class has been taught.
   card is on screen. Students should be able to BUILD each word from parts they hold. A
   spelling word containing a part nobody has met is a memorisation task wearing a
   morphology hat, and it is the one thing this section is not for.
-- Rotate the early-finisher extension in the notes; never the same one two days running.
-  Menu: use two target words in one sentence with a subordinate clause; write the meaning
-  in your own words using the root; find and record an antonym; turn the word into a
-  question; add a prefix/suffix and explain the new meaning.
+- V1.8 NOTES SHAPE (James, 22 Oct 2026): no "SAY each word, students write it in their
+  book, then click to show it." line (the builder warns) - the header carries the
+  routine. A blank line goes before the `EXTENSION:` line, and the extension is one of
+  the three types in 3e.
+- v1.7 and earlier: rotate the early-finisher extension in the notes; never the same one
+  two days running. Menu: use two target words in one sentence with a subordinate
+  clause; write the meaning in your own words using the root; find and record an
+  antonym; turn the word into a question; add a prefix/suffix and explain the new
+  meaning.
 - Extensions must be SELF-CONTAINED: if the task names a concept (subordinating clause,
   adverbial phrase), include a one-line reminder of what it is right in the note, so no
   student stalls waiting for the teacher. Then add an `EXTENSION:` step meeting the
@@ -1044,6 +1133,18 @@ builds for old specs, but new weeks use rounds.
 
 Applies to every early-finisher note, every morphology You Do and every grammar You do.
 
+V1.8: THREE TYPES ONLY (James, 22 Oct 2026). Extensions must be small, extra and
+challenging, and built on what the class already holds. Use one of these and nothing
+else:
+1. LONGEST WORD HUNT - "Build the longest real ject word you can and write its parts."
+   (Wednesday's matrix extension was "a ripper".)
+2. BEAT THE NUMBER - "Write 5 more real ject words in 2 minutes."
+3. TWO IN ONE - "Write one sentence that uses two of today's words and still makes
+   sense."
+Retired as confusing: "find two words on the board that share a part" and "change one
+part of export to make three new real words". The rules below (startable alone, answer
+supplied, taught parts only) still apply.
+
 - The label is `EXTENSION:`. `STRETCH:` is retired everywhere in OG decks; the builder
   bolds and line-breaks both, but new specs must use `EXTENSION:`.
 - AIM ABOUT 18 MONTHS AHEAD: end of Year 7 / start of Year 8. This cohort is an
@@ -1100,7 +1201,13 @@ handwriting." Three blocks, in this order, under one magenta `Build and Break` h
    - Notes: the ROUTINE (OG books, 4 minutes), a TRAP (a made-up word that "sounds
      right" - the test is whether it is a real word you could use), and an `ANSWERS:`
      block below the divider listing the real words the matrix makes, with meanings.
-2. BREAK IT APART (`build.rounds[0]`, a round of 4 + 1 worked). The hero is a whole
+2. BREAK IT APART (`build.rounds[0]`, a round of 4 + 1 worked). V1.8 (James: "tough to
+   write in the format wanted"): every item carries `parts` (`["re-", "ject", "-ion"]`,
+   at most 4) and the round carries `given: ["ject"]`. The slide draws one box per part
+   with `+` between them, the week's root already filled in; students write ONLY the
+   missing parts in their books, and the meanings arrive on the click's answer bar and
+   in the teacher's voice. The worked item shows every box filled. The audit fails a
+   v1.8 break round with an item missing `parts`. v1.7 wording follows: the hero is a whole
    word; students write its parts in their books (`trans + port + able`); the click
    shows the answer bar with each part's meaning (`trans- (across) + port (carry) +
    -able (able to)`). Kate: "do the opposite - instead of always building words, break
@@ -1119,7 +1226,34 @@ scan, click, tick or fix; `ANSWER:` first in each item's notes; the worked item 
 the round's `ANSWERS:` block, EXTENSION and HELP. Whiteboards for round 3, OG books for
 the matrix and round 2.
 
-## 3g. THURSDAY: SUFFIX PARTS OF SPEECH (v1.7 `apply` day)
+## 3g. THURSDAY: SUFFIX PARTS OF SPEECH (v1.7 `apply` day, frames in v1.8)
+
+V1.8 FRAMES (James, 22 Oct 2026: Thursday was "BRUTAL" - the suffixes were old and
+forgotten, and teachers could not explain why a suffix makes a noun). The drill is now
+explicit and every student can run it:
+- CHOOSE 4-5 SUFFIXES, NO MORE: suffixes on this week's review cards first; when the
+  cards hold none, taught suffixes that build this week's or recent words (Term 4 Week 4
+  used -ity, -ive, -ciate, -tude). Noun, verb or adjective only - adverb has no frame,
+  and the builder warns on any other `pos_answer`.
+- EACH CARD SHOWS what students need to work it out, never recall: the suffix, its
+  printed meaning, and a short keyword sentence with the keyword in bold
+  (`"sentence": "Gravity pulls the ball back down."`, required; the builder warns
+  without it). Under it sit three frame chips - "the ___", "to ___", "very ___" - and
+  the click reveals the part of speech.
+- THE FRAME TEST: say the keyword in each frame and stop. "the ___" sounding right means
+  a noun (a thing or idea), "to ___" a verb (something you do), "very ___" an adjective
+  (it describes). "very ___" replaced "a ___ person" because the article and
+  non-gradable adjectives (facial) broke it; skip a suffix like -cial whose keyword
+  fails "very".
+- CARD NOTES: `1. READ` the card chorally (meaning and sentence), `2. ASK` "Try X in each
+  frame with your partner. Which one sounds right?" with `10 sec, turn and talk. Then:
+  "Everyone, together, on three."` and EXPECT, `3. REVEAL` after the choral answer. No
+  open "give me an -ity word in a sentence" prompt.
+- `pos_drill.intro` is an I do slide modelling the three frames on one word from the week
+  (supportive), every Thursday. The builder writes a short PROCEDURE in the drill header
+  notes.
+
+v1.7 rules follow and still apply to v1.7 specs:
 
 Kate Watt (leadership meeting, 13 Oct 2026): "One thing that's lacking across the
 school is ... the suffixes, your part of speech. Is it a verb, is it a noun, is that an
@@ -1293,6 +1427,15 @@ slides.
 
 # 5. LEARNED WORDS (red words)
 
+- V1.8 ROUTINES (James, 22 Oct 2026). The builder writes them into the section header
+  notes; each word's notes follow the same steps in its own words:
+  - REVIEW word: 1. SAY the word in a sentence; students write it once from hearing it.
+    2. SHOW the word; students copy it correctly underneath. 3. COVER both; students
+    write it from memory, then tick or fix. Then the `Say it:` line.
+  - NEW word: the `Why learned:` and `Say it:` lines, then 1. COPY it twice, saying the
+    letter names. 2. COVER both and write it a third time from memory, then tick or fix.
+    Then the `Link:` line.
+
 - v1.7 SCHEDULE: learned words run on Tuesday (2 review + NEW word 1), Thursday
   (2 review + NEW word 2) and Friday (review only, both of this week's new words plus
   one older one). Never on Monday or Wednesday. Tuesday's new word is Yoshimoto's
@@ -1354,6 +1497,14 @@ slides.
 ---
 
 # 6. DICTATION (two sentences, both with reveal)
+
+- V1.8 SHORT WEEK: in a 4-session week Thursday is the last day and ends with ONE
+  dictation sentence (green meter) written in the week's grammar focus and carrying a
+  week's word plus a throwback from last week (Term 4 Week 4: `Our teacher rejected the
+  report; we had to write it again.`). It runs LAST, after the grammar block and the
+  vote, so students write the grammar they have just been taught. The builder places it
+  there, fails a last-session apply day with any other count, and an apply day that is
+  not the last session carries no dictation.
 
 - MEASURE LENGTH IN CHARACTERS, NOT WORDS. A word count lies: fourteen words made of
   camouflage, seismograph and microprocessor is far harder to hold and write back than
@@ -1765,7 +1916,14 @@ master template's old dense procedure blocks. All authored notes must follow
 
 # 9. WEEK SPEC JSON (the artefact you author)
 
-One JSON per week in `og_planner/weeks/`. v1.7 exemplar: `og_planner/weeks/term4_week3.json`
+One JSON per week in `og_planner/weeks/`. v1.8 exemplar: `og_planner/weeks/term4_week4.json`
+(ject, four sessions: `teach`, `spell`, `build`, `apply`, with Friday "No session this
+week"). v1.8 adds, on top of the v1.7 fields:
+`"og_version": "1.8"` at the top; `morphology_review` and `words_to_read_review` on
+every session; `memory_hook: {"text", "picture"}` on the teach day (3a); `sentence` on
+every `pos_drill.cards` item (3g); `parts` on every Break it apart item and `given` on
+the round (3f); `vote` on whichever session is last (1, 11).
+v1.7 exemplar: `og_planner/weeks/term4_week3.json`
 (port: `teach`, `spell`, `build`, `apply`, `week_review` - the gold standard for every
 new week). The legacy schema and exemplar (`og_planner/weeks/sample_term3_week1.json`,
 Monday `new` + Tuesday `review` + Friday `week_review`) follow; v1.7 day types use the
@@ -1973,7 +2131,7 @@ the per-session PPTX in the week folder IS the deliverable (unlike themed lesson
 
 # 10a. STEP-BY-STEP CHECKLIST (follow mechanically, in order, for every week)
 
-1. Read `og_planner/weeks/term4_week3.json` (v1.7) END TO END before writing anything.
+1. Read `og_planner/weeks/term4_week4.json` (v1.8) END TO END before writing anything.
    It is the gold exemplar: every notes format, every field, every recipe is
    demonstrated there. Your specs must match its formats exactly - same plain source
    labels (the builder applies real bold),
@@ -1995,17 +2153,18 @@ the per-session PPTX in the week folder IS the deliverable (unlike themed lesson
    focus morpheme + the review-10 + the sound bank + everything earlier on the term
    timeline. Every student-supplied answer you script must come out of that set (2f).
 4. For each session, in slide order, generate ONLY that day type's blocks (section 1):
-   Monday - review-10 (jumbled per 2a), 15 review words + verbal script opening with
-   everyone reading every row (2b), morpheme card + brainstorm + grid (6, 9 or 12,
-   useful words, untaught-part words last) + script + memory hook (3a-3b) + keyword and
-   sentence slide. Tuesday - recap card, 6-8 review spelling words with sentence +
-   prompt + answer (2d), THEN the dictated sound bank derived mechanically from them
-   (2c), 4 new spelling words off Monday's grid + extension (3c), learned words 2
-   review + new 1 (5), 2 dictations with cops carrying this week's teaching plus one
-   throwback (6). Wednesday - matrix, break-apart round, name-it round (3f). Thursday -
-   suffix parts-of-speech cards (3g), learned words 2 review + new 2, grammar (7).
-   Friday - review-10, 15 review words, review spelling, dictated bank, learned words
-   review, 2 dictations, vote.
+   EVERY day (v1.8) - review-10 (jumbled per 2a, fresh order) and 15 review words in
+   the 5-4-3-2-1 pattern with the v1.8 script (2b). Then:
+   Monday - morpheme card with `memory_hook` and picture + brainstorm + grid (6, 9 or
+   12, useful words, untaught-part words last, every equation vetted) + script (3a-3b)
+   + keyword and sentence slide. Tuesday - 6-8 review spelling words with sentences and
+   at most 3 after-check pairs (2d), THEN the dictated sound bank derived mechanically
+   from them (2c), 4 new spelling words off Monday's grid + extension (3c, 3e), learned
+   words 2 review + new 1 (5), 2 dictations with cops carrying this week's teaching
+   plus one throwback (6). Wednesday - matrix, break-apart round with part boxes,
+   name-it round (3f). Thursday - frame intro + 4-5 suffix cards with sentences (3g),
+   learned words 2 review + new 2, grammar (7). Friday - sound bank, review spelling,
+   learned words review, 2 dictations, vote. Short weeks per section 11.
    Note the order: the spelling list comes FIRST and the sound bank is derived from it.
    Choosing bank morphemes before you know the words is how the wrong nine get banked.
    Check the bank and the review-10 against the WHOLE week timeline, not just today:
@@ -2306,6 +2465,21 @@ When the user pastes a term block (section 12):
    morpheme-integrity or decodability reasons, and any learned word that looked fully
    decodable. Never propose a replacement keyword for a captured card.
 
+V1.8 SHORT WEEKS NEVER CUT NEW CONTENT (James, 22 Oct 2026: the sessions are "short,
+sharp and shiny", about 30 minutes, and nothing important gets dropped; three is the
+fewest sessions a week will ever have):
+
+| Sessions | Pattern | Notes |
+|---|---|---|
+| 5 | teach, spell, build, apply, week_review | the default |
+| 4 | teach, spell, build, apply | Friday's review day goes; Thursday carries the vote and ONE dictation sentence in the grammar focus (6) |
+| 3 | teach, spell, combined | `combined` = card drill, reading review, word matrix, Write the word that names... round, parts of speech, learned words, grammar, vote - about 30 min. The Break it apart round sits out (leave it out of `build.rounds`); put its words into next week's reading review |
+
+Every day still opens with the card drill and the reading review. The day with no
+session stays in `days`/`overview` as "No session this week". Filenames:
+`3. Wednesday (ject building and grammar).pptx` for a combined day.
+
+v1.7 mapping (kept for the record; v1.8 weeks use the table above).
 Mapping sessions to day types (v1.7, one morpheme a week). Kate Watt: in a short week,
 "what can I trim that I lose one week but I put it back in the week after? ... so you're
 not trimming off something that you never revisit again." Drop from the END of the
@@ -2395,7 +2569,8 @@ Interpreting the block:
   `After checking:` question about it. Say in the summary where each one landed. Kate
   Watt: "You're wasting your time if you're doing those reviews and you're not acting
   on them." Empty means proceed with defaults.
-- `Sessions per week` under 5 compresses per section 11.
+- `Sessions per week` under 5 compresses per section 11 (v1.8 table); 3 is the minimum.
+  Name the days that run if they are not Monday onward.
 - `Additional notes` may carry inquiry links, assessment weeks, short weeks, or a report
   that a catalogue transcription is wrong. It may not silently override a captured
   card's keyword or meaning. Verify any reported correction against the physical card,

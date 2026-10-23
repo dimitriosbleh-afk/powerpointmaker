@@ -250,6 +250,12 @@ def audit_slides(week):
         build = session.get("build") or {}
         for n, rnd in enumerate(build.get("rounds", []), 1):
             audit_round(f"{day} build round {n}", rnd)
+            if og.week_is_v18(week) and "break" in rnd.get("title", "").lower():
+                for item in rnd.get("round", []):
+                    if not item.get("parts"):
+                        issue(f"{day} build round {n}: Break it apart item "
+                              f"{item.get('prompt', '')!r} needs `parts` - one box per part, "
+                              "the root filled in (3f, v1.8)")
         matrix = build.get("matrix")
         if matrix:
             for part in matrix.get("prefixes", []) + matrix.get("suffixes", []):

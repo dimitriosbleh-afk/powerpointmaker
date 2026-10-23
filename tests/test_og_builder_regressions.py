@@ -633,6 +633,80 @@ class OgBuilderRegressionTests(unittest.TestCase):
         self.assertEqual(len(OG.WARNINGS), 1, OG.WARNINGS)
         self.assertIn("'tract'", OG.WARNINGS[0])
 
+    V18_SPEC = ROOT / "og_planner" / "weeks" / "term4_week4.json"
+
+    def _notes_text(self, deck):
+        with zipfile.ZipFile(deck) as archive:
+            return "".join(archive.read(n).decode("utf-8") for n in archive.namelist()
+                           if n.startswith("ppt/notesSlides/notesSlide"))
+
+    def test_v18_short_week_opens_every_day_with_review(self):
+        """James (22 Oct 2026): cards and reading review every day, hook with a
+        picture, frame-based parts of speech, part boxes, four-session week."""
+        with tempfile.TemporaryDirectory(prefix="og_v18_regression_") as temp:
+            decks = self.build_spec(self.V18_SPEC, Path(temp))
+            self.assertEqual([d.name for d in decks], [
+                "1. Monday (ject).pptx", "2. Tuesday (ject spelling).pptx",
+                "3. Wednesday (ject building).pptx", "4. Thursday (parts of speech).pptx"])
+            slides = ["\n".join(self._slide_xml(d)) for d in decks]
+            for deck_xml in slides:
+                self.assertIn("Morphology Review", deck_xml)
+                self.assertIn("Words to Read Review", deck_xml)
+            monday, tuesday, wednesday, thursday = slides
+            # Memory hook and its picture sit on the new-morpheme card.
+            self.assertIn("Eject throws the pilot out!", monday)
+            with zipfile.ZipFile(decks[0]) as archive:
+                self.assertIn("ppt/media/oghook_plane.png", archive.namelist())
+            self.assertTrue(self._notes_text(decks[0]).count("MEMORY HOOK") >= 2)
+            self.assertNotIn("PROCEDURE", self._notes_text(decks[0]).split("MEMORY HOOK")[0]
+                             .split("New morpheme today")[-1])
+            # No recap card on Tuesday; no retired note lines.
+            tue_notes = self._notes_text(decks[1])
+            self.assertNotIn("Click to reveal answer.", tue_notes)
+            self.assertNotIn("SAY each word, students write it", tue_notes)
+            # Break it apart: the root box is filled, the others are empty.
+            breaks = [x for x in self._slide_xml(decks[2]) if "Break it apart" in x]
+            self.assertTrue(breaks)
+            self.assertTrue(all(">+<" in x for x in breaks))
+            # Thursday: frames on every suffix card, the vote closes the week,
+            # one dictation sentence, reading review before parts of speech.
+            self.assertEqual(thursday.count(">very ___<"), 4)
+            self.assertIn("Trickiest this week?", thursday)
+            self.assertEqual(thursday.count("Write this sentence"), 1)
+            self.assertLess(thursday.index("Words to Read Review"),
+                            thursday.index("Suffix Parts of Speech"))
+            for deck in decks:
+                self.assertNotIn("give me", self._notes_text(deck).lower())
+
+    def test_v18_rules_fail_the_build(self):
+        """The v1.8 rules are gates, not advice."""
+        week = json.loads(self.V18_SPEC.read_text())
+        mon, tue, wed, thu = week["sessions"]
+        mon["morphology_review"][0]["extra_task"] = {
+            "prompt": "Okay, give me one port word, meaning carry.", "answers": ["export"]}
+        mon["memory_hook"]["text"] = "ject means throw so think of throwing a ball far away"
+        thu["pos_drill"]["cards"][0].pop("sentence")
+        thu.pop("vote")
+        thu["dictation"].append(dict(thu["dictation"][0], meter="yellow"))
+        wed["build"]["rounds"][0]["round"][1].pop("parts")
+        with tempfile.TemporaryDirectory(prefix="og_v18_fail_") as temp:
+            spec = Path(temp) / "term4_week4.json"
+            spec.write_text(json.dumps(week))
+            result = subprocess.run(
+                [sys.executable, str(BUILDER_PATH), str(spec), "--outdir", temp],
+                cwd=ROOT, capture_output=True, text=True, timeout=120, check=False)
+            out = result.stdout
+            self.assertNotEqual(result.returncode, 0, out)
+            self.assertIn("give me", out)
+            self.assertIn("8 words", out)
+            self.assertIn("sentence", out)
+            self.assertIn("`vote`", out)
+            self.assertIn("ONE dictation", out)
+            audit = subprocess.run(
+                [sys.executable, str(ROOT / "og_planner" / "audit_week_spec.py"), str(spec)],
+                cwd=ROOT, capture_output=True, text=True, timeout=60, check=False)
+            self.assertIn("parts", audit.stdout)
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

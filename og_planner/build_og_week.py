@@ -13,11 +13,13 @@ One PPTX per session is written into output/<unit_folder>/.
 The master template must not be edited. All content decisions live in the spec.
 """
 
+import base64
 import copy
 import json
 import math
 import re
 import shutil
+import subprocess
 import sys
 import zipfile
 from io import BytesIO
@@ -223,12 +225,33 @@ HEADER_NOTES = {
         "3. REVEAL the part of speech on the click; tick or fix.\n"
         "4. ASK one student for a word with that suffix, used in a short sentence."
     ),
+    # v1.8 (James Hooke's classroom feedback, 23 Oct 2026)
+    "new_morph_v18": "New morpheme today. The memory hook and its picture are on the next slide.",
+    "pos_drill_v18": (
+        "PROCEDURE:\n"
+        "1. READ the suffix, its meaning and the keyword sentence together.\n"
+        "2. TRY the keyword in each frame: the ___, to ___, very ___.\n"
+        "3. CHORAL: \"Everyone, together, on three.\" The frame that sounds right names the part of speech.\n"
+        "4. REVEAL on the click; tick or fix."
+    ),
+    "learned_review_v18": (
+        "PROCEDURE:\n"
+        "1. SAY the word in a sentence; students write it once from hearing it.\n"
+        "2. SHOW the word; students copy it correctly underneath.\n"
+        "3. COVER both; students write it from memory, then check and fix."
+    ),
+    "learned_new_v18": (
+        "PROCEDURE:\n"
+        "1. SAY the new word and name its unfair part.\n"
+        "2. COPY it twice, saying the letter names.\n"
+        "3. COVER both; write it a third time from memory, then check and fix."
+    ),
 }
 
 # v1.7 (Kate Watt, Oct 2026): one morpheme a week, every day for 20-30 minutes,
 # one lesson split across the week the way Yoshimoto's "One Lesson Over 2 Days"
 # sheet splits it.  Legacy `new` / `review` weeks still build unchanged.
-V17_TYPES = {"teach", "spell", "build", "apply"}
+V17_TYPES = {"teach", "spell", "build", "apply", "combined"}
 SOUND_FILL = "FFFFFF"   # phonogram (sound) boxes stay white, like the sound deck
 
 WARNINGS = []
@@ -501,7 +524,7 @@ def extra_task_note(card):
     prompt = prompt[0].upper() + prompt[1:]
     if prompt[-1] not in ".?!":
         prompt += "."
-    lines = ["Extra task:", f"SAY: \"{prompt}\""]
+    lines = ["Extra task:", f"{'ASK' if prompt.endswith('?') else 'SAY'}: \"{prompt}\""]
     if answer_text:
         lines.append(f"Possible answers: {answer_text}")
     return "\n" + "\n".join(lines)
@@ -828,6 +851,12 @@ def validate_dictation_sources(day, week, session):
 def week_is_v17(week):
     """True for a v1.7 five-day-shape week (any teach/spell/build/apply day)."""
     return any(s.get("type") in V17_TYPES for s in (week or {}).get("sessions", []))
+
+
+def week_is_v18(week):
+    """True for a v1.8 week (`"og_version": "1.8"`): the daily card drill and
+    Words to Read Review open every session (James Hooke, 23 Oct 2026)."""
+    return str((week or {}).get("og_version", "")) >= "1.8" and week_is_v17(week)
 
 
 def week_focus_labels(week):
@@ -1597,6 +1626,7 @@ class DeckBuilder:
     def __init__(self, pkg):
         self.pkg = pkg
         self.slides = []  # (slide_xml_root, rels_root, notes_root_or_None)
+        self.media = {}   # extra parts, e.g. "ppt/media/oghook_port.png" -> bytes
 
     def add(self, template_idx, fill=None, notes=None, fill_rels=None):
         """Clone template slide `template_idx`; apply fill(root) mutations."""
@@ -1638,6 +1668,7 @@ class DeckBuilder:
                         "ppt/_rels/presentation.xml.rels"):
                 continue
             parts[name] = data
+        parts.update(self.media)
 
         # slides + notes
         for i, (root, rels, notes_root, notes_rels) in enumerate(self.slides, 1):
@@ -1713,6 +1744,46 @@ class DeckBuilder:
         with zipfile.ZipFile(out_path, "w", zipfile.ZIP_DEFLATED) as z:
             for name, data in sorted(parts.items()):
                 z.writestr(name, data)
+
+
+_PICTOGRAM_CACHE = {}
+
+
+def pictogram_png(name, color=MORPH_MAGENTA, px=384):
+    """PNG bytes for a pictogram from the shared theme library (217 icons,
+    themes/core/pictograms.js).  None when the name is unknown."""
+    key = (name, color, px)
+    if key not in _PICTOGRAM_CACHE:
+        repo = ROOT_DIR.parent
+        js = ("const p=require('./themes/core/pictograms');"
+              f"const r=p.renderPictogramPng({json.dumps(name)},{json.dumps(color)},{px});"
+              "process.stdout.write(r?r.split(',')[1]:'')")
+        out = subprocess.run(["node", "-e", js], cwd=repo, capture_output=True,
+                             text=True)
+        _PICTOGRAM_CACHE[key] = base64.b64decode(out.stdout) if out.stdout else None
+    return _PICTOGRAM_CACHE[key]
+
+
+def add_picture(root, sid, rid, x, y, w, h):
+    """Place an image (already related as `rid`) on the slide."""
+    a, p, r = NS["a"], NS["p"], NS["r"]
+    xml = (
+        f'<p:pic xmlns:p="{p}" xmlns:a="{a}" xmlns:r="{r}">'
+        f'<p:nvPicPr><p:cNvPr id="{sid}" name="OGPic{sid}"/><p:cNvPicPr/><p:nvPr/>'
+        f'</p:nvPicPr><p:blipFill><a:blip r:embed="{rid}"/><a:stretch><a:fillRect/>'
+        f'</a:stretch></p:blipFill><p:spPr><a:xfrm><a:off x="{int(x * 914400)}" '
+        f'y="{int(y * 914400)}"/><a:ext cx="{int(w * 914400)}" cy="{int(h * 914400)}"/>'
+        f'</a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></p:spPr></p:pic>'
+    )
+    root.find(q("p:cSld") + "/" + q("p:spTree")).append(etree.fromstring(xml))
+
+
+def relate_image(rels, rid, target):
+    rel = etree.SubElement(rels, q("rel:Relationship"))
+    rel.set("Id", rid)
+    rel.set("Type", "http://schemas.openxmlformats.org/officeDocument/2006/"
+                    "relationships/image")
+    rel.set("Target", target)
 
 
 # ---------------------------------------------------------------- fills
@@ -1841,7 +1912,8 @@ def draw_round_slide(root, blk, item, accent, tint, ctx):
         sid += 1
         y += 0.76
     choices = [str(c) for c in item.get("choices", [])][:3]
-    hero_h = 1.1 if choices else 1.62
+    parts = [str(pt) for pt in item.get("parts", [])][:4]
+    hero_h = 1.1 if (choices or parts) else 1.62
     lines = [ln.strip() for ln in str(item.get("prompt", "")).split("\n")
              if ln.strip()] or [""]
     longest = max(lines, key=len)
@@ -1864,6 +1936,23 @@ def draw_round_slide(root, blk, item, accent, tint, ctx):
             add_textbox(root, sid, 0.9 + i * (cw + gap), y, cw, 0.82, cl, csz,
                         bold=True, fill="FFFFFF", outline=accent, rounded=True)
             sid += 1
+        y += 0.82 + 0.08
+    elif parts:
+        # v1.8 Break it apart (James Hooke, 23 Oct 2026): one box per part with
+        # the week's root already in place, so students write only the parts.
+        given = {str(g).strip("-").lower()
+                 for g in item.get("given", blk.get("given", []))}
+        plus_w, gap = 0.45, 0.0
+        bw = (8.2 - plus_w * (len(parts) - 1)) / len(parts)
+        for i, pt in enumerate(parts):
+            show = item.get("worked") or pt.strip("-").lower() in given
+            bx = 0.9 + i * (bw + plus_w)
+            add_textbox(root, sid, bx, y, bw, 0.82, [pt if show else ""], 26,
+                        bold=True, fill="FFFFFF", outline=accent, rounded=True)
+            sid += 1
+            if i < len(parts) - 1:
+                add_textbox(root, sid, bx + bw, y, plus_w, 0.82, ["+"], 26, bold=True)
+                sid += 1
         y += 0.82 + 0.08
     bar_h = min(0.8, ROUND_BAR_BOTTOM - y)
     if bar_h < 0.45:
@@ -2117,6 +2206,20 @@ SESSION_PLANS = {
     "apply": {"pos_drill", "lw", "grammar"},
     "week_review_v17": {"cards", "wtr", "sound_bank", "wts_review", "lw",
                         "dictation", "grammar", "vote"},
+    # v1.8: the daily review (cards + Words to Read Review) opens EVERY session,
+    # Tuesday's recap card goes (port is in Tuesday's cards now), and a short
+    # week cuts the Friday review day first (section 11).
+    "teach_v18": {"cards", "wtr", "morph_hdr", "nm_card", "nm_copy", "grid",
+                  "keyword_sentence"},
+    "spell_v18": {"cards", "wtr", "sound_bank", "wts_review", "wts_new", "lw",
+                  "dictation"},
+    "build_v18": {"cards", "wtr", "build"},
+    "apply_v18": {"cards", "wtr", "pos_drill", "lw", "grammar", "dictation",
+                  "vote"},
+    "combined_v18": {"cards", "wtr", "build", "pos_drill", "lw", "grammar",
+                     "vote"},
+    "week_review_v18": {"cards", "wtr", "sound_bank", "wts_review", "lw",
+                        "dictation", "grammar", "vote"},
 }
 
 V17_REQUIRED = {
@@ -2129,11 +2232,26 @@ V17_REQUIRED = {
     "week_review_v17": ["morphology_review", "words_to_read_review", "sound_bank",
                         "words_to_spell_review", "learned_words", "dictation",
                         "vote"],
+    "teach_v18": ["morphology_review", "words_to_read_review", "new_morphology",
+                  "words_to_read_new", "wtr_new_notes", "keyword_sentence"],
+    "spell_v18": ["morphology_review", "words_to_read_review", "sound_bank",
+                  "words_to_spell_review", "words_to_spell_new", "learned_words",
+                  "dictation"],
+    "build_v18": ["morphology_review", "words_to_read_review", "build"],
+    "apply_v18": ["morphology_review", "words_to_read_review", "pos_drill",
+                  "learned_words", "grammar"],
+    "combined_v18": ["morphology_review", "words_to_read_review", "build",
+                     "pos_drill", "grammar", "vote"],
+    "week_review_v18": ["morphology_review", "words_to_read_review", "sound_bank",
+                        "words_to_spell_review", "learned_words", "dictation",
+                        "vote"],
 }
 
 
 def session_plan_key(week, session):
     stype = session.get("type", "new")
+    if week_is_v18(week) and stype in V17_TYPES | {"week_review"}:
+        return stype + "_v18"
     if stype == "week_review" and week_is_v17(week):
         return "week_review_v17"
     return stype
@@ -2159,9 +2277,22 @@ def build_session(pkg, week, session, out_path):
         plan_key = "new"
     plan = SESSION_PLANS[plan_key]
     v17 = week_is_v17(week)
+    v18 = week_is_v18(week)
     term, wknum = week["term"], week["week"]
+    if v18:
+        # James Hooke (23 Oct 2026): ask real questions ("What is one word built
+        # from terr, meaning land?"), never "give me"; the "SAY each word"
+        # line above the spelling extension was noise.
+        blob = json.dumps(session, ensure_ascii=False)
+        if re.search(r"\bgive me\b", blob, flags=re.I):
+            warn(f"{day}: a script says \"give me\" - ask the real question instead "
+                 "(\"What is one word built from terr, meaning land?\") (2a, v1.8)")
+        if "SAY each word, students write it" in blob:
+            warn(f"{day}: drop the \"SAY each word, students write it...\" line from "
+                 "the spelling notes (3c, v1.8)")
     cohort = week.get("cohort", "Enrichment")
     marks = {"review_cards": [], "pos_cards": []}
+    mh = None
 
     def want(block):
         return block in plan
@@ -2169,6 +2300,22 @@ def build_session(pkg, week, session, out_path):
     for key in V17_REQUIRED.get(plan_key, []):
         if not session.get(key):
             warn(f"{day}: a {stype} day needs `{key}` (section 1, v1.7)")
+    if v18:
+        # Short weeks (section 11, v1.8): the review day goes first, so the
+        # last session carries the vote, and a 4-session week's apply day
+        # keeps a second dictation day with one sentence in the grammar focus.
+        last = session is week["sessions"][-1]
+        if last and not session.get("vote"):
+            warn(f"{day}: the week's last session needs the trickiest-this-week "
+                 "`vote` (section 1, v1.8)")
+        if plan_key == "apply_v18":
+            n_dict = len(session.get("dictation") or [])
+            if last and n_dict != 1:
+                warn(f"{day}: a short week's apply day ends with ONE dictation "
+                     "sentence in the week's grammar focus (section 11, v1.8)")
+            elif not last and n_dict:
+                warn(f"{day}: the apply day only carries dictation when it is the "
+                     "week's last session (section 11, v1.8)")
     timing_src = etree.fromstring(pkg.slide_xml(T["spell_word"])).find(q("p:timing"))
 
     # --- 1 title
@@ -2255,55 +2402,6 @@ def build_session(pkg, week, session, out_path):
             marks["review_cards"].append((len(d.slides), card))
             d.add(tidx, fill_card, notes=card_note)
 
-    # --- v1.7 Thursday: suffix cards with their part of speech on the click
-    if want("pos_drill") and session.get("pos_drill"):
-        drill = session["pos_drill"]
-
-        def fill_pos_hdr(root):
-            retitle(root, "Morphology Review", "Suffix Parts of Speech")
-        d.add(T["hdr_morph_review"], fill_pos_hdr, notes=HEADER_NOTES["pos_drill"])
-        intro = drill.get("intro")
-        if intro:
-            itidx = T["gradual_release"]["i_do"]
-
-            def fill_pos_intro(root, intro=intro, itidx=itidx):
-                tsp = find_sp(root, SHAPE["gr_title"][itidx])
-                set_text(tsp, "I do - " + intro.get("title", ""))
-                bsp = find_sp(root, SHAPE["gr_body"][itidx])
-                set_runs(bsp, [[]])
-                draw_structured_slide(root, intro, MORPH_MAGENTA, MORPH_TINT,
-                                      f"{day} pos_drill intro")
-            d.add(itidx, fill_pos_intro, notes=intro.get("notes", ""))
-        for card in drill.get("cards", []):
-            card = {**card, "type": "suffix"}
-            tidx = CARD_REVIEW["suffix"]
-            printed = card_parts_of_speech(card)
-            pos = card.get("pos_answer") or (printed[0] if printed else "")
-            if not pos:
-                warn(f"{day}: parts-of-speech card {card['morph']!r} has no printed "
-                     "part of speech and no pos_answer")
-            elif printed and pos not in printed:
-                warn(f"{day}: parts-of-speech card {card['morph']!r} pos_answer "
-                     f"{pos!r} is not printed on the card ({', '.join(printed)})")
-
-            def fill_pos(root, card=card, tidx=tidx, pos=pos):
-                set_slide_background(root, MORPH_FILL["suffix"])
-                sp = find_sp(root, SHAPE["card_review_word"][tidx])
-                set_text(sp, card["morph"], size_pt=fit_font(card["morph"], 5.75, 56))
-                add_textbox(root, 90050, 2.5, 4.05, 5.0, 0.75, [pos], 36,
-                            color=CHARCOAL, bold=True, fill="FFFFFF", rounded=True)
-                insert_timing(root, copy.deepcopy(timing_src))
-                regen_timing(root, [(90050, None)])
-            kw, mean = resolve_card(day, "parts-of-speech card", card)
-            pos_note = (f"ANSWER: {pos}\n"
-                        f"Suffix: {card['morph']}\n"
-                        f"{card_meaning_note(mean)}"
-                        f"{card_pos_note(card)}")
-            if card.get("notes"):
-                pos_note += "\n" + card["notes"]
-            marks["pos_cards"].append((len(d.slides), card))
-            d.add(tidx, fill_pos, notes=pos_note)
-
     # --- words to read review
     if want("wtr"):
         d.add(T["hdr_wtr_review"], notes=HEADER_NOTES["wtr_review"])
@@ -2311,9 +2409,18 @@ def build_session(pkg, week, session, out_path):
         if len(wtr["words"]) != 15:
             warn(f"{day}: words_to_read_review has {len(wtr['words'])} words (template holds 15)")
         review_notes = prepare_notes_text(wtr.get("notes", ""))
-        if len(re.findall(r"^\d+\. READ:", review_notes, flags=re.MULTILINE)) < 3:
+        min_reads = 2 if v18 else 3
+        if len(re.findall(r"^\d+\. READ:", review_notes, flags=re.MULTILINE)) < min_reads:
             warn(f"{day}: Words to Read Review needs one numbered READ line per "
                  "group plus the whole-class read")
+        if v18:
+            asks = re.findall(r"^\d+\. ASK:", review_notes, flags=re.MULTILINE)
+            if not 1 <= len(asks) <= 3:
+                warn(f"{day}: Words to Read Review has {len(asks)} questions; v1.8 "
+                     "asks three at most, one-word answers from the board (2b)")
+            if len(re.findall(r"turn and (?:talk|tell)", review_notes, flags=re.I)) < 2:
+                warn(f"{day}: Words to Read Review needs at least two questions run "
+                     "as turn and talk, then a choral answer (2b, v1.8)")
         if v17:
             # Kate Watt (Oct 2026): everyone decodes every row first; the
             # group rows are the second, fluency read.
@@ -2379,9 +2486,14 @@ def build_session(pkg, week, session, out_path):
                     # unreadable size, and left alone it breaks mid-bracket. Split
                     # it after the slash so each half renders whole and large.
                     one_line = fit_font(label, 2.33, 45, min_pt=24)
-                    if "/" in label and one_line <= 28:
-                        head, _, tail = label.partition("/")
-                        parts = [head.strip() + "/", tail.strip()]
+                    # PowerPoint wraps "pon/pound" mid-word ("pon/poun" + "d")
+                    # even when the estimate says it fits (James Hooke, Oct
+                    # 2026), so any longer slashed label breaks after a slash.
+                    if "/" in label and (one_line <= 28 or len(label) > 6):
+                        cuts = [i + 1 for i, ch in enumerate(label) if ch == "/"]
+                        cut = min(cuts, key=lambda i: abs(len(label) - 2 * i))
+                        head, tail = label[:cut], label[cut:]
+                        parts = [head.strip(), tail.strip()]
                         # two lines must still clear the 1.04" box, so drop the
                         # body insets and cap at the height-derived maximum
                         sz = min(28,
@@ -2417,7 +2529,7 @@ def build_session(pkg, week, session, out_path):
                 else:
                     _kw, meaning = resolve_card(day, "sound bank", item)
                     say_lines.append(f"{n}. {item['morph']} - {meaning}")
-            say_lines += ["green = root", "yellow = prefix", "red = suffix",
+            say_lines += ["", "green = root", "yellow = prefix", "red = suffix",
                           "white = sound"]
             bank_notes = "\n".join(say_lines)
         else:
@@ -2436,17 +2548,20 @@ def build_session(pkg, week, session, out_path):
         if not lo <= len(wsr) <= hi:
             warn(f"{day}: words_to_spell_review has {len(wsr)} words "
                  f"(expected {lo}-{hi})")
+        if v18 and sum(1 for item in wsr if item.get("prompt")) > 3:
+            warn(f"{day}: more than 3 after-check questions; keep them for words "
+                 "where the part's meaning plainly shows (2d, v1.8)")
         for item in wsr:
             def fill_spell(root, item=item):
                 sp = find_sp(root, SHAPE["spell_word_box"])
                 set_text(sp, item["word"], size_pt=fit_font(item["word"], 4.96, 60, min_pt=28))
-            if not item.get("prompt"):
+            if not item.get("prompt") and not v18:
                 warn(f"{day}: spell review word '{item['word']}' has no after-check prompt")
-            elif not item.get("answer"):
+            elif item.get("prompt") and not item.get("answer"):
                 warn(f"{day}: spell review word '{item['word']}' prompt has no answer")
             note_text = (f"Word to spell: {item['word']}\n"
                          f"Sentence: {item['sentence']}\n"
-                         "Click to reveal answer.")
+                         + ("" if v18 else "Click to reveal answer."))
             if item.get("prompt"):
                 note_text += f"\nAfter checking: {item['prompt']}"
             if item.get("answer"):
@@ -2461,22 +2576,61 @@ def build_session(pkg, week, session, out_path):
             sp = find_sp(root, SHAPE["hdr_new_morph_txt"])
             replace_run_text(sp, "New Morphology", section)
         d.add(T["hdr_new_morph"], fill_nm_hdr,
-              notes=HEADER_NOTES["new_morph_v17" if stype == "teach" else "new_morph"])
+              notes=HEADER_NOTES["new_morph_v18" if v18 and stype == "teach"
+                                 else "new_morph_v17" if stype == "teach"
+                                 else "new_morph"])
 
     if want("nm_card") and nm:
         tidx = CARD_NEW[nm["type"]]
+
+        # v1.8 (James Hooke, 23 Oct 2026): the memory hook is short, sits at
+        # the top of the notes and on the card face with a small picture, so
+        # it can be retrieved in an instant.
+        mh = session.get("memory_hook") if v18 else None
+        hook_png = None
+        if v18 and stype == "teach":
+            if not mh or not mh.get("text") or not mh.get("picture"):
+                warn(f"{day}: a v1.8 teach day needs `memory_hook` with `text` and "
+                     "`picture` (3a)")
+                mh = None
+            else:
+                if len(mh["text"].split()) > 8:
+                    warn(f"{day}: memory hook {mh['text']!r} is over 8 words (3a, v1.8)")
+                hook_png = pictogram_png(mh["picture"])
+                if hook_png is None:
+                    warn(f"{day}: memory hook picture {mh['picture']!r} is not in the "
+                         "pictogram library (themes/core/pictograms.js)")
+        hook_media = None
+        if hook_png:
+            hook_media = f"oghook_{re.sub(r'[^a-z0-9]+', '_', mh['picture'].lower())}.png"
+            d.media[f"ppt/media/{hook_media}"] = hook_png
 
         def fill_nm_card(root, tidx=tidx, nm=nm):
             set_slide_background(root, MORPH_FILL[nm["type"]])
             sp = find_sp(root, SHAPE["card_new_word"][tidx])
             set_text(sp, nm["morph"], size_pt=fit_font(nm["morph"], 5.75, 56))
+            if mh:
+                add_textbox(root, 90060, 1.45, 3.7, 7.1, 1.2, [""], 12,
+                            fill="FFFFFF", rounded=True)
+                hsz = fit_font_block(mh["text"], 5.4, 1.0, 24, min_pt=18)
+                add_textbox(root, 90061, 2.7 if hook_media else 1.6, 3.75,
+                            5.8 if hook_media else 6.8, 1.1, [mh["text"]], hsz,
+                            bold=True, align="l" if hook_media else "ctr")
+                if hook_media:
+                    add_picture(root, 90062, "rIdOGHook", 1.62, 3.8, 1.0, 1.0)
+
+        def fill_nm_rels(rels):
+            if hook_media:
+                relate_image(rels, "rIdOGHook", f"../media/{hook_media}")
         nm_kw, nm_mean = resolve_card(day, "new morphology", nm)
         marks["nm_card"] = len(d.slides)
         d.add(tidx, fill_nm_card,
-              notes=(f"{nm['type'].capitalize()}: {nm['morph']}\n"
+              notes=((f"MEMORY HOOK: {mh['text']}\n" if mh else "")
+                     + f"{nm['type'].capitalize()}: {nm['morph']}\n"
                      f"Keyword: {nm_kw}\n"
                      f"{card_meaning_note(nm_mean)}"
-                     f"{card_pos_note(nm)}"))
+                     f"{card_pos_note(nm)}"),
+              fill_rels=fill_nm_rels if hook_media else None)
 
         # Immediately follow the delivered morpheme card with a stable,
         # non-animated reference students can copy into their books.
@@ -2543,7 +2697,9 @@ def build_session(pkg, week, session, out_path):
              if line.strip().lower().startswith("memory hook:")),
             "",
         )
-        if hook:
+        if mh:
+            copy_notes = f"MEMORY HOOK: {mh['text']}\n" + copy_notes
+        elif hook:
             copy_notes += f"\nMEMORY HOOK: {hook}"
         marks["nm_copy"] = len(d.slides)
         d.add(tidx, fill_nm_copy, notes=copy_notes)
@@ -2601,10 +2757,16 @@ def build_session(pkg, week, session, out_path):
                 for pi in range(len(col)):
                     targets.append((spid, pi))
             regen_timing(root, targets)
-        d.add(T["wtr_new_grid"], fill_wtr_grid,
-              notes=session.get(
-                  "wtr_new_notes",
-                  "\n".join(f"{w['word']} - {w['meaning']}" for w in words)))
+        grid_notes = session.get(
+            "wtr_new_notes",
+            "\n".join(f"{w['word']} - {w['meaning']}" for w in words))
+        if v18:
+            if re.search(r"^memory hook:", grid_notes, flags=re.I | re.M):
+                warn(f"{day}: the grid notes carry an old `Memory hook:` line; v1.8 "
+                     "puts the hook in `memory_hook` (3a)")
+            if mh:
+                grid_notes = f"MEMORY HOOK: {mh['text']}\n" + grid_notes
+        d.add(T["wtr_new_grid"], fill_wtr_grid, notes=grid_notes)
 
     # --- v1.7 Monday close: the student's own keyword and one sentence
     if want("keyword_sentence") and session.get("keyword_sentence"):
@@ -2719,10 +2881,101 @@ def build_session(pkg, week, session, out_path):
             emit_round(d, rnd, b_tidx, MORPH_MAGENTA, MORPH_TINT,
                        f"{day} build round", "You do - ")
 
+    # --- v1.7 Thursday: suffix cards with their part of speech on the click
+    # (after the daily review and any build round, before learned words)
+    if want("pos_drill") and session.get("pos_drill"):
+        drill = session["pos_drill"]
+
+        def fill_pos_hdr(root, drill=drill):
+            retitle(root, "Morphology Review", "Suffix Parts of Speech")
+            if drill.get("time"):
+                retitle(root, "2 mins", drill["time"])
+        d.add(T["hdr_morph_review"], fill_pos_hdr,
+              notes=HEADER_NOTES["pos_drill_v18" if v18 else "pos_drill"])
+        intro = drill.get("intro")
+        if intro:
+            itidx = T["gradual_release"]["i_do"]
+
+            def fill_pos_intro(root, intro=intro, itidx=itidx):
+                tsp = find_sp(root, SHAPE["gr_title"][itidx])
+                set_text(tsp, "I do - " + intro.get("title", ""))
+                bsp = find_sp(root, SHAPE["gr_body"][itidx])
+                set_runs(bsp, [[]])
+                draw_structured_slide(root, intro, MORPH_MAGENTA, MORPH_TINT,
+                                      f"{day} pos_drill intro")
+            d.add(itidx, fill_pos_intro, notes=intro.get("notes", ""))
+        for card in drill.get("cards", []):
+            card = {**card, "type": "suffix"}
+            tidx = CARD_REVIEW["suffix"]
+            printed = card_parts_of_speech(card)
+            pos = card.get("pos_answer") or (printed[0] if printed else "")
+            if not pos:
+                warn(f"{day}: parts-of-speech card {card['morph']!r} has no printed "
+                     "part of speech and no pos_answer")
+            elif printed and pos not in printed:
+                warn(f"{day}: parts-of-speech card {card['morph']!r} pos_answer "
+                     f"{pos!r} is not printed on the card ({', '.join(printed)})")
+
+            kw, mean = resolve_card(day, "parts-of-speech card", card)
+            if v18 and not card.get("sentence"):
+                warn(f"{day}: parts-of-speech card {card['morph']!r} needs a "
+                     "`sentence` using its keyword - students forget older "
+                     "suffixes (3g, v1.8)")
+            if v18 and pos not in ("noun", "verb", "adjective"):
+                warn(f"{day}: parts-of-speech card {card['morph']!r} makes a "
+                     f"{pos!r}; the three frames only test noun, verb and "
+                     "adjective (3g, v1.8)")
+
+            def fill_pos(root, card=card, tidx=tidx, pos=pos, kw=kw, mean=mean):
+                set_slide_background(root, MORPH_FILL["suffix"])
+                sp = find_sp(root, SHAPE["card_review_word"][tidx])
+                set_text(sp, card["morph"], size_pt=fit_font(card["morph"], 5.75, 56))
+                if v18:
+                    # James Hooke (23 Oct 2026): the bare suffix was not enough -
+                    # kids forgot older suffixes and teachers could not explain
+                    # the part of speech.  The card now carries its meaning, the
+                    # keyword in a sentence, and the three test frames.
+                    xfrm = sp.find(q("p:spPr") + "/" + q("a:xfrm"))
+                    xfrm.find(q("a:off")).set("y", str(int(0.95 * 914400)))
+                    meaning = re.sub(r"^[^:]*:\s*", "",
+                                     card_meaning_note(mean).splitlines()[0])
+                    add_textbox(root, 90051, 1.0, 2.12, 8.0, 0.55,
+                                [f"means: {meaning}"], 24, bold=True)
+                    sentence = card.get("sentence", "")
+                    marked = re.sub(rf"\b({re.escape(kw)})\b", r"**\1**", sentence,
+                                    count=1, flags=re.I)
+                    ssz = fit_font_block(sentence, 8.0, 0.6, 24, min_pt=18)
+                    add_textbox(root, 90052, 1.0, 2.7, 8.0, 0.65, [marked], ssz,
+                                fill="FFFFFF", rounded=True)
+                    for i, frame in enumerate(("the ___", "to ___", "very ___")):
+                        add_textbox(root, 90053 + i, 1.0 + i * 2.75, 3.52, 2.5, 0.55,
+                                    [frame], 22, bold=True, fill="FFFFFF",
+                                    outline=CHARCOAL, rounded=True)
+                    add_textbox(root, 90050, 2.5, 4.27, 5.0, 0.72, [pos], 34,
+                                color=CHARCOAL, bold=True, fill="FFFFFF", rounded=True)
+                else:
+                    add_textbox(root, 90050, 2.5, 4.05, 5.0, 0.75, [pos], 36,
+                                color=CHARCOAL, bold=True, fill="FFFFFF", rounded=True)
+                insert_timing(root, copy.deepcopy(timing_src))
+                regen_timing(root, [(90050, None)])
+            pos_note = (f"ANSWER: {pos}\n"
+                        f"Suffix: {card['morph']}\n"
+                        f"{card_meaning_note(mean)}"
+                        f"{card_pos_note(card)}")
+            if v18:
+                pos_note = (f"ANSWER: {pos}\n"
+                            f"Suffix: {card['morph']} | Keyword: {kw}\n"
+                            f"{card_meaning_note(mean)}")
+            if card.get("notes"):
+                pos_note += "\n" + card["notes"]
+            marks["pos_cards"].append((len(d.slides), card))
+            d.add(tidx, fill_pos, notes=pos_note)
+
     # --- learned words
     if want("lw") and session.get("learned_words"):
         lw = session["learned_words"]
-        d.add(T["hdr_review_lw"], notes=HEADER_NOTES["learned_review"])
+        d.add(T["hdr_review_lw"],
+              notes=HEADER_NOTES["learned_review_v18" if v18 else "learned_review"])
         for item in lw.get("review", []):
             def fill_lw(root, item=item):
                 sp = find_sp(root, SHAPE["lw_word"][22])
@@ -2731,7 +2984,8 @@ def build_session(pkg, week, session, out_path):
             d.add(T["learned_word"], fill_lw, notes=item["notes"])
         if lw.get("new"):
             item = lw["new"]
-            d.add(T["hdr_new_lw"], notes=HEADER_NOTES["learned_new"])
+            d.add(T["hdr_new_lw"],
+                  notes=HEADER_NOTES["learned_new_v18" if v18 else "learned_new"])
 
             def fill_lw_new(root, item=item):
                 sp = find_sp(root, SHAPE["lw_word"][25])
@@ -2740,93 +2994,101 @@ def build_session(pkg, week, session, out_path):
             d.add(T["learned_word_new"], fill_lw_new, notes=item["notes"])
 
     # --- dictation
-    if want("dictation") and session.get("dictation"):
-        d.add(T["hdr_dictation"], notes=HEADER_NOTES["dictation"])
-        dictation_items = session["dictation"]
-        if len(dictation_items) == 2:
-            meters = [item.get("meter") for item in dictation_items]
-            if meters != ["green", "yellow"]:
-                warn(f"{day}: dictation meters must progress from green on the "
-                     "first sentence to yellow on the trickier second sentence")
-        for dictation_index, dt in enumerate(dictation_items):
-            meter = dt.get("meter")
-            if meter not in T["dictation"]:
-                warn(f"{day}: dictation {dictation_index + 1} needs meter "
-                     "'green' or 'yellow'")
-                meter = "green" if dictation_index == 0 else "yellow"
-            # The locked yellow slide has no native animation. Clone the green
-            # animated slide for both meters, then restore a compatible yellow
-            # meter image. This preserves a true appear effect without the
-            # LibreOffice/Google Slides position shift caused by transplanting a
-            # timing block into the yellow slide.
-            clone_tidx = T["dictation"]["green"]
-            sentence_spid = SHAPE["dictation_sentence"][clone_tidx]
-            # COPS replaced CUPS school-wide (Kate Watt, Oct 2026); `cups` is
-            # still read so delivered specs rebuild.
-            cops = dt.get("cops") or dt.get("cups")
-            targets = dt.get("targets", [])
-            score = dt.get("score")
-            if score is None and cops:
-                score = (len(cops.get("capitals", [])) + len(cops.get("punctuation", []))
-                         + len(targets) + 1)  # +1 = Organisation (dictated order)
-            if not cops:
-                warn(f"{day}: dictation '{dt['sentence'][:30]}...' has no cops marking block")
+    # v1.8 short week: Thursday's one dictation is written in the week's
+    # grammar focus, so it runs after the grammar block and the vote.
+    late_dictation = v18 and plan_key == "apply_v18"
 
-            def fill_dict(root, dt=dt, score=score,
-                          sentence_spid=sentence_spid):
-                sp = find_sp(root, sentence_spid)
-                # LibreOffice and Google Slides use slightly taller Lexend metrics
-                # than PowerPoint. Keep long 14-16 word reveals inside the locked
-                # sentence box so they cannot expand upward over the title.
-                display_sentence = smart_dictation_quotes(dt["sentence"])
-                sz = fit_font_block(
-                    display_sentence, 9.0, 2.45, 32, min_pt=28,
-                    char_em=0.62, line_factor=1.5,
-                )
-                set_runs(sp, dictation_runs(display_sentence, dt.get("targets", [])), size_pt=sz)
-                bodypr = sp.find(q("p:txBody") + "/" + q("a:bodyPr"))
-                if bodypr is not None:
-                    bodypr.set("anchor", "t")
-                regen_timing(root, [(sentence_spid, None)])
-                if score:
-                    add_textbox(root, 90001, 6.8, 4.55, 2.7, 0.45,
-                                [f"Score: ___ /{score}"], 20, align="r", anchor="ctr")
+    def emit_dictation():
+        if want("dictation") and session.get("dictation"):
+            d.add(T["hdr_dictation"], notes=HEADER_NOTES["dictation"])
+            dictation_items = session["dictation"]
+            if len(dictation_items) == 2:
+                meters = [item.get("meter") for item in dictation_items]
+                if meters != ["green", "yellow"]:
+                    warn(f"{day}: dictation meters must progress from green on the "
+                         "first sentence to yellow on the trickier second sentence")
+            for dictation_index, dt in enumerate(dictation_items):
+                meter = dt.get("meter")
+                if meter not in T["dictation"]:
+                    warn(f"{day}: dictation {dictation_index + 1} needs meter "
+                         "'green' or 'yellow'")
+                    meter = "green" if dictation_index == 0 else "yellow"
+                # The locked yellow slide has no native animation. Clone the green
+                # animated slide for both meters, then restore a compatible yellow
+                # meter image. This preserves a true appear effect without the
+                # LibreOffice/Google Slides position shift caused by transplanting a
+                # timing block into the yellow slide.
+                clone_tidx = T["dictation"]["green"]
+                sentence_spid = SHAPE["dictation_sentence"][clone_tidx]
+                # COPS replaced CUPS school-wide (Kate Watt, Oct 2026); `cups` is
+                # still read so delivered specs rebuild.
+                cops = dt.get("cops") or dt.get("cups")
+                targets = dt.get("targets", [])
+                score = dt.get("score")
+                if score is None and cops:
+                    score = (len(cops.get("capitals", [])) + len(cops.get("punctuation", []))
+                             + len(targets) + 1)  # +1 = Organisation (dictated order)
+                if not cops:
+                    warn(f"{day}: dictation '{dt['sentence'][:30]}...' has no cops marking block")
 
-            def fill_dict_rels(rels, meter=meter):
-                if meter != "yellow":
-                    return
-                yellow_rels = etree.fromstring(
-                    pkg.slide_rels(T["dictation"]["yellow"])
-                )
-                yellow_image_rel = next(
-                    rel for rel in yellow_rels.findall(q("rel:Relationship"))
-                    if rel.get("Id") == "rId3"
-                )
-                current_image_rel = next(
-                    rel for rel in rels.findall(q("rel:Relationship"))
-                    if rel.get("Id") == "rId3"
-                )
-                current_image_rel.set("Target", yellow_image_rel.get("Target"))
-            lines = [dt["sentence"], ""]
-            if cops:
-                caps = cops.get("capitals", [])
-                punct = cops.get("punctuation", [])
-                # Each punctuation mark now carries a plain-English reminder, so the
-                # joined list is far too long for one paragraph. One mark per line
-                # also gives the teacher a genuine tick-off checklist.
-                lines += ["Mark with COPS, tick each line:",
-                          f"C - Capitals, shown green: {', '.join(caps)} ({len(caps)})",
-                          "O - Organisation: every word there, in the dictated order (1)",
-                          f"P - Punctuation, shown red ({len(punct)}):"]
-                lines += [f"   {mark}" for mark in punct]
-                lines += [f"S - Spelling targets, underlined: {', '.join(targets)} ({len(targets)})",
-                          f"Score: /{score}"]
-            elif targets:
-                lines.append(f"Targets: {', '.join(targets)}")
-            if dt.get("focus"):
-                lines.append(f"Focus: {dt['focus']}")
-            d.add(clone_tidx, fill_dict, notes="\n".join(lines),
-                  fill_rels=fill_dict_rels)
+                def fill_dict(root, dt=dt, score=score,
+                              sentence_spid=sentence_spid):
+                    sp = find_sp(root, sentence_spid)
+                    # LibreOffice and Google Slides use slightly taller Lexend metrics
+                    # than PowerPoint. Keep long 14-16 word reveals inside the locked
+                    # sentence box so they cannot expand upward over the title.
+                    display_sentence = smart_dictation_quotes(dt["sentence"])
+                    sz = fit_font_block(
+                        display_sentence, 9.0, 2.45, 32, min_pt=28,
+                        char_em=0.62, line_factor=1.5,
+                    )
+                    set_runs(sp, dictation_runs(display_sentence, dt.get("targets", [])), size_pt=sz)
+                    bodypr = sp.find(q("p:txBody") + "/" + q("a:bodyPr"))
+                    if bodypr is not None:
+                        bodypr.set("anchor", "t")
+                    regen_timing(root, [(sentence_spid, None)])
+                    if score:
+                        add_textbox(root, 90001, 6.8, 4.55, 2.7, 0.45,
+                                    [f"Score: ___ /{score}"], 20, align="r", anchor="ctr")
+
+                def fill_dict_rels(rels, meter=meter):
+                    if meter != "yellow":
+                        return
+                    yellow_rels = etree.fromstring(
+                        pkg.slide_rels(T["dictation"]["yellow"])
+                    )
+                    yellow_image_rel = next(
+                        rel for rel in yellow_rels.findall(q("rel:Relationship"))
+                        if rel.get("Id") == "rId3"
+                    )
+                    current_image_rel = next(
+                        rel for rel in rels.findall(q("rel:Relationship"))
+                        if rel.get("Id") == "rId3"
+                    )
+                    current_image_rel.set("Target", yellow_image_rel.get("Target"))
+                lines = [dt["sentence"], ""]
+                if cops:
+                    caps = cops.get("capitals", [])
+                    punct = cops.get("punctuation", [])
+                    # Each punctuation mark now carries a plain-English reminder, so the
+                    # joined list is far too long for one paragraph. One mark per line
+                    # also gives the teacher a genuine tick-off checklist.
+                    lines += ["Mark with COPS, tick each line:",
+                              f"C - Capitals, shown green: {', '.join(caps)} ({len(caps)})",
+                              "O - Organisation: every word there, in the dictated order (1)",
+                              f"P - Punctuation, shown red ({len(punct)}):"]
+                    lines += [f"   {mark}" for mark in punct]
+                    lines += [f"S - Spelling targets, underlined: {', '.join(targets)} ({len(targets)})",
+                              f"Score: /{score}"]
+                elif targets:
+                    lines.append(f"Targets: {', '.join(targets)}")
+                if dt.get("focus"):
+                    lines.append(f"Focus: {dt['focus']}")
+                d.add(clone_tidx, fill_dict, notes="\n".join(lines),
+                      fill_rels=fill_dict_rels)
+
+    if not late_dictation:
+        emit_dictation()
 
     # --- grammar
     if want("grammar") and session.get("grammar"):
@@ -2892,6 +3154,9 @@ def build_session(pkg, week, session, out_path):
             draw_structured_slide(root, vote_blk, MORPH_MAGENTA, MORPH_TINT,
                                   f"{day} vote")
         d.add(v_tidx, fill_vote, notes=vt.get("notes", ""))
+
+    if late_dictation:
+        emit_dictation()
 
     d.write(out_path)
     return len(d.slides), marks
@@ -3453,6 +3718,7 @@ def main():
                 "spell": f"{week_morph} spelling",
                 "build": f"{week_morph} building",
                 "apply": "parts of speech",
+                "combined": f"{week_morph} building and grammar",
             }.get(stype, "week review")
         fname = session.get("file_name", f"{label}. {session['day']} ({paren}).pptx")
         if only and session["day"].lower() != only.lower():

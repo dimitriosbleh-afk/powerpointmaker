@@ -1,6 +1,6 @@
 {
   "_purpose": "Authoritative term-by-term record of every morpheme explicitly taught to the cohort. When a week spec's You Do needs a morpheme taught in an earlier week or term, copy the label from here into that week's taught_morphemes list. The builder does not read this file - the week-level list is what the 2f gate sees.",
-  "_source": "Teacher-supplied timeline, recorded 2026-08-13; extended through Term 3 Week 9 (caus-/cus(e)) on 2026-09-06. Term 3 is complete: Week 10 (2026-09-13) was a whole-term review that taught no new morphemes. Labels normalised to card-label form (prefixes keep a trailing hyphen, suffixes a leading hyphen, slash variants preserved). Term 4 Week 1 (2026-10-02) taught hyper (new card) and re-taught omni- (first taught Term 2). Term 4 Week 2 (2026-10-09) taught astro and terr (both new cards, verified from the Yoshimoto scans; see morpheme_bank.json). Term 4 Week 3 (2026-10-13 build, first v1.7 week) teaches port: one morpheme a week from here (Kate Watt, Oct 2026). Weeks 4-6 plan ject, struct, tract (the core concrete roots neither 3-6 scope taught), replacing the scope's hydra/therm/meter/chrom/scend/techni/ign/sult.",
+  "_source": "Teacher-supplied timeline, recorded 2026-08-13; extended through Term 3 Week 9 (caus-/cus(e)) on 2026-09-06. Term 3 is complete: Week 10 (2026-09-13) was a whole-term review that taught no new morphemes. Labels normalised to card-label form (prefixes keep a trailing hyphen, suffixes a leading hyphen, slash variants preserved). Term 4 Week 1 (2026-10-02) taught hyper (new card) and re-taught omni- (first taught Term 2). Term 4 Week 2 (2026-10-09) taught astro and terr (both new cards, verified from the Yoshimoto scans; see morpheme_bank.json). Term 4 Week 3 (2026-10-13 build, first v1.7 week) teaches port: one morpheme a week from here (Kate Watt, Oct 2026). Term 4 Week 4 (2026-10-23 build, first v1.8 week, four sessions) teaches ject. Weeks 5-6 plan struct, tract (the core concrete roots neither 3-6 scope taught), replacing the scope's hydra/therm/meter/chrom/scend/techni/ign/sult.",
   "_rule": "Only add a label here when it has genuinely been taught from its card. This file records the timeline, not wishes - a morpheme absent from this file must never be added to a week spec's taught_morphemes list.",
   "_unconfirmed": {
     "_note": "Labels that appeared in Term 3 Weeks 1-5 sound banks but are NOT on the teacher timeline. They may have been taught before Term 1, or they may be sound-bank defects. Until the teacher confirms, do NOT treat them as taught: keep them out of new sound banks and You Do parts, and never add them to a week spec's taught_morphemes list. Move a label into the right term list (or delete it from here) once the teacher answers.",
@@ -88,6 +88,7 @@
     "omni-",
     "astro",
     "terr",
-    "port"
+    "port",
+    "ject"
   ]
 }
