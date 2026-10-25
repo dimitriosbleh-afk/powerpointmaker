@@ -86,36 +86,12 @@ function build() {
     }));
   }
 
-  // 3. Do Now
-  {
-    const s = pres.addSlide();
-    T.addTopBar(s, C.PRIMARY);
-    T.addBadge(s, "Do Now", { color: C.PRIMARY });
-    T.addCueStrip(s, ["voicesOff", "whiteboards"]);
-    T.addTitle(s, "Same as every week: write it, then find the signs");
-    T.addCard(s, 0.5, 1.45, 9, 1.5, { variant: "tint", tone: C.PRIMARY });
-    s.addText("How long have you played your sport? Who taught you?", {
-      x: 0.7, y: 1.45, w: 8.6, h: 1.5, fontSize: 32, fontFace: T.FONT_H, bold: true,
-      color: C.CHARCOAL, align: "center", valign: "middle", margin: 0,
-    });
-    T.addInstructionCard(s, [
-      { role: "header", text: "Same as every week" },
-      { text: "Write your answer in English. Two sentences." },
-      { text: "Underline every word you would need a sign for." },
-    ], { x: 0.5, y: 3.15, w: 9, h: 1.4, strip: C.PRIMARY });
-    T.addFooter(s, FOOTER);
-    s.addNotes(T.composeGlanceNotes({
-      beats: [
-        "SILENT from the door. Say nothing; the routine runs itself now.",
-        ["Retrieval sits inside the prompt: WHO and WHAT from last week,", "and SPORT from Lesson 2."],
-        "TIME: 5 minutes. Deal with whatever walked in from the playground.",
-        ["SAY: You can ask who, what and where. All three get you a person.",
-          "None of them gets you a date, and this term is full of dates."],
-      ],
-      prep: "5 min. The bridge line is the reason this lesson exists. Say it as written.",
-      tag: "[Do Now | Attention, focus and regulation | HITS 6]",
-    }));
-  }
+  // 3. Do Now: Auslan90 Australian Deaf Games, Day 4
+  A.addVideoDoNow(T, pres, {
+    day: 4,
+    footer: FOOTER,
+    bridge: ["SAY: The youngest and oldest competitors were born years apart.", "Today you learn to sign the years."],
+  });
 
   // 4. LI and SC
   T.liSlide(

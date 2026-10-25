@@ -220,8 +220,14 @@ function drawVisualPdf(doc, visual, x, y, opts) {
         const cx = x + i * colW;
         doc.image(buf, cx + (colW - size * 0.8) / 2, y, { width: size * 0.8 });
         if (showLabels && it.label !== "" && (it.label || v.type === "pictograms")) {
-          doc.save().font("Sans-Bold").fontSize(labelFont).fillColor(border)
-            .text(String(it.label != null ? it.label : it.name), cx, y + size * 0.85, { width: colW, align: "center", lineBreak: false }).restore();
+          // One line always: when the columns are narrower than a long label,
+          // step the size down rather than let it wrap into what sits below.
+          const label = String(it.label != null ? it.label : it.name);
+          doc.save().font("Sans-Bold");
+          let fs = labelFont;
+          while (fs > 7 && doc.fontSize(fs).widthOfString(label) > colW - 4) fs -= 0.5;
+          doc.fontSize(fs).fillColor(border)
+            .text(label, cx, y + size * 0.85, { width: colW, align: "center", lineBreak: false }).restore();
         }
       });
       return y + size + (showLabels ? 6 : 0);

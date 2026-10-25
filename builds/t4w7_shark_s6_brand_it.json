@@ -1,0 +1,797 @@
+{
+  "lesson": {
+    "subject": "inquiry",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 7,
+    "session": 6,
+    "variant": 3,
+    "minutes": 60,
+    "title": "Brand It",
+    "subtitle": "Shark Tank | Term 4 Week 7, Session 6",
+    "meta": "Grade 5 Inquiry | Shark Tank",
+    "footer": "Shark Tank | Grade 5 Inquiry | Week 7 Session 6",
+    "outputFolder": "T4W7_SharkTank_S6_Brand_It",
+    "fileName": "Session 6 - Brand It.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "magnifier",
+          "label": "Find a problem"
+        },
+        {
+          "name": "recycle",
+          "label": "Upcycle a fix"
+        },
+        {
+          "name": "megaphone",
+          "label": "Pitch it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "Victorian Curriculum Economics and Business, Levels 5 and 6: how businesses use marketing to influence consumer choices; Design and Technologies, Levels 5 and 6: finishing and presenting a product",
+      "shape": "15 minutes explicit, 40 minutes team time: a short video on slogans, the 4 Ps on Pocket Pal, a quick round, then teams finish the build while the marketer makes the poster",
+      "criticalFeature": "marketing is four decisions, Product, Price, Place and Promotion; a tagline is short, catchy and names what the product does for you",
+      "decisionPoints": [
+        "the Which P? round",
+        "the choice check: the strongest tagline",
+        "the exit board: a tagline and a Place for a new product"
+      ],
+      "anchor": "Find a problem. Upcycle a fix. Pitch it.",
+      "catchUp": "Missed Session 5? Say: build, test, fix the part that failed. Ask your team which part they fixed, then help finish it."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Each team's prototype and Design and Test Log"
+    ],
+    "manipulatives": [
+      "A3 paper and textas for one poster per team",
+      "Junk tubs, joins and the hot glue station: a parent helper, or you in two 5-minute windows",
+      "The Pocket Pal model for the I Do"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Turn and tell",
+      "Point to A, B or C"
+    ],
+    "boardSetup": [
+      "Product. Price. Place. Promotion. written as four columns",
+      "Team roles reminder: builders finish the prototype, the marketer starts the poster"
+    ],
+    "videos": [
+      "The Power of Advertising Slogans, HubSpot Marketing (youtube.com/watch?v=QTl6xUFxyOY)"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your team's marketing plan: the 4 Ps, a tagline and a poster plan.",
+      "title": "Marketing Plan",
+      "subtitle": "Product. Price. Place. Promotion.",
+      "sections": [
+        {
+          "title": "Which P?",
+          "columns": 1,
+          "example": {
+            "prompt": "Pocket Pal sells for $8. Which P?",
+            "steps": [
+              "Ask: what, cost, where, or how people hear?",
+              "$8 is what it costs.",
+              "Cost is Price."
+            ],
+            "answer": "Price"
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "A team sells bird feeders made from milk bottles. Sort each card into its P.",
+              "groups": [
+                "Product",
+                "Price",
+                "Place",
+                "Promotion"
+              ],
+              "cards": [
+                "holds a cup of seed",
+                "$4 each",
+                "a table at the Saturday market",
+                "a flyer in letterboxes",
+                "made from a milk bottle",
+                "three for $10",
+                "the garden centre down the road",
+                "an ad in the school newsletter"
+              ],
+              "answer": {
+                "Product": [
+                  "holds a cup of seed",
+                  "made from a milk bottle"
+                ],
+                "Price": [
+                  "$4 each",
+                  "three for $10"
+                ],
+                "Place": [
+                  "a table at the Saturday market",
+                  "the garden centre down the road"
+                ],
+                "Promotion": [
+                  "a flyer in letterboxes",
+                  "an ad in the school newsletter"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Our 4 Ps",
+          "columns": 1,
+          "example": {
+            "prompt": "Pocket Pal's 4 Ps.",
+            "steps": [
+              "Product: a pocket from old jeans.",
+              "Price: $8. Place: a fete stall.",
+              "Promotion: posters and the tagline."
+            ],
+            "answer": "Pocket | $8 | fete stall | posters and tagline"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Fill in your team's 4 Ps.",
+              "columns": [
+                "P",
+                "Our plan"
+              ],
+              "rows": [
+                [
+                  "Product",
+                  ""
+                ],
+                [
+                  "Price",
+                  ""
+                ],
+                [
+                  "Place",
+                  ""
+                ],
+                [
+                  "Promotion",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Product",
+                  "what it is, what it does, what it is made from"
+                ],
+                [
+                  "Price",
+                  "a price in dollars that covers what it costs to make"
+                ],
+                [
+                  "Place",
+                  "where people could get it, e.g. a fete stall"
+                ],
+                [
+                  "Promotion",
+                  "how people will hear about it, e.g. a poster"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Our tagline and poster",
+          "columns": 2,
+          "example": {
+            "prompt": "Write a tagline for a cord tidy.",
+            "steps": [
+              "What does it do for you? No more tangles.",
+              "Make it short: under six words.",
+              "Make it catchy: Untangle your life."
+            ],
+            "answer": "Cord Keeper: untangle your life."
+          },
+          "items": [
+            {
+              "kind": "mistake",
+              "prompt": "Jack wrote a tagline. Find the problem and fix it.",
+              "work": [
+                "Our product is a box made from cardboard that holds your pencils on your desk."
+              ],
+              "answer": "It is a description, not a tagline: too long, not catchy. Fix: e.g. Pencil Pod: never lose a pencil."
+            },
+            {
+              "prompt": "Write your team's tagline.",
+              "answer": "Short, catchy, names what the product does for you.",
+              "lines": 2
+            },
+            {
+              "kind": "open",
+              "prompt": "Sketch your poster plan: product name, tagline, picture, price.",
+              "span": "full",
+              "answer": "A poster plan with the name, tagline, a picture of the product and the price."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: price your product so the business makes a profit.",
+      "title": "Extension: Price It Right",
+      "subtitle": "Price minus cost equals profit.",
+      "sections": [
+        {
+          "title": "Work out the profit",
+          "columns": 1,
+          "intro": "Profit is the money a business keeps after paying for what it used. Profit = price - cost to make.",
+          "example": {
+            "prompt": "Pocket Pal costs $2 to make and sells for $8. What is the profit on one?",
+            "steps": [
+              "Price: $8.",
+              "Cost to make: $2.",
+              "$8 - $2 = $6 profit."
+            ],
+            "answer": "$6"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Work out the profit on one of each.",
+              "columns": [
+                "Product",
+                "Cost to make",
+                "Price",
+                "Profit"
+              ],
+              "rows": [
+                [
+                  "Hat clip",
+                  "$1",
+                  "$3",
+                  ""
+                ],
+                [
+                  "Bird feeder",
+                  "$2",
+                  "$5",
+                  ""
+                ],
+                [
+                  "Draught stopper",
+                  "$4",
+                  "$12",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Hat clip",
+                  "$1",
+                  "$3",
+                  "$2"
+                ],
+                [
+                  "Bird feeder",
+                  "$2",
+                  "$5",
+                  "$3"
+                ],
+                [
+                  "Draught stopper",
+                  "$4",
+                  "$12",
+                  "$8"
+                ]
+              ]
+            },
+            {
+              "prompt": "The hat clip team sells 20 clips. How much profit do they make?",
+              "answer": "20 x $2 = $40",
+              "answerLabel": "Profit:"
+            }
+          ]
+        },
+        {
+          "title": "Choose a fair price",
+          "columns": 1,
+          "example": {
+            "prompt": "A cord tidy costs 50c to make. Would $40 be a good price at a school fete?",
+            "steps": [
+              "Who is buying? Families at a fete.",
+              "Would they pay $40 for a cord tidy? Unlikely.",
+              "A fair price covers the cost and people will still pay it."
+            ],
+            "answer": "No: too high for the market. Try about $2."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "A hat clip costs $1 to make. Which price is best for kids at school?",
+              "options": [
+                "50c",
+                "$3",
+                "$30"
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "$3. 50c loses money because it costs $1 to make; $30 is more than kids would pay."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Which P with clue questions, and a tagline frame.",
+      "title": "Marketing Plan",
+      "subtitle": "What is it? What does it cost? Where? How will people hear?",
+      "sections": [
+        {
+          "title": "Which P?",
+          "columns": 1,
+          "example": {
+            "prompt": "Pocket Pal sells for $8.",
+            "steps": [
+              "Clue question: what does it cost?",
+              "$8.",
+              "That is Price."
+            ],
+            "answer": "Price"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "A flyer in letterboxes",
+              "options": [
+                "Product",
+                "Price",
+                "Place",
+                "Promotion"
+              ],
+              "answer": 3,
+              "hint": "Clue: how will people hear about it?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "A table at the Saturday market",
+              "options": [
+                "Product",
+                "Price",
+                "Place",
+                "Promotion"
+              ],
+              "answer": 2,
+              "hint": "Clue: where do people get it?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Made from a milk bottle, holds a cup of seed",
+              "options": [
+                "Product",
+                "Price",
+                "Place",
+                "Promotion"
+              ],
+              "answer": 0,
+              "hint": "Clue: what is it?"
+            }
+          ]
+        },
+        {
+          "title": "Our tagline",
+          "columns": 1,
+          "example": {
+            "prompt": "A tagline for Pocket Pal.",
+            "steps": [
+              "Name: Pocket Pal.",
+              "What it does: keeps your stuff on the hook.",
+              "Pocket Pal: hang on to your stuff!"
+            ],
+            "answer": "Pocket Pal: hang on to your stuff!"
+          },
+          "items": [
+            {
+              "prompt": "Write your team's tagline.",
+              "hint": "___ (product name): ___ your ___!",
+              "answer": "___: ___ your ___!",
+              "lines": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Build day two. One line: today teams finish their prototype and give it a brand people remember."
+    },
+    {
+      "kind": "resources",
+      "notes": "A3 paper and textas for posters. Hot glue station: the parent helper, or you in two 5-minute windows. Prototypes out of storage before the bell. Cue the slogans video. Print the Worksheet one per team, plus a few Extension and Supported copies."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how businesses use marketing to make people want a product.",
+      "successCriteria": [
+        "I can name the 4 Ps of marketing.",
+        "I can write a tagline for a product.",
+        "I can plan how our team will market our product."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: A great product nobody hears about doesn't sell. Today we fix that."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          "SAY: Fifteen minutes with me, then forty minutes to build and brand."
+        ],
+        "prep": "15 minutes explicit, 40 team time. SC1 the 4 Ps for all; SC2 a tagline is the core; SC3 the team's plan. Anchor: Find a problem. Upcycle a fix. Pitch it.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "A few words people remember",
+      "visual": {
+        "type": "video",
+        "youtube": "QTl6xUFxyOY",
+        "label": "Watch on YouTube: The Power of Slogans"
+      },
+      "prompt": "Turn and tell: what makes a slogan stick?",
+      "notes": {
+        "answer": "memorable, says a key benefit, stands out, positive",
+        "beats": [
+          [
+            "PLAY the whole video, 1:45.",
+            "SAY: Listen for what makes a few words stick in your head."
+          ],
+          [
+            "ASK: What makes a slogan stick?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: short, catchy, says how it makes you feel"
+          ],
+          [
+            "SCAN for short and catchy.",
+            "80%+ -> cold call one pair: name a slogan you know.",
+            "Less -> say two slogans the class knows, ask what they share, re-ask."
+          ],
+          [
+            "ASK: Thumbs: can you think of a tagline you know?",
+            "5 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: most thumbs up"
+          ]
+        ],
+        "trap": [
+          "thinking a slogan has to explain everything.",
+          "Fix: count the words in a slogan they know, student sees it's short."
+        ],
+        "prep": "Launch. 1:45. Uses Volkswagen, IMAX, Apple, Coca-Cola and Nike taglines as examples; talk about the tagline, not the product.",
+        "sources": "HubSpot Marketing, The Power of Advertising Slogans, YouTube.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "tagline",
+      "meaning": "A short, catchy phrase that makes people remember a product.",
+      "example": "Pocket Pal: hang on to your stuff!",
+      "pictogram": "megaphone",
+      "notes": {
+        "answer": "a short, catchy phrase that makes people remember a product",
+        "beats": [
+          "POINT to the word. SAY: Tagline. Say it with me. Tag-line.",
+          [
+            "SAY: Pocket Pal: hang on to your stuff! Five words.",
+            "It says what Pocket Pal does for you."
+          ],
+          [
+            "ASK: Is a tagline long or short?",
+            "5 sec. Cue: Everyone, together, on three.",
+            "EXPECT: short"
+          ],
+          [
+            "ASK: Count the words in Pocket Pal's tagline.",
+            "5 sec. Cue: fingers at your chest... show me.",
+            "EXPECT: five"
+          ]
+        ],
+        "trap": [
+          "writing a description instead of a tagline.",
+          "Fix: cut it to under six words that say what it does for you."
+        ],
+        "prep": "One key word. Every team's poster and pitch uses its tagline.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Pocket Pal's 4 Ps",
+      "visual": {
+        "type": "table",
+        "fontSize": 20,
+        "rows": [
+          [
+            "P",
+            "The question",
+            "Pocket Pal"
+          ],
+          [
+            "Product",
+            "What is it?",
+            "A hanging pocket from old jeans"
+          ],
+          [
+            "Price",
+            "What does it cost?",
+            "$8"
+          ],
+          [
+            "Place",
+            "Where do people get it?",
+            "A stall at the school fete"
+          ],
+          [
+            "Promotion",
+            "How do people hear about it?",
+            "Posters and the tagline"
+          ]
+        ]
+      },
+      "label": "Product. Price. Place. Promotion.",
+      "notes": {
+        "answer": "Product, Price, Place, Promotion",
+        "beats": [
+          [
+            "POINT to each row in turn.",
+            "SAY: Marketing is four decisions. Each P answers one question."
+          ],
+          [
+            "SAY: Pocket Pal costs me $2 to make. I'll sell it for $8.",
+            "People get it at the fete. They hear about it from posters."
+          ],
+          [
+            "ASK: A poster in the library. Which P?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: Promotion"
+          ],
+          [
+            "ASK: Everyone, the 4 Ps.",
+            "5 sec. Cue: Everyone, together, on three.",
+            "EXPECT: Product, Price, Place, Promotion"
+          ]
+        ],
+        "trap": [
+          "mixing up Place and Promotion.",
+          "Fix: Place is where you get it, Promotion is how you hear. Student says both."
+        ],
+        "stretch": "Why might Pocket Pal sell for $8 at the fete but $12 online?",
+        "help": "Point to the question column and answer one P together.",
+        "prep": "The model for SC1. Same Pocket Pal numbers in the Extension: cost $2, price $8.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Which P?",
+      "routine": "boards",
+      "thinkTime": 8,
+      "pivot": "ask the four questions: what, cost, where, how will people hear? then re-ask",
+      "followUp": "cold call one board: which question did it answer?",
+      "items": [
+        {
+          "text": "Sells for $5",
+          "answer": "Price - what it costs",
+          "expect": "Price"
+        },
+        {
+          "text": "A poster on the canteen door",
+          "answer": "Promotion - how people hear about it",
+          "expect": "Promotion"
+        },
+        {
+          "text": "Sold at the Christmas market",
+          "answer": "Place - where people get it",
+          "expect": "Place"
+        },
+        {
+          "text": "Made from old jeans, holds a hat and a bottle",
+          "answer": "Product - what it is",
+          "expect": "Product"
+        },
+        {
+          "text": "An online shop",
+          "answer": "Place - where people get it",
+          "expect": "Place"
+        },
+        {
+          "text": "Comes in three sizes",
+          "answer": "Product - what it is",
+          "expect": "Product"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Quick round. Write the P",
+          "each one belongs to."
+        ],
+        "trap": [
+          "calling a poster Place because it's in a place.",
+          "Fix: ask whether you buy it there or hear about it there, student re-writes."
+        ],
+        "stretch": "For each one, give your own product's answer to that P.",
+        "help": "Keep the 4 Ps table on the board with its questions.",
+        "prep": "First decision point: sorting new marketing choices. Brisk. SC1. Six items, about 5 minutes.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 6]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which tagline works best?",
+      "prompt": "A tagline for a cord tidy. Point to A, B or C.",
+      "options": [
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "article"
+          },
+          "text": "A cord tidy is a tube you put cords in so they are not messy behind the TV",
+          "misconception": "writes a description, not a tagline"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "trophy"
+          },
+          "text": "The best product in the whole world!",
+          "misconception": "boasts but says nothing the product does"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "megaphone"
+          },
+          "text": "Cord Keeper: untangle your life."
+        }
+      ],
+      "answer": 2,
+      "notes": {
+        "answer": "C - short, catchy, says what it does for you",
+        "beats": [
+          "SAY: Check each one: short, catchy, says what it does.",
+          [
+            "ASK: Which tagline works best?",
+            "15 sec. Cue: voices off. Point... now.",
+            "EXPECT: C"
+          ],
+          [
+            "SCAN pointing fingers, back row first.",
+            "80%+ -> reveal, cold call one C: what's wrong with B?",
+            "Less -> count the words in A, ask what B tells you, re-ask."
+          ],
+          [
+            "REVEAL after fingers are scanned.",
+            "SAY: C. Four words, and you know what it does. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "choosing B because it sounds exciting.",
+          "Fix: ask what B says the product does, student re-chooses."
+        ],
+        "prep": "Second decision point. Under 80% means teams read their tagline to you before writing the poster.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Finish it and brand it",
+      "task": "Builders: finish and test the prototype. Marketer: write the tagline and start the poster. Everyone: fill in the 4 Ps.",
+      "where": "Your team table and Worksheet",
+      "frame": "___ (product name): ___ (what it does for you)!",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "wrench",
+          "megaphone",
+          "palette"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Finish it. Name it. Sell it.",
+      "extendedTask": "a finished, tested prototype plus a marketing plan with the 4 Ps, a tagline and a poster draft",
+      "notes": {
+        "answer": "a working prototype, the 4 Ps filled in, a tagline and a poster draft",
+        "beats": [
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Everyone, together, on three: Finish it. Name it. Sell it."
+          ],
+          [
+            "TIME 40 minutes. At 20, stop everyone.",
+            "ASK: Marketers, show your tagline.",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: under six words"
+          ],
+          "CIRCULATE. Ask: what's your price, and why that price?",
+          "TIME at 5 to go: clean up, store prototypes and posters together."
+        ],
+        "trap": [
+          "the whole team on the poster while the prototype sits unfinished.",
+          "Fix: point to the roles on the board, team splits the jobs."
+        ],
+        "stretch": "Extension: price it right and work out the profit.",
+        "help": "Supported Worksheet: clue questions for each P, a tagline frame.",
+        "prep": "The prototype must work by the end of today; Week 8 is the pitch. Store posters with prototypes.",
+        "tag": "[You Do | Independent application | SC3 | HITS 5, 10]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "A team sells cushions sewn from old school jumpers. Write a tagline for them.",
+        "Name where they could sell them."
+      ],
+      "notes": {
+        "answer": "e.g. Snug Sack: school's out, feet up!; a stall at the school fete",
+        "beats": [
+          "SAY: A new product. Work on your own.",
+          [
+            "ASK: Write a tagline, then where they could sell them.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a short, catchy tagline; a place to buy them"
+          ],
+          "RECORD who writes a description, or a poster as where to sell."
+        ],
+        "trap": [
+          "Sell them on a poster at school.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2, with SC1 on Place. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner your team's tagline, and why it works.",
+      "selfAssessment": "Fist to five: how ready is your product for Shark Tank Day?",
+      "notes": {
+        "answer": "a short tagline that says what the product does",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: Fist to five: how ready is your product for Shark Tank Day?",
+            "5 sec. Cue: fingers at your chest... show me.",
+            "EXPECT: mostly three to five"
+          ],
+          "RECORD teams showing fists and ones. Their prototype comes first next week.",
+          [
+            "ASK: Tell your partner your tagline and why it works.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: it's short and says what it does"
+          ]
+        ],
+        "prep": "Next week: the pitch. Teams with an unfinished prototype finish it in the first 10 minutes. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

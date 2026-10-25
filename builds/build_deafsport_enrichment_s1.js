@@ -5,9 +5,9 @@
  *
  * New lesson, added on Chris's feedback of 17 September 2026. The Do Now asks
  * students to read an English sentence, decide which words actually need a sign,
- * and look those up in Sign It!. None of that is obvious, and it was being asked
- * of them silently from week one. So it gets taught properly here, once, and
- * every later Do Now runs on it.
+ * and look those up in Sign It!. None of that is obvious, so it gets taught
+ * properly here, once. From 4 Oct 2026 the Do Now is Chris's Deaf Games video,
+ * and this routine is how students find any new sign they need.
  *
  * Every example is a sport sentence, so the looking-up practice doubles as first
  * exposure to the term's vocabulary.
@@ -40,7 +40,7 @@ function build() {
     "Finding the signs you need",
     "Deaf Sports in Australia",
     "Lesson 1 of 8  |  Years 5 and 6  |  Term 4",
-    "Lesson 1 of 8. One job: teach the looking-up routine every other lesson opens with. Every example is a sport sentence, so they meet the term's vocabulary while they practise the process."
+    "Lesson 1 of 8. One job: teach the looking-up routine they use whenever they need a new sign. Every example is a sport sentence, so they meet the term's vocabulary while they practise the process."
   );
 
   // 2. Teacher Resources
@@ -73,11 +73,39 @@ function build() {
     }));
   }
 
-  // 3. Do Now, the only one this term that is not the routine
+  // 3. Do Now: Auslan90 Australian Deaf Games, Day 1
+  A.addVideoDoNow(T, pres, {
+    day: 1,
+    footer: FOOTER,
+    bridge: ["SAY: Everyone in that video was signing about sport.", "Today you start finding the signs you need to do the same."],
+  });
+
+  // 4. LI and SC
+  T.liSlide(
+    pres,
+    "I am learning to find which words in my sentence need a sign, and look them up.",
+    [
+      "I can underline the words in my sentence that need a sign.",
+      "I can find one of those words in Sign It! and give its page.",
+      "I can sign it to my partner without looking back at the book.",
+    ],
+    T.composeGlanceNotes({
+      beats: [
+        ["POINT to each criterion.", "SAY: Three steps. Underline, find, sign."],
+        ["SAY: By the end you can do this on your own.", "You will use it whenever you need a new sign."],
+      ],
+      prep: "Criterion 2 is what the exit rotation collects. Criterion 3 is the stretch.",
+      tag: "[LI and SC | Planning | HITS 1]",
+    }),
+    FOOTER,
+    { numberSC: true, strongHeadings: true, separate: true }
+  );
+
+  // 5. Launch: the sentence the lesson works on
   {
     const s = pres.addSlide();
     T.addTopBar(s, C.PRIMARY);
-    T.addBadge(s, "Do Now", { color: C.PRIMARY });
+    T.addBadge(s, "Launch", { color: C.PRIMARY });
     T.addCueStrip(s, ["voicesOff", "whiteboards"]);
     T.addTitle(s, "Write one sentence about sport");
     T.addCard(s, 0.5, 1.45, 9, 1.5, { variant: "tint", tone: C.PRIMARY });
@@ -93,38 +121,17 @@ function build() {
     T.addFooter(s, FOOTER);
     s.addNotes(T.composeGlanceNotes({
       beats: [
-        "SILENT and seated from the door. English only, no signs yet.",
+        "SAY: Boards out. English only, no signs yet.",
         ["SAY: Write it in English. Do not worry about signing it yet.", "That is the lesson."],
-        "TIME: 5 minutes. Deal with whatever walked in from the playground.",
+        "TIME: 3 minutes.",
         ["SAY: Every word in that sentence is not a sign.", "Today you work out which ones are."],
       ],
-      prep: "5 min. The one Do Now this term that is not the routine, because the routine is today's content.",
-      tag: "[Do Now | Attention, focus and regulation | HITS 6]",
+      prep: "3 min. Their own sentence is what the I Do and We Do work on.",
+      tag: "[Launch | Explicit teaching | HITS 1]",
     }));
   }
 
-  // 4. LI and SC
-  T.liSlide(
-    pres,
-    "I am learning to find which words in my sentence need a sign, and look them up.",
-    [
-      "I can underline the words in my sentence that need a sign.",
-      "I can find one of those words in Sign It! and give its page.",
-      "I can sign it to my partner without looking back at the book.",
-    ],
-    T.composeGlanceNotes({
-      beats: [
-        ["POINT to each criterion.", "SAY: Three steps. Underline, find, sign."],
-        ["SAY: By the end you can do this on your own.", "You will do it every week."],
-      ],
-      prep: "Criterion 2 is what the exit rotation collects. Criterion 3 is the stretch.",
-      tag: "[LI and SC | Planning | HITS 1]",
-    }),
-    FOOTER,
-    { numberSC: true, strongHeadings: true, separate: true }
-  );
-
-  // 5. I Do: which words need a sign
+  // 6. I Do: which words need a sign
   {
     const s = pres.addSlide();
     T.addTopBar(s, C.PRIMARY);
@@ -182,7 +189,7 @@ function build() {
     }));
   }
 
-  // 6. I Do: how to find it in Sign It!
+  // 7. I Do: how to find it in Sign It!
   {
     const s = pres.addSlide();
     T.addTopBar(s, C.PRIMARY);
@@ -233,7 +240,7 @@ function build() {
     }));
   }
 
-  // 7. We Do: do it together
+  // 8. We Do: do it together
   {
     const s = pres.addSlide();
     T.addTopBar(s, C.SUCCESS);
@@ -273,7 +280,7 @@ function build() {
     }));
   }
 
-  // 8. Primary decision point
+  // 9. Primary decision point
   {
     const s = pres.addSlide();
     T.addTopBar(s, C.ASSESS);
@@ -310,14 +317,14 @@ function build() {
       ],
       trap: ["including and, the and on.", "Fix: cross the joining words out together, student redoes it."],
       prep: [
-        "The decision point that decides whether Lesson 2 can run its Do Now silently.",
+        "The decision point that decides whether they can look up signs alone from Lesson 2.",
         "Hover then chin is the school routine from prep to Year 6. Nobody shows early.",
       ],
       tag: "[CFU | Evaluating impact | HITS 7]",
     }));
   }
 
-  // 9. You Do
+  // 10. You Do
   {
     const s = T.youDoSlide(
       pres,
@@ -349,7 +356,7 @@ function build() {
     T.addCueStrip(s, ["voicesOff", "partner", "whiteboards"]);
   }
 
-  // 10. Exit ticket
+  // 11. Exit ticket
   T.exitTicketSlide(
     pres,
     [
@@ -374,7 +381,7 @@ function build() {
     { title: "In your journal" }
   );
 
-  // 11. Closing
+  // 12. Closing
   T.closingSlide(
     pres,
     {
@@ -389,11 +396,11 @@ function build() {
     T.composeGlanceNotes({
       beats: [
         "SAY: Turn and tell your partner one word you would never look up, and why.",
-        "SAY: Next week you do this in five minutes at the start, on your own.",
+        "SAY: From next week, you look up the signs you need on your own.",
       ],
       prep: [
-        "Every Do Now from Lesson 2 on is this routine, silent, in five minutes.",
-        "If today did not land, reteach the choosing step inside Lesson 2's Do Now.",
+        "From Lesson 2 the Do Now is the Deaf Games video. This is how they find new signs.",
+        "If today did not land, reteach the choosing step at the start of Lesson 2's We Do.",
       ],
       tag: "[Closing | Planning | HITS 9]",
     })

@@ -1,0 +1,77 @@
+{
+  "_purpose": "Term 4 2026 OG plan for the Grade 5/6 Enrichment cohort, from the team planner James shared on 13 Oct 2026. Use it to fill a week's request (OG_MEGA_PROMPT 12) when the user does not supply one. The planner's morphology row still shows the scope's two-a-week Greek forms; James approved replacing Weeks 3-6 with one core concrete root a week (port, ject, struct, tract) on 13 Oct 2026 (v1.7).",
+  "weeks": {
+    "1": {
+      "morphology": "hyper, omni",
+      "grammar": "Upgrade nouns within an argument",
+      "learned_words": [
+        "business",
+        "scenario"
+      ]
+    },
+    "2": {
+      "morphology": "astro, terra",
+      "grammar": "Upgrade verbs within an argument",
+      "learned_words": [
+        "entrepreneur",
+        "receipt"
+      ]
+    },
+    "3": {
+      "morphology": "port (planner: hydra/hydro, therm)",
+      "grammar": "Join sentences using connectives to link arguments, evidence and reasons (e.g. however, on the other hand, therefore, for example)",
+      "learned_words": [
+        "debt",
+        "cheque"
+      ]
+    },
+    "4": {
+      "morphology": "ject (planner: meter/metry, chrom(e))",
+      "grammar": "Identify the function of a semi-colon and generate a compound sentence, where the two independent clauses are separated by a semi-colon (to replace a conjunction)",
+      "learned_words": [
+        "guarantee",
+        "mortgage"
+      ]
+    },
+    "5": {
+      "morphology": "struct (planner: scend, techni)",
+      "grammar": "Generate sentence stems containing a semi-colon and a conjunctive adverb (however, therefore)",
+      "learned_words": [
+        "colleague",
+        "catalogue"
+      ]
+    },
+    "6": {
+      "morphology": "tract (planner: ign, sult)",
+      "grammar": "Identify the main and subordinate clauses and the subordinating conjunction in complex sentences",
+      "learned_words": [
+        "campaign",
+        "questionnaire"
+      ]
+    },
+    "7": {
+      "morphology": "rupt",
+      "grammar": "Differentiate between simple and compound sentences",
+      "learned_words": [
+        "brochure",
+        "liaison"
+      ]
+    },
+    "8": {
+      "morphology": "spect",
+      "grammar": "Use a colon to introduce a list and commas to separate items in a list",
+      "learned_words": [
+        "rapport",
+        "schedule"
+      ]
+    },
+    "9": {
+      "morphology": "Review (whole term)",
+      "grammar": "Generate sentence stems containing a semi-colon and a conjunctive adverb (similarly, nevertheless)",
+      "learned_words": [
+        "bureau",
+        "niche"
+      ]
+    }
+  }
+}

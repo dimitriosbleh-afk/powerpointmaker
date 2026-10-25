@@ -1,0 +1,829 @@
+{
+  "lesson": {
+    "subject": "inquiry",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 8,
+    "session": 7,
+    "variant": 3,
+    "minutes": 60,
+    "title": "Pitch It",
+    "subtitle": "Shark Tank | Term 4 Week 8, Session 7",
+    "meta": "Grade 5 Inquiry | Shark Tank",
+    "footer": "Shark Tank | Grade 5 Inquiry | Week 8 Session 7",
+    "outputFolder": "T4W8_SharkTank_S7_Pitch_It",
+    "fileName": "Session 7 - Pitch It.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "magnifier",
+          "label": "Find a problem"
+        },
+        {
+          "name": "recycle",
+          "label": "Upcycle a fix"
+        },
+        {
+          "name": "megaphone",
+          "label": "Pitch it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "Victorian Curriculum Economics and Business, Levels 5 and 6: presenting a business idea to people who might invest; English, Level 5: planning and delivering a short spoken presentation for an audience",
+      "shape": "15 minutes explicit, 40 minutes team time: Carson's pitch again with a new lens, the six-part pitch recipe on Pocket Pal, a quick round, then teams write and rehearse their pitch",
+      "criticalFeature": "a pitch runs in order, hook, problem, product, upcycled, price, ask, and the ask is for investment, never a sale",
+      "decisionPoints": [
+        "the Which part of the pitch? round",
+        "the choice check: the strongest ask",
+        "the exit board: a hook and an ask for a new product"
+      ],
+      "anchor": "Find a problem. Upcycle a fix. Pitch it.",
+      "catchUp": "Missed Session 6? Say: the 4 Ps are Product, Price, Place and Promotion, and your team has a tagline. Your team tells you both before you write your part."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Each team's prototype, poster and Marketing Plan",
+      "Six cue cards per team"
+    ],
+    "manipulatives": [
+      "A timer that teams can see, for 60 to 90 second rehearsals",
+      "The Pocket Pal model for the I Do demo"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Turn and tell",
+      "Point to A, B or C"
+    ],
+    "boardSetup": [
+      "The pitch recipe in order: Hook, Problem, Product, Upcycled, Price, Ask",
+      "Rehearsal spaces around the room, one per team"
+    ],
+    "videos": [
+      "Locker Board on Shark Tank US, watched again from Session 1 (youtube.com/watch?v=IDpfl2aGruE)"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your team's pitch planner: name the parts, write your lines, time it and fix it.",
+      "title": "Pitch Planner",
+      "subtitle": "Hook. Problem. Product. Upcycled. Price. Ask.",
+      "sections": [
+        {
+          "title": "Name the part",
+          "columns": 1,
+          "example": {
+            "prompt": "Who's ever found their hat on the floor? Which part of the pitch?",
+            "steps": [
+              "It's the first line, and it's a question.",
+              "It grabs the audience before the facts.",
+              "A line that grabs attention is the hook."
+            ],
+            "answer": "Hook"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "A team pitches Sock Snake, a draught stopper. Name each part.",
+              "columns": [
+                "Line from the pitch",
+                "Part"
+              ],
+              "rows": [
+                [
+                  "Cold air sneaks under classroom doors all winter.",
+                  ""
+                ],
+                [
+                  "Brrr! Ever had cold feet at your desk?",
+                  ""
+                ],
+                [
+                  "Invest your tokens in Sock Snake and keep every classroom cosy.",
+                  ""
+                ],
+                [
+                  "Every Sock Snake is stuffed with old socks.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Cold air sneaks under classroom doors all winter.",
+                  "Problem"
+                ],
+                [
+                  "Brrr! Ever had cold feet at your desk?",
+                  "Hook"
+                ],
+                [
+                  "Invest your tokens in Sock Snake and keep every classroom cosy.",
+                  "Ask"
+                ],
+                [
+                  "Every Sock Snake is stuffed with old socks.",
+                  "Upcycled"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Our pitch",
+          "columns": 1,
+          "example": {
+            "prompt": "Write the price line for Pocket Pal.",
+            "steps": [
+              "Say what it costs to make: $2.",
+              "Say what it sells for: $8.",
+              "Keep it to one sentence."
+            ],
+            "answer": "It costs $2 to make and sells for $8."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write your team's pitch. Give every member a part.",
+              "columns": [
+                "Part",
+                "Who says it",
+                "Our words"
+              ],
+              "rows": [
+                [
+                  "Hook",
+                  "",
+                  ""
+                ],
+                [
+                  "Problem",
+                  "",
+                  ""
+                ],
+                [
+                  "Product and demo",
+                  "",
+                  ""
+                ],
+                [
+                  "Upcycled",
+                  "",
+                  ""
+                ],
+                [
+                  "Price",
+                  "",
+                  ""
+                ],
+                [
+                  "Ask",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Hook",
+                  "a team member",
+                  "a question or surprise that grabs attention"
+                ],
+                [
+                  "Problem",
+                  "a team member",
+                  "the problem and who has it"
+                ],
+                [
+                  "Product and demo",
+                  "a team member",
+                  "what it is, shown working"
+                ],
+                [
+                  "Upcycled",
+                  "a team member",
+                  "what it is made from"
+                ],
+                [
+                  "Price",
+                  "a team member",
+                  "cost to make and selling price"
+                ],
+                [
+                  "Ask",
+                  "a team member",
+                  "invest your tokens in ___ and ___"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Time it and fix it",
+          "columns": 2,
+          "example": {
+            "prompt": "Pocket Pal's pitch took 2 minutes. What should the team do?",
+            "steps": [
+              "The goal is 60 to 90 seconds.",
+              "2 minutes is 120 seconds: too long.",
+              "Cut extra words from the longest part, then time it again."
+            ],
+            "answer": "Cut the longest part, then time it again."
+          },
+          "items": [
+            {
+              "prompt": "Time your pitch. How many seconds did it take? Is it between 60 and 90?",
+              "answer": "A time in seconds, with a yes or a plan to cut or add.",
+              "lines": 2
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Ava wrote the ask for Sock Snake. Find the mistake and fix it.",
+              "work": [
+                "Please buy a Sock Snake. They're only $5!"
+              ],
+              "answer": "The sharks invest, they don't buy. Fix: Invest your tokens in Sock Snake and keep every classroom cosy."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: get ready for the sharks' questions.",
+      "title": "Extension: Answer the Sharks",
+      "subtitle": "After the pitch, the sharks ask questions. Be ready.",
+      "sections": [
+        {
+          "title": "Plan your answers",
+          "columns": 1,
+          "intro": "A strong answer is short, honest and uses evidence: your test results, your Token Test, or your costs.",
+          "example": {
+            "prompt": "A shark asks Pocket Pal: why not just use a normal bag hook?",
+            "steps": [
+              "Name the evidence: our Token Test.",
+              "Say what it showed: 15 out of 20 Grade 6s lose things off hooks.",
+              "Link it back: Pocket Pal holds them in a pocket, not on a hook."
+            ],
+            "answer": "Our Token Test showed most kids lose things off hooks. Pocket Pal holds them in a pocket instead."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write your team's answer to each shark question.",
+              "columns": [
+                "Shark question",
+                "Our answer"
+              ],
+              "rows": [
+                [
+                  "How do you know people want it?",
+                  ""
+                ],
+                [
+                  "What did your testing show?",
+                  ""
+                ],
+                [
+                  "Why is upcycling better for this product?",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "How do you know people want it?",
+                  "evidence from the Token Test or survey"
+                ],
+                [
+                  "What did your testing show?",
+                  "a failed test and the fix that worked"
+                ],
+                [
+                  "Why is upcycling better for this product?",
+                  "it saves natural resources and money"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Stay calm under questions",
+          "columns": 1,
+          "example": {
+            "prompt": "A shark says: I don't think anyone needs this. What's a calm reply?",
+            "steps": [
+              "Don't argue or get upset.",
+              "Thank them, then give one piece of evidence.",
+              "Thanks. Actually, 12 people in our survey said they'd use it."
+            ],
+            "answer": "Thank them, then give one piece of evidence."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "A shark says your price is too high. Which reply is best?",
+              "options": [
+                "That's not true!",
+                "Thanks. It costs $3 to make, so $6 still makes a profit.",
+                "Okay, we'll make it free."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "The second. It stays calm and uses evidence: the cost to make shows the price is fair."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "A pitch frame: one sentence starter for every part.",
+      "title": "Pitch Planner",
+      "subtitle": "Six parts, one sentence each.",
+      "sections": [
+        {
+          "title": "Our pitch frame",
+          "columns": 1,
+          "example": {
+            "prompt": "Pocket Pal's hook and problem.",
+            "steps": [
+              "Hook: Have you ever found your hat on the floor?",
+              "Problem: Hats and bottles fall off bag hooks every day.",
+              "One sentence each."
+            ],
+            "answer": "Have you ever found your hat on the floor? Hats and bottles fall off bag hooks every day."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Finish each sentence for your team's product.",
+              "columns": [
+                "Part",
+                "Sentence starter",
+                "Our words"
+              ],
+              "rows": [
+                [
+                  "Hook",
+                  "Have you ever ___?",
+                  ""
+                ],
+                [
+                  "Problem",
+                  "Every day, ___.",
+                  ""
+                ],
+                [
+                  "Product",
+                  "Meet ___. It ___.",
+                  ""
+                ],
+                [
+                  "Upcycled",
+                  "It is made from old ___.",
+                  ""
+                ],
+                [
+                  "Price",
+                  "It costs ___ to make and sells for ___.",
+                  ""
+                ],
+                [
+                  "Ask",
+                  "Invest your tokens in ___!",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Hook",
+                  "Have you ever ___?",
+                  "a question about the problem"
+                ],
+                [
+                  "Problem",
+                  "Every day, ___.",
+                  "the problem"
+                ],
+                [
+                  "Product",
+                  "Meet ___. It ___.",
+                  "name and what it does"
+                ],
+                [
+                  "Upcycled",
+                  "It is made from old ___.",
+                  "the upcycled material"
+                ],
+                [
+                  "Price",
+                  "It costs ___ to make and sells for ___.",
+                  "two prices"
+                ],
+                [
+                  "Ask",
+                  "Invest your tokens in ___!",
+                  "the product name"
+                ]
+              ],
+              "hint": "Say each sentence aloud before you write it."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Pitch week. One line: today every team writes and rehearses the pitch it gives the sharks on Shark Tank Day."
+    },
+    {
+      "kind": "resources",
+      "notes": "Prototypes, posters and Marketing Plans out before the bell. Six cue cards per team. A visible timer. Cue the Locker Board clip. Print the Worksheet one per team, plus a few Extension and Supported copies."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how to pitch a product so people want to invest.",
+      "successCriteria": [
+        "I can name the six parts of a pitch.",
+        "I can write my part of our team's pitch.",
+        "I can deliver our pitch with a clear voice and a demo."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: In two weeks you face the sharks.",
+            "Today you write what you'll say."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          "SAY: Fifteen minutes with me, then forty minutes to write and rehearse."
+        ],
+        "prep": "15 minutes explicit, 40 team time. SC1 the six parts for all; SC2 writing a part is the core; SC3 delivery. Anchor: Find a problem. Upcycle a fix. Pitch it.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "How does Carson start?",
+      "visual": {
+        "type": "video",
+        "youtube": "IDpfl2aGruE",
+        "end": 180,
+        "label": "Watch on YouTube: Locker Board"
+      },
+      "prompt": "Turn and tell: how did Carson grab the sharks at the start?",
+      "notes": {
+        "answer": "open - his opening words, or showing the board straight away",
+        "beats": [
+          [
+            "PLAY from 0:00. Pause at about 0:30, once Carson finishes his opening lines.",
+            "SAY: You've seen Carson before. This time, watch only how he opens."
+          ],
+          [
+            "ASK: How did Carson grab the sharks at the start?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: what he said first, or showing the board"
+          ],
+          [
+            "SCAN for something he said or did, not just the product.",
+            "80%+ -> cold call one pair: what did he say next?",
+            "Less -> replay the first 30 seconds, re-ask."
+          ],
+          [
+            "ASK: Thumbs: will your pitch grab the sharks that fast?",
+            "5 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: mixed, which is fine"
+          ]
+        ],
+        "trap": [
+          "remembering the board, not how he opened.",
+          "Fix: replay the opening, student names his first move."
+        ],
+        "prep": "Launch. A rewatch with a new job: the hook. Grade 5s saw this clip in Session 1.",
+        "sources": "Locker Board, Shark Tank US Season 9.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "pitch",
+      "meaning": "A short talk that shows your product and convinces people to invest.",
+      "example": "Our pitch is 60 to 90 seconds, and every team member says a part.",
+      "pictogram": "microphone",
+      "notes": {
+        "answer": "a short talk that shows your product and convinces people to invest",
+        "beats": [
+          "POINT to the word. SAY: Pitch. Say it with me. Pitch.",
+          [
+            "SAY: A pitch is short and shows the product.",
+            "It ends by asking for investment. Ours are 60 to 90 seconds."
+          ],
+          [
+            "ASK: Does a pitch ask people to buy, or to invest?",
+            "5 sec. Cue: Everyone, together, on three.",
+            "EXPECT: invest"
+          ],
+          [
+            "ASK: How long is our pitch, in seconds?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 60 to 90"
+          ]
+        ],
+        "trap": [
+          "ending the pitch with buy it.",
+          "Fix: the sharks invest tokens; student rewrites the ask."
+        ],
+        "prep": "One key word, linked to Session 2: sharks invest, they don't buy.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "The pitch recipe",
+      "visual": {
+        "type": "table",
+        "fontSize": 17,
+        "rows": [
+          [
+            "Part",
+            "Pocket Pal"
+          ],
+          [
+            "Hook",
+            "Who's ever found their hat on the floor?"
+          ],
+          [
+            "Problem",
+            "Hats and bottles fall off bag hooks every day."
+          ],
+          [
+            "Product and demo",
+            "Meet Pocket Pal. Hat in, bottle in, hang it up."
+          ],
+          [
+            "Upcycled",
+            "Every Pocket Pal is sewn from old jeans."
+          ],
+          [
+            "Price",
+            "It costs $2 to make and sells for $8."
+          ],
+          [
+            "Ask",
+            "Invest your tokens in Pocket Pal!"
+          ]
+        ]
+      },
+      "label": "Hook. Problem. Product. Upcycled. Price. Ask.",
+      "notes": {
+        "answer": "hook, problem, product and demo, upcycled, price, ask",
+        "beats": [
+          [
+            "HOLD UP the Pocket Pal and deliver the whole pitch, about 30 seconds.",
+            "Demo it: hat in, bottle in, hang it on a chair."
+          ],
+          [
+            "POINT to each row.",
+            "SAY: Six parts, in this order. One sentence each to start."
+          ],
+          [
+            "ASK: Which part did I say first, to grab you?",
+            "5 sec. Cue: Everyone, together, on three.",
+            "EXPECT: the hook"
+          ],
+          [
+            "ASK: What did I ask the sharks to do?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: invest their tokens"
+          ]
+        ],
+        "trap": [
+          "starting with the product name and skipping the hook and problem.",
+          "Fix: say the problem first; the product is the answer to it."
+        ],
+        "stretch": "Which part would you make longer, and why?",
+        "help": "Cover the right column; say each part's name in order with the student.",
+        "prep": "The model for SC1 and SC2. Deliver it with energy; you are showing the voice, not just the words.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Which part of the pitch?",
+      "routine": "boards",
+      "thinkTime": 8,
+      "pivot": "read the six parts in order from the board, then re-ask",
+      "followUp": "cold call one board: how did you know?",
+      "items": [
+        {
+          "text": "Ever tripped over a tangle of cords?",
+          "answer": "Hook - a question that grabs attention",
+          "expect": "hook"
+        },
+        {
+          "text": "Behind every TV is a mess of cords.",
+          "answer": "Problem",
+          "expect": "problem"
+        },
+        {
+          "text": "Every Cord Keeper is made from old toilet roll tubes.",
+          "answer": "Upcycled",
+          "expect": "upcycled"
+        },
+        {
+          "text": "Invest in Cord Keeper and untangle every lounge room.",
+          "answer": "Ask - it asks for investment",
+          "expect": "ask"
+        },
+        {
+          "text": "It sells for $3.",
+          "answer": "Price",
+          "expect": "price"
+        },
+        {
+          "text": "Watch: cord in, label on, tidy!",
+          "answer": "Product and demo",
+          "expect": "product, demo"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Quick round. Write the part of the pitch",
+          "each line comes from."
+        ],
+        "trap": [
+          "calling every first-sounding line a hook.",
+          "Fix: ask whether it grabs attention or states a fact, student re-writes."
+        ],
+        "stretch": "Rewrite one line so it's even stronger.",
+        "help": "Keep the six parts on the board in order.",
+        "prep": "First decision point: naming parts on a new pitch. Brisk. SC1. Six items, about 5 minutes.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 6]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which is the strongest ask?",
+      "prompt": "The end of the Cord Keeper pitch. Point to A, B or C.",
+      "options": [
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "question"
+          },
+          "text": "So, yeah, that's it.",
+          "misconception": "ends without asking for anything"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "shop"
+          },
+          "text": "Please buy a Cord Keeper!",
+          "misconception": "asks the sharks to buy, not invest"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "coins"
+          },
+          "text": "Invest your tokens in Cord Keeper and help us untangle every home."
+        }
+      ],
+      "answer": 2,
+      "notes": {
+        "answer": "C - it asks for investment and says what it will do",
+        "beats": [
+          "SAY: The ask is the last thing the sharks hear. Make it count.",
+          [
+            "ASK: Which is the strongest ask?",
+            "15 sec. Cue: voices off. Point... now.",
+            "EXPECT: C"
+          ],
+          [
+            "SCAN pointing fingers, back row first.",
+            "80%+ -> reveal, cold call one C: what's wrong with B?",
+            "Less -> back to the buying and investing table, re-ask."
+          ],
+          [
+            "REVEAL after fingers are scanned.",
+            "SAY: C. It asks for investment and says what it'll do. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "choosing B because it sounds polite.",
+          "Fix: ask whether the sharks take a product home, student re-chooses."
+        ],
+        "prep": "Second decision point. Under 80% means every team reads its ask to you before rehearsing.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Write it and rehearse it",
+      "task": "Write your pitch on the planner. Give every member a part. Put your lines on cue cards, then rehearse twice with the timer and your demo.",
+      "where": "Pitch Planner and cue cards",
+      "frame": "Invest your tokens in ___ and ___!",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "pencil",
+          "timer",
+          "microphone"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Write it. Time it. Say it.",
+      "extendedTask": "a written six-part team pitch on cue cards, rehearsed twice to 60 to 90 seconds with a demo",
+      "notes": {
+        "answer": "a six-part pitch, every member speaking, 60 to 90 seconds",
+        "beats": [
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Everyone, together, on three: Write it. Time it. Say it."
+          ],
+          [
+            "TIME 40 minutes: write 20, rehearse 15, fix 5. At 20, stop everyone.",
+            "ASK: Thumbs: does every person in your team have a part?",
+            "5 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: thumbs up"
+          ],
+          "CIRCULATE. Listen to one rehearsal per team. Check the ask says invest.",
+          "TIME at 5 to go: cue cards and prototype stored together."
+        ],
+        "trap": [
+          "one student saying the whole pitch.",
+          "Fix: split the six parts across the team, then rehearse again."
+        ],
+        "stretch": "Extension: plan answers to the sharks' questions.",
+        "help": "Supported Worksheet: a sentence starter for every part.",
+        "prep": "Teams rehearse to a teacher if time allows. Next week is the dress rehearsal with peer feedback.",
+        "tag": "[You Do | Independent application | SC2 | HITS 5, 10]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "A team sells pencil cases sewn from old raincoats.",
+        "Write a hook and an ask for their pitch."
+      ],
+      "notes": {
+        "answer": "e.g. Ever had soggy pencils? Invest in Dry Case, keep pencils dry.",
+        "beats": [
+          "SAY: A new product. Work on your own.",
+          [
+            "ASK: Write a hook and an ask.",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a question that grabs attention; invest, not buy"
+          ],
+          "RECORD who writes buy in the ask, or a hook that is just the name."
+        ],
+        "trap": [
+          "Buy our pencil case!",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new product. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Say your part of the pitch to your partner, with your best voice.",
+      "selfAssessment": "Fist to five: how ready are you to say your part to the sharks?",
+      "notes": {
+        "answer": "their own pitch line, said clearly",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: Fist to five: how ready are you to say your part?",
+            "5 sec. Cue: fingers at your chest... show me.",
+            "EXPECT: mostly three to five"
+          ],
+          "RECORD students showing fists and ones. They rehearse with you first next week.",
+          [
+            "ASK: Say your part of the pitch to your partner.",
+            "30 sec. Turn and tell, partner A first, then swap.",
+            "EXPECT: their own line, clear and loud"
+          ]
+        ],
+        "prep": "Next week: dress rehearsal and feedback. Students practise their line at home. SC3.",
+        "tag": "[Closing | Retention and recall | SC3 | HITS 9]"
+      }
+    }
+  ]
+}

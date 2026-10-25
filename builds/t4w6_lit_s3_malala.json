@@ -65,7 +65,7 @@
       "Story frame: Then... One day... Now... So..."
     ],
     "videos": [
-      "DCE Speech Collection: Malala Yousafzai, UN speech, 2013 (teacher's copy; play the opening and the 'one child, one teacher' section)"
+      "Malala Yousafzai, UN speech, 2013 (public recording; play the opening and the 'one child, one teacher' section)"
     ]
   },
   "resources": [
@@ -492,7 +492,7 @@
     },
     {
       "kind": "resources",
-      "notes": "Cue the selected section of Malala Yousafzai's 2013 UN speech from the DCE Speech Collection. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Toolkits out."
+      "notes": "Cue the selected section of Malala Yousafzai's 2013 UN speech from a public recording. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Toolkits out."
     },
     {
       "kind": "li",
@@ -636,7 +636,7 @@
         "answer": "message, audience, think, feel, do",
         "beats": [
           [
-            "PLAY the selected section from the DCE Speech Collection.",
+            "PLAY the selected section of the recording.",
             "SAY: Listen for her own story, and for a list that builds."
           ],
           [
@@ -701,7 +701,7 @@
         ],
         "stretch": "Write a list that builds for your own issue.",
         "help": "Use her pattern: One ___, one ___, one ___ can ___.",
-        "prep": "SOURCES: check the wording against your DCE copy. Toolkit row 4.",
+        "prep": "SOURCES: Malala Yousafzai, UN Youth Assembly, 12 July 2013. Toolkit row 4.",
         "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
       }
     },

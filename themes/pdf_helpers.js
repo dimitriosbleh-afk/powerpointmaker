@@ -1068,10 +1068,13 @@ function addRichResourceSlide(pres, config, theme, footer, notes) {
   };
 
   if (resources.length > 0) {
-    const gap = 0.18;
+    // Seven or more resources: tighter cards, the name plus a one-line
+    // description in small type, so nothing overlaps the next card or the footer.
+    const crowded = resources.length > 6;
+    const gap = crowded ? 0.08 : 0.18;
     const cardH = Math.min(1.0, (colH - gap * (resources.length - 1)) / resources.length);
-    const baseName = cardH >= 0.8 ? 16 : 14;
-    const descSize = cardH >= 0.8 ? 12 : 11;
+    const baseName = crowded ? Math.min(13, Math.floor(cardH * 72 * 0.42)) : (cardH >= 0.8 ? 16 : 14);
+    const descSize = crowded ? 8 : (cardH >= 0.8 ? 12 : 11);
     resources.forEach((res, i) => {
       const displayName = cleanResourceLabel(res.name) || resourceNameFromFileName(res.fileName);
       const cy = colTop + i * (cardH + gap);
@@ -1081,7 +1084,7 @@ function addRichResourceSlide(pres, config, theme, footer, notes) {
         shadow: { type: "outer", blur: 4, offset: 1, color: "000000", opacity: 0.10, angle: 135 },
       });
       s.addShape("rect", { x: leftX, y: cy, w: 0.06, h: cardH, fill: { color: badgeColor } });
-      const ICON_D = 0.46;
+      const ICON_D = Math.min(0.46, cardH - 0.08);
       s.addShape("roundRect", {
         x: leftX + 0.2, y: cy + (cardH - ICON_D) / 2, w: ICON_D, h: ICON_D, rectRadius: ICON_D / 2,
         fill: { color: TC.CORAL || TC.ALERT || "C94030" },
@@ -1095,11 +1098,11 @@ function addRichResourceSlide(pres, config, theme, footer, notes) {
       const textW = leftW - 0.97;
       // One line for the name: heading faces run wide, so step down until it fits.
       let nameSize = baseName;
-      while (nameSize > 11 && String(displayName).length * nameSize * 0.62 / 72 > textW) nameSize -= 1;
+      while (nameSize > Math.min(11, baseName) && String(displayName).length * nameSize * 0.62 / 72 > textW) nameSize -= 1;
       const nameH = nameSize * 1.25 / 72;
       const hasDesc = Boolean(res.description);
-      const blockH = nameH + (hasDesc ? 0.05 + Math.min(2, linesFor(res.description, descSize, textW)) * descSize * 1.25 / 72 : 0);
-      const textY = cy + Math.max(0.08, (cardH - blockH) / 2);
+      const blockH = nameH + (hasDesc ? 0.05 + Math.min(crowded ? 1 : 2, linesFor(res.description, descSize, textW)) * descSize * 1.25 / 72 : 0);
+      const textY = cy + Math.max(crowded ? 0 : 0.08, (cardH - blockH) / 2);
       // Hyperlink lives in run options, NOT the addText options level:
       // options-level hyperlink makes PptxGenJS also link the whole text box
       // (shape-level hlinkClick), so clicking anywhere in the card follows it.
@@ -1112,7 +1115,7 @@ function addRichResourceSlide(pres, config, theme, footer, notes) {
       });
       if (hasDesc) {
         s.addText(String(res.description), {
-          x: textX, y: textY + nameH + 0.05, w: textW, h: Math.max(0.2, cy + cardH - 0.06 - (textY + nameH + 0.05)),
+          x: textX, y: textY + nameH + 0.05, w: textW, h: Math.max(crowded ? 0.12 : 0.2, cy + cardH - (crowded ? 0.02 : 0.06) - (textY + nameH + 0.05)),
           fontSize: descSize, fontFace: FB, color: muted, valign: "top",
           margin: 0, fit: "shrink", shrinkText: true,
         });

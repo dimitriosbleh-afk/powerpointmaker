@@ -67,7 +67,7 @@ def audit_dictation(day, session):
             if target.lower() not in sentence.lower():
                 issue(f"{day}: dictation target {target!r} is not in its sentence")
         if re.search(r"[()\[\]]", sentence):
-            issue(f"{day}: dictation uses brackets - the builder does not colour them red, so CUPS "
+            issue(f"{day}: dictation uses brackets - the builder does not colour them red, so COPS "
                   "punctuation would be wrong on the slide. Keep brackets on grammar slides only")
 
 
@@ -79,11 +79,18 @@ def audit_words(week, prev_last):
         day = session["day"]
         read = session.get("words_to_read_review", {}).get("words", [])
         spell = [w["word"] for w in session.get("words_to_spell_review", [])]
-        for name, items, want in (("words_to_read_review", read, 15), ("words_to_spell_review", spell, 10),
-                                  ("morphology_review", session.get("morphology_review", []), 10),
-                                  ("sound_bank", session.get("sound_bank", []), 9)):
-            if len(items) != want:
-                issue(f"{day}: {name} has {len(items)} entries (expected {want})")
+        v17 = og.week_is_v17(week)
+        for name, items, want in (("words_to_read_review", read, (15,)),
+                                  ("words_to_spell_review", spell,
+                                   tuple(range(6, 11)) if v17 else (10,)),
+                                  ("morphology_review", session.get("morphology_review", []), (10,)),
+                                  ("sound_bank", session.get("sound_bank", []),
+                                   tuple(range(6, 10)) if v17 else (9,))):
+            if v17 and not items:
+                continue  # v1.7 day types carry only their own blocks (section 1)
+            if len(items) not in want:
+                issue(f"{day}: {name} has {len(items)} entries (expected "
+                      f"{want[0] if len(want) == 1 else f'{want[0]}-{want[-1]}'})")
         overlap = set(read) & set(spell)
         if overlap:
             issue(f"{day}: same word in review reading and review spelling: {', '.join(sorted(overlap))}")
@@ -113,6 +120,8 @@ def audit_cards(week):
     orders = {}
     for session in sessions:
         order = tuple(card["morph"] for card in session.get("morphology_review", []))
+        if not order:
+            continue
         if order in orders:
             issue(f"{session['day']}: review cards are in the same order as {orders[order]}")
         orders[order] = session["day"]
@@ -126,12 +135,19 @@ def audit_cards(week):
 def audit_bank(week):
     taught, unconfirmed = taught_timeline()
     for session in week["sessions"]:
+        # a morpheme taught on an earlier day of this week is taught (2c)
+        earlier = set(taught)
+        for prior in week["sessions"][:week["sessions"].index(session)]:
+            if prior.get("type") in ("new", "teach") and prior.get("new_morphology"):
+                earlier |= og.morph_surface_forms(prior["new_morphology"]["morph"])
         for item in session.get("sound_bank", []):
+            if item.get("type") == "sound":
+                continue  # phonograms come from the sound deck (v1.7)
             forms = og.morph_surface_forms(item["morph"])
-            if forms & unconfirmed and not forms & taught:
+            if forms & unconfirmed and not forms & earlier:
                 issue(f"{session['day']}: sound bank {item['morph']!r} is on the _unconfirmed list in "
                       "taught_morphemes.json - not treated as taught until the teacher confirms")
-            elif not forms & taught:
+            elif not forms & earlier:
                 issue(f"{session['day']}: sound bank {item['morph']!r} is not on the taught timeline")
 
 
@@ -170,17 +186,89 @@ def audit_text_budget(ctx, block, is_check=False):
         issue(f"{ctx}: footer is {len(footer)} characters (keep under 45)")
 
 
+def audit_round(ctx, block):
+    """v1.6 one-question-per-slide rounds (OG_MEGA_PROMPT 3d/7, 10c)."""
+    items = block.get("round", [])
+    for n, item in enumerate(items, 1):
+        where = f"{ctx} round item {n}"
+        rule = item.get("rule", block.get("rule", ""))
+        if 70 <= len(rule) <= 82:
+            check(f"{where}: rule banner is {len(rule)} characters - cut to 69 or fewer")
+        lines = [ln for ln in str(item.get("prompt", "")).split("\n") if ln.strip()]
+        if not lines:
+            issue(f"{where}: no prompt")
+        if len(lines) > 3:
+            issue(f"{where}: prompt has {len(lines)} lines (max 3)")
+        for line in lines:
+            # hero is 7.7" wide and shrinks no further than 20 pt: ~47 characters a line
+            if len(line) > 47:
+                issue(f"{where}: prompt line of {len(line)} characters wraps (keep to 47): {line}")
+        choices = item.get("choices", [])
+        if len(choices) > 3:
+            issue(f"{where}: {len(choices)} choices (max 3)")
+        for choice in choices:
+            for line in str(choice).split("\n"):
+                if len(line) > 24:
+                    issue(f"{where}: choice line of {len(line)} characters will not fit a chip (keep to 24): {line}")
+        answer = item.get("answer", "")
+        if not answer:
+            issue(f"{where}: no answer")
+        bar = len(answer) + (3 + len(item["why"]) if item.get("why") else 0)
+        if bar > 110:
+            issue(f"{where}: answer bar is {bar} characters (keep to 110)")
+        elif bar > 58 and choices:
+            issue(f"{where}: answer bar is {bar} characters on a slide with choices (keep to 58 or it drops to 14 pt)")
+        if not item.get("worked") and not str(item.get("notes", "")).startswith("ANSWER:"):
+            issue(f"{where}: notes must open with the ANSWER line")
+    routine = block.get("round_routine", block.get("routine", ""))
+    footer = block.get("round_footer", block.get("footer", ""))
+    if len(routine) > 30:
+        check(f"{ctx} round: routine chip is {len(routine)} characters (keep under 30)")
+    if len(footer) > 45:
+        issue(f"{ctx} round: footer is {len(footer)} characters (keep under 45)")
+
+
 def audit_slides(week):
     for session in week["sessions"]:
         day = session["day"]
         grammar = session.get("grammar", {})
         for key in ("i_do", "we_do", "you_do"):
             if key in grammar:
-                audit_text_budget(f"{day} grammar {key}", grammar[key])
+                if grammar[key].get("round"):
+                    audit_round(f"{day} grammar {key}", grammar[key])
+                    if grammar[key].get("example"):
+                        audit_text_budget(f"{day} grammar {key} lead", grammar[key])
+                else:
+                    audit_text_budget(f"{day} grammar {key}", grammar[key])
         if grammar.get("you_do", {}).get("check_items"):
             audit_text_budget(f"{day} grammar check slide", grammar["you_do"], is_check=True)
+        for name in ("keyword_sentence", "vote"):
+            if session.get(name):
+                audit_text_budget(f"{day} {name}", session[name])
+        if (session.get("pos_drill") or {}).get("intro"):
+            audit_text_budget(f"{day} pos_drill intro", session["pos_drill"]["intro"])
+        build = session.get("build") or {}
+        for n, rnd in enumerate(build.get("rounds", []), 1):
+            audit_round(f"{day} build round {n}", rnd)
+            if og.week_is_v18(week) and "break" in rnd.get("title", "").lower():
+                for item in rnd.get("round", []):
+                    if not item.get("parts"):
+                        issue(f"{day} build round {n}: Break it apart item "
+                              f"{item.get('prompt', '')!r} needs `parts` - one box per part, "
+                              "the root filled in (3f, v1.8)")
+        matrix = build.get("matrix")
+        if matrix:
+            for part in matrix.get("prefixes", []) + matrix.get("suffixes", []):
+                if len(part) > 18:
+                    check(f"{day} matrix: part {part!r} is {len(part)} characters and may shrink the column")
+                if not re.search(r"\(.+\)", part) and part.strip("-") not in ("s", "es", "ed", "ing"):
+                    issue(f"{day} matrix: part {part!r} has no printed meaning (2f one-recall rule)")
         activity = session.get("new_morph_activity")
-        if activity:
+        if activity and activity.get("round"):
+            audit_round(f"{day} You Do", activity)
+            if activity.get("example"):
+                audit_text_budget(f"{day} You Do lead", activity)
+        elif activity:
             audit_text_budget(f"{day} You Do", activity)
             if activity.get("check_items"):
                 audit_text_budget(f"{day} You Do check slide", activity, is_check=True)

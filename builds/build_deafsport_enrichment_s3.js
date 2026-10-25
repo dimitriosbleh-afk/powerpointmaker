@@ -62,40 +62,12 @@ function build() {
     tag: "[Setup | Planning | HITS 2]",
   }));
 
-  // 3. Do Now
-  {
-    const s = pres.addSlide();
-    T.addTopBar(s, C.PRIMARY);
-    T.addBadge(s, "Do Now", { color: C.PRIMARY });
-    T.addCueStrip(s, ["voicesOff", "whiteboards"]);
-    T.addTitle(s, "Same as every week: write it, then find the signs");
-    T.addCard(s, 0.5, 1.45, 9, 1.5, { variant: "tint", tone: C.PRIMARY });
-    s.addText("What sport does your family watch?", {
-      x: 0.7, y: 1.45, w: 8.6, h: 1.5, fontSize: 36, fontFace: T.FONT_H, bold: true,
-      color: C.CHARCOAL, align: "center", valign: "middle", margin: 0,
-    });
-    T.addInstructionCard(s, [
-      { role: "header", text: "Same as every week" },
-      { text: "Write your answer in English." },
-      { text: "Underline every word you would need a sign for." },
-    ], { x: 0.5, y: 3.15, w: 9, h: 1.4, strip: C.PRIMARY });
-    T.addFooter(s, FOOTER);
-    s.addNotes(T.composeGlanceNotes({
-      beats: [
-        "SILENT from the door. Say nothing; the routine runs itself now.",
-        ["Retrieval sits inside the prompt: the answer needs SPORT and FAVOURITE,",
-          "and most students reach for TEAM as well."],
-        "TIME: 5 minutes. Deal with whatever walked in from the playground.",
-        ["SAY: You know one thing about your own family.",
-          "Today you find out three things about the person opposite you."],
-      ],
-      prep: [
-        "5 min. Second week of the routine. It should need nothing from you.",
-        "Writing gloss waits for Term 1 2027, when how gloss works is taught properly.",
-      ],
-      tag: "[Do Now | Attention, focus and regulation | HITS 6]",
-    }));
-  }
+  // 3. Do Now: Auslan90 Australian Deaf Games, Day 3
+  A.addVideoDoNow(T, pres, {
+    day: 3,
+    footer: FOOTER,
+    bridge: ["SAY: Those interviews were people asking each other questions.", "Today you ask questions of the person opposite you."],
+  });
 
   // 4. LI and SC
   T.liSlide(

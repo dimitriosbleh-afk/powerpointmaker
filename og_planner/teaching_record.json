@@ -49,6 +49,19 @@
         "borrowed spellings": ["tsunami", "camouflage", "seismograph", "stomach"],
         "letters doing odd jobs": ["tongue", "species", "vacuum", "rhythm"]
       }
+    },
+    "term4": {
+      "_source": "Term 4 week specs og_planner/weeks/term4_week*.json.",
+      "words": [
+        {"word": "business", "week": 1, "unfair": "usi", "say_it": "BIZ-nis", "why": "busi is busy with its y changed to i; the u says /i/ as in busy and the i is silent"},
+        {"word": "scenario", "week": 1, "unfair": "sc", "say_it": "suh-NAH-ree-oh", "why": "the c after the s is silent, as in science and scene; the a says /ah/ from Italian"},
+        {"word": "entrepreneur", "week": 2, "unfair": "eur", "say_it": "ON-truh-pruh-NER", "why": "French: the ending eur says /er/ and entre says /on-truh/; links to business (Week 1)"},
+        {"word": "receipt", "week": 2, "unfair": "p", "say_it": "ruh-SEET", "why": "the p is silent; ei is fair (i before e except after c); the p is heard in reception"},
+        {"word": "debt", "week": 3, "unfair": "b", "say_it": "DET", "why": "the b is silent - scribes added it to match the Latin debitum (owed); you hear it in debit"},
+        {"word": "cheque", "week": 3, "unfair": "que", "say_it": "CHEK", "why": "Australian spelling; the que says /k/ as in unique and antique (Americans write check)"},
+        {"word": "guarantee", "week": 4, "unfair": "u", "say_it": "GA-ruhn-TEE", "why": "the u after the g is silent, as in guard and guess"},
+        {"word": "mortgage", "week": 4, "unfair": "t", "say_it": "MOR-gij", "why": "the t is silent and age says /ij/; Old French mort gage, dead pledge - mort as in mortal"}
+      ]
     }
   },
   "grammar": {
@@ -71,6 +84,15 @@
         {"week": 10, "focus": "Whole-term review", "class_language": "Tue prepositional phrases + adverbials; Wed phrase, clause + appositive; Thu simple/compound/complex + trigger word; Fri nominalisation + acronyms (no Monday session)"}
       ],
       "labels_used": "preposition and noun group (Week 1), verb (from Week 4), subordinating conjunction (Weeks 6-7), noun and verb (Week 8). adjective and adverb were never taught as labels - keep them out of questions outside the grammar section (section 2b)."
+    },
+    "term4": {
+      "_source": "Term 4 week specs. class_language is the wording students met - reuse it in later review.",
+      "weeks": [
+        {"week": 1, "focus": "Upgrade nouns within an argument", "class_language": "three upgrades - exact (exactly who or what?), strength (does it fit the facts? too strong is hyperbole), built up into a noun group (describer, noun, detail); Mon exact, Tue strength, Wed noun group, Thu all three"},
+        {"week": 2, "focus": "Upgrade verbs within an argument", "class_language": "three verb upgrades - exact (exactly what happens?), strength (does it fit the facts? too strong is hyperbole), saying verbs (how was it said? warn, insist, agree, admit, show); Mon exact, Tue strength, Wed saying verbs, Thu all three, Fri week review. First week on v1.6 rounds: I do, one We do item, three You do items, answer on the click"},
+        {"week": 3, "focus": "Join sentences using connectives to link arguments, evidence and reasons", "class_language": "however and on the other hand = the other side, therefore = so, the result, for example = the proof; the connective starts the second sentence and takes a comma. First v1.7 week: one grammar block, Thursday only. Parts of speech on suffixes taught from this week: noun names it, verb does it, adjective describes a noun, adverb tells how, when or where."},
+        {"week": 4, "focus": "Identify the function of a semicolon and generate a compound sentence where a semicolon replaces the conjunction between two independent clauses", "class_language": "a semicolon joins two full sentences and takes the place of and, but or so - never both; test each side can stand alone; small letter after it unless I or a name. First v1.8 week: parts of speech by frame - the ___ = noun, to ___ = verb, very ___ = adjective."}
+      ]
     }
   }
 }

@@ -1,0 +1,2321 @@
+{
+ "term": 4,
+ "week": 2,
+ "cohort": "Enrichment",
+ "unit_folder": "OG_Term4_Week2",
+ "days": [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday"
+ ],
+ "taught_morphemes": [
+  "mini-",
+  "super-",
+  "over-",
+  "anti-",
+  "ultra-",
+  "retro-",
+  "em-",
+  "syn-",
+  "sym-/sys-/syl-",
+  "-let",
+  "-ling",
+  "-cian",
+  "-cial/-tial",
+  "-ancy/-ance",
+  "-ency/-ence",
+  "-ity",
+  "-tude",
+  "out-",
+  "self-",
+  "post-",
+  "with-",
+  "counter-",
+  "contra-",
+  "omni-",
+  "intra-",
+  "-eer",
+  "-ant",
+  "-ar",
+  "-ine",
+  "-cy",
+  "-ciate/-tiate",
+  "ped/pod",
+  "rect/reg",
+  "capt/capit",
+  "flect/flex",
+  "ord/ordin",
+  "clud(e)/clus(e)",
+  "mal-",
+  "-ery",
+  "-ice",
+  "-ive",
+  "-ite",
+  "-acy",
+  "-ule",
+  "mega-",
+  "micro",
+  "pict/picto",
+  "vore",
+  "eco",
+  "carn/carni",
+  "junct/join/joint",
+  "vict/vinc",
+  "chron",
+  "mand/mend",
+  "jur/jud/just",
+  "pend/pens",
+  "pon/pound",
+  "caus-/cus(e)",
+  "hyper"
+ ],
+ "overview": {
+  "Monday": {
+   "morphology": [
+    "New Morphology",
+    "astro"
+   ],
+   "grammar": "Upgrade verbs: swap the vague verb",
+   "learned_words": [
+    "New learned word",
+    "entrepreneur"
+   ]
+  },
+  "Tuesday": {
+   "morphology": [
+    "Review Morphology",
+    "astro"
+   ],
+   "grammar": "Upgrade verbs: the right strength",
+   "learned_words": [
+    "Review learned words",
+    "entrepreneur, scenario"
+   ]
+  },
+  "Wednesday": {
+   "morphology": [
+    "New Morphology",
+    "terr"
+   ],
+   "grammar": "Upgrade verbs: show how it was said",
+   "learned_words": [
+    "New learned word",
+    "receipt"
+   ]
+  },
+  "Thursday": {
+   "morphology": [
+    "Review Morphology",
+    "terr"
+   ],
+   "grammar": "Upgrade verbs: three ways",
+   "learned_words": [
+    "Review learned words",
+    "receipt, entrepreneur"
+   ]
+  },
+  "Friday": {
+   "morphology": [
+    "Week Review",
+    "astro, terr"
+   ],
+   "grammar": "Upgrade verbs: week review",
+   "learned_words": [
+    "Review learned words",
+    "receipt, entrepreneur"
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "day": "Monday",
+   "type": "new",
+   "morphology_review": [
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from hyper, meaning over or above.",
+      "answers": [
+       "hyperactive",
+       "hyperlink",
+       "hypersonic",
+       "hypermarket"
+      ]
+     }
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    },
+    {
+     "morph": "vict/vinc",
+     "type": "root",
+     "keyword": "convict",
+     "meaning": "conquer"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from omni, meaning all.",
+      "answers": [
+       "omnivore",
+       "omnibus",
+       "omnipresent",
+       "omnipotent"
+      ]
+     }
+    },
+    {
+     "morph": "junct/join/joint",
+     "type": "root",
+     "keyword": "join",
+     "meaning": "join"
+    },
+    {
+     "morph": "chron",
+     "type": "root",
+     "keyword": "chronology",
+     "meaning": "time"
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root",
+     "keyword": "command",
+     "meaning": "order, entrust"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root",
+     "keyword": "adjure",
+     "meaning": "right, law",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from jur, jud or just, meaning right or law.",
+      "answers": [
+       "judge",
+       "justice",
+       "injury",
+       "prejudice"
+      ]
+     }
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "omnivore",
+     "because",
+     "hyperspace",
+     "pendulum",
+     "omnipresent",
+     "justify",
+     "hypertension",
+     "accusation",
+     "omnibus",
+     "synchronise",
+     "hyperactive",
+     "excusable",
+     "component",
+     "omnivorous",
+     "hyperbole"
+    ],
+    "notes": "1. READ: \"Okay, if your first name starts with A to E, read row 1.\"\n2. READ: \"First names starting with F to J, read row 2.\"\n3. READ: \"First names starting with K to O, read row 3.\"\n4. READ: \"First names starting with P to Z, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"hyper means over or above. Which four words carry it?\" 5 sec, choral response. EXPECT: hyperspace, hypertension, hyperactive, hyperbole.\n7. ASK: \"omni means all. Which four words carry it?\" 5 sec, choral response. EXPECT: omnivore, omnipresent, omnibus, omnivorous.\n8. ASK: \"caus and cus mean cause. Which three words carry them?\" 5 sec, turn and tell. EXPECT: because, accusation, excusable.\n9. ASK: \"Which word names an animal that eats all kinds of food, plants and meat?\" 3 sec, choral response. EXPECT: omnivore.\n10. ASK: \"Which word means saying something far bigger than it really is, like I have told you a million times?\" 3 sec, choral response. EXPECT: hyperbole.\n11. ASK: \"chron means time and syn means together. Which word means to set things to the same time?\" 3 sec, choral response. EXPECT: synchronise.\n12. ASK: \"What is the opposite of excusable?\" 3 sec, choral response. EXPECT: inexcusable. ACCEPT: unforgivable."
+   },
+   "words_to_spell_review": [
+    {
+     "word": "hyperlink",
+     "sentence": "Click the blue hyperlink on our class page to open the reading task.",
+     "prompt": "Which part of hyperlink tells you the link takes you over to somewhere else?",
+     "answer": "The hyper part, meaning over. Click it and you jump over to a new page."
+    },
+    {
+     "word": "hypermarket",
+     "sentence": "The new hypermarket near the highway sells bikes, groceries and fridges.",
+     "prompt": "super means above. So why is this shop called a hypermarket and not a supermarket?",
+     "answer": "hyper means over, so it goes over even a supermarket. It is bigger and sells more."
+    },
+    {
+     "word": "hyperextend",
+     "sentence": "Our netball coach showed us how to land so we do not hyperextend a knee.",
+     "prompt": "extend means stretch out. Which part tells you the stretch goes too far?",
+     "answer": "The hyper part, meaning over. The knee stretches over its safe limit."
+    },
+    {
+     "word": "hyperfocus",
+     "sentence": "When I hyperfocus on a puzzle, I do not even hear the lunch bell.",
+     "prompt": "Okay, which part tells you the focus is more than usual?",
+     "answer": "The hyper part, meaning over. You focus over the usual amount, so you notice nothing else."
+    },
+    {
+     "word": "omnipresence",
+     "sentence": "The omnipresence of phones at the park surprised our visiting grandparents.",
+     "prompt": "omni means all. Which taught ending turns being present into a thing you can name?",
+     "answer": "The -ence ending, the same one in dependence. Omnipresence is the state of being present everywhere."
+    },
+    {
+     "word": "omnipotent",
+     "sentence": "In our class story, the omnipotent wizard could change the weather with one word.",
+     "prompt": "potent means powerful. So what can an omnipotent wizard do?",
+     "answer": "Anything at all. omni means all, so the wizard holds all the power."
+    },
+    {
+     "word": "causative",
+     "sentence": "Our science group searched for the causative factor that made the seedlings wilt.",
+     "prompt": "caus means cause. Which taught ending tells you the factor is doing the causing?",
+     "answer": "The -ive ending, the same one in active. A causative factor is the one that causes it."
+    },
+    {
+     "word": "excused",
+     "sentence": "Mia was excused from cross country because she had a broken toe.",
+     "prompt": "cus means cause. What did Mia give that got her out of the race?",
+     "answer": "A good cause, or reason. The ex part means out, so the reason got her out of running."
+    },
+    {
+     "word": "dependence",
+     "sentence": "Our class graph showed our dependence on the canteen for Friday lunch.",
+     "prompt": "pend means hang. Which taught ending turns depend into a thing you can name?",
+     "answer": "The -ence ending, the same one in omnipresence. Dependence means hanging on something you need."
+    },
+    {
+     "word": "justice",
+     "sentence": "The class meeting wanted justice for the team whose goal was not counted.",
+     "prompt": "just means right. Which taught ending turns it into a thing you can name?",
+     "answer": "The -ice ending, the same one in service. Justice is the state of things being made right."
+    }
+   ],
+   "sound_bank": [
+    {
+     "morph": "hyper",
+     "type": "root"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix"
+    },
+    {
+     "morph": "-ive",
+     "type": "suffix"
+    },
+    {
+     "morph": "-ence",
+     "type": "suffix"
+    },
+    {
+     "morph": "-ice",
+     "type": "suffix"
+    }
+   ],
+   "new_morphology": {
+    "morph": "astro",
+    "type": "root",
+    "keyword": "astronaut",
+    "meaning": "star"
+   },
+   "words_to_read_new": [
+    {
+     "word": "astronaut",
+     "meaning": "astro means star + naut means sailor: a sailor among the stars"
+    },
+    {
+     "word": "astronomy",
+     "meaning": "astro means star + nomy means law or order: the laws of the stars"
+    },
+    {
+     "word": "astronomer",
+     "meaning": "astro means star + nom means law + -er means a person who: a person who studies the laws of the stars"
+    },
+    {
+     "word": "astronomical",
+     "meaning": "astro means star + nom means law + -ical means relating to: relating to the stars"
+    },
+    {
+     "word": "astrology",
+     "meaning": "astro means star + -logy means talk: star talk"
+    },
+    {
+     "word": "astrophysics",
+     "meaning": "astro means star + physics: the physics of the stars"
+    },
+    {
+     "word": "asteroid",
+     "meaning": "aster means star + -oid means like: like a star"
+    },
+    {
+     "word": "asterisk",
+     "meaning": "aster means star + -isk means little: a little star"
+    },
+    {
+     "word": "astrolabe",
+     "meaning": "astro means star + labe means taker: a star-taker"
+    }
+   ],
+   "associated_word_exceptions": [
+    {
+     "word": "astronomer",
+     "reason": "ground 1: the printed astro family has six words, one of them 13 letters; astronomer is the person beside astronomy and the word students meet in space units",
+     "source": "Macquarie/Oxford: one who studies astronomy; Greek astron star + nomos law"
+    },
+    {
+     "word": "astrophysics",
+     "reason": "ground 1: small printed family; astro + an everyday science word, the cleanest sum the family offers",
+     "source": "Oxford: the branch of astronomy concerned with the physics of stars"
+    },
+    {
+     "word": "asteroid",
+     "reason": "ground 1 and 3: aster is the same Greek word for star (astron/aster); a Year 5 Earth and space word that teaches the meaning visibly",
+     "source": "Oxford: Greek asteroeides, star-like (aster star + -oid like)"
+    },
+    {
+     "word": "asterisk",
+     "reason": "ground 1 and 3: aster (star) + -isk (little) is a transparent sum and the * symbol makes it concrete",
+     "source": "Oxford: Greek asteriskos, little star"
+    }
+   ],
+   "wtr_new_notes": "SAY: \"Okay, learn astro once and you can read the big words in every space book, from astronaut to astronomical.\"\nREAD each word as it appears, then connect astro to the card meaning: star.\nastronaut - astro means star + naut means sailor: a sailor among the stars. A person who travels into space.\nastronomy - astro means star + nomy means law or order: the laws of the stars. The science of stars and planets.\nastronomer - astro means star + nom means law + -er means a person who: a person who studies the laws of the stars.\nastronomical - astro means star + nom means law + -ical means relating to: relating to the stars. It also means huge, as huge as the distances in space.\nastrology - astro means star + -logy means talk: star talk. The belief that stars shape your life. It is not science.\nastrophysics - astro means star + physics means the science of energy and forces: the physics of the stars.\nasteroid - aster is astro's twin spelling, meaning star + -oid means like: like a star. A space rock that looked like a star in old telescopes.\nasterisk - aster means star + -isk means little: a little star. The * symbol.\nastrolabe - astro means star + labe means taker: a star-taker. An old tool sailors used to measure how high the stars were.\nMemory hook: point up at the night sky when you say astro, then swap astro for 'star' and read the rest: astronaut, star sailor. Challenge: catch an astro word in a space book or the news by Friday.",
+   "words_to_spell_new": [
+    "astronaut",
+    "astronomy",
+    "asteroid",
+    "asterisk"
+   ],
+   "extension": "1. SAY: \"Okay, when you finish, write one sentence that shows the difference between an astronaut and an astronomer.\"\n2. CHECK: the sentence must show that one travels into space and one studies the stars from Earth.\nEXTENSION: Write the full morpheme sum for astronomical, using nom (law) and -ical (relating to), then one sentence where it means about the stars and one where it means huge.\nAnswer: e.g. astronomical = astro (star) + nom (law) + -ical (relating to). The astronomical society meets on Fridays. / The ticket prices were astronomical.",
+   "new_morph_activity": {
+    "title": "Which astro word fits?",
+    "rule": "Read the sentence. Write the astro word that fits.",
+    "routine": "Boards - write it, show me",
+    "footer": "Check: does star fit the sentence?",
+    "time": "3 mins",
+    "round": [
+     {
+      "prompt": "One done for you: Armstrong was the first\n____ to walk on the Moon.",
+      "choices": [
+       "astronaut\nnaut (sailor)",
+       "asteroid\n-oid (like)",
+       "astrolabe\nlabe (taker)"
+      ],
+      "answer": "astronaut",
+      "why": "astro + naut (sailor): a star sailor",
+      "worked": true,
+      "notes": "1. SAY: \"Okay, this time you choose. Each sentence has three astro words under it, and the other part of each word has its meaning printed.\"\n2. MODEL: point at the done one. SAY: \"Armstrong travelled to the Moon. astro means star and naut means sailor, so a star sailor fits.\"\n3. SAY: \"Four sentences, one at a time. Read it, choose, and write the word. Write it... chin it... show me.\"\nEXTENSION: Write one sentence where only astronaut fits and one where only astronomer fits, each with a clue that rules the other word out.\nHELP: cover one wrong choice for the student so they choose between two, then ask them to say which part decided it.\n---\nPurpose: day one puts astro to work - students use star plus the printed part to decide which word a sentence needs. [You Do | Meaning in context | Morphology]\nANSWERS:\n1. Space rock that looked like a tiny star = asteroid\n2. Mark on a worksheet to come back to = asterisk\n3. Mapped the planets from a backyard telescope = astronomer\n4. Brass tool sailors used to measure the stars = astrolabe\nEXTENSION: e.g. The astronaut floated outside the space station. / The astronomer counted meteors from the school oval."
+     },
+     {
+      "prompt": "Through a telescope, the space rock\nlooked like a tiny star. It is an ____.",
+      "choices": [
+       "asteroid\n-oid (like)",
+       "astronaut\nnaut (sailor)",
+       "asterisk\n-isk (little)"
+      ],
+      "answer": "asteroid",
+      "why": "aster (star) + -oid (like)",
+      "notes": "ANSWER: asteroid.\n1. ASK: \"Read it in your head. Which astro word fits?\" 10 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> read the clue looked like a tiny star aloud and ask which part means like, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. Aster means star and -oid means like, so an asteroid is a rock that looks like a star.\"\nTRAP: writing asterisk because it also means star. Fix: ask, is it a rock or a mark on paper? Student rewrites asteroid.\n---\nPurpose: use astro's meaning, plus the printed meaning of the other part, to choose the word a sentence needs. [You Do | Meaning in context | Morphology]"
+     },
+     {
+      "prompt": "On your worksheet, draw an ____\nnext to a question to come back to.",
+      "choices": [
+       "astrolabe\nlabe (taker)",
+       "asterisk\n-isk (little)",
+       "asteroid\n-oid (like)"
+      ],
+      "answer": "asterisk",
+      "why": "aster (star) + -isk (little): *",
+      "notes": "ANSWER: asterisk.\n1. ASK: \"Read it in your head. Which astro word fits?\" 10 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> ask whether you draw a big thing or a little mark, then point at -isk (little), then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. Aster means star and -isk means little, so an asterisk is a little star you draw on paper.\"\nTRAP: writing asteroid. Fix: say an asteroid is a space rock, not a mark on paper. Student rewrites asterisk.\n---\nPurpose: use astro's meaning, plus the printed meaning of the other part, to choose the word a sentence needs. [You Do | Meaning in context | Morphology]"
+     },
+     {
+      "prompt": "From her backyard telescope,\nthe ____ mapped the planets.",
+      "choices": [
+       "astronaut\nnaut (sailor)",
+       "astronomer\n-er (person who)",
+       "asterisk\n-isk (little)"
+      ],
+      "answer": "astronomer",
+      "why": "she studies the stars from Earth",
+      "notes": "ANSWER: astronomer.\n1. ASK: \"Read it in your head. Which astro word fits?\" 10 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> ask whether she left Earth, then point at -er (person who), then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. She never left her backyard, so she is not a star sailor. An astronomer studies the laws of the stars from Earth.\"\nTRAP: writing astronaut because both are people. Fix: ask where she is standing - in her backyard - then the student rewrites astronomer.\n---\nPurpose: use astro's meaning, plus the printed meaning of the other part, to choose the word a sentence needs. [You Do | Meaning in context | Morphology]"
+     },
+     {
+      "prompt": "Sailors once used a brass ____\nto measure how high the stars were.",
+      "choices": [
+       "astronaut\nnaut (sailor)",
+       "astronomy\nnomy (laws)",
+       "astrolabe\nlabe (taker)"
+      ],
+      "answer": "astrolabe",
+      "why": "a star-taker for measuring stars",
+      "notes": "ANSWER: astrolabe.\n1. ASK: \"Read it in your head. Which astro word fits?\" 10 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> ask whether the blank is a person, a science or a tool, then point at labe (taker), then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. The blank is a brass tool. astro means star and labe means taker, so an astrolabe is a star-taker.\"\nTRAP: writing astronaut because the sentence says sailors. Fix: say the sailors used it, so it is a tool, not a person. Student rewrites astrolabe.\n---\nPurpose: use astro's meaning, plus the printed meaning of the other part, to choose the word a sentence needs. [You Do | Meaning in context | Morphology]"
+     }
+    ]
+   },
+   "learned_words": {
+    "review": [
+     {
+      "word": "scenario",
+      "unfair": "sc",
+      "notes": "Why learned: the c after the s is silent, like in science and scene, and the a says /ah/ from Italian.\nSay it: suh-NAH-ree-oh, four beats. Write sce - nar - i - o and check the silent c.\nLink: Imagine this scenario... opens an argument by making your reader picture the problem."
+     },
+     {
+      "word": "business",
+      "unfair": "usi",
+      "notes": "Why learned: busi is busy with its y changed to i - the u says /i/ and the i is silent.\nSay it: BIZ-nis, two beats. Write busi - ness, then check the silent i is still there.\nLink: busy plus ness, so a business is a place where people are busy at work."
+     }
+    ],
+    "new": {
+     "word": "entrepreneur",
+     "unfair": "eur",
+     "notes": "Why learned: the word came to us from French. The ending eur says /er/, and entre at the start says /on-truh/, so neither part sounds the way it looks.\nSay it: ON-truh-pruh-NER, four beats. Write en - tre - pre - neur, and check the eur at the end.\nLink: an entrepreneur is a person who starts a business - last week's learned word - so picture the person behind a new shop or app.\nYou will write this word in your persuasive writing this term, whenever you argue for a new idea, a stall or a school business."
+    }
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "The nurse checked my asthma because the pollen was so thick.",
+     "targets": [
+      "asthma",
+      "because"
+     ],
+     "cups": {
+      "capitals": [
+       "The"
+      ],
+      "punctuation": [
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "Term 3 Week 9 revision: the red word asthma and caus in because."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "Before the grand final, our coach insisted, \"Ponder each pass; teamwork is mandatory!\"",
+     "targets": [
+      "ponder",
+      "mandatory"
+     ],
+     "cups": {
+      "capitals": [
+       "Before",
+       "Ponder"
+      ],
+      "punctuation": [
+       "comma after the opening phrase (Before the grand final tells when, and the comma shows where it ends)",
+       "comma before the speech (it separates who said it from what they said)",
+       "opening quotation mark (speech starts here, so the first word takes a capital)",
+       "semicolon (it joins two complete sentences that belong together)",
+       "exclamation mark (it shows a strong, urgent instruction)",
+       "closing quotation mark (speech ends here, after its own punctuation)"
+      ]
+     },
+     "focus": "Term 3 revision: pon in ponder (Week 8) and mand in mandatory (Week 7). insisted is this week's kind of verb - it shows how the coach said it."
+    }
+   ],
+   "grammar": {
+    "header_notes": "PURPOSE: Swap vague verbs like gets, goes, makes and says for verbs that show exactly what happens, with a strength that fits the facts.\nWHY THIS WEEK: last week's nouns told the reader exactly who or what. Vague verbs still make an argument sound flat, because the reader cannot see what is happening.\nTIME: 5 minutes, no more - I do 1 min, We do 1 question, You do 3 questions at about 45 seconds each. One question per slide; your click reveals the answer.\nROUTINE: all grammar this week is written in the OG book. No boards - books, fingers and voices only.\nPREP: a verb is the doing or saying word. Three upgrades this week: exact (exactly what happens?), strength (does it fit the facts? too strong is hyperbole), saying verbs (how was it said?).",
+    "i_do": {
+     "title": "Swap the vague verb",
+     "rule": "Upgrade a vague verb to one that shows exactly what happens.",
+     "example": "Litter gets into our creek.\nLitter washes into our creek.",
+     "items": [
+      "Vague verbs: gets, goes, makes, does, has.",
+      "Ask: exactly what happens?"
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Tomorrow: a verb with the right strength",
+     "notes": "ANSWER: gets becomes washes - it shows exactly how the litter moves.\n1. SAY: \"Okay, last week we upgraded nouns. Today, verbs. A vague verb like gets hides what really happens, so your reader cannot see the problem.\"\n2. WRITE: copy \"Litter gets into our creek.\" on the class board. POINT at gets and ask aloud, exactly what happens?\n3. WRITE: cross out gets and write washes above it, so the board reads \"Litter washes into our creek.\"\n4. ASK: \"Which sentence lets you see the problem? One finger for the first, two for the second, voices off, show me.\" 5 sec. EXPECT: two fingers - washes.\nTRAP: keeping the vague verb and adding to it, like really gets. Fix: say the verb itself must change, student swaps gets for washes.\nCLARIFY: if a student asks whether gets is wrong, say it is not wrong, just vague - washes shows how the litter moves, so the reader sees it.\n---\nPurpose: day one shows the exact-verb upgrade on one argument sentence. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: vague verbs (get, go, make, do, have) fit almost any sentence, so they show nothing; an exact verb (washes, digs, melts) shows the action."
+    },
+    "we_do": {
+     "title": "Which verb shows it?",
+     "rule": "Pick the sentence that shows exactly what happens.",
+     "round": [
+      {
+       "prompt": "A) Plastic bags do harm to turtles.\nB) Plastic bags choke turtles.",
+       "answer": "B",
+       "why": "choke shows what happens; do harm is vague",
+       "routine": "Fingers: 1 for A, 2 for B",
+       "footer": "Stem: B shows more because ...",
+       "notes": "ANSWER: B - choke shows exactly what the bags do.\n1. SAY: \"Okay, two arguments about turtles. Read both in your head.\"\n2. ASK: \"Which one shows exactly what happens? One finger for A, two for B, voices off, show me on three.\" 5 sec. EXPECT: two fingers - B.\n3. REVEAL after fingers are scanned. ASK: \"How do you know?\" Cold call one student. EXPECT: choke shows what happens; do harm could mean anything.\n4. WRITE: copy A on the class board, cross out do harm to and write choke above it, so the board now matches B.\nTRAP: choosing A because it has more words. Fix: ask which one you can picture, student votes again.\nCLARIFY: if a student says harm is a verb too, say yes, but do harm could mean a scratch or worse - choke shows exactly what.\n---\nPurpose: guided judgement between a vague and an exact verb. [We Do | Guided practice | Grammar | HITS 7]\nPREP: the test is always the same question - can the reader see exactly what happens?"
+      }
+     ]
+    },
+    "you_do": {
+     "title": "Upgrade the vague verb",
+     "rule": "Write the exact verb in your OG book.",
+     "routine": "OG books - 30 sec - pens down",
+     "footer": "Check: exactly what happens?",
+     "round": [
+      {
+       "prompt": "Rubbish gets into the drains\nafter every storm.",
+       "choices": [
+        "goes",
+        "washes",
+        "comes"
+       ],
+       "answer": "washes",
+       "why": "it shows exactly how the rubbish moves",
+       "notes": "ANSWER: washes.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask which verb shows HOW the rubbish moves into the drains, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Gets is vague, and goes and comes are still vague. Washes shows exactly how the rubbish moves.\"\nTRAP: choosing goes or comes. Fix: ask, does that show HOW it moves? Student swaps to washes.\nEXTENSION: Write the whole sentence with your verb, then write a second sentence about the drains with another exact verb of your own.\nHELP: cover one wrong chip so the student chooses between two, then reads the sentence aloud with each.\n---\nPurpose: first independent exact-verb swap, easy case. [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "Sea ice is going away\nfaster every summer.",
+       "choices": [
+        "melting",
+        "leaving",
+        "changing"
+       ],
+       "answer": "melting",
+       "why": "going away is vague",
+       "notes": "ANSWER: melting.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask what really happens to ice when it gets warm, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Going away is vague. Melting shows exactly what happens to the ice when it warms.\"\nTRAP: choosing changing. Fix: ask, changing into what? Melting says it. Student swaps to melting.\n---\nPurpose: typical case from the polar bear argument in literacy. [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "Our team got the trophy\nat the athletics carnival.",
+       "choices": [
+        "won",
+        "had",
+        "saw"
+       ],
+       "answer": "won",
+       "why": "it shows the team earned it",
+       "notes": "ANSWER: won.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask how a team gets a trophy at a carnival, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Got is vague. Won shows how the team earned it, and it keeps the same time - it already happened.\"\n4. SAY: \"When you edit your next argument, circle every gets, goes and makes, and ask exactly what happens.\"\nTRAP: choosing had, which is still vague. Fix: ask, how did the team get it? Student swaps to won.\nEXTENSION: Write an argument sentence with a vague verb, upgrade it two different ways, and explain which upgrade shows more.\n---\nPurpose: edge case: the vague verb is in the past, so the exact verb is too. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\n1. Rubbish gets into the drains (goes, washes, comes) = washes\n2. Sea ice is going away = melting\n3. Our team got the trophy = won\nEXTENSION 1: e.g. Rubbish washes into the drains after every storm. Leaves clog the drains too.\nEXTENSION 3: e.g. The canteen makes too much rubbish -> wastes (shows the problem) or dumps (shows where it goes); wastes shows more."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "day": "Tuesday",
+   "type": "review",
+   "morphology_review": [
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from astro, meaning star.",
+      "answers": [
+       "astronaut",
+       "astronomy",
+       "astronomer",
+       "astrophysics"
+      ]
+     }
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root",
+     "keyword": "adjure",
+     "meaning": "right, law"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from pend or pens, meaning hang or pay.",
+      "answers": [
+       "depend",
+       "pendant",
+       "suspend",
+       "expensive"
+      ]
+     }
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "vict/vinc",
+     "type": "root",
+     "keyword": "convict",
+     "meaning": "conquer"
+    },
+    {
+     "morph": "chron",
+     "type": "root",
+     "keyword": "chronology",
+     "meaning": "time"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root",
+     "keyword": "command",
+     "meaning": "order, entrust",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from mand or mend, meaning order or entrust.",
+      "answers": [
+       "command",
+       "demand",
+       "recommend",
+       "commander"
+      ]
+     }
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "asteroid",
+     "hypermobile",
+     "accuser",
+     "omnibuses",
+     "ponder",
+     "hyperlinked",
+     "victory",
+     "causing",
+     "omniscient",
+     "hyperdrive",
+     "astronaut",
+     "suspend",
+     "inexcusable",
+     "commander",
+     "hyperthermia"
+    ],
+    "notes": "1. READ: \"Okay, if your birthday is in summer - December, January or February - read row 1.\"\n2. READ: \"Autumn birthdays - March, April or May - read row 2.\"\n3. READ: \"Winter birthdays - June, July or August - read row 3.\"\n4. READ: \"Spring birthdays - September, October or November - read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"astro and its twin aster mean star. Which two words carry them?\" 5 sec, choral response. EXPECT: asteroid, astronaut.\n7. ASK: \"hyper means over or above. Which four words carry it?\" 5 sec, choral response. EXPECT: hypermobile, hyperlinked, hyperdrive, hyperthermia.\n8. ASK: \"omni means all. Which two words carry it?\" 5 sec, turn and tell. EXPECT: omnibuses, omniscient.\n9. ASK: \"omni means all and sci means know. Which word means knowing everything?\" 3 sec, choral response. EXPECT: omniscient.\n10. ASK: \"Which word names the leader who gives the orders?\" 3 sec, choral response. EXPECT: commander.\n11. ASK: \"What is the opposite of victory?\" 3 sec, choral response. EXPECT: defeat. ACCEPT: loss.\n12. ASK: \"Which word rhymes with fonder?\" 3 sec, choral response. EXPECT: ponder."
+   },
+   "words_to_spell_review": [
+    {
+     "word": "hyperactive",
+     "sentence": "After two cupcakes at the party, my little cousin was hyperactive all afternoon.",
+     "prompt": "Which part tells you his activity went over the top?",
+     "answer": "The hyper part, meaning over. He was active over and above the usual amount."
+    },
+    {
+     "word": "hypertension",
+     "sentence": "Grandpa takes a tablet every morning for his hypertension.",
+     "prompt": "tension means pressure. Which part tells you the pressure is too high?",
+     "answer": "The hyper part, meaning over. His blood pressure is over the healthy level."
+    },
+    {
+     "word": "omnipresent",
+     "sentence": "After a windy lunchtime, litter seems omnipresent - it is under every bench.",
+     "prompt": "present means here. So where is something omnipresent?",
+     "answer": "Everywhere at once. omni means all, so it is present in all places."
+    },
+    {
+     "word": "omnivorous",
+     "sentence": "Possums are omnivorous, so they eat our fruit and our compost scraps.",
+     "prompt": "vore means eat, the same as in carnivore. Which part tells you they eat all kinds of food?",
+     "answer": "The omni part, meaning all. Omnivorous animals eat plants and meat."
+    },
+    {
+     "word": "because",
+     "sentence": "We stayed inside at lunch because the wind was bending the trees.",
+     "prompt": "Which part of because carries the meaning cause?",
+     "answer": "The cause part after be. Because always comes right before the cause of something."
+    },
+    {
+     "word": "accusation",
+     "sentence": "The umpire's accusation of a foul made the whole crowd groan.",
+     "prompt": "cus means cause. Who is an accusation pointing at?",
+     "answer": "A person. An accusation says that person caused the problem."
+    },
+    {
+     "word": "expensive",
+     "sentence": "The new sound system for the hall was too expensive for one fundraiser.",
+     "prompt": "pens means pay. Which taught ending tells you what the system is like?",
+     "answer": "The -ive ending, the same one in active. Expensive means it makes you pay out a lot."
+    },
+    {
+     "word": "injustice",
+     "sentence": "Losing recess for something you did not do feels like a real injustice.",
+     "prompt": "in means not. Which taught ending turns just into a thing you can name?",
+     "answer": "The -ice ending, the same one in justice. Injustice is the state of things not being right."
+    },
+    {
+     "word": "astronomy",
+     "sentence": "Our astronomy club meets at night to look at Saturn through a telescope.",
+     "prompt": "Okay, which part of astronomy tells you the club studies the night sky?",
+     "answer": "The astro part, meaning star. Astronomy is the science of stars and planets."
+    },
+    {
+     "word": "astrology",
+     "sentence": "Some magazines have an astrology page that matches your birthday to the stars.",
+     "prompt": "astro means star. So what is the difference between astrology and astronomy?",
+     "answer": "Both are about stars, but astronomy measures them as science; astrology is a belief about your future."
+    }
+   ],
+   "sound_bank": [
+    {
+     "morph": "hyper",
+     "type": "root"
+    },
+    {
+     "morph": "vore",
+     "type": "root"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix"
+    },
+    {
+     "morph": "-ive",
+     "type": "suffix"
+    },
+    {
+     "morph": "-ice",
+     "type": "suffix"
+    }
+   ],
+   "new_morphology": {
+    "morph": "astro",
+    "type": "root",
+    "keyword": "astronaut",
+    "meaning": "star"
+   },
+   "words_to_read_new": [
+    {
+     "word": "astronauts",
+     "meaning": "astro means star + naut means sailor + -s: sailors among the stars"
+    },
+    {
+     "word": "astronomers",
+     "meaning": "astro means star + nom means law + -er means a person who + -s: people who study the laws of the stars"
+    },
+    {
+     "word": "astrologer",
+     "meaning": "astro means star + log means talk + -er means a person who: a person who does star talk"
+    },
+    {
+     "word": "astronomical",
+     "meaning": "astro means star + nom means law + -ical means relating to: relating to the stars"
+    },
+    {
+     "word": "astrophysics",
+     "meaning": "astro means star + physics: the physics of the stars"
+    },
+    {
+     "word": "asteroids",
+     "meaning": "aster means star + -oid means like + -s: rocks like stars"
+    },
+    {
+     "word": "astrolabe",
+     "meaning": "astro means star + labe means taker: a star-taker"
+    },
+    {
+     "word": "astral",
+     "meaning": "astr means star + -al means relating to: relating to the stars"
+    },
+    {
+     "word": "astronautics",
+     "meaning": "astro means star + naut means sailor + -ics means the science of: the science of sailing among the stars"
+    }
+   ],
+   "associated_word_exceptions": [
+    {
+     "word": "astronauts, astronomers, asteroids",
+     "reason": "small family (OG_MEGA_PROMPT 3b): plural forms of Monday words keep the review grid at 9 inside the 12-letter cap",
+     "source": "regular plurals"
+    },
+    {
+     "word": "astrologer",
+     "reason": "ground 1: the person beside the printed astrology",
+     "source": "Oxford: a person who uses astrology to tell people about their character or future"
+    },
+    {
+     "word": "astral",
+     "reason": "ground 1: astr + -al (relating to) shows the root without its o",
+     "source": "Oxford: relating to or resembling the stars"
+    },
+    {
+     "word": "astronautics",
+     "reason": "ground 1: astronaut + -ics (the science of), 12 letters",
+     "source": "Oxford: the science and technology of space travel"
+    }
+   ],
+   "wtr_new_notes": "READ each word as it appears, then connect astro to the card meaning: star.\nastronauts - astro means star + naut means sailor + -s means more than one: sailors among the stars. The whole crew.\nastronomers - astro means star + nom means law + -er means a person who + -s: people who study the laws of the stars.\nastrologer - astro means star + log means talk + -er means a person who: a person who does star talk. Not a scientist.\nastronomical - astro means star + nom means law + -ical means relating to: relating to the stars. An astronomical price is as huge as space.\nastrophysics - astro means star + physics means the science of energy and forces: the physics of the stars.\nasteroids - aster means star + -oid means like + -s: rocks like stars. Most circle the Sun between Mars and Jupiter.\nastrolabe - astro means star + labe means taker: a star-taker. Sailors held it up to measure how high a star was.\nastral - astr is astro without its o, meaning star + -al means relating to: relating to the stars. Astral light is starlight.\nastronautics - astro means star + naut means sailor + -ics means the science of: the science of sailing among the stars. Space travel.\nMemory hook: point up at the night sky when you say astro, then swap astro for 'star' and read the rest: astronaut, star sailor. Challenge: catch an astro word in a space book or the news by Friday.",
+   "words_to_spell_new": [
+    "astronomical",
+    "astronauts",
+    "asteroids",
+    "astrologer"
+   ],
+   "extension": "1. SAY: \"Okay, when you finish, turn two of the spelling words into questions you could ask a real astronaut.\"\n2. CHECK: each question must use the word with its real meaning and end with a question mark.\nEXTENSION: Write three sentences arguing that our school needs an astronomy club, using astronomical, astronauts and asteroids correctly.\nAnswer: e.g. Our school needs an astronomy club. We could track asteroids from the oval at night. Who knows - one of us might become an astronaut, and the cost would not be astronomical.",
+   "new_morph_activity": {
+    "title": "Yes or no? Prove it with astro",
+    "rule": "Write YES or NO. Parts: naut (sailor), -isk (little), nomy (laws)",
+    "routine": "Boards - write it, show me",
+    "footer": "Check: does star fit?",
+    "time": "3 mins",
+    "round": [
+     {
+      "prompt": "One done for you: An astronaut works\ndeep under the sea.",
+      "answer": "NO",
+      "why": "astro means star: astronauts work in space",
+      "worked": true,
+      "notes": "1. SAY: \"Okay, today you are the judge. Each sentence uses an astro word. If the word is used with its real meaning, write YES. If not, write NO.\"\n2. MODEL: point at the done one. SAY: \"astro means star, so an astronaut sails among the stars, not under the sea. That makes it a NO.\"\n3. SAY: \"Four sentences, one at a time. Be ready to say how you know. Write it... chin it... show me.\"\nEXTENSION: Write one YES sentence and one NO sentence of your own using astrophysics or astrolabe, then swap with a partner to judge and fix.\nHELP: give the student the meaning of the astro word on a sticky note, so they judge the sentence instead of recalling the word.\n---\nPurpose: review day turns astro into a reasoning tool - students judge whether each word is used with its real meaning. [You Do | Yes or no, prove it | Morphology]\nANSWERS:\n1. Astronomy is the study of rocks and soil = NO, it studies stars and planets\n2. An astronaut can see the Moon up close = YES\n3. An asterisk is a giant star in deep space = NO, it is a little star mark, *\n4. A star chart would help an astronomer = YES\nEXTENSION: e.g. YES: Astrophysics explains how stars burn. NO: My astrolabe keeps my lunch cold (fix: my lunchbox)."
+     },
+     {
+      "prompt": "Astronomy is the study of\nrocks and soil.",
+      "answer": "NO",
+      "why": "astronomy studies stars, not rocks",
+      "notes": "ANSWER: NO - astronomy studies the stars.\n1. ASK: \"Is astronomy used with its real meaning - yes or no?\" 10 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> ask what astro means, then ask whether rocks and soil are stars, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. astro means star, so astronomy studies stars and planets. Rocks and soil belong to geology.\"\nTRAP: writing YES because it sounds like science. Fix: ask, where is the star in rocks and soil? Student rewrites NO.\n---\nPurpose: judge each statement against astro's meaning, then prove it. [You Do | Yes or no, prove it | Morphology]"
+     },
+     {
+      "prompt": "An astronaut can see\nthe Moon up close.",
+      "answer": "YES",
+      "why": "a star sailor travels to space",
+      "notes": "ANSWER: YES - an astronaut travels into space.\n1. ASK: \"Is astronaut used with its real meaning - yes or no?\" 10 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> point at naut (sailor) in the banner and ask where a star sailor sails, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. astro means star and naut means sailor, so an astronaut sails among the stars and can see the Moon up close.\"\nTRAP: writing NO because the first answer was NO. Fix: say each sentence is judged on its own, student rereads and decides.\n---\nPurpose: judge each statement against astro's meaning, then prove it. [You Do | Yes or no, prove it | Morphology]"
+     },
+     {
+      "prompt": "An asterisk is a giant star\nin deep space.",
+      "answer": "NO",
+      "why": "an asterisk is a little star, *",
+      "notes": "ANSWER: NO - an asterisk is a little star mark.\n1. ASK: \"Is asterisk used with its real meaning - yes or no?\" 10 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> point at -isk (little) in the banner and ask, giant or little?, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. aster means star but -isk means little, so an asterisk is a little star, the mark you draw on paper.\"\nTRAP: writing YES because asterisk has star in it. Fix: point at -isk (little), student rewrites NO.\n---\nPurpose: judge each statement against astro's meaning, then prove it. [You Do | Yes or no, prove it | Morphology]"
+     },
+     {
+      "prompt": "A star chart would help\nan astronomer.",
+      "answer": "YES",
+      "why": "astronomers study the laws of the stars",
+      "notes": "ANSWER: YES - astronomers study the stars.\n1. ASK: \"Is astronomer used with its real meaning - yes or no?\" 10 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> ask what an astronomer studies, then ask what a star chart shows, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. An astronomer studies the laws of the stars, so a chart of the stars is exactly what they need.\"\nTRAP: writing NO by mixing astronomer up with astronaut. Fix: say astronomers study the stars from Earth, student rereads and decides.\n---\nPurpose: judge each statement against astro's meaning, then prove it. [You Do | Yes or no, prove it | Morphology]"
+     }
+    ]
+   },
+   "learned_words": {
+    "review": [
+     {
+      "word": "entrepreneur",
+      "unfair": "eur",
+      "notes": "Why learned: the ending eur says /er/ and entre says /on-truh/, because the word came from French.\nSay it: ON-truh-pruh-NER, four beats. Write en - tre - pre - neur, then check the eur at the end.\nLink: an entrepreneur is the person who starts a business."
+     },
+     {
+      "word": "scenario",
+      "unfair": "sc",
+      "notes": "Why learned: the c after the s is silent, like in science and scene, and the a says /ah/ from Italian.\nSay it: suh-NAH-ree-oh, four beats. Write sce - nar - i - o and check the silent c.\nLink: Imagine this scenario... opens an argument by making your reader picture the problem."
+     }
+    ]
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "A gecko's camouflage hid it from the carnivorous kookaburra.",
+     "targets": [
+      "camouflage",
+      "carnivorous"
+     ],
+     "cups": {
+      "capitals": [
+       "A"
+      ],
+      "punctuation": [
+       "apostrophe in gecko's (it shows the camouflage belongs to the gecko)",
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "Term 3 revision: the red word camouflage (Week 4) and carn in carnivorous (Week 5)."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "When the circuit failed, Mr Reid admitted, \"I joined the wrong wires, so the expense is mine.\"",
+     "targets": [
+      "circuit",
+      "expense"
+     ],
+     "cups": {
+      "capitals": [
+       "When",
+       "Mr",
+       "Reid",
+       "I"
+      ],
+      "punctuation": [
+       "comma after the opening clause (the When part cannot stand alone, and the comma shows where it ends)",
+       "comma before the speech (it separates who said it from what they said)",
+       "opening quotation mark (speech starts here, so the first word takes a capital)",
+       "comma before so (it joins two complete sentences)",
+       "full stop inside the speech (it ends what Mr Reid said)",
+       "closing quotation mark (speech ends here, after its own punctuation)"
+      ]
+     },
+     "focus": "Term 3 revision: the red word circuit (Week 3) and pens in expense (Week 8). admitted is a saying verb - it tells us how he said it."
+    }
+   ],
+   "grammar": {
+    "header_notes": "PURPOSE: Swap vague verbs like gets, goes, makes and says for verbs that show exactly what happens, with a strength that fits the facts.\nWHY THIS WEEK: last week's nouns told the reader exactly who or what. Vague verbs still make an argument sound flat, because the reader cannot see what is happening.\nTIME: 5 minutes, no more - I do 1 min, We do 1 question, You do 3 questions at about 45 seconds each. One question per slide; your click reveals the answer.\nROUTINE: all grammar this week is written in the OG book. No boards - books, fingers and voices only.\nPREP: a verb is the doing or saying word. Three upgrades this week: exact (exactly what happens?), strength (does it fit the facts? too strong is hyperbole), saying verbs (how was it said?).",
+    "i_do": {
+     "title": "Pick the right strength",
+     "rule": "Choose a verb strong enough to persuade, but true to the facts.",
+     "example": "Fact: lunch is now 10 minutes shorter.\nThe rule destroys our lunch. (too strong)\nThe rule cuts our lunch. (fits the facts)",
+     "items": [
+      "Too weak: changes. Too strong: destroys.",
+      "Ask: does it fit the facts?"
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Tomorrow: verbs that show how it was said",
+     "notes": "ANSWER: cuts fits - destroys is too strong for ten minutes, which makes it hyperbole.\n1. SAY: \"Okay, yesterday we made verbs exact. Today, strength. Too weak and nobody cares; too strong and your reader stops believing you.\"\n2. WRITE: copy the fact and \"The rule destroys our lunch.\" on the class board. POINT at destroys and ask aloud, did lunch disappear?\n3. WRITE: cross out destroys and write cuts above it, so the board reads \"The rule cuts our lunch.\" Tick it beside the fact.\n4. ASK: \"Hyper means over. Is destroys over the top here? Thumbs up or down, voices off, on three.\" 5 sec. EXPECT: thumbs up - it is hyperbole.\nTRAP: thinking the strongest verb always wins. Fix: point at the fact, ask what really happened, student picks the verb that matches.\nCLARIFY: if a student asks when destroys would be right, say only if lunch was cancelled completely - then the facts would back it up.\n---\nPurpose: strength is judged against the facts, the same test as last week's nouns. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: a verb's strength must match the evidence; too weak (changes) persuades nobody, too strong (destroys) is hyperbole and loses trust."
+    },
+    "we_do": {
+     "title": "Which strength fits?",
+     "rule": "Pick the sentence whose verb fits the facts.",
+     "round": [
+      {
+       "prompt": "Fact: possums tipped over three bins.\nA) Possums wrecked our bins.\nB) Possums knocked over our bins.",
+       "answer": "B",
+       "why": "knocked over fits; wrecked is too strong",
+       "routine": "Fingers: 1 for A, 2 for B",
+       "footer": "Stem: B fits because ...",
+       "notes": "ANSWER: B - knocked over fits the facts.\n1. SAY: \"Okay, read the fact first, then both sentences, in your head.\"\n2. ASK: \"Which verb fits the facts? One finger for A, two for B, voices off, show me on three.\" 5 sec. EXPECT: two fingers - B.\n3. REVEAL after fingers are scanned. ASK: \"How do you know?\" Cold call one student. EXPECT: they only tipped the bins over, so wrecked is too strong - hyperbole.\n4. WRITE: copy A on the class board, cross out wrecked and write knocked over above it, so it matches the fact.\nTRAP: choosing A because it sounds more exciting. Fix: point at the fact, ask whether tipped over means wrecked, student votes again.\nCLARIFY: if a student says knocked over is two words, say yes - some verbs come with a little word, and they still count as the verb.\n---\nPurpose: guided strength judgement against a stated fact. [We Do | Guided practice | Grammar | HITS 7]\nPREP: always read the fact first; the verb that matches it wins, however dull it sounds."
+      }
+     ]
+    },
+    "you_do": {
+     "title": "Pick the verb that fits",
+     "rule": "Write the verb that is strong enough and fits the facts.",
+     "routine": "OG books - 30 sec - pens down",
+     "footer": "Check: does it fit the fact?",
+     "round": [
+      {
+       "prompt": "Fact: pies went from $4 to $4.50.\nThe canteen ____ the price of pies.",
+       "choices": [
+        "changed",
+        "increased",
+        "doubled"
+       ],
+       "answer": "increased",
+       "why": "the price went up; doubled would be $8",
+       "notes": "ANSWER: increased.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask what $4 doubled would be, then what changed hides, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Changed is too weak - it does not say which way. Doubled would be eight dollars. Increased fits the fact.\"\nTRAP: choosing doubled because it sounds strong. Fix: ask, is $4.50 double $4? Student swaps to increased.\nEXTENSION: Write the whole sentence, then write a fact that would make doubled the right verb.\nHELP: cover doubled so the student chooses between two, then reads the fact aloud before choosing.\n---\nPurpose: first independent strength judgement, easy numbers. [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "Fact: sea ice is 12% smaller each decade.\nWarmer seas ____ the bears' hunting ground.",
+       "choices": [
+        "affect",
+        "shrink",
+        "destroy"
+       ],
+       "answer": "shrink",
+       "why": "12% smaller is shrinking, not gone",
+       "notes": "ANSWER: shrink.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask whether 12% smaller means changed a bit, gone, or getting smaller, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Affect is too weak and destroy means gone. Twelve per cent smaller each decade means shrinking.\"\nTRAP: choosing destroy because the topic feels serious. Fix: ask, is the ice all gone? Student swaps to shrink.\n---\nPurpose: typical case from the polar bear argument; strength matched to a real figure. [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "Fact: storms leave our oval under water.\nBig storms ____ our oval every winter.",
+       "choices": [
+        "flood",
+        "change",
+        "ruin"
+       ],
+       "answer": "flood",
+       "why": "under water is flooded, not ruined",
+       "notes": "ANSWER: flood.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask which verb means covered in water, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Change is too weak and ruin goes further than the fact. Under water means the storms flood the oval.\"\n4. SAY: \"When you edit your argument, check each strong verb against your facts. If the facts cannot back it up, pick a verb that fits.\"\nTRAP: choosing ruin. Fix: ask, does the fact say the oval is ruined forever? Student swaps to flood.\nEXTENSION: Write an argument sentence about a school problem, then write it three times with a weak, a fitting and a hyperbole verb, labelled.\n---\nPurpose: edge case: the plural subject keeps the verb as flood, not floods. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\n1. Pies went from $4 to $4.50 = increased\n2. Sea ice 12% smaller each decade = shrink\n3. Storms leave the oval under water = flood\nEXTENSION 1: e.g. The canteen increased the price of pies. Doubled fits if pies went from $4 to $8.\nEXTENSION 3: e.g. Weak: the late bell changed our lunch. Fits: shortened our lunch. Hyperbole: destroyed our lunch."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "day": "Wednesday",
+   "type": "new",
+   "morphology_review": [
+    {
+     "morph": "mand/mend",
+     "type": "root",
+     "keyword": "command",
+     "meaning": "order, entrust"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from omni, meaning all.",
+      "answers": [
+       "omnivore",
+       "omnibus",
+       "omnipresent",
+       "omnipotent"
+      ]
+     }
+    },
+    {
+     "morph": "chron",
+     "type": "root",
+     "keyword": "chronology",
+     "meaning": "time",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from chron, meaning time.",
+      "answers": [
+       "chronic",
+       "chronicle",
+       "chronology",
+       "synchronise"
+      ]
+     }
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from caus or cus, meaning cause.",
+      "answers": [
+       "because",
+       "excuse",
+       "accuse",
+       "causing"
+      ]
+     }
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "vict/vinc",
+     "type": "root",
+     "keyword": "convict",
+     "meaning": "conquer"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root",
+     "keyword": "adjure",
+     "meaning": "right, law"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "causative",
+     "hypermarket",
+     "asterisk",
+     "omnipresence",
+     "postpone",
+     "excused",
+     "hypersonic",
+     "chronicle",
+     "omnivorous",
+     "accused",
+     "astronomical",
+     "hyperfocus",
+     "judgement",
+     "omnipotent",
+     "dependence"
+    ],
+    "notes": "1. READ: \"Okay, pick your favourite season in your head. If it is summer, read row 1.\"\n2. READ: \"Autumn lovers, read row 2.\"\n3. READ: \"Winter lovers, read row 3.\"\n4. READ: \"Spring lovers, read row 4. If you cannot choose, pick any row from 1 to 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"hyper means over or above. Which three words carry it?\" 5 sec, choral response. EXPECT: hypermarket, hypersonic, hyperfocus.\n7. ASK: \"omni means all. Which three words carry it?\" 5 sec, choral response. EXPECT: omnipresence, omnivorous, omnipotent.\n8. ASK: \"astro and its twin aster mean star. Which two words carry them?\" 5 sec, turn and tell. EXPECT: asterisk, astronomical.\n9. ASK: \"Which word names the little star mark you draw beside a note?\" 3 sec, choral response. EXPECT: asterisk.\n10. ASK: \"post means after. Which word means to move something to a later time?\" 3 sec, choral response. EXPECT: postpone.\n11. ASK: \"Which word describes a jet that flies more than five times faster than sound?\" 3 sec, choral response. EXPECT: hypersonic.\n12. ASK: \"What is the opposite of dependence?\" 3 sec, choral response. EXPECT: independence."
+   },
+   "words_to_spell_review": [
+    {
+     "word": "hyperspace",
+     "sentence": "In the movie, the rocket jumped into hyperspace and vanished from the screen.",
+     "prompt": "Which part tells you this space is beyond ordinary space?",
+     "answer": "The hyper part, meaning above. Hyperspace is a made-up space above and beyond ours."
+    },
+    {
+     "word": "hyperdrive",
+     "sentence": "My brother's spaceship game has a hyperdrive button for super fast travel.",
+     "prompt": "Okay, what does the hyper part add to drive?",
+     "answer": "Over. A hyperdrive goes over the normal top speed, so the ship can cross space in seconds."
+    },
+    {
+     "word": "omnivores",
+     "sentence": "Bears and humans are both omnivores that eat berries and meat.",
+     "prompt": "vore means eat. Which part tells you they eat all kinds of food?",
+     "answer": "The omni part, meaning all. The s on the end tells you there is more than one."
+    },
+    {
+     "word": "omnibuses",
+     "sentence": "Long ago, horse-drawn omnibuses carried people through the city streets.",
+     "prompt": "omni means all. Who was allowed to ride an omnibus?",
+     "answer": "Anyone at all. It was a carriage for all, and we shortened the word to bus."
+    },
+    {
+     "word": "causing",
+     "sentence": "The leaking tap is causing a puddle near the art room sink.",
+     "prompt": "caus means cause. What does the -ing ending tell you about the puddle?",
+     "answer": "That it is still happening. The tap is making the puddle right now."
+    },
+    {
+     "word": "proponent",
+     "sentence": "Our class captain is the loudest proponent of a longer lunch break.",
+     "prompt": "pon means place. Where does a proponent place themselves in an argument?",
+     "answer": "Out in front, for the idea. The pro part means for, so a proponent puts themselves forward for it."
+    },
+    {
+     "word": "suspend",
+     "sentence": "We will suspend our paper planes from the classroom ceiling with string.",
+     "prompt": "pend means hang. Where do the planes end up?",
+     "answer": "Hanging down from the ceiling. The sus part means under, so they hang under it."
+    },
+    {
+     "word": "commander",
+     "sentence": "The fire commander told everyone to line up on the oval.",
+     "prompt": "mand means order. What is a commander's job?",
+     "answer": "To give the orders. The -er ending names the person who does the ordering."
+    },
+    {
+     "word": "astronaut",
+     "sentence": "The astronaut waved from the space station window during the live video.",
+     "prompt": "astro means star. Which part tells you an astronaut is a kind of sailor?",
+     "answer": "The naut part, meaning sailor, as in nautical. An astronaut is a sailor among the stars."
+    },
+    {
+     "word": "asteroid",
+     "sentence": "A small asteroid flew safely past Earth last night, the news said.",
+     "prompt": "aster means star and -oid means like. So why is a space rock called an asteroid?",
+     "answer": "In early telescopes it looked like a tiny star. Up close, it is just a rock."
+    }
+   ],
+   "sound_bank": [
+    {
+     "morph": "hyper",
+     "type": "root"
+    },
+    {
+     "morph": "astro",
+     "type": "root"
+    },
+    {
+     "morph": "vore",
+     "type": "root"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root"
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix"
+    }
+   ],
+   "new_morphology": {
+    "morph": "terr",
+    "type": "root",
+    "keyword": "territory",
+    "meaning": "land"
+   },
+   "words_to_read_new": [
+    {
+     "word": "terrain",
+     "meaning": "terr means land + -ain makes it a thing: the land itself, its shape"
+    },
+    {
+     "word": "terrace",
+     "meaning": "terr means land + -ace makes it a place: a flat step of land"
+    },
+    {
+     "word": "territory",
+     "meaning": "terr means land + -ory means a place for: a place of land that belongs to someone"
+    },
+    {
+     "word": "terrestrial",
+     "meaning": "terr means land + -estr means belonging to + -ial means relating to: relating to things that belong on land"
+    },
+    {
+     "word": "terrarium",
+     "meaning": "terr means land + -arium means a place for: a place for land"
+    },
+    {
+     "word": "terracotta",
+     "meaning": "terr means land + cotta means cooked: cooked land"
+    },
+    {
+     "word": "terrier",
+     "meaning": "terr means land + -ier means one that: one that goes into the land"
+    },
+    {
+     "word": "subterranean",
+     "meaning": "sub means under + terr means land + -anean means relating to: relating to under the land"
+    },
+    {
+     "word": "terraform",
+     "meaning": "terr means land + form means shape: to shape land"
+    }
+   ],
+   "associated_word_exceptions": [
+    {
+     "word": "terrarium",
+     "reason": "ground 3: terr + -arium, the land twin of aquarium, a picturable classroom object",
+     "source": "Oxford: a glass container for growing plants or keeping small land animals; Latin terra + -arium"
+    },
+    {
+     "word": "terracotta",
+     "reason": "ground 3: Italian terra cotta, baked earth - the root is visibly doing its job in the orange clay of pots",
+     "source": "Oxford: unglazed brownish-red earthenware; Italian, literally baked earth"
+    },
+    {
+     "word": "terrier",
+     "reason": "ground 3: an earth dog bred to dig into burrows; a word students already own",
+     "source": "Oxford: from Old French chien terrier, earth dog (Latin terra)"
+    },
+    {
+     "word": "terraform",
+     "reason": "ground 3: terr + form (shape), transparent and used in space science",
+     "source": "Oxford: transform a planet so it resembles the earth"
+    }
+   ],
+   "wtr_new_notes": "SAY: \"Okay, learn terr once and you can read the land words in geography and science, from terrain to terrestrial.\"\nREAD each word as it appears, then connect terr to the card meaning: land.\nterrain - terr means land + -ain makes it a thing: the land itself and its shape. Hills, rocks and mud are the terrain you run across.\nterrace - terr means land + -ace makes it a place: a flat step of land cut into a hill. Farmers grow rice on terraces.\nterritory - terr means land + -ory means a place for: a place of land that belongs to someone. The Northern Territory is the big one.\nterrestrial - terr means land + -estr means belonging to + -ial means relating to: relating to things that belong on land. Kangaroos are terrestrial; dolphins are not.\nterrarium - terr means land + -arium means a place for: a place for land. A glass tank of soil and plants, the land version of an aquarium.\nterracotta - terr means land + cotta means cooked: cooked land, baked earth. The orange clay of flower pots.\nterrier - terr means land + -ier means one that: one that goes into the land. A small dog bred to dig into burrows after rabbits.\nsubterranean - sub means under + terr means land + -anean means relating to: relating to under the land. Underground, like a wombat burrow.\nterraform - terr means land + form means shape: to shape land - to change another planet until it is like Earth. Science fiction, for now.\nMemory hook: stamp your foot when you say terr - the land under your feet. No land in the meaning? It is a look-alike, like terrible. Challenge: bring one more terr word by Friday.",
+   "words_to_spell_new": [
+    "terrain",
+    "territory",
+    "terrace",
+    "terrarium"
+   ],
+   "extension": "1. SAY: \"Okay, when you finish, write what terrarium means in your own words, using the word land.\"\n2. CHECK: the meaning must say it is a place for land - soil and plants in a glass tank - not just a box.\nEXTENSION: Predict the meaning of an unseen word from its parts: extraterrestrial = extra (beyond) + terr + -estr (belonging to) + -ial (relating to). Write its meaning, then check it with a partner.\nAnswer: extraterrestrial = extra (beyond) + terr (land) + -estr (belonging to) + -ial (relating to): from beyond our land, from outside Earth - an alien.",
+   "new_morph_activity": {
+    "title": "Match the terr word",
+    "rule": "Bank: terrain, terrace, terrarium, terrier, territory, terracotta",
+    "routine": "OG workbooks - write it",
+    "footer": "One bank word is left over",
+    "time": "3 mins",
+    "round": [
+     {
+      "prompt": "One done for you: the shape of the land -\nhills, rocks and mud",
+      "answer": "terrain",
+      "why": "terr (land): the land and its shape",
+      "worked": true,
+      "notes": "1. SAY: \"Okay, this is the matching task from the Yoshimoto worksheet. Each slide gives a meaning. Find the terr word in the bank that matches it.\"\n2. MODEL: point at the done one. SAY: \"Hills, rocks and mud are the shape of the land, and terr means land. Terrain is the land itself, so terrain matches.\"\n3. SAY: \"Four meanings, one at a time. Write the word in your OG workbook, and spell it from the bank.\"\nEXTENSION: Write a meaning for the leftover word, terracotta, in your own words, then predict what subterranean means if sub means under.\nHELP: give the student two words to choose from instead of the whole bank, then ask which word has land doing the job.\n---\nPurpose: day one turns the Yoshimoto match-the-meaning worksheet into one meaning per slide. [You Do | Match the meaning | Morphology]\nANSWERS:\n1. A glass tank of soil and plants where a pet lizard lives = terrarium\n2. A small dog bred to dig into the land after rabbits = terrier\n3. A flat step of land cut into the side of a hill = terrace\n4. Land that belongs to a group, like the Northern ____ = territory\nEXTENSION: terracotta = baked earth, the orange clay of pots. subterranean = under the land, underground."
+     },
+     {
+      "prompt": "a glass tank of soil and plants\nwhere a pet lizard lives",
+      "answer": "terrarium",
+      "why": "terr (land) + -arium (a place for)",
+      "notes": "ANSWER: terrarium.\n1. ASK: \"Which terr word matches this meaning?\" 10 sec. SAY: \"Write it in your OG workbook. Pens down when you are done.\"\n2. SCAN workbooks along the nearest rows. 80%+ -> click to reveal. Less -> ask what an aquarium is a place for, then ask which bank word is a place for land, then re-ask.\n3. REVEAL after workbooks are scanned. SAY: \"Tick it or fix it. terr means land and -arium means a place for, so a terrarium is a place for land, like an aquarium is for water.\"\nTRAP: writing territory because it is also a place. Fix: ask, can a territory fit on a desk? Student rewrites terrarium.\n---\nPurpose: match a meaning to its terr word, the Yoshimoto worksheet task, one meaning at a time. [You Do | Match the meaning | Morphology]"
+     },
+     {
+      "prompt": "a small dog bred to dig\ninto the land after rabbits",
+      "answer": "terrier",
+      "why": "it digs into the land: -ier (one that)",
+      "notes": "ANSWER: terrier.\n1. ASK: \"Which terr word matches this meaning?\" 10 sec. SAY: \"Write it in your OG workbook. Pens down when you are done.\"\n2. SCAN workbooks along the nearest rows. 80%+ -> click to reveal. Less -> ask which bank word could be a dog, then stamp your foot and say terr - the land it digs into, then re-ask.\n3. REVEAL after workbooks are scanned. SAY: \"Tick it or fix it. A terrier is one that goes into the land - it digs into burrows. Jack Russells are terriers.\"\nTRAP: writing terrain because both are about land. Fix: ask, is terrain an animal? Student rewrites terrier.\n---\nPurpose: match a meaning to its terr word, the Yoshimoto worksheet task, one meaning at a time. [You Do | Match the meaning | Morphology]"
+     },
+     {
+      "prompt": "a flat step of land cut\ninto the side of a hill",
+      "answer": "terrace",
+      "why": "a flat step of land on a hill",
+      "notes": "ANSWER: terrace.\n1. ASK: \"Which terr word matches this meaning?\" 10 sec. SAY: \"Write it in your OG workbook. Pens down when you are done.\"\n2. SCAN workbooks along the nearest rows. 80%+ -> click to reveal. Less -> draw three steps going up a hill on the class board and ask which bank word names one step, then re-ask.\n3. REVEAL after workbooks are scanned. SAY: \"Tick it or fix it. terr means land, and a terrace is a flat step of land. Farmers cut terraces into hills to grow rice.\"\nTRAP: writing terrain because it is about hills. Fix: say terrain is the whole shape; one flat step is a terrace. Student rewrites terrace.\n---\nPurpose: match a meaning to its terr word, the Yoshimoto worksheet task, one meaning at a time. [You Do | Match the meaning | Morphology]"
+     },
+     {
+      "prompt": "land that belongs to a group,\nlike the Northern ____",
+      "answer": "territory",
+      "why": "land someone owns: -ory (a place for)",
+      "notes": "ANSWER: territory.\n1. ASK: \"Which terr word matches this meaning?\" 10 sec. SAY: \"Write it in your OG workbook. Pens down when you are done.\"\n2. SCAN workbooks along the nearest rows. 80%+ -> click to reveal. Less -> say the Northern Territory aloud and point to it on a map of Australia, then re-ask.\n3. REVEAL after workbooks are scanned. SAY: \"Tick it or fix it. terr means land and -ory means a place for, so a territory is a place of land that belongs to a group, like the Northern Territory.\"\nTRAP: writing terracotta, the only word left besides territory. Fix: ask, is terracotta land that belongs to someone? Student rewrites territory.\n---\nPurpose: match a meaning to its terr word, the Yoshimoto worksheet task, one meaning at a time. [You Do | Match the meaning | Morphology]"
+     }
+    ]
+   },
+   "learned_words": {
+    "review": [
+     {
+      "word": "entrepreneur",
+      "unfair": "eur",
+      "notes": "Why learned: the ending eur says /er/ and entre says /on-truh/, because the word came from French.\nSay it: ON-truh-pruh-NER, four beats. Write en - tre - pre - neur, then check the eur at the end.\nLink: an entrepreneur is the person who starts a business."
+     },
+     {
+      "word": "scenario",
+      "unfair": "sc",
+      "notes": "Why learned: the c after the s is silent, like in science and scene, and the a says /ah/ from Italian.\nSay it: suh-NAH-ree-oh, four beats. Write sce - nar - i - o and check the silent c.\nLink: Imagine this scenario... opens an argument by making your reader picture the problem."
+     }
+    ],
+    "new": {
+     "word": "receipt",
+     "unfair": "p",
+     "notes": "Why learned: the p is silent. The ei is fair - it follows i before e except after c - so the p is the only part to learn.\nSay it: ruh-SEET, two beats. Write re - ceipt, and say the p in your head as you write it.\nLink: receipt belongs with receive and reception. You can hear the p in reception, so think reception to remember the silent p in receipt.\nYou will write this word in maths when we solve money problems, and in any argument about shopping or a school stall."
+    }
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "The egg yolk dripped onto my pendant during the cooking class.",
+     "targets": [
+      "yolk",
+      "pendant"
+     ],
+     "cups": {
+      "capitals": [
+       "The"
+      ],
+      "punctuation": [
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "Term 3 Week 8 revision: the red word yolk and pend in pendant."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "Since the species is rare, the ranger warned, \"Stand back; you might injure the chicks!\"",
+     "targets": [
+      "species",
+      "injure"
+     ],
+     "cups": {
+      "capitals": [
+       "Since",
+       "Stand"
+      ],
+      "punctuation": [
+       "comma after the opening clause (the Since part cannot stand alone, and the comma shows where it ends)",
+       "comma before the speech (it separates who said it from what they said)",
+       "opening quotation mark (speech starts here, so the first word takes a capital)",
+       "semicolon (it joins two complete sentences that belong together)",
+       "exclamation mark (it shows an urgent warning)",
+       "closing quotation mark (speech ends here, after its own punctuation)"
+      ]
+     },
+     "focus": "Term 3 revision: the red word species (Week 5) and jur in injure (Week 7). warned is today's grammar - a saying verb that shows how it was said."
+    }
+   ],
+   "grammar": {
+    "header_notes": "PURPOSE: Swap vague verbs like gets, goes, makes and says for verbs that show exactly what happens, with a strength that fits the facts.\nWHY THIS WEEK: last week's nouns told the reader exactly who or what. Vague verbs still make an argument sound flat, because the reader cannot see what is happening.\nTIME: 5 minutes, no more - I do 1 min, We do 1 question, You do 3 questions at about 45 seconds each. One question per slide; your click reveals the answer.\nROUTINE: all grammar this week is written in the OG book. No boards - books, fingers and voices only.\nPREP: a verb is the doing or saying word. Three upgrades this week: exact (exactly what happens?), strength (does it fit the facts? too strong is hyperbole), saying verbs (how was it said?).",
+    "i_do": {
+     "title": "Show how it was said",
+     "rule": "Swap says for a saying verb that shows how it was said.",
+     "example": "Doctors say sugar harms teeth.\nDoctors warn that sugar harms teeth.",
+     "items": [
+      "Saying verbs: warn, insist, agree, admit, show.",
+      "Ask: how was it said?"
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Tomorrow: all three upgrades",
+     "notes": "ANSWER: say becomes warn - it shows the doctors are telling us about a danger.\n1. SAY: \"Okay, arguments use experts, and most writers just write says. A saying verb tells your reader how it was said, and that steers what they think.\"\n2. WRITE: copy \"Doctors say sugar harms teeth.\" on the class board. POINT at say and ask aloud, how did the doctors say it?\n3. WRITE: cross out say and write warn that above it, so the board reads \"Doctors warn that sugar harms teeth.\"\n4. ASK: \"Which sentence makes you more careful with lollies? One finger for the first, two for the second, voices off.\" 5 sec. EXPECT: two fingers - warn.\nTRAP: picking a saying verb that sounds big but does not fit, like doctors shout. Fix: ask how doctors really tell us, student picks warn.\nCLARIFY: if a student asks whether says is ever right, say yes, when nothing about how it was said matters - in an argument it usually does.\n---\nPurpose: day three upgrades the most overused verb in an argument, says. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: a saying verb reports speech or evidence and carries attitude: warn (danger), insist (firmly), admit (reluctantly), agree (together), show (with evidence)."
+    },
+    "we_do": {
+     "title": "Which saying verb?",
+     "rule": "Pick the saying verb that shows how it was said.",
+     "round": [
+      {
+       "prompt": "Our survey ____ that most students\nwant a longer lunch.",
+       "choices": [
+        "says",
+        "shows",
+        "jokes"
+       ],
+       "answer": "shows",
+       "why": "a survey has numbers, and numbers show",
+       "routine": "Fingers: 1, 2 or 3",
+       "footer": "Stem: It fits because ...",
+       "notes": "ANSWER: shows - a survey has numbers, and numbers show.\n1. SAY: \"Okay, a survey is evidence. Read the sentence and the three choices in your head.\"\n2. ASK: \"Which saying verb fits? One finger for says, two for shows, three for jokes, voices off, show me on three.\" 5 sec. EXPECT: two fingers - shows.\n3. REVEAL after fingers are scanned. ASK: \"Why is shows stronger than says?\" Cold call one student. EXPECT: it tells the reader there is proof.\n4. WRITE: copy the sentence on the class board with says, cross it out and write shows above it.\nTRAP: choosing says because it sounds normal. Fix: ask, does says tell the reader there is proof? Student votes again.\nCLARIFY: if a student says a survey cannot talk, say that is why shows fits - evidence shows, people say.\n---\nPurpose: guided choice of a saying verb for evidence. [We Do | Guided practice | Grammar | HITS 7]\nPREP: evidence verbs (shows, proves) fit data; people verbs (warn, insist, admit) fit speakers."
+      }
+     ]
+    },
+    "you_do": {
+     "title": "Choose the saying verb",
+     "rule": "Write the saying verb that fits in your OG book.",
+     "routine": "OG books - 30 sec - pens down",
+     "footer": "Check: how was it said?",
+     "round": [
+      {
+       "prompt": "Doctors ____ that too much screen\ntime can hurt young eyes.",
+       "choices": [
+        "say",
+        "warn",
+        "ask"
+       ],
+       "answer": "warn",
+       "why": "hurting eyes is a danger",
+       "notes": "ANSWER: warn.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask what kind of message hurt young eyes is - good news, a question or a danger, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Say is vague and ask is a question. Hurting young eyes is a danger, and doctors warn us about dangers.\"\nTRAP: choosing say. Fix: ask, does say tell you it is a danger? Student swaps to warn.\nEXTENSION: Write the whole sentence, then write one more sentence where a doctor admits something.\nHELP: cover ask so the student chooses between say and warn, then reads the sentence aloud with each.\n---\nPurpose: first independent saying verb, clear danger clue. [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "Our principal ____ that every\nstudent must wear a hat outside.",
+       "choices": [
+        "says",
+        "insists",
+        "wonders"
+       ],
+       "answer": "insists",
+       "why": "must means no choice",
+       "notes": "ANSWER: insists.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> point at must and ask, is there a choice?, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Must means there is no choice. Says is vague and wonders is a question, so the principal insists.\"\nTRAP: choosing says. Fix: point at must, ask how firmly it was said, student swaps to insists.\n---\nPurpose: typical case: a clue word (must) decides the verb. [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "Almost every scientist ____\nthat polar bears need sea ice.",
+       "choices": [
+        "says",
+        "agrees",
+        "admits"
+       ],
+       "answer": "agrees",
+       "why": "almost every scientist means they agree",
+       "notes": "ANSWER: agrees.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> point at almost every and ask, are the scientists arguing or on the same side?, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Almost every scientist means they are on the same side, so they agree. Admits would mean they did not want to say it.\"\n4. SAY: \"When you quote an expert in your argument, swap says for a verb that shows how they said it.\"\nTRAP: choosing admits. Fix: ask, are the scientists sorry to say it? Student swaps to agrees.\nEXTENSION: Write two sentences about polar bears for your argument, one with warn and one with admit, and explain how each changes the reader's view.\n---\nPurpose: edge case: the clue is in the subject (almost every), and admits is a near-miss. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\n1. Doctors ____ screen time can hurt young eyes = warn\n2. Our principal ____ every student must wear a hat = insists\n3. Almost every scientist ____ polar bears need sea ice = agrees\nEXTENSION 1: e.g. Doctors warn that too much screen time can hurt young eyes. One doctor admits she checks her phone too often.\nEXTENSION 3: e.g. Scientists warn that polar bears are losing their sea ice (the reader worries). Even oil companies admit the ice is melting (the reader is convinced)."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "day": "Thursday",
+   "type": "review",
+   "morphology_review": [
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay"
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from hyper, meaning over or above.",
+      "answers": [
+       "hyperactive",
+       "hyperlink",
+       "hypersonic",
+       "hypermarket"
+      ]
+     }
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from terr, meaning land.",
+      "answers": [
+       "terrain",
+       "territory",
+       "terrace",
+       "terrarium"
+      ]
+     }
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root",
+     "keyword": "adjure",
+     "meaning": "right, law"
+    },
+    {
+     "morph": "chron",
+     "type": "root",
+     "keyword": "chronology",
+     "meaning": "time"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root",
+     "keyword": "command",
+     "meaning": "order, entrust"
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from pon or pound, meaning place or part.",
+      "answers": [
+       "ponder",
+       "opponent",
+       "component",
+       "postpone"
+      ]
+     }
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "expensive",
+     "astronauts",
+     "hyperlink",
+     "omnibus",
+     "injustice",
+     "accusation",
+     "hypertension",
+     "omnipresent",
+     "junction",
+     "excuse",
+     "hyperextend",
+     "astronomy",
+     "component",
+     "because",
+     "omnivore"
+    ],
+    "notes": "1. READ: \"Okay, if you are the oldest child in your family, read row 1.\"\n2. READ: \"Youngest children, read row 2.\"\n3. READ: \"Middle children, read row 3.\"\n4. READ: \"Only children, or anyone not sure, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"hyper means over or above. Which three words carry it?\" 5 sec, choral response. EXPECT: hyperlink, hypertension, hyperextend.\n7. ASK: \"caus and cus mean cause. Which three words carry them?\" 5 sec, choral response. EXPECT: accusation, excuse, because.\n8. ASK: \"astro means star. Which two words carry it?\" 5 sec, turn and tell. EXPECT: astronauts, astronomy.\n9. ASK: \"junct means join. Which word names the place where two roads join?\" 3 sec, choral response. EXPECT: junction.\n10. ASK: \"pens means pay. Which word describes something that makes you pay a lot?\" 3 sec, choral response. EXPECT: expensive.\n11. ASK: \"omni means all. Which word means being present everywhere at once?\" 3 sec, choral response. EXPECT: omnipresent.\n12. ASK: \"What is the opposite of injustice?\" 3 sec, choral response. EXPECT: justice."
+   },
+   "words_to_spell_review": [
+    {
+     "word": "hypermobile",
+     "sentence": "Some gymnasts are hypermobile, so their joints bend further than most people's.",
+     "prompt": "mobile means able to move. Which part tells you the joints move further than usual?",
+     "answer": "The hyper part, meaning over. Their joints move over the normal range."
+    },
+    {
+     "word": "hypersonic",
+     "sentence": "The hypersonic jet crossed the country faster than the sound of its own engines.",
+     "prompt": "sonic means to do with sound. So how fast is hypersonic?",
+     "answer": "Way over the speed of sound - at least five times faster."
+    },
+    {
+     "word": "omniscient",
+     "sentence": "The narrator of our class novel is omniscient and knows every character's thoughts.",
+     "prompt": "omni means all and sci means know. So what does an omniscient narrator know?",
+     "answer": "Everything about everyone - all the thoughts and secrets of every character."
+    },
+    {
+     "word": "omnivorous",
+     "sentence": "Our omnivorous chickens eat seeds, scraps and the odd grasshopper.",
+     "prompt": "omni means all. Which taught root, the one in carnivore, tells you this is about eating?",
+     "answer": "The vore root, meaning eat. Omnivorous animals eat all kinds of food."
+    },
+    {
+     "word": "accused",
+     "sentence": "The goalie accused the striker of pushing, but the umpire said no.",
+     "prompt": "cus means cause. Why does the umpire's answer matter to the striker?",
+     "answer": "Being accused only means someone says you caused it. The umpire decided the striker did not."
+    },
+    {
+     "word": "causation",
+     "sentence": "Our science report had to prove causation, not just two things happening together.",
+     "prompt": "caus means cause. What does causation need that happening together does not?",
+     "answer": "Proof that one thing made the other happen. Two things can happen together by chance."
+    },
+    {
+     "word": "postpone",
+     "sentence": "The principal had to postpone the swimming carnival because of lightning.",
+     "prompt": "Which taught prefix tells you the carnival moves later, not earlier?",
+     "answer": "post-, meaning after. pon means place, so the carnival is placed after the planned day."
+    },
+    {
+     "word": "judgement",
+     "sentence": "Use good judgement before you post a photo of a friend online.",
+     "prompt": "jud means right or law. What does good judgement help you decide?",
+     "answer": "What is right to do. Judgement is deciding what is right before you act."
+    },
+    {
+     "word": "astronomer",
+     "sentence": "The astronomer at the planetarium showed us how to find the Southern Cross.",
+     "prompt": "astro means star. Which ending names the person who does the studying?",
+     "answer": "The -er ending. An astronomer is a person who studies the laws of the stars."
+    },
+    {
+     "word": "terrain",
+     "sentence": "The cross country course crossed rocky terrain behind the school.",
+     "prompt": "terr means land. What does the terrain of a course tell the runners?",
+     "answer": "What the land is like - hills, rocks or mud - so they know how hard the run will be."
+    }
+   ],
+   "sound_bank": [
+    {
+     "morph": "hyper",
+     "type": "root"
+    },
+    {
+     "morph": "astro",
+     "type": "root"
+    },
+    {
+     "morph": "vore",
+     "type": "root"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix"
+    },
+    {
+     "morph": "post-",
+     "type": "prefix"
+    }
+   ],
+   "new_morphology": {
+    "morph": "terr",
+    "type": "root",
+    "keyword": "territory",
+    "meaning": "land"
+   },
+   "words_to_read_new": [
+    {
+     "word": "territorial",
+     "meaning": "terr means land + -ory means a place for + -ial means relating to: relating to a place of land you guard"
+    },
+    {
+     "word": "territories",
+     "meaning": "terr means land + -ory means a place for + -ies: places of land, more than one"
+    },
+    {
+     "word": "terraced",
+     "meaning": "terr means land + -ace makes it a place + -ed: land cut into flat steps"
+    },
+    {
+     "word": "terrariums",
+     "meaning": "terr means land + -arium means a place for + -s: places for land, more than one"
+    },
+    {
+     "word": "terriers",
+     "meaning": "terr means land + -ier means one that + -s: dogs that go into the land"
+    },
+    {
+     "word": "terrestrial",
+     "meaning": "terr means land + -estr means belonging to + -ial means relating to: relating to things that belong on land"
+    },
+    {
+     "word": "subterranean",
+     "meaning": "sub means under + terr means land + -anean means relating to: relating to under the land"
+    },
+    {
+     "word": "terracotta",
+     "meaning": "terr means land + cotta means cooked: cooked land"
+    },
+    {
+     "word": "terraform",
+     "meaning": "terr means land + form means shape: to shape land"
+    }
+   ],
+   "associated_word_exceptions": [
+    {
+     "word": "territories, terraced, terrariums, terriers",
+     "reason": "small family (OG_MEGA_PROMPT 3b): inflected forms keep the review grid at 9 inside the 12-letter cap",
+     "source": "regular inflections"
+    },
+    {
+     "word": "terrarium, terracotta, terrier, terraform",
+     "reason": "ground 3, carried from Wednesday",
+     "source": "see Wednesday"
+    }
+   ],
+   "wtr_new_notes": "READ each word as it appears, then connect terr to the card meaning: land.\nterritorial - terr means land + -ory means a place for + -ial means relating to: relating to a place of land you guard. Magpies get territorial in spring.\nterritories - terr means land + -ory means a place for + -ies means more than one: places of land. Australia has two self-governing territories, the NT and the ACT.\nterraced - terr means land + -ace makes it a place + -ed: land cut into flat steps. A terraced garden climbs the hill step by step.\nterrariums - terr means land + -arium means a place for + -s: places for land, more than one. Our science room could hold two terrariums.\nterriers - terr means land + -ier means one that + -s: dogs that go into the land. Terriers dig.\nterrestrial - terr means land + -estr means belonging to + -ial means relating to: relating to things that belong on land. Emus are terrestrial birds - they cannot fly.\nsubterranean - sub means under + terr means land + -anean means relating to: relating to under the land. Subterranean water sits in rock under our feet.\nterracotta - terr means land + cotta means cooked: cooked land. A terracotta pot is baked earth.\nterraform - terr means land + form means shape: to shape land, changing a planet until it is like Earth.\nMemory hook: stamp your foot when you say terr - the land under your feet. No land in the meaning? It is a look-alike, like terrible. Challenge: bring one more terr word by Friday.",
+   "words_to_spell_new": [
+    "territorial",
+    "terrestrial",
+    "terraced",
+    "territories"
+   ],
+   "extension": "1. SAY: \"Okay, when you finish, use two of the spelling words in one sentence that starts with a subordinate clause.\"\n2. REMIND: a subordinate clause starts with a trigger word like when, because or although, and cannot stand alone. A comma follows it at the front.\nEXTENSION: Then move the subordinate clause to the end of the sentence and fix the punctuation.\nAnswer: e.g. Because magpies are territorial, the terraced garden is closed in spring. / The terraced garden is closed in spring because magpies are territorial.",
+   "new_morph_activity": {
+    "title": "Land or look-alike?",
+    "rule": "Does terr mean land in the bold word? Write LAND or LOOK-ALIKE.",
+    "routine": "Boards - write it, show me",
+    "footer": "Check: is land part of the meaning?",
+    "time": "3 mins",
+    "round": [
+     {
+      "prompt": "One done for you: The thunder will\n**terrify** the puppy.",
+      "answer": "LOOK-ALIKE",
+      "why": "terrify is about fear, not land",
+      "worked": true,
+      "notes": "1. SAY: \"Okay, some words start with t-e-r-r but have nothing to do with land. Today you catch the look-alikes.\"\n2. MODEL: point at the done one. SAY: \"Terrify means fill with fear. Is there any land in that meaning? No. So terr is not land here - it is a look-alike.\"\n3. SAY: \"Four sentences, one at a time. Read the bold word in its sentence, then write LAND or LOOK-ALIKE. Write it... chin it... show me.\"\nEXTENSION: Sort terrain, terrorise, terrestrial and terrific into land and look-alike, then explain the name Mediterranean if medi means middle.\nHELP: ask the student to say what the word means in one sentence, then ask whether land or soil is part of that meaning.\n---\nPurpose: review day checks that terr is doing its job, the OG test that stops students forcing a meaning onto a look-alike. [You Do | Land or look-alike | Morphology]\nANSWERS:\n1. Magpies guard their territory every spring = LAND\n2. The storm made a terrible crashing noise = LOOK-ALIKE\n3. Our class terrarium has moss, soil and a tiny fern = LAND\n4. That was a terrific goal in the final = LOOK-ALIKE\nEXTENSION: land - terrain, terrestrial; look-alike - terrorise, terrific. Mediterranean = medi (middle) + terr (land): the sea in the middle of the lands."
+     },
+     {
+      "prompt": "Magpies guard their **territory**\nevery spring.",
+      "answer": "LAND",
+      "why": "a place of land the magpies guard",
+      "notes": "ANSWER: LAND - territory is land the magpies guard.\n1. ASK: \"Does terr mean land in territory, or is it a look-alike?\" 10 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> ask what the magpies are guarding - is it land?, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. A territory is a place of land, and the magpies guard it. Land is part of the meaning, so terr means land.\"\nTRAP: writing LOOK-ALIKE because magpies are scary. Fix: say we judge the word, not the bird - can you stand on a territory? Student rewrites LAND.\n---\nPurpose: test whether terr is doing its job - the morpheme must carry its meaning in the word. [You Do | Land or look-alike | Morphology]"
+     },
+     {
+      "prompt": "The storm made a **terrible**\ncrashing noise.",
+      "answer": "LOOK-ALIKE",
+      "why": "terrible is about fear, not land",
+      "notes": "ANSWER: LOOK-ALIKE - terrible is about fear.\n1. ASK: \"Does terr mean land in terrible, or is it a look-alike?\" 10 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> ask whether a terrible noise has any land in its meaning, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. Terrible shares its root with terror, which means fear. There is no land in it, so terr is a look-alike here.\"\nTRAP: writing LAND because storms happen outside. Fix: ask, is the noise made of land? Student rewrites LOOK-ALIKE.\n---\nPurpose: test whether terr is doing its job - the morpheme must carry its meaning in the word. [You Do | Land or look-alike | Morphology]"
+     },
+     {
+      "prompt": "Our class **terrarium** has moss,\nsoil and a tiny fern.",
+      "answer": "LAND",
+      "why": "terr (land) + -arium (a place for)",
+      "notes": "ANSWER: LAND - a terrarium is a place for land.\n1. ASK: \"Does terr mean land in terrarium, or is it a look-alike?\" 10 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> point at soil in the sentence and ask what soil is, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. terr means land and -arium means a place for, so a terrarium is a place for land - soil, moss and plants.\"\nTRAP: writing LOOK-ALIKE because a terrarium is indoors. Fix: point at soil, ask whether soil is land, student rewrites LAND.\n---\nPurpose: test whether terr is doing its job - the morpheme must carry its meaning in the word. [You Do | Land or look-alike | Morphology]"
+     },
+     {
+      "prompt": "That was a **terrific** goal\nin the final!",
+      "answer": "LOOK-ALIKE",
+      "why": "it shares terror's root, not land's",
+      "notes": "ANSWER: LOOK-ALIKE - terrific shares terror's root.\n1. ASK: \"Does terr mean land in terrific, or is it a look-alike?\" 10 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN every board. 80%+ -> click to reveal. Less -> ask what terrific means here - great - then ask whether great has anything to do with land, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. Terrific means great now, but it shares its Latin root with terror, meaning frighten. Either way there is no land in it, so it is a look-alike.\"\nTRAP: writing LAND because goals are scored on a field. Fix: say the field is not in the word - what does terrific mean? Student rewrites LOOK-ALIKE.\n---\nPurpose: test whether terr is doing its job - the morpheme must carry its meaning in the word. [You Do | Land or look-alike | Morphology]"
+     }
+    ]
+   },
+   "learned_words": {
+    "review": [
+     {
+      "word": "receipt",
+      "unfair": "p",
+      "notes": "Why learned: the p is silent, and the ei follows i before e except after c.\nSay it: ruh-SEET, two beats. Write re - ceipt, and say the p in your head.\nLink: you can hear the p in reception, so think reception to keep the silent p in receipt."
+     },
+     {
+      "word": "entrepreneur",
+      "unfair": "eur",
+      "notes": "Why learned: the ending eur says /er/ and entre says /on-truh/, because the word came from French.\nSay it: ON-truh-pruh-NER, four beats. Write en - tre - pre - neur, then check the eur at the end.\nLink: an entrepreneur is the person who starts a business."
+     }
+    ]
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "My opponent swam faster, but my kickboard gave me more buoyancy.",
+     "targets": [
+      "opponent",
+      "buoyancy"
+     ],
+     "cups": {
+      "capitals": [
+       "My"
+      ],
+      "punctuation": [
+       "comma before but (it joins two complete sentences)",
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "Term 3 revision: pon in opponent (Week 8) and the red word buoyancy (Week 2)."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "At assembly, our principal announced, \"The choir is victorious; we loved your rhythm!\"",
+     "targets": [
+      "victorious",
+      "rhythm"
+     ],
+     "cups": {
+      "capitals": [
+       "At",
+       "The"
+      ],
+      "punctuation": [
+       "comma after the opening phrase (At assembly tells where, and the comma shows where it ends)",
+       "comma before the speech (it separates who said it from what they said)",
+       "opening quotation mark (speech starts here, so the first word takes a capital)",
+       "semicolon (it joins two complete sentences that belong together)",
+       "exclamation mark (it shows excitement)",
+       "closing quotation mark (speech ends here, after its own punctuation)"
+      ]
+     },
+     "focus": "Term 3 revision: vict in victorious (Week 6) and the red word rhythm (Week 9). announced is a saying verb. CUPS is not just for dictation - run the same four checks on your own draft before anyone else reads it."
+    }
+   ],
+   "grammar": {
+    "header_notes": "PURPOSE: Swap vague verbs like gets, goes, makes and says for verbs that show exactly what happens, with a strength that fits the facts.\nWHY THIS WEEK: last week's nouns told the reader exactly who or what. Vague verbs still make an argument sound flat, because the reader cannot see what is happening.\nTIME: 5 minutes, no more - I do 1 min, We do 1 question, You do 3 questions at about 45 seconds each. One question per slide; your click reveals the answer.\nROUTINE: all grammar this week is written in the OG book. No boards - books, fingers and voices only.\nPREP: a verb is the doing or saying word. Three upgrades this week: exact (exactly what happens?), strength (does it fit the facts? too strong is hyperbole), saying verbs (how was it said?).",
+    "i_do": {
+     "title": "Three ways to upgrade a verb",
+     "rule": "Make the verb exact, true to the facts, or show how it was said.",
+     "example": "Experts say plastic gets into the sea.\nExperts warn that plastic washes into the sea.",
+     "items": [
+      "Exactly what happens? Does it fit the facts?",
+      "How was it said?"
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Your argument: one verb upgrade a line",
+     "notes": "ANSWER: say becomes warn (how it was said) and gets becomes washes (exactly what happens).\n1. SAY: \"Okay, three questions upgrade any verb: exactly what happens, does it fit the facts, and how was it said? This sentence needs two of them.\"\n2. WRITE: copy \"Experts say plastic gets into the sea.\" on the class board. POINT at say, ask how was it said, then cross it out and write warn that.\n3. WRITE: POINT at gets, ask exactly what happens, then cross it out and write washes, so the board reads the upgraded sentence.\n4. ASK: \"Which question fixed gets? One finger for exact, two for strength, three for saying, voices off.\" 5 sec. EXPECT: one finger - exact.\nTRAP: upgrading every verb into the strongest one, like plastic floods the sea. Fix: ask, does it fit the facts? Student picks washes.\nCLARIFY: if a student asks which question to use first, say read the verb and ask all three - the one that changes it is the one you need.\n---\nPurpose: day four puts the three verb upgrades together on one argument sentence. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: exact (washes for gets), strength (cuts, not destroys, for ten minutes), saying verb (warn for say) - each answers one question."
+    },
+    "we_do": {
+     "title": "Which verb fits the facts?",
+     "rule": "Pick the sentence whose verb fits the facts.",
+     "round": [
+      {
+       "prompt": "Fact: one window was cracked.\nA) The ball smashed a window.\nB) The ball cracked a window.",
+       "answer": "B",
+       "why": "cracked fits; smashed is too strong",
+       "routine": "Fingers: 1 for A, 2 for B",
+       "footer": "Stem: B fits because ...",
+       "notes": "ANSWER: B - cracked a window fits the fact.\n1. SAY: \"Okay, read the fact first, then both sentences, in your head.\"\n2. ASK: \"Which verb fits the facts? One finger for A, two for B, voices off, show me on three.\" 5 sec. EXPECT: two fingers - B.\n3. REVEAL after fingers are scanned. ASK: \"Which of the three questions did you use?\" Cold call one student. EXPECT: does it fit the facts - the strength question.\n4. WRITE: copy A on the class board, cross out smashed and write cracked above it, so it matches the fact.\nTRAP: choosing A because smashed is more exciting. Fix: point at the fact, ask whether cracked means smashed, student votes again.\nCLARIFY: if a student says cracked is weaker, say yes, and that is the point - it is exactly as strong as the facts.\n---\nPurpose: guided strength check inside the three-upgrade routine. [We Do | Guided practice | Grammar | HITS 7]\nPREP: the fact decides; the most exciting verb loses when the facts cannot back it up."
+      }
+     ]
+    },
+    "you_do": {
+     "title": "Upgrade the verb",
+     "rule": "Write the best verb in your OG book. Ask the three questions.",
+     "routine": "OG books - 30 sec - pens down",
+     "footer": "Check: exact, true and how?",
+     "round": [
+      {
+       "prompt": "Our dog makes a hole under\nthe fence every weekend.",
+       "choices": [
+        "gets",
+        "digs",
+        "has"
+       ],
+       "answer": "digs",
+       "why": "it shows exactly what the dog does",
+       "notes": "ANSWER: digs.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask exactly what a dog does to make a hole, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Makes, gets and has are all vague. Digs shows exactly what the dog does - the exact question.\"\nTRAP: choosing gets. Fix: ask, gets it how? Student swaps to digs.\nEXTENSION: Write the whole sentence, then name which of the three questions fixed it.\nHELP: give the student the three questions on a card and ask them to try each one aloud on the verb.\n---\nPurpose: exact-verb question first, easy case. [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "Even the shop owner ____ that\nplastic bags harm turtles.",
+       "choices": [
+        "says",
+        "admits",
+        "sings"
+       ],
+       "answer": "admits",
+       "why": "the owner sells the bags",
+       "notes": "ANSWER: admits.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> point at Even and ask, would the shop owner want to say this?, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Even tells you the owner did not want to say it - they sell the bags. So the owner admits it.\"\nTRAP: choosing says. Fix: point at Even, ask what it tells you, student swaps to admits.\n---\nPurpose: saying-verb question with a clue word (Even). [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "Fact: it rained for ten minutes.\nThe shower ____ our recess.",
+       "choices": [
+        "changed",
+        "interrupted",
+        "ruined"
+       ],
+       "answer": "interrupted",
+       "why": "ten minutes of rain, not ruined",
+       "notes": "ANSWER: interrupted.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask whether ten minutes of rain ruins a whole recess, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Changed is too weak and ruined is hyperbole for ten minutes. Interrupted fits the fact - the strength question.\"\n4. SAY: \"When you edit your argument, read every verb and ask the three questions. Upgrade one verb on every line.\"\nTRAP: choosing ruined. Fix: point at ten minutes, ask whether recess was ruined, student swaps to interrupted.\nEXTENSION: Take one paragraph of your persuasive writing and upgrade three verbs, labelling which question each upgrade answers.\n---\nPurpose: edge case: strength against a fact, and the verb stays in the past. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\n1. Our dog makes a hole under the fence = digs\n2. Even the shop owner ____ bags harm turtles = admits\n3. Ten minutes of rain ____ our recess = interrupted\nEXTENSION 1: e.g. Our dog digs a hole under the fence every weekend - the exact question fixed it.\nEXTENSION 3: answers vary - three verbs from their own paragraph, each upgraded and labelled exact, strength or saying."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "day": "Friday",
+   "type": "week_review",
+   "morphology_review": [
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from astro, meaning star.",
+      "answers": [
+       "astronaut",
+       "astronomy",
+       "astronomer",
+       "astrophysics"
+      ]
+     }
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from terr, meaning land.",
+      "answers": [
+       "terrain",
+       "territory",
+       "terrace",
+       "terrarium"
+      ]
+     }
+    },
+    {
+     "morph": "chron",
+     "type": "root",
+     "keyword": "chronology",
+     "meaning": "time"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "mand/mend",
+     "type": "root",
+     "keyword": "command",
+     "meaning": "order, entrust",
+     "extra_task": {
+      "prompt": "Okay, give me one word built from mand or mend, meaning order or entrust.",
+      "answers": [
+       "command",
+       "demand",
+       "recommend",
+       "commander"
+      ]
+     }
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root",
+     "keyword": "adjure",
+     "meaning": "right, law"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "territory",
+     "causing",
+     "hyperbole",
+     "omnivores",
+     "asteroid",
+     "ponder",
+     "excusable",
+     "hyperactive",
+     "terrarium",
+     "convict",
+     "omnipotent",
+     "pendulum",
+     "astrophysics",
+     "commander",
+     "causative"
+    ],
+    "notes": "1. READ: \"Okay, if your first name has two, three or four letters, read row 1.\"\n2. READ: \"Five letters, read row 2.\"\n3. READ: \"Six letters, read row 3.\"\n4. READ: \"Seven letters or more, read row 4.\"\n5. READ: \"Everyone reads row 5.\" Every student reads at least two rows in the group round.\n6. ASK: \"astro and its twin aster mean star. Which two words carry them?\" 5 sec, choral response. EXPECT: asteroid, astrophysics.\n7. ASK: \"terr means land. Which two words carry it?\" 5 sec, choral response. EXPECT: territory, terrarium.\n8. ASK: \"caus and cus mean cause. Which three words carry them?\" 5 sec, turn and tell. EXPECT: causing, excusable, causative.\n9. ASK: \"Which word names a glass tank of soil and plants for a pet lizard?\" 3 sec, choral response. EXPECT: terrarium.\n10. ASK: \"Which word names the swinging weight inside an old clock?\" 3 sec, choral response. EXPECT: pendulum.\n11. ASK: \"vict means conquer. Which word names a person found guilty in court?\" 3 sec, choral response. EXPECT: convict.\n12. ASK: \"What is the opposite of hyperactive?\" 3 sec, choral response. EXPECT: calm. ACCEPT: still, sleepy."
+   },
+   "words_to_spell_review": [
+    {
+     "word": "astronomical",
+     "sentence": "The price of a real space telescope is astronomical.",
+     "prompt": "astro means star. Why would a huge price be called astronomical?",
+     "answer": "Because it is as huge as the distances between the stars."
+    },
+    {
+     "word": "asterisk",
+     "sentence": "Mr Lee put an asterisk beside the trickiest question on the quiz.",
+     "prompt": "aster means star. Which part of asterisk makes the star little?",
+     "answer": "The -isk ending, meaning little. An asterisk is a little star, like this *."
+    },
+    {
+     "word": "terrace",
+     "sentence": "We ate lunch on the stone terrace above the school garden.",
+     "prompt": "terr means land. What shape of land is a terrace?",
+     "answer": "A flat step of land, like one stair cut into the side of a hill."
+    },
+    {
+     "word": "terrestrial",
+     "sentence": "Kangaroos are terrestrial animals, but dolphins spend their whole lives in the sea.",
+     "prompt": "terr means land. So where does a terrestrial animal live?",
+     "answer": "On the land. The -ial ending means relating to, so terrestrial means relating to the land."
+    },
+    {
+     "word": "hyperlinked",
+     "sentence": "Our class website has every homework sheet hyperlinked on one page.",
+     "prompt": "Which part tells you each link jumps you over to another page?",
+     "answer": "The hyper part, meaning over. The -ed ending tells you the linking is already done."
+    },
+    {
+     "word": "omnipresence",
+     "sentence": "The omnipresence of seagulls at the beach made eating chips a real challenge.",
+     "prompt": "omni means all. Which taught ending turns present into a thing you can name?",
+     "answer": "The -ence ending, the same one in dependence. Omnipresence means being present everywhere."
+    },
+    {
+     "word": "excuse",
+     "sentence": "Forgetting your hat is not an excuse to miss out on sport.",
+     "prompt": "cus means cause. What is an excuse trying to give?",
+     "answer": "A cause, or a reason, that gets you out of something. The ex part means out."
+    },
+    {
+     "word": "accuser",
+     "sentence": "In the courtroom drama, the accuser pointed straight at the butler.",
+     "prompt": "cus means cause. What is the accuser saying about the butler?",
+     "answer": "That the butler caused the crime. The -er ending names the person doing the accusing."
+    },
+    {
+     "word": "component",
+     "sentence": "The battery is the most important component of our science buggy.",
+     "prompt": "pon means place. Where is a component placed?",
+     "answer": "Inside something bigger. It is one part of the whole machine, like the battery in the buggy."
+    },
+    {
+     "word": "prejudice",
+     "sentence": "Deciding a new student cannot play soccer before you see them play is prejudice.",
+     "prompt": "jud means right or law, and pre means before. When does prejudice decide what is right?",
+     "answer": "Before knowing the facts. The judging comes first, so the facts never get a turn."
+    }
+   ],
+   "sound_bank": [
+    {
+     "morph": "astro",
+     "type": "root"
+    },
+    {
+     "morph": "terr",
+     "type": "root"
+    },
+    {
+     "morph": "hyper",
+     "type": "root"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root"
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix"
+    },
+    {
+     "morph": "-ence",
+     "type": "suffix"
+    },
+    {
+     "morph": "-ice",
+     "type": "suffix"
+    }
+   ],
+   "learned_words": {
+    "review": [
+     {
+      "word": "receipt",
+      "unfair": "p",
+      "notes": "Why learned: the p is silent, and the ei follows i before e except after c.\nSay it: ruh-SEET, two beats. Write re - ceipt, and say the p in your head.\nLink: you can hear the p in reception, so think reception to keep the silent p in receipt."
+     },
+     {
+      "word": "entrepreneur",
+      "unfair": "eur",
+      "notes": "Why learned: the ending eur says /er/ and entre says /on-truh/, because the word came from French.\nSay it: ON-truh-pruh-NER, four beats. Write en - tre - pre - neur, then check the eur at the end.\nLink: an entrepreneur is the person who starts a business."
+     }
+    ]
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "The long drought left the creek ecosystem dry and dusty.",
+     "targets": [
+      "drought",
+      "ecosystem"
+     ],
+     "cups": {
+      "capitals": [
+       "The"
+      ],
+      "punctuation": [
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "Term 3 revision: the red word drought (Week 2) and eco in ecosystem (Week 5)."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "At the dentist, Dr Lim warned, \"Keep your tongue still; I am checking a microscopic hole!\"",
+     "targets": [
+      "tongue",
+      "microscopic"
+     ],
+     "cups": {
+      "capitals": [
+       "At",
+       "Dr",
+       "Lim",
+       "Keep",
+       "I"
+      ],
+      "punctuation": [
+       "comma after the opening phrase (At the dentist tells where, and the comma shows where it ends)",
+       "comma before the speech (it separates who said it from what they said)",
+       "opening quotation mark (speech starts here, so the first word takes a capital)",
+       "semicolon (it joins two complete sentences that belong together)",
+       "exclamation mark (it shows an urgent instruction)",
+       "closing quotation mark (speech ends here, after its own punctuation)"
+      ]
+     },
+     "focus": "Term 3 revision: the red word tongue (Week 1) and micro in microscopic (Week 4). warned is a saying verb - it shows how Dr Lim said it."
+    }
+   ],
+   "grammar": {
+    "header_notes": "PURPOSE: Week review - ask the three verb questions of one argument sentence, then upgrade it.\nWHY THIS WEEK: vague verbs make an argument flat and too-strong verbs make readers stop trusting it; the three questions fix both.\nTIME: 5 minutes, no more - I do 1 min, We do 1 question, You do 3 questions at about 45 seconds each. One question per slide; your click reveals the answer.\nROUTINE: all grammar this week is written in the OG book. No boards - books, fingers and voices only.\nPREP: exact (exactly what happens?), strength (does it fit the facts? too strong is hyperbole), saying verbs (how was it said?).",
+    "i_do": {
+     "title": "Upgrade every verb",
+     "rule": "Ask three questions: exactly what? Fits the facts? How was it said?",
+     "example": "Fact: two pies were burnt.\nThe chef says his oven ruined every pie.\nThe chef admits his oven burnt two pies.",
+     "items": [
+      "Exact: washes, digs. Strength: fits the facts.",
+      "Saying: warn, insist, agree, admit, show."
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Next week: upgrade your own argument",
+     "notes": "ANSWER: says becomes admits (how it was said) and ruined every becomes burnt two (fits the facts).\n1. SAY: \"Okay, this week we upgraded verbs three ways. Today one sentence needs two of them, so ask all three questions.\"\n2. WRITE: copy the fact and \"The chef says his oven ruined every pie.\" on the class board. POINT at ruined every and ask, does it fit the facts?\n3. WRITE: cross out ruined every and write burnt two, then cross out says and write admits, so the board matches the bottom line.\n4. ASK: \"Why admits, not says? Turn and tell your partner.\" 10 sec, turn and tell. EXPECT: it is his own oven, so he did not want to say it.\nTRAP: fixing only the first verb you see. Fix: say ask all three questions of every verb, student rereads and finds the second.\nCLARIFY: if a student asks whether ruined is ever right, say yes, if every pie really was burnt - the fact decides.\n---\nPurpose: week review restates all three upgrades on one argument sentence (absent-student rule). [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: exact (washes for gets), strength (burnt two, not ruined every), saying verb (admits for says)."
+    },
+    "we_do": {
+     "title": "Which verb fits the facts?",
+     "rule": "Pick the sentence whose verb fits the facts.",
+     "round": [
+      {
+       "prompt": "Fact: the library closed for one day.\nA) The flood destroyed our library.\nB) The flood closed our library.",
+       "answer": "B",
+       "why": "closed for one day, not destroyed",
+       "routine": "Fingers: 1 for A, 2 for B",
+       "footer": "Stem: B fits because ...",
+       "notes": "ANSWER: B - closed fits the fact.\n1. SAY: \"Okay, read the fact first, then both sentences, in your head.\"\n2. ASK: \"Which verb fits the facts? One finger for A, two for B, voices off, show me on three.\" 5 sec. EXPECT: two fingers - B.\n3. REVEAL after fingers are scanned. ASK: \"Which of the three questions did you use?\" Cold call one student. EXPECT: does it fit the facts - the strength question.\n4. WRITE: copy A on the class board, cross out destroyed and write closed, so it matches the fact.\nTRAP: choosing A because a flood sounds serious. Fix: point at one day, ask whether the library is gone, student votes again.\nCLARIFY: if a student says closed sounds boring, say it is exactly as strong as the facts, so the reader trusts you.\n---\nPurpose: guided strength check, the question most often skipped. [We Do | Guided practice | Grammar | HITS 7]\nPREP: the fact decides; a verb stronger than the facts is hyperbole."
+      }
+     ]
+    },
+    "you_do": {
+     "title": "Upgrade the verb",
+     "rule": "Write the best verb in your OG book. Ask the three questions.",
+     "routine": "OG books - 30 sec - pens down",
+     "footer": "Check: exact, true and how?",
+     "round": [
+      {
+       "prompt": "Strong wind does damage to\nour vegetable garden.",
+       "choices": [
+        "makes",
+        "flattens",
+        "has"
+       ],
+       "answer": "flattens",
+       "why": "it shows exactly what the wind does",
+       "notes": "ANSWER: flattens.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask exactly what strong wind does to tall plants, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Does damage to is vague. Flattens shows exactly what the wind does to the plants - the exact question.\"\nTRAP: choosing makes. Fix: ask, makes what? Student swaps to flattens.\nEXTENSION: Write the whole sentence, then name which of the three questions fixed it.\nHELP: give the student the three questions on a card and ask them to try each one aloud on the verb.\n---\nPurpose: exact-verb question first, easy case. [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "The rain gauge ____ that we had\n40 mm of rain this week.",
+       "choices": [
+        "says",
+        "shows",
+        "wonders"
+       ],
+       "answer": "shows",
+       "why": "a gauge measures, so it shows",
+       "notes": "ANSWER: shows.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask whether a gauge talks or measures, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. A gauge cannot talk - it measures. Evidence shows, so the gauge shows we had 40 mm of rain.\"\nTRAP: choosing says. Fix: ask, can a gauge say anything? Student swaps to shows.\n---\nPurpose: saying-verb question for evidence, not a person. [You Do | Independent practice | Grammar | HITS 5]"
+      },
+      {
+       "prompt": "Fact: the bus was five minutes late.\nThe bus ____ our excursion.",
+       "choices": [
+        "changed",
+        "delayed",
+        "wrecked"
+       ],
+       "answer": "delayed",
+       "why": "five minutes late is delayed, not wrecked",
+       "notes": "ANSWER: delayed.\n1. SAY: \"Read it in your head, then write just the verb in your OG book. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask whether five minutes late wrecks a whole excursion, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Changed is too weak and wrecked is hyperbole for five minutes. Delayed fits the fact - the strength question.\"\n4. SAY: \"Before you hand in your argument, ask the three questions of every verb. Upgrade one verb on every line.\"\nTRAP: choosing wrecked. Fix: point at five minutes, ask whether the excursion was wrecked, student swaps to delayed.\nEXTENSION: Take three verbs from your persuasive writing, upgrade each one, and label which question each upgrade answers.\n---\nPurpose: edge case: strength against a fact, and the verb stays in the past. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS:\n1. Strong wind does damage to our garden = flattens\n2. The rain gauge ____ we had 40 mm = shows\n3. Bus five minutes late ____ our excursion = delayed\nEXTENSION 1: e.g. Strong wind flattens our vegetable garden - the exact question fixed it.\nEXTENSION 3: answers vary - three verbs from their own writing, each upgraded and labelled exact, strength or saying."
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

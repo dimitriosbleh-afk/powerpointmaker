@@ -40,6 +40,11 @@ def session_lists(session):
         ("lw_review", [w["word"] for w in learned.get("review", [])]),
         ("lw_new", [new_lw["word"]] if new_lw.get("word") else []),
         ("dictation", [t for d in session.get("dictation", []) for t in d.get("targets", [])]),
+        # v1.7 Wednesday: the word each break-apart / name-it item is about
+        ("build", [it["prompt"].split("\n")[-1] if "break" in rnd.get("title", "").lower()
+                   else it["answer"]
+                   for rnd in (session.get("build") or {}).get("rounds", [])
+                   for it in rnd.get("round", [])]),
     ]
 
 

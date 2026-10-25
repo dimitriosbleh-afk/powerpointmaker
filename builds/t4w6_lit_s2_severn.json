@@ -62,10 +62,10 @@
     ],
     "boardSetup": [
       "Listening grid: Message? Audience? Think? Feel? Do?",
-      "Cue the selected section of Severn's speech (DCE Speech Collection)"
+      "Cue the selected section of Severn's speech (public recording)"
     ],
     "videos": [
-      "DCE Speech Collection: Severn Cullis-Suzuki, Earth Summit speech, age 12 (teacher's copy; play the opening and the 'fix it' section)"
+      "Severn Cullis-Suzuki, Rio Earth Summit speech, 1992, age 12 (public recording; play the opening and the 'fix it' section)"
     ]
   },
   "resources": [
@@ -492,7 +492,7 @@
     },
     {
       "kind": "resources",
-      "notes": "Cue the selected section of Severn Cullis-Suzuki's Earth Summit speech from the DCE Speech Collection. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Toolkits out."
+      "notes": "Cue the selected section of Severn Cullis-Suzuki's Earth Summit speech from a public recording. Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for those who need it. Toolkits out."
     },
     {
       "kind": "li",
@@ -637,7 +637,7 @@
         "answer": "message, audience, and what she wants them to think, feel and do",
         "beats": [
           [
-            "PLAY the selected section from the DCE Speech Collection.",
+            "PLAY the selected section of the recording.",
             "SAY: Listen for who she says she is, and who she's talking to."
           ],
           [
@@ -747,7 +747,7 @@
         ],
         "stretch": "Write your own twelve-word line for your issue.",
         "help": "Copy her pattern: If you ___, please ___.",
-        "prep": "A short, famous line for close study; play it in context from the DCE clip. Toolkit row 2: who I am and why I care.",
+        "prep": "A short, famous line for close study; play it in context from the recording. Toolkit row 2: who I am and why I care.",
         "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
       }
     },

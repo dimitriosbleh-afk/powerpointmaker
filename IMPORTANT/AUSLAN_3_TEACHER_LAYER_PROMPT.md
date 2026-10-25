@@ -161,3 +161,4 @@ For the weekly planner, paste every cohort's section 8 table for the term and na
 - Diff every Say: line on a lesson page against the unit document. A dropped line or a dropped opening clause is fine; a reworded one is a defect, and so is a shortened line that was not shortened in the unit document as well.
 - Check that every lesson page's stage minutes total 50 and match the run sheet.
 - List in the final summary every hyperlink target that does not yet exist in the term folder, so James knows which files still have to land there.
+- Run the review panel (`IMPORTANT/REVIEW_PANEL.md`) on the finished documents, judged as the pages a teacher plans and teaches from, and rebuild its agreed changes. The Say: lines stay word for word with the unit document; a panel finding about one goes back to the unit document, not into these pages.

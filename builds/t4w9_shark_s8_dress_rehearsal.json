@@ -1,0 +1,837 @@
+{
+  "lesson": {
+    "subject": "inquiry",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 9,
+    "session": 8,
+    "variant": 3,
+    "minutes": 60,
+    "title": "Dress Rehearsal",
+    "subtitle": "Shark Tank | Term 4 Week 9, Session 8",
+    "meta": "Grade 5 Inquiry | Shark Tank",
+    "footer": "Shark Tank | Grade 5 Inquiry | Week 9 Session 8",
+    "outputFolder": "T4W9_SharkTank_S8_Dress_Rehearsal",
+    "fileName": "Session 8 - Dress Rehearsal.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "magnifier",
+          "label": "Find a problem"
+        },
+        {
+          "name": "recycle",
+          "label": "Upcycle a fix"
+        },
+        {
+          "name": "megaphone",
+          "label": "Pitch it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "Design and Technologies, Levels 5 and 6: evaluating a product and process against criteria and making improvements; English, Level 5: giving and responding to feedback on a spoken presentation",
+      "shape": "15 minutes explicit, 40 minutes team time: Lucas's pitch again to judge, kind, specific and helpful feedback on Pocket Pal, a quick round, then rehearsal swaps with the Shark Scorecard and one final fix",
+      "criticalFeature": "helpful feedback names one exact thing and says what to do; a team listens, then fixes one thing rather than arguing or starting again",
+      "decisionPoints": [
+        "the Helpful or not? round",
+        "the choice check: what to do with feedback",
+        "the exit board: helpful feedback on a new pitch"
+      ],
+      "anchor": "Find a problem. Upcycle a fix. Pitch it.",
+      "catchUp": "Missed Session 7? Say: a pitch has six parts and ends by asking the sharks to invest. Your team gives you a part to learn today."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Each team's prototype, poster, cue cards and business plan"
+    ],
+    "manipulatives": [
+      "A visible timer for 90-second pitches",
+      "One Shark Scorecard per team, for scoring the team they watch"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Turn and tell",
+      "Point to A, B or C"
+    ],
+    "boardSetup": [
+      "Team pairs for the rehearsal swaps written on the board",
+      "Kind. Specific. Helpful. One glow, one grow.",
+      "The Shark Tank Day must-haves: business plan, prototype, poster with the price, cue cards"
+    ],
+    "videos": [
+      "Glossy Boys on Shark Tank Australia, watched again from Session 3 (youtube.com/watch?v=ie2Q1srSpk0)"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Make feedback helpful, score another team's pitch, then check your team is ready.",
+      "title": "Rehearsal and Feedback",
+      "subtitle": "Kind. Specific. Helpful.",
+      "sections": [
+        {
+          "title": "Make feedback helpful",
+          "columns": 1,
+          "example": {
+            "prompt": "Make this feedback helpful: It's good.",
+            "steps": [
+              "Ask: what exactly was good?",
+              "Name the exact part: the hook.",
+              "Say why: it made me want to listen."
+            ],
+            "answer": "Your hook made me want to listen."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each one so it is kind, specific and helpful.",
+              "columns": [
+                "Not helpful",
+                "Helpful"
+              ],
+              "rows": [
+                [
+                  "It's bad.",
+                  ""
+                ],
+                [
+                  "Speak better.",
+                  ""
+                ],
+                [
+                  "I liked it.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "It's bad.",
+                  "e.g. The demo was hard to see. Hold it up higher."
+                ],
+                [
+                  "Speak better.",
+                  "e.g. Slow down in the problem part so we catch every word."
+                ],
+                [
+                  "I liked it.",
+                  "e.g. I liked how the price came before the ask; it made sense."
+                ]
+              ]
+            },
+            {
+              "kind": "choice",
+              "prompt": "Which feedback would help a team most?",
+              "options": [
+                "Your pitch was okay.",
+                "Your ask said buy. Ask the sharks to invest instead.",
+                "Do it again."
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "The second. It names the exact part, the ask, and says what to change."
+            }
+          ]
+        },
+        {
+          "title": "Score a pitch",
+          "columns": 1,
+          "example": {
+            "prompt": "Score Pocket Pal on Upcycled. It is sewn from old jeans. Score out of 3?",
+            "steps": [
+              "Ask: is it made from things already used?",
+              "The whole pocket is old jeans.",
+              "Fully upcycled: 3."
+            ],
+            "answer": "3 out of 3"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Score the team you watched. 1 = not yet, 2 = nearly, 3 = yes.",
+              "columns": [
+                "Shark check",
+                "Score (1 to 3)",
+                "Why"
+              ],
+              "rows": [
+                [
+                  "Real problem?",
+                  "",
+                  ""
+                ],
+                [
+                  "Upcycled?",
+                  "",
+                  ""
+                ],
+                [
+                  "Can they make it work?",
+                  "",
+                  ""
+                ],
+                [
+                  "Will people want it?",
+                  "",
+                  ""
+                ],
+                [
+                  "Pitch: clear voice and demo",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Real problem?",
+                  "1 to 3",
+                  "names the problem and who has it"
+                ],
+                [
+                  "Upcycled?",
+                  "1 to 3",
+                  "names the used materials"
+                ],
+                [
+                  "Can they make it work?",
+                  "1 to 3",
+                  "the demo worked or didn't"
+                ],
+                [
+                  "Will people want it?",
+                  "1 to 3",
+                  "evidence from the Token Test or survey"
+                ],
+                [
+                  "Pitch: clear voice and demo",
+                  "1 to 3",
+                  "could everyone hear and see?"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Ready for Shark Tank Day",
+          "columns": 2,
+          "example": {
+            "prompt": "Pocket Pal's team got this grow: look at the sharks when you say the ask. What now?",
+            "steps": [
+              "Thank them. Don't argue.",
+              "Practise the ask, eyes up from the cue card.",
+              "Rehearse once more to check it."
+            ],
+            "answer": "Practise the ask with eyes up, then rehearse again."
+          },
+          "items": [
+            {
+              "prompt": "The most useful feedback our team got was... What will we fix?",
+              "answer": "A specific piece of feedback and one matching fix.",
+              "lines": 4
+            },
+            {
+              "kind": "table",
+              "prompt": "Tick each must-have that is ready.",
+              "columns": [
+                "Must-have",
+                "Ready?"
+              ],
+              "span": "column",
+              "rows": [
+                [
+                  "Business plan",
+                  ""
+                ],
+                [
+                  "Prototype that works",
+                  ""
+                ],
+                [
+                  "Poster with the price",
+                  ""
+                ],
+                [
+                  "Cue cards",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Business plan",
+                  "tick"
+                ],
+                [
+                  "Prototype that works",
+                  "tick"
+                ],
+                [
+                  "Poster with the price",
+                  "tick"
+                ],
+                [
+                  "Cue cards",
+                  "tick"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: plan your team's stall so the sharks want to invest.",
+      "title": "Extension: Plan Your Stall",
+      "subtitle": "Where things sit on your table changes what the sharks notice.",
+      "sections": [
+        {
+          "title": "Plan the layout",
+          "columns": 1,
+          "intro": "Shops put the thing they most want you to see at eye level and in the middle. Your stall can do the same.",
+          "example": {
+            "prompt": "Where should Pocket Pal's team put the prototype and poster?",
+            "steps": [
+              "The prototype is the star: front and centre, where sharks can touch it.",
+              "The poster stands up behind it, at eye level.",
+              "The price on the poster is big and easy to read."
+            ],
+            "answer": "Prototype front and centre, poster behind at eye level, price easy to read."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Draw a bird's-eye plan of your stall. Label the prototype, poster and where your team stands.",
+              "answer": "A labelled plan with the prototype at the front, the poster visible and the team beside, not in front of, the table."
+            },
+            {
+              "prompt": "Explain one choice in your plan. Why will it help the sharks invest?",
+              "answer": "e.g. The prototype is at the front so sharks can try it, and trying it shows it works.",
+              "lines": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Feedback frames and picture choices, then a must-have checklist.",
+      "title": "Rehearsal and Feedback",
+      "subtitle": "One glow, one grow.",
+      "sections": [
+        {
+          "title": "Helpful or not?",
+          "columns": 1,
+          "example": {
+            "prompt": "Your hook made me want to listen.",
+            "steps": [
+              "Does it name an exact part? Yes, the hook.",
+              "Is it kind? Yes.",
+              "So it is helpful."
+            ],
+            "answer": "Helpful"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "That was nice.",
+              "options": [
+                "helpful",
+                "not helpful"
+              ],
+              "answer": 1,
+              "hint": "Does it name an exact part?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Your poster's price was too small to read. Make it bigger.",
+              "options": [
+                "helpful",
+                "not helpful"
+              ],
+              "answer": 0,
+              "hint": "Does it say what to do?"
+            }
+          ]
+        },
+        {
+          "title": "My glow and grow",
+          "columns": 1,
+          "example": {
+            "prompt": "A glow and a grow for Pocket Pal.",
+            "steps": [
+              "Glow: I liked the demo because I could see it work.",
+              "Grow: Next time, look at the sharks when you say the ask.",
+              "One of each."
+            ],
+            "answer": "I liked the demo because I could see it work. Next time, look at the sharks when you say the ask."
+          },
+          "items": [
+            {
+              "prompt": "Write a glow for the team you watched.",
+              "hint": "I liked ___ because ___.",
+              "answer": "I liked ___ because ___.",
+              "lines": 2
+            },
+            {
+              "prompt": "Write a grow for the team you watched.",
+              "hint": "Next time, try ___.",
+              "answer": "Next time, try ___.",
+              "lines": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "page",
+      "label": "Shark Scorecard",
+      "description": "One per team for the rehearsal swaps. The same four checks the Grade 6s use on Shark Tank Day.",
+      "title": "Shark Scorecard",
+      "subtitle": "Score the team you watch: 1 = not yet, 2 = nearly, 3 = yes.",
+      "blocks": [
+        {
+          "heading": "Team and product:"
+        },
+        {
+          "lines": 1
+        },
+        {
+          "visual": {
+            "type": "pictograms",
+            "items": [
+              {
+                "name": "magnifier",
+                "label": "Real problem?"
+              },
+              {
+                "name": "recycle",
+                "label": "Upcycled?"
+              },
+              {
+                "name": "build",
+                "label": "Can they make it work?"
+              },
+              {
+                "name": "people",
+                "label": "Will people want it?"
+              }
+            ]
+          }
+        },
+        {
+          "organiser": {
+            "left": "Shark check",
+            "right": "Score: 1, 2 or 3",
+            "rows": 5,
+            "rowH": 34,
+            "leftContent": [
+              "Real problem?",
+              "Upcycled?",
+              "Can they make it work?",
+              "Will people want it?",
+              "Pitch: clear voice and demo"
+            ]
+          }
+        },
+        {
+          "heading": "One glow"
+        },
+        {
+          "lines": 2
+        },
+        {
+          "heading": "One grow"
+        },
+        {
+          "lines": 2
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Dress rehearsal, the last session before Shark Tank Day. One line: today every team pitches, gets feedback, and fixes one thing."
+    },
+    {
+      "kind": "resources",
+      "notes": "Team pairs for the swaps on the board. Prototypes, posters and cue cards out. Cue the Glossy Boys clip. Print the Worksheet one per team, one Shark Scorecard per team, plus a few Extension and Supported copies."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how feedback makes our product and pitch better.",
+      "successCriteria": [
+        "I can give feedback that is kind, specific and helpful.",
+        "I can score a pitch with the shark checks.",
+        "I can use feedback to make one improvement before Shark Tank Day."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Shark Tank Day is next Monday. Today is the dress rehearsal."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          "SAY: Fifteen minutes with me, then forty minutes of rehearsing and fixing."
+        ],
+        "prep": "15 minutes explicit, 40 team time. SC1 helpful feedback for all; SC2 scoring is the core; SC3 the fix. Anchor: Find a problem. Upcycle a fix. Pitch it.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Judge Lucas's pitch",
+      "visual": {
+        "type": "video",
+        "youtube": "ie2Q1srSpk0",
+        "end": 180,
+        "label": "Watch on YouTube: Glossy Boys"
+      },
+      "prompt": "Turn and tell: one exact thing Lucas did well.",
+      "notes": {
+        "answer": "open - listen for an exact part, like the demo or the hook",
+        "beats": [
+          [
+            "PLAY 0:00 to 3:00 again. The player stops itself.",
+            "SAY: You're the shark now. Watch for one exact thing he does really well."
+          ],
+          [
+            "ASK: What's one exact thing Lucas did well?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: an exact part: his hook, the demo, knowing his customers"
+          ],
+          [
+            "SCAN for an exact part, not just good.",
+            "80%+ -> cold call one pair: what would you tell them to improve?",
+            "Less -> ask: which part exactly? re-ask."
+          ],
+          [
+            "ASK: Thumbs: was that feedback about an exact part?",
+            "5 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: thumbs up"
+          ]
+        ],
+        "trap": [
+          "saying it was good, with no part named.",
+          "Fix: ask which part, student names the hook, demo or ask."
+        ],
+        "prep": "Launch. A rewatch with a new job: feedback. Grade 5s saw this clip in Session 3; he got a $75,000 deal.",
+        "sources": "Glossy Boys, Shark Tank Australia; SmartCompany on the deal.",
+        "tag": "[Launch | Planning made visible | HITS 1]",
+        "care": "Anyone can wear nail polish. Stop any teasing at once."
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "feedback",
+      "meaning": "Information about what is working and what to improve.",
+      "example": "Your demo was hard to see. Hold it higher. That's helpful feedback.",
+      "pictogram": "chat",
+      "notes": {
+        "answer": "information about what is working and what to improve",
+        "beats": [
+          "POINT to the word. SAY: Feedback. Say it with me. Feed-back.",
+          [
+            "SAY: Good feedback is kind, specific and helpful.",
+            "It names one exact thing and says what to do."
+          ],
+          [
+            "ASK: It's good. Is that specific?",
+            "5 sec. Cue: Everyone, together, on three.",
+            "EXPECT: no"
+          ],
+          [
+            "ASK: Thumbs: is Change it specific?",
+            "5 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: thumbs down"
+          ]
+        ],
+        "trap": [
+          "thinking feedback means saying what's wrong.",
+          "Fix: one glow and one grow, every time."
+        ],
+        "prep": "One key word. Glow and grow is the routine for the swaps.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Kind. Specific. Helpful.",
+      "visual": {
+        "type": "table",
+        "fontSize": 20,
+        "rows": [
+          [
+            "Not helpful",
+            "Helpful"
+          ],
+          [
+            "It's good.",
+            "Glow: your hook made me laugh and want to listen."
+          ],
+          [
+            "Change it.",
+            "Grow: look at the sharks when you say the ask."
+          ],
+          [
+            "Boring.",
+            "Grow: hold Pocket Pal up so everyone can see the demo."
+          ]
+        ]
+      },
+      "label": "One glow. One grow.",
+      "notes": {
+        "answer": "name one exact part and say what to do",
+        "beats": [
+          [
+            "POINT to the Not helpful column.",
+            "SAY: These tell the Pocket Pal team nothing. What would they even change?"
+          ],
+          [
+            "POINT to the Helpful column.",
+            "SAY: Each one names an exact part and says what to do. Kind, specific, helpful."
+          ],
+          [
+            "ASK: Score Pocket Pal on Upcycled, 1 to 3.",
+            "5 sec. Cue: fingers at your chest... show me.",
+            "EXPECT: 3, it's all old jeans"
+          ],
+          [
+            "ASK: Write one grow for my Pocket Pal pitch from last week.",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: an exact part and what to do"
+          ]
+        ],
+        "trap": [
+          "a glow that only says good job.",
+          "Fix: ask which part was good and why, student rewrites."
+        ],
+        "stretch": "Why might a grow help a team more than a glow?",
+        "help": "Frame: I liked ... because ... Next time, try ...",
+        "prep": "The model for SC1. Students heard the Pocket Pal pitch in Session 7, so their grow can be real.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Helpful or not?",
+      "routine": "boards",
+      "thinkTime": 8,
+      "pivot": "ask: which exact part, and what to do? then re-ask",
+      "followUp": "cold call one board: how would you make it helpful?",
+      "items": [
+        {
+          "text": "It was good.",
+          "answer": "Not helpful - no exact part",
+          "expect": "not helpful"
+        },
+        {
+          "text": "Hold Pocket Pal up when you say what it's made from.",
+          "answer": "Helpful - exact part and what to do",
+          "expect": "helpful"
+        },
+        {
+          "text": "Boring.",
+          "answer": "Not helpful - unkind and not specific",
+          "expect": "not helpful"
+        },
+        {
+          "text": "Slow down in the problem part. You rushed it.",
+          "answer": "Helpful - exact part and what to do",
+          "expect": "helpful"
+        },
+        {
+          "text": "Make it better.",
+          "answer": "Not helpful - better how?",
+          "expect": "not helpful"
+        },
+        {
+          "text": "Your tagline was so catchy, I'm still saying it.",
+          "answer": "Helpful - a specific glow",
+          "expect": "helpful"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Quick round. Write helpful or not helpful",
+          "for each piece of feedback."
+        ],
+        "trap": [
+          "calling a nice comment helpful when it names nothing.",
+          "Fix: ask what the team would change, student re-judges."
+        ],
+        "stretch": "Rewrite each not helpful one so it's helpful.",
+        "help": "Keep the Kind. Specific. Helpful. table on the board.",
+        "prep": "First decision point: telling helpful from vague feedback. Brisk. SC1. Six items, about 5 minutes.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 6]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "What do you do with feedback?",
+      "prompt": "Your team hears: your demo was hard to see. Point to A, B or C.",
+      "options": [
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "angry"
+          },
+          "text": "Tell them they're wrong",
+          "misconception": "defends the pitch instead of listening"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "eye"
+          },
+          "text": "Hold the product higher and face the audience"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "cross"
+          },
+          "text": "Drop the demo from the pitch",
+          "misconception": "removes the part instead of fixing it"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - fix the exact part the feedback named",
+        "beats": [
+          "SAY: Feedback is a gift, even when it stings.",
+          [
+            "ASK: What do you do?",
+            "15 sec. Cue: voices off. Point... now.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN pointing fingers, back row first.",
+            "80%+ -> reveal, cold call one B: why not C?",
+            "Less -> back to the Pocket Pal strap: fix the part, keep the idea. Re-ask."
+          ],
+          [
+            "REVEAL after fingers are scanned.",
+            "SAY: B. Fix the exact part, and keep the demo.",
+            "Sharks love seeing it work. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "choosing C because the demo caused the problem.",
+          "Fix: ask what makes a demo hard to see, student fixes that part."
+        ],
+        "prep": "Second decision point. Same idea as build, test, fix in Session 5. Under 80% means model a calm thank-you before the swaps.",
+        "tag": "[CFU | Supported application | SC3 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Rehearse, score, fix",
+      "task": "Pitch to your partner team. They score you with the Shark Scorecard and give one glow and one grow. Swap. Then fix one thing and check your must-haves.",
+      "where": "Your team table, Scorecard and Worksheet",
+      "frame": "I liked ___ because ___. Next time, try ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "microphone",
+          "clipboard",
+          "wrench"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Pitch. Score. Fix.",
+      "extendedTask": "a rehearsal swap with a scored Shark Scorecard, one glow and one grow given and received, and one fix made",
+      "notes": {
+        "answer": "every team pitches once, scores once, fixes one thing",
+        "beats": [
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Everyone, together, on three: Pitch. Score. Fix."
+          ],
+          [
+            "TIME 40 minutes: two swaps 16, fix 14, must-haves 5, full run 5.",
+            "SAY: 90 seconds to pitch, 3 minutes to score and give a glow and a grow."
+          ],
+          [
+            "TIME at 30: stop everyone.",
+            "ASK: Thumbs: has your team made its fix?",
+            "5 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: thumbs up"
+          ],
+          "CIRCULATE. Ask: what was your grow, and what did you change?"
+        ],
+        "trap": [
+          "arguing with the feedback instead of fixing.",
+          "Fix: thank them, choose one fix, rehearse it."
+        ],
+        "stretch": "Extension: plan your stall layout so sharks notice what matters.",
+        "help": "Supported Worksheet: glow and grow frames. Sit in on the team's first swap.",
+        "prep": "Every must-have stored together and named today: plan, prototype, poster with the price, cue cards. Shark Tank Day is Monday 7 December.",
+        "tag": "[You Do | Independent application | SC3 | HITS 5, 10]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "A team pitches: Ever lost a sock? Buy our Sock Buddy!",
+        "Write one kind, specific, helpful piece of feedback for them."
+      ],
+      "notes": {
+        "answer": "e.g. Grow: ask the sharks to invest, not buy. Glow: the question hook works.",
+        "beats": [
+          "SAY: A new pitch. Work on your own.",
+          [
+            "ASK: Write one kind, specific, helpful piece of feedback.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: names an exact part and what to do"
+          ],
+          "RECORD who writes good or bad with no part named."
+        ],
+        "trap": [
+          "Good job!",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC1, with the buy-not-invest slip as the expert catch. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC1, SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner the one thing your team fixed today.",
+      "selfAssessment": "Fist to five: how ready is your team for Shark Tank Day?",
+      "notes": {
+        "answer": "one specific fix",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: Fist to five: how ready is your team for Shark Tank Day?",
+            "5 sec. Cue: fingers at your chest... show me.",
+            "EXPECT: mostly four and five"
+          ],
+          "RECORD teams showing fists to threes. Check in with them before Monday.",
+          [
+            "ASK: Tell your partner the one thing your team fixed today.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: an exact fix"
+          ]
+        ],
+        "prep": "Last session. Everything stored for Monday 7 December: plan, prototype, poster with the price, cue cards. SC3.",
+        "tag": "[Closing | Retention and recall | SC3 | HITS 9]"
+      }
+    }
+  ]
+}

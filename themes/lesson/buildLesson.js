@@ -218,7 +218,7 @@ async function buildLesson(authored, opts) {
         const lines = toList(slide.lines);
         if (slide.kind === "launch" && !lines.length && slide.visual) {
           s = T.heroVisualSlide(pres, badge, slide.title, slide.visual, notes, footer, {
-            label: slide.label, prompt: slide.prompt, badgeColor: color, reserveBottom: slide.reveal ? byBand(T.S, 1.15, 1.05, 0.9) : 0,
+            label: slide.label, prompt: slide.prompt, link: slide.link, badgeColor: color, reserveBottom: slide.reveal ? byBand(T.S, 1.15, 1.05, 0.9) : 0,
           });
         } else {
           s = T.contentSlide(pres, badge, color, slide.title, lines, notes, footer, slide.visual || undefined);

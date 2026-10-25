@@ -1,0 +1,875 @@
+{
+  "lesson": {
+    "subject": "inquiry",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 6,
+    "session": 5,
+    "variant": 3,
+    "minutes": 60,
+    "title": "Build It",
+    "subtitle": "Shark Tank | Term 4 Week 6, Session 5",
+    "meta": "Grade 5 Inquiry | Shark Tank",
+    "footer": "Shark Tank | Grade 5 Inquiry | Week 6 Session 5",
+    "outputFolder": "T4W6_SharkTank_S5_Build_It",
+    "fileName": "Session 5 - Build It.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "build",
+          "label": "Build"
+        },
+        {
+          "name": "magnifier",
+          "label": "Test"
+        },
+        {
+          "name": "wrench",
+          "label": "Fix"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "Design and Technologies, Levels 5 and 6: producing a design safely using suitable materials, joins and tools, then testing and improving it; Economics and Business, Levels 5 and 6: using resources to make a product",
+      "shape": "15 minutes explicit, 40 minutes build: kid inventors on BTN who tested for six months, build-test-fix on Pocket Pal, choosing a join, a quick round, then the first build",
+      "criticalFeature": "a prototype is built to be tested; when a test fails, fix the part that failed, don't throw out the idea",
+      "decisionPoints": [
+        "the Which join? round",
+        "the choice check: the best fix for a failed test",
+        "the exit board: a test and a fix for a new product"
+      ],
+      "anchor": "Find a problem. Upcycle a fix. Pitch it.",
+      "catchUp": "Missed Session 4? Say: your team's business plan lists every resource and who brings it. Read it with your team before you build."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Each team's business plan from Session 4"
+    ],
+    "manipulatives": [
+      "The junk tubs and everything teams brought from home",
+      "Masking tape, scissors, string, staplers, split pins, needles and thread",
+      "A hot glue station away from the walkways: a parent helper if one has offered, or you run it in two 5-minute windows",
+      "The Pocket Pal model and the old jeans for the I Do"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Turn and tell",
+      "Point to A, B or C"
+    ],
+    "boardSetup": [
+      "Build. Test. Fix. written large on the board",
+      "Safety rules on the board: hot glue at the station only, scissors walk point down, clean-up at 5 minutes to go"
+    ],
+    "videos": [
+      "BTN Card Game Creators (2024, 3 min 25 sec): three students invent Swipee, test it for six months, then sell it (abc.net.au/btn/classroom/card-game-creators/104244662)"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Your team's design and test log: joins, a labelled sketch, and what you tested and fixed.",
+      "title": "Design and Test Log",
+      "subtitle": "Build. Test. Fix.",
+      "sections": [
+        {
+          "title": "Choose the join",
+          "columns": 1,
+          "example": {
+            "prompt": "Join a bottle lid to a cardboard box. Which join?",
+            "steps": [
+              "What are the materials? Plastic and card.",
+              "Does it need to be strong? Yes, it holds weight.",
+              "Hot glue holds plastic and card strongly, at the adult station."
+            ],
+            "answer": "Hot glue"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Choose the best join and say why.",
+              "columns": [
+                "What you are joining",
+                "Best join",
+                "Why"
+              ],
+              "rows": [
+                [
+                  "Two pieces of an old T-shirt",
+                  "",
+                  ""
+                ],
+                [
+                  "A propeller that has to turn",
+                  "",
+                  ""
+                ],
+                [
+                  "The pages of a booklet",
+                  "",
+                  ""
+                ],
+                [
+                  "A cork onto a plastic tub",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Two pieces of an old T-shirt",
+                  "sew with needle and thread",
+                  "fabric bends, stitches stay strong"
+                ],
+                [
+                  "A propeller that has to turn",
+                  "split pin",
+                  "it holds the wheel but lets it turn"
+                ],
+                [
+                  "The pages of a booklet",
+                  "stapler",
+                  "quick and strong for thin paper"
+                ],
+                [
+                  "A cork onto a plastic tub",
+                  "hot glue",
+                  "it grips plastic and cork"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Our build",
+          "columns": 1,
+          "example": {
+            "prompt": "Label one part of Pocket Pal.",
+            "steps": [
+              "Name the part: the strap.",
+              "What is it made from? A jeans belt loop.",
+              "How is it joined? Sewn on."
+            ],
+            "answer": "Strap | jeans belt loop | sewn"
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Sketch your prototype. Label each part, what it is made from and how it is joined.",
+              "answer": "A labelled sketch: each part named, its upcycled material and its join."
+            },
+            {
+              "kind": "table",
+              "prompt": "List three parts of your prototype.",
+              "columns": [
+                "Part",
+                "Made from",
+                "Join"
+              ],
+              "rows": [
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "e.g. base",
+                  "cereal box card",
+                  "hot glue"
+                ],
+                [
+                  "e.g. clip",
+                  "bread tag",
+                  "string, tied"
+                ],
+                [
+                  "e.g. label",
+                  "old magazine",
+                  "masking tape"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Test and fix",
+          "columns": 2,
+          "example": {
+            "prompt": "Pocket Pal test: hang it, put a hat and a bottle in. The strap rips. What now?",
+            "steps": [
+              "What failed? Only the strap.",
+              "Why? One thin layer, one row of stitches.",
+              "Fix that part: double the strap and sew it twice."
+            ],
+            "answer": "Keep the idea; make the strap stronger."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Test your prototype. Write what happened and your fix.",
+              "columns": [
+                "Our test",
+                "What happened",
+                "Our fix"
+              ],
+              "span": "column",
+              "rows": [
+                [
+                  "",
+                  "",
+                  ""
+                ],
+                [
+                  "",
+                  "",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "e.g. hang it with a full bottle",
+                  "the clip slipped",
+                  "add a second loop of string"
+                ],
+                [
+                  "e.g. drop it from desk height",
+                  "the lid came off",
+                  "hot glue the lid"
+                ]
+              ]
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Leo's team taped a drink holder with masking tape. It fell apart when it got wet. Find their mistake and fix it.",
+              "work": [
+                "Our idea doesn't work.",
+                "Let's start a new idea."
+              ],
+              "answer": "The idea is fine; the join failed. Fix: use hot glue or stitches, which hold when wet, then test again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: use strong shapes to make your prototype tougher.",
+      "title": "Extension: Make It Stronger",
+      "subtitle": "Engineers make weak materials strong with clever shapes.",
+      "sections": [
+        {
+          "title": "Strong shapes",
+          "columns": 1,
+          "intro": "Thin card bends easily. Folded into a triangle tube, or layered three times, the same card becomes much stronger.",
+          "example": {
+            "prompt": "A flat piece of card can't hold up a book. How could the same card hold it?",
+            "steps": [
+              "Flat card bends under weight.",
+              "Fold it into a triangle tube: triangles don't squash easily.",
+              "Stand two triangle tubes under the book."
+            ],
+            "answer": "Fold the card into triangle tubes."
+          },
+          "items": [
+            {
+              "prompt": "Why is a triangle tube stronger than a flat sheet of the same card?",
+              "answer": "The triangle shape spreads the weight down its sides and can't squash flat, so it doesn't bend.",
+              "lines": 3
+            },
+            {
+              "kind": "choice",
+              "prompt": "A bird house on a pole keeps tipping in the wind. Which change helps most?",
+              "options": [
+                "a wider, heavier base",
+                "a taller, thinner pole",
+                "brighter paint"
+              ],
+              "answer": 0,
+              "reason": true,
+              "explain": "A wider, heavier base. It lowers the weight and spreads it out, so the wind can't tip it."
+            }
+          ]
+        },
+        {
+          "title": "Test like an engineer",
+          "columns": 1,
+          "example": {
+            "prompt": "How could you test whether a cardboard shelf is strong enough?",
+            "steps": [
+              "Decide what it must hold: three books.",
+              "Add one book at a time and watch.",
+              "Record when it bends, then fix that part."
+            ],
+            "answer": "Add books one at a time and record when it bends."
+          },
+          "items": [
+            {
+              "prompt": "Plan a fair test for your team's prototype. What will you add or do, one step at a time?",
+              "answer": "e.g. Hang one more item each time until it slips; record how many it held.",
+              "lines": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Picture choices for joins, and test and fix sentence frames.",
+      "title": "Design and Test Log",
+      "subtitle": "Build. Test. Fix.",
+      "sections": [
+        {
+          "title": "Pick the join",
+          "columns": 1,
+          "example": {
+            "prompt": "Join two pieces of fabric.",
+            "visual": {
+              "type": "pictograms",
+              "items": [
+                {
+                  "name": "scissors",
+                  "label": "cut"
+                },
+                {
+                  "name": "pencil",
+                  "label": "mark"
+                },
+                {
+                  "name": "wrench",
+                  "label": "join"
+                }
+              ]
+            },
+            "steps": [
+              "Fabric bends.",
+              "Stitches bend with it.",
+              "Sew it."
+            ],
+            "answer": "Sew it."
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "A propeller that has to turn",
+              "options": [
+                "split pin",
+                "stapler",
+                "glue stick"
+              ],
+              "answer": 0,
+              "hint": "Which join lets it turn?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "The pages of a booklet",
+              "options": [
+                "hot glue",
+                "stapler",
+                "sewing"
+              ],
+              "answer": 1,
+              "hint": "Paper is thin."
+            },
+            {
+              "kind": "choice",
+              "prompt": "A quick test to see where a part should go",
+              "options": [
+                "masking tape",
+                "hot glue",
+                "sewing"
+              ],
+              "answer": 0,
+              "hint": "Which join comes off easily?"
+            }
+          ]
+        },
+        {
+          "title": "Test and fix",
+          "columns": 1,
+          "example": {
+            "prompt": "Pocket Pal's strap ripped.",
+            "steps": [
+              "We tested: hang it with a hat and bottle.",
+              "What happened: the strap ripped.",
+              "Our fix: double the strap."
+            ],
+            "answer": "We tested hanging it. The strap ripped. Our fix: double the strap."
+          },
+          "items": [
+            {
+              "prompt": "Write your team's test and fix.",
+              "hint": "We tested ___. What happened: ___. Our fix: ___.",
+              "answer": "We tested ___. What happened: ___. Our fix: ___.",
+              "lines": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Build day one. One line: today every team builds its prototype, tests it, and fixes what breaks."
+    },
+    {
+      "kind": "resources",
+      "notes": "Hot glue station away from walkways: a parent helper if one has offered (the Family Note asked), otherwise you run it in two 5-minute windows. Junk tubs from the homerooms out. Cue the BTN clip. Print the Worksheet one per team, plus a few Extension and Supported copies. 5 minutes for clean-up."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning how designers build and test a prototype.",
+      "successCriteria": [
+        "I can explain what a prototype is.",
+        "I can choose a strong join for my materials.",
+        "I can test our prototype and plan one fix."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today you stop planning and start building."
+          ],
+          "SAY: Read the I can lines with me. Everyone, together, on three.",
+          "SAY: Fifteen minutes with me, then forty minutes of building. Let's be quick."
+        ],
+        "prep": "15 minutes explicit, 40 build. SC1 what a prototype is, for all; SC2 joins is the core; SC3 test and fix. Anchor: Find a problem. Upcycle a fix. Pitch it.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Six months of testing",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "dice",
+            "label": "invent"
+          },
+          {
+            "name": "magnifier",
+            "label": "test"
+          },
+          {
+            "name": "shop",
+            "label": "sell"
+          }
+        ]
+      },
+      "prompt": "Watch on BTN: Card Game Creators",
+      "link": "https://www.abc.net.au/btn/classroom/card-game-creators/104244662",
+      "notes": {
+        "answer": "they spent six months testing and improving before selling it",
+        "beats": [
+          [
+            "PLAY the BTN story from the link, 3 min 25 sec.",
+            "SAY: Watch what these three students do between inventing and selling."
+          ],
+          [
+            "ASK: What did they do before they sold their game?",
+            "20 sec. Turn and tell, partner A first.",
+            "EXPECT: they tested it, changed the rules, made demo packs"
+          ],
+          [
+            "SCAN for testing and changing.",
+            "80%+ -> cold call one pair: why not sell it straight away?",
+            "Less -> replay the part about the rules, re-ask."
+          ],
+          [
+            "ASK: Thumbs: will your prototype work first time?",
+            "5 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: mixed, which is fine"
+          ]
+        ],
+        "trap": [
+          "thinking good inventors get it right first time.",
+          "Fix: ask how long they spent changing the rules, student says six months."
+        ],
+        "prep": "Launch. Ben, Sam and Jacob invented Swipee in 2022 and refined it for six months before selling.",
+        "sources": "BTN Classroom, Card Game Creators, 20 August 2024.",
+        "tag": "[Launch | Planning made visible | HITS 1]"
+      },
+      "label": "Turn and tell: what did they do before they sold it?"
+    },
+    {
+      "kind": "keyWord",
+      "word": "prototype",
+      "meaning": "A first working model of a product, built to test and improve.",
+      "example": "Our first Pocket Pal is a prototype. We test it, then make it better.",
+      "pictogram": "build",
+      "notes": {
+        "answer": "a first working model, built to test and improve",
+        "beats": [
+          "POINT to the word. SAY: Prototype. Say it with me. Pro-to-type.",
+          [
+            "SAY: A prototype isn't the finished product. It's the one you test.",
+            "You only need one, and it needs to work."
+          ],
+          [
+            "ASK: Does a prototype have to be perfect?",
+            "10 sec. Cue: Everyone, together, on three.",
+            "EXPECT: no"
+          ],
+          [
+            "ASK: How many prototypes does your team need?",
+            "5 sec. Cue: fingers at your chest... show me.",
+            "EXPECT: one"
+          ]
+        ],
+        "trap": [
+          "spending the whole session decorating.",
+          "Fix: make it work first, make it pretty in Week 7."
+        ],
+        "prep": "One key word. Each team makes one prototype for Shark Tank Day, not a batch to sell.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Build. Test. Fix.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "build",
+            "label": "Build: sew the pocket"
+          },
+          {
+            "name": "magnifier",
+            "label": "Test: hat and bottle in"
+          },
+          {
+            "name": "wrench",
+            "label": "Fix: double the strap"
+          }
+        ]
+      },
+      "label": "Fix the part that failed. Keep the idea.",
+      "notes": {
+        "answer": "fix the strap that failed; keep the idea",
+        "beats": [
+          [
+            "HOLD UP the Pocket Pal.",
+            "SAY: I built it. Then I tested it: hat in, bottle in, hung on a hook."
+          ],
+          [
+            "SAY: The strap ripped. I felt like giving up.",
+            "But the pocket worked. Only the strap failed."
+          ],
+          [
+            "ASK: Do I throw out Pocket Pal, or fix the strap?",
+            "5 sec. Cue: Everyone, together, on three.",
+            "EXPECT: fix the strap"
+          ],
+          [
+            "ASK: It held. Does Pocket Pal pass the test now?",
+            "5 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: thumbs up"
+          ]
+        ],
+        "trap": [
+          "a team scrapping its idea after one failed test.",
+          "Fix: ask which part failed, team fixes only that part."
+        ],
+        "stretch": "What test would show Pocket Pal can hold a heavy lunchbox?",
+        "help": "Point to each picture: build, test, fix. Student says one step each.",
+        "prep": "The model for SC3. Critical feature: a failed test points to one part; fix that part.",
+        "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Choose the join",
+      "visual": {
+        "type": "table",
+        "fontSize": 20,
+        "rows": [
+          [
+            "Join",
+            "Best for",
+            "Watch out"
+          ],
+          [
+            "Masking tape",
+            "Quick tests",
+            "Peels off"
+          ],
+          [
+            "Hot glue",
+            "Plastic, card, wood",
+            "Adult station only"
+          ],
+          [
+            "Sewing",
+            "Fabric",
+            "Slow but strong"
+          ],
+          [
+            "Split pin",
+            "Parts that turn",
+            "Needs a hole"
+          ],
+          [
+            "Stapler",
+            "Paper and thin card",
+            "Not for thick card"
+          ]
+        ]
+      },
+      "label": "Test with tape. Build with the strong join.",
+      "notes": {
+        "answer": "match the join to the materials and the job",
+        "beats": [
+          [
+            "POINT to each row.",
+            "SAY: Tape is for testing. When you know where a part goes, use the strong join."
+          ],
+          [
+            "SAY: Pocket Pal is fabric, so I sewed it.",
+            "If I'd used tape, it would have peeled off the first day."
+          ],
+          [
+            "ASK: Which join for a wheel that has to spin?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: split pin"
+          ]
+        ],
+        "trap": [
+          "taping the whole prototype together.",
+          "Fix: ask what happens when it's carried or wet, team picks a strong join."
+        ],
+        "stretch": "Which join would you use on fabric and card together, and why?",
+        "help": "Point to the Best for column and match it with the student's material.",
+        "prep": "The model for SC2. Hot glue is adult-supervised at the station, never on desks.",
+        "care": "Hot glue burns. Parts go to the station; the helper or you run it.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Which join?",
+      "routine": "boards",
+      "thinkTime": 8,
+      "pivot": "ask: what are the materials, and does it move? then re-ask",
+      "followUp": "cold call one board: why that join?",
+      "items": [
+        {
+          "text": "Two pieces of fabric",
+          "answer": "Sewing - fabric bends and stitches hold",
+          "expect": "sew"
+        },
+        {
+          "text": "Testing where a handle should go",
+          "answer": "Masking tape - easy to move",
+          "expect": "masking tape"
+        },
+        {
+          "text": "A bottle cap onto a cardboard box",
+          "answer": "Hot glue - plastic and card, at the station",
+          "expect": "hot glue"
+        },
+        {
+          "text": "An arm that has to swing",
+          "answer": "Split pin - it lets the arm move",
+          "expect": "split pin"
+        },
+        {
+          "text": "A paper label onto a cardboard box",
+          "answer": "Stapler or glue stick - paper onto card",
+          "expect": "stapler or glue stick"
+        }
+      ],
+      "notes": {
+        "say": [
+          "Quick round. Write the best join",
+          "for each one."
+        ],
+        "trap": [
+          "writing tape for everything.",
+          "Fix: ask whether it must last until Shark Tank Day, student picks again."
+        ],
+        "stretch": "Name a second join that would also work, and which is better.",
+        "help": "Keep the join table up while students answer.",
+        "prep": "First decision point: matching joins to materials. Brisk, one line of feedback each. SC2. Five items, about 4 minutes.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 6]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "The test failed. What now?",
+      "prompt": "A phone stand tips over when the phone goes on. Point to A, B or C.",
+      "options": [
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "palette"
+          },
+          "text": "Paint it a brighter colour",
+          "misconception": "fixes how it looks, not the part that failed"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "wrench"
+          },
+          "text": "Make the base wider and heavier"
+        },
+        {
+          "visual": {
+            "type": "pictogram",
+            "name": "cross"
+          },
+          "text": "Throw it out and start a new idea",
+          "misconception": "thinks a failed test means a failed idea"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - fix the base, the part that failed",
+        "beats": [
+          "SAY: Find the part that failed first.",
+          [
+            "ASK: What's the best fix?",
+            "15 sec. Cue: voices off. Point... now.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN pointing fingers, back row first.",
+            "80%+ -> reveal, cold call one B: why not C?",
+            "Less -> back to the Pocket Pal strap, re-ask."
+          ],
+          [
+            "REVEAL after fingers are scanned.",
+            "SAY: B. The base failed, so fix the base. Keep the idea. Tick or fix."
+          ]
+        ],
+        "trap": [
+          "choosing C because the stand didn't work.",
+          "Fix: ask which part failed, student re-chooses."
+        ],
+        "prep": "Second decision point. Under 80% means stop each team at its first failed test and ask: which part?",
+        "tag": "[CFU | Supported application | SC3 | HITS 7]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Build your prototype",
+      "task": "Build your prototype from your business plan. At 30 minutes, test it. Write what happened and plan one fix.",
+      "where": "Your team table and Worksheet",
+      "frame": "We tested ___. It ___. Our fix is ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "build",
+          "magnifier",
+          "wrench"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Build. Test. Fix.",
+      "extendedTask": "a first working prototype, tested once, with a test and fix recorded",
+      "notes": {
+        "answer": "a working prototype, one test, one planned fix",
+        "beats": [
+          [
+            "SAY: Read the task, complete each part, check your work.",
+            "Everyone, together, on three: Build. Test. Fix."
+          ],
+          [
+            "TIME 40 minutes. At 30, stop everyone.",
+            "ASK: Thumbs: has your team tested it yet?",
+            "5 sec. Cue: thumbs at your chest... show me.",
+            "EXPECT: thumbs up"
+          ],
+          "CIRCULATE. Ask: which part failed? What's your fix?",
+          "TIME at 5 to go: clean up, name on the prototype, store it."
+        ],
+        "trap": [
+          "decorating before it works.",
+          "Fix: test first. Decoration waits for Week 7."
+        ],
+        "stretch": "Extension: strong shapes and a fair test.",
+        "help": "Supported Worksheet: picture choices and test-fix frames. Plan the first join together.",
+        "prep": "Store prototypes safely with team names. Week 7 finishes the build and adds marketing.",
+        "care": "Hot glue at the station only: the helper, or you in two 5-minute windows.",
+        "tag": "[You Do | Independent application | SC3 | HITS 5, 10]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "A cardboard bird house goes soggy in the rain.",
+        "Write one test you'd do and one fix."
+      ],
+      "notes": {
+        "answer": "e.g. test: spray it with water; fix: cover the roof with an old plastic bag",
+        "beats": [
+          "SAY: A new product. Work on your own.",
+          [
+            "ASK: Write one test and one fix.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a water test and a waterproof fix"
+          ],
+          "RECORD who writes start again or paint it."
+        ],
+        "trap": [
+          "Make a new bird house.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC3 on a new product. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2, SC3 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner which part of your prototype failed, and your fix.",
+      "selfAssessment": "Fist to five: how well does your prototype work right now?",
+      "notes": {
+        "answer": "a named part and a fix",
+        "beats": [
+          "SAY: Let's read our I can lines together. Everyone, together, on three.",
+          [
+            "ASK: Fist to five: how well does your prototype work right now?",
+            "5 sec. Cue: fingers at your chest... show me.",
+            "EXPECT: mostly two to four"
+          ],
+          "RECORD teams showing fists and ones. Visit them first next week.",
+          [
+            "ASK: Tell your partner which part failed, and your fix.",
+            "20 sec. Turn and tell, partner B first.",
+            "EXPECT: the strap ripped, we'll double it"
+          ]
+        ],
+        "prep": "Next week: finish the build and brand it. Teams bring anything their fix needs. SC3.",
+        "tag": "[Closing | Retention and recall | SC3 | HITS 9]"
+      }
+    }
+  ]
+}

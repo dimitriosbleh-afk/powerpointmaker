@@ -85,7 +85,7 @@ then the `launch`, then `keyWord` cards if any, then the body, `exitTicket`,
 | `resources` | | | Teacher Resources from `resources` + `materials` |
 | `dailyReview` | `title`, `from` | `prompts`, `visual`, `reveal` | numeracy review; a visual with no prompts fills the slide. `from` names what it retrieves (see Taught log) |
 | `fluency` | `title`, and `prompts` or `visual` | `reveal`, `label` | one numeral or fact, hero-sized; or a visual such as a column sum |
-| `launch` | `title` | `lines`, `visual`, `label`, `prompt`, `reveal` | hero visual (no lines) or hero statement panel |
+| `launch` | `title` | `lines`, `visual`, `label`, `prompt`, `link`, `reveal` | hero visual (no lines) or hero statement panel; `link` makes the prompt text clickable, as on `heroVisual` |
 | `li` | `learningIntention`, `successCriteria` (exactly 3) | | LI and SC |
 | `keyWord` | `word`, `meaning`, `pictogram` or `image` | `example`, `routine` | one word card with its picture |
 | `heroVisual` | `badge`, `title`, `visual` | `label`, `prompt`, `link`, `badgeColor`, `reveal` | the representation IS the slide. `link` (a full http(s) URL) makes the `prompt` bar text clickable, e.g. a listen/watch slide that opens its video |
@@ -218,6 +218,7 @@ Anywhere a `visual` is accepted:
 { "type": "text", "text": "9" }
 { "type": "table", "rows": [["Animal", "Legs"], ["Dog", "4"]] }
 { "type": "image", "path": "assets/unit/photo.jpg" }
+{ "type": "video", "youtube": "IDpfl2aGruE" }                  "start": 30, "end": 180 (seconds), "label": "Watch on YouTube: Locker Board"
 { "type": "angle", "rays": [0, 65], "protractor": true }
 { "type": "angle", "rays": [0, 130, 180], "arcs": [{ "from": 0, "to": 130, "label": "130°" }, { "from": 130, "to": 180, "label": "x" }] }
 { "type": "angle", "rays": [0, 90], "arcs": [{ "from": 0, "to": 90, "right": true }] }
@@ -250,6 +251,12 @@ in one coordinate system; square corners get markers automatically.
 `spinner`: sectors run clockwise from the top, and a colour word in the label
 sets the fill. All of these are drawn once and look the same on slides and
 paper.
+
+`video`: a YouTube clip embedded on the slide (it plays inside PowerPoint),
+with YouTube's own still as its cover and a text link under it that opens
+the clip anywhere. `start` and `end` (seconds) make the embedded player play
+just that stretch; the text link opens at `start`, including after a Google Slides import. Slides only, never
+paper. The still is fetched once into `assets/videos/` (gitignored).
 
 `angle`: `rays` are directions in degrees, anticlockwise from pointing
 right, from one vertex; `arcs` mark the angle anticlockwise from `from` to

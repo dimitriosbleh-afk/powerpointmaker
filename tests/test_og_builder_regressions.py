@@ -6,6 +6,7 @@ Run from the repository root:
 
 import importlib.util
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -492,6 +493,219 @@ class OgBuilderRegressionTests(unittest.TestCase):
             "Write the sum beside each word. Parts: -al (relating to)")
         warnings, _ = self._run_gate(week)
         self.assertEqual(warnings, [])
+
+    def test_round_gloss_counts_only_on_its_own_slide(self):
+        """v1.6 rounds put one item on each slide, so a gloss printed on item 1
+        is not on the face of item 2."""
+        week = self._junct_week([])
+        week["sessions"][0]["new_morph_activity"] = {
+            "rule": "Write the word that fits.",
+            "round": [
+                {"prompt": "A space rock that looks like a star", "answer": "asteroid",
+                 "choices": ["asteroid\n-oid (like)"], "why": "it looks like a star"},
+                {"prompt": "A rock in space", "answer": "asteroid",
+                 "why": "-oid makes it like a star"},
+            ],
+        }
+        warnings, _ = self._run_gate(week)
+        self.assertEqual(len(warnings), 1, warnings)
+        self.assertIn("'-oid'", warnings[0])
+
+    def test_round_decks_hide_each_answer_behind_a_click(self):
+        """Term 4 Week 2 is the first week built on rounds: the gate checks every
+        item's green answer bar is click-revealed, and the worked item is not."""
+        spec = ROOT / "og_planner" / "weeks" / "term4_week2.json"
+        with tempfile.TemporaryDirectory(prefix="og_round_regression_") as temp:
+            decks = self.build_spec(spec, Path(temp))
+            self.assertEqual(len(decks), 5)
+            week = json.loads(spec.read_text(encoding="utf-8"))
+            worked = week["sessions"][0]["new_morph_activity"]["round"][0]
+            self.assertTrue(worked.get("worked"))
+            with zipfile.ZipFile(decks[0]) as archive:
+                texts = {}
+                for name in archive.namelist():
+                    if re.fullmatch(r"ppt/slides/slide\d+\.xml", name):
+                        texts[name] = archive.read(name).decode("utf-8")
+            first = worked["prompt"].splitlines()[0]
+            worked_slides = [x for x in texts.values() if first in x]
+            self.assertEqual(len(worked_slides), 1)
+            self.assertNotIn("<p:timing", worked_slides[0])
+
+    # ------------------------------------------------ v1.7 five-day shape
+    V17_SPEC = ROOT / "og_planner" / "weeks" / "term4_week3.json"
+
+    def _slide_xml(self, deck):
+        with zipfile.ZipFile(deck) as archive:
+            names = sorted(
+                (n for n in archive.namelist()
+                 if re.fullmatch(r"ppt/slides/slide\d+\.xml", n)),
+                key=lambda n: int(re.search(r"(\d+)\.xml", n).group(1)))
+            return [archive.read(n).decode("utf-8") for n in names]
+
+    def test_v17_week_builds_one_deck_per_day_type(self):
+        """Kate Watt (Oct 2026): one morpheme a week, each day only its own blocks."""
+        with tempfile.TemporaryDirectory(prefix="og_v17_regression_") as temp:
+            decks = self.build_spec(self.V17_SPEC, Path(temp))
+            names = [d.name for d in decks]
+            self.assertEqual(names, [
+                "1. Monday (port).pptx", "2. Tuesday (port spelling).pptx",
+                "3. Wednesday (port building).pptx", "4. Thursday (parts of speech).pptx",
+                "5. Friday (week review).pptx"])
+            monday, tuesday, wednesday, thursday, friday = (
+                "\n".join(self._slide_xml(d)) for d in decks)
+            # Monday teaches: no dictation, spelling or grammar
+            self.assertNotIn("Write this sentence", monday)
+            self.assertNotIn("Spell the word", monday)
+            self.assertIn("Your keyword and one sentence", monday)
+            # Tuesday: no card drill, but a dictated bank and dictation
+            self.assertNotIn("Morphology Review", tuesday)
+            self.assertIn("Write this sentence", tuesday)
+            # Wednesday: build and break only
+            self.assertIn("Build and Break", wednesday)
+            self.assertNotIn("Write this sentence", wednesday)
+            # Thursday: parts of speech and the week's one grammar block
+            self.assertIn("Suffix Parts of Speech", thursday)
+            self.assertIn("I do - ", thursday)
+            self.assertNotIn("I do - ", friday.split("Trickiest")[0])
+            self.assertIn("Trickiest this week?", friday)
+
+            # The dictated sound bank reveals every box on a click.
+            bank = next(x for x in self._slide_xml(decks[1]) if "Write the sound" in x)
+            self.assertIn("<p:timing", bank)
+            self.assertEqual(bank.count("<p:spTgt"), 9)
+            # Parts-of-speech cards hide the answer behind a click.
+            pos = [x for x in self._slide_xml(decks[3]) if ">noun<" in x or ">adjective<" in x]
+            self.assertTrue(pos)
+            self.assertTrue(all("<p:timing" in x for x in pos))
+            # COPS replaced CUPS school-wide.
+            with zipfile.ZipFile(decks[1]) as archive:
+                notes = "".join(archive.read(n).decode("utf-8") for n in archive.namelist()
+                                if n.startswith("ppt/notesSlides/notesSlide"))
+            self.assertIn("Mark with COPS", notes)
+            self.assertIn("O - Organisation", notes)
+            self.assertNotIn("CUPS", notes)
+
+    def _v17_week(self, targets, new_lw="economy"):
+        teach = {"day": "Monday", "type": "teach",
+                 "new_morphology": {"morph": "port", "type": "root"},
+                 "words_to_read_new": [{"word": "transport"}, {"word": "export"}]}
+        spell = {"day": "Tuesday", "type": "spell",
+                 "learned_words": {"new": {"word": new_lw}, "review": []},
+                 "dictation": [{"meter": "green", "sentence": "x", "targets": targets}]}
+        return {"term": 9, "week": 9, "sessions": [teach, spell]}
+
+    def test_v17_dictation_must_carry_this_weeks_teaching(self):
+        """Yoshimoto's planning slide: dictation must prioritise what was introduced."""
+        week = self._v17_week(["captain", "salmon"])
+        OG.WARNINGS.clear()
+        OG.NOTES.clear()
+        OG.validate_dictation_sources("Tuesday", week, week["sessions"][1])
+        self.assertTrue(any("this week's teaching" in w for w in OG.WARNINGS), OG.WARNINGS)
+
+    def test_v17_dictation_wants_a_throwback(self):
+        """All-this-week targets build, with a NOTE asking for one older word."""
+        week = self._v17_week(["transported", "economy"])
+        OG.WARNINGS.clear()
+        OG.NOTES.clear()
+        OG.validate_dictation_sources("Tuesday", week, week["sessions"][1])
+        self.assertEqual(OG.WARNINGS, [])
+        self.assertTrue(any("week or two back" in n for n in OG.NOTES), OG.NOTES)
+        week = self._v17_week(["export", "entrepreneur"])
+        OG.WARNINGS.clear()
+        OG.NOTES.clear()
+        OG.validate_dictation_sources("Tuesday", week, week["sessions"][1])
+        self.assertEqual((OG.WARNINGS, OG.NOTES), ([], []))
+
+    def test_v17_bank_may_carry_mondays_morpheme_but_not_a_later_one(self):
+        """The bank is dictated in v1.7, so Monday's morpheme is retrieval on
+        Tuesday; a morpheme taught later in the week is still fatal."""
+        teach = {"day": "Monday", "type": "teach",
+                 "new_morphology": {"morph": "port", "type": "root"}}
+        spell = {"day": "Tuesday", "type": "spell",
+                 "sound_bank": [{"morph": "port", "type": "root"},
+                                {"morph": "tract", "type": "root"}],
+                 "words_to_spell_review": [{"word": "transport"}, {"word": "tractor"}]}
+        later = {"day": "Thursday", "type": "teach",
+                 "new_morphology": {"morph": "tract", "type": "root"}}
+        week = {"sessions": [teach, spell, later]}
+        OG.WARNINGS.clear()
+        OG.validate_sound_bank("Tuesday", spell, week)
+        self.assertEqual(len(OG.WARNINGS), 1, OG.WARNINGS)
+        self.assertIn("'tract'", OG.WARNINGS[0])
+
+    V18_SPEC = ROOT / "og_planner" / "weeks" / "term4_week4.json"
+
+    def _notes_text(self, deck):
+        with zipfile.ZipFile(deck) as archive:
+            return "".join(archive.read(n).decode("utf-8") for n in archive.namelist()
+                           if n.startswith("ppt/notesSlides/notesSlide"))
+
+    def test_v18_short_week_opens_every_day_with_review(self):
+        """James (22 Oct 2026): cards and reading review every day, hook with a
+        picture, frame-based parts of speech, part boxes, four-session week."""
+        with tempfile.TemporaryDirectory(prefix="og_v18_regression_") as temp:
+            decks = self.build_spec(self.V18_SPEC, Path(temp))
+            self.assertEqual([d.name for d in decks], [
+                "1. Monday (ject).pptx", "2. Tuesday (ject spelling).pptx",
+                "3. Wednesday (ject building).pptx", "4. Thursday (parts of speech).pptx"])
+            slides = ["\n".join(self._slide_xml(d)) for d in decks]
+            for deck_xml in slides:
+                self.assertIn("Morphology Review", deck_xml)
+                self.assertIn("Words to Read Review", deck_xml)
+            monday, tuesday, wednesday, thursday = slides
+            # Memory hook and its picture sit on the new-morpheme card.
+            self.assertIn("Eject throws the pilot out!", monday)
+            with zipfile.ZipFile(decks[0]) as archive:
+                self.assertIn("ppt/media/oghook_plane.png", archive.namelist())
+            self.assertTrue(self._notes_text(decks[0]).count("MEMORY HOOK") >= 2)
+            self.assertNotIn("PROCEDURE", self._notes_text(decks[0]).split("MEMORY HOOK")[0]
+                             .split("New morpheme today")[-1])
+            # No recap card on Tuesday; no retired note lines.
+            tue_notes = self._notes_text(decks[1])
+            self.assertNotIn("Click to reveal answer.", tue_notes)
+            self.assertNotIn("SAY each word, students write it", tue_notes)
+            # Break it apart: the root box is filled, the others are empty.
+            breaks = [x for x in self._slide_xml(decks[2]) if "Break it apart" in x]
+            self.assertTrue(breaks)
+            self.assertTrue(all(">+<" in x for x in breaks))
+            # Thursday: frames on every suffix card, the vote closes the week,
+            # one dictation sentence, reading review before parts of speech.
+            self.assertEqual(thursday.count(">very ___<"), 4)
+            self.assertIn("Trickiest this week?", thursday)
+            self.assertEqual(thursday.count("Write this sentence"), 1)
+            self.assertLess(thursday.index("Words to Read Review"),
+                            thursday.index("Suffix Parts of Speech"))
+            for deck in decks:
+                self.assertNotIn("give me", self._notes_text(deck).lower())
+
+    def test_v18_rules_fail_the_build(self):
+        """The v1.8 rules are gates, not advice."""
+        week = json.loads(self.V18_SPEC.read_text())
+        mon, tue, wed, thu = week["sessions"]
+        mon["morphology_review"][0]["extra_task"] = {
+            "prompt": "Okay, give me one port word, meaning carry.", "answers": ["export"]}
+        mon["memory_hook"]["text"] = "ject means throw so think of throwing a ball far away"
+        thu["pos_drill"]["cards"][0].pop("sentence")
+        thu.pop("vote")
+        thu["dictation"].append(dict(thu["dictation"][0], meter="yellow"))
+        wed["build"]["rounds"][0]["round"][1].pop("parts")
+        with tempfile.TemporaryDirectory(prefix="og_v18_fail_") as temp:
+            spec = Path(temp) / "term4_week4.json"
+            spec.write_text(json.dumps(week))
+            result = subprocess.run(
+                [sys.executable, str(BUILDER_PATH), str(spec), "--outdir", temp],
+                cwd=ROOT, capture_output=True, text=True, timeout=120, check=False)
+            out = result.stdout
+            self.assertNotEqual(result.returncode, 0, out)
+            self.assertIn("give me", out)
+            self.assertIn("8 words", out)
+            self.assertIn("sentence", out)
+            self.assertIn("`vote`", out)
+            self.assertIn("ONE dictation", out)
+            audit = subprocess.run(
+                [sys.executable, str(ROOT / "og_planner" / "audit_week_spec.py"), str(spec)],
+                cwd=ROOT, capture_output=True, text=True, timeout=60, check=False)
+            self.assertIn("parts", audit.stdout)
 
 
 if __name__ == "__main__":

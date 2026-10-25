@@ -102,6 +102,8 @@ const SPEC_SAMPLES = {
   pictograms: { type: "pictograms", items: ["happy", "sad", "angry"] },
   text: { type: "text", text: "9" },
   table: { type: "table", rows: [["Animal", "Legs"], ["Dog", "4"], ["Bird", "2"]] },
+  // Fetches YouTube's still once into assets/videos/ (needs the network the first time).
+  video: { type: "video", youtube: "IDpfl2aGruE" },
   angle: { type: "angle", rays: [0, 130, 180], arcs: [{ from: 0, to: 130, label: "130°" }, { from: 130, to: 180, label: "x" }], protractor: true },
   columnSum: { type: "columnSum", numbers: [34567, 12345], op: "+" },
   grid: { type: "grid", x: [-5, 5], y: [-5, 5], points: [{ x: 3, y: -2, label: "A" }], polygon: [[1, 1], [4, 1], [4, 3]] },

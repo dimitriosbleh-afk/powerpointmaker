@@ -49,8 +49,20 @@ function isYouDo(slide) {
 function revealSay(item, last) {
   if (item.say) return [`SAY: ${item.say}`];
   const answer = String(item.answer == null ? "" : item.answer).trim();
-  const lead = answer && answer.split(/\s+/).length <= 6 ? `It's ${answer.replace(/[.]$/, "")}. ` : "";
+  // "It's" + the answer as speech: lower-case a sentence-style capital
+  // ("The door slams" -> "the door slams") but keep names ("Pocket Pal", "I").
+  const words = answer.split(/\s+/);
+  const spoken = /^[A-Z][a-z]/.test(answer) && words[0] !== "I" && !/^[A-Z]/.test(words[1] || "")
+    ? answer[0].toLowerCase() + answer.slice(1) : answer;
+  const end = /[?!]$/.test(spoken) ? " " : ". ";
+  const lead = answer && words.length <= 6 ? `It's ${spoken.replace(/[.]$/, "")}${end}` : "";
   return [`SAY: ${lead}Tick it or fix it.`].concat(last ? [] : ["Then get ready for the next one."]);
+}
+
+/** The pivot line. Authors often end the pivot with "re-ask" themselves; say it once. */
+function lessLine(pivot) {
+  const p = String(pivot || "").replace(/[,;.]?\s*(then\s+)?re-ask\.?\s*$/i, "").trim();
+  return `Less -> ${p}${/[?!]$/.test(p) ? " Then re-ask." : ", re-ask."}`;
 }
 
 function itemNotes(round, item, i) {
@@ -81,7 +93,8 @@ function itemNotes(round, item, i) {
     i === 0 && round.followUp
       ? `80%+ -> ${round.followUp}${/[.?!]$/.test(round.followUp.trim()) ? " Then reveal." : ", then reveal."}`
       : `80%+ -> reveal, ${last ? "then move on." : "then the next one."}`,
-    `Less -> ${item.pivot || round.pivot}, re-ask.`,
+    // Authors often end the pivot with "re-ask" themselves; say it once.
+    lessLine(item.pivot || round.pivot),
   ]);
   beats.push([
     `REVEAL after ${routine.protection}.`,

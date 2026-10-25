@@ -121,7 +121,11 @@ def copy_slide(src_slide, dst_prs):
                 io.BytesIO(rel.target_part.blob)
             )
             rid_map[r_id] = new_r_id
-        elif rel.reltype.endswith(HYPERLINK_RELTYPE_SUFFIX):
+        elif rel.reltype.endswith(HYPERLINK_RELTYPE_SUFFIX) or (
+            rel.is_external and rel.reltype.endswith("/video")
+        ):
+            # Embedded online videos (the spec "video" visual) link to their
+            # YouTube URL through an external r:link, like a hyperlink.
             new_r_id = dst_slide.part.relate_to(
                 rel.target_ref, rel.reltype, is_external=True
             )
@@ -132,6 +136,7 @@ def copy_slide(src_slide, dst_prs):
             "embed",
             "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}embed",
             "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id",
+            "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}link",
         )
         # Walk the LIVE slide element. Handles kept from before the graft
         # (new_sp_tree, or slide.shapes._spTree) do not reliably address the

@@ -1,0 +1,28 @@
+{
+ "unit_folder": "Term4_SharkTank_Homeroom_Weeks_2-4",
+ "unit_pptx_name": "Shark Tank - Homeroom Sessions (Weeks 2-4) - Year 5-6.pptx",
+ "anchor": "Find a problem. Upcycle a fix. Pitch it. Grade 5 teams invent an upcycled product, build a prototype and pitch it; the Grade 6s are the sharks who invest tokens, never buy, on Shark Tank Day, Monday 7 December. Model business all term: Pocket Pal, a hanging pocket sewn from old jeans.",
+ "lessons": [
+  {
+   "build_script": "builds/t4w2_shark_s1_welcome_to_the_tank.json",
+   "folder": "T4W2_SharkTank_S1_Welcome",
+   "session": 1,
+   "title": "Welcome to the Tank",
+   "focus": "Week 2, homerooms, Grades 5 and 6 together. Problem to product with Locker Board, then Junk Lab in mixed teams with Grade 6 mentors. Critical feature: a product starts with a problem; upcycling makes the fix from something already made."
+  },
+  {
+   "build_script": "builds/t4w3_shark_s2_think_like_a_shark.json",
+   "folder": "T4W3_SharkTank_S2_Think_Like_a_Shark",
+   "session": 2,
+   "title": "Think Like a Shark",
+   "focus": "Week 3, homerooms. Buying versus investing and the four shark checks; Grade 5 teams form and shortlist three ideas with Grade 6 consultant sharks. Critical feature: sharks invest in a business that can grow, they don't buy."
+  },
+  {
+   "build_script": "builds/t4w4_shark_s3_ask_the_market.json",
+   "folder": "T4W4_SharkTank_S3_Ask_the_Market",
+   "session": 3,
+   "title": "Ask the Market",
+   "focus": "Week 4, homerooms. Target market and fair survey questions, then the Token Test: Grade 6s invest tokens in each team's three ideas and teams choose one. Critical feature: choose from what the market says, not what the team likes."
+  }
+ ]
+}

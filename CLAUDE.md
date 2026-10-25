@@ -343,11 +343,23 @@ The universal type-colour key overrides any older master colour: GREEN = root,
 YELLOW = prefix, RED = suffix. The builder enforces it on morphology review-card
 backgrounds, new/review morpheme-card backgrounds and Sound Bank boxes, and its
 finished-PPTX gate rejects mismatches.
+Since v1.7 (Kate Watt, the school's Yoshimoto trainer, Oct 2026) a week teaches ONE
+morpheme, every day for 20-30 minutes, split across five day types: `teach` (Mon),
+`spell` (Tue), `build` (Wed), `apply` (Thu, parts of speech + the week's one grammar
+block), `week_review` (Fri). Each day carries only its own blocks; legacy `new`/`review`
+weeks still build unchanged. v1.8 (James, Oct 2026, spec field `"og_version": "1.8"`)
+opens EVERY day with the card drill and a 5-4-3-2-1 Words to Read Review (at most 3
+questions, rotating formats), puts a short memory hook with a pictogram on Monday's
+card, tests parts of speech with the frames the ___ / to ___ / very ___, draws part
+boxes for Break it apart, allows only three extension types, and handles short weeks
+(4 sessions: Thursday ends with the vote then one grammar dictation; 3 sessions: a
+`combined` day). Exemplar: `og_planner/weeks/term4_week4.json` (v1.7:
+`term4_week3.json`). Kate's
+training deck and videos must stay inside the school - never commit them.
 OG teacher notes follow the shared Glance Format: plain source text, one thought per
 line, left-aligned paragraphs, eight live-zone lines maximum, and no markdown. Words
-to Read Review is the exception: use separate cues for the whole-class read, exhaustive
-playful groups for rows 1-4, and everyone reading row 5 so every student reads at least
-two rows, followed by one retrieval question per line. The OG builder applies real bold
+to Read Review is the exception: in v1.7 the whole class reads every row first, then
+playful groups reread rows for fluency, followed by one retrieval question per line. The OG builder applies real bold
 to recognised labels and underlines the spelling target where it appears inside every
 `Sentence:` note line. Fixed-
 answer new morphology activities require an immediate green answer slide titled `Tick
@@ -361,11 +373,10 @@ The builder reopens each finished PPTX and hard-fails on dense or malformed note
 missing real bold note labels, legacy `Derivative ask` output, undersized new-word
 grids, missing/non-green answer checks, undersized grammar examples, or incorrect
 dictation cue formatting. It also hard-fails when the Sound Bank or review cards
-contain the day's focus morpheme or any morpheme this week teaches on a later day (the
-bank is copied into books before that morpheme is taught), when a dictation target is
-one of this week's new grid words / new learned words or is built on this week's focus
-morphemes (dictation is revision from 2-3 weeks ago - students copy this week's words
-from their books, school feedback Aug 2026), or when a You
+contain any morpheme this week teaches on a later day (legacy weeks: also the day's
+focus morpheme), when a v1.7 dictation day has no target from this week's teaching
+(Kate Watt: dictation carries what was just taught, plus one harder word from a week or
+two back; copying is fine; legacy weeks ran the reverse, 2-3-weeks-back rule), or when a You
 Do item is a meaning sum (retired Sept 2026) or asks for any part beyond today's
 morpheme without its meaning printed on the slide face (one-recall rule); the rules
 and the escape hatch (`taught_morphemes`) are in OG_MEGA_PROMPT sections 2a/2c, 6, 2f
@@ -435,7 +446,7 @@ When the user requests more than one session in a single ask (a unit, a week, a 
 1. Write one lesson spec per session in `builds/`, in teaching order, and run `build_and_check.js` on each before writing the next. A passing build joins this machine's taught log, which the next lesson's Daily Review draws on (MEGA_PROMPT 83); writing every spec first leaves the log empty when review is chosen.
 2. Write a manifest at `builds/manifests/<unit>.json` listing each lesson's `build_script`, `folder`, and `session` in teaching order, plus `unit_folder` and `unit_pptx_name`. For a term or unit, write it FIRST as the plan: a one-line `focus` per lesson (what it teaches, its critical feature, what its Daily Review revisits) and a unit `anchor` (MEGA_PROMPT 84). The merge ignores these keys. Manifest format is documented in `scripts/merge_unit.py` and `docs/resource-system.md`.
 3. Run `python scripts/build_unit.py builds/manifests/<unit>.json --skip-build` (the lessons were built in step 1; drop `--skip-build` to rebuild them all). It merges the decks and resources into `output/<unit_folder>/<unit_pptx_name>` + `output/<unit_folder>/Resources/<flat PDFs>`, then runs merged unit QA via `qa_unit.js --skip-build --skip-merge`.
-4. The task is not "done" for a multi-session request until the combined unit folder exists. Do not claim completion after building per-lesson folders only.
+4. The task is not "done" for a multi-session request until the combined unit folder exists and the review panel (`IMPORTANT/REVIEW_PANEL.md`) has signed off the merged unit. Do not claim completion after building per-lesson folders only.
 5. For a single-session request, the per-lesson folder IS the deliverable — no merge needed.
 
 If you fix one lesson later, rebuild just that lesson with `build_and_check.js`, then re-run `build_unit.py ... --skip-build` to re-merge and re-run merged unit QA without rebuilding the rest.
@@ -477,7 +488,8 @@ First render is almost never correct. After every build:
 5. Final visual and compatibility QA in Google Slides - import the `.pptx` and inspect title, content, reveal, subject-specific, closing, and resource slides.
 6. Fix issues, re-verify affected slides. One fix often creates another problem.
 7. Repeat until a full pass reveals no new issues.
-8. Clean up optional preview images: `python scripts/pptx_to_images.py --clean`
+8. **Review panel (required, every session, every pipeline).** Once the gates and visual QA pass, Steve (principal), James (teacher) and the Team Leader review the session independently, meet, agree one change list, the changes are made and rebuilt, and they review again until all three sign off (maximum four rounds, then open items go to James as decisions). Follow `IMPORTANT/REVIEW_PANEL.md`. This applies to literacy, numeracy, science, inquiry, wellbeing, OG and Auslan alike; a session is not finished until the panel has signed off or its open items are reported.
+9. Clean up optional preview images: `python scripts/pptx_to_images.py --clean`
 
 Do not say "QA passed" unless the Google Slides compatibility pass in step 5 is complete. Do not treat a passing gate script or local visual inspection as delivery-ready. If only the gate script ran, state that automated gates passed and visual review is still pending. If local visual QA ran but not Google Slides, state that local QA passed and Google Slides review is still pending.
 
