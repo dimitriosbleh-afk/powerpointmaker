@@ -97,6 +97,7 @@ themes/lesson/             # Spec pipeline: validate.js (strict, names every pro
 _archive/lessons/          # 300 pre-v12.6 build scripts, libs and manifests - historical only, NOT exemplars
 output/                    # Per-lesson folders (PPTX + companion PDFs)
 IMPORTANT/MEGA_PROMPT.md   # Pedagogical framework - paste into conversation when planning lessons
+IMPORTANT/CAT_REVIEW_PROTOCOL.md  # School protocol for reviewing CATs (keep/revise/remove, five checks) - follow it for any CAT review
 docs/                      # Deep reference docs (read when needed, not every session)
 ```
 
@@ -354,7 +355,15 @@ card, tests parts of speech with the frames the ___ / to ___ / very ___, draws p
 boxes for Break it apart, allows only three extension types, and handles short weeks
 (4 sessions: Thursday ends with the vote then one grammar dictation; 3 sessions: a
 `combined` day). Exemplar: `og_planner/weeks/term4_week4.json` (v1.7:
-`term4_week3.json`). Kate's
+`term4_week3.json`). v1.9 (Oct 2026, `"og_version": "1.9"`, ported from the 5/6
+Challenge team's package and re-pitched for 5/6) adds a meaning picture on every Words
+to Spell Review word, a rotating Wednesday third round (word bank / best meaning), a
+one-page enabler sheet (separated Victorian Modern letters) and extension sheet per
+writing day (`og_planner/enabler_pdf.py`), a Friday Review worksheet + Teacher
+Follow-up sheet (`og_planner/friday_review_pdf.py`) and one weekly print pack with a
+cover (`og_planner/print_pack.py`);
+the 3/4 team's card wording (`og_planner/school_cards.json`) is advisory NOTEs only.
+Exemplar: `og_planner/weeks/sample_v19_term4_week4.json`. Kate's
 training deck and videos must stay inside the school - never commit them.
 OG teacher notes follow the shared Glance Format: plain source text, one thought per
 line, left-aligned paragraphs, eight live-zone lines maximum, and no markdown. Words

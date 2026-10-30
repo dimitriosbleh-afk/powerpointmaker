@@ -188,6 +188,26 @@ function testPracticeVolume() {
   ok("response and independent-practice floors hold, scale with minutes, and waive for an extended task");
 }
 
+/** A common assessment task session: no support sheets, no exit ticket, floor on teacher-led minutes only. */
+function testAssessmentSession() {
+  const sci = loadSpec(exemplars.find((f) => path.basename(f).includes("year56_science")));
+  const cat = JSON.parse(JSON.stringify(sci));
+  cat.resources = [];
+  cat.slides = cat.slides.filter((s) => s.kind !== "exitTicket");
+  const plain = validateLessonSpec(cat);
+  assert(plain.errors.some((e) => /role "supported"/.test(e)), "without the flag a Years 5-6 session still needs its three sheets");
+  cat.lesson.assessment = { writingMinutes: 40, reason: "Term 4 writing CAT: no enabling support during administration" };
+  const flagged = validateLessonSpec(cat);
+  assert(!flagged.errors.some((e) => /role "(main|extension|supported)"/.test(e)), "a CAT session prints no support sheets");
+  assert(!flagged.warnings.some((w) => /exitTicket/.test(w)), "the CAT writing is the evidence, so no exit ticket is asked for");
+  assert(!followsPlanningRules(cat), "a CAT session writes its own Your turn steps");
+  const bad = JSON.parse(JSON.stringify(cat));
+  bad.lesson.assessment = { writingMinutes: 58 };
+  const errs = validateLessonSpec(bad).errors;
+  assert(errs.some((e) => /assessment.writingMinutes/.test(e)) && errs.some((e) => /assessment.reason/.test(e)), "the flag must say how long the task runs and why");
+  ok("CAT sessions: no support sheets or exit ticket, own steps, and the flag must give its minutes and reason");
+}
+
 /** The taught log orders by teaching position and checks Daily Review sources against it. */
 function testTaughtLog() {
   const { recordLesson, readLog, removeEntry } = require("../themes/lesson/taughtLog");
@@ -340,6 +360,7 @@ function testCrossword() {
   testEvidenceRules();
   testPracticeRounds();
   testPracticeVolume();
+  testAssessmentSession();
   testTaughtLog();
   testCrossword();
   console.log(`${passed} check(s) passed.`);

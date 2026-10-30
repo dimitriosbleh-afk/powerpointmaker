@@ -95,6 +95,18 @@ function validateVisual(visual, where, errors, opts) {
       if (!PICTOGRAMS[name]) errors.push(`${where}.items[${i}]: "${name}" is not a pictogram.`);
     });
   }
+  if (visual.type === "placemat") {
+    const panels = Array.isArray(visual.panels) ? visual.panels : [];
+    if (panels.length < 1 || panels.length > 4) errors.push(`${where}.panels: 1 to 4 panels, each { heading, sub?, icon?, lines }.`);
+    panels.forEach((p, i) => {
+      if (!p || !isNonEmptyString(p.heading)) errors.push(`${where}.panels[${i}].heading: required.`);
+      if (p && p.icon != null && !PICTOGRAMS[p.icon]) errors.push(`${where}.panels[${i}].icon: "${p.icon}" is not a pictogram.`);
+      if (p && (!Array.isArray(p.lines) || p.lines.length < 1 || p.lines.length > 5)) errors.push(`${where}.panels[${i}].lines: 1 to 5 short reminder lines.`);
+    });
+    const strips = visual.strips == null ? [] : visual.strips;
+    if (!Array.isArray(strips) || strips.length > 3) errors.push(`${where}.strips: up to 3 strips, each { label, items }.`);
+    else strips.forEach((st, i) => { if (!st || !isNonEmptyString(st.label) || !Array.isArray(st.items) || st.items.length < 1 || st.items.length > 7) errors.push(`${where}.strips[${i}]: { label, items } with 1 to 7 short items.`); });
+  }
   if (visual.type === "video") {
     if (!/^[A-Za-z0-9_-]{11}$/.test(String(visual.youtube || ""))) errors.push(`${where}.youtube: the 11-character YouTube video id, e.g. "IDpfl2aGruE" from youtube.com/watch?v=IDpfl2aGruE.`);
     if (visual.start != null && !(Number.isInteger(visual.start) && visual.start > 0)) errors.push(`${where}.start: whole seconds into the clip to start from, or omit it.`);
@@ -373,9 +385,11 @@ function validatePracticeVolume(spec, errors) {
   const L = spec.lesson || {};
   const minutes = Number.isInteger(L.minutes) ? L.minutes : 60;
   const { responses, independent, extended } = practiceCounts(spec);
-  const minResponses = Math.ceil(minutes / 3);
+  // In an assessment session only the teacher-led minutes carry whole-class responses.
+  const taskMinutes = isAssessment(spec) && Number.isInteger(L.assessment.writingMinutes) ? L.assessment.writingMinutes : 0;
+  const minResponses = Math.ceil((minutes - taskMinutes) / 3);
   if (responses < minResponses) {
-    errors.push(`practice: ${responses} planned whole-class responses; a ${minutes}-minute lesson needs at least ${minResponses} (one every three minutes, megaprompt 82). Add a practice round ({ "kind": "practice" }) of quick board items, or a response in the I Do.`);
+    errors.push(`practice: ${responses} planned whole-class responses; a ${minutes - taskMinutes}-minute ${taskMinutes ? "teacher-led stretch" : "lesson"} needs at least ${minResponses} (one every three minutes, megaprompt 82). Add a practice round ({ "kind": "practice" }) of quick board items, or a response in the I Do.`);
   }
   const minIndependent = INDEPENDENT_MIN[L.yearLevel];
   if (minIndependent && !extended && independent < minIndependent) {
@@ -437,7 +451,30 @@ const MAIN_SHEET_MIN_WORK = 12;
 const PACKAGE_SUBJECTS = ["numeracy", "literacy", "science", "inquiry"];
 function followsPlanningRules(spec) {
   const L = spec.lesson || {};
+  // A common assessment task session gives no supported sheet or Extension and
+  // writes its own steps: no enabling support is given while it runs.
+  if (isAssessment(spec)) return false;
   return PACKAGE_SUBJECTS.includes(L.subject) && (L.yearLevel === "grade34" || L.yearLevel === "grade56");
+}
+/**
+ * A common assessment task (CAT) session: students spend most of it on the
+ * independent task, so the response floor counts only the teacher-led minutes,
+ * the task itself is the evidence (no exit ticket), and no enabling support is
+ * printed (megaprompt 85 package does not apply).
+ */
+function isAssessment(spec) {
+  const a = (spec.lesson || {}).assessment;
+  return !!(a && typeof a === "object");
+}
+function validateAssessment(L, errors) {
+  if (L.assessment == null) return;
+  const a = L.assessment;
+  const w = "lesson.assessment";
+  if (typeof a !== "object" || Array.isArray(a)) { errors.push(`${w}: { writingMinutes, reason } for a common assessment task session, or omit it.`); return; }
+  Object.keys(a).forEach((k) => { if (!["writingMinutes", "reason"].includes(k)) errors.push(`${w}.${k}: unknown field. Allowed: writingMinutes, reason`); });
+  const minutes = Number.isInteger(L.minutes) ? L.minutes : 60;
+  if (!Number.isInteger(a.writingMinutes) || a.writingMinutes < 10 || a.writingMinutes > minutes - 10) errors.push(`${w}.writingMinutes: the minutes students spend on the task itself, 10 to ${minutes - 10}.`);
+  if (!isNonEmptyString(a.reason)) errors.push(`${w}.reason: say which assessment this is and why no support is printed, e.g. "Term 4 writing CAT: no enabling support during administration".`);
 }
 const EXTENSION_ALIASES = /\b(extender|extend(ing)? task|challenge|early finisher|stretch)\b/i;
 
@@ -574,6 +611,7 @@ function validateLessonSpec(spec, opts) {
   if (L.minutes != null && (!Number.isInteger(L.minutes) || L.minutes < 20 || L.minutes > 120)) errors.push("lesson.minutes: session length, 20 to 120 (default 60).");
   if (L.titleVisual) validateVisual(L.titleVisual, "lesson.titleVisual", errors);
   validatePlan(L.plan, errors);
+  validateAssessment(L, errors);
 
   // Banned characters anywhere: the theme sanitises slide text, but PDFs are
   // not sanitised and notes must be authored clean.
@@ -746,8 +784,9 @@ function validateLessonSpec(spec, opts) {
     }
     if (closingIndex === -1) errors.push("slides: no closing slide.");
     else if (closingIndex !== slides.length - 1) errors.push("slides: the closing slide must be last.");
-    if (exitIndex === -1) warnings.push("slides: no exitTicket slide. Most lessons collect evidence before the closing (megaprompt 53).");
-    else validateExitTicket(spec, slides, exitIndex, errors);
+    if (exitIndex === -1) {
+      if (!isAssessment(spec)) warnings.push("slides: no exitTicket slide. Most lessons collect evidence before the closing (megaprompt 53).");
+    } else validateExitTicket(spec, slides, exitIndex, errors);
     validateReviewSources(spec, slides, errors, vopts.taughtLog);
     validatePracticeVolume(spec, errors);
     validatePlanningRules(spec, slides, errors);
@@ -829,4 +868,4 @@ function validateLessonSpec(spec, opts) {
   return { errors, warnings };
 }
 
-module.exports = { validateLessonSpec, practiceCounts, YOUR_TURN_STEPS, LITERACY_YOUR_TURN_STEPS, yourTurnSteps, followsPlanningRules, KINDS, RESOURCE_KINDS, PDF_VISUAL_TYPES, BADGE_COLORS };
+module.exports = { validateLessonSpec, practiceCounts, isAssessment, YOUR_TURN_STEPS, LITERACY_YOUR_TURN_STEPS, yourTurnSteps, followsPlanningRules, KINDS, RESOURCE_KINDS, PDF_VISUAL_TYPES, BADGE_COLORS };

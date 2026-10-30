@@ -1,0 +1,1116 @@
+{
+ "_readme": [
+  "School-taught card wording from the 3/4 (Challenge) team, supplied to them on 20 Oct 2026 and updated 28 Oct 2026. Copied from their package on 30 Oct 2026.",
+  "ADVISORY ONLY in this pipeline (OG_MEGA_PROMPT 4e, v1.9): our 5/6 decks keep the photographed Yoshimoto wording the class was taught from. build_og_week.py raises a NOTE where a card on a deck differs, so the teacher can check with Kate before the cohorts' card language has to line up.",
+  "catalogue_cards names the photographed card(s) the school card covers. 'label|meaning' picks one of two cards that share a heading."
+ ],
+ "cards": [
+  {
+   "morph": "-s / -es",
+   "type": "suffix",
+   "keyword": "cats, wishes",
+   "meaning": "plural, more than 1",
+   "part_of_speech": [
+    "noun"
+   ],
+   "catalogue_cards": [
+    "-s",
+    "-es"
+   ]
+  },
+  {
+   "morph": "-ed",
+   "type": "suffix",
+   "keyword": "trusted, loved, jumped",
+   "meaning": "past tense",
+   "part_of_speech": [
+    "verb"
+   ],
+   "catalogue_cards": [
+    "-ed"
+   ]
+  },
+  {
+   "morph": "-ing",
+   "type": "suffix",
+   "keyword": "running",
+   "meaning": "happening now",
+   "part_of_speech": [
+    "verb"
+   ],
+   "catalogue_cards": [
+    "-ing"
+   ]
+  },
+  {
+   "morph": "-less",
+   "type": "suffix",
+   "keyword": "hopeless",
+   "meaning": "without",
+   "part_of_speech": [
+    "adjective"
+   ],
+   "catalogue_cards": [
+    "-less"
+   ]
+  },
+  {
+   "morph": "-ful",
+   "type": "suffix",
+   "keyword": "joyful",
+   "meaning": "full of",
+   "part_of_speech": [
+    "adjective"
+   ],
+   "catalogue_cards": [
+    "-ful"
+   ]
+  },
+  {
+   "morph": "-er",
+   "type": "suffix",
+   "keyword": "teacher, taller",
+   "meaning": "someone who / comparing",
+   "part_of_speech": [
+    "noun",
+    "adjective"
+   ],
+   "catalogue_cards": [
+    "-er"
+   ]
+  },
+  {
+   "morph": "un-",
+   "type": "prefix",
+   "keyword": "unhappy",
+   "meaning": "not",
+   "catalogue_cards": [
+    "un-"
+   ]
+  },
+  {
+   "morph": "non-",
+   "type": "prefix",
+   "keyword": "nonactive",
+   "meaning": "not",
+   "catalogue_cards": [
+    "non-"
+   ]
+  },
+  {
+   "morph": "in- / im-",
+   "type": "prefix",
+   "keyword": "incomplete, impossible",
+   "meaning": "not",
+   "catalogue_cards": [
+    "in-",
+    "im-"
+   ]
+  },
+  {
+   "morph": "in-",
+   "type": "prefix",
+   "keyword": "inside",
+   "meaning": "in, into",
+   "catalogue_cards": [
+    "in-"
+   ]
+  },
+  {
+   "morph": "ir- / il-",
+   "type": "prefix",
+   "keyword": "irregular, illegal",
+   "meaning": "not",
+   "catalogue_cards": [
+    "ir-",
+    "il-"
+   ]
+  },
+  {
+   "morph": "re-",
+   "type": "prefix",
+   "keyword": "redo",
+   "meaning": "back, do again",
+   "catalogue_cards": [
+    "re-"
+   ]
+  },
+  {
+   "morph": "pre-",
+   "type": "prefix",
+   "keyword": "preheat",
+   "meaning": "before, ahead of time",
+   "catalogue_cards": [
+    "pre-"
+   ]
+  },
+  {
+   "morph": "pro-",
+   "type": "prefix",
+   "keyword": "proceed",
+   "meaning": "for, forward",
+   "catalogue_cards": [
+    "pro-"
+   ]
+  },
+  {
+   "morph": "con- / com-",
+   "type": "prefix",
+   "keyword": "connect, complete",
+   "meaning": "with, together",
+   "catalogue_cards": [
+    "con-",
+    "com-"
+   ]
+  },
+  {
+   "morph": "-ure",
+   "type": "suffix",
+   "keyword": "failure",
+   "meaning": "state of, result of",
+   "part_of_speech": [
+    "noun",
+    "verb"
+   ],
+   "catalogue_cards": [
+    "-ure"
+   ]
+  },
+  {
+   "morph": "-est",
+   "type": "suffix",
+   "keyword": "tallest",
+   "meaning": "superlative, most",
+   "part_of_speech": [
+    "adjective"
+   ],
+   "catalogue_cards": [
+    "-est"
+   ]
+  },
+  {
+   "morph": "-ly",
+   "type": "suffix",
+   "keyword": "kindly",
+   "meaning": "like, manner of, adverb",
+   "part_of_speech": [
+    "adverb",
+    "adjective"
+   ],
+   "catalogue_cards": [
+    "-ly"
+   ]
+  },
+  {
+   "morph": "-ness",
+   "type": "suffix",
+   "keyword": "kindness",
+   "meaning": "state of, quality of",
+   "part_of_speech": [
+    "noun"
+   ],
+   "catalogue_cards": [
+    "-ness"
+   ]
+  },
+  {
+   "morph": "pass",
+   "type": "root",
+   "keyword": "compass",
+   "meaning": "step, pace",
+   "catalogue_cards": [
+    "pass"
+   ]
+  },
+  {
+   "morph": "ply / plic",
+   "type": "root",
+   "keyword": "apply",
+   "meaning": "fold, fill",
+   "catalogue_cards": [
+    "ply/plic"
+   ]
+  },
+  {
+   "morph": "port",
+   "type": "root",
+   "keyword": "transport",
+   "meaning": "to carry",
+   "catalogue_cards": [
+    "port"
+   ]
+  },
+  {
+   "morph": "form",
+   "type": "root",
+   "keyword": "inform",
+   "meaning": "to shape",
+   "catalogue_cards": [
+    "form"
+   ]
+  },
+  {
+   "morph": "fix",
+   "type": "root",
+   "keyword": "prefix",
+   "meaning": "fasten, fix",
+   "catalogue_cards": [
+    "fix"
+   ]
+  },
+  {
+   "morph": "trans-",
+   "type": "prefix",
+   "keyword": "transport",
+   "meaning": "across, through",
+   "catalogue_cards": [
+    "trans-"
+   ]
+  },
+  {
+   "morph": "mid-",
+   "type": "prefix",
+   "keyword": "midpoint",
+   "meaning": "middle",
+   "catalogue_cards": [
+    "mid-"
+   ]
+  },
+  {
+   "morph": "under-",
+   "type": "prefix",
+   "keyword": "underground",
+   "meaning": "below, not enough",
+   "catalogue_cards": []
+  },
+  {
+   "morph": "de-",
+   "type": "prefix",
+   "keyword": "deflate",
+   "meaning": "down, away, opposite of",
+   "catalogue_cards": [
+    "de-"
+   ]
+  },
+  {
+   "morph": "sub- / sup-",
+   "type": "prefix",
+   "keyword": "submarine",
+   "meaning": "below, under",
+   "teacher_note": "Extra chameleon prefixes: sug- / suf- / sul-",
+   "catalogue_cards": [
+    "sub-",
+    "sup-"
+   ]
+  },
+  {
+   "morph": "ject",
+   "type": "root",
+   "keyword": "eject",
+   "meaning": "to throw",
+   "catalogue_cards": [
+    "ject"
+   ]
+  },
+  {
+   "morph": "-ous",
+   "type": "suffix",
+   "keyword": "joyous",
+   "meaning": "full of",
+   "part_of_speech": [
+    "adjective"
+   ],
+   "catalogue_cards": [
+    "-ous"
+   ]
+  },
+  {
+   "morph": "gest",
+   "type": "root",
+   "keyword": "digest",
+   "meaning": "to bring, carry, bear",
+   "catalogue_cards": [
+    "gest"
+   ]
+  },
+  {
+   "morph": "tract",
+   "type": "root",
+   "keyword": "tractor",
+   "meaning": "to pull",
+   "catalogue_cards": [
+    "tract"
+   ]
+  },
+  {
+   "morph": "vis(e)",
+   "type": "root",
+   "keyword": "vision",
+   "meaning": "see",
+   "catalogue_cards": [
+    "vis(e)/vid(e)"
+   ]
+  },
+  {
+   "morph": "scope",
+   "type": "root",
+   "keyword": "telescope",
+   "meaning": "look, see, watch",
+   "catalogue_cards": [
+    "scop(e)"
+   ]
+  },
+  {
+   "morph": "rupt",
+   "type": "root",
+   "keyword": "erupt",
+   "meaning": "to break",
+   "catalogue_cards": [
+    "rupt"
+   ]
+  },
+  {
+   "morph": "struct",
+   "type": "root",
+   "keyword": "construct",
+   "meaning": "to build",
+   "catalogue_cards": [
+    "struct"
+   ]
+  },
+  {
+   "morph": "-ist",
+   "type": "suffix",
+   "keyword": "dentist",
+   "meaning": "someone who",
+   "part_of_speech": [
+    "noun"
+   ],
+   "catalogue_cards": [
+    "-ist"
+   ]
+  },
+  {
+   "morph": "mit / miss",
+   "type": "root",
+   "keyword": "submit",
+   "meaning": "to send",
+   "catalogue_cards": [
+    "mit/miss"
+   ]
+  },
+  {
+   "morph": "pel",
+   "type": "root",
+   "keyword": "expel",
+   "meaning": "drive, push",
+   "catalogue_cards": [
+    "pel/puls(e)"
+   ]
+  },
+  {
+   "morph": "fact / fic / fict",
+   "type": "root",
+   "keyword": "fact",
+   "meaning": "do, make",
+   "catalogue_cards": [
+    "fac/fact",
+    "fect/fic/fict"
+   ]
+  },
+  {
+   "morph": "pose",
+   "type": "root",
+   "keyword": "propose",
+   "meaning": "place, put",
+   "catalogue_cards": [
+    "pos(e)/posit"
+   ]
+  },
+  {
+   "morph": "pulse",
+   "type": "root",
+   "keyword": "impulse",
+   "meaning": "drive, push",
+   "catalogue_cards": [
+    "pel/puls(e)"
+   ]
+  },
+  {
+   "morph": "voc / vok",
+   "type": "root",
+   "keyword": "vocal",
+   "meaning": "voice, call",
+   "catalogue_cards": [
+    "voc/vok"
+   ]
+  },
+  {
+   "morph": "act",
+   "type": "root",
+   "keyword": "action",
+   "meaning": "to move",
+   "catalogue_cards": [
+    "act"
+   ]
+  },
+  {
+   "morph": "counter-",
+   "type": "prefix",
+   "keyword": "counteract",
+   "meaning": "against, opposite",
+   "catalogue_cards": [
+    "counter-"
+   ]
+  },
+  {
+   "morph": "a-",
+   "type": "prefix",
+   "keyword": "aboard",
+   "meaning": "in, on, into, at",
+   "teacher_note": "Extra chameleon prefixes: al- / ag- / ac- / as- / af- / ab-",
+   "catalogue_cards": [
+    "a-"
+   ]
+  },
+  {
+   "morph": "mis-",
+   "type": "prefix",
+   "keyword": "misplace",
+   "meaning": "wrong, wrongly, badly",
+   "catalogue_cards": [
+    "mis-"
+   ]
+  },
+  {
+   "morph": "dis- / dif- / di-",
+   "type": "prefix",
+   "keyword": "disagree",
+   "meaning": "not, away, apart",
+   "catalogue_cards": [
+    "dis-",
+    "dif-",
+    "di-|away, apart, not"
+   ]
+  },
+  {
+   "morph": "inter-",
+   "type": "prefix",
+   "keyword": "internet",
+   "meaning": "between, among",
+   "catalogue_cards": [
+    "inter-"
+   ]
+  },
+  {
+   "morph": "fore-",
+   "type": "prefix",
+   "keyword": "forehead",
+   "meaning": "front part, before",
+   "catalogue_cards": [
+    "fore-"
+   ]
+  },
+  {
+   "morph": "ex- / e- / ef-",
+   "type": "prefix",
+   "keyword": "exit",
+   "meaning": "out of, away from",
+   "catalogue_cards": [
+    "ex-",
+    "e-",
+    "ef-"
+   ]
+  },
+  {
+   "morph": "extra-",
+   "type": "prefix",
+   "keyword": "extraordinary",
+   "meaning": "beyond, more than",
+   "catalogue_cards": [
+    "extra-"
+   ]
+  },
+  {
+   "morph": "per-",
+   "type": "prefix",
+   "keyword": "perfect",
+   "meaning": "through, thoroughly",
+   "catalogue_cards": [
+    "per-"
+   ]
+  },
+  {
+   "morph": "-or",
+   "type": "suffix",
+   "keyword": "doctor",
+   "meaning": "someone who",
+   "part_of_speech": [
+    "noun"
+   ],
+   "catalogue_cards": [
+    "-or"
+   ]
+  },
+  {
+   "morph": "-ess",
+   "type": "suffix",
+   "keyword": "actress",
+   "meaning": "female form or role",
+   "part_of_speech": [
+    "noun"
+   ],
+   "catalogue_cards": [
+    "-ess"
+   ]
+  },
+  {
+   "morph": "-ic",
+   "type": "suffix",
+   "keyword": "sonic",
+   "meaning": "relating to, like, chemical term",
+   "part_of_speech": [
+    "adjective",
+    "noun"
+   ],
+   "catalogue_cards": [
+    "-ic"
+   ]
+  },
+  {
+   "morph": "-ent",
+   "type": "suffix",
+   "keyword": "confident",
+   "meaning": "state of, quality of, someone who",
+   "part_of_speech": [
+    "adjective",
+    "noun"
+   ],
+   "catalogue_cards": [
+    "-ent"
+   ]
+  },
+  {
+   "morph": "-ible",
+   "type": "suffix",
+   "keyword": "visible",
+   "meaning": "able to",
+   "part_of_speech": [
+    "adjective"
+   ],
+   "catalogue_cards": [
+    "-ible"
+   ]
+  },
+  {
+   "morph": "-ual",
+   "type": "suffix",
+   "keyword": "factual",
+   "meaning": "relating to, like",
+   "catalogue_cards": []
+  },
+  {
+   "morph": "photo-",
+   "type": "prefix",
+   "keyword": "photograph",
+   "meaning": "light",
+   "origin": "Greek",
+   "catalogue_cards": []
+  },
+  {
+   "morph": "-ology",
+   "type": "suffix",
+   "keyword": "biology",
+   "meaning": "study of something",
+   "origin": "Greek",
+   "catalogue_cards": []
+  },
+  {
+   "morph": "anti-",
+   "type": "prefix",
+   "keyword": "antifreeze",
+   "meaning": "against",
+   "catalogue_cards": [
+    "anti-"
+   ]
+  },
+  {
+   "morph": "vene / vent",
+   "type": "root",
+   "keyword": "convene, advent",
+   "meaning": "to come",
+   "catalogue_cards": [
+    "ven/vent"
+   ]
+  },
+  {
+   "morph": "oct- / octa- / octo-",
+   "type": "prefix",
+   "keyword": "octane, octagon, octopus",
+   "meaning": "8",
+   "origin": "Latin (oct-, octa-, octo-) and Greek (octo-)",
+   "catalogue_cards": [
+    "oct-/octa-/octo-",
+    "octo-"
+   ]
+  },
+  {
+   "morph": "quin- / penta-",
+   "type": "prefix",
+   "keyword": "quintillion, pentagon",
+   "meaning": "5",
+   "origin": "Latin (quin-) and Greek (penta-)",
+   "catalogue_cards": [
+    "quin-",
+    "penta-"
+   ]
+  },
+  {
+   "morph": "sex- / hexa-",
+   "type": "prefix",
+   "keyword": "sextillion, hexagon",
+   "meaning": "6",
+   "origin": "Latin (sex-) and Greek (hexa-)",
+   "catalogue_cards": [
+    "sex-",
+    "hexa-"
+   ]
+  },
+  {
+   "morph": "sept- / septem- / sep- / hepta-",
+   "type": "prefix",
+   "keyword": "septagon, September, septet, heptathlon",
+   "meaning": "7",
+   "origin": "Latin (sept-, septem-, sep-) and Greek (hepta-)",
+   "catalogue_cards": [
+    "sept-/septem-/sep-",
+    "hepta-"
+   ]
+  },
+  {
+   "morph": "novem- / nona-",
+   "type": "prefix",
+   "keyword": "November, nonagon",
+   "meaning": "9",
+   "origin": "Latin (novem-)",
+   "catalogue_cards": [
+    "novem-"
+   ]
+  },
+  {
+   "morph": "mega-",
+   "type": "prefix",
+   "keyword": "megapixel",
+   "meaning": "million, large",
+   "origin": "Greek",
+   "catalogue_cards": [
+    "mega-"
+   ]
+  },
+  {
+   "morph": "centi- / cent-",
+   "type": "prefix",
+   "keyword": "centimetre",
+   "meaning": "100",
+   "origin": "Latin",
+   "catalogue_cards": [
+    "centi-/cent-"
+   ]
+  },
+  {
+   "morph": "dec- / deca-",
+   "type": "prefix",
+   "keyword": "December, decagon",
+   "meaning": "10",
+   "origin": "Latin (dec-)",
+   "catalogue_cards": [
+    "decem-/dec-"
+   ]
+  },
+  {
+   "morph": "-ory",
+   "type": "suffix",
+   "keyword": "memory",
+   "meaning": "place where, relating to, quality",
+   "part_of_speech": [
+    "noun",
+    "adjective"
+   ],
+   "catalogue_cards": [
+    "-ory"
+   ]
+  },
+  {
+   "morph": "-ise",
+   "type": "suffix",
+   "keyword": "realise",
+   "meaning": "make",
+   "catalogue_cards": []
+  },
+  {
+   "morph": "-hood",
+   "type": "suffix",
+   "keyword": "childhood",
+   "meaning": "state, condition, time in someone's life",
+   "part_of_speech": [
+    "noun"
+   ],
+   "catalogue_cards": [
+    "-hood"
+   ]
+  },
+  {
+   "morph": "-ship",
+   "type": "suffix",
+   "keyword": "friendship",
+   "meaning": "state of, quality of",
+   "part_of_speech": [
+    "noun"
+   ],
+   "catalogue_cards": [
+    "-ship"
+   ]
+  },
+  {
+   "morph": "-mony",
+   "type": "suffix",
+   "keyword": "ceremony",
+   "meaning": "act of, state of, result of",
+   "part_of_speech": [
+    "noun"
+   ],
+   "catalogue_cards": [
+    "-mony"
+   ]
+  },
+  {
+   "morph": "duct",
+   "type": "root",
+   "keyword": "conduct",
+   "meaning": "lead, guide",
+   "catalogue_cards": [
+    "duct/duc(e)"
+   ]
+  },
+  {
+   "morph": "sect",
+   "type": "root",
+   "keyword": "intersect",
+   "meaning": "to cut, divide",
+   "catalogue_cards": [
+    "sect"
+   ]
+  },
+  {
+   "morph": "dict",
+   "type": "root",
+   "keyword": "dictate",
+   "meaning": "to say, speak",
+   "catalogue_cards": [
+    "dic/dict"
+   ]
+  },
+  {
+   "morph": "spect / spec",
+   "type": "root",
+   "keyword": "inspect, special",
+   "meaning": "to look, see, watch",
+   "catalogue_cards": [
+    "spect/spec/spic"
+   ]
+  },
+  {
+   "morph": "-ile",
+   "type": "suffix",
+   "keyword": "fragile",
+   "meaning": "capable of, resembling",
+   "part_of_speech": [
+    "noun",
+    "adjective"
+   ],
+   "catalogue_cards": [
+    "-ile"
+   ]
+  },
+  {
+   "morph": "mot / mob / mov",
+   "type": "root",
+   "keyword": "motor, mobile, move",
+   "meaning": "move",
+   "catalogue_cards": [
+    "mot/mob/mov"
+   ]
+  },
+  {
+   "morph": "en- / em-",
+   "type": "prefix",
+   "keyword": "enable, embrace",
+   "meaning": "in, into, make",
+   "catalogue_cards": [
+    "en-",
+    "em-"
+   ]
+  },
+  {
+   "morph": "intro-",
+   "type": "prefix",
+   "keyword": "introduce",
+   "meaning": "within, in",
+   "catalogue_cards": [
+    "intro-"
+   ]
+  },
+  {
+   "morph": "-en",
+   "type": "suffix",
+   "keyword": "golden",
+   "meaning": "make, become",
+   "part_of_speech": [
+    "adjective",
+    "verb"
+   ],
+   "catalogue_cards": [
+    "-en"
+   ]
+  },
+  {
+   "morph": "-ive",
+   "type": "suffix",
+   "keyword": "active",
+   "meaning": "quality of, relating to, like",
+   "part_of_speech": [
+    "adjective"
+   ],
+   "catalogue_cards": [
+    "-ive"
+   ]
+  },
+  {
+   "morph": "sist",
+   "type": "root",
+   "keyword": "persist",
+   "meaning": "to stand",
+   "catalogue_cards": [
+    "sist"
+   ]
+  },
+  {
+   "morph": "cord / cour",
+   "type": "root",
+   "keyword": "record, courage",
+   "meaning": "heart",
+   "catalogue_cards": []
+  },
+  {
+   "morph": "cept / ceive / ceit",
+   "type": "root",
+   "keyword": "accept, receive, deceit",
+   "meaning": "to take, seize",
+   "catalogue_cards": [
+    "cept/ceiv(e)/ceit"
+   ]
+  },
+  {
+   "morph": "cur",
+   "type": "root",
+   "keyword": "current",
+   "meaning": "to run",
+   "catalogue_cards": [
+    "cur"
+   ]
+  },
+  {
+   "morph": "bio",
+   "type": "root",
+   "keyword": "biology",
+   "meaning": "life",
+   "origin": "Greek",
+   "catalogue_cards": []
+  },
+  {
+   "morph": "fuse",
+   "type": "root",
+   "keyword": "refuse",
+   "meaning": "to pour, melt",
+   "catalogue_cards": [
+    "fus(e)"
+   ]
+  },
+  {
+   "morph": "sume / sumpt",
+   "type": "root",
+   "keyword": "assume, consumption",
+   "meaning": "to take, use",
+   "catalogue_cards": [
+    "sum(e)/sumpt"
+   ]
+  },
+  {
+   "morph": "-phobia",
+   "type": "suffix",
+   "keyword": "arachnophobia",
+   "meaning": "fear of",
+   "origin": "Greek",
+   "catalogue_cards": []
+  },
+  {
+   "morph": "stant / stance",
+   "type": "root",
+   "keyword": "distant, distance",
+   "meaning": "to stand",
+   "catalogue_cards": [
+    "stant/stanc"
+   ]
+  },
+  {
+   "morph": "tort",
+   "type": "root",
+   "keyword": "contort",
+   "meaning": "to twist",
+   "catalogue_cards": [
+    "tort"
+   ]
+  },
+  {
+   "morph": "cide / cise",
+   "type": "root",
+   "keyword": "decide, concise",
+   "meaning": "to cut, kill",
+   "catalogue_cards": [
+    "cid(e)/cis(e)"
+   ]
+  },
+  {
+   "morph": "flict",
+   "type": "root",
+   "keyword": "inflict",
+   "meaning": "to strike",
+   "catalogue_cards": [
+    "flict"
+   ]
+  },
+  {
+   "morph": "geo",
+   "type": "root",
+   "keyword": "geology",
+   "meaning": "earth, rock",
+   "origin": "Greek",
+   "catalogue_cards": []
+  },
+  {
+   "morph": "graph",
+   "type": "root",
+   "keyword": "photograph",
+   "meaning": "to write",
+   "origin": "Greek",
+   "catalogue_cards": []
+  },
+  {
+   "morph": "gram",
+   "type": "root",
+   "keyword": "diagram",
+   "meaning": "to write",
+   "origin": "Greek",
+   "catalogue_cards": []
+  },
+  {
+   "morph": "numer",
+   "type": "root",
+   "keyword": "numeral",
+   "meaning": "number",
+   "catalogue_cards": [
+    "numer"
+   ]
+  },
+  {
+   "morph": "auto",
+   "type": "root",
+   "keyword": "autograph",
+   "meaning": "self",
+   "origin": "Greek",
+   "catalogue_cards": []
+  },
+  {
+   "morph": "grad / gress",
+   "type": "root",
+   "keyword": "progress",
+   "meaning": "step, go",
+   "catalogue_cards": [
+    "gress/grad"
+   ]
+  },
+  {
+   "morph": "mem",
+   "type": "root",
+   "keyword": "memory",
+   "meaning": "remember",
+   "catalogue_cards": [
+    "mem"
+   ]
+  },
+  {
+   "morph": "spire",
+   "type": "root",
+   "keyword": "perspire",
+   "meaning": "breath",
+   "catalogue_cards": [
+    "spir(e)"
+   ]
+  },
+  {
+   "morph": "test",
+   "type": "root",
+   "keyword": "testimony",
+   "meaning": "witness",
+   "catalogue_cards": [
+    "test"
+   ]
+  },
+  {
+   "morph": "trib",
+   "type": "root",
+   "keyword": "tribute",
+   "meaning": "to give",
+   "catalogue_cards": [
+    "trib"
+   ]
+  },
+  {
+   "morph": "put(e)",
+   "type": "root",
+   "keyword": "computer",
+   "meaning": "to think",
+   "catalogue_cards": [
+    "put(e)"
+   ]
+  },
+  {
+   "morph": "serv(e)",
+   "type": "root",
+   "keyword": "preserve",
+   "meaning": "to keep",
+   "catalogue_cards": [
+    "serv(e)"
+   ]
+  },
+  {
+   "morph": "sed / sid(e)",
+   "type": "root",
+   "keyword": "reside",
+   "meaning": "to sit",
+   "catalogue_cards": [
+    "sed/sid(e)",
+    "sid(e)"
+   ]
+  },
+  {
+   "morph": "vest",
+   "type": "root",
+   "keyword": "vest",
+   "meaning": "to dress, clothe",
+   "catalogue_cards": [
+    "vest"
+   ]
+  }
+ ]
+}

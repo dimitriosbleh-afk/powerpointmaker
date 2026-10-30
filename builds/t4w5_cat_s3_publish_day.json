@@ -1,0 +1,654 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 5,
+    "session": 3,
+    "variant": 1,
+    "minutes": 60,
+    "assessment": {
+      "writingMinutes": 40,
+      "reason": "Term 4 persuasive writing CAT, Step 4 (publish): students publish their own copy of the draft already handed in, in a format they choose, and nothing today is marked, so the supported and main sheets are replaced by one Publishing Helper and an Extension."
+    },
+    "title": "Publish Day: Your Piece, Your Way",
+    "subtitle": "Term 4 Week 5, Session 3",
+    "meta": "Year 5/6 Literacy | Persuasive Writing CAT",
+    "footer": "Persuasive Writing CAT | Year 5/6 Literacy | Week 5 Session 3",
+    "outputFolder": "T4W5_CAT_S3_Publish_Day",
+    "fileName": "Session 3 - Publish Day.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Literacy and Language, Years 5 and 6: editing for spelling and punctuation and publishing a persuasive text for its audience",
+      "shape": "a short COPS teach and polish round, one title check and a choice of format, then 40 minutes of publishing, because the writing is already handed in",
+      "criticalFeature": "check COPS as you copy: capitals, organisation, punctuation, spelling",
+      "decisionPoints": [
+        "the polish round: can they find and fix one COPS slip of each kind?",
+        "the title check: which title grabs the reader?",
+        "the exit board: one new sentence with two slips"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Publishing gets the piece ready for its reader.",
+      "catchUp": "Missed Thursday? They finish their Elastik pages under CAT conditions, away from the publishing, then publish next week. Note the late upload."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Each student's Elastik pages, handed back once theirs show as uploaded",
+      "Coloured paper, textas and pencils",
+      "iPads with Canva or Google Slides, for anyone who chooses digital",
+      "Mini-whiteboards and markers"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Turn and tell",
+      "Thumbs, voices off"
+    ],
+    "boardSetup": [
+      "Coloured paper and textas set out; iPads ready for anyone choosing Canva or Google Slides",
+      "A tray for finished paper copies to send home with the CAT"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "page",
+      "label": "Publishing Helper",
+      "description": "For every table while they publish: COPS for persuasive writing, a title tip, a picture tip and the publishing check.",
+      "title": "Publishing Helper",
+      "subtitle": "Keep it beside you while you publish.",
+      "blocks": [
+        {
+          "heading": "Check COPS as you copy"
+        },
+        {
+          "organiser": {
+            "left": "COPS",
+            "right": "The big persuasive slips",
+            "rows": 4,
+            "rowH": 50,
+            "leftContent": [
+              "C  Capitals",
+              "O  Organisation",
+              "P  Punctuation",
+              "S  Spelling"
+            ],
+            "rightContent": [
+              "Sentence starts, I, and names: Australia, the Great Barrier Reef.",
+              "A new paragraph for each reason. No new reason in the conclusion.",
+              "Full stops, a ? after a rhetorical question, a comma after an opener.",
+              "their / there / they're, its / it's, should have (never should of)."
+            ]
+          }
+        },
+        {
+          "heading": "My title"
+        },
+        {
+          "text": "Try a question, a command or a rule of three. Keep it short."
+        },
+        {
+          "lines": 2
+        },
+        {
+          "heading": "Adding pictures?"
+        },
+        {
+          "text": "Draw them, or use Canva's or Google Slides' own images. Nothing personal. Finish the words first, then add pictures."
+        },
+        {
+          "heading": "My publishing check"
+        },
+        {
+          "checklist": [
+            "My title grabs attention.",
+            "My paragraphs are clear.",
+            "My handwriting or typing is easy to read.",
+            "My work is ready for my audience."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "For students who have published: answer the other side, write a speech opener and make a slogan; one item in each part uses their own CAT piece.",
+      "title": "Extension: Take Your Argument Further",
+      "subtitle": "Make your persuasive writing even stronger.",
+      "sections": [
+        {
+          "title": "Answer the other side",
+          "columns": 1,
+          "example": {
+            "prompt": "Some people might think a music room costs too much.",
+            "steps": [
+              "Say their point fairly, in one sentence.",
+              "Start your answer with However,",
+              "Give a reason or example that answers it."
+            ],
+            "answer": "However, one room shared by every class gives the whole school a place to shine."
+          },
+          "items": [
+            {
+              "prompt": "Your own CAT piece: write the strongest point someone could make against your contention, then your However answer.",
+              "lines": 4,
+              "answer": "Success: their point is stated fairly, However, starts the answer, and a reason or example answers it. e.g. Some people might think saving animals costs too much. However, losing them costs far more."
+            },
+            {
+              "prompt": "Some people might think a longer lunch means less learning. Write your However answer.",
+              "lines": 3,
+              "answer": "e.g. However, kids who have had a proper break come back calmer and ready to focus."
+            }
+          ]
+        },
+        {
+          "title": "Make it a speech",
+          "columns": 1,
+          "example": {
+            "prompt": "Plain: We should plant more trees.",
+            "steps": [
+              "Open with a question or Imagine...",
+              "Add a rule of three.",
+              "Read it aloud: does it sound strong?"
+            ],
+            "answer": "Imagine a playground full of shade, birdsong and cool green grass. Shouldn't every school have one?"
+          },
+          "items": [
+            {
+              "prompt": "Your own CAT piece: turn your hook into a speech opener that would make a whole assembly listen.",
+              "lines": 3,
+              "answer": "Success: opens with a question or Imagine..., uses a rule of three, sounds strong read aloud. e.g. Imagine an Arctic with no ice, no seals and no bears. Is that the world we want?"
+            },
+            {
+              "prompt": "Rewrite this with a rule of three: Recess should be longer.",
+              "lines": 2,
+              "answer": "e.g. A longer recess means more play, more friends and more energy for learning."
+            }
+          ]
+        },
+        {
+          "title": "Make a slogan",
+          "columns": 1,
+          "example": {
+            "prompt": "Issue: saving water at school.",
+            "steps": [
+              "Pick your one big message.",
+              "Use repetition or a rule of three.",
+              "Keep it to under ten words."
+            ],
+            "answer": "Turn it off. Save it up. Keep it flowing."
+          },
+          "items": [
+            {
+              "prompt": "Write a slogan for your own CAT piece. Use repetition or a rule of three.",
+              "answer": "e.g. For a habitat piece: Their home. Their future. Our choice.",
+              "lines": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session: the CAT draft is handed in for marking, so today students publish it their way."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Publishing Helper for every table, plus a few spares, and the Extension for students who finish. Hand back each student's Elastik pages once theirs show as uploaded."
+    },
+    {
+      "kind": "overview",
+      "title": "For the teacher: nothing today is marked",
+      "lines": [
+        "Only the Elastik pages handed in at the end of Thursday are marked. Nothing from today is marked.",
+        "Hand back each student's pages once theirs show as uploaded; an absentee's stay with you until their catch-up is uploaded.",
+        "Students choose: by hand on coloured paper (we hope most will), or Canva or Google Slides on their iPad.",
+        "Every format keeps the whole piece and a title. Pictures back up the argument: drawn or the app's own, nothing personal.",
+        "No student work is printed. Paper copies go home with the CAT; digital copies are shown on the iPad.",
+        "Absent Thursday? They finish their Elastik pages under CAT conditions, away from the publishing. Note the late upload."
+      ],
+      "notes": "Read before Friday. Students fix slips in their published copy, never on the Elastik pages, which are handed in for marking. Not finished at 40 minutes? Finish first thing next literacy block."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to polish and publish our persuasive writing for a real reader.",
+      "successCriteria": [
+        "I can use COPS to find and fix slips in persuasive writing.",
+        "I can publish my piece my way, with a title that grabs my reader.",
+        "I can explain one improvement I made and why it helps my reader."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Your writing is finished. Today we make it ready for a real reader."
+          ],
+          [
+            "SAY: Let's read the I can lines together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "SAY: Fixing slips is where everyone starts.",
+            "Publishing it your way is today's big goal."
+          ]
+        ],
+        "prep": "Nothing today is marked; only Thursday's Elastik pages are. Keep the mood celebratory. 1 minute.",
+        "tag": "[LI and SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Ready for a real reader",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "student",
+            "label": "Grade 5 and 6 readers"
+          },
+          {
+            "name": "family",
+            "label": "Your family"
+          }
+        ]
+      },
+      "prompt": "What would make a reader stop reading your piece?",
+      "notes": {
+        "answer": "messy writing, spelling slips, no title, one long paragraph",
+        "beats": [
+          [
+            "SAY: Paper copies go home with your CAT; digital ones are shown on your iPad.",
+            "Your family will read it, and so could kids at other schools."
+          ],
+          [
+            "ASK: What would make a reader stop reading your piece?",
+            "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+            "Eyes back in 3, 2, 1.",
+            "EXPECT: messy writing, spelling mistakes, no title"
+          ],
+          [
+            "SAY: That's exactly what we polish today.",
+            "Let's look at the big four: COPS."
+          ]
+        ],
+        "trap": [
+          "saying the ideas need changing.",
+          "Fix: remind them the ideas are done; today is the finish, not a rewrite."
+        ],
+        "prep": "Bridges from the handed-in draft to publishing. 2 minutes.",
+        "tag": "[Launch | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "COPS: the big persuasive slips",
+      "visual": {
+        "type": "placemat",
+        "banner": "Check COPS as you copy your piece",
+        "panels": [
+          {
+            "heading": "C",
+            "sub": "Capitals",
+            "lines": [
+              "Every sentence start",
+              "I, always",
+              "Names: Australia, the Great Barrier Reef"
+            ]
+          },
+          {
+            "heading": "O",
+            "sub": "Organisation",
+            "lines": [
+              "New reason, new paragraph",
+              "Start with a linking word",
+              "No new reason in the conclusion"
+            ]
+          },
+          {
+            "heading": "P",
+            "sub": "Punctuation",
+            "lines": [
+              "Full stop at the end of each idea",
+              "? after a rhetorical question",
+              "Comma after an opener"
+            ]
+          },
+          {
+            "heading": "S",
+            "sub": "Spelling",
+            "lines": [
+              "their / there / they're",
+              "its / it's",
+              "should have, never should of"
+            ]
+          }
+        ]
+      },
+      "notes": {
+        "answer": "O, organisation",
+        "beats": [
+          [
+            "POINT to each letter. SAY: COPS is how we edit.",
+            "These are the slips that cost persuasive pieces most."
+          ],
+          [
+            "SAY: C, capitals for names like Australia.",
+            "O, a new reason gets a new paragraph."
+          ],
+          [
+            "SAY: P, a question mark after a rhetorical question.",
+            "S, should have, never should of."
+          ],
+          [
+            "ASK: Which letter reminds you: new reason, new paragraph?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: O"
+          ]
+        ],
+        "trap": [
+          "thinking COPS is only spelling.",
+          "Fix: student names one slip for each letter."
+        ],
+        "prep": "Explicit teaching, kept macro: one big persuasive slip per COPS letter. 3 minutes.",
+        "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Polish it",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "read it aloud slowly, then check the COPS slide",
+      "followUp": "cold call one board: which rule did you use?",
+      "items": [
+        {
+          "visual": {
+            "type": "text",
+            "text": "every year, australia loses more koala habitat."
+          },
+          "label": "C: write the two fixed words.",
+          "answer": "Every year, Australia loses more koala habitat.",
+          "expect": "Every, Australia",
+          "pivot": "ask: which words start a sentence or name a place?",
+          "say": "Every and Australia: a sentence start and a place. Tick it or fix it."
+        },
+        {
+          "visual": {
+            "type": "text",
+            "text": "In conclusion, we must save the reef. Also, plastic hurts turtles."
+          },
+          "label": "O: write the first two words of the sentence that doesn't belong.",
+          "answer": "Also, plastic hurts turtles. A new reason in a conclusion.",
+          "expect": "Also, plastic",
+          "pivot": "ask: is it summing up, or a new reason?",
+          "say": "Also, plastic. A conclusion only sums up. Tick it or fix it."
+        },
+        {
+          "visual": {
+            "type": "text",
+            "text": "Would you want to lose your home forever."
+          },
+          "label": "P: write the last word and its mark.",
+          "answer": "Would you want to lose your home forever?",
+          "expect": "forever?",
+          "pivot": "ask: is it asking the reader something?",
+          "say": "Forever, question mark: it's a rhetorical question. Tick it or fix it."
+        },
+        {
+          "visual": {
+            "type": "text",
+            "text": "We should of acted years ago."
+          },
+          "label": "S: write the fixed words.",
+          "answer": "We should have acted years ago.",
+          "expect": "should have",
+          "pivot": "say it slowly: should've means should have",
+          "say": "Should have. Should've is short for should have. Tick it or fix it."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Each sentence has one kind of COPS slip.",
+          "Write only what the label asks."
+        ],
+        "trap": [
+          "fixing something that isn't wrong.",
+          "Fix: student reads it aloud and changes one thing only."
+        ],
+        "stretch": "Write a sentence of your own with a rhetorical question and a place name.",
+        "help": "The COPS slide, or the Publishing Helper.",
+        "prep": "One macro slip per COPS letter, the ones persuasive pieces lose marks on. Brisk: 4 minutes.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      },
+      "ask": "What's the COPS slip? Write only what the label asks."
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which title grabs your reader?",
+      "prompt": "A piece about why our school needs a music room",
+      "options": [
+        {
+          "text": "My Persuasive Writing",
+          "misconception": "names the task, not the issue the reader cares about"
+        },
+        {
+          "text": "Turn Up the Music!"
+        },
+        {
+          "text": "Why I Think Our School Should Have a Music Room Because Music Is Good",
+          "misconception": "packs the whole argument into the title, so it is too long to grab anyone"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - short, punchy and about the issue",
+        "beats": [
+          [
+            "SAY: The title is the first thing your reader sees.",
+            "Read all three in your head."
+          ],
+          [
+            "ASK: Which title grabs your reader?",
+            "10 sec. Cue: Voices off. Point... now. Hold your point.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> cold call one B: What makes it grab you? Then reveal.",
+            "Less -> say each title aloud, ask which you'd stop to read, re-ask."
+          ]
+        ],
+        "trap": [
+          "choosing C because it explains everything.",
+          "Fix: student cuts C down to five words or fewer."
+        ],
+        "prep": "The CAT publishing check starts with My title grabs attention. Off-topic on purpose.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "Your choice",
+      "title": "Choose how you publish",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "palette",
+            "label": "1 Coloured paper, by hand"
+          },
+          {
+            "name": "tv",
+            "label": "2 Canva or Google Slides"
+          }
+        ]
+      },
+      "prompt": "Every choice: whole piece, title, pictures that fit.",
+      "notes": {
+        "answer": "open - 1 or 2",
+        "beats": [
+          [
+            "SAY: Today you choose how your piece reaches its reader."
+          ],
+          [
+            "POINT to each. SAY: By hand on coloured paper,",
+            "or Canva or Google Slides on your iPad."
+          ],
+          [
+            "SAY: Handwritten copies go home with your CAT, so most of you will pick paper.",
+            "Whichever you choose, it's your whole piece, with a title."
+          ],
+          [
+            "ASK: Which will you choose?",
+            "10 sec. Cue: Fingers at your chest, voices off... show me.",
+            "EXPECT: 1 or 2"
+          ]
+        ],
+        "trap": [
+          "choosing slides, then putting only dot points on them.",
+          "Fix: every sentence of the piece goes on the slides."
+        ],
+        "prep": "Student agency is the point today; paper is encouraged but not forced. Pictures: drawn or the app's own images, nothing personal. 2 minutes.",
+        "tag": "[Choice | Independent application | SC2 | HITS 3]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Your turn: publish it your way",
+      "task": "Publish your whole CAT piece for your reader, your way.",
+      "steps": [
+        "Give it a title that grabs your reader.",
+        "Copy or type your whole piece, checking COPS as you go.",
+        "Add pictures last, then do the publishing check on the Helper."
+      ],
+      "where": "Your Elastik pages, then your chosen format",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "read",
+          "pencil",
+          "star"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Read it. Fix it. Publish it.",
+      "extendedTask": "publishing the whole CAT piece by hand or in Canva or Google Slides, with a title, pictures and the publishing check",
+      "notes": {
+        "answer": "the whole piece published with a title, in the format they chose",
+        "beats": [
+          [
+            "SAY: Let's read the steps together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "SAY: Fix slips in your published copy. Don't write on your Elastik pages:",
+            "they're handed in for marking."
+          ],
+          [
+            "ASK: At 5 minutes, is your title written at the top?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up"
+          ],
+          [
+            "SCAN for thumbs down.",
+            "80%+ -> keep copying.",
+            "Less -> say: Use the title tip on the Helper. Re-check in 5."
+          ],
+          "TIME 37: pack away. Unfinished? Next literacy block. Done? Extension."
+        ],
+        "trap": [
+          "spending the time on pictures and never finishing the words.",
+          "Fix: student finishes the whole piece first, then adds pictures."
+        ],
+        "stretch": "The Extension: answer the other side, a speech opener and a slogan.",
+        "help": "The Helper: COPS, titles, pictures. Typing? Words first, pictures after.",
+        "prep": "Publishing in the format each student chose. Nothing today is marked; only Thursday's Elastik pages are. Digital copies are shown on the iPad, not printed. SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Without our help the reef will lose it's colour.",
+        "Write this sentence correctly on your board."
+      ],
+      "notes": {
+        "answer": "Without our help, the reef will lose its colour.",
+        "beats": [
+          [
+            "SAY: Here's a new sentence with two slips. Fix both."
+          ],
+          [
+            "ASK: Write this sentence correctly on your board.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: a comma after help, and its with no apostrophe"
+          ],
+          [
+            "RECORD who fixes one slip but not both.",
+            "They keep a Publishing Helper in their writer's notebook."
+          ]
+        ],
+        "trap": [
+          "keeping it's because the colour belongs to the reef.",
+          "Fix: ask does it mean it is? Student removes the apostrophe."
+        ],
+        "prep": "A new sentence, collected one board at a time. Shows who can polish without the slide. SC1 and SC2.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner one thing you are proud of in your writing, and one thing you improved while editing.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - a proud moment and an improvement",
+        "beats": [
+          [
+            "SAY: Let's read our I can lines together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "ASK: How ready is your piece for a real reader?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          [
+            "RECORD each thumb down beside the exit boards.",
+            "A thumb up with a two-slip board matters most."
+          ],
+          [
+            "ASK: What are you proud of, and what did you improve?",
+            "30 sec. Cue: Partner B first. You have 30 seconds. Go.",
+            "Eyes back in 3, 2, 1.",
+            "EXPECT: I'm proud of... I improved..."
+          ]
+        ],
+        "prep": "The CAT's publishing reflection, said aloud. Paper copies go home with the CAT; digital ones are shown on the iPad. SC3.",
+        "tag": "[Closing | Retention and recall | SC3 | HITS 9]"
+      }
+    }
+  ]
+}

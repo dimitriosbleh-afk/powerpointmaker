@@ -1,0 +1,451 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 5,
+    "session": 2,
+    "variant": 1,
+    "minutes": 60,
+    "assessment": {
+      "writingMinutes": 40,
+      "reason": "Term 4 persuasive writing CAT, day 2 of 2: students finish and check their draft on their Elastik pages on their own, and no enabling support is given while it runs (staff rubric build notes)."
+    },
+    "title": "CAT Day 2: Finish, Check, Hand In",
+    "subtitle": "Term 4 Week 5, Session 2",
+    "meta": "Year 5/6 Literacy | Persuasive Writing CAT",
+    "footer": "Persuasive Writing CAT | Year 5/6 Literacy | Week 5 Session 2",
+    "outputFolder": "T4W5_CAT_S2_Finish_Check_Hand_In",
+    "fileName": "Session 2 - CAT Day 2 Finish Check Hand In.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Literacy, Years 5 and 6: completing and editing a persuasive text independently, assessed by the Term 4 writing CAT",
+      "shape": "assessment day: a quick where-am-I check, one check of what a conclusion must do, then protected writing and a timed read-aloud check before hand-in",
+      "criticalFeature": "the conclusion restates the position and sells it, with no new reason",
+      "decisionPoints": [
+        "the fingers check at the start: how many parts are written?",
+        "the conclusion check: which ending does its job?",
+        "the 10-minute warning: is every student reading their piece against the checklist?"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Introduction claims, body paragraphs prove, conclusion sells.",
+      "catchUp": "Away yesterday? Give them the Plan Template (it has the questions and ideas), the full 40 minutes, and catch-up time for the rest; note it on the Elastik upload."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Each student's Elastik pages from Session 1",
+      "Writer's notebooks or Plan Templates with yesterday's plan",
+      "Pencils and erasers",
+      "Class copies of The Last Bear, for ideas only"
+    ],
+    "routineIcons": [
+      "Fingers at your chest",
+      "Point to A, B or C",
+      "Thumbs, voices off",
+      "Everyone, together, on three",
+      "Voices off for writing time"
+    ],
+    "boardSetup": [
+      "The writing placemat slide on the TV for the whole writing time",
+      "Write the hand-in time on the board, and the 10-minute check time",
+      "Thursday afternoon: upload the Elastik pages. Hand back each student's pages once theirs show as uploaded; an absentee's stay with you until their catch-up is uploaded."
+    ]
+  },
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session: today students finish their CAT draft, check it and hand it in."
+    },
+    {
+      "kind": "resources",
+      "notes": "No printed sheets today: hand back each student's own Elastik pages. Keep a spare from the same Elastik task only to replace a spoilt page."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to finish and check a persuasive piece so it shows our best independent writing.",
+      "successCriteria": [
+        "I can finish my body paragraphs with a reason, evidence and an explanation.",
+        "I can write a conclusion that restates my position and ends with a strong last line.",
+        "I can read my writing aloud quietly and fix what I find."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today your piece gets finished, checked and handed in."
+          ],
+          [
+            "SAY: Let's read the I can lines together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "SAY: Finishing your body paragraphs is where everyone starts.",
+            "A conclusion that sells it is today's big goal."
+          ]
+        ],
+        "prep": "SC1 and SC2 are the rest of the draft; SC3 is the checklist at the end. Keep it brisk: 1 minute.",
+        "tag": "[LI and SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Where are you up to?",
+      "visual": {
+        "type": "chips",
+        "items": [
+          "1 Intro",
+          "2 Body 1",
+          "3 Body 2",
+          "4 Body 3",
+          "5 Conclusion"
+        ],
+        "fontSize": 26
+      },
+      "prompt": "Show me the last part you finished.",
+      "notes": {
+        "answer": "open - a number from 1 to 5",
+        "beats": [
+          [
+            "SAY: Find where you stopped yesterday on your Elastik pages."
+          ],
+          [
+            "ASK: Which is the last part you finished?",
+            "10 sec. Cue: Fingers at your chest, voices off... show me.",
+            "EXPECT: 2, 3 or 4 for most"
+          ],
+          [
+            "SCAN the fingers. Note anyone on 0 or 1.",
+            "80%+ on 2 or more -> move on.",
+            "Less -> same timing for everyone; note names beside the draft. Re-ask at 25."
+          ],
+          [
+            "SAY: Now quietly read your plan and your last paragraph.",
+            "That's how you pick up the thread."
+          ]
+        ],
+        "trap": [
+          "starting a new paragraph without rereading.",
+          "Fix: student reads their plan, then their last paragraph."
+        ],
+        "prep": "The fingers show who may not reach the conclusion; everyone gets the same time. 2 minutes.",
+        "tag": "[Launch | Retention and recall | HITS 6, 7]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which conclusion does its job?",
+      "prompt": "Question: Should our school have a music room?",
+      "options": [
+        {
+          "text": "In conclusion, music is fun. A music room could also have a stage for assemblies!",
+          "misconception": "adds a new reason in the conclusion instead of summing up"
+        },
+        {
+          "text": "Our school needs a music room. It builds confidence, teamwork and joy, so please sign our petition this week."
+        },
+        {
+          "text": "Thank you for reading my writing about music. I hope you liked it.",
+          "misconception": "ends politely but never restates the position or asks the reader to act"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - it restates, sums up and ends with a call to action",
+        "beats": [
+          [
+            "SAY: Before you write, let's check what a conclusion has to do.",
+            "Read all three in your head."
+          ],
+          [
+            "ASK: Which conclusion does its job?",
+            "15 sec. Cue: Voices off. Point... now. Hold your point.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> cold call one B: What's wrong with A? Then reveal.",
+            "Less -> point to Sell it on the placemat, read its four lines, re-ask."
+          ]
+        ],
+        "trap": [
+          "choosing A because it sounds exciting.",
+          "Fix: student finds the new idea in A, the stage, and says why it doesn't belong."
+        ],
+        "prep": "The decision point before release. A new idea in the ending caps the Text Structure row (rubric: no new ideas). Off-topic on purpose.",
+        "tag": "[CFU | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Your turn: finish, then check",
+      "task": "Work on your own on your Elastik pages. Finish your piece, then check it.",
+      "steps": [
+        "Finish your body paragraphs.",
+        "Write your conclusion: answer the question again and sell it.",
+        "Read it aloud quietly and check it against the CAT checklist."
+      ],
+      "where": "Elastik pages, with your plan beside you",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "flag",
+          "magnifier",
+          "megaphone"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Claim it. Prove it. Sell it.",
+      "extendedTask": "the persuasive CAT: finish the body paragraphs, write the conclusion, then check with the CAT checklist",
+      "notes": {
+        "answer": "a finished piece: introduction, three body paragraphs and a conclusion",
+        "beats": [
+          [
+            "SAY: Let's read the steps together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "SAY: Remember, three different reasons, then a conclusion that sells it.",
+            "A short paragraph is better than no ending."
+          ],
+          [
+            "SAY: From now it's voices off, and all your own work.",
+            "SHOW the placemat slide. Its notes carry the timings."
+          ]
+        ],
+        "trap": [
+          "no conclusion because body 3 ran long.",
+          "Fix: student writes the conclusion now, then goes back."
+        ],
+        "stretch": "Finished early? Reread your piece against every line of the placemat.",
+        "help": "Learning plan adjustments only. Point to the placemat panel they need.",
+        "prep": "Independent writing. Give no ideas, sentences or spelling during the CAT. SC1 to SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "Writing time",
+      "title": "Writing placemat",
+      "visual": {
+        "type": "placemat",
+        "banner": "Your reader: Grade 5 and 6 students at other local primary schools",
+        "panels": [
+          {
+            "heading": "Claim it",
+            "sub": "Introduction",
+            "icon": "flag",
+            "lines": [
+              "Hook your reader",
+              "Give context",
+              "State your position",
+              "Preview your reasons"
+            ]
+          },
+          {
+            "heading": "Prove it",
+            "sub": "3 body paragraphs",
+            "icon": "magnifier",
+            "lines": [
+              "One reason per paragraph",
+              "Reason + evidence + explanation",
+              "This means... why it matters to your reader",
+              "In one body paragraph, answer the other side: Some people might think... However, I believe... because..."
+            ]
+          },
+          {
+            "heading": "Sell it",
+            "sub": "Conclusion",
+            "icon": "megaphone",
+            "lines": [
+              "Answer the question again",
+              "Restate your position",
+              "Sum up your strongest reasons",
+              "Finish with a call to action a Grade 5 or 6 student can do, or a memorable final line"
+            ]
+          }
+        ],
+        "strips": [
+          {
+            "label": "Sneaky tricks",
+            "items": [
+              "Rhetorical question",
+              "Emotive language",
+              "Rule of three",
+              "Repetition",
+              "Strong modality"
+            ]
+          },
+          {
+            "label": "Linking words",
+            "items": [
+              "Firstly,",
+              "In addition,",
+              "Most importantly,",
+              "For example,",
+              "As a result,",
+              "However,"
+            ]
+          }
+        ]
+      },
+      "notes": {
+        "beats": [
+          [
+            "SHOW this slide for the writing time. CIRCULATE, but give no ideas or sentences.",
+            "If asked, SAY: Check your plan and the placemat."
+          ],
+          [
+            "ASK: At 20 minutes: Have you started your conclusion?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up for most"
+          ],
+          [
+            "SCAN the thumbs only.",
+            "80%+ -> keep writing.",
+            "Less -> SAY to everyone: Start your conclusion now, then go back. Re-ask at 25."
+          ],
+          [
+            "TIME at 30: SWITCH to the next slide, Read it, check it, fix it."
+          ]
+        ],
+        "prep": "The same placemat as Session 1. Writing runs 30 minutes, then 10 minutes for the CAT checklist.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]",
+        "answer": "thumbs up at 20 minutes: conclusion started"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "10 minutes to go",
+      "title": "Read it, check it, fix it",
+      "visual": {
+        "type": "placemat",
+        "banner": "The CAT checklist: is each line true of your piece? If not, fix it now.",
+        "panels": [
+          {
+            "heading": "Claim it",
+            "sub": "Introduction",
+            "icon": "flag",
+            "lines": [
+              "My contention answers my question",
+              "My hook grabs my reader",
+              "I tell readers my position"
+            ]
+          },
+          {
+            "heading": "Prove it",
+            "sub": "Body paragraphs",
+            "icon": "magnifier",
+            "lines": [
+              "Three different reasons, one per paragraph",
+              "Examples, facts or explanations",
+              "The other side answered with a reason",
+              "Persuasive devices",
+              "Logical order, linking words"
+            ]
+          },
+          {
+            "heading": "Sell it",
+            "sub": "Conclusion",
+            "icon": "megaphone",
+            "lines": [
+              "I restate my position",
+              "A clear final message or a call to action a Grade 5 or 6 student can do"
+            ]
+          }
+        ],
+        "strips": [
+          {
+            "label": "Last checks",
+            "items": [
+              "Spelling",
+              "Grammar",
+              "Capitals",
+              "Punctuation",
+              "Varied sentences",
+              "Question at the top"
+            ]
+          }
+        ]
+      },
+      "prompt": "Then hand in your Elastik pages.",
+      "notes": {
+        "answer": "every student reading their own piece against the checklist",
+        "beats": [
+          [
+            "SAY: Ten minutes to go. Finish the sentence you're on.",
+            "Now read your piece aloud, quietly, to yourself."
+          ],
+          [
+            "SAY: Read each line of the checklist. Is it true of your piece?",
+            "If a line isn't true yet, fix that now."
+          ],
+          [
+            "ASK: Are you checking your piece against the list right now?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up"
+          ],
+          [
+            "SCAN the thumbs.",
+            "80%+ -> keep checking until the timer ends.",
+            "Less -> SAY to everyone: No new paragraphs now. Read it, check it, fix it. Re-ask."
+          ]
+        ],
+        "trap": [
+          "saying yes to every line without reading.",
+          "Fix: student puts a finger on the words in their writing that prove each line."
+        ],
+        "prep": "The CAT's own Step 4 checklist, sorted into Claim, Prove and Sell to read on the TV, plus a check that the question is at the top of page 1. Fixing errors is fine; rewriting whole paragraphs is not, there is no time. SC3.",
+        "tag": "[You Do | Independent application | SC3 | HITS 9]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner one line from your piece you are proud of, and why it would persuade your reader.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - a line and the reason it persuades",
+        "beats": [
+          [
+            "SAY: Pencils down. Let's read our I can lines together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "ASK: How sure are you that your conclusion sells it?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          [
+            "ASK: Which line are you proudest of, and why would it persuade?",
+            "30 sec. Cue: Partner A first. You have 30 seconds. Go.",
+            "Eyes back in 3, 2, 1.",
+            "EXPECT: This line... because my reader..."
+          ],
+          [
+            "COLLECT every student's Elastik pages. Upload this afternoon.",
+            "Hand each back Friday once theirs shows as uploaded."
+          ]
+        ],
+        "prep": "The thumbs sit beside the draft when you mark. Students share a line but give no feedback on each other's CAT. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

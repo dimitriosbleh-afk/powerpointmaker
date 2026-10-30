@@ -2030,7 +2030,8 @@ function createBaseBuilders(C, FONT_H, FONT_B, el, shadowFn, S, defaults) {
     const reserve = Number(o.reserveBottom) > 0 ? Number(o.reserveBottom) : 0;
     const panelBottom = SAFE_BOTTOM - (promptH ? promptH + gap : 0) - reserve;
     const panelH = panelBottom - panelTop;
-    const usePanel = o.panel !== false;
+    // A placemat brings its own panels, so it takes the whole content area.
+    const usePanel = o.panel !== false && !(visualSpec && visualSpec.type === "placemat");
     if (usePanel) {
       el.addCard(s, 0.5, panelTop, 9, panelH, { variant: "tint", tone });
     }

@@ -1,0 +1,28 @@
+{
+  "unit_folder": "Term4_Week4_Literacy_Plan_and_Draft",
+  "unit_pptx_name": "Term 4 Week 4 - Plan and Draft - Year 5-6 Literacy.pptx",
+  "anchor": "Claim it. Prove it. Sell it. One five-paragraph persuasive piece (introduction, body 1, body 2, answer back, conclusion), built as mine (zoo letter), ours (class shade letter), yours. Replaces the four-session Week 4 deck; Essential Assessment sessions sit outside this deck.",
+  "lessons": [
+    {
+      "build_script": "builds/t4w4_pd_s1_plan_and_open_strong.json",
+      "folder": "T4W4_PD_S1_Plan_And_Open_Strong",
+      "session": 1,
+      "title": "Plan It and Open Strong",
+      "focus": "Plan the whole piece for one reader (two reasons, strongest last) and draft the introduction: hook, context, position, preview. Critical feature: by the end of the introduction the reader knows what you want and why. Retrieves: Week 3 hooks, Week 1 Issue Card."
+    },
+    {
+      "build_script": "builds/t4w4_pd_s2_build_your_body.json",
+      "folder": "T4W4_PD_S2_Build_Your_Body",
+      "session": 2,
+      "title": "Build Your Body",
+      "focus": "Draft two body paragraphs: topic sentence, proof, This means..., with linking words by job. Critical feature: the first sentence is the claim. Retrieves: Week 2 proof, the Claim it / Prove it / Sell it anchor."
+    },
+    {
+      "build_script": "builds/t4w4_pd_s3_answer_back_finish_strong.json",
+      "folder": "T4W4_PD_S3_Answer_Back_Finish_Strong",
+      "session": 3,
+      "title": "Answer Back and Finish Strong",
+      "focus": "Draft the answer back (Some people say... However... proof) and the conclusion (restate echoing the hook, sum up, call to action). Critical feature: the conclusion ends with one clear thing the reader can do. Retrieves: Week 1 other side, Session 1 hook."
+    }
+  ]
+}

@@ -1,0 +1,1481 @@
+{
+  "term": 4,
+  "week": 4,
+  "og_version": "1.9",
+  "cohort": "Enrichment",
+  "unit_folder": "OG_Term4_Week4_v19_sample",
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "taught_morphemes": [
+    "mini-",
+    "super-",
+    "over-",
+    "anti-",
+    "ultra-",
+    "retro-",
+    "em-",
+    "syn-",
+    "sym-/sys-/syl-",
+    "-let",
+    "-ling",
+    "-cian",
+    "-cial/-tial",
+    "-ancy/-ance",
+    "-ency/-ence",
+    "-ity",
+    "-tude",
+    "out-",
+    "self-",
+    "post-",
+    "with-",
+    "counter-",
+    "contra-",
+    "omni-",
+    "intra-",
+    "-eer",
+    "-ant",
+    "-ar",
+    "-ine",
+    "-cy",
+    "-ciate/-tiate",
+    "ped/pod",
+    "rect/reg",
+    "capt/capit",
+    "flect/flex",
+    "ord/ordin",
+    "clud(e)/clus(e)",
+    "mal-",
+    "-ery",
+    "-ice",
+    "-ive",
+    "-ite",
+    "-acy",
+    "-ule",
+    "mega-",
+    "micro",
+    "pict/picto",
+    "vore",
+    "eco",
+    "carn/carni",
+    "junct/join/joint",
+    "vict/vinc",
+    "chron",
+    "mand/mend",
+    "jur/jud/just",
+    "pend/pens",
+    "pon/pound",
+    "caus-/cus(e)",
+    "hyper",
+    "omni-",
+    "astro",
+    "terr",
+    "port"
+  ],
+  "overview": {
+    "Monday": {
+      "morphology": [
+        "New Morphology",
+        "ject"
+      ],
+      "grammar": "Not today",
+      "learned_words": "Not today"
+    },
+    "Tuesday": {
+      "morphology": [
+        "Spell and dictate",
+        "ject"
+      ],
+      "grammar": "Not today",
+      "learned_words": [
+        "New learned word",
+        "guarantee"
+      ]
+    },
+    "Wednesday": {
+      "morphology": [
+        "Build and break",
+        "ject"
+      ],
+      "grammar": "Not today",
+      "learned_words": "Not today"
+    },
+    "Thursday": {
+      "morphology": [
+        "Parts of speech",
+        "suffix frames"
+      ],
+      "grammar": "Semicolon: join two full sentences",
+      "learned_words": [
+        "New learned word",
+        "mortgage"
+      ]
+    },
+    "Friday": {
+      "morphology": [
+        "Friday Review",
+        "ject"
+      ],
+      "grammar": "Friday Review: semicolons",
+      "learned_words": [
+        "Friday Review",
+        "guarantee, mortgage"
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "day": "Monday",
+      "type": "teach",
+      "morphology_review": [
+        {
+          "morph": "pon/pound",
+          "type": "root",
+          "keyword": "ponder",
+          "meaning": "place, part"
+        },
+        {
+          "morph": "astro",
+          "type": "root",
+          "keyword": "astronaut",
+          "meaning": "star"
+        },
+        {
+          "morph": "mand/mend",
+          "type": "root",
+          "keyword": "command",
+          "meaning": "order, entrust"
+        },
+        {
+          "morph": "port",
+          "type": "root",
+          "keyword": "export",
+          "meaning": "bring, carry",
+          "extra_task": {
+            "prompt": "What is one word built from port, meaning carry?",
+            "answers": [
+              "transport",
+              "export",
+              "portable"
+            ]
+          }
+        },
+        {
+          "morph": "caus-/cus(e)",
+          "type": "root",
+          "keyword": "accuse",
+          "meaning": "cause"
+        },
+        {
+          "morph": "terr",
+          "type": "root",
+          "keyword": "territory",
+          "meaning": "land",
+          "extra_task": {
+            "prompt": "What is one word built from terr, meaning land?",
+            "answers": [
+              "terrain",
+              "territory",
+              "terrace"
+            ]
+          }
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law"
+        },
+        {
+          "morph": "omni-",
+          "type": "prefix",
+          "keyword": "omnibus",
+          "meaning": "all",
+          "extra_task": {
+            "prompt": "What is one word built from omni, meaning all?",
+            "answers": [
+              "omnivore",
+              "omnipresent"
+            ]
+          }
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root",
+          "keyword": "appendage",
+          "meaning": "hang; pay"
+        },
+        {
+          "morph": "hyper",
+          "type": "root",
+          "keyword": "hyperactive",
+          "meaning": "over, above"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "portable",
+          "territory",
+          "astronomy",
+          "omnivorous",
+          "report",
+          "terrier",
+          "hypersonic",
+          "supporter",
+          "asteroid",
+          "terrarium",
+          "exporter",
+          "omnipresent",
+          "subterranean",
+          "reporter",
+          "astrophysics"
+        ],
+        "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"Partners: partner A reads rows 1, 3 and 5, partner B reads rows 2 and 4.\"\n3. ASK: \"Which word means a business that carries goods out of the country?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: exporter.\n4. ASK: \"Finish my sentence. Our dog digs holes all over the yard, because it is a...\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: terrier.\n5. ASK: \"Odd one out: astronomy, asteroid, omnipresent. Which one does not belong?\"\n5 sec. Then: \"Everyone, together, on three.\"\nEXPECT: omnipresent.\nIf time: \"Why?\" Turn and tell. EXPECT: it has omni, all - the others have astro, star."
+      },
+      "new_morphology": {
+        "morph": "ject",
+        "type": "root",
+        "keyword": "abject",
+        "meaning": "throw"
+      },
+      "memory_hook": {
+        "text": "Eject throws the pilot out!",
+        "picture": "plane"
+      },
+      "brainstorm": "\"What words can you think of with ject in them?\" 20 sec, turn and tell, then cold call four pairs.\nEXPECT: reject, project, inject, eject.\nCLARIFY: jet is not a ject word - it has no c. Listen for the whole ject.",
+      "words_to_read_new": [
+        {
+          "word": "inject",
+          "meaning": "in- means in + JECT means throw: to throw in, to force in"
+        },
+        {
+          "word": "eject",
+          "meaning": "e- means out + JECT means throw: to throw out"
+        },
+        {
+          "word": "reject",
+          "meaning": "re- means back + JECT means throw: to throw back, to refuse"
+        },
+        {
+          "word": "projector",
+          "meaning": "pro- means forward + JECT means throw + -or means a thing that: a thing that throws a picture forward"
+        },
+        {
+          "word": "interject",
+          "meaning": "inter- means between + JECT means throw: to throw words in between"
+        },
+        {
+          "word": "adjective",
+          "meaning": "ad- means to + JECT means throw + -ive means relating to: a word thrown next to a noun"
+        },
+        {
+          "word": "injection",
+          "meaning": "in- means in + JECT means throw + -ion means the act of: the act of throwing medicine in"
+        },
+        {
+          "word": "rejection",
+          "meaning": "re- means back + JECT means throw + -ion means the act of: the act of throwing back"
+        },
+        {
+          "word": "objection",
+          "meaning": "ob- means against + JECT means throw + -ion means the act of: the act of throwing a protest against"
+        }
+      ],
+      "associated_word_exceptions": [
+        {
+          "word": "projector",
+          "reason": "Ground 3: pro + ject + -or is the clearest thing-that-throws word in the family and the one students see every day; the card lists projection and projectile but no -or word.",
+          "source": "Macquarie Dictionary: projector, an apparatus for throwing an image on a screen."
+        }
+      ],
+      "wtr_new_notes": "SAY: \"Learn ject once and you can read a whole family of words about throwing.\"\nREAD each word as it appears, say what it means, then link ject to the card meaning: throw.\ninject - in means in + JECT means throw: to throw in. A nurse injects medicine into your arm.\neject - e means out + JECT means throw: to throw out. Press the button to eject the disc.\nreject - re means back + JECT means throw: to throw back. Fishers reject small fish and throw them back.\nprojector - pro means forward + JECT means throw + or means a thing that: it throws the picture forward onto the screen.\ninterject - inter means between + JECT means throw: to throw words in between. Please don't interject while I'm talking.\nadjective - ad means to + JECT means throw + ive means relating to: a word thrown next to a noun. In red car, red is the adjective.\ninjection - the act of throwing in. The vet gave our dog an injection.\nrejection - the act of throwing back. The editor sent the writer a rejection letter.\nobjection - ob means against: the act of throwing a protest against. The lawyer shouted, \"Objection!\"",
+      "keyword_sentence": {
+        "title": "Your keyword and one sentence",
+        "rule": "Pick the ject word that helps YOU remember throw. Write it, star it.",
+        "example": "Card keyword: abject (thrown down low)\nMine: eject (to throw out)",
+        "items": [
+          "Then write ONE sentence with a ject word. Make the meaning clear."
+        ],
+        "routine": "OG books - 3 mins",
+        "footer": "Check: does it make the meaning clear?",
+        "notes": "1. SAY: \"The card keyword is abject. It means thrown down low, like an abject failure. Most people find it hard to remember.\"\n2. SAY: \"So pick the ject word that helps YOU remember throw. Eject works for lots of people. Write it at the bottom of the page and star it.\"\n3. SAY: \"Then write one sentence with a ject word, so a reader can tell what it means.\" TIME: 3 min, then cold call two students to read theirs.\nEXTENSION: Two in one - write one sentence that uses two ject words and still makes sense.\nHELP: give a stem, \"The pilot had to eject because...\" or \"The goalie rejected...\", and let them finish it.\n---\nPurpose: Yoshimoto's keyword and sentence steps - each student owns a memory hook for ject. [You Do | Keyword and sentence | Morphology]\nANSWERS: open - e.g. Mine: eject. The pilot had to eject when the engine caught fire. EXTENSION: e.g. The coach rejected my idea to inject more speed into the game."
+      }
+    },
+    {
+      "day": "Tuesday",
+      "type": "spell",
+      "morphology_review": [
+        {
+          "morph": "ject",
+          "type": "root",
+          "keyword": "abject",
+          "meaning": "throw",
+          "extra_task": {
+            "prompt": "What is one word built from ject, meaning throw?",
+            "answers": [
+              "inject",
+              "eject",
+              "reject"
+            ]
+          }
+        },
+        {
+          "morph": "terr",
+          "type": "root",
+          "keyword": "territory",
+          "meaning": "land"
+        },
+        {
+          "morph": "hyper",
+          "type": "root",
+          "keyword": "hyperactive",
+          "meaning": "over, above"
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root",
+          "keyword": "appendage",
+          "meaning": "hang; pay",
+          "extra_task": {
+            "prompt": "What is one word built from pend or pens, meaning hang?",
+            "answers": [
+              "pendulum",
+              "pendant"
+            ]
+          }
+        },
+        {
+          "morph": "astro",
+          "type": "root",
+          "keyword": "astronaut",
+          "meaning": "star",
+          "extra_task": {
+            "prompt": "What is one word built from astro, meaning star?",
+            "answers": [
+              "astronaut",
+              "asteroid"
+            ]
+          }
+        },
+        {
+          "morph": "port",
+          "type": "root",
+          "keyword": "export",
+          "meaning": "bring, carry"
+        },
+        {
+          "morph": "omni-",
+          "type": "prefix",
+          "keyword": "omnibus",
+          "meaning": "all"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law"
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root",
+          "keyword": "ponder",
+          "meaning": "place, part"
+        },
+        {
+          "morph": "caus-/cus(e)",
+          "type": "root",
+          "keyword": "accuse",
+          "meaning": "cause"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "eject",
+          "transport",
+          "terrain",
+          "astronaut",
+          "interject",
+          "import",
+          "injection",
+          "terrace",
+          "support",
+          "rejection",
+          "astrology",
+          "supportive",
+          "terrestrial",
+          "adjective",
+          "postpone"
+        ],
+        "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"Whisper read rows 1 to 3 to yourself. Then everyone reads rows 4 and 5 out loud.\"\n3. ASK: \"Finish my sentence. The pilot pulled the handle to...\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: eject.\n4. ASK: \"Odd one out: astronaut, astrology, terrain. Which one does not belong?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: terrain.\n5. ASK: \"Partner A, point to any word. Partner B, read it and say what its part means. Swap after 30 seconds.\"\n30 sec each way. CIRCULATE and listen for the part's meaning, not just the word."
+      },
+      "sound_bank": [
+        {
+          "morph": "port",
+          "type": "root"
+        },
+        {
+          "morph": "terr",
+          "type": "root"
+        },
+        {
+          "morph": "ject",
+          "type": "root"
+        },
+        {
+          "morph": "astro",
+          "type": "root"
+        },
+        {
+          "morph": "caus-/cus(e)",
+          "type": "root"
+        },
+        {
+          "morph": "omni-",
+          "type": "prefix"
+        },
+        {
+          "morph": "hyper",
+          "type": "root"
+        }
+      ],
+      "words_to_spell_review": [
+        {
+          "word": "exporter",
+          "sentence": "Australia is a big exporter of wheat and wool.",
+          "picture": [
+            {
+              "icon": "gi/GiWheat",
+              "color": "B7860B"
+            },
+            "fa6/FaArrowRight",
+            {
+              "icon": "gi/GiCargoShip",
+              "color": "1F3A5F"
+            }
+          ]
+        },
+        {
+          "word": "territory",
+          "sentence": "The Northern Territory has huge cattle stations.",
+          "prompt": "Which part tells you a territory is an area of land?",
+          "answer": "The terr part, meaning land.",
+          "picture": {
+            "icon": "gi/GiAustralia",
+            "color": "D5D0DA",
+            "highlight": {
+              "box": [
+                0.36,
+                0,
+                0.585,
+                0.5
+              ],
+              "color": "B5541C"
+            }
+          }
+        },
+        {
+          "word": "astronomer",
+          "sentence": "The astronomer counted the moons around Jupiter.",
+          "prompt": "Which part tells you an astronomer studies the stars?",
+          "answer": "The astro part, meaning star.",
+          "picture": [
+            {
+              "icon": "tb/TbTelescope",
+              "color": "1F3A5F"
+            },
+            {
+              "icon": "fa6/FaMoon",
+              "color": "C9A227"
+            }
+          ]
+        },
+        {
+          "word": "omnivore",
+          "sentence": "A bear is an omnivore, so it eats berries and fish.",
+          "picture": [
+            {
+              "icon": "gi/GiBearFace",
+              "color": "6B4423"
+            },
+            {
+              "icon": "gi/GiRaspberry",
+              "color": "C0392B"
+            },
+            {
+              "icon": "fa6/FaFish",
+              "color": "2874A6"
+            }
+          ]
+        },
+        {
+          "word": "hypersonic",
+          "sentence": "The hypersonic jet flew five times faster than sound.",
+          "prompt": "Which part tells you it goes over the speed of sound?",
+          "answer": "The hyper part, meaning over.",
+          "picture": [
+            {
+              "icon": "fa6/FaJetFighter",
+              "color": "1F3A5F"
+            },
+            {
+              "icon": "fa6/FaGaugeHigh",
+              "color": "C0392B"
+            }
+          ]
+        },
+        {
+          "word": "supporter",
+          "sentence": "My uncle is a loud supporter of our local footy team.",
+          "picture": [
+            {
+              "icon": "fa6/FaHandsClapping",
+              "color": "B5541C"
+            },
+            {
+              "icon": "md/MdSportsRugby",
+              "color": "6B4423"
+            }
+          ]
+        },
+        {
+          "word": "excuse",
+          "sentence": "Missing the bus is not a good excuse for being late.",
+          "picture": {
+            "none": "an excuse is a reason someone gives; no picture shows that without the teacher explaining it"
+          }
+        }
+      ],
+      "words_to_spell_new": [
+        "inject",
+        "reject",
+        "projector",
+        "objection"
+      ],
+      "extension": "1. SAY: \"When you finish, write one sentence that uses objection.\"\n2. CHECK: the sentence shows someone throwing a protest against something.\n\nEXTENSION: Beat the number - write 5 more real ject words in 2 minutes, not counting today's four.\nAnswer: e.g. eject, interject, injection, rejection, adjective, projectile.",
+      "learned_words": {
+        "review": [
+          {
+            "word": "cheque",
+            "unfair": "que",
+            "notes": "1. SAY: \"Cheque. Grandma paid for the heater with a cheque.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: CHEK, one beat. The que at the end says /k/, as in unique."
+          },
+          {
+            "word": "debt",
+            "unfair": "b",
+            "notes": "1. SAY: \"Debt. The farm paid off its debt.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: DET, one beat. The b is silent - you hear it in debit."
+          }
+        ],
+        "new": {
+          "word": "guarantee",
+          "unfair": "u",
+          "notes": "Why learned: the u after the g is silent, like in guard and guess.\nSay it: GA-ruhn-TEE, three beats, the last beat strongest.\n1. COPY it twice, saying the letter names: g - u - a - r - a - n - t - e - e.\n2. COVER both and write it a third time from memory, then tick or fix.\nLink: a guarantee is a promise that something will work, or you get your money back."
+        }
+      },
+      "dictation": [
+        {
+          "meter": "green",
+          "sentence": "The pilot had to eject from the jet when its engine caught fire.",
+          "targets": [
+            "eject"
+          ],
+          "cops": {
+            "capitals": [
+              "The"
+            ],
+            "punctuation": [
+              "full stop (it ends the sentence)"
+            ]
+          },
+          "focus": "This week: ject in eject.\nTRAP: it's. Fix: its means belonging to it and has no apostrophe; student removes it."
+        },
+        {
+          "meter": "yellow",
+          "sentence": "Keep the receipt and the guarantee, so we can return the projector if it breaks.",
+          "targets": [
+            "receipt",
+            "guarantee",
+            "projector"
+          ],
+          "cops": {
+            "capitals": [
+              "Keep"
+            ],
+            "punctuation": [
+              "comma before so (it joins two full ideas)",
+              "full stop (it ends the sentence)"
+            ]
+          },
+          "focus": "This week: the new red word guarantee and ject in projector. Week 2 throwback: the red word receipt."
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "type": "build",
+      "morphology_review": [
+        {
+          "morph": "port",
+          "type": "root",
+          "keyword": "export",
+          "meaning": "bring, carry"
+        },
+        {
+          "morph": "caus-/cus(e)",
+          "type": "root",
+          "keyword": "accuse",
+          "meaning": "cause",
+          "extra_task": {
+            "prompt": "What is one word built from caus or cus, meaning cause?",
+            "answers": [
+              "because",
+              "excuse",
+              "accuse"
+            ]
+          }
+        },
+        {
+          "morph": "ject",
+          "type": "root",
+          "keyword": "abject",
+          "meaning": "throw"
+        },
+        {
+          "morph": "omni-",
+          "type": "prefix",
+          "keyword": "omnibus",
+          "meaning": "all"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law",
+          "extra_task": {
+            "prompt": "What is one word built from jur, jud or just, meaning right or law?",
+            "answers": [
+              "jury",
+              "justice",
+              "judge"
+            ]
+          }
+        },
+        {
+          "morph": "terr",
+          "type": "root",
+          "keyword": "territory",
+          "meaning": "land"
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root",
+          "keyword": "ponder",
+          "meaning": "place, part"
+        },
+        {
+          "morph": "hyper",
+          "type": "root",
+          "keyword": "hyperactive",
+          "meaning": "over, above",
+          "extra_task": {
+            "prompt": "What is one word built from hyper, meaning over?",
+            "answers": [
+              "hyperactive",
+              "hypersonic"
+            ]
+          }
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root",
+          "keyword": "appendage",
+          "meaning": "hang; pay"
+        },
+        {
+          "morph": "astro",
+          "type": "root",
+          "keyword": "astronaut",
+          "meaning": "star"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "inject",
+          "deport",
+          "territorial",
+          "reject",
+          "astronomical",
+          "passport",
+          "projector",
+          "Mediterranean",
+          "portfolio",
+          "astronomer",
+          "objection",
+          "terracotta",
+          "importer",
+          "ejected",
+          "hyperlink"
+        ],
+        "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"This side of the room, read rows 1 and 2. That side, rows 3 and 4. Everyone, row 5.\"\n3. ASK: \"Which word means to carry someone out of a country and send them away?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: deport.\n4. ASK: \"Finish my sentence. The lawyer stood up and shouted...\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: objection.\n5. ASK: \"Partner A, point to any word. Partner B, read it and say what its part means. Swap after 30 seconds.\"\n30 sec each way. CIRCULATE and listen for the part's meaning, not just the word."
+      },
+      "build": {
+        "time": "15 mins",
+        "matrix": {
+          "title": "Build ject words",
+          "rule": "Build real words. Write each one and what it means.",
+          "base": {
+            "morph": "ject",
+            "type": "root",
+            "meaning": "throw"
+          },
+          "prefixes": [
+            "in- (in)",
+            "e- (out)",
+            "re- (back)",
+            "pro- (forward)",
+            "inter- (between)"
+          ],
+          "suffixes": [
+            "-ion (the act of)",
+            "-or (a thing that)",
+            "-ed",
+            "-ing",
+            "-s"
+          ],
+          "routine": "OG books - 4 mins",
+          "footer": "Hunt: the longest real word",
+          "notes": "1. SAY: \"ject is in the middle. Join a part from the left, the right, or both, and build a real word. Write the word and what it means.\"\n2. MODEL: say \"in plus ject: inject, to throw in\", and write it on the class board.\n3. TIME: 4 min. CIRCULATE: to a stuck student say, \"Start with ject. Put re in front. What does reject mean?\"\n4. ASK: \"Read me your longest word and what it means.\" Cold call two students. EXPECT: interjection, the act of throwing words in between; projector, a thing that throws a picture forward.\nTRAP: a made-up word that sounds right, like ejector-ing. Fix: ask, would you read that in a newspaper? Student builds a real one.\nEXTENSION: Longest word hunt - build the longest real word you can and write its parts.\nHELP: give three starters, inject, reject, project, and ask for one ending on each.\n---\nPurpose: Kate Watt's Wednesday matrix - build real words from ject and printed parts. [You Do | Word matrix | Morphology]\nANSWERS: inject, eject, reject, project, interject; add -ion for the act of: injection, rejection, interjection.\nAlso: injector, ejector, projector (a thing that); injected, rejected, projecting, interjects.\nEXTENSION: e.g. interjections = inter + ject + ion + s."
+        },
+        "rounds": [
+          {
+            "title": "Break it apart",
+            "rule": "Write only the parts in the boxes. ject is done for you.",
+            "given": [
+              "ject"
+            ],
+            "routine": "OG books - parts only",
+            "footer": "Find ject first",
+            "round": [
+              {
+                "prompt": "One done for you:\nprojector",
+                "parts": [
+                  "pro-",
+                  "ject",
+                  "-or"
+                ],
+                "answer": "pro- (forward) + ject + -or (a thing that)",
+                "why": "it throws the picture forward",
+                "worked": true,
+                "notes": "1. SAY: \"We just built words. Now we do the opposite. I show a whole word, you write its parts in boxes.\"\n2. MODEL: point at projector. SAY: \"I find ject first. In front is pro. Behind is or. Three parts, three boxes: pro, ject, or.\"\n3. SAY: \"Three words, one at a time. Write only the parts in your OG book, then I click.\"\nEXTENSION: Beat the number - break 5 more ject words from the matrix into parts in 2 minutes.\nHELP: underline ject in each word first, then split what is left on each side.\n---\nPurpose: break a whole word back into its parts - the opposite of building. [You Do | Break it apart | Morphology]\nANSWERS: 1. re + ject + ion  2. in + ject + ed  3. ob + ject + ion. EXTENSION: e.g. e + ject, re + ject + ed, pro + ject + ion."
+              },
+              {
+                "prompt": "rejection",
+                "parts": [
+                  "re-",
+                  "ject",
+                  "-ion"
+                ],
+                "answer": "re- (back) + ject + -ion (the act of)",
+                "why": "the act of throwing back",
+                "notes": "ANSWER: re + ject + ion.\n1. ASK: \"Write the three parts of rejection.\" 20 sec. Cue: \"Pens down when you are done.\"\n2. SCAN four books near you. 80%+ -> click to reveal. Less -> point at ject, ask what is in front of it and what is behind it, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Re means back, ion means the act of. Rejection is the act of throwing back.\"\nTRAP: splitting it rej + ection. Fix: find ject first, student rewrites the parts around it.\n---\nPurpose: break a whole word back into its parts. [You Do | Break it apart | Morphology]"
+              },
+              {
+                "prompt": "injected",
+                "parts": [
+                  "in-",
+                  "ject",
+                  "-ed"
+                ],
+                "answer": "in- (in) + ject + -ed",
+                "why": "thrown in, in the past",
+                "notes": "ANSWER: in + ject + ed.\n1. ASK: \"Write the three parts of injected.\" 20 sec. Cue: \"Pens down when you are done.\"\n2. SCAN four books near you. 80%+ -> click to reveal. Less -> cover the ed with your hand and ask what is left, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. In plus ject plus ed. Thrown in, and ed tells us it already happened.\"\nTRAP: leaving off the ed box. Fix: count the boxes on the slide, student adds the third part.\n---\nPurpose: break a whole word back into its parts. [You Do | Break it apart | Morphology]"
+              },
+              {
+                "prompt": "objection",
+                "parts": [
+                  "ob-",
+                  "ject",
+                  "-ion"
+                ],
+                "answer": "ob- (against) + ject + -ion (the act of)",
+                "why": "throwing a protest against",
+                "notes": "ANSWER: ob + ject + ion.\n1. ASK: \"Write the three parts of objection.\" 20 sec. Cue: \"Pens down when you are done.\"\n2. SCAN four books near you. 80%+ -> click to reveal. Less -> point at ject and ask what two letters sit in front, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Ob means against. An objection throws a protest against something.\"\nTRAP: writing o + bject. Fix: ject is the root, so ob is the whole prefix; student redraws the line.\n---\nPurpose: break a whole word back into its parts - a new prefix, read from the bar. [You Do | Break it apart | Morphology]"
+              }
+            ]
+          },
+          {
+            "title": "Complete the sentence",
+            "bank": [
+              "eject",
+              "inject",
+              "reject",
+              "projector"
+            ],
+            "bank_mode": "short",
+            "routine": "Whiteboards - show me",
+            "footer": "Check: does ject mean throw here?",
+            "round": [
+              {
+                "prompt": "One done for you:\nThe pilot had to ___\nfrom the burning jet.",
+                "answer": "eject",
+                "why": "e- (out) + ject (throw): thrown out of the jet",
+                "worked": true,
+                "notes": "1. SAY: \"Last round today. Every sentence has a gap, and the bank has four ject words. A word may be used more than once, and some may not be needed.\"\n2. MODEL: \"The pilot is thrown out of the jet. Out is e. Eject.\"\n3. SAY: \"Four more. Write the word on your whiteboard. Write it... chin it... show me.\"\n---\nPurpose: use the week's words in a sentence, v1.9 word-bank round. [You Do | Complete the sentence | Morphology]"
+              },
+              {
+                "prompt": "The club had to ___ my form\nbecause I sent it in late.",
+                "answer": "reject",
+                "why": "re- (back) + ject: thrown back, not accepted",
+                "notes": "ANSWER: reject.\n1. ASK: \"Read it in your head. Which bank word fits?\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN the boards. 80%+ -> click to reveal. Less -> ask which way the form goes - out, in or back, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it.\"\nTRAP: writing eject. Fix: nobody is thrown out here - the form is sent back, re-\n---\nPurpose: use a ject word in context. [You Do | Complete the sentence | Morphology]"
+              },
+              {
+                "prompt": "Our teacher dimmed the lights\nand switched on the ___.",
+                "answer": "projector",
+                "why": "pro- (forward) + ject + -or (a thing that)",
+                "notes": "ANSWER: projector.\n1. ASK: \"Read it in your head. Which bank word fits?\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN the boards. 80%+ -> click to reveal. Less -> point at our own projector, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it.\"\nTRAP: projecter with er. Fix: a machine usually ends in or - projector, tractor\n---\nPurpose: use a ject word in context. [You Do | Complete the sentence | Morphology]"
+              },
+              {
+                "prompt": "The nurse will ___ the vaccine\ninto the top of your arm.",
+                "answer": "inject",
+                "why": "in- (in) + ject: to throw medicine in",
+                "notes": "ANSWER: inject.\n1. ASK: \"Read it in your head. Which bank word fits?\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN the boards. 80%+ -> click to reveal. Less -> ask which way the vaccine goes, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it.\"\nTRAP: writing eject. Fix: the vaccine goes in, not out - in- means in\n---\nPurpose: use a ject word in context. [You Do | Complete the sentence | Morphology]"
+              },
+              {
+                "prompt": "The editor said she would ___\nany story copied from the internet.",
+                "answer": "reject",
+                "why": "re- (back) + ject: she throws it back",
+                "notes": "ANSWER: reject.\n1. ASK: \"Read it in your head. Which bank word fits?\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN the boards. 80%+ -> click to reveal. Less -> ask what an editor does with a copied story, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it.\"\nTRAP: leaving it blank because reject is used. Fix: reread the line - a word may be used twice\n---\nPurpose: use a ject word in context. [You Do | Complete the sentence | Morphology]\nEXTENSION: Two in one - write one sentence that uses reject and projector and makes sense."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "day": "Thursday",
+      "type": "apply",
+      "morphology_review": [
+        {
+          "morph": "astro",
+          "type": "root",
+          "keyword": "astronaut",
+          "meaning": "star"
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law"
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root",
+          "keyword": "appendage",
+          "meaning": "hang; pay"
+        },
+        {
+          "morph": "caus-/cus(e)",
+          "type": "root",
+          "keyword": "accuse",
+          "meaning": "cause"
+        },
+        {
+          "morph": "ject",
+          "type": "root",
+          "keyword": "abject",
+          "meaning": "throw",
+          "extra_task": {
+            "prompt": "What is one word built from ject, meaning throw?",
+            "answers": [
+              "eject",
+              "reject",
+              "projector"
+            ]
+          }
+        },
+        {
+          "morph": "port",
+          "type": "root",
+          "keyword": "export",
+          "meaning": "bring, carry",
+          "extra_task": {
+            "prompt": "What is one word built from port, meaning carry?",
+            "answers": [
+              "import",
+              "support",
+              "reporter"
+            ]
+          }
+        },
+        {
+          "morph": "hyper",
+          "type": "root",
+          "keyword": "hyperactive",
+          "meaning": "over, above"
+        },
+        {
+          "morph": "omni-",
+          "type": "prefix",
+          "keyword": "omnibus",
+          "meaning": "all"
+        },
+        {
+          "morph": "terr",
+          "type": "root",
+          "keyword": "territory",
+          "meaning": "land"
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root",
+          "keyword": "ponder",
+          "meaning": "place, part",
+          "extra_task": {
+            "prompt": "What is one word built from pon or pound, meaning place?",
+            "answers": [
+              "postpone",
+              "component"
+            ]
+          }
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "projectile",
+          "export",
+          "terrarium",
+          "asterisk",
+          "interjection",
+          "airport",
+          "subterranean",
+          "projection",
+          "transporter",
+          "ejection",
+          "terraform",
+          "porter",
+          "astronomy",
+          "rejected",
+          "suspend"
+        ],
+        "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"Now read it like a news reader: everyone, rows 1 to 5, smooth and clear.\"\n3. ASK: \"Odd one out: projectile, airport, projection. Which one does not belong?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: airport.\nIf time: \"Why?\" Turn and tell. EXPECT: airport has port, carry - the others have ject, throw.\n4. ASK: \"Which word means a person who carries your bags at a hotel?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: porter."
+      },
+      "pos_drill": {
+        "time": "5 mins",
+        "intro": {
+          "title": "Find the job with a frame",
+          "rule": "Try the word in each frame. The one that sounds right names its job.",
+          "example": "the ___ = noun (a thing or idea)\nto ___ = verb (something you do)\nvery ___ = adjective (it describes)",
+          "items": [
+            "supportive: very supportive sounds right = adjective"
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Next: try the frames on each suffix",
+          "notes": "ANSWER: very supportive sounds right, so supportive is an adjective.\n1. SAY: \"A suffix gives a word its job. To find the job, try the word in three frames. The one that sounds right wins.\"\n2. MODEL: read each frame aloud with supportive. SAY: \"The supportive - it sounds unfinished. To supportive - no. Very supportive - yes. So it is an adjective.\"\n3. ASK: \"Try rejection in the three frames. Which frame sounds right?\" 10 sec, turn and talk. Then: \"Everyone, together, on three.\" EXPECT: the rejection - noun.\nTRAP: the ___ sounds fine because you add more words after it, like the supportive friend. Fix: say the frame and stop - nothing after it.\n---\nPurpose: v1.8 rework - one test every student can run, so nobody has to explain the job from memory. [I Do | Explicit modelling | Morphology]\nPREP: noun = a thing or idea, verb = something you do, adjective = describes. Stop the frame after the word."
+        },
+        "cards": [
+          {
+            "morph": "-ity",
+            "pos_answer": "noun",
+            "sentence": "Gravity pulls the ball back down.",
+            "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-ity means state or quality. Gravity pulls the ball back down.\"\n2. ASK: \"Try gravity in each frame with your partner: the gravity, to gravity, very gravity. Which one sounds right?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: the gravity - it names a thing.\n3. REVEAL after the choral answer. SAY: \"-ity words are nouns. Gravity is a noun.\"\nFrames: the ___ = noun, to ___ = verb, very ___ = adjective."
+          },
+          {
+            "morph": "-ive",
+            "pos_answer": "adjective",
+            "sentence": "Our puppy is active all morning.",
+            "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-ive means relating to, or like. Our puppy is active all morning.\"\n2. ASK: \"Try active in each frame with your partner: the active, to active, very active. Which one sounds right?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: very active - it describes the puppy.\n3. REVEAL after the choral answer. SAY: \"-ive words are adjectives. Active is an adjective.\"\nFrames: the ___ = noun, to ___ = verb, very ___ = adjective."
+          },
+          {
+            "morph": "-ciate",
+            "pos_answer": "verb",
+            "sentence": "A referee will officiate at the grand final.",
+            "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-ciate means to make. A referee will officiate at the grand final.\"\n2. ASK: \"Try officiate in each frame with your partner: the officiate, to officiate, very officiate. Which one sounds right?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: to officiate - it is something you do.\n3. REVEAL after the choral answer. SAY: \"-ciate words are verbs. Officiate is a verb.\"\nFrames: the ___ = noun, to ___ = verb, very ___ = adjective."
+          },
+          {
+            "morph": "-tude",
+            "pos_answer": "noun",
+            "sentence": "Her positive attitude lifted the whole team.",
+            "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-tude means condition of, or quality. Her positive attitude lifted the whole team.\"\n2. ASK: \"Try attitude in each frame with your partner: the attitude, to attitude, very attitude. Which one sounds right?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: the attitude - it names an idea.\n3. REVEAL after the choral answer. SAY: \"-tude words are nouns. Attitude is a noun.\"\nFrames: the ___ = noun, to ___ = verb, very ___ = adjective."
+          }
+        ]
+      },
+      "learned_words": {
+        "review": [
+          {
+            "word": "guarantee",
+            "unfair": "u",
+            "notes": "1. SAY: \"Guarantee. The new projector came with a guarantee.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: GA-ruhn-TEE. The u after the g is silent, like in guard."
+          },
+          {
+            "word": "cheque",
+            "unfair": "que",
+            "notes": "1. SAY: \"Cheque. The prize was a giant cheque.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: CHEK, one beat. The que at the end says /k/, as in unique."
+          }
+        ],
+        "new": {
+          "word": "mortgage",
+          "unfair": "t",
+          "notes": "Why learned: the t is silent, and the age at the end says /ij/.\nSay it: MOR-gij, two beats.\n1. COPY it twice, saying the letter names: m - o - r - t - g - a - g - e.\n2. COVER both and write it a third time from memory, then tick or fix.\nLink: mort means death in old French, as in mortal. A mortgage is a dead pledge - the deal dies when the loan is paid off."
+        }
+      },
+      "grammar": {
+        "header_notes": "PURPOSE: A semicolon joins two full sentences that belong together. It can take the place of and, but or so.\nWHY THIS WEEK: last week we linked argument sentences with connectives. A semicolon is a tighter link, with no joining word at all.\nTIME: 5 minutes, no more - I do 1 min, We do 1 question, You do 3 questions at about 30 seconds each. One question per slide; your click reveals the answer.\nROUTINE: all grammar is written in the OG book. No boards - books, fingers and voices only.\nPREP: test both sides - each must make sense as a full sentence on its own. If one side cannot stand alone, no semicolon.",
+        "i_do": {
+          "title": "Swap the joining word for a semicolon",
+          "rule": "A semicolon joins two full sentences. It replaces and, but or so.",
+          "example": "The ref rejected the goal, and fans booed.\nThe ref rejected the goal; fans booed.",
+          "items": [
+            "Both sides must make sense on their own."
+          ],
+          "routine": "Eyes on me - voices off",
+          "footer": "Your turn: what goes in the gap?",
+          "notes": "ANSWER: The ref rejected the goal; fans booed.\n1. SAY: \"A semicolon is a dot on top of a comma. It joins two full sentences that belong together, and it takes the place of the joining word.\"\n2. WRITE: copy the first sentence on the class board. CROSS OUT the comma and and. WRITE the semicolon in their place.\n3. ASK: \"Can each side stand alone as a full sentence? Thumbs up or down, voices off.\" 5 sec. EXPECT: thumbs up.\nTRAP: a capital after the semicolon. Fix: it is still one sentence, so the second part starts with a small letter; student fixes the f.\n---\nPurpose: one grammar block a week - model the semicolon replacing a conjunction. [I Do | Explicit modelling | Grammar | HITS 3]\nPREP: rejected is this week's ject word in action."
+        },
+        "we_do": {
+          "title": "What goes in the gap?",
+          "rule": "Pick what joins the two full sentences.",
+          "round": [
+            {
+              "prompt": "We packed the car ___ we drove to the beach.",
+              "choices": [
+                "a comma ,",
+                "a semicolon ;",
+                "both ; and"
+              ],
+              "answer": "a semicolon ;",
+              "why": "two full sentences, no joining word",
+              "notes": "ANSWER: 2 - a semicolon. We packed the car; we drove to the beach.\n1. SAY: \"Read it in your head. Two full sentences, no joining word. What goes in the gap?\"\n2. ASK: \"One finger comma, two semicolon, three both, voices off, show me on three.\" 5 sec. EXPECT: two fingers.\n3. REVEAL after fingers are scanned. ASK: \"How do you know?\" Cold call one student. EXPECT: both sides are full sentences and there is no and.\nTRAP: choosing 3. Fix: the semicolon replaces and - you never need both. Student votes again.\nCLARIFY: a comma alone cannot join two full sentences; it needs a joining word, or swap it for a semicolon.\n---\nPurpose: guided check - spot both rules at once. [We Do | Guided practice | Grammar | HITS 7]",
+              "routine": "Fingers: 1, 2 or 3",
+              "footer": "Stem: It is right because ..."
+            }
+          ]
+        },
+        "you_do": {
+          "title": "Swap in a semicolon",
+          "rule": "Write the sentence with a semicolon instead of the joining word.",
+          "routine": "OG books - 30 sec - pens down",
+          "footer": "Check: two full sentences?",
+          "round": [
+            {
+              "prompt": "It started to rain, so we packed up the picnic.",
+              "answer": "It started to rain; we packed up the picnic.",
+              "why": "the comma and so are gone",
+              "notes": "ANSWER: It started to rain; we packed up the picnic.\n1. SAY: \"Write it with a semicolon instead of comma so. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> cross out comma so on the class board, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. The semicolon takes the place of the comma and the so.\"\nTRAP: keeping so after the semicolon. Fix: the semicolon replaces it; student crosses so out.\nEXTENSION: Two in one - write one semicolon sentence that uses two of this week's ject words.\nHELP: give the start, It started to rain;, and let them finish it.\n---\nPurpose: easy case - so replaced. [You Do | Independent practice | Grammar | HITS 5]"
+            },
+            {
+              "prompt": "My brother wanted the last pie,\nbut I got it first.",
+              "answer": "My brother wanted the last pie; I got it first.",
+              "why": "the comma and but are gone",
+              "notes": "ANSWER: My brother wanted the last pie; I got it first.\n1. SAY: \"Write it with a semicolon instead of comma but. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask what to cross out, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Both sides make sense alone, so the semicolon can replace but.\"\nCLARIFY: after a semicolon use a small letter, unless the word is I or a name.\n---\nPurpose: typical case - but replaced. [You Do | Independent practice | Grammar | HITS 5]"
+            },
+            {
+              "prompt": "The council rejected our plan,\nand the skate park was never built.",
+              "answer": "The council rejected our plan; the skate park was never built.",
+              "why": "this week's ject word in a semicolon sentence",
+              "notes": "ANSWER: The council rejected our plan; the skate park was never built.\n1. SAY: \"Last one. Write it with a semicolon instead of comma and. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask what rejected means - re back, ject throw - then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Rejected means thrown back, refused. The semicolon replaces comma and.\"\n4. SAY: \"In your next persuasive piece, find two sentences that belong together and join one pair with a semicolon.\"\nTRAP: a capital T on the. Fix: still one sentence; student writes a small t.\n---\nPurpose: edge case - a longer sentence carrying this week's ject word. [You Do | Independent practice | Grammar | HITS 5]\nANSWERS: 1. rain; we  2. pie; I  3. plan; the"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": "Friday",
+      "type": "week_review",
+      "morphology_review": [
+        {
+          "morph": "caus-/cus(e)",
+          "type": "root",
+          "keyword": "accuse",
+          "meaning": "cause"
+        },
+        {
+          "morph": "omni-",
+          "type": "prefix",
+          "keyword": "omnibus",
+          "meaning": "all"
+        },
+        {
+          "morph": "astro",
+          "type": "root",
+          "keyword": "astronaut",
+          "meaning": "star"
+        },
+        {
+          "morph": "pon/pound",
+          "type": "root",
+          "keyword": "ponder",
+          "meaning": "place, part",
+          "extra_task": {
+            "prompt": "What is one word built from pon or pound, meaning place?",
+            "answers": [
+              "postpone",
+              "component"
+            ]
+          }
+        },
+        {
+          "morph": "port",
+          "type": "root",
+          "keyword": "export",
+          "meaning": "bring, carry",
+          "extra_task": {
+            "prompt": "What is one word built from port, meaning carry?",
+            "answers": [
+              "import",
+              "support",
+              "reporter"
+            ]
+          }
+        },
+        {
+          "morph": "jur/jud/just",
+          "type": "root",
+          "keyword": "adjure",
+          "meaning": "right, law"
+        },
+        {
+          "morph": "terr",
+          "type": "root",
+          "keyword": "territory",
+          "meaning": "land"
+        },
+        {
+          "morph": "pend/pens",
+          "type": "root",
+          "keyword": "appendage",
+          "meaning": "hang; pay"
+        },
+        {
+          "morph": "ject",
+          "type": "root",
+          "keyword": "abject",
+          "meaning": "throw",
+          "extra_task": {
+            "prompt": "What is one word built from ject, meaning throw?",
+            "answers": [
+              "eject",
+              "reject",
+              "projector"
+            ]
+          }
+        },
+        {
+          "morph": "hyper",
+          "type": "root",
+          "keyword": "hyperactive",
+          "meaning": "over, above"
+        }
+      ],
+      "words_to_read_review": {
+        "words": [
+          "injection",
+          "adjective",
+          "rejection",
+          "interject",
+          "eject",
+          "import",
+          "report",
+          "portable",
+          "supportive",
+          "territory",
+          "terrain",
+          "terrestrial",
+          "astronaut",
+          "astronomical",
+          "hyperactive"
+        ],
+        "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"Boys read rows 1 and 3, girls read rows 2 and 4, everyone reads row 5. Smooth, like a news reader.\"\n3. ASK: \"Which word names a part of speech?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: adjective.\n4. ASK: \"Which word means easy to carry?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: portable."
+      },
+      "friday_review": {
+        "part_a": {
+          "title": "Grammar - Semicolons",
+          "subblocks": [
+            {
+              "heading": "Swap in a semicolon",
+              "instruction": "Rewrite each sentence. Use a semicolon instead of the comma and the joining word.",
+              "example": [
+                "It was cold, so we lit the fire.  ->  It was cold; we lit the fire."
+              ],
+              "task": {
+                "type": "sentences",
+                "answer_lines": 2,
+                "items": [
+                  "The bell rang, so we packed up our books.",
+                  "My sister loves netball, but I would rather play soccer."
+                ]
+              },
+              "checks": [
+                "semicolon replaces , so / , but"
+              ],
+              "answers": [
+                "The bell rang; we packed up our books.",
+                "My sister loves netball; I would rather play soccer."
+              ]
+            },
+            {
+              "heading": "Your own semicolon",
+              "instruction": "Join two full sentences about our school camp with a semicolon.",
+              "task": {
+                "type": "lines",
+                "lines": 2
+              },
+              "checks": [
+                "both sides full sentences"
+              ],
+              "answers": [
+                "e.g. The cabins were tiny; we still slept well. (Both sides must make sense alone.)"
+              ]
+            }
+          ]
+        },
+        "part_b": {
+          "title": "Parts of Speech by Frame",
+          "subblocks": [
+            {
+              "heading": "Which job does the suffix give?",
+              "instruction": "Try each word in the frames. Write its job: noun, verb or adjective.",
+              "tip": [
+                "the ___ = noun      to ___ = verb      very ___ = adjective      e.g. gravity: the gravity = noun"
+              ],
+              "task": {
+                "type": "codes",
+                "codes": "noun / verb / adjective",
+                "columns": 2,
+                "items": [
+                  "security",
+                  "creative",
+                  "appreciate",
+                  "gratitude",
+                  "massive",
+                  "activity"
+                ]
+              },
+              "checks": [
+                "-ity / -tude = noun",
+                "-ive adj, -ciate verb"
+              ],
+              "answers": [
+                "security - the security - noun",
+                "creative - very creative - adjective",
+                "appreciate - to appreciate - verb",
+                "gratitude - the gratitude - noun",
+                "massive - very massive - adjective",
+                "activity - the activity - noun"
+              ]
+            }
+          ]
+        },
+        "part_c": {
+          "title": "Learned Words",
+          "subblocks": [
+            {
+              "heading": "Complete the sentence",
+              "instruction": "Write the learned word that fits each gap. Spell it carefully.",
+              "task": {
+                "type": "cloze",
+                "items": [
+                  "Our family pays the ___ on our house every month.",
+                  "The new headphones came with a two-year ___."
+                ]
+              },
+              "checks": [
+                "mortgage",
+                "guarantee"
+              ],
+              "answers": [
+                "mortgage",
+                "guarantee"
+              ]
+            }
+          ]
+        },
+        "part_d": {
+          "title": "Morphology Review",
+          "subblocks": [
+            {
+              "heading": "ject = throw",
+              "instruction": "Break each word into its parts, then write what the parts mean. Use the parts box.",
+              "word_bank": [
+                "pro- = forward",
+                "inter- = between",
+                "ad- = to",
+                "-or = a thing that",
+                "-ion = the act of",
+                "-ive = relating to"
+              ],
+              "example": [
+                "rejection = re + ject + ion = back + throw + the act of"
+              ],
+              "task": {
+                "type": "table",
+                "headers": [
+                  "Word",
+                  "Word sum",
+                  "What the parts mean"
+                ],
+                "widths": [
+                  1,
+                  1.4,
+                  1.8
+                ],
+                "rows": [
+                  [
+                    "projector",
+                    "",
+                    ""
+                  ],
+                  [
+                    "interjection",
+                    "",
+                    ""
+                  ],
+                  [
+                    "adjective",
+                    "",
+                    ""
+                  ]
+                ]
+              },
+              "checks": [
+                "ject = throw",
+                "3-part word sums"
+              ],
+              "answers": [
+                "projector = pro + ject + or = forward + throw + a thing that",
+                "interjection = inter + ject + ion = between + throw + the act of",
+                "adjective = ad + ject + ive = to + throw + relating to"
+              ]
+            },
+            {
+              "heading": "ject = throw: new words",
+              "instruction": "These words were not on our lists. Use the parts to work out what each one means.",
+              "task": {
+                "type": "meaning_lines",
+                "items": [
+                  "ejector = e (out) + ject + or (a thing that) =",
+                  "injector = in (in) + ject + or (a thing that) ="
+                ]
+              },
+              "checks": [
+                "meaning built from parts"
+              ],
+              "answers": [
+                "ejector: a thing that throws something out (like an ejector seat)",
+                "injector: a thing that throws something in (like a fuel injector)"
+              ]
+            }
+          ]
+        },
+        "dictation_lines": 5,
+        "dictation": [
+          {
+            "sentence": "The nurse gave me an injection, and I did not even flinch.",
+            "chunks": [
+              "The nurse gave me an injection,",
+              "and I did not",
+              "even flinch."
+            ],
+            "targets": [
+              "injection"
+            ],
+            "cops": {
+              "capitals": [
+                "The"
+              ],
+              "punctuation": [
+                "comma before and (it joins two full sentences)",
+                "full stop (it ends the sentence)"
+              ]
+            }
+          },
+          {
+            "sentence": "Our class projector broke; the shop replaced it under the guarantee.",
+            "chunks": [
+              "Our class projector broke;",
+              "the shop replaced it",
+              "under the guarantee."
+            ],
+            "targets": [
+              "projector",
+              "guarantee"
+            ],
+            "cops": {
+              "capitals": [
+                "Our"
+              ],
+              "punctuation": [
+                "semicolon (it joins two full sentences)",
+                "full stop (it ends the sentence)"
+              ]
+            }
+          }
+        ],
+        "follow_up": [
+          {
+            "question": "Part A, Q1",
+            "checks": [
+              "semicolon replaces , so / , but"
+            ],
+            "flag_when": "the comma or the joining word kept in either sentence",
+            "next_move": "In next week's dictation, read a sentence with , so and ask the class to swap in a semicolon on whiteboards."
+          },
+          {
+            "question": "Part A, Q2",
+            "checks": [
+              "both sides full sentences"
+            ],
+            "flag_when": "one side of the semicolon cannot stand alone",
+            "next_move": "During Words to Read Review, say \"The bell rang; packed up\" and ask which side is not a full sentence."
+          },
+          {
+            "question": "Part B, Q1",
+            "checks": [
+              "-ity / -tude = noun",
+              "-ive adj, -ciate verb"
+            ],
+            "flag_when": "2 or more of the 6 jobs wrong",
+            "next_move": "During the review cards, stop on -ive and ask the class to try active in the/to/very frames."
+          },
+          {
+            "question": "Part C, Q1",
+            "checks": [
+              "mortgage",
+              "guarantee"
+            ],
+            "flag_when": "mortgage or guarantee misspelled",
+            "next_move": "During Words to Spell Review, add \"mortgage\" on the class whiteboard and ask which letter is silent."
+          },
+          {
+            "question": "Part D, Q1",
+            "checks": [
+              "ject = throw",
+              "3-part word sums"
+            ],
+            "flag_when": "ject = throw missing, or 2 of the 3 sums wrong",
+            "next_move": "During the review cards, stop on ject and ask for two ject words and what each part means."
+          },
+          {
+            "question": "Part D, Q2",
+            "checks": [
+              "meaning built from parts"
+            ],
+            "flag_when": "a meaning that ignores ject (throw) or the printed part",
+            "next_move": "During Words to Read Review, add \"ejector\" on the class whiteboard and ask what it throws and which way."
+          },
+          {
+            "question": "Part E",
+            "checks": [
+              "COPS score (no tick box)"
+            ],
+            "flag_when": "3 or more COPS points lost across the two sentences",
+            "next_move": "In next week's dictation, stop after the CHECK step and have the student redo their weakest COPS letter aloud with you."
+          }
+        ]
+      }
+    }
+  ],
+  "_sample": "v1.9 sample built from the delivered Term 4 Week 4 (ject) spec: same Monday-Thursday teaching, plus meaning pictures, a word-bank Wednesday round and a Friday with the Friday Review worksheet. Not a delivered week."
+}

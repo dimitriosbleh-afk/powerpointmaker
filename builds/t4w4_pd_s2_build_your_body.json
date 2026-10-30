@@ -1,0 +1,1027 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 4,
+    "session": 2,
+    "variant": 1,
+    "minutes": 60,
+    "title": "Build Your Body",
+    "subtitle": "Term 4 Week 4, Session 2",
+    "meta": "Year 5/6 Literacy | Persuasive Writing",
+    "footer": "Persuasive Writing | Year 5/6 Literacy | Week 4 Session 2",
+    "outputFolder": "T4W4_PD_S2_Build_Your_Body",
+    "fileName": "Session 2 - Build Your Body.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Literacy and Language, Years 5 and 6: writing body paragraphs that open with a topic sentence, support it with evidence, and use linking words to guide the reader",
+      "shape": "mine, ours, yours again: put a jumbled zoo paragraph back together, watch it built, practise topic sentences and linking words, write one class paragraph together, then write two of their own",
+      "criticalFeature": "the first sentence of a body paragraph is the claim; every other sentence proves it or sells it",
+      "decisionPoints": [
+        "the Find the topic sentence round",
+        "the choice check: the best topic sentence",
+        "the exit board: a topic sentence written for new proof"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. In a body paragraph: topic sentence, proof, This means...",
+      "catchUp": "Missed Session 1? Five minutes with the Session 1 Supported Worksheet (reader, position, two reasons), then write body paragraph 1 with the frame."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Big piece plan and the introduction (writing books)",
+      "Writing books (draft on every second line)",
+      "Mini-whiteboards and markers"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Point to A, B or C",
+      "Fingers up: 1 to 5",
+      "Turn and tell"
+    ],
+    "boardSetup": [
+      "The class shade letter introduction from Session 1",
+      "Paragraph recipe: Claim it (topic sentence), Prove it (fact or example), Sell it (This means...)",
+      "Linking words by job: first, next, strongest, example, result"
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Worksheet",
+      "description": "Short warm-up on topic sentences and linking words, then plan both body paragraphs. The writing goes in writing books.",
+      "title": "Build Your Body",
+      "sections": [
+        {
+          "title": "Warm-up: claim or proof?",
+          "columns": 1,
+          "example": {
+            "prompt": "'Our library needs more beanbags.'",
+            "steps": [
+              "Does it make a claim?",
+              "Could other sentences prove it?",
+              "Then it is a topic sentence."
+            ],
+            "answer": "topic sentence"
+          },
+          "items": [
+            {
+              "kind": "sort",
+              "prompt": "Sort the sentences: TOPIC SENTENCE or PROOF.",
+              "cards": [
+                "Tap water costs far less than bottled water.",
+                "Every classroom needs a water filter.",
+                "Last week the oval flooded twice.",
+                "Our oval needs better drains."
+              ],
+              "groups": [
+                "Topic sentence",
+                "Proof"
+              ],
+              "answer": {
+                "Topic sentence": [
+                  "Every classroom needs a water filter.",
+                  "Our oval needs better drains."
+                ],
+                "Proof": [
+                  "Tap water costs far less than bottled water.",
+                  "Last week the oval flooded twice."
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Link it and split it",
+          "columns": 1,
+          "example": {
+            "prompt": "___, gardens teach science. (my second reason)",
+            "steps": [
+              "Read the job in brackets.",
+              "Pick a linking word for that job.",
+              "Add a comma after it."
+            ],
+            "answer": "In addition,"
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Write a linking word for each job.",
+              "columns": [
+                "Sentence",
+                "Linking word"
+              ],
+              "rows": [
+                [
+                  "___, shade protects us from UV. (first reason)",
+                  ""
+                ],
+                [
+                  "The oval flooded. ___, sport was cancelled. (a result)",
+                  ""
+                ],
+                [
+                  "Pets calm us. ___, our class fish settles us after lunch. (an example)",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "___, shade protects us from UV. (first reason)",
+                  "Firstly, / To begin with,"
+                ],
+                [
+                  "The oval flooded. ___, sport was cancelled. (a result)",
+                  "As a result,"
+                ],
+                [
+                  "Pets calm us. ___, our class fish settles us after lunch. (an example)",
+                  "For example,"
+                ]
+              ],
+              "widths": [
+                2.2,
+                0.8
+              ],
+              "rowH": 26
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Sam squashed two reasons into one paragraph. Find the problem and fix it.",
+              "work": [
+                "Firstly, dogs need exercise. Also the park has no fence, and cars are dangerous for dogs."
+              ],
+              "answer": "Two reasons in one paragraph. Fix: start a new paragraph with its own topic sentence: Secondly, the park needs a fence to keep dogs safe."
+            }
+          ]
+        },
+        {
+          "title": "Plan your body paragraphs",
+          "columns": 1,
+          "example": {
+            "prompt": "The zoo letter, paragraph 1",
+            "steps": [
+              "Claim it: linking word and topic sentence.",
+              "Prove it: a fact or an example.",
+              "Sell it: This means... why the reader should care."
+            ],
+            "answer": "Firstly, bears need more space. Proof: some roam an area bigger than Tasmania. This means..."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Plan both paragraphs in a few words. Then write them in your writing book, every second line.",
+              "columns": [
+                "Part",
+                "My notes"
+              ],
+              "rows": [
+                [
+                  "Paragraph 1: Claim it",
+                  ""
+                ],
+                [
+                  "Paragraph 1: Prove it",
+                  ""
+                ],
+                [
+                  "Paragraph 1: Sell it",
+                  ""
+                ],
+                [
+                  "Paragraph 2 (strongest): Claim it",
+                  ""
+                ],
+                [
+                  "Paragraph 2: Prove it",
+                  ""
+                ],
+                [
+                  "Paragraph 2: Sell it",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Paragraph 1: Claim it",
+                  "Firstly, + reason 1 from the plan as one sure sentence"
+                ],
+                [
+                  "Paragraph 1: Prove it",
+                  "a fact, number, example or expert, and who said it"
+                ],
+                [
+                  "Paragraph 1: Sell it",
+                  "This means... why it matters to this reader"
+                ],
+                [
+                  "Paragraph 2 (strongest): Claim it",
+                  "Most importantly, + reason 2 as one sure sentence"
+                ],
+                [
+                  "Paragraph 2: Prove it",
+                  "a fact, number, example or expert, and who said it"
+                ],
+                [
+                  "Paragraph 2: Sell it",
+                  "This means... why it matters to this reader"
+                ]
+              ],
+              "widths": [
+                1.1,
+                1.9
+              ],
+              "rowH": 30
+            }
+          ]
+        }
+      ],
+      "tip": "Written both paragraphs? Grab the Extension."
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option: upgrade weak topic sentences, then sell the same proof to two different readers.",
+      "title": "Extension: Paragraph Power",
+      "subtitle": "Strong claims. Proof that sells.",
+      "sections": [
+        {
+          "title": "Upgrade the topic sentence",
+          "columns": 1,
+          "example": {
+            "prompt": "Weak: 'Zoos are interesting.'",
+            "steps": [
+              "Ask: what am I arguing?",
+              "Say it as one sure claim.",
+              "Check a busy reader would get my point."
+            ],
+            "answer": "Strong: Zoos cannot give polar bears the space they need."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Rewrite each weak topic sentence as a strong claim.",
+              "columns": [
+                "Weak",
+                "Strong"
+              ],
+              "rows": [
+                [
+                  "Dogs are nice.",
+                  ""
+                ],
+                [
+                  "Some people like trees.",
+                  ""
+                ],
+                [
+                  "Homework is a thing kids do.",
+                  ""
+                ]
+              ],
+              "answers": [
+                [
+                  "Dogs are nice.",
+                  "e.g. Every school should allow a reading dog in the library."
+                ],
+                [
+                  "Some people like trees.",
+                  "e.g. Our council must plant more street trees."
+                ],
+                [
+                  "Homework is a thing kids do.",
+                  "e.g. Primary students should not get homework on weekends."
+                ]
+              ],
+              "widths": [
+                1,
+                2
+              ],
+              "rowH": 40
+            }
+          ]
+        },
+        {
+          "title": "Sell it to two readers",
+          "columns": 1,
+          "example": {
+            "prompt": "Proof: bears roam huge distances. Reader: a Year 3 class.",
+            "steps": [
+              "Read the claim and the proof.",
+              "Think about what this reader cares about.",
+              "Start with This means..."
+            ],
+            "answer": "This means a zoo bear can never go exploring, and that's not fair."
+          },
+          "items": [
+            {
+              "kind": "open",
+              "prompt": "Claim: our school needs a vegetable garden. Proof: imagine our class survey found 18 of 25 kids would eat food they grew. Write a This means... sentence for the principal, then a different one for a Year 3 class.",
+              "answer": "Principal: e.g. This means a garden could help more students eat healthy food at school. Year 3: e.g. This means you could eat carrots you grew yourself.",
+              "lines": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "description": "Supported option: circle claim or proof, pick the linking word, and a paragraph frame with starters.",
+      "title": "Body Paragraph Helper",
+      "subtitle": "Claim it. Prove it. Sell it.",
+      "sections": [
+        {
+          "title": "Claim or proof?",
+          "columns": 3,
+          "example": {
+            "prompt": "'Pets should be allowed at school.'",
+            "steps": [
+              "Does it say what should happen?",
+              "Yes, it uses should.",
+              "So it is a claim."
+            ],
+            "answer": "claim"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Bins are full by lunch.",
+              "options": [
+                "claim",
+                "proof"
+              ],
+              "answer": 1,
+              "hint": "Is it something you saw?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "We need more bins.",
+              "options": [
+                "claim",
+                "proof"
+              ],
+              "answer": 0,
+              "hint": "Does it say what should happen?"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Two kids slipped on wet steps.",
+              "options": [
+                "claim",
+                "proof"
+              ],
+              "answer": 1,
+              "hint": "Is it something that happened?"
+            }
+          ]
+        },
+        {
+          "title": "Pick the linking word",
+          "columns": 2,
+          "example": {
+            "prompt": "___, my first reason is safety.",
+            "steps": [
+              "Read the job.",
+              "First reason?",
+              "So: Firstly,"
+            ],
+            "answer": "Firstly,"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "___, my strongest reason is fun.",
+              "options": [
+                "Most importantly,",
+                "For example,"
+              ],
+              "answer": 0,
+              "hint": "Strongest means most important."
+            },
+            {
+              "kind": "choice",
+              "prompt": "Kids get hungry. ___, some can't focus.",
+              "options": [
+                "As a result,",
+                "Firstly,"
+              ],
+              "answer": 0,
+              "hint": "Something happens because of it."
+            }
+          ]
+        },
+        {
+          "title": "My body paragraphs",
+          "columns": 1,
+          "example": {
+            "prompt": "The zoo letter",
+            "steps": [
+              "Firstly, bears need space.",
+              "I know this because they roam far.",
+              "This means a zoo is too small."
+            ],
+            "answer": "Claim it, prove it, sell it."
+          },
+          "items": [
+            {
+              "kind": "table",
+              "prompt": "Finish each starter for body 1 and body 2. Then copy them into your writing book.",
+              "hint": "Body 1 uses reason 1. Body 2 uses your strongest reason.",
+              "columns": [
+                "Part",
+                "Starter"
+              ],
+              "rows": [
+                [
+                  "Body 1: Claim it",
+                  "Firstly, ..."
+                ],
+                [
+                  "Body 1: Prove it",
+                  "I know this because ..."
+                ],
+                [
+                  "Body 1: Sell it",
+                  "This means ..."
+                ],
+                [
+                  "Body 2: Claim it",
+                  "Most importantly, ..."
+                ],
+                [
+                  "Body 2: Prove it",
+                  "I know this because ..."
+                ],
+                [
+                  "Body 2: Sell it",
+                  "This means ..."
+                ]
+              ],
+              "answers": [
+                [
+                  "Body 1: Claim it",
+                  "Firstly, ..."
+                ],
+                [
+                  "Body 1: Prove it",
+                  "I know this because ..."
+                ],
+                [
+                  "Body 1: Sell it",
+                  "This means ..."
+                ],
+                [
+                  "Body 2: Claim it",
+                  "Most importantly, ..."
+                ],
+                [
+                  "Body 2: Prove it",
+                  "I know this because ..."
+                ],
+                [
+                  "Body 2: Sell it",
+                  "This means ..."
+                ]
+              ],
+              "widths": [
+                0.7,
+                2.3
+              ],
+              "rowH": 34
+            }
+          ]
+        }
+      ],
+      "answerKey": false
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session: today the middle of the piece, two body paragraphs that prove the point."
+    },
+    {
+      "kind": "resources",
+      "notes": "Print the Worksheet for everyone, the Extension for early finishers and the Supported Worksheet for students who need it. Keep the class shade introduction from Session 1 on the board."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to write body paragraphs that start with a clear topic sentence and prove it.",
+      "successCriteria": [
+        "I can find the topic sentence of a paragraph.",
+        "I can write a body paragraph that claims it, proves it and sells it.",
+        "I can use linking words to guide my reader from one paragraph to the next."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Yesterday you told your reader what you want. Today you prove it."
+          ],
+          [
+            "SAY: Let's read the I can lines together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "SAY: Finding the topic sentence is where everyone starts.",
+            "Writing two paragraphs that claim, prove and sell is today's big goal."
+          ]
+        ],
+        "prep": "SC1 finding the topic sentence is reachable for all; SC2 the claim, prove, sell paragraph is the core; SC3 linking words is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Put it back together",
+      "notes": {
+        "answer": "B, C, A - claim it, prove it, sell it",
+        "beats": [
+          [
+            "SAY: Here are three sentences from one paragraph of my zoo letter.",
+            "They've been jumbled up, so let's fix them."
+          ],
+          [
+            "ASK: Which sentence should start the paragraph?",
+            "10 sec. Cue: Voices off. Point... now. Hold your point.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "ASK: What's the whole order, and why? Tell your partner.",
+            "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+            "Eyes back in 3, 2, 1.",
+            "EXPECT: B, C, A. Claim it, prove it, sell it."
+          ],
+          [
+            "SAY: That's our anchor again. B claims it, C proves it, and A sells it.",
+            "Every body paragraph you write today follows that order."
+          ]
+        ],
+        "trap": [
+          "starting with the fact because it's the most interesting.",
+          "Fix: ask what is this paragraph arguing? Student moves the claim first."
+        ],
+        "prep": "Mixed-start ordering task (megaprompt 19a); the order lives only in these notes. Re-grounds the anchor for anyone who missed a session. 3 minutes.",
+        "tag": "[Launch | Retention and recall | HITS 6]"
+      },
+      "visual": {
+        "type": "text",
+        "text": "A: This means a zoo bear spends its whole life in a space smaller than one day's walk.\nB: Firstly, polar bears need far more space than any zoo can give.\nC: In the wild, some polar bears roam an area bigger than Tasmania."
+      },
+      "prompt": "Which sentence should start the paragraph?"
+    },
+    {
+      "kind": "keyWord",
+      "word": "topic sentence",
+      "meaning": "The first sentence of a paragraph. It tells the reader what the paragraph will prove.",
+      "example": "Most importantly, polar bears are built for the cold.",
+      "pictogram": "flag",
+      "notes": {
+        "answer": "the first sentence, the one that says what the paragraph proves",
+        "beats": [
+          [
+            "POINT to the words. SAY: These words are topic sentence. Say them with me.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "SAY: Busy readers often read only the first sentence of each paragraph.",
+            "So the topic sentence has to carry your claim, like a flag."
+          ],
+          [
+            "ASK: Does the example make a claim or give a fact?",
+            "5 sec. Cue: Fingers at your chest, voices off... show me. 1 claim, 2 fact.",
+            "EXPECT: 1, a claim"
+          ]
+        ],
+        "trap": [
+          "a topic sentence that just names the topic, like Zoos.",
+          "Fix: student adds what they think about it."
+        ],
+        "prep": "The flag picture is the Claim it picture used all term.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "textExtract",
+      "badge": "I Do",
+      "title": "Mine: watch me build a body paragraph",
+      "extract": "Firstly, polar bears need far more space than any zoo can give. In the wild, some polar bears roam an area bigger than Tasmania. Even a large zoo enclosure is a tiny fraction of that. This means a zoo bear spends its whole life in a space smaller than one day's walk. No animal built to wander should live behind a wall.",
+      "highlights": [
+        "Firstly, polar bears need far more space",
+        "bigger than Tasmania",
+        "This means",
+        "No animal built to wander"
+      ],
+      "source": "Model letter, written for this session",
+      "notes": {
+        "answer": "1 finger - the first sentence carries the claim",
+        "beats": [
+          [
+            "POINT to Firstly.",
+            "SAY: Claim it. Prove it. Sell it. Firstly tells my reader this is reason one,",
+            "and my claim comes straight from my plan."
+          ],
+          [
+            "POINT to Tasmania.",
+            "SAY: Now I prove it. A fact the director can check is hard to argue with."
+          ],
+          [
+            "POINT to This means.",
+            "SAY: Then I sell it. This means tells the director why the fact matters."
+          ],
+          [
+            "ASK: A busy reader only reads one sentence. Which number should it be?",
+            "5 sec. Cue: Fingers at your chest, voices off... show me.",
+            "EXPECT: 1 finger"
+          ]
+        ],
+        "trap": [
+          "proof with no This means, so the fact just sits there.",
+          "Fix: student adds This means and one reason it matters."
+        ],
+        "stretch": "Write a different last line that sells it to a Year 3 class.",
+        "help": "Supported Worksheet: a starter for each part.",
+        "prep": "Mine: the zoo letter's first body paragraph. Critical feature: the first sentence is the claim; the rest prove or sell it.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "I Do",
+      "title": "Linking words do a job",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Job",
+            "Linking words"
+          ],
+          [
+            "first reason",
+            "Firstly, To begin with,"
+          ],
+          [
+            "next reason",
+            "Secondly, In addition,"
+          ],
+          [
+            "strongest reason",
+            "Most importantly, Above all,"
+          ],
+          [
+            "an example",
+            "For example, For instance,"
+          ],
+          [
+            "a result",
+            "As a result, This means"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "Most importantly, or Above all,",
+        "beats": [
+          [
+            "POINT to the Job column.",
+            "SAY: Linking words are signposts. Each one tells the reader what's coming next."
+          ],
+          [
+            "SAY: My second paragraph is my strongest reason, the cold.",
+            "So I need a word that says this matters most."
+          ],
+          [
+            "ASK: Which linking word should start my second paragraph?",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: Most importantly, or Above all,"
+          ]
+        ],
+        "trap": [
+          "using And or Also to start every paragraph.",
+          "Fix: student finds the job in the table and swaps the word."
+        ],
+        "stretch": "Which linking word could join two sentences inside a paragraph?",
+        "help": "Copy the table into the back of your writing book to use while you write.",
+        "prep": "The table goes on the board and stays up during the writing.",
+        "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+      },
+      "prompt": "Start each body paragraph with the word that does the job."
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Find the topic sentence",
+      "routine": "point",
+      "thinkTime": 8,
+      "pivot": "ask which sentence the others are proving",
+      "followUp": "cold call one student: how do the other two help it?",
+      "items": [
+        {
+          "answer": "B - the claim; A and C prove it",
+          "expect": "pointing to B",
+          "extract": "A: It also keeps us calm.\nB: A class pet teaches responsibility.\nC: Feeding it is a shared job."
+        },
+        {
+          "answer": "A - the claim; B and C prove it",
+          "expect": "pointing to A",
+          "extract": "A: Plastic straws should be banned.\nB: They last hundreds of years.\nC: Paper ones work just as well."
+        },
+        {
+          "answer": "C - the claim; A and B prove it",
+          "expect": "pointing to C",
+          "extract": "A: Our basketball court floods every winter.\nB: Kids slip and get hurt.\nC: The court needs better drains."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Each set is one paragraph, but the sentences are mixed up.",
+          "Find the one that should go first, the claim."
+        ],
+        "trap": [
+          "pointing to the first sentence on the screen.",
+          "Fix: ask which one do the others prove? Student points again."
+        ],
+        "stretch": "Say the whole paragraph in claim, prove, sell order.",
+        "help": "Look for should or needs, because they often mark the claim.",
+        "prep": "Guided practice, mixed positions so the first line is not always the answer. SC1.",
+        "tag": "[We Do | Supported application | SC1 | HITS 3, 7]"
+      },
+      "ask": "Which sentence should go first, the one the other two prove?"
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which is the best topic sentence?",
+      "prompt": "A paragraph arguing that school should start later.",
+      "options": [
+        {
+          "text": "Sleep is something everyone does.",
+          "misconception": "picks a sentence on the topic that claims nothing"
+        },
+        {
+          "text": "Most kids fall asleep after ten.",
+          "misconception": "picks a piece of proof instead of the claim"
+        },
+        {
+          "text": "A later start would help kids learn more."
+        }
+      ],
+      "answer": 2,
+      "notes": {
+        "answer": "C - it makes the claim the paragraph will prove",
+        "beats": [
+          "SAY: Only one of these could lead the paragraph. Think about what it's arguing.",
+          [
+            "ASK: Which is the best topic sentence?",
+            "15 sec. Cue: Voices off. Point... now. Hold your point.",
+            "EXPECT: pointing to C"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, then cold call a B: where could B go instead?",
+            "Less -> test each with should or would, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: It's C, because it makes a claim. B is great proof for the next sentence."
+          ]
+        ],
+        "trap": [
+          "choosing B because it has a fact in it.",
+          "Fix: ask does it say what should happen? Student re-chooses."
+        ],
+        "prep": "Decision point before drafting: can they tell a claim from proof?",
+        "tag": "[CFU | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "We Do",
+      "title": "Link it",
+      "routine": "boards",
+      "thinkTime": 15,
+      "pivot": "read the job in brackets, then find it in the table",
+      "followUp": "cold call one board: which job told you?",
+      "items": [
+        {
+          "text": "___, a pool would teach kids to swim safely. (my strongest reason)",
+          "answer": "Most importantly, / Above all,",
+          "expect": "Most importantly,",
+          "say": "It's Most importantly, or Above all. Tick it or fix it."
+        },
+        {
+          "text": "The canteen sells only lollies at recess. ___, kids are starving by lunch. (a result)",
+          "answer": "As a result,",
+          "expect": "As a result,",
+          "say": "It's As a result. Tick it or fix it."
+        },
+        {
+          "text": "___, a garden would cut our food waste. (my second reason)",
+          "answer": "Secondly, / In addition,",
+          "expect": "Secondly,",
+          "say": "It's Secondly, or In addition. Tick it or fix it."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Now you choose the signpost.",
+          "Read the job in brackets, then write the linking word that does it."
+        ],
+        "trap": [
+          "writing For example before a new reason.",
+          "Fix: student reads the job again and checks the table."
+        ],
+        "stretch": "Write a second word that does the same job.",
+        "help": "Use the linking words table on the board.",
+        "prep": "Guided practice on SC3, mixed jobs. SC3.",
+        "tag": "[We Do | Supported application | SC3 | HITS 3, 7]"
+      },
+      "ask": "Which linking word does the job in the brackets?"
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Ours: let's build our body paragraphs",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Part",
+            "Our shade letter, paragraph 1"
+          ],
+          [
+            "Claim it",
+            "Firstly, shade keeps us safe from the sun."
+          ],
+          [
+            "Prove it",
+            "SunSmart says we need sun protection from August to April."
+          ],
+          [
+            "Sell it",
+            "This means ..."
+          ]
+        ]
+      },
+      "prompt": "You write the Sell it line. I scribe the paragraph.",
+      "notes": {
+        "answer": "e.g. This means we could play outside all year without burning.",
+        "beats": [
+          [
+            "SAY: Now we build ours. The claim and proof are done.",
+            "You do the selling."
+          ],
+          [
+            "ASK: Write our This means sentence. Why should the principal care?",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: we can play outside safely all year"
+          ],
+          [
+            "SCAN boards for a reason the principal would care about.",
+            "80%+ -> cold call two boards, class picks one.",
+            "Less -> start it together: This means we can..., re-ask."
+          ],
+          [
+            "ASK: Which linking word starts body 2, our strongest reason?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: Most importantly,",
+            "SCRIBE body 2: Most importantly, shade keeps equipment cool. Our slide burns."
+          ]
+        ],
+        "trap": [
+          "a This means line that repeats the proof.",
+          "Fix: ask so what? Student adds why."
+        ],
+        "stretch": "Add a rhetorical question.",
+        "help": "Start: This means we can...",
+        "prep": "Ours: scribe body 1 together, then body 2 from the plan, so the class letter has both. Keep it for Session 3. SOURCES: SunSmart Victoria, sun protection mid-August to end of April.",
+        "tag": "[We Do | Supported application | SC2 | HITS 3, 5]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Yours: write your two body paragraphs",
+      "task": "Do the warm-up, plan both paragraphs, then write them in your writing book, every second line.",
+      "where": "Worksheet, then writing book",
+      "frame": "Firstly, ___. ___. This means ___.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "flag",
+          "magnifier",
+          "megaphone"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Claim it. Prove it. Sell it.",
+      "extendedTask": "a short warm-up, the two-paragraph plan, then both body paragraphs drafted in writing books",
+      "notes": {
+        "answer": "two body paragraphs, each with a topic sentence, proof and This means",
+        "beats": [
+          [
+            "POINT to the task.",
+            "SAY: The warm-up takes three minutes.",
+            "Then plan both paragraphs and get writing."
+          ],
+          [
+            "SAY: Let's read the steps together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          "CONFERENCE first with anyone from yesterday's exit list.",
+          [
+            "ASK: Swap books. Read only the topic sentences. Can you say their argument?",
+            "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+            "Eyes back in 3, 2, 1.",
+            "EXPECT: You think we should..."
+          ],
+          "TIME 25 minutes: warm-up 3, plan 5, writing 17, partner swap at 22."
+        ],
+        "trap": [
+          "two reasons squashed into one paragraph.",
+          "Fix: student splits it and gives the second its own topic sentence."
+        ],
+        "stretch": "upgrade weak topic sentences, then sell one proof to two readers.",
+        "help": "Supported Worksheet: claim or proof, the linking word, a three-starter frame.",
+        "prep": "Yours: body 1 and body 2 of the big piece. Every second line, ready for Week 5. SC2 and SC3.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Walking gets your heart pumping before class. It's free, and you can chat with friends on the way.",
+        "Write the topic sentence that should start this paragraph."
+      ],
+      "notes": {
+        "answer": "e.g. Kids should walk to school whenever they can.",
+        "beats": [
+          "SAY: Here's a paragraph with its first sentence missing. Write the claim it proves.",
+          [
+            "ASK: Write the topic sentence that should start this paragraph.",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: one sure claim about walking to school"
+          ],
+          "RECORD who writes another fact, or just Walking. They're tomorrow's first conference."
+        ],
+        "trap": [
+          "writing another reason instead of the claim.",
+          "Fix: none now, record the name."
+        ],
+        "prep": "Exit evidence for SC2 on a new paragraph. One board per student.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Read only your two topic sentences to your partner. Can they guess your whole argument?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - the partner can say the argument from the topic sentences",
+        "beats": [
+          [
+            "SAY: Let's read our I can lines together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "ASK: How sure are you that both paragraphs claim it, prove it and sell it?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          [
+            "RECORD each thumb down beside the exit boards.",
+            "A thumb up with a wrong exit board matters most."
+          ],
+          [
+            "ASK: Read only your topic sentences. Can your partner guess your argument?",
+            "30 sec. Cue: Partner B reads first. You have 30 seconds. Go.",
+            "Eyes back in 3, 2, 1.",
+            "EXPECT: You're arguing that..."
+          ]
+        ],
+        "prep": "Self-assessment read beside the exit boards. SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}
