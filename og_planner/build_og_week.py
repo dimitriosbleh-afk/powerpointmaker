@@ -229,10 +229,9 @@ HEADER_NOTES = {
     "new_morph_v18": "New morpheme today. The memory hook and its picture are on the next slide.",
     "pos_drill_v18": (
         "PROCEDURE:\n"
-        "1. READ the suffix, its meaning and the keyword sentence together.\n"
-        "2. TRY the keyword in each frame: the ___, to ___, very ___.\n"
-        "3. CHORAL: \"Everyone, together, on three.\" The frame that sounds right names the part of speech.\n"
-        "4. REVEAL on the click; tick or fix."
+        "1. READ the suffix, its meaning and the sentence together.\n"
+        "2. ASK what job the bold word does in the sentence: noun, verb or adjective. Turn and talk, then choral.\n"
+        "3. REVEAL on the click, then say why, using the sentence and the suffix's meaning."
     ),
     "learned_review_v18": (
         "PROCEDURE:\n"
@@ -1396,7 +1395,7 @@ NOTE_ANCHOR_RE = re.compile(
     r"Meaning of [^:]+|Part of speech|Word to spell|Sentence|After checking|"
     r"Answer|Why learned|Say it|Link|C - Capitals(?:, shown green)?|U - Understanding|O - Organisation|"
     r"P - Punctuation, shown red|S - Spelling targets, underlined|Score|Focus|"
-    r"Targets|Memory hook|Purpose|SOURCES):"
+    r"Targets|Memory hook|Purpose|WHY|SOURCES):"
 )
 NUMBERED_ACTION_RE = re.compile(
     r"^\d+\.\s+(?:POINT|SHOW|MODEL|DRAW|BUILD|COVER|REVEAL|TIME|COLLECT|"
@@ -1885,6 +1884,14 @@ def add_answer_check_slide(d, blk, tidx, accent, tint, ctx,
     return True
 
 
+# v1.8 parts-of-speech choices (3g): each job in words a Year 5 can test
+# against the sentence.
+POS_JOBS = {
+    "noun": "names a thing or idea",
+    "verb": "something you do",
+    "adjective": "describes a noun",
+}
+
 ROUND_BAR_BOTTOM = 4.56   # the routine chip and footer start at y=4.66
 
 
@@ -1930,11 +1937,15 @@ def draw_round_slide(root, blk, item, accent, tint, ctx):
                       for c in choices]
         longest = max((ln for cl in chip_lines for ln in cl), key=len)
         rows = max(len(cl) for cl in chip_lines)
-        csz = fit_font_block(longest, cw - 0.2, (0.82 - 0.1) / rows, 20,
-                             min_pt=13, char_em=0.58)
+        # Authored **bold** in a chip (a label over its plain gloss) means
+        # the author controls the weight; plain chips stay all bold.
+        marked = any("**" in c for c in choices)
+        csz = fit_font_block(longest.replace("**", ""), cw - 0.2,
+                             (0.82 - 0.1) / rows, 20, min_pt=13,
+                             char_em=0.5 if marked else 0.58)
         for i, cl in enumerate(chip_lines):
             add_textbox(root, sid, 0.9 + i * (cw + gap), y, cw, 0.82, cl, csz,
-                        bold=True, fill="FFFFFF", outline=accent, rounded=True)
+                        bold=not marked, fill="FFFFFF", outline=accent, rounded=True)
             sid += 1
         y += 0.82 + 0.08
     elif parts:
@@ -2287,6 +2298,12 @@ def build_session(pkg, week, session, out_path):
         if re.search(r"\bgive me\b", blob, flags=re.I):
             warn(f"{day}: a script says \"give me\" - ask the real question instead "
                  "(\"What is one word built from terr, meaning land?\") (2a, v1.8)")
+        # James Hooke (23 Oct 2026): "Purpose and prep - what's all that down
+        # the bottom?"  v1.8 notes carry no Purpose line and no stage tag; a
+        # teacher who needs the reason gets one plain WHY: line (3c).
+        if re.search(r'"Purpose:|\[(?:I|We|You) Do \||\[Review \|', blob):
+            warn(f"{day}: notes carry a Purpose line or a [Stage | ...] tag - "
+                 "v1.8 notes say why in plain words on one WHY: line (3c)")
         if "SAY each word, students write it" in blob:
             warn(f"{day}: drop the \"SAY each word, students write it...\" line from "
                  "the spelling notes (3c, v1.8)")
@@ -2896,13 +2913,34 @@ def build_session(pkg, week, session, out_path):
         if intro:
             itidx = T["gradual_release"]["i_do"]
 
-            def fill_pos_intro(root, intro=intro, itidx=itidx):
+            if v18:
+                # James Hooke (23 Oct 2026): the frames slide put the answer on
+                # the face and never showed the word.  The v1.8 I do is one
+                # modelled sentence, the three jobs as choices, and the answer
+                # with its reason behind one click (3g).
+                for field in ("prompt", "choices", "answer", "why"):
+                    if not intro.get(field):
+                        warn(f"{day}: parts-of-speech I do needs `{field}` - "
+                             "sentence, three job choices, answer on the click (3g)")
+                if intro.get("example") or intro.get("items"):
+                    warn(f"{day}: parts-of-speech I do must not print a worked "
+                         "answer on the face - put it in `answer`/`why` (3g)")
+            pos_timing = etree.fromstring(
+                d.pkg.slide_xml(T["spell_word"])).find(q("p:timing"))
+
+            def fill_pos_intro(root, intro=intro, itidx=itidx, pos_timing=pos_timing):
                 tsp = find_sp(root, SHAPE["gr_title"][itidx])
                 set_text(tsp, "I do - " + intro.get("title", ""))
                 bsp = find_sp(root, SHAPE["gr_body"][itidx])
                 set_runs(bsp, [[]])
-                draw_structured_slide(root, intro, MORPH_MAGENTA, MORPH_TINT,
-                                      f"{day} pos_drill intro")
+                if v18:
+                    answer_sid = draw_round_slide(root, intro, intro, MORPH_MAGENTA,
+                                                  MORPH_TINT, f"{day} pos_drill intro")
+                    insert_timing(root, copy.deepcopy(pos_timing))
+                    regen_timing(root, [(answer_sid, None)])
+                else:
+                    draw_structured_slide(root, intro, MORPH_MAGENTA, MORPH_TINT,
+                                          f"{day} pos_drill intro")
             d.add(itidx, fill_pos_intro, notes=intro.get("notes", ""))
         for card in drill.get("cards", []):
             card = {**card, "type": "suffix"}
@@ -2921,38 +2959,48 @@ def build_session(pkg, week, session, out_path):
                 warn(f"{day}: parts-of-speech card {card['morph']!r} needs a "
                      "`sentence` using its keyword - students forget older "
                      "suffixes (3g, v1.8)")
-            if v18 and pos not in ("noun", "verb", "adjective"):
+            if v18 and pos not in POS_JOBS:
                 warn(f"{day}: parts-of-speech card {card['morph']!r} makes a "
-                     f"{pos!r}; the three frames only test noun, verb and "
+                     f"{pos!r}; the card choices are only noun, verb and "
                      "adjective (3g, v1.8)")
+            if v18 and not card.get("why"):
+                warn(f"{day}: parts-of-speech card {card['morph']!r} needs a `why` "
+                     "for the reveal - what the word does in the sentence (3g)")
 
             def fill_pos(root, card=card, tidx=tidx, pos=pos, kw=kw, mean=mean):
                 set_slide_background(root, MORPH_FILL["suffix"])
                 sp = find_sp(root, SHAPE["card_review_word"][tidx])
                 set_text(sp, card["morph"], size_pt=fit_font(card["morph"], 5.75, 56))
                 if v18:
-                    # James Hooke (23 Oct 2026): the bare suffix was not enough -
-                    # kids forgot older suffixes and teachers could not explain
-                    # the part of speech.  The card now carries its meaning, the
-                    # keyword in a sentence, and the three test frames.
+                    # James Hooke (23 Oct 2026): the card reads top to bottom -
+                    # suffix, its meaning, the keyword in a sentence, the
+                    # question, the three jobs - and the answer with its reason
+                    # waits behind the click (3g).  The frames are retired.
                     xfrm = sp.find(q("p:spPr") + "/" + q("a:xfrm"))
-                    xfrm.find(q("a:off")).set("y", str(int(0.95 * 914400)))
+                    xfrm.find(q("a:off")).set("y", str(int(0.3 * 914400)))
                     meaning = re.sub(r"^[^:]*:\s*", "",
                                      card_meaning_note(mean).splitlines()[0])
-                    add_textbox(root, 90051, 1.0, 2.12, 8.0, 0.55,
-                                [f"means: {meaning}"], 24, bold=True)
+                    add_textbox(root, 90051, 1.0, 1.42, 8.0, 0.5,
+                                [f"{card['morph']} means: {meaning}"], 22, bold=True)
                     sentence = card.get("sentence", "")
                     marked = re.sub(rf"\b({re.escape(kw)})\b", r"**\1**", sentence,
                                     count=1, flags=re.I)
-                    ssz = fit_font_block(sentence, 8.0, 0.6, 24, min_pt=18)
-                    add_textbox(root, 90052, 1.0, 2.7, 8.0, 0.65, [marked], ssz,
+                    ssz = fit_font_block(sentence, 8.0, 0.6, 26, min_pt=18)
+                    add_textbox(root, 90052, 1.0, 2.0, 8.0, 0.7, [marked], ssz,
                                 fill="FFFFFF", rounded=True)
-                    for i, frame in enumerate(("the ___", "to ___", "very ___")):
-                        add_textbox(root, 90053 + i, 1.0 + i * 2.75, 3.52, 2.5, 0.55,
-                                    [frame], 22, bold=True, fill="FFFFFF",
+                    question = f"What job does {kw} do in this sentence?"
+                    add_textbox(root, 90056, 1.0, 2.78, 8.0, 0.45, [question],
+                                fit_font(question, 7.8, 22, min_pt=16, char_em=0.58),
+                                bold=True)
+                    for i, (job, what) in enumerate(POS_JOBS.items()):
+                        add_textbox(root, 90053 + i, 1.0 + i * 2.75, 3.3, 2.5, 0.8,
+                                    [f"**{job}**", what], 17, fill="FFFFFF",
                                     outline=CHARCOAL, rounded=True)
-                    add_textbox(root, 90050, 2.5, 4.27, 5.0, 0.72, [pos], 34,
-                                color=CHARCOAL, bold=True, fill="FFFFFF", rounded=True)
+                    reveal = f"**{pos}** - {card.get('why', '')}"
+                    add_textbox(root, 90050, 1.0, 4.22, 8.0, 0.68, [reveal],
+                                fit_font_block(reveal.replace("**", ""), 7.8, 0.58, 22,
+                                               min_pt=15, char_em=0.58),
+                                color="FFFFFF", fill=ANSWER_GREEN, rounded=True)
                 else:
                     add_textbox(root, 90050, 2.5, 4.05, 5.0, 0.75, [pos], 36,
                                 color=CHARCOAL, bold=True, fill="FFFFFF", rounded=True)
@@ -2963,9 +3011,7 @@ def build_session(pkg, week, session, out_path):
                         f"{card_meaning_note(mean)}"
                         f"{card_pos_note(card)}")
             if v18:
-                pos_note = (f"ANSWER: {pos}\n"
-                            f"Suffix: {card['morph']} | Keyword: {kw}\n"
-                            f"{card_meaning_note(mean)}")
+                pos_note = f"ANSWER: {pos} - {card.get('why', '')}"
             if card.get("notes"):
                 pos_note += "\n" + card["notes"]
             marks["pos_cards"].append((len(d.slides), card))

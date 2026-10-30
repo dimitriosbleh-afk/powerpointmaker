@@ -642,7 +642,8 @@ class OgBuilderRegressionTests(unittest.TestCase):
 
     def test_v18_short_week_opens_every_day_with_review(self):
         """James (22 Oct 2026): cards and reading review every day, hook with a
-        picture, frame-based parts of speech, part boxes, four-session week."""
+        picture, parts of speech read from a sentence, part boxes, four-session
+        week."""
         with tempfile.TemporaryDirectory(prefix="og_v18_regression_") as temp:
             decks = self.build_spec(self.V18_SPEC, Path(temp))
             self.assertEqual([d.name for d in decks], [
@@ -665,12 +666,23 @@ class OgBuilderRegressionTests(unittest.TestCase):
             self.assertNotIn("Click to reveal answer.", tue_notes)
             self.assertNotIn("SAY each word, students write it", tue_notes)
             # Break it apart: the root box is filled, the others are empty.
-            breaks = [x for x in self._slide_xml(decks[2]) if "Break it apart" in x]
+            breaks = [x for x in self._slide_xml(decks[2])
+                      if "Break the word into its parts" in x]
             self.assertTrue(breaks)
             self.assertTrue(all(">+<" in x for x in breaks))
-            # Thursday: frames on every suffix card, the vote closes the week,
-            # one dictation sentence, reading review before parts of speech.
-            self.assertEqual(thursday.count(">very ___<"), 4)
+            # Thursday (James, 23 Oct 2026): every suffix card asks what job the
+            # keyword does in its sentence, with the three jobs as choices; the
+            # frames are gone and the answer waits behind a click.
+            self.assertNotIn("very ___", thursday)
+            self.assertEqual(thursday.count("in this sentence?"), 4)
+            self.assertEqual(thursday.count(">names a thing or idea<"), 5)
+            thu_slides = self._slide_xml(decks[3])
+            intro = [x for x in thu_slides if "Noun, verb or adjective?" in x]
+            self.assertEqual(len(intro), 1)
+            self.assertIn("<p:timing", intro[0])
+            self.assertNotIn("Purpose:", self._notes_text(decks[3]))
+            # The vote closes the week, one dictation sentence, reading review
+            # before parts of speech.
             self.assertIn("Trickiest this week?", thursday)
             self.assertEqual(thursday.count("Write this sentence"), 1)
             self.assertLess(thursday.index("Words to Read Review"),
@@ -689,6 +701,9 @@ class OgBuilderRegressionTests(unittest.TestCase):
         thu.pop("vote")
         thu["dictation"].append(dict(thu["dictation"][0], meter="yellow"))
         wed["build"]["rounds"][0]["round"][1].pop("parts")
+        thu["pos_drill"]["cards"][1].pop("why")
+        thu["pos_drill"]["intro"]["items"] = ["active: very active = adjective"]
+        thu["pos_drill"]["intro"]["notes"] += "\n---\nPurpose: test. [I Do | Modelling | Morphology]"
         with tempfile.TemporaryDirectory(prefix="og_v18_fail_") as temp:
             spec = Path(temp) / "term4_week4.json"
             spec.write_text(json.dumps(week))
@@ -701,6 +716,9 @@ class OgBuilderRegressionTests(unittest.TestCase):
             self.assertIn("8 words", out)
             self.assertIn("sentence", out)
             self.assertIn("`vote`", out)
+            self.assertIn("needs a `why`", out)
+            self.assertIn("must not print a worked answer", out)
+            self.assertIn("Purpose line", out)
             self.assertIn("ONE dictation", out)
             audit = subprocess.run(
                 [sys.executable, str(ROOT / "og_planner" / "audit_week_spec.py"), str(spec)],

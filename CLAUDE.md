@@ -350,7 +350,10 @@ block), `week_review` (Fri). Each day carries only its own blocks; legacy `new`/
 weeks still build unchanged. v1.8 (James, Oct 2026, spec field `"og_version": "1.8"`)
 opens EVERY day with the card drill and a 5-4-3-2-1 Words to Read Review (at most 3
 questions, rotating formats), puts a short memory hook with a pictogram on Monday's
-card, tests parts of speech with the frames the ___ / to ___ / very ___, draws part
+card, asks what job each suffix card's keyword does in its sentence (noun / verb /
+adjective as choices, answer and reason on the click; the frames were retired 23 Oct
+2026), builds every self-drawn slide top to bottom with no answer on the face (3h),
+keeps Purpose lines and stage tags out of the notes, draws part
 boxes for Break it apart, allows only three extension types, and handles short weeks
 (4 sessions: Thursday ends with the vote then one grammar dictation; 3 sessions: a
 `combined` day). Exemplar: `og_planner/weeks/term4_week4.json` (v1.7:
