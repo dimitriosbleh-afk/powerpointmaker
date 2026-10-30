@@ -16,7 +16,8 @@ Ported from the 5/6 Challenge team's package (Oct 2026), whose sheets copied a
 
 Every row is a solid baseline with two dotted lines above it: the x-height fills
 the lowest third, ascenders reach the top line, descenders drop a third into the
-next row.  Fonts are read from C:\\Windows\\Fonts and never copied into the repo.
+next row.  Fonts are read from the installed fonts (Windows or Mac) and never
+copied into the repo.
 
 build_og_week.py calls build_session_sheet() for each session; run it alone with:
     python og_planner/enabler_pdf.py <week spec>.json <out dir>
@@ -28,12 +29,26 @@ from pathlib import Path
 
 import fitz
 
-FONTS = Path(r"C:\Windows\Fonts")
-DOTTED = FONTS / "VICDOTS_.TTF"    # VicDots: dotted Victorian Modern, separated
-SOLID = FONTS / "VICREGUL.TTF"     # VicRegular: the same letters, solid
-HEAD = FONTS / "arialbd.ttf"
-BODY = FONTS / "arial.ttf"
-ITALIC = FONTS / "ariali.ttf"
+# Windows first, then the Mac font folders (Font Book installs to ~/Library/Fonts).
+FONT_DIRS = [Path(r"C:\Windows\Fonts"), Path.home() / "Library" / "Fonts",
+             Path("/Library/Fonts"), Path("/System/Library/Fonts/Supplemental")]
+
+
+def find_font(*names):
+    """The first installed copy of any of `names`; a missing path otherwise,
+    which fonts_available() reports."""
+    for folder in FONT_DIRS:
+        for name in names:
+            if (folder / name).exists():
+                return folder / name
+    return FONT_DIRS[0] / names[0]
+
+
+DOTTED = find_font("VICDOTS_.TTF")    # VicDots: dotted Victorian Modern, separated
+SOLID = find_font("VICREGUL.TTF")     # VicRegular: the same letters, solid
+HEAD = find_font("arialbd.ttf", "Arial Bold.ttf")
+BODY = find_font("arial.ttf", "Arial.ttf")
+ITALIC = find_font("ariali.ttf", "Arial Italic.ttf")
 
 PAGE_W, PAGE_H = fitz.paper_size("a4")
 LEFT, RIGHT = 36.0, PAGE_W - 36.0
@@ -589,7 +604,7 @@ def extension_plan(week, session, s):
         answers.append(("Words to Spell", ", ".join(wsr)))
     cards = (session.get("pos_drill") or {}).get("cards", []) if stype == "apply" else []
     if cards:
-        # Thursday's real work: a word for each suffix card, and the job a frame proves
+        # Thursday's real work: a word for each suffix card, and the job it does (3g)
         sufs = [str(c.get("morph", "")) for c in cards]
         rows = []
         job = s.item_width([("s", "  job: ")])
@@ -598,7 +613,7 @@ def extension_plan(week, session, s):
             rows.append([[("bold", suf), ("sp", 10), ("line", word_line), ("s", "  job: "),
                           ("line", 140)]])
         plan.append(("Suffix jobs - a new word for each suffix, then its job "
-                     "(the ___ noun, to ___ verb, very ___ adjective)", rows))
+                     "(noun, verb or adjective)", rows))
         answers.append(("Suffix jobs", "; ".join(
             f"{c.get('morph')} - e.g. {suffix_word(c)} ({c.get('pos_answer', '')})"
             for c in cards) + ". Any real word with the right job counts."))

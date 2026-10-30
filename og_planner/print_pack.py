@@ -13,8 +13,9 @@ from pathlib import Path
 
 import fitz
 
-FONTS = Path(r"C:\Windows\Fonts")
-REG, BOLD = FONTS / "arial.ttf", FONTS / "arialbd.ttf"
+from enabler_pdf import find_font
+
+REG, BOLD = find_font("arial.ttf", "Arial.ttf"), find_font("arialbd.ttf", "Arial Bold.ttf")
 PAGE_W, PAGE_H = fitz.paper_size("a4")
 M = 40.0
 INK = (0.13, 0.13, 0.15)

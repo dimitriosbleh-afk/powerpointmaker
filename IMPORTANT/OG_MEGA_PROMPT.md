@@ -136,12 +136,17 @@ point settled with him) keeps the v1.7 week and fixes what the room found:
 8. THREE EXTENSION TYPES ONLY: longest word hunt, beat the number, two in one (3e).
 9. BREAK IT APART: one empty box per part, root filled in, students write only the parts
    (3f).
-10. PARTS OF SPEECH BY FRAME: Thursday was "brutal" because the suffixes were old and
-    nobody could say why a suffix makes a noun. Each suffix card now shows its meaning,
-    keyword and a keyword sentence, and students try the keyword in three frames:
-    "the ___" noun, "to ___" verb, "very ___" adjective (3g).
+10. PARTS OF SPEECH FROM THE SENTENCE: Thursday was "brutal" because the suffixes were
+    old and nobody could say why a suffix makes a noun. Each suffix card now shows its
+    meaning and a keyword sentence, asks "What job does gravity do in this sentence?"
+    with noun / verb / adjective as choices, and reveals the answer and its reason on
+    the click (3g). The first v1.8 try, the frames "the ___ / to ___ / very ___", is
+    retired (James, 23 Oct 2026: the word never sat in the frames, the answer was on
+    the slide, and even a teacher could not tell whether "the gravity" was right).
 11. LEARNED WORD ROUTINES rewritten (5), and SHORT WEEKS of 3 or 4 sessions never cut new
     content (11).
+12. TOP-TO-BOTTOM HIERARCHY on every slide we build ourselves, and plain-English notes
+    with no Purpose line or stage tag (3h, 3c).
 
 A v1.8 week says `"og_version": "1.8"` at the top of its spec. Legacy `new` / `review`
 weeks (v1.0-v1.6) and v1.7 weeks (Term 4 Week 3) still build unchanged.
@@ -226,7 +231,7 @@ Friday. Each day carries ONLY its own blocks - the builder emits nothing else.
 | Monday | `teach` | card drill (10 cards) - Words to Read Review (15) - NEW morpheme card with memory hook and picture, copy slide, write it 3 times, class brainstorm - Words to Read grid (6, 9 or 12) - Your keyword and one sentence | 25-30 min |
 | Tuesday | `spell` | card drill - Words to Read Review - Sound Bank, dictated (2c) - Words to Spell Review (6-8) - Words to Spell New (4, off Monday's grid) - learned words (2 review + NEW word 1) - dictation x2 | 25-30 min |
 | Wednesday | `build` | card drill - Words to Read Review - word matrix - Break it apart round - Write the word that names... round (3f) | 20-25 min |
-| Thursday | `apply` | card drill - Words to Read Review - suffix parts-of-speech drill by frames (3g) - learned words (2 review + NEW word 2) - grammar I do / We do / You do (7) | 25-30 min |
+| Thursday | `apply` | card drill - Words to Read Review - suffix parts-of-speech drill, job read from a sentence (3g) - learned words (2 review + NEW word 2) - grammar I do / We do / You do (7) | 25-30 min |
 | Friday | `week_review` | v1.9: card drill (10) - Words to Read Review (15) - `Complete this Friday Review` slide, and the deck STOPS; students do the worksheet (1a). v1.8: card drill - Words to Read Review - Sound Bank, dictated - Words to Spell Review (6-10) - learned words review - dictation x2 - grammar (only if no Thursday ran) - trickiest-this-week vote | 25 min |
 
 v1.9 adds the meaning pictures (2d), the Wednesday third-round rotation (3f), the
@@ -302,10 +307,13 @@ THE FIVE PARTS, in this order, each at Grade 5/6:
 - PART A: GRAMMAR - this week's grammar focus, 2 question blocks. Students PRODUCE, they
   do not just spot: rewrite with the new punctuation, join two sentences, then write one
   of their own. An underline-only task is a Year 3/4 task.
-- PART B: PARTS OF SPEECH BY FRAME - 6 words built on this week's suffix cards (3g).
-  `Tip:` gives the frames (`the ___` noun, `to ___` verb, `very ___` adjective) with one
-  worked word; a two-column `codes` grid takes the job. Never a word whose job depends on
-  context (`associate`).
+- PART B: PARTS OF SPEECH FROM A SENTENCE - 5 words built on this week's suffix cards
+  (3g), each in a short sentence with the word in CAPITALS; a one-column `codes` task
+  takes the job. `Tip:` gives the three jobs in words (noun - names a thing or idea,
+  verb - something you do, adjective - describes a noun) on one line and one worked
+  sentence on a second line - a two-line Tip, never a side-by-side Example box, so the
+  block fits under Part A. Each sentence must prove the job, as on the slides. Never a word whose job depends on
+  context (`associate`). (The frames were retired on 23 Oct 2026, 3g.)
 - PART C: LEARNED WORDS - this week's two new learned words in sentence gaps, spelled
   from memory (no word bank: a bank turns spelling into copying).
 - PART D: MORPHOLOGY - two blocks on this week's morpheme, headed with its label and
@@ -358,7 +366,8 @@ THE 5/6 RE-PITCH (from the 3/4 sheets):
   trace and `VicRegular` (`VICREGUL.TTF`, solid) for the morpheme. Never joined
   cursive, never the Foundation-2 pre-cursive, and never `VICCursiveDotted` /
   `VICCursiveSolid`, whose letter widths are only right inside Word (in a PDF the
-  letters pile on top of each other). Fonts are read from `C:\Windows\Fonts` and
+  letters pile on top of each other). Fonts are read from the installed fonts
+  (`C:\Windows\Fonts`, or on a Mac `~/Library/Fonts` after Font Book's Install) and
   never copied into this public repo.
 - DOTTED THIRDS at about 4.9 mm (a 14.8 mm row), down to 4.2 mm to fit one page, with a
   NOTE below 4.4 mm. The 3/4 sheets used 6 mm.
@@ -394,7 +403,8 @@ needs to start, and the whole word is theirs; then each section goes one step fu
 - Dictation: blank rows for both sentences, then one more word on the morpheme added
   to sentence 1 with a `^`.
 - Thursday adds the day's real work the enabler leaves to the slides: a new word for
-  each suffix card with the job a frame proves, and a sentence using two of them.
+  each suffix card with its job (noun, verb or adjective), and a sentence using two of
+  them that shows each word doing that job.
 Text the student reads is printed solid (VicRegular), never dotted: nothing on an
 extension sheet is for tracing. Extension students are the confident writers, so the
 sheet may run smaller than the enabler (down to 3.7 mm thirds, near their books). The
@@ -1456,32 +1466,68 @@ NOTEs both against last week's spec):
 The builder checks the mechanics (round order, bank maths, the `___` gap, 3 choices,
 answer among them); you own the one-clear-answer and distractor bars.
 
-## 3g. THURSDAY: SUFFIX PARTS OF SPEECH (v1.7 `apply` day, frames in v1.8)
+## 3g. THURSDAY: SUFFIX PARTS OF SPEECH (v1.7 `apply` day, sentence test in v1.8)
 
-V1.8 FRAMES (James, 22 Oct 2026: Thursday was "BRUTAL" - the suffixes were old and
-forgotten, and teachers could not explain why a suffix makes a noun). The drill is now
-explicit and every student can run it:
+V1.8 (James, 22 Oct 2026: Thursday was "BRUTAL" - the suffixes were old and forgotten,
+and teachers could not explain why a suffix makes a noun). Rebuilt 23 Oct 2026 after
+the frame version failed in Google Slides: the word was not on the slide, the I do
+printed its answer, and the notes said "to supportive - no, very supportive - yes"
+without ever saying why. The drill now reads the job from a sentence, the way a
+teacher would explain it:
 - CHOOSE 4-5 SUFFIXES, NO MORE: suffixes on this week's review cards first; when the
   cards hold none, taught suffixes that build this week's or recent words (Term 4 Week 4
-  used -ity, -ive, -ciate, -tude). Noun, verb or adjective only - adverb has no frame,
-  and the builder warns on any other `pos_answer`.
-- EACH CARD SHOWS what students need to work it out, never recall: the suffix, its
-  printed meaning, and a short keyword sentence with the keyword in bold
-  (`"sentence": "Gravity pulls the ball back down."`, required; the builder warns
-  without it). Under it sit three frame chips - "the ___", "to ___", "very ___" - and
-  the click reveals the part of speech.
-- THE FRAME TEST: say the keyword in each frame and stop. "the ___" sounding right means
-  a noun (a thing or idea), "to ___" a verb (something you do), "very ___" an adjective
-  (it describes). "very ___" replaced "a ___ person" because the article and
-  non-gradable adjectives (facial) broke it; skip a suffix like -cial whose keyword
-  fails "very".
-- CARD NOTES: `1. READ` the card chorally (meaning and sentence), `2. ASK` "Try X in each
-  frame with your partner. Which one sounds right?" with `10 sec, turn and talk. Then:
-  "Everyone, together, on three."` and EXPECT, `3. REVEAL` after the choral answer. No
-  open "give me an -ity word in a sentence" prompt.
-- `pos_drill.intro` is an I do slide modelling the three frames on one word from the week
-  (supportive), every Thursday. The builder writes a short PROCEDURE in the drill header
-  notes.
+  used -ity, -ive, -ciate, -tude). Noun, verb or adjective only; the builder warns on
+  any other `pos_answer`.
+- EACH CARD READS TOP TO BOTTOM: the suffix; "-ity means: state, quality"; the keyword
+  sentence with the keyword in bold (`"sentence"`, required); the question "What job
+  does gravity do in this sentence?"; three choice chips, each a job and its test in
+  words (noun - names a thing or idea, verb - something you do, adjective - describes a
+  noun); then, behind one click, a green bar with the answer and its reason taken from
+  the sentence (`"why": "gravity is the thing that pulls the ball"`, required). The
+  builder draws all of this from `morph`, `pos_answer`, `sentence` and `why`.
+- CHOOSE THE SENTENCE SO THE JOB IS PROVABLE FROM IT: the keyword is the thing doing or
+  receiving the action (noun), the action itself (verb), or the word describing a noun
+  that is in the sentence (adjective). The `why` names that evidence.
+- CARD NOTES (the builder writes `ANSWER: noun - <why>` first): `1. READ` the card
+  chorally, `2. ASK` "What job does gravity do in this sentence: noun, verb or
+  adjective?" with `10 sec, turn and talk. Then: "Everyone, together, on three."` and
+  EXPECT, a `SCAN:` line for a split or wrong chorus (do not click; ask "What does the
+  pulling?", then re-ask on three), `3. REVEAL` after the choral answer with a SAY that
+  gives the sentence reason
+  AND the suffix rule ("Gravity is the thing that pulls the ball, so it is a noun. -ity
+  words name a state or quality, so they are nouns."), then a `TRAP:` naming the likely
+  wrong job and the fix ("verb, because pulls is an action. Fix: pulls is the verb; ask
+  what does the pulling"). Say "usually" for a suffix whose words are not always one job
+  (-ive: detective, objective; -ciate: an associate); -ity and -tude always make nouns.
+- `pos_drill.intro` is the I do, every Thursday: title "Noun, verb or adjective?", rule
+  "Read the sentence. What job does the bold word do?", a `prompt` sentence with one
+  bold word from the week (Week 4: "The **rejection** made her try even harder."), the
+  same three `choices`, and `answer` + `why` revealed on the click. Its notes define
+  the three jobs, think aloud from the sentence, and show the suffix changing the job
+  (reject is something you do; add -ion and it becomes a thing). The builder rejects an
+  intro that prints a worked answer on the face (`example` or `items`).
+
+## 3h. TOP-TO-BOTTOM HIERARCHY ON SLIDES WE BUILD (v1.8)
+
+James (23 Oct 2026): "Hierarchy is a very important thing in teaching. Teachers work
+from top to bottom." The template slides already do this; the slides this pipeline
+draws itself (keyword and sentence, word matrix, break the word, which word is it,
+parts-of-speech I do and cards, grammar I do / We do / You do, the vote) must too:
+- THE TITLE SAYS THE TASK in words a student could act on: "Noun, verb or adjective?",
+  "Break the word into its parts", "Which ject word is it?", "Pick your own ject word".
+  Never a label for the method ("Find the job with a frame", "Name it").
+- READ ORDER IS WORK ORDER: the banner says what to do, the thing students work on (the
+  word, sentence or clue) is the hero straight under it, then the choices or boxes, then
+  the answer. Nothing students need sits below something they do later.
+- THE THING THEY WORK ON IS ON THE SLIDE, big and bold. A test word that lives only in
+  the notes is a failed slide.
+- NO ANSWER ON THE FACE BEFORE STUDENTS TRY: answers go in the green bar behind one
+  click (`answer` + `why`), except a round item marked `worked` ("One done for you").
+- TWO STEPS ARE NUMBERED in the hero ("1. Write your own ject word for throw. Star it."
+  / "2. Write one sentence that shows what it means."), never one in the banner and one
+  in small print.
+- THE NOTES SAY WHY in teacher words. "To supportive - no. Very supportive - yes." is
+  not an explanation; "it is the thing doing the pulling, so it is a noun" is.
 
 v1.7 rules follow and still apply to v1.7 specs:
 
@@ -2106,6 +2152,13 @@ master template's old dense procedure blocks. All authored notes must follow
   the label is `EXTENSION` (3e). The Words to Read Review script is the sole exception to
   the eight-line cap and follows section 2b's longer numbered reading-plus-retrieval
   structure.
+- V1.8 PREP ZONE (James, 23 Oct 2026: "Purpose and prep - what's all that down the
+  bottom? That doesn't make any sense"): no `Purpose:` line and no `[Stage | element |
+  focus]` tag in a v1.8 week; the builder fails the build on either. Below `---` sits
+  only what a teacher needs before the lesson, in plain words: an `ANSWERS:` block on a
+  fixed-answer You Do, and at most one `WHY:` line explaining the idea behind the slide
+  ("WHY: the suffix sets the job - reject is a verb, rejection is a noun"). If a slide
+  needs neither, it has no `---` at all. The rule below is the v1.7 and legacy one.
 - PREP ZONE: `---` on its own line, followed by at most three short lines - the
   `Purpose:` line with its `[Stage | element | focus]` tag, an optional `PREP:` line
   giving the teacher the concept in their own terms (section 7), and at most one more.
@@ -2153,7 +2206,7 @@ master template's old dense procedure blocks. All authored notes must follow
 | Recap card (Tue) | builder writes `Type:`/`Keyword:`/`Meaning:`; spec `notes` adds the CHORAL and ASK beats with EXPECT |
 | Keyword and sentence (Mon) | Glance You do with no ANSWER line (open task): `1. SAY` why the card keyword works, `2. SAY` pick yours and star it, `3. TIME` the sentence, `EXTENSION:` and `HELP:` |
 | Word matrix (Wed) | Glance You do: beats, `TRAP:` (a made-up word), `EXTENSION:`, `HELP:`, `---`, `Purpose:`, `ANSWERS:` listing the real words with meanings |
-| Parts-of-speech card (Thu) | builder writes `ANSWER:` (the part of speech), the card meaning and printed parts of speech; spec `notes` adds one ASK beat with EXPECT |
+| Parts-of-speech card (Thu) | builder writes `ANSWER:` (the part of speech), the card meaning and printed parts of speech; spec `notes` adds one ASK beat with EXPECT. v1.8: builder writes `ANSWER: <job> - <why>`; spec notes are READ / ASK with EXPECT / REVEAL with the sentence reason and the suffix rule / TRAP (3g) |
 | Friday vote | `1. SAY` the four options, `2. ASK` fingers 1-4 voices off, `3.` what to write in next week's `From our reviews` line |
 
 ---
@@ -2407,7 +2460,7 @@ the per-session PPTX in the week folder IS the deliverable (unlike themed lesson
    from them (2c), 4 new spelling words off Monday's grid + extension (3c, 3e), learned
    words 2 review + new 1 (5), 2 dictations with cops carrying this week's teaching
    plus one throwback (6). Wednesday - matrix, break-apart round with part boxes,
-   third round, rotated from last week (3f, v1.9). Thursday - frame intro + 4-5 suffix
+   third round, rotated from last week (3f, v1.9). Thursday - "Noun, verb or adjective?" I do + 4-5 suffix
    cards with sentences (3g), learned words 2 review + new 2, grammar (7). Friday
    (v1.9) - the `friday_review` worksheet and its follow-up rows, written LAST, from
    what the week actually taught (1a). Every Tuesday spelling word gets a `picture`
