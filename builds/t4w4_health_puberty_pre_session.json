@@ -1,0 +1,454 @@
+{
+  "lesson": {
+    "subject": "wellbeing",
+    "yearLevel": "grade56",
+    "term": 4,
+    "week": 4,
+    "session": 1,
+    "minutes": 20,
+    "title": "Getting Ready to Talk About Puberty",
+    "subtitle": "A short pre-session before the Elephant Ed workshop",
+    "meta": "Year 5/6 Health | Puberty",
+    "footer": "Getting Ready to Talk About Puberty | Year 5/6 Health",
+    "outputFolder": "Puberty_Pre_Session_Y56",
+    "fileName": "Puberty Pre-Session - Year 56 Health.pptx",
+    "plan": {
+      "curriculum": "Health and Physical Education 2.0, Personal, Social and Community Health, Years 5 and 6: resources to manage the changes and transitions of puberty. Pre-session for the Elephant Ed Puberty workshop, from their pre-session plan.",
+      "shape": "discussion-led, no I Do / We Do / You Do: agree how we talk, meet two words, one check, talk about feelings, then each student writes one private question. About 15 to 20 minutes.",
+      "criticalFeature": "puberty is a normal change that happens to everyone, at different times, because hormones tell the body to grow into an adult body",
+      "decisionPoints": [
+        "the thumbs check on the group agreement",
+        "the A, B or C check on what puberty is",
+        "the exit board: the younger student's question"
+      ]
+    },
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        "baby",
+        "student",
+        "person"
+      ],
+      "labels": false
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "One sticky note or slip of paper per student, all the same colour"
+    ],
+    "routineIcons": [
+      "Turn and tell",
+      "Thumbs, voices off",
+      "Point to A, B or C",
+      "Write it, chin it, show me"
+    ],
+    "boardSetup": [
+      "Chairs in a circle or horseshoe so students can see and speak to each other",
+      "A box or envelope labelled Question Box, kept at the front"
+    ]
+  },
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session. One line: before Elephant Ed visits, we're going to get comfortable talking about growing up."
+    },
+    {
+      "kind": "resources",
+      "notes": "Prep slide. No printing. Set chairs so everyone can see each other, put the Question Box at the front and hand out one same-colour sticky note each. Let the wellbeing team know the date, and ask Elephant Ed whether they would like the class questions before the workshop. Read every question slip before passing it on."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning what puberty is and how to make our class a safe place to talk about it.",
+      "successCriteria": [
+        "I can help make our group agreement.",
+        "I can explain what puberty is and why it happens.",
+        "I can explain why it helps to talk about growing up, and who I can ask."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Elephant Ed is coming to talk with us about growing up.",
+            "Today is a short warm-up, so the workshop feels easier."
+          ],
+          [
+            "SAY: Let's read the I can lines together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ]
+        ],
+        "prep": "SC1 joining the agreement is reachable for everyone; SC2 what puberty is and why is the exit evidence; SC3 is the closing reflection.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "How have you changed since Prep?",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "baby",
+            "label": "baby"
+          },
+          {
+            "name": "student",
+            "label": "child"
+          },
+          {
+            "name": "person",
+            "label": "adult"
+          }
+        ]
+      },
+      "prompt": "Turn and tell: one way you have changed since Prep",
+      "notes": {
+        "answer": "open - listen for taller, bigger feet, new skills, new interests",
+        "beats": [
+          [
+            "POINT to the baby, child and adult.",
+            "SAY: Everyone in this room started out as a baby,",
+            "and you've all been changing ever since."
+          ],
+          [
+            "ASK: What is one way you have changed since you were in Prep?",
+            "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+            "Then swap. Eyes back in 3, 2, 1.",
+            "EXPECT: I'm taller, my feet are bigger, I can read chapter books"
+          ],
+          [
+            "SAY: You've been growing and changing for years.",
+            "Puberty is the next big set of changes on the way to being an adult."
+          ]
+        ],
+        "trap": [
+          "giggling and turning it into a joke about bodies.",
+          "Fix: keep it light, ask for one change you can see, partner retells it."
+        ],
+        "prep": "Low-coupling launch: every student can answer from their own life, which bridges into puberty as the next change. Under 2 minutes.",
+        "tag": "[Launch | Retention and recall | SC2 | HITS 1]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "Our agreement",
+      "title": "How we talk about growing up",
+      "lines": [
+        "We listen and show respect.",
+        "We use the correct names for body parts.",
+        "We keep it general: no names, no private stories."
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "listen",
+            "label": "listen"
+          },
+          {
+            "name": "handHeart",
+            "label": "respect"
+          },
+          {
+            "name": "lock",
+            "label": "private"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "every thumb up",
+        "beats": [
+          [
+            "READ each line aloud.",
+            "SAY: Everyone knows a different amount about this, and that's okay.",
+            "It's normal to feel a bit giggly. We laugh with people, never at them."
+          ],
+          [
+            "SAY: Keeping it general means we talk about people,",
+            "not about ourselves or someone we know."
+          ],
+          [
+            "ASK: Can you agree to these three things for today and the workshop?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up"
+          ],
+          [
+            "SCAN every thumb.",
+            "80%+ -> thank the class and move on.",
+            "Less -> ask which line feels tricky, reword it, re-ask."
+          ]
+        ],
+        "trap": [
+          "a student starts a story about a family member.",
+          "Fix: Thanks, let's keep it general. Come and see me after."
+        ],
+        "care": "Protective interrupt any personal story. Upset student -> quiet check-in after.",
+        "prep": "The PDF's group agreement, set before any discussion. Agreement is the evidence for SC1. Under 3 minutes.",
+        "tag": "[Agreement | Enabling learning | SC1 | HITS 2]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "puberty",
+      "meaning": "The time when your body and feelings change as you grow from a child into an adult.",
+      "example": "It starts at different ages for different people, often between about 8 and 14.",
+      "pictogram": "people",
+      "notes": {
+        "answer": "the time your body and feelings change as you grow up",
+        "beats": [
+          [
+            "SAY: Puberty. Let's say it together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "POINT to the meaning.",
+            "SAY: Puberty is a time of change, and it's not just your body.",
+            "Your feelings change too, as you grow from a child into an adult."
+          ],
+          [
+            "POINT to the example.",
+            "SAY: It starts at different ages for different people,",
+            "so nobody is early or late. Every body has its own timing."
+          ]
+        ],
+        "trap": [
+          "thinking puberty only means body changes.",
+          "Fix: ask what else changes, student names a feeling."
+        ],
+        "prep": "Elephant Ed definition: a time of transition and change, physical and emotional, connected to growing up. Body details are left for the workshop.",
+        "tag": "[Key Vocabulary | Knowledge and memory | SC2 | HITS 6]"
+      }
+    },
+    {
+      "kind": "keyWord",
+      "word": "hormones",
+      "meaning": "Chemical messages in your body that tell it when to grow and change.",
+      "example": "In puberty, hormones tell your body to start growing into an adult body.",
+      "pictogram": "brain",
+      "notes": {
+        "answer": "hormones tell the body to grow into an adult body",
+        "beats": [
+          [
+            "SAY: Hormones are chemical messages your body sends to itself.",
+            "They tell your body when to grow and change."
+          ],
+          [
+            "SAY: Puberty starts when your brain sends out new hormones.",
+            "Those messages tell your body to start growing into an adult body."
+          ],
+          [
+            "ASK: Why do people go through puberty? Use the word hormones.",
+            "15 sec. Cue: Partner B first. You have 15 seconds. Go.",
+            "Eyes back in 3, 2, 1.",
+            "EXPECT: hormones tell our bodies to grow into adult bodies"
+          ]
+        ],
+        "trap": [
+          "saying puberty happens because you turn a certain age.",
+          "Fix: point to the word hormones, partner re-says the reason."
+        ],
+        "prep": "Elephant Ed's term is reproductive hormones. If asked: adult bodies can one day make a baby, and the workshop covers the details.",
+        "tag": "[Key Vocabulary | Knowledge and memory | SC2 | HITS 6]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "Check",
+      "title": "Which one is true about puberty?",
+      "options": [
+        {
+          "text": "It only happens to girls.",
+          "misconception": "thinks puberty means periods only, not changes for everyone"
+        },
+        {
+          "text": "It happens to everyone, at different times."
+        },
+        {
+          "text": "Everyone starts at the same age.",
+          "misconception": "thinks there is one right age, so early or late feels wrong"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - it happens to everyone, at different times",
+        "beats": [
+          [
+            "ASK: Which one is true about puberty?",
+            "10 sec. Cue: Point... now. Hold your point. Voices off.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> reveal, cold call one student: Why not C?",
+            "Less -> reread the example on the puberty card, re-ask."
+          ],
+          [
+            "REVEAL after pointing is scanned.",
+            "SAY: B. Everyone goes through puberty, and everyone has their own timing."
+          ]
+        ],
+        "trap": [
+          "pointing to A, only girls.",
+          "Fix: say every body changes in puberty, student re-points."
+        ],
+        "prep": "The knowledge gauge the Elephant Ed plan asks for. Note any A answers and pass them to the facilitator.",
+        "tag": "[Check | Supported application | SC2 | HITS 7]"
+      }
+    },
+    {
+      "kind": "content",
+      "badge": "Talk",
+      "title": "How might people feel?",
+      "lines": [
+        "Why might someone feel nervous to learn about these topics?",
+        "Why might someone be looking forward to learning more about growing up?"
+      ],
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "worried",
+            "label": "nervous"
+          },
+          {
+            "name": "happy",
+            "label": "looking forward"
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - listen for shy, embarrassed, curious, wanting to know what's normal",
+        "beats": [
+          [
+            "SAY: Let's talk about someone, not about ourselves.",
+            "There are no wrong feelings about this."
+          ],
+          [
+            "ASK: Why might someone feel nervous to learn about these topics?",
+            "30 sec. Cue: Partner A first. You have 30 seconds. Go.",
+            "EXPECT: they might feel embarrassed, or worry people will laugh"
+          ],
+          [
+            "ASK: Why might someone be looking forward to it?",
+            "30 sec. Cue: Partner B first. You have 30 seconds. Go.",
+            "Eyes back in 3, 2, 1.",
+            "EXPECT: they're curious, or they want to know what's normal"
+          ],
+          [
+            "SAY: Both feelings make sense, and you can feel both at once.",
+            "Our agreement is how we help each other feel safe."
+          ]
+        ],
+        "care": "Personal-sounding worry -> protective interrupt, then a quiet check-in after.",
+        "prep": "The PDF's comfort questions, word for word, framed as someone so no one has to share their own feelings. About 3 minutes.",
+        "tag": "[Discussion | Enabling learning | SC3 | HITS 5]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "badge": "Your question",
+      "title": "Your question for Elephant Ed",
+      "task": "What aspects of growing up are you curious to learn more about?",
+      "steps": [
+        "Think of one thing you are curious about.",
+        "Write it on your sticky note. No name.",
+        "Fold it and put it in the Question Box."
+      ],
+      "where": "On a sticky note",
+      "frame": "I would like to know...",
+      "extendedTask": "one private question written on a sticky note for the Question Box",
+      "notes": {
+        "answer": "open - any honest question about growing up",
+        "beats": [
+          [
+            "SAY: Every question is a good question, and no one will see your name.",
+            "If you're stuck, write: I want to know what's normal."
+          ],
+          [
+            "TIME 2 minutes. CIRCULATE, looking away from papers,",
+            "so students know their question is private."
+          ],
+          [
+            "COLLECT the folded notes in the box.",
+            "SAY: Thank you. Elephant Ed answers questions like these every day."
+          ]
+        ],
+        "trap": [
+          "writing a name or a friend's name on the note.",
+          "Fix: hand a fresh note, student rewrites it with no names."
+        ],
+        "stretch": "Write a second question about how friends can support each other.",
+        "help": "Offer the starter on the slide, or a quiet word to choose a topic.",
+        "care": "Read every note first. Harm or a disclosure -> child safety procedure, today.",
+        "prep": "Gauges what students are curious about, as the Elephant Ed plan asks. Same-colour notes keep them anonymous.",
+        "tag": "[Your Question | Mastery and application | SC3 | HITS 9]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Before you go",
+      "questions": [
+        "A Year 2 student asks you: Why is my big brother suddenly growing so fast? What would you tell them?"
+      ],
+      "notes": {
+        "answer": "He's going through puberty. Hormones are telling his body to grow into an adult body.",
+        "beats": [
+          [
+            "SAY: A new question, just for you.",
+            "Answer it the way you'd explain it to a Year 2."
+          ],
+          [
+            "ASK: What would you tell the Year 2 student?",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: he's going through puberty, and hormones tell his body to grow"
+          ],
+          [
+            "SCAN every board.",
+            "80%+ -> tick or fix with the hormones card, then close.",
+            "Less -> reread the hormones card, re-ask about a big sister."
+          ]
+        ],
+        "trap": [
+          "naming puberty but not why it happens.",
+          "Fix: ask what tells the body to change, student adds hormones."
+        ],
+        "prep": "Exit evidence for SC2 in a new context: explaining to a younger child. Names with no hormones or no puberty go to the facilitator.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Why is it important to talk about puberty?",
+      "selfAssessment": {
+        "prompt": "Fingers 1 to 5: how ready do you feel for the Elephant Ed workshop?",
+        "options": [
+          "1 = not ready yet",
+          "3 = a bit ready",
+          "5 = ready"
+        ]
+      },
+      "notes": {
+        "answer": "open - listen for it's normal, so we're not scared, who to ask",
+        "beats": [
+          "SAY: Let's read our I can lines together. Cue: Everyone, together, on three.",
+          [
+            "ASK: How ready do you feel for the Elephant Ed workshop, 1 to 5?",
+            "5 sec. Cue: Fingers at your chest... show me.",
+            "EXPECT: 1 to 5 fingers"
+          ],
+          [
+            "RECORD every 1 or 2 and check in quietly before the workshop.",
+            "A 5 with a missing exit answer matters most."
+          ],
+          [
+            "ASK: Why is it important to talk about puberty?",
+            "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+            "EXPECT: so we know it's normal, and we know who to ask for help"
+          ]
+        ],
+        "prep": "Comfort gauge for the facilitator and the wellbeing team. Trusted adults: parents, carers, teachers, wellbeing staff. SC3.",
+        "tag": "[Closing | Retention and recall | SC3 | HITS 9]"
+      }
+    }
+  ]
+}

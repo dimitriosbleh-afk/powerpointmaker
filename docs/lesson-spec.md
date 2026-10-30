@@ -61,6 +61,7 @@ its student-view QA, for slides, worksheet visuals and cut-out `cards`.
 | `outputFolder` | | Folder under `output/`; defaults to a slug of the title |
 | `fileName` | | Defaults to `<title>.pptx` |
 | `titleVisual` | | A visual spec for the cover instead of the subject glyph |
+| `assessment` | | `{ writingMinutes, reason }` for a common assessment task (CAT) session only. The response floor counts the teacher-led minutes only, no exit ticket is needed (the task is the evidence), and the Years 3-6 three-sheet package and standard Your turn steps do not apply, because no enabling support is given while a CAT runs. Write your own `youDo.steps` |
 
 ### materials
 
@@ -237,6 +238,7 @@ Anywhere a `visual` is accepted:
 { "type": "fractionWall" }                                         halves to twelfths; "denoms": [1, 2, 4, 8], "shaded": { "4": 3 }, "labels": false
 { "type": "clock" }                                                blank face; "time": "3:45" draws the hands, "minutes": true, "digital": true
 { "type": "conversionChart", "measure": "length" }                 mass, capacity, time, or "units": ["m", "cm"], "factors": [100]
+{ "type": "placemat", "banner": "Your reader: ...", "panels": [{ "heading": "Claim it", "sub": "Introduction", "icon": "flag", "lines": ["Hook your reader"] }], "strips": [{ "label": "Linking words", "items": ["Firstly,", "However,"] }] }
 ```
 
 `grid`: coordinates sit on the lines (points, `polygon`/`polygons`, `path`,
@@ -251,6 +253,8 @@ in one coordinate system; square corners get markers automatically.
 `spinner`: sectors run clockwise from the top, and a colour word in the label
 sets the fill. All of these are drawn once and look the same on slides and
 paper.
+
+`placemat`: a writing placemat for the TV during independent writing: an optional banner, 1-4 coloured panels (heading, optional sub line and pictogram, 1-5 short reminder lines) and up to 3 strips of chips. On a `heroVisual` it takes the whole content area (no tint card). Slides only. Keep every line to what students were already taught or the task itself gives them.
 
 `video`: a YouTube clip embedded on the slide (it plays inside PowerPoint),
 with YouTube's own still as its cover and a text link under it that opens

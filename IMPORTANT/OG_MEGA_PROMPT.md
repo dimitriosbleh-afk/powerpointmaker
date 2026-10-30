@@ -1,4 +1,4 @@
-# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.8
+# Orton-Gillingham (OG) Deck Builder Mega-Prompt v1.9
 ## Grade 5/6 Enrichment | Diamond Creek East PS | Yoshimoto OG | Template-Locked | Term-Scale Input
 
 ---
@@ -144,8 +144,38 @@ point settled with him) keeps the v1.7 week and fixes what the room found:
     content (11).
 
 A v1.8 week says `"og_version": "1.8"` at the top of its spec. Legacy `new` / `review`
-weeks (v1.0-v1.6) and v1.7 weeks (Term 4 Week 3) still build unchanged; every new week
-uses v1.8.
+weeks (v1.0-v1.6) and v1.7 weeks (Term 4 Week 3) still build unchanged.
+
+The v1.9 refinement (James, 30 Oct 2026) takes the best of the 5/6 Challenge team's
+package - built from a 3/4 teacher's planner decks - and re-pitches each piece for this
+Grade 5/6 class (Sabrina spoke highly of their decks). It keeps the v1.8 week and adds:
+
+1. A PICTURE OF ITS MEANING ON EVERY WORDS TO SPELL REVIEW WORD, appearing on the same
+   click as the word (2d).
+2. TWO NEW WEDNESDAY THIRD ROUNDS, rotating weekly with Kate's "Write the word that
+   names...": `Complete the sentence` (a word bank whose size varies - extra, short,
+   exact - behind one fixed instruction line) and `Choose the best meaning` (three
+   choices, the best wrong one built from a real meaning of one of the word's parts)
+   (3f).
+3. ENABLER AND EXTENSION SHEETS: for each writing session (Monday, Tuesday, Thursday),
+   a one-page A4 enabler on dotted thirds in separated Victorian Modern letters, with
+   the week's teaching left as the gaps, and its mirror, an extension sheet with the same
+   sections pushed a step further (1b). Every printable for the week lands in one PRINT PACK
+   with a cover saying who each page is for (1c), so staff print once and organise
+   nothing.
+4. THE FRIDAY REVIEW WORKSHEET: Friday runs the card drill and Words to Read Review,
+   then a two-page books-closed worksheet on this week only, with a teacher check box
+   naming the exact skill on every question, an answers page, and a one-page Teacher
+   Follow-up sheet saying when a result goes into a student's program and how to
+   revisit it next week with no slide edits. The follow-up sheet replaces the
+   trickiest-this-week vote (1a).
+5. THE 3/4 TEAM'S CARD WORDING IS ADVISORY, NOT ADOPTED. Where it differs from our
+   photographed cards the builder raises a NOTE; our slides keep the wording this class
+   learned (4e).
+
+A v1.9 week says `"og_version": "1.9"`. v1.8 and older specs still build unchanged;
+every new week uses v1.9. Worked example: `og_planner/weeks/sample_v19_term4_week4.json`
+(the delivered Week 4 ject teaching plus every v1.9 piece and a Friday).
 
 The pipeline: user pastes a term's content -> you plan each week -> you author a week
 spec JSON -> `og_planner/build_og_week.py` clones the master template and fills it ->
@@ -197,7 +227,12 @@ Friday. Each day carries ONLY its own blocks - the builder emits nothing else.
 | Tuesday | `spell` | card drill - Words to Read Review - Sound Bank, dictated (2c) - Words to Spell Review (6-8) - Words to Spell New (4, off Monday's grid) - learned words (2 review + NEW word 1) - dictation x2 | 25-30 min |
 | Wednesday | `build` | card drill - Words to Read Review - word matrix - Break it apart round - Write the word that names... round (3f) | 20-25 min |
 | Thursday | `apply` | card drill - Words to Read Review - suffix parts-of-speech drill by frames (3g) - learned words (2 review + NEW word 2) - grammar I do / We do / You do (7) | 25-30 min |
-| Friday | `week_review` | card drill (10) - Words to Read Review (15) - Sound Bank, dictated - Words to Spell Review (6-10) - learned words review - dictation x2 - grammar (only if no Thursday ran) - trickiest-this-week vote | 25 min |
+| Friday | `week_review` | v1.9: card drill (10) - Words to Read Review (15) - `Complete this Friday Review` slide, and the deck STOPS; students do the worksheet (1a). v1.8: card drill - Words to Read Review - Sound Bank, dictated - Words to Spell Review (6-10) - learned words review - dictation x2 - grammar (only if no Thursday ran) - trickiest-this-week vote | 25 min |
+
+v1.9 adds the meaning pictures (2d), the Wednesday third-round rotation (3f), the
+enabler sheets (1b) and the Friday Review worksheet (1a). In a v1.9 week the Friday
+Review replaces the vote; a short week with no Friday keeps the vote on its last
+session (11).
 
 v1.8: every day opens with the card drill and the Words to Read Review, so retrieval
 runs every session. The table above is the v1.8 shape; a v1.7 spec (no `og_version`)
@@ -232,6 +267,157 @@ revisit"): see section 11.
 LEGACY (v1.0-v1.6): `new` / `review` days ran every component every day, two morphemes a
 week, files named `1a. Monday (ord-ordin).pptx`. Those specs still build unchanged and
 stay the historical record; do not author new weeks in that shape.
+
+## 1a. FRIDAY REVIEW WORKSHEET (v1.9)
+
+Ported from the 5/6 Challenge team, whose sheets copy the school's `Friday OG Review
+Term 3 - Challenge` worksheets. Their content was pitched for a 3/4 class (underline the
+appositive in "Ruby, my pet dog, sleeps on my bed"; write what NSW stands for). Ours
+keeps their layout and their teacher-facing ideas, and sets the content at Grade 5/6.
+
+THE SLIDE. The Friday deck runs the card drill and Words to Read Review, then one
+`Complete this Friday Review` slide, and STOPS. The builder writes the slide and its
+notes (run it books closed, about 20 minutes, read Part E whole, in chunks, then whole
+again). The notes name the files as plain text, because a relative link does not
+survive the Google Slides import.
+
+THE FILES, written by the builder into the week folder's `Friday Review/`:
+- `Friday Review - Term T Week N.pdf`: two student pages at most, then an answers page
+  headed `Teacher copy - do not print for students`. Teachers print only pages 1-2.
+- `Friday Review - Term T Week N Teacher Follow-up.pdf`: one landscape page, one row per
+  question: `Question` / `What it checks` (the same words as its check boxes) / `Add to a
+  student's program if...` (a countable trigger: `2 or more of the 6 jobs wrong`,
+  `mortgage misspelled`) / `Revisit it next week (no slide edits)` (one move that slots
+  into a section that will already be there - review cards, Words to Read Review, Words
+  to Spell Review, dictation - and needs only the teacher's voice or the class
+  whiteboard). Its rows are the feed for next week's `From our reviews` line (12).
+
+ONLY THIS WEEK. Every item tests something taught this week: Thursday's grammar focus,
+Thursday's suffix parts of speech, this week's learned words, this week's morpheme and
+words the class met this week. The taught-morpheme gate (2f) binds every item: a part
+the class has not been taught is printed with its meaning on the page (a `Word Bank:`
+of parts), so the only part a student supplies from memory is this week's.
+
+THE FIVE PARTS, in this order, each at Grade 5/6:
+- PART A: GRAMMAR - this week's grammar focus, 2 question blocks. Students PRODUCE, they
+  do not just spot: rewrite with the new punctuation, join two sentences, then write one
+  of their own. An underline-only task is a Year 3/4 task.
+- PART B: PARTS OF SPEECH BY FRAME - 6 words built on this week's suffix cards (3g).
+  `Tip:` gives the frames (`the ___` noun, `to ___` verb, `very ___` adjective) with one
+  worked word; a two-column `codes` grid takes the job. Never a word whose job depends on
+  context (`associate`).
+- PART C: LEARNED WORDS - this week's two new learned words in sentence gaps, spelled
+  from memory (no word bank: a bank turns spelling into copying).
+- PART D: MORPHOLOGY - two blocks on this week's morpheme, headed with its label and
+  meaning exactly (`ject = throw`; the builder checks the label). Block 1: a `Word / Word
+  sum / What the parts mean` table of three words with 3 or more parts, with the other
+  parts' meanings in a `Word Bank:`. Block 2, the 5/6 step up: two words NOT met this
+  week whose parts are all taught or printed (`ejector = e (out) + ject + or (a thing
+  that) =`) - students build the meaning from the parts. An optional Challenge (longest
+  ject word with its full sum) goes only if two pages still hold it; it is the first cut.
+- PART E: DICTATION - five or more full-width lines. Two sentences built from this
+  week's words (each carries a word on this week's morpheme; the builder checks) and
+  this week's grammar focus. Section 6 rules apply (sentence types, COPS, real words).
+
+TEACHER CHECK BOXES. Every question block has a `Teacher check:` panel with one box per
+skill, at most two, each naming the exact thing assessed: `ject = throw`, `-ity / -tude
+= noun`, `mortgage`, `semicolon replaces , so / , but` - never `Meaning`, `Grammar`,
+`Spelling` (the builder fails those). The follow-up sheet uses the same labels, and
+every follow-up label must match a box (Part E is marked with COPS, no box).
+
+SPACE. A4, 13 mm margins, body 11.5 pt, writing lines 10 mm apart, a one-word answer
+line at least 42 mm. TWO STUDENT PAGES, never three: a question never splits across a
+page, so a block that does not fit moves whole to the next page. If it runs over, cut
+an item or the Challenge - never the writing space. Render every page and check it.
+
+SPEC: `friday_review` on the Friday session - `part_a` ... `part_d` (each `{title,
+subblocks}`; a sub-block is `{heading, instruction, tip?, example?, word_bank?, task,
+checks, answers}`), optional `challenges`, `dictation_lines`, `dictation` (2 x
+`{sentence, chunks, targets, cops}`) and `follow_up` (rows of `{question, checks,
+flag_when, next_move}`). Task types: `sentences` (with `answer_lines`), `cloze` (`___`
+gaps), `meaning_lines`, `clue_answer`, `codes` (`codes`, `columns`), `match`
+(`meanings`), `table` (`headers`, `widths`, `rows` - an empty cell becomes a line),
+`syllables`, `build`, `lines`. See the sample week.
+
+## 1b. ENABLER SHEETS (v1.9)
+
+Students who need support write on an enabler sheet instead of a blank page. The
+Challenge team's teachers made these by hand in Word; the builder now writes them from
+the spec, so they always match the slides. You author nothing extra, but you render and
+check every sheet.
+
+WHICH SESSIONS. Monday (`teach`), Tuesday (`spell`), Thursday (`apply`, when it has
+learned words or dictation), and a Friday only when it has no Friday Review. Wednesday's
+build is whiteboards and OG books, and the Friday Review is its own written task.
+Files: `Enablers/1. Monday enabler.pdf` etc. (number = session order), named in the
+Weekly Overview notes of every deck that week.
+
+THE 5/6 RE-PITCH (from the 3/4 sheets):
+- VICTORIAN MODERN LETTERS, SEPARATED, NOT JOINED (James, 30 Oct 2026: "Vic modern
+  but not cursive, just regular separated"): `VicDots` (`VICDOTS_.TTF`, dotted) to
+  trace and `VicRegular` (`VICREGUL.TTF`, solid) for the morpheme. Never joined
+  cursive, never the Foundation-2 pre-cursive, and never `VICCursiveDotted` /
+  `VICCursiveSolid`, whose letter widths are only right inside Word (in a PDF the
+  letters pile on top of each other). Fonts are read from `C:\Windows\Fonts` and
+  never copied into this public repo.
+- DOTTED THIRDS at about 4.9 mm (a 14.8 mm row), down to 4.2 mm to fit one page, with a
+  NOTE below 4.4 mm. The 3/4 sheets used 6 mm.
+- THE TEACHING IS THE GAP. The 3/4 sheets printed whole words to trace. Ours leave the
+  week's morpheme blank inside each Words to Spell New word (`pro____or`), every
+  dictation target blank in both sentences, the unfair part of each learned word blank
+  in its second copy, and the Sound Bank as first letters only (it is dictated, 2c).
+- Words to Spell Review: word 1 in full, words 2-4 half shown, the rest first letter
+  only. (The 3/4 sheets printed the last word in full as the hardest; our list runs
+  most-recent-first, not easy-to-hard, so that step does not carry over.)
+
+SECTIONS. Monday: the morpheme card (`ject = throw`), the morpheme three times to trace,
+`My keyword and what it means`, `My sentence with a ject word`. Tuesday: New
+Morphology, Sound Bank, Words to Spell, Learned Words (Review), Learned Words (New),
+Dictation. Thursday: Learned Words, and Dictation when the short-week rule puts one
+there. Every heading sits in its own strip, so no descender runs through it. One page,
+always: the builder fails a sheet that cannot fit even at the smallest size.
+
+EXTENSION SHEETS (James, 30 Oct 2026: "make an extension page equivalent"). Every
+session that gets an enabler also gets `Extension/1. Monday extension.pdf`: the
+enabler's MIRROR for students ready for more - the same sections in the same order on
+the same dotted thirds - plus a second page of answers (teacher copy). Where the
+enabler prints the word to trace with a gap, the extension prints only what a student
+needs to start, and the whole word is theirs; then each section goes one step further
+(3e: the same concept, pushed):
+- New Morphology: Monday - three words on the morpheme and what each means, the
+  longest word they can build with its word sum, a sentence with TWO of the words.
+  Tuesday - the grid meaning only (`to throw in =`), the student writes the word.
+- Sound Bank: blank lines for each part as it is dictated, then a word for two parts.
+- Words to Spell: blank numbered lines, then the parts marked with `/`.
+- Learned Words: each written from memory, then the new word in a sentence (on
+  Thursday, in the week's grammar focus).
+- Dictation: blank rows for both sentences, then one more word on the morpheme added
+  to sentence 1 with a `^`.
+- Thursday adds the day's real work the enabler leaves to the slides: a new word for
+  each suffix card with the job a frame proves, and a sentence using two of them.
+Text the student reads is printed solid (VicRegular), never dotted: nothing on an
+extension sheet is for tracing. Extension students are the confident writers, so the
+sheet may run smaller than the enabler (down to 3.7 mm thirds, near their books). The
+builder writes it from the spec, so nobody authors it.
+
+THE DECKS NAME THE SHEETS. The title slide's notes say which enabler and extension
+sheet the day uses, so the teacher knows what to hand out without opening the pack.
+
+## 1c. THE WEEK'S PRINT PACK (v1.9)
+
+James (30 Oct 2026): better student outcomes, but "we don't want to create more work
+for our staff". So the builder puts every printable for the week into ONE file,
+`0. Print pack - Term T Week N.pdf` in the week folder, after the last session:
+- A cover page: a table of every sheet (day, sheet, who it is for, which pages), then
+  "Each day at a glance" - the day's deck and what goes on the desks (OG book; mini
+  whiteboard and marker only on days whose routine chips say whiteboards; a pencil and
+  the Friday Review on Friday).
+- Then the student pages in day order: each day's enabler and extension sheet, then
+  the Friday Review's two student pages.
+- Teacher copies at the back, shaded on the cover: extension answers, Friday Review
+  answers, the Teacher Follow-up sheet.
+The Weekly Overview notes of every deck name the pack. You author nothing for it; open
+the cover and check it lists every sheet the week made.
 
 ---
 
@@ -597,6 +783,27 @@ V1.7 retrieval weighting - most recent gets most attention. Allocate the 15 slot
 - The builder centres every word at the same position with reveal-on-click and a blank
   screen between words (one slide per word) - this fixes the alignment/reveal feedback
   from the team email; you only supply words, sentences and prompts.
+- V1.9 MEANING PICTURE (from the Challenge team's planner decks). Every word carries
+  `picture`, and the builder shows it under the word ON THE WORD'S OWN CLICK (Appear,
+  With Previous), so the picture never gives the word away before students write it.
+  `picture` is a pictogram name (`"plane"`) or a react-icons `pack/Component` name
+  (`"fa6/FaShip"`, `"tb/TbTelescope"`, `"md/MdSportsSoccer"`) - thousands of concrete
+  objects - optionally `{"icon": ..., "color": "RRGGBB"}`. Pick the thing the word's
+  SENTENCE puts in the student's head (exporter -> a cargo ship, supporter -> a footy
+  ball), never a picture of the morpheme. An unknown name fails the build.
+- THE PICTURE MUST BE CLEAR TO A STUDENT WITH NO EXPLANATION (James, 30 Oct 2026, on a
+  bowl standing in for omnivore: "makes NO sense"). Cover the word and ask: would an
+  11-year-old name this meaning from the picture alone? If one icon cannot carry it,
+  draw a short scene: a LIST of two or three icons side by side - omnivore = bear,
+  berries, fish (eats plants and meat); exporter = wheat, arrow, cargo ship (goods
+  going out); astronomer = telescope, moon. `{"icon", "color", "highlight": {"box":
+  [x0, y0, x1, y1], "color"}}` shades one part of an icon - territory = the Northern
+  Territory shaded on a pale map of Australia. Give each icon its natural colour
+  (wheat gold, fish blue) so the scene reads at a glance.
+- IF NOTHING CAN, SHOW NO PICTURE. `{"none": "reason"}` keeps the slide to the word
+  alone (excuse: a reason someone gives cannot be drawn without explaining it). A
+  confusing picture is worse than none. At most 2 per list - more means the list is
+  too abstract for pictures, so rethink the words. The builder NOTEs each one.
 
 ## 2e. Responsive pacing inside the locked sequence
 
@@ -1226,6 +1433,29 @@ scan, click, tick or fix; `ANSWER:` first in each item's notes; the worked item 
 the round's `ANSWERS:` block, EXTENSION and HELP. Whiteboards for round 3, OG books for
 the matrix and round 2.
 
+V1.9 THIRD-ROUND ROTATION (from the Challenge team's activity menu). Round 3 is ONE of
+three formats, rotated each week so no format runs two weeks in a row, and Kate's
+`Write the word that names...` comes back at least every second week (the builder
+NOTEs both against last week's spec):
+- WRITE THE WORD THAT NAMES... - as above (meaning in, word out).
+- COMPLETE THE SENTENCE (`bank` + `bank_mode` on the round). Each item is a sentence
+  with one `___` gap; the bank sits on every slide under the fixed instruction `A word
+  may be used twice. Some may not be needed.` - fixed so it never gives the bank size
+  away. `bank_mode` varies from one use to the next: `extra` (one or two words fit
+  nowhere), `short` (one word is used twice), `exact` (each word once). The worked
+  item's answer is a bank word and counts. Every gap has ONE clear answer: a spare word
+  must fit no sentence, and in `short` mode the repeated word must be the only word that
+  fits both of its sentences. At 5/6, the sentence carries the meaning (`The nurse will
+  ___ the vaccine into your arm.` - in, so inject), never a definition in disguise.
+- CHOOSE THE BEST MEANING (`choices` on every item, exactly 3, fingers 1-3). The hero is
+  a word (`projectile`), the choices are meanings, the answer is one choice word for
+  word. THE BEST WRONG ANSWER IS BUILT FROM A REAL MEANING OF ONE OF THE WORD'S PARTS
+  (`thrown back` for projectile - ject is right, the direction is wrong), so students
+  must combine every part, not spot one. The third choice is plausible and wrong on the
+  other part. Use it on words with 3 parts at 5/6, where combining is the skill.
+The builder checks the mechanics (round order, bank maths, the `___` gap, 3 choices,
+answer among them); you own the one-clear-answer and distractor bars.
+
 ## 3g. THURSDAY: SUFFIX PARTS OF SPEECH (v1.7 `apply` day, frames in v1.8)
 
 V1.8 FRAMES (James, 22 Oct 2026: Thursday was "BRUTAL" - the suffixes were old and
@@ -1422,6 +1652,20 @@ Before writing or building a week spec, verify mechanically:
 
 Any mismatch is a blocker, not an advisory note. Fix the source/spec before generating
 slides.
+
+---
+
+## 4e. THE 3/4 TEAM'S CARD WORDING (v1.9 - advisory only)
+
+`og_planner/school_cards.json` holds the card wording the 3/4 Challenge team was given
+(20 Oct 2026, 113 cards). It differs from our photographed cards in small ways: `port`
+is `transport / to carry` there and `export / bring, carry` here; `anti-` is
+`antifreeze` there and `antidote` here. Our 5/6 class learned the photographed wording,
+so the slides keep it (0a rule 4). The builder raises a NOTE, once per card per build,
+wherever a card on the deck differs, so the teacher can raise it with Kate before the
+two cohorts' card language has to line up (the 2027 plans). Never switch a card's
+wording on the strength of this file alone; switch only when Kate or the teacher says
+so, and then record it in the catalogue, not here.
 
 ---
 
@@ -2133,7 +2377,8 @@ the per-session PPTX in the week folder IS the deliverable (unlike themed lesson
 
 1. Read `og_planner/weeks/term4_week4.json` (v1.8) END TO END before writing anything.
    It is the gold exemplar: every notes format, every field, every recipe is
-   demonstrated there. Your specs must match its formats exactly - same plain source
+   demonstrated there. For the v1.9 fields - `picture`, the Wednesday third round,
+   `friday_review` - read `og_planner/weeks/sample_v19_term4_week4.json` too. Your specs must match its formats exactly - same plain source
    labels (the builder applies real bold),
    same beat numbering, same field names. Do not invent alternative formats.
 1b. Get the history from the records, not by opening old specs one by one:
@@ -2162,9 +2407,11 @@ the per-session PPTX in the week folder IS the deliverable (unlike themed lesson
    from them (2c), 4 new spelling words off Monday's grid + extension (3c, 3e), learned
    words 2 review + new 1 (5), 2 dictations with cops carrying this week's teaching
    plus one throwback (6). Wednesday - matrix, break-apart round with part boxes,
-   name-it round (3f). Thursday - frame intro + 4-5 suffix cards with sentences (3g),
-   learned words 2 review + new 2, grammar (7). Friday - sound bank, review spelling,
-   learned words review, 2 dictations, vote. Short weeks per section 11.
+   third round, rotated from last week (3f, v1.9). Thursday - frame intro + 4-5 suffix
+   cards with sentences (3g), learned words 2 review + new 2, grammar (7). Friday
+   (v1.9) - the `friday_review` worksheet and its follow-up rows, written LAST, from
+   what the week actually taught (1a). Every Tuesday spelling word gets a `picture`
+   (2d). Short weeks per section 11.
    Note the order: the spelling list comes FIRST and the sound bank is derived from it.
    Choosing bank morphemes before you know the words is how the wrong nine get banked.
    Check the bank and the review-10 against the WHOLE week timeline, not just today:
@@ -2177,6 +2424,9 @@ the per-session PPTX in the week folder IS the deliverable (unlike themed lesson
    `python og_planner/audit_week_spec.py og_planner/weeks/<spec>.json` and fix every ISSUE.
 6. `python og_planner/build_og_week.py og_planner/weeks/<spec>.json` - fix EVERY warn.
 7. Render each deck to images and INSPECT them (section 10). Fix, rebuild, re-render.
+   v1.9: also render every enabler sheet and every Friday Review page (student pages,
+   answers page, follow-up sheet) at print size and read them: letters joined and on
+   the lines, nothing past a margin, two student pages, one follow-up page.
    A contact sheet per deck (three slides across) makes 40 slides a deck quick to scan;
    re-render only the slides you changed after a fix.
 7b. Run the review panel on every session deck (`IMPORTANT/REVIEW_PANEL.md`): Steve,
@@ -2194,6 +2444,20 @@ the per-session PPTX in the week folder IS the deliverable (unlike themed lesson
 # 10b. KNOWN FAILURE MODES (each of these has been rejected by the school - check
 your spec against every line before building)
 
+- v1.9: a Words to Spell Review word with no `picture`, a picture of the morpheme
+  instead of the word's meaning, or a picture that needs explaining (a bowl for
+  omnivore). (2d)
+- v1.9: the same Wednesday third round two weeks running, a word bank whose size gives
+  the answers away, a spare bank word that fits a sentence, or a Choose the best
+  meaning item whose wrong answers share no part with the word. (3f)
+- v1.9: a Friday Review over two student pages, a check box naming a category
+  (`Meaning`), a question on last week's morpheme, an untaught part with no printed
+  meaning, or an underline-only grammar task at 5/6. (1a)
+- v1.9: an enabler sheet in joined cursive, pre-cursive or VICCursiveDotted, or one
+  that prints the week's morpheme in full where the gap should be; an extension sheet
+  that is not the enabler's mirror, or that prints anything dotted to trace. (1b)
+- v1.9: switching a card's keyword or meaning to the 3/4 team's wording because the
+  builder NOTEd it. (4e)
 - Review cards in the same order two days running, or any singable pattern. (2a)
 - Any type-coded card background or Sound Bank box that is not green for a root,
   yellow for a prefix, or red for a suffix. Never trust an older master colour. (0, 2c, 3a)

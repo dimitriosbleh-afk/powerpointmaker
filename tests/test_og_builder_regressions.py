@@ -4,6 +4,7 @@ Run from the repository root:
     python tests/test_og_builder_regressions.py
 """
 
+import copy
 import importlib.util
 import json
 import re
@@ -706,6 +707,241 @@ class OgBuilderRegressionTests(unittest.TestCase):
                 [sys.executable, str(ROOT / "og_planner" / "audit_week_spec.py"), str(spec)],
                 cwd=ROOT, capture_output=True, text=True, timeout=60, check=False)
             self.assertIn("parts", audit.stdout)
+
+
+class OgV19Tests(unittest.TestCase):
+    """v1.9 (30 Oct 2026): meaning pictures, the Wednesday third-round rotation,
+    enabler sheets and the Friday Review worksheet, ported from the 5/6 Challenge
+    team's package and re-pitched for Grade 5/6."""
+
+    V19_SPEC = ROOT / "og_planner" / "weeks" / "sample_v19_term4_week4.json"
+    V18_SPEC = ROOT / "og_planner" / "weeks" / "term4_week4.json"
+
+    def build(self, spec_path, outdir, week=None):
+        if week is not None:
+            spec_path = Path(outdir) / "spec" / spec_path.name
+            spec_path.parent.mkdir(parents=True, exist_ok=True)
+            spec_path.write_text(json.dumps(week))
+        return subprocess.run(
+            [sys.executable, str(BUILDER_PATH), str(spec_path), "--outdir", str(outdir)],
+            cwd=ROOT, capture_output=True, text=True, timeout=300, check=False)
+
+    @staticmethod
+    def slide_xml(deck, n):
+        with zipfile.ZipFile(deck) as archive:
+            return archive.read(f"ppt/slides/slide{n}.xml").decode("utf-8")
+
+    @staticmethod
+    def all_slides(deck):
+        with zipfile.ZipFile(deck) as archive:
+            names = sorted((n for n in archive.namelist()
+                            if re.fullmatch(r"ppt/slides/slide\d+\.xml", n)),
+                           key=lambda n: int(re.findall(r"\d+", n)[0]))
+            return [archive.read(n).decode("utf-8") for n in names]
+
+    def test_v19_sample_week_builds_clean_with_every_output(self):
+        import fitz
+        with tempfile.TemporaryDirectory(prefix="og_v19_") as temp:
+            result = self.build(self.V19_SPEC, temp)
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertNotIn("WARN:", result.stdout)
+            week_dir = Path(temp) / "OG_Term4_Week4_v19_sample"
+            decks = sorted(week_dir.glob("*.pptx"))
+            self.assertEqual(len(decks), 5)
+            # Enabler sheets: Monday, Tuesday, Thursday - one page each.
+            sheets = sorted(p.name for p in (week_dir / "Enablers").glob("*.pdf"))
+            self.assertEqual(sheets, ["1. Monday enabler.pdf", "2. Tuesday enabler.pdf",
+                                      "4. Thursday enabler.pdf"])
+            for name in sheets:
+                with fitz.open(week_dir / "Enablers" / name) as doc:
+                    self.assertEqual(doc.page_count, 1, name)
+                    fonts = {f[3] for f in doc[0].get_fonts()}
+                    # separated Victorian Modern letters, never joined cursive
+                    self.assertTrue(any("VicDots" in f for f in fonts), fonts)
+                    self.assertFalse(any("Cursive" in f for f in fonts), fonts)
+            # Extension sheets: the enabler's mirror - same days, same sections in
+            # the same order - plus an answers page.
+            ext = sorted(p.name for p in (week_dir / "Extension").glob("*.pdf"))
+            self.assertEqual(ext, ["1. Monday extension.pdf", "2. Tuesday extension.pdf",
+                                   "4. Thursday extension.pdf"])
+            for name in ext:
+                with fitz.open(week_dir / "Extension" / name) as doc:
+                    self.assertEqual(doc.page_count, 2, name)
+                    page1 = doc[0].get_text().replace("\xa0", " ").replace("\xad", "-")
+                    self.assertIn("OG Extension", page1)
+                    self.assertIn("Teacher copy", doc[1].get_text().replace("\xa0", " "))
+            with fitz.open(week_dir / "Extension" / "2. Tuesday extension.pdf") as doc:
+                page1 = doc[0].get_text().replace("\xa0", " ").replace("\xad", "-")
+            heads = ["New Morphology", "Sound Bank", "Words to Spell", "Learned Words",
+                     "Dictation"]
+            self.assertEqual(sorted(heads, key=page1.index), heads)   # enabler order
+            self.assertIn("to throw in", page1)    # the meaning, not the word
+            self.assertNotIn("inject", page1)      # the word is the student's job
+            with fitz.open(week_dir / "Extension" / "4. Thursday extension.pdf") as doc:
+                self.assertIn("Suffix jobs", doc[0].get_text().replace("\xa0", " "))
+            # One print pack: cover + 3 enablers + 3 extensions + 2 Friday pages
+            # + 3 extension answers + Friday answers + follow-up.
+            with fitz.open(week_dir / "0. Print pack - Term 4 Week 4.pdf") as doc:
+                self.assertEqual(doc.page_count, 14)
+                cover = doc[0].get_text().replace("\xa0", " ").replace("\xad", "-")
+                for line in ("Enabler sheet", "Extension sheet", "Friday Review (2 pages)",
+                             "Teacher Follow-up sheet", "mini whiteboard"):
+                    self.assertIn(line, cover)
+            # Friday Review: 2 student pages + answers; follow-up on one page.
+            fr = week_dir / "Friday Review"
+            with fitz.open(fr / "Friday Review - Term 4 Week 4.pdf") as doc:
+                # Arial's spaces and hyphens extract as U+00A0 / U+00AD
+                text = [p.get_text().replace("\xa0", " ").replace("\xad", "-") for p in doc]
+                answers_at = [i for i, t in enumerate(text)
+                              if "Teacher copy - do not print" in t]
+                self.assertEqual(answers_at[0], 2)
+                self.assertIn("Teacher check:", text[0])
+            with fitz.open(fr / "Friday Review - Term 4 Week 4 Teacher Follow-up.pdf") as doc:
+                self.assertEqual(doc.page_count, 1)
+            # Every deck names the print pack; writing days name their sheets.
+            for deck in decks:
+                with zipfile.ZipFile(deck) as archive:
+                    self.assertIn("0. Print pack - Term 4 Week 4.pdf",
+                                  archive.read("ppt/notesSlides/notesSlide2.xml").decode())
+            with zipfile.ZipFile(decks[1]) as archive:
+                title = archive.read("ppt/notesSlides/notesSlide1.xml").decode()
+                self.assertIn("Extension/2. Tuesday extension.pdf", title)
+            # Friday stops on the worksheet slide, with no vote.
+            friday = self.all_slides(decks[4])
+            self.assertIn("Complete this Friday Review", friday[-1])
+            self.assertNotIn("Trickiest this week?", "".join(friday))
+            # Tuesday: every spelling word's picture rides the word's own click.
+            spell = [x for x in self.all_slides(decks[1]) if 'spid="90070"' in x]
+            # excuse has no picture that explains itself, so it shows the word alone
+            self.assertEqual(len(spell), 6)
+            self.assertIn("'excuse' shows no picture", result.stdout)
+            for x in spell:
+                self.assertEqual(re.findall(r'nodeType="(click|with)Effect"', x),
+                                 ["click", "with"])
+            # Wednesday: the word bank and its fixed line on every round slide.
+            bank = [x for x in self.all_slides(decks[2]) if "Word bank:" in x]
+            self.assertEqual(len(bank), 5)
+            self.assertTrue(all(OG.BANK_RULE in x for x in bank))
+            # The 3/4 team's wording is advice, never a slide change.
+            self.assertIn("the 3/4 team teaches it as port (transport)", result.stdout)
+            self.assertNotIn(">transport<", "".join(self.all_slides(decks[0])))
+
+    def test_pictures_compose_highlight_and_cap_the_no_picture_words(self):
+        from io import BytesIO
+        scene = OG.meaning_picture_png(["gi/GiBearFace", "gi/GiRaspberry", "fa6/FaFish"])
+        single = OG.meaning_picture_png("fa6/FaFish")
+        with Image.open(BytesIO(scene)) as a, Image.open(BytesIO(single)) as b:
+            self.assertGreater(a.width / a.height, 2.5 * b.width / b.height)
+        nt = OG.meaning_picture_png({"icon": "gi/GiAustralia", "color": "D5D0DA",
+                                     "highlight": {"box": [0.36, 0, 0.585, 0.5],
+                                                   "color": "B5541C"}})
+        with Image.open(BytesIO(nt)).convert("RGBA") as im:
+            px = im.getpixel((int(im.width * 0.47), int(im.height * 0.3)))
+            self.assertGreater(px[0], px[2] + 60, px)   # the shaded region is orange
+        self.assertIsNone(OG.meaning_picture_png(["fa6/FaFish", "fa6/FaNoSuchIcon"]))
+        week = json.loads(self.V19_SPEC.read_text())
+        for e in week["sessions"][1]["words_to_spell_review"][:3]:
+            e["picture"] = {"none": "abstract"}
+        with tempfile.TemporaryDirectory(prefix="og_v19_none_") as temp:
+            out = self.build(self.V19_SPEC, temp, week).stdout
+        self.assertIn("spelling words have no picture - at most 2", out)
+
+    def test_v18_week_gets_no_v19_outputs(self):
+        with tempfile.TemporaryDirectory(prefix="og_v18_still_") as temp:
+            result = self.build(self.V18_SPEC, temp)
+            self.assertEqual(result.returncode, 0, result.stdout)
+            week_dir = Path(temp) / "OG_Term4_Week4"
+            self.assertFalse((week_dir / "Enablers").exists())
+            self.assertFalse((week_dir / "Extension").exists())
+            self.assertFalse(list(week_dir.glob("0. Print pack*")))
+            self.assertFalse((week_dir / "Friday Review").exists())
+            self.assertNotIn("3/4 team", result.stdout)
+
+    def test_v19_gates_fail_the_build(self):
+        week = json.loads(self.V19_SPEC.read_text())
+        tue, wed, fri = week["sessions"][1], week["sessions"][2], week["sessions"][4]
+        tue["words_to_spell_review"][0].pop("picture")
+        tue["words_to_spell_review"][1]["picture"] = "fa6/FaNoSuchIcon"
+        wed["build"]["rounds"][1]["bank_mode"] = "exact"
+        fr = fri["friday_review"]
+        fr["part_a"]["subblocks"][0]["checks"] = ["Grammar"]
+        fr["part_d"]["subblocks"][0]["heading"] = "port = carry"
+        fr["follow_up"][0]["checks"] = ["a label on no box"]
+        fr["part_a"]["subblocks"] += [copy.deepcopy(b) for b in fr["part_a"]["subblocks"]] * 2
+        with tempfile.TemporaryDirectory(prefix="og_v19_fail_") as temp:
+            out = self.build(self.V19_SPEC, temp, week).stdout
+            for needle in ("needs a meaning `picture`", "FaNoSuchIcon",
+                           "bank_mode exact", "names a broad category",
+                           "is not this week's morpheme", "matches no worksheet check box",
+                           "student pages - two at most"):
+                self.assertIn(needle, out)
+
+    def test_choose_meaning_round_mechanics(self):
+        week = json.loads(self.V19_SPEC.read_text())
+        wed = week["sessions"][2]
+        wed["build"]["rounds"][1] = {
+            "title": "Choose the best meaning", "rule": "Hold up 1, 2 or 3.",
+            "round": [
+                {"prompt": "projectile", "choices": ["thrown forward", "thrown back",
+                                                     "a forward plan"],
+                 "answer": "a thing thrown forward", "notes": "ANSWER: 1"},
+                {"prompt": "interject", "choices": ["throw words in between", "throw out"],
+                 "answer": "throw words in between", "notes": "ANSWER: 1"}]}
+        OG.WARNINGS.clear()
+        OG.validate_v19_rounds("Wednesday", week, wed)
+        joined = "\n".join(OG.WARNINGS)
+        self.assertIn("item 1: the answer must be one of its choices", joined)
+        self.assertIn("item 2 needs exactly 3 choices", joined)
+        self.assertEqual(OG.round_format(wed["build"]["rounds"][1]), "choose_meaning")
+
+    def test_combined_day_keeps_only_the_rotating_round(self):
+        """Section 11: a 3-session week's combined day sits Break it apart out."""
+        week = json.loads(self.V19_SPEC.read_text())
+        wed = week["sessions"][2]
+        wed["type"] = "combined"
+        wed["build"]["rounds"] = wed["build"]["rounds"][1:]
+        OG.WARNINGS.clear()
+        OG.validate_v19_rounds("Wednesday", week, wed)
+        self.assertEqual(OG.WARNINGS, [])
+        wed["build"]["rounds"][0]["bank"].append("eject")
+        OG.validate_v19_rounds("Wednesday", week, wed)
+        self.assertTrue(any("lists a word twice" in w for w in OG.WARNINGS), OG.WARNINGS)
+
+    def test_follow_up_needs_a_row_per_question_and_dictation_needs_a_sentence(self):
+        week = json.loads(self.V19_SPEC.read_text())
+        fr = week["sessions"][4]["friday_review"]
+        fr["follow_up"] = [r for r in fr["follow_up"]
+                           if r["question"] in ("Part A, Q1", "Part E")]
+        fr["dictation"][1].pop("sentence")
+        with tempfile.TemporaryDirectory(prefix="og_v19_fu_") as temp:
+            out = self.build(self.V19_SPEC, temp, week).stdout
+        self.assertIn("one row per question", out)
+        self.assertIn("dictation 2 has no sentence", out)
+        self.assertNotIn("Traceback", out)
+
+    def test_enabler_gaps_bracketed_forms_and_possessives(self):
+        import enabler_pdf as en
+        self.assertEqual(en.gap_part("inspiring", en.morph_forms("spir(e)")),
+                         [("t", "in"), ("b", "spir"), ("t", "ing")])
+        self.assertEqual(en.gap_part("excuse", en.morph_forms("caus-/cus(e)")),
+                         [("t", "ex"), ("b", "cuse")])
+        self.assertEqual(en.dictation_items("The ecosystem's balance broke.",
+                                            ["ecosystem"])[1],
+                         [("b", "ecosystem"), ("t", "'s")])
+
+    def test_enabler_leaves_the_teaching_as_the_gap(self):
+        import enabler_pdf as en
+        self.assertEqual(en.gap_part("projector", ["ject"]),
+                         [("t", "pro"), ("b", "ject"), ("t", "or")])
+        self.assertEqual(en.unfair_gap("mortgage", "t"),
+                         [("t", "mor"), ("b", "t"), ("t", "gage")])
+        self.assertEqual(en.bank_item("-ity"), [("dash", None), ("t", "i"), ("b", "ty")])
+        items = en.dictation_items("Our projector broke; the shop kept the guarantee.",
+                                   ["projector", "guarantee"])
+        self.assertEqual(items[1], [("b", "projector")])
+        self.assertEqual(items[-1], [("b", "guarantee"), ("t", ".")])
+        self.assertEqual([len(i) for i in en.spell_items(["aa", "bbbb", "cc", "dd", "ee"])],
+                         [1, 2, 2, 2, 2])
 
 
 if __name__ == "__main__":

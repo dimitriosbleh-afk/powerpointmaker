@@ -1,0 +1,818 @@
+{
+  "lesson": {
+    "subject": "literacy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 5,
+    "session": 1,
+    "variant": 1,
+    "minutes": 60,
+    "assessment": {
+      "writingMinutes": 40,
+      "reason": "Term 4 persuasive writing CAT, day 1 of 2: students plan in their writer's notebooks (not collected) and write independently on lined pages printed from Elastik, and no enabling support is given while it runs (staff rubric build notes)."
+    },
+    "title": "CAT Day 1: Choose, Plan, Write",
+    "subtitle": "Term 4 Week 5, Session 1",
+    "meta": "Year 5/6 Literacy | Persuasive Writing CAT",
+    "footer": "Persuasive Writing CAT | Year 5/6 Literacy | Week 5 Session 1",
+    "outputFolder": "T4W5_CAT_S1_Choose_Plan_Write",
+    "fileName": "Session 1 - CAT Day 1 Choose Plan Write.pptx",
+    "titleVisual": {
+      "type": "pictograms",
+      "items": [
+        {
+          "name": "flag",
+          "label": "Claim it"
+        },
+        {
+          "name": "magnifier",
+          "label": "Prove it"
+        },
+        {
+          "name": "megaphone",
+          "label": "Sell it"
+        }
+      ]
+    },
+    "plan": {
+      "curriculum": "English 2.0, Literacy, Years 5 and 6: creating a persuasive text independently for a named audience, assessed by the Term 4 writing CAT",
+      "shape": "assessment day: a short review, the CAT explained, one check of what a ready plan looks like, then 40 minutes of protected independent writing",
+      "criticalFeature": "a contention that answers the persuasive question, held up by three different reasons",
+      "decisionPoints": [
+        "the question check: is the chosen question copied at the top of Elastik page 1?",
+        "the plan check: which plan is ready to write?",
+        "the 10-minute thumbs check on the plan slide: is the plan finished? (self-report only)"
+      ],
+      "anchor": "Claim it. Prove it. Sell it. Introduction claims, body paragraphs prove, conclusion sells.",
+      "catchUp": "Away for Week 4? Give them the placemat to look at and start them on the plan slide with everyone else; the plan and the placemat walk them through every part."
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Elastik lined pages, 3 per student, printed from Elastik before the session (names print automatically)",
+      "Writer's notebooks, and a Plan Template on every desk (using it is optional)",
+      "Pencils and erasers",
+      "Class copies of The Last Bear, for ideas only",
+      "Mini-whiteboards and markers (the audience check)"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Fingers at your chest",
+      "Point to A, B or C",
+      "Turn and tell",
+      "Voices off for writing time"
+    ],
+    "boardSetup": [
+      "The plan slide, then the writing placemat, on the TV for the whole writing time",
+      "Write the finish time on the board: plan done by 10 minutes in",
+      "Staff rubric to hand for marking on Elastik after Session 2"
+    ]
+  },
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Open the session: today and tomorrow every student writes their persuasive CAT, on their own."
+    },
+    {
+      "kind": "resources",
+      "notes": "Put a Plan Template on every desk. Print the Elastik pages: open the task in Elastik, More, Print, Print template. Number of pages: 3. Template: A4 Straight Lines (8mm). Have writer's notebooks, pencils and The Last Bear out."
+    },
+    {
+      "kind": "overview",
+      "title": "For the teacher: the CAT week",
+      "lines": [
+        "Wednesday and Thursday: students write the persuasive CAT on their own, on lined pages printed from Elastik. There is no CAT booklet.",
+        "To print: open the task in Elastik, then More, Print, Print template. Number of pages: 3. Template: A4 Straight Lines (8mm). Names print automatically.",
+        "You mark ONLY the Elastik pages handed in at the end of Thursday. Plans are not collected or marked, and neither is Friday's published copy.",
+        "No enabling support while the CAT runs: no content conferencing, no supported sheets. Only learning plan adjustments apply; only absent students get catch-up.",
+        "Teaching is about 17 minutes on Wednesday, less on Thursday. Protect the 40 minutes of writing: voices off, plan then placemat on the TV, timings in their notes.",
+        "Week 4 taught two reasons plus an answer back. The CAT asks for three body paragraphs; students are told the other side goes inside one of them."
+      ],
+      "notes": "Read before the week. Plans go in writer's notebooks or on the Plan Template. Upload Thursday afternoon. Hand back each student's pages once theirs show as uploaded; an absentee's stay with you until their catch-up is uploaded."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to show everything we know about persuasive writing in one piece we write on our own.",
+      "successCriteria": [
+        "I can choose a topic and plan my contention and three reasons.",
+        "I can write an introduction and body paragraphs that claim it and prove it.",
+        "I can choose words and tricks that persuade my reader."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: For the next two days, you get to show us",
+            "everything you can do as a persuasive writer."
+          ],
+          [
+            "SAY: Let's read the I can lines together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "SAY: Choosing and planning is where everyone starts.",
+            "Then the writing itself is today's big goal."
+          ]
+        ],
+        "prep": "SC1 is the plan (writer's notebook or Plan Template), SC2 the writing on the Elastik pages, SC3 the persuasive language. Keep it brisk: 1 minute.",
+        "tag": "[LI and SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Claim it. Prove it. Sell it.",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          {
+            "name": "flag",
+            "label": "Claim it"
+          },
+          {
+            "name": "magnifier",
+            "label": "Prove it"
+          },
+          {
+            "name": "megaphone",
+            "label": "Sell it"
+          }
+        ]
+      },
+      "prompt": "Which part of your writing does each job?",
+      "notes": {
+        "answer": "introduction claims, body paragraphs prove, conclusion sells",
+        "beats": [
+          [
+            "SAY: These three pictures carried us through every piece last week.",
+            "Today they carry your CAT."
+          ],
+          [
+            "ASK: Which part of your writing claims it, which proves it, and which sells it?",
+            "15 sec. Cue: Partner A first. You have 15 seconds. Go.",
+            "Eyes back in 3, 2, 1.",
+            "EXPECT: introduction claims, body proves, conclusion sells"
+          ],
+          [
+            "SAY: That's it. Let's warm up with three quick sentences.",
+            "You'll tell me which job each one does."
+          ]
+        ],
+        "trap": [
+          "putting the call to action in the introduction.",
+          "Fix: ask what the last thing your reader should hear is. Student moves it."
+        ],
+        "prep": "Re-grounds the Week 4 structure for everyone, including anyone who was away. 2 minutes.",
+        "tag": "[Launch | Retention and recall | HITS 6]"
+      }
+    },
+    {
+      "kind": "practice",
+      "badge": "Review",
+      "title": "Claim it, prove it or sell it?",
+      "routine": "fingers",
+      "thinkTime": 6,
+      "pivot": "ask which job it does: claim, prove or sell",
+      "followUp": "cold call one student: which words told you?",
+      "items": [
+        {
+          "visual": {
+            "type": "text",
+            "text": "Most importantly, a bike shed keeps bikes dry, so more kids ride to school."
+          },
+          "label": "1 Claim it | 2 Prove it | 3 Sell it",
+          "answer": "2 - prove it (a body reason)",
+          "expect": "2 fingers",
+          "pivot": "ask which words show a reason: Most importantly",
+          "say": "Two, prove it. Most importantly tells us it's a reason. Tick it or fix it."
+        },
+        {
+          "visual": {
+            "type": "text",
+            "text": "So please sign our petition for a bike shed before the end of term."
+          },
+          "label": "1 Claim it | 2 Prove it | 3 Sell it",
+          "answer": "3 - sell it (call to action)",
+          "expect": "3 fingers",
+          "pivot": "ask does it tell the reader to do something?",
+          "say": "Three, sell it. It asks the reader to act. Tick it or fix it."
+        },
+        {
+          "visual": {
+            "type": "text",
+            "text": "Have you ever ridden to school and sat on a soaking wet seat?"
+          },
+          "label": "1 Claim it | 2 Prove it | 3 Sell it",
+          "answer": "1 - claim it (a hook in the introduction)",
+          "expect": "1 finger",
+          "pivot": "ask is it a question to grab me at the start?",
+          "say": "One, claim it. It's a hook to grab the reader. Tick it or fix it."
+        }
+      ],
+      "notes": {
+        "say": [
+          "Show me 1 for claim it, 2 for prove it, 3 for sell it.",
+          "These sentences are about a bike shed, not your CAT topics."
+        ],
+        "trap": [
+          "choosing by the topic words, not the job the sentence does.",
+          "Fix: ask what job it does for the reader. Student re-shows."
+        ],
+        "stretch": "Which words in the sentence told you its job?",
+        "help": "Point to the placemat panels while they decide.",
+        "prep": "Brisk retrieval of the three jobs before the task. Off-topic on purpose so nothing can be copied into the CAT. 2 minutes.",
+        "tag": "[Review | Retention and recall | SC2 | HITS 6, 7]"
+      },
+      "ask": "Which job does this sentence do?"
+    },
+    {
+      "kind": "keyWord",
+      "word": "contention",
+      "meaning": "Your position: what you want your reader to agree with.",
+      "example": "I believe every school should have a bike shed.",
+      "pictogram": "flag",
+      "notes": {
+        "answer": "your position: what you want the reader to agree with",
+        "beats": [
+          [
+            "POINT to the word. SAY: The CAT uses this word. Say it with me.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "SAY: Contention is just another word for your position.",
+            "It's the one sentence that tells your reader which side you're on."
+          ],
+          [
+            "ASK: Does the example answer a yes or no question with a side?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up"
+          ]
+        ],
+        "trap": [
+          "writing the topic, like Climate change, instead of a side.",
+          "Fix: ask what do you believe should happen? Student rewrites it as I believe..."
+        ],
+        "prep": "The CAT plan says position / contention. One word card so nobody stalls on it. 1 minute.",
+        "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "The CAT",
+      "title": "Your mission: persuade!",
+      "visual": {
+        "type": "table",
+        "header": false,
+        "boldFirstCol": true,
+        "fontSize": 18,
+        "colWidths": [
+          2.0,
+          6.4
+        ],
+        "rows": [
+          [
+            "What",
+            "One persuasive text about an environmental or animal issue"
+          ],
+          [
+            "Who reads it",
+            "Students in Grades 5 and 6 at other local primary schools"
+          ],
+          [
+            "How",
+            "On your own, on lined Elastik pages"
+          ],
+          [
+            "When",
+            "Today and tomorrow, then you publish on Friday"
+          ],
+          [
+            "Call to action",
+            "Something a Grade 5 or 6 student can do"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "Grade 5 and 6 students at other schools; banning plastic bags: thumbs down",
+        "beats": [
+          [
+            "POINT to What. SAY: This is the real thing, written on your own."
+          ],
+          [
+            "POINT to Who reads it.",
+            "SAY: Not me or the principal: kids your age at other schools."
+          ],
+          [
+            "ASK: Who are you writing to convince?",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: Grade 5 and 6 students"
+          ],
+          [
+            "POINT to Call to action.",
+            "SAY: Make it something a Grade 5 or 6 student can do."
+          ],
+          [
+            "ASK: Can a Grade 5 or 6 student do this? Ban plastic bags in Australia.",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs down"
+          ]
+        ],
+        "trap": [
+          "a call to action aimed at governments or adults (watch topics 1 and 3).",
+          "Fix: ask what a Grade 5 or 6 student could do. e.g. Join a green team."
+        ],
+        "prep": "The CAT task, read aloud. Audience is a rubric row; a call to action aimed only at adults sits below 5.0 (staff rubric calibration). 3 minutes.",
+        "tag": "[CAT | Planning made visible | SC2 | HITS 1, 3]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "The CAT",
+      "title": "Step 1: four topics to choose from",
+      "visual": {
+        "type": "placemat",
+        "banner": "The CAT's own ideas: you don't need them all",
+        "panels": [
+          {
+            "heading": "1 Climate",
+            "icon": "thermometer",
+            "lines": [
+              "Changing habitats",
+              "Reducing pollution",
+              "Wildlife for the future",
+              "Last Bear: Bear's changing Arctic"
+            ]
+          },
+          {
+            "heading": "2 Habitats",
+            "icon": "tree",
+            "lines": [
+              "Safe places to live",
+              "The risk of extinction",
+              "Sharing the planet",
+              "Last Bear: Bear's isolation"
+            ]
+          },
+          {
+            "heading": "3 Endangered",
+            "icon": "paw",
+            "lines": [
+              "Healthy ecosystems",
+              "Conservation programs",
+              "Future generations",
+              "Last Bear: April and Bear"
+            ]
+          },
+          {
+            "heading": "4 School",
+            "icon": "recycle",
+            "lines": [
+              "Reducing waste",
+              "Saving water and energy",
+              "Small actions count",
+              "Last Bear: one person can help"
+            ]
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - 1, 2, 3 or 4",
+        "beats": [
+          [
+            "SAY: Here are the four CAT topics, with the CAT's own ideas.",
+            "You don't need them all."
+          ],
+          [
+            "SAY: Look for the topic you can prove three ways.",
+            "You can use The Last Bear and what you know."
+          ],
+          [
+            "ASK: Which topic are you leaning towards right now?",
+            "15 sec. Cue: Fingers at your chest, voices off... show me.",
+            "EXPECT: 1, 2, 3 or 4"
+          ]
+        ],
+        "trap": [
+          "choosing a topic because a friend did.",
+          "Fix: ask can you name three reasons now? If not, they look again."
+        ],
+        "prep": "The CAT's own Ideas to get you started and Last Bear links, the same for every class. Fingers give a quick read of the topic spread. 2 minutes.",
+        "tag": "[CAT | Planning made visible | SC1 | HITS 1]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "The CAT",
+      "title": "Step 1: choose ONE question",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Topic",
+            "Persuasive question"
+          ],
+          [
+            "1 Climate change",
+            "Should governments and communities do more to protect animals from the effects of climate change?"
+          ],
+          [
+            "2 Animal habitats",
+            "Should protecting natural habitats be more important than clearing land for human development?"
+          ],
+          [
+            "3 Endangered animals",
+            "Should humans do more to protect endangered animals, even when conservation is expensive or difficult?"
+          ],
+          [
+            "4 School action",
+            "Should every school be required to have an environmental action plan?"
+          ]
+        ],
+        "colWidths": [
+          2.1,
+          6.3
+        ],
+        "fontSize": 15
+      },
+      "notes": {
+        "answer": "thumbs up: the question copied at the top of Elastik page 1",
+        "beats": [
+          [
+            "HAND OUT the Elastik pages.",
+            "SAY: Choose your question now."
+          ],
+          [
+            "SAY: Copy it at the top of Elastik page 1, word for word.",
+            "Keep this slide up while they copy."
+          ],
+          [
+            "ASK: Is your question copied at the top of page 1?",
+            "10 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up"
+          ],
+          [
+            "SCAN for thumbs down.",
+            "80%+ -> move on.",
+            "Less -> SAY: Copy the line that ends with a question mark. Re-ask."
+          ]
+        ],
+        "trap": [
+          "copying the topic name, not the question.",
+          "Fix: student copies the line that ends with a question mark."
+        ],
+        "prep": "Questions copied exactly from the CAT. The question on page 1 lets markers judge whether the contention answers it. 2 minutes.",
+        "tag": "[CAT | Planning made visible | SC1 | HITS 1]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "Which plan is ready to write?",
+      "prompt": "Question: Should every school have a bike shed?",
+      "options": [
+        {
+          "text": "Bikes are great because they are fun, fast and healthy.",
+          "misconception": "writes about the topic instead of answering the question with a side"
+        },
+        {
+          "text": "Every school needs a bike shed: it keeps bikes dry, stops theft and gets more kids riding."
+        },
+        {
+          "text": "Every school needs a bike shed because rain wets bikes, soaks seats and rusts chains.",
+          "misconception": "gives one reason three ways, not three different reasons"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - it takes a side and has three different reasons",
+        "beats": [
+          [
+            "SAY: Before you plan, let's check what a ready plan looks like.",
+            "Read all three in your head."
+          ],
+          [
+            "ASK: Which plan is ready to write?",
+            "15 sec. Cue: Voices off. Point... now. Hold your point.",
+            "EXPECT: pointing to B"
+          ],
+          [
+            "SCAN the room, back row first.",
+            "80%+ -> cold call one B: Why not C? Then reveal.",
+            "Less -> cover the words, count C's reasons aloud: all rain. Re-ask."
+          ]
+        ],
+        "trap": [
+          "choosing C because it has three parts.",
+          "Fix: student names each reason in two words and spots that all three are rain."
+        ],
+        "prep": "The decision point before release. Three different reasons is what the CAT's three body paragraphs need.",
+        "tag": "[CFU | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Your turn: choose, plan, write",
+      "task": "Work on your own. Plan first, then write on your Elastik pages.",
+      "steps": [
+        "Plan your contention, hook and three reasons.",
+        "Write your introduction on your Elastik pages.",
+        "Write your body paragraphs, one reason each."
+      ],
+      "where": "Writer's notebook or Plan Template, then Elastik pages",
+      "visual": {
+        "type": "pictograms",
+        "items": [
+          "flag",
+          "magnifier",
+          "megaphone"
+        ],
+        "labels": false
+      },
+      "visualLabel": "Claim it. Prove it. Sell it.",
+      "extendedTask": "the persuasive CAT: plan, then write the introduction and body paragraphs on the Elastik pages",
+      "notes": {
+        "answer": "a plan, an introduction and at least one body paragraph",
+        "beats": [
+          [
+            "SAY: Let's read the steps together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "SAY: Last week you wrote two reasons and an answer back.",
+            "The CAT needs three different reasons, one in each body paragraph.",
+            "Your answer back now sits inside one of them, with a reason."
+          ],
+          [
+            "ASK: How many body paragraphs does your CAT need?",
+            "5 sec. Cue: Fingers at your chest, voices off... show me.",
+            "EXPECT: 3"
+          ],
+          [
+            "SAY: Plan in your notebook or on the template, your choice.",
+            "Voices off now, all your own work. SHOW the plan slide."
+          ]
+        ],
+        "trap": [
+          "planning two reasons and an answer back.",
+          "Fix: student adds a third different reason to their plan."
+        ],
+        "stretch": "Finished early? Reread your piece against every line of the placemat.",
+        "help": "Learning plan adjustments only. Point to the placemat panel they need.",
+        "prep": "Independent writing. Give no ideas, sentences or spelling during the CAT. SC1 and SC2.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "First 10 minutes",
+      "title": "Step 2: plan it",
+      "visual": {
+        "type": "table",
+        "header": false,
+        "boldFirstCol": true,
+        "fontSize": 16,
+        "colWidths": [
+          2.3,
+          6.1
+        ],
+        "rows": [
+          [
+            "My question",
+            "At the top of Elastik page 1. Your contention answers it."
+          ],
+          [
+            "I believe that...",
+            "My contention: what I want readers to agree with"
+          ],
+          [
+            "Hook",
+            "A question, a surprising fact, Imagine..., a mini-story or a bold statement"
+          ],
+          [
+            "Reasons 1, 2, 3",
+            "Each one: my reason, evidence or a fact, and why it matters to my reader"
+          ],
+          [
+            "Answer the other side",
+            "In one body paragraph: Some people might think... However, I believe... because..."
+          ],
+          [
+            "Call to action",
+            "Something a Grade 5 or 6 student can think, feel or do"
+          ]
+        ]
+      },
+      "notes": {
+        "answer": "thumbs up at 10 minutes: plan finished",
+        "beats": [
+          [
+            "SHOW this slide for the first 10 minutes. CIRCULATE, but give no ideas.",
+            "If asked, SAY: Check the plan on the board."
+          ],
+          [
+            "ASK: At 10 minutes: Is your plan finished?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up"
+          ],
+          [
+            "SCAN the thumbs only. Do not check or comment on plans.",
+            "80%+ -> SAY: Plan done? Start your introduction.",
+            "Less -> SAY to everyone: Three different reasons, then start writing. Re-ask at 15."
+          ],
+          [
+            "SWITCH to the placemat at 10 minutes, or at 15 if you re-asked."
+          ]
+        ],
+        "prep": "The CAT's own plan prompts, the same in every class. Plans go in writer's notebooks or the Plan Template and are not collected or marked.",
+        "tag": "[You Do | Independent application | SC1 | HITS 3]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "Writing time",
+      "title": "Writing placemat",
+      "visual": {
+        "type": "placemat",
+        "banner": "Your reader: Grade 5 and 6 students at other local primary schools",
+        "panels": [
+          {
+            "heading": "Claim it",
+            "sub": "Introduction",
+            "icon": "flag",
+            "lines": [
+              "Hook your reader",
+              "Give context",
+              "State your position",
+              "Preview your reasons"
+            ]
+          },
+          {
+            "heading": "Prove it",
+            "sub": "3 body paragraphs",
+            "icon": "magnifier",
+            "lines": [
+              "One reason per paragraph",
+              "Reason + evidence + explanation",
+              "This means... why it matters to your reader",
+              "In one body paragraph, answer the other side: Some people might think... However, I believe... because..."
+            ]
+          },
+          {
+            "heading": "Sell it",
+            "sub": "Conclusion",
+            "icon": "megaphone",
+            "lines": [
+              "Answer the question again",
+              "Restate your position",
+              "Sum up your strongest reasons",
+              "Finish with a call to action a Grade 5 or 6 student can do, or a memorable final line"
+            ]
+          }
+        ],
+        "strips": [
+          {
+            "label": "Sneaky tricks",
+            "items": [
+              "Rhetorical question",
+              "Emotive language",
+              "Rule of three",
+              "Repetition",
+              "Strong modality"
+            ]
+          },
+          {
+            "label": "Linking words",
+            "items": [
+              "Firstly,",
+              "In addition,",
+              "Most importantly,",
+              "For example,",
+              "As a result,",
+              "However,"
+            ]
+          }
+        ]
+      },
+      "notes": {
+        "beats": [
+          [
+            "SHOW this slide from the plan check to the end.",
+            "CIRCULATE, but give no ideas or sentences.",
+            "If asked, SAY: Check your plan and the placemat."
+          ],
+          [
+            "TIME at 25: SAY: You should be on body paragraph 1 or 2.",
+            "TIME at 35: SAY: Five minutes. Finish the sentence you're on."
+          ]
+        ],
+        "prep": "Reminders only, from the CAT task and the Week 4 linking words table, so no class gets an unfair start. Every class shows the same placemat.",
+        "tag": "[You Do | Independent application | SC2 | HITS 3]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Read your introduction quietly. Underline your contention. Does it answer your question?",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - an underlined contention that takes a side on the question",
+        "beats": [
+          [
+            "SAY: Pencils down. Let's read our I can lines together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "ASK: Underline your contention. Does it answer your question?",
+            "30 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up"
+          ],
+          [
+            "RECORD each thumb down. Tomorrow, they reread their plan first.",
+            "Collect every student's Elastik pages and keep them safe overnight."
+          ]
+        ],
+        "prep": "Self-check only: no feedback on content during the CAT. SC1 and SC2.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ],
+  "resources": [
+    {
+      "kind": "page",
+      "label": "Plan Template",
+      "description": "One on every desk; using it is optional. Students plan here or in their writer's notebook. Plans are not collected or marked.",
+      "title": "CAT Plan Template",
+      "subtitle": "Optional. Plan here or in your writer's notebook. Not collected or marked.",
+      "blocks": [
+        {
+          "heading": "Step 1: choose ONE question"
+        },
+        {
+          "organiser": {
+            "left": "Topic",
+            "right": "Persuasive question, and ideas to get you started",
+            "rows": 4,
+            "rowH": 66,
+            "leftContent": [
+              "1 Climate change",
+              "2 Animal habitats",
+              "3 Endangered animals",
+              "4 School action"
+            ],
+            "rightContent": [
+              "Should governments and communities do more to protect animals from the effects of climate change? Ideas: changing habitats, reducing pollution, protecting wildlife for the future. The Last Bear: Bear's changing Arctic.",
+              "Should protecting natural habitats be more important than clearing land for human development? Ideas: safe places for animals to live, the risk of extinction, sharing the planet with wildlife. The Last Bear: Bear's isolation.",
+              "Should humans do more to protect endangered animals, even when conservation is expensive or difficult? Ideas: healthy ecosystems, conservation programs, protecting wildlife for future generations. The Last Bear: April and Bear.",
+              "Should every school be required to have an environmental action plan? Ideas: reducing waste, saving water and energy, how small actions make a difference. The Last Bear: one person can make a difference."
+            ]
+          }
+        },
+        {
+          "heading": "Step 2: plan it"
+        },
+        {
+          "text": "My question (copy it word for word):"
+        },
+        {
+          "lines": 1
+        },
+        {
+          "text": "My contention: I believe that..."
+        },
+        {
+          "lines": 3
+        },
+        {
+          "text": "My hook: a question, a surprising fact, Imagine..., a mini-story or a bold statement."
+        },
+        {
+          "lines": 1
+        },
+        {
+          "organiser": {
+            "left": "Reason",
+            "right": "Evidence or a fact, and why it matters to my reader",
+            "rows": 3,
+            "rowH": 110,
+            "leftContent": [
+              "1.",
+              "2.",
+              "3."
+            ]
+          }
+        },
+        {
+          "text": "Answer the other side (inside one body paragraph): Some people might think... However, I believe... because..."
+        },
+        {
+          "lines": 3
+        },
+        {
+          "text": "My call to action: something a Grade 5 or 6 student can think, feel or do."
+        },
+        {
+          "lines": 1
+        }
+      ]
+    }
+  ]
+}

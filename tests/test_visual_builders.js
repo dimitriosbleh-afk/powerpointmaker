@@ -102,6 +102,7 @@ const SPEC_SAMPLES = {
   pictograms: { type: "pictograms", items: ["happy", "sad", "angry"] },
   text: { type: "text", text: "9" },
   table: { type: "table", rows: [["Animal", "Legs"], ["Dog", "4"], ["Bird", "2"]] },
+  placemat: { type: "placemat", banner: "Your reader: Grade 5 and 6 students", panels: [{ heading: "Claim it", sub: "Introduction", icon: "flag", lines: ["Hook your reader", "State your position"] }, { heading: "Sell it", icon: "megaphone", lines: ["Call to action"] }], strips: [{ label: "Linking words", items: ["Firstly,", "However,"] }] },
   // Fetches YouTube's still once into assets/videos/ (needs the network the first time).
   video: { type: "video", youtube: "IDpfl2aGruE" },
   angle: { type: "angle", rays: [0, 130, 180], arcs: [{ from: 0, to: 130, label: "130°" }, { from: 130, to: 180, label: "x" }], protractor: true },

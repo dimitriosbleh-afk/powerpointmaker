@@ -58,7 +58,7 @@ function videoStill(id) {
 const SUPPORTED_TYPES = [
   "tensFrame", "fiveFrame", "doubleTensFrame", "dotCard", "dotCards", "numberTrack",
   "numberLine", "fractionStrips", "array", "baseTen", "groupedCounters", "ppwMat",
-  "chips", "pictogram", "pictograms", "text", "image", "video", "table", "custom",
+  "chips", "pictogram", "pictograms", "text", "image", "video", "table", "placemat", "custom",
   ...DIAGRAM_TYPES,
 ];
 
@@ -433,6 +433,92 @@ function createVisualSpec(C, FONT_H, FONT_B, el, S, deps) {
         const box = centreBox(f, w, rowH * rows.length);
         addDataTable(slide, box.x, box.y, w, rows, { ...s, rowH, fontSize });
         return box;
+      }
+      case "placemat": {
+        // A writing placemat for the TV: an optional banner, a row of coloured
+        // panels (heading, picture, short reminder lines) and strips of chips.
+        const panels = (Array.isArray(s.panels) ? s.panels : []).filter((p) => p && typeof p === "object");
+        const strips = (Array.isArray(s.strips) ? s.strips : []).filter((st) => st && Array.isArray(st.items) && st.items.length);
+        const colours = [C.PRIMARY, C.SECONDARY, C.ACCENT, C.SUCCESS, C.ALERT];
+        const softs = [C.PRIMARY_SOFT, C.SECONDARY_SOFT, C.ACCENT_SOFT, C.SUCCESS_SOFT, C.ALERT_SOFT];
+        const gap = 0.12;
+        const bannerH = s.banner ? 0.36 : 0;
+        const stripH = 0.42;
+        const stripsH = strips.length ? strips.length * stripH + (strips.length - 1) * 0.08 + gap : 0;
+        const panelsH = f.h - bannerH - (bannerH ? gap : 0) - stripsH;
+        let y = f.y;
+        if (s.banner) {
+          slide.addShape("roundRect", { x: f.x, y, w: f.w, h: bannerH, rectRadius: 0.06, fill: { color: C.CHARCOAL }, line: { color: C.CHARCOAL, width: 0.5 } });
+          slide.addText(String(s.banner), {
+            x: f.x + 0.12, y, w: f.w - 0.24, h: bannerH, fontSize: 14, fontFace: FONT_B, bold: true,
+            color: C.WHITE, align: "center", valign: "middle", margin: 0, fit: "shrink", shrinkText: true,
+          });
+          y += bannerH + gap;
+        }
+        if (panels.length) {
+          const pw = (f.w - gap * (panels.length - 1)) / panels.length;
+          const headH = panels.some((p) => p.sub) ? 0.66 : 0.5;
+          const bodyH = panelsH - headH - 0.16;
+          const textW = pw - 0.24;
+          // One size for every panel: the largest at which the longest panel fits.
+          const linesAt = (pt) => Math.max(...panels.map((p) => (Array.isArray(p.lines) ? p.lines : []).reduce((t, ln) => {
+            const perLine = Math.max(8, Math.floor((textW * 72) / (pt * 0.5)));
+            return t + Math.max(1, Math.ceil(String(ln).length / perLine));
+          }, 0)));
+          let fontSize = s.fontSize || 18;
+          while (fontSize > 11 && linesAt(fontSize) * fontSize * 1.32 / 72 + 0.1 > bodyH) fontSize -= 1;
+          panels.forEach((p, i) => {
+            const x = f.x + i * (pw + gap);
+            const colour = colours[i % colours.length];
+            slide.addShape("roundRect", { x, y, w: pw, h: panelsH, rectRadius: 0.08, fill: { color: softs[i % softs.length] || C.BG_LIGHT }, line: { color: colour, width: 1.5 } });
+            slide.addShape("roundRect", { x, y, w: pw, h: headH, rectRadius: 0.08, fill: { color: colour }, line: { color: colour, width: 1.5 } });
+            const iconSize = Math.min(0.5, headH - 0.12);
+            if (p.icon) picto.addPictogram(slide, p.icon, x + 0.1, y + (headH - iconSize) / 2, iconSize, { style: "circle", color: C.WHITE, glyphColor: colour });
+            const textX = x + (p.icon ? iconSize + 0.16 : 0.12);
+            const runs = [{ text: String(p.heading || ""), options: { bold: true, fontSize: 19, breakLine: !!p.sub } }];
+            if (p.sub) runs.push({ text: String(p.sub), options: { fontSize: 13 } });
+            slide.addText(runs, {
+              x: textX, y, w: x + pw - 0.08 - textX, h: headH, fontFace: FONT_B, color: C.WHITE,
+              align: "left", valign: "middle", margin: 0, fit: "shrink", shrinkText: true,
+            });
+            const lines = (Array.isArray(p.lines) ? p.lines : []).map(String);
+            if (lines.length) {
+              slide.addText(lines.map((ln, j) => ({ text: ln, options: { breakLine: j < lines.length - 1, paraSpaceAfter: 4 } })), {
+                x: x + 0.12, y: y + headH + 0.08, w: textW, h: bodyH, fontSize, fontFace: FONT_B, color: C.CHARCOAL,
+                align: "left", valign: "top", margin: 0, fit: "shrink", shrinkText: true,
+              });
+            }
+          });
+          y += panelsH + gap;
+        }
+        strips.forEach((st, k) => {
+          const sy = y + k * (stripH + 0.08);
+          const labelW = 1.7;
+          slide.addShape("roundRect", { x: f.x, y: sy, w: labelW, h: stripH, rectRadius: 0.06, fill: { color: C.CHARCOAL }, line: { color: C.CHARCOAL, width: 0.5 } });
+          slide.addText(String(st.label || ""), {
+            x: f.x + 0.06, y: sy, w: labelW - 0.12, h: stripH, fontSize: 13, fontFace: FONT_B, bold: true,
+            color: C.WHITE, align: "center", valign: "middle", margin: 0, fit: "shrink", shrinkText: true,
+          });
+          const items = st.items.map(String);
+          const avail = f.w - labelW - 0.1 - 0.08 * (items.length - 1);
+          // One line per chip: the largest size at which every label fits with its padding.
+          const chars = items.reduce((t, x) => t + x.length, 0);
+          const chipFont = Math.max(10, Math.min(15, Math.floor(((avail - 0.24 * items.length) * 72) / (chars * 0.5))));
+          const weights = items.map((t) => (t.length * chipFont * 0.5) / 72 + 0.24);
+          const total = weights.reduce((a, b) => a + b, 0);
+          let cx = f.x + labelW + 0.1;
+          items.forEach((t, j) => {
+            const cw = avail * weights[j] / total;
+            const fs = chipFont;
+            slide.addShape("roundRect", { x: cx, y: sy, w: cw, h: stripH, rectRadius: 0.06, fill: { color: C.WHITE }, line: { color: C.CHARCOAL, width: 1 } });
+            slide.addText(t, {
+              x: cx + 0.04, y: sy, w: cw - 0.08, h: stripH, fontSize: fs, fontFace: FONT_B, bold: true,
+              color: C.CHARCOAL, align: "center", valign: "middle", margin: 0, fit: "shrink", shrinkText: true,
+            });
+            cx += cw + 0.08;
+          });
+        });
+        return { x: f.x, y: f.y, w: f.w, h: f.h };
       }
       case "custom": {
         if (typeof s.draw === "function") {

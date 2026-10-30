@@ -29,6 +29,27 @@ from xml.sax.saxutils import escape
 from lxml import etree
 from PIL import Image
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+
+class _LazyModule:
+    """Import a v1.9 PDF module (they need PyMuPDF) only when a v1.9 week
+    uses it, so v1.8 and older builds keep their old dependencies."""
+
+    def __init__(self, name):
+        self._name, self._mod = name, None
+
+    def __getattr__(self, attr):
+        if self._mod is None:
+            import importlib
+            self._mod = importlib.import_module(self._name)
+        return getattr(self._mod, attr)
+
+
+enabler_pdf = _LazyModule("enabler_pdf")              # v1.9 enabler sheets (1b)
+friday_review_pdf = _LazyModule("friday_review_pdf")  # v1.9 Friday Review (1a)
+print_pack = _LazyModule("print_pack")                # v1.9 week print pack (1c)
+
 NS = {
     "p": "http://schemas.openxmlformats.org/presentationml/2006/main",
     "a": "http://schemas.openxmlformats.org/drawingml/2006/main",
@@ -856,7 +877,19 @@ def week_is_v17(week):
 def week_is_v18(week):
     """True for a v1.8 week (`"og_version": "1.8"`): the daily card drill and
     Words to Read Review open every session (James Hooke, 23 Oct 2026)."""
-    return str((week or {}).get("og_version", "")) >= "1.8" and week_is_v17(week)
+    return og_version(week) >= (1, 8) and week_is_v17(week)
+
+
+def og_version(week):
+    """`"og_version": "1.9"` as (1, 9), so "1.10" sorts after "1.9"."""
+    parts = re.findall(r"\d+", str((week or {}).get("og_version", "")))
+    return tuple(int(p) for p in parts[:2]) if parts else (0, 0)
+
+
+def week_is_v19(week):
+    """True for a v1.9 week: meaning pictures, enabler sheets and the Friday
+    Review worksheet (ported from the 5/6 Challenge team's package, Oct 2026)."""
+    return og_version(week) >= (1, 9) and week_is_v17(week)
 
 
 def week_focus_labels(week):
@@ -1033,7 +1066,255 @@ def round_face_lines(activity, item):
     for choice in item.get("choices", []):
         for line in str(choice).splitlines():
             yield "items", line
+    if activity.get("bank"):
+        yield "items", bank_line(activity)
     yield "check_items", round_answer_text(item).replace("**", "")
+
+
+# v1.9 Wednesday third round (ported from the Challenge team's activity menu):
+# the instruction never gives the bank size away, so it is fixed.
+BANK_RULE = "A word may be used twice. Some may not be needed."
+BANK_MODES = ("extra", "short", "exact")
+
+
+def bank_line(activity):
+    return "Word bank:  " + "   ".join(str(w) for w in activity.get("bank", []))
+
+
+def round_format(rnd):
+    """Which Wednesday round this is: break_apart / complete_sentence /
+    choose_meaning / name_it (3f, v1.9)."""
+    items = [i for i in rnd.get("round", []) if not i.get("worked")]
+    if rnd.get("bank"):
+        return "complete_sentence"
+    if items and all(i.get("parts") for i in items):
+        return "break_apart"
+    if items and all(i.get("choices") for i in items):
+        return "choose_meaning"
+    return "name_it"
+
+
+_SCHOOL_CARDS = None
+_SCHOOL_CARDS_NOTED = set()
+
+
+def school_cards():
+    """label -> school card, from og_planner/school_cards.json (4e, v1.9)."""
+    global _SCHOOL_CARDS
+    if _SCHOOL_CARDS is None:
+        _SCHOOL_CARDS = {}
+        path = ROOT_DIR / "school_cards.json"
+        if path.exists():
+            for card in json.loads(path.read_text(encoding="utf-8")).get("cards", []):
+                for label in [card["morph"], *card.get("catalogue_cards", [])]:
+                    _SCHOOL_CARDS.setdefault(label.split("|")[0], card)
+    return _SCHOOL_CARDS
+
+
+def audit_school_cards(day, session):
+    """NOTE (never WARN) where the 3/4 team's taught wording differs from the
+    photographed card we teach from (4e, v1.9).  Our wording stays on the slides."""
+    shown = [(c["morph"], c.get("type")) for c in session.get("morphology_review", [])]
+    if session.get("new_morphology"):
+        nm = session["new_morphology"]
+        shown.append((nm["morph"], nm.get("type")))
+    shown += [(c["morph"], "suffix") for c in (session.get("pos_drill") or {}).get("cards", [])]
+    for morph, mtype in shown:
+        school = school_cards().get(morph)
+        if not school or morph in _SCHOOL_CARDS_NOTED:
+            continue
+        ours = resolved_photo_card(morph, mtype) or {}
+        if (ours.get("keyword"), ours.get("meaning")) == (school["keyword"], school["meaning"]):
+            continue
+        _SCHOOL_CARDS_NOTED.add(morph)
+        note(f"{day}: {morph} - the 3/4 team teaches it as {school['morph']} "
+             f"({school['keyword']}) = {school['meaning']}; our card says "
+             f"{ours.get('keyword')} = {ours.get('meaning')}. Slides keep our wording; "
+             "check with Kate before the classes merge (4e, v1.9)")
+
+
+BROAD_CHECK_LABELS = {"meaning", "grammar", "rule", "punctuation", "learned words",
+                      "morphology", "spelling", "parts of speech", "suffixes"}
+
+
+def check_friday(day, week, review, report):
+    """The Friday Review gate (1a, v1.9): two student pages, an answers page, a
+    teacher check box naming the exact skill on every question, a one-page
+    follow-up sheet whose labels match the boxes, and this week's content only."""
+    for p in report.get("problems", []):
+        warn(f"{day}: Friday Review - {p} (1a)")
+    if report["student_pages"] > 2:
+        warn(f"{day}: Friday Review has {report['student_pages']} student pages - two at "
+             "most; cut an item or the Challenge, never the writing space (1a)")
+    if report["answer_pages"] < 1:
+        warn(f"{day}: Friday Review has no answers page (1a)")
+    all_checks = set()
+    for block in report["blocks"]:
+        all_checks |= {str(c) for c in block["checks"]}
+        where = f"{block['part']} {block['heading']!r}"
+        if not block["checks"]:
+            warn(f"{day}: Friday Review {where} has no teacher check box (1a)")
+        if len(block["checks"]) > 2:
+            warn(f"{day}: Friday Review {where} has {len(block['checks'])} check boxes - "
+                 "at most 2; split it or cut a skill (1a)")
+        for label in block["checks"]:
+            if str(label).strip().casefold() in BROAD_CHECK_LABELS:
+                warn(f"{day}: Friday Review check box {label!r} names a broad category - "
+                     "name the exact morpheme, rule, grammar point or word (1a)")
+    for key in ("part_a", "part_b", "part_c", "part_d"):
+        part = review.get(key) or {}
+        if not part.get("subblocks"):
+            warn(f"{day}: Friday Review {key} has no questions (1a)")
+        for block in part.get("subblocks", []):
+            if not block.get("answers"):
+                warn(f"{day}: Friday Review {key} question {block.get('heading')!r} has "
+                     "no answers for the answers page (1a)")
+    focus = week_focus_labels(week)
+    for block in (review.get("part_d") or {}).get("subblocks", []):
+        head = str(block.get("heading", "")).split("=")[0].strip()
+        if head and head not in focus:
+            warn(f"{day}: Friday Review Part D heading {head!r} is not this week's "
+                 f"morpheme ({', '.join(focus)}) - Part D tests this week only (1a)")
+    forms = set()
+    for label in focus:
+        forms |= morph_surface_forms(label)
+    dictation = review.get("dictation") or []
+    if len(dictation) != 2:
+        warn(f"{day}: Friday Review Part E needs exactly 2 dictation sentences (1a)")
+    for n, dt in enumerate(dictation, 1):
+        if not str(dt.get("sentence", "")).strip():
+            warn(f"{day}: Friday Review dictation {n} has no sentence (1a)")
+        if not any(f in str(t).lower() for t in dt.get("targets", []) for f in forms):
+            warn(f"{day}: Friday Review dictation {n} has no target built on this week's "
+                 "morpheme (1a)")
+        missing = [t for t in dt.get("targets", []) if t not in dt.get("sentence", "")]
+        if missing:
+            warn(f"{day}: Friday Review dictation {n} targets {missing} are not in the "
+                 "sentence (1a)")
+    follow = review.get("follow_up") or []
+    if not follow:
+        warn(f"{day}: Friday Review needs follow_up rows for the Teacher Follow-up "
+             "sheet (1a)")
+    for row in follow:
+        for key in ("question", "checks", "flag_when", "next_move"):
+            if not row.get(key):
+                warn(f"{day}: follow_up row {row.get('question')!r} is missing {key} (1a)")
+        labels = row.get("checks", [])
+        for label in (labels if isinstance(labels, list) else [labels]):
+            if (str(label) not in all_checks
+                    and not str(row.get("question", "")).startswith("Part E")):
+                warn(f"{day}: follow_up label {label!r} matches no worksheet check "
+                     "box (1a)")
+    covered = {str(r.get("question", "")) for r in follow}
+    rows = [q_ for q_ in covered if not q_.startswith("Part E")]
+    if len(rows) < len(report["blocks"]):
+        warn(f"{day}: the follow-up sheet has {len(rows)} question rows for "
+             f"{len(report['blocks'])} worksheet questions - one row per question, "
+             "Challenge included (1a)")
+    if not any(q_.startswith("Part E") for q_ in covered):
+        warn(f"{day}: follow_up needs a Part E (dictation, COPS) row (1a)")
+    if report.get("follow_up_pages", 1) > 1:
+        warn(f"{day}: Teacher Follow-up sheet runs to {report['follow_up_pages']} pages "
+             "- one page (1a)")
+
+
+def week_third_round(build):
+    """The rotating round's format ('name_it' / 'complete_sentence' /
+    'choose_meaning'), or None."""
+    fmts = [round_format(r) for r in (build or {}).get("rounds", [])]
+    return next((f for f in fmts if f != "break_apart"), None)
+
+
+def earlier_week_specs(week, back=4):
+    """Up to `back` earlier weeks' specs from SPEC_DIR, most recent first."""
+    try:
+        term, num = int(week.get("term")), int(week.get("week"))
+    except (TypeError, ValueError):
+        return []
+    found = []
+    for k in range(1, back + 1):
+        path = SPEC_DIR / f"term{term}_week{num - k}.json"
+        if path.exists():
+            try:
+                found.append(json.loads(path.read_text(encoding="utf-8")))
+            except (OSError, ValueError):
+                pass
+    return found
+
+
+def validate_v19_rounds(day, week, session):
+    """v1.9 Wednesday: the third round rotates name_it / complete_sentence /
+    choose_meaning (3f).  Mechanical checks only; the distractor quality bar
+    lives in the prompt.  A 3-session week's `combined` day carries only the
+    rotating round (section 11), so the two-round shape is not required there."""
+    bd = session.get("build") or {}
+    rounds = bd.get("rounds", [])
+    formats = [round_format(r) for r in rounds]
+    if session.get("type") != "combined" and (
+            formats[:1] != ["break_apart"] or len(rounds) != 2):
+        warn(f"{day}: a v1.9 build day has two rounds - Break it apart, then ONE of "
+             "Write the word that names... / Complete the sentence / Choose the best "
+             "meaning (3f, v1.9)")
+    for rnd, fmt in zip(rounds, formats):
+        items = [i for i in rnd.get("round", []) if not i.get("worked")]
+        if fmt == "choose_meaning":
+            for n, it in enumerate(items, 1):
+                ch = [str(c) for c in it.get("choices", [])]
+                if len(ch) != 3:
+                    warn(f"{day}: Choose the best meaning item {n} needs exactly 3 "
+                         "choices (fingers 1, 2 or 3) (3f, v1.9)")
+                if str(it.get("answer", "")) not in ch:
+                    warn(f"{day}: Choose the best meaning item {n}: the answer must be "
+                         "one of its choices, word for word (3f, v1.9)")
+        if fmt == "complete_sentence":
+            bank = [str(w).lower() for w in rnd.get("bank", [])]
+            mode = rnd.get("bank_mode")
+            if len(bank) != len(set(bank)):
+                warn(f"{day}: the word bank lists a word twice - each bank word appears "
+                     "once (3f, v1.9)")
+            # the "One done for you" answer is a bank word too, so it counts as used
+            answers = [str(i.get("answer", "")).lower() for i in rnd.get("round", [])]
+            if mode not in BANK_MODES:
+                warn(f"{day}: Complete the sentence needs bank_mode extra, short or "
+                     "exact (3f, v1.9)")
+            if rnd.get("rule") and rnd["rule"] != BANK_RULE:
+                warn(f"{day}: Complete the sentence keeps the fixed instruction line "
+                     f"\"{BANK_RULE}\" so it never gives the bank size away (3f, v1.9)")
+            for a in answers:
+                if a not in bank:
+                    warn(f"{day}: Complete the sentence answer '{a}' is not in the word "
+                         "bank (3f, v1.9)")
+            for n, it in enumerate(items, 1):
+                if "___" not in str(it.get("prompt", "")):
+                    warn(f"{day}: Complete the sentence item {n} needs a ___ gap (3f, v1.9)")
+            repeats = len(answers) - len(set(answers))
+            spare = len(set(bank) - set(answers))
+            if mode == "exact" and (repeats or spare):
+                warn(f"{day}: bank_mode exact means every bank word is used once - "
+                     f"{repeats} repeated, {spare} unused (3f, v1.9)")
+            if mode == "short" and (repeats != 1 or spare):
+                warn(f"{day}: bank_mode short means exactly ONE word is used twice and "
+                     f"none left over - {repeats} repeated, {spare} unused (3f, v1.9)")
+            if mode == "extra" and (repeats or spare not in (1, 2)):
+                warn(f"{day}: bank_mode extra means one or two spare words and no "
+                     f"repeats - {repeats} repeated, {spare} unused (3f, v1.9)")
+    third = week_third_round(bd)
+    earlier = [w for w in earlier_week_specs(week) if week_is_v19(w)]
+    builds = [next((s_.get("build") for s_ in w.get("sessions", []) if s_.get("build")),
+                   None) or {} for w in earlier]
+    prev_third = week_third_round(builds[0]) if builds else None
+    if third and prev_third == third:
+        note(f"{day}: the third round is {third} again - rotate it each week (3f, v1.9)")
+    if third and third != "name_it" and prev_third and prev_third != "name_it":
+        note(f"{day}: Write the word that names... has missed two weeks running - "
+             "bring Kate's meaning-to-word recall back this week (3f, v1.9)")
+    # bank_mode varies from one USE to the next, however many weeks apart
+    mode = next((r.get("bank_mode") for r in rounds if r.get("bank")), None)
+    last_mode = next((r.get("bank_mode") for b_ in builds for r in b_.get("rounds", [])
+                      if r.get("bank")), None)
+    if mode and mode == last_mode:
+        note(f"{day}: bank_mode {mode} again - vary it from one use to the next "
+             "(3f, v1.9)")
 
 
 def _scan_activity_face(day, face_lines, focus, taught, catalogue, reported):
@@ -1764,6 +2045,98 @@ def pictogram_png(name, color=MORPH_MAGENTA, px=384):
     return _PICTOGRAM_CACHE[key]
 
 
+ICON_PACK_RE = re.compile(r"^(ai|bi|bs|ci|fa|fa6|fi|gi|go|gr|hi|hi2|im|io|io5|lu|md|pi|ri|"
+                          r"si|sl|tb|tfi|vsc|wi)/[A-Z][A-Za-z0-9]+$")
+MEANING_PICTURE_INK = "1F3A5F"
+
+
+def meaning_picture_png(picture, px=512):
+    """PNG bytes for a Words to Spell Review meaning picture (2d, v1.9).
+
+    `picture` is a pictogram name ("plane"), a react-icons "pack/Component" name
+    ("fa6/FaEarthOceania" - thousands of concrete objects the 217-icon pictogram
+    set lacks), {"icon": either, "color": "RRGGBB"}, or a LIST of two or three of
+    those drawn side by side, so a picture can show an idea one icon cannot (bear,
+    berries, fish = an omnivore).  None when any part is unknown.
+    """
+    if isinstance(picture, list):
+        parts = [meaning_picture_png(p_, px) for p_ in picture]
+        if not parts or any(p_ is None for p_ in parts):
+            return None
+        ims = [Image.open(BytesIO(b)).convert("RGBA") for b in parts]
+        ims = [im.resize((max(1, round(im.width * px / im.height)), px)) for im in ims]
+        gap = px // 5
+        sheet = Image.new("RGBA", (sum(im.width for im in ims) + gap * (len(ims) - 1), px),
+                          (0, 0, 0, 0))
+        x = 0
+        for im in ims:
+            sheet.paste(im, (x, 0), im)
+            x += im.width + gap
+        out = BytesIO()
+        sheet.save(out, format="PNG")
+        return out.getvalue()
+    if isinstance(picture, dict) and picture.get("highlight"):
+        # one region of the icon in a strong colour, the rest pale: a territory
+        # on the map of Australia.  box = [x0, y0, x1, y1] as fractions.
+        hl = picture["highlight"]
+        base = meaning_picture_png({"icon": picture.get("icon", ""),
+                                    "color": picture.get("color", "D5D0DA")}, px)
+        strong = meaning_picture_png({"icon": picture.get("icon", ""),
+                                      "color": hl.get("color", "B5541C")}, px)
+        if base is None or strong is None:
+            return None
+        im = Image.open(BytesIO(base)).convert("RGBA")
+        top = Image.open(BytesIO(strong)).convert("RGBA")
+        x0, y0, x1, y1 = (round(f * d) for f, d in zip(hl["box"], (im.width, im.height) * 2))
+        region = top.crop((x0, y0, x1, y1))
+        im.paste(region, (x0, y0), region)
+        out = BytesIO()
+        im.save(out, format="PNG")
+        return out.getvalue()
+    if isinstance(picture, dict):
+        name, color = picture.get("icon", ""), picture.get("color", MEANING_PICTURE_INK)
+    else:
+        name, color = str(picture or ""), MEANING_PICTURE_INK
+    color = color.lstrip("#").upper()
+    if "/" not in name:
+        return pictogram_png(name, color, px) if name else None
+    if not ICON_PACK_RE.match(name):
+        return None
+    key = (name, color, px)
+    if key not in _PICTOGRAM_CACHE:
+        pack, comp = name.split("/")
+        js = ("const React=require('react');const S=require('react-dom/server');"
+              "const {Resvg}=require('@resvg/resvg-js');let C=null;"
+              f"try{{C=require('react-icons/{pack}')[{json.dumps(comp)}]}}catch(e){{}}"
+              "if(C){const svg=S.renderToStaticMarkup(React.createElement(C,"
+              f"{{color:'#{color}',size:'{px}'}}));"
+              f"const png=new Resvg(svg,{{fitTo:{{mode:'width',value:{px}}},"
+              "font:{loadSystemFonts:false}}).render().asPng();"
+              "process.stdout.write(Buffer.from(png).toString('base64'))}")
+        out = subprocess.run(["node", "-e", js], cwd=ROOT_DIR.parent,
+                             capture_output=True, text=True)
+        _PICTOGRAM_CACHE[key] = base64.b64decode(out.stdout) if out.stdout else None
+    return _PICTOGRAM_CACHE[key]
+
+
+def add_with_effect(root, spid):
+    """Make shape `spid` appear WITH the slide's last click (Appear, With Previous).
+
+    The Words to Spell Review picture rides the word's click, so the word and
+    its meaning picture land together (2d, v1.9).
+    """
+    timing = root.find(q("p:timing"))
+    clicks = [c for c in timing.iter(q("p:cTn")) if c.get("nodeType") == "clickEffect"]
+    click_par = clicks[-1].getparent()
+    with_par = copy.deepcopy(click_par)
+    with_par.find(q("p:cTn")).set("nodeType", "withEffect")
+    with_par.find(".//" + q("p:spTgt")).set("spid", str(spid))
+    for ctn in with_par.iter(q("p:cTn")):
+        if ctn.get("id"):
+            ctn.set("id", str(int(ctn.get("id")) + 500))
+    click_par.addnext(with_par)
+
+
 def add_picture(root, sid, rid, x, y, w, h):
     """Place an image (already related as `rid`) on the slide."""
     a, p, r = NS["a"], NS["p"], NS["r"]
@@ -1905,15 +2278,25 @@ def draw_round_slide(root, blk, item, accent, tint, ctx):
     """
     sid, y = 90100, 1.15
     rule = item.get("rule", blk.get("rule"))
+    if blk.get("bank"):
+        rule = BANK_RULE
     if rule:
         rsz = fit_font_block(rule, 8.6, 0.58, 18, min_pt=15)
         add_textbox(root, sid, 0.5, y, 9.0, 0.64, [rule], rsz,
                     color="FFFFFF", bold=True, fill=accent, rounded=True)
         sid += 1
         y += 0.76
+    if blk.get("bank"):
+        # v1.9 Complete the sentence: the same bank sits on every item's slide
+        line = bank_line(blk)
+        bsz = fit_font(line, 8.0, 20, min_pt=14, char_em=0.58)
+        add_textbox(root, sid, 0.9, y, 8.2, 0.5, [f"**{line}**"], bsz,
+                    fill="FFFFFF", outline=accent, rounded=True)
+        sid += 1
+        y += 0.58
     choices = [str(c) for c in item.get("choices", [])][:3]
     parts = [str(pt) for pt in item.get("parts", [])][:4]
-    hero_h = 1.1 if (choices or parts) else 1.62
+    hero_h = 1.1 if (choices or parts or blk.get("bank")) else 1.62
     lines = [ln.strip() for ln in str(item.get("prompt", "")).split("\n")
              if ln.strip()] or [""]
     longest = max(lines, key=len)
@@ -2220,6 +2603,9 @@ SESSION_PLANS = {
                      "vote"},
     "week_review_v18": {"cards", "wtr", "sound_bank", "wts_review", "lw",
                         "dictation", "grammar", "vote"},
+    # v1.9: Friday opens with the daily review, then the Friday Review
+    # worksheet (1a) - the deck stops there; the follow-up sheet replaces the vote
+    "week_review_v19": {"cards", "wtr", "friday_review"},
 }
 
 V17_REQUIRED = {
@@ -2245,11 +2631,14 @@ V17_REQUIRED = {
     "week_review_v18": ["morphology_review", "words_to_read_review", "sound_bank",
                         "words_to_spell_review", "learned_words", "dictation",
                         "vote"],
+    "week_review_v19": ["morphology_review", "words_to_read_review", "friday_review"],
 }
 
 
 def session_plan_key(week, session):
     stype = session.get("type", "new")
+    if week_is_v19(week) and stype == "week_review":
+        return "week_review_v19"
     if week_is_v18(week) and stype in V17_TYPES | {"week_review"}:
         return stype + "_v18"
     if stype == "week_review" and week_is_v17(week):
@@ -2278,6 +2667,7 @@ def build_session(pkg, week, session, out_path):
     plan = SESSION_PLANS[plan_key]
     v17 = week_is_v17(week)
     v18 = week_is_v18(week)
+    v19 = week_is_v19(week)
     term, wknum = week["term"], week["week"]
     if v18:
         # James Hooke (23 Oct 2026): ask real questions ("What is one word built
@@ -2305,7 +2695,7 @@ def build_session(pkg, week, session, out_path):
         # last session carries the vote, and a 4-session week's apply day
         # keeps a second dictation day with one sentence in the grammar focus.
         last = session is week["sessions"][-1]
-        if last and not session.get("vote"):
+        if last and not session.get("vote") and plan_key != "week_review_v19":
             warn(f"{day}: the week's last session needs the trickiest-this-week "
                  "`vote` (section 1, v1.8)")
         if plan_key == "apply_v18":
@@ -2330,7 +2720,15 @@ def build_session(pkg, week, session, out_path):
         cx = int(off.get("x")) + int(ext.get("cx")) // 2
         off.set("x", str(cx - new_w // 2))
         ext.set("cx", str(new_w))
-    d.add(T["title"], fill_title, notes=f"{cohort} OG session deck. Term {term} Week {wknum}, {day}.")
+    title_notes = f"{cohort} OG session deck. Term {term} Week {wknum}, {day}."
+    if v19 and enabler_pdf.wants_sheet(session):
+        # v1.9 (1b): the day's sheets named where the teacher starts the deck
+        num = week["sessions"].index(session) + 1
+        title_notes += (f"\nSHEETS TODAY: Enablers/{enabler_pdf.file_name(num, day)} for "
+                        "students who need support; Extension/"
+                        f"{enabler_pdf.extension_file_name(num, day)} for students ready "
+                        "for more. Both are in the week's print pack.")
+    d.add(T["title"], fill_title, notes=title_notes)
 
     # --- 2 weekly overview
     ov = week["overview"]  # dict day -> {morphology, grammar, learned_words}
@@ -2355,10 +2753,17 @@ def build_session(pkg, week, session, out_path):
     def cell_text(value):
         # overview cells may be [label, value] lists; notes read them as plain text
         return ": ".join(value) if isinstance(value, list) else str(value or "")
-    d.add(T["overview"], fill_overview,
-          notes="\n".join(f"{dy} - {cell_text(ov.get(dy, {}).get('morphology'))} | Grammar: "
-                          f"{cell_text(ov.get(dy, {}).get('grammar'))} | LW: "
-                          f"{cell_text(ov.get(dy, {}).get('learned_words'))}" for dy in days))
+    overview_notes = "\n".join(
+        f"{dy} - {cell_text(ov.get(dy, {}).get('morphology'))} | Grammar: "
+        f"{cell_text(ov.get(dy, {}).get('grammar'))} | LW: "
+        f"{cell_text(ov.get(dy, {}).get('learned_words'))}" for dy in days)
+    if v19:
+        # v1.9 (1c): the week's print pack named in every deck, as plain text -
+        # a relative link would not survive the Google Slides import
+        overview_notes += (f"\n---\nPRINT PACK: {print_pack.file_name(week)} in the week "
+                           "folder - every enabler, extension and Friday Review page for "
+                           "the week, with a cover saying who each page is for.")
+    d.add(T["overview"], fill_overview, notes=overview_notes)
 
     # --- catalogue and teaching-history gates
     for card in session.get("morphology_review", []):
@@ -2380,7 +2785,11 @@ def build_session(pkg, week, session, out_path):
     validate_sound_bank(day, session, week)
     validate_activity_morphemes(day, week, session)
     validate_build_rounds(day, week, session)
+    if v19 and session.get("build"):
+        validate_v19_rounds(day, week, session)
     validate_dictation_sources(day, week, session)
+    if v19:
+        audit_school_cards(day, session)
 
     # --- 3 morphology review cards x10
     if want("cards"):
@@ -2551,10 +2960,56 @@ def build_session(pkg, week, session, out_path):
         if v18 and sum(1 for item in wsr if item.get("prompt")) > 3:
             warn(f"{day}: more than 3 after-check questions; keep them for words "
                  "where the part's meaning plainly shows (2d, v1.8)")
-        for item in wsr:
-            def fill_spell(root, item=item):
+        for n_word, item in enumerate(wsr, 1):
+            pic_media, pic_w = None, 0.0
+            if v19:
+                # v1.9 (from the Challenge team's planner decks): every spelling
+                # word carries a picture of its meaning, on the word's own click.
+                # A picture must be clear with no explanation (James, 30 Oct 2026);
+                # where none can be, {"none": reason} shows the word alone.
+                pic = item.get("picture")
+                if isinstance(pic, dict) and "none" in pic:
+                    n_none = sum(1 for e in wsr if isinstance(e.get("picture"), dict)
+                                 and "none" in e["picture"])
+                    if not str(pic["none"]).strip():
+                        warn(f"{day}: '{item['word']}' has picture none with no reason "
+                             "(2d, v1.9)")
+                    elif n_none > 2:
+                        warn(f"{day}: {n_none} spelling words have no picture - at most "
+                             "2; pick words whose meaning can be pictured (2d, v1.9)")
+                    else:
+                        note(f"{day}: '{item['word']}' shows no picture - "
+                             f"{pic['none']} (2d, v1.9)")
+                elif not pic:
+                    warn(f"{day}: Words to Spell Review word '{item['word']}' needs a "
+                         "meaning `picture` (2d, v1.9)")
+                else:
+                    pic_png = meaning_picture_png(item["picture"])
+                    if pic_png is None:
+                        warn(f"{day}: meaning picture {item['picture']!r} for "
+                             f"'{item['word']}' is not a pictogram or a react-icons "
+                             "pack/Component name (2d, v1.9)")
+                    else:
+                        pic_media = f"ogspell_{day.lower()}_{n_word}.png"
+                        d.media[f"ppt/media/{pic_media}"] = pic_png
+                        with Image.open(BytesIO(pic_png)) as im_:
+                            pic_w = im_.width / im_.height
+
+            def fill_spell(root, item=item, pic_media=pic_media, pic_w=pic_w):
                 sp = find_sp(root, SHAPE["spell_word_box"])
                 set_text(sp, item["word"], size_pt=fit_font(item["word"], 4.96, 60, min_pt=28))
+                if pic_media:
+                    # 1.45" tall, centred under the word; a wide composite shrinks
+                    # to fit 6" so it never reaches the slide edges
+                    h = min(1.45, 6.0 / pic_w)
+                    w = h * pic_w
+                    add_picture(root, 90070, "rIdOGSpellPic", (10 - w) / 2,
+                                3.55 + (1.45 - h) / 2, w, h)
+                    add_with_effect(root, 90070)
+
+            def fill_spell_rels(rels, pic_media=pic_media):
+                if pic_media:
+                    relate_image(rels, "rIdOGSpellPic", f"../media/{pic_media}")
             if not item.get("prompt") and not v18:
                 warn(f"{day}: spell review word '{item['word']}' has no after-check prompt")
             elif item.get("prompt") and not item.get("answer"):
@@ -2566,7 +3021,8 @@ def build_session(pkg, week, session, out_path):
                 note_text += f"\nAfter checking: {item['prompt']}"
             if item.get("answer"):
                 note_text += f"\nAnswer: {item['answer']}"
-            d.add(T["spell_word"], fill_spell, notes=note_text)
+            d.add(T["spell_word"], fill_spell, notes=note_text,
+                  fill_rels=fill_spell_rels if pic_media else None)
 
     # --- new/review morphology section
     section = "New Morphology" if stype in ("new", "teach", "spell") else "Review Morphology"
@@ -3132,6 +3588,55 @@ def build_session(pkg, week, session, out_path):
                     warn(f"{day}: fixed-answer grammar you_do needs a duplicate "
                          "check_items answer slide")
 
+    # --- v1.9 Friday: the Friday Review worksheet, and the deck stops (1a)
+    if want("friday_review") and session.get("friday_review"):
+        fr = session["friday_review"]
+        fr_dir = out_path.parent / "Friday Review"
+        pdf_name = f"Friday Review - Term {term} Week {wknum}.pdf"
+        fu_name = f"Friday Review - Term {term} Week {wknum} Teacher Follow-up.pdf"
+        report = friday_review_pdf.build_worksheet(
+            fr, fr_dir / pdf_name, f"Week {wknum}", fr.get("dictation", []))
+        report["follow_up_pages"] = friday_review_pdf.build_follow_up(
+            fr.get("follow_up", []), fr_dir / fu_name,
+            f"Friday Review - Term {term} Week {wknum}: Teacher Follow-up")
+        check_friday(day, week, fr, report)
+        marks["friday_review"] = {"worksheet": fr_dir / pdf_name,
+                                  "student_pages": report["student_pages"],
+                                  "follow_up": fr_dir / fu_name}
+        fr_tidx = T["gradual_release"]["you_do"]
+        fr_blk = {
+            "rule": "Try your best to complete this review.",
+            "example": "Books closed. Work on your own.\nRead each question twice, then write.",
+            "items": ["A Grammar  -  B Parts of speech  -  C Learned words",
+                      "D Morphology  -  E Dictation"],
+            "routine": "On your own - 20 mins",
+            "footer": "Finished? Check every answer with COPS",
+        }
+        lines = [f"ANSWER: on the last page of {pdf_name} (teacher copy).",
+                 "1. SAY: \"Books closed. This is our Friday Review. Work on your own "
+                 "and try every question. You have about twenty minutes.\"",
+                 "2. CIRCULATE: read any question aloud for a student who asks. Never "
+                 "read the answer words.",
+                 "3. READ Part E when most students reach it. Each sentence whole, then "
+                 "in chunks, then whole again:"]
+        for n, dt in enumerate(fr.get("dictation", []), 1):
+            lines.append(f"   {n}. {dt.get('sentence', '')}")
+            if dt.get("chunks"):
+                lines.append("   CHUNKS: " + " / ".join(dt["chunks"]))
+        lines += ["---",
+                  "Purpose: a books-closed check of this week only [Friday Review]",
+                  f"PREP: print only the student pages of Friday Review/{pdf_name}. "
+                  f"Mark with Friday Review/{fu_name} beside you."]
+
+        def fill_friday(root, fr_blk=fr_blk):
+            tsp = find_sp(root, SHAPE["gr_title"][fr_tidx])
+            set_text(tsp, "Complete this Friday Review")
+            bsp = find_sp(root, SHAPE["gr_body"][fr_tidx])
+            set_runs(bsp, [[]])
+            draw_structured_slide(root, fr_blk, MORPH_MAGENTA, MORPH_TINT,
+                                  f"{day} Friday Review")
+        d.add(fr_tidx, fill_friday, notes="\n".join(lines))
+
     # --- v1.7 Friday close: which was trickiest? (feeds "From our reviews")
     if want("vote") and session.get("vote"):
         vt = session["vote"]
@@ -3665,9 +4170,36 @@ def qa_deck(path, session=None, marks=None):
     return problems
 
 
+def build_enabler(week, session, number, folder):
+    """Write the session's one-page enabler sheet (1b, v1.9) and its matching
+    extension sheet in ../Extension/ (1b)."""
+    day = session["day"]
+    if not enabler_pdf.fonts_available():
+        warn(f"{day}: VIC handwriting fonts (VICDOTS_.TTF, VICREGUL.TTF) are not in "
+             "C:\\Windows\\Fonts - install them to build enabler sheets (1b)")
+        return
+    path = folder / enabler_pdf.file_name(number, day)
+    try:
+        third = enabler_pdf.make(week, session, path)
+    except ValueError as exc:
+        warn(f"{day}: {exc} (1b)")
+        return
+    if third < enabler_pdf.SMALL_THIRD_NOTE:
+        note(f"{day}: enabler sheet thirds are {third / 72 * 25.4:.1f} mm to fit one page "
+             "- trim a section rather than shrink further (1b)")
+    print(f"  Enabler: {path.name} (thirds {third / 72 * 25.4:.1f} mm)")
+    ext = folder.parent / "Extension" / enabler_pdf.extension_file_name(number, day)
+    try:
+        if enabler_pdf.make_extension(week, session, ext):
+            print(f"  Extension: {ext.name}")
+    except ValueError as exc:
+        warn(f"{day}: {exc} (1b)")
+
+
 def main():
     WARNINGS.clear()
     NOTES.clear()
+    _SCHOOL_CARDS_NOTED.clear()
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     only = None
     outdir = Path("output")
@@ -3685,6 +4217,7 @@ def main():
     pkg = Package(MASTER)
     unit = week.get("unit_folder", f"OG_Term{week['term']}_Week{week['week']}")
     built = []
+    pack_decks, pack_friday = [], {}  # v1.9 print pack (1c)
     failed = False
     morph_idx = 0
     v17 = week_is_v17(week)
@@ -3726,6 +4259,11 @@ def main():
         out_path = outdir / unit / fname
         print(f"Building {out_path} ...")
         n, marks = build_session(pkg, week, session, out_path)
+        if week_is_v19(week) and enabler_pdf.wants_sheet(session):
+            build_enabler(week, session, n_session, out_path.parent / "Enablers")
+        pack_decks.append((session, out_path.name))
+        if marks.get("friday_review"):
+            pack_friday = marks["friday_review"]
         problems = qa_deck(out_path, session, marks)
         for p in problems:
             print(f"  GATE FAIL: {p}")
@@ -3733,6 +4271,9 @@ def main():
             failed = True
         print(f"  {n} slides written.")
         built.append(out_path)
+    if week_is_v19(week) and built and not only:
+        pack, pages = print_pack.build_pack(week, built[0].parent, pack_decks, pack_friday)
+        print(f"\nPrint pack: {pack.name} ({pages} pages)")
     if NOTES:
         print(f"\n{len(NOTES)} advisory note(s) - review above (non-fatal).")
     if WARNINGS:

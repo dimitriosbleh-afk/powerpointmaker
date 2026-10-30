@@ -1,0 +1,28 @@
+{
+  "unit_folder": "Term4_Week5_Literacy_CAT_and_Publish",
+  "unit_pptx_name": "Term 4 Week 5 - Persuasive CAT and Publish - Year 5-6 Literacy.pptx",
+  "anchor": "Claim it. Prove it. Sell it. The Term 4 persuasive writing CAT over two sessions (Wednesday and Thursday), then a student-published good copy on Friday. Monday is pupil free and Tuesday is Cup Day. Replaces the four-session Polish and Publish plan (t4w5_lit_persuasive_writing.json).",
+  "lessons": [
+    {
+      "build_script": "builds/t4w5_cat_s1_choose_plan_write.json",
+      "folder": "T4W5_CAT_S1_Choose_Plan_Write",
+      "session": 1,
+      "title": "CAT Day 1: Choose, Plan, Write",
+      "focus": "Explain the CAT, check what a ready plan looks like, then 40 minutes of independent planning and writing. Critical feature: a contention that answers the question, held up by three different reasons. Retrieves: Week 4 Claim it / Prove it / Sell it."
+    },
+    {
+      "build_script": "builds/t4w5_cat_s2_finish_check_hand_in.json",
+      "folder": "T4W5_CAT_S2_Finish_Check_Hand_In",
+      "session": 2,
+      "title": "CAT Day 2: Finish, Check, Hand In",
+      "focus": "Finish the body paragraphs and conclusion independently, then the page 6 read-aloud check and hand-in for Elastik. Critical feature: the conclusion restates and sells, with no new reason. Retrieves: Week 4 Session 3 conclusions."
+    },
+    {
+      "build_script": "builds/t4w5_cat_s3_publish_day.json",
+      "folder": "T4W5_CAT_S3_Publish_Day",
+      "session": 3,
+      "title": "Publish Day: Polish and Publish",
+      "focus": "Polish four common slips, choose a title, then publish a good copy to go home with the CAT. Critical feature: read each sentence slowly as you copy it. Not marked."
+    }
+  ]
+}
