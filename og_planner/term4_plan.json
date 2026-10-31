@@ -1,5 +1,5 @@
 {
-  "_purpose": "Term 4 2026 OG plan for the Grade 5/6 Enrichment cohort, from the team planner James shared on 13 Oct 2026. Use it to fill a week's request (OG_MEGA_PROMPT 12) when the user does not supply one. The planner's morphology row still shows the scope's two-a-week Greek forms; James approved replacing Weeks 3-6 with one core concrete root a week (port, ject, struct, tract) on 13 Oct 2026 (v1.7).",
+  "_purpose": "Term 4 2026 OG plan for the Grade 5/6 Enrichment cohort, from the team planner James shared on 13 Oct 2026. Use it to fill a week's request (OG_MEGA_PROMPT 12) when the user does not supply one. The planner's morphology row still shows the scope's two-a-week Greek forms; James approved replacing Weeks 3-6 with one core concrete root a week (port, ject, struct, tract) on 13 Oct 2026 (v1.7). Weeks 10-11 and Week 5's session count added from James's planner screenshot on 31 Oct 2026.",
   "weeks": {
     "1": {
       "morphology": "hyper, omni",
@@ -39,7 +39,8 @@
       "learned_words": [
         "colleague",
         "catalogue"
-      ]
+      ],
+      "sessions": "3 - Wednesday to Friday (Tuesday 3 Nov is Cup Day; James, 31 Oct 2026)"
     },
     "6": {
       "morphology": "tract (planner: ign, sult)",
@@ -47,7 +48,8 @@
       "learned_words": [
         "campaign",
         "questionnaire"
-      ]
+      ],
+      "carry_forward": "From Week 5 (struct): put Week 5's Break it apart words (obstruction, reconstruct, instructor) into Week 6's reading review, because the 3-session week had no Break it apart round (11). Week 6's third round is Write the word that names... (rotation after Complete the sentence). catalogue is the throwback target for Week 6's dictation."
     },
     "7": {
       "morphology": "rupt",
@@ -72,6 +74,18 @@
         "bureau",
         "niche"
       ]
+    },
+    "10": {
+      "morphology": "Review",
+      "sessions": "3",
+      "grammar": "",
+      "learned_words": []
+    },
+    "11": {
+      "morphology": "Review",
+      "sessions": "0 - no OG this week",
+      "grammar": "",
+      "learned_words": []
     }
   }
 }

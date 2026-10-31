@@ -779,19 +779,25 @@ class OgV19Tests(unittest.TestCase):
                     free = {f for f in fonts if f.startswith("VIC MODERN")}
                     self.assertTrue(any("VicDots" in f for f in fonts) or free, fonts)
                     self.assertFalse(any("Cursive" in f for f in fonts - free), fonts)
-            # Extension sheets: the enabler's mirror - same days, same sections in
-            # the same order - plus an answers page.
+            # Extension sheets: the enabler's days and sections in the same order,
+            # on the school worksheet layout (one page or one double-sided sheet),
+            # then an answer key of the same length.
             ext = sorted(p.name for p in (week_dir / "Extension").glob("*.pdf"))
             self.assertEqual(ext, ["1. Monday extension.pdf", "2. Tuesday extension.pdf",
                                    "4. Thursday extension.pdf"])
+            ext_pages = 0
             for name in ext:
                 with fitz.open(week_dir / "Extension" / name) as doc:
-                    self.assertEqual(doc.page_count, 2, name)
+                    self.assertIn(doc.page_count, (2, 4), name)
+                    half = doc.page_count // 2
+                    ext_pages += doc.page_count
                     page1 = doc[0].get_text().replace("\xa0", " ").replace("\xad", "-")
                     self.assertIn("OG Extension", page1)
-                    self.assertIn("Teacher copy", doc[1].get_text().replace("\xa0", " "))
+                    self.assertIn("Teacher copy", doc[half].get_text().replace("\xa0", " "))
+                    self.assertNotIn("Teacher copy", doc[half - 1].get_text())
             with fitz.open(week_dir / "Extension" / "2. Tuesday extension.pdf") as doc:
-                page1 = doc[0].get_text().replace("\xa0", " ").replace("\xad", "-")
+                page1 = "".join(doc[i].get_text() for i in range(doc.page_count // 2))
+                page1 = page1.replace("\xa0", " ").replace("\xad", "-")
             heads = ["New Morphology", "Sound Bank", "Words to Spell", "Learned Words",
                      "Dictation"]
             self.assertEqual(sorted(heads, key=page1.index), heads)   # enabler order
@@ -799,10 +805,10 @@ class OgV19Tests(unittest.TestCase):
             self.assertNotIn("inject", page1)      # the word is the student's job
             with fitz.open(week_dir / "Extension" / "4. Thursday extension.pdf") as doc:
                 self.assertIn("Suffix jobs", doc[0].get_text().replace("\xa0", " "))
-            # One print pack: cover + 3 enablers + 3 extensions + 2 Friday pages
-            # + 3 extension answers + Friday answers + follow-up.
+            # One print pack: cover + 3 enablers + the extensions and their answers
+            # + 2 Friday pages + Friday answers + follow-up.
             with fitz.open(week_dir / "0. Print pack - Term 4 Week 4.pdf") as doc:
-                self.assertEqual(doc.page_count, 14)
+                self.assertEqual(doc.page_count, 1 + 3 + ext_pages + 2 + 1 + 1)
                 cover = doc[0].get_text().replace("\xa0", " ").replace("\xad", "-")
                 for line in ("Enabler sheet", "Extension sheet", "Friday Review (2 pages)",
                              "Teacher Follow-up sheet", "mini whiteboard"):
@@ -948,6 +954,17 @@ class OgV19Tests(unittest.TestCase):
         self.assertEqual(en.dictation_items("The ecosystem's balance broke.",
                                             ["ecosystem"])[1],
                          [("b", "ecosystem"), ("t", "'s")])
+
+    def test_combined_day_gets_thursdays_sheet(self):
+        """Section 11: a combined day carries Thursday's learned words and suffix
+        cards, so it gets Thursday's enabler and extension sheet."""
+        import enabler_pdf as en
+        week = json.loads(self.V19_SPEC.read_text())
+        thu = week["sessions"][3]
+        thu["type"] = "combined"
+        self.assertTrue(en.wants_sheet(thu))
+        sections = en.extension_sheet(week, thu)
+        self.assertIn("Suffix jobs", [sec["title"] for sec in sections])
 
     def test_enabler_leaves_the_teaching_as_the_gap(self):
         import enabler_pdf as en

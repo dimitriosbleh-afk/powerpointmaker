@@ -25,7 +25,9 @@ build_og_week.py calls build_session_sheet() for each session; run it alone with
 """
 import json
 import re
+import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 import fitz
@@ -60,7 +62,9 @@ ITALIC = find_font("ariali.ttf", "Arial Italic.ttf")
 
 PAGE_W, PAGE_H = fitz.paper_size("a4")
 LEFT, RIGHT = 36.0, PAGE_W - 36.0
-TOP, BOTTOM = 34.0, PAGE_H - 30.0
+# 24 pt (8.5 mm) at the foot: Term 4 Week 5's Tuesday-type sheet, with guarantee
+# and mortgage both on review, ran 6 pt past a 30 pt margin at 4.2 mm thirds.
+TOP, BOTTOM = 34.0, PAGE_H - 24.0
 GREY = (0.5, 0.5, 0.5)
 SIZE_PER_THIRD = 2.7     # x-height 0.33 em = 0.9 of a third (measured, both fonts)
 TRACE = (0, 0, 0)        # colour of the letters students trace
@@ -72,9 +76,6 @@ WORD_GAP = 0.45          # word space in a traced sentence, as a share of the fo
 # Year 5/6 thirds: 14 pt = 4.9 mm (a 14.8 mm row) down to 12 pt = 4.2 mm.
 THIRDS = (14.0, 13.5, 13.0, 12.5, 12.0)
 SMALL_THIRD_NOTE = 12.5
-# Extension students are the confident writers: their sheet may run smaller,
-# down to 3.7 mm thirds (an 11 mm row, near their exercise books).
-EXT_THIRDS = (14.0, 13.5, 13.0, 12.5, 12.0, 11.5, 11.0, 10.5)
 
 _FONTS = {}
 
@@ -398,10 +399,14 @@ def week_morph(week):
 
 def wants_sheet(session):
     """Which sessions get a sheet: the ones with written spelling or a sentence.
-    Wednesday's build is boards and books; a Friday with the worksheet has none."""
+    Wednesday's build is boards and books; a Friday with the worksheet has none.
+    A 3-session week's `combined` day carries Thursday's learned words and suffix
+    cards, so it gets Thursday's sheet."""
     stype = session.get("type")
     if stype == "week_review":
         return not session.get("friday_review")
+    if stype == "combined":
+        stype = "apply"
     return stype in ("teach", "spell", "apply") and (
         stype != "apply" or session.get("learned_words") or session.get("dictation"))
 
@@ -537,101 +542,86 @@ def example_word(part, week, skip=()):
     return ""
 
 
-def extension_plan(week, session, s):
-    """The enabler's sections, in the same order, each pushed a step further.
-    Where the enabler prints the word to trace with a gap, the extension prints
-    only what the student needs to start and leaves the whole word to them.
-    Returns [(heading, rows)] and the teacher's answers [(section, text)]."""
+def extension_sheet(week, session):
+    """The enabler's sections, in the same order, each pushed a step further, on
+    the school worksheet layout (MEGA_PROMPT 86): numbered cards, ruled lines and
+    tables, not dotted thirds (James, 31 Oct 2026: extension students write in
+    their own hand, so the sheet need not look like the enabler).  Where the
+    enabler prints the word to trace with a gap, the extension prints only what
+    the student needs to start.  Answers ride on the items, so the same spec
+    draws the answer key.  Returns the worksheet resource."""
     nm = week_morph(week)
     morph, meaning = nm.get("morph", ""), str(nm.get("meaning", ""))
-    head = [("bold", morph), ("s", " = " + meaning)]
     stype = session.get("type")
-    plan, answers = [], []
-    full = RIGHT - LEFT - 20
+    if stype == "combined":
+        stype = "apply"     # the same written work as Thursday (wants_sheet)
+    sections = []
 
-    def numbered(n, width):
-        return [[("s", f"{i}."), ("sp", 5), ("line", width)] for i in range(1, n + 1)]
-
-    def prompt_rows(text, min_line=110):
-        """A printed prompt, then '=' and a writing line, wrapped so nothing runs
-        past the margin: the line takes what is left of the last row."""
-        rows, cur = [], []
-        for word in str(text).split() + ["="]:
-            trial = cur + [("s", (" " if cur else "") + word)]
-            if cur and s.item_width(trial) > full:
-                rows.append([cur])
-                cur = [("s", word)]
-            else:
-                cur = trial
-        left = full - s.item_width(cur) - 8
-        if left < min_line:
-            rows.append([cur])
-            cur, left = [], full - 8
-        rows.append([cur + [("sp", 6), ("line", left)]])
-        return rows
+    def blank_table(prompt, n, answers):
+        """One row of n numbered boxes: parts or words written as they are read."""
+        return {"kind": "table", "prompt": prompt, "span": "full",
+                "columns": [str(i) for i in range(1, n + 1)], "rows": [[""] * n], "rowH": 28,
+                "answers": [answers]}
 
     if stype == "teach":
-        eq = s.item_width([("s", " = ")])
-        plan.append(("New Morphology - write three " + morph + " words and what each means",
-                     [[head]] + [[[("line", 150), ("s", " = "), ("line", full - 160 - eq)]]
-                                 for _ in range(3)]))
         grid = [g for g in session.get("words_to_read_new", []) if isinstance(g, dict)]
         sums = sorted(((g["word"], grid_sum(g)) for g in grid if grid_sum(g)),
                       key=lambda ws: len(ws[0]))
-        answers.append(("New Morphology", "Any three real " + morph + " words with true "
-                        "meanings, e.g. " + "; ".join(f"{w} = {grid_meanings(week).get(w.lower(), '')}"
-                                                      for w, _ in sums[:3])))
-        plan.append(("My keyword and what it means", [[]]))
-        plan.append(("The longest " + morph + " word I can build, and its word sum",
-                     [[], []]))
-        answers.append(("Longest word", "e.g. " + "; ".join(f"{w} = {sm}"
-                                                            for w, sm in sums[-2:])))
-        plan.append(("My sentence with TWO " + morph + " words", [[], [], []]))
-        answers.append(("Sentence", "Check: two " + morph + " words used correctly, and the "
-                        f"sentence shows the meaning ({morph} = {meaning})."))
-        return plan, answers
+        means = grid_meanings(week)
+        sections.append({"title": "New Morphology", "columns": 1,
+                         "intro": f"{morph} = {meaning}", "items": [
+            {"kind": "table", "prompt": f"Write three {morph} words and what each means.",
+             "columns": [f"{morph} word", "What it means"], "widths": [1, 2],
+             "rows": [["", ""] for _ in range(3)], "rowH": 28,
+             "answers": [[w, means.get(w.lower(), "")] for w, _ in sums[:3]]},
+            {"prompt": "My keyword and what it means.", "lines": 1,
+             "answer": "Any real " + morph + " word with a true meaning."},
+            {"prompt": f"Build the longest {morph} word you can. Write its word sum.",
+             "lines": 2, "answer": "e.g. " + "; ".join(f"{w} = {sm}" for w, sm in sums[-2:])},
+            {"kind": "open", "prompt": f"Write one sentence with TWO {morph} words.",
+             "lines": 3, "answer": f"Check: two {morph} words used correctly, and the "
+                                   f"sentence shows the meaning ({morph} = {meaning})."},
+        ]})
+        return sections
 
     if stype == "spell":
         means = grid_meanings(week)
         new = [str(w) for w in session.get("words_to_spell_new", [])]
-        rows = []
-        for w in new:
-            rows += prompt_rows(means.get(w.lower(), w[:1] + "..."))
-        # the card rides in the heading so the meanings get the room
-        plan.append((f"New Morphology ({morph} = {meaning}) - write the word for each "
-                     "meaning", rows))
-        answers.append(("New Morphology", ", ".join(new)))
+        sections.append({"title": "New Morphology", "columns": 1,
+                         "intro": f"{morph} = {meaning}", "items": [
+            {"kind": "table", "prompt": f"Write the {morph} word for each meaning.",
+             "columns": ["Meaning", "Word"], "widths": [3, 2],
+             "rows": [[means.get(w.lower(), w[:1] + "..."), ""] for w in new], "rowH": 28,
+             "answers": [[None, w] for w in new]}]})
     if session.get("sound_bank") and stype in ("spell", "week_review"):
         bank = [str(b["morph"]) for b in session["sound_bank"]]
-        plan.append(("Sound Bank - write each part as it is read, then pick two and "
-                     "write a word that uses each", s.pack(numbered(len(bank), 60))
-                     + [[[("line", 200)], [("line", 200)]]]))
-        answers.append(("Sound Bank", "; ".join(
-            f"{b}" + (f" (e.g. {example_word(b, week)})" if example_word(b, week) else "")
-            for b in bank)))
+        examples = [f"{b} (e.g. {example_word(b, week)})" for b in bank
+                    if example_word(b, week)]
+        sections.append({"title": "Sound Bank", "columns": 1, "items": [
+            blank_table("Write each part as it is read.", len(bank), bank),
+            {"prompt": "Pick two parts. Write a word that uses each.", "lines": 1,
+             "answer": "; ".join(examples)}]})
     wsr = [e["word"] for e in session.get("words_to_spell_review") or []]
     if wsr and stype in ("spell", "week_review"):
-        plan.append(("Words to Spell - spell each word, then mark its parts with /",
-                     s.pack(numbered(len(wsr), 100))))
-        answers.append(("Words to Spell", ", ".join(wsr)))
+        sections.append({"title": "Words to Spell", "columns": 1, "items": [
+            {"kind": "table", "prompt": "Spell each word as it is read. Then write it "
+                                        "again with its parts marked with /.",
+             "columns": ["", "Spell it", "Its parts, marked with /"], "widths": [1, 6, 6],
+             "rows": [[str(i), "", ""] for i in range(1, len(wsr) + 1)], "rowH": 28,
+             "answers": [[None, w, ""] for w in wsr]}]})
     cards = (session.get("pos_drill") or {}).get("cards", []) if stype == "apply" else []
     if cards:
         # Thursday's real work: a word for each suffix card, and the job it does (3g)
-        sufs = [str(c.get("morph", "")) for c in cards]
-        rows = []
-        job = s.item_width([("s", "  job: ")])
-        for suf in sufs:
-            word_line = full - s.item_width([("bold", suf)]) - 10 - job - 150
-            rows.append([[("bold", suf), ("sp", 10), ("line", word_line), ("s", "  job: "),
-                          ("line", 140)]])
-        plan.append(("Suffix jobs - a new word for each suffix, then its job "
-                     "(noun, verb or adjective)", rows))
-        answers.append(("Suffix jobs", "; ".join(
-            f"{c.get('morph')} - e.g. {suffix_word(c)} ({c.get('pos_answer', '')})"
-            for c in cards) + ". Any real word with the right job counts."))
-        plan.append(("My sentence using two of my suffix words", [[], []]))
-        answers.append(("Suffix sentence", "Check: two of the student's suffix words, "
-                        "each doing the job they wrote."))
+        sections.append({"title": "Suffix jobs", "columns": 1, "items": [
+            {"kind": "table", "prompt": "Write a new word for each suffix. Then write its "
+                                        "job: noun, verb or adjective.",
+             "columns": ["Suffix", "My word", "Its job"], "widths": [1, 3, 2],
+             "rows": [[str(c.get("morph", "")), "", ""] for c in cards], "rowH": 28,
+             "answers": [[None, f"e.g. {suffix_word(c)}", c.get("pos_answer", "")]
+                         for c in cards]},
+            {"kind": "open", "prompt": "Write one sentence using two of your suffix words.",
+             "lines": 2, "answer": "Check: two of the student's suffix words, each doing "
+                                   "the job they wrote. Any real word with the right job counts."}]})
     lw = session.get("learned_words") or {}
     words = [w["word"] for w in lw.get("review", [])]
     if lw.get("new"):
@@ -643,64 +633,49 @@ def extension_plan(week, session, s):
         if stype == "apply" and isinstance(ov.get("grammar"), str) \
                 and ov["grammar"] not in ("Not today", ""):
             grammar = ov["grammar"].split(":")[0].strip().lower()
-        title = "Learned Words - write each from memory"
-        rows = s.pack(numbered(len(words), 130))
+        items = [blank_table("Write each word from memory as it is read.", len(words), words)]
         if new_word:
-            title += f", then use {new_word} in a sentence"
-            title += f" with a {grammar}" if grammar else ""
-            rows += [[]] if stype == "spell" else [[], []]
-        plan.append((title, rows))
-        answers.append(("Learned Words", ", ".join(words) + (
-            f". Sentence check: {new_word} spelled right"
-            + (f" and the {grammar} used correctly." if grammar else ".") if new_word else "")))
+            items.append({"kind": "open", "lines": 1 if stype == "spell" else 2,
+                          "prompt": f"Use {new_word} in a sentence"
+                                    + (f" with a {grammar}." if grammar else "."),
+                          "answer": f"Check: {new_word} spelled right"
+                                    + (f" and the {grammar} used correctly." if grammar else ".")})
+        sections.append({"title": "Learned Words", "columns": 1, "items": items})
     dictation = session.get("dictation") or []
     if dictation:
-        rows = []
-        for dt in dictation:
-            rows += [[] for _ in s.wrap_words(dictation_items(dt["sentence"], []), s.T)]
-        plan.append((f"Dictation - write both sentences, then add a {morph} word to "
-                     "sentence 1 with a ^", rows))
-        answers.append(("Dictation", " / ".join(dt["sentence"] for dt in dictation)
-                        + f" Check: the added {morph} word fits and is spelled right."))
-    return plan, answers
-
-
-def build_extension(week, session, third):
-    s = Sheet(third)
-    s.ops.append(("title", f"{session['day']} - Term {week.get('term')} Week "
-                           f"{week.get('week')} - OG Extension", s.y + 11.0))
-    s.y += 22.0
-    plan, answers = extension_plan(week, session, s)
-    for heading, rows in plan:
-        s.section(heading, rows, align="left")
-    return s, answers
+        sections.append({"title": "Dictation", "columns": 1, "items": [
+            {"prompt": f"Write both sentences as they are read. Then add a {morph} word "
+                       "to sentence 1 with a ^.", "lines": 2 * len(dictation),
+             "answer": " / ".join(dt["sentence"] for dt in dictation)
+                       + f" Check: the added {morph} word fits and is spelled right."}]})
+    return sections
 
 
 def make_extension(week, session, out_path):
-    """Page 1: the student sheet, the enabler's mirror.  Page 2: answers (teacher
-    copy).  Returns the thirds size, or None when the day has no sheet."""
+    """The student sheet (one page, or two as one double-sided sheet), then its
+    answer key (teacher copy), on the school worksheet layout rendered by
+    render_extension.js.  Returns True, or None when the day has no sheet."""
     if not wants_sheet(session):
         return None
-    for third in EXT_THIRDS:
-        s, answers = build_extension(week, session, third)
-        if s.y + s.T <= BOTTOM:
-            break
-    else:
-        raise ValueError(f"{session['day']} extension sheet does not fit one page")
-    doc = fitz.open()
-    s.render(doc.new_page(width=PAGE_W, height=PAGE_H))
-    a = Sheet(third)
-    a.ops.append(("title", f"{session['day']} extension - answers. Teacher copy - do "
-                           "not print for students.", a.y + 11.0, False))
-    a.y += 26.0
-    for section, text in answers:
-        a.para(section, size=11.5, path=HEAD, fontname="hd")
-        a.para(text, size=10.5)
-        a.y += 6
-    a.render(doc.new_page(width=PAGE_W, height=PAGE_H))
+    term, wk = week.get("term"), week.get("week")
+    job = {"resource": {"title": f"{session['day']} OG Extension",
+                        "label": f"{session['day']} OG Extension",
+                        "sections": extension_sheet(week, session)},
+           "out": str(Path(out_path).resolve()), "week": wk,
+           "info": f"Term {term} Week {wk}", "footer": f"OG Extension | Term {term} Week {wk}"}
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    doc.save(str(out_path), garbage=4, deflate=True)
-    return third
+    root = Path(__file__).resolve().parent
+    with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as fh:
+        json.dump(job, fh)
+    try:
+        run = subprocess.run(["node", str(root / "render_extension.js"), fh.name],
+                             cwd=root.parent, capture_output=True, text=True)
+    finally:
+        Path(fh.name).unlink(missing_ok=True)
+    if run.returncode != 0:
+        raise ValueError(f"{session['day']} extension sheet: "
+                         f"{(run.stderr or run.stdout).strip().splitlines()[-1]}")
+    return True
 
 
 def extension_file_name(number, day):

@@ -1,0 +1,918 @@
+{
+ "term": 4,
+ "week": 5,
+ "og_version": "1.9",
+ "cohort": "Enrichment",
+ "unit_folder": "OG_Term4_Week5",
+ "days": [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday"
+ ],
+ "taught_morphemes": [
+  "mini-",
+  "super-",
+  "over-",
+  "anti-",
+  "ultra-",
+  "retro-",
+  "em-",
+  "syn-",
+  "sym-/sys-/syl-",
+  "-let",
+  "-ling",
+  "-cian",
+  "-cial/-tial",
+  "-ancy/-ance",
+  "-ency/-ence",
+  "-ity",
+  "-tude",
+  "out-",
+  "self-",
+  "post-",
+  "with-",
+  "counter-",
+  "contra-",
+  "omni-",
+  "intra-",
+  "-eer",
+  "-ant",
+  "-ar",
+  "-ine",
+  "-cy",
+  "-ciate/-tiate",
+  "ped/pod",
+  "rect/reg",
+  "capt/capit",
+  "flect/flex",
+  "ord/ordin",
+  "clud(e)/clus(e)",
+  "mal-",
+  "-ery",
+  "-ice",
+  "-ive",
+  "-ite",
+  "-acy",
+  "-ule",
+  "mega-",
+  "micro",
+  "pict/picto",
+  "vore",
+  "eco",
+  "carn/carni",
+  "junct/join/joint",
+  "vict/vinc",
+  "chron",
+  "mand/mend",
+  "jur/jud/just",
+  "pend/pens",
+  "pon/pound",
+  "caus-/cus(e)",
+  "hyper",
+  "omni-",
+  "astro",
+  "terr",
+  "port",
+  "ject"
+ ],
+ "overview": {
+  "Monday": {
+   "morphology": "No session this week",
+   "grammar": "No session this week",
+   "learned_words": "No session this week"
+  },
+  "Tuesday": {
+   "morphology": "No session this week",
+   "grammar": "No session this week",
+   "learned_words": "No session this week"
+  },
+  "Wednesday": {
+   "morphology": [
+    "New Morphology",
+    "struct"
+   ],
+   "grammar": "Not today",
+   "learned_words": "Not today"
+  },
+  "Thursday": {
+   "morphology": [
+    "Spell and dictate",
+    "struct"
+   ],
+   "grammar": "Not today",
+   "learned_words": [
+    "New learned word",
+    "colleague"
+   ]
+  },
+  "Friday": {
+   "morphology": [
+    "Build, then noun, verb or adjective",
+    "struct"
+   ],
+   "grammar": "Semicolon and however or therefore",
+   "learned_words": [
+    "New learned word",
+    "catalogue"
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "day": "Wednesday",
+   "type": "teach",
+   "morphology_review": [
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land"
+    },
+    {
+     "morph": "ject",
+     "type": "root",
+     "keyword": "abject",
+     "meaning": "throw",
+     "extra_task": {
+      "prompt": "What is one word built from ject, meaning throw?",
+      "answers": [
+       "inject",
+       "eject",
+       "reject"
+      ]
+     }
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above",
+     "extra_task": {
+      "prompt": "What is one word built from hyper, meaning over?",
+      "answers": [
+       "hyperactive",
+       "hypersonic"
+      ]
+     }
+    },
+    {
+     "morph": "port",
+     "type": "root",
+     "keyword": "export",
+     "meaning": "bring, carry",
+     "extra_task": {
+      "prompt": "What is one word built from port, meaning carry?",
+      "answers": [
+       "transport",
+       "export",
+       "portable"
+      ]
+     }
+    },
+    {
+     "morph": "jur/jud/just",
+     "type": "root",
+     "keyword": "adjure",
+     "meaning": "right, law"
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "projector",
+     "territory",
+     "deport",
+     "astronaut",
+     "objection",
+     "importer",
+     "terrain",
+     "adjective",
+     "omnivore",
+     "portable",
+     "injection",
+     "astronomer",
+     "supportive",
+     "terrestrial",
+     "eject"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"Partners: partner A reads rows 1, 3 and 5, partner B reads rows 2 and 4.\"\n3. ASK: \"Finish my sentence. The vet gave our dog an...\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: injection.\n4. ASK: \"Which word means a business that carries goods into the country?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: importer.\n5. ASK: \"Odd one out: territory, terrain, astronaut. Which one does not belong?\"\n5 sec. Then: \"Everyone, together, on three.\"\nEXPECT: astronaut.\nIf time: \"Why?\" Turn and tell. EXPECT: astronaut has astro, star - the others have terr, land."
+   },
+   "new_morphology": {
+    "morph": "struct",
+    "type": "root",
+    "keyword": "construct",
+    "meaning": "build"
+   },
+   "memory_hook": {
+    "text": "Construct a house, brick by brick!",
+    "picture": "house"
+   },
+   "brainstorm": "\"What words can you think of with struct in them?\" 20 sec, turn and tell, then cold call four pairs.\nEXPECT: construct, instruct, structure, construction.\nCLARIFY: destroy comes from the same old word, but struct has worn away. We only count words where you can see struct.",
+   "words_to_read_new": [
+    {
+     "word": "instruct",
+     "meaning": "in- means in + STRUCT means build: to build knowledge into someone, to teach"
+    },
+    {
+     "word": "construct",
+     "meaning": "con- means together + STRUCT means build: to build together"
+    },
+    {
+     "word": "structure",
+     "meaning": "STRUCT means build + -ure means the result of: the result of building, something built"
+    },
+    {
+     "word": "instructor",
+     "meaning": "in- means in + STRUCT means build + -or means one who: one who builds knowledge into you"
+    },
+    {
+     "word": "instruction",
+     "meaning": "in- means in + STRUCT means build + -ion means the act of: the act of building knowledge in"
+    },
+    {
+     "word": "construction",
+     "meaning": "con- means together + STRUCT means build + -ion means the act of: the act of building together"
+    },
+    {
+     "word": "destruction",
+     "meaning": "de- means opposite of + STRUCT means build + -ion means the act of: the act of tearing down what was built"
+    },
+    {
+     "word": "reconstruct",
+     "meaning": "re- means again + con- means together + STRUCT means build: to build together again"
+    },
+    {
+     "word": "obstruct",
+     "meaning": "ob- means against + STRUCT means build: to build something against the way through, to block"
+    }
+   ],
+   "wtr_new_notes": "SAY: \"Learn struct once and you can read a whole family of words about building.\"\nREAD each word as it appears, say what it means, then link struct to the card meaning: build.\ninstruct - in means in + STRUCT means build: to build knowledge into someone. The coach will instruct us on the rules.\nconstruct - con means together + STRUCT means build: to build together. Workers construct a bridge piece by piece.\nstructure - STRUCT means build + ure means the result of: something built. The climbing frame is a steel structure.\ninstructor - in + STRUCT + or means one who: the one who builds knowledge into you. My swimming instructor.\ninstruction - in + STRUCT + ion means the act of: the act of building knowledge in. Read every instruction first.\nconstruction - con + STRUCT + ion: the act of building together. The construction of our new gym took a year.\ndestruction - de means opposite of + STRUCT + ion: the opposite of building, tearing down. The storm left a trail of destruction.\nreconstruct - re means again + con means together + STRUCT means build: to build together again after a fire or flood.\nobstruct - ob means against + STRUCT means build: to build something against the way through. A fallen tree can obstruct a road.",
+   "keyword_sentence": {
+    "title": "Pick your own struct word",
+    "rule": "Two jobs in your OG book",
+    "example": "1. Your own struct word for build. Star it.\n2. Write one sentence that shows what it means.",
+    "items": [
+     "My word: **construct** - Dad will **construct** a new cubby."
+    ],
+    "routine": "OG books - 3 mins",
+    "footer": "Check: does it make the meaning clear?",
+    "notes": "1. SAY: \"The card keyword is construct. Con means together, struct means build. You can see every part, so it is a strong keyword.\"\n2. SAY: \"If another struct word helps YOU remember build, pick that one. Write it at the bottom of the page and star it.\"\n3. SAY: \"Then write one sentence with your word, so a reader can tell what it means.\" TIME: 3 min, then cold call two students to read theirs.\nEXTENSION: Two in one - write one sentence that uses two struct words and still makes sense.\nHELP: give a stem, \"The workers will construct...\" or \"Our coach will instruct...\", and let them finish it.\n---\nANSWERS: open - e.g. Mine: construct. Dad will construct a new cubby. EXTENSION: e.g. The instructor showed us how to construct a raft."
+   }
+  },
+  {
+   "day": "Thursday",
+   "type": "spell",
+   "morphology_review": [
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star"
+    },
+    {
+     "morph": "port",
+     "type": "root",
+     "keyword": "export",
+     "meaning": "bring, carry"
+    },
+    {
+     "morph": "struct",
+     "type": "root",
+     "keyword": "construct",
+     "meaning": "build",
+     "extra_task": {
+      "prompt": "What is one word built from struct, meaning build?",
+      "answers": [
+       "construct",
+       "instruct",
+       "structure"
+      ]
+     }
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay"
+    },
+    {
+     "morph": "ject",
+     "type": "root",
+     "keyword": "abject",
+     "meaning": "throw"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all",
+     "extra_task": {
+      "prompt": "What is one word built from omni, meaning all?",
+      "answers": [
+       "omnivore",
+       "omnipresent"
+      ]
+     }
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land",
+     "extra_task": {
+      "prompt": "What is one word built from terr, meaning land?",
+      "answers": [
+       "terrain",
+       "territory",
+       "terrace"
+      ]
+     }
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "obstruct",
+     "report",
+     "interject",
+     "instructor",
+     "terrace",
+     "projectile",
+     "construction",
+     "import",
+     "rejection",
+     "asteroid",
+     "reconstruct",
+     "territorial",
+     "injected",
+     "instruction",
+     "transport"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"Whisper read rows 1 to 3 to yourself. Then everyone reads rows 4 and 5 out loud.\"\n3. ASK: \"Which word means a person who teaches you how to do something, like swim?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: instructor.\n4. ASK: \"Odd one out: obstruct, transport, construction. Which one does not belong?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: transport.\nIf time: \"Why?\" Turn and tell. EXPECT: transport has port, carry - the others have struct, build.\n5. ASK: \"Partner A, point to any word. Partner B, read it and say what its part means. Swap after 30 seconds.\"\n30 sec each way. CIRCULATE and listen for the part's meaning, not just the word."
+   },
+   "sound_bank": [
+    {
+     "morph": "struct",
+     "type": "root"
+    },
+    {
+     "morph": "ject",
+     "type": "root"
+    },
+    {
+     "morph": "port",
+     "type": "root"
+    },
+    {
+     "morph": "terr",
+     "type": "root"
+    },
+    {
+     "morph": "hyper",
+     "type": "root"
+    },
+    {
+     "morph": "-ive",
+     "type": "suffix"
+    }
+   ],
+   "words_to_spell_review": [
+    {
+     "word": "adjective",
+     "sentence": "In the phrase red car, the word red is an adjective.",
+     "picture": {
+      "none": "adjective is a grammar word; a red car would make students write red or car, not adjective"
+     }
+    },
+    {
+     "word": "objection",
+     "sentence": "The lawyer jumped up and shouted, \"Objection!\"",
+     "picture": [
+      {
+       "icon": "fa6/FaGavel",
+       "color": "6B4423"
+      },
+      {
+       "icon": "fa6/FaCircleExclamation",
+       "color": "C0392B"
+      }
+     ]
+    },
+    {
+     "word": "projection",
+     "sentence": "The projection on the wall showed a map of Australia.",
+     "picture": [
+      {
+       "icon": "tb/TbDeviceProjector",
+       "color": "1F3A5F"
+      },
+      "fa6/FaArrowRight",
+      {
+       "icon": "gi/GiAustralia",
+       "color": "B5541C"
+      }
+     ]
+    },
+    {
+     "word": "supportive",
+     "sentence": "My parents were supportive when I tried out for the team.",
+     "prompt": "What job does supportive do in this sentence: noun, verb or adjective?",
+     "answer": "An adjective. It describes my parents, and -ive words usually describe.",
+     "picture": [
+      {
+       "icon": "fa6/FaThumbsUp",
+       "color": "B5541C"
+      },
+      {
+       "icon": "md/MdSportsSoccer",
+       "color": "1F3A5F"
+      }
+     ]
+    },
+    {
+     "word": "portable",
+     "sentence": "We took a portable speaker to the beach.",
+     "picture": [
+      {
+       "icon": "md/MdSpeaker",
+       "color": "1F3A5F"
+      },
+      {
+       "icon": "fa6/FaUmbrellaBeach",
+       "color": "C0392B"
+      }
+     ]
+    },
+    {
+     "word": "terrestrial",
+     "sentence": "Kangaroos are terrestrial animals, but dolphins live their whole lives at sea.",
+     "prompt": "Which part tells you a terrestrial animal lives on land?",
+     "answer": "The terr part, meaning land.",
+     "picture": [
+      {
+       "icon": "gi/GiKangaroo",
+       "color": "B5541C"
+      },
+      {
+       "icon": "gi/GiGrass",
+       "color": "2E7D32"
+      }
+     ]
+    },
+    {
+     "word": "hyperactive",
+     "sentence": "After two lollies, my little cousin was hyperactive all afternoon.",
+     "prompt": "Which part tells you he had more energy than usual?",
+     "answer": "The hyper part, meaning over: over the usual amount of active.",
+     "picture": [
+      {
+       "icon": "fa6/FaPersonRunning",
+       "color": "1F3A5F"
+      },
+      {
+       "icon": "fa6/FaBolt",
+       "color": "C9A227"
+      }
+     ]
+    }
+   ],
+   "words_to_spell_new": [
+    "instruct",
+    "construct",
+    "structure",
+    "destruction"
+   ],
+   "extension": "1. SAY: \"When you finish, write one sentence that uses destruction.\"\n2. CHECK: the sentence shows something built being wrecked or torn down.\n\nEXTENSION: Beat the number - write 5 more real struct words in 2 minutes, not counting today's four.\nAnswer: e.g. obstruct, instructor, instruction, construction, reconstruct, structural.",
+   "learned_words": {
+    "review": [
+     {
+      "word": "guarantee",
+      "unfair": "u",
+      "notes": "1. SAY: \"Guarantee. The new bike came with a two-year guarantee.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: GA-ruhn-TEE. The u after the g is silent, like in guard."
+     },
+     {
+      "word": "mortgage",
+      "unfair": "t",
+      "notes": "1. SAY: \"Mortgage. My aunty finally paid off her mortgage.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: MOR-gij, two beats. The t is silent, and age at the end says /ij/."
+     }
+    ],
+    "new": {
+     "word": "colleague",
+     "unfair": "ue",
+     "notes": "Why learned: the ue at the end is silent, like in tongue, and the double l is easy to miss.\nSay it: KOL-eeg, two beats, the first strongest.\n1. COPY it twice, saying the letter names: c - o - l - l - e - a - g - u - e.\n2. COVER both and write it a third time from memory, then tick or fix.\nLink: a colleague is someone you work with. In Shark Tank, your business partners are your colleagues."
+    }
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "Our teacher's colleague helped us construct a cubby in the yard.",
+     "targets": [
+      "colleague",
+      "construct"
+     ],
+     "cops": {
+      "capitals": [
+       "Our"
+      ],
+      "punctuation": [
+       "apostrophe in teacher's (the colleague belongs to our teacher)",
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "This week: the new red word colleague and struct in construct.\nTRAP: teachers with no apostrophe. Fix: the colleague belongs to our teacher; student adds the apostrophe before the s."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "Mum got a mortgage for the house; the builder gave a guarantee on its structure.",
+     "targets": [
+      "mortgage",
+      "guarantee",
+      "structure"
+     ],
+     "cops": {
+      "capitals": [
+       "Mum (first word)"
+      ],
+      "punctuation": [
+       "semicolon (it joins two full sentences that belong together, last week's grammar)",
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "This week: struct in structure. From our reviews: guarantee and mortgage, the red words the class voted trickiest last week.\nTRAP: a capital T after the semicolon. Fix: it is still one sentence; student writes a small t."
+    }
+   ]
+  },
+  {
+   "day": "Friday",
+   "type": "combined",
+   "morphology_review": [
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star",
+     "extra_task": {
+      "prompt": "What is one word built from astro, meaning star?",
+      "answers": [
+       "astronaut",
+       "asteroid"
+      ]
+     }
+    },
+    {
+     "morph": "struct",
+     "type": "root",
+     "keyword": "construct",
+     "meaning": "build",
+     "extra_task": {
+      "prompt": "What is one word built from struct, meaning build?",
+      "answers": [
+       "construct",
+       "instruct",
+       "structure"
+      ]
+     }
+    },
+    {
+     "morph": "port",
+     "type": "root",
+     "keyword": "export",
+     "meaning": "bring, carry"
+    },
+    {
+     "morph": "ject",
+     "type": "root",
+     "keyword": "abject",
+     "meaning": "throw"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay",
+     "extra_task": {
+      "prompt": "What is one word built from pend or pens, meaning hang?",
+      "answers": [
+       "pendulum",
+       "pendant"
+      ]
+     }
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "construct",
+     "ejected",
+     "porter",
+     "terrier",
+     "structural",
+     "objection",
+     "exporter",
+     "instruct",
+     "rejected",
+     "hyperlink",
+     "obstruction",
+     "interjection",
+     "subterranean",
+     "transporter",
+     "destruction"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"This side of the room, read rows 1 and 2. That side, rows 3 and 4. Everyone, row 5.\"\n3. ASK: \"Which word means something that blocks the way?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: obstruction.\n4. ASK: \"Odd one out: porter, exporter, terrier. Which one does not belong?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: terrier.\nIf time: \"Why?\" Turn and tell. EXPECT: terrier has terr, land - a dog that digs into the land. The others have port, carry."
+   },
+   "build": {
+    "time": "8 mins",
+    "matrix": {
+     "title": "Build struct words",
+     "rule": "Build real words. Write each one and what it means.",
+     "base": {
+      "morph": "struct",
+      "type": "root",
+      "meaning": "build"
+     },
+     "prefixes": [
+      "con- (together)",
+      "in- (in)",
+      "de- (opposite of)",
+      "re- (again)",
+      "ob- (against)"
+     ],
+     "suffixes": [
+      "-ion (the act of)",
+      "-or (one who)",
+      "-ive (relating to)",
+      "-ure (result of)",
+      "-ed"
+     ],
+     "routine": "OG books - 4 mins",
+     "footer": "Hunt: the longest real word",
+     "notes": "1. SAY: \"struct is in the middle. Join a part from the left, the right, or both, and build a real word. Write the word and what it means.\"\n2. MODEL: say \"con plus struct: construct, to build together\", and write it on the class board.\n3. TIME: 4 min. CIRCULATE: to a stuck student say, \"Start with struct. Put in in front. What does instruct mean?\"\n4. ASK: \"Read me your longest word and what it means.\" Cold call two students. EXPECT: reconstruction, the act of building together again; constructive, relating to building.\nTRAP: a made-up word that sounds right, like destructure. Fix: ask, would you read that in a newspaper? Student builds a real one.\nEXTENSION: Longest word hunt - build the longest real word you can and write its parts.\nHELP: give three starters, construct, instruct, obstruct, and ask for one ending on each.\n---\nANSWERS: construct, instruct, obstruct, destruct (as in self-destruct), reconstruct; add -ion: construction, instruction, obstruction, destruction.\nAlso: constructor, instructor (one who); constructive, instructive, destructive (relating to); structure; constructed, obstructed.\nEXTENSION: e.g. reconstruction = re + con + struct + ion."
+    },
+    "rounds": [
+     {
+      "title": "Complete the sentence",
+      "bank": [
+       "construct",
+       "obstruct",
+       "instructor",
+       "destruction",
+       "instruct",
+       "structure"
+      ],
+      "bank_mode": "extra",
+      "routine": "Whiteboards - show me",
+      "footer": "Check: does struct mean build here?",
+      "round": [
+       {
+        "prompt": "One done for you:\nThe council will ___ a new\nskate park next to the oval.",
+        "answer": "construct",
+        "why": "con- (together) + struct: to build",
+        "worked": true,
+        "notes": "1. SAY: \"Every sentence has a gap, and the bank has six struct words. A word may be used more than once, and some may not be needed.\"\n2. MODEL: \"The council is going to build a skate park. Build together is con plus struct. Construct.\"\n3. SAY: \"Four more. Write the word on your whiteboard. Write it... chin it... show me.\""
+       },
+       {
+        "prompt": "A fallen tree will ___ the road\nuntil the council clears it.",
+        "answer": "obstruct",
+        "why": "ob- (against) + struct: it blocks the way",
+        "notes": "ANSWER: obstruct.\n1. ASK: \"Read it in your head. Which bank word fits?\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN the boards. 80%+ -> click to reveal. Less -> ask what the tree does to cars trying to get past, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it.\"\nTRAP: writing destruction. Fix: the gap after will needs a doing word, and ob- means against - the tree blocks the road; student rewrites obstruct"
+       },
+       {
+        "prompt": "The swimming ___ blew her whistle\nand pointed to the deep end.",
+        "answer": "instructor",
+        "why": "in- (in) + struct + -or (one who)",
+        "notes": "ANSWER: instructor.\n1. ASK: \"Read it in your head. Which bank word fits?\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN the boards. 80%+ -> click to reveal. Less -> ask who blows the whistle at swimming lessons, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it.\"\nTRAP: writing instruct. Fix: the gap needs a person, and -or means one who; student adds or"
+       },
+       {
+        "prompt": "The cyclone left a path of ___\nall the way along the coast.",
+        "answer": "destruction",
+        "why": "de- (opposite of) + struct + -ion (act of)",
+        "notes": "ANSWER: destruction.\n1. ASK: \"Read it in your head. Which bank word fits?\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN the boards. 80%+ -> click to reveal. Less -> ask what a cyclone does to houses and trees, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it.\"\nTRAP: writing structure. Fix: a cyclone tears buildings down, and de- means opposite of; student rewrites destruction"
+       },
+       {
+        "prompt": "Our coach will ___ us on how\nto serve the ball overhand.",
+        "answer": "instruct",
+        "why": "in- (in) + struct: to teach",
+        "notes": "ANSWER: instruct.\n1. ASK: \"Read it in your head. Which bank word fits?\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN the boards. 80%+ -> click to reveal. Less -> ask what a coach does with a new skill, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it.\"\nTRAP: writing instructor. Fix: the coach is already named - the gap is what the coach will do; student rewrites instruct\n---\nANSWERS: construct (worked), obstruct, instructor, destruction, instruct. structure is the spare word - it fits no gap.\nEXTENSION: Two in one - write one sentence that uses structure and destruction and makes sense. e.g. The flood caused destruction, but the old structure stood."
+       }
+      ]
+     }
+    ]
+   },
+   "pos_drill": {
+    "time": "5 mins",
+    "intro": {
+     "title": "Noun, verb or adjective?",
+     "rule": "Read the sentence. What job does the bold word do?",
+     "prompt": "The **construction** of our new gym took all year.",
+     "choices": [
+      "**noun**\nnames a thing or idea",
+      "**verb**\nsomething you do",
+      "**adjective**\ndescribes a noun"
+     ],
+     "answer": "noun",
+     "why": "construction is the thing that took all year",
+     "routine": "Eyes on me - voices off",
+     "footer": "Next: your turn on four suffix cards",
+     "notes": "ANSWER: noun - construction is the thing that took all year.\n1. SAY: \"Last week you voted noun, verb or adjective the trickiest, so we practise it again. The sentence tells us the job.\"\n2. POINT at each choice. SAY: \"A noun names a thing or idea. A verb is something you do. An adjective describes a noun.\"\n3. MODEL: read the sentence. SAY: \"What took all year? The construction. It is the thing in this sentence.\"\n4. SAY: \"The doing word here is took. Construction does not describe anything. So it is a noun.\" REVEAL on the click.\n5. SAY: \"Construct is something you do. Add -ion, the act of, and it becomes a thing. The suffix changed the job.\"\nTRAP: verb, because construct is an action. Fix: cover the -ion, then show it; student says what the suffix changed."
+    },
+    "cards": [
+     {
+      "morph": "-ant",
+      "pos_answer": "noun",
+      "sentence": "The accountant counted the school's money.",
+      "why": "accountant is the person doing the counting",
+      "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-ant means one who or that which. The accountant counted the school's money.\"\n2. ASK: \"What job does accountant do in this sentence: noun, verb or adjective?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: noun.\nSCAN: split or wrong chorus -> do not click. Ask \"Who did the counting?\", then re-ask on three.\n3. REVEAL after the choral answer. SAY: \"The accountant is the person doing the counting, so it is a noun. -ant often names a person who does something, so those -ant words are nouns.\"\nTRAP: verb, because counted is an action. Fix: counted is the verb; ask who counted, student points at accountant."
+     },
+     {
+      "morph": "-ar",
+      "pos_answer": "adjective",
+      "sentence": "The new library has an angular roof.",
+      "why": "angular describes the roof",
+      "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-ar means relating to. The new library has an angular roof.\"\n2. ASK: \"What job does angular do in this sentence: noun, verb or adjective?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: adjective.\nSCAN: split or wrong chorus -> do not click. Ask \"What sort of roof is it?\", then re-ask on three.\n3. REVEAL after the choral answer. SAY: \"Angular describes the roof, so it is an adjective. -ar means relating to, so -ar words often describe.\"\nTRAP: noun, because roof is a thing. Fix: roof is the noun; ask what sort of roof, student says angular."
+     },
+     {
+      "morph": "-ice",
+      "pos_answer": "noun",
+      "sentence": "The bus service runs every ten minutes.",
+      "why": "service is the thing that runs every ten minutes",
+      "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-ice means state or quality. The bus service runs every ten minutes.\"\n2. ASK: \"What job does service do in this sentence: noun, verb or adjective?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: noun.\nSCAN: split or wrong chorus -> do not click. Ask \"What runs every ten minutes?\", then re-ask on three.\n3. REVEAL after the choral answer. SAY: \"Service is the thing that runs every ten minutes, so it is a noun. -ice words name a state or a thing, so they are nouns.\"\nTRAP: verb, because you can service a car. Fix: read the sentence - here nothing is being serviced; ask what runs, student says service."
+     },
+     {
+      "morph": "-ive",
+      "pos_answer": "adjective",
+      "sentence": "Our active team trained twice a week.",
+      "why": "active describes the team",
+      "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-ive means relating to, like. Our active team trained twice a week.\"\n2. ASK: \"What job does active do in this sentence: noun, verb or adjective?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: adjective.\nSCAN: split or wrong chorus -> do not click. Ask \"What sort of team is it?\", then re-ask on three.\n3. REVEAL after the choral answer. SAY: \"Active describes the team, so it is an adjective. -ive words usually describe, like constructive in our matrix.\"\nTRAP: noun, because team is a thing. Fix: team is the noun; ask what sort of team, student says active."
+     }
+    ]
+   },
+   "learned_words": {
+    "review": [
+     {
+      "word": "colleague",
+      "unfair": "ue",
+      "notes": "1. SAY: \"Colleague. Mum's colleague gives her a lift to work.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: KOL-eeg, two beats. The ue at the end is silent, like in tongue."
+     },
+     {
+      "word": "mortgage",
+      "unfair": "t",
+      "notes": "1. SAY: \"Mortgage. The bank lent them the money with a mortgage.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: MOR-gij, two beats. The t is silent, and age at the end says /ij/."
+     }
+    ],
+    "new": {
+     "word": "catalogue",
+     "unfair": "ue",
+     "notes": "Why learned: the ue at the end is silent, just like in colleague. Australian spelling keeps it.\nSay it: KAT-uh-log, three beats, the first strongest.\n1. COPY it twice, saying the letter names: c - a - t - a - l - o - g - u - e.\n2. COVER both and write it a third time from memory, then tick or fix.\nLink: a catalogue is a list of things to buy or borrow. In Shark Tank, your catalogue shows the sharks what you sell."
+    }
+   },
+   "grammar": {
+    "header_notes": "PURPOSE: However and therefore tell the reader how two full sentences connect. A semicolon goes before them and a comma after.\nWHY THIS WEEK: in Week 3 we used however and therefore as connectives; last week the semicolon joined two full sentences. Today they work together.\nTIME: 5 minutes, no more - I do 1 min, We do 1 question, You do 3 questions at about 30 seconds each. One question per slide; your click reveals the answer.\nROUTINE: all grammar is written in the OG book. No boards - books, fingers and voices only.\nCHECK: semicolon before, comma after, and each side must make sense as a full sentence on its own.",
+    "i_do": {
+     "title": "Join with however or therefore",
+     "rule": "Semicolon, then however or therefore, then a comma.",
+     "example": "We built a cubby; however, the roof leaked.\nIt rained all day; therefore, we stayed in.",
+     "items": [
+      "however = the other side, a surprise",
+      "therefore = so, the result"
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Your turn: however or therefore?",
+     "notes": "ANSWER: We built a cubby; however, the roof leaked.\n1. SAY: \"However and therefore tell your reader how two ideas connect. However shows the other side. Therefore means so, the result.\"\n2. WRITE: copy \"We built a cubby. The roof leaked.\" on the class board. CROSS OUT the first full stop. WRITE a semicolon, however and a comma, and change The to a small t. However takes a small h too.\n3. ASK: \"Is a leaking roof a surprise, or the result of building? Thumbs up surprise, thumbs down result, voices off.\" 5 sec. EXPECT: thumbs up, so however.\n4. POINT at the second example. SAY: \"Staying in is the result of the rain, so therefore.\"\nTRAP: a comma before however. Fix: a comma cannot join two full sentences; student swaps it for a semicolon.\nCLARIFY: if asked why not just but or so, say however and therefore make a persuasive piece sound grown-up, and when they join two sentences into one, they need the semicolon.\n---\nPREP: semicolon + however or therefore + comma is still one sentence, so the word after the comma takes a small letter."
+    },
+    "we_do": {
+     "title": "However or therefore?",
+     "rule": "Pick the word that shows how the ideas connect.",
+     "round": [
+      {
+       "prompt": "Our team trained all winter; ___,\nwe won the grand final.",
+       "choices": [
+        "however",
+        "therefore",
+        "and"
+       ],
+       "answer": "therefore",
+       "why": "winning is the result of training",
+       "routine": "Fingers: 1, 2 or 3",
+       "footer": "Stem: It is right because ...",
+       "notes": "ANSWER: 2 - therefore. Winning is the result of all that training.\n1. SAY: \"Read it in your head. Is winning a surprise, or the result?\"\n2. ASK: \"One finger however, two therefore, three and, voices off, show me on three.\" 5 sec. EXPECT: two fingers.\n3. REVEAL after fingers are scanned. ASK: \"How do you know?\" Cold call one student. EXPECT: they won because they trained.\nTRAP: choosing 3. Fix: after the semicolon this gap needs however or therefore, then the comma; student votes again.\nCLARIFY: if a student says however, ask \"Would winning surprise us after all that training?\" No, so therefore."
+      }
+     ]
+    },
+    "you_do": {
+     "title": "Write the joining words",
+     "rule": "Write the semicolon, however or therefore, and the comma.",
+     "routine": "OG books - 30 sec - pens down",
+     "footer": "Check: semicolon before, comma after?",
+     "round": [
+      {
+       "prompt": "We packed our raincoats ___\nwe stayed dry on the hike.",
+       "answer": "We packed our raincoats; therefore, we stayed dry on the hike.",
+       "why": "staying dry is the result",
+       "notes": "ANSWER: ; therefore, - We packed our raincoats; therefore, we stayed dry on the hike.\n1. SAY: \"Write only the joining words: the semicolon, however or therefore, and the comma. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask \"surprise or result?\", then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Staying dry is the result of the raincoats, so therefore.\"\nTRAP: a capital T on Therefore, like in Week 3. Fix: after a semicolon it is still one sentence; student writes a small t.\nEXTENSION: Two in one - write one sentence with a semicolon and however that uses two struct words.\nHELP: write ; ______ , in their book so they choose only the word."
+      },
+      {
+       "prompt": "The builders worked all weekend ___\nthe hall was still not finished.",
+       "answer": "The builders worked all weekend; however, the hall was still not finished.",
+       "why": "a surprise after all that work",
+       "notes": "ANSWER: ; however, - The builders worked all weekend; however, the hall was still not finished.\n1. SAY: \"Write the joining words. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask what we expected after a whole weekend of work, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. We expected a finished hall, so not finished is the other side: however.\"\nTRAP: therefore. Fix: the work did not cause the hall to be unfinished - it is a surprise; student swaps to however."
+      },
+      {
+       "prompt": "The plan for the new structure was great ___\nthe council rejected it.",
+       "answer": "The plan for the new structure was great; however, the council rejected it.",
+       "why": "the rejection is a surprise",
+       "notes": "ANSWER: ; however, - The plan for the new structure was great; however, the council rejected it.\n1. SAY: \"Last one. Write the joining words. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> ask whether a great plan usually gets thrown back, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. A great plan that gets rejected is a surprise, so however.\"\n4. SAY: \"In your next persuasive piece, use however to show the other side, and therefore to show a result.\"\nTRAP: a capital T on the. Fix: still one sentence; student writes a small t.\n---\nANSWERS: 1. ; therefore,  2. ; however,  3. ; however,\nEXTENSION: e.g. The council wanted to construct a pool; however, the old structure was in the way."
+      }
+     ]
+    }
+   },
+   "vote": {
+    "title": "Trickiest this week?",
+    "rule": "Which was trickiest this week? Hold up 1, 2, 3 or 4.",
+    "options": [
+     "Spelling struct words",
+     "colleague and catalogue",
+     "however and therefore",
+     "Noun, verb or adjective"
+    ],
+    "notes": "1. SAY: \"Before we finish, I want to know what was trickiest this week. Read the four choices with me.\"\n2. ASK: \"Hold up 1, 2, 3 or 4 fingers for the trickiest one, voices off, show me on three.\" 5 sec. Count the most common number.\n3. WRITE the winner into next week's From our reviews line."
+   }
+  }
+ ]
+}

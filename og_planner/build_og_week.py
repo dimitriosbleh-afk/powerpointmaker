@@ -1080,6 +1080,14 @@ def bank_line(activity):
     return "Word bank:  " + "   ".join(str(w) for w in activity.get("bank", []))
 
 
+BUILD_ROUND_STEPS = {
+    "break_apart": "BREAK whole words back into their parts.",
+    "name_it": "NAME the word from its meaning on whiteboards, answer on the click.",
+    "complete_sentence": "COMPLETE each sentence with a bank word on whiteboards, answer on the click.",
+    "choose_meaning": "CHOOSE the best meaning on whiteboards, answer on the click.",
+}
+
+
 def round_format(rnd):
     """Which Wednesday round this is: break_apart / complete_sentence /
     choose_meaning / name_it (3f, v1.9)."""
@@ -2777,8 +2785,11 @@ def build_session(pkg, week, session, out_path):
     if v19:
         # v1.9 (1c): the week's print pack named in every deck, as plain text -
         # a relative link would not survive the Google Slides import
+        # a short week with no week_review day has no Friday Review to name
+        fr_pages = (", extension and Friday Review" if any(
+            s.get("friday_review") for s in week["sessions"]) else " and extension")
         overview_notes += (f"\n---\nPRINT PACK: {print_pack.file_name(week)} in the week "
-                           "folder - every enabler, extension and Friday Review page for "
+                           f"folder - every enabler{fr_pages} page for "
                            "the week, with a cover saying who each page is for.")
     d.add(T["overview"], fill_overview, notes=overview_notes)
 
@@ -3334,11 +3345,23 @@ def build_session(pkg, week, session, out_path):
         mx = bd.get("matrix")
         base = (mx or {}).get("base") or {}
 
-        def fill_build_hdr(root, bd=bd):
+        # a combined day (11) has no Break it apart round: its header names the
+        # rounds that actually run (older break rounds carry no `parts`, so
+        # round_format cannot tell them apart - other days keep the fixed text)
+        hdr_title, hdr_notes = "Build and Break", HEADER_NOTES["build"]
+        if session.get("type") == "combined":
+            hdr_title = "Build words"
+            steps = [BUILD_ROUND_STEPS[round_format(r)] for r in bd.get("rounds", [])]
+            hdr_notes = "\n".join(
+                ["PROCEDURE:",
+                 "1. BUILD real words from the matrix in OG books, then say what each means."]
+                + [f"{n}. {st}" for n, st in enumerate(steps, start=2)])
+
+        def fill_build_hdr(root, bd=bd, hdr_title=hdr_title):
             sp = find_sp(root, SHAPE["hdr_wts_new_txt"])
-            replace_run_text(sp, "Words to Spell- New Morphology", "Build and Break")
+            replace_run_text(sp, "Words to Spell- New Morphology", hdr_title)
             replace_run_text(sp, "2 mins", bd.get("time", "15 mins"))
-        d.add(T["hdr_wts_new"], fill_build_hdr, notes=HEADER_NOTES["build"])
+        d.add(T["hdr_wts_new"], fill_build_hdr, notes=hdr_notes)
         if mx:
             if base:
                 resolve_card(day, "matrix base", base)
@@ -3415,6 +3438,12 @@ def build_session(pkg, week, session, out_path):
                 warn(f"{day}: parts-of-speech card {card['morph']!r} needs a "
                      "`sentence` using its keyword - students forget older "
                      "suffixes (3g, v1.8)")
+            elif v18 and kw and not re.search(rf"\b{re.escape(kw)}\b",
+                                              card["sentence"], re.I):
+                # the slide bolds the keyword and asks "What job does <keyword>
+                # do?" - a sentence without it asks about a word that is not there
+                warn(f"{day}: parts-of-speech card {card['morph']!r} sentence does "
+                     f"not use the card keyword {kw!r} (3g)")
             if v18 and pos not in POS_JOBS:
                 warn(f"{day}: parts-of-speech card {card['morph']!r} makes a "
                      f"{pos!r}; the card choices are only noun, verb and "

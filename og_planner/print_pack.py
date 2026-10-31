@@ -78,8 +78,12 @@ def build_pack(week, week_dir, decks, friday):
         if en.exists():
             student.append((day, "Enabler sheet", "Students who need support", en, 0, 0))
         if ex.exists():
-            student.append((day, "Extension sheet", "Students ready for more", ex, 0, 0))
-            teacher.append((day, "Extension answers", "Teacher", ex, 1, 1))
+            # the student sheet is the first half, its answer key the second
+            with fitz.open(ex) as d:
+                half = d.page_count // 2
+            what = "Extension sheet" + (" (2 pages)" if half > 1 else "")
+            student.append((day, what, "Students ready for more", ex, 0, half - 1))
+            teacher.append((day, "Extension answers", "Teacher", ex, half, 2 * half - 1))
     if friday:
         student.append(("Friday", "Friday Review (2 pages)", "Every student",
                         friday["worksheet"], 0, friday["student_pages"] - 1))
@@ -145,9 +149,13 @@ def build_pack(week, week_dir, decks, friday):
             y += 13
         y -= 13
     y += 30
-    for ln in _wrap(fr, "Enabler and extension sheets: one copy for each student who needs "
-                        "one that day. The Friday Review: one copy of pages 1-2 for every "
-                        "student, printed double-sided if you like.", 10, PAGE_W - 2 * M):
+    closing = "Enabler and extension sheets: one copy for each student who needs one that day."
+    if any("(2 pages)" in row[1] for row in student if row[1].startswith("Extension")):
+        closing += " Print a 2-page extension sheet double-sided."
+    if friday:
+        closing += (" The Friday Review: one copy of pages 1-2 for every student, "
+                    "printed double-sided if you like.")
+    for ln in _wrap(fr, closing, 10, PAGE_W - 2 * M):
         page.insert_text((M, y), ln, fontname="r", fontsize=10, color=GREY)
         y += 13
     out = week_dir / file_name(week)

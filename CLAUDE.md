@@ -361,8 +361,9 @@ boxes for Break it apart, allows only three extension types, and handles short w
 `term4_week3.json`). v1.9 (Oct 2026, `"og_version": "1.9"`, ported from the 5/6
 Challenge team's package and re-pitched for 5/6) adds a meaning picture on every Words
 to Spell Review word, a rotating Wednesday third round (word bank / best meaning), a
-one-page enabler sheet (separated Victorian Modern letters) and extension sheet per
-writing day (`og_planner/enabler_pdf.py`), a Friday Review worksheet + Teacher
+one-page enabler sheet (separated Victorian Modern letters) per writing day
+(`og_planner/enabler_pdf.py`) and an extension sheet on the school worksheet layout
+(`og_planner/render_extension.js`), a Friday Review worksheet + Teacher
 Follow-up sheet (`og_planner/friday_review_pdf.py`) and one weekly print pack with a
 cover (`og_planner/print_pack.py`);
 the 3/4 team's card wording (`og_planner/school_cards.json`) is advisory NOTEs only.

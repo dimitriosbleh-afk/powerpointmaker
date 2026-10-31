@@ -164,8 +164,8 @@ Grade 5/6 class (Sabrina spoke highly of their decks). It keeps the v1.8 week an
    (3f).
 3. ENABLER AND EXTENSION SHEETS: for each writing session (Monday, Tuesday, Thursday),
    a one-page A4 enabler on dotted thirds in separated Victorian Modern letters, with
-   the week's teaching left as the gaps, and its mirror, an extension sheet with the same
-   sections pushed a step further (1b). Every printable for the week lands in one PRINT PACK
+   the week's teaching left as the gaps, and an extension sheet with the same sections
+   pushed a step further, on the school worksheet layout (1b). Every printable for the week lands in one PRINT PACK
    with a cover saying who each page is for (1c), so staff print once and organise
    nothing.
 4. THE FRIDAY REVIEW WORKSHEET: Friday runs the card drill and Words to Read Review,
@@ -355,8 +355,11 @@ the spec, so they always match the slides. You author nothing extra, but you ren
 check every sheet.
 
 WHICH SESSIONS. Monday (`teach`), Tuesday (`spell`), Thursday (`apply`, when it has
-learned words or dictation), and a Friday only when it has no Friday Review. Wednesday's
-build is whiteboards and OG books, and the Friday Review is its own written task.
+learned words or dictation), and a Friday only when it has no Friday Review. A
+three-session week's `combined` day gets Thursday's sheet, because it carries Thursday's
+learned words and suffix cards (Term 4 Week 5). Wednesday's build is whiteboards and
+OG books, and the Friday Review is its own written task. A week with no Friday Review
+leaves it off the print pack cover and the Weekly Overview notes.
 Files: `Enablers/1. Monday enabler.pdf` etc. (number = session order), named in the
 Weekly Overview notes of every deck that week.
 
@@ -387,31 +390,38 @@ SECTIONS. Monday: the morpheme card (`ject = throw`), the morpheme three times t
 Morphology, Sound Bank, Words to Spell, Learned Words (Review), Learned Words (New),
 Dictation. Thursday: Learned Words, and Dictation when the short-week rule puts one
 there. Every heading sits in its own strip, so no descender runs through it. One page,
-always: the builder fails a sheet that cannot fit even at the smallest size.
+always: the builder fails a sheet that cannot fit even at the smallest size. The page
+keeps a 24 pt foot margin (Term 4 Week 5: a Tuesday-type sheet with two long review
+learned words ran 6 pt past the old 30 pt margin at 4.2 mm) - trim the session, never
+the size.
 
 EXTENSION SHEETS (James, 30 Oct 2026: "make an extension page equivalent"). Every
-session that gets an enabler also gets `Extension/1. Monday extension.pdf`: the
-enabler's MIRROR for students ready for more - the same sections in the same order on
-the same dotted thirds - plus a second page of answers (teacher copy). Where the
-enabler prints the word to trace with a gap, the extension prints only what a student
-needs to start, and the whole word is theirs; then each section goes one step further
-(3e: the same concept, pushed):
+session that gets an enabler also gets `Extension/1. Monday extension.pdf`, for
+students ready for more: the enabler's sections in the same order, each pushed one step
+further (3e: the same concept, pushed). Where the enabler prints the word to trace with
+a gap, the extension prints only what a student needs to start, and the whole word is
+theirs:
 - New Morphology: Monday - three words on the morpheme and what each means, the
   longest word they can build with its word sum, a sentence with TWO of the words.
-  Tuesday - the grid meaning only (`to throw in =`), the student writes the word.
-- Sound Bank: blank lines for each part as it is dictated, then a word for two parts.
-- Words to Spell: blank numbered lines, then the parts marked with `/`.
+  Tuesday - the grid meaning only (`to throw in`), the student writes the word.
+- Sound Bank: a box for each part as it is dictated, then a word for two parts.
+- Words to Spell: each word spelled, then written again with its parts marked with `/`.
 - Learned Words: each written from memory, then the new word in a sentence (on
   Thursday, in the week's grammar focus).
-- Dictation: blank rows for both sentences, then one more word on the morpheme added
-  to sentence 1 with a `^`.
+- Dictation: lines for both sentences, then one more word on the morpheme added to
+  sentence 1 with a `^`.
 - Thursday adds the day's real work the enabler leaves to the slides: a new word for
   each suffix card with its job (noun, verb or adjective), and a sentence using two of
   them that shows each word doing that job.
-Text the student reads is printed solid (VicRegular), never dotted: nothing on an
-extension sheet is for tracing. Extension students are the confident writers, so the
-sheet may run smaller than the enabler (down to 3.7 mm thirds, near their books). The
-builder writes it from the spec, so nobody authors it.
+THE LOOK IS THE SCHOOL WORKSHEET, NOT THE ENABLER (James, 31 Oct 2026: extension
+students do not need the enabler's look). No dotted thirds and no Victorian Modern:
+`og_planner/render_extension.js` draws the sheet with the shared worksheet layout
+(`MEGA_PROMPT.md` 86) - lettered sections, numbered task cards, ruled lines and tables,
+the literacy Years 5-6 palette - then the answer key in the same layout with the
+answers in colour. One page, or two printed as one sheet double-sided (86); the answer
+key follows at the same length, and the print pack cover says which pages are which.
+The builder writes it from the spec (`enabler_pdf.extension_sheet`), so nobody
+authors it.
 
 THE DECKS NAME THE SHEETS. The title slide's notes say which enabler and extension
 sheet the day uses, so the teacher knows what to hand out without opening the pack.
@@ -1487,7 +1497,10 @@ teacher would explain it:
   words (noun - names a thing or idea, verb - something you do, adjective - describes a
   noun); then, behind one click, a green bar with the answer and its reason taken from
   the sentence (`"why": "gravity is the thing that pulls the ball"`, required). The
-  builder draws all of this from `morph`, `pos_answer`, `sentence` and `why`.
+  builder draws all of this from `morph`, `pos_answer`, `sentence` and `why`. The
+  sentence must use the CARD's keyword (-ive: active, never constructive): the slide
+  bolds the keyword and asks "What job does active do?", so the builder warns when the
+  keyword is missing (Term 4 Week 5).
 - CHOOSE THE SENTENCE SO THE JOB IS PROVABLE FROM IT: the keyword is the thing doing or
   receiving the action (noun), the action itself (verb), or the word describing a noun
   that is in the sentence (adjective). The `why` names that evidence.
@@ -2793,7 +2806,7 @@ fewest sessions a week will ever have):
 |---|---|---|
 | 5 | teach, spell, build, apply, week_review | the default |
 | 4 | teach, spell, build, apply | Friday's review day goes; Thursday carries the vote and ONE dictation sentence in the grammar focus (6) |
-| 3 | teach, spell, combined | `combined` = card drill, reading review, word matrix, Write the word that names... round, parts of speech, learned words, grammar, vote - about 30 min. The Break it apart round sits out (leave it out of `build.rounds`); put its words into next week's reading review |
+| 3 | teach, spell, combined | `combined` = card drill, reading review, word matrix, the week's rotating third round (3f; Term 4 Week 5 ran Complete the sentence, so its build header reads Build words), parts of speech, learned words, grammar, vote - about 30 min. The Break it apart round sits out (leave it out of `build.rounds`); put its words into next week's reading review |
 
 Every day still opens with the card drill and the reading review. The day with no
 session stays in `days`/`overview` as "No session this week". Filenames:
