@@ -368,7 +368,10 @@ THE 5/6 RE-PITCH (from the 3/4 sheets):
   `VICCursiveSolid`, whose letter widths are only right inside Word (in a PDF the
   letters pile on top of each other). Fonts are read from the installed fonts
   (`C:\Windows\Fonts`, or on a Mac `~/Library/Fonts` after Font Book's Install) and
-  never copied into this public repo.
+  never copied into this public repo. VicDots and VicRegular are paid School Fonts fonts; where
+  they are missing the builder falls back to the Department's free Victorian Modern
+  Cursive (`Vicmorg_.ttf`, the same separated letters) with the tracing letters in
+  pale grey instead of dots (31 Oct 2026).
 - DOTTED THIRDS at about 4.9 mm (a 14.8 mm row), down to 4.2 mm to fit one page, with a
   NOTE below 4.4 mm. The 3/4 sheets used 6 mm.
 - THE TEACHING IS THE GAP. The 3/4 sheets printed whole words to trace. Ours leave the

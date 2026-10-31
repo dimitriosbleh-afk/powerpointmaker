@@ -774,9 +774,11 @@ class OgV19Tests(unittest.TestCase):
                 with fitz.open(week_dir / "Enablers" / name) as doc:
                     self.assertEqual(doc.page_count, 1, name)
                     fonts = {f[3] for f in doc[0].get_fonts()}
-                    # separated Victorian Modern letters, never joined cursive
-                    self.assertTrue(any("VicDots" in f for f in fonts), fonts)
-                    self.assertFalse(any("Cursive" in f for f in fonts), fonts)
+                    # separated Victorian Modern letters, never joined cursive: VicDots,
+                    # or the Department's free fallback (separated despite its name)
+                    free = {f for f in fonts if f.startswith("VIC MODERN")}
+                    self.assertTrue(any("VicDots" in f for f in fonts) or free, fonts)
+                    self.assertFalse(any("Cursive" in f for f in fonts - free), fonts)
             # Extension sheets: the enabler's mirror - same days, same sections in
             # the same order - plus an answers page.
             ext = sorted(p.name for p in (week_dir / "Extension").glob("*.pdf"))

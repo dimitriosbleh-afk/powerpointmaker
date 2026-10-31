@@ -1,6 +1,6 @@
 {
   "_purpose": "Companion to taught_morphemes.json: the learned words and grammar focuses this cohort has been taught, by term and week. Read this instead of re-mining old week specs when planning review weeks, dictation (section 6 needs learned words from 2-3 weeks ago) and the taught-only question rule (section 2b gates grammar labels). The builder does not read this file.",
-  "_rule": "Append a week's learned words and grammar focus when its specs are delivered. For Term 3, the unfair part and Say it line are the settled values - reuse them verbatim instead of re-deciding them. Morphemes live in taught_morphemes.json, and the words taught from each uncaptured card live on its morpheme_bank.json entry.",
+  "_rule": "Append a week's learned words and grammar focus when its specs are delivered. For Term 3, the unfair part and Say it line are the settled values - reuse them verbatim instead of re-deciding them. Record each week's Friday vote under reviews; it is the class-level signal for next week's From our reviews line (OG_MEGA_PROMPT 12). Morphemes live in taught_morphemes.json, and the words taught from each uncaptured card live on its morpheme_bank.json entry.",
   "learned_words": {
     "term2": {
       "_source": "Teacher's Term 2 planner, as recorded 2026-07. Unfair parts and pronunciations were not recorded. Linked to the First Nations and civics inquiry.",
@@ -91,8 +91,13 @@
         {"week": 1, "focus": "Upgrade nouns within an argument", "class_language": "three upgrades - exact (exactly who or what?), strength (does it fit the facts? too strong is hyperbole), built up into a noun group (describer, noun, detail); Mon exact, Tue strength, Wed noun group, Thu all three"},
         {"week": 2, "focus": "Upgrade verbs within an argument", "class_language": "three verb upgrades - exact (exactly what happens?), strength (does it fit the facts? too strong is hyperbole), saying verbs (how was it said? warn, insist, agree, admit, show); Mon exact, Tue strength, Wed saying verbs, Thu all three, Fri week review. First week on v1.6 rounds: I do, one We do item, three You do items, answer on the click"},
         {"week": 3, "focus": "Join sentences using connectives to link arguments, evidence and reasons", "class_language": "however and on the other hand = the other side, therefore = so, the result, for example = the proof; the connective starts the second sentence and takes a comma. First v1.7 week: one grammar block, Thursday only. Parts of speech on suffixes taught from this week: noun names it, verb does it, adjective describes a noun, adverb tells how, when or where."},
-        {"week": 4, "focus": "Identify the function of a semicolon and generate a compound sentence where a semicolon replaces the conjunction between two independent clauses", "class_language": "a semicolon joins two full sentences and takes the place of and, but or so - never both; test each side can stand alone; small letter after it unless I or a name. First v1.8 week: parts of speech by frame - the ___ = noun, to ___ = verb, very ___ = adjective."}
+        {"week": 4, "focus": "Identify the function of a semicolon and generate a compound sentence where a semicolon replaces the conjunction between two independent clauses", "class_language": "a semicolon joins two full sentences and takes the place of and, but or so - never both; test each side can stand alone; small letter after it unless I or a name. First v1.8 week: parts of speech read from a sentence - what job does the word do here? noun names a thing or idea, verb is something you do, adjective describes a noun (frames retired 23 Oct 2026, before it was taught)."}
       ]
     }
+  },
+  "reviews": {
+    "term4": [
+      {"week": 4, "vote": "Trickiest this week? (Friday, fingers 1-4, 22 students)", "results": {"Spelling ject words": 3, "guarantee and mortgage": 7, "Semicolons": 0, "Noun, verb or adjective": 12}, "from_our_reviews": "noun, verb or adjective; guarantee and mortgage", "note": "Parts of speech was the first week on the sentence test; semicolons landed (0 votes)."}
+    ]
   }
 }

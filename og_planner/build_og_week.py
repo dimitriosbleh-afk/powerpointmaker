@@ -4221,9 +4221,9 @@ def build_enabler(week, session, number, folder):
     extension sheet in ../Extension/ (1b)."""
     day = session["day"]
     if not enabler_pdf.fonts_available():
-        warn(f"{day}: VIC handwriting fonts (VICDOTS_.TTF, VICREGUL.TTF) are not "
-             "installed - add them to Windows Fonts or, on a Mac, open each in Font "
-             "Book and click Install, to build enabler sheets (1b)")
+        warn(f"{day}: no VIC handwriting font is installed - install VICDOTS_.TTF and "
+             "VICREGUL.TTF (School Fonts), or the Department's free Victorian Modern "
+             "Cursive (Vicmorg_.ttf, traced in grey), to build enabler sheets (1b)")
         return
     path = folder / enabler_pdf.file_name(number, day)
     try:

@@ -17,7 +17,8 @@ Ported from the 5/6 Challenge team's package (Oct 2026), whose sheets copied a
 Every row is a solid baseline with two dotted lines above it: the x-height fills
 the lowest third, ascenders reach the top line, descenders drop a third into the
 next row.  Fonts are read from the installed fonts (Windows or Mac) and never
-copied into the repo.
+copied into the repo; without VicDots/VicRegular the free Department font is
+used, traced in grey (see FALLBACK below).
 
 build_og_week.py calls build_session_sheet() for each session; run it alone with:
     python og_planner/enabler_pdf.py <week spec>.json <out dir>
@@ -46,6 +47,13 @@ def find_font(*names):
 
 DOTTED = find_font("VICDOTS_.TTF")    # VicDots: dotted Victorian Modern, separated
 SOLID = find_font("VICREGUL.TTF")     # VicRegular: the same letters, solid
+# VicDots and VicRegular are paid School Fonts fonts.  Where they are not installed
+# (James's Mac, 31 Oct 2026), fall back to the Department's free Victorian Modern
+# Cursive (Vicmorg_.ttf, separated letters) and trace in pale grey instead of dots.
+FREE = find_font("Vicmorg_.ttf")
+FALLBACK = not (DOTTED.exists() and SOLID.exists()) and FREE.exists()
+if FALLBACK:
+    DOTTED = SOLID = FREE
 HEAD = find_font("arialbd.ttf", "Arial Bold.ttf")
 BODY = find_font("arial.ttf", "Arial.ttf")
 ITALIC = find_font("ariali.ttf", "Arial Italic.ttf")
@@ -55,6 +63,10 @@ LEFT, RIGHT = 36.0, PAGE_W - 36.0
 TOP, BOTTOM = 34.0, PAGE_H - 30.0
 GREY = (0.5, 0.5, 0.5)
 SIZE_PER_THIRD = 2.7     # x-height 0.33 em = 0.9 of a third (measured, both fonts)
+TRACE = (0, 0, 0)        # colour of the letters students trace
+if FALLBACK:
+    SIZE_PER_THIRD = 2.25    # Vicmorg_ x-height is 0.40 em (measured)
+    TRACE = (0.62, 0.62, 0.62)
 MIN_GAP = 36.0
 WORD_GAP = 0.45          # word space in a traced sentence, as a share of the font size
 # Year 5/6 thirds: 14 pt = 4.9 mm (a 14.8 mm row) down to 12 pt = 4.2 mm.
@@ -251,7 +263,7 @@ def blank_w(text, size):
 def draw_item(page, item, x, base, size):
     for kind, val in item:
         if kind == "t":
-            page.insert_text((x, base), val, fontname="vd", fontsize=size)
+            page.insert_text((x, base), val, fontname="vd", fontsize=size, color=TRACE)
             x += font(DOTTED).text_length(val, fontsize=size)
         elif kind == "bold":
             page.insert_text((x, base), val, fontname="vs", fontsize=size, render_mode=2,
