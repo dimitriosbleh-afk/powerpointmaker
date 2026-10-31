@@ -2755,6 +2755,17 @@ def build_session(pkg, week, session, out_path):
                         "for more. Both are in the week's print pack.")
     d.add(T["title"], fill_title, notes=title_notes)
 
+    # v1.9 (1b): one notes line at the start of each block saying which sheet
+    # section students fill in now - above the divider, where it is read live
+    cues = enabler_pdf.sheet_cues(week, session) if v19 else {}
+
+    def with_cue(notes, block):
+        cue = cues.get(block)
+        if not cue:
+            return notes
+        live, sep, prep = str(notes).partition("\n---")
+        return f"{live}\n{cue}{sep}{prep}"
+
     # --- 2 weekly overview
     ov = week["overview"]  # dict day -> {morphology, grammar, learned_words}
     days = week.get("days", ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"])
@@ -2909,7 +2920,8 @@ def build_session(pkg, week, session, out_path):
         if len(sb) > 9:
             warn(f"{day}: sound bank has {len(sb)} entries; only 9 boxes - extras dropped")
         d.add(T["hdr_sound_bank"],
-              notes=HEADER_NOTES["sound_bank_v17" if v17 else "sound_bank"])
+              notes=with_cue(HEADER_NOTES["sound_bank_v17" if v17 else "sound_bank"],
+                             "sound_bank"))
 
         def fill_sound_bank(root):
             filled = []
@@ -2979,7 +2991,7 @@ def build_session(pkg, week, session, out_path):
 
     # --- words to spell review (one reveal slide per word)
     if want("wts_review"):
-        d.add(T["hdr_wts_review"], notes=HEADER_NOTES["wts_review"])
+        d.add(T["hdr_wts_review"], notes=with_cue(HEADER_NOTES["wts_review"], "wts_review"))
         wsr = session["words_to_spell_review"]
         lo, hi = (6, 10) if v17 else (8, 12)
         if not lo <= len(wsr) <= hi:
@@ -3264,13 +3276,14 @@ def build_session(pkg, week, session, out_path):
             set_runs(bsp, [[]])
             draw_structured_slide(root, ks, MORPH_MAGENTA, MORPH_TINT,
                                   f"{day} keyword_sentence")
-        d.add(ks_tidx, fill_ks, notes=ks.get("notes", ""))
+        d.add(ks_tidx, fill_ks, notes=with_cue(ks.get("notes", ""), "keyword"))
 
     if want("wts_new") and session.get("words_to_spell_new"):
         def fill_wts_new_hdr(root):
             sp = find_sp(root, SHAPE["hdr_wts_new_txt"])
             replace_run_text(sp, "New Morphology", section)
-        d.add(T["hdr_wts_new"], fill_wts_new_hdr, notes=HEADER_NOTES["wts_new"])
+        d.add(T["hdr_wts_new"], fill_wts_new_hdr,
+              notes=with_cue(HEADER_NOTES["wts_new"], "wts_new"))
 
         spell = session["words_to_spell_new"]
         if len(spell) != 4:
@@ -3506,7 +3519,8 @@ def build_session(pkg, week, session, out_path):
     if want("lw") and session.get("learned_words"):
         lw = session["learned_words"]
         d.add(T["hdr_review_lw"],
-              notes=HEADER_NOTES["learned_review_v18" if v18 else "learned_review"])
+              notes=with_cue(HEADER_NOTES["learned_review_v18" if v18 else "learned_review"],
+                             "learned"))
         for item in lw.get("review", []):
             def fill_lw(root, item=item):
                 sp = find_sp(root, SHAPE["lw_word"][22])
@@ -3516,7 +3530,8 @@ def build_session(pkg, week, session, out_path):
         if lw.get("new"):
             item = lw["new"]
             d.add(T["hdr_new_lw"],
-                  notes=HEADER_NOTES["learned_new_v18" if v18 else "learned_new"])
+                  notes=with_cue(HEADER_NOTES["learned_new_v18" if v18 else "learned_new"],
+                                 "learned_new"))
 
             def fill_lw_new(root, item=item):
                 sp = find_sp(root, SHAPE["lw_word"][25])
@@ -3531,7 +3546,7 @@ def build_session(pkg, week, session, out_path):
 
     def emit_dictation():
         if want("dictation") and session.get("dictation"):
-            d.add(T["hdr_dictation"], notes=HEADER_NOTES["dictation"])
+            d.add(T["hdr_dictation"], notes=with_cue(HEADER_NOTES["dictation"], "dictation"))
             dictation_items = session["dictation"]
             if len(dictation_items) == 2:
                 meters = [item.get("meter") for item in dictation_items]

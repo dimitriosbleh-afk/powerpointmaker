@@ -386,9 +386,10 @@ THE 5/6 RE-PITCH (from the 3/4 sheets):
   most-recent-first, not easy-to-hard, so that step does not carry over.)
 
 SECTIONS. Monday: the morpheme card (`ject = throw`), the morpheme three times to trace,
-`My keyword and what it means`, `My sentence with a ject word`. Tuesday: New
-Morphology, Sound Bank, Words to Spell, Learned Words (Review), Learned Words (New),
-Dictation. Thursday: Learned Words, and Dictation when the short-week rule puts one
+`My keyword and what it means`, `My sentence with a ject word`. Tuesday: Sound Bank,
+Words to Spell, New Morphology, Learned Words (Review), Learned Words (New), Dictation -
+the deck's own order, so the sheet is filled top to bottom as the lesson runs (31 Oct
+2026). Thursday: Learned Words, and Dictation when the short-week rule puts one
 there. Every heading sits in its own strip, so no descender runs through it. One page,
 always: the builder fails a sheet that cannot fit even at the smallest size. The page
 keeps a 24 pt foot margin (Term 4 Week 5: a Tuesday-type sheet with two long review
@@ -403,7 +404,9 @@ a gap, the extension prints only what a student needs to start, and the whole wo
 theirs:
 - New Morphology: Monday - three words on the morpheme and what each means, the
   longest word they can build with its word sum, a sentence with TWO of the words.
-  Tuesday - the grid meaning only (`to throw in`), the student writes the word.
+  Tuesday - spell each new word as it is read, then write what it means. (It used to
+  print the meaning for the student to write the word, but the teacher says the word
+  aloud on the slide, so it gave the answer away. 31 Oct 2026.)
 - Sound Bank: a box for each part as it is dictated, then a word for two parts.
 - Words to Spell: each word spelled, then written again with its parts marked with `/`.
 - Learned Words: each written from memory, then the new word in a sentence (on
@@ -425,6 +428,15 @@ authors it.
 
 THE DECKS NAME THE SHEETS. The title slide's notes say which enabler and extension
 sheet the day uses, so the teacher knows what to hand out without opening the pack.
+
+WHEN THEY FILL THEM IN (James, 31 Oct 2026). Both sheets are done during the lesson,
+alongside the class, in place of the OG book for those students - not after it. The
+builder adds a `SHEETS:` line to the live zone of each block's first slide naming the
+section that is live now (`SHEETS: Words to Spell - enabler, and extension section
+B.`), so the teacher can point a student to it at a glance. On a day with the suffix
+job drill, extension students fill the Suffix jobs section once the last card is
+revealed, while the class moves on to learned words, then carry on with Learned Words.
+You author none of these lines.
 
 ## 1c. THE WEEK'S PRINT PACK (v1.9)
 

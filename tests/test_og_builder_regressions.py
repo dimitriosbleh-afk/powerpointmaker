@@ -796,13 +796,17 @@ class OgV19Tests(unittest.TestCase):
                     self.assertIn("Teacher copy", doc[half].get_text().replace("\xa0", " "))
                     self.assertNotIn("Teacher copy", doc[half - 1].get_text())
             with fitz.open(week_dir / "Extension" / "2. Tuesday extension.pdf") as doc:
-                page1 = "".join(doc[i].get_text() for i in range(doc.page_count // 2))
-                page1 = page1.replace("\xa0", " ").replace("\xad", "-")
-            heads = ["New Morphology", "Sound Bank", "Words to Spell", "Learned Words",
+                half = doc.page_count // 2
+                clean = lambda t: t.replace("\xa0", " ").replace("\xad", "-")
+                page1 = clean("".join(doc[i].get_text() for i in range(half)))
+                key = clean("".join(doc[i].get_text() for i in range(half, 2 * half)))
+            heads = ["Sound Bank", "Words to Spell", "New Morphology", "Learned Words",
                      "Dictation"]
-            self.assertEqual(sorted(heads, key=page1.index), heads)   # enabler order
-            self.assertIn("to throw in", page1)    # the meaning, not the word
-            self.assertNotIn("inject", page1)      # the word is the student's job
+            self.assertEqual(sorted(heads, key=page1.index), heads)   # the deck's order
+            self.assertNotIn("inject", page1)      # spelt from dictation, not copied
+            self.assertNotIn("to throw in", page1)  # the meaning is theirs to write
+            self.assertIn("inject", key)
+            self.assertIn("to throw in", key)
             with fitz.open(week_dir / "Extension" / "4. Thursday extension.pdf") as doc:
                 self.assertIn("Suffix jobs", doc[0].get_text().replace("\xa0", " "))
             # One print pack: cover + 3 enablers + the extensions and their answers
@@ -832,6 +836,13 @@ class OgV19Tests(unittest.TestCase):
             with zipfile.ZipFile(decks[1]) as archive:
                 title = archive.read("ppt/notesSlides/notesSlide1.xml").decode()
                 self.assertIn("Extension/2. Tuesday extension.pdf", title)
+                notes = "".join(archive.read(n).decode() for n in archive.namelist()
+                                if n.startswith("ppt/notesSlides/notesSlide"))
+            # Each block's first slide tells the teacher which sheet section is live.
+            for cue in ("SHEETS: Sound Bank - enabler, and extension section A.",
+                        "SHEETS: Words to Spell - enabler, and extension section B.",
+                        "SHEETS: New Morphology - enabler, and extension section C."):
+                self.assertIn(cue, notes)
             # Friday stops on the worksheet slide, with no vote.
             friday = self.all_slides(decks[4])
             self.assertIn("Complete this Friday Review", friday[-1])

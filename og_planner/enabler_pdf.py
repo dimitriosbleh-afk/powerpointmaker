@@ -427,14 +427,15 @@ def build(week, session, third):
         s.section("My keyword and what it means", [[]], align="left")
         s.section("My sentence with a " + morph + " word", [[], [], []], align="left")
         return s
-    if stype == "spell":
-        words = [gap_part(str(w), forms) for w in session.get("words_to_spell_new", [])]
-        s.section("New Morphology", [[head]] + s.pack(words))
+    # sections run in the deck's order, so a student works down the page (31 Oct 2026)
     if session.get("sound_bank") and stype in ("spell", "week_review"):
         s.section("Sound Bank", s.pack([bank_item(b["morph"]) for b in session["sound_bank"]]))
     wsr = session.get("words_to_spell_review") or []
     if wsr and stype in ("spell", "week_review"):
         s.section("Words to Spell", s.pack(spell_items([e["word"] for e in wsr])))
+    if stype == "spell":
+        words = [gap_part(str(w), forms) for w in session.get("words_to_spell_new", [])]
+        s.section("New Morphology", [[head]] + s.pack(words))
     lw = session.get("learned_words") or {}
     if lw.get("review"):
         # each word and its gapped copy stay together on one row
@@ -568,7 +569,7 @@ def extension_sheet(week, session):
         sums = sorted(((g["word"], grid_sum(g)) for g in grid if grid_sum(g)),
                       key=lambda ws: len(ws[0]))
         means = grid_meanings(week)
-        sections.append({"title": "New Morphology", "columns": 1,
+        sections.append({"title": "New Morphology", "block": "keyword", "columns": 1,
                          "intro": f"{morph} = {meaning}", "items": [
             {"kind": "table", "prompt": f"Write three {morph} words and what each means.",
              "columns": [f"{morph} word", "What it means"], "widths": [1, 2],
@@ -584,35 +585,38 @@ def extension_sheet(week, session):
         ]})
         return sections
 
-    if stype == "spell":
-        means = grid_meanings(week)
-        new = [str(w) for w in session.get("words_to_spell_new", [])]
-        sections.append({"title": "New Morphology", "columns": 1,
-                         "intro": f"{morph} = {meaning}", "items": [
-            {"kind": "table", "prompt": f"Write the {morph} word for each meaning.",
-             "columns": ["Meaning", "Word"], "widths": [3, 2],
-             "rows": [[means.get(w.lower(), w[:1] + "..."), ""] for w in new], "rowH": 28,
-             "answers": [[None, w] for w in new]}]})
     if session.get("sound_bank") and stype in ("spell", "week_review"):
         bank = [str(b["morph"]) for b in session["sound_bank"]]
         examples = [f"{b} (e.g. {example_word(b, week)})" for b in bank
                     if example_word(b, week)]
-        sections.append({"title": "Sound Bank", "columns": 1, "items": [
+        sections.append({"title": "Sound Bank", "block": "sound_bank", "columns": 1, "items": [
             blank_table("Write each part as it is read.", len(bank), bank),
             {"prompt": "Pick two parts. Write a word that uses each.", "lines": 1,
              "answer": "; ".join(examples)}]})
     wsr = [e["word"] for e in session.get("words_to_spell_review") or []]
     if wsr and stype in ("spell", "week_review"):
-        sections.append({"title": "Words to Spell", "columns": 1, "items": [
+        sections.append({"title": "Words to Spell", "block": "wts_review", "columns": 1, "items": [
             {"kind": "table", "prompt": "Spell each word as it is read. Then write it "
                                         "again with its parts marked with /.",
              "columns": ["", "Spell it", "Its parts, marked with /"], "widths": [1, 6, 6],
              "rows": [[str(i), "", ""] for i in range(1, len(wsr) + 1)], "rowH": 28,
              "answers": [[None, w, ""] for w in wsr]}]})
+    if stype == "spell":
+        # the teacher says each word aloud, so a printed meaning gives it away:
+        # the step up is spelling it, then writing what it means (31 Oct 2026)
+        means = grid_meanings(week)
+        new = [str(w) for w in session.get("words_to_spell_new", [])]
+        sections.append({"title": "New Morphology", "block": "wts_new", "columns": 1,
+                         "intro": f"{morph} = {meaning}", "items": [
+            {"kind": "table", "prompt": "Spell each word as it is read. Then write what "
+                                        "it means.",
+             "columns": ["", "Word", "What it means"], "widths": [1, 5, 8],
+             "rows": [[str(i), "", ""] for i in range(1, len(new) + 1)], "rowH": 28,
+             "answers": [[None, w, means.get(w.lower(), "")] for w in new]}]})
     cards = (session.get("pos_drill") or {}).get("cards", []) if stype == "apply" else []
     if cards:
         # Thursday's real work: a word for each suffix card, and the job it does (3g)
-        sections.append({"title": "Suffix jobs", "columns": 1, "items": [
+        sections.append({"title": "Suffix jobs", "block": "pos_drill", "columns": 1, "items": [
             {"kind": "table", "prompt": "Write a new word for each suffix. Then write its "
                                         "job: noun, verb or adjective.",
              "columns": ["Suffix", "My word", "Its job"], "widths": [1, 3, 2],
@@ -640,15 +644,43 @@ def extension_sheet(week, session):
                                     + (f" with a {grammar}." if grammar else "."),
                           "answer": f"Check: {new_word} spelled right"
                                     + (f" and the {grammar} used correctly." if grammar else ".")})
-        sections.append({"title": "Learned Words", "columns": 1, "items": items})
+        sections.append({"title": "Learned Words", "block": "learned", "columns": 1,
+                         "items": items})
     dictation = session.get("dictation") or []
     if dictation:
-        sections.append({"title": "Dictation", "columns": 1, "items": [
+        sections.append({"title": "Dictation", "block": "dictation", "columns": 1, "items": [
             {"prompt": f"Write both sentences as they are read. Then add a {morph} word "
                        "to sentence 1 with a ^.", "lines": 2 * len(dictation),
              "answer": " / ".join(dt["sentence"] for dt in dictation)
                        + f" Check: the added {morph} word fits and is spelled right."}]})
     return sections
+
+
+def sheet_cues(week, session):
+    """deck block -> one notes line saying which sheet section students fill in
+    now (James, 31 Oct 2026: the decks never said when the sheets are used).
+    The extension's lettered sections run in deck order; every block but the
+    suffix jobs has an enabler section of the same name."""
+    if not wants_sheet(session):
+        return {}
+    secs = extension_sheet(week, session)
+    letter = {sec["block"]: chr(65 + i) for i, sec in enumerate(secs)}
+    title = {sec["block"]: sec["title"] for sec in secs}
+    cues = {b: f"SHEETS: {title[b]} - enabler, and extension section {letter[b]}."
+            for b in letter if b != "pos_drill"}
+    if "pos_drill" in letter and "learned" in cues:
+        # the class answers each suffix card together, so the table waits
+        # until the drill is over (31 Oct 2026)
+        cues["learned"] = (f"SHEETS: Learned Words - enabler. Extension: section "
+                           f"{letter['pos_drill']} (suffix jobs) first, then section "
+                           f"{letter['learned']}.")
+    lw = session.get("learned_words") or {}
+    if "learned" in cues and not lw.get("review"):
+        cues["learned_new"] = cues.pop("learned")
+    elif "learned" in cues and lw.get("new"):
+        cues["learned_new"] = ("SHEETS: Learned Words (New) - enabler. Extension students "
+                               "write their sentence after.")
+    return cues
 
 
 def make_extension(week, session, out_path):
