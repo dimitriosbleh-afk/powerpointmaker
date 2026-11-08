@@ -62,7 +62,9 @@
         {"word": "guarantee", "week": 4, "unfair": "u", "say_it": "GA-ruhn-TEE", "why": "the u after the g is silent, as in guard and guess"},
         {"word": "mortgage", "week": 4, "unfair": "t", "say_it": "MOR-gij", "why": "the t is silent and age says /ij/; Old French mort gage, dead pledge - mort as in mortal"},
         {"word": "colleague", "week": 5, "unfair": "ue", "say_it": "KOL-eeg", "why": "the ue at the end is silent, as in tongue, and the double l is easy to miss"},
-        {"word": "catalogue", "week": 5, "unfair": "ue", "say_it": "KAT-uh-log", "why": "the ue at the end is silent, as in colleague; Australian spelling keeps it"}
+        {"word": "catalogue", "week": 5, "unfair": "ue", "say_it": "KAT-uh-log", "why": "the ue at the end is silent, as in colleague; Australian spelling keeps it"},
+        {"word": "campaign", "week": 6, "unfair": "g", "say_it": "kam-PAYN", "why": "the g is silent, like in sign and foreign; the ai is fair and says /ay/"},
+        {"word": "questionnaire", "week": 6, "unfair": "nnaire", "say_it": "KWES-chuh-NAIR", "why": "question spelled the usual way, then the n doubles and the French ending aire says /air/, like in millionaire; one exposure only (four-session week), so carry it into Week 7 review"}
       ]
     }
   },
@@ -94,13 +96,15 @@
         {"week": 2, "focus": "Upgrade verbs within an argument", "class_language": "three verb upgrades - exact (exactly what happens?), strength (does it fit the facts? too strong is hyperbole), saying verbs (how was it said? warn, insist, agree, admit, show); Mon exact, Tue strength, Wed saying verbs, Thu all three, Fri week review. First week on v1.6 rounds: I do, one We do item, three You do items, answer on the click"},
         {"week": 3, "focus": "Join sentences using connectives to link arguments, evidence and reasons", "class_language": "however and on the other hand = the other side, therefore = so, the result, for example = the proof; the connective starts the second sentence and takes a comma. First v1.7 week: one grammar block, Thursday only. Parts of speech on suffixes taught from this week: noun names it, verb does it, adjective describes a noun, adverb tells how, when or where."},
         {"week": 4, "focus": "Identify the function of a semicolon and generate a compound sentence where a semicolon replaces the conjunction between two independent clauses", "class_language": "a semicolon joins two full sentences and takes the place of and, but or so - never both; test each side can stand alone; small letter after it unless I or a name. First v1.8 week: parts of speech read from a sentence - what job does the word do here? noun names a thing or idea, verb is something you do, adjective describes a noun (frames retired 23 Oct 2026, before it was taught)."},
-        {"week": 5, "focus": "Generate sentence stems containing a semicolon and a conjunctive adverb (however, therefore)", "class_language": "however = the other side, a surprise; therefore = so, the result. Semicolon before, comma after, small letter after the semicolon (however and therefore take a small h and t too). Taught once, Friday of a three-session week (Cup Day); fixed-answer core, writing the joining words; production in the Extension."}
+        {"week": 5, "focus": "Generate sentence stems containing a semicolon and a conjunctive adverb (however, therefore)", "class_language": "however = the other side, a surprise; therefore = so, the result. Semicolon before, comma after, small letter after the semicolon (however and therefore take a small h and t too). Taught once, Friday of a three-session week (Cup Day); fixed-answer core, writing the joining words; production in the Extension."},
+        {"week": 6, "focus": "Identify the main and subordinate clauses and the subordinating conjunction in complex sentences", "class_language": "Term 3 Week 7 wording reused: labels M, S and T; M stands alone, S leaves you waiting, T (the trigger word) makes S wait; cover one half and read the other; a fronted S takes a comma. Persuasive link: the opinion is M, the reason is S. Taught once, Thursday of a four-session week; You do asks for T, then M or S for the first half."}
       ]
     }
   },
   "reviews": {
     "term4": [
-      {"week": 4, "vote": "Trickiest this week? (last session, fingers 1-4, 22 votes)", "results": {"Spelling ject words": 3, "guarantee and mortgage": 7, "Semicolons": 0, "Noun, verb or adjective": 12}, "from_our_reviews": "noun, verb or adjective; guarantee and mortgage", "note": "Parts of speech was the first week on the sentence test; semicolons landed (0 votes)."}
+      {"week": 4, "vote": "Trickiest this week? (last session, fingers 1-4, 22 votes)", "results": {"Spelling ject words": 3, "guarantee and mortgage": 7, "Semicolons": 0, "Noun, verb or adjective": 12}, "from_our_reviews": "noun, verb or adjective; guarantee and mortgage", "note": "Parts of speech was the first week on the sentence test; semicolons landed (0 votes)."},
+      {"week": 5, "vote": "No vote taken (three-session Cup Day week)", "results": {}, "from_our_reviews": "", "note": "Teacher confirmed 8 Nov 2026 that no vote was taken, so Week 6 has no From our reviews line."}
     ]
   }
 }

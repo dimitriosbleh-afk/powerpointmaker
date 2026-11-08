@@ -2335,7 +2335,7 @@ week_review:  morphology_review x10, words_to_read_review, sound_bank x6-9,
            "rounds": [ { "title", "rule", "routine", "footer",
                          "round": [ <round item> x5 ] } x2 ] },   // break apart, then name it
 "pos_drill": { "intro"?: { "title", "rule", "example", "items"?, "routine", "footer", "notes" },
-               "cards": [ { "morph", "pos_answer"?, "notes"? } x6-8 ] },  // suffix cards (3g)
+               "cards": [ { "morph", "pos_answer"?, "notes"?, "sheet_word"? } x6-8 ] },  // suffix cards (3g); sheet_word = the answer key's "new word" example, never the slide's word (else the card's first other associated word)
 "vote": { "title"?, "rule"?, "options": [2-4 short strings], "routine"?, "footer"?, "notes" },
 "dictation": [ { ..., "cops": { "capitals": [..], "punctuation": [..] } } x2 ]
 ```

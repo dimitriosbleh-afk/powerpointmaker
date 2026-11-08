@@ -977,6 +977,22 @@ class OgV19Tests(unittest.TestCase):
         sections = en.extension_sheet(week, thu)
         self.assertIn("Suffix jobs", [sec["title"] for sec in sections])
 
+    def test_extension_wording_fits_grammar_and_one_dictation(self):
+        """Week 6: a plural grammar focus takes no article, and a short week's
+        single Thursday dictation is not called "both sentences"."""
+        import enabler_pdf as en
+        self.assertEqual(en.grammar_np("main and subordinate clauses"),
+                         "main and subordinate clauses")
+        self.assertEqual(en.grammar_np("semicolon"), "a semicolon")
+        self.assertEqual(en.grammar_np("adverb"), "an adverb")
+        week = json.loads(self.V19_SPEC.read_text())
+        thu = week["sessions"][3]
+        thu["dictation"] = thu.get("dictation", [])[:1] or [
+            {"sentence": "We read it.", "targets": []}]
+        dict_sec = [sec for sec in en.extension_sheet(week, thu)
+                    if sec["block"] == "dictation"][0]
+        self.assertTrue(dict_sec["items"][0]["prompt"].startswith("Write the sentence"))
+
     def test_enabler_leaves_the_teaching_as_the_gap(self):
         import enabler_pdf as en
         self.assertEqual(en.gap_part("projector", ["ject"]),

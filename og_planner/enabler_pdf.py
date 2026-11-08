@@ -522,6 +522,31 @@ def suffix_word(card):
     return ""
 
 
+_SUFFIX_CARDS = None
+
+
+def fresh_suffix_word(card):
+    """(word, jobs) for the extension answer key: a word that is not the one on
+    the slide (the task asks for a NEW word), from the photographed card's
+    associated words unless the spec card names a `sheet_word`, and every job
+    the card prints, so a marker accepts a
+    student's -ar noun as well as an -ar adjective (Week 6 panel, Nov 2026)."""
+    global _SUFFIX_CARDS
+    if _SUFFIX_CARDS is None:
+        path = Path(__file__).resolve().parent / "yoshimoto_cards_suffixes.json"
+        _SUFFIX_CARDS = {c["morpheme"]: c for c in json.loads(path.read_text())["cards"]}
+    entry = _SUFFIX_CARDS.get(str(card.get("morph", "")).split("/")[0].strip(), {})
+    used = {suffix_word(card), str(card.get("keyword", "")).lower(),
+            str(entry.get("keyword", "")).lower()}
+    tail = re.sub(r"[^a-z]", "", str(card.get("morph", "")).split("/")[0].lower())
+    word = card.get("sheet_word") or next((w for w in entry.get("associated_words", [])
+                 if w.lower() not in used and w.lower().endswith(tail)
+                 and w not in entry.get("excluded_words", [])), suffix_word(card))
+    pos = card.get("pos_answer", "")
+    jobs = [pos] + [j for j in entry.get("part_of_speech", []) if j != pos]
+    return word, " or ".join(j for j in jobs if j)
+
+
 def grid_meanings(week):
     """word -> its plain meaning from any teach-day grid ('to throw in')."""
     out = {}
@@ -621,8 +646,8 @@ def extension_sheet(week, session):
                                         "job: noun, verb or adjective.",
              "columns": ["Suffix", "My word", "Its job"], "widths": [1, 3, 2],
              "rows": [[str(c.get("morph", "")), "", ""] for c in cards], "rowH": 28,
-             "answers": [[None, f"e.g. {suffix_word(c)}", c.get("pos_answer", "")]
-                         for c in cards]},
+             "answers": [[None, f"e.g. {w}", jobs]
+                         for w, jobs in map(fresh_suffix_word, cards)]},
             {"kind": "open", "prompt": "Write one sentence using two of your suffix words.",
              "lines": 2, "answer": "Check: two of the student's suffix words, each doing "
                                    "the job they wrote. Any real word with the right job counts."}]})
@@ -640,8 +665,10 @@ def extension_sheet(week, session):
         items = [blank_table("Write each word from memory as it is read.", len(words), words)]
         if new_word:
             items.append({"kind": "open", "lines": 1 if stype == "spell" else 2,
+                          # "main and subordinate clauses" takes no article,
+                          # "an adverb" takes an (Week 6, Nov 2026)
                           "prompt": f"Use {new_word} in a sentence"
-                                    + (f" with a {grammar}." if grammar else "."),
+                                    + (f" with {grammar_np(grammar)}." if grammar else "."),
                           "answer": f"Check: {new_word} spelled right"
                                     + (f" and the {grammar} used correctly." if grammar else ".")})
         sections.append({"title": "Learned Words", "block": "learned", "columns": 1,
@@ -649,11 +676,22 @@ def extension_sheet(week, session):
     dictation = session.get("dictation") or []
     if dictation:
         sections.append({"title": "Dictation", "block": "dictation", "columns": 1, "items": [
-            {"prompt": f"Write both sentences as they are read. Then add a {morph} word "
-                       "to sentence 1 with a ^.", "lines": 2 * len(dictation),
+            # a short week's Thursday dictates one sentence, not two (Week 6, Nov 2026)
+            {"prompt": (f"Write both sentences as they are read. Then add a {morph} word "
+                        "to sentence 1 with a ^." if len(dictation) > 1 else
+                        f"Write the sentence as it is read. Then add a {morph} word "
+                        "to it with a ^."), "lines": 2 * len(dictation),
              "answer": " / ".join(dt["sentence"] for dt in dictation)
                        + f" Check: the added {morph} word fits and is spelled right."}]})
     return sections
+
+
+def grammar_np(phrase):
+    """The grammar focus as a noun phrase after "with": plurals take no
+    article, vowel sounds take "an"."""
+    if phrase.split()[-1].endswith("s"):
+        return phrase
+    return ("an " if phrase[0] in "aeiou" else "a ") + phrase
 
 
 def sheet_cues(week, session):

@@ -1,0 +1,1141 @@
+{
+ "term": 4,
+ "week": 6,
+ "og_version": "1.9",
+ "cohort": "Enrichment",
+ "unit_folder": "OG_Term4_Week6",
+ "days": [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday"
+ ],
+ "taught_morphemes": [
+  "mini-",
+  "super-",
+  "over-",
+  "anti-",
+  "ultra-",
+  "retro-",
+  "em-",
+  "syn-",
+  "sym-/sys-/syl-",
+  "-let",
+  "-ling",
+  "-cian",
+  "-cial/-tial",
+  "-ancy/-ance",
+  "-ency/-ence",
+  "-ity",
+  "-tude",
+  "out-",
+  "self-",
+  "post-",
+  "with-",
+  "counter-",
+  "contra-",
+  "omni-",
+  "intra-",
+  "-eer",
+  "-ant",
+  "-ar",
+  "-ine",
+  "-cy",
+  "-ciate/-tiate",
+  "ped/pod",
+  "rect/reg",
+  "capt/capit",
+  "flect/flex",
+  "ord/ordin",
+  "clud(e)/clus(e)",
+  "mal-",
+  "-ery",
+  "-ice",
+  "-ive",
+  "-ite",
+  "-acy",
+  "-ule",
+  "mega-",
+  "micro",
+  "pict/picto",
+  "vore",
+  "eco",
+  "carn/carni",
+  "junct/join/joint",
+  "vict/vinc",
+  "chron",
+  "mand/mend",
+  "jur/jud/just",
+  "pend/pens",
+  "pon/pound",
+  "caus-/cus(e)",
+  "hyper",
+  "omni-",
+  "astro",
+  "terr",
+  "port",
+  "ject",
+  "struct"
+ ],
+ "overview": {
+  "Monday": {
+   "morphology": [
+    "New Morphology",
+    "tract"
+   ],
+   "grammar": "Not today",
+   "learned_words": "Not today"
+  },
+  "Tuesday": {
+   "morphology": [
+    "Spell and dictate",
+    "tract"
+   ],
+   "grammar": "Not today",
+   "learned_words": [
+    "New learned word",
+    "campaign"
+   ]
+  },
+  "Wednesday": {
+   "morphology": [
+    "Build and break",
+    "tract"
+   ],
+   "grammar": "Not today",
+   "learned_words": "Not today"
+  },
+  "Thursday": {
+   "morphology": "Noun, verb or adjective",
+   "grammar": "Main and subordinate clauses: M, S and T",
+   "learned_words": [
+    "New learned word",
+    "questionnaire"
+   ]
+  },
+  "Friday": {
+   "morphology": "No session this week",
+   "grammar": "No session this week",
+   "learned_words": "No session this week"
+  }
+ },
+ "sessions": [
+  {
+   "day": "Monday",
+   "type": "teach",
+   "morphology_review": [
+    {
+     "morph": "ject",
+     "type": "root",
+     "keyword": "abject",
+     "meaning": "throw"
+    },
+    {
+     "morph": "pend/pens",
+     "type": "root",
+     "keyword": "appendage",
+     "meaning": "hang; pay"
+    },
+    {
+     "morph": "struct",
+     "type": "root",
+     "keyword": "construct",
+     "meaning": "build",
+     "extra_task": {
+      "prompt": "What is one word built from struct, meaning build?",
+      "answers": [
+       "construct",
+       "instruct",
+       "structure"
+      ]
+     }
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "port",
+     "type": "root",
+     "keyword": "export",
+     "meaning": "bring, carry",
+     "extra_task": {
+      "prompt": "What is one word built from port, meaning carry?",
+      "answers": [
+       "transport",
+       "export",
+       "portable"
+      ]
+     }
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above",
+     "extra_task": {
+      "prompt": "What is one word built from hyper, meaning over?",
+      "answers": [
+       "hyperactive",
+       "hypersonic"
+      ]
+     }
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "projector",
+     "terrain",
+     "reconstruct",
+     "export",
+     "subject",
+     "instructor",
+     "portable",
+     "astronomer",
+     "rejection",
+     "structure",
+     "territory",
+     "constructing",
+     "supporter",
+     "injection",
+     "destructive"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"Rows 1 to 3 again, like a news reader on TV: slow, clear and strong.\"\n3. ASK: \"Finish my sentence. After the flood, the town worked hard to ... the bridge.\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: reconstruct.\n4. ASK: \"Odd one out: export, supporter, subject. Which one does not belong?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: subject.\nIf time: \"Why?\" Turn and tell. EXPECT: subject has ject, throw - the others have port, carry.\n5. ASK: \"Drop the ending and it becomes something you do. Which word: rejection or territory?\"\n5 sec. Then: \"Everyone, together, on three.\"\nEXPECT: rejection.\nIf time: \"Why?\" Turn and tell. EXPECT: drop -ion and you get reject, something you do."
+   },
+   "new_morphology": {
+    "morph": "tract",
+    "type": "root",
+    "keyword": "detract",
+    "meaning": "drag, pull"
+   },
+   "memory_hook": {
+    "text": "A magnet attracts - it pulls!",
+    "picture": "magnet"
+   },
+   "brainstorm": "\"What words can you think of with tract in them?\" 20 sec, turn and tell, then cold call four pairs.\nEXPECT: tractor, subtract, attract, extract.\nCLARIFY: track, like a running track, is not a tract word - it has no t at the end. Listen for the whole tract.",
+   "words_to_read_new": [
+    {
+     "word": "tractor",
+     "meaning": "TRACT means pull + -or means a thing that: a machine that pulls"
+    },
+    {
+     "word": "traction",
+     "meaning": "TRACT means pull + -ion means the act of: the act of pulling, the grip that lets a wheel pull"
+    },
+    {
+     "word": "extract",
+     "meaning": "ex- means out + TRACT means pull: to pull out"
+    },
+    {
+     "word": "subtract",
+     "meaning": "sub- means under + TRACT means pull: to take away, to pull out from under"
+    },
+    {
+     "word": "contract",
+     "meaning": "con- means together + TRACT means pull: to pull together"
+    },
+    {
+     "word": "retract",
+     "meaning": "re- means back + TRACT means pull: to pull back"
+    },
+    {
+     "word": "subtraction",
+     "meaning": "sub- means under + TRACT means pull + -ion means the act of: the act of taking away"
+    },
+    {
+     "word": "attract",
+     "meaning": "at- means toward + TRACT means pull: to pull toward"
+    },
+    {
+     "word": "distract",
+     "meaning": "dis- means away + TRACT means pull: to pull your attention away"
+    }
+   ],
+   "associated_word_exceptions": [
+    {
+     "word": "subtract",
+     "reason": "Ground 3: the card lists subtraction; subtract is its simpler sibling (sub- + tract, nothing untaught), the verb students use in every maths lesson, and the base Tuesday's spelling builds on.",
+     "source": "Macquarie Dictionary: subtract, to take (one number or quantity) from another; deduct."
+    },
+    {
+     "word": "retract",
+     "reason": "Ground 3: the card lists retraction; retract is its simpler sibling (re- back + tract pull) and the picturable one - a cat retracts its claws.",
+     "source": "Macquarie Dictionary: retract, to draw back or in."
+    },
+    {
+     "word": "attract",
+     "reason": "Ground 3: the card lists attraction; attract is its simpler sibling, and the persuasive writing unit needs it (attract voters, attract customers).",
+     "source": "Macquarie Dictionary: attract, to draw by a physical force; to draw by appeal to the emotions or senses."
+    },
+    {
+     "word": "distract",
+     "reason": "Ground 3: the card lists distraction; distract is its simpler sibling, one part shorter, and an everyday classroom word.",
+     "source": "Macquarie Dictionary: distract, to draw away or divert, as the mind or attention."
+    }
+   ],
+   "wtr_new_notes": "SAY: \"Learn tract once and you can read a whole family of words about pulling.\"\nREAD each word as it appears, say what it means, then link tract to the card meaning: pull.\ntractor - TRACT means pull + or means a thing that: a machine that pulls. A tractor pulls the plough across the paddock.\ntraction - TRACT + ion means the act of: the grip that lets a wheel pull. Footy boots give you traction on wet grass.\nextract - ex means out + TRACT means pull: to pull out. The dentist had to extract my wobbly tooth.\nsubtract - sub means under + TRACT: to pull out from under, to take away. Subtract 10 from 50 and you get 40.\ncontract - con means together + TRACT: to pull together. Muscles contract to lift your arm. A contract is a deal that pulls two people together.\nretract - re means back + TRACT: to pull back. A cat can retract its claws.\nsubtraction - sub + TRACT + ion: the act of taking away. A 25% discount is a subtraction from the price.\nattract - at means toward + TRACT: to pull toward. A good poster will attract people to your stall.\ndistract - dis means away + TRACT: to pull your attention away. Do not let your phone distract you from homework.",
+   "keyword_sentence": {
+    "title": "Pick your own tract word",
+    "rule": "Two jobs in your OG book",
+    "example": "1. Your own tract word for pull. Star it.\n2. Write one sentence that shows what it means.",
+    "items": [
+     "My word: **tractor** - The **tractor** pulled a trailer full of hay."
+    ],
+    "routine": "OG books - 3 mins",
+    "footer": "Check: does it make the meaning clear?",
+    "notes": "1. SAY: \"The card keyword is detract. De means away, tract means pull: to pull away from something. Litter can detract from a beautiful beach.\"\n2. SAY: \"If another tract word helps YOU remember pull, pick that one, like tractor. Write it at the bottom of the page and star it.\"\n3. SAY: \"Then write one sentence with your word, so a reader can tell what it means.\" TIME: 3 min, then cold call two students to read theirs.\nEXTENSION: Two in one - write one sentence that uses two tract words and still makes sense.\nHELP: give a stem, \"The tractor pulled...\" or \"Our poster will attract...\", and let them finish it.\n---\nANSWERS: open - e.g. Mine: tractor. The tractor pulled a trailer full of hay. EXTENSION: e.g. The noisy tractor will distract us from our subtraction."
+   }
+  },
+  {
+   "day": "Tuesday",
+   "type": "spell",
+   "morphology_review": [
+    {
+     "morph": "port",
+     "type": "root",
+     "keyword": "export",
+     "meaning": "bring, carry"
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "tract",
+     "type": "root",
+     "keyword": "detract",
+     "meaning": "drag, pull",
+     "extra_task": {
+      "prompt": "What is one word built from tract, meaning pull?",
+      "answers": [
+       "tractor",
+       "subtract",
+       "extract"
+      ]
+     }
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "struct",
+     "type": "root",
+     "keyword": "construct",
+     "meaning": "build"
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star",
+     "extra_task": {
+      "prompt": "What is one word built from astro, meaning star?",
+      "answers": [
+       "astronaut",
+       "astronomer"
+      ]
+     }
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land"
+    },
+    {
+     "morph": "ject",
+     "type": "root",
+     "keyword": "abject",
+     "meaning": "throw",
+     "extra_task": {
+      "prompt": "What is one word built from ject, meaning throw?",
+      "answers": [
+       "inject",
+       "eject",
+       "reject"
+      ]
+     }
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "obstruction",
+     "import",
+     "retract",
+     "object",
+     "structural",
+     "attract",
+     "carnivore",
+     "instruction",
+     "ejected",
+     "traction",
+     "transporter",
+     "distract",
+     "construct",
+     "projection",
+     "subtraction"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"Partners: partner A reads rows 1, 3 and 5, partner B reads rows 2 and 4.\"\n3. ASK: \"Which word means to pull something back in, like a cat with its claws?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: retract.\n4. ASK: \"Odd one out: import, transporter, traction. Which one does not belong?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: traction.\nIf time: \"Why?\" Turn and tell. EXPECT: traction has tract, pull - the others have port, carry.\n5. ASK: \"Partner A, point to any word. Partner B, read it and say what its root means. Swap after 30 seconds.\"\n30 sec each way. CIRCULATE and listen for the root's meaning, not just the word."
+   },
+   "sound_bank": [
+    {
+     "morph": "tract",
+     "type": "root"
+    },
+    {
+     "morph": "struct",
+     "type": "root"
+    },
+    {
+     "morph": "ject",
+     "type": "root"
+    },
+    {
+     "morph": "port",
+     "type": "root"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix"
+    },
+    {
+     "morph": "vore",
+     "type": "root"
+    },
+    {
+     "morph": "-ive",
+     "type": "suffix"
+    }
+   ],
+   "words_to_spell_review": [
+    {
+     "word": "instructor",
+     "sentence": "Our swimming instructor blew her whistle to start the lesson.",
+     "picture": [
+      {
+       "icon": "fa6/FaPersonSwimming",
+       "color": "1F3A5F"
+      },
+      {
+       "icon": "gi/GiWhistle",
+       "color": "B5541C"
+      }
+     ]
+    },
+    {
+     "word": "construction",
+     "sentence": "The construction workers wore hard hats and bright vests.",
+     "picture": [
+      {
+       "icon": "fa6/FaHelmetSafety",
+       "color": "C9A227"
+      },
+      {
+       "icon": "gi/GiCrane",
+       "color": "1F3A5F"
+      }
+     ]
+    },
+    {
+     "word": "destructive",
+     "sentence": "The destructive storm knocked over two big gum trees.",
+     "picture": [
+      {
+       "icon": "fa6/FaCloudBolt",
+       "color": "1F3A5F"
+      },
+      {
+       "icon": "fa6/FaTree",
+       "color": "2E7D32"
+      }
+     ]
+    },
+    {
+     "word": "projector",
+     "sentence": "Our teacher switched on the projector to show us the map.",
+     "prompt": "What does a projector throw, and which part tells you?",
+     "answer": "The ject part, meaning throw. It throws a picture forward onto the screen.",
+     "picture": [
+      {
+       "icon": "tb/TbDeviceProjector",
+       "color": "1F3A5F"
+      },
+      "fa6/FaArrowRight",
+      {
+       "icon": "fa6/FaFileLines",
+       "color": "B5541C"
+      }
+     ]
+    },
+    {
+     "word": "rejected",
+     "sentence": "The coach rejected my excuse for being late to training.",
+     "picture": [
+      {
+       "icon": "fa6/FaPersonRunning",
+       "color": "1F3A5F"
+      },
+      {
+       "icon": "fa6/FaCircleXmark",
+       "color": "C0392B"
+      }
+     ]
+    },
+    {
+     "word": "reporter",
+     "sentence": "A news reporter asked our principal about the new library.",
+     "prompt": "Which part of reporter is our carry root?",
+     "answer": "The port part. A reporter carries the news back to us.",
+     "picture": [
+      {
+       "icon": "fa6/FaMicrophone",
+       "color": "1F3A5F"
+      },
+      {
+       "icon": "fa6/FaNewspaper",
+       "color": "B5541C"
+      }
+     ]
+    },
+    {
+     "word": "omnivore",
+     "sentence": "A brown bear is an omnivore: it eats berries, fish and honey.",
+     "prompt": "Which parts of omnivore tell you it eats lots of different foods?",
+     "answer": "omni means all and vore means eat. An omnivore eats all kinds of food, plants and animals.",
+     "picture": [
+      {
+       "icon": "gi/GiBearFace",
+       "color": "6B4423"
+      },
+      {
+       "icon": "gi/GiRaspberry",
+       "color": "C0392B"
+      },
+      {
+       "icon": "fa6/FaFish",
+       "color": "1F3A5F"
+      }
+     ]
+    }
+   ],
+   "words_to_spell_new": [
+    "tractor",
+    "subtract",
+    "extract",
+    "contract"
+   ],
+   "extension": "1. SAY: \"When you finish, write one sentence that uses contract.\"\n2. CHECK: the sentence shows a deal, or something pulling together, like a muscle.\n\nEXTENSION: Beat the number - write 5 more real tract words in 2 minutes, not counting today's four.\nAnswer: e.g. traction, retract, attract, distract, subtraction, extraction, tractors.",
+   "learned_words": {
+    "review": [
+     {
+      "word": "colleague",
+      "unfair": "ue",
+      "notes": "1. SAY: \"Colleague. Dad had lunch with a colleague from work.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: KOL-eeg, two beats. The ue at the end is silent, like in tongue."
+     },
+     {
+      "word": "catalogue",
+      "unfair": "ue",
+      "notes": "1. SAY: \"Catalogue. The toy catalogue came in the letterbox.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: KAT-uh-log, three beats. The ue at the end is silent, just like in colleague."
+     }
+    ],
+    "new": {
+     "word": "campaign",
+     "unfair": "g",
+     "notes": "Why learned: the g is silent, like in sign and foreign. The ai is fair - it says /ay/.\nSay it: kam-PAYN, two beats, the second strongest.\n1. COPY it twice, saying the letter names: c - a - m - p - a - i - g - n.\n2. COVER both and write it a third time from memory, then tick or fix.\nLink: a campaign is a planned push to persuade people. You will write it in your persuasive pieces and speeches this term."
+    }
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "Our class campaign will attract more helpers to the beach clean-up.",
+     "targets": [
+      "campaign",
+      "attract"
+     ],
+     "cops": {
+      "capitals": [
+       "Our"
+      ],
+      "punctuation": [
+       "hyphen in clean-up (it joins two words into one name)",
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "This week: the new red word campaign and tract in attract.\nTRAP: atract with one t. Fix: at means toward, then tract; student writes both t's."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "The builder warned us, \"Read the instructions carefully before you sign the contract.\"",
+     "targets": [
+      "instructions",
+      "contract"
+     ],
+     "cops": {
+      "capitals": [
+       "The",
+       "Read (first word of the speech)"
+      ],
+      "punctuation": [
+       "comma before the speech (it separates who said it from what they said)",
+       "opening speech marks (speech starts here, so Read takes a capital)",
+       "full stop (it ends the sentence, inside the speech marks)",
+       "closing speech marks (the speech ends here)"
+      ]
+     },
+     "focus": "This week: tract in contract. Last week's throwback: instructions, from the struct family.\nTRAP: a small r on read. Fix: speech starts with a capital; student fixes the R."
+    }
+   ]
+  },
+  {
+   "day": "Wednesday",
+   "type": "build",
+   "morphology_review": [
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star"
+    },
+    {
+     "morph": "tract",
+     "type": "root",
+     "keyword": "detract",
+     "meaning": "drag, pull"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all",
+     "extra_task": {
+      "prompt": "What is one word built from omni, meaning all?",
+      "answers": [
+       "omnivore",
+       "omnipresent"
+      ]
+     }
+    },
+    {
+     "morph": "ject",
+     "type": "root",
+     "keyword": "abject",
+     "meaning": "throw"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land",
+     "extra_task": {
+      "prompt": "What is one word built from terr, meaning land?",
+      "answers": [
+       "terrain",
+       "territory",
+       "terrace"
+      ]
+     }
+    },
+    {
+     "morph": "struct",
+     "type": "root",
+     "keyword": "construct",
+     "meaning": "build",
+     "extra_task": {
+      "prompt": "What is one word built from struct, meaning build?",
+      "answers": [
+       "construct",
+       "instruct",
+       "structure"
+      ]
+     }
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "port",
+     "type": "root",
+     "keyword": "export",
+     "meaning": "bring, carry"
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "tractors",
+     "deport",
+     "obstruct",
+     "reject",
+     "attraction",
+     "constructed",
+     "terrestrial",
+     "extracted",
+     "interject",
+     "importer",
+     "destruction",
+     "subtracting",
+     "projecting",
+     "instructive",
+     "contraction"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"This side of the room, read rows 1 and 2. That side, rows 3 and 4. Everyone, row 5.\"\n3. ASK: \"Finish my sentence. At the dentist, my wobbly tooth was...\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: extracted.\n4. ASK: \"Which word means something that pulls visitors toward it, like a zoo or a theme park?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: attraction.\n5. ASK: \"Odd one out: obstruct, constructed, contraction. Which one does not belong?\"\n5 sec. Then: \"Everyone, together, on three.\"\nEXPECT: contraction.\nIf time: \"Why?\" Turn and tell. EXPECT: contraction has tract, pull - the others have struct, build."
+   },
+   "build": {
+    "time": "15 mins",
+    "matrix": {
+     "title": "Build tract words",
+     "rule": "Build real words. Write each one and what it means.",
+     "base": {
+      "morph": "tract",
+      "type": "root",
+      "meaning": "drag, pull"
+     },
+     "prefixes": [
+      "ex- (out)",
+      "sub- (under)",
+      "con- (together)",
+      "re- (back)",
+      "at- (toward)"
+     ],
+     "suffixes": [
+      "-ion (the act of)",
+      "-or (one who, that which)",
+      "-ive (relating to)",
+      "-able (able to)",
+      "-ed"
+     ],
+     "routine": "OG books - 4 mins",
+     "footer": "Hunt: the longest real word",
+     "notes": "1. SAY: \"tract is in the middle. Join a part from the left, the right, or both, and build a real word. Write the word and what it means.\"\n2. MODEL: say \"ex plus tract: extract, to pull out\", and write it on the class board.\n3. TIME: 4 min. CIRCULATE: to a stuck student say, \"Start with tract. Put sub in front. What does subtract mean?\"\n4. ASK: \"Read me your longest word and what it means.\" Cold call two students. EXPECT: retractable, able to be pulled back, like a pen; attractive, relating to pulling people toward it.\nTRAP: a made-up word that sounds right, like subtractable. Fix: ask, would you read that in a newspaper? Student builds a real one.\nEXTENSION: Longest word hunt - build the longest real word you can and write its parts.\nHELP: give three starters, extract, subtract, contract, and ask for one ending on each.\n---\nANSWERS: extract, subtract, contract, retract, attract; add -ion for the act of: extraction, subtraction, contraction, retraction, attraction, traction.\nAlso: tractor, contractor (a thing or one that); attractive (relating to); retractable (able to be pulled back); extracted, subtracted, contracted, attracted.\nEXTENSION: e.g. retractable = re + tract + able; attractions = at + tract + ion + s."
+    },
+    "rounds": [
+     {
+      "title": "Break the word into its parts",
+      "rule": "Write only the parts in the boxes. tract is done for you.",
+      "given": [
+       "tract"
+      ],
+      "routine": "OG books - parts only",
+      "footer": "Find tract first",
+      "round": [
+       {
+        "prompt": "One done for you:\nsubtraction",
+        "parts": [
+         "sub-",
+         "tract",
+         "-ion"
+        ],
+        "answer": "sub- (under) + tract + -ion (the act of)",
+        "why": "the act of taking away",
+        "worked": true,
+        "notes": "1. SAY: \"We just built words. Now we do the opposite. I show a whole word, you write its parts in boxes.\"\n2. MODEL: point at subtraction. SAY: \"I find tract first. In front is sub. Behind is ion. Three parts, three boxes: sub, tract, ion.\"\n3. SAY: \"Three words, one at a time. Write only the parts in your OG book, then I click.\"\nEXTENSION: Beat the number - break 5 more tract words from the matrix into parts in 2 minutes.\nHELP: underline tract in each word first, then split what is left on each side.\n---\nANSWERS: 1. re + tract + able  2. con + tract + or  3. ex + tract + ed. EXTENSION: e.g. at + tract + ive, re + tract + ion, ex + tract + ion."
+       },
+       {
+        "prompt": "retractable",
+        "parts": [
+         "re-",
+         "tract",
+         "-able"
+        ],
+        "answer": "re- (back) + tract + -able (able to)",
+        "why": "able to be pulled back, like a pen",
+        "notes": "ANSWER: re + tract + able.\n1. ASK: \"Write the parts of retractable.\" 20 sec. Cue: \"Pens down when you are done.\"\n2. SCAN four books near you. 80%+ -> click to reveal. Less -> cover the able with your hand and ask what is left, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Re means back, able means able to. A retractable pen can be pulled back in.\"\nTRAP: splitting it retr + actable. Fix: find tract first, student rewrites the parts around it."
+       },
+       {
+        "prompt": "contractor",
+        "parts": [
+         "con-",
+         "tract",
+         "-or"
+        ],
+        "answer": "con- (together) + tract + -or (one who)",
+        "why": "one who signs a deal to do a job",
+        "notes": "ANSWER: con + tract + or.\n1. ASK: \"Write the parts of contractor.\" 20 sec. Cue: \"Pens down when you are done.\"\n2. SCAN four books near you. 80%+ -> click to reveal. Less -> point at tract and ask what is in front of it and what is behind it, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Con means together, or means one who. A contractor signs a contract to do a job, like building our new gym.\"\nTRAP: writing contracter with er. Fix: this word ends in -or, like tractor; student swaps the e for o."
+       },
+       {
+        "prompt": "extracted",
+        "parts": [
+         "ex-",
+         "tract",
+         "-ed"
+        ],
+        "answer": "ex- (out) + tract + -ed",
+        "why": "pulled out, in the past",
+        "notes": "ANSWER: ex + tract + ed.\n1. ASK: \"Write the parts of extracted.\" 20 sec. Cue: \"Pens down when you are done.\"\n2. SCAN four books near you. 80%+ -> click to reveal. Less -> cover the ed and ask what is left, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Ex plus tract plus ed. Pulled out, and ed tells us it already happened.\"\nTRAP: leaving off the ed box. Fix: count the boxes on the slide, student adds the third part."
+       }
+      ]
+     },
+     {
+      "title": "Which tract word is it?",
+      "rule": "Write the tract word that matches. Whiteboards.",
+      "routine": "Whiteboards - show me",
+      "footer": "Check: can you see tract?",
+      "round": [
+       {
+        "prompt": "One done for you:\na machine that pulls a plough",
+        "answer": "tractor",
+        "why": "tract (pull) + -or (a thing that)",
+        "worked": true,
+        "notes": "1. SAY: \"Now the other way round. I read what the word means, you write the word.\"\n2. MODEL: \"A machine that pulls. Pull is tract, a thing that is or. Tractor.\"\n3. SAY: \"Four more. Write it on your whiteboard. Write it... chin it... show me.\""
+       },
+       {
+        "prompt": "to pull out a tooth\nthat is wobbly or sore",
+        "answer": "extract",
+        "why": "ex- (out) + tract (pull)",
+        "notes": "ANSWER: extract.\n1. ASK: \"Write the tract word.\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN the boards. 80%+ -> click to reveal. Less -> ask what part means out, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. Ex means out. Extract.\"\nTRAP: writing extrack. Fix: say tract slowly, student ends it with ct."
+       },
+       {
+        "prompt": "to take one number\naway from another",
+        "answer": "subtract",
+        "why": "sub- (under) + tract (pull)",
+        "notes": "ANSWER: subtract.\n1. ASK: \"Write the tract word.\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN the boards. 80%+ -> click to reveal. Less -> write 50 - 10 on the class board and ask what we do, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. Sub plus tract. Subtract, to take away.\"\nTRAP: writing subtraction. Fix: the meaning says to take, something you do; student drops the ion."
+       },
+       {
+        "prompt": "a written deal that\ntwo people sign",
+        "answer": "contract",
+        "why": "con- (together) + tract (pull)",
+        "notes": "ANSWER: contract.\n1. ASK: \"Write the tract word.\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN the boards. 80%+ -> click to reveal. Less -> ask what an entrepreneur signs with a shark, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. Con means together. A contract pulls two people together in one deal.\"\nTRAP: writing contact. Fix: listen for the r, con-tract; student adds it."
+       },
+       {
+        "prompt": "to pull people toward you,\nlike a magnet",
+        "answer": "attract",
+        "why": "at- (toward) + tract (pull)",
+        "notes": "ANSWER: attract.\n1. ASK: \"Write the tract word.\" 15 sec. Cue: \"Write it... chin it... show me.\"\n2. SCAN the boards. 80%+ -> click to reveal. Less -> point back at Monday's magnet and ask what it does, then re-ask.\n3. REVEAL after boards are scanned. SAY: \"Tick it or fix it. At means toward. Attract, to pull toward, like our magnet.\"\nTRAP: writing atract with one t. Fix: at plus tract, two t's; student adds the t.\nEXTENSION: Two in one - write one sentence that uses attract and subtract and makes sense. e.g. Our stall will attract shoppers if we subtract $5 from every price.\n---\nANSWERS: tractor (worked), extract, subtract, contract, attract."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "day": "Thursday",
+   "type": "apply",
+   "morphology_review": [
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    },
+    {
+     "morph": "ject",
+     "type": "root",
+     "keyword": "abject",
+     "meaning": "throw",
+     "extra_task": {
+      "prompt": "What is one word built from ject, meaning throw?",
+      "answers": [
+       "inject",
+       "eject",
+       "reject"
+      ]
+     }
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "struct",
+     "type": "root",
+     "keyword": "construct",
+     "meaning": "build"
+    },
+    {
+     "morph": "tract",
+     "type": "root",
+     "keyword": "detract",
+     "meaning": "drag, pull",
+     "extra_task": {
+      "prompt": "What is one word built from tract, meaning pull?",
+      "answers": [
+       "tractor",
+       "subtract",
+       "extract"
+      ]
+     }
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star"
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land"
+    },
+    {
+     "morph": "port",
+     "type": "root",
+     "keyword": "export",
+     "meaning": "bring, carry",
+     "extra_task": {
+      "prompt": "What is one word built from port, meaning carry?",
+      "answers": [
+       "transport",
+       "export",
+       "portable"
+      ]
+     }
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "construction",
+     "transport",
+     "subtracted",
+     "objection",
+     "pendulum",
+     "instruct",
+     "distraction",
+     "exporter",
+     "injected",
+     "contract",
+     "structure",
+     "retractable",
+     "projectile",
+     "obstructed",
+     "extract"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"Whisper read rows 1 to 3 to yourself. Then everyone reads rows 4 and 5 out loud.\"\n3. ASK: \"Which word means something that pulls your attention away from your work?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: distraction.\n4. ASK: \"Odd one out: transport, exporter, contract. Which one does not belong?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: contract.\nIf time: \"Why?\" Turn and tell. EXPECT: contract has tract, pull - the others have port, carry.\n5. ASK: \"Drop -ion and it becomes something you do. Which word: construction or structure?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: construction."
+   },
+   "pos_drill": {
+    "time": "5 mins",
+    "intro": {
+     "title": "Noun, verb or adjective?",
+     "rule": "Read the sentence. What job does the bold word do?",
+     "prompt": "Our **attractive** poster pulled people to the stall.",
+     "choices": [
+      "**noun**\nnames a thing or idea",
+      "**verb**\nsomething you do",
+      "**adjective**\ndescribes a noun"
+     ],
+     "answer": "adjective",
+     "why": "attractive describes the poster",
+     "routine": "Eyes on me - voices off",
+     "footer": "Next: your turn on four suffix cards",
+     "notes": "ANSWER: adjective - attractive describes the poster.\n1. SAY: \"Every word has a job in a sentence. The sentence tells us the job, and the suffix helps.\"\n2. POINT at each choice. SAY: \"A noun names a thing or idea. A verb is something you do. An adjective describes a noun.\"\n3. MODEL: read the sentence. SAY: \"What sort of poster? An attractive one. Attractive tells us about the poster.\"\n4. SAY: \"The doing word is pulled. Poster is the thing. Attractive describes the poster, so it is an adjective.\" REVEAL on the click.\n5. SAY: \"Attract is something you do. Add -ive, relating to, and it describes a noun. The suffix changed the job.\"\nTRAP: verb, because attract is an action. Fix: cover the -ive, then show it; student says what the suffix changed."
+    },
+    "cards": [
+     {
+      "morph": "-ery",
+      "pos_answer": "noun",
+      "sentence": "The farm machinery pulled the logs out of the creek.",
+      "why": "machinery is the thing that pulled the logs",
+      "sheet_word": "pottery",
+      "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-ery means relating to, or place where. The farm machinery pulled the logs out of the creek.\"\n2. ASK: \"What job does machinery do in this sentence: noun, verb or adjective?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: noun.\nSCAN: split or wrong chorus -> do not click. Ask \"What pulled the logs?\", then re-ask on three.\n3. REVEAL after the choral answer. SAY: \"Machinery is the thing that pulled the logs, so it is a noun. -ery words name a thing or a place, so they are nouns.\"\nTRAP: verb, because pulled is an action. Fix: pulled is the verb; ask what pulled the logs, student points at machinery."
+     },
+     {
+      "morph": "-cian",
+      "pos_answer": "noun",
+      "sentence": "Our coach is a clever tactician who plans every move.",
+      "why": "tactician is the person who plans every move",
+      "sheet_word": "musician",
+      "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-cian means person who. Our coach is a clever tactician who plans every move.\"\n2. ASK: \"What job does tactician do in this sentence: noun, verb or adjective?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: noun.\nSCAN: split or wrong chorus -> do not click. Ask \"Who plans every move?\", then re-ask on three.\n3. REVEAL after the choral answer. SAY: \"A tactician is the person who plans every move, so it is a noun. -cian means person who, so -cian words name people. They are nouns.\"\nTRAP: adjective, because clever sits next to it. Fix: clever describes the tactician; ask who plans, student says tactician."
+     },
+     {
+      "morph": "-ciate",
+      "pos_answer": "verb",
+      "sentence": "Two umpires will officiate at our footy final.",
+      "why": "officiate is what the umpires will do",
+      "sheet_word": "appreciate",
+      "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-ciate means to make. Two umpires will officiate at our footy final.\"\n2. ASK: \"What job does officiate do in this sentence: noun, verb or adjective?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: verb.\nSCAN: split or wrong chorus -> do not click. Ask \"What will the umpires do?\", then re-ask on three.\n3. REVEAL after the choral answer. SAY: \"Officiate is what the umpires will do, so it is a verb. -ciate means to make, and making is something you do, so -ciate words are usually verbs.\"\nTRAP: noun, because umpires are people. Fix: umpires is the noun; ask what they will do, student says officiate."
+     },
+     {
+      "morph": "-ar",
+      "pos_answer": "adjective",
+      "sentence": "We climbed over the angular rocks at the beach.",
+      "why": "angular describes the rocks",
+      "sheet_word": "muscular",
+      "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-ar means relating to. We climbed over the angular rocks at the beach.\"\n2. ASK: \"What job does angular do in this sentence: noun, verb or adjective?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: adjective.\nSCAN: split or wrong chorus -> do not click. Ask \"What sort of rocks are they?\", then re-ask on three.\n3. REVEAL after the choral answer. SAY: \"Angular describes the rocks, so it is an adjective. -ar means relating to, so -ar words often describe.\"\nTRAP: noun, because rocks are things. Fix: rocks is the noun; ask what sort of rocks, student says angular."
+     }
+    ]
+   },
+   "learned_words": {
+    "review": [
+     {
+      "word": "campaign",
+      "unfair": "g",
+      "notes": "1. SAY: \"Campaign. Our school ran a campaign to stop litter.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: kam-PAYN, two beats. The g is silent, like in sign."
+     },
+     {
+      "word": "guarantee",
+      "unfair": "u",
+      "notes": "1. SAY: \"Guarantee. The tractor came with a five-year guarantee.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: GA-ruhn-TEE. The u after the g is silent, like in guard."
+     }
+    ],
+    "new": {
+     "word": "questionnaire",
+     "unfair": "nnaire",
+     "notes": "Why learned: it starts with question, spelled the usual way. Then the n doubles, and the French ending aire says /air/, like in millionaire.\nSay it: KWES-chuh-NAIR, three beats, the last strongest.\n1. COPY it twice, saying the letter names: q - u - e - s - t - i - o - n - n - a - i - r - e.\n2. COVER both and write it a third time from memory, then tick or fix.\nLink: a questionnaire is a list of questions you ask lots of people. In maths, you can turn its answers into percentages."
+    }
+   },
+   "grammar": {
+    "header_notes": "PURPOSE: A complex sentence has a main clause (M) that stands alone and a subordinate clause (S) that leaves you waiting. The trigger word (T) is what makes S wait.\nWHY THIS WEEK: in a persuasive piece the opinion is the M and the reason is the S. Students who can find M, S and T stop leaving a reason on its own as half a sentence.\nTIME: 5 minutes, no more - I do 1 min, We do 1 question, You do 3 questions at about 30 seconds each. One question per slide; your click reveals the answer.\nROUTINE: all grammar is written in the OG book. No boards - books, fingers and voices only.\nCHECK: the class met M, S and T in Term 3. Cover one half and read the other: if it leaves you waiting, it is S. A fronted S takes a comma.",
+    "i_do": {
+     "title": "Find M, S and T",
+     "rule": "M stands alone. S leaves you waiting. T makes S wait.",
+     "example": "We should start a litter campaign\nbecause our yard is a mess.",
+     "items": [
+      "Trigger words: because, although, when, if, until, since",
+      "Cover one half. Read the other. Does it leave you waiting?"
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Your turn: find the trigger word",
+     "notes": "ANSWER: M = We should start a litter campaign. S = because our yard is a mess. T = because.\n1. SAY: \"Your opinion is the half that stands alone, and your reason is the half that waits. Finding them stops you leaving a reason on its own.\"\n2. WRITE: copy the sentence on the class board. COVER the second half and read \"We should start a litter campaign\". It stands alone, so write M under it.\n3. WRITE: cover the first half and read \"because our yard is a mess\". It leaves you waiting, so write S under it. CIRCLE because and write T above it.\n4. ASK: \"Cover because. Does our yard is a mess stand alone now? Thumbs up or down, voices off.\" 5 sec. EXPECT: thumbs up - because is what made it wait.\nTRAP: calling the longer half M. Fix: cover and read each half, hear which one waits, student re-labels it.\nCLARIFY: if a student asks whether S always comes second, say no - S can come first, and then a comma goes where it ends.\n---\nPREP: a subordinating conjunction (because, although, when, if, until, since) makes its clause dependent; and, but and so are not trigger words."
+    },
+    "we_do": {
+     "title": "Which word is T?",
+     "rule": "T is the trigger word at the front of S.",
+     "round": [
+      {
+       "prompt": "Although the questionnaire was long,\nmost students finished it.",
+       "choices": [
+        "Although",
+        "questionnaire",
+        "finished"
+       ],
+       "answer": "Although",
+       "why": "it makes the first half wait",
+       "routine": "Fingers: 1, 2 or 3",
+       "footer": "Stem: It is T because ...",
+       "notes": "ANSWER: 1 - Although. It makes the first half wait.\n1. SAY: \"This time S comes first. Read it in your head and find the word that makes the first half wait.\"\n2. ASK: \"One finger Although, two questionnaire, three finished, voices off, show me on three.\" 5 sec. EXPECT: one finger.\n3. REVEAL after fingers are scanned. ASK: \"How do you know?\" Cold call one student. EXPECT: cover Although and the rest of that half stands alone.\nTRAP: choosing 3, because finished is the doing word. Fix: T is a joining word, not the verb; cover Although and read again, student votes again.\nCLARIFY: if a student asks about the comma, say a fronted S takes a comma where it ends, so the reader knows where M starts."
+      }
+     ]
+    },
+    "you_do": {
+     "title": "Write T, then M or S",
+     "rule": "Write T. Then write M or S for the first half.",
+     "routine": "OG books - 30 sec - pens down",
+     "footer": "Check: cover T - does the rest stand alone?",
+     "round": [
+      {
+       "prompt": "Our stall made a profit\nbecause the posters attracted shoppers.",
+       "answer": "because, M",
+       "why": "the first half stands alone",
+       "notes": "ANSWER: because, M.\n1. SAY: \"Write the trigger word, T. Then write M or S for the first half. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> cover the second half and ask which half waits, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Our stall made a profit stands alone, so it is M. Because makes the second half wait.\"\nTRAP: writing attracted, the tract word. Fix: that is the doing word inside S; cover because and read, student writes because.\nEXTENSION: Two in one - write one complex sentence with a tract word in M and a different one in S. Label M, S and T.\nHELP: give the trigger word list - because, although, when, if, until - and ask which one is in the sentence."
+      },
+      {
+       "prompt": "When we subtract 25% from $40,\nthe price drops to $30.",
+       "answer": "When, S",
+       "why": "the first half waits, so a comma ends it",
+       "notes": "ANSWER: When, S.\n1. SAY: \"Write T, then M or S for the first half. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> read the first half aloud and stop, so they hear the wait, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. When we subtract 25% from $40 leaves you waiting, so it is S. The comma shows where S ends.\"\nTRAP: writing M because the first half is longer. Fix: cover the second half and read the first; it waits, student writes S."
+      },
+      {
+       "prompt": "The polar bear swam and swam\nuntil it reached the sea ice.",
+       "answer": "until, M",
+       "why": "the polar bear swam and swam stands alone",
+       "notes": "ANSWER: until, M.\n1. SAY: \"Last one. Write T, then M or S for the first half. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> cover until and read it reached the sea ice, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. The first half stands alone, so it is M. Until makes the second half wait, and and just joins swam and swam.\"\n4. SAY: \"In your persuasive piece, check each reason. If it starts with because and stands on its own, join it to its M.\"\nTRAP: writing and. Fix: and is not a trigger word - cover it and nothing waits; student writes until.\n---\nANSWERS: 1. because, M  2. When, S  3. until, M. EXTENSION: e.g. Our stall will attract shoppers (M) if nothing distracts them (S); T = if."
+      }
+     ]
+    }
+   },
+   "vote": {
+    "title": "Trickiest this week?",
+    "rule": "Which was trickiest this week? Hold up 1, 2, 3 or 4.",
+    "options": [
+     "Spelling tract words",
+     "campaign and questionnaire",
+     "Finding M, S and T",
+     "Noun, verb or adjective"
+    ],
+    "notes": "1. SAY: \"Before our dictation, I want to know what was trickiest this week. Read the four choices with me.\"\n2. ASK: \"Hold up 1, 2, 3 or 4 fingers for the trickiest one, voices off, show me on three.\" 5 sec. Count the most common number.\n3. WRITE the winner into next week's From our reviews line."
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "When we subtracted the discount, the catalogue price was much lower.",
+     "targets": [
+      "subtracted",
+      "catalogue"
+     ],
+     "cops": {
+      "capitals": [
+       "When"
+      ],
+      "punctuation": [
+       "comma after the opening S (the When part that leaves you waiting - the comma shows where it ends)",
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "This week: tract in subtracted, and today's fronted S with its comma. Week 5 throwback: catalogue.\nTRAP: no comma after discount. Fix: the When half leaves you waiting, so a comma marks where it ends; student adds it."
+    }
+   ]
+  }
+ ]
+}
