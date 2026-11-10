@@ -118,6 +118,9 @@ const SPEC_SAMPLES = {
   clock: { type: "clock", time: "3:45", minutes: true, digital: true },
   conversionChart: { type: "conversionChart", measure: "length" },
   tally: { type: "tally", headers: ["Sport", "Tally", "Frequency"], rows: [["Footy", 8], ["Netball", 5], ["Soccer", 12]] },
+  dial: { type: "dial", max: 1500, major: 100, minor: 5, value: 1060, labels: { "1000": "1 kg" } },
+  jug: { type: "jug", max: 3000, major: 1000, minor: 4, value: 1750 },
+  factorTree: { type: "factorTree", tree: { value: "48", children: [{ value: "A", children: [{ value: "2" }, { value: "3" }] }, { value: "8" }] } },
   custom: { type: "custom", draw: (slide, f) => { slide.addText("x", { x: f.x, y: f.y, w: 1, h: 0.4 }); return { x: f.x, y: f.y, w: 1, h: 0.4 }; } },
 };
 

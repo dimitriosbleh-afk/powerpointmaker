@@ -1,0 +1,19 @@
+{
+  "unit_folder": "Term4_Week6_Maths_Test_Revision",
+  "unit_pptx_name": "Term 4 Week 6 - Maths Test Revision - Year 5-6 Maths.pptx",
+  "anchor": "Read it. Work it. Check it.",
+  "lessons": [
+    {
+      "build_script": "builds/t4w6_maths_s6_test_revision_number.json",
+      "folder": "T4W6_Maths_S6_Test_Revision_Number",
+      "session": 6,
+      "focus": "30 minutes. Twins of the 14 number and algebra test questions (Grade 5 Q1-3, 7-12; Grade 6 Q3, 7, 10-12). Critical feature: read what the question really asks before calculating. No Daily Review or Fluency (teacher's request)."
+    },
+    {
+      "build_script": "builds/t4w6_maths_s7_test_revision_measurement_data.json",
+      "folder": "T4W6_Maths_S7_Test_Revision_Measurement_Data",
+      "session": 7,
+      "focus": "60 minutes. Twins of the 40 fraction, percentage, measurement, space, data and chance test questions (Grade 5 Q4-6, 13-29; Grade 6 Q1-2, 4-6, 8-9, 13-25). Critical feature: find what one step, piece or part is worth. No Daily Review or Fluency (teacher's request)."
+    }
+  ]
+}

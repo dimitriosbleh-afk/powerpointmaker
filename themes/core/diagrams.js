@@ -280,7 +280,10 @@ function gridSvg(spec, colours) {
     if (j % every !== 0 || v === axisY) continue;
     els.push(text(X(axisX) - 5, Y(v) + (v < 0 ? 3 : 0), num(v), { size: fs, fill: ink, anchor: "end" }));
   }
-  if (axisX !== xr[0] || axisY !== yr[0]) els.push(text(X(axisX) - 4, Y(axisY) + fs * 0.9, "0", { size: fs, fill: ink, anchor: "end" }));
+  // Origin label. With four quadrants it sits above the x-axis, so it cannot run
+  // into the "-1" below the axis and read as "-10".
+  if (axisX !== xr[0] && axisY !== yr[0]) els.push(text(X(axisX) - 4, Y(axisY) - fs * 0.6, "0", { size: fs, fill: ink, anchor: "end" }));
+  else if (axisX !== xr[0] || axisY !== yr[0]) els.push(text(X(axisX) - 4, Y(axisY) + fs * 0.9, "0", { size: fs, fill: ink, anchor: "end" }));
 
   const toPx = (p) => (Array.isArray(p) ? { x: X(Number(p[0])), y: Y(Number(p[1])) } : { x: X(Number(p.x)), y: Y(Number(p.y)) });
   const polys = spec.polygons || (spec.polygon ? [spec.polygon] : []);
@@ -827,7 +830,122 @@ function tallySvg(spec, colours) {
   return wrapSvg(els, 0, 0, W, H, 3);
 }
 
+/* ── Factor tree ────────────────────────────────────────────────────────
+ * { type: "factorTree", tree: { value: "48", children: [{ value: "6", children: [...] }, { value: "8" }] } }
+ * Each node is a box joined to its parent. A value that is not a number
+ * ("A", "?", "") is an unknown: drawn in the accent colour, or blank to fill in.
+ */
+function factorTreeSvg(spec, colours) {
+  const ink = hexColour(colours && colours.ink, "2B2B2B");
+  const accent = hexColour(colours && colours.accent, "C0392B");
+  const BW = 46;
+  const BH = 30;
+  const GAP_X = 14;
+  const LEVEL = 58;
+  const els = [];
+  const lines = [];
+  let nextLeaf = 0;
+  // Leaves sit in left-to-right slots; a parent centres over its children.
+  function place(node, depth) {
+    const kids = Array.isArray(node && node.children) ? node.children : [];
+    let x;
+    if (!kids.length) { x = nextLeaf * (BW + GAP_X); nextLeaf += 1; }
+    else {
+      const xs = kids.map((k) => place(k, depth + 1));
+      x = (xs[0] + xs[xs.length - 1]) / 2;
+      xs.forEach((cx) => lines.push(`<line x1="${f2(x + BW / 2)}" y1="${f2(depth * LEVEL + BH)}" x2="${f2(cx + BW / 2)}" y2="${f2((depth + 1) * LEVEL)}" stroke="${ink}" stroke-width="1.6"/>`));
+    }
+    const value = node && node.value != null ? String(node.value) : "";
+    const unknown = !/^-?\d+(\.\d+)?$/.test(value);
+    const y = depth * LEVEL;
+    els.push(`<rect x="${f2(x)}" y="${f2(y)}" width="${BW}" height="${BH}" rx="4" fill="#FFFFFF" stroke="${unknown ? accent : ink}" stroke-width="1.8"/>`);
+    if (value) els.push(text(x + BW / 2, y + BH / 2, value, { size: 17, bold: true, fill: unknown ? accent : ink }));
+    place.maxDepth = Math.max(place.maxDepth || 0, depth);
+    return x;
+  }
+  place(spec.tree || { value: "?" }, 0);
+  const maxX = Math.max(1, nextLeaf) * (BW + GAP_X) - GAP_X;
+  return wrapSvg(lines.concat(els), 0, 0, maxX, place.maxDepth * LEVEL + BH, 4);
+}
+
+/* ── Dial scale (kitchen scales) ────────────────────────────────────────
+ * { type: "dial", max: 1500, major: 100, minor: 5, value: 1060, labels: { "1000": "1 kg" } }
+ * 0 at the top, clockwise, one full turn = max. Every `major` is labelled
+ * (override a label with `labels`), with `minor` steps between. The needle
+ * points to `value`; omit it for a blank dial.
+ */
+function dialSvg(spec, colours) {
+  const ink = hexColour(colours && colours.ink, "2B2B2B");
+  const accent = hexColour(colours && colours.accent, "C0392B");
+  const max = Number(spec.max) || 1000;
+  const major = Number(spec.major) || max / 10;
+  const minor = Math.max(1, Number(spec.minor) || 5);
+  const R = 100;
+  const els = [`<circle cx="0" cy="0" r="${R + 8}" fill="#FFFFFF" stroke="${ink}" stroke-width="3"/>`];
+  const at = (v, r) => { const a = (v / max) * 2 * Math.PI; return { x: r * Math.sin(a), y: -r * Math.cos(a) }; };
+  const steps = Math.round(max / major) * minor;
+  for (let i = 0; i < steps; i += 1) {
+    const v = (i * major) / minor;
+    const isMajor = i % minor === 0;
+    const o = at(v, R);
+    const n = at(v, R - (isMajor ? 14 : 7));
+    els.push(`<line x1="${f2(o.x)}" y1="${f2(o.y)}" x2="${f2(n.x)}" y2="${f2(n.y)}" stroke="${ink}" stroke-width="${isMajor ? 2.2 : 1}"/>`);
+    if (isMajor) {
+      const p = at(v, R - 30);
+      const custom = spec.labels && spec.labels[String(v)];
+      els.push(text(p.x, p.y, custom != null ? custom : num(v), { size: 13, bold: true, fill: ink }));
+    }
+  }
+  if (spec.value != null) {
+    const tip = at(Number(spec.value), R - 6);
+    els.push(`<line x1="0" y1="0" x2="${f2(tip.x)}" y2="${f2(tip.y)}" stroke="${accent}" stroke-width="3.2" stroke-linecap="round"/>`);
+  }
+  els.push(`<circle cx="0" cy="0" r="6" fill="${ink}"/>`);
+  if (spec.unit) els.push(text(0, 36, spec.unit, { size: 13, fill: ink }));
+  return wrapSvg(els, -R - 10, -R - 10, R + 10, R + 10, 4);
+}
+
+/* ── Measuring jug ──────────────────────────────────────────────────────
+ * { type: "jug", max: 3000, major: 1000, minor: 4, value: 1750, unit: "L" }
+ * An upright jug with a scale up its side: every `major` labelled
+ * (major / 1000 with the unit, e.g. "1 L"), `minor` steps between, liquid
+ * filled to `value`. Set `labels` to override, e.g. { "500": "500 mL" }.
+ */
+function jugSvg(spec, colours) {
+  const ink = hexColour(colours && colours.ink, "2B2B2B");
+  const accent = hexColour(colours && colours.accent, "C0392B");
+  const max = Number(spec.max) || 1000;
+  const major = Number(spec.major) || max / 4;
+  const minor = Math.max(1, Number(spec.minor) || 4);
+  const W = 120;
+  const H = 230;
+  const top = 20;                       // empty headroom above the top mark
+  const Y = (v) => top + H - (v / max) * H;
+  const els = [];
+  if (spec.value != null) {
+    const y = Y(Number(spec.value));
+    els.push(`<rect x="0" y="${f2(y)}" width="${W}" height="${f2(top + H - y)}" fill="${accent}" fill-opacity="0.28"/>`);
+    els.push(`<line x1="0" y1="${f2(y)}" x2="${W}" y2="${f2(y)}" stroke="${accent}" stroke-width="2"/>`);
+  }
+  els.push(`<path d="M0,0 L0,${top + H} L${W},${top + H} L${W},0" fill="none" stroke="${ink}" stroke-width="3"/>`);
+  const steps = Math.round(max / major) * minor;
+  for (let i = 1; i <= steps; i += 1) {
+    const v = (i * major) / minor;
+    const isMajor = i % minor === 0;
+    const y = Y(v);
+    els.push(`<line x1="${W}" y1="${f2(y)}" x2="${W - (isMajor ? 26 : 14)}" y2="${f2(y)}" stroke="${ink}" stroke-width="${isMajor ? 2.2 : 1.2}"/>`);
+    if (isMajor) {
+      const custom = spec.labels && spec.labels[String(v)];
+      els.push(text(W + 8, y, custom != null ? custom : `${num(v / 1000)} ${spec.unit || "L"}`, { size: 15, bold: true, fill: ink, anchor: "start" }));
+    }
+  }
+  return wrapSvg(els, -2, -2, W + 62, top + H + 2, 4);
+}
+
 const BUILDERS = {
+  dial: dialSvg,
+  jug: jugSvg,
+  factorTree: factorTreeSvg,
   tally: tallySvg,
   angle: angleSvg,
   columnSum: columnSumSvg,
@@ -850,6 +968,9 @@ const DIAGRAM_TYPES = Object.keys(BUILDERS);
  * Angles stay big enough to measure with a real protractor.
  */
 const PAPER = {
+  factorTree: { w: 220, h: 140 },
+  dial: { w: 170, h: 170 },
+  jug: { w: 130, h: 170 },
   tally: { w: 300, h: 150 },
   angle: { w: 190, h: 118 },
   columnSum: { w: 150, h: 90 },

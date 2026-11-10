@@ -1,0 +1,3730 @@
+{
+  "lesson": {
+    "subject": "numeracy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 6,
+    "session": 7,
+    "variant": 2,
+    "minutes": 60,
+    "skipWarmUp": "Teacher asked to skip Daily Review and Fluency: pre-test revision, every slide is retrieval",
+    "title": "Test Revision: Fractions, Measurement, Space and Data",
+    "subtitle": "Part 2 of 2: ready for tomorrow's maths test",
+    "meta": "Year 5/6 Maths | Test Revision",
+    "footer": "Test Revision | Year 5/6 Maths | Session 7",
+    "outputFolder": "T4W6_Maths_S7_Test_Revision_Measurement_Data",
+    "fileName": "Session 7 - Test Revision Fractions Measurement Space and Data.pptx",
+    "titleVisual": {
+      "type": "fractionWall",
+      "denoms": [
+        1,
+        2,
+        4,
+        8
+      ]
+    },
+    "plan": {
+      "curriculum": "Mathematics 2.0, Years 5 and 6, Number (fractions, percentages), Measurement, Space, Statistics and Probability: whole-year revision of the questions on tomorrow's Grade 5 and Grade 6 General Maths tests",
+      "shape": "consolidation: one slide per test question type, attempted first on boards, then the method modelled on the reveal; one short I Do on related denominators, the step most likely to need reteaching",
+      "criticalFeature": "find what one step, one piece or one part is worth before you answer: the scale step, the same size fraction pieces, the share of the spinner",
+      "decisionPoints": [
+        "the launch: which topic each student feels least sure about",
+        "the fractions hinge after the I Do",
+        "the exit ticket"
+      ],
+      "anchor": "Read it. Work it. Check it.",
+      "catchUp": "Missed Session 6? Nothing here depends on it. Anyone who wrote 6 buses on its exit ticket gets two minutes on remainders (one more bus for the leftovers) during Your turn"
+    }
+  },
+  "materials": {
+    "manipulatives": [
+      "A protractor for every student",
+      "Paper strips for folding fractions (for the HELP moves)"
+    ],
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Scrap paper for working",
+      "Printed Revision Worksheet for everyone; Extension and Supported Worksheet as needed"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Everyone, together, on three"
+    ],
+    "boardSetup": [
+      "Write the anchor on the board: Read it. Work it. Check it."
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Revision Worksheet",
+      "description": "Your turn. Fractions, percentages, measurement, space and chance question types again, with new numbers.",
+      "title": "Fractions, Measurement and Data Revision",
+      "subtitle": "Read it. Work it. Check it.",
+      "sections": [
+        {
+          "title": "Fractions and percentages",
+          "proficiency": "fluency",
+          "columns": 2,
+          "example": {
+            "prompt": "1/3 + 1/6",
+            "steps": [
+              "1 third = 2 sixths.",
+              "2/6 + 1/6 = 3/6."
+            ],
+            "answer": "3/6, which is 1/2"
+          },
+          "items": [
+            {
+              "prompt": "Solve. Rename to the same size pieces first.",
+              "parts": [
+                {
+                  "prompt": "1/2 + 3/8",
+                  "answer": "7/8"
+                },
+                {
+                  "prompt": "9/10 - 2/5",
+                  "answer": "5/10, which is 1/2"
+                }
+              ]
+            },
+            {
+              "prompt": "A class raised $240. 50% bought books and 25% bought games. The rest went to charity. How much went to charity?",
+              "answer": "$60 (25% of $240)",
+              "answerLabel": "$"
+            }
+          ]
+        },
+        {
+          "title": "Measurement and space",
+          "proficiency": "problemSolving",
+          "columns": 2,
+          "example": {
+            "prompt": "Find the perimeter of a 7 cm by 4 cm rectangle.",
+            "steps": [
+              "A rectangle has 4 sides: 7, 4, 7, 4.",
+              "7 + 4 + 7 + 4 = 22."
+            ],
+            "answer": "22 cm"
+          },
+          "items": [
+            {
+              "prompt": "A playground is 15 m long and 8 m wide.",
+              "visual": {
+                "type": "shape",
+                "points": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    15,
+                    0
+                  ],
+                  [
+                    15,
+                    8
+                  ],
+                  [
+                    0,
+                    8
+                  ]
+                ],
+                "labels": [
+                  "15 m",
+                  "8 m",
+                  null,
+                  null
+                ]
+              },
+              "parts": [
+                {
+                  "prompt": "Perimeter",
+                  "answer": "46",
+                  "unit": "m"
+                },
+                {
+                  "prompt": "Area",
+                  "answer": "120",
+                  "unit": "m²"
+                }
+              ]
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Tom wrote the coordinates of point T. Find his mistake and fix it.",
+              "visual": {
+                "type": "grid",
+                "x": [
+                  0,
+                  6
+                ],
+                "y": [
+                  0,
+                  6
+                ],
+                "points": [
+                  {
+                    "x": 1,
+                    "y": 4,
+                    "label": "T"
+                  }
+                ]
+              },
+              "work": [
+                "T is 1 along and 4 up, so T is (4, 1)."
+              ],
+              "answer": "T is (1, 4). Along comes first, then up."
+            },
+            {
+              "kind": "choice",
+              "prompt": "What is 4:25 pm in 24-hour time?",
+              "options": [
+                "04:25",
+                "14:25",
+                "16:25"
+              ],
+              "answer": 2,
+              "explain": "pm adds 12 to the hours: 4 + 12 = 16, so 16:25."
+            },
+            {
+              "prompt": "Measure the angle.",
+              "visual": {
+                "type": "angle",
+                "rays": [
+                  0,
+                  125
+                ],
+                "arcs": [
+                  {
+                    "from": 0,
+                    "to": 125
+                  }
+                ]
+              },
+              "answer": "125",
+              "answerLabel": "Angle:",
+              "unit": "°",
+              "working": "none"
+            }
+          ]
+        },
+        {
+          "title": "Data and chance",
+          "proficiency": "reasoning",
+          "columns": 2,
+          "example": {
+            "prompt": "A die is numbered 1 to 6. What is the chance of rolling a number less than 3?",
+            "steps": [
+              "Less than 3 means 1 and 2.",
+              "That is 2 numbers out of 6."
+            ],
+            "answer": "2 in 6"
+          },
+          "items": [
+            {
+              "prompt": "Scores: 2, 5, 3, 5, 1, 5, 2, 4. What is the mode?",
+              "answer": "5",
+              "answerLabel": "Mode:"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Spinner A has 4 equal parts and 1 is blue. Which spinner has the same chance of blue?",
+              "options": [
+                "8 parts, 2 blue",
+                "4 parts, 2 blue",
+                "8 parts, 1 blue"
+              ],
+              "answer": 0,
+              "reason": true,
+              "explain": "1 in 4 is the same as 2 in 8. 2 in 4 is a half, and 1 in 8 is smaller."
+            },
+            {
+              "kind": "open",
+              "prompt": "Design a spinner with 3 possible outcomes where red is the most likely. Explain why red is most likely.",
+              "answer": "Example: 6 parts, 3 red, 2 blue, 1 green. Red has the most parts, so it has the biggest chance (3 in 6)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option. Fraction and percent puzzles, measurement challenges and spinner design, with worked examples.",
+      "title": "Extension: Maths Investigator",
+      "subtitle": "Use what you know in new ways.",
+      "sections": [
+        {
+          "title": "Fraction and percent puzzles",
+          "proficiency": "reasoning",
+          "columns": 2,
+          "intro": "Percent means out of 100. 25% is one quarter, 50% is one half, 75% is three quarters.",
+          "example": {
+            "prompt": "Which is bigger, 3/4 or 70%?",
+            "steps": [
+              "3/4 is 75 out of 100, so 75%.",
+              "75% is more than 70%."
+            ],
+            "answer": "3/4"
+          },
+          "items": [
+            {
+              "prompt": "A shop takes 25% off a $64 game. What is the new price?",
+              "answer": "$48 (25% of 64 is 16, and 64 - 16 = 48)",
+              "answerLabel": "$"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Which is the odd one out?",
+              "options": [
+                "0.4",
+                "2/5",
+                "40%",
+                "4/100"
+              ],
+              "answer": 3,
+              "reason": true,
+              "explain": "4/100 is 4%. The others are all 40%."
+            },
+            {
+              "kind": "open",
+              "prompt": "Find two fractions with different denominators that add to 3/4. Find another pair.",
+              "answer": "1/2 + 1/4, or 1/2 + 2/8, or 1/4 + 4/8 (any correct pair with different denominators)."
+            }
+          ]
+        },
+        {
+          "title": "Measurement challenges",
+          "proficiency": "problemSolving",
+          "columns": 2,
+          "intro": "Perimeter is the distance around. Area is the space inside.",
+          "example": {
+            "prompt": "A square has a perimeter of 24 cm. What is its area?",
+            "steps": [
+              "A square has 4 equal sides: 24 divided by 4 is 6 cm.",
+              "Area = 6 x 6 = 36."
+            ],
+            "answer": "36 cm²"
+          },
+          "items": [
+            {
+              "prompt": "Two rectangles both have a perimeter of 20 cm. One is 6 cm by 4 cm. Find another one, then say which has the bigger area.",
+              "answer": "Any rectangle whose length and width add to 10, e.g. 7 cm by 3 cm (area 21, smaller than 24) or 5 cm by 5 cm (area 25, bigger).",
+              "lines": 3
+            },
+            {
+              "prompt": "A movie starts at 6:45 pm and lasts 1 hour and 50 minutes. When does it finish, in 24-hour time?",
+              "answer": "20:35 (8:35 pm)",
+              "answerLabel": "Time:"
+            }
+          ]
+        },
+        {
+          "title": "Chance and data challenges",
+          "proficiency": "reasoning",
+          "columns": 2,
+          "intro": "The same chance means the same fraction of the spinner, not the same number of parts.",
+          "example": {
+            "prompt": "Use 8 equal parts to make blue a 1 in 4 chance.",
+            "steps": [
+              "1 in 4 is the same as 2 in 8.",
+              "Colour 2 of the 8 parts blue."
+            ],
+            "answer": "2 blue parts"
+          },
+          "items": [
+            {
+              "prompt": "A spinner has 12 equal parts. How many must be red for a 1 in 3 chance of red?",
+              "answer": "4 (4 in 12 is 1 in 3)",
+              "answerLabel": "Red parts:"
+            },
+            {
+              "kind": "open",
+              "prompt": "Write five scores under 10 that have a mode of 7. Can you make the mode 7 using only two 7s?",
+              "answer": "Example: 7, 7, 2, 5, 9. Yes, two 7s works if every other score appears only once."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "answerKey": false,
+      "description": "For students who need more guidance: smaller numbers, models drawn and a hint on every question.",
+      "title": "Fractions, Measurement and Data: Step by Step",
+      "subtitle": "Take it one step at a time.",
+      "sections": [
+        {
+          "title": "Fractions and percentages",
+          "proficiency": "understanding",
+          "columns": 2,
+          "example": {
+            "prompt": "1/4 + 1/4",
+            "visual": {
+              "type": "fractionStrips",
+              "strips": [
+                {
+                  "denom": 4,
+                  "shaded": 2
+                }
+              ]
+            },
+            "steps": [
+              "The pieces are the same size: quarters.",
+              "1 quarter and 1 quarter is 2 quarters."
+            ],
+            "answer": "2/4, which is 1/2"
+          },
+          "items": [
+            {
+              "prompt": "1/2 + 1/4 = ?",
+              "visual": {
+                "type": "fractionStrips",
+                "strips": [
+                  {
+                    "denom": 2,
+                    "shaded": 1
+                  },
+                  {
+                    "denom": 4,
+                    "shaded": 1
+                  }
+                ]
+              },
+              "hint": "1/2 is the same as 2/4.",
+              "answer": "3/4"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Circle the one that is the same as 50%.",
+              "hint": "50% means half.",
+              "options": [
+                "1/2",
+                "1/5",
+                "5.0"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "title": "Measuring",
+          "proficiency": "fluency",
+          "columns": 2,
+          "example": {
+            "prompt": "Find the perimeter of a 5 cm by 2 cm rectangle.",
+            "steps": [
+              "Write all 4 sides: 5, 2, 5, 2.",
+              "5 + 2 + 5 + 2 = 14."
+            ],
+            "answer": "14 cm"
+          },
+          "items": [
+            {
+              "prompt": "Find the perimeter of a 6 cm by 3 cm rectangle.",
+              "hint": "Add all 4 sides: 6 + 3 + 6 + 3.",
+              "answer": "18",
+              "answerLabel": "Perimeter:",
+              "unit": "cm"
+            },
+            {
+              "prompt": "Find the area of a 4 cm by 5 cm rectangle.",
+              "hint": "Multiply 4 x 5.",
+              "answer": "20",
+              "answerLabel": "Area:",
+              "unit": "cm²"
+            },
+            {
+              "prompt": "Write 3:00 pm in 24-hour time.",
+              "hint": "For pm, add 12 to the hours: 3 + 12.",
+              "answer": "15:00",
+              "answerLabel": "Time:",
+              "working": "none"
+            }
+          ]
+        },
+        {
+          "title": "Grids and chance",
+          "proficiency": "understanding",
+          "columns": 2,
+          "example": {
+            "prompt": "A spinner has parts red, red, blue. How many possible outcomes?",
+            "steps": [
+              "List each colour once: red, blue.",
+              "That is 2 outcomes."
+            ],
+            "answer": "2"
+          },
+          "items": [
+            {
+              "prompt": "What are the coordinates of point K?",
+              "visual": {
+                "type": "grid",
+                "x": [
+                  0,
+                  6
+                ],
+                "y": [
+                  0,
+                  6
+                ],
+                "points": [
+                  {
+                    "x": 2,
+                    "y": 5,
+                    "label": "K"
+                  }
+                ]
+              },
+              "hint": "Go along the bottom first, then up.",
+              "answer": "(2, 5)",
+              "answerLabel": "K is"
+            },
+            {
+              "prompt": "A spinner has 4 equal parts: red, red, blue, green. How many possible outcomes?",
+              "hint": "List each colour once.",
+              "answer": "3",
+              "answerLabel": "Outcomes:"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Session 7 this week: test revision part 2 of 2, fractions, measurement, space, data and chance."
+    },
+    {
+      "kind": "resources",
+      "notes": "Before you start: boards, markers and a protractor for everyone, scrap paper, and print the Revision Worksheet for all, plus a few Extension and Supported copies."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to show what we know about fractions, measurement, space and data, ready for the test.",
+      "successCriteria": [
+        "I can read a scale, a grid or a graph to find a value.",
+        "I can solve fraction, percentage and measurement problems and check they make sense.",
+        "I can explain why an answer is right using the picture or the numbers."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Today we cover the rest of tomorrow's test:",
+            "fractions, measuring, shapes and grids, graphs and chance."
+          ],
+          [
+            "SAY: Let's read our I can statements together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "SAY: Every question is a practice twin of a test question,",
+            "so you'll know exactly what each one wants."
+          ]
+        ],
+        "prep": "SC1 reading scales, grids and graphs is reachable for all; SC2 fraction, percent and measurement problems is the core and the exit evidence; SC3 explaining is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Read it. Work it. Check it.",
+      "visual": {
+        "type": "placemat",
+        "banner": "Tomorrow's test: show what you know",
+        "panels": [
+          {
+            "heading": "Read it",
+            "icon": "read",
+            "lines": [
+              "Read every word",
+              "What is it really asking?"
+            ]
+          },
+          {
+            "heading": "Work it",
+            "icon": "pencil",
+            "lines": [
+              "Write your working",
+              "What is one step worth?"
+            ]
+          },
+          {
+            "heading": "Check it",
+            "icon": "tick",
+            "lines": [
+              "Does it make sense?",
+              "Estimate first"
+            ]
+          }
+        ],
+        "strips": [
+          {
+            "label": "Today",
+            "items": [
+              "fractions",
+              "percent",
+              "measuring",
+              "angles",
+              "grids",
+              "graphs",
+              "chance"
+            ]
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - each student names one topic",
+        "beats": [
+          [
+            "POINT to the three steps.",
+            "SAY: Same three steps as last session: read it, work it, check it.",
+            "Today there's one new reminder: what is one step worth?"
+          ],
+          [
+            "POINT to the Today strip.",
+            "SAY: These are today's topics. Some will feel easy and some won't."
+          ],
+          [
+            "ASK: Which topic do you feel least sure about? Write just that word.",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: one topic word"
+          ],
+          [
+            "SCAN boards and tally the topics.",
+            "80%+ -> topics spread out: keep the pace, skip the OPTIONAL slides.",
+            "Less -> most chose one topic: slow down on that block, re-ask at its end."
+          ]
+        ],
+        "prep": "60 to 90 seconds. About 70 seconds per question slide. Optional if short of time: 75 percent, best unit, which point is at (3, 6), outcomes, categories.",
+        "tag": "[Launch | Retention and recall | HITS 9]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Write the fraction at each dot",
+      "visual": {
+        "type": "numberLine",
+        "start": 0,
+        "end": 1,
+        "step": 0.125,
+        "labels": [
+          "0",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "1"
+        ],
+        "marked": [
+          2,
+          4,
+          6
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "2/8 = 1/4",
+          "4/8 = 1/2",
+          "6/8 = 3/4"
+        ]
+      },
+      "notes": {
+        "answer": "1/4, 1/2, 3/4 (2/8, 4/8, 6/8)",
+        "beats": [
+          [
+            "SAY: Count the gaps between 0 and 1 first.",
+            "That tells you the size of each step."
+          ],
+          [
+            "ASK: What fraction is at each dot, from left to right?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 1/4, 1/2, 3/4",
+            "ACCEPT: 2/8, 4/8, 6/8"
+          ],
+          [
+            "SCAN boards for ninths.",
+            "80%+ -> reveal, cold call: How did you know it was eighths?",
+            "Less -> number every tick together in eighths, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: There are 8 gaps, so each step is one eighth.",
+            "2 eighths is the same as one quarter. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "counting the ticks, not the gaps, and getting ninths.",
+          "Fix: a finger in each gap to count, then they relabel."
+        ],
+        "stretch": "Where would 5/8 go? And 7/8?",
+        "help": "Label every tick in eighths first.",
+        "prep": "Twin of Grade 5 Q4: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Order from smallest to largest",
+      "visual": {
+        "type": "chips",
+        "items": [
+          "4/10",
+          "2/3",
+          "2/8",
+          "5/10"
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "2/8",
+          "4/10",
+          "5/10",
+          "2/3"
+        ]
+      },
+      "notes": {
+        "answer": "2/8, 4/10, 5/10, 2/3",
+        "beats": [
+          [
+            "SAY: Compare each fraction with one half.",
+            "That sorts most of them straight away."
+          ],
+          [
+            "ASK: Can you write these fractions in order, smallest to largest?",
+            "40 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 2/8, 4/10, 5/10, 2/3"
+          ],
+          [
+            "SCAN boards for 2/3 placed first.",
+            "80%+ -> reveal, cold call: Why is 2/8 the smallest?",
+            "Less -> line each up against one half on a wall, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 2/8 is a quarter, 4/10 is just under a half, 5/10 is a half,",
+            "and 2/3 is more than a half. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "thinking a bigger denominator means a bigger fraction.",
+          "Fix: bigger denominator, smaller pieces. They redraw two and compare."
+        ],
+        "stretch": "Add 3/5 to the list. Where does it go?",
+        "help": "A fraction wall to line each one up against one half.",
+        "prep": "Twin of Grade 6 Q4: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Which two show 75%?",
+      "visual": {
+        "type": "chips",
+        "items": [
+          "3/75",
+          "3/4",
+          "75.0",
+          "0.75"
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "3/4",
+          "0.75"
+        ]
+      },
+      "notes": {
+        "answer": "3/4 and 0.75",
+        "beats": [
+          [
+            "SAY: Percent means out of 100, so 75 percent is 75 hundredths."
+          ],
+          [
+            "ASK: Which two cards show the same amount as 75 percent?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 3/4 and 0.75"
+          ],
+          [
+            "SCAN boards for 75.0.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> shade 75 squares on a hundred grid and count the quarters, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 75 hundredths is 0.75, and 3 quarters of 100 is 75.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing 75.0 because it has 75 in it.",
+          "Fix: 75.0 is seventy-five wholes, so they choose again."
+        ],
+        "stretch": "Write 75 percent two more ways.",
+        "help": "A hundred grid with 75 squares shaded.",
+        "prep": "OPTIONAL: skip if the launch shows this is secure. Twin of Grade 5 Q6: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "workedExample",
+      "stage": 2,
+      "title": "Same size pieces first",
+      "steps": [
+        "Quarters and eighths are different sizes.",
+        "1 quarter = 2 eighths, so 3/4 = 6/8.",
+        "Now add the eighths: 6/8 + 1/8."
+      ],
+      "visual": {
+        "type": "fractionStrips",
+        "strips": [
+          {
+            "denom": 4,
+            "shaded": 3
+          },
+          {
+            "denom": 8,
+            "shaded": 1
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "3/4 + 1/8 = 7/8"
+        ]
+      },
+      "notes": {
+        "answer": "7/8",
+        "beats": [
+          [
+            "MODEL with the two strips.",
+            "SAY: Let me show you how I add 3 quarters and 1 eighth.",
+            "First I check the pieces."
+          ],
+          [
+            "POINT to the quarters, then the eighths.",
+            "SAY: Quarters are bigger than eighths, so I can't add them yet.",
+            "Each quarter splits into 2 eighths, so 3 quarters is 6 eighths."
+          ],
+          [
+            "ASK: So what is 6 eighths plus 1 eighth?",
+            "10 sec. Cue: Everyone, together, on three... one, two, three.",
+            "EXPECT: 7 eighths"
+          ],
+          [
+            "REVEAL after the choral answer.",
+            "SAY: It's 7/8. Only the top number changes,",
+            "because the pieces stay eighths."
+          ]
+        ],
+        "trap": [
+          "adding tops and bottoms to get 4/12.",
+          "Fix: ask if 4/12 is bigger than 3/4, and they redo it."
+        ],
+        "stretch": "Use the strips to prove 4/12 can't be right.",
+        "help": "Fold a paper strip into quarters, then eighths.",
+        "prep": "Related denominators, for Grade 6 Q5 and Q6: rename to the same size pieces, then add or take away. SC2.",
+        "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "What is 2/3 + 1/6?",
+      "prompt": "Write the letter of the answer.",
+      "options": [
+        {
+          "text": "3/9",
+          "misconception": "adds the tops and the bottoms"
+        },
+        {
+          "text": "5/6"
+        },
+        {
+          "text": "3/6",
+          "misconception": "adds the tops without renaming thirds as sixths"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - 5/6. 2/3 = 4/6, then 4/6 + 1/6 = 5/6",
+        "beats": [
+          [
+            "SAY: This one is just for you, so no talking."
+          ],
+          [
+            "ASK: What is 2 thirds plus 1 sixth? Write the letter.",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN every board, back row first.",
+            "80%+ -> reveal, cold call one B: Why not C?",
+            "Less -> fold a strip into thirds, then sixths, re-ask with 1/2 + 1/4."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: It's 5/6. Two thirds is four sixths, and one more sixth is five sixths.",
+            "Anyone on A or C starts Your turn on the Supported Worksheet."
+          ]
+        ],
+        "trap": [
+          "choosing A, 3/9.",
+          "Fix: 3/9 is less than 2/3, so they check with strips and redo it."
+        ],
+        "prep": "Hinge for fractions: under 80% means the strips again before the next three slides.",
+        "tag": "[CFU hinge | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Add the fractions",
+      "visual": {
+        "type": "text",
+        "text": "2/5 + 3/10 = ?"
+      },
+      "reveal": {
+        "answers": [
+          "7/10"
+        ]
+      },
+      "notes": {
+        "answer": "7/10",
+        "beats": [
+          [
+            "SAY: Same size pieces first. Fifths and tenths: which one do we change?"
+          ],
+          [
+            "ASK: What is 2 fifths plus 3 tenths?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 7/10"
+          ],
+          [
+            "SCAN boards for 5/15.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> each fifth is 2 tenths: shade a strip of tenths together, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 2 fifths is 4 tenths, and 4 tenths plus 3 tenths is 7 tenths.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "adding tops and bottoms: 5/15.",
+          "Fix: rename fifths as tenths first, and they add again."
+        ],
+        "stretch": "Is 7/10 more or less than 3/4? Prove it.",
+        "help": "A strip of tenths: shade the fifths first.",
+        "prep": "Twin of Grade 6 Q5: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Take away the fractions",
+      "visual": {
+        "type": "text",
+        "text": "5/6 - 1/3 = ?"
+      },
+      "reveal": {
+        "answers": [
+          "3/6, which is 1/2"
+        ]
+      },
+      "notes": {
+        "answer": "3/6, which is 1/2",
+        "beats": [
+          [
+            "SAY: Taking away works the same way: same size pieces first."
+          ],
+          [
+            "ASK: What is 5 sixths take away 1 third?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 3/6",
+            "ACCEPT: 1/2"
+          ],
+          [
+            "SCAN boards for 4/6 or 4/3.",
+            "80%+ -> reveal, cold call: Is 3/6 the same as a half?",
+            "Less -> 1 third is 2 sixths: cross off 2 of 5 shaded sixths, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 1 third is 2 sixths, and 5 sixths take away 2 sixths is 3 sixths.",
+            "That's one half. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "taking 1 from 5 without renaming: 4/6.",
+          "Fix: rename the third as sixths, and they take away again."
+        ],
+        "stretch": "Write another take-away with an answer of one half.",
+        "help": "Draw 6 boxes, shade 5, then cross off a third of the boxes.",
+        "prep": "Twin of Grade 6 Q6: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "How much of the paddock is left?",
+      "visual": {
+        "type": "text",
+        "text": "A farmer plants 3/10 of a paddock with wheat and 4/10 with oats. How much is left?"
+      },
+      "reveal": {
+        "answers": [
+          "3/10"
+        ]
+      },
+      "notes": {
+        "answer": "3/10",
+        "beats": [
+          [
+            "SAY: Read it carefully: we need what's left, not what's planted."
+          ],
+          [
+            "ASK: What fraction of the paddock is left?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 3/10"
+          ],
+          [
+            "SCAN boards for 7/10.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> draw 10 boxes, shade 3 then 4, count the empty ones, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 3 tenths and 4 tenths is 7 tenths planted.",
+            "The whole is 10 tenths, so 3 tenths is left. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "writing 7/10, the part that is planted.",
+          "Fix: underline left in the question, and they take it from the whole."
+        ],
+        "stretch": "If the wheat took 2/5 instead, how much would be left?",
+        "help": "Draw a strip of 10 boxes and shade each crop.",
+        "prep": "Twin of Grade 5 Q5: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "We Do",
+      "title": "About how many fans?",
+      "prompt": "1/4 of 320 fans bought a scarf. About how many?",
+      "options": [
+        {
+          "text": "55 to 65",
+          "misconception": "guesses without finding a quarter"
+        },
+        {
+          "text": "75 to 85"
+        },
+        {
+          "text": "100 to 110",
+          "misconception": "divides by 3, not 4"
+        },
+        {
+          "text": "155 to 165",
+          "misconception": "finds a half, not a quarter"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - 75 to 85 (exactly 80)",
+        "beats": [
+          [
+            "SAY: A quarter means split into 4 equal groups."
+          ],
+          [
+            "ASK: About how many fans bought a scarf? Write the letter.",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN boards for D.",
+            "80%+ -> reveal, cold call one B: How did you find a quarter?",
+            "Less -> halve 320, then halve again on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Half of 320 is 160, and half again is 80.",
+            "80 is between 75 and 85. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing D, half instead of a quarter.",
+          "Fix: halve twice for a quarter, and they choose again."
+        ],
+        "stretch": "Which range would 1/3 of 320 be in?",
+        "help": "Draw a bar for 320 split into 4 equal parts.",
+        "prep": "Twin of Grade 6 Q8: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "How much goes to the library?",
+      "visual": {
+        "type": "text",
+        "text": "A school fair makes $360. 60% pays for prizes and 15% pays for food. The rest goes to the library."
+      },
+      "reveal": {
+        "answers": [
+          "$90",
+          "25% of $360"
+        ]
+      },
+      "notes": {
+        "answer": "90 dollars",
+        "beats": [
+          [
+            "SAY: Read it: the library gets the rest.",
+            "So first, what percent is left?"
+          ],
+          [
+            "ASK: How much money goes to the library?",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 90 dollars"
+          ],
+          [
+            "SCAN boards for 270.",
+            "80%+ -> reveal, cold call: How did you find 25 percent?",
+            "Less -> a bar of four 25 percent parts: three spent, one left. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 60 and 15 is 75 percent spent, so 25 percent is left.",
+            "A quarter of 360 is 90 dollars. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "writing 270, the amount spent.",
+          "Fix: underline the rest, and they find 25 percent."
+        ],
+        "stretch": "If food cost 20 percent instead, how much is left?",
+        "help": "Find 10 percent of 360 first, then build 25 percent.",
+        "prep": "Twin of Grade 6 Q9: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "We Do",
+      "title": "Which is the best unit?",
+      "prompt": "Ali wants to measure the length of an ant.",
+      "options": [
+        {
+          "text": "metres",
+          "misconception": "chooses a length unit that is far too big"
+        },
+        {
+          "text": "millilitres",
+          "misconception": "mixes up length with capacity"
+        },
+        {
+          "text": "millimetres"
+        },
+        {
+          "text": "kilograms",
+          "misconception": "mixes up length with mass"
+        }
+      ],
+      "answer": 2,
+      "notes": {
+        "answer": "C - millimetres",
+        "beats": [
+          [
+            "SAY: Check two things: what are we measuring, and how big is it?"
+          ],
+          [
+            "ASK: Which unit is best for the length of an ant? Write the letter.",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: C"
+          ],
+          [
+            "SCAN boards for B.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> sort the four units under length, mass and capacity, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Length is metres, centimetres or millimetres.",
+            "An ant is tiny, so millimetres. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing millilitres because it starts with milli.",
+          "Fix: millilitres measure liquid, so they choose again."
+        ],
+        "stretch": "Name something you'd measure in kilometres, and something in grams.",
+        "help": "A ruler: point to one millimetre and one centimetre.",
+        "prep": "OPTIONAL: skip if the launch shows this is secure. Twin of Grade 5 Q13: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "What is the mass of the pumpkin?",
+      "visual": {
+        "type": "dial",
+        "max": 1500,
+        "major": 100,
+        "minor": 5,
+        "value": 1060,
+        "labels": {
+          "1000": "1 kg"
+        }
+      },
+      "reveal": {
+        "answers": [
+          "1 kg and 60 g"
+        ]
+      },
+      "notes": {
+        "answer": "1 kilogram and 60 grams (1060 grams)",
+        "beats": [
+          [
+            "SAY: First find what each small step is worth."
+          ],
+          [
+            "ASK: What is the mass, in kilograms and grams?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 1 kg and 60 g"
+          ],
+          [
+            "SCAN boards for 3 g or 600 g.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> 100 grams in 5 steps: count 20, 40, 60 around the dial, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Each step is 20 grams, and the needle is 3 steps past 1 kilogram.",
+            "That's 1 kilogram and 60 grams. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "counting each small step as 1 gram.",
+          "Fix: 5 steps make 100 grams, so they find one step and recount."
+        ],
+        "stretch": "How many more grams make 1.5 kg?",
+        "help": "Write the value beside every tick first.",
+        "prep": "Twin of Grade 5 Q14: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "How much water is in the jug?",
+      "visual": {
+        "type": "jug",
+        "max": 2000,
+        "major": 1000,
+        "minor": 4,
+        "value": 1750
+      },
+      "reveal": {
+        "answers": [
+          "1 L and 750 mL"
+        ]
+      },
+      "notes": {
+        "answer": "1 litre and 750 millilitres",
+        "beats": [
+          [
+            "SAY: Same skill: what is each step worth?",
+            "This time there are 4 steps in each litre."
+          ],
+          [
+            "ASK: How much water is there, in litres and millilitres?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 1 L and 750 mL"
+          ],
+          [
+            "SCAN boards for 3 mL or 300 mL.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> 1000 millilitres in 4 steps: count 250, 500, 750 together, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Each step is 250 millilitres, and it's 3 steps past 1 litre.",
+            "That's 1 litre and 750 millilitres. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "reading 3 steps as 300 millilitres.",
+          "Fix: 4 steps make 1000, so one step is 250. They recount."
+        ],
+        "stretch": "How much more water would fill it to 2 litres?",
+        "help": "Label each step: 250, 500, 750.",
+        "prep": "Twin of Grade 5 Q15: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "What is the perimeter of this card?",
+      "visual": {
+        "type": "shape",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            12,
+            0
+          ],
+          [
+            12,
+            9
+          ],
+          [
+            0,
+            9
+          ]
+        ],
+        "labels": [
+          "12 cm",
+          "9 cm",
+          null,
+          null
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "42 cm"
+        ]
+      },
+      "notes": {
+        "answer": "42 cm",
+        "beats": [
+          [
+            "SAY: Perimeter is the distance all the way around the outside."
+          ],
+          [
+            "ASK: What is the perimeter of the card?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 42 cm"
+          ],
+          [
+            "SCAN boards for 21 or 108.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> trace all four sides, writing each length on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 12 plus 9 plus 12 plus 9 is 42 centimetres.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "adding only the two labelled sides: 21.",
+          "Fix: they label all four sides, then add again."
+        ],
+        "stretch": "Draw a different rectangle with the same perimeter.",
+        "help": "Write a length on every side before adding.",
+        "prep": "Twin of Grade 5 Q16: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "What is the area of this poster?",
+      "visual": {
+        "type": "shape",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            0,
+            7
+          ]
+        ],
+        "labels": [
+          "30 cm",
+          "70 cm",
+          null,
+          null
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "2100 cm²"
+        ]
+      },
+      "notes": {
+        "answer": "2100 square centimetres",
+        "beats": [
+          [
+            "SAY: Area is the space inside.",
+            "For a rectangle, we multiply the length by the width."
+          ],
+          [
+            "ASK: What is the area of the poster?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 2100 square centimetres"
+          ],
+          [
+            "SCAN boards for 100, 200 or 210.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> 3 times 7 is 21, so 30 times 70 is 21 hundreds. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 30 times 70 is 2100 square centimetres.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "writing 210, losing a zero.",
+          "Fix: 3 tens times 7 tens is 21 hundreds. They rewrite it."
+        ],
+        "stretch": "Find another rectangle with an area of 2100 square centimetres.",
+        "help": "Work out 3 times 7 first, then add the zeros.",
+        "prep": "Twin of Grade 5 Q17: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "What is the missing length?",
+      "visual": {
+        "type": "shape",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "labels": [
+          "?",
+          "40 m",
+          null,
+          null
+        ],
+        "centerLabel": "Area = 2800 m²"
+      },
+      "reveal": {
+        "answers": [
+          "70 m"
+        ]
+      },
+      "notes": {
+        "answer": "70 m",
+        "beats": [
+          [
+            "SAY: Area is length times width. We know the area and one side."
+          ],
+          [
+            "ASK: What is the length of the side with the question mark?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 70 m"
+          ],
+          [
+            "SCAN boards for 2760.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> write 40 times what is 2800, then try 4 times what is 28. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 40 times 70 is 2800, so the missing side is 70 metres.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "taking 40 away from 2800.",
+          "Fix: they write 40 times what equals 2800, then solve it."
+        ],
+        "stretch": "What is the perimeter of this field?",
+        "help": "Cover the zeros: 4 times what is 28?",
+        "prep": "Twin of Grade 6 Q16: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "We Do",
+      "title": "What is 7:42 pm in 24-hour time?",
+      "prompt": "Write the letter of the answer.",
+      "options": [
+        {
+          "text": "07:42",
+          "misconception": "forgets to add 12 for pm"
+        },
+        {
+          "text": "17:42",
+          "misconception": "adds 10 instead of 12"
+        },
+        {
+          "text": "19:42"
+        },
+        {
+          "text": "21:42",
+          "misconception": "miscounts the hours past noon"
+        }
+      ],
+      "answer": 2,
+      "notes": {
+        "answer": "C - 19:42",
+        "beats": [
+          [
+            "SAY: For pm times, add 12 to the hours. The minutes stay the same."
+          ],
+          [
+            "ASK: What is 7:42 pm in 24-hour time? Write the letter.",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: C"
+          ],
+          [
+            "SCAN boards for A.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> count on from 12 noon to 7 pm on a timeline, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 7 plus 12 is 19, so it's 19:42. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing 07:42, the morning time.",
+          "Fix: ask am or pm, add 12 for pm, and they choose again."
+        ],
+        "stretch": "What is 23:05 in 12-hour time?",
+        "help": "A 24-hour strip from 0 to 24 to count along.",
+        "prep": "Twin of Grade 5 Q18: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Latest bus from Park St to the Beach?",
+      "visual": {
+        "type": "table",
+        "headerRows": [
+          0,
+          4
+        ],
+        "rows": [
+          [
+            "Beach to Station",
+            "Bus 1",
+            "Bus 2",
+            "Bus 3"
+          ],
+          [
+            "Beach",
+            "1:10 pm",
+            "2:25 pm",
+            "3:40 pm"
+          ],
+          [
+            "Park St",
+            "1:18 pm",
+            "2:33 pm",
+            "3:48 pm"
+          ],
+          [
+            "Station",
+            "1:30 pm",
+            "2:45 pm",
+            "4:00 pm"
+          ],
+          [
+            "Station to Beach",
+            "Bus 1",
+            "Bus 2",
+            "Bus 3"
+          ],
+          [
+            "Station",
+            "1:40 pm",
+            "2:55 pm",
+            "4:10 pm"
+          ],
+          [
+            "Park St",
+            "1:52 pm",
+            "3:07 pm",
+            "4:22 pm"
+          ],
+          [
+            "Beach",
+            "2:00 pm",
+            "3:15 pm",
+            "4:30 pm"
+          ]
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "4:22 pm (Bus 3, Station to Beach)"
+        ]
+      },
+      "notes": {
+        "answer": "4:22 pm, Bus 3 in the Station to Beach table",
+        "beats": [
+          [
+            "SAY: First choose the table going the right way."
+          ],
+          [
+            "ASK: What is the latest bus from Park St that gets to the Beach?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 4:22 pm"
+          ],
+          [
+            "SCAN boards for 3:48 pm.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> which table's last stop is the Beach? Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: The bottom table goes to the Beach.",
+            "Its last bus from Park St is 4:22 pm. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "reading the top table: 3:48 pm.",
+          "Fix: find the table ending where you're going, and they reread."
+        ],
+        "stretch": "How long does that bus take to reach the Beach?",
+        "help": "Cover the wrong-way table.",
+        "prep": "Twin of Grade 6 Q13: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "We Do",
+      "title": "When does the flight land?",
+      "prompt": "A flight leaves at 21:15 and takes 10 hours and 50 minutes.",
+      "options": [
+        {
+          "text": "07:05",
+          "misconception": "forgets the extra hour hiding in 65 minutes"
+        },
+        {
+          "text": "08:05"
+        },
+        {
+          "text": "32:05",
+          "misconception": "does not start again from 00:00 after midnight"
+        },
+        {
+          "text": "09:05",
+          "misconception": "adds 11 hours instead of 10"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - 08:05 the next morning",
+        "beats": [
+          [
+            "SAY: Count on to midnight first, then add the rest.",
+            "After midnight, the clock starts again from zero."
+          ],
+          [
+            "ASK: What time does the flight land? Write the letter.",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN boards for A or C.",
+            "80%+ -> reveal, cold call one B: How did you get past midnight?",
+            "Less -> timeline: 21:15 to midnight is 2 h 45, then 8 h 05 more. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 21:15 to midnight is 2 hours 45.",
+            "Then 8 hours 5 more is 08:05. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "adding the minutes and writing 65 minutes.",
+          "Fix: 65 minutes is 1 hour 5, and they redo it."
+        ],
+        "stretch": "What time would it land if the flight took 12 hours?",
+        "help": "A 24-hour timeline from 21:00 to 09:00.",
+        "prep": "Twin of Grade 6 Q14: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Write the mass in kilograms",
+      "visual": {
+        "type": "text",
+        "text": "4625 g = ? kg"
+      },
+      "reveal": {
+        "answers": [
+          "4.625 kg"
+        ]
+      },
+      "notes": {
+        "answer": "4.625 kg",
+        "beats": [
+          [
+            "SAY: 1000 grams make 1 kilogram, so we divide by 1000.",
+            "The digits move 3 places."
+          ],
+          [
+            "ASK: How many kilograms is 4625 grams?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 4.625 kg"
+          ],
+          [
+            "SCAN boards for 46.25 or 462.5.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> place value chart: 4 whole kilograms, then 625 thousandths. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 4625 divided by 1000 is 4.625.",
+            "That's 4 kilograms and 625 grams. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "moving the digits only one or two places.",
+          "Fix: 1000 has 3 zeros, so 3 places. They rewrite it."
+        ],
+        "stretch": "Write 850 grams in kilograms.",
+        "help": "A place value chart with the kilograms and the point marked.",
+        "prep": "Twin of Grade 6 Q15: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "What is the size of this angle?",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          145
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 145
+          }
+        ],
+        "protractor": true
+      },
+      "reveal": {
+        "answers": [
+          "145°"
+        ]
+      },
+      "notes": {
+        "answer": "145 degrees",
+        "beats": [
+          [
+            "SAY: Find the 0 on the arm that lies flat, and count up from there."
+          ],
+          [
+            "ASK: What is the size of this angle?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 145"
+          ],
+          [
+            "SCAN boards for 35.",
+            "80%+ -> reveal, cold call: Why can't it be 35?",
+            "Less -> name it first: obtuse, so over 90. Count up from the 0 together, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: It's 145 degrees. It's obtuse, so more than 90 makes sense.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "reading 35 on the other scale.",
+          "Fix: finger on the 0 under the flat arm, and they read again."
+        ],
+        "stretch": "What is the angle on the other side of the line?",
+        "help": "Colour the row of numbers that starts at 0 on the flat arm.",
+        "prep": "Twin of Grade 5 Q19: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "What is the missing angle?",
+      "visual": {
+        "type": "angle",
+        "rays": [
+          0,
+          56,
+          90
+        ],
+        "arcs": [
+          {
+            "from": 0,
+            "to": 90,
+            "right": true
+          },
+          {
+            "from": 0,
+            "to": 56,
+            "label": "56°"
+          },
+          {
+            "from": 56,
+            "to": 90,
+            "label": "?"
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "34°"
+        ]
+      },
+      "notes": {
+        "answer": "34 degrees",
+        "beats": [
+          [
+            "SAY: The square corner tells us the whole angle is 90 degrees."
+          ],
+          [
+            "ASK: What is the size of the missing angle?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 34"
+          ],
+          [
+            "SCAN boards for 124 or 44.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> count up from 56 to 90: 4 to 60, then 30 more. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 90 take away 56 is 34 degrees.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "taking 56 from 180.",
+          "Fix: point to the square corner, 90 degrees, and they redo it."
+        ],
+        "stretch": "What if the angles were on a straight line instead?",
+        "help": "Count up from 56 to 90 on a number line.",
+        "prep": "Twin of Grade 6 Q17: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "What number is at the dot?",
+      "visual": {
+        "type": "numberLine",
+        "start": -10,
+        "end": 10,
+        "step": 1,
+        "labelEvery": 5,
+        "marked": [
+          4
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "-6"
+        ]
+      },
+      "notes": {
+        "answer": "negative 6",
+        "beats": [
+          [
+            "SAY: Numbers left of zero are negative. The further left, the smaller."
+          ],
+          [
+            "ASK: What number is at the dot?",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: -6"
+          ],
+          [
+            "SCAN boards for -4 or 6.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> count back from 0 one tick at a time together, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: It's 6 steps left of zero, so it's negative 6.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "counting from -5 the wrong way and writing -4.",
+          "Fix: count left from 0, one tick at a time, and they rewrite it."
+        ],
+        "stretch": "Which is bigger, negative 6 or negative 2? How do you know?",
+        "help": "Label every tick from -10 to 0 first.",
+        "prep": "Twin of Grade 6 Q1: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "What are the coordinates of P?",
+      "visual": {
+        "type": "grid",
+        "x": [
+          -5,
+          5
+        ],
+        "y": [
+          -5,
+          2
+        ],
+        "points": [
+          {
+            "x": 2,
+            "y": -4,
+            "label": "P"
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "(2, -4)"
+        ]
+      },
+      "notes": {
+        "answer": "(2, -4)",
+        "beats": [
+          [
+            "SAY: Along first, then up or down. x first, then y."
+          ],
+          [
+            "ASK: What are the coordinates of P?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: (2, -4)"
+          ],
+          [
+            "SCAN boards for (-4, 2).",
+            "80%+ -> reveal, cold call: Why is the y negative?",
+            "Less -> trace from the middle: along 2, down 4, saying each move. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Along 2 to the right, then down 4. So it's 2, negative 4.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "swapping the order: (-4, 2).",
+          "Fix: say along first, then up or down, and they rewrite it."
+        ],
+        "stretch": "Where would (-2, 4) be? Point to it.",
+        "help": "Put a finger on the middle and move along first.",
+        "prep": "Twin of Grade 6 Q2: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Which point is at (3, 6)?",
+      "visual": {
+        "type": "grid",
+        "x": [
+          0,
+          9
+        ],
+        "y": [
+          0,
+          7
+        ],
+        "points": [
+          {
+            "x": 6,
+            "y": 3,
+            "label": "A"
+          },
+          {
+            "x": 3,
+            "y": 6,
+            "label": "B"
+          },
+          {
+            "x": 5,
+            "y": 1,
+            "label": "C"
+          },
+          {
+            "x": 1,
+            "y": 5,
+            "label": "D"
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "B"
+        ]
+      },
+      "notes": {
+        "answer": "B",
+        "beats": [
+          [
+            "SAY: Same rule: along the bottom first, then up."
+          ],
+          [
+            "ASK: Which point is at 3, 6?",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN boards for A.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> trace along 3, then up 6, with a finger together, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Along 3, up 6 is B. A is at 6, 3, the other way round.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing A, at (6, 3).",
+          "Fix: say along first, then up, and they find it again."
+        ],
+        "stretch": "Write the coordinates of C and D.",
+        "help": "Run a finger along the bottom first, then up.",
+        "prep": "OPTIONAL: skip if the launch shows this is secure. Twin of Grade 5 Q21: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Which 3D object does this net make?",
+      "visual": {
+        "type": "shape",
+        "shapes": [
+          {
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                -1.7
+              ]
+            ]
+          },
+          {
+            "points": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3.7,
+                1
+              ]
+            ]
+          },
+          {
+            "points": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                3.7
+              ]
+            ]
+          },
+          {
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                -1.7,
+                1
+              ]
+            ]
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "Square pyramid"
+        ]
+      },
+      "notes": {
+        "answer": "a square pyramid",
+        "beats": [
+          [
+            "SAY: Count the faces and name their shapes. That tells you the object."
+          ],
+          [
+            "ASK: Which 3D object does this net fold into?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: square pyramid"
+          ],
+          [
+            "SCAN boards for triangular prism.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> fold the triangles up with your hands in the air together, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: One square base and four triangles that meet at a point.",
+            "That's a square pyramid. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "calling it a triangular prism because of the triangles.",
+          "Fix: a prism has rectangles too. They count the faces again."
+        ],
+        "stretch": "Sketch a different net for the same pyramid.",
+        "help": "A paper copy of the net to cut out and fold.",
+        "prep": "Twin of Grade 5 Q20: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "How did the triangle move?",
+      "visual": {
+        "type": "grid",
+        "x": [
+          0,
+          9
+        ],
+        "y": [
+          0,
+          6
+        ],
+        "polygons": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          [
+            [
+              8,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              8,
+              4
+            ]
+          ]
+        ],
+        "path": [
+          [
+            4.5,
+            0
+          ],
+          [
+            4.5,
+            6
+          ]
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "Reflection (a flip)"
+        ]
+      },
+      "notes": {
+        "answer": "reflection",
+        "beats": [
+          [
+            "SAY: There are three moves: slide, flip or turn.",
+            "Look at which way the shape faces."
+          ],
+          [
+            "ASK: Was the triangle translated, reflected or rotated?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: reflected"
+          ],
+          [
+            "SCAN boards for translated.",
+            "80%+ -> reveal, cold call: How can you tell it isn't a slide?",
+            "Less -> trace the triangle and flip the tracing over the line, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: It faces the other way, like a mirror image across the line.",
+            "That's a reflection. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "calling it a translation because it moved sideways.",
+          "Fix: check which way it faces, and they rename the move."
+        ],
+        "stretch": "Draw where the first triangle lands after a translation 5 to the right.",
+        "help": "Tracing paper to test each move.",
+        "prep": "Twin of Grade 5 Q22: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Slice this prism like a loaf of bread",
+      "visual": {
+        "type": "shape",
+        "shapes": [
+          {
+            "points": [
+              [
+                6.5,
+                1.4
+              ],
+              [
+                8.5,
+                1.4
+              ],
+              [
+                9.1,
+                3.3
+              ],
+              [
+                7.5,
+                4.5
+              ],
+              [
+                5.9,
+                3.3
+              ]
+            ],
+            "rightAngles": false,
+            "shade": false,
+            "splits": [
+              [
+                [
+                  3.75,
+                  0.7
+                ],
+                [
+                  5.75,
+                  0.7
+                ]
+              ],
+              [
+                [
+                  5.75,
+                  0.7
+                ],
+                [
+                  6.35,
+                  2.6
+                ]
+              ],
+              [
+                [
+                  6.35,
+                  2.6
+                ],
+                [
+                  4.75,
+                  3.8
+                ]
+              ],
+              [
+                [
+                  4.75,
+                  3.8
+                ],
+                [
+                  3.15,
+                  2.6
+                ]
+              ],
+              [
+                [
+                  3.15,
+                  2.6
+                ],
+                [
+                  3.75,
+                  0.7
+                ]
+              ]
+            ]
+          },
+          {
+            "points": [
+              [
+                1,
+                0
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                8.5,
+                1.4
+              ],
+              [
+                6.5,
+                1.4
+              ]
+            ],
+            "rightAngles": false,
+            "shade": false
+          },
+          {
+            "points": [
+              [
+                3,
+                0
+              ],
+              [
+                3.6,
+                1.9
+              ],
+              [
+                9.1,
+                3.3
+              ],
+              [
+                8.5,
+                1.4
+              ]
+            ],
+            "rightAngles": false,
+            "shade": false
+          },
+          {
+            "points": [
+              [
+                3.6,
+                1.9
+              ],
+              [
+                2,
+                3.1
+              ],
+              [
+                7.5,
+                4.5
+              ],
+              [
+                9.1,
+                3.3
+              ]
+            ],
+            "rightAngles": false,
+            "shade": false
+          },
+          {
+            "points": [
+              [
+                2,
+                3.1
+              ],
+              [
+                0.4,
+                1.9
+              ],
+              [
+                5.9,
+                3.3
+              ],
+              [
+                7.5,
+                4.5
+              ]
+            ],
+            "rightAngles": false,
+            "shade": false
+          },
+          {
+            "points": [
+              [
+                0.4,
+                1.9
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                6.5,
+                1.4
+              ],
+              [
+                5.9,
+                3.3
+              ]
+            ],
+            "rightAngles": false,
+            "shade": false
+          },
+          {
+            "points": [
+              [
+                1,
+                0
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3.6,
+                1.9
+              ],
+              [
+                2,
+                3.1
+              ],
+              [
+                0.4,
+                1.9
+              ]
+            ],
+            "rightAngles": false
+          }
+        ]
+      },
+      "notes": {
+        "beats": [
+          [
+            "POINT to the dashed slice.",
+            "SAY: A prism is the same all the way through, like a loaf of bread."
+          ],
+          [
+            "SAY: The dashed line shows one slice, cut parallel to the end.",
+            "Picture lifting that slice out."
+          ],
+          [
+            "ASK: Turn to your partner: what will the slice look like?",
+            "10 sec. Cue: Partner A first. You have 10 seconds. Go.",
+            "EXPECT: the same shape as the end"
+          ]
+        ],
+        "prep": "Twin of Grade 6 Q18: the picture comes first, then the choice on the next slide.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7]",
+        "answer": "the same shape as the end, a pentagon"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "We Do",
+      "title": "What shape is the slice?",
+      "prompt": "The prism on the last slide is sliced along the dashed line.",
+      "options": [
+        {
+          "visual": {
+            "type": "shape",
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          "misconception": "pictures a side face, not the slice"
+        },
+        {
+          "visual": {
+            "type": "shape",
+            "points": [
+              [
+                1,
+                0
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                3.6,
+                1.9
+              ],
+              [
+                2,
+                3.1
+              ],
+              [
+                0.4,
+                1.9
+              ]
+            ]
+          }
+        },
+        {
+          "visual": {
+            "type": "shape",
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                3,
+                0
+              ],
+              [
+                1.5,
+                2.6
+              ]
+            ]
+          },
+          "misconception": "mixes up a prism with a pyramid"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - a pentagon, the same shape as the end",
+        "beats": [
+          [
+            "SAY: Now choose the shape of the slice you pictured."
+          ],
+          [
+            "ASK: What shape is the slice? Write the letter.",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN boards for A.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> stack paper pentagons into a prism and lift one off. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Each slice is a pentagon, the same as the end face.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing the rectangle, a side face.",
+          "Fix: they trace the end face, then choose again."
+        ],
+        "stretch": "What shape is a slice of a triangular prism? A cylinder?",
+        "help": "A real box to look at end-on.",
+        "prep": "Twin of Grade 6 Q18: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "How does the shape move each time?",
+      "visual": {
+        "type": "grid",
+        "x": [
+          0,
+          9
+        ],
+        "y": [
+          0,
+          4
+        ],
+        "polygons": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          [
+            [
+              5,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              5,
+              3
+            ]
+          ],
+          [
+            [
+              8,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              8,
+              3
+            ]
+          ]
+        ],
+        "points": [
+          {
+            "x": 0.6,
+            "y": 0.9,
+            "label": "1"
+          },
+          {
+            "x": 4.4,
+            "y": 0.9,
+            "label": "2"
+          },
+          {
+            "x": 7.4,
+            "y": 0.9,
+            "label": "3"
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "1 to 2: reflection",
+          "2 to 3: translation"
+        ]
+      },
+      "notes": {
+        "answer": "1 to 2 reflection, 2 to 3 translation",
+        "beats": [
+          [
+            "SAY: Check each move: which way does the shape face?"
+          ],
+          [
+            "ASK: How does the shape move from 1 to 2, and from 2 to 3?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: reflection, then translation"
+          ],
+          [
+            "SCAN boards for rotation.",
+            "80%+ -> reveal, cold call: How do you know 2 to 3 is a slide?",
+            "Less -> trace shape 1, flip the tracing onto 2, slide it to 3. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: From 1 to 2 it faces the other way, so it's a reflection.",
+            "From 2 to 3 it faces the same way, so it's a translation."
+          ]
+        ],
+        "trap": [
+          "calling every move a translation.",
+          "Fix: check which way each faces, and they rename the moves."
+        ],
+        "stretch": "Draw shape 4 so 3 to 4 is a reflection.",
+        "help": "Tracing paper.",
+        "prep": "Twin of Grade 6 Q19: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Which point is at (-3, -5)?",
+      "visual": {
+        "type": "grid",
+        "x": [
+          -6,
+          6
+        ],
+        "y": [
+          -6,
+          2
+        ],
+        "points": [
+          {
+            "x": -5,
+            "y": -3,
+            "label": "A"
+          },
+          {
+            "x": -3,
+            "y": -5,
+            "label": "B"
+          },
+          {
+            "x": 3,
+            "y": -5,
+            "label": "C"
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "B"
+        ]
+      },
+      "notes": {
+        "answer": "B",
+        "beats": [
+          [
+            "SAY: Negative x means go left. Negative y means go down."
+          ],
+          [
+            "ASK: Which point is at negative 3, negative 5?",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN boards for A or C.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> from the middle go left 3, then down 5, together. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Left 3, then down 5, lands on B.",
+            "A has the numbers swapped. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "going right 3 instead of left.",
+          "Fix: negative x is left, and they find it again."
+        ],
+        "stretch": "Write the coordinates of A and C.",
+        "help": "Arrows on the board: left is negative x, down is negative y.",
+        "prep": "Twin of Grade 6 Q20: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "We Do",
+      "title": "Which categories are best?",
+      "prompt": "A survey asks: How do you travel to school?",
+      "options": [
+        {
+          "text": "yes, no, maybe",
+          "misconception": "chooses categories that do not answer the question"
+        },
+        {
+          "text": "1-5, 6-10, 11-15",
+          "misconception": "uses number ranges for a question that is not about numbers"
+        },
+        {
+          "text": "walk, car, bus, bike"
+        },
+        {
+          "text": "never, sometimes, often, always",
+          "misconception": "answers how often, not how"
+        }
+      ],
+      "answer": 2,
+      "notes": {
+        "answer": "C - walk, car, bus, bike",
+        "beats": [
+          [
+            "SAY: Good categories match the question exactly."
+          ],
+          [
+            "ASK: Which categories are best for this survey? Write the letter.",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: C"
+          ],
+          [
+            "SCAN boards for D.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> answer the question aloud using each set, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: The question asks how you travel,",
+            "so the answers are ways to travel. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing D, never to always.",
+          "Fix: that answers how often. They reread the question and choose again."
+        ],
+        "stretch": "Write a survey question where D would be the best categories.",
+        "help": "Read the question, then say your own answer out loud.",
+        "prep": "OPTIONAL: skip if the launch shows this is secure. Twin of Grade 5 Q23: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Which number came up most often?",
+      "visual": {
+        "type": "text",
+        "text": "A spinner numbered 1 to 5 was spun 20 times: 3, 1, 4, 4, 2, 5, 3, 4, 1, 2, 4, 3, 5, 4, 2, 1, 3, 4, 2, 5"
+      },
+      "reveal": {
+        "answers": [
+          "4 (6 times)"
+        ]
+      },
+      "notes": {
+        "answer": "4, it came up 6 times",
+        "beats": [
+          [
+            "SAY: The number that comes up most often is called the mode."
+          ],
+          [
+            "ASK: Which number came up most often?",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 4"
+          ],
+          [
+            "SCAN boards for 2 or 3.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> tally together, crossing off each number as you go, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 4 came up 6 times, and 2 and 3 came up 4 times each.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "losing count and choosing 2 or 3.",
+          "Fix: cross off each number as it is tallied, and they recount."
+        ],
+        "stretch": "Which numbers came up least often?",
+        "help": "A tally table with rows 1 to 5.",
+        "prep": "Twin of Grade 5 Q24: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "We Do",
+      "title": "Which graph matches the table?",
+      "prompt": "Pets: dog 14, cat 9, fish 3, bird 6",
+      "options": [
+        {
+          "visual": {
+            "type": "chart",
+            "categories": [
+              "Dog",
+              "Cat",
+              "Fish",
+              "Bird"
+            ],
+            "values": [
+              14,
+              6,
+              3,
+              9
+            ]
+          },
+          "misconception": "checks only the tallest bar, so misses cat and bird swapped"
+        },
+        {
+          "visual": {
+            "type": "chart",
+            "categories": [
+              "Dog",
+              "Cat",
+              "Fish",
+              "Bird"
+            ],
+            "values": [
+              14,
+              9,
+              3,
+              6
+            ]
+          }
+        },
+        {
+          "visual": {
+            "type": "chart",
+            "categories": [
+              "Dog",
+              "Cat",
+              "Fish",
+              "Bird"
+            ],
+            "values": [
+              3,
+              9,
+              14,
+              6
+            ]
+          },
+          "misconception": "reads the biggest and smallest the wrong way round"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B",
+        "beats": [
+          [
+            "SAY: Check the tallest bar first, then the shortest, then the rest."
+          ],
+          [
+            "ASK: Which graph matches the table? Write the letter.",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN boards for A.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> check every bar against the table, one pet at a time, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Dog is tallest, fish is shortest, and cat is taller than bird.",
+            "That's B. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing A from the tallest bar alone.",
+          "Fix: check every bar, and they choose again."
+        ],
+        "stretch": "Sketch the graph if 4 more people got fish.",
+        "help": "Tick each pet off the table as you check its bar.",
+        "prep": "Twin of Grade 5 Q25: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "When was Tuesday first 18 degrees?",
+      "visual": {
+        "type": "chart",
+        "style": "line",
+        "categories": [
+          "6am",
+          "7am",
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "12pm"
+        ],
+        "series": [
+          {
+            "name": "Monday",
+            "values": [
+              10,
+              13,
+              16,
+              19,
+              22,
+              25,
+              27
+            ]
+          },
+          {
+            "name": "Tuesday",
+            "values": [
+              6,
+              8,
+              11,
+              14,
+              18,
+              21,
+              23
+            ]
+          }
+        ],
+        "yLabel": "Temperature (degrees)",
+        "xLabel": "Time"
+      },
+      "reveal": {
+        "answers": [
+          "10 am"
+        ]
+      },
+      "notes": {
+        "answer": "10 am",
+        "beats": [
+          [
+            "SAY: There are two lines here.",
+            "Use the key to find Tuesday's line first."
+          ],
+          [
+            "ASK: At what time did Tuesday first reach 18 degrees?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 10 am"
+          ],
+          [
+            "SCAN boards for 9 am.",
+            "80%+ -> reveal, cold call: Which line did you use, and why?",
+            "Less -> lay a ruler across at 18, stop at Tuesday's line, read down. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Tuesday's line reaches 18 at 10 am.",
+            "Monday passes 18 between 8 and 9 am. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "reading Monday's line and writing 9 am.",
+          "Fix: they check the key, then read again."
+        ],
+        "stretch": "How much warmer was Monday than Tuesday at 8 am?",
+        "help": "A ruler laid across the graph at 18.",
+        "prep": "Twin of Grade 5 Q26: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Second-fewest riders altogether?",
+      "visual": {
+        "type": "chart",
+        "style": "bar",
+        "categories": [
+          "Slide",
+          "Splash",
+          "Wave pool",
+          "Lazy river",
+          "Diving"
+        ],
+        "series": [
+          {
+            "name": "Day pass",
+            "values": [
+              30,
+              25,
+              15,
+              35,
+              20
+            ]
+          },
+          {
+            "name": "Season pass",
+            "values": [
+              10,
+              35,
+              30,
+              40,
+              40
+            ]
+          }
+        ],
+        "yLabel": "Riders"
+      },
+      "reveal": {
+        "answers": [
+          "Wave pool (45)"
+        ]
+      },
+      "notes": {
+        "answer": "wave pool: 15 + 30 = 45",
+        "beats": [
+          [
+            "SAY: Each ride has two bars. Altogether means add both bars."
+          ],
+          [
+            "ASK: Which ride had the second-fewest riders altogether?",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: wave pool"
+          ],
+          [
+            "SCAN boards for Diving or Slide.",
+            "80%+ -> reveal, cold call: What was the total for the slide?",
+            "Less -> total each ride's two bars in a table on the board. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: The slide had 40, the fewest.",
+            "The wave pool had 45, so it's second-fewest. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "reading only the day pass bars and choosing Diving.",
+          "Fix: add both bars for each ride, and they choose again."
+        ],
+        "stretch": "Which two rides had the same total?",
+        "help": "A table: ride, day pass, season pass, total.",
+        "prep": "Twin of Grade 6 Q21: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "We Do",
+      "title": "What is the problem with this survey?",
+      "prompt": "The canteen asked 50 chess club members what new food to sell.",
+      "options": [
+        {
+          "text": "50 students is too many",
+          "misconception": "thinks a big sample is the problem"
+        },
+        {
+          "text": "They should ask about drinks too",
+          "misconception": "judges the topic, not who was asked"
+        },
+        {
+          "text": "Only one club was asked, so it may be biased"
+        },
+        {
+          "text": "Students from every class were asked",
+          "misconception": "picks a strength, not a problem"
+        }
+      ],
+      "answer": 2,
+      "notes": {
+        "answer": "C - only one club was asked, so the results may be biased",
+        "beats": [
+          [
+            "SAY: A fair survey asks a mix of the people it is about."
+          ],
+          [
+            "ASK: What is the problem with this survey? Write the letter.",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: C"
+          ],
+          [
+            "SCAN boards for A.",
+            "80%+ -> reveal, cold call: Who should they have asked?",
+            "Less -> ask: would the whole school answer like the chess club? Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Only chess club members were asked,",
+            "so the answers may not match the whole school. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing A, thinking more people makes it worse.",
+          "Fix: more people is usually better. They choose again."
+        ],
+        "stretch": "Rewrite the survey plan so it is fair.",
+        "help": "Picture the whole school, then just the chess club.",
+        "prep": "Twin of Grade 6 Q22: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "How many possible outcomes?",
+      "visual": {
+        "type": "spinner",
+        "sectors": [
+          {
+            "label": "red"
+          },
+          {
+            "label": "blue"
+          },
+          {
+            "label": "red"
+          },
+          {
+            "label": "green"
+          },
+          {
+            "label": "blue"
+          },
+          {
+            "label": "red"
+          },
+          {
+            "label": "green"
+          },
+          {
+            "label": "blue"
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "3: red, blue, green"
+        ]
+      },
+      "notes": {
+        "answer": "3 outcomes: red, blue, green",
+        "beats": [
+          [
+            "SAY: An outcome is a result that can happen, not a section."
+          ],
+          [
+            "ASK: How many different outcomes can this spinner land on?",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 3"
+          ],
+          [
+            "SCAN boards for 8.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> list each colour once on the board, then count the list, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: It can land on red, blue or green. That's 3 outcomes,",
+            "even though there are 8 sections. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "writing 8, the number of sections.",
+          "Fix: list each colour once, and they count again."
+        ],
+        "stretch": "Which colour is least likely? Why?",
+        "help": "Write each colour as you find it, skipping repeats.",
+        "prep": "OPTIONAL: skip if the launch shows this is secure. Twin of Grade 5 Q27: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "We Do",
+      "title": "What is the chance?",
+      "prompt": "A 10-sided die is numbered 1 to 10. Chance of rolling more than 7?",
+      "options": [
+        {
+          "text": "1 in 10",
+          "misconception": "counts only one number"
+        },
+        {
+          "text": "3 in 10"
+        },
+        {
+          "text": "4 in 10",
+          "misconception": "counts 7 itself as more than 7"
+        },
+        {
+          "text": "7 in 10",
+          "misconception": "uses the 7 from the question"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - 3 in 10 (8, 9 and 10)",
+        "beats": [
+          [
+            "SAY: List the numbers that work, then count them out of 10."
+          ],
+          [
+            "ASK: What is the chance of rolling more than 7? Write the letter.",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN boards for C.",
+            "80%+ -> reveal, cold call: Which numbers did you count?",
+            "Less -> write 1 to 10, circle the ones more than 7, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: More than 7 means 8, 9 and 10. That's 3 in 10.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "counting 7 as more than 7.",
+          "Fix: more than 7 starts at 8, so they count again."
+        ],
+        "stretch": "What is the chance of rolling an odd number?",
+        "help": "Write 1 to 10 and circle each number that works.",
+        "prep": "Twin of Grade 5 Q28: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "We Do",
+      "title": "Same chance of red?",
+      "prompt": "Which spinner gives red the same chance as 2 red parts out of 6?",
+      "options": [
+        {
+          "visual": {
+            "type": "spinner",
+            "sectors": [
+              {
+                "label": "red"
+              },
+              {
+                "label": "blue"
+              },
+              {
+                "label": "red"
+              },
+              {
+                "label": "blue"
+              }
+            ]
+          },
+          "misconception": "matches the number of red parts, not the share"
+        },
+        {
+          "visual": {
+            "type": "spinner",
+            "sectors": [
+              {
+                "label": "red"
+              },
+              {
+                "label": "blue"
+              },
+              {
+                "label": "green"
+              }
+            ]
+          }
+        },
+        {
+          "visual": {
+            "type": "spinner",
+            "sectors": [
+              {
+                "label": "red"
+              },
+              {
+                "label": "blue"
+              },
+              {
+                "label": "green"
+              },
+              {
+                "label": "blue"
+              },
+              {
+                "label": "green"
+              },
+              {
+                "label": "blue"
+              }
+            ]
+          },
+          "misconception": "matches the number of parts, not the red share"
+        },
+        {
+          "visual": {
+            "type": "spinner",
+            "sectors": [
+              {
+                "label": "red"
+              },
+              {
+                "label": "blue"
+              },
+              {
+                "label": "green"
+              },
+              {
+                "label": "blue"
+              },
+              {
+                "label": "red"
+              },
+              {
+                "label": "blue"
+              },
+              {
+                "label": "green"
+              },
+              {
+                "label": "blue"
+              }
+            ]
+          },
+          "misconception": "keeps 2 red parts but adds more parts"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - 1 in 3, the same as 2 in 6",
+        "beats": [
+          [
+            "SAY: Same chance means the same fraction of the spinner."
+          ],
+          [
+            "ASK: Which spinner gives red the same chance? Write the letter.",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN boards for A or D.",
+            "80%+ -> reveal, cold call one B: Prove it's the same.",
+            "Less -> write each as a fraction of red parts, then simplify. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 2 out of 6 is the same as 1 out of 3, so B.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing a spinner with 2 red parts.",
+          "Fix: write each as a fraction, and they compare again."
+        ],
+        "stretch": "Draw a 9-part spinner with the same chance of red.",
+        "help": "Write a fraction under each spinner: red parts over all parts.",
+        "prep": "Twin of Grade 5 Q29: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Which three show a certain event?",
+      "visual": {
+        "type": "chips",
+        "items": [
+          "0",
+          "4/4",
+          "0.5",
+          "100%",
+          "1"
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "4/4",
+          "100%",
+          "1"
+        ]
+      },
+      "notes": {
+        "answer": "4/4, 100% and 1",
+        "beats": [
+          [
+            "SAY: Certain means it will definitely happen.",
+            "On a chance scale from 0 to 1, that's 1."
+          ],
+          [
+            "ASK: Which three cards show a certain event?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 4/4, 100%, 1"
+          ],
+          [
+            "SCAN boards for 0 or 0.5.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> draw a 0 to 1 chance line: impossible, even chance, certain. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 1 whole, 4 out of 4 and 100 percent all mean certain.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing 0.5, even chance.",
+          "Fix: they place it on the chance line, then choose again."
+        ],
+        "stretch": "Write three ways to show an impossible event.",
+        "help": "A chance line from 0 to 1 with words underneath.",
+        "prep": "Twin of Grade 6 Q23: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Expected reds in 15 spins?",
+      "visual": {
+        "type": "spinner",
+        "sectors": [
+          {
+            "label": "red"
+          },
+          {
+            "label": "red"
+          },
+          {
+            "label": "yellow"
+          }
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "10 times"
+        ]
+      },
+      "notes": {
+        "answer": "10 times: red is 2 out of 3, and 2/3 of 15 is 10",
+        "beats": [
+          [
+            "SAY: First find the chance of red. Then take that fraction of the spins."
+          ],
+          [
+            "ASK: In 15 spins, how many times would you expect red?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 10"
+          ],
+          [
+            "SCAN boards for 2 or 5.",
+            "80%+ -> reveal, cold call: Would it be exactly 10 every time?",
+            "Less -> share 15 spins into 3 equal groups of 5: red gets 2 groups. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: A third of 15 is 5, so two thirds is 10.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "writing 2, the number of red parts.",
+          "Fix: they find 2 thirds of 15, then rewrite it."
+        ],
+        "stretch": "How many yellows would you expect in 30 spins?",
+        "help": "15 counters shared into 3 groups.",
+        "prep": "Twin of Grade 6 Q24: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "We Do",
+      "title": "Which results are most likely?",
+      "prompt": "Expected in 24 spins: red 12, blue 8, green 4.",
+      "options": [
+        {
+          "misconception": "swaps which colour is most likely",
+          "text": "red 4, blue 8, green 12"
+        },
+        {
+          "text": "red 11, blue 9, green 4"
+        },
+        {
+          "misconception": "thinks every colour comes up equally",
+          "text": "red 8, blue 8, green 8"
+        },
+        {
+          "misconception": "ignores the expected results",
+          "text": "red 3, blue 3, green 18"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - close to the expected results, but not exact",
+        "beats": [
+          [
+            "SAY: Real results are usually close to the expected results, but rarely exact."
+          ],
+          [
+            "ASK: Which table is most likely the real results? Write the letter.",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN boards for C.",
+            "80%+ -> reveal, cold call: Why not exactly 12, 8 and 4?",
+            "Less -> compare each table with the expected numbers, colour by colour. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: B is close to 12, 8 and 4, in the same order.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing C because every colour can happen.",
+          "Fix: they compare each table with expected, then choose again."
+        ],
+        "stretch": "Draw a spinner that would give these expected results.",
+        "help": "Circle the biggest number in each table.",
+        "prep": "Twin of Grade 6 Q25: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Your turn",
+      "task": "Do the revision sheet: fractions, measuring, grids and chance. Read it, work it, check it.",
+      "where": "On your worksheet",
+      "notes": {
+        "beats": [
+          [
+            "POINT to the steps.",
+            "SAY: Read each question carefully, solve it carefully, then check your answers."
+          ],
+          [
+            "SAY: If you finish, the Extension is your early finisher option.",
+            "Let's read the steps together. Cue: Everyone, together, on three... one, two, three."
+          ],
+          "CIRCULATE. Start with the hinge A and C boards, then the Session 6 bus list.",
+          "TIME: 6 minutes. Do Q1, Q3, Q4 and Q7 first. The rest goes home."
+        ],
+        "trap": [
+          "reading a scale without working out one step first.",
+          "Fix: they label the steps, then read it again."
+        ],
+        "stretch": "Extension: fraction and percent puzzles, measurement challenges and spinner design, with worked examples.",
+        "help": "Supported Worksheet: smaller numbers, models drawn and a hint on every question.",
+        "prep": "Independent practice of the fraction, measurement, space and chance question types, with new numbers. Evidence for SC1 to SC3.",
+        "tag": "[You Do | Mastery and application | SC2 | HITS 3, 8]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "Sam ate 1/4 of a pizza and Mia ate 3/8. How much of the pizza is left?"
+      ],
+      "notes": {
+        "answer": "3/8. 1/4 = 2/8, so 2/8 + 3/8 = 5/8 eaten, 3/8 left",
+        "beats": [
+          [
+            "SAY: Last one, and it's just for you.",
+            "Read it, work it, check it."
+          ],
+          [
+            "ASK: How much of the pizza is left?",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 3/8"
+          ],
+          [
+            "RECORD who writes 5/8, 4/12 or 4/8.",
+            "Give them two minutes on same size pieces before the test."
+          ]
+        ],
+        "trap": [
+          "writing 5/8, the part eaten.",
+          "Fix: none now. Record the name for a quick catch-up before the test."
+        ],
+        "prep": "Exit evidence for SC2: rename to related denominators, then take the eaten part from the whole.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner one thing you'll check twice in tomorrow's test.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for a named check, like what one step is worth",
+        "beats": [
+          [
+            "SAY: Let's read our I can statements together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "ASK: How ready do you feel for tomorrow's test?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          [
+            "RECORD each thumb down beside the exit boards.",
+            "A thumb up with 5/8 on the board matters most."
+          ],
+          [
+            "ASK: Tell your partner one thing you'll check twice tomorrow.",
+            "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+            "EXPECT: read the scale steps, same size pieces, read the question"
+          ]
+        ],
+        "prep": "Read the thumbs beside the exit evidence. Two minutes on same size pieces before the test goes to whoever needs it.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}

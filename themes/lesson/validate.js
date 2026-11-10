@@ -759,6 +759,7 @@ function validateLessonSpec(spec, opts) {
         exitIndex = i;
         const qs = Array.isArray(slide.questions) ? slide.questions : [slide.questions];
         if (qs.length < 1 || qs.length > 3) errors.push(`${w}.questions: 1 to 3 prompts.`);
+        if (slide.visual && qs.length > 1) errors.push(`${w}.questions: an exit ticket with a visual shows only its first prompt. Write one prompt (e.g. "Find the perimeter and the area"), or drop the visual.`);
         break;
       }
       case "closing": closingIndex = i; break;
@@ -776,7 +777,11 @@ function validateLessonSpec(spec, opts) {
     else if (resourcesIndex > 2) errors.push(`slides[${resourcesIndex}]: the resources slide belongs immediately after the title (an overview may sit between).`);
     if (liIndex === -1) errors.push("slides: no li slide (Learning Intention and Success Criteria).");
     if (liIndex !== -1 && !launchAfterLi) errors.push("slides: no launch after the LI and SC slide. Every session has a launch, and it comes after the LI and SC (megaprompt 0a items 17 and 23).");
-    if (subject === "numeracy") {
+    // The teacher may drop the warm-up block for a session (e.g. pre-test revision):
+    // lesson.skipWarmUp carries their reason, and the slides must then have neither.
+    if (L.skipWarmUp != null && !isNonEmptyString(L.skipWarmUp)) errors.push("lesson.skipWarmUp: the teacher's reason for no Daily Review or Fluency, e.g. \"Teacher asked to skip them: pre-test revision\", or omit it.");
+    if (subject === "numeracy" && isNonEmptyString(L.skipWarmUp) && (dailyIndex !== -1 || fluencyIndex !== -1)) errors.push("lesson.skipWarmUp: set, but the slides still have Daily Review or Fluency. Remove those slides or drop skipWarmUp.");
+    if (subject === "numeracy" && !isNonEmptyString(L.skipWarmUp)) {
       if (dailyIndex === -1) errors.push("slides: a numeracy lesson needs a dailyReview slide (megaprompt 22).");
       if (fluencyIndex === -1) errors.push("slides: a numeracy lesson needs a fluency slide (megaprompt 23).");
       if (dailyIndex !== -1 && fluencyIndex !== -1 && fluencyIndex < dailyIndex) errors.push("slides: fluency must follow dailyReview.");

@@ -1,0 +1,2144 @@
+{
+ "lesson": {
+  "subject": "numeracy",
+  "yearLevel": "grade56",
+  "year": 2026,
+  "term": 4,
+  "week": 5,
+  "session": 1,
+  "title": "Area and Perimeter",
+  "subtitle": "Term 4 Week 5, Session 1",
+  "meta": "Year 5/6 Maths | Measurement",
+  "footer": "Area and Perimeter | Year 5/6 Maths | Session 1",
+  "outputFolder": "T4W5_Maths_Area_And_Perimeter",
+  "fileName": "Session 1 - Area and Perimeter.pptx",
+  "titleVisual": {
+   "type": "shape",
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     10,
+     0
+    ],
+    [
+     10,
+     4
+    ],
+    [
+     6,
+     4
+    ],
+    [
+     6,
+     9
+    ],
+    [
+     0,
+     9
+    ]
+   ],
+   "labels": [
+    "10 cm",
+    "4 cm",
+    null,
+    "5 cm",
+    "6 cm",
+    "9 cm"
+   ],
+   "splits": [
+    [
+     [
+      0,
+      4
+     ],
+     [
+      6,
+      4
+     ]
+    ]
+   ]
+  },
+  "plan": {
+   "curriculum": "Mathematics 2.0, Measurement, Years 5-6: solving practical problems with the perimeter and area of rectangles and shapes made of rectangles, using length x width; supported by Number VC2M5N06 and VC2M5N07 (efficient multiplication and division) and checking that answers are reasonable",
+   "shape": "three short model-then-try cycles (perimeter with missing sides, area by splitting the long side, then the same L-shape's area), because each new step is short and the contrast between edge and inside is the point",
+   "criticalFeature": "perimeter adds every side once and is measured in metres; area multiplies length by width and is measured in square metres",
+   "decisionPoints": [
+    "the choice check: which answer is the area of a 6 m by 4 m garden",
+    "the hinge: area of an L-shape",
+    "the exit ticket: perimeter and area of the pool"
+   ],
+   "anchor": "perimeter goes around the edge (add the sides); area covers the inside (length x width)"
+  }
+ },
+ "materials": {
+  "manipulatives": [
+   "Square tiles or grid paper for counting (optional)"
+  ],
+  "studentTools": [
+   "Mini-whiteboards and markers",
+   "Printed Worksheet for every student; Extension and Supported Worksheet as needed"
+  ],
+  "routineIcons": [
+   "Write it, chin it, show me",
+   "Everyone, together, on three",
+   "Point"
+  ],
+  "boardSetup": [
+   "The anchor on the board: perimeter goes around the edge (add the sides); area covers the inside (length x width)",
+   "Under it: split a big shape into rectangles"
+  ]
+ },
+ "resources": [
+  {
+   "kind": "worksheet",
+   "role": "main",
+   "label": "Worksheet",
+   "description": "Your turn. Perimeters and areas of rectangles, L-shapes for edge and inside, and fence, court and garden problems, with a mistake to fix.",
+   "title": "Area and Perimeter",
+   "subtitle": "Perimeter goes around the edge (add the sides). Area covers the inside (length x width).",
+   "sections": [
+    {
+     "title": "Rectangles: edge and inside",
+     "proficiency": "fluency",
+     "columns": 1,
+     "example": {
+      "prompt": "Find the perimeter and the area of a rectangle 16 m by 5 m.",
+      "steps": [
+       "Edge: (16 + 5) × 2 = 42 m.",
+       "Inside: split 16 into 10 and 6.",
+       "10 × 5 = 50 and 6 × 5 = 30, so 80 m²."
+      ],
+      "answer": "42 m and 80 m²"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "Find the perimeter and the area of each rectangle.",
+       "columns": [
+        "Length",
+        "Width",
+        "Perimeter",
+        "Area"
+       ],
+       "rows": [
+        [
+         "18 m",
+         "5 m",
+         "",
+         ""
+        ],
+        [
+         "23 m",
+         "4 m",
+         "",
+         ""
+        ],
+        [
+         "48 m",
+         "25 m",
+         "",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "18 m",
+         "5 m",
+         "46 m",
+         "90 m²"
+        ],
+        [
+         "23 m",
+         "4 m",
+         "54 m",
+         "92 m²"
+        ],
+        [
+         "48 m",
+         "25 m",
+         "146 m",
+         "1 200 m²"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "L-shapes: edge and inside",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Find the perimeter and the area of this L-shape.",
+      "visual": {
+       "type": "shape",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         9,
+         0
+        ],
+        [
+         9,
+         2
+        ],
+        [
+         4,
+         2
+        ],
+        [
+         4,
+         6
+        ],
+        [
+         0,
+         6
+        ]
+       ],
+       "labels": [
+        "9 m",
+        "2 m",
+        null,
+        null,
+        "4 m",
+        "6 m"
+       ],
+       "splits": [
+        [
+         [
+          0,
+          2
+         ],
+         [
+          4,
+          2
+         ]
+        ]
+       ]
+      },
+      "steps": [
+       "Missing sides: 9 - 4 = 5 and 6 - 2 = 4.",
+       "Perimeter: 9 + 2 + 5 + 4 + 4 + 6 = 30 m.",
+       "Area: 9 × 2 = 18 and 4 × 4 = 16, so 34 m²."
+      ],
+      "answer": "30 m and 34 m²"
+     },
+     "items": [
+      {
+       "prompt": "Find the missing sides, the perimeter and the area.",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          12,
+          0
+         ],
+         [
+          12,
+          5
+         ],
+         [
+          4,
+          5
+         ],
+         [
+          4,
+          9
+         ],
+         [
+          0,
+          9
+         ]
+        ],
+        "labels": [
+         "12 m",
+         "5 m",
+         null,
+         null,
+         "4 m",
+         "9 m"
+        ],
+        "maxH": 110
+       },
+       "parts": [
+        {
+         "prompt": "missing sides",
+         "answer": "8 m and 4 m"
+        },
+        {
+         "prompt": "perimeter",
+         "answer": "42 m"
+        },
+        {
+         "prompt": "area",
+         "answer": "60 + 16 = 76 m²"
+        }
+       ]
+      },
+      {
+       "prompt": "Find the missing sides, the perimeter and the area.",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          15,
+          0
+         ],
+         [
+          15,
+          6
+         ],
+         [
+          9,
+          6
+         ],
+         [
+          9,
+          11
+         ],
+         [
+          0,
+          11
+         ]
+        ],
+        "labels": [
+         "15 cm",
+         "6 cm",
+         null,
+         null,
+         "9 cm",
+         "11 cm"
+        ],
+        "maxH": 110
+       },
+       "parts": [
+        {
+         "prompt": "missing sides",
+         "answer": "6 cm and 5 cm"
+        },
+        {
+         "prompt": "perimeter",
+         "answer": "52 cm"
+        },
+        {
+         "prompt": "area",
+         "answer": "90 + 45 = 135 cm²"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Fences, courts and gardens",
+     "proficiency": "problemSolving",
+     "columns": 2,
+     "example": {
+      "prompt": "A pen is 20 m by 15 m. Fencing costs $10 a metre. Cost?",
+      "steps": [
+       "Fence goes around the edge: (20 + 15) × 2 = 70 m.",
+       "70 × $10 = $700."
+      ],
+      "answer": "$700"
+     },
+     "items": [
+      {
+       "prompt": "A paddock is 45 m by 28 m. Fencing costs $12 a metre. How much does it cost to fence?",
+       "answer": "146 m of fence, 146 × $12 = $1752",
+       "answerLabel": "Cost:"
+      },
+      {
+       "prompt": "A netball court is 30 m by 15 m. How much ground does it cover?",
+       "answer": "450",
+       "answerLabel": "Area:",
+       "unit": "m²"
+      },
+      {
+       "kind": "mistake",
+       "prompt": "Jai found the area of a 12 m by 5 m garden. Find his mistake and fix it.",
+       "work": [
+        "12 + 5 + 12 + 5 = 34",
+        "The area is 34 m²."
+       ],
+       "answer": "He found the perimeter. Area = 12 × 5 = 60 m²."
+      },
+      {
+       "prompt": "A vegetable patch covers 96 m². One side is 8 m. How long is the other side?",
+       "answer": "8 x ? = 96, so 96 divided by 8 = 12 m",
+       "answerLabel": "Side:"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "extension",
+   "label": "Extension",
+   "description": "Early finisher option. The same fence making different spaces, working backwards from an area, and a path around a pool, with worked examples.",
+   "title": "Extension: Edge and Inside Puzzles",
+   "subtitle": "Perimeter goes around the edge (add the sides). Area covers the inside (length x width).",
+   "sections": [
+    {
+     "title": "Same fence, different space",
+     "proficiency": "reasoning",
+     "columns": 1,
+     "example": {
+      "prompt": "20 m of fence. Which rectangle pens can you make with whole metres?",
+      "steps": [
+       "Length + width = 10.",
+       "9 by 1, 8 by 2, 7 by 3, 6 by 4, 5 by 5.",
+       "Every pen has a perimeter of 20 m."
+      ],
+      "answer": "five pens"
+     },
+     "items": [
+      {
+       "kind": "table",
+       "prompt": "A farmer has 24 m of fencing for a rectangular pen. Fill in the table. Which pen gives the most space inside?",
+       "columns": [
+        "Length",
+        "Width",
+        "Perimeter",
+        "Space inside (m²)"
+       ],
+       "rows": [
+        [
+         "11 m",
+         "",
+         "24 m",
+         ""
+        ],
+        [
+         "10 m",
+         "",
+         "24 m",
+         ""
+        ],
+        [
+         "8 m",
+         "",
+         "24 m",
+         ""
+        ],
+        [
+         "6 m",
+         "",
+         "24 m",
+         ""
+        ]
+       ],
+       "answers": [
+        [
+         "11 m",
+         "1 m",
+         "24 m",
+         "11"
+        ],
+        [
+         "10 m",
+         "2 m",
+         "24 m",
+         "20"
+        ],
+        [
+         "8 m",
+         "4 m",
+         "24 m",
+         "32"
+        ],
+        [
+         "6 m",
+         "6 m",
+         "24 m",
+         "36 (most)"
+        ]
+       ]
+      },
+      {
+       "kind": "open",
+       "prompt": "Now you have 30 m of fence. Which whole-metre pen gives the most space inside? What do you notice about the best pens?",
+       "answer": "Length + width = 15. 8 m by 7 m gives 56 m², the most. The closer the pen is to a square, the more space inside."
+      }
+     ]
+    },
+    {
+     "title": "Work backwards",
+     "proficiency": "reasoning",
+     "columns": 2,
+     "example": {
+      "prompt": "A rectangle has area 48 m² and one side 6 m. Perimeter?",
+      "steps": [
+       "Missing side: 48 divided by 6 = 8 m.",
+       "Perimeter: (6 + 8) × 2 = 28 m."
+      ],
+      "answer": "28 m"
+     },
+     "items": [
+      {
+       "prompt": "A rectangle has area 91 m² and one side 7 m. What is its perimeter?",
+       "answer": "13 m, so (7 + 13) × 2 = 40 m",
+       "answerLabel": "Perimeter:"
+      },
+      {
+       "prompt": "A square has an area of 81 cm². What is its perimeter? How do you know?",
+       "answer": "9 × 9 = 81, so each side is 9 cm. Perimeter 36 cm.",
+       "lines": 3
+      }
+     ]
+    },
+    {
+     "title": "A shape with a hole",
+     "proficiency": "problemSolving",
+     "columns": 1,
+     "example": {
+      "prompt": "A 10 m by 8 m lawn has a 4 m by 3 m garden bed in it. Lawn area?",
+      "steps": [
+       "Whole rectangle: 10 × 8 = 80 m².",
+       "The hole: 4 × 3 = 12 m².",
+       "80 - 12 = 68 m² of lawn."
+      ],
+      "answer": "68 m²"
+     },
+     "items": [
+      {
+       "prompt": "A pool is 12 m by 6 m. A path 1 m wide goes all the way around it. What is the area of the path?",
+       "answer": "Pool and path: 14 × 8 = 112 m². Pool: 12 × 6 = 72 m². Path: 112 - 72 = 40 m².",
+       "lines": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "worksheet",
+   "role": "supported",
+   "label": "Supported Worksheet",
+   "description": "For students who need more guidance: every side to label, grids to count, L-shapes with the split drawn, and a hint on every question.",
+   "title": "Area and Perimeter: Step by Step",
+   "subtitle": "Perimeter goes around the edge (add the sides). Area covers the inside (length x width).",
+   "sections": [
+    {
+     "title": "Label every side",
+     "proficiency": "fluency",
+     "columns": 2,
+     "example": {
+      "prompt": "Perimeter of a 5 cm by 2 cm rectangle?",
+      "visual": {
+       "type": "shape",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         5,
+         0
+        ],
+        [
+         5,
+         2
+        ],
+        [
+         0,
+         2
+        ]
+       ],
+       "labels": [
+        "5 cm",
+        "2 cm",
+        null,
+        null
+       ]
+      },
+      "steps": [
+       "Label all four sides: 5, 2, 5, 2.",
+       "Add: 5 + 2 + 5 + 2 = 14.",
+       "14 cm."
+      ],
+      "answer": "14 cm"
+     },
+     "items": [
+      {
+       "prompt": "___ + ___ + ___ + ___ = ___ cm",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          7,
+          0
+         ],
+         [
+          7,
+          4
+         ],
+         [
+          0,
+          4
+         ]
+        ],
+        "labels": [
+         "7 cm",
+         "4 cm",
+         null,
+         null
+        ],
+        "maxH": 130
+       },
+       "hint": "The two sides you cannot see match the ones you can.",
+       "answer": "7 + 4 + 7 + 4 = 22 cm",
+       "working": "none"
+      },
+      {
+       "prompt": "___ + ___ + ___ + ___ = ___ m",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          9,
+          0
+         ],
+         [
+          9,
+          2
+         ],
+         [
+          0,
+          2
+         ]
+        ],
+        "labels": [
+         "9 m",
+         "2 m",
+         null,
+         null
+        ],
+        "maxH": 130
+       },
+       "hint": "Opposite sides are equal.",
+       "answer": "9 + 2 + 9 + 2 = 22 m",
+       "working": "none"
+      },
+      {
+       "prompt": "A square has sides of 10 m. ___ + ___ + ___ + ___ = ___ m",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          10,
+          0
+         ],
+         [
+          10,
+          10
+         ],
+         [
+          0,
+          10
+         ]
+        ],
+        "labels": [
+         "10 m",
+         null,
+         null,
+         null
+        ],
+        "maxH": 130
+       },
+       "hint": "A square has 4 equal sides.",
+       "answer": "10 + 10 + 10 + 10 = 40 m",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "Count the squares",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Area of a 4 by 2 rectangle?",
+      "visual": {
+       "type": "shape",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         4,
+         0
+        ],
+        [
+         4,
+         2
+        ],
+        [
+         0,
+         2
+        ]
+       ],
+       "grid": true,
+       "labels": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      "steps": [
+       "2 rows of 4.",
+       "2 × 4 = 8.",
+       "8 squares."
+      ],
+      "answer": "8 squares"
+     },
+     "items": [
+      {
+       "prompt": "___ rows of ___ = ___ squares",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          6,
+          0
+         ],
+         [
+          6,
+          3
+         ],
+         [
+          0,
+          3
+         ]
+        ],
+        "grid": true,
+        "labels": [
+         null,
+         null,
+         null,
+         null
+        ],
+        "maxH": 120
+       },
+       "hint": "Count one row, then how many rows.",
+       "answer": "3 rows of 6 = 18",
+       "working": "none"
+      },
+      {
+       "prompt": "___ rows of ___ = ___ squares",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          4,
+          0
+         ],
+         [
+          4,
+          4
+         ],
+         [
+          0,
+          4
+         ]
+        ],
+        "grid": true,
+        "labels": [
+         null,
+         null,
+         null,
+         null
+        ],
+        "maxH": 120
+       },
+       "hint": "Count the rows going up first.",
+       "answer": "4 rows of 4 = 16",
+       "working": "none"
+      }
+     ]
+    },
+    {
+     "title": "The split is drawn",
+     "proficiency": "understanding",
+     "columns": 2,
+     "example": {
+      "prompt": "Add the two parts.",
+      "steps": [
+       "Bottom part: 6 × 2 = 12.",
+       "Top part: 3 × 3 = 9.",
+       "12 + 9 = 21 m²."
+      ],
+      "answer": "21 m²",
+      "visual": {
+       "type": "shape",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         6,
+         0
+        ],
+        [
+         6,
+         2
+        ],
+        [
+         3,
+         2
+        ],
+        [
+         3,
+         5
+        ],
+        [
+         0,
+         5
+        ]
+       ],
+       "labels": [
+        "6 m",
+        "2 m",
+        null,
+        "3 m",
+        "3 m",
+        "5 m"
+       ],
+       "splits": [
+        [
+         [
+          0,
+          2
+         ],
+         [
+          3,
+          2
+         ]
+        ]
+       ]
+      }
+     },
+     "items": [
+      {
+       "prompt": "Bottom part ___ + top part ___ = ___ m²",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          8,
+          0
+         ],
+         [
+          8,
+          3
+         ],
+         [
+          4,
+          3
+         ],
+         [
+          4,
+          6
+         ],
+         [
+          0,
+          6
+         ]
+        ],
+        "labels": [
+         "8 m",
+         "3 m",
+         null,
+         "3 m",
+         "4 m",
+         "6 m"
+        ],
+        "splits": [
+         [
+          [
+           0,
+           3
+          ],
+          [
+           4,
+           3
+          ]
+         ]
+        ],
+        "maxH": 130
+       },
+       "hint": "Bottom: 8 × 3. Top: 4 × 3.",
+       "answer": "24 + 12 = 36 m²",
+       "working": "none"
+      },
+      {
+       "prompt": "Bottom part ___ + top part ___ = ___ m²",
+       "visual": {
+        "type": "shape",
+        "points": [
+         [
+          0,
+          0
+         ],
+         [
+          10,
+          0
+         ],
+         [
+          10,
+          2
+         ],
+         [
+          5,
+          2
+         ],
+         [
+          5,
+          6
+         ],
+         [
+          0,
+          6
+         ]
+        ],
+        "labels": [
+         "10 m",
+         "2 m",
+         null,
+         "4 m",
+         "5 m",
+         "6 m"
+        ],
+        "splits": [
+         [
+          [
+           0,
+           2
+          ],
+          [
+           5,
+           2
+          ]
+         ]
+        ],
+        "maxH": 130
+       },
+       "hint": "Bottom: 10 × 2. Top: 5 × 4.",
+       "answer": "20 + 20 = 40 m²",
+       "working": "none"
+      }
+     ]
+    }
+   ],
+   "answerKey": false
+  }
+ ],
+ "slides": [
+  {
+   "kind": "title",
+   "notes": "Area and perimeter in one session: around the edge, then the inside, then shapes made of rectangles."
+  },
+  {
+   "kind": "resources",
+   "notes": "Before you start, put boards and markers on every desk and write the anchor on the board. Print the Worksheet for everyone, and a few copies of the Extension and the Supported Worksheet. Behind time? Skip the 4-digit fluency and the fourth We Do item."
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Spinner chance",
+   "from": "teacher",
+   "prompts": [
+    "What is P(blue)?"
+   ],
+   "visual": {
+    "type": "spinner",
+    "sectors": [
+     {
+      "label": "blue"
+     },
+     {
+      "label": "red"
+     },
+     {
+      "label": "red"
+     },
+     {
+      "label": "blue"
+     },
+     {
+      "label": "green"
+     },
+     {
+      "label": "red"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "2/6 = 1/3"
+    ]
+   },
+   "notes": {
+    "answer": "2/6 = 1/3",
+    "beats": [
+     [
+      "SAY: Let's warm up with some chance and some angles."
+     ],
+     [
+      "ASK: What is the probability of blue?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 2/6. ACCEPT: 1/3"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal and move straight on.",
+      "Less -> count every equal part, then the blue parts. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Blue is 2 of the 6 equal parts,",
+      "so 2/6, which is 1/3. Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 2/4, blue parts over the other parts.",
+     "Fix: the bottom number counts every part, and they recount."
+    ],
+    "prep": "Review of Week 4 probability, kept from the original Week 5 decks. Two review items only today: under 4 minutes.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "dailyReview",
+   "title": "Reflex angle",
+   "from": "teacher",
+   "prompts": [
+    "Find the reflex angle."
+   ],
+   "visual": {
+    "type": "angle",
+    "rays": [
+     0,
+     280
+    ],
+    "arcs": [
+     {
+      "from": 0,
+      "to": 280,
+      "label": "?"
+     },
+     {
+      "from": 280,
+      "to": 360,
+      "label": "80°"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "280°"
+    ]
+   },
+   "notes": {
+    "answer": "280°",
+    "beats": [
+     [
+      "ASK: How big is the reflex angle?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 280"
+     ],
+     [
+      "SCAN boards, back row first.",
+      "80%+ -> reveal, then on to Fluency.",
+      "Less -> trace the full turn, then take away the inside angle. Re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: It's 280 degrees, because 360 take away 80 is 280.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 100, from 180.",
+     "Fix: trace all the way round, and they redo it from 360."
+    ],
+    "prep": "Week 1 review: reflex angles, spaced four weeks back.",
+    "tag": "[Daily Review | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Multiply with the written method: 3 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     347,
+     6
+    ],
+    "op": "×"
+   },
+   "reveal": {
+    "answers": [
+     "2 082"
+    ]
+   },
+   "notes": {
+    "answer": "2 082",
+    "beats": [
+     [
+      "SAY: Now for some written multiplication.",
+      "Multiply the ones first, and carry into the next column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 2 082"
+     ],
+     [
+      "SCAN boards for the carried digits.",
+      "80%+ -> reveal, then the next one.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 2 082.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "forgetting to add the carried digit after multiplying.",
+     "Fix: write each carry small above the next column, and they redo it."
+    ],
+    "prep": "Multiplication fluency feeds today's areas: 3 digits, then 4. Keep the block under 4 minutes.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "fluency",
+   "title": "Multiply with the written method: 4 digits",
+   "visual": {
+    "type": "columnSum",
+    "numbers": [
+     2856,
+     4
+    ],
+    "op": "×"
+   },
+   "reveal": {
+    "answers": [
+     "11 424"
+    ]
+   },
+   "notes": {
+    "answer": "11 424",
+    "beats": [
+     [
+      "SAY: Now it's 4 digits.",
+      "It's the same method, just one more column."
+     ],
+     [
+      "ASK: Use the written method to solve this one.",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 11 424"
+     ],
+     [
+      "SCAN boards for the carried digits.",
+      "80%+ -> reveal, then the learning intention.",
+      "Less -> model the first column together on the board, re-ask."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: The answer is 11 424.",
+      "Tick it or fix it, and check every step."
+     ]
+    ],
+    "trap": [
+     "forgetting to add the carried digit after multiplying.",
+     "Fix: write each carry small above the next column, and they redo it."
+    ],
+    "prep": "One size up, then straight to the LI.",
+    "tag": "[Fluency | Retention and recall | HITS 6]"
+   }
+  },
+  {
+   "kind": "li",
+   "learningIntention": "We are learning to find the perimeter and area of rectangles and shapes made of rectangles.",
+   "successCriteria": [
+    "I can find the perimeter by adding every side once.",
+    "I can find the area of a rectangle by multiplying length by width.",
+    "I can find the area of an L-shape by splitting it into rectangles."
+   ],
+   "notes": {
+    "beats": [
+     [
+      "POINT to the learning intention.",
+      "SAY: Today is all about two measures:",
+      "the distance around a shape, and the space inside it."
+     ],
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "SAY: The first one is where we start,",
+      "and the second one is our big goal today."
+     ]
+    ],
+    "prep": "SC1 perimeter is reachable for everyone; SC2 area of a rectangle is the core and the exit evidence; SC3 composite area is the stretch.",
+    "tag": "[LI/SC | Planning made visible | HITS 1]"
+   }
+  },
+  {
+   "kind": "launch",
+   "title": "Edge or inside?",
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      7,
+      0
+     ],
+     [
+      7,
+      3
+     ],
+     [
+      0,
+      3
+     ]
+    ],
+    "grid": true,
+    "labels": [
+     "7 m",
+     "3 m",
+     null,
+     null
+    ]
+   },
+   "prompt": "How far around the edge? How many squares cover the inside?",
+   "notes": {
+    "answer": "20 m around, 21 squares inside",
+    "beats": [
+     [
+      "POINT to the edge, then the squares.",
+      "SAY: This garden has a fence around it and squares of lawn inside."
+     ],
+     [
+      "ASK: Write two numbers: how far around, and how many squares inside.",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 20 and 21"
+     ],
+     [
+      "SCAN boards for 20 and 21.",
+      "80%+ -> cold call one student: How did you get 21 so fast?",
+      "Less -> trace the edge together, then count one row and the rows. Re-ask."
+     ],
+     [
+      "SAY: Around the edge: 7 and 3 is 10, doubled is 20 metres.",
+      "Inside: 3 rows of 7, 21 squares. Two numbers, two different measures."
+     ]
+    ],
+    "trap": [
+     "counting the squares along the edge for the distance.",
+     "Fix: trace the fence line, not the squares, and they add the sides."
+    ],
+    "prep": "Re-grounds both ideas from a picture anyone can count, so no one needs last week. Under 4 minutes.",
+    "tag": "[Launch | Retention and recall | HITS 3]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "perimeter",
+   "meaning": "The total distance around the outside of a shape.",
+   "example": "A 3 m by 2 m rug has a perimeter of 10 m.",
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      3,
+      0
+     ],
+     [
+      3,
+      2
+     ],
+     [
+      0,
+      2
+     ]
+    ],
+    "labels": [
+     "3 m",
+     "2 m",
+     null,
+     null
+    ]
+   },
+   "notes": {
+    "answer": "the distance around the outside",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is perimeter. Say it with me: pe-rim-e-ter."
+     ],
+     [
+      "SAY: Perimeter goes around the edge, so we add the sides.",
+      "Every side, once."
+     ],
+     [
+      "ASK: Trace the perimeter of your desk with your finger.",
+      "5 sec. Cue: Voices off. Trace... now.",
+      "EXPECT: fingers moving around the edge"
+     ]
+    ],
+    "trap": [
+     "rubbing the middle of the desk.",
+     "Fix: say edge, not inside, and they trace again."
+    ],
+    "prep": "First half of the anchor. Brisk: under 2 minutes.",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "keyWord",
+   "word": "area",
+   "meaning": "The amount of surface a shape covers, measured in square units.",
+   "example": "A 5 m by 3 m rug covers 15 square metres, written 15 m².",
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      5,
+      0
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      0,
+      3
+     ]
+    ],
+    "grid": true,
+    "labels": [
+     null,
+     null,
+     null,
+     null
+    ]
+   },
+   "notes": {
+    "answer": "the inside: square units",
+    "beats": [
+     [
+      "POINT to the word.",
+      "SAY: This word is area. Say it with me: ar-e-a."
+     ],
+     [
+      "SAY: Area covers the inside, so we multiply length by width.",
+      "We measure it in squares, like square metres, written m with a little 2."
+     ],
+     [
+      "ASK: Show me with your hand: is area the edge or the inside?",
+      "5 sec. Cue: Voices off. Show me... now. Hold it.",
+      "EXPECT: hands rubbing the inside of the desk"
+     ]
+    ],
+    "trap": [
+     "writing m instead of m².",
+     "Fix: point to the squares, and they add the little 2."
+    ],
+    "prep": "Second half of the anchor. The unit tells you which one you found: m or m².",
+    "tag": "[Key Vocabulary | Knowledge and memory | HITS 6]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Perimeter: find the missing sides",
+   "steps": [
+    "Across: 10 = 6 + ?, so ? = 4.",
+    "Up: 9 = 4 + ?, so ? = 5.",
+    "Add all six sides: 10 + 4 + 4 + 5 + 6 + 9.",
+    "Perimeter = 38 cm.",
+    "Your turn: a 10 cm by 9 cm rectangle."
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      0,
+      9
+     ]
+    ],
+    "labels": [
+     "10 cm",
+     "4 cm",
+     "?",
+     "?",
+     "6 cm",
+     "9 cm"
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "10 by 9 rectangle: 38 cm too"
+    ]
+   },
+   "notes": {
+    "answer": "38 cm both",
+    "beats": [
+     [
+      "SAY: Perimeter goes around the edge, so I add the sides.",
+      "Bottom 10, top 6, so the missing across side is 4."
+     ],
+     [
+      "ASK: Left is 9, right part is 4. Missing up side?",
+      "5 sec. Cue: Fingers at your chest... show me.",
+      "EXPECT: 5"
+     ],
+     [
+      "MODEL adding all six, clicking in each step: 38. Every side, once."
+     ],
+     [
+      "ASK: What is the perimeter of a 10 by 9 rectangle?",
+      "25 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 38 cm"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "Cold call one student: Why is it the same as the L-shape?"
+     ]
+    ],
+    "trap": [
+     "leaving out the missing sides.",
+     "Fix: count the sides, six, and they add them all."
+    ],
+    "stretch": "Does cutting a different corner change the perimeter?",
+    "help": "Tick each side as you add it.",
+    "prep": "A missing side comes from the opposite sides. Keep this L-shape in mind: it comes back for area. SC1.",
+    "tag": "[I Do | Explicit teaching | SC1 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Area: split the long side",
+   "steps": [
+    "Area = length × width = 23 × 6.",
+    "Split 23 into 20 and 3.",
+    "20 × 6 = 120 and 3 × 6 = 18.",
+    "120 + 18 = 138 m².",
+    "Your turn: 34 m by 5 m."
+   ],
+   "visual": {
+    "type": "shape",
+    "shapes": [
+     {
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        7,
+        0
+       ],
+       [
+        7,
+        3.6
+       ],
+       [
+        0,
+        3.6
+       ]
+      ],
+      "labels": [
+       "20 m",
+       null,
+       null,
+       "6 m"
+      ],
+      "centerLabel": "20 × 6"
+     },
+     {
+      "points": [
+       [
+        7,
+        0
+       ],
+       [
+        10.2,
+        0
+       ],
+       [
+        10.2,
+        3.6
+       ],
+       [
+        7,
+        3.6
+       ]
+      ],
+      "labels": [
+       "3 m",
+       null,
+       null,
+       null
+      ],
+      "centerLabel": "3 × 6"
+     }
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "150 + 20 = 170 m²"
+    ]
+   },
+   "notes": {
+    "answer": "170 m²",
+    "beats": [
+     [
+      "POINT to the rectangle.",
+      "SAY: Area covers the inside, so I multiply length by width: 23 times 6.",
+      "That's tricky in my head, so I split the long side into 20 and 3."
+     ],
+     [
+      "MODEL the two parts.",
+      "SAY: 20 times 6 is 120, and 3 times 6 is 18.",
+      "I add the two parts: 138 square metres."
+     ],
+     [
+      "ASK: Use the same split.",
+      "What is the area of a rectangle 34 metres by 5 metres?",
+      "20 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 170 m²"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: 30 times 5 is 150,",
+      "and 4 times 5 is 20, so 170 square metres."
+     ]
+    ],
+    "trap": [
+     "multiplying only the tens.",
+     "Fix: point to the small part of the area model, and they add it."
+    ],
+    "stretch": "Split 23 another way. Same answer?",
+    "help": "Draw two boxes; write each part inside.",
+    "prep": "Splitting a rectangle is the same move as splitting an L-shape later. SC2.",
+    "tag": "[I Do | Explicit teaching | SC2 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "choice",
+   "badge": "CFU",
+   "title": "A 6 m by 4 m garden",
+   "prompt": "Which one is the area? Point to A, B or C",
+   "options": [
+    {
+     "text": "20 m²",
+     "misconception": "adds the sides: finds the perimeter, not the area"
+    },
+    {
+     "text": "24 m²"
+    },
+    {
+     "text": "10 m²",
+     "misconception": "adds one length and one width instead of multiplying"
+    }
+   ],
+   "answer": 1,
+   "notes": {
+    "answer": "B",
+    "beats": [
+     [
+      "SAY: Area covers the inside. Think before you point."
+     ],
+     [
+      "ASK: Which one is the area of a 6 metre by 4 metre garden?",
+      "15 sec. Cue: Voices off. Point... now. Hold your point.",
+      "EXPECT: pointing to B"
+     ],
+     [
+      "SCAN the room, back row first.",
+      "80%+ -> reveal, then cold call one student: What did A measure?",
+      "Less -> sketch the garden, trace the edge, then shade 4 rows of 6. Re-ask."
+     ],
+     [
+      "REVEAL after pointing is scanned.",
+      "SAY: It's B, 24 square metres: 6 times 4.",
+      "A is the perimeter, and C added instead of multiplying."
+     ]
+    ],
+    "trap": [
+     "pointing to A.",
+     "Fix: say area covers, perimeter goes around, and they choose again."
+    ],
+    "prep": "First decision point: edge or inside. Every option is in m², so the unit gives nothing away. A: perimeter; C: adding once.",
+    "tag": "[CFU | Supported application | SC2 | HITS 7]"
+   }
+  },
+  {
+   "kind": "practice",
+   "badge": "We Do",
+   "title": "Edge or inside?",
+   "ask": "Read the label, then solve it. Watch the unit.",
+   "routine": "boards",
+   "thinkTime": 25,
+   "pivot": "trace the edge or shade the inside first, then add or multiply",
+   "followUp": "cold call one board: How did you know to add or multiply?",
+   "items": [
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        7,
+        0
+       ],
+       [
+        7,
+        7
+       ],
+       [
+        0,
+        7
+       ]
+      ],
+      "labels": [
+       "7 cm",
+       null,
+       null,
+       null
+      ]
+     },
+     "label": "A square. Perimeter?",
+     "answer": "28 cm",
+     "say": "A square has 4 equal sides: 7 four times is 28 centimetres."
+    },
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        14,
+        0
+       ],
+       [
+        14,
+        6
+       ],
+       [
+        0,
+        6
+       ]
+      ],
+      "labels": [
+       "14 m",
+       "6 m",
+       null,
+       null
+      ]
+     },
+     "label": "Area?",
+     "answer": "84 m²",
+     "say": "Split 14: 10 times 6 is 60, and 4 times 6 is 24. That's 84."
+    },
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        8,
+        0
+       ],
+       [
+        8,
+        3
+       ],
+       [
+        5,
+        3
+       ],
+       [
+        5,
+        7
+       ],
+       [
+        0,
+        7
+       ]
+      ],
+      "labels": [
+       "8 m",
+       "3 m",
+       null,
+       null,
+       "5 m",
+       "7 m"
+      ]
+     },
+     "label": "Perimeter?",
+     "answer": "30 m",
+     "say": "30 metres: the missing sides are 3 and 4."
+    },
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        45,
+        0
+       ],
+       [
+        45,
+        4
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "labels": [
+       "45 cm",
+       "4 cm",
+       null,
+       null
+      ]
+     },
+     "label": "Area?",
+     "answer": "180 cm²",
+     "say": "40 times 4 is 160, and 5 times 4 is 20: 180 square centimetres."
+    },
+    {
+     "visual": {
+      "type": "shape",
+      "points": [
+       [
+        0,
+        0
+       ],
+       [
+        7,
+        0
+       ],
+       [
+        7,
+        8
+       ],
+       [
+        0,
+        8
+       ]
+      ],
+      "labels": [
+       "7 m",
+       "? m",
+       null,
+       null
+      ],
+      "centerLabel": "56 m²"
+     },
+     "label": "Missing side? 7 × ? = 56",
+     "answer": "8 m",
+     "say": "Area is length times width, so 7 times what makes 56? 8 metres."
+    }
+   ],
+   "notes": {
+    "say": [
+     "Let's practise together.",
+     "Write each answer with its unit: squared for area, plain for perimeter."
+    ],
+    "trap": [
+     "using the wrong measure for the label, or the wrong unit.",
+     "Fix: point to the label and the anchor, and they redo it."
+    ],
+    "stretch": "Find the other measure for each one too.",
+    "help": "Copy the shape; write a number on every side or shade the inside.",
+    "prep": "Guided practice that mixes edge and inside. The last item works backwards: a times fact turned around. SC1 and SC2.",
+    "tag": "[We Do | Supported application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "workedExample",
+   "stage": 2,
+   "title": "Area of an L-shape",
+   "steps": [
+    "Split it into two rectangles.",
+    "Bottom: 10 × 4 = 40 cm².",
+    "Top: 6 × 5 = 30 cm².",
+    "Total: 40 + 30 = 70 cm².",
+    "Your turn: split it with a line going up."
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      0
+     ],
+     [
+      10,
+      4
+     ],
+     [
+      6,
+      4
+     ],
+     [
+      6,
+      9
+     ],
+     [
+      0,
+      9
+     ]
+    ],
+    "labels": [
+     "10 cm",
+     "4 cm",
+     null,
+     "5 cm",
+     "6 cm",
+     "9 cm"
+    ],
+    "splits": [
+     [
+      [
+       0,
+       4
+      ],
+      [
+       6,
+       4
+      ]
+     ]
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "54 + 16 = 70 cm²"
+    ]
+   },
+   "notes": {
+    "answer": "70 cm² both ways",
+    "beats": [
+     [
+      "SAY: Our L-shape again: 38 centimetres around.",
+      "Area covers the inside, but an L-shape has no single length and width."
+     ],
+     [
+      "MODEL the dashed line, then each part.",
+      "SAY: So I split it into two rectangles.",
+      "The bottom is 10 by 4, which is 40.",
+      "The top is 6 by 5, which is 30. Altogether, 70 square centimetres."
+     ],
+     [
+      "ASK: Split it the other way, with a line going up. Same area?",
+      "30 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: yes, 54 + 16 = 70"
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Left part 6 by 9 is 54,",
+      "right part 4 by 4 is 16: 70 again."
+     ]
+    ],
+    "trap": [
+     "multiplying the two longest sides.",
+     "Fix: shade the missing corner, and they split instead."
+    ],
+    "stretch": "Take the corner away from a 10 by 9 rectangle instead.",
+    "help": "Colour each part differently.",
+    "prep": "Same shape, two measures: 38 cm around, 70 cm² inside. Split, find each area, add. SC3.",
+    "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+   }
+  },
+  {
+   "kind": "heroVisual",
+   "badge": "CFU",
+   "badgeColor": "alert",
+   "title": "What is the area?",
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      0
+     ],
+     [
+      12,
+      5
+     ],
+     [
+      7,
+      5
+     ],
+     [
+      7,
+      8
+     ],
+     [
+      0,
+      8
+     ]
+    ],
+    "labels": [
+     "12 m",
+     "5 m",
+     null,
+     "3 m",
+     "7 m",
+     "8 m"
+    ]
+   },
+   "reveal": {
+    "answers": [
+     "60 + 21 = 81 m²"
+    ]
+   },
+   "notes": {
+    "answer": "81 m². 96 = whole rectangle, 40 = perimeter",
+    "beats": [
+     [
+      "SAY: This one is just for you.",
+      "Split it into two rectangles first."
+     ],
+     [
+      "ASK: What is the area of this shape?",
+      "40 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 81 m²"
+     ],
+     [
+      "SCAN every board, back row first.",
+      "80%+ -> reveal, then Your turn.",
+      "Less -> draw the split at 5 together, re-ask.",
+      "Still wrong -> Supported section C with me."
+     ],
+     [
+      "REVEAL after boards are scanned.",
+      "SAY: Bottom 12 by 5 is 60, top 7 by 3 is 21: 81 square metres.",
+      "Tick it or fix it."
+     ]
+    ],
+    "trap": [
+     "writing 96, the whole 12 by 8 rectangle.",
+     "Fix: shade the missing corner, and they split it."
+    ],
+    "prep": "The hinge before independent work. After Supported section C, those students move to main Section B.",
+    "tag": "[CFU hinge | Supported application | SC3 | HITS 7, 8]"
+   }
+  },
+  {
+   "kind": "youDo",
+   "title": "Your turn",
+   "task": "Find perimeters and areas on your worksheet.",
+   "where": "On your worksheet",
+   "notes": {
+    "beats": [
+     [
+      "POINT to the steps.",
+      "SAY: Read each question carefully, solve it carefully, then check your answers."
+     ],
+     [
+      "SAY: If you finish, the Extension is your early finisher option.",
+      "Let's read the steps together. Cue: Everyone, together, on three."
+     ],
+     "CIRCULATE and ask: Is this one the edge or the inside? How do you know?",
+     "TIME: 14 minutes. Stop everyone once at 7 minutes to share an L-shape split."
+    ],
+    "trap": [
+     "adding when the question asks how much it covers.",
+     "Fix: ask edge or inside, and they choose add or multiply."
+    ],
+    "stretch": "Extension: the same fence making different spaces, working backwards, and a path around a pool.",
+    "help": "Supported Worksheet: every side to label, grids to count, and L-shapes with the split drawn.",
+    "prep": "Independent practice across all three criteria. Most will reach the L-shapes; the sheet is evidence for SC2 and SC3.",
+    "tag": "[You Do | Independent application | SC2 | HITS 3, 7]"
+   }
+  },
+  {
+   "kind": "exitTicket",
+   "title": "Show what you know",
+   "questions": [
+    "Find the perimeter and the area of the pool."
+   ],
+   "visual": {
+    "type": "shape",
+    "points": [
+     [
+      0,
+      0
+     ],
+     [
+      25,
+      0
+     ],
+     [
+      25,
+      12
+     ],
+     [
+      0,
+      12
+     ]
+    ],
+    "labels": [
+     "25 m",
+     "12 m",
+     null,
+     null
+    ]
+   },
+   "notes": {
+    "answer": "74 m and 300 m²",
+    "beats": [
+     [
+      "SAY: Here's the last one. Work it out on your own board."
+     ],
+     [
+      "ASK: What are the perimeter and the area",
+      "of a pool 25 metres by 12 metres?",
+      "45 sec. Cue: Write it... Chin it... Show me.",
+      "EXPECT: 74 m and 300 m²"
+     ],
+     [
+      "RECORD who swaps them, or writes m for the area.",
+      "They start the next measurement session with the teacher."
+     ]
+    ],
+    "trap": [
+     "writing 300 m for the perimeter, or 37 m.",
+     "Fix: none now. Record the name."
+    ],
+    "prep": "Exit evidence for SC1 and SC2 on one new rectangle: does each student keep the two measures apart?",
+    "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+   }
+  },
+  {
+   "kind": "closing",
+   "reflectionPrompt": "Tell your partner how you know whether to add or multiply.",
+   "selfAssessment": "Thumbs up, sideways or down",
+   "notes": {
+    "answer": "open - listen for edge means add the sides, inside means length times width",
+    "beats": [
+     [
+      "SAY: Let's read our I can statements together.",
+      "Cue: Everyone, together, on three."
+     ],
+     [
+      "ASK: How sure are you that you can find area and perimeter?",
+      "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+      "EXPECT: thumbs up, sideways or down"
+     ],
+     [
+      "RECORD each thumb down beside the exit board.",
+      "A thumb up with the two answers swapped matters most."
+     ],
+     [
+      "ASK: How do you know whether to add or multiply?",
+      "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+      "Eyes back in 3, 2, 1.",
+      "EXPECT: around the edge means add; covering the inside means multiply"
+     ]
+    ],
+    "prep": "Read the self-assessment beside the exit evidence.",
+    "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+   }
+  }
+ ]
+}

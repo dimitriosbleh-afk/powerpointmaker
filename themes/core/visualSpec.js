@@ -105,6 +105,7 @@ function createVisualSpec(C, FONT_H, FONT_B, el, S, deps) {
 
   /**
    * Draw a themed data table. rows[0] is the header when opts.header !== false.
+   * opts.headerRows (array of row indexes) marks several header rows instead.
    * Cells are strings or numbers. Column widths are equal unless opts.colWidths.
    */
   function addDataTable(slide, x, y, w, rows, opts) {
@@ -124,7 +125,8 @@ function createVisualSpec(C, FONT_H, FONT_B, el, S, deps) {
 
     data.forEach((row, r) => {
       let cx = x;
-      const isHeader = hasHeader && r === 0;
+      // headerRows: [0, 4] gives a second header part-way down (e.g. a timetable with two directions).
+      const isHeader = Array.isArray(o.headerRows) ? o.headerRows.includes(r) : (hasHeader && r === 0);
       const fill = isHeader
         ? headerColor
         : (zebra && r % 2 === (hasHeader ? 0 : 1) ? (o.zebraFill || C.PRIMARY_SOFT || C.BG_LIGHT) : C.WHITE);

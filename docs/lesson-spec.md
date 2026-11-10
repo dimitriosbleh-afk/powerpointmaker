@@ -62,6 +62,7 @@ its student-view QA, for slides, worksheet visuals and cut-out `cards`.
 | `fileName` | | Defaults to `<title>.pptx` |
 | `titleVisual` | | A visual spec for the cover instead of the subject glyph |
 | `assessment` | | `{ writingMinutes, reason }` for a common assessment task (CAT) session only. The response floor counts the teacher-led minutes only, no exit ticket is needed (the task is the evidence), and the Years 3-6 three-sheet package and standard Your turn steps do not apply, because no enabling support is given while a CAT runs. Write your own `youDo.steps` |
+| `skipWarmUp` | | Numeracy only: the teacher's reason for a session with no Daily Review or Fluency (e.g. pre-test revision). Only when the request asks for it; the slides must then have neither |
 
 ### materials
 
@@ -217,7 +218,7 @@ Anywhere a `visual` is accepted:
 { "type": "pictogram", "name": "butterfly", "label": "butterfly" }
 { "type": "pictograms", "items": ["happy", "sad", "worried"], "labels": false }
 { "type": "text", "text": "9" }
-{ "type": "table", "rows": [["Animal", "Legs"], ["Dog", "4"]] }
+{ "type": "table", "rows": [["Animal", "Legs"], ["Dog", "4"]] }   "headerRows": [0, 4] adds a second header row part-way down
 { "type": "image", "path": "assets/unit/photo.jpg" }
 { "type": "video", "youtube": "IDpfl2aGruE" }                  "start": 30, "end": 180 (seconds), "label": "Watch on YouTube: Locker Board"
 { "type": "angle", "rays": [0, 65], "protractor": true }
@@ -234,6 +235,9 @@ Anywhere a `visual` is accepted:
 { "type": "shape", "points": [[0,0],[8,0],[8,5],[0,5]], "labels": ["8 m", "5 m", null, null], "centerLabel": "A = ?" }
 { "type": "barModel", "parts": 4, "shaded": 1, "total": "$80", "labels": ["?", "", "", ""], "below": ["25%", "25%", "25%", "25%"] }
 { "type": "hundredGrid", "shaded": 35, "label": "35%" }
+{ "type": "dial", "max": 1500, "major": 100, "minor": 5, "value": 1060, "labels": { "1000": "1 kg" } }   kitchen scales: 0 at the top, one turn = max
+{ "type": "jug", "max": 3000, "major": 1000, "minor": 4, "value": 1750 }   upright jug, labels "1 L", "2 L"; omit value for empty
+{ "type": "factorTree", "tree": { "value": "48", "children": [{ "value": "6" }, { "value": "8" }] } }   a value that is not a number ("A", "?", "") is an unknown, drawn in the accent colour
 { "type": "tally", "headers": ["Sport", "Tally", "Frequency"], "rows": [["Footy", 8], ["Netball", 5]] }   "counts": false leaves the frequency blank
 { "type": "fractionWall" }                                         halves to twelfths; "denoms": [1, 2, 4, 8], "shaded": { "4": 3 }, "labels": false
 { "type": "clock" }                                                blank face; "time": "3:45" draws the hands, "minutes": true, "digital": true

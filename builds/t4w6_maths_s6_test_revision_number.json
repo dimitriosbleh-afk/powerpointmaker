@@ -1,0 +1,1587 @@
+{
+  "lesson": {
+    "subject": "numeracy",
+    "yearLevel": "grade56",
+    "year": 2026,
+    "term": 4,
+    "week": 6,
+    "session": 6,
+    "variant": 2,
+    "minutes": 30,
+    "skipWarmUp": "Teacher asked to skip Daily Review and Fluency: pre-test revision, every slide is retrieval",
+    "title": "Test Revision: Number and Algebra",
+    "subtitle": "Part 1 of 2: ready for tomorrow's maths test",
+    "meta": "Year 5/6 Maths | Test Revision",
+    "footer": "Test Revision | Year 5/6 Maths | Session 6",
+    "outputFolder": "T4W6_Maths_S6_Test_Revision_Number",
+    "fileName": "Session 6 - Test Revision Number and Algebra.pptx",
+    "titleVisual": {
+      "type": "factorTree",
+      "tree": {
+        "value": "36",
+        "children": [
+          {
+            "value": "6",
+            "children": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          },
+          {
+            "value": "6",
+            "children": [
+              {
+                "value": "2"
+              },
+              {
+                "value": "3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "plan": {
+      "curriculum": "Mathematics 2.0, Years 5 and 6, Number and Algebra: whole-year revision of the number and algebra questions on tomorrow's Grade 5 and Grade 6 General Maths tests",
+      "shape": "consolidation: one slide per test question type, attempted first on boards, then the method modelled on the reveal, because all of it has been taught this year",
+      "criticalFeature": "read what the question really asks (how many are needed, how much is left) before you calculate, then check the answer makes sense",
+      "decisionPoints": [
+        "the launch: which topic each student feels least sure about",
+        "the boats remainder check and the times-before-plus hinge",
+        "the exit ticket"
+      ],
+      "anchor": "Read it. Work it. Check it.",
+      "catchUp": "Missed it? Each slide is one test question type, so start them on the Supported Worksheet and go through the matching slide with them"
+    }
+  },
+  "materials": {
+    "studentTools": [
+      "Mini-whiteboards and markers",
+      "Scrap paper for working",
+      "Printed Revision Worksheet for everyone; Extension and Supported Worksheet as needed"
+    ],
+    "routineIcons": [
+      "Write it, chin it, show me",
+      "Everyone, together, on three"
+    ],
+    "boardSetup": [
+      "Write the anchor on the board: Read it. Work it. Check it."
+    ]
+  },
+  "resources": [
+    {
+      "kind": "worksheet",
+      "role": "main",
+      "label": "Revision Worksheet",
+      "description": "Your turn. The trickiest number and algebra question types again, with new numbers.",
+      "title": "Number and Algebra Revision",
+      "subtitle": "Read it. Work it. Check it.",
+      "sections": [
+        {
+          "title": "Numbers and factors",
+          "proficiency": "understanding",
+          "columns": 2,
+          "example": {
+            "prompt": "Order from smallest to largest: 0.4, 0.04, 0.44",
+            "steps": [
+              "Line up the decimal points.",
+              "Add zeros: 0.40, 0.04, 0.44.",
+              "Compare tenths, then hundredths."
+            ],
+            "answer": "0.04, 0.4, 0.44"
+          },
+          "items": [
+            {
+              "prompt": "Order from smallest to largest: 3.6, 0.36, 3.06, 0.6, 3.606",
+              "answer": "0.36, 0.6, 3.06, 3.6, 3.606",
+              "lines": 1
+            },
+            {
+              "prompt": "Find A, B and C.",
+              "visual": {
+                "type": "factorTree",
+                "tree": {
+                  "value": "36",
+                  "children": [
+                    {
+                      "value": "A",
+                      "children": [
+                        {
+                          "value": "3"
+                        },
+                        {
+                          "value": "B"
+                        }
+                      ]
+                    },
+                    {
+                      "value": "4",
+                      "children": [
+                        {
+                          "value": "C"
+                        },
+                        {
+                          "value": "2"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "answer": "A = 9, B = 3, C = 2",
+              "working": "none"
+            }
+          ]
+        },
+        {
+          "title": "Estimate and solve",
+          "proficiency": "problemSolving",
+          "columns": 2,
+          "example": {
+            "prompt": "A van holds 9 people. 50 people need a ride. How many vans?",
+            "steps": [
+              "50 divided by 9 is 5 remainder 5.",
+              "The 5 left over still need a ride.",
+              "So one more van: 6 vans."
+            ],
+            "answer": "6 vans"
+          },
+          "items": [
+            {
+              "kind": "choice",
+              "prompt": "Emma's bills are $627 and $289. Is the total a little more or a little less than $900?",
+              "options": [
+                "a little more than $900",
+                "a little less than $900"
+              ],
+              "answer": 0,
+              "reason": true,
+              "explain": "600 + 300 = 900. 627 was rounded down by more than 289 was rounded up, so the total (916) is a little more."
+            },
+            {
+              "prompt": "A dog walker walks 6 dogs a day for 5 days. She charges $15 for each dog walk. How much does she earn?",
+              "answer": "$450",
+              "answerLabel": "$"
+            },
+            {
+              "prompt": "Leo had $95.50. He bought a book for $18.25 and a hat for $24.40. How much is left?",
+              "answer": "$52.85",
+              "answerLabel": "$"
+            },
+            {
+              "kind": "mistake",
+              "prompt": "Zoe worked out how many cars are needed for 38 people, with 4 in each car. Find her mistake and fix it.",
+              "work": [
+                "38 divided by 4 = 9 remainder 2",
+                "So 9 cars."
+              ],
+              "answer": "10 cars. The 2 people left over need a car too."
+            }
+          ]
+        },
+        {
+          "title": "Missing numbers, rules and number types",
+          "proficiency": "reasoning",
+          "columns": 2,
+          "example": {
+            "prompt": "3 + 2 x 6 = 5 x ?",
+            "steps": [
+              "Times first: 2 x 6 = 12.",
+              "3 + 12 = 15.",
+              "5 x ? = 15, so ? = 3."
+            ],
+            "answer": "3"
+          },
+          "items": [
+            {
+              "prompt": "Find each missing number.",
+              "parts": [
+                {
+                  "prompt": "? x 5 = 90 ÷ 3",
+                  "answer": "6"
+                },
+                {
+                  "prompt": "4 + 3 x 8 = 7 x ?",
+                  "answer": "4"
+                }
+              ]
+            },
+            {
+              "kind": "choice",
+              "prompt": "Which rule makes 4, 9, 14, 19 for terms 1 to 4?",
+              "options": [
+                "term x 5, take away 1",
+                "term + 5",
+                "term x 4"
+              ],
+              "answer": 0,
+              "reason": true,
+              "explain": "Term 1: 1 x 5 - 1 = 4. Term 4: 4 x 5 - 1 = 19. The other rules only fit some terms."
+            },
+            {
+              "kind": "sort",
+              "prompt": "Write each number in its group.",
+              "cards": [
+                "7",
+                "36",
+                "21",
+                "49"
+              ],
+              "groups": [
+                "prime",
+                "square",
+                "composite, not square"
+              ],
+              "answer": {
+                "prime": [
+                  "7"
+                ],
+                "square": [
+                  "36",
+                  "49"
+                ],
+                "composite, not square": [
+                  "21"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "extension",
+      "label": "Extension",
+      "description": "Early finisher option. Number riddles, harder missing numbers and pattern problems, with worked examples.",
+      "title": "Extension: Number Detective",
+      "subtitle": "Use what you know about factors, order and patterns.",
+      "sections": [
+        {
+          "title": "Number riddles",
+          "proficiency": "reasoning",
+          "columns": 2,
+          "intro": "A prime number has exactly 2 factors. A square number is a number times itself, like 7 x 7 = 49.",
+          "example": {
+            "prompt": "I am a square number between 20 and 30. What am I?",
+            "steps": [
+              "List the square numbers: 1, 4, 9, 16, 25, 36.",
+              "Only 25 is between 20 and 30.",
+              "Check: 5 x 5 = 25."
+            ],
+            "answer": "25"
+          },
+          "items": [
+            {
+              "prompt": "I am a square number between 50 and 70. What am I?",
+              "answer": "64",
+              "answerLabel": "Number:"
+            },
+            {
+              "prompt": "I am a prime number between 30 and 40. My digits add to 4. What am I?",
+              "answer": "31",
+              "answerLabel": "Number:"
+            },
+            {
+              "prompt": "List every prime number between 40 and 50.",
+              "answer": "41, 43, 47",
+              "lines": 1
+            },
+            {
+              "kind": "choice",
+              "prompt": "Which number has the most factors?",
+              "options": [
+                "16",
+                "18",
+                "19"
+              ],
+              "answer": 1,
+              "reason": true,
+              "explain": "18 has 6 factors (1, 2, 3, 6, 9, 18). 16 has 5. 19 is prime, so it has 2."
+            }
+          ]
+        },
+        {
+          "title": "Missing number challenges",
+          "proficiency": "reasoning",
+          "columns": 2,
+          "intro": "Times and divide come before plus and take away. Then both sides of the equals sign must be worth the same.",
+          "example": {
+            "prompt": "12 + 3 x 4 = 6 x ?",
+            "steps": [
+              "Times first: 3 x 4 = 12.",
+              "12 + 12 = 24.",
+              "6 x ? = 24, so ? = 4."
+            ],
+            "answer": "4"
+          },
+          "items": [
+            {
+              "prompt": "5 x 6 - 4 = 2 x ? + 8",
+              "answer": "9",
+              "answerLabel": "? ="
+            },
+            {
+              "prompt": "48 ÷ 4 + 3 = ? x 5",
+              "answer": "3",
+              "answerLabel": "? ="
+            },
+            {
+              "kind": "open",
+              "prompt": "Use 2, 3 and 4 once each, with + and x, to write a number sentence that equals 14. Then find one that equals 10.",
+              "answer": "14: 3 x 4 + 2 (or 2 + 3 x 4). 10: 2 x 3 + 4 (or 4 + 2 x 3)."
+            }
+          ]
+        },
+        {
+          "title": "Pattern problems",
+          "proficiency": "problemSolving",
+          "columns": 2,
+          "intro": "A rule that uses the term number lets you jump straight to any term, like term 20.",
+          "example": {
+            "prompt": "Term 1 is 7, term 2 is 12, term 3 is 17. What is term 20?",
+            "steps": [
+              "The jump is 5, so start with term x 5.",
+              "Term 1: 1 x 5 = 5. Add 2 to make 7.",
+              "Rule: term x 5 + 2. Term 20: 20 x 5 + 2 = 102."
+            ],
+            "answer": "102"
+          },
+          "items": [
+            {
+              "prompt": "1 table seats 6 people, 2 tables in a row seat 8, 3 tables seat 10. How many people can 15 tables seat?",
+              "answer": "34 (rule: tables x 2 + 4)",
+              "answerLabel": "People:"
+            },
+            {
+              "prompt": "Using the same tables, how many tables are needed for 50 people?",
+              "answer": "23 tables (23 x 2 + 4 = 50)",
+              "answerLabel": "Tables:"
+            },
+            {
+              "prompt": "Mia starts with $12 and saves $5 every week. After how many weeks will she first have more than $60?",
+              "answer": "10 weeks: 12 + 10 x 5 = $62. After 9 weeks she has only $57.",
+              "lines": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "worksheet",
+      "role": "supported",
+      "label": "Supported Worksheet",
+      "answerKey": false,
+      "description": "For students who need more guidance: smaller numbers, the first step done and a hint on every question.",
+      "title": "Number and Algebra: Step by Step",
+      "subtitle": "Take it one step at a time.",
+      "sections": [
+        {
+          "title": "Order decimals",
+          "proficiency": "understanding",
+          "columns": 2,
+          "example": {
+            "prompt": "Order from smallest to largest: 0.5, 0.05, 0.55",
+            "steps": [
+              "Add zeros so they match: 0.50, 0.05, 0.55.",
+              "Now compare: 5, 50 and 55 hundredths.",
+              "Smallest first: 0.05, 0.5, 0.55."
+            ],
+            "answer": "0.05, 0.5, 0.55"
+          },
+          "items": [
+            {
+              "prompt": "Order from smallest to largest: 0.7, 0.07, 0.77",
+              "hint": "Add a zero: 0.70, 0.07, 0.77.",
+              "answer": "0.07, 0.7, 0.77",
+              "lines": 1
+            },
+            {
+              "prompt": "Order from smallest to largest: 1.2, 0.12, 1.02",
+              "hint": "Look at the ones first. Two of them start with 1.",
+              "answer": "0.12, 1.02, 1.2",
+              "lines": 1
+            }
+          ]
+        },
+        {
+          "title": "Factors and multiples",
+          "proficiency": "understanding",
+          "columns": 2,
+          "example": {
+            "prompt": "2 x 6 and 3 x 4 make the same number. What is it?",
+            "steps": [
+              "2 x 6 = 12.",
+              "Check: 3 x 4 = 12 too."
+            ],
+            "answer": "12"
+          },
+          "items": [
+            {
+              "prompt": "3 x 6 and 2 x 9 make the same number. What is it?",
+              "hint": "Work out 3 x 6.",
+              "answer": "18",
+              "answerLabel": "Number:",
+              "working": "none"
+            },
+            {
+              "kind": "choice",
+              "prompt": "Circle the multiple of 4.",
+              "hint": "Count in 4s: 4, 8, 12, 16, 20, 24, 28, 32.",
+              "options": [
+                "14",
+                "24",
+                "30"
+              ],
+              "answer": 1
+            }
+          ]
+        },
+        {
+          "title": "Times and share",
+          "proficiency": "fluency",
+          "columns": 2,
+          "example": {
+            "prompt": "Solve 123 x 3.",
+            "visual": {
+              "type": "columnSum",
+              "numbers": [
+                123,
+                3
+              ],
+              "op": "×"
+            },
+            "steps": [
+              "3 x 3 = 9.",
+              "2 x 3 = 6.",
+              "1 x 3 = 3. So 369."
+            ],
+            "answer": "369"
+          },
+          "items": [
+            {
+              "prompt": "Solve 214 x 3.",
+              "visual": {
+                "type": "columnSum",
+                "numbers": [
+                  214,
+                  3
+                ],
+                "op": "×"
+              },
+              "hint": "Start with 4 x 3 in the ones.",
+              "answer": "642"
+            },
+            {
+              "prompt": "A boat holds 5 people. 23 people want a ride. How many boats?",
+              "hint": "23 divided by 5 is 4, with 3 left over. The 3 need a boat too.",
+              "answer": "5 boats",
+              "answerLabel": "Boats:"
+            }
+          ]
+        },
+        {
+          "title": "Missing numbers and patterns",
+          "proficiency": "reasoning",
+          "columns": 2,
+          "example": {
+            "prompt": "4 x ? = 20",
+            "steps": [
+              "Count in 4s to 20: 4, 8, 12, 16, 20.",
+              "That is 5 jumps.",
+              "So ? = 5."
+            ],
+            "answer": "5"
+          },
+          "items": [
+            {
+              "prompt": "2 x ? = 12",
+              "hint": "Count in 2s to 12.",
+              "answer": "6",
+              "answerLabel": "? =",
+              "working": "none"
+            },
+            {
+              "prompt": "3 + 2 x 4 = ?",
+              "hint": "Do 2 x 4 first, then add 3.",
+              "answer": "11",
+              "answerLabel": "? ="
+            },
+            {
+              "prompt": "2, 5, 8, 11. Finish the rule: start at 2 and add ___ each time. What comes next?",
+              "hint": "Find the jump from 2 to 5.",
+              "answer": "add 3. Next: 14",
+              "lines": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "kind": "title",
+      "notes": "Session 6 this week: test revision part 1 of 2, number and algebra, ready for tomorrow's maths test."
+    },
+    {
+      "kind": "overview",
+      "title": "Test revision: how these two sessions work",
+      "lines": [
+        "Two revision sessions before tomorrow's General Maths tests (Grade 5 and Grade 6).",
+        "Session 6, 30 minutes: number and algebra, 14 question types.",
+        "Session 7, 60 minutes: fractions, measurement, space, data and chance, 40 question types.",
+        "Every question slide is a twin of a test question: same format and skill, new numbers.",
+        "Short on time? Slides marked OPTIONAL in their notes can be skipped.",
+        "Anchor for both sessions: Read it. Work it. Check it."
+      ],
+      "notes": "For you, not the class: twins keep the test honest while every question type gets rehearsed. Skip this slide when teaching."
+    },
+    {
+      "kind": "resources",
+      "notes": "Before you start: boards and markers for everyone, scrap paper, and print the Revision Worksheet for all, plus a few Extension and Supported copies."
+    },
+    {
+      "kind": "li",
+      "learningIntention": "We are learning to show what we know about number and algebra, ready for the test.",
+      "successCriteria": [
+        "I can order decimals and find factors and multiples.",
+        "I can choose the right operation for a word problem and check it makes sense.",
+        "I can find a missing number or a pattern rule and explain how I know."
+      ],
+      "notes": {
+        "beats": [
+          [
+            "POINT to the learning intention.",
+            "SAY: Tomorrow's test covers the whole year,",
+            "so today we'll practise every kind of number question on it."
+          ],
+          [
+            "SAY: Let's read our I can statements together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "SAY: Every question today is a practice twin of a test question,",
+            "with different numbers, so you'll know exactly what to do."
+          ]
+        ],
+        "prep": "SC1 number facts are reachable for all; SC2 word problems is the core and the exit evidence; SC3 missing numbers and rules is the stretch.",
+        "tag": "[LI/SC | Planning made visible | HITS 1]"
+      }
+    },
+    {
+      "kind": "launch",
+      "title": "Read it. Work it. Check it.",
+      "visual": {
+        "type": "placemat",
+        "banner": "Tomorrow's test: show what you know",
+        "panels": [
+          {
+            "heading": "Read it",
+            "icon": "read",
+            "lines": [
+              "Read every word",
+              "What is it really asking?"
+            ]
+          },
+          {
+            "heading": "Work it",
+            "icon": "pencil",
+            "lines": [
+              "Write your working",
+              "Draw it if it helps"
+            ]
+          },
+          {
+            "heading": "Check it",
+            "icon": "tick",
+            "lines": [
+              "Does it make sense?",
+              "Estimate first"
+            ]
+          }
+        ],
+        "strips": [
+          {
+            "label": "Today",
+            "items": [
+              "decimals",
+              "factors",
+              "multiples",
+              "x and ÷",
+              "money",
+              "missing numbers",
+              "patterns"
+            ]
+          }
+        ]
+      },
+      "notes": {
+        "answer": "open - each student names one topic",
+        "beats": [
+          [
+            "POINT to the three steps.",
+            "SAY: For every question today and tomorrow, we'll do three things.",
+            "Read it, work it, check it."
+          ],
+          [
+            "POINT to the Today strip.",
+            "SAY: These are the number topics on the test.",
+            "Some will feel easy and some won't, and that's fine."
+          ],
+          [
+            "ASK: Which topic do you feel least sure about? Write just that word.",
+            "10 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: one topic word"
+          ],
+          [
+            "SCAN boards and tally the topics.",
+            "80%+ -> topics spread out: keep the pace, skip the two OPTIONAL slides.",
+            "Less -> most chose one topic: slow down on that slide, re-ask at its end."
+          ]
+        ],
+        "prep": "Finds the weak spots and sets the anchor. 60 to 90 seconds. Optional if short of time: factor pairs, and the add-6 rule.",
+        "tag": "[Launch | Retention and recall | HITS 9]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Order from smallest to largest",
+      "visual": {
+        "type": "chips",
+        "items": [
+          "2.05",
+          "0.25",
+          "0.205",
+          "2.5",
+          "0.025"
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "0.025",
+          "0.205",
+          "0.25",
+          "2.05",
+          "2.5"
+        ]
+      },
+      "notes": {
+        "answer": "0.025, 0.205, 0.25, 2.05, 2.5",
+        "beats": [
+          [
+            "SAY: Let's start with decimals.",
+            "Read it: smallest first. Then compare the ones, then the tenths."
+          ],
+          [
+            "ASK: Can you write these five decimals in order, smallest to largest?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 0.025, 0.205, 0.25, 2.05, 2.5"
+          ],
+          [
+            "SCAN boards for where 0.205 and 0.25 sit.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> stack them with the points lined up, fill gaps with zeros, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 0.250 is bigger than 0.205, even though 0.205 looks longer.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "putting 0.205 after 0.25 because it has more digits.",
+          "Fix: add a zero to make 0.250, and they compare again."
+        ],
+        "stretch": "Write a decimal that fits between 0.205 and 0.25.",
+        "help": "Write each decimal in a place value chart, points lined up.",
+        "prep": "Twin of Grade 5 Q1: same skill and format, new numbers. Allow about 75 seconds per question slide.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Factor pairs of one number",
+      "visual": {
+        "type": "chips",
+        "items": [
+          "3 and 10",
+          "1 and 30",
+          "5 and 6",
+          "2 and 15"
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "30"
+        ]
+      },
+      "notes": {
+        "answer": "30",
+        "beats": [
+          [
+            "SAY: Every pair here multiplies to make the same number."
+          ],
+          [
+            "ASK: What number do all these factor pairs make?",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 30"
+          ],
+          [
+            "SCAN boards for 30.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> draw a 5 by 6 array of dots, count them together, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: It's 30. Check it with another pair: 3 times 10 is 30 too.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "writing 13 or 11, the sum of one pair.",
+          "Fix: say the pair as a times fact, and they rewrite it."
+        ],
+        "stretch": "Is any factor pair of 30 missing? Prove you have them all.",
+        "help": "Pick one pair and draw it as rows of dots.",
+        "prep": "OPTIONAL: skip if the launch shows factors are secure. Twin of Grade 5 Q2.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Which three are multiples of 4?",
+      "visual": {
+        "type": "chips",
+        "items": [
+          "118",
+          "72",
+          "340",
+          "914",
+          "99",
+          "132"
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "72",
+          "340",
+          "132"
+        ]
+      },
+      "notes": {
+        "answer": "72, 340 and 132",
+        "beats": [
+          [
+            "SAY: Here's a quick test for 4.",
+            "Look at the last two digits. If they divide by 4, the whole number does."
+          ],
+          [
+            "ASK: Which three numbers are multiples of 4?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 72, 340, 132"
+          ],
+          [
+            "SCAN boards for 118 or 914.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> test 18, 14 and 32 by counting in fours on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 72, 40 and 32 all divide by 4, but 18 and 14 don't.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing every even number.",
+          "Fix: even only means it divides by 2, so they test the last two digits."
+        ],
+        "stretch": "Why does checking only the last two digits work?",
+        "help": "A list of the multiples of 4 up to 100 to check against.",
+        "prep": "Twin of Grade 5 Q3: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Use each word once: prime, square, composite",
+      "visual": {
+        "type": "chips",
+        "items": [
+          "16",
+          "15",
+          "13"
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "16 square",
+          "15 composite",
+          "13 prime"
+        ]
+      },
+      "notes": {
+        "answer": "16 square, 15 composite, 13 prime",
+        "beats": [
+          [
+            "SAY: A prime has exactly two factors.",
+            "A square is a number times itself. Composite has more than two factors."
+          ],
+          [
+            "ASK: Can you match each number to one word, using each word once?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 16 square, 15 composite, 13 prime"
+          ],
+          [
+            "SCAN boards for 16 and 15.",
+            "80%+ -> reveal, cold call one board: Why isn't 16 the composite one?",
+            "Less -> list the factors of each number on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 16 is 4 times 4, so it's the square. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "calling 15 prime because it is odd.",
+          "Fix: 3 times 5 is 15, so it has more factors. They rewrite it."
+        ],
+        "stretch": "Why is 16 also composite?",
+        "help": "Make each number as an array with counters.",
+        "prep": "Twin of Grade 6 Q3: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Find A, B, C and D",
+      "visual": {
+        "type": "factorTree",
+        "tree": {
+          "value": "80",
+          "children": [
+            {
+              "value": "A",
+              "children": [
+                {
+                  "value": "B"
+                },
+                {
+                  "value": "2"
+                }
+              ]
+            },
+            {
+              "value": "8",
+              "children": [
+                {
+                  "value": "4",
+                  "children": [
+                    {
+                      "value": "D"
+                    },
+                    {
+                      "value": "2"
+                    }
+                  ]
+                },
+                {
+                  "value": "C"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "reveal": {
+        "answers": [
+          "A = 10",
+          "B = 5",
+          "C = 2",
+          "D = 2"
+        ]
+      },
+      "notes": {
+        "answer": "A = 10, B = 5, C = 2, D = 2",
+        "beats": [
+          [
+            "SAY: In a factor tree, each pair multiplies to make the number above it."
+          ],
+          [
+            "ASK: What are A, B, C and D?",
+            "40 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: A 10, B 5, C 2, D 2"
+          ],
+          [
+            "SCAN boards for A first.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> ask what times 8 makes 80, write the fact beside the branch, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 10 times 8 is 80, and 5 times 2 is 10.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "finding A by taking away: 80 take away 8 is 72.",
+          "Fix: say the branch as a times fact, and they redo A."
+        ],
+        "stretch": "Keep splitting until every bottom number is prime.",
+        "help": "Write what times 8 is 80 beside each branch first.",
+        "prep": "Twin of Grade 5 Q12: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC1 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Solve with the written method",
+      "visual": {
+        "type": "columnSum",
+        "numbers": [
+          467,
+          6
+        ],
+        "op": "×"
+      },
+      "reveal": {
+        "answers": [
+          "2802"
+        ]
+      },
+      "notes": {
+        "answer": "2802",
+        "beats": [
+          [
+            "SAY: Now some calculating.",
+            "Start with the ones, and carry into the next column."
+          ],
+          [
+            "ASK: What is 467 times 6?",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 2802"
+          ],
+          [
+            "SCAN boards for the carried digits.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> split it: 400 x 6, 60 x 6, 7 x 6, then add. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: It's 2802. Check it: 500 times 6 is 3000,",
+            "so a bit under 3000 makes sense. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "forgetting to add the carried digit.",
+          "Fix: circle each carry, and they redo that column."
+        ],
+        "stretch": "Explain why 2802 is a bit less than 3000 without working it out again.",
+        "help": "Partition 467 into 400, 60 and 7 and multiply each part.",
+        "prep": "Twin of Grade 5 Q7: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "We Do",
+      "title": "Which is the best estimate?",
+      "prompt": "Sam's bills: phone $468, internet $389. Best estimate of the total?",
+      "options": [
+        {
+          "text": "exactly $900",
+          "misconception": "thinks rounding gives the exact answer"
+        },
+        {
+          "text": "a little less than $900"
+        },
+        {
+          "text": "a little more than $900",
+          "misconception": "does not notice both bills were rounded up"
+        },
+        {
+          "text": "close to $1200",
+          "misconception": "adds the hundreds wrongly"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - a little less than 900 dollars (exact total 857)",
+        "beats": [
+          [
+            "SAY: An estimate gets you close. Then decide: a bit more, or a bit less?"
+          ],
+          [
+            "ASK: Which is the best estimate for the total of both bills? Write the letter.",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN boards for C.",
+            "80%+ -> reveal, cold call one B: How do you know it's less?",
+            "Less -> round both on the board: 500 and 400, both rounded up. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Both bills were rounded up to make 900,",
+            "so the real total is a little less. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "choosing exactly 900.",
+          "Fix: ask if 468 is exactly 500, and they choose again."
+        ],
+        "stretch": "Find the exact total. Was your estimate right?",
+        "help": "Round each bill on a number line.",
+        "prep": "Twin of Grade 5 Q9: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "How much does the coach earn?",
+      "visual": {
+        "type": "text",
+        "text": "A swim coach teaches 8 kids a day for 5 days. Each kid pays $20 a day."
+      },
+      "reveal": {
+        "answers": [
+          "$800"
+        ]
+      },
+      "notes": {
+        "answer": "800 dollars",
+        "beats": [
+          [
+            "SAY: Read it first.",
+            "There are three numbers here, and we need all of them."
+          ],
+          [
+            "ASK: How much money does the coach earn in total?",
+            "40 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 800 dollars"
+          ],
+          [
+            "SCAN boards for 160 or 100.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> work it in two steps on the board: kids first, then dollars. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 8 times 5 is 40 kid visits, and 40 times 20 is 800 dollars.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "multiplying only two of the numbers.",
+          "Fix: underline all three numbers, and they use each one."
+        ],
+        "stretch": "What if each kid paid 25 dollars? Find the new total.",
+        "help": "A table: Day 1 to Day 5, kids each day, dollars each day.",
+        "prep": "Twin of Grade 5 Q10: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "How many boats are needed?",
+      "visual": {
+        "type": "text",
+        "text": "203 rowers are going out on the lake. Each boat holds 8 rowers."
+      },
+      "reveal": {
+        "answers": [
+          "26 boats",
+          "25 r 3, so one more boat"
+        ]
+      },
+      "notes": {
+        "answer": "26 boats",
+        "beats": [
+          [
+            "SAY: Read it: every rower needs a seat.",
+            "That's going to matter for the remainder."
+          ],
+          [
+            "ASK: How many boats are needed so every rower gets a seat?",
+            "40 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 26"
+          ],
+          [
+            "SCAN boards for 25.",
+            "80%+ -> reveal, cold call one 26: What happened to the leftover rowers?",
+            "Less -> draw 25 boats of 8 and 3 rowers left on the shore, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 203 divided by 8 is 25 remainder 3.",
+            "Those 3 rowers still need a boat, so it's 26. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "writing 25, or 25 remainder 3.",
+          "Fix: ask where the last 3 rowers sit, and they rewrite it."
+        ],
+        "stretch": "How many more rowers could fit in the last boat?",
+        "help": "Count up in eights: 80, 160, 200, then the 3 left over.",
+        "prep": "Twin of Grade 5 Q8: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "How much money is left?",
+      "visual": {
+        "type": "text",
+        "text": "Ava had $184.60 in her account. She spent $35.25 and $42.10."
+      },
+      "reveal": {
+        "answers": [
+          "$107.25"
+        ]
+      },
+      "notes": {
+        "answer": "107 dollars and 25 cents",
+        "beats": [
+          [
+            "SAY: Two things were bought, so we take away both of them."
+          ],
+          [
+            "ASK: How much money is left in Ava's account?",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 107.25"
+          ],
+          [
+            "SCAN boards for the decimal points lined up.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> add the two buys first, 77.35, then take it away in columns. Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: She spent 77 dollars 35 altogether,",
+            "and 184.60 take away 77.35 leaves 107.25. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "taking away only one of the purchases.",
+          "Fix: tick each amount as it is used, and they finish the subtraction."
+        ],
+        "stretch": "Can Ava buy a 9 dollar snack and keep 100 dollars?",
+        "help": "Line up the decimal points in a place value grid first.",
+        "prep": "Twin of Grade 6 Q7: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC2 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "workedExample",
+      "stage": 2,
+      "title": "Times before plus, then balance",
+      "steps": [
+        "Work out the side you can.",
+        "Times first: 2 x 8 = 16.",
+        "Then add: 4 + 16 = 20.",
+        "Both sides are equal: 5 x ? = 20."
+      ],
+      "visual": {
+        "type": "text",
+        "text": "4 + 2 × 8 = 5 × ?"
+      },
+      "reveal": {
+        "answers": [
+          "? = 4"
+        ]
+      },
+      "notes": {
+        "answer": "4",
+        "beats": [
+          [
+            "MODEL the left side first.",
+            "SAY: Watch how I start with the side I can work out."
+          ],
+          [
+            "POINT to 2 x 8.",
+            "SAY: There's a times and a plus, so times comes first.",
+            "2 times 8 is 16, then 4 plus 16 is 20."
+          ],
+          [
+            "POINT to the equals sign.",
+            "SAY: Equals means both sides are worth the same.",
+            "So 5 times something must make 20."
+          ],
+          [
+            "ASK: So what is the missing number?",
+            "10 sec. Cue: Everyone, together, on three... one, two, three.",
+            "EXPECT: 4"
+          ],
+          [
+            "REVEAL after the choral answer.",
+            "SAY: It's 4, because 5 times 4 is 20."
+          ]
+        ],
+        "trap": [
+          "working left to right: 4 plus 2 is 6, times 8 is 48.",
+          "Fix: circle the times first, and they redo it."
+        ],
+        "stretch": "Change one number so the answer is 6.",
+        "help": "Cover the right side and work out the left first.",
+        "prep": "The one idea behind two test questions (Grade 5 Q11, Grade 6 Q10): times before plus, then balance both sides. SC3.",
+        "tag": "[I Do | Explicit teaching | SC3 | HITS 3, 4]"
+      }
+    },
+    {
+      "kind": "choice",
+      "badge": "CFU",
+      "title": "What is 6 + 3 × 5?",
+      "prompt": "Write the letter of the answer.",
+      "options": [
+        {
+          "text": "45",
+          "misconception": "works left to right: 6 + 3 = 9, then times 5"
+        },
+        {
+          "text": "21"
+        },
+        {
+          "text": "14",
+          "misconception": "adds all three numbers"
+        }
+      ],
+      "answer": 1,
+      "notes": {
+        "answer": "B - 21. 3 x 5 = 15, then 6 + 15 = 21",
+        "beats": [
+          [
+            "SAY: This one is just for you, so no talking."
+          ],
+          [
+            "ASK: What is 6 plus 3 times 5? Write the letter.",
+            "15 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: B"
+          ],
+          [
+            "SCAN every board, back row first.",
+            "80%+ -> reveal, cold call one B: Why not 45?",
+            "Less -> build 3 groups of 5 counters plus 6 more, count them all, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: It's 21. Times first: 3 times 5 is 15, and 6 more is 21.",
+            "Anyone on A starts Your turn on the Supported Worksheet."
+          ]
+        ],
+        "trap": [
+          "writing A, 45.",
+          "Fix: circle 3 x 5 first, and they work it out again."
+        ],
+        "prep": "Hinge: under 80% means the counters model before the next two slides.",
+        "tag": "[CFU hinge | Supported application | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "What is the missing number?",
+      "visual": {
+        "type": "text",
+        "text": "4 × ? = 72 ÷ 3"
+      },
+      "reveal": {
+        "answers": [
+          "6"
+        ]
+      },
+      "notes": {
+        "answer": "6",
+        "beats": [
+          [
+            "SAY: Same idea as before: work out the side you can first."
+          ],
+          [
+            "ASK: What is the missing number?",
+            "30 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 6"
+          ],
+          [
+            "SCAN boards for 24.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> write 24 under the right side, ask: 4 times what is 24? Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 72 divided by 3 is 24, and 4 times 6 is 24.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "writing 24, the value of the right side.",
+          "Fix: ask what makes 4 times it equal 24, and they rewrite it."
+        ],
+        "stretch": "Write your own like this one with a missing number of 9.",
+        "help": "Cover the left side and work out 72 divided by 3 first.",
+        "prep": "Twin of Grade 5 Q11: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "What is the missing number?",
+      "visual": {
+        "type": "text",
+        "text": "2 + 5 × 7 = 5 × ? + 2"
+      },
+      "reveal": {
+        "answers": [
+          "7"
+        ]
+      },
+      "notes": {
+        "answer": "7",
+        "beats": [
+          [
+            "SAY: More steps now: left side first, then balance."
+          ],
+          [
+            "ASK: What is the missing number?",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 7"
+          ],
+          [
+            "SCAN boards for 49 in the working.",
+            "80%+ -> reveal, cold call one board: How did you check it?",
+            "Less -> write 37 on both sides, take off the 2s:",
+            "5 times what is 35? Re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: The left side is 2 plus 35, which is 37.",
+            "And 5 times 7 plus 2 is 37 too. Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "working left to right: 2 plus 5 is 7, times 7 is 49.",
+          "Fix: circle 5 x 7 first, and they redo the left side."
+        ],
+        "stretch": "Make one like this with an answer of 9.",
+        "help": "Work out the left side on paper, then try numbers in the box.",
+        "prep": "Twin of Grade 6 Q10: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "What is the rule?",
+      "visual": {
+        "type": "chips",
+        "items": [
+          "5",
+          "11",
+          "17",
+          "23",
+          "29"
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "Start at 5 and add 6 each time"
+        ]
+      },
+      "notes": {
+        "answer": "start at 5 and add 6 each time",
+        "beats": [
+          [
+            "SAY: Now patterns. Look at the jump from one number to the next."
+          ],
+          [
+            "ASK: Can you finish this rule: start at 5 and do what each time?",
+            "20 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: add 6"
+          ],
+          [
+            "SCAN boards for add 6.",
+            "80%+ -> reveal, then the next one.",
+            "Less -> draw the jumps between each pair on the board, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: Each number is 6 more than the one before.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "writing add 5, the first number.",
+          "Fix: find the gap between two numbers, and they rewrite the rule."
+        ],
+        "stretch": "What would the 10th number be? How do you know?",
+        "help": "Write the difference under each jump.",
+        "prep": "OPTIONAL: skip if the launch shows patterns are secure. Twin of Grade 6 Q12.",
+        "tag": "[We Do | Supported application | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "heroVisual",
+      "badge": "We Do",
+      "title": "Find the rule and the 5th term",
+      "visual": {
+        "type": "table",
+        "rows": [
+          [
+            "Term",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          [
+            "Matchsticks",
+            "6",
+            "10",
+            "14",
+            "18",
+            "?"
+          ]
+        ]
+      },
+      "reveal": {
+        "answers": [
+          "Multiply the term by 4, add 2",
+          "22"
+        ]
+      },
+      "notes": {
+        "answer": "multiply the term by 4 and add 2. The 5th term is 22",
+        "beats": [
+          [
+            "SAY: A rule must work for every term."
+          ],
+          [
+            "ASK: What rule uses the term number, and what is the 5th term?",
+            "45 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: times 4, add 2. 22"
+          ],
+          [
+            "SCAN boards for add 4.",
+            "80%+ -> reveal, cold call: Test your rule on term 3.",
+            "Less -> the jump is 4, so times 4. Compare 4 with 6, re-ask."
+          ],
+          [
+            "REVEAL after boards are scanned.",
+            "SAY: 1 times 4 plus 2 is 6, and 5 times 4 plus 2 is 22.",
+            "Tick it or fix it."
+          ]
+        ],
+        "trap": [
+          "a rule that only fits term 1, like times 6.",
+          "Fix: they test it on term 2 and change it."
+        ],
+        "stretch": "How many matchsticks for term 20?",
+        "help": "Add a times 4 row under the table and compare.",
+        "prep": "Twin of Grade 6 Q11: same skill and format, new numbers.",
+        "tag": "[We Do | Supported application | SC3 | HITS 7, 8]"
+      }
+    },
+    {
+      "kind": "youDo",
+      "title": "Your turn",
+      "task": "Do the revision sheet: the trickiest question types again. Read it, work it, check it.",
+      "where": "On your worksheet",
+      "notes": {
+        "beats": [
+          [
+            "POINT to the steps.",
+            "SAY: Read each question carefully, solve it carefully, then check your answers."
+          ],
+          [
+            "SAY: If you finish, the Extension is your early finisher option.",
+            "Let's read the steps together. Cue: Everyone, together, on three... one, two, three."
+          ],
+          "CIRCULATE. Start with the students who chose missing numbers on the launch.",
+          "TIME: 6 minutes. Do Q3, Q4, Q6 and Q7 first. The rest goes home."
+        ],
+        "trap": [
+          "skipping the reading and calculating the first numbers they see.",
+          "Fix: they underline what the question asks, then redo it."
+        ],
+        "stretch": "Extension: number riddles, harder missing numbers and pattern problems, with worked examples.",
+        "help": "Supported Worksheet: smaller numbers, the first step done and a hint on every question.",
+        "prep": "Independent practice of every number and algebra question type, with new numbers. The sheet is evidence for SC1 to SC3.",
+        "tag": "[You Do | Mastery and application | SC2 | HITS 3, 8]"
+      }
+    },
+    {
+      "kind": "exitTicket",
+      "title": "Show what you know",
+      "questions": [
+        "290 students are going on an excursion. Each bus holds 45 students. How many buses are needed?"
+      ],
+      "notes": {
+        "answer": "7 buses. 290 divided by 45 is 6 remainder 20",
+        "beats": [
+          [
+            "SAY: Last one, and it's just for you.",
+            "Read it, work it, check it."
+          ],
+          [
+            "ASK: How many buses are needed so every student gets a seat?",
+            "60 sec. Cue: Write it... Chin it... Show me.",
+            "EXPECT: 7"
+          ],
+          [
+            "RECORD who writes 6, or 6 remainder 20.",
+            "They get two minutes with you during Session 7's Your turn."
+          ]
+        ],
+        "trap": [
+          "writing 6.",
+          "Fix: none now. Record the name for Session 7's Your turn."
+        ],
+        "prep": "Exit evidence for SC2: choose the operation, then decide what the remainder means.",
+        "tag": "[Exit Ticket | Assessment | SC2 | HITS 8]"
+      }
+    },
+    {
+      "kind": "closing",
+      "reflectionPrompt": "Tell your partner which question type you'll check twice tomorrow.",
+      "selfAssessment": "Thumbs up, sideways or down",
+      "notes": {
+        "answer": "open - listen for a named question type and why",
+        "beats": [
+          [
+            "SAY: Let's read our I can statements together.",
+            "Cue: Everyone, together, on three... one, two, three."
+          ],
+          [
+            "ASK: How ready do you feel for the number questions tomorrow?",
+            "5 sec. Cue: Thumbs only, voices off. Show me... now.",
+            "EXPECT: thumbs up, sideways or down"
+          ],
+          [
+            "RECORD each thumb down beside the exit boards.",
+            "A thumb up with 6 buses on the board matters most."
+          ],
+          [
+            "ASK: Tell your partner which question type you'll check twice tomorrow.",
+            "20 sec. Cue: Partner A first. You have 20 seconds. Go.",
+            "EXPECT: a named question type, like remainders"
+          ]
+        ],
+        "prep": "Read the thumbs beside the exit evidence. The remainder group gets two minutes during Session 7's Your turn.",
+        "tag": "[Closing | Retention and recall | SC2 | HITS 9]"
+      }
+    }
+  ]
+}
