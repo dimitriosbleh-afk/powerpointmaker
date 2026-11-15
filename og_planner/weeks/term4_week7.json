@@ -1,0 +1,1482 @@
+{
+ "term": 4,
+ "week": 7,
+ "og_version": "1.9",
+ "cohort": "Enrichment",
+ "unit_folder": "OG_Term4_Week7",
+ "days": [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday"
+ ],
+ "taught_morphemes": [
+  "mini-",
+  "super-",
+  "over-",
+  "anti-",
+  "ultra-",
+  "retro-",
+  "em-",
+  "syn-",
+  "sym-/sys-/syl-",
+  "-let",
+  "-ling",
+  "-cian",
+  "-cial/-tial",
+  "-ancy/-ance",
+  "-ency/-ence",
+  "-ity",
+  "-tude",
+  "out-",
+  "self-",
+  "post-",
+  "with-",
+  "counter-",
+  "contra-",
+  "omni-",
+  "intra-",
+  "-eer",
+  "-ant",
+  "-ar",
+  "-ine",
+  "-cy",
+  "-ciate/-tiate",
+  "ped/pod",
+  "rect/reg",
+  "capt/capit",
+  "flect/flex",
+  "ord/ordin",
+  "clud(e)/clus(e)",
+  "mal-",
+  "-ery",
+  "-ice",
+  "-ive",
+  "-ite",
+  "-acy",
+  "-ule",
+  "mega-",
+  "micro",
+  "pict/picto",
+  "vore",
+  "eco",
+  "carn/carni",
+  "junct/join/joint",
+  "vict/vinc",
+  "chron",
+  "mand/mend",
+  "jur/jud/just",
+  "pend/pens",
+  "pon/pound",
+  "caus-/cus(e)",
+  "hyper",
+  "omni-",
+  "astro",
+  "terr",
+  "port",
+  "ject",
+  "struct",
+  "tract"
+ ],
+ "overview": {
+  "Monday": {
+   "morphology": [
+    "New Morphology",
+    "rupt"
+   ],
+   "grammar": "Not today",
+   "learned_words": "Not today"
+  },
+  "Tuesday": {
+   "morphology": [
+    "Spell and dictate",
+    "rupt"
+   ],
+   "grammar": "Not today",
+   "learned_words": [
+    "New learned word",
+    "brochure"
+   ]
+  },
+  "Wednesday": {
+   "morphology": [
+    "Build and break",
+    "rupt"
+   ],
+   "grammar": "Not today",
+   "learned_words": "Not today"
+  },
+  "Thursday": {
+   "morphology": "Noun, verb or adjective",
+   "grammar": "Compound sentences: chop at the join",
+   "learned_words": [
+    "New learned word",
+    "liaison"
+   ]
+  },
+  "Friday": {
+   "morphology": [
+    "Friday Review",
+    "rupt"
+   ],
+   "grammar": "Friday Review: simple and compound",
+   "learned_words": [
+    "Friday Review",
+    "brochure, liaison"
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "day": "Monday",
+   "type": "teach",
+   "morphology_review": [
+    {
+     "morph": "struct",
+     "type": "root",
+     "keyword": "construct",
+     "meaning": "build"
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land"
+    },
+    {
+     "morph": "tract",
+     "type": "root",
+     "keyword": "detract",
+     "meaning": "drag, pull",
+     "extra_task": {
+      "prompt": "What is one word built from tract, meaning pull?",
+      "answers": [
+       "tractor",
+       "subtract",
+       "extract"
+      ]
+     }
+    },
+    {
+     "morph": "port",
+     "type": "root",
+     "keyword": "export",
+     "meaning": "bring, carry",
+     "extra_task": {
+      "prompt": "What is one word built from port, meaning carry?",
+      "answers": [
+       "transport",
+       "export",
+       "portable"
+      ]
+     }
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "ject",
+     "type": "root",
+     "keyword": "abject",
+     "meaning": "throw"
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star",
+     "extra_task": {
+      "prompt": "What is one word built from astro, meaning star?",
+      "answers": [
+       "astronaut",
+       "astronomer"
+      ]
+     }
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "pon/pound",
+     "type": "root",
+     "keyword": "ponder",
+     "meaning": "place, part"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "tractor",
+     "restructure",
+     "projector",
+     "supporting",
+     "attraction",
+     "instructed",
+     "astronaut",
+     "rejecting",
+     "extracted",
+     "destruction",
+     "reporting",
+     "retracting",
+     "interject",
+     "constructive",
+     "subtraction"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"Rows 1 to 3 again, like a sports commentator: fast, clear and excited.\"\n3. ASK: \"Finish my sentence. My wobbly tooth hurt so much that the dentist ...\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: extracted it.\n4. ASK: \"Odd one out: supporting, retracting, reporting. Which one does not belong?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: retracting.\nIf time: \"Why?\" Turn and tell. EXPECT: retracting has tract, pull - the others have port, carry.\n5. ASK: \"Which word names a person who travels toward the stars?\"\n5 sec. Then: \"Everyone, together, on three.\"\nEXPECT: astronaut."
+   },
+   "new_morphology": {
+    "morph": "rupt",
+    "type": "root",
+    "keyword": "abrupt",
+    "meaning": "break"
+   },
+   "memory_hook": {
+    "text": "A volcano erupts - it breaks open!",
+    "picture": "mountains"
+   },
+   "brainstorm": "\"What words can you think of with rupt in them?\" 20 sec, turn and tell, then cold call four pairs.\nEXPECT: erupt, interrupt, rupture, eruption.\nCLARIFY: interrupt has two r's, one from inter and one from rupt. Listen for both parts.",
+   "words_to_read_new": [
+    {
+     "word": "erupt",
+     "meaning": "e- means out of + RUPT means break: to break out, like lava from a volcano"
+    },
+    {
+     "word": "eruption",
+     "meaning": "e- means out of + RUPT means break + -ion means the act of: the act of breaking out"
+    },
+    {
+     "word": "interrupt",
+     "meaning": "inter- means between + RUPT means break: to break in between, to cut in while someone talks"
+    },
+    {
+     "word": "interruption",
+     "meaning": "inter- means between + RUPT means break + -ion means the act of: the act of breaking in"
+    },
+    {
+     "word": "rupture",
+     "meaning": "RUPT means break + -ure means the result of: a break or burst, like a burst pipe"
+    },
+    {
+     "word": "abrupt",
+     "meaning": "ab- means away + RUPT means break: broken off, so sudden"
+    },
+    {
+     "word": "bankrupt",
+     "meaning": "bank + RUPT means break: a broken bank, not able to pay what you owe"
+    },
+    {
+     "word": "bankruptcy",
+     "meaning": "bank + RUPT means break + -cy means state: the state of being bankrupt"
+    },
+    {
+     "word": "disrupt",
+     "meaning": "dis- means apart + RUPT means break: to break apart, to throw into a mess"
+    }
+   ],
+   "associated_word_exceptions": [
+    {
+     "word": "bankrupt",
+     "reason": "Ground 3: the -cy card lists bankruptcy; bankrupt is its simpler sibling (bank + rupt, nothing untaught), and the financial maths unit running this term needs it.",
+     "source": "Macquarie Dictionary: bankrupt, a person who is unable to pay their debts; from Italian banca rotta, broken bench."
+    },
+    {
+     "word": "bankruptcy",
+     "reason": "Ground 2: printed on the taught -cy suffix card's associated words; it stacks rupt with the taught -cy.",
+     "source": "og_planner/yoshimoto_cards_suffixes.json, -cy card associated words: bankruptcy."
+    }
+   ],
+   "wtr_new_notes": "SAY: \"Learn rupt once and you can read a whole family of words about breaking.\"\nREAD each word as it appears, say what it means, then link rupt to the card meaning: break.\nerupt - e means out of + RUPT means break: to break out. The volcano began to erupt.\neruption - e + RUPT + ion means the act of: the act of breaking out. The eruption sent ash into the sky.\ninterrupt - inter means between + RUPT: to break in between. Please do not interrupt the speaker.\ninterruption - inter + RUPT + ion: the act of breaking in. A fire drill was an interruption to our test.\nrupture - RUPT + ure means the result of: a break or burst. A rupture in the pipe flooded the street.\nabrupt - ab means away + RUPT: broken off, so sudden. The bus came to an abrupt stop.\nbankrupt - bank + RUPT: a broken bank. A business that cannot pay what it owes is bankrupt.\nbankruptcy - bank + RUPT + cy means state: the state of being bankrupt. The shop closed after its bankruptcy.\ndisrupt - dis means apart + RUPT: to break apart, to throw into a mess. Loud talking can disrupt a lesson.",
+   "keyword_sentence": {
+    "title": "Pick your own rupt word",
+    "rule": "Two jobs in your OG book",
+    "example": "1. Your own rupt word for break. Star it.\n2. Write one sentence that shows what it means.",
+    "items": [
+     "My word: **erupt** - The volcano began to **erupt** with lava."
+    ],
+    "routine": "OG books - 3 mins",
+    "footer": "Check: does it make the meaning clear?",
+    "notes": "1. SAY: \"The card keyword is abrupt. Ab means away, rupt means break: broken off, so sudden. The music stopped with an abrupt crash.\"\n2. SAY: \"If another rupt word helps YOU remember break, pick that one, like erupt. Write it at the bottom of the page and star it.\"\n3. SAY: \"Then write one sentence with your word, so a reader can tell what it means.\" TIME: 3 min, then cold call two students to read theirs.\nEXTENSION: Two in one - write one sentence that uses two rupt words and still makes sense.\nHELP: give a stem, \"The volcano began to...\" or \"Please do not interrupt...\", and let them finish it.\n---\nANSWERS: open - e.g. Mine: erupt. The volcano began to erupt with lava. EXTENSION: e.g. The eruption was an abrupt end to our holiday."
+   }
+  },
+  {
+   "day": "Tuesday",
+   "type": "spell",
+   "morphology_review": [
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "rupt",
+     "type": "root",
+     "keyword": "abrupt",
+     "meaning": "break",
+     "extra_task": {
+      "prompt": "What is one word built from rupt, meaning break?",
+      "answers": [
+       "erupt",
+       "interrupt",
+       "rupture"
+      ]
+     }
+    },
+    {
+     "morph": "ject",
+     "type": "root",
+     "keyword": "abject",
+     "meaning": "throw"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land",
+     "extra_task": {
+      "prompt": "What is one word built from terr, meaning land?",
+      "answers": [
+       "terrain",
+       "territory",
+       "terrace"
+      ]
+     }
+    },
+    {
+     "morph": "tract",
+     "type": "root",
+     "keyword": "detract",
+     "meaning": "drag, pull"
+    },
+    {
+     "morph": "port",
+     "type": "root",
+     "keyword": "export",
+     "meaning": "bring, carry"
+    },
+    {
+     "morph": "struct",
+     "type": "root",
+     "keyword": "construct",
+     "meaning": "build",
+     "extra_task": {
+      "prompt": "What is one word built from struct, meaning build?",
+      "answers": [
+       "construct",
+       "instruct",
+       "structure"
+      ]
+     }
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "rupture",
+     "contract",
+     "construct",
+     "abrupt",
+     "distraction",
+     "reject",
+     "interruption",
+     "retracted",
+     "structural",
+     "disrupt",
+     "attracted",
+     "projectile",
+     "bankruptcy",
+     "destructive",
+     "astronomer"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"Partners: partner A reads rows 1, 3 and 5, partner B reads rows 2 and 4.\"\n3. ASK: \"Which word means sudden, like a bus that stops without warning?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: abrupt.\n4. ASK: \"Odd one out: attracted, distraction, construct. Which one does not belong?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: construct.\nIf time: \"Why?\" Turn and tell. EXPECT: construct has struct, build - the others have tract, pull.\n5. ASK: \"Partner A, point to any word. Partner B, read it and say what its root means. Swap after 30 seconds.\"\n30 sec each way. CIRCULATE and listen for the root's meaning, not just the word."
+   },
+   "sound_bank": [
+    {
+     "morph": "rupt",
+     "type": "root"
+    },
+    {
+     "morph": "tract",
+     "type": "root"
+    },
+    {
+     "morph": "struct",
+     "type": "root"
+    },
+    {
+     "morph": "ject",
+     "type": "root"
+    },
+    {
+     "morph": "port",
+     "type": "root"
+    },
+    {
+     "morph": "-ive",
+     "type": "suffix"
+    }
+   ],
+   "words_to_spell_review": [
+    {
+     "word": "tractor",
+     "sentence": "The tractor pulled a trailer full of hay across the paddock.",
+     "prompt": "Which part of tractor tells you it pulls?",
+     "answer": "The tract part, meaning pull. A tractor is a machine that pulls.",
+     "picture": [
+      {
+       "icon": "fa6/FaTractor",
+       "color": "2E7D32"
+      },
+      {
+       "icon": "fa6/FaWheatAwn",
+       "color": "C9A227"
+      }
+     ]
+    },
+    {
+     "word": "attractive",
+     "sentence": "Our attractive poster pulled a crowd to the stall.",
+     "picture": [
+      {
+       "icon": "fa6/FaMagnet",
+       "color": "C0392B"
+      },
+      {
+       "icon": "fa6/FaPeopleGroup",
+       "color": "1F3A5F"
+      }
+     ]
+    },
+    {
+     "word": "extract",
+     "sentence": "The dentist had to extract my wobbly tooth.",
+     "picture": [
+      {
+       "icon": "fa6/FaUserDoctor",
+       "color": "1F3A5F"
+      },
+      {
+       "icon": "fa6/FaTooth",
+       "color": "6B4423"
+      }
+     ]
+    },
+    {
+     "word": "structure",
+     "sentence": "The Sydney Harbour Bridge is a huge steel structure.",
+     "picture": [
+      {
+       "icon": "fa6/FaBridge",
+       "color": "1F3A5F"
+      }
+     ]
+    },
+    {
+     "word": "injection",
+     "sentence": "The nurse gave me an injection before our school trip.",
+     "prompt": "Which way does the medicine go in an injection, and which parts tell you?",
+     "answer": "In. in- means in and ject means throw: the medicine is pushed into your arm.",
+     "picture": [
+      {
+       "icon": "fa6/FaSyringe",
+       "color": "1F3A5F"
+      }
+     ]
+    },
+    {
+     "word": "portable",
+     "sentence": "We took a portable speaker to the beach.",
+     "prompt": "Which two parts tell you a portable speaker is easy to carry?",
+     "answer": "port means carry and -able means able to: able to be carried.",
+     "picture": [
+      {
+       "icon": "fa6/FaVolumeHigh",
+       "color": "1F3A5F"
+      },
+      {
+       "icon": "fa6/FaMusic",
+       "color": "B5541C"
+      }
+     ]
+    }
+   ],
+   "words_to_spell_new": [
+    "erupt",
+    "eruption",
+    "interrupt",
+    "rupture"
+   ],
+   "extension": "1. SAY: \"When you finish, write one sentence that uses interrupt.\"\n2. CHECK: the sentence shows someone breaking in while something is happening.\n\nEXTENSION: Beat the number - write 5 more real rupt words in 2 minutes, not counting today's four.\nAnswer: e.g. abrupt, bankrupt, disrupt, interruption, erupted, ruptured, eruptions.",
+   "learned_words": {
+    "review": [
+     {
+      "word": "questionnaire",
+      "unfair": "nnaire",
+      "notes": "1. SAY: \"Questionnaire. We filled in a questionnaire about our favourite sport.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: KWES-chuh-NAIR, three beats. Question, then the n doubles and aire says /air/."
+     },
+     {
+      "word": "campaign",
+      "unfair": "g",
+      "notes": "1. SAY: \"Campaign. Our class ran a campaign for a new water fountain.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: kam-PAYN, two beats. The g is silent, like in sign."
+     }
+    ],
+    "new": {
+     "word": "brochure",
+     "unfair": "ch",
+     "notes": "Why learned: it came from French, so the ch says /sh/, like in chef and machine.\nSay it: BROH-shuh, two beats, the first strongest.\n1. COPY it twice, saying the letter names: b - r - o - c - h - u - r - e.\n2. COVER both and write it a third time from memory, then tick or fix.\nLink: a brochure is a folded booklet that tells you about a place and tries to sell it. It is a persuasive text, like the ones we are writing."
+    }
+   },
+   "dictation": [
+    {
+     "meter": "green",
+     "sentence": "Our travel brochure showed a volcano that could erupt at any time.",
+     "targets": [
+      "brochure",
+      "erupt"
+     ],
+     "cops": {
+      "capitals": [
+       "Our"
+      ],
+      "punctuation": [
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "This week: the new red word brochure and rupt in erupt.\nTRAP: brosure or broshure. Fix: French ch says /sh/, like chef; student writes ch."
+    },
+    {
+     "meter": "yellow",
+     "sentence": "Nobody dared to interrupt the speaker, so she read every result from our questionnaire.",
+     "targets": [
+      "interrupt",
+      "questionnaire"
+     ],
+     "cops": {
+      "capitals": [
+       "Nobody"
+      ],
+      "punctuation": [
+       "comma before so (it joins two full sentences)",
+       "full stop (it ends the sentence)"
+      ]
+     },
+     "focus": "This week: rupt in interrupt. Last week's throwback: questionnaire.\nTRAP: interupt with one r. Fix: inter plus rupt, one r from each part; student adds the r."
+    }
+   ]
+  },
+  {
+   "day": "Wednesday",
+   "type": "build",
+   "morphology_review": [
+    {
+     "morph": "tract",
+     "type": "root",
+     "keyword": "detract",
+     "meaning": "drag, pull"
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star"
+    },
+    {
+     "morph": "rupt",
+     "type": "root",
+     "keyword": "abrupt",
+     "meaning": "break",
+     "extra_task": {
+      "prompt": "What is one word built from rupt, meaning break?",
+      "answers": [
+       "erupt",
+       "interrupt",
+       "rupture"
+      ]
+     }
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "port",
+     "type": "root",
+     "keyword": "export",
+     "meaning": "bring, carry"
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "struct",
+     "type": "root",
+     "keyword": "construct",
+     "meaning": "build"
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land"
+    },
+    {
+     "morph": "ject",
+     "type": "root",
+     "keyword": "abject",
+     "meaning": "throw",
+     "extra_task": {
+      "prompt": "What is one word built from ject, meaning throw?",
+      "answers": [
+       "inject",
+       "eject",
+       "reject"
+      ]
+     }
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all",
+     "extra_task": {
+      "prompt": "What is one word built from omni, meaning all?",
+      "answers": [
+       "omnivore",
+       "omnipresent"
+      ]
+     }
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "erupted",
+     "extract",
+     "instruction",
+     "eject",
+     "interrupting",
+     "traction",
+     "ruptured",
+     "structured",
+     "contractor",
+     "abruptly",
+     "reconstruct",
+     "rejected",
+     "eruptions",
+     "attract",
+     "omnivore"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"This side of the room, read rows 1 and 2. That side, rows 3 and 4. Everyone, row 5.\"\n3. ASK: \"Finish my sentence. The volcano rumbled for days, and then it...\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: erupted.\n4. ASK: \"Odd one out: eject, rejected, traction. Which one does not belong?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: traction.\nIf time: \"Why?\" Turn and tell. EXPECT: traction has tract, pull - the others have ject, throw.\n5. ASK: \"Which word means in a sudden way?\"\n5 sec. Then: \"Everyone, together, on three.\"\nEXPECT: abruptly."
+   },
+   "build": {
+    "time": "15 mins",
+    "matrix": {
+     "title": "Build rupt words",
+     "rule": "Build real words. Write each one and what it means.",
+     "base": {
+      "morph": "rupt",
+      "type": "root",
+      "meaning": "break"
+     },
+     "prefixes": [
+      "e- (out of)",
+      "inter- (between)",
+      "ab- (away)"
+     ],
+     "suffixes": [
+      "-ion (the act of)",
+      "-ure (result of)",
+      "-ive (relating to)",
+      "-ed",
+      "-ing"
+     ],
+     "routine": "OG books - 4 mins",
+     "footer": "Hunt: the longest real word",
+     "notes": "1. SAY: \"rupt is in the middle. Join a part from the left, the right, or both, and build a real word. Write the word and what it means.\"\n2. MODEL: say \"e plus rupt: erupt, to break out\", and write it on the class board.\n3. TIME: 4 min. CIRCULATE: to a stuck student say, \"Start with rupt. Put inter in front. What does interrupt mean?\"\n4. ASK: \"Read me your longest word and what it means.\" Cold call two students. EXPECT: interruption, the act of breaking in; eruptive, relating to breaking out.\nTRAP: a made-up word that sounds right, like erupture. Fix: ask, would you read that in a newspaper? Student builds a real one.\nEXTENSION: Longest word hunt - build the longest real word you can and write its parts.\nHELP: give three starters, erupt, interrupt, abrupt, and ask for one ending on each.\n---\nANSWERS: erupt, interrupt, abrupt, rupture; add -ion for the act of: eruption, interruption.\nAlso: eruptive (relating to breaking out); erupted, erupting, interrupted, interrupting, ruptured.\nEXTENSION: e.g. interruption = inter + rupt + ion; eruptive = e + rupt + ive."
+    },
+    "rounds": [
+     {
+      "title": "Break the word into its parts",
+      "rule": "Write only the parts in the boxes. rupt is done for you.",
+      "given": [
+       "rupt"
+      ],
+      "routine": "OG books - parts only",
+      "footer": "Find rupt first",
+      "round": [
+       {
+        "prompt": "One done for you:\nerupting",
+        "parts": [
+         "e-",
+         "rupt",
+         "-ing"
+        ],
+        "answer": "e- (out of) + rupt + -ing",
+        "why": "breaking out, right now",
+        "worked": true,
+        "notes": "1. SAY: \"We just built words. Now we do the opposite. I show a whole word, you write its parts in boxes.\"\n2. MODEL: point at erupting. SAY: \"I find rupt first. In front is e. Behind is ing. Three parts, three boxes: e, rupt, ing.\"\n3. SAY: \"Three words, one at a time. Write only the parts in your OG book, then I click.\"\nEXTENSION: Beat the number - break 5 more rupt words from the matrix into parts in 2 minutes.\nHELP: underline rupt in each word first, then split what is left on each side.\n---\nANSWERS: 1. ab + rupt + ly  2. rupt + ure + s  3. inter + rupt + ed. EXTENSION: e.g. e + rupt + ion, inter + rupt + ion, e + rupt + ive."
+       },
+       {
+        "prompt": "abruptly",
+        "parts": [
+         "ab-",
+         "rupt",
+         "-ly"
+        ],
+        "answer": "ab- (away) + rupt + -ly (in a way that)",
+        "why": "in a sudden, broken-off way",
+        "notes": "ANSWER: ab + rupt + ly.\n1. ASK: \"Write the parts of abruptly.\" 20 sec. Cue: \"Pens down when you are done.\"\n2. SCAN four books near you. 80%+ -> click to reveal. Less -> cover the ly with your hand and ask what is left, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Ab means away, ly means in a way that. Abruptly means suddenly, like our keyword abrupt.\"\nTRAP: splitting it abr + uptly. Fix: find rupt first, student rewrites the parts around it."
+       },
+       {
+        "prompt": "ruptures",
+        "parts": [
+         "rupt",
+         "-ure",
+         "-s"
+        ],
+        "answer": "rupt + -ure (result of) + -s",
+        "why": "more than one break or burst",
+        "notes": "ANSWER: rupt + ure + s.\n1. ASK: \"Write the parts of ruptures.\" 20 sec. Cue: \"Pens down when you are done.\"\n2. SCAN four books near you. 80%+ -> click to reveal. Less -> point at rupt and ask what comes after it, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Rupt, then ure, then s. A rupture is the result of breaking, and s means more than one.\"\nTRAP: writing rupt + ures in one box. Fix: count the boxes on the slide, student splits off the s."
+       },
+       {
+        "prompt": "interrupted",
+        "parts": [
+         "inter-",
+         "rupt",
+         "-ed"
+        ],
+        "answer": "inter- (between) + rupt + -ed",
+        "why": "broke in between, in the past",
+        "notes": "ANSWER: inter + rupt + ed.\n1. ASK: \"Write the parts of interrupted.\" 20 sec. Cue: \"Pens down when you are done.\"\n2. SCAN four books near you. 80%+ -> click to reveal. Less -> underline rupt and ask what is in front of it and what is behind it, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Inter means between, ed tells us it already happened. Interrupted means broke in between.\"\nTRAP: writing interupted with one r. Fix: inter ends in r and rupt starts with r; student writes both."
+       }
+      ]
+     },
+     {
+      "title": "Choose the best meaning",
+      "rule": "Which meaning uses every part? Fingers: 1, 2 or 3.",
+      "routine": "Fingers - voices off",
+      "footer": "Check: did you use every part?",
+      "round": [
+       {
+        "prompt": "One done for you:\nerupted",
+        "choices": [
+         "broke out",
+         "broke in",
+         "pulled out"
+        ],
+        "answer": "broke out",
+        "why": "e- (out of) + rupt (break) + -ed",
+        "worked": true,
+        "notes": "1. SAY: \"Last round. I show a word and three meanings. Only one uses every part of the word.\"\n2. MODEL: \"Erupted. E means out of, rupt means break, ed means it already happened. Broke in has break, but the wrong way. Pulled out has the right way, but pull is tract. Broke out uses every part.\"\n3. SAY: \"Three more. Read the word, find each part, then show me one, two or three fingers on three.\""
+       },
+       {
+        "rule": "Use every part: -ion (the act of). Fingers: 1, 2 or 3.",
+        "prompt": "eruption",
+        "choices": [
+         "the act of breaking in",
+         "the act of breaking out",
+         "the act of pulling out"
+        ],
+        "answer": "the act of breaking out",
+        "why": "e- (out of) + rupt + -ion",
+        "notes": "ANSWER: 2 - the act of breaking out.\n1. ASK: \"Read eruption in your head. Which meaning uses every part? One, two or three fingers, voices off, show me on three.\" 10 sec.\n2. SCAN the fingers. 80%+ -> click to reveal. Less -> point at the e and ask what it means, then re-ask.\n3. REVEAL after fingers are scanned. SAY: \"Tick it or fix it. E means out of, rupt means break, ion means the act of. An eruption is the act of breaking out.\"\nTRAP: 1, the act of breaking in. Fix: break is right, but e means out of; student finds the choice with out."
+       },
+       {
+        "rule": "Use every part: -ion (the act of). Fingers: 1, 2 or 3.",
+        "prompt": "interruption",
+        "choices": [
+         "the act of breaking out",
+         "the act of building in",
+         "the act of breaking in"
+        ],
+        "answer": "the act of breaking in",
+        "why": "inter- (between) + rupt + -ion",
+        "notes": "ANSWER: 3 - the act of breaking in.\n1. ASK: \"Read interruption in your head. Which meaning uses every part? One, two or three fingers, voices off, show me on three.\" 10 sec.\n2. SCAN the fingers. 80%+ -> click to reveal. Less -> point at inter and ask what it means, then re-ask.\n3. REVEAL after fingers are scanned. SAY: \"Tick it or fix it. Inter means between, ion means the act of. Breaking in between, like a fire drill in a test.\"\nTRAP: 2, the act of building in. Fix: building is struct, not rupt; student finds the choice with break."
+       },
+       {
+        "prompt": "bankruptcy",
+        "choices": [
+         "the state of being broke",
+         "one who breaks a bank",
+         "the state of being rich"
+        ],
+        "answer": "the state of being broke",
+        "why": "bank + rupt + -cy (state)",
+        "notes": "ANSWER: 1 - the state of being broke.\n1. ASK: \"Read bankruptcy in your head. Which meaning uses every part? One, two or three fingers, voices off, show me on three.\" 10 sec.\n2. SCAN the fingers. 80%+ -> click to reveal. Less -> point at cy and ask what it means, then re-ask.\n3. REVEAL after fingers are scanned. SAY: \"Tick it or fix it. Cy means state, and a broken bank has no money. Bankruptcy is the state of being broke.\"\nTRAP: 2, one who breaks a bank. Fix: break is right, but cy means state, not one who; student finds the choice with state.\nEXTENSION: Make your own - write a rupt word with three parts and three meanings for a partner, one right and one nearly right.\n---\nANSWERS: erupted - broke out (worked), eruption 2, interruption 3, bankruptcy 1."
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "day": "Thursday",
+   "type": "apply",
+   "morphology_review": [
+    {
+     "morph": "port",
+     "type": "root",
+     "keyword": "export",
+     "meaning": "bring, carry"
+    },
+    {
+     "morph": "struct",
+     "type": "root",
+     "keyword": "construct",
+     "meaning": "build"
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "rupt",
+     "type": "root",
+     "keyword": "abrupt",
+     "meaning": "break",
+     "extra_task": {
+      "prompt": "What is one word built from rupt, meaning break?",
+      "answers": [
+       "erupt",
+       "interrupt",
+       "rupture"
+      ]
+     }
+    },
+    {
+     "morph": "ject",
+     "type": "root",
+     "keyword": "abject",
+     "meaning": "throw"
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star"
+    },
+    {
+     "morph": "tract",
+     "type": "root",
+     "keyword": "detract",
+     "meaning": "drag, pull",
+     "extra_task": {
+      "prompt": "What is one word built from tract, meaning pull?",
+      "answers": [
+       "tractor",
+       "subtract",
+       "extract"
+      ]
+     }
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above",
+     "extra_task": {
+      "prompt": "What is one word built from hyper, meaning over?",
+      "answers": [
+       "hyperactive",
+       "hypersonic"
+      ]
+     }
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "erupt",
+     "distracted",
+     "construction",
+     "interrupted",
+     "projector",
+     "subtracting",
+     "bankrupt",
+     "instructs",
+     "tractor",
+     "rupture",
+     "reject",
+     "structures",
+     "eruption",
+     "extraction",
+     "terrain"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"Whisper read rows 1 to 3 to yourself. Then everyone reads rows 4 and 5 out loud.\"\n3. ASK: \"Which word describes a shop that has run out of money and cannot pay what it owes?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: bankrupt.\n4. ASK: \"Odd one out: distracted, extraction, structures. Which one does not belong?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: structures.\nIf time: \"Why?\" Turn and tell. EXPECT: structures has struct, build - the others have tract, pull.\n5. ASK: \"Which word has a part that means between?\"\n5 sec. Then: \"Everyone, together, on three.\"\nEXPECT: interrupted."
+   },
+   "pos_drill": {
+    "time": "5 mins",
+    "intro": {
+     "title": "Noun, verb or adjective?",
+     "rule": "Read the sentence. What job does the bold word do?",
+     "prompt": "Mia gave me **constructive** advice about my speech.",
+     "choices": [
+      "**noun**\nnames a thing or idea",
+      "**verb**\nsomething you do",
+      "**adjective**\ndescribes a noun"
+     ],
+     "answer": "adjective",
+     "why": "constructive describes the advice",
+     "routine": "Eyes on me - voices off",
+     "footer": "Next: your turn on four suffix cards",
+     "notes": "ANSWER: adjective - constructive describes the advice.\n1. SAY: \"Every word has a job in a sentence. The sentence tells us the job, and the suffix helps.\"\n2. POINT at each choice. SAY: \"A noun names a thing or idea. A verb is something you do. An adjective describes a noun.\"\n3. MODEL: read the sentence. SAY: \"What sort of advice? Constructive advice. Constructive tells us about the advice.\"\n4. SAY: \"The doing word is gave. Advice is the thing. Constructive describes the advice, so it is an adjective.\" REVEAL on the click.\n5. SAY: \"Construct is something you do. Add -ive, relating to, and it describes a noun. The suffix changed the job.\"\nTRAP: verb, because construct is an action. Fix: cover the -ive, then show it; student says what the suffix changed."
+    },
+    "cards": [
+     {
+      "morph": "-cy",
+      "pos_answer": "noun",
+      "sentence": "The puppy was very playful in its infancy.",
+      "why": "infancy is the time of life the puppy was in",
+      "sheet_word": "secrecy",
+      "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-cy means quality, state. The puppy was very playful in its infancy.\"\n2. ASK: \"What job does infancy do in this sentence: noun, verb or adjective?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: noun.\nSCAN: split or wrong chorus -> do not click. Ask \"When was the puppy playful?\", then re-ask on three.\n3. REVEAL after the choral answer. SAY: \"Infancy names a time of life, the state of being a baby, so it is a noun. -cy words name a state, so they are nouns.\"\nTRAP: adjective, because playful sits near it. Fix: playful describes the puppy; ask when it was playful, student says in its infancy."
+     },
+     {
+      "morph": "-eer",
+      "pos_answer": "verb",
+      "sentence": "Our class will engineer a raft from old bottles.",
+      "why": "engineer is what our class will do",
+      "sheet_word": "pioneer",
+      "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-eer means one who. Our class will engineer a raft from old bottles.\"\n2. ASK: \"What job does engineer do in this sentence: noun, verb or adjective?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: verb.\nSCAN: split or wrong chorus -> do not click. Ask \"What will our class do?\", then re-ask on three.\n3. REVEAL after the choral answer. SAY: \"Engineer is what our class will do here, so it is a verb. Most -eer words name a person, but the sentence decides the job.\"\nTRAP: noun, because an engineer is a person. Fix: ask what our class will do, student says engineer, the doing word."
+     },
+     {
+      "morph": "-ine",
+      "pos_answer": "adjective",
+      "sentence": "The museum shows a genuine dinosaur bone.",
+      "why": "genuine describes the bone",
+      "sheet_word": "routine",
+      "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-ine means relating to, of, like. The museum shows a genuine dinosaur bone.\"\n2. ASK: \"What job does genuine do in this sentence: noun, verb or adjective?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: adjective.\nSCAN: split or wrong chorus -> do not click. Ask \"What sort of bone is it?\", then re-ask on three.\n3. REVEAL after the choral answer. SAY: \"Genuine describes the bone: it is real, not a copy. So it is an adjective. -ine words often describe.\"\nTRAP: noun, because bone is a thing. Fix: bone is the noun; ask what sort of bone, student says genuine."
+     },
+     {
+      "morph": "-let",
+      "pos_answer": "noun",
+      "sentence": "The booklet showed every ride at the show.",
+      "why": "booklet is the thing that showed every ride",
+      "sheet_word": "pamphlet",
+      "notes": "1. READ: \"Read the card with me.\" CHORAL: \"-let means small. The booklet showed every ride at the show.\"\n2. ASK: \"What job does booklet do in this sentence: noun, verb or adjective?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: noun.\nSCAN: split or wrong chorus -> do not click. Ask \"What showed every ride?\", then re-ask on three.\n3. REVEAL after the choral answer. SAY: \"A booklet is a small book, the thing that showed every ride, so it is a noun. -let words name small things, so they are nouns.\"\nTRAP: verb, because showed is an action. Fix: showed is the verb; ask what showed the rides, student points at booklet."
+     }
+    ]
+   },
+   "learned_words": {
+    "review": [
+     {
+      "word": "brochure",
+      "unfair": "ch",
+      "notes": "1. SAY: \"Brochure. We picked up a brochure at the zoo gate.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: BROH-shuh, two beats. The ch says /sh/, like in chef."
+     },
+     {
+      "word": "questionnaire",
+      "unfair": "nnaire",
+      "notes": "1. SAY: \"Questionnaire. Our questionnaire asked about lunch orders.\" Students write it once from hearing it.\n2. SHOW the word. Students copy it correctly underneath.\n3. COVER both. Students write it from memory, then tick or fix.\nSay it: KWES-chuh-NAIR, three beats. Question, then nn, then aire says /air/."
+     }
+    ],
+    "new": {
+     "word": "liaison",
+     "unfair": "iai",
+     "notes": "Why learned: it came from French and has three vowels in a row, i - a - i. We say lee-AY-zon, so the second i is easy to miss. Write all three vowels: i - a - i.\nSay it: lee-AY-zon, three beats, the middle strongest.\n1. COPY it twice, saying the letter names: l - i - a - i - s - o - n.\n2. COVER both and write it a third time from memory, then tick or fix.\nLink: a liaison is a person who links two groups, like a class captain who passes ideas between students and teachers."
+    }
+   },
+   "grammar": {
+    "header_notes": "PURPOSE: A simple sentence has one M. A compound sentence has two M joined by a comma and and, but, so, or or yet.\nWHY THIS WEEK: persuasive writers join a point and its result with , so and a point and its problem with , but. Students who see two M stop writing run-ons.\nTIME: 5 minutes, no more - I do 1 min, We do 1 question, You do 3 questions at about 30 seconds each. One question per slide; your click reveals the answer.\nROUTINE: all grammar is written in the OG book. No boards - books, fingers and voices only. Smackdown signals: one finger simple, two fingers compound, fist leaves you waiting.\nCHECK: and between two doing words is not a compound. The volcano rumbled and erupted has one M - nothing on the right stands alone.",
+    "i_do": {
+     "title": "Simple or compound?",
+     "rule": "One M = simple. Two M joined by and, but or so = compound.",
+     "example": "The volcano rumbled,\nso the villagers ran to the boats.",
+     "items": [
+      "Simple: The volcano rumbled.",
+      "Chop at the joining word. Does each side stand alone?"
+     ],
+     "routine": "Eyes on me - voices off",
+     "footer": "Your turn: chop and check",
+     "notes": "ANSWER: compound - The volcano rumbled (M), so (joining word), the villagers ran to the boats (M).\n1. SAY: \"A simple sentence has one M. When we join two M with a comma and and, but or so, we get a compound sentence.\"\n2. WRITE: copy the sentence on the class board. Hand chop before so. Read \"The volcano rumbled\". It stands alone, so write M under it.\n3. WRITE: read \"the villagers ran to the boats\". It stands alone too, so write M under it. CIRCLE so and the comma in front of it.\n4. ASK: \"One M or two? One finger simple, two fingers compound, voices off, show me on three.\" 5 sec. EXPECT: two fingers.\nTRAP: calling any long sentence compound. Fix: chop at the joining word and read each side; if one side cannot stand alone, it is not compound.\nCLARIFY: if a student asks about because, say it makes one side wait, so that is the fist - last week's complex sentence.\n---\nPREP: coordinating conjunctions (and, but, so, or, yet) join two independent clauses; a comma goes before the conjunction."
+    },
+    "we_do": {
+     "title": "Simple, compound or complex?",
+     "rule": "Chop at the joining word. Does each side stand alone?",
+     "round": [
+      {
+       "prompt": "The polar bear sniffed the air\nand padded across the ice.",
+       "choices": [
+        "simple",
+        "compound",
+        "complex"
+       ],
+       "answer": "simple",
+       "why": "one M - the bear did two things",
+       "routine": "1 finger, 2 fingers or fist",
+       "footer": "Stem: It is ___ because ...",
+       "notes": "ANSWER: simple - one M. The bear did two things, joined by and.\n1. SAY: \"Read it in your head. Chop at and, then read each side.\"\n2. ASK: \"One finger simple, two fingers compound, fist complex, voices off, show me on three.\" 5 sec. EXPECT: one finger.\n3. REVEAL after hands are scanned. ASK: \"How do you know?\" Cold call one student. EXPECT: padded across the ice cannot stand alone - it has no who.\nTRAP: two fingers, because of and. Fix: read padded across the ice on its own; it has no who, student shows one finger.\nCLARIFY: if a student asks how to make it compound, say add a who: The polar bear sniffed the air, and it padded across the ice."
+      }
+     ]
+    },
+    "you_do": {
+     "title": "Simple or compound?",
+     "rule": "Write simple or compound. Circle the joining word if it joins two M.",
+     "routine": "OG books - 30 sec - pens down",
+     "footer": "Check: chop - does each side stand alone?",
+     "round": [
+      {
+       "prompt": "Our brochure was colourful,\nbut nobody picked it up.",
+       "answer": "compound - but",
+       "why": "both sides stand alone",
+       "notes": "ANSWER: compound - but.\n1. SAY: \"Write simple or compound. Circle the joining word if it joins two M. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> chop before but and read each side aloud, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Our brochure was colourful stands alone. Nobody picked it up stands alone. Two M, so compound.\"\nTRAP: simple, because it is about one brochure. Fix: count the M, not the topics; chop and read, student writes compound.\nEXTENSION: Two in one - write one compound sentence with a rupt word on each side. Label both M.\nHELP: give the joining words - and, but, so - and ask which one is in the sentence, then read each side."
+      },
+      {
+       "prompt": "The old pipe ruptured\nand flooded the kitchen.",
+       "answer": "simple",
+       "why": "one M - the pipe did two things",
+       "notes": "ANSWER: simple.\n1. SAY: \"Write simple or compound. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> read flooded the kitchen on its own and ask who flooded it, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. Flooded the kitchen has no who, so it cannot stand alone. One M: the pipe ruptured and flooded.\"\nTRAP: compound, because of and. Fix: and joins two doing words here; read the right side alone, student writes simple."
+      },
+      {
+       "prompt": "The fire alarm rang,\nso it interrupted our speeches.",
+       "answer": "compound - so",
+       "why": "both sides stand alone",
+       "notes": "ANSWER: compound - so.\n1. SAY: \"Last one. Write simple or compound, and circle the joining word. Pens down when you are done.\"\n2. TIME: 30 sec. SCAN four books near you. 80%+ -> click to reveal. Less -> chop before so and read each side, then re-ask.\n3. REVEAL after books are scanned. SAY: \"Tick it or fix it. The fire alarm rang stands alone, and it interrupted our speeches stands alone. Two M joined by , so.\"\n4. SAY: \"In your persuasive piece, find one place where , so or , but joins two of your points.\"\nTRAP: circling interrupted. Fix: that is the doing word; the joining word sits after the comma, student circles so.\n---\nANSWERS: 1. compound - but  2. simple  3. compound - so. EXTENSION: e.g. The volcano began to erupt (M), so the bus came to an abrupt stop (M)."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "day": "Friday",
+   "type": "week_review",
+   "morphology_review": [
+    {
+     "morph": "rupt",
+     "type": "root",
+     "keyword": "abrupt",
+     "meaning": "break",
+     "extra_task": {
+      "prompt": "What is one word built from rupt, meaning break?",
+      "answers": [
+       "erupt",
+       "interrupt",
+       "rupture"
+      ]
+     }
+    },
+    {
+     "morph": "ject",
+     "type": "root",
+     "keyword": "abject",
+     "meaning": "throw"
+    },
+    {
+     "morph": "tract",
+     "type": "root",
+     "keyword": "detract",
+     "meaning": "drag, pull"
+    },
+    {
+     "morph": "hyper",
+     "type": "root",
+     "keyword": "hyperactive",
+     "meaning": "over, above"
+    },
+    {
+     "morph": "caus-/cus(e)",
+     "type": "root",
+     "keyword": "accuse",
+     "meaning": "cause"
+    },
+    {
+     "morph": "struct",
+     "type": "root",
+     "keyword": "construct",
+     "meaning": "build"
+    },
+    {
+     "morph": "astro",
+     "type": "root",
+     "keyword": "astronaut",
+     "meaning": "star"
+    },
+    {
+     "morph": "port",
+     "type": "root",
+     "keyword": "export",
+     "meaning": "bring, carry",
+     "extra_task": {
+      "prompt": "What is one word built from port, meaning carry?",
+      "answers": [
+       "transport",
+       "export",
+       "portable"
+      ]
+     }
+    },
+    {
+     "morph": "omni-",
+     "type": "prefix",
+     "keyword": "omnibus",
+     "meaning": "all"
+    },
+    {
+     "morph": "terr",
+     "type": "root",
+     "keyword": "territory",
+     "meaning": "land",
+     "extra_task": {
+      "prompt": "What is one word built from terr, meaning land?",
+      "answers": [
+       "terrain",
+       "territory",
+       "terrace"
+      ]
+     }
+    }
+   ],
+   "words_to_read_review": {
+    "words": [
+     "interrupts",
+     "retract",
+     "obstruction",
+     "injection",
+     "eruptions",
+     "attracted",
+     "constructing",
+     "abrupt",
+     "objects",
+     "contractor",
+     "ruptures",
+     "instructions",
+     "bankruptcy",
+     "tractors",
+     "transport"
+    ],
+    "notes": "1. READ: \"Everyone, read every row with me, row 1 to row 5.\"\n2. READ: \"This half of the room, rows 1 and 3. That half, rows 2 and 4. Everyone, row 5. Smooth, like a news reader.\"\n3. ASK: \"Which word names the state of a business that has run out of money?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: bankruptcy.\n4. ASK: \"Which word means pulled toward, like a magnet pulls a pin?\"\n10 sec, turn and talk. Then: \"Everyone, together, on three.\"\nEXPECT: attracted."
+   },
+   "friday_review": {
+    "part_a": {
+     "title": "Grammar - Simple and compound sentences",
+     "subblocks": [
+      {
+       "heading": "Join two simple sentences",
+       "instruction": "Join the pair into one compound sentence. Use a comma and and, but or so.",
+       "example": [
+        "The bell rang. We packed up.  ->  The bell rang, so we packed up."
+       ],
+       "task": {
+        "type": "sentences",
+        "answer_lines": 2,
+        "items": [
+         "Our stall had great posters. Nobody bought a thing."
+        ]
+       },
+       "checks": [
+        "comma before and / but / so"
+       ],
+       "answers": [
+        "Our stall had great posters, but nobody bought a thing."
+       ]
+      },
+      {
+       "heading": "Make it compound",
+       "instruction": "This sentence is simple: one M. Rewrite it as a compound sentence. Add a comma before and, then a second who.",
+       "task": {
+        "type": "sentences",
+        "answer_lines": 2,
+        "items": [
+         "The crowd cheered and clapped for the speaker."
+        ]
+       },
+       "checks": [
+        "second M after , and"
+       ],
+       "answers": [
+        "The crowd cheered, and they clapped for the speaker."
+       ]
+      }
+     ]
+    },
+    "part_b": {
+     "title": "Parts of Speech: noun, verb or adjective",
+     "subblocks": [
+      {
+       "heading": "What job does the word in capitals do?",
+       "instruction": "Read each sentence. Write the job of the word in CAPITALS: noun, verb or adjective.",
+       "tip": [
+        "noun - names a thing or idea. verb - something you do. adjective - describes a noun.",
+        "e.g. The PIGLET slept in the straw. PIGLET = noun (the thing that slept)."
+       ],
+       "task": {
+        "type": "codes",
+        "codes": "noun / verb / adjective",
+        "columns": 1,
+        "items": [
+         "The vet will EXAMINE the puppy's ears.",
+         "Our school has a no hat, no play POLICY.",
+         "The shop sells GENUINE leather boots.",
+         "Gran took a TABLET for her sore throat.",
+         "The boats sheltered in a rocky INLET."
+        ]
+       },
+       "checks": [
+        "-cy / -let = noun",
+        "-ine: read the sentence"
+       ],
+       "answers": [
+        "examine - what the vet will do - verb",
+        "policy - the thing our school has - noun",
+        "genuine - describes the boots - adjective",
+        "tablet - the thing Gran took - noun",
+        "inlet - the thing the boats sheltered in - noun"
+       ]
+      }
+     ]
+    },
+    "part_c": {
+     "title": "Learned Words",
+     "subblocks": [
+      {
+       "heading": "Complete the sentence",
+       "instruction": "Write the learned word that fits each gap. Spell it carefully.",
+       "task": {
+        "type": "cloze",
+        "items": [
+         "The travel agent's glossy ___ tried to persuade us to visit Fiji.",
+         "Our class captain is the ___ between students and teachers."
+        ]
+       },
+       "checks": [
+        "brochure",
+        "liaison"
+       ],
+       "answers": [
+        "brochure",
+        "liaison"
+       ]
+      }
+     ]
+    },
+    "part_d": {
+     "title": "Morphology Review",
+     "subblocks": [
+      {
+       "heading": "rupt = break",
+       "instruction": "Break each word into its parts, then write what the parts mean. Use the parts box.",
+       "word_bank": [
+        "inter- = between",
+        "e- = out of",
+        "ab- = away",
+        "-ion = the act of",
+        "-cy = state"
+       ],
+       "example": [
+        "abruptly = ab + rupt + ly = away + break + in a way that"
+       ],
+       "task": {
+        "type": "table",
+        "headers": [
+         "Word",
+         "Word sum",
+         "What the parts mean"
+        ],
+        "widths": [
+         1,
+         1.4,
+         1.8
+        ],
+        "rows": [
+         [
+          "eruption",
+          "",
+          ""
+         ],
+         [
+          "interruption",
+          "",
+          ""
+         ],
+         [
+          "bankruptcy",
+          "",
+          ""
+         ]
+        ]
+       },
+       "checks": [
+        "rupt = break",
+        "3-part word sums"
+       ],
+       "answers": [
+        "eruption = e + rupt + ion = out of + break + the act of",
+        "interruption = inter + rupt + ion = between + break + the act of",
+        "bankruptcy = bank + rupt + cy = bank + break + state"
+       ]
+      },
+      {
+       "heading": "rupt = break: new words",
+       "instruction": "These words were not on our lists. Use the parts to work out what each one means.",
+       "task": {
+        "type": "meaning_lines",
+        "items": [
+         "uninterrupted = un (not) + inter (between) + rupt + ed =",
+         "interrupter = inter (between) + rupt + er (one who) ="
+        ]
+       },
+       "checks": [
+        "meaning built from parts"
+       ],
+       "answers": [
+        "uninterrupted: not broken in between - it went on with no breaks (like an uninterrupted sleep)",
+        "interrupter: one who breaks in between (someone who cuts in while others talk)"
+       ]
+      }
+     ]
+    },
+    "dictation_lines": 5,
+    "dictation": [
+     {
+      "sentence": "The volcano began to erupt, so the tourists ran back to the bus.",
+      "chunks": [
+       "The volcano began to erupt,",
+       "so the tourists ran",
+       "back to the bus."
+      ],
+      "targets": [
+       "erupt"
+      ],
+      "cops": {
+       "capitals": [
+        "The"
+       ],
+       "punctuation": [
+        "comma before so (it joins two full sentences)",
+        "full stop (it ends the sentence)"
+       ]
+      }
+     },
+     {
+      "sentence": "Our class liaison handed out a brochure, but the crowd kept interrupting her.",
+      "chunks": [
+       "Our class liaison handed out a brochure,",
+       "but the crowd kept",
+       "interrupting her."
+      ],
+      "targets": [
+       "liaison",
+       "brochure",
+       "interrupting"
+      ],
+      "cops": {
+       "capitals": [
+        "Our"
+       ],
+       "punctuation": [
+        "comma before but (it joins two full sentences)",
+        "full stop (it ends the sentence)"
+       ]
+      }
+     }
+    ],
+    "follow_up": [
+     {
+      "question": "Part A, Q1",
+      "checks": [
+       "comma before and / but / so"
+      ],
+      "flag_when": "the comma left out, or the two sentences still split by a full stop",
+      "next_move": "In next week's dictation, read two short sentences and ask the class to join them with , so on whiteboards."
+     },
+     {
+      "question": "Part A, Q2",
+      "checks": [
+       "second M after , and"
+      ],
+      "flag_when": "a comma added but no second who, so the right side cannot stand alone",
+      "next_move": "During Words to Read Review, say \"The bear sniffed, and padded away\" and ask what the right side needs to stand alone."
+     },
+     {
+      "question": "Part B, Q1",
+      "checks": [
+       "-cy / -let = noun",
+       "-ine: read the sentence"
+      ],
+      "flag_when": "2 or more of the 5 jobs wrong",
+      "next_move": "Before next week's suffix cards, say: Our class will engineer a raft. The engineer fixed it. Ask what job engineer does each time."
+     },
+     {
+      "question": "Part C, Q1",
+      "checks": [
+       "brochure",
+       "liaison"
+      ],
+      "flag_when": "brochure or liaison misspelled",
+      "next_move": "During Words to Spell Review, add \"liaison\" on the class whiteboard and ask which three vowels sit in a row."
+     },
+     {
+      "question": "Part D, Q1",
+      "checks": [
+       "rupt = break",
+       "3-part word sums"
+      ],
+      "flag_when": "rupt = break missing, or 2 of the 3 sums wrong",
+      "next_move": "During the review cards, stop on rupt and ask for two rupt words and what each part means."
+     },
+     {
+      "question": "Part D, Q2",
+      "checks": [
+       "meaning built from parts"
+      ],
+      "flag_when": "a meaning that ignores rupt (break) or the printed part",
+      "next_move": "During Words to Read Review, add \"uninterrupted\" on the class whiteboard and ask what is not broken."
+     },
+     {
+      "question": "Part E",
+      "checks": [
+       "COPS score (no tick box)"
+      ],
+      "flag_when": "3 or more COPS points lost across the two sentences",
+      "next_move": "In next week's dictation, stop after the CHECK step and have the student redo their weakest COPS letter aloud with you."
+     }
+    ]
+   }
+  }
+ ]
+}

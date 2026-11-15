@@ -559,6 +559,25 @@ def grid_meanings(week):
     return out
 
 
+def marked_parts(word, week):
+    """The answer key's "parts marked with /": the word split around its root,
+    this week's root first, then the most recently taught (Week 7 panel: the
+    column was blank).  'attractive' -> 'at/tract/ive'; '' when no taught root
+    is in the word."""
+    labels = [week_morph(week).get("morph", "")] + list(
+        reversed(week.get("taught_morphemes", [])))
+    low = word.lower()
+    for label in labels:
+        if str(label).startswith("-") or str(label).endswith("-"):
+            continue        # affixes are found around the root, not as it
+        for form in sorted(morph_forms(label), key=len, reverse=True):
+            i = low.find(form)
+            if form and i >= 0:
+                return "/".join(x for x in (word[:i], word[i:i + len(form)],
+                                            word[i + len(form):]) if x)
+    return ""
+
+
 def example_word(part, week, skip=()):
     """A word the class met this week that carries `part`, for the answers page."""
     forms = morph_forms(part)
@@ -625,7 +644,7 @@ def extension_sheet(week, session):
                                         "again with its parts marked with /.",
              "columns": ["", "Spell it", "Its parts, marked with /"], "widths": [1, 6, 6],
              "rows": [[str(i), "", ""] for i in range(1, len(wsr) + 1)], "rowH": 28,
-             "answers": [[None, w, ""] for w in wsr]}]})
+             "answers": [[None, w, marked_parts(w, week)] for w in wsr]}]})
     if stype == "spell":
         # the teacher says each word aloud, so a printed meaning gives it away:
         # the step up is spelling it, then writing what it means (31 Oct 2026)
@@ -667,10 +686,10 @@ def extension_sheet(week, session):
             items.append({"kind": "open", "lines": 1 if stype == "spell" else 2,
                           # "main and subordinate clauses" takes no article,
                           # "an adverb" takes an (Week 6, Nov 2026)
-                          "prompt": f"Use {new_word} in a sentence"
-                                    + (f" with {grammar_np(grammar)}." if grammar else "."),
+                          "prompt": grammar_prompt(new_word, grammar),
                           "answer": f"Check: {new_word} spelled right"
-                                    + (f" and the {grammar} used correctly." if grammar else ".")})
+                                    + (f" and the {grammar_target(grammar)} used correctly."
+                                       if grammar else ".")})
         sections.append({"title": "Learned Words", "block": "learned", "columns": 1,
                          "items": items})
     dictation = session.get("dictation") or []
@@ -684,6 +703,23 @@ def extension_sheet(week, session):
              "answer": " / ".join(dt["sentence"] for dt in dictation)
                        + f" Check: the added {morph} word fits and is spelled right."}]})
     return sections
+
+
+def grammar_target(phrase):
+    """A sentence-type focus names the sentence itself, one of it:
+    "compound sentences" -> "compound sentence" (Week 7, Nov 2026)."""
+    return phrase[:-1] if phrase.endswith(" sentences") else phrase
+
+
+def grammar_prompt(word, phrase):
+    """"Use liaison in a compound sentence.", not "in a sentence with
+    compound sentences"; other focuses sit after "with"."""
+    if not phrase:
+        return f"Use {word} in a sentence."
+    target = grammar_target(phrase)
+    if target.endswith(" sentence"):
+        return f"Use {word} in {'an' if target[0] in 'aeiou' else 'a'} {target}."
+    return f"Use {word} in a sentence with {grammar_np(phrase)}."
 
 
 def grammar_np(phrase):

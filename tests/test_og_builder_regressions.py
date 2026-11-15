@@ -985,6 +985,11 @@ class OgV19Tests(unittest.TestCase):
                          "main and subordinate clauses")
         self.assertEqual(en.grammar_np("semicolon"), "a semicolon")
         self.assertEqual(en.grammar_np("adverb"), "an adverb")
+        # Week 7: a sentence-type focus is the sentence itself
+        self.assertEqual(en.grammar_prompt("liaison", "compound sentences"),
+                         "Use liaison in a compound sentence.")
+        self.assertEqual(en.grammar_prompt("campaign", "main and subordinate clauses"),
+                         "Use campaign in a sentence with main and subordinate clauses.")
         week = json.loads(self.V19_SPEC.read_text())
         thu = week["sessions"][3]
         thu["dictation"] = thu.get("dictation", [])[:1] or [
@@ -992,6 +997,17 @@ class OgV19Tests(unittest.TestCase):
         dict_sec = [sec for sec in en.extension_sheet(week, thu)
                     if sec["block"] == "dictation"][0]
         self.assertTrue(dict_sec["items"][0]["prompt"].startswith("Write the sentence"))
+
+    def test_extension_key_marks_parts_and_build_header_names_round(self):
+        """Week 7 panel: the Words to Spell key's parts column was blank, and
+        the build header said NAME... on whiteboards over a Choose round."""
+        import enabler_pdf as en
+        week = json.loads(self.V19_SPEC.read_text())
+        self.assertEqual(en.marked_parts("projector", week), "pro/ject/or")
+        self.assertEqual(en.marked_parts("attractive", {"taught_morphemes": ["tract"],
+                                                        "sessions": []}), "at/tract/ive")
+        self.assertEqual(OG.BUILD_ROUND_STEPS["choose_meaning"].split(" with ")[1][:7],
+                         "fingers")
 
     def test_enabler_leaves_the_teaching_as_the_gap(self):
         import enabler_pdf as en

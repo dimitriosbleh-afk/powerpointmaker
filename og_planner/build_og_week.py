@@ -1084,7 +1084,7 @@ BUILD_ROUND_STEPS = {
     "break_apart": "BREAK whole words back into their parts.",
     "name_it": "NAME the word from its meaning on whiteboards, answer on the click.",
     "complete_sentence": "COMPLETE each sentence with a bank word on whiteboards, answer on the click.",
-    "choose_meaning": "CHOOSE the best meaning on whiteboards, answer on the click.",
+    "choose_meaning": "CHOOSE the best meaning with fingers 1, 2 or 3, answer on the click.",
 }
 
 
@@ -3362,9 +3362,15 @@ def build_session(pkg, week, session, out_path):
         # rounds that actually run (older break rounds carry no `parts`, so
         # round_format cannot tell them apart - other days keep the fixed text)
         hdr_title, hdr_notes = "Build and Break", HEADER_NOTES["build"]
-        if session.get("type") == "combined":
-            hdr_title = "Build words"
-            steps = [BUILD_ROUND_STEPS[round_format(r)] for r in bd.get("rounds", [])]
+        rounds_ = bd.get("rounds", [])
+        # a v1.9 build day opens with a Break it apart round (it has `parts`),
+        # so its header names the third round that actually runs (Week 7 panel:
+        # it said NAME... on whiteboards over a Choose the best meaning round)
+        if session.get("type") == "combined" or (
+                rounds_ and round_format(rounds_[0]) == "break_apart"):
+            if session.get("type") == "combined":
+                hdr_title = "Build words"
+            steps = [BUILD_ROUND_STEPS[round_format(r)] for r in rounds_]
             hdr_notes = "\n".join(
                 ["PROCEDURE:",
                  "1. BUILD real words from the matrix in OG books, then say what each means."]
@@ -3713,8 +3719,8 @@ def build_session(pkg, week, session, out_path):
             lines.append(f"   {n}. {dt.get('sentence', '')}")
             if dt.get("chunks"):
                 lines.append("   CHUNKS: " + " / ".join(dt["chunks"]))
+        # no Purpose line or stage tag below the divider (v1.8; Week 7 panel)
         lines += ["---",
-                  "Purpose: a books-closed check of this week only [Friday Review]",
                   f"PREP: print only the student pages of Friday Review/{pdf_name}. "
                   f"Mark with Friday Review/{fu_name} beside you."]
 
